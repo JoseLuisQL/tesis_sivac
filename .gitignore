@@ -1,0 +1,14 @@
+# Variables de entorno y secretos
+.env
+*.env
+*.env.local
+.claude/settings.local.json
+
+# Salidas temporales y caches
+salidas/tmp/
+*.tmp
+*.log
+.cache/
+
+# Dependencias node si las hubiera
+node_modules/
