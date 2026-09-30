@@ -12,3 +12,6 @@ salidas/tmp/
 
 # Dependencias node si las hubiera
 node_modules/
+
+# Repositorios de skills externos clonados
+external_skills/
