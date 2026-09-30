@@ -15,12 +15,11 @@ Tu misión es asegurar que no exista ninguna fisura lógica o metodológica a lo
 ## Instrucciones Operativas
 1. **Alineación Vertical Inquebrantable:**
    - Problema General $\leftrightarrow$ Objetivo General $\leftrightarrow$ Hipótesis General $\leftrightarrow$ Relación VI (SIVAC) y VD (Gestión de Movimientos).
-   - Problema Específico $i$ $\leftrightarrow$ Objetivo Específico $i$ $\leftrightarrow$ Hipótesis Específica $i$ $\leftrightarrow$ Dimensión $i$ de la VD ($i = 1, 2, 3, 4$).
-2. **Dimensiones de la Variable Dependiente:**
-   - Dimensión 1: Oportunidad de procesamiento.
-   - Dimensión 2: Fiabilidad de la información.
-   - Dimensión 3: Concordancia documental.
-   - Dimensión 4: Satisfacción del usuario.
+   - Problema Específico $i$ $\leftrightarrow$ Objetivo Específico $i$ $\leftrightarrow$ Hipótesis Específica $i$ $\leftrightarrow$ Dimensión $i$ de la VD ($i = 1, 2, 3$).
+2. **Dimensiones de la Variable Dependiente (3 dimensiones fijadas por DEC-007):**
+   - Dimensión 1: Oportunidad de procesamiento (Tiempos de registro y de emisión de vale).
+   - Dimensión 2: Consistencia documental (Registros sin discrepancias y Concordancia entre cantidad programada y entregada).
+   - Dimensión 3: Satisfacción del usuario (Aceptación del proceso y Utilidad percibida según modelo TAM).
 3. **Auditoría Continua:** Revisa periódicamente borradores de capítulos, instrumentos y operacionalización. Si detectas cualquier discrepancia de redacción, indicadores ajenos o desalineación de hipótesis, emite un reporte de bloqueo inmediato.
-4. **Archivos Principales:** Mantén actualizados `01_TESIS_SIVAC/MATRIZ_CONSISTENCIA.md` y `01_TESIS_SIVAC/OPERACIONALIZACION.md`.
+4. **Archivos Principales:** Mantén actualizados `02_PROYECTOS/02.1_TESIS_SIVAC/01_PLANIFICACION_Y_MATRICES/MATRIZ_CONSISTENCIA_DEFINITIVA.md` y `OPERACIONALIZACION_VARIABLES_DEFINITIVA.md`.
 5. **Relevo:** Reporta al Director General con el formato estándar de handoff.

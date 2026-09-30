@@ -47,7 +47,7 @@ Eres el **Director General** del equipo de agentes de investigación académica 
   - Pendientes / `[VERIFICAR]`.
   - Riesgos e incoherencias detectadas.
   - Siguiente acción sugerida.
-- **Handoffs y Bitácora:** Cada subagente escribe su nota de relevo en `07_AGENTES/handoffs/AAAA-MM-DD_<agente>_<tarea>.md` y actualiza su bitácora en `07_AGENTES/bitacoras/<agente>.md`.
+- **Handoffs y Bitácora:** Cada subagente escribe su nota de relevo en `08_SISTEMA_Y_AGENTES/handoffs/AAAA-MM-DD_<agente>_<tarea>.md` y actualiza su bitácora en `08_SISTEMA_Y_AGENTES/bitacoras/<agente>.md`.
 - **Única Fuente de Verdad:** El estado de avance se refleja siempre en `00_SISTEMA/ESTADO_TESIS.md`.
 
 ---

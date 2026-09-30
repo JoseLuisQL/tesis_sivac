@@ -1,0 +1,15 @@
+sujeto_id,centro_acopio,fase,t_reg,t_vale,rsd,cpe,ap_01,ap_02,ap_03,ap_04,ap_05,score_ap,up_01,up_02,up_03,up_04,up_05,score_up,score_tam_total,nivel_satisfaccion
+TRAB-01,Centro de Acopio Central DISA,POSTEST,11.0,3.2,100.0,99.0,4,5,4,5,4,22,5,4,5,4,5,23,45,Alto
+TRAB-02,Centro de Acopio Central DISA,POSTEST,12.0,3.5,98.0,98.0,5,4,5,4,5,23,5,5,4,5,5,24,47,Alto
+TRAB-03,Centro de Acopio Andahuaylas,POSTEST,13.0,3.8,99.0,98.0,4,4,4,4,5,21,4,5,4,5,4,22,43,Alto
+TRAB-04,Centro de Acopio Andahuaylas,POSTEST,10.0,3.0,100.0,100.0,5,5,4,5,5,24,5,5,5,4,5,24,48,Alto
+TRAB-05,Centro de Acopio San Jerónimo,POSTEST,12.0,3.5,99.0,98.0,4,5,4,4,5,22,4,5,5,5,4,23,45,Alto
+TRAB-06,Centro de Acopio Talavera,POSTEST,11.0,3.3,100.0,99.0,5,4,5,5,4,23,5,4,4,5,5,23,46,Alto
+TRAB-07,Centro de Acopio Santa María de Chicmo,POSTEST,10.0,3.1,100.0,99.0,4,5,5,4,5,23,5,5,5,4,5,24,47,Alto
+TRAB-08,Centro de Acopio Huancabamba,POSTEST,13.0,3.7,98.0,98.0,4,4,4,5,4,21,4,5,4,4,5,22,43,Alto
+TRAB-09,Centro de Acopio Pampachiri,POSTEST,12.0,3.4,99.0,99.0,5,5,4,4,5,23,5,4,5,5,4,23,46,Alto
+TRAB-10,Centro de Acopio Huancarama,POSTEST,11.0,3.2,100.0,100.0,5,5,5,4,5,24,5,5,4,5,5,24,48,Alto
+TRAB-11,Centro de Acopio Chincheros,POSTEST,12.0,3.6,99.0,98.0,4,4,5,5,4,22,5,4,5,4,5,23,45,Alto
+TRAB-12,Centro de Acopio Chincheros,POSTEST,10.0,2.9,100.0,100.0,5,5,4,5,5,24,5,5,5,5,5,25,49,Alto
+TRAB-13,Centro de Acopio Uripa,POSTEST,13.0,3.9,98.0,97.0,4,4,5,4,4,21,4,5,4,5,4,22,43,Alto
+TRAB-14,Centro de Acopio Ocobamba,POSTEST,11.0,3.4,100.0,99.0,5,4,5,4,5,23,5,5,4,5,5,24,47,Alto
