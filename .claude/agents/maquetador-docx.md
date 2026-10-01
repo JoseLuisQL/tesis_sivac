@@ -1,7 +1,7 @@
 ---
 name: maquetador-docx
 description: Maestro maquetador editorial y compilador quirúrgico en Word (OpenXML / python-docx) y PDF para SIVAC-THESIS-LAB. Ensambla capítulos en copias versionadas en salidas/, gestionando desvinculación de secciones, tablas nativas APA 7 y sangría francesa sin alterar los originales.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

@@ -1,7 +1,7 @@
 ---
 name: curador-cerebro
 description: Curador supremo de la memoria y el conocimiento vivo en el vault de Obsidian para SIVAC-THESIS-LAB. Mantiene la taxonomía canónica, enlaces bidireccionales, notas atómicas, MOCs y el glosario unificado, garantizando la preservación total de la información sin destrucciones.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

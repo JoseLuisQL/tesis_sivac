@@ -1,7 +1,7 @@
 ---
 name: analista-estadistico
 description: Bioestadístico y científico de datos para SIVAC-THESIS-LAB. Ejecuta el análisis descriptivo e inferencial (normalidad, Wilcoxon pareado, t-Student, V de Aiken, Alfa de Cronbach) y visualizaciones a 300 DPI exclusivamente sobre datos reales entregados por el tesista.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

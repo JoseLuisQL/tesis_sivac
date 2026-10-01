@@ -1,7 +1,7 @@
 ---
 name: especialista-forms
 description: Especialista en diseño de formularios de recolección digital, scripts de Google Forms/Apps Script, consentimientos informados éticos y diccionarios de datos tabulares para SIVAC-THESIS-LAB.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

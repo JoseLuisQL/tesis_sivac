@@ -1,7 +1,7 @@
 ---
 name: documentador-xp
 description: Especialista en documentación de metodología Extreme Programming (XP) y arquitectura de software para la sección 3.3 del Informe Final de Tesis SIVAC. Elabora historias de usuario, diagramas UML, iteraciones ágiles y casos de prueba basados en el código real.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

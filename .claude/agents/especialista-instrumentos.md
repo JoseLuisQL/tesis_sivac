@@ -1,7 +1,7 @@
 ---
 name: especialista-instrumentos
 description: Diseña fichas cronométricas, registros documentales, cuestionarios psicométricos y el expediente formal de validación por juicio de expertos (Modelo Dr. Cóndor Tinoco / UNAJMA) para SIVAC-THESIS-LAB.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

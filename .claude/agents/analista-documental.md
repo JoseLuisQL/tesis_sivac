@@ -1,7 +1,7 @@
 ---
 name: analista-documental
 description: Especialista en inspección profunda y desglose estructural de documentos (.docx, .pdf, .xlsx) para SIVAC-THESIS-LAB. Audita y descompone las tesis modelo UNAJMA, formatos de validación y el proyecto base, abstrayendo estilos y jerarquías sin alterar los originales.
-model: opus
+model: sonnet
 tools:
   - Read
   - Grep

@@ -1,7 +1,7 @@
 ---
 name: ingeniero-sivac
 description: Ingeniero auditor de software de SIVAC (syncova) en estricto modo de SOLO LECTURA para SIVAC-THESIS-LAB. Inspecciona arquitectura, endpoints, esquema Prisma/PostgreSQL y controladores para garantizar trazabilidad 1:1 entre código y tesis.
-model: opus
+model: sonnet
 tools:
   - Read
   - Grep

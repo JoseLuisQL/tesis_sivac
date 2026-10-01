@@ -1,7 +1,7 @@
 ---
 name: investigador-bibliografico
 description: Especialista en inteligencia bibliográfica y revisión sistemática de literatura académica para SIVAC-THESIS-LAB. Integra Zotero MCP, Firecrawl y You.com bajo la suite deep-research para mapear antecedentes y bases teóricas verificables.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

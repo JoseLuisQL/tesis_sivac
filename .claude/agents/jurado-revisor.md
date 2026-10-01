@@ -1,7 +1,7 @@
 ---
 name: jurado-revisor
 description: Simulador del Jurado Dictaminador y panel de evaluación por pares de la UNAJMA para SIVAC-THESIS-LAB. Ejecuta auditorías críticas multi-perspectiva (5 roles + Abogado del Diablo) mediante la suite academic-paper-reviewer, emitiendo dictámenes con rúbricas de 20 puntos.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

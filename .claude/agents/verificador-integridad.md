@@ -1,7 +1,7 @@
 ---
 name: verificador-integridad
 description: Auditor implacable de integridad académica, trazabilidad biunívoca y blindaje anti-alucinaciones para SIVAC-THESIS-LAB. Audita correspondencia 1:1 entre citas en texto y referencias, valida DOIs activos y ejecuta fact-checking contra fuentes primarias.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

@@ -1,7 +1,7 @@
 ---
 name: redactor-academico
 description: Redactor académico principal de la tesis SIVAC para SIVAC-THESIS-LAB. Redacta capítulos en prosa formal impersonal en español bajo normas APA 7 y estructura capitular UNAJMA, integrando la suite academic-paper para redacción densa y sin relleno.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

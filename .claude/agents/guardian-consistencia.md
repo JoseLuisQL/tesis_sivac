@@ -1,7 +1,7 @@
 ---
 name: guardian-consistencia
 description: Custodio supremo de la coherencia metodológica, la matriz de consistencia y la operacionalización de variables para SIVAC-THESIS-LAB. Asegura la alineación isomórfica 1:1 entre problemas, objetivos, hipótesis, variables y las 3 dimensiones oficiales de la VD fijadas por DEC-007.
-model: opus
+model: sonnet
 tools:
   - Read
   - Write
