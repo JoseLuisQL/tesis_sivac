@@ -34,10 +34,11 @@ from scripts.comun import rutas, seguridad  # noqa: E402
 
 EXT = {".md", ".txt", ".py", ".json", ".docx", ".cjs", ".js"}
 MAX_BYTES = 3_000_000
-DIRS_EXCLUIDOS = {".git", ".venv", "node_modules", "__pycache__", ".obsidian", "vendor", "external_skills",
+DIRS_EXCLUIDOS = {".git", ".venv", ".claude", "node_modules", "__pycache__", ".obsidian", "vendor", "external_skills",
                   "_cuarentena_no_empiricos", "indices_pdf", "referencias", "tests", ".pytest_cache", "_adjuntos"}
 ARCHIVOS_EXCLUIDOS = {"guardian_consistencia.py"}
 ESTADO_VALIDADO = "validado_con_datos_reales"
+ESTADO_INVALIDADO = "invalido_sin_datos_reales"
 ORDEN = {"critico": 0, "mayor": 1, "menor": 2}
 
 
@@ -155,23 +156,30 @@ def analizar(ruta: Path, lineas: list[str] | None = None, nombre: str | None = N
                 H.append(_hallazgo("mayor", "ISO", ruta, i, ln, f"ISO/IEC 25010:{m.group(1)}; la tesis usa 2023"))
 
     # 6. Inferencia prematura (nivel de archivo)
-    if not validado:
-        tipos, primera = Counter(), {}
-        for i, ln in enumerate(lineas, 1):
-            for k, rx in PATRONES_INFERENCIA.items():
-                if rx.search(ln):
-                    tipos[k] += 1
-                    primera.setdefault(k, (i, ln))
-        if len(tipos) >= 2:
-            i, ln = min(primera.values())
-            H.append(_hallazgo("critico", "INFERENCIA", ruta, i, ln,
-                               f"Cifras inferenciales ({', '.join(sorted(tipos))}) sin estado '{ESTADO_VALIDADO}': "
-                               f"resultado sin sustento empírico (no existen datos de campo certificados)"))
+    es_antecedente = bool(re.search(r"capitulo2|capitulo_ii|antecedente", nombre, re.I))
+    if not validado and not es_antecedente:
+        if estado == ESTADO_INVALIDADO:
+            # Archivo formalmente marcado y bloqueado como no empírico
+            pass
+        else:
+            tipos, primera = Counter(), {}
+            for i, ln in enumerate(lineas, 1):
+                if CTX_ANTECEDENTE.search(ln):
+                    continue
+                for k, rx in PATRONES_INFERENCIA.items():
+                    if rx.search(ln):
+                        tipos[k] += 1
+                        primera.setdefault(k, (i, ln))
+            if len(tipos) >= 2:
+                i, ln = min(primera.values())
+                H.append(_hallazgo("critico", "INFERENCIA", ruta, i, ln,
+                                   f"Cifras inferenciales ({', '.join(sorted(tipos))}) sin estado '{ESTADO_VALIDADO}': "
+                                   f"resultado sin sustento empírico (no existen datos de campo certificados)"))
 
     # 7. Dictámenes
     es_dictamen = bool(re.search(r"dictamen|reportes_jurado|jurado", nombre, re.I)) or any(
         re.search(r"dictamen|jurado", ln, re.I) for ln in lineas[:40])
-    if es_dictamen and not validado:
+    if es_dictamen and not validado and estado != ESTADO_INVALIDADO:
         for i, ln in enumerate(lineas, 1):
             m = RE_DICTAMEN.search(ln)
             if m:
