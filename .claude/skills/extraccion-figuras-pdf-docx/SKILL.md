@@ -1,11 +1,17 @@
 ---
 name: extraccion-figuras-pdf-docx
-description: Procedimientos para extracción, optimización y escalado a 300 DPI de diagramas UML, esquemas arquitecturales y capturas de pantalla desde PDFs y DOCX para SIVAC-THESIS-LAB.
+description: Procedimientos para extraer imágenes de DOCX, optimizar capturas de la interfaz SIVAC y escalar a 300 DPI. Las figuras de PDFs de fuentes se extraen con el skill figuras-de-fuentes-pdf.
 ---
 
 # EXTRACCIÓN Y TRATAMIENTO DE FIGURAS Y DIAGRAMAS (300 DPI)
 
-> **Propósito:** Esta habilidad define los procedimientos técnicos en Python para extraer diagramas, esquemas de bases de datos y capturas de pantalla desde archivos PDF y DOCX, asegurando una resolución mínima de 300 DPI y estricto apego al formato de figuras de APA 7.
+> **Propósito:** extraer diagramas, gráficos y tablas de PDFs y DOCX con resolución mínima de 300 DPI, trazabilidad completa y apego al formato de figuras de APA 7.
+
+---
+
+## 0. Figuras de fuentes bibliográficas (PDF)
+
+Para extraer figuras, gráficos y tablas de los PDFs de fuentes con leyenda, página impresa y cita APA 7, usar el skill **`figuras-de-fuentes-pdf`** (herramienta `scripts/fuentes/extractor_figuras.py`). Este skill cubre únicamente DOCX y capturas de SIVAC.
 
 ---
 

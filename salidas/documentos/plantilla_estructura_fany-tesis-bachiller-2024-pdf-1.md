@@ -1,0 +1,165 @@
+# Plantilla de estructura derivada de: Fany_Tesis_Bachiller_2024.pdf (1).pdf
+
+> Derivada automáticamente (solo lectura) de un documento modelo. Es una inferencia tipográfica: verificar contra el índice oficial antes de adoptarla. Las etiquetas impresas no confirmadas se marcan [VERIFICAR].
+
+- SHA-256 del modelo: `9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401`
+- Páginas físicas: 106
+- Fuente del cuerpo: ArialMT 11.0 pt; márgenes izq/der/sup/inf (cm, estimado): 3.0/2.89/2.51/2.86
+- Criterio: Título = bloque de hasta 3 líneas, ≤140 caracteres, fuera de las franjas de 40 pt de cabecera/pie, que (a) empiece por 'CAPÍTULO n', numeración decimal (1.2.3.) o romana (I.) y esté en negrita o con tamaño ≥ cuerpo+1 pt, o (b) sin numeración, en negrita o con tamaño ≥ cuerpo+1.5 pt, en MAYÚSCULAS (≥4 letras). Nivel = profundidad de la numeración; sin numeración: 1 si está centrado, 2 si no. Se descartan rótulos (Tabla/Figura/Fuente/Nota) y páginas con >8 candidatos (p. ej. tablas con encabezados en negrita). Es una inferencia tipográfica, no el índice oficial.
+
+## Preliminares
+
+- DEDICATORIA — p. física 15, impresa ii
+- AGRADECIMIENTO — p. física 16, impresa iii
+- ÍNDICE — p. física 17, impresa iv
+- ÍNDICE DE FIGURAS — p. física 19, impresa vi
+- ÍNDICE DE TABLAS — p. física 20, impresa vii
+- RESUMEN — p. física 21, impresa viii
+- ABSTRACT — p. física 22, impresa ix
+- CHUMASQA — p. física 23, impresa x
+
+## Cuerpo de la tesis
+
+- INTRODUCCIÓN — p. física 24, impresa 11
+- CAPITULO I: PROBLEMA DE INVESTIGACIÓN — p. física 25, impresa 12
+  - 1.1. Realidad problemática — p. física 25, impresa 12
+  - 1.2. Formulación del problema — p. física 26, impresa 13
+    - 1.2.1. Problema general — p. física 26, impresa 13
+    - 1.2.2. Problemas específicos — p. física 26, impresa 13
+  - 1.3. Objetivos — p. física 26, impresa 13
+    - 1.3.1. Objetivo general — p. física 26, impresa 13
+    - 1.3.2. Objetivos específicos — p. física 26, impresa 13
+  - 1.4. Justificación — p. física 27, impresa 14
+  - 1.5. Hipótesis — p. física 28, impresa 15
+    - 1.5.1. Hipótesis general — p. física 28, impresa 15
+    - 1.5.2. Hipótesis específicas — p. física 28, impresa 15
+- 2. CAPITULO II: ANTECEDENTES — p. física 29, impresa 16
+  - 2.1. Antecedentes internacionales — p. física 29, impresa 16
+  - 2.2. Antecedentes nacionales — p. física 32, impresa 19
+- 3. CAPITULO III: MARCO TEÓRICO — p. física 37, impresa 24
+  - 3.1. Bases teóricas — p. física 37, impresa 24
+    - 3.1.1. Extreme Programming (XP) — p. física 37, impresa 24
+    - 3.1.2. Aplicación Web — p. física 38, impresa 25
+    - 3.1.3. Gestión de proyectos — p. física 39, impresa 26
+    - 3.1.4. Inversión Pública — p. física 44, impresa 31
+    - 3.1.5. Proyecto de Inversión Pública (PIP) — p. física 44, impresa 31
+    - 3.1.6. Invierte Pe — p. física 44, impresa 31
+    - 3.1.7. Ciclos de Inversión del Invierte Perú — p. física 45, impresa 32
+    - 3.1.8. Ley de contrataciones del estado — p. física 46, impresa 33
+  - 3.2. Marco conceptual — p. física 47, impresa 34
+- 4. CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN — p. física 48, impresa 35
+  - 4.1. Tipo, nivel y diseño de investigación — p. física 48, impresa 35
+    - 4.1.1. Tipo de investigación — p. física 48, impresa 35
+    - 4.1.2. Nivel de investigación — p. física 48, impresa 35
+    - 4.1.3. Diseño de investigación — p. física 49, impresa 36
+  - 4.2. Variables y operacionalización — p. física 49, impresa 36
+  - 4.3. Población, muestra y muestreo — p. física 50, impresa 37
+  - 4.4. Técnicas e instrumentos de recolección de datos — p. física 51, impresa 38
+  - 4.5. Procedimientos — p. física 52, impresa 39
+  - 4.6. Método de análisis de datos — p. física 52, impresa 39
+  - 4.7. Aspectos éticos — p. física 53, impresa 40
+- 5. CAPITULO V: RESULTADOS — p. física 54, impresa 41
+  - 5.1. Descripción de los resultados obtenidos — p. física 54, impresa 41
+  - 5.2. Análisis inferencial — p. física 61, impresa 48
+- CAPITULO VI: DISCUSIÓN — p. física 64, impresa 51
+- CONCLUSIONES — p. física 67, impresa 54
+- RECOMENDACIONES — p. física 68, impresa 55
+- BIBLIOGRAFÍA — p. física 69, impresa 56
+  - ANEXO — p. física 73, impresa 60
+- MÉTODO Y DISEÑO POBLACIÓN Y MUESTRA TÉCNICAS E INSTRUMENTOS — p. física 74, impresa 61
+- ESCALA DE MEDICIÓN - LIKERT — p. física 81, impresa 68
+- VARIABLE INDEPENDIENTE: APLICACIÓN WEBFQT — p. física 81, impresa 68
+- VARIABLE DEPENDIENTE: SEGUIMIENTO DE PROYECTOS DE INVERSIÓN PUBLICA — p. física 82, impresa 69
+- 1. Fase de planificación — p. física 84, impresa 71
+- 2. Diseño — p. física 89, impresa 76
+
+## Índice impreso del modelo (84 entradas; 33 coinciden con títulos detectados)
+
+- DEDICATORIA ..... ii 
+- AGRADECIMIENTO ..... iii 
+- ÍNDICE ..... iv 
+- ÍNDICE DE FIGURAS ..... vi 
+- ÍNDICE DE TABLAS ..... vii 
+- RESUMEN ..... viii 
+- ABSTRACT ..... ix 
+- CHUMASQA ..... x 
+- INTRODUCCIÓN ..... 11 
+- CAPITULO I: PROBLEMA DE INVESTIGACIÓN ..... 12 
+- Realidad problemática ..... 12 
+- Formulación del problema ..... 13 
+- Problema general ..... 13 (sin coincidencia detectada)
+- Problemas específicos ..... 13 (sin coincidencia detectada)
+- Objetivos ..... 13 (sin coincidencia detectada)
+- Objetivo general ..... 13 (sin coincidencia detectada)
+- Objetivos específicos ..... 13 (sin coincidencia detectada)
+- Justificación ..... 14 (sin coincidencia detectada)
+- Hipótesis ..... 15 (sin coincidencia detectada)
+- Hipótesis general ..... 15 (sin coincidencia detectada)
+- Hipótesis específicas ..... 15 (sin coincidencia detectada)
+- CAPITULO II: ANTECEDENTES ..... 16 
+- Antecedentes internacionales ..... 16 
+- Antecedentes nacionales ..... 19 
+- CAPITULO III: MARCO TEÓRICO ..... 24 
+- Bases teóricas ..... 24 (sin coincidencia detectada)
+- Extreme Programming (XP) ..... 24 (sin coincidencia detectada)
+- Aplicación Web ..... 25 (sin coincidencia detectada)
+- Gestión de proyectos ..... 26 (sin coincidencia detectada)
+- Inversión Pública ..... 31 (sin coincidencia detectada)
+- Proyecto de Inversión Pública (PIP) ..... 31 
+- Invierte Pe ..... 31 (sin coincidencia detectada)
+- Ciclos de Inversión del Invierte Perú ..... 32 
+- Ley de contrataciones del estado ..... 33 
+- Marco conceptual ..... 34 (sin coincidencia detectada)
+- CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN ..... 35 
+- Tipo, nivel y diseño de investigación ..... 35 
+- Tipo de investigación ..... 35 (sin coincidencia detectada)
+- Nivel de investigación ..... 35 (sin coincidencia detectada)
+- Diseño de investigación ..... 36 (sin coincidencia detectada)
+- Variables y operacionalización ..... 36 
+- Población, muestra y muestreo ..... 37 
+- Técnicas e instrumentos de recolección de datos ..... 38 
+- Procedimientos ..... 39 (sin coincidencia detectada)
+- Método de análisis de datos ..... 39 
+- Aspectos éticos ..... 40 (sin coincidencia detectada)
+- CAPITULO V: RESULTADOS ..... 41 
+- Descripción de los resultados obtenidos ..... 41 
+- Análisis inferencial ..... 48 
+- CAPITULO VI: DISCUSIÓN ..... 51 
+- CONCLUSIONES ..... 54 
+- RECOMENDACIONES ..... 55 
+- BIBLIOGRAFÍA ..... 56 
+- ANEXO ..... 60 
+- Figura 1 Secuencia de mapeo de procesos ..... 25 (sin coincidencia detectada)
+- Figura 2 Ciclo de vida de un proyecto ..... 28 (sin coincidencia detectada)
+- Figura 3 Fases de un proyecto ..... 29 (sin coincidencia detectada)
+- Figura 4 Triple restricción de un proyecto ..... 30 (sin coincidencia detectada)
+- Figura 5 Las fases del ciclos de Inversión ..... 33 (sin coincidencia detectada)
+- Figura 6 Cantidad de proyectos culminados ..... 43 (sin coincidencia detectada)
+- Figura 7 Culminación de proyectos con el presupuesto asignado ..... 44 (sin coincidencia detectada)
+- Figura 8 Histograma sobre el estado de proyectos ..... 45 (sin coincidencia detectada)
+- software ..... 46 (sin coincidencia detectada)
+- software ..... 47 (sin coincidencia detectada)
+- Figura 8  Diagrama de actividades del usuario del área de infraestructura ..... 76 (sin coincidencia detectada)
+- Figura 9  Diagrama de actividades del usuario ciudadano del municipio ..... 77 (sin coincidencia detectada)
+- Tabla 1.  Matriz de operacionalización de variables ..... 37 (sin coincidencia detectada)
+- Tabla 2.  Estados de los proyectos en ejecución ..... 38 (sin coincidencia detectada)
+- Tabla 3  Validez de instrumentos por juicio de expertos en las variables ..... 41 (sin coincidencia detectada)
+- Tabla 4  Prueba de confiabilidad de la variable independiente ..... 41 (sin coincidencia detectada)
+- Tabla 5  Prueba de confiabilidad de la variable dependiente ..... 42 (sin coincidencia detectada)
+- Tabla 6  Porcentajes de proyectos culminados ..... 42 (sin coincidencia detectada)
+- Tabla 7  Proyectos que culminaron con el presupuesto asignado ..... 43 (sin coincidencia detectada)
+- Tabla 8  Estado de proyectos ..... 44 (sin coincidencia detectada)
+- Tabla 10  Instrumento aplicado antes de la implantación del software ..... 46 (sin coincidencia detectada)
+- Tabla 11 Instrumento aplicado posterior a la implantación del software ..... 47 (sin coincidencia detectada)
+- Tabla 12  Prueba de normalidad ..... 48 (sin coincidencia detectada)
+- Tabla 13  Contrastación de hipótesis general ..... 49 (sin coincidencia detectada)
+- Tabla 14  Contrastación de hipótesis específica 1 ..... 50 (sin coincidencia detectada)
+- Tabla 15  Contrastación de hipótesis específica 2 ..... 50 (sin coincidencia detectada)
+- WebFQT ..... 72 (sin coincidencia detectada)
+- Tabla 17 Historia de usuario - Creación del menú principal para el ciudadano ..... 73 (sin coincidencia detectada)
+- Tabla 18 Creación del menú carga de información ..... 74 (sin coincidencia detectada)
+- Tabla 19 Creación del menú reporte de gestión ..... 75 (sin coincidencia detectada)
+
+## Avisos
+
+- 21 páginas sin capa de texto (requiere OCR; Tesseract NO instalado): 2-14, 76-80, 104-106. Su estructura no está incluida.

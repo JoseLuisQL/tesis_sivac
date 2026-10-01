@@ -13,7 +13,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\scripts_seguridad\\pretooluse_blocker.cjs\"",
+            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\pretooluse_blocker.cjs\"",
             "timeout": 10
           }
         ]
@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\scripts_seguridad\\session_start.cjs\"",
+            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\session_start.cjs\"",
             "timeout": 10
           }
         ]
@@ -35,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\scripts_seguridad\\handoff_reminder.cjs\"",
+            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\handoff_reminder.cjs\"",
             "timeout": 10
           }
         ]
@@ -46,7 +46,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\scripts_seguridad\\handoff_reminder.cjs\"",
+            "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\handoff_reminder.cjs\"",
             "timeout": 10
           }
         ]

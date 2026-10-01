@@ -15,3 +15,8 @@ node_modules/
 
 # Repositorios de skills externos clonados
 external_skills/
+
+# Entorno virtual del proyecto
+.venv/
+__pycache__/
+*.pyc

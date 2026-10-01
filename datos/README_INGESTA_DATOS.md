@@ -2,7 +2,8 @@
 
 > **UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS**  
 > **Facultad de Ingeniería — Escuela Profesional de Ingeniería de Sistemas**  
-> **Tesis:** *Sistema web SIVAC y su influencia en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025*  
+> **Tesis:** *APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II*  
+> **Autor:** Bach. José Luis Quispe León | **Asesora:** Dra. Norma Lorena Catacora Flores  
 > **Directriz Innegociable:** Constitución SIVAC — Sección 2.1: Prohibición Absoluta de Invención de Datos Empíricos.
 
 ---

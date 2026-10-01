@@ -1,0 +1,18 @@
+{
+  "_instrucciones": "Completar SOLO con datos reales de campo. origen debe ser 'campo'; n_esperado debe ser 14; fechas en formato AAAA-MM-DD; fase: pretest|postest; sha256 puede dejarse vacío y se calcula con el comando 'sellar'. declaracion_tesista debe ser escrita por el tesista con este texto literal: 'Declaro que estos datos provienen de mediciones reales de campo y no han sido simulados.'. Ningún script completa ese campo.",
+  "origen": "",
+  "responsable": "",
+  "fecha_recoleccion": "",
+  "instrumentos_versiones": {},
+  "n_esperado": null,
+  "archivos": [
+    {
+      "nombre": "",
+      "sha256": "",
+      "fase": ""
+    }
+  ],
+  "declaracion_tesista": "",
+  "firmado_por": "",
+  "fecha_firma": ""
+}
