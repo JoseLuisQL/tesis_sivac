@@ -96,8 +96,9 @@ Intérprete obligatorio: `C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python
 
 | Tarea | Comando |
 |---|---|
+| **Auditar geometría y anomalías OpenXML en tablas** | `python scripts/utilidades/docx_quirurgico.py auditar <docx>` |
 | Desglose estructural (secciones, estilos, tablas, imágenes, DPI) | `scripts/agentes/analista_documental.py desglosar <docx|pdf|xlsx> [--json]` |
 | Comparar el formato de dos documentos | `scripts/agentes/analista_documental.py comparar A B` |
 | Lista de capítulos de una tesis modelo | `scripts/agentes/analista_documental.py plantilla-estructura <pdf>` |
 
-**Nota:** Los resultados se escriben fuera de `referencias/`; los originales no se modifican.
+**Nota:** Los resultados se escriben fuera de `referencias/`; los originales no se modifican. Emplear `docx_quirurgico.py auditar` para verificar que ninguna tabla presente flotación (`w:tblpPr`), fractura de filas ni anchos desbordados frente a los límites institucionales (Portrait: 8,788 dxa, Landscape: 14,000 dxa).

@@ -21,7 +21,7 @@ El **Director General (Agente GOD)** en la sesión principal de Claude Code plan
   3. *Satisfacción del usuario:* Aceptación del proceso ($AP$) y Utilidad percibida ($UP$) bajo modelo TAM.
 - **Diseño metodológico:** Preexperimental con pretest y postest en un solo grupo ($O_1 \longrightarrow X \longrightarrow O_2$), población censal ($N = n = 14$).
 
-**Restricción técnica fundamental:** En Claude Code los subagentes NO pueden lanzar otros subagentes. Por tanto, el **Director General es SIEMPRE la sesión principal** y es la única entidad autorizada a orquestar y comisionar a los 13 subagentes especialistas (`.claude/agents/*.md`).
+**Restricción técnica fundamental y Mandato de Orquestación:** En Claude Code los subagentes NO pueden lanzar otros subagentes. Por tanto, el **Director General es SIEMPRE la sesión principal** y es la única entidad autorizada a orquestar y comisionar a los 13 subagentes especialistas (`.claude/agents/*.md`). El Director General **JAMÁS ejecuta en solitario tareas especializadas** (maquetación, redacción, bioestadística, psicometría, auditoría documental); **debe delegar obligatoriamente mediante la herramienta `Agent` (`subagent_type: "<nombre-agente>"`), activar las `Skill` pertinentes y emplear las herramientas MCP**.
 
 ---
 
@@ -89,6 +89,8 @@ Todas las tareas de los agentes están subordinadas a las reglas modulares ubica
    - Tablas nativas APA 7 de tres líneas y figuras a 300 DPI.
 4. **Gobernanza y Protocolos Multi-Agente (`.claude/rules/04_protocolo_agentes.md`):**
    - Todo flujo opera bajo topología Hub-and-Spoke radial.
+   - **Delegación Obligatoria:** El Director General comisiona a los especialistas mediante `Agent` (`subagent_type: "<nombre-agente>"`), prohibiéndose resolver en solitario tareas asignadas a los Squads.
+   - **Herramientas Centralizadas:** Uso obligatorio del motor `scripts/utilidades/docx_quirurgico.py` para cualquier tabla, fórmula OMML o ajuste geométrico, erradicando la creación de scripts ad-hoc `vX_Y.py`.
    - Contratos obligatorios de comisión (`.claude/schemas/comision.schema.json`) y handoff (`.claude/schemas/handoff.schema.json`).
    - Bitácoras en Obsidian `08_SISTEMA_Y_AGENTES/bitacoras/<agente>.md`.
    - Única fuente de verdad: `00_SISTEMA/ESTADO_TESIS.md`.

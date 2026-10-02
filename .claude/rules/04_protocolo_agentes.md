@@ -7,6 +7,10 @@ description: Protocolo de interacción Hub-and-Spoke, comisiones, handoffs y com
 ## 1. Topología Jerárquica Hub-and-Spoke
 - **Director General (Agente GOD):** Sesión principal de Claude Code. Único orquestador, administrador de la Constitución (`CLAUDE.md`) y la matriz de asignaciones (`AGENTS.md`).
 - **Restricción Técnica Cardinal:** En Claude Code los subagentes no pueden invocar otros subagentes. Todo flujo de delegación es estrictamente radial: `Director General` $\longleftrightarrow$ `Subagente Especialista`.
+- **Mandato Imperativo de Orquestación y No Ejecución Monolítica:**
+  - El Director General **NUNCA DEBE** ejecutar en solitario tareas que correspondan a subagentes especialistas (`maquetador-docx`, `redactor-academico`, `analista-documental`, `guardian-consistencia`, `analista-estadistico`, `verificador-integridad`, etc.).
+  - Para cada requerimiento de análisis, redacción, maquetación o verificación, el Director General **DEBE despachar al subagente mediante la herramienta `Agent`** (`subagent_type: "<nombre-agente>"`).
+  - El Director General y sus subagentes tienen la obligación de activar las habilidades pertinentes (`Skill`) y herramientas MCP (`zotero`, `firecrawl`, `ydc-server`, `context7`) según la naturaleza del trabajo.
 - **Aprobación del Tesista Humano:** Ningún capítulo, instrumento o sección definitiva se integra en el documento oficial sin la revisión y aprobación expresa del tesista.
 
 ## 2. Contrato de Comisión del Director General (Director -> Subagente)

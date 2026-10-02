@@ -1,0 +1,3022 @@
+{
+  "tipo": "docx",
+  "fuente": {
+    "archivo": "referencias\\proyecto_base\\PROYECTO_TESIS.docx",
+    "sha256": "d4e075ebb42e8d39607e03086c12885d738ed5d7a09c73c6c5665cd7c967cdb6",
+    "bytes": 6900944
+  },
+  "perfil": {
+    "pagina_cm": [
+      21.0,
+      29.7
+    ],
+    "orientacion": "vertical",
+    "margenes_cm": {
+      "izq": 3.0,
+      "der": 2.25,
+      "sup": 2.5,
+      "inf": 2.5
+    },
+    "fuente_cuerpo": "Times New Roman",
+    "tam_cuerpo_pt": 12.0,
+    "interlineado_cuerpo": {
+      "regla": "multiple",
+      "valor": 1.5
+    },
+    "formatos_numeracion_pagina": [
+      "decimal"
+    ],
+    "seccion_predominante": 1,
+    "n_secciones": 4,
+    "encabezados_nivel1": [
+      "CAPÍTULO I.  PLANTEAMIENTO DEL PROBLEMA",
+      "CAPÍTULO II.  MARCO TEÓRICO",
+      "CAPITULO III. HIPÓTESIS Y DEFINICIÓN DE VARIABLES",
+      "CAPITULO IV. METODOLOGÍA DE INVESTIGACIÓN",
+      "CAPÍTULO V. ADMINISTRACIÓN DEL PROYECTO",
+      "Referencia Bibliográfica",
+      "ANEXOS",
+      "Anexo 1: Matriz de Consistencia"
+    ],
+    "n_encabezados": 91,
+    "precision": "exacto (XML de Word)"
+  },
+  "secciones": [
+    {
+      "parrafos": 530,
+      "caracteres": 52443,
+      "primer_encabezado": null,
+      "pagina_cm": [
+        21.0,
+        29.7
+      ],
+      "orientacion": "vertical",
+      "margenes_cm": {
+        "izq": 3.0,
+        "der": 2.25,
+        "sup": 2.5,
+        "inf": 2.5,
+        "encabezado": 1.25,
+        "pie": 1.25,
+        "encuadernacion": 0.0
+      },
+      "pgNumType": {
+        "formato": "decimal",
+        "inicio": "1"
+      },
+      "tipo_salto": "nextPage (por defecto)",
+      "columnas": 1,
+      "portada_distinta (titlePg)": false,
+      "referencias_cabecera_pie": [
+        {
+          "elemento": "cabecera",
+          "tipo": "default",
+          "rId": "rId17"
+        },
+        {
+          "elemento": "pie",
+          "tipo": "default",
+          "rId": "rId18"
+        }
+      ],
+      "n": 1
+    },
+    {
+      "parrafos": 4,
+      "caracteres": 85,
+      "primer_encabezado": null,
+      "pagina_cm": [
+        29.7,
+        21.0
+      ],
+      "orientacion": "horizontal",
+      "margenes_cm": {
+        "izq": 2.5,
+        "der": 2.5,
+        "sup": 3.0,
+        "inf": 2.25,
+        "encabezado": 1.25,
+        "pie": 1.25,
+        "encuadernacion": 0.0
+      },
+      "pgNumType": {
+        "formato": "decimal",
+        "inicio": "1"
+      },
+      "tipo_salto": "nextPage (por defecto)",
+      "columnas": 1,
+      "portada_distinta (titlePg)": false,
+      "referencias_cabecera_pie": [],
+      "n": 2
+    },
+    {
+      "parrafos": 53,
+      "caracteres": 8543,
+      "primer_encabezado": null,
+      "pagina_cm": [
+        21.0,
+        29.7
+      ],
+      "orientacion": "vertical",
+      "margenes_cm": {
+        "izq": 3.0,
+        "der": 2.25,
+        "sup": 2.5,
+        "inf": 2.5,
+        "encabezado": 1.25,
+        "pie": 1.25,
+        "encuadernacion": 0.0
+      },
+      "pgNumType": {
+        "formato": "decimal",
+        "inicio": "1"
+      },
+      "tipo_salto": "nextPage (por defecto)",
+      "columnas": 1,
+      "portada_distinta (titlePg)": false,
+      "referencias_cabecera_pie": [],
+      "n": 3
+    },
+    {
+      "parrafos": 1,
+      "caracteres": 74,
+      "primer_encabezado": null,
+      "pagina_cm": [
+        29.7,
+        21.0
+      ],
+      "orientacion": "horizontal",
+      "margenes_cm": {
+        "izq": 2.5,
+        "der": 2.5,
+        "sup": 3.0,
+        "inf": 2.25,
+        "encabezado": 1.25,
+        "pie": 1.25,
+        "encuadernacion": 0.0
+      },
+      "pgNumType": {
+        "formato": "decimal",
+        "inicio": "1"
+      },
+      "tipo_salto": "nextPage (por defecto)",
+      "columnas": 1,
+      "portada_distinta (titlePg)": false,
+      "referencias_cabecera_pie": [],
+      "n": 4
+    }
+  ],
+  "estilos_usados": [
+    {
+      "id": "Normal",
+      "nombre": "Normal",
+      "usos": 546,
+      "basado_en": null,
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": null,
+      "alineacion": "justificada",
+      "nivel_esquema": null
+    },
+    {
+      "id": "TDC3",
+      "nombre": "toc 3",
+      "usos": 58,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.0,
+        "regla": "multiple"
+      },
+      "antes_pt": 12.0,
+      "despues_pt": 12.0,
+      "sangria": {
+        "izq_cm": 0.78,
+        "der_cm": 0.5
+      },
+      "alineacion": "izquierda",
+      "nivel_esquema": null
+    },
+    {
+      "id": "Ttulo3",
+      "nombre": "heading 3",
+      "usos": 58,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": null,
+      "alineacion": "izquierda",
+      "nivel_esquema": 3
+    },
+    {
+      "id": "Bibliografa",
+      "nombre": "Bibliography",
+      "usos": 35,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 2.0,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": {
+        "izq_cm": 1.27,
+        "francesa_cm": 1.27
+      },
+      "alineacion": "justificada",
+      "nivel_esquema": null
+    },
+    {
+      "id": "TDC2",
+      "nombre": "toc 2",
+      "usos": 23,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.0,
+        "regla": "multiple"
+      },
+      "antes_pt": 12.0,
+      "despues_pt": 12.0,
+      "sangria": {
+        "izq_cm": 0.42,
+        "der_cm": 0.5
+      },
+      "alineacion": "izquierda",
+      "nivel_esquema": null
+    },
+    {
+      "id": "Ttulo2",
+      "nombre": "heading 2",
+      "usos": 23,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": 18.0,
+      "sangria": null,
+      "alineacion": "izquierda",
+      "nivel_esquema": 2
+    },
+    {
+      "id": "Prrafodelista",
+      "nombre": "List Paragraph",
+      "usos": 16,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": null,
+      "alineacion": "justificada",
+      "nivel_esquema": null
+    },
+    {
+      "id": "Tabladeilustraciones",
+      "nombre": "table of figures",
+      "usos": 12,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 10.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": {
+        "izq_cm": 0.85,
+        "francesa_cm": 0.85
+      },
+      "alineacion": "izquierda",
+      "nivel_esquema": null
+    },
+    {
+      "id": "Descripcin",
+      "nombre": "caption",
+      "usos": 12,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": true,
+      "interlineado": {
+        "valor": 1.0,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": 6.0,
+      "sangria": null,
+      "alineacion": "izquierda",
+      "nivel_esquema": null
+    },
+    {
+      "id": "TDC1",
+      "nombre": "toc 1",
+      "usos": 8,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": null,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.0,
+        "regla": "multiple"
+      },
+      "antes_pt": 12.0,
+      "despues_pt": 12.0,
+      "sangria": {
+        "der_cm": 0.5
+      },
+      "alineacion": "izquierda",
+      "nivel_esquema": null
+    },
+    {
+      "id": "Ttulo1",
+      "nombre": "heading 1",
+      "usos": 8,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": null,
+      "alineacion": "centrada",
+      "nivel_esquema": 1
+    },
+    {
+      "id": "Ttulo4",
+      "nombre": "heading 4",
+      "usos": 2,
+      "basado_en": "Normal",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "interlineado": {
+        "valor": 1.5,
+        "regla": "multiple"
+      },
+      "antes_pt": null,
+      "despues_pt": null,
+      "sangria": {
+        "izq_cm": 1.25
+      },
+      "alineacion": "izquierda",
+      "nivel_esquema": 4
+    }
+  ],
+  "encabezados": [
+    {
+      "nivel": 1,
+      "texto": "CAPÍTULO I.  PLANTEAMIENTO DEL PROBLEMA",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": "CAPÍTULO I.",
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 189
+    },
+    {
+      "nivel": 2,
+      "texto": "1.1 Descripción del problema",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 191
+    },
+    {
+      "nivel": 2,
+      "texto": "1.2   Formulación del problema",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 197
+    },
+    {
+      "nivel": 3,
+      "texto": "1.2.1 Problema General",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.2.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 198
+    },
+    {
+      "nivel": 3,
+      "texto": "1.2.2 Problemas Específicos (según corresponda)",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.2.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 201
+    },
+    {
+      "nivel": 2,
+      "texto": "1.3 Objetivos",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.3",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 207
+    },
+    {
+      "nivel": 3,
+      "texto": "1.3.1 Objetivo General",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.3.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 208
+    },
+    {
+      "nivel": 3,
+      "texto": "1.3.2 Objetivos Específicos",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.3.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 211
+    },
+    {
+      "nivel": 2,
+      "texto": "1.4 Justificación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.4",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 216
+    },
+    {
+      "nivel": 2,
+      "texto": "1.5 Delimitación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "1.5",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 222
+    },
+    {
+      "nivel": 1,
+      "texto": "CAPÍTULO II.  MARCO TEÓRICO",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": "CAPÍTULO II.",
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 230
+    },
+    {
+      "nivel": 2,
+      "texto": "2.1 Antecedentes de investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 231
+    },
+    {
+      "nivel": 3,
+      "texto": "2.1.1. Antecedentes a nivel internacional",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.1.1.",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 232
+    },
+    {
+      "nivel": 3,
+      "texto": "2.1.2. Antecedentes a nivel nacional",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.1.2.",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 238
+    },
+    {
+      "nivel": 2,
+      "texto": "2.2 Bases teóricas",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 243
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.1 Sistema web",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 244
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.2 Arquitectura de software",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 264
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.3 Arquitectura cliente-servidor",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.3",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 268
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.4 Sistema de información en salud",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.4",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 277
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.5 Sistema de información de inmunización",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.5",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 280
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.6 Inteligencia artificial",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.6",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 284
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.7 Calidad de software",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.7",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 288
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.8 Norma ISO/IEC 25010",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.8",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 291
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.9 Funcionalidad",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.9",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 317
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.10 Usabilidad",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.10",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 322
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.11 Programa Nacional de Inmunizaciones",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.11",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 330
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.12 Gestión logística de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.12",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 333
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.13 Gestión de movimientos de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.13",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 336
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.14 Cadena de frío",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.14",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 340
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.15 Conservación de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.15",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 344
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.16 Lote de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.16",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 352
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.17 Inventario de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.17",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 355
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.18 Kardex",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.18",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 359
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.19 Movimiento de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.19",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 362
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.20 Oportunidad de procesamiento",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.20",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 365
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.21 Consistencia documental",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.21",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 373
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.22 Satisfacción del usuario",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.22",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 380
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.23 Metodología Extreme Programming (XP)",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.23",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 397
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.24 Fases de la metodología XP",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.24",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 404
+    },
+    {
+      "nivel": 3,
+      "texto": "2.2.25 Prácticas de Extreme Programming",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.2.25",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 418
+    },
+    {
+      "nivel": 2,
+      "texto": "2.3 Marco conceptual",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 465
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.1 Sistema SIVAC",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 466
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.2 Aplicación web",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 469
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.3 Sistema de información de inmunización",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.3",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 472
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.4 Base de datos",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.4",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 475
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.5 Interfaz de programación de aplicaciones (API)",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.5",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 478
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.6 Gestión de movimientos de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.6",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 481
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.7 Movimiento de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.7",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 483
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.8 Entrada de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.8",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 486
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.9 Salida de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.9",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 489
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.10 Saldo de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.10",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 492
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.11 Lote de vacunas",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.11",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 495
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.12 Kardex digital",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.12",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 498
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.13 Vale de entrega",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.13",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 501
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.14 Centro de acopio",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.14",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 503
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.15 Oportunidad de procesamiento",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.15",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 506
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.16 Consistencia documental",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.16",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 509
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.17 Concordancia documental",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.17",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 511
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.18 Satisfacción del usuario",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.18",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 514
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.19 Percepción de utilidad",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.19",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 517
+    },
+    {
+      "nivel": 3,
+      "texto": "2.3.20 Historia de usuario",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": "2.3.20",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 520
+    },
+    {
+      "nivel": 1,
+      "texto": "CAPITULO III. HIPÓTESIS Y DEFINICIÓN DE VARIABLES",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": "CAPITULO III.",
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 529
+    },
+    {
+      "nivel": 2,
+      "texto": "3.1 Hipótesis general",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "3.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 530
+    },
+    {
+      "nivel": 2,
+      "texto": "3.2 Hipótesis específicas",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "3.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 533
+    },
+    {
+      "nivel": 2,
+      "texto": "3.3 Operacionalización de variables",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "3.3",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 537
+    },
+    {
+      "nivel": 4,
+      "texto": "Variable independiente:",
+      "estilo": "heading 4",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 539
+    },
+    {
+      "nivel": 4,
+      "texto": "Variable dependiente:",
+      "estilo": "heading 4",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 542
+    },
+    {
+      "nivel": 1,
+      "texto": "CAPITULO IV. METODOLOGÍA DE INVESTIGACIÓN",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": "CAPITULO IV.",
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 619
+    },
+    {
+      "nivel": 2,
+      "texto": "4.1 Tipo de Investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 620
+    },
+    {
+      "nivel": 2,
+      "texto": "4.2 Enfoque de Investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 624
+    },
+    {
+      "nivel": 2,
+      "texto": "4.3 Nivel de Investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.3",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 627
+    },
+    {
+      "nivel": 2,
+      "texto": "4.4 Diseño de Investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.4",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 630
+    },
+    {
+      "nivel": 2,
+      "texto": "4.5 Población",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.5",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 644
+    },
+    {
+      "nivel": 2,
+      "texto": "4.6 Muestra",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.6",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 660
+    },
+    {
+      "nivel": 2,
+      "texto": "4.7 Procedimiento de la Investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.7",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 670
+    },
+    {
+      "nivel": 3,
+      "texto": "Fase 1: Diagnóstico inicial y pretest",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 674
+    },
+    {
+      "nivel": 3,
+      "texto": "Fase 2: Planificación iterativa XP",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 678
+    },
+    {
+      "nivel": 3,
+      "texto": "Fase 3: Diseño, codificación y pruebas incrementales",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 682
+    },
+    {
+      "nivel": 3,
+      "texto": "Fase 4: Aplicación piloto y retroalimentación",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 686
+    },
+    {
+      "nivel": 3,
+      "texto": "Fase 5: Evaluación final o postest",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 690
+    },
+    {
+      "nivel": 2,
+      "texto": "4.8 Técnicas e Instrumentos de Recolección de Datos",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.8",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 696
+    },
+    {
+      "nivel": 2,
+      "texto": "4.9 Validez y Confiabilidad",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.9",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 752
+    },
+    {
+      "nivel": 2,
+      "texto": "4.10 Plan de Tratamiento de Datos",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "4.10",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 773
+    },
+    {
+      "nivel": 3,
+      "texto": "Técnicas de análisis",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 774
+    },
+    {
+      "nivel": 3,
+      "texto": "Diseño Estadístico para Probar la Hipótesis",
+      "estilo": "heading 3",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": true,
+      "orden_parrafo": 782
+    },
+    {
+      "nivel": 1,
+      "texto": "CAPÍTULO V. ADMINISTRACIÓN DEL PROYECTO",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": "CAPÍTULO V.",
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 799
+    },
+    {
+      "nivel": 2,
+      "texto": "5.1 Cronograma de Actividades de investigación",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "5.1",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 800
+    },
+    {
+      "nivel": 2,
+      "texto": "5.2 Presupuesto",
+      "estilo": "heading 2",
+      "numeracion_automatica": null,
+      "numeracion_manual": "5.2",
+      "alineacion": "izquierda",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 1022
+    },
+    {
+      "nivel": 1,
+      "texto": "Referencia Bibliográfica",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 1117
+    },
+    {
+      "nivel": 1,
+      "texto": "ANEXOS",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 1202
+    },
+    {
+      "nivel": 1,
+      "texto": "Anexo 1: Matriz de Consistencia",
+      "estilo": "heading 1",
+      "numeracion_automatica": null,
+      "numeracion_manual": null,
+      "alineacion": "centrada",
+      "fuente": "Times New Roman",
+      "tam_pt": 12.0,
+      "negrita": true,
+      "cursiva": null,
+      "orden_parrafo": 1204
+    }
+  ],
+  "tablas": [
+    {
+      "n": 1,
+      "filas": 6,
+      "columnas": 2,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        3.5,
+        12.5
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "9072"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Característica",
+        "Descripción"
+      ],
+      "rotulo_antes": "Tabla 1 Características de los Sistemas Web",
+      "rotulo_despues": null
+    },
+    {
+      "n": 2,
+      "filas": 10,
+      "columnas": 2,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        3.98,
+        11.77
+      ],
+      "ancho_tabla": {
+        "tipo": "auto",
+        "valor": "0"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Característica",
+        "Subcaracterísticas"
+      ],
+      "rotulo_antes": "Tabla 2 Características de la Norma ISO/IEC 25010:2023",
+      "rotulo_despues": null
+    },
+    {
+      "n": 3,
+      "filas": 3,
+      "columnas": 3,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        5.75,
+        5.5,
+        4.75
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "9072"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Dimensión",
+        "Indicador",
+        "Escala"
+      ],
+      "rotulo_antes": "Tabla 3 Indicadores de la satisfacción del usuario",
+      "rotulo_despues": null
+    },
+    {
+      "n": 4,
+      "filas": 9,
+      "columnas": 3,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        4.0,
+        6.0,
+        5.75
+      ],
+      "ancho_tabla": {
+        "tipo": "auto",
+        "valor": "0"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Práctica",
+        "Descripción",
+        "Beneficio"
+      ],
+      "rotulo_antes": "Tabla 4 Prácticas Principales de Extreme Programming",
+      "rotulo_despues": null
+    },
+    {
+      "n": 5,
+      "filas": 11,
+      "columnas": 5,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        3.07,
+        2.79,
+        3.81,
+        3.43,
+        2.65
+      ],
+      "ancho_tabla": {
+        "tipo": "auto",
+        "valor": "0"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Variables",
+        "Definición conceptual",
+        "Dimensiones",
+        "Indicadores",
+        "ÍNDICE /Unidadde medida"
+      ],
+      "rotulo_antes": "Tabla 5 Operacionalización de variables",
+      "rotulo_despues": null
+    },
+    {
+      "n": 6,
+      "filas": 4,
+      "columnas": 2,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        11.19,
+        4.82
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "9072"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Área",
+        "Cantidad"
+      ],
+      "rotulo_antes": "Tabla 6 Distribución de la Población de Estudio",
+      "rotulo_despues": null
+    },
+    {
+      "n": 7,
+      "filas": 4,
+      "columnas": 3,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        3.09,
+        6.12,
+        6.55
+      ],
+      "ancho_tabla": {
+        "tipo": "auto",
+        "valor": "0"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Técnica",
+        "Descripción",
+        "Aplicación"
+      ],
+      "rotulo_antes": "Tabla 7 Técnicas de Recolección de Datos",
+      "rotulo_despues": null
+    },
+    {
+      "n": 8,
+      "filas": 4,
+      "columnas": 3,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        3.38,
+        6.95,
+        5.43
+      ],
+      "ancho_tabla": {
+        "tipo": "auto",
+        "valor": "0"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Instrumento",
+        "Descripción",
+        "Variable que mide"
+      ],
+      "rotulo_antes": "Tabla 8 Instrumentos de Recolección de Datos",
+      "rotulo_despues": null
+    },
+    {
+      "n": 9,
+      "filas": 6,
+      "columnas": 2,
+      "estilo": "Rabla estilo APA",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": false,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {
+            "bottom": {
+              "val": "single",
+              "sz_pt": 0.5,
+              "color": "auto"
+            }
+          },
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": false,
+        "origen_bajo_encabezado": "estilo condicional firstRow (tcBorders.bottom)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": true,
+      "incumplimientos_tres_lineas": [],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        7.0,
+        9.0
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "9072"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "Rango Alfa de Cronbach",
+        "Interpretación"
+      ],
+      "rotulo_antes": "Tabla 9 Rangos de Interpretación del Coeficiente Alfa de Cronbach",
+      "rotulo_despues": null
+    },
+    {
+      "n": 10,
+      "filas": 10,
+      "columnas": 27,
+      "estilo": null,
+      "bordes": {},
+      "bordes_verticales": true,
+      "bordes_horizontales_sup_inf_interno": [
+        false,
+        false,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": false,
+        "lastRow": false,
+        "firstColumn": false,
+        "lastColumn": false,
+        "noHBand": true,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": null,
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": false,
+        "inferior": true,
+        "interiores": true,
+        "origen_bajo_encabezado": null,
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": false,
+      "incumplimientos_tres_lineas": [
+        "falta la línea bajo el encabezado",
+        "hay líneas horizontales interiores (no es de tres líneas)",
+        "hay bordes verticales"
+      ],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        1.02,
+        2.69,
+        0.87,
+        1.12,
+        0.93,
+        0.93,
+        0.87,
+        0.89,
+        0.96,
+        0.95,
+        1.04,
+        0.98,
+        1.05,
+        0.88,
+        0.72,
+        0.9,
+        0.71,
+        0.71,
+        0.77,
+        0.67,
+        0.84,
+        0.75,
+        0.76,
+        0.95,
+        0.84,
+        0.94,
+        0.02
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "14050"
+      },
+      "celdas_con_bordes_verticales_propios": 438,
+      "primera_fila": [
+        "Item",
+        "NOMBRE DE LA ACTIVIDAD",
+        "M E S E S"
+      ],
+      "rotulo_antes": null,
+      "rotulo_despues": null
+    },
+    {
+      "n": 11,
+      "filas": 21,
+      "columnas": 5,
+      "estilo": "Tabla con cuadrícula1",
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "left": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "right": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "insideH": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        },
+        "insideV": {
+          "val": "single",
+          "sz_pt": 0.5,
+          "color": "auto"
+        }
+      },
+      "bordes_verticales": true,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        true
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {},
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": true,
+        "origen_bajo_encabezado": "insideH (la misma línea se repite entre todas las filas)",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": false,
+      "incumplimientos_tres_lineas": [
+        "hay líneas horizontales interiores (no es de tres líneas)",
+        "hay bordes verticales"
+      ],
+      "encabezado_repetido": false,
+      "anchos_cm": [
+        4.57,
+        3.4,
+        2.86,
+        2.66,
+        3.0
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "9345"
+      },
+      "celdas_con_bordes_verticales_propios": 0,
+      "primera_fila": [
+        "PRESUPUESTO"
+      ],
+      "rotulo_antes": null,
+      "rotulo_despues": null
+    },
+    {
+      "n": 12,
+      "filas": 5,
+      "columnas": 7,
+      "estilo": null,
+      "bordes": {
+        "top": {
+          "val": "single",
+          "sz_pt": 1.5,
+          "color": "000000"
+        },
+        "left": {
+          "val": "single",
+          "sz_pt": 1.5,
+          "color": "000000"
+        },
+        "bottom": {
+          "val": "single",
+          "sz_pt": 1.5,
+          "color": "000000"
+        },
+        "right": {
+          "val": "single",
+          "sz_pt": 1.5,
+          "color": "000000"
+        }
+      },
+      "bordes_verticales": true,
+      "bordes_horizontales_sup_inf_interno": [
+        true,
+        true,
+        false
+      ],
+      "bordes_horizontales_sup_inf_interno_nota": "solo tblBorders (directo + estilo); el efectivo está en 'lineas_horizontales'",
+      "tblLook": {
+        "firstRow": true,
+        "lastRow": false,
+        "firstColumn": true,
+        "lastColumn": false,
+        "noHBand": false,
+        "noVBand": true
+      },
+      "formato_condicional": {
+        "firstRow": {
+          "tc": {},
+          "tbl": {}
+        },
+        "lastRow": null
+      },
+      "lineas_horizontales": {
+        "superior": true,
+        "bajo_encabezado": true,
+        "inferior": true,
+        "interiores": true,
+        "origen_bajo_encabezado": "formato directo: borde inferior de las celdas de la fila 1",
+        "vertical_condicional": false
+      },
+      "cumple_tres_lineas_apa7": false,
+      "incumplimientos_tres_lineas": [
+        "hay líneas horizontales interiores (no es de tres líneas)",
+        "hay bordes verticales"
+      ],
+      "encabezado_repetido": true,
+      "anchos_cm": [
+        2.25,
+        4.5,
+        5.5,
+        5.75,
+        4.24,
+        3.25,
+        3.25
+      ],
+      "ancho_tabla": {
+        "tipo": "dxa",
+        "valor": "16293"
+      },
+      "celdas_con_bordes_verticales_propios": 70,
+      "primera_fila": [
+        "VARIABLES",
+        "PROBLEMAS",
+        "OBJETIVOS",
+        "HIPÓTESIS",
+        "DIMENSIONES",
+        "INDICADORES",
+        "METODOLOGÍA"
+      ],
+      "rotulo_antes": null,
+      "rotulo_despues": null
+    }
+  ],
+  "resumen_tablas": {
+    "total": 12,
+    "evaluables": 12,
+    "cumplen_tres_lineas_apa7": 9,
+    "incumplen": [
+      10,
+      11,
+      12
+    ]
+  },
+  "imagenes": [
+    {
+      "tipo": "en línea",
+      "nombre": "image4.png",
+      "texto_alternativo": null,
+      "ancho_cm": 3.84,
+      "alto_cm": 4.34,
+      "formato": "PNG",
+      "px": [
+        212,
+        238
+      ],
+      "dpi_efectivo": 140.2,
+      "dpi_metadatos": null,
+      "archivo": "/word/media/image1.png"
+    },
+    {
+      "tipo": "en línea",
+      "nombre": "Imagen 12",
+      "texto_alternativo": "Arquitectura Cliente Servidor. - Tech Riders",
+      "ancho_cm": 13.23,
+      "alto_cm": 7.42,
+      "formato": "JPEG",
+      "px": [
+        500,
+        280
+      ],
+      "dpi_efectivo": 96.0,
+      "dpi_metadatos": null,
+      "archivo": "/word/media/image2.jpeg"
+    },
+    {
+      "tipo": "en línea",
+      "nombre": "Imagen 1",
+      "texto_alternativo": null,
+      "ancho_cm": 15.75,
+      "alto_cm": 6.09,
+      "formato": "PNG",
+      "px": [
+        1322,
+        511
+      ],
+      "dpi_efectivo": 213.2,
+      "dpi_metadatos": [
+        96.0,
+        96.0
+      ],
+      "archivo": "/word/media/image3.png"
+    },
+    {
+      "tipo": "en línea",
+      "nombre": "Imagen 13",
+      "texto_alternativo": "Metodología XP o Programación Extrema: ¿Qué es y cómo aplicarla?",
+      "ancho_cm": 15.75,
+      "alto_cm": 8.87,
+      "formato": "JPEG",
+      "px": [
+        960,
+        540
+      ],
+      "dpi_efectivo": 154.8,
+      "dpi_metadatos": null,
+      "archivo": "/word/media/image4.jpeg"
+    }
+  ],
+  "graficos_cuerpo": {
+    "imagenes": 4,
+    "formas": 2,
+    "vml_fallback_omitidos": 2
+  },
+  "cabeceras_pies": [
+    {
+      "elemento": "cabecera",
+      "tipo": "default",
+      "rId": "rId17",
+      "seccion": 1,
+      "parte": "/word/header1.xml",
+      "texto": "",
+      "campos": [],
+      "alineaciones": [
+        "centrada"
+      ],
+      "imagenes": 0,
+      "formas": 1,
+      "vml_fallback_omitidos": 1
+    },
+    {
+      "elemento": "pie",
+      "tipo": "default",
+      "rId": "rId18",
+      "seccion": 1,
+      "parte": "/word/footer1.xml",
+      "texto": "",
+      "campos": [],
+      "alineaciones": [],
+      "imagenes": 0,
+      "formas": 0,
+      "vml_fallback_omitidos": 0
+    }
+  ],
+  "rotulos": [
+    {
+      "texto": "Tabla 1 Características de los Sistemas Web",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "1",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Características de los Sistemas Web",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 249
+    },
+    {
+      "texto": "Figura 1 Arquitectura Cliente-Servidor de un Sistema Web",
+      "estilo": "caption",
+      "alineacion": "justificada",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Figura ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "1",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Arquitectura Cliente-Servidor de un Sist",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 273
+    },
+    {
+      "texto": "Tabla 2 Características de la Norma ISO/IEC 25010:2023",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "2",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Características de la Norma ISO/IEC 2501",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 294
+    },
+    {
+      "texto": "Figura 2 Componentes de la Cadena de Frío de Vacunas",
+      "estilo": "caption",
+      "alineacion": "justificada",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Figura ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "2",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Componentes de la Cadena de Frío de Vacu",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 348
+    },
+    {
+      "texto": "Tabla 3 Indicadores de la satisfacción del usuario",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "3",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Indicadores de la satisfacción del usuar",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 385
+    },
+    {
+      "texto": "Figura 3 Fases de la Metodología XP",
+      "estilo": "caption",
+      "alineacion": "justificada",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Figura ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "3",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Fases de la Metodología XP",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 414
+    },
+    {
+      "texto": "Tabla 4 Prácticas Principales de Extreme Programming",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "4",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Prácticas Principales de Extreme ",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Programming",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 436
+    },
+    {
+      "texto": "Tabla 5 Operacionalización de variables",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "5",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Operacionalización de variables",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 546
+    },
+    {
+      "texto": "Tabla 6 Distribución de la Población de Estudio",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "6",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Distribución de la Población de Estudio",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 647
+    },
+    {
+      "texto": "Tabla 7 Técnicas de Recolección de Datos",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "7",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Técnicas de Recolección de Datos",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 700
+    },
+    {
+      "texto": "Tabla 8 Instrumentos de Recolección de Datos",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "8",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Instrumentos de Recolección de Datos",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 719
+    },
+    {
+      "texto": "Tabla 9 Rangos de Interpretación del Coeficiente Alfa de Cronbach",
+      "estilo": "caption",
+      "alineacion": "izquierda",
+      "campo_SEQ": true,
+      "formato_runs": [
+        {
+          "texto": "Tabla ",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "9",
+          "negrita": true,
+          "cursiva": false,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        },
+        {
+          "texto": "Rangos de Interpretación del Coeficiente",
+          "negrita": false,
+          "cursiva": true,
+          "tam_pt": 12.0,
+          "fuente": "Times New Roman"
+        }
+      ],
+      "orden_parrafo": 758
+    }
+  ],
+  "campos_cuerpo": {
+    "TOC": 3,
+    "PAGEREF": 101,
+    "SEQ": 12,
+    "ADDIN": 13
+  },
+  "comentarios": 24,
+  "cambios_registrados": {
+    "insertados": 0,
+    "eliminados": 0
+  },
+  "estilos_definidos": 119,
+  "avisos": [
+    "Tablas que no cumplen el formato APA 7 de tres líneas (regla 03): [10, 11, 12].",
+    "4 de 4 imágenes con DPI efectivo < 300 (criterio de la regla 03).",
+    "102 párrafos son entradas de índice/tabla de contenido/figuras y se excluyen del inventario de rótulos."
+  ]
+}

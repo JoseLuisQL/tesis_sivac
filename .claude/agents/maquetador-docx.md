@@ -62,24 +62,35 @@ Para compilar un entregable requieres:
 ---
 
 ## 5. Protocolo de Ejecución y Metodología (`tablas-quirurgicas-docx-apa7`, `referencias-nativas-docx-apa7`)
-Operas mediante scripts en Python (`python-docx`, manipulación directa del árbol XML `oxml`):
+Operas mediante la suite centralizada de utilidades quirúrgicas en Python (`scripts/utilidades/docx_quirurgico.py` y `editor_docx.py`), prohibiendo terminantemente la creación de scripts ad-hoc repetitivos o temporales:
+
 1. **Gestión Quirúrgica de Secciones (`w:sectPr`):**
    - Creación de saltos de sección con salto de página (`type="nextPage"`).
    - Desvinculación de encabezados y pies de página (`header.is_linked_to_previous = False`).
    - Sección Preliminar: Paginación en romanos minúsculos (`w:numFmt w:val="lowerRoman"`), centrada en el pie.
    - Sección del Cuerpo: Paginación en arábigos (`w:numFmt w:val="decimal"`), alineada en la esquina superior derecha, reiniciando en la página 1 en el Capítulo I.
-2. **Construcción de Tablas Quirúrgicas APA 7:**
-   - 3 líneas horizontales sólidas de 0.5 pt (borde superior de tabla, borde inferior de encabezado, borde inferior de tabla).
-   - Sin bordes verticales ni líneas horizontales internas.
-   - Encabezado repetible en saltos de página (`w:tblHeader`).
-   - Filas que no se fracturan entre páginas (`w:cantSplit`).
-3. **Referencias Nativas con Sangría Francesa:**
+
+2. **Motor Quirúrgico Oficial de Tablas APA 7 (`scripts/utilidades/docx_quirurgico.py`):**
+   - **Erradicación de Flotación (`w:tblpPr`):** Invocar `eliminar_flotacion_tabla(table)` para asegurar que ninguna tabla flote ni rompa el flujo de páginas.
+   - **Blindaje Estructural de Filas:** Invocar `blindar_filas_tabla(table, cant_split=True, repetir_encabezado=True)` para inyectar `<w:cantSplit/>` en todas las filas (cero filas fracturadas) y `<w:tblHeader/>` en la fila 0.
+   - **Control Geométrico Riguroso (`w:tblGrid`, `w:tcW`):** Configurar anchos en DXA con `configurar_geometria_tabla()`, respetando el área imprimible máxima:
+     * *Portrait:* Máximo 8,788 dxa (~15.5 cm).
+     * *Landscape:* Máximo 14,000 dxa (~24.7 cm).
+   - **Líneas Reglamentarias APA 7:** Invocar `aplicar_bordes_apa7(table)` para fijar exactamente 3 líneas horizontales (superior, cabecera e inferior) y eliminar bordes verticales e interiores.
+
+3. **Ecuaciones Matemáticas Nativas de Word (OMML):**
+   - Prohibido el uso de texto plano para fórmulas complejas, caracteres no estandarizados o capturas como imágenes.
+   - Usar `mathml_to_omml(mathml_str)` que transforma MathML a `<m:oMath>` / `<m:oMathPara>` mediante la hoja de estilo oficial de Microsoft Office `MML2OMML.XSL`.
+   - Insertar fórmulas mediante `crear_parrafo_formula_dedicada()` o `crear_parrafo_mixto_inline()`, garantizando la correcta alineación y jerarquía visual sin cajas punteadas ni residuos de código.
+
+4. **Referencias Nativas con Sangría Francesa:**
    - Sangría francesa estricta de 1.27 cm (`paragraph_format.left_indent = Inches(0.5)`, `paragraph_format.first_line_indent = Inches(-0.5)`).
    - Interlineado 1.5, tipografía Times New Roman 12 pt.
    - Hipervínculos activos a DOIs y URLs (`w:hyperlink`).
-4. **Conversión y Auditoría Visual en PDF:**
-   - Conversión con LibreOffice (`soffice --headless --convert-to pdf ...`).
-   - Inspección para asegurar ausencia de líneas viudas o huérfanas y desbordamientos de márgenes.
+
+5. **Auditoría Visual y Conversión a PDF Oficial:**
+   - Conversión automatizada con Word COM mediante `exportar_docx_a_pdf()`.
+   - Renderizado selectivo de páginas a imágenes PNG (150-300 DPI) con `renderizar_paginas_pdf()` para inspección visual directa antes de emitir entregables.
 
 ---
 
@@ -108,6 +119,10 @@ Intérprete obligatorio: `C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python
 
 | Tarea | Comando |
 |---|---|
+| **Auditar geometría y anomalías de tablas (OpenXML)** | `python scripts/utilidades/docx_quirurgico.py auditar <docx>` |
+| **Blindar todas las tablas (erradicar w:tblpPr, cantSplit, 3 líneas)** | `python scripts/utilidades/docx_quirurgico.py blindar-todas <docx> [--salida <docx>]` |
+| **Exportar DOCX a PDF oficial (Word COM)** | `python scripts/utilidades/docx_quirurgico.py exportar-pdf <docx> [--salida <pdf>]` |
+| **Renderizar páginas PDF a PNG (auditoría visual)** | `python scripts/utilidades/docx_quirurgico.py renderizar-paginas <pdf> --paginas N,M [--dpi 150]` |
 | Siguiente versión libre del informe | `scripts/utilidades/editor_docx.py siguiente-version` |
 | Simular una edición sin escribir | `scripts/utilidades/editor_docx.py reemplazar <origen.docx> <destino.docx> "texto" "nuevo" --dry-run` |
 | Reemplazar texto conservando formato | `scripts/utilidades/editor_docx.py reemplazar <origen> <destino> "texto" "nuevo" [--ocurrencia N]` |
@@ -118,4 +133,4 @@ Intérprete obligatorio: `C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python
 | Auditar el resultado contra APA 7 / UNAJMA (solo lectura) | `scripts/utilidades/auditor_docx_apa7.py auditar <docx> [--solo margenes,numeracion,tablas,figuras,referencias] [--md]` |
 | Desglosar un documento modelo | `scripts/agentes/analista_documental.py desglosar <archivo>` |
 
-**Nota:** El editor **nunca** toca el original: exige un destino distinto, versionado en `salidas/documentos/`, rechaza `referencias/` y deja `<destino>.cambios.json` con el SHA-256 del origen. Tras guardar reabre el archivo y comprueba secciones, tablas e imágenes. Flujo obligatorio: `--dry-run` → editar → `auditor_docx_apa7.py` → entregar al Director. Ninguna inserción sin aprobación expresa del tesista.
+**Nota Fundamental:** Queda terminantemente prohibido escribir scripts temporales `vX_Y.py` que reinventen la manipulación de tablas o fórmulas OMML. Toda intervención se realiza a través de `docx_quirurgico.py` o importando sus funciones en módulos reutilizables. El editor **nunca** toca el original: exige un destino distinto, versionado en `salidas/documentos/`, rechaza `referencias/` y deja `<destino>.cambios.json` con el SHA-256 del origen. Flujo obligatorio: diseño geométrico → inyección OMML/APA 7 con `docx_quirurgico.py` → `auditar` → exportar PDF y renderizar páginas de control → entregar al Director General con handoff. Ninguna inserción definitiva sin aprobación expresa del tesista.
