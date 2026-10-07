@@ -1,0 +1,302 @@
+P058 [Heading 1] (5w): CAPÍTULO I.  PLANTEAMIENTO DEL PROBLEMA
+P059 [Normal] (0w): 
+P060 [Heading 2] (4w): 1.1 Descripción del problema
+P061 [Normal] (125w): A nivel internacional, la gestión de la cadena de suministro de insumos médicos, y en particular de las vacunas, constituye uno de los desafíos más relevantes para los sistemas de salud pública. La falta de visibilidad de datos oportunos y la dependencia de registros manuales pueden limitar la planificación, distribución y seguimiento de los inmunobiológicos. En ese contexto, Shen et al. (2024) reportaron que un sistema digital de gestión de cadena de suministro redujo la tasa promedio anual de error de inventario de 0.425‰ a 0.025‰ e incrementó la eficiencia de la cadena en 42.4%. Este tipo de evidencia muestra que los sistemas de información pueden contribuir al control de inventarios, la reducción de inconsistencias y la disponibilidad oportuna de datos para la gestión sanitaria.
+P062 [Normal] (83w): En Latinoamérica, Balón Morejón (2023) desarrolló una aplicación web para la gestión de citas, control de inventario y campañas de vacunación en un centro de salud de Ecuador. El estudio reportó que el tiempo de obtención de reportes estadísticos se redujo de 3 o 4 días a 6 segundos después de implementar la aplicación. Este antecedente resulta pertinente porque vincula el uso de una aplicación web con procesos de inventario, campañas de vacunación y generación de reportes, elementos cercanos al propósito de SIVAC.
+P063 [Normal] (108w): En el contexto nacional, el sistema de salud peruano enfrenta brechas de digitalización asociadas con información fragmentada y uso de herramientas manuales. Mego Navarro (2021) identificó, en una muestra de 40 especialistas estadísticos e informáticos, que el 45% obtenía información estadística mediante visita presencial a centros de salud, el 30% por correo institucional, el 12.5% por comunicación celular y el 12.5% mediante sistemas. Garcia Villacorta y Calderón Huaman (2023) también reportaron mejoras en control de inventarios después de implementar un sistema web, con incrementos de 75.42% a 97.18% en dicho indicador. Estos antecedentes sostienen la necesidad de organizar digitalmente los registros y reportes vinculados con movimientos de vacunas.
+P064 [Normal] (174w): A nivel local, esta problemática se manifiesta en la Dirección de Salud Apurímac II, específicamente en la Oficina de Estrategia de Inmunizaciones de la provincia de Andahuaylas. El personal de esta área, conformado por 14 trabajadores (3 en estrategia y 11 responsables de cadena de frío), gestiona los movimientos de vacunas mediante hojas físicas y archivos de Excel aislados. La falta de integración entre la sede administrativa y los 11 centros de acopio dificulta la trazabilidad de los biológicos y la consolidación oportuna de información. Esta situación afecta la oportunidad de procesamiento, porque el registro y la emisión de reportes demandan actividades manuales; compromete la consistencia documental, debido al riesgo de errores de digitación, duplicidad de datos y diferencias entre el stock físico y el registrado; y repercute en la satisfacción del usuario, porque el personal percibe los procesos actuales como lentos y poco amigables. Frente a esta realidad, la aplicación del sistema "SIVAC" se plantea como una alternativa tecnológica para ordenar los flujos de información y fortalecer la gestión de movimientos de vacunas.
+P065 [Normal] (0w): 
+P066 [Heading 2] (4w): 1.2   Formulación del problema
+P067 [Heading 3] (3w): 1.2.1 Problema General
+P068 [Normal] (29w): ¿En qué medida la aplicación del sistema "SIVAC" mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025?
+P069 [Normal] (0w): 
+P070 [Heading 3] (5w): 1.2.2 Problemas Específicos (según corresponda)
+P071 [Normal] (0w): 
+P072 [Normal] (34w): ¿En qué medida la aplicación del sistema "SIVAC" mejora la oportunidad de procesamiento en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025?
+P073 [Normal] (33w): ¿En qué medida la aplicación del sistema "SIVAC" mejora la consistencia documental en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025?
+P074 [Normal] (34w): ¿En qué medida la aplicación del sistema "SIVAC" mejora la satisfacción del usuario en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025?
+P075 [Normal] (0w): 
+P076 [Heading 2] (2w): 1.3 Objetivos
+P077 [Heading 3] (3w): 1.3.1 Objetivo General
+P078 [Normal] (30w): Determinar en qué medida la aplicación del sistema "SIVAC" mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025.
+P079 [Normal] (0w): 
+P080 [Heading 3] (3w): 1.3.2 Objetivos Específicos
+P081 [Normal] (35w): Determinar en qué medida la aplicación del sistema "SIVAC" mejora la oportunidad de procesamiento en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025.
+P082 [Normal] (34w): Determinar en qué medida la aplicación del sistema "SIVAC" mejora la consistencia documental en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025.
+P083 [Normal] (35w): Determinar en qué medida la aplicación del sistema "SIVAC" mejora la satisfacción del usuario en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, Andahuaylas 2025.
+P084 [Normal] (0w): 
+P085 [Heading 2] (2w): 1.4 Justificación
+P086 [Normal] (73w): La implementación del Sistema Web SIVAC será relevante porque permitirá a la Dirección de Salud Apurímac II registrar, controlar, consultar y reportar los movimientos de vacunas mediante un entorno digital organizado. De esta manera, el sistema se utilizará en el proceso de gestión de movimientos de vacunas para centralizar la información de entradas, salidas, saldos, lotes y vales de entrega, facilitando la trazabilidad documental entre la sede administrativa y los centros de acopio.
+P087 [Normal] (110w): Bajo esta perspectiva, la investigación tendrá un aporte organizacional y metodológico porque contribuirá a ordenar los flujos de control de inventario y distribución que actualmente dependen de procedimientos manuales o registros dispersos. En lugar de asumir reducciones temporales subjetivas o no parametrizadas, el estudio evaluará la oportunidad de procesamiento mediante indicadores métricos directamente observables y reproducibles. Específicamente, se cuantificarán el tiempo de registro de movimientos (Treg) y el tiempo de emisión de comprobantes de salida o vales (Tvale), comparados antes y después de la implementación de la solución tecnológica. De este modo, la investigación aportará datos empíricos objetivos sobre la reducción de la latencia en las operaciones de abastecimiento biológico.
+P088 [Normal] (62w): Asimismo, el aporte práctico se reflejará en la disponibilidad de información más clara para la programación, entrega y seguimiento de vacunas. Se espera que el uso del sistema favorezca el control de los movimientos, reduzca inconsistencias documentales y mejore la imagen institucional de la Dirección de Salud Apurímac II como entidad que incorpora herramientas tecnológicas para fortalecer la gestión pública en salud.
+P089 [Normal] (52w): De esta forma, la presente investigación beneficiará al personal de inmunizaciones, a los responsables de movimientos de vacunas en los centros de acopio y, de manera indirecta, a la comunidad de la provincia de Andahuaylas, al proponer una herramienta orientada a mejorar la gestión de información que respalda el servicio de inmunizaciones.
+P090 [Normal] (0w): 
+P091 [Heading 2] (2w): 1.5 Delimitación
+P092 [Normal] (31w): La presente investigación se circunscribe metodológicamente a través de cuatro ejes canónicos del estándar institucional, asegurando la validez interna del diseño experimental y delimitando con precisión el alcance de los hallazgos.
+P093 [Normal] (92w): Delimitación espacial. El estudio se circunscribe al ámbito institucional y geográfico de la Dirección de Salud Apurímac II, ubicada en la provincia de Andahuaylas, departamento de Apurímac. De manera específica, las mediciones e intervenciones se focalizan en la Oficina de la Estrategia Sanitaria de Inmunizaciones y en la red de sus 11 centros de acopio zonales de biológicos. Dichos establecimientos albergan la infraestructura de cadena de frío responsable de la custodia, conservación y distribución de los biológicos hacia los establecimientos de salud del primer y segundo nivel de atención de la provincia.
+P094 [Normal] (82w): Delimitación temporal. El horizonte cronológico de la investigación comprende el periodo entre los años 2024 y 2025. Este intervalo abarca la fase de diagnóstico basal y levantamiento de mediciones en la condición pretest, ejecutada durante el último trimestre del año 2024 bajo la modalidad tradicional de registros manuales y hojas de cálculo aisladas. Asimismo, comprende el posterior despliegue operativo e inducción técnica en el uso del sistema web SIVAC, culminando con la fase de evaluación experimental postest concluida en el año 2025.
+P095 [Normal] (97w): Delimitación poblacional. La unidad de análisis humano se delimita a una población censal finita integrada por la totalidad del personal involucrado en la cadena operativa de inmunizaciones de la institución (N = n = 14). Esta cobertura censal está conformada por tres profesionales del equipo técnico de la Estrategia Sanitaria de Inmunizaciones, encargados de la coordinación y supervisión central, y 11 servidores designados como responsables directos del manejo de cadena de frío y centros de acopio provinciales. Dada la magnitud acotada del universo, se analizó al censo completo sin recurrir a muestreo probabilístico, eliminando el error muestral.
+P096 [Normal] (147w): Delimitación temática. La investigación se encuadra disciplinariamente en el área de la Ingeniería de Sistemas aplicada a la logística sanitaria. En el plano temático, el estudio analiza la influencia del sistema web SIVAC sobre la gestión de movimientos de vacunas. Dicha solución tecnológica se desarrolló mediante la metodología ágil Extreme Programming y se evaluó bajo el estándar ISO/IEC 25010:2023. La variable dependiente se restringe rigurosamente a tres dimensiones canónicas. La primera corresponde a la oportunidad de procesamiento, evaluada a través del tiempo de registro de movimientos (Treg) y el tiempo de emisión de comprobantes de salida o vales (Tvale). Asimismo, se analiza la consistencia documental, calculada mediante los registros sin discrepancias (RSD) y la concordancia programada versus entregada (CPE). Finalmente, la satisfacción del usuario se determina con base en la aceptación del proceso operativo (AP) y la utilidad percibida sanitaria (UP) bajo el Modelo de Aceptación Tecnológica.
+P097 [Heading 1] (4w): CAPÍTULO II.  MARCO TEÓRICO
+P098 [Heading 2] (4w): 2.1 Antecedentes de investigación
+P099 [Heading 3] (5w): 2.1.1. Antecedentes a nivel internacional
+P100 [Normal] (122w): Shen et al. (2024) desarrollaron un estudio de caso titulado “Management of drug supply chain information based on artificial intelligence + vendor managed inventory in China”. El objetivo fue optimizar la gestión de la cadena de suministro de medicamentos mediante un sistema digital basado en inteligencia artificial y gestión de inventario por proveedor. La investigación evaluó indicadores antes y después de la implementación del sistema, considerando reportes de pérdidas, discrepancias de inventario, recuperación interhospitalaria de medicamentos, gasto y uso de farmacia en la nube. Los resultados mostraron que la tasa de inventario hospitalario se redujo aproximadamente al 20%, la tasa promedio anual de error de inventario disminuyó de 0.425‰ a 0.025‰ y la eficiencia de la cadena de suministro aumentó en 42.4%.
+P101 [Normal] (95w): Balón Morejón (2023) desarrolló una tesis titulada “Aplicación web de gestión de citas, control de inventario y campañas de vacunación en el centro de salud Dr. José Garcés Rodríguez del cantón Salinas, en Ecuador”. El objetivo fue desarrollar una aplicación web con tecnologías libres para gestionar citas, inventario y campañas de vacunación. La metodología fue exploratoria y diagnóstica, con desarrollo incremental, entrevistas estructuradas y análisis documental de los procesos manuales del centro de salud. Como resultado cuantitativo verificable, el tiempo de obtención de reportes estadísticos se redujo de 3 o 4 días a 6 segundos.
+P102 [Normal] (82w): Kigenza et al. (2023) documentaron una intervención de mejora de calidad en la cadena de suministro de salud de Ruanda, orientada a fortalecer el uso del sistema electrónico de información logística. El estudio incluyó 596 puntos de prestación de servicios, 30 almacenes regionales y 1,296 trabajadores capacitados. Los resultados comparativos reportaron que el uso del e-LMIS aumentó de 55% a 96%, la exactitud de los datos de inventario pasó de 25% a 85% y los desabastecimientos se redujeron de 10% a 1%.
+P103 [Normal] (85w): Ergetie et al. (2023) evaluaron las prácticas de gestión de cadena de frío de vacunas en centros de salud primaria de Etiopía. La investigación fue transversal, con autorreporte y observación directa, e incluyó 50 participantes de 10 centros de salud. Los resultados indicaron que el 60% de proveedores presentó buen conocimiento, el 74% mostró buenas prácticas de almacenamiento y transporte, el 68% tuvo una gestión deficiente del sistema logístico farmacéutico integrado y solo el 50% de centros cumplió buenas prácticas reales de cadena de frío.
+P104 [Normal] (0w): 
+P105 [Heading 3] (5w): 2.1.2. Antecedentes a nivel nacional
+P106 [Normal] (134w): Astuhuaman Perez y Baltazar Maza (2024) presentaron una tesis titulada Implementación de un sistema web con IA para mejorar la gestión de citas médicas en el Centro de Salud de Nueva Fuerabamba, Apurímac 2024. El objetivo fue evaluar el impacto de un sistema web asistido por inteligencia artificial en la gestión de citas médicas. La investigación fue aplicada, cuantitativa y preexperimental, con 30 pacientes, 12 trabajadores y observaciones durante 30 días antes y después de la implementación. Los resultados mostraron que el tiempo de elaboración de citas disminuyó de 9.97 a 8.47 minutos, equivalente a una reducción de 15.1% con Wilcoxon p < 0.001; el volumen diario de citas aumentó de 10.90 a 12.07, equivalente a 10.7%; y el tiempo de registro en historias clínicas disminuyó de 6.10 a 4.60 minutos, equivalente a 24.6%.
+P107 [Normal] (119w): Mego Navarro (2021) presentó un trabajo de suficiencia profesional titulado “Implementación de un sistema web para la gestión de vacunas del Covid-19 en una entidad pública 2021, en Lima”. El objetivo fue implementar un sistema web para la gestión de vacunas contra la COVID-19 mediante metodología XP. La muestra estuvo constituida por 40 especialistas estadísticos e informáticos vinculados a entidades públicas de salud. Los resultados descriptivos indicaron que el 45% obtenía información estadística mediante visita presencial a centros de salud, el 30% por correo institucional, el 12.5% por comunicación celular y el 12.5% mediante sistemas; además, el 50% manifestó que lograba obtener información completa desde la página web, mientras que el 25% reportó información incompleta por falta de variables.
+P108 [Normal] (108w): Garcia Villacorta y Calderón Huaman (2023) elaboraron la tesis “Sistema web para el control de inventario en la Farmacia Pro, 2023, en Lima”. El objetivo fue mejorar el control de inventario mediante la implementación de un sistema web. La investigación tuvo diseño preexperimental y enfoque cuantitativo, con 68 registros históricos divididos en 34 antes y 34 después de la implementación. Los resultados verificaron que el control de inventarios aumentó de 75.42% a 97.18%, la rotación de stock pasó de 76.78% a 97.44%, las entregas a tiempo aumentaron de 76.15% a 97.77% y las compras realizadas pasaron de 73.44% a 96.34%, con prueba Z p = 0.000 < 0.05.
+P109 [Normal] (0w): 
+P110 [Heading 2] (3w): 2.2 Bases teóricas
+P111 [Heading 3] (3w): 2.2.1 Sistema web
+P112 [Normal] (40w): Un sistema web es una aplicación informática que se ejecuta en un servidor y se utiliza mediante un navegador. Esta arquitectura permite centralizar datos, reglas de negocio y actualizaciones, sin instalar el software en cada equipo de usuario (Sommerville, 2016).
+P113 [Normal] (40w): Los sistemas web se caracterizan por accesibilidad, distribución, actualización centralizada y capacidad de integrar usuarios ubicados en diferentes puntos de trabajo. En entidades públicas, estas características facilitan la sustitución progresiva de registros dispersos por información organizada en una plataforma común.
+P114 [Normal] (27w): Un sistema web puede servir como base tecnológica para centralizar información, organizar procesos y facilitar el acceso de usuarios autorizados a funciones de registro, consulta y reporte.
+P115 [Normal] (0w): 
+P116 [Caption] (7w): Tabla 1 Características de los Sistemas Web
+P117 [Normal] (9w): Nota. Adaptado de Sommerville (2016) y Mego Navarro (2021).
+P118 [Normal] (0w): 
+P119 [Heading 3] (4w): 2.2.2 Arquitectura de software
+P120 [Normal] (40w): La arquitectura de software define la organización de los componentes principales de un sistema, sus relaciones y las decisiones estructurales que orientan su diseño y evolución (Pressman, 2010). Una arquitectura clara permite separar responsabilidades y reducir la complejidad del mantenimiento.
+P121 [Normal] (44w): En aplicaciones empresariales es frecuente separar la presentación, la lógica de negocio y el acceso a datos. La presentación permite la interacción del usuario; la lógica de negocio procesa reglas y validaciones; la capa de datos conserva la información para consulta y actualización posterior.
+P122 [Normal] (0w): 
+P123 [Heading 3] (3w): 2.2.3 Arquitectura cliente-servidor
+P124 [Normal] (40w): La arquitectura cliente-servidor organiza la comunicación entre un cliente que solicita servicios y un servidor que procesa esas solicitudes y devuelve respuestas. En aplicaciones web, el navegador actúa como cliente y el servidor concentra la lógica de procesamiento y almacenamiento.
+P125 [Normal] (27w): Este modelo resulta pertinente en procesos institucionales que requieren acceso desde varios puntos de trabajo, porque evita duplicar archivos locales y mantiene una fuente común de información.
+P126 [Normal] (23w): La arquitectura cliente-servidor será utilizada como base de comunicación entre usuarios, aplicación y base de datos, preservando la consistencia de la información registrada.
+P127 [Normal] (0w): 
+P128 [Caption] (8w): Figura 1 Arquitectura Cliente-Servidor de un Sistema Web
+P129 [Normal] (0w): 
+P130 [Normal] (14w): Nota. Representación esquemática de la comunicación en arquitectura cliente-servidor. Adaptado de Mego Navarro (2021).
+P131 [Normal] (0w): 
+P132 [Heading 3] (6w): 2.2.4 Sistema de información en salud
+P133 [Normal] (39w): Un sistema de información en salud recopila, procesa, almacena y distribuye datos necesarios para la gestión de servicios sanitarios. Su función principal no es solo registrar datos, sino convertirlos en información útil para seguimiento, control y toma de decisiones.
+P134 [Normal] (0w): 
+P135 [Heading 3] (6w): 2.2.5 Sistema de información de inmunización
+P136 [Normal] (46w): Un sistema de información de inmunización organiza datos relacionados con vacunas, usuarios, establecimientos, reportes y existencias. Brooks et al. (2024), a partir de información reportada por Estados miembros de la OMS, identificaron funciones como reportes agregados, reportes individuales, recordatorios, vigilancia de seguridad y gestión de stock.
+P137 [Normal] (56w): Duong et al. (2021) evaluaron el registro digital de inmunización de Ha Noi y Son La, Vietnam, y observaron que 987 de 990 establecimientos lo utilizaban para ingresar y seguir inmunizaciones, mientras que 889 de 990 lo usaban para seguimiento de stock. Estos datos muestran que la gestión de inmunización también comprende componentes logísticos y documentales.
+P138 [Heading 3] (0w): 
+P139 [Heading 3] (3w): 2.2.6 Inteligencia artificial
+P140 [Normal] (45w): La inteligencia artificial comprende técnicas computacionales orientadas a identificar patrones, apoyar predicciones y asistir procesos de decisión a partir de datos disponibles. En cadenas de suministro, su uso exige registros consistentes, trazables y verificables; de lo contrario, los modelos analíticos se sostienen sobre información débil.
+P141 [Normal] (42w): Alhazmi et al. (2024) señalan que las plataformas inteligentes para suministro de vacunas requieren integridad de datos y trazabilidad para generar confianza en la información. La inteligencia artificial se entiende como un soporte analítico complementario cuando existe información ordenada, completa y trazable.
+P142 [Normal] (0w): 
+P143 [Heading 3] (4w): 2.2.7 Calidad de software
+P144 [Normal] (47w): La calidad de software se refiere al grado en que un producto cumple requisitos funcionales y no funcionales bajo condiciones específicas de uso. En sistemas institucionales, la calidad no depende únicamente de que el programa funcione, sino de que sus funciones sean pertinentes, comprensibles, confiables y mantenibles.
+P145 [Normal] (0w): 
+P146 [Heading 3] (4w): 2.2.8 Norma ISO/IEC 25010
+P147 [Normal] (58w): La norma ISO/IEC 25010 establece un modelo de calidad para productos de software mediante características como adecuación funcional, eficiencia de desempeño, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad, portabilidad y seguridad de uso (ISO/IEC, 2023). Moumane et al. (2024) aplicaron este modelo en aplicaciones de salud y destacaron la influencia de la adecuación funcional en operabilidad, eficiencia, fiabilidad y seguridad.
+P148 [Normal] (0w): 
+P149 [Caption] (8w): Tabla 2 Características de la Norma ISO/IEC 25010:2023
+P150 [Normal] (16w): Nota. Adaptado de ISO/IEC 25010:2023. El desglose permite una evaluación exhaustiva del software en diferentes dimensiones.
+P151 [Normal] (0w): 
+P152 [Heading 3] (2w): 2.2.9 Funcionalidad
+P153 [Normal] (45w): La funcionalidad es la capacidad del producto de software para ofrecer funciones que satisfacen necesidades declaradas e implícitas bajo condiciones específicas de uso (ISO/IEC, 2023). Comprende la completitud de funciones, la corrección de resultados y la pertinencia de las tareas que el sistema permite ejecutar.
+P154 [Normal] (32w): La completitud funcional se observa cuando las funciones cubren las tareas principales previstas. La exactitud de resultados se evidencia cuando los datos procesados, reportes o saldos generados corresponden con la información registrada.
+P155 [Normal] (31w): La funcionalidad se expresa en la completitud de las funciones disponibles y en la exactitud de los resultados generados por el software, aspectos vinculados con el cumplimiento de tareas del usuario.
+P156 [Normal] (0w): 
+P157 [Heading 3] (2w): 2.2.10 Usabilidad
+P158 [Normal] (47w): La usabilidad es el grado en que un producto puede ser entendido, aprendido, usado y controlado por usuarios específicos en un contexto determinado (ISO/IEC, 2023). En aplicaciones de salud, esta característica resulta relevante porque el usuario necesita completar tareas con claridad y sin aumentar la carga operativa.
+P159 [Normal] (32w): La facilidad de uso se relaciona con la posibilidad de ejecutar una tarea sin pasos innecesarios. La claridad de interfaz se refiere a la comprensión de formularios, botones, mensajes, etiquetas y reportes.
+P160 [Normal] (30w): La reconocibilidad de adecuación, la aprendibilidad y la operabilidad permiten que el usuario identifique si el sistema sirve para su tarea, aprenda a usarlo y lo controle durante la operación.
+P161 [Normal] (26w): La protección frente a errores de usuario resulta relevante cuando se registran datos sensibles para la trazabilidad, como lote, cantidad, fecha, establecimiento y tipo de movimiento.
+P162 [Normal] (32w): Ndlovu et al. (2021) evaluaron la aceptación de DHIS2 por trabajadores de salud en Botswana y mostraron que las percepciones de los usuarios son necesarias para sostener la adopción de sistemas eHealth.
+P163 [Normal] (31w): La usabilidad se aprecia en la facilidad de uso, la claridad de la interfaz, la comprensión de los mensajes y la reducción de pasos innecesarios durante la interacción con el sistema.
+P164 [Normal] (0w): 
+P165 [Heading 3] (5w): 2.2.11 Programa Nacional de Inmunizaciones
+P166 [Normal] (36w): El Programa Nacional de Inmunizaciones comprende acciones organizadas para prevenir enfermedades inmunoprevenibles mediante vacunación. En el Perú, el Esquema Nacional de Vacunación establece disposiciones técnicas para programación, conservación, distribución, administración y registro de vacunas (MINSA, 2022).
+P167 [Normal] (0w): 
+P168 [Heading 3] (5w): 2.2.12 Gestión logística de vacunas
+P169 [Normal] (51w): La gestión logística de vacunas comprende la planificación, almacenamiento, distribución, control de existencias y documentación de los inmunobiológicos. La Organización Panamericana de la Salud y PATH (s. f.) señalan que los sistemas de información de gestión logística recopilan datos de inventario y demanda, estandarizan registros y apoyan la generación de reportes.
+P170 [Normal] (0w): 
+P171 [Heading 3] (6w): 2.2.13 Gestión de movimientos de vacunas
+P172 [Normal] (36w): La gestión de movimientos de vacunas se refiere al registro, control, reporte y verificación de entradas, salidas, saldos y entregas de vacunas. Su finalidad es mantener trazabilidad documental y disponibilidad de información para la gestión institucional.
+P173 [Normal] (25w): Esta gestión integra actividades administrativas y logísticas que requieren información oportuna, datos fiables y aceptación por parte de los usuarios que intervienen en el proceso.
+P174 [Normal] (0w): 
+P175 [Heading 3] (4w): 2.2.14 Cadena de frío
+P176 [Normal] (38w): La cadena de frío es el conjunto de equipos, procedimientos y controles que mantienen las vacunas dentro de rangos de temperatura establecidos durante almacenamiento, transporte y distribución. Su propósito es conservar la potencia y efectividad de los inmunobiológicos.
+P177 [Normal] (38w): Champi Velásquez (2023) describe la cadena de frío como el sistema de almacenamiento y transporte que mantiene las vacunas a temperaturas específicas. Esta definición ubica el control de temperatura como condición técnica indispensable para la conservación de vacunas.
+P178 [Normal] (0w): 
+P179 [Heading 3] (4w): 2.2.15 Conservación de vacunas
+P180 [Normal] (38w): La conservación de vacunas consiste en mantener las condiciones requeridas para preservar su calidad durante el almacenamiento y traslado. En términos documentales, la conservación exige registrar datos mínimos que permitan identificar producto, lote, cantidad, fecha, responsable y destino.
+P181 [Normal] (32w): El control documental acompaña a la cadena de frío: si la información de movimientos se registra de forma incompleta o dispersa, se debilita la trazabilidad administrativa aunque existan equipos de conservación adecuados.
+P182 [Normal] (0w): 
+P183 [Caption] (10w): Figura 2 Componentes de la Cadena de Frío de Vacunas
+P184 [Normal] (0w): 
+P185 [Normal] (17w): Nota. La cadena de frío requiere monitoreo continuo de temperatura en cada eslabón. Adaptado de Champi (2023).
+P186 [Normal] (0w): 
+P187 [Heading 3] (4w): 2.2.16 Lote de vacunas
+P188 [Normal] (31w): El lote de vacunas es un código de identificación asignado a un grupo de vacunas producidas bajo condiciones similares. Este dato permite rastrear existencias, entregas y eventuales incidencias sanitarias (MINSA, 2022).
+P189 [Normal] (0w): 
+P190 [Heading 3] (4w): 2.2.17 Inventario de vacunas
+P191 [Normal] (24w): El inventario de vacunas registra la disponibilidad de inmunobiológicos por establecimiento, lote y cantidad. Su control permite conocer existencias, saldos y necesidades de reposición.
+P192 [Normal] (44w): Wasswa et al. (2023) describieron un sistema electrónico de gestión logística que permitió visibilidad de datos en tiempo real, seguimiento de distribución de insumos y reportes de stock en distintos niveles de atención. Esta evidencia muestra la importancia de contar con información logística actualizada.
+P193 [Normal] (0w): 
+P194 [Heading 3] (2w): 2.2.18 Kardex
+P195 [Normal] (30w): El kardex es un registro ordenado de entradas, salidas y saldos de inventario. En formato digital, permite actualizar existencias y consultar movimientos de manera más rápida que los registros físicos.
+P196 [Normal] (0w): 
+P197 [Heading 3] (4w): 2.2.19 Movimiento de vacunas
+P198 [Normal] (36w): Un movimiento de vacunas es toda variación documentada en la disponibilidad de inmunobiológicos, ya sea por ingreso, salida, transferencia, entrega o ajuste. Para ser verificable, el movimiento debe asociarse con fecha, establecimiento, cantidad, lote y responsable.
+P199 [Normal] (0w): 
+P200 [Heading 3] (4w): 2.2.20 Oportunidad de procesamiento
+P201 [Normal] (38w): La oportunidad de procesamiento se refiere al tiempo requerido para registrar, procesar y disponer información útil para la gestión institucional. En procesos administrativos, esta dimensión se expresa en la rapidez con que una tarea genera un resultado verificable.
+P202 [Normal] (60w): Dang et al. (2024) evaluaron la transición de un sistema de inmunización en papel hacia el Sistema Nacional de Información de Inmunización de Vietnam. El promedio de días desde la fecha de nacimiento hasta el registro disminuyó de 18.6 a 5.7 días en Hanoi y de 36.1 a 11.7 días en Son La, con p < .001 en ambos casos.
+P203 [Normal] (52w): Duong et al. (2021) reportaron que 725 de 767 usuarios finales indicaron que el sistema NIIS les ayudaba a gestionar y reportar datos de inmunización y a ahorrar tiempo. Este resultado sustenta la pertinencia de evaluar cronométricamente los tiempos dedicados al registro de biológicos y a la emisión de comprobantes de movimiento.
+P204 [Normal] (51w): Balón Morejón (2023) informó que una aplicación web para citas, inventario y campañas de vacunación redujo el tiempo de obtención de reportes estadísticos de 3 o 4 días a 6 segundos. Astuhuaman Perez y Baltazar Maza (2024) también reportaron disminuciones de tiempo en procesos sanitarios después de aplicar un sistema web.
+P205 [Normal] (108w): El tiempo de registro de movimientos y el tiempo de emisión de comprobantes de salida o vales constituyen las expresiones operativas de la oportunidad de procesamiento. Estos indicadores cuantifican el intervalo cronometrado que demanda la gestión operativa desde la captura inicial de los datos de los biológicos hasta la formalización del balance en kardex y la expedición del documento oficial de entrega. Al parametrizar ambos momentos críticos, la dimensión permite evaluar con exactitud la reducción de la latencia temporal atribuible a la automatización del flujo de trabajo. De esta manera, se descartan aproximaciones subjetivas y se garantiza un contraste empírico reproducible entre las condiciones de pretest y postest.
+P206 [Normal] (24w): La oportunidad de procesamiento debe interpretarse dentro del alcance real del proceso observado, evitando atribuciones causales que no correspondan al diseño de evaluación aplicado.
+P207 [Normal] (0w): 
+P208 [Heading 3] (3w): 2.2.21 Consistencia documental
+P209 [Normal] (43w): La consistencia documental se refiere al grado en que los datos registrados sobre ingresos, salidas y entregas de vacunas coinciden con los documentos fuente y registros generados. Esta dimensión se verificará mediante registros sin discrepancias y concordancia entre cantidad programada y cantidad entregada.
+P210 [Normal] (45w): Chekol et al. (2023) hallaron que la calidad global de datos en centros de salud fue de 74% (IC 95%: 68-78), por debajo de lo esperado a nivel nacional. Los factores asociados incluyeron complejidad de formatos, habilidades para tareas del sistema y conocimiento de roles.
+P211 [Normal] (42w): Los registros sin discrepancias permiten revisar si los datos obligatorios se encuentran completos y coinciden con el documento fuente. La concordancia documental verifica si la cantidad programada coincide con la cantidad entregada y registrada, considerando las entregas adicionales cuando estén autorizadas documentalmente.
+P212 [Normal] (36w): Duong et al. (2021) encontraron que solo 70% de los establecimientos evaluados presentaban saldos físicos de vacunas consistentes con el sistema digital. Este resultado evidencia que la información registrada debe contrastarse con documentos y existencias físicas.
+P213 [Normal] (29w): Los registros sin discrepancias y la concordancia entre cantidad programada y ​​cantidad entregada son manifestaciones de la consistencia documental en procesos de distribución y gestión de movimientos de vacunas.
+P214 [Normal] (0w): 
+P215 [Heading 3] (4w): 2.2.22 Satisfacción del usuario
+P216 [Normal] (44w): La satisfacción del usuario es la valoración del grado en que un sistema responde a las necesidades y expectativas de quienes lo utilizan. En sistemas de información, esta valoración se relaciona con aceptación, utilidad percibida, facilidad de uso y adecuación a las tareas reales.
+P217 [Normal] (41w): Ndlovu et al. (2021) evaluaron la aceptación de DHIS2 por trabajadores de salud de Botswana mediante un modelo de aceptación tecnológica. Los participantes mostraron respuestas favorables hacia la plataforma, aunque los autores también identificaron factores organizacionales que podían afectar la adopción.
+P218 [Normal] (34w): La aceptación y la percepción de utilidad forman parte de la satisfacción del usuario, porque expresan la valoración que realiza el personal sobre la pertinencia práctica del sistema y su contribución al trabajo cotidiano.
+P219 [Normal] (0w): 
+P220 [Caption] (8w): Tabla 3 Indicadores de la satisfacción del usuario
+P221 [Normal] (77w): Nota. Adaptado de la matriz de operacionalización de variables de la investigación, fundamentado en el Technology Acceptance Model (TAM; Davis, 1989; Ndlovu et al., 2021) y el estándar internacional ISO/IEC 25010:2023. Cada indicador se evalúa mediante cuatro reactivos tipo Likert de 5 puntos (1 = Totalmente en desacuerdo a 5 = Totalmente de acuerdo), generando una puntuación acumulada de 4 a 20 puntos por indicador y una escala global de 8 a 40 puntos para la dimensión.
+P222 [Normal] (0w): 
+P223 [Heading 3] (5w): 2.2.23 Metodología Extreme Programming (XP)
+P224 [Normal] (43w): Sommerville (2016) afirma que Extreme Programming (XP) es una metodología ágil de desarrollo de software centrada en mejorar la calidad del software y la capacidad de respuesta a los cambios en los requisitos del cliente mediante el desarrollo iterativo y la colaboración estrecha.
+P225 [Normal] (3w): Beck (1999) dice:
+P226 [Normal] (44w): XP es un proceso de desarrollo de software ligero y ágil, especialmente adecuado para equipos pequeños y proyectos con requisitos volátiles. Promueve la participación continua del usuario, la entrega iterativa y prácticas orientadas a aumentar la calidad del código y la adaptabilidad. (pág. 70)
+P227 [Normal] (40w): XP puede resumirse como un enfoque ágil que acepta el cambio incluso tarde en el ciclo de desarrollo, utiliza ciclos cortos de desarrollo (iteraciones), valora la colaboración con el cliente y prioriza las pruebas automatizadas e integración continua (Pressman, 2010).
+P228 [Normal] (0w): 
+P229 [Heading 3] (6w): 2.2.24 Fases de la metodología XP
+P230 [Normal] (23w): Mego Navarro (2021) cita a Pressman (2010) cuando describe que las fases de la metodología Ágil XP (Extreme Programming) comprenden cuatro etapas fundamentales:
+P231 [List Paragraph] (1w): Planeación
+P232 [Normal] (41w): Mego Navarro (2021) afirma que: "la fase de planeación se inicia cuando por medio de las entrevistas con los usuarios se generan los requerimientos que permiten al equipo técnico del XP entender las necesidades en el contexto del negocio" (pág. 40).
+P233 [List Paragraph] (1w): Diseño
+P234 [Normal] (24w): XP prefiere un diseño simple y mínimo al inicio, enfatizando el diseño evolutivo y la refactorización continua para mantener el sistema simple (Pressman, 2010).
+P235 [List Paragraph] (1w): Codificación
+P236 [Normal] (28w): La codificación se realiza en pequeños pasos incrementales, siendo la programación en parejas una práctica central donde dos programadores trabajan juntos en una estación de trabajo (Sommerville, 2016).
+P237 [List Paragraph] (1w): Pruebas
+P238 [Normal] (30w): El desarrollo guiado por pruebas (Test-Driven Development - TDD) es una práctica fundamental: las pruebas se escriben antes del código para definir la funcionalidad y asegurar la corrección (Sommerville, 2016).
+P239 [Caption] (7w): Figura 3 Fases de la Metodología XP
+P240 [Normal] (0w): 
+P241 [Normal] (15w): Nota. Las fases de XP siguen un ciclo iterativo continuo. Por SINNAPS, 2022, Sinnaps (https://www.sinnaps.com/wp-content/uploads/2020/05/metodologa-extremamin.jpg).
+P242 [Normal] (0w): 
+P243 [Heading 3] (5w): 2.2.25 Prácticas de Extreme Programming
+P244 [Normal] (12w): XP incluye varias prácticas distintivas que refuerzan sus valores fundamentales (Sommerville, 2016):
+P245 [Normal] (0w): 
+P246 [Normal] (3w): Historias de usuario
+P247 [Normal] (22w): Las historias de usuario describen necesidades funcionales desde la perspectiva del usuario y facilitan la priorización del trabajo de desarrollo (Cohn, 2004).
+P248 [Normal] (0w): 
+P249 [Normal] (2w): Entregas pequeñas
+P250 [Normal] (13w): Las entregas pequeñas permiten revisar funcionalidades sin esperar la culminación completa del sistema.
+P251 [Normal] (0w): 
+P252 [Normal] (4w): Integración y pruebas frecuentes
+P253 [Normal] (21w): La integración y las pruebas frecuentes ayudan a detectar errores entre módulos y a verificar que los datos procesados sean coherentes.
+P254 [Normal] (0w): 
+P255 [Normal] (3w): Retroalimentación del usuario
+P256 [Normal] (15w): La retroalimentación del usuario permite ajustar el producto a las tareas reales del proceso observado.
+P257 [Normal] (0w): 
+P258 [Normal] (1w): Refactorización
+P259 [Normal] (16w): La refactorización mejora la estructura interna del código sin alterar el comportamiento esperado por el usuario.
+P260 [Normal] (0w): 
+P261 [Caption] (7w): Tabla 4 Prácticas Principales de Extreme Programming
+P262 [Normal] (10w): Nota. Adaptado de Sommerville (2016), Pressman (2010) y Beck (1999).
+P263 [Heading 2] (3w): 2.3 Marco conceptual
+P264 [Heading 3] (3w): 2.3.1 Sistema SIVAC
+P265 [Normal] (31w): Aplicación web propuesta que se desarrollará para registrar, consultar, controlar y reportar movimientos de vacunas en la Dirección de Salud Apurímac II. Para efectos del estudio, se considerará la variable independiente.
+P266 [Normal] (0w): 
+P267 [Heading 3] (3w): 2.3.2 Aplicación web
+P268 [Normal] (27w): Software accesible mediante navegador bajo un esquema cliente-servidor. Permite que distintos usuarios interactúen con información centralizada desde equipos conectados a la red (Luján Mora, 2002; Sommerville, 2016).
+P269 [Normal] (0w): 
+P270 [Heading 3] (6w): 2.3.3 Sistema de información de inmunización
+P271 [Normal] (32w): Conjunto de herramientas, registros y procedimientos orientados a recopilar, organizar y reportar datos vinculados con actividades de inmunización, incluyendo reportes, seguimiento individual y gestión de stock cuando corresponde (Brooks et al., 2024).
+P272 [Normal] (0w): 
+P273 [Heading 3] (4w): 2.3.4 Base de datos
+P274 [Normal] (16w): Repositorio estructurado que almacena datos para su registro, consulta, actualización y recuperación desde una aplicación informática.
+P275 [Normal] (0w): 
+P276 [Heading 3] (7w): 2.3.5 Interfaz de programación de aplicaciones (API)
+P277 [Normal] (24w): Mecanismo que define reglas y puntos de acceso para que distintos componentes o sistemas intercambien datos y funcionalidades de forma controlada (Ruiz Barea, 2023).
+P278 [Normal] (0w): 
+P279 [Heading 3] (6w): 2.3.6 Gestión de movimientos de vacunas
+P280 [Normal] (25w): Proceso administrativo-sanitario que comprende el registro, control, reporte y verificación de entradas, salidas, saldos y entregas de vacunas. En el estudio constituye la variable dependiente.
+P281 [Heading 3] (4w): 2.3.7 Movimiento de vacunas
+P282 [Normal] (28w): Registro de una variación en la disponibilidad de vacunas, ya sea por ingreso, salida, transferencia, entrega o ajuste documentado. Debe asociarse con fecha, establecimiento, lote, cantidad y responsable.
+P283 [Normal] (0w): 
+P284 [Heading 3] (4w): 2.3.8 Entrada de vacunas
+P285 [Normal] (29w): Movimiento mediante el cual se incorpora una cantidad de vacunas al stock de un establecimiento o centro de acopio. Debe registrar lote, fecha, cantidad recibida y documento de respaldo.
+P286 [Normal] (0w): 
+P287 [Heading 3] (4w): 2.3.9 Salida de vacunas
+P288 [Normal] (28w): Movimiento mediante el cual se descuenta una cantidad de vacunas del stock por entrega, distribución o traslado hacia otro punto autorizado. Debe permitir verificar destino, cantidad y responsable.
+P289 [Normal] (0w): 
+P290 [Heading 3] (4w): 2.3.10 Saldo de vacunas
+P291 [Normal] (25w): Cantidad disponible de vacunas después de registrar entradas y salidas. El saldo debe ser coherente con los movimientos documentados y con la revisión de existencias.
+P292 [Normal] (0w): 
+P293 [Heading 3] (4w): 2.3.11 Lote de vacunas
+P294 [Normal] (26w): Código alfanumérico asignado a un grupo de vacunas producidas bajo condiciones similares para su identificación y control. Permite rastrear existencias, entregas e incidencias sanitarias (MINSA, 2022).
+P295 [Normal] (0w): 
+P296 [Heading 3] (3w): 2.3.12 Kardex digital
+P297 [Normal] (22w): Registro electrónico de entradas, salidas y saldos de inventario. En la gestión de vacunas, permite controlar existencias por establecimiento, lote y movimiento.
+P298 [Normal] (0w): 
+P299 [Heading 3] (4w): 2.3.13 Vale de entrega
+P300 [Normal] (27w): Documento que respalda la entrega de vacunas a un responsable o establecimiento. Sirve como evidencia para contrastar la cantidad programada, la cantidad entregada y el registro generado.
+P301 [Heading 3] (4w): 2.3.14 Centro de acopio
+P302 [Normal] (16w): Establecimiento o punto operativo responsable de recibir, conservar y gestionar vacunas dentro de la red institucional.
+P303 [Normal] (0w): 
+P304 [Heading 3] (4w): 2.3.15 Oportunidad de procesamiento
+P305 [Normal] (19w): Dimensión referida al tiempo necesario para registrar movimientos y generar reportes. Se medirá en minutos mediante ficha de observación.
+P306 [Normal] (0w): 
+P307 [Heading 3] (3w): 2.3.16 Consistencia documental
+P308 [Normal] (26w): Dimensión referida a la exactitud, completitud, consistencia y utilidad de los datos registrados sobre movimientos de vacunas. Se evaluará mediante exactitud del registro y concordancia documental.
+P309 [Heading 3] (3w): 2.3.17 Concordancia documental
+P310 [Normal] (25w): Correspondencia entre datos registrados en documentos o sistemas vinculados. En esta investigación se aplicará a la relación entre cantidad programada, cantidad entregada y registro generado.
+P311 [Normal] (0w): 
+P312 [Heading 3] (4w): 2.3.18 Satisfacción del usuario
+P313 [Normal] (27w): Valoración del usuario sobre el grado en que el sistema responde a sus necesidades de trabajo. Se medirá mediante aceptación y percepción de utilidad en escala Likert.
+P314 [Normal] (0w): 
+P315 [Heading 3] (4w): 2.3.19 Percepción de utilidad
+P316 [Normal] (25w): Juicio del usuario sobre el aporte práctico del sistema para realizar sus tareas. Permite conocer si la herramienta propuesta resulta útil para el proceso evaluado.
+P317 [Normal] (0w): 
+P318 [Heading 3] (4w): 2.3.20 Historia de usuario
+P319 [Normal] (25w): Descripción breve de una necesidad funcional desde la perspectiva del usuario. En XP, orienta la priorización y construcción incremental de módulos del sistema (Cohn, 2004).
+P468 [Heading 1] (2w): Referencia Bibliográfica
+P469 [Normal] (0w): 
+P470 [Bibliography] (33w): Alhazmi, S., Rahmani, M. K. I., Arif, M., & Nafis, M. T. (2024). Developing Intelligent and Immutable Vaccine Supply and Operation Platform Using Blockchain and Artificial Intelligence Technologies. IEEE Access, 12, 88189-88201. https://doi.org/10.1109/ACCESS.2024.3407711
+P471 [Bibliography] (31w): Arisholm, E., Gallis, H., Dyba, T., & Sjoberg, D. I. K. (2007). Evaluating Pair Programming with Respect to System Complexity and Programmer Expertise. IEEE Transactions on Software Engineering, 33(2), 65-86. https://doi.org/10.1109/TSE.2007.17
+P472 [Bibliography] (40w): Astuhuaman Perez, S. M., & Baltazar Maza, E. J. (2024). Implementación de un sistema web con IA para mejorar la gestión de citas médicas en el Centro de Salud de Nueva Fuerabamba, Apurímac 2024 [Info:eu-repo/semantics/openAccess, Universidad Privada del Norte]. https://hdl.handle.net/11537/43590
+P473 [Bibliography] (37w): Balón Morejón, R. M. (2023). Aplicación web de gestión de citas, control de inventario y campañas de vacunación en el centro de salud Dr. José Garcés Rodríguez del cantón Salinas [Universidad Estatal Península de Santa Elena]. https://repositorio.upse.edu.ec/handle/46000/9257
+P474 [Bibliography] (12w): Beck, K. (1999). Embracing change with extreme programming. Computer, 32(10), 70-77. https://doi.org/10.1109/2.796139
+P475 [Bibliography] (33w): Brooks, D. J., Kim, C. I., Mboussou, F., & Danovaro-Holliday, M. C. (2024). Developing national information systems to monitor COVID-19 vaccination: A global observational study. JMIR Public Health and Surveillance, 10, e62657. https://doi.org/10.2196/62657
+P476 [Bibliography] (44w): Champi Velásquez, J. M. (2023). Implementación de un sistema de monitoreo inalámbrico mediante Internet de las cosas para monitorear la conservación en la cadena de frío de vacunas del servicio de inmunizaciones en el distrito de Puente Piedra [Universidad de Ciencias y Humanidades]. http://hdl.handle.net/20.500.12872/844
+P477 [Bibliography] (41w): Chekol, A., Ketemaw, A., Endale, A., Aschale, A., Endalew, B., & Asemahagn, M. (2023). Data quality and associated factors of routine health information system among health centers of West Gojjam Zone, northwest Ethiopia, 2021. Frontiers in Health Services, 3, 1059611. https://doi.org/10.3389/frhs.2023.1059611
+P478 [Bibliography] (7w): Cohn, M. (2004). User Stories Applied. https://athena.ecs.csus.edu/~buckley/CSc191/User-Stories-Applied-Mike-Cohn.pdf
+P479 [Bibliography] (44w): Cortés Rojas, H. F. (2024). Uso de la norma ISO 25010 para establecer requerimientos de calidad en el diseño de un prototipo tecnológico educativo basado en realidad aumentada para la enseñanza de programación básica en estudiantes de educación media. Arandu UTIC, 11(2), 2603-2621. https://doi.org/10.69639/arandu.v11i2.452
+P480 [Bibliography] (59w): Dang, T. T. T., Carnahan, E., Nguyen, L., Mvundura, M., Dao, S., Duong, T. H., Nguyen, T., Nguyen, D., Nguyen, T., Werner, L., Ryman, T. K., & Nguyen, N. (2024). Outcomes and costs of the transition from a paper-based immunization system to a digital immunization system in Vietnam: Mixed methods study. Journal of Medical Internet Research, 26, e45070. https://doi.org/10.2196/45070
+P481 [Bibliography] (40w): De la Torre Llorente, C., Zorrilla Castro, U., Calvarro Nelson, J., Ramos Barros, M. A., Manteiga Pacios, C., Cortés Hierro, F., & García Mesa, I. (2010). Guía de arquitectura N-Capas orientada al dominio con .NET 4.0 (1a edición). Krasis Press.
+P482 [Bibliography] (49w): Duong, H., Dao, S., Dang, H., Nguyen, L., Ngo, T., Nguyen, T., Tran, L. A., Nguyen, D., Rivera, M., & Nguyen, N. (2021). The transition to an entirely digital immunization registry in Ha Noi Province and Son La Province, Vietnam: Readiness assessment study. JMIR Formative Research, 5(10), e28096. https://doi.org/10.2196/28096
+P483 [Bibliography] (29w): Garcia Villacorta, M. D. M., & Calderón Huaman, J. L. O. (2023). Sistema web para el control de inventario en la Farmacia Pro, 2023 [Universidad Privada del Norte]. https://hdl.handle.net/11537/33833
+P484 [Bibliography] (22w): George, D., & Mallery, P. (2003). SPSS for Windows step by step: A simple guide and reference (4th ed.). Allyn & Bacon.
+P485 [Bibliography] (26w): Hernández Sampieri, R., Fernandez Collado, C. F., & Baptista Lucio, M. del P. (2014). Metodología de la investigación (P. Baptista Lucio, Ed.; Sexta edición). McGraw-Hill Education.
+P486 [Bibliography] (5w): ISO/IEC. (2023). ISO/IEC 25010:2023. https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en
+P487 [Bibliography] (61w): Jain, P., & Arora, K. (2025). Convergence of Blockchain and Machine Learning for Intelligent Supply Chain Management: A Systematic Analysis of Synergies, Applications, and Emerging Trends. En A. Jain & S. Gupta (Eds.), Proceedings of the International Conference on Policies, Processes and Practices for Transforming Underdeveloped Economies into Developed Economies (PPP-UD 2025) (Vol. 357, pp. 77-96). Atlantis Press International BV. https://doi.org/10.2991/978-94-6463-894-3_7
+P488 [Bibliography] (32w): Kamran, M. A., Kia, R., Goodarzian, F., & Ghasemi, P. (2023). A new vaccine supply chain network under COVID-19 conditions considering system dynamic: Artificial intelligence algorithms. Socio-Economic Planning Sciences, 85, 101378. https://doi.org/10.1016/j.seps.2022.101378
+P489 [Bibliography] (15w): Luján Mora, S. (2002). Programación de aplicaciones web: Historia, principios básicos y clientes web. https://sergiolujanmora.es/materiales/pi-cliente2-muestra.pdf
+P490 [Bibliography] (28w): Mego Navarro, D. P. (2021). Implementación de un sistema web para la gestión de vacunas del Covid-19 en una entidad pública 2021 [Info:eu-repo/semantics/bachelorThesis, Universidad Tecnológica del Perú]. https://hdl.handle.net/20.500.12867/5068
+P491 [Bibliography] (14w): MINSA. (2022). NORMA TÉCNICA DE SALUD QUE ESTABLECE EL ESQUEMA NACIONAL DE VACUNACIÓN. https://www.cep.org.pe/wp-content/uploads/2024/09/NT-196-2022-MINSA-ESQUEMA-NACIONAL-DE-VACUNACION_v1.pdf
+P492 [Bibliography] (39w): Moumane, K., Idri, A., El Aouni, F., Laghnimi, J., Benabdellah, N. C., & Hamal, O. (2024). ISO/IEC 25010-based quality evaluation of three mobile applications for reproductive health services in Morocco. Clinical and Experimental Obstetrics & Gynecology, 51(4), 88. https://doi.org/10.31083/j.ceog5104088
+P493 [Bibliography] (27w): Naik, G. R., & Raj, C. V. (2023). AI Based Inventory Management System Using Odoo. INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT, 07(08), 3. https://doi.org/10.55041/IJSREM25510
+P494 [Bibliography] (48w): Ndlovu, K., Mauco, K. L., Keetile, M., Kadimo, K., Senyatso, R. Y., Ntebela, D., Valela, B., & Murambi, C. (2021). Acceptance of the District Health Information System Version 2 platform for malaria case-based surveillance by health care workers in Botswana: Web-based survey. JMIR Formative Research, 6(3), e32722. https://doi.org/10.2196/32722
+P495 [Bibliography] (35w): Pérez Peña, J. B., & Ramos Jurado, J. R. (2021). Chatbot con inteligencia artificial para el proceso de atención al cliente en el servicio de urología de un establecimiento de salud [Universidad Cesar Vallejo]. https://hdl.handle.net/20.500.12692/84268
+P496 [Bibliography] (13w): Pressman, R. S. (2010). Ingenieria del Software. Un enfoque práctico (Séptima edición). https://escuelaesam.pe/biblioteca/assets/uploads/libro_689d13f16f1dc.pdf
+P497 [Bibliography] (0w): 
+P498 [Bibliography] (21w): Romero Onofre, R. R. R. (2016). Manual para uso de Kardex aplicando procedimientos de cálculo según NIC 2 en Banariego S.A.
+P499 [Bibliography] (9w): Ruiz Barea, R. (2023). Protección de APIs REST. https://openaccess.uoc.edu/server/api/core/bitstreams/7b84e40c-5883-4a93-bc3e-b90b9cde00db/content
+P500 [Bibliography] (8w): Sommerville, I. (2016). Software engineering (Tenth edition). Pearson.
+P501 [Bibliography] (57w): Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., & Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, 6. https://doi.org/10.1186/s40545-023-00517-4
+P502 [Bibliography] (42w): Shen, J., Bu, F., Ye, Z., Zhang, M., Ma, Q., Yan, J., & Huang, T. (2024). Management of drug supply chain information based on “artificial intelligence + vendor managed inventory” in China: Perspective based on a case study. Frontiers in Pharmacology. https://doi.org/10.3389/fphar.2024.1373642
+P503 [Bibliography] (33w): Kigenza, R., Nsengiyumva, E., & Sabagirirwa, V. (2023). The Quality Management Improvement Approach: Successes and lessons learned from a workforce development intervention in Rwanda’s health supply chain. Global Health: Science and Practice. https://doi.org/10.9745/GHSP-D-22-00295
+P504 [Bibliography] (33w): Ergetie, F. S., Kassaw, A. T., & Sendekie, A. K. (2023). Vaccine cold chain management practices in primary health centers providing an expanded immunization program in Northwest Ethiopia. Frontiers in Public Health. https://doi.org/10.3389/fpubh.2023.1194807
+P505 [Bibliography] (32w): Organización Panamericana de la Salud & PATH. (s. f.). Datos de inmunización: Evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización.
+P506 [Normal] (0w): 
+P507 [Normal] (0w): 

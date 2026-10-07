@@ -29,6 +29,7 @@ import argparse
 import subprocess
 from pathlib import Path
 import lxml.etree as ET
+from xml.sax.saxutils import escape
 
 import docx
 from docx.shared import Pt, Inches, Cm, RGBColor
@@ -37,10 +38,19 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
 from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import nsdecls, qn
 
-# Constantes tipográficas institucionales UNAJMA
+# Constantes tipográficas institucionales UNAJMA y APA 7
 FUENTE_POR_DEFECTO = "Times New Roman"
 ANCHO_UTIL_PORTRAIT_DXA = 8788    # 15.50 cm (A4 21.0 cm - Margen Izq 3.0 cm - Margen Der 2.50 cm)
 ANCHO_UTIL_LANDSCAPE_DXA = 14000  # 24.70 cm (A4 29.7 cm - Margen Izq 2.5 cm - Margen Der 2.50 cm)
+
+# Parámetros OpenXML de interlineado, sangrías y espaciado APA 7 / UNAJMA
+LINE_SPACING_1_5_DXA = 360       # Interlineado 1.5 líneas (360 dxa / w:line="360" w:lineRule="auto")
+LINE_SPACING_1_0_DXA = 240       # Interlineado sencillo (240 dxa)
+SANGRIA_PRIMERA_LINEA_DXA = 720  # Sangría de primera línea APA 7 (1.27 cm / 0.5 in = 720 dxa)
+SANGRIA_FRANCESA_DXA = 720       # Sangría francesa para referencias bibliográficas (1.27 cm)
+FONT_SIZE_BODY_PT = 12.0         # Cuerpo de texto institucional (12 pt / w:sz="24")
+FONT_SIZE_TABLE_PT = 10.0        # Texto en celdas de tabla (10 pt / w:sz="20")
+FONT_SIZE_NOTE_PT = 9.5          # Notas de tablas y figuras (9.5 pt / w:sz="19")
 
 # Rutas estándar del convertidor oficial MML2OMML.XSL de Microsoft Office
 RUTAS_MML2OMML = [
@@ -80,22 +90,50 @@ def obtener_transformador_omml():
 # 1. MOTOR DE MATEMÁTICAS Y FÓRMULAS OMML NATIVAS (<m:oMath>)
 # ==============================================================================
 
+def reparar_nary_omml(omml_elem):
+    """
+    Repara nodos <m:nary> (operadores de sumatoria, integral, producto, etc.) en OMML.
+    Si <m:e> está vacío, Word renderiza una caja punteada de reemplazo (placeholder de operando faltante).
+    Esta función detecta el operando subsiguiente (ej. <m:sSub>, <m:r>, etc.) y lo inserta dentro
+    de <m:e>, o inyecta un operando vacío no visible para erradicar definitivamente la caja punteada.
+    """
+    ns_m = '{http://schemas.openxmlformats.org/officeDocument/2006/math}'
+    for nary in omml_elem.xpath('.//*[local-name()="nary"]'):
+        e = nary.find(f'{ns_m}e')
+        if e is not None and len(e) == 0 and not (e.text or '').strip():
+            parent = nary.getparent()
+            if parent is not None:
+                idx = list(parent).index(nary)
+                if idx + 1 < len(parent):
+                    next_sib = parent[idx + 1]
+                    txt = ''.join(next_sib.itertext()).strip()
+                    if txt not in ['=', '+', '-', '<', '>', '≤', '≥', '→', '↔', '⇒', '⇔']:
+                        parent.remove(next_sib)
+                        e.append(next_sib)
+                if len(e) == 0 and not (e.text or '').strip():
+                    r_empty = parse_xml(r'<m:r xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><m:t xml:space="preserve"> </m:t></m:r>')
+                    e.append(r_empty)
+
+
 def mathml_to_omml(mathml_str):
     """
     Convierte una expresión MathML XML a un nodo OpenXML OMML (<m:oMath>).
-    Limpia espacios en blanco y namespace prefixes redundantes.
+    Limpia espacios en blanco, namespace prefixes redundantes y repara operadores n-arios.
     """
     transformador = obtener_transformador_omml()
     dom = ET.fromstring(mathml_str.strip())
     omml_tree = transformador(dom)
     omml_xml_bytes = ET.tostring(omml_tree)
-    return parse_xml(omml_xml_bytes)
+    omml_elem = parse_xml(omml_xml_bytes)
+    reparar_nary_omml(omml_elem)
+    return omml_elem
 
 
-def crear_parrafo_formula_dedicada(omml_elem, align="left", line_spacing=210, space_before=20, space_after=30, left_indent_dxa=100):
+def crear_parrafo_formula_dedicada(omml_elem, align="left", line_spacing=LINE_SPACING_1_0_DXA, space_before=40, space_after=50, left_indent_dxa=40):
     """
     Crea un párrafo que contiene exclusivamente una ecuación OMML nativa.
-    Ideal para fórmulas destacadas dentro de celdas o texto principal.
+    Aplica lineRule="auto" (240 dxa = interlineado sencillo) y espaciado vertical
+    seguro para erradicar totalmente colisiones y solapamientos con texto adyacente.
     """
     p = parse_xml(r'''<w:p %s>
         <w:pPr>
@@ -129,7 +167,7 @@ def crear_parrafo_mixto_inline(segmentos, fuente=FUENTE_POR_DEFECTO, font_size_p
         if hasattr(seg, 'tag') and 'oMath' in seg.tag:
             p.append(seg)
         elif isinstance(seg, tuple):
-            t_text = str(seg[0])
+            t_text = escape(str(seg[0]))
             t_bold = bool(seg[1]) if len(seg) > 1 else False
             t_italic = bool(seg[2]) if len(seg) > 2 else False
             r = parse_xml(r'''<w:r %s>
@@ -137,6 +175,8 @@ def crear_parrafo_mixto_inline(segmentos, fuente=FUENTE_POR_DEFECTO, font_size_p
                     <w:rFonts w:ascii="%s" w:hAnsi="%s"/>
                     <w:b w:val="%s"/>
                     <w:i w:val="%s"/>
+                    <w:color w:val="000000"/>
+                    <w:u w:val="none"/>
                     <w:sz w:val="%s"/>
                 </w:rPr>
                 <w:t xml:space="preserve">%s</w:t>
@@ -146,12 +186,14 @@ def crear_parrafo_mixto_inline(segmentos, fuente=FUENTE_POR_DEFECTO, font_size_p
                         sz_val, t_text))
             p.append(r)
         else:
-            t_text = str(seg)
+            t_text = escape(str(seg))
             r = parse_xml(r'''<w:r %s>
                 <w:rPr>
                     <w:rFonts w:ascii="%s" w:hAnsi="%s"/>
                     <w:b w:val="0"/>
                     <w:i w:val="0"/>
+                    <w:color w:val="000000"/>
+                    <w:u w:val="none"/>
                     <w:sz w:val="%s"/>
                 </w:rPr>
                 <w:t xml:space="preserve">%s</w:t>
@@ -315,9 +357,33 @@ def set_tc_paragraphs(tc, paragraphs):
         tc.append(p)
 
 
-def crear_parrafo_celda(texto, bold=False, italic=False, fuente=FUENTE_POR_DEFECTO, font_size_pt=7.5, align="left", line_spacing=200, space_before=0, space_after=15):
-    """Crea un párrafo simple para celdas con espaciado y tipografía controlados."""
+def set_tc_bottom_border(tc, val='single', sz=4, color='888888'):
+    """
+    Asigna un borde inferior específico a una celda individual (w:tc o _Cell).
+    Útil para líneas divisorias horizontales entre dimensiones o indicadores dentro de tablas APA 7.
+    """
+    tc_elem = tc._tc if hasattr(tc, '_tc') else tc
+    tcPr = tc_elem.get_or_add_tcPr()
+    tcBorders = tcPr.find(qn('w:tcBorders'))
+    if tcBorders is None:
+        tcBorders = parse_xml(r'<w:tcBorders %s/>' % nsdecls('w'))
+        tcPr.append(tcBorders)
+    for b in tcBorders.findall(qn('w:bottom')):
+        tcBorders.remove(b)
+    tcBorders.append(parse_xml(r'<w:bottom %s w:val="%s" w:sz="%d" w:space="0" w:color="%s"/>' % (
+        nsdecls('w'), val, sz, color
+    )))
+
+
+def crear_parrafo_celda(texto, bold=False, italic=False, fuente=FUENTE_POR_DEFECTO, font_size_pt=7.5, align="left", line_spacing=LINE_SPACING_1_0_DXA, space_before=20, space_after=20):
+    """
+    Crea un párrafo para celdas de tablas bajo APA 7 y normativa institucional UNAJMA:
+      - Interlineado sencillo seguro (w:line="240" w:lineRule="auto") para erradicar
+        colisiones de ascenders/descenders y solapamientos verticales.
+      - Espaciado superior/inferior controlado (20 dxa = 1 pt).
+    """
     sz_val = str(int(font_size_pt * 2))
+    texto_escapado = escape(str(texto))
     p = parse_xml(r'''<w:p %s>
         <w:pPr>
             <w:spacing w:line="%d" w:lineRule="auto" w:before="%d" w:after="%d"/>
@@ -329,7 +395,10 @@ def crear_parrafo_celda(texto, bold=False, italic=False, fuente=FUENTE_POR_DEFEC
                 <w:rFonts w:ascii="%s" w:hAnsi="%s"/>
                 <w:b w:val="%s"/>
                 <w:i w:val="%s"/>
+                <w:color w:val="000000"/>
+                <w:u w:val="none"/>
                 <w:sz w:val="%s"/>
+                <w:szCs w:val="%s"/>
             </w:rPr>
             <w:t xml:space="preserve">%s</w:t>
         </w:r>
@@ -337,12 +406,679 @@ def crear_parrafo_celda(texto, bold=False, italic=False, fuente=FUENTE_POR_DEFEC
                 fuente, fuente,
                 "1" if bold else "0",
                 "1" if italic else "0",
-                sz_val, texto))
+                sz_val, sz_val, texto_escapado))
     return p
 
 
+def crear_parrafo_item_lista(texto, bold=False, italic=False, fuente=FUENTE_POR_DEFECTO,
+                             font_size_pt=6.5, align="both", line_spacing=LINE_SPACING_1_0_DXA,
+                             space_before=0, space_after=20, left_indent_dxa=180, hanging_dxa=180,
+                             bold_prefix=False):
+    """
+    Crea un párrafo quirúrgico <w:p> para un ítem de lista o viñeta dentro de una celda de tabla:
+      - Sangría colgante (w:ind w:left="..." w:hanging="...") para que las líneas subsiguientes
+        se alineen bajo el texto y no bajo el símbolo de viñeta.
+      - Interlineado sencillo controlado (lineRule="auto") y espaciado compacto.
+      - Opción de resaltar en negrita el prefijo (ej. '• Finalidad / Qué mide:' o '• Ind 1.1:').
+    """
+    sz_val = str(int(font_size_pt * 2))
+    ind_xml = (f'<w:ind {nsdecls("w")} w:left="{left_indent_dxa}" w:hanging="{hanging_dxa}"/>'
+               if hanging_dxa > 0 else
+               f'<w:ind {nsdecls("w")} w:left="{left_indent_dxa}" w:firstLine="0"/>')
+
+    p = parse_xml(r'''<w:p %s>
+        <w:pPr>
+            <w:spacing w:line="%d" w:lineRule="auto" w:before="%d" w:after="%d"/>
+            %s
+            <w:jc w:val="%s"/>
+        </w:pPr>
+    </w:p>''' % (nsdecls('w'), line_spacing, space_before, space_after, ind_xml, align))
+
+    texto_str = str(texto).strip()
+    if bold_prefix and ":" in texto_str:
+        idx_colon = texto_str.find(":")
+        prefijo = texto_str[:idx_colon + 1]
+        cuerpo = texto_str[idx_colon + 1:]
+
+        r_pre = parse_xml(r'''<w:r %s>
+            <w:rPr>
+                <w:rFonts w:ascii="%s" w:hAnsi="%s"/>
+                <w:b w:val="1"/>
+                <w:i w:val="%s"/>
+                <w:color w:val="000000"/>
+                <w:u w:val="none"/>
+                <w:sz w:val="%s"/>
+                <w:szCs w:val="%s"/>
+            </w:rPr>
+            <w:t xml:space="preserve">%s</w:t>
+        </w:r>''' % (nsdecls('w'), fuente, fuente, "1" if italic else "0", sz_val, sz_val, escape(prefijo)))
+        p.append(r_pre)
+
+        if cuerpo:
+            r_cuerpo = parse_xml(r'''<w:r %s>
+                <w:rPr>
+                    <w:rFonts w:ascii="%s" w:hAnsi="%s"/>
+                    <w:b w:val="%s"/>
+                    <w:i w:val="%s"/>
+                    <w:color w:val="000000"/>
+                    <w:u w:val="none"/>
+                    <w:sz w:val="%s"/>
+                    <w:szCs w:val="%s"/>
+                </w:rPr>
+                <w:t xml:space="preserve">%s</w:t>
+            </w:r>''' % (nsdecls('w'), fuente, fuente, "1" if bold else "0", "1" if italic else "0", sz_val, sz_val, escape(cuerpo)))
+            p.append(r_cuerpo)
+    else:
+        r = parse_xml(r'''<w:r %s>
+            <w:rPr>
+                <w:rFonts w:ascii="%s" w:hAnsi="%s"/>
+                <w:b w:val="%s"/>
+                <w:i w:val="%s"/>
+                <w:color w:val="000000"/>
+                <w:u w:val="none"/>
+                <w:sz w:val="%s"/>
+                <w:szCs w:val="%s"/>
+            </w:rPr>
+            <w:t xml:space="preserve">%s</w:t>
+        </w:r>''' % (nsdecls('w'), fuente, fuente, "1" if bold else "0", "1" if italic else "0", sz_val, sz_val, escape(texto_str)))
+        p.append(r)
+
+    return p
+
+
+def crear_parrafos_desde_texto(texto_multilinea, fuente=FUENTE_POR_DEFECTO, font_size_pt=6.5,
+                               align="both", line_spacing=LINE_SPACING_1_0_DXA, space_before=0,
+                               space_after=20, left_indent_dxa=180, hanging_dxa=180, bold_prefix=False):
+    """
+    Convierte una cadena de texto multilinea (con viñetas '•', guiones '-' o párrafos)
+    en una lista de elementos <w:p> individuales para celdas de tabla:
+      - Cada línea no vacía se convierte en un <w:p> independiente.
+      - Si una línea comienza con '•' o '-', se le aplica sangría colgante para viñetas.
+      - Si una línea tiene sangría de sub-ítem (ej. '  - ' o '    - '), se incrementa la sangría izquierda.
+      - Si una línea es un encabezado o texto regular sin viñeta, se formatea sin sangría colgante.
+      - Erradica de raíz el texto corrido accidental en Word y asegura que cada viñeta
+        inicie limpia en su propio renglón.
+    """
+    if not texto_multilinea:
+        return []
+
+    parrafos = []
+    lineas = str(texto_multilinea).splitlines()
+
+    for linea in lineas:
+        linea_raw = linea.rstrip()
+        linea_strip = linea_raw.strip()
+        if not linea_strip:
+            continue
+
+        espacios_inicio = len(linea_raw) - len(linea_raw.lstrip(' '))
+        es_subitem = linea_strip.startswith('-') or linea_strip.startswith('–') or (espacios_inicio >= 2 and (linea_strip.startswith('-') or linea_strip.startswith('•')))
+        es_vineta = linea_strip.startswith('•') or linea_strip.startswith('* ') or es_subitem
+
+        if es_subitem:
+            sub_left = left_indent_dxa + 160
+            sub_hanging = 140
+            p = crear_parrafo_item_lista(
+                linea_strip,
+                fuente=fuente,
+                font_size_pt=font_size_pt,
+                align=align,
+                line_spacing=line_spacing,
+                space_before=space_before,
+                space_after=space_after,
+                left_indent_dxa=sub_left,
+                hanging_dxa=sub_hanging,
+                bold_prefix=bold_prefix
+            )
+        elif es_vineta:
+            p = crear_parrafo_item_lista(
+                linea_strip,
+                fuente=fuente,
+                font_size_pt=font_size_pt,
+                align=align,
+                line_spacing=line_spacing,
+                space_before=space_before,
+                space_after=space_after,
+                left_indent_dxa=left_indent_dxa,
+                hanging_dxa=hanging_dxa,
+                bold_prefix=bold_prefix
+            )
+        else:
+            es_titulo = linea_strip.endswith(':') or linea_strip.isupper()
+            p = crear_parrafo_celda(
+                linea_strip,
+                bold=es_titulo,
+                fuente=fuente,
+                font_size_pt=font_size_pt,
+                align="left" if es_titulo else align,
+                line_spacing=line_spacing,
+                space_before=space_before + (10 if es_titulo else 0),
+                space_after=space_after
+            )
+
+        parrafos.append(p)
+
+    return parrafos
+
+
 # ==============================================================================
-# 3. HERRAMIENTAS DE AUDITORÍA, CONVERSIÓN Y RENDERIZADO VISUAL
+# 3. MOTOR DE FORMATEO QUIRÚRGICO DE PÁRRAFOS Y TIPOGRAFÍA APA 7 / UNAJMA
+# ==============================================================================
+
+def aplicar_formato_cuerpo(p, font_size_pt=FONT_SIZE_BODY_PT, line_spacing=LINE_SPACING_1_5_DXA,
+                           space_before=0, space_after=0, first_line_indent_dxa=SANGRIA_PRIMERA_LINEA_DXA,
+                           align="both", fuente=FUENTE_POR_DEFECTO):
+    """
+    Aplica el formato canónico estricto de cuerpo de texto bajo APA 7 y estándar UNAJMA:
+      - Tipografía: Times New Roman 12 pt (w:sz="24")
+      - Interlineado: 1.5 líneas (w:line="360" w:lineRule="auto")
+      - Sangría de primera línea: 1.27 cm / 0.5 in (w:ind w:firstLine="720")
+      - Espaciado: w:before="0", w:after="0"
+      - Alineación: Justificado (w:jc w:val="both")
+    """
+    pPr = p._p.get_or_add_pPr()
+
+    # 1. Configurar espaciado (w:spacing)
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="%d" w:after="%d"/>' % (
+        nsdecls('w'), line_spacing, space_before, space_after)))
+
+    # 2. Configurar sangría (w:ind)
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:firstLine="%d" w:left="0" w:right="0"/>' % (
+        nsdecls('w'), first_line_indent_dxa)))
+
+    # 3. Configurar alineación (w:jc)
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="%s"/>' % (nsdecls('w'), align)))
+
+    # 4. Formatear cada run respetando negrita / cursiva previa
+    sz_val = str(int(font_size_pt * 2))
+    for r in p.runs:
+        rPr = r._r.get_or_add_rPr()
+
+        # Preservar estilos de negrita y cursiva
+        b_elem = rPr.find(qn('w:b'))
+        es_bold = b_elem is not None and (b_elem.get(qn('w:val')) is None or b_elem.get(qn('w:val')) == '1')
+        i_elem = rPr.find(qn('w:i'))
+        es_italic = i_elem is not None and (i_elem.get(qn('w:val')) is None or i_elem.get(qn('w:val')) == '1')
+
+        # Asignar fuente Times New Roman
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rPr.append(parse_xml(r'<w:rFonts %s w:ascii="%s" w:hAnsi="%s" w:eastAsia="%s" w:cs="%s"/>' % (
+            nsdecls('w'), fuente, fuente, fuente, fuente)))
+
+        # Asignar tamaño en medios puntos
+        for sz in rPr.findall(qn('w:sz')):
+            rPr.remove(sz)
+        rPr.append(parse_xml(r'<w:sz %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+        for szCs in rPr.findall(qn('w:szCs')):
+            rPr.remove(szCs)
+        rPr.append(parse_xml(r'<w:szCs %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+
+        # Reasegurar negrita y cursiva
+        if es_bold and rPr.find(qn('w:b')) is None:
+            rPr.append(parse_xml(r'<w:b %s w:val="1"/>' % nsdecls('w')))
+        if es_italic and rPr.find(qn('w:i')) is None:
+            rPr.append(parse_xml(r'<w:i %s w:val="1"/>' % nsdecls('w')))
+
+
+def asegurar_salto_pagina_parrafo(p):
+    """
+    Inyecta <w:pageBreakBefore/> en el pPr del párrafo si no existe,
+    asegurando que el párrafo inicie estrictamente al tope de una página nueva.
+    """
+    pPr = p._p.get_or_add_pPr()
+    if pPr.find(qn('w:pageBreakBefore')) is None:
+        pbb = parse_xml(r'<w:pageBreakBefore %s/>' % nsdecls('w'))
+        pPr.insert(0, pbb)
+
+
+def aplicar_formato_lista_vineta(p, nivel=0, fuente=FUENTE_POR_DEFECTO, line_spacing=LINE_SPACING_1_5_DXA, space_before=0, space_after=60):
+    """
+    Aplica formato canónico APA 7 a elementos de lista o viñetas:
+      - Sangría francesa / colgante: w:left="720", w:hanging="360" (0.5 pulgada izquierda, 0.25 pulgada colgante)
+      - Erradica terminantemente w:firstLine positivo para evitar saltos gigantescos de tabulación.
+      - Interlineado 1.5 líneas (360 dxa) y Times New Roman 12 pt justificado.
+    """
+    pPr = p._p.get_or_add_pPr()
+
+    # 1. Configurar espaciado (w:spacing)
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="%d" w:after="%d"/>' % (
+        nsdecls('w'), line_spacing, space_before, space_after)))
+
+    # 2. Configurar sangría colgante estricta (sin firstLine positivo)
+    left_dxa = 720 + (nivel * 360)
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:left="%d" w:hanging="360"/>' % (nsdecls('w'), left_dxa)))
+
+    # 3. Alineación justificada
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="both"/>' % nsdecls('w')))
+
+    # 4. Formatear cada run respetando negrita / cursiva previa
+    sz_val = "24"  # 12 pt
+    for r in p.runs:
+        rPr = r._r.get_or_add_rPr()
+        b_elem = rPr.find(qn('w:b'))
+        es_bold = b_elem is not None and (b_elem.get(qn('w:val')) is None or b_elem.get(qn('w:val')) == '1')
+        i_elem = rPr.find(qn('w:i'))
+        es_italic = i_elem is not None and (i_elem.get(qn('w:val')) is None or i_elem.get(qn('w:val')) == '1')
+
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rPr.append(parse_xml(r'<w:rFonts %s w:ascii="%s" w:hAnsi="%s" w:eastAsia="%s" w:cs="%s"/>' % (
+            nsdecls('w'), fuente, fuente, fuente, fuente)))
+
+        for sz in rPr.findall(qn('w:sz')):
+            rPr.remove(sz)
+        rPr.append(parse_xml(r'<w:sz %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+        for szCs in rPr.findall(qn('w:szCs')):
+            rPr.remove(szCs)
+        rPr.append(parse_xml(r'<w:szCs %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+
+        if es_bold and rPr.find(qn('w:b')) is None:
+            rPr.append(parse_xml(r'<w:b %s w:val="1"/>' % nsdecls('w')))
+        if es_italic and rPr.find(qn('w:i')) is None:
+            rPr.append(parse_xml(r'<w:i %s w:val="1"/>' % nsdecls('w')))
+
+
+def aplicar_formato_heading(p, nivel=1, fuente=FUENTE_POR_DEFECTO, page_break_before=False):
+    """
+    Aplica el formato canónico a encabezados (Headings 1, 2, 3, 4):
+      - Cero sangría de primera línea (w:firstLine="0" w:left="0")
+      - Fuente Times New Roman
+      - Espaciado anterior y posterior proporcional
+      - Salto de página antes opcional o mandatorio para capítulos.
+    """
+    pPr = p._p.get_or_add_pPr()
+
+    txt_norm = p.text.strip().upper()
+    es_capitulo = txt_norm.startswith("CAPÍTULO") or txt_norm.startswith("CAPITULO") or txt_norm.startswith("ANEXOS") or txt_norm.startswith("REFERENCIA")
+    if page_break_before or (nivel == 1 and es_capitulo):
+        asegurar_salto_pagina_parrafo(p)
+
+    if pPr.find(qn('w:keepNext')) is None:
+        pPr.insert(0, parse_xml(r'<w:keepNext %s/>' % nsdecls('w')))
+
+    if nivel == 1:
+        # Nivel 1: Capítulos o Títulos Principales (12 o 14 pt, Negrita, centrado o izquierda, 1.5 interlineado)
+        sz_val = "24"  # 12 pt (o 28 para 14 pt según directiva)
+        line_spacing = LINE_SPACING_1_5_DXA
+        before = 360   # 18 pt
+        after = 120    # 6 pt
+        align = "center" if "CAPÍTULO" in p.text.upper() or "CAPITULO" in p.text.upper() or "ANEXOS" in p.text.upper() else "left"
+        es_bold = True
+        es_italic = False
+    elif nivel == 2:
+        # Nivel 2: Secciones 1.1, 1.2, 4.7, etc. (12 pt, Negrita, alineado a la izquierda)
+        sz_val = "24"
+        line_spacing = LINE_SPACING_1_5_DXA
+        before = 240   # 12 pt
+        after = 120    # 6 pt
+        align = "left"
+        es_bold = True
+        es_italic = False
+    elif nivel == 3:
+        # Nivel 3: Subsecciones 1.2.1, 1.2.2 (12 pt, Negrita y Cursiva, izquierda)
+        sz_val = "24"
+        line_spacing = LINE_SPACING_1_5_DXA
+        before = 240   # 12 pt
+        after = 120    # 6 pt
+        align = "left"
+        es_bold = True
+        es_italic = True
+    else:
+        sz_val = "24"
+        line_spacing = LINE_SPACING_1_5_DXA
+        before = 120
+        after = 60
+        align = "left"
+        es_bold = True
+        es_italic = False
+
+    # Spacing
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="%d" w:after="%d"/>' % (
+        nsdecls('w'), line_spacing, before, after)))
+
+    # Indent (sin sangría)
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:firstLine="0" w:left="0" w:right="0"/>' % nsdecls('w')))
+
+    # Alignment
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="%s"/>' % (nsdecls('w'), align)))
+
+    # Runs
+    for r in p.runs:
+        rPr = r._r.get_or_add_rPr()
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rPr.append(parse_xml(r'<w:rFonts %s w:ascii="%s" w:hAnsi="%s" w:eastAsia="%s" w:cs="%s"/>' % (
+            nsdecls('w'), fuente, fuente, fuente, fuente)))
+        for sz in rPr.findall(qn('w:sz')):
+            rPr.remove(sz)
+        rPr.append(parse_xml(r'<w:sz %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+        for szCs in rPr.findall(qn('w:szCs')):
+            rPr.remove(szCs)
+        rPr.append(parse_xml(r'<w:szCs %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+
+        for b in rPr.findall(qn('w:b')):
+            rPr.remove(b)
+        if es_bold:
+            rPr.append(parse_xml(r'<w:b %s w:val="1"/>' % nsdecls('w')))
+
+        for i in rPr.findall(qn('w:i')):
+            rPr.remove(i)
+        if es_italic:
+            rPr.append(parse_xml(r'<w:i %s w:val="1"/>' % nsdecls('w')))
+
+
+def aplicar_formato_caption(p, tipo="tabla", fuente=FUENTE_POR_DEFECTO):
+    """
+    Aplica formato APA 7 a rótulos y títulos de tablas y figuras:
+      - Rótulo (Tabla X / Figura X): Negrita, izquierda, sin sangría, espacio anterior 12 pt.
+      - Título descriptivo: Cursiva, izquierda, sin sangría, espacio posterior 6 pt.
+    """
+    pPr = p._p.get_or_add_pPr()
+    txt = p.text.strip()
+    es_rotulo = txt.startswith("Tabla ") or txt.startswith("Figura ")
+
+    before = 240 if es_rotulo else 0
+    after = 40 if es_rotulo else 120
+    es_bold = es_rotulo
+    es_italic = not es_rotulo
+
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="%d" w:after="%d"/>' % (
+        nsdecls('w'), LINE_SPACING_1_5_DXA, before, after)))
+
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:firstLine="0" w:left="0" w:right="0"/>' % nsdecls('w')))
+
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="left"/>' % nsdecls('w')))
+
+    sz_val = "24"  # 12 pt
+    for r in p.runs:
+        rPr = r._r.get_or_add_rPr()
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rPr.append(parse_xml(r'<w:rFonts %s w:ascii="%s" w:hAnsi="%s"/>' % (nsdecls('w'), fuente, fuente)))
+        for sz in rPr.findall(qn('w:sz')):
+            rPr.remove(sz)
+        rPr.append(parse_xml(r'<w:sz %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+        for szCs in rPr.findall(qn('w:szCs')):
+            rPr.remove(szCs)
+        rPr.append(parse_xml(r'<w:szCs %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+
+        for b in rPr.findall(qn('w:b')):
+            rPr.remove(b)
+        if es_bold:
+            rPr.append(parse_xml(r'<w:b %s w:val="1"/>' % nsdecls('w')))
+
+        for i in rPr.findall(qn('w:i')):
+            rPr.remove(i)
+        if es_italic:
+            rPr.append(parse_xml(r'<w:i %s w:val="1"/>' % nsdecls('w')))
+
+
+def aplicar_formato_nota_tabla_figura(p, fuente=FUENTE_POR_DEFECTO):
+    """
+    Aplica formato APA 7 a notas de tablas y figuras:
+      - Tipografía: 9.5 pt o 10 pt
+      - Interlineado sencillo (1.0 = 240 dxa)
+      - Espaciado: w:before="60", w:after="240"
+      - Sin sangría de primera línea
+      - "Nota." o "Fuente:" en cursiva inicial
+    """
+    pPr = p._p.get_or_add_pPr()
+
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="60" w:after="240"/>' % (
+        nsdecls('w'), LINE_SPACING_1_0_DXA)))
+
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:firstLine="0" w:left="0" w:right="0"/>' % nsdecls('w')))
+
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="both"/>' % nsdecls('w')))
+
+    sz_val = str(int(FONT_SIZE_NOTE_PT * 2))  # 19 para 9.5 pt o 20 para 10 pt
+    for r in p.runs:
+        rPr = r._r.get_or_add_rPr()
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rPr.append(parse_xml(r'<w:rFonts %s w:ascii="%s" w:hAnsi="%s"/>' % (nsdecls('w'), fuente, fuente)))
+        for sz in rPr.findall(qn('w:sz')):
+            rPr.remove(sz)
+        rPr.append(parse_xml(r'<w:sz %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+        for szCs in rPr.findall(qn('w:szCs')):
+            rPr.remove(szCs)
+        rPr.append(parse_xml(r'<w:szCs %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+
+
+def aplicar_formato_referencia(p, fuente=FUENTE_POR_DEFECTO):
+    """
+    Aplica formato APA 7 a entradas de la lista de referencias bibliográficas:
+      - Sangría francesa de 1.27 cm (w:ind w:left="720" w:hanging="720")
+      - Interlineado 1.5 líneas (w:line="360")
+      - Tipografía: Times New Roman 12 pt
+      - Espaciado posterior: 6 pt (w:after="120")
+    """
+    pPr = p._p.get_or_add_pPr()
+
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="0" w:after="120"/>' % (
+        nsdecls('w'), LINE_SPACING_1_5_DXA)))
+
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:left="%d" w:hanging="%d" w:right="0"/>' % (
+        nsdecls('w'), SANGRIA_FRANCESA_DXA, SANGRIA_FRANCESA_DXA)))
+
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="both"/>' % nsdecls('w')))
+
+    sz_val = "24"
+    for r in p.runs:
+        rPr = r._r.get_or_add_rPr()
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rPr.append(parse_xml(r'<w:rFonts %s w:ascii="%s" w:hAnsi="%s"/>' % (nsdecls('w'), fuente, fuente)))
+        for sz in rPr.findall(qn('w:sz')):
+            rPr.remove(sz)
+        rPr.append(parse_xml(r'<w:sz %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+        for szCs in rPr.findall(qn('w:szCs')):
+            rPr.remove(szCs)
+        rPr.append(parse_xml(r'<w:szCs %s w:val="%s"/>' % (nsdecls('w'), sz_val)))
+
+
+def aplicar_formato_formula_dedicada(p):
+    """
+    Asegura que un párrafo con ecuación OMML dedicada tenga centrado impecable,
+    espaciado superior/inferior armónico y cero sangrías.
+    """
+    pPr = p._p.get_or_add_pPr()
+
+    for sp in pPr.findall(qn('w:spacing')):
+        pPr.remove(sp)
+    pPr.append(parse_xml(r'<w:spacing %s w:line="%d" w:lineRule="auto" w:before="120" w:after="120"/>' % (
+        nsdecls('w'), LINE_SPACING_1_5_DXA)))
+
+    for ind in pPr.findall(qn('w:ind')):
+        pPr.remove(ind)
+    pPr.append(parse_xml(r'<w:ind %s w:firstLine="0" w:left="0" w:right="0"/>' % nsdecls('w')))
+
+    for jc in pPr.findall(qn('w:jc')):
+        pPr.remove(jc)
+    pPr.append(parse_xml(r'<w:jc %s w:val="center"/>' % nsdecls('w')))
+
+
+def normalizar_formato_documento_completo(doc, verbose=True):
+    """
+    Normaliza quirúrgicamente todo el documento DOCX garantizando que CADA párrafo
+    cumpla con las normas de formato, sangrías, interlineado y tipografía APA 7 / UNAJMA:
+      - Capítulos (I al V, Referencias, Anexos) inician en página nueva (w:pageBreakBefore).
+      - Listas y viñetas con sangría colgante controlada (sin salto desmedido de tabulación).
+      - Paginación continua entre secciones (sin reinicio espurio a 1 en landscape o anexos).
+    """
+    conteo = {
+        "cuerpo_con_sangria": 0,
+        "listas": 0,
+        "headings": 0,
+        "captions": 0,
+        "notas": 0,
+        "referencias": 0,
+        "formulas": 0,
+        "otros": 0
+    }
+
+    en_referencias = False
+
+    for idx, p in enumerate(doc.paragraphs):
+        txt = p.text.strip()
+        contiene_omml = len(p._p.xpath('.//m:oMath')) > 0
+
+        # Si es una fórmula OMML dedicada (sin texto o con texto muy corto)
+        if contiene_omml and len(txt) < 30:
+            aplicar_formato_formula_dedicada(p)
+            conteo["formulas"] += 1
+            continue
+
+        if not txt:
+            continue
+
+        txt_clean = txt.replace('\xa0', ' ')
+        txt_clean_upper = txt_clean.upper()
+
+        # Detectar sección de referencias bibliográficas
+        if txt_clean_upper.startswith("REFERENCIA"):
+            en_referencias = True
+            aplicar_formato_heading(p, nivel=1, page_break_before=True)
+            conteo["headings"] += 1
+            continue
+
+        if txt_clean_upper == "ANEXOS":
+            en_referencias = False
+            aplicar_formato_heading(p, nivel=1, page_break_before=True)
+            conteo["headings"] += 1
+            continue
+        elif txt_clean_upper.startswith("ANEXO"):
+            en_referencias = False
+            # Si es el primer anexo y viene inmediatamente despues de ANEXOS, no forzar salto redundante
+            prev_p = doc.paragraphs[idx-1] if idx > 0 else None
+            prev_txt = prev_p.text.strip().upper() if prev_p else ""
+            salto = not (prev_txt == "ANEXOS")
+            aplicar_formato_heading(p, nivel=2 if not salto else 1, page_break_before=salto)
+            conteo["headings"] += 1
+            continue
+
+        # Si estamos en la sección de referencias y es una entrada bibliográfica
+        if en_referencias and len(txt_clean) > 20 and not txt_clean_upper.startswith("ANEXO"):
+            aplicar_formato_referencia(p)
+            conteo["referencias"] += 1
+            continue
+
+        # Detectar Capítulos
+        if txt_clean_upper.startswith("CAPÍTULO") or txt_clean_upper.startswith("CAPITULO"):
+            if "CAPITULO" in txt_clean:
+                for t_node in p._p.xpath('.//w:t'):
+                    if t_node.text and "CAPITULO" in t_node.text:
+                        t_node.text = t_node.text.replace("CAPITULO", "CAPÍTULO")
+            aplicar_formato_heading(p, nivel=1, page_break_before=True)
+            conteo["headings"] += 1
+            continue
+
+        # Chequear otros encabezados y preliminares con salto obligatorio
+        style_name = p.style.name if p.style else 'Normal'
+        preliminares_con_salto = [
+            "INTRODUCCIÓN", "RESUMEN", "ABSTRACT", "CHUMASQA", "DEDICATORIA", "AGRADECIMIENTOS",
+            "ÍNDICE GENERAL", "ÍNDICE DE CONTENIDO", "ÍNDICE DE TABLAS", "LISTA DE TABLAS",
+            "ÍNDICE DE FIGURAS", "LISTA DE FIGURAS", "REFERENCIAS", "REFERENCIAS BIBLIOGRÁFICAS", "ANEXOS"
+        ]
+        if txt_clean_upper in preliminares_con_salto or style_name.startswith("Heading 1"):
+            es_salto = txt_clean_upper in preliminares_con_salto or txt_clean in ["INTRODUCCIÓN", "RESUMEN", "ABSTRACT", "CHUMASQA"]
+            aplicar_formato_heading(p, nivel=1, page_break_before=es_salto)
+            conteo["headings"] += 1
+            continue
+        elif style_name.startswith("Heading 2") or (len(txt_clean) < 80 and any(txt_clean.startswith(f"{i}.") for i in range(1, 10)) and len(txt_clean.split()[0].split('.')) == 2):
+            aplicar_formato_heading(p, nivel=2)
+            conteo["headings"] += 1
+            continue
+        elif style_name.startswith("Heading 3") or (len(txt_clean) < 80 and any(txt_clean.startswith(f"{i}.") for i in range(1, 10)) and len(txt_clean.split()[0].split('.')) == 3):
+            aplicar_formato_heading(p, nivel=3)
+            conteo["headings"] += 1
+            continue
+
+        # Chequear rótulos y notas de tablas/figuras
+        if txt_clean.startswith("Tabla ") or txt_clean.startswith("Figura "):
+            aplicar_formato_caption(p, tipo="tabla")
+            conteo["captions"] += 1
+            continue
+
+        if txt_clean.startswith("Nota.") or txt_clean.startswith("Nota:") or txt_clean.startswith("Fuente:") or txt_clean.startswith("Nota "):
+            aplicar_formato_nota_tabla_figura(p)
+            conteo["notas"] += 1
+            continue
+
+        # Excluir párrafos especiales de portada o preliminares (primeros párrafos)
+        if idx < 30 and (len(txt) < 80 or "UNIVERSIDAD" in txt or "FACULTAD" in txt or "ESCUELA" in txt or "TESIS" in txt or "BACHILLER" in txt):
+            conteo["otros"] += 1
+            continue
+
+        # Detectar viñetas o listas enumeradas (evitar sangría regular 720 que destruye sangría francesa)
+        es_lista = len(p._p.xpath('.//w:numPr')) > 0 or txt_clean.startswith('•') or txt_clean.startswith('-')
+        if es_lista:
+            aplicar_formato_lista_vineta(p)
+            conteo["listas"] += 1
+            continue
+
+        # Párrafos de cuerpo normal (narrativa científica)
+        if len(txt) > 40:
+            aplicar_formato_cuerpo(p)
+            conteo["cuerpo_con_sangria"] += 1
+        else:
+            conteo["otros"] += 1
+
+    # Asegurar continuidad de paginación entre secciones (erradicar w:start="1" espurio)
+    for s_idx, sec in enumerate(doc.sections):
+        if s_idx > 0:
+            sectPr = sec._sectPr
+            for pnt in sectPr.findall(qn('w:pgNumType')):
+                if pnt.get(qn('w:start')) is not None:
+                    del pnt.attrib[qn('w:start')]
+
+    if verbose:
+        print("\n--- RESUMEN DE NORMALIZACIÓN DE PÁRRAFOS ---")
+        for k, v in conteo.items():
+            print(f"  - {k}: {v} párrafos procesados")
+
+    return conteo
+
+
+# ==============================================================================
+# 4. HERRAMIENTAS DE AUDITORÍA, CONVERSIÓN Y RENDERIZADO VISUAL
 # ==============================================================================
 
 def blindar_todas_tablas_documento(docx_path, salida_path=None, aplicar_bordes=True):
@@ -431,14 +1167,19 @@ def exportar_docx_a_pdf(docx_path, pdf_path=None):
         pdf_path = docx_path.with_suffix(".pdf")
     else:
         pdf_path = Path(pdf_path).resolve()
+        if pdf_path.is_dir():
+            pdf_path = pdf_path / f"{docx_path.stem}.pdf"
 
     cmd = f"""
     $word = New-Object -ComObject Word.Application
     $word.Visible = $false
     $word.DisplayAlerts = 0
     $doc = $word.Documents.Open('{str(docx_path)}')
-    $doc.SaveAs([ref]'{str(pdf_path)}', [ref]17) # 17 = wdFormatPDF
-    $doc.Close()
+    # wdExportFormatPDF = 17, wdExportOptimizeForPrint = 0, wdExportDocumentContent = 0
+    # ExportAsFixedFormat con Item = 0 asegura exportar exclusivamente el contenido del documento,
+    # suprimiendo marcas de revisión, globos y comentarios marginales que distorsionan los márgenes.
+    $doc.ExportAsFixedFormat('{str(pdf_path)}', 17, $false, 0, 0, 1, 1, 0, $true, $true, 1, $true, $true, $false)
+    $doc.Close([ref]0)
     $word.Quit()
     [System.Runtime.Interopservices.Marshal]::ReleaseComObject($word) | Out-Null
     """
