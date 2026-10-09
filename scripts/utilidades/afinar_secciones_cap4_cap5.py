@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
-SIVAC-THESIS-LAB — AFINAMIENTO DE SECCIONES 4.10, 4.11 Y CAPÍTULO V (PRESUPUESTO)
+SIVAC-THESIS-LAB - AFINAMIENTO DE SECCIONES 4.10, 4.11 Y CAPÍTULO V (PRESUPUESTO)
 Normalización APA 7, erradicación de artefactos de IA y alineación DEC-007
 ================================================================================
 """

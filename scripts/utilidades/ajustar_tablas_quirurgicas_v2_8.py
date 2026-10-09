@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Ajuste Quirúrgico y Tipográfico Maestro Definitivo v2.8
+SIVAC-THESIS-LAB - Ajuste Quirúrgico y Tipográfico Maestro Definitivo v2.8
 Perfecciona la presentación visual de la Tabla 12 (Matriz de Consistencia) en Landscape (Pág. 51):
   - Fórmulas OMML en líneas dedicadas, nítidas, centradas y sin cortes horizontales molestos.
   - Columnas rebalanceadas (Col 5 con 3,100 dxa para máxima holgura de fórmulas).

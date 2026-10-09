@@ -1,0 +1,39 @@
+{
+ "version_extractor": 1,
+ "archivo_png": "figura_p0044_1.png",
+ "fuente": {
+  "archivo": "Programación de aplicaciones web Historia, principios básicos y clientes web.pdf",
+  "sha256": "8dc2663152db2945b09290837931fe83f0bff3c17ca1ee3ee4afa4b455efa22d"
+ },
+ "pagina_fisica": 44,
+ "etiqueta_impresa": null,
+ "metodo_etiqueta": "no_determinada",
+ "tipo": "figura",
+ "numero": "2.5",
+ "leyenda_textual": "Figura 2.5: Los pilares de la Web",
+ "bbox_pt": [
+  71.12,
+  86.63,
+  410.78,
+  219.46
+ ],
+ "bbox_px": [
+  296,
+  361,
+  1712,
+  914
+ ],
+ "dpi": 300,
+ "ancho_px": 1416,
+ "alto_px": 555,
+ "metodo_deteccion": "raster",
+ "confianza": "alta",
+ "confianza_criterio": "geométrica (distancia, posición y ambigüedad leyenda-región); no implica revisión visual",
+ "notas": [],
+ "requiere_ocr": false,
+ "ocr_disponible": false,
+ "cita_modo": "adaptado",
+ "cita_sugerida": "Nota. Adaptado de *Programación de aplicaciones web: Historia, principios básicos y clientes web* (p. [VERIFICAR: página impresa no determinada; página física 44 del PDF]), por Luján Mora, S., 2002, Editorial Club Universitario.",
+ "aviso": "Verificar licencia/permiso de reproducción de la fuente y contrastar visualmente el recorte antes de incluirlo en el informe.",
+ "fecha_extraccion": "2026-10-08"
+}

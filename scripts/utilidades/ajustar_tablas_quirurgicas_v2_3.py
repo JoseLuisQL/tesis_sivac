@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Ajuste Quirúrgico y Corrección Estructural de Tablas v2.3
+SIVAC-THESIS-LAB - Ajuste Quirúrgico y Corrección Estructural de Tablas v2.3
 Resuelve de forma definitiva los problemas de desajuste visual, saltos de página
 inadecuados, celdas partidas y desbordamiento de márgenes en:
   - Tabla 5 (Operacionalización de variables)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
-SIVAC-THESIS-LAB — AFINAMIENTO DE SECCIONES CRÍTICAS (CAPÍTULOS I Y II)
+SIVAC-THESIS-LAB - AFINAMIENTO DE SECCIONES CRÍTICAS (CAPÍTULOS I Y II)
 Alineación estricta con DEC-007 y estándar institucional UNAJMA
 ================================================================================
 """

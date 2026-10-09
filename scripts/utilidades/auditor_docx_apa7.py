@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Auditor APA 7 / UNAJMA de documentos .docx. SOLO LECTURA.
+SIVAC-THESIS-LAB - Auditor APA 7 / UNAJMA de documentos .docx. SOLO LECTURA.
 
 Comprobaciones (severidad crítica / mayor / menor, con ubicación):
   MARGENES    márgenes por sección (izq 3.0 cm, resto 2.54 cm)
@@ -426,7 +426,7 @@ def auditar(ruta: str | Path, solo: set[str] | None = None) -> dict:
 
 def a_texto(inf: dict, max_filas: int = 50) -> str:
     t = inf["totales"]
-    L = [f"Auditoría APA 7 / UNAJMA — {inf['archivo']}", f"SHA-256: {inf['sha256'][:16]}…",
+    L = [f"Auditoría APA 7 / UNAJMA - {inf['archivo']}", f"SHA-256: {inf['sha256'][:16]}…",
          f"Resumen: {inf['resumen']}", f"CRÍTICOS {t['critico']} | MAYORES {t['mayor']} | menores {t['menor']}",
          f"Por regla: {inf['por_regla']}", ""]
     for h in inf["hallazgos"][:max_filas]:

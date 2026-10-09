@@ -1,0 +1,41 @@
+{
+ "version_extractor": 1,
+ "archivo_png": "manual_p0502_2.png",
+ "fuente": {
+  "archivo": "Software Engineering.pdf",
+  "sha256": "cabeeeae791371a199f28372b0f4695a760877953333528f101e7f747988bd22"
+ },
+ "pagina_fisica": 502,
+ "etiqueta_impresa": "501",
+ "metodo_etiqueta": "etiqueta_pdf",
+ "tipo": "figura",
+ "numero": null,
+ "leyenda_textual": null,
+ "bbox_pt": [
+  220.0,
+  45.0,
+  415.0,
+  175.0
+ ],
+ "bbox_px": [
+  917,
+  188,
+  1729,
+  729
+ ],
+ "dpi": 300,
+ "ancho_px": 814,
+ "alto_px": 543,
+ "metodo_deteccion": "manual",
+ "confianza": "media",
+ "confianza_criterio": "geométrica (distancia, posición y ambigüedad leyenda-región); no implica revisión visual",
+ "notas": [
+  "recorte manual sin leyenda localizada: completar leyenda y cita"
+ ],
+ "requiere_ocr": false,
+ "ocr_disponible": false,
+ "cita_modo": "adaptado",
+ "cita_sugerida": "Nota. Adaptado de *Software engineering (10th ed.)* (p. 501), por I. Sommerville, 2016, Pearson.",
+ "aviso": "Verificar licencia/permiso de reproducción de la fuente y contrastar visualmente el recorte antes de incluirlo en el informe.",
+ "fecha_extraccion": "2026-10-08"
+}

@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
-SIVAC-THESIS-LAB — COMPILADOR MAESTRO DEL INFORME FINAL DE TESIS (.DOCX)
+SIVAC-THESIS-LAB - COMPILADOR MAESTRO DEL INFORME FINAL DE TESIS (.DOCX)
 Universidad Nacional José María Arguedas (UNAJMA)
-Facultad de Ingeniería — Escuela Profesional de Ingeniería de Sistemas
+Facultad de Ingeniería - Escuela Profesional de Ingeniería de Sistemas
 
 Compila la versión completa y definitiva de:
 salidas/informe_final_v01.docx

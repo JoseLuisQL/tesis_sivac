@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Corrección Maestra Definitiva de Tablas v2.4
+SIVAC-THESIS-LAB - Corrección Maestra Definitiva de Tablas v2.4
 Resuelve de raíz los problemas visuales y estructurales reportados por el tesista:
   1. Tabla 5 (Operacionalización de variables, Portrait):
      - Comienza al inicio de página (salto de página en Párrafo 385 con keep_with_next).

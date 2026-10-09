@@ -1,0 +1,41 @@
+{
+ "version_extractor": 1,
+ "archivo_png": "manual_p0075_3.png",
+ "fuente": {
+  "archivo": "Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N° 1.pdf",
+  "sha256": "b4072e75cf315d1d6b5760e7e76b2f42f1a623fe9ff3b0413e309e676eccd187"
+ },
+ "pagina_fisica": 75,
+ "etiqueta_impresa": null,
+ "metodo_etiqueta": "no_determinada",
+ "tipo": "figura",
+ "numero": null,
+ "leyenda_textual": null,
+ "bbox_pt": [
+  105.0,
+  490.0,
+  465.0,
+  780.0
+ ],
+ "bbox_px": [
+  438,
+  2042,
+  1938,
+  3250
+ ],
+ "dpi": 300,
+ "ancho_px": 1501,
+ "alto_px": 1209,
+ "metodo_deteccion": "manual",
+ "confianza": "media",
+ "confianza_criterio": "geométrica (distancia, posición y ambigüedad leyenda-región); no implica revisión visual",
+ "notas": [
+  "recorte manual sin leyenda localizada: completar leyenda y cita"
+ ],
+ "requiere_ocr": false,
+ "ocr_disponible": false,
+ "cita_modo": "adaptado",
+ "cita_sugerida": "Nota. Adaptado de *Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N° 196-MINSA/DGIESP-2022, R.M. N° 884-2022/MINSA)* (p. [VERIFICAR: página impresa no determinada; página física 75 del PDF]), por Ministerio de Salud, 2022, MINSA.",
+ "aviso": "Verificar licencia/permiso de reproducción de la fuente y contrastar visualmente el recorte antes de incluirlo en el informe.",
+ "fecha_extraccion": "2026-10-08"
+}

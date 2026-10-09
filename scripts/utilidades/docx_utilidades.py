@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
-SIVAC-THESIS-LAB — UTILIDADES Y ESTILOS OPENXML PARA PYTHON-DOCX
+SIVAC-THESIS-LAB - UTILIDADES Y ESTILOS OPENXML PARA PYTHON-DOCX
 Normativa: APA 7.ª edición y Reglamento de Grados y Títulos UNAJMA
 ================================================================================
 """
@@ -62,13 +62,15 @@ def configurar_numeracion(seccion, tipo='lowerRoman', start_num=None, desvincula
         seccion.different_first_page_header_footer = False
 
 def procesar_formato_texto(texto):
-    """Procesa marcas simples de markdown como **negrita** y *cursiva*."""
-    tokens = re.split(r'(\*\*[^*]+\*\*|\*[^*]+\*)', texto)
+    """Procesa marcas simples de markdown como ***negrita cursiva***, **negrita** y *cursiva*."""
+    tokens = re.split(r'(\*\*\*[^*]+\*\*\*|\*\*[^*]+\*\*|\*[^*]+\*)', str(texto))
     res = []
     for t in tokens:
         if not t:
             continue
-        if t.startswith('**') and t.endswith('**') and len(t) >= 4:
+        if t.startswith('***') and t.endswith('***') and len(t) >= 6:
+            res.append((t[3:-3], True, True))
+        elif t.startswith('**') and t.endswith('**') and len(t) >= 4:
             res.append((t[2:-2], True, False))
         elif t.startswith('*') and t.endswith('*') and len(t) >= 2:
             res.append((t[1:-1], False, True))
@@ -76,42 +78,70 @@ def procesar_formato_texto(texto):
             res.append((t, False, False))
     return res
 
-def agregar_titulo_1(doc, texto, page_break=True):
+def agregar_titulo_1(doc, texto, page_break=True, incluir_en_toc=True):
     """Nivel 1: Centrado, Negrita, Mayúsculas, 14 pt, Times New Roman."""
     p = doc.add_paragraph()
     if page_break:
         p.paragraph_format.page_break_before = True
+    p.paragraph_format.keep_with_next = True
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(14)
     p.paragraph_format.space_after = Pt(14)
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Inches(0)
+    if incluir_en_toc:
+        pPr = p._p.get_or_add_pPr()
+        pPr.append(parse_xml(r'<w:outlineLvl %s w:val="0"/>' % nsdecls('w')))
     run = p.add_run(texto.upper())
     run.font.name = 'Times New Roman'
     run.font.size = Pt(14)
     run.font.bold = True
     return p
 
-def agregar_titulo_2(doc, texto):
+def agregar_titulo_2(doc, texto, incluir_en_toc=True):
     """Nivel 2: Alineado a la izquierda, Negrita, 12 pt, Times New Roman."""
     p = doc.add_paragraph()
+    p.paragraph_format.keep_with_next = True
     p.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p.paragraph_format.space_before = Pt(12)
     p.paragraph_format.space_after = Pt(6)
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Inches(0)
+    if incluir_en_toc:
+        pPr = p._p.get_or_add_pPr()
+        pPr.append(parse_xml(r'<w:outlineLvl %s w:val="1"/>' % nsdecls('w')))
     run = p.add_run(texto)
     run.font.name = 'Times New Roman'
     run.font.size = Pt(12)
     run.font.bold = True
     return p
 
-def agregar_titulo_3(doc, texto):
+def agregar_titulo_3(doc, texto, incluir_en_toc=True):
     """Nivel 3: Alineado a la izquierda, Negrita Cursiva, 12 pt, Times New Roman."""
     p = doc.add_paragraph()
+    p.paragraph_format.keep_with_next = True
     p.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p.paragraph_format.space_before = Pt(8)
     p.paragraph_format.space_after = Pt(4)
+    p.paragraph_format.line_spacing = 1.5
+    p.paragraph_format.first_line_indent = Inches(0)
+    if incluir_en_toc:
+        pPr = p._p.get_or_add_pPr()
+        pPr.append(parse_xml(r'<w:outlineLvl %s w:val="2"/>' % nsdecls('w')))
+    run = p.add_run(texto)
+    run.font.name = 'Times New Roman'
+    run.font.size = Pt(12)
+    run.font.bold = True
+    run.font.italic = True
+    return p
+
+def agregar_titulo_4(doc, texto):
+    """Nivel 4: Alineado a la izquierda, Negrita Cursiva, 12 pt, Times New Roman."""
+    p = doc.add_paragraph()
+    p.paragraph_format.keep_with_next = True
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p.paragraph_format.space_before = Pt(6)
+    p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Inches(0)
     run = p.add_run(texto)
@@ -182,10 +212,15 @@ def agregar_referencia_apa7(doc, texto):
         run.font.italic = r_italic
     return p
 
-def formatear_tabla_apa7(table, col_widths=None):
-    """Formatea una tabla según APA 7 (líneas horizontales canónicas, sin verticales, repetición de encabezado)."""
+def formatear_tabla_apa7(table, col_widths=None, font_size_pt=10):
+    """Formatea una tabla según APA 7 (líneas horizontales canónicas, sin verticales, repetición de encabezado y cantSplit)."""
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     tblPr = table._tbl.tblPr
+    tblpPr = tblPr.find(qn('w:tblpPr'))
+    if tblpPr is not None:
+        tblPr.remove(tblpPr)
+    for b in tblPr.findall(qn('w:tblBorders')):
+        tblPr.remove(b)
     tblBorders = parse_xml(
         r'<w:tblBorders %s>'
         r'  <w:top w:val="single" w:sz="6" w:space="0" w:color="000000"/>'
@@ -201,9 +236,12 @@ def formatear_tabla_apa7(table, col_widths=None):
     if len(table.rows) > 0:
         header_tr = table.rows[0]._tr
         trPr = header_tr.get_or_add_trPr()
-        trPr.append(parse_xml(r'<w:tblHeader %s/>' % nsdecls('w')))
+        if trPr.find(qn('w:tblHeader')) is None:
+            trPr.append(parse_xml(r'<w:tblHeader %s/>' % nsdecls('w')))
         for cell in table.rows[0].cells:
             tcPr = cell._tc.get_or_add_tcPr()
+            for b in tcPr.findall(qn('w:tcBorders')):
+                tcPr.remove(b)
             tcBorders = parse_xml(
                 r'<w:tcBorders %s>'
                 r'  <w:bottom w:val="single" w:sz="6" w:space="0" w:color="000000"/>'
@@ -212,6 +250,9 @@ def formatear_tabla_apa7(table, col_widths=None):
             tcPr.append(tcBorders)
 
     for r_idx, row in enumerate(table.rows):
+        trPr = row._tr.get_or_add_trPr()
+        if trPr.find(qn('w:cantSplit')) is None:
+            trPr.append(parse_xml(r'<w:cantSplit %s/>' % nsdecls('w')))
         for c_idx, cell in enumerate(row.cells):
             cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
             if col_widths and c_idx < len(col_widths):
@@ -221,103 +262,295 @@ def formatear_tabla_apa7(table, col_widths=None):
                 p.paragraph_format.space_before = Pt(3)
                 p.paragraph_format.space_after = Pt(3)
                 p.paragraph_format.first_line_indent = Inches(0)
+                if r_idx == 0:
+                    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
                 for run in p.runs:
                     run.font.name = 'Times New Roman'
-                    run.font.size = Pt(10)
+                    run.font.size = Pt(font_size_pt)
                     if r_idx == 0:
                         run.font.bold = True
 
 def agregar_encabezado_tabla_apa7(doc, numero, titulo):
-    p_num = doc.add_paragraph()
-    p_num.paragraph_format.space_before = Pt(12)
-    p_num.paragraph_format.space_after = Pt(2)
-    p_num.paragraph_format.line_spacing = 1.0
-    p_num.paragraph_format.first_line_indent = Inches(0)
-    run_num = p_num.add_run(f"Tabla {numero}")
-    run_num.font.name = 'Times New Roman'
-    run_num.font.size = Pt(10)
-    run_num.font.bold = True
+    """
+    Rótulo APA 7 con campo nativo SEQ Tabla \* ARABIC para auto-detección en TOC de Ilustraciones.
+    Párrafo con formato: 'Tabla ' + [SEQ Tabla \* ARABIC] + ' ' + [titulo].
+    """
+    p = doc.add_paragraph()
+    p.paragraph_format.keep_with_next = True
+    p.paragraph_format.space_before = Pt(12)
+    p.paragraph_format.space_after = Pt(4)
+    p.paragraph_format.line_spacing = 1.0
+    p.paragraph_format.first_line_indent = Inches(0)
 
-    p_tit = doc.add_paragraph()
-    p_tit.paragraph_format.space_before = Pt(0)
-    p_tit.paragraph_format.space_after = Pt(4)
-    p_tit.paragraph_format.line_spacing = 1.0
-    p_tit.paragraph_format.first_line_indent = Inches(0)
-    run_tit = p_tit.add_run(titulo)
+    # 1. Rótulo 'Tabla '
+    run_lbl = p.add_run("Tabla ")
+    run_lbl.font.name = 'Times New Roman'
+    run_lbl.font.size = Pt(10)
+    run_lbl.font.bold = True
+
+    # 2. Campo complejo SEQ Tabla \* ARABIC con número en caché
+    num_str = str(numero).lower().replace("tabla", "").strip() if "tabla" in str(numero).lower() else str(numero).strip()
+    r_begin = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:fldChar w:fldCharType="begin"/></w:r>' % nsdecls('w'))
+    p._p.append(r_begin)
+    r_instr = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:instrText xml:space="preserve"> SEQ Tabla \* ARABIC </w:instrText></w:r>' % nsdecls('w'))
+    p._p.append(r_instr)
+    r_sep = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:fldChar w:fldCharType="separate"/></w:r>' % nsdecls('w'))
+    p._p.append(r_sep)
+    r_val = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/><w:noProof/></w:rPr><w:t>%s</w:t></w:r>' % (nsdecls('w'), num_str))
+    p._p.append(r_val)
+    r_end = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r>' % nsdecls('w'))
+    p._p.append(r_end)
+
+    # 3. Separador y título en cursiva
+    run_sep = p.add_run(" ")
+    run_sep.font.name = 'Times New Roman'
+    run_sep.font.size = Pt(10)
+
+    run_tit = p.add_run(titulo)
     run_tit.font.name = 'Times New Roman'
     run_tit.font.size = Pt(10)
     run_tit.font.italic = True
+    return p
 
 def agregar_nota_tabla_apa7(doc, texto_nota):
     p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p.paragraph_format.space_before = Pt(4)
     p.paragraph_format.space_after = Pt(12)
     p.paragraph_format.line_spacing = 1.0
     p.paragraph_format.first_line_indent = Inches(0)
+    nota_limpia = str(texto_nota).strip()
+    if nota_limpia.startswith("Nota."):
+        nota_limpia = nota_limpia[5:].strip()
+    elif nota_limpia.startswith("*Nota.*"):
+        nota_limpia = nota_limpia[7:].strip()
     run_etiqueta = p.add_run("Nota. ")
     run_etiqueta.font.name = 'Times New Roman'
-    run_etiqueta.font.size = Pt(9)
+    run_etiqueta.font.size = Pt(9.5)
     run_etiqueta.font.italic = True
-    run_texto = p.add_run(texto_nota)
-    run_texto.font.name = 'Times New Roman'
-    run_texto.font.size = Pt(9)
+    for r_texto, r_bold, r_italic in procesar_formato_texto(nota_limpia):
+        run_texto = p.add_run(r_texto)
+        run_texto.font.name = 'Times New Roman'
+        run_texto.font.size = Pt(9.5)
+        run_texto.font.bold = r_bold
+        run_texto.font.italic = r_italic
 
-def agregar_tabla_datos(doc, numero, titulo, encabezados, filas, nota=None, col_widths=None):
+def agregar_tabla_datos(doc, numero, titulo, encabezados, filas, nota=None, col_widths=None, font_size_pt=10):
     agregar_encabezado_tabla_apa7(doc, numero, titulo)
     tbl = doc.add_table(rows=len(filas) + 1, cols=len(encabezados))
     for c_idx, h_text in enumerate(encabezados):
         cell = tbl.rows[0].cells[c_idx]
-        cell.text = h_text
+        cell.text = str(h_text)
     for r_idx, fila in enumerate(filas):
         for c_idx, val in enumerate(fila):
             cell = tbl.rows[r_idx + 1].cells[c_idx]
-            cell.text = str(val)
-    formatear_tabla_apa7(tbl, col_widths=col_widths)
+            p = cell.paragraphs[0]
+            p.text = ""
+            for r_texto, r_bold, r_italic in procesar_formato_texto(str(val)):
+                run = p.add_run(r_texto)
+                run.font.name = 'Times New Roman'
+                run.font.size = Pt(font_size_pt)
+                run.font.bold = r_bold
+                run.font.italic = r_italic
+    formatear_tabla_apa7(tbl, col_widths=col_widths, font_size_pt=font_size_pt)
     if nota:
         agregar_nota_tabla_apa7(doc, nota)
+    return tbl
 
-def agregar_figura_apa7(doc, numero, titulo, ruta_imagen, texto_nota, ancho_in=5.8):
-    p_num = doc.add_paragraph()
-    p_num.paragraph_format.space_before = Pt(12)
-    p_num.paragraph_format.space_after = Pt(2)
-    p_num.paragraph_format.line_spacing = 1.0
-    p_num.paragraph_format.first_line_indent = Inches(0)
-    run_num = p_num.add_run(f"Figura {numero}")
-    run_num.font.name = 'Times New Roman'
-    run_num.font.size = Pt(10)
-    run_num.font.bold = True
+def agregar_figura_apa7(doc, numero, titulo, ruta_imagen, texto_nota, ancho_in=5.5, alto_max_in=5.2):
+    """
+    Inserta una figura APA 7 con campo nativo SEQ Figura \* ARABIC.
+    """
+    p = doc.add_paragraph()
+    p.paragraph_format.keep_with_next = True
+    p.paragraph_format.space_before = Pt(12)
+    p.paragraph_format.space_after = Pt(4)
+    p.paragraph_format.line_spacing = 1.0
+    p.paragraph_format.first_line_indent = Inches(0)
 
-    p_tit = doc.add_paragraph()
-    p_tit.paragraph_format.space_before = Pt(0)
-    p_tit.paragraph_format.space_after = Pt(6)
-    p_tit.paragraph_format.line_spacing = 1.0
-    p_tit.paragraph_format.first_line_indent = Inches(0)
-    run_tit = p_tit.add_run(titulo)
+    # 1. Rótulo 'Figura '
+    run_lbl = p.add_run("Figura ")
+    run_lbl.font.name = 'Times New Roman'
+    run_lbl.font.size = Pt(10)
+    run_lbl.font.bold = True
+
+    # 2. Campo complejo SEQ Figura \* ARABIC con número en caché
+    num_str = str(numero).lower().replace("figura", "").strip() if "figura" in str(numero).lower() else str(numero).strip()
+    r_begin = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:fldChar w:fldCharType="begin"/></w:r>' % nsdecls('w'))
+    p._p.append(r_begin)
+    r_instr = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:instrText xml:space="preserve"> SEQ Figura \* ARABIC </w:instrText></w:r>' % nsdecls('w'))
+    p._p.append(r_instr)
+    r_sep = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:fldChar w:fldCharType="separate"/></w:r>' % nsdecls('w'))
+    p._p.append(r_sep)
+    r_val = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/><w:noProof/></w:rPr><w:t>%s</w:t></w:r>' % (nsdecls('w'), num_str))
+    p._p.append(r_val)
+    r_end = parse_xml(r'<w:r %s><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r>' % nsdecls('w'))
+    p._p.append(r_end)
+
+    # 3. Separador y título en cursiva
+    run_sep = p.add_run(" ")
+    run_sep.font.name = 'Times New Roman'
+    run_sep.font.size = Pt(10)
+
+    run_tit = p.add_run(titulo)
     run_tit.font.name = 'Times New Roman'
     run_tit.font.size = Pt(10)
     run_tit.font.italic = True
 
+    # 4. Imagen centrada
     p_img = doc.add_paragraph()
+    p_img.paragraph_format.keep_with_next = True
     p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_img.paragraph_format.space_before = Pt(4)
     p_img.paragraph_format.space_after = Pt(4)
     p_img.paragraph_format.first_line_indent = Inches(0)
     if os.path.exists(ruta_imagen):
-        p_img.add_run().add_picture(ruta_imagen, width=Inches(ancho_in))
+        ancho_final = min(float(ancho_in), 5.9)
+        try:
+            from PIL import Image
+            with Image.open(ruta_imagen) as im:
+                w_px, h_px = im.size
+                if w_px > 0 and h_px > 0 and alto_max_in:
+                    alto_estimado = ancho_final * (h_px / w_px)
+                    if alto_estimado > alto_max_in:
+                        ancho_final = alto_max_in * (w_px / h_px)
+        except Exception:
+            pass
+        p_img.add_run().add_picture(ruta_imagen, width=Inches(ancho_final))
     else:
         run_alt = p_img.add_run(f"[RECURSO GRÁFICO OFICIAL: {os.path.basename(ruta_imagen)}]")
         run_alt.font.name = 'Times New Roman'
         run_alt.font.italic = True
 
+    # 5. Nota de figura
     p_nota = doc.add_paragraph()
+    p_nota.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p_nota.paragraph_format.space_before = Pt(4)
     p_nota.paragraph_format.space_after = Pt(12)
     p_nota.paragraph_format.line_spacing = 1.0
     p_nota.paragraph_format.first_line_indent = Inches(0)
+    nota_limpia = str(texto_nota).strip()
+    if nota_limpia.startswith("Nota."):
+        nota_limpia = nota_limpia[5:].strip()
+    elif nota_limpia.startswith("*Nota.*"):
+        nota_limpia = nota_limpia[7:].strip()
     run_n_lbl = p_nota.add_run("Nota. ")
     run_n_lbl.font.name = 'Times New Roman'
-    run_n_lbl.font.size = Pt(9)
+    run_n_lbl.font.size = Pt(9.5)
     run_n_lbl.font.italic = True
-    run_n_txt = p_nota.add_run(texto_nota)
-    run_n_txt.font.name = 'Times New Roman'
-    run_n_txt.font.size = Pt(9)
+    for r_texto, r_bold, r_italic in procesar_formato_texto(nota_limpia):
+        run_n_txt = p_nota.add_run(r_texto)
+        run_n_txt.font.name = 'Times New Roman'
+        run_n_txt.font.size = Pt(9.5)
+        run_n_txt.font.bold = r_bold
+        run_n_txt.font.italic = r_italic
+    return p
+
+def agregar_indice_contenido_nativo(doc):
+    """
+    Inserta un bloque <w:sdt> nativo de Word para Tabla de Contenido
+    con instrucción de campo complejo: TOC \\o "1-3" \\h \\z \\u
+    """
+    p_temp = doc.add_paragraph()
+    p_temp.paragraph_format.space_before = Pt(6)
+    p_temp.paragraph_format.space_after = Pt(6)
+    p_temp.paragraph_format.line_spacing = 1.15
+    p_temp.paragraph_format.first_line_indent = Inches(0)
+
+    sdt_xml = f"""<w:sdt {nsdecls('w')}>
+      <w:sdtPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:docPartObj>
+          <w:docPartGallery w:val="Table of Contents"/>
+          <w:docPartUnique/>
+        </w:docPartObj>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="TDC1"/>
+            <w:tabs>
+              <w:tab w:val="right" w:leader="dot" w:pos="8921"/>
+            </w:tabs>
+            <w:spacing w:line="360" w:lineRule="auto" w:before="0" w:after="0"/>
+            <w:ind w:firstLine="0" w:left="0" w:right="0"/>
+          </w:pPr>
+          <w:r><w:fldChar w:fldCharType="begin"/></w:r>
+          <w:r><w:instrText xml:space="preserve"> TOC \\o "1-3" \\h \\z \\u </w:instrText></w:r>
+          <w:r><w:fldChar w:fldCharType="separate"/></w:r>
+          <w:r><w:fldChar w:fldCharType="end"/></w:r>
+        </w:p>
+      </w:sdtContent>
+    </w:sdt>"""
+    sdt_elem = parse_xml(sdt_xml)
+    p_temp._p.addprevious(sdt_elem)
+    doc._body._body.remove(p_temp._p)
+
+def agregar_indice_tablas_nativo(doc):
+    """
+    Inserta el campo complejo nativo TOC \\h \\z \\c "Tabla" con tabulación derecha y puntos.
+    """
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(6)
+    p.paragraph_format.space_after = Pt(6)
+    p.paragraph_format.line_spacing = 1.15
+    p.paragraph_format.first_line_indent = Inches(0)
+
+    pPr = p._p.get_or_add_pPr()
+    tabs_xml = parse_xml(r'<w:tabs %s><w:tab w:val="right" w:leader="dot" w:pos="8921"/></w:tabs>' % nsdecls('w'))
+    pPr.append(tabs_xml)
+
+    r_b = parse_xml(r'<w:r %s><w:fldChar w:fldCharType="begin"/></w:r>' % nsdecls('w'))
+    r_i = parse_xml(r'<w:r %s><w:instrText xml:space="preserve"> TOC \h \z \c "Tabla" </w:instrText></w:r>' % nsdecls('w'))
+    r_s = parse_xml(r'<w:r %s><w:fldChar w:fldCharType="separate"/></w:r>' % nsdecls('w'))
+    r_e = parse_xml(r'<w:r %s><w:fldChar w:fldCharType="end"/></w:r>' % nsdecls('w'))
+    p._p.append(r_b)
+    p._p.append(r_i)
+    p._p.append(r_s)
+    p._p.append(r_e)
+    return p
+
+def agregar_indice_figuras_nativo(doc):
+    """
+    Inserta el campo complejo nativo TOC \\h \\z \\c "Figura" con tabulación derecha y puntos.
+    """
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(6)
+    p.paragraph_format.space_after = Pt(6)
+    p.paragraph_format.line_spacing = 1.15
+    p.paragraph_format.first_line_indent = Inches(0)
+
+    pPr = p._p.get_or_add_pPr()
+    tabs_xml = parse_xml(r'<w:tabs %s><w:tab w:val="right" w:leader="dot" w:pos="8921"/></w:tabs>' % nsdecls('w'))
+    pPr.append(tabs_xml)
+
+    r_b = parse_xml(r'<w:r %s><w:fldChar w:fldCharType="begin"/></w:r>' % nsdecls('w'))
+    r_i = parse_xml(r'<w:r %s><w:instrText xml:space="preserve"> TOC \h \z \c "Figura" </w:instrText></w:r>' % nsdecls('w'))
+    r_s = parse_xml(r'<w:r %s><w:fldChar w:fldCharType="separate"/></w:r>' % nsdecls('w'))
+    r_e = parse_xml(r'<w:r %s><w:fldChar w:fldCharType="end"/></w:r>' % nsdecls('w'))
+    p._p.append(r_b)
+    p._p.append(r_i)
+    p._p.append(r_s)
+    p._p.append(r_e)
+    return p
+
+def agregar_ecuacion_omml(doc, mathml_str, numero_eq=None):
+    """Inserta un párrafo centrado con una ecuación OMML nativa de Word a partir de MathML."""
+    from docx_quirurgico import mathml_to_omml
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(6)
+    p.paragraph_format.space_after = Pt(6)
+    p.paragraph_format.line_spacing = 1.15
+    p.paragraph_format.first_line_indent = Inches(0)
+    omml_elem = mathml_to_omml(mathml_str)
+    p._p.append(omml_elem)
+    if numero_eq is not None:
+        run_num = p.add_run(f"    ({numero_eq})")
+        run_num.font.name = 'Times New Roman'
+        run_num.font.size = Pt(12)
+    return p

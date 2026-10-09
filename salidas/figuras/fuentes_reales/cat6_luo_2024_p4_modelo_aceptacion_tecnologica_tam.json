@@ -1,0 +1,39 @@
+{
+ "version_extractor": 1,
+ "archivo_png": "figura_p0004_1.png",
+ "fuente": {
+  "archivo": "Luo - 2024 - role-perceived-ease-use-usefulness.pdf",
+  "sha256": "0b5571bad13b0706cadce39e9ab3a871ddc1bae10c908de560972f8600ad6a15"
+ },
+ "pagina_fisica": 4,
+ "etiqueta_impresa": "4",
+ "metodo_etiqueta": "etiqueta_pdf",
+ "tipo": "figura",
+ "numero": "1",
+ "leyenda_textual": "Fig. 1 Theoretical framework for the adoption of health information system.",
+ "bbox_pt": [
+  307.13,
+  46.8,
+  548.2,
+  177.2
+ ],
+ "bbox_px": [
+  1280,
+  195,
+  2284,
+  738
+ ],
+ "dpi": 300,
+ "ancho_px": 1006,
+ "alto_px": 545,
+ "metodo_deteccion": "raster",
+ "confianza": "alta",
+ "confianza_criterio": "geométrica (distancia, posición y ambigüedad leyenda-región); no implica revisión visual",
+ "notas": [],
+ "requiere_ocr": false,
+ "ocr_disponible": false,
+ "cita_modo": "adaptado",
+ "cita_sugerida": "Nota. Adaptado de *Role of perceived ease of use, usefulness, and financial strength on the adoption of health information systems: The moderating role of hospital size* (p. 4), por Luo, J., Ahmad, S. F., Alyaemeni, A., Ou, Y., Irshad, M., Alyafi-Alzahri, R., Alsanie, G., & Unnisa, S. T., 2024 (https://doi.org/10.1057/s41599-024-02976-9).",
+ "aviso": "Verificar licencia/permiso de reproducción de la fuente y contrastar visualmente el recorte antes de incluirlo en el informe.",
+ "fecha_extraccion": "2026-10-08"
+}

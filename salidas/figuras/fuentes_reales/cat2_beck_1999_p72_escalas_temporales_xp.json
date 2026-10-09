@@ -1,0 +1,38 @@
+{
+ "version_extractor": 1,
+ "archivo_png": "figura_p0003_1.png",
+ "fuente": {
+  "archivo": "Embracing change with extreme programming.pdf",
+  "sha256": "20d9116e32c2e6a3177d089c5beb70d89aabadf17fa87478839dfc9bb50b0fce"
+ },
+ "pagina_fisica": 3,
+ "etiqueta_impresa": "72",
+ "metodo_etiqueta": "numero_visible",
+ "tipo": "figura",
+ "numero": "2",
+ "leyenda_textual": "Figure 2. XP according to various timescales. At the scale of months and years, you have the stories in this release and then the stories in future releases. At the scale of weeks and months, you have stories in this iteration and then the stories remaining in this release. At the scale of days and weeks, you have the task you are working on now and then the rest of the tasks in the iteration. And at the scale of minutes and days, you have the test case you are working on now and then the rest of the test cases that you can imagine.",
+ "bbox_pt": [
+  103.75,
+  460.42,
+  556.48,
+  681.27
+ ],
+ "bbox_px": [
+  432,
+  1918,
+  2319,
+  2839
+ ],
+ "dpi": 300,
+ "ancho_px": 1887,
+ "alto_px": 921,
+ "metodo_deteccion": "raster+vectorial",
+ "confianza": "alta",
+ "notas": [],
+ "requiere_ocr": false,
+ "ocr_disponible": false,
+ "cita_modo": "adaptado",
+ "cita_sugerida": "Nota. Adaptado de *Embracing change with extreme programming [VERIFICAR: título tomado de los metadatos del PDF]* (p. 72), por K. Beck [VERIFICAR: autor tomado de los metadatos del PDF], [VERIFICAR: año] (https://doi.org/10.1109/2.796139) [VERIFICAR: DOI detectado automáticamente en el texto].",
+ "aviso": "Verificar licencia/permiso de reproducción de la fuente y contrastar visualmente el recorte antes de incluirlo en el informe.",
+ "fecha_extraccion": "2026-09-30"
+}

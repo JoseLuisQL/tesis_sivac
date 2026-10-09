@@ -7,7 +7,7 @@ content = []
 
 content.append("""# INFORME DE AUDITORÍA TÉCNICA Y DOCUMENTAL: CAPÍTULOS I Y II
 **Documento Auditado:** `salidas/documentos/PROYECTO_TESIS_ACTUALIZADO_V3_NORMALIZADO.docx`  
-**Fase de la Granja:** F3 — Diagnóstico, Estructura y Verificación Bibliográfica  
+**Fase de la Granja:** F3 - Diagnóstico, Estructura y Verificación Bibliográfica
 **Squad Responsable:** Squad A (Diagnóstico e Ingesta) / Squad E (Redacción, Estilo y Maquetación Editorial)  
 **Agente Auditor:** `analista-documental`  
 **Fecha de Emisión:** 2026-10-07  

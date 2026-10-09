@@ -210,6 +210,8 @@ def _leer_docx(ruta: Path) -> list[dict]:
             continue
         if not nivel and len(texto) < 70 and _RE_ENC_REFERENCIAS.match(texto):
             nivel = 1
+        if not nivel and len(texto) < 70 and re.match(r"^(?:anexos?|ap[eé]ndices?)\b", texto, re.I):
+            nivel = 1
         salida.append({"n": n, "texto": texto, "nivel": nivel, "raw": texto})
     for t in d.tables:
         for fila in t.rows:
@@ -237,7 +239,12 @@ def dividir_cuerpo_y_referencias(lineas: list[dict]) -> tuple[list[dict], list[d
     nivel = lineas[idx]["nivel"] or 1
     fin = len(lineas)
     for j in range(idx + 1, len(lineas)):
+        t_clean = _limpiar_md(lineas[j]["texto"])
+        es_enc_j = lineas[j]["nivel"] > 0 or (len(t_clean) < 70 and (t_clean.isupper() or t_clean.startswith("#")))
         if 0 < lineas[j]["nivel"] <= nivel:
+            fin = j
+            break
+        if es_enc_j and re.match(r"^(?:anexos?|ap[eé]ndices?|cap[ií]tulo)\b", t_clean, re.I):
             fin = j
             break
     return lineas[:idx] + lineas[fin:], lineas[idx + 1:fin], True
@@ -445,6 +452,9 @@ def parsear_referencias(lineas: list[dict]) -> list[dict]:
                 actual = []
             continue
         if re.match(r"^\s*(?:\d+[.)]|[-*+])\s+", t) and actual:
+            entradas.append(actual)
+            actual = []
+        elif _RE_ANIO_REF.search(t) and actual:
             entradas.append(actual)
             actual = []
         actual.append({"n": ln["n"], "t": re.sub(r"^\s*(?:\d+[.)]|[-*+])\s+", "", t)})

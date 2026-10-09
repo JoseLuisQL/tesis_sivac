@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
-SIVAC-THESIS-LAB — MOTOR QUIRÚRGICO DE MANIPULACIÓN Y FORMATEO DOCX / OPENXML
+SIVAC-THESIS-LAB - MOTOR QUIRÚRGICO DE MANIPULACIÓN Y FORMATEO DOCX / OPENXML
 ================================================================================
 Módulo centralizado y reutilizable para maquetación editorial en Microsoft Word,
 cumpliendo estrictamente con APA 7.ª edición y la normativa institucional UNAJMA.

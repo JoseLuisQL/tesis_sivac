@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Actualizador Quirúrgico Limpio v2.2 de PROYECTO_TESIS.docx
+SIVAC-THESIS-LAB - Actualizador Quirúrgico Limpio v2.2 de PROYECTO_TESIS.docx
 Soporte Nativo de Fórmulas Matemáticas de Word (OpenXML OMML / MML2OMML.XSL),
 erradicación total de fugas booleanas ("TrueFalse") y normalización editorial
 estricta bajo norma APA 7.ª edición (UNAJMA).
@@ -560,7 +560,7 @@ def procesar_actualizacion_v2_2():
     print("Insertando ecuaciones nativas OMML en el cuerpo capitular...")
 
     # 4.1 Esquema del diseño preexperimental (P413)
-    # Reemplazar texto simple 'G: O₁ — X — O₂' por ecuación OMML centrada
+    # Reemplazar texto simple 'G: O₁ - X - O₂' por ecuación OMML centrada
     p413 = doc.paragraphs[413]
     actualizar_parrafo(p413, [], align=WD_ALIGN_PARAGRAPH.CENTER, space_before=Pt(6), space_after=Pt(6), line_spacing=1.15, indent=Inches(0))
     p413._p.append(mathml_to_omml(FORMULAS_MML["diseno_preexp"]))

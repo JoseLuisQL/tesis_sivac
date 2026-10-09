@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Editor quirúrgico de .docx con normas APA 7 / UNAJMA.
+SIVAC-THESIS-LAB - Editor quirúrgico de .docx con normas APA 7 / UNAJMA.
 
 Edita una COPIA versionada del informe sin romper formato, secciones, numeración,
 campos ni imágenes. Nunca modifica el original: `destino` debe ser distinto de `origen`

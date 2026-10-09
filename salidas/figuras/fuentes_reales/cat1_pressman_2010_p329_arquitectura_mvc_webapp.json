@@ -1,0 +1,41 @@
+{
+ "version_extractor": 1,
+ "archivo_png": "figura_p0361_1.png",
+ "fuente": {
+  "archivo": "Pressman - Ingenieria del Software. Un Enfoque Practico.pdf",
+  "sha256": "e97f82057d7bae390126e1d731fa06ffb1eee41e706e577496323751f0a5aabf"
+ },
+ "pagina_fisica": 361,
+ "etiqueta_impresa": "329",
+ "metodo_etiqueta": "etiqueta_pdf",
+ "tipo": "figura",
+ "numero": "13.8",
+ "leyenda_textual": "FIGURA 13.8",
+ "bbox_pt": [
+  170.53,
+  81.96,
+  555.18,
+  306.25
+ ],
+ "bbox_px": [
+  711,
+  341,
+  2313,
+  1276
+ ],
+ "dpi": 300,
+ "ancho_px": 1604,
+ "alto_px": 936,
+ "metodo_deteccion": "vectorial",
+ "confianza": "media",
+ "confianza_criterio": "geométrica (distancia, posición y ambigüedad leyenda-región); no implica revisión visual",
+ "notas": [
+  "leyenda lateral de margen (región a la derecha de la leyenda) alineada verticalmente con ella"
+ ],
+ "requiere_ocr": false,
+ "ocr_disponible": false,
+ "cita_modo": "adaptado",
+ "cita_sugerida": "Nota. Adaptado de *Ingeniería del software: Un enfoque práctico (7.ª ed.)* (p. 329), por Pressman, R. S., 2010, McGraw-Hill Interamericana.",
+ "aviso": "Verificar licencia/permiso de reproducción de la fuente y contrastar visualmente el recorte antes de incluirlo en el informe.",
+ "fecha_extraccion": "2026-10-08"
+}

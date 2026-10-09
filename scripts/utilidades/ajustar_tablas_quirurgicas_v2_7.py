@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Ajuste Quirúrgico y Tipográfico Maestro Definitivo v2.7
+SIVAC-THESIS-LAB - Ajuste Quirúrgico y Tipográfico Maestro Definitivo v2.7
 Logra la maquetación perfecta de Tabla 12 en Landscape (Página 51):
   - Fórmulas inline integradas con texto en un mismo párrafo para máxima compacidad y legibilidad.
   - Tipografía Times New Roman 7.2 pt, interlineado natural y amplio (200 dxa = 10 pt).

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Actualizador Quirúrgico Limpio v2.1 de PROYECTO_TESIS.docx
+SIVAC-THESIS-LAB - Actualizador Quirúrgico Limpio v2.1 de PROYECTO_TESIS.docx
 Elimina absolutamente todos los tokens artificiales (cero DEC-007, cero [C1]-[C8])
 y sustituye la redacción robótica/defensiva por prosa académica formal, sobria y humana
 para la Universidad Nacional José María Arguedas (UNAJMA).

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
-SIVAC-THESIS-LAB — COMPILADOR QUIRÚRGICO DE PROYECTO DE TESIS V3.0
+SIVAC-THESIS-LAB - COMPILADOR QUIRÚRGICO DE PROYECTO DE TESIS V3.0
 ================================================================================
 Universidad Nacional José María Arguedas (UNAJMA)
 Escuela Profesional de Ingeniería de Sistemas (EPIS)

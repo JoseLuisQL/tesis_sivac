@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Ajuste Quirúrgico y Tipográfico de Alta Definición v2.6
+SIVAC-THESIS-LAB - Ajuste Quirúrgico y Tipográfico de Alta Definición v2.6
 Perfecciona la legibilidad y espaciado de Tabla 12 en Landscape (Página 51):
   - Fuente 7.0 pt, interlineado 190 dxa (9.5 pt), space_before 10 dxa, space_after 20 dxa.
   - Corrige acento en encabezado "HIPÓTESIS".
