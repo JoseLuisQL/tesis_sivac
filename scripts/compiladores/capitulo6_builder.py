@@ -133,7 +133,7 @@ def construir_capitulo6_y_final(doc):
         "concuerda con Shen et al. (2024), quienes reportaron un aumento estadísticamente significativo en la "
         "satisfacción global del servicio de inmunización del 89.39% al 96.71% (p menor a 0.001) tras la "
         "implementación de flujos digitales, y con las investigaciones de Oliveira et al. (2020) sobre el Sistema "
-        "de Información del Programa Nacional de Inmunizaciones en Brasil y de Luo et al. (2024) acerca de la "
+        "de Información del Programa Nacional de Inmunizaciones en Brasil, así como con el estudio de Luo et al. (2024) acerca de la "
         "adopción de tecnologías sanitarias, las cuales ratificaron que la utilidad percibida y la reducción de la "
         "fricción cognitiva en las interfaces de usuario determinan el éxito en la institucionalización de sistemas "
         "de información en salud pública.",
