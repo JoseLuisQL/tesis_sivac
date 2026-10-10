@@ -51,16 +51,16 @@ function isForbiddenTarget(filePath) {
 }
 
 // 1. Verificar herramientas de escritura directa
-if (tool === 'Write' || tool === 'Edit') {
+if (tool === 'Write' || tool === 'Edit' || tool === 'Create') {
   const targetPath = toolInput.file_path || toolInput.path || '';
   if (isForbiddenTarget(targetPath)) {
     console.error(`[SEGURIDAD BLOQUEADA] Error: Intento de escritura/edición denegado en ruta protegida de solo lectura: "${targetPath}". (Regla 3.2 SIVAC-THESIS-LAB).`);
-    process.exit(1);
+    process.exit(2);
   }
 }
 
 // 2. Verificar herramientas de ejecución de terminal
-if (tool === 'PowerShell' || tool === 'Bash') {
+if (tool === 'PowerShell' || tool === 'Bash' || tool === 'Execute') {
   const cmd = (toolInput.command || '').toLowerCase();
   const writePatterns = [
     'rm ', 'del ', 'remove-item', 'set-content', 'out-file', 'add-content',
@@ -72,7 +72,7 @@ if (tool === 'PowerShell' || tool === 'Bash') {
 
   if (hasWriteAction && hasForbiddenTarget) {
     console.error(`[SEGURIDAD BLOQUEADA] Error: Comando bloqueado por intentar modificar rutas de solo lectura protegidas (syncova, modelos o proyecto original).`);
-    process.exit(1);
+    process.exit(2);
   }
 }
 

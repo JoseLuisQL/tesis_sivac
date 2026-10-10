@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContratoDeHandoffSubagente",
+  "description": "Esquema formal del reporte de relevo (handoff) emitido por un subagente al Director General",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha del handoff en formato AAAA-MM-DD"
+    },
+    "agente": {
+      "type": "string",
+      "description": "Identificador del subagente emisor"
+    },
+    "fase": {
+      "type": "string",
+      "description": "Fase operativa actual"
+    },
+    "estado": {
+      "type": "string",
+      "enum": ["completado", "parcial", "bloqueado"],
+      "description": "Resultado de la ejecución de la tarea"
+    },
+    "productos_generados": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Rutas de archivos o notas creadas o modificadas"
+    },
+    "hallazgos_clave": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Resumen fáctico de los resultados y evidencias obtenidas"
+    },
+    "pendientes_o_verificar": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Puntos de incertidumbre que requieren validación del tesista"
+    },
+    "riesgos_o_incoherencias": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Conflictos detectados respecto a la matriz de consistencia o normas"
+    },
+    "siguiente_accion_sugerida": {
+      "type": "string",
+      "description": "Próximo paso operativo recomendado"
+    }
+  },
+  "required": [
+    "fecha",
+    "agente",
+    "fase",
+    "estado",
+    "productos_generados",
+    "hallazgos_clave",
+    "pendientes_o_verificar",
+    "siguiente_accion_sugerida"
+  ],
+  "additionalProperties": false
+}

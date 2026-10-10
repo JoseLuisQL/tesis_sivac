@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContratoDeComisionDirectorGeneral",
+  "description": "Esquema formal de asignación de tareas del Director General (Agente GOD) a los subagentes en SIVAC-THESIS-LAB",
+  "type": "object",
+  "properties": {
+    "tarea": {
+      "type": "string",
+      "description": "Acción concreta, específica y acotada"
+    },
+    "fase": {
+      "type": "string",
+      "enum": ["F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10"],
+      "description": "Fase operativa actual según ESTADO_TESIS.md"
+    },
+    "squad": {
+      "type": "string",
+      "enum": [
+        "Squad A (Evidencia y Bibliometría)",
+        "Squad B (Metodología y Psicometría)",
+        "Squad C (Ingeniería de Software SIVAC)",
+        "Squad D (Bioestadística e Inferencia)",
+        "Squad E (Redacción y Maquetación)",
+        "Squad F (Gobernanza, Memoria y Evaluación Externa)"
+      ]
+    },
+    "subagente": {
+      "type": "string",
+      "description": "Identificador exacto del subagente comisionado"
+    },
+    "entradas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Rutas absolutas o relativas de archivos y notas insumo"
+    },
+    "salida_esperada": {
+      "type": "string",
+      "description": "Ruta y formato exacto del archivo o nota resultante"
+    },
+    "restricciones": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Reglas innegociables aplicables (ej. solo lectura, cero invención, etc.)"
+    },
+    "criterio_exito": {
+      "type": "string",
+      "description": "Condición objetiva o métrica de terminación"
+    }
+  },
+  "required": [
+    "tarea",
+    "fase",
+    "squad",
+    "subagente",
+    "entradas",
+    "salida_esperada",
+    "restricciones",
+    "criterio_exito"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,103 @@
+flowchart TD
+    subgraph HumanAuthority ["Capa 0: Autoridad Humana"]
+        TH["Tesista Humano (José Luis Quispe)<br/>[Última Autoridad y Aprobación de Fases]"]
+    end
+
+    subgraph SingleSourceOfTruth ["Capa 1: Fuente Canónica Única (.claude/)"]
+        CL["CLAUDE.md / AGENTS.md<br/>(Reglas Globales y Mapa)"]
+        CA[".claude/agents/*.md<br/>(14 Agentes Especializados)"]
+        CS[".claude/skills/*<br/>(21 Skills Estandarizadas)"]
+        CH[".claude/hooks/*.cjs<br/>(Seguridad y Handoff)"]
+        CM[".mcp.json<br/>(Servidores Compartidos)"]
+    end
+
+    subgraph SyncEngine ["Capa 2: Motor de Sincronización Automática"]
+        SYNC["scripts/sync_factory.py<br/>[Generador Determinista]"]
+    end
+
+    subgraph FactoryTarget ["Capa 3: Capa Generada (.factory/ - NO EDITAR)"]
+        FD[".factory/droids/<br/>(14 Droids Validados)"]
+        FS[".factory/skills/<br/>(Enlace Directorio / Skills)"]
+        FH[".factory/hooks.json<br/>(Hooks con exit code 2)"]
+        FM[".factory/mcp.json<br/>(Configuración de MCPs)"]
+    end
+
+    subgraph Orchestrator ["Capa 4: Hub Central (Agente GOD)"]
+        GOD["director-general<br/>(Sesión Principal en Claude o Droid)"]
+        ET["00_SISTEMA/ESTADO_TESIS.md<br/>(Única Fuente de Verdad del Avance)"]
+    end
+
+    subgraph ExecutionSquads ["Capa 5: Squads Especializados y Validación Cruzada"]
+        direction TB
+        subgraph SquadA ["Squad A: Evidencia y Citas"]
+            IB["investigador-bibliografico"]
+            VI["verificador-integridad"]
+        end
+        subgraph SquadB ["Squad B: Metodología"]
+            GC["guardian-consistencia"]
+            EI["especialista-instrumentos"]
+            EF["especialista-forms"]
+        end
+        subgraph SquadC ["Squad C: Software XP"]
+            IS["ingeniero-sivac (Solo Lectura)"]
+            DXP["documentador-xp"]
+        end
+        subgraph SquadD ["Squad D: Bioestadística"]
+            AE["analista-estadistico"]
+        end
+        subgraph SquadE ["Squad E: Editorial y Compilación"]
+            AD["analista-documental"]
+            RA["redactor-academico"]
+            MD["maquetador-docx"]
+        end
+        subgraph SquadF ["Squad F: Evaluación y Memoria"]
+            CC["curador-cerebro"]
+            JR["jurado-revisor (UNAJMA)"]
+        end
+    end
+
+    subgraph PersistentMemory ["Capa 6: Cerebro Persistente (Obsidian)"]
+        HO["08_SISTEMA/handoffs/<br/>(Notas de Relevo Formateadas)"]
+        BT["08_SISTEMA/bitacoras/<br/>(Registro Histórico por Agente)"]
+        ZET["03_CONCEPTOS / 04_LITERATURA<br/>(Notas Atómicas y Catálogo Zotero)"]
+    end
+
+    subgraph QualityGateAndOutput ["Capa 7: Compilación y Compuertas de Calidad"]
+        SURG["scripts/compiladores/<br/>docx_quirurgico.py"]
+        DOCX["salidas/documentos/<br/>informe_final_vNN.docx"]
+        PDF["salidas/documentos/<br/>informe_final_vNN.pdf"]
+        QG{"Compuerta de Calidad<br/>(QG-0 a QG-9)"}
+    end
+
+    %% Relaciones de sincronización
+    SingleSourceOfTruth -->|"Ejecuta sync"| SYNC
+    SYNC -->|"Genera droids adaptados"| FD
+    SYNC -->|"Enlaza skills"| FS
+    SYNC -->|"Genera hooks"| FH
+    SYNC -->|"Genera mcp.json"| FM
+
+    %% Relaciones de orquestación
+    TH -->|"Directiva / Aprobación"| GOD
+    GOD <-->|"Lee / Actualiza Estado"| ET
+    GOD -->|"Comisión formal vía Task / Agent"| ExecutionSquads
+
+    %% Flujos de trabajo y validación cruzada
+    RA -->|"Borrador capitular"| VI
+    VI -->|"Auditoría 1:1 Citas vs Zotero"| GC
+    DXP -->|"Historias XP / Diagramas"| IS
+    IS -->|"Validación fidelidad syncova"| JR
+    MD -->|"Compilación OpenXML"| SURG
+    SURG -->|"Genera entregables"| DOCX
+    DOCX -->|"Exporta PDF"| PDF
+    PDF -->|"Inspección geométrica"| AD
+
+    %% Registro en Obsidian
+    ExecutionSquads -->|"Deposita handoff"| HO
+    ExecutionSquads -->|"Actualiza bitácora"| BT
+    ExecutionSquads <-->|"Consulta conceptos y fuentes"| ZET
+
+    %% Validación del Jurado y Compuerta
+    JR -->|"Dictamen vigesimal (0-20 pts)"| QG
+    QG -->|"Aprobado sin observaciones"| GOD
+    QG -.->|"2 Rechazos consecutivos"| TH
+    GOD -->|"Presenta entregable aprobado"| TH

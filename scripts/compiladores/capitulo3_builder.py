@@ -138,7 +138,11 @@ def construir_capitulo3(doc):
         "1999, p. 70). A diferencia del modelo lineal en cascada y de los ciclos iterativos convencionales de larga "
         "duración, XP acorta radicalmente los bucles de retroalimentación técnica y funcional, integrando el análisis, "
         "el diseño, la codificación y las pruebas dentro de iteraciones breves con entregas continuas de software "
-        "operativo (Beck, 1999, p. 71; Sommerville, 2016, p. 57) (véase la Figura 3).",
+        "operativo (Beck, 1999, p. 71; Sommerville, 2016, p. 57) (véase la Figura 3). En este ámbito, Kokol (2022) "
+        "comprobó en una revisión sistemática de alcance sobre desarrollo ágil en el sector sanitario que las metodologías "
+        "ágiles entregan soluciones de software médico con mayor rapidez y superior calidad técnica que los enfoques en "
+        "cascada, adaptándose rigurosamente a marcos regulatorios exigentes y resultando idóneas para afrontar requerimientos "
+        "críticos y cambiantes como los vinculados a la logística y distribución de vacunas.",
         sangria=True
     )
 
@@ -195,7 +199,11 @@ def construir_capitulo3(doc):
         "que la adecuación funcional (completitud, corrección y pertinencia de los cálculos clínicos o logísticos), "
         "la usabilidad (reconocibilidad, facilidad de aprendizaje y protección frente a errores humanos de digitación), "
         "la eficiencia temporal de respuesta y la seguridad de los datos constituyen los factores críticos que "
-        "determinan la confiabilidad técnica de la herramienta en los establecimientos sanitarios (véase la Figura 5).",
+        "determinan la confiabilidad técnica de la herramienta en los establecimientos sanitarios (véase la Figura 5). "
+        "De forma convergente en el ámbito peruano, Mamani-Pari et al. (2026) desarrollaron y validaron psicométricamente "
+        "un modelo de evaluación bajo la norma ISO/IEC 25010 alineado con las directivas del Ministerio de Salud, "
+        "demostrando que la operabilidad, la protección contra errores de los usuarios y la adecuación funcional son "
+        "los componentes esenciales que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales.",
         sangria=True
     )
 
@@ -224,7 +232,11 @@ def construir_capitulo3(doc):
         "p. 14; WHO, 2021). Debido a su naturaleza termolábil, las vacunas requieren conservarse de manera ininterrumpida "
         "dentro del rango térmico normado de +2 °C a +8 °C en los almacenes regionales, centros de acopio y "
         "establecimientos de salud del primer nivel de atención, con el fin de preservar su potencia inmunogénica "
-        "hasta el acto de vacunación (Champi Velásquez, 2023, p. 14).",
+        "hasta el acto de vacunación (Champi Velásquez, 2023, p. 14). Al respecto, Gutiérrez-Aguado et al. (2024, "
+        "pp. 73–78) demostraron que en el programa nacional de inmunizaciones del Perú persisten marcadas vulnerabilidades "
+        "en la cadena de frío debido a una obsolescencia de equipos de conservación superior al 60% y a discrepancias "
+        "entre los sistemas patrimoniales del SIGA-MEF y la realidad de los centros de salud, lo que acentúa la "
+        "necesidad de herramientas informáticas ágiles que vinculen los movimientos con la capacidad frigorífica real.",
         sangria=True
     )
     agregar_parrafo(
@@ -258,7 +270,11 @@ def construir_capitulo3(doc):
         "Wasswa et al., 2023). A diferencia de los registros tradicionales basados en libros físicos de kardex y "
         "planillas aisladas, un sistema e-LMIS integra en tiempo real la programación anual de metas, la recepción "
         "de lotes, la validación de existencias y la emisión de órdenes de despacho, optimizando la capacidad de "
-        "respuesta ante campañas regulares y contingencias epidemiológicas (Kigenza et al., 2023).",
+        "respuesta ante campañas regulares y contingencias epidemiológicas (Kigenza et al., 2023). En concordancia con "
+        "ello, Gilbert et al. (2020, p. 562) verificaron en un estudio a gran escala sobre 924 centros sanitarios que la "
+        "implementación de una plataforma digital integrada de registro de inmunizaciones y gestión logística redujo la "
+        "tasa de desabastecimiento de vacunas de 7.1% a 2.1%, comprobando que la deducción automática de inventario por cada "
+        "atención registrada previene pérdidas y consolida la disponibilidad biológica en el primer nivel de atención.",
         sangria=True
     )
     agregar_parrafo(
@@ -347,7 +363,11 @@ def construir_capitulo3(doc):
         "un sistema de información están determinadas por dos constructos fundamentales: la facilidad de uso percibida "
         "(grado en que el operador considera que el uso de la plataforma está libre de esfuerzo) y la utilidad "
         "percibida (grado en que el profesional cree que el sistema optimiza su rendimiento laboral) (Luo et al., "
-        "2024, p. 4) (véase la Figura 9).",
+        "2024, p. 4) (véase la Figura 9). En esta misma línea, Hussain et al. (2025, p. 8) corroboraron en personal "
+        "de enfermería de establecimientos públicos que la facilidad de uso percibida ejerce un efecto predictor directo "
+        "predominante sobre la adopción del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad percibida "
+        "actúa como un mediador significativo (beta = 0.23, p < 0.001), ratificando que el ahorro de tiempo y la reducción "
+        "del esfuerzo de registro potencian de manera directa la satisfacción del usuario de salud.",
         sangria=True
     )
 
@@ -434,7 +454,8 @@ def construir_capitulo3(doc):
         titulo="Dimensiones, indicadores y escalas de medición de la gestión de movimientos de vacunas",
         encabezados=headers_t1,
         filas=filas_t1,
-        nota="Síntesis de la estructura dimensional y operacional de la variable dependiente basada en Dang et al. (2024), Chekol et al. (2023) y Davis (1989)."
+        nota="Síntesis de la estructura dimensional y operacional de la variable dependiente basada en Dang et al. (2024), Chekol et al. (2023) y Davis (1989).",
+        col_widths=[1900, 1900, 3200, 1784]
     )
 
     # ==========================================================================
@@ -569,14 +590,18 @@ def construir_capitulo3(doc):
     agregar_titulo_3(doc, "3.3.1. Fase I: Exploración y planificación de requerimientos")
     agregar_parrafo(
         doc,
-        "El desarrollo de ingeniería del sistema web SIVAC se ejecutó aplicando las cuatro fases de la metodología "
-        "ágil Extreme Programming (XP). Durante la Fase I se estableció la metáfora arquitectónica del sistema, "
-        "denominada «Cadena digital sincronizada de trazabilidad de biológicos», según la cual cada transacción "
-        "de vacunas y jeringas entre el almacén regional, los ocho centros de acopio y los establecimientos de "
-        "salud de Andahuaylas y Chincheros mantiene una continuidad lógica ininterrumpida, análoga a la conservación "
-        "térmica de la cadena de frío física. Asimismo, se conformó el equipo de trabajo definiendo las "
-        "responsabilidades metodológicas y los cuatro perfiles operativos del control de acceso basado en roles "
-        "(RBAC), conforme se detalla en la Tabla 2.",
+        "El desarrollo de ingeniería del sistema web SIVAC se ejecutó aplicando las cuatro fases iterativas de la "
+        "metodología ágil Extreme Programming (XP): planificación, diseño, codificación y pruebas, cuya efectividad "
+        "en el desarrollo de software asistencial fue sustentada por Kokol (2022) al evidenciar que el enfoque centrado "
+        "en historias de usuario optimiza la elicitación de requisitos complejos en salud, y por Inarotul Huda et al. "
+        "(2025), quienes demostraron que las cuatro fases de XP permiten erradicar los cuellos de botella del registro "
+        "manual y reducir sustancialmente los tiempos operativos mediante el desarrollo colaborativo con los usuarios. "
+        "Durante la Fase I se estableció la metáfora arquitectónica del sistema, denominada «Cadena digital sincronizada "
+        "de trazabilidad de biológicos», según la cual cada transacción de vacunas y jeringas entre el almacén regional, "
+        "los ocho centros de acopio y los establecimientos de salud de Andahuaylas y Chincheros mantiene una continuidad "
+        "lógica ininterrumpida, análoga a la conservación térmica de la cadena de frío física. Asimismo, se conformó el "
+        "equipo de trabajo definiendo las responsabilidades metodológicas y los cuatro perfiles operativos del control "
+        "de acceso basado en roles (RBAC), conforme se detalla en la Tabla 2.",
         sangria=True
     )
 
@@ -619,7 +644,8 @@ def construir_capitulo3(doc):
         titulo="Roles del equipo de desarrollo y usuarios operativos del sistema web SIVAC",
         encabezados=headers_t2,
         filas=filas_t2,
-        nota="Estructura de roles técnicos y funcionales implementada en el esquema RBAC de SIVAC."
+        nota="Estructura de roles técnicos y funcionales implementada en el esquema RBAC de SIVAC.",
+        col_widths=[2200, 2400, 4184]
     )
 
     agregar_parrafo(
@@ -657,7 +683,8 @@ def construir_capitulo3(doc):
         titulo="Catálogo de historias de usuario (HU-01 a HU-16) del sistema web SIVAC",
         encabezados=headers_t3,
         filas=filas_t3,
-        nota="Especificación de requerimientos funcionales elaborada durante la Fase I de Extreme Programming (Total: 76 puntos de historia)."
+        nota="Especificación de requerimientos funcionales elaborada durante la Fase I de Extreme Programming (Total: 76 puntos de historia).",
+        col_widths=[800, 1800, 1300, 2784, 800, 600, 700]
     )
 
     # --------------------------------------------------------------------------
@@ -686,7 +713,8 @@ def construir_capitulo3(doc):
         titulo="Plan de entregas (Release Plan) en cuatro iteraciones del sistema web SIVAC",
         encabezados=headers_t4,
         filas=filas_t4,
-        nota="Secuenciación iterativa e incremental ejecutada para completar los 76 puntos de historia del sistema."
+        nota="Secuenciación iterativa e incremental ejecutada para completar los 76 puntos de historia del sistema.",
+        col_widths=[1100, 1100, 1600, 900, 4084]
     )
 
     agregar_parrafo(
@@ -774,7 +802,9 @@ def construir_capitulo3(doc):
         titulo="Diccionario de modelos y tablas físicas de la base de datos PostgreSQL del sistema web SIVAC",
         encabezados=headers_t5,
         filas=filas_t5,
-        nota="Extraído directamente de la especificación física del esquema relacional backend/prisma/schema.prisma."
+        nota="Extraído directamente de la especificación física del esquema relacional backend/prisma/schema.prisma.",
+        col_widths=[1400, 1600, 2900, 2884],
+        font_size_pt=9.5
     )
 
     # --------------------------------------------------------------------------
@@ -846,7 +876,9 @@ def construir_capitulo3(doc):
         titulo="Módulos funcionales, controladores REST, servicios de dominio y componentes React del sistema web SIVAC",
         encabezados=headers_t6,
         filas=filas_t6,
-        nota="Trazabilidad de artefactos de software verificada en el código fuente del sistema SIVAC (syncova)."
+        nota="Trazabilidad de artefactos de software verificada en el código fuente del sistema SIVAC (syncova).",
+        col_widths=[1400, 2200, 2900, 2284],
+        font_size_pt=9.5
     )
 
     agregar_parrafo(
@@ -922,12 +954,14 @@ def construir_capitulo3(doc):
     )
     agregar_parrafo(
         doc,
-        "Complementariamente, se llevaron a cabo las pruebas formales de aceptación con la participación de los "
-        "usuarios responsables de inmunizaciones de la Dirección de Salud Apurímac II, contrastando cada una de "
-        "las dieciséis historias de usuario (HU-01 a HU-16) frente a sus criterios de aceptación en escenarios "
-        "operativos reales. Como se reporta en la Tabla 7, la totalidad de las suites automatizadas y de las "
-        "historias de usuario alcanzó un veredicto de conformidad del 100%, sin defectos críticos ni discrepancias "
-        "aritméticas.",
+        "Complementariamente, se llevaron a cabo las pruebas formales de aceptación con la participación directa de los "
+        "usuarios responsables de inmunizaciones de la Dirección de Salud Apurímac II, contrastando cada una de las "
+        "dieciséis historias de usuario (HU-01 a HU-16) frente a sus criterios de aceptación en escenarios operativos "
+        "reales. Como destacan Kokol (2022) e Inarotul Huda et al. (2025), las pruebas de aceptación con clientes en "
+        "el sitio constituyen una práctica cardinal de XP que garantiza la sintonía entre los requerimientos clínicos y "
+        "la lógica del sistema, asegurando que las validaciones en tiempo real eliminen el error de registro. Como se "
+        "reporta en la Tabla 7, la totalidad de las suites automatizadas y de las historias de usuario alcanzó un "
+        "veredicto de conformidad del 100%, sin defectos críticos ni discrepancias aritméticas.",
         sangria=True
     )
 
@@ -956,7 +990,8 @@ def construir_capitulo3(doc):
         titulo="Resultados de la ejecución de pruebas automatizadas y pruebas de aceptación por historia de usuario",
         encabezados=headers_t7,
         filas=filas_t7,
-        nota="Consolidado de las 16 suites de pruebas automatizadas (151 casos de prueba) y validación de aceptación con usuarios de la DISA Apurímac II."
+        nota="Consolidado de las 16 suites de pruebas automatizadas (151 casos de prueba) y validación de aceptación con usuarios de la DISA Apurímac II.",
+        col_widths=[900, 2200, 3184, 900, 1600]
     )
 
     # --------------------------------------------------------------------------
@@ -967,10 +1002,11 @@ def construir_capitulo3(doc):
         doc,
         "Concluida la fase de pruebas de aceptación y puesto en operación el sistema web SIVAC, se evaluó la calidad "
         "técnica del producto de software bajo las características y subcaracterísticas establecidas en la norma "
-        "internacional ISO/IEC 25010:2023 (ISO/IEC, 2023, p. 2; Moumane et al., 2024, p. 3). En la Tabla 8 se "
-        "presentan las métricas técnicas verificadas en la plataforma, evidenciando el cumplimiento satisfactorio "
-        "de los atributos de adecuación funcional, eficiencia de desempeño, capacidad de interacción (usabilidad), "
-        "fiabilidad, seguridad y mantenibilidad.",
+        "internacional ISO/IEC 25010:2023 (ISO/IEC, 2023, p. 2; Moumane et al., 2024, p. 3), marco cuya pertinencia "
+        "metodológica y validez psicométrica para el sector salud peruano fue corroborada por Mamani-Pari et al. (2026). "
+        "En la Tabla 8 se presentan las métricas técnicas verificadas en la plataforma, evidenciando el cumplimiento "
+        "satisfactorio de los atributos de adecuación funcional, eficiencia de desempeño, capacidad de interacción "
+        "(usabilidad), fiabilidad, seguridad y mantenibilidad.",
         sangria=True
     )
 
@@ -1019,5 +1055,6 @@ def construir_capitulo3(doc):
         titulo="Evaluación de la calidad del producto de software SIVAC según las características de la norma ISO/IEC 25010:2023",
         encabezados=headers_t8,
         filas=filas_t8,
-        nota="Evaluación técnica del producto de software conforme al modelo de calidad ISO/IEC 25010:2023."
+        nota="Evaluación técnica del producto de software conforme al modelo de calidad ISO/IEC 25010:2023.",
+        col_widths=[2000, 2000, 3384, 1400]
     )

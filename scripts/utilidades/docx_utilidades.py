@@ -233,6 +233,56 @@ def formatear_tabla_apa7(table, col_widths=None, font_size_pt=10):
     )
     tblPr.append(tblBorders)
 
+    # Procesar y normalizar anchos de columnas (dxa) dentro del límite portrait (8788 dxa)
+    if not col_widths or len(col_widths) == 0:
+        n_cols = len(table.columns) if len(table.columns) > 0 else (len(table.rows[0].cells) if len(table.rows) > 0 else 1)
+        w_col = 8784 // n_cols
+        col_widths = [w_col] * n_cols
+        col_widths[-1] += (8784 - sum(col_widths))
+
+    widths_dxa = None
+    if col_widths and len(col_widths) > 0:
+        raw_dxa = []
+        for cw in col_widths:
+            val_int = int(cw)
+            # Longitudes de python-docx vienen en EMU (1 dxa = 635 EMU)
+            if val_int >= 12700:
+                raw_dxa.append(int(round(val_int / 635.0)))
+            else:
+                raw_dxa.append(val_int)
+
+        total_dxa = sum(raw_dxa)
+        limite_portrait_dxa = 8788
+        if total_dxa > limite_portrait_dxa:
+            # Escalamiento proporcional al ancho útil de 8784 dxa (15.50 cm)
+            factor = 8784.0 / total_dxa
+            widths_dxa = [max(100, int(round(w * factor))) for w in raw_dxa]
+            diferencia = 8784 - sum(widths_dxa)
+            if widths_dxa:
+                widths_dxa[-1] += diferencia
+        else:
+            widths_dxa = raw_dxa
+
+        # Reconstruir w:tblGrid
+        tblGrid = table._tbl.tblGrid
+        if tblGrid is not None:
+            table._tbl.remove(tblGrid)
+        new_grid = parse_xml(r'<w:tblGrid %s/>' % nsdecls('w'))
+        for cw in widths_dxa:
+            new_grid.append(parse_xml(r'<w:gridCol %s w:w="%d"/>' % (nsdecls('w'), cw)))
+        tblPr_idx = list(table._tbl).index(tblPr)
+        table._tbl.insert(tblPr_idx + 1, new_grid)
+
+        # Fijar w:tblW en dxa
+        for w in tblPr.findall(qn('w:tblW')):
+            tblPr.remove(w)
+        tblPr.append(parse_xml(r'<w:tblW %s w:w="%d" w:type="dxa"/>' % (nsdecls('w'), sum(widths_dxa))))
+
+        # Fijar w:tblLayout en fixed para que Word no recalcule gridCol por encima del límite portrait
+        for tl in tblPr.findall(qn('w:tblLayout')):
+            tblPr.remove(tl)
+        tblPr.append(parse_xml(r'<w:tblLayout %s w:type="fixed"/>' % nsdecls('w')))
+
     if len(table.rows) > 0:
         header_tr = table.rows[0]._tr
         trPr = header_tr.get_or_add_trPr()
@@ -253,10 +303,18 @@ def formatear_tabla_apa7(table, col_widths=None, font_size_pt=10):
         trPr = row._tr.get_or_add_trPr()
         if trPr.find(qn('w:cantSplit')) is None:
             trPr.append(parse_xml(r'<w:cantSplit %s/>' % nsdecls('w')))
+
+        tcs = row._tr.findall(qn('w:tc'))
+        if widths_dxa:
+            for idx, cw in enumerate(widths_dxa):
+                if idx < len(tcs):
+                    tcPr = tcs[idx].get_or_add_tcPr()
+                    for w in tcPr.findall(qn('w:tcW')):
+                        tcPr.remove(w)
+                    tcPr.append(parse_xml(r'<w:tcW %s w:w="%d" w:type="dxa"/>' % (nsdecls('w'), cw)))
+
         for c_idx, cell in enumerate(row.cells):
             cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
-            if col_widths and c_idx < len(col_widths):
-                cell.width = col_widths[c_idx]
             for p in cell.paragraphs:
                 p.paragraph_format.line_spacing = 1.0
                 p.paragraph_format.space_before = Pt(3)
@@ -554,3 +612,12 @@ def agregar_ecuacion_omml(doc, mathml_str, numero_eq=None):
         run_num.font.name = 'Times New Roman'
         run_num.font.size = Pt(12)
     return p
+
+def habilitar_actualizacion_automatica_campos(doc):
+    """Configura w:updateFields w:val='true' en word/settings.xml para que Word actualice campos al abrir."""
+    from docx.oxml import parse_xml
+    from docx.oxml.ns import nsdecls, qn
+    settings_elm = doc.settings.element
+    if settings_elm.find(qn('w:updateFields')) is None:
+        settings_elm.append(parse_xml(r'<w:updateFields %s w:val="true"/>' % nsdecls('w')))
+

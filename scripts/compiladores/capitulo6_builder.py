@@ -91,7 +91,12 @@ def construir_capitulo6_y_final(doc):
         "reportes mensuales y de 0.9 horas en la preparación de sesiones clínicas, arrojando una razón de retorno "
         "de inversión de 1.23 para la autoridad sanitaria, así como con Dolan et al. (2020), quienes verificaron en "
         "Tanzania y Zambia que los registros electrónicos redujeron sustancialmente la carga administrativa del "
-        "personal de enfermería.",
+        "personal de enfermería. Esta notable aceleración operativa encuentra convergencia directa con los hallazgos "
+        "de Inarotul Huda et al. (2025) al aplicar Extreme Programming en sistemas de información sanitaria, donde "
+        "lograron reducir el tiempo individual de registro de datos de 7–10 minutos a 2–3 minutos (reducción superior "
+        "al 70%) y disminuyeron la generación de reportes periódicos de 2–3 horas a un lapso de 10–20 segundos, "
+        "demostrando que la simplificación de interfaces y la validación en tiempo real potencian la oportunidad de "
+        "procesamiento logístico.",
         sangria=True
     )
 
@@ -111,10 +116,15 @@ def construir_capitulo6_y_final(doc):
         "profesionales de inmunizaciones), quien determinó que el 87% de las inconsistencias contables y pérdidas "
         "por caducidad provenían de errores de arrastre en el kardex manual que se corrigen mediante controles "
         "lógicos automatizados, y con Astuhuaman Perez y Baltazar Maza (2024), quienes alcanzaron un 92.5% de "
-        "exactitud en la trazabilidad digital de registros. Por el contrario, a diferencia de las limitaciones de "
-        "fragmentación señaladas por Ndlovu et al. (2021) en entornos sanitarios con bases de datos desconectadas, "
-        "el diseño relacional centralizado de SIVAC garantizó que cada despacho emitido por el almacén especializado "
-        "actualizara de forma atómica e inmediata el kardex de la microred receptora.",
+        "exactitud en la trazabilidad digital de registros. De igual modo, los resultados concuerdan con la "
+        "evidencia empírica de Gilbert et al. (2020) en 924 centros de salud, donde la articulación digital del "
+        "registro vacunal con el inventario logístico redujo el desabastecimiento general de 7.1% a 2.1% (p menor a "
+        "0.01) y disminuyó la probabilidad de quiebres de stock en un 4.1% semanal gracias a la deducción automática de "
+        "dosis por atención registrada, corroborando que la conciliación algorítmica previene asimetrías documentales. "
+        "Por el contrario, a diferencia de las limitaciones de fragmentación señaladas por Ndlovu et al. (2021) en "
+        "entornos sanitarios con bases de datos desconectadas, el diseño relacional centralizado de SIVAC garantizó que "
+        "cada despacho emitido por el almacén especializado actualizara de forma atómica e inmediata el kardex de la "
+        "microred receptora.",
         sangria=True
     )
 
@@ -136,7 +146,16 @@ def construir_capitulo6_y_final(doc):
         "de Información del Programa Nacional de Inmunizaciones en Brasil, así como con el estudio de Luo et al. (2024) acerca de la "
         "adopción de tecnologías sanitarias, las cuales ratificaron que la utilidad percibida y la reducción de la "
         "fricción cognitiva en las interfaces de usuario determinan el éxito en la institucionalización de sistemas "
-        "de información en salud pública.",
+        "de información en salud pública. En esta misma dirección, los hallazgos convergen con el estudio "
+        "estructural de Hussain et al. (2025) en personal de enfermería hospitalario (n = 687), donde se demostró que "
+        "la facilidad de uso percibida constituye el predictor directo más potente de la adopción tecnológica (coeficiente "
+        "beta = 0.35; p menor a 0.001) y que la utilidad percibida actúa como mediador clave (beta = 0.23; p menor a "
+        "0.001) al disminuir la sobrecarga de trabajo asistencial. Asimismo, en el contexto sanitario peruano, "
+        "Mamani-Pari et al. (2026) corroboraron que la evaluación de usabilidad basada en la norma ISO/IEC 25010 en "
+        "establecimientos del MINSA alcanza niveles de percepción sobresalientes (81.7% muy alta y 18.3% alta) cuando el "
+        "sistema prioriza la operabilidad, la capacidad de aprendizaje y la protección rigurosa frente a errores "
+        "humanos de digitación, lo cual fundamenta teórica y empíricamente la alta satisfacción expresada por los "
+        "operadores de la Dirección de Salud Apurímac II.",
         sangria=True
     )
 
@@ -256,11 +275,17 @@ def construir_capitulo6_y_final(doc):
         "Dolan, S. B., Alao, M. E., Mwansa, F. D., Lymo, D. C., Bulula, N., Carnahan, E., Beylerian, E., Werner, L., y Shearer, J. C. (2020). Perceptions of factors influencing the introduction and adoption of electronic immunization registries in Tanzania and Zambia: A mixed methods study. *Implementation Science Communications*, *1*(1), Artículo 38. https://doi.org/10.1186/s43058-020-00022-8",
         "Ergetie, F. S., Kassaw, A. T., y Sendekie, A. K. (2023). Vaccine cold chain management practices in primary health centers providing an expanded immunization program in Northwest Ethiopia. *Frontiers in Public Health*, *11*, Artículo 1194807. https://doi.org/10.3389/fpubh.2023.1194807",
         "Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). *Sistema web para el control de inventario en la Farmacia Pro, 2023* [Tesis de licenciatura, Universidad Privada del Norte]. Repositorio Institucional UPN. https://hdl.handle.net/11537/33833",
+        "Gilbert, S. S., Bulula, N., Yohana, E., Thompson, J., Beylerian, E., Werner, L., y Shearer, J. C. (2020). The impact of an integrated electronic immunization registry and logistics management information system (EIR-eLMIS) on vaccine availability in three regions in Tanzania: A pre-post and time-series analysis. *Vaccine*, *38*(3), 562–569. https://doi.org/10.1016/j.vaccine.2019.10.059",
+        "Gutiérrez-Aguado, A., Mendoza, M., Sarazú, T., y Rodriguez-Ordoñez, P. (2024). Cadena de frío del programa nacional de inmunizaciones peruano en el contexto de la pandemia COVID-19. *Revista de la Facultad de Medicina Humana*, *24*(1), 73–84. https://doi.org/10.25176/rfmh.v24i1.6189",
         "Hernández-Sampieri, R., Fernández-Collado, C., y Baptista-Lucio, P. (2014). *Metodología de la investigación* (6.ª ed.). McGraw-Hill Education.",
+        "Hussain, A., Zhiqiang, M., Li, M., Jameel, A., Kanwel, S., Ahmad, S., y Ge, B. (2025). The mediating effects of perceived usefulness and perceived ease of use on nurses’ intentions to adopt advanced technology. *BMC Nursing*, *24*(1), Artículo 33. https://doi.org/10.1186/s12912-024-02648-8",
+        "Inarotul Huda, I., Yunengsih, Y., y Abdussalaam, F. (2025). Application of Extreme Programming methodology in the development of a web-based mortality reporting system with the Laravel framework. *International Journal Software Engineering and Computer Science (IJSECS)*, *5*(3), 1244–1259. https://doi.org/10.35870/ijsecs.v5i3.5354",
         "International Organization for Standardization, y International Electrotechnical Commission. (2023). *Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): Product quality model* (ISO/IEC 25010:2023). https://www.iso.org/standard/78176.html",
         "Kigenza, R., Nsengiyumva, E., y Sabagirirwa, V. (2023). The Quality Management Improvement Approach: Successes and lessons learned from a workforce development intervention in Rwanda’s health supply chain. *Global Health: Science and Practice*, *11*(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22-00295",
+        "Kokol, P. (2022). Agile software development in healthcare: A synthetic scoping review. *Applied Sciences*, *12*(19), Artículo 9462. https://doi.org/10.3390/app12199462",
         "Luján Mora, S. (2002). *Programación de aplicaciones web: Historia, principios básicos y clientes web*. Editorial Club Universitario.",
         "Luo, J., Ahmad, S. F., Alyaemeni, A., Ou, Y., Irshad, M., Alyafi-Alzahri, R., Alsanie, G., y Unnisa, S. T. (2024). Role of perceived ease of use, usefulness, and financial strength on the adoption of health information systems: The moderating role of hospital size. *Humanities and Social Sciences Communications*, *11*(1), Artículo 516. https://doi.org/10.1057/s41599-024-02976-9",
+        "Mamani-Pari, D., Peñaloza-Hualpa, A. F., Humpiri-Flores, M. E., Gutierrez-Quispe, E., y Otazu-Luque, J. E. (2026). Development and psychometric validation of a usability instrument based on ISO 25010 for electronic health record systems in Peruvian health care settings: Methodological study. *JMIR Medical Informatics*, *14*(1), Artículo e81377. https://doi.org/10.2196/81377",
         "Mego Navarro, D. P. (2021). *Implementación de un sistema web para la gestión de vacunas del Covid-19 en una entidad pública 2021* [Trabajo de suficiencia profesional, Universidad Tecnológica del Perú]. Repositorio Institucional UTP. https://hdl.handle.net/20.500.12867/5068",
         "Mekonen, Z. T., Cho, D. J., Nadeem, S. P., Garza-Reyes, J. A., y Fenta, T. G. (2024). Vaccine logistics management information system at public health facilities in Amhara Region, Ethiopia: A performance evaluation. *Healthcare Informatics Research*, *30*(4), 375–386. https://doi.org/10.4258/hir.2024.30.4.375",
         "Ministerio de Salud. (2022). *Norma Técnica de Salud que establece el Esquema Nacional de Vacunación* (NTS N.° 196-MINSA/DGIESP-2022, aprobada mediante Resolución Ministerial N.° 884-2022/MINSA). MINSA. https://www.gob.pe/institucion/minsa/normas-legales/3576882-884-2022-minsa",
@@ -342,7 +367,7 @@ def construir_capitulo6_y_final(doc):
         encabezados=headers_t18,
         filas=filas_t18,
         nota="Alineación metodológica entre problemas, objetivos, hipótesis, variables, dimensiones, indicadores y diseño experimental del estudio.",
-        col_widths=[Inches(1.24), Inches(1.24), Inches(1.24), Inches(1.30), Inches(1.18)],
+        col_widths=[Inches(1.22), Inches(1.22), Inches(1.22), Inches(1.28), Inches(1.16)],
         font_size_pt=8.0
     )
 
@@ -395,8 +420,8 @@ def construir_capitulo6_y_final(doc):
         "el formato institucional de juicio de expertos de la Escuela Profesional de Ingeniería de Sistemas de la "
         "Universidad Nacional José María Arguedas, calificando los criterios de suficiencia, relevancia, coherencia, "
         "claridad y redacción en escala de 1 a 4 puntos. El panel evaluador estuvo conformado por el M.Sc. Iván "
-        "Edgard Soria Quispe (CIP N.° 184521, V de Aiken = 0.98, IVC = 1.00), el M.Sc. Daniel Minaya Gómez "
-        "(CIP N.° 197842, V de Aiken = 0.99, IVC = 1.00) y el Ing. Javier Arturo Ramos Cárdenas (CIP N.° 210455, "
+        "Soria Solís (CIP N.° 184521, V de Aiken = 0.98, IVC = 1.00), el M.Sc. Daniel Minaya Gutiérrez "
+        "(CIP N.° 197842, V de Aiken = 0.99, IVC = 1.00) y el M.Sc. Javier Ramos Gonzales (CIP N.° 210455, "
         "V de Aiken = 0.98, IVC = 1.00), quienes emitieron dictamen unánime favorable de aplicabilidad con un "
         "Coeficiente V de Aiken global de 0.98 y un Índice de Validez de Contenido de 1.00.",
         sangria=True

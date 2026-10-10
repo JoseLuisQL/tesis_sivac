@@ -1,0 +1,47 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\pretooluse_blocker.cjs\"",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "SessionStart": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\session_start.cjs\"",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "SubagentStop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\handoff_reminder.cjs\"",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:\\MisInvestigaciones\\tesis\\sivac\\.claude\\hooks\\handoff_reminder.cjs\"",
+          "timeout": 10
+        }
+      ]
+    }
+  ]
+}

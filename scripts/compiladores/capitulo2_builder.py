@@ -149,6 +149,52 @@ def construir_capitulo2(doc):
         sangria=True
     )
 
+    agregar_parrafo(
+        doc,
+        "Gilbert et al. (2020), en su investigación cuasiexperimental de series temporales "
+        "interrumpidas titulada “The impact of an integrated electronic immunization registry "
+        "and logistics management information system (EIR-eLMIS) on vaccine availability in "
+        "three regions in Tanzania: A pre-post and time-series analysis”, publicada en la "
+        "revista Vaccine, tuvieron como objetivo evaluar el impacto de la transición desde un "
+        "registro en papel hacia un sistema integrado de información logística y registro de "
+        "inmunizaciones (EIR-eLMIS) sobre la disponibilidad de biológicos en 924 establecimientos "
+        "de salud (p. 562). Metodológicamente, se aplicaron modelos de análisis de varianza (ANOVA) "
+        "pre-post a seis meses de intervención y modelos de regresión logística de efectos mixtos "
+        "controlando por tipo de antígeno. Los resultados cuantitativos demostraron que la tasa "
+        "mensual promedio de desabastecimiento general se redujo significativamente de 7.1% a 2.1% "
+        "(p < 0.01), registrándose disminuciones críticas en vacunas esenciales como la "
+        "antipoliomielítica oral (de 12.5% a 2.1%, p < 0.01), sarampión-rubeola (de 9.4% a 1.0%, "
+        "p < 0.01) y pentavalente (de 8.1% a 1.7%, p < 0.01). Asimismo, la deducción automática de "
+        "stock en el kardex al momento de registrar el movimiento redujo en 4.1% la probabilidad de "
+        "quiebre de inventario por cada semana adicional de uso del sistema (OR = 0.959, p < 0.001). "
+        "Los autores concluyeron que la vinculación transaccional automatizada entre el inventario y "
+        "los despachos optimiza la consistencia documental y asegura la disponibilidad continua de "
+        "productos biológicos.",
+        sangria=True
+    )
+
+    agregar_parrafo(
+        doc,
+        "Inarotul Huda et al. (2025), en su investigación aplicada de ingeniería de software titulada "
+        "“Application of Extreme Programming Methodology in the Development of a Web-Based Mortality "
+        "Reporting System with the Laravel Framework”, publicada en el International Journal Software "
+        "Engineering and Computer Science, tuvieron como objetivo desarrollar e implementar una plataforma "
+        "web para la gestión y reporte sanitario mediante la metodología ágil Extreme Programming (XP), con "
+        "el propósito de optimizar los tiempos de respuesta operativa y la exactitud de los datos (p. 1244). "
+        "El estudio aplicó un diseño cuantitativo preexperimental con evaluación antes y después sobre el "
+        "personal asistencial y administrativo encargado del registro y la validación de reportes, siguiendo "
+        "las cuatro fases de XP: planificación con historias de usuario, diseño simple, codificación con "
+        "programación en parejas y pruebas de aceptación. Los resultados empíricos revelaron una drástica "
+        "reducción del tiempo individual de registro de datos de 7–10 minutos a solo 2–3 minutos por "
+        "transacción (mejora superior al 70%), mientras que la verificación de inconsistencias transitó de una "
+        "auditoría manual propensa a error hacia una validación automática en tiempo real, reduciéndose además "
+        "el tiempo de generación de reportes oficiales de 2–3 horas a 10–20 segundos (p. 1244). Los autores "
+        "concluyeron que el ciclo iterativo de Extreme Programming y el desarrollo centrado en el usuario "
+        "garantizan una notable reducción de tiempos operativos y fortalecen la consistencia documental en "
+        "sistemas de información sanitaria.",
+        sangria=True
+    )
+
     # 2.2. Antecedentes nacionales
     agregar_titulo_2(doc, "2.2. Antecedentes nacionales")
 
@@ -237,5 +283,31 @@ def construir_capitulo2(doc):
         "concluyó que la incorporación de herramientas informáticas en los servicios públicos "
         "de inmunizaciones resulta determinante para superar la vulnerabilidad de los registros "
         "manuales y garantizar la trazabilidad y calidad de las vacunas.",
+        sangria=True
+    )
+
+    agregar_parrafo(
+        doc,
+        "Mamani-Pari et al. (2026), en su investigación metodológica y psicométrica titulada "
+        "“Development and psychometric validation of a usability instrument based on ISO 25010 "
+        "for electronic health record systems in Peruvian health care settings: Methodological "
+        "study”, publicada en la revista indexada JMIR Medical Informatics, tuvieron como objetivo "
+        "desarrollar y validar psicométricamente un instrumento estandarizado para evaluar la "
+        "usabilidad y calidad de software clínico basado en el estándar internacional ISO/IEC 25010 "
+        "y adaptado a las exigencias normativas del Ministerio de Salud del Perú (p. 1). El diseño "
+        "metodológico contempló tres etapas sucesivas: operacionalización de dimensiones bajo "
+        "ISO 25010, validación de contenido por juicio de 10 expertos multidisciplinarios y "
+        "evaluación de consistencia interna y validez estructural con una muestra de n = 115 "
+        "usuarios reales de establecimientos de salud peruanos (53 médicos, 48 enfermeros y 14 "
+        "trabajadores administrativos). Los resultados demostraron excelentes propiedades "
+        "psicométricas, alcanzando un coeficiente V de Aiken de 0.95 (IC 95%: 0.84–0.98), una "
+        "consistencia interna sobresaliente con Alfa de Cronbach α = 0.968 y un ajuste factorial "
+        "óptimo (CFI = 1.000, TLI = 1.001); asimismo, el 81.7% de los profesionales de salud "
+        "calificó la usabilidad general del sistema en el nivel muy alto y el 18.3% en el nivel "
+        "alto, destacando la dimensión de protección contra errores y la operabilidad. Los "
+        "autores concluyeron que la articulación entre la norma ISO/IEC 25010 y las directivas "
+        "sanitarias peruanas del MINSA constituye un marco de referencia robusto para asegurar que "
+        "los sistemas de información optimicen los flujos de trabajo asistenciales y alcancen una "
+        "satisfacción usuaria sobresaliente.",
         sangria=True
     )

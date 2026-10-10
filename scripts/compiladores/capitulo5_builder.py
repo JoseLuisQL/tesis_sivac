@@ -104,7 +104,7 @@ def construir_capitulo5(doc):
         encabezados=headers_t13,
         filas=filas_t13,
         nota="Tiempos medidos en minutos mediante el Instrumento N.° 01 sobre la población censal de 14 operadores distribuidos en los 8 centros de acopio de la DISA Apurímac II. Valores con marcador [Pendiente] reservados para el vaciado del levantamiento de campo.",
-        col_widths=[Inches(0.65), Inches(2.15), Inches(0.85), Inches(0.85), Inches(0.85), Inches(0.85)],
+        col_widths=[Inches(0.65), Inches(2.05), Inches(0.85), Inches(0.85), Inches(0.85), Inches(0.85)],
         font_size_pt=8.5
     )
 
@@ -167,7 +167,7 @@ def construir_capitulo5(doc):
         encabezados=headers_t14,
         filas=filas_t14,
         nota="Proporciones obtenidas mediante auditoría documental con el Instrumento N.° 02 en los 8 centros de acopio de la DISA Apurímac II (n = 14). Valores con marcador [Pendiente] reservados para el vaciado del levantamiento de campo.",
-        col_widths=[Inches(0.65), Inches(2.15), Inches(0.85), Inches(0.85), Inches(0.85), Inches(0.85)],
+        col_widths=[Inches(0.65), Inches(2.05), Inches(0.85), Inches(0.85), Inches(0.85), Inches(0.85)],
         font_size_pt=8.5
     )
 
@@ -228,7 +228,7 @@ def construir_capitulo5(doc):
         encabezados=headers_t15,
         filas=filas_t15,
         nota="Puntuaciones obtenidas mediante el Instrumento N.° 03 (Cuestionario TAM en escala Likert de 1 a 5) sobre la población censal de la DISA Apurímac II (n = 14). Valores con marcador [Pendiente] reservados para el vaciado del levantamiento de campo.",
-        col_widths=[Inches(0.65), Inches(2.15), Inches(0.85), Inches(0.85), Inches(0.85), Inches(0.85)],
+        col_widths=[Inches(0.65), Inches(2.05), Inches(0.85), Inches(0.85), Inches(0.85), Inches(0.85)],
         font_size_pt=8.5
     )
 
@@ -337,7 +337,7 @@ def construir_capitulo5(doc):
         encabezados=headers_t16,
         filas=filas_t16,
         nota="Prueba de Shapiro-Wilk evaluada con nivel de significancia de 0.05 sobre las diferencias pareadas (n = 14). Si el p-valor supera 0.05 se emplea la prueba t de Student para muestras relacionadas; en caso contrario se aplica la prueba de rangos con signo de Wilcoxon.",
-        col_widths=[Inches(1.25), Inches(1.55), Inches(0.9), Inches(0.65), Inches(0.8), Inches(1.05)],
+        col_widths=[Inches(1.23), Inches(1.53), Inches(0.88), Inches(0.64), Inches(0.79), Inches(1.03)],
         font_size_pt=9.0
     )
 
@@ -499,7 +499,7 @@ def construir_capitulo5(doc):
         encabezados=headers_t17,
         filas=filas_t17,
         nota="Contrastes inferenciales pre-test versus post-test evaluados en la población censal de la DISA Apurímac II (n = 14) a un nivel de significancia de 0.05. Valores con marcador [Pendiente] reservados para la ejecución del script bioestadístico con datos reales de campo.",
-        col_widths=[Inches(1.25), Inches(1.55), Inches(0.85), Inches(0.85), Inches(0.75), Inches(0.95)],
+        col_widths=[Inches(1.23), Inches(1.53), Inches(0.83), Inches(0.83), Inches(0.74), Inches(0.94)],
         font_size_pt=8.5
     )
 

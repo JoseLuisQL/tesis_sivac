@@ -168,11 +168,19 @@ def construir_capitulo1(doc):
         "de expiración mediante el registro en kardex y la emisión de comprobantes oficiales de "
         "salida en todas las dependencias de salud (Ministerio de Salud [MINSA], 2022). Pese a "
         "las exigencias de dicho marco regulatorio (MINSA, 2022), en los niveles regionales y "
-        "locales del país subsiste una marcada brecha tecnológica en el control logístico interno "
-        "de los almacenes de inmunizaciones. Al respecto, Mego Navarro (2021, p. 32) identificó "
-        "en una entidad pública de salud que el 45% de los operadores aún recababa información "
-        "de vacunas desplazándose físicamente a los centros de salud y que el 25% de los reportes "
-        "presentaba datos incompletos por carecer de un sistema web centralizado.",
+        "locales del país subsiste una marcada brecha tecnológica y de infraestructura en el "
+        "control logístico de los almacenes de inmunizaciones. Esta problemática fue constatada "
+        "por Gutiérrez-Aguado et al. (2024, pp. 73–78) en su evaluación nacional de la cadena de "
+        "frío del MINSA, donde determinaron que apenas el 38.2% de los equipos de refrigeración "
+        "contaba con una antigüedad menor a diez años —registrando un 61.8% de obsolescencia que "
+        "superó el 80% en las regiones del interior del país— y evidenciaron profundos desfases "
+        "entre los inventarios patrimoniales oficiales del módulo SIGA-MEF y las existencias reales "
+        "reportadas en los almacenes locales, lo cual compromete la planificación de suministros y "
+        "eleva el riesgo de pérdida biológica por falta de herramientas digitales ágiles. Al "
+        "respecto, Mego Navarro (2021, p. 32) identificó en una entidad pública de salud que el "
+        "45% de los operadores aún recababa información de vacunas desplazándose físicamente a "
+        "los centros de salud y que el 25% de los reportes presentaba datos incompletos por "
+        "carecer de un sistema web centralizado.",
         sangria=True
     )
 

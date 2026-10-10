@@ -1,7 +1,8 @@
 # MATRIZ MAESTRA DE LA GRANJA DE AGENTES — SIVAC-THESIS-LAB
 > **Ecosistema Multi-Agente de Investigación Científica para el Informe Final de Tesis**  
 > **Escuela Profesional de Ingeniería de Sistemas — Universidad Nacional José María Arguedas (UNAJMA)**  
-> **Topología:** Hub-and-Spoke (Estrella Jerárquica Radial) | **Orquestador:** Agente GOD (`director-general`)
+> **Topología:** Hub-and-Spoke (Estrella Jerárquica Radial) | **Orquestador:** Agente GOD (`director-general`)  
+> **Constitución Operativa:** Consultar [[CLAUDE.md]] | **Reglas Canónicas:** Consultar `.claude/rules/*.md`
 
 ---
 
@@ -14,12 +15,14 @@
                                └───────────────────────────▲────────────────────────────┘
                                                            │ Aprobación / Feedback
                                ┌───────────────────────────▼────────────────────────────┐
-                               │             AGENTE GOD / DIRECTOR GENERAL              │
+                               │       AGENTE GOD / DIRECTOR DE TESIS SENIOR            │
                                │               (Sesión Principal / Lead)                │
                                │   - Orquestador Maestro de la Constitución (CLAUDE.md) │
-                               │   - Gestor de Fases y Única Fuente de Verdad           │
-                               │   - Enrutador Formal de Tareas a Squads Especializados │
-                               │   - Supervisor de Quality Gates y Cero Alucinaciones   │
+                               │   - Refinamiento Cognitivo de Prompts Débiles          │
+                               │   - Memoria Viva y Persistente en Obsidian             │
+                               │   - Rescate de Pendientes y Sugerencias Proactivas     │
+                               │   - Comisionador Formal Radial a 13 Subagentes (A-F)   │
+                               │   - Supervisor de Quality Gates y Cirugía OpenXML      │
                                └───────────────────────────┬────────────────────────────┘
                                                            │ Comisiones / Handoffs
          ┌───────────────────┬─────────────────────────────┼─────────────────────────────┬───────────────────┐
@@ -56,24 +59,31 @@
 
 | Squad | Agente | Rol Operativo | Modelo | Herramientas Principales | Skills Asignadas |
 |---|---|---|---|---|---|
-| **Hub Central** | `director-general` | Agente GOD / Orquestador Maestro | Claude 5 | Read, Write, Edit, Grep, Glob, Bash, PowerShell, Agent, Skill, Tasks | `academic-pipeline`, `matriz-consistencia`, `estructura-tesis-universidad` |
-| **Squad A** | `investigador-bibliografico` | Búsqueda y síntesis sistemática | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `deep-research`, `zotero-busqueda-academica`, `apa7-es-tesis` |
-| **Squad A** | `verificador-integridad` | Auditoría 1:1 y anti-alucinaciones | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `academic-paper` (citation-check), `deep-research` (fact-check) |
-| **Squad B** | `guardian-consistencia` | Custodio isomórfico (3 dims DEC-007) | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `matriz-consistencia`, `estructura-tesis-universidad` |
-| **Squad B** | `especialista-instrumentos` | Diseño psicométrico y juicio expertos | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `formato-instrumentos-validacion`, `validacion-psicometrica` |
-| **Squad B** | `especialista-forms` | Formularios digitales y Apps Script | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `formato-instrumentos-validacion`, `validacion-psicometrica` |
-| **Squad C** | `ingeniero-sivac` | Auditor de software (SOLO LECTURA) | opus | **Solo Lectura:** Read, Grep, Glob | `context7`, `extraccion-figuras-pdf-docx` |
-| **Squad C** | `documentador-xp` | Redactor de sección 3.3 (XP, UML) | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `redaccion-academica-verificable`, `extraccion-figuras-pdf-docx` |
-| **Squad D** | `analista-estadistico` | Bioestadístico y contrastes ($n=14$) | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `analisis-estadistico-avanzado`, `dataviz`, `xlsx` |
-| **Squad E** | `analista-documental` | Desglose estructural de modelos UNAJMA | opus | Read, Grep, Glob, Bash, PowerShell | `docx`, `pdf`, `xlsx`, `estructura-tesis-universidad` |
-| **Squad E** | `redactor-academico` | Redactor en prosa científica APA 7 | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `academic-paper`, `apa7-es-tesis`, `redaccion-academica-verificable` |
-| **Squad E** | `maquetador-docx` | Compilador OpenXML desvinculado | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `tablas-quirurgicas-docx-apa7`, `referencias-nativas-docx-apa7`, `docx` |
-| **Squad F** | `curador-cerebro` | Custodio de Obsidian (No destrucción) | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `protocolo-obsidian-handoff` |
-| **Squad F** | `jurado-revisor` | Tribunal simulado UNAJMA (20 pts) | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `academic-paper-reviewer`, `matriz-consistencia` |
+| **Hub Central** | `director-general` | Director de Tesis Senior / Agente GOD (Refinamiento cognitivo de prompts débiles, articulación de memoria viva y persistente en Obsidian, rescate de pendientes metodológicos, orquestador maestro y comisionador formal radial a los 13 subagentes de los Squads A-F) | opus | Read, Write, Edit, Grep, Glob, Bash, PowerShell, Agent, Skill, Tasks | `academic-pipeline`, `protocolo-obsidian-handoff`, `matriz-consistencia`, `estructura-tesis-universidad` |
+| **Squad A** | `investigador-bibliografico` | Búsqueda y síntesis sistemática | sonnet | Read, Write, Edit, Grep, Glob | `deep-research`, `zotero-busqueda-academica`, `apa7-es-tesis` |
+| **Squad A** | `verificador-integridad` | Auditoría 1:1 y anti-alucinaciones | sonnet | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `academic-paper` (citation-check), `deep-research` (fact-check) |
+| **Squad B** | `guardian-consistencia` | Custodio isomórfico (3 dims DEC-007) | sonnet | Read, Write, Edit, Grep, Glob | `matriz-consistencia`, `estructura-tesis-universidad` |
+| **Squad B** | `especialista-instrumentos` | Diseño psicométrico y juicio expertos | sonnet | Read, Write, Edit, Grep, Glob | `formato-instrumentos-validacion`, `validacion-psicometrica` |
+| **Squad B** | `especialista-forms` | Formularios digitales y Apps Script | sonnet | Read, Write, Edit, Grep, Glob | `formato-instrumentos-validacion`, `validacion-psicometrica` |
+| **Squad C** | `ingeniero-sivac` | Auditor de software (SOLO LECTURA) | sonnet | **Solo Lectura:** Read, Grep, Glob | `extraccion-figuras-pdf-docx`, `protocolo-obsidian-handoff` (MCP: `context7`) |
+| **Squad C** | `documentador-xp` | Redactor de sección 3.3 (XP, UML) | sonnet | Read, Write, Edit, Grep, Glob | `redaccion-academica-verificable`, `extraccion-figuras-pdf-docx` (MCP: `context7`) |
+| **Squad D** | `analista-estadistico` | Bioestadístico y contrastes ($n=14$) | sonnet | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `analisis-estadistico-avanzado`, `dataviz`, `xlsx` |
+| **Squad E** | `analista-documental` | Desglose estructural de modelos UNAJMA | sonnet | Read, Grep, Glob, Bash, PowerShell | `docx`, `pdf`, `xlsx`, `estructura-tesis-universidad` |
+| **Squad E** | `redactor-academico` | Redactor en prosa científica APA 7 | sonnet | Read, Write, Edit, Grep, Glob | `academic-paper`, `apa7-es-tesis`, `redaccion-academica-verificable` |
+| **Squad E** | `maquetador-docx` | Compilador OpenXML desvinculado | sonnet | Read, Write, Edit, Grep, Glob, Bash, PowerShell | `tablas-quirurgicas-docx-apa7`, `referencias-nativas-docx-apa7`, `docx` |
+| **Squad F** | `curador-cerebro` | Custodio de Obsidian (No destrucción) | sonnet | Read, Write, Edit, Grep, Glob | `protocolo-obsidian-handoff` |
+| **Squad F** | `jurado-revisor` | Tribunal simulado UNAJMA (20 pts) | sonnet | Read, Write, Edit, Grep, Glob | `academic-paper-reviewer`, `matriz-consistencia` |
 
 ---
 
 ## 3. Protocolos de Comisión y Handoff
+
+### 3.0. Loop de Refinamiento Cognitivo de Prompts Débiles y Memoria Viva Previa
+Antes de emitir cualquier contrato de comisión, el Director General activa obligatoriamente el **Loop de Refinamiento Cognitivo**:
+1. **Diagnóstico de la Intención Profunda:** Decodifica el requerimiento científico o técnico subyacente ante solicitudes breves, coloquiales o ambiguas del tesista (ej. *"revisa esto"*, *"avanza el cap 5"*, *"arregla la tabla"*).
+2. **Cruce con la Memoria Viva de Obsidian:** Consulta obligatoria de `00_SISTEMA/ESTADO_TESIS.md`, `00_SISTEMA/DECISIONES.md` (DEC-007), relevos en `08_SISTEMA_Y_AGENTES/handoffs/` y bitácoras para rescatar pendientes abiertos (`[VERIFICAR]`).
+3. **Propuesta Estructurada y Rigor Metodológico:** Eleva el requerimiento a terminología académica y técnica formal (variables, normas APA 7, modelos UNAJMA, ISO/IEC 25010, TAM, Extreme Programming).
+4. **Sugerencias Proactivas y Opciones Claras:** Plantea al tesista alternativas estructuradas y recomendaciones de élite, y sólo despacha la comisión formal cuando la directiva está calibrada.
 
 ### 3.1. Contrato de Comisión del Director (JSON Schema: `.claude/schemas/comision.schema.json`)
 ```text

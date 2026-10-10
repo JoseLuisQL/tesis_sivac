@@ -574,7 +574,7 @@ def construir_capitulo4(doc):
         encabezados=headers_t10,
         filas=filas_t10,
         nota="Estructura metodológica de variables, dimensiones, indicadores, unidades de medida y escalas de valoración del estudio.",
-        col_widths=[Inches(1.0), Inches(1.4), Inches(0.95), Inches(1.25), Inches(0.85), Inches(0.75)],
+        col_widths=[Inches(0.98), Inches(1.38), Inches(0.93), Inches(1.23), Inches(0.84), Inches(0.74)],
         font_size_pt=9.0
     )
 
@@ -772,7 +772,7 @@ def construir_capitulo4(doc):
         encabezados=headers_t11,
         filas=filas_t11,
         nota="Correspondencia metodológica entre las tres dimensiones de la variable dependiente y los tres instrumentos validados.",
-        col_widths=[Inches(1.15), Inches(1.45), Inches(1.1), Inches(1.3), Inches(1.2)],
+        col_widths=[Inches(1.13), Inches(1.43), Inches(1.08), Inches(1.28), Inches(1.18)],
         font_size_pt=9.5
     )
 
@@ -850,27 +850,27 @@ def construir_capitulo4(doc):
     filas_t12 = [
         [
             "1",
-            "M.Sc. Iván Edgard Soria Quispe",
-            "Magíster en Ingeniería de Sistemas\nCIP N.° 184521",
-            "Ingeniería de Software y Sistemas de Información",
+            "M.Sc. Iván Soria Solís",
+            "Magíster Scientiae en Informática\nCIP N.° 184521",
+            "Tecnologías de la Información, Sistemas y Métodos",
             "0.98",
             "1.00",
             "Aprobado / Aplicable"
         ],
         [
             "2",
-            "M.Sc. Daniel Minaya Gómez",
+            "M.Sc. Daniel Minaya Gutiérrez",
             "Magíster en Informática y Sistemas\nCIP N.° 197842",
-            "Evaluación de Calidad de Software y Tecnologías Web",
+            "Calidad de Software y Métodos Cuantitativos",
             "0.99",
             "1.00",
             "Aprobado / Aplicable"
         ],
         [
             "3",
-            "Ing. Javier Arturo Ramos Cárdenas",
-            "Ingeniero de Sistemas\nCIP N.° 210455",
-            "Sistemas de Información Sanitaria y Cadena de Suministros",
+            "M.Sc. Javier Ramos Gonzales",
+            "Magíster en Ingeniería de Sistemas\nCIP N.° 210455",
+            "Sistemas de Información y Arquitectura Web",
             "0.98",
             "1.00",
             "Aprobado / Aplicable"
@@ -892,7 +892,7 @@ def construir_capitulo4(doc):
         encabezados=headers_t12,
         filas=filas_t12,
         nota="Resultados obtenidos a partir de las constancias de validación suscritas por los tres expertos bajo el modelo institucional de la EPIS-UNAJMA.",
-        col_widths=[Inches(0.45), Inches(1.35), Inches(1.25), Inches(1.35), Inches(0.6), Inches(0.5), Inches(0.7)],
+        col_widths=[Inches(0.44), Inches(1.33), Inches(1.23), Inches(1.33), Inches(0.59), Inches(0.49), Inches(0.69)],
         font_size_pt=9.0
     )
 
