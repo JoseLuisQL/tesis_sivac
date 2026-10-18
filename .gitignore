@@ -3,6 +3,9 @@
 *.env
 *.env.local
 .claude/settings.local.json
+# Artefacto generado por scripts/sync_factory.py: resuelve los ${VAR}
+# de .mcp.json a valores literales, por lo que contiene credenciales.
+.factory/mcp.json
 
 # Salidas temporales y caches
 salidas/tmp/
