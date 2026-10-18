@@ -7,8 +7,8 @@ dimension: Satisfacción del usuario
 indicadores:
   - Ind 3.1: Aceptación del proceso operativo (AP)
   - Ind 3.2: Utilidad percibida para la gestión (UP)
-unidad_medida: Puntos en Escala Likert de 1 a 5 (Puntaje ordinal sumatorio y categorizado)
-escala: Ordinal politómica (Tratamiento psicométrico de intervalo en puntuación global)
+unidad_medida: Puntos en Escala Likert de 1 a 5 (Modalidad A, con puntaje ordinal sumatorio y categorizado de 8 a 40; Modalidad B, sin suma ni categorización)
+escala: Ordinal politómica (Tratamiento psicométrico de intervalo en la puntuación global de la Modalidad A)
 institucion: Universidad Nacional José María Arguedas (UNAJMA)
 facultad: Facultad de Ingeniería - Escuela Profesional de Ingeniería de Sistemas
 autor: Bach. José Luis Quispe León
@@ -18,13 +18,13 @@ fecha: 2026-10-02
 ---
 
 # UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS
-## FACULTAD DE INGENIERÍA — ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
+## FACULTAD DE INGENIERÍA - ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
 
 ---
 
 ### INSTRUMENTO DE RECOLECCIÓN DE DATOS N° 03
 ## CUESTIONARIO DE SATISFACCIÓN DEL USUARIO Y ACEPTACIÓN TECNOLÓGICA (MODELO TAM)
-**Estructura Definitiva de 8 Ítems, Baremos por Terciles Normalizados (8 a 40 Puntos) y Protocolo Psicométrico de Confiabilidad**
+**Estructura Definitiva de 8 Reactivos Baremables en la Modalidad A y 8 Reactivos de Módulo Anexo en la Modalidad B, con Baremo de Interpretación por Terciles Teóricos (8 a 40 Puntos) para la Modalidad A y Protocolo Psicométrico de Confiabilidad**
 
 **Proyecto de Investigación:**  
 *APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II*
@@ -112,18 +112,19 @@ El presente instrumento forma parte del proyecto de investigación científica p
 
 ---
 
-### 5. SISTEMA DE CALIFICACIÓN Y BAREMOS PSICOMÉTRICOS NORMALIZADOS
+### 5. SISTEMA DE CALIFICACIÓN Y BAREMO DE INTERPRETACIÓN POR TERCILES TEÓRICOS
 
-#### 5.1. Reglas de Puntuación Sumativa
-* **Puntuación por Subescala (AP y UP / PU y PEOU):** Compuesta por 4 reactivos evaluados en escala de 1 a 5:
+#### 5.1. Reglas de Puntuación Sumativa de la Modalidad A
+* **Puntuación por Subescala de la Modalidad A (AP y UP):** Compuesta por 4 reactivos evaluados en escala de 1 a 5:
   $$\text{Puntaje Subescala} = \sum_{j=1}^{4} X_j \qquad \text{Rango Posible: } [4 \text{ a } 20 \text{ puntos}]$$
-* **Puntuación Global del Instrumento:** Suma de los 8 reactivos:
+* **Puntuación Global de la Modalidad A:** Suma de los 8 reactivos de la Modalidad A (AP-01 a AP-04 y UP-01 a UP-04):
   $$\text{Puntaje Global} = \sum_{i=1}^{8} X_i \qquad \text{Rango Posible: } [8 \text{ a } 40 \text{ puntos}]$$
+* **Declaración sobre la Modalidad B:** Los 8 reactivos del módulo anexo (PU-01 a PU-04 y PE-01 a PE-04) no se bareman, no generan puntaje global ni se suman con los de la Modalidad A. Sus respuestas se reportan de forma descriptiva por reactivo, sin categorización ordinal ni contraste inferencial.
 
-#### 5.2. Tabla de Baremos por Terciles Teóricos Normalizados
-Para la categorización ordinal de la satisfacción y aceptación del usuario en la DISA Apurímac II se establecen baremos formales por terciles matemáticos de amplitud homogénea ($R = 40 - 8 = 32$; amplitud de intervalo $\approx 10.67$ puntos):
+#### 5.2. Tabla de Baremo de Interpretación por Terciles Teóricos
+La partición en 8 a 18, 19 a 29 y 30 a 40 constituye un tercil teórico calculado sobre el rango posible de la suma de los 8 reactivos Likert de 1 a 5 de la Modalidad A. Esa suma adopta exactamente 33 valores enteros, del 8 al 40, y el tercil los reparte en tres grupos de 11 valores cada uno, sin residuo. Los tres rangos no constituyen puntos de corte normativos validados empíricamente, por cuanto con n = 14 no existe distribución de referencia que los sustente.
 
-| Nivel Categorial | Rango Global (8 Ítems) | Rango Subescala (4 Ítems) | Porcentaje Escalar | Interpretación Psicométrica y Operativa en la DISA Apurímac II |
+| Nivel Categorial | Rango Global Modalidad A (8 Reactivos) | Rango Subescala Modalidad A (4 Reactivos) | Porcentaje Escalar | Interpretación Psicométrica y Operativa en la DISA Apurímac II |
 |:---:|:---:|:---:|:---:|---|
 | **NIVEL BAJO**<br>*(Insatisfacción / Rechazo)* | **8 a 18 puntos** | **4 a 9 puntos** | 20.0% a 45.0% | Percepción de sobrecarga administrativa severa, insatisfacción profunda con los métodos de registro, lentitud, estrés laboral y alta susceptibilidad a errores en los inventarios. |
 | **NIVEL MEDIO**<br>*(Satisfacción Moderada)* | **19 a 29 puntos** | **10 a 14 puntos** | 47.5% a 72.5% | Percepción de funcionalidad aceptable pero perfectible; satisfacción moderada con áreas de fricción operativa, demoras puntuales o necesidad de mayor afianzamiento técnico. |
@@ -133,31 +134,33 @@ Para la categorización ordinal de la satisfacción y aceptación del usuario en
 
 ### 6. PROTOCOLO PSICOMÉTRICO DE CONFIABILIDAD (CONSISTENCIA INTERNA)
 
-Para certificar la consistencia interna y la estabilidad métrica del cuestionario de 8 ítems, se establece el siguiente protocolo estadístico:
+Para certificar la consistencia interna y la estabilidad métrica de los 8 reactivos de la Modalidad A, se establece el siguiente protocolo estadístico:
 
 #### 6.1. Coeficiente Alfa de Cronbach ($\alpha$)
 Mide la covariación media entre los reactivos bajo el supuesto de tau-equivalencia esencial:
 $$\alpha = \frac{k}{k - 1} \left( 1 - \frac{\sum_{i=1}^{k} \sigma_i^2}{\sigma_t^2} \right)$$
-Donde $k = 8$ (número total de ítems), $\sigma_i^2$ es la varianza del ítem $i$, y $\sigma_t^2$ es la varianza del puntaje global total.
+Donde $k = 8$ (número total de reactivos de la Modalidad A), $\sigma_i^2$ es la varianza del ítem $i$, y $\sigma_t^2$ es la varianza del puntaje global de la Modalidad A.
 * **Criterio de Aceptabilidad Psicométrica:** **$\alpha \ge 0.70$** (estándar canónico de Nunnally & Bernstein, 1994, para instrumentos de investigación aplicada; deseable $\alpha \ge 0.80$).
 
-#### 6.2. Coeficiente Omega de McDonald ($\omega$)
-Dado que el Alfa de Cronbach puede subestimar la verdadera confiabilidad cuando se incumple el supuesto de tau-equivalencia (cargas factoriales disímiles entre ítems), se reporta complementariamente el coeficiente Omega jerárquico/categorial (McDonald, 1999; Ventura-León & Caycho-Rodríguez, 2017) basado en las cargas factoriales estandarizadas ($\lambda_i$) de un modelo factorial confirmatorio:
+#### 6.2. Coeficiente Omega de McDonald ($\omega$): No Estimación en Este Estudio
+El coeficiente Omega de McDonald (1999) se define conceptualmente como un estimador de la confiabilidad derivado de las cargas factoriales estandarizadas ($\lambda_i$) de un modelo factorial confirmatorio, conforme a la siguiente expresión:
 $$\omega = \frac{\left( \sum_{i=1}^{k} \lambda_i \right)^2}{\left( \sum_{i=1}^{k} \lambda_i \right)^2 + \sum_{i=1}^{k} (1 - \lambda_i^2)}$$
-* **Criterio de Aceptabilidad Psicométrica:** **$\omega \ge 0.70$** (garantiza una estimación no sesgada de la consistencia interna).
+La ecuación precedente se conserva exclusivamente como referencia conceptual del estimador y **no se aplica ni se reporta en este estudio**. Con $n = 14$ y $k = 8$ no converge una solución factorial de dos factores con ocho indicadores. La razón sujeto/ítem es $n/k = 14/8 = 1.75$, valor inferior al rango de 5 a 10 recomendado por Nunnally y Bernstein (1994). Por consiguiente, no se establece criterio de aceptabilidad alguno sobre $\omega$, y la estimación de la consistencia interna se restringe al coeficiente Alfa de Cronbach definido en la sección 6.1, aplicado conforme al procedimiento de la sección 6.3.
 
 #### 6.3. Justificación Muestral y Procedimiento de Cálculo
-1. **Población Censal ($n=14$):** En investigaciones preexperimentales aplicadas sobre poblaciones censales reducidas ($N = n = 14$), el reporte de la consistencia interna ($\alpha$ y $\omega$) se calcula sobre los puntajes del pretest y postest del grupo censal, reportando la matriz de correlaciones inter-ítem y los intervalos de confianza al 95% (Feldt et al., 1987).
-2. **Muestra Piloto de Calibración Externa ($n=15$):** Con el propósito de blindar psicométricamente el instrumento antes de su aplicación censal definitiva, se administra el cuestionario a una muestra piloto independiente de **quince (15) operadores de inmunizaciones** pertenecientes a centros de salud de redes sanitarias limítrofes (Red de Salud Virgen del Rosario o Red Grau) que comparten idénticas características socio-laborales pero no forman parte del estudio censal de la DISA Apurímac II. El cumplimiento de $\alpha \ge 0.70$ y $\omega \ge 0.70$ en dicha muestra piloto certifica la aptitud técnica del instrumento.
+1. **Población Censal ($n=14$):** En investigaciones preexperimentales aplicadas sobre poblaciones censales reducidas ($N = n = 14$), el reporte de la consistencia interna se limita al coeficiente Alfa de Cronbach ($\alpha$) calculado sobre los 8 reactivos de la Modalidad A, con los puntajes del pretest y postest del grupo censal. Se reportan la matriz de correlaciones inter-ítem y el intervalo de confianza al 95 % por el método de Feldt, Woodruff y Salih (1987). El coeficiente Omega de McDonald ($\omega$) no se reporta, por la insuficiencia muestral expuesta en la sección 6.2.
+2. **Muestra Piloto de Calibración Externa ($n=15$):** Con el propósito de blindar psicométricamente el instrumento antes de su aplicación censal definitiva, se administra el cuestionario a una muestra piloto independiente de **quince (15) operadores de inmunizaciones** pertenecientes a centros de salud de redes sanitarias limítrofes (Red de Salud Virgen del Rosario o Red Grau) que comparten idénticas características socio-laborales pero no forman parte del estudio censal de la DISA Apurímac II. El cumplimiento de $\alpha \ge 0.70$ en dicha muestra piloto certifica la aptitud técnica del instrumento.
 
 ---
 
-### 7. REGISTRO Y CONFORMIDAD DE APLICACIÓN
+### 7. REGISTRO Y CONFORMIDAD DE APLICACIÓN (MODALIDAD A)
 
-* **Puntaje Subescala Aceptación del Proceso (AP):** ______ / 20 puntos.
-* **Puntaje Subescala Utilidad Percibida (UP):** ______ / 20 puntos.
-* **Puntaje Total Directo Obtenido:** ______ / 40 puntos.
-* **Nivel de Satisfacción / Aceptación Alcanzado:**  
+Los puntajes anotados a continuación corresponden exclusivamente a la Modalidad A del instrumento (reactivos AP-01 a AP-04 y UP-01 a UP-04). La Modalidad B no se registra en este bloque por carecer de puntaje global y de baremación.
+
+* **Puntaje Subescala Aceptación del Proceso (AP), Modalidad A:** ______ / 20 puntos.
+* **Puntaje Subescala Utilidad Percibida (UP), Modalidad A:** ______ / 20 puntos.
+* **Puntaje Total Directo Obtenido en la Modalidad A (8 reactivos):** ______ / 40 puntos.
+* **Nivel de Satisfacción / Aceptación Alcanzado según el Baremo de la Modalidad A:**  
   [  ] **NIVEL BAJO (8 - 18 puntos)**  
   [  ] **NIVEL MEDIO (19 - 29 puntos)**  
   [  ] **NIVEL ALTO (30 - 40 puntos)**  
@@ -170,4 +173,4 @@ $$\omega = \frac{\left( \sum_{i=1}^{k} \lambda_i \right)^2}{\left( \sum_{i=1}^{k
 
 **Firma del Encuestador / Tesista:**  
 Bach. José Luis Quispe León  
-Tesista EPIS — UNAJMA  
+Tesista EPIS - UNAJMA  

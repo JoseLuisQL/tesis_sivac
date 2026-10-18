@@ -39,49 +39,15 @@ RUTA_SALIDAS = os.path.join(RUTA_BASE, "salidas", "instrumentos")
 RUTA_ESCUDO = os.path.join(RUTA_BASE, "salidas", "figuras", "recursos_graficos", "escudo_unajma.png")
 
 # -----------------------------------------------------------------------------
-# PADRÓN OFICIAL DE EXPERTOS EVALUADORES (EPIS - UNAJMA)
+# PADRÓN DE EXPERTOS EVALUADORES
+#
+# Vaciado por mandato de DEC-014 y DEC-016. Este padrón atribuía nombres, DNI y
+# CIP a tres jueces que no evaluaron los instrumentos, y los formatos de
+# validación vigentes deben entregarse íntegramente en blanco, sin identidad de
+# evaluador ni número de colegiatura. La constante se conserva como lista vacía
+# para no romper la cadena de importación del módulo.
 # -----------------------------------------------------------------------------
-EXPERTOS = [
-    {
-        "id": "EXP-01",
-        "trato": "M.Sc.",
-        "nombre": "M.Sc. Iván Soria Solís",
-        "nombre_completo": "IVÁN SORIA SOLÍS",
-        "dni": "40725333",
-        "profesion": "Ingeniero Informático y de Sistemas",
-        "grado": "Magíster Scientiae en Informática",
-        "cip": "CIP N.° 184521",
-        "cargo": "Docente de la Escuela Profesional de Ingeniería de Sistemas",
-        "institucion": "Universidad Nacional José María Arguedas (UNAJMA)",
-        "especialidad": "Tecnologías de la Información, Sistemas de Información y Métodos de Investigación"
-    },
-    {
-        "id": "EXP-02",
-        "trato": "M.Sc.",
-        "nombre": "M.Sc. Daniel Minaya Gutiérrez",
-        "nombre_completo": "DANIEL MINAYA GUTIÉRREZ",
-        "dni": "44254814",
-        "profesion": "Ingeniero Informático y de Sistemas",
-        "grado": "Magíster en Informática y Sistemas",
-        "cip": "CIP N.° 197842",
-        "cargo": "Docente de la Escuela Profesional de Ingeniería de Sistemas",
-        "institucion": "Universidad Nacional José María Arguedas (UNAJMA)",
-        "especialidad": "Calidad de Software, Ingeniería de Sistemas y Métodos Cuantitativos"
-    },
-    {
-        "id": "EXP-03",
-        "trato": "M.Sc.",
-        "nombre": "M.Sc. Javier Ramos Gonzales",
-        "nombre_completo": "JAVIER RAMOS GONZALES",
-        "dni": "44844286",
-        "profesion": "Ingeniero de Sistemas",
-        "grado": "Magíster en Ingeniería de Sistemas",
-        "cip": "CIP N.° 210455",
-        "cargo": "Docente de la Escuela Profesional de Ingeniería de Sistemas",
-        "institucion": "Universidad Nacional José María Arguedas (UNAJMA)",
-        "especialidad": "Sistemas de Información, Arquitectura Web y Gestión de Procesos"
-    }
-]
+EXPERTOS = []
 
 # -----------------------------------------------------------------------------
 # DEFINICIÓN DE ÍTEMS OFICIALES (DEC-007)
@@ -353,263 +319,33 @@ def insertar_encabezado_institucional(doc, titulo_instrumento, subtitulo_instrum
 # -----------------------------------------------------------------------------
 
 def generar_expediente_completo():
-    ruta_salida = os.path.join(RUTA_SALIDAS, "EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_SIVAC.docx")
-    print(f"[*] Generando Expediente Colegiado de Validación: {ruta_salida}")
-    doc = docx.Document()
-    configurar_margenes_unajma(doc.sections[0])
-    configurar_header_footer(doc, "UNAJMA - EPIS | EXPEDIENTE DE VALIDACIÓN POR JUICIO DE EXPERTOS")
-
-    # CARÁTULA INSTITUCIONAL
-    if os.path.exists(RUTA_ESCUDO):
-        p_img = doc.add_paragraph()
-        p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p_img.paragraph_format.space_before = Pt(12)
-        p_img.paragraph_format.space_after = Pt(14)
-        r_img = p_img.add_run()
-        r_img.add_picture(RUTA_ESCUDO, width=Cm(3.2))
-
-    agregar_p(doc, "UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS", negrita=True, tamano_pt=14,
-              espacio_desp=4, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0x00, 0x20, 0x60))
-    agregar_p(doc, "FACULTAD DE INGENIERÍA", negrita=True, tamano_pt=12.5,
-              espacio_desp=4, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0x1F, 0x49, 0x7D))
-    agregar_p(doc, "ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS", negrita=True, tamano_pt=12,
-              espacio_desp=24, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-    agregar_p(doc, "EXPEDIENTE TÉCNICO DE VALIDACIÓN DE INSTRUMENTOS POR JUICIO DE EXPERTOS", negrita=True, tamano_pt=14,
-              espacio_desp=10, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0x00, 0x20, 0x60))
-    agregar_p(doc, "EVALUACIÓN PSICOMÉTRICA MEDIANTE EL ÍNDICE DE VALIDEZ DE CONTENIDO (IVC) Y COEFICIENTE V DE AIKEN",
-              negrita=True, cursiva=True, tamano_pt=11, espacio_desp=26, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-    agregar_p(doc, "TRABAJO DE INVESTIGACIÓN:", negrita=True, tamano_pt=11, espacio_desp=4, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-    agregar_p(doc, "“APLICACIÓN DEL SISTEMA «SIVAC» PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II”",
-              negrita=True, tamano_pt=12, espacio_desp=28, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-    agregar_p(doc, "TESISTA / AUTOR: Bach. José Luis Quispe León (DNI N° 70519963)", negrita=True, tamano_pt=11, espacio_desp=4, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-    agregar_p(doc, "ASESORA: Dra. Norma Lorena Catacora Flores", negrita=True, tamano_pt=11, espacio_desp=32, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-    agregar_p(doc, "Andahuaylas, Apurímac - Perú\n2026", negrita=True, tamano_pt=11, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-    # SECCIÓN I: PROTOCOLO METODOLÓGICO Y PSICOMÉTRICO
-    agregar_h1(doc, "SECCIÓN I: PROTOCOLO METODOLÓGICO Y PSICOMÉTRICO DE VALIDACIÓN", page_break=True)
-    agregar_p(doc, "El presente expediente reúne las piezas técnicas y metodológicas para certificar la validez de contenido de los instrumentos de recolección de datos diseñados para la investigación. La validación se rige por la Guía Metodológica del Dr. Enrique Edgardo Cóndor Tinoco (docente de la EPIS - UNAJMA), fundamentada en Lawshe (1975), Tristán-López (2008), Aiken (1985) y Polit, Beck & Owen (2007).", sangria_cm=1.27)
-    agregar_p(doc, "El panel de validación está constituido por tres (03) docentes especialistas de la Escuela Profesional de Ingeniería de Sistemas de la UNAJMA con grado de Magíster y colegiatura vigente en el Colegio de Ingenieros del Perú (CIP). Cada experto evalúa la totalidad de los 32 ítems distribuidos en los tres instrumentos bajo cinco criterios psicométricos normados: Suficiencia, Relevancia, Coherencia, Claridad y Redacción.", sangria_cm=1.27)
-
-    # SECCIÓN II: RÚBRICA OFICIAL DE EVALUACIÓN
-    agregar_h1(doc, "SECCIÓN II: RÚBRICA INSTITUCIONAL DE CALIFICACIÓN POR CRITERIO", page_break=False)
-    agregar_p(doc, "Tabla 1. *Rúbrica de niveles para la evaluación psicométrica de ítems por juicio de expertos*", cursiva=True, tamano_pt=10, espacio_desp=4)
-
-    t_rubrica = doc.add_table(rows=6, cols=3)
-    aplicar_bordes_cuadricula(t_rubrica)
-    formatear_celdas_tabla(t_rubrica, [3.0, 5.0, 7.5])
-
-    headers_rub = ["Criterio", "Definición Institucional", "Indicadores de Calificación (Escala 1 a 4)"]
-    for c_idx, h in enumerate(headers_rub):
-        cell = t_rubrica.cell(0, c_idx)
-        colorear_celda(cell, COLOR_AZUL_UNAJMA)
-        set_texto_celda(cell, h, negrita=True, tamano_pt=9.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0xFF, 0xFF, 0xFF))
-
-    datos_rub = [
-        ("Suficiencia", "¿El ítem abarca suficientemente el contenido del indicador?",
-         "1 = El ítem no es suficiente para medir el indicador.\n2 = El ítem mide algún aspecto, pero no cubre la dimensión.\n3 = El ítem podría modificarse para contribuir completamente.\n4 = El ítem es plenamente suficiente y abarca el indicador."),
-        ("Relevancia", "¿El ítem es pertinente y esencial para la variable investigada?",
-         "1 = El ítem puede ser eliminado sin afectar la medición.\n2 = El ítem tiene poca relevancia o aporte tangencial.\n3 = El ítem es relativamente importante y pertinente.\n4 = El ítem es muy relevante, esencial y debe ser considerado."),
-        ("Coherencia", "¿El ítem está alineado lógicamente con los objetivos y dimensiones?",
-         "1 = El ítem no tiene relación lógica con la dimensión.\n2 = El ítem tiene una relación tangencial con la dimensión.\n3 = El ítem tiene una relación moderada y coherente con el indicador.\n4 = El ítem se encuentra completamente relacionado y coherente."),
-        ("Claridad", "¿El ítem es comprensible, unívoco y libre de ambigüedades?",
-         "1 = El ítem no está claro, genera confusión o ambigüedad.\n2 = El ítem requiere modificaciones sustanciales de redacción.\n3 = El ítem requiere una modificación específica de términos.\n4 = El ítem es plenamente claro, directo y se entiende."),
-        ("Redacción", "¿El ítem cumple con la normativa gramatical y sintáctica académica?",
-         "1 = La redacción del ítem no es adecuada.\n2 = La redacción del ítem tiene que ser mejorada en su sintaxis.\n3 = La redacción del ítem podría ser mejorada en su semántica.\n4 = La redacción es entendible, adecuada y gramaticalmente correcta.")
-    ]
-
-    for r_idx, fila in enumerate(datos_rub, start=1):
-        for c_idx, val in enumerate(fila):
-            cell = t_rubrica.cell(r_idx, c_idx)
-            set_texto_celda(cell, val, negrita=(c_idx==0), tamano_pt=8.5)
-
-    agregar_p(doc, "Nota. Tomado literalmente del Formato Institucional de Validación por Ítem de la EPIS - UNAJMA (Dr. Enrique Cóndor Tinoco, 2020; Tristán-López, 2008).", cursiva=True, tamano_pt=9, espacio_antes=4, espacio_desp=12)
-
-    # SECCIÓN III: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)
-    agregar_h1(doc, "SECCIÓN III: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES VINCULADA", page_break=True)
-    agregar_p(doc, "Tabla 2. *Operacionalización de variables con las tres dimensiones oficiales fijadas por DEC-007*", cursiva=True, tamano_pt=10, espacio_desp=4)
-
-    t_op = doc.add_table(rows=7, cols=5)
-    aplicar_bordes_apa7(t_op)
-    formatear_celdas_tabla(t_op, [2.5, 3.2, 3.6, 3.0, 3.2])
-
-    headers_op = ["Variable", "Dimensiones", "Indicadores", "Unidad / Escala", "Instrumento Oficial"]
-    for c_idx, h in enumerate(headers_op):
-        cell = t_op.cell(0, c_idx)
-        colorear_celda(cell, COLOR_AZUL_UNAJMA)
-        set_texto_celda(cell, h, negrita=True, tamano_pt=9.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0xFF, 0xFF, 0xFF))
-
-    datos_op = [
-        ("VI: Sistema web SIVAC", "Ingeniería de Software XP e ISO/IEC 25010:2023", "Fases XP (Planificación, Diseño, Codificación, Pruebas y Aceptación)", "Hitos de iteración cumplidos (Ordinal)", "Ficha técnica de desarrollo y auditoría"),
-        ("VD: Gestión de movimientos de vacunas", "1. Oportunidad de procesamiento", "I1.1: Tiempo de registro (T_reg)\nI1.2: Tiempo de emisión de vale (T_vale)", "Minutos decimales (Razón)\nMinutos decimales (Razón)", "Instrumento 01:\nFicha de Tiempos Cronometrados"),
-        ("", "2. Consistencia documental", "I2.1: Registros sin discrepancias (RSD)\nI2.2: Concordancia prog. vs ent. (CPE)", "Porcentaje % (Razón)\nPorcentaje % (Razón)", "Instrumento 02:\nGuía de Cotejo Documental"),
-        ("", "3. Satisfacción del usuario", "I3.1: Aceptación del proceso (AP)\nI3.2: Utilidad percibida (UP)", "Escala Likert 1-5 (Ordinal)\nEscala Likert 1-5 (Ordinal)", "Instrumento 03:\nCuestionario TAM"),
-        ("", "Población censal", "Personal de inmunizaciones: N = n = 14", "DISA Apurímac II", "Pretest y Postest (O1 -> X -> O2)"),
-        ("", "Módulo complementario", "Calidad en uso de software SIVAC", "Constructos PU y PEOU (TAM clásico)", "Anexo al Instrumento 03 (Postest)")
-    ]
-
-    for r_idx, fila in enumerate(datos_op, start=1):
-        for c_idx, val in enumerate(fila):
-            cell = t_op.cell(r_idx, c_idx)
-            set_texto_celda(cell, val, tamano_pt=8.5)
-
-    agregar_p(doc, "Nota. Matriz aprobada y custodiada bajo mandato metodológico DEC-007.", cursiva=True, tamano_pt=9, espacio_antes=4, espacio_desp=14)
-
-    # -------------------------------------------------------------------------
-    # SECCIONES IV, V Y VI: EXPEDIENTES INDIVIDUALIZADOS POR JUEZ EXPERTO
-    # -------------------------------------------------------------------------
-    romanos = ["IV", "V", "VI"]
-    for idx_exp, exp in enumerate(EXPERTOS):
-        sec_num = romanos[idx_exp]
-        agregar_h1(doc, f"SECCIÓN {sec_num}: EXPEDIENTE DE EVALUACIÓN — {exp['nombre'].upper()}", page_break=True)
-
-        # 1. CARTA FORMAL DE SOLICITUD
-        agregar_h2(doc, f"{sec_num}.1. Carta Formal de Solicitud de Juicio de Expertos")
-        agregar_p(doc, "Andahuaylas, 15 de marzo de 2026", alineacion=WD_ALIGN_PARAGRAPH.RIGHT, espacio_desp=8)
-        agregar_p(doc, f"Señor(a):\n{exp['nombre']}\n{exp['cargo']}\nUniversidad Nacional José María Arguedas\nPresente.-", negrita=True, espacio_desp=10)
-        agregar_p(doc, "De mi mayor consideración:", espacio_desp=4)
-        agregar_p(doc, "Yo, Bach. José Luis Quispe León, identificado con DNI N° 70519963, egresado y tesista de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Nacional José María Arguedas, con la asesoría de la Dra. Norma Lorena Catacora Flores, me dirijo a usted con el debido respeto para presentarme y exponer:", sangria_cm=1.27)
-        agregar_p(doc, f"Dada su reconocida solvencia técnica, méritos académicos y amplia experiencia profesional en el área de {exp['especialidad']}, recurro a su digna persona para solicitarle su inapreciable colaboración como JUEZ EXPERTO para la VALIDACIÓN DE CONTENIDO de los instrumentos de recolección de datos correspondientes a mi trabajo de investigación intitulado:", sangria_cm=1.27)
-        agregar_p(doc, "“APLICACIÓN DEL SISTEMA «SIVAC» PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II”",
-                  negrita=True, tamano_pt=11, alineacion=WD_ALIGN_PARAGRAPH.CENTER, espacio_antes=4, espacio_desp=6)
-        agregar_p(doc, "El cual conduzco para optar el Título Profesional de Ingeniero de Sistemas. Sus observaciones, recomendaciones y calificaciones como juez de validación serán de inestimable valor para asegurar la validez psicométrica, coherencia y rigor metodológico de la investigación.", sangria_cm=1.27)
-        agregar_p(doc, "Para tal fin, pongo a su distinguida disposición los siguientes documentos adjuntos:", sangria_cm=1.27)
-        agregar_p(doc, "1. Matriz de consistencia metodológica de la investigación.\n"
-                       "2. Matriz de operacionalización de variables (con las 3 dimensiones DEC-007).\n"
-                       "3. Rúbrica oficial de criterios psicométricos de evaluación por ítem (Escala 1 a 4).\n"
-                       "4. Instrumento N° 01: Ficha de observación de tiempos cronometrados (T_reg y T_vale).\n"
-                       "5. Instrumento N° 02: Guía de cotejo documental de consistencia (RSD y CPE).\n"
-                       "6. Instrumento N° 03: Cuestionario de satisfacción del usuario bajo modelo TAM.\n"
-                       "7. Matrices de validación por ítem con escala de 1 a 4 puntos.\n"
-                       "8. Ficha de opinión de aplicabilidad global y constancia oficial de validación.", sangria_cm=1.27)
-        agregar_p(doc, "Agradeciéndole por anticipado su valiosa contribución académica al desarrollo de la investigación científica en nuestra universidad, me despido reiterándole las muestras de mi más alta consideración y estima personal.", sangria_cm=1.27)
-        agregar_p(doc, "\n\n__________________________________________\nBach. José Luis Quispe León\nDNI N° 70519963\nTesista - EPIS UNAJMA",
-                  alineacion=WD_ALIGN_PARAGRAPH.CENTER, espacio_desp=14)
-
-        # 2. MATRICES DE EVALUACIÓN POR ÍTEM (8 COLUMNAS FORMATO CÓNDOR TINOCO)
-        agregar_h2(doc, f"{sec_num}.2. Matriz de Validación de Contenido por Ítem — {exp['nombre']}")
-        agregar_p(doc, "Instrucciones: Califique cada ítem de 1 a 4 según la rúbrica oficial (Suficiencia, Relevancia, Coherencia, Claridad, Redacción). Valores de 3 o 4 representan acuerdo favorable para el cálculo del IVC.", cursiva=True, tamano_pt=9.0, espacio_desp=6)
-
-        def render_tabla_items_juez(doc, subtitulo, items):
-            agregar_h3(doc, subtitulo)
-            t = doc.add_table(rows=len(items)+1, cols=8)
-            aplicar_bordes_cuadricula(t)
-            formatear_celdas_tabla(t, [1.6, 6.4, 1.1, 1.1, 1.1, 1.1, 1.1, 2.0])
-
-            headers = ["Cód.", "Ítem / Reactivo Operacionalizado", "S\n(1-4)", "R\n(1-4)", "C\n(1-4)", "CL\n(1-4)", "RED\n(1-4)", "Observación"]
-            for c_i, h in enumerate(headers):
-                c = t.cell(0, c_i)
-                colorear_celda(c, COLOR_AZUL_UNAJMA)
-                set_texto_celda(c, h, negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0xFF, 0xFF, 0xFF))
-
-            for r_i, itm in enumerate(items, start=1):
-                set_texto_celda(t.cell(r_i, 0), itm[0], negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-                set_texto_celda(t.cell(r_i, 1), itm[1], tamano_pt=8.0)
-                # Calificaciones favorables de consenso (4 y 3)
-                p_c = "4" if (r_i % 3 != 0) else "3"
-                set_texto_celda(t.cell(r_i, 2), "4", tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-                set_texto_celda(t.cell(r_i, 3), "4", tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-                set_texto_celda(t.cell(r_i, 4), "4", tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-                set_texto_celda(t.cell(r_i, 5), p_c, tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-                set_texto_celda(t.cell(r_i, 6), "4", tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-                obs_txt = "Cumple plenamente" if p_c == "4" else "Alineación óptima"
-                set_texto_celda(t.cell(r_i, 7), obs_txt, tamano_pt=7.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-        render_tabla_items_juez(doc, "Instrumento 01: Ficha de Tiempos Cronometrados (8 Ítems)", ITEMS_INST1)
-        render_tabla_items_juez(doc, "Instrumento 02: Guía de Cotejo Documental de Consistencia (8 Ítems)", ITEMS_INST2)
-        render_tabla_items_juez(doc, "Instrumento 03: Cuestionario de Satisfacción TAM (16 Ítems)", ITEMS_INST3)
-
-        # 3. FICHA DE OPINIÓN DE APLICABILIDAD GLOBAL
-        agregar_h2(doc, f"{sec_num}.3. Ficha de Opinión de Aplicabilidad Global — {exp['nombre']}")
-        agregar_p(doc, "A continuación, el experto emite su dictamen global sobre la totalidad del conjunto de instrumentos:", cursiva=True, tamano_pt=9.5, espacio_desp=6)
-
-        t_op_glob = doc.add_table(rows=6, cols=3)
-        aplicar_bordes_cuadricula(t_op_glob)
-        formatear_celdas_tabla(t_op_glob, [1.2, 12.0, 2.3])
-
-        h_glob = ["N°", "Criterio de Evaluación Global", "Respuesta"]
-        for c_i, h in enumerate(h_glob):
-            c = t_op_glob.cell(0, c_i)
-            colorear_celda(c, COLOR_AZUL_UNAJMA)
-            set_texto_celda(c, h, negrita=True, tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0xFF, 0xFF, 0xFF))
-
-        preguntas_glob = [
-            ("1", "¿Los instrumentos responden con precisión a los objetivos e hipótesis de la investigación?", "[ X ] SÍ   [  ] NO"),
-            ("2", "¿Los ítems están formulados con claridad sintáctica, lenguaje técnico adecuado y sin ambigüedad?", "[ X ] SÍ   [  ] NO"),
-            ("3", "¿El número de reactivos es suficiente para medir con rigor las dimensiones de la VD (DEC-007)?", "[ X ] SÍ   [  ] NO"),
-            ("4", "¿Los instrumentos son factibles de ser administrados al personal censal en condiciones reales de campo?", "[ X ] SÍ   [  ] NO"),
-            ("5", "¿Las escalas de medición (minutos, %, Likert 1-5) son adecuadas para el análisis inferencial previsto?", "[ X ] SÍ   [  ] NO")
-        ]
-        for r_i, p_row in enumerate(preguntas_glob, start=1):
-            set_texto_celda(t_op_glob.cell(r_i, 0), p_row[0], tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-            set_texto_celda(t_op_glob.cell(r_i, 1), p_row[1], tamano_pt=8.5)
-            set_texto_celda(t_op_glob.cell(r_i, 2), p_row[2], negrita=True, tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-
-        agregar_p(doc, "\nCONCLUSIÓN DE APLICABILIDAD DEL INSTRUMENTO:", negrita=True, tamano_pt=10, espacio_antes=6, espacio_desp=4)
-        agregar_p(doc, "[ X ] APLICABLE SIN MODIFICACIÓN\n"
-                       "[   ] APLICABLE CON MODIFICACIONES MENORES\n"
-                       "[   ] NO APLICABLE (REQUIERE REFORMULACIÓN)", negrita=True, tamano_pt=9.5, sangria_cm=0.8, espacio_desp=8)
-
-        # 4. CONSTANCIA OFICIAL DE VALIDACIÓN DE CONTENIDO POR ÍTEM (FORMATO LITERAL CORRECIÓN DE FORMATOS)
-        agregar_h2(doc, f"{sec_num}.4. Constancia Oficial de Validación de Contenido por Ítem")
-        t_box = doc.add_table(rows=1, cols=1)
-        aplicar_bordes_cuadricula(t_box, sz="6")
-        formatear_celdas_tabla(t_box, [15.5])
-        colorear_celda(t_box.cell(0, 0), "F9FAFC")
-
-        agregar_p(doc, "CONSTANCIA DE VALIDACIÓN DE CONTENIDO DEL INSTRUMENTO POR ÍTEM",
-                  negrita=True, tamano_pt=11.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0x00, 0x20, 0x60))
-        agregar_p(doc, f"Quien suscribe, {exp['nombre_completo']}, con DNI Nº {exp['dni']}, de profesión {exp['profesion']}, con Grado de {exp['grado']}, por medio de la presente hago constar que he revisado con fines de validación los instrumentos de recolección de datos: Instrumento N° 1 (Ficha de Tiempos Cronometrados), Instrumento N° 2 (Guía de Cotejo Documental) e Instrumento N° 3 (Cuestionario de Satisfacción TAM) del proyecto de investigación “APLICACIÓN DEL SISTEMA «SIVAC» PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II” para los efectos de su aplicación en campo, presentado por el tesista Bach. José Luis Quispe León. Luego de revisar exhaustivamente los instrumentos, puedo formular las siguientes apreciaciones:",
-                  sangria_cm=1.27, tamano_pt=10, espacio_desp=6)
-        agregar_p(doc, f"1. Pertinencia y Validez: Los 32 ítems evaluados poseen una excelente validez de contenido, alcanzando un Coeficiente V de Aiken de V = 0.98 y un Índice de Validez de Contenido de IVC = 1.00 (Excelente validez, según baremo de Tristán-López, 2008).\n"
-                       f"2. Coherencia Metodológica: Se verifica el cumplimiento irrestricto de las tres dimensiones fijadas por la Directiva DEC-007 y el diseño preexperimental con medidas repetidas en población censal (N = n = 14).\n"
-                       f"3. Dictamen Final: Se otorga la calificación de APROBADO (APTO PARA SU APLICACIÓN INMEDIATA).",
-                  sangria_cm=1.27, tamano_pt=9.5, espacio_desp=14)
-        agregar_p(doc, "Andahuaylas, 20 de marzo de 2026", alineacion=WD_ALIGN_PARAGRAPH.RIGHT, espacio_desp=24)
-        agregar_p(doc, f"__________________________________________\n"
-                       f"{exp['nombre']}\n"
-                       f"{exp['profesion']}\n"
-                       f"{exp['grado']}\n"
-                       f"{exp['cip']}\n"
-                       f"Docente EPIS - UNAJMA",
-                  negrita=True, alineacion=WD_ALIGN_PARAGRAPH.CENTER, espacio_desp=18)
-
-    # SECCIÓN VII: CONSOLIDADO PSICOMÉTRICO INSTITUCIONAL
-    agregar_h1(doc, "SECCIÓN VII: CONSOLIDADO PSICOMÉTRICO INSTITUCIONAL (IVC Y V DE AIKEN)", page_break=True)
-    agregar_p(doc, "Tabla 3. *Consolidado general de coeficientes psicométricos por instrumento y decisión colegiada*", cursiva=True, tamano_pt=10, espacio_desp=4)
-
-    t_cons = doc.add_table(rows=5, cols=6)
-    aplicar_bordes_apa7(t_cons)
-    formatear_celdas_tabla(t_cons, [3.2, 2.2, 2.5, 2.4, 2.6, 2.6])
-
-    h_cons = ["Instrumento Oficial", "Ítems", "V de Aiken", "IVC Total", "Baremo Tristán", "Veredicto"]
-    for c_i, h in enumerate(h_cons):
-        c = t_cons.cell(0, c_i)
-        colorear_celda(c, COLOR_AZUL_UNAJMA)
-        set_texto_celda(c, h, negrita=True, tamano_pt=8.5, alineacion=WD_ALIGN_PARAGRAPH.CENTER, color_rgb=RGBColor(0xFF, 0xFF, 0xFF))
-
-    filas_cons = [
-        ("Inst. 01: Ficha Tiempos", "8 ítems", "0.98", "1.00", "Excelente (>=0.90)", "VÁLIDO"),
-        ("Inst. 02: Guía de Cotejo", "8 ítems", "0.98", "1.00", "Excelente (>=0.90)", "VÁLIDO"),
-        ("Inst. 03: Cuestionario TAM", "16 ítems", "0.97", "1.00", "Excelente (>=0.90)", "VÁLIDO"),
-        ("PROMEDIO COLEGIADO", "32 ítems", "0.98", "1.00", "Excelente (>=0.90)", "APROBADO")
-    ]
-
-    for r_i, f in enumerate(filas_cons, start=1):
-        es_total = (r_i == len(filas_cons))
-        for c_i, val in enumerate(f):
-            set_texto_celda(t_cons.cell(r_i, c_i), val, negrita=es_total, tamano_pt=8.5,
-                            alineacion=WD_ALIGN_PARAGRAPH.CENTER if c_i > 0 else WD_ALIGN_PARAGRAPH.LEFT,
-                            color_rgb=RGBColor(0x00, 0x66, 0x00) if (c_i == 5 and es_total) else None)
-
-    agregar_p(doc, "Nota. Datos consolidados a partir de las calificaciones individuales suscritas por los tres jueces expertos. Baremo: Tristán-López (2008), Aiken (1985).", cursiva=True, tamano_pt=9, espacio_antes=4, espacio_desp=14)
-
-    doc.save(ruta_salida)
-    print(f"[OK] Expediente Maestro generado con éxito: {ruta_salida}")
-    return ruta_salida
+    # ---------------------------------------------------------------------
+    # BLOQUEADO POR DEC-014 (2026-10-18)
+    #
+    # Este expediente contenia constancias, dictamenes y coeficientes (V de
+    # Aiken, IVC, intervalos de confianza) atribuidos a tres jueces que no
+    # evaluaron los instrumentos. La Regla Canonica 01, seccion 3, prohibe
+    # inventar o simular datos empiricos, y la demostracion aritmetica de
+    # DEC-014 prueba que V = 0.987 es inalcanzable con 32 items x 3 jueces x
+    # 4 categorias.
+    #
+    # El material se conserva en cuarentena en:
+    #   salidas/archivo/_material_apocrifo_no_usar/
+    #
+    # Los formatos vigentes son los certificados en blanco del modelo Fany
+    # 2024 generados por generar_anexo2_validacion_fany.py.
+    #
+    # Para reactivar esta funcion seria necesario un nuevo pronunciamiento del
+    # tesista y de la asesora que sustituya a DEC-014.
+    # ---------------------------------------------------------------------
+    raise RuntimeError(
+        "Generacion bloqueada por DEC-014: el expediente de validacion contenia "
+        "coeficientes psicometricos y constancias atribuidas a jueces que no "
+        "evaluaron los instrumentos, sin respaldo empirico. DEC-016 exige ademas "
+        "que los formatos de validacion se entreguen integramente en blanco, sin "
+        "nombres, DNI, CIP, sellos ni veredictos. Usar "
+        "scripts/compiladores/generar_anexo2_validacion_fany.py en su lugar."
+    )
 
 
 # -----------------------------------------------------------------------------
@@ -650,7 +386,7 @@ def generar_instrumento_1():
     datos_id = [
         ("Código del Operador Censal:", "TRAB-____  (Rango asignado: TRAB-01 a TRAB-14)"),
         ("Centro de Acopio / Red / Microred:", "Sede: _____________________________________  Provincia: [  ] Andahuaylas   [  ] Chincheros"),
-        ("Momento de Medición:", "[  ] PRETEST (O1: Kardex manual físico, libros de registro y hojas Excel dispersas)\n[  ] POSTEST (O2: Sistema web SIVAC - Arquitectura Laravel/MySQL)"),
+        ("Momento de Medición:", "[  ] PRETEST (O1: Kardex manual físico, libros de registro y hojas Excel dispersas)\n[  ] POSTEST (O2: Sistema web SIVAC y su base de datos relacional)"),
         ("Fecha, Turno y Observador:", "Fecha: _____ / _____ / 2025    Turno: [  ] Mañana   [  ] Tarde    Observador: Bach. José Luis Quispe León")
     ]
     for r_i, (k, v) in enumerate(datos_id):
@@ -678,7 +414,7 @@ def generar_instrumento_1():
         ("REG-01", "Registro simple de ingreso nacional (1 biológico, lote único)", "__:__:__", "__:__:__", "____:____", "________"),
         ("REG-02", "Despacho regular a centro de salud (2 a 3 vacunas de red)", "__:__:__", "__:__:__", "____:____", "________"),
         ("REG-03", "Movimiento complejo / reajuste multibioplástico e insumos", "__:__:__", "__:__:__", "____:____", "________"),
-        ("PROMEDIO", "TIEMPO PROMEDIO DE REGISTRO (T_reg) POR OPERADOR", "—", "—", "—", "________"),
+        ("PROMEDIO", "TIEMPO PROMEDIO DE REGISTRO (T_reg) POR OPERADOR", "-", "-", "-", "________"),
         ("VALE-01", "Vale simple de entrega a Puesto de Salud (1 a 2 ítems)", "__:__:__", "__:__:__", "____:____", "________"),
         ("VALE-02", "Vale multivacunal regular a Centro de Salud (3 a 5 ítems)", "__:__:__", "__:__:__", "____:____", "________"),
         ("VALE-03", "Vale de contingencia de cadena de frío o barrido vacunal", "__:__:__", "__:__:__", "____:____", "________")
@@ -741,7 +477,7 @@ def generar_instrumento_2():
     datos_id = [
         ("Código de Operador / Centro Auditado:", "TRAB-____  |  Centro de Acopio: _____________________________________"),
         ("Provincia / Red Sanitaria:", "Provincia: [  ] Andahuaylas   [  ] Chincheros  |  Red: ______________________"),
-        ("Momento de Auditoría:", "[  ] PRETEST (O1: Kardex físico, cuadernos manuales y actas manuscritas)\n[  ] POSTEST (O2: Registros en MySQL SIVAC y vales electrónicos PDF)"),
+        ("Momento de Auditoría:", "[  ] PRETEST (O1: Kardex físico, cuadernos manuales y actas manuscritas)\n[  ] POSTEST (O2: Registros en la base de datos relacional del sistema SIVAC y vales electrónicos PDF)"),
         ("Ventana Temporal de Auditoría:", "Del _____/_____/2025 al _____/_____/2025 (30 días calendario consecutivos)  |  Auditor: Bach. José Luis Quispe León")
     ]
     for r_i, (k, v) in enumerate(datos_id):
@@ -775,13 +511,13 @@ def generar_instrumento_2():
         set_texto_celda(t_crit.cell(r_i, 1), v, tamano_pt=8.0)
 
     agregar_h2(doc, "4. Matriz de Auditoría Muestral de Movimientos (Cálculo de RSD y CPE)")
-    agregar_p(doc, "Fórmulas oficiales: RSD (%) = (Registros Conformes / Total Auditados) * 100  |  CPE (%) = (Cant. Entregada / Cant. Programada) * 100", cursiva=True, tamano_pt=9.0)
+    agregar_p(doc, "Fórmulas oficiales: RSD (%) = (Registros Conformes / Total Auditados) * 100  |  CPE (%) = (Entregas Concordantes / Total de Entregas Evaluadas) * 100", cursiva=True, tamano_pt=9.0)
 
     t_aud = doc.add_table(rows=7, cols=7)
     aplicar_bordes_cuadricula(t_aud)
-    formatear_celdas_tabla(t_aud, [1.2, 3.2, 2.5, 2.5, 2.0, 2.1, 2.0])
+    formatear_celdas_tabla(t_aud, [1.2, 3.2, 2.3, 2.3, 2.4, 2.1, 2.0])
 
-    h_aud = ["N°", "N° Vale / PECOSA", "Cant. Prog.", "Cant. Entr.", "CPE %", "8 Criterios", "RSD (1/0)"]
+    h_aud = ["N°", "N° Vale / PECOSA", "Cant. Prog.", "Cant. Entr.", "Concordancia (1/0)", "8 Criterios", "RSD (1/0)"]
     for c_i, h in enumerate(h_aud):
         c = t_aud.cell(0, c_i)
         colorear_celda(c, COLOR_AZUL_UNAJMA)
@@ -792,7 +528,7 @@ def generar_instrumento_2():
         set_texto_celda(t_aud.cell(r_i, 1), f"VALE-2025-00{r_i}", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
         set_texto_celda(t_aud.cell(r_i, 2), "_____ dosis", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
         set_texto_celda(t_aud.cell(r_i, 3), "_____ dosis", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-        set_texto_celda(t_aud.cell(r_i, 4), "____%", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
+        set_texto_celda(t_aud.cell(r_i, 4), "[  ] 1   [  ] 0", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
         set_texto_celda(t_aud.cell(r_i, 5), "[  ] Conforme", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
         set_texto_celda(t_aud.cell(r_i, 6), "[  ]", tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
 
@@ -801,7 +537,7 @@ def generar_instrumento_2():
     set_texto_celda(t_aud.cell(6, 1), "TOTALES AUDITADOS", negrita=True, tamano_pt=8.0)
     set_texto_celda(t_aud.cell(6, 2), "N_prog = ___", negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
     set_texto_celda(t_aud.cell(6, 3), "N_entr = ___", negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
-    set_texto_celda(t_aud.cell(6, 4), "CPE = ___%", negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
+    set_texto_celda(t_aud.cell(6, 4), "N_conc = ___\nCPE = ___%", negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
     set_texto_celda(t_aud.cell(6, 5), "Conf: ___/___", negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
     set_texto_celda(t_aud.cell(6, 6), "RSD = ___%", negrita=True, tamano_pt=8.0, alineacion=WD_ALIGN_PARAGRAPH.CENTER)
     colorear_celda(t_aud.cell(6, 0), "F2F5F9")
@@ -1052,8 +788,15 @@ def main():
     print("SIVAC-THESIS-LAB - Squad B: COMPILACIÓN INTEGRAL DE EXPEDIENTE E INSTRUMENTOS")
     print("=" * 80)
 
-    # 1. Compilación de los 4 archivos DOCX
-    ruta_exp = generar_expediente_completo()
+    # 1. Compilación de los instrumentos DOCX
+    # El expediente de validacion queda excluido por DEC-014; los tres
+    # instrumentos de recoleccion de datos no estan afectados y se generan.
+    try:
+        ruta_exp = generar_expediente_completo()
+    except RuntimeError as exc:
+        print(f"[BLOQUEADO por DEC-014] {exc}")
+        ruta_exp = None
+
     ruta_i1 = generar_instrumento_1()
     ruta_i2 = generar_instrumento_2()
     ruta_i3 = generar_instrumento_3()
@@ -1063,7 +806,7 @@ def main():
     print("-" * 80)
 
     # 2. Exportación a PDF de alta resolución
-    archivos_docx = [ruta_exp, ruta_i1, ruta_i2, ruta_i3]
+    archivos_docx = [d for d in (ruta_exp, ruta_i1, ruta_i2, ruta_i3) if d]
     archivos_pdf = []
 
     for d in archivos_docx:
@@ -1077,7 +820,10 @@ def main():
         print(f"  • DOCX: {d} ({os.path.getsize(d):,} bytes)")
         print(f"    PDF:  {p} ({os.path.getsize(p):,} bytes)")
     print("=" * 80)
-    print("[ÉXITO TOTAL] Los 4 documentos DOCX y los 4 archivos PDF fueron compilados.")
+    print(f"[RESUMEN] Documentos DOCX generados: {len(archivos_docx)}  |  Archivos PDF exportados: {len(archivos_pdf)}")
+    if ruta_exp is None:
+        print("[BLOQUEADO por DEC-014] El expediente de validación por juicio de expertos no se generó. "
+              "El certificado vigente se produce con scripts/compiladores/generar_anexo2_validacion_fany.py.")
     print("=" * 80)
 
 if __name__ == "__main__":

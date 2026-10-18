@@ -7,46 +7,81 @@ Universidad Nacional José María Arguedas (UNAJMA)
 Facultad de Ingeniería - Escuela Profesional de Ingeniería de Sistemas
 
 Alineación 1:1 con el Informe Final EPIS-UNAJMA (Modelo Jhon 2026, pp. 88–98):
-- 13 secciones exactas (4.1 a 4.13) redactadas en tiempo pasado de investigación ejecutada
+- 14 secciones canónicas (4.1 a 4.14) redactadas en tiempo pasado de investigación ejecutada
 - Cero párrafo introductorio meta-explicativo debajo del título capitular
-- Cero fórmulas matemáticas, quebrados o signos '$' dentro de celdas de tablas o texto
+- Cero fórmulas matemáticas, quebrados o signos de dólar dentro de celdas de tablas o texto
 - Ecuaciones OMML nativas centradas en el cuerpo narrativo (docx_quirurgico.py)
-- Eliminación total de datos simulados de Alfa de Cronbach
-- Numeración global continua de tablas: Tablas 9, 10, 11 y 12
+- Numeración global continua de tablas: Tablas 9, 10, 11 y 12 (SEQ Tabla)
+- Cuadros metodológicos complementarios formateados bajo APA 7 sin campo SEQ Tabla
+- Preservación estricta de las 12 ecuaciones OMML nativas
 ================================================================================
 """
 
 import os
 import sys
-from docx.shared import Inches, Pt
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Inches, Pt, Twips
+from docx.text.paragraph import Paragraph
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utilidades')))
 
 from docx_utilidades import (
-    agregar_titulo_1, agregar_titulo_2, agregar_titulo_3,
-    agregar_parrafo, agregar_item_lista, agregar_tabla_datos
+    agregar_titulo_1, agregar_titulo_2, agregar_titulo_3, agregar_titulo_4,
+    agregar_parrafo, agregar_item_lista, agregar_tabla_datos,
+    formatear_tabla_apa7, procesar_formato_texto
 )
-from docx_quirurgico import mathml_to_omml
+from docx_quirurgico import (
+    mathml_to_omml, crear_parrafo_formula_dedicada, aplicar_formato_formula_dedicada,
+    ANCHO_UTIL_PORTRAIT_DXA, LINE_SPACING_1_0_DXA
+)
 
 try:
     from docx_quirurgico import insertar_ecuacion_centrada
 except ImportError:
     def insertar_ecuacion_centrada(doc, mathml_str, numero_eq=None):
-        """Inserta un párrafo centrado con una ecuación OMML nativa de Word a partir de MathML."""
-        p = doc.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p.paragraph_format.space_before = Pt(6)
-        p.paragraph_format.space_after = Pt(6)
-        p.paragraph_format.line_spacing = 1.15
-        p.paragraph_format.first_line_indent = Inches(0)
+        """
+        Inserta una ecuación OMML nativa de Word a partir de MathML.
+        La ecuación se sitúa sobre un tab stop centrado en la mitad del área de
+        texto (4394 dxa) y, cuando lleva numeración, el número se alinea al
+        margen derecho mediante un tab stop derecho (8788 dxa), sin espacios
+        literales de relleno.
+        """
         omml_elem = mathml_to_omml(mathml_str)
-        p._p.append(omml_elem)
-        if numero_eq is not None:
-            etiqueta = str(numero_eq) if str(numero_eq).startswith("(") else f"({numero_eq})"
-            run_num = p.add_run(f"    {etiqueta}")
-            run_num.font.name = 'Times New Roman'
-            run_num.font.size = Pt(12)
+        p_xml = crear_parrafo_formula_dedicada(
+            omml_elem,
+            align="left",
+            line_spacing=LINE_SPACING_1_0_DXA,
+            space_before=60,
+            space_after=120,
+            left_indent_dxa=0
+        )
+        doc.element.body.insert_element_before(p_xml, 'w:sectPr')
+        p = Paragraph(p_xml, doc._body)
+
+        if numero_eq is None:
+            aplicar_formato_formula_dedicada(p)
+            return p
+
+        # Tabulaciones nativas: centro del área de texto y margen derecho.
+        p.paragraph_format.tab_stops.add_tab_stop(
+            Twips(ANCHO_UTIL_PORTRAIT_DXA // 2), WD_TAB_ALIGNMENT.CENTER
+        )
+        p.paragraph_format.tab_stops.add_tab_stop(
+            Twips(ANCHO_UTIL_PORTRAIT_DXA), WD_TAB_ALIGNMENT.RIGHT
+        )
+
+        # Tabulador previo a la ecuación (la centra sobre el tab stop central).
+        run_tab_previo = p.add_run()
+        run_tab_previo.add_tab()
+        omml_elem.addprevious(run_tab_previo._r)
+
+        # Tabulador posterior y número de ecuación alineado al margen derecho.
+        run_tab_final = p.add_run()
+        run_tab_final.add_tab()
+        etiqueta = str(numero_eq) if str(numero_eq).startswith("(") else f"({numero_eq})"
+        run_num = p.add_run(etiqueta)
+        run_num.font.name = 'Times New Roman'
+        run_num.font.size = Pt(12)
         return p
 
 
@@ -56,65 +91,60 @@ except ImportError:
 
 MATHML_DISENO = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>G</mi>
+  <mi>GE</mi>
   <mo>:</mo>
-  <mspace width="0.5em"/>
   <msub><mi>O</mi><mn>1</mn></msub>
-  <mspace width="0.4em"/>
-  <mo>&#x27F6;</mo>
-  <mspace width="0.4em"/>
+  <mo>&#x2192;</mo>
   <mi>X</mi>
-  <mspace width="0.4em"/>
-  <mo>&#x27F6;</mo>
-  <mspace width="0.4em"/>
+  <mo>&#x2192;</mo>
   <msub><mi>O</mi><mn>2</mn></msub>
 </math>
 """
 
 MATHML_TREG = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msub><mi>T</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi></mrow></msub>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <munderover>
-        <mo>&#x2211;</mo>
-        <mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
-        <mi>k</mi>
-      </munderover>
-      <mrow><mo>(</mo><msub><mi>t</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>&#x2212;</mo><msub><mi>t</mi><mrow><mi>i</mi><mi>n</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>)</mo></mrow>
-    </mrow>
-    <mi>k</mi>
-  </mfrac>
-</math>
-"""
-
-MATHML_TVALE = """
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msub><mi>T</mi><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mi>e</mi></mrow></msub>
+  <msub><mover><mi>T</mi><mo>&#x00AF;</mo></mover><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mo>,</mo><mi>i</mi></mrow></msub>
   <mo>=</mo>
   <mfrac>
     <mrow>
       <munderover>
         <mo>&#x2211;</mo>
         <mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow>
-        <mi>m</mi>
+        <msub><mi>k</mi><mi>i</mi></msub>
       </munderover>
-      <mrow><mo>(</mo><msub><mi>t</mi><mrow><mi>e</mi><mi>m</mi><mi>i</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>&#x2212;</mo><msub><mi>t</mi><mrow><mi>s</mi><mi>o</mi><mi>l</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>u</mi><mi>d</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>)</mo></mrow>
+      <mrow><mo>(</mo><msub><mi>t</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mo>,</mo><mi>i</mi><mi>j</mi></mrow></msub><mo>&#x2212;</mo><msub><mi>t</mi><mrow><mi>i</mi><mi>n</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>o</mi><mo>,</mo><mi>i</mi><mi>j</mi></mrow></msub><mo>)</mo></mrow>
     </mrow>
-    <mi>m</mi>
+    <msub><mi>k</mi><mi>i</mi></msub>
+  </mfrac>
+</math>
+"""
+
+MATHML_TVALE = """
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub><mover><mi>T</mi><mo>&#x00AF;</mo></mover><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mi>e</mi><mo>,</mo><mi>i</mi></mrow></msub>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow>
+        <msub><mi>m</mi><mi>i</mi></msub>
+      </munderover>
+      <mrow><mo>(</mo><msub><mi>t</mi><mrow><mi>e</mi><mi>m</mi><mi>i</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>,</mo><mi>i</mi><mi>j</mi></mrow></msub><mo>&#x2212;</mo><msub><mi>t</mi><mrow><mi>s</mi><mi>o</mi><mi>l</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>u</mi><mi>d</mi><mo>,</mo><mi>i</mi><mi>j</mi></mrow></msub><mo>)</mo></mrow>
+    </mrow>
+    <msub><mi>m</mi><mi>i</mi></msub>
   </mfrac>
 </math>
 """
 
 MATHML_RSD = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>R</mi><mi>S</mi><mi>D</mi>
+  <mi>R</mi><mi>S</mi><msub><mi>D</mi><mi>i</mi></msub>
   <mo>=</mo>
   <mfenced open="(" close=")">
     <mfrac>
-      <msub><mi>N</mi><mrow><mi>c</mi><mi>o</mi><mi>r</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>s</mi></mrow></msub>
-      <msub><mi>N</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub>
+      <msub><mi>N</mi><mrow><mi>c</mi><mi>o</mi><mi>n</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>e</mi><mi>s</mi><mo>,</mo><mi>i</mi></mrow></msub>
+      <msub><mi>N</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>,</mo><mi>i</mi></mrow></msub>
     </mfrac>
   </mfenced>
   <mo>&#x00D7;</mo>
@@ -124,12 +154,12 @@ MATHML_RSD = """
 
 MATHML_CPE = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>C</mi><mi>P</mi><mi>E</mi>
+  <mi>C</mi><mi>P</mi><msub><mi>E</mi><mi>i</mi></msub>
   <mo>=</mo>
   <mfenced open="(" close=")">
     <mfrac>
-      <msub><mi>Q</mi><mrow><mi>e</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>g</mi><mi>a</mi><mi>d</mi><mi>a</mi></mrow></msub>
-      <msub><mi>Q</mi><mrow><mi>p</mi><mi>r</mi><mi>o</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>m</mi><mi>a</mi><mi>d</mi><mi>a</mi></mrow></msub>
+      <msub><mi>N</mi><mrow><mi>c</mi><mi>o</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>r</mi><mi>d</mi><mi>a</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>s</mi><mo>,</mo><mi>i</mi></mrow></msub>
+      <msub><mi>N</mi><mrow><mi>d</mi><mi>e</mi><mi>s</mi><mi>p</mi><mi>a</mi><mi>c</mi><mi>h</mi><mi>o</mi><mi>s</mi><mo>,</mo><mi>i</mi></mrow></msub>
     </mfrac>
   </mfenced>
   <mo>&#x00D7;</mo>
@@ -139,37 +169,27 @@ MATHML_CPE = """
 
 MATHML_AP = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>A</mi><mi>P</mi>
+  <mi>A</mi><msub><mi>P</mi><mi>i</mi></msub>
   <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <munderover>
-        <mo>&#x2211;</mo>
-        <mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
-        <msub><mi>k</mi><mrow><mi>A</mi><mi>P</mi></mrow></msub>
-      </munderover>
-      <msub><mi>X</mi><mrow><mi>A</mi><mi>P</mi><mo>,</mo><mi>i</mi></mrow></msub>
-    </mrow>
-    <msub><mi>k</mi><mrow><mi>A</mi><mi>P</mi></mrow></msub>
-  </mfrac>
+  <munderover>
+    <mo>&#x2211;</mo>
+    <mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow>
+    <mn>4</mn>
+  </munderover>
+  <msub><mi>X</mi><mrow><mi>A</mi><mi>P</mi><mo>,</mo><mi>i</mi><mi>j</mi></mrow></msub>
 </math>
 """
 
 MATHML_UP = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>U</mi><mi>P</mi>
+  <mi>U</mi><msub><mi>P</mi><mi>i</mi></msub>
   <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <munderover>
-        <mo>&#x2211;</mo>
-        <mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow>
-        <msub><mi>k</mi><mrow><mi>U</mi><mi>P</mi></mrow></msub>
-      </munderover>
-      <msub><mi>X</mi><mrow><mi>U</mi><mi>P</mi><mo>,</mo><mi>j</mi></mrow></msub>
-    </mrow>
-    <msub><mi>k</mi><mrow><mi>U</mi><mi>P</mi></mrow></msub>
-  </mfrac>
+  <munderover>
+    <mo>&#x2211;</mo>
+    <mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow>
+    <mn>4</mn>
+  </munderover>
+  <msub><mi>X</mi><mrow><mi>U</mi><mi>P</mi><mo>,</mo><mi>i</mi><mi>j</mi></mrow></msub>
 </math>
 """
 
@@ -207,7 +227,7 @@ MATHML_AIKEN = """
   <mo>=</mo>
   <mfrac>
     <mi>S</mi>
-    <mrow><mi>n</mi><mo>(</mo><mi>c</mi><mo>&#x2212;</mo><mn>1</mn><mo>)</mo></mrow>
+    <mi>n</mi>
   </mfrac>
 </math>
 """
@@ -252,14 +272,77 @@ MATHML_WILCOXON = """
 
 MATHML_EFECTO_R = """
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msub><mi>r</mi><mrow><mi>r</mi><mi>b</mi></mrow></msub>
+  <mi>r</mi>
   <mo>=</mo>
   <mfrac>
     <mrow><mo>|</mo><mi>Z</mi><mo>|</mo></mrow>
-    <msqrt><mi>n</mi></msqrt>
+    <msqrt><msub><mi>N</mi><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mi>i</mi><mi>d</mi><mi>o</mi><mi>s</mi></mrow></msub></msqrt>
   </mfrac>
 </math>
 """
+
+
+def agregar_cuadro_complementario(doc, titulo_texto, encabezados, filas, nota_texto=None, col_widths=None, font_size_pt=9.0):
+    """Inserta un cuadro metodológico complementario formateado en APA 7 sin campo SEQ Tabla."""
+    p_tit = doc.add_paragraph()
+    p_tit.paragraph_format.keep_with_next = True
+    p_tit.paragraph_format.space_before = Pt(12)
+    p_tit.paragraph_format.space_after = Pt(4)
+    p_tit.paragraph_format.line_spacing = 1.0
+    p_tit.paragraph_format.first_line_indent = Inches(0)
+
+    partes_tit = procesar_formato_texto(titulo_texto)
+    for r_texto, r_bold, r_italic in partes_tit:
+        run_t = p_tit.add_run(r_texto)
+        run_t.font.name = 'Times New Roman'
+        run_t.font.size = Pt(10)
+        run_t.font.bold = True or r_bold
+        run_t.font.italic = r_italic
+
+    tbl = doc.add_table(rows=len(filas) + 1, cols=len(encabezados))
+    for c_idx, h_text in enumerate(encabezados):
+        cell = tbl.rows[0].cells[c_idx]
+        p = cell.paragraphs[0]
+        p.text = ""
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        for r_texto, r_bold, r_italic in procesar_formato_texto(h_text):
+            r = p.add_run(r_texto)
+            r.font.name = 'Times New Roman'
+            r.font.size = Pt(font_size_pt)
+            r.font.bold = True
+            r.font.italic = r_italic
+
+    for r_idx, fila in enumerate(filas):
+        for c_idx, val in enumerate(fila):
+            cell = tbl.rows[r_idx + 1].cells[c_idx]
+            p = cell.paragraphs[0]
+            p.text = ""
+            for r_texto, r_bold, r_italic in procesar_formato_texto(val):
+                r = p.add_run(r_texto)
+                r.font.name = 'Times New Roman'
+                r.font.size = Pt(font_size_pt)
+                r.font.bold = r_bold
+                r.font.italic = r_italic
+
+    formatear_tabla_apa7(tbl, col_widths=col_widths, font_size_pt=font_size_pt)
+
+    if nota_texto:
+        p_not = doc.add_paragraph()
+        p_not.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_not.paragraph_format.space_before = Pt(4)
+        p_not.paragraph_format.space_after = Pt(12)
+        p_not.paragraph_format.line_spacing = 1.0
+        p_not.paragraph_format.first_line_indent = Inches(0)
+        run_lbl = p_not.add_run("Nota. ")
+        run_lbl.font.name = 'Times New Roman'
+        run_lbl.font.size = Pt(9.5)
+        run_lbl.font.italic = True
+        for r_texto, r_bold, r_italic in procesar_formato_texto(nota_texto):
+            r = p_not.add_run(r_texto)
+            r.font.name = 'Times New Roman'
+            r.font.size = Pt(9.5)
+            r.font.bold = r_bold
+            r.font.italic = r_italic
 
 
 def construir_capitulo4(doc):
@@ -273,7 +356,7 @@ def construir_capitulo4(doc):
         doc,
         "La investigación fue de tipo aplicada, por cuanto utilizó los principios de la ingeniería de software, "
         "la metodología ágil Extreme Programming (Beck, 1999) y el estándar internacional de calidad ISO/IEC 25010:2023 "
-        "(International Organization for Standardization [ISO] y International Electrotechnical Commission [IEC], 2023) "
+        "(International Organization for Standardization [ISO] e International Electrotechnical Commission [IEC], 2023) "
         "para diseñar, construir y desplegar el sistema web SIVAC con el propósito directo de resolver la problemática "
         "operativa en el control de movimientos de productos biológicos de la Dirección de Salud Apurímac II. Conforme "
         "a Hernández-Sampieri et al. (2014, p. 141), la investigación aplicada se orienta a la resolución práctica de "
@@ -288,13 +371,15 @@ def construir_capitulo4(doc):
     agregar_titulo_2(doc, "4.2. Nivel de investigación")
     agregar_parrafo(
         doc,
-        "El estudio se enmarcó en el nivel explicativo, dado que no se limitó a describir las deficiencias del registro "
-        "manual ni a correlacionar pasivamente fenómenos administrativos, sino que demostró la relación de causalidad "
-        "existente entre la introducción deliberada de la variable independiente (Sistema web SIVAC) y la mejora "
-        "cuantificable producida sobre la variable dependiente (Gestión de movimientos de vacunas). De acuerdo con "
-        "Hernández-Sampieri et al. (2014), los estudios explicativos tienen como finalidad determinar las causas de "
-        "los eventos y establecer en qué condiciones se manifiesta el efecto de un tratamiento experimental sobre "
-        "las dimensiones de oportunidad de procesamiento, consistencia documental y satisfacción del usuario.",
+        "La investigación se enmarcó en el tipo aplicada y nivel explicativo de evaluación de intervención tecnológica; "
+        "no obstante, debido a la naturaleza del diseño preexperimental de un solo grupo sin grupo de control paralelo, "
+        "el alcance inferencial se orienta a determinar la existencia de cambios estadísticamente significativos asociados "
+        "a la aplicación del sistema web SIVAC entre el pre-test y el post-test, reconociendo las amenazas a la validez "
+        "interna (historia, maduración, efecto de aprendizaje y familiarización tecnológica), las cuales fueron mitigadas "
+        "mediante ventanas de observación simétricas y protocolos estandarizados. Conforme a Hernández-Sampieri et al. "
+        "(2014), los estudios explicativos evalúan en qué condiciones se manifiesta el efecto de una intervención sobre "
+        "las dimensiones del fenómeno estudiado, aportando evidencia empírica cuantitativa sobre la optimización de los "
+        "procesos operativos en la cadena de frío sanitaria.",
         sangria=True
     )
 
@@ -304,13 +389,15 @@ def construir_capitulo4(doc):
     agregar_titulo_2(doc, "4.3. Método de investigación")
     agregar_parrafo(
         doc,
-        "Se empleó el método hipotético-deductivo, el cual partió de la observación sistemática de las demoras "
-        "operativas y discrepancias de saldo en el kardex físico de la cadena de frío provincial, prosiguió con la "
-        "formulación de las hipótesis general y específicas fundamentadas en el marco teórico de los sistemas de "
-        "información de gestión logística en salud, y culminó con la deducción de consecuencias contrastables "
-        "empíricamente mediante pruebas estadísticas de comparación pretest y postest (Hernández-Sampieri et al., 2014). "
-        "Este procedimiento garantizó la objetividad en la verificación de las hipótesis planteadas frente a la realidad "
-        "operativa de la institución sanitaria.",
+        "Se empleó el método hipotético-deductivo, articulado sistemáticamente a lo largo de siete fases consecutivas "
+        "previstas durante el desarrollo de la investigación: (1) diagnóstico basal de los flujos de información, tiempos "
+        "y discrepancias documentales en la cadena de frío de la Dirección de Salud Apurímac II; (2) desarrollo e ingeniería "
+        "del sistema web SIVAC aplicando las cuatro fases de Extreme Programming y el estándar ISO/IEC 25010:2023; (3) "
+        "validación de contenido de los instrumentos por juicio de expertos y formalización del protocolo de confiabilidad; (4) "
+        "medición basal pre-test (O₁) de los seis indicadores bajo la gestión manual tradicional; (5) despliegue institucional, "
+        "capacitación técnica y periodo de estabilización operativa del sistema (X); (6) medición post-test (O₂) "
+        "bajo la gestión digitalizada automatizada; y (7) procesamiento bioestadístico, verificación de normalidad y "
+        "contrastación formal de las hipótesis formuladas (Hernández-Sampieri et al., 2014).",
         sangria=True
     )
 
@@ -348,7 +435,7 @@ def construir_capitulo4(doc):
     )
     agregar_parrafo(
         doc,
-        "El diagrama formal que representó el diseño de la investigación fue el siguiente:",
+        "El esquema formal que representó el diseño preexperimental de la investigación fue el siguiente:",
         sangria=True
     )
 
@@ -357,27 +444,83 @@ def construir_capitulo4(doc):
     agregar_parrafo(doc, "Donde:", sangria=False, negrita=True)
     agregar_item_lista(
         doc,
-        "**G:** Grupo único experimental conformado por la totalidad censal del personal operativo de inmunizaciones "
+        "**GE:** Grupo experimental único conformado por la totalidad censal del personal operativo de inmunizaciones "
         "y cadena de frío de la Dirección de Salud Apurímac II (14 trabajadores).",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
-        "**O1:** Medición previa (pre-test) de los indicadores de la gestión de movimientos de vacunas bajo el "
-        "procedimiento tradicional manual (libros foliados, cuadernos de cargo y hojas de cálculo aisladas).",
+        "**O₁:** Medición previa (pre-test) de los seis indicadores de la gestión de movimientos de vacunas bajo el "
+        "procedimiento tradicional manual (libros foliados, cuadernos de cargo y hojas de cálculo aisladas) a lo largo "
+        "de una ventana de observación estandarizada de 30 días calendario.",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
-        "**X:** Aplicación del estímulo experimental, consistente en la puesta en producción y uso operativo del "
-        "sistema web SIVAC.",
+        "**X:** Intervención tecnológica experimental, conformada por el despliegue del sistema web SIVAC, inducción "
+        "técnica estandarizada y periodo de estabilización operativa.",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
-        "**O2:** Medición posterior (post-test) de los mismos seis indicadores de la gestión de movimientos de "
-        "vacunas ejecutada mediante el sistema web SIVAC.",
+        "**O₂:** Medición posterior (post-test) de los mismos seis indicadores de la gestión de movimientos de "
+        "vacunas ejecutada mediante el sistema web SIVAC a lo largo de una ventana simétrica de 30 días calendario.",
         simbolo="•"
+    )
+
+    agregar_parrafo(
+        doc,
+        "Para garantizar la validez metodológica interna y neutralizar potenciales sesgos de reactividad, historia "
+        "o fatiga en las mediciones, se implementó un protocolo temporal simétrico compuesto por cuatro etapas: (a) "
+        "una ventana basal pre-test (O₁) de 30 días calendario; (b) una fase de inducción y capacitación técnica estandarizada "
+        "de 5 días hábiles sobre los módulos de SIVAC a los 14 operadores; (c) un periodo de estabilización operativa de 10 días "
+        "calendario en producción asistida previo al inicio del post-test, orientado a mitigar el sesgo derivado de la curva "
+        "inicial de aprendizaje tecnológico; y (d) una ventana post-test (O₂) simétrica de 30 días calendario bajo idénticas "
+        "condiciones de demanda institucional. En el siguiente cuadro se detalla el cronograma y protocolo de ejecución de la "
+        "intervención preexperimental.",
+        sangria=True
+    )
+
+    headers_cronograma = [
+        "Etapa de Intervención",
+        "Actividades Operativas Desarrolladas",
+        "Ventana Temporal",
+        "Control de Amenazas a la Validez"
+    ]
+    filas_cronograma = [
+        [
+            "Etapa 1: Medición basal pre-test (O₁)",
+            "Auditoría retrospectiva y concurrente de libros de kardex manuales, cronometraje in situ de registros y vales pecosa físicos, y aplicación de la Modalidad A del Instrumento N.° 03 en línea base.",
+            "30 días calendario",
+            "Observación directa bajo condiciones rutinarias para evitar reactividad del personal."
+        ],
+        [
+            "Etapa 2: Despliegue y capacitación técnica (X)",
+            "Instalación de SIVAC en servidores y terminales, inducción teórico-práctica estandarizada a los 14 operadores censales y entrega de manuales operativos.",
+            "5 días hábiles",
+            "Estandarización del dominio operativo de la plataforma en todos los centros de acopio."
+        ],
+        [
+            "Etapa 3: Estabilización operativa (X)",
+            "Uso asistido de SIVAC en operaciones diarias con soporte técnico in situ, resolución de dudas transaccionales y ajuste de perfiles de usuario.",
+            "10 días calendario",
+            "Mitigación del sesgo de curva de aprendizaje inicial y familiarización tecnológica previa al post-test."
+        ],
+        [
+            "Etapa 4: Medición post-test (O₂)",
+            "Auditoría de registros transaccionales digitales en base de datos SIVAC, cronometraje digital de operaciones y vales, y aplicación de las modalidades A y B del Instrumento N.° 03 tras la intervención.",
+            "30 días calendario",
+            "Ventana temporal idéntica a O₁ bajo igual régimen de demanda y flujo de biológicos."
+        ]
+    ]
+    agregar_cuadro_complementario(
+        doc,
+        titulo_texto="Cronograma y protocolo de ejecución de la intervención preexperimental",
+        encabezados=headers_cronograma,
+        filas=filas_cronograma,
+        nota_texto="Estructura temporal diseñada para mitigar amenazas a la validez interna mediante ventanas simétricas de 30 días calendario y un intervalo de estabilización operativa previo a la recolección post-test.",
+        col_widths=[Inches(1.30), Inches(2.40), Inches(1.10), Inches(1.30)],
+        font_size_pt=9.0
     )
 
     # ==========================================================================
@@ -489,11 +632,94 @@ def construir_capitulo4(doc):
     agregar_titulo_2(doc, "4.8. Unidad de análisis")
     agregar_parrafo(
         doc,
-        "La unidad de análisis estuvo constituida por cada operador técnico y administrativo de la cadena de "
-        "inmunizaciones de la Dirección de Salud Apurímac II (sujetos S-01 a S-14), conjuntamente con las transacciones "
-        "documentales de movimiento de productos biológicos y vales oficiales de salida ejecutados por dicho personal "
-        "durante los periodos simétricos de observación del pre-test y post-test.",
+        "En la arquitectura metodológica del estudio se diferenció estrictamente la unidad de observación primaria "
+        "de la unidad de análisis estadístico pareado. Las unidades de observación primarias correspondieron a los eventos "
+        "transaccionales específicos recolectados en campo: las operaciones cronometradas de registro y despacho, los asientos "
+        "y expedientes de kardex auditados, las órdenes de distribución conciliadas y las respuestas a los cuestionarios "
+        "psicométricos administrados. Por su parte, la unidad de análisis estadístico pareado estuvo constituida de manera "
+        "invariable por cada uno de los catorce operadores (OP-01 a OP-14, N = n = 14) que gestionaron la cadena de "
+        "inmunizaciones en ambos periodos de observación.",
         sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "Para posibilitar los contrastes pareados intrasujeto requeridos por las pruebas de Wilcoxon y t de Student, "
+        "se aplicó una regla formal de agregación matemática por operador que consolidó las observaciones primarias "
+        "en un único par ordenado (O₁ᵢ, O₂ᵢ) por cada trabajador: (a) para el Tiempo de registro (T_reg), se calculó el promedio "
+        "aritmético en minutos de las k operaciones observadas para el operador i en cada periodo; (b) para el Tiempo de emisión "
+        "de vales (T_vale), se calculó el promedio aritmético en minutos de los m vales emitidos por el operador i en cada periodo; "
+        "(c) para los Registros sin discrepancias (RSD), se obtuvo el porcentaje de registros conformes (que cumplen simultáneamente "
+        "los 8 criterios normativos) sobre el total de registros auditados al operador i en la ventana de 30 días; (d) para la "
+        "Concordancia programada vs. entregada (CPE), se determinó el porcentaje de despachos concordantes sobre el total de "
+        "despachos auditados al operador i; y (e) para la Aceptación del proceso (AP) y la Utilidad "
+        "percibida (UP), se utilizó el puntaje sumativo directo obtenido por el operador i en cada subescala "
+        "de 4 ítems (rango de 4 a 20 puntos), correspondiendo a AP-01 a AP-04 y a UP-01 a UP-04.",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "Asimismo, se definieron explícitamente los criterios de inclusión y el tamaño muestral efectivo (n efectivo) por "
+        "indicador. Dado que los 4 operadores de la sede central y los 10 responsables de centros de acopio periféricos "
+        "pueden ejecutar volúmenes diferenciados de emisión de vales frente a recepción física de biológicos, se reporta "
+        "con transparencia el n efectivo de pares válidos por cada indicador cuando un operador no emita comprobantes de "
+        "salida en ambos periodos o presente diferencia nula en los rangos con signo de Wilcoxon (O₂ᵢ - O₁ᵢ = 0). En el "
+        "cuadro siguiente se detalla la correspondencia entre unidades de observación primaria, reglas de agregación "
+        "pareada por operador y criterios de inclusión.",
+        sangria=True
+    )
+
+    headers_unidades = [
+        "Dimensión e Indicador",
+        "Unidad de Observación Primaria",
+        "Regla de Agregación Pareada por Operador",
+        "Criterio de Inclusión / n Efectivo"
+    ]
+    filas_unidades = [
+        [
+            "Dimensión 1:\nTiempo de registro (T_reg)",
+            "Operaciones individuales de registro de movimientos (ingresos y egresos).",
+            "Promedio aritmético en minutos de las k operaciones del operador i en la ventana de 30 días.",
+            "n = 14 operadores con operaciones de registro observadas en pre-test y post-test."
+        ],
+        [
+            "Dimensión 1:\nTiempo de emisión de vale (T_vale)",
+            "Eventos de confección y emisión de comprobantes de salida o vales pecosa.",
+            "Promedio aritmético en minutos de los m vales emitidos por el operador i en el periodo.",
+            "n efectivo correspondiente a los operadores con emisión de vales en ambos periodos."
+        ],
+        [
+            "Dimensión 2:\nRegistros sin discrepancias (RSD)",
+            "Asientos de kardex y transacciones de control de lotes auditados.",
+            "Porcentaje de registros con 8 criterios aprobados simultáneamente sobre el total del operador i.",
+            "n = 14 operadores con expedientes de kardex auditados en pre-test y post-test."
+        ],
+        [
+            "Dimensión 2:\nConcordancia programada vs. entregada (CPE)",
+            "Despachos de vacunas conciliados contra órdenes oficiales de requerimiento.",
+            "Porcentaje de despachos con coincidencia exacta (Q_entregada = Q_programada) del operador i.",
+            "n = 14 operadores con despachos conciliados en pre-test y post-test."
+        ],
+        [
+            "Dimensión 3:\nAceptación del proceso (AP)",
+            "Respuestas individuales a los reactivos AP-01 a AP-04 del cuestionario psicométrico de la Modalidad A.",
+            "Puntaje sumativo directo de los 4 reactivos de Aceptación del proceso operativo (rango de 4 a 20 puntos).",
+            "n = 14 operadores censales que completaron el cuestionario en ambas etapas."
+        ],
+        [
+            "Dimensión 3:\nUtilidad percibida (UP)",
+            "Respuestas individuales a los reactivos UP-01 a UP-04 del cuestionario psicométrico de la Modalidad A.",
+            "Puntaje sumativo directo de los 4 reactivos de Utilidad percibida para la gestión (rango de 4 a 20 puntos).",
+            "n = 14 operadores censales que completaron el cuestionario en ambas etapas."
+        ]
+    ]
+    agregar_cuadro_complementario(
+        doc,
+        titulo_texto="Estructura de unidades de observación primaria, reglas de agregación pareada y criterios de inclusión",
+        encabezados=headers_unidades,
+        filas=filas_unidades,
+        nota_texto="Diferenciación metodológica entre las unidades empíricas observadas en campo y los pares agregados por operador (N = 14) requeridos para el análisis estadístico inferencial.",
+        col_widths=[Inches(1.60), Inches(1.50), Inches(1.80), Inches(1.20)],
+        font_size_pt=9.0
     )
 
     # ==========================================================================
@@ -504,24 +730,24 @@ def construir_capitulo4(doc):
     agregar_titulo_3(doc, "4.9.1. Variable independiente: Sistema web SIVAC")
     agregar_parrafo(
         doc,
-        "El sistema web SIVAC se definió conceptualmente como la plataforma informática transaccional de arquitectura "
-        "cliente-servidor de tres capas construida bajo la metodología ágil Extreme Programming (Beck, 1999) y evaluada "
-        "conforme al modelo de calidad de producto ISO/IEC 25010:2023 (ISO y IEC, 2023). Operacionalmente, el sistema "
-        "automatizó el control de inventario por lotes bajo la regla FEFO (primero en expirar, primero en salir), el "
-        "registro de movimientos de entradas, salidas, reajustes y mermas, y la emisión inmediata de comprobantes de "
-        "salida en formato electrónico estandarizado.",
+        "La variable independiente (Sistema web SIVAC) se define operacionalmente como una intervención tecnológica "
+        "dicotómica administrada en el entorno de trabajo: condición basal pre-intervención (X₀: gestión manual en formatos "
+        "físicos y libros de kardex) frente a condición post-intervención (X₁: gestión digitalizada mediante el sistema "
+        "web SIVAC). Su ingeniería bajo Extreme Programming y su verificación técnica bajo el estándar ISO/IEC 25010:2023 "
+        "se documentan en el Capítulo III como sustento de construcción del artefacto tecnológico.",
         sangria=True
     )
 
     agregar_titulo_3(doc, "4.9.2. Variable dependiente: Gestión de movimientos de vacunas")
     agregar_parrafo(
         doc,
-        "La gestión de movimientos de vacunas se definió conceptualmente como el proceso técnico-administrativo y "
-        "logístico que regula la recepción, conservación, registro contable en kardex y distribución de productos "
-        "biológicos e insumos complementarios a través de los niveles de la cadena de frío sanitaria (Ministerio de "
-        "Salud, 2022). Operacionalmente, esta variable fue medida mediante tres dimensiones oficiales: oportunidad de "
-        "procesamiento, consistencia documental y satisfacción del usuario, desglosadas en seis indicadores "
-        "cuantitativos cuyos atributos descriptivos se presentan en la Tabla 10.",
+        "La variable dependiente (Gestión de movimientos de vacunas) se definió conceptualmente como el proceso "
+        "técnico-administrativo y logístico que regula la recepción, conservación, registro contable en kardex y "
+        "distribución de productos biológicos e insumos complementarios a través de los niveles de la cadena de frío "
+        "sanitaria (Ministerio de Salud, 2022). Operacionalmente, esta variable fue medida mediante tres dimensiones "
+        "oficiales fijadas por la normativa metodológica del estudio: oportunidad de procesamiento, consistencia "
+        "documental y satisfacción del usuario, desglosadas en seis indicadores cuantitativos cuyos atributos descriptivos "
+        "se presentan en la Tabla 10.",
         sangria=True
     )
 
@@ -536,35 +762,35 @@ def construir_capitulo4(doc):
     filas_t10 = [
         [
             "**Variable Independiente:**\nSistema web SIVAC",
-            "Plataforma tecnológica web desarrollada mediante las fases de la metodología ágil Extreme Programming y verificada bajo los atributos del estándar ISO/IEC 25010:2023.",
-            "Planificación\n\nDiseño\n\nCodificación\n\nPruebas",
-            "Historias de usuario y plan de entregas\n\nArquitectura de datos y prototipos de interfaz\n\nMódulos transaccionales e integración continua\n\nPruebas unitarias y pruebas de aceptación",
-            "Cumplimiento de artefactos de ingeniería y casos de prueba",
-            "Nominal / De razón"
+            "Intervención tecnológica dicotómica: condición basal pre-intervención (X₀: gestión manual en formatos físicos) vs. condición post-intervención (X₁: gestión digitalizada mediante el sistema web SIVAC). Su ingeniería bajo XP y verificación técnica bajo ISO/IEC 25010:2023 se documentan en el Capítulo III.",
+            "Intervención tecnológica dicotómica",
+            "Condición basal pre-intervención (X₀: gestión manual en formatos físicos)\n\nCondición post-intervención (X₁: gestión digitalizada mediante el sistema web SIVAC)",
+            "Condición operativa del sistema",
+            "Nominal dicotómica (X₀ = Manual, X₁ = SIVAC)"
         ],
         [
             "**Variable Dependiente:**\nGestión de movimientos de vacunas",
-            "Desempeño integral del proceso de registro, control documental y despacho de biológicos evaluado en tiempos de ejecución, exactitud de asientos y percepción del operador.",
+            "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
             "1. Oportunidad de procesamiento",
-            "Tiempo de registro de movimiento de vacunas\n\nTiempo de emisión de comprobante de salida o vale",
-            "Minutos cronometrados por transacción",
+            "Tiempo de registro de movimiento de vacunas (T_reg)\n\nTiempo de emisión de comprobante de salida o vale (T_vale)",
+            "Minutos cronometrados por transacción (promedio pareado)",
             "De razón (continua)"
         ],
         [
             "**Variable Dependiente:**\nGestión de movimientos de vacunas",
-            "Desempeño integral del proceso de registro, control documental y despacho de biológicos evaluado en tiempos de ejecución, exactitud de asientos y percepción del operador.",
+            "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
             "2. Consistencia documental",
-            "Porcentaje de registros sin discrepancias\n\nConcordancia de cantidad programada versus entregada",
-            "Porcentaje de exactitud y cumplimiento documental",
+            "Porcentaje de registros sin discrepancias (RSD)\n\nConcordancia de cantidad programada versus entregada (CPE)",
+            "Porcentaje de exactitud y conformidad documental",
             "De razón (0% a 100%)"
         ],
         [
             "**Variable Dependiente:**\nGestión de movimientos de vacunas",
-            "Desempeño integral del proceso de registro, control documental y despacho de biológicos evaluado en tiempos de ejecución, exactitud de asientos y percepción del operador.",
+            "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
             "3. Satisfacción del usuario",
-            "Aceptación del proceso\n\nUtilidad percibida",
-            "Puntaje en cuestionario psicométrico bajo el modelo TAM",
-            "Ordinal (Likert de 1 a 5)"
+            "Aceptación del proceso operativo (AP: reactivos AP-01 a AP-04)\n\nUtilidad percibida para la gestión (UP: reactivos UP-01 a UP-04)",
+            "Puntaje sumativo en cuestionario psicométrico (4 a 20 puntos por indicador; 8 a 40 puntos en el total de la dimensión)",
+            "Ordinal / Intervalar (total de la dimensión: 8 a 40)"
         ]
     ]
     agregar_tabla_datos(
@@ -573,100 +799,102 @@ def construir_capitulo4(doc):
         titulo="Operacionalización de las variables de investigación",
         encabezados=headers_t10,
         filas=filas_t10,
-        nota="Estructura metodológica de variables, dimensiones, indicadores, unidades de medida y escalas de valoración del estudio.",
+        nota="Estructura metodológica de variables, dimensiones, indicadores, unidades de medida y escalas de valoración del estudio conforme a las 3 dimensiones oficiales de la variable dependiente.",
         col_widths=[Inches(0.98), Inches(1.38), Inches(0.93), Inches(1.23), Inches(0.84), Inches(0.74)],
         font_size_pt=9.0
     )
 
     agregar_parrafo(
         doc,
-        "La cuantificación matemática de los seis indicadores de la variable dependiente se efectuó en el cuerpo "
-        "analítico del estudio mediante las expresiones formales que se detallan a continuación.",
+        "La cuantificación matemática de los seis indicadores de la variable dependiente se efectuó mediante las "
+        "expresiones formales descritas a continuación, las cuales rigen el procesamiento de las observaciones empíricas.",
         sangria=True
     )
 
     # Ecuación (1): T_reg
     agregar_parrafo(
         doc,
-        "El primer indicador de la dimensión oportunidad de procesamiento, correspondiente al tiempo de registro de "
-        "movimiento de vacunas, se cuantificó mediante la media aritmética de los intervalos cronometrados por "
-        "operador, expresada en la Ecuación 1:",
+        "El primer indicador de la dimensión oportunidad de procesamiento, correspondiente al tiempo promedio de "
+        "registro de movimientos de vacunas para el operador i, se calculó mediante la Ecuación 1:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_TREG, numero_eq=1)
     agregar_parrafo(
         doc,
-        "Donde el término de resultado representa el tiempo promedio de registro de movimientos en minutos, los "
-        "instantes inicial y final corresponden a la apertura y conclusión formal de cada asiento transaccional, y "
-        "el denominador indica el número total de transacciones observadas por operador.",
+        "Donde el término de la izquierda representa el tiempo medio de registro del operador i en minutos, los términos "
+        "t_fin y t_inicio corresponden a los instantes exactos de culminación e inicio de cada una de las k operaciones "
+        "observadas para dicho operador, y el denominador ki indica el total de registros cronometrados en la ventana de "
+        "observación respectiva.",
         sangria=True
     )
 
     # Ecuación (2): T_vale
     agregar_parrafo(
         doc,
-        "El segundo indicador de la primera dimensión, referido al tiempo de emisión de comprobante de salida o vale, "
-        "se determinó a través del promedio de duración de la generación documental del despacho, según la Ecuación 2:",
+        "El segundo indicador de la dimensión oportunidad de procesamiento, referido al tiempo promedio de emisión de "
+        "comprobante de salida o vale pecosa para el operador i, se determinó a través de la Ecuación 2:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_TVALE, numero_eq=2)
     agregar_parrafo(
         doc,
-        "Donde el indicador expresa el tiempo promedio de emisión del comprobante de salida en minutos, calculado a "
-        "partir de la diferencia entre el instante de impresión o exportación del documento oficial y el instante de "
-        "solicitud de despacho sobre el total de vales emitidos.",
+        "Donde la expresión representa el tiempo medio de emisión de comprobantes del operador i en minutos, t_emision "
+        "y t_solicitud registran los instantes de entrega formal del vale impreso o generado y de recepción de la "
+        "solicitud de despacho, y mi constituye el número total de vales gestionados por dicho operador en el periodo.",
         sangria=True
     )
 
     # Ecuación (3): RSD
     agregar_parrafo(
         doc,
-        "En la segunda dimensión, consistente en la consistencia documental, el porcentaje de registros sin "
-        "discrepancias se calculó como la razón porcentual de asientos que cumplieron simultáneamente los ocho "
-        "criterios de auditoría técnica respecto al total de registros evaluados, conforme a la Ecuación 3:",
+        "En la segunda dimensión, referida a la consistencia documental, el porcentaje de registros sin discrepancias "
+        "del operador i se calculó como la proporción de asientos que cumplieron simultáneamente los ocho criterios "
+        "normativos de control sobre el total auditado, conforme a la Ecuación 3:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_RSD, numero_eq=3)
     agregar_parrafo(
         doc,
-        "Donde el numerador contabiliza el número de movimientos auditados que aprobaron de forma simultánea los ocho "
-        "criterios de control interno (identificación del biológico, código de lote, fecha de vencimiento, cantidad "
-        "física, centro de origen o destino, identificación del responsable, exactitud del saldo aritmético y "
-        "correlatividad cronológica) y el denominador representa el total de asientos revisados en el periodo.",
+        "Donde el numerador cuantifica los movimientos del operador i que aprobaron los ocho criterios normativos de "
+        "conformidad simultánea (identificación del biológico, lote, vencimiento, cantidad física, centro de origen o "
+        "destino, identificación del responsable, saldo aritmético y correlatividad temporal) y el denominador representa "
+        "el total de asientos auditados a dicho operador durante la ventana de evaluación.",
         sangria=True
     )
 
     # Ecuación (4): CPE
     agregar_parrafo(
         doc,
-        "El segundo indicador de la dimensión consistencia documental, denominado concordancia de cantidad programada "
-        "versus entregada, midió el grado de exactitud volumétrica en la ejecución de las órdenes de distribución "
-        "mediante la Ecuación 4:",
+        "El segundo indicador de la dimensión consistencia documental, correspondiente a la concordancia de cantidad "
+        "programada versus entregada, evaluó el porcentaje de despachos concordantes auditados al operador i mediante "
+        "la Ecuación 4:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_CPE, numero_eq=4)
     agregar_parrafo(
         doc,
-        "Donde el numerador representa la cantidad de dosis y diluyentes efectivamente despachados y conciliados en "
-        "conformidad con el acta de recepción, y el denominador expresa la cantidad total programada en el "
-        "requerimiento oficial del establecimiento de salud.",
+        "Donde el numerador representa el número de despachos auditados en los que la cantidad física entregada en el "
+        "vale coincidió con exactitud matemática con la cantidad programada en la orden oficial (Q_entregada = Q_programada), "
+        "y el denominador expresa el total de despachos auditados al operador i en el periodo, garantizando que el "
+        "indicador quede acotado estrictamente en el rango de 0% a 100% y evitando distorsiones por sobredespacho.",
         sangria=True
     )
 
     # Ecuación (5): AP
     agregar_parrafo(
         doc,
-        "Dentro de la tercera dimensión, orientada a la satisfacción del usuario bajo el Modelo de Aceptación "
-        "Tecnológica de Davis (1989), el indicador de aceptación del proceso se obtuvo promediando las calificaciones "
-        "asignadas por cada operador a los reactivos de adecuación del flujo de trabajo, como se define en la Ecuación 5:",
+        "Dentro de la tercera dimensión, orientada a la satisfacción del usuario bajo el Modelo de Aceptación Tecnológica "
+        "(Davis, 1989), el indicador de aceptación del proceso se cuantificó como el puntaje sumativo directo obtenido por "
+        "el operador i en los cuatro reactivos AP-01 a AP-04 que integran la subescala de aceptación del proceso "
+        "operativo, según la Ecuación 5:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_AP, numero_eq=5)
     agregar_parrafo(
         doc,
-        "Donde cada término del sumatorio corresponde a la puntuación ordinal otorgada por el operador en la escala "
-        "de cinco niveles y el denominador representa el número de reactivos que integran la subescala de aceptación "
-        "del proceso.",
+        "Donde cada término representa la calificación ordinal asignada por el operador i al reactivo j (del reactivo "
+        "AP-01 al reactivo AP-04) en la escala Likert de 1 a 5 puntos, arrojando un puntaje sumativo acotado en el "
+        "intervalo de 4 a 20 puntos.",
         sangria=True
     )
 
@@ -674,15 +902,15 @@ def construir_capitulo4(doc):
     agregar_parrafo(
         doc,
         "Finalmente, el indicador de utilidad percibida cuantificó la valoración del personal respecto a la eficacia "
-        "instrumental del sistema para optimizar su desempeño laboral en la cadena de frío, calculándose mediante la "
-        "Ecuación 6:",
+        "instrumental del sistema para optimizar su desempeño laboral en la cadena de frío, calculándose como el puntaje "
+        "sumativo en los cuatro reactivos UP-01 a UP-04 de la subescala correspondiente mediante la Ecuación 6:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_UP, numero_eq=6)
     agregar_parrafo(
         doc,
-        "Donde el numerador acumula las puntuaciones asignadas en los reactivos de eficacia y control logístico de "
-        "la subescala correspondiente y el denominador indica la cantidad total de ítems evaluados en dicho componente.",
+        "Donde los términos acumulan las puntuaciones otorgadas por el operador i a los reactivos UP-01 a UP-04 en la "
+        "escala Likert de 1 a 5 puntos, configurando un puntaje sumativo individual comprendido entre 4 y 20 puntos.",
         sangria=True
     )
 
@@ -724,14 +952,23 @@ def construir_capitulo4(doc):
     agregar_titulo_3(doc, "4.10.2. Instrumentos de recolección de datos")
     agregar_parrafo(
         doc,
-        "En correspondencia directa con las técnicas descritas, se diseñaron y aplicaron tres instrumentos de "
-        "medición compuestos por un total de treinta y dos (32) ítems o criterios de evaluación: (a) el Instrumento "
-        "N.° 01, Ficha de observación de tiempos cronometrados (8 ítems de control temporal); (b) el Instrumento "
-        "N.° 02, Guía de cotejo de consistencia documental (8 ítems de auditoría sobre los ocho criterios de "
-        "conformidad); y (c) el Instrumento N.° 03, Cuestionario de satisfacción del usuario bajo el modelo TAM "
-        "(16 ítems en escala Likert de cinco puntos: 1 = Totalmente en desacuerdo, 2 = En desacuerdo, 3 = Neutral, "
-        "4 = De acuerdo y 5 = Totalmente de acuerdo). En la Tabla 11 se sintetiza la correspondencia entre dimensiones, "
-        "indicadores, técnicas e instrumentos.",
+        "En correspondencia directa con las técnicas descritas, se diseñaron y aplicaron tres instrumentos de recolección "
+        "de datos con especificaciones operativas rigurosas: (a) el Instrumento N.° 01, Ficha de observación de tiempos "
+        "cronometrados, estructurada con campos de control temporal y tres escenarios operativos estandarizados (REG-01: "
+        "registro de ingreso de lote de vacuna; REG-02: registro de salida o transferencia; y VALE-01: emisión de vale pecosa) "
+        "con disparadores unívocos de inicio y fin de cronometraje; (b) el Instrumento N.° 02, Guía de cotejo documental, "
+        "conformada por ocho criterios binarios de verificación de conformidad formal emanados de las disposiciones de la "
+        "Norma Técnica de Salud NTS N.° 196-MINSA/DGIESP-2022 (aprobada por Resolución Ministerial N.° 884-2022/MINSA) sobre "
+        "gestión de la cadena de frío, regla FEFO, factores de pérdida y saldos de kardex; y (c) el Instrumento N.° 03, "
+        "Cuestionario cuya Modalidad A constituye la escala oficial de contrastación de la Hipótesis Específica 3 y está "
+        "integrada por 8 ítems en escala Likert de 5 puntos (1 = Totalmente en desacuerdo, 2 = En desacuerdo, 3 = Neutral, "
+        "4 = De acuerdo y 5 = Totalmente de acuerdo), distribuidos en dos indicadores de 4 reactivos cada uno: Aceptación "
+        "del proceso operativo (AP-01 a AP-04) y Utilidad percibida para la gestión (UP-01 a UP-04), con un rango global "
+        "de 8 a 40 puntos y aplicación en pretest y postest. El mismo Instrumento N.° 03 incorpora, como módulo anexo "
+        "de aplicación exclusiva en el postest, la Modalidad B, compuesta por 8 ítems adicionales (PU-01 a PU-04 y PE-01 "
+        "a PE-04) destinados a documentar los constructos clásicos de utilidad y facilidad de uso percibidas del software "
+        "bajo ISO/IEC 25010:2023. Ambas modalidades no son aditivas y la Modalidad B no interviene en el contraste "
+        "inferencial. En la Tabla 11 se sintetiza la correspondencia metodológica.",
         sangria=True
     )
 
@@ -748,21 +985,21 @@ def construir_capitulo4(doc):
             "Tiempo de registro de movimiento de vacunas\n\nTiempo de emisión de comprobante de salida o vale",
             "Observación directa cronometrada",
             "Instrumento N.° 01:\nFicha de observación de tiempos cronometrados",
-            "8 ítems de medición cronométrica en baterías estandarizadas de registro y despacho"
+            "Escenarios estandarizados (REG-01, REG-02 y VALE-01) con disparadores unívocos de cronometraje"
         ],
         [
             "2. Consistencia documental",
             "Porcentaje de registros sin discrepancias\n\nConcordancia de cantidad programada versus entregada",
             "Análisis documental y auditoría de kardex",
             "Instrumento N.° 02:\nGuía de cotejo de consistencia documental",
-            "8 ítems de verificación dicotómica bajo los ocho criterios de conformidad contable"
+            "8 criterios binarios de conformidad contable sustentados en la NTS N.° 196-MINSA/DGIESP-2022"
         ],
         [
             "3. Satisfacción del usuario",
             "Aceptación del proceso\n\nUtilidad percibida",
             "Encuesta psicométrica estructurada",
-            "Instrumento N.° 03:\nCuestionario de satisfacción del usuario (Modelo TAM)",
-            "16 reactivos en escala ordinal Likert de 1 a 5 puntos distribuidos por subescalas"
+            "Instrumento N.° 03:\nCuestionario de satisfacción del usuario y aceptación tecnológica",
+            "Modalidad A (oficial para HE3): 8 ítems Likert de 1 a 5, en pretest y postest, con 4 ítems para Aceptación del proceso (AP-01 a AP-04) y 4 para Utilidad percibida (UP-01 a UP-04).\n\nModalidad B (anexo ISO/IEC 25010:2023): 8 ítems Likert de 1 a 5, exclusivos del postest, con 4 ítems para Utilidad percibida del software (PU-01 a PU-04) y 4 para Facilidad de uso percibida (PE-01 a PE-04). No aditiva respecto de la Modalidad A."
         ]
     ]
     agregar_tabla_datos(
@@ -771,7 +1008,7 @@ def construir_capitulo4(doc):
         titulo="Relación de técnicas e instrumentos de recolección de datos por dimensión e indicador",
         encabezados=headers_t11,
         filas=filas_t11,
-        nota="Correspondencia metodológica entre las tres dimensiones de la variable dependiente y los tres instrumentos validados.",
+        nota="Correspondencia metodológica entre las tres dimensiones de la variable dependiente y los tres instrumentos diseñados.",
         col_widths=[Inches(1.13), Inches(1.43), Inches(1.08), Inches(1.28), Inches(1.18)],
         font_size_pt=9.5
     )
@@ -782,31 +1019,43 @@ def construir_capitulo4(doc):
     agregar_titulo_2(doc, "4.11. Confiabilidad de los instrumentos")
     agregar_parrafo(
         doc,
-        "La confiabilidad se refiere al grado en que la aplicación repetida de un instrumento al mismo sujeto u "
-        "objeto produce resultados consistentes y coherentes (Hernández-Sampieri et al., 2014). Para los Instrumentos "
-        "N.° 01 (Ficha de observación de tiempos cronometrados) y N.° 02 (Guía de cotejo de consistencia documental), "
-        "la confiabilidad estuvo garantizada por su naturaleza de medición física y de auditoría objetiva no "
-        "psicométrica: el primero empleó cronometraje digital calibrado con precisión centesimal sobre puntos de "
-        "inicio y corte inequívocos, mientras que el segundo aplicó una verificación dicotómica de cumplimiento "
-        "simultáneo sobre ocho criterios normativos de control de inventario, eliminando la subjetividad del evaluador.",
+        "La confiabilidad se refiere al grado en que la aplicación repetida de un instrumento al mismo sujeto u objeto "
+        "produce resultados consistentes y coherentes (Hernández-Sampieri et al., 2014). En el presente estudio se "
+        "establecerán protocolos de confiabilidad diferenciados según la naturaleza empírica de cada instrumento. Para el "
+        "Instrumento N.° 01 (Ficha de observación de tiempos cronometrados), la confiabilidad del registro temporal se "
+        "asegurará mediante un protocolo estandarizado de cronometraje con disparadores unívocos de inicio (apertura del "
+        "formulario de captura) y corte (confirmación de guardado y emisión), complementado con una prueba piloto de "
+        "calibración interobservador e instrucciones precisas de manejo de interrupciones no imputables a la plataforma.",
         sangria=True
     )
     agregar_parrafo(
         doc,
-        "Para el Instrumento N.° 03 (Cuestionario de satisfacción del usuario bajo el modelo TAM, conformado por 16 "
-        "ítems politómicos en escala Likert de 1 a 5), la confiabilidad por consistencia interna se determinó mediante "
-        "el coeficiente Alfa de Cronbach, cuya formulación matemática se presenta en la Ecuación 7:",
+        "Para el Instrumento N.° 02 (Guía de cotejo de consistencia documental), la confiabilidad de la auditoría se "
+        "garantizará mediante un manual formal de codificación dicotómica para los ocho criterios normativos de la NTS "
+        "N.° 196-MINSA/DGIESP-2022 y la verificación de la concordancia interevaluador a través del coeficiente Kappa de "
+        "Cohen (κ = (P_o - P_e) / (1 - P_e)), reconociendo que cuando la auditoría es ejecutada por un único investigador "
+        "se aplicará doble verificación cruzada sobre una submuestra aleatoria del 20% de expedientes para asegurar que κ >= 0.80.",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "Para el Instrumento N.° 03, en su Modalidad A oficial de 8 ítems en escala Likert de 1 a 5, la confiabilidad por "
+        "consistencia interna se determinará mediante el coeficiente Alfa de Cronbach (α), cuya formulación matemática "
+        "se expresa en la Ecuación 7:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_ALFA, numero_eq=7)
     agregar_parrafo(
         doc,
-        "Donde el coeficiente representa el índice Alfa de Cronbach, el parámetro de dimensión indica el número de "
-        "ítems del cuestionario (16 reactivos), el sumatorio acumula las varianzas individuales de cada ítem y el "
-        "denominador corresponde a la varianza de los puntajes totales observados. En estricto cumplimiento del "
-        "principio de integridad científica y cero invención de datos empíricos, el coeficiente Alfa de Cronbach "
-        "de la aplicación definitiva se registra como [Pendiente de cálculo tras levantamiento de campo], considerándose "
-        "como umbral mínimo aceptable un valor igual o superior a 0.70 (Hernández-Sampieri et al., 2014).",
+        "Donde el parámetro K representa el número de reactivos analizados, la sumatoria acumula las varianzas de los "
+        "ítems individuales y el denominador indica la varianza del puntaje total de la escala. En concordancia con "
+        "las directrices psicométricas y el principio de cero invención de datos empíricos, el coeficiente Alfa de Cronbach "
+        "(α) se reportará de forma desagregada para la subescala de Aceptación del proceso operativo (AP-01 a AP-04, "
+        "4 ítems), para la subescala de Utilidad percibida para la gestión (UP-01 a UP-04, 4 ítems) y para el puntaje "
+        "global de la Modalidad A sobre los 8 ítems que la integran, una vez concluido el levantamiento de campo, "
+        "exigiéndose como umbral mínimo de consistencia un valor α >= 0.70 (Hernández-Sampieri et al., 2014). La "
+        "Modalidad B no forma parte de esa estimación y, de reportarse su consistencia interna, se presentará como "
+        "indicador descriptivo separado, sin agregación con la Modalidad A.",
         sangria=True
     )
 
@@ -816,84 +1065,100 @@ def construir_capitulo4(doc):
     agregar_titulo_2(doc, "4.12. Validez de los instrumentos")
     agregar_parrafo(
         doc,
-        "La validez de contenido determinó el grado en que los instrumentos reflejaron un dominio específico de "
-        "contenido de las dimensiones medidas (Hernández-Sampieri et al., 2014). Este proceso se ejecutó mediante "
-        "el técnica de juicio de tres (3) expertos con grado académico de Magíster e Ingeniero de Sistemas y "
-        "experiencia acreditada en ingeniería de software y gestión sanitaria, quienes evaluaron los treinta y dos (32) "
-        "ítems del expediente instrumental bajo cinco criterios: suficiencia, relevancia, coherencia, claridad y "
-        "redacción, utilizando una escala ordinal de cuatro niveles (1 = No cumple a 4 = Alto nivel). La cuantificación "
-        "de la concordancia se realizó mediante el Coeficiente V de Aiken, expresado en la Ecuación 8, complementado "
-        "con el Índice de Validez de Contenido (IVC) de Tristán-López (2008):",
+        "La validez de contenido determinará el grado en que el instrumento refleje con fidelidad y exhaustividad "
+        "el dominio teórico de las dimensiones evaluadas (Hernández-Sampieri et al., 2014). Este procedimiento se "
+        "ejecutará mediante juicio de expertos con tres docentes e investigadores con grado de Magíster de la Escuela "
+        "Profesional de Ingeniería de Sistemas de la Universidad Nacional José María Arguedas. El objeto del juicio es "
+        "un único certificado de validez de contenido correspondiente al Instrumento N.° 03, que reproduce literalmente "
+        "los 8 ítems de su Modalidad A (AP-01 a AP-04 y UP-01 a UP-04) y los somete a tres criterios dicotómicos "
+        "independientes por ítem: Pertinencia (Sí/No), Relevancia (Sí/No) y Claridad (Sí/No). La cuantificación de la "
+        "concordancia se realizará mediante el Coeficiente V de Aiken (Ecuación 8) y el Índice de Validez de Contenido "
+        "(IVC), ambos derivados del modelo de Tristán-López (2008), que para tres jueces fija un valor mínimo por ítem "
+        "de 0.5823:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_AIKEN, numero_eq=8)
     agregar_parrafo(
         doc,
-        "Donde el numerador representa la sumatoria de los puntajes asignados por los expertos disminuidos en el valor "
-        "mínimo de la escala, el primer factor del denominador indica el número de jueces evaluadores (tres expertos) "
-        "y el segundo factor corresponde a la amplitud de la escala de valoración (cuatro categorías). En la Tabla 12 "
-        "se expone el consolidado de la validación por juicio de expertos, cuyo resultado global alcanzó un Coeficiente "
-        "V de Aiken de 0.98 y un Índice de Validez de Contenido de 1.00, superando el umbral crítico de 0.80 establecido "
-        "por Tristán-López (2008) y ratificando la plena aplicabilidad de los instrumentos.",
+        "Donde S representa la sumatoria de las valoraciones favorables asignadas por los jueces al ítem, n indica el "
+        "número de expertos evaluadores (3 jueces) y c denota el número de categorías de la escala de valoración, que "
+        "bajo criterios dicotámicos Sí/No adopta el valor c = 2, de modo que el denominador n(c - 1) se reduce a n. Los "
+        "indicadores se reportarán en la Tabla 12 una vez concluida la evaluación del panel, y se contrastarán contra el "
+        "umbral de aceptación de 0.80 que el presente estudio adopta como criterio propio, más estricto que el mínimo "
+        "de 0.5823 fijado por Tristán-López (2008) para tres jueces. Los Instrumentos N.° 01 y N.° 02 no se "
+        "someten a juicio de contenido, por cuanto no son escalas sino fichas de registro: su validez se sustenta en el "
+        "protocolo de medición de movimientos de vacunas (PMMV), en el coeficiente de correlación intraclase ICC(2,1) "
+        "mayor o igual a 0.75 para la ficha cronométrica y en el kappa de Cohen mayor o igual a 0.80 para la ficha de "
+        "cotejo documental. Corresponde explicitar una consecuencia aritmética del valor c = 2 sobre el umbral de "
+        "aceptación: con tres jueces y criterios dicotómicos, la Ecuación 8 solo puede adoptar cuatro valores, 0, 0.333, "
+        "0.667 y 1.000, de modo que el umbral de 0.80 se alcanza únicamente con unanimidad perfecta de los tres jueces, "
+        "y un solo voto negativo en un ítem lo deja en 0.667 y lo reprueba. El umbral de 0.80 no constituye, por tanto, "
+        "un margen tolerante, sino una exigencia de consenso total. Por esa razón el resultado se reportará ítem por "
+        "ítem con su intervalo de confianza de Wilson y no como un promedio que oculte la falta de consenso.",
         sangria=True
     )
 
     headers_t12 = [
-        "N.°",
-        "Juez Experto Evaluador",
-        "Grado Académico y Registro",
-        "Especialidad Profesional",
+        "Cód.",
+        "Instrumento Evaluado",
+        "Estructura Operativa",
+        "Sustento de Validez",
         "V de Aiken",
         "IVC",
         "Dictamen"
     ]
     filas_t12 = [
         [
-            "1",
-            "M.Sc. Iván Soria Solís",
-            "Magíster Scientiae en Informática\nCIP N.° 184521",
-            "Tecnologías de la Información, Sistemas y Métodos",
-            "0.98",
-            "1.00",
-            "Aprobado / Aplicable"
+            "INST-01",
+            "Instrumento N.° 01:\nFicha de observación de tiempos cronometrados",
+            "Escenarios operativos REG-01, REG-02 y VALE-01 con disparadores unívocos de cronometraje",
+            "No se somete a juicio de contenido. Protocolo PMMV e ICC(2,1) >= 0.75 entre observadores",
+            "No aplica",
+            "No aplica",
+            "Acreditado por protocolo y concordancia interobservador"
         ],
         [
-            "2",
-            "M.Sc. Daniel Minaya Gutiérrez",
-            "Magíster en Informática y Sistemas\nCIP N.° 197842",
-            "Calidad de Software y Métodos Cuantitativos",
-            "0.99",
-            "1.00",
-            "Aprobado / Aplicable"
+            "INST-02",
+            "Instrumento N.° 02:\nGuía de cotejo documental",
+            "8 criterios binarios de conformidad contable conforme a la NTS N.° 196-MINSA/DGIESP-2022",
+            "No se somete a juicio de contenido. Regla de 8 criterios y kappa de Cohen >= 0.80 entre evaluadores",
+            "No aplica",
+            "No aplica",
+            "Acreditado por protocolo y concordancia interevaluador"
         ],
         [
-            "3",
-            "M.Sc. Javier Ramos Gonzales",
-            "Magíster en Ingeniería de Sistemas\nCIP N.° 210455",
-            "Sistemas de Información y Arquitectura Web",
-            "0.98",
-            "1.00",
-            "Aprobado / Aplicable"
-        ],
-        [
-            "**Prom.**",
-            "**Consolidado Global del Panel de Expertos**",
-            "**3 Jueces Calificados**",
-            "**Evaluación Integral de 32 Ítems (Instrumentos 01, 02 y 03)**",
-            "**0.98**",
-            "**1.00**",
-            "**Validez Excelente**"
+            "INST-03",
+            "Instrumento N.° 03:\nCuestionario de satisfacción del usuario y aceptación tecnológica (Modalidad A)",
+            "8 ítems Likert de 1 a 5: AP-01 a AP-04 (Aceptación del proceso) y UP-01 a UP-04 (Utilidad percibida)",
+            "Juicio de contenido mediante certificado único con criterios dicotómicos Pertinencia, Relevancia y Claridad",
+            "[Pendiente]",
+            "[Pendiente]",
+            "[Pendiente]"
         ]
     ]
     agregar_tabla_datos(
         doc,
         numero="12",
-        titulo="Consolidado de validación de los instrumentos por juicio de expertos",
+        titulo="Estructura de la validación de los instrumentos de recolección de datos",
         encabezados=headers_t12,
         filas=filas_t12,
-        nota="Resultados obtenidos a partir de las constancias de validación suscritas por los tres expertos bajo el modelo institucional de la EPIS-UNAJMA.",
-        col_widths=[Inches(0.44), Inches(1.33), Inches(1.23), Inches(1.33), Inches(0.59), Inches(0.49), Inches(0.69)],
-        font_size_pt=9.0
+        nota="Solo el Instrumento N.° 03 (Modalidad A) se somete a juicio de contenido. Los valores del Coeficiente V de Aiken, del Índice de Validez de Contenido y el dictamen se registrarán una vez concluida la evaluación del panel de tres jueces expertos con el certificado único del instrumento; no se reporta ningún coeficiente mientras no exista evaluación real.",
+        col_widths=[Inches(0.60), Inches(1.14), Inches(1.14), Inches(1.36), Inches(0.58), Inches(0.43), Inches(0.85)],
+        font_size_pt=10
+    )
+
+    agregar_parrafo(
+        doc,
+        "La designación de los tres jueces expertos se fundamentará en su idoneidad académica, experiencia docente e "
+        "investigativa en ingeniería de sistemas, diseño de sistemas de información transaccionales y auditoría de sistemas "
+        "de información en la Universidad Nacional José María Arguedas, a fin de asegurar la rigurosidad técnica de los "
+        "artefactos de medición. Cada juez emitirá un certificado único sobre el Instrumento N.° 03, cuyo modelo es el "
+        "formato institucional de Fany (2024) adoptado por la normativa del proyecto, y lo entregará en blanco para su "
+        "llenado manuscrito. Como consideración metodológica complementaria, se reconoce que la pertinencia "
+        "logística-sanitaria de los criterios de control de las fichas 01 y 02 se respalda directamente en los "
+        "lineamientos normativos obligatorios de la NTS N.° 196-MINSA/DGIESP-2022 aplicable en la Dirección de Salud "
+        "Apurímac II.",
+        sangria=True
     )
 
     # ==========================================================================
@@ -902,50 +1167,85 @@ def construir_capitulo4(doc):
     agregar_titulo_2(doc, "4.13. Técnicas estadísticas para el procesamiento de la información")
     agregar_parrafo(
         doc,
-        "El procesamiento estadístico de los datos recolectados en el pre-test y post-test se estructuró mediante "
-        "rutinas computacionales reproducibles en el lenguaje Python (librerías científicas scipy.stats, statsmodels "
-        "y pingouin) y el entorno bioestadístico R. En la primera fase se aplicó la estadística descriptiva para cada "
-        "uno de los seis indicadores en ambas etapas experimentales, calculando medidas de tendencia central (media "
-        "aritmética y mediana), medidas de dispersión (desviación estándar y rango intercuartílico) y valores extremos "
-        "(mínimo y máximo).",
+        "El procesamiento estadístico de los datos recolectados en el pre-test y post-test se estructuró mediante rutinas "
+        "computacionales reproducibles en Python (scipy.stats, statsmodels, pingouin) y el entorno bioestadístico R. "
+        "En una primera fase descriptiva, se calcularon para cada indicador medidas de tendencia central (media aritmética, "
+        "mediana) y de dispersión (desviación estándar, rango intercuartílico), junto con valores extremos mínimos y máximos.",
         sangria=True
     )
     agregar_parrafo(
         doc,
-        "En la segunda fase, previa a la contrastación de hipótesis y dado el tamaño de la población censal (n = 14), "
-        "se estableció la verificación del supuesto de normalidad sobre las diferencias intrasujeto entre el post-test "
-        "y el pre-test mediante la prueba de Shapiro-Wilk a un nivel de significancia de 0.05. Cuando las diferencias "
-        "pareadas se ajustan a una distribución normal (valor de probabilidad superior a 0.05), se aplica la prueba "
-        "paramétrica t de Student para muestras relacionadas, definida en la Ecuación 9:",
+        "En la fase inferencial, considerando el tamaño reducido de la población censal (N = 14) y la presencia de escalas "
+        "ordinales en la tercera dimensión, la prueba de los rangos con signo de Wilcoxon constituyó el estimador primario "
+        "robusto y uniforme para muestras pareadas pequeñas, complementada por la prueba t de Student pareada (Ecuación 9) "
+        "únicamente en los indicadores continuos cuyas diferencias pareadas (dᵢ = O₂ᵢ - O₁ᵢ) confirmaron normalidad en la "
+        "prueba de Shapiro-Wilk (p > 0.05):",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_T_STUDENT, numero_eq=9)
     agregar_parrafo(
         doc,
         "Donde el numerador representa la media aritmética de las diferencias pareadas entre el post-test y el pre-test, "
-        "el denominador incluye la desviación estándar de dichas diferencias dividida por la raíz cuadrada del tamaño "
-        "censal (14 operadores). De forma complementaria y como prueba principal ante distribuciones asimétricas o "
-        "escalas ordinales (valor de probabilidad menor o igual a 0.05 en Shapiro-Wilk), se aplica la prueba no "
-        "paramétrica de rangos con signo de Wilcoxon para muestras pareadas, cuya aproximación normal se expresa en "
-        "la Ecuación 10:",
+        "y el denominador corresponde al error estándar de dichas diferencias para los n operadores evaluados. En la "
+        "prueba de los rangos con signo de Wilcoxon, el estadístico Z estandarizado se calculó según la Ecuación 10:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_WILCOXON, numero_eq=10)
     agregar_parrafo(
         doc,
-        "Donde el estadístico de suma de rangos cuantifica las diferencias positivas o negativas ordenadas por magnitud "
-        "y el parámetro poblacional corresponde al número de pares evaluados. Finalmente, para determinar la magnitud "
-        "práctica de la mejora lograda por el sistema web SIVAC más allá de la significancia estadística, se incluyó "
-        "el cálculo del tamaño del efecto mediante el coeficiente de correlación rango-biserial o índice no paramétrico "
-        "propuesto por Cohen (1988), formulado en la Ecuación 11:",
+        "Donde W representa la suma de rangos con signo asignados a las diferencias absolutas no nulas y n indica el "
+        "número de pares con diferencia distinta de cero. Para cuantificar la relevancia práctica de la mejora más allá "
+        "de la significancia estadística, se estimó el tamaño del efecto mediante el coeficiente de correlación de tamaño "
+        "del efecto basado en el estadístico estandarizado Z (propuesto por Rosenthal, 1991, sobre los umbrales de Cohen, "
+        "1988: pequeño >= 0.10, mediano >= 0.30, grande >= 0.50), formulado en la Ecuación 11:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_EFECTO_R, numero_eq=11)
     agregar_parrafo(
         doc,
-        "Donde el valor absoluto del estadístico estandarizado se divide entre la raíz cuadrada del número de sujetos "
-        "observados, interpretándose la magnitud del efecto como pequeña (alrededor de 0.10), moderada (alrededor de "
-        "0.30) o grande (igual o superior a 0.50) conforme a los criterios canónicos de Cohen (1988).",
+        "Donde el valor absoluto del estadístico Z se divide entre la raíz cuadrada del número de pares válidos con "
+        "diferencia distinta de cero (N_válidos), interpretándose la magnitud del efecto bajo los umbrales de Cohen (1988): "
+        "pequeño >= 0.10, mediano >= 0.30 y grande >= 0.50.",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "Finalmente, para controlar la tasa de error por múltiples contrastes y precisar la direccionalidad inferencial, "
+        "todas las pruebas se evaluaron con significancia bilateral (α = 0.05 a dos colas) por prudencia metodológica, "
+        "verificando la dirección teórica esperada del cambio en las medianas o medias, y aplicando la corrección secuencial "
+        "de Holm-Bonferroni sobre los seis indicadores para controlar rigurosamente la tasa de error familiar tipo I (FWER).",
+        sangria=True
+    )
+
+    # ==========================================================================
+    # 4.14. Consideraciones éticas y salvaguarda institucional
+    # ==========================================================================
+    agregar_titulo_2(doc, "4.14. Consideraciones éticas y salvaguarda institucional")
+    agregar_parrafo(
+        doc,
+        "La ejecución de la presente investigación se rigió por los principios éticos de la investigación científica "
+        "y la salvaguarda de la gestión sanitaria pública en la Dirección de Salud Apurímac II. En primer lugar, se "
+        "tramitó la debida autorización institucional ante la Dirección General y la Coordinación de la Estrategia "
+        "Sanitaria de Inmunizaciones y Cadena de Frío de la entidad, garantizando que las intervenciones técnicas no "
+        "alteraran la provisión regular de biológicos a los establecimientos de salud jurisdiccionales.",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "En segundo lugar, se garantizó el principio de autonomía y voluntariedad mediante la suscripción del consentimiento "
+        "informado por parte de los catorce operadores participantes, asegurando la confidencialidad estricta y el "
+        "anonimato de sus datos personales mediante la asignación de identificadores alfanuméricos correlativos (OP-01 a "
+        "OP-14). Asimismo, se resguardó la confidencialidad de la información estratégica institucional, restringiendo el "
+        "acceso a los registros y velando porque el estudio no involucrara datos clínicos nominales de pacientes ni menores "
+        "de edad, limitándose estrictamente al control transaccional y volumétrico de lotes.",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "Por último, se aplicó una salvaguarda de contingencia sanitaria durante la etapa de transición operativa entre "
+        "el procedimiento tradicional y el sistema web SIVAC: durante el periodo de capacitación y estabilización, el personal "
+        "mantuvo el registro de respaldo físico en kardex en paralelo al flujo digital para asegurar cero riesgo de pérdida "
+        "de trazabilidad o desabastecimiento en la cadena de frío provincial.",
         sangria=True
     )
 

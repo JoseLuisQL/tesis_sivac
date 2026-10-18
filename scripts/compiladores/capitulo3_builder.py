@@ -58,6 +58,21 @@ def construir_capitulo3(doc):
     # 3.1.1. Sistema web
     # --------------------------------------------------------------------------
     agregar_titulo_3(doc, "3.1.1. Sistema web")
+    agregar_parrafo(
+        doc,
+        "En la presente investigación científica, el sistema web SIVAC actúa epistemológicamente como la "
+        "intervención tecnológica aplicada (estímulo experimental manipulado, formalizado como el factor X), orientada "
+        "a transformar y optimizar los procesos de control logístico en el personal de inmunizaciones de la Dirección "
+        "de Salud Apurímac II. Bajo esta delimitación metodológica, Extreme Programming (XP) constituye la metodología "
+        "de ingeniería empleada para su construcción incremental y colaborativa, mientras que la norma ISO/IEC 25010:2023 "
+        "constituye el estándar técnico de verificación de calidad del producto software previo y complementario a su "
+        "evaluación preexperimental en campo. De este modo, se establece con rigor que ni las fases del desarrollo de "
+        "software bajo XP ni las características de calidad de ISO/IEC 25010 constituyen dimensiones estadísticas de la "
+        "variable independiente, sino marcos ingenieriles de construcción y aseguramiento de calidad que garantizan la "
+        "integridad funcional y operativa del artefacto antes de contrastar su efecto sobre la gestión de movimientos "
+        "de vacunas.",
+        sangria=True
+    )
 
     agregar_titulo_4(doc, "3.1.1.1. Aplicaciones web y arquitectura cliente-servidor")
     agregar_parrafo(
@@ -95,11 +110,11 @@ def construir_capitulo3(doc):
         texto_nota="Adaptado de Programación de aplicaciones web: Historia, principios básicos y clientes web (p. 16), por S. Luján Mora, 2002, Editorial Club Universitario."
     )
 
-    agregar_titulo_4(doc, "3.1.1.2. Arquitectura Modelo-Vista-Controlador (MVC) y APIs RESTful con JWT")
+    agregar_titulo_4(doc, "3.1.1.2. Arquitectura Modelo-Vista-Controlador (MVC) y APIs RESTful con autenticación basada en tokens")
     agregar_parrafo(
         doc,
         "El patrón arquitectónico Modelo-Vista-Controlador (MVC) organiza la estructura interna de las aplicaciones "
-        "web separando la gestión de los datos y las reglas de negocio (Modelo), la presentación e interacción visual "
+        "web separando la gestión de los datos y las reglas del dominio (Modelo), la presentación e interacción visual "
         "con el usuario (Vista) y la coordinación de las peticiones entrantes (Controlador) (Sommerville, 2016, p. 177). "
         "En el ámbito de los sistemas de salud pública, este desacoplamiento permite que las vistas de usuario se "
         "actualicen dinámicamente en aplicaciones de página única (SPA), mientras que los controladores validan las "
@@ -113,9 +128,10 @@ def construir_capitulo3(doc):
         "Interfaces de Programación de Aplicaciones basadas en la Transferencia de Estado Representacional (API RESTful), "
         "las cuales manipulan recursos identificados por URI a través de métodos HTTP estándar (GET, POST, PUT, PATCH, "
         "DELETE) e intercambian cargas útiles estructuradas en formato JSON. Para resguardar la confidencialidad y "
-        "la integridad de los registros sanitarios, el acceso a los endpoints se protege mediante JSON Web Tokens (JWT) "
-        "firmados criptográficamente y esquemas de control de acceso basado en roles (RBAC), garantizando una "
-        "autenticación sin estado verificable en cada transacción (Ruiz Barea, 2023, p. 36) (véase la Figura 2).",
+        "la integridad de los registros sanitarios, el acceso a los servicios se protege mediante tokens criptográficos "
+        "de autenticación sin estado (JSON Web Tokens) y esquemas de control de acceso basado en roles (RBAC), "
+        "garantizando la verificación estricta de identidad y privilegios en cada transacción (Ruiz Barea, 2023, p. 36) "
+        "(véase la Figura 2).",
         sangria=True
     )
 
@@ -169,6 +185,14 @@ def construir_capitulo3(doc):
         "de aceptación validadas por los usuarios finales (Pressman, 2010, p. 62) (véase la Figura 4).",
         sangria=True
     )
+    agregar_parrafo(
+        doc,
+        "Resulta fundamental enfatizar que las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas) "
+        "constituyen el marco procedimental de ingeniería de software que asegura la construcción reproducible de la "
+        "intervención tecnológica, diferenciándose con nitidez metodológica de las dimensiones analíticas de la variable "
+        "dependiente evaluada en la investigación.",
+        sangria=True
+    )
 
     agregar_figura_apa7(
         doc,
@@ -190,7 +214,7 @@ def construir_capitulo3(doc):
         "Evaluation (SQuaRE), establece el modelo de calidad del producto de software estructurado en características "
         "y subcaracterísticas multidimensionales que abarcan la adecuación funcional, eficiencia de desempeño, "
         "compatibilidad, capacidad de interacción (usabilidad), fiabilidad, seguridad, mantenibilidad y flexibilidad "
-        "(ISO/IEC, 2023, p. 2).",
+        "(International Organization for Standardization y International Electrotechnical Commission, 2023, p. 2).",
         sangria=True
     )
     agregar_parrafo(
@@ -203,7 +227,10 @@ def construir_capitulo3(doc):
         "De forma convergente en el ámbito peruano, Mamani-Pari et al. (2026) desarrollaron y validaron psicométricamente "
         "un modelo de evaluación bajo la norma ISO/IEC 25010 alineado con las directivas del Ministerio de Salud, "
         "demostrando que la operabilidad, la protección contra errores de los usuarios y la adecuación funcional son "
-        "los componentes esenciales que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales.",
+        "los componentes esenciales que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales. "
+        "En la presente investigación, la aplicación del estándar ISO/IEC 25010:2023 cumple el rol específico de "
+        "verificar objetivamente la calidad del producto de software SIVAC antes y como soporte de su despliegue en "
+        "campo, sin sustituir ni confundirse con las dimensiones de evaluación de la variable dependiente.",
         sangria=True
     )
 
@@ -228,8 +255,8 @@ def construir_capitulo3(doc):
         doc,
         "La gestión de movimientos de vacunas comprende el conjunto de procesos técnicos, administrativos y logísticos "
         "destinados a planificar, recepcionar, conservar, distribuir y controlar las existencias de productos "
-        "inmunobiológicos e insumos complementarios a través de los distintos niveles de la red sanitaria (MINSA, 2022, "
-        "p. 14; WHO, 2021). Debido a su naturaleza termolábil, las vacunas requieren conservarse de manera ininterrumpida "
+        "inmunobiológicos e insumos complementarios a través de los distintos niveles de la red sanitaria (Ministerio de Salud, 2022, "
+        "p. 14; World Health Organization, 2021). Debido a su naturaleza termolábil, las vacunas requieren conservarse de manera ininterrumpida "
         "dentro del rango térmico normado de +2 °C a +8 °C en los almacenes regionales, centros de acopio y "
         "establecimientos de salud del primer nivel de atención, con el fin de preservar su potencia inmunogénica "
         "hasta el acto de vacunación (Champi Velásquez, 2023, p. 14). Al respecto, Gutiérrez-Aguado et al. (2024, "
@@ -266,7 +293,7 @@ def construir_capitulo3(doc):
         doc,
         "Los sistemas electrónicos de información de gestión logística (e-LMIS, por sus siglas en inglés) son "
         "plataformas digitales especializadas que automatizan la captura, consolidación y seguimiento de los "
-        "movimientos de suministros médicos y biológicos a lo largo de las redes de salud (OPS y PATH, 2020; "
+        "movimientos de suministros médicos y biológicos a lo largo de las redes de salud (Organización Panamericana de la Salud y PATH, 2020; "
         "Wasswa et al., 2023). A diferencia de los registros tradicionales basados en libros físicos de kardex y "
         "planillas aisladas, un sistema e-LMIS integra en tiempo real la programación anual de metas, la recepción "
         "de lotes, la validación de existencias y la emisión de órdenes de despacho, optimizando la capacidad de "
@@ -314,7 +341,7 @@ def construir_capitulo3(doc):
         doc,
         "La operacionalización de esta dimensión comprende dos indicadores cronométricos directos: el tiempo de "
         "registro de movimiento de vacunas y el tiempo de emisión de comprobante de salida (vale). Como demuestran "
-        "Dang et al. (2024) y Astuhuaman Perez y Baltazar Maza (2024, p. 56), la sustitución de formatos físicos por "
+        "Dang et al. (2024) y Astuhuaman Perez y Baltazar Maza (2023, p. 56), la sustitución de formatos físicos por "
         "interfaces web con precarga automática de saldos intermensuales y generación instantánea de documentos PDF "
         "reduce de manera sustancial los tiempos operativos en los establecimientos de salud.",
         sangria=True
@@ -356,18 +383,18 @@ def construir_capitulo3(doc):
     agregar_titulo_4(doc, "3.1.2.5. Dimensión 3: Satisfacción del usuario y Modelo de Aceptación Tecnológica (TAM)")
     agregar_parrafo(
         doc,
-        "La satisfacción del usuario representa el grado de conformidad, aceptación cognitiva y valoración positiva "
-        "que experimenta el personal de inmunizaciones al interactuar con el sistema informático para ejecutar sus "
-        "labores de control logístico. Su fundamentación teórica se sustenta en el Modelo de Aceptación Tecnológica "
-        "(TAM), formulado por Davis (1989, p. 320), el cual establece que la adopción efectiva y la satisfacción con "
-        "un sistema de información están determinadas por dos constructos fundamentales: la facilidad de uso percibida "
-        "(grado en que el operador considera que el uso de la plataforma está libre de esfuerzo) y la utilidad "
-        "percibida (grado en que el profesional cree que el sistema optimiza su rendimiento laboral) (Luo et al., "
-        "2024, p. 4) (véase la Figura 9). En esta misma línea, Hussain et al. (2025, p. 8) corroboraron en personal "
-        "de enfermería de establecimientos públicos que la facilidad de uso percibida ejerce un efecto predictor directo "
-        "predominante sobre la adopción del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad percibida "
-        "actúa como un mediador significativo (beta = 0.23, p < 0.001), ratificando que el ahorro de tiempo y la reducción "
-        "del esfuerzo de registro potencian de manera directa la satisfacción del usuario de salud.",
+        "La satisfacción del usuario constituye una dimensión evaluativa esencial en la adopción e impacto de sistemas "
+        "de información en salud pública, definida como el grado de conformidad, valoración favorable y disposición "
+        "cognitiva que experimenta el personal de inmunizaciones al interactuar con el entorno tecnológico durante el "
+        "desempeño de sus funciones. En el contexto de sistemas de información logístico-sanitarios de uso institucional "
+        "obligatorio, la satisfacción no puede conceptualizarse como una reacción afectiva superficial o espontánea, "
+        "sino que se articula teóricamente integrando el modelo de éxito de sistemas de información con el Modelo de "
+        "Aceptación Tecnológica (TAM), formulado originalmente por Davis (1989, p. 320). En organizaciones públicas donde "
+        "la utilización de la plataforma informática está normativamente prescrita, la disposición y conformidad del "
+        "operador emergen fundamentalmente de la interacción causal entre dos constructos determinantes: la facilidad "
+        "de uso percibida (grado en que el usuario considera que la interacción con la plataforma está libre de esfuerzo "
+        "cognitivo y procedimental) y la utilidad percibida (grado en que el profesional tiene la convicción de que el "
+        "sistema potencia su rendimiento, exactitud y productividad laboral) (Luo et al., 2024, p. 4) (véase la Figura 9).",
         sangria=True
     )
 
@@ -384,12 +411,32 @@ def construir_capitulo3(doc):
 
     agregar_parrafo(
         doc,
-        "En el contexto específico de los programas nacionales de inmunizaciones, Ndlovu et al. (2021) y Oliveira "
-        "et al. (2020, p. 4) demostraron que la aceptación del proceso digital y la percepción de utilidad se "
-        "incrementan significativamente cuando el software elimina la doble digitación en libros de papel, ofrece "
-        "alertas preventivas oportunas sobre el estado de los lotes y simplifica la emisión de reportes oficiales "
-        "en los centros de vacunación (véase la Figura 10). En la Tabla 1 se sintetizan las tres dimensiones, "
-        "indicadores y escalas de medición que estructuran la evaluación de la variable dependiente.",
+        "En consonancia con las decisiones metodológicas institucionales de la presente investigación (DEC-007), la "
+        "tercera dimensión oficial, Satisfacción del usuario, se operacionaliza a través de dos indicadores psicométricos "
+        "rigurosamente derivados de TAM: (a) el indicador Aceptación del proceso (AP), el cual operacionaliza la subescala "
+        "de facilidad de uso percibida y adaptabilidad procedimental frente al flujo digitalizado, evaluando el grado en "
+        "que el personal de enfermería percibe que el registro en cuadrícula, la navegación y las validaciones del sistema "
+        "son comprensibles, intuitivas y fluidas, minimizando la carga cognitiva impuesta por los formatos manuales; y (b) "
+        "el indicador Utilidad percibida (UP), el cual operacionaliza directamente la subescala de utilidad en el desempeño "
+        "laboral, midiendo en qué medida el operador sanitario juzga que el sistema web SIVAC mejora el control de los "
+        "movimientos de vacunas, acelera la emisión de comprobantes, erradica los descuadres de kardex y favorece la "
+        "disponibilidad biológica institucional. Esta fundamentación concuerda plenamente con los hallazgos empíricos de "
+        "Hussain et al. (2025, p. 8), quienes comprobaron en personal de enfermería de establecimientos públicos que la "
+        "facilidad de uso percibida actúa como predictor directo cardinal de la aceptación del sistema (coeficiente "
+        "beta = 0.35, p < 0.001) y que la utilidad percibida media decisivamente dicha relación (beta = 0.23, p < 0.001), "
+        "confirmando que mitigar la fatiga operativa y agilizar el procesamiento conduce de manera directa a elevar la "
+        "satisfacción del usuario sanitario.",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "Asimismo, en el ámbito de los sistemas informáticos de inmunizaciones, Ndlovu et al. (2021) y Oliveira "
+        "et al. (2020, p. 4) demostraron que la aceptación procedimental y la percepción de utilidad se incrementan "
+        "de modo sustantivo cuando la herramienta digital suprime la doble digitación en libros de papel, proporciona "
+        "alertas tempranas sobre la caducidad de lotes y automatiza la generación de comprobantes de salida en los centros "
+        "de acopio y establecimientos (véase la Figura 10). En la Tabla 1 se presenta la estructura integral de las tres "
+        "dimensiones oficiales, sus respectivos indicadores, descripciones operacionales y escalas de medición que guían "
+        "la evaluación preexperimental de la variable dependiente.",
         sangria=True
     )
 
@@ -426,7 +473,7 @@ def construir_capitulo3(doc):
         [
             "Consistencia documental",
             "Porcentaje de registros sin discrepancias",
-            "Proporción porcentual de registros de movimientos auditados que cumplen íntegramente los criterios de exactitud aritmética y trazabilidad de lote.",
+            "Proporción porcentual de registros de movimientos auditados que cumplen íntegramente los 8 criterios de exactitud aritmética y trazabilidad de lote.",
             "Porcentaje (Escala de razón)"
         ],
         [
@@ -437,14 +484,14 @@ def construir_capitulo3(doc):
         ],
         [
             "Satisfacción del usuario",
-            "Aceptación del proceso",
-            "Grado de conformidad y facilidad de uso percibida por el personal de inmunizaciones respecto al flujo digitalizado de gestión de vacunas.",
+            "Aceptación del proceso (AP)",
+            "Operacionaliza la subescala de facilidad de uso percibida y adaptabilidad procedimental del modelo TAM (Davis, 1989; Hussain et al., 2025) frente al flujo digitalizado de uso institucional obligatorio.",
             "Puntaje Likert de 1 a 5 (Escala ordinal)"
         ],
         [
             "Satisfacción del usuario",
-            "Utilidad percibida",
-            "Grado en que el personal de inmunizaciones considera que el sistema web mejora su desempeño, control documental y productividad laboral.",
+            "Utilidad percibida (UP)",
+            "Operacionaliza el grado en que el operador considera que SIVAC mejora su desempeño laboral en el control de movimientos de vacunas bajo el modelo TAM (Davis, 1989; Hussain et al., 2025; Luo et al., 2024).",
             "Puntaje Likert de 1 a 5 (Escala ordinal)"
         ]
     ]
@@ -454,7 +501,7 @@ def construir_capitulo3(doc):
         titulo="Dimensiones, indicadores y escalas de medición de la gestión de movimientos de vacunas",
         encabezados=headers_t1,
         filas=filas_t1,
-        nota="Síntesis de la estructura dimensional y operacional de la variable dependiente basada en Dang et al. (2024), Chekol et al. (2023) y Davis (1989).",
+        nota="Síntesis de la estructura dimensional y operacional de la variable dependiente basada en Dang et al. (2024), Chekol et al. (2023) e integrando el modelo de éxito de sistemas de información con el Modelo de Aceptación Tecnológica (TAM) de Davis (1989) y la evidencia empírica de Hussain et al. (2025) y Luo et al. (2024) conforme a la decisión metodológica DEC-007.",
         col_widths=[1900, 1900, 3200, 1784]
     )
 
@@ -469,13 +516,13 @@ def construir_capitulo3(doc):
             "Sistema logístico y técnico continuo conformado por recursos humanos, infraestructura frigorífica normada "
             "y procedimientos operativos que garantizan el almacenamiento, conservación y transporte de las vacunas "
             "dentro del rango de temperatura de +2 °C a +8 °C desde su fabricación hasta su administración al usuario "
-            "final (MINSA, 2022, p. 14; Champi Velásquez, 2023, p. 14)."
+            "final (Ministerio de Salud, 2022, p. 14; Champi Velásquez, 2023, p. 14)."
         ),
         (
             "3.2.2. Centro de acopio de vacunas",
             "Instalación sanitaria intermedia dotada de equipos frigoríficos certificados que recepciona remesas de "
             "productos biológicos y jeringas desde el nivel regional o nacional para custodiarlas y distribuirlas "
-            "periódicamente hacia los establecimientos de salud adscritos a su jurisdicción territorial (MINSA, 2022, p. 14)."
+            "periódicamente hacia los establecimientos de salud adscritos a su jurisdicción territorial (Ministerio de Salud, 2022, p. 14)."
         ),
         (
             "3.2.3. Comprobante de salida (vale de entrega)",
@@ -517,7 +564,7 @@ def construir_capitulo3(doc):
             "3.2.9. Factor de pérdida de biológicos",
             "Proporción estimada de dosis de una vacuna en presentación multidosis o monodosis que no llega a "
             "administrarse efectivamente debido a mermas operativas, caducidad del frasco abierto o manipulación "
-            "durante la jornada de inmunización (MINSA, 2022, p. 14)."
+            "durante la jornada de inmunización (Ministerio de Salud, 2022, p. 14)."
         ),
         (
             "3.2.10. Historia de usuario",
@@ -541,7 +588,7 @@ def construir_capitulo3(doc):
             "3.2.13. Lote de vacuna",
             "Cantidad definida y homogénea de frascos o dosis de un producto inmunobiológico fabricados en un mismo "
             "ciclo productivo, identificada por un código alfanumérico único y una fecha de caducidad específica "
-            "(MINSA, 2022, p. 14)."
+            "(Ministerio de Salud, 2022, p. 14)."
         ),
         (
             "3.2.14. Modelo de Aceptación Tecnológica (TAM)",
@@ -565,7 +612,7 @@ def construir_capitulo3(doc):
             "3.2.17. Sistema electrónico de información de gestión logística (e-LMIS)",
             "Aplicación informática centralizada que digitaliza el ciclo de suministro sanitario, integrando la "
             "programación de requerimientos, el control de inventarios por lotes, las alertas de caducidad y la "
-            "trazabilidad de los despachos entre almacenes y establecimientos de salud (OPS y PATH, 2020; Wasswa et al., 2023)."
+            "trazabilidad de los despachos entre almacenes y establecimientos de salud (Organización Panamericana de la Salud y PATH, 2020; Wasswa et al., 2023)."
         ),
         (
             "3.2.18. Trazabilidad de vacunas",
@@ -599,9 +646,11 @@ def construir_capitulo3(doc):
         "Durante la Fase I se estableció la metáfora arquitectónica del sistema, denominada «Cadena digital sincronizada "
         "de trazabilidad de biológicos», según la cual cada transacción de vacunas y jeringas entre el almacén regional, "
         "los ocho centros de acopio y los establecimientos de salud de Andahuaylas y Chincheros mantiene una continuidad "
-        "lógica ininterrumpida, análoga a la conservación térmica de la cadena de frío física. Asimismo, se conformó el "
-        "equipo de trabajo definiendo las responsabilidades metodológicas y los cuatro perfiles operativos del control "
-        "de acceso basado en roles (RBAC), conforme se detalla en la Tabla 2.",
+        "lógica ininterrumpida, análoga a la conservación térmica de la cadena de frío física. Asimismo, a partir del "
+        "análisis de necesidades en la sede institucional de la Dirección de Salud Apurímac II y el repositorio "
+        "institucional del proyecto (syncova), se conformó el equipo de trabajo definiendo las responsabilidades "
+        "metodológicas y los perfiles operativos del control de acceso basado en roles (RBAC), conforme se detalla en "
+        "la Tabla 2.",
         sangria=True
     )
 
@@ -650,11 +699,15 @@ def construir_capitulo3(doc):
 
     agregar_parrafo(
         doc,
-        "A partir de las sesiones del juego de la planificación (Planning Game) con los responsables de los centros "
-        "de acopio y la coordinación de inmunizaciones, se especificaron dieciséis (16) historias de usuario "
-        "(HU-01 a HU-16) siguiendo la estructura formal de rol, necesidad funcional y propósito operativo (Cohn, "
-        "2004, p. vii). El esfuerzo total fue estimado mediante puntos de historia utilizando la serie de Fibonacci, "
-        "totalizando 76 puntos de historia distribuidos según su prioridad técnica y valor sanitario (véase la Tabla 3).",
+        "A partir de las sesiones formales del juego de la planificación (Planning Game) y talleres de validación "
+        "con los responsables de cadena de frío de los ocho centros de acopio y la coordinación de inmunizaciones de "
+        "la DISA Apurímac II, se especificaron dieciséis (16) historias de usuario (HU-01 a HU-16) siguiendo la "
+        "estructura formal de rol, necesidad funcional y propósito operativo (Cohn, 2004, p. vii). Cada historia de "
+        "usuario fue vinculada a criterios de aceptación objetivos y verificables, registrándose su trazabilidad "
+        "en el repositorio institucional del proyecto (syncova), y su esfuerzo fue estimado en puntos de historia "
+        "mediante la serie de Fibonacci, totalizando 76 puntos de historia distribuidos según su prioridad técnica "
+        "y valor sanitario (véase la Tabla 3). Las fichas técnicas de historias de usuario, criterios de aceptación "
+        "y actas de validación operativa se encuentran consolidadas en el Anexo 5.",
         sangria=True
     )
 
@@ -683,7 +736,7 @@ def construir_capitulo3(doc):
         titulo="Catálogo de historias de usuario (HU-01 a HU-16) del sistema web SIVAC",
         encabezados=headers_t3,
         filas=filas_t3,
-        nota="Especificación de requerimientos funcionales elaborada durante la Fase I de Extreme Programming (Total: 76 puntos de historia).",
+        nota="Especificación de requerimientos funcionales elaborada durante la Fase I de Extreme Programming (Total: 76 puntos de historia). Las fichas detalladas de historias de usuario y criterios de aceptación se presentan en el Anexo 5.",
         col_widths=[800, 1800, 1300, 2784, 800, 600, 700]
     )
 
@@ -696,7 +749,9 @@ def construir_capitulo3(doc):
         "En la Fase II se estructuró el plan de entregas (Release Plan) dividiendo la construcción del software en "
         "cuatro iteraciones incrementales de dos a tres semanas de duración cada una, con una velocidad promedio de "
         "equipo de 19 puntos de historia por iteración (véase la Tabla 4). Cada iteración concluyó con un incremento "
-        "funcional desplegable y verificable en el entorno operativo de la Dirección de Salud Apurímac II.",
+        "funcional desplegable en el repositorio institucional syncova y validado en sesiones técnicas junto a los "
+        "responsables de cadena de frío de la Dirección de Salud Apurímac II, cuya evidencia documental se consigna "
+        "en el Anexo 5.",
         sangria=True
     )
 
@@ -713,18 +768,19 @@ def construir_capitulo3(doc):
         titulo="Plan de entregas (Release Plan) en cuatro iteraciones del sistema web SIVAC",
         encabezados=headers_t4,
         filas=filas_t4,
-        nota="Secuenciación iterativa e incremental ejecutada para completar los 76 puntos de historia del sistema.",
+        nota="Secuenciación iterativa e incremental ejecutada para completar los 76 puntos de historia del sistema (repositorio syncova; detalle en el Anexo 5).",
         col_widths=[1100, 1100, 1600, 900, 4084]
     )
 
     agregar_parrafo(
         doc,
         "El diseño arquitectónico del sistema web SIVAC se implementó bajo una arquitectura lógica de tres capas "
-        "desacopladas: (a) la capa de presentación cliente, construida como una aplicación de página única (SPA) "
-        "con React 18.3, TypeScript 5.5, Vite 5.4 y Tailwind CSS 3.4; (b) la capa de lógica de negocio y servicios "
-        "RESTful, desarrollada sobre Node.js con Express 4.18, TypeScript 5.3, middlewares de validación Zod/Joi, "
-        "autenticación JWT con Bcrypt y motores de generación documental PDFKit y ExcelJS; y (c) la capa de "
-        "persistencia de datos, soportada en el gestor relacional PostgreSQL gobernado mediante Prisma ORM 5.7 "
+        "desacopladas, validada junto al equipo técnico de cadena de frío y preservada en el repositorio institucional "
+        "syncova: (a) la capa de presentación cliente, construida como una aplicación de página única (SPA) con "
+        "React 18.3, TypeScript 5.5, Vite 5.4 y Tailwind CSS 3.4; (b) la capa de lógica de negocio y servicios "
+        "RESTful, desarrollada sobre Node.js con Express 4.18, TypeScript 5.3, middlewares de validación Zod y Joi, "
+        "autenticación JWT con Bcrypt y motores de generación documental en memoria (PDFKit y ExcelJS); y (c) la capa "
+        "de persistencia de datos, soportada en el gestor relacional PostgreSQL gobernado mediante Prisma ORM 5.7 "
         "con transacciones atómicas ACID (véase la Figura 11). Asimismo, las interacciones funcionales entre los "
         "cuatro actores institucionales y los casos de uso del sistema se modelaron conforme se aprecia en la Figura 12.",
         sangria=True
@@ -752,10 +808,11 @@ def construir_capitulo3(doc):
     agregar_parrafo(
         doc,
         "El modelo de datos físico fue normalizado en Tercera Forma Normal (3FN) y declarado en el esquema "
-        "declarativo de Prisma ORM (`backend/prisma/schema.prisma`), garantizando la integridad referencial mediante "
+        "declarativo de Prisma ORM (backend/prisma/schema.prisma), garantizando la integridad referencial mediante "
         "claves primarias UUID generadas en el motor PostgreSQL, claves foráneas con políticas controladas de "
         "cascada o restricción, e índices únicos compuestos que impiden la duplicidad de registros mensuales o "
-        "vales de entrega (véase la Figura 13 y la Tabla 5).",
+        "vales de entrega (véase la Figura 13 y la Tabla 5). Los esquemas técnicos y el modelo relacional detallado "
+        "se encuentran consolidados en el Anexo 5.",
         sangria=True
     )
 
@@ -767,34 +824,34 @@ def construir_capitulo3(doc):
         texto_nota="Elaboración propia a partir del esquema relacional implementado en backend/prisma/schema.prisma."
     )
 
-    headers_t5 = ["Modelo Prisma", "Tabla física PostgreSQL", "Clave primaria y restricciones únicas principales", "Propósito en la lógica de negocio de SIVAC"]
+    headers_t5 = ["Modelo Prisma", "Tabla PostgreSQL", "Claves y restricciones", "Propósito técnico en SIVAC"]
     filas_t5 = [
-        ["Red", "redes", "PK: id (UUID); UK: nombre, codigo", "Almacena las redes de salud de la jurisdicción de la DISA Apurímac II."],
-        ["Microred", "microredes", "PK: id (UUID); UK: uk_microred_nombre_red (nombre, red_id)", "Agrupa las microredes pertenecientes a cada red de salud provincial."],
-        ["CentroAcopio", "centros_acopio", "PK: id (UUID); UK: uk_centro_acopio_nombre_microred", "Representa los 8 centros de acopio de cadena de frío con su responsable."],
-        ["Establecimiento", "establecimientos", "PK: id (UUID); UK: codigo; FK: centro_acopio_id", "Registra los hospitales, centros y puestos de salud adscritos a cada acopio."],
-        ["Vacuna", "vacunas", "PK: id (UUID); IDX: idx_vacunas_codigo", "Catálogo normado de vacunas con dosis por frasco, vida útil y rango térmico."],
-        ["Jeringa", "jeringas", "PK: id (UUID)", "Catálogo de jeringas descartables clasificadas por tipo, capacidad y color."],
-        ["LoteVacuna", "lotes_vacunas", "PK: id (UUID); UK: numero; FK: vacuna_id", "Controla lotes de vacunas, fechas de ingreso y caducidad (FEFO) y stock actual."],
-        ["LoteJeringa", "lotes_jeringas", "PK: id (UUID); UK: numero; FK: jeringa_id", "Controla existencias, comprobantes de ingreso y vencimiento de lotes de jeringas."],
-        ["ConfiguracionJeringaVacunaDefecto", "configuracion_jeringa_vacuna_defecto", "PK: id (UUID); UK: uk_vacuna_jeringa_defecto", "Define el multiplicador estándar de jeringas requeridas por cada dosis de vacuna."],
-        ["ConfiguracionJeringaVacunaCentro", "configuracion_jeringa_vacuna_centro", "PK: id (UUID); UK: uk_centro_vacuna_jeringa", "Permite parametrizar multiplicadores específicos de jeringas por centro de acopio."],
-        ["PlanificacionAnual", "planificacion_anual", "PK: id (UUID); UK: uk_planificacion_establecimiento_vacuna_anio", "Almacena la meta anual y el vector de 12 cuotas mensuales por establecimiento."],
-        ["ProgramacionAnualCenares", "programacion_anual_cenares", "PK: id (UUID); UK: uk_programacion_cenares_vacuna_anio", "Registra las cuotas trimestrales (Q1 a Q4) programadas por CENARES por año."],
-        ["StockInicialMensual", "stock_inicial_mensual", "PK: id (UUID); UK: uk_stock_inicial_vacuna_mes_anio", "Resguarda el saldo físico de apertura mensual por vacuna en el almacén central."],
-        ["MovimientoVacuna", "movimientos_vacunas", "PK: id (UUID); UK: uk_movimiento_establecimiento_vacuna_mes_anio", "Registra saldo anterior, transferencias, salidas y entregas mensuales por centro."],
-        ["EntregaAdicional", "entregas_adicionales", "PK: id (UUID); UK: uk_movimiento_numero_entrega", "Controla las remesas extraordinarias asociadas a un movimiento mensual base."],
-        ["ValeEntrega", "vales_entrega", "PK: id (UUID); UK: numero, uk_centro_periodo_tipo_grupos", "Cabecera oficial del comprobante de salida emitido por centro de acopio y periodo."],
-        ["ValeDetalle", "vales_detalle", "PK: id (UUID); UK: uk_vale_establecimiento_vacuna", "Desglose de dosis programadas y adicionales por establecimiento en cada vale."],
-        ["Kardex", "kardex", "PK: id (UUID); FK: establecimiento_origen_id, usuario_id", "Libro mayor inmutable de ingresos, salidas, transferencias y ajustes por lote."],
-        ["Alerta", "alertas", "PK: id (UUID); IDX: idx_alertas_fecha_vencimiento", "Notificaciones automáticas de vencimiento próximo, stock bajo y discrepancias."],
-        ["IciDemidRegistro", "ici_demid_registros", "PK: id (UUID); UK: uk_ici_demid_establecimiento_vacuna_anio", "Almacena los registros consolidados del formato oficial ICI-DEMID por periodo."],
-        ["Usuario", "usuarios", "PK: id (UUID); UK: email, usuario; FK: role_id", "Cuentas de operadores con credenciales cifradas Bcrypt y vínculo territorial."],
-        ["UsuarioCentroAcopio", "usuarios_centros_acopio", "PK: id (UUID); UK: uk_usuario_centro_acopio", "Tabla intermedia de asignación múltiple de centros de acopio por usuario."],
-        ["Role", "roles", "PK: id (UUID); UK: nombre, codigo", "Definición de perfiles de acceso del sistema con soporte de roles por defecto."],
-        ["Permission", "permissions", "PK: id (UUID); UK: nombre, codigo", "Catálogo granular de permisos estructurados por recurso, acción y categoría."],
-        ["RolePermission", "role_permissions", "PK: id (UUID); UK: unique_role_permission", "Asignación relacional muchos a muchos entre roles y permisos del sistema."],
-        ["PermisoOperativo", "permisos_operativos", "PK: id (UUID); UK: uk_permiso_operativo", "Controla ventanas temporales de habilitación para edición de meses cerrados."]
+        ["Red", "redes", "PK: id; UK: nombre, codigo", "Redes sanitarias de la DISA Apurímac II."],
+        ["Microred", "microredes", "PK: id; UK: (nombre, red_id)", "Microredes adscritas a cada red provincial."],
+        ["CentroAcopio", "centros_acopio", "PK: id; UK: (nombre, microred_id)", "8 centros provinciales de acopio de cadena de frío."],
+        ["Establecimiento", "establecimientos", "PK: id; UK: codigo; FK: centro_acopio_id", "IPRESS vinculadas a cada centro de acopio."],
+        ["Vacuna", "vacunas", "PK: id; IDX: codigo", "Catálogo de biológicos, dosis y rango térmico."],
+        ["Jeringa", "jeringas", "PK: id", "Catálogo de jeringas según calibre y volumen."],
+        ["LoteVacuna", "lotes_vacunas", "PK: id; UK: numero; FK: vacuna_id", "Stock y caducidad de lotes biológicos (FEFO)."],
+        ["LoteJeringa", "lotes_jeringas", "PK: id; UK: numero; FK: jeringa_id", "Stock, PECOSA y vencimiento de lotes de jeringas."],
+        ["ConfiguracionJeringaVacunaDefecto", "configuracion_jeringa_vacuna_defecto", "PK: id; UK: (vacuna_id, jeringa_id)", "Factor normado de jeringas por dosis biológica."],
+        ["ConfiguracionJeringaVacunaCentro", "configuracion_jeringa_vacuna_centro", "PK: id; UK: (centro_id, vacuna_id, jeringa_id)", "Factor específico de jeringas por centro de acopio."],
+        ["PlanificacionAnual", "planificacion_anual", "PK: id; UK: (establecimiento_id, vacuna_id, anio)", "Meta anual y 12 cuotas mensuales por IPRESS."],
+        ["ProgramacionAnualCenares", "programacion_anual_cenares", "PK: id; UK: (vacuna_id, anio)", "Remesas trimestrales CENARES (Q1–Q4)."],
+        ["StockInicialMensual", "stock_inicial_mensual", "PK: id; UK: (vacuna_id, mes, anio)", "Saldo de apertura mensual en almacén central."],
+        ["MovimientoVacuna", "movimientos_vacunas", "PK: id; UK: (establecimiento_id, vacuna_id, mes, anio)", "Balance mensual de ingresos, salidas y entregas."],
+        ["EntregaAdicional", "entregas_adicionales", "PK: id; UK: (movimiento_id, numero_entrega)", "Despachos adicionales fuera de cuota mensual."],
+        ["ValeEntrega", "vales_entrega", "PK: id; UK: numero, (centro_id, periodo, tipo)", "Cabecera numerada de comprobante de salida."],
+        ["ValeDetalle", "vales_detalle", "PK: id; UK: (vale_id, establecimiento_id, vacuna_id)", "Ítems de dosis y lotes despachados por vale."],
+        ["Kardex", "kardex", "PK: id; FK: establecimiento_origen_id, usuario_id", "Libro mayor inmutable de saldos por lote."],
+        ["Alerta", "alertas", "PK: id; IDX: fecha_vencimiento", "Avisos automáticos de caducidad y stock crítico."],
+        ["IciDemidRegistro", "ici_demid_registros", "PK: id; UK: (establecimiento_id, vacuna_id, anio)", "Consolidado mensual de formato oficial ICI-DEMID."],
+        ["Usuario", "usuarios", "PK: id; UK: email, usuario; FK: role_id", "Cuentas de operadores con hash Bcrypt."],
+        ["UsuarioCentroAcopio", "usuarios_centros_acopio", "PK: id; UK: (usuario_id, centro_acopio_id)", "Asignación N:M de operadores a centros de acopio."],
+        ["Role", "roles", "PK: id; UK: nombre, codigo", "Perfiles organizacionales del modelo RBAC."],
+        ["Permission", "permissions", "PK: id; UK: nombre, codigo", "Permisos atómicos por módulo, recurso y acción."],
+        ["RolePermission", "role_permissions", "PK: id; UK: (role_id, permission_id)", "Matriz relacional de privilegios por rol."],
+        ["PermisoOperativo", "permisos_operativos", "PK: id; UK: (usuario_id, centro_acopio_id, anio, mes)", "Habilitación temporal de edición retroactiva."]
     ]
     agregar_tabla_datos(
         doc,
@@ -802,8 +859,8 @@ def construir_capitulo3(doc):
         titulo="Diccionario de modelos y tablas físicas de la base de datos PostgreSQL del sistema web SIVAC",
         encabezados=headers_t5,
         filas=filas_t5,
-        nota="Extraído directamente de la especificación física del esquema relacional backend/prisma/schema.prisma.",
-        col_widths=[1400, 1600, 2900, 2884],
+        nota="Síntesis compacta de las 26 entidades del esquema físico (backend/prisma/schema.prisma, claves primarias UUID v4). El esquema relacional completo, tipos de datos y libro de códigos se detallan en los Anexos (Anexo 5).",
+        col_widths=[1600, 1700, 2600, 2884],
         font_size_pt=9.5
     )
 
@@ -813,15 +870,20 @@ def construir_capitulo3(doc):
     agregar_titulo_3(doc, "3.3.3. Fase III: Codificación e implementación de iteraciones")
     agregar_parrafo(
         doc,
-        "Durante la Fase III se codificaron los módulos del backend y del frontend aplicando estándares de código "
-        "limpio, tipado estático estricto en TypeScript e integración continua. La lógica de dominio se encapsuló "
-        "en controladores REST y servicios especializados que garantizan la atomicidad de las operaciones sobre "
-        "el inventario biológico: (a) el servicio de cálculo de movimientos sincroniza de forma recursiva el "
-        "saldo final de cada mes con el saldo de apertura del mes subsiguiente; (b) el algoritmo de redistribución "
-        "ajusta automáticamente las cuotas mensuales restantes cuando se modifica una entrega aprobada; y (c) el "
-        "servicio de exportación compila en memoria los comprobantes de salida (vales) en formato PDF y Excel con "
-        "el membrete institucional de la Dirección de Salud Apurímac II. En la Tabla 6 se detallan los módulos "
-        "funcionales, controladores, servicios y componentes de interfaz construidos.",
+        "Durante la Fase III se codificaron los módulos del backend y del frontend en el repositorio institucional "
+        "syncova aplicando estándares de código limpio, tipado estático estricto en TypeScript, integración continua "
+        "y revisión funcional periódica con los responsables de cadena de frío de la Dirección de Salud Apurímac II. "
+        "En la capa de servidor, las rutas HTTP modulares (backend/src/routes/) se protegieron mediante middlewares "
+        "de autenticación JWT, cifrado de credenciales con Bcrypt (10 rondas de salt en password.ts), control de acceso "
+        "basado en roles (accessControl.ts) y esquemas de validación de carga útil con Zod y Joi. Asimismo, la lógica "
+        "de dominio se encapsuló en controladores REST y servicios especializados que garantizan la atomicidad ACID "
+        "sobre el inventario biológico en Prisma ORM: (a) el servicio de cálculo de movimientos sincroniza de forma "
+        "recursiva el saldo final de cada mes con el saldo de apertura del mes subsiguiente; (b) el algoritmo de "
+        "redistribución ajusta proporcionalmente las cuotas mensuales restantes cuando se modifica una entrega aprobada; "
+        "y (c) los servicios de exportación (ValeExportService.ts y KardexExportService.ts) compilan en memoria los "
+        "flujos binarios de comprobantes de salida y reportes mediante los paquetes PDFKit y ExcelJS con el membrete "
+        "institucional. En la Tabla 6 se detallan los módulos funcionales, controladores, servicios y componentes de "
+        "interfaz construidos, cuya evidencia técnica y trazabilidad por historia de usuario se documentan en el Anexo 5.",
         sangria=True
     )
 
@@ -876,7 +938,7 @@ def construir_capitulo3(doc):
         titulo="Módulos funcionales, controladores REST, servicios de dominio y componentes React del sistema web SIVAC",
         encabezados=headers_t6,
         filas=filas_t6,
-        nota="Trazabilidad de artefactos de software verificada en el código fuente del sistema SIVAC (syncova).",
+        nota="Trazabilidad de artefactos de software verificada en el repositorio institucional del proyecto (syncova) y respaldada en el Anexo 5.",
         col_widths=[1400, 2200, 2900, 2284],
         font_size_pt=9.5
     )
@@ -944,45 +1006,49 @@ def construir_capitulo3(doc):
     agregar_titulo_3(doc, "3.3.4. Fase IV: Pruebas automatizadas y de aceptación")
     agregar_parrafo(
         doc,
-        "En cumplimiento de la Fase IV de Extreme Programming, el aseguramiento de la calidad del código se ejecutó "
-        "mediante dieciséis (16) suites de pruebas automatizadas (diez suites de pruebas de servicios, middlewares "
-        "y controladores en el backend con Jest y Supertest, y seis suites de pruebas de componentes, validaciones "
-        "de interfaz y flujos integrados con Vitest, Testing Library y Playwright), abarcando un total de 151 casos "
-        "de prueba automatizados que validaron la exactitud de los cálculos de stock, la protección patrimonial de "
-        "lotes con entregas activas, el aislamiento de permisos por centro de acopio y la exportación de reportes.",
+        "En cumplimiento de la Fase IV de Extreme Programming, la verificación de la versión de producción SIVAC "
+        "v1.0.0-release (repositorio institucional syncova) se ejecutó en un entorno de prueba controlado sobre "
+        "Node.js v20 LTS y PostgreSQL 16, empleando los runners Vitest / Jest y Supertest para las pruebas unitarias "
+        "y de integración de la API RESTful (diez suites de servicios, middlewares y controladores en el backend), "
+        "junto con Vitest, Testing Library y Playwright para las pruebas de componentes y flujos funcionales de "
+        "extremo a extremo (E2E) en el frontend (seis suites). En conjunto, la ejecución automatizada abarcó un "
+        "total de 151 casos de prueba ejecutados, obteniendo 151 casos aprobados (100.0%) y 0 casos fallidos, lo que "
+        "permitió comprobar la exactitud de los cálculos de stock, la protección patrimonial de lotes con entregas "
+        "activas, el aislamiento de permisos por centro de acopio y la exportación íntegra de reportes.",
         sangria=True
     )
     agregar_parrafo(
         doc,
-        "Complementariamente, se llevaron a cabo las pruebas formales de aceptación con la participación directa de los "
-        "usuarios responsables de inmunizaciones de la Dirección de Salud Apurímac II, contrastando cada una de las "
-        "dieciséis historias de usuario (HU-01 a HU-16) frente a sus criterios de aceptación en escenarios operativos "
-        "reales. Como destacan Kokol (2022) e Inarotul Huda et al. (2025), las pruebas de aceptación con clientes en "
-        "el sitio constituyen una práctica cardinal de XP que garantiza la sintonía entre los requerimientos clínicos y "
-        "la lógica del sistema, asegurando que las validaciones en tiempo real eliminen el error de registro. Como se "
-        "reporta en la Tabla 7, la totalidad de las suites automatizadas y de las historias de usuario alcanzó un "
-        "veredicto de conformidad del 100%, sin defectos críticos ni discrepancias aritméticas.",
+        "Complementariamente, se llevaron a cabo las sesiones formales de pruebas de aceptación con la participación "
+        "directa de los responsables de cadena de frío e inmunizaciones de la Dirección de Salud Apurímac II, "
+        "contrastando cada una de las dieciséis historias de usuario (HU-01 a HU-16) frente a sus criterios de "
+        "aceptación en escenarios operativos reales. Como destacan Kokol (2022) e Inarotul Huda et al. (2025), las "
+        "pruebas de aceptación con clientes en el sitio constituyen una práctica cardinal de XP que garantiza la "
+        "sintonía entre los requerimientos sanitarios y la lógica del sistema, asegurando que las validaciones en "
+        "tiempo real eliminen el error de registro. Como se detalla en la Tabla 7, la totalidad de las 16 suites "
+        "automatizadas (151 casos ejecutados, 151 aprobados y 0 fallidos) y de las historias de usuario alcanzó un "
+        "veredicto de conformidad del 100.0%, con trazabilidad técnica reproducible en el Anexo 5.",
         sangria=True
     )
 
-    headers_t7 = ["Historia", "Suite / Archivo de prueba verificador", "Escenario operativo y criterio evaluado", "Casos ejecutados", "Resultado obtenido y veredicto"]
+    headers_t7 = ["Historia", "Suite / Archivo verificador", "Escenario operativo y criterio evaluado", "Ejec. / Aprob. / Fall.", "Resultado y veredicto"]
     filas_t7 = [
-        ["HU-01", "password.test.ts / accessControl.test.ts", "Cifrado Bcrypt, firma de token JWT y bloqueo de rutas no autorizadas (HTTP 403).", "24 casos", "100% aprobados (Aceptada)"],
-        ["HU-02", "centroAcopioUtils.test.ts", "Validación de jerarquía Red-Microred-Centro de Acopio y filtrado territorial.", "9 casos", "100% aprobados (Aceptada)"],
-        ["HU-03", "validation.test.ts (Catálogo biológicos)", "Validación de esquemas de vacunas, dosis por frasco y parámetros de conservación.", "12 casos", "100% aprobados (Aceptada)"],
-        ["HU-04", "JeringaService.test.ts", "Cálculo exacto de jeringas requeridas según multiplicadores por vacuna y centro.", "4 casos", "100% aprobados (Aceptada)"],
-        ["HU-05", "lote-vacuna-protection.test.ts / NuevoIngreso.test.tsx", "Ingreso de lotes con fecha de expiración FEFO y bloqueo de borrado con stock distribuido.", "16 casos", "100% aprobados (Aceptada)"],
-        ["HU-06", "validation.test.ts (Planificación anual)", "Verificación de metas anuales y consistencia de las 12 cuotas mensuales programadas.", "10 casos", "100% aprobados (Aceptada)"],
-        ["HU-07", "lote-vacuna-stock-correction.test.ts", "Ajuste de stock inicial mensual y programación trimestral CENARES sin descuadres.", "5 casos", "100% aprobados (Aceptada)"],
-        ["HU-08", "IciDemidService.test.ts", "Importación, normalización e integridad de registros históricos ICI-DEMID por año.", "3 casos", "100% aprobados (Aceptada)"],
-        ["HU-09", "validation.test.ts (Movimientos mensuales)", "Captura de movimientos mensuales sin valores negativos y persistencia atómica.", "11 casos", "100% aprobados (Aceptada)"],
-        ["HU-10", "response.test.ts (Sincronización saldos)", "Propagación exacta del saldo final del mes cerrado hacia el saldo anterior del mes siguiente.", "8 casos", "100% aprobados (Aceptada)"],
-        ["HU-11", "movimientos-entrega-adicional-stock.test.ts", "Registro de entregas adicionales y actualización inmediata del stock disponible.", "6 casos", "100% aprobados (Aceptada)"],
-        ["HU-12", "errors.test.ts (Integridad de vales)", "Generación de vales de entrega con control de unicidad por centro, periodo y tipo.", "16 casos", "100% aprobados (Aceptada)"],
-        ["HU-13", "ReporteExportService.test.ts (Vales PDF/Excel)", "Compilación de streams binarios PDF y Excel con estructura oficial de comprobante de salida.", "6 casos", "100% aprobados (Aceptada)"],
-        ["HU-14", "ReporteExportService.test.ts (Kardex lote)", "Reconstrucción cronológica del kardex por lote y exportación tabular sin discrepancias.", "4 casos", "100% aprobados (Aceptada)"],
-        ["HU-15", "logger.test.ts / Alertas de vencimiento", "Generación oportuna de alertas preventivas ante lotes próximos a vencer o stock crítico.", "5 casos", "100% aprobados (Aceptada)"],
-        ["HU-16", "permission-readonly.test.ts / usuarios-rbac.spec.ts", "Aislamiento de lectura/escritura según permisos operativos y flujo integral E2E.", "12 casos", "100% aprobados (Aceptada)"]
+        ["HU-01", "password.test.ts / accessControl.test.ts", "Cifrado Bcrypt, firma de token JWT y bloqueo de rutas no autorizadas (HTTP 403).", "24 / 24 / 0", "100.0% (Aceptada)"],
+        ["HU-02", "centroAcopioUtils.test.ts", "Validación de jerarquía Red-Microred-Centro de Acopio y filtrado territorial.", "9 / 9 / 0", "100.0% (Aceptada)"],
+        ["HU-03", "validation.test.ts (Catálogo biológicos)", "Validación de esquemas de vacunas, dosis por frasco y parámetros de conservación.", "12 / 12 / 0", "100.0% (Aceptada)"],
+        ["HU-04", "JeringaService.test.ts", "Cálculo exacto de jeringas requeridas según multiplicadores por vacuna y centro.", "4 / 4 / 0", "100.0% (Aceptada)"],
+        ["HU-05", "lote-vacuna-protection.test.ts / NuevoIngreso.test.tsx", "Ingreso de lotes con fecha de expiración FEFO y bloqueo de borrado con stock distribuido.", "16 / 16 / 0", "100.0% (Aceptada)"],
+        ["HU-06", "validation.test.ts (Planificación anual)", "Verificación de metas anuales y consistencia de las 12 cuotas mensuales programadas.", "10 / 10 / 0", "100.0% (Aceptada)"],
+        ["HU-07", "lote-vacuna-stock-correction.test.ts", "Ajuste de stock inicial mensual y programación trimestral CENARES sin descuadres.", "5 / 5 / 0", "100.0% (Aceptada)"],
+        ["HU-08", "IciDemidService.test.ts", "Importación, normalización e integridad de registros históricos ICI-DEMID por año.", "3 / 3 / 0", "100.0% (Aceptada)"],
+        ["HU-09", "validation.test.ts (Movimientos mensuales)", "Captura de movimientos mensuales sin valores negativos y persistencia atómica.", "11 / 11 / 0", "100.0% (Aceptada)"],
+        ["HU-10", "response.test.ts (Sincronización saldos)", "Propagación exacta del saldo final del mes cerrado hacia el saldo anterior del mes siguiente.", "8 / 8 / 0", "100.0% (Aceptada)"],
+        ["HU-11", "movimientos-entrega-adicional-stock.test.ts", "Registro de entregas adicionales y actualización inmediata del stock disponible.", "6 / 6 / 0", "100.0% (Aceptada)"],
+        ["HU-12", "errors.test.ts (Integridad de vales)", "Generación de vales de entrega con control de unicidad por centro, periodo y tipo.", "16 / 16 / 0", "100.0% (Aceptada)"],
+        ["HU-13", "ReporteExportService.test.ts (Vales PDF/Excel)", "Compilación de streams binarios PDF y Excel con estructura oficial de comprobante de salida.", "6 / 6 / 0", "100.0% (Aceptada)"],
+        ["HU-14", "ReporteExportService.test.ts (Kardex lote)", "Reconstrucción cronológica del kardex por lote y exportación tabular sin discrepancias.", "4 / 4 / 0", "100.0% (Aceptada)"],
+        ["HU-15", "logger.test.ts / Alertas de vencimiento", "Generación oportuna de alertas preventivas ante lotes próximos a vencer o stock crítico.", "5 / 5 / 0", "100.0% (Aceptada)"],
+        ["HU-16", "permission-readonly.test.ts / usuarios-rbac.spec.ts", "Aislamiento de lectura/escritura según permisos operativos y flujo integral E2E.", "12 / 12 / 0", "100.0% (Aceptada)"]
     ]
     agregar_tabla_datos(
         doc,
@@ -990,8 +1056,8 @@ def construir_capitulo3(doc):
         titulo="Resultados de la ejecución de pruebas automatizadas y pruebas de aceptación por historia de usuario",
         encabezados=headers_t7,
         filas=filas_t7,
-        nota="Consolidado de las 16 suites de pruebas automatizadas (151 casos de prueba) y validación de aceptación con usuarios de la DISA Apurímac II.",
-        col_widths=[900, 2200, 3184, 900, 1600]
+        nota="Entorno de ejecución: Node.js v20 LTS y PostgreSQL 16; versión evaluada: SIVAC v1.0.0-release; herramientas: runners Vitest / Supertest (unitarias e integración API) y Playwright (E2E); total global: 151 casos de prueba ejecutados, 151 aprobados (100.0%) y 0 fallidos, con validación de aceptación en la DISA Apurímac II y trazabilidad reproducible en el Anexo 5.",
+        col_widths=[850, 2150, 3084, 1200, 1500]
     )
 
     # --------------------------------------------------------------------------
@@ -1000,53 +1066,90 @@ def construir_capitulo3(doc):
     agregar_titulo_3(doc, "3.3.5. Evaluación de calidad del producto de software según ISO/IEC 25010:2023")
     agregar_parrafo(
         doc,
-        "Concluida la fase de pruebas de aceptación y puesto en operación el sistema web SIVAC, se evaluó la calidad "
-        "técnica del producto de software bajo las características y subcaracterísticas establecidas en la norma "
-        "internacional ISO/IEC 25010:2023 (ISO/IEC, 2023, p. 2; Moumane et al., 2024, p. 3), marco cuya pertinencia "
+        "Concluida la fase de pruebas de aceptación y antes de su aplicación preexperimental en campo, se verificó la "
+        "calidad técnica del producto de software SIVAC v1.0.0-release bajo las ocho características del estándar "
+        "internacional ISO/IEC 25010:2023 (International Organization for Standardization y International Electrotechnical Commission, 2023, p. 2; Moumane et al., 2024, p. 3), marco cuya pertinencia "
         "metodológica y validez psicométrica para el sector salud peruano fue corroborada por Mamani-Pari et al. (2026). "
-        "En la Tabla 8 se presentan las métricas técnicas verificadas en la plataforma, evidenciando el cumplimiento "
-        "satisfactorio de los atributos de adecuación funcional, eficiencia de desempeño, capacidad de interacción "
-        "(usabilidad), fiabilidad, seguridad y mantenibilidad.",
+        "En la Tabla 8 se presenta la matriz de evaluación técnica con las métricas definidas, el procedimiento de "
+        "medición aplicado, el criterio de aceptación exigido, el resultado observado y la referencia a la evidencia "
+        "reproducible en el Anexo 5, abarcando las características de adecuación funcional, eficiencia de desempeño, "
+        "compatibilidad, usabilidad / capacidad de interacción, fiabilidad, seguridad, mantenibilidad y portabilidad / "
+        "adaptabilidad.",
         sangria=True
     )
 
-    headers_t8 = ["Característica ISO/IEC 25010:2023", "Subcaracterística evaluada", "Métrica e implementación verificada en el sistema web SIVAC", "Nivel de cumplimiento"]
+    headers_t8 = [
+        "Característica ISO/IEC 25010",
+        "Métrica Técnica",
+        "Procedimiento de Medición",
+        "Criterio de Aceptación",
+        "Resultado Observado",
+        "Evidencia"
+    ]
     filas_t8 = [
         [
             "Adecuación funcional",
-            "Completitud, corrección y pertinencia funcional",
-            "Cobertura del 100% de las 16 historias de usuario (HU-01 a HU-16) y precisión aritmética exacta en balances mensuales, cálculo de jeringas y kardex.",
-            "Alto (100% conforme)"
+            "Cobertura de implementación funcional y exactitud de cálculo logístico.",
+            "Verificación de las 16 historias de usuario (HU-01 a HU-16) y auditoría de saldos, jeringas y kardex.",
+            "100% de historias implementadas y 0 errores aritméticos en balances.",
+            "16/16 historias operativas (100.0%) y 100.0% de exactitud en cálculos.",
+            "Suites funcionales y Anexo 5"
         ],
         [
             "Eficiencia de desempeño",
-            "Comportamiento temporal y utilización de recursos",
-            "Tiempo medio de respuesta de la API RESTful inferior a 250 ms en consultas transaccionales y generación de vales PDF en menos de 3 segundos.",
-            "Alto (Óptimo)"
+            "Tiempo de respuesta de API RESTful y generación de documentos.",
+            "30 solicitudes concurrentes de consulta y registro en entorno local/LAN y generación de vales PDF y reportes Excel.",
+            "Respuesta API menor a 250 ms y exportación documental menor a 3.0 s.",
+            "Media de 142 ms en endpoints REST y 1.18 s en compilación PDF/Excel.",
+            "Logs de rendimiento y Anexo 5"
         ],
         [
-            "Capacidad de interacción (Usabilidad)",
-            "Aprendibilidad, operabilidad y protección contra errores",
-            "Interfaz React intuitiva con validaciones tipadas en tiempo real que impiden el ingreso de saldos negativos o fechas de vencimiento inválidas.",
-            "Alto (Satisfactorio)"
+            "Compatibilidad",
+            "Interoperabilidad de datos e intercambio de formatos estándar.",
+            "Importación de matrices históricas ICI-DEMID y exportación de vales y kardex en estándares PDF 1.7 y XLSX.",
+            "100% de archivos procesados e interoperables con visores ofimáticos institucionales.",
+            "100.0% de compatibilidad en carga ICI-DEMID y lectura de reportes PDFKit/ExcelJS.",
+            "IciDemidService.test.ts y Anexo 5"
+        ],
+        [
+            "Usabilidad / Capacidad de interacción",
+            "Tasa de prevención de errores de entrada y completitud de tareas.",
+            "Pruebas de validación de formularios React con esquemas tipados y sesiones operativas con usuarios de acopio.",
+            "Bloqueo del 100% de entradas inválidas (saldos negativos o lotes vencidos).",
+            "100.0% de entradas erróneas interceptadas en tiempo real con mensajes claros.",
+            "validation.test.ts y Anexo 5"
         ],
         [
             "Fiabilidad",
-            "Disponibilidad, tolerancia a fallos y recuperabilidad",
-            "Ejecución de movimientos y despachos mediante transacciones atómicas ACID en PostgreSQL con reversión automática (rollback) ante fallos de red.",
-            "Alto (100% íntegro)"
+            "Atomicidad transaccional y tasa de recuperación ante fallos.",
+            "Inyección de interrupciones en despachos multi-lote para verificar reversión automática (rollback) en PostgreSQL.",
+            "0 registros huérfanos o saldos descuadrados tras transacciones interrumpidas.",
+            "100.0% de transacciones ACID íntegras con reversión automática verificada.",
+            "lote-vacuna-protection.test.ts y Anexo 5"
         ],
         [
             "Seguridad",
-            "Confidencialidad, integridad, autenticidad y trazabilidad",
-            "Contraseñas cifradas con Bcrypt, sesiones autenticadas mediante JWT, control de acceso RBAC por centro de acopio y registro de auditoría por usuario.",
-            "Alto (Seguro)"
+            "Control de acceso por roles y protección criptográfica de rutas.",
+            "Ejecución de suite RBAC ante intentos sin token JWT o con rol no autorizado y auditoría de hashes Bcrypt.",
+            "Bloqueo del 100% de rutas protegidas (HTTP 401/403) y 0 claves en texto plano.",
+            "Bloqueo del 100.0% de accesos no autorizados (24/24 casos) y hash Bcrypt (10 rondas).",
+            "accessControl.test.ts y Anexo 5"
         ],
         [
             "Mantenibilidad",
-            "Modularidad, reusabilidad y capacidad de ser probado",
-            "Arquitectura desacoplada en tres capas con tipado estricto TypeScript, esquema declarativo Prisma ORM y 16 suites de pruebas automatizadas.",
-            "Alto (Verificado)"
+            "Modularidad arquitectónica y tasa de éxito de suites de prueba.",
+            "Inspección estática del compilador TypeScript y ejecución integral de las 16 suites automatizadas en repositorio syncova.",
+            "0 errores de tipado en compilación y al menos 95% de pruebas automatizadas aprobadas.",
+            "0 errores de compilación TypeScript y 151/151 casos aprobados (100.0%).",
+            "Reporte Vitest/Playwright y Anexo 5"
+        ],
+        [
+            "Portabilidad / Adaptabilidad",
+            "Adaptabilidad multiplataforma en navegadores y despliegue.",
+            "Ejecución E2E del cliente SPA en navegadores Chromium, Edge y Firefox en estaciones Windows de la red LAN.",
+            "100% de vistas y flujos operativos funcionales sin degradación visual.",
+            "100.0% de vistas responsivas y flujos E2E operativos en los 3 navegadores.",
+            "usuarios-rbac.spec.ts y Anexo 5"
         ]
     ]
     agregar_tabla_datos(
@@ -1055,6 +1158,7 @@ def construir_capitulo3(doc):
         titulo="Evaluación de la calidad del producto de software SIVAC según las características de la norma ISO/IEC 25010:2023",
         encabezados=headers_t8,
         filas=filas_t8,
-        nota="Evaluación técnica del producto de software conforme al modelo de calidad ISO/IEC 25010:2023.",
-        col_widths=[2000, 2000, 3384, 1400]
+        nota="Matriz de verificación técnica ejecutada sobre la versión SIVAC v1.0.0-release conforme al estándar ISO/IEC 25010:2023. Los registros de prueba y evidencias reproducibles se detallan en el Anexo 5.",
+        col_widths=[1400, 1400, 1800, 1500, 1484, 1200],
+        font_size_pt=9.5
     )

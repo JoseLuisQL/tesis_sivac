@@ -131,7 +131,7 @@ No obstante, el análisis estructural revela fricciones arquitectónicas de inte
 - `02_PROYECTOS/`: Hitos y sprints de investigación.
 - `03_CONCEPTOS_ATOMICOS/`: Notas atómicas Zettelkasten sobre conceptos clave (TAM, XP, ISO 25010, etc.).
 - `04_LITERATURA_Y_FUENTES/`: Catálogo maestro Zotero (`CATALOGO_MAESTRO_FUENTES_ZOTERO_SIVAC.md`), 26 PDFs indexados físicamente y notas bibliográficas con `@citekey`.
-- `05_MODELOS_Y_REFERENCIAS/`: Desglose estructural de tesis modelo UNAJMA (Jhon 2026, Fany 2024) y paquete Cóndor Tinoco.
+- `05_MODELOS_Y_REFERENCIAS/`: Desglose estructural de tesis modelo UNAJMA (Jhon 2026, Fany 2024) y paquete Cóndor Tinoco archivado y sin uso operativo; el modelo de validación vigente por DEC-015 es el Anexo 2 de Fany 2024.
 - `06_METODOLOGIA_E_INSTRUMENTOS/`: Especificación técnica de fichas de observación, guías de cotejo y cuestionario TAM.
 - `07_ESTADISTICA_Y_DATOS/`: Protocolos inferenciales, diseño muestral y baremos.
 - `08_SISTEMA_Y_AGENTES/`:

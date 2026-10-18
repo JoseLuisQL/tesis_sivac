@@ -1,125 +1,189 @@
 ---
 name: validacion-psicometrica
-description: Algoritmos matemáticos, fórmulas psicométricas y generación automatizada de matrices de validación de instrumentos por juicio de expertos según el modelo oficial del Dr. Enrique Cóndor Tinoco (EPIS-UNAJMA) y Tristán-López (2008).
+description: Algoritmos psicométricos (V de Aiken e IVC de Tristán-López) aplicables solo al certificado Fany 2024 del Instrumento N.° 03 llenado por jueces reales, con criterios dicotómicos Sí/No (DEC-015, DEC-020).
 ---
 
-# VALIDACIÓN PSICOMÉTRICA DE INSTRUMENTOS — UNAJMA (EPIS)
+# VALIDACIÓN PSICOMÉTRICA DE INSTRUMENTOS: UNAJMA (EPIS)
 
-> **Fundamento Metodológico:** Modelo de Cuantificación de Validez de Contenido del Dr. Enrique Edgardo Cóndor Tinoco (Docente EPIS-UNAJMA), basado en Lawshe (1975), Tristán-López (2008) y Polit & Beck (2007).
-
----
-
-## 1. Modelo Psicométrico de Validez de Contenido
-
-### 1.1. Los Cinco (5) Criterios de Evaluación por Ítem
-Cada juez experto evalúa cada ítem del instrumento bajo 5 criterios independientes:
-1. **Suficiencia:** Los ítems propuestos bastan para medir integralmente la dimensión y sus indicadores.
-2. **Relevancia:** El ítem es esencial, pertinente y de alto valor para los objetivos de la investigación.
-3. **Coherencia:** El ítem guarda relación lógica, unívoca y directa con la variable e indicador que pretende medir.
-4. **Claridad:** La redacción es comprensible, precisa, sin ambigüedades terminológicas y con sintaxis adecuada.
-5. **Redacción:** Cumple con las normas gramaticales, ortográficas y de estilo técnico académico.
-
-### 1.2. Escala de Calificación Ordinal
-- `1 = Deficiente / No cumple`
-- `2 = Regular / Requiere modificaciones sustanciales`
-- `3 = Bueno / Aceptable con modificaciones menores`
-- `4 = Excelente / Cumple plenamente sin observaciones`
-
-### 1.3. Dicotomización y Cuantificación de Acuerdos Faborables
-Sea $X_{ijk}$ la calificación otorgada por el juez experto $j$ ($j = 1, \dots, N$) al ítem $i$ ($i = 1, \dots, M$) en el criterio $k$ ($k = 1, \dots, 5$).
-
-La puntuación binaria de acuerdo favorable $c_{ijk}$ se define como:
-$$c_{ijk} = \begin{cases} 1 & \text{si } X_{ijk} \ge 3 \text{ (Calificación 3 o 4)} \\ 0 & \text{si } X_{ijk} \le 2 \text{ (Calificación 1 o 2)} \end{cases}$$
+> ## AVISO DE VIGENCIA: 2026-10-18
+>
+> **Esta skill calcula coeficientes; no autoriza a inventarlos.**
+>
+> Por **DEC-014**, el bloque psicométrico del proyecto fue declarado nulo: los tres jueces no
+> evaluaron los instrumentos y los valores 0.987, 1.00 y [0.899, 0.999] son aritméticamente
+> inalcanzables. Los generadores que los producían
+> (`generar_expedientes_e_instrumentos.py` y `generar_matriz_ivc_excel.py`) están bloqueados.
+>
+> **Regla operativa:** las fórmulas de las secciones 2 a 5 solo pueden aplicarse sobre el
+> certificado Fany 2024 del Instrumento N.° 03, Modalidad A, llenado a mano por jueces reales.
+> Mientras no exista ese documento firmado, el cálculo permanece
+> `BLOQUEADO: esperando juicio real`.
+>
+> **Nota de estructura:** el modelo vigente es dicotómico (Sí/No). Cada criterio tiene
+> exactamente dos categorías, de modo que la V de Aiken se calcula con `c = 2` y su
+> interpretación cambia respecto del modelo archivado.
 
 ---
 
-## 2. Fórmulas de Cálculo del Índice de Validez de Contenido (IVC)
+## 0. Alcance del Juicio de Contenido (DEC-020)
 
-### 2.1. IVC por Criterio en cada Ítem ($IVC_{ik}$)
-$$IVC_{ik} = \frac{\sum_{j=1}^{N} c_{ijk}}{N}$$
-Para un panel de $N = 3$ jueces expertos, los valores posibles de $IVC_{ik}$ son:
-- $0/3 = 0.00$ (0 acuerdos favorables)
-- $1/3 = 0.33$ (1 acuerdo favorable)
-- $2/3 = 0.67$ (2 acuerdos favorables)
-- $3/3 = 1.00$ (3 acuerdos favorables, unanimidad)
+El juicio de expertos se aplica a **un solo instrumento**: el Instrumento N.° 03, Cuestionario
+de Satisfacción del Usuario, Modalidad A, con sus ocho reactivos (AP-01 a AP-04 y UP-01 a
+UP-04). Los otros instrumentos no se someten a juicio de contenido y se acreditan por vía
+propia:
 
-### 2.2. IVC Promedio del Ítem ($IVC_i$)
-El índice de validez de contenido de cada reactivo corresponde a la media aritmética de los 5 criterios:
-$$IVC_i = \frac{1}{5} \sum_{k=1}^{5} IVC_{ik} = \frac{IVC_{i,\text{Suf}} + IVC_{i,\text{Rel}} + IVC_{i,\text{Coh}} + IVC_{i,\text{Cla}} + IVC_{i,\text{Red}}}{5}$$
-
-### 2.3. IVC Global del Instrumento ($IVC_{total}$)
-El índice de validez global del instrumento es el promedio de los $IVC_i$ de los $M$ reactivos:
-$$IVC_{total} = \frac{1}{M} \sum_{i=1}^{M} IVC_i$$
-
----
-
-## 3. Criterios de Decisión y Baremos según Tristán-López (2008)
-
-Para un panel de $N = 3$ expertos evaluadores:
-- **Umbral Crítico Mínimo Aceptable por Criterio/Ítem:**
-  $$IVC \ge 0.58$$
-  Como los valores posibles para $N=3$ son $\{0.00, 0.33, 0.67, 1.00\}$, la condición $IVC \ge 0.58$ exige matemáticamente que **al menos 2 de los 3 expertos califiquen con puntaje 3 o 4** ($IVC = 0.67$ o $1.00$).
-- **Regla de Decisión por Ítem:**
-  - $IVC_i \ge 0.80$: **Excelente validez.** Se mantiene el ítem sin modificaciones.
-  - $0.58 \le IVC_i < 0.80$: **Aceptable.** Requiere ajustes menores sugeridos por los expertos.
-  - $IVC_i < 0.58$: **Deficiente.** El ítem debe descartarse o reescribirse íntegramente.
-- **Regla de Decisión Global del Instrumento ($IVC_{total}$):**
-  - $IVC_{total} \ge 0.90$: **Excelente validez de contenido.** Aplicable sin modificaciones.
-  - $0.80 \le IVC_{total} < 0.90$: **Buena validez de contenido.** Aplicable con ajustes menores.
-  - $IVC_{total} < 0.80$: **Validez insuficiente.** Requiere reformulación del instrumento.
-
----
-
-## 4. Matriz Automatizada de Excel (`PUNTUACION IVC.xlsx`)
-
-La estructura de la hoja de cálculo institucional replicada de `ejemplo_validacion/PUNTUACION IVC.xlsx` se modela mediante `openpyxl` con las siguientes fórmulas nativas:
-
-### 4.1. Arquitectura de Columnas en Hoja 1: `PUNTUACIÓN`
-| Columna | Campo | Descripción |
+| Instrumento | Vía de acreditación | Criterio |
 |---|---|---|
-| A | `N°` | Número correlativo del ítem (1 a $M$) |
-| B | `ENUNCIADO` | Texto literal del ítem o indicador |
-| C, D, E | `Juez 1`, `Juez 2`, `Juez 3` | Calificación bruta (1-4) en Suficiencia |
-| F, G, H | `Juez 1`, `Juez 2`, `Juez 3` | Calificación bruta (1-4) en Relevancia |
-| I, J, K | `Juez 1`, `Juez 2`, `Juez 3` | Calificación bruta (1-4) en Coherencia |
-| L, M, N | `Juez 1`, `Juez 2`, `Juez 3` | Calificación bruta (1-4) en Claridad |
-| O, P, Q | `Juez 1`, `Juez 2`, `Juez 3` | Calificación bruta (1-4) en Redacción |
-| R a V | `Acuerdos J1..J3` | Fórmulas binarias: `=IF(C3>=3,1,0)` |
-| W a AA | `Suma Acuerdos` | `=SUM(R3:T3)` por cada criterio |
-| AB a AF | `IVC Criterio` | `=W3/3` por cada criterio |
-| AG | `IVC_Item` | Promedio del ítem: `=AVERAGE(AB3:AF3)` |
-| AH | `Decisión` | `=IF(AG3>=0.8,"VÁLIDO",IF(AG3>=0.58,"MODIFICAR","DESCARTAR"))` |
-
-### 4.2. Hoja 2: `RESUMEN GLOBAL`
-- Fila de Criterio: Promedio de Suficiencia, Relevancia, Coherencia, Claridad y Redacción.
-- Casilla Destacada: `IVC_TOTAL = AVERAGE(AG3:AG[M+2])`.
-- Veredicto Institucional: `=IF(B10>=0.8,"INSTRUMENTO APLICABLE Y VÁLIDO","NO APLICABLE")`.
+| Instrumento N.° 01, Ficha de observación cronométrica | Protocolo de medición de movimientos de vacunas (PMMV) y acuerdo interobservador | ICC(2,1) >= 0.75 |
+| Instrumento N.° 02, Ficha de registro y cotejo documental | Protocolo de medición de movimientos de vacunas (PMMV) y concordancia interauditor | Kappa de Cohen >= 0.80 |
+| Instrumento N.° 03, Modalidad A (8 reactivos) | Juicio de contenido, certificado único Fany 2024 | V de Aiken >= 0.80 e IVC >= 0.80 |
+| Instrumento N.° 03, Modalidad B (8 reactivos) | Módulo anexo de postest, sin baremación ni contraste | No recibe certificado |
 
 ---
 
-## 5. Medición Complementaria: Coeficiente V de Aiken
+## 1. Modelo de Contenido Vigente: Fany 2024 (DEC-015)
 
-Para contrastar con la literatura nacional (Escurra, 1988), se calcula la V de Aiken sobre una escala politómica de 1 a 4 ($c = 4$):
-$$V = \frac{S}{n \cdot (c - 1)} = \frac{\sum (X_j - 1)}{N \cdot (4 - 1)} = \frac{\sum (X_j - 1)}{3 \times 3} = \frac{\sum (X_j - 1)}{9}$$
-- Rango de $V$: $[0, 1]$.
-- Intervalo de confianza de Penfield & Giacobbi (2004) al 95%:
-  $$L = \frac{2 n k V + Z^2 - 1 - Z \sqrt{Z^2 - 2 - \frac{1}{n k} + 4 n k V (1 - V)}}{2 (n k + Z^2)}$$
-- Criterio de significancia estadística: El límite inferior $L \ge 0.50$ con $p < .05$.
+### 1.1. Los Tres Criterios Dicotómicos por Ítem
+Cada juez experto evalúa cada uno de los ocho reactivos bajo tres criterios, y registra una
+sola marca por criterio:
+
+1. **Pertinencia:** El ítem corresponde al concepto teórico formulado.
+2. **Relevancia:** El ítem es apropiado para representar al componente o dimensión específica
+   del constructo.
+3. **Claridad:** Se entiende sin dificultad alguna el enunciado del ítem, es conciso, exacto y
+   directo.
+
+### 1.2. Registro de la Respuesta
+El certificado no admite grados intermedios. Cada celda se marca con `Sí` o `No`, sin casillas
+de puntuación numérica y sin escala ordinal. Para el cálculo se codifica:
+
+- `Sí` = 1 (acuerdo favorable)
+- `No` = 0 (acuerdo desfavorable)
+
+### 1.3. Ausencia de Dicotomización Posterior
+No existe una calificación ordinal previa que deba dicotomizarse. El juez emite directamente
+la categoría binaria, de modo que la matriz de cálculo no transforma puntajes: solo transcribe
+las marcas Sí/No del certificado firmado.
+
+**Nota sobre el modelo archivado:** el protocolo Cóndor Tinoco quedó superado por DEC-015. El
+material se conserva en `salidas/instrumentos/formatos_validacion/_archivo_condor_no_usar/` y
+no debe citarse como vigente. El script de cálculo conserva un perfil heredado para leer
+matrices históricas, pero ese perfil nunca se usa para la captura del certificado actual.
+
+---
+
+## 2. Fórmulas del Índice de Validez de Contenido (IVC)
+
+Sea `c_ijk` la marca binaria del juez `j` (`j = 1, ..., N`) al ítem `i` (`i = 1, ..., M`) en el
+criterio `k` (`k = 1, 2, 3`, correspondientes a Pertinencia, Relevancia y Claridad).
+
+### 2.1. IVC por Criterio en cada Ítem (IVC_ik)
+$$IVC_{ik} = \frac{\sum_{j=1}^{N} c_{ijk}}{N}$$
+
+Para un panel de N = 3 jueces, los valores posibles son 0/3 = 0.00, 1/3 = 0.33, 2/3 = 0.67 y
+3/3 = 1.00.
+
+### 2.2. IVC Promedio del Ítem (IVC_i)
+El índice de cada reactivo es la media aritmética de los tres criterios:
+$$IVC_i = \frac{1}{3} \sum_{k=1}^{3} IVC_{ik} = \frac{IVC_{i,\text{Per}} + IVC_{i,\text{Rel}} + IVC_{i,\text{Cla}}}{3}$$
+
+### 2.3. IVC Global del Instrumento (IVC_total)
+El índice global es el promedio de los IVC_i de los M = 8 reactivos de la Modalidad A:
+$$IVC_{total} = \frac{1}{8} \sum_{i=1}^{8} IVC_i$$
+
+---
+
+## 3. Criterios de Decisión y Baremos
+
+Para un panel de N = 3 jueces:
+
+- **Umbral por ítem (Tristán-López, 2008):** IVC_i >= 0.58. Como los valores posibles son
+  {0.00, 0.33, 0.67, 1.00}, el umbral exige que al menos 2 de los 3 jueces marquen Sí en el
+  promedio de los tres criterios.
+- **Regla por ítem:**
+  - IVC_i >= 0.80: validez suficiente. Se mantiene el reactivo.
+  - 0.58 <= IVC_i < 0.80: aceptable con ajustes de redacción sugeridos por los jueces.
+  - IVC_i < 0.58: el reactivo se descarta o se reformula íntegramente.
+- **Regla global:**
+  - IVC_total >= 0.90: validez excelente.
+  - 0.80 <= IVC_total < 0.90: validez buena, aplicable con ajustes menores.
+  - IVC_total < 0.80: validez insuficiente, exige reformulación del instrumento.
+
+**Advertencia de granularidad:** con N = 3 y tres criterios dicotómicos, cada IVC_ik solo puede
+tomar cuatro valores. Toda decisión debe reportarse con el cociente exacto y no con decimales
+redondeados que sugieran una precisión inexistente.
+
+---
+
+## 4. Matriz de Captura de Calificaciones Reales
+
+La matriz se construye únicamente transcribiendo un certificado ya firmado. Su estructura
+mínima es de formato largo, con una fila por combinación de juez, ítem y criterio:
+
+| Columna | Contenido |
+|---|---|
+| `juez` | Identificador del experto (J1, J2, J3) |
+| `item` | Código literal del reactivo (AP-01 a AP-04, UP-01 a UP-04) |
+| `criterio` | `pertinencia`, `relevancia` o `claridad` |
+| `puntaje` | 1 = Sí, 0 = No |
+
+Reglas de integridad:
+
+1. No se admiten celdas vacías ni valores distintos de 0 y 1.
+2. No se admiten filas duplicadas para una misma combinación de juez, ítem y criterio.
+3. El número de filas es 3 jueces x 8 ítems x 3 criterios = 72.
+4. La matriz se deriva del certificado firmado; jamás se rellena por estimación.
+
+El comando `scripts/agentes/validez_contenido.py plantilla` genera la captura vacía y
+`calcular` procesa el archivo con calificaciones reales.
+
+---
+
+## 5. Coeficiente V de Aiken para Criterios Dicotómicos
+
+Con criterios dicotómicos, el coeficiente se reduce a la proporción de jueces que marcan Sí:
+$$V = \frac{S}{n}$$
+donde `S` es el número de jueces que marcaron Sí y `n` es el número de jueces evaluadores.
+
+- Rango de V: [0, 1].
+- Valores alcanzables con n = 3: 0.000, 0.333, 0.667 y 1.000.
+- **Consecuencia del umbral:** V >= 0.80 solo se alcanza con V = 1.000, es decir, con
+  unanimidad perfecta de los tres jueces. Un solo voto negativo deja el ítem en 0.667 e
+  incumple el umbral.
+- **Intervalo de confianza al 95 % (Penfield y Giacobbi, 2004), con k = 1:**
+  $$L = \frac{2nV + z^2 - 1 - z\sqrt{z^2 - 2 - \frac{1}{n} + 4nV(1 - V)}}{2(n + z^2)}$$
+  donde `z` es el cuantil normal estándar para el nivel de confianza elegido.
+- **Límite de significancia estadística:** con n = 3 y categorías equiprobables, la
+  probabilidad exacta de obtener unanimidad bajo la hipótesis nula es 1/8 = 0.125, de modo que
+  ningún valor de V puede alcanzar p < .05 con tres jueces. La decisión se sustenta en el
+  coeficiente y en el juicio del panel, y esta limitación debe declararse expresamente en el
+  informe.
 
 ---
 
 ## 6. Confiabilidad Psicométrica: Alfa de Cronbach
 
-Para el Instrumento 3 (Cuestionario TAM de 10 ítems):
+La consistencia interna se estima sobre los ocho reactivos de la Modalidad A (DEC-019): cuatro
+de Aceptación del Proceso (AP-01 a AP-04) y cuatro de Utilidad Percibida (UP-01 a UP-04). Cada
+subescala suma de 4 a 20 puntos y el total de la Modalidad A de 8 a 40 puntos; la Modalidad B no
+se suma ni se barema.
 $$\alpha = \frac{K}{K - 1} \left( 1 - \frac{\sum_{i=1}^{K} s_i^2}{s_t^2} \right)$$
-Donde:
-- $K = 10$ (número de reactivos).
-- $s_i^2$: Varianza de las puntuaciones en el ítem $i$.
-- $s_t^2$: Varianza del puntaje total del cuestionario.
+donde K = 8 (número de reactivos), `s_i^2` es la varianza de las puntuaciones en el ítem `i` y
+`s_t^2` es la varianza del puntaje total del cuestionario.
 
-### Baremo de Confiabilidad (George & Mallery, 2003):
-- $\alpha \ge 0.90$: **Excelente.**
-- $0.80 \le \alpha < 0.90$: **Buena** (Estándar meta para SIVAC).
-- $0.70 \le \alpha < 0.80$: **Aceptable.**
-- $0.60 \le \alpha < 0.70$: **Cuestionable.**
-- $\alpha < 0.60$: **Inaceptable.**
+**Advertencia de potencia muestral:** con la población censal N = n = 14 la razón sujetos por
+reactivo es 14 / 8 = 1.75, muy por debajo de la proporción 5:1 a 10:1 que suele exigirse para
+estimar consistencia interna. El alfa debe reportarse con su intervalo de confianza al 95 % por
+el método de Feldt, Woodruff y Salih, no como un valor puntual, y su magnitud no autoriza a
+declarar de forma unívoca la fiabilidad del instrumento.
+
+**Omega de McDonald:** no es estimable con n = 14 y 8 reactivos, porque el modelo factorial que
+lo sustenta no es identificable de forma estable. No debe reportarse ningún valor de omega y su
+ausencia debe constar expresamente en el informe, con la razón muestral que la motiva.
+
+### Baremo de Confiabilidad (George y Mallery, 2003)
+- Alfa >= 0.90: excelente.
+- 0.80 <= Alfa < 0.90: buena (estándar meta para SIVAC).
+- 0.70 <= Alfa < 0.80: aceptable.
+- 0.60 <= Alfa < 0.70: cuestionable.
+- Alfa < 0.60: inaceptable.

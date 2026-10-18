@@ -28,14 +28,14 @@ En este directorio se almacenan y auditan las matrices de datos tabulares en for
 | `fase` | Texto | Nominal | `PRETEST` / `POSTEST` | Momento de medición experimental |
 | `t_reg` | Numérico continuo | Minutos (min) | $[0.00, 120.00]$ | Tiempo de registro de 10 establecimientos |
 | `t_vale` | Numérico continuo | Minutos (min) | $[0.00, 60.00]$ | Tiempo de emisión de vale oficial |
-| `rsd` | Numérico continuo | Porcentaje (%) | $[0.00, 100.00]$ | % de registros sin discrepancias (20 lotes) |
-| `cpe` | Numérico continuo | Porcentaje (%) | $[0.00, 100.00]$ | % concordancia dosis entregadas vs programadas |
-| `ap_01` a `ap_05` | Entero | Ordinal (1-5) | $\{1, 2, 3, 4, 5\}$ | Reactivos de Aceptación del Proceso (TAM) |
-| `score_ap` | Entero | Intervalar | $[5, 25]$ | Sumatoria de ítems de Aceptación del Proceso |
-| `up_01` a `up_05` | Entero | Ordinal (1-5) | $\{1, 2, 3, 4, 5\}$ | Reactivos de Utilidad Percibida (TAM) |
-| `score_up` | Entero | Intervalar | $[5, 25]$ | Sumatoria de ítems de Utilidad Percibida |
-| `score_tam_total` | Entero | Intervalar | $[10, 50]$ | Puntuación total TAM ($\text{score\_ap} + \text{score\_up}$) |
-| `nivel_satisfaccion` | Texto | Ordinal | `Bajo`, `Medio`, `Alto` | Categorización según baremo institucional |
+| `rsd` | Numérico continuo | Porcentaje (%) | $[0.00, 100.00]$ | % de registros sin discrepancias (40 a 60 registros por ventana temporal) |
+| `cpe` | Numérico continuo | Porcentaje (%) | `[0, 100]` | Porcentaje de entregas con cantidad física conforme sobre el total de despachos evaluados (Ecuación CPE del Capítulo IV; Instrumento 02) |
+| `ap_01` a `ap_04` | Entero | Ordinal (1-5) | `{1, 2, 3, 4, 5}` | Reactivos de Aceptación del Proceso (I3.1, Modalidad A) |
+| `score_ap` | Entero | Intervalar | `[4, 20]` | Sumatoria de los 4 ítems de Aceptación del Proceso |
+| `up_01` a `up_04` | Entero | Ordinal (1-5) | `{1, 2, 3, 4, 5}` | Reactivos de Utilidad Percibida (I3.2, Modalidad A) |
+| `score_up` | Entero | Intervalar | `[4, 20]` | Sumatoria de los 4 ítems de Utilidad Percibida |
+| `score_tam_total` | Entero | Intervalar | `[8, 40]` | Puntuación total TAM del instrumento de 8 ítems (`score_ap` + `score_up`) |
+| `nivel_satisfaccion` | Texto | Ordinal | `Bajo`, `Medio`, `Alto` | Categorización por terciles del puntaje global: Bajo 8-18, Medio 19-29, Alto 30-40 |
 
 ---
 

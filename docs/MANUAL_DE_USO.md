@@ -178,16 +178,28 @@ python scripts/compiladores/compilar_informe_final_docx.py
   - Cero ocurrencias del carácter de guion largo (`U+2014`).
   - Índices nativos de contenido, tablas y figuras mediante instrucciones de campo OpenXML (`TOC`).
 
-### 6.2. Compilación del Expediente de Validación de Instrumentos
-Para generar los instrumentos oficiales y el expediente de juicio de expertos:
+### 6.2. Compilación de los Instrumentos de Recolección
+El generador `scripts/compiladores/generar_expedientes_e_instrumentos.py` quedó retirado por
+**DEC-014** y su traslado a `salidas/archivo/_generadores_apocrifos_no_usar/` se ejecuta con
+`python scripts/utilidades/cuarentenar_generadores_apocrifos.py`: emitía un expediente con
+coeficientes prefabricados y fichas con una arquitectura que no corresponde al sistema real.
+Mientras el traslado no se ejecute, el generador rechaza escribir por la misma decisión. Los
+instrumentos oficiales vigentes se mantienen en `salidas/instrumentos/` como
+notas de trabajo (`INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md`,
+`INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md`, `INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md`)
+y su maquetación definitiva corresponde al maquetador.
+- **El expediente de validación por juicio de expertos ya no lo genera este script.** Queda bloqueado por DEC-014: contenía coeficientes atribuidos a jueces que no evaluaron. El material resultante está en cuarentena en `salidas/archivo/_material_apocrifo_no_usar/`.
+
+### 6.3. Compilación del Certificado de Validación vigente
 ```powershell
-python scripts/compiladores/generar_expedientes_e_instrumentos.py
+# Verificación estructural en memoria, sin escribir archivos
+python scripts/compiladores/generar_anexo2_validacion_fany.py --verificar
+
+# Generación efectiva del certificado
+python scripts/compiladores/generar_anexo2_validacion_fany.py --generar
 ```
-- **Salidas generadas en `salidas/instrumentos/`:**
-  - `INSTRUMENTO_01_FICHA_TIEMPOS.docx` (Medición de $T_{reg}$ y $T_{vale}$).
-  - `INSTRUMENTO_02_GUIA_COTEJO.docx` (Auditoría de $RSD$ con 8 criterios y $CPE$).
-  - `INSTRUMENTO_03_CUESTIONARIO_TAM.docx` (Medición de satisfacción $AP$ y $UP$).
-  - `EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_SIVAC.docx` (Expediente oficial para los jueces de la EPIS-UNAJMA).
+- **Salida generada en `salidas/documentos/anexos_fany/`:** un único certificado en blanco del modelo Fany 2024 (DEC-015), correspondiente al Instrumento N.° 03, Modalidad A, con los ocho reactivos AP-01 a AP-04 y UP-01 a UP-04 (DEC-019 y DEC-020). Se imprime vacío y se llena a mano por los jueces reales (DEC-016). Los Instrumentos 01 y 02 no se someten a juicio de contenido.
+- **Ejecución sin argumentos:** no escribe ningún archivo y solo explica el uso.
 
 ---
 

@@ -14,7 +14,7 @@ description: Reglas de seguridad absolutas e innegociables para SIVAC-THESIS-LAB
 - Los archivos originales de referencia jamás se sobrescriben ni modifican:
   - `PROYECTO_TESIS.docx` (Documento base aprobado).
   - `referencias/modelos_tesis/` (o `ejemplos_tesis/`: Tesis modelo UNAJMA Fany 2024 y Jhon 2026).
-  - `referencias/modelos_validacion/` (o `ejemplo_validacion/`: Formatos originales Dr. Cóndor Tinoco).
+  - `referencias/modelos_validacion/` (o `ejemplo_validacion/`: formatos históricos de validación; el modelo vigente por DEC-015 es el Anexo 2 de Fany 2024).
 - Toda edición o compilación se realiza sobre copias de trabajo versionadas en `salidas/documentos/` (`informe_final_v01.docx`, `informe_final_v02.docx`, etc.).
 
 ## 3. Integridad Empírica (Cero Simulación de Datos de Campo)

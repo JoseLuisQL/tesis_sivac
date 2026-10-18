@@ -702,7 +702,7 @@ def main():
 
     p_inst1_dim = crear_parrafos_desde_texto(
         "• Dimensión evaluada: Oportunidad de procesamiento (indicadores Treg y Tvale en minutos decimales, escala de razón).\n"
-        "• Validación y fiabilidad: Coeficiente de Correlación Intraclase ICC(2,1) ≥ 0.75 y juicio de expertos mediante V de Aiken (V ≥ 0.80) e IVC ≥ 0.80.",
+        "• Validación y fiabilidad: No se somete a juicio de contenido. La validez se sustenta en el protocolo de medición de movimientos de vacunas y la confiabilidad en el Coeficiente de Correlación Intraclase ICC(2,1) ≥ 0.75.",
         font_size_pt=7.0, align="both", bold_prefix=True
     )
     set_tc_paragraphs(obtener_celda_xml(tabla8, 1, 2), p_inst1_dim)
@@ -721,7 +721,7 @@ def main():
 
     p_inst2_dim = crear_parrafos_desde_texto(
         "• Dimensión evaluada: Consistencia documental (indicadores RSD y CPE en porcentaje %, escala de razón).\n"
-        "• Validación y fiabilidad: Evaluación de concordancia inter-auditor mediante Kappa de Cohen κ ≥ 0.80 y juicio de expertos mediante V de Aiken (V ≥ 0.80) e IVC ≥ 0.80.",
+        "• Validación y fiabilidad: No se somete a juicio de contenido. La validez se sustenta en el protocolo de medición de movimientos de vacunas y la confiabilidad en el coeficiente Kappa de Cohen κ ≥ 0.80.",
         font_size_pt=7.0, align="both", bold_prefix=True
     )
     set_tc_paragraphs(obtener_celda_xml(tabla8, 2, 2), p_inst2_dim)
@@ -740,7 +740,7 @@ def main():
 
     p_inst3_dim = crear_parrafos_desde_texto(
         "• Dimensión evaluada: Satisfacción del usuario (indicadores AP y UP en escala ordinal tipo Likert, baremo global de 8 a 40 puntos).\n"
-        "• Validación y fiabilidad: Consistencia interna psicométrica mediante Alfa de Cronbach α ≥ 0.70, Omega de McDonald ω ≥ 0.70 y juicio de expertos (V ≥ 0.80, IVC ≥ 0.80).",
+        "• Validación y fiabilidad: Único instrumento sometido a juicio de contenido (V de Aiken ≥ 0.80 e IVC ≥ 0.80 sobre los 8 ítems de la Modalidad A). Consistencia interna mediante Alfa de Cronbach α ≥ 0.70 con intervalo de confianza al 95 por ciento por el método de Feldt. El coeficiente Omega de McDonald no se estima por insuficiencia muestral con n = 14.",
         font_size_pt=7.0, align="both", bold_prefix=True
     )
     set_tc_paragraphs(obtener_celda_xml(tabla8, 3, 2), p_inst3_dim)
@@ -763,7 +763,7 @@ def main():
     for p in doc.paragraphs:
         txt = p.text.strip()
         if txt.startswith("Nota. Los tres instrumentos") or (txt.startswith("Nota.") and ("PMMV" in txt or "DEC-007" in txt or "instrumentos de recolección" in txt.lower())):
-            p.text = "Nota. Instrumentos de recolección de datos elaborados para la evaluación preexperimental de la gestión de movimientos de vacunas, validados mediante juicio de expertos de la Escuela Profesional de Ingeniería de Sistemas de la UNAJMA (coeficiente V de Aiken e Índice de Validez de Contenido)."
+            p.text = "Nota. Instrumentos de recolección de datos elaborados para la evaluación preexperimental de la gestión de movimientos de vacunas. Únicamente el Instrumento N.° 03 (Modalidad A, 8 ítems) se somete a juicio de contenido mediante el coeficiente V de Aiken y el Índice de Validez de Contenido con tres jueces expertos de la Escuela Profesional de Ingeniería de Sistemas de la UNAJMA. Los Instrumentos N.° 01 y N.° 02 son fichas de registro y no se someten a juicio de contenido."
             formatear_parrafo_general(p, font_size_pt=9.0, line_spacing=LINE_SPACING_1_0_DXA, space_before=60, space_after=120, align="both")
             p_nota_t8_ref = p
             break
@@ -1277,13 +1277,13 @@ def main():
         "• Población y Muestra: Censal (N = n = 14 trabajadores de inmunizaciones).\n"
         "• Unidades de Observación:\n"
         "  - D1: Transacciones cronometradas (registro de movimientos y vales de salida).\n"
-        "  - D2: Documentos y kardex auditados (8 criterios).\n"
+        "  - D2: Documentos y kardex auditados (8 criterios de conformidad sobre un corpus de 40 a 60 entregas por ventana de 30 días).\n"
         "  - D3: Trabajadores encuestados (n = 14).\n"
         "• Técnicas e Instrumentos:\n"
         "  - Observación sistemática: Ficha N° 01 (ICC ≥ 0.75).\n"
         "  - Cotejo documental: Ficha N° 02 (Kappa κ ≥ 0.80).\n"
-        "  - Encuesta: Cuestionario TAM N° 03 (α ≥ 0.70 / ω ≥ 0.70).\n"
-        "• Validez de Contenido: Juicio de 3 expertos UNAJMA (V ≥ 0.80, IVC ≥ 0.80).\n"
+        "  - Encuesta: Cuestionario TAM N° 03 (α ≥ 0.70; ω no estimado con n = 14).\n"
+        "• Validez de Contenido: Solo el Instrumento N° 03, 8 ítems de Modalidad A, con 3 jueces UNAJMA (V ≥ 0.80, IVC ≥ 0.80); las Fichas N° 01 y 02 no se someten a juicio de contenido.\n"
         "• Plan de Análisis Estadístico:\n"
         "  - Descriptivo: Media, mediana, DE, RIC.\n"
         "  - Normalidad: Shapiro-Wilk (n = 14).\n"

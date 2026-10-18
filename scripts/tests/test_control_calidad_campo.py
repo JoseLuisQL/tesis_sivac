@@ -18,14 +18,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from scripts.agentes import control_calidad_campo as cc  # noqa: E402
 from scripts.comun import rutas, seguridad  # noqa: E402
 
-PATRONES_AP = [(3, 4, 2, 5, 3), (2, 3, 4, 3, 5), (4, 4, 3, 2, 5), (1, 3, 2, 4, 3), (5, 3, 4, 2, 4),
-               (3, 2, 4, 5, 2), (4, 3, 3, 5, 2)]
-PATRONES_UP = [(2, 5, 3, 4, 3), (3, 3, 5, 4, 2), (4, 2, 4, 3, 3), (5, 4, 2, 3, 4), (1, 4, 3, 5, 2),
-               (3, 5, 2, 4, 4), (2, 4, 5, 3, 3)]
+PATRONES_AP = [(3, 4, 2, 5), (2, 3, 4, 3), (4, 4, 3, 2), (1, 3, 2, 4), (5, 3, 4, 2),
+               (3, 2, 4, 5), (4, 3, 3, 5)]
+PATRONES_UP = [(2, 5, 3, 4), (3, 3, 5, 4), (4, 2, 4, 3), (5, 4, 2, 3), (1, 4, 3, 5),
+               (3, 5, 2, 4), (2, 4, 5, 3)]
 
 
 def categoria(total: int) -> str:
-    return "Bajo" if total <= 22 else "Medio" if total <= 36 else "Alto"
+    return "Bajo" if total <= 18 else "Medio" if total <= 29 else "Alto"
 
 
 def fila_fixture(i: int, fase: str) -> dict:
@@ -144,7 +144,7 @@ def test_n1_bom_es_advertencia(tmp_path, validas, chk):
     ("t_reg", 0, "FUERA_DE_RANGO"), ("t_reg", 120.01, "FUERA_DE_RANGO"), ("t_reg", -1, "FUERA_DE_RANGO"),
     ("t_vale", 0, "FUERA_DE_RANGO"), ("t_vale", 61, "FUERA_DE_RANGO"),
     ("rsd", 100.5, "FUERA_DE_RANGO"), ("rsd", -0.1, "FUERA_DE_RANGO"), ("cpe", 101, "FUERA_DE_RANGO"),
-    ("ap_01", 6, "FUERA_DE_RANGO"), ("ap_02", 0, "FUERA_DE_RANGO"), ("up_05", 3.5, "NO_ENTERO"),
+    ("ap_01", 6, "FUERA_DE_RANGO"), ("ap_02", 0, "FUERA_DE_RANGO"), ("up_04", 3.5, "NO_ENTERO"),
     ("t_vale", "12,5", "NO_NUMERICO"), ("cpe", "abc", "NO_NUMERICO"), ("fase", "POSTEST", "FASE_INCOHERENTE"),
 ])
 def test_n2_valores_invalidos(tmp_path, validas, chk, col, valor, codigo):
@@ -184,8 +184,8 @@ def test_n3_scores_y_baremo(tmp_path, validas, chk):
     assert {"SCORE_AP", "SCORE_UP", "SCORE_TAM", "BAREMO"} <= set(codigos(inf))
 
 
-@pytest.mark.parametrize("total,esperada", [(10, "Bajo"), (22, "Bajo"), (23, "Medio"), (36, "Medio"),
-                                             (37, "Alto"), (50, "Alto"), (9, None), (51, None)])
+@pytest.mark.parametrize("total,esperada", [(8, "Bajo"), (18, "Bajo"), (19, "Medio"), (29, "Medio"),
+                                             (30, "Alto"), (40, "Alto"), (7, None), (41, None)])
 def test_baremo_fronteras(total, esperada):
     assert cc.categoria_baremo(total) == esperada
 
@@ -196,11 +196,11 @@ def test_advertencias_no_bloquean(tmp_path, validas, chk):
     validas[1] = {**validas[0], "sujeto_id": "TRAB-02"}  # fila duplicada salvo id
     for c in cc.ITEMS_AP + cc.ITEMS_UP:  # varianza cero
         validas[2][c] = 3
-    validas[2].update(score_ap=15, score_up=15, score_tam_total=30, nivel_satisfaccion="Medio")
+    validas[2].update(score_ap=12, score_up=12, score_tam_total=24, nivel_satisfaccion="Medio")
     for c in cc.ITEMS_AP:  # bloque AP constante
         validas[3][c] = 4
-    validas[3]["score_ap"] = 20
-    validas[3]["score_tam_total"] = 20 + validas[3]["score_up"]
+    validas[3]["score_ap"] = 16
+    validas[3]["score_tam_total"] = 16 + validas[3]["score_up"]
     validas[3]["nivel_satisfaccion"] = categoria(validas[3]["score_tam_total"])
     inf = cc.validar_archivo(escribir(tmp_path / "a.csv", validas), "pretest", ruta_checksums=chk)
     assert inf["estado"] == "APROBADO", inf["errores"]

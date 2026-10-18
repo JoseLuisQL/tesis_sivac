@@ -106,7 +106,7 @@ Para realizar un desglose documental requieres:
 - Archivos fuente inmutables:
   * `referencias/proyecto_base/PROYECTO_TESIS.docx`.
   * `referencias/modelos_tesis/` (Tesis Fany 2024 y Jhon 2026 en PDF/DOCX).
-  * `referencias/modelos_validacion/` (Formatos del Dr. Cóndor Tinoco en DOCX/XLSX).
+  * `referencias/modelos_validacion/` (Formatos históricos en DOCX/XLSX; el modelo vigente por DEC-015 es el Anexo 2 de Fany 2024 en `referencias/modelos_tesis/`).
 - Documento o borrador de la tesis que requiera auditoría geométrica.
 
 ---

@@ -47,7 +47,7 @@ fecha: 2026-10-02
 | **Rol Institucional:** | [  ] Responsable de Centro de Acopio / Red de Frío<br>[  ] Personal de Estrategia Sanitaria de Inmunizaciones |
 | **Centro de Acopio / Sede:** | ____________________________________________________________________ |
 | **Red / Microred de Salud:** | __________________________________ Provincia: Andahuaylas [  ] / Chincheros [  ] |
-| **Momento de Medición:** | [  ] **PRETEST** ($O_1$: Kardex físico manual, libros de registro y hojas Excel dispersas)<br>[  ] **POSTEST** ($O_2$: Sistema web SIVAC - Arquitectura Laravel/MySQL) |
+| **Momento de Medición:** | [  ] **PRETEST** ($O_1$: Kardex físico manual, libros de registro y hojas Excel dispersas)<br>[  ] **POSTEST** ($O_2$: Sistema web SIVAC - React 18.3, Node.js/Express y PostgreSQL 16 con Prisma ORM) |
 | **Fecha de la Observación:** | ______ / ______ / 2025 |
 | **Evaluador Principal:** | Bach. José Luis Quispe León (Tesista EPIS-UNAJMA) |
 | **Evaluador Secundario (si aplica):** | ____________________________________________________________________ |

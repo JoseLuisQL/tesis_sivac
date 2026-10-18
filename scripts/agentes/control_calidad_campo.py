@@ -59,12 +59,12 @@ IDS_ESPERADOS = tuple(f"TRAB-{i:02d}" for i in range(1, N_SUJETOS + 1))
 FASES = ("PRETEST", "POSTEST")
 NIVELES_SATISFACCION = ("Bajo", "Medio", "Alto")
 # Baremo institucional sobre score_tam_total: (mínimo, máximo, categoría)
-BAREMO = ((10, 22, "Bajo"), (23, 36, "Medio"), (37, 50, "Alto"))
+BAREMO = ((8, 18, "Bajo"), (19, 29, "Medio"), (30, 40, "Alto"))
 TOKENS_FALTANTE = {"", "na", "n/a", "nan", "null", "none", "nd", "-"}
 UMBRAL_IDENTICOS = 0.70
 
-ITEMS_AP = tuple(f"ap_{i:02d}" for i in range(1, 6))
-ITEMS_UP = tuple(f"up_{i:02d}" for i in range(1, 6))
+ITEMS_AP = tuple(f"ap_{i:02d}" for i in range(1, 5))
+ITEMS_UP = tuple(f"up_{i:02d}" for i in range(1, 5))
 COLUMNAS = (
     "sujeto_id", "centro_acopio", "fase", "t_reg", "t_vale", "rsd", "cpe",
     *ITEMS_AP, "score_ap", *ITEMS_UP, "score_up", "score_tam_total",
@@ -112,25 +112,27 @@ def _reglas() -> dict[str, ReglaColumna]:
         "Porcentaje de registros sin discrepancias, RSD (D2, I2.1).")
     r["cpe"] = ReglaColumna(
         "cpe", "decimal", "razón (porcentaje)", 0, 100, True, True,
-        "Concordancia cantidad programada vs entregada, CPE (D2, I2.2).")
+        "Porcentaje de entregas con cantidad física conforme sobre el total de "
+        "despachos evaluados, CPE (D2, I2.2).")
     for i, c in enumerate(ITEMS_AP, 1):
         r[c] = ReglaColumna(c, "entero", "ordinal Likert 1-5", 1, 5, True, True,
-                            f"Reactivo {i} de Aceptación del proceso, AP (D3, I3.1, TAM).")
+                            f"Reactivo {i} de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).")
     for i, c in enumerate(ITEMS_UP, 1):
         r[c] = ReglaColumna(c, "entero", "ordinal Likert 1-5", 1, 5, True, True,
-                            f"Reactivo {i} de Utilidad percibida, UP (D3, I3.2, TAM).")
+                            f"Reactivo {i} de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).")
     r["score_ap"] = ReglaColumna(
-        "score_ap", "entero", "intervalar", 5, 25, True, True,
-        "Suma de ap_01..ap_05.", derivada="suma(ap_01..ap_05)")
+        "score_ap", "entero", "intervalar", 4, 20, True, True,
+        "Suma de ap_01..ap_04 (subescala AP, 4 a 20 puntos).", derivada="suma(ap_01..ap_04)")
     r["score_up"] = ReglaColumna(
-        "score_up", "entero", "intervalar", 5, 25, True, True,
-        "Suma de up_01..up_05.", derivada="suma(up_01..up_05)")
+        "score_up", "entero", "intervalar", 4, 20, True, True,
+        "Suma de up_01..up_04 (subescala UP, 4 a 20 puntos).", derivada="suma(up_01..up_04)")
     r["score_tam_total"] = ReglaColumna(
-        "score_tam_total", "entero", "intervalar", 10, 50, True, True,
-        "Puntuación TAM total = score_ap + score_up.", derivada="score_ap + score_up")
+        "score_tam_total", "entero", "intervalar", 8, 40, True, True,
+        "Puntuación TAM total = score_ap + score_up (8 ítems, 8 a 40 puntos).",
+        derivada="score_ap + score_up")
     r["nivel_satisfaccion"] = ReglaColumna(
         "nivel_satisfaccion", "texto", "ordinal", None, None, True, True,
-        "Categoría según baremo: 10-22 Bajo, 23-36 Medio, 37-50 Alto.",
+        "Categoría según baremo por terciles: 8-18 Bajo, 19-29 Medio, 30-40 Alto.",
         dominio=NIVELES_SATISFACCION, derivada="baremo(score_tam_total)")
     assert set(r) == set(COLUMNAS)
     return {c: r[c] for c in COLUMNAS}  # orden canónico del codebook
@@ -446,11 +448,11 @@ def nivel3_consistencia(lec: Lectura) -> list[Hallazgo]:
 
         if esperado_ap is not None and s_ap is not None and s_ap != esperado_ap:
             h.append(Hallazgo(3, "SCORE_AP", "error",
-                              f"score_ap={s_ap} pero la suma de ap_01..ap_05 es {esperado_ap}.",
+                              f"score_ap={s_ap} pero la suma de ap_01..ap_04 es {esperado_ap}.",
                               fila=i, columna="score_ap", sujeto_id=sid))
         if esperado_up is not None and s_up is not None and s_up != esperado_up:
             h.append(Hallazgo(3, "SCORE_UP", "error",
-                              f"score_up={s_up} pero la suma de up_01..up_05 es {esperado_up}.",
+                              f"score_up={s_up} pero la suma de up_01..up_04 es {esperado_up}.",
                               fila=i, columna="score_up", sujeto_id=sid))
         if s_ap is not None and s_up is not None and s_tam is not None and s_tam != s_ap + s_up:
             h.append(Hallazgo(3, "SCORE_TAM", "error",
@@ -462,7 +464,7 @@ def nivel3_consistencia(lec: Lectura) -> list[Hallazgo]:
             if cat is not None and cat != nivel:
                 h.append(Hallazgo(3, "BAREMO", "error",
                                   f"nivel_satisfaccion={nivel!r} pero score_tam_total={s_tam} "
-                                  f"corresponde a {cat!r} (10-22 Bajo, 23-36 Medio, 37-50 Alto).",
+                                  f"corresponde a {cat!r} (8-18 Bajo, 19-29 Medio, 30-40 Alto).",
                                   fila=i, columna="nivel_satisfaccion", sujeto_id=sid))
     return h
 
@@ -499,7 +501,7 @@ def advertencias_sospechosas(lec: Lectura) -> list[Hallazgo]:
         todos = ap + up
         if len(set(todos)) == 1:
             h.append(Hallazgo(2, "VARIANZA_CERO_LIKERT", "advertencia",
-                              f"Las 10 respuestas Likert son idénticas ({todos[0]}); "
+                              f"Las {len(todos)} respuestas Likert son idénticas ({todos[0]}); "
                               "posible respuesta automática.", fila=i, sujeto_id=sid))
             continue
         patrones = []
@@ -508,7 +510,7 @@ def advertencias_sospechosas(lec: Lectura) -> list[Hallazgo]:
         if len(set(up)) == 1:
             patrones.append(f"bloque UP constante ({up[0]})")
         for nombre, bloque in (("AP", ap), ("UP", up)):
-            if bloque in ([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]):
+            if bloque in (list(range(1, len(bloque) + 1)), list(range(len(bloque), 0, -1))):
                 patrones.append(f"bloque {nombre} en secuencia monótona {bloque}")
         if patrones:
             h.append(Hallazgo(2, "STRAIGHT_LINING", "advertencia",

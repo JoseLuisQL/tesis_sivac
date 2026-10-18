@@ -29,18 +29,18 @@
   "faltantes_tolerados": 0,
   "baremo_satisfaccion": [
     {
-      "minimo": 10,
-      "maximo": 22,
+      "minimo": 8,
+      "maximo": 18,
       "categoria": "Bajo"
     },
     {
-      "minimo": 23,
-      "maximo": 36,
+      "minimo": 19,
+      "maximo": 29,
       "categoria": "Medio"
     },
     {
-      "minimo": 37,
-      "maximo": 50,
+      "minimo": 30,
+      "maximo": 40,
       "categoria": "Alto"
     }
   ],
@@ -146,7 +146,7 @@
       "tipo": "decimal",
       "escala": "razón (porcentaje)",
       "obligatorio": true,
-      "descripcion": "Concordancia cantidad programada vs entregada, CPE (D2, I2.2).",
+      "descripcion": "Porcentaje de entregas con cantidad física conforme sobre el total de despachos evaluados, CPE (D2, I2.2).",
       "rango": {
         "minimo": 0,
         "maximo": 100,
@@ -161,7 +161,7 @@
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 1 de Aceptación del proceso, AP (D3, I3.1, TAM).",
+      "descripcion": "Reactivo 1 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -176,7 +176,7 @@
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 2 de Aceptación del proceso, AP (D3, I3.1, TAM).",
+      "descripcion": "Reactivo 2 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -191,7 +191,7 @@
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 3 de Aceptación del proceso, AP (D3, I3.1, TAM).",
+      "descripcion": "Reactivo 3 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -206,7 +206,7 @@
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 4 de Aceptación del proceso, AP (D3, I3.1, TAM).",
+      "descripcion": "Reactivo 4 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -217,11 +217,27 @@
     },
     {
       "posicion": 12,
-      "nombre": "ap_05",
+      "nombre": "score_ap",
+      "tipo": "entero",
+      "escala": "intervalar",
+      "obligatorio": true,
+      "descripcion": "Suma de ap_01..ap_04 (subescala AP, 4 a 20 puntos).",
+      "rango": {
+        "minimo": 4,
+        "maximo": 20,
+        "minimo_incluido": true,
+        "maximo_incluido": true,
+        "notacion": "[4, 20]"
+      },
+      "derivada_de": "suma(ap_01..ap_04)"
+    },
+    {
+      "posicion": 13,
+      "nombre": "up_01",
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 5 de Aceptación del proceso, AP (D3, I3.1, TAM).",
+      "descripcion": "Reactivo 1 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -231,28 +247,12 @@
       }
     },
     {
-      "posicion": 13,
-      "nombre": "score_ap",
-      "tipo": "entero",
-      "escala": "intervalar",
-      "obligatorio": true,
-      "descripcion": "Suma de ap_01..ap_05.",
-      "rango": {
-        "minimo": 5,
-        "maximo": 25,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[5, 25]"
-      },
-      "derivada_de": "suma(ap_01..ap_05)"
-    },
-    {
       "posicion": 14,
-      "nombre": "up_01",
+      "nombre": "up_02",
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 1 de Utilidad percibida, UP (D3, I3.2, TAM).",
+      "descripcion": "Reactivo 2 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -263,11 +263,11 @@
     },
     {
       "posicion": 15,
-      "nombre": "up_02",
+      "nombre": "up_03",
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 2 de Utilidad percibida, UP (D3, I3.2, TAM).",
+      "descripcion": "Reactivo 3 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -278,11 +278,11 @@
     },
     {
       "posicion": 16,
-      "nombre": "up_03",
+      "nombre": "up_04",
       "tipo": "entero",
       "escala": "ordinal Likert 1-5",
       "obligatorio": true,
-      "descripcion": "Reactivo 3 de Utilidad percibida, UP (D3, I3.2, TAM).",
+      "descripcion": "Reactivo 4 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
       "rango": {
         "minimo": 1,
         "maximo": 5,
@@ -293,73 +293,43 @@
     },
     {
       "posicion": 17,
-      "nombre": "up_04",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 4 de Utilidad percibida, UP (D3, I3.2, TAM).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
-    },
-    {
-      "posicion": 18,
-      "nombre": "up_05",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 5 de Utilidad percibida, UP (D3, I3.2, TAM).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
-    },
-    {
-      "posicion": 19,
       "nombre": "score_up",
       "tipo": "entero",
       "escala": "intervalar",
       "obligatorio": true,
-      "descripcion": "Suma de up_01..up_05.",
+      "descripcion": "Suma de up_01..up_04 (subescala UP, 4 a 20 puntos).",
       "rango": {
-        "minimo": 5,
-        "maximo": 25,
+        "minimo": 4,
+        "maximo": 20,
         "minimo_incluido": true,
         "maximo_incluido": true,
-        "notacion": "[5, 25]"
+        "notacion": "[4, 20]"
       },
-      "derivada_de": "suma(up_01..up_05)"
+      "derivada_de": "suma(up_01..up_04)"
     },
     {
-      "posicion": 20,
+      "posicion": 18,
       "nombre": "score_tam_total",
       "tipo": "entero",
       "escala": "intervalar",
       "obligatorio": true,
-      "descripcion": "Puntuación TAM total = score_ap + score_up.",
+      "descripcion": "Puntuación TAM total = score_ap + score_up (8 ítems, 8 a 40 puntos).",
       "rango": {
-        "minimo": 10,
-        "maximo": 50,
+        "minimo": 8,
+        "maximo": 40,
         "minimo_incluido": true,
         "maximo_incluido": true,
-        "notacion": "[10, 50]"
+        "notacion": "[8, 40]"
       },
       "derivada_de": "score_ap + score_up"
     },
     {
-      "posicion": 21,
+      "posicion": 19,
       "nombre": "nivel_satisfaccion",
       "tipo": "texto",
       "escala": "ordinal",
       "obligatorio": true,
-      "descripcion": "Categoría según baremo: 10-22 Bajo, 23-36 Medio, 37-50 Alto.",
+      "descripcion": "Categoría según baremo por terciles: 8-18 Bajo, 19-29 Medio, 30-40 Alto.",
       "dominio": [
         "Bajo",
         "Medio",

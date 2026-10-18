@@ -117,23 +117,17 @@ def construir_seccion_preliminares(doc, base_dir):
     run_a1.font.name = 'Times New Roman'
     run_a1.font.size = Pt(10)
     run_a1.font.bold = True
-    run_a2 = p_aut.add_run("Bach. José Luis Quispe León\n")
+    run_a2 = p_aut.add_run("Bach. José Luis Quispe León\n\n")
     run_a2.font.name = 'Times New Roman'
     run_a2.font.size = Pt(11)
-    run_a3 = p_aut.add_run("ORCID: 0009-0000-0000-0000\n\n")
-    run_a3.font.name = 'Times New Roman'
-    run_a3.font.size = Pt(9.5)
 
     run_as1 = p_aut.add_run("ASESORA:\n")
     run_as1.font.name = 'Times New Roman'
     run_as1.font.size = Pt(10)
     run_as1.font.bold = True
-    run_as2 = p_aut.add_run("Dra. Norma Lorena Catacora Flores\n")
+    run_as2 = p_aut.add_run("Dra. Norma Lorena Catacora Flores")
     run_as2.font.name = 'Times New Roman'
     run_as2.font.size = Pt(11)
-    run_as3 = p_aut.add_run("ORCID: 0000-0000-0000-0000")
-    run_as3.font.name = 'Times New Roman'
-    run_as3.font.size = Pt(9.5)
 
     # Ciudad y año
     p_pie = doc.add_paragraph()
@@ -155,7 +149,7 @@ def construir_seccion_preliminares(doc, base_dir):
 
     p_dec_intro = agregar_parrafo(
         doc,
-        "Yo, **José Luis Quispe León**, con Documento Nacional de Identidad N° **[DNI]**, "
+        "Yo, **José Luis Quispe León**, identificado con DNI N.° **[Completar DNI oficial antes de impresión]**, "
         "graduado de la Escuela Profesional de Ingeniería de Sistemas de la Facultad de Ingeniería de la "
         "Universidad Nacional José María Arguedas, con domicilio real en la ciudad de Andahuaylas, "
         "departamento de Apurímac;",
@@ -171,9 +165,9 @@ def construir_seccion_preliminares(doc, base_dir):
     declaraciones = [
         "La tesis titulada: ***\"APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II\"***, es obra de mi exclusiva autoría intelectual, bajo la asesoría y dirección metodológica de mi Asesora de Tesis.",
         "No contiene plagio, fraude, colusión, copia literal no autorizada ni apropiación de ideas ajenas. Toda cita, tabla, algoritmo, figura o extracto de fuentes científicas nacionales e internacionales ha sido debidamente referenciado y citado conforme a las normas de estilo de la American Psychological Association (APA 7.ª edición).",
-        "No contiene invención, falsificación ni alteración de datos empíricos de campo; las mediciones del pretest y postest provienen exclusivamente de registros reales y observaciones directas en los centros de acopio de la Dirección de Salud Apurímac II.",
+        "No contiene invención, falsificación ni alteración de datos empíricos de campo; las mediciones del pre-test y post-test se sustentan exclusivamente en registros reales y observaciones directas en los centros de acopio de la Dirección de Salud Apurímac II.",
         "No ha sido presentada previa ni simultáneamente ante ninguna otra universidad, instituto superior ni entidad académica para la obtención de grado académico, título profesional o certificación técnica alguna.",
-        "Asumo plenamente la responsabilidad civil, penal, ética y administrativa en caso de comprobarse cualquier falsedad o infracción a la Ley sobre el Derecho de Autor (Decreto Legislativo N° 822) y el Reglamento de Grados y Títulos de la UNAJMA."
+        "Asumo plenamente la responsabilidad civil, penal, ética y administrativa en caso de comprobarse cualquier falsedad o infracción a la Ley sobre el Derecho de Autor (Decreto Legislativo N.° 822) y al Reglamento de Grados y Títulos de la UNAJMA."
     ]
     for idx, dec in enumerate(declaraciones, 1):
         p_item = agregar_item_lista(doc, dec, simbolo=f"{idx}.")
@@ -182,7 +176,7 @@ def construir_seccion_preliminares(doc, base_dir):
 
     p_dec_fe = agregar_parrafo(
         doc,
-        "En fe de lo cual firmo la presente declaración en la ciudad de Andahuaylas, a los 30 días del mes de septiembre de 2026.",
+        "En fe de lo cual firmo la presente declaración en la ciudad de Andahuaylas, a los 09 días del mes de octubre de 2026.",
         sangria=True
     )
     p_dec_fe.paragraph_format.line_spacing = 1.15
@@ -199,7 +193,7 @@ def construir_seccion_preliminares(doc, base_dir):
     run_f2 = p_firma.add_run("Bach. José Luis Quispe León\n")
     run_f2.font.name = 'Times New Roman'
     run_f2.font.bold = True
-    run_f3 = p_firma.add_run("DNI N° [DNI]\nAutor de la Tesis")
+    run_f3 = p_firma.add_run("DNI N.° [Completar DNI oficial antes de impresión]\nAutor de la Tesis")
     run_f3.font.name = 'Times New Roman'
 
     # --------------------------------------------------------------------------
@@ -263,7 +257,7 @@ def construir_seccion_preliminares(doc, base_dir):
     agregar_titulo_1(doc, "RESUMEN")
     agregar_parrafo(
         doc,
-        "Esta investigación tuvo como finalidad determinar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El estudio se desarrolló bajo un enfoque cuantitativo, tipo aplicada, nivel explicativo y diseño preexperimental con pretest y postest en un solo grupo (O1 → X → O2). La población censal estuvo conformada por los 14 trabajadores de salud responsables de los 8 centros de acopio provinciales de las redes de Andahuaylas y Chincheros (N = n = 14). El sistema web SIVAC fue construido mediante la metodología ágil Extreme Programming (XP) a lo largo de cuatro iteraciones (76 puntos de historia y 16 historias de usuario) y evaluado bajo el estándar internacional ISO/IEC 25010:2023. La recolección de datos empleó fichas de observación cronométrica, guías de cotejo documental y un cuestionario estructurado basado en el Modelo de Aceptación Tecnológica (TAM), validados por juicio de tres expertos con un coeficiente V de Aiken global de 0.987 e Índice de Validez de Contenido de 1.00. El protocolo de contrastación inferencial se estructuró mediante la prueba de normalidad de Shapiro-Wilk y la prueba de rangos con signo de Wilcoxon para muestras relacionadas (α = 0.05), evaluando el tiempo de registro y emisión de vales en la dimensión de oportunidad de procesamiento, los registros sin discrepancias y la concordancia programada versus entregada en la dimensión de consistencia documental, así como la aceptación del proceso y la utilidad percibida en la dimensión de satisfacción del usuario.",
+        "Esta investigación tuvo como finalidad determinar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El estudio se desarrolló bajo un enfoque cuantitativo, tipo aplicada y nivel explicativo, estructurando una evaluación de diseño preexperimental con pre-test y post-test en un solo grupo (GE: O₁ – X – O₂) sobre una población censal conformada por los 14 trabajadores responsables de los ocho centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14). Durante la ejecución ingenieril, se desarrolló e implementó el sistema web SIVAC bajo la metodología ágil Extreme Programming (XP) a lo largo de cuatro iteraciones (76 puntos de historia y 16 historias de usuario) y se verificó su calidad técnica conforme al estándar internacional ISO/IEC 25010:2023. Para la medición empírica se estructuraron fichas de observación cronométrica, guías de cotejo documental bajo la NTS N.° 196-MINSA/DGIESP-2022 y un cuestionario basado en el Modelo de Aceptación Tecnológica (TAM), los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA, conforme al procedimiento descrito en el Capítulo IV. El protocolo de contrastación inferencial se diseñó mediante la prueba de normalidad de Shapiro-Wilk y la prueba de rangos con signo de Wilcoxon para muestras relacionadas (α = 0.05) con ajuste de Holm-Bonferroni, con el propósito de determinar los cambios asociados a la aplicación del sistema en las tres dimensiones oficiales: oportunidad de procesamiento (tiempo de registro y emisión de vales de salida), consistencia documental (porcentaje de registros sin discrepancias y concordancia programada versus entregada) y satisfacción del usuario (aceptación del proceso y utilidad percibida), cuyos estadísticos definitivos de campo se encuentran en fase de consolidación post-test [Pendiente].",
         sangria=True
     )
     agregar_parrafo(
@@ -278,7 +272,7 @@ def construir_seccion_preliminares(doc, base_dir):
     agregar_titulo_1(doc, "ABSTRACT")
     agregar_parrafo(
         doc,
-        "This research aimed to determine the extent to which the application of the \"SIVAC\" system improves vaccine movement management among immunization healthcare personnel at the Apurímac II Health Directorate. The study was conducted under a quantitative approach, applied type, explanatory level, and a pre-experimental design with a single-group pretest and posttest (O1 → X → O2). The census population comprised all 14 healthcare workers responsible for the 8 provincial cold chain storage centers across the Andahuaylas and Chincheros health networks (N = n = 14). The SIVAC web system was built using the Extreme Programming (XP) agile methodology across four iterations (76 story points and 16 user stories) and evaluated under the international ISO/IEC 25010:2023 quality standard. Data collection utilized chronometric observation sheets, documentary auditing checklists, and a structured questionnaire based on the Technology Acceptance Model (TAM), validated by three expert judges with an overall Aiken's V coefficient of 0.987 and a Content Validity Index of 1.00. The inferential hypothesis testing protocol was structured using the Shapiro-Wilk normality test and the Wilcoxon signed-rank test for related samples (α = 0.05), evaluating recording and voucher issuance times within the processing timeliness dimension, discrepancy-free records and scheduled-versus-delivered concordance within the documentary consistency dimension, as well as process acceptance and perceived usefulness within the user satisfaction dimension.",
+        "This research aimed to determine the extent to which the application of the \"SIVAC\" system improves vaccine movement management among immunization healthcare personnel at the Apurímac II Health Directorate. The study was conducted under a quantitative approach, applied type, and explanatory level, structuring a pre-experimental evaluation design with a single-group pretest and posttest (GE: O₁ – X – O₂) across a census population of all 14 workers responsible for the eight cold chain storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14). During the engineering phase, the SIVAC web system was developed and implemented under the Extreme Programming (XP) agile methodology across four iterations (76 story points and 16 user stories), and its technical quality was verified under the international ISO/IEC 25010:2023 standard. For empirical measurement, chronometric observation sheets, documentary auditing checklists under NTS No. 196-MINSA/DGIESP-2022, and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, all of which will undergo content validation by a panel of three expert judges from EPIS-UNAJMA, following the procedure described in Chapter IV. The inferential hypothesis testing protocol was structured using the Shapiro-Wilk normality test and the Wilcoxon signed-rank test for related samples (α = 0.05) with Holm-Bonferroni adjustment to determine the changes associated with the system's application across the three official dimensions: processing timeliness (recording and outbound voucher issuance times), documentary consistency (percentage of discrepancy-free records and scheduled-versus-delivered concordance), and user satisfaction (process acceptance and perceived usefulness), whose definitive field statistics remain under posttest consolidation [Pending].",
         sangria=True
     )
     agregar_parrafo(
@@ -293,7 +287,7 @@ def construir_seccion_preliminares(doc, base_dir):
     agregar_titulo_1(doc, "CHUMASQA")
     agregar_parrafo(
         doc,
-        "Kay yachaymaskhaypa hatun munayninmi karqa SIVAC sutiyniyuq web llikapa yanapayninwan imaynatas hampi churanakuna apaykachay allinchakusqanta tupuy, Dirección de Salud Apurímac II nisqapi inmunizaciones llamk’aqkunapi. Kay t’aqwiyqa rurakurqa yupay yachayman chayanapaq (cuantitativo), taripasqa kawsaymanta (aplicada), sut’inchasqa (explicativo), ch’ulla kuskachasqa qutupi qallariy qawariywan tukupay tupuywan (O1 → X → O2). Llapan llamk’aqkunam karqanku chunka tawayuq (N = n = 14) hampi kamayuqkuna pusaq hampi waqaychana wasikunapi Andahuaylas hinallataq Chincheros llaqtakunapi. SIVAC web llikataqa rurarqanku Extreme Programming (XP) utqaylla yachaywan tawa muyuriypi (qanchis chunka suqtayuq llamk’ana yupaywan chunka suqtayuq willanakuykunawan), hinallataq qawarikurqa ISO/IEC 25010:2023 kamachiywan. Willaykuna huñunapaqqa llamk’achikurqam pacha tupuna rapikunata, qillqakuna qawana rapikunata, hinallataq TAM (Technology Acceptance Model) tapukuykunata, kimsantin yachaywasi amawtakunapa allin nisqanwan Aiken V yupaypi (0.987). Chimpapuray tupuyqa wakichikurqa Shapiro-Wilk hinallataq Wilcoxon yupaywan (α = 0.05), chaywanmi qawarikurqa qillqakuna ruray pacha utqaylla ruraypi, hampi yupaykunapi mana pantaykuna qillqa chiqap kayninpi, hinallataq llamk’aqkunapa kusisqa chaskikuynin TAM kamachiywan.",
+        "Kay yachaymaskhaypa hatun munayninmi karqa SIVAC sutiyniyuq web llikapa yanapayninwan imaynatas hampi churanakuna apaykachay allinchakusqanta tupuy, Dirección de Salud Apurímac II nisqapi inmunizaciones llamk’aqkunapi. Kay t’aqwiyqa rurakurqa yupay yachayman chayanapaq (cuantitativo), taripasqa kawsaymanta (aplicada), sut’inchasqa (explicativo), ch’ulla kuskachasqa qutupi qallariy qawariywan tukupay tupuywan wakichisqa (GE: O₁ – X – O₂). Llapan llamk’aqkunam karqanku chunka tawayuq (N = n = 14) hampi kamayuqkuna pusaq hampi waqaychana wasikunapi Andahuaylas hinallataq Chincheros llaqtakunapi. SIVAC web llikataqa rurarqanku hinallataq churarqanku Extreme Programming (XP) utqaylla yachaywan tawa muyuriypi (qanchis chunka suqtayuq llamk’ana yupaywan chunka suqtayuq willanakuykunawan), allin rurasqa kaynintañataq qawarikurqa ISO/IEC 25010:2023 kamachiywan. Willaykuna huñunapaqqa wakichikurqam pacha tupuna rapikunata, qillqakuna qawana rapikunata, hinallataq TAM (Technology Acceptance Model) tapukuykunata; kaykunataqmi kimsantin EPIS-UNAJMA yachaywasi amawtakunapa allin nisqanwan chiqanchasqa kanqaku, Capítulo IV nisqapi sut’inchasqa ñanman hina. Chimpapuray tupuyqa wakichikurqa Shapiro-Wilk hinallataq Wilcoxon yupaywan (α = 0.05) kimsa hatun t’aqapi tikraykunata tupunapaq: oportunidad de procesamiento (qillqay pacha hinallataq vale lluqsichiy pacha), consistencia documental (mana pantayniyuq qillqakuna hinallataq tupachisqa hampikuna), hinallataq satisfacción del usuario (llamk’aqkunapa chaskikuyninwan allin yanapakuy qawariynin), tukupay yupaykunaqa post-test wichq’aypim suyachkan [Pendiente].",
         sangria=True
     )
     agregar_parrafo(

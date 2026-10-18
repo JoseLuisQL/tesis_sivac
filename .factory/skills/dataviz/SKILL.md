@@ -3,7 +3,7 @@ name: dataviz
 description: Generación automatizada de visualizaciones estadísticas de alta resolución (300 DPI) bajo normas APA 7.ª edición con Matplotlib y Seaborn para SIVAC-THESIS-LAB.
 ---
 
-# VISUALIZACIÓN DE DATOS ESTADÍSTICOS (DATAVIZ) — NORMA APA 7.ª EDICIÓN
+# VISUALIZACIÓN DE DATOS ESTADÍSTICOS (DATAVIZ): NORMA APA 7.ª EDICIÓN
 
 > **Propósito:** Esta habilidad proporciona scripts y configuraciones en Python (`matplotlib`, `seaborn`) para generar figuras estadísticas listas para inserción en Word y PDF, con resolución de 300 DPI, legibilidad académica, paleta accesible y formato APA 7.
 
@@ -99,7 +99,20 @@ def generar_boxplot_pareado(pre, post, nombre_indicador, unidad, ruta_salida):
 ```
 
 ### 2.2. Gráfico de Barras Divergentes para Escala Likert (Modelo TAM)
-Ideal para los 10 ítems del Cuestionario de Satisfacción del Usuario (Aceptación y Utilidad Percibida).
+Ideal para los 8 reactivos de la Modalidad A del Cuestionario de Satisfacción del Usuario: cuatro de Aceptación del Proceso (AP-01 a AP-04) y cuatro de Utilidad Percibida (UP-01 a UP-04), conforme a DEC-019.
+
+**Rangos de eje obligatorios en las figuras de la Dimensión 3:**
+
+| Figura | Eje | Rango | Marcas |
+|---|---|---|---|
+| Distribución por reactivo | Eje de categorías | 8 reactivos (AP-01 a AP-04, UP-01 a UP-04) | Escala Likert de 1 a 5 |
+| Puntaje por subescala (AP o UP) | Eje de valores | 4 a 20 puntos | 4, 8, 12, 16, 20 |
+| Puntaje total de la Modalidad A | Eje de valores | 8 a 40 puntos | 8, 16, 24, 32, 40 |
+
+- El eje de la escala Likert se fija en [1, 5] con marcas enteras; no se extrapola fuera de ese intervalo.
+- Los gráficos de barras divergentes se centran en el punto neutro 3 y rotulan ambos extremos con las anclas verbales de la escala.
+- No se grafica la Modalidad B en las figuras de contraste pretest y postest, porque mide un constructo distinto y solo se aplica en el postest.
+- Todo eje de la Dimensión 3 se ancla en los rangos de la tabla anterior; no se extrapola por encima de 40 puntos ni por debajo de 8.
 
 ---
 

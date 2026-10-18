@@ -19,7 +19,7 @@ Esta versión consolida la madurez de la granja de agentes mediante una arquitec
 #### 1. Estructura Canónica de 5 Capas Funcionales
 Se formalizó la partición desacoplada del espacio de trabajo en cinco capas ortogonales:
 - **Capa 0 (`.claude/`):** Motor de agentes, reglas modulares canónicas (`.claude/rules/`), hooks de ciclo de vida (`.claude/hooks/`), esquemas formales JSON (`.claude/schemas/`) y 21 skills operativas (`.claude/skills/`).
-- **Capa 1 (`referencias/`):** Insumos inmutables de consulta protegidos contra escritura (modelos de tesis UNAJMA de Fany 2024 y Jhon 2026, modelos de validación del Dr. Cóndor Tinoco y `PROYECTO_TESIS.docx` original).
+- **Capa 1 (`referencias/`):** Insumos inmutables de consulta protegidos contra escritura (modelos de tesis UNAJMA de Fany 2024 y Jhon 2026, modelo de validación vigente correspondiente al Anexo 2 de Fany 2024 por DEC-015, paquete Cóndor Tinoco archivado y sin uso operativo, y `PROYECTO_TESIS.docx` original).
 - **Capa 2 (`datos/`):** Pipeline de datos segregado en `raw/` (datos brutos inmutables una vez ingresados), `processed/` (datos limpios tabulados), `plantillas/` (formatos de campo en blanco) y `schemas/` (codebooks y diccionarios de variables).
 - **Capa 3 (`scripts/`):** Herramientas de automatización divididas en `compiladores/` (maquetación capitular y maestro DOCX), `estadistica/` (inferencia R y Python), `figuras/` (generación de gráficos APA 7 a 300 DPI) y `utilidades/` (motor quirúrgico OpenXML).
 - **Capa 4 (`salidas/`):** Entregables y artefactos generados categorizados en `documentos/` (informes finales versionados), `figuras/` (gráficos a 300 DPI), `instrumentos/` (expedientes de validación y fichas de campo) y `reportes_jurado/` (dictámenes simulados).

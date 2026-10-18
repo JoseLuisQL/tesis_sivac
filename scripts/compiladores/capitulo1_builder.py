@@ -19,79 +19,76 @@ def construir_introduccion(doc):
 
     agregar_parrafo(
         doc,
-        "El propósito de esta investigación fue determinar la influencia del sistema web SIVAC "
-        "en la mejora de la gestión de movimientos de vacunas en el personal de inmunizaciones "
-        "de la Dirección de Salud Apurímac II. La trazabilidad logística de los productos "
-        "biológicos constituye un componente crítico para la salud pública, dado que las vacunas "
-        "son insumos termolábiles sujetos a estrictos parámetros de conservación térmica entre "
-        "+2 °C y +8 °C y a un control administrativo riguroso desde su recepción en los almacenes "
-        "centrales hasta su despacho final hacia los establecimientos de salud ejecutores. La "
-        "sincronización precisa entre el flujo físico de los lotes biológicos y el respaldo "
-        "documental de cada ingreso, transferencia y salida resulta indispensable para prevenir "
-        "quiebres de stock, evitar vencimientos por rotación inadecuada y asegurar la cobertura "
-        "oportuna del Esquema Nacional de Vacunación.",
+        "El propósito de esta investigación fue determinar en qué medida la aplicación del sistema web SIVAC "
+        "mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud "
+        "Apurímac II, evaluando los cambios observados antes y después de la intervención tecnológica. La "
+        "trazabilidad logística de los productos biológicos constituye un componente crítico para la salud "
+        "pública, dado que las vacunas son insumos termolábiles sujetos a estrictos parámetros de conservación "
+        "térmica entre +2 °C y +8 °C y a un control administrativo riguroso desde su recepción en los almacenes "
+        "centrales hasta su despacho final hacia los establecimientos de salud ejecutores. La sincronización "
+        "precisa entre el flujo físico de los lotes biológicos y el respaldo documental de cada ingreso, "
+        "transferencia y salida resulta indispensable para prevenir quiebres de stock, evitar vencimientos por "
+        "rotación inadecuada y asegurar la cobertura oportuna del Esquema Nacional de Vacunación.",
         sangria=True
     )
 
     agregar_parrafo(
         doc,
-        "Previo a la intervención tecnológica ejecutada en el presente estudio, la administración "
-        "de movimientos de vacunas en la Dirección de Salud Apurímac II, cuya jurisdicción comprende "
-        "las provincias de Andahuaylas y Chincheros a través de ocho centros de "
-        "acopio zonales, operaba mediante procedimientos manuales basados en libros físicos de kardex, "
-        "formatos impresos de requisición y hojas de cálculo aisladas sin conexión en red. Esta "
-        "dependencia del soporte en papel ocasionaba tiempos prolongados en el asentamiento de "
-        "transacciones y en la emisión de comprobantes oficiales de salida, frecuentes discrepancias "
-        "aritméticas y de codificación entre los saldos registrados y las existencias físicas en "
-        "refrigeración, así como una pronunciada sobrecarga operativa e insatisfacción en los "
-        "trabajadores responsables de la cadena de frío.",
+        "Previo a la intervención tecnológica ejecutada en el presente estudio, la administración de movimientos "
+        "de vacunas en la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), cuya jurisdicción "
+        "comprende las provincias de Andahuaylas y Chincheros a través de ocho centros de acopio (el almacén "
+        "especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud), "
+        "operaba mediante procedimientos manuales basados en libros físicos de kardex, formatos impresos de "
+        "requisición y hojas de cálculo aisladas sin conexión en red. Esta dependencia del soporte en papel "
+        "ocasionaba tiempos prolongados en el asentamiento de transacciones y en la emisión de vales de salida "
+        "(equivalentes institucionalmente a comprobantes de salida o entrega), frecuentes discrepancias "
+        "aritméticas y de codificación entre los saldos registrados y las existencias físicas en refrigeración, "
+        "así como una pronunciada sobrecarga operativa e insatisfacción en los trabajadores responsables de la "
+        "cadena de frío.",
         sangria=True
     )
 
     agregar_parrafo(
         doc,
-        "Para resolver dicha problemática operativa, se desarrolló e implementó el sistema web SIVAC "
-        "aplicando las cuatro fases iterativas de la metodología ágil Extreme Programming: "
-        "planificación, diseño, codificación y pruebas, bajo los estándares de calidad de producto "
-        "de software de la norma internacional ISO/IEC 25010:2023. La arquitectura cliente-servidor "
-        "desacoplada del sistema automatizó la gestión de movimientos de vacunas articulando tres "
-        "dimensiones fundamentales: la oportunidad de procesamiento, medida a través del tiempo de "
-        "registro de movimientos y del tiempo de emisión de comprobantes de salida; la consistencia "
-        "documental, evaluada mediante el porcentaje de registros sin discrepancias y la concordancia "
-        "entre la cantidad programada y la cantidad entregada; y la satisfacción del usuario, "
-        "analizada a partir de la aceptación del proceso y la utilidad percibida según el Modelo "
-        "de Aceptación Tecnológica.",
+        "Para atender dicha problemática operativa, se desarrolló e implementó el sistema web SIVAC aplicando las "
+        "cuatro fases iterativas de la metodología ágil Extreme Programming: planificación, diseño, codificación "
+        "y pruebas, verificando sus atributos de calidad técnica bajo la norma internacional ISO/IEC 25010:2023. "
+        "La arquitectura cliente-servidor desacoplada del sistema se diseñó para sistematizar la gestión de "
+        "movimientos de vacunas articulando tres dimensiones fundamentales: la oportunidad de procesamiento, "
+        "medida a través del tiempo de registro de movimientos y del tiempo de emisión de vales de salida; la "
+        "consistencia documental, evaluada mediante el porcentaje de registros sin discrepancias y la concordancia "
+        "entre la cantidad programada y la cantidad entregada; y la satisfacción del usuario, analizada a partir "
+        "de la aceptación del proceso y la utilidad percibida según el Modelo de Aceptación Tecnológica.",
         sangria=True
     )
 
     agregar_parrafo(
         doc,
-        "Metodológicamente, la investigación se ejecutó bajo el enfoque cuantitativo, de tipo "
-        "aplicada y nivel explicativo, empleando un diseño preexperimental con pre-test y post-test "
-        "en un solo grupo. Se trabajó con una población censal conformada por la totalidad de los "
-        "14 operadores de la cadena de inmunizaciones de la Dirección de Salud Apurímac II, "
-        "integrada por cuatro especialistas de la sede administrativa central y diez responsables "
-        "de los centros de acopio periféricos. Para la recolección de datos empíricos se aplicaron "
-        "tres instrumentos: una ficha de observación de tiempos cronometrados, una guía de cotejo "
-        "documental de kardex y vales, y un cuestionario psicométrico en escala Likert, los cuales "
-        "fueron validados mediante juicio de expertos con el Índice de Validez de Contenido y el "
-        "coeficiente V de Aiken, contemplando la prueba de Shapiro-Wilk para el análisis de "
-        "normalidad y la prueba de rangos con signo de Wilcoxon para la contrastación de hipótesis.",
+        "Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel "
+        "explicativo, empleando un diseño preexperimental con pre-test y post-test en un solo grupo (GE: O₁ – X – O₂). "
+        "Se trabajó con una población censal conformada por la totalidad de los 14 operadores de la cadena de "
+        "inmunizaciones de la DISA Apurímac II (N = n = 14), integrada por cuatro especialistas de la sede "
+        "administrativa central y diez responsables de los centros de acopio periféricos. Para la recolección de "
+        "datos empíricos se diseñaron tres instrumentos: una ficha de observación de tiempos cronometrados, una "
+        "guía de cotejo documental de kardex y vales de salida, y un cuestionario psicométrico en escala Likert, "
+        "los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA "
+        "conforme al procedimiento descrito en el Capítulo IV, contemplando la prueba de Shapiro-Wilk para el "
+        "análisis de normalidad y la prueba de rangos con signo de Wilcoxon (α = 0.05) para la contrastación de "
+        "hipótesis.",
         sangria=True
     )
 
     agregar_parrafo(
         doc,
-        "Finalmente, el estudio consolidó un aporte práctico, metodológico e institucional directo "
-        "para la salud pública en el departamento de Apurímac al transformar un proceso logístico "
-        "históricamente manual en un flujo digital auditable, centralizado y en tiempo real. En el "
-        "plano práctico e institucional, la puesta en producción del sistema web SIVAC dotó a la "
-        "Dirección de Salud Apurímac II de una plataforma propia que optimizó el control de lotes "
-        "bajo el principio de primero en expirar, primero en salir y transparentó la distribución "
-        "interinstitucional de biológicos hacia las microredes de salud; asimismo, en el plano "
-        "metodológico, estableció una estructura de medición e instrumentación replicable para "
-        "evaluar el impacto de sistemas de información logística sanitaria en redes de salud de "
-        "alta dispersión geográfica.",
+        "Finalmente, el estudio configuró un aporte práctico, metodológico e institucional directo para la gestión "
+        "sanitaria en el departamento de Apurímac al estructurar la transición de un proceso logístico "
+        "históricamente manual hacia un flujo digital auditable y centralizado. La implementación del sistema web "
+        "SIVAC tuvo como propósito proporcionar a la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II) "
+        "una plataforma tecnológica propia para centralizar el control de lotes, automatizar el kardex y fortalecer "
+        "la trazabilidad documental de los movimientos de vacunas hacia las redes y microredes de salud; asimismo, "
+        "en el plano metodológico, estableció una estructura de medición e instrumentación replicable para evaluar "
+        "intervenciones de sistemas de información logística sanitaria en redes de salud de alta dispersión "
+        "geográfica.",
         sangria=True
     )
 
@@ -115,7 +112,7 @@ def construir_capitulo1(doc):
         "embargo, en numerosos sistemas de salud de ingresos bajos y medianos persiste el uso de "
         "formatos manuales en soporte de papel y hojas de cálculo desconectadas, lo cual fragmenta "
         "la trazabilidad de los lotes, retrasa la consolidación de saldos y dificulta la toma de "
-        "decisiones oportunas ante emergencias sanitarias (OPS y PATH, 2020).",
+        "decisiones oportunas ante emergencias sanitarias (Organización Panamericana de la Salud y PATH, 2020).",
         sangria=True
     )
 
@@ -140,7 +137,7 @@ def construir_capitulo1(doc):
     agregar_parrafo(
         doc,
         "En contrapartida, la literatura científica internacional demostró que la adopción de "
-        "plataformas digitales y sistemas web especializados revierte de forma sustancial estas "
+        "plataformas digitales y sistemas web especializados atenúa de forma sustancial estas "
         "deficiencias operativas y documentales. Shen et al. (2024, p. 1), al evaluar la "
         "implementación de un sistema digital de gestión de cadena de suministro hospitalaria en "
         "China, verificaron que la tasa de roturas de stock se redujo de 0.425% a 0.277% y que la "
@@ -162,25 +159,25 @@ def construir_capitulo1(doc):
     agregar_parrafo(
         doc,
         "En el ámbito nacional peruano, la gestión técnica y administrativa de los productos "
-        "biológicos se rige por la Norma Técnica de Salud NTS N° 196-MINSA/DGIESP-2022, aprobada "
-        "mediante Resolución Ministerial N° 884-2022/MINSA, la cual establece la obligatoriedad "
+        "biológicos se rige por la Norma Técnica de Salud NTS N.° 196-MINSA/DGIESP-2022, aprobada "
+        "mediante Resolución Ministerial N.° 884-2022/MINSA, la cual establece la obligatoriedad "
         "de mantener actualizado el control de stock por tipo de vacuna, número de lote y fecha "
-        "de expiración mediante el registro en kardex y la emisión de comprobantes oficiales de "
-        "salida en todas las dependencias de salud (Ministerio de Salud [MINSA], 2022). Pese a "
-        "las exigencias de dicho marco regulatorio (MINSA, 2022), en los niveles regionales y "
-        "locales del país subsiste una marcada brecha tecnológica y de infraestructura en el "
-        "control logístico de los almacenes de inmunizaciones. Esta problemática fue constatada "
-        "por Gutiérrez-Aguado et al. (2024, pp. 73–78) en su evaluación nacional de la cadena de "
-        "frío del MINSA, donde determinaron que apenas el 38.2% de los equipos de refrigeración "
-        "contaba con una antigüedad menor a diez años —registrando un 61.8% de obsolescencia que "
-        "superó el 80% en las regiones del interior del país— y evidenciaron profundos desfases "
-        "entre los inventarios patrimoniales oficiales del módulo SIGA-MEF y las existencias reales "
-        "reportadas en los almacenes locales, lo cual compromete la planificación de suministros y "
-        "eleva el riesgo de pérdida biológica por falta de herramientas digitales ágiles. Al "
-        "respecto, Mego Navarro (2021, p. 32) identificó en una entidad pública de salud que el "
-        "45% de los operadores aún recababa información de vacunas desplazándose físicamente a "
-        "los centros de salud y que el 25% de los reportes presentaba datos incompletos por "
-        "carecer de un sistema web centralizado.",
+        "de expiración mediante el registro en kardex y la emisión de vales de salida (equivalentes "
+        "institucionalmente a comprobantes de salida o entrega) en todas las dependencias de salud "
+        "(Ministerio de Salud, 2022). Pese a las exigencias de dicho marco regulatorio "
+        "(Ministerio de Salud, 2022), en los niveles regionales y locales del país subsiste una marcada brecha "
+        "tecnológica y de infraestructura en el control logístico de los almacenes de inmunizaciones. "
+        "Esta problemática fue constatada por Gutiérrez-Aguado et al. (2024, pp. 73–78) en su "
+        "evaluación nacional de la cadena de frío del MINSA, donde determinaron que apenas el 38.2% "
+        "de los equipos de refrigeración contaba con una antigüedad menor a diez años (registrando "
+        "un 61.8% de obsolescencia que superó el 80% en las regiones del interior del país) y "
+        "evidenciaron profundos desfases entre los inventarios patrimoniales oficiales del módulo "
+        "SIGA-MEF y las existencias reales reportadas en los almacenes locales, lo cual compromete "
+        "la planificación de suministros y eleva el riesgo de pérdida biológica por falta de "
+        "herramientas digitales ágiles. Al respecto, Mego Navarro (2021, p. 32) identificó en una "
+        "entidad pública de salud que el 45% de los operadores aún recababa información de vacunas "
+        "desplazándose físicamente a los centros de salud y que el 25% de los reportes presentaba "
+        "datos incompletos por carecer de un sistema web centralizado.",
         sangria=True
     )
 
@@ -203,35 +200,59 @@ def construir_capitulo1(doc):
 
     agregar_parrafo(
         doc,
-        "En el contexto local de la Dirección de Salud Apurímac II (DISA Apurímac II), con sede "
-        "institucional en la ciudad de Andahuaylas, la Estrategia Sanitaria Nacional de "
+        "En el contexto local de la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), "
+        "con sede institucional en la ciudad de Andahuaylas, la Estrategia Sanitaria Nacional de "
         "Inmunizaciones administra el abastecimiento y la distribución de vacunas hacia ocho "
-        "centros de acopio y cabeceras de microred desplegados en las provincias de Andahuaylas "
-        "y Chincheros. Este flujo operativo recayó sobre una dotación censal de 14 trabajadores "
-        "(cuatro profesionales en la sede administrativa central y diez responsables de cadena de "
-        "frío en los centros de acopio periféricos), quienes ejecutaban de manera manual el "
-        "asentamiento de ingresos, transferencias, saldos de kardex y vales de despacho. En primer "
-        "término, esta modalidad tradicional afectó severamente la oportunidad de procesamiento, "
+        "centros de acopio, los cuales comprenden el almacén especializado de la sede central y los "
+        "centros de acopio vinculados a las redes y microredes de salud de las provincias de "
+        "Andahuaylas y Chincheros. Este flujo operativo recae sobre una dotación censal de 14 "
+        "trabajadores (cuatro profesionales en la sede administrativa central y diez responsables "
+        "de cadena de frío en los centros de acopio periféricos), quienes ejecutaban de manera "
+        "manual el asentamiento de ingresos, transferencias, saldos de kardex y vales de salida. "
+        "En primer término, esta modalidad tradicional afectó la oportunidad de procesamiento, "
         "dado que la transcripción manual en cuadernos físicos y hojas de cálculo locales demandaba "
-        "tiempos excesivos tanto para registrar cada movimiento de lote como para verificar y "
-        "emitir los comprobantes oficiales de salida hacia las microredes.",
+        "tiempos prolongados tanto para registrar cada movimiento de lote como para verificar y "
+        "emitir los vales de salida hacia las microredes.",
         sangria=True
     )
 
     agregar_parrafo(
         doc,
-        "En segundo término, se verificaron deficiencias recurrentes en la consistencia documental, "
+        "En el diagnóstico documental preliminar efectuado en la cadena de frío de la DISA Apurímac II "
+        "durante la línea base pre-intervención, la inspección de los libros de kardex manuscrito y "
+        "talonarios de vales de salida correspondientes al periodo basal [Pendiente de consignar volumen "
+        "exacto de registros basales] evidenció demoras operativas recurrentes en la transcripción manual "
+        "y en la conciliación mensual de saldos, así como observaciones de completitud documental que "
+        "sustentaron la necesidad de implementar una solución digital centralizada.",
+        sangria=True
+    )
+
+    agregar_parrafo(
+        doc,
+        "En segundo término, se identificaron deficiencias recurrentes en la consistencia documental, "
         "expresadas en errores de transcripción de códigos alfanuméricos de lote, omisión de fechas "
         "de caducidad, discrepancias entre los saldos asentados en los libros de kardex y las "
         "existencias reales en los equipos frigoríficos, así como discordancias entre las "
-        "cantidades programadas por las microredes y las dosis efectivamente entregadas. En tercer "
-        "término, la duplicidad de tareas mecánicas de conciliación mensual y la incertidumbre "
-        "frente a las auditorías sanitarias deterioraron la satisfacción del usuario en los 14 "
-        "operadores institucionales, generando agotamiento administrativo y baja aceptación del "
+        "cantidades programadas por las microredes y las dosis efectivamente entregadas en los vales "
+        "de salida. En tercer término, la duplicidad de tareas mecánicas de conciliación mensual y la "
+        "incertidumbre frente a las auditorías sanitarias afectaron la satisfacción del usuario en los "
+        "14 operadores institucionales, generando sobrecarga administrativa y baja aceptación del "
         "proceso manual. Frente a esta realidad problemática, se desarrolló e implementó el "
         "sistema web SIVAC bajo la metodología ágil Extreme Programming y el estándar ISO/IEC "
-        "25010:2023, con el fin de automatizar y centralizar la gestión de movimientos de vacunas "
-        "en la Dirección de Salud Apurímac II.",
+        "25010:2023, con el propósito de reducir las discrepancias documentales, disminuir la "
+        "probabilidad de errores de transcripción e incorporar controles preventivos frente a "
+        "inconsistencias en la gestión de movimientos de vacunas en la DISA Apurímac II.",
+        sangria=True
+    )
+
+    agregar_parrafo(
+        doc,
+        "Para efectos de esta investigación, la variable dependiente gestión de movimientos de vacunas "
+        "comprende exclusivamente el registro, validación, trazabilidad documental y emisión de vales de "
+        "salida vinculados a los ingresos, salidas, transferencias y saldos de biológicos en los ocho "
+        "centros de acopio de la DISA Apurímac II. La conservación termodinámica de los equipos "
+        "frigoríficos, el acto clínico de vacunación nominal de pacientes y la ejecución presupuestal no "
+        "forman parte de la variable evaluada.",
         sangria=True
     )
 
@@ -262,66 +283,73 @@ def construir_capitulo1(doc):
     agregar_parrafo(
         doc,
         "El presente estudio se justificó teóricamente porque articuló los principios de la "
-        "ingeniería de software ágil, la calidad de producto informático y la psicometría de "
-        "adopción tecnológica aplicados a la logística sanitaria de inmunizaciones. En el ámbito "
-        "del desarrollo de software, la investigación corroboró la eficacia de la metodología "
-        "Extreme Programming formulada por Beck (1999, p. 71) para construir sistemas transaccionales "
-        "mediante entregas incrementales y retroalimentación continua en entornos públicos con "
-        "reglas operativas estrictas. Asimismo, el estudio aplicó el modelo de calidad de producto "
-        "establecido por la International Organization for Standardization e International "
-        "Electrotechnical Commission [ISO/IEC] (2023, p. 2) a través de la norma ISO/IEC 25010:2023, "
-        "sustentando cómo la adecuación funcional, la eficiencia de desempeño y la capacidad de "
-        "interacción inciden en la oportunidad de procesamiento y en la consistencia documental "
-        "de los inventarios biológicos. De igual forma, validó empíricamente los constructos de "
-        "utilidad percibida y facilidad de uso percibida del Modelo de Aceptación Tecnológica "
-        "propuesto por Davis (1989, p. 320) para explicar la satisfacción del personal sanitario.",
+        "ingeniería de software ágil, la calidad de producto informático y la evaluación de "
+        "aceptación tecnológica aplicados a la logística sanitaria de inmunizaciones. En el ámbito "
+        "del desarrollo de software, la investigación empleó la metodología Extreme Programming "
+        "formulada por Beck (1999, p. 71) como marco de ingeniería de software para construir "
+        "sistemas transaccionales mediante entregas incrementales y retroalimentación continua en "
+        "entornos públicos con reglas operativas estrictas. Asimismo, el estudio aplicó el modelo "
+        "de calidad de producto establecido por la International Organization for Standardization e "
+        "International Electrotechnical Commission [ISO/IEC] (2023, p. 2) a través de la norma "
+        "ISO/IEC 25010:2023, sustentando cómo la adecuación funcional, la eficiencia de desempeño "
+        "y la capacidad de interacción se vinculan con la oportunidad de procesamiento y la "
+        "consistencia documental de los inventarios biológicos. De igual forma, el estudio empleó "
+        "el Modelo de Aceptación Tecnológica (TAM) propuesto por Davis (1989, p. 320), articulado "
+        "con la literatura de éxito de sistemas de información, como referente evaluativo de la "
+        "percepción del usuario a través de la utilidad percibida y la facilidad de uso percibida "
+        "en el personal sanitario, sin pretender validar el modelo TAM como teoría general.",
         sangria=True
     )
 
     agregar_titulo_3(doc, "1.3.2. Justificación práctica")
     agregar_parrafo(
         doc,
-        "En el plano práctico, la investigación se justificó al resolver de manera directa las "
-        "deficiencias operativas del registro manual de biológicos en la Dirección de Salud "
-        "Apurímac II mediante la puesta en operación del sistema web SIVAC. La herramienta "
-        "implementada permitió a los 14 operadores de la estrategia sanitaria y de los ocho "
-        "centros de acopio automatizar el asentamiento de entradas, salidas y transferencias, "
-        "actualizar en tiempo real los saldos del kardex digital por lote y fecha de caducidad, "
-        "y generar comprobantes oficiales de salida en lapsos mínimos. Con ello se eliminaron las "
-        "discrepancias aritméticas en las conciliaciones mensuales y se redujo sustancialmente la "
-        "carga administrativa del personal de cadena de frío.",
+        "En el plano práctico, la investigación se justificó al abordar de manera directa las "
+        "deficiencias operativas del registro manual de biológicos en la DISA Apurímac II mediante "
+        "el desarrollo y despliegue del sistema web SIVAC. La herramienta implementada proporcionó "
+        "a los 14 operadores de la estrategia sanitaria y de los ocho centros de acopio módulos "
+        "para sistematizar el asentamiento de entradas, salidas y transferencias, actualizar en "
+        "tiempo real los saldos del kardex digital por lote y fecha de caducidad, y generar vales "
+        "de salida estandarizados. Con ello se buscó reducir las discrepancias aritméticas en las "
+        "conciliaciones mensuales y disminuir la carga administrativa asociada al registro manual.",
         sangria=True
     )
 
     agregar_titulo_3(doc, "1.3.3. Justificación metodológica")
     agregar_parrafo(
         doc,
-        "Desde la perspectiva metodológica, el estudio se justificó porque estructuró y ejecutó "
-        "un diseño preexperimental con pre-test y post-test en un solo grupo bajo los lineamientos "
-        "del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141), adaptado a una "
-        "población censal de 14 operadores especializados. Asimismo, la investigación diseñó y "
-        "sometió a validación rigurosa por juicio de expertos tres instrumentos de medición "
-        "específicos para evaluar el flujo de vacunas (una ficha de observación de tiempos "
-        "cronometrados, una guía de cotejo de ocho criterios normativos de integridad documental "
-        "y un cuestionario psicométrico de satisfacción), cuya validez de contenido se determinó "
-        "mediante el modelo modificado por Tristán-López (2008, p. 38) y el coeficiente V de Aiken, "
-        "constituyendo un referente metodológico verificable para futuras investigaciones en "
-        "informática biomédica y gestión pública.",
+        "Desde la perspectiva metodológica, el estudio se justificó porque estructuró un diseño "
+        "preexperimental con pre-test y post-test en un solo grupo (GE: O₁ – X – O₂) bajo los "
+        "lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141), "
+        "adaptado a una población censal de 14 operadores especializados (N = n = 14). Asimismo, la "
+        "investigación diseñó tres instrumentos de medición específicos para evaluar el flujo de "
+        "movimientos de vacunas (una ficha de observación de tiempos cronometrados, una guía de "
+        "cotejo de ocho criterios normativos de integridad documental y un cuestionario psicométrico "
+        "de satisfacción), estableciendo una distinción rigurosa entre: (a) la validez de contenido, "
+        "cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado "
+        "por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de "
+        "Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. "
+        "Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación "
+        "para ambos coeficientes; (b) la confiabilidad por consistencia interna, estimada mediante el coeficiente "
+        "Alfa de Cronbach por subescala para el cuestionario psicométrico TAM; y (c) la objetividad "
+        "procedimental y concordancia interevaluador, garantizadas mediante un protocolo "
+        "estandarizado de observación con disparadores unívocos y el coeficiente Kappa de Cohen "
+        "para las fichas de tiempos y la guía de cotejo documental.",
         sangria=True
     )
 
     agregar_titulo_3(doc, "1.3.4. Justificación social")
     agregar_parrafo(
         doc,
-        "En el ámbito social, la investigación se justificó por su contribución directa a la "
-        "protección de la salud colectiva en las provincias de Andahuaylas y Chincheros. Al "
-        "garantizar la oportunidad en el despacho de biológicos y la exactitud documental de los "
-        "lotes distribuidos desde la sede central de la Dirección de Salud Apurímac II hacia los "
-        "ocho centros de acopio y establecimientos periféricos, el estudio coadyuvó a asegurar "
-        "la disponibilidad oportuna y la conservación íntegra de las vacunas destinadas a niños "
-        "menores de cinco años, gestantes, adultos mayores y poblaciones vulnerables de las "
-        "comunidades rurales andinas, reduciendo el riesgo de desabastecimiento y de pérdida de "
-        "dosis por caducidad.",
+        "En el ámbito social, la investigación se justificó por su contribución a la gestión "
+        "oportuna del suministro de inmunizaciones en beneficio de la salud colectiva en las "
+        "provincias de Andahuaylas y Chincheros. Al fortalecer el control en el despacho de "
+        "biológicos y la trazabilidad documental de los lotes distribuidos desde el almacén "
+        "especializado de la sede central de la DISA Apurímac II hacia los centros de acopio de "
+        "las redes y microredes de salud, el estudio coadyuvó a respaldar la disponibilidad "
+        "oportuna de las vacunas destinadas a niños menores de cinco años, gestantes, adultos "
+        "mayores y poblaciones vulnerables de las comunidades rurales andinas, disminuyendo el "
+        "riesgo de desabastecimiento y de pérdida de dosis por caducidad.",
         sangria=True
     )
 
@@ -329,14 +357,14 @@ def construir_capitulo1(doc):
     agregar_parrafo(
         doc,
         "Tecnológicamente, el estudio se justificó al modernizar la infraestructura informática "
-        "del área de inmunizaciones de la Dirección de Salud Apurímac II mediante una arquitectura "
-        "web cliente-servidor desacoplada, construida con tecnologías modernas de código abierto, "
-        "servicios de interfaz de programación de aplicaciones bajo estilo REST, persistencia "
-        "relacional transaccional y autenticación segura basada en tokens criptográficos y control "
-        "de acceso por roles. Esta solución reemplazó el uso de archivos locales aislados por "
-        "una plataforma centralizada accesible desde cualquier centro de acopio autorizado, "
-        "implementando algoritmos de priorización de lotes próximos a vencer y validaciones "
-        "automáticas de integridad referencial.",
+        "del área de inmunizaciones de la DISA Apurímac II mediante una arquitectura web "
+        "cliente-servidor desacoplada, construida con tecnologías de código abierto, servicios de "
+        "interfaz de programación de aplicaciones bajo estilo REST, persistencia relacional "
+        "transaccional y autenticación segura basada en tokens criptográficos y control de acceso "
+        "por roles. Esta solución permitió sustituir el uso de archivos locales aislados por una "
+        "plataforma centralizada accesible desde los ocho centros de acopio autorizados, "
+        "incorporando controles preventivos frente a inconsistencias y reglas de priorización de "
+        "lotes próximos a vencer.",
         sangria=True
     )
 
@@ -361,35 +389,97 @@ def construir_capitulo1(doc):
     for oe in objetivos_esp:
         agregar_item_lista(doc, oe, simbolo="•")
 
-    # 1.5. Limitaciones de la investigación
-    agregar_titulo_2(doc, "1.5. Limitaciones de la investigación")
+    # 1.5. Hipótesis de la investigación
+    agregar_titulo_2(doc, "1.5. Hipótesis de la investigación")
+
+    agregar_titulo_3(doc, "1.5.1. Hipótesis general")
     agregar_parrafo(
         doc,
-        "Durante el desarrollo y ejecución del estudio en la Dirección de Salud Apurímac II se "
-        "identificaron limitaciones de índole geográfica, tecnológica, operativa y muestral que "
-        "fueron controladas dentro del alcance metodológico de la investigación. En primer lugar, "
-        "la dispersión geográfica de los ocho centros de acopio en las provincias de Andahuaylas "
-        "y Chincheros conllevó fluctuaciones temporales en el ancho de banda de internet en "
-        "establecimientos periféricos; esta condición se superó optimizando la ligereza de las "
-        "peticiones de datos del sistema web SIVAC y el manejo transaccional en el navegador. "
-        "En segundo lugar, se presentó una resistencia inicial al cambio por parte de operadores "
-        "habituados al llenado manual de libros físicos de kardex, la cual fue mitigada mediante "
-        "jornadas presenciales de capacitación práctica y el diseño de interfaces intuitivas con "
-        "validación preventiva de errores conforme al estándar ISO/IEC 25010:2023.",
+        "La aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos de "
+        "vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada "
+        "de manera integrada a través de la reducción de los tiempos de procesamiento, el incremento "
+        "de la consistencia documental y el incremento de la satisfacción y aceptación del sistema "
+        "por el usuario.",
         sangria=True
     )
     agregar_parrafo(
         doc,
-        "En tercer lugar, en cuanto al alcance funcional y temático, la investigación se "
-        "circunscribió exclusivamente a la gestión logística de movimientos de vacunas en sus "
-        "tres dimensiones de estudio: oportunidad de procesamiento, consistencia documental y "
-        "satisfacción del usuario, sin abarcar el registro nominal clínico de pacientes vacunados "
-        "ni la gestión presupuestal financiera, los cuales corresponden a plataformas nacionales "
-        "externas. Finalmente, dado que el universo institucional del personal responsable de "
-        "inmunizaciones y cadena de frío de la Dirección de Salud Apurímac II estuvo constituido "
-        "de forma íntegra por 14 servidores públicos, el tamaño de la población censal determinó "
-        "la evaluación previa de los supuestos distribucionales mediante la prueba de Shapiro-Wilk "
-        "para muestras pequeñas y la aplicación de la prueba no paramétrica de rangos con signo "
-        "de Wilcoxon para garantizar el rigor inferencial de los resultados.",
+        "En atención a que la variable dependiente se encuentra conformada por indicadores medidos en "
+        "escalas heterogéneas (minutos cronometrados, porcentajes de conformidad documental y puntajes "
+        "ordinales en escala Likert), la contrastación empírica de la hipótesis general se determina "
+        "mediante la integración inferencial conjunta de las tres hipótesis específicas (H1, H2 y H3) "
+        "bajo una regla de decisión conjuntiva con nivel de significancia α = 0.05 y corrección de "
+        "Holm-Bonferroni, sin aplicar un p-valor paramétrico único sobre métricas inconmensurables.",
+        sangria=True
+    )
+
+    agregar_titulo_3(doc, "1.5.2. Hipótesis específicas")
+    hipotesis_esp = [
+        "**H1:** La aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en la reducción del tiempo de registro de movimientos y del tiempo de emisión de vales de salida.",
+        "**H2:** La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento del porcentaje de registros sin discrepancias y de la concordancia entre la cantidad programada y la cantidad entregada.",
+        "**H3:** La aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento de la aceptación del proceso y de la utilidad percibida."
+    ]
+    for he in hipotesis_esp:
+        agregar_item_lista(doc, he, simbolo="•")
+
+    # 1.6. Variables de la investigación
+    agregar_titulo_2(doc, "1.6. Variables de la investigación")
+
+    agregar_titulo_3(doc, "1.6.1. Variable independiente: Sistema web SIVAC")
+    agregar_parrafo(
+        doc,
+        "El sistema web SIVAC constituye la intervención tecnológica experimental administrada sobre "
+        "el flujo logístico de inmunizaciones de la DISA Apurímac II, evaluada operacionalmente como "
+        "una condición dicotómica pre-intervención (gestión manual en libros físicos de kardex y "
+        "talonarios impresos) frente a post-intervención (gestión digitalizada mediante la plataforma "
+        "web SIVAC construida bajo la metodología Extreme Programming y verificada con la norma "
+        "ISO/IEC 25010:2023).",
+        sangria=True
+    )
+
+    agregar_titulo_3(doc, "1.6.2. Variable dependiente: Gestión de movimientos de vacunas")
+    agregar_parrafo(
+        doc,
+        "La gestión de movimientos de vacunas comprende el proceso técnico-administrativo de "
+        "registro, validación, trazabilidad en kardex y emisión de vales de salida de los productos "
+        "biológicos en los centros de acopio de la DISA Apurímac II. Se estructura en tres "
+        "dimensiones oficiales: (1) oportunidad de procesamiento, evaluada mediante el tiempo de "
+        "registro de movimientos y el tiempo de emisión de vales de salida; (2) consistencia "
+        "documental, medida a través del porcentaje de registros sin discrepancias y la concordancia "
+        "entre cantidad programada y cantidad entregada; y (3) satisfacción del usuario, medida "
+        "mediante la aceptación del proceso y la utilidad percibida bajo el Modelo de Aceptación "
+        "Tecnológica (TAM). La matriz detallada de operacionalización de variables se presenta en "
+        "la Tabla 10 del Capítulo IV.",
+        sangria=True
+    )
+
+    # 1.7. Delimitación de la investigación
+    agregar_titulo_2(doc, "1.7. Delimitación de la investigación")
+    agregar_parrafo(
+        doc,
+        "La investigación se circunscribió espacialmente a la jurisdicción sanitaria de la DISA "
+        "Apurímac II, abarcando sus ocho centros de acopio: el almacén especializado de la sede "
+        "central en Andahuaylas y los centros de acopio vinculados a las redes y microredes de "
+        "salud de las provincias de Andahuaylas y Chincheros. Temporalmente, el estudio se ejecutó "
+        "durante el periodo 2025–2026, estructurando ventanas simétricas de observación basal "
+        "(pre-test) y post-intervención (post-test) de 30 días calendario cada una. Social y "
+        "poblacionalmente, se delimitó a la totalidad censal de los 14 operadores responsables "
+        "de la cadena de frío e inmunizaciones de dicha entidad (N = n = 14).",
+        sangria=True
+    )
+    agregar_parrafo(
+        doc,
+        "En cuanto a la delimitación temática y a las limitaciones operativas controladas durante "
+        "el estudio, la investigación se enfocó exclusivamente en la gestión logística y documental "
+        "de movimientos de vacunas en sus tres dimensiones oficiales (oportunidad de procesamiento, "
+        "consistencia documental y satisfacción del usuario), sin abarcar la termodinámica física de "
+        "los equipos frigoríficos, el acto clínico de vacunación nominal de pacientes ni la ejecución "
+        "presupuestal financiera. Asimismo, las fluctuaciones de conectividad en centros periféricos "
+        "y la curva inicial de adaptación del personal fueron mitigadas mediante la ligereza "
+        "transaccional de la arquitectura web, jornadas presenciales de capacitación práctica y un "
+        "periodo de estabilización operativa previo a la medición post-test; finalmente, dado el "
+        "tamaño de la población censal (N = n = 14), se estableció la verificación distribucional "
+        "con la prueba de Shapiro-Wilk y el contraste no paramétrico de rangos con signo de Wilcoxon "
+        "para respaldar el rigor inferencial del estudio.",
         sangria=True
     )

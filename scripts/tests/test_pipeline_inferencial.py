@@ -45,15 +45,15 @@ def _csv_fixture(fase: str, semilla: int, mejora: bool) -> pd.DataFrame:
     rng = np.random.default_rng(semilla)
     n = 14
     base_t = 40 if not mejora else 20
-    ap = rng.integers(2 if not mejora else 3, 5 if not mejora else 6, size=(n, 5))
-    up = rng.integers(2 if not mejora else 3, 5 if not mejora else 6, size=(n, 5))
+    ap = rng.integers(2 if not mejora else 3, 5 if not mejora else 6, size=(n, 4))
+    up = rng.integers(2 if not mejora else 3, 5 if not mejora else 6, size=(n, 4))
     df = pd.DataFrame({"sujeto_id": [f"TRAB-{i:02d}" for i in range(1, n + 1)]})
     df["fase"] = fase.upper()
     df["t_reg"] = np.round(rng.uniform(base_t, base_t + 15, n), 2)
     df["t_vale"] = np.round(rng.uniform(base_t / 4, base_t / 4 + 8, n), 2)
     df["rsd"] = np.round(rng.uniform(60 if not mejora else 85, 80 if not mejora else 99, n), 2)
     df["cpe"] = np.round(rng.uniform(60 if not mejora else 85, 80 if not mejora else 99, n), 2)
-    for j in range(5):
+    for j in range(4):
         df[f"ap_{j + 1:02d}"] = ap[:, j]
         df[f"up_{j + 1:02d}"] = up[:, j]
     df["score_ap"] = ap.sum(axis=1)
@@ -360,7 +360,8 @@ def test_corrida_completa_fixture_y_reproducibilidad(tmp_path):
     if por_ind["T_reg"]["prueba"] == "t_pareada":
         assert por_ind["T_reg"]["resultado"]["p"] == pytest.approx(ref.pvalue, abs=1e-9)
     assert por_ind["T_reg"]["direccion_coincide_h1"] is True
-    assert r1["confiabilidad"]["pretest"]["AP"]["k_items"] == 5
+    assert r1["confiabilidad"]["pretest"]["AP"]["k_items"] == 4
+    assert r1["confiabilidad"]["pretest"]["Total"]["k_items"] == 8
 
 
 def test_no_escribe_en_datos_raw_ni_protegidas(tmp_path):
@@ -474,7 +475,7 @@ def test_manifest_no_utf8_bloquea_con_exit_3(tmp_path):
 def test_holm_nota_coherente_con_contrastes_no_estimables_y_alfa(tmp_path):
     pre = _csv_fixture("pretest", 1, False)
     post = _csv_fixture("postest", 2, True)
-    for col in [f"ap_{i:02d}" for i in range(1, 6)] + [f"up_{i:02d}" for i in range(1, 6)]:
+    for col in [f"ap_{i:02d}" for i in range(1, 5)] + [f"up_{i:02d}" for i in range(1, 5)]:
         post[col] = pre[col]
     post["score_ap"], post["score_up"] = pre["score_ap"], pre["score_up"]
     post["score_tam_total"] = pre["score_tam_total"]

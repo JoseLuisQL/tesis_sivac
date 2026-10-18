@@ -75,7 +75,7 @@ Como custodio del protocolo de memoria viva, eres su máxima referencia normativ
   * `03_CONCEPTOS_ATOMICOS/`: Red Zettelkasten permanente de notas conceptuales interconectadas.
   * `04_LITERATURA_Y_FUENTES/`: Fichas Zotero `@citekey.md`, notas de lectura y catálogo de PDFs.
   * `05_MODELOS_Y_REFERENCIAS/`: Tesis modelo UNAJMA y validaciones institucionales.
-  * `06_METODOLOGIA_E_INSTRUMENTOS/`: Instrumentos SIVAC, expediente Cóndor Tinoco y bancos de citas.
+  * `06_METODOLOGIA_E_INSTRUMENTOS/`: Instrumentos SIVAC, certificados de validación Fany 2024 (DEC-015) y bancos de citas.
   * `07_ESTADISTICA_Y_DATOS/`: Scripts reproducibles, datos de campo reales y figuras a 300 DPI.
   * `08_SISTEMA_Y_AGENTES/`: Bitácoras individuales, handoffs estructurados e informes de revisión.
   * `09_CANVAS_Y_DIAGRAMAS/`: Diagramas conceptuales, tableros Mermaid y mapas visuales.

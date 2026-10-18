@@ -43,7 +43,7 @@ sivac/ (Espacio de Trabajo Principal)
 │
 ├── referencias/                         # 📚 INSUMOS INMUTABLES (SOLO LECTURA)
 │   ├── modelos_tesis/                   # Tesis modelo UNAJMA (Jhon 2026, Fany 2024)
-│   ├── modelos_validacion/              # Formatos oficiales Dr. Cóndor Tinoco
+│   ├── modelos_validacion/              # Modelo vigente: Anexo 2 de Fany 2024 (DEC-015); paquete previo archivado sin uso operativo
 │   └── proyecto_base/                   # Proyecto original respaldado
 │
 ├── datos/                               # 📊 PIPELINE DE DATOS Y MEDICIÓN (Muestra censal n=14)
@@ -210,7 +210,7 @@ Los scripts en `.claude/hooks/` operan como controladores universales llamados p
 | **F2** | Metodología y Matrices | `guardian-consistencia`, `especialista-instrumentos` | Matriz de consistencia v3.0, 3 dimensiones DEC-007 | `jurado-revisor` | **QG-2 (Isomorfismo Metodológico)** |
 | **F3** | Marco Teórico y Citas | `investigador-bibliografico`, `redactor-academico` | Capítulos I y II compilados, 27+ citas Zotero | `verificador-integridad` | **QG-3 (Citas 1:1 Verificadas)** |
 | **F4** | Ingeniería XP (Sec. 3.3) | `ingeniero-sivac`, `documentador-xp` | Sección 3.3 con 76 historias de usuario y diagramas | `ingeniero-sivac` | **QG-4 (Trazabilidad 1:1 syncova)** |
-| **F5** | Instrumentos de Medición | `especialista-instrumentos`, `especialista-forms` | Expediente para expertos, V de Aiken e IVC > 0.80 | `jurado-revisor` | **QG-5 (Blindaje Psicométrico)** |
+| **F5** | Instrumentos de Medición | `especialista-instrumentos`, `especialista-forms` | Certificado único de validez de contenido del Instrumento N.° 03, Modalidad A (8 ítems, criterios dicotómicos Sí/No, emitido en blanco); umbrales V >= 0.80 e IVC >= 0.80 aplicables solo a ese certificado, con exigencia de unanimidad por n = 3 jueces y criterios dicotómicos; los Instrumentos N.° 01 y 02 no se someten a juicio de contenido | `jurado-revisor` | **QG-5 (Blindaje Psicométrico)** |
 | **F6** | Trabajo de Campo | `especialista-forms`, `analista-estadistico` | Datos reales pretest/postest en `datos/raw/` | `guardian-consistencia` | **QG-6 (Calidad de Datos n=14)** |
 | **F7** | Resultados (Capítulo V) | `analista-estadistico`, `redactor-academico` | Tablas descriptivas e inferenciales en Word | `guardian-consistencia` | **QG-7 (Normalidad e Inferencia)** |
 | **F8** | Discusión y Conclusiones | `redactor-academico`, `investigador-bibliografico` | Capítulo VI, Conclusiones 1:1 con objetivos | `jurado-revisor` | **QG-8 (Coherencia Explicativa)** |

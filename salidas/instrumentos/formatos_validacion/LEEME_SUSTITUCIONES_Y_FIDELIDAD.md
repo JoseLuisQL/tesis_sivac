@@ -1,3 +1,21 @@
+> # AVISO DE VIGENCIA — 2026-10-18
+>
+> **Este registro se conserva únicamente como documentación histórica del proceso de adaptación del modelo Cóndor Tinoco. NO describe el expediente vigente.**
+>
+> Por **DEC-015**, el modelo de referencia institucional pasó a ser el **modelo Fany 2024** (Anexo 2, páginas impresas 62 a 65): tabla con criterios dicotómicos Sí/No de Pertinencia, Relevancia y Claridad, más columna de Sugerencias, y bloque inferior con Observaciones, Opinión de aplicabilidad, Apellidos y nombres, DNI, Especialidad, fecha y firma.
+>
+> Por **DEC-016**, los formatos vigentes se emiten **íntegramente en blanco**, sin nombres, DNI, CIP, sellos, dictámenes, marcas ni fechas fijas.
+>
+> Por **DEC-014**, el expediente de validación y la matriz de cálculo de IVC que este registro describe contenían datos sin respaldo empírico y fueron retirados a cuarentena en `salidas/archivo/_material_apocrifo_no_usar/`.
+>
+> **Expediente vigente:** `salidas/documentos/anexos_fany/ANEXO_2_VALIDACION_FANY_INST03_MODALIDAD_A_VACIO.docx`, certificado único del Instrumento N.° 03 conforme a **DEC-020**
+>
+> **Generador vigente:** `scripts/compiladores/generar_anexo2_validacion_fany.py`
+>
+> En consecuencia, las secciones 4 y 5 de este documento (escala de calificación de 1 a 4 y sus instrucciones de llenado) **quedan sin efecto**. El llenado vigente consiste en marcar Sí o No en cada uno de los tres criterios, por ítem.
+
+---
+
 # Registro Oficial de Sustituciones y Fidelidad al Modelo Institucional
 
 **Proyecto de Tesis:** APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II  
@@ -5,10 +23,11 @@
 **Facultad / Escuela:** Facultad de Ingeniería / Escuela Profesional de Ingeniería de Sistemas  
 **Tesista:** Bach. José Luis Quispe León (DNI N° 70519963)  
 **Asesora:** Dra. Norma Lorena Catacora Flores  
-**Modelo de Referencia Oficial:** Dr. Enrique Cóndor Tinoco (EPIS-UNAJMA)  
+**Modelo de Referencia Oficial [SUPERADO POR DEC-015]:** Dr. Enrique Cóndor Tinoco (EPIS-UNAJMA). El modelo vigente es **Fany 2024**.  
 **Archivo fuente del modelo (solo lectura):** `referencias/modelos_validacion/Formato para la validacion de instrumento por ITEM.docx`  
-**Carpeta de salida oficial (`FV/`):** `salidas/instrumentos/formatos_validacion/`  
-**Generador determinista:** `scripts/compiladores/generar_formatos_validacion.py`  
+**Carpeta de salida oficial (`FV/`):** `salidas/instrumentos/formatos_validacion/` (ya no recibe formatos vigentes)  
+**Generador determinista [REESCRITO]:** `scripts/compiladores/generar_formatos_validacion.py`. Fue reescrito tras DEC-015; su ejecución por defecto no escribe ningún archivo, de modo que ya no puede imprimir formatos obsoletos en la ruta oficial.
+**Carpeta vigente de formatos:** `salidas/documentos/anexos_fany/`, que aloja el certificado único del Instrumento N.° 03 conforme a **DEC-020**.
 
 ---
 

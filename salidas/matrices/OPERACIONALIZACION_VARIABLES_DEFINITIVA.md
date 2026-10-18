@@ -67,7 +67,7 @@ La gestión de movimientos de vacunas se evalúa de manera cuantitativa y compar
 |---|---|---|---|---|
 | **Variable Dependiente (Y):**<br>Gestión de movimientos de vacunas | Conjunto de procesos técnicos y logísticos para programar, registrar, despachar y conciliar el flujo de biológicos en la red de frío de la DISA Apurímac II, garantizando oportunidad, consistencia documental y cadena de frío. | **1. Oportunidad de procesamiento** | • **Tiempo de registro de movimientos ($T_{reg}$):** Mide los minutos netos desde el inicio de digitación hasta su balance formal en kardex.<br><br>• **Tiempo de emisión de comprobantes ($T_{vale}$):** Mide los minutos netos desde la solicitud hasta la formalización y emisión del vale de salida o PECOSA. | • **Unidad:** Minutos decimales ($\text{min}$)<br>• **Escala:** Razón / Continua<br>• **Instrumento:** Ficha cronométrica N° 01<br>• **Confiabilidad:** $ICC(2,1) \ge 0.75$ |
 | | | **2. Consistencia documental** | • **Registros sin discrepancias ($RSD$):** Mide el porcentaje de registros conformes bajo cumplimiento simultáneo de 8 criterios obligatorios de auditoría.<br><br>• **Concordancia programada vs entregada ($CPE$):** Mide el porcentaje de entregas con cantidad física conforme respecto a lo solicitado. | • **Unidad:** Porcentaje ($\%$)<br>• **Escala:** Razón / Proporción $[0, 100]\%$<br>• **Instrumento:** Ficha de cotejo N° 02<br>• **Confiabilidad:** Kappa de Cohen $\kappa \ge 0.80$ |
-| | | **3. Satisfacción del usuario**<br>*(Satisfacción con el proceso)* | • **Aceptación del proceso operativo ($AP$):** Mide la complacencia, agilidad, fluidez y menor estrés laboral en el flujo de trabajo (4 ítems: 4 a 20 pts).<br><br>• **Utilidad percibida sanitaria ($UP$):** Mide la percepción de trazabilidad, control de existencias y soporte en decisiones (4 ítems: 4 a 20 pts; global: 8 a 40 pts). | • **Unidad:** Puntuación psicométrica (8 a 40 pts)<br>• **Escala:** Ordinal / Likert (1 a 5)<br>• **Instrumento:** Cuestionario TAM N° 03<br>• **Confiabilidad:** Alfa $\alpha \ge 0.70$ / Omega $\omega \ge 0.70$ |
+| | | **3. Satisfacción del usuario**<br>*(Satisfacción con el proceso)* | • **Aceptación del proceso operativo ($AP$):** Mide la complacencia, agilidad, fluidez y menor estrés laboral en el flujo de trabajo (4 ítems: 4 a 20 pts).<br><br>• **Utilidad percibida sanitaria ($UP$):** Mide la percepción de trazabilidad, control de existencias y soporte en decisiones (4 ítems: 4 a 20 pts; global: 8 a 40 pts). | • **Unidad:** Puntuación psicométrica (8 a 40 pts)<br>• **Escala:** Ordinal / Likert (1 a 5)<br>• **Instrumento:** Cuestionario TAM N° 03<br>• **Confiabilidad:** Alfa de Cronbach $\alpha \ge 0.70$ sobre los 8 ítems de la Modalidad A, con intervalo de confianza al 95 % por el método de Feldt; Omega de McDonald no estimado por insuficiencia muestral ($n = 14$) |
 
 ---
 
@@ -81,7 +81,7 @@ La gestión de movimientos de vacunas se evalúa de manera cuantitativa y compar
 * **Escala de Medición:** Razón / Cuantitativa continua.
 * **Unidad de Observación:** Transacciones operativas de registro de ingresos, salidas y transferencias de biológicos ejecutadas por los operadores.
 * **Instrumento:** Ficha de observación cronométrica N° 01 (Sección A).
-* **Protocolo de Medición:** Cronometraje digital estandarizado de 5 observaciones por participante, excluyendo interrupciones externas fortuitas.
+* **Protocolo de Medición:** Cronometraje digital estandarizado de 3 observaciones por participante, excluyendo interrupciones externas fortuitas.
 * **Protocolo de Confiabilidad:** Estandarización instrumental previa y Coeficiente de Correlación Intraclase $ICC(2,1) \ge 0.75$ para repetibilidad y consistencia interobservador.
 * **Tendencia Esperada:** Reducción sustancial del tiempo medio de registro entre pretest ($X_0$) y postest ($X_1$).
 
@@ -136,7 +136,7 @@ La gestión de movimientos de vacunas se evalúa de manera cuantitativa y compar
 * **Escala de Medición:** Razón / Proporción acotada en $[0, 100]\%$.
 * **Unidad de Observación:** Expedientes de requerimientos de microredes y sus correspondientes vales de salida / PECOSA asociados.
 * **Instrumento:** Ficha de registro y cotejo documental N° 02 (Sección B).
-* **Protocolo de Medición:** Auditoría comparativa de un conjunto auditado de 10 requerimientos institucionales frente a sus respectivos vales oficiales de salida por cada centro de acopio.
+* **Protocolo de Medición:** Auditoría comparativa de un corpus de 40 a 60 entregas por ventana temporal de 30 días, distribuidas proporcionalmente entre los centros de acopio, frente a sus respectivos vales oficiales de salida.
 * **Protocolo de Confiabilidad:** Concordancia inter-auditor independiente evaluada mediante el Coeficiente Kappa de Cohen ($\kappa \ge 0.80$).
 * **Tendencia Esperada:** Incremento en el nivel de concordancia hacia el 100%, eliminando desfases entre programación y despacho.
 
@@ -150,7 +150,7 @@ La gestión de movimientos de vacunas se evalúa de manera cuantitativa y compar
 * **Rango Escalar:** 4 a 20 puntos en la subdimensión.
 * **Unidad de Observación:** Trabajadores del área de inmunizaciones ($n = 14$).
 * **Instrumento:** Cuestionario de satisfacción del usuario N° 03 (Sección AP).
-* **Protocolo de Confiabilidad:** Consistencia interna psicométrica mediante Coeficiente Alfa de Cronbach ($\alpha \ge 0.70$ / $\ge 0.80$) y Coeficiente Omega de McDonald ($\omega \ge 0.70$ / $\ge 0.80$).
+* **Protocolo de Confiabilidad:** Coeficiente Alfa de Cronbach de referencia sobre los 8 ítems de la Modalidad A ($\alpha \ge 0.70$), con reporte obligatorio del intervalo de confianza al 95 % por el método de Feldt, Woodruff y Salih. El Alfa de esta subescala de 4 ítems se reporta solo como exploratorio, por la razón sujeto/ítem de 1.75. El Coeficiente Omega de McDonald no se estima por insuficiencia muestral ($n = 14$).
 * **Tendencia Esperada:** Aumento significativo de las puntuaciones medias entre el proceso manual (pretest) y el proceso asistido por SIVAC (postest).
 
 ---
@@ -163,7 +163,7 @@ La gestión de movimientos de vacunas se evalúa de manera cuantitativa y compar
 * **Rango Escalar:** 4 a 20 puntos en la subdimensión.
 * **Unidad de Observación:** Trabajadores del área de inmunizaciones ($n = 14$).
 * **Instrumento:** Cuestionario de satisfacción del usuario N° 03 (Sección UP).
-* **Protocolo de Confiabilidad:** Consistencia interna psicométrica mediante Coeficiente Alfa de Cronbach ($\alpha \ge 0.70$ / $\ge 0.80$) y Coeficiente Omega de McDonald ($\omega \ge 0.70$ / $\ge 0.80$).
+* **Protocolo de Confiabilidad:** Coeficiente Alfa de Cronbach de referencia sobre los 8 ítems de la Modalidad A ($\alpha \ge 0.70$), con reporte obligatorio del intervalo de confianza al 95 % por el método de Feldt, Woodruff y Salih. El Alfa de esta subescala de 4 ítems se reporta solo como exploratorio, por la razón sujeto/ítem de 1.75. El Coeficiente Omega de McDonald no se estima por insuficiencia muestral ($n = 14$).
 * **Tendencia Esperada:** Incremento significativo en la percepción de utilidad y soporte a la toma de decisiones sanitarias.
 
 ---
@@ -177,22 +177,25 @@ Para garantizar la coherencia metodológica entre el diseño experimental pretes
                                          │
         ┌────────────────────────────────┴────────────────────────────────┐
         ▼                                                                 ▼
-[MODALIDAD PRETEST - POSTEST (OPCIÓN B)]                 [MÓDULO COMPLEMENTARIO EN ANEXO]
+[MODALIDAD A: PRETEST Y POSTEST]                          [MODALIDAD B: MÓDULO ANEXO DE POSTEST]
 Constructo: Satisfacción con el Proceso                   Constructo: Aceptación Tecnológica de Software
 Medición: Pretest (manual) vs Postest (SIVAC)             Medición: Postest exclusivo tras uso del sistema
 Estructura: 8 ítems (4 AP + 4 UP)                         Modelo TAM de Fred Davis (1989)
-Rango: 8 a 40 puntos                                      8 ítems (4 PU + 4 PEOU)
+Rango: 8 a 40 puntos                                      8 ítems (4 PU + 4 PE)
 Permite inferencia causal pareada (HE3 con Wilcoxon)      Evaluación descriptiva de calidad en uso (ISO 25010)
 ```
 
-### Baremo Psicométrico Unificado de Interpretación (8 a 40 puntos):
+### Baremo de Interpretación por Terciles Teóricos (8 a 40 puntos):
+
+La partición en 8 a 18, 19 a 29 y 30 a 40 constituye un tercil teórico calculado sobre el rango posible de la suma de 8 ítems Likert de 1 a 5. Esa suma adopta exactamente 33 valores enteros, del 8 al 40, y el tercil los reparte en tres grupos de 11 valores cada uno, sin residuo. Los tres rangos no constituyen puntos de corte normativos validados empíricamente, por cuanto con n = 14 no existe distribución de referencia que los sustente.
+
 $$\text{Puntaje Total} = \sum_{i=1}^{8} \text{Puntuación Ítem}_i$$
 
 | Rango de Puntuación | Porcentaje Escalar | Nivel Categorial | Interpretación Operativa en la DISA Apurímac II |
 |:---:|:---:|:---:|---|
-| **8 a 18 puntos** | 20.0% – 45.0% | 🔴 **Nivel Bajo (Insatisfacción / Baja Aceptación)** | Percepción de lentitud, sobrecarga laboral, dificultades operativas y desconfianza en los saldos. |
-| **19 a 29 puntos** | 47.5% – 72.5% | 🟡 **Nivel Medio (Aceptación Moderada)** | Satisfacción parcial; se perciben beneficios pero persisten dificultades de manejo o trámites lentos. |
-| **30 a 40 puntos** | 75.0% – 100.0% | 🟢 **Nivel Alto (Plena Satisfacción y Aceptación)** | Elevada complacencia; el flujo es valorado como ágil, intuitivo, útil y seguro para la toma de decisiones. |
+| **8 a 18 puntos** | 20.0% – 45.0% | **Nivel Bajo (Insatisfacción / Baja Aceptación)** | Percepción de lentitud, sobrecarga laboral, dificultades operativas y desconfianza en los saldos. |
+| **19 a 29 puntos** | 47.5% – 72.5% | **Nivel Medio (Aceptación Moderada)** | Satisfacción parcial; se perciben beneficios pero persisten dificultades de manejo o trámites lentos. |
+| **30 a 40 puntos** | 75.0% – 100.0% | **Nivel Alto (Plena Satisfacción y Aceptación)** | Elevada complacencia; el flujo es valorado como ágil, intuitivo, útil y seguro para la toma de decisiones. |
 
 ---
 
@@ -202,9 +205,9 @@ En concordancia con las buenas prácticas psicométricas y metodológicas, se ap
 
 | Instrumento | Dimensión Evaluada | Naturaleza de Variable | Protocolo de Confiabilidad | Criterio de Aceptación | Protocolo de Validez de Contenido |
 |---|---|---|---|---|---|
-| **Instrumento N° 01:**<br>Ficha de observación cronométrica | Dimensión 1:<br>Oportunidad de procesamiento | Cuantitativa continua (tiempos en minutos decimales) | Estandarización instrumental cronométrica y Coeficiente de Correlación Intraclase para acuerdo interobservador y repetibilidad. | $ICC(2,1) \ge 0.75$<br>(Acuerdo excelente) | Juicio de 3 expertos docentes EPIS-UNAJMA:<br>• Coeficiente V de Aiken ($V \ge 0.80$)<br>• Índice de Validez de Contenido ($IVC \ge 0.80$, Tristán 2008) |
-| **Instrumento N° 02:**<br>Ficha de registro y cotejo documental | Dimensión 2:<br>Consistencia documental | Proporción cuantitativa basada en criterios dicotómicos de auditoría | Concordancia inter-auditor independiente sobre muestra de documentos evaluados bajo la regla de 8 criterios. | Coeficiente Kappa de Cohen<br>$\kappa \ge 0.80$<br>(Concordancia casi perfecta) | Juicio de 3 expertos docentes EPIS-UNAJMA:<br>• Coeficiente V de Aiken ($V \ge 0.80$)<br>• Índice de Validez de Contenido ($IVC \ge 0.80$, Tristán 2008) |
-| **Instrumento N° 03:**<br>Cuestionario de satisfacción del usuario | Dimensión 3:<br>Satisfacción del usuario | Ordinal / Escala Likert de 5 puntos (8 ítems) | Consistencia interna psicométrica para escalas congenéricas. | Coeficiente Alfa de Cronbach $\alpha \ge 0.70$ / $\ge 0.80$<br>Coeficiente Omega de McDonald $\omega \ge 0.70$ / $\ge 0.80$ | Juicio de 3 expertos docentes EPIS-UNAJMA:<br>• Coeficiente V de Aiken ($V \ge 0.80$)<br>• Índice de Validez de Contenido ($IVC \ge 0.80$, Tristán 2008) |
+| **Instrumento N° 01:**<br>Ficha de observación cronométrica | Dimensión 1:<br>Oportunidad de procesamiento | Cuantitativa continua (tiempos en minutos decimales) | Estandarización instrumental cronométrica y Coeficiente de Correlación Intraclase para acuerdo interobservador y repetibilidad. | $ICC(2,1) \ge 0.75$<br>(Acuerdo excelente) | **No se somete a juicio de contenido.**<br>• Validez sustentada en el protocolo de medición de movimientos de vacunas (PMMV).<br>• Calibración interobservador mediante Coeficiente de Correlación Intraclase ICC(2,1) >= 0.75. |
+| **Instrumento N° 02:**<br>Ficha de registro y cotejo documental | Dimensión 2:<br>Consistencia documental | Proporción cuantitativa basada en criterios dicotómicos de auditoría | Concordancia inter-auditor independiente sobre muestra de documentos evaluados bajo la regla de 8 criterios. | Coeficiente Kappa de Cohen<br>$\kappa \ge 0.80$<br>(Concordancia casi perfecta) | **No se somete a juicio de contenido.**<br>• Validez sustentada en el protocolo de medición de movimientos de vacunas (PMMV).<br>• Concordancia interauditor mediante Coeficiente Kappa de Cohen >= 0.80. |
+| **Instrumento N° 03:**<br>Cuestionario de satisfacción del usuario | Dimensión 3:<br>Satisfacción del usuario | Ordinal / Escala Likert de 5 puntos (8 ítems) | Consistencia interna psicométrica para escalas congenéricas. | Coeficiente Alfa de Cronbach sobre los 8 ítems de la Modalidad A<br>$\alpha \ge 0.70$<br>(Intervalo de confianza al 95 % por el método de Feldt, Woodruff y Salih)<br>Coeficiente Omega de McDonald: no estimado por insuficiencia muestral ($n = 14$) | **Único instrumento sometido a juicio de contenido.**<br>• Certificado único en formato Fany 2024, emitido en blanco (DEC-015 y DEC-016).<br>• Objeto: los 8 ítems de la Modalidad A de DEC-019 (AP-01 a AP-04 y UP-01 a UP-04).<br>• Criterios dicotómicos Pertinencia Sí/No, Relevancia Sí/No y Claridad Sí/No; con 3 jueces y c = 2, V = S / n.<br>• Coeficiente V de Aiken >= 0.80 e Índice de Validez de Contenido IVC >= 0.80 sobre esos 8 ítems.<br>• La Modalidad B (PU-01 a PU-04 y PE-01 a PE-04) no recibe certificado. |
 
 ---
 

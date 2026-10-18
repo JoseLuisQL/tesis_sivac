@@ -45,7 +45,7 @@ sivac/ (Espacio de Trabajo Principal)
 │
 ├── referencias/                         # 📚 [CAPA 1: INSUMOS Y REFERENCIAS INMUTABLES]
 │   ├── modelos_tesis/                   # Tesis modelo UNAJMA (Fany 2024, Jhon 2026)
-│   ├── modelos_validacion/              # Formatos oficiales de validación Dr. Cóndor Tinoco
+│   ├── modelos_validacion/              # Formatos históricos de validación (modelo vigente: Fany 2024, DEC-015)
 │   └── proyecto_base/                   # Proyecto de tesis original (PROYECTO_TESIS.docx)
 │
 ├── datos/                               # 📊 [CAPA 2: PIPELINE DE DATOS Y MEDICIÓN]

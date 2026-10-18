@@ -97,7 +97,7 @@ def generar_grafico_dimension2(df_pre, df_post, ruta_salida):
     ax1.set_ylim(-5, 105)
     ax1.set_title('A. Registros sin Discrepancias ($RSD$)')
 
-    # Subgráfico B: % Concordancia Programada vs Entregada
+    # Subgráfico B: % Entregas con cantidad física conforme sobre despachos evaluados
     ax2 = axes[1]
     data_cpe = [df_pre['cpe'], df_post['cpe']]
     bp2 = ax2.boxplot(data_cpe, patch_artist=True, labels=['Pretest\n(Manual)', 'Postest\n(SIVAC)'],
@@ -110,9 +110,9 @@ def generar_grafico_dimension2(df_pre, df_post, ruta_salida):
                  color='#2e8b57', alpha=0.35, linewidth=1, marker='o', markersize=3)
 
     configurar_ejes_apa(ax2)
-    ax2.set_ylabel('Porcentaje de concordancia (%)')
+    ax2.set_ylabel('Porcentaje de entregas conformes (%)')
     ax2.set_ylim(-5, 105)
-    ax2.set_title('B. Concordancia Programada vs Entregada ($CPE$)')
+    ax2.set_title('B. Entregas con Cantidad Conforme ($CPE$)')
 
     plt.tight_layout()
     plt.savefig(ruta_salida, dpi=300, bbox_inches='tight')
@@ -124,9 +124,9 @@ def generar_grafico_dimension3(df_pre, df_post, ruta_salida):
     fig, axes = plt.subplots(1, 3, figsize=(12, 4.5), dpi=300)
 
     variables_tam = [
-        ('score_ap', 'A. Aceptación del Proceso (AP)', 5, 25, axes[0]),
-        ('score_up', 'B. Utilidad Percibida (UP)', 5, 25, axes[1]),
-        ('score_tam_total', 'C. Satisfacción Global TAM', 10, 50, axes[2])
+        ('score_ap', 'A. Aceptación del Proceso (AP)', 4, 20, axes[0]),
+        ('score_up', 'B. Utilidad Percibida (UP)', 4, 20, axes[1]),
+        ('score_tam_total', 'C. Total de la Dimensión 3 (Modalidad A, 8 ítems)', 8, 40, axes[2])
     ]
 
     for col, titulo, y_min, y_max, ax in variables_tam:

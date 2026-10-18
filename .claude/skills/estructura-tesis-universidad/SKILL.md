@@ -109,7 +109,7 @@ La tesis se divide obligatoriamente en **dos secciones desvinculadas** mediante 
   - Técnica 2: Análisis documental de inventarios $\rightarrow$ Instrumento 2: Ficha de Registro Documental de Lotes.
   - Técnica 3: Encuesta estructurada $\rightarrow$ Instrumento 3: Cuestionario TAM (escala Likert de 5 puntos).
 - **4.5 Validación y confiabilidad de los instrumentos:**
-  - Validez de contenido por Juicio de Expertos (3 ingenieros EPIS-UNAJMA) mediante el modelo del Dr. Enrique Cóndor Tinoco (IVC Tristán, 2008).
+  - Validez de contenido por Juicio de Expertos (3 ingenieros EPIS-UNAJMA) mediante el modelo Fany 2024 vigente por DEC-015 (criterios dicotómicos Sí/No) y el IVC de Tristán-López (2008) para el cálculo.
   - Confiabilidad del Cuestionario TAM mediante el coeficiente Alfa de Cronbach ($\alpha \ge 0.80$).
 - **4.6 Plan de procesamiento y análisis de datos:**
   - Pruebas de normalidad mediante Shapiro-Wilk ($n=14 < 50$).

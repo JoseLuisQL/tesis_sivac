@@ -19,7 +19,7 @@ obsidian_vault/
 ├── 02_PROYECTOS/                   ← Proyectos de investigación (02.1_TESIS_SIVAC)
 ├── 03_CONCEPTOS_ATOMICOS/          ← Red Zettelkasten permanente de notas atómicas
 ├── 04_LITERATURA_Y_FUENTES/        ← Catálogo Zotero, notas de fuentes, libros y PDFs
-├── 05_MODELOS_Y_REFERENCIAS/       ← Tesis modelo UNAJMA y validación Cóndor Tinoco
+├── 05_MODELOS_Y_REFERENCIAS/       ← Tesis modelo UNAJMA y formatos de validación (vigente: Fany 2024)
 ├── 06_METODOLOGIA_E_INSTRUMENTOS/  ← Instrumentos SIVAC, juicio expertos y bancos de citas
 ├── 07_ESTADISTICA_Y_DATOS/         ← Scripts reproducibles, figuras APA 7 300 DPI y datos
 ├── 08_SISTEMA_Y_AGENTES/           ← Bitácoras y handoffs de los 14 agentes

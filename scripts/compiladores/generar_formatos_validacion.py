@@ -4,13 +4,24 @@
 ================================================================================
 SIVAC-THESIS-LAB - Squad B (Metodología y Psicometría) & Formatos Worker
 GENERADOR DE FORMATOS DE VALIDACIÓN POR JUICIO DE EXPERTOS EN BLANCO
-Modelo Institucional: Dr. Enrique Cóndor Tinoco (EPIS-UNAJMA)
+Modelo derivado del formato del Dr. Enrique Cóndor Tinoco (EPIS-UNAJMA),
+superado por DEC-015
+
+[SUPERADO POR DEC-015 - 2026-10-18]
+La CLI de este script está bloqueada. El modelo institucional vigente es
+Fany 2024 y el generador vigente es
+scripts/compiladores/generar_anexo2_validacion_fany.py, que escribe en
+salidas/documentos/anexos_fany/. Este módulo se conserva únicamente porque la
+suite scripts/tests/test_formatos_validacion.py audita con él la fidelidad del
+modelo heredado.
 ================================================================================
-Este script reproduce con fidelidad estricta al modelo Cóndor los formatos de
+Este script reproduce, para auditoría del modelo heredado, los formatos de
 validación por juicio de expertos para los tres instrumentos de la tesis SIVAC:
   1. INST01: Ficha de observación de tiempos cronometrados (8 ítems)
   2. INST02: Guía de cotejo documental de consistencia (8 ítems)
-  3. INST03: Cuestionario de satisfacción del usuario TAM (16 ítems)
+  3. INST03: Cuestionario de satisfacción del usuario TAM (8 reactivos
+     baremables de la Modalidad A y 8 reactivos de módulo anexo de la
+     Modalidad B; DEC-019 y DEC-020)
 
 Estructura de cada formato:
   - Parte 1: Carta formal de solicitud (1 página por juez)
@@ -30,6 +41,7 @@ Estrategia de fidelidad:
 
 import os
 import sys
+import copy
 import shutil
 import tempfile
 import argparse
@@ -113,7 +125,11 @@ INSTRUMENTOS_METADATOS = {
             "Cuestionario de satisfacción del usuario y aceptación tecnológica "
             "(modelo TAM)"
         ),
-        "total_items": 16,
+        # Alcance certificable (DEC-019 y DEC-020): 8 reactivos baremables de la
+        # Modalidad A. Los 8 reactivos de módulo anexo de la Modalidad B no
+        # reciben certificado de contenido.
+        "total_items": 8,
+        "total_items_modalidad_b": 8,
     },
 }
 
@@ -125,7 +141,16 @@ def cargar_items_instrumentos():
 
     Retorna un diccionario:
       {"INST01": list_items_inst1, "INST02": list_items_inst2, "INST03": list_items_inst3}
-    Total 32 ítems (8 + 8 + 16).
+
+    Composición conforme a DEC-019 y DEC-020:
+      - Instrumento 01: 8 ítems (sin juicio de contenido).
+      - Instrumento 02: 8 ítems (sin juicio de contenido).
+      - Instrumento 03: 8 reactivos baremables de la Modalidad A (AP-01 a AP-04 y
+        UP-01 a UP-04), los únicos que reciben certificado de validez de contenido,
+        más 8 reactivos de módulo anexo de la Modalidad B (PU-01 a PU-04 y
+        PE-01 a PE-04), sin certificado de contenido.
+    La lista completa del Instrumento 03 conserva sus 16 reactivos porque el
+    modelo heredado los reproduce; el alcance certificado es el de la Modalidad A.
     """
     return {
         "INST01": list(ITEMS_INST1),
@@ -144,9 +169,15 @@ def generar_documento_formato(
     codigo_instrumento,
     num_juez=1,
     ruta_salida=None,
-    incluir_tabla_constancia=False,
+    incluir_tabla_constancia=True,
 ):
-    """Genera un archivo DOCX de validación fiel al modelo Cóndor para un instrumento.
+    """Genera un archivo DOCX de validación a partir del modelo heredado.
+
+    El modelo de referencia (Cóndor Tinoco) quedó superado por DEC-015; esta
+    función se conserva solo porque la suite de pruebas audita con ella la
+    fidelidad del modelo heredado. Los formatos vigentes son los certificados
+    en blanco del modelo Fany 2024 generados por
+    scripts/compiladores/generar_anexo2_validacion_fany.py.
 
     Parámetros:
       codigo_instrumento (str): 'INST01', 'INST02' o 'INST03'.
@@ -256,16 +287,17 @@ def generar_documento_formato(
         # PARTE 2 Y 3: HOJA DE INSTRUCCIONES Y TABLA RÚBRICA 6x3 (P088 a P101)
         # =========================================================================
         # Los elementos 88 a 101 corresponden a la Hoja de Instrucciones y Rúbrica
-        # del modelo Cóndor. Se conservan 100% literales e intactos, heredando
+        # del modelo heredado (Cóndor Tinoco, superado por DEC-015). Se conservan
+        # 100% literales e intactos, heredando
         # la lista numerada, criterios, escala y la tabla de 6x3 con tblGrid
         # 1294/1609/6091, fixed layout y bordes sz 4.
 
         # =========================================================================
-        # PARTE 4: CONSTANCIA DE VALIDACIÓN POR ÍTEM (P102, P103 y final sectPr)
+        # PARTE 4: CONSTANCIA DE VALIDACIÓN POR ÍTEM (P102 a P115 y final sectPr)
         # =========================================================================
-        # P102 es el Título "CONSTANCIA DE VALIDACIÓN DE CONTENIDO DEL INSTRUMENTO POR ÍTEM"
-        # P103 es el Párrafo de Declaración con campos en blanco
-        p103 = doc.paragraphs[103]
+        # Body[102] es el Título "CONSTANCIA DE VALIDACIÓN DE CONTENIDO DEL INSTRUMENTO POR ÍTEM"
+        # Body[103] es el Párrafo de Declaración con campos en blanco
+        p103 = docx.text.paragraph.Paragraph(body[103], doc)
         _limpiar_runs_parrafo(p103)
         p103.add_run(
             "Quien suscribe, ………………………………………………………………, con DNI Nº………………, "
@@ -277,13 +309,69 @@ def generar_documento_formato(
             "Luego revisar el instrumento, puedo formular las siguientes apreciaciones:"
         )
 
+        # Body[104] es el párrafo espaciador previo a la tabla de constancia
+
+        # Body[105] es la Tabla de Constancia de 8 columnas del modelo heredado
+        # (Cóndor Tinoco, superado por DEC-015).
+        # Se adapta sustituyendo las filas de autoaprendizaje por los ítems oficiales
+        # de la tesis SIVAC (INST01=8, INST02=8, INST03=16; total 9/9/17 filas)
+        tbl_const = body[105]
+        rows_tbl = tbl_const.findall("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tr")
+        template_row = copy.deepcopy(rows_tbl[1])
+        for r in rows_tbl[1:]:
+            tbl_const.remove(r)
+
+        # Limpiar negrita en párrafo de ítem de la fila plantilla para texto regular
+        tcs_template = template_row.findall("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tc")
+        pPr_item = tcs_template[1].find(".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr")
+        if pPr_item is not None:
+            rPr_item = pPr_item.find("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr")
+            if rPr_item is not None:
+                b_tag = rPr_item.find("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}b")
+                if b_tag is not None:
+                    rPr_item.remove(b_tag)
+
+        # Cargar los ítems oficiales correspondientes al instrumento
+        items_dict = cargar_items_instrumentos()
+        items_instrumento = items_dict[codigo_instrumento]
+
+        for idx, item in enumerate(items_instrumento):
+            tr_item = copy.deepcopy(template_row)
+            tcs = tr_item.findall("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tc")
+
+            # Col 0: Nº (1..N) en 9 pt (sz 18)
+            t0 = tcs[0].find(".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t")
+            if t0 is not None:
+                t0.text = str(idx + 1)
+
+            # Col 1: Texto del ítem oficial en 9 pt (sz 18), justificado
+            item_text = item[1] if isinstance(item, (tuple, list)) else str(item)
+            t1 = tcs[1].find(".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t")
+            if t1 is not None:
+                t1.text = item_text
+
+            # Cols 2 a 7: Celdas vacías de calificación y observaciones (sin marcas ni texto)
+            for c_idx in range(2, 8):
+                for r_elem in tcs[c_idx].xpath(".//w:r"):
+                    r_elem.getparent().remove(r_elem)
+
+            tbl_const.append(tr_item)
+
+        # Body[106] a [111]: 6 párrafos vacíos de espacio de firma (10 pt)
+        # Body[112]: Línea de firma (4 tabs + 28 guiones bajos 10 pt)
+        # Body[113]: Rótulo "Firma" centrado 10 pt
+        # Body[114]: Rótulo "DNI: ……………………….." centrado 10 pt
+        # Body[115]: Párrafo espaciador centrado 10 pt
+
         # =========================================================================
         # REORGANIZACIÓN DEL CUERPO (BODY CHILDREN)
         # =========================================================================
         # Conservar solo:
         # - Carta 1 adaptada (0 a 28)
         # - Instrucciones + Rúbrica (88 a 101)
-        # - Constancia título y declaración (102, 103)
+        # - Constancia título, declaración y espaciador (102, 103, 104)
+        # - Tabla de constancia de 8 columnas adaptada (105)
+        # - Bloque de firma en blanco (106 a 115)
         # - sectPr final del documento (body[-1])
         elementos_conservar = []
         for i in range(29):
@@ -292,6 +380,10 @@ def generar_documento_formato(
             elementos_conservar.append(body[i])
         elementos_conservar.append(body[102])
         elementos_conservar.append(body[103])
+        elementos_conservar.append(body[104])
+        elementos_conservar.append(tbl_const)
+        for i in range(106, 116):
+            elementos_conservar.append(body[i])
         elementos_conservar.append(body[-1])
 
         for c in list(body):
@@ -305,7 +397,31 @@ def generar_documento_formato(
 
 
 def main():
-    """Punto de entrada de línea de comandos (CLI)."""
+    """Punto de entrada de línea de comandos (CLI).
+
+    BLOQUEADO POR DEC-015 (2026-10-18)
+    ----------------------------------
+    El modelo institucional de referencia ya no es el formato Cóndor Tinoco, sino
+    el modelo Fany 2024 (Anexo 2, páginas impresas 62 a 65), con criterios
+    dicotómicos Sí/No de Pertinencia, Relevancia y Claridad. Ejecutar esta CLI
+    volvería a escribir formatos obsoletos con escala 1-4 en la ruta oficial
+    salidas/instrumentos/formatos_validacion/.
+
+    La función generar_documento_formato() se conserva intacta porque la suite
+    scripts/tests/test_formatos_validacion.py la usa para auditar la fidelidad
+    del modelo heredado. El generador vigente es
+    scripts/compiladores/generar_anexo2_validacion_fany.py.
+    """
+    raise SystemExit(
+        "Generacion bloqueada por DEC-015: el modelo Condor fue reemplazado por "
+        "el modelo Fany 2024. Usar scripts/compiladores/"
+        "generar_anexo2_validacion_fany.py, que produce los certificados en "
+        "blanco en salidas/documentos/anexos_fany/."
+    )
+
+
+def _main_deshabilitado():
+    """Cuerpo original de la CLI, preservado solo como referencia histórica."""
     parser = argparse.ArgumentParser(
         description="Generador de formatos de validación por juicio de expertos SIVAC."
     )

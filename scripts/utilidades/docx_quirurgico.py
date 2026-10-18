@@ -309,16 +309,91 @@ def aplicar_bordes_apa7(table):
             tcBorders.append(parse_xml(r'<w:bottom %s w:val="single" w:sz="4" w:space="0" w:color="000000"/>' % nsdecls('w')))
 
 
-def blindar_filas_tabla(table, cant_split=True, repetir_encabezado=True):
+ORDEN_TBLPR = (
+    'w:tblStyle', 'w:tblpPr', 'w:tblOverlap', 'w:bidiVisual',
+    'w:tblStyleRowBandSize', 'w:tblStyleColBandSize', 'w:tblW', 'w:jc',
+    'w:tblCellSpacing', 'w:tblInd', 'w:tblBorders', 'w:shd', 'w:tblLayout',
+    'w:tblCellMar', 'w:tblLook', 'w:tblCaption', 'w:tblDescription',
+    'w:tblPrChange',
+)
+
+
+def normalizar_orden_tblPr(table):
+    """
+    Reordena los hijos de w:tblPr según la secuencia de CT_TblPr.
+
+    python-docx y el motor quirúrgico agregan propiedades al final del nodo, de
+    modo que w:tblW, w:jc, w:tblBorders y w:tblCellMar pueden quedar detrás de
+    w:tblLook. Word tolera el desorden, pero otros validadores estrictos no;
+    esta pasada deja la tabla conforme al esquema sin alterar sus valores.
+    """
+    tblPr = table._tbl.tblPr
+    hijos = list(tblPr)
+    indice = {qn(etiqueta): pos for pos, etiqueta in enumerate(ORDEN_TBLPR)}
+
+    def clave(elemento):
+        return indice.get(elemento.tag, len(ORDEN_TBLPR))
+
+    ordenados = sorted(hijos, key=clave)
+    if ordenados == hijos:
+        return False
+    for hijo in hijos:
+        tblPr.remove(hijo)
+    for hijo in ordenados:
+        tblPr.append(hijo)
+    return True
+
+
+def aplicar_bordes_rejilla(table, color="808080", sz="4"):
+    """
+    Aplica una rejilla completa (bordes exteriores e interiores) a una tabla.
+
+    EXCEPCIÓN DOCUMENTAL DELIBERADA A APA 7: el formato APA 7 exige tres líneas
+    horizontales y cero verticales para las tablas del cuerpo de la tesis. Sin
+    embargo, los formatos institucionales de validación por juicio de expertos
+    (Anexo 2, modelo Fany 2024) son formularios de captura manuscrita y requieren
+    rejilla cerrada para que el juez identifique con precisión cada celda de
+    marcado. Esta función se emplea exclusivamente en dichos formatos y jamás en
+    tablas de resultados, operacionalización o consistencia.
+    """
+    tblPr = table._tbl.tblPr
+    for b in tblPr.findall(qn('w:tblBorders')):
+        tblPr.remove(b)
+
+    xml = r'''<w:tblBorders %s>
+        <w:top w:val="single" w:sz="%s" w:space="0" w:color="%s"/>
+        <w:left w:val="single" w:sz="%s" w:space="0" w:color="%s"/>
+        <w:bottom w:val="single" w:sz="%s" w:space="0" w:color="%s"/>
+        <w:right w:val="single" w:sz="%s" w:space="0" w:color="%s"/>
+        <w:insideH w:val="single" w:sz="%s" w:space="0" w:color="%s"/>
+        <w:insideV w:val="single" w:sz="%s" w:space="0" w:color="%s"/>
+    </w:tblBorders>''' % (nsdecls('w'), sz, color, sz, color, sz, color, sz, color, sz, color, sz, color)
+
+    # CT_TblPr exige tblBorders antes de shd, tblLayout, tblCellMar y tblLook.
+    bordes = parse_xml(xml)
+    sucesores = ('w:shd', 'w:tblLayout', 'w:tblCellMar', 'w:tblLook',
+                 'w:tblCaption', 'w:tblDescription')
+    for etiqueta in sucesores:
+        referencia = tblPr.find(qn(etiqueta))
+        if referencia is not None:
+            referencia.addprevious(bordes)
+            return bordes
+    tblPr.append(bordes)
+    return bordes
+
+
+def blindar_filas_tabla(table, cant_split=True, repetir_encabezado=True, filas_encabezado=1):
     """
     Asegura que las filas no se fracturen entre dos páginas (w:cantSplit)
-    y que la primera fila se repita automáticamente si la tabla desborda (w:tblHeader).
+    y que las filas de encabezado se repitan automáticamente si la tabla desborda
+    (w:tblHeader). `filas_encabezado` permite declarar encabezados de dos o más
+    filas, como exige el formato de validación por juicio de expertos (Anexo 2).
     """
     for r_idx, row in enumerate(table.rows):
         trPr = row._tr.get_or_add_trPr()
         if cant_split and trPr.find(qn('w:cantSplit')) is None:
             trPr.append(parse_xml(r'<w:cantSplit %s/>' % nsdecls('w')))
-        if r_idx == 0 and repetir_encabezado and trPr.find(qn('w:tblHeader')) is None:
+        if repetir_encabezado and r_idx < filas_encabezado and trPr.find(qn('w:tblHeader')) is None:
             trPr.append(parse_xml(r'<w:tblHeader %s/>' % nsdecls('w')))
 
 

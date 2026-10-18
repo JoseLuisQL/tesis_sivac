@@ -62,7 +62,7 @@ fecha: 2026-10-02
    * Se audita un corpus de **40 a 60 documentos / transacciones por ventana temporal** distribuidos proporcionalmente entre los centros de acopio y nodos de la red, garantizando representatividad estadística del flujo mensual habitual de biológicos.
 3. **Fuentes de Evidencia Primaria (Contraste Físico-Documental):**
    * Pretest: Cuadernos de control de cadena de frío, tarjetas de kardex físico, archivos Excel locales de los centros de acopio y archivadores de comprobantes manuales (PECOSA/Guías).
-   * Postest: Registro inmutable de transacciones en la base de datos MySQL de SIVAC, reportes de kardex electrónico valorizado y comprobantes de salida / vales generados automáticamente con firma y código hash.
+   * Postest: Registro inmutable de transacciones en la base de datos PostgreSQL 16 de SIVAC, reportes de kardex electrónico valorizado y comprobantes de salida / vales generados automáticamente con firma y código hash.
 
 ---
 

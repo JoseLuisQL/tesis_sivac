@@ -25,6 +25,11 @@ from scripts.compiladores.generar_formatos_validacion import (
     DNI_TESISTA_OFICIAL,
     INSTRUMENTOS_METADATOS,
 )
+from scripts.compiladores.generar_expedientes_e_instrumentos import (
+    ITEMS_INST1,
+    ITEMS_INST2,
+    ITEMS_INST3,
+)
 
 NS = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
 
@@ -323,3 +328,265 @@ def test_tres_instrumentos_generan_correctamente(doc_inst01, doc_inst02, doc_ins
     assert "Instrumento N° 1" in t1
     assert "Instrumento N° 2" in t2
     assert "Instrumento N° 3" in t3
+
+
+# -----------------------------------------------------------------------------
+# 9. VAL-FMT-007: Encabezado y declaración de la constancia
+# -----------------------------------------------------------------------------
+def test_val_fmt_007_encabezado_y_declaracion_constancia(doc_inst01, doc_inst02, doc_inst03):
+    """Verifica título Ttulo1, párrafo de declaración con line=360, ind left 1474,
+
+    campos del juez en blanco con puntos suspensivos y frase errata literal.
+    """
+    for doc, cod_inst in [(doc_inst01[0], "INST01"), (doc_inst02[0], "INST02"), (doc_inst03[0], "INST03")]:
+        meta = INSTRUMENTOS_METADATOS[cod_inst]
+        # 1. Título de constancia
+        p_tit = None
+        for p in doc.paragraphs:
+            if "CONSTANCIA DE VALIDACIÓN DE CONTENIDO DEL INSTRUMENTO POR ÍTEM" in p.text:
+                p_tit = p
+                break
+        assert p_tit is not None, f"No se encontró título de constancia en {cod_inst}"
+        assert p_tit.style.name in ("Heading 1", "Ttulo1") or p_tit.style.style_id == "Ttulo1"
+
+        # 2. Párrafo de declaración
+        p_dec = None
+        for p in doc.paragraphs:
+            if p.text.startswith("Quien suscribe,"):
+                p_dec = p
+                break
+        assert p_dec is not None, f"No se encontró párrafo de declaración en {cod_inst}"
+
+        # Propiedades de párrafo
+        pPr = p_dec._p.find(f"{{{NS['w']}}}pPr")
+        assert pPr is not None
+        spacing = pPr.find(f"{{{NS['w']}}}spacing")
+        assert spacing is not None
+        assert spacing.get(f"{{{NS['w']}}}line") == "360"  # Interlineado 1.5
+
+        ind = pPr.find(f"{{{NS['w']}}}ind")
+        assert ind is not None
+        assert ind.get(f"{{{NS['w']}}}left") == "1474"
+
+        # Contenido literal y campos en blanco
+        texto_dec = p_dec.text
+        assert "Quien suscribe, ………………………………………………………………, con DNI Nº………………" in texto_dec
+        assert "de profesión…………………………………………………………. con Grado de ..…...……………………………………………………………………….," in texto_dec
+        assert "Luego revisar el instrumento, puedo formular las siguientes apreciaciones:" in texto_dec
+        assert meta["nombre_constancia"] in texto_dec
+        assert TITULO_TESIS_OFICIAL in texto_dec
+        assert TESISTA_OFICIAL in texto_dec
+
+
+# -----------------------------------------------------------------------------
+# 10. VAL-FMT-008: Tabla de constancia con geometría exacta
+# -----------------------------------------------------------------------------
+def test_val_fmt_008_geometria_tabla_constancia(doc_inst01, doc_inst02, doc_inst03, modelo_doc):
+    """Verifica tblGrid 482/2497/1130/1130/1156/1130/1130/1732, tblW 10387, tblInd 392,
+
+    trHeight 263, 9/9/17 filas, sin tblHeader y sin sombreado.
+    """
+    filas_esperadas = {"INST01": 9, "INST02": 9, "INST03": 17}
+
+    for doc, cod_inst in [(doc_inst01[0], "INST01"), (doc_inst02[0], "INST02"), (doc_inst03[0], "INST03")]:
+        assert len(doc.tables) >= 2, f"Debe existir la tabla de constancia (tabla 1) en {cod_inst}"
+        tbl_const = doc.tables[1]
+
+        # 1. tblStyle Tablaconcuadrcula
+        tblStyle = tbl_const._tbl.xpath(".//w:tblPr/w:tblStyle")
+        assert len(tblStyle) >= 1
+        assert tblStyle[0].get(f"{{{NS['w']}}}val") == "Tablaconcuadrcula"
+
+        # 2. tblW 10387 y tblInd 392
+        tblW = tbl_const._tbl.xpath(".//w:tblPr/w:tblW")
+        assert len(tblW) >= 1
+        assert tblW[0].get(f"{{{NS['w']}}}w") == "10387"
+
+        tblInd = tbl_const._tbl.xpath(".//w:tblPr/w:tblInd")
+        assert len(tblInd) >= 1
+        assert tblInd[0].get(f"{{{NS['w']}}}w") == "392"
+
+        # 3. tblGrid de 8 columnas exactas
+        tblGrid = [col.get(f"{{{NS['w']}}}w") for col in tbl_const._tbl.xpath(".//w:tblGrid/w:gridCol")]
+        assert tblGrid == ["482", "2497", "1130", "1130", "1156", "1130", "1130", "1732"]
+
+        # 4. Número de filas exacto (items + 1 encabezado)
+        assert len(tbl_const.rows) == filas_esperadas[cod_inst]
+
+        # 5. trHeight 263 y sin tblHeader en todas las filas
+        for r_i, r in enumerate(tbl_const.rows):
+            trPr = r._tr.find(f"{{{NS['w']}}}trPr")
+            assert trPr is not None, f"Fila {r_i} de {cod_inst} no tiene trPr"
+            trHeight = trPr.find(f"{{{NS['w']}}}trHeight")
+            assert trHeight is not None, f"Fila {r_i} de {cod_inst} no tiene trHeight"
+            assert trHeight.get(f"{{{NS['w']}}}val") == "263"
+
+            tblHeader = trPr.find(f"{{{NS['w']}}}tblHeader")
+            assert tblHeader is None, f"Fila {r_i} de {cod_inst} no debe tener tblHeader"
+
+        # 6. Sin sombreado (w:shd) en ninguna celda de la tabla
+        shd_nodes = tbl_const._tbl.xpath(".//w:shd")
+        for shd in shd_nodes:
+            val = shd.get(f"{{{NS['w']}}}val")
+            fill = shd.get(f"{{{NS['w']}}}fill")
+            assert val in (None, "clear", "auto")
+            assert fill in (None, "auto", "none")
+
+        # 7. Encabezado literal de 8 columnas en negrita de 9 pt
+        row0_texts = [tbl_const.rows[0].cells[i].text.strip() for i in range(8)]
+        assert row0_texts == [
+            "Nº", "Ítem", "Suficiencia", "Relevancia", "Coherencia", "Claridad", "Redacción", "Observaciones"
+        ]
+        for c_i in range(8):
+            cell = tbl_const.rows[0].cells[c_i]
+            p = cell.paragraphs[0]
+            bolds = [r.bold for r in p.runs if r.text.strip()]
+            assert all(bolds), f"Encabezado col {c_i} debe estar en negrita en {cod_inst}"
+            for r in p.runs:
+                sz = r._r.xpath(".//w:sz")
+                if sz:
+                    assert sz[0].get(f"{{{NS['w']}}}val") == "18"  # 9 pt
+
+        # 8. Celdas de datos: Nº e Ítem con 9 pt (sz 18), ítem justificado
+        for r_i in range(1, len(tbl_const.rows)):
+            r = tbl_const.rows[r_i]
+            # Nº (col 0)
+            p0 = r.cells[0].paragraphs[0]
+            for run in p0.runs:
+                sz = run._r.xpath(".//w:sz")
+                if sz:
+                    assert sz[0].get(f"{{{NS['w']}}}val") == "18"
+            # Ítem (col 1)
+            p1 = r.cells[1].paragraphs[0]
+            pPr1 = p1._p.find(f"{{{NS['w']}}}pPr")
+            assert pPr1 is not None
+            jc = pPr1.find(f"{{{NS['w']}}}jc")
+            assert jc is not None
+            assert jc.get(f"{{{NS['w']}}}val") == "both"  # Justificado
+            for run in p1.runs:
+                sz = run._r.xpath(".//w:sz")
+                if sz:
+                    assert sz[0].get(f"{{{NS['w']}}}val") == "18"
+
+
+# -----------------------------------------------------------------------------
+# 11. VAL-FMT-009: Los 32 ítems coinciden con la fuente
+# -----------------------------------------------------------------------------
+def test_val_fmt_009_items_coinciden_fuente(doc_inst01, doc_inst02, doc_inst03):
+    """Verifica que los textos de los ítems coincidan 100% con las fuentes oficiales en orden."""
+    fuentes = {
+        "INST01": [it[1] for it in ITEMS_INST1],
+        "INST02": [it[1] for it in ITEMS_INST2],
+        "INST03": [it[1] for it in ITEMS_INST3],
+    }
+
+    total_extraidos = 0
+    for doc, cod_inst in [(doc_inst01[0], "INST01"), (doc_inst02[0], "INST02"), (doc_inst03[0], "INST03")]:
+        tbl_const = doc.tables[1]
+        items_fuente = fuentes[cod_inst]
+
+        for i, itm_esperado in enumerate(items_fuente, start=1):
+            num_celda = tbl_const.rows[i].cells[0].text.strip()
+            txt_celda = tbl_const.rows[i].cells[1].text.strip()
+
+            assert num_celda == str(i), f"Numeración incorrecta en fila {i} de {cod_inst}: {num_celda}"
+            assert txt_celda == itm_esperado, f"Discrepancia en ítem {i} de {cod_inst}:\nEsperado: {itm_esperado}\nObtenido: {txt_celda}"
+            total_extraidos += 1
+
+        # Verificar ausencia total de ítems de autoaprendizaje del modelo
+        texto_tabla = " ".join(c.text for r in tbl_const.rows for c in r.cells)
+        assert "autoaprendizaje" not in texto_tabla.lower()
+        assert "preuniversitario" not in texto_tabla.lower()
+        assert "centro pre" not in texto_tabla.lower()
+
+    assert total_extraidos == 32
+
+
+# -----------------------------------------------------------------------------
+# 12. VAL-FMT-010: Bloque de firma idéntico
+# -----------------------------------------------------------------------------
+def test_val_fmt_010_bloque_firma_identico(doc_inst01, doc_inst02, doc_inst03):
+    """Verifica que tras la tabla exista el espacio de firma, 4 tabs + 28 guiones bajos 10pt,
+
+    'Firma' 10pt y 'DNI: ………………………..' 10pt en blanco.
+    """
+    for doc, cod_inst in [(doc_inst01[0], "INST01"), (doc_inst02[0], "INST02"), (doc_inst03[0], "INST03")]:
+        # Buscar el párrafo con los guiones bajos
+        p_linea_firma = None
+        p_firma = None
+        p_dni = None
+
+        for p in doc.paragraphs:
+            if "____________________________" in p.text:
+                p_linea_firma = p
+            elif p.text.strip() == "Firma":
+                p_firma = p
+            elif "DNI:" in p.text and "……………………….." in p.text:
+                p_dni = p
+
+        assert p_linea_firma is not None, f"No se encontró línea de firma en {cod_inst}"
+        assert p_firma is not None, f"No se encontró rótulo 'Firma' en {cod_inst}"
+        assert p_dni is not None, f"No se encontró bloque 'DNI' en {cod_inst}"
+
+        # 4 tabuladores y 28 guiones bajos
+        tabs = p_linea_firma._p.xpath(".//w:tab")
+        assert len(tabs) >= 4, f"Se requieren al menos 4 tabs en la línea de firma de {cod_inst}"
+        assert "____________________________" in p_linea_firma.text
+
+        # Tamaño 10 pt (sz 20)
+        for p_elem in [p_linea_firma, p_firma, p_dni]:
+            sz_nodes = p_elem._p.xpath(".//w:sz")
+            if sz_nodes:
+                assert sz_nodes[0].get(f"{{{NS['w']}}}val") == "20"  # 10 pt
+
+        # Centrado
+        for p_elem in [p_firma, p_dni]:
+            jc = p_elem._p.xpath(".//w:pPr/w:jc")
+            assert len(jc) >= 1
+            assert jc[0].get(f"{{{NS['w']}}}val") == "center"
+
+        # Garantizar que firma y DNI están vacíos
+        assert p_firma.text.strip() == "Firma"
+        assert "DNI: ……………………….." in p_dni.text
+
+
+# -----------------------------------------------------------------------------
+# 13. VAL-FMT-011: Garantía de formato en blanco
+# -----------------------------------------------------------------------------
+def test_val_fmt_011_garantia_formato_en_blanco(doc_inst01, doc_inst02, doc_inst03):
+    """Verifica ausencia de calificaciones, marcas, observaciones, nombres de juez,
+
+    CIP, fecha de constancia ni coeficientes en los 3 instrumentos.
+    """
+    total_celdas_vacias = 0
+
+    for doc, cod_inst in [(doc_inst01[0], "INST01"), (doc_inst02[0], "INST02"), (doc_inst03[0], "INST03")]:
+        tbl_const = doc.tables[1]
+
+        # 1. Verificar que columnas 2 a 7 de todas las filas de datos estén 100% vacías
+        for r_i in range(1, len(tbl_const.rows)):
+            row = tbl_const.rows[r_i]
+            for c_i in range(2, 8):
+                cell_text = row.cells[c_i].text.strip()
+                assert cell_text == "", f"Celda ({r_i}, {c_i}) de {cod_inst} no está vacía: {cell_text!r}"
+                total_celdas_vacias += 1
+
+        # 2. Escaneo contra lista prohibida en todo el documento
+        texto_completo = "\n".join(p.text for p in doc.paragraphs)
+        for t in doc.tables:
+            for row in t.rows:
+                for cell in row.cells:
+                    texto_completo += "\n" + cell.text
+
+        # No nombres de jueces ni CIP
+        for prohibido in [
+            "M.SC. IVAN SORIA SOLIS", "Daniel Minaya", "Javier Ramos",
+            "CIP N", "184521", "197842", "210455",
+            "V de Aiken", "IVC = 1.00", "0.987", "0.899",
+            "[ X ]", "[X]", "Veredicto", "Opinión de aplicabilidad", "Excelente"
+        ]:
+            assert prohibido.lower() not in texto_completo.lower(), f"Término prohibido encontrado en {cod_inst}: {prohibido}"
+
+    # 8*6 (INST01) + 8*6 (INST02) + 16*6 (INST03) = 48 + 48 + 96 = 192 celdas vacías
+    assert total_celdas_vacias == 192
+

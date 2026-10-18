@@ -41,13 +41,27 @@ calcular_alfa_cronbach_r <- function(items) {
   return(alfa)
 }
 
-items_tam_cols <- c(paste0("ap_0", 1:5), paste0("up_0", 1:5))
+# Instrumento 03, Modalidad A (oficial para HE3): 4 items AP + 4 items UP = 8 items
+items_tam_cols <- c(paste0("ap_0", 1:4), paste0("up_0", 1:4))
 alfa_pre  <- calcular_alfa_cronbach_r(df_pre[, items_tam_cols])
 alfa_post <- calcular_alfa_cronbach_r(df_post[, items_tam_cols])
 
 cat("\n[+] CONFIABILIDAD PSICOMÉTRICA (ALFA DE CRONBACH - CUESTIONARIO TAM):\n")
-cat(sprintf("    - Pretest (10 ítems):  alpha = %.4f\n", alfa_pre))
-cat(sprintf("    - Postest (10 ítems):  alpha = %.4f\n", alfa_post))
+cat(sprintf("    - Pretest (8 ítems):  alpha = %.4f\n", alfa_pre))
+cat(sprintf("    - Postest (8 ítems):  alpha = %.4f\n", alfa_post))
+
+# Rangos declarados de los puntajes TAM: AP [4, 20], UP [4, 20], total [8, 40]
+rangos_tam <- list(
+  list(col = "score_ap",        lo = 4, hi = 20),
+  list(col = "score_up",        lo = 4, hi = 20),
+  list(col = "score_tam_total", lo = 8, hi = 40)
+)
+for (r in rangos_tam) {
+  if (any(df_pre[[r$col]] < r$lo) || any(df_pre[[r$col]] > r$hi) ||
+      any(df_post[[r$col]] < r$lo) || any(df_post[[r$col]] > r$hi)) {
+    stop(sprintf("Error de rango declarado: %s debe estar en [%d, %d].", r$col, r$lo, r$hi))
+  }
+}
 
 # 4. Pruebas de Normalidad de Shapiro-Wilk sobre Diferencias Pareadas
 cat("\n[+] PRUEBAS DE NORMALIDAD DE SHAPIRO-WILK (DIFERENCIAS D = POST - PRE):\n")
@@ -56,7 +70,7 @@ variables_eval <- list(
   list(col = "t_reg",           nom = "Tiempo de Registro (min)",            dir = "less"),
   list(col = "t_vale",          nom = "Tiempo de Emisión de Vales (min)",    dir = "less"),
   list(col = "rsd",             nom = "% Registros sin Discrepancia",       dir = "greater"),
-  list(col = "cpe",             nom = "% Concordancia Programada/Entregada", dir = "greater"),
+  list(col = "cpe",             nom = "% Entregas con Cantidad Conforme",  dir = "greater"),
   list(col = "score_ap",        nom = "Aceptación del Proceso (TAM)",        dir = "greater"),
   list(col = "score_up",        nom = "Utilidad Percibida (TAM)",            dir = "greater"),
   list(col = "score_tam_total", nom = "Satisfacción Global TAM",             dir = "greater")

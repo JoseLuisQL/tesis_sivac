@@ -1,0 +1,252 @@
+P000 [style=Textoindependiente ind=left:5605] Andahuaylas, …… de\tde 2025 |  | 
+P001 [style=Textoindependiente]  |  | 
+P002 [style=Textoindependiente]  |  | 
+P003 [style=Textoindependiente ind=left:1155 sp=after:240] Señor (a):  |  | 
+P004 [style=Textoindependiente ind=left:1155 sp=after:240] M.SC. IVAN SORIA SOLIS |  | 
+P005 [style=Textoindependiente sp=after:240]                    Docente de la Escuela Profesional de Ingeniería de Sistemas |  | 
+P006 [style=Textoindependiente sp=before:2]  |  | 
+P007 [style=Textoindependiente jc=both ind=left:1155 sp=after:240] De nuestra mayor consideración: |  | 
+P008 [style=Textoindependiente jc=both ind=left:1155 sp=after:240] Nosotras, Guadalupe Lida Sihui Llacctarimay con DNI N° 70233314 y Miriam Velasque Ccorisoncco con DNI N° 76189071, tesistas del Programa de Maestría en Ingeniería de Sistemas con mención en Tecnologías de la Información y Comunicación, nos dirigimos a usted con el debido respeto y nos presentamos y exponemos:  |  ; b | 
+P009 [style=Textoindependiente jc=both ind=left:1155] Dada su experiencia profesional y méritos académicos, recurrimos a su honorable persona para solicitarle su inapreciable colaboración como experto para la validación del instrumento de nuestra investigación que adjuntamos como anexo al presente, del trabajo de investigación intitulado “MODELO PREDICTIVO CON MACHINE LEARNING PARA IDENTIFICAR EL NIVEL DE AUTOAPRENDIZAJE EN ESTUDIANTES DEL CENTRO PRE-UNIVERSITARIO, ANDAHUAYLAS - 2025”; para obtener el grado de Magister en Ingeniería de Sistemas con mención en Tecnologías de la Información y Comunicación, sus observaciones y recomendaciones como juez de validación serán de gran ayuda para perfeccionar los instrumentos de investigación.  |  ; b | 
+P010 [style=Textoindependiente ind=left:1155]  |  | 
+P011 [style=Textoindependiente ind=left:1155] Presentamos los siguientes documentos: |  | 
+P012 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:2 num] Matriz de validez de instrumento | sz=24 | 
+P013 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:1,line:293,lineRule:exact num] Matriz de consistencia | sz=24 | 
+P014 [style=Prrafodelista ind=left:1514,hanging:359 sp=line:293,lineRule:exact num] Tabla de operacionalización de variables | sz=24 | 
+P015 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:2 num] Instrumento N° 1 Cuestionario para identificar el nivel de autoaprendizaje en estudiantes del Centro Pre Universitario – UNAJMA | sz=24 | 
+P016 [style=Textoindependiente ind=left:1155,right:648,firstLine:705 sp=before:275,line:242,lineRule:auto] Nos despedimos de Ud. reiterándole mis saludos y del mismo modo agradeciéndole por su debida atención a la presente. |  | 
+P017 [style=Textoindependiente]  |  | 
+P018 [style=Textoindependiente sp=before:18]  |  | 
+P019 [jc=center ind=right:1002] Atentamente, |  | 
+P020 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P021 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P022 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P023 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P024 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P025 [style=Prrafodelista ind=firstLine:0 sp=before:2] ……………………………………….…             ……………………………………….… | sz=24 | 
+P026 [style=Textoindependiente sp=line:237,lineRule:auto]                             Guadalupe Lida Sihui Llacctarimay                    Miriam Velasque Ccorisoncco |  | 
+P027 [style=Textoindependiente sp=line:237,lineRule:auto]                                                Tesista                                                                Tesista |  | 
+P028 [SECTPR]                                             DNI N° 70233314                                                    DNI N° 76189071 |  | 
+P029 []  |  | 
+P030 [style=Textoindependiente ind=left:5605]  |  | 
+P031 [style=Textoindependiente ind=left:5605] Andahuaylas, …… de\tde 2025 |  | 
+P032 [style=Textoindependiente]  |  | 
+P033 [style=Textoindependiente]  |  | 
+P034 [style=Textoindependiente ind=left:1155 sp=after:240] Señor (a):  |  | 
+P035 [style=Textoindependiente sp=before:2,after:240]                     Mag. Daniel Minaya Gutiérrez |  | 
+P036 [style=Textoindependiente sp=before:2,after:240] \t       Docente de la Escuela Profesional de Ingeniería de Sistemas |  | 
+P037 [style=Textoindependiente sp=before:2]  |  | 
+P038 [style=Textoindependiente jc=both ind=left:1155 sp=after:240] De nuestra mayor consideración: |  | 
+P039 [style=Textoindependiente jc=both ind=left:1155 sp=after:240] Nosotras, Guadalupe Lida Sihui Llacctarimay con DNI N° 70233314 y Miriam Velasque Ccorisoncco con DNI N° 76189071, tesistas del Programa de Maestría en Ingeniería de Sistemas con mención en Tecnologías de la Información y Comunicación, nos dirigimos a usted con el debido respeto y nos presentamos y exponemos:  |  ; b | 
+P040 [style=Textoindependiente jc=both ind=left:1155] Dada su experiencia profesional y méritos académicos, recurrimos a su honorable persona para solicitarle su inapreciable colaboración como experto para la validación del instrumento de nuestra investigación que adjuntamos como anexo al presente, del trabajo de investigación intitulado “MODELO PREDICTIVO CON MACHINE LEARNING PARA IDENTIFICAR EL NIVEL DE AUTOAPRENDIZAJE EN ESTUDIANTES DEL CENTRO PRE-UNIVERSITARIO, ANDAHUAYLAS - 2025”; para obtener el grado de Magister en Ingeniería de Sistemas con mención en Tecnologías de la Información y Comunicación, sus observaciones y recomendaciones como juez de validación serán de gran ayuda para perfeccionar los instrumentos de investigación.  |  ; b | 
+P041 [style=Textoindependiente ind=left:1155]  |  | 
+P042 [style=Textoindependiente ind=left:1155] Presentamos los siguientes documentos: |  | 
+P043 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:2 num] Matriz de validez de instrumento | sz=24 | 
+P044 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:1,line:293,lineRule:exact num] Matriz de consistencia | sz=24 | 
+P045 [style=Prrafodelista ind=left:1514,hanging:359 sp=line:293,lineRule:exact num] Tabla de operacionalización de variables | sz=24 | 
+P046 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:2 num] Instrumento N° 1 Cuestionario para identificar el nivel de autoaprendizaje en estudiantes del Centro Pre Universitario – UNAJMA | sz=24 | 
+P047 [style=Textoindependiente ind=left:1155,right:648,firstLine:705 sp=before:275,line:242,lineRule:auto] Nos despedimos de Ud. reiterándole mis saludos y del mismo modo agradeciéndole por su debida atención a la presente. |  | 
+P048 [style=Textoindependiente]  |  | 
+P049 [style=Textoindependiente sp=before:18]  |  | 
+P050 [jc=center ind=right:1002] Atentamente, |  | 
+P051 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P052 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P053 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P054 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P055 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P056 [style=Prrafodelista ind=firstLine:0 sp=before:2] ……………………………………….…             ……………………………………….… | sz=24 | 
+P057 [style=Textoindependiente sp=line:237,lineRule:auto]                             Guadalupe Lida Sihui Llacctarimay                    Miriam Velasque Ccorisoncco |  | 
+P058 [style=Textoindependiente sp=line:237,lineRule:auto]                                                Tesista                                                                Tesista |  | 
+P059 [SECTPR]                                             DNI N° 70233314                                                    DNI N° 76189071 |  | 
+P060 [style=Textoindependiente ind=left:5605] Andahuaylas, …… de\tde 2025 |  | 
+P061 [style=Textoindependiente ind=left:1155 sp=after:240] Señor (a):  |  | 
+P062 [style=Textoindependiente sp=before:2,after:240]                     …………………………………………………………………………… |  | 
+P063 [style=Textoindependiente sp=before:2,after:240] \t       Docente del Centro Preuniversitario “UNAJMA” |  | 
+P064 [style=Textoindependiente sp=before:2]  |  | 
+P065 [style=Textoindependiente jc=both ind=left:1155 sp=after:240] De nuestra mayor consideración: |  | 
+P066 [style=Textoindependiente jc=both ind=left:1155 sp=after:240] Nosotras, Guadalupe Lida Sihui Llacctarimay con DNI N° 70233314 y Miriam Velasque Ccorisoncco con DNI N° 76189071, tesistas del Programa de Maestría en Ingeniería de Sistemas con mención en Tecnologías de la Información y Comunicación, nos dirigimos a usted con el debido respeto y nos presentamos y exponemos:  |  ; b | 
+P067 [style=Textoindependiente jc=both ind=left:1155] Dada su experiencia profesional y méritos académicos, recurrimos a su honorable persona para solicitarle su inapreciable colaboración como experto para la validación del instrumento de nuestra investigación que adjuntamos como anexo al presente, del trabajo de investigación intitulado “MODELO PREDICTIVO CON MACHINE LEARNING PARA IDENTIFICAR EL NIVEL DE AUTOAPRENDIZAJE EN ESTUDIANTES DEL CENTRO PRE-UNIVERSITARIO, ANDAHUAYLAS - 2025”; para obtener el grado de Magister en Ingeniería de Sistemas con mención en Tecnologías de la Información y Comunicación, sus observaciones y recomendaciones como juez de validación serán de gran ayuda para perfeccionar los instrumentos de investigación.  |  ; b | 
+P068 [style=Textoindependiente ind=left:1155]  |  | 
+P069 [style=Textoindependiente ind=left:1155] Presentamos los siguientes documentos: |  | 
+P070 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:2 num] Matriz de validez de instrumento | sz=24 | 
+P071 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:1,line:293,lineRule:exact num] Matriz de consistencia | sz=24 | 
+P072 [style=Prrafodelista ind=left:1514,hanging:359 sp=line:293,lineRule:exact num] Tabla de operacionalización de variables | sz=24 | 
+P073 [style=Prrafodelista ind=left:1514,hanging:359 sp=before:2 num] Instrumento N° 1 Cuestionario para identificar el nivel de autoaprendizaje en estudiantes del Centro Pre Universitario – UNAJMA | sz=24 | 
+P074 [style=Textoindependiente ind=left:1155,right:1,firstLine:705 sp=before:275,line:242,lineRule:auto] Nos despedimos de Ud. reiterándole mis saludos y del mismo modo agradeciéndole por su debida atención a la presente. |  | 
+P075 [style=Textoindependiente]  |  | 
+P076 [style=Textoindependiente sp=before:18]  |  | 
+P077 [jc=center ind=right:1002] Atentamente, |  | 
+P078 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P079 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P080 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P081 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P082 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P083 [ind=right:11210 sp=before:1,line:298,lineRule:exact]  |  | 
+P084 [style=Prrafodelista ind=firstLine:0 sp=before:2] ……………………………………….…             ……………………………………….… | sz=24 | 
+P085 [style=Textoindependiente sp=line:237,lineRule:auto]                             Guadalupe Lida Sihui Llacctarimay                    Miriam Velasque Ccorisoncco |  | 
+P086 [style=Textoindependiente sp=line:237,lineRule:auto]                                                Tesista                                                               Tesista |  | 
+P087 [SECTPR]                                             DNI N° 70233314                                                    DNI N° 76189071 |  | 
+P088 [jc=center ind=left:1205,right:1002 sp=before:1] INSTRUCCIONES PARA VALIDACIÓN DEL INSTRUMENTO | b | 
+P089 [ind=left:1167 sp=before:119] Las instrucciones para la validación del instrumento son las siguientes: |  | 
+P090 [style=Prrafodelista jc=left ind=left:1526,hanging:359 sp=before:116 num] En la “constancia de validación de contenido del instrumento por ítem” usar los siguientes criterios |  | 
+P091 [ind=left:1515,right:8207 sp=before:119,line:316,lineRule:auto] Suficiencia Relevancia Coherencia Claridad Redacción |  | 
+P092 [style=Prrafodelista jc=both ind=right:957 sp=line:276,lineRule:auto num] En la “constancia de validación de contenido del instrumento por ítem” y “constancia de validación de contenido global del instrumento”, usar las siguientes escalas de valoración para calificar a cada criterio: |  | 
+P093 [jc=both ind=left:1527 sp=before:74] 4 = Cumple completamente, 3 = Cumple adecuadamente, 2 = Cumple parcialmente, 1 = No cumple |  ; b | 
+P094 [style=Prrafodelista jc=both ind=left:1594,right:956 sp=before:119,line:276,lineRule:auto num] La siguiente tabla muestra los criterios e indicadores que se tendrán en cuenta en la “constancia de validación de contenido del instrumento por ítem” |  | 
+P095 [style=Textoindependiente sp=before:11]  |  | 
+TABLE rows=6 cols=['1294', '1609', '6091']
+  tblPr: tblStyle{val=TableNormal} tblW{w=0,type=auto} tblInd{w=1316,type=dxa} tblBorders{} tblLayout{type=fixed} tblLook{val=01E0,firstRow=1,lastRow=1,firstColumn=1,lastColumn=1,noHBand=0,noVBand=0}
+  ROW0 trPr:trHeight{val=354}
+    C0 [tcW{w=1294,type=dxa}] {style=TableParagraph ind=left:302 sp=before:74} Criterios | b,sz=18
+    C1 [tcW{w=1609,type=dxa}] {style=TableParagraph ind=left:345 sp=before:74} Descripción | b,sz=18
+    C2 [tcW{w=6091,type=dxa}] {style=TableParagraph jc=center ind=left:6 sp=before:74} Indicadores | b,sz=18
+  ROW1 trPr:trHeight{val=1036}
+    C0 [tcW{w=1294,type=dxa}] {style=TableParagraph sp=before:121}  // Suficiencia | b,sz=18
+    C1 [tcW{w=1609,type=dxa}] {style=TableParagraph jc=both ind=left:104,right:98} ¿El ítem abarca suficientemente el contenido? | sz=18
+    C2 [tcW{w=6091,type=dxa}] {style=TableParagraph ind=left:106 sp=line:207,lineRule:exact} 1 = El ítem no es suficientes para medir el indicador. // 2 = El ítem mide algún aspecto del indicador, pero no corresponden a la dimensión // 3 = El ítem podría modificarse para poder contribuir completamente a la evaluación de la dimensión. // 4 = El ítem es suficientes. | b,sz=18 ; sz=18
+  ROW2 trPr:trHeight{val=1034}
+    C0 [tcW{w=1294,type=dxa}] {style=TableParagraph sp=before:121}  // Relevancia | b,sz=18
+    C1 [tcW{w=1609,type=dxa}] {style=TableParagraph jc=both ind=left:104,right:97} ¿El ítem es pertinente para la variable? | sz=18
+    C2 [tcW{w=6091,type=dxa}] {style=TableParagraph ind=left:106} 1 = El ítem puede ser eliminado sin que se vea afectada la medición de la dimensión. // 2 = El ítem tiene poca relevancia // 3 = El ítem es relativamente importante // 4 = El ítem es muy relevante y debe ser considerado. | b,sz=18 ; sz=18
+  ROW3 trPr:trHeight{val=1034}
+    C0 [tcW{w=1294,type=dxa}] {style=TableParagraph sp=before:121}  // Coherencia | b,sz=18
+    C1 [tcW{w=1609,type=dxa}] {style=TableParagraph jc=both ind=left:104,right:97} ¿El ítem está alineado con los objetivos\ty dimensiones? | sz=18
+    C2 [tcW{w=6091,type=dxa}] {style=TableParagraph ind=left:106 sp=line:206,lineRule:exact} 1 = El ítem no tiene relación lógica con la dimensión. // 2 = El ítem tiene una relación tangencial con la dimensión // 3 = El ítem tiene una relación moderada con el indicador que está midiendo. // 4 = El ítem se encuentra completamente relacionado con el indicador que está midiendo. | b,sz=18 ; sz=18
+  ROW5 trPr:trHeight{val=827}
+    C0 [tcW{w=1294,type=dxa}] {style=TableParagraph sp=before:15}  // Redacción | b,sz=18
+    C1 [tcW{w=1609,type=dxa}] {style=TableParagraph ind=left:104,right:97} ¿El\títem\testá correctamente redactado? | sz=18
+    C2 [tcW{w=6091,type=dxa}] {style=TableParagraph ind=left:106 sp=line:206,lineRule:exact} 1 = La redacción del ítem no es adecuada. // 2 = La redacción del ítem tiene que ser mejorada en su sintaxis. // 3 = La redacción del ítem podría ser mejorado en la semántica. // 4 = La redacción es entendible y adecuada. | b,sz=18 ; sz=18
+ENDTABLE
+P096 [style=Textoindependiente sp=before:201]  |  | 
+P097 [style=Prrafodelista jc=left ind=left:1526,hanging:359 sp=before:1 num] Si considera que algún ítem tiene alguna observación, anote en la columna correspondiente. |  | 
+P098 [style=Prrafodelista jc=left ind=left:1526,hanging:359 sp=before:116 num] Devuelva la ficha completa al investigador. |  | 
+P099 [ind=left:1167 sp=before:117] Agradecemos profundamente su colaboración. | b | 
+P100 [SECTPR]  |  | 
+P101 [style=Ttulo1 ind=left:3939,hanging:1779 sp=before:0] CONSTANCIA DE VALIDACIÓN DE CONTENIDO DEL INSTRUMENTO POR ÍTEM |  | 
+P102 [style=Textoindependiente jc=both ind=left:1474 sp=before:248,line:360,lineRule:auto] Quien suscribe, ………………………………………………………………, con DNI Nº………………, de profesión…………………………………………………………. con Grado de ..…...………………………………………………………………………., por medio de la presente hago constar que he revisado con fines de validación el instrumento de recolección de datos Cuestionario para identificar el nivel de autoaprendizaje en estudiantes del Centro Pre Universitario – UNAJMA del proyecto de investigación “MODELO PREDICTIVO CON MACHINE LEARNING PARA IDENTIFICAR EL NIVEL DE AUTOAPRENDIZAJE EN ESTUDIANTES DEL CENTRO PRE-UNIVERSITARIO, ANDAHUAYLAS - 2025” para los efectos de su aplicación, presentado por las tesistas Miriam Velasque Ccorisoncco y Guadalupe Lida Sihui Llacctarimay. Luego revisar el instrumento, puedo formular las siguientes apreciaciones: |  | 
+P103 [jc=both ind=left:1039,right:1034]  |  | 
+TABLE rows=25 cols=['482', '2497', '1130', '1130', '1156', '1130', '1130', '1732']
+  tblPr: tblStyle{val=Tablaconcuadrcula} tblW{w=10387,type=dxa} tblInd{w=392,type=dxa} tblLook{val=04A0,firstRow=1,lastRow=0,firstColumn=1,lastColumn=0,noHBand=0,noVBand=1}
+  ROW0 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Nº | b,sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Ítem | b,sz=18
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Suficiencia | b,sz=18
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Relevancia  | b,sz=18
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Coherencia  | b,sz=18
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Claridad  | b,sz=18
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Redacción | b,sz=18
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Observaciones | b,sz=18
+  ROW1 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {} 1 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {style=TableParagraph jc=both sp=before:31} Me esfuerzo por mantener un orden en mis estudios para acercarme a mis objetivos preuniversitarios. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+  ROW2 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {} 2 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {jc=both} Me organizo con metas claras para lograr ingresar a la universidad. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {}  | 
+  ROW3 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {} 3 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {jc=both} Mantengo un alto nivel de aprendizaje en mis cursos. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {}  | 
+  ROW24 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{}] {} 24 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{}] {jc=both} Me comunico con mis compañeros para saber qué estoy aprendiendo, diferente de lo que ellos están aprendiendo. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{}] {}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{}] {}  | 
+ENDTABLE
+P104 [style=Textoindependiente sp=before:150]  |  | 
+P105 [style=Textoindependiente sp=before:150]  |  | 
+P106 [style=Textoindependiente sp=before:150]  |  | 
+P107 [style=Textoindependiente sp=before:150]  |  | 
+P108 [style=Textoindependiente sp=before:150]  |  | 
+P109 [style=Textoindependiente sp=before:150]  |  | 
+P110 [style=Textoindependiente sp=before:150]                \t\t\t\t        ____________________________ | sz=20 | 
+P111 [jc=center ind=right:846 sp=before:21,line:360,lineRule:auto] Firma | sz=20 | 
+P112 [jc=center ind=right:851 sp=before:1,line:360,lineRule:auto]                                DNI: ……………………….. | sz=20 | 
+P113 [jc=center ind=right:851 sp=before:1,line:360,lineRule:auto]  |  | 
+P114 [] \n[br:page] | sz=20 | 
+P115 [style=Ttulo1 ind=left:3939,hanging:1779 sp=before:0] CONSTANCIA DE VALIDACIÓN DE CONTENIDO DEL INSTRUMENTO POR ÍTEM |  | 
+P116 [style=Textoindependiente jc=both ind=left:1474 sp=before:248,line:360,lineRule:auto] Quien suscribe, Javier Ramos Gonzales, con DNI Nº 44844286, de profesión Ingeniero de Sistemas, con 07 años de experiencia de enseñanza en el Centro Preuniversitario UNAJMA por medio de la presente hago constar que he revisado con fines de validación el instrumento de recolección de datos Cuestionario para identificar el nivel de autoaprendizaje en estudiantes del Centro Pre Universitario – UNAJMA del proyecto de investigación “MODELO PREDICTIVO CON MACHINE LEARNING PARA IDENTIFICAR EL NIVEL DE AUTOAPRENDIZAJE EN ESTUDIANTES DEL CENTRO PRE-UNIVERSITARIO, ANDAHUAYLAS - 2025” para los efectos de su aplicación, presentado por las tesistas: Miriam Velasque Ccorisoncco y Guadalupe Lida Sihui Llacctarimay. Luego revisar el instrumento, puedo formular las siguientes apreciaciones: |  ; b ; b,c=EE0000,hl=yellow | 
+P117 [jc=both ind=left:1039,right:1034]  |  | 
+TABLE rows=25 cols=['482', '2497', '1130', '1130', '1156', '1130', '1130', '1732']
+  tblPr: tblStyle{val=Tablaconcuadrcula} tblW{w=10387,type=dxa} tblInd{w=392,type=dxa} tblLook{val=04A0,firstRow=1,lastRow=0,firstColumn=1,lastColumn=0,noHBand=0,noVBand=1}
+  ROW0 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Nº | b,sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Ítem | b,sz=18
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Suficiencia | b,sz=18
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Relevancia  | b,sz=18
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Coherencia  | b,sz=18
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Claridad  | b,sz=18
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Redacción | b,sz=18
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31} Observaciones | b,sz=18
+  ROW1 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {} 1 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {style=TableParagraph jc=both sp=before:31} Me esfuerzo por mantener un orden en mis estudios para acercarme a mis // objetivos preuniversitarios. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {style=TableParagraph ind=left:80 sp=before:31}  | 
+  ROW2 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {} 2 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {jc=both} Me organizo con metas claras para lograr ingresar a la universidad. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {}  | 
+  ROW3 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{} hideMark{}] {} 3 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{} hideMark{}] {jc=both} Mantengo un alto nivel de aprendizaje en mis cursos. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{} hideMark{}] {}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{} hideMark{}] {}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{} hideMark{}] {}  | 
+  ROW24 trPr:trHeight{val=263}
+    C0 [tcW{w=482,type=dxa} noWrap{}] {} 24 | sz=18
+    C1 [tcW{w=2497,type=dxa} noWrap{}] {jc=both} Me comunico con mis compañeros para saber qué estoy aprendiendo, diferente de lo que ellos están aprendiendo. | 
+    C2 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C3 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C4 [tcW{w=1156,type=dxa} noWrap{}] {}  | 
+    C5 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C6 [tcW{w=1130,type=dxa} noWrap{}] {}  | 
+    C7 [tcW{w=1732,type=dxa} noWrap{}] {}  | 
+ENDTABLE
+P118 [style=Textoindependiente sp=before:150]  |  | 
+P119 [style=Textoindependiente sp=before:150]  |  | 
+P120 [style=Textoindependiente sp=before:150]  |  | 
+P121 [style=Textoindependiente sp=before:150]  |  | 
+P122 [style=Textoindependiente sp=before:150]  |  | 
+P123 [style=Textoindependiente sp=before:150]                \t\t\t\t        ____________________________ | sz=20 | 
+P124 [jc=center ind=right:846 sp=before:21,line:360,lineRule:auto]                             Firma | sz=20 | 
+P125 [jc=center ind=right:851 sp=before:1,line:360,lineRule:auto]                              DNI: ……………………….. | sz=20 | 
+P126 [jc=center ind=right:851 sp=before:1,line:360,lineRule:auto]  |  | 
+FINAL SECTPR pgSz{w=11920,h=16850} pgMar{top=1701,right=1430,bottom=280,left=283,header=0,footer=0,gutter=0} cols{space=720} headerReference{type=default,id=rId15} footerReference{type=default,id=rId16}
+SECT: pgSz{w=11920,h=16850} pgMar{top=1940,right=1430,bottom=1140,left=283,header=424,footer=950,gutter=0} cols{space=720} headerReference{type=default,id=rId7} footerReference{type=default,id=rId8} type{val=continuous} pgNumType{start=1}
+SECT: pgSz{w=11920,h=16850} pgMar{top=1940,right=1430,bottom=1140,left=283,header=424,footer=950,gutter=0} cols{space=720} headerReference{type=default,id=rId9} footerReference{type=default,id=rId10} type{val=continuous} pgNumType{start=1}
+SECT: pgSz{w=11920,h=16850} pgMar{top=1940,right=1430,bottom=1140,left=283,header=424,footer=950,gutter=0} cols{space=720} headerReference{type=default,id=rId11} footerReference{type=default,id=rId12} pgNumType{start=1}
+SECT: pgSz{w=11920,h=16850} pgMar{top=1940,right=283,bottom=1140,left=283,header=424,footer=950,gutter=0} cols{space=720} headerReference{type=default,id=rId13} footerReference{type=default,id=rId14}
+SECT: pgSz{w=11920,h=16850} pgMar{top=1701,right=1430,bottom=280,left=283,header=0,footer=0,gutter=0} cols{space=720} headerReference{type=default,id=rId15} footerReference{type=default,id=rId16}

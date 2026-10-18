@@ -1,3 +1,19 @@
+> # ⚠ DICTAMEN ANULADO — 2026-10-18
+>
+> **Este informe queda sin efecto por DEC-014 y DEC-018.** Su estatus global de
+> «APROBADO_SIN_OBSERVACIONES (100% CONFORME)» se apoyaba en el bloque psicométrico
+> de validación por juicio de expertos, hoy declarado nulo: los tres jueces no
+> evaluaron los instrumentos y los coeficientes reportados son aritméticamente
+> inalcanzables (DEC-014). Además, las compuertas F9 y F9.1 que invocaba fueron
+> anuladas por DEC-018; la fase vigente es **F5 reabierta (saneamiento F5.1)**.
+>
+> Se conserva como registro histórico. **No citar como dictamen vigente.** El
+> expediente que auditaba (`EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_SIVAC.docx` y
+> `MATRIZ_CALCULO_IVC_AIKEN_SIVAC.xlsx`) fue retirado a cuarentena en
+> `salidas/archivo/_material_apocrifo_no_usar/`.
+
+---
+
 # DICTAMEN DE AUDITORÍA INTEGRAL — INFORME FINAL DE TESIS SIVAC (v01) Y EXPEDIENTE DE INSTRUMENTOS
 > **Fecha de Auditoría:** 2026-10-08  
 > **Entidad:** Escuela Profesional de Ingeniería de Sistemas — Universidad Nacional José María Arguedas (UNAJMA)  

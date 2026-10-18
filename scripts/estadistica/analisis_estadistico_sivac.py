@@ -48,20 +48,20 @@ def validar_matriz(df, fase_esperada):
     assert (df["rsd"] >= 0).all() and (df["rsd"] <= 100).all(), "Error en rango de rsd [0, 100]."
     assert (df["cpe"] >= 0).all() and (df["cpe"] <= 100).all(), "Error en rango de cpe [0, 100]."
 
-    # Ítems TAM
-    items_tam = [f"ap_{i:02d}" for i in range(1, 6)] + [f"up_{i:02d}" for i in range(1, 6)]
+    # Ítems TAM (Modalidad A: 4 ítems AP + 4 ítems UP = 8 ítems)
+    items_tam = [f"ap_{i:02d}" for i in range(1, 5)] + [f"up_{i:02d}" for i in range(1, 5)]
     for col in items_tam:
         assert col in df.columns, f"Error: Falta el ítem {col}."
         assert df[col].isin([1, 2, 3, 4, 5]).all(), f"Error en reactivo {col}: valores fuera de 1-5."
 
     # Consistencia aritmética TAM
-    calc_ap = df[[f"ap_{i:02d}" for i in range(1, 6)]].sum(axis=1)
-    calc_up = df[[f"up_{i:02d}" for i in range(1, 6)]].sum(axis=1)
+    calc_ap = df[[f"ap_{i:02d}" for i in range(1, 5)]].sum(axis=1)
+    calc_up = df[[f"up_{i:02d}" for i in range(1, 5)]].sum(axis=1)
     calc_total = calc_ap + calc_up
 
-    assert (df["score_ap"] == calc_ap).all(), "Error: Inconsistencia en score_ap."
-    assert (df["score_up"] == calc_up).all(), "Error: Inconsistencia en score_up."
-    assert (df["score_tam_total"] == calc_total).all(), "Error: Inconsistencia en score_tam_total."
+    assert (df["score_ap"] == calc_ap).all(), "Error: Inconsistencia en score_ap (rango 4-20)."
+    assert (df["score_up"] == calc_up).all(), "Error: Inconsistencia en score_up (rango 4-20)."
+    assert (df["score_tam_total"] == calc_total).all(), "Error: Inconsistencia en score_tam_total (rango 8-40)."
 
     print(f"    [OK] Matriz {fase_esperada} validada exitosamente (14 observaciones conformes).")
     return True
@@ -240,14 +240,21 @@ def generar_reporte_estadistico_completo(ruta_pretest, ruta_postest, ruta_salida
         ("t_reg", "Tiempo de Registro de Movimientos (min)", "menor"),
         ("t_vale", "Tiempo de Emisión de Vales (min)", "menor"),
         ("rsd", "% Registros sin Discrepancias", "mayor"),
-        ("cpe", "% Concordancia Programada vs Entregada", "mayor"),
+        ("cpe", "% Entregas con Cantidad Conforme", "mayor"),
         ("score_ap", "Aceptación del Proceso (TAM - AP)", "mayor"),
         ("score_up", "Utilidad Percibida (TAM - UP)", "mayor"),
         ("score_tam_total", "Puntaje Total de Satisfacción TAM", "mayor")
     ]
 
-    # 3. Confiabilidad de Cronbach para Instrumento TAM
-    items_tam = [f"ap_{i:02d}" for i in range(1, 6)] + [f"up_{i:02d}" for i in range(1, 6)]
+    # Rangos declarados de los puntajes TAM (Instrumento 03, Modalidad A: 8 ítems)
+    rangos_tam = {"score_ap": (4, 20), "score_up": (4, 20), "score_tam_total": (8, 40)}
+    for col, (lo, hi) in rangos_tam.items():
+        fuera = (df_pre_sorted[col] < lo) | (df_pre_sorted[col] > hi) | \
+                (df_post_sorted[col] < lo) | (df_post_sorted[col] > hi)
+        assert not fuera.any(), f"Error de rango declarado: {col} debe estar en [{lo}, {hi}]."
+
+    # 3. Confiabilidad de Cronbach para Instrumento TAM (Modalidad A, k = 8)
+    items_tam = [f"ap_{i:02d}" for i in range(1, 5)] + [f"up_{i:02d}" for i in range(1, 5)]
     alfa_pre = calcular_alfa_cronbach(df_pre_sorted[items_tam])
     alfa_post = calcular_alfa_cronbach(df_post_sorted[items_tam])
     discrim_post = analisis_discriminacion_items(df_post_sorted[items_tam])
@@ -285,8 +292,8 @@ def generar_reporte_estadistico_completo(ruta_pretest, ruta_postest, ruta_salida
     with open(ruta_salida_md, "w", encoding="utf-8") as f:
         f.write("# RESULTADOS ESTADÍSTICOS INFERENCIALES Y DESCRIPTIVOS — PROYECTO SIVAC\n\n")
         f.write("## 1. Confiabilidad del Instrumento Psicométrico TAM\n\n")
-        f.write(f"- **Alfa de Cronbach Pretest (10 ítems):** $\\alpha = {alfa_pre:.4f}$\n")
-        f.write(f"- **Alfa de Cronbach Postest (10 ítems):** $\\alpha = {alfa_post:.4f}$\n\n")
+        f.write(f"- **Alfa de Cronbach Pretest (8 ítems):** $\\alpha = {alfa_pre:.4f}$\n")
+        f.write(f"- **Alfa de Cronbach Postest (8 ítems):** $\\alpha = {alfa_post:.4f}$\n\n")
         f.write("### Tabla de Discriminación Ítem-Total (Postest):\n\n")
         f.write(df_a_markdown(discrim_post))
         f.write("\n\n## 2. Pruebas de Normalidad de Shapiro-Wilk (Diferencias Pareadas):\n\n")

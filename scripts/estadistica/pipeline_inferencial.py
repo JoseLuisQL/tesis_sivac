@@ -18,11 +18,14 @@ Flujo:
   5. Regla de decisión: d normal y variable continua -> t pareada unilateral
      + d_z de Cohen con IC95% (t no central); no normal u ordinal (AP, UP)
      -> Wilcoxon de rangos con signo unilateral.
-  6. Confiabilidad del cuestionario TAM: alfa de Cronbach, omega (un factor,
-     ejes principales), correlación ítem-total corregida (AP, UP, total).
+  6. Confiabilidad del cuestionario TAM de Modalidad A (8 ítems): alfa de
+     Cronbach sobre k = 8, omega (un factor, ejes principales) y correlación
+     ítem-total corregida por subescala (AP, UP) y en el total.
   7. Multiplicidad: ajuste de Holm reportado aparte.
 
 Decisiones estadísticas documentadas
+  * El total de la Modalidad A no se contrasta porque es una combinación lineal
+    de AP y UP y su prueba sería redundante; solo se reporta como descriptivo.
   * Wilcoxon: zero_method='wilcox' (se descartan las diferencias nulas; se
     reporta n_efectivo). Z asintótico SIN corrección de continuidad y CON
     corrección por empates en |d|:
@@ -76,8 +79,8 @@ SEMILLA = 20260930
 SALIDA_DEFECTO = rutas.SALIDAS / "reportes_estadisticos"
 N_ESPERADO = rutas.N_CENSAL
 IDS_ESPERADOS = [f"TRAB-{i:02d}" for i in range(1, N_ESPERADO + 1)]
-ITEMS_AP = [f"ap_{i:02d}" for i in range(1, 6)]
-ITEMS_UP = [f"up_{i:02d}" for i in range(1, 6)]
+ITEMS_AP = [f"ap_{i:02d}" for i in range(1, 5)]
+ITEMS_UP = [f"up_{i:02d}" for i in range(1, 5)]
 COLUMNAS_OBLIGATORIAS = (
     ["sujeto_id", "t_reg", "t_vale", "rsd", "cpe"] + ITEMS_AP + ["score_ap"]
     + ITEMS_UP + ["score_up", "score_tam_total"]
@@ -85,11 +88,16 @@ COLUMNAS_OBLIGATORIAS = (
 _TOKENS_FALTANTE = {"", "na", "n/a", "nan", "null", "none"}
 
 # columna: (rango, limite_inferior_abierto)
+# Puntajes TAM de la Modalidad A (8 ítems): AP y UP suman 4 ítems cada una y el
+# total suma los 8 ítems, conforme al Instrumento 03 y a DEC-019.
 RANGOS = {
     "t_reg": (0.0, 120.0, True),
     "t_vale": (0.0, 60.0, True),
     "rsd": (0.0, 100.0, False),
     "cpe": (0.0, 100.0, False),
+    "score_ap": (4.0, 20.0, False),
+    "score_up": (4.0, 20.0, False),
+    "score_tam_total": (8.0, 40.0, False),
 }
 
 # (etiqueta, columna, dirección de H1 sobre d = post - pre, ordinal)
@@ -535,7 +543,9 @@ def analizar(pre: pd.DataFrame, post: pd.DataFrame, alfa: float = 0.05) -> dict:
     for i, p_aj in zip(con_p, ajustados):
         holm.append({"indicador": contrastes[i]["indicador"], "p": contrastes[i]["resultado"]["p"],
                      "p_holm": p_aj, "rechaza_h0_holm": p_aj < alfa})
-    desc["TAM_total (suplementario)"] = {
+    # Total de la Modalidad A: solo descriptivo. No se contrasta porque es una
+    # combinación lineal de AP y UP y su prueba sería redundante (ver cabecera).
+    desc["Total de la Modalidad A (8 ítems)"] = {
         "columna": "score_tam_total", "pretest": descriptivos(pre["score_tam_total"]),
         "postest": descriptivos(post["score_tam_total"]),
         "diferencias": descriptivos(post["score_tam_total"].to_numpy(float) - pre["score_tam_total"].to_numpy(float)),
@@ -569,7 +579,7 @@ def construir_tablas(res: dict) -> list[dict]:
         "T1", "Estadísticos descriptivos por indicador y momento de medición",
         ["Indicador", "Momento", "M", "DE", "Mdn", "RIC", "Mín", "Máx"], filas,
         "N = 14. M = media; DE = desviación estándar (n − 1); Mdn = mediana; RIC = rango intercuartílico (Q3 − Q1, interpolación lineal). "
-        "AP y UP corresponden a puntajes sumados (5-25).")
+        "AP y UP corresponden a puntajes sumados de 4 ítems cada uno (4-20); el total TAM suma 8 ítems (8-40).")
     filas = []
     for c in res["contrastes"]:
         n = c["normalidad"]

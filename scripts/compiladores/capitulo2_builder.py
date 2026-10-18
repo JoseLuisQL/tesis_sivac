@@ -8,9 +8,12 @@ Estructura Oficial de Informe Final de Tesis EPIS-UNAJMA
 ================================================================================
 """
 
+from docx.shared import Inches, Pt
 from docx_utilidades import (
-    agregar_titulo_1, agregar_titulo_2, agregar_parrafo
+    agregar_titulo_1, agregar_titulo_2, agregar_parrafo,
+    formatear_tabla_apa7, agregar_nota_tabla_apa7, procesar_formato_texto
 )
+from docx_quirurgico import configurar_geometria_tabla
 
 
 def construir_capitulo2(doc):
@@ -195,13 +198,13 @@ def construir_capitulo2(doc):
         sangria=True
     )
 
-    # 2.2. Antecedentes nacionales
-    agregar_titulo_2(doc, "2.2. Antecedentes nacionales")
+    # 2.2. Antecedentes a nivel nacional
+    agregar_titulo_2(doc, "2.2. Antecedentes a nivel nacional")
 
     agregar_parrafo(
         doc,
-        "Astuhuaman Perez y Baltazar Maza (2024), en su tesis de grado desarrollada en la "
-        "Universidad Nacional José María Arguedas titulada “Implementación de un sistema web "
+        "Astuhuaman Perez y Baltazar Maza (2023), en su tesis de licenciatura sustentada en la "
+        "Universidad Privada del Norte (UPN), Lima, titulada “Implementación de un sistema web "
         "con IA para mejorar la gestión de citas médicas en el Centro de Salud de Nueva "
         "Fuerabamba, Apurímac 2024”, tuvieron como objetivo determinar en qué medida la "
         "aplicación de un sistema web mejora la gestión operativa y los tiempos de "
@@ -259,8 +262,8 @@ def construir_capitulo2(doc):
         "97.44% y el cumplimiento de entregas conformes y oportunas subió de 76.15% a 97.77%, "
         "obteniendo en la contrastación inferencial un estadístico Z = -7.15 con p < 0.001. "
         "Los autores concluyeron que la automatización de las entradas, salidas y kardex "
-        "mediante un sistema web erradica las discrepancias documentales y garantiza la "
-        "concordancia física y contable de los inventarios sanitarios.",
+        "mediante un sistema web reduce sustancialmente las discrepancias documentales y "
+        "fortalece la concordancia física y contable de los inventarios sanitarios.",
         sangria=True
     )
 
@@ -309,5 +312,192 @@ def construir_capitulo2(doc):
         "sanitarias peruanas del MINSA constituye un marco de referencia robusto para asegurar que "
         "los sistemas de información optimicen los flujos de trabajo asistenciales y alcancen una "
         "satisfacción usuaria sobresaliente.",
+        sangria=True
+    )
+
+    # Síntesis comparativa de antecedentes y vacío de investigación
+    agregar_parrafo(
+        doc,
+        "A continuación, se presenta el cuadro de síntesis comparativa de los antecedentes internacionales y "
+        "nacionales analizados, detallando su diseño metodológico, indicadores evaluados, hallazgos principales y "
+        "su diferenciación específica frente al sistema web SIVAC.",
+        sangria=True
+    )
+
+    p_tit_sintesis = doc.add_paragraph()
+    p_tit_sintesis.paragraph_format.keep_with_next = True
+    p_tit_sintesis.paragraph_format.space_before = Pt(10)
+    p_tit_sintesis.paragraph_format.space_after = Pt(4)
+    p_tit_sintesis.paragraph_format.line_spacing = 1.0
+    p_tit_sintesis.paragraph_format.first_line_indent = Inches(0)
+    run_ts = p_tit_sintesis.add_run("Síntesis comparativa de antecedentes internacionales y nacionales y diferenciación frente a SIVAC")
+    run_ts.font.name = 'Times New Roman'
+    run_ts.font.size = Pt(10)
+    run_ts.font.bold = True
+
+    encabezados_sintesis = [
+        "Autor y año",
+        "Contexto",
+        "Diseño y muestra",
+        "Variables / indicadores",
+        "Resultado relevante",
+        "Aporte y diferencia con SIVAC"
+    ]
+
+    filas_sintesis = [
+        [
+            "Shen et al. (2024)",
+            "Hospital universitario en Nanjing, China",
+            "Caso cuantitativo longitudinal pre-post (registros de almacén)",
+            "Cadena de suministro digital; rotura de stock y eficiencia operativa",
+            "Reducción de roturas de stock de 0.425% a 0.277% y +42.4% en eficiencia",
+            "Sustenta la centralización de inventarios; SIVAC se especializa en lotes vacunales y cadena de frío regional."
+        ],
+        [
+            "Dang et al. (2024)",
+            "Centros de salud y almacenes en Vietnam",
+            "Mixto longitudinal pre-post con observación cronometrada",
+            "Transición papel a digital; tiempo de disponibilidad y carga laboral",
+            "Tiempo de disponibilidad del dato bajó de 43.7 a 0.7 días (-98%) y -38% de carga",
+            "Respalda el cronometraje de flujos vacunales; SIVAC evalúa además kardex y vales de salida bajo normativa MINSA."
+        ],
+        [
+            "Kigenza et al. (2023)",
+            "Cadena de suministro de salud en Ruanda",
+            "Cuasiexperimental longitudinal (596 centros y 30 almacenes)",
+            "Sistema e-LMIS; uso del sistema, exactitud de inventario y desabastecimiento",
+            "Exactitud física vs. digital subió de 25% a 85% y desabastecimiento < 1%",
+            "Fundamenta la auditoría de exactitud documental; SIVAC añade control por operador (N = 14) y satisfacción TAM."
+        ],
+        [
+            "Balón Morejón (2023)",
+            "Centro de salud en Salinas, Ecuador",
+            "Aplicada, cuantitativa, descriptivo-propositiva",
+            "Aplicación web de inventario vacunal; tiempo de consolidación y duplicidad",
+            "Emisión de reportes bajó de 3–4 días a 6 segundos y control de caducidad",
+            "Evidencia agilidad en reportes web vacunales; SIVAC incorpora diseño preexperimental pareado y tres dimensiones."
+        ],
+        [
+            "Ergetie et al. (2023)",
+            "Centros de atención primaria en Etiopía",
+            "Observacional transversal cuantitativo en personal de inmunizaciones",
+            "Prácticas de cadena de frío y completitud de registros logísticos",
+            "68% con deficiencias de actualización y 50% con registros manuales incompletos",
+            "Demuestra la vulnerabilidad del soporte en papel; SIVAC interviene directamente automatizando el kardex."
+        ],
+        [
+            "Wasswa et al. (2023)",
+            "Red pública del Ministerio de Salud de Uganda",
+            "Cuantitativo, descriptivo y transversal (19 hospitales regionales)",
+            "Sistema e-LMIS; trazabilidad de despachos y disponibilidad de biológicos",
+            "Disponibilidad promedio del 90% y concordancia en despachos regionales",
+            "Aporta métricas de concordancia de entregas; SIVAC operacionaliza el indicador CPE por operador censal."
+        ],
+        [
+            "Gilbert et al. (2020)",
+            "Establecimientos de salud en tres regiones de Tanzania",
+            "Cuasiexperimental pre-post y series temporales (924 centros)",
+            "Sistema integrado EIR-eLMIS; desabastecimiento y deducción en kardex",
+            "Desabastecimiento cayó de 7.1% a 2.1% (p < 0.01) con deducción automática",
+            "Valida el descuento automático en kardex; SIVAC audita 8 criterios normativos de la NTS N.° 196-MINSA."
+        ],
+        [
+            "Inarotul Huda et al. (2025)",
+            "Entidad sanitaria en Indonesia",
+            "Preexperimental pre-post con ingeniería Extreme Programming (XP)",
+            "Plataforma web bajo XP; tiempo de registro individual y validación",
+            "Tiempo de registro bajó de 7–10 min a 2–3 min y reportes a 10–20 segundos",
+            "Respalda el uso de XP en sistemas sanitarios; SIVAC articula XP con ISO/IEC 25010:2023 en inmunizaciones."
+        ],
+        [
+            "Astuhuaman Perez y Baltazar Maza (2023)",
+            "Centro de Salud Nueva Fuerabamba, Apurímac (UPN, Lima)",
+            "Preexperimental pre-post con muestra censal (n = 12 trabajadores)",
+            "Sistema web; tiempo de registro y actualización (prueba de Wilcoxon)",
+            "Reducción del tiempo de registro de 9.97 a 8.47 min (p < 0.001)",
+            "Valida el contraste de Wilcoxon en personal de salud de Apurímac; SIVAC aborda logística de vacunas en 8 centros."
+        ],
+        [
+            "Mego Navarro (2021)",
+            "Entidad pública de salud en el Perú (UTP)",
+            "Aplicada cuantitativa con metodología Extreme Programming (n = 40)",
+            "Sistema web de gestión de vacunas; acceso en tiempo real y completitud",
+            "Acceso centralizado en 87.5% y completitud de registros de 50% a 95%",
+            "Antecedente directo de XP en vacunas en Perú; SIVAC evalúa tiempos cronometrados, kardex y vales de salida."
+        ],
+        [
+            "Garcia Villacorta y Calderón Huaman (2023)",
+            "Establecimiento farmacéutico en Perú (UPN)",
+            "Preexperimental pre-post (68 registros de inventario: 34 pre y 34 post)",
+            "Sistema web de inventario; exactitud de stock y entregas conformes",
+            "Exactitud subió de 75.42% a 97.18% y entregas conformes a 97.77% (p < 0.001)",
+            "Fundamenta el cotejo documental pre-post; SIVAC lo adapta a biológicos termolábiles y regla FEFO."
+        ],
+        [
+            "Champi Velásquez (2023)",
+            "Servicio de inmunizaciones en Puente Piedra, Lima (UCH)",
+            "Aplicada, cuantitativa y diseño preexperimental",
+            "Automatización en cadena de frío; detección de incidencias e integridad",
+            "Reducción del 90% en incidencias no detectadas por registro manual",
+            "Se enfoca en monitoreo térmico IoT; SIVAC se delimita a la gestión transaccional y documental de movimientos."
+        ],
+        [
+            "Mamani-Pari et al. (2026)",
+            "Establecimientos de salud peruanos (JMIR Medical Informatics)",
+            "Metodológico y psicométrico (10 expertos y n = 115 usuarios de salud)",
+            "Calidad y usabilidad bajo ISO/IEC 25010 en entornos MINSA",
+            "Validez V de Aiken = 0.95, Alfa = 0.968 y 81.7% en usabilidad muy alta",
+            "Respalda la evaluación con ISO/IEC 25010 y validación con V de Aiken en personal sanitario del Perú."
+        ]
+    ]
+
+    tbl_sintesis = doc.add_table(rows=len(filas_sintesis) + 1, cols=len(encabezados_sintesis))
+    for c_idx, h_text in enumerate(encabezados_sintesis):
+        cell = tbl_sintesis.rows[0].cells[c_idx]
+        p = cell.paragraphs[0]
+        p.text = ""
+        for r_texto, r_bold, r_italic in procesar_formato_texto(str(h_text)):
+            run = p.add_run(r_texto)
+            run.font.name = 'Times New Roman'
+            run.font.size = Pt(10)
+            run.font.bold = True
+            run.font.italic = r_italic
+
+    for r_idx, fila in enumerate(filas_sintesis):
+        for c_idx, val in enumerate(fila):
+            cell = tbl_sintesis.rows[r_idx + 1].cells[c_idx]
+            p = cell.paragraphs[0]
+            p.text = ""
+            for r_texto, r_bold, r_italic in procesar_formato_texto(str(val)):
+                run = p.add_run(r_texto)
+                run.font.name = 'Times New Roman'
+                run.font.size = Pt(10)
+                run.font.bold = r_bold
+                run.font.italic = r_italic
+
+    formatear_tabla_apa7(tbl_sintesis, font_size_pt=10)
+    # Tabla de 6 columnas con palabras no fragmentables de hasta 1,508 dxa (p. ej.
+    # "Desabastecimiento"). A 10 pt el ancho útil de 8,784 dxa no se alcanza con los
+    # márgenes celulares por defecto de Word (108 dxa por lado), por lo que se fija la
+    # geometría con el helper canónico a 50 dxa por lado: la fuente no se reduce.
+    configurar_geometria_tabla(
+        tbl_sintesis, total_width_dxa=8784,
+        col_widths_dxa=[1115, 1473, 1606, 1572, 1616, 1402],
+        align="center", cell_margin_dxa=(30, 50, 30, 50)
+    )
+    agregar_nota_tabla_apa7(
+        doc,
+        "Comparación metodológica y temática de los antecedentes internacionales y nacionales respecto al alcance operativo del sistema web SIVAC en la DISA Apurímac II."
+    )
+
+    agregar_parrafo(
+        doc,
+        "Los antecedentes revisados evidencian que los sistemas digitales de información logística contribuyen a mejorar "
+        "la oportunidad de registro, la trazabilidad por lote y la disponibilidad de insumos sanitarios. Sin embargo, se "
+        "identificó una limitada evidencia empírica aplicada específicamente a la gestión de movimientos de vacunas en "
+        "centros de acopio de una Dirección de Salud regional en el Perú, que evalúe de forma integrada tiempos "
+        "cronometrados de procesamiento, consistencia documental bajo la NTS N.° 196-MINSA/DGIESP-2022 y percepción de "
+        "aceptación tecnológica del usuario. Esta brecha científica y operativa justifica el desarrollo e implementación "
+        "del sistema web SIVAC.",
         sangria=True
     )
