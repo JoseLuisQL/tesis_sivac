@@ -14,7 +14,7 @@ description: Reglas metodológicas oficiales y dimensiones de la Variable Depend
 - **Variable Independiente (VI):** Sistema web SIVAC.
   - *Metodología de desarrollo:* Extreme Programming (XP) en sus 4 fases (Planificación, Diseño, Codificación, Pruebas).
   - *Estándar de calidad de software:* ISO/IEC 25010:2023.
-- **Variable Dependiente (VD):** Gestión de movimientos de vacunas.
+- **Variable Dependiente (VD):** Gestión de movimientos mensuales de vacunas (Resolución de Grados y Títulos UNAJMA - DEC-027).
 
 ## 3. Las Tres Dimensiones Oficiales de la VD (DEC-007)
 Por mandato de la decisión **DEC-007**, la VD está compuesta de forma **única, exclusiva e inmodificable** por tres dimensiones:

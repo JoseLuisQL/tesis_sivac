@@ -122,7 +122,7 @@ def construir_capitulo5(doc):
     agregar_parrafo(
         doc,
         "El análisis descriptivo tuvo como propósito caracterizar el comportamiento empírico de las tres dimensiones "
-        "oficiales de la gestión de movimientos de vacunas (oportunidad de procesamiento, consistencia documental y "
+        "oficiales de la gestión de movimientos mensuales de vacunas (oportunidad de procesamiento, consistencia documental y "
         "satisfacción del usuario) en las condiciones basales del pre-test bajo gestión manual frente a las condiciones "
         "del post-test bajo la operación del sistema web SIVAC. Conforme a las pautas metodológicas fijadas en el Capítulo IV, "
         "las unidades primarias observadas en campo fueron agregadas por operador para estructurar pares válidos (O₁ᵢ, O₂ᵢ) "
@@ -489,7 +489,7 @@ def construir_capitulo5(doc):
     agregar_tabla_datos(
         doc,
         numero="16",
-        titulo="Resultados de la prueba de normalidad de Shapiro-Wilk para los indicadores de la gestión de movimientos de vacunas",
+        titulo="Resultados de la prueba de normalidad de Shapiro-Wilk para los indicadores de la gestión de movimientos mensuales de vacunas",
         encabezados=headers_t16,
         filas=filas_t16,
         nota="Prueba de Shapiro-Wilk evaluada con nivel de significancia de 0.05 sobre las diferencias pareadas intrasujeto. Si el p-valor supera 0.05 se emplea la prueba t de Student pareada; en caso contrario se aplica la prueba de rangos con signo de Wilcoxon.",
@@ -515,18 +515,18 @@ def construir_capitulo5(doc):
     agregar_item_lista(
         doc,
         "**Hipótesis nula (H0):** La aplicación del sistema web SIVAC no mejora significativamente la gestión de "
-        "movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+        "movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
         "**Hipótesis alterna (H1):** La aplicación del sistema web SIVAC mejora significativamente la gestión de "
-        "movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+        "movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
         simbolo="•"
     )
     agregar_parrafo(
         doc,
-        "La contrastación de la Hipótesis General abordó la gestión de movimientos de vacunas como un constructo "
+        "La contrastación de la Hipótesis General abordó la gestión de movimientos mensuales de vacunas como un constructo "
         "multidimensional integral. Debido a que las tres dimensiones componentes fueron medidas en escalas heterogéneas "
         "(minutos cronometrados en oportunidad, porcentajes en consistencia documental y puntajes ordinales en satisfacción), "
         "la decisión estadística formal no se sustentó en un promedio simple ni en un p-valor artificialmente unificado, "
@@ -541,14 +541,14 @@ def construir_capitulo5(doc):
     agregar_item_lista(
         doc,
         "**Hipótesis nula (H0,1):** La aplicación del sistema web SIVAC no mejora significativamente la oportunidad "
-        "de procesamiento en los movimientos de vacunas del personal de inmunizaciones de la Dirección de Salud "
+        "de procesamiento en la gestión de movimientos mensuales de vacunas del personal de inmunizaciones de la Dirección de Salud "
         "Apurímac II.",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
         "**Hipótesis alterna (H1,1):** La aplicación del sistema web SIVAC mejora significativamente la oportunidad "
-        "de procesamiento en los movimientos de vacunas del personal de inmunizaciones de la Dirección de Salud "
+        "de procesamiento en la gestión de movimientos mensuales de vacunas del personal de inmunizaciones de la Dirección de Salud "
         "Apurímac II, reduciendo los tiempos de registro y de emisión de comprobantes de salida.",
         simbolo="•"
     )
@@ -565,14 +565,14 @@ def construir_capitulo5(doc):
     agregar_item_lista(
         doc,
         "**Hipótesis nula (H0,2):** La aplicación del sistema web SIVAC no mejora significativamente la consistencia "
-        "documental de los registros de movimientos de vacunas en el personal de inmunizaciones de la Dirección de "
+        "documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de "
         "Salud Apurímac II.",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
         "**Hipótesis alterna (H1,2):** La aplicación del sistema web SIVAC mejora significativamente la consistencia "
-        "documental de los registros de movimientos de vacunas en el personal de inmunizaciones de la Dirección de "
+        "documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de "
         "Salud Apurímac II, incrementando el porcentaje de registros sin discrepancias y la concordancia de "
         "cantidades programadas versus entregadas.",
         simbolo="•"
@@ -590,14 +590,14 @@ def construir_capitulo5(doc):
     agregar_item_lista(
         doc,
         "**Hipótesis nula (H0,3):** La aplicación del sistema web SIVAC no mejora significativamente la satisfacción "
-        "del usuario respecto a la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección "
+        "del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección "
         "de Salud Apurímac II.",
         simbolo="•"
     )
     agregar_item_lista(
         doc,
         "**Hipótesis alterna (H1,3):** La aplicación del sistema web SIVAC mejora significativamente la satisfacción "
-        "del usuario respecto a la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección "
+        "del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección "
         "de Salud Apurímac II, elevando la aceptación del proceso y la utilidad percibida.",
         simbolo="•"
     )
@@ -624,7 +624,7 @@ def construir_capitulo5(doc):
     ]
     filas_t17 = [
         [
-            "Hipótesis General (HG):\nGestión de movimientos de vacunas",
+            "Hipótesis General (HG):\nGestión de movimientos mensuales de vacunas",
             "Integración inferencial conjunta de H1, H2 y H3 (Evaluación multidimensional)",
             "14",
             "Criterio conjuntivo",

@@ -410,7 +410,7 @@ def construir_capitulo4(doc):
         "La investigación se desarrolló bajo el enfoque cuantitativo, caracterizado por la recolección secuencial y "
         "probatoria de datos numéricos estandarizados y el uso del análisis estadístico descriptivo e inferencial para "
         "establecer patrones de comportamiento y probar las hipótesis formuladas (Hernández-Sampieri et al., 2014). "
-        "En virtud de este enfoque, las tres dimensiones de la gestión de movimientos de vacunas fueron medidas "
+        "En virtud de este enfoque, las tres dimensiones de la gestión de movimientos mensuales de vacunas fueron medidas "
         "en escalas métricas y ordinales rigurosas: tiempos cronometrados expresados en minutos, proporciones "
         "auditadas de exactitud documental en porcentaje y puntuaciones psicométricas de aceptación tecnológica "
         "en escala de cinco niveles.",
@@ -450,7 +450,7 @@ def construir_capitulo4(doc):
     )
     agregar_item_lista(
         doc,
-        "**O₁:** Medición previa (pre-test) de los seis indicadores de la gestión de movimientos de vacunas bajo el "
+        "**O₁:** Medición previa (pre-test) de los seis indicadores de la gestión de movimientos mensuales de vacunas bajo el "
         "procedimiento tradicional manual (libros foliados, cuadernos de cargo y hojas de cálculo aisladas) a lo largo "
         "de una ventana de observación estandarizada de 30 días calendario.",
         simbolo="•"
@@ -463,8 +463,8 @@ def construir_capitulo4(doc):
     )
     agregar_item_lista(
         doc,
-        "**O₂:** Medición posterior (post-test) de los mismos seis indicadores de la gestión de movimientos de "
-        "vacunas ejecutada mediante el sistema web SIVAC a lo largo de una ventana simétrica de 30 días calendario.",
+        "**O₂:** Medición posterior (post-test) de los mismos seis indicadores de la gestión de movimientos "
+        "mensuales de vacunas ejecutada mediante el sistema web SIVAC a lo largo de una ventana simétrica de 30 días calendario.",
         simbolo="•"
     )
 
@@ -738,10 +738,10 @@ def construir_capitulo4(doc):
         sangria=True
     )
 
-    agregar_titulo_3(doc, "4.9.2. Variable dependiente: Gestión de movimientos de vacunas")
+    agregar_titulo_3(doc, "4.9.2. Variable dependiente: Gestión de movimientos mensuales de vacunas")
     agregar_parrafo(
         doc,
-        "La variable dependiente (Gestión de movimientos de vacunas) se definió conceptualmente como el proceso "
+        "La variable dependiente (Gestión de movimientos mensuales de vacunas) se definió conceptualmente como el proceso "
         "técnico-administrativo y logístico que regula la recepción, conservación, registro contable en kardex y "
         "distribución de productos biológicos e insumos complementarios a través de los niveles de la cadena de frío "
         "sanitaria (Ministerio de Salud, 2022). Operacionalmente, esta variable fue medida mediante tres dimensiones "
@@ -769,7 +769,7 @@ def construir_capitulo4(doc):
             "Nominal dicotómica (X₀ = Manual, X₁ = SIVAC)"
         ],
         [
-            "**Variable Dependiente:**\nGestión de movimientos de vacunas",
+            "**Variable Dependiente:**\nGestión de movimientos mensuales de vacunas",
             "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
             "1. Oportunidad de procesamiento",
             "Tiempo de registro de movimiento de vacunas (T_reg)\n\nTiempo de emisión de comprobante de salida o vale (T_vale)",
@@ -777,7 +777,7 @@ def construir_capitulo4(doc):
             "De razón (continua)"
         ],
         [
-            "**Variable Dependiente:**\nGestión de movimientos de vacunas",
+            "**Variable Dependiente:**\nGestión de movimientos mensuales de vacunas",
             "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
             "2. Consistencia documental",
             "Porcentaje de registros sin discrepancias (RSD)\n\nConcordancia de cantidad programada versus entregada (CPE)",
@@ -785,7 +785,7 @@ def construir_capitulo4(doc):
             "De razón (0% a 100%)"
         ],
         [
-            "**Variable Dependiente:**\nGestión de movimientos de vacunas",
+            "**Variable Dependiente:**\nGestión de movimientos mensuales de vacunas",
             "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
             "3. Satisfacción del usuario",
             "Aceptación del proceso operativo (AP: reactivos AP-01 a AP-04)\n\nUtilidad percibida para la gestión (UP: reactivos UP-01 a UP-04)",
@@ -815,7 +815,7 @@ def construir_capitulo4(doc):
     agregar_parrafo(
         doc,
         "El primer indicador de la dimensión oportunidad de procesamiento, correspondiente al tiempo promedio de "
-        "registro de movimientos de vacunas para el operador i, se calculó mediante la Ecuación 1:",
+        "registro de movimientos mensuales de vacunas para el operador i, se calculó mediante la Ecuación 1:",
         sangria=True
     )
     insertar_ecuacion_centrada(doc, MATHML_TREG, numero_eq=1)
@@ -1087,7 +1087,7 @@ def construir_capitulo4(doc):
         "umbral de aceptación de 0.80 que el presente estudio adopta como criterio propio, más estricto que el mínimo "
         "de 0.5823 fijado por Tristán-López (2008) para tres jueces. Los Instrumentos N.° 01 y N.° 02 no se "
         "someten a juicio de contenido, por cuanto no son escalas sino fichas de registro: su validez se sustenta en el "
-        "protocolo de medición de movimientos de vacunas (PMMV), en el coeficiente de correlación intraclase ICC(2,1) "
+        "protocolo de medición de movimientos mensuales de vacunas (PMMV), en el coeficiente de correlación intraclase ICC(2,1) "
         "mayor o igual a 0.75 para la ficha cronométrica y en el kappa de Cohen mayor o igual a 0.80 para la ficha de "
         "cotejo documental. Corresponde explicitar una consecuencia aritmética del valor c = 2 sobre el umbral de "
         "aceptación: con tres jueces y criterios dicotómicos, la Ecuación 8 solo puede adoptar cuatro valores, 0, 0.333, "

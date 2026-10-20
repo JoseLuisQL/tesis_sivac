@@ -70,7 +70,7 @@ def construir_capitulo3(doc):
         "software bajo XP ni las características de calidad de ISO/IEC 25010 constituyen dimensiones estadísticas de la "
         "variable independiente, sino marcos ingenieriles de construcción y aseguramiento de calidad que garantizan la "
         "integridad funcional y operativa del artefacto antes de contrastar su efecto sobre la gestión de movimientos "
-        "de vacunas.",
+        "mensuales de vacunas.",
         sangria=True
     )
 
@@ -246,14 +246,14 @@ def construir_capitulo3(doc):
     )
 
     # --------------------------------------------------------------------------
-    # 3.1.2. Gestión de movimientos de vacunas
+    # 3.1.2. Gestión de movimientos mensuales de vacunas
     # --------------------------------------------------------------------------
-    agregar_titulo_3(doc, "3.1.2. Gestión de movimientos de vacunas")
+    agregar_titulo_3(doc, "3.1.2. Gestión de movimientos mensuales de vacunas")
 
     agregar_titulo_4(doc, "3.1.2.1. Cadena de frío e inmunizaciones en el sistema de salud pública")
     agregar_parrafo(
         doc,
-        "La gestión de movimientos de vacunas comprende el conjunto de procesos técnicos, administrativos y logísticos "
+        "La gestión de movimientos mensuales de vacunas comprende el conjunto de procesos técnicos, administrativos y logísticos "
         "destinados a planificar, recepcionar, conservar, distribuir y controlar las existencias de productos "
         "inmunobiológicos e insumos complementarios a través de los distintos niveles de la red sanitaria (Ministerio de Salud, 2022, "
         "p. 14; World Health Organization, 2021). Debido a su naturaleza termolábil, las vacunas requieren conservarse de manera ininterrumpida "
@@ -330,7 +330,7 @@ def construir_capitulo3(doc):
     agregar_parrafo(
         doc,
         "La oportunidad de procesamiento se define como la capacidad operativa del sistema de gestión logística para "
-        "ejecutar el registro transaccional de los movimientos de vacunas y la emisión de los documentos oficiales "
+        "ejecutar el registro transaccional de los movimientos mensuales de vacunas y la emisión de los documentos oficiales "
         "de despacho en el menor tiempo posible, eliminando los retrasos administrativos que postergan la toma de "
         "decisiones sanitarias (Dang et al., 2024). En entornos donde el control se realiza manualmente, el personal "
         "de enfermería invierte extensas jornadas en verificar saldos anteriores en folios físicos, calcular "
@@ -419,7 +419,7 @@ def construir_capitulo3(doc):
         "son comprensibles, intuitivas y fluidas, minimizando la carga cognitiva impuesta por los formatos manuales; y (b) "
         "el indicador Utilidad percibida (UP), el cual operacionaliza directamente la subescala de utilidad en el desempeño "
         "laboral, midiendo en qué medida el operador sanitario juzga que el sistema web SIVAC mejora el control de los "
-        "movimientos de vacunas, acelera la emisión de comprobantes, erradica los descuadres de kardex y favorece la "
+        "movimientos mensuales de vacunas, acelera la emisión de comprobantes, erradica los descuadres de kardex y favorece la "
         "disponibilidad biológica institucional. Esta fundamentación concuerda plenamente con los hallazgos empíricos de "
         "Hussain et al. (2025, p. 8), quienes comprobaron en personal de enfermería de establecimientos públicos que la "
         "facilidad de uso percibida actúa como predictor directo cardinal de la aceptación del sistema (coeficiente "
@@ -491,14 +491,14 @@ def construir_capitulo3(doc):
         [
             "Satisfacción del usuario",
             "Utilidad percibida (UP)",
-            "Operacionaliza el grado en que el operador considera que SIVAC mejora su desempeño laboral en el control de movimientos de vacunas bajo el modelo TAM (Davis, 1989; Hussain et al., 2025; Luo et al., 2024).",
+            "Operacionaliza el grado en que el operador considera que SIVAC mejora su desempeño laboral en el control de movimientos mensuales de vacunas bajo el modelo TAM (Davis, 1989; Hussain et al., 2025; Luo et al., 2024).",
             "Puntaje Likert de 1 a 5 (Escala ordinal)"
         ]
     ]
     agregar_tabla_datos(
         doc,
         numero="1",
-        titulo="Dimensiones, indicadores y escalas de medición de la gestión de movimientos de vacunas",
+        titulo="Dimensiones, indicadores y escalas de medición de la gestión de movimientos mensuales de vacunas",
         encabezados=headers_t1,
         filas=filas_t1,
         nota="Síntesis de la estructura dimensional y operacional de la variable dependiente basada en Dang et al. (2024), Chekol et al. (2023) e integrando el modelo de éxito de sistemas de información con el Modelo de Aceptación Tecnológica (TAM) de Davis (1989) y la evidencia empírica de Hussain et al. (2025) y Luo et al. (2024) conforme a la decisión metodológica DEC-007.",

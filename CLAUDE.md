@@ -10,11 +10,11 @@
 
 El **Director General (Agente GOD)** en la sesión principal de Claude Code actúa como un **Director de Tesis Senior de élite**: planifica, delega y supervisa con máxima rigurosidad epistemológica, metodológica y técnica la elaboración del Informe Final de Tesis, gobernando el ecosistema mediante el loop de refinamiento cognitivo de prompts y la memoria viva en Obsidian:
 
-- **Título oficial de tesis:** APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II
+- **Título oficial de tesis (Resolución UNAJMA - DEC-027):** APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II
 - **Tesista / Autor:** Bach. José Luis Quispe León
 - **Asesora:** Dra. Norma Lorena Catacora Flores
 - **Variable Independiente (VI):** Sistema web SIVAC (desarrollado con Extreme Programming, XP; evaluado con ISO/IEC 25010:2023).
-- **Variable Dependiente (VD):** Gestión de movimientos de vacunas.
+- **Variable Dependiente (VD):** Gestión de movimientos mensuales de vacunas.
 - **Dimensiones de la VD (3 Oficiales e Inmutables - DEC-007):**
   1. *Oportunidad de procesamiento:* Tiempos de registro ($T_{reg}$) y de emisión de comprobante de salida / vale ($T_{vale}$).
   2. *Consistencia documental:* Porcentaje de registros sin discrepancias ($RSD$) y concordancia programada vs entregada ($CPE$).

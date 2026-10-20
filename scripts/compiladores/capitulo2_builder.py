@@ -494,7 +494,7 @@ def construir_capitulo2(doc):
         doc,
         "Los antecedentes revisados evidencian que los sistemas digitales de información logística contribuyen a mejorar "
         "la oportunidad de registro, la trazabilidad por lote y la disponibilidad de insumos sanitarios. Sin embargo, se "
-        "identificó una limitada evidencia empírica aplicada específicamente a la gestión de movimientos de vacunas en "
+        "identificó una limitada evidencia empírica aplicada específicamente a la gestión de movimientos mensuales de vacunas en "
         "centros de acopio de una Dirección de Salud regional en el Perú, que evalúe de forma integrada tiempos "
         "cronometrados de procesamiento, consistencia documental bajo la NTS N.° 196-MINSA/DGIESP-2022 y percepción de "
         "aceptación tecnológica del usuario. Esta brecha científica y operativa justifica el desarrollo e implementación "

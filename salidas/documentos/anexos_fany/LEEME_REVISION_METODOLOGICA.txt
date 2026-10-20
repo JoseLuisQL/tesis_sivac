@@ -1,0 +1,102 @@
+SIVAC: AVISO DE REVISIÓN METODOLÓGICA
+Actualización: 19 de octubre de 2026
+
+VERSIÓN VIGENTE: EXPEDIENTE DE VALIDACIÓN v09 MIXTO (HORIZONTAL / VERTICAL) CON AJUSTES FINALES Y ALINEACIÓN DEC-027
+Ubicación: expediente_v09/
+Documentos Word (DOCX):
+- expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_01_v09.docx (57,592 bytes, SHA-256: AD41378302820140B0BA0E0F1F15A76E0A3302BDFCDC5A48E5C9C4C77F55B2F9)
+- expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_02_v09.docx (57,592 bytes, SHA-256: AD41378302820140B0BA0E0F1F15A76E0A3302BDFCDC5A48E5C9C4C77F55B2F9)
+- expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_03_v09.docx (57,592 bytes, SHA-256: AD41378302820140B0BA0E0F1F15A76E0A3302BDFCDC5A48E5C9C4C77F55B2F9)
+Documentos PDF oficiales (Word COM):
+- expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_01_v09.pdf (385,166 bytes, 18 páginas, SHA-256: F2CC5600CAED799585CCC48C679EA12E64F66A354CD83B54311A8BD7C41E3E55)
+- expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_02_v09.pdf (385,166 bytes, 18 páginas, SHA-256: F2CC5600CAED799585CCC48C679EA12E64F66A354CD83B54311A8BD7C41E3E55)
+- expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_03_v09.pdf (385,166 bytes, 18 páginas, SHA-256: F2CC5600CAED799585CCC48C679EA12E64F66A354CD83B54311A8BD7C41E3E55)
+
+ALCANCE METODOLÓGICO Y EDITORIAL DE LA VERSIÓN v09 CON AJUSTES FINALES Y DEC-027:
+El tesista dispuso la orientación horizontal (apaisada) de la sección de matrices académicas para aprovechar al máximo el ancho de página, la resolución de 6 aspectos metodológicos críticos y la armonización estricta con la Resolución de Aprobación de Grados y Títulos UNAJMA (DEC-027):
+1. Arquitectura de secciones mixta: Sección 1 en retrato vertical (Carta, Instrucciones, Matriz de Validación de 8 columnas y Decisión del perito), Sección 2 en apaisada horizontal a 14,000 dxa (Matriz de Consistencia y Operacionalización de Variables en formato APA 7 de tres líneas horizontales), y Sección 3 en retrato vertical (Ficha N.° 01, Ficha N.° 02 y Cuestionario N.° 03 con Modalidad A y Módulo complementario Modalidad B).
+2. Carta al Juez Experto (Punto 2): se erradicó la frase 'unidad de análisis dual', especificando que cada movimiento/entrega es una unidad de registro documental, y que posteriormente los resultados se consolidan en porcentajes por operador para el contraste estadístico pretest-postest.
+3. Ficha N.° 02 (Operador TRAB-01 a TRAB-14): se unificó la unidad de análisis exclusivamente en el operador evaluado para garantizar los 14 pares de observaciones de Wilcoxon.
+4. Ficha N.° 01 (Sesgo de aprendizaje): se incorporaron las reglas de casos equivalentes en complejidad pero con datos documentales diferentes, manteniendo el mismo orden de los tres ensayos en pretest y postest.
+5. Tiempo de emisión de vales (Punto final homogéneo): se unificó el término de Tvale a 'hasta que el comprobante de salida queda generado y disponible para su entrega, impresión o registro institucional', tanto en Ficha 01 como en la Matriz de Validación.
+6. Reactivos atómicos de satisfacción (Modalidad A): se implementaron los reactivos perfeccionados para AP-04 (carga operativa compatible), UP-02 (facilitación de asignación correcta), UP-03 (identificación y sustento de diferencias) y UP-04 (seguimiento oportuno de existencias en establecimientos de salud).
+7. Encuadre TAM y nuevo título de Instrumento N.° 03: se formalizó el título como 'CUESTIONARIO DE SATISFACCIÓN DEL USUARIO CON EL PROCESO OPERATIVO Y MÓDULO COMPLEMENTARIO DE ACEPTACIÓN TECNOLÓGICA DE SIVAC', explicitando en la carta que la Modalidad A evalúa la satisfacción con el proceso operativo y la Modalidad B es un anexo complementario postest bajo constructos TAM.
+8. Precisiones metodológicas: V de Aiken con regla interpretativa conjunta con observaciones cualitativas, y nota metodológica explicitando la evaluación de normalidad con Shapiro-Wilk sobre diferencias pareadas y prueba no paramétrica de rangos con signo de Wilcoxon (n = 14, alpha = 0.05).
+9. Armonización administrativa y metodológica con la Resolución UNAJMA (DEC-027): se sincronizó transversalmente la denominación oficial del proyecto y de la Variable Dependiente con la frase exacta aprobada por la Unidad de Grados y Títulos: 'GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS'. Esta modificación rige en el título general, problemas, objetivos, hipótesis, operacionalización, matrices de validación y encabezados de los tres instrumentos, blindando el expediente contra objeciones formales.
+
+Controles de calidad: 55/55 comprobaciones DOCX conformes, 16/16 comprobaciones PDF conformes (18 páginas exactas, 14 verticales y 4 horizontales, cero páginas huérfanas o en blanco), y 58/58 tests automatizados aprobados en pytest.
+
+HISTORIAL v08: EDICIÓN VERTICAL (ARCHIVADA)
+El tesista solicitó previamente ordenamiento vertical v08...
+
+ANTECEDENTE: PAQUETE COMPACTO CON SOPORTES v07
+La instrucción más reciente precisa que la guía y el certificado deben tener rejilla visible, utilizar el ancho útil de página y acompañarse de los documentos necesarios para juzgar: matriz de consistencia, tabla de operacionalización y formularios reales de recolección. El paquete conserva carta, instrucciones y certificado VD continuo de tres dimensiones, numeración corrida y un cierre. No se añaden manuales técnicos, estadística desarrollada ni baremos extensos.
+
+La v06 de cuatro páginas se conserva como copia del bloque de validación, pero por sí sola no contiene los soportes que el tesista acaba de pedir. La v05 de 33 páginas tampoco es la copia compacta de entrega solicitada.
+
+VERSIÓN PARA EXPERTO v07
+Ubicación: para_experto_v07/
+Word: EXPEDIENTE_VALIDACION_SIVAC_PARA_EXPERTO_01_v07.docx (y 02, 03).
+Paquete generado de 14 páginas: carta (1), instrucciones con guía en rejilla (2), certificado VD continuo con rejilla y cierre (3-4), matriz de consistencia (5-6), operacionalización (7), ficha de tiempos (8-9), ficha documental (10-11) y cuestionario con modalidades diferenciadas (12-14). Sin manuales estadísticos ni baremos añadidos.
+
+Las tablas usan el ancho útil real entre márgenes; rejilla en formularios, matrices académicas con estilo APA. Se conservan los reactivos y fuentes. Numeración del cuestionario corregida; Modalidad A tiene firmas propias y puede aplicarse en pretest sin la Modalidad B; esta última tiene código y fecha propios para postest.
+
+Producción técnica cerrada: tres Word idénticos de 54,707 bytes, SHA-256 inicial 7658a8faf49ddb8c; tres PDF idénticos de 14 páginas, sin páginas vacías. PDF 01 exportado con Word; 02 y 03 son copias controladas porque los Word son idénticos y los jueces quedan en blanco. Verificación final: 46/46 controles por Word y 36/36 pruebas de regresión. Esto no equivale a validación de contenido ya emitida por jueces reales.
+
+No es obligatorio convertir los enunciados en preguntas: las afirmaciones de la escala Likert se conservan literalmente. Las fichas de tiempo y cotejo mantienen campos objetivos y sus reglas reales. Esta revisión de contenido/formato no equivale a juicios ya emitidos por expertos.
+
+HISTORIAL v06 (BLOQUE DE VALIDACIÓN SIN LOS SOPORTES REQUERIDOS EN LA ÚLTIMA INSTRUCCIÓN)
+
+La versión compacta v06 está en la subcarpeta compacto_v06/, con tres Word y sus PDF de cuatro páginas por ejemplar: carta (p. 1), instrucciones con guía en tabla (p. 2) y certificado continuo de la VD (pp. 3-4). La tabla contiene las tres dimensiones con numeración 1-12 y un único cierre: dos componentes esenciales de Oportunidad, dos de Consistencia y ocho AP/UP literales de Satisfacción. No contiene anexos, matrices ni cuestionarios repetidos.
+
+La VI permanece dicotómica y no se agrega una hoja para calificarla. Los formatos se emiten en blanco para recoger el juicio de los expertos, no como validación ya realizada. El alcance del juicio corresponde a los elementos e ítems presentados; las fichas fuente se conservan para consulta separada.
+
+Archivos actuales:
+compacto_v06/EXPEDIENTE_VALIDACION_SIVAC_COMPACTO_EXPERTO_01_v06.docx
+compacto_v06/EXPEDIENTE_VALIDACION_SIVAC_COMPACTO_EXPERTO_02_v06.docx
+compacto_v06/EXPEDIENTE_VALIDACION_SIVAC_COMPACTO_EXPERTO_03_v06.docx
+Los PDF están en la misma subcarpeta.
+
+HISTORIAL v05 (DESCARTADO COMO COPIA DE ENTREGA POR SU EXTENSIÓN)
+La v04 solo contenía certificado para Satisfacción; por tanto, NO constituye el expediente completo solicitado para evaluar las tres dimensiones. La v05 ya contiene las tres hojas firmables:
+- Certificado 01: Oportunidad de procesamiento, 12 elementos reales de la ficha y protocolo.
+- Certificado 02: Consistencia documental, 20 elementos reales, con los ocho criterios documentales separados.
+- Certificado 03: Satisfacción del usuario, ocho reactivos AP/UP literales de la Modalidad A.
+
+Archivos Word:
+EXPEDIENTE_VALIDACION_SIVAC_COMPLETO_EXPERTO_01_v05.docx
+EXPEDIENTE_VALIDACION_SIVAC_COMPLETO_EXPERTO_02_v05.docx
+EXPEDIENTE_VALIDACION_SIVAC_COMPLETO_EXPERTO_03_v05.docx
+
+PDF de control: subcarpeta revision_v05, 33 páginas por ejemplar. Carta e instrucciones ocupan una página cada una. Los documentos contienen también la hoja informativa de la VI, panorama de las tres dimensiones, cuestionario completo, matrices y fichas.
+
+Control independiente de dirección: 77/77 comprobaciones en cada Word y 16/16 pruebas del expediente. Además, 46/46 pruebas del motor y formatos. Se comprobó la presencia íntegra de los 32 textos de evaluación de las fichas, los tres títulos y cierres propios, cuatro ecuaciones narrativas nativas, ausencia de fórmulas en celdas y de bordes verticales. Los tres Word tienen contenido idéntico y las calificaciones e identidades del juez están en blanco.
+
+Esto acredita la producción técnica del expediente para revisión, no la validación ya realizada por los expertos. Las fichas, matrices y versiones anteriores se conservan. La cronología de aplicación 2025 de la fuente debe confirmarse antes de utilizar los formatos en campo; no se ha cambiado por cuenta propia.
+
+HISTORIAL DE VERSIONES ANTERIORES
+Registro inicial: 18 de octubre de 2026
+
+Los expedientes terminados en _v03.docx NO deben entregarse todavía a jueces ni recomendarse para impresión. Se conservan únicamente como historial de trabajo.
+
+Motivos de la observación:
+1. Presentan utilidad percibida y facilidad de uso del software como dimensiones de la variable independiente, aunque la tesis operacionaliza SIVAC como intervención tecnológica dicotómica.
+2. Incorporan ocho preguntas nuevas de percepción sobre tiempos y consistencia que no pertenecen a las fichas originales.
+3. Omiten el Cuestionario N.° 03 íntegro y tienen problemas de composición en la matriz de consistencia.
+
+Se generaron tres propuestas de revisión identificadas como EXPEDIENTE_REVISION_SIVAC_FANY_EXPERTO_01_v04.docx, EXPEDIENTE_REVISION_SIVAC_FANY_EXPERTO_02_v04.docx y EXPEDIENTE_REVISION_SIVAC_FANY_EXPERTO_03_v04.docx. Los PDF de control se encuentran en revision_v04/. No se debe interpretar su nombre ni su existencia como aprobación institucional o como validación ya realizada.
+
+Control técnico del 19 de octubre de 2026: tres DOCX idénticos, 48 de 48 comprobaciones del generador por archivo y 8 pruebas de regresión satisfactorias. Se comprobaron cuatro ecuaciones nativas de Word, ausencia de bordes verticales activos y conservación del protocolo de correlaciones interítem e intervalo de confianza de Feldt. Estos controles no acreditan resultados empíricos ni aprobación del tesista.
+
+El instrumento fuente conserva 2025 en la fecha del participante, mientras los campos del juez se emiten para 2026. Esta cronología debe ratificarse antes de la versión para aplicación. El piloto externo de 15 operadores se presenta como procedimiento previsto; no se acredita que se haya ejecutado.
+
+El alcance conservador separa:
+- Hoja informativa de la intervención SIVAC: condición sin sistema y condición con sistema, con escala nominal dicotómica. No es una escala psicométrica.
+- Certificado de contenido de los ocho reactivos reales de satisfacción con el proceso operativo (Instrumento N.° 03, Modalidad A).
+- Cuestionario completo, matrices y fichas de registro como piezas diferenciadas.
+
+Las fichas de tiempo y de revisión documental producen minutos y porcentajes, no respuestas de percepción. Pueden ser objeto de revisión de contenido/protocolo; la confiabilidad interobservador y la validez de contenido son evidencias diferentes.
+
+La versión definitiva requiere revisión expresa del tesista. La evaluación, las observaciones y la firma de los jueces deben ser reales y permanecen en blanco. Ningún archivo de esta carpeta acredita por sí solo que los instrumentos hayan sido validados.
+
+Las fuentes originales, los instrumentos, las matrices y las versiones previas se preservan sin modificaciones.

@@ -20,7 +20,7 @@ def construir_introduccion(doc):
     agregar_parrafo(
         doc,
         "El propósito de esta investigación fue determinar en qué medida la aplicación del sistema web SIVAC "
-        "mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud "
+        "mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud "
         "Apurímac II, evaluando los cambios observados antes y después de la intervención tecnológica. La "
         "trazabilidad logística de los productos biológicos constituye un componente crítico para la salud "
         "pública, dado que las vacunas son insumos termolábiles sujetos a estrictos parámetros de conservación "
@@ -35,7 +35,7 @@ def construir_introduccion(doc):
     agregar_parrafo(
         doc,
         "Previo a la intervención tecnológica ejecutada en el presente estudio, la administración de movimientos "
-        "de vacunas en la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), cuya jurisdicción "
+        "mensuales de vacunas en la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), cuya jurisdicción "
         "comprende las provincias de Andahuaylas y Chincheros a través de ocho centros de acopio (el almacén "
         "especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud), "
         "operaba mediante procedimientos manuales basados en libros físicos de kardex, formatos impresos de "
@@ -54,7 +54,7 @@ def construir_introduccion(doc):
         "cuatro fases iterativas de la metodología ágil Extreme Programming: planificación, diseño, codificación "
         "y pruebas, verificando sus atributos de calidad técnica bajo la norma internacional ISO/IEC 25010:2023. "
         "La arquitectura cliente-servidor desacoplada del sistema se diseñó para sistematizar la gestión de "
-        "movimientos de vacunas articulando tres dimensiones fundamentales: la oportunidad de procesamiento, "
+        "movimientos mensuales de vacunas articulando tres dimensiones fundamentales: la oportunidad de procesamiento, "
         "medida a través del tiempo de registro de movimientos y del tiempo de emisión de vales de salida; la "
         "consistencia documental, evaluada mediante el porcentaje de registros sin discrepancias y la concordancia "
         "entre la cantidad programada y la cantidad entregada; y la satisfacción del usuario, analizada a partir "
@@ -85,7 +85,7 @@ def construir_introduccion(doc):
         "históricamente manual hacia un flujo digital auditable y centralizado. La implementación del sistema web "
         "SIVAC tuvo como propósito proporcionar a la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II) "
         "una plataforma tecnológica propia para centralizar el control de lotes, automatizar el kardex y fortalecer "
-        "la trazabilidad documental de los movimientos de vacunas hacia las redes y microredes de salud; asimismo, "
+        "la trazabilidad documental de los movimientos mensuales de vacunas hacia las redes y microredes de salud; asimismo, "
         "en el plano metodológico, estableció una estructura de medición e instrumentación replicable para evaluar "
         "intervenciones de sistemas de información logística sanitaria en redes de salud de alta dispersión "
         "geográfica.",
@@ -241,13 +241,13 @@ def construir_capitulo1(doc):
         "sistema web SIVAC bajo la metodología ágil Extreme Programming y el estándar ISO/IEC "
         "25010:2023, con el propósito de reducir las discrepancias documentales, disminuir la "
         "probabilidad de errores de transcripción e incorporar controles preventivos frente a "
-        "inconsistencias en la gestión de movimientos de vacunas en la DISA Apurímac II.",
+        "inconsistencias en la gestión de movimientos mensuales de vacunas en la DISA Apurímac II.",
         sangria=True
     )
 
     agregar_parrafo(
         doc,
-        "Para efectos de esta investigación, la variable dependiente gestión de movimientos de vacunas "
+        "Para efectos de esta investigación, la variable dependiente gestión de movimientos mensuales de vacunas "
         "comprende exclusivamente el registro, validación, trazabilidad documental y emisión de vales de "
         "salida vinculados a los ingresos, salidas, transferencias y saldos de biológicos en los ocho "
         "centros de acopio de la DISA Apurímac II. La conservación termodinámica de los equipos "
@@ -262,16 +262,16 @@ def construir_capitulo1(doc):
     agregar_titulo_3(doc, "1.2.1. Problema general")
     agregar_parrafo(
         doc,
-        "¿En qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos de "
+        "¿En qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de "
         "vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
         sangria=True
     )
 
     agregar_titulo_3(doc, "1.2.2. Problemas específicos")
     problemas_esp = [
-        "¿En qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
-        "¿En qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
-        "¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?"
+        "¿En qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+        "¿En qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+        "¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?"
     ]
     for pe in problemas_esp:
         agregar_item_lista(doc, pe, simbolo="•")
@@ -323,7 +323,7 @@ def construir_capitulo1(doc):
         "lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141), "
         "adaptado a una población censal de 14 operadores especializados (N = n = 14). Asimismo, la "
         "investigación diseñó tres instrumentos de medición específicos para evaluar el flujo de "
-        "movimientos de vacunas (una ficha de observación de tiempos cronometrados, una guía de "
+        "movimientos mensuales de vacunas (una ficha de observación de tiempos cronometrados, una guía de "
         "cotejo de ocho criterios normativos de integridad documental y un cuestionario psicométrico "
         "de satisfacción), estableciendo una distinción rigurosa entre: (a) la validez de contenido, "
         "cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado "
@@ -375,16 +375,16 @@ def construir_capitulo1(doc):
     agregar_parrafo(
         doc,
         "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de "
-        "movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud "
+        "movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud "
         "Apurímac II.",
         sangria=True
     )
 
     agregar_titulo_3(doc, "1.4.2. Objetivos específicos")
     objetivos_esp = [
-        "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-        "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-        "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
+        "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+        "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+        "Determinar en qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
     ]
     for oe in objetivos_esp:
         agregar_item_lista(doc, oe, simbolo="•")
@@ -395,7 +395,7 @@ def construir_capitulo1(doc):
     agregar_titulo_3(doc, "1.5.1. Hipótesis general")
     agregar_parrafo(
         doc,
-        "La aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos de "
+        "La aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de "
         "vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada "
         "de manera integrada a través de la reducción de los tiempos de procesamiento, el incremento "
         "de la consistencia documental y el incremento de la satisfacción y aceptación del sistema "
@@ -415,9 +415,9 @@ def construir_capitulo1(doc):
 
     agregar_titulo_3(doc, "1.5.2. Hipótesis específicas")
     hipotesis_esp = [
-        "**H1:** La aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en la reducción del tiempo de registro de movimientos y del tiempo de emisión de vales de salida.",
-        "**H2:** La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento del porcentaje de registros sin discrepancias y de la concordancia entre la cantidad programada y la cantidad entregada.",
-        "**H3:** La aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario en la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento de la aceptación del proceso y de la utilidad percibida."
+        "**H1:** La aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en la reducción del tiempo de registro de movimientos y del tiempo de emisión de vales de salida.",
+        "**H2:** La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento del porcentaje de registros sin discrepancias y de la concordancia entre la cantidad programada y la cantidad entregada.",
+        "**H3:** La aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento de la aceptación del proceso y de la utilidad percibida."
     ]
     for he in hipotesis_esp:
         agregar_item_lista(doc, he, simbolo="•")
@@ -437,10 +437,10 @@ def construir_capitulo1(doc):
         sangria=True
     )
 
-    agregar_titulo_3(doc, "1.6.2. Variable dependiente: Gestión de movimientos de vacunas")
+    agregar_titulo_3(doc, "1.6.2. Variable dependiente: Gestión de movimientos mensuales de vacunas")
     agregar_parrafo(
         doc,
-        "La gestión de movimientos de vacunas comprende el proceso técnico-administrativo de "
+        "La gestión de movimientos mensuales de vacunas comprende el proceso técnico-administrativo de "
         "registro, validación, trazabilidad en kardex y emisión de vales de salida de los productos "
         "biológicos en los centros de acopio de la DISA Apurímac II. Se estructura en tres "
         "dimensiones oficiales: (1) oportunidad de procesamiento, evaluada mediante el tiempo de "
@@ -471,7 +471,7 @@ def construir_capitulo1(doc):
         doc,
         "En cuanto a la delimitación temática y a las limitaciones operativas controladas durante "
         "el estudio, la investigación se enfocó exclusivamente en la gestión logística y documental "
-        "de movimientos de vacunas en sus tres dimensiones oficiales (oportunidad de procesamiento, "
+        "de movimientos mensuales de vacunas en sus tres dimensiones oficiales (oportunidad de procesamiento, "
         "consistencia documental y satisfacción del usuario), sin abarcar la termodinámica física de "
         "los equipos frigoríficos, el acto clínico de vacunación nominal de pacientes ni la ejecución "
         "presupuestal financiera. Asimismo, las fluctuaciones de conectividad en centros periféricos "

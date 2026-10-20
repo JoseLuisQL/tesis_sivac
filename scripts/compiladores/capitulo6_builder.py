@@ -99,11 +99,11 @@ def construir_capitulo6_y_final(doc):
     # ==========================================================================
     agregar_titulo_1(doc, "CAPÍTULO VI: DISCUSIÓN")
 
-    # Bloque Argumentativo 1: Objetivo General (Gestión de movimientos de vacunas)
+    # Bloque Argumentativo 1: Objetivo General (Gestión de movimientos mensuales de vacunas)
     agregar_parrafo(
         doc,
         "En relación con el objetivo general de la investigación, orientado a determinar en qué medida la aplicación "
-        "del sistema web SIVAC mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la "
+        "del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la "
         "Dirección de Salud Apurímac II, la contrastación inferencial de la hipótesis general se encuentra estructurada "
         "metodológicamente a través de la integración convergente de los contrastes de las tres dimensiones específicas, "
         "cuyo reporte numérico definitivo permanece [Pendiente de inserción de estadísticos descriptivos, prueba de "
@@ -152,7 +152,7 @@ def construir_capitulo6_y_final(doc):
     agregar_parrafo(
         doc,
         "Respecto al primer objetivo específico, orientado a determinar en qué medida la aplicación del sistema web SIVAC "
-        "mejora la oportunidad de procesamiento en los movimientos de vacunas del personal de inmunizaciones de la Dirección "
+        "mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección "
         "de Salud Apurímac II, el espacio estructurado para las variaciones observadas en pre-test y post-test de los "
         "indicadores de tiempo de registro (T_reg) y tiempo de emisión de vale (T_vale) permanece [Pendiente de inserción "
         "de estadísticos descriptivos, prueba de Wilcoxon Z, p-valor bilateral con ajuste Holm-Bonferroni y tamaño del "
@@ -196,7 +196,7 @@ def construir_capitulo6_y_final(doc):
     agregar_parrafo(
         doc,
         "En cuanto al segundo objetivo específico, enfocado en determinar en qué medida la aplicación del sistema web SIVAC "
-        "mejora la consistencia documental de los registros de movimientos de vacunas en el personal de inmunizaciones de la "
+        "mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la "
         "Dirección de Salud Apurímac II, el resultado propio de la intervención en los indicadores de porcentaje de "
         "registros sin discrepancias (RSD) y concordancia de cantidad programada versus entregada (CPE) en ventanas "
         "simétricas de 30 días permanece [Pendiente de inserción de estadísticos descriptivos, prueba de Wilcoxon Z, "
@@ -237,7 +237,7 @@ def construir_capitulo6_y_final(doc):
     agregar_parrafo(
         doc,
         "Finalmente, respecto al tercer objetivo específico, dirigido a determinar en qué medida la aplicación del sistema "
-        "web SIVAC mejora la satisfacción del usuario respecto a la gestión de movimientos de vacunas en el personal de "
+        "web SIVAC mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de "
         "inmunizaciones de la Dirección de Salud Apurímac II, el resultado propio de la intervención en los indicadores "
         "de aceptación del proceso (AP) y utilidad percibida (UP) bajo el Modelo de Aceptación Tecnológica (TAM; Davis, "
         "1989) se mantiene [Pendiente de inserción de estadísticos descriptivos, prueba de Wilcoxon Z, p-valor bilateral "
@@ -283,7 +283,7 @@ def construir_capitulo6_y_final(doc):
     agregar_parrafo(
         doc,
         "**Primera.** En relación con el objetivo general, la evaluación global de la aplicación del sistema web SIVAC "
-        "para mejorar la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud "
+        "para mejorar la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud "
         "Apurímac II (N = n = 14) se determina mediante la integración conjunta de los resultados de las tres dimensiones "
         "específicas (oportunidad de procesamiento, consistencia documental y satisfacción/aceptación del usuario), sin "
         "emplear un p-valor global único sobre escalas heterogéneas, e interpretando los hallazgos como cambios asociados "
@@ -295,8 +295,8 @@ def construir_capitulo6_y_final(doc):
     agregar_parrafo(
         doc,
         "**Segunda.** En relación con el primer objetivo específico, la evaluación de la oportunidad de procesamiento en "
-        "los movimientos de vacunas del personal de inmunizaciones de la Dirección de Salud Apurímac II vincula "
-        "directamente sus dos indicadores cronométricos: el tiempo de registro de movimientos de vacunas (mediana/media "
+        "la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II vincula "
+        "directamente sus dos indicadores cronométricos: el tiempo de registro de movimientos mensuales de vacunas (mediana/media "
         "pre-test = [Pendiente] min vs. post-test = [Pendiente] min) y el tiempo de emisión de comprobante de salida o "
         "vale (mediana/media pre-test = [Pendiente] min vs. post-test = [Pendiente] min; Tabla 13), cuya contrastación "
         "inferencial permanece [Pendiente de cómputo del estadístico W/Z de Wilcoxon, p-valor bilateral con ajuste de "
@@ -306,8 +306,8 @@ def construir_capitulo6_y_final(doc):
 
     agregar_parrafo(
         doc,
-        "**Tercera.** En relación con el segundo objetivo específico, la evaluación de la consistencia documental de los "
-        "registros de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II se "
+        "**Tercera.** En relación con el segundo objetivo específico, la evaluación de la consistencia documental en la "
+        "gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II se "
         "establece a partir de sus dos indicadores auditados en ventanas de 30 días bajo la NTS N.° 196-MINSA/DGIESP-2022: "
         "el porcentaje de registros sin discrepancias bajo los ocho criterios normativos (mediana/media pre-test = "
         "[Pendiente]% vs. post-test = [Pendiente]%) y la concordancia de cantidad programada versus entregada "
@@ -319,8 +319,8 @@ def construir_capitulo6_y_final(doc):
 
     agregar_parrafo(
         doc,
-        "**Cuarta.** En relación con el tercer objetivo específico, la evaluación de la satisfacción del usuario respecto "
-        "a la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II se "
+        "**Cuarta.** En relación con el tercer objetivo específico, la evaluación de la satisfacción del usuario en la "
+        "gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II se "
         "determina mediante la evolución de sus dos indicadores psicométricos bajo el Modelo de Aceptación Tecnológica "
         "(TAM): la aceptación del proceso (mediana/media pre-test = [Pendiente] pts vs. post-test = [Pendiente] pts) y "
         "la utilidad percibida (mediana/media pre-test = [Pendiente] pts vs. post-test = [Pendiente] pts; Tabla 15), "
@@ -482,30 +482,30 @@ def construir_capitulo6_y_final(doc):
     ]
     filas_t18 = [
         [
-            "**Problema General:**\n¿En qué medida la aplicación del sistema web SIVAC mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
-            "**Objetivo General:**\nDeterminar en qué medida la aplicación del sistema web SIVAC mejora la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-            "**Hipótesis General:**\nLa aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Problema General:**\n¿En qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+            "**Objetivo General:**\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Hipótesis General:**\nLa aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
             "**Variable Independiente (VI):**\nIntervención tecnológica dicotómica:\n\n• Pre-intervención manual (X₀): Kardex manual físico, libros de registro y hojas de cálculo dispersas\n\n• Post-intervención tecnológica (X₁): Sistema web SIVAC con arquitectura transaccional, regla FEFO y emisión digital de vales (desarrollado con Extreme Programming; evaluado con ISO/IEC 25010:2023).",
             "**Tipo y Nivel:**\nAplicada, explicativo\n\n**Método y Enfoque:**\nHipotético-deductivo, cuantitativo\n\n**Criterio de Integración HG:**\nIntegración convergente de las hipótesis específicas H1, H2 y H3 sin agregar escalas heterogéneas en un p-valor global artificial"
         ],
         [
-            "**Problema Específico 1:**\n¿En qué medida la aplicación del sistema web SIVAC mejora la oportunidad de procesamiento en los movimientos de vacunas del personal de inmunizaciones de la Dirección de Salud Apurímac II?",
-            "**Objetivo Específico 1:**\nDeterminar en qué medida la aplicación del sistema web SIVAC mejora la oportunidad de procesamiento en los movimientos de vacunas del personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-            "**Hipótesis Específica 1:**\nLa aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en los movimientos de vacunas del personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-            "**Variable Dependiente (VD):**\nGestión de movimientos de vacunas\n\n**Dimensión 1:** Oportunidad de procesamiento\n• Tiempo de registro de movimiento de vacunas (T_reg; minutos decimales)\n• Tiempo de emisión de comprobante de salida o vale (T_vale; minutos decimales)",
-            "**Diseño de Investigación:**\nPreexperimental con pre-test y post-test en un solo grupo (GE: O₁ - X - O₂)\n\n**Unidad de Análisis:**\nGestión de movimientos de vacunas en la red de frío\n\n**Unidad de Observación Primaria:**\nTransacciones logísticas, registros de kardex, despachos y cuestionarios\n\n**Sujetos de Agregación Pareada:**\nPoblación censal conformada por N = n = 14 operadores en 8 centros de acopio"
+            "**Problema Específico 1:**\n¿En qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+            "**Objetivo Específico 1:**\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Hipótesis Específica 1:**\nLa aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Variable Dependiente (VD):**\nGestión de movimientos mensuales de vacunas\n\n**Dimensión 1:** Oportunidad de procesamiento\n• Tiempo de registro de movimiento de vacunas (T_reg; minutos decimales)\n• Tiempo de emisión de comprobante de salida o vale (T_vale; minutos decimales)",
+            "**Diseño de Investigación:**\nPreexperimental con pre-test y post-test en un solo grupo (GE: O₁ - X - O₂)\n\n**Unidad de Análisis:**\nGestión de movimientos mensuales de vacunas en la red de frío\n\n**Unidad de Observación Primaria:**\nTransacciones logísticas, registros de kardex, despachos y cuestionarios\n\n**Sujetos de Agregación Pareada:**\nPoblación censal conformada por N = n = 14 operadores en 8 centros de acopio"
         ],
         [
-            "**Problema Específico 2:**\n¿En qué medida la aplicación del sistema web SIVAC mejora la consistencia documental de los registros de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
-            "**Objetivo Específico 2:**\nDeterminar en qué medida la aplicación del sistema web SIVAC mejora la consistencia documental de los registros de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-            "**Hipótesis Específica 2:**\nLa aplicación del sistema web SIVAC mejora significativamente la consistencia documental de los registros de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Problema Específico 2:**\n¿En qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+            "**Objetivo Específico 2:**\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Hipótesis Específica 2:**\nLa aplicación del sistema web SIVAC mejora significativamente la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
             "**Dimensión 2:** Consistencia documental\n• Porcentaje de registros sin discrepancias (RSD; porcentaje % bajo 8 criterios normativos)\n• Concordancia de cantidad programada versus entregada (CPE; porcentaje %)",
             "**Técnicas de Recolección:**\n• Observación directa sistemática\n• Análisis y auditoría documental\n• Encuesta estructurada\n\n**Instrumentos Oficiales:**\n• Ficha de observación de tiempos (Inst. 01)\n• Guía de cotejo documental (Inst. 02)\n• Cuestionario de satisfacción y aceptación tecnológica (Inst. 03, Modalidad A)"
         ],
         [
-            "**Problema Específico 3:**\n¿En qué medida la aplicación del sistema web SIVAC mejora la satisfacción del usuario respecto a la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
-            "**Objetivo Específico 3:**\nDeterminar en qué medida la aplicación del sistema web SIVAC mejora la satisfacción del usuario respecto a la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
-            "**Hipótesis Específica 3:**\nLa aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario respecto a la gestión de movimientos de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Problema Específico 3:**\n¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+            "**Objetivo Específico 3:**\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+            "**Hipótesis Específica 3:**\nLa aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
             "**Dimensión 3:** Satisfacción del usuario\n• Aceptación del proceso (AP; reactivos AP-01 a AP-04, escala ordinal Likert 1 a 5, puntuación sumatoria 4 a 20)\n• Utilidad percibida (UP; reactivos UP-01 a UP-04, escala ordinal Likert 1 a 5, puntuación sumatoria 4 a 20)\n• Total de la dimensión sobre los 8 ítems de la Modalidad A: 8 a 40",
             "**Procesamiento y Análisis:**\n• Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7\n• Normalidad: Prueba de Shapiro-Wilk (n = 14)\n• Inferencial: Prueba de rangos con signo de Wilcoxon pareada (alfa = 0.05 bilateral)\n• Control FWER: Ajuste de p-valor mediante Holm-Bonferroni\n• Tamaño del efecto: r = |Z| / sqrt(N)"
         ]
@@ -794,7 +794,7 @@ def construir_capitulo6_y_final(doc):
         "juez. El panel estará integrado por tres docentes universitarios con grado de Magíster y colegiatura vigente en "
         "el Colegio de Ingenieros del Perú, cuya designación se formalizará mediante las cartas de invitación y "
         "aceptación correspondientes. Los Instrumentos N.° 01 y N.° 02 no se someten a juicio de contenido: su validez "
-        "se sustenta en el protocolo de medición de movimientos de vacunas, en el coeficiente de correlación intraclase "
+        "se sustenta en el protocolo de medición de movimientos mensuales de vacunas, en el coeficiente de correlación intraclase "
         "ICC(2,1) mayor o igual a 0.75 para la ficha cronométrica y en el kappa de Cohen mayor o igual a 0.80 para la "
         "ficha de cotejo. La Modalidad B del Instrumento N.° 03 no recibe certificado.",
         sangria=True
@@ -1036,7 +1036,7 @@ def construir_capitulo6_y_final(doc):
     filas_a6_1 = [
         [
             "Título del Proyecto",
-            "“APLICACIÓN DEL SISTEMA «SIVAC» PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II”."
+            "“APLICACIÓN DEL SISTEMA «SIVAC» PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II”."
         ],
         [
             "Investigador y Asesora",
