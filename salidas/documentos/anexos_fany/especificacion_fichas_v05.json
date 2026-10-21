@@ -1,0 +1,223 @@
+{
+  "version": "v05",
+  "fecha": "2026-10-19",
+  "agente": "especialista-instrumentos",
+  "proposito": "Inventarios de evaluacion de contenido y claridad para las hojas de validacion de los Instrumentos N.01 y N.02, elaborados exclusivamente con elementos, criterios y procedimientos existentes en las fichas oficiales. Cada fila sera sometida a los criterios dicotomicos Pertinencia (Si/No), Relevancia (Si/No) y Claridad (Si/No), mas una columna de Sugerencias vacia, conforme a la estructura del Anexo 2 (Fany 2024). El experto evalua contenido y claridad del protocolo; NO registra tiempos, vacunas, auditorias ni resultados reales. No se calculan coeficientes en esta etapa; ICC(2,1) y kappa de Cohen corresponden a confiabilidad futura y no reemplazan la validez de contenido.",
+  "nota_trazabilidad": "Cada fila cita la ruta de la fuente y el rango de lineas (desde-hasta) del archivo md. Los extractos entre comillas son literales de la fuente.",
+  "instrumentos": [
+    {
+      "numero": "01",
+      "titulo": "FICHA DE OBSERVACIÓN SISTEMÁTICA Y MEDICIÓN DE TIEMPOS CRONOMETRADOS",
+      "titulo_hoja": "CERTIFICADO DE VALIDEZ DE CONTENIDO DEL INSTRUMENTO N.°01: FICHA DE OBSERVACIÓN SISTEMÁTICA Y MEDICIÓN DE TIEMPOS CRONOMETRADOS",
+      "subtitulo": "Variable Dependiente: Gestión de movimientos de vacunas. Dimensión Oficial (DEC-007): Oportunidad de procesamiento",
+      "dimension": "Dimensión 1: Oportunidad de procesamiento",
+      "indicadores_cubiertos": ["I1.1 Tiempo de registro de movimiento de vacunas (T_reg)", "I1.2 Tiempo de emisión de comprobante de salida / vale (T_vale)"],
+      "alcance": "El experto juzga si los elementos del protocolo de observación cronométrica (identificación, definiciones operacionales, puntos de corte inicio/fin, batería de tareas estandarizadas, columnas de registro y reglas de agregación) son pertinentes, relevantes y claros para medir T_reg y T_vale. El experto NO cronometra ni registra movimientos de vacunas en este certificado.",
+      "criterios_juicio": [
+        {"criterio": "Pertinencia", "opciones": ["Sí", "No"], "marca": null},
+        {"criterio": "Relevancia", "opciones": ["Sí", "No"], "marca": null},
+        {"criterio": "Claridad", "opciones": ["Sí", "No"], "marca": null},
+        {"criterio": "Sugerencias", "tipo": "texto_libre", "contenido": ""}
+      ],
+      "grupos": [
+        {
+          "indicador": "Identificación y aplicación (elemento común de la ficha)",
+          "filas": [
+            {
+              "id": 1,
+              "elemento": "Datos generales de la observación",
+              "contenido": "Bloque de identificación del operador evaluado: \"Código del Operador Evaluado: TRAB-____ (Rango: TRAB-01 a TRAB-14)\", rol institucional (Responsable de Centro de Acopio / Red de Frío o Personal de Estrategia Sanitaria de Inmunizaciones), centro de acopio/sede, red/microred de salud y provincia (Andahuaylas/Chincheros).",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 42, "hasta": 53}
+            },
+            {
+              "id": 2,
+              "elemento": "Momento de medición (pretest / postest)",
+              "contenido": "Campo dicotómico de marcado: \"PRETEST (O1: Kardex físico manual, libros de registro y hojas Excel dispersas)\" o \"POSTEST (O2: Sistema web SIVAC - React 18.3, Node.js/Express y PostgreSQL 16 con Prisma ORM)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 50, "hasta": 50}
+            },
+            {
+              "id": 3,
+              "elemento": "Aparato de medición y unidad de medida oficial",
+              "contenido": "\"Aparato de Medición: Cronómetro digital calibrado con precisión de centésimas de segundo (0.01 s)\"; \"Unidad de Medida Oficial: Minutos decimales, calculados con cuatro cifras significativas: Tiempo en minutos decimales = minutos enteros + segundos/60\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 59, "hasta": 61}
+            },
+            {
+              "id": 4,
+              "elemento": "Regla de pausa por factores externos fortuitos",
+              "contenido": "Si ocurre \"una interrupción imprevista no atribuible al flujo operativo del proceso evaluado (corte de energía eléctrica, sismo, llamada de emergencia sanitaria o atención médica no programada), el cronómetro se detiene. Se reanuda al normalizarse la tarea, registrando estrictamente el tiempo neto efectivo de trabajo del operador\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 69, "hasta": 69}
+            }
+          ]
+        },
+        {
+          "indicador": "I1.1 Tiempo de registro de movimiento de vacunas (T_reg)",
+          "filas": [
+            {
+              "id": 5,
+              "elemento": "Definición operacional y fórmula de T_reg (Sección A)",
+              "contenido": "\"Tiempo requerido por el operador para ingresar, validar y asentar un movimiento de vacunas en el sistema o registro formal\"; fórmula literal: \"T_reg = t_fin_registro - t_inicio_registro\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 97, "hasta": 101}
+            },
+            {
+              "id": 6,
+              "elemento": "Puntos de corte operativo del registro (inicio y fin)",
+              "contenido": "Inicio (t0): \"Momento exacto en que el operador toma físicamente el documento fuente (guía/pecosa/remesa) o abre la interfaz para iniciar la digitación de los campos del movimiento\"; Fin (tf): \"Momento en que el movimiento queda grabado, confirmado en la base de datos o asentado con saldo actualizado en el libro oficial\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 63, "hasta": 65}
+            },
+            {
+              "id": 7,
+              "elemento": "Batería estandarizada de tareas de registro (REG-01 a REG-03)",
+              "contenido": "\"Tarea REG-01 (Movimiento Simple de Ingreso): Registro de remesa nacional de 1 biológico (lote único, verificación de fecha de vencimiento y dosis totales)\"; \"Tarea REG-02 (Movimiento Regular de Salida / Distribución): Registro de despacho programado conteniendo 2 a 3 tipos de vacunas hacia un centro de salud\"; \"Tarea REG-03 (Movimiento Complejo / Redistribución): Registro de transferencia o ajuste multibioplástico (4 a 6 ítems incluyendo jeringas y diluyentes con verificación de saldos)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 78, "hasta": 81}
+            },
+            {
+              "id": 8,
+              "elemento": "Matriz cronométrica de registro y agregación por operador",
+              "contenido": "Columnas de registro por tarea: \"Descripción del Movimiento Estandarizado\", \"Biológicos / Lotes Auditados\", \"N° Total Dosis\", \"Hora Inicio (hh:mm:ss.cc)\", \"Hora Fin (hh:mm:ss.cc)\", \"Tiempo Neto (min : s)\", \"T_reg (Minutos Decimales)\" e \"Incidencias / Observaciones\"; cierre con \"Tiempo Representativo Agregado del Operador\" (promedio de las 3 tareas) y \"Mediana Intrasujeto\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 103, "hasta": 113}
+            }
+          ]
+        },
+        {
+          "indicador": "I1.2 Tiempo de emisión de comprobante de salida / vale (T_vale)",
+          "filas": [
+            {
+              "id": 9,
+              "elemento": "Definición operacional y fórmula de T_vale (Sección B)",
+              "contenido": "\"Tiempo transcurrido desde la recepción del requerimiento de vacunas hasta la emisión y formalización definitiva del vale de entrega / comprobante de salida\"; fórmula literal: \"T_vale = t_emision_documento - t_inicio_solicitud\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 117, "hasta": 121}
+            },
+            {
+              "id": 10,
+              "elemento": "Puntos de corte operativo de la emisión de vales (inicio y fin)",
+              "contenido": "Inicio (t0): \"Momento en que el operador recibe o apertura la solicitud de pedido de biológicos para su despacho a un establecimiento de salud\"; Fin (tf): \"Momento en que el comprobante de salida / vale oficial queda generado, visualizado, firmado digitalmente o impreso en PDF con numeración correlativa\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 66, "hasta": 68}
+            },
+            {
+              "id": 11,
+              "elemento": "Batería estandarizada de tareas de emisión de vales (VALE-01 a VALE-03)",
+              "contenido": "\"Tarea VALE-01 (Vale Simple): Elaboración y emisión de comprobante de salida para Puesto de Salud nivel I-1/I-2 (1 a 2 ítems de vacunas)\"; \"Tarea VALE-02 (Vale Regular): comprobante para Centro de Salud nivel I-3/I-4 (3 a 5 ítems de vacunas con insumos)\"; \"Tarea VALE-03 (Vale de Emergencia / Contingencia): Emisión prioritaria por contingencia de cadena de frío o barrido vacunal con verificación de lotes y firmas\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 83, "hasta": 86}
+            },
+            {
+              "id": 12,
+              "elemento": "Matriz cronométrica de vales y agregación por operador",
+              "contenido": "Columnas por emisión: \"Tipo de Vale Estandarizado\", \"N° Documento / Vale\", \"Cantidad Ítems\", \"Hora Inicio (hh:mm:ss.cc)\", \"Hora Fin (hh:mm:ss.cc)\", \"Tiempo Neto (min : s)\", \"T_vale (Minutos Decimales)\" e \"Incidencias / Observaciones\"; cierre con \"Tiempo Representativo Agregado del Operador\" (promedio de las 3 emisiones) y \"Mediana Intrasujeto\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 123, "hasta": 133}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "02",
+      "titulo": "FICHA DE REGISTRO Y COTEJO DOCUMENTAL DE CONSISTENCIA",
+      "titulo_hoja": "CERTIFICADO DE VALIDEZ DE CONTENIDO DEL INSTRUMENTO N.°02: FICHA DE REGISTRO Y COTEJO DOCUMENTAL DE CONSISTENCIA",
+      "subtitulo": "Variable Dependiente: Gestión de movimientos de vacunas. Dimensión Oficial (DEC-007): Consistencia documental",
+      "dimension": "Dimensión 2: Consistencia documental",
+      "indicadores_cubiertos": ["I2.1 Porcentaje de registros sin discrepancias (RSD)", "I2.2 Concordancia de programación vs entrega (CPE)"],
+      "alcance": "El experto juzga si los elementos del protocolo de auditoría documental (identificación, ventana temporal, definiciones operacionales, regla binaria de conformidad y sus ocho criterios, criterio de concordancia operativa, matrices de registro y consolidados) son pertinentes, relevantes y claros para medir RSD y CPE. El experto NO audita registros, no clasifica casos ni registra vacunas en este certificado.",
+      "criterios_juicio": [
+        {"criterio": "Pertinencia", "opciones": ["Sí", "No"], "marca": null},
+        {"criterio": "Relevancia", "opciones": ["Sí", "No"], "marca": null},
+        {"criterio": "Claridad", "opciones": ["Sí", "No"], "marca": null},
+        {"criterio": "Sugerencias", "tipo": "texto_libre", "contenido": ""}
+      ],
+      "grupos": [
+        {
+          "indicador": "Identificación y aplicación (elemento común de la ficha)",
+          "filas": [
+            {
+              "id": 1,
+              "elemento": "Datos generales de la auditoría documental",
+              "contenido": "Bloque de identificación: \"Código del Operador / Centro Auditado: TRAB-____ (Rango: TRAB-01 a TRAB-14)\", centro de acopio provincial/microred, provincia sanitaria (Andahuaylas/Chincheros), ventana temporal de auditoría, fecha de ejecución y auditores principal y secundario.",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 42, "hasta": 53}
+            },
+            {
+              "id": 2,
+              "elemento": "Momento de medición (pretest / postest)",
+              "contenido": "Campo dicotómico de marcado: \"PRETEST (O1: Kardex manual físico, cuadernos de registro y hojas Excel)\" o \"POSTEST (O2: Base de datos relacional SIVAC y vales electrónicos PDF)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 49, "hasta": 49}
+            },
+            {
+              "id": 3,
+              "elemento": "Ventana temporal simétrica de observación del PMMV",
+              "contenido": "\"La auditoría documental se realiza sobre una ventana simétrica estandarizada de treinta (30) días calendario consecutivos en el pretest y exactamente treinta (30) días calendario consecutivos en el postest (tras la puesta en producción y estabilización operativa del sistema SIVAC)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 59, "hasta": 60}
+            },
+            {
+              "id": 4,
+              "elemento": "Tamaño muestral de documentos y fuentes de evidencia primaria",
+              "contenido": "\"Se audita un corpus de 40 a 60 documentos / transacciones por ventana temporal distribuidos proporcionalmente entre los centros de acopio\"; pretest: \"Cuadernos de control de cadena de frío, tarjetas de kardex físico, archivos Excel locales y archivadores de comprobantes manuales (PECOSA/Guías)\"; postest: \"Registro inmutable de transacciones en la base de datos PostgreSQL 16 de SIVAC, reportes de kardex electrónico valorizado y comprobantes de salida / vales generados automáticamente con firma y código hash\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 61, "hasta": 65}
+            }
+          ]
+        },
+        {
+          "indicador": "I2.1 Porcentaje de registros sin discrepancias (RSD)",
+          "filas": [
+            {
+              "id": 5,
+              "elemento": "Definición operacional y fórmula de RSD (Sección A)",
+              "contenido": "\"Porcentaje de registros de movimientos de vacunas auditados durante la ventana temporal que satisfacen con rigor absoluto los ocho criterios obligatorios de integridad y concordancia\"; fórmula literal: \"RSD = (N_registros conformes sin discrepancia / N_total de registros auditados) x 100\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 96, "hasta": 101}
+            },
+            {
+              "id": 6,
+              "elemento": "Regla binaria de conformidad del registro",
+              "contenido": "\"REGISTRO CONFORME (1): El registro cumple simultáneamente y sin excepción con los ocho (8) criterios de calidad del dato frente a la evidencia física y el documento ministerial de respaldo\"; \"REGISTRO NO CONFORME (0): El registro presenta al menos una omisión, borrón, enmienda ilegible, error tipográfico, desfase de cálculo o contradicción en cualquiera de los ocho criterios\". Criterio de evaluación de la fuente: \"Si cumple Criterios 1 al 8 simultáneamente, CONFORME (1); si incumple al menos 1 criterio (cualquiera), NO CONFORME (0) [Discrepancia detectada]\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 69, "hasta": 92}
+            },
+            {
+              "id": 7,
+              "elemento": "Los ocho criterios obligatorios de conformidad documental",
+              "contenido": "1) \"Tipo de movimiento clasificado unívocamente (Entrada por remesa, Salida a EESS o Ajuste)\"; 2) \"Denominación oficial estandarizada del biológico según Esquema Regular Nacional MINSA\"; 3) \"Identificación exacta del número de lote (rotulado del frasco coincidente con documento)\"; 4) \"Cantidad de dosis / viales exacta y coincidente con el stock físico y acta de recepción\"; 5) \"Fecha del movimiento consignada con formato completo (DD/MM/AAAA) y secuencia cronológica\"; 6) \"Establecimiento de origen o destino plenamente individualizado con código RENIPRESS oficial\"; 7) \"Nombre completo, firma o usuario responsable del despacho o recepción plenamente trazable\"; 8) \"Documento formal de respaldo asociado y verificado (Vale oficial, PECOSA, Guía de Remisión)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 80, "hasta": 88}
+            },
+            {
+              "id": 8,
+              "elemento": "Matriz de auditoría de registros de vacunas",
+              "contenido": "Columnas de registro por cada biológico o insumo auditado (Vacuna BCG, Hepatitis B Pediátrica, Pentavalente, Neumococo, Rotavirus, hasta Cajas térmicas): \"Vacuna / Insumo Auditado\", \"Lote\", \"Cantidad\", \"Veredicto Final (1 = Conforme, 0 = No Conf.)\" y \"Tipo de Discrepancia / Causa Raíz\"; nota de la fuente: \"(Se auditan de 40 a 60 registros en la ventana)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 103, "hasta": 127}
+            },
+            {
+              "id": 9,
+              "elemento": "Consolidado del indicador RSD",
+              "contenido": "Campos de cierre: \"Número Total de Registros Evaluados en la Ventana\", \"Número de Registros Conformes sin Discrepancia\", \"Número de Registros con Discrepancia / Fallas\" y \"Porcentaje de Registros sin Discrepancias (RSD): % RSD = (N_conf_reg / N_total_reg) x 100\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 129, "hasta": 134}
+            }
+          ]
+        },
+        {
+          "indicador": "I2.2 Concordancia de cantidad programada vs entregada (CPE)",
+          "filas": [
+            {
+              "id": 10,
+              "elemento": "Definición operacional y fórmula de CPE (Sección B)",
+              "contenido": "\"Proporción porcentual de despachos y entregas de vacunas evaluadas en las que la cantidad entregada coincide con la cantidad programada (dosis a dosis), o cuenta con justificación documental formal MINSA debidamente acreditada\"; fórmula literal: \"CPE = (N_entregas concordantes / N_total de entregas evaluadas) x 100\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 138, "hasta": 143}
+            },
+            {
+              "id": 11,
+              "elemento": "Criterio oficial de concordancia operativa y clasificación del caso",
+              "contenido": "Una entrega es \"CONCORDANTE (1)\" si cumple una de dos condiciones: 1) \"Concordancia Exacta Dosis a Dosis: La cantidad despachada y asentada en el vale oficial es idéntica en número exacto de viales/dosis a la cantidad solicitada en la programación formal del establecimiento receptor (Q_ent = Q_prog)\"; 2) \"Ajuste Técnico Justificado MINSA: existe un documento sustentatorio oficial archivado (Acta de ajuste de stock, Memorando de contingencia de cadena de frío o Directiva de racionalización biológica) que autoriza expresamente la variación\". En caso contrario (\"entrega arbitraria, recorte no justificado, error de conteo o desabastecimiento sin sustento formal\"), se clasifica \"NO CONCORDANTE (0)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 145, "hasta": 150}
+            },
+            {
+              "id": 12,
+              "elemento": "Matriz de auditoría de entregas y vales",
+              "contenido": "Columnas por despacho auditado: \"Vacuna / Biológico\", \"N° Documento / Vale\", \"Cantidad Solicitada / Programada (Q_prog)\", \"Cantidad Entregada Conforme (Q_ent)\", \"Diferencia Absoluta (|Q_prog - Q_ent|)\", \"Justificación Formal MINSA Acreditada (Sí/No / N/A)\", \"Veredicto Entrega (1 = Concordante, 0 = No Conc.)\" y \"Causa Raíz del Desfase\"; nota de la fuente: \"(Se auditan de 40 a 60 entregas en la ventana)\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 152, "hasta": 168}
+            },
+            {
+              "id": 13,
+              "elemento": "Consolidado del indicador CPE",
+              "contenido": "Campos de cierre: \"Total de Entregas / Despachos Auditados en la Ventana\", \"Número de Entregas Concordantes (Exactas o Justificadas)\", \"Número de Entregas No Concordantes / Desfases Injustificados\" y \"Porcentaje de Concordancia de Programación vs. Entrega (CPE): % CPE = (N_entregas_concordantes / N_total_entregas) x 100\".",
+              "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 170, "hasta": 175}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

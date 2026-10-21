@@ -1,0 +1,148 @@
+{
+  "version": "v06",
+  "fecha": "2026-10-19",
+  "agente": "especialista-instrumentos",
+  "proposito": "Formato compacto por encargo expreso del tesista: una sola tabla continua de validez de contenido para los instrumentos que miden la Variable Dependiente, con sus tres dimensiones oficiales, numeracion continua 1 a 12 y un unico cierre. Las cuatro filas nuevas son resumenes descriptivos de componentes reales de las fichas, no preguntas nuevas de percepcion ni escalas nuevas; los ocho reactivos de satisfaccion se transcriben literalmente.",
+  "titulo": "CERTIFICADO DE VALIDEZ DE CONTENIDO DE LOS INSTRUMENTOS QUE MIDEN LA VARIABLE DEPENDIENTE: GESTIÓN DE MOVIMIENTOS DE VACUNAS",
+  "nota_unica": "En oportunidad y consistencia se evalúa el contenido de la ficha; en satisfacción los reactivos del cuestionario.",
+  "criterios_juicio": [
+    {"criterio": "Pertinencia", "opciones": ["Sí", "No"], "marca": null},
+    {"criterio": "Relevancia", "opciones": ["Sí", "No"], "marca": null},
+    {"criterio": "Claridad", "opciones": ["Sí", "No"], "marca": null},
+    {"criterio": "Sugerencias", "tipo": "texto_libre", "contenido": ""}
+  ],
+  "cierre_unico": {
+    "observaciones": "",
+    "opinion_aplicabilidad": ["Aplicable", "Aplicable después de corregir", "No aplicable"],
+    "apellidos_y_nombres": "",
+    "dni": "",
+    "especialidad": "",
+    "fecha": "",
+    "firma": ""
+  },
+  "grupos": [
+    {
+      "dimension": "Dimensión 1: Oportunidad de procesamiento",
+      "filas": [
+        {
+          "id": 1,
+          "texto_evaluado": "Tiempo de registro de un movimiento de vacunas: cronometraje de la tarea estandarizada desde que el operador toma el documento o abre la digitación hasta que el movimiento queda grabado o asentado con saldo actualizado, consignado en minutos decimales.",
+          "metadata_interna": {
+            "indicador": "Tiempo de registro de movimiento de vacunas",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 59, "hasta": 113},
+            "objeto_revision": "Contenido y claridad de la definición operacional, los puntos de inicio y fin, la tarea estandarizada y el registro del tiempo en minutos de la Sección A de la ficha de tiempos."
+          }
+        },
+        {
+          "id": 2,
+          "texto_evaluado": "Tiempo de emisión del comprobante de salida o vale: cronometraje desde que el operador recibe o abre la solicitud de pedido hasta que el comprobante queda generado, firmado o impreso, consignado en minutos decimales por tarea estandarizada.",
+          "metadata_interna": {
+            "indicador": "Tiempo de emisión de comprobante de salida o vale",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS_CRONOMETRADOS.md", "desde": 117, "hasta": 133},
+            "objeto_revision": "Contenido y claridad de la definición operacional, los puntos de inicio y fin, la tarea estandarizada y el registro del tiempo en minutos de la Sección B de la ficha de tiempos."
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "Dimensión 2: Consistencia documental",
+      "filas": [
+        {
+          "id": 3,
+          "texto_evaluado": "Porcentaje de registros auditados que cumplen simultáneamente los ocho criterios de la ficha: tipo de movimiento, denominación del biológico, lote, cantidad, fecha, establecimiento, responsable y documento de respaldo; basta un incumplimiento para registrar discrepancia.",
+          "metadata_interna": {
+            "indicador": "Porcentaje de registros sin discrepancias",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 69, "hasta": 134},
+            "objeto_revision": "Contenido y claridad de la regla de conformidad con sus ocho criterios nominales y del consolidado del indicador en la Sección A de la ficha de cotejo documental."
+          }
+        },
+        {
+          "id": 4,
+          "texto_evaluado": "Porcentaje de entregas en las que la cantidad entregada coincide con la programada o cuenta con justificación ministerial acreditada; la ficha coteja ambas cantidades en el vale y el indicador expresa la razón de entregas concordantes sobre el total evaluado.",
+          "metadata_interna": {
+            "indicador": "Concordancia de cantidad programada frente a entregada",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_02_FICHA_COTEJO_DOCUMENTAL.md", "desde": 138, "hasta": 175},
+            "objeto_revision": "Contenido y claridad del cotejo de cantidades, del criterio de concordancia con justificación documental y del consolidado del indicador en la Sección B de la ficha de cotejo documental."
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "Dimensión 3: Satisfacción del usuario",
+      "filas": [
+        {
+          "id": 5,
+          "texto_evaluado": "El procedimiento actual para asentar los movimientos diarios y cierres de mes es ágil y no demanda un esfuerzo mental o físico excesivo.",
+          "metadata_interna": {
+            "codigo": "AP-01",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 83, "hasta": 83},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 6,
+          "texto_evaluado": "El flujo de trabajo requerido para emitir comprobantes de salida y vales de entrega es fluido y está libre de demoras o trabas burocráticas.",
+          "metadata_interna": {
+            "codigo": "AP-02",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 84, "hasta": 84},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 7,
+          "texto_evaluado": "El método empleado me permite conciliar los saldos de inventario con las microredes generando tranquilidad y reduciendo el estrés laboral.",
+          "metadata_interna": {
+            "codigo": "AP-03",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 85, "hasta": 85},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 8,
+          "texto_evaluado": "El tiempo que dedico al registro administrativo de vacunas es equilibrado y me deja disponibilidad para mis labores sanitarias y asistenciales.",
+          "metadata_interna": {
+            "codigo": "AP-04",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 86, "hasta": 86},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 9,
+          "texto_evaluado": "El mecanismo de registro utilizado me permite disponer de información fidedigna y en tiempo real del stock de vacunas y jeringas.",
+          "metadata_interna": {
+            "codigo": "UP-01",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 88, "hasta": 88},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 10,
+          "texto_evaluado": "El control de números de lote y fechas de vencimiento que brinda el proceso previene oportunamente mermas o pérdidas de biológicos.",
+          "metadata_interna": {
+            "codigo": "UP-02",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 89, "hasta": 89},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 11,
+          "texto_evaluado": "La metodología de gestión facilita la detección inmediata y rectificación de cualquier descuadre de inventario físico versus registrado.",
+          "metadata_interna": {
+            "codigo": "UP-03",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 90, "hasta": 90},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        },
+        {
+          "id": 12,
+          "texto_evaluado": "En general, considero que el procedimiento empleado es una herramienta altamente eficaz para garantizar el abastecimiento oportuno de vacunas.",
+          "metadata_interna": {
+            "codigo": "UP-04",
+            "fuente": {"ruta": "salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md", "desde": 91, "hasta": 91},
+            "objeto_revision": "Reactivo literal de la Modalidad A del cuestionario; transcripción idéntica, sin alteración."
+          }
+        }
+      ]
+    }
+  ]
+}
