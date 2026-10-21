@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+@import "@xterm/xterm/css/xterm.css";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --color-border-default: 255, 255, 255, 0.1;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #0b0d12;
+    color: #f4f4f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  code, pre, .font-mono, .tabular-nums {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+    font-variant-ligatures: none;
+  }
+}
+
+/* Custom ultra-slim IDE scrollbars (agno-agi/agent-ui & winfunc/opcode style) */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* React Flow Studio dark overrides */
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.react-flow__controls-button {
+  background-color: #12151e !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  fill: #a1a1aa !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #1e2330 !important;
+  fill: #ffffff !important;
+}
+
+.react-flow__minimap {
+  background-color: #0f1219 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+}
+
+/* Resizable panel separator styling */
+[data-separator] {
+  transition: background-color 150ms ease;
+}
+[data-separator]:hover,
+[data-separator][data-resize-handle-active] {
+  background-color: rgba(249, 115, 22, 0.55) !important;
+}

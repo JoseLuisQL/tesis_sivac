@@ -1,0 +1,15 @@
+{
+  "archivo_png": "/app/applet/salidas/figuras/fig_04_flujo_kardex_feefo_vacunas_300dpi.png",
+  "sha256": "a681f37a48dc62ef77b28ca4dcccdc950e2f6ea3254468ab551159bdb617d7da",
+  "numero_figura": 4,
+  "titulo_apa7": "Flujo transaccional FEFO (First Expired, First Out) para el control de lotes y vales mensuales",
+  "nota_apa7": "Elaboración propia conforme a la NTS N.° 196-MINSA/DGIESP-2022.",
+  "dpi": [
+    300,
+    300
+  ],
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "ancho_cm_impresion": 10.16,
+  "cumple_300dpi": true
+}

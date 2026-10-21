@@ -1,0 +1,70 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 2544 >>
+stream
+BT
+/F2 9 Tf
+85 795 Td
+(UNIVERSIDAD NACIONAL JOSE MARIA ARGUEDAS \(UNAJMA\) - EPIS | SIVAC-THESIS-LAB) Tj
+ET
+0.7 w 85 788 m 525 788 l S
+BT /F2 11 Tf 85 762 Td (CAPITULO III: METODOLOGIA E INGENIERIA DE SOFTWARE XP \(15 HISTORIAS DE USUARIO\)) Tj ET
+BT /F1 10 Tf 85 748 Td (HU-01: Autenticación y control de acceso basado en roles \(RBAC\) \(Iteración 1\)) Tj ET
+BT /F1 10 Tf 85 734 Td (HU-02: Gestión del catálogo maestro de biológicos, diluyentes y jeringas \(Iteración 1\)) Tj ET
+BT /F1 10 Tf 85 720 Td (HU-03: Registro de establecimientos, microredes y puntos de cadena de frío \(Iteración 1\)) Tj ET
+BT /F1 10 Tf 85 706 Td (HU-04: Ingreso de lotes de vacunas con validación de fecha de vencimiento FEFO \(Iteració) Tj ET
+BT /F1 10 Tf 85 692 Td (n 2\)) Tj ET
+BT /F1 10 Tf 85 678 Td (HU-05: Emisión automatizada de comprobantes de salida y vales de entrega mensual \(Iterac) Tj ET
+BT /F1 10 Tf 85 664 Td (ión 2\)) Tj ET
+BT /F1 10 Tf 85 650 Td (HU-06: Registro de entradas, salidas y transferencias entre microredes \(Iteración 2\)) Tj ET
+BT /F1 10 Tf 85 636 Td (HU-07: Cálculo automático de saldos en Kardex físico-valorado en tiempo real \(Iteración ) Tj ET
+BT /F1 10 Tf 85 622 Td (2\)) Tj ET
+BT /F1 10 Tf 85 608 Td (HU-08: Sistema de alertas tempranas de stock crítico y vencimiento próximo \(FEFO\) \(Itera) Tj ET
+BT /F1 10 Tf 85 594 Td (ción 3\)) Tj ET
+BT /F1 10 Tf 85 580 Td (HU-09: Registro y control de factor pérdida y mermas de biológicos abiertos \(Iteración 3) Tj ET
+BT /F1 10 Tf 85 566 Td (\)) Tj ET
+BT /F1 10 Tf 85 552 Td (HU-10: Conciliación mensual automatizada de inventarios por establecimiento \(CPE\) \(Itera) Tj ET
+BT /F1 10 Tf 85 538 Td (ción 3\)) Tj ET
+BT /F1 10 Tf 85 524 Td (HU-11: Detección de discrepancias documentales \(RSD\) con bitácora de auditoría \(Iteració) Tj ET
+BT /F1 10 Tf 85 510 Td (n 3\)) Tj ET
+BT /F1 10 Tf 85 496 Td (HU-12: Generación de reportes mensuales consolidados en PDF y Excel \(MINSA\) \(Iteración 4) Tj ET
+BT /F1 10 Tf 85 482 Td (\)) Tj ET
+BT /F1 10 Tf 85 468 Td (HU-13: Tablero de indicadores ejecutivos de movimientos e inmunizaciones \(Iteración 4\)) Tj ET
+BT /F1 10 Tf 85 454 Td (HU-14: Consulta histórica trazable por código de lote biológico y responsable \(Iteración) Tj ET
+BT /F1 10 Tf 85 440 Td ( 4\)) Tj ET
+BT /F1 10 Tf 85 426 Td (HU-15: Respaldo transaccional y exportación de cierres mensuales verificados \(Iteración ) Tj ET
+BT /F1 10 Tf 85 412 Td (4\)) Tj ET
+0.5 w 85 52 m 525 52 l S
+BT /F1 9 Tf 85 38 Td (Capitulo III - Metodologia e Ingenieria XP SIVAC ? Pagina 1 de 1) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000220 00000 n 
+0000000318 00000 n 
+0000000454 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3050
+%%EOF

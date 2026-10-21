@@ -1,341 +1,147 @@
 {
-  "tipo": "codebook_datos_campo",
-  "aviso": "Metadato de estructura; no contiene datos empíricos.",
-  "tesis": "APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II",
-  "diseno": "Preexperimental O1 -> X -> O2, un solo grupo",
-  "fuente_reglas": "06_METODOLOGIA_E_INSTRUMENTOS/protocolos_calidad_datos/PROTOCOLO_CONTROL_CALIDAD_E_INGESTA.md",
-  "codificacion": "UTF-8 sin BOM, separador coma, cabecera en la primera línea",
-  "n_filas_por_archivo": 14,
-  "identificadores": [
-    "TRAB-01",
-    "TRAB-02",
-    "TRAB-03",
-    "TRAB-04",
-    "TRAB-05",
-    "TRAB-06",
-    "TRAB-07",
-    "TRAB-08",
-    "TRAB-09",
-    "TRAB-10",
-    "TRAB-11",
-    "TRAB-12",
-    "TRAB-13",
-    "TRAB-14"
-  ],
-  "fases": [
-    "PRETEST",
-    "POSTEST"
-  ],
-  "faltantes_tolerados": 0,
-  "baremo_satisfaccion": [
-    {
-      "minimo": 8,
-      "maximo": 18,
-      "categoria": "Bajo"
-    },
-    {
-      "minimo": 19,
-      "maximo": 29,
-      "categoria": "Medio"
-    },
-    {
-      "minimo": 30,
-      "maximo": 40,
-      "categoria": "Alto"
-    }
-  ],
-  "advertencias_no_bloqueantes": [
-    "fila duplicada (salvo sujeto_id)",
-    "varianza cero en Likert por sujeto",
-    "straight-lining",
-    "valores idénticos en >70% de sujetos"
-  ],
+  "proyecto": "SIVAC-THESIS-LAB",
+  "resolucion": "DEC-027",
+  "decision_dimensiones": "DEC-007",
+  "decision_modalidad_tam": "DEC-019",
+  "n_censal": 14,
+  "id_patron": "^TRAB-(0[1-9]|1[0-4])$",
   "columnas": [
     {
-      "posicion": 1,
       "nombre": "sujeto_id",
-      "tipo": "texto",
-      "escala": "nominal",
-      "obligatorio": true,
-      "descripcion": "Código unívoco anonimizado del trabajador (TRAB-01 a TRAB-14).",
-      "dominio": [
-        "TRAB-01",
-        "TRAB-02",
-        "TRAB-03",
-        "TRAB-04",
-        "TRAB-05",
-        "TRAB-06",
-        "TRAB-07",
-        "TRAB-08",
-        "TRAB-09",
-        "TRAB-10",
-        "TRAB-11",
-        "TRAB-12",
-        "TRAB-13",
-        "TRAB-14"
-      ]
+      "tipo": "string",
+      "rango": "TRAB-01 a TRAB-14",
+      "descripcion": "Identificador anónimo único del personal de inmunizaciones (N = n = 14)"
     },
     {
-      "posicion": 2,
-      "nombre": "centro_acopio",
-      "tipo": "texto",
-      "escala": "nominal",
-      "obligatorio": true,
-      "descripcion": "Establecimiento sede de la medición (texto no vacío; lista oficial verificable con --centros)."
-    },
-    {
-      "posicion": 3,
-      "nombre": "fase",
-      "tipo": "texto",
-      "escala": "nominal",
-      "obligatorio": true,
-      "descripcion": "Momento de medición: PRETEST (O1) o POSTEST (O2).",
-      "dominio": [
-        "PRETEST",
-        "POSTEST"
-      ]
-    },
-    {
-      "posicion": 4,
       "nombre": "t_reg",
-      "tipo": "decimal",
-      "escala": "razón (minutos)",
-      "obligatorio": true,
-      "descripcion": "Tiempo de registro de movimiento de vacunas, T_reg (D1, I1.1).",
-      "rango": {
-        "minimo": 0,
-        "maximo": 120,
-        "minimo_incluido": false,
-        "maximo_incluido": true,
-        "notacion": "(0, 120]"
-      }
+      "tipo": "float",
+      "unidad": "minutos",
+      "rango": [0.01, 120.0],
+      "dimension": "D1: Oportunidad de procesamiento",
+      "indicador": "I1.1: Tiempo de registro de movimiento de vacunas",
+      "hipotesis_direccion": "post < pre"
     },
     {
-      "posicion": 5,
       "nombre": "t_vale",
-      "tipo": "decimal",
-      "escala": "razón (minutos)",
-      "obligatorio": true,
-      "descripcion": "Tiempo de emisión del comprobante de salida / vale, T_vale (D1, I1.2).",
-      "rango": {
-        "minimo": 0,
-        "maximo": 60,
-        "minimo_incluido": false,
-        "maximo_incluido": true,
-        "notacion": "(0, 60]"
-      }
+      "tipo": "float",
+      "unidad": "minutos",
+      "rango": [0.01, 60.0],
+      "dimension": "D1: Oportunidad de procesamiento",
+      "indicador": "I1.2: Tiempo de emisión de comprobante de salida / vale",
+      "hipotesis_direccion": "post < pre"
     },
     {
-      "posicion": 6,
       "nombre": "rsd",
-      "tipo": "decimal",
-      "escala": "razón (porcentaje)",
-      "obligatorio": true,
-      "descripcion": "Porcentaje de registros sin discrepancias, RSD (D2, I2.1).",
-      "rango": {
-        "minimo": 0,
-        "maximo": 100,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[0, 100]"
-      }
+      "tipo": "float",
+      "unidad": "porcentaje",
+      "rango": [0.0, 100.0],
+      "dimension": "D2: Consistencia documental",
+      "indicador": "I2.1: Porcentaje de registros sin discrepancias",
+      "hipotesis_direccion": "post > pre"
     },
     {
-      "posicion": 7,
       "nombre": "cpe",
-      "tipo": "decimal",
-      "escala": "razón (porcentaje)",
-      "obligatorio": true,
-      "descripcion": "Porcentaje de entregas con cantidad física conforme sobre el total de despachos evaluados, CPE (D2, I2.2).",
-      "rango": {
-        "minimo": 0,
-        "maximo": 100,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[0, 100]"
-      }
+      "tipo": "float",
+      "unidad": "porcentaje",
+      "rango": [0.0, 100.0],
+      "dimension": "D2: Consistencia documental",
+      "indicador": "I2.2: Concordancia de cantidad programada vs entregada",
+      "hipotesis_direccion": "post > pre"
     },
     {
-      "posicion": 8,
       "nombre": "ap_01",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 1 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.1: Aceptación del proceso (Modalidad A)"
     },
     {
-      "posicion": 9,
       "nombre": "ap_02",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 2 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.1: Aceptación del proceso (Modalidad A)"
     },
     {
-      "posicion": 10,
       "nombre": "ap_03",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 3 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.1: Aceptación del proceso (Modalidad A)"
     },
     {
-      "posicion": 11,
       "nombre": "ap_04",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 4 de Aceptación del proceso, AP (D3, I3.1, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.1: Aceptación del proceso (Modalidad A)"
     },
     {
-      "posicion": 12,
-      "nombre": "score_ap",
-      "tipo": "entero",
-      "escala": "intervalar",
-      "obligatorio": true,
-      "descripcion": "Suma de ap_01..ap_04 (subescala AP, 4 a 20 puntos).",
-      "rango": {
-        "minimo": 4,
-        "maximo": 20,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[4, 20]"
-      },
-      "derivada_de": "suma(ap_01..ap_04)"
-    },
-    {
-      "posicion": 13,
       "nombre": "up_01",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 1 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.2: Utilidad percibida (Modalidad A)"
     },
     {
-      "posicion": 14,
       "nombre": "up_02",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 2 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.2: Utilidad percibida (Modalidad A)"
     },
     {
-      "posicion": 15,
       "nombre": "up_03",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 3 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.2: Utilidad percibida (Modalidad A)"
     },
     {
-      "posicion": 16,
       "nombre": "up_04",
-      "tipo": "entero",
-      "escala": "ordinal Likert 1-5",
-      "obligatorio": true,
-      "descripcion": "Reactivo 4 de Utilidad percibida, UP (D3, I3.2, TAM; Modalidad A).",
-      "rango": {
-        "minimo": 1,
-        "maximo": 5,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[1, 5]"
-      }
+      "tipo": "integer",
+      "escala": "Likert 1-5",
+      "rango": [1, 5],
+      "dimension": "D3: Satisfacción del usuario",
+      "indicador": "I3.2: Utilidad percibida (Modalidad A)"
     },
     {
-      "posicion": 17,
+      "nombre": "score_ap",
+      "tipo": "integer",
+      "rango": [4, 20],
+      "formula": "ap_01 + ap_02 + ap_03 + ap_04",
+      "hipotesis_direccion": "post > pre"
+    },
+    {
       "nombre": "score_up",
-      "tipo": "entero",
-      "escala": "intervalar",
-      "obligatorio": true,
-      "descripcion": "Suma de up_01..up_04 (subescala UP, 4 a 20 puntos).",
-      "rango": {
-        "minimo": 4,
-        "maximo": 20,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[4, 20]"
-      },
-      "derivada_de": "suma(up_01..up_04)"
+      "tipo": "integer",
+      "rango": [4, 20],
+      "formula": "up_01 + up_02 + up_03 + up_04",
+      "hipotesis_direccion": "post > pre"
     },
     {
-      "posicion": 18,
       "nombre": "score_tam_total",
-      "tipo": "entero",
-      "escala": "intervalar",
-      "obligatorio": true,
-      "descripcion": "Puntuación TAM total = score_ap + score_up (8 ítems, 8 a 40 puntos).",
-      "rango": {
-        "minimo": 8,
-        "maximo": 40,
-        "minimo_incluido": true,
-        "maximo_incluido": true,
-        "notacion": "[8, 40]"
-      },
-      "derivada_de": "score_ap + score_up"
+      "tipo": "integer",
+      "rango": [8, 40],
+      "formula": "score_ap + score_up",
+      "hipotesis_direccion": "post > pre"
     },
     {
-      "posicion": 19,
       "nombre": "nivel_satisfaccion",
-      "tipo": "texto",
-      "escala": "ordinal",
-      "obligatorio": true,
-      "descripcion": "Categoría según baremo por terciles: 8-18 Bajo, 19-29 Medio, 30-40 Alto.",
-      "dominio": [
-        "Bajo",
-        "Medio",
-        "Alto"
-      ],
-      "derivada_de": "baremo(score_tam_total)"
+      "tipo": "enum",
+      "valores": ["Bajo", "Medio", "Alto"],
+      "baremo": {
+        "Bajo": [8, 18],
+        "Medio": [19, 29],
+        "Alto": [30, 40]
+      }
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "archivo_png": "/app/applet/salidas/figuras/fig_01_arquitectura_logica_sivac_300dpi.png",
+  "sha256": "886f5f8d62e3472f93ab1018e3debf6476f0e580737c2b3ae33d80ee65b5b82a",
+  "numero_figura": 1,
+  "titulo_apa7": "Arquitectura lógica en capas del sistema web SIVAC (React + FastAPI + PostgreSQL)",
+  "nota_apa7": "Elaboración propia a partir de la auditoría estática del repositorio syncova (Sección 3.3).",
+  "dpi": [
+    300,
+    300
+  ],
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "ancho_cm_impresion": 10.16,
+  "cumple_300dpi": true
+}

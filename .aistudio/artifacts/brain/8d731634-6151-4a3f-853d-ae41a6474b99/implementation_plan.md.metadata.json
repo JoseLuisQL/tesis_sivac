@@ -1,0 +1,6 @@
+{
+  "summary":  "Plan arquitectónico y de experiencia de usuario para actualizar SIVAC-THESIS-LAB con un diseño minimalista e intuitivo centrado en un Panel de Chat directo con el Agente GOD (director-general) con delegación automática a los 13 subagentes, ejecución mediante Bun Shell (bun), puente nativo a Claude Code CLI (claude) y Factory Droid CLI (droid), y visor en vivo de detección e instalación de CLIs locales.",
+  "updatedAt":  "2026-10-20T22:47:35.025734959Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

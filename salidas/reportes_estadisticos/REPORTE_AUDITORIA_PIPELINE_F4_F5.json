@@ -1,0 +1,15 @@
+{
+  "estado": "BLOQUEADO: esperando datos de campo",
+  "exit_code": 3,
+  "regla_canonica": "01_seguridad.md (Prohibición absoluta de datos sintéticos)",
+  "n_censal": 14,
+  "manifest_presente": false,
+  "pruebas_configuradas": [
+    "Shapiro-Wilk (W)",
+    "t de Student pareada",
+    "Wilcoxon (W+)",
+    "V de Aiken",
+    "IVC de Lawshe",
+    "Alfa de Cronbach"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "archivo_png": "/app/applet/salidas/figuras/fig_03_modelo_entidad_relacion_sivac_300dpi.png",
+  "sha256": "28ca5af75f4a210deb384aee8131e1854ca10b1c83cec49778005a7c7e18e2d6",
+  "numero_figura": 3,
+  "titulo_apa7": "Esquema Entidad-Relación de movimientos mensuales, lotes biológicos y despachos de vacunas",
+  "nota_apa7": "Elaboración propia basada en las migraciones relacionales del sistema SIVAC.",
+  "dpi": [
+    300,
+    300
+  ],
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "ancho_cm_impresion": 10.16,
+  "cumple_300dpi": true
+}

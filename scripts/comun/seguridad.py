@@ -1,81 +1,64 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SIVAC-THESIS-LAB — Guardas de seguridad para scripts (defensa en profundidad).
-
-El hook PreToolUse protege las herramientas del agente; estas guardas protegen
-además la ejecución de los propios scripts: ningún script puede escribir en
-rutas inmutables, aunque se invoque directamente desde una terminal.
+Módulo de seguridad y protección de activos de SIVAC-THESIS-LAB.
+Implementa Regla Canónica 01 (01_seguridad.md):
+- Bloqueo de escritura en referencias/, syncova, PROYECTO_TESIS.docx y datos/raw/.
+- Verificación de no sobrescritura y hashes criptográficos SHA-256.
 """
-
-from __future__ import annotations
-
 import hashlib
 import sys
 from pathlib import Path
+from typing import Union
 
-from . import rutas
-
-# Rutas donde NUNCA se escribe (ni se mueve ni se borra).
-_PROTEGIDAS = (
-    rutas.SYNCOVA,
-    rutas.MODELOS_TESIS,
-    rutas.MODELOS_VALIDACION,
-    rutas.PROYECTO_BASE,
+RUTAS_SOLO_LECTURA = (
+    "syncova",
+    "referencias/",
+    "ejemplos_tesis",
+    "ejemplo_validacion",
+    "proyecto_tesis.docx",
+    "datos/raw/",
 )
 
 
-class EscrituraProhibida(PermissionError):
-    """Intento de escribir en una ruta inmutable del proyecto."""
+def configurar_utf8() -> None:
+    """Configura la salida estándar en UTF-8 para evitar errores en consolas cp1252."""
+    for stream_name in ("stdout", "stderr"):
+        stream = getattr(sys, stream_name, None)
+        if stream is not None and hasattr(stream, "reconfigure"):
+            try:
+                stream.reconfigure(encoding="utf-8", errors="replace")
+            except Exception:
+                pass
 
 
-def _resolver(ruta: str | Path) -> Path:
-    return Path(ruta).expanduser().resolve(strict=False)
-
-
-def _es_subruta(hijo: Path, padre: Path) -> bool:
-    try:
-        hijo.relative_to(padre.resolve(strict=False))
-        return True
-    except ValueError:
-        return False
-
-
-def asegurar_escritura_permitida(ruta: str | Path) -> Path:
-    """Devuelve la ruta resuelta o lanza EscrituraProhibida si es inmutable."""
-    destino = _resolver(ruta)
-    for protegida in _PROTEGIDAS:
-        if _es_subruta(destino, protegida):
-            raise EscrituraProhibida(
-                f"Escritura denegada en ruta inmutable: {destino} "
-                f"(protegida: {protegida}). Ver .claude/rules/01_seguridad.md"
+def asegurar_escritura_permitida(ruta: Union[str, Path]) -> Path:
+    """Verifica que la ruta objetivo no pertenezca a ningún directorio protegido de solo lectura."""
+    p = Path(ruta).resolve()
+    normalizada = str(p).lower().replace("\\", "/")
+    for protegida in RUTAS_SOLO_LECTURA:
+        if protegida in normalizada:
+            raise PermissionError(
+                f"[SEGURIDAD BLOQUEADA] Escritura prohibida en ruta de solo lectura: '{p}' "
+                f"(coincide con '{protegida}' - Regla Canónica 01)."
             )
-    return destino
+    return p
 
 
-def asegurar_no_sobrescribe(origen: str | Path, destino: str | Path) -> Path:
-    """Impide que una operación 'guardar como' pise el archivo de origen."""
-    o, d = _resolver(origen), _resolver(destino)
-    if o == d:
-        raise EscrituraProhibida(
-            "El destino coincide con el original; se exige una copia versionada "
-            f"(p. ej. informe_final_v02.docx): {d}"
+def asegurar_no_sobrescribe(origen: Union[str, Path], destino: Union[str, Path]) -> Path:
+    """Garantiza que el archivo destino no sea igual al origen ni sobrescriba un insumo protegido."""
+    p_orig = Path(origen).resolve()
+    p_dest = asegurar_escritura_permitida(destino)
+    if p_orig == p_dest:
+        raise PermissionError(
+            f"[SEGURIDAD BLOQUEADA] El archivo de destino no puede ser idéntico al origen: '{p_dest}'."
         )
-    return asegurar_escritura_permitida(d)
+    return p_dest
 
 
-def sha256_archivo(ruta: str | Path, bloque: int = 1 << 20) -> str:
+def sha256_archivo(ruta: Union[str, Path]) -> str:
+    """Calcula el hash SHA-256 hexadecimal de un archivo en disco."""
     h = hashlib.sha256()
     with open(ruta, "rb") as f:
-        for chunk in iter(lambda: f.read(bloque), b""):
-            h.update(chunk)
+        for bloque in iter(lambda: f.read(65536), b""):
+            h.update(bloque)
     return h.hexdigest()
-
-
-def configurar_utf8() -> None:
-    """Evita UnicodeEncodeError en consolas Windows (cp1252)."""
-    for flujo in (sys.stdout, sys.stderr):
-        try:
-            flujo.reconfigure(encoding="utf-8", errors="replace")
-        except Exception:
-            pass

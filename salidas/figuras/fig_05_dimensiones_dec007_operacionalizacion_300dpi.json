@@ -1,0 +1,15 @@
+{
+  "archivo_png": "/app/applet/salidas/figuras/fig_05_dimensiones_dec007_operacionalizacion_300dpi.png",
+  "sha256": "1a0061b97ab61a34934f1215e1862d6374e671ff7b281237a138c93492631de5",
+  "numero_figura": 5,
+  "titulo_apa7": "Modelo isomórfico de 3 dimensiones y 6 indicadores de la variable dependiente (DEC-007)",
+  "nota_apa7": "Elaboración propia según Resolución de Proyecto de Tesis UNAJMA (DEC-007 / DEC-027).",
+  "dpi": [
+    300,
+    300
+  ],
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "ancho_cm_impresion": 10.16,
+  "cumple_300dpi": true
+}

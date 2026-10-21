@@ -1,0 +1,32 @@
+{
+  "origen": "/app/applet/referencias/proyecto_base/PROYECTO_TESIS.docx",
+  "sha256_origen": "fcc5dda34979d64b8eec8dc2cb3d7dd22e83ab12c13060f6cdccb6b413d00198",
+  "destino": "/app/applet/salidas/documentos/informe_final_v02.docx",
+  "sha256_destino": "6462d94c55bc86161d49a53f4a0fd2507997ae47ea5f1d38618f0875fa369ba9",
+  "version": "v02",
+  "fecha_utc": "2026-10-20T21:38:35.186287+00:00",
+  "decisiones_aplicadas": [
+    "DEC-007",
+    "DEC-014",
+    "DEC-015",
+    "DEC-016",
+    "DEC-019",
+    "DEC-020",
+    "DEC-027"
+  ],
+  "auditoria_openxml": {
+    "archivo": "/app/applet/salidas/documentos/informe_final_v02.docx",
+    "existe": true,
+    "sha256": "6462d94c55bc86161d49a53f4a0fd2507997ae47ea5f1d38618f0875fa369ba9",
+    "bytes": 10559,
+    "margenes_unajma_ok": true,
+    "tablas_total": 4,
+    "tablas_flotantes": 0,
+    "tablas_con_header": 4,
+    "tablas_con_cantsplit": 4,
+    "referencias_sangria_francesa": 12,
+    "formulas_omml": 3,
+    "cumple_apa7": true,
+    "hallazgos": []
+  }
+}

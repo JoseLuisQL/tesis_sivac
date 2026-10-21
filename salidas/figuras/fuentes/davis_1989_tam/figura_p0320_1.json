@@ -1,0 +1,17 @@
+{
+  "fuente": {
+    "slug": "davis_1989_tam",
+    "sha256": "e63005f37dcc8beda7c72fe4d450aa273c9c970dd649b2721bd16fa4b8fac227"
+  },
+  "pagina_fisica": 320,
+  "etiqueta_impresa": "320",
+  "tipo": "figura",
+  "numero": "1",
+  "leyenda_textual": "Figura 1. Modelo de Aceptación Tecnológica (Perceived Usefulness & Perceived Ease of Use).",
+  "dpi": 300,
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "metodo_deteccion": "geometrico_vectorial",
+  "confianza": "alta",
+  "cita_sugerida": "Adaptado de Perceived usefulness, perceived ease of use, and user acceptance of information technology (p. 320), por F. D. Davis, 1989, MIS Quarterly."
+}

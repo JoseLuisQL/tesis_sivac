@@ -1,0 +1,26 @@
+{
+  "archivo": "davis_1989_perceived_usefulness_tam.pdf",
+  "ruta": "/app/applet/obsidian_vault/04_LITERATURA_Y_FUENTES/pdfs_fuentes/davis_1989_perceived_usefulness_tam.pdf",
+  "sha256": "da0740c87b994784c1b44229c406af24948204004d9b4ec56c6a732bd4c20d3a",
+  "total_paginas": 1,
+  "paginas": [
+    {
+      "indice": 1,
+      "etiqueta_impresa": "320",
+      "metodo_etiqueta": "encabezado_editorial",
+      "parrafos": [
+        {
+          "id": "p0001_01",
+          "n": 1,
+          "texto": "Perceived usefulness is defined here as the degree to which a person believes that using a particular system would enhance his or her job performance, whereas perceived ease of use refers to the degree to which a person believes that using a system would be free of effort.",
+          "bbox": [
+            85,
+            700,
+            510,
+            745
+          ]
+        }
+      ]
+    }
+  ]
+}

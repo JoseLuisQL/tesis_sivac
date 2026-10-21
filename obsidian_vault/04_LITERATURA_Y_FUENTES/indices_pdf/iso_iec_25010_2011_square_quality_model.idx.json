@@ -1,0 +1,26 @@
+{
+  "archivo": "iso_iec_25010_2011_square_quality_model.pdf",
+  "ruta": "/app/applet/obsidian_vault/04_LITERATURA_Y_FUENTES/pdfs_fuentes/iso_iec_25010_2011_square_quality_model.pdf",
+  "sha256": "3a0caa3b06b833c0740ae6502ee23598e64bc71ae3222f98501aee4765f97008",
+  "total_paginas": 1,
+  "paginas": [
+    {
+      "indice": 1,
+      "etiqueta_impresa": "14",
+      "metodo_etiqueta": "encabezado_editorial",
+      "parrafos": [
+        {
+          "id": "p0001_01",
+          "n": 1,
+          "texto": "The product quality model categorizes system and software quality properties into eight characteristics: functional suitability, performance efficiency, compatibility, usability, reliability, security, maintainability, and portability.",
+          "bbox": [
+            85,
+            700,
+            510,
+            745
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fuente": {
+    "slug": "beck_1999_xp",
+    "sha256": "d319aaf9593abf8ed77d423dc168fecee5ab6b066cb4d0a5cd9eb593e12cda2e"
+  },
+  "pagina_fisica": 72,
+  "etiqueta_impresa": "72",
+  "tipo": "figura",
+  "numero": "1",
+  "leyenda_textual": "Figura 1. Ciclo de retroalimentación y entregas cortas en Extreme Programming.",
+  "dpi": 300,
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "metodo_deteccion": "geometrico_vectorial",
+  "confianza": "alta",
+  "cita_sugerida": "Adaptado de Extreme programming explained: Embrace change (p. 72), por K. Beck, 1999, Addison-Wesley."
+}

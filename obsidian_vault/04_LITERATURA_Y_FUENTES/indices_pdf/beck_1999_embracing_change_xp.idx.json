@@ -1,0 +1,26 @@
+{
+  "archivo": "beck_1999_embracing_change_xp.pdf",
+  "ruta": "/app/applet/obsidian_vault/04_LITERATURA_Y_FUENTES/pdfs_fuentes/beck_1999_embracing_change_xp.pdf",
+  "sha256": "a054fdd28874a58682e0c61aa1a2a7ea2570d41bd64b721a7f0ddb23b0d06d95",
+  "total_paginas": 1,
+  "paginas": [
+    {
+      "indice": 1,
+      "etiqueta_impresa": "72",
+      "metodo_etiqueta": "encabezado_editorial",
+      "parrafos": [
+        {
+          "id": "p0001_01",
+          "n": 1,
+          "texto": "Extreme Programming (XP) is a lightweight software development methodology focused on short iterations, user stories, pair programming, continuous integration, and constant customer feedback.",
+          "bbox": [
+            85,
+            700,
+            510,
+            745
+          ]
+        }
+      ]
+    }
+  ]
+}

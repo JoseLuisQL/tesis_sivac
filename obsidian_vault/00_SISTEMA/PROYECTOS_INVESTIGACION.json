@@ -1,0 +1,195 @@
+{
+  "activeProjectId": "proy-tesis-sivac-unajma",
+  "projects": [
+    {
+      "id": "proy-tesis-sivac-unajma",
+      "codigo": "DEC-027 / DEC-007",
+      "titulo": "APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II",
+      "tipo": "Informe Final de Tesis (Ingeniería de Sistemas - UNAJMA)",
+      "tesista": "Bach. José Luis Quispe León",
+      "asesora": "Dra. Norma Lorena Catacora Flores",
+      "diseno": "Pre-experimental Pretest-Postest con un solo grupo (O1 -> X -> O2) · N = n = 14 censal",
+      "faseActual": "F4",
+      "progreso": 72,
+      "variableIndependiente": "Sistema web SIVAC (Extreme Programming XP · ISO/IEC 25010:2023)",
+      "variableDependiente": "Gestión de movimientos mensuales de vacunas (3 Dimensiones DEC-007)",
+      "dimensiones": [
+        "D1: Oportunidad de procesamiento (T_reg, T_vale)",
+        "D2: Consistencia documental (RSD, CPE)",
+        "D3: Satisfacción del usuario (AP, UP — Modelo TAM)"
+      ],
+      "qualityGates": [
+        { "id": "QG-0", "fase": "F0", "nombre": "Ecosistema y Gobernanza", "metrica": "14 agentes · 17 skills · 3 hooks · 3 schemas JSON", "estado": "aprobado" },
+        { "id": "QG-1", "fase": "F1", "nombre": "Diagnóstico Estructural", "metrica": "PROYECTO_TESIS.docx homologado con Modelos Fany 2024 y Jhon 2026", "estado": "aprobado" },
+        { "id": "QG-2", "fase": "F2", "nombre": "Consistencia Metodológica DEC-007", "metrica": "Matriz isomórfica cerrada en 3 dimensiones y 6 indicadores", "estado": "aprobado" },
+        { "id": "QG-3", "fase": "F3", "nombre": "Marco Teórico y Antecedentes", "metrica": "100% citas verificadas 1:1 en Zotero y PDFs indexados", "estado": "aprobado" },
+        { "id": "QG-4", "fase": "F4", "nombre": "Ingeniería de Software SIVAC (XP)", "metrica": "Sección 3.3 documentada con 15 Historias de Usuario HU-01..HU-15", "estado": "aprobado" },
+        { "id": "QG-5", "fase": "F5", "nombre": "Validación Psicométrica Fany 2024", "metrica": "Anexo 2 en blanco e Instrumentos 01-03 emitidos (DEC-015/016/020)", "estado": "aprobado" },
+        { "id": "QG-6", "fase": "F6", "nombre": "Pipeline Bioestadístico", "metrica": "Control de calidad de 4 niveles y bloqueo ético activo", "estado": "aprobado" },
+        { "id": "QG-7", "fase": "F7", "nombre": "Resultados Inferenciales (n = 14)", "metrica": "Shapiro-Wilk y contraste pareado esperando datos/raw/MANIFEST.json", "estado": "bloqueado" },
+        { "id": "QG-8", "fase": "F8", "nombre": "Discusión y Conclusiones", "metrica": "Correspondencia 1:1 con OG, OE1, OE2 y OE3 tras fase de campo", "estado": "pendiente" },
+        { "id": "QG-9", "fase": "F9-F10", "nombre": "Compilación Quirúrgica OpenXML", "metrica": "informe_final_v02.docx auditado (0 flotantes · 300 DPI · 20/20 pre-campo)", "estado": "aprobado" }
+      ],
+      "tasks": [
+        {
+          "id": "task-01",
+          "titulo": "Homologar Matriz de Consistencia en 3 dimensiones (DEC-007 / DEC-027)",
+          "fase": "F1",
+          "capitulo": "Cap. I y Anexo 1",
+          "squad": "Squad B (Metodología y Psicometría)",
+          "subagente": "guardian-consistencia",
+          "estado": "completada",
+          "prioridad": "alta",
+          "comando": "python3 scripts/agentes/guardian_consistencia.py",
+          "entregable": "salidas/documentos/MATRIZ_CONSISTENCIA_Y_OPERACIONALIZACION_DEC007.docx"
+        },
+        {
+          "id": "task-02",
+          "titulo": "Auditar correspondencia 1:1 de citas APA 7 y referencias con sangría francesa",
+          "fase": "F2",
+          "capitulo": "Cap. II Marco Teórico",
+          "squad": "Squad A (Evidencia y Bibliometría)",
+          "subagente": "verificador-integridad",
+          "estado": "completada",
+          "prioridad": "alta",
+          "comando": "python3 scripts/agentes/verificador_integridad.py",
+          "entregable": "obsidian_vault/04_LITERATURA_Y_FUENTES/indices_pdf/"
+        },
+        {
+          "id": "task-03",
+          "titulo": "Documentar arquitectura y las 15 Historias de Usuario XP del sistema SIVAC",
+          "fase": "F3",
+          "capitulo": "Cap. III Sección 3.3",
+          "squad": "Squad C (Ingeniería de Software SIVAC)",
+          "subagente": "documentador-xp",
+          "estado": "completada",
+          "prioridad": "alta",
+          "comando": "python3 scripts/agentes/inventario_syncova.py",
+          "entregable": "salidas/documentos/CAPITULO_III_METODOLOGIA_E_INGENIERIA_XP_SIVAC.docx"
+        },
+        {
+          "id": "task-04",
+          "titulo": "Emitir Certificado Único de Validación Fany 2024 en blanco (DEC-015/016/020)",
+          "fase": "F3",
+          "capitulo": "Anexo 2 Instrumentos",
+          "squad": "Squad B (Metodología y Psicometría)",
+          "subagente": "especialista-instrumentos",
+          "estado": "completada",
+          "prioridad": "alta",
+          "comando": "python3 scripts/compiladores/generar_anexo2_validacion_fany.py",
+          "entregable": "salidas/documentos/anexos_fany/ANEXO_2_VALIDACION_FANY_INST03_MODALIDAD_A_VACIO.docx"
+        },
+        {
+          "id": "task-05",
+          "titulo": "Generar figuras arquitectónicas XP y flujo FEFO a 300 DPI exactos",
+          "fase": "F4",
+          "capitulo": "Cap. III y Cap. IV",
+          "squad": "Squad E (Redacción y Maquetación)",
+          "subagente": "maquetador-docx",
+          "estado": "completada",
+          "prioridad": "media",
+          "comando": "python3 scripts/figuras/generador_figuras_apa7.py",
+          "entregable": "salidas/figuras/fig_01_arquitectura_logica_sivac_300dpi.png"
+        },
+        {
+          "id": "task-06",
+          "titulo": "Auditar geometría OpenXML APA 7 de informe_final_v02.docx (márgenes y tablas)",
+          "fase": "F4",
+          "capitulo": "Informe Final v02",
+          "squad": "Squad E (Redacción y Maquetación)",
+          "subagente": "maquetador-docx",
+          "estado": "en_revision_jurado",
+          "prioridad": "alta",
+          "comando": "python3 scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx",
+          "entregable": "salidas/documentos/informe_final_v02.docx"
+        },
+        {
+          "id": "task-07",
+          "titulo": "Verificar control de calidad de campo y estado de bloqueo inferencial (n = 14)",
+          "fase": "F5",
+          "capitulo": "Cap. IV Resultados",
+          "squad": "Squad D (Bioestadística e Inferencia)",
+          "subagente": "analista-estadistico",
+          "estado": "en_progreso",
+          "prioridad": "alta",
+          "comando": "python3 scripts/estadistica/pipeline_inferencial.py --json",
+          "entregable": "salidas/reportes_estadisticos/ESTADO_PIPELINE_INFERENCIAL.md"
+        },
+        {
+          "id": "task-08",
+          "titulo": "Recolección empírica en DISA Apurímac II y firma de datos/raw/MANIFEST.json",
+          "fase": "F5",
+          "capitulo": "Trabajo de Campo Censal",
+          "squad": "Squad D (Bioestadística e Inferencia)",
+          "subagente": "analista-estadistico",
+          "estado": "pendiente",
+          "prioridad": "alta",
+          "comando": "python3 scripts/estadistica/manifest_datos.py plantilla",
+          "entregable": "datos/plantillas/plantilla_campo_pretest_postest.xlsx"
+        },
+        {
+          "id": "task-09",
+          "titulo": "Simulación de sustentación vigesimal (0-20 pts) ante Jurado Revisor UNAJMA",
+          "fase": "F9",
+          "capitulo": "Informe Integral",
+          "squad": "Squad F (Gobernanza, Memoria y Evaluación Externa)",
+          "subagente": "jurado-revisor",
+          "estado": "en_revision_jurado",
+          "prioridad": "alta",
+          "comando": "python3 scripts/agentes/estado_granja.py",
+          "entregable": "salidas/reportes_jurado/DICTAMEN_AUDITORIA_PRELIMINAR_QG1_QG5.docx"
+        }
+      ]
+    },
+    {
+      "id": "proy-articulo-scopus-sivac",
+      "codigo": "ART-2026-SCOPUS",
+      "titulo": "IMPACTO DE UN SISTEMA WEB BASADO EN EXTREME PROGRAMMING SOBRE LA CONSISTENCIA DOCUMENTAL Y OPORTUNIDAD EN CADENAS DE SUMINISTRO DE VACUNAS",
+      "tipo": "Artículo Científico Original (IMRaD — Derivado de Tesis SIVAC)",
+      "tesista": "Bach. José Luis Quispe León",
+      "asesora": "Dra. Norma Lorena Catacora Flores",
+      "diseno": "Cuasi-experimental longitudinal (N = 14 establecimientos DISA Apurímac II)",
+      "faseActual": "F2",
+      "progreso": 40,
+      "variableIndependiente": "Arquitectura transaccional FEFO en SIVAC",
+      "variableDependiente": "Tiempos de despacho y exactitud de inventario biológico",
+      "dimensiones": [
+        "Eficiencia temporal de registro (T_reg, T_vale)",
+        "Integridad de registros de lotes (RSD, CPE)",
+        "Aceptación tecnológica TAM (AP, UP)"
+      ],
+      "qualityGates": [
+        { "id": "QG-0", "fase": "F0", "nombre": "Protocolo IMRaD y Selección de Revista", "metrica": "Estructura IMRaD + APA 7 configurada", "estado": "aprobado" },
+        { "id": "QG-1", "fase": "F1", "nombre": "Síntesis de Literatura Q1/Q2 (2021-2026)", "metrica": "Corpus indexado con DOIs verificados", "estado": "aprobado" },
+        { "id": "QG-2", "fase": "F2", "nombre": "Sección Methods & Software Architecture", "metrica": "Diagramas 300 DPI y diseño estadístico", "estado": "en_progreso" },
+        { "id": "QG-3", "fase": "F3", "nombre": "Results & Statistical Reporting", "metrica": "En espera de datos de campo certificados", "estado": "bloqueado" }
+      ],
+      "tasks": [
+        {
+          "id": "task-art-01",
+          "titulo": "Búsqueda sistemática de literatura sobre trazabilidad de vacunas e inmunizaciones",
+          "fase": "F1",
+          "capitulo": "Introduction & Related Work",
+          "squad": "Squad A (Evidencia y Bibliometría)",
+          "subagente": "investigador-bibliografico",
+          "estado": "completada",
+          "prioridad": "alta",
+          "comando": "python3 scripts/fuentes/buscador_citas.py",
+          "entregable": "obsidian_vault/04_LITERATURA_Y_FUENTES/indices_pdf/"
+        },
+        {
+          "id": "task-art-02",
+          "titulo": "Redacción de la sección Methodology y arquitectura técnica FEFO de SIVAC",
+          "fase": "F2",
+          "capitulo": "Materials and Methods",
+          "squad": "Squad E (Redacción y Maquetación)",
+          "subagente": "redactor-academico",
+          "estado": "en_progreso",
+          "prioridad": "alta",
+          "comando": "python3 scripts/agentes/revisor_prosa.py",
+          "entregable": "salidas/figuras/fig_04_flujo_kardex_feefo_vacunas_300dpi.png"
+        }
+      ]
+    }
+  ]
+}

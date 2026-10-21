@@ -1,0 +1,15 @@
+{
+  "archivo_png": "/app/applet/salidas/figuras/fig_02_ciclo_vida_xp_sivac_300dpi.png",
+  "sha256": "e63005f37dcc8beda7c72fe4d450aa273c9c970dd649b2721bd16fa4b8fac227",
+  "numero_figura": 2,
+  "titulo_apa7": "Fases de la metodología ágil Extreme Programming (XP) aplicadas al desarrollo de SIVAC",
+  "nota_apa7": "Adaptado de Extreme programming explained: Embrace change (p. 72), por K. Beck, 1999, Addison-Wesley.",
+  "dpi": [
+    300,
+    300
+  ],
+  "ancho_px": 1200,
+  "alto_px": 750,
+  "ancho_cm_impresion": 10.16,
+  "cumple_300dpi": true
+}

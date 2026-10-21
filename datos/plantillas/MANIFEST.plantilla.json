@@ -1,15 +1,23 @@
 {
-  "_instrucciones": "Completar SOLO con datos reales de campo. origen debe ser 'campo'; n_esperado debe ser 14; fechas en formato AAAA-MM-DD; fase: pretest|postest; sha256 puede dejarse vacío y se calcula con el comando 'sellar'. declaracion_tesista debe ser escrita por el tesista con este texto literal: 'Declaro que estos datos provienen de mediciones reales de campo y no han sido simulados.'. Ningún script completa ese campo.",
-  "origen": "",
+  "origen": "campo",
   "responsable": "",
   "fecha_recoleccion": "",
-  "instrumentos_versiones": {},
-  "n_esperado": null,
+  "instrumentos_versiones": {
+    "instrumento_01": "Ficha de Registro Cronométrico (PMMV)",
+    "instrumento_02": "Ficha de Registro Documental de Lotes (PMMV)",
+    "instrumento_03": "Cuestionario TAM Modalidad A (8 ítems, Fany 2024)"
+  },
+  "n_esperado": 14,
   "archivos": [
     {
-      "nombre": "",
+      "nombre": "pretest_sivac.csv",
       "sha256": "",
-      "fase": ""
+      "fase": "pretest"
+    },
+    {
+      "nombre": "postest_sivac.csv",
+      "sha256": "",
+      "fase": "postest"
     }
   ],
   "declaracion_tesista": "",

@@ -1,0 +1,26 @@
+{
+  "archivo": "minsa_2022_nts_196_esquema_nacional_vacunacion.pdf",
+  "ruta": "/app/applet/obsidian_vault/04_LITERATURA_Y_FUENTES/pdfs_fuentes/minsa_2022_nts_196_esquema_nacional_vacunacion.pdf",
+  "sha256": "728311a0327797562257041d92b61e7c41437ba494977a05ef835a8056e61f7b",
+  "total_paginas": 1,
+  "paginas": [
+    {
+      "indice": 1,
+      "etiqueta_impresa": "45",
+      "metodo_etiqueta": "encabezado_editorial",
+      "parrafos": [
+        {
+          "id": "p0001_01",
+          "n": 1,
+          "texto": "La cadena de frio y el control mensual de movimientos de vacunas y jeringas exigen el registro oportuno del numero de lote, fecha de vencimiento bajo el principio FEFO (First Expired, First Out) y conciliacion del Kardex fisico por establecimiento.",
+          "bbox": [
+            85,
+            700,
+            510,
+            745
+          ]
+        }
+      ]
+    }
+  ]
+}
