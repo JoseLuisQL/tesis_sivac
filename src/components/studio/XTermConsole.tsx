@@ -288,11 +288,11 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
           {/* Quick Preset Commands */}
           <div className="hidden xl:flex items-center gap-1.5 ml-1 overflow-x-auto no-scrollbar min-w-0">
             {[
-              { label: 'claude -p "hola"', cmd: 'claude --agent director-general -p "hola"' },
+              { label: 'claude "hola"', cmd: 'claude "hola"' },
+              { label: 'Avance Tesis', cmd: 'claude "como esta mi avance actual de mi tesis?"' },
               { label: 'claude --version', cmd: 'claude --version' },
               { label: 'droid --version', cmd: 'droid --version' },
               { label: 'bun --version', cmd: 'bun --version' },
-              { label: 'Estado Granja', cmd: 'claude --agent director-general -p "estado de los 14 agentes"' },
             ].map((preset) => (
               <button
                 key={preset.cmd}
@@ -349,13 +349,25 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
           >
             <span className="text-[11px] font-mono text-orange-400 flex items-center gap-1 whitespace-nowrap shrink-0">
               <Command className="w-3 h-3" />
-              <span>{activeSession} $</span>
+              <span>
+                {activeSession === 'claude-code'
+                  ? 'claude >'
+                  : activeSession === 'factory-droid'
+                  ? 'droid >'
+                  : 'bun $'}
+              </span>
             </span>
             <input
               type="text"
               value={quickInput}
               onChange={(e) => setQuickInput(e.target.value)}
-              placeholder='Escribe un mensaje al CLI del agente (ej. hola, claude -p "hola", audita citas APA 7, bun --version)...'
+              placeholder={
+                activeSession === 'claude-code'
+                  ? 'Escribe tu prompt para Claude Code CLI (ej. hola, como esta mi avance actual de mi tesis, audita citas APA 7)...'
+                  : activeSession === 'factory-droid'
+                  ? 'Escribe tu misión para Factory Droid CLI (ej. auditar consistencia, validar instrumentos)...'
+                  : 'Escribe un comando shell (ej. bun --version, python --version)...'
+              }
               className="flex-1 bg-transparent text-xs font-mono text-zinc-100 placeholder:text-zinc-600 focus:outline-none"
             />
             <button

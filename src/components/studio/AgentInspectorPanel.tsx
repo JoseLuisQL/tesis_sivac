@@ -54,10 +54,10 @@ export const AgentInspectorPanel: React.FC<AgentInspectorPanelProps> = ({
 
   const cliCommandPreview =
     engine === 'claude'
-      ? `claude --agent ${agent.id} -p "${defaultTask.replace(/"/g, '\\"')}"`
+      ? `claude  ➜  claude (@${agent.id}) > "${defaultTask.replace(/"/g, '\\"')}"`
       : engine === 'droid'
-      ? `droid exec --agent ${agent.id} "${defaultTask.replace(/"/g, '\\"')}"`
-      : `bun run --cwd . scripts/agent-runner.ts --agent=${agent.id}`;
+      ? `droid  ➜  droid (@${agent.id}) > "${defaultTask.replace(/"/g, '\\"')}"`
+      : `bun run scripts/bun_runner.ts --mode=bun --agent=${agent.id}`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(cliCommandPreview);
@@ -171,7 +171,13 @@ export const AgentInspectorPanel: React.FC<AgentInspectorPanelProps> = ({
             </button>
             <button
               type="button"
-              onClick={() => onRunInTerminal(cliCommandPreview)}
+              onClick={() =>
+                onRunInTerminal(
+                  engine === 'claude' || engine === 'droid'
+                    ? `${engine} -p "${defaultTask.replace(/"/g, '\\"')}"`
+                    : cliCommandPreview
+                )
+              }
               className="py-2 px-2.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.12] text-xs font-mono text-zinc-200 flex items-center gap-1 transition-colors whitespace-nowrap shrink-0"
               title="Ejecutar directamente en XTerm.js"
             >

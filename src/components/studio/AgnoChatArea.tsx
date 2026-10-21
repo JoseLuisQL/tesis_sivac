@@ -174,9 +174,9 @@ export const AgnoChatArea: React.FC<AgnoChatAreaProps> = ({
           <div className="hidden sm:flex items-center gap-2 text-[11px] font-mono text-zinc-400">
             <span>Bun: {bunCli?.installed ? bunCli.version : 'Activo'}</span>
             <span aria-hidden="true">·</span>
-            <span>Claude: {claudeCli?.installed ? 'CLI Local' : 'Bridge'}</span>
+            <span>Claude: {claudeCli?.installed ? claudeCli.version : 'Bridge'}</span>
             <span aria-hidden="true">·</span>
-            <span>Droid: {droidCli?.installed ? 'CLI Local' : 'Bridge'}</span>
+            <span>Droid: {droidCli?.installed ? droidCli.version : 'Bridge'}</span>
           </div>
 
           <button

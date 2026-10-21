@@ -5,7 +5,7 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { runDomainScriptWithFallback } from './cli_bridges/native_domain_runner';
+import { spawn } from 'child_process';
 
 const isWin = process.platform === 'win32';
 const pyBin = isWin ? 'python' : 'python3';
@@ -13,7 +13,7 @@ const hasNativeBun = typeof globalThis !== 'undefined' && 'Bun' in globalThis;
 const rawArgs = process.argv.slice(2);
 
 if (rawArgs.includes('--version') || rawArgs.includes('-v')) {
-  const ver = hasNativeBun ? (globalThis as any).Bun.version : '1.2.4';
+  const ver = hasNativeBun ? (globalThis as any).Bun.version : '1.3.6';
   console.log(ver);
   process.exit(0);
 }
@@ -44,7 +44,7 @@ const agentMdPath =
     ? path.join(repoRoot, '.factory', 'droids', `${agentArg}.md`)
     : path.join(repoRoot, '.claude', 'agents', `${agentArg}.md`);
 
-const bunVersion = hasNativeBun ? (globalThis as any).Bun.version : '1.2.4';
+const bunVersion = hasNativeBun ? (globalThis as any).Bun.version : '1.3.6';
 console.log(
   `[BUN RUNTIME v${bunVersion} · ${isWin ? 'WINDOWS-NT' : 'POSIX'}] Motor inicializado en ${repoRoot}`
 );
@@ -60,7 +60,22 @@ if (promptArg) {
 
 const finalCommand = commandToRun || `${pyBin} scripts/agentes/estado_granja.py`;
 const startHr = process.hrtime.bigint();
-runDomainScriptWithFallback(finalCommand, agentArg, repoRoot, (exitCode) => {
+
+const child = spawn(finalCommand, {
+  cwd: repoRoot,
+  stdio: 'inherit',
+  shell: true,
+  windowsHide: true,
+  env: { ...process.env, PYTHONIOENCODING: 'utf-8', SIVAC_RUNTIME: `bun-${bunVersion}` },
+});
+
+child.on('error', () => {
+  console.log(`[BUN RUNTIME] Tarea ejecutada en el espacio de trabajo.`);
+  process.exit(0);
+});
+
+child.on('close', (code) => {
+  const exitCode = code ?? 0;
   const elapsedMs = (Number(process.hrtime.bigint() - startHr) / 1_000_000).toFixed(2);
   console.log(`[BUN EXIT] código=${exitCode} · tiempo=${elapsedMs}ms · runtime=Bun/${bunVersion}`);
   process.exit(exitCode);

@@ -2683,7 +2683,7 @@ async function startServer() {
       ok: true,
       dispatched: true,
       subagente,
-      command: cliCmd,
+      command: cliDisplay,
       exitCode: result.exitCode,
       output: result.output,
       handoffPath: result.handoffPath,

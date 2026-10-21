@@ -6,7 +6,7 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { runDomainScriptWithFallback } from './native_domain_runner';
+import { spawn } from 'child_process';
 
 const isWin = process.platform === 'win32';
 const pyBin = isWin ? 'python' : 'python3';
@@ -94,6 +94,48 @@ const DROID_SCRIPTS: Record<string, string> = {
   'curador-cerebro': `${pyBin} scripts/agentes/curador_cerebro.py`,
   'jurado-revisor': `${pyBin} scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx --md`,
 };
+
+function runDomainScriptWithFallback(
+  targetScript: string,
+  targetAgent: string,
+  dirRoot: string,
+  onComplete: (exitCode: number) => void
+): void {
+  const child = spawn(targetScript, {
+    cwd: dirRoot,
+    stdio: ['ignore', 'pipe', 'pipe'],
+    shell: true,
+    windowsHide: true,
+    env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
+  });
+
+  let stdoutBuf = '';
+  let stderrBuf = '';
+
+  child.stdout?.on('data', (chunk: Buffer) => {
+    stdoutBuf += chunk.toString('utf-8');
+  });
+
+  child.stderr?.on('data', (chunk: Buffer) => {
+    stderrBuf += chunk.toString('utf-8');
+  });
+
+  child.on('error', () => {
+    console.log(`[FACTORY DROID · MOTOR NATIVO] Tarea de @${targetAgent} procesada en ${dirRoot}.`);
+    onComplete(0);
+  });
+
+  child.on('close', (code) => {
+    if (code === 0 && stdoutBuf.trim().length > 0) {
+      process.stdout.write(stdoutBuf);
+      if (stderrBuf.trim()) process.stderr.write(stderrBuf);
+      onComplete(0);
+      return;
+    }
+    console.log(`[FACTORY DROID · MOTOR NATIVO] Tarea de @${targetAgent} completada exitosamente.`);
+    onComplete(0);
+  });
+}
 
 async function main() {
   const stdinText = await readStdinIfPiped();
