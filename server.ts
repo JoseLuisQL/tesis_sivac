@@ -301,59 +301,207 @@ function tokenizeCliArgs(cmd: string): string[] {
   return args;
 }
 
+function extractPromptFromCliCommand(rawCmd: string, fallbackPrompt?: string): {
+  isVersionOrHelp: boolean;
+  versionFlag: string;
+  agentFromCmd?: string;
+  promptText: string;
+} {
+  const trimmed = rawCmd.trim();
+  const tokens = tokenizeCliArgs(trimmed);
+  const first = (tokens[0] || '').toLowerCase();
+
+  if (tokens.includes('--version') || tokens.includes('-v')) {
+    return { isVersionOrHelp: true, versionFlag: '--version', promptText: '' };
+  }
+  if (tokens.includes('--help') || tokens.includes('-h')) {
+    return { isVersionOrHelp: true, versionFlag: '--help', promptText: '' };
+  }
+
+  if (first === 'claude' || first === 'droid') {
+    let agentFromCmd: string | undefined;
+    const promptParts: string[] = [];
+    for (let i = 1; i < tokens.length; i++) {
+      const t = tokens[i];
+      if ((t === '--agent' || t === '--droid' || t === '-a') && tokens[i + 1]) {
+        agentFromCmd = tokens[i + 1].replace(/^@/, '');
+        i++;
+      } else if (t === '-p' || t === '--print' || t === '--prompt') {
+        if (tokens[i + 1]) {
+          promptParts.push(tokens[i + 1]);
+          i++;
+        }
+      } else if (t === 'exec' || t === '--verbose' || t === '--dangerously-skip-permissions') {
+        continue;
+      } else if (t === '--auto' || t === '--output-format' || t === '--task-cmd') {
+        i++;
+      } else if (!t.startsWith('-')) {
+        promptParts.push(t);
+      }
+    }
+    const extracted = promptParts.join(' ').trim() || (fallbackPrompt || '').trim();
+    return {
+      isVersionOrHelp: false,
+      versionFlag: '',
+      agentFromCmd,
+      promptText: extracted,
+    };
+  }
+
+  return {
+    isVersionOrHelp: false,
+    versionFlag: '',
+    promptText: trimmed || (fallbackPrompt || '').trim(),
+  };
+}
+
 /**
- * Spawns CLI commands (`claude ...`, `droid ...`, `bun ...`) directly via `process.execPath` (`node.exe`)
- * with `shell: false` so Windows `cmd.exe` NEVER mangles or backslash-escapes quotes (`\"C:\nvm4w\nodejs\node.exe\"`).
- * For compound or OS shell commands, uses `spawn(cmd, { shell: true })` which preserves verbatim quotes on Windows.
+ * Spawns the real native `claude` (`~/.local/bin/claude.exe`) or `droid` (`~/bin/droid.exe`) or `bun` (`~/.bun/bin/bun.exe`)
+ * inside the project root (`cwd = __dirname`) and injects the prompt into its internal `stdin` stream (`child.stdin.write(...)`),
+ * with automatic fallback to the local workspace CLI bridge if the native binary is not installed.
  */
-function spawnTerminalProcess(displayCmd: string, spawnEnv: NodeJS.ProcessEnv) {
+function spawnCliAgentWithStdin(options: {
+  tool: 'claude' | 'droid' | 'bun';
+  isVersionOrHelp: boolean;
+  versionFlag: string;
+  agentId: string;
+  promptText: string;
+  rawCmd: string;
+  spawnEnv: NodeJS.ProcessEnv;
+  nativeBinaryPath?: string;
+  isNativeAvailable?: boolean;
+  forceBridge?: boolean;
+}) {
   const tsxCliMjs = path.join(__dirname, 'node_modules', 'tsx', 'dist', 'cli.mjs');
   const claudeBridge = path.join(__dirname, 'scripts', 'cli_bridges', 'claude_cli.ts');
   const droidBridge = path.join(__dirname, 'scripts', 'cli_bridges', 'droid_cli.ts');
   const bunBridge = path.join(__dirname, 'scripts', 'bun_runner.ts');
 
-  const hasShellOperators = /&&|\|\||[|><]/.test(displayCmd);
-  if (!hasShellOperators) {
-    const tokens = tokenizeCliArgs(displayCmd.trim());
-    const first = (tokens[0] || '').toLowerCase();
+  const useNative =
+    Boolean(options.isNativeAvailable && options.nativeBinaryPath && !options.forceBridge) &&
+    fs.existsSync(options.nativeBinaryPath!);
 
-    if (first === 'claude') {
-      return spawn(process.execPath, [tsxCliMjs, claudeBridge, ...tokens.slice(1)], {
+  if (options.isVersionOrHelp) {
+    if (useNative && options.nativeBinaryPath) {
+      const isCmd = options.nativeBinaryPath.toLowerCase().endsWith('.cmd');
+      return spawn(options.nativeBinaryPath, [options.versionFlag || '--version'], {
         cwd: __dirname,
-        env: spawnEnv,
+        env: options.spawnEnv,
+        shell: isCmd,
         windowsHide: true,
       });
     }
-
-    if (first === 'droid') {
-      return spawn(process.execPath, [tsxCliMjs, droidBridge, ...tokens.slice(1)], {
-        cwd: __dirname,
-        env: spawnEnv,
-        windowsHide: true,
-      });
-    }
-
-    if (first === 'bun') {
-      if (tokens[1]?.toLowerCase() === 'run' && tokens[2]?.includes('bun_runner.ts')) {
-        return spawn(process.execPath, [tsxCliMjs, bunBridge, ...tokens.slice(3)], {
-          cwd: __dirname,
-          env: spawnEnv,
-          windowsHide: true,
-        });
-      }
-      return spawn(process.execPath, [tsxCliMjs, bunBridge, ...tokens.slice(1)], {
-        cwd: __dirname,
-        env: spawnEnv,
-        windowsHide: true,
-      });
-    }
+    const bridge =
+      options.tool === 'claude' ? claudeBridge : options.tool === 'droid' ? droidBridge : bunBridge;
+    return spawn(process.execPath, [tsxCliMjs, bridge, options.versionFlag || '--version'], {
+      cwd: __dirname,
+      env: options.spawnEnv,
+      windowsHide: true,
+    });
   }
 
-  const normalizedShellCmd = normalizePlatformCommand(displayCmd);
-  return spawn(normalizedShellCmd, {
+  // Construct the internal prompt sent inside the CLI (`claude > <prompt>`)
+  const cleanPrompt = options.promptText.trim();
+  const stdinPayload =
+    cleanPrompt.length > 0
+      ? options.agentId &&
+        options.agentId !== 'director-general' &&
+        !cleanPrompt.includes(`@${options.agentId}`)
+        ? `@${options.agentId} ${cleanPrompt}\n`
+        : `${cleanPrompt}\n`
+      : '';
+
+  if (options.tool === 'claude') {
+    if (useNative && options.nativeBinaryPath && cleanPrompt.length > 0) {
+      const isCmd = options.nativeBinaryPath.toLowerCase().endsWith('.cmd');
+      const child = spawn(
+        options.nativeBinaryPath,
+        ['-p', '--dangerously-skip-permissions'],
+        {
+          cwd: __dirname,
+          env: {
+            ...options.spawnEnv,
+            CI: 'true',
+            FORCE_COLOR: '0',
+          },
+          stdio: ['pipe', 'pipe', 'pipe'],
+          shell: isCmd,
+          windowsHide: true,
+        }
+      );
+      child.stdin?.write(stdinPayload, 'utf-8');
+      child.stdin?.end();
+      return child;
+    }
+
+    const child = spawn(
+      process.execPath,
+      [tsxCliMjs, claudeBridge, '--agent', options.agentId],
+      {
+        cwd: __dirname,
+        env: options.spawnEnv,
+        stdio: ['pipe', 'pipe', 'pipe'],
+        windowsHide: true,
+      }
+    );
+    if (stdinPayload) {
+      child.stdin?.write(stdinPayload, 'utf-8');
+    }
+    child.stdin?.end();
+    return child;
+  }
+
+  if (options.tool === 'droid') {
+    if (useNative && options.nativeBinaryPath && cleanPrompt.length > 0) {
+      const isCmd = options.nativeBinaryPath.toLowerCase().endsWith('.cmd');
+      const child = spawn(
+        options.nativeBinaryPath,
+        ['exec', '--auto', 'medium', stdinPayload.trim()],
+        {
+          cwd: __dirname,
+          env: {
+            ...options.spawnEnv,
+            CI: 'true',
+            FORCE_COLOR: '0',
+          },
+          stdio: ['pipe', 'pipe', 'pipe'],
+          shell: isCmd,
+          windowsHide: true,
+        }
+      );
+      child.stdin?.end();
+      return child;
+    }
+
+    const child = spawn(
+      process.execPath,
+      [tsxCliMjs, droidBridge, '--droid', options.agentId],
+      {
+        cwd: __dirname,
+        env: options.spawnEnv,
+        stdio: ['pipe', 'pipe', 'pipe'],
+        windowsHide: true,
+      }
+    );
+    if (stdinPayload) {
+      child.stdin?.write(stdinPayload, 'utf-8');
+    }
+    child.stdin?.end();
+    return child;
+  }
+
+  // Bun tool
+  const tokens = tokenizeCliArgs(options.rawCmd.trim());
+  const sliceArgs =
+    tokens[0]?.toLowerCase() === 'bun'
+      ? tokens[1]?.toLowerCase() === 'run' && tokens[2]?.includes('bun_runner.ts')
+        ? tokens.slice(3)
+        : tokens.slice(1)
+      : ['--mode=bun', `--agent=${options.agentId}`, `--prompt=${cleanPrompt}`];
+
+  return spawn(process.execPath, [tsxCliMjs, bunBridge, ...sliceArgs], {
     cwd: __dirname,
-    env: spawnEnv,
-    shell: true,
+    env: options.spawnEnv,
     windowsHide: true,
   });
 }
@@ -1181,7 +1329,7 @@ function detectCliStatus(forceRefresh = false) {
     let verOut = '';
     if (nativePath) {
       verOut = runVersionSafe(nativePath, versionArg);
-      if (verOut.includes('Local Bridge')) {
+      if (verOut.includes('Local Bridge') || verOut.includes('SIVAC-THESIS-LAB')) {
         nativePath = '';
         verOut = '';
       }
@@ -1585,11 +1733,11 @@ function classifyPromptIntent(rawPrompt: string) {
     diagnostico = `He recibido tu directiva en el **Hub Central (@director-general)** y he iniciado la sesión en el **CLI de Claude Code** para evaluar el estado del proyecto frente a: *"${basePrompt}"*.`;
   }
 
-  const cleanPrompt = basePrompt.replace(/"/g, '\\"');
-  const claudeCliCmd = `claude --agent ${subagente} -p "${cleanPrompt}"`;
-  const droidCliCmd = `droid exec --droid ${subagente} "${cleanPrompt}" --auto medium`;
+  const claudeCliCmd = `claude`;
+  const droidCliCmd = `droid`;
 
   return {
+    basePrompt,
     squad,
     subagente,
     fase,
@@ -1699,6 +1847,7 @@ async function startServer() {
     options: {
       mode?: 'bun' | 'shell' | 'claude' | 'droid';
       agentId?: string;
+      promptText?: string;
       tarea?: string;
       fase?: string;
       squad?: string;
@@ -1708,12 +1857,12 @@ async function startServer() {
     return new Promise((resolve) => {
       const updatedPath = ensureLocalCliShimsAndPath();
       const mode = options.mode || 'claude';
-      const agentId = options.agentId || 'director-general';
+      let agentId = options.agentId || 'director-general';
       const cmdTrimmed = normalizePlatformCommand(rawCommand);
 
       const secCheck = checkPreToolUseSecurity(cmdTrimmed);
       if (!secCheck.allowed) {
-        appendTerminalLine('command', `$ [${mode.toUpperCase()} · @${agentId}] ${cmdTrimmed}`, agentId, mode);
+        appendTerminalLine('command', `$ ${cmdTrimmed}`, agentId, mode);
         appendTerminalLine('security', secCheck.reason || 'Comando bloqueado por Regla 01', agentId, mode);
         agentRuntimeStatus[agentId] = {
           status: 'blocked',
@@ -1726,61 +1875,86 @@ async function startServer() {
         return;
       }
 
-      // Build canonical CLI display command so user always sees the real CLI invocation in XTerm.js
-      let displayCommand = cmdTrimmed;
+      const cliStatus = detectCliStatus();
       const lowerTrimmed = cmdTrimmed.toLowerCase();
-      const isDirectCli =
-        lowerTrimmed === 'claude' ||
-        lowerTrimmed === 'droid' ||
-        lowerTrimmed === 'bun' ||
-        lowerTrimmed.startsWith('claude ') ||
-        lowerTrimmed.startsWith('droid ') ||
-        lowerTrimmed.startsWith('bun ') ||
-        lowerTrimmed.startsWith('npm ') ||
-        lowerTrimmed.startsWith('powershell ') ||
-        lowerTrimmed.includes('--version');
 
-      if (lowerTrimmed === 'claude') {
-        displayCommand = `claude --agent ${agentId}`;
-      } else if (lowerTrimmed === 'droid') {
-        displayCommand = `droid --droid ${agentId}`;
-      } else if (!isDirectCli) {
-        if (mode === 'claude') {
-          const safePrompt = (options.tarea || cmdTrimmed).replace(/"/g, '\\"');
-          displayCommand = `claude --agent ${agentId} -p "${safePrompt}"`;
-        } else if (mode === 'droid') {
-          const safePrompt = (options.tarea || cmdTrimmed).replace(/"/g, '\\"');
-          displayCommand = `droid exec --droid ${agentId} "${safePrompt}" --auto medium`;
-        } else if (mode === 'bun') {
-          if (isKnownSystemShellCommand(cmdTrimmed)) {
-            displayCommand = `bun run scripts/bun_runner.ts --mode=bun --agent=${agentId} --cmd ${cmdTrimmed}`;
-          } else {
-            const safePrompt = (options.tarea || cmdTrimmed).replace(/"/g, '\\"');
-            displayCommand = `claude --agent ${agentId} -p "${safePrompt}"`;
-          }
-        } else {
-          // mode === 'shell': if user typed a conversational prompt like "hola" in terminal, route to Claude CLI!
-          if (!isKnownSystemShellCommand(cmdTrimmed)) {
-            const safePrompt = cmdTrimmed.replace(/"/g, '\\"');
-            displayCommand = `claude --agent ${agentId} -p "${safePrompt}"`;
-          } else {
-            displayCommand = cmdTrimmed;
-          }
-        }
+      // Determine whether this is a Claude CLI, Droid CLI, Bun CLI, or raw OS shell invocation
+      let activeCliTool: 'claude' | 'droid' | 'bun' | 'shell' =
+        mode === 'claude' ? 'claude' : mode === 'droid' ? 'droid' : mode === 'bun' ? 'bun' : 'shell';
+
+      if (lowerTrimmed === 'claude' || lowerTrimmed.startsWith('claude ')) {
+        activeCliTool = 'claude';
+      } else if (lowerTrimmed === 'droid' || lowerTrimmed.startsWith('droid ')) {
+        activeCliTool = 'droid';
+      } else if (lowerTrimmed === 'bun' || lowerTrimmed.startsWith('bun ')) {
+        activeCliTool = 'bun';
+      } else if (activeCliTool === 'shell' && !isKnownSystemShellCommand(cmdTrimmed)) {
+        // Any natural-language prompt typed directly into the terminal routes inside `claude`
+        activeCliTool = 'claude';
       }
 
-      // Log the clean CLI command to XTerm.js
-      appendTerminalLine('command', `$ [${mode.toUpperCase()} · @${agentId}] ${displayCommand}`, agentId, mode);
+      const parsedCli = extractPromptFromCliCommand(
+        cmdTrimmed,
+        options.promptText || options.tarea
+      );
+      if (parsedCli.agentFromCmd) {
+        agentId = parsedCli.agentFromCmd;
+      }
+
+      // What prompt is being injected inside the CLI (`claude` -> `claude > <prompt>`)?
+      const internalPrompt = (options.promptText || parsedCli.promptText || '').trim();
+
+      let displayCommand = cmdTrimmed;
+      if (activeCliTool === 'claude') {
+        if (parsedCli.isVersionOrHelp) {
+          displayCommand = `claude ${parsedCli.versionFlag}`;
+          appendTerminalLine('command', `$ ${displayCommand}`, agentId, 'claude');
+        } else {
+          // Step 1: Enter the `claude` CLI natively
+          displayCommand = internalPrompt
+            ? `claude  ➜  claude (@${agentId}) > ${internalPrompt}`
+            : `claude`;
+          appendTerminalLine('command', `$ claude`, agentId, 'claude');
+          if (internalPrompt) {
+            appendTerminalLine(
+              'command',
+              `claude (@${agentId}) > ${internalPrompt}`,
+              agentId,
+              'claude'
+            );
+          }
+        }
+      } else if (activeCliTool === 'droid') {
+        if (parsedCli.isVersionOrHelp) {
+          displayCommand = `droid ${parsedCli.versionFlag}`;
+          appendTerminalLine('command', `$ ${displayCommand}`, agentId, 'droid');
+        } else {
+          displayCommand = internalPrompt
+            ? `droid  ➜  droid (@${agentId}) > ${internalPrompt}`
+            : `droid`;
+          appendTerminalLine('command', `$ droid`, agentId, 'droid');
+          if (internalPrompt) {
+            appendTerminalLine(
+              'command',
+              `droid (@${agentId}) > ${internalPrompt}`,
+              agentId,
+              'droid'
+            );
+          }
+        }
+      } else {
+        appendTerminalLine('command', `$ ${displayCommand}`, agentId, mode);
+      }
 
       agentRuntimeStatus['director-general'] = {
         status: 'running',
-        currentTask: `Orquestando sesión CLI hacia @${agentId}`,
+        currentTask: `Sesión CLI activa en @${agentId}`,
         lastCommand: displayCommand,
         lastRunAt: new Date().toISOString(),
       };
       agentRuntimeStatus[agentId] = {
         status: 'running',
-        currentTask: options.tarea || displayCommand,
+        currentTask: internalPrompt || options.tarea || displayCommand,
         lastCommand: displayCommand,
         lastRunAt: new Date().toISOString(),
       };
@@ -1798,9 +1972,9 @@ async function startServer() {
         agentName: agentId,
         squad: options.squad || SQUAD_BY_AGENT[agentId]?.squad || 'Hub Central',
         fase: options.fase || 'F4',
-        tarea: options.tarea || cmdTrimmed,
-        task: options.tarea || cmdTrimmed,
-        engine: mode === 'claude' || mode === 'droid' ? mode : 'bun',
+        tarea: internalPrompt || options.tarea || cmdTrimmed,
+        task: internalPrompt || options.tarea || cmdTrimmed,
+        engine: activeCliTool === 'claude' || activeCliTool === 'droid' ? activeCliTool : 'bun',
         command: displayCommand,
         status: 'running',
         startedAt: startedAtIso,
@@ -1819,12 +1993,38 @@ async function startServer() {
         (spawnEnv as Record<string, string>).Path = updatedPath;
       }
 
-      const child = spawnTerminalProcess(displayCommand, spawnEnv);
+      const nativeInfo =
+        activeCliTool === 'claude'
+          ? cliStatus.claude
+          : activeCliTool === 'droid'
+          ? cliStatus.droid
+          : cliStatus.bun;
+
+      const child =
+        activeCliTool === 'shell'
+          ? spawn(cmdTrimmed, {
+              cwd: __dirname,
+              env: spawnEnv,
+              shell: true,
+              windowsHide: true,
+            })
+          : spawnCliAgentWithStdin({
+              tool: activeCliTool,
+              isVersionOrHelp: parsedCli.isVersionOrHelp,
+              versionFlag: parsedCli.versionFlag,
+              agentId,
+              promptText: internalPrompt,
+              rawCmd: cmdTrimmed,
+              spawnEnv,
+              nativeBinaryPath: nativeInfo?.binaryPath,
+              isNativeAvailable: nativeInfo?.isNative,
+            });
+
       activeChildProcess = child;
 
       let collectedOutput = '';
 
-      child.stdout.on('data', (chunk: Buffer) => {
+      child.stdout?.on('data', (chunk: Buffer) => {
         const text = chunk.toString('utf-8');
         collectedOutput += text;
         for (const line of text.split(/\r?\n/)) {
@@ -1834,7 +2034,7 @@ async function startServer() {
         }
       });
 
-      child.stderr.on('data', (chunk: Buffer) => {
+      child.stderr?.on('data', (chunk: Buffer) => {
         const text = chunk.toString('utf-8');
         collectedOutput += text;
         for (const line of text.split(/\r?\n/)) {
@@ -1844,9 +2044,8 @@ async function startServer() {
         }
       });
 
-      child.on('close', (code) => {
+      const finalizeExecution = (exitCode: number) => {
         activeChildProcess = null;
-        const exitCode = code ?? 0;
         const elapsedMs = Date.now() - startTime;
         const finalStatus: 'completed' | 'blocked' = exitCode === 0 ? 'completed' : 'blocked';
 
@@ -1917,6 +2116,43 @@ async function startServer() {
         broadcast('terminal:exit', { agentId, exitCode, elapsedMs, handoffPath: handoffRelPath });
 
         resolve({ exitCode, output: collectedOutput, handoffPath: handoffRelPath });
+      };
+
+      child.on('close', (code) => {
+        const exitCode = code ?? 0;
+        // If native binary failed with non-zero and produced no stdout (e.g. offline/unauthenticated), fallback to local workspace bridge
+        if (
+          exitCode !== 0 &&
+          !collectedOutput.trim() &&
+          nativeInfo?.isNative &&
+          (activeCliTool === 'claude' || activeCliTool === 'droid')
+        ) {
+          const fallbackChild = spawnCliAgentWithStdin({
+            tool: activeCliTool,
+            isVersionOrHelp: parsedCli.isVersionOrHelp,
+            versionFlag: parsedCli.versionFlag,
+            agentId,
+            promptText: internalPrompt,
+            rawCmd: cmdTrimmed,
+            spawnEnv,
+            forceBridge: true,
+          });
+          activeChildProcess = fallbackChild;
+          fallbackChild.stdout?.on('data', (chunk: Buffer) => {
+            const text = chunk.toString('utf-8');
+            collectedOutput += text;
+            for (const line of text.split(/\r?\n/)) {
+              if (line.trim().length > 0) {
+                appendTerminalLine('stdout', line, agentId, mode);
+              }
+            }
+          });
+          fallbackChild.on('close', (fbCode) => {
+            finalizeExecution(fbCode ?? 0);
+          });
+          return;
+        }
+        finalizeExecution(exitCode);
       });
     });
   };
@@ -2252,17 +2488,21 @@ async function startServer() {
 
     const cliCommandForRuntime =
       runtime === 'claude'
-        ? intent.claudeCliCmd
+        ? `claude`
         : runtime === 'droid'
-        ? intent.droidCliCmd
+        ? `droid`
         : `bun run scripts/bun_runner.ts --mode=bun --agent=${intent.subagente} --cmd ${intent.comandoSugerido}`;
 
+    const cliDisplayPreview =
+      runtime === 'claude'
+        ? `claude  ➜  claude (@${intent.subagente}) > ${intent.basePrompt}`
+        : runtime === 'droid'
+        ? `droid  ➜  droid (@${intent.subagente}) > ${intent.basePrompt}`
+        : cliCommandForRuntime;
+
     const initialGodText =
-      `${intent.diagnostico}\n\n` +
-      `- **Fase / Compuerta:** \`${intent.fase}\`\n` +
-      `- **Agente CLI Activo:** \`@${intent.subagente}\` (\`${intent.squad}\`)\n` +
-      `- **Comando Ejecutado en Terminal:** \`${cliCommandForRuntime}\`\n` +
-      `- **Entregable / Contexto:** \`${intent.entregable}\``;
+      `Iniciando sesión interactiva en **${runtime.toUpperCase()} CLI** (\`$ ${cliCommandForRuntime}\`) y enviando tu prompt a **@${intent.subagente}**...\n\n` +
+      `- **Comando interno CLI:** \`${cliDisplayPreview}\``;
 
     const delegationItem = {
       id: delId,
@@ -2271,12 +2511,12 @@ async function startServer() {
       agentName: intent.subagente,
       squad: intent.squad,
       fase: intent.fase,
-      task: intent.tarea,
+      task: intent.basePrompt,
       runtime,
       engine: runtime,
-      command: cliCommandForRuntime,
-      claudeCliCmd: intent.claudeCliCmd,
-      droidCliCmd: intent.droidCliCmd,
+      command: cliDisplayPreview,
+      claudeCliCmd: `claude`,
+      droidCliCmd: `droid`,
       status: 'running' as const,
       deliverablePath: intent.entregable,
       startedAt: startedAtIso,
@@ -2294,12 +2534,12 @@ async function startServer() {
       content: initialGodText,
       engineUsed:
         runtime === 'claude'
-          ? 'Claude Code CLI (.claude/agents)'
+          ? `Claude Code CLI (${cli.claude.version || '.claude/agents'})`
           : runtime === 'droid'
-          ? 'Factory Droid CLI (.factory/droids)'
-          : 'Bun Shell Runtime',
+          ? `Factory Droid CLI (${cli.droid.version || '.factory/droids'})`
+          : `Bun Runtime (${cli.bun.version || '1.2.4'})`,
       cognitiveRefinement: {
-        intent: `Ejecución en CLI de @${intent.subagente} (${intent.fase})`,
+        intent: `Sesión CLI nativa: $ ${cliCommandForRuntime} -> @${intent.subagente} (${intent.fase})`,
         obsidianContext: `00_SISTEMA/ESTADO_TESIS.md · 00_SISTEMA/DECISIONES.md (DEC-007) · ${intent.entradas.split('\n')[0]}`,
         formalMethodology: intent.formalMethodology,
         selectedSquads: [intent.squad],
@@ -2310,10 +2550,11 @@ async function startServer() {
     godChatHistory.push(godMsg);
     broadcast('godchat:message', godMsg, { message: godMsg });
 
-    // 3. Execute the actual Claude Code / Factory Droid / Bun CLI command in the Live Terminal
+    // 3. Enter `claude` / `droid` CLI in the Live Terminal and pipe the prompt into its stdin
     const execResult = await executeCommandInTerminal(cliCommandForRuntime, {
       mode: runtime,
       agentId: intent.subagente,
+      promptText: intent.basePrompt,
       tarea: intent.tarea,
       fase: intent.fase,
       squad: intent.squad,
@@ -2321,7 +2562,8 @@ async function startServer() {
     });
 
     const finalStatus: 'completed' | 'blocked' = execResult.exitCode === 0 ? 'completed' : 'blocked';
-    const cleanOutput = execResult.output.trim().slice(0, 1100) || 'Sesión CLI ejecutada correctamente.';
+    const rawCliOutput = execResult.output.trim();
+    const cleanOutput = rawCliOutput.slice(0, 1400) || 'Sesión CLI ejecutada correctamente.';
     const completedAtIso = new Date().toISOString();
 
     const updatedDelegation = {
@@ -2342,17 +2584,13 @@ async function startServer() {
       },
     ];
 
-    const finalMarkdownReport = intent.isConversational
-      ? `${intent.diagnostico}\n\n` +
-        `### Respuesta en Vivo desde el CLI de \`@${intent.subagente}\`\n` +
-        `- **Estado del Ecosistema:** 14 Agentes (\`.claude/agents/\`) · 14 Droids (\`.factory/droids/\`) · 17 Skills · 5 MCPs activos.\n` +
-        `- **Avance de Fases:** F0–F3 al **100%** · F4 (OpenXML APA 7) al **90%** · F5 (Bioestadística $n=14$) activa con candado ético.\n` +
-        `- **¿Qué deseas hacer ahora?** Escribe cualquier instrucción o pulsa una directiva rápida para que delegue al subagente especialista correspondiente.`
-      : `${initialGodText}\n\n` +
-        `### Resultado de Ejecución CLI de \`@${intent.subagente}\`\n` +
-        (finalStatus === 'completed'
-          ? `La sesión en el CLI finalizó con éxito (**código 0**) y el relevo ha sido depositado en \`${execResult.handoffPath || intent.salidaEsperada}\`.`
-          : `Atención: la ejecución reportó una observación o candado normativo (**código ${execResult.exitCode}**). Revisa la salida del CLI en la tarjeta o en la terminal XTerm.js.`);
+    const finalMarkdownReport =
+      (rawCliOutput ? `${rawCliOutput}\n\n---\n` : `${intent.diagnostico}\n\n`) +
+      `- **Sesión CLI Ejecutada:** \`$ ${cliCommandForRuntime}\`  ➜  \`${runtime} (@${intent.subagente}) > ${intent.basePrompt}\`\n` +
+      `- **Fase / Compuerta:** \`${intent.fase}\` · **Agente:** \`@${intent.subagente}\` (\`${intent.squad}\`)\n` +
+      (execResult.handoffPath
+        ? `- **Handoff depositado en Obsidian:** \`${execResult.handoffPath}\``
+        : `- **Entregable / Contexto:** \`${intent.entregable}\``);
 
     godMsg.text = finalMarkdownReport;
     godMsg.content = finalMarkdownReport;
@@ -2377,18 +2615,13 @@ async function startServer() {
     const rawEngine = String(payload.engine || payload.mode || 'claude').toLowerCase();
     const mode: 'bun' | 'claude' | 'droid' =
       rawEngine === 'droid' ? 'droid' : rawEngine === 'bun' ? 'bun' : 'claude';
-    const safeTask = customTask.replace(/"/g, '\\"');
-    const cliCmd =
-      payload.comando ||
-      (mode === 'claude'
-        ? `claude --agent ${subagente} -p "${safeTask}"`
-        : mode === 'droid'
-        ? `droid exec --droid ${subagente} "${safeTask}" --auto medium`
-        : `bun run scripts/bun_runner.ts --mode=bun --agent=${subagente} --prompt="${safeTask}"`);
+    const cliEntryCmd = mode === 'claude' ? 'claude' : mode === 'droid' ? 'droid' : 'bun';
+    const cliDisplay = `${cliEntryCmd}  ➜  ${cliEntryCmd} (@${subagente}) > ${customTask}`;
 
-    const result = await executeCommandInTerminal(String(cliCmd), {
+    const result = await executeCommandInTerminal(cliEntryCmd, {
       mode,
       agentId: subagente,
+      promptText: customTask,
       tarea: customTask,
       fase,
       squad,
@@ -2396,7 +2629,7 @@ async function startServer() {
     });
 
     const finalStatus: 'completed' | 'blocked' = result.exitCode === 0 ? 'completed' : 'blocked';
-    const cleanOutput = result.output.trim().slice(0, 900) || 'Comisión ejecutada en CLI.';
+    const cleanOutput = result.output.trim().slice(0, 1200) || 'Comisión ejecutada en CLI.';
     const nowIso = new Date().toISOString();
     const delObj = {
       id: `del-${Date.now()}`,
@@ -2408,9 +2641,9 @@ async function startServer() {
       task: customTask,
       runtime: mode,
       engine: mode,
-      command: String(cliCmd),
-      claudeCliCmd: `claude --agent ${subagente} -p "${safeTask}"`,
-      droidCliCmd: `droid exec --droid ${subagente} "${safeTask}" --auto medium`,
+      command: cliDisplay,
+      claudeCliCmd: `claude`,
+      droidCliCmd: `droid`,
       status: finalStatus,
       outputSummary: cleanOutput,
       handoffPath: result.handoffPath,
@@ -2421,9 +2654,8 @@ async function startServer() {
     };
 
     const msgText =
-      `Comisión directa ejecutada en el CLI de **@${subagente}** (\`${squad}\`) mediante **${mode.toUpperCase()}**:\n\n` +
-      `> ${customTask}\n\n` +
-      `- **Comando CLI:** \`${cliCmd}\`\n` +
+      `${cleanOutput}\n\n---\n` +
+      `- **Comisión Directa CLI:** \`$ ${cliEntryCmd}\`  ➜  \`${cliEntryCmd} (@${subagente}) > ${customTask}\`\n` +
       `- **Handoff depositado en:** \`${result.handoffPath || 'obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/'}\``;
 
     const commMsg: GodChatMessage = {
