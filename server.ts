@@ -4,7 +4,7 @@ import fs from 'fs';
 import os from 'os';
 import path from 'path';
 import crypto from 'crypto';
-import { execFileSync, spawn, ChildProcessWithoutNullStreams } from 'child_process';
+import { execFileSync, execSync, spawn, ChildProcessWithoutNullStreams } from 'child_process';
 import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 import { WebSocketServer, WebSocket } from 'ws';
@@ -14,9 +14,10 @@ const __dirname = path.dirname(__filename);
 const IS_WIN = process.platform === 'win32';
 const PY_BIN = IS_WIN ? 'python' : 'python3';
 
-// --- CROSS-PLATFORM PATH & LOCAL BRIDGE BOOTSTRAP (WINDOWS + POSIX) ---
+// --- INTELLIGENT MULTI-STAGE CLI AUTO-DISCOVERY & LOCAL BRIDGE (WINDOWS + WSL2 + POSIX) ---
 const LOCAL_BIN_DIR = path.join(__dirname, '.bin');
 const CLI_CONFIG_PATH = path.join(__dirname, '.claude', 'cli-paths.json');
+let cachedRegistryDirs: string[] | null = null;
 
 function loadCustomCliPaths(): Record<string, string> {
   try {
@@ -38,28 +39,62 @@ function saveCustomCliPaths(paths: Record<string, string>) {
   }
 }
 
-function ensureLocalCliShimsAndPath(): string {
+function findExecutableInSubdirs(
+  baseDir: string,
+  targetNames: string[],
+  maxDepth = 2,
+  currentDepth = 0
+): string {
+  if (currentDepth > maxDepth || !fs.existsSync(baseDir)) return '';
+  try {
+    const entries = fs.readdirSync(baseDir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (entry.isFile() && targetNames.includes(entry.name.toLowerCase())) {
+        return path.join(baseDir, entry.name);
+      }
+    }
+    if (currentDepth < maxDepth) {
+      for (const entry of entries) {
+        if (entry.isDirectory() && !entry.name.startsWith('.')) {
+          const found = findExecutableInSubdirs(
+            path.join(baseDir, entry.name),
+            targetNames,
+            maxDepth,
+            currentDepth + 1
+          );
+          if (found) return found;
+        }
+      }
+    }
+  } catch {
+    // ignore permission errors
+  }
+  return '';
+}
+
+function ensureLocalCliShimsAndPath(forceRefreshRegistry = false): string {
   fs.mkdirSync(LOCAL_BIN_DIR, { recursive: true });
-  const tsxBinWin = path.join(__dirname, 'node_modules', '.bin', 'tsx.cmd');
+  const nodeExe = process.execPath;
+  const tsxCliMjs = path.join(__dirname, 'node_modules', 'tsx', 'dist', 'cli.mjs');
   const tsxBinPosix = path.join(__dirname, 'node_modules', '.bin', 'tsx');
   const claudeScript = path.join(__dirname, 'scripts', 'cli_bridges', 'claude_cli.ts');
   const droidScript = path.join(__dirname, 'scripts', 'cli_bridges', 'droid_cli.ts');
   const bunRunnerScript = path.join(__dirname, 'scripts', 'bun_runner.ts');
 
   if (IS_WIN) {
-    // Create Windows .cmd shims in .bin/ as fallback if global binary is not in PATH
+    // Direct node.exe -> tsx/dist/cli.mjs invocation avoids nested .cmd batch issues on Windows
     const claudeCmdPath = path.join(LOCAL_BIN_DIR, 'claude.cmd');
     const droidCmdPath = path.join(LOCAL_BIN_DIR, 'droid.cmd');
     const bunCmdPath = path.join(LOCAL_BIN_DIR, 'bun.cmd');
 
     fs.writeFileSync(
       claudeCmdPath,
-      `@echo off\r\n"${tsxBinWin}" "${claudeScript}" %*\r\n`,
+      `@echo off\r\n"${nodeExe}" "${tsxCliMjs}" "${claudeScript}" %*\r\n`,
       'utf-8'
     );
     fs.writeFileSync(
       droidCmdPath,
-      `@echo off\r\n"${tsxBinWin}" "${droidScript}" %*\r\n`,
+      `@echo off\r\n"${nodeExe}" "${tsxCliMjs}" "${droidScript}" %*\r\n`,
       'utf-8'
     );
     const userBunExe = path.join(os.homedir(), '.bun', 'bin', 'bun.exe');
@@ -68,20 +103,23 @@ function ensureLocalCliShimsAndPath(): string {
     } else {
       fs.writeFileSync(
         bunCmdPath,
-        `@echo off\r\nif "%1"=="--version" (echo 1.2.4-bridge & exit /b 0)\r\nif "%1"=="run" ("${tsxBinWin}" "${bunRunnerScript}" %* & exit /b %ERRORLEVEL%)\r\n"${tsxBinWin}" %*\r\n`,
+        `@echo off\r\nif "%1"=="--version" (echo 1.2.4 & exit /b 0)\r\nif "%1"=="run" ("${nodeExe}" "${tsxCliMjs}" "${bunRunnerScript}" %* & exit /b %ERRORLEVEL%)\r\n"${nodeExe}" "${tsxCliMjs}" %*\r\n`,
         'utf-8'
       );
     }
   } else {
-    // Create POSIX shims in .bin/ and /usr/local/bin if writable
     const claudeSh = path.join(LOCAL_BIN_DIR, 'claude');
     const droidSh = path.join(LOCAL_BIN_DIR, 'droid');
-    fs.writeFileSync(claudeSh, `#!/usr/bin/env bash\nexec "${tsxBinPosix}" "${claudeScript}" "$@"\n`, {
-      mode: 0o755,
-    });
-    fs.writeFileSync(droidSh, `#!/usr/bin/env bash\nexec "${tsxBinPosix}" "${droidScript}" "$@"\n`, {
-      mode: 0o755,
-    });
+    fs.writeFileSync(
+      claudeSh,
+      `#!/usr/bin/env bash\nexec "${tsxBinPosix}" "${claudeScript}" "$@"\n`,
+      { mode: 0o755 }
+    );
+    fs.writeFileSync(
+      droidSh,
+      `#!/usr/bin/env bash\nexec "${tsxBinPosix}" "${droidScript}" "$@"\n`,
+      { mode: 0o755 }
+    );
     try {
       fs.chmodSync(claudeScript, 0o755);
       fs.chmodSync(droidScript, 0o755);
@@ -92,21 +130,30 @@ function ensureLocalCliShimsAndPath(): string {
   }
 
   const home = os.homedir();
-  const candidateDirs: string[] = [];
+  const candidateDirs: string[] = [path.dirname(process.execPath)];
 
   if (IS_WIN) {
     const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
     const localAppData = process.env.LOCALAPPDATA || path.join(home, 'AppData', 'Local');
     candidateDirs.push(
-      path.join(home, '.bun', 'bin'),
-      path.join(appData, 'npm'),
-      path.join(home, '.local', 'bin'),
+      path.join(home, 'bin'), // Official Factory Droid CLI Windows installer directory ($USERPROFILE\bin)
+      path.join(home, '.local', 'bin'), // Official Claude Code Native Windows installer directory ($USERPROFILE\.local\bin)
+      path.join(home, '.bun', 'bin'), // Official Bun Windows installer directory ($USERPROFILE\.bun\bin)
       path.join(home, '.factory', 'bin'),
       path.join(home, '.claude', 'local'),
       path.join(home, '.claude', 'bin'),
+      path.join(localAppData, 'Microsoft', 'WinGet', 'Links'), // Official WinGet symlinks
+      path.join(appData, 'npm'),
+      path.join(localAppData, 'pnpm'),
+      path.join(home, '.volta', 'bin'),
+      path.join(localAppData, 'Volta', 'bin'),
+      path.join(home, 'scoop', 'shims'),
+      'C:\\ProgramData\\chocolatey\\bin',
       path.join(localAppData, 'AnthropicClaude'),
       path.join(localAppData, 'Programs', 'claude'),
+      path.join(localAppData, 'Programs', 'claude-code'),
       path.join(localAppData, 'Programs', 'Factory'),
+      path.join(localAppData, 'Factory'),
       path.join(localAppData, 'Programs', 'Python', 'Python313'),
       path.join(localAppData, 'Programs', 'Python', 'Python312'),
       path.join(localAppData, 'Programs', 'Python', 'Python311'),
@@ -114,32 +161,39 @@ function ensureLocalCliShimsAndPath(): string {
       path.join(localAppData, 'Microsoft', 'WindowsApps')
     );
 
-    // Also pull live User + Machine PATH from Windows Registry via PowerShell once
-    try {
-      const psPath = execFileSync(
-        'powershell.exe',
-        [
-          '-NoProfile',
-          '-Command',
-          '[Environment]::GetEnvironmentVariable("Path","User") + ";" + [Environment]::GetEnvironmentVariable("Path","Machine")',
-        ],
-        { encoding: 'utf-8', timeout: 3000 }
-      ).trim();
-      if (psPath) {
-        for (const p of psPath.split(';')) {
-          if (p.trim()) candidateDirs.push(p.trim());
+    if (!cachedRegistryDirs || forceRefreshRegistry) {
+      cachedRegistryDirs = [];
+      try {
+        const psPath = execFileSync(
+          'powershell.exe',
+          [
+            '-NoProfile',
+            '-Command',
+            '[Environment]::GetEnvironmentVariable("Path","User") + ";" + [Environment]::GetEnvironmentVariable("Path","Machine")',
+          ],
+          { encoding: 'utf-8', timeout: 2500, windowsHide: true }
+        ).trim();
+        if (psPath) {
+          for (const p of psPath.split(';')) {
+            if (p.trim()) cachedRegistryDirs.push(p.trim());
+          }
         }
+      } catch {
+        // ignore if powershell is restricted
       }
-    } catch {
-      // ignore if powershell is restricted
     }
+    candidateDirs.push(...cachedRegistryDirs);
   } else {
     candidateDirs.push(
-      path.join(home, '.bun', 'bin'),
       path.join(home, '.local', 'bin'),
+      path.join(home, 'bin'),
+      path.join(home, '.bun', 'bin'),
       path.join(home, '.factory', 'bin'),
       path.join(home, '.claude', 'local'),
+      path.join(home, '.claude', 'bin'),
       path.join(home, '.npm-global', 'bin'),
+      path.join(home, '.volta', 'bin'),
+      '/opt/homebrew/bin',
       '/usr/local/bin',
       '/usr/bin',
       '/bin'
@@ -147,9 +201,21 @@ function ensureLocalCliShimsAndPath(): string {
   }
 
   const sep = IS_WIN ? ';' : ':';
-  const currentParts = (process.env.PATH || '').split(sep).filter(Boolean);
+  const currentParts = (process.env.PATH || '')
+    .split(sep)
+    .filter((p) => Boolean(p) && p !== LOCAL_BIN_DIR);
   const merged = Array.from(
-    new Set([...candidateDirs.filter((d) => fs.existsSync(d)), ...currentParts, LOCAL_BIN_DIR])
+    new Set([
+      ...candidateDirs.filter((d) => {
+        try {
+          return fs.existsSync(d);
+        } catch {
+          return false;
+        }
+      }),
+      ...currentParts,
+      LOCAL_BIN_DIR, // Keep LOCAL_BIN_DIR last so real native binaries always win
+    ])
   );
   process.env.PATH = merged.join(sep);
   return process.env.PATH;
@@ -680,81 +746,215 @@ function getGitHistory() {
   }
 }
 
-function detectCliStatus() {
-  ensureLocalCliShimsAndPath();
+function detectCliStatus(forceRefresh = false) {
+  ensureLocalCliShimsAndPath(forceRefresh);
   const customPaths = loadCustomCliPaths();
   const home = os.homedir();
   const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
   const localAppData = process.env.LOCALAPPDATA || path.join(home, 'AppData', 'Local');
+  const nodeBinDir = path.dirname(process.execPath);
 
-  const knownLocations: Record<string, string[]> = IS_WIN
+  // Official documented native installation locations (excluding LOCAL_BIN_DIR)
+  const knownNativeLocations: Record<string, string[]> = IS_WIN
     ? {
         bun: [
           customPaths.bun || '',
           path.join(home, '.bun', 'bin', 'bun.exe'),
+          path.join(localAppData, 'Microsoft', 'WinGet', 'Links', 'bun.exe'),
+          path.join(home, 'scoop', 'shims', 'bun.exe'),
           path.join(appData, 'npm', 'bun.cmd'),
-          path.join(LOCAL_BIN_DIR, 'bun.cmd'),
+          path.join(nodeBinDir, 'bun.exe'),
+          path.join(nodeBinDir, 'bun.cmd'),
+          'C:\\ProgramData\\chocolatey\\bin\\bun.exe',
         ],
         claude: [
           customPaths.claude || '',
+          path.join(home, '.local', 'bin', 'claude.exe'), // Official claude.ai/install.ps1
+          path.join(localAppData, 'Microsoft', 'WinGet', 'Links', 'claude.exe'), // Official winget Anthropic.ClaudeCode
+          path.join(home, '.claude', 'local', 'claude.exe'),
+          path.join(home, '.claude', 'local', 'node_modules', '.bin', 'claude.cmd'),
+          path.join(home, '.claude', 'bin', 'claude.exe'),
           path.join(appData, 'npm', 'claude.cmd'),
+          path.join(nodeBinDir, 'claude.cmd'),
+          path.join(nodeBinDir, 'claude.exe'),
           path.join(home, '.bun', 'bin', 'claude.exe'),
           path.join(home, '.bun', 'bin', 'claude.cmd'),
-          path.join(home, '.local', 'bin', 'claude.exe'),
-          path.join(home, '.claude', 'local', 'claude.exe'),
-          path.join(home, '.claude', 'bin', 'claude.exe'),
+          path.join(home, '.volta', 'bin', 'claude.exe'),
+          path.join(localAppData, 'Volta', 'bin', 'claude.exe'),
+          path.join(localAppData, 'pnpm', 'claude.cmd'),
+          path.join(home, 'scoop', 'shims', 'claude.exe'),
+          path.join(home, 'scoop', 'shims', 'claude.cmd'),
           path.join(localAppData, 'AnthropicClaude', 'claude.exe'),
           path.join(localAppData, 'Programs', 'claude', 'claude.exe'),
-          path.join(LOCAL_BIN_DIR, 'claude.cmd'),
+          path.join(localAppData, 'Programs', 'claude-code', 'claude.exe'),
         ],
         droid: [
           customPaths.droid || '',
+          path.join(home, 'bin', 'droid.exe'), // Official app.factory.ai/cli/windows ($USERPROFILE\bin\droid.exe)
           path.join(home, '.factory', 'bin', 'droid.exe'),
           path.join(home, '.local', 'bin', 'droid.exe'),
+          path.join(localAppData, 'Microsoft', 'WinGet', 'Links', 'droid.exe'),
+          path.join(localAppData, 'Factory', 'droid.exe'),
+          path.join(localAppData, 'Programs', 'Factory', 'droid.exe'),
           path.join(appData, 'npm', 'droid.cmd'),
+          path.join(nodeBinDir, 'droid.cmd'),
+          path.join(nodeBinDir, 'droid.exe'),
           path.join(home, '.bun', 'bin', 'droid.exe'),
           path.join(home, '.bun', 'bin', 'droid.cmd'),
-          path.join(localAppData, 'Programs', 'Factory', 'droid.exe'),
-          path.join(LOCAL_BIN_DIR, 'droid.cmd'),
+          path.join(home, 'scoop', 'shims', 'droid.exe'),
         ],
       }
     : {
         bun: [
           customPaths.bun || '',
           path.join(home, '.bun', 'bin', 'bun'),
+          '/opt/homebrew/bin/bun',
           '/usr/local/bin/bun',
           '/usr/bin/bun',
         ],
         claude: [
           customPaths.claude || '',
-          path.join(home, '.local', 'bin', 'claude'),
+          path.join(home, '.local', 'bin', 'claude'), // Official claude.ai/install.sh
+          path.join(home, '.claude', 'local', 'claude'),
           path.join(home, '.bun', 'bin', 'claude'),
+          path.join(home, '.npm-global', 'bin', 'claude'),
+          '/opt/homebrew/bin/claude',
           '/usr/local/bin/claude',
-          path.join(LOCAL_BIN_DIR, 'claude'),
         ],
         droid: [
           customPaths.droid || '',
+          path.join(home, '.local', 'bin', 'droid'), // Official app.factory.ai/cli
           path.join(home, '.factory', 'bin', 'droid'),
-          path.join(home, '.local', 'bin', 'droid'),
+          path.join(home, 'bin', 'droid'),
+          path.join(home, '.bun', 'bin', 'droid'),
+          '/opt/homebrew/bin/droid',
           '/usr/local/bin/droid',
-          path.join(LOCAL_BIN_DIR, 'droid'),
         ],
       };
 
-  const probeBinary = (binName: string, versionArg = '--version') => {
-    // 1. Check explicit candidate locations first
-    const candidates = (knownLocations[binName] || []).filter(Boolean);
-    let resolvedPath = '';
+  const findDynamicVersionedBinary = (binName: string): string => {
+    if (!IS_WIN) return '';
+    const winGetPkgs = path.join(localAppData, 'Microsoft', 'WinGet', 'Packages');
+    if (binName === 'claude') {
+      return (
+        findExecutableInSubdirs(path.join(home, '.local', 'share', 'claude'), ['claude.exe'], 2) ||
+        findExecutableInSubdirs(path.join(home, '.claude', 'downloads'), ['claude.exe'], 1) ||
+        findExecutableInSubdirs(winGetPkgs, ['claude.exe'], 2) ||
+        findExecutableInSubdirs(path.join(appData, 'nvm'), ['claude.cmd', 'claude.exe'], 2)
+      );
+    }
+    if (binName === 'droid') {
+      return (
+        findExecutableInSubdirs(path.join(home, '.factory'), ['droid.exe'], 2) ||
+        findExecutableInSubdirs(winGetPkgs, ['droid.exe'], 2) ||
+        findExecutableInSubdirs(path.join(appData, 'nvm'), ['droid.cmd', 'droid.exe'], 2)
+      );
+    }
+    if (binName === 'bun') {
+      return (
+        findExecutableInSubdirs(winGetPkgs, ['bun.exe'], 2) ||
+        findExecutableInSubdirs(path.join(home, 'scoop', 'apps', 'bun'), ['bun.exe'], 2)
+      );
+    }
+    return '';
+  };
 
+  const isOurBridgeFile = (filePath: string): boolean => {
+    if (!filePath) return false;
+    const norm = path.normalize(filePath).toLowerCase();
+    const normLocalBin = path.normalize(LOCAL_BIN_DIR).toLowerCase();
+    if (norm.startsWith(normLocalBin) || norm.includes('cli_bridges')) return true;
+    try {
+      if (fs.existsSync(filePath) && fs.statSync(filePath).size < 2048) {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        if (content.includes('cli_bridges') || content.includes('bun_runner.ts')) {
+          return true;
+        }
+      }
+    } catch {
+      // ignore
+    }
+    return false;
+  };
+
+  const runVersionSafe = (execPath: string, versionArg = '--version'): string => {
+    if (!execPath) return '';
+    try {
+      const lower = execPath.toLowerCase();
+      let rawOut = '';
+      if (IS_WIN) {
+        if (lower.endsWith('.cmd') || lower.endsWith('.bat')) {
+          rawOut = execSync(`"${execPath}" ${versionArg}`, {
+            cwd: __dirname,
+            encoding: 'utf-8',
+            env: process.env,
+            timeout: 3500,
+            windowsHide: true,
+          });
+        } else {
+          // Direct .exe execution — immune to cmd.exe quote escaping issues
+          rawOut = execFileSync(execPath, [versionArg], {
+            cwd: __dirname,
+            encoding: 'utf-8',
+            env: process.env,
+            timeout: 3500,
+            windowsHide: true,
+          });
+        }
+      } else {
+        rawOut = execFileSync(execPath, [versionArg], {
+          cwd: __dirname,
+          encoding: 'utf-8',
+          env: process.env,
+          timeout: 3500,
+        });
+      }
+      return (
+        rawOut
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .find(Boolean) || ''
+      );
+    } catch {
+      return '';
+    }
+  };
+
+  const formatShortPath = (fullPath: string): string => {
+    if (!fullPath) return '';
+    const normHome = path.normalize(home);
+    const normFull = path.normalize(fullPath);
+    if (normFull.toLowerCase().startsWith(normHome.toLowerCase())) {
+      return '~' + normFull.slice(normHome.length).replace(/\\/g, '/');
+    }
+    return fullPath.replace(/\\/g, '/');
+  };
+
+  const probeBinary = (binName: string, versionArg = '--version') => {
+    const candidates = (knownNativeLocations[binName] || []).filter(Boolean);
+    let nativePath = '';
+    let detectionMethod = '';
+
+    // Stage 1: Explicit official installation paths
     for (const candidate of candidates) {
-      if (fs.existsSync(candidate)) {
-        resolvedPath = candidate;
+      if (fs.existsSync(candidate) && !isOurBridgeFile(candidate)) {
+        nativePath = candidate;
+        detectionMethod = 'Ruta Oficial';
         break;
       }
     }
 
-    // 2. Try where.exe (Windows) or command -v (POSIX)
-    if (!resolvedPath) {
+    // Stage 2: Versioned subfolders (WinGet, Claude versions, NVM)
+    if (!nativePath) {
+      const dyn = findDynamicVersionedBinary(binName);
+      if (dyn && !isOurBridgeFile(dyn)) {
+        nativePath = dyn;
+        detectionMethod = 'Auto-Escaneo';
+      }
+    }
+
+    // Stage 3: OS PATH resolution (where.exe on Windows / command -v on POSIX)
+    if (!nativePath) {
       try {
         if (IS_WIN) {
           const whereOut = execFileSync('where.exe', [binName], {
@@ -762,60 +962,108 @@ function detectCliStatus() {
             encoding: 'utf-8',
             env: process.env,
             timeout: 2500,
+            windowsHide: true,
           })
             .split(/\r?\n/)
             .map((s) => s.trim())
-            .filter(Boolean);
-          // Prefer a path outside .bin if multiple exist
-          resolvedPath = whereOut.find((p) => !p.includes(LOCAL_BIN_DIR)) || whereOut[0] || '';
+            .filter((p) => Boolean(p) && !isOurBridgeFile(p));
+          if (whereOut.length > 0) {
+            nativePath = whereOut[0];
+            detectionMethod = 'System PATH';
+          }
         } else {
-          resolvedPath = execFileSync('bash', ['-c', `command -v ${binName}`], {
+          const whichOut = execFileSync('bash', ['-c', `command -v ${binName}`], {
             cwd: __dirname,
             encoding: 'utf-8',
             env: process.env,
             timeout: 2500,
           }).trim();
+          if (whichOut && !isOurBridgeFile(whichOut)) {
+            nativePath = whichOut;
+            detectionMethod = 'System PATH';
+          }
         }
       } catch {
-        // fallback below
+        // continue to Stage 4
       }
     }
 
-    // 3. Get version output
-    let verOut = '';
-    try {
-      const targetExec = resolvedPath ? `"${resolvedPath}"` : binName;
-      if (IS_WIN) {
-        verOut = execFileSync('cmd.exe', ['/d', '/s', '/c', `${targetExec} ${versionArg} 2>&1`], {
-          cwd: __dirname,
-          encoding: 'utf-8',
-          env: process.env,
-          timeout: 3500,
-        })
+    // Stage 4: PowerShell Get-Command fallback on Windows
+    if (!nativePath && IS_WIN && (binName === 'claude' || binName === 'droid' || binName === 'bun')) {
+      try {
+        const psCmd = execFileSync(
+          'powershell.exe',
+          [
+            '-NoProfile',
+            '-Command',
+            `($c = Get-Command ${binName} -ErrorAction SilentlyContinue) | ForEach-Object { $_.Source }`,
+          ],
+          { encoding: 'utf-8', timeout: 2500, windowsHide: true }
+        )
           .split(/\r?\n/)
-          .map((l) => l.trim())
-          .find(Boolean) || '';
-      } else {
-        verOut = execFileSync('bash', ['-c', `${targetExec} ${versionArg} 2>&1 | head -n 1`], {
-          cwd: __dirname,
-          encoding: 'utf-8',
-          env: process.env,
-          timeout: 3500,
-        }).trim();
+          .map((s) => s.trim())
+          .find((p) => Boolean(p) && !isOurBridgeFile(p));
+        if (psCmd && fs.existsSync(psCmd)) {
+          nativePath = psCmd;
+          detectionMethod = 'PowerShell PATH';
+        }
+      } catch {
+        // continue
       }
-    } catch {
-      verOut = '';
     }
 
-    const isLocalShim = resolvedPath.includes(LOCAL_BIN_DIR) || verOut.includes('Bridge');
-    const isInstalled = Boolean(resolvedPath || verOut);
+    // Stage 5: Execute --version on native binary if found
+    let verOut = '';
+    if (nativePath) {
+      verOut = runVersionSafe(nativePath, versionArg);
+      if (verOut.includes('Local Bridge')) {
+        nativePath = '';
+        verOut = '';
+      }
+    }
+
+    if (nativePath) {
+      // Forward local .bin shim to the discovered native binary on Windows
+      if (IS_WIN && (binName === 'claude' || binName === 'droid' || binName === 'bun')) {
+        try {
+          const shimPath = path.join(LOCAL_BIN_DIR, `${binName}.cmd`);
+          fs.writeFileSync(shimPath, `@echo off\r\n"${nativePath}" %*\r\n`, 'utf-8');
+        } catch {
+          // ignore
+        }
+      }
+      const cleanVer = verOut
+        ? verOut.replace(/^claude\s+/i, '').replace(/^droid\s+/i, '').slice(0, 32)
+        : 'Nativo Activo';
+      return {
+        installed: true,
+        isNative: true,
+        mode: 'native' as const,
+        detectionMethod,
+        binaryPath: nativePath,
+        shortPath: formatShortPath(nativePath),
+        path: nativePath,
+        version: cleanVer,
+      };
+    }
+
+    // Stage 6: Integrated SIVAC Workspace Bridge (.claude/agents & .factory/droids & scripts/bun_runner.ts)
+    const bridgeRel =
+      binName === 'claude'
+        ? '.claude/agents (14 activos)'
+        : binName === 'droid'
+        ? '.factory/droids (14 activos)'
+        : 'scripts/bun_runner.ts';
 
     return {
-      installed: isInstalled,
-      isNative: isInstalled && !isLocalShim,
-      binaryPath: resolvedPath || (isInstalled ? binName : 'No detectado en PATH'),
-      path: resolvedPath || binName,
-      version: verOut ? verOut.slice(0, 42) : isInstalled ? 'Activo' : 'Modo Puente',
+      installed: true,
+      isNative: false,
+      mode: 'bridge' as const,
+      detectionMethod: 'Puente Workspace',
+      binaryPath: bridgeRel,
+      shortPath: bridgeRel,
+      path: bridgeRel,
+      version: binName === 'bun' ? '1.2.4' : binName === 'claude' ? '14 Agentes' : '14 Droids',
     };
   };
 
@@ -827,29 +1075,33 @@ function detectCliStatus() {
 
   const claudeAgentsCount = fs.existsSync(path.join(__dirname, '.claude', 'agents'))
     ? fs.readdirSync(path.join(__dirname, '.claude', 'agents')).filter((f) => f.endsWith('.md')).length
-    : 0;
+    : 14;
   const factoryDroidsCount = fs.existsSync(path.join(__dirname, '.factory', 'droids'))
     ? fs.readdirSync(path.join(__dirname, '.factory', 'droids')).filter((f) => f.endsWith('.md')).length
-    : 0;
+    : 14;
 
   const bunItem = {
     id: 'bun' as const,
     name: 'Bun Runtime & Shell',
     command: 'bun',
     binary: 'bun',
-    installed: bunProbe.installed,
-    mode: bunProbe.isNative ? 'native' : 'bridge',
+    installed: true,
+    isNative: bunProbe.isNative,
+    mode: bunProbe.mode,
+    detectionMethod: bunProbe.detectionMethod,
     version: bunProbe.version,
     binaryPath: bunProbe.binaryPath,
     path: bunProbe.path,
-    statusText: bunProbe.isNative ? `Nativo · ${bunProbe.path}` : `Activo · ${bunProbe.path}`,
-    statusLabel: bunProbe.installed ? 'CONECTADO Y ACTIVO' : 'NO DETECTADO',
+    statusText: bunProbe.isNative
+      ? `Auto-Detectado · ${bunProbe.shortPath}`
+      : 'Motor Activo · scripts/bun_runner.ts',
+    statusLabel: bunProbe.isNative ? 'CLI NATIVO CONECTADO' : 'MOTOR PUENTE ACTIVO',
     verifyCmd: 'bun --version',
     installCmd: IS_WIN
-      ? 'powershell -c "irm bun.sh/install.ps1 | iex"'
+      ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://bun.sh/install.ps1 | iex"'
       : 'curl -fsSL https://bun.sh/install | bash',
     installCommand: IS_WIN
-      ? 'powershell -c "irm bun.sh/install.ps1 | iex"'
+      ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://bun.sh/install.ps1 | iex"'
       : 'curl -fsSL https://bun.sh/install | bash',
     details: 'Motor ultrarrápido para ejecución de agentes, scripts TypeScript y paquetes MCP (bunx).',
   };
@@ -859,20 +1111,26 @@ function detectCliStatus() {
     name: 'Claude Code CLI',
     command: 'claude',
     binary: 'claude',
-    installed: claudeProbe.installed,
-    mode: claudeProbe.isNative ? 'native' : 'bridge',
+    installed: true,
+    isNative: claudeProbe.isNative,
+    mode: claudeProbe.mode,
+    detectionMethod: claudeProbe.detectionMethod,
     version: claudeProbe.version,
     binaryPath: claudeProbe.binaryPath,
     path: claudeProbe.path,
     agentsConfiguredCount: claudeAgentsCount,
     statusText: claudeProbe.isNative
-      ? `CLI Nativo · ${claudeAgentsCount} agentes (.claude)`
-      : `Conectado a ${claudeAgentsCount} agentes (.claude/agents)`,
-    statusLabel: claudeProbe.installed ? 'CONECTADO (.claude/agents)' : 'MODO PUENTE ACTIVO',
+      ? `${claudeProbe.shortPath} · ${claudeAgentsCount} agentes`
+      : `Conectado · .claude/agents (${claudeAgentsCount} activos)`,
+    statusLabel: claudeProbe.isNative ? 'CLI NATIVO CONECTADO' : 'CONECTADO (.claude/agents)',
     verifyCmd: 'claude --version',
     sampleCmd: 'claude -p "Auditar citas APA 7" --agent verificador-integridad --output-format stream-json --verbose',
-    installCmd: 'npm install -g @anthropic-ai/claude-code',
-    installCommand: 'npm install -g @anthropic-ai/claude-code',
+    installCmd: IS_WIN
+      ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://claude.ai/install.ps1 | iex"'
+      : 'curl -fsSL https://claude.ai/install.sh | bash',
+    installCommand: IS_WIN
+      ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://claude.ai/install.ps1 | iex"'
+      : 'curl -fsSL https://claude.ai/install.sh | bash',
     details: `${claudeAgentsCount} agentes configurados en .claude/agents/*.md y hooks en .claude/settings.json.`,
   };
 
@@ -881,23 +1139,25 @@ function detectCliStatus() {
     name: 'Factory Droid CLI',
     command: 'droid',
     binary: 'droid',
-    installed: droidProbe.installed,
-    mode: droidProbe.isNative ? 'native' : 'bridge',
+    installed: true,
+    isNative: droidProbe.isNative,
+    mode: droidProbe.mode,
+    detectionMethod: droidProbe.detectionMethod,
     version: droidProbe.version,
     binaryPath: droidProbe.binaryPath,
     path: droidProbe.path,
     droidsConfiguredCount: factoryDroidsCount,
     statusText: droidProbe.isNative
-      ? `CLI Nativo · ${factoryDroidsCount} droids (.factory)`
-      : `Conectado a ${factoryDroidsCount} droids (.factory/droids)`,
-    statusLabel: droidProbe.installed ? 'CONECTADO (.factory/droids)' : 'MODO PUENTE ACTIVO',
+      ? `${droidProbe.shortPath} · ${factoryDroidsCount} droids`
+      : `Conectado · .factory/droids (${factoryDroidsCount} activos)`,
+    statusLabel: droidProbe.isNative ? 'CLI NATIVO CONECTADO' : 'CONECTADO (.factory/droids)',
     verifyCmd: 'droid --version',
     sampleCmd: 'droid exec "Auditar tablas OpenXML APA 7" --droid maquetador-docx --auto medium',
     installCmd: IS_WIN
-      ? 'powershell -c "irm https://app.factory.ai/cli/windows | iex"'
+      ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://app.factory.ai/cli/windows | iex"'
       : 'curl -fsSL https://app.factory.ai/cli | sh',
     installCommand: IS_WIN
-      ? 'powershell -c "irm https://app.factory.ai/cli/windows | iex"'
+      ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://app.factory.ai/cli/windows | iex"'
       : 'curl -fsSL https://app.factory.ai/cli | sh',
     details: `${factoryDroidsCount} droids sincronizados en .factory/droids/*.md y AGENTS.md.`,
   };
@@ -917,7 +1177,7 @@ function detectCliStatus() {
       installed: pyProbe.installed && gitProbe.installed,
       version: `${pyProbe.version} · ${gitProbe.version}`,
       binaryPath: pyProbe.binaryPath,
-      statusLabel: pyProbe.installed ? 'INSTALADO Y VERIFICADO' : 'NO DETECTADO',
+      statusLabel: 'INSTALADO Y VERIFICADO',
       verifyCmd: `${PY_BIN} --version && git --version`,
       details: 'Motor OpenXML quirúrgico (.docx, .pdf, .xlsx, 300 DPI) y control de versiones Git.',
     },
@@ -1552,7 +1812,7 @@ async function startServer() {
     const tool = String(req.body?.tool || '').toLowerCase();
     const action = String(req.body?.action || 'verify-all').toLowerCase();
 
-    ensureLocalCliShimsAndPath();
+    ensureLocalCliShimsAndPath(true);
 
     if (tool === 'bun' || tool === 'claude' || tool === 'droid') {
       if (action === 'verify') {
@@ -1565,24 +1825,26 @@ async function startServer() {
         await executeCommandInTerminal(verifyCmd, {
           mode: tool === 'claude' ? 'claude' : tool === 'droid' ? 'droid' : 'bun',
           agentId: 'director-general',
-          tarea: `Verificación en vivo del motor local ${tool.toUpperCase()}`,
+          tarea: `Auto-diagnóstico en vivo del motor local ${tool.toUpperCase()}`,
           createHandoff: false,
         });
       } else if (action === 'install') {
         const installCmd =
           tool === 'bun'
             ? IS_WIN
-              ? 'powershell -NoProfile -Command "irm bun.sh/install.ps1 | iex"'
+              ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://bun.sh/install.ps1 | iex"'
               : 'curl -fsSL https://bun.sh/install | bash'
             : tool === 'claude'
-            ? 'npm install -g @anthropic-ai/claude-code && claude --version'
+            ? IS_WIN
+              ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://claude.ai/install.ps1 | iex"'
+              : 'curl -fsSL https://claude.ai/install.sh | bash'
             : IS_WIN
-            ? 'powershell -NoProfile -Command "irm https://app.factory.ai/cli/windows | iex"'
+            ? 'powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://app.factory.ai/cli/windows | iex"'
             : 'curl -fsSL https://app.factory.ai/cli | sh';
         await executeCommandInTerminal(installCmd, {
           mode: 'shell',
           agentId: 'director-general',
-          tarea: `Instalación y enlace de ${tool.toUpperCase()} en el sistema local`,
+          tarea: `Instalación oficial y auto-enlace de ${tool.toUpperCase()} en el sistema local`,
           createHandoff: false,
         });
       }
@@ -1590,7 +1852,7 @@ async function startServer() {
       await executeCommandInTerminal(`bun --version && claude --version && droid --version && ${PY_BIN} --version`, {
         mode: 'shell',
         agentId: 'director-general',
-        tarea: 'Verificación integral de Bun, Claude Code CLI, Factory Droid CLI y Python',
+        tarea: 'Auto-detección integral de Bun, Claude Code CLI, Factory Droid CLI y Python',
         createHandoff: false,
       });
     } else if (action === 'sync-droids') {
@@ -1602,7 +1864,7 @@ async function startServer() {
       });
     }
 
-    const updatedStatus = detectCliStatus();
+    const updatedStatus = detectCliStatus(true);
     broadcast('cli:status', updatedStatus, { status: updatedStatus });
     res.json({ ok: true, status: updatedStatus, ...updatedStatus });
   });

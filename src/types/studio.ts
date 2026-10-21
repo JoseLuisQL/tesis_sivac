@@ -70,6 +70,10 @@ export interface CliToolStatus {
   name: string;
   binary: string;
   installed: boolean;
+  isNative?: boolean;
+  mode?: 'native' | 'wsl' | 'bridge';
+  detectionMethod?: string;
+  agentsCount?: number;
   version: string;
   path: string;
   statusText: string;

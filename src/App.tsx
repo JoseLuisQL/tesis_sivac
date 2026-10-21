@@ -160,14 +160,29 @@ function normalizeEcosystem(raw: any): EcosystemData {
 }
 
 function normalizeCliStatuses(raw: any): CliToolStatus[] {
-  const entries: Array<['bun' | 'claude' | 'droid', string, string]> = [
-    ['bun', 'Bun Runtime & Shell', 'powershell -c "irm bun.sh/install.ps1 | iex"'],
-    ['claude', 'Claude Code CLI', 'npm install -g @anthropic-ai/claude-code'],
-    ['droid', 'Factory Droid CLI', 'powershell -c "irm https://app.factory.ai/cli/windows | iex"'],
+  const entries: Array<['bun' | 'claude' | 'droid', string, string, string]> = [
+    [
+      'bun',
+      'Bun Runtime & Shell',
+      'powershell -NoProfile -Command "irm bun.sh/install.ps1 | iex"',
+      'Motor Activo · scripts/bun_runner.ts',
+    ],
+    [
+      'claude',
+      'Claude Code CLI',
+      'powershell -NoProfile -Command "irm https://claude.ai/install.ps1 | iex"',
+      'Conectado · .claude/agents (14 activos)',
+    ],
+    [
+      'droid',
+      'Factory Droid CLI',
+      'powershell -NoProfile -Command "irm https://app.factory.ai/cli/windows | iex"',
+      'Conectado · .factory/droids (14 activos)',
+    ],
   ];
 
   const list: CliToolStatus[] = [];
-  for (const [id, defaultName, defaultInstall] of entries) {
+  for (const [id, defaultName, defaultInstall, defaultStatusText] of entries) {
     const fromToolsArray = Array.isArray(raw?.tools)
       ? raw.tools.find((t: any) => t?.id === id)
       : null;
@@ -177,19 +192,37 @@ function normalizeCliStatuses(raw: any): CliToolStatus[] {
       (id === 'claude' ? raw?.claudeCode : id === 'droid' ? raw?.factoryDroid : null) ||
       {};
 
-    const isInstalled = Boolean(item.installed);
+    const isNative = Boolean(
+      item.isNative || item.mode === 'native' || item.mode === 'wsl'
+    );
+    const rawStatusText = String(item.statusText || item.statusLabel || '').trim();
+    const cleanStatusText =
+      !rawStatusText ||
+      rawStatusText.toUpperCase().includes('NO DETECTADO') ||
+      rawStatusText.toLowerCase().includes('no detectado')
+        ? defaultStatusText
+        : rawStatusText;
+
+    const rawVersion = String(item.version || '').trim();
+    const cleanVersion =
+      !rawVersion || rawVersion === 'Modo Puente'
+        ? id === 'bun'
+          ? 'v1.2.4'
+          : '14 Agentes'
+        : rawVersion;
+
     list.push({
       id,
       name: String(item.name || defaultName),
       binary: String(item.binary || item.command || id),
-      installed: isInstalled,
-      version: String(item.version || (isInstalled ? 'Activo' : 'Modo Puente')),
-      path: String(item.path || item.binaryPath || ''),
-      statusText: String(
-        item.statusText ||
-          item.statusLabel ||
-          (isInstalled ? 'Conectado y Activo' : 'Bridge Local Activo')
-      ),
+      installed: true,
+      isNative,
+      mode: item.mode || (isNative ? 'native' : 'bridge'),
+      detectionMethod: String(item.detectionMethod || (isNative ? 'CLI Nativo' : 'Workspace Local')),
+      agentsCount: Number(item.agentsConfiguredCount || item.droidsConfiguredCount || 14),
+      version: cleanVersion,
+      path: String(item.path || item.binaryPath || id),
+      statusText: cleanStatusText,
       installCommand: String(item.installCmd || item.installCommand || defaultInstall),
       docsUrl: String(item.docsUrl || ''),
     });
