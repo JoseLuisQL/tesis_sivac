@@ -11,6 +11,8 @@ import {
   ChevronRight,
   FolderKanban,
   Terminal as TerminalIcon,
+  Settings2,
+  Check,
 } from 'lucide-react';
 import type {
   AgentInfo,
@@ -25,6 +27,7 @@ interface AgnoSidebarProps {
   cliStatuses: CliToolStatus[];
   onRefreshCli: () => Promise<void>;
   onCliAction: (tool: 'bun' | 'claude' | 'droid', action: 'verify' | 'install') => Promise<void>;
+  onConfigureCliPath?: (tool: 'bun' | 'claude' | 'droid', customPath: string) => Promise<void>;
   projects: ResearchProject[];
   activeProjectId: string;
   onSelectProject: (id: string) => void;
@@ -38,6 +41,7 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
   cliStatuses,
   onRefreshCli,
   onCliAction,
+  onConfigureCliPath,
   projects,
   activeProjectId,
   onSelectProject,
@@ -46,6 +50,8 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [collapsedSquads, setCollapsedSquads] = useState<Record<string, boolean>>({});
   const [refreshingCli, setRefreshingCli] = useState(false);
+  const [editingToolId, setEditingToolId] = useState<'bun' | 'claude' | 'droid' | null>(null);
+  const [customPathInput, setCustomPathInput] = useState('');
 
   const handleRefresh = async () => {
     setRefreshingCli(true);
@@ -58,6 +64,22 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
 
   const toggleSquad = (squad: string) => {
     setCollapsedSquads((prev) => ({ ...prev, [squad]: !prev[squad] }));
+  };
+
+  const handleOpenPathEditor = (tool: CliToolStatus) => {
+    if (editingToolId === tool.id) {
+      setEditingToolId(null);
+      return;
+    }
+    setEditingToolId(tool.id);
+    setCustomPathInput(tool.path && !tool.path.includes('No detectado') ? tool.path : '');
+  };
+
+  const handleSaveCustomPath = async (toolId: 'bun' | 'claude' | 'droid') => {
+    if (onConfigureCliPath) {
+      await onConfigureCliPath(toolId, customPathInput.trim());
+    }
+    setEditingToolId(null);
   };
 
   const filteredAgents = agents.filter((a) => {
@@ -87,9 +109,9 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
         <div className="flex items-center justify-between text-[11px] font-mono text-zinc-400">
           <span className="flex items-center gap-1.5">
             <FolderKanban className="w-3.5 h-3.5 text-orange-400" />
-            <span>PROYECTO ACTIVO</span>
+            <span>Proyecto Activo</span>
           </span>
-          <span>{projects.length} en vault</span>
+          <span className="tabular-nums">{projects.length} en vault</span>
         </div>
 
         <select
@@ -110,21 +132,23 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
         <div className="flex items-center justify-between">
           <span className="text-[11px] font-mono text-zinc-400 flex items-center gap-1.5">
             <TerminalIcon className="w-3.5 h-3.5 text-orange-400" />
-            <span>MOTORES LOCALES CLI</span>
+            <span>Motores Locales CLI (3)</span>
           </span>
           <button
             type="button"
             onClick={handleRefresh}
-            className="p-1 rounded hover:bg-white/10 text-zinc-400 hover:text-zinc-100 transition-colors"
-            title="Re-escanear binarios locales (Bun, Claude Code, Factory Droid)"
+            className="px-2 py-0.5 rounded bg-white/[0.05] hover:bg-white/10 text-[10px] font-mono text-zinc-300 hover:text-white flex items-center gap-1 transition-colors"
+            title="Re-escanear binarios locales en Windows / Linux (Bun, Claude Code, Factory Droid)"
           >
-            <RefreshCw className={`w-3.5 h-3.5 ${refreshingCli ? 'animate-spin text-orange-400' : ''}`} />
+            <RefreshCw className={`w-3 h-3 ${refreshingCli ? 'animate-spin text-orange-400' : ''}`} />
+            <span>Detectar</span>
           </button>
         </div>
 
         <div className="space-y-1.5">
           {cliStatuses.map((tool) => {
             const isBusy = busyCliTool === tool.id;
+            const isEditing = editingToolId === tool.id;
             return (
               <div
                 key={tool.id}
@@ -141,24 +165,35 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
                       {tool.name}
                     </span>
                   </div>
-                  <span className="text-[11px] font-mono tabular-nums text-zinc-400 shrink-0">
-                    {tool.installed ? tool.version : 'Modo Puente'}
+                  <span className="text-[10px] font-mono tabular-nums text-emerald-300 shrink-0 truncate max-w-[110px]">
+                    {tool.installed ? tool.version.split(' ')[0] : 'Modo Puente'}
                   </span>
                 </div>
 
-                <div className="flex items-center justify-between gap-2 pt-0.5">
-                  <span className="text-[10px] font-mono text-zinc-500 truncate">
-                    {tool.installed ? tool.path || tool.binary : tool.statusText}
+                <div className="flex items-center justify-between gap-1.5 pt-0.5">
+                  <span
+                    className="text-[10px] font-mono text-zinc-400 truncate"
+                    title={tool.path || tool.statusText}
+                  >
+                    {tool.statusText || tool.path}
                   </span>
 
                   <div className="flex items-center gap-1 shrink-0">
                     <button
                       type="button"
+                      onClick={() => handleOpenPathEditor(tool)}
+                      className="p-1 rounded bg-white/[0.05] hover:bg-white/[0.12] text-zinc-400 hover:text-zinc-100 transition-colors"
+                      title="Configurar ruta manual del ejecutable en Windows (.exe / .cmd)"
+                    >
+                      <Settings2 className="w-3 h-3" />
+                    </button>
+                    <button
+                      type="button"
                       disabled={isBusy}
                       onClick={() => onCliAction(tool.id, 'verify')}
-                      className="px-2 py-0.5 rounded bg-white/[0.06] hover:bg-white/[0.12] text-[10px] font-mono text-zinc-300 transition-colors whitespace-nowrap shrink-0"
+                      className="px-2 py-0.5 rounded bg-white/[0.06] hover:bg-white/[0.12] text-[10px] font-mono text-zinc-200 transition-colors whitespace-nowrap shrink-0"
                     >
-                      Verificar
+                      {isBusy ? '...' : 'Probar'}
                     </button>
                     {!tool.installed && (
                       <button
@@ -173,6 +208,37 @@ export const AgnoSidebar: React.FC<AgnoSidebarProps> = ({
                     )}
                   </div>
                 </div>
+
+                {isEditing && (
+                  <div className="pt-1.5 border-t border-white/10 space-y-1.5">
+                    <div className="text-[10px] font-mono text-zinc-400">
+                      Ruta de <code className="text-orange-300">{tool.binary}</code> (vacío = auto):
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <input
+                        type="text"
+                        value={customPathInput}
+                        onChange={(e) => setCustomPathInput(e.target.value)}
+                        placeholder={
+                          tool.id === 'claude'
+                            ? 'C:\\Users\\TuUsuario\\AppData\\Roaming\\npm\\claude.cmd'
+                            : tool.id === 'droid'
+                            ? 'C:\\Users\\TuUsuario\\.factory\\bin\\droid.exe'
+                            : 'C:\\Users\\TuUsuario\\.bun\\bin\\bun.exe'
+                        }
+                        className="flex-1 h-7 px-2 rounded bg-[#090b10] border border-white/15 text-[10px] font-mono text-zinc-100 focus:outline-none focus:border-orange-500"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => handleSaveCustomPath(tool.id)}
+                        className="h-7 px-2 rounded bg-orange-500 hover:bg-orange-400 text-zinc-950 text-[10px] font-semibold flex items-center gap-1 shrink-0"
+                      >
+                        <Check className="w-3 h-3" />
+                        <span>Guardar</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

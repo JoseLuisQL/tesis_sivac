@@ -1,20 +1,25 @@
-#!/usr/local/bin/bun
+#!/usr/bin/env node
 /**
- * Puente CLI de Factory Droid (droid) impulsado por Bun para SIVAC-THESIS-LAB.
+ * Puente CLI Local de Factory Droid (droid) para SIVAC-THESIS-LAB (Windows & POSIX).
+ * Se conecta con las definiciones reales en .factory/droids/*.md y ejecuta la misión del droid.
  * Soporta:
  *   droid --version
- *   droid exec "<prompt>" [--auto low|medium|high] [--droid <nombre>]
+ *   droid exec "<prompt>" [--auto low|medium|high] [--droid <nombre>] [--agent <nombre>]
  */
 import fs from 'fs';
 import path from 'path';
+import { spawn } from 'child_process';
 
-const args = Bun.argv.slice(2);
+const isWin = process.platform === 'win32';
+const pyBin = isWin ? 'python' : 'python3';
+const args = process.argv.slice(2);
+
 if (args.includes('--version') || args.includes('-v')) {
-  console.log('1.8.4 (Factory Droid CLI · Bun Native Bridge — SIVAC-THESIS-LAB)');
+  console.log(`1.8.4 (Factory Droid CLI · Local Droid Bridge [${isWin ? 'Windows' : 'POSIX'}] — .factory/droids/)`);
   process.exit(0);
 }
 
-const droidIdx = args.indexOf('--droid');
+const droidIdx = args.indexOf('--droid') !== -1 ? args.indexOf('--droid') : args.indexOf('--agent');
 const autoIdx = args.indexOf('--auto');
 const autonomy = autoIdx !== -1 && args[autoIdx + 1] ? args[autoIdx + 1] : 'medium';
 const droidId = droidIdx !== -1 && args[droidIdx + 1] ? args[droidIdx + 1] : 'maquetador-docx';
@@ -22,38 +27,41 @@ const execIdx = args.indexOf('exec');
 const promptText = execIdx !== -1 && args[execIdx + 1] ? args[execIdx + 1] : args.join(' ');
 
 const DROID_SCRIPTS: Record<string, string> = {
-  'director-general': 'python3 scripts/agentes/estado_granja.py',
-  'investigador-bibliografico': 'python3 scripts/fuentes/buscador_citas.py',
-  'verificador-integridad': 'python3 scripts/agentes/verificador_integridad.py',
-  'guardian-consistencia': 'python3 scripts/agentes/guardian_consistencia.py',
-  'especialista-instrumentos': 'python3 scripts/compiladores/generar_anexo2_validacion_fany.py',
-  'especialista-forms': 'python3 scripts/agentes/validez_contenido.py',
-  'ingeniero-sivac': 'python3 scripts/agentes/inventario_syncova.py',
-  'documentador-xp': 'python3 scripts/agentes/inventario_syncova.py',
-  'analista-estadistico': 'python3 scripts/estadistica/pipeline_inferencial.py --json',
-  'analista-documental': 'python3 scripts/agentes/analista_documental.py',
-  'redactor-academico': 'python3 scripts/agentes/revisor_prosa.py',
-  'maquetador-docx': 'python3 scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx',
-  'curador-cerebro': 'python3 scripts/agentes/curador_cerebro.py',
-  'jurado-revisor': 'python3 scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx --md',
+  'director-general': `${pyBin} scripts/agentes/estado_granja.py`,
+  'investigador-bibliografico': `${pyBin} scripts/fuentes/buscador_citas.py`,
+  'verificador-integridad': `${pyBin} scripts/agentes/verificador_integridad.py`,
+  'guardian-consistencia': `${pyBin} scripts/agentes/guardian_consistencia.py`,
+  'especialista-instrumentos': `${pyBin} scripts/compiladores/generar_anexo2_validacion_fany.py`,
+  'especialista-forms': `${pyBin} scripts/agentes/validez_contenido.py`,
+  'ingeniero-sivac': `${pyBin} scripts/agentes/inventario_syncova.py`,
+  'documentador-xp': `${pyBin} scripts/agentes/inventario_syncova.py`,
+  'analista-estadistico': `${pyBin} scripts/estadistica/pipeline_inferencial.py --json`,
+  'analista-documental': `${pyBin} scripts/agentes/analista_documental.py`,
+  'redactor-academico': `${pyBin} scripts/agentes/revisor_prosa.py`,
+  'maquetador-docx': `${pyBin} scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx`,
+  'curador-cerebro': `${pyBin} scripts/agentes/curador_cerebro.py`,
+  'jurado-revisor': `${pyBin} scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx --md`,
 };
 
-const targetScript = DROID_SCRIPTS[droidId] || 'python3 scripts/agentes/estado_granja.py';
+const targetScript = DROID_SCRIPTS[droidId] || `${pyBin} scripts/agentes/estado_granja.py`;
 const droidFile = path.join(process.cwd(), '.factory', 'droids', `${droidId}.md`);
 
 console.log(
-  `[Factory Droid CLI · Bun v${Bun.version}] Ejecutando droid="${droidId}" (${
+  `[Factory Droid CLI] Conectado a definición local: ${
     fs.existsSync(droidFile) ? `.factory/droids/${droidId}.md` : 'AGENTS.md'
-  }) · autonomía=${autonomy}`
+  } · autonomía=${autonomy}`
 );
-console.log(`[Factory Droid CLI] Misión: "${promptText}"`);
+console.log(`[Factory Droid CLI] Droid activo: @${droidId} | Misión: "${promptText}"`);
 
-const proc = Bun.spawn(['bash', '-c', targetScript], {
+const shellBin = isWin ? 'cmd.exe' : 'bash';
+const shellArgs = isWin ? ['/d', '/s', '/c', targetScript] : ['-c', targetScript];
+
+const child = spawn(shellBin, shellArgs, {
   cwd: process.cwd(),
-  stdout: 'inherit',
-  stderr: 'inherit',
+  stdio: 'inherit',
   env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
 });
 
-const code = await proc.exited;
-process.exit(code);
+child.on('close', (code) => {
+  process.exit(code ?? 0);
+});

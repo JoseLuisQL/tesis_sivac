@@ -53,13 +53,17 @@ function normalizeEcosystem(raw: any): EcosystemData {
     enabled: s.enabled !== false,
   }));
 
-  const mcpsRaw = Array.isArray(raw?.mcps) ? raw.mcps : [];
+  const mcpsRaw = Array.isArray(raw?.mcps)
+    ? raw.mcps
+    : Array.isArray(raw?.mcpServers)
+    ? raw.mcpServers
+    : [];
   const mcps: McpServerInfo[] = mcpsRaw.map((m: any) => ({
     id: String(m.id || m.name || ''),
     name: String(m.name || m.id || ''),
-    command: String(m.command || 'npx'),
+    command: String(m.command || 'bunx'),
     args: Array.isArray(m.args) ? m.args : [],
-    enabled: Boolean(m.enabled),
+    enabled: m.enabled !== false && m.disabled !== true,
     type: String(m.type || 'stdio'),
   }));
 
@@ -68,53 +72,78 @@ function normalizeEcosystem(raw: any): EcosystemData {
     id: String(h.id || h.event || `hook-${idx}`),
     event: String(h.event || h.id || 'PreToolUse'),
     matcher: String(h.matcher || '*'),
-    command: String(h.command || ''),
-    enabled: Boolean(h.enabled),
+    command: String(h.command || h.filePath || ''),
+    enabled: h.enabled !== false,
   }));
 
   const phasesRaw = Array.isArray(raw?.phases) ? raw.phases : [];
   const phases: PhaseInfo[] = phasesRaw.map((p: any) => ({
-    id: String(p.id || 'F0'),
-    name: String(p.name || ''),
-    gate: String(p.gate || 'QG'),
-    progress: Number(p.progress ?? 0),
+    id: String(p.id || p.fase || 'F0'),
+    name: String(p.name || p.nombre || ''),
+    gate: String(p.gate || p.id || 'QG'),
+    progress: Number(p.progress ?? (p.estado === 'aprobado' || p.status === 'completado' ? 100 : 50)),
     status:
-      p.status === 'completado' || p.status === 'en_progreso' ? p.status : 'pendiente',
-    deliverable: String(p.deliverable || ''),
+      p.status === 'completado' ||
+      p.estado === 'aprobado' ||
+      p.status === 'en_progreso' ||
+      p.estado === 'en_progreso'
+        ? p.status === 'en_progreso' || p.estado === 'en_progreso'
+          ? 'en_progreso'
+          : 'completado'
+        : 'pendiente',
+    deliverable: String(p.deliverable || p.metrica || ''),
   }));
 
   const handoffsRaw = Array.isArray(raw?.handoffs) ? raw.handoffs : [];
-  const handoffs: HandoffInfo[] = handoffsRaw.map((h: any, idx: number) => ({
-    id: String(h.id || h.filename || `handoff-${idx}`),
-    filename: String(h.filename || ''),
-    agent: String(h.agent || ''),
-    task: String(h.task || h.filename || ''),
-    date: String(h.date || ''),
-    status: String(h.status || 'completado'),
-    summary: String(h.summary || ''),
-    path: String(h.path || `08_SISTEMA_Y_AGENTES/handoffs/${h.filename || ''}`),
-    rawContent: String(h.rawContent || ''),
-  }));
+  const handoffs: HandoffInfo[] = handoffsRaw.map((h: any, idx: number) => {
+    const fname = String(h.filename || h.fileName || '');
+    const parts = fname.replace('.md', '').split('_');
+    const inferredDate = parts[0] || '';
+    const inferredAgent = parts[1] || '';
+    const inferredTask = parts.slice(2).join(' ') || fname;
+    return {
+      id: String(h.id || fname || `handoff-${idx}`),
+      filename: fname,
+      agent: String(h.agent || inferredAgent),
+      task: String(h.task || inferredTask),
+      date: String(h.date || inferredDate),
+      status: String(h.status || 'completado'),
+      summary: String(h.summary || (h.content ? String(h.content).slice(0, 180) : '')),
+      path: String(h.path || h.filePath || `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${fname}`),
+      rawContent: String(h.rawContent || h.content || ''),
+    };
+  });
+
+  const vaultFilesRaw = Array.isArray(raw?.vaultFiles)
+    ? raw.vaultFiles
+    : Array.isArray(raw?.canonicalLayers?.obsidian_vault)
+    ? raw.canonicalLayers.obsidian_vault.map((f: string) => f.replace(/^obsidian_vault\//, ''))
+    : [];
 
   const completedPhases = phases.filter((p) => p.status === 'completado').length;
   const computedProgress =
-    phases.length > 0 ? Math.round((completedPhases / phases.length) * 100) : 15;
+    phases.length > 0 ? Math.round((completedPhases / phases.length) * 100) : 75;
 
   return {
     thesisTitle: String(
       raw?.thesis?.title ||
+        raw?.thesis?.tituloOficial ||
         raw?.thesisTitle ||
-        'Sistema Informático Web SIVAC y Gestión de Inventario en SYNCOVA S.A.C.'
+        'Sistema Informático Web SIVAC — Gestión de Movimientos de Vacunas (UNAJMA)'
     ),
     university: String(
-      raw?.thesis?.university || raw?.university || 'UNAJMA — Ingeniería de Sistemas'
+      raw?.thesis?.university ||
+        raw?.thesis?.universidad ||
+        raw?.university ||
+        'UNAJMA — Ingeniería de Sistemas'
     ),
     methodology: String(
       raw?.thesis?.methodology ||
+        raw?.thesis?.diseno ||
         raw?.methodology ||
-        'Extreme Programming (XP) · ISO/IEC 25010 · TAM'
+        'Extreme Programming (XP) · ISO/IEC 25010:2023 · TAM'
     ),
-    currentPhase: String(raw?.thesis?.currentPhase || raw?.currentPhase || 'F1'),
+    currentPhase: String(raw?.thesis?.currentPhase || raw?.currentPhase || 'F4'),
     globalProgress: Number(
       raw?.stats?.globalProgress ?? raw?.globalProgress ?? computedProgress
     ),
@@ -124,73 +153,116 @@ function normalizeEcosystem(raw: any): EcosystemData {
     hooks,
     phases,
     handoffs,
-    vaultFiles: Array.isArray(raw?.vaultFiles) ? raw.vaultFiles : [],
+    vaultFiles: vaultFilesRaw,
     decisionsRaw: String(raw?.decisionsRaw || ''),
     estadoRaw: String(raw?.estadoRaw || ''),
   };
 }
 
 function normalizeCliStatuses(raw: any): CliToolStatus[] {
-  if (Array.isArray(raw?.tools)) return raw.tools;
-  const list: CliToolStatus[] = [];
   const entries: Array<['bun' | 'claude' | 'droid', string, string]> = [
-    ['bun', 'Bun Runtime & Shell', 'curl -fsSL https://bun.sh/install | bash'],
-    ['claude', 'Claude Code CLI', 'bun add -g @anthropic-ai/claude-code'],
-    ['droid', 'Factory Droid CLI', 'curl -fsSL https://app.factory.ai/cli | sh'],
+    ['bun', 'Bun Runtime & Shell', 'powershell -c "irm bun.sh/install.ps1 | iex"'],
+    ['claude', 'Claude Code CLI', 'npm install -g @anthropic-ai/claude-code'],
+    ['droid', 'Factory Droid CLI', 'powershell -c "irm https://app.factory.ai/cli/windows | iex"'],
   ];
+
+  const list: CliToolStatus[] = [];
   for (const [id, defaultName, defaultInstall] of entries) {
-    const item = raw?.[id];
-    if (item && typeof item === 'object') {
-      list.push({
-        id,
-        name: String(item.name || defaultName),
-        binary: String(item.binary || id),
-        installed: Boolean(item.installed),
-        version: String(item.version || (item.installed ? 'instalado' : 'Modo Puente')),
-        path: String(item.path || ''),
-        statusText: String(
-          item.mode === 'native' || item.installed
-            ? 'Binario Nativo Detectado'
-            : 'Bridge Local Activo'
-        ),
-        installCommand: String(item.installCmd || item.installCommand || defaultInstall),
-        docsUrl: String(item.docsUrl || ''),
-      });
-    }
+    const fromToolsArray = Array.isArray(raw?.tools)
+      ? raw.tools.find((t: any) => t?.id === id)
+      : null;
+    const item =
+      fromToolsArray ||
+      raw?.[id] ||
+      (id === 'claude' ? raw?.claudeCode : id === 'droid' ? raw?.factoryDroid : null) ||
+      {};
+
+    const isInstalled = Boolean(item.installed);
+    list.push({
+      id,
+      name: String(item.name || defaultName),
+      binary: String(item.binary || item.command || id),
+      installed: isInstalled,
+      version: String(item.version || (isInstalled ? 'Activo' : 'Modo Puente')),
+      path: String(item.path || item.binaryPath || ''),
+      statusText: String(
+        item.statusText ||
+          item.statusLabel ||
+          (isInstalled ? 'Conectado y Activo' : 'Bridge Local Activo')
+      ),
+      installCommand: String(item.installCmd || item.installCommand || defaultInstall),
+      docsUrl: String(item.docsUrl || ''),
+    });
   }
   return list;
 }
 
 function normalizeGodChatMessage(m: any): GodChatMessage {
-  const delegationsRaw = Array.isArray(m?.delegations) ? m.delegations : [];
-  const delegations: SubagentDelegation[] = delegationsRaw.map((d: any, i: number) => ({
-    id: String(d.id || `del-${i}`),
-    agentId: String(d.subagent || d.agentId || 'investigador-bibliografico'),
-    agentName: String(d.subagent || d.agentName || 'investigador-bibliografico'),
-    squad: String(d.squad || 'Squad'),
-    task: String(d.task || ''),
-    engine: d.engine === 'droid' || d.engine === 'bun' ? d.engine : 'claude',
-    status:
-      d.status === 'running' ||
-      d.status === 'completed' ||
-      d.status === 'error' ||
-      d.status === 'queued'
-        ? d.status
-        : 'completed',
-    command: String(d.command || ''),
-    outputSummary: String(d.outputSummary || d.output || ''),
-    handoffFile: d.handoffPath || d.handoffFile || undefined,
-    startedAt: String(d.startedAt || m?.timestamp || new Date().toISOString()),
-    completedAt: d.completedAt ? String(d.completedAt) : undefined,
-  }));
+  const delegationsSource = Array.isArray(m?.delegations)
+    ? m.delegations
+    : m?.delegation
+    ? [m.delegation]
+    : [];
+
+  const delegations: SubagentDelegation[] = delegationsSource.map((d: any, i: number) => {
+    const agentId = String(d.agentId || d.subagente || d.subagent || 'guardian-consistencia');
+    const rawEngine = String(d.engine || d.runtime || 'claude').toLowerCase();
+    const engine: 'claude' | 'droid' | 'bun' =
+      rawEngine === 'droid' ? 'droid' : rawEngine === 'bun' ? 'bun' : 'claude';
+    const rawStatus = String(d.status || 'completed').toLowerCase();
+    const status: 'running' | 'completed' | 'error' | 'queued' =
+      rawStatus === 'running'
+        ? 'running'
+        : rawStatus === 'queued'
+        ? 'queued'
+        : rawStatus === 'blocked' || rawStatus === 'error'
+        ? 'error'
+        : 'completed';
+
+    return {
+      id: String(d.id || `del-${i}-${Date.now()}`),
+      agentId,
+      agentName: String(d.agentName || d.subagente || d.subagent || agentId),
+      squad: String(d.squad || 'Squad Especializado'),
+      task: String(d.task || d.tarea || `Comisión asignada a @${agentId}`),
+      engine,
+      status,
+      command: String(d.command || d.claudeCliCmd || ''),
+      outputSummary: String(d.outputSummary || d.output || ''),
+      handoffFile: d.handoffFile || d.handoffPath || undefined,
+      startedAt: String(d.startedAt || m?.timestamp || new Date().toISOString()),
+      completedAt: d.completedAt ? String(d.completedAt) : undefined,
+    };
+  });
+
+  const messageText = String(m?.content || m?.text || '').trim();
 
   return {
     id: String(m?.id || `msg-${Date.now()}`),
     role: m?.role === 'user' ? 'user' : 'god',
-    content: String(m?.content || ''),
+    content:
+      messageText ||
+      (delegations.length > 0
+        ? `Comisión ejecutada por @${delegations[0].agentName} (${delegations[0].squad}).`
+        : 'Orden procesada por el Director General (Agente GOD).'),
     timestamp: String(m?.timestamp || new Date().toISOString()),
-    engineUsed: m?.engineUsed ? String(m.engineUsed) : 'Bun Shell + Agente GOD',
-    cognitiveRefinement: m?.refinement
+    engineUsed: m?.engineUsed
+      ? String(m.engineUsed)
+      : delegations[0]?.engine
+      ? `Motor: ${delegations[0].engine.toUpperCase()}`
+      : 'Bun Shell + Agente GOD',
+    cognitiveRefinement: m?.cognitiveRefinement
+      ? {
+          intent: String(m.cognitiveRefinement.intent || ''),
+          obsidianContext: String(
+            m.cognitiveRefinement.obsidianContext || '00_SISTEMA/ESTADO_TESIS.md'
+          ),
+          formalMethodology: String(m.cognitiveRefinement.formalMethodology || ''),
+          selectedSquads: Array.isArray(m.cognitiveRefinement.selectedSquads)
+            ? m.cognitiveRefinement.selectedSquads
+            : ['Hub Central'],
+        }
+      : m?.refinement
       ? {
           intent: String(m.refinement.detectedIntent || m.refinement.intent || ''),
           obsidianContext: Array.isArray(m.refinement.obsidianContextChecked)
@@ -204,7 +276,14 @@ function normalizeGodChatMessage(m: any): GodChatMessage {
               ? Array.from(new Set(delegations.map((d) => d.squad)))
               : ['Hub Central'],
         }
-      : m?.cognitiveRefinement,
+      : delegations.length > 0
+      ? {
+          intent: `Delegación hacia @${delegations[0].agentName}`,
+          obsidianContext: '00_SISTEMA/ESTADO_TESIS.md · 00_SISTEMA/DECISIONES.md (DEC-007)',
+          formalMethodology: 'Constitución Operativa CLAUDE.md · APA 7 · ISO/IEC 25010:2023',
+          selectedSquads: Array.from(new Set(delegations.map((d) => d.squad))),
+        }
+      : undefined,
     delegations,
   };
 }
@@ -212,33 +291,44 @@ function normalizeGodChatMessage(m: any): GodChatMessage {
 function normalizeProjects(raw: any): ResearchProject[] {
   const arr = Array.isArray(raw?.projects)
     ? raw.projects
+    : Array.isArray(raw?.projectsStore?.projects)
+    ? raw.projectsStore.projects
     : Array.isArray(raw)
     ? raw
     : [];
+
   return arr.map((p: any, idx: number) => ({
     id: String(p.id || `proj-${idx}`),
-    code: String(p.code || p.currentPhase || `PROY-0${idx + 1}`),
-    title: String(p.title || p.name || 'Proyecto de Investigación'),
-    university: String(p.university || 'UNAJMA'),
-    methodology: String(p.methodology || p.design || 'Cuasi-experimental'),
-    sampleSize: String(p.sampleSize || p.population || 'n=14'),
-    progress: Number(p.progress ?? 15),
+    code: String(p.code || p.codigo || p.faseActual || `PROY-0${idx + 1}`),
+    title: String(p.title || p.titulo || p.name || 'Proyecto de Investigación'),
+    university: String(p.university || p.universidad || 'UNAJMA — EPIS'),
+    methodology: String(p.methodology || p.diseno || p.tipo || 'Pre-experimental (O1 -> X -> O2)'),
+    sampleSize: String(p.sampleSize || p.muestra || 'n=14'),
+    progress: Number(p.progress ?? p.progreso ?? 85),
     status:
       p.status === 'completado' || p.status === 'planificacion' ? p.status : 'activo',
     leadAgent: String(p.leadAgent || 'director-general'),
     updatedAt: String(p.updatedAt || '2026-10-20'),
     obsidianPath: String(p.obsidianPath || '00_SISTEMA/ESTADO_TESIS.md'),
     tasks: Array.isArray(p.tasks)
-      ? p.tasks.map((t: any, tIdx: number) => ({
-          id: String(t.id || `task-${tIdx}`),
-          title: String(t.title || ''),
-          phase: String(t.phase || 'F1'),
-          assignedAgent: String(t.assignedAgent || t.agent || 'director-general'),
-          status:
-            t.status === 'completado' || t.status === 'en_progreso'
-              ? t.status
-              : 'pendiente',
-        }))
+      ? p.tasks.map((t: any, tIdx: number) => {
+          const rawSt = String(t.status || t.estado || 'pendiente').toLowerCase();
+          const normStatus: 'completado' | 'en_progreso' | 'pendiente' =
+            rawSt === 'completado' || rawSt === 'completada'
+              ? 'completado'
+              : rawSt === 'en_progreso'
+              ? 'en_progreso'
+              : 'pendiente';
+          return {
+            id: String(t.id || `task-${tIdx}`),
+            title: String(t.title || t.titulo || ''),
+            phase: String(t.phase || t.fase || 'F1'),
+            assignedAgent: String(
+              t.assignedAgent || t.subagente || t.agent || 'director-general'
+            ),
+            status: normStatus,
+          };
+        })
       : [],
   }));
 }
@@ -246,7 +336,7 @@ function normalizeProjects(raw: any): ResearchProject[] {
 export function App() {
   const [ecosystem, setEcosystem] = useState<EcosystemData | null>(null);
   const [projects, setProjects] = useState<ResearchProject[]>([]);
-  const [activeProjectId, setActiveProjectId] = useState<string>('sivac-2026');
+  const [activeProjectId, setActiveProjectId] = useState<string>('proy-tesis-sivac-unajma');
   const [cliStatuses, setCliStatuses] = useState<CliToolStatus[]>([]);
   const [chatMessages, setChatMessages] = useState<GodChatMessage[]>([]);
   const [terminalLogs, setTerminalLogs] = useState<TerminalLog[]>([]);
@@ -290,12 +380,10 @@ export function App() {
         if (normEco.estadoRaw && !vaultFileContent) {
           setVaultFileContent(normEco.estadoRaw);
         }
-        if (rawEco.projects) {
-          const normProjs = normalizeProjects(rawEco.projects);
-          setProjects(normProjs);
-          if (normProjs.length > 0 && !normProjs.some((p) => p.id === activeProjectId)) {
-            setActiveProjectId(normProjs[0].id);
-          }
+        const normProjs = normalizeProjects(rawEco);
+        setProjects(normProjs);
+        if (normProjs.length > 0 && !normProjs.some((p) => p.id === activeProjectId)) {
+          setActiveProjectId(rawEco?.projectsStore?.activeProjectId || normProjs[0].id);
         }
       }
 
@@ -306,8 +394,17 @@ export function App() {
 
       if (chatRes.ok) {
         const rawChat = await chatRes.json();
-        if (Array.isArray(rawChat?.messages)) {
-          setChatMessages(rawChat.messages.map(normalizeGodChatMessage));
+        const list = Array.isArray(rawChat?.messages)
+          ? rawChat.messages
+          : Array.isArray(rawChat?.history)
+          ? rawChat.history
+          : [];
+        if (list.length > 0) {
+          setChatMessages(
+            list
+              .filter((m: any) => m?.role !== 'subagent')
+              .map(normalizeGodChatMessage)
+          );
         }
       }
     } catch (err) {
@@ -328,53 +425,91 @@ export function App() {
       ws = new WebSocket(wsUrl);
       ws.onmessage = (event) => {
         try {
-          const payload = JSON.parse(event.data);
-          if (payload.type === 'init') {
-            if (Array.isArray(payload.logs)) {
+          const msg = JSON.parse(event.data);
+          const evtType = msg.event || msg.type;
+          const dataPayload = msg.payload || msg;
+
+          if (evtType === 'init') {
+            const historyLogs = Array.isArray(dataPayload?.terminalHistory)
+              ? dataPayload.terminalHistory
+              : Array.isArray(msg.logs)
+              ? msg.logs
+              : [];
+            if (historyLogs.length > 0) {
               setTerminalLogs(
-                payload.logs.map((l: any, i: number) => ({
+                historyLogs.map((l: any, i: number) => ({
                   id: String(l.id || `log-${i}`),
                   timestamp: String(l.timestamp || new Date().toISOString()),
                   session: String(l.session || 'bun-shell'),
-                  type: l.stream || l.type || 'stdout',
+                  type: l.stream === 'security' ? 'stderr' : l.stream || l.type || 'stdout',
                   text: String(l.text || ''),
                 }))
               );
             }
-            if (payload.cliStatus) {
-              setCliStatuses(normalizeCliStatuses(payload.cliStatus));
+            const cliObj = dataPayload?.cliStatus || msg.cliStatus;
+            if (cliObj) {
+              setCliStatuses(normalizeCliStatuses(cliObj));
             }
-            if (Array.isArray(payload.godChatHistory)) {
-              setChatMessages(payload.godChatHistory.map(normalizeGodChatMessage));
+            const chatHist = Array.isArray(dataPayload?.godChatHistory)
+              ? dataPayload.godChatHistory
+              : Array.isArray(msg.godChatHistory)
+              ? msg.godChatHistory
+              : [];
+            if (chatHist.length > 0) {
+              setChatMessages(
+                chatHist
+                  .filter((m: any) => m?.role !== 'subagent')
+                  .map(normalizeGodChatMessage)
+              );
             }
-          } else if (payload.type === 'terminal:output' || payload.type === 'terminal:line') {
-            const entry = payload.entry || payload.data;
-            if (entry) {
+          } else if (evtType === 'terminal:output' || evtType === 'terminal:line') {
+            const entry = msg.entry || msg.payload || msg.data;
+            if (entry && entry.text !== undefined) {
               setTerminalLogs((prev) => [
                 ...prev.slice(-350),
                 {
                   id: String(entry.id || `log-${Date.now()}-${Math.random()}`),
                   timestamp: String(entry.timestamp || new Date().toISOString()),
                   session: String(entry.session || 'bun-shell'),
-                  type: entry.stream || entry.type || 'stdout',
+                  type:
+                    entry.stream === 'security'
+                      ? 'stderr'
+                      : entry.stream || entry.type || 'stdout',
                   text: String(entry.text || ''),
                 },
               ]);
             }
-          } else if (payload.type === 'terminal:cleared') {
+          } else if (evtType === 'terminal:cleared') {
             setTerminalLogs([]);
-          } else if (payload.type === 'godchat:message' && payload.message) {
-            const norm = normalizeGodChatMessage(payload.message);
-            setChatMessages((prev) => {
-              const exists = prev.some((m) => m.id === norm.id);
-              return exists ? prev.map((m) => (m.id === norm.id ? norm : m)) : [...prev, norm];
-            });
-          } else if (payload.type === 'godchat:update' && payload.message) {
-            const norm = normalizeGodChatMessage(payload.message);
-            setChatMessages((prev) => prev.map((m) => (m.id === norm.id ? norm : m)));
-          } else if (payload.type === 'cli:status' && payload.status) {
-            setCliStatuses(normalizeCliStatuses(payload.status));
-          } else if (payload.type === 'ecosystem:refresh') {
+          } else if (evtType === 'godchat:message') {
+            const rawMsg = msg.message || msg.payload;
+            if (rawMsg && rawMsg.role !== 'subagent') {
+              const norm = normalizeGodChatMessage(rawMsg);
+              setChatMessages((prev) => {
+                const exists = prev.some((m) => m.id === norm.id);
+                return exists ? prev.map((m) => (m.id === norm.id ? norm : m)) : [...prev, norm];
+              });
+            }
+          } else if (evtType === 'godchat:update') {
+            const rawMsg = msg.message || msg.payload;
+            if (rawMsg) {
+              const norm = normalizeGodChatMessage(rawMsg);
+              setChatMessages((prev) => prev.map((m) => (m.id === norm.id ? norm : m)));
+            }
+          } else if (evtType === 'godchat:cleared') {
+            const list = Array.isArray(msg.payload) ? msg.payload : [];
+            setChatMessages(list.map(normalizeGodChatMessage));
+          } else if (evtType === 'cli:status') {
+            const st = msg.status || msg.payload;
+            if (st) {
+              setCliStatuses(normalizeCliStatuses(st));
+            }
+          } else if (evtType === 'projects:updated') {
+            const store = msg.payload;
+            if (store) {
+              setProjects(normalizeProjects(store));
+            }
+          } else if (evtType === 'handoff:created' || evtType === 'ecosystem:refresh') {
             fetchAllData();
           }
         } catch {
@@ -417,12 +552,21 @@ export function App() {
       const res = await fetch('/api/god-chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt, engine }),
+        body: JSON.stringify({ prompt, engine, runtime: engine }),
       });
       if (res.ok) {
         const data = await res.json();
-        if (Array.isArray(data?.history)) {
-          setChatMessages(data.history.map(normalizeGodChatMessage));
+        const list = Array.isArray(data?.messages)
+          ? data.messages
+          : Array.isArray(data?.history)
+          ? data.history
+          : [];
+        if (list.length > 0) {
+          setChatMessages(
+            list
+              .filter((m: any) => m?.role !== 'subagent')
+              .map(normalizeGodChatMessage)
+          );
         }
         await fetchAllData();
       }
@@ -480,11 +624,27 @@ export function App() {
       });
       if (res.ok) {
         const data = await res.json();
-        if (data?.status) {
-          setCliStatuses(normalizeCliStatuses(data.status));
-        } else {
-          await handleRefreshCli();
-        }
+        setCliStatuses(normalizeCliStatuses(data?.status || data));
+      }
+    } finally {
+      setBusyCliTool(null);
+    }
+  };
+
+  const handleConfigureCliPath = async (
+    tool: 'bun' | 'claude' | 'droid',
+    binaryPath: string
+  ) => {
+    setBusyCliTool(tool);
+    try {
+      const res = await fetch('/api/system/cli-config', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tool, binaryPath }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setCliStatuses(normalizeCliStatuses(data?.status || data));
       }
     } finally {
       setBusyCliTool(null);
@@ -506,7 +666,7 @@ export function App() {
       body: JSON.stringify({
         subagent: agent.id,
         squad: agent.squad,
-        phase: ecosystem?.currentPhase || 'F1',
+        phase: ecosystem?.currentPhase || 'F4',
         task: taskText,
         engine,
         inputs: 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md',
@@ -755,6 +915,7 @@ export function App() {
               cliStatuses={cliStatuses}
               onRefreshCli={handleRefreshCli}
               onCliAction={handleCliAction}
+              onConfigureCliPath={handleConfigureCliPath}
               projects={projects}
               activeProjectId={activeProjectId}
               onSelectProject={setActiveProjectId}

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+exec "/app/applet/node_modules/.bin/tsx" "/app/applet/scripts/cli_bridges/droid_cli.ts" "$@"
