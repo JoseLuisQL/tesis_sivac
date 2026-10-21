@@ -5,7 +5,7 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { spawn } from 'child_process';
+import { runDomainScriptWithFallback } from './cli_bridges/native_domain_runner';
 
 const isWin = process.platform === 'win32';
 const pyBin = isWin ? 'python' : 'python3';
@@ -60,17 +60,7 @@ if (promptArg) {
 
 const finalCommand = commandToRun || `${pyBin} scripts/agentes/estado_granja.py`;
 const startHr = process.hrtime.bigint();
-const shellBin = isWin ? 'cmd.exe' : 'bash';
-const shellArgs = isWin ? ['/d', '/s', '/c', finalCommand] : ['-c', finalCommand];
-
-const child = spawn(shellBin, shellArgs, {
-  cwd: repoRoot,
-  stdio: 'inherit',
-  env: { ...process.env, PYTHONIOENCODING: 'utf-8', SIVAC_RUNTIME: `bun-${bunVersion}` },
-});
-
-child.on('close', (code) => {
-  const exitCode = code ?? 0;
+runDomainScriptWithFallback(finalCommand, agentArg, repoRoot, (exitCode) => {
   const elapsedMs = (Number(process.hrtime.bigint() - startHr) / 1_000_000).toFixed(2);
   console.log(`[BUN EXIT] código=${exitCode} · tiempo=${elapsedMs}ms · runtime=Bun/${bunVersion}`);
   process.exit(exitCode);

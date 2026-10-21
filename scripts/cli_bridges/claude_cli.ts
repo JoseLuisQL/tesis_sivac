@@ -17,7 +17,7 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { spawn } from 'child_process';
+import { runDomainScriptWithFallback } from './native_domain_runner';
 
 const isWin = process.platform === 'win32';
 const pyBin = isWin ? 'python' : 'python3';
@@ -283,17 +283,7 @@ const targetScript =
 console.log(`● [ToolUse: Bash]         Ejecutando herramienta del agente @${agentId}: ${targetScript}`);
 console.log('────────────────────────────────────────────────────────────────────────────────');
 
-const shellBin = isWin ? 'cmd.exe' : 'bash';
-const shellArgs = isWin ? ['/d', '/s', '/c', targetScript] : ['-c', targetScript];
-
-const child = spawn(shellBin, shellArgs, {
-  cwd: repoRoot,
-  stdio: 'inherit',
-  env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
-});
-
-child.on('close', (code) => {
-  const exitCode = code ?? 0;
+runDomainScriptWithFallback(targetScript, agentId, repoRoot, (exitCode) => {
   console.log('────────────────────────────────────────────────────────────────────────────────');
   console.log(
     `✻ [Claude Code CLI · @${agentId}] Directiva procesada: "${promptText}" | estado=${

@@ -237,23 +237,23 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
   return (
     <div className="h-full flex flex-col bg-[#090b10] border-t border-white/10 select-text">
       {/* Terminal Header Bar (OpenHands + Opcode style) */}
-      <div className="h-9 px-3 flex items-center justify-between bg-[#0f1219] border-b border-white/10 shrink-0">
-        <div className="flex items-center gap-2 min-w-0">
+      <div className="h-9 px-3 flex items-center justify-between gap-2 bg-[#0f1219] border-b border-white/10 shrink-0">
+        <div className="flex items-center gap-2 min-w-0 flex-1 overflow-hidden">
           <div className="flex items-center gap-1.5 text-xs font-semibold text-zinc-200 whitespace-nowrap shrink-0">
             <TerminalIcon className="w-3.5 h-3.5 text-orange-400" />
             <span>Terminal XTerm.js</span>
           </div>
 
-          <span className="text-zinc-700" aria-hidden="true">
+          <span className="text-zinc-700 shrink-0" aria-hidden="true">
             ·
           </span>
 
           {/* Interactive Session Tabs */}
-          <div className="flex items-center gap-1 bg-black/40 p-0.5 rounded-md border border-white/10">
+          <div className="flex items-center gap-1 bg-black/40 p-0.5 rounded-md border border-white/10 shrink-0">
             <button
               type="button"
               onClick={() => onSelectSession('bun-shell')}
-              className={`px-2.5 py-1 rounded text-[11px] font-mono transition-colors whitespace-nowrap shrink-0 ${
+              className={`px-2 py-1 rounded text-[11px] font-mono transition-colors whitespace-nowrap shrink-0 ${
                 activeSession === 'bun-shell'
                   ? 'bg-orange-500/20 text-orange-300 font-semibold'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -264,7 +264,7 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
             <button
               type="button"
               onClick={() => onSelectSession('claude-code')}
-              className={`px-2.5 py-1 rounded text-[11px] font-mono transition-colors whitespace-nowrap shrink-0 ${
+              className={`px-2 py-1 rounded text-[11px] font-mono transition-colors whitespace-nowrap shrink-0 ${
                 activeSession === 'claude-code'
                   ? 'bg-orange-500/20 text-orange-300 font-semibold'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -275,7 +275,7 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
             <button
               type="button"
               onClick={() => onSelectSession('factory-droid')}
-              className={`px-2.5 py-1 rounded text-[11px] font-mono transition-colors whitespace-nowrap shrink-0 ${
+              className={`px-2 py-1 rounded text-[11px] font-mono transition-colors whitespace-nowrap shrink-0 ${
                 activeSession === 'factory-droid'
                   ? 'bg-orange-500/20 text-orange-300 font-semibold'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -286,13 +286,13 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
           </div>
 
           {/* Quick Preset Commands */}
-          <div className="hidden xl:flex items-center gap-1.5 ml-2">
+          <div className="hidden xl:flex items-center gap-1.5 ml-1 overflow-x-auto no-scrollbar min-w-0">
             {[
               { label: 'claude -p "hola"', cmd: 'claude --agent director-general -p "hola"' },
               { label: 'claude --version', cmd: 'claude --version' },
               { label: 'droid --version', cmd: 'droid --version' },
               { label: 'bun --version', cmd: 'bun --version' },
-              { label: 'Auditar Agentes (.claude)', cmd: 'ls -la .claude/agents' },
+              { label: 'Estado Granja', cmd: 'claude --agent director-general -p "estado de los 14 agentes"' },
             ].map((preset) => (
               <button
                 key={preset.cmd}

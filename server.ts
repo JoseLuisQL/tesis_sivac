@@ -264,37 +264,98 @@ function normalizePlatformCommand(cmd: string): string {
     .replace(/^ls\s+(.+)$/i, 'dir "$1"');
 }
 
+function tokenizeCliArgs(cmd: string): string[] {
+  const args: string[] = [];
+  let current = '';
+  let quoteChar: '"' | "'" | null = null;
+
+  for (let i = 0; i < cmd.length; i++) {
+    const ch = cmd[i];
+    if (ch === '\\' && i + 1 < cmd.length && (cmd[i + 1] === '"' || cmd[i + 1] === "'")) {
+      current += cmd[i + 1];
+      i++;
+      continue;
+    }
+    if (quoteChar) {
+      if (ch === quoteChar) {
+        quoteChar = null;
+      } else {
+        current += ch;
+      }
+    } else {
+      if (ch === '"' || ch === "'") {
+        quoteChar = ch;
+      } else if (/\s/.test(ch)) {
+        if (current.length > 0) {
+          args.push(current);
+          current = '';
+        }
+      } else {
+        current += ch;
+      }
+    }
+  }
+  if (current.length > 0) {
+    args.push(current);
+  }
+  return args;
+}
+
 /**
- * Translates CLI commands (`claude ...`, `droid ...`, `bun ...`) into guaranteed executable invocations
- * using the active Node.js runtime + tsx CLI entrypoint so they can NEVER fail with "command not found"
- * on Windows (cmd.exe/PowerShell), WSL2, Linux, or macOS.
+ * Spawns CLI commands (`claude ...`, `droid ...`, `bun ...`) directly via `process.execPath` (`node.exe`)
+ * with `shell: false` so Windows `cmd.exe` NEVER mangles or backslash-escapes quotes (`\"C:\nvm4w\nodejs\node.exe\"`).
+ * For compound or OS shell commands, uses `spawn(cmd, { shell: true })` which preserves verbatim quotes on Windows.
  */
-function resolveExecutableCommand(displayCmd: string): string {
-  const nodeExe = process.execPath;
+function spawnTerminalProcess(displayCmd: string, spawnEnv: NodeJS.ProcessEnv) {
   const tsxCliMjs = path.join(__dirname, 'node_modules', 'tsx', 'dist', 'cli.mjs');
   const claudeBridge = path.join(__dirname, 'scripts', 'cli_bridges', 'claude_cli.ts');
   const droidBridge = path.join(__dirname, 'scripts', 'cli_bridges', 'droid_cli.ts');
   const bunBridge = path.join(__dirname, 'scripts', 'bun_runner.ts');
 
-  const segments = displayCmd.split(/\s*&&\s*/);
-  const resolvedSegments = segments.map((seg) => {
-    const trimmed = seg.trim();
-    if (/^claude(\s+.*)?$/i.test(trimmed)) {
-      const rest = trimmed.slice(6).trim();
-      return `"${nodeExe}" "${tsxCliMjs}" "${claudeBridge}"${rest ? ' ' + rest : ''}`;
-    }
-    if (/^droid(\s+.*)?$/i.test(trimmed)) {
-      const rest = trimmed.slice(5).trim();
-      return `"${nodeExe}" "${tsxCliMjs}" "${droidBridge}"${rest ? ' ' + rest : ''}`;
-    }
-    if (/^bun(\s+.*)?$/i.test(trimmed)) {
-      const rest = trimmed.slice(3).trim();
-      return `"${nodeExe}" "${tsxCliMjs}" "${bunBridge}"${rest ? ' ' + rest : ''}`;
-    }
-    return normalizePlatformCommand(trimmed);
-  });
+  const hasShellOperators = /&&|\|\||[|><]/.test(displayCmd);
+  if (!hasShellOperators) {
+    const tokens = tokenizeCliArgs(displayCmd.trim());
+    const first = (tokens[0] || '').toLowerCase();
 
-  return resolvedSegments.join(' && ');
+    if (first === 'claude') {
+      return spawn(process.execPath, [tsxCliMjs, claudeBridge, ...tokens.slice(1)], {
+        cwd: __dirname,
+        env: spawnEnv,
+        windowsHide: true,
+      });
+    }
+
+    if (first === 'droid') {
+      return spawn(process.execPath, [tsxCliMjs, droidBridge, ...tokens.slice(1)], {
+        cwd: __dirname,
+        env: spawnEnv,
+        windowsHide: true,
+      });
+    }
+
+    if (first === 'bun') {
+      if (tokens[1]?.toLowerCase() === 'run' && tokens[2]?.includes('bun_runner.ts')) {
+        return spawn(process.execPath, [tsxCliMjs, bunBridge, ...tokens.slice(3)], {
+          cwd: __dirname,
+          env: spawnEnv,
+          windowsHide: true,
+        });
+      }
+      return spawn(process.execPath, [tsxCliMjs, bunBridge, ...tokens.slice(1)], {
+        cwd: __dirname,
+        env: spawnEnv,
+        windowsHide: true,
+      });
+    }
+  }
+
+  const normalizedShellCmd = normalizePlatformCommand(displayCmd);
+  return spawn(normalizedShellCmd, {
+    cwd: __dirname,
+    env: spawnEnv,
+    shell: true,
+    windowsHide: true,
+  });
 }
 
 function isKnownSystemShellCommand(cmd: string): boolean {
@@ -1711,9 +1772,6 @@ async function startServer() {
       // Log the clean CLI command to XTerm.js
       appendTerminalLine('command', `$ [${mode.toUpperCase()} · @${agentId}] ${displayCommand}`, agentId, mode);
 
-      // Resolve displayCommand into a guaranteed executable command (never fails with command not found)
-      const spawnCommand = resolveExecutableCommand(displayCommand);
-
       agentRuntimeStatus['director-general'] = {
         status: 'running',
         currentTask: `Orquestando sesión CLI hacia @${agentId}`,
@@ -1752,8 +1810,6 @@ async function startServer() {
       broadcast('delegation:update', delegation);
 
       const startTime = Date.now();
-      const shellBin = IS_WIN ? 'cmd.exe' : 'bash';
-      const shellArgs = IS_WIN ? ['/d', '/s', '/c', spawnCommand] : ['-c', spawnCommand];
       const spawnEnv: NodeJS.ProcessEnv = {
         ...process.env,
         PATH: updatedPath,
@@ -1763,10 +1819,7 @@ async function startServer() {
         (spawnEnv as Record<string, string>).Path = updatedPath;
       }
 
-      const child = spawn(shellBin, shellArgs, {
-        cwd: __dirname,
-        env: spawnEnv,
-      });
+      const child = spawnTerminalProcess(displayCommand, spawnEnv);
       activeChildProcess = child;
 
       let collectedOutput = '';
