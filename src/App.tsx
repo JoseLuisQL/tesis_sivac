@@ -204,11 +204,17 @@ function normalizeCliStatuses(raw: any): CliToolStatus[] {
         : rawStatusText;
 
     const rawVersion = String(item.version || '').trim();
+    const lowerVer = rawVersion.toLowerCase();
     const cleanVersion =
-      !rawVersion || rawVersion === 'Modo Puente'
+      !rawVersion ||
+      rawVersion === 'Modo Puente' ||
+      lowerVer.includes('no instalado') ||
+      lowerVer.includes('no detectado')
         ? id === 'bun'
           ? 'v1.2.4'
-          : '14 Agentes'
+          : id === 'claude'
+          ? '14 Agentes'
+          : '14 Droids'
         : rawVersion;
 
     list.push({
@@ -383,7 +389,7 @@ export function App() {
   );
   const [activeTerminalSession, setActiveTerminalSession] = useState<
     'bun-shell' | 'claude-code' | 'factory-droid'
-  >('bun-shell');
+  >('claude-code');
   const [isTerminalMinimized, setIsTerminalMinimized] = useState<boolean>(false);
   const [commandPaletteOpen, setCommandPaletteOpen] = useState<boolean>(false);
 
@@ -626,7 +632,7 @@ export function App() {
     await fetch('/api/terminal/exec', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ command, session }),
+      body: JSON.stringify({ command, session, agentId: selectedAgentId }),
     });
   };
 

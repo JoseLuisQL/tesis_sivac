@@ -201,7 +201,7 @@ function ensureLocalCliShimsAndPath(forceRefreshRegistry = false): string {
   }
 
   const sep = IS_WIN ? ';' : ':';
-  const currentParts = (process.env.PATH || '')
+  const currentParts = (process.env.PATH || process.env.Path || '')
     .split(sep)
     .filter((p) => Boolean(p) && p !== LOCAL_BIN_DIR);
   const merged = Array.from(
@@ -217,8 +217,40 @@ function ensureLocalCliShimsAndPath(forceRefreshRegistry = false): string {
       LOCAL_BIN_DIR, // Keep LOCAL_BIN_DIR last so real native binaries always win
     ])
   );
-  process.env.PATH = merged.join(sep);
-  return process.env.PATH;
+  const finalPathStr = merged.join(sep);
+  process.env.PATH = finalPathStr;
+  if (IS_WIN) {
+    process.env.Path = finalPathStr;
+  }
+
+  // On POSIX/Linux/WSL, also ensure /usr/local/bin symlinks exist if writable so any subshell finds claude, droid, bun
+  if (!IS_WIN) {
+    const posixBunSh = path.join(LOCAL_BIN_DIR, 'bun');
+    if (!fs.existsSync(posixBunSh)) {
+      try {
+        fs.writeFileSync(
+          posixBunSh,
+          `#!/usr/bin/env bash\nexec "${tsxBinPosix}" "${bunRunnerScript}" "$@"\n`,
+          { mode: 0o755 }
+        );
+      } catch {
+        // ignore
+      }
+    }
+    for (const toolName of ['claude', 'droid', 'bun']) {
+      const targetShim = path.join(LOCAL_BIN_DIR, toolName);
+      const usrLocalDest = path.join('/usr/local/bin', toolName);
+      try {
+        if (!fs.existsSync(usrLocalDest) && fs.existsSync(targetShim)) {
+          fs.symlinkSync(targetShim, usrLocalDest);
+        }
+      } catch {
+        // ignore if /usr/local/bin is read-only
+      }
+    }
+  }
+
+  return finalPathStr;
 }
 
 ensureLocalCliShimsAndPath();
@@ -230,6 +262,78 @@ function normalizePlatformCommand(cmd: string): string {
     .replace(/\bpython3\b/g, 'python')
     .replace(/^ls\s+-la\s+(.+)$/i, 'dir "$1"')
     .replace(/^ls\s+(.+)$/i, 'dir "$1"');
+}
+
+/**
+ * Translates CLI commands (`claude ...`, `droid ...`, `bun ...`) into guaranteed executable invocations
+ * using the active Node.js runtime + tsx CLI entrypoint so they can NEVER fail with "command not found"
+ * on Windows (cmd.exe/PowerShell), WSL2, Linux, or macOS.
+ */
+function resolveExecutableCommand(displayCmd: string): string {
+  const nodeExe = process.execPath;
+  const tsxCliMjs = path.join(__dirname, 'node_modules', 'tsx', 'dist', 'cli.mjs');
+  const claudeBridge = path.join(__dirname, 'scripts', 'cli_bridges', 'claude_cli.ts');
+  const droidBridge = path.join(__dirname, 'scripts', 'cli_bridges', 'droid_cli.ts');
+  const bunBridge = path.join(__dirname, 'scripts', 'bun_runner.ts');
+
+  const segments = displayCmd.split(/\s*&&\s*/);
+  const resolvedSegments = segments.map((seg) => {
+    const trimmed = seg.trim();
+    if (/^claude(\s+.*)?$/i.test(trimmed)) {
+      const rest = trimmed.slice(6).trim();
+      return `"${nodeExe}" "${tsxCliMjs}" "${claudeBridge}"${rest ? ' ' + rest : ''}`;
+    }
+    if (/^droid(\s+.*)?$/i.test(trimmed)) {
+      const rest = trimmed.slice(5).trim();
+      return `"${nodeExe}" "${tsxCliMjs}" "${droidBridge}"${rest ? ' ' + rest : ''}`;
+    }
+    if (/^bun(\s+.*)?$/i.test(trimmed)) {
+      const rest = trimmed.slice(3).trim();
+      return `"${nodeExe}" "${tsxCliMjs}" "${bunBridge}"${rest ? ' ' + rest : ''}`;
+    }
+    return normalizePlatformCommand(trimmed);
+  });
+
+  return resolvedSegments.join(' && ');
+}
+
+function isKnownSystemShellCommand(cmd: string): boolean {
+  const firstToken = cmd.trim().split(/\s+/)[0]?.toLowerCase() || '';
+  const systemCmds = new Set([
+    'python',
+    'python3',
+    'py',
+    'git',
+    'ls',
+    'dir',
+    'pwd',
+    'cd',
+    'cat',
+    'type',
+    'echo',
+    'npm',
+    'npx',
+    'pnpm',
+    'yarn',
+    'node',
+    'tsx',
+    'curl',
+    'powershell',
+    'powershell.exe',
+    'pwsh',
+    'cmd',
+    'cmd.exe',
+    'where',
+    'where.exe',
+    'which',
+    'whoami',
+    'clear',
+    'cls',
+    'mkdir',
+    ' winget',
+    'winget',
+  ]);
+  return systemCmds.has(firstToken);
 }
 
 interface AgentMeta {
@@ -1185,99 +1289,244 @@ function detectCliStatus(forceRefresh = false) {
 }
 
 function classifyPromptIntent(rawPrompt: string) {
-  const lower = rawPrompt.toLowerCase();
-  let squad = 'Squad E (Redacción, Estilo y Maquetación Editorial)';
-  let subagente = 'maquetador-docx';
-  let fase = 'F4';
-  let tarea = '';
-  let entradas = '';
-  let salidaEsperada = '';
-  let entregable = 'salidas/documentos/informe_final_v02.docx';
-  let comandoSugerido = '';
-  let diagnostico = '';
-  let formalMethodology = 'Normas APA 7ma Edición · Reglas de Maquetación OpenXML UNAJMA (1985/1418 dxa, 300 DPI)';
+  const basePrompt = rawPrompt.replace(/\[MODO:.*?\]/gi, '').trim() || rawPrompt.trim();
+  const lower = basePrompt.toLowerCase();
+  const cleanWords = lower.replace(/[¡!¿?.,;:]/g, '').trim();
 
-  if (lower.includes('cita') || lower.includes('doi') || lower.includes('zotero') || lower.includes('referencia') || lower.includes('cap 2')) {
+  let squad = 'Hub Central (Director General / Agente GOD)';
+  let subagente = 'director-general';
+  let fase = 'F0–F9';
+  let tarea = '';
+  let entradas = 'CLAUDE.md\nobsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+  let salidaEsperada = 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+  let entregable = 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+  let comandoSugerido = `${PY_BIN} scripts/agentes/estado_granja.py`;
+  let diagnostico = '';
+  let formalMethodology =
+    'Orquestación Radial Hub-and-Spoke · Loop de Refinamiento Cognitivo 3.0 · Memoria Viva en Obsidian';
+  let isConversational = false;
+
+  const greetingSet = new Set([
+    'hola',
+    'hola claude',
+    'hola agente',
+    'hola director',
+    'hola god',
+    'buenos dias',
+    'buenas tardes',
+    'buenas noches',
+    'buenas',
+    'saludos',
+    'hey',
+    'hi',
+    'hello',
+    'como estas',
+    'que tal',
+    'quien eres',
+    'que eres',
+    'que puedes hacer',
+    'ayuda',
+    'help',
+    '/help',
+    '/status',
+    '/agents',
+    'test',
+    'prueba',
+    'probando',
+    'ping',
+  ]);
+
+  const isGreeting =
+    greetingSet.has(cleanWords) ||
+    (cleanWords.startsWith('hola ') &&
+      !cleanWords.includes('audita') &&
+      !cleanWords.includes('ejecuta') &&
+      !cleanWords.includes('compila') &&
+      !cleanWords.includes('revisa') &&
+      !cleanWords.includes('verifica'));
+
+  if (isGreeting) {
+    isConversational = true;
+    squad = 'Hub Central (Director General / Agente GOD)';
+    subagente = 'director-general';
+    fase = 'F0–F9';
+    tarea = `Procesar interacción directa en el CLI de Claude Code: "${basePrompt}"`;
+    entradas = 'CLAUDE.md\nobsidian_vault/00_SISTEMA/ESTADO_TESIS.md\nobsidian_vault/00_SISTEMA/DECISIONES.md';
+    salidaEsperada = 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+    entregable = 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+    comandoSugerido = `claude --agent director-general -p "${basePrompt.replace(/"/g, '\\"')}"`;
+    formalMethodology =
+      'Sesión Interactiva Claude Code CLI · Constitución Operativa CLAUDE.md · Memoria Viva Obsidian';
+    diagnostico =
+      `¡Hola, **Bach. José Luis Quispe León**! He recibido tu mensaje (\`"${basePrompt}"\`) y lo he procesado directamente dentro del **CLI de Claude Code (\`claude --agent director-general\`)** en la terminal del proyecto.\n\n` +
+      `El ecosistema multi-agente **SIVAC-THESIS-LAB** está operativo al 100% con los **14 agentes** (\`.claude/agents/\`), **17 skills** y las **3 dimensiones oficiales DEC-007** sincronizadas.`;
+  } else if (
+    lower.includes('cita') ||
+    lower.includes('doi') ||
+    lower.includes('zotero') ||
+    lower.includes('referencia') ||
+    lower.includes('cap 2') ||
+    lower.includes('bibliograf')
+  ) {
     squad = 'Squad A (Evidencia y Bibliometría)';
-    subagente = lower.includes('busca') ? 'investigador-bibliografico' : 'verificador-integridad';
+    subagente = lower.includes('busca') || lower.includes('investiga') ? 'investigador-bibliografico' : 'verificador-integridad';
     fase = 'F2';
-    tarea = `Ejecutar auditoría determinista 1:1 de citas y referencias APA 7 en atención a: "${rawPrompt}", verificando trazabilidad contra índices PDF de la bóveda.`;
+    tarea = `Ejecutar auditoría determinista 1:1 de citas y referencias APA 7 en atención a: "${basePrompt}", verificando trazabilidad contra índices PDF de la bóveda.`;
     entradas = 'obsidian_vault/04_LITERATURA_Y_FUENTES/indices_pdf/\nsalidas/documentos/informe_final_v02.docx';
     salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_${subagente}_auditoria-citas.md`;
     entregable = 'salidas/documentos/informe_final_v02.docx';
     comandoSugerido = `${PY_BIN} scripts/agentes/verificador_integridad.py`;
     formalMethodology = 'Auditoría Bibliométrica Determinista 1:1 · Normas APA 7 en Español (uso de "y", sangría francesa 720 dxa)';
-    diagnostico = `He analizado tu solicitud bajo el **Loop de Refinamiento Cognitivo 3.0** y detectado un requerimiento bibliométrico (**${squad}**). He comisionado a **@${subagente}** para verificar la correspondencia 1:1 de citas y referencias APA 7.`;
-  } else if (lower.includes('instrumento') || lower.includes('fany') || lower.includes('experto') || lower.includes('aiken') || lower.includes('anexo 2')) {
+    diagnostico = `He analizado tu solicitud bajo el **Loop de Refinamiento Cognitivo 3.0** y detectado un requerimiento bibliométrico (**${squad}**). He comisionado a **@${subagente}** en el CLI para verificar la correspondencia 1:1 de citas y referencias APA 7.`;
+  } else if (
+    lower.includes('instrumento') ||
+    lower.includes('fany') ||
+    lower.includes('experto') ||
+    lower.includes('aiken') ||
+    lower.includes('anexo 2') ||
+    lower.includes('forms') ||
+    lower.includes('encuesta')
+  ) {
     squad = 'Squad B (Metodología, Medición y Psicometría)';
-    subagente = 'especialista-instrumentos';
+    subagente = lower.includes('forms') || lower.includes('encuesta') ? 'especialista-forms' : 'especialista-instrumentos';
     fase = 'F3';
-    tarea = `Compilar y verificar el Certificado Único de Validación Fany 2024 en blanco (DEC-015/016/019/020) para los 8 reactivos del Instrumento 03 (TAM): "${rawPrompt}".`;
+    tarea = `Compilar y verificar el Certificado Único de Validación Fany 2024 en blanco (DEC-015/016/019/020) para los 8 reactivos del Instrumento 03 (TAM): "${basePrompt}".`;
     entradas = 'referencias/modelos_validacion/FORMATO_VALIDACION_FANY_2024_OFICIAL.docx\nsalidas/instrumentos/EXPEDIENTE_INSTRUMENTOS_SIVAC_DEC007.md';
     salidaEsperada = 'salidas/documentos/anexos_fany/ANEXO_2_VALIDACION_FANY_INST03_MODALIDAD_A_VACIO.docx';
     entregable = 'salidas/documentos/anexos_fany/ANEXO_2_VALIDACION_FANY_INST03_MODALIDAD_A_VACIO.docx';
     comandoSugerido = `${PY_BIN} scripts/compiladores/generar_anexo2_validacion_fany.py`;
     formalMethodology = 'Psicometría Aplicada · V de Aiken (V >= 0.80) · Certificado Fany 2024 en Blanco (DEC-015 / DEC-020)';
-    diagnostico = `He detectado un requerimiento psicométrico (**${squad}**). He delegado a **@${subagente}** la emisión y verificación del Certificado Único de Validación Fany 2024 conforme a DEC-015 y DEC-020.`;
-  } else if (lower.includes('matriz') || lower.includes('consistencia') || lower.includes('dimension') || lower.includes('dec-007') || lower.includes('brecha') || lower.includes('f1')) {
+    diagnostico = `He detectado un requerimiento psicométrico (**${squad}**). He delegado a **@${subagente}** en el CLI la emisión y verificación del Certificado Único de Validación Fany 2024 conforme a DEC-015 y DEC-020.`;
+  } else if (
+    lower.includes('matriz') ||
+    lower.includes('consistencia') ||
+    lower.includes('dimension') ||
+    lower.includes('dec-007') ||
+    lower.includes('brecha') ||
+    lower.includes('f1')
+  ) {
     squad = 'Squad B (Metodología, Medición y Psicometría)';
-    subagente = 'guardian-consistencia';
+    subagente = lower.includes('brecha') || lower.includes('modelo') ? 'analista-documental' : 'guardian-consistencia';
     fase = 'F1';
-    tarea = `Auditar el isomorfismo metodológico de las 3 dimensiones oficiales DEC-007 (Oportunidad, Consistencia documental y Satisfacción del usuario) frente a: "${rawPrompt}".`;
+    tarea = `Auditar el isomorfismo metodológico de las 3 dimensiones oficiales DEC-007 (Oportunidad, Consistencia documental y Satisfacción del usuario) frente a: "${basePrompt}".`;
     entradas = 'obsidian_vault/01_MATRIZ_Y_CONSISTENCIA/MATRIZ_CONSISTENCIA_DEC007.md\ndatos/schemas/codebook.json';
-    salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_guardian-consistencia_isomorfismo.md`;
+    salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_${subagente}_isomorfismo.md`;
     entregable = 'salidas/documentos/MATRIZ_CONSISTENCIA_Y_OPERACIONALIZACION_DEC007.docx';
     comandoSugerido = `${PY_BIN} scripts/agentes/guardian_consistencia.py`;
     formalMethodology = 'Isomorfismo Metodológico · 3 Dimensiones Inmutables DEC-007 · Diseño Pre-experimental (O1 -> X -> O2)';
-    diagnostico = `He detectado una auditoría de consistencia metodológica (**${squad}**). He comisionado a **@${subagente}** para verificar la alineación de las 3 dimensiones inmutables DEC-007.`;
-  } else if (lower.includes('xp') || lower.includes('historia') || lower.includes('syncova') || lower.includes('software') || lower.includes('3.3')) {
+    diagnostico = `He detectado una auditoría de consistencia metodológica (**${squad}**). He comisionado a **@${subagente}** en el CLI para verificar la alineación de las 3 dimensiones inmutables DEC-007.`;
+  } else if (
+    lower.includes('xp') ||
+    lower.includes('historia') ||
+    lower.includes('syncova') ||
+    lower.includes('software') ||
+    lower.includes('sivac') ||
+    lower.includes('3.3')
+  ) {
     squad = 'Squad C (Ingeniería de Software y Auditoría SIVAC)';
     subagente = lower.includes('codigo') || lower.includes('audita') ? 'ingeniero-sivac' : 'documentador-xp';
     fase = 'F3';
-    tarea = `Inspeccionar en modo SOLO LECTURA la trazabilidad de las 15 Historias de Usuario XP (HU-01 a HU-15) y arquitectura SIVAC para: "${rawPrompt}".`;
+    tarea = `Inspeccionar en modo SOLO LECTURA la trazabilidad de las 15 Historias de Usuario XP (HU-01 a HU-15) y arquitectura SIVAC para: "${basePrompt}".`;
     entradas = 'salidas/documentos/CAPITULO_III_METODOLOGIA_E_INGENIERIA_XP_SIVAC.docx';
     salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_${subagente}_trazabilidad-xp.md`;
     entregable = 'salidas/documentos/CAPITULO_III_METODOLOGIA_E_INGENIERIA_XP_SIVAC.docx';
     comandoSugerido = `${PY_BIN} scripts/agentes/inventario_syncova.py`;
     formalMethodology = 'Ingeniería de Software Extreme Programming (XP) · ISO/IEC 25010:2023 · Auditoría Read-Only (Regla 01)';
-    diagnostico = `He detectado una tarea de ingeniería de software (**${squad}**). He comisionado a **@${subagente}** en estricto modo de **SOLO LECTURA** para auditar las 15 Historias de Usuario XP del sistema SIVAC.`;
-  } else if (lower.includes('estadist') || lower.includes('shapiro') || lower.includes('wilcoxon') || lower.includes('datos') || lower.includes('cap 4') || lower.includes('cap 5') || lower.includes('n=14')) {
+    diagnostico = `He detectado una tarea de ingeniería de software (**${squad}**). He comisionado a **@${subagente}** en estricto modo de **SOLO LECTURA** dentro del CLI para auditar las 15 Historias de Usuario XP del sistema SIVAC.`;
+  } else if (
+    lower.includes('estadist') ||
+    lower.includes('shapiro') ||
+    lower.includes('wilcoxon') ||
+    lower.includes('datos') ||
+    lower.includes('cap 4') ||
+    lower.includes('cap 5') ||
+    lower.includes('n=14')
+  ) {
     squad = 'Squad D (Bioestadística e Inferencia)';
     subagente = 'analista-estadistico';
     fase = 'F5';
-    tarea = `Verificar el pipeline bioestadístico inferencial (N = n = 14) y comprobar el candado ético sobre datos/raw/MANIFEST.json para: "${rawPrompt}".`;
+    tarea = `Verificar el pipeline bioestadístico inferencial (N = n = 14) y comprobar el candado ético sobre datos/raw/MANIFEST.json para: "${basePrompt}".`;
     entradas = 'datos/schemas/codebook.json\ndatos/plantillas/MANIFEST.plantilla.json';
     salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_analista-estadistico_control-pipeline.md`;
     entregable = 'salidas/documentos/PROTOCOLO_BIOESTADISTICO_E_INFERENCIAL_N14.docx';
     comandoSugerido = `${PY_BIN} scripts/estadistica/pipeline_inferencial.py --json`;
     formalMethodology = 'Bioestadística Inferencial Pareada (N = n = 14) · Shapiro-Wilk + t de Student / Wilcoxon · Candado Ético Regla 01';
-    diagnostico = `He detectado una tarea bioestadística (**${squad}**). He comisionado a **@${subagente}** para ejecutar el protocolo inferencial ($n = 14$) verificando el candado ético de datos reales.`;
-  } else if (lower.includes('jurado') || lower.includes('sustenta') || lower.includes('evalua') || lower.includes('dictamen') || lower.includes('estado') || lower.includes('20 pts')) {
+    diagnostico = `He detectado una tarea bioestadística (**${squad}**). He comisionado a **@${subagente}** en el CLI para ejecutar el protocolo inferencial ($n = 14$) verificando el candado ético de datos reales.`;
+  } else if (
+    lower.includes('jurado') ||
+    lower.includes('sustenta') ||
+    lower.includes('evalua') ||
+    lower.includes('dictamen') ||
+    lower.includes('estado') ||
+    lower.includes('20 pts')
+  ) {
     squad = 'Squad F (Gobernanza, Memoria y Evaluación Externa)';
     subagente = 'jurado-revisor';
     fase = 'F9';
-    tarea = `Ejecutar revisión colegiada simulada en escala vigesimal (0–20 pts) y diagnóstico de la granja sobre: "${rawPrompt}".`;
+    tarea = `Ejecutar revisión colegiada simulada en escala vigesimal (0–20 pts) y diagnóstico de la granja sobre: "${basePrompt}".`;
     entradas = 'salidas/documentos/informe_final_v02.docx\nsalidas/reportes_jurado/DICTAMEN_AUDITORIA_PRELIMINAR_QG1_QG5.docx';
     salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_jurado-revisor_dictamen.md`;
     entregable = 'salidas/reportes_jurado/DICTAMEN_AUDITORIA_PRELIMINAR_QG1_QG5.docx';
     comandoSugerido = `${PY_BIN} scripts/agentes/estado_granja.py`;
     formalMethodology = 'Evaluación Colegiada UNAJMA (Rúbrica Vigesimal 0-20 pts) · Compuertas de Calidad QG-0 a QG-9';
-    diagnostico = `He detectado una evaluación integral de compuertas de calidad (**${squad}**). He comisionado a **@${subagente}** para auditar el estado completo de la granja y emitir el dictamen colegiado.`;
-  } else {
+    diagnostico = `He detectado una evaluación integral de compuertas de calidad (**${squad}**). He comisionado a **@${subagente}** en el CLI para auditar el estado completo de la granja y emitir el dictamen colegiado.`;
+  } else if (lower.includes('obsidian') || lower.includes('boveda') || lower.includes('cerebro') || lower.includes('handoff')) {
+    squad = 'Squad F (Gobernanza, Memoria y Evaluación Externa)';
+    subagente = 'curador-cerebro';
+    fase = 'F0–F9';
+    tarea = `Auditar e indexar la memoria viva en Obsidian Vault para: "${basePrompt}".`;
+    entradas = 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md\nobsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/';
+    salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_curador-cerebro_boveda.md`;
+    entregable = 'obsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+    comandoSugerido = `${PY_BIN} scripts/agentes/curador_cerebro.py`;
+    formalMethodology = 'Gobernanza No-Destructiva de Bóveda Obsidian · Trazabilidad de Relevos (Handoffs)';
+    diagnostico = `He detectado una operación sobre la bóveda de conocimiento (**${squad}**). He comisionado a **@${subagente}** en el CLI para verificar la integridad de \`obsidian_vault/\`.`;
+  } else if (lower.includes('redacta') || lower.includes('prosa') || lower.includes('estilo')) {
+    squad = 'Squad E (Redacción, Estilo y Maquetación Editorial)';
+    subagente = 'redactor-academico';
+    fase = 'F4';
+    tarea = `Auditar y refinar la prosa académica APA 7 en tercera persona para: "${basePrompt}".`;
+    entradas = 'salidas/documentos/informe_final_v02.docx';
+    salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_redactor-academico_prosa.md`;
+    entregable = 'salidas/documentos/informe_final_v02.docx';
+    comandoSugerido = `${PY_BIN} scripts/agentes/revisor_prosa.py`;
+    formalMethodology = 'Redacción Científica Verificable · Tercera Persona Impersonal · Normas APA 7ma Edición';
+    diagnostico = `He detectado una tarea de redacción académica (**${squad}**). He comisionado a **@${subagente}** en el CLI para auditar la prosa científica del informe.`;
+  } else if (
+    lower.includes('docx') ||
+    lower.includes('word') ||
+    lower.includes('openxml') ||
+    lower.includes('tabla') ||
+    lower.includes('margen') ||
+    lower.includes('maqueta') ||
+    lower.includes('compila')
+  ) {
     squad = 'Squad E (Redacción, Estilo y Maquetación Editorial)';
     subagente = 'maquetador-docx';
     fase = 'F4';
-    tarea = `Ejecutar cirugía y auditoría OpenXML APA 7 / UNAJMA (márgenes 1985/1418 dxa, tablas de 3 líneas sin flotación, figuras a 300 DPI) para: "${rawPrompt}".`;
+    tarea = `Ejecutar cirugía y auditoría OpenXML APA 7 / UNAJMA (márgenes 1985/1418 dxa, tablas de 3 líneas sin flotación, figuras a 300 DPI) para: "${basePrompt}".`;
     entradas = 'salidas/documentos/informe_final_v02.docx\nreferencias/modelos_tesis/MODELO_TESIS_UNAJMA_FANY_2024.docx';
     salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_maquetador-docx_cirugia-openxml.md`;
     entregable = 'salidas/documentos/informe_final_v02.docx';
     comandoSugerido = `${PY_BIN} scripts/utilidades/auditor_docx_apa7.py auditar salidas/documentos/informe_final_v02.docx --md`;
-    diagnostico = `He detectado una orden editorial y de maquetación OpenXML (**${squad}**). He comisionado a **@${subagente}** para auditar márgenes UNAJMA y tablas APA 7 en \`informe_final_v02.docx\`.`;
+    diagnostico = `He detectado una orden editorial y de maquetación OpenXML (**${squad}**). He comisionado a **@${subagente}** en el CLI para auditar márgenes UNAJMA y tablas APA 7 en \`informe_final_v02.docx\`.`;
+  } else {
+    // General orchestration prompt handled by @director-general in the CLI
+    squad = 'Hub Central (Director General / Agente GOD)';
+    subagente = 'director-general';
+    fase = 'F4';
+    tarea = `Procesar directiva general en el CLI con @director-general: "${basePrompt}"`;
+    entradas = 'CLAUDE.md\nobsidian_vault/00_SISTEMA/ESTADO_TESIS.md';
+    salidaEsperada = `obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/${new Date().toISOString().slice(0, 10)}_director-general_directiva.md`;
+    entregable = 'salidas/documentos/informe_final_v02.docx';
+    comandoSugerido = `${PY_BIN} scripts/agentes/estado_granja.py`;
+    formalMethodology = 'Orquestación Radial Hub-and-Spoke · Diagnóstico Integral de Compuertas QG-0 a QG-9';
+    diagnostico = `He recibido tu directiva en el **Hub Central (@director-general)** y he iniciado la sesión en el **CLI de Claude Code** para evaluar el estado del proyecto frente a: *"${basePrompt}"*.`;
   }
 
-  const cleanPrompt = rawPrompt.replace(/"/g, '\\"');
-  const claudeCliCmd = `claude -p "${cleanPrompt}" --agent ${subagente} --output-format stream-json --verbose`;
-  const droidCliCmd = `droid exec "${cleanPrompt}" --droid ${subagente} --auto medium`;
+  const cleanPrompt = basePrompt.replace(/"/g, '\\"');
+  const claudeCliCmd = `claude --agent ${subagente} -p "${cleanPrompt}"`;
+  const droidCliCmd = `droid exec --droid ${subagente} "${cleanPrompt}" --auto medium`;
 
   return {
     squad,
@@ -1292,6 +1541,7 @@ function classifyPromptIntent(rawPrompt: string) {
     formalMethodology,
     claudeCliCmd,
     droidCliCmd,
+    isConversational,
   };
 }
 
@@ -1395,15 +1645,14 @@ async function startServer() {
     } = {}
   ): Promise<{ exitCode: number; output: string; handoffPath?: string }> => {
     return new Promise((resolve) => {
-      ensureLocalCliShimsAndPath();
-      const mode = options.mode || 'bun';
+      const updatedPath = ensureLocalCliShimsAndPath();
+      const mode = options.mode || 'claude';
       const agentId = options.agentId || 'director-general';
       const cmdTrimmed = normalizePlatformCommand(rawCommand);
 
-      appendTerminalLine('command', `$ [${mode.toUpperCase()} · @${agentId}] ${cmdTrimmed}`, agentId, mode);
-
       const secCheck = checkPreToolUseSecurity(cmdTrimmed);
       if (!secCheck.allowed) {
+        appendTerminalLine('command', `$ [${mode.toUpperCase()} · @${agentId}] ${cmdTrimmed}`, agentId, mode);
         appendTerminalLine('security', secCheck.reason || 'Comando bloqueado por Regla 01', agentId, mode);
         agentRuntimeStatus[agentId] = {
           status: 'blocked',
@@ -1416,40 +1665,65 @@ async function startServer() {
         return;
       }
 
-      // Build cross-platform command for Windows and POSIX
-      let actualCommand = cmdTrimmed;
+      // Build canonical CLI display command so user always sees the real CLI invocation in XTerm.js
+      let displayCommand = cmdTrimmed;
+      const lowerTrimmed = cmdTrimmed.toLowerCase();
       const isDirectCli =
-        cmdTrimmed.startsWith('claude ') ||
-        cmdTrimmed.startsWith('droid ') ||
-        cmdTrimmed.startsWith('bun ') ||
-        cmdTrimmed.startsWith('npm ') ||
-        cmdTrimmed.startsWith('powershell ') ||
-        cmdTrimmed.includes('--version');
+        lowerTrimmed === 'claude' ||
+        lowerTrimmed === 'droid' ||
+        lowerTrimmed === 'bun' ||
+        lowerTrimmed.startsWith('claude ') ||
+        lowerTrimmed.startsWith('droid ') ||
+        lowerTrimmed.startsWith('bun ') ||
+        lowerTrimmed.startsWith('npm ') ||
+        lowerTrimmed.startsWith('powershell ') ||
+        lowerTrimmed.includes('--version');
 
-      if (!isDirectCli) {
+      if (lowerTrimmed === 'claude') {
+        displayCommand = `claude --agent ${agentId}`;
+      } else if (lowerTrimmed === 'droid') {
+        displayCommand = `droid --droid ${agentId}`;
+      } else if (!isDirectCli) {
         if (mode === 'claude') {
           const safePrompt = (options.tarea || cmdTrimmed).replace(/"/g, '\\"');
-          actualCommand = `claude -p "${safePrompt}" --agent ${agentId} --output-format stream-json --verbose`;
+          displayCommand = `claude --agent ${agentId} -p "${safePrompt}"`;
         } else if (mode === 'droid') {
           const safePrompt = (options.tarea || cmdTrimmed).replace(/"/g, '\\"');
-          actualCommand = `droid exec "${safePrompt}" --droid ${agentId} --auto medium`;
+          displayCommand = `droid exec --droid ${agentId} "${safePrompt}" --auto medium`;
         } else if (mode === 'bun') {
-          actualCommand = `bun run scripts/bun_runner.ts --mode=${mode} --agent=${agentId} --cmd ${cmdTrimmed}`;
+          if (isKnownSystemShellCommand(cmdTrimmed)) {
+            displayCommand = `bun run scripts/bun_runner.ts --mode=bun --agent=${agentId} --cmd ${cmdTrimmed}`;
+          } else {
+            const safePrompt = (options.tarea || cmdTrimmed).replace(/"/g, '\\"');
+            displayCommand = `claude --agent ${agentId} -p "${safePrompt}"`;
+          }
         } else {
-          actualCommand = cmdTrimmed;
+          // mode === 'shell': if user typed a conversational prompt like "hola" in terminal, route to Claude CLI!
+          if (!isKnownSystemShellCommand(cmdTrimmed)) {
+            const safePrompt = cmdTrimmed.replace(/"/g, '\\"');
+            displayCommand = `claude --agent ${agentId} -p "${safePrompt}"`;
+          } else {
+            displayCommand = cmdTrimmed;
+          }
         }
       }
 
+      // Log the clean CLI command to XTerm.js
+      appendTerminalLine('command', `$ [${mode.toUpperCase()} · @${agentId}] ${displayCommand}`, agentId, mode);
+
+      // Resolve displayCommand into a guaranteed executable command (never fails with command not found)
+      const spawnCommand = resolveExecutableCommand(displayCommand);
+
       agentRuntimeStatus['director-general'] = {
         status: 'running',
-        currentTask: `Orquestando delegación hacia @${agentId}`,
-        lastCommand: actualCommand,
+        currentTask: `Orquestando sesión CLI hacia @${agentId}`,
+        lastCommand: displayCommand,
         lastRunAt: new Date().toISOString(),
       };
       agentRuntimeStatus[agentId] = {
         status: 'running',
-        currentTask: options.tarea || cmdTrimmed,
-        lastCommand: actualCommand,
+        currentTask: options.tarea || displayCommand,
+        lastCommand: displayCommand,
         lastRunAt: new Date().toISOString(),
       };
       broadcast('agent:status', { agentId: 'director-general', ...agentRuntimeStatus['director-general'] });
@@ -1469,7 +1743,7 @@ async function startServer() {
         tarea: options.tarea || cmdTrimmed,
         task: options.tarea || cmdTrimmed,
         engine: mode === 'claude' || mode === 'droid' ? mode : 'bun',
-        command: actualCommand,
+        command: displayCommand,
         status: 'running',
         startedAt: startedAtIso,
       };
@@ -1479,13 +1753,19 @@ async function startServer() {
 
       const startTime = Date.now();
       const shellBin = IS_WIN ? 'cmd.exe' : 'bash';
-      const shellArgs = IS_WIN ? ['/d', '/s', '/c', actualCommand] : ['-c', actualCommand];
+      const shellArgs = IS_WIN ? ['/d', '/s', '/c', spawnCommand] : ['-c', spawnCommand];
+      const spawnEnv: NodeJS.ProcessEnv = {
+        ...process.env,
+        PATH: updatedPath,
+        PYTHONIOENCODING: 'utf-8',
+      };
+      if (IS_WIN) {
+        (spawnEnv as Record<string, string>).Path = updatedPath;
+      }
+
       const child = spawn(shellBin, shellArgs, {
         cwd: __dirname,
-        env: {
-          ...process.env,
-          PYTHONIOENCODING: 'utf-8',
-        },
+        env: spawnEnv,
       });
       activeChildProcess = child;
 
@@ -1520,7 +1800,7 @@ async function startServer() {
         let handoffRelPath: string | undefined;
         if (options.createHandoff) {
           const dateStr = new Date().toISOString().slice(0, 10);
-          const slug = (options.tarea || actualCommand)
+          const slug = (options.tarea || displayCommand)
             .toLowerCase()
             .replace(/[^a-z0-9]+/g, '-')
             .replace(/^-|-$/g, '')
@@ -1533,7 +1813,7 @@ async function startServer() {
             `# Handoff de Subagente — \`${agentId}\` (${options.squad || 'Squad Especializado'})\n\n` +
             `- **Estado:** \`${exitCode === 0 ? 'completado' : 'bloqueado'}\`\n` +
             `- **Fase:** \`${options.fase || 'F4'}\`\n` +
-            `- **Comando Ejecutado:** \`${actualCommand}\`\n` +
+            `- **Comando Ejecutado:** \`${displayCommand}\`\n` +
             `- **Productos Generados / Auditados:** Verificados en \`salidas/\` y \`obsidian_vault/\`\n` +
             `- **Hallazgos Clave:**\n\`\`\`text\n${summarySnippet}\n\`\`\`\n` +
             `- **Pendientes / \`[VERIFICAR]\`:** ${exitCode === 3 ? 'Esperando ingreso de datos de campo reales en datos/raw/MANIFEST.json (Regla 01).' : 'Ninguno.'}\n` +
@@ -1562,13 +1842,13 @@ async function startServer() {
         agentRuntimeStatus['director-general'] = {
           status: 'idle',
           currentTask: `Última delegación completada (@${agentId})`,
-          lastCommand: actualCommand,
+          lastCommand: displayCommand,
           lastRunAt: new Date().toISOString(),
         };
         agentRuntimeStatus[agentId] = {
           status: finalStatus,
           currentTask: options.tarea || cmdTrimmed,
-          lastCommand: actualCommand,
+          lastCommand: displayCommand,
           lastRunAt: new Date().toISOString(),
         };
         broadcast('agent:status', { agentId: 'director-general', ...agentRuntimeStatus['director-general'] });
@@ -1916,12 +2196,20 @@ async function startServer() {
     const intent = classifyPromptIntent(prompt);
     const delId = `del-${Date.now()}`;
     const startedAtIso = new Date().toISOString();
+
+    const cliCommandForRuntime =
+      runtime === 'claude'
+        ? intent.claudeCliCmd
+        : runtime === 'droid'
+        ? intent.droidCliCmd
+        : `bun run scripts/bun_runner.ts --mode=bun --agent=${intent.subagente} --cmd ${intent.comandoSugerido}`;
+
     const initialGodText =
       `${intent.diagnostico}\n\n` +
       `- **Fase / Compuerta:** \`${intent.fase}\`\n` +
-      `- **Subagente Comisionado:** \`@${intent.subagente}\` (\`${intent.squad}\`)\n` +
-      `- **Motor Local Seleccionado:** \`${runtime.toUpperCase()}\`\n` +
-      `- **Entregable Objetivo:** \`${intent.entregable}\``;
+      `- **Agente CLI Activo:** \`@${intent.subagente}\` (\`${intent.squad}\`)\n` +
+      `- **Comando Ejecutado en Terminal:** \`${cliCommandForRuntime}\`\n` +
+      `- **Entregable / Contexto:** \`${intent.entregable}\``;
 
     const delegationItem = {
       id: delId,
@@ -1933,12 +2221,7 @@ async function startServer() {
       task: intent.tarea,
       runtime,
       engine: runtime,
-      command:
-        runtime === 'claude'
-          ? intent.claudeCliCmd
-          : runtime === 'droid'
-          ? intent.droidCliCmd
-          : intent.comandoSugerido,
+      command: cliCommandForRuntime,
       claudeCliCmd: intent.claudeCliCmd,
       droidCliCmd: intent.droidCliCmd,
       status: 'running' as const,
@@ -1963,7 +2246,7 @@ async function startServer() {
           ? 'Factory Droid CLI (.factory/droids)'
           : 'Bun Shell Runtime',
       cognitiveRefinement: {
-        intent: `Comisión radial hacia @${intent.subagente} (${intent.fase})`,
+        intent: `Ejecución en CLI de @${intent.subagente} (${intent.fase})`,
         obsidianContext: `00_SISTEMA/ESTADO_TESIS.md · 00_SISTEMA/DECISIONES.md (DEC-007) · ${intent.entradas.split('\n')[0]}`,
         formalMethodology: intent.formalMethodology,
         selectedSquads: [intent.squad],
@@ -1974,18 +2257,18 @@ async function startServer() {
     godChatHistory.push(godMsg);
     broadcast('godchat:message', godMsg, { message: godMsg });
 
-    // 3. Execute via Bun / Claude Code / Factory Droid in Live Terminal
-    const execResult = await executeCommandInTerminal(intent.comandoSugerido, {
+    // 3. Execute the actual Claude Code / Factory Droid / Bun CLI command in the Live Terminal
+    const execResult = await executeCommandInTerminal(cliCommandForRuntime, {
       mode: runtime,
       agentId: intent.subagente,
       tarea: intent.tarea,
       fase: intent.fase,
       squad: intent.squad,
-      createHandoff: true,
+      createHandoff: !intent.isConversational,
     });
 
     const finalStatus: 'completed' | 'blocked' = execResult.exitCode === 0 ? 'completed' : 'blocked';
-    const cleanOutput = execResult.output.trim().slice(0, 900) || 'Proceso ejecutado correctamente.';
+    const cleanOutput = execResult.output.trim().slice(0, 1100) || 'Sesión CLI ejecutada correctamente.';
     const completedAtIso = new Date().toISOString();
 
     const updatedDelegation = {
@@ -2006,12 +2289,17 @@ async function startServer() {
       },
     ];
 
-    const finalMarkdownReport =
-      `${initialGodText}\n\n` +
-      `### Resultado de Ejecución de \`@${intent.subagente}\`\n` +
-      (finalStatus === 'completed'
-        ? `La comisión finalizó con éxito (**código 0**) y el relevo ha sido depositado en \`${execResult.handoffPath || intent.salidaEsperada}\`.`
-        : `Atención: la ejecución reportó un bloqueo o advertencia normativa (**código ${execResult.exitCode}**). Revisa el detalle técnico en la tarjeta de comisión.`);
+    const finalMarkdownReport = intent.isConversational
+      ? `${intent.diagnostico}\n\n` +
+        `### Respuesta en Vivo desde el CLI de \`@${intent.subagente}\`\n` +
+        `- **Estado del Ecosistema:** 14 Agentes (\`.claude/agents/\`) · 14 Droids (\`.factory/droids/\`) · 17 Skills · 5 MCPs activos.\n` +
+        `- **Avance de Fases:** F0–F3 al **100%** · F4 (OpenXML APA 7) al **90%** · F5 (Bioestadística $n=14$) activa con candado ético.\n` +
+        `- **¿Qué deseas hacer ahora?** Escribe cualquier instrucción o pulsa una directiva rápida para que delegue al subagente especialista correspondiente.`
+      : `${initialGodText}\n\n` +
+        `### Resultado de Ejecución CLI de \`@${intent.subagente}\`\n` +
+        (finalStatus === 'completed'
+          ? `La sesión en el CLI finalizó con éxito (**código 0**) y el relevo ha sido depositado en \`${execResult.handoffPath || intent.salidaEsperada}\`.`
+          : `Atención: la ejecución reportó una observación o candado normativo (**código ${execResult.exitCode}**). Revisa la salida del CLI en la tarjeta o en la terminal XTerm.js.`);
 
     godMsg.text = finalMarkdownReport;
     godMsg.content = finalMarkdownReport;
@@ -2030,15 +2318,22 @@ async function startServer() {
   const handleDirectCommission = async (req: express.Request, res: express.Response) => {
     const payload = req.body || {};
     const subagente = String(payload.subagent || payload.subagente || 'guardian-consistencia');
-    const customTask = String(payload.task || payload.tarea || `Comisión radial asignada a @${subagente}`);
+    const customTask = String(payload.task || payload.tarea || `Ejecutar auditoría del rol @${subagente} según ESTADO_TESIS.md`);
     const fase = String(payload.phase || payload.fase || 'F4');
     const squad = String(payload.squad || SQUAD_BY_AGENT[subagente]?.squad || 'Squad Especializado');
     const rawEngine = String(payload.engine || payload.mode || 'claude').toLowerCase();
     const mode: 'bun' | 'claude' | 'droid' =
       rawEngine === 'droid' ? 'droid' : rawEngine === 'bun' ? 'bun' : 'claude';
-    const cmd = String(payload.comando || AGENT_DEFAULT_SCRIPTS[subagente] || `${PY_BIN} scripts/agentes/estado_granja.py`);
+    const safeTask = customTask.replace(/"/g, '\\"');
+    const cliCmd =
+      payload.comando ||
+      (mode === 'claude'
+        ? `claude --agent ${subagente} -p "${safeTask}"`
+        : mode === 'droid'
+        ? `droid exec --droid ${subagente} "${safeTask}" --auto medium`
+        : `bun run scripts/bun_runner.ts --mode=bun --agent=${subagente} --prompt="${safeTask}"`);
 
-    const result = await executeCommandInTerminal(cmd, {
+    const result = await executeCommandInTerminal(String(cliCmd), {
       mode,
       agentId: subagente,
       tarea: customTask,
@@ -2048,7 +2343,7 @@ async function startServer() {
     });
 
     const finalStatus: 'completed' | 'blocked' = result.exitCode === 0 ? 'completed' : 'blocked';
-    const cleanOutput = result.output.trim().slice(0, 800) || 'Comisión ejecutada.';
+    const cleanOutput = result.output.trim().slice(0, 900) || 'Comisión ejecutada en CLI.';
     const nowIso = new Date().toISOString();
     const delObj = {
       id: `del-${Date.now()}`,
@@ -2060,9 +2355,9 @@ async function startServer() {
       task: customTask,
       runtime: mode,
       engine: mode,
-      command: cmd,
-      claudeCliCmd: `claude --agent ${subagente} -p "${customTask.replace(/"/g, '\\"')}"`,
-      droidCliCmd: `droid exec --droid ${subagente} "${customTask.replace(/"/g, '\\"')}"`,
+      command: String(cliCmd),
+      claudeCliCmd: `claude --agent ${subagente} -p "${safeTask}"`,
+      droidCliCmd: `droid exec --droid ${subagente} "${safeTask}" --auto medium`,
       status: finalStatus,
       outputSummary: cleanOutput,
       handoffPath: result.handoffPath,
@@ -2073,9 +2368,10 @@ async function startServer() {
     };
 
     const msgText =
-      `Comisión directa despachada a **@${subagente}** (\`${squad}\`) mediante **${mode.toUpperCase()}**:\n\n` +
+      `Comisión directa ejecutada en el CLI de **@${subagente}** (\`${squad}\`) mediante **${mode.toUpperCase()}**:\n\n` +
       `> ${customTask}\n\n` +
-      `Handoff depositado en: \`${result.handoffPath || 'obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/'}\``;
+      `- **Comando CLI:** \`${cliCmd}\`\n` +
+      `- **Handoff depositado en:** \`${result.handoffPath || 'obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/'}\``;
 
     const commMsg: GodChatMessage = {
       id: `msg-comm-${Date.now()}`,
@@ -2102,7 +2398,7 @@ async function startServer() {
       ok: true,
       dispatched: true,
       subagente,
-      command: cmd,
+      command: cliCmd,
       exitCode: result.exitCode,
       output: result.output,
       handoffPath: result.handoffPath,

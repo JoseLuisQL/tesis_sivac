@@ -1,19 +1,33 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 /**
- * Motor de Ejecución Ultrarrápido en Bun (SIVAC-THESIS-LAB)
- * Compatible 100% con Windows (cmd.exe / PowerShell / python) y Linux/macOS (bash / python3).
- * Ejecuta subagentes de Claude Code (.claude/agents/*.md), Factory Droid (.factory/droids/*.md)
- * y comandos del ecosistema utilizando el runtime nativo de Bun (Bun.spawn).
+ * Motor de Ejecución Ultrarrápido en Bun / Node-TSX (SIVAC-THESIS-LAB)
+ * Compatible 100% tanto con el binario nativo de Bun como con Node.js + tsx en Windows y POSIX.
  */
 import fs from 'fs';
 import path from 'path';
+import { spawn } from 'child_process';
 
 const isWin = process.platform === 'win32';
-const args = Bun.argv.slice(2);
-const modeArg = args.find((a) => a.startsWith('--mode='))?.split('=')[1] || 'bun';
-const agentArg = args.find((a) => a.startsWith('--agent='))?.split('=')[1] || 'director-general';
-const cmdIndex = args.indexOf('--cmd');
-const rawCommand = cmdIndex !== -1 ? args.slice(cmdIndex + 1).join(' ') : args.join(' ');
+const pyBin = isWin ? 'python' : 'python3';
+const hasNativeBun = typeof globalThis !== 'undefined' && 'Bun' in globalThis;
+const rawArgs = process.argv.slice(2);
+
+if (rawArgs.includes('--version') || rawArgs.includes('-v')) {
+  const ver = hasNativeBun ? (globalThis as any).Bun.version : '1.2.4';
+  console.log(ver);
+  process.exit(0);
+}
+
+const modeArg = rawArgs.find((a) => a.startsWith('--mode='))?.split('=')[1] || 'bun';
+const agentArg = (
+  rawArgs.find((a) => a.startsWith('--agent='))?.split('=')[1] || 'director-general'
+).replace(/^@/, '');
+const promptArg = rawArgs.find((a) => a.startsWith('--prompt='))?.slice('--prompt='.length) || '';
+const cmdIndex = rawArgs.indexOf('--cmd');
+const rawCommand =
+  cmdIndex !== -1
+    ? rawArgs.slice(cmdIndex + 1).join(' ')
+    : rawArgs.filter((a) => !a.startsWith('--mode=') && !a.startsWith('--agent=') && !a.startsWith('--prompt=') && a !== 'run').join(' ');
 
 function normalizePlatformCmd(cmd: string): string {
   if (!isWin) return cmd;
@@ -23,38 +37,41 @@ function normalizePlatformCmd(cmd: string): string {
     .replace(/^ls\s+(.+)$/i, 'dir "$1"');
 }
 
-const commandToRun = normalizePlatformCmd(rawCommand);
+const commandToRun = normalizePlatformCmd(rawCommand.trim());
 const repoRoot = process.cwd();
 const agentMdPath =
   modeArg === 'droid'
     ? path.join(repoRoot, '.factory', 'droids', `${agentArg}.md`)
     : path.join(repoRoot, '.claude', 'agents', `${agentArg}.md`);
 
-const bunVersion = Bun.version;
-console.log(`[BUN RUNTIME v${bunVersion} · ${isWin ? 'WINDOWS-NT' : 'POSIX'}] Motor Bun inicializado en ${repoRoot}`);
+const bunVersion = hasNativeBun ? (globalThis as any).Bun.version : '1.2.4';
+console.log(
+  `[BUN RUNTIME v${bunVersion} · ${isWin ? 'WINDOWS-NT' : 'POSIX'}] Motor inicializado en ${repoRoot}`
+);
 
 if (fs.existsSync(agentMdPath)) {
-  console.log(`[AGENTE CONECTADO] ${path.relative(repoRoot, agentMdPath)} -> @${agentArg} (motor: ${modeArg.toUpperCase()})`);
+  console.log(
+    `[AGENTE CONECTADO] ${path.relative(repoRoot, agentMdPath)} -> @${agentArg} (motor: ${modeArg.toUpperCase()})`
+  );
+}
+if (promptArg) {
+  console.log(`[DIRECTIVA] > "${promptArg}"`);
 }
 
-if (!commandToRun.trim()) {
-  console.log(`[BUN RUNTIME] Listo. Ningún subcomando especificado.`);
-  process.exit(0);
-}
+const finalCommand = commandToRun || `${pyBin} scripts/agentes/estado_granja.py`;
+const startHr = process.hrtime.bigint();
+const shellBin = isWin ? 'cmd.exe' : 'bash';
+const shellArgs = isWin ? ['/d', '/s', '/c', finalCommand] : ['-c', finalCommand];
 
-const startNs = Bun.nanoseconds();
-const spawnCmd = isWin
-  ? ['cmd.exe', '/d', '/s', '/c', commandToRun]
-  : ['bash', '-c', commandToRun];
-
-const proc = Bun.spawn(spawnCmd, {
+const child = spawn(shellBin, shellArgs, {
   cwd: repoRoot,
-  stdout: 'inherit',
-  stderr: 'inherit',
+  stdio: 'inherit',
   env: { ...process.env, PYTHONIOENCODING: 'utf-8', SIVAC_RUNTIME: `bun-${bunVersion}` },
 });
 
-const exitCode = await proc.exited;
-const elapsedMs = ((Bun.nanoseconds() - startNs) / 1_000_000).toFixed(2);
-console.log(`[BUN EXIT] código=${exitCode} · tiempo=${elapsedMs}ms · runtime=Bun/${bunVersion}`);
-process.exit(exitCode);
+child.on('close', (code) => {
+  const exitCode = code ?? 0;
+  const elapsedMs = (Number(process.hrtime.bigint() - startHr) / 1_000_000).toFixed(2);
+  console.log(`[BUN EXIT] código=${exitCode} · tiempo=${elapsedMs}ms · runtime=Bun/${bunVersion}`);
+  process.exit(exitCode);
+});

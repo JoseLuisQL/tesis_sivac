@@ -288,9 +288,10 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
           {/* Quick Preset Commands */}
           <div className="hidden xl:flex items-center gap-1.5 ml-2">
             {[
-              { label: 'bun --version', cmd: 'bun --version' },
+              { label: 'claude -p "hola"', cmd: 'claude --agent director-general -p "hola"' },
               { label: 'claude --version', cmd: 'claude --version' },
               { label: 'droid --version', cmd: 'droid --version' },
+              { label: 'bun --version', cmd: 'bun --version' },
               { label: 'Auditar Agentes (.claude)', cmd: 'ls -la .claude/agents' },
             ].map((preset) => (
               <button
@@ -354,7 +355,7 @@ export const XTermConsole: React.FC<XTermConsoleProps> = ({
               type="text"
               value={quickInput}
               onChange={(e) => setQuickInput(e.target.value)}
-              placeholder="Ejecutar comando en Bun Shell, Claude Code CLI o Factory Droid (ej. bun --version, ls .claude/agents)..."
+              placeholder='Escribe un mensaje al CLI del agente (ej. hola, claude -p "hola", audita citas APA 7, bun --version)...'
               className="flex-1 bg-transparent text-xs font-mono text-zinc-100 placeholder:text-zinc-600 focus:outline-none"
             />
             <button
