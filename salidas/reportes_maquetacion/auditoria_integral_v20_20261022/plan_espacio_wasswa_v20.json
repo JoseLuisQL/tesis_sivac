@@ -1,0 +1,11 @@
+{
+  "sustituciones": [
+    {
+      "indice_docx": 777,
+      "ubicacion": "Referencia Wasswa 2023: espacio entre el punto y el DOI hipervinculado",
+      "ancla_original": "Practice, 16, Artículo 6.",
+      "texto_nuevo": "Practice, 16, Artículo 6. ",
+      "ocurrencias": 1
+    }
+  ]
+}

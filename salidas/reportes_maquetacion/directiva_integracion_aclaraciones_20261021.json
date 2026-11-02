@@ -1,0 +1,45 @@
+{
+  "fecha": "2026-10-21",
+  "responsable": "director-general",
+  "base": "salidas/documentos/informe_final_v16.docx",
+  "destino": "salidas/documentos/informe_final_v18.docx",
+  "copia_intermedia_preservada": "salidas/documentos/informe_final_v17.docx",
+  "motivo_pasada_final": "Resolver tablas todavía estrechas y simplificar la descripción del formato de validación, sin modificar datos ni fuentes originales.",
+  "estado": "autorizacion_editorial_con_insumos_limitados",
+  "origen_autorizacion": "Solicitud previa de corrección integral y aclaraciones expresas del tesista recibidas el 2026-10-21; no constituyen aprobación de una versión final aún no revisada.",
+  "aclaraciones_literal_usuario": {
+    "dni": "queda para manuscrito",
+    "validacion": "la los jueces me dierocsn su valdiacion todo pucieros 4 en todo",
+    "captura": "la captura esta en mi C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+    "bibliografia": "inestiga tu mismo profavor profundamnte"
+  },
+  "reglas_integracion": [
+    "Conservar íntegramente la v16 y los originales.",
+    "Toda modificación DOCX se ejecuta mediante scripts/utilidades/docx_quirurgico.py. Un solo escritor; no ejecutar durante la escritura de otra sesión.",
+    "DNI como campo nativo o línea vacía para llenado manuscrito; no introducir números.",
+    "Registrar la validación como información reportada por el tesista, no como certificados firmados revisados. No fabricar identidad, fecha de evaluación ni matriz por juez.",
+    "No convertir puntuaciones 4 a Sí/No ni adjudicar los resultados de 12 componentes a un instrumento de 8 ítems.",
+    "Los valores V e IVC de 1.000 solo pueden aparecer como cálculo condicional vinculado a la escala 1-4 y a la unanimidad reportada; no certifican los formularios discordantes del informe ni calculan alfa, ICC o kappa.",
+    "Los datos pretest/postest existentes permanecen identificados como datos de prueba, no como evidencia empírica de campo.",
+    "Conservar la imagen auténtica de Figura 44, ya idéntica a la del DOCX XP. Corregir la descripción para identificar el código de la prueba, sin afirmar salida de consola ni 100 % de ejecución.",
+    "Mantener cinco iteraciones XP, sustentadas en los documentos; completar el resumen de Tabla 51 exclusivamente con la información de iteración 5 ya presente en tablas de v16.",
+    "Corregir OPS/PATH a 2019 en las dos citas discrepantes de p19; preservar las restantes citas y la referencia correctas. Aplicar mejoras APA verificadas sin crear fuentes ni localizadores.",
+    "Aplicar cursivas a títulos de obras y revistas en referencias mediante tramos nativos; nunca cursiva a toda la entrada, autores, año o DOI.",
+    "Mantener fuente, márgenes, escala de medición y valores; no fragmentar filas ni reducir letra para esconder problemas de espacio.",
+    "No cambiar registro de Windows, configuración de Word ni instalar convertidores.",
+    "No recrear capturas ni elevar DPI por simple reescalado; cualquier limitación de resolución debe declararse.",
+    "Los 36 identificadores enumerados en el dictamen anterior no son 41; sus totales y hallazgos deben someterse a verificación, no asumirse como prueba de calidad final."
+  ],
+  "insumos_especialistas": [
+    "salidas/reportes_maquetacion/plan_maquetacion_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/validacion_jueces_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/ops_path_aclaraciones_20261021.json"
+  ],
+  "compuertas": {
+    "editorial": "en_trabajo",
+    "validez_contenido": "informacion_nueva_reportada_pendiente_concordancia_instrumental",
+    "analisis_inferencial_campo": "bloqueado_sin_datos_reales",
+    "aprobacion_final_tesista": "pendiente_de_entrega_y_revision"
+  }
+}

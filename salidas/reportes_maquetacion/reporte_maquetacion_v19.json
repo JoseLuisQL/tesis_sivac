@@ -1,0 +1,108 @@
+{
+  "version": "v19",
+  "fecha": "2026-10-21",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "base_congelada_v18": {
+    "docx": "salidas/documentos/informe_final_v18.docx",
+    "sha256": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+    "paginas": 159
+  },
+  "cadena_intermedios": [
+    {
+      "archivo": "salidas/documentos/_v19_paso1.docx",
+      "sha256": "29a8cfebcb4f154a0d34f34d973839b092b5d43add4e8c96eca7010677b34f60"
+    },
+    {
+      "archivo": "salidas/documentos/_v19_paso2.docx",
+      "sha256": "71bb46466ee4bc345607248ef78281af41919e1beff80d6fc77ea3f2e7a0400f"
+    },
+    {
+      "archivo": "salidas/documentos/_v19_paso2b.docx",
+      "sha256": "b6605fe179f10ddadd13b5bf65c3a8606647755788353970226dff16ae3e4403"
+    },
+    {
+      "archivo": "salidas/documentos/_v19_pre_leyenda_unica_20261021.docx",
+      "sha256": "efd2d0147595fb513057734c96dd85fb092f0b6d2ab8fe3b6871676f8ece36ca"
+    },
+    {
+      "archivo": "salidas/documentos/_v19_paso3a.docx",
+      "sha256": "e4ff7962454204938cfb21280715ae7d73dbebdca4814411e3819aa0d831a25a"
+    },
+    {
+      "archivo": "salidas/documentos/_v19_paso3b.docx",
+      "sha256": "5808ed92cf1e5de87f885384d885da9f33dd4bdc09d1107a6955494455b8cb36"
+    },
+    {
+      "archivo": "salidas/documentos/_v19_paso3c.docx",
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+    }
+  ],
+  "entregables": {
+    "docx": {
+      "ruta": "salidas/documentos/informe_final_v19.docx",
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "bytes": 15090858,
+      "parrafos": 827,
+      "tablas": 59,
+      "formulas_omml": 12,
+      "hipervinculos_externos": 38,
+      "relaciones_externas": 38
+    },
+    "pdf": {
+      "ruta": "salidas/documentos/informe_final_v19.pdf",
+      "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas": 158,
+      "imagenes": 49,
+      "dpi_min": 117.8,
+      "dpi_mediana": 413.8,
+      "dpi_max": 496.6
+    }
+  },
+  "auditoria_openxml": {
+    "margenes_unajma_ok": true,
+    "tablas_total": 59,
+    "tablas_flotantes": 0,
+    "tablas_con_header": 59,
+    "tablas_con_cantsplit": 59,
+    "referencias_sangria_francesa": 53,
+    "formulas_omml": 12,
+    "cumple_apa7": true,
+    "hallazgos": []
+  },
+  "correcciones_aplicadas": {
+    "ordenes_parrafo_veracidad": 21,
+    "leyendas_fotografia_unicas": 4,
+    "avisos_duplicados_retirados": 8,
+    "tablas_tamano_minimo_10pt": 9,
+    "tablas_margenes_verticales_optimizados": [52, 53, 54],
+    "keep_next_ultima_fila": [36, 53, 54],
+    "parrafo_intro_anexo4_dividido": 1,
+    "hipervinculos_nativos_referencias": 38,
+    "figura_48_regenerada": "salidas/figuras/estadistica/figura_d3_satisfaccion_tam_spss.png",
+    "entradas_indice_sincronizadas": 6
+  },
+  "verificacion_pdf": {
+    "texto_identico_a_base": true,
+    "geometria_identica": true,
+    "rects_identicos": true,
+    "imagenes_asignadas": 49,
+    "imagenes_sin_asignar": 0,
+    "imagenes_duplicadas_podadas": 49,
+    "figuras_31_y_32_misma_pagina_sin_intercambio": true,
+    "paginas_1_152_identicas_salvo_indices": true,
+    "paginas_indice_actualizadas": [8, 10, 12]
+  },
+  "residuales_reales": [
+    "Datos de prueba declarados en datos/recolectados/README.md; no son mediciones de campo.",
+    "Logotipo de caratula a 117.8 dpi (p. 1).",
+    "Figura 6 a 136.5 dpi (p. 44).",
+    "DNI en blanco y cierre del Capitulo I conservados sin invencion de datos.",
+    "Acta de validacion pendiente de firma; no se simulan firmas ni juicios.",
+    "Anexo 7 sin fotografias: cuatro espacios con leyenda unica 'Fotografia pendiente de incorporacion'.",
+    "Coeficientes V e IVC sujetos a la firma y dictamen de los jueces."
+  ],
+  "compuertas": {
+    "QG9": "no declarada; documento revisable con residuales explicitos"
+  }
+}

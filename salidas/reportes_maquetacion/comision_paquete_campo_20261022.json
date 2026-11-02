@@ -1,0 +1,44 @@
+{
+  "fecha_preparacion": "2026-10-22",
+  "solicitud_vigente": "Preparar una carpeta con 14 paquetes para aplicación real, documentos a cargo del investigador y guía PDF separada con orden de llenado y cronograma propuesto.",
+  "destino_previsto": "salidas/instrumentos/PAQUETE_CAMPO_14_20261022",
+  "estado_empirico": "Preparación de formularios. No acredita aplicación, validación ni resultados de campo.",
+  "huellas_iniciales_sha256": {
+    "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+    "salidas/documentos/informe_final_v19.docx": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "datos/recolectados/pretest_campo.csv": "1e74ab29a3e36d8eb04ec69e0aff48dcff6711339815b30855e41edfbb54e9c3",
+    "datos/recolectados/posttest_campo.csv": "98861dc39aaea9be4175b480de35b7317d2d93be315b2ead45df40779081fccc"
+  },
+  "comisiones": [
+    {
+      "tarea": "Inspeccionar íntegramente el modelo y mapear los formularios individuales completos, sus reactivos y la geometría reutilizable.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "analista-documental",
+      "entradas": [
+        "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx",
+        "salidas/instrumentos/EXPEDIENTE_INSTRUMENTOS_SIVAC_DEC007.md",
+        "salidas/documentos/anexos_instrumentos_validacion.json",
+        "scripts/utilidades/docx_quirurgico.py"
+      ],
+      "salida_esperada": "salidas/reportes_maquetacion/diagnostico_paquete_campo_20261022.json",
+      "restricciones": ["Preservar originales", "No inventar información empírica", "No confundir formularios individuales con resúmenes censales", "No alterar el motor durante el diagnóstico"],
+      "criterio_exito": "Cobertura de las 16 tablas del modelo, mapeo de las tres dimensiones y detección de la Modalidad A postest faltante."
+    },
+    {
+      "tarea": "Especificar los paquetes de aplicación y redactar la guía operativa con cronograma futuro condicional y tareas del investigador.",
+      "fase": "F8",
+      "squad": "Squad B (Metodología y Psicometría)",
+      "subagente": "especialista-instrumentos",
+      "entradas": [
+        "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/ESTADO_TESIS.md",
+        "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/DECISIONES.md",
+        "salidas/matrices/OPERACIONALIZACION_VARIABLES_DEFINITIVA.md",
+        "salidas/instrumentos/EXPEDIENTE_INSTRUMENTOS_SIVAC_DEC007.md"
+      ],
+      "salida_esperada": "salidas/reportes_maquetacion/especificacion_paquete_campo_20261022.json y guia_campo_contenido_20261022.md",
+      "restricciones": ["Respuestas, mediciones, firmas, identidades y fechas reales vacías", "No asignar a personas los establecimientos de los CSV de prueba", "Modalidad A pre y post; Modalidad B solo post", "Cronograma propuesto, nunca acta de ejecución", "No levantar compuertas de validación ni sustituir aprobación de la asesora"],
+      "criterio_exito": "Guía práctica completa, campos crudos suficientes para trazabilidad, funciones diferenciadas y tratamiento explícito de vacíos y conflictos de protocolo."
+    }
+  ]
+}

@@ -1,0 +1,4049 @@
+[
+{
+"page": 1,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+72.7,
+115.8,
+496.5,
+"UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS"
+],
+[
+92.4,
+215.7,
+395.9,
+"FACULTAD DE INGENIERÍA"
+]
+],
+"bot": []
+},
+{
+"page": 2,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+84.7,
+139.1,
+471.7,
+"ACTA DE SUSTENTACIÓN Y APROBACIÓN DE TESIS"
+]
+],
+"bot": []
+},
+{
+"page": 3,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+72.6,
+104.2,
+507.4,
+"DECLARACIÓN JURADA DE AUTENTICIDAD Y NO PLAGIO"
+]
+],
+"bot": []
+},
+{
+"page": 4,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"ii"
+],
+[
+86.6,
+253.6,
+357.2,
+"DEDICATORIA"
+]
+],
+"bot": []
+},
+{
+"page": 5,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+514.3,
+525.8,
+"iii"
+],
+[
+86.6,
+233.1,
+377.9,
+"AGRADECIMIENTOS"
+]
+],
+"bot": []
+},
+{
+"page": 6,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+514.8,
+525.8,
+"iv"
+],
+[
+86.6,
+222.5,
+388.4,
+"ÍNDICE DE CONTENIDO"
+]
+],
+"bot": []
+},
+{
+"page": 7,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.9,
+525.8,
+"v"
+],
+[
+70.0,
+107.1,
+525.6,
+"3.2.15. Oportunidad de procesamiento .................................................................................................. 38"
+],
+[
+82.9,
+107.1,
+525.6,
+"3.2.16. ORM (Object-Relational Mapping) ........................................................................................... 38"
+]
+],
+"bot": []
+},
+{
+"page": 8,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+514.8,
+525.8,
+"vi"
+],
+[
+86.6,
+234.2,
+376.7,
+"ÍNDICE DE FIGURAS"
+]
+],
+"bot": []
+},
+{
+"page": 9,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.8,
+525.8,
+"vii"
+],
+[
+80.6,
+237.6,
+373.2,
+"ÍNDICE DE TABLAS"
+]
+],
+"bot": []
+},
+{
+"page": 10,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+508.7,
+525.8,
+"viii"
+],
+[
+80.6,
+269.2,
+341.6,
+"RESUMEN"
+]
+],
+"bot": []
+},
+{
+"page": 11,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+515.0,
+525.8,
+"ix"
+],
+[
+86.6,
+266.1,
+344.7,
+"ABSTRACT"
+]
+],
+"bot": []
+},
+{
+"page": 12,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+518.1,
+525.8,
+"x"
+],
+[
+86.6,
+262.6,
+348.3,
+"CHUMASQA"
+]
+],
+"bot": []
+},
+{
+"page": 13,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"1"
+],
+[
+86.6,
+247.9,
+363.1,
+"INTRODUCCIÓN"
+]
+],
+"bot": []
+},
+{
+"page": 14,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"2"
+],
+[
+72.5,
+85.1,
+526.1,
+"emisión de vales de salida; la consistencia documental, evaluada mediante el porcentaje de"
+],
+[
+93.1,
+85.1,
+526.0,
+"registros sin discrepancias y la concordancia entre la cantidad programada y la cantidad"
+]
+],
+"bot": []
+},
+{
+"page": 15,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"3"
+],
+[
+86.6,
+147.4,
+463.4,
+"CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN"
+]
+],
+"bot": [
+[
+751.6,
+85.1,
+526.1,
+"deficiencias operativas y documentales. Shen et al. (2024, p. 1), al evaluar la"
+]
+]
+},
+{
+"page": 16,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"4"
+],
+[
+72.5,
+85.1,
+526.1,
+"implementación de un sistema digital de gestión de cadena de suministro hospitalaria en"
+],
+[
+93.1,
+85.1,
+526.1,
+"China, verificaron que la tasa de roturas de stock se redujo de 0.425% a 0.277% y que la"
+]
+],
+"bot": []
+},
+{
+"page": 17,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"5"
+],
+[
+72.5,
+85.1,
+526.1,
+"de salud y que el 25% de los reportes presentaba datos incompletos por carecer de un"
+],
+[
+93.1,
+85.1,
+211.2,
+"sistema web centralizado."
+]
+],
+"bot": [
+[
+755.6,
+85.1,
+182.2,
+"digital centralizada."
+]
+]
+},
+{
+"page": 18,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"6"
+],
+[
+72.5,
+121.1,
+526.2,
+"En segundo término, se identificaron deficiencias recurrentes en la consistencia"
+],
+[
+93.1,
+85.1,
+526.1,
+"documental, expresadas en errores de transcripción de códigos alfanuméricos de lote,"
+]
+],
+"bot": [
+[
+750.2,
+121.1,
+387.2,
+"inmunizaciones de la Dirección de Salud Apurímac II?"
+]
+]
+},
+{
+"page": 19,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"7"
+],
+[
+72.5,
+103.1,
+526.1,
+"• ¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario"
+],
+[
+93.1,
+121.1,
+526.2,
+"en la gestión de movimientos mensuales de vacunas en el personal de"
+]
+],
+"bot": []
+},
+{
+"page": 20,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"8"
+],
+[
+72.5,
+85.1,
+250.5,
+"1.3.3. Justificación metodológica"
+]
+],
+"bot": []
+},
+{
+"page": 21,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+517.3,
+525.8,
+"9"
+],
+[
+72.5,
+85.1,
+526.1,
+"web cliente-servidor desacoplada, construida con tecnologías de código abierto, servicios"
+],
+[
+93.1,
+85.1,
+526.1,
+"de interfaz de programación de aplicaciones bajo estilo REST, persistencia relacional"
+]
+],
+"bot": [
+[
+753.6,
+85.1,
+526.1,
+"medidos en escalas heterogéneas (minutos cronometrados, porcentajes de conformidad"
+]
+]
+},
+{
+"page": 22,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"10"
+],
+[
+72.5,
+85.1,
+526.0,
+"documental y puntajes ordinales en escala Likert), la contrastación empírica de la hipótesis"
+],
+[
+93.1,
+85.1,
+526.1,
+"general se determina mediante la integración inferencial conjunta de las tres hipótesis"
+]
+],
+"bot": []
+},
+{
+"page": 23,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"11"
+],
+[
+72.5,
+85.1,
+526.1,
+"de los productos biológicos en los centros de acopio de la DISA Apurímac II. Se estructura"
+],
+[
+93.1,
+85.1,
+526.1,
+"en tres dimensiones oficiales: (1) oportunidad de procesamiento, evaluada mediante el"
+]
+],
+"bot": []
+},
+{
+"page": 24,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"12"
+],
+[
+86.6,
+198.8,
+412.1,
+"CAPÍTULO II: ANTECEDENTES"
+]
+],
+"bot": [
+[
+751.6,
+85.1,
+526.1,
+"investigación concluyó que el reemplazo definitivo de los formatos en papel por una"
+]
+]
+},
+{
+"page": 25,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"13"
+],
+[
+72.5,
+85.1,
+526.1,
+"arquitectura web centralizada acelera la trazabilidad de las vacunas, incrementa la calidad"
+],
+[
+93.1,
+85.1,
+428.7,
+"de los datos reportados y libera tiempo operativo del personal de salud."
+]
+],
+"bot": [
+[
+755.6,
+85.1,
+281.8,
+"operativa de los usuarios institucionales."
+]
+]
+},
+{
+"page": 26,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"14"
+],
+[
+72.5,
+121.1,
+526.1,
+"Ergetie et al. (2023), en su investigación multicéntrica titulada “Vaccine cold chain"
+],
+[
+93.1,
+85.1,
+526.1,
+"management practices in primary health centers providing an expanded immunization"
+]
+],
+"bot": [
+[
+755.6,
+85.1,
+526.1,
+"interrumpidas titulada “The impact of an integrated electronic immunization registry and"
+]
+]
+},
+{
+"page": 27,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"15"
+],
+[
+72.5,
+85.1,
+526.2,
+"logistics management information system (EIR-eLMIS) on vaccine availability in three"
+],
+[
+93.1,
+85.1,
+526.2,
+"regions in Tanzania: A pre-post and time-series analysis”, publicada en la revista Vaccine,"
+]
+],
+"bot": [
+[
+755.6,
+85.1,
+526.0,
+"iterativo de Extreme Programming y el desarrollo centrado en el usuario garantizan una"
+]
+]
+},
+{
+"page": 28,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"16"
+],
+[
+72.5,
+85.1,
+526.1,
+"notable reducción de tiempos operativos y fortalecen la consistencia documental en"
+],
+[
+93.1,
+85.1,
+250.9,
+"sistemas de información sanitaria."
+]
+],
+"bot": [
+[
+753.0,
+85.1,
+526.0,
+"despliegue del sistema web, el 87.5% de los usuarios accedió a la información centralizada"
+]
+]
+},
+{
+"page": 29,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"17"
+],
+[
+72.5,
+85.1,
+526.1,
+"en tiempo real y la completitud de los registros de vacunas se elevó del 50% al 95% (p."
+],
+[
+93.1,
+85.1,
+526.1,
+"113). El autor concluyó que el desarrollo de aplicaciones web mediante Extreme"
+]
+],
+"bot": [
+[
+755.6,
+85.1,
+526.1,
+"almacenamiento frigorífico y aseguraron la integridad de los datos de conservación por"
+]
+]
+},
+{
+"page": 30,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"18"
+],
+[
+72.5,
+85.1,
+526.1,
+"cada lote biológico (p. iii). El autor concluyó que la incorporación de herramientas"
+],
+[
+93.1,
+85.1,
+526.1,
+"informáticas en los servicios públicos de inmunizaciones resulta determinante para superar"
+]
+],
+"bot": []
+},
+{
+"page": 31,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"19"
+],
+[
+83.4,
+95.8,
+131.4,
+"Autor y"
+],
+[
+93.3,
+104.5,
+122.6,
+"año"
+]
+],
+"bot": []
+},
+{
+"page": 32,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"20"
+],
+[
+83.4,
+95.8,
+131.4,
+"Autor y"
+],
+[
+93.3,
+104.5,
+122.6,
+"año"
+]
+],
+"bot": []
+},
+{
+"page": 33,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"21"
+],
+[
+83.4,
+95.8,
+131.4,
+"Autor y"
+],
+[
+93.3,
+104.5,
+122.6,
+"año"
+]
+],
+"bot": []
+},
+{
+"page": 34,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"22"
+],
+[
+86.6,
+191.2,
+419.6,
+"CAPÍTULO III: MARCO TEÓRICO"
+]
+],
+"bot": []
+},
+{
+"page": 35,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"23"
+],
+[
+72.5,
+85.1,
+526.1,
+"iv). Como sostiene Sommerville (2016, p. 181), el procesamiento distribuido en capas"
+],
+[
+93.1,
+85.1,
+526.2,
+"independientes permite escalar y mantener cada nivel tecnológico sin comprometer la"
+]
+],
+"bot": [
+[
+752.4,
+85.1,
+526.1,
+"esquemas de control de acceso basado en roles (RBAC), garantizando la verificación"
+]
+]
+},
+{
+"page": 36,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"24"
+],
+[
+72.5,
+85.1,
+526.1,
+"estricta de identidad y privilegios en cada transacción (Ruiz Barea, 2023, p. 36) (véase la"
+],
+[
+93.1,
+85.1,
+134.8,
+"Figura 2)."
+]
+],
+"bot": []
+},
+{
+"page": 37,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"25"
+],
+[
+70.9,
+85.1,
+455.0,
+"Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)"
+]
+],
+"bot": []
+},
+{
+"page": 38,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"26"
+],
+[
+70.9,
+85.1,
+378.1,
+"Figura 4 El proceso de la metodología ágil Extreme Programming (XP)"
+]
+],
+"bot": []
+},
+{
+"page": 39,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"27"
+],
+[
+72.5,
+85.1,
+526.0,
+"que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales. En la"
+],
+[
+93.1,
+85.1,
+526.1,
+"presente investigación, la aplicación del estándar ISO/IEC 25010:2023 cumple el rol"
+]
+],
+"bot": []
+},
+{
+"page": 40,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"28"
+],
+[
+72.5,
+85.1,
+526.0,
+"una obsolescencia de equipos de conservación superior al 60% y a discrepancias entre los"
+],
+[
+93.1,
+85.1,
+526.2,
+"sistemas patrimoniales del SIGA-MEF y la realidad de los centros de salud, lo que acentúa"
+]
+],
+"bot": []
+},
+{
+"page": 41,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"29"
+],
+[
+72.5,
+85.1,
+504.9,
+"3.1.2.2. Sistemas electrónicos de información de gestión logística (e-LMIS) y control"
+],
+[
+93.1,
+85.1,
+120.2,
+"FEFO"
+]
+],
+"bot": []
+},
+{
+"page": 42,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"30"
+],
+[
+72.5,
+85.1,
+518.7,
+"Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de información de gestión"
+],
+[
+82.4,
+85.1,
+161.1,
+"logística (e-LMIS)"
+]
+],
+"bot": []
+},
+{
+"page": 43,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"31"
+],
+[
+72.5,
+85.1,
+526.1,
+"comprobante de salida (vale). Como demuestran Dang et al. (2024) y Astuhuaman Perez y"
+],
+[
+93.1,
+85.1,
+526.1,
+"Baltazar Maza (2023, p. 56), la sustitución de formatos físicos por interfaces web con"
+]
+],
+"bot": []
+},
+{
+"page": 44,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"32"
+],
+[
+72.5,
+85.1,
+511.2,
+"Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información rutinaria de"
+],
+[
+82.4,
+85.1,
+140.0,
+"salud (RHIS)"
+]
+],
+"bot": []
+},
+{
+"page": 45,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"33"
+],
+[
+72.5,
+85.1,
+526.1,
+"utilidad percibida (grado en que el profesional tiene la convicción de que el sistema"
+],
+[
+93.1,
+85.1,
+526.1,
+"potencia su rendimiento, exactitud y productividad laboral) (Luo et al., 2024, p. 4) (véase"
+]
+],
+"bot": [
+[
+749.4,
+85.1,
+526.0,
+"cardinal de la aceptación del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad"
+]
+]
+},
+{
+"page": 46,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"34"
+],
+[
+72.5,
+85.1,
+526.1,
+"percibida media decisivamente dicha relación (beta = 0.23, p < 0.001), confirmando que"
+],
+[
+93.1,
+85.1,
+526.1,
+"mitigar la fatiga operativa y agilizar el procesamiento conduce de manera directa a elevar"
+]
+],
+"bot": []
+},
+{
+"page": 47,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"35"
+],
+[
+80.4,
+109.3,
+157.4,
+"Dimensión"
+],
+[
+80.4,
+206.0,
+250.6,
+"Indicador"
+]
+],
+"bot": []
+},
+{
+"page": 48,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"36"
+],
+[
+72.5,
+85.1,
+259.5,
+"3.2.2. Centro de acopio de vacunas"
+]
+],
+"bot": [
+[
+748.8,
+85.1,
+526.1,
+"cortos, planificación por historias de usuario, diseño simple, refactorización continua,"
+]
+]
+},
+{
+"page": 49,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"37"
+],
+[
+72.5,
+85.1,
+526.1,
+"integración permanente y validación mediante pruebas automatizadas y de aceptación con"
+],
+[
+93.1,
+85.1,
+342.2,
+"el cliente (Beck, 1999, p. 70; Pressman, 2010, p. 61)."
+]
+],
+"bot": []
+},
+{
+"page": 50,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"38"
+],
+[
+72.5,
+85.1,
+276.2,
+"3.2.15. Oportunidad de procesamiento"
+]
+],
+"bot": []
+},
+{
+"page": 51,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"39"
+],
+[
+72.5,
+85.1,
+526.1,
+"internacionales de calidad de producto de software establecidos en la norma ISO/IEC"
+],
+[
+93.1,
+85.1,
+147.9,
+"25010:2023."
+]
+],
+"bot": [
+[
+754.5,
+85.1,
+526.1,
+"definición de la metáfora del sistema, el levantamiento de los requerimientos funcionales y"
+]
+]
+},
+{
+"page": 52,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"40"
+],
+[
+72.5,
+85.1,
+526.2,
+"no funcionales, la formulación del catálogo de historias de usuario y la ejecución del juego"
+],
+[
+93.1,
+85.1,
+490.0,
+"de la planificación (Planning Game) para definir el plan de entregas por iteraciones."
+]
+],
+"bot": []
+},
+{
+"page": 53,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"41"
+],
+[
+73.9,
+127.5,
+191.0,
+"Rol en SIVAC"
+],
+[
+73.9,
+263.8,
+347.1,
+"Actor Institucional"
+]
+],
+"bot": []
+},
+{
+"page": 54,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"42"
+],
+[
+73.9,
+142.7,
+175.7,
+"Código"
+],
+[
+75.4,
+265.7,
+345.1,
+"Denominación del"
+]
+],
+"bot": []
+},
+{
+"page": 55,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"43"
+],
+[
+72.4,
+85.1,
+493.9,
+"Requerimientos relevados mediante entrevistas y grupos focales con los profesionales de inmunizaciones y"
+],
+[
+81.3,
+85.1,
+268.5,
+"auditoría de la Dirección de Salud Apurímac II."
+]
+],
+"bot": []
+},
+{
+"page": 56,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"44"
+],
+[
+73.9,
+124.6,
+157.6,
+"Código"
+],
+[
+75.4,
+212.9,
+288.4,
+"Característica de"
+]
+],
+"bot": [
+[
+754.0,
+419.1,
+465.7,
+"TAM (UP)"
+]
+]
+},
+{
+"page": 57,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"45"
+],
+[
+72.4,
+85.1,
+484.0,
+"Estructura taxonómica inmutable aprobada en la decisión DEC-007 y en la matriz de operacionalización"
+],
+[
+81.3,
+85.1,
+199.4,
+"institucional de la UNAJMA."
+]
+],
+"bot": []
+},
+{
+"page": 58,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"46"
+],
+[
+73.9,
+106.2,
+139.2,
+"Código"
+],
+[
+75.4,
+170.2,
+221.5,
+"Título de la"
+]
+],
+"bot": []
+},
+{
+"page": 59,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"47"
+],
+[
+72.5,
+85.1,
+408.8,
+"Plan Detallado de las Cinco Iteraciones de Extreme Programming"
+]
+],
+"bot": [
+[
+750.4,
+85.1,
+526.1,
+"actores institucionales se sintetizan en el diagrama de casos de uso UML. El sistema"
+]
+]
+},
+{
+"page": 60,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"48"
+],
+[
+72.5,
+85.1,
+526.3,
+"articula dieciséis casos de uso (CU-01 a CU-16) distribuidos en los paquetes funcionales"
+],
+[
+93.1,
+85.1,
+526.1,
+"de Seguridad, Gestión Territorial, Planificación, Inventario, Movimientos Transaccionales,"
+]
+],
+"bot": []
+},
+{
+"page": 61,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"49"
+],
+[
+72.5,
+85.1,
+526.1,
+"organizada en tres bloques cardinales: el cliente Single Page Application (SPA), el"
+],
+[
+93.1,
+85.1,
+526.1,
+"servidor de aplicaciones Express REST API y la capa de datos y archivos en PostgreSQL y"
+]
+],
+"bot": []
+},
+{
+"page": 62,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"50"
+],
+[
+72.5,
+85.1,
+131.2,
+"Figura 4"
+]
+],
+"bot": [
+[
+748.0,
+85.1,
+526.0,
+"Consumo Promedio Mensualizado (CPA), la determinación del ratio de Meses de Stock"
+]
+]
+},
+{
+"page": 63,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"51"
+],
+[
+72.5,
+85.1,
+526.1,
+"Disponible (MSD = Saldo / CPA) y la ramificación semafórica estandarizada por el"
+],
+[
+93.1,
+85.1,
+526.0,
+"Ministerio de Salud: condición de Substock o Crítico (MSD < 2.0), Normostock (2.0 <="
+]
+],
+"bot": []
+},
+{
+"page": 64,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"52"
+]
+],
+"bot": []
+},
+{
+"page": 65,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"53"
+],
+[
+75.4,
+104.7,
+155.6,
+"Módulo del"
+],
+[
+85.4,
+95.4,
+164.8,
+"Sistema SIVAC"
+]
+],
+"bot": [
+[
+756.4,
+85.1,
+423.9,
+"3.3.2.4. Modelado Conceptual, Lógico y Físico de la Base de Datos"
+]
+]
+},
+{
+"page": 66,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"54"
+],
+[
+72.5,
+121.1,
+526.1,
+"El diseño de la base de datos se desarrolló bajo el estándar relacional en tercera"
+],
+[
+93.1,
+85.1,
+526.1,
+"forma normal (3FN), asegurando la erradicación de redundancias y garantizando la"
+]
+],
+"bot": []
+},
+{
+"page": 67,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"55"
+],
+[
+72.5,
+85.1,
+137.2,
+"Figura 10"
+]
+],
+"bot": []
+},
+{
+"page": 68,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"56"
+],
+[
+75.4,
+103.7,
+156.4,
+"Nombre del"
+],
+[
+85.4,
+113.3,
+146.8,
+"Campo"
+]
+],
+"bot": []
+},
+{
+"page": 69,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"57"
+],
+[
+75.4,
+103.7,
+156.4,
+"Nombre del"
+],
+[
+85.4,
+113.3,
+146.8,
+"Campo"
+]
+],
+"bot": []
+},
+{
+"page": 70,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"58"
+],
+[
+75.4,
+103.3,
+156.1,
+"Nombre del"
+],
+[
+85.4,
+112.9,
+146.4,
+"Campo"
+]
+],
+"bot": []
+},
+{
+"page": 71,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"59"
+],
+[
+72.4,
+85.1,
+504.7,
+"La vinculación multi-acopio se implementa mediante la tabla intermedia usuarios_centros_acopio(usuario_id,"
+],
+[
+81.3,
+85.1,
+159.0,
+"centro_acopio_id)."
+]
+],
+"bot": []
+},
+{
+"page": 72,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"60"
+],
+[
+75.4,
+103.7,
+156.4,
+"Nombre del"
+],
+[
+85.4,
+113.3,
+146.8,
+"Campo"
+]
+],
+"bot": []
+},
+{
+"page": 73,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"61"
+],
+[
+73.9,
+86.9,
+173.2,
+"Nombre del Campo"
+],
+[
+73.9,
+193.6,
+251.6,
+"Tipo de Dato"
+]
+],
+"bot": []
+},
+{
+"page": 74,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"62"
+],
+[
+75.4,
+100.2,
+153.0,
+"Nombre del"
+],
+[
+85.4,
+109.8,
+143.3,
+"Campo"
+]
+],
+"bot": []
+},
+{
+"page": 75,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"63"
+],
+[
+75.4,
+103.7,
+156.4,
+"Nombre del"
+],
+[
+85.4,
+113.3,
+146.8,
+"Campo"
+]
+],
+"bot": [
+[
+750.8,
+441.1,
+516.0,
+"solo_adicionales)."
+]
+]
+},
+{
+"page": 76,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"64"
+],
+[
+75.4,
+103.7,
+156.4,
+"Nombre del"
+],
+[
+85.4,
+113.3,
+146.8,
+"Campo"
+]
+],
+"bot": []
+},
+{
+"page": 77,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"65"
+],
+[
+75.4,
+103.8,
+156.6,
+"Nombre del"
+],
+[
+85.4,
+113.4,
+146.9,
+"Campo"
+]
+],
+"bot": [
+[
+750.8,
+442.4,
+515.6,
+"SOBRESTOCK)."
+]
+]
+},
+{
+"page": 78,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"66"
+],
+[
+70.4,
+85.1,
+448.4,
+"Registros especializados para el monitoreo de disponibilidad según directivas de la DIGEMID."
+]
+],
+"bot": []
+},
+{
+"page": 79,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"67"
+],
+[
+72.5,
+85.1,
+526.2,
+"del código y la refactorización continua (Continuous Refactoring) para mantener el sistema"
+],
+[
+93.1,
+85.1,
+359.5,
+"libre de deuda técnica (Beck, 1999; Sommerville, 2016)."
+]
+],
+"bot": []
+},
+{
+"page": 80,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"68"
+],
+[
+73.9,
+101.7,
+180.5,
+"Capa Tecnológica"
+],
+[
+73.9,
+200.8,
+300.4,
+"Tecnología / Biblioteca"
+]
+],
+"bot": []
+},
+{
+"page": 81,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"69"
+]
+],
+"bot": []
+},
+{
+"page": 82,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"70"
+],
+[
+72.5,
+85.1,
+514.7,
+"Implementación del Algoritmo de Sincronización Recursiva de Saldos Intermensuales en"
+],
+[
+93.1,
+85.1,
+139.5,
+"TypeScript"
+]
+],
+"bot": []
+},
+{
+"page": 83,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"71"
+],
+[
+72.5,
+85.1,
+526.1,
+"de acopio autorizados para el usuario, inyectándolos en el objeto de contexto req.user para"
+],
+[
+93.1,
+85.1,
+273.4,
+"aislar las consultas en la base de datos."
+]
+],
+"bot": []
+},
+{
+"page": 84,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"72"
+],
+[
+72.4,
+85.1,
+525.3,
+"Implementación en TypeScript del cálculo matemático de Meses de Stock Disponible y la categorización de alertas"
+],
+[
+81.3,
+85.1,
+201.0,
+"según estándares del MINSA."
+]
+],
+"bot": []
+},
+{
+"page": 85,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"73"
+],
+[
+72.5,
+85.1,
+137.2,
+"Figura 19"
+]
+],
+"bot": []
+},
+{
+"page": 86,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"74"
+],
+[
+72.5,
+85.1,
+474.6,
+"Interfaz de Usuario: Módulo de Inventario y Control de Lotes de Biológicos con"
+],
+[
+93.1,
+85.1,
+183.2,
+"Trazabilidad FEFO"
+]
+],
+"bot": []
+},
+{
+"page": 87,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"75"
+],
+[
+72.5,
+85.1,
+480.0,
+"Interfaz de Usuario: Matriz Contable de Movimientos Mensuales de Vacunas por"
+],
+[
+93.1,
+85.1,
+164.8,
+"Establecimiento"
+]
+],
+"bot": []
+},
+{
+"page": 88,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"76"
+],
+[
+72.5,
+85.1,
+489.5,
+"Interfaz de Usuario: Módulo de Planificación Anual de Metas PAI y Programación"
+],
+[
+93.1,
+85.1,
+171.9,
+"Mensual Ene-Dic"
+]
+],
+"bot": []
+},
+{
+"page": 89,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"77"
+],
+[
+72.5,
+85.1,
+494.0,
+"Interfaz de Usuario: Módulo de Inteligencia Logística ICI-DEMID con Semáforo de"
+],
+[
+93.1,
+85.1,
+187.2,
+"Disponibilidad MSD"
+]
+],
+"bot": []
+},
+{
+"page": 90,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"78"
+],
+[
+72.5,
+85.1,
+500.2,
+"Interfaz de Usuario: Vista Detallada del Kardex con Múltiples Operaciones (Ingreso,"
+],
+[
+93.1,
+85.1,
+200.8,
+"Salida y Transferencia)"
+]
+],
+"bot": [
+[
+750.2,
+85.1,
+169.6,
+"privilegios de acceso."
+]
+]
+},
+{
+"page": 91,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"79"
+]
+],
+"bot": []
+},
+{
+"page": 92,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"80"
+],
+[
+72.5,
+121.1,
+526.1,
+"La fase de pruebas en Extreme Programming constituye el pilar fundamental que"
+],
+[
+93.1,
+85.1,
+526.1,
+"garantiza la fiabilidad operativa del software. Se implementó una estrategia piramidal de"
+]
+],
+"bot": []
+},
+{
+"page": 93,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"81"
+],
+[
+73.9,
+93.0,
+167.1,
+"Suite de Pruebas"
+],
+[
+75.4,
+193.0,
+242.4,
+"Archivo de"
+]
+],
+"bot": []
+},
+{
+"page": 94,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"82"
+],
+[
+75.4,
+101.4,
+137.5,
+"Caso de"
+],
+[
+85.4,
+102.7,
+136.2,
+"Prueba"
+]
+],
+"bot": []
+},
+{
+"page": 95,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"83"
+],
+[
+75.4,
+101.4,
+137.5,
+"Caso de"
+],
+[
+85.4,
+102.7,
+136.2,
+"Prueba"
+]
+],
+"bot": []
+},
+{
+"page": 96,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"84"
+],
+[
+75.4,
+98.5,
+161.6,
+"Característica"
+],
+[
+85.4,
+96.3,
+164.0,
+"ISO/IEC 25010"
+]
+],
+"bot": []
+},
+{
+"page": 97,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"85"
+],
+[
+72.5,
+85.1,
+509.8,
+"Diagrama de Despliegue Físico y Topología de Red en Producción con Docker y Nginx"
+]
+],
+"bot": []
+},
+{
+"page": 98,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"86"
+],
+[
+86.6,
+116.1,
+494.8,
+"CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN"
+]
+],
+"bot": []
+},
+{
+"page": 99,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"87"
+],
+[
+72.5,
+85.1,
+526.1,
+"25010:2023; (3) validación de contenido de los instrumentos por juicio de expertos y"
+],
+[
+93.1,
+85.1,
+526.3,
+"formalización del protocolo de confiabilidad; (4) medición basal pre-test (O₁) de los seis"
+]
+],
+"bot": []
+},
+{
+"page": 100,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"88"
+],
+[
+72.5,
+103.1,
+526.2,
+"• GE: Grupo experimental único conformado por la totalidad censal del personal"
+],
+[
+93.1,
+121.1,
+526.1,
+"operativo de inmunizaciones y cadena de frío de la Dirección de Salud Apurímac II"
+]
+],
+"bot": [
+[
+751.2,
+435.7,
+470.9,
+"post-test."
+]
+]
+},
+{
+"page": 101,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"89"
+],
+[
+81.3,
+114.3,
+150.8,
+"Etapa de"
+],
+[
+89.3,
+106.9,
+158.3,
+"Intervención"
+]
+],
+"bot": []
+},
+{
+"page": 102,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"90"
+],
+[
+76.2,
+101.9,
+235.1,
+"Centro de Acopio / Dependencia"
+],
+[
+85.1,
+148.7,
+188.6,
+"Sanitaria"
+]
+],
+"bot": []
+},
+{
+"page": 103,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"91"
+],
+[
+72.5,
+85.1,
+526.0,
+"sumativo directo obtenido por el operador i en cada subescala de 4 ítems (rango de 4 a 20"
+],
+[
+93.1,
+85.1,
+392.3,
+"puntos), correspondiendo a AP-01 a AP-04 y a UP-01 a UP-04."
+]
+],
+"bot": []
+},
+{
+"page": 104,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"92"
+],
+[
+72.5,
+85.1,
+272.6,
+"4.9. Operacionalización de variables"
+]
+],
+"bot": []
+},
+{
+"page": 105,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"93"
+],
+[
+78.8,
+103.1,
+139.0,
+"Variable"
+],
+[
+76.1,
+185.1,
+226.9,
+"Definición"
+]
+],
+"bot": []
+},
+{
+"page": 106,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"94"
+],
+[
+88.7,
+226.5,
+266.4,
+"𝑇𝑣𝑎𝑙𝑒,𝑖="
+],
+[
+79.0,
+269.5,
+280.1,
+"∑"
+]
+],
+"bot": [
+[
+747.5,
+261.3,
+306.5,
+"𝐴𝑃𝑖= ∑"
+],
+[
+747.5,
+322.8,
+347.8,
+"𝑋𝐴𝑃,𝑖𝑗"
+],
+[
+759.0,
+306.5,
+321.0,
+"𝑗=1"
+]
+]
+},
+{
+"page": 107,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"95"
+],
+[
+72.5,
+121.1,
+526.1,
+"Donde cada término representa la calificación ordinal asignada por el operador i al"
+],
+[
+93.1,
+85.1,
+526.2,
+"reactivo j (del reactivo AP-01 al reactivo AP-04) en la escala Likert de 1 a 5 puntos,"
+]
+],
+"bot": []
+},
+{
+"page": 108,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"96"
+],
+[
+72.5,
+85.1,
+526.4,
+"campos de control temporal y tres escenarios operativos estandarizados (REG-01: registro"
+],
+[
+93.1,
+85.1,
+526.4,
+"de ingreso de lote de vacuna; REG-02: registro de salida o transferencia; y VALE-01:"
+]
+],
+"bot": []
+},
+{
+"page": 109,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"97"
+],
+[
+76.2,
+103.6,
+149.2,
+"Dimensión"
+],
+[
+85.1,
+106.0,
+146.9,
+"Evaluada"
+]
+],
+"bot": []
+},
+{
+"page": 110,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"98"
+],
+[
+72.5,
+85.1,
+526.2,
+"(κ = (P_o - P_e) / (1 - P_e)), reconociendo que cuando la auditoría es ejecutada por un"
+],
+[
+93.1,
+85.1,
+526.1,
+"único investigador se aplicará doble verificación cruzada sobre una submuestra aleatoria"
+]
+],
+"bot": []
+},
+{
+"page": 111,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+511.2,
+525.8,
+"99"
+],
+[
+76.6,
+291.4,
+310.0,
+"𝑉="
+],
+[
+72.5,
+313.4,
+317.8,
+"𝑆"
+]
+],
+"bot": []
+},
+{
+"page": 112,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"100"
+],
+[
+80.4,
+96.0,
+118.7,
+"Cód."
+],
+[
+76.2,
+142.2,
+197.9,
+"Instrumento"
+]
+],
+"bot": [
+[
+755.6,
+85.1,
+402.9,
+"confirmaron normalidad en la prueba de Shapiro-Wilk (p > 0.05):"
+]
+]
+},
+{
+"page": 113,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"101"
+],
+[
+79.3,
+283.6,
+299.5,
+"𝑡="
+],
+[
+75.1,
+311.7,
+316.8,
+"𝑑"
+]
+],
+"bot": [
+[
+753.9,
+85.1,
+469.4,
+"provisión regular de biológicos a los establecimientos de salud jurisdiccionales."
+]
+]
+},
+{
+"page": 114,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"102"
+],
+[
+72.5,
+121.1,
+526.1,
+"En segundo lugar, se garantizó el principio de autonomía y voluntariedad mediante"
+],
+[
+93.1,
+85.1,
+526.1,
+"la suscripción del consentimiento informado por parte de los catorce operadores"
+]
+],
+"bot": []
+},
+{
+"page": 115,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"103"
+],
+[
+90.6,
+209.0,
+402.0,
+"CAPÍTULO V: RESULTADOS"
+]
+],
+"bot": [
+[
+755.1,
+85.1,
+526.0,
+"(tras la implantación del sistema web SIVAC), la consistencia interna global se situó en"
+]
+]
+},
+{
+"page": 116,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"104"
+],
+[
+72.5,
+85.1,
+526.0,
+".915 (IC 95%: [0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%:"
+],
+[
+93.1,
+85.1,
+453.8,
+"[0.618, 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.943])."
+]
+],
+"bot": []
+},
+{
+"page": 117,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"105"
+],
+[
+72.5,
+85.1,
+490.2,
+"5.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones"
+]
+],
+"bot": []
+},
+{
+"page": 118,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"106"
+],
+[
+73.9,
+85.1,
+129.8,
+"Indicador"
+],
+[
+75.4,
+138.6,
+182.2,
+"Momento"
+]
+],
+"bot": []
+},
+{
+"page": 119,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"107"
+]
+],
+"bot": [
+[
+754.6,
+85.1,
+429.9,
+"consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7."
+]
+]
+},
+{
+"page": 120,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"108"
+],
+[
+72.5,
+85.1,
+132.5,
+"Tabla 15"
+]
+],
+"bot": []
+},
+{
+"page": 121,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"109"
+]
+],
+"bot": []
+},
+{
+"page": 122,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"110"
+],
+[
+72.5,
+85.1,
+132.5,
+"Tabla 16"
+]
+],
+"bot": []
+},
+{
+"page": 123,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"111"
+]
+],
+"bot": []
+},
+{
+"page": 124,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"112"
+],
+[
+72.5,
+85.1,
+526.4,
+"2. Tiempo de emisión de vales (T_vale): W = 0.933, p = 0.331 (p > .05)."
+],
+[
+93.1,
+85.1,
+526.4,
+"3. Registros sin discrepancias (RSD): W = 0.958, p = 0.696 (p > .05)."
+]
+],
+"bot": [
+[
+749.0,
+147.0,
+168.9,
+"(AP)"
+],
+[
+749.0,
+476.7,
+510.2,
+"pareada"
+]
+]
+},
+{
+"page": 125,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"113"
+],
+[
+73.9,
+87.9,
+135.9,
+"Dimensión"
+],
+[
+75.4,
+153.7,
+198.3,
+"Indicador"
+]
+],
+"bot": [
+[
+754.6,
+85.1,
+526.2,
+"no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico"
+]
+]
+},
+{
+"page": 126,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"114"
+],
+[
+72.5,
+85.1,
+526.1,
+"estandarizado Z = -3.30, p = 0.001 (p < .001) y un tamaño del efecto r de Rosenthal de"
+],
+[
+93.1,
+85.1,
+526.4,
+"0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado"
+]
+],
+"bot": [
+[
+748.9,
+85.1,
+326.6,
+"5.4.2. Contrastación de la Hipótesis Específica 2"
+]
+]
+},
+{
+"page": 127,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"115"
+],
+[
+72.5,
+121.1,
+135.8,
+"A."
+],
+[
+72.5,
+185.2,
+256.9,
+"Planteamiento"
+]
+],
+"bot": [
+[
+753.8,
+85.1,
+113.7,
+"(RSD)"
+]
+]
+},
+{
+"page": 128,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"116"
+],
+[
+73.9,
+91.7,
+136.4,
+"Indicador"
+],
+[
+75.4,
+159.3,
+192.8,
+"Prueba"
+]
+],
+"bot": []
+},
+{
+"page": 129,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"117"
+],
+[
+72.5,
+85.1,
+526.0,
+"acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la"
+],
+[
+93.1,
+85.1,
+526.1,
+"implantación del sistema SIVAC eleva de manera estadísticamente significativa la"
+]
+],
+"bot": [
+[
+752.2,
+85.1,
+526.1,
+"Para aceptar la Hipótesis General en un diseño preexperimental compuesto por múltiples"
+]
+]
+},
+{
+"page": 130,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"118"
+],
+[
+72.5,
+85.1,
+526.0,
+"dimensiones operacionales, se formula la regla de decisión conjuntiva: H_G se aceptará si"
+],
+[
+93.1,
+85.1,
+526.1,
+"y solo si se rechazan simultáneamente las hipótesis nulas específicas H_0,1, H_0,2 y"
+]
+],
+"bot": []
+},
+{
+"page": 131,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"119"
+],
+[
+75.4,
+91.1,
+132.9,
+"Hipótesis"
+],
+[
+87.0,
+105.7,
+118.2,
+"de"
+]
+],
+"bot": []
+},
+{
+"page": 132,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"120"
+],
+[
+78.6,
+214.7,
+396.1,
+"CAPÍTULO VI: DISCUSIÓN"
+]
+],
+"bot": [
+[
+753.3,
+85.1,
+526.1,
+"estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos,"
+]
+]
+},
+{
+"page": 133,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"121"
+],
+[
+72.5,
+85.1,
+526.0,
+"+119.47%) y en la Utilidad Percibida (de 9.00 a 18.50 puntos, +105.56%), alcanzando un"
+],
+[
+93.1,
+85.1,
+526.1,
+"puntaje global TAM de 36.21 sobre 40 puntos, correspondiente al baremo 'Alto'. Estos"
+]
+],
+"bot": []
+},
+{
+"page": 134,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"122"
+],
+[
+90.6,
+248.2,
+362.7,
+"CONCLUSIONES"
+]
+],
+"bot": []
+},
+{
+"page": 135,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"123"
+],
+[
+90.6,
+230.7,
+380.1,
+"RECOMENDACIONES"
+]
+],
+"bot": []
+},
+{
+"page": 136,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"124"
+],
+[
+86.6,
+190.9,
+420.1,
+"REFERENCIAS BIBLIOGRÁFICAS"
+]
+],
+"bot": []
+},
+{
+"page": 137,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"125"
+],
+[
+72.5,
+121.1,
+526.1,
+"[Tesis de licenciatura, Universidad de Ciencias y Humanidades]. Repositorio"
+],
+[
+93.1,
+121.1,
+405.2,
+"Institucional UCH. http://hdl.handle.net/20.500.12872/844"
+]
+],
+"bot": []
+},
+{
+"page": 138,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"126"
+],
+[
+72.5,
+85.1,
+526.3,
+"Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el"
+],
+[
+93.1,
+121.1,
+526.3,
+"control de inventario en la Farmacia Pro, 2023 [Tesis de licenciatura, Universidad"
+]
+],
+"bot": []
+},
+{
+"page": 139,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"127"
+],
+[
+72.5,
+121.1,
+523.5,
+"and Practice, 11(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22-"
+],
+[
+93.1,
+121.1,
+153.5,
+"00295"
+]
+],
+"bot": []
+},
+{
+"page": 140,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"128"
+],
+[
+72.5,
+121.1,
+526.3,
+"reproductive health services in Morocco. Clinical and Experimental Obstetrics &"
+],
+[
+93.1,
+121.1,
+470.3,
+"Gynecology, 51(4), Artículo 88. https://doi.org/10.31083/j.ceog5104088"
+]
+],
+"bot": [
+[
+747.6,
+121.1,
+457.2,
+"Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4"
+]
+]
+},
+{
+"page": 141,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"129"
+],
+[
+72.5,
+85.1,
+526.4,
+"World Health Organization. (2021). Global strategy on digital health 2020–2025. World"
+],
+[
+93.1,
+121.1,
+448.6,
+"Health Organization. https://apps.who.int/iris/handle/10665/344249"
+]
+],
+"bot": []
+},
+{
+"page": 142,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"130"
+],
+[
+84.6,
+275.1,
+333.5,
+"ANEXOS"
+]
+],
+"bot": []
+},
+{
+"page": 143,
+"w": 841.9199829101562,
+"h": 595.3200073242188,
+"top": [
+[
+36.0,
+751.8,
+772.4,
+"131"
+],
+[
+75.5,
+85.1,
+474.9,
+"ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007)"
+]
+],
+"bot": []
+},
+{
+"page": 144,
+"w": 841.9199829101562,
+"h": 595.3200073242188,
+"top": [
+[
+36.0,
+751.8,
+772.4,
+"132"
+],
+[
+73.4,
+91.7,
+205.5,
+"Problemas de Investigación"
+],
+[
+73.4,
+233.9,
+343.5,
+"Objetivos de Investigación"
+]
+],
+"bot": []
+},
+{
+"page": 145,
+"w": 841.9199829101562,
+"h": 595.3200073242188,
+"top": [
+[
+36.0,
+751.8,
+772.4,
+"133"
+],
+[
+73.4,
+91.7,
+205.5,
+"Problemas de Investigación"
+],
+[
+73.4,
+233.9,
+343.5,
+"Objetivos de Investigación"
+]
+],
+"bot": []
+},
+{
+"page": 146,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"134"
+],
+[
+72.5,
+85.1,
+512.8,
+"ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)"
+]
+],
+"bot": []
+},
+{
+"page": 147,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"135"
+],
+[
+73.9,
+102.9,
+142.5,
+"Variable"
+],
+[
+75.4,
+172.7,
+219.0,
+"Definición"
+]
+],
+"bot": []
+},
+{
+"page": 148,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"136"
+],
+[
+72.5,
+85.1,
+500.9,
+"ANEXO 3: CERTIFICADOS DE VALIDACIÓN POR JUICIO DE EXPERTOS"
+]
+],
+"bot": [
+[
+750.2,
+309.6,
+424.2,
+"y Cuestionario TAM N.° 03"
+]
+]
+},
+{
+"page": 149,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"137"
+],
+[
+73.9,
+160.3,
+231.4,
+"Juez Validador:"
+],
+[
+73.9,
+324.5,
+505.4,
+"Evaluador Pericial Designado (Experto 2)"
+]
+],
+"bot": []
+},
+{
+"page": 150,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"138"
+],
+[
+72.5,
+85.1,
+461.6,
+"ANEXO 4: INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA"
+],
+[
+93.1,
+85.1,
+186.2,
+"INVESTIGACIÓN"
+]
+],
+"bot": []
+},
+{
+"page": 151,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"139"
+],
+[
+73.9,
+124.6,
+157.6,
+"Código"
+],
+[
+73.9,
+210.6,
+290.6,
+"Indicador Medido"
+]
+],
+"bot": []
+},
+{
+"page": 152,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"140"
+],
+[
+73.9,
+129.9,
+152.3,
+"Ítem"
+],
+[
+73.9,
+212.7,
+288.7,
+"Constructo TAM"
+]
+],
+"bot": []
+},
+{
+"page": 153,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"141"
+],
+[
+72.5,
+85.1,
+479.8,
+"ANEXO 5: MATRIZ DE DATOS TABULADOS DE CAMPO (PRETEST Y"
+],
+[
+93.1,
+85.1,
+153.5,
+"POSTTEST)"
+]
+],
+"bot": []
+},
+{
+"page": 154,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"142"
+],
+[
+75.4,
+86.8,
+99.5,
+"suj"
+],
+[
+87.0,
+86.9,
+99.7,
+"eto"
+]
+],
+"bot": []
+},
+{
+"page": 155,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"143"
+],
+[
+75.4,
+86.7,
+99.4,
+"suj"
+],
+[
+87.0,
+86.8,
+99.6,
+"eto"
+]
+],
+"bot": []
+},
+{
+"page": 156,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"144"
+],
+[
+72.5,
+85.1,
+432.5,
+"ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y"
+],
+[
+93.1,
+85.1,
+221.2,
+"TRAZABILIDAD SIVAC"
+]
+],
+"bot": []
+},
+{
+"page": 157,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"145"
+],
+[
+72.5,
+85.1,
+515.3,
+"ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN"
+],
+[
+93.1,
+85.1,
+132.9,
+"CAMPO"
+]
+],
+"bot": []
+},
+{
+"page": 158,
+"w": 595.3200073242188,
+"h": 841.9199829101562,
+"top": [
+[
+36.0,
+505.2,
+525.8,
+"146"
+],
+[
+72.5,
+85.1,
+518.9,
+"Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO"
+],
+[
+93.1,
+85.1,
+264.9,
+"en los refrigeradores institucionales."
+]
+],
+"bot": []
+}
+]

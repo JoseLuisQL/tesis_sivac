@@ -1,0 +1,166 @@
+{
+  "para": "redactor-academico",
+  "de": "analista-estadistico",
+  "fecha": "2026-10-26",
+  "version": "v22",
+  "proposito": "Especificacion cerrada de tablas y figuras para el cuerpo de resultados, con cabeceras listas y banco de frases. No contiene cifras: las cifras solo se incorporan cuando se acredite el origen de campo y la trazabilidad de las mediciones.",
+  "regla_de_oro": "Mientras los archivos se declaren como datos de prueba y las mediciones no sean reconstruibles, ninguna casilla de estas plantillas puede rellenarse con los CSV existentes. El capitulo se presenta como verificacion del procedimiento, no como resultado de campo.",
+  "estado_del_diseno_estadistico": "La prueba unica por indicador, el uso de r_rb como efecto principal y el intervalo bootstrap son una propuesta tecnica no aprobada. No presentarlos como decision metodologica vigente ni como contraste preespecificado.",
+
+  "tablas": [
+    {
+      "id": "Tabla D1",
+      "rotulo": "Tabla [N]",
+      "titulo": "Estadistica descriptiva de la oportunidad de procesamiento antes y despues de la intervencion (n = 14)",
+      "columnas": ["Indicador", "Momento", "M", "DE", "Mdn", "RIC", "Minimo", "Maximo"],
+      "filas": [
+        "Tiempo de registro (min): pretest, postest, cambio",
+        "Tiempo de emision de vales (min): pretest, postest, cambio"
+      ],
+      "unidad": "minutos",
+      "nota": "Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo ni sostienen inferencia sobre la poblacion. M = media; DE = desviacion estandar; Mdn = mediana; RIC = rango intercuartilico. Elaboracion propia."
+    },
+    {
+      "id": "Tabla D2",
+      "rotulo": "Tabla [N]",
+      "titulo": "Estadistica descriptiva de la consistencia documental antes y despues de la intervencion (n = 14)",
+      "columnas": ["Indicador", "Momento", "M", "DE", "Mdn", "RIC", "Minimo", "Maximo"],
+      "filas": [
+        "Registros sin discrepancias (%): pretest, postest, cambio en puntos porcentuales",
+        "Concordancia programada vs entregada (%): pretest, postest, cambio en puntos porcentuales"
+      ],
+      "unidad": "porcentaje; el cambio se expresa en puntos porcentuales",
+      "nota": "Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo ni sostienen inferencia sobre la poblacion. El cambio de los porcentajes se informa en puntos porcentuales y no como variacion relativa. Elaboracion propia."
+    },
+    {
+      "id": "Tabla D3",
+      "rotulo": "Tabla [N]",
+      "titulo": "Estadistica descriptiva de la satisfaccion del usuario antes y despues de la intervencion (n = 14)",
+      "columnas": ["Indicador", "Momento", "M", "DE", "Mdn", "RIC", "Minimo", "Maximo"],
+      "filas": [
+        "Aceptacion del proceso (4 a 20 puntos): pretest, postest, cambio",
+        "Utilidad percibida (4 a 20 puntos): pretest, postest, cambio"
+      ],
+      "unidad": "puntos",
+      "nota": "Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo ni sostienen inferencia sobre la poblacion. Escala de 4 a 20 puntos por indicador. El puntaje global TAM no se contrasta: es la suma de ambos indicadores y se presenta solo con fines descriptivos. Elaboracion propia."
+    },
+    {
+      "id": "Tabla P",
+      "rotulo": "Tabla [N]",
+      "titulo": "Contraste pareado de los seis indicadores mediante la prueba de rangos con signo de Wilcoxon",
+      "columnas": ["Indicador", "Pares", "Pares nulos", "W", "Metodo", "p", "p de Holm", "r_rb", "Cambio mediano", "IC 95 %", "Decision"],
+      "filas": ["una por cada uno de los seis indicadores oficiales"],
+      "nota": "Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo ni sostienen inferencia sobre la poblacion. Prueba bilateral, alpha = .05. El metodo se declara por indicador. El ajuste de Holm cubre unicamente los seis indicadores oficiales. r_rb = correlacion de rangos-biserial; IC = intervalo de confianza obtenido por bootstrap del cambio mediano. Elaboracion propia."
+    },
+    {
+      "id": "Tabla HG",
+      "rotulo": "Tabla [N]",
+      "titulo": "Regla de decision por dimension y para la hipotesis general",
+      "columnas": ["Hipotesis", "Indicadores implicados", "Regla de decision", "Resultado"],
+      "filas": [
+        "Hipotesis especifica 1: los dos indicadores de la dimension 1 rechazan la hipotesis nula tras el ajuste",
+        "Hipotesis especifica 2: los dos indicadores de la dimension 2 rechazan la hipotesis nula tras el ajuste",
+        "Hipotesis especifica 3: los dos indicadores de la dimension 3 rechazan la hipotesis nula tras el ajuste",
+        "Hipotesis general: las tres dimensiones se cumplen de forma conjunta"
+      ],
+      "nota": "Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo ni sostienen inferencia sobre la poblacion. La hipotesis general es una regla conjuntiva derivada de las tres hipotesis especificas y no dispone de valor p propio. Elaboracion propia.",
+      "prohibido": "No agregar una columna de p para la fila de la hipotesis general."
+    }
+  ],
+
+  "figuras": [
+    {
+      "id": "Figura D1",
+      "titulo": "Tiempos de registro y de emision de vales antes y despues de la intervencion",
+      "tipo": "Dos paneles con pares conectados por operador y caja superpuesta.",
+      "ejes": {"y": "Minutos", "escala": "Calculada del rango observado con holgura del 5 por ciento"},
+      "elementos": ["una linea tenue por operador", "caja con mediana", "puntos sin jitter", "n = 14 en la nota"],
+      "nota": "Cada linea conecta la medicion pretest y postest de un mismo operador. Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo. Elaboracion propia."
+    },
+    {
+      "id": "Figura D2",
+      "titulo": "Consistencia documental antes y despues de la intervencion",
+      "tipo": "Dos paneles con pares conectados y diferencia rotulada en puntos porcentuales.",
+      "ejes": {"y": "Porcentaje", "escala": "0 a 100, marcas cada 20"},
+      "elementos": ["una linea tenue por operador", "caja con mediana", "diferencia en puntos porcentuales rotulada dentro del panel"],
+      "nota": "Cada linea conecta la medicion pretest y postest de un mismo operador. Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo. Elaboracion propia."
+    },
+    {
+      "id": "Figura D3",
+      "titulo": "Aceptacion del proceso y utilidad percibida antes y despues de la intervencion",
+      "tipo": "Dos paneles con pares conectados por operador.",
+      "ejes": {"y": "Puntos", "escala": "4 a 20, marcas en 4, 8, 12, 16 y 20"},
+      "elementos": ["una linea tenue por operador", "caja con mediana", "sin panel de puntaje total en el cuerpo"],
+      "nota": "Cada linea conecta la medicion pretest y postest de un mismo operador. Datos de prueba empleados para verificar el procedimiento estadistico; no constituyen medicion de campo. El puntaje global TAM se omite porque deriva de la suma de ambos indicadores. Elaboracion propia."
+    }
+  ],
+
+  "estilo": {
+    "tablas": {
+      "formato": "Tres lineas horizontales: borde superior, bajo el encabezado y borde inferior. Sin lineas verticales.",
+      "fuente": "Times New Roman 10 pt en celdas",
+      "alineacion": "Texto a la izquierda; cifras decimales alineadas por el separador",
+      "encabezado_repetido": true,
+      "filas_no_fragmentables": true
+    },
+    "figuras": {
+      "resolucion": "300 DPI nativos",
+      "ancho": "16,5 cm",
+      "tipografia": "Serif; se registra la fuente resuelta en los metadatos del generador",
+      "paleta": "Azul pizarra y gris azulado",
+      "marco": "Sin lomo superior ni derecho",
+      "sin_titulo_interno": "El titulo va en el rotulo de la figura, no dentro de la imagen"
+    },
+    "cifras": {
+      "p": "Tres decimales; usar p < .001 cuando corresponda; nunca p = .000",
+      "medias_y_desviaciones": "Dos decimales",
+      "efectos": "Dos decimales",
+      "intervalos": "Dos decimales",
+      "separador_decimal": "Punto en tablas y figuras"
+    }
+  },
+
+  "banco_de_frases": {
+    "descriptiva": "En la dimension [D], los [n] pares registraron una mediana de [Mdn] [unidad] en el pretest y de [Mdn] [unidad] en el postest, con un cambio mediano de [valor] [unidad] (IC 95 % [li, ls]).",
+    "contraste": "La prueba de rangos con signo de Wilcoxon, con metodo [exacto o asintotico], arrojo W = [valor] y p = [valor]; el efecto de rangos-biserial fue r_rb = [valor].",
+    "multiplicidad": "Tras el ajuste de Holm sobre los seis indicadores, el resultado de la dimension [D] fue [rechazar o no rechazar] la hipotesis nula, con p ajustado de [valor].",
+    "dimension": "La dimension [D] [cumple o no cumple] la regla conjuntiva de sus dos indicadores, por lo que la hipotesis especifica [N] se [sostiene o no se sostiene] en el plano estadistico de este analisis.",
+    "general": "La hipotesis general, entendida como conjuncion de las tres dimensiones, [se cumple o no se cumple]; este resultado es derivado y no constituye una prueba independiente.",
+    "salvedad": "Estos valores describen el comportamiento del procedimiento estadistico sobre datos de prueba y no permiten afirmar una mejora atribuible al sistema en la poblacion de estudio."
+  },
+
+  "prohibiciones": [
+    "No presentar t y Wilcoxon como dos confirmaciones del mismo contraste.",
+    "No informar el p de Wilcoxon sin declarar el metodo que lo produjo.",
+    "No asignar valor p a la hipotesis general.",
+    "No sumar ni promediar minutos con porcentajes ni con puntajes.",
+    "No usar el puntaje global TAM como contraste.",
+    "No afirmar causalidad con un diseno de un solo grupo.",
+    "No describir migraciones individuales de nivel a partir de medias agregadas.",
+    "No insertar las figuras de demostracion de la carpeta 07_ESTADISTICA_Y_DATOS.",
+    "No afirmar normalidad a partir de p > .05.",
+    "No atribuir los datos a los instrumentos de campo mientras no exista MANIFEST firmado."
+  ],
+
+  "procedimiento_de_relleno": [
+    "1. Se acredita el origen de campo de las mediciones y su trazabilidad: conteos y denominadores, cronometrajes repetidos y registro documental. El MANIFEST firmado es una via de acreditacion, no la unica.",
+    "2. Se ratifica o se corrige el diseno estadistico propuesto antes de calcular nada.",
+    "3. Las casillas se rellenan exclusivamente desde la salida reproducible del pipeline.",
+    "4. Se sustituye la salvedad de datos de prueba por la de datos de campo con su fuente.",
+    "5. Se verifica que cada cifra del texto exista en la tabla o figura correspondiente."
+  ],
+
+  "numeracion_y_traslado_al_anexo": {
+    "situacion": "El bloque de desarrollo XP (P328-P548, con Tablas 3 a 28 y Figuras 11 a 45) se traslada al anexo 6, de modo que la numeracion de tablas y figuras cambia.",
+    "que_hacer_con_los_rotulos": "Escribir los rotulos como marcadores Tabla [N] y Figura [N] y dejar que la renumeracion automatica de SEQ y de referencias asigne el numero final. No fijar numeros a mano ni reutilizar los de la v20.",
+    "los_numeros_de_esta_propuesta": "Los identificadores Tabla D1, D2, D3, P y HG y Figura D1, D2 y D3 son etiquetas de trabajo, no numeros finales.",
+    "renumeracion_autorizada": "Si. Es consecuencia del traslado y no requiere nueva consulta al tesista.",
+    "lo_que_no_cambia": "Ninguna cifra, decision, cabecera de columna ni nota. El traslado no toca el Capitulo V ni el material estadistico.",
+    "dos_precisiones_para_las_secciones_5_1_y_5_4": [
+      "Si la normalidad se conserva en 5.1, presentarla como diagnostico descriptivo, sin rotularla Normal y sin convertirla en la razon para elegir la prueba.",
+      "Si el puntaje global TAM aparece en 5.4, admitirlo solo como columna descriptiva; nunca como fila de contraste ni dentro de la familia de Holm."
+    ]
+  },
+
+  "que_no_cambia": "Las tres dimensiones y los seis indicadores oficiales se mantienen sin alteracion. El puntaje global TAM queda como referencia descriptiva secundaria. La reubicacion del apartado de desarrollo XP al anexo no afecta ninguna de estas especificaciones."
+}

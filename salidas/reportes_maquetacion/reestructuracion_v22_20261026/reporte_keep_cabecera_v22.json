@@ -1,0 +1,16 @@
+{
+  "comando": "tablas.keep_cabecera",
+  "solo_verificar": false,
+  "sha256_origen": "c1923764f8622a62f75bce49000495c8b4c56402c19e1ce7939131e5b9efdb45",
+  "aplicadas": [
+    {
+      "estado": "aplicada",
+      "tablas_con_cabecera_marcada": 18,
+      "parrafos_cabecera_marcados": 56,
+      "rotulos_marcados": 72
+    }
+  ],
+  "fallidas": [],
+  "sha256_destino": "f77bac6d174ed1d4952c912a0bc73cc6ab4c2e7881aa67e67dd4a36b59afcf6f",
+  "salida": "salidas\\archivo\\REESTRUCTURACION_V22_20261026\\_keep.docx"
+}

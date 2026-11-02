@@ -1,0 +1,2361 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "analista-documental",
+    "squad": "E",
+    "fase": "F8",
+    "tarea": "Diagnóstico del paquete de campo para 14 trabajadores a partir del expediente rector y sus cuatro DOCX compañeros",
+    "metodo": "Inspección OpenXML en memoria con python-docx y lxml (100% de párrafos, tablas y propiedades), exportación a PDF temporal mediante Word COM y lectura página por página. Sin muestreo. No se modificó ninguna fuente.",
+    "fuentes": [
+      {
+        "rol": "modelo rector",
+        "ruta": "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx",
+        "bytes": 63888,
+        "sha256": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+        "parrafos": 143,
+        "tablas": 16,
+        "secciones": 3,
+        "paginas_pdf": 15
+      },
+      {
+        "rol": "compañero 01",
+        "ruta": "salidas/evidencias/instrumentos_aplicados/INSTRUMENTO_01_FICHA_CRONOMETRICA_PRE_POST.docx",
+        "bytes": 4234,
+        "sha256": "259153ddf64a846314580a1b07b5545887964daf8faf599ca422f3598a60f8a7",
+        "parrafos": 5,
+        "tablas": 1,
+        "paginas_pdf": 2
+      },
+      {
+        "rol": "compañero 02",
+        "ruta": "salidas/evidencias/instrumentos_aplicados/INSTRUMENTO_02_FICHA_AUDITORIA_PRE_POST.docx",
+        "bytes": 4240,
+        "sha256": "00244016dff3e2c1e1392e1a1014ecea03c2257e20097e0d4d65d77ff1d2c424",
+        "parrafos": 5,
+        "tablas": 1,
+        "paginas_pdf": 2
+      },
+      {
+        "rol": "compañero 03A pretest",
+        "ruta": "salidas/evidencias/instrumentos_aplicados/INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_A_PRETEST.docx",
+        "bytes": 4720,
+        "sha256": "d88dc39338e8bab319ba707b98a33aa244981d6ca91a3d3693cd415a496c31e9",
+        "parrafos": 5,
+        "tablas": 1,
+        "paginas_pdf": 3
+      },
+      {
+        "rol": "compañero 03B postest (rótulo dudoso)",
+        "ruta": "salidas/evidencias/instrumentos_aplicados/INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_B_POSTEST.docx",
+        "bytes": 4643,
+        "sha256": "731134593ecf4c21bd70dec0c8a41644f331b2362f5f3bee766a2b1e02893524",
+        "parrafos": 5,
+        "tablas": 1,
+        "paginas_pdf": 3
+      },
+      {
+        "rol": "matriz de captura",
+        "ruta": "salidas/instrumentos/MATRIZ_CAPTURA_INSTRUMENTOS_VACIA.xlsx",
+        "hojas": [
+          "Pretest_Postest_Vacio (15x15)",
+          "Juicio_Expertos_Fany2024 (73x4)"
+        ]
+      },
+      {
+        "rol": "esquema de códigos",
+        "ruta": "datos/schemas/codebook.json",
+        "patron_id": "^TRAB-(0[1-9]|1[0-4])$",
+        "n": 14
+      }
+    ]
+  },
+  "modelo_rector": {
+    "parrafos": 143,
+    "tablas": [
+      {
+        "indice": 0,
+        "pagina_inicio": 2,
+        "pagina_fin": 2,
+        "filas": 4,
+        "columnas": 2,
+        "grid_dxa": [
+          1900,
+          6888
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 4,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Criterios de evaluación; solo expertos",
+        "uso_en_paquete": "no",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 1,
+        "pagina_inicio": 2,
+        "pagina_fin": 2,
+        "filas": 5,
+        "columnas": 3,
+        "grid_dxa": [
+          800,
+          2600,
+          5388
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 5,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Escala de valoración de 1 a 4; solo expertos",
+        "uso_en_paquete": "no",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 2,
+        "pagina_inicio": 3,
+        "pagina_fin": 4,
+        "filas": 17,
+        "columnas": 6,
+        "grid_dxa": [
+          567,
+          4820,
+          1145,
+          1134,
+          981,
+          2410
+        ],
+        "ancho_dxa": 11057,
+        "flotante": false,
+        "filas_cantSplit": 0,
+        "filas_tblHeader": 0,
+        "bordes": {},
+        "rol": "Matriz de validación de contenido, 12 ítems; solo expertos",
+        "uso_en_paquete": "no",
+        "observacion": "Ancho de 11057 dxa con tblInd de -1168: invade 2,06 cm el margen izquierdo de 3,0 cm y 1,94 cm el derecho; usa el estilo Tablaconcuadrícula y carece de cantSplit y tblHeader."
+      },
+      {
+        "indice": 3,
+        "pagina_inicio": 5,
+        "pagina_fin": 6,
+        "filas": 5,
+        "columnas": 5,
+        "grid_dxa": [
+          2300,
+          2300,
+          2300,
+          3550,
+          3550
+        ],
+        "ancho_dxa": 14000,
+        "flotante": false,
+        "filas_cantSplit": 5,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "bottom": "single"
+        },
+        "rol": "Matriz de consistencia horizontal; soporte",
+        "uso_en_paquete": "no",
+        "observacion": "Ancho de 14000 dxa exacto; solo tres líneas horizontales; sección horizontal."
+      },
+      {
+        "indice": 4,
+        "pagina_inicio": 7,
+        "pagina_fin": 7,
+        "filas": 8,
+        "columnas": 6,
+        "grid_dxa": [
+          2300,
+          2200,
+          2300,
+          3800,
+          1700,
+          1700
+        ],
+        "ancho_dxa": 14000,
+        "flotante": false,
+        "filas_cantSplit": 8,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "bottom": "single"
+        },
+        "rol": "Matriz de operacionalización horizontal; soporte",
+        "uso_en_paquete": "no",
+        "observacion": "Ancho de 14000 dxa exacto; solo tres líneas horizontales; sección horizontal."
+      },
+      {
+        "indice": 5,
+        "pagina_inicio": 8,
+        "pagina_fin": 8,
+        "filas": 7,
+        "columnas": 2,
+        "grid_dxa": [
+          2694,
+          6094
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 7,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 1: datos generales de la observación",
+        "uso_en_paquete": "sí, ficha 1 pre y post",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 6,
+        "pagina_inicio": 9,
+        "pagina_fin": 9,
+        "filas": 4,
+        "columnas": 7,
+        "grid_dxa": [
+          1000,
+          2350,
+          900,
+          900,
+          1088,
+          1150,
+          1400
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 4,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 1: sección A, Treg, tres ensayos",
+        "uso_en_paquete": "sí, ficha 1 pre y post",
+        "observacion": "Altura de fila de 620 twips para escritura manual; tres ensayos."
+      },
+      {
+        "indice": 7,
+        "pagina_inicio": 9,
+        "pagina_fin": 9,
+        "filas": 4,
+        "columnas": 7,
+        "grid_dxa": [
+          1000,
+          2350,
+          900,
+          900,
+          1088,
+          1150,
+          1400
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 4,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 1: sección B, Tvale, tres ensayos",
+        "uso_en_paquete": "sí, ficha 1 pre y post",
+        "observacion": "Altura de fila de 620 twips; tres ensayos; el código de vale se anota dentro de la celda de tarea."
+      },
+      {
+        "indice": 8,
+        "pagina_inicio": 10,
+        "pagina_fin": 10,
+        "filas": 10,
+        "columnas": 2,
+        "grid_dxa": [
+          3000,
+          5788
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 10,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 2: datos generales de la auditoría documental",
+        "uso_en_paquete": "sí, ficha 2 pre y post",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 9,
+        "pagina_inicio": 11,
+        "pagina_fin": 11,
+        "filas": 8,
+        "columnas": 6,
+        "grid_dxa": [
+          500,
+          2300,
+          1000,
+          1000,
+          1600,
+          2388
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 8,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 2: matriz RSD, ocho criterios",
+        "uso_en_paquete": "sí, ficha 2 pre y post",
+        "observacion": "Solo seis filas de ejemplo más fila de continuación, para un corpus declarado de 40 a 60 registros."
+      },
+      {
+        "indice": 10,
+        "pagina_inicio": 11,
+        "pagina_fin": 11,
+        "filas": 8,
+        "columnas": 6,
+        "grid_dxa": [
+          500,
+          2400,
+          1488,
+          1500,
+          1500,
+          1400
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 8,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 2: matriz CPE 4a, cantidades programadas y entregadas",
+        "uso_en_paquete": "sí, ficha 2 pre y post",
+        "observacion": "Solo seis filas de ejemplo; el modelo remite a hoja adicional."
+      },
+      {
+        "indice": 11,
+        "pagina_inicio": 12,
+        "pagina_fin": 12,
+        "filas": 8,
+        "columnas": 4,
+        "grid_dxa": [
+          500,
+          2400,
+          1900,
+          3988
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 8,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Ficha 2: matriz CPE 4b, justificación y veredicto",
+        "uso_en_paquete": "sí, ficha 2 pre y post",
+        "observacion": "Solo seis filas de ejemplo; correlaciona con la tabla 10 por número de caso."
+      },
+      {
+        "indice": 12,
+        "pagina_inicio": 13,
+        "pagina_fin": 13,
+        "filas": 6,
+        "columnas": 3,
+        "grid_dxa": [
+          1300,
+          2900,
+          4588
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 6,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Escala Likert de 1 a 5 con significado operativo",
+        "uso_en_paquete": "sí, cuestionario A pre y post, y B",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 13,
+        "pagina_inicio": 13,
+        "pagina_fin": 13,
+        "filas": 8,
+        "columnas": 2,
+        "grid_dxa": [
+          3800,
+          4988
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 8,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Cuestionario: datos generales del participante",
+        "uso_en_paquete": "sí, cuestionario A pre y post",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 14,
+        "pagina_inicio": 14,
+        "pagina_fin": 14,
+        "filas": 11,
+        "columnas": 7,
+        "grid_dxa": [
+          900,
+          5088,
+          560,
+          560,
+          560,
+          560,
+          560
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 11,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Cuestionario Modalidad A: ocho reactivos AP/UP",
+        "uso_en_paquete": "sí, modalidad A pre y post",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      },
+      {
+        "indice": 15,
+        "pagina_inicio": 15,
+        "pagina_fin": 15,
+        "filas": 11,
+        "columnas": 7,
+        "grid_dxa": [
+          900,
+          5088,
+          560,
+          560,
+          560,
+          560,
+          560
+        ],
+        "ancho_dxa": 8788,
+        "flotante": false,
+        "filas_cantSplit": 11,
+        "filas_tblHeader": 1,
+        "bordes": {
+          "top": "single",
+          "left": "single",
+          "bottom": "single",
+          "right": "single",
+          "insideH": "single",
+          "insideV": "single"
+        },
+        "rol": "Cuestionario Modalidad B: ocho reactivos PU/PE",
+        "uso_en_paquete": "sí, modalidad B solo post",
+        "observacion": "Rejilla completa (top, left, bottom, right, insideH, insideV) y filas no fragmentables."
+      }
+    ],
+    "secciones": 3,
+    "paginas_pdf": 15,
+    "estructura_por_paginas": [
+      {
+        "pagina": 1,
+        "contenido": "Carta de presentación al juez experto; fecha y firma en blanco"
+      },
+      {
+        "pagina": 2,
+        "contenido": "Instrucciones, tabla de criterios (T0) y escala de 1 a 4 (T1)"
+      },
+      {
+        "pagina": 3,
+        "contenido": "Matriz de validación de contenido (T2, inicio): tres dimensiones y 12 ítems"
+      },
+      {
+        "pagina": 4,
+        "contenido": "Cierre del certificado: opinión global, suficiencia, observaciones, datos del juez y firma"
+      },
+      {
+        "pagina": 5,
+        "contenido": "Matriz de consistencia horizontal (T3, inicio)"
+      },
+      {
+        "pagina": 6,
+        "contenido": "Continuación de la matriz de consistencia"
+      },
+      {
+        "pagina": 7,
+        "contenido": "Matriz de operacionalización horizontal (T4)"
+      },
+      {
+        "pagina": 8,
+        "contenido": "Instrumento 1: título, dimensión, datos generales (T5) y protocolo de cronometraje"
+      },
+      {
+        "pagina": 9,
+        "contenido": "Instrumento 1: sección A Treg (T6) y sección B Tvale (T7)"
+      },
+      {
+        "pagina": 10,
+        "contenido": "Instrumento 2: título, datos generales (T8) y ocho criterios de conformidad"
+      },
+      {
+        "pagina": 11,
+        "contenido": "Instrumento 2: matriz RSD (T9) y matriz CPE 4a (T10)"
+      },
+      {
+        "pagina": 12,
+        "contenido": "Instrumento 2: matriz CPE 4b (T11)"
+      },
+      {
+        "pagina": 13,
+        "contenido": "Instrumento 3: título, instrucciones, escala Likert (T12) y datos del participante (T13)"
+      },
+      {
+        "pagina": 14,
+        "contenido": "Modalidad A: ocho reactivos AP/UP (T14) y firmas"
+      },
+      {
+        "pagina": 15,
+        "contenido": "Modalidad B: ocho reactivos PU/PE (T15) y firmas"
+      }
+    ],
+    "mapa_documento": [
+      {
+        "orden": 1,
+        "tipo": "párrafo",
+        "indice": 0,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Andahuaylas, ........ de ........................ de 2026"
+      },
+      {
+        "orden": 2,
+        "tipo": "párrafo",
+        "indice": 1,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Señor(a):"
+      },
+      {
+        "orden": 3,
+        "tipo": "párrafo",
+        "indice": 2,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 4,
+        "tipo": "párrafo",
+        "indice": 3,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Docente / Especialista en: ..........................................................."
+      },
+      {
+        "orden": 5,
+        "tipo": "párrafo",
+        "indice": 4,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 6,
+        "tipo": "párrafo",
+        "indice": 5,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Presente.-"
+      },
+      {
+        "orden": 7,
+        "tipo": "párrafo",
+        "indice": 6,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "De mi mayor consideración:"
+      },
+      {
+        "orden": 8,
+        "tipo": "párrafo",
+        "indice": 7,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Yo, Bach. José Luis Quispe León, tesista de la Escuela Profesional de Ingeniería de Sistem"
+      },
+      {
+        "orden": 9,
+        "tipo": "párrafo",
+        "indice": 8,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "La investigación articula tres instrumentos complementarios orientados a capturar con rigu"
+      },
+      {
+        "orden": 10,
+        "tipo": "párrafo",
+        "indice": 9,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Ficha N.° 01: Ficha de observación sistemática y medición de tiempos cronometrados, destin"
+      },
+      {
+        "orden": 11,
+        "tipo": "párrafo",
+        "indice": 10,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Ficha N.° 02: Ficha de registro y cotejo documental de consistencia, destinada a medir la "
+      },
+      {
+        "orden": 12,
+        "tipo": "párrafo",
+        "indice": 11,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Cuestionario N.° 03: Cuestionario de satisfacción con el proceso operativo, Modalidad A, c"
+      },
+      {
+        "orden": 13,
+        "tipo": "párrafo",
+        "indice": 12,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 14,
+        "tipo": "párrafo",
+        "indice": 13,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "La labor solicitada consiste en valorar la pertinencia, relevancia y claridad de los indic"
+      },
+      {
+        "orden": 15,
+        "tipo": "párrafo",
+        "indice": 14,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Se adjuntan los siguientes documentos:"
+      },
+      {
+        "orden": 16,
+        "tipo": "párrafo",
+        "indice": 15,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Instrucciones para jueces expertos y criterios de evaluación."
+      },
+      {
+        "orden": 17,
+        "tipo": "párrafo",
+        "indice": 16,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Matriz de validación de contenido por ítem, criterio o reactivo."
+      },
+      {
+        "orden": 18,
+        "tipo": "párrafo",
+        "indice": 17,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Matriz de consistencia, como documento de consulta."
+      },
+      {
+        "orden": 19,
+        "tipo": "párrafo",
+        "indice": 18,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Matriz de operacionalización de variables con tres dimensiones y seis indicadores."
+      },
+      {
+        "orden": 20,
+        "tipo": "párrafo",
+        "indice": 19,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Instrumentos en blanco: Ficha N.° 01, Ficha N.° 02 y Cuestionario N.° 03. La Modalidad A m"
+      },
+      {
+        "orden": 21,
+        "tipo": "párrafo",
+        "indice": 20,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Agradezco de antemano su tiempo, rigor académico y valioso aporte al desarrollo de esta in"
+      },
+      {
+        "orden": 22,
+        "tipo": "párrafo",
+        "indice": 21,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 23,
+        "tipo": "párrafo",
+        "indice": 22,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Atentamente,"
+      },
+      {
+        "orden": 24,
+        "tipo": "párrafo",
+        "indice": 23,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 25,
+        "tipo": "párrafo",
+        "indice": 24,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 26,
+        "tipo": "párrafo",
+        "indice": 25,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": ".........................................................."
+      },
+      {
+        "orden": 27,
+        "tipo": "párrafo",
+        "indice": 26,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Bach. José Luis Quispe León"
+      },
+      {
+        "orden": 28,
+        "tipo": "párrafo",
+        "indice": 27,
+        "página": 1,
+        "rol": "Carta de presentación al juez experto; no forma parte del paquete de campo",
+        "texto_inicio": "Tesista"
+      },
+      {
+        "orden": 29,
+        "tipo": "párrafo",
+        "indice": 28,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "INSTRUCCIONES PARA LA VALIDACIÓN POR JUICIO DE EXPERTOS"
+      },
+      {
+        "orden": 30,
+        "tipo": "párrafo",
+        "indice": 29,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Estimado(a) especialista: revise los indicadores e ítems presentados y califíquelos según "
+      },
+      {
+        "orden": 31,
+        "tipo": "tabla",
+        "indice": 0,
+        "página": 2,
+        "rol": "Criterios de evaluación; solo expertos",
+        "filas": 4,
+        "columnas": 2,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 32,
+        "tipo": "párrafo",
+        "indice": 30,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 33,
+        "tipo": "párrafo",
+        "indice": 31,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Escala de valoración"
+      },
+      {
+        "orden": 34,
+        "tipo": "tabla",
+        "indice": 1,
+        "página": 2,
+        "rol": "Escala de valoración de 1 a 4; solo expertos",
+        "filas": 5,
+        "columnas": 3,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 35,
+        "tipo": "párrafo",
+        "indice": 32,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 36,
+        "tipo": "párrafo",
+        "indice": 33,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Indicaciones"
+      },
+      {
+        "orden": 37,
+        "tipo": "párrafo",
+        "indice": 34,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Asigne una calificación de 1 a 4 para cada ítem en los criterios de pertinencia, relevanci"
+      },
+      {
+        "orden": 38,
+        "tipo": "párrafo",
+        "indice": 35,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Registre en la columna “Sugerencias” las observaciones que considere necesarias."
+      },
+      {
+        "orden": 39,
+        "tipo": "párrafo",
+        "indice": 36,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Revise las definiciones operacionales y los instrumentos adjuntos como material de consult"
+      },
+      {
+        "orden": 40,
+        "tipo": "párrafo",
+        "indice": 37,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Al finalizar, emita una opinión general sobre la aplicabilidad y suficiencia de los instru"
+      },
+      {
+        "orden": 41,
+        "tipo": "párrafo",
+        "indice": 38,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Consigne sus datos profesionales, fecha y firma."
+      },
+      {
+        "orden": 42,
+        "tipo": "párrafo",
+        "indice": 39,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 43,
+        "tipo": "párrafo",
+        "indice": 40,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Criterio de decisión"
+      },
+      {
+        "orden": 44,
+        "tipo": "párrafo",
+        "indice": 41,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": "Un ítem presentará validez de contenido adecuada cuando obtenga un V de Aiken mayor o igua"
+      },
+      {
+        "orden": 45,
+        "tipo": "párrafo",
+        "indice": 42,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 46,
+        "tipo": "párrafo",
+        "indice": 43,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 47,
+        "tipo": "párrafo",
+        "indice": 44,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 48,
+        "tipo": "párrafo",
+        "indice": 45,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 49,
+        "tipo": "párrafo",
+        "indice": 46,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 50,
+        "tipo": "párrafo",
+        "indice": 47,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 51,
+        "tipo": "párrafo",
+        "indice": 48,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 52,
+        "tipo": "párrafo",
+        "indice": 49,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 53,
+        "tipo": "párrafo",
+        "indice": 50,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 54,
+        "tipo": "párrafo",
+        "indice": 51,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 55,
+        "tipo": "párrafo",
+        "indice": 52,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 56,
+        "tipo": "párrafo",
+        "indice": 53,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 57,
+        "tipo": "párrafo",
+        "indice": 54,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 58,
+        "tipo": "párrafo",
+        "indice": 55,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 59,
+        "tipo": "párrafo",
+        "indice": 56,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 60,
+        "tipo": "párrafo",
+        "indice": 57,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 61,
+        "tipo": "párrafo",
+        "indice": 58,
+        "página": 2,
+        "rol": "Instrucciones de validación, criterios (T0), escala (T1) e indicaciones; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 62,
+        "tipo": "párrafo",
+        "indice": 59,
+        "página": 3,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "MATRIZ DE VALIDACIÓN"
+      },
+      {
+        "orden": 63,
+        "tipo": "párrafo",
+        "indice": 60,
+        "página": 3,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "CERTIFICADO DE VALIDEZ DE CONTENIDO DEL INSTRUMENTO QUE MIDE LA VARIABLE DEPENDIENTE: GEST"
+      },
+      {
+        "orden": 64,
+        "tipo": "tabla",
+        "indice": 2,
+        "página": 3,
+        "rol": "Matriz de validación de contenido, 12 ítems; solo expertos",
+        "filas": 17,
+        "columnas": 6,
+        "ancho_dxa": 11057
+      },
+      {
+        "orden": 65,
+        "tipo": "párrafo",
+        "indice": 61,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "1. Opinión global sobre el instrumento:"
+      },
+      {
+        "orden": 66,
+        "tipo": "párrafo",
+        "indice": 62,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "[   ] Aplicable sin modificaciones\n   [   ] Aplicable con modificaciones menores\n   [   ] "
+      },
+      {
+        "orden": 67,
+        "tipo": "párrafo",
+        "indice": 63,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "2. Suficiencia de los elementos evaluados:"
+      },
+      {
+        "orden": 68,
+        "tipo": "párrafo",
+        "indice": 64,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "¿Los elementos propuestos son suficientes para medir la variable o dimensión evaluada medi"
+      },
+      {
+        "orden": 69,
+        "tipo": "párrafo",
+        "indice": 65,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "[   ] Sí          [   ] No"
+      },
+      {
+        "orden": 70,
+        "tipo": "párrafo",
+        "indice": 66,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "3. Observaciones y recomendaciones generales:"
+      },
+      {
+        "orden": 71,
+        "tipo": "párrafo",
+        "indice": 67,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 72,
+        "tipo": "párrafo",
+        "indice": 68,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 73,
+        "tipo": "párrafo",
+        "indice": 69,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 74,
+        "tipo": "párrafo",
+        "indice": 70,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 75,
+        "tipo": "párrafo",
+        "indice": 71,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "4. Datos del juez validador:"
+      },
+      {
+        "orden": 76,
+        "tipo": "párrafo",
+        "indice": 72,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "Apellidos y nombres del juez validador: .................................................."
+      },
+      {
+        "orden": 77,
+        "tipo": "párrafo",
+        "indice": 73,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "DNI: .....................................................       Especialidad: ..........."
+      },
+      {
+        "orden": 78,
+        "tipo": "párrafo",
+        "indice": 74,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 79,
+        "tipo": "párrafo",
+        "indice": 75,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "Fecha de evaluación: Andahuaylas, ......... de ........................................ de"
+      },
+      {
+        "orden": 80,
+        "tipo": "párrafo",
+        "indice": 76,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 81,
+        "tipo": "párrafo",
+        "indice": 77,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 82,
+        "tipo": "párrafo",
+        "indice": 78,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "________________________________________"
+      },
+      {
+        "orden": 83,
+        "tipo": "párrafo",
+        "indice": 79,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": "Firma del juez validador"
+      },
+      {
+        "orden": 84,
+        "tipo": "párrafo",
+        "indice": 80,
+        "página": 4,
+        "rol": "Matriz de validación y cierre del certificado; solo juicio de expertos",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 85,
+        "tipo": "párrafo",
+        "indice": 81,
+        "página": 5,
+        "rol": "Matriz de consistencia y operacionalización; soporte del expediente",
+        "texto_inicio": "MATRIZ DE CONSISTENCIA"
+      },
+      {
+        "orden": 86,
+        "tipo": "párrafo",
+        "indice": 82,
+        "página": 5,
+        "rol": "Matriz de consistencia y operacionalización; soporte del expediente",
+        "texto_inicio": "APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS"
+      },
+      {
+        "orden": 87,
+        "tipo": "tabla",
+        "indice": 3,
+        "página": 5,
+        "rol": "Matriz de consistencia horizontal; soporte",
+        "filas": 5,
+        "columnas": 5,
+        "ancho_dxa": 14000
+      },
+      {
+        "orden": 88,
+        "tipo": "párrafo",
+        "indice": 83,
+        "página": 6,
+        "rol": "Matriz de consistencia y operacionalización; soporte del expediente",
+        "texto_inicio": "MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES"
+      },
+      {
+        "orden": 89,
+        "tipo": "tabla",
+        "indice": 4,
+        "página": 7,
+        "rol": "Matriz de operacionalización horizontal; soporte",
+        "filas": 8,
+        "columnas": 6,
+        "ancho_dxa": 14000
+      },
+      {
+        "orden": 90,
+        "tipo": "párrafo",
+        "indice": 84,
+        "página": 6,
+        "rol": "Matriz de consistencia y operacionalización; soporte del expediente",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 91,
+        "tipo": "párrafo",
+        "indice": 85,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "INSTRUMENTO N.° 01"
+      },
+      {
+        "orden": 92,
+        "tipo": "párrafo",
+        "indice": 86,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "FICHA DE OBSERVACIÓN SISTEMÁTICA Y MEDICIÓN DE TIEMPOS CRONOMETRADOS"
+      },
+      {
+        "orden": 93,
+        "tipo": "párrafo",
+        "indice": 87,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Dimensión: oportunidad de procesamiento. Indicadores: tiempo de registro (Treg) y tiempo d"
+      },
+      {
+        "orden": 94,
+        "tipo": "párrafo",
+        "indice": 88,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "1. Datos generales de la observación"
+      },
+      {
+        "orden": 95,
+        "tipo": "tabla",
+        "indice": 5,
+        "página": 8,
+        "rol": "Ficha 1: datos generales de la observación",
+        "filas": 7,
+        "columnas": 2,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 96,
+        "tipo": "párrafo",
+        "indice": 89,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "2. Protocolo de cronometraje y reglas de registro"
+      },
+      {
+        "orden": 97,
+        "tipo": "párrafo",
+        "indice": 90,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Cronómetro digital con precisión de centésimas de segundo; cada tiempo se consigna en minu"
+      },
+      {
+        "orden": 98,
+        "tipo": "párrafo",
+        "indice": 91,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Tiempo de registro: inicia al tomar el documento fuente o abrir la digitación y termina cu"
+      },
+      {
+        "orden": 99,
+        "tipo": "párrafo",
+        "indice": 92,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Tiempo de emisión de vales: inicia cuando el operador recibe o abre la solicitud de pedido"
+      },
+      {
+        "orden": 100,
+        "tipo": "párrafo",
+        "indice": 93,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Regla de pausa: ante una interrupción externa fortuita el cronómetro se detiene y se reanu"
+      },
+      {
+        "orden": 101,
+        "tipo": "párrafo",
+        "indice": 94,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Los tres ensayos se realizarán con casos equivalentes en complejidad, cantidad de biológic"
+      },
+      {
+        "orden": 102,
+        "tipo": "párrafo",
+        "indice": 95,
+        "página": 7,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "El orden de los tres ensayos será el mismo en pretest y postest para todos los participant"
+      },
+      {
+        "orden": 103,
+        "tipo": "párrafo",
+        "indice": 96,
+        "página": 8,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "3. Sección A: tareas de registro (Treg)"
+      },
+      {
+        "orden": 104,
+        "tipo": "tabla",
+        "indice": 6,
+        "página": 9,
+        "rol": "Ficha 1: sección A, Treg, tres ensayos",
+        "filas": 4,
+        "columnas": 7,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 105,
+        "tipo": "párrafo",
+        "indice": 97,
+        "página": 8,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "Mediana de los tres ensayos (estadístico principal por operador): ____________ min        "
+      },
+      {
+        "orden": 106,
+        "tipo": "párrafo",
+        "indice": 98,
+        "página": 8,
+        "rol": "Instrumento 1: ficha de observación sistemática y cronometraje",
+        "texto_inicio": "4. Sección B: tareas de emisión de vales (Tvale)"
+      },
+      {
+        "orden": 107,
+        "tipo": "tabla",
+        "indice": 7,
+        "página": 9,
+        "rol": "Ficha 1: sección B, Tvale, tres ensayos",
+        "filas": 4,
+        "columnas": 7,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 108,
+        "tipo": "párrafo",
+        "indice": 99,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "INSTRUMENTO N.° 02"
+      },
+      {
+        "orden": 109,
+        "tipo": "párrafo",
+        "indice": 100,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "FICHA DE REGISTRO Y COTEJO DOCUMENTAL DE CONSISTENCIA"
+      },
+      {
+        "orden": 110,
+        "tipo": "párrafo",
+        "indice": 101,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Dimensión: consistencia documental. Indicadores: registros sin discrepancias (RSD) y conco"
+      },
+      {
+        "orden": 111,
+        "tipo": "párrafo",
+        "indice": 102,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "1. Datos generales de la auditoría documental"
+      },
+      {
+        "orden": 112,
+        "tipo": "tabla",
+        "indice": 8,
+        "página": 10,
+        "rol": "Ficha 2: datos generales de la auditoría documental",
+        "filas": 10,
+        "columnas": 2,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 113,
+        "tipo": "párrafo",
+        "indice": 103,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "2. Regla de conformidad y los ocho criterios (RSD)"
+      },
+      {
+        "orden": 114,
+        "tipo": "párrafo",
+        "indice": 104,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Un registro es conforme (1) cuando cumple simultáneamente los ocho criterios siguientes; s"
+      },
+      {
+        "orden": 115,
+        "tipo": "párrafo",
+        "indice": 105,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Tipo de movimiento clasificado de forma unívoca (entrada por remesa, salida a establecimie"
+      },
+      {
+        "orden": 116,
+        "tipo": "párrafo",
+        "indice": 106,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Denominación oficial estandarizada del biológico según el esquema regular nacional."
+      },
+      {
+        "orden": 117,
+        "tipo": "párrafo",
+        "indice": 107,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Identificación exacta del número de lote, coincidente con el rótulo del frasco."
+      },
+      {
+        "orden": 118,
+        "tipo": "párrafo",
+        "indice": 108,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Cantidad registrada concordante con el documento fuente que sustenta el movimiento. En ent"
+      },
+      {
+        "orden": 119,
+        "tipo": "párrafo",
+        "indice": 109,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Fecha del movimiento consignada completa (día, mes y año) y en secuencia cronológica."
+      },
+      {
+        "orden": 120,
+        "tipo": "párrafo",
+        "indice": 110,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Establecimiento de origen o destino individualizado con su código oficial."
+      },
+      {
+        "orden": 121,
+        "tipo": "párrafo",
+        "indice": 111,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Nombre, firma o usuario responsable del despacho o recepción plenamente trazable."
+      },
+      {
+        "orden": 122,
+        "tipo": "párrafo",
+        "indice": 112,
+        "página": 9,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Documento formal de respaldo asociado y verificado (vale oficial, PECOSA o guía de remisió"
+      },
+      {
+        "orden": 123,
+        "tipo": "párrafo",
+        "indice": 113,
+        "página": 10,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "3. Matriz de auditoría de registros (RSD)"
+      },
+      {
+        "orden": 124,
+        "tipo": "tabla",
+        "indice": 9,
+        "página": 11,
+        "rol": "Ficha 2: matriz RSD, ocho criterios",
+        "filas": 8,
+        "columnas": 6,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 125,
+        "tipo": "párrafo",
+        "indice": 114,
+        "página": 10,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Nota: si el corpus supera las filas disponibles, continúe en una hoja adicional con el mis"
+      },
+      {
+        "orden": 126,
+        "tipo": "párrafo",
+        "indice": 115,
+        "página": 10,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Total de registros evaluados: ______      Registros conformes: ______      Registros con d"
+      },
+      {
+        "orden": 127,
+        "tipo": "párrafo",
+        "indice": 116,
+        "página": 10,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "4. Regla de concordancia y matriz de entregas (CPE)"
+      },
+      {
+        "orden": 128,
+        "tipo": "párrafo",
+        "indice": 117,
+        "página": 10,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Una entrega es concordante (1) si la cantidad entregada es idéntica a la programada o si, "
+      },
+      {
+        "orden": 129,
+        "tipo": "párrafo",
+        "indice": 118,
+        "página": 10,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": "Las dos tablas siguientes se corresponden por número de caso: cantidades (4a) y verificaci"
+      },
+      {
+        "orden": 130,
+        "tipo": "tabla",
+        "indice": 10,
+        "página": 11,
+        "rol": "Ficha 2: matriz CPE 4a, cantidades programadas y entregadas",
+        "filas": 8,
+        "columnas": 6,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 131,
+        "tipo": "párrafo",
+        "indice": 119,
+        "página": 11,
+        "rol": "Instrumento 2: ficha de registro y cotejo documental",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 132,
+        "tipo": "tabla",
+        "indice": 11,
+        "página": 12,
+        "rol": "Ficha 2: matriz CPE 4b, justificación y veredicto",
+        "filas": 8,
+        "columnas": 4,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 133,
+        "tipo": "párrafo",
+        "indice": 120,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "INSTRUMENTO N.° 03"
+      },
+      {
+        "orden": 134,
+        "tipo": "párrafo",
+        "indice": 121,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "CUESTIONARIO DE SATISFACCIÓN DEL USUARIO CON EL PROCESO OPERATIVO Y MÓDULO COMPLEMENTARIO "
+      },
+      {
+        "orden": 135,
+        "tipo": "párrafo",
+        "indice": 122,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Variable evaluada: GESTIÓN DE MOVIMIENTOS MENSUALES de vacunas (variable dependiente). Dim"
+      },
+      {
+        "orden": 136,
+        "tipo": "párrafo",
+        "indice": 123,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "1. Instrucciones para el participante y escala de respuesta (Likert de 5 opciones)"
+      },
+      {
+        "orden": 137,
+        "tipo": "párrafo",
+        "indice": 124,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "•  Confidencialidad y anonimato bajo código numérico (TRAB-01 a TRAB-14), conforme a la Le"
+      },
+      {
+        "orden": 138,
+        "tipo": "párrafo",
+        "indice": 125,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "•  Libertad de respuesta: no existen respuestas correctas ni incorrectas; marque con una e"
+      },
+      {
+        "orden": 139,
+        "tipo": "tabla",
+        "indice": 12,
+        "página": 13,
+        "rol": "Escala Likert de 1 a 5 con significado operativo",
+        "filas": 6,
+        "columnas": 3,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 140,
+        "tipo": "párrafo",
+        "indice": 126,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Momento de aplicación (marque el evaluador):    [  ] Pretest (proceso manual)    [  ] Post"
+      },
+      {
+        "orden": 141,
+        "tipo": "párrafo",
+        "indice": 127,
+        "página": 12,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "2. Datos generales del participante"
+      },
+      {
+        "orden": 142,
+        "tipo": "tabla",
+        "indice": 13,
+        "página": 13,
+        "rol": "Cuestionario: datos generales del participante",
+        "filas": 8,
+        "columnas": 2,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 143,
+        "tipo": "párrafo",
+        "indice": 128,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "3. Modalidad A: satisfacción con el proceso operativo (AP y UP)"
+      },
+      {
+        "orden": 144,
+        "tipo": "párrafo",
+        "indice": 129,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Ocho afirmaciones literales sobre la gestión del proceso; en el pretest el participante ev"
+      },
+      {
+        "orden": 145,
+        "tipo": "tabla",
+        "indice": 14,
+        "página": 14,
+        "rol": "Cuestionario Modalidad A: ocho reactivos AP/UP",
+        "filas": 11,
+        "columnas": 7,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 146,
+        "tipo": "párrafo",
+        "indice": 130,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 147,
+        "tipo": "párrafo",
+        "indice": 131,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Firma del participante: ______________________________"
+      },
+      {
+        "orden": 148,
+        "tipo": "párrafo",
+        "indice": 132,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 149,
+        "tipo": "párrafo",
+        "indice": 133,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Firma del encuestador (Bach. José Luis Quispe León, Tesista):"
+      },
+      {
+        "orden": 150,
+        "tipo": "párrafo",
+        "indice": 134,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 151,
+        "tipo": "párrafo",
+        "indice": 135,
+        "página": 13,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "______________________________"
+      },
+      {
+        "orden": 152,
+        "tipo": "párrafo",
+        "indice": 136,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "4. Modalidad B: módulo complementario postest de aceptación del software SIVAC"
+      },
+      {
+        "orden": 153,
+        "tipo": "párrafo",
+        "indice": 137,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Código de participante (TRAB): TRAB-______     Fecha de aplicación postest: ____ / ____ / "
+      },
+      {
+        "orden": 154,
+        "tipo": "párrafo",
+        "indice": 138,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Módulo complementario postest de aceptación del software SIVAC (anexo descriptivo de consu"
+      },
+      {
+        "orden": 155,
+        "tipo": "tabla",
+        "indice": 15,
+        "página": 15,
+        "rol": "Cuestionario Modalidad B: ocho reactivos PU/PE",
+        "filas": 11,
+        "columnas": 7,
+        "ancho_dxa": 8788
+      },
+      {
+        "orden": 156,
+        "tipo": "párrafo",
+        "indice": 139,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 157,
+        "tipo": "párrafo",
+        "indice": 140,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Firma del participante: ______________________________"
+      },
+      {
+        "orden": 158,
+        "tipo": "párrafo",
+        "indice": 141,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": ""
+      },
+      {
+        "orden": 159,
+        "tipo": "párrafo",
+        "indice": 142,
+        "página": 14,
+        "rol": "Instrumento 3: cuestionario A (AP/UP) y módulo B (PU/PE)",
+        "texto_inicio": "Firma del encuestador (Bach. José Luis Quispe León, Tesista): ____________________________"
+      }
+    ]
+  },
+  "geometria": {
+    "seccion_1_portrait": {
+      "papel_dxa": [
+        11906,
+        16838
+      ],
+      "margenes_cm": {
+        "superior": 2.5,
+        "inferior": 2.5,
+        "izquierdo": 3.0,
+        "derecho": 2.5
+      },
+      "ancho_util_dxa": 8788,
+      "contiene": "P0 a P80, T0 a T2"
+    },
+    "seccion_2_landscape": {
+      "papel_dxa": [
+        16838,
+        11906
+      ],
+      "margenes_cm": {
+        "superior": 2.5,
+        "inferior": 2.5,
+        "izquierdo": 2.5,
+        "derecho": 2.5
+      },
+      "ancho_util_dxa": 14004,
+      "contiene": "P81 a P84, T3 y T4"
+    },
+    "seccion_3_portrait": {
+      "papel_dxa": [
+        11906,
+        16838
+      ],
+      "margenes_cm": {
+        "superior": 2.5,
+        "inferior": 2.5,
+        "izquierdo": 3.0,
+        "derecho": 2.5
+      },
+      "ancho_util_dxa": 8788,
+      "contiene": "P85 a P142, T5 a T15"
+    },
+    "rejilla": "T0, T1 y T5 a T15 llevan bordes directos completos (top, left, bottom, right, insideH, insideV en single). T2 depende del estilo Tablaconcuadrícula. T3 y T4 usan solo tres líneas horizontales.",
+    "filas_no_fragmentables": "T0, T1 y T5 a T15 tienen cantSplit en todas las filas. T2 no tiene cantSplit ni tblHeader.",
+    "alturas_de_escritura": "T6 y T7 con filas de 620 twips; T9, T10 y T11 con 430 twips; el resto automático.",
+    "margenes_de_celda": "T5 a T13 entre 30 y 40 twips verticales y 50 a 80 horizontales; T14 y T15 con 40 y 80."
+  },
+  "tipografia": {
+    "estilo_normal": "Times New Roman 12 pt (w:sz 24)",
+    "cuerpo_del_expediente": "10 pt en carta, instrucciones y campos; 9,5 pt en criterios; títulos de instrumento 12 pt negrita; rótulos de sección 11 pt negrita",
+    "tablas": "T14 y T15 a 10 pt; T2 a 9,5 pt; T0, T1 y T5 a T13 a 9,5 o 10 pt según tabla",
+    "interlineado": "mezclado: 1,15 en la carta y en varios párrafos por docDefaults (line 276), 1,5 en los instrumentos, 1,05 y 1,0 en tablas y notas",
+    "riesgo_de_fuente": "docDefaults del modelo apunta a la fuente de tema minorHAnsi, que resuelve Cambria; el estilo Normal la sobrescribe con Times New Roman. Cualquier párrafo que no herede de Normal puede caer en Cambria.",
+    "raya_u2014": "0 ocurrencias en el modelo; 2 en cada compañero 01 y 02 y 5 en cada cuestionario",
+    "codigos_dec_impresos": "0 en el modelo; DEC-020 en los compañeros 01 y 02; DEC-019 y DEC-016 en los cuestionarios"
+  },
+  "reactivos": {
+    "modalidad_A": {
+      "aplicacion": "pretest y postest, mismos ocho reactivos, escala Likert de 1 a 5",
+      "puntuacion": "AP de 4 a 20; UP de 4 a 20",
+      "items": [
+        [
+          "AP-01",
+          "El procedimiento para registrar los movimientos diarios de vacunas se realiza de forma ágil."
+        ],
+        [
+          "AP-02",
+          "El trámite para emitir comprobantes de salida y vales de entrega se efectúa sin demoras innecesarias."
+        ],
+        [
+          "AP-03",
+          "El procedimiento utilizado facilita conciliar los saldos de vacunas entre el centro de acopio y los establecimientos de salud."
+        ],
+        [
+          "AP-04",
+          "El tiempo destinado a gestionar los movimientos de vacunas es compatible con mis demás actividades laborales."
+        ],
+        [
+          "UP-01",
+          "El procedimiento de registro permite disponer oportunamente de información actualizada sobre los saldos de vacunas."
+        ],
+        [
+          "UP-02",
+          "El procedimiento de emisión de comprobantes facilita la asignación correcta de los biológicos solicitados."
+        ],
+        [
+          "UP-03",
+          "El procedimiento de conciliación facilita identificar y sustentar documentalmente las diferencias entre las cantidades programadas y entregadas."
+        ],
+        [
+          "UP-04",
+          "El procedimiento de gestión facilita el seguimiento oportuno de las existencias de vacunas en los establecimientos de salud."
+        ]
+      ]
+    },
+    "modalidad_B": {
+      "aplicacion": "solo postest, separada, sin suma conjunta con A",
+      "puntuacion": "PU de 4 a 20; PE de 4 a 20; no aditiva a la variable dependiente",
+      "items": [
+        [
+          "PU-01",
+          "Utilizar el sistema SIVAC agiliza notablemente el registro de entradas, salidas y transferencias de dosis de vacunas en mi centro."
+        ],
+        [
+          "PU-02",
+          "SIVAC me permite consultar de manera inmediata y precisa los saldos de existencias por lote en cualquier momento que lo requiera."
+        ],
+        [
+          "PU-03",
+          "La generación automática de vales oficiales en formato PDF en SIVAC facilita enormemente el despacho hacia los establecimientos de salud."
+        ],
+        [
+          "PU-04",
+          "En conjunto, SIVAC incrementa mi productividad y mejora significativamente el control de la cadena de frío en mi jurisdicción."
+        ],
+        [
+          "PE-01",
+          "La interfaz gráfica de SIVAC es clara, intuitiva, limpia y sus botones y opciones de navegación son fácilmente comprensibles."
+        ],
+        [
+          "PE-02",
+          "Aprender a operar los módulos de movimientos, lotes y reportes de SIVAC fue sencillo y demandó poco tiempo de capacitación."
+        ],
+        [
+          "PE-03",
+          "Los mensajes de confirmación, validación de stock y advertencias que emite el sistema SIVAC son claros y orientan mis acciones."
+        ],
+        [
+          "PE-04",
+          "Me resulta fácil lograr que SIVAC ejecute con exactitud las tareas operativas que necesito realizar en mi jornada de trabajo."
+        ]
+      ]
+    },
+    "divergencia_literal": "Los cuatro DOCX compañeros y el markdown salidas/instrumentos/EXPEDIENTE_INSTRUMENTOS_SIVAC_DEC007.md usan una redacción larga distinta para los mismos códigos AP-01 a UP-04. Modelo rector: El procedimiento para registrar los movimientos diarios de vacunas se realiza de forma ágil. Compañero A pretest: El procedimiento actual para asentar los movimientos diarios y cierres de mes es ágil y no demanda un esfuerzo mental o físico excesivo. Ambas versiones son incompatibles entre sí y no deben mezclarse en un mismo paquete."
+  },
+  "campos_fichas": {
+    "Ficha_01_T5": [
+      "Código del operador evaluado",
+      "Rol institucional",
+      "Centro de acopio o sede / red o microred",
+      "Momento de medición",
+      "Fecha de la observación",
+      "Evaluador principal"
+    ],
+    "Ficha_01_T6_T7": [
+      "N.° y código",
+      "Tarea estandarizada",
+      "Hora de inicio",
+      "Hora de fin",
+      "Tiempo neto (min:s)",
+      "Tiempo (min decimales)",
+      "Incidencias"
+    ],
+    "Ficha_01_cierre": [
+      "Mediana de los tres ensayos",
+      "Promedio descriptivo"
+    ],
+    "Ficha_02_T8": [
+      "Código del operador auditado",
+      "Centro de acopio provincial o microred",
+      "Unidad de registro documental",
+      "Unidad de análisis para el contraste estadístico pretest-postest",
+      "Documentos fuente consultados",
+      "Momento de medición",
+      "Ventana de auditoría",
+      "Fecha de ejecución de la auditoría",
+      "Auditor principal"
+    ],
+    "Ficha_02_T9": [
+      "N.°",
+      "Vacuna o insumo auditado",
+      "Lote",
+      "Cantidad",
+      "Veredicto (1 = conforme, 0 = no conforme)",
+      "Tipo de discrepancia o causa raíz"
+    ],
+    "Ficha_02_T9_cierre": [
+      "Total de registros evaluados",
+      "Registros conformes",
+      "Registros con discrepancia"
+    ],
+    "Ficha_02_T10": [
+      "N.°",
+      "Vacuna o biológico",
+      "N.° de documento",
+      "Cantidad programada",
+      "Cantidad entregada",
+      "Diferencia"
+    ],
+    "Ficha_02_T11": [
+      "N.°",
+      "Justificación formal acreditada",
+      "Veredicto (1 = concordante, 0 = no concordante)",
+      "Causa raíz del desfase"
+    ],
+    "Cuestionario_T13": [
+      "Código de participante asignado",
+      "Centro de acopio / red / microred",
+      "Provincia de desempeño",
+      "Condición laboral actual",
+      "Profesión / cargo operativo",
+      "Tiempo de experiencia en red de frío",
+      "Fecha de aplicación"
+    ],
+    "Cuestionario_A": [
+      "Momento de aplicación (Pretest / Postest), marcado por el evaluador",
+      "Ocho casillas por reactivo",
+      "Firma del participante",
+      "Firma del encuestador"
+    ],
+    "Cuestionario_B": [
+      "Código TRAB",
+      "Fecha de aplicación postest",
+      "Ocho casillas por reactivo",
+      "Firma del participante",
+      "Firma del encuestador"
+    ]
+  },
+  "paquete_campo": {
+    "criterio_de_composicion": "Cada trabajador recibe un ejemplar individual en blanco por cada aplicación. Las tablas consolidadas de 14 filas de los compañeros 01 y 02 no son fichas individuales: son hojas de vaciado del investigador y no deben imprimirse dentro del paquete del trabajador.",
+    "paginas_por_trabajador": 15,
+    "paginas_totales_14": 210,
+    "composicion": [
+      {
+        "orden": 1,
+        "documento": "Ficha 01 cronométrica, momento pretest",
+        "paginas": 2,
+        "fuente_rectora": "Instrumento 1, P85-P98, T5, T6 y T7",
+        "quien_llena": "Evaluador con cronómetro, en presencia del trabajador",
+        "unidad": "Tres ensayos de Treg y tres de Tvale por tarea observada",
+        "huecos": "Código TRAB, rol, sede, fecha, seis tiempos y medianas"
+      },
+      {
+        "orden": 2,
+        "documento": "Ficha 02 auditoría documental, momento pretest",
+        "paginas": 3,
+        "fuente_rectora": "Instrumento 2, P99-P119, T8, T9, T10 y T11",
+        "quien_llena": "Investigador sobre kardex, pecosa y hojas de cálculo",
+        "unidad": "Cada registro individual (RSD) y cada entrega programada (CPE) de la ventana de 30 días",
+        "huecos": "Código TRAB, centro, ventana, 40 a 60 filas de registro, conformidad por criterio"
+      },
+      {
+        "orden": 3,
+        "documento": "Cuestionario Modalidad A, momento pretest",
+        "paginas": 2,
+        "fuente_rectora": "Instrumento 3, P120-P135, T12, T13 y T14",
+        "quien_llena": "El trabajador, con acompañamiento",
+        "unidad": "Ocho reactivos AP y UP con la redacción del modelo rector",
+        "huecos": "Datos del participante, ocho marcas Likert, firmas"
+      },
+      {
+        "orden": 4,
+        "documento": "Ficha 01 cronométrica, momento postest",
+        "paginas": 2,
+        "fuente_rectora": "Instrumento 1, misma estructura, casilla de momento en postest",
+        "quien_llena": "Evaluador con cronómetro",
+        "unidad": "Tres ensayos por tarea sobre SIVAC",
+        "huecos": "Idénticos al orden 1"
+      },
+      {
+        "orden": 5,
+        "documento": "Ficha 02 auditoría documental, momento postest",
+        "paginas": 3,
+        "fuente_rectora": "Instrumento 2, misma estructura, fuentes digitales",
+        "quien_llena": "Investigador sobre módulo de movimientos, vales electrónicos y registro de auditoría",
+        "unidad": "Misma ventana de 30 días ya cerrada",
+        "huecos": "Idénticos al orden 2"
+      },
+      {
+        "orden": 6,
+        "documento": "Cuestionario Modalidad A, momento postest",
+        "paginas": 2,
+        "fuente_rectora": "Instrumento 3, T14 con los mismos ocho reactivos",
+        "quien_llena": "El trabajador",
+        "unidad": "Ocho reactivos idénticos al pretest para permitir el contraste por pares",
+        "huecos": "Idénticos al orden 3"
+      },
+      {
+        "orden": 7,
+        "documento": "Cuestionario Modalidad B, solo postest",
+        "paginas": 1,
+        "fuente_rectora": "Instrumento 3, T15 del modelo rector",
+        "quien_llena": "El trabajador, después de operar SIVAC",
+        "unidad": "Ocho reactivos PU y PE, sección independiente y no aditiva a la Modalidad A",
+        "huecos": "Código TRAB, fecha y ocho marcas Likert"
+      }
+    ],
+    "nota_sobre_el_orden": "Los órdenes 1 a 3 se aplican en la fase pretest y los órdenes 4 a 7 en la fase postest. Nunca se entregan simultáneamente el pretest y el postest al mismo trabajador, porque la Modalidad A comparte reactivos y se contaminaría la línea base."
+  },
+  "fichas_del_investigador": [
+    {
+      "documento": "Hoja de vaciado consolidada de Treg y Tvale",
+      "origen": "Compañero 01, tabla de 15 por 7",
+      "filas": 14,
+      "columnas": [
+        "N.° trabajador",
+        "Código censal",
+        "Treg pretest",
+        "Treg postest",
+        "Tvale pretest",
+        "Tvale postest",
+        "Observación"
+      ],
+      "uso": "Traslado de las medianas individuales a una sola hoja para el contraste de Wilcoxon"
+    },
+    {
+      "documento": "Hoja de vaciado consolidada de RSD y CPE",
+      "origen": "Compañero 02, tabla de 15 por 7",
+      "filas": 14,
+      "columnas": [
+        "N.° trabajador",
+        "Código censal",
+        "RSD pretest",
+        "RSD postest",
+        "CPE pretest",
+        "CPE postest",
+        "Conformidad kardex"
+      ],
+      "uso": "Traslado de los porcentajes individuales por trabajador"
+    },
+    {
+      "documento": "Matriz de captura vacía",
+      "origen": "salidas/instrumentos/MATRIZ_CAPTURA_INSTRUMENTOS_VACIA.xlsx",
+      "hojas": [
+        "Pretest_Postest_Vacio",
+        "Juicio_Expertos_Fany2024"
+      ],
+      "uso": "Digitación y control de rangos antes del análisis"
+    },
+    {
+      "documento": "Protocolo de cronometraje y criterios de conformidad",
+      "origen": "Instrumento 1 e Instrumento 2 del modelo rector",
+      "uso": "Guion de campo: qué se cronometra, cuándo se detiene el reloj y qué se considera conforme"
+    }
+  ],
+  "diferencias_criticas": [
+    {
+      "id": "DC-01",
+      "severidad": "bloqueante",
+      "hallazgo": "No existe una copia de la Modalidad A para el postest. El compañero rotulado como Modalidad A solo sirve para el pretest y su encabezado lo declara. Sin una copia postest con los mismos ocho reactivos no hay pares pretest-postest para satisfacción del usuario.",
+      "evidencia": "Título del compañero A: Cuestionario de Satisfacción sobre el Proceso Manual Actual; el modelo rector pide los mismos reactivos en ambos momentos (P129)."
+    },
+    {
+      "id": "DC-02",
+      "severidad": "bloqueante",
+      "hallazgo": "El archivo rotulado como Modalidad B postest no contiene PU ni PE: contiene AP-01 a AP-04 y UP-01 a UP-04 con redacción de SIVAC, es decir una Modalidad A postest mal rotulada. La Modalidad B real solo existe en la tabla T15 del modelo rector.",
+      "evidencia": "Códigos de la primera columna del compañero B y nota al pie que invoca DEC-019."
+    },
+    {
+      "id": "DC-03",
+      "severidad": "alta",
+      "hallazgo": "Dos redacciones incompatibles para los mismos códigos. El modelo rector usa enunciados breves y los cuatro compañeros y el markdown usan enunciados largos de 120 a 160 caracteres, truncados en la vista de tabla.",
+      "evidencia": "AP-01 del modelo frente a AP-01 del compañero A."
+    },
+    {
+      "id": "DC-04",
+      "severidad": "alta",
+      "hallazgo": "Los compañeros no tienen rejilla visible: solo borde superior, inferior y línea bajo el encabezado. En un formulario que se llena a mano las casillas desaparecen al imprimir.",
+      "evidencia": "Bordes directos de la tabla de los cuatro compañeros."
+    },
+    {
+      "id": "DC-05",
+      "severidad": "alta",
+      "hallazgo": "Las columnas de los compañeros miden 1062 o 1214 dxa, estrechas para el texto, lo que produce cortes palabra por palabra y de dos a tres páginas por formulario.",
+      "evidencia": "Rejilla de los compañeros y paginación exportada."
+    },
+    {
+      "id": "DC-06",
+      "severidad": "alta",
+      "hallazgo": "Tres geometrías de margen distintas: el modelo usa 3,0 y 2,5; los compañeros 3,5 y 3,5 por 2,5 y 2,5; la regla canónica pide 3,0 y 2,5.",
+      "evidencia": "w:pgMar del modelo y de los compañeros."
+    },
+    {
+      "id": "DC-07",
+      "severidad": "media",
+      "hallazgo": "La tabla T2 de la matriz de validación mide 11057 dxa con sangría negativa de menos 1168 dxa y desborda el área imprimible de 8788 dxa hacia el margen de empastado.",
+      "evidencia": "w:tblW, w:tblInd y w:tblGrid de T2."
+    },
+    {
+      "id": "DC-08",
+      "severidad": "media",
+      "hallazgo": "Las matrices de auditoría T9, T10 y T11 tienen seis filas de ejemplo para un corpus declarado de 40 a 60 registros.",
+      "evidencia": "Número de filas frente al texto de T8."
+    },
+    {
+      "id": "DC-09",
+      "severidad": "media",
+      "hallazgo": "Los compañeros y el markdown imprimen códigos internos de decisión y usan raya eme, ambos prohibidos en material que recibe el trabajador.",
+      "evidencia": "DEC-020, DEC-019 y DEC-016 en las notas al pie; dos a cinco ocurrencias de U+2014."
+    },
+    {
+      "id": "DC-10",
+      "severidad": "media",
+      "hallazgo": "Interlineado mezclado dentro del modelo: 1,15 heredado de docDefaults, 1,5 en los instrumentos y 1,0 en tablas y notas.",
+      "evidencia": "w:spacing de docDefaults y de los párrafos P29 a P138."
+    },
+    {
+      "id": "DC-11",
+      "severidad": "baja",
+      "hallazgo": "docDefaults apunta a la fuente de tema minorHAnsi, que resuelve Cambria; solo el estilo Normal impone Times New Roman. Un párrafo que no herede de Normal puede salir en Cambria.",
+      "evidencia": "w:rFonts con asciiTheme en docDefaults."
+    },
+    {
+      "id": "DC-12",
+      "severidad": "baja",
+      "hallazgo": "El T13 del cuestionario deja vacía la celda de centro de acopio, red o microred, mientras T5 y T8 sí piden el dato.",
+      "evidencia": "Segunda celda vacía de la fila correspondiente en T13."
+    }
+  ],
+  "funciones_canonicas": [
+    {
+      "funcion": "configurar_geometria_tabla",
+      "firma": "configurar_geometria_tabla(table, total_width_dxa=8788, col_widths_dxa=None, align='center')",
+      "uso": "Fijar ancho total y rejilla sin desbordes"
+    },
+    {
+      "funcion": "aplicar_bordes_tabla",
+      "firma": "aplicar_bordes_tabla(table, modo)",
+      "uso": "Rejilla visible completa para formularios, o tres líneas para tablas de análisis"
+    },
+    {
+      "funcion": "anexar_filas_tabla",
+      "firma": "anexar_filas_tabla(table, valores, altura_twips=None, repetir_encabezado=False)",
+      "uso": "Crear las 40 a 60 filas de las matrices de auditoría"
+    },
+    {
+      "funcion": "configurar_celdas_no_fragmentables",
+      "firma": "configurar_celdas_no_fragmentables(table)",
+      "uso": "Evitar filas partidas entre páginas"
+    },
+    {
+      "funcion": "normalizar_margenes_secciones",
+      "firma": "normalizar_margenes_secciones(documento, izquierdo_cm=3.0, derecho_cm=2.5, superior_cm=2.5, inferior_cm=2.5)",
+      "uso": "Unificar la geometría en 3,0 y 2,5"
+    },
+    {
+      "funcion": "exportar_docx_a_pdf",
+      "firma": "exportar_docx_a_pdf(ruta_docx, ruta_pdf=None, actualizar_campos=False, calidad_imagen=True)",
+      "uso": "Generar el PDF de cada paquete y el instructivo"
+    },
+    {
+      "funcion": "auditar_docx_openxml",
+      "firma": "auditar_docx_openxml(ruta_docx)",
+      "uso": "Verificar rejilla, flotación y desbordes antes de entregar"
+    },
+    {
+      "funcion": "renderizar_paginas_pdf",
+      "firma": "renderizar_paginas_pdf(ruta_pdf, dir_salida, dpi=110)",
+      "uso": "Revisión visual página por página"
+    }
+  ],
+  "advertencia_sobre_funciones": "construir_docx_openxml solo admite vertical, columnas iguales y tablas de tres líneas, y construir_pdf_nativo compone por líneas sin ajuste de texto. Ninguna de las dos sirve para formularios con rejilla y texto largo: los paquetes deben armarse con python-docx y las funciones de geometría del motor, y convertirse a PDF con Word.",
+  "metodo_pdf": {
+    "herramienta": "exportar_docx_a_pdf sobre Word instalado (ExportAsFixedFormat)",
+    "estado": "verificado en esta inspección",
+    "alternativas_descartadas": [
+      "LibreOffice no instalado",
+      "reportlab no instalado",
+      "constructor nativo de PDF sin ajuste de línea"
+    ]
+  },
+  "pendientes_verificar": [
+    "[VERIFICAR] Confirmar con el tesista qué redacción de los ocho reactivos es la definitiva: la breve del modelo rector o la larga de los compañeros.",
+    "[VERIFICAR] Autorizar la creación de la copia faltante de la Modalidad A postest, que hoy no existe en ningún archivo.",
+    "[VERIFICAR] Decidir si el tamaño de las matrices de auditoría se fija en 40, 50 o 60 filas por ventana, con la salvedad de que el corpus real depende de los registros disponibles.",
+    "[VERIFICAR] Precisar la fecha de inicio de la ventana de 30 días del pretest, dato que no puede fijarse sin el calendario del tesista.",
+    "[VERIFICAR] Confirmar si el paquete impreso debe incluir el consentimiento informado, que hoy no figura en el expediente rector.",
+    "[VERIFICAR] Confirmar si el instructivo en PDF debe llevar el nombre y el sello de la escuela profesional o solo el título de la tesis."
+  ]
+}

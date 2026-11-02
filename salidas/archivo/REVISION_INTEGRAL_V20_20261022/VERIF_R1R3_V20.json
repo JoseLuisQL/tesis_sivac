@@ -1,0 +1,178 @@
+{
+  "parrafos": 828,
+  "diferencias_texto": [
+    713,
+    727,
+    777
+  ],
+  "diff_detalle": [
+    {
+      "idx": 713,
+      "antes": "En lo concerniente a la tercera dimensión, Satisfacción del usuario evaluada bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), se evidenció una elevación estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos, +119.47",
+      "despues": "En lo concerniente a la tercera dimensión, Satisfacción del usuario evaluada bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), se evidenció una elevación estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos, +119.47"
+    },
+    {
+      "idx": 727,
+      "antes": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131-142. https://doi.org/10.1177/0013164485451012",
+      "despues": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012"
+    },
+    {
+      "idx": 777,
+      "antes": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during",
+      "despues": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during"
+    }
+  ],
+  "venkatesh_menciones": [
+    713,
+    776
+  ],
+  "aiken": {
+    "guion_medio": 1,
+    "guion_largo": 0,
+    "texto": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012"
+  },
+  "wasswa": {
+    "ocurrencias_doi": 1,
+    "hyperlinks": 1,
+    "texto": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6.https://doi.org/10.1186/s40545-023-00517-4"
+  },
+  "wasswa_rel": [
+    {
+      "rid": "rId101",
+      "url": "https://doi.org/10.1186/s40545-023-00517-4",
+      "externo": true
+    }
+  ],
+  "rotulos": {
+    "seq": 103,
+    "numeral_negrita_ok": 103,
+    "malas": []
+  },
+  "encabezado_refs": [
+    725
+  ],
+  "refs_n": 51,
+  "huerfanas": [
+    {
+      "idx": 728,
+      "autor": "Alvarez",
+      "anio": "2023"
+    },
+    {
+      "idx": 729,
+      "autor": "Arisholm",
+      "anio": "2007"
+    },
+    {
+      "idx": 733,
+      "autor": "Brooks",
+      "anio": "2024"
+    },
+    {
+      "idx": 735,
+      "autor": "Chekol",
+      "anio": "2023"
+    },
+    {
+      "idx": 739,
+      "autor": "Dang",
+      "anio": "2024"
+    },
+    {
+      "idx": 741,
+      "autor": "De",
+      "anio": "2010"
+    },
+    {
+      "idx": 742,
+      "autor": "Dolan",
+      "anio": "2020"
+    },
+    {
+      "idx": 743,
+      "autor": "Ergetie",
+      "anio": "2023"
+    },
+    {
+      "idx": 747,
+      "autor": "Gilbert",
+      "anio": "2020"
+    },
+    {
+      "idx": 748,
+      "autor": "Gutiérrez-Aguado",
+      "anio": "2024"
+    },
+    {
+      "idx": 749,
+      "autor": "Hernández-Sampieri",
+      "anio": "2014"
+    },
+    {
+      "idx": 752,
+      "autor": "Hussain",
+      "anio": "2025"
+    },
+    {
+      "idx": 753,
+      "autor": "Inarotul",
+      "anio": "2025"
+    },
+    {
+      "idx": 755,
+      "autor": "Kigenza",
+      "anio": "2023"
+    },
+    {
+      "idx": 758,
+      "autor": "Luo",
+      "anio": "2024"
+    },
+    {
+      "idx": 759,
+      "autor": "Mamani-Pari",
+      "anio": "2026"
+    },
+    {
+      "idx": 761,
+      "autor": "Mekonen",
+      "anio": "2024"
+    },
+    {
+      "idx": 763,
+      "autor": "Moumane",
+      "anio": "2024"
+    },
+    {
+      "idx": 764,
+      "autor": "Ndlovu",
+      "anio": "2022"
+    },
+    {
+      "idx": 765,
+      "autor": "Oliveira",
+      "anio": "2020"
+    },
+    {
+      "idx": 773,
+      "autor": "Shen",
+      "anio": "2024"
+    },
+    {
+      "idx": 776,
+      "autor": "Venkatesh",
+      "anio": "2003"
+    },
+    {
+      "idx": 777,
+      "autor": "Wasswa",
+      "anio": "2023"
+    }
+  ],
+  "refs_unicas": 28,
+  "omml": 13,
+  "seq_instr": 103,
+  "toc_instr": 3,
+  "tablas": 59,
+  "urls_externas": 39
+}

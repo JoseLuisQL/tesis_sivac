@@ -1,0 +1,40 @@
+##### P145 (len 3213) corte 1646
+...ray tupuyqa wakichikurqa Shapiro-Wilk hinallataq Wilcoxon yupaywan (α = 0.05) kimsa hatun t’aqapi tikraykunata tupunapaq: oportunidad de procesamiento (qillqay pacha hinallataq vale lluqsichiy pacha), consistencia documental (mana pantayniyuq qillqakuna hinallataq tupachisqa hampikuna), hinallataq satisfacción del usuario (llamk’aqkunapa chaskikuyninwan allin yanapakuy qawariynin), tukupay yupaykunaqa post-test wichq’aypim suyachkan [Pendiente]. 
+   >>>CORTE<<<
+web llikapa yanapayninwan imaynatas sapakilla hampi churanakuna apaykachay allinchakusqanta tupuy, Dirección de Salud Apurímac II nisqapi inmunizaciones llamk’aqkunapi. Kay t’aqwiyqa rurakurqa yupay yachayman chayanapaq (cuantitativo), taripasqa kawsaymanta (aplicada), sut’inchasqa (explicativo), ch’ulla kuskachasqa qutupi qallariy qawariywan tukupay tupuywan wakichisqa (GE: O₁ – X – O₂). Llapan llamk’aqkunam karqanku chunka tawayuq (N = n = 14) ...
+
+##### P370 (len 1223) corte 953
+...ation (SPA), el servidor de aplicaciones Express REST API y la capa de datos y archivos en PostgreSQL y almacenamiento persistente. desacoplado en capas lógicas intercomunicadas mediante una Interfaz de Programación de Aplicaciones basada en el estilo arquitectural RESTful (De la Torre et al., 2010; Ruiz Barea, 2023). Este enfoque garantiza la independencia total entre la interfaz de usuario en el cliente y los servicios de dominio del servidor. 
+   >>>CORTE<<<
+En la Figura 13 se ilustra la arquitectura de subsistemas del sistema, organizada en tres bloques cardinales: el cliente Single Page Application (SPA), el servidor de aplicaciones Express REST API y la capa de datos y archivos en PostgreSQL y almacenamiento persistente....
+
+##### P712 (len 1643) corte 1127
+...rgas (2022) en redes de salud de Lima, quienes identificaron que el 84.5% de los errores documentales en vacunas obedecen a fallas aritméticas manuales en el kardex físico., el incremento del porcentaje de registros sin discrepancias (RSD) de 63.57% a 96.00% (+51.01%) y de la concordancia programada vs entregada (CPE) de 67.61% a 95.39% (+41.10%) revela una transformación cualitativa en la exactitud contable de los kardex (t = 26.63 y t = 28.15; 
+   >>>CORTE<<<
+p < .001; d > 7.0). Este logro se fundamenta en los controles algorítmicos implementados en SIVAC: la regla FEFO obligatoria que impide despachar biológicos de vencimiento tardío teniendo existencias próximas a caducar, y el bloqueo estricto de transacciones con saldo insuficiente. Estos hallazgos concuerdan con la investigación de Rojas y Vargas (2022) en redes de salud de Lima, quienes identificaron que el 84.5% de los errores documentales en v...
+
+##### P721 (len 704) corte 406
+...Primera (Gestión Institucional y Despliegue): A la Dirección de Salud Apurímac II y a la Coordinación Regional de Inmunizaciones, formalizar la adopción oficial del sistema web SIVAC mediante resolución directoral e integrarlo formalmente como la plataforma informática estándar de control de biológicos en los diecinueve (19) centros de acopio registrados en el sistema y en las microredes territoriales. 
+   >>>CORTE<<<
+de Salud Apurímac II y a la Coordinación Regional de Inmunizaciones, formalizar la adopción oficial del sistema web SIVAC mediante resolución directoral e integrarlo formalmente como la plataforma informática estándar de control de biológicos en los 19 centros de acopio y microredes territoriales....
+
+##### P800 (len 816) corte 439
+...El código fuente íntegro del sistema web SIVAC se encuentra alojado bajo control de versiones Git en el repositorio institucional 'syncova', estructurado en una arquitectura cliente-servidor desacoplada con backend Node.js/Express, ORM Prisma, base de datos relacional PostgreSQL 15 y frontend web interactivo en React. En la Tabla A6.1 se sintetizan las historias de usuario que guiaron las cinco iteraciones de Extreme Programming (XP). 
+   >>>CORTE<<<
+alojado bajo control de versiones Git en el repositorio institucional 'syncova', estructurado en una arquitectura cliente-servidor desacoplada con backend Node.js/Express, ORM Prisma, base de datos relacional PostgreSQL 15 y frontend web interactivo en React. En la Tabla 51 se sintetizan las historias de usuario que guiaron las cuatro iteraciones de Extreme Programming (XP)....
+
+##### P284 (len 3129) corte 1123
+...dor Utilidad percibida (UP), el cual operacionaliza directamente la subescala de utilidad en el desempeño laboral, midiendo en qué medida el operador sanitario juzga que el sistema web SIVAC mejora el control de los movimientos mensuales de vacunas, acelera la emisión de comprobantes, erradica los descuadres de kardex y favorece la disponibilidad biológica institucional. Esta fundamentación concuerda con los hallazgos empíricos de Hussain et al. 
+   >>>CORTE<<<
+(2025, p. 8), quienes comprobaron en personal de enfermería de establecimientos públicos que la facilidad de uso percibida actúa como predictor directo principal de la aceptación del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad percibida media dicha relación (beta = 0.23, p < 0.001), confirmando que mitigar la fatiga operativa y agilizar el procesamiento conduce de manera directa a elevar la satisfacción del usuario sanitario. i...
+
+##### P663 (len 2596) corte 1220
+...ción y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO reduce significativamente las inconsistencias documentales y las discrepancias entre existencias físicas y registros. 
+   >>>CORTE<<<
+Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7., la implantación del sistema SIVAC propició una elevación radical en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8...
+
+##### P670 (len 2288) corte 1164
+... (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 36.21 puntos (DE = 3.09; Mdn = 36.50), lo que supone una elevación global del +112.13%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones. 
+   >>>CORTE<<<
+evaluación mediante el modelo TAM evidenció un cambio cualitativo profundo en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 17.71 puntos (DE = 1.64; Mdn = 17.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual masivo del +119.47% (diferencia media de +9.64 puntos). En la subescala de U...
+

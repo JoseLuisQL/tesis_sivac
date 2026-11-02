@@ -1,0 +1,406 @@
+{
+ "parrafos": [
+  {
+   "tipo": "replace",
+   "v19": [
+    "Figura 49 Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC dirigida a los operadores de inmunizaciones.\t141",
+    "Figura 50 Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central.\t142",
+    "Figura 51 Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales.\t142",
+    "Figura 52 Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud.\t143"
+   ],
+   "v20": [
+    "Figura 49 Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC dirigida a los operadores de inmunizaciones.\t142",
+    "Figura 50 Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central.\t143",
+    "Figura 51 Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales.\t143",
+    "Figura 52 Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud.\t144"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Tabla 44 Matriz de consistencia metodológica del estudio SIVAC\t127",
+    "Tabla 45 Matriz de operacionalización de las variables de investigación\t131",
+    "Tabla 46 Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos\t136",
+    "Tabla 47 Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes\t136",
+    "Tabla 48 Instrumento N.° 03: Cuestionario TAM de Satisfacción del Usuario (Modalidad A)\t137",
+    "Tabla 49 Matriz de datos de prueba en el Pretest (Gestión manual basal, n = 14)\t138",
+    "Tabla 50 Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)\t139",
+    "Tabla 51 Matriz de Historias de Usuario desarrolladas e implementadas en SIVAC bajo XP\t140"
+   ],
+   "v20": [
+    "Tabla 44 Matriz de consistencia metodológica del estudio SIVAC\t128",
+    "Tabla 45 Matriz de operacionalización de las variables de investigación\t132",
+    "Tabla 46 Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos\t137",
+    "Tabla 47 Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes\t137",
+    "Tabla 48 Instrumento N.° 03: Cuestionario TAM de Satisfacción del Usuario (Modalidad A)\t138",
+    "Tabla 49 Matriz de datos de prueba en el Pretest (Gestión manual basal, n = 14)\t139",
+    "Tabla 50 Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)\t140",
+    "Tabla 51 Matriz de Historias de Usuario desarrolladas e implementadas en SIVAC bajo XP\t141"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Esta investigación tuvo como finalidad determinar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El estudio se desarrolló bajo un enfoque cuantitativo, tipo aplicada y nivel explicativo, estructurando una evaluación de diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂) sobre una población censal conformada por los 14 trabajadores responsables de la cadena de frío en los trece (13) centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14), de un universo de diecinueve (19) centros de acopio registrados en el sistema. Durante la ejecución ingenieril, se desarrolló e implementó el sistema web SIVAC bajo la metodología ágil Extreme Programming (XP) a lo largo de cinco iteraciones (71 puntos de historia y 15 historias de usuario) y se verificó su calidad técnica conforme al estándar internacional ISO/IEC 25010:2023. Para la medición empírica se estructuraron fichas de observación cronométrica, guías de cotejo documental bajo la NTS N.° 196-MINSA/DGIESP-2022 y un cuestionario basado en el Modelo de Aceptación Tecnológica (TAM), los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA, conforme al procedimiento descrito en el Capítulo IV. El protocolo de contrastación inferencial se diseñó mediante la prueba de normalidad de Shapiro-Wilk y la prueba de rangos con signo de Wilcoxon para muestras relacionadas (α = 0.05) con ajuste de Holm-Bonferroni, con el propósito de determinar los cambios asociados a la aplicación del sistema en las tres dimensiones oficiales: oportunidad de procesamiento (tiempo de registro y emisión de vales de salida), consistencia documental (porcentaje de registros sin discrepancias y concordancia programada versus entregada) y satisfacción del usuario (aceptación del proceso y utilidad percibida), cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest."
+   ],
+   "v20": [
+    "Esta investigación tuvo como finalidad determinar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El estudio se desarrolló bajo un enfoque cuantitativo, tipo aplicada y nivel explicativo, estructurando una evaluación de diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂) sobre una población censal conformada por los 14 trabajadores responsables de la cadena de frío en los trece (13) centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14), de un universo de diecinueve (19) centros de acopio registrados en el sistema. Durante la ejecución ingenieril, se desarrolló e implementó el sistema web SIVAC bajo la metodología ágil Extreme Programming (XP) a lo largo de cinco iteraciones (71 puntos de historia y 15 historias de usuario) y se verificó su calidad técnica conforme al estándar internacional ISO/IEC 25010:2023. Para la medición empírica se estructuraron fichas de observación cronométrica, guías de cotejo documental bajo la NTS N.° 196-MINSA/DGIESP-2022 y un cuestionario basado en el Modelo de Aceptación Tecnológica (TAM), cuyo proceso de validación de contenido por juicio de tres expertos de la EPIS-UNAJMA se describe en el Capítulo IV. El protocolo de contrastación inferencial se diseñó mediante la prueba de normalidad de Shapiro-Wilk y la prueba de rangos con signo de Wilcoxon para muestras relacionadas (α = 0.05) con ajuste de Holm-Bonferroni, con el propósito de determinar los cambios asociados a la aplicación del sistema en las tres dimensiones oficiales: oportunidad de procesamiento (tiempo de registro y emisión de vales de salida), consistencia documental (porcentaje de registros sin discrepancias y concordancia programada versus entregada) y satisfacción del usuario (aceptación del proceso y utilidad percibida), cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "This research aimed to determine the extent to which the application of the “SIVAC” system improves monthly vaccine movement management among immunization healthcare personnel at the Apurímac II Health Directorate. The study was conducted under a quantitative approach, applied type, and explanatory level, structuring a pre-experimental evaluation design with a single-group pretest and posttest (GE: O₁ – X – O₂) across a census population of the 14 workers responsible for the cold chain across the thirteen (13) storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14), out of a universe of nineteen (19) centers registered in the SIVAC system. During the engineering phase, the SIVAC web system was developed and implemented under the Extreme Programming (XP) agile methodology across five iterations (71 story points and 15 user stories), and its technical quality was verified under the international ISO/IEC 25010:2023 standard. For empirical measurement, chronometric observation sheets, documentary auditing checklists under NTS No. 196-MINSA/DGIESP-2022, and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, all of which will undergo content validation by a panel of three expert judges from EPIS-UNAJMA, following the procedure described in Chapter IV. The inferential hypothesis testing protocol was structured using the Shapiro-Wilk normality test and the Wilcoxon signed-rank test for related samples (α = 0.05) with Holm-Bonferroni adjustment to determine the changes associated with the system's application across the three official dimensions: processing timeliness (recording and outbound voucher issuance times), documentary consistency (percentage of discrepancy-free records and scheduled-versus-delivered concordance), and user satisfaction (process acceptance and perceived usefulness), whose definitive field statistics remain under posttest consolidation."
+   ],
+   "v20": [
+    "This research aimed to determine the extent to which the application of the “SIVAC” system improves monthly vaccine movement management among immunization healthcare personnel at the Apurímac II Health Directorate. The study was conducted under a quantitative approach, applied type, and explanatory level, structuring a pre-experimental evaluation design with a single-group pretest and posttest (GE: O₁ – X – O₂) across a census population of the 14 workers responsible for the cold chain across the thirteen (13) storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14), out of a universe of nineteen (19) centers registered in the SIVAC system. During the engineering phase, the SIVAC web system was developed and implemented under the Extreme Programming (XP) agile methodology across five iterations (71 story points and 15 user stories), and its technical quality was verified under the international ISO/IEC 25010:2023 standard. For empirical measurement, chronometric observation sheets, documentary auditing checklists under NTS No. 196-MINSA/DGIESP-2022, and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, whose content validation by a panel of three expert judges from EPIS-UNAJMA is described in Chapter IV. The inferential hypothesis testing protocol was structured using the Shapiro-Wilk normality test and the Wilcoxon signed-rank test for related samples (α = 0.05) with Holm-Bonferroni adjustment to determine the changes associated with the system's application across the three official dimensions: processing timeliness (recording and outbound voucher issuance times), documentary consistency (percentage of discrepancy-free records and scheduled-versus-delivered concordance), and user satisfaction (process acceptance and perceived usefulness), whose definitive field statistics remain under posttest consolidation."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel explicativo, empleando un diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂). Se trabajó con una población censal conformada por la totalidad de los 14 operadores de la cadena de inmunizaciones de la DISA Apurímac II (N = n = 14), integrada por dos operadores del Almacén Especializado de Vacunas (Chanka) de la sede central y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado. Para la recolección de datos empíricos se diseñaron tres instrumentos: una ficha de observación de tiempos cronometrados, una guía de cotejo documental de kardex y vales de salida, y un cuestionario psicométrico en escala Likert, los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme al procedimiento descrito en el Capítulo IV, contemplando la prueba de Shapiro-Wilk para el análisis de normalidad y la prueba de rangos con signo de Wilcoxon (α = 0.05) para la contrastación de hipótesis."
+   ],
+   "v20": [
+    "Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel explicativo, empleando un diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂). Se trabajó con una población censal conformada por la totalidad de los 14 operadores de la cadena de inmunizaciones de la DISA Apurímac II (N = n = 14), integrada por dos operadores del Almacén Especializado de Vacunas (Chanka) de la sede central y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado. Para la recolección de datos empíricos se diseñaron tres instrumentos: una ficha de observación de tiempos cronometrados, una guía de cotejo documental de kardex y vales de salida, y un cuestionario psicométrico en escala Likert, cuyo proceso de validación de contenido por juicio de tres expertos de la EPIS-UNAJMA se describe en el Capítulo IV, contemplando la prueba de Shapiro-Wilk para el análisis de normalidad y la prueba de rangos con signo de Wilcoxon (α = 0.05) para la contrastación de hipótesis."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "En contrapartida, la literatura científica internacional demostró que la adopción de plataformas digitales y sistemas web especializados atenúa de forma sustancial estas deficiencias operativas y documentales. Shen et al. (2024, p. 1), al evaluar la implementación de un sistema digital de gestión de cadena de suministro hospitalaria en China, verificaron que la tasa de roturas de stock se redujo de 0.425% a 0.277% y que la eficiencia operativa global se incrementó de manera significativa gracias al control automatizado de inventarios. Asimismo, Dang et al. (2024), en un estudio longitudinal sobre la transición del registro en papel hacia un sistema nacional de inmunización digital en Vietnam, comprobaron que el tiempo transcurrido hasta la disponibilidad efectiva del dato disminuyó de 43.7 a 0.7 días (reducción del 98%) y que la carga administrativa del personal se redujo en un 38%. Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda, quienes demostraron que la operación de sistemas electrónicos de gestión logística incrementó la exactitud de los inventarios del 25% al 85% y aseguró una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano Balón Morejón (2023, p. xii) acreditó que una aplicación web de inventario vacunal en Ecuador redujo la emisión de reportes de varios días a segundos."
+   ],
+   "v20": [
+    "En contrapartida, la literatura científica internacional demostró que la adopción de plataformas digitales y sistemas web especializados atenúa de forma sustancial estas deficiencias operativas y documentales. Shen et al. (2024, p. 1), al evaluar la implementación de un sistema digital de gestión de cadena de suministro hospitalaria en China, verificaron que la tasa de roturas de stock se redujo de 0.425% a 0.277% y que la eficiencia operativa global se incrementó de manera significativa gracias al control automatizado de inventarios. Asimismo, Dang et al. (2024), en un estudio longitudinal sobre la transición del registro en papel hacia un sistema nacional de inmunización digital en Vietnam, comprobaron que el tiempo transcurrido hasta la disponibilidad efectiva del dato disminuyó de 43.7 a 0.7 días (reducción del 98%) y que la carga administrativa del personal se redujo en un 38%. En el mismo sentido, Kigenza et al. (2023) documentaron en Ruanda mejoras en la exactitud de los inventarios mediante la intervención de gestión de calidad apoyada en el e-LMIS, y Wasswa et al. (2023) documentaron en Uganda el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos durante la respuesta a la COVID-19, mientras que en el contexto sudamericano Balón Morejón (2023, p. xii) acreditó que una aplicación web de inventario vacunal en Ecuador redujo la emisión de reportes de varios días a segundos."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Desde la perspectiva metodológica, el estudio se justificó porque estructuró un diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂) bajo los lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141) y el diseño preexperimental de un solo grupo adoptado por Quispe Tello (2024, p. 36), adaptado a una población censal de 14 operadores especializados (N = n = 14). Asimismo, la investigación diseñó tres instrumentos de medición específicos para evaluar el flujo de movimientos mensuales de vacunas (una ficha de observación de tiempos cronometrados, una guía de cotejo de ocho criterios normativos de integridad documental y un cuestionario psicométrico de satisfacción), estableciendo una distinción rigurosa entre: (a) la validez de contenido, cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación para ambos coeficientes; (b) la confiabilidad por consistencia interna, estimada mediante el coeficiente Alfa de Cronbach por subescala para el cuestionario psicométrico TAM; y (c) la objetividad procedimental y concordancia interevaluador, garantizadas mediante un protocolo estandarizado de observación con disparadores unívocos y el coeficiente Kappa de Cohen para las fichas de tiempos y la guía de cotejo documental."
+   ],
+   "v20": [
+    "Desde la perspectiva metodológica, el estudio se justificó porque estructuró un diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂) bajo los lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141) y el diseño preexperimental de un solo grupo adoptado por Quispe Tello (2024, p. 36), adaptado a una población censal de 14 operadores especializados (N = n = 14). Asimismo, la investigación diseñó tres instrumentos de medición específicos para evaluar el flujo de movimientos mensuales de vacunas (una ficha de observación de tiempos cronometrados, una guía de cotejo de ocho criterios normativos de integridad documental y un cuestionario psicométrico de satisfacción), estableciendo una distinción rigurosa entre: (a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken (Aiken, 1985) y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio; la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38); (b) la confiabilidad por consistencia interna, estimada mediante el coeficiente Alfa de Cronbach por subescala para el cuestionario psicométrico TAM; y (c) la objetividad procedimental y concordancia interevaluador, garantizadas mediante un protocolo estandarizado de observación con disparadores unívocos y el coeficiente Kappa de Cohen para las fichas de tiempos y la guía de cotejo documental."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Wasswa et al. (2023), en su estudio evaluativo titulado “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicado en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de vacunas e insumos sanitarios a escala nacional. La metodología fue cuantitativa, descriptiva y transversal, auditando las transacciones digitales de pedidos, despachos y saldos de almacén ejecutadas en la red pública del Ministerio de Salud de Uganda. Los resultados demostraron que el procesamiento digital de requisiciones y comprobantes de despacho permitió monitorear en tiempo real los lotes distribuidos y mantener una disponibilidad promedio del 90% en 19 hospitales regionales de referencia, reduciendo sustancialmente los tiempos de respuesta frente a los procedimientos manuales. El estudio concluyó que los sistemas web de gestión logística fortalecen la visibilidad de extremo a extremo en la cadena de frío, aseguran la concordancia entre las cantidades solicitadas y las despachadas, y previenen el desabastecimiento de productos biológicos."
+   ],
+   "v20": [
+    "Wasswa et al. (2023), en su revisión titulada “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicada en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de suministros e insumos sanitarios durante la respuesta a la COVID-19 en Uganda. El estudio revisó literatura publicada y no publicada sobre la adopción e implementación del eELMIS durante la pandemia de COVID-19 y describió su operación en la red pública del Ministerio de Salud de Uganda. Los resultados documentaron el procesamiento digital de requisiciones y comprobantes de despacho para los 20 hospitales regionales de referencia, con 96.5% de pedidos atendidos y una tasa agregada de cumplimiento de pedidos del 85.5%, lo que favoreció la visibilidad de los suministros frente a los procedimientos manuales. El estudio concluyó que la disponibilidad de datos oportunos y confiables es esencial para la toma de decisiones y que el eELMIS apoyó la coordinación y la disponibilidad oportuna de suministros durante la respuesta a la COVID-19."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "En la presente investigación, el sistema web SIVAC actúa, en términos metodológicos, como la intervención tecnológica aplicada (estímulo experimental manipulado, formalizado como el factor X), orientada a transformar y optimizar los procesos de control logístico en el personal de inmunizaciones de la Dirección de Salud Apurímac II. Bajo esta delimitación metodológica, Extreme Programming (XP) constituye la metodología de ingeniería empleada para su construcción incremental y colaborativa, mientras que la norma ISO/IEC 25010:2023 constituye el estándar técnico de verificación de calidad del producto software previo y complementario a su evaluación preexperimental en campo. De este modo, se establece con rigor que ni las fases del desarrollo de software bajo XP ni las características de calidad de ISO/IEC 25010 constituyen dimensiones estadísticas de la variable independiente, sino marcos ingenieriles de construcción y aseguramiento de calidad que garantizan la integridad funcional y operativa del artefacto antes de contrastar su efecto sobre la gestión de movimientos mensuales de vacunas."
+   ],
+   "v20": [
+    "En la presente investigación, el sistema web SIVAC actúa, en términos metodológicos, como la intervención tecnológica aplicada (estímulo experimental manipulado, formalizado como el factor X), orientada a transformar y optimizar los procesos de control logístico en el personal de inmunizaciones de la Dirección de Salud Apurímac II. Bajo esta delimitación metodológica, Extreme Programming (XP) constituye la metodología de ingeniería empleada para su construcción incremental y colaborativa, mientras que la norma ISO/IEC 25010:2023 constituye el estándar técnico de verificación de calidad del producto software previo y complementario a su evaluación preexperimental en campo. De este modo, se establece con rigor que ni las fases del desarrollo de software bajo XP ni las características de calidad de ISO/IEC 25010 constituyen dimensiones estadísticas de la variable independiente, sino marcos ingenieriles de construcción y aseguramiento de calidad que sustentan la integridad funcional y operativa del artefacto antes de contrastar su efecto sobre la gestión de movimientos mensuales de vacunas."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Nota. Estructura taxonómica inmutable aprobada en la matriz de operacionalización institucional de la UNAJMA."
+   ],
+   "v20": [
+    "Nota. Dimensiones e indicadores de la variable dependiente, según la matriz de operacionalización de la investigación."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "A continuación, en las Tablas 10 a 24 se documenta de forma exhaustiva el diccionario de datos de las tablas más relevantes del esquema de la base de datos de SIVAC."
+   ],
+   "v20": [
+    "A continuación, en las Tablas 10 a 24 se documenta el diccionario de datos de las tablas más relevantes del esquema de la base de datos de SIVAC."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "La fase de pruebas en Extreme Programming constituye el componente que garantiza la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer)."
+   ],
+   "v20": [
+    "La fase de pruebas en Extreme Programming constituye el componente que sustenta la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer)."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Nota. Cobertura automatizada que garantiza la estabilidad del software ante refactorizaciones o actualizaciones normativas."
+   ],
+   "v20": [
+    "Nota. Cobertura automatizada que sustenta la estabilidad del software ante refactorizaciones o actualizaciones normativas."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las cuatro características de calidad esenciales para sistemas de gestión sanitaria: adecuación funcional, usabilidad, eficiencia de desempeño, y fiabilidad y seguridad. En la Tabla 28 se sintetizan los resultados de la evaluación."
+   ],
+   "v20": [
+    "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las características de calidad presentadas en la Tabla 28: adecuación funcional, usabilidad, eficiencia de desempeño, fiabilidad y seguridad."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "3.3.5. Fase V: Despliegue Físico y Puesta en Producción"
+   ],
+   "v20": [
+    "3.3.5. Despliegue y puesta en operación"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "La investigación se enmarcó en el nivel explicativo de evaluación de intervención tecnológica; no obstante, debido a la naturaleza del diseño preexperimental de un solo grupo sin grupo de control paralelo, el alcance inferencial se orienta a determinar la existencia de cambios estadísticamente significativos asociados a la aplicación del sistema web SIVAC entre el pretest y el postest, reconociendo las amenazas a la validez interna (historia, maduración, efecto de aprendizaje y familiarización tecnológica), las cuales fueron mitigadas mediante ventanas de observación simétricas y protocolos estandarizados. Conforme a Hernández-Sampieri et al. (2014), los estudios explicativos evalúan en qué condiciones se manifiesta el efecto de una intervención sobre las dimensiones del fenómeno estudiado, aportando evidencia empírica cuantitativa sobre la optimización de los procesos operativos en la cadena de frío sanitaria."
+   ],
+   "v20": [
+    "La investigación se enmarcó en el nivel explicativo, orientado a la evaluación de una intervención tecnológica; no obstante, debido a la naturaleza del diseño preexperimental de un solo grupo sin grupo de control paralelo, el alcance inferencial se orienta a determinar la existencia de cambios estadísticamente significativos asociados a la aplicación del sistema web SIVAC entre el pretest y el postest, reconociendo las amenazas a la validez interna (historia, maduración, efecto de aprendizaje y familiarización tecnológica), las cuales fueron mitigadas mediante ventanas de observación simétricas y protocolos estandarizados. Conforme a Hernández-Sampieri et al. (2014), los estudios explicativos evalúan en qué condiciones se manifiesta el efecto de una intervención sobre las dimensiones del fenómeno estudiado, aportando evidencia empírica cuantitativa sobre la optimización de los procesos operativos en la cadena de frío sanitaria."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Para garantizar la validez metodológica interna y neutralizar potenciales sesgos de reactividad, historia o fatiga en las mediciones, se implementó un protocolo temporal simétrico compuesto por cuatro etapas: (a) una ventana basal pretest (O₁) de 30 días calendario; (b) una fase de inducción y capacitación técnica estandarizada de 5 días hábiles sobre los módulos de SIVAC a los 14 operadores; (c) un periodo de estabilización operativa de 10 días calendario en producción asistida previo al inicio del postest, orientado a mitigar el sesgo derivado de la curva inicial de aprendizaje tecnológico; y (d) una ventana postest (O₂) simétrica de 30 días calendario bajo idénticas condiciones de demanda institucional. En la tabla siguiente se detalla el cronograma y protocolo de ejecución de la intervención preexperimental."
+   ],
+   "v20": [
+    "Para reforzar la validez metodológica interna y atenuar potenciales sesgos de reactividad, historia o fatiga en las mediciones, se implementó un protocolo temporal simétrico compuesto por cuatro etapas: (a) una ventana basal pretest (O₁) de 30 días calendario; (b) una fase de inducción y capacitación técnica estandarizada de 5 días hábiles sobre los módulos de SIVAC a los 14 operadores; (c) un periodo de estabilización operativa de 10 días calendario en producción asistida previo al inicio del postest, orientado a mitigar el sesgo derivado de la curva inicial de aprendizaje tecnológico; y (d) una ventana postest (O₂) simétrica de 30 días calendario bajo idénticas condiciones de demanda institucional. En la tabla siguiente se detalla el cronograma y protocolo de ejecución de la intervención preexperimental."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "El segundo indicador de la dimensión oportunidad de procesamiento, referido al tiempo promedio de emisión de comprobante de salida o vale pecosa para el operador i, se determinó a través de la Ecuación 2:"
+   ],
+   "v20": [
+    "El segundo indicador de la dimensión oportunidad de procesamiento, referido al tiempo promedio de emisión de comprobante de salida o vale PECOSA para el operador i, se determinó a través de la Ecuación 2:"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "En correspondencia directa con las técnicas descritas, se diseñaron y aplicaron tres instrumentos de recolección de datos con especificaciones operativas rigurosas: (a) el Instrumento N.° 01, Ficha de observación de tiempos cronometrados, estructurada con campos de control temporal y tres escenarios operativos estandarizados (REG-01: registro de ingreso de lote de vacuna; REG-02: registro de salida o transferencia; y VALE-01: emisión de vale pecosa) con disparadores unívocos de inicio y fin de cronometraje; (b) el Instrumento N.° 02, Guía de cotejo documental, conformada por ocho criterios binarios de verificación de conformidad formal emanados de las disposiciones de la Norma Técnica de Salud NTS N.° 196-MINSA/DGIESP-2022 (aprobada por Resolución Ministerial N.° 884-2022/MINSA) sobre gestión de la cadena de frío, regla FEFO, factores de pérdida y saldos de kardex; y (c) el Instrumento N.° 03, Cuestionario cuya Modalidad A constituye la escala oficial de contrastación de la Hipótesis Específica 3 y está integrada por 8 ítems en escala Likert de 5 puntos (1 = Totalmente en desacuerdo, 2 = En desacuerdo, 3 = Neutral, 4 = De acuerdo y 5 = Totalmente de acuerdo), distribuidos en dos indicadores de 4 reactivos cada uno: Aceptación del proceso operativo (AP-01 a AP-04) y Utilidad percibida para la gestión (UP-01 a UP-04), con un rango global de 8 a 40 puntos y aplicación en pretest y postest. El mismo Instrumento N.° 03 incorpora, como módulo anexo de aplicación exclusiva en el postest, la Modalidad B, compuesta por 8 ítems adicionales (PU-01 a PU-04 y PE-01 a PE-04) destinados a documentar los constructos clásicos de utilidad y facilidad de uso percibidas del software bajo ISO/IEC 25010:2023. Ambas modalidades no son aditivas y la Modalidad B no interviene en el contraste inferencial. En la Tabla 33 se sintetiza la correspondencia metodológica."
+   ],
+   "v20": [
+    "En correspondencia directa con las técnicas descritas, se diseñaron y aplicaron tres instrumentos de recolección de datos con especificaciones operativas rigurosas: (a) el Instrumento N.° 01, Ficha de Registro Cronométrico de Tiempos Operativos, estructurada con campos de control temporal y tres escenarios operativos estandarizados (REG-01: registro de ingreso de lote de vacuna; REG-02: registro de salida o transferencia; y VALE-01: emisión de vale PECOSA) con disparadores unívocos de inicio y fin de cronometraje; (b) el Instrumento N.° 02, Ficha de Auditoría y Cotejo Documental de Lotes y Kardex, conformada por ocho criterios binarios de verificación de conformidad formal emanados de las disposiciones de la Norma Técnica de Salud NTS N.° 196-MINSA/DGIESP-2022 (aprobada por Resolución Ministerial N.° 884-2022/MINSA) sobre gestión de la cadena de frío, regla FEFO, factores de pérdida y saldos de kardex; y (c) el Instrumento N.° 03, Cuestionario cuya Modalidad A constituye la escala oficial de contrastación de la Hipótesis Específica 3 y está integrada por 8 ítems en escala Likert de 5 puntos (1 = Totalmente en desacuerdo, 2 = En desacuerdo, 3 = Neutral, 4 = De acuerdo y 5 = Totalmente de acuerdo), distribuidos en dos indicadores de 4 reactivos cada uno: Aceptación del proceso operativo (AP-01 a AP-04) y Utilidad percibida para la gestión (UP-01 a UP-04), con un rango global de 8 a 40 puntos y aplicación en pretest y postest. El mismo Instrumento N.° 03 incorpora, como módulo anexo de aplicación exclusiva en el postest, la Modalidad B, compuesta por 8 ítems adicionales (PU-01 a PU-04 y PE-01 a PE-04) destinados a documentar los constructos clásicos de utilidad y facilidad de uso percibidas del software bajo ISO/IEC 25010:2023. Ambas modalidades no son aditivas y la Modalidad B no interviene en el contraste inferencial. En la Tabla 33 se sintetiza la correspondencia metodológica."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Finalmente, para controlar la tasa de error por múltiples contrastes y precisar la direccionalidad inferencial, todas las pruebas se evaluaron con significancia bilateral (α = 0.05 a dos colas) por prudencia metodológica, verificando la dirección teórica esperada del cambio en las medianas o medias, y aplicando la corrección secuencial de Holm-Bonferroni sobre los seis indicadores para controlar rigurosamente la tasa de error familiar tipo I (FWER)."
+   ],
+   "v20": [
+    "Finalmente, para controlar la tasa de error por múltiples contrastes y precisar la direccionalidad inferencial, todas las pruebas se evaluaron con significancia bilateral (α = 0.05 a dos colas) por prudencia metodológica, verificando la dirección teórica esperada del cambio en las medianas o medias, y aplicando la corrección secuencial de Holm-Bonferroni sobre los seis indicadores y el puntaje global de satisfacción TAM (siete contrastes en total) para controlar rigurosamente la tasa de error familiar tipo I (FWER)."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Por último, se aplicó una salvaguarda de contingencia sanitaria durante la etapa de transición operativa entre el procedimiento tradicional y el sistema web SIVAC: durante el periodo de capacitación y estabilización, el personal mantuvo el registro de respaldo físico en kardex en paralelo al flujo digital para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial."
+   ],
+   "v20": [
+    "Por último, se aplicó una salvaguarda de contingencia sanitaria durante la etapa de transición operativa entre el procedimiento tradicional y el sistema web SIVAC: durante el periodo de capacitación y estabilización, el personal mantuvo el registro de respaldo físico en kardex en paralelo al flujo digital para reducir el riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "La evaluación psicométrica de la consistencia interna constituye un requisito metodológico insoslayable para certificar la fiabilidad y estabilidad métrica de los instrumentos de recolección de datos antes de proceder a las contrastaciones inferenciales de hipótesis. En concordancia con las decisiones metodológicas adoptadas, el análisis de confiabilidad se circunscribió al Instrumento N.° 03 (Cuestionario de Satisfacción del Usuario bajo el Modelo de Aceptación Tecnológica - TAM), dado que los Instrumentos N.° 01 (Ficha de Registro Cronométrico) y N.° 02 (Ficha de Cotejo Documental de Kardex) corresponden a mediciones directas de campo y auditorías físicas objetivas, cuya validez se sustenta en el protocolo de calibración inter-observador PMMV."
+   ],
+   "v20": [
+    "La evaluación psicométrica de la consistencia interna constituye un requisito metodológico insoslayable para certificar la fiabilidad y estabilidad métrica de los instrumentos de recolección de datos antes de proceder a las contrastaciones inferenciales de hipótesis. En concordancia con el diseño metodológico adoptado, el análisis de confiabilidad se circunscribió al Instrumento N.° 03 (Cuestionario de Satisfacción del Usuario bajo el Modelo de Aceptación Tecnológica - TAM), dado que los Instrumentos N.° 01 (Ficha de Registro Cronométrico de Tiempos Operativos) y N.° 02 (Ficha de Auditoría y Cotejo Documental de Lotes y Kardex) corresponden a mediciones directas de campo y auditorías físicas objetivas, cuya validez se sustenta en el protocolo de calibración inter-observador PMMV."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación sustancial en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8.88%) a un promedio postest de 96.00% (DE = 2.23%; Mdn = 96.25%; RIC = 2.75%), lo que refleja una ganancia relativa neta del +51.01% (diferencia media absoluta de +32.43 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO reduce significativamente las inconsistencias documentales y las discrepancias entre existencias físicas y registros."
+   ],
+   "v20": [
+    "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación sustancial en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8.88%) a un promedio postest de 96.00% (DE = 2.23%; Mdn = 96.25%; RIC = 2.75%), lo que refleja una ganancia relativa neta del +51.01% (diferencia media absoluta de +32.43 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos evidencian que la automatización del Kardex bajo la regla FEFO se asocia con una reducción de las inconsistencias documentales y de las discrepancias entre existencias físicas y registros."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (gl = 14):\n  1. Tiempo de registro (T_reg): W = 0.979, p = .966 (p > .05).\n  2. Tiempo de emisión de vales (T_vale): W = 0.933, p = .331 (p > .05).\n  3. Registros sin discrepancias (RSD): W = 0.958, p = .696 (p > .05).\n  4. Concordancia programada vs entregada (CPE): W = 0.953, p = .614 (p > .05).\n  5. Aceptación del proceso (AP): W = 0.909, p = .153 (p > .05).\n  6. Utilidad percibida (UP): W = 0.876, p = .052 (p > .05).\n  7. Puntaje global TAM: W = 0.955, p = .646 (p > .05).",
+    "Puesto que en todos los indicadores evaluados los valores p computados superan el nivel de significancia prefijado de α = .05, no se rechaza la hipótesis nula de normalidad. Se concluye que las diferencias pareadas pretest-postest satisfacen plenamente el supuesto de ajuste normal gaussiano, habilitando el uso legítimo y preferente de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13. Adicionalmente, y atendiendo a un principio de probidad bioestadística y robustez ante la naturaleza censal (n = 14) y el escalamiento ordinal de origen en los reactivos Likert, se procedió a reportar en paralelo la prueba no paramétrica de Rangos con Signo de Wilcoxon (Wilcoxon, 1945), confirmando que las conclusiones inferenciales exhiben total invariancia metodológica. La Tabla 39 resume las decisiones sobre la bondad de ajuste de normalidad."
+   ],
+   "v20": [
+    "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (n = 14):\n  1. Tiempo de registro (T_reg): W = 0.979, p = .966 (p > .05).\n  2. Tiempo de emisión de vales (T_vale): W = 0.933, p = .331 (p > .05).\n  3. Registros sin discrepancias (RSD): W = 0.958, p = .696 (p > .05).\n  4. Concordancia programada vs entregada (CPE): W = 0.953, p = .614 (p > .05).\n  5. Aceptación del proceso (AP): W = 0.909, p = .153 (p > .05).\n  6. Utilidad percibida (UP): W = 0.876, p = .052 (p > .05).\n  7. Puntaje global TAM: W = 0.955, p = .646 (p > .05).",
+    "Puesto que en todos los indicadores evaluados los valores p computados superan el nivel de significancia prefijado de α = .05, no se rechaza la hipótesis nula de normalidad. Se concluye que las diferencias pareadas pretest-postest no se apartan de manera significativa del supuesto de normalidad, lo que habilita el uso de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13. Adicionalmente, y atendiendo a un principio de probidad bioestadística y robustez ante la naturaleza censal (n = 14) y el escalamiento ordinal de origen en los reactivos Likert, se procedió a reportar en paralelo la prueba no paramétrica de Rangos con Signo de Wilcoxon (Wilcoxon, 1945), confirmando que las conclusiones inferenciales exhiben total invariancia metodológica. La Tabla 39 resume las decisiones sobre la bondad de ajuste de normalidad."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "El contraste inferencial de las hipótesis formuladas en la matriz de consistencia definitiva se desarrolló contrastando los indicadores pertenecientes a cada una de las tres dimensiones oficiales frente a su respectiva hipótesis nula, cerrando con la contrastación multidimensional conjunta de la Hipótesis General. Para salvaguardar el control estricto de la tasa de error por familia (FWER) ante la multiplicidad de contrastes simultáneos, se aplicó la corrección secuencial escalonada de Holm-Bonferroni (Holm, 1979). En todos los análisis se reportan tanto la prueba paramétrica t de Student (con el tamaño del efecto d de Cohen pareado) como la prueba no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal)."
+   ],
+   "v20": [
+    "El contraste inferencial de las hipótesis formuladas en el Capítulo I se desarrolló contrastando los indicadores pertenecientes a cada una de las tres dimensiones oficiales frente a su respectiva hipótesis nula, cerrando con la contrastación multidimensional conjunta de la Hipótesis General. Para salvaguardar el control estricto de la tasa de error por familia (FWER) ante la multiplicidad de contrastes simultáneos, se aplicó la corrección secuencial escalonada de Holm-Bonferroni (Holm, 1979). En todos los análisis se reportan tanto la prueba paramétrica t de Student (con el tamaño del efecto d de Cohen pareado) como la prueba no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal)."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "C. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 41)."
+   ],
+   "v20": [
+    "C. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, reduciendo los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 41)."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Nota. Nivel de significancia α = .05. El incremento en consistencia documental es estadísticamente significativo bajo ambas pruebas inferenciales. P-valores ajustados con corrección Holm-Bonferroni garantizan que no existe inflación de falsos positivos en los contrastes múltiples. Elaboración propia. Grados de libertad gl = n − 1 = 13."
+   ],
+   "v20": [
+    "Nota. Nivel de significancia α = .05. El incremento en consistencia documental es estadísticamente significativo bajo ambas pruebas inferenciales. P-valores ajustados con corrección Holm-Bonferroni reducen el riesgo de inflación de falsos positivos en los contrastes múltiples. Elaboración propia. Grados de libertad gl = n − 1 = 13."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "El propósito de la presente investigación fue determinar de qué manera la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El diseño metodológico preexperimental con mediciones emparejadas antes y después (O₁ → X → O₂) sobre la población censal de n = 14 trabajadores permitió contrastar de forma empírica el impacto de la digitalización ágil frente al flujo manual tradicional en las tres dimensiones fijadas para la variable dependiente: oportunidad de procesamiento, consistencia documental y satisfacción del usuario. La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas y descarta que estas obedezcan a fluctuaciones muestrales."
+   ],
+   "v20": [
+    "El propósito de la presente investigación fue determinar en qué medida la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El diseño metodológico preexperimental con mediciones emparejadas antes y después (O₁ → X → O₂) sobre la población censal de n = 14 trabajadores permitió contrastar de forma empírica el impacto de la digitalización ágil frente al flujo manual tradicional en las tres dimensiones fijadas para la variable dependiente: oportunidad de procesamiento, consistencia documental y satisfacción del usuario. La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas en el conjunto de prueba analizado, en el marco de un diseño preexperimental de un solo grupo que no permite aislar por completo explicaciones alternativas."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Respecto a la segunda dimensión, Consistencia documental, el incremento del porcentaje de registros sin discrepancias (RSD) de 63.57% a 96.00% (+51.01%) y de la concordancia programada vs entregada (CPE) de 67.61% a 95.39% (+41.10%) revela una transformación sustancial en la exactitud contable de los kardex (t = 26.63 y t = 28.15; p < .001; d > 7.0). Este logro se fundamenta en los controles algorítmicos implementados en SIVAC: la regla FEFO obligatoria que impide despachar biológicos de vencimiento tardío teniendo existencias próximas a caducar, y el bloqueo estricto de transacciones con saldo insuficiente. Estos hallazgos confirman que la exactitud contable del kardex no depende ya de la pericia aritmética del operador, sino de la validación transaccional automatizada: la regla FEFO impide despachar lotes de vencimiento tardío cuando existen existencias próximas a caducar y el sistema bloquea toda transacción cuyo saldo resulte insuficiente. La convergencia entre el incremento del RSD y el de la CPE evidencia que la mejora documental alcanza tanto la forma de los registros como la correspondencia efectiva entre la cantidad programada y la entregada.",
+    "En lo concerniente a la tercera dimensión, Satisfacción del usuario evaluada bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), se evidenció una elevación estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos, +119.47%) y en la Utilidad Percibida (de 9.00 a 18.50 puntos, +105.56%), alcanzando un puntaje global TAM de 36.21 sobre 40 puntos, correspondiente al baremo 'Alto'. Estos resultados ratifican la hipótesis formulada por Davis (1989) y Venkatesh et al. (2003), en el sentido de que los usuarios sanitarios adoptan favorablemente las plataformas digitales cuando experimentan de manera directa que el sistema reduce el esfuerzo cognitivo, automatiza tareas tediosas y brinda confianza en la emisión de documentos de auditoría institucional (Ministerio de Salud del Perú, 2022).",
+    "Finalmente, la contrastación de la Hipótesis General bajo una regla de decisión conjuntiva multivariada confirmó la hipótesis de la investigación: la aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II. La ingeniería de software ágil basada en Extreme Programming (XP) demostró ser un marco eficaz para alinear el software con los requerimientos reales del personal de campo, logrando una herramienta robusta, validada y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023."
+   ],
+   "v20": [
+    "Respecto a la segunda dimensión, Consistencia documental, el incremento del porcentaje de registros sin discrepancias (RSD) de 63.57% a 96.00% (+51.01%) y de la concordancia programada vs entregada (CPE) de 67.61% a 95.39% (+41.10%) revela una transformación sustancial en la exactitud contable de los kardex (t = 26.63 y t = 28.15; p < .001; d > 7.0). Este logro se fundamenta en los controles algorítmicos implementados en SIVAC: la regla FEFO obligatoria que impide despachar biológicos de vencimiento tardío teniendo existencias próximas a caducar, y el bloqueo estricto de transacciones con saldo insuficiente. Estos hallazgos confirman que la exactitud contable del kardex no depende ya de la pericia aritmética del operador, sino de la validación transaccional automatizada. La convergencia entre el incremento del RSD y el de la CPE evidencia que la mejora documental alcanza tanto la forma de los registros como la correspondencia efectiva entre la cantidad programada y la entregada.",
+    "En lo concerniente a la tercera dimensión, Satisfacción del usuario evaluada bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), se evidenció una elevación estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos, +119.47%) y en la Utilidad Percibida (de 9.00 a 18.50 puntos, +105.56%), alcanzando un puntaje global TAM de 36.21 sobre 40 puntos, correspondiente al baremo 'Alto'. Estos resultados admiten una lectura desde los enfoques de aceptación tecnológica considerados en el marco teórico, que sitúan la utilidad percibida y la aceptación del proceso entre las condiciones de la disposición del usuario hacia un sistema; la evidencia describe ese comportamiento en el grupo estudiado y no constituye, por sí misma, una validación de dichos enfoques ni de sus constructos en el ámbito sanitario.",
+    "Finalmente, la contrastación de la Hipótesis General bajo una regla de decisión conjuntiva multivariada confirmó la hipótesis de la investigación: la aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II. La ingeniería de software ágil basada en Extreme Programming (XP) demostró ser un marco eficaz para alinear el software con los requerimientos reales del personal de campo, logrando una herramienta robusta, verificada funcionalmente y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023."
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Tercera (Objetivo Específico 2): Se comprobó que el sistema web SIVAC incrementa sustancialmente la consistencia documental de los expedientes logísticos de vacunas, elevando el porcentaje de registros sin discrepancias (RSD) de 63.57% a 96.00% (mejora del 51.01%) y la concordancia de cantidad programada versus entregada (CPE) de 67.61% a 95.39% (aumento del 41.10%), respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), erradicando las fallas de arrastre en los libros de kardex."
+   ],
+   "v20": [
+    "Tercera (Objetivo Específico 2): Se comprobó que el sistema web SIVAC incrementa sustancialmente la consistencia documental de los expedientes logísticos de vacunas, elevando el porcentaje de registros sin discrepancias (RSD) de 63.57% a 96.00% (mejora del 51.01%) y la concordancia de cantidad programada versus entregada (CPE) de 67.61% a 95.39% (aumento del 41.10%), respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), reduciendo de manera sustancial las fallas de arrastre en los libros de kardex."
+   ]
+  },
+  {
+   "tipo": "insert",
+   "v19": [],
+   "v20": [
+    "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131-142. https://doi.org/10.1177/0013164485451012"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4"
+   ],
+   "v20": [
+    "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4https://doi.org/10.1186/s40545-023-00517-4"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación para la medición de la Variable Dependiente 'Gestión de movimientos mensuales de vacunas' en la DISA Apurímac II:"
+   ],
+   "v20": [
+    "Se incluyen los tres instrumentos oficiales diseñados para la investigación para la medición de la Variable Dependiente 'Gestión de movimientos mensuales de vacunas' en la DISA Apurímac II:"
+   ]
+  },
+  {
+   "tipo": "replace",
+   "v19": [
+    "Nota. Cuestionario TAM de ocho ítems (Modalidad A) remitido a juicio de expertos. Los coeficientes V de Aiken, IVC y Alfa de Cronbach se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces."
+   ],
+   "v20": [
+    "Nota. Cuestionario TAM de ocho ítems (Modalidad A) remitido a juicio de expertos. Los coeficientes V de Aiken e IVC se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces. El coeficiente Alfa de Cronbach reportado en la Tabla 35 corresponde a un cálculo provisional sobre datos de prueba."
+   ]
+  }
+ ],
+ "celdas": [
+  {
+   "tabla": 1,
+   "fila": 7,
+   "columna": 3,
+   "v19": "Cuantitativo, descriptivo y transversal (19 hospitales regionales)",
+   "v20": "Revisión de literatura y análisis descriptivo (20 hospitales regionales de referencia)"
+  },
+  {
+   "tabla": 1,
+   "fila": 7,
+   "columna": 5,
+   "v19": "Disponibilidad promedio del 90% y concordancia en despachos regionales",
+   "v20": "96.5% de pedidos atendidos y 85.5% de cumplimiento agregado de pedidos"
+  },
+  {
+   "tabla": 29,
+   "fila": 2,
+   "columna": 2,
+   "v19": "Auditoría retrospectiva y concurrente de libros de kardex manuales, cronometraje in situ de registros y vales pecosa físicos, y aplicación de la Modalidad A del Instrumento N.° 03 en línea base.",
+   "v20": "Auditoría retrospectiva y concurrente de libros de kardex manuales, cronometraje in situ de registros y vales PECOSA físicos, y aplicación de la Modalidad A del Instrumento N.° 03 en línea base."
+  },
+  {
+   "tabla": 31,
+   "fila": 3,
+   "columna": 2,
+   "v19": "Eventos de confección y emisión de comprobantes de salida o vales pecosa.",
+   "v20": "Eventos de confección y emisión de comprobantes de salida o vales PECOSA."
+  },
+  {
+   "tabla": 33,
+   "fila": 2,
+   "columna": 4,
+   "v19": "Instrumento N.° 01:\nFicha de observación de tiempos cronometrados",
+   "v20": "Instrumento N.° 01:\nFicha de Registro Cronométrico de Tiempos Operativos"
+  },
+  {
+   "tabla": 33,
+   "fila": 3,
+   "columna": 4,
+   "v19": "Instrumento N.° 02:\nGuía de cotejo de consistencia documental",
+   "v20": "Instrumento N.° 02:\nFicha de Auditoría y Cotejo Documental de Lotes y Kardex"
+  },
+  {
+   "tabla": 33,
+   "fila": 4,
+   "columna": 4,
+   "v19": "Instrumento N.° 03:\nCuestionario de satisfacción del usuario y aceptación tecnológica",
+   "v20": "Instrumento N.° 03:\nCuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A)"
+  },
+  {
+   "tabla": 34,
+   "fila": 2,
+   "columna": 2,
+   "v19": "Instrumento N.° 01:\nFicha de observación de tiempos cronometrados",
+   "v20": "Instrumento N.° 01:\nFicha de Registro Cronométrico de Tiempos Operativos"
+  },
+  {
+   "tabla": 34,
+   "fila": 3,
+   "columna": 2,
+   "v19": "Instrumento N.° 02:\nGuía de cotejo documental",
+   "v20": "Instrumento N.° 02:\nFicha de Auditoría y Cotejo Documental de Lotes y Kardex"
+  },
+  {
+   "tabla": 34,
+   "fila": 4,
+   "columna": 2,
+   "v19": "Instrumento N.° 03:\nCuestionario de satisfacción del usuario y aceptación tecnológica (Modalidad A)",
+   "v20": "Instrumento N.° 03:\nCuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A)"
+  }
+ ]
+}

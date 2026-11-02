@@ -1,0 +1,48 @@
+{
+  "origen": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20_R1R3.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20_R1R3B.docx",
+  "solo_verificar": false,
+  "sha256_origen": "e30bcecb6d685c0c55c643345890ed82b88d702bbe0ae4a36c0480d2fa98fcca",
+  "sha256_destino": "106458f7106f104b2ee7d0569ab43c0aa6ea62df29764fa119b2a1c410516c14",
+  "parrafos": 828,
+  "tablas": 59,
+  "total_ordenes": 1,
+  "total_aplicadas": 1,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "plan_espacio_wasswa_v20",
+      "total": 1,
+      "aplicadas": 1,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 777,
+          "ubicacion": "Referencia Wasswa 2023: espacio entre el punto y el DOI hipervinculado",
+          "ancla": "Practice, 16, Artículo 6.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "plan_espacio_wasswa_v20",
+      "indice_docx": 777,
+      "ubicacion": "Referencia Wasswa 2023: espacio entre el punto y el DOI hipervinculado",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+ "source_pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\referencias\\modelos_tesis\\Fany_Tesis_Bachiller_2024.pdf",
+ "sha256_pdf": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+ "page_count": 106,
+ "pages": [
+  {
+   "page": 1,
+   "chars": 456,
+   "scanned_no_text": false,
+   "text": "UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS \nFACULTAD DE INGENIERÍA \nESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS \n \n \n \n \n \n \n \nPresentado por: \nFANY QUISPE TELLO \nINFLUENCIA DEL APLICATIVO WEBFQT PARA EL \nSEGUIMIENTO DE PROYECTOS DE INVERSIÓN \nPÚBLICA EN LA MUNICIPALIDAD DISTRITAL DE \nPORVENIR \n \nAsesor: \nMSc. EDWING ALCIDES MAQUERA FLORES \n \nTESIS PARA OPTAR EL TITULO PROFESIONAL DE \nINGENIERA DE SISTEMAS \n \n \n \n \nANDAHUAYLAS - APURÍMAC - PERÚ \n2024 \n"
+  },
+  {
+   "page": 2,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 3,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 4,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 5,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 6,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 7,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 8,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 9,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 10,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 11,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 12,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 13,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 14,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 15,
+   "chars": 422,
+   "scanned_no_text": false,
+   "text": "ii \nDEDICATORIA \n \n \n \n \n \n \n \n \n \n \n \n \n \nA mi papá Florencio, quien desde el cielo me \nguio para culminar y superar todas las adversidades \nen el camino.  \nA mi mamá Julia, hermana, hermanos y \nsobrinos, por el ser el pilar fundamental en todo lo \nque soy, por los ejemplos de perseverancia, \nconstancia y valor humano.  \nA toda mi familia, Docentes y amigos quienes \nme brindaron su apoyo incondicional en esta etapa. \n"
+  },
+  {
+   "page": 16,
+   "chars": 435,
+   "scanned_no_text": false,
+   "text": "iii \nAGRADECIMIENTO \n \n \n \n \n \n \n \n \n \n \n \n \n \nAgradezco a Dios por su guía a lo largo de \nmi carrera por ser mi fortaleza en los momentos de \ndebilidad y brindarme una vida llena de bendiciones. \nAgradezco a mis docentes de la UNAJMA, \npor su dedicada labor en los conocimientos \nimpartidos en el aula. \nAgradezco al Ing. Edwing A. Maquera Flores, \nasesor de tesis, por su guía y paciencia durante el \nproceso de la investigación. \n \n"
+  },
+  {
+   "page": 17,
+   "chars": 4060,
+   "scanned_no_text": false,
+   "text": "iv \nÍNDICE \nDEDICATORIA ............................................................................................................. ii \nAGRADECIMIENTO ..................................................................................................... iii \nÍNDICE ........................................................................................................................ iv \nÍNDICE DE FIGURAS .................................................................................................. vi \nÍNDICE DE TABLAS .................................................................................................... vii \nRESUMEN .................................................................................................................. viii \nABSTRACT ................................................................................................................. ix \nCHUMASQA ................................................................................................................. x \nINTRODUCCIÓN ........................................................................................................ 11 \nCAPITULO I: PROBLEMA DE INVESTIGACIÓN ........................................................ 12 \n1.1. \nRealidad problemática .................................................................................. 12 \n1.2. \nFormulación del problema ............................................................................ 13 \n1.2.1. \nProblema general .................................................................................. 13 \n1.2.2. \nProblemas específicos ........................................................................... 13 \n1.3. \nObjetivos ...................................................................................................... 13 \n1.3.1. \nObjetivo general .................................................................................... 13 \n1.3.2. \nObjetivos específicos ............................................................................. 13 \n1.4. \nJustificación .................................................................................................. 14 \n1.5. \nHipótesis ....................................................................................................... 15 \n1.5.1. \nHipótesis general ................................................................................... 15 \n1.5.2. \nHipótesis específicas ............................................................................. 15 \n2. \nCAPITULO II: ANTECEDENTES ......................................................................... 16 \n2.1. \nAntecedentes internacionales ....................................................................... 16 \n2.2. \nAntecedentes nacionales .............................................................................. 19 \n3. \nCAPITULO III: MARCO TEÓRICO ...................................................................... 24 \n3.1. \nBases teóricas .............................................................................................. 24 \n3.1.1. \nExtreme Programming (XP) ................................................................... 24 \n3.1.2. \nAplicación Web ...................................................................................... 25 \n3.1.3. \nGestión de proyectos ............................................................................. 26 \n3.1.4. \nInversión Pública ................................................................................... 31 \n3.1.5. \nProyecto de Inversión Pública (PIP) ...................................................... 31 \n3.1.6. \nInvierte Pe ............................................................................................. 31 \n3.1.7. \nCiclos de Inversión del Invierte Perú ...................................................... 32 \n3.1.8. \nLey de contrataciones del estado .......................................................... 33 \n3.2. \nMarco conceptual ......................................................................................... 34 \n"
+  },
+  {
+   "page": 18,
+   "chars": 2154,
+   "scanned_no_text": false,
+   "text": "v \n4. \nCAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN .................................. 35 \n4.1. \nTipo, nivel y diseño de investigación ............................................................. 35 \n4.1.1. \nTipo de investigación ............................................................................. 35 \n4.1.2. \nNivel de investigación ............................................................................ 35 \n4.1.3. \nDiseño de investigación ......................................................................... 36 \n4.2. \nVariables y operacionalización...................................................................... 36 \n4.3. \nPoblación, muestra y muestreo..................................................................... 37 \n4.4. \nTécnicas e instrumentos de recolección de datos ......................................... 38 \n4.5. \nProcedimientos ............................................................................................. 39 \n4.6. \nMétodo de análisis de datos ......................................................................... 39 \n4.7. \nAspectos éticos ............................................................................................ 40 \n5. \nCAPITULO V: RESULTADOS ............................................................................. 41 \n5.1. \nDescripción de los resultados obtenidos ....................................................... 41 \n5.2. \nAnálisis inferencial ........................................................................................ 48 \nCAPITULO VI: DISCUSIÓN ........................................................................................ 51 \nCONCLUSIONES ....................................................................................................... 54 \nRECOMENDACIONES ............................................................................................... 55 \nBIBLIOGRAFÍA ........................................................................................................... 56 \nANEXO ....................................................................................................................... 60 \n \n \n \n"
+  },
+  {
+   "page": 19,
+   "chars": 1535,
+   "scanned_no_text": false,
+   "text": "vi \nÍNDICE DE FIGURAS \nFigura 1 Secuencia de mapeo de procesos. ............................................................... 25 \nFigura 2 Ciclo de vida de un proyecto. ........................................................................ 28 \nFigura 3 Fases de un proyecto. .................................................................................. 29 \nFigura 4 Triple restricción de un proyecto. .................................................................. 30 \nFigura 5 Las fases del ciclos de Inversión ................................................................... 33 \nFigura 6 Cantidad de proyectos culminados. .............................................................. 43 \nFigura 7 Culminación de proyectos con el presupuesto asignado. .............................. 44 \nFigura 8 Histograma sobre el estado de proyectos. .................................................... 45 \nFigura 6  Histograma de seguimiento de proyectos antes de la implantación del \nsoftware ...................................................................................................................... 46 \nFigura 7  Histograma de seguimiento de proyectos posterior a la implantación del \nsoftware ...................................................................................................................... 47 \nFigura 8  Diagrama de actividades del usuario del área de infraestructura ................. 76 \nFigura 9  Diagrama de actividades del usuario ciudadano del municipio..................... 77 \n \n \n \n \n"
+  },
+  {
+   "page": 20,
+   "chars": 2042,
+   "scanned_no_text": false,
+   "text": "vii \nÍNDICE DE TABLAS \nTabla 1.  Matriz de operacionalización de variables .................................................... 37 \nTabla 2.  Estados de los proyectos en ejecución. ....................................................... 38 \nTabla 3  Validez de instrumentos por juicio de expertos en las variables. ................... 41 \nTabla 4  Prueba de confiabilidad de la variable independiente. ................................... 41 \nTabla 5  Prueba de confiabilidad de la variable dependiente. ..................................... 42 \nTabla 6  Porcentajes de proyectos culminados. .......................................................... 42 \nTabla 7  Proyectos que culminaron con el presupuesto asignado. .............................. 43 \nTabla 8  Estado de proyectos. .................................................................................... 44 \nTabla 10  Instrumento aplicado antes de la implantación del software. ....................... 46 \nTabla 11 Instrumento aplicado posterior a la implantación del software. ..................... 47 \nTabla 12  Prueba de normalidad ................................................................................. 48 \nTabla 13  Contrastación de hipótesis general ............................................................. 49 \nTabla 14  Contrastación de hipótesis específica 1 ...................................................... 50 \nTabla 15  Contrastación de hipótesis específica 2 ...................................................... 50 \nTabla 16  Historia de usuario - Desarrollo de la página principal de la aplicación \nWebFQT ..................................................................................................................... 72 \nTabla 17 Historia de usuario - Creación del menú principal para el ciudadano ........... 73 \nTabla 18 Creación del menú carga de información ..................................................... 74 \nTabla 19 Creación del menú reporte de gestión .......................................................... 75 \n \n \n \n \n"
+  },
+  {
+   "page": 21,
+   "chars": 1321,
+   "scanned_no_text": false,
+   "text": "viii \nRESUMEN \nEsta investigación tuvo el propósito de determinar la influencia del aplicativo \nWebFQT en el seguimiento de proyectos de inversión pública en la municipalidad \ndistrital de El Porvenir., Este presente estudio tuvo un enfoque cuantitativo, de tipo de \naplicada, de alcance aplicativa correlacional, diseño preexperimental de corte \ntransversal en el tiempo. La población encuestada fue de 28 proyectos que fueron \ngestionados por la Municipalidad de El Porvenir, entre las personas encuestadas se \nencontraban trabajadores y público en general del municipio, habiendo desarrollado, \nimplantado el sistema web y encuestado a los usuarios se cumplió con los objetivos \ntanto general como específicos, la técnica de recolección utilizada fue la encuesta y el \ninstrumento usado un cuestionario. El resultado obtenido a través del análisis y \nprocesamiento de los datos fue que la implementación del aplicativo WebFQT redujo \ndrásticamente el tiempo de acceso a la información referente al avance físico y \neconómico de los proyectos; lo que permite concluir que el aplicativo web brinda \ndiversos beneficios y optimiza procesos que inicialmente eran manuales en la gestión \nde proyectos de inversión pública en la municipalidad distrital de El Porvenir. \nPalabras clave: Proyectos, presupuesto y usuarios. \n \n"
+  },
+  {
+   "page": 22,
+   "chars": 1256,
+   "scanned_no_text": false,
+   "text": "ix \nABSTRACT \nThis research was carried out with the purpose of determining the influence of \nthe WebFQT application in the monitoring of public investment projects in the district \nmunicipality of El Porvenir. This present study had a quantitative approach, applied type, \ncorrelational application scope, design pre-experimental cross-sectional study in time. \nThe population surveyed was 28 projects that were managed by the Municipality of El \nPorvenir, among the people surveyed were workers and the general public of the \nmunicipality, having developed, implemented the web system and surveyed the users, \nthe general objectives were met. As specific, the collection technique used was the \nsurvey and the instrument used was a questionnaire. The result obtained through the \nanalysis and processing of the data was that the implementation of the WebFQT \napplication drastically reduced the time to access information regarding the physical \nand economic progress of the projects; which allows us to conclude that the web \napplication provides various benefits and optimizes processes that were initially manual \nin the management of public investment projects in the district municipality of El \nPorvenir. \nKeywords: Projects, budget, and users. \n \n"
+  },
+  {
+   "page": 23,
+   "chars": 1409,
+   "scanned_no_text": false,
+   "text": "x \nCHUMASQA \nKay investigacionqa ruwakurqa chay propósito nisqawanmi determinanankupaq \nchay aplicación WebFQT nisqapa influencianta chay proyectos de inversión pública \nnisqa qawariypi El Porvenir municipio distrital nisqapi, kay kunan estudioqa enfoque \ncuantitativo nisqayuqmi karqa, tipo aplicado nisqayuq, alcance de aplicación \ncorrelacional nisqayuq, diseño preexperimental nisqayuq tiempopi sección transversal \nnisqa yachay. Población tapusqa 28 proyectokuna karqan, chaykunatan Municipio El \nPorvenir \nkamachirqan, \ntapusqa \nrunakuna \nukhupi \nllank’aqkuna \nhinallataq \nmunicipalidadpi \nllapa \nrunakuna, \nsistema \nweb \nnisqa \nruwasqankurayku, \nimplementasqanku qhepaman, usuariokunata tapusqanku qhepamanpas, chay \nobjetivos generales nisqakunan hunt’akurqan.Como específico , chay huñunapaq \ntécnica nisqawanmi encuesta nisqa, instrumento nisqapas tapukuymi karqa. Chay \ndatos nisqakuna anlisiswan, procesamientowan ima tarisqaqa, WebFQT nisqa \naplicacionpa implementacionninmi, proyectokunapa progreso físico y económico \nnisqamanta willakuykunaman yaykunapaq tiempota sinchita pisiyachirqa; chaymi \npermite tukuchiyta chay aplicación web nisqa imaymana beneficiokunata qon hinallataq \nprocesokunata allinta ruwan, chaykunan qallariypi manual karqanku proyectokuna \ninversión pública nisqapi kamachiypi, municipio distrital El Porvenir nisqapi. \nSapaq simikuna: Proyectos, presupuesto y usuarios. \n"
+  },
+  {
+   "page": 24,
+   "chars": 2019,
+   "scanned_no_text": false,
+   "text": "11 \nINTRODUCCIÓN \nLa administración de proyectos es una diligencia muy relevante dentro del \ndesarrollo sostenible del Perú, ya que a través de estos se ejecutan obras que mejoran \nel nivel de bienestar de todos los peruanos, la administración de proyectos brinda \ndiferentes herramientas que permiten gestionar todos los recursos involucrados en la \nconcretización de un proyecto, a su vez estos necesariamente son cuantificados en la \netapa de planificación para su posterior ejecución, estas herramientas administran los \nrecursos para poder alcanzar la culminación del proyecto. Actualmente las diferentes \nmunicipalidades a nivel nacional no cuentan con software que automatice este proceso \ncomo es el caso de la Municipalidad El Porvenir, tampoco se buscan técnicas y \nherramientas que permitan mejorar la gestión y que incrementen su productividad, es \npor ello por lo que deben contemplar a los diferentes avances tecnológicos como una \nopción para satisfacer las exigencias de calidad en proyectos. \nEs por ello, por lo que en el presente trabajo de investigación se hace un \nabordaje a la implantación del software WebFQT para la trazabilidad de proyectos de \ninversión (PI) pública en la municipalidad distrital de El Porvenir, para ello el trabajo se \nestructura de la siguiente manera: \nCapítulo I: Problema de investigación, donde contiene la realidad problemática, \nla formulación del problema, los objetivos, la justificación y la hipótesis. Capítulo II: \nAntecedentes el cual lo integran los internacionales y nacionales. Capítulo III: Marco \nteórico, compuesto por las bases teóricas y el marco conceptual. Capítulo IV: \nMetodología de la investigación, donde se indican el tipo, nivel y diseño de la \ninvestigación, las variables y su operacionalización. Capítulo V: Resultados, donde se \ndescriben los resultados obtenidos así como la contrastación de las hipótesis. Capítulo \nVI: Discusión, finalmente las conclusiones arribadas y recomendaciones realizadas a \nla municipalidad de El Porvenir. \n \n"
+  },
+  {
+   "page": 25,
+   "chars": 2030,
+   "scanned_no_text": false,
+   "text": "12 \nCAPITULO I: PROBLEMA DE INVESTIGACIÓN \n1.1. \nRealidad problemática  \nEn el aspecto internacional la gestión de proyectos es una actividad muy \nrelevante dentro del desarrollo sostenible de los países, esta brinda diversas \nherramientas que permiten gestionar todos los recursos que son necesarios en la fase \nde organización y cumplimiento de este, las cuales se administran para poder alcanzar \nun resultado determinado, y alcanzar el propósito primordial por el cual inició al \nproyecto. Actualmente las diferentes sociedades alrededor del mundo son altamente \ncompetitivas y cada vez más son apoyadas por la tecnología, del mismo modo los \nresponsables de proyectos buscan técnicas y herramientas que mejoren cada vez más \nsu gestión y que incrementen su probabilidad de éxito, es por ello por lo que deben \nadquirir habilidades y competencias para cumplir con los estándares de calidad en \nproyectos (Estrada, 2015). \nEn el Perú muchas empresas cuentan con una cartera de proyectos en \nplanificación o ejecución lo que les permite crecer e incrementar su competitividad en \nel actual mercado cambiante, sin embargo, a partir de encuestas realizadas a \nejecutivos, gerentes de proyectos y personal que se encuentra involucrado en la \ngestión de proyectos de empresas públicas y privadas, de diferentes sectores, indica \nque el 65% de estas incumplieron con lo planificado tanto en el tiempo como en los \nrecursos asignados para su ejecución (Lossio et al., 2016). \nLa situación en el distrito de El Porvenir no es diferente ya que en la actualidad \nno cuenta con herramientas tecnológicas que permitan realizar a las personas \nresponsables un seguimiento adecuado del avance físico y económico sobre la \nejecución de los diferentes proyectos en tiempo real, los trabajadores de este municipio \nrecurren a documentos físicos que se encuentran apilados en oficinas y que muchas \nveces no se encuentran organizados adecuadamente lo que no permite un acceso \nrápido cuando se realizan los controles y auditorias de las obras. \n"
+  },
+  {
+   "page": 26,
+   "chars": 1233,
+   "scanned_no_text": false,
+   "text": "13 \n \n1.2. \nFormulación del problema \n1.2.1. Problema general \n¿De qué manera el aplicativo webFQT influye en el seguimiento de proyectos \nde inversión pública en la municipalidad distrital de El Porvenir? \n1.2.2. Problemas específicos \n- \n¿De qué manera el aplicativo WebFQT influye en el tiempo de seguimiento \nde la ejecución del presupuesto en proyecto de inversión pública en la \nmunicipalidad distrital de El Porvenir? \n- \n¿De qué manera el aplicativo WebFQT influye en el tiempo de seguimiento \nde la ejecución del avance físico en proyectos de inversión pública en la \nmunicipalidad distrital de El Porvenir? \n \n1.3. \nObjetivos \n1.3.1. Objetivo general \nDeterminar la influencia del aplicativo WebFQT para el seguimiento de \nproyectos de inversión pública en la municipalidad distrital de El Porvenir. \n1.3.2. Objetivos específicos \n- \nDeterminar la influencia del aplicativo WebFQT en el tiempo de seguimiento \nde la ejecución del presupuesto en proyectos de inversión pública en la \nmunicipalidad distrital de El Porvenir. \n- \nDeterminar la influencia del aplicativo WebFQT en el tiempo de seguimiento \nde la ejecución del avance físico en proyectos de inversión pública en la \nmunicipalidad distrital de El Porvenir. \n \n \n"
+  },
+  {
+   "page": 27,
+   "chars": 1610,
+   "scanned_no_text": false,
+   "text": "14 \n1.4. \nJustificación \nEl software que se desarrolló en el presente trabajó sirvió como una herramienta \nde seguimiento y control para el avance físico y económico de otras Municipalidades \nya que estas se rigen bajo el mismo procedimiento, teniendo en cuenta que la \nmetodología de cumplimiento de los PI es la misma y se aplican a nivel nacional. \nAsimismo, facilita a los funcionarios de la municipalidad y empresas contratistas \nencargadas de la ejecución a tener datos actualizados y en tiempo real todo esto para \nuna adecuada de toma de decisiones, por otro lado, contribuye con el enriquecimiento \nde la literatura y brinda una base a futuras investigaciones en el contexto de control y \ncumplimiento de proyectos de inversión pública. \nCon este nuevo software desarrollado se mejoró la trazabilidad y control de \navance físico y económico en la ejecución de proyectos, todo esto bajo el control legal \nsuscrito en el contrato con la ley de contratación del estado 30225 en donde se indica \nel correcto uso de la normativa en la fase de realización de los PI pública. En muchas \nocasiones tanto los funcionarios de la Municipalidad como los regidores desconocen \ndicha normativa, en por ello que el aplicativo WebFQT optimizará el control en lo \nreferente al avance físico y financiero del presupuesto determinado para la realización \ndel proyecto, en consecuencia, brindará una información oportuna y clara a los \ntrabajadores de la Municipalidad distrital de El Porvenir y fiscalizadores externos \nquienes estarán informados en tiempo real sobre el avance de la ejecución del \nproyecto. \n \n \n \n \n \n"
+  },
+  {
+   "page": 28,
+   "chars": 580,
+   "scanned_no_text": false,
+   "text": "15 \n1.5. \nHipótesis \n1.5.1. Hipótesis general \nEl aplicativo WebFQT influye positivamente en el seguimiento de proyectos de \ninversión pública en la municipalidad distrital de El Porvenir. \n1.5.2. Hipótesis específicas \n- \nEl aplicativo WebFQT disminuye el tiempo en el seguimiento de la ejecución \ndel presupuesto en proyectos de inversión pública en la municipalidad \ndistrital de El Porvenir. \n- \nEl aplicativo WebFQT disminuye el tiempo en el seguimiento de la ejecución \ndel avance físico en proyectos de inversión pública en la municipalidad \ndistrital de El Porvenir. \n \n \n"
+  },
+  {
+   "page": 29,
+   "chars": 2152,
+   "scanned_no_text": false,
+   "text": "16 \n2. CAPITULO II: ANTECEDENTES \n2.1. \nAntecedentes internacionales \nGifra (2017) trabajó en un paradigma para la supervisión y administración \npecuniaria y cronológica durante la etapa de realización en la obra pública fue el \nobjetivo principal de esta indagación. Se propuso reformar los esquemas usualmente \nempleados para catalogar y fiscalizar los costos del proceso de ejecución de obra \ndesde la óptica del promotor público, la dirección facultativa o los gestores del proyecto. \nLa finalidad es que, con una estructura de registro afín y acorde con la información \nderivada del tradicional sistema de control de costos de obra, se pueda obtener \ninformación fidedigna y veraz sobre las desviaciones económicas presentes y \nvenideras durante la ejecución, así como el horizonte probable de culminación y cierre \nde la obra, basándose en la información disponible. Esto culmina con la creación de un \nmodelo denominado IMADO, que se presenta como una metodología de supervisión y \ncontrol económico y temporal del progreso de proyectos durante su fase de ejecución, \na través de la monitorización periódica de las relaciones valoradas de ejecución de la \nobra y de los eventos futuros conocidos que conllevarán desviaciones. \nEn una investigación desarrollada por Blanco & Hernández (2016) que lleva por \ntítulo “Sistema de información para la gestión de proyectos para la fundación \nuniversitaria Los Libertadores”, y se planteó como objetivo general “diseñar y \ndesarrollar un sistema de información para la gestión de proyectos de manera que \npermita llevar el control de forma sistemática y ordenada, de los diferentes proyectos e \ninvestigaciones de grado”, la metodología empleada para su elaboración fue SCRUM, \nla cual forma parte de las metodologías ágiles, y se consideró la arquitectura de N \ncapas. El resultado fue que, una vez efectuadas las diversas pruebas en los distintos \nmódulos del aplicativo y utilizando diferentes perfiles, el sistema desarrollado cumple \ncon los requerimientos tanto funcionales como no funcionales definidos en la \nrecopilación de información derivada de las necesidades planteadas en el problema de \n"
+  },
+  {
+   "page": 30,
+   "chars": 2137,
+   "scanned_no_text": false,
+   "text": "17 \ninvestigación. Los resultados obtenidos de cada prueba se ajustan a las \nespecificaciones de los diferentes módulos. El investigador concluye que se \ndesarrollaron los requerimientos funcionales conforme a lo establecido y se garantizó \nque el aplicativo cumple con las necesidades específicas requeridas por los usuarios. \nAsimismo, se lograron desarrollar los casos de uso generados para el desarrollo del \nsoftware gracias a un análisis minucioso realizado durante el diseño de los \nrequerimientos. \nMaldonado (2016) elaboró una investigación intitulada “Desarrollo e \nimplementación de un sistema web de seguimiento y evaluación de las prácticas \npreprofesionales para la facultad de ingeniería escuela civil de la Puce”, y su objetivo \ngeneral formulado fue desarrollar e implementar una solución informática que \nadministre los diferentes recursos técnicos destinados a realizar un seguimiento y \nevaluación de las prácticas preprofesionales a los estudiantes de la Facultad de \nIngeniería Escuela Civil de la PUCE. La aplicación fue desarrollada empleando la \nmetodología de Programación Orientada a Objetos, mientras que para el ciclo de vida \nde la aplicación se utilizó el modelo en Cascada. Los resultados obtenidos fueron los \nprevistos, dado que el plan de pruebas es una parte fundamental del proceso. Esto \npermitió visualizar los resultados de cada módulo del sistema, simular todas las \nsituaciones posibles que el software podría enfrentar y detectar errores o resultados \ninesperados. El investigador llegó a las siguientes conclusiones: en primer lugar, \nestablecer los objetivos del sistema es una norma básica en un proyecto, ya que estos \nobjetivos definen los alcances máximos y previenen la aparición de nuevos \nrequerimientos no contemplados desde el inicio. Además, durante el desarrollo del \nsoftware, elaborar los diagramas de casos de uso permitió entender de manera óptima \nel problema a resolver y cómo implementarlo. Asimismo, para facilitar el uso del \nsistema, se desarrolló un manual de usuario detallado y coherente que explica cada \nuno de los procesos y funciones implementadas en el sistema. \n"
+  },
+  {
+   "page": 31,
+   "chars": 2241,
+   "scanned_no_text": false,
+   "text": "18 \nRodríguez (2022) elaboró una investigación que llevó por título “Software para \nel seguimiento, la gestión y el control de proyectos de grado en el Departamento de \nElectrónica”, y tuvo el objetivo general de “desarrollar una herramienta web para la \ngestión y administración del proceso de trabajos de grado en el Departamento de \nelectrónica de la Pontificia Universidad Javeriana”, se empleó la metodología de la \ngestión por procesos de negocio, conocida como Business Process Management \n(BPM) por sus siglas en inglés, que es altamente útil ya que se centra en los procesos \nempresariales. Los resultados de las pruebas preliminares durante el desarrollo del \nproyecto fueron favorables. Posteriormente, se realizaron pruebas con los usuarios \nfinales, donde se hicieron los ajustes y correcciones necesarias en colaboración con el \ndirector del proyecto. Finalmente, el sistema quedó completado y disponible para todos \nlos usuarios relacionados con la carrera de ingeniería electrónica. El investigador \nconcluyó que el software desarrollado contribuye significativamente a gestionar, \nalmacenar y realizar seguimiento del estado de los trabajos de grado del departamento \nde ingeniería electrónica. Además, se observó que, tras las pruebas realizadas, el \nsoftware tuvo una gran aceptación entre los usuarios finales. Estos últimos indicaron \nque es una herramienta eficaz para solucionar problemas y satisfacer necesidades en \nla gestión de los procesos de entrega de trabajos de grado. \nEn una investigación titulada “Análisis, diseño e implementación de un Sistema \nde gestión para seguimiento a proyectos de Titulación en la Universidad Tecnológica \nIsrael”, llevada a cabo por Coba & Coba (2017) tuvo el objetivo de implementar un \nmódulo que permita la gestión de los procesos del seguimiento de proyectos de \nprácticas pre profesionales y vinculación con la sociedad de la Universidad Tecnológica \nIsrael, utilizó la metodología inductiva - deductiva para el levantamiento de la \ninformación, debido a que observó cómo se asocian los diferentes módulos que \ncomponen al sistema y como interactúan con los usuarios, con respecto a la \nmetodología de desarrollo de software eligió Scrum por tratarse de una metodología de \n"
+  },
+  {
+   "page": 32,
+   "chars": 2224,
+   "scanned_no_text": false,
+   "text": "19 \ndesarrollo ágil y flexible. El resultado alcanzado fue la entrega de un software o \naplicación con un entorno web intuitivo para los usuarios y con funcionalidades para \ngestionar los procesos del departamento universitario. El investigador concluyó que la \nautomatización del proceso de prácticas preprofesionales y vinculación con la sociedad \nmejoró significativamente los tiempos y la eficiencia del proceso, en comparación con \nel método anterior que utilizaba consultas en hojas de Excel. Además, se diseñó una \nbase de datos que permite un mejor control de los registros de proyectos, ofreciendo \nherramientas que facilitan y agilizan el acceso a la información solicitada. \nArboleda (2021) realizó una investigación que tuvo el título “Apoyo técnico para \nla implementación de software de control de costos y presupuestos para las obras en \netapa de pre-construcción y construcción de la empresa Obras & Terrenos S.A.S.”, y \nformuló el objetivo general de “apoyar técnicamente en las actividades de seguimiento, \ncontrol de costos, presupuestos y programación de los proyectos en etapas de \npreconstrucción y construcción de la empresa Obras & Terrenos S.A.S mediante la \nimplementación del software de administración de obras”. La metodología empleada \npara el desarrollo del proyecto sigue un patrón bien conocido que incluye las siguientes \netapas: inicio, planificación, ejecución, control y cierre del proyecto. El investigador \nconcluyó que, para lograr un uso adecuado y obtener los resultados esperados, los \nusuarios deben poseer conocimientos preferiblemente avanzados en el manejo de la \ninterfaz del programa. Las empresas que adquieren un software especializado en la \ngestión de obras pueden beneficiarse significativamente, siempre y cuando el programa \nse maneje adecuadamente. Sin embargo, si no se organizan planes de trabajo y no se \ncuenta con personal capacitado para usar el software, este se convierte en un gasto \ninnecesario y puede ocasionar grandes pérdidas económicas para la empresa. \n2.2. \nAntecedentes nacionales \nLa investigación intitulada “Sistema interoperable y orientado a seguimiento y \nmonitoreo de proyectos” fue elaborada por Yanqui (2020) y formuló el objetivo general \n"
+  },
+  {
+   "page": 33,
+   "chars": 2267,
+   "scanned_no_text": false,
+   "text": "20 \nde desarrollar un sistema web que permita automatizar el proceso de seguimiento y \nmonitoreo del avance técnico y financiero de transferencias hasta la liquidación de la \nobra, incluyendo el vencimiento de convenios a fin de garantizar el control y cautelar el \ncumplimiento del proceso. La metodología empleada fue de tipo aplicada ya que se \norienta a conseguir un propósito práctico e inmediato para solucionar un problema \nconcreto. Los resultas conseguidos fueron la elaboración completa de la aplicación, se \nelaboró el modelamiento definiendo las normas comerciales, esquema de casos de uso \nempresariales, paradigma de análisis corporativo, especificaciones del sistema, así \ncomo el desarrollo del sistema contemplando el prototipo del sistema, modelo de datos \ny los casos de prueba. El investigador concluyó que con la culminación del programa \ninteroperable se consiguió mejorar la comunicación entre los organismos involucrados \ny proporcionó un mejor control del estado de los recursos transferidos a los proyectos \nde infraestructura vial, del mismo modo este sistema posibilita que las entidades \ngubernamentales involucradas trabajen con información centralizada que muestre el \nestado real en el que se encuentra la transferencia de los recursos a PI y que simplifique \nla toma de decisiones en la administración de recursos transferidos. \nEn una investigación desarrollada por Lucas (2019) elaboró una investigación \nque tiene por título “Sistema web para la administración de proyectos mineros en \nECOSERM RANCAS”, que tuvo el objetivo principal de determinar la influencia de la \nimplementación de un sistema web en el proceso de administración de proyectos \nmineros en ECOSERM RANCAS. Utilizaron la metodología de enfoque sistémico-\nHolístico lo que le permitió tener distintas perspectivas de la entidad por otro lado la \nimplementación de la app web se desarrolló en ciclos o iteraciones Sprint apoyados en \notras metodologías para las fases diseño, construcción e implementación. Los \nresultados obtenidos por el investigador fueron para la desviación de cronograma de la \nadministración de proyectos mineros, en la etapa de Pre_Test consiguió una media de \n83,35%, del mismo modo, en la etapa de Pos_Test se tuvo un valor de 94,55%, la \n"
+  },
+  {
+   "page": 34,
+   "chars": 2235,
+   "scanned_no_text": false,
+   "text": "21 \ndesviación de costos de la administración de proyectos mineros, en la etapa de \nPre_Test consiguió una media de 84,58%, así mismo, la etapa Pos_Test se tuvo un \nvalor de 101,10%. La investigadora llegó concluyó que la elaboración de un Sistema \nWeb optimiza los procesos de administración de proyectos mineros en ECOSERM \nRANCAS, del mismo modo esta implementación incidió de manera positiva en el ratio \nde desviación de cronograma y en el ratio de desviación de costos, como consecuencia \ngeneró una mejor rentabilidad dentro de la empresa en comparación con el anterior \nSistema Excel en la gestión de proyectos mineros. \nLa investigadora Dávalos en el año 2017, desarrolló una investigación que llevó \npor título “Efecto de un sistema web para el control y seguimiento de proyectos de tesis \nen la Escuela Académica Profesional de Ingeniería en Informática y Sistemas de la \nUniversidad Nacional Jorge Basadre Grohmann, Tacna - 2014”, y planteó el objetivo \ngeneral de “determinar el efecto del sistema web para el control y seguimiento de \nproyectos de tesis en la E.A.P. de Ingeniería en Informática y Sistemas de la UNJBG”. \nCon respecto a la parte metodológica se trató de tipo explicativo, de diseño pre-\nexperimental lo que implica una preprueba y una posprueba sobre un solo grupo de \nestudio. Los resultas obtenidos por la investigadora señalan que el 45% de los tesistas \ndedican entre 2 y 4 horas semanales a su investigación el 33% entre 4 y 6 horas \nsemanales y por último solo el 22% dedica más de 6 horas semanales. La investigadora \nllegó a la conclusión de que hay un efecto positivo en la revisión y trazabilidad de \nproyectos de tesis posterior al uso del sistema, esta afirmación se fundamenta en la \nobservación de que la mayoría de los plazos establecidos se cumplieron. Asimismo, se \nconstató que el sistema de seguimiento y control de proyectos de tesis fue eficaz, dado \nque el tiempo dedicado a la asesoría por parte de los docentes aumentó en un 20%. \nGalvez (2019) elaboró una investigación titulada “Sistema web para el proceso \nde control de proyectos en la empresa Hundred S.A.C.”, la cual tuvo el objetivo de \n“determinar la influencia de un sistema web en el proceso de control de proyectos en \n"
+  },
+  {
+   "page": 35,
+   "chars": 2293,
+   "scanned_no_text": false,
+   "text": "22 \nla empresa Hundred S.A.C.”, la metodología que usó en esta investigación fue de tipo \naplicada con un diseño experimental. Los resultados mostraron una gran discrepancia \nentre el ante y post de la culminación de la aplicación Web ya que para el caso de la \nvariación del cronograma en el asunto de control de proyectos se consiguió un valor de \n-31.11% en el pre-test, mientras que en el post-test fue de -4.89%. La conclusión a la \nque arribó el investigador fue la aplicación web influye positivamente en el ratio del \ncometido del costo del procedimiento de inspección de proyectos, el cual tuvo un \naumento significativo de 20% llegando a 0.95, lo que indica que el gasto realizado en \nel proyecto va de acuerdo con lo planificado. Del mismo modo concluye que el sistema \nweb tiene influencia positiva en la variación del cronograma del proceso de inspección \nde proyectos, el cual tuvo un aumento significativo de 26.22% llegando a -4.89 este \nindicador nos muestra que el progreso va de acuerdo con el cronograma planificado. \nEn una investigación realizada por Reyna en el año 2017, intitulada “Sistema \nweb integrado para mejorar el seguimiento y control de la gerencia de cobranza en la \nSUNAT - ILima”, estableció como objetivo general de su investigación “mejorar el \nseguimiento y control de la Gerencia de Cobranza en la SUNAT ILima, mediante la \nimplementación de un Sistema de información Web Integrado”, para ello utilizó la \nmetodología RUP Ágil también conocida como Proceso Unificado Ágil la cual se \ncaracterizó por la emplear casos de uso, centrandose en la arquitectura y también por \nser repetido e incremental. Los resultados conseguidos luego de la implantación del \nsistema fueron positivos ya que la percepción de los usuarios incrementó hasta \nconsiderarse sumamente importante e indispensable, con el sistema implantado el \ntiempo requerido para conseguir una información es menor a 5 min, la exactitud de los \ninformes se elevó hasta el 100% sin impresiones con el sistema y se observó que con \nel uso del sistema de información el 100% del costo se encuentra en 0,00 a 0,50 soles. \nEl investigador concluyó que el valor o calidad de los datos fue el mismo libremente de \nque se emplee un programa o no, por lo que el sistema automatizó el procedimiento de \n"
+  },
+  {
+   "page": 36,
+   "chars": 350,
+   "scanned_no_text": false,
+   "text": "23 \nregistro para su posterior búsqueda en otras palabras se redujo considerablemente el \ntiempo de obtención de esta información, en ese mismo sentido un SI de comisión \ncomercial tiene mejoría significativa en el valor del negocio de la entidad pues mejora \nla gestión de decisiones porque cuentan con los datos actualizados y en tiempo real. \n \n \n"
+  },
+  {
+   "page": 37,
+   "chars": 2093,
+   "scanned_no_text": false,
+   "text": "24 \n3. CAPITULO III: MARCO TEÓRICO \n3.1. \nBases teóricas \n3.1.1. Extreme Programming (XP) \nExtreme Programming es una metodología que implica un seguimiento \nconstante y la realización de una variedad de pruebas y ajustes incrementales en \nproyectos que requieren agilidad o que experimentan cambios frecuentes. Esta \nmetodología garantiza la alta calidad de sus entregas, ejecutadas en menos tiempo, en \nprocesos más cortos y enfocados a la satisfacción de sus clientes. Es un enfoque ágil \npara el desarrollo de software desarrollado a finales de los años 90. Se trata de una \nmetodología que busca crear sistemas de alta calidad basados en una estrecha \ninteracción con los clientes, pruebas constantes y ciclos de desarrollo cortos. El \npropósito es \"modernizar\" la secuencia tradicional de desarrollo en cascada, que \nanaliza, proyecta, implementa y prueba, entendiendo que se trata de un modelo \nburocrático y poco flexible ante un mundo en constante transformación (Sydle, 2023). \nEn ese sentido Sinnaps (2020) señala que la metodología XP es una colección \nde técnicas que mejoran la flexibilidad y la agilidad en la gestión de proyectos. También \nse conoce como programación extrema (Extreme Programming) y se enfoca en crear \nun producto que se adapte a las necesidades específicas del cliente. Por lo tanto, debe \ninvolucrarlo al máximo en el proceso de gestión del desarrollo del producto. Esta \nmetodología XP forma parte de las metodologías ágiles. No obstante, posee ciertas \ncaracterísticas. La metodología Agile también incorpora las buenas prácticas de un \nmarco de trabajo específico. En ella, hay roles de equipo claros y iteraciones que se \nrepiten una vez cada semana o tres a cinco semanas. La metodología XP se enfoca en \nla comunicación con todas las partes involucradas en el proyecto, así como con los \ndemás involucrados. Para obtener los resultados esperados por el cliente, el objetivo \nprincipal es realizar ciclos de entrega rápidos, continuos e incrementales. El software \n(u otro proyecto) se desarrolla en ciclos semanales, con reuniones regulares entre el \n"
+  },
+  {
+   "page": 38,
+   "chars": 1191,
+   "scanned_no_text": false,
+   "text": "25 \nequipo de desarrollo y el cliente. \nLa metodología ágil es recomendada para cualquier empresa o entidad pública \nque quiera optimizar sus procesos e impulsar una transformación digital en el escenario \nactual y cambiante. Para operar con un enfoque en los procesos, es necesario \nmapearlos, tanto los procesos actuales como los transformados y mejorados, en lo que \nllamamos mapeo AS IS, TO BE y TO DO. \nFigura 1 \nSecuencia de mapeo de procesos. \nNota. Extraído de Sydle (2023) \nEn la figura 1, se visualiza los procesos de principio a fin, es posible identificar \nlos cuellos de botella así encontrar una solución. \n3.1.2. Aplicación Web \nUna aplicación web también conocida como Webapps es una categoría de \nsoftware que se centra en redes y agrupa una amplia variedad de aplicaciones, \ntécnicamente son un conjunto de archivos de hipertexto vinculados que muestran \ninformación con el uso de texto y gráficas limitadas, sin embargo han evolucionado de \nmanera exponencial en estos últimos años ya que brindan nuevas prestaciones a los \nusuarios y son capaces de interactuar con bases de datos empresariales y corporativas \nasí como con aplicaciones de los negocios (Pressman, 2010). \n"
+  },
+  {
+   "page": 39,
+   "chars": 2003,
+   "scanned_no_text": false,
+   "text": "26 \nEn ese mismo sentido Somerville (2011) define al software como programas de \ncómputo y su documentación asociada para un adecuado funcionamiento, estos se \npueden desarrollar a petición del cliente para solucionar problemas y automatizar \nprocesos, el desarrollo de la World Wide Web tuvo un profundo efecto en todas las \npersonas y empresas ya que los programas pueden ser ejecutados en computadoras \nlocales y a través de internet poder realizar consultas a servidores ubicados en \ncualquier parte del mundo, esto hace que la información ubicada en cualquier punto a \nnivel mundial sea accesible en cuestión de segundos, para ello se utilizan navegadores \nque funcionan independientemente del sistema operativos con una interfaz amigable y \ncon funcionalidades que han ido implementándose a lo largo de los años. \nLa funcionalidad es una característica del software que indica la capacidad que \neste tiene para proporcionar las capacidades que satisfagan las necesidades \nrequeridas o implícitas cuando se usa bajo las condiciones establecidas (Constanzo, \n2014). \nLa confiabilidad generalmente es considerada como uno de los factores más \nimportantes del software, ya que esta cuantifica y mide la cantidad de fallas y errores \nque pueden conducir a graves consecuencias en los sistemas críticos para la seguridad \nasí como en su eficiencia y rendimiento, es por ello por lo que para tener un software \nmás confiable se deben estimar y predecir sus potenciales fallos (Amin, Grunske, y \nColman, 2013). \nPor otro lado la usabilidad dentro del campo del desarrollo Web es otra característica \nde calidad y que estudia la forma de diseñar sitios Web para que los usuarios no tengan \ncomplicaciones al momento de interactuar con ellos, que sea de la forma más fácil y \namigable, cómoda e intuitiva posible, para ello se debe desarrolla una interfaz adecuada \ny eficiente para que al momento de requerir información del sistema no se redunde en \ncódigo (Sanchez, 2011). \n3.1.3. Gestión de proyectos  \n"
+  },
+  {
+   "page": 40,
+   "chars": 956,
+   "scanned_no_text": false,
+   "text": "27 \nLa gestión de proyectos los cuales aportan de manera significativa a la presente \ninvestigación. \nUn proyecto es un proceso único y temporal que implica a un conjunto de \nactividades planificadas, ejecutadas y evaluadas que necesitan de recursos humanos, \ntécnicos y financieros limitados, para cumplir unos objetivos en un plazo establecido \ncon anterioridad, tienen un comienzo y un final claramente reconocibles (Iñigo & Iosune, \n2010). \nAmpliando este concepto el PMI (2021) lo define como un esfuerzo temporal \nque se ejecuta para crear un producto, servicio o resultado único. Indica una naturaleza \ntemporal de los proyectos porque tienen un principio y un final claramente identificado, \npara la ejecución del trabajo del proyecto o de alguna fase del trabajo del proyecto. \nCon respecto a la gestión de proyectos existen autores que señalan el involucramiento \ndel tiempo, los recursos y herramientas para el cumplimiento de objetivos. \n \n \n \n"
+  },
+  {
+   "page": 41,
+   "chars": 655,
+   "scanned_no_text": false,
+   "text": "28 \nFigura 2 \nCiclo de vida de un proyecto. \n \nFuente. Guía de los fundamentos para la dirección de proyectos PMBOK (2021). \nEn la figura 2, se muestra el ciclo de la gestión de proyectos con un propósito \nespecífico, se ejecutan de manera secuencial y ordenada hasta el cierre de los \nproyectos. \nEn ese mismo sentido, PMI indica que la gestión de proyectos es la utilización \nde las habilidades, conocimientos y técnicas para la ejecución de proyectos de manera \neficiente y eficaz, para ello se siguen diferentes fases del proyecto que cumplen un \npropósito específico, se ejecutan de manera secuencial y ordenada llegar hasta el \ncierre de este. \n \n \n"
+  },
+  {
+   "page": 42,
+   "chars": 1277,
+   "scanned_no_text": false,
+   "text": "29 \nFigura 3 \nFases de un proyecto. \n \nFuente. Guía de los fundamentos para la dirección de proyectos PMBOK (2021). \nEn la figura 3, se muestra las fases del proyecto, proceso de inicio es en donde \nse define el proyecto, en la fase de planificación crea objetivos del proyecto, en la fase \nde ejecución se usa la información recopilada para ejecutar el proyecto y en la última \nfase se analiza con todos los participantes del proyecto. \nComo ya se ha indicado con anterioridad la gestión de proyectos se encarga de \nadministrar y controlar de manera eficiente los recursos requeridos, un proyecto cuenta \ncon tres restricciones básicas las cuales comprenden el alcance, tiempo y costo, estas \nrestricciones tienen una relación directa sobre los resultados e incluso podrían afectar \nel mismo producto final, son tan relevantes que llegan a determinar el éxito o el fracaso \nde un proyecto (Barreto, 2020). \nPor su parte GERENS (2016) nos manifiesta que la triple restricción puede ser \naplicada a todos los proyectos de manera independiente de su tamaño o naturaleza y \nque estas variables están estrechamente relacionadas con el producto final, ya que \ncualquier cambio en alguna de estas podría afectará de manera inevitable a las otras, \nsea positiva o negativamente. \n \n \n"
+  },
+  {
+   "page": 43,
+   "chars": 1437,
+   "scanned_no_text": false,
+   "text": "30 \nFigura 4 \nTriple restricción de un proyecto. \nLos proyectos se ven limitados por tres factores: el presupuesto o el costo, el tiempo y \nel alcance. Estas restricciones están ligadas entre sí. \n \n \nFuente. Extraído de http://pmanager.es/la-triple-restriccion. \n  \nEn la figura 4, se muestra que los proyectos se ven limitados por tres factores: \nel presupuesto o el costo, el tiempo y el alcance. Estas restricciones están ligadas entre \nsí. \nEl tiempo es uno de los recursos más valiosos en la ejecución de los proyectos, \ny que por su naturaleza es limitada, es en base a este recurso que se realizan los \ncronogramas de actividades y se le denomina calendarización del proyecto, lo que nos \nayuda a evaluar si un proyecto aprovecha adecuadamente el tiempo y otros recursos, \npara desarrollar esta calendarización se realizan a través de herramientas gráficas la \nmás conocida de ellas es el diagrama de Gantt, este diagrama consiste en una matriz \nde doble entrada, en donde la primera columna indica las actividades a realizarse y las \nfilas señalan el tiempo de duración (Fernández, 2002). \nEn esa misma línea, otra de las restricciones más relevantes dentro de la \ngestión de proyectos es el costo, ya que también es un recurso muy limitado, en base \na esta se realiza el presupuesto del proyecto donde se asigna un monto de dinero a la \nejecución de cada actividad y la suma de estos montos darán el coste total del proyecto. \n"
+  },
+  {
+   "page": 44,
+   "chars": 1879,
+   "scanned_no_text": false,
+   "text": "31 \nGeneralmente el mayor coste en el proyecto corresponde al pago del personal, por lo \ntanto es muy importante controlar el número de horas que se asignan a cada actividad \npara que no se malgaste un recurso tan valioso y limitado (Iñigo & Iosune). \n \n3.1.4. Inversión Pública \nEs toda intervención limitada en el tiempo que utiliza total o parcialmente \nrecursos públicos, con el fin de crear, ampliar, mejorar, modernizar o recuperar bienes \no servicios que se brinda a la población, teniendo como fin mejorar la calidad de vida \nde la población y el desarrollo de la comunidad (MEF, 2012). \n \n3.1.5. Proyecto de Inversión Pública (PIP) \nEs el principal instrumento de la inversión pública, definidos como la \nherramienta que utiliza el estado para que sus inversiones produzcan cambios que \nmejoren la calidad de vida de la población a través de la generación, ampliación e \nincremento de la cantidad y/o calidad de los servicios públicos que brinda (MEF, 2012). \n3.1.6. Invierte Pe \nEs el nuevo sistema de inversión pública que entró en vigor en febrero del 2017 \ncon el Decreto Legislativo (D.L. N°1252) derogando a la Ley del SNIP (N°27293). Este \n“Sistema Nacional de Programación Multianual y Gestión de Inversiones”, funciona \ncomo una guía para que el Estado pueda gestionar de manera efectiva los recursos \npúblicos. Su objetivo es orientar el uso de los recursos públicos destinados a la \ninversión para la efectiva prestación de servicios y la provisión de la infraestructura \nnecesaria para el desarrollo del país (MEF., 2017, p.1). \nEste sistema tiene como principal característica establecer un mecanismo de \nseguimiento y evaluación de la ejecución y funcionamiento post-inversión de los \nproyectos de inversión. Estas características van alineadas con las mejores prácticas \nprevalecientes en el mundo (Von Hesse, 2016). El responsable comisionado de inicar \n"
+  },
+  {
+   "page": 45,
+   "chars": 1923,
+   "scanned_no_text": false,
+   "text": "32 \nesta iniciativa es la “Dirección General de Programación Multianual de Inversiones” \n(DGPMI) del “Ministerio de Economía y Finanzas” (MEF) quien es la autoridad rectora, \ntécnica y normativa del sistema; y en las entidades nacionales y subnacionales la \nencargada de estas acciones es la Oficina de Programación Multianual de Inversiones \n(OPMI). \n3.1.7. Ciclos de Inversión del Invierte Perú \nLa etapa del ciclo de inversiones abarca: la planificación a largo plazo de las \ninversiones, la formulación y evaluación de proyectos, su ejecución y posterior \nfuncionamiento. Que de acuerdo con el Ministerio de Economía y Finanzas (MEF, \n2017) se define las cuatro (4) fases del ciclo inversión: \n- \nProgramación Multianual de Inversiones (PMI) \nLa Oficina de Programación Multianual de Inversiones (OPMI) de cada sector \nes la que está a cargo de realizar un diagnóstico sobre las necesidades territoriales. En \ncolaboración con la Unidad Formuladora (UF), se llevará a cabo este proceso. Por \nejemplo, se abordarán proyectos como la edificación de escuelas o la implementación \nde sistemas de suministro de agua potable. Los resultados de este análisis se \ntransformarán en indicadores y metas, los cuales serán compartidos con la Oficina de \nProgramación Multianual de Inversiones (OPMI) de cada Gobierno Regional y Local. \nEstas oficinas elaborarán un Plan Multianual de Inversiones (PMI) que contemplará \nproyectos para los próximos 3 años. \nLa Oficina de Programación Multianual de Inversiones (OPMI) del sector, en \ncolaboración con las OPMI de cada Gobierno Regional y Local, con base en los \nobjetivos establecidos, desarrolla la cartera de inversiones. Esta cartera debe \nespecificar la fuente de financiamiento, el método de ejecución, el presupuesto \nestimado y los plazos previstos para cada proyecto. \n- \nFormulación y Evaluación \nNo todos los proyectos considerados en el PMIE serán ejecutados. Esta etapa \n"
+  },
+  {
+   "page": 46,
+   "chars": 1355,
+   "scanned_no_text": false,
+   "text": "33 \nsirve de filtro para la ejecución del proyecto. Se formulan los proyectos y se evalúa su \npertinencia en los niveles de financiamiento, operación y mantenimiento. Dependiendo \ndel proyecto se elaborarán las fichas técnicas. En proyectos simples o recurrentes se \nutilizan fichas predefinidas. Para inversiones menores a 750 UIT existen fichas \nsimplificadas. Las que superen los 15 mil UIT requieren estudios a nivel de perfil. Las \nque superan los 407 mil UIT exigen estudios de nivel de perfil reforzado. \nLa evaluación de las fichas técnicas o de los estudios de pre-inversión la realiza \nla Unidad Formuladora (UF). Esta, además, registra el proyecto en el Banco de \nInversiones, así como el resultado de la evaluación. \nFigura 5 \nLas fases del ciclos de Inversión \n \nFuente. Ciclos de inversión del Invierte Perú Invierte.pe (2017) \nEn la figura 5, se muestra las 4 fases del proyecto según el sistema nacional de \nprogramación multianual y gestión de inversiones. \n3.1.8. Ley de contrataciones del estado \nLa Ley 30225 o “Ley de Contrataciones del Estado” es el reglamento diseñado \npara fomentar y regular las adquisiciones de bienes, servicios y obras por parte del \ngobierno y sus entidades públicas. Se fundamenta en la gestión orientada a resultados \ny en la optimización del valor de los recursos públicos destinados a estas inversiones. \n"
+  },
+  {
+   "page": 47,
+   "chars": 1783,
+   "scanned_no_text": false,
+   "text": "34 \nExisten principios que rigen las contrataciones del Estado, puesto que se \ndesarrollan sobre la base de los siguientes principios, sin perjuicio de la aplicación de \notros principios generales del derecho público que resulten aplicables al proceso de \ncontratación (Instituto Hegel, 2021). \n3.2. \nMarco conceptual \nOSCE: Es el Organismo Supervisor de las Contrataciones del Estado, esta \nsupervisa los procesos de contratación pública que realizan las entidades del Estado, \na fin de que sean íntegros, eficientes y competitivos, en beneficio de los ciudadanos \n(Ley 30225, 2014). \nSEACE: Es el Sistema Electrónico de Contrataciones del Estado, este permite \nel intercambio de información y difusión sobre las contrataciones del Estado, así como \nla realización de transacciones electrónicas, se efectúa en el marco de los principios \nde transparencia y publicidad que rigen las contrataciones públicas, dicha información \nes de acceso libre y gratuito a través del Seace (Gob.pe, 2023). \nRequerimiento: El área usuaria requiere los bienes, servicios u obras a \ncontratar, siendo responsable de formular las especificaciones técnicas, términos de \nreferencia o expediente técnico, respectivamente, así como los requisitos de \ncalificación; además de justificar la finalidad pública de la contratación (Ley 30225, \n2014). \nContrato: Es un pacto de obligaciones y derechos entre dos personas (jurídicas \ny/o naturales) que se comprometen a respetar los términos acordados por escrito, y se \nsometen a las leyes del país para resolver cualquier disputa surgida en torno a los \ntérminos del acuerdo (Concepto.de, 2023). \nValorización de obra: Es la cuantificación económica de un avance físico en la \nejecución de la obra, realizada en un período determinado (Ley 30225, 2014). \n \n \n"
+  },
+  {
+   "page": 48,
+   "chars": 1723,
+   "scanned_no_text": false,
+   "text": "35 \n4. CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN \n4.1. \nTipo, nivel y diseño de investigación \n4.1.1. Tipo de investigación \nSegún Ñaupas et al. (2014) una investigación es de tipo aplicada cuando esta \nse orientada a resolver problemas de cualquier actividad humana de manera objetiva, \nteniendo como base la investigación básica y los conocimientos generados por \nanteriores investigadores (p. 61). \nEn ese mismo sentido, Valderrama (2013) indica que la investigación de tipo \naplicada también es conocida como empírica o práctica, la cual se encuentra \nestrechamente relacionada a la investigación básica ya que depende de sus aportes \nteóricos y descubrimientos, este tipo de investigación prima la aplicación inmediata de \nlos conocimientos adquiridos sobre un problema concreto (p. 39). \nEn consecuencia, con lo antes manifestado la presente investigación fue de tipo \naplicada. \n4.1.2. Nivel de investigación \nSegún Schwarz (2017) la investigación de nivel aplicativa es del nivel más \nelevado y requiere desarrollar una aplicación de la solución al problema de \ninvestigación, para ello se requiere realizar una evaluación minuciosa al problema con \nel objetivo de proponer una intervención, tratamiento o solución, en este nivel la \nintervención realizada se hace sobre la población de estudio para lograr un resultado \npositivo y transformar positivamente una realidad (p. 39). \nPor lo que, al desarrollar un sistema web e implantarlo en la municipalidad para \nrealizar el seguimiento del avance físico, así como el avance económico se estuvo \nefectuando una intervención, de esta manera se brindó una alternativa de solución a \nun problema concreto, por lo tanto, la presente investigación fue aplicativa. \n \n"
+  },
+  {
+   "page": 49,
+   "chars": 954,
+   "scanned_no_text": false,
+   "text": "36 \n4.1.3. Diseño de investigación \nHernandez & Mendoza (2018) indican que una investigación es de diseño \npreexperimental porque su grado de control es mínimo, se trata de un diseño donde \nsolo hay un grupo único (p. 163). \nLa presente investigación se planteó con un diseño preexperimental donde hubo \nun diseño de posprueba con un solo grupo, a este grupo se le aplica una medición u \nobservación previa al estímulo o tratamiento experimental, posteriormente se le \nadministra el tratamiento y por último se le aplica una medición posterior al estímulo, \nsu representación es la siguiente: \nG  \n01         \nX \n \nO2 \nLeyenda \nG = Grupo \nX = Intervención, estimulo o tratamiento experimental \nO1 = Preprueba, observación o medición antes de X \nO2 = Posprueba, observación o medición después de X \n \n4.2. \nVariables y operacionalización \nVariable independiente: Aplicación webFQT \nVariable dependiente: Seguimiento de proyectos de inversión publica \n \n \n"
+  },
+  {
+   "page": 50,
+   "chars": 1667,
+   "scanned_no_text": false,
+   "text": "37 \nTabla 1.  \nMatriz de operacionalización de variables \nFuente. Elaboración propia. \n4.3. \nPoblación, muestra y muestreo \nArias (2012) manifiesta que cuando la población es reducida o por la cantidad \nde elementos que la integran, resulta de fácil acceso a su totalidad, no será necesario \nextraer un porcentaje o muestra representativa. Entonces como resultado, se podrá \nextraer datos de toda la población objetivo (p. 83). \nEn ese sentido en la presente investigación la población estuvo integrada por \n28 proyectos los cuales están siendo gestionados por la municipalidad de El Porvenir, \nVariable \nIndependie\nnte \nDefinición \nConceptual \nDefinición \noperacional \nDimension\nes \nIndicadores \nAplicación \nwebFQT \nConocida como \nWebapps, es un \nconjunto \nde \narchivos \nde \nhipertexto \nvinculados \n(Pressman, Op. \nCit.). \nEs una Webapps \ncon un conjunto \nde archivos de \nhipertexto \nvinculados \nque \nnos \npermite \nevaluar \nel \nseguimiento \nde \nproyectos \nde \ninversión \nFuncionalid\nad \nEficacia \nen \nlas consultas \nConfiabilida\nd \nInformación \nsegura \nUsabilidad \nFácil acceso \nEl software es \nintuitivo \nVariable \nDependien\nte \nDefinición \nConceptual \nDefinición \noperacional \nDimension\nes \nIndicadores \nSeguimient\no de \nproyectos \nde \ninversión \npública \nAgilizar \nla \nrealización \nde \ntareas \npara \ntardar el menor \ntiempo posible \nen completar el \nproyecto (PMI, \nOp. Cit.). \nUso \nde \nlas \nhabilidades, \nconocimientos y \ntécnicas \npara \nrealizar \nel \nseguimiento \nde \nproyectos \nde \ninversión pública \nen el distrito El \nPorvenir. \nAvance \nfísico \n% \nde \nevaluación de \nlos proyectos \natrasado, \nparalizados y \nculminados \nPresupuest\no \n \nAvance \npresupuestal \n"
+  },
+  {
+   "page": 51,
+   "chars": 1595,
+   "scanned_no_text": false,
+   "text": "38 \na esta totalidad se les hizo el seguimiento y control para clasificarlos en diferentes \nestados. \nA continuación, se muestran los diferentes estados en la fase de ejecución en \nel que se pueden encontrar a los proyectos: \nTabla 2.  \nEstados de los proyectos en ejecución. \nNro. \nEstado \n1 \nAtrasado \n2 \nParalizado \n3 \nProceso de ejecución \n4 \nCulminado \nFuente. elaboración propia. \nLa muestra está conformada por los 28 proyectos, este número es la totalidad \nque conforman la población, para ello se empleó un muestreo no probabilístico por \nconveniencia ya que la selección de ellos no depende de probabilidades, por el \ncontrario, están convenientemente disponibles para la investigadora. \n4.4. \nTécnicas e instrumentos de recolección de datos \nSegún Behar (2008) en una investigación las técnicas de recolección de datos \nllevan a la corrobación de problemas planteados. Por lo que, cada tipo de indagación \ndebe determinar las técnicas que utilizarán ya que cada técnica tiene sus \nparticularidades y establecen sus diferentes herramientas, instrumentos o medios que \nserán aplicados (p. 55). \nLa técnica aplicada fue la encuesta porque se aplicaron un conjunto de \npreguntas cerradas elaboradas por el investigador a los entrevistados identificados en \nel apartado anterior, quienes solo pudieron marcar una alternativa por pregunta. \nBernardo y Calderero (2000) indican que en una investigación los instrumentos \nson recursos que ayudan al investigador a acercarse al fenómeno de estudio y extraer \nde información relevante de ellos. Cada instrumento es conformado por dos aspectos \n"
+  },
+  {
+   "page": 52,
+   "chars": 1832,
+   "scanned_no_text": false,
+   "text": "39 \ndiferentes y son los siguientes: una forma y un contenido. \nEl instrumento principal para la captura de datos fue el cuestionario con un \nconjunto de preguntas estructuradas y con la finalidad de capturar los valores de los \nindicadores tanto de la variable dependiente como independiente. \n4.5. \nProcedimientos \nEl procedimiento de recolección de la información consiste en un proceso \nplaneado cuidadosamente el cual debe seguirse paso a paso, para que la obtención de \nresultados sean coherentes y de esta manera contribuyan de forma favorable al logro \nde los objetivos propuestos en la investigación, este proceso es muy importante ya que \nde lo contrario no permitió evaluar la confiabilidad y validez tanto del proceso mismo \ncomo de la información que está siendo recolectada, por lo que la información podría \nno ser relevante y en consecuencia no reflejaría la realidad o el fenómeno que se \npretende estudiar (Gallardo & Moreno, 1999, p.26). \nSe realizará una entrevista con el personal involucrado en la gestión de los \nproyectos, para poder obtener información de primera mano sobre la ejecución de los \nproyectos. \nEstos proyectos serán cargados a la base de datos del software elaborado, con \nuna categoría que describa del estado en el que se encuentra actualmente. \nSe realizarán reportes del avance físico y económico de los proyectos. \n4.6. \nMétodo de análisis de datos \nSegún Hernandez & Mendoza (Ob. Cit.) el método de análisis de datos es un \nprocedimiento estadístico en donde se procesan los modelos que representan los \nresultados del fenómeno estudiado y que estos resultados numéricos siempre se \ninterpretan en el contexto estudiado, para obtener un análisis adecuado se debe seguir \nuna ruta y los pasos ordenados. \nEl software utilizado para el procesamiento de datos es la hoja de cálculo Excel, \n"
+  },
+  {
+   "page": 53,
+   "chars": 1219,
+   "scanned_no_text": false,
+   "text": "40 \nya que permite trabajar con diferentes fórmulas matemáticas y generar gráficos acordes \na lo necesitado en esta investigación, posterior a ello se utilizará el software SPSS en \ntodo el proceso estadístico para su análisis e interpretación. \nLos pasos son los siguientes: \nPaso 1: Obtención de información  \nPaso 2: Realizar la contrastación de valores obtenidos \nPaso 3: Almacenar los datos para su posterior procesamiento \nPaso 4: Formar la regla de decisión \nPaso 5: Determinar la decisión  \nPaso 6: Expresar la decisión obtenida en términos de los problemas \n \n4.7. \nAspectos éticos \nLa presente es un trabajo de investigación original, y para su redacción se siguió \nlos lineamientos de las nomas APA séptima edición como lo indica el reglamento de la \nUNAJMA; se respetó las ideas y la propiedad intelectual de otros autores, así como \nlibros y revistas indizadas y se evidencia en el apartado de referencias. \nLa ética es una parte muy importante de esta investigación por lo que, tanto los \ndatos recolectados como los resultados obtenidos son tratados de manera objetiva y \nno han sido manipulados en ningún sentido, todo ello para poder reflejar el fenómeno \nde estudio lo más cercano a la realidad. \n \n \n"
+  },
+  {
+   "page": 54,
+   "chars": 1212,
+   "scanned_no_text": false,
+   "text": "41 \n5. CAPITULO V: RESULTADOS \n5.1. \nDescripción de los resultados obtenidos \nJuicio de expertos \nTabla 3  \n“Validez de instrumentos por juicio de expertos en las variables”. \nExpertos \n \nCriterio \n \nObs. \nClaridad \nCoherencia Relevancia \nJoel Palomino Cáceres  \n✓ \n✓ \n✓ \nAplicable \nYuri Cordero Huamani \n✓ \n✓ \n✓ \nShomara Serrano Castillo \n✓ \n✓ \n✓ \n \nEn la tabla 3 se observa los validadores del instrumento: Aplicación WEBFQT y \nSeguimiento de proyectos de inversión pública, estos fueron evaluadas por juicio de \nexpertos, establecieron su validez porque cumplieron con los criterios determinados. \nTabla 4  \n“Prueba de confiabilidad de la variable independiente”. \nVariable/Dimensión \nÍtems \nAlfa de Cronbach \nNivel \nVar indep: Aplicación WEBFQT \n12 \n0.872 \nBuena \nD1: Funcionalidad \n4 \n0.766 \nAceptable \nD2: Confiabilidad \n4 \n0.719 \nAceptable \nD3: Usabilidad \n4 \n0.801 \nBuena \nNota. Elaboración propia. \nPara determinar la confiablidad el instrumento fue aplicado en un grupo piloto \nde 15 usuarios, en la Tabla 4 se evidencia que los datos de la variable Aplicación \nWEBFQT y sus tres dimensiones tienen un nivel de confiabilidad entre buena y \naceptable, en consecuencia, que el instrumento es confiable. \n"
+  },
+  {
+   "page": 55,
+   "chars": 674,
+   "scanned_no_text": false,
+   "text": "42 \nTabla 5  \nPrueba de confiabilidad de la variable dependiente. \nVariable/Dimensión \nÍtems \nAlfa de Cronbach \nNivel \nVar depen: Seguimiento de proyectos de \ninversión publica \n8 \n0.892 \nBuena \nD1: Avance físico \n4 \n0.866 \nBuena \nD2: Presupuesto \n4 \n0.729 \nAceptable \n \nDel mismo modo, el instrumento fue aplicado en un grupo piloto de 15 usuarios, \nen la Tabla 5 se evidencia que los datos de la variable Seguimiento de PI pública y sus \ndos dimensiones tienen un nivel de confiabilidad entre buena y aceptable, en \nconsecuencia, el instrumento es confiable. \nTabla 6  \nPorcentajes de proyectos culminados. \nCulminación del proyecto \nN \n% \nNo \n17 \n60,71%\nSi \n11 \n39,29%\n \n"
+  },
+  {
+   "page": 56,
+   "chars": 505,
+   "scanned_no_text": false,
+   "text": "43 \nFigura 6 \nCantidad de proyectos culminados. \n \nDe la figura 6 y tabla 6 se puede observar el porcentaje de proyectos culminados \ny que fueron gestionados por la municipalidad de El Porvenir, de la totalidad de \nproyectos 60,71% no fueron culminados y el 39,29% si llegaron a culminarse, de estos \nresultados se puede evidenciar que un porcentaje menor corresponde a los proyectos \nterminados. \nTabla 7  \nProyectos que culminaron con el presupuesto asignado. \n \nN \n% \nNo \n5 \n45,45%\nSi \n6 \n54,55%\n \n \n \n"
+  },
+  {
+   "page": 57,
+   "chars": 645,
+   "scanned_no_text": false,
+   "text": "44 \nFigura 7 \nCulminación de proyectos con el presupuesto asignado. \n \nDe la figura 7 y tabla 7 se puede observar que el 54,55% de proyectos si \nculminaron con el presupuesto asignado inicialmente y el 45,45% no culminó el \nproyecto con su respectivo presupuesto por el contrario requirió de algún tipo de \nadenda, de estos resultados obtenidos se puede evidenciar que un porcentaje cercano \na la mitad si llegó a finiquitar con el presupuesto establecido en la etapa de \nplanificación. \nTabla 8  \nEstado de proyectos. \nEstado \nN \n% \nAtrasado \n2 \n7,14%\nParalizado \n8 \n28,57%\nProceso de ejecución \n7 \n25,00%\nCulminado \n11 \n39,29%\nTotal \n28 \n100%\n"
+  },
+  {
+   "page": 58,
+   "chars": 852,
+   "scanned_no_text": false,
+   "text": "45 \nFigura 8 \nHistograma sobre el estado de proyectos. \n \nDe la figura 8 y tabla 8 se puede observar que el 39,29% de los proyectos se \nencuentran como culminado, el 28,57% como paralizado, 25,00% se encuentra en \nproceso de ejecución y el 7,14% en atrasado, de estos resultados obtenidos se puede \nevidenciar que el estado de proyectos de mayor porcentaje es el de culminado y el de \nmenor porcentaje es el atrasado. En ese mismo sentido el software implementado \nmuestra el reporte de los estados de proyectos el cual se observa en el Anexo 17. \nSe aplicó el instrumento con confiabilidad demostrada y validación a través de \nlos expertos, a los empleados de la municipalidad de El Porvenir, antes de la \nimplantación del software para determinar el nivel de Seguimiento de proyectos de \ninversión pública, obteniendo los siguientes resultados: \n \n \n"
+  },
+  {
+   "page": 59,
+   "chars": 986,
+   "scanned_no_text": false,
+   "text": "46 \nFigura 9  \nHistograma de seguimiento de proyectos antes de la implantación del software \n \nSe observa en la figura 9 que los trabajadores encuestados en un 75% perciben \ncomo nivel bajo la trazabilidad de PI pública en la Municipalidad de El Porvenir, el \n20.83% perciben como medio y solo el 4.17% como nivel alto. \nDel mismo modo se refleja en el siguiente cuadro estadístico: \nTabla 9  \nInstrumento aplicado antes de la implantación del software. \nNivel \nf \n% \nBajo \n18 \n75.00 \nMedio \n5 \n20.83 \nAlto \n1 \n4.17 \nTotal \n24 \n100 \n \nSe aprecia en la tabla 9 que los trabajadores encuestados en un 75% perciben \ncomo nivel bajo la trazabilidad de PI pública en la Municipalidad de El Porvenir, el \n20.83% perciben como medio y solo el 4.17% como nivel alto. \nPosterior a la implantación del software aplicativo WEBFQT se realizó una \nnueva observación a los mismos trabajadores para determinar la diferencia que hay \nrespecto al uso del aplicativo, los resultados son los siguientes: \n"
+  },
+  {
+   "page": 60,
+   "chars": 797,
+   "scanned_no_text": false,
+   "text": "47 \nFigura 10  \nHistograma de seguimiento de proyectos posterior a la implantación del software \n \nSe evidencia en la figura 10 que los trabajadores encuestados en un 58.33% \nperciben como nivel alto el seguimiento de PI pública en la Municipalidad de El \nPorvenir, el 25.00% perciben como medio y solo el 16.66% como nivel bajo. \nDel mismo modo tenemos el siguiente cuadro estadístico: \nTabla 10 \nInstrumento aplicado posterior a la implantación del software. \nNivel \nf \n% \nBajo \n4 \n16.66 \nMedio \n6 \n25.00 \nAlto \n14 \n58.33 \nTotal \n24 \n100 \n \nSe aprecia en la tabla 10 que los trabajadores encuestados en un 58.33% \nperciben como nivel alto el seguimiento de proyectos de inversión pública en la \nMunicipalidad de El Porvenir, el 25.00% perciben como medio y solo el 16.66% como \nnivel bajo. \n \n \n"
+  },
+  {
+   "page": 61,
+   "chars": 788,
+   "scanned_no_text": false,
+   "text": "48 \n5.2. \nAnálisis inferencial \nSe elaboró la prueba de normalidad obteniendo los siguientes resultados: \nTabla 11  \nPrueba de normalidad \nVariable/Dimensión \nShapiro Wilk \nEstadístico \ngl \nSig. \nAplicación WEBFQT \n0.188 \n24 \n0.000 \nFuncionalidad \n0.176 \n24 \n0.000 \nConfiabilidad \n0.188 \n24 \n0.000 \nUsabilidad \n0.173 \n24 \n0.000 \nSeguimiento de proyectos de \ninversión pública \n0.151 \n24 \n0.000 \nNota. Elaboración propia. \nReferente a los resultas vistos en la Tabla 11, es notorio que el valor de \nsignificación de 0,000, el cual es inferior al umbral convencional de 0,05, lo que indica \nque las variables y dimensiones inquiridas no siguen una distribución normal. En \nconsecuencia, para evaluar cada hipótesis propuesta, se utilizó la prueba de Wilcoxon \ncomo método estadístico. \n \n \n"
+  },
+  {
+   "page": 62,
+   "chars": 1165,
+   "scanned_no_text": false,
+   "text": "49 \nContrastación de hipótesis \nHipótesis general \nHo: El aplicativo WebFQT no influye positivamente en el seguimiento de \nproyectos de inversión pública en la municipalidad distrital de El Porvenir. \nH1: El aplicativo WebFQT influye positivamente en el seguimiento de proyectos \nde inversión pública en la municipalidad distrital de El Porvenir. \nTabla 12  \nContrastación de hipótesis general \nSin SW – Con SW \nWilcoxon \nZ \n-3.095 \nSig. Asintótica (bilateral) \n0.002 \nN \n24 \nNota. Elaboración propia. \nDe los resultas vistos en la Tabla 12, se evidencia que el valor Sig. bilateral de \n0,002 es inferior al nivel de significancia convencional de 0,05, lo que ayuda a concluir \nque se refuta la hipótesis nula (Ho). Entonces, se puede admitir que se acepta la \nhipótesis alternativa. \nHipótesis específicas 1 \nHo: El aplicativo WebFQT no disminuye el tiempo de seguimiento de la \nejecución del presupuesto en proyecto de inversión pública en la municipalidad distrital \nde El Porvenir. \nH1: El aplicativo WebFQT disminuye el tiempo de seguimiento de la ejecución \ndel presupuesto en proyecto de inversión pública en la municipalidad distrital de El \nPorvenir. \n \n \n"
+  },
+  {
+   "page": 63,
+   "chars": 1207,
+   "scanned_no_text": false,
+   "text": "50 \nTabla 13  \nContrastación de hipótesis específica 1 \nSin SW – Con SW \nWilcoxon \nHipótesis 1 \nZ \n-3.051 \nSig. Asintótica (bilateral) \n0.000 \nN \n24 \n \nEn referencia a los resultas mostrados en la Tabla 13, se demuestra que el valor \nSig. bilateral de 0,000 es inferior al nivel de significancia de 0,05, lo que permite concluir \nque se rechaza la hipótesis nula (Ho). Entonces, se admite la hipótesis alterna. \nHipótesis específicas 2 \nHo: El aplicativo WebFQT no disminuye el tiempo en el seguimiento de la \nejecución del avance físico en proyectos de inversión pública en la municipalidad \ndistrital de El Porvenir. \nH1: El aplicativo WebFQT disminuye el tiempo en el seguimiento de la ejecución \ndel avance físico en proyectos de inversión pública en la municipalidad distrital de El \nPorvenir. \nTabla 14  \nContrastación de hipótesis específica 2 \nSin SW – Con SW \nWilcoxon \nHipótesis 2 \nZ \n-3.020 \nSig. Asintótica (bilateral) \n0.001 \nN \n24 \n \nVisto los resultas mostrados en la Tabla 14, se evidencia que el valor Sig. \nbilateral de 0,001 es menor al nivel de significancia de 0,05, lo que posibilita concluir \nque se refuta la hipótesis nula (Ho) y como efecto a ello se admite la hipótesis alterna. \n"
+  },
+  {
+   "page": 64,
+   "chars": 2118,
+   "scanned_no_text": false,
+   "text": "51 \nCAPITULO VI: DISCUSIÓN \nEl objetivo general fue determinar la influencia del aplicativo WebFQT en el \nseguimiento de proyectos de inversión pública en la municipalidad distrital de El \nPorvenir, la información correspondiente al avance del presupuesto y físico fue cargada \na la base de datos de la aplicación de donde a través de consultas se mostró el estado \nen el que se encuentras los proyectos gestionados, el personal involucrado manifestó \na través de una encuesta y entrevista lo beneficios y bondades mostradas por el \naplicativo WebFQT, quienes indican haber encontrado una reducción de tiempo en el \nacceso a mencionada información, ya que anteriormente lo realizaban de manera \nmanual entre muchos archivadores y mucha documentación, por lo que existe un \nbeneficio positivo en la implementación de la aplicación. \nMencionados resultados son coherentes con el trabajo elaborado por Yanqui \n(2020) en su investigación titulada “Sistema interoperable y orientado a seguimiento y \nmonitoreo de proyectos” con el propósito de “desarrollar un sistema web que permita \nautomatizar el proceso de seguimiento y monitoreo del avance técnico y financiero de \ntransferencias hasta la liquidación de la obra”, señala que con la implementación del \nsistema interoperable se consiguió mejorar la comunicación entre los organismos \ninvolucrados y proporcionó un mejor control del estado de los recursos transferidos a \nlos proyectos de infraestructura vial del mismo modo este sistema posibilita que las \nentidades gubernamentales involucradas trabajen con información centralizada que \nmuestre el estado en tiempo real en el que se encuentra la transferencia de los recursos \na proyectos de inversión. \nDel mismo modo Lucas (2019) quien elaboró una investigación para determinar \nla influencia de la implementación de un sistema web en el proceso de administración \nde proyectos mineros en ECOSERM RANCAS, este sistema mejoró el proceso de \nadministración de proyectos e incidió de manera positiva en el índice de desviación de \ncronograma y en el índice de desviación de costos, sus resultados concuerdan con los \n"
+  },
+  {
+   "page": 65,
+   "chars": 2235,
+   "scanned_no_text": false,
+   "text": "52 \nobtenidos en la presente investigación, ya que ambos concluyen en que un sistema \ninformático optimiza los procesos de seguimiento y control de proyectos en ejecución. \nComo objetivo específico uno se planteó determinar la influencia del aplicativo \nWebFQT en el seguimiento de la ejecución del presupuesto en proyectos de inversión \npública en la municipalidad distrital de El Porvenir, el principal beneficio percibido por \nlas personas involucradas en la gestión de proyectos de la Municipalidad de El Porvenir \nes la facilidad en el acceso a la información de ejecución de presupuesto de los diversos \nproyectos, del mismo modo el software resulta muy amigable para su administración \npor personal con conocimiento mínimo en informática. \nMencionado resultado es coherente con la investigación realizada por Dávalos \n(2017), quien elaboró una investigación con el objetivo de determinar el efecto del \nsistema web para el control y seguimiento de proyectos de tesis, en donde obtuvo el \nresultado de que existe un efecto positivo en el control y seguimiento de proyectos de \ntesis posterior al uso del sistema, concluyendo en que el software brinda un adecuado \nseguimiento sobre los avances de los proyectos de tesis de dicha casa de estudios. \nComo objetivo específico dos se planteó determinar la influencia del aplicativo \nWebFQT en el seguimiento de la ejecución del avance físico en proyectos de inversión \npública en la municipalidad distrital de El Porvenir, para ello el residente de obra emite \ncada periodo determinado el avance físico de la obra, el cual debe ser corroborado por \nel personal de infraestructura, esta información es cargada al software WebFQT en \ncuestión de minutos, para que posteriormente muestre a través de tablas y gráficos \nesta información ya procesada a las personas interesadas, estas personas manifiestan \nque encuentran un beneficio en la implantación del software ya que no necesitan buscar \npersonalmente esta información en almacenes, estantes ni cajas, por el contrario estos \nreportes se pueden conseguir en un par de minutos. \nLos resultados anteriores obtenidos son coherentes con la investigación \nelaborada por Galvez (2019) quien elaboró una investigación con el objetivo de \n"
+  },
+  {
+   "page": 66,
+   "chars": 457,
+   "scanned_no_text": false,
+   "text": "53 \ndeterminar la influencia de un sistema web en el proceso de control de proyectos en la \nempresa Hundred S.A.C., los resultados evidenciaron una gran diferencia entre el antes \ny después de la implementación del Sistema Web específicamente para el caso de la \nvariación del cronograma en el proceso de control de proyectos, concluyendo que el \nsistema web influye positivamente en la variación del cronograma del proceso de \ncontrol de proyectos. \n \n \n \n"
+  },
+  {
+   "page": 67,
+   "chars": 1017,
+   "scanned_no_text": false,
+   "text": "54 \nCONCLUSIONES \n• \nSe logró el objetivo general de la investigación, determinando que existe un \nbeneficio positivo en la implantación del aplicativo WebFQT para el seguimiento \nde PI pública en la municipalidad distrital de El Porvenir, por tanto la hipótesis \nplanteada es aceptada y válida haciendo uso de la prueba de Wilcoxon. \n• \nSe logró el objetivo específico de la investigación, determinando que existe una \ninfluencia positiva en la implantación del aplicativo WebFQT en el seguimiento de \nla ejecución del presupuesto en proyectos, ya que este permite una reducción \nsignificativa de tiempo en el acceso a la información. Así mismo se logró mostrar \nel estado de los proyectos en el software. \n• \nSe logró el objetivo específico de la investigación, determinando que existe una \ninfluencia positiva en la implantación del aplicativo WebFQT en el seguimiento de \nla ejecución del avance físico en proyectos, ya que esta aplicación permite \nacceder más rápidamente a los reportes y en tiempo real. \n \n \n \n"
+  },
+  {
+   "page": 68,
+   "chars": 943,
+   "scanned_no_text": false,
+   "text": "55 \nRECOMENDACIONES \n• \nSe recomienda a la municipalidad de El Porvenir la compra de un servidor \ndedicado para la implantación de la aplicación, esto con el propósito de ofrecer \nun servicio adecuado a los usuarios y que todos los recursos se encuentren a \ndisposición del aplicativo WebFQT. \n• \nSe recomienda a la Municipalidad de El Porvenir para una adecuada \ncomunicación con los ciudadanos y por transparencia implementar la entrega de \nsus informes y avances de presupuesto a sus contribuyentes a través de portales \nweb. \n• \nSe recomienda la elaboración de un SI orientado a resultados para la gestión \nadministrativa y de proyectos, este causaría un impacto positivo y brindaría en un \nmejor servicio de calidad hacia los ciudadanos.  \n• \nSe recomienda el incremento de presupuesto y contratación de más personal \ncapacitado para el área de informática, de manera que puedan desarrollar \nsoftware a la medida de sus necesidades. \n \n \n"
+  },
+  {
+   "page": 69,
+   "chars": 2048,
+   "scanned_no_text": false,
+   "text": "56 \nBIBLIOGRAFÍA \nAmin, A., Grunske, L., y Colman, A. (2013). An approach to software reliability prediction \nbased on time series modeling. Journal of Systems and Software, 86(7), 1923-\n1932. doi:10.1016/j.jss.2013.03.045 \nArboleda, S. (2021). Apoyo técnico para la implementación de software de control de \ncostos y presupuestos para las obras en etapa de pre-construcción y \nconstrucción de la empresa Obras & Terrenos S.A.S. (Tesis de titulación). \nColombia: \nUniversidad \nde \nAntioquia. \nRecuperado \na \npartir \nde \nhttp://tesis.udea.edu.co/bitstream/10495/19669/5/ArboledaSantiago_2021_Pres\nupuestoControlObra.pdf \nArias, F. (2012). El Proyecto de Investigación Introducción a la metodología científica \n(6.a ed., p 83). Venezuela: Episteme. \nBarreto, Y. (2020). Implementación de la metodología Building Information Modeling en \nla gestión de proyectos inmobiliarios (Tesis de titulación). Colombia: Fundación \nUniversidad \nde \nAmérica. \nRecuperado \na \npartir \nde \nhttp://repository.uamerica.edu.co/bitstream/20.500.11839/7927/1/3627907-\n2020-II-GEC.pdf \nBehar, D. (2008). Metodología de la investigación (p 55). Shalom. \nBernardo, J., y Calderero, J. (2000). Aprendo a investigar en educación (RIALP.). \nEspaña. \nBlanco, P., y Hernández, M. (2016). Sistema de información para la gestión de proyectos \npara la fundación universitaria Los Libertadores (Tesis de titulación). Colombia: \nFundación \nUniversitaria \nlos \nLibertadores. \nRecuperado \na \npartir \nde \nhttps://repository.libertadores.edu.co/bitstream/handle/11371/742/BlancoBlanco\nPaolaAndrea.pdf?sequence=2&isAllowed=y \nCoba, D., y Coba, F. (2017). Análisis, diseño e implementación de un Sistema de gestión \npara seguimiento a proyectos de Titulación en la Universidad Tecnológica Israel. \n(Tesis de titulación). Ecuador: Universidad Tecnológica Israel. Recuperado a \npartir de http://repositorio.uisrael.edu.ec/handle/47000/1471 \nConcepto.de. (2023). Contrato - Concepto, partes y tipos de contrato. Concepto. \nRecuperado el 5 de julio del 2023, de https://concepto.de/contrato-2/ \n"
+  },
+  {
+   "page": 70,
+   "chars": 2309,
+   "scanned_no_text": false,
+   "text": "57 \nConstanzo, M. (2014). Comparación de modelos de calidad, factores y métricas en el \námbito \nde \nla \ningeniería \nde \nsoftware. \nRecuperado \na \npartir \nde \nhttps://publicaciones.unpa.edu.ar/index.php/ICTUNPA/article/view/395/374 \nDávalos, L. (2017). Efecto de un sistema web para el control y seguimiento de proyectos \nde tesis en la escuela académica profesional de ingeniería en informática y \nsistemas de La Universidad Nacional Jorge Basadre Grohmann, Tacna-2014 \n(Tesis de titulación). Perú: Universidad Nacional Jorge Basadre Grohmann. \nRecuperado a partir de http://www.repositorio.unjbg.edu.pe/handle/UNJBG/2489 \nEstrada, J. (2015). Análisis de la gestión de proyectos a nivel mundial. Palermo Business \nReview, (12), 61-98. \nFernández., N. (2002). Manual de proyectos. Junta de Andalucía. Recuperado a partir \nde \nhttps://fapacordoba.org/wp-content/uploads/2010/10/manualdeproyectos-\nvoluntariado.pdf \nGallardo, Y., y Moreno, A. (1999). Serie Aprender a investigar. Módulo 3: Recolección \nde la información (p 26). Colombia. \nGalvez, R. (2019). Sistema web para el proceso de control de proyectos en la empresa \nHundred S.A.C. (Tesis de titulación). Perú: Universidad Cesar Vallejo. \nRecuperado \na \npartir \nde \nhttps://repositorio.ucv.edu.pe/handle/20.500.12692/63935 \nGERENS. (2016). Gestión estratégica y operativa: sobre la triple restricción de los \nproyectos. Gerens Escuela de Postgrado, . Recuperado a partir de \nhttps://gerens.pe/blog/triple-restriccion-proyectos/ \nGob.pe. (2023). Sistema Electrónico de Contrataciones del Estado (Seace). \nRecuperado el 5 de julio del 2023, de https://www.gob.pe/7324-acceder-al-\nsistema-electronico-de-contrataciones-del-estado-seace \nHernández, R., y Mendoza, C. (2018). Metodología de la investigación: las rutas \ncuantitativa, cualitativa y mixta (p 163). México: Mc Graw Hill. \nInfobae. (2021). REDERECI 2021: consulta si estás en el registro de deudores morosos. \nRecuperado \nel \n5 \nde \njulio \ndel \n2023, \nde \nhttps://www.infobae.com/america/peru/2021/11/02/redereci-2021-consulta-si-\nestas-en-el-registro-de-deudores-morosos/ \nInstituto Hegel. (2021). ¿Qué es la Ley de Contrataciones del Estado? Perú 2021. \nInstituto de Ciencias Hegel. Recuperado el 5 de julio del 2023, de \nhttps://hegel.edu.pe/blog/que-es-la-ley-de-contrataciones-del-estado/ \n"
+  },
+  {
+   "page": 71,
+   "chars": 2302,
+   "scanned_no_text": false,
+   "text": "58 \nIñigo, R., y Losune, V. (2010). Guía para la elaboración de proyectos. Vasco. \nLey 30225. (2014). Ley de contrataciones del estado. Recuperado a partir de \nhttps://portal.osce.gob.pe/osce/sites/default/files/Documentos/legislacion/ley/Le\ny%2030225%20Ley%20de%20contrataciones-julio2014.pdf \nLossio, F., Martínez, A., y Morris, E. (2016). La gestión de proyectos en el Perú. Lima: \nESAN. \nLucas, M. (2019). Sistema web para la administración de proyectos mineros en \nECOSERM RANCAS (Tesis de titulación). Perú: Universidad Peruana los Andes. \nRecuperado \na \npartir \nde \nhttp://www.repositorio.upla.edu.pe/handle/20.500.12848/2021 \nMaldonado, J. (2016). Desarrollo e implementación de un sistema web de seguimiento \ny evaluación de las prácticas pre-profesionales para la facultad de ingeniería \nescuela civil de la Puce (Tesis de titulación). Ecuador: Pontificia Universidad \nCatólica \ndel \nEcuador. \nRecuperado \na \npartir \nde \nhttp://repositorio.puce.edu.ec/bitstream/handle/22000/12562/Tesis_Teoria.pdf?\nseq \nÑaupas, H., Mejía, E., Novoa, E., y Villagómez, A. (2014). Metodología de la \ninvestigación cuantitativa - cualitativa y redacción de la tesis (4.a ed., p 61). \nColombia: Ediciones de la U. \nPerutrabajos. (2019). ¿Qué es el RNP? ¿Cómo inscribirse en el RNP? - Tramite, costo, \nclave RNP, Impresión de la constancia. www.perutrabajos.com. Recuperado el \n5 de julio del 2023, de https://www.perutrabajos.com/informacion-rnp-costo-\ninscripcion-tramite-clave-impresion-constancia-formulario-4.html \nPMI. (2021). Guía de los fundamentos para la dirección de proyectos (7.a ed., p 4). \nEE.UU. Recuperado a partir de www.pmi.org \nPressman, R. (2010). Ingeniería del software un enfoque práctico (7.a ed.). México: Mc \nGraw Hill. Recuperado a partir de http://cotana.informatica.edu.bo/downloads/ld-\nIngenieria.de.software.enfoque.practico.7ed.Pressman.PDF \nReyna, M. (2017). Sistema web integrado para mejorar el seguimiento y control de la \ngerencia de cobranza en la SUNAT - ILima (Tesis de titulación). Perú: \nUniversidad \nNacional \nde \nTrujillo. \nRecuperado \na \npartir \nde \nhttps://dspace.unitru.edu.pe/handle/UNITRU/9589 \nRodríguez, J. (2022, febrero 8). Software para el seguimiento, la gestión y el control de \nproyectos de grado en el Departamento de Electrónica (Tesis de titulación). \n"
+  },
+  {
+   "page": 72,
+   "chars": 1485,
+   "scanned_no_text": false,
+   "text": "59 \nColombia: \nPontificia Universidad Javeriana. Recuperado a partir de \nhttps://repository.javeriana.edu.co/handle/10554/16430 \nSanchez, W. (2011). La usabilidad en ingeniería de Software: definición y \ncaracterísticas. Ing-novación, 2, 15. \nSchwarz, M. (2017). Guía de referencia para la elaboración de una investigación \naplicada. \nPerú: \nUniversidad \nde \nLima. \nRecuperado \na \npartir \nde \nhttps://repositorio.ulima.edu.pe/bitstream/handle/20.500.12724/6029/Schwarz_\nguia_investigacion_aplicada.pdf?sequence=1&isAllowed=y \nSinnaps. (2020). Metodología XP o Programación Extrema: ¿Qué es y cómo aplicarla? \nGestor de proyectos online. Recuperado el 18 de agosto del 2023, de \nhttps://www.sinnaps.com/blog-gestion-proyectos/metodologia-xp \nSomerville, I. (2011). Ingeniería se software (9.a ed.). México: Pearson. Recuperado a \npartir de https://sistemamid.com/panel/uploads/biblioteca/2018-06-11_03-37-\n12144643.pdf \nSydle. (2023). Extreme Programming: ¿qué es y cómo funciona? Blog SYDLE. \nRecuperado \nel \n18 \nde \nagosto \ndel \n2023, \nde \nhttps://www.sydle.com/es/blog/extreme-programming-\n602ee205da4d096809438c9c \nValderrama, S. (2013). Pasos para elaborar proyectos de investigación científica (2.a \ned., p 39). Perú: San Marcos. \nYanqui Álvarez, L. (2020). Sistema interoperable y orientado a seguimiento y monitoreo \nde proyectos (Tesis de titulación). Perú: Universidad Técnológica del Perú. \nRecuperado a partir de https://repositorio.utp.edu.pe/handle/20.500.12867/3098 \n \n \n"
+  },
+  {
+   "page": 73,
+   "chars": 1678,
+   "scanned_no_text": false,
+   "text": "60 \n ANEXO \nAnexo 1. Matriz de consistencia \nTítulo: Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de  Porvenir. \nPROBLEMAS \nOBJETIVOS \nHIPÓTESIS \nVARIABLES \nProblema General \n¿Cuál es la influencia del aplicativo \nWebFQT en el seguimiento de \nproyectos de inversión pública en la \nmunicipalidad \ndistrital \nde \nEl \nPorvenir? \nObjetivo General \nDeterminar la influencia del aplicativo \nWebFQT en el seguimiento de \nproyectos de inversión pública en la \nmunicipalidad distrital de El Porvenir. \nHipótesis General \nEl \naplicativo \nWebFQT \ninfluye \npositivamente en el seguimiento de \nproyectos de inversión pública en la \nmunicipalidad distrital de El Porvenir. \nVariable independiente \nAplicación WEBFQT \nDimensiones: \n- Funcionalidad \n- Confiabilidad \n- Usabilidad \n \nVariable dependiente \nSeguimiento de proyectos \nde inversión pública \nDimensiones: \n- Avance físico \n- Presupuesto \n \n \n \n \nProblemas Específicos \na. ¿De qué manera el aplicativo \nWebFQT influye en el tiempo de \nseguimiento de la ejecución del \npresupuesto \nen \nproyecto \nde \ninversión \npública \nen \nla \nmunicipalidad \ndistrital \nde \nEl \nPorvenir? \nObjetivos específicos \na. Determinar \nla \ninfluencia \ndel \naplicativo \nWebFQT \nen \nel \nseguimiento de la ejecución del \npresupuesto en proyectos de \ninversión \npública \nen \nla \nmunicipalidad \ndistrital \nde \nEl \nPorvenir. \nHipótesis específicas \na. El aplicativo WebFQT disminuye \nel tiempo de seguimiento de la \nejecución del presupuesto en \nproyecto de inversión pública en \nla municipalidad distrital de El \nPorvenir \nb. El aplicativo WebFQT disminuye \nel tiempo en el seguimiento de la \n"
+  },
+  {
+   "page": 74,
+   "chars": 945,
+   "scanned_no_text": false,
+   "text": "61 \nb. ¿De qué manera el aplicativo \nWebFQT influye en el tiempo de \nseguimiento de la ejecución del \navance físico en proyectos de \ninversión \npública \nen \nla \nmunicipalidad \ndistrital \nde \nEl \nPorvenir? \nb. Determinar \nla \ninfluencia \ndel \naplicativo \nWebFQT \nen \nel \nseguimiento de la ejecución del \navance físico en proyectos de \ninversión \npública \nen \nla \nmunicipalidad \ndistrital \nde \nEl \nPorvenir. \nejecución del avance físico en \nproyectos de inversión pública en \nla municipalidad distrital de El \nPorvenir. \nEscala de baremo \nBajo [20-47] \nMedio [48-73] \nAlto [74-100] \n \nMÉTODO Y DISEÑO \nPOBLACIÓN Y MUESTRA \nTÉCNICAS E INSTRUMENTOS \nTipo de investigación: \nAplicada \nNivel de investigación: \nAplicativa  \nPoblación: \n28 proyectos \nMuestra: \n28 proyectos \n \nTécnica: \nEncuesta a 24 trabajadores \nInstrumento: \nCuestionario \nTratamiento estadístico: \nSPSS v25 \nPrueba de Shapiro–Wilk \nPrueba de Wilcoxon \nNota. Elaboración propia. \n \n"
+  },
+  {
+   "page": 75,
+   "chars": 85,
+   "scanned_no_text": true,
+   "text": "62 \nAnexo 2. Instrumento de validación  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 76,
+   "chars": 48,
+   "scanned_no_text": true,
+   "text": "63 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 77,
+   "chars": 48,
+   "scanned_no_text": true,
+   "text": "64 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 78,
+   "chars": 48,
+   "scanned_no_text": true,
+   "text": "65 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 79,
+   "chars": 48,
+   "scanned_no_text": true,
+   "text": "66 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 80,
+   "chars": 26,
+   "scanned_no_text": true,
+   "text": "67 \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 81,
+   "chars": 1901,
+   "scanned_no_text": false,
+   "text": "68 \nAnexo 3. Instrumento de recojo de datos \nEl objetivo es determinar la influencia del aplicativo WebFQT en el seguimiento \nde proyectos de inversión pública en la municipalidad distrital de Porvenir. Consta de 20 \npreguntas y las respuestas son de carácter anónimo. \nESCALA DE MEDICIÓN - LIKERT \nNomenclatura \nMuy en \ndesacuerdo \nEn \ndesacuerdo \nIndiferente \nDe acuerdo Totalmente \nde acuerdo \nValoración \n1 \n2 \n3 \n4 \n5 \nNota. Elaboración propia \nVARIABLE INDEPENDIENTE: APLICACIÓN WEBFQT \nNro. \nDimensión 1: Funcionalidad \nEscala de medición \n1 \n2 \n3 \n4 \n5 \n1 \n¿La funcionalidad específica (sin el sistema/tras la implantación del \naplicativo web) facilita la planificación de proyectos? \n \n \n \n \n \n2 \n¿La funcionalidad (sin el sistema/tras la implantación del aplicativo \nweb) influye en la colaboración y comunicación entre los miembros \ndel equipo de proyecto? \n \n \n \n \n \n3 \n¿La funcionalidad (sin el sistema /tras la implantación del aplicativo \nweb) impacta en la gestión de recursos y asignación de tareas? \n \n \n \n \n \n4 \n¿La funcionalidad (sin el sistema /tras la implantación del aplicativo \nweb) facilita el monitoreo y control de proyectos en tiempo real? \n \n \n \n \n \nDimensión 2: Confiabilidad \n1 \n2 \n3 \n4 \n5 \n5 \n¿La confiabilidad (sin el sistema /tras la implantación del aplicativo \nweb) incide en la consistencia y precisión de la información utilizada \npara la toma de decisiones en la gestión de proyectos? \n \n \n \n \n \n6 \n¿La confiabilidad (sin el sistema /tras la implantación del aplicativo \nweb) afecta la dependencia del equipo de proyecto en los datos \ngenerados por la plataforma para la planificación y ejecución de \ntareas? \n \n \n \n \n \n7 \n¿La confiabilidad (sin el sistema /tras la implantación del aplicativo \nweb) impacta en la prevención y gestión de posibles fallos técnicos \nque podrían interrumpir el flujo de trabajo y comprometer la ejecución \ndel proyecto? \n \n \n \n \n \n"
+  },
+  {
+   "page": 82,
+   "chars": 2173,
+   "scanned_no_text": false,
+   "text": "69 \n8 \n¿La percepción de los usuarios, (sin el sistema /tras la implantación \ndel aplicativo web) respecto a la confiabilidad del aplicativo web \ninfluye en la gestión eficaz de proyectos? \n \n \n \n \n \nDimensión 3: Usabilidad \nEscala de medición \n1 \n2 \n3 \n4 \n5 \n9 \n¿La usabilidad (sin el sistema /tras la implantación del aplicativo web) \nimpacta en la eficiencia y productividad de los usuarios durante la \nejecución de tareas en la gestión de proyectos? \n \n \n \n \n \n10 \n¿La usabilidad (sin el sistema /tras la implantación del aplicativo web) \ninfluye en la facilidad con la que los miembros del equipo de proyecto \npueden aprender a utilizar la plataforma y adaptarse a nuevas \nfuncionalidades? \n \n \n \n \n \n11 \n¿La usabilidad (sin el sistema /tras la implantación del aplicativo web) \nafecta la capacidad de los usuarios para navegar de manera intuitiva \npor la interfaz y acceder rápidamente a la información crucial para la \ntoma de decisiones en la gestión de proyectos? \n \n \n \n \n \n12 \n¿La percepción de los usuarios respecto a la usabilidad (sin el \nsistema /tras la implantación del aplicativo web) se relaciona con la \naceptación y adopción general de la herramienta en el entorno de \ngestión de proyectos? \n \n \n \n \n \n \n \n \n \n \n \n \n \nVARIABLE DEPENDIENTE: SEGUIMIENTO DE PROYECTOS DE INVERSIÓN PUBLICA \nNro. \nDimensión 1: Avance físico \nEscala de medición \n1 \n2 \n3 \n4 \n5 \n13 \n¿(sin el sistema/tras la implantación del aplicativo web) la eficiencia \nen la creación y mantenimiento de cronogramas de proyectos ha sido \nadecuada? \n \n \n \n \n \n14 \n¿(sin el sistema/tras la implantación del aplicativo web) ha sido fácil \nla identificación y gestión de posibles desviaciones en el cronograma \ndel proyecto, permitiendo una respuesta más rápida y efectiva a los \ncambios? \n \n \n \n \n \n15 \n¿(sin el sistema/tras la implantación del aplicativo web) la \nfuncionalidad en la asignación de recursos y la optimización del \ncronograma garantizó una gestión más efectiva de los tiempos de \nentrega y plazos del proyecto? \n \n \n \n \n \n16 \n¿(sin el sistema /tras la implantación del aplicativo web) mejora la \nprecisión y confiabilidad de la gestión del cronograma del proyecto? \n \n \n \n \n \n"
+  },
+  {
+   "page": 83,
+   "chars": 946,
+   "scanned_no_text": false,
+   "text": "70 \nDimensión 2: Presupuesto \nEscala de medición \n1 \n2 \n3 \n4 \n5 \n17 \n¿(sin el sistema/tras la implantación del aplicativo web) ha sido \nadecuada la eficiencia en la elaboración y seguimiento del \npresupuesto del proyecto comparación con los métodos anteriores? \n \n \n \n \n \n18 \n¿(sin el sistema/tras la implantación del aplicativo web) han mejorado \nla capacidad para prever y controlar costos, permitiendo una gestión \nmás precisa y transparente del presupuesto del proyecto? \n \n \n \n \n \n19 \n¿La funcionalidad (sin el sistema/tras la implantación del aplicativo \nweb) en la asignación de recursos financieros y la optimización del \npresupuesto para asegurar una gestión fue más efectiva? \n  \n  \n  \n  \n  \n20 \n¿es buena la percepción de los usuarios sobre la mejora en la \nprecisión y confiabilidad de la gestión del presupuesto del proyecto \n(sin el sistema/tras la implantación del aplicativo web)? \n  \n  \n  \n  \n  \nNota. Elaboración propia. \n \n \n \n"
+  },
+  {
+   "page": 84,
+   "chars": 902,
+   "scanned_no_text": false,
+   "text": "71 \nAnexo 4. Metodología de desarrollo XP \n1. Fase de planificación \nLa aplicación WebFQT es un software que beneficia a los trabajadores de la \nmunicipalidad distrital de El Porvenir en el seguimiento de proyectos de inversión \npública. Referente a ello se consiguió información relevante que indica la medida en \nque optimiza el proceso de seguimiento de la ejecución de presupuesto, así como \navance físico de los proyectos de inversión pública gestionadas por la municipalidad ya \nmencionada. Una vez culminada e implantada se puso a prueba. \n1.1. Historias de Usuario \nLas Historias de Usuarios de la aplicación WebFQT para el seguimiento de \nproyectos de inversión pública son las siguientes: \n- \nDesarrollo de la página principal de la aplicación WebFQT \n- \nCreación del menú principal para el ciudadano \n- \nCreación del menú carga de información \n- \nCreación del menú reporte de gestión \n \n \n \n"
+  },
+  {
+   "page": 85,
+   "chars": 988,
+   "scanned_no_text": false,
+   "text": "72 \n1.2. Descripción de las Historias de Usuario \nTabla 15  \nHistoria de usuario - Desarrollo de la página principal de la aplicación WebFQT \nHISTORIA DE USUARIO \nNúmero: 1 \nUsuario: \nTrabajador \nde \nInfraestructura \nNombre Historia: Desarrollo de la interfaz de la aplicación WebFQT \nPrioridad en Negocio: Alta (Alta, Media, \nBaja)  \nRiesgo en Desarrollo: Alta \n(Alta, Media, Baja)  \nPuntos estimados: 2 \nIteración Asignada: 2 \nProgramador Responsable: Fany Quispe Tello \nDescripción: El escenario donde se mostrarán los diferentes menús del software. El \nfuncionamiento debe ser amigable al usuario, de acuerdo con: \n- \nTener un entorno amigable y atractivo a la vista de los trabajadores. \n- \nDebe contener mensajes que indiquen lo que debe realizar. \nObservaciones: Los menús deben indicar la función que realiza al pasar el curso. \nNota. Elaboración propia. \nDonde se mostrarán los diferentes menús y con un entorno amigable y atractivo \na la vista de los trabajadores. \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 86,
+   "chars": 871,
+   "scanned_no_text": false,
+   "text": "73 \nTabla 16 \nHistoria de usuario - Creación del menú principal para el ciudadano \nHISTORIA DE USUARIO  \nNúmero: 2 \nUsuario: Ciudadano \nNombre Historia: Creación del menú principal \nPrioridad en Negocio: Alta (Alta, \nMedia, Baja)  \nRiesgo en Desarrollo: Media (Alta, \nMedia, Baja)  \nPuntos estimados: 2 \nIteración asignada: 2 \nProgramador Responsable: Fany Quispe Tello \nDescripción: Se refiere a la primera pantalla que se mostrará al iniciar la aplicación \nweb para que los ciudadanos puedan consultar los proyectos que se están \nejecutando, debe incluir lo siguiente:  \n- \nUn botón para seleccionar el tipo de proyecto \n- \nUn botón que lleve a las opciones e instrucciones \nObservaciones: Ninguna \nNota. Elaboración propia. \nSe mostrará la primera pantalla ir al botón ver reportes pueden verificar todos \nlos proyectos ejecutados sin tener usuario y contraseña. \n \n \n"
+  },
+  {
+   "page": 87,
+   "chars": 1050,
+   "scanned_no_text": false,
+   "text": "74 \nTabla 17 \nCreación del menú carga de información \nHISTORIA DE USUARIO  \nNúmero: 3 \nUsuario: Jefe de Infraestructura \nNombre Historia: Creación del menú carga de información \nPrioridad en Negocio: Alta (Alta, \nMedia, Baja)  \nRiesgo en Desarrollo: Alta (Alta, \nMedia, Baja)  \nPuntos estimados: 2 \nIteración asignada: 3 \nProgramador Responsable: Fany Quispe Tello \nDescripción: Se refiere a la página que se mostrará para que el responsable del \nárea infraestructura pueda cargar toda la información relevante del avance físico y \neconómico de los proyectos gestionados por la municipalidad, pueden generar los \nreportes, debe incluir lo siguiente:  \n- \nUn botón para ingresar el proyecto  \n- \nbotón que permita seleccionar el proyecto \n- \nUn botón para seleccionar el tipo de información a cargar \n- \nUn botón que permita insertar, actualizar y eliminar el tipo de información \nObservaciones: Ninguna \nNota. Elaboración propia. \nEl responsable del área de infraestructura será el encargado de ingresar toda la \ninformación de los proyectos. \n \n \n \n"
+  },
+  {
+   "page": 88,
+   "chars": 831,
+   "scanned_no_text": false,
+   "text": "75 \nTabla 18 \nCreación del menú reporte de gestión \nHISTORIA DE USUARIO  \nNúmero: 3 \nUsuario: Jefe de Infraestructura \nNombre Historia: Creación del menú reporte de gestión \nPrioridad en Negocio: Media (Alta, \nMedia, Baja)  \nRiesgo en Desarrollo: Media (Alta, \nMedia, Baja)  \nPuntos estimados: 1 \nIteración asignada: 1 \nProgramador Responsable: Fany Quispe Tello \nDescripción: Se refiere a la página que se mostrará para que el responsable del \nárea infraestructura pueda generar los reportes correspondientes a el portafolio de \nproyectos gestionados por la municipalidad: \n- \nUn botón para seleccionar el tipo de información a generar \n- \nUn botón que muestre los gráficos y estadísticas de los proyectos \nObservaciones: Ninguna \nNota. Elaboración propia. \nTendrán acceso al menú reportes todos los interesados al proyecto. \n \n \n"
+  },
+  {
+   "page": 89,
+   "chars": 332,
+   "scanned_no_text": false,
+   "text": "76 \n2. Diseño \n2.1. Diagrama de actividades \nFigura 11  \nDiagrama de actividades del usuario del área de infraestructura \nNota. Elaboración propia. \nEn la figura 8, se muestra las actividades realizadas en el aplicativo webFQT \npor el encargado del area de infraestructuras desde el incio hasta la culminacion de \nactividades. \n \n \n"
+  },
+  {
+   "page": 90,
+   "chars": 254,
+   "scanned_no_text": false,
+   "text": "77 \nFigura 12  \nDiagrama de actividades del usuario ciudadano del municipio \nNota. Elaboración propia. \nEn la figura 9, se muestra las actividades realizadas en el aplicativo webFQT \npor el ciudadano  desde el incio hasta la culminacion de actividades. \n"
+  },
+  {
+   "page": 91,
+   "chars": 66,
+   "scanned_no_text": false,
+   "text": "78 \nAnexo 5. Diagrama relacional de la base de datos \n \n \n \n \n \n \n"
+  },
+  {
+   "page": 92,
+   "chars": 229,
+   "scanned_no_text": false,
+   "text": "79 \nAnexo 6. Diagrama de casos de uso del usuario administrador \n \n \nEn el anexo 6, se muestra el diagrama de casos de uso. El responsable del área \nde infraestructura tiene todos los privilegios en el aplicativo web FQT. \n \n \n \n"
+  },
+  {
+   "page": 93,
+   "chars": 227,
+   "scanned_no_text": false,
+   "text": "80 \nAnexo 7. Diagrama de casos de uso del usuario contratista \n \nEn el anexo 7, es el caso de uso del contratista tendrá acceso a los siguiente \nmenús, inicio de sesión, lista de proyectos, registro de avance y reporte. \n \n \n \n"
+  },
+  {
+   "page": 94,
+   "chars": 223,
+   "scanned_no_text": false,
+   "text": "81 \nAnexo 8. Diagrama de casos de uso del usuario Supervisor de obra \n \nEn el anexo 8, es el diagrama de casos de uso del supervisor tiene acceso a los \nmenús proyectos de ejecución, lista de proyectos y reportes. \n \n \n \n \n"
+  },
+  {
+   "page": 95,
+   "chars": 242,
+   "scanned_no_text": false,
+   "text": "82 \nAnexo 9. Diagrama de casos de uso del usuario del público en general \n \n \nEn el anexo 9, se muestra en la primera pantalla ir al botón ver reportes pueden \nverificar todos los proyectos ejecutados sin tener usuario y contraseña. \n \n \n \n \n"
+  },
+  {
+   "page": 96,
+   "chars": 78,
+   "scanned_no_text": false,
+   "text": "83 \nAnexo 10. Organigrama de la municipalidad distrital de el Provenir \n \n \n \n"
+  },
+  {
+   "page": 97,
+   "chars": 54,
+   "scanned_no_text": false,
+   "text": "84 \nAnexo 11. Acceso a Login y tipo de usuario \n \n \n \n"
+  },
+  {
+   "page": 98,
+   "chars": 119,
+   "scanned_no_text": false,
+   "text": "85 \nAnexo 12. Menú principal \nCuando ingresa como encargado del área de infraestructura tiene todos los \naccesos. \n \n \n"
+  },
+  {
+   "page": 99,
+   "chars": 242,
+   "scanned_no_text": false,
+   "text": "86 \nAnexo 13. Menú usuario del responsable del área de infraestructura \nEl responsable de infraestructura registra al usuario y configuración los datos \nde la entidad en los campos de texto al finalizar hace clic en el botón añadir. \n \n \n \n \n"
+  },
+  {
+   "page": 100,
+   "chars": 289,
+   "scanned_no_text": false,
+   "text": "87 \nAnexo 14. Menú agregar proyecto \n \nEl anexo 14, se ingresa un proyecto nuevo que se ejecutará con su respectivo \ncódigo, los campos con obligatorios para culminar el registro hacer clic en el botón \nañadir. Seguidamente el proyecto ingresado se visualizar en la lista de proyectos. \n \n"
+  },
+  {
+   "page": 101,
+   "chars": 249,
+   "scanned_no_text": false,
+   "text": "88 \nAnexo 15. Se ingresa el cronograma de ejecución \nSe selecciona el proyecto que se ejecuta y se habilita la siguiente imagen, en \ndonde se ingresa el cronograma de ejecución de cada mes y luego se ingresa el avance \nmensual del proyecto.  \n \n \n \n"
+  },
+  {
+   "page": 102,
+   "chars": 166,
+   "scanned_no_text": false,
+   "text": "89 \n \nAnexo 16. Avance físico del proyecto  \nSe ingresa el avance mensual físico del proyecto con sus respectivos metrados \ncorrespondiente a la ejecución al mes. \n \n"
+  },
+  {
+   "page": 103,
+   "chars": 62,
+   "scanned_no_text": false,
+   "text": "90 \n \nAnexo 17. Reporte de los estados de los proyectos. \n \n \n"
+  },
+  {
+   "page": 104,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 105,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  },
+  {
+   "page": 106,
+   "chars": 0,
+   "scanned_no_text": true,
+   "text": ""
+  }
+ ]
+}

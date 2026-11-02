@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-10-22",
+  "agente": "director-general",
+  "fase": "F8",
+  "estado": "entregado_para_revision_del_tesista",
+  "destino_vigente": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+  "respaldo": "salidas/archivo/INSTRUMENTOS_V02_ANTES_MARCADO_CLARO_20261022",
+  "documentos_principales": {
+    "conjunto_docx": "00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+    "conjunto_pdf": "00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+    "conjunto_paginas": 6,
+    "conjunto_sha256_pdf": "a88c1630a60eeb904b7d651da5f19aa196e4e6e710fcca6c04ddf75a5da38a62",
+    "auditoria_docx": "02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+    "auditoria_pdf": "02_FICHA_AUDITORIA_DOCUMENTAL.pdf",
+    "auditoria_paginas": 3,
+    "auditoria_sha256_pdf": "d953e3010ff60c4043f8ccc8fdc4e10db299ded9e70e63b4cee8f6fc95743617",
+    "apoyos_paginas": 7
+  },
+  "cotejo_final_direccion": {
+    "archivos_docx_pdf_contra_manifiesto": 12,
+    "discrepancias": 0,
+    "paginas_pdf_con_ambos_logos": 19,
+    "secciones_con_cabecera_nativa_y_dos_imagenes_embebidas": 9,
+    "matrices_descriptivas_verificadas": 5,
+    "celdas_binarias_vacias_comprobadas_en_matrices": 160,
+    "glifos_pequenos_de_casilla_o_corchetes": 0,
+    "patrones_de_codigos_tecnicos_visibles_en_docx_pdf": 0,
+    "enunciados_completos_iguales_al_rector_por_correspondencia_y_orden": 16,
+    "renders_vigentes": 19,
+    "respaldo_docx_pdf_originales_cotejados": 12,
+    "instrumento_4": "ausente",
+    "protocolo_de_inicio_y_fin_del_vale": "preservado",
+    "nombres_y_criterios": "Los ocho aspectos aparecen por nombres descriptivos; sus definiciones completas se conservan en apoyos.",
+    "lectura_visual": "Inspección de tiempos, las tres páginas de auditoría, ambos cuestionarios y las siete páginas de apoyos. Evaluación y veredicto de cada par de documentos permanecen en la misma página."
+  },
+  "mejoras": [
+    "Respuestas binarias en celdas reales vacías, bajo columnas Sí y No, sin símbolos de cuadraditos.",
+    "Auditoría por pares de documentos con ocho nombres comprensibles y resultado por documento.",
+    "Tareas, entregas, incidencias y reactivos con números ordinarios y remisiones por título.",
+    "Códigos originales conservados solo en mapa interno de correspondencias del reporte técnico.",
+    "Participante y centro conservan campos de identificación claramente rotulados, vacíos y sin prefijos crípticos preimpresos.",
+    "No se modificaron las mediciones, los enunciados ni la escala de respuesta."
+  ],
+  "reporte_tecnico_y_mapa": "salidas/reportes_maquetacion/marcado_claro_v02_20261022.json",
+  "limites": [
+    "No se atribuye aceptación del diseño al tesista antes de su revisión.",
+    "No se certifica validación humana de contenido por esta corrección editorial; QG-5 sigue abierta.",
+    "No se creó otra carpeta de entrega ni una v03."
+  ]
+}

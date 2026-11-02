@@ -1,0 +1,176 @@
+{
+  "origen": "salidas\\archivo\\_ensayo_v16.docx",
+  "destino": null,
+  "solo_verificar": true,
+  "sha256_origen": "65bb181e2e91e711b1b6d5282d23956fe0ebb1def6b798e8b9fdb6f17454f297",
+  "sha256_destino": null,
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 9,
+  "total_aplicadas": 1,
+  "total_fallidas": 8,
+  "lotes": [
+    {
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "total": 9,
+      "aplicadas": 1,
+      "fallidas": 8,
+      "detalles": [
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 15",
+          "ancla": "APtotal",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 16",
+          "ancla": "UPtotal",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 17",
+          "ancla": "TAMtotal",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 18",
+          "ancla": "Nivelde",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 15",
+          "ancla": "APtotal",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 16",
+          "ancla": "UPtotal",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 17",
+          "ancla": "TAMtotal",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 18",
+          "ancla": "Nivelde",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 630,
+          "ubicacion": "PÁRRAFO 630 (validez de instrumentos)",
+          "ancla": "de Quispe Tello (2024) adoptado",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14_complemento",
+      "indice_docx": 630,
+      "ubicacion": "PÁRRAFO 630 (validez de instrumentos)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

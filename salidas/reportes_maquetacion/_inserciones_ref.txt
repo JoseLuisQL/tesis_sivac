@@ -1,0 +1,167 @@
+TOTAL inserciones: 11
+
+--- 1 ---
+  orden_global: 1
+  indice_docx_ancla: 736
+  ancla_original: Cohn, M. (2004). User stories applied: For agile software development. Addison-Wesley Professional.
+  insertar_despues_de: Cohn, M. (2004)
+  orden_en_ancla: 1
+  texto_apa7: Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometrika, 16(3), 297–334. https://doi.org/10.1007/BF02310555
+  doi_url: https://doi.org/10.1007/BF02310555
+  estado_doi: verificado_crossref
+  cita_que_la_exige: Cronbach (1951)
+  parrafos_citantes: [649]
+  justificacion_orden: Cohen (735) < Cohn (736) < Cronbach < Dang (737).
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+
+--- 2 ---
+  orden_global: 2
+  indice_docx_ancla: 741
+  ancla_original: Ergetie, F. S., Kassaw, A. T., y Sendekie, A. K. (2023). Vaccine cold chain management practices in primary health centers providing an expanded immunization program in Northwest Ethiopia. Frontiers in Public Health, 11, Artículo 1194807. https://doi.org/10.3389/fpubh.2023.1194807
+  insertar_despues_de: Ergetie et al. (2023)
+  orden_en_ancla: 1
+  texto_apa7: Feldt, L. S. (1965). The approximate sampling distribution of Kuder-Richardson reliability coefficient twenty. Psychometrika, 30(3), 357–370. https://doi.org/10.1007/BF02289499
+  doi_url: https://doi.org/10.1007/BF02289499
+  estado_doi: verificado_crossref
+  cita_que_la_exige: Feldt (1965)
+  parrafos_citantes: [649, 652]
+  justificacion_orden: Ergetie (741) < Feldt < Garcia Villacorta (742).
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+
+--- 3 ---
+  orden_global: 3
+  indice_docx_ancla: 742
+  ancla_original: Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el control de inventario en la Farmacia Pro, 2023 [Tesis de licenciatura, Universidad Privada del Norte]. Repositorio Institucional UPN. https://hdl.handle.net/11537/33833
+  insertar_despues_de: Garcia Villacorta y Calderón Huaman (2023)
+  orden_en_ancla: 1
+  texto_apa7: George, D., y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and reference (4.ª ed.). Allyn & Bacon.
+  doi_url: None
+  estado_doi: sin_doi_libro_impreso_verificado_openlibrary
+  cita_que_la_exige: George y Mallery (2003)
+  parrafos_citantes: [650]
+  justificacion_orden: Garcia (742) < George < Gilbert (743). Reemite la orden v06 nunca aplicada.
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: orden_v06_reemitida
+
+--- 4 ---
+  orden_global: 4
+  indice_docx_ancla: 745
+  ancla_original: Hernández-Sampieri, R., Fernández-Collado, C., y Baptista-Lucio, P. (2014). Metodología de la investigación (6.ª ed.). McGraw-Hill Education.
+  insertar_despues_de: Hernández-Sampieri, Fernández-Collado y Baptista-Lucio (2014)
+  orden_en_ancla: 1
+  texto_apa7: Hernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las rutas cuantitativa, cualitativa y mixta. McGraw-Hill Education.
+  doi_url: None
+  estado_doi: sin_doi_libro_impreso_isbn_978-1-4562-6096-5
+  cita_que_la_exige: Hernández-Sampieri y Mendoza (2018)
+  parrafos_citantes: [650]
+  justificacion_orden: Mismo primer autor: la edición 2014 precede a la de 2018; ambas preceden a Hussain (746). Reemite la orden v06 nunca aplicada.
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: orden_v06_reemitida
+
+--- 5 ---
+  orden_global: 5
+  indice_docx_ancla: 745
+  ancla_original: Hernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las rutas cuantitativa, cualitativa y mixta. McGraw-Hill Education.
+  insertar_despues_de: Hernández-Sampieri y Mendoza (2018), inserción orden_global 4
+  orden_en_ancla: 2
+  texto_apa7: Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70. https://www.jstor.org/stable/4615733
+  doi_url: https://www.jstor.org/stable/4615733
+  estado_doi: verificar_url_jstor_200_doi_no_registrado
+  cita_que_la_exige: Holm (1979)
+  parrafos_citantes: [683]
+  justificacion_orden: Hernández-Sampieri y Mendoza (2018) < Holm < Hussain (746).
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+
+--- 6 ---
+  orden_global: 6
+  indice_docx_ancla: 761
+  ancla_original: Pressman, R. S. (2010). Ingeniería del software: Un enfoque práctico (7.ª ed.). McGraw-Hill Interamericana.
+  insertar_despues_de: Pressman (2010)
+  orden_en_ancla: 1
+  texto_apa7: Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas].
+  doi_url: None
+  estado_doi: verificar_url_repositorio_unajma_no_consta_en_pdf
+  cita_que_la_exige: Quispe Tello (2024), antes Fany (2024)
+  parrafos_citantes: [630]
+  justificacion_orden: Pressman (761) < Quispe Tello < Razali < Rosenthal < Ruiz Barea (762).
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+
+--- 7 ---
+  orden_global: 7
+  indice_docx_ancla: 761
+  ancla_original: Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas].
+  insertar_despues_de: Quispe Tello (2024), inserción orden_global 6
+  orden_en_ancla: 2
+  texto_apa7: Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.
+  doi_url: None
+  estado_doi: verificar_sin_doi_registrado_en_crossref_ni_openalex
+  cita_que_la_exige: Razali y Wah (2011)
+  parrafos_citantes: [677]
+  justificacion_orden: Quispe Tello < Razali < Rosenthal < Ruiz Barea (762).
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+
+--- 8 ---
+  orden_global: 8
+  indice_docx_ancla: 761
+  ancla_original: Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.
+  insertar_despues_de: Razali y Wah (2011), inserción orden_global 7
+  orden_en_ancla: 3
+  texto_apa7: Rosenthal, R. (1991). Meta-analytic procedures for social research (ed. rev.). Sage. https://doi.org/10.4135/9781412984997
+  doi_url: https://doi.org/10.4135/9781412984997
+  estado_doi: verificado_crossref_monografia
+  cita_que_la_exige: Rosenthal (1991)
+  parrafos_citantes: [637, 683, 686, 689, 692]
+  justificacion_orden: Razali < Rosenthal < Ruiz Barea (762). Reemite la orden v06 nunca aplicada.
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: orden_v06_reemitida
+
+--- 9 ---
+  orden_global: 9
+  indice_docx_ancla: 762
+  ancla_original: Ruiz Barea, R. (2023). Protección de APIs REST. Universitat Oberta de Catalunya.
+  insertar_despues_de: Ruiz Barea (2023)
+  orden_en_ancla: 1
+  texto_apa7: Shapiro, S. S., y Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, 52(3–4), 591–611. https://doi.org/10.1093/biomet/52.3-4.591
+  doi_url: https://doi.org/10.1093/biomet/52.3-4.591
+  estado_doi: verificado_crossref
+  cita_que_la_exige: Shapiro y Wilk (1965), antes Shapiro-Wilk (1965)
+  parrafos_citantes: [677, 681]
+  justificacion_orden: Ruiz Barea (762) < Shapiro < Shen (763): «Sha» precede a «She».
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+
+--- 10 ---
+  orden_global: 10
+  indice_docx_ancla: 765
+  ancla_original: Tristán-López, A. (2008). Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo. Avances en Medición, 6(1), 37–48.
+  insertar_despues_de: Tristán-López (2008)
+  orden_en_ancla: 1
+  texto_apa7: Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478. https://doi.org/10.2307/30036540
+  doi_url: https://doi.org/10.2307/30036540
+  estado_doi: verificado_crossref
+  cita_que_la_exige: Venkatesh et al. (2003)
+  parrafos_citantes: [713]
+  justificacion_orden: Tristán-López (765) < Venkatesh < Wasswa (766). Reemite la orden v06 nunca aplicada.
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: orden_v06_reemitida
+
+--- 11 ---
+  orden_global: 11
+  indice_docx_ancla: 766
+  ancla_original: Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4
+  insertar_despues_de: Wasswa et al. (2023)
+  orden_en_ancla: 1
+  texto_apa7: Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6), 80–83. https://doi.org/10.2307/3001968
+  doi_url: https://doi.org/10.2307/3001968
+  estado_doi: verificado_crossref
+  cita_que_la_exige: Wilcoxon (1945)
+  parrafos_citantes: [679]
+  justificacion_orden: Wasswa (766) < Wilcoxon < World Health Organization (767).
+  sangria_francesa: {'left': 720, 'hanging': 720, 'line': 360, 'after': 120, 'fuente': 'Times New Roman 12 pt', 'alineacion': 'justificada'}
+  origen: nueva_por_cita_huerfana
+

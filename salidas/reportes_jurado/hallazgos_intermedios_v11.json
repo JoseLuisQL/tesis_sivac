@@ -1,0 +1,49 @@
+{
+  "metadatos": {
+    "fecha": "2026-10-21",
+    "agente": "jurado-revisor",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "documento_solicitado": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v11.docx",
+    "alcance_solicitado": "Capítulos I a V y tablas 1 a 43; correspondencia entre los tres objetivos específicos y sus conclusiones. Anexos y aparato de validación excluidos.",
+    "estado": "bloqueado",
+    "evaluacion_capitular_realizada": false,
+    "calificacion_vigesimal": null,
+    "veredicto_academico": null,
+    "total_hallazgos_verificados_v11": 0,
+    "criterio_de_exito_15_a_40_hallazgos": "no_ejecutado_por_requisito_previo_no_acreditado",
+    "manuscrito_modificado": false
+  },
+  "requisito_previo": {
+    "requisito": "Informe favorable previo de verificador-integridad, con correspondencia cita-referencia 1:1 limpia y aplicable a la versión sometida a evaluación.",
+    "estado": "no_acreditado",
+    "ultimo_informe_localizado": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\auditoria_referencias_v09.md",
+    "version_auditada_por_ese_informe": "informe_final_v09.docx",
+    "veredicto_de_ese_informe": "REQUIERE_AJUSTE",
+    "anclas_verificables": [
+      {
+        "lineas": "13-19",
+        "evidencia": "Dictamen general REQUIERE_AJUSTE; correspondencia 1:1 no cerrada en v09. Las órdenes correctivas no equivalen a una auditoría favorable de v11."
+      },
+      {
+        "lineas": "239-246",
+        "evidencia": "Se ordena aplicar las sustituciones e inserciones, resolver pendientes y solicitar una nueva auditoría 1:1 después de aplicar las órdenes."
+      },
+      {
+        "lineas": "250-255",
+        "evidencia": "El verificador declara que no modificó el DOCX y que las órdenes son preparatorias."
+      }
+    ],
+    "advertencia": "Las deficiencias descritas en v09 no se atribuyen a v11 sin cotejo. No se han contado como hallazgos nuevos del cuerpo."
+  },
+  "hallazgos": [],
+  "acciones_para_desbloquear": [
+    "El Director General debe solicitar a verificador-integridad la comprobación de las correcciones sobre informe_final_v11.docx y un informe favorable explícito, identificando la versión y preferiblemente su SHA-256.",
+    "Una vez acreditado el requisito, reanudar la evaluación en solo lectura del cuerpo y del modelo Fany 2024, con ubicaciones de párrafo o tabla/fila/columna verificadas en v11.",
+    "Mantener excluidos los anexos, el aparato de validación y los defectos ya comisionados; no cambiar cifras ni inventar citas."
+  ],
+  "entrega": {
+    "reporte_markdown_creado": false,
+    "motivo": "La restricción de ejecución del subagente prohíbe escribir informes Markdown; la constancia textual se entrega al Director General mediante el relevo final.",
+    "bitacora_individual": "La lectura de C:\\MisInvestigaciones\\obsidian_vault\\08_SISTEMA_Y_AGENTES\\bitacoras\\jurado-revisor.md devolvió archivo inexistente; no se creó ni se modificó una nota Markdown."
+  }
+}

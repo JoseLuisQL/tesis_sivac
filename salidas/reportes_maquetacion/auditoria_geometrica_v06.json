@@ -1,0 +1,484 @@
+{
+ "documento": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v06.docx",
+ "version": "v06",
+ "fecha_auditoria": "2026-10-21",
+ "modo": "solo lectura (DOCX no modificado)",
+ "resumen": {
+  "tablas": 59,
+  "tablas_con_desbordamiento": 0,
+  "tablas_sin_tblheader": 0,
+  "rotulos_faltantes": 0,
+  "defectos_totales": 409
+ },
+ "geometria": {
+  "secciones": 7,
+  "ancho_util_portrait_dxa": 8765,
+  "ancho_util_landscape_dxa": 13697,
+  "tablas_portrait": 56,
+  "tablas_landscape": 3,
+  "tablas_flotantes_tblpPr": 0,
+  "tablas_tblLayout_fixed": 59,
+  "filas_con_cantSplit": "100%",
+  "tablas_con_tblBorders_superior_e_inferior": 59,
+  "tablas_con_borde_inferior_de_cabecera": 54,
+  "tablas_sin_rotulo_por_diseno": [
+   47,
+   48,
+   49,
+   56,
+   57,
+   58,
+   59
+  ],
+  "observacion": "La tabla 1 es la caratula y las tablas 56-59 son marcos de una celda para fotografias; no son tablas de datos y no requieren rotulo APA."
+ },
+ "desbordamiento": [],
+ "defectos": [
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 1 - Síntesis comparativa de antecedentes internacionales y naciona - pagina ~37 - 15 celdas",
+   "descripcion": "15 palabras exceden el ancho util de su columna. Peor caso: 'descriptivo-propositiva' requiere 1854 dxa y dispone de 1387 dxa (exceso 467 dxa, 10.0 pt). Casos: 'Astuhuaman', 'Cuasiexperimental', 'Desabastecimiento', 'Establecimiento', 'Establecimientos', 'Mamani-Pari', 'cronometrados,', 'desabastecimiento'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 34 - Estructura de la validación de los instrumentos de recolecció - pagina ~120 - 12 celdas",
+   "descripcion": "12 palabras exceden el ancho util de su columna. Peor caso: '196-MINSA/DGIESP-2022' requiere 2232 dxa y dispone de 1422 dxa (exceso 810 dxa, 10.0 pt). Casos: '196-MINSA/DGIESP-2022', 'INST-01', 'INST-02', 'INST-03', '[Pendiente]', 'aplica', 'concordancia', 'interevaluador'.",
+   "correccion_openxml": "Insertar <w:br/> tras '196-MINSA/' (o ampliar la columna a 2 300 dxa) para que el codigo normativo no desborde la celda; conservar 10 pt y <w:cantSplit/>."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 32 - Operacionalización de las variables de investigación - pagina ~112 - 7 celdas",
+   "descripcion": "7 palabras exceden el ancho util de su columna. Peor caso: 'cronometrados' requiere 1186 dxa y dispone de 991 dxa (exceso 195 dxa, 10.0 pt). Casos: 'Valoración', 'conformidad', 'cronometrados', 'dicotómica', 'dimensión:', 'procesamiento', 'psicométrico'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 49 - Matriz de datos recolectados en el Pretest (Gestión manual ba - pagina ~157 - 7 celdas",
+   "descripcion": "7 palabras exceden el ancho util de su columna. Peor caso: 'satisfaccion' requiere 847 dxa y dispone de 449 dxa (exceso 398 dxa, 9.0 pt). Casos: 'nivel_', 'satisfaccion', 'score_', 't_vale', 'tam_total'.",
+   "correccion_openxml": "Sustituir los cortes manuales con barra ('ap_/01', 'score_/ap', 'score_/tam_total', 'nivel_/satisfaccion') por identificadores continuos y rotar la cabecera con <w:textDirection w:val=\"btLr\"/> en las 16 columnas de 651 dxa, o ampliar a 900 dxa las columnas score_/nivel_ y reducirlas en t_reg/t_vale. Total del tblGrid: 13 630 dxa."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 50 - Matriz de datos recolectados en el Posttest (Operación con si - pagina ~158 - 7 celdas",
+   "descripcion": "7 palabras exceden el ancho util de su columna. Peor caso: 'satisfaccion' requiere 847 dxa y dispone de 449 dxa (exceso 398 dxa, 9.0 pt). Casos: 'nivel_', 'satisfaccion', 'score_', 't_vale', 'tam_total'.",
+   "correccion_openxml": "Sustituir los cortes manuales con barra ('ap_/01', 'score_/ap', 'score_/tam_total', 'nivel_/satisfaccion') por identificadores continuos y rotar la cabecera con <w:textDirection w:val=\"btLr\"/> en las 16 columnas de 651 dxa, o ampliar a 900 dxa las columnas score_/nivel_ y reducirlas en t_reg/t_vale. Total del tblGrid: 13 630 dxa."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 26 - Resumen de Suites de Pruebas Automatizadas Unitarias y de Int - pagina ~100 - 6 celdas",
+   "descripcion": "6 palabras exceden el ancho util de su columna. Peor caso: 'movimientos-entrega-adicional-stock.test.ts' requiere 3496 dxa y dispone de 1537 dxa (exceso 1959 dxa, 10.0 pt). Casos: 'alerta-automatica.test.ts', 'auth-middleware.test.ts', 'ici-demid-calculation.test.ts', 'movimientos-entrega-adicional-stock.test.ts', 'permission-readonly.test.ts', 'vales-generation.test.ts'.",
+   "correccion_openxml": "No truncar los nombres de archivo. Ampliar la columna 2 (Archivo de Especificación) a 2 400 dxa tomando 863 dxa de la columna 1, o insertar <w:br/> antes de '.test.ts' y fijar <w:jc w:val=\"left\"/> con <w:sz w:val=\"18\"/> solo en esa columna. Suma del tblGrid debe permanecer en 8 765 dxa."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 37 - Estadística descriptiva comparativa pretest y postest para lo - pagina ~129 - 4 celdas",
+   "descripcion": "4 palabras exceden el ancho util de su columna. Peor caso: '+32.43%' requiere 655 dxa y dispone de 597 dxa (exceso 58 dxa, 9.0 pt). Casos: '+27.75%', '+27.79%', '+32.43%', '+32.75%'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 45 - Matriz de operacionalización de las variables de investigació - pagina ~151 - 4 celdas",
+   "descripcion": "4 palabras exceden el ancho util de su columna. Peor caso: 'post-intervención' requiere 1398 dxa y dispone de 1245 dxa (exceso 153 dxa, 10.0 pt). Casos: 'post-intervención', 'pre-intervención'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 27 - Matriz de Casos de Prueba de Aceptación con el Usuario (CP-01 - pagina ~101 - 3 celdas",
+   "descripcion": "3 palabras exceden el ancho util de su columna. Peor caso: 'Parametrización' requiere 1296 dxa y dispone de 1277 dxa (exceso 19 dxa, 10.0 pt). Casos: 'Parametrización', 'autodescartable.', 'autodescartables'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 19 - Diccionario de Datos: Tabla movimientos_vacunas - pagina ~82 - 2 celdas",
+   "descripcion": "2 palabras exceden el ancho util de su columna. Peor caso: 'inter-establecimientos.' requiere 1813 dxa y dispone de 1645 dxa (exceso 168 dxa, 10.0 pt). Casos: 'establecimientos(id).', 'inter-establecimientos.'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 43 - Resumen de contrastación inferencial multivariada y regla de  - pagina ~138 - 2 celdas",
+   "descripcion": "2 palabras exceden el ancho util de su columna. Peor caso: 'multidimensional' requiere 1261 dxa y dispone de 1199 dxa (exceso 62 dxa, 9.0 pt). Casos: 'multidimensional', 'original'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 7 - Matriz del Planning Game: Estimación en Puntos de Historia, Pr - pagina ~65 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: 'Físico-Valorado' requiere 1297 dxa y dispone de 1245 dxa (exceso 52 dxa, 10.0 pt). Casos: 'Físico-Valorado'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 14 - Diccionario de Datos: Tablas usuarios y usuarios_centros_acop - pagina ~78 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: 'responsable_acopio,' requiere 1624 dxa y dispone de 1609 dxa (exceso 15 dxa, 10.0 pt). Casos: 'responsable_acopio,'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 17 - Diccionario de Datos: Tabla lotes_vacunas - pagina ~80 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: 'comprobante_ingreso' requiere 1730 dxa y dispone de 1690 dxa (exceso 40 dxa, 10.0 pt). Casos: 'comprobante_ingreso'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 21 - Diccionario de Datos: Tablas vales_entrega y vales_detalle - pagina ~83 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: '(VALE-AAAA-NNNN).' requiere 1997 dxa y dispone de 1537 dxa (exceso 460 dxa, 10.0 pt). Casos: '(VALE-AAAA-NNNN).'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 22 - Diccionario de Datos: Tabla kardex - pagina ~84 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: 'documento_respaldo' requiere 1664 dxa y dispone de 1639 dxa (exceso 25 dxa, 10.0 pt). Casos: 'documento_respaldo'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 23 - Diccionario de Datos: Tabla ici_demid_registros - pagina ~85 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: 'consumo_promedio' requiere 1588 dxa y dispone de 1578 dxa (exceso 10 dxa, 10.0 pt). Casos: 'consumo_promedio'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 33 - Relación de técnicas e instrumentos de recolección de datos p - pagina ~116 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: '196-MINSA/DGIESP-2022' requiere 2232 dxa y dispone de 1479 dxa (exceso 753 dxa, 10.0 pt). Casos: '196-MINSA/DGIESP-2022'.",
+   "correccion_openxml": "Insertar <w:br/> tras '196-MINSA/' (o ampliar la columna a 2 300 dxa) para que el codigo normativo no desborde la celda; conservar 10 pt y <w:cantSplit/>."
+  },
+  {
+   "tipo": "DESBORDAMIENTO_CONTENIDO_CELDA",
+   "ubicacion": "Tabla 51 - Matriz de Historias de Usuario desarrolladas e implementadas  - pagina ~160 - 1 celdas",
+   "descripcion": "1 palabras exceden el ancho util de su columna. Peor caso: '(Planificación/Autenticación)' requiere 2362 dxa y dispone de 2304 dxa (exceso 58 dxa, 10.0 pt). Casos: '(Planificación/Autenticación)'.",
+   "correccion_openxml": "Aplicar <w:noWrap w:val=\"0\"/> en la celda y redistribuir el ancho de la columna afectada tomando dxa de la columna de descripcion; si el token es un identificador sin espacios, insertar <w:br/> en el separador logico (guion, barra o guion bajo) para permitir el corte."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Confiabilidad de consistencia interna del Cuestionario TAM ( - pagina ~125",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Estadística descriptiva comparativa pretest y postest para l - pagina ~127",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Estadística descriptiva comparativa pretest y postest para l - pagina ~129",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Estadística descriptiva comparativa pretest y postest para l - pagina ~131",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Contraste inferencial de la Hipótesis Específica 1: Oportuni - pagina ~134",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Contraste inferencial de la Hipótesis Específica 2: Consiste - pagina ~136",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Contraste inferencial de la Hipótesis Específica 3: Satisfac - pagina ~137",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Resumen de contrastación inferencial multivariada y regla de - pagina ~138",
+   "descripcion": "Las celdas usan 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Matriz de datos recolectados en el Pretest (Gestión manual b - pagina ~157",
+   "descripcion": "Las celdas usan 8.5, 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "FUENTE_CELDA_NO_CONFORME",
+   "ubicacion": "Matriz de datos recolectados en el Posttest (Operación con s - pagina ~158",
+   "descripcion": "Las celdas usan 8.5, 9.0 pt; el estandar UNAJMA/APA 7 fija 10 pt en el cuerpo de tablas.",
+   "correccion_openxml": "En cada <w:rPr> de las celdas reemplazar <w:sz w:val=\"18\"/> (9 pt) y <w:sz w:val=\"17\"/> (8.5 pt) por <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/>; recalcular alturas de fila si el texto pasa a dos lineas."
+  },
+  {
+   "tipo": "ROTULO_TITULO_EN_NEGRITA",
+   "ubicacion": "Tabla 1 - pagina ~37",
+   "descripcion": "El titulo descriptivo esta en negrita y sin cursiva; la norma exige etiqueta en negrita y titulo en cursiva.",
+   "correccion_openxml": "En el run del titulo, dentro de <w:rPr>, eliminar <w:b/> y <w:bCs/> e insertar <w:i/> y <w:iCs/>. Conservar <w:sz w:val=\"24\"/>."
+  },
+  {
+   "tipo": "ROTULO_TITULO_EN_NEGRITA",
+   "ubicacion": "Tabla 29 - pagina ~108",
+   "descripcion": "El titulo descriptivo esta en negrita y sin cursiva; la norma exige etiqueta en negrita y titulo en cursiva.",
+   "correccion_openxml": "En el run del titulo, dentro de <w:rPr>, eliminar <w:b/> y <w:bCs/> e insertar <w:i/> y <w:iCs/>. Conservar <w:sz w:val=\"24\"/>."
+  },
+  {
+   "tipo": "ROTULO_TITULO_EN_NEGRITA",
+   "ubicacion": "Tabla 31 - pagina ~111",
+   "descripcion": "El titulo descriptivo esta en negrita y sin cursiva; la norma exige etiqueta en negrita y titulo en cursiva.",
+   "correccion_openxml": "En el run del titulo, dentro de <w:rPr>, eliminar <w:b/> y <w:bCs/> e insertar <w:i/> y <w:iCs/>. Conservar <w:sz w:val=\"24\"/>."
+  },
+  {
+   "tipo": "ROTULO_NUMERO_SIN_NEGRITA",
+   "ubicacion": "88 de 103 rotulos (todos salvo Tabla 2, Tabla 32-34, Figura 1-10); ej.: Tabla 3 p. ~59, Tabla 10 p. ~84, Figura 12 p. ~68, Tabla 51 p. ~159",
+   "descripcion": "La etiqueta \"Tabla\"/\"Figura\" es negrita, pero el run que contiene el resultado del campo SEQ (el numero) carece de <w:b/> y se imprime en redonda. Solo 15 rotulos tienen el numero en negrita.",
+   "correccion_openxml": "En el run situado entre el segundo y el tercer <w:fldChar> (resultado de SEQ) agregar <w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr>, para que la etiqueta y el numero se impriman ambos en negrita."
+  },
+  {
+   "tipo": "ROTULO_TAMANO_10PT",
+   "ubicacion": "Tabla 1, Figura 1, Figura 2, Figura 3, Figura 4, Figura 5, Figura 6, Figura 7, Figura 8, Figura 9, Figura 10, Tabla 2, Tabla 29, Tabla 30, Tabla 31, Tabla 32, Tabla 33, Tabla 34 (paginas ~37-120)",
+   "descripcion": "18 rotulos estan formateados a 10 pt; el resto a 12 pt. Inconsistencia de tamano dentro de la misma jerarquia editorial.",
+   "correccion_openxml": "Reemplazar <w:sz w:val=\"20\"/> y <w:szCs w:val=\"20\"/> por <w:sz w:val=\"24\"/> y <w:szCs w:val=\"24\"/> en todos los runs del rotulo (incluido el resultado del campo SEQ)."
+  },
+  {
+   "tipo": "ROTULO_SIN_ESTILO_PARRAFO",
+   "ubicacion": "103 de 103 rotulos (todo el documento)",
+   "descripcion": "Ningun rotulo de tabla o figura usa un estilo de parrafo: todo el formato es directo (w:pPr vacio). Los indices se sostienen solo por los campos SEQ, lo que impide el control institucional por estilo y provoca divergencias de tamano y negrita.",
+   "correccion_openxml": "Definir en styles.xml el estilo 'Titulo de ilustracion' (basedOn Normal, TNR 12 pt, negrita para la etiqueta, cursiva para el titulo, sin sangria, keepNext, espaciado anterior 240 y posterior 40) e insertar <w:pStyle w:val=\"TituloIlustracion\"/> en el <w:pPr> de los 103 rotulos."
+  },
+  {
+   "tipo": "NOTA_SIN_PREFIJO",
+   "ubicacion": "24 notas de tabla en las paginas 61, 63, 64, 65, 66, 68, 73, 77, 77, 78, 79, 80, 80, 81, 82, 83, 84, 85, 85, 86, 88, 101, 103, 103",
+   "descripcion": "Las notas posteriores a las tablas comienzan directamente con el texto explicativo, sin el prefijo \"*Nota.*\" en cursiva que exige el estandar. Estan correctamente a 9.5 pt y con interlineado sencillo.",
+   "correccion_openxml": "Anteponer un run con <w:rPr><w:i/><w:iCs/><w:sz w:val=\"19\"/><w:szCs w:val=\"19\"/></w:rPr><w:t xml:space=\"preserve\">Nota. </w:t> al primer run del parrafo de nota, conservando <w:spacing w:line=\"240\" w:lineRule=\"auto\"/>."
+  },
+  {
+   "tipo": "FIGURA_IMAGEN_ANTES_DEL_ROTULO",
+   "ubicacion": "Figuras 11 a 48 (38 figuras), paginas ~59 a ~131",
+   "descripcion": "En 38 figuras la imagen precede al rotulo: el lector encuentra primero el grafico y despues \"Figura N\" con su titulo. APA 7 y el modelo UNAJMA exigen numero y titulo arriba, imagen al centro y nota al pie. Solo las figuras 1 a 10 cumplen el orden.",
+   "correccion_openxml": "Reordenar los hijos de <w:body>: mover el parrafo que contiene <w:drawing>/<wp:inline> para que quede inmediatamente despues del parrafo del rotulo y antes de la nota; mantener <w:keepNext/> en el rotulo, centrado el parrafo de imagen (<w:jc w:val=\"center\"/>) y <w:keepNext/> en la imagen."
+  },
+  {
+   "tipo": "FIGURA_SIN_IMAGEN",
+   "ubicacion": "Figura 49 - pagina ~161 (Anexo 7)",
+   "descripcion": "El rotulo y la nota existen, pero no hay ningun objeto grafico entre ambos. En su lugar quedan marcos de una celda con el texto \"ESPACIO RESERVADO PARA FOTOGRAFIA DE EVIDENCIA\".",
+   "correccion_openxml": "Insertar el parrafo con <w:drawing><wp:inline><wp:extent cx=\"...\" cy=\"...\"/>...<a:blip r:embed=\"rIdN\"/> en el intervalo rotulo-nota, con imagen a 300 DPI y ancho <= 8 765 dxa, y eliminar el marco de reemplazo."
+  },
+  {
+   "tipo": "FIGURA_SIN_IMAGEN",
+   "ubicacion": "Figura 50 - pagina ~162 (Anexo 7)",
+   "descripcion": "El rotulo y la nota existen, pero no hay ningun objeto grafico entre ambos. En su lugar quedan marcos de una celda con el texto \"ESPACIO RESERVADO PARA FOTOGRAFIA DE EVIDENCIA\".",
+   "correccion_openxml": "Insertar el parrafo con <w:drawing><wp:inline><wp:extent cx=\"...\" cy=\"...\"/>...<a:blip r:embed=\"rIdN\"/> en el intervalo rotulo-nota, con imagen a 300 DPI y ancho <= 8 765 dxa, y eliminar el marco de reemplazo."
+  },
+  {
+   "tipo": "FIGURA_SIN_IMAGEN",
+   "ubicacion": "Figura 51 - pagina ~162 (Anexo 7)",
+   "descripcion": "El rotulo y la nota existen, pero no hay ningun objeto grafico entre ambos. En su lugar quedan marcos de una celda con el texto \"ESPACIO RESERVADO PARA FOTOGRAFIA DE EVIDENCIA\".",
+   "correccion_openxml": "Insertar el parrafo con <w:drawing><wp:inline><wp:extent cx=\"...\" cy=\"...\"/>...<a:blip r:embed=\"rIdN\"/> en el intervalo rotulo-nota, con imagen a 300 DPI y ancho <= 8 765 dxa, y eliminar el marco de reemplazo."
+  },
+  {
+   "tipo": "FIGURA_SIN_IMAGEN",
+   "ubicacion": "Figura 52 - pagina ~162 (Anexo 7)",
+   "descripcion": "El rotulo y la nota existen, pero no hay ningun objeto grafico entre ambos. En su lugar quedan marcos de una celda con el texto \"ESPACIO RESERVADO PARA FOTOGRAFIA DE EVIDENCIA\".",
+   "correccion_openxml": "Insertar el parrafo con <w:drawing><wp:inline><wp:extent cx=\"...\" cy=\"...\"/>...<a:blip r:embed=\"rIdN\"/> en el intervalo rotulo-nota, con imagen a 300 DPI y ancho <= 8 765 dxa, y eliminar el marco de reemplazo."
+  },
+  {
+   "tipo": "FIGURA_BAJA_RESOLUCION",
+   "ubicacion": "Figura 1 - pagina ~42",
+   "descripcion": "Resolucion efectiva de 257 DPI al tamano declarado (13.97 cm de ancho); el minimo institucional es 300 DPI.",
+   "correccion_openxml": "Sustituir el binario en word/media y conservar el mismo r:embed; ajustar <wp:extent> al nuevo tamano sin superar 8 765 dxa de ancho. No reescalar la imagen dentro de Word."
+  },
+  {
+   "tipo": "FIGURA_BAJA_RESOLUCION",
+   "ubicacion": "Figura 2 - pagina ~43",
+   "descripcion": "Resolucion efectiva de 260 DPI al tamano declarado (13.97 cm de ancho); el minimo institucional es 300 DPI.",
+   "correccion_openxml": "Sustituir el binario en word/media y conservar el mismo r:embed; ajustar <wp:extent> al nuevo tamano sin superar 8 765 dxa de ancho. No reescalar la imagen dentro de Word."
+  },
+  {
+   "tipo": "FIGURA_BAJA_RESOLUCION",
+   "ubicacion": "Figura 6 - pagina ~47",
+   "descripcion": "Resolucion efectiva de 137 DPI al tamano declarado (13.97 cm de ancho); el minimo institucional es 300 DPI.",
+   "correccion_openxml": "Sustituir el binario en word/media y conservar el mismo r:embed; ajustar <wp:extent> al nuevo tamano sin superar 8 765 dxa de ancho. No reescalar la imagen dentro de Word."
+  },
+  {
+   "tipo": "FIGURA_BAJA_RESOLUCION",
+   "ubicacion": "Figura 9 - pagina ~52",
+   "descripcion": "Resolucion efectiva de 183 DPI al tamano declarado (13.97 cm de ancho); el minimo institucional es 300 DPI.",
+   "correccion_openxml": "Sustituir el binario en word/media y conservar el mismo r:embed; ajustar <wp:extent> al nuevo tamano sin superar 8 765 dxa de ancho. No reescalar la imagen dentro de Word."
+  },
+  {
+   "tipo": "FIGURA_BAJA_RESOLUCION",
+   "ubicacion": "Escudo de caratula - pagina 1",
+   "descripcion": "El escudo institucional se inserta a 4.57 x 5.13 cm con 212 x 238 px, es decir 118 DPI.",
+   "correccion_openxml": "Reemplazar por el escudo vectorial (EMF/WMF) o por un PNG de al menos 600 px de ancho; conservar <wp:extent cx=\"1645920\" cy=\"1847088\"/>."
+  },
+  {
+   "tipo": "TITULO_FIGURA_CON_PUNTO_FINAL",
+   "ubicacion": "Figura 49 - pagina ~161",
+   "descripcion": "El titulo descriptivo termina en punto, practica que APA 7 no admite en rotulos.",
+   "correccion_openxml": "Eliminar el ultimo caracter '.' del run del titulo; conservar <w:i/> y el punto solo en la nota."
+  },
+  {
+   "tipo": "TITULO_FIGURA_CON_PUNTO_FINAL",
+   "ubicacion": "Figura 50 - pagina ~162",
+   "descripcion": "El titulo descriptivo termina en punto, practica que APA 7 no admite en rotulos.",
+   "correccion_openxml": "Eliminar el ultimo caracter '.' del run del titulo; conservar <w:i/> y el punto solo en la nota."
+  },
+  {
+   "tipo": "TITULO_FIGURA_CON_PUNTO_FINAL",
+   "ubicacion": "Figura 51 - pagina ~162",
+   "descripcion": "El titulo descriptivo termina en punto, practica que APA 7 no admite en rotulos.",
+   "correccion_openxml": "Eliminar el ultimo caracter '.' del run del titulo; conservar <w:i/> y el punto solo en la nota."
+  },
+  {
+   "tipo": "TITULO_FIGURA_CON_PUNTO_FINAL",
+   "ubicacion": "Figura 52 - pagina ~162",
+   "descripcion": "El titulo descriptivo termina en punto, practica que APA 7 no admite en rotulos.",
+   "correccion_openxml": "Eliminar el ultimo caracter '.' del run del titulo; conservar <w:i/> y el punto solo en la nota."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 380) - pagina ~68",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Figura 3' y 'Figura 13'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Figura 3' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 393) - pagina ~71",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Figura 6' y 'Figura 16'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Figura 6' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 472) - pagina ~87",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Tabla 23' y 'Tabla 25'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Tabla 23' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 686) - pagina ~124",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Tabla 4' y 'Tabla 35'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Tabla 4' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 693) - pagina ~126",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Tabla 5 y Figura 6' y 'Tabla 36 y Figura 46'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Tabla 5 y Figura 6' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 701) - pagina ~128",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Tabla 6 y Figura 7' y 'Tabla 37 y Figura 47'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Tabla 6 y Figura 7' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 709) - pagina ~130",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Tabla 7 y Figura 8' y 'Tabla 38 y Figura 48'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Tabla 7 y Figura 8' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "TEXTO_DUPLICADO",
+   "ubicacion": "Parrafo (elemento 750) - pagina ~138",
+   "descripcion": "El parrafo contiene dos veces el mismo bloque redactado con variantes ('Tabla 12' y 'Tabla 43'), con artefactos de puntuacion ('emparejadas., los resultados', 'psicometrico de .800', 'desarrollo. priorizando'). Infla el documento en ~1.2 paginas y contradice la referencia cruzada vigente.",
+   "correccion_openxml": "Conservar el primer bloque hasta la referencia correcta ('Tabla 12' o la que corresponda al numero vigente de la tabla) y eliminar los runs del bloque repetido con <w:del> o reemplazo directo del contenido del <w:p>, preservando <w:pPr>."
+  },
+  {
+   "tipo": "REFERENCIA_CRUZADA_OBSOLETA",
+   "ubicacion": "Parrafo (elemento 423) - pagina ~76",
+   "descripcion": "El texto remite a 'las Tablas 8 a 22' para el diccionario de datos, pero las tablas del diccionario son ahora Tabla 10 a Tabla 24 (15 tablas).",
+   "correccion_openxml": "Reemplazar el texto por 'Tablas 10 a 24' e insertar campos REF a los marcadores de Tabla 10 y Tabla 24 para que la referencia se actualice sola."
+  },
+  {
+   "tipo": "MARCADOR_PENDIENTE",
+   "ubicacion": "Tabla 34 (elemento 35, fila 4, columnas 5-7) - pagina ~120",
+   "descripcion": "Tres celdas contienen el texto '[Pendiente]' en la fila del tercer juez validador (V de Aiken, IVC y dictamen).",
+   "correccion_openxml": "Sustituir el contenido de las tres celdas por los valores numericos definitivos; si la validacion aun no concluye, retirar la fila completa en lugar de publicar el marcador."
+  },
+  {
+   "tipo": "PAGINACION_PRELIMINAR_EN_ENCABEZADO",
+   "ubicacion": "Seccion 1 (preliminares), encabezado - paginas i-xiv",
+   "descripcion": "Los romanos minisculos se imprimen en el encabezado alineados a la derecha (<w:jc w:val=\"right\"/>). El modelo institucional los ubica centrados al pie.",
+   "correccion_openxml": "Mover el campo PAGE del header al footer de la seccion 1, con <w:jc w:val=\"center\"/> y <w:pgNumType w:fmt=\"lowerRoman\" w:start=\"2\"/>; dejar el encabezado vacio y <w:titlePg/> solo en la caratula."
+  },
+  {
+   "tipo": "CAMPO_PAGE_CACHE_DESACTUALIZADO",
+   "ubicacion": "Encabezados de las secciones 3, 4, 5 y 6",
+   "descripcion": "Cada encabezado esta desvinculado del anterior y conserva como resultado cacheado el valor \"1\"; al abrir el documento en visores que no repaginan se lee \"1\" en todas esas paginas.",
+   "correccion_openxml": "Marcar los campos como sucios (<w:fldChar w:fldCharType=\"begin\"/><w:fldChar w:fldCharType=\"separate\"/> con <w:dirty w:val=\"true\"/> en el run inicial) o refrescar con Word COM antes de exportar el PDF."
+  },
+  {
+   "tipo": "INDICE_DESACTUALIZADO",
+   "ubicacion": "TOC (111 entradas), TOF (52) y TOT (51) - paginas ii-xiv",
+   "descripcion": "Los tres indices conservan la paginacion de la version v05 (ultima entrada: Anexo 7 en pagina 138). La v06 agrega ~22 800 caracteres en el cuerpo, por lo que la paginacion estimada asciende a ~146 paginas impresas: las entradas quedan corridas ~6 paginas.",
+   "correccion_openxml": "Actualizar los campos TOC \\o \"1-3\" \\h \\z \\u, TOC \\h \\z \\c \"Figura\" y TOC \\h \\z \\c \"Tabla\" con Word COM (TablesOfContents.Update) y verificar que los 214 PAGEREF apunten a marcadores existentes antes de exportar."
+  },
+  {
+   "tipo": "AUSENCIA_CAMPOS_REF",
+   "ubicacion": "Todo el cuerpo (0 campos REF, 0 marcadores _Ref)",
+   "descripcion": "Las menciones \"en la Tabla N\" y \"en la Figura N\" son texto estatico: no existen campos REF ni marcadores de referencia. Cualquier renumeracion deja las menciones desactualizadas, como ya ocurre en los ocho parrafos duplicados.",
+   "correccion_openxml": "Insertar marcadores en cada rotulo (<w:bookmarkStart w:name=\"_RefTablaNN\"/>) y convertir las menciones en campos REF (<w:instrText> REF _RefTablaNN \\h </w:instrText>) para que la numeracion se propague."
+  },
+  {
+   "tipo": "TABLA_MAYOR_A_UNA_PAGINA",
+   "ubicacion": "Tabla 1 - pagina ~37 - altura estimada 2.3 paginas",
+   "descripcion": "La tabla excede la caja de texto y se parte entre paginas. La cabecera se repite (<w:tblHeader/>) y ninguna fila se corta (<w:cantSplit/>), por lo que el corte es tecnicamente correcto pero conviene revisar el equilibrio de columnas.",
+   "correccion_openxml": "Mantener <w:tblHeader/> en la fila 1 y <w:cantSplit/> en todas las filas; si se busca evitar el corte, reducir el texto de la columna de descripcion o dividir la tabla en dos con rotulos '(continuacion)'."
+  },
+  {
+   "tipo": "TABLA_MAYOR_A_UNA_PAGINA",
+   "ubicacion": "Tabla 4 - pagina ~61 - altura estimada 1.5 paginas",
+   "descripcion": "La tabla excede la caja de texto y se parte entre paginas. La cabecera se repite (<w:tblHeader/>) y ninguna fila se corta (<w:cantSplit/>), por lo que el corte es tecnicamente correcto pero conviene revisar el equilibrio de columnas.",
+   "correccion_openxml": "Mantener <w:tblHeader/> en la fila 1 y <w:cantSplit/> en todas las filas; si se busca evitar el corte, reducir el texto de la columna de descripcion o dividir la tabla en dos con rotulos '(continuacion)'."
+  },
+  {
+   "tipo": "TABLA_MAYOR_A_UNA_PAGINA",
+   "ubicacion": "Tabla 7 - pagina ~65 - altura estimada 1.1 paginas",
+   "descripcion": "La tabla excede la caja de texto y se parte entre paginas. La cabecera se repite (<w:tblHeader/>) y ninguna fila se corta (<w:cantSplit/>), por lo que el corte es tecnicamente correcto pero conviene revisar el equilibrio de columnas.",
+   "correccion_openxml": "Mantener <w:tblHeader/> en la fila 1 y <w:cantSplit/> en todas las filas; si se busca evitar el corte, reducir el texto de la columna de descripcion o dividir la tabla en dos con rotulos '(continuacion)'."
+  },
+  {
+   "tipo": "TABLA_MAYOR_A_UNA_PAGINA",
+   "ubicacion": "Tabla 27 - pagina ~101 - altura estimada 1.6 paginas",
+   "descripcion": "La tabla excede la caja de texto y se parte entre paginas. La cabecera se repite (<w:tblHeader/>) y ninguna fila se corta (<w:cantSplit/>), por lo que el corte es tecnicamente correcto pero conviene revisar el equilibrio de columnas.",
+   "correccion_openxml": "Mantener <w:tblHeader/> en la fila 1 y <w:cantSplit/> en todas las filas; si se busca evitar el corte, reducir el texto de la columna de descripcion o dividir la tabla en dos con rotulos '(continuacion)'."
+  },
+  {
+   "tipo": "TABLA_MAYOR_A_UNA_PAGINA",
+   "ubicacion": "Tabla 44 - pagina ~148 - altura estimada 1.3 paginas",
+   "descripcion": "La tabla excede la caja de texto y se parte entre paginas. La cabecera se repite (<w:tblHeader/>) y ninguna fila se corta (<w:cantSplit/>), por lo que el corte es tecnicamente correcto pero conviene revisar el equilibrio de columnas.",
+   "correccion_openxml": "Mantener <w:tblHeader/> en la fila 1 y <w:cantSplit/> en todas las filas; si se busca evitar el corte, reducir el texto de la columna de descripcion o dividir la tabla en dos con rotulos '(continuacion)'."
+  },
+  {
+   "tipo": "TABLA_MAYOR_A_UNA_PAGINA",
+   "ubicacion": "Tabla 45 - pagina ~151 - altura estimada 1.1 paginas",
+   "descripcion": "La tabla excede la caja de texto y se parte entre paginas. La cabecera se repite (<w:tblHeader/>) y ninguna fila se corta (<w:cantSplit/>), por lo que el corte es tecnicamente correcto pero conviene revisar el equilibrio de columnas.",
+   "correccion_openxml": "Mantener <w:tblHeader/> en la fila 1 y <w:cantSplit/> en todas las filas; si se busca evitar el corte, reducir el texto de la columna de descripcion o dividir la tabla en dos con rotulos '(continuacion)'."
+  }
+ ],
+ "estimacion_paginas": {
+  "total": 162,
+  "por_seccion": {
+   "S0_caratula": 2,
+   "S1_preliminares_romanos": 14,
+   "S2_cuerpo_portrait": 131,
+   "S3_anexo1_landscape": 3,
+   "S4_anexos2_4_portrait": 6,
+   "S5_anexos_tablas_49_50_landscape": 2,
+   "S6_anexos5_7_portrait": 4
+  },
+  "ancla": "v05 PDF = 156 paginas fisicas (1-141 portrait, 142-144 landscape, 145-150 portrait, 151-152 landscape, 153-156 portrait); v06 agrega ~22 800 caracteres en el cuerpo (~+6 paginas).",
+  "margen": "+-3 paginas"
+ },
+ "prioridad": [
+  "1. Eliminar los 8 parrafos con bloque duplicado y corregir sus referencias cruzadas (pp. ~68-138).",
+  "2. Reordenar imagen y rotulo en las 38 figuras 11-48 (imagen siempre bajo el rotulo).",
+  "3. Insertar las 4 imagenes faltantes de las figuras 49-52 y retirar los marcos de reemplazo.",
+  "4. Reemplazar los 3 marcadores [Pendiente] de la Tabla 34 por los valores definitivos.",
+  "5. Corregir el desbordamiento de los nombres de archivo en la Tabla 26 y de los identificadores segmentados en las Tablas 49-50.",
+  "6. Normalizar los 103 rotulos: numero en negrita, titulo en cursiva, 12 pt y estilo de parrafo propio.",
+  "7. Anteponer el prefijo \"Nota.\" en cursiva a las 24 notas de tabla que carecen de el.",
+  "8. Elevar a 10 pt las celdas de las 12 tablas que estan a 9 pt o 8.5 pt.",
+  "9. Sustituir las 5 imagenes con menos de 300 DPI (Figuras 1, 2, 6, 9 y escudo de caratula).",
+  "10. Refrescar TOC/TOF/TOT y los campos PAGE, y convertir las menciones a Tabla/Figura en campos REF."
+ ]
+}

@@ -1,0 +1,381 @@
+{
+  "tipo": "checklist_control_final",
+  "version": "1.0",
+  "fecha": "2026-10-21",
+  "fase": "F8",
+  "squad": "Squad A",
+  "agente": "verificador-integridad",
+  "estado": "preparado_sin_ejecutar",
+  "objeto_previsto": "salidas/documentos/informe_final_v18.docx y su PDF exportado",
+  "principio_operativo": "Control independiente y determinista. No re-maqueta, no reescribe el DOCX, no recalcula estadistica y no investiga bibliografia nueva. Se audita el entregable terminado contra sus fuentes ya declaradas.",
+  "regla_de_cobertura": "Inspeccion del 100% de paginas y del 100% de tablas, figuras y referencias. Sin muestreo. Un reporte de exportador con cero hallazgos no se acepta como veredicto. Cada pagina debe declarar el metodo efectivamente usado (lectura visual a tamano ampliado o contacto mas geometria); ambos metodos no se mezclan ni se promedian en un porcentaje global.",
+  "precisiones_vigentes": {
+    "destino": "v18. La v17 queda como resguardo y no se audita.",
+    "ancho_util": "Se calcula por seccion desde w:pgSz menos margenes. En este archivo: 8788 dxa en retrato y 13720 dxa en apaisado. No se asume 14000.",
+    "rejilla_menor": "Una tabla o rejilla mas angosta que el area util no es defecto si permanece legible y no reduce la letra.",
+    "resolucion_residual": "El escudo de cubierta a 118 DPI no es figura numerada; la Figura 6 conserva baja resolucion de origen. Se reportan como residuos medidos, no como resolucion plena certificada.",
+    "busqueda_bibliografica": "Sin busquedas externas nuevas para las 53 fuentes. Se verifica correspondencia, texto, cursivas y URLs contra las fuentes y JSON ya existentes.",
+    "metodo_por_pagina": "Se declara si la pagina se leyo a tamano ampliado o se reviso por contacto mas geometria. Los metodos no se mezclan.",
+    "informe": "Resultados factuales por control e incidencia. No se emiten porcentajes globales de calidad."
+  },
+  "insumos_requeridos_para_ejecutar": [
+    {
+      "id": "IN-01",
+      "descripcion": "Ruta absoluta del DOCX final",
+      "campos_obligatorios": ["ruta", "sha256", "bytes", "parrafos", "tablas", "imagenes", "fecha_modificacion"]
+    },
+    {
+      "id": "IN-02",
+      "descripcion": "Ruta absoluta del PDF final",
+      "campos_obligatorios": ["ruta", "sha256", "bytes", "paginas", "productor", "fecha_creacion"]
+    },
+    {
+      "id": "IN-03",
+      "descripcion": "Declaracion del maquetador sobre la exportacion",
+      "campos_obligatorios": ["herramienta", "version", "modo", "orientacion_por_seccion", "tratamiento_de_imagenes"]
+    },
+    {
+      "id": "IN-04",
+      "descripcion": "Lista cerrada de cambios aplicados en v18 respecto de v16",
+      "campos_obligatorios": ["tablas_ajustadas", "figuras_tocadas", "textos_modificados", "referencias_modificadas", "paginas_afectadas"]
+    },
+    {
+      "id": "IN-05",
+      "descripcion": "Linea base de cotejo ya congelada",
+      "campos_obligatorios": ["sha256_v16_docx", "sha256_v16_pdf", "rutas_reporte_paginas_v16"]
+    }
+  ],
+  "fuentes_de_cotejo_declaradas": [
+    "datos/raw/validacion_expertos_declaracion_20261021.json",
+    "salidas/reportes_maquetacion/directiva_integracion_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/plan_maquetacion_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/validacion_jueces_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json",
+    "salidas/reportes_maquetacion/ops_path_aclaraciones_20261021.json",
+    "salidas/documentos/anexos_fany/expediente_v09/"
+  ],
+  "controles": [
+    {
+      "id": "A-01",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Numeracion y secuencia de paginas del PDF",
+      "metodo": "Extraer el texto de cada pagina del PDF y verificar continuidad 1..N; cero paginas vacias, cero duplicadas, cero faltantes.",
+      "criterio": "Secuencia completa y sin huecos."
+    },
+    {
+      "id": "A-02",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Paginacion por pagina y por seccion",
+      "metodo": "Cotejar el orden de parrafos del DOCX con el texto de cada pagina del PDF; mapear parrafo a pagina sin ambiguedad.",
+      "criterio": "Cada parrafo del DOCX aparece una sola vez y en la pagina declarada."
+    },
+    {
+      "id": "A-03",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Margenes y ancho util calculado por seccion",
+      "metodo": "Leer cada sectPr y calcular el ancho util como w:pgSz menos margenes izquierdo y derecho, sin usar una constante supuesta. Cotejar con la caja de texto medida en el PDF.",
+      "criterio": "Margenes institucionales: izquierdo 3.0 cm y resto 2.5 cm. Ancho util resultante en este archivo: 8788 dxa en retrato y 13720 dxa en apaisado, calculado seccion por seccion y no asumido."
+    },
+    {
+      "id": "A-04",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Numeracion romana en preliminares y arabiga reiniciada en el cuerpo",
+      "metodo": "Verificar campos PAGE y reinicio en la seccion de introduccion.",
+      "criterio": "Romanos en preliminares sin numero impreso en caratula; arabigos desde 1 en el cuerpo."
+    },
+    {
+      "id": "A-05",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Encabezados y rotulos sin separacion de su contenido",
+      "metodo": "Revisar cada encabezado y cada rotulo de tabla o figura en la pagina donde cae.",
+      "criterio": "Ningun encabezado cierra pagina sin texto; ningun rotulo queda sin tabla, figura o nota en la misma pagina o la siguiente."
+    },
+    {
+      "id": "A-06",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Portada unica y preliminares sin duplicacion",
+      "metodo": "Inspeccion de pagina i y ii.",
+      "criterio": "Una sola portada; pagina ii sin bloque de portada repetido."
+    },
+    {
+      "id": "A-07",
+      "grupo": "Correspondencia DOCX-PDF y paginacion",
+      "control": "Metodo de inspeccion declarado por pagina",
+      "metodo": "Registrar por cada pagina si la revision fue lectura visual a tamano ampliado o, en su defecto, hoja de contacto mas comprobacion geometrica.",
+      "criterio": "Toda pagina tiene metodo declarado y trazable. No se presenta una hoja de contacto como inspeccion visual ampliada."
+    },
+    {
+      "id": "B-01",
+      "grupo": "Integridad textual y tokens",
+      "control": "Cero guion largo U+2014",
+      "metodo": "Barrido de todo el texto del DOCX (cuerpo, tablas, notas, anexos, indices) y del texto extraido del PDF.",
+      "criterio": "0 ocurrencias de U+2014."
+    },
+    {
+      "id": "B-02",
+      "grupo": "Integridad textual y tokens",
+      "control": "Cero tokens internos o metadatos de agente",
+      "metodo": "Buscar DEC-, QG-, [C1] a [C8], [Pending], [VERIFICAR], TBD, TODO, TrueFalse, rutas locales y nombres de script.",
+      "criterio": "0 ocurrencias en texto imprimible."
+    },
+    {
+      "id": "B-03",
+      "grupo": "Integridad textual y tokens",
+      "control": "DNI y datos de jueces",
+      "metodo": "Revisar cada campo DNI del cuerpo y anexos.",
+      "criterio": "Campo nativo o linea vacia para llenado manuscrito; cero digitos, cero identidades, cero CIP y cero fechas de evaluacion inventadas."
+    },
+    {
+      "id": "B-04",
+      "grupo": "Integridad textual y tokens",
+      "control": "Cero OMML dentro de celdas de tabla",
+      "metodo": "Recorrer el XML de cada tabla y contar m:oMath dentro de w:tc.",
+      "criterio": "0 formulas en celdas. Formulas solo en cuerpo narrativo, centradas y numeradas."
+    },
+    {
+      "id": "B-05",
+      "grupo": "Integridad textual y tokens",
+      "control": "Datos de prueba declarados como tales",
+      "metodo": "Verificar etiquetas y notas de las tablas con coeficientes y contrastes.",
+      "criterio": "Se identifican como datos de prueba; no se presentan como medicion de campo ni habilitan inferencia empirica."
+    },
+    {
+      "id": "B-06",
+      "grupo": "Integridad textual y tokens",
+      "control": "Figura 44 y su descripcion",
+      "metodo": "Comparar la imagen embebida con la evidencia XP y leer rotulo y nota.",
+      "criterio": "Imagen autentica de codigo de prueba; la nota no afirma salida de consola ni 100% de ejecucion."
+    },
+    {
+      "id": "C-01",
+      "grupo": "Tablas",
+      "control": "Ancho util y desbordes",
+      "metodo": "Medir el ancho de cada tabla contra el area util calculada para SU seccion desde pgSz y margenes. En este archivo: hasta 8788 dxa en retrato y hasta 13720 dxa en apaisado.",
+      "criterio": "Ninguna tabla excede el area util de su seccion; sin columnas cortadas ni texto fuera de celda. Una rejilla o tabla mas angosta que el area util no es defecto si sigue legible y no reduce la letra."
+    },
+    {
+      "id": "C-02",
+      "grupo": "Tablas",
+      "control": "Legibilidad y fractura intrapalabra",
+      "metodo": "Inspeccion visual de cada tabla a tamano legible, con ampliacion de celdas estrechas.",
+      "criterio": "Sin palabras partidas por columna, sin caracteres aislados, sin reduccion de letra para ocultar falta de espacio. Celdas a 10 pt."
+    },
+    {
+      "id": "C-03",
+      "grupo": "Tablas",
+      "control": "Filas no fragmentadas y encabezado repetido",
+      "metodo": "Revisar cantSplit y tblHeader en el XML y la continuidad visual en el PDF.",
+      "criterio": "Ninguna fila parte su contenido entre paginas; encabezado se repite en tablas de varias paginas."
+    },
+    {
+      "id": "C-04",
+      "grupo": "Tablas",
+      "control": "Regla de bordes segun el tipo de tabla",
+      "metodo": "Distinguir tablas academicas de formularios de validacion.",
+      "criterio": "Tres lineas horizontales y cero verticales en tablas academicas; rejilla visible solo en guia, certificado y formularios solicitados por el tesista."
+    },
+    {
+      "id": "C-05",
+      "grupo": "Tablas",
+      "control": "Contenido textual en celdas",
+      "metodo": "Buscar expresiones algebraicas, fracciones o notacion de calculo en celdas.",
+      "criterio": "Solo texto descriptivo, dimensiones, indicadores, unidades y escalas."
+    },
+    {
+      "id": "C-06",
+      "grupo": "Tablas",
+      "control": "Numeracion correlativa y correspondencia con el indice",
+      "metodo": "Extraer todos los rotulos y compararlos con el indice de tablas.",
+      "criterio": "Serie 1..N sin duplicados ni saltos; indice coincide en numero, titulo y pagina."
+    },
+    {
+      "id": "D-01",
+      "grupo": "Figuras y DPI",
+      "control": "DPI efectivo por figura en DOCX y en PDF",
+      "metodo": "Medir pixeles de la imagen contra su tamano de despliegue, en el DOCX y en el PDF. Distinguir figuras numeradas de imagenes residuales no numeradas.",
+      "criterio": "300 DPI o superior en figuras numeradas, salvo excepciones declaradas. Residuos conocidos no se certifican como resolucion plena: el escudo de cubierta a 118 DPI no es figura numerada y la Figura 6 conserva una baja resolucion de origen. Se reporta el valor medido y su causa, sin declarar que la excepcion esta resuelta."
+    },
+    {
+      "id": "D-02",
+      "grupo": "Figuras y DPI",
+      "control": "Sin reescalado artificial ni sustitucion silenciosa",
+      "metodo": "Comparar hash y dimensiones de las imagenes embebidas contra v16.",
+      "criterio": "Solo cambian las figuras declaradas en IN-04; ninguna se eleva de DPI por interpolacion presentada como mejora."
+    },
+    {
+      "id": "D-03",
+      "grupo": "Figuras y DPI",
+      "control": "Estructura rotulo, imagen y nota",
+      "metodo": "Revisar orden y formato de cada figura.",
+      "criterio": "Rotulo en negrita, titulo en cursiva, imagen un parrafo despues y nota al pie con fuente."
+    },
+    {
+      "id": "D-04",
+      "grupo": "Figuras y DPI",
+      "control": "Correspondencia figura-texto",
+      "metodo": "Leer cada nota y el parrafo que cita la figura.",
+      "criterio": "Numero, contenido y fuente concuerdan con lo descrito en el cuerpo."
+    },
+    {
+      "id": "E-01",
+      "grupo": "Referencias y citas",
+      "control": "Cursivas APA 7 en referencias",
+      "metodo": "Inspeccionar runs de cada asentamiento.",
+      "criterio": "Cursiva solo en titulo de obra y nombre de revista o libro; nunca en autores, ano, DOI ni en la entrada completa."
+    },
+    {
+      "id": "E-02",
+      "grupo": "Referencias y citas",
+      "control": "Formato de lista",
+      "metodo": "Medir sangria, interlineado, espaciado y orden.",
+      "criterio": "Sangria francesa 1.27 cm, interlineado 1.5, 6 pt posteriores y orden alfabetico estricto."
+    },
+    {
+      "id": "E-03",
+      "grupo": "Referencias y citas",
+      "control": "Correspondencia biunivoca 1:1",
+      "metodo": "Extraer citas del cuerpo y asentamientos de la lista; cruzar ambos conjuntos.",
+      "criterio": "Cero citas sin referencia y cero referencias sin cita activa."
+    },
+    {
+      "id": "E-04",
+      "grupo": "Referencias y citas",
+      "control": "Correspondencia de DOI y URL de las fuentes existentes",
+      "metodo": "Sin busquedas externas nuevas para las 53 fuentes. Cotejar cada entrada contra los JSON primarios ya confirmados y la lista de referencias existente: autoria, ano, titulo, texto de la cita, cursivas y URL o DOI. Solo se resuelve en linea un enlace puntual cuando el JSON no baste para decidir si apunta a la obra citada.",
+      "criterio": "Cada DOI o URL corresponde a la obra de su asiento. No se afirma '100% de DOI verificados': se informa cuantas fuentes tienen existencia demostrada, cuantas solo documento local y cuantas quedan sin evidencia suficiente."
+    },
+    {
+      "id": "E-05",
+      "grupo": "Referencias y citas",
+      "control": "Consistencia OPS/PATH 2019",
+      "metodo": "Cotejar las dos citas corregidas y la referencia de la lista contra el JSON primario confirmado de OPS/PATH, sin nueva busqueda externa.",
+      "criterio": "Ano 2019 en las tres apariciones, coincidente con el JSON primario; sin residuos de 2020."
+    },
+    {
+      "id": "E-06",
+      "grupo": "Referencias y citas",
+      "control": "Sin bibliografia nueva no autorizada",
+      "metodo": "Diferenciar la lista de referencias contra v16.",
+      "criterio": "Solo aparecen altas o cambios declarados y verificados; ninguna fuente inventada."
+    },
+    {
+      "id": "F-01",
+      "grupo": "Validacion por expertos",
+      "control": "Escalas no confundidas",
+      "metodo": "Comparar los formatos de experto con el cuestionario TAM.",
+      "criterio": "Formatos de experto en escala 1-4 y TAM en Likert 1-5; ninguna conversion ni equiparacion entre escalas."
+    },
+    {
+      "id": "F-02",
+      "grupo": "Validacion por expertos",
+      "control": "Doce componentes frente a ocho reactivos AP/UP",
+      "metodo": "Leer el texto que describe el instrumento evaluado y el que reporta la validacion.",
+      "criterio": "Se distingue el instrumento de 12 componentes del cuestionario de 8 reactivos; no se adjudican resultados de uno al otro."
+    },
+    {
+      "id": "F-03",
+      "grupo": "Validacion por expertos",
+      "control": "V e IVC condicionales",
+      "metodo": "Rastrear cada mencion de V, IVC y 1.000.",
+      "criterio": "Aparecen solo como calculo condicional ligado a escala 1-4 y unanimidad reportada; no certifican formularios, no calculan alfa, ICC ni kappa."
+    },
+    {
+      "id": "F-04",
+      "grupo": "Validacion por expertos",
+      "control": "Sin datos individualizados inventados",
+      "metodo": "Buscar numero de jueces, nombres, fechas, matrices por juez y opiniones de aplicabilidad.",
+      "criterio": "Solo se declara lo reportado por el tesista; los campos no informados quedan vacios o condicionales."
+    },
+    {
+      "id": "F-05",
+      "grupo": "Validacion por expertos",
+      "control": "Existencia real de los soportes citados",
+      "metodo": "Verificar que cada expediente o formato citado exista en la ruta declarada y con el numero de expertos que el texto afirma.",
+      "criterio": "Ninguna referencia documental apunta a archivos ausentes o a un numero de expertos no sustentado."
+    },
+    {
+      "id": "F-06",
+      "grupo": "Validacion por expertos",
+      "control": "Lenguaje de estado",
+      "metodo": "Revisar afirmaciones de validacion en resumen, metodologia, resultados y anexos.",
+      "criterio": "Se usa informacion reportada por el tesista; no se afirma validacion institucional ni juicio firmado revisado."
+    },
+    {
+      "id": "G-01",
+      "grupo": "Indices",
+      "control": "Indice general, de tablas y de figuras actualizados",
+      "metodo": "Comparar cada entrada y numero de pagina con el cuerpo renderizado.",
+      "criterio": "Sin entradas obsoletas; numeros de pagina vigentes; campos nativos presentes."
+    },
+    {
+      "id": "H-01",
+      "grupo": "Reparacion DPI del PDF",
+      "control": "Asignacion no ambigua imagen PDF a parte DOCX",
+      "metodo": "Emparejar cada imagen del PDF con su media del DOCX por posicion, dimensiones y contenido.",
+      "criterio": "Cada imagen del PDF tiene una sola correspondencia declarada; ninguna queda sin asignar."
+    },
+    {
+      "id": "H-02",
+      "grupo": "Reparacion DPI del PDF",
+      "control": "Rectangulos y geometria de las imagenes reparadas",
+      "metodo": "Comparar caja de destino, recorte y proporcion entre DOCX y PDF.",
+      "criterio": "Misma posicion relativa, mismo tamano y sin recorte ni superposicion."
+    },
+    {
+      "id": "H-03",
+      "grupo": "Reparacion DPI del PDF",
+      "control": "Texto igual entre DOCX y PDF",
+      "metodo": "Extraer texto por pagina y comparar contra el DOCX con reglas de normalizacion declaradas.",
+      "criterio": "Mismo contenido textual; diferencias solo de separacion de linea o guionado, ninguna perdida ni alteracion."
+    },
+    {
+      "id": "H-04",
+      "grupo": "Reparacion DPI del PDF",
+      "control": "Efectividad real de la reparacion de DPI",
+      "metodo": "Medir DPI antes y despues en las figuras reparadas, en DOCX y en PDF.",
+      "criterio": "El DPI efectivo sube por sustitucion declarada, no por reescalado; la mejora se demuestra con medicion."
+    }
+  ],
+  "escala_severidad": {
+    "critico": "Fuente inexistente, dato inventado, contenido faltante, enlace ajeno, afirmacion empirica no sustentada o pagina ilegible.",
+    "mayor": "Incumplimiento de regla APA 7, maquetacion defectuosa, desborde, fractura de palabra, indice obsoleto o inconsistencia entre DOCX y PDF.",
+    "menor": "Puntuacion, espaciado o detalle de acabado sin efecto sobre el contenido."
+  },
+  "salida_prevista": {
+    "ruta": "salidas/reportes_maquetacion/incidencias_v18_20261021.json",
+    "esquema_por_incidencia": [
+      "id",
+      "control_id",
+      "severidad",
+      "pagina_pdf",
+      "pagina_docx",
+      "seccion",
+      "evidencia_observada",
+      "evidencia_esperada",
+      "ubicacion_xml_o_coordenadas",
+      "metodo_inspeccion",
+      "accion_sugerida",
+      "confianza"
+    ],
+    "resumen_obligatorio": ["paginas_auditadas", "paginas_por_metodo", "tablas_auditadas", "figuras_auditadas", "referencias_auditadas", "conteo_por_severidad"],
+    "resumen_prohibido": ["porcentaje global de calidad", "porcentaje de paginas conformes presentado como certificacion", "100% de DOI verificados sin existencia demostrada por fuente"]
+  },
+  "criterio_de_dictamen": {
+    "aprobado_sin_observaciones": "0 criticos, 0 mayores y 0 menores.",
+    "observado_subsanable": "0 criticos y al menos un mayor o menor.",
+    "bloqueado_alerta_roja": "Al menos un critico."
+  },
+  "fuera_de_alcance": [
+    "No re-maquetar ni editar el DOCX.",
+    "No recalcular estadistica ni reejecutar contrastes.",
+    "No investigar bibliografia adicional ni crear fuentes.",
+    "No auditar la v17, ya observada y en correccion; se conserva como resguardo.",
+    "No leer ni auditar el DOCX o PDF mientras el maquetador siga escribiendo.",
+    "No tomar el reporte de cero hallazgos del exportador como veredicto.",
+    "No suponer anchos utiles ni escalas de pagina: se calculan de cada seccion.",
+    "No certificar como resueltas las figuras de baja resolucion residual.",
+    "No repetir busquedas externas para las 53 fuentes ya inventariadas.",
+    "No emitir porcentajes globales de calidad ni promedios entre metodos de inspeccion."
+  ],
+  "estado_ejecucion": "esperando_senal_del_director_con_rutas_y_hash"
+}

@@ -1,0 +1,432 @@
+{
+  "caracter": "auditoria_de_procedencia_sin_resultados_nuevos",
+  "advertencia": "Todas las cifras de este informe proceden de los CSV rotulados DATOS DE PRUEBA. No acreditan medicion de campo.",
+  "archivos": {
+    "pretest": {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\datos\\recolectados\\pretest_campo.csv",
+      "sha256": "1e74ab29a3e36d8eb04ec69e0aff48dcff6711339815b30855e41edfbb54e9c3",
+      "filas": 14
+    },
+    "posttest": {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\datos\\recolectados\\posttest_campo.csv",
+      "sha256": "98861dc39aaea9be4175b480de35b7317d2d93be315b2ead45df40779081fccc",
+      "filas": 14
+    },
+    "reporte_json": {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\estadistica\\reporte_estadistico_completo.json",
+      "sha256": "92b67f017b13965146c58134199f1e698351ec758ebc91f54f221f2103aff5b9"
+    }
+  },
+  "integridad_estructural": {
+    "n_pretest": 14,
+    "n_posttest": 14,
+    "identificadores_identicos_y_en_el_mismo_orden": true,
+    "ids_unicos": true,
+    "suma_items_igual_score_ap": true,
+    "suma_items_igual_score_up": true,
+    "score_tam_total_igual_ap_mas_up": true,
+    "rangos_codebook": {
+      "t_reg_0_120": true,
+      "t_vale_0_60": true,
+      "rsd_0_100": true,
+      "cpe_0_100": true,
+      "likert_1_5": true
+    },
+    "valores_nulos": {
+      "pretest_nulos": 0,
+      "posttest_nulos": 0
+    },
+    "emparejamiento_por_posicion_no_por_id": true,
+    "nota_emparejamiento": "El pipeline resta columnas por posicion. La coincidencia actual de identificadores y de orden es una condicion del archivo, no una garantia del codigo."
+  },
+  "identidades_aritmeticas": {
+    "t_reg": {
+      "media_diferencia": -30.0,
+      "de_diferencia": 2.882307,
+      "t_recalculada_desde_medias": -38.944405,
+      "t_reportada_json": -38.944405,
+      "t_coincide": true,
+      "d_z_recalculada": -10.40833,
+      "d_z_reportada_json": -10.40833,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.000975879,
+      "p_guardada_en_json": 0.000975879,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 0.0
+    },
+    "t_vale": {
+      "media_diferencia": -15.178571,
+      "de_diferencia": 2.317219,
+      "t_recalculada_desde_medias": -24.509123,
+      "t_reportada_json": -24.509123,
+      "t_coincide": true,
+      "d_z_recalculada": -6.550339,
+      "d_z_reportada_json": -6.550339,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.000967428,
+      "p_guardada_en_json": 0.000967428,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 3e-12
+    },
+    "rsd": {
+      "media_diferencia": 32.428571,
+      "de_diferencia": 4.556724,
+      "t_recalculada_desde_medias": 26.628033,
+      "t_reportada_json": 26.628033,
+      "t_coincide": true,
+      "d_z_recalculada": 7.116641,
+      "d_z_reportada_json": 7.116641,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.00098154,
+      "p_guardada_en_json": 0.00012207,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 2e-12
+    },
+    "cpe": {
+      "media_diferencia": 27.785714,
+      "de_diferencia": 3.693624,
+      "t_recalculada_desde_medias": 28.147052,
+      "t_reportada_json": 28.147052,
+      "t_coincide": true,
+      "d_z_recalculada": 7.522616,
+      "d_z_reportada_json": 7.522616,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.000975879,
+      "p_guardada_en_json": 0.000975879,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 1e-12
+    },
+    "score_ap": {
+      "media_diferencia": 9.642857,
+      "de_diferencia": 1.081818,
+      "t_recalculada_desde_medias": 33.351521,
+      "t_reportada_json": 33.351521,
+      "t_coincide": true,
+      "d_z_recalculada": 8.913569,
+      "d_z_reportada_json": 8.913569,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.000856826,
+      "p_guardada_en_json": 0.000856826,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 0.0
+    },
+    "score_up": {
+      "media_diferencia": 9.5,
+      "de_diferencia": 1.019049,
+      "t_recalculada_desde_medias": 34.88128,
+      "t_reportada_json": 34.88128,
+      "t_coincide": true,
+      "d_z_recalculada": 9.322414,
+      "d_z_reportada_json": 9.322414,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.000862012,
+      "p_guardada_en_json": 0.000862012,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 0.0
+    },
+    "score_tam_total": {
+      "media_diferencia": 19.142857,
+      "de_diferencia": 1.610406,
+      "t_recalculada_desde_medias": 44.476998,
+      "t_reportada_json": 44.476998,
+      "t_coincide": true,
+      "d_z_recalculada": 11.886978,
+      "d_z_reportada_json": 11.886978,
+      "d_z_coincide": true,
+      "W_reportada": 0.0,
+      "z_aprox_normal_sin_correccion": -3.295765,
+      "p_exacta_disponible": 0.00012207,
+      "p_asintotica": 0.000912346,
+      "p_guardada_en_json": 0.000912346,
+      "r_rosenthal_N": 0.88083,
+      "r_rosenthal_2N": 0.622841,
+      "r_guardada_en_json": 0.622841,
+      "holmes_ajustado_json": 0.0
+    }
+  },
+  "correspondencia_json": {
+    "r_esperada_con_N": 0.88083,
+    "r_contenida_en_json": 0.622841,
+    "json_usa_denominador_2N": true,
+    "docx_reporta_r": 0.881,
+    "json_incompatible_con_docx": true,
+    "familia_holm_es_p_valor_adoptado": true,
+    "holm_reproduce_el_json": true,
+    "holm_bruto_ya_es_monotono_en_estos_datos": true,
+    "holm_pasos": {
+      "score_tam_total": {
+        "p_original": 1.362188594578728e-15,
+        "p_ajustado": 9.535320162051096e-15
+      },
+      "t_reg": {
+        "p_original": 7.568028939969029e-15,
+        "p_ajustado": 4.540817363981417e-14
+      },
+      "score_up": {
+        "p_original": 3.1300577954666095e-14,
+        "p_ajustado": 1.5650288977333046e-13
+      },
+      "score_ap": {
+        "p_original": 5.5736246916697965e-14,
+        "p_ajustado": 2.2294498766679186e-13
+      },
+      "cpe": {
+        "p_original": 4.917496597153699e-13,
+        "p_ajustado": 1.4752489791461095e-12
+      },
+      "rsd": {
+        "p_original": 9.999463193320737e-13,
+        "p_ajustado": 1.9998926386641474e-12
+      },
+      "t_vale": {
+        "p_original": 2.88124139114705e-12,
+        "p_ajustado": 2.88124139114705e-12
+      }
+    },
+    "nota_holm": "La implementacion omite el maximo acumulado que garantiza monotonia de los p ajustados. En estos datos el orden ya resulta monotono, de modo que la omision no altera las decisiones actuales, pero si podria alterarlas con otros datos.",
+    "metodo_p_wilcoxon_heterogeneo": {
+      "valores_distintos_en_json": [
+        0.00012207,
+        0.000856826,
+        0.000862012,
+        0.000912346,
+        0.000967428,
+        0.000975879
+      ],
+      "explicacion": "scipy elige prueba exacta o asintotica segun la presencia de empates; el JSON mezcla ambos metodos entre indicadores."
+    }
+  },
+  "correspondencia_docx_2026_10_26": {
+    "comparacion": {
+      "Tabla 40 t_reg": {
+        "t_docx": -38.944,
+        "t_recalculada": -38.944405,
+        "t_coincide": true,
+        "d_docx": -10.41,
+        "d_recalculada": -10.40833,
+        "d_coincide": true
+      },
+      "Tabla 40 t_vale": {
+        "t_docx": -24.509,
+        "t_recalculada": -24.509123,
+        "t_coincide": true,
+        "d_docx": -6.55,
+        "d_recalculada": -6.550339,
+        "d_coincide": true
+      },
+      "Tabla 41 rsd": {
+        "t_docx": 26.628,
+        "t_recalculada": 26.628033,
+        "t_coincide": true,
+        "d_docx": 7.12,
+        "d_recalculada": 7.116641,
+        "d_coincide": true
+      },
+      "Tabla 41 cpe": {
+        "t_docx": 28.147,
+        "t_recalculada": 28.147052,
+        "t_coincide": true,
+        "d_docx": 7.52,
+        "d_recalculada": 7.522616,
+        "d_coincide": true
+      },
+      "Tabla 42 ap": {
+        "t_docx": 33.352,
+        "t_recalculada": 33.351521,
+        "t_coincide": true,
+        "d_docx": 8.91,
+        "d_recalculada": 8.913569,
+        "d_coincide": true
+      },
+      "Tabla 42 up": {
+        "t_docx": 34.881,
+        "t_recalculada": 34.88128,
+        "t_coincide": true,
+        "d_docx": 9.32,
+        "d_recalculada": 9.322414,
+        "d_coincide": true
+      },
+      "Tabla 42 tam": {
+        "t_docx": 44.477,
+        "t_recalculada": 44.476998,
+        "t_coincide": true,
+        "d_docx": 11.89,
+        "d_recalculada": 11.886978,
+        "d_coincide": true
+      }
+    },
+    "r_docx_vs_json": {
+      "docx": 0.881,
+      "json": 0.622841
+    },
+    "p_wilcoxon_docx_uniforme": 0.001,
+    "p_wilcoxon_json_rsd": 0.00012207,
+    "p_wilcoxon_json_rsd_no_redondea_a_001": true
+  },
+  "confiabilidad": {
+    "pretest": {
+      "alpha_recalculado": 0.93852,
+      "alpha_json": 0.93852,
+      "ic95_recalculado": [
+        0.87398,
+        0.97705
+      ],
+      "ic95_json": [
+        0.87398,
+        0.97705
+      ],
+      "n_menor_que_piloto_15": true
+    },
+    "posttest": {
+      "alpha_recalculado": 0.915073,
+      "alpha_json": 0.915073,
+      "ic95_recalculado": [
+        0.825919,
+        0.968297
+      ],
+      "ic95_json": [
+        0.825919,
+        0.968297
+      ],
+      "n_menor_que_piloto_15": true
+    }
+  },
+  "unidades_geograficas": {
+    "centros_distintos_en_csv": 13,
+    "trabajadores": 14,
+    "centros_con_mas_de_un_trabajador": {
+      "ALMACÉN (CHANKA)": 2
+    },
+    "registro_normativo_centros": 19,
+    "readme_recolectados_declara": 8,
+    "docx_declara": 13,
+    "discrepancia_de_conteos": [
+      8,
+      13,
+      19
+    ]
+  },
+  "normalidad_reproducida": {
+    "por_indicador": {
+      "t_reg": {
+        "W": 0.978572,
+        "p": 0.965686,
+        "W_json": 0.978572,
+        "p_json": 0.965686,
+        "coincide_con_json": true,
+        "asimetria": -0.3486,
+        "curtosis_exceso": -0.4658,
+        "p_cerca_del_umbral_005": false,
+        "n": 14
+      },
+      "t_vale": {
+        "W": 0.932541,
+        "p": 0.331099,
+        "W_json": 0.932541,
+        "p_json": 0.331099,
+        "coincide_con_json": true,
+        "asimetria": -0.7079,
+        "curtosis_exceso": -0.186,
+        "p_cerca_del_umbral_005": false,
+        "n": 14
+      },
+      "rsd": {
+        "W": 0.958336,
+        "p": 0.695611,
+        "W_json": 0.958336,
+        "p_json": 0.695611,
+        "coincide_con_json": true,
+        "asimetria": -0.2157,
+        "curtosis_exceso": -0.9098,
+        "p_cerca_del_umbral_005": false,
+        "n": 14
+      },
+      "cpe": {
+        "W": 0.953354,
+        "p": 0.613891,
+        "W_json": 0.953354,
+        "p_json": 0.613891,
+        "coincide_con_json": true,
+        "asimetria": -0.0478,
+        "curtosis_exceso": -1.0536,
+        "p_cerca_del_umbral_005": false,
+        "n": 14
+      },
+      "score_ap": {
+        "W": 0.909123,
+        "p": 0.15303,
+        "W_json": 0.909123,
+        "p_json": 0.15303,
+        "coincide_con_json": true,
+        "asimetria": 0.421,
+        "curtosis_exceso": 0.5919,
+        "p_cerca_del_umbral_005": false,
+        "n": 14
+      },
+      "score_up": {
+        "W": 0.876351,
+        "p": 0.051576,
+        "W_json": 0.876351,
+        "p_json": 0.051576,
+        "coincide_con_json": true,
+        "asimetria": -0.2544,
+        "curtosis_exceso": -0.9046,
+        "p_cerca_del_umbral_005": true,
+        "n": 14
+      },
+      "score_tam_total": {
+        "W": 0.955333,
+        "p": 0.6461,
+        "W_json": 0.955333,
+        "p_json": 0.6461,
+        "coincide_con_json": true,
+        "asimetria": -0.2684,
+        "curtosis_exceso": -0.1108,
+        "p_cerca_del_umbral_005": false,
+        "n": 14
+      }
+    },
+    "advertencia": "No rechazar normalidad no demuestra normalidad. Con n = 14, Shapiro-Wilk tiene potencia baja y el supuesto queda indeterminado, no confirmado. El indicador con p mas proximo a .05 muestra el margen real.",
+    "gl_declarado_en_el_pipeline": 14,
+    "shapiro_no_tiene_grados_de_libertad_de_ese_modo": true
+  },
+  "trazabilidad_protocolo_dec021": {
+    "t_reg_requiere_tres_observaciones_por_participante": true,
+    "columnas_de_observaciones_presentes": false,
+    "unidad_en_csv_es_valor_unico_por_participante": true,
+    "cpe_requiere_corpus_de_40_a_60_entregas_por_ventana": true,
+    "columnas_de_conteos_presentes": false,
+    "rsd_requiere_conteo_de_registros": false,
+    "conclusion": "Los CSV contienen porcentajes agregados y un unico tiempo por participante; no permiten reconstruir el corpus documental ni la mediana de tres cronometrajes exigidos por DEC-021. La trazabilidad al protocolo no es verificable con estos archivos, aun si los datos fueran reales."
+  }
+}

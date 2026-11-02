@@ -1,0 +1,106 @@
+=== 726 runs 5
+Addy, A. (2023). Artificial intelligence in the supply chain management for vaccine distribution in the West African healthcare sector with a focus on Ghana. International Journal of Legal Science and Innovation, 5(6), 1–25. https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana
+=== 727 runs 3
+Alvarez Ticllasuca, K., Flores Marín, G., y Poma Rojas, W. J. (2023). Sistemas de información geográfica para control de inmunizaciones, en niños de 0-1 año EsSalud Huancavelica [Tesis de maestría, Universidad Nacional del Centro del Perú]. Repositorio Institucional UNCP. http://hdl.handle.net/20.500.12894/9418
+=== 728 runs 5
+Arisholm, E., Gallis, H., Dyba, T., y Sjoberg, D. I. K. (2007). Evaluating pair programming with respect to system complexity and programmer expertise. IEEE Transactions on Software Engineering, 33(2), 65–86. https://doi.org/10.1109/TSE.2007.17
+=== 729 runs 3
+Astuhuaman Perez, S. M., y Baltazar Maza, E. J. (2023). Implementación de un sistema web con IA para mejorar la gestión de citas médicas en el Centro de Salud de Nueva Fuerabamba, Apurímac 2024 [Tesis de licenciatura, Universidad Privada del Norte]. Repositorio Institucional UPN. https://hdl.handle.net/11537/43590
+=== 730 runs 3
+Balón Morejón, R. M. (2023). Aplicación web de gestión de citas, control de inventario y campañas de vacunación en el centro de salud Dr. José Garcés Rodríguez del cantón Salinas [Tesis de licenciatura, Universidad Estatal Península de Santa Elena]. Repositorio Institucional UPSE.
+=== 731 runs 5
+Beck, K. (1999). Embracing change with extreme programming. Computer, 32(10), 70–77. https://doi.org/10.1109/2.796139
+=== 732 runs 5
+Brooks, D. J., Kim, C. I., Mboussou, F. F., y Danovaro-Holliday, M. C. (2024). Developing national information systems to monitor COVID-19 vaccination: A global observational study. JMIR Public Health and Surveillance, 10, Artículo e62657. https://doi.org/10.2196/62657
+=== 733 runs 4
+Champi Velásquez, J. M. (2023). Implementación de un sistema de monitoreo inalámbrico mediante Internet de las cosas para monitorear la conservación en la cadena de frío de vacunas del servicio de inmunizaciones en el distrito de Puente Piedra [Tesis de licenciatura, Universidad de Ciencias y Humanidades]. Repositorio Institucional UCH. http://hdl.handle.net/20.500.12872/844
+=== 734 runs 5
+Chekol, A., Ketemaw, A., Endale, A., Aschale, A., Endalew, B., y Asemahagn, M. A. (2023). Data quality and associated factors of routine health information system among health centers of West Gojjam Zone, northwest Ethiopia, 2021. Frontiers in Health Services, 3, Artículo 1059611. https://doi.org/10.3389/frhs.2023.1059611
+=== 735 runs 3
+Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2.ª ed.). Lawrence Erlbaum Associates.
+=== 736 runs 3
+Cohn, M. (2004). User stories applied: For agile software development. Addison-Wesley Professional.
+=== 737 runs 1
+Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometrika, 16(3), 297–334. https://doi.org/10.1007/BF02310555
+=== 738 runs 5
+Dang, T. T. T., Carnahan, E., Nguyen, L., Mvundura, M., Dao, S., Duong, T. H., Nguyen, T., Nguyen, D., Nguyen, T., Werner, L., Ryman, T. K., y Nguyen, N. (2024). Outcomes and costs of the transition from a paper-based immunization system to a digital immunization system in Vietnam: Mixed methods study. Journal of Medical Internet Research, 26, Artículo e45070. https://doi.org/10.2196/45070
+=== 739 runs 5
+Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 319–340. https://doi.org/10.2307/249008
+=== 740 runs 3
+De la Torre Llorente, C., Zorrilla Castro, U., Calvarro Nelson, J., Ramos Barros, M. A., Manteiga Pacios, C., Cortés Hierro, F., y García Mesa, I. (2010). Guía de arquitectura N-Capas orientada al dominio con .NET 4.0 (1.ª ed.). Krasis Press.
+=== 741 runs 5
+Dolan, S. B., Alao, M. E., Mwansa, F. D., Lymo, D. C., Bulula, N., Carnahan, E., Beylerian, E., Werner, L., y Shearer, J. C. (2020). Perceptions of factors influencing the introduction and adoption of electronic immunization registries in Tanzania and Zambia: A mixed methods study. Implementation Science Communications, 1(1), Artículo 38. https://doi.org/10.1186/s43058-020-00022-8
+=== 742 runs 5
+Ergetie, F. S., Kassaw, A. T., y Sendekie, A. K. (2023). Vaccine cold chain management practices in primary health centers providing an expanded immunization program in Northwest Ethiopia. Frontiers in Public Health, 11, Artículo 1194807. https://doi.org/10.3389/fpubh.2023.1194807
+=== 743 runs 1
+Feldt, L. S. (1965). The approximate sampling distribution of Kuder-Richardson reliability coefficient twenty. Psychometrika, 30(3), 357–370. https://doi.org/10.1007/BF02289499
+=== 744 runs 3
+Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el control de inventario en la Farmacia Pro, 2023 [Tesis de licenciatura, Universidad Privada del Norte]. Repositorio Institucional UPN. https://hdl.handle.net/11537/33833
+=== 745 runs 1
+George, D., y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and reference (4.ª ed.). Allyn & Bacon.
+=== 746 runs 5
+Gilbert, S. S., Bulula, N., Yohana, E., Thompson, J., Beylerian, E., Werner, L., y Shearer, J. C. (2020). The impact of an integrated electronic immunization registry and logistics management information system (EIR-eLMIS) on vaccine availability in three regions in Tanzania: A pre-post and time-series analysis. Vaccine, 38(3), 562–569. https://doi.org/10.1016/j.vaccine.2019.10.059
+=== 747 runs 5
+Gutiérrez-Aguado, A., Mendoza, M., Sarazú, T., y Rodriguez-Ordoñez, P. (2024). Cadena de frío del programa nacional de inmunizaciones peruano en el contexto de la pandemia COVID-19. Revista de la Facultad de Medicina Humana, 24(1), 73–84. https://doi.org/10.25176/rfmh.v24i1.6189
+=== 748 runs 3
+Hernández-Sampieri, R., Fernández-Collado, C., y Baptista-Lucio, P. (2014). Metodología de la investigación (6.ª ed.). McGraw-Hill Education.
+=== 749 runs 1
+Hernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las rutas cuantitativa, cualitativa y mixta. McGraw-Hill Education.
+=== 750 runs 1
+Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70.
+=== 751 runs 5
+Hussain, A., Zhiqiang, M., Li, M., Jameel, A., Kanwel, S., Ahmad, S., y Ge, B. (2025). The mediating effects of perceived usefulness and perceived ease of use on nurses’ intentions to adopt advanced technology. BMC Nursing, 24(1), Artículo 33. https://doi.org/10.1186/s12912-024-02648-8
+=== 752 runs 5
+Inarotul Huda, I., Yunengsih, Y., y Abdussalaam, F. (2025). Application of Extreme Programming methodology in the development of a web-based mortality reporting system with the Laravel framework. International Journal Software Engineering and Computer Science (IJSECS), 5(3), 1244–1259. https://doi.org/10.35870/ijsecs.v5i3.5354
+=== 753 runs 3
+International Organization for Standardization, e International Electrotechnical Commission. (2023). Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): Product quality model (ISO/IEC 25010:2023). https://www.iso.org/standard/78176.html
+=== 754 runs 6
+Kigenza, R., Nsengiyumva, E., y Sabagirirwa, V. (2023). The Quality Management Improvement Approach: Successes and lessons learned from a workforce development intervention in Rwanda’s health supply chain. Global Health: Science and Practice, 11(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22-00295
+=== 755 runs 5
+Kokol, P. (2022). Agile software development in healthcare: A synthetic scoping review. Applied Sciences, 12(19), Artículo 9462. https://doi.org/10.3390/app12199462
+=== 756 runs 3
+Luján Mora, S. (2002). Programación de aplicaciones web: Historia, principios básicos y clientes web. Editorial Club Universitario.
+=== 757 runs 5
+Luo, J., Ahmad, S. F., Alyaemeni, A., Ou, Y., Irshad, M., Alyafi-Alzahri, R., Alsanie, G., y Unnisa, S. T. (2024). Role of perceived ease of use, usefulness, and financial strength on the adoption of health information systems: The moderating role of hospital size. Humanities and Social Sciences Communications, 11(1), Artículo 516. https://doi.org/10.1057/s41599-024-02976-9
+=== 758 runs 5
+Mamani-Pari, D., Peñaloza-Hualpa, A. F., Humpiri-Flores, M. E., Gutierrez-Quispe, E., y Otazu-Luque, J. E. (2026). Development and psychometric validation of a usability instrument based on ISO 25010 for electronic health record systems in Peruvian health care settings: Methodological study. JMIR Human Factors, 13, Artículo e81377. https://doi.org/10.2196/81377
+=== 759 runs 3
+Mego Navarro, D. P. (2021). Implementación de un sistema web para la gestión de vacunas del Covid-19 en una entidad pública 2021 [Trabajo de suficiencia profesional, Universidad Tecnológica del Perú]. Repositorio Institucional UTP. https://hdl.handle.net/20.500.12867/5068
+=== 760 runs 5
+Mekonen, Z. T., Cho, D. J., Nadeem, S. P., Garza-Reyes, J. A., y Fenta, T. G. (2024). Vaccine logistics management information system at public health facilities in Amhara Region, Ethiopia: A performance evaluation. Healthcare Informatics Research, 30(4), 375–386. https://doi.org/10.4258/hir.2024.30.4.375
+=== 761 runs 3
+Ministerio de Salud del Perú. (2022). Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N.° 196-MINSA/DGIESP-2022, aprobada mediante Resolución Ministerial N.° 884-2022/MINSA). Ministerio de Salud del Perú.
+=== 762 runs 6
+Moumane, K., Idri, A., El Aouni, F., Laghnimi, J., Benabdellah, N. C., y Hamal, O. (2024). ISO/IEC 25010-based quality evaluation of three mobile applications for reproductive health services in Morocco. Clinical and Experimental Obstetrics & Gynecology, 51(4), Artículo 88. https://doi.org/10.31083/j.ceog5104088
+=== 763 runs 5
+Ndlovu, K., Mauco, K. L., Keetile, M., Kadimo, K., Senyatso, R. Y., Ntebela, D., Valela, B., y Murambi, C. (2022). Acceptance of the District Health Information System Version 2 platform for malaria case-based surveillance by health care workers in Botswana: Web-based survey. JMIR Formative Research, 6(3), Artículo e32722. https://doi.org/10.2196/32722
+=== 764 runs 5
+Oliveira, V. C. D., Guimarães, E. A. D. A., Amaral, G. G., Silva, T. I. M., Fabriz, L. A., y Pinto, I. C. (2020). Acceptance and use of the Information System of the National Immunization Program. Revista Latino-Americana de Enfermagem, 28, Artículo e3307. https://doi.org/10.1590/1518-8345.3360.3307
+=== 765 runs 3
+Organización Panamericana de la Salud, y PATH. (2019). Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. https://iris.paho.org/handle/10665.2/50482
+=== 766 runs 3
+Pressman, R. S. (2010). Ingeniería del software: Un enfoque práctico (7.ª ed.). McGraw-Hill Interamericana.
+=== 767 runs 1
+Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas]. Repositorio Institucional UNAJMA. https://hdl.handle.net/20.500.14168/854
+=== 768 runs 1
+Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.
+=== 769 runs 1
+Rosenthal, R. (1991). Meta-analytic procedures for social research (ed. rev.). Sage. https://doi.org/10.4135/9781412984997
+=== 770 runs 3
+Ruiz Barea, R. (2023). Protección de APIs REST. Universitat Oberta de Catalunya.
+=== 771 runs 1
+Shapiro, S. S., y Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, 52(3–4), 591–611. https://doi.org/10.1093/biomet/52.3-4.591
+=== 772 runs 5
+Shen, J., Bu, F., Ye, Z., Zhang, M., Ma, Q., Yan, J., y Huang, T. (2024). Management of drug supply chain information based on “artificial intelligence + vendor managed inventory” in China: Perspective based on a case study. Frontiers in Pharmacology, 15, Artículo 1373642. https://doi.org/10.3389/fphar.2024.1373642
+=== 773 runs 3
+Sommerville, I. (2016). Ingeniería de software (10.ª ed.). Pearson Educación.
+=== 774 runs 5
+Tristán-López, A. (2008). Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo. Avances en Medición, 6(1), 37–48.
+=== 775 runs 1
+Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478. https://doi.org/10.2307/30036540
+=== 776 runs 5
+Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4
+=== 777 runs 1
+Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6), 80–83. https://doi.org/10.2307/3001968
+=== 778 runs 3
+World Health Organization. (2021). Global strategy on digital health 2020–2025. World Health Organization. https://apps.who.int/iris/handle/10665/344249

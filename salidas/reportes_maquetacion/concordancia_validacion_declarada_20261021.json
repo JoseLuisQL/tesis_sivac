@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "fecha": "2026-10-21",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "agente": "guardian-consistencia",
+    "objeto": "Incorporar la declaracion de validacion de jueces en el borrador corregido, sin inventar datos ni alterar instrumentos."
+  },
+  "decision": {
+    "opcion": "B",
+    "enunciado": "Alinear la descripcion metodologica al formato fisicamente vigente de 12 componentes con escala ordinal 1-4, consignar V = 1.000 e IVC = 1.000 como resultado reportado y provisional, y mantener en blanco los certificados. No se modifica ningun instrumento: se corrige el texto para que describa el unico formato compatible con el dato declarado.",
+    "fundamento_de_trazabilidad": [
+      "La unica escala documentada en la que 4 es la categoria maxima es la ordinal 1-4 del expediente v09, que DEC-028 reconoce como fisicamente vigente; el modelo de 8 items y Si/No (c = 2) no admite el valor 4.",
+      "Describir 8 items y Si/No con una declaracion de 4 en todo produce un informe sin trazabilidad entre metodo, dato y anexo.",
+      "El alcance real de la aprobacion es una declaracion del tesista, no una certificacion firmada; por eso el resultado se rotula provisional y los certificados siguen en blanco."
+    ],
+    "por_que_no_A": "Mantener 8 items y Si/No conserva una descripcion incompatible con el unico dato disponible: el 4 no puede consignarse en esa escala y los placeholders ocultarian una declaracion ya formulada.",
+    "por_que_no_C": "No requiere una tercera via. Cualquier variante hibrida (8 items mas una nota sobre el 4) mantiene dos descripciones incompatibles; B ya se limita a texto y rotulos."
+  },
+  "separacion_de_planos": {
+    "calculo_basado_en_declaracion_directa": {
+      "dato": "Todos los jueces calificaron 4 en todos los componentes.",
+      "resultado_puntual": "V = 1.000 por componente e IVC = 1.000, con c = 4 y l = 1.",
+      "invariabilidad": "El valor puntual no depende del numero de jueces si todos respondieron en el maximo.",
+      "intervalo": "No se calcula intervalo de Aiken. El intervalo de Wilson 3/3 es de proporcion (I-CVI), no de V, y no se usa para aceptar ni rechazar."
+    },
+    "modelo_aplicado_no_identificado": {
+      "estado": "La declaracion no enumera jueces, items ni criterios, ni nombra el formato aplicado.",
+      "inferencia_permitida": "Solo la compatibilidad de escala: el unico modelo con maximo 4 es el v09 de 12 componentes (2 Oportunidad, 2 Consistencia, 8 AP/UP).",
+      "limite": "La identificacion del instrumento aplicado es un supuesto de lectura, no un hecho confirmado."
+    },
+    "certificacion_documental": {
+      "soportes": "Cero fichas firmadas, nombres, DNI, fechas, aplicabilidad y matrices diligenciadas.",
+      "consecuencia": "No se declara validacion certificada. QG-5 permanece abierta y F6 bloqueada; la limitacion es documental, no estadistica.",
+      "prohibicion": "No se rellenan los certificados del Anexo 3 ni se transcribe la declaracion como ficha diligenciada."
+    }
+  },
+  "texto_propuesto": {
+    "seccion_4_12": {
+      "reemplazo_1": "El objeto del juicio es la matriz de validación de la Variable Dependiente, gestión de movimientos mensuales de vacunas, que integra doce componentes: dos de Oportunidad de procesamiento, dos de Consistencia documental y los ocho reactivos literales AP-01 a AP-04 y UP-01 a UP-04 de la Modalidad A del Instrumento N.° 03. Cada componente se valora en Pertinencia, Relevancia y Claridad mediante una escala ordinal de 1 a 4, donde 1 = No cumple, 2 = Cumple parcialmente, 3 = Cumple y 4 = Cumple plenamente (Quispe Tello, 2024, p. 62; Tristán-López, 2008).",
+      "reemplazo_2": "La cuantificación de la concordancia se realizará mediante el coeficiente V de Aiken (Ecuación 8) y el Índice de Validez de Contenido (IVC), ambos derivados del modelo de Tristán-López (2008). La Ecuación 8 se aplica con c = 4 categorías y l = 1 como mínimo de la escala, de modo que el denominador n(c - 1) equivale a 3n. Donde S representa la sumatoria de las valoraciones menos el mínimo de la escala, n indica el número de jueces que efectivamente evaluaron y c denota el número de categorías. Los resultados se reportarán en la Tabla 34 y se contrastarán contra el umbral de aceptación de 0.80 que el presente estudio adopta como criterio propio.",
+      "reemplazo_3": "Al 21 de octubre de 2026 el tesista declaró que los jueces emitieron su validación y calificaron con 4 todos los componentes. La declaración se consigna como resultado reportado y provisional, no como coeficiente certificado. Bajo la escala ordinal de 1 a 4, la calificación máxima en todos los componentes conduce a V = 1.000 e IVC = 1.000 en el punto, valor que no depende del número de jueces siempre que todos hayan respondido en el máximo. No se reporta intervalo de confianza: el número de jueces que efectivamente evaluó no consta en la declaración y, con todas las calificaciones en el máximo, la aproximación normal se degenera. La limitación es documental y no constituye un rechazo del instrumento.",
+      "reemplazo_4": "Los Instrumentos N.° 01 y N.° 02, en cuanto fichas de registro, no se someten a juicio de contenido: su validez se sustenta en el protocolo de medición de movimientos mensuales de vacunas (PMMV), en el coeficiente de correlación intraclase ICC(2,1) mayor o igual a 0.75 y en el kappa de Cohen mayor o igual a 0.80. Los componentes de Oportunidad y Consistencia de la matriz de la Variable Dependiente son enunciados de resultado operativo y no reproducen los campos ni las reglas de medición de esas fichas.",
+      "reemplazo_5": "La certificación documental permanece pendiente: no se aportaron fichas firmadas, nombres, DNI, fechas ni opinión de aplicabilidad. Por ello la Tabla 34 distingue el valor reportado del valor certificado, el Anexo 3 conserva los formatos en blanco y la compuerta QG-5 no se cierra.",
+      "suprimir": "El párrafo que deriva del valor c = 2 los cuatro valores posibles (0, 0.333, 0.667 y 1.000) y la exigencia de unanimidad, por pertenecer al modelo dicotómico que se reemplaza; y la frase que impone el intervalo de Wilson, por no ser requisito normativo y por mezclar I-CVI con V de Aiken."
+    },
+    "tabla_34": {
+      "fila_INST_03": {
+        "estructura_operativa": "Matriz de la Variable Dependiente con 12 componentes (2 Oportunidad, 2 Consistencia y 8 reactivos AP/UP); escala ordinal 1-4.",
+        "sustento_de_validez": "Juicio de contenido con Pertinencia, Relevancia y Claridad en escala 1-4; V de Aiken e IVC con c = 4.",
+        "v_de_aiken": "1.000 (reportado, provisional)",
+        "ivc": "1.000 (reportado, provisional)",
+        "dictamen": "[Pendiente: aplicabilidad no declarada]"
+      },
+      "nota": "Nota. Los valores de V de Aiken e IVC corresponden a la declaración del tesista del 21 de octubre de 2026, según la cual todos los jueces calificaron con 4 todos los componentes. Se consignan como resultado reportado y provisional; no acreditan firmas, identidades, fechas ni opinión de aplicabilidad, y no cierran QG-5."
+    },
+    "anexo_3": {
+      "parrafo_intro": "Se presentan los tres (3) formatos en blanco de validación de contenido por juicio de expertos, correspondientes a la matriz de la Variable Dependiente con doce componentes: dos de Oportunidad de procesamiento, dos de Consistencia documental y los ocho reactivos AP-01 a AP-04 y UP-01 a UP-04. La escala de valoración es ordinal de 1 a 4. Los coeficientes V de Aiken e IVC, la opinión de aplicabilidad, el DNI, la fecha, la firma y el sello permanecen en blanco para su llenado manuscrito. La declaración del tesista del 21 de octubre de 2026 se registra en la sección 4.12 como resultado reportado y provisional; no se transcribe en estos formatos ni se atribuye a los jueces una evaluación no certificada.",
+      "rotulo_instrumento": "Matriz Auditada: Matriz de la Variable Dependiente (12 componentes, escala 1-4)",
+      "rotulo_coeficiente": "Coeficiente V de Aiken: V = [Por completar por el juez] (12 componentes); IVC = [Por completar por el juez]",
+      "conservar": "Los tres perfiles de juez y los espacios de nombre, DNI, fecha, firma y sello se mantienen en blanco."
+    }
+  },
+  "supuestos_que_permanecen": [
+    "Instrumento aplicado: matriz v09 de 12 componentes y escala 1-4 (deducido por compatibilidad y vigencia fisica).",
+    "Todos los jueces: panel completo; el numero no fue enumerado (el diseno preve tres).",
+    "4 en todo: calificacion maxima en cada celda componente por criterio.",
+    "Validacion: juicio favorable de contenido; aplicabilidad y observaciones no declaradas.",
+    "La fecha de la declaracion no es la de evaluacion."
+  ],
+  "no_hacer": [
+    "No recodificar 4 como Si.",
+    "No rellenar nombres, DNI, fechas, firmas ni dictamen.",
+    "No calcular alfa, ICC o kappa, ni usar la declaracion como dato de campo.",
+    "No presentar la declaracion como validacion certificada ni desbloquear F6.",
+    "No reintroducir valores anulados por DEC-014."
+  ],
+  "estado": {
+    "qg_5": "abierta, no rechazada",
+    "f6": "bloqueada",
+    "naturaleza_de_la_limitacion": "documental"
+  }
+}

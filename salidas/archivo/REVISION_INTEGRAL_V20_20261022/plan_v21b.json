@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "origen": "CANDIDATO_TABLAS_V21.docx",
+    "motivo": "Segunda ronda: holgura de tabulador decimal, reequilibrio de Tabla 33, ensanche de Mín – Máx en Tabla 37 y barrido de las ocho tablas decimales.",
+    "fecha": "2026-10-23"
+  },
+  "tablas": {
+    "geometria_proporcional": [
+      {
+        "tabla": 33,
+        "anchos_dxa": [1405, 1347, 1331, 1541, 3141],
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 35,
+        "anchos_dxa": [1720, 1873, 708, 938, 1087, 1394, 1045],
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 37,
+        "anchos_dxa": [1650, 900, 900, 800, 900, 780, 1840, 995],
+        "margen_dxa": 60
+      }
+    ],
+    "alineacion_decimal": [
+      {"tabla": 30, "columnas": [2, 3], "modo": "tab_decimal", "numero_tabla_impreso": 30},
+      {"tabla": 35, "columnas": [2, 3, 4], "modo": "tab_decimal", "numero_tabla_impreso": 35},
+      {"tabla": 36, "columnas": [2, 3, 4, 5], "modo": "tab_decimal", "numero_tabla_impreso": 36},
+      {"tabla": 37, "columnas": [2, 3, 4, 5], "modo": "tab_decimal", "numero_tabla_impreso": 37},
+      {"tabla": 38, "columnas": [2, 3, 4, 5], "modo": "tab_decimal", "numero_tabla_impreso": 38},
+      {"tabla": 39, "columnas": [2], "modo": "tab_decimal", "numero_tabla_impreso": 39},
+      {"tabla": 52, "columnas": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "modo": "tab_decimal", "numero_tabla_impreso": 49},
+      {"tabla": 53, "columnas": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "modo": "tab_decimal", "numero_tabla_impreso": 50}
+    ]
+  }
+}

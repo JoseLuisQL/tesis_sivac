@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "titulo": "Especificacion de paquetes de campo para 14 trabajadores, kit del investigador y guia de llenado",
+    "fecha_preparacion": "2026-10-22",
+    "version": "1.0",
+    "autor": "especialista-instrumentos",
+    "estado": "especificacion_lista_para_maquetar_sin_datos",
+    "advertencia": "Especificacion, no resultados. No contiene respuestas, mediciones, nombres de trabajadores, nombres de establecimientos, firmas ni fechas de aplicacion realizada. Todos los campos de aplicacion quedan vacios.",
+    "no_es": [
+      "No es un certificado de validacion por jueces.",
+      "No es un expediente de expertos.",
+      "No es una base de datos con mediciones.",
+      "No modifica reactivos, criterios ni instrumentos fuente."
+    ],
+    "nota_de_textos": "Este JSON es la especificacion estructural y usa texto sin tildes para mantenerlo compacto. Los textos literales imprimibles, con sus tildes, signos y redaccion exacta, se toman de guia_campo_contenido_20261022.md y de los instrumentos fuente citados en fuentes. El maquetador no debe reescribir reactivos, criterios ni tareas: los transcribe literalmente desde el instrumento fuente. Si hay discrepancia entre este JSON y el instrumento fuente, prevalece el instrumento fuente."
+  },
+  "fuentes": {
+    "instrumento_01": "06_METODOLOGIA_E_INSTRUMENTOS/instrumentos_sivac/INSTRUMENTO_01_FICHA_CRONOMETRICA.md",
+    "instrumento_02": "06_METODOLOGIA_E_INSTRUMENTOS/instrumentos_sivac/INSTRUMENTO_02_FICHA_REGISTRO_DOCUMENTAL.md",
+    "instrumento_03": "06_METODOLOGIA_E_INSTRUMENTOS/instrumentos_sivac/INSTRUMENTO_03_CUESTIONARIO_SATISFACCION_TAM.md",
+    "operacionalizacion": "02_PROYECTOS/02.1_TESIS_SIVAC/01_PLANIFICACION_Y_MATRICES/OPERACIONALIZACION_VARIABLES_DEFINITIVA.md",
+    "matriz_normativa": "salidas/matrices/ no se localizo con archivos en el arbol de trabajo al 2026-10-22. Verificar antes de imprimir. La copia del vault esta alineada, pero es registro historico.",
+    "consentimiento": "06_METODOLOGIA_E_INSTRUMENTOS/expediente_juicio_expertos/CONSENTIMIENTO_INFORMADO_INSTITUCIONAL.md",
+    "expediente_expertos": "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx"
+  },
+  "principios": {
+    "anonimato": "Cada trabajador recibe un codigo TRAB-01 a TRAB-14. En fichas y cuestionarios no se escribe nombre, apellido, DNI ni nombre del establecimiento. El centro se registra con un codigo de centro que solo maneja el investigador.",
+    "separacion_consentimiento": "El consentimiento contiene datos identificatorios. Se guarda en sobre aparte, no se archiva con las fichas anonimas y no se escanea en el mismo archivo.",
+    "control_privado": "La relacion codigo-nombre se registra en una hoja privada del investigador, emitida vacia, guardada bajo llave y nunca escaneada.",
+    "sin_datos_de_prueba": "No se usan nombres, codigos de centro ni establecimientos de los CSV de prueba. La asignacion de codigos se hace al iniciar la aplicacion y es independiente de esos archivos.",
+    "sin_imputacion": "Las ausencias y los datos faltantes se registran como faltantes. No se reemplazan por promedios, por otro trabajador, por la ultima observacion ni por el pretest.",
+    "firmas_reales": "Solo se firma lo que efectivamente se aplico. No se firman formatos en blanco, no se firma por otra persona y no se usan sellos sin autorizacion.",
+    "sin_fechas_preimpresas": "Las fichas y cuestionarios llevan fecha de aplicacion en blanco. El cronograma es una hoja de planificacion aparte y no se imprime como fecha de aplicacion.",
+    "sin_codigos_internos": "Los documentos imprimibles no llevan codigos de decision, rutas internas, tokens de control ni rayas largas."
+  },
+  "roles": [
+    {
+      "rol": "participante",
+      "quien": "trabajador de inmunizaciones o cadena de frio incluido en el censo",
+      "llena": "Cuestionario A en pretest, Cuestionario A en postest y Cuestionario B solo en postest. Firma el consentimiento.",
+      "no_llena": "Fichas 01 y 02, control de codigos, matriz de captura."
+    },
+    {
+      "rol": "observador",
+      "quien": "investigador principal, con un segundo observador solo para calibracion",
+      "llena": "Ficha 01 de tiempos en cada fase.",
+      "no_llena": "Cuestionarios del participante ni auditoria documental."
+    },
+    {
+      "rol": "auditor",
+      "quien": "investigador principal, con un segundo auditor solo para calibracion",
+      "llena": "Ficha 02 de auditoria documental en cada fase.",
+      "no_llena": "Ficha 01 ni cuestionarios."
+    },
+    {
+      "rol": "investigador",
+      "quien": "tesista",
+      "llena": "Control privado de codigos, registro de campo, ausencias, exposicion a SIVAC, calibracion, matriz de captura y trazabilidad.",
+      "no_llena": "No responde los cuestionarios por el participante."
+    },
+    {
+      "rol": "juez",
+      "quien": "experto validador externo",
+      "llena": "Certificado de validacion de contenido, fuera de los paquetes de campo.",
+      "no_llena": "Ninguna ficha de campo."
+    },
+    {
+      "rol": "asesora",
+      "quien": "asesora de tesis",
+      "llena": "No llena hojas de campo. Aprueba el modo de corpus, el modelo de consentimiento y los criterios de exposicion.",
+      "no_llena": "No firma como participante ni como juez."
+    }
+  ],
+  "paquetes": {
+    "ruta_base": "salidas/evidencias/instrumentos_aplicados/paquetes_campo_20261022",
+    "cantidad": 14,
+    "codigos": ["TRAB-01", "TRAB-02", "TRAB-03", "TRAB-04", "TRAB-05", "TRAB-06", "TRAB-07", "TRAB-08", "TRAB-09", "TRAB-10", "TRAB-11", "TRAB-12", "TRAB-13", "TRAB-14"],
+    "estructura": "PAQ-TRAB-01 a PAQ-TRAB-14. Cada carpeta contiene 00_GUIA_DEL_PAQUETE.pdf, 01_PRE, 02_POST y 03_DEVOLUCION.",
+    "subpaquete_pre": [
+      "01_CONSENTIMIENTO.pdf, dos copias",
+      "02_FICHA_01_TIEMPOS_PRE.pdf",
+      "03_FICHA_02_AUDITORIA_PRE.pdf",
+      "04_CUESTIONARIO_A_PRE.pdf",
+      "05_INSTRUCCIONES_PARTICIPANTE.pdf"
+    ],
+    "subpaquete_post": [
+      "06_FICHA_01_TIEMPOS_POST.pdf",
+      "07_FICHA_02_AUDITORIA_POST.pdf",
+      "08_CUESTIONARIO_A_POST.pdf",
+      "09_CUESTIONARIO_B_POST.pdf",
+      "10_INSTRUCCIONES_PARTICIPANTE.pdf"
+    ],
+    "devolucion": "Hoja de recepcion con lista de documentos entregados, todos en blanco.",
+    "no_incluir": [
+      "Certificado de expertos, carta a jueces ni matriz de validacion.",
+      "Matriz de consistencia, operacionalizacion, capitulos de la tesis ni figuras.",
+      "Baremos, formulas o resultados dentro de los cuestionarios del participante.",
+      "Nombres de trabajadores, DNI, nombres de establecimientos o datos de los CSV de prueba.",
+      "Fechas de aplicacion preimpresas, firmas, marcas o respuestas."
+    ],
+    "rotulado": "Cada carpeta y cada hoja llevan solo el codigo TRAB-XX, la fase PRE o POST y el nombre del documento. Sin nombre de persona. El nombre del establecimiento no se imprime; se usa codigo de centro."
+  },
+  "documentos": [
+    {
+      "id": "DOC-01",
+      "titulo": "Consentimiento informado voluntario",
+      "quien_llena": "participante, con explicacion del investigador",
+      "quien_firma": "participante e investigador. Visto bueno institucional solo si la institucion lo exige.",
+      "copias": 2,
+      "contenido": [
+        "Titulo oficial de la tesis, investigador y asesora.",
+        "Proposito y procedimientos: observacion de tiempos, auditoria documental, Cuestionario A en pretest y postest, Cuestionario B solo en postest.",
+        "Voluntariedad y derecho a retirarse sin perjuicio.",
+        "Confidencialidad, codigo TRAB-XX y ausencia de nombres en el informe.",
+        "Riesgos y molestias: ningun riesgo fisico; solo tiempo de dedicacion.",
+        "Beneficios esperados y contacto aprobado por la asesora.",
+        "Declaracion, firma del participante, firma del investigador y fecha en blanco."
+      ],
+      "reglas": [
+        "No usar el modelo existente sin corregir la referencia a diez preguntas y a veinte registros, porque los instrumentos vigentes tienen ocho reactivos A, ocho B y corpus parametrico.",
+        "No usar correos ni telefonos ficticios. Colocar solo los datos de contacto que apruebe la asesora.",
+        "No prellenar nombre, DNI, fecha ni codigo. El codigo lo anota el investigador.",
+        "Si el participante no firma, no se aplica ninguna hoja de ese paquete.",
+        "Guardar el original firmado en el archivador privado, separado de las fichas anonimas."
+      ]
+    },
+    {
+      "id": "DOC-02",
+      "titulo": "Instrucciones para el participante",
+      "quien_llena": "no se llena; la lee el investigador",
+      "quien_firma": "no requiere firma",
+      "copias": 1,
+      "contenido": [
+        "Que se le pedira y en que momentos.",
+        "Que no hay respuestas correctas ni incorrectas.",
+        "Escala Likert de 1 a 5 y forma de marcar con X.",
+        "Que puede detenerse y retirarse.",
+        "Que sus datos se identifican solo con un codigo.",
+        "A quien consultar si tiene dudas."
+      ],
+      "reglas": [
+        "Una pagina, lenguaje simple, sin tecnicismos.",
+        "No incluye nombre ni establecimiento.",
+        "No incluye la suma de puntajes ni el baremo."
+      ]
+    },
+    {
+      "id": "DOC-03",
+      "titulo": "Ficha 01 de observacion y tiempos",
+      "quien_llena": "observador",
+      "quien_firma": "observador. Visto bueno del operador solo si el protocolo o la asesora lo exigen.",
+      "copias": 1,
+      "contenido": [
+        "Codigo TRAB-XX, codigo de centro, fase PRE o POST, fecha en blanco, observador y hora de inicio y fin de la sesion.",
+        "Protocolo PMMV: cronometro digital, minutos decimales, puntos de corte, pausa por interrupcion externa.",
+        "Tres tareas de registro: REG-01 ingreso simple de remesa; REG-02 salida regular programada; REG-03 redistribucion con multiples biologos.",
+        "Tres tareas de emision: VALE-01 vale simple; VALE-02 vale regular; VALE-03 vale de contingencia o reposicion urgente.",
+        "Columnas: tarea, descripcion, biologico y lote, dosis, hora inicio, hora fin, tiempo neto, tiempo decimal, incidencias.",
+        "Consolidado por sujeto: mediana de las tres tareas como valor principal y media como complemento descriptivo.",
+        "Firma del observador y linea de visto bueno del operador."
+      ],
+      "reglas": [
+        "Una ficha por trabajador y por fase.",
+        "No se escribe el nombre del trabajador.",
+        "No se excluye una tarea por ser lenta. Solo se anula por interrupcion externa o desviacion del protocolo.",
+        "Si la tarea no se completa en la misma sesion, se anula, se anota el motivo y se repite dentro de la ventana.",
+        "No se cronometra mientras el investigador ayuda al operador. Si la ayuda es sustantiva, la tarea no es valida como medicion independiente.",
+        "No se imprimen tiempos, promedios ni resultados."
+      ]
+    },
+    {
+      "id": "DOC-04",
+      "titulo": "Ficha 02 de auditoria documental",
+      "quien_llena": "auditor",
+      "quien_firma": "auditor. Visto bueno del responsable de almacen o inmunizaciones solo si el protocolo o la asesora lo exigen.",
+      "copias": 1,
+      "contenido": [
+        "Codigo TRAB-XX, codigo de centro, fase PRE o POST, ventana de treinta dias en blanco, fecha de auditoria en blanco y auditor.",
+        "Ocho criterios de conformidad, transcritos literalmente.",
+        "Tabla RSD: documento, fecha, vacuna, lote, criterios 1 a 8, veredicto conforme o no conforme, causa de la discrepancia.",
+        "Formula RSD y casillas de numerador, denominador y porcentaje, vacias.",
+        "Tabla CPE: entrega, vale o requerimiento, cantidad programada, cantidad entregada, diferencia, justificacion formal, veredicto, causa.",
+        "Formula CPE y casillas de numerador, denominador y porcentaje, vacias.",
+        "Resumen por trabajador y fase, con firmas."
+      ],
+      "reglas": [
+        "Una ficha por trabajador y por fase.",
+        "La unidad de RSD es el documento de movimiento. La unidad de CPE es la entrega o despacho.",
+        "Un documento es conforme solo si cumple los ocho criterios a la vez. Si falla uno, es no conforme.",
+        "Una entrega es concordante si la cantidad entregada es igual a la programada, o si la diferencia tiene documento formal de justificacion.",
+        "CPE es proporcion de entregas concordantes sobre entregas evaluadas. No es suma de dosis.",
+        "No se auditan tarjetas de vacunacion con datos de pacientes. Solo documentos de movimiento de stock.",
+        "Si un documento contiene datos de pacientes, no se escanea; se tapa o se registra solo el dato de stock.",
+        "No se imprimen porcentajes, promedios ni resultados."
+      ]
+    },
+    {
+      "id": "DOC-05",
+      "titulo": "Cuestionario A, modalidad oficial",
+      "quien_llena": "participante",
+      "quien_firma": "no requiere firma",
+      "copias": 1,
+      "contenido": [
+        "Instrucciones, escala Likert de 1 a 5 y forma de marcar.",
+        "Ocho reactivos literales: AP-01 a AP-04 y UP-01 a UP-04.",
+        "Codigo TRAB-XX, fase PRE o POST y fecha de aplicacion en blanco.",
+        "Sin nombre, sin DNI, sin establecimiento."
+      ],
+      "reglas": [
+        "La version PRE y la version POST son identicas en reactivos; solo cambia el rotulo de fase.",
+        "No se aplica la modalidad B en pretest.",
+        "No se suma A con B.",
+        "La puntuacion se traslada a la hoja de puntuacion del investigador, no se calcula en presencia del participante.",
+        "No se inducen respuestas ni se aclara el sentido de un reactivo mas alla de la lectura literal."
+      ]
+    },
+    {
+      "id": "DOC-06",
+      "titulo": "Cuestionario B, modulo anexo de postest",
+      "quien_llena": "participante",
+      "quien_firma": "no requiere firma",
+      "copias": 1,
+      "contenido": [
+        "Rotulo visible: modulo complementario, solo postest, no se suma a la modalidad A.",
+        "Ocho reactivos literales: PU-01 a PU-04 y PE-01 a PE-04.",
+        "Codigo TRAB-XX, fecha de aplicacion en blanco.",
+        "Sin nombre, sin DNI, sin establecimiento, sin baremo."
+      ],
+      "reglas": [
+        "No se aplica en pretest.",
+        "No se suma a la modalidad A ni genera puntaje global.",
+        "No tiene baremo ni contraste inferencial.",
+        "Si no se aplica, se registra como no aplicado y no se imputa."
+      ]
+    },
+    {
+      "id": "DOC-07",
+      "titulo": "Hoja de puntuacion A del investigador",
+      "quien_llena": "investigador",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Codigo TRAB-XX, fase y fecha de transcripcion.",
+        "Puntajes AP-01 a AP-04, suma AP de 4 a 20.",
+        "Puntajes UP-01 a UP-04, suma UP de 4 a 20.",
+        "Total A de 8 a 40 y nivel por terciles teoricos: 8 a 18 bajo, 19 a 29 medio, 30 a 40 alto.",
+        "Iniciales de quien transcribe y de quien verifica."
+      ],
+      "reglas": [
+        "Se transcribe exactamente la marca del participante. No se corrige ni se completa.",
+        "La hoja no se entrega al participante.",
+        "El nivel es una categoria de interpretacion por terciles teoricos, no un baremo normativo.",
+        "No se calcula alfa, omega ni contraste en esta hoja."
+      ]
+    },
+    {
+      "id": "DOC-08",
+      "titulo": "Control privado codigo-nombre",
+      "quien_llena": "investigador",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Catorce filas, una por codigo TRAB-01 a TRAB-14.",
+        "Columnas: codigo, apellidos y nombres, DNI, codigo de centro, cargo, fecha de asignacion y observaciones.",
+        "Todas las celdas vacias."
+      ],
+      "reglas": [
+        "Es el unico documento que relaciona codigo y nombre.",
+        "No se incluye en los paquetes, no se escanea y no se envia por ningun servicio.",
+        "Se guarda bajo llave, separado de las fichas.",
+        "Si un trabajador se retira, su codigo no se reasigna."
+      ]
+    },
+    {
+      "id": "DOC-09",
+      "titulo": "Registro de campo",
+      "quien_llena": "investigador",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Fecha, codigo, fase, hora de inicio y fin de la visita.",
+        "Actividades realizadas y documentos entregados o recibidos.",
+        "Incidencias, interrupciones y decisiones tomadas.",
+        "Proxima visita y observaciones."
+      ],
+      "reglas": [
+        "Se llena el mismo dia de la visita.",
+        "No se corrigen fechas hacia atras.",
+        "No se anotan datos de pacientes."
+      ]
+    },
+    {
+      "id": "DOC-10",
+      "titulo": "Registro de ausencias y datos faltantes",
+      "quien_llena": "investigador",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Codigo, fase, fecha, motivo de la ausencia.",
+        "Tareas o documentos afectados.",
+        "Si se reprogramo, nueva fecha; si no, estado faltante.",
+        "Observaciones."
+      ],
+      "reglas": [
+        "No se imputa ningun valor.",
+        "No se sustituye al trabajador por otro.",
+        "No se usa el pretest como postest ni la ultima observacion como postest.",
+        "El numero de pares completos se informa al cierre."
+      ]
+    },
+    {
+      "id": "DOC-11",
+      "titulo": "Control de exposicion a SIVAC",
+      "quien_llena": "investigador, con apoyo del participante",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Codigo, fecha de primera utilizacion real de SIVAC, modulos utilizados.",
+        "Fecha de capacitacion y dias de uso dentro de la ventana de postest.",
+        "Uso previo de SIVAC antes de la linea base: si, no o no verificable.",
+        "Observaciones."
+      ],
+      "reglas": [
+        "Se llena antes de iniciar el postest.",
+        "Si el uso previo impide la linea base, se activa la ruta de ajuste.",
+        "No se inventa un minimo de dias de uso; el criterio se aprueba con la asesora antes del postest."
+      ]
+    },
+    {
+      "id": "DOC-12",
+      "titulo": "Calibracion ICC de observadores",
+      "quien_llena": "dos observadores",
+      "quien_firma": "ambos observadores",
+      "copias": 1,
+      "contenido": [
+        "Quince filas de observacion simultanea.",
+        "Columnas: identificacion de la observacion, fecha, tipo de tarea, tiempo del observador 1, tiempo del observador 2, diferencia absoluta, dentro de tolerancia, observaciones.",
+        "Casillas de ICC calculado y fecha de calculo, vacias."
+      ],
+      "reglas": [
+        "Los dos observadores cronometran la misma tarea, a ciegas, con cronometros independientes.",
+        "Tolerancia de diferencia absoluta menor a cinco segundos.",
+        "Si alguna observacion excede la tolerancia, se revisan los puntos de corte y se repite la ronda.",
+        "El ICC se calcula despues de recoger los datos. No se prellena ni se certifica de antemano."
+      ]
+    },
+    {
+      "id": "DOC-13",
+      "titulo": "Calibracion kappa de auditores",
+      "quien_llena": "dos auditores",
+      "quien_firma": "ambos auditores",
+      "copias": 1,
+      "contenido": [
+        "Treinta filas de registros auditados a ciegas.",
+        "Columnas: identificacion del registro, veredicto del auditor 1, veredicto del auditor 2, acuerdo, causa de la discrepancia, observaciones.",
+        "Casillas de kappa calculado y fecha de calculo, vacias."
+      ],
+      "reglas": [
+        "Los dos auditores evalúan los mismos treinta registros, sin ver el veredicto del otro.",
+        "Si kappa es menor a 0.80, se homologan los ocho criterios y se repite con otros treinta registros.",
+        "El kappa se calcula despues de recoger los datos. No se prellena ni se certifica de antemano."
+      ]
+    },
+    {
+      "id": "DOC-14",
+      "titulo": "Matriz de captura vacia",
+      "quien_llena": "investigador",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Hojas: identificacion, tiempos, consolidado de tiempos, RSD, consolidado RSD, CPE, consolidado CPE, cuestionario A, cuestionario B, ausencias, exposicion, calibracion y trazabilidad.",
+        "Todas las celdas de datos vacias."
+      ],
+      "reglas": [
+        "Una fila por codigo, fase y tarea o documento.",
+        "No se usan formulas que oculten faltantes.",
+        "No se imputan valores.",
+        "Se conserva la version vacia como plantilla y se trabaja sobre copia."
+      ]
+    },
+    {
+      "id": "DOC-15",
+      "titulo": "Trazabilidad y escaneo",
+      "quien_llena": "investigador",
+      "quien_firma": "investigador",
+      "copias": 1,
+      "contenido": [
+        "Folio, codigo, fase, tipo de documento, numero de paginas.",
+        "Fecha de escaneo, nombre del archivo, quien escaneo y verificacion de legibilidad.",
+        "Observaciones."
+      ],
+      "reglas": [
+        "Escanear solo documentos sin datos de pacientes.",
+        "El consentimiento se escanea aparte y se guarda en carpeta restringida.",
+        "El control codigo-nombre no se escanea.",
+        "Nombrar archivos con codigo, fase y documento, sin nombres.",
+        "Guardar en disco local. No subir a servicios, nubes ni mensajeria."
+      ]
+    },
+    {
+      "id": "DOC-16",
+      "titulo": "Certificado de validacion por jueces",
+      "quien_llena": "juez experto",
+      "quien_firma": "juez experto, con fecha real",
+      "copias": 1,
+      "contenido": [
+        "Ocho reactivos literales de la modalidad A.",
+        "Criterios Pertinencia, Relevancia y Claridad con Si y No.",
+        "Sugerencias, observaciones, opinion de aplicabilidad y datos del juez.",
+        "Todos los campos en blanco."
+      ],
+      "reglas": [
+        "No se incluye en los paquetes de trabajadores.",
+        "No se entrega al personal ni se llena por el investigador.",
+        "Se entrega a los jueces en el tramite de validacion, separado de la aplicacion de campo.",
+        "No se prellenan nombres, DNI, especialidad, dictamen ni fecha.",
+        "La V de Aiken y el indice de validez de contenido se calculan solo despues de recibir los certificados firmados."
+      ]
+    }
+  ],
+  "instrumento_01": {
+    "dimension": "Oportunidad de procesamiento",
+    "indicadores": ["T_reg", "T_vale"],
+    "unidad": "minutos decimales",
+    "tareas_por_indicador_por_fase": 3,
+    "tareas_registro": [
+      {"codigo": "REG-01", "descripcion": "Ingreso simple de remesa con un biologico, lote unico y verificacion de guia."},
+      {"codigo": "REG-02", "descripcion": "Salida regular programada de dos a tres vacunas hacia puesto de salud."},
+      {"codigo": "REG-03", "descripcion": "Redistribucion con multiples biologos, de cuatro a seis items con jeringas y diluyentes."}
+    ],
+    "tareas_vale": [
+      {"codigo": "VALE-01", "descripcion": "Vale simple para puesto de salud I-1 o I-2, de una a dos vacunas."},
+      {"codigo": "VALE-02", "descripcion": "Vale regular para centro de salud I-3 o I-4, de tres a cinco vacunas con insumos."},
+      {"codigo": "VALE-03", "descripcion": "Vale de reposicion urgente o contingencia de cadena de frio."}
+    ],
+    "agregacion": "Mediana de las tres tareas como valor principal por trabajador y fase. Media como complemento descriptivo.",
+    "pausas": "Toda interrupcion externa se pausa y se anota. No se cuenta el tiempo pausado. Si la tarea no se completa, se anula y se repite dentro de la ventana.",
+    "exclusiones": "Solo se anula por interrupcion externa, desviacion del protocolo o ayuda sustantiva del investigador. No se excluye por tiempo alto.",
+    "calibracion": "Quince observaciones simultaneas a ciegas entre dos observadores. ICC(2,1) mayor o igual a 0.75. Tolerancia de diferencia absoluta menor a cinco segundos."
+  },
+  "instrumento_02": {
+    "dimension": "Consistencia documental",
+    "indicadores": ["RSD", "CPE"],
+    "unidad": "porcentaje",
+    "ventana": "Treinta dias calendario en pretest y treinta dias calendario en postest.",
+    "criterios_rsd": [
+      "Tipo de movimiento clasificado univocamente: entrada por remesa, salida a establecimiento de salud o ajuste.",
+      "Denominacion oficial estandarizada del biologico segun esquema regular nacional del Ministerio de Salud.",
+      "Identificacion exacta del numero de lote, con rotulado del frasco coincidente con el documento.",
+      "Cantidad de dosis o viales exacta y coincidente con el stock fisico y el acta de recepcion.",
+      "Fecha del movimiento consignada con formato completo y secuencia cronologica.",
+      "Establecimiento de origen o destino plenamente individualizado con codigo oficial.",
+      "Nombre completo, firma o usuario responsable del despacho o recepcion plenamente trazable.",
+      "Documento formal de respaldo asociado y verificado: vale oficial, PECOSA, guia de remision o acta."
+    ],
+    "regla_conformidad": "Un documento es conforme solo si cumple los ocho criterios a la vez. Si falla uno o mas, es no conforme.",
+    "rsd": "Numerador: documentos conformes del trabajador en la fase. Denominador: documentos auditados del trabajador en la fase. RSD igual a numerador sobre denominador por cien.",
+    "cpe": "Numerador: entregas concordantes del trabajador en la fase. Denominador: entregas evaluadas del trabajador en la fase. CPE igual a numerador sobre denominador por cien. No se suman dosis.",
+    "concordancia_cpe": "Una entrega es concordante si la cantidad entregada es igual a la programada, o si la diferencia tiene documento formal archivado que la autoriza.",
+    "motivos": ["desabastecimiento", "sobre-despacho", "error de digitacion", "sustitucion autorizada", "documento incompleto", "otro"],
+    "calibracion": "Treinta registros auditados a ciegas por dos auditores. Kappa de Cohen mayor o igual a 0.80."
+  },
+  "instrumento_03": {
+    "dimension": "Satisfaccion del usuario",
+    "modalidad_a": {
+      "uso": "Pretest y postest. Oficial para la hipotesis especifica 3.",
+      "reactivos": [
+        {"codigo": "AP-01", "texto": "El procedimiento actual para asentar los movimientos diarios y cierres de mes es agil y no demanda un esfuerzo mental o fisico excesivo."},
+        {"codigo": "AP-02", "texto": "El flujo de trabajo requerido para emitir comprobantes de salida y vales de entrega es fluido y esta libre de demoras o trabas burocraticas."},
+        {"codigo": "AP-03", "texto": "El metodo empleado me permite conciliar los saldos de inventario con las microredes generando tranquilidad y reduciendo el estres laboral."},
+        {"codigo": "AP-04", "texto": "El tiempo que dedico al registro administrativo de vacunas es equilibrado y me deja disponibilidad para mis labores sanitarias y asistenciales."},
+        {"codigo": "UP-01", "texto": "El mecanismo de registro utilizado me permite disponer de informacion fidedigna y en tiempo real del stock de vacunas y jeringas."},
+        {"codigo": "UP-02", "texto": "El control de numeros de lote y fechas de vencimiento que brinda el proceso previene oportunamente mermas o perdidas de biologicos."},
+        {"codigo": "UP-03", "texto": "La metodologia de gestion facilita la deteccion inmediata y rectificacion de cualquier descuadre de inventario fisico versus registrado."},
+        {"codigo": "UP-04", "texto": "En general, considero que el procedimiento empleado es una herramienta altamente eficaz para garantizar el abastecimiento oportuno de vacunas."}
+      ],
+      "escala": "Likert de 1 a 5: 1 totalmente en desacuerdo, 2 en desacuerdo, 3 ni de acuerdo ni en desacuerdo, 4 de acuerdo, 5 totalmente de acuerdo.",
+      "puntaje": "AP de 4 a 20, UP de 4 a 20, total de 8 a 40.",
+      "niveles": "8 a 18 bajo, 19 a 29 medio, 30 a 40 alto. Terciles teoricos, no baremo normativo."
+    },
+    "modalidad_b": {
+      "uso": "Solo postest. Modulo complementario. No se suma a A, no tiene baremo ni contraste.",
+      "reactivos": [
+        {"codigo": "PU-01", "texto": "Utilizar el sistema SIVAC agiliza notablemente el registro de entradas, salidas y transferencias de dosis de vacunas en mi centro."},
+        {"codigo": "PU-02", "texto": "SIVAC me permite consultar de manera inmediata y precisa los saldos de existencias por lote en cualquier momento que lo requiera."},
+        {"codigo": "PU-03", "texto": "La generacion automatica de vales oficiales en formato PDF en SIVAC facilita enormemente el despacho hacia los establecimientos de salud."},
+        {"codigo": "PU-04", "texto": "En conjunto, SIVAC incrementa mi productividad y mejora significativamente el control de la cadena de frio en mi jurisdiccion."},
+        {"codigo": "PE-01", "texto": "La interfaz grafica de SIVAC es clara, intuitiva, limpia y sus botones y opciones de navegacion son facilmente comprensibles."},
+        {"codigo": "PE-02", "texto": "Aprender a operar los modulos de movimientos, lotes y reportes de SIVAC fue sencillo y demando poco tiempo de capacitacion."},
+        {"codigo": "PE-03", "texto": "Los mensajes de confirmacion, validacion de stock y advertencias que emite el sistema SIVAC son claros y orientan mis acciones."},
+        {"codigo": "PE-04", "texto": "Me resulta facil lograr que SIVAC ejecute con exactitud las tareas operativas que necesito realizar en mi jornada de trabajo."}
+      ],
+      "escala": "Likert de 1 a 5, misma escala de la modalidad A.",
+      "puntaje": "No se suma. Solo descripcion por reactivo."
+    }
+  },
+  "matriz_captura": {
+    "hojas": [
+      {"nombre": "IDENTIFICACION", "columnas": ["codigo", "fase", "fecha_aplicacion", "observador", "estado", "observaciones"]},
+      {"nombre": "D1_TIEMPOS", "columnas": ["codigo", "fase", "tarea", "hora_inicio", "hora_fin", "tiempo_min", "incidencia", "excluida", "motivo"]},
+      {"nombre": "D1_CONSOLIDADO", "columnas": ["codigo", "fase", "mediana_treg", "media_treg", "mediana_tvale", "media_tvale", "n_tareas_validas", "observaciones"]},
+      {"nombre": "D2_RSD", "columnas": ["codigo", "fase", "documento_id", "fecha", "vacuna", "lote", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "veredicto", "causa"]},
+      {"nombre": "D2_RSD_CONSOLIDADO", "columnas": ["codigo", "fase", "rsd_num", "rsd_den", "rsd_pct", "modo_corpus", "observaciones"]},
+      {"nombre": "D2_CPE", "columnas": ["codigo", "fase", "entrega_id", "q_prog", "q_ent", "diferencia", "justificacion", "veredicto", "causa"]},
+      {"nombre": "D2_CPE_CONSOLIDADO", "columnas": ["codigo", "fase", "cpe_num", "cpe_den", "cpe_pct", "modo_corpus", "observaciones"]},
+      {"nombre": "D3_A", "columnas": ["codigo", "fase", "AP-01", "AP-02", "AP-03", "AP-04", "UP-01", "UP-02", "UP-03", "UP-04", "ap_suma", "up_suma", "total", "nivel"]},
+      {"nombre": "D3_B", "columnas": ["codigo", "PU-01", "PU-02", "PU-03", "PU-04", "PE-01", "PE-02", "PE-03", "PE-04"]},
+      {"nombre": "AUSENCIAS", "columnas": ["codigo", "fase", "fecha", "motivo", "tareas_afectadas", "reprogramada", "nueva_fecha", "estado"]},
+      {"nombre": "EXPOSICION", "columnas": ["codigo", "primera_utilizacion", "modulos", "fecha_capacitacion", "dias_uso_postest", "uso_previo", "observaciones"]},
+      {"nombre": "CALIBRACION_ICC", "columnas": ["observacion_id", "fecha", "tarea", "tiempo_obs_1", "tiempo_obs_2", "diferencia_abs", "dentro_tolerancia", "observaciones"]},
+      {"nombre": "CALIBRACION_KAPPA", "columnas": ["registro_id", "auditor_1", "auditor_2", "acuerdo", "causa", "observaciones"]},
+      {"nombre": "TRAZABILIDAD", "columnas": ["folio", "codigo", "fase", "documento", "paginas", "fecha_escaneo", "archivo", "legible", "observaciones"]}
+    ],
+    "filas_esperadas": {
+      "D1_TIEMPOS": 168,
+      "D1_CONSOLIDADO": 28,
+      "D3_A": 28,
+      "D3_B": 14,
+      "CALIBRACION_ICC": 15,
+      "CALIBRACION_KAPPA": 30
+    },
+    "regla": "Todas las celdas de datos quedan vacias. Las filas de D1 son catorce codigos por dos fases por seis tareas. Las filas de D2 dependen del modo de corpus que apruebe la asesora."
+  },
+  "calibracion": {
+    "icc": {
+      "que_es": "Evidencia de acuerdo entre dos observadores que cronometran la misma tarea.",
+      "como_se_recoge": "Quince observaciones simultaneas, a ciegas, con cronometros independientes.",
+      "criterio": "ICC(2,1) mayor o igual a 0.75 y diferencia absoluta menor a cinco segundos.",
+      "que_no_es": "No es un certificado aprobado de antemano. Se calcula con los datos recogidos."
+    },
+    "kappa": {
+      "que_es": "Evidencia de acuerdo entre dos auditores que califican los mismos documentos.",
+      "como_se_recoge": "Treinta registros auditados a ciegas por ambos auditores.",
+      "criterio": "Kappa de Cohen mayor o igual a 0.80.",
+      "que_no_es": "No es un certificado aprobado de antemano. Se calcula con los datos recogidos."
+    },
+    "alfa": "Se reporta alfa de Cronbach sobre los ocho reactivos de la modalidad A, con intervalo de confianza al 95 por ciento por el metodo de Feldt. Omega de McDonald no se estima con catorce casos y debe declararse su no estimabilidad.",
+    "regla": "Si la calibracion no alcanza el criterio, no se inicia la fase correspondiente. Se revisan los puntos de corte o los ocho criterios y se repite la ronda."
+  },
+  "ausencias": {
+    "registro": "Toda ausencia se anota con codigo, fase, fecha, motivo y tareas afectadas.",
+    "reprogramacion": "Se intenta reprogramar dentro de la misma ventana de treinta dias.",
+    "faltante": "Si no se reprograma, se marca faltante. No se imputa ni se sustituye.",
+    "analisis": "Al cierre se informa cuantos pares completos hay por indicador. El contraste usa solo pares completos."
+  },
+  "exposicion_sivac": {
+    "registro": "Fecha de primera utilizacion real, modulos usados, fecha de capacitacion y dias de uso en la ventana de postest.",
+    "uso_previo": "Si el trabajador ya usaba SIVAC antes de la linea base, se registra y se activa la ruta de ajuste.",
+    "criterio": "No se inventa un minimo de dias. La asesora aprueba el criterio antes del postest.",
+    "regla": "Sin registro de exposicion no se declara valido el postest."
+  },
+  "trazabilidad": {
+    "escaneo": "Solo documentos sin datos de pacientes. El consentimiento se escanea aparte.",
+    "nombres": "Nombrar archivos con codigo, fase y documento. Sin nombres de personas ni establecimientos.",
+    "custodia": "Originales en archivador con llave. Copias en disco local. No subir a servicios, nubes ni mensajeria.",
+    "control": "Hoja de trazabilidad con folio, paginas, fecha, archivo y verificacion de legibilidad."
+  },
+  "cronograma": {
+    "inicio_previsto": "2026-10-26",
+    "zona_horaria": "America/Lima",
+    "condicion": "Todas las fechas son propuestas. No se imprimen en los instrumentos. Se confirman solo si existen autorizacion institucional, validacion por jueces y aprobacion de la asesora. Si una fecha cambia, se anota la fecha real y no se reescribe el plan.",
+    "ventanas": {
+      "pretest": {"inicio": "2026-11-09", "fin": "2026-12-08", "dias": 30},
+      "postest": {"inicio": "2027-01-04", "fin": "2027-02-02", "dias": 30}
+    },
+    "hitos": [
+      {"id": "H01", "actividad": "Verificar autorizacion institucional, validacion por jueces, aprobacion del modo de corpus y del consentimiento. Asignar codigos e imprimir.", "inicio": "2026-10-26", "fin": "2026-10-30", "fecha_real": "", "responsable": "investigador y asesora", "cierre": "Documentos aprobados y paquetes impresos."},
+      {"id": "H02", "actividad": "Calibracion ICC con quince observaciones y kappa con treinta registros.", "inicio": "2026-11-02", "fin": "2026-11-06", "fecha_real": "", "responsable": "observadores y auditores", "cierre": "Criterios de calibracion alcanzados o ronda repetida."},
+      {"id": "H03", "actividad": "Ventana de pretest de treinta dias. Aplicar Ficha 01, Ficha 02 y Cuestionario A.", "inicio": "2026-11-09", "fin": "2026-12-08", "fecha_real": "", "responsable": "investigador", "cierre": "Cada trabajador con tres tareas de registro, tres de vale, auditoria y Cuestionario A, o faltante registrado."},
+      {"id": "H04", "actividad": "Cierre y verificacion de completitud del pretest. Sin imputacion.", "inicio": "2026-12-09", "fin": "2026-12-11", "fecha_real": "", "responsable": "investigador", "cierre": "Paquetes PRE revisados y faltantes registrados."},
+      {"id": "H05", "actividad": "Capacitacion y puesta en uso de SIVAC. Inicio del control de exposicion.", "inicio": "2026-12-14", "fin": "2026-12-18", "fecha_real": "", "responsable": "investigador", "cierre": "Capacitacion realizada y exposicion registrada."},
+      {"id": "H06", "actividad": "Ventana de postest de treinta dias. Aplicar Ficha 01, Ficha 02, Cuestionario A y Cuestionario B.", "inicio": "2027-01-04", "fin": "2027-02-02", "fecha_real": "", "responsable": "investigador", "cierre": "Cada trabajador con tres tareas de registro, tres de vale, auditoria, Cuestionario A y B, o faltante registrado."},
+      {"id": "H07", "actividad": "Cierre y verificacion de completitud del postest. Sin imputacion.", "inicio": "2027-02-03", "fin": "2027-02-05", "fecha_real": "", "responsable": "investigador", "cierre": "Paquetes POST revisados y faltantes registrados."},
+      {"id": "H08", "actividad": "Cierre de la matriz de captura, control de anonimato y trazabilidad. Entrega al analisis estadistico.", "inicio": "2027-02-08", "fin": "2027-02-12", "fecha_real": "", "responsable": "investigador", "cierre": "Matriz cerrada, sin nombres, con copia de respaldo."},
+      {"id": "H09", "actividad": "Revision de cierre con la asesora y registro de decisiones.", "inicio": "2027-02-15", "fin": "2027-02-19", "fecha_real": "", "responsable": "investigador y asesora", "cierre": "Acta de cierre de campo y pendientes identificados."}
+    ],
+    "checkpoints": [
+      {"id": "CP0", "fecha": "2026-10-30", "pregunta": "Estan autorizacion, validacion, consentimiento y modo de corpus aprobados?"},
+      {"id": "CP1", "fecha": "2026-11-06", "pregunta": "Se alcanzo ICC y kappa? Si no, se repite antes de iniciar el pretest."},
+      {"id": "CP2", "fecha": "2026-12-11", "pregunta": "Cada trabajador tiene las tres tareas de cada indicador y el Cuestionario A, o faltante registrado?"},
+      {"id": "CP3", "fecha": "2026-12-18", "pregunta": "La capacitacion se realizo y el control de exposicion esta completo?"},
+      {"id": "CP4", "fecha": "2027-02-05", "pregunta": "Cada trabajador tiene las tres tareas de cada indicador, el Cuestionario A y el B, o faltante registrado?"},
+      {"id": "CP5", "fecha": "2027-02-12", "pregunta": "La matriz esta cerrada, sin nombres y con trazabilidad complete?"},
+      {"id": "CP6", "fecha": "2027-02-19", "pregunta": "La asesora reviso el cierre y las decisiones quedaron registradas?"}
+    ],
+    "ruta_sin_linea_base": [
+      "Verificar con cada trabajador y centro desde cuando se usa SIVAC.",
+      "Si SIVAC ya se usaba antes del pretest, no ejecutar un pretest manual y no suspender servicios para recrearlo.",
+      "Registrar la situacion como linea base no disponible. No llamarla pretest.",
+      "Para consistencia documental, auditar solo los registros manuales que existan de los treinta dias previos a SIVAC y rotularlos como registro documental historico, no como pretest.",
+      "Para tiempos y satisfaccion, la linea base no es reconstruible. Registrar el faltante y no imputar.",
+      "Consultar a la asesora y anotar la decision en el registro de campo.",
+      "Si SIVAC se usa solo en algunos modulos, registrar cuales y decidir con la asesora si el trabajador entra al postest."
+    ]
+  },
+  "conflictos_y_aprobaciones": [
+    {
+      "tema": "Corpus documental de 40 a 60",
+      "conflicto": "La fuente fija de 40 a 60 documentos por ventana temporal. No precisa si el corpus es global para toda la red o por trabajador. Un corpus global deja pocos documentos por trabajador; un corpus por trabajador multiplica el total.",
+      "tratamiento": "Parametro modo_corpus vacio en la matriz. Opcion A: 40 a 60 documentos globales por ventana, distribuidos entre centros. Opcion B: 40 a 60 documentos por trabajador y ventana. Opcion C: otro numero acordado. La asesora decide antes del pretest. Se registra la decision y la fecha.",
+      "no_hacer": "No decidir por cuenta del tesista ni llenar el parametro sin aprobacion."
+    },
+    {
+      "tema": "Modelo de consentimiento existente",
+      "conflicto": "El modelo disponible menciona diez preguntas y veinte registros, y contiene datos de contacto no verificados. Los instrumentos vigentes tienen ocho reactivos A, ocho B y corpus parametrico.",
+      "tratamiento": "Antes de imprimir, la asesora aprueba una version corregida del consentimiento. Se eliminan los datos de contacto no verificados y se ajustan las referencias a los instrumentos.",
+      "no_hacer": "No usar el modelo tal como esta ni inventar correos o telefonos."
+    },
+    {
+      "tema": "Denominacion de la tarea REG-03",
+      "conflicto": "La fuente escribe multibioplastica. Es un error de redaccion de la etiqueta, no un cambio de tarea.",
+      "tratamiento": "Se imprime redistribucion con multiples biologos y se conserva el codigo REG-03 y su alcance.",
+      "no_hacer": "No cambiar la tarea ni el numero de tareas."
+    },
+    {
+      "tema": "Baremo de satisfaccion",
+      "conflicto": "La fuente usa la expresion normalizados. La matriz vigente aclara que son terciles teoricos, sin distribucion de referencia con catorce casos.",
+      "tratamiento": "Imprimir terciles teoricos. No afirmar que son baremos normativos.",
+      "no_hacer": "No usar la palabra normalizados en la hoja de puntuacion."
+    },
+    {
+      "tema": "Omega de McDonald",
+      "conflicto": "Con catorce casos y ocho reactivos no converge una solucion factorial estable.",
+      "tratamiento": "No incluir omega en las hojas de campo. En el analisis se declara no estimable.",
+      "no_hacer": "No inventar un valor de omega."
+    },
+    {
+      "tema": "Expediente de expertos y paquetes de campo",
+      "conflicto": "El expediente de validacion por jueces y los instrumentos que responde el personal son documentos distintos.",
+      "tratamiento": "El expediente de expertos se entrega a los jueces en el tramite de validacion. Los paquetes de campo solo contienen las fichas y cuestionarios del personal.",
+      "no_hacer": "No incluir el certificado de expertos en los paquetes de trabajadores ni pedir al personal que lo llene."
+    },
+    {
+      "tema": "Fuente normativa de matrices",
+      "conflicto": "No se localizaron archivos en salidas/matrices al preparar esta especificacion. La copia del vault esta alineada, pero es registro historico.",
+      "tratamiento": "Verificar la ruta con el director o el guardian antes de imprimir. Si no aparece, usar la copia del vault solo como referencia y dejar constancia.",
+      "no_hacer": "No inventar una matriz ni declarar una fuente que no se pudo abrir."
+    }
+  ],
+  "criterios_aceptacion": [
+    "Catorce carpetas PAQ-TRAB-01 a PAQ-TRAB-14, cada una con subpaquetes PRE y POST.",
+    "Cada PRE contiene consentimiento, Ficha 01, Ficha 02, Cuestionario A e instrucciones.",
+    "Cada POST contiene Ficha 01, Ficha 02, Cuestionario A, Cuestionario B e instrucciones.",
+    "Ningun documento contiene nombres de trabajadores, DNI, nombres de establecimientos, respuestas, mediciones, firmas ni fechas de aplicacion.",
+    "Los ocho reactivos A y los ocho B estan transcritos literalmente.",
+    "Los ocho criterios de RSD estan transcritos literalmente.",
+    "Cada fase tiene tres tareas de registro y tres de vale por trabajador.",
+    "La calibracion ICC tiene quince filas y la kappa treinta filas, vacias.",
+    "El cronograma tiene ventanas de treinta dias, fechas propuestas y columna de fecha real vacia.",
+    "No hay codigos internos, rutas internas, tokens ni rayas largas en el texto imprimible.",
+    "El expediente de expertos queda separado de los paquetes de campo."
+  ],
+  "instrucciones_maquetador": {
+    "formato": "A4 vertical en todas las hojas. Margen izquierdo de 3 cm, superior, derecho e inferior de 2.5 cm.",
+    "tipografia": "Times New Roman 12 pt para texto, 10 pt para tablas y 9.5 pt para notas. Interlineado 1.5 en prosa y 1.0 o 1.15 en tablas.",
+    "rejilla": "Rejilla visible en formularios, guias y tablas de control. Las tablas narrativas, si las hay, conservan tres lineas horizontales.",
+    "texto_nativo": "Todo el texto debe ser nativo de Word. No usar imagenes de texto. No incrustar formulas en celdas. Las formulas van en prosa, no en tablas.",
+    "saltos": "Cada documento empieza en pagina nueva. Evitar bloques de firma huerfanos. Repetir encabezados de tabla y no partir filas.",
+    "encabezado": "Encabezado con el codigo del paquete y la fase. Pie con numero de pagina. Sin nombres ni datos personales.",
+    "fechas": "Todas las fechas de aplicacion en blanco. El cronograma va en documento aparte y no se imprime en las fichas.",
+    "codigos": "Preimprimir solo TRAB-01 a TRAB-14 y el codigo de centro cuando corresponda. No preimprimir nombres.",
+    "prohibiciones": "Sin codigos de decision, sin rutas internas, sin tokens, sin la raya larga, sin TrueFalse, sin TODO, sin corchetes de verificacion en el texto imprimible.",
+    "verificacion": "Antes de entregar, contar paginas, revisar que las fechas esten en blanco, que no haya nombres, que esten los ocho reactivos A, los ocho B y los ocho criterios, que no haya B en pretest y que no se sume A con B.",
+    "entrega": "Catorce carpetas, un kit del investigador y la guia de campo en PDF. Conservar los originales y no sobrescribir versiones anteriores."
+  }
+}

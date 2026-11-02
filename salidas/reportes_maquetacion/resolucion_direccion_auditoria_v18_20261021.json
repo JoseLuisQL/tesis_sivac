@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-10-21",
+  "agente": "director-general",
+  "base_auditada": {
+    "docx": "salidas/documentos/informe_final_v18.docx",
+    "sha256_docx": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+    "pdf": "salidas/documentos/informe_final_v18.pdf",
+    "sha256_pdf": "d0dbe841df7bcad3132a45277c746aaf69008ce3ce886eb6703eac75b8373d00",
+    "paginas": 159
+  },
+  "cobertura": {
+    "tramo_1_80": "80 de 80 páginas, con método declarado en cada fila",
+    "tramo_81_159": "79 de 79 páginas, con método declarado en cada fila",
+    "limite": "La cobertura corresponde a la v18. No certifica automáticamente otra versión ni constituye porcentaje global de calidad."
+  },
+  "informes": [
+    "salidas/reportes_maquetacion/auditoria_independiente_v18_p001_p080.json",
+    "salidas/reportes_maquetacion/auditoria_independiente_v18_p081_p159.json"
+  ],
+  "corregir_en_v19": [
+    "Tabla 34: sustituir tres tokens [Pendiente] por referencias de cotejo pertinentes, sin inventar coeficientes.",
+    "Tabla 34: retirar acreditación de ICC/kappa no calculados; conservar los métodos previstos como tales.",
+    "Anexo 5 y Tablas 49/50: identificar los valores como datos de prueba y distinguirlos de los nombres reales de los centros.",
+    "Figuras 46-48: precisar que fueron elaboradas con Python; estilo SPSS no implica ejecución de SPSS.",
+    "Anexo 7 y Figuras 49-52: declarar fotografías pendientes, sin notas que aparenten evidencia existente.",
+    "Figura 11: aclarar despliegue complementario frente a las cuatro fases XP y mantener cinco iteraciones.",
+    "Mantener notas de Tablas 36/51 con su tabla; corregir justificación extrema.",
+    "Convertir los DOI/URL existentes en enlaces nativos, sin agregar identificadores no verificados.",
+    "Normalizar celdas de datos a 10 pt respetando anchos, contenido y filas íntegras."
+  ],
+  "no_modificar_por_error_de_clasificacion": [
+    "DNI en blanco: decisión expresa del tesista para llenado manuscrito.",
+    "Acta sin firmas, fecha ni calificación: no fabricar dictamen ni datos de autoridades.",
+    "Página al cierre del Capítulo I: no borrar texto ni eliminar el salto capitular por tener poco contenido.",
+    "Libro sin DOI: no es por sí mismo error APA si existe la fuente."
+  ],
+  "limites_de_fuente": [
+    "Figura 6 conserva baja resolución de origen; no se disfraza con reescalado.",
+    "Validación reportada con todas las calificaciones 4: cálculo condicional, pendiente de concordancia documental.",
+    "Sin datos reales de participantes, no se rehabilita la inferencia como resultado de campo.",
+    "Las fotografías no aportadas no se generan ni se simulan."
+  ],
+  "versionado": {
+    "v18": "Se conserva sin modificación",
+    "v19": "Copia de corrección y cotejo final focalizado",
+    "excel_v4": "Ya entregado; se conserva sin sobrescribir",
+    "excel_v5": "Nueva copia para corresponder a la fuente v19 al terminar"
+  },
+  "aprobacion_final": "No emitida; la entrega será para revisión del tesista, no una certificación de impresión ni dictamen real del jurado."
+}

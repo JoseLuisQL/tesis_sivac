@@ -1,0 +1,12 @@
+{
+  "origen": "salidas/archivo/_v19_pre_leyenda_unica_20261021.docx",
+  "sha256_origen": "efd2d0147595fb513057734c96dd85fb092f0b6d2ab8fe3b6871676f8ece36ca",
+  "destino": "salidas/documentos/_v19_paso3a.docx",
+  "sha256_destino": "e4ff7962454204938cfb21280715ae7d73dbebdca4814411e3819aa0d831a25a",
+  "fecha": "2026-10-21",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "lote": "salidas/reportes_maquetacion/_v19_lote_leyenda_unica.json",
+  "ordenes_aplicadas": 8,
+  "ordenes_fallidas": 0,
+  "detalle": "Retiro de la frase duplicada 'fotografia pendiente de incorporacion' en los cuatro rotulos y en las cuatro notas de las figuras 49 a 52."
+}

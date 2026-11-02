@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-10-22",
+  "tarea": "Resolver la falta de logotipos reportada en la captura mediante diagnóstico comparado y entrega con nombres inequívocos.",
+  "fase": "F8",
+  "squad": "Squad E (Redacción y Maquetación)",
+  "subagente": "maquetador-docx",
+  "entradas": ["image.png", "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/", "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02/"],
+  "salida_esperada": "salidas/instrumentos/ENTREGA_CON_LOGOS_SIVAC_20261022/ con INSTRUMENTOS_SIVAC_CON_LOGOS.docx/pdf, APOYOS_INVESTIGADOR_CON_LOGOS.docx/pdf, VISTA_PREVIA_CON_LOGOS.png y MANIFIESTO_ENTREGA.json",
+  "restricciones": [
+    "No atribuir al usuario una ruta abierta ni un fallo del visor sin evidencia.",
+    "Si v02 contiene correctamente las imágenes, entregar copias binarias exactas con nombres únicos, sin modificar documentos ni recompilar.",
+    "Preservar logotipos, v01, v02, motor y constructor.",
+    "Comprobar los logotipos embebidos en las cabeceras de Word y visibles en las doce páginas únicas de PDF.",
+    "No publicar los documentos en servicios externos."
+  ],
+  "criterio_exito": "Cuatro copias con huellas idénticas a sus fuentes y una vista previa clara; diagnóstico sustentado en la comparación con la captura, sin presumir la causa de selección o caché.",
+  "comprobacion_previa_direccion": "La captura aportada carece del bloque institucional completo y de la línea de rol presente en v02. El PDF v02 local inspeccionado muestra ambos logotipos y el bloque de texto institucional.",
+  "fuente_pdf_v02_sha256": "8921fcf957e7d2cc5c3e18bccae7ee327e6255489b60b970070a415cb68ba6b9"
+}

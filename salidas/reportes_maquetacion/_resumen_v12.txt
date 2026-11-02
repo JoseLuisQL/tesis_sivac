@@ -1,0 +1,5 @@
+CLAVES: ['origen', 'destino', 'sha256_origen', 'sha256_destino', 'parrafos_antes', 'parrafos_despues', 'tablas_antes', 'tablas_despues', 'antes', 'despues', 'duplicados_antes', 'duplicados_despues', 'acciones']
+LISTA acciones: 161 elementos
+   rotulo_formato                 99
+   orden_figura_rotulo            38
+   nota_sin_prefijo               24

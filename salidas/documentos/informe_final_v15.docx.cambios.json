@@ -1,0 +1,43 @@
+{
+  "comando": "aplicar-ordenes",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "fecha": "2026-10-21",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "agente": "maquetador-docx",
+  "origen": "salidas/documentos/informe_final_v14.docx",
+  "destino": "salidas/documentos/informe_final_v15.docx",
+  "sha256_origen": "1b81020cf551914e74b21d7f875566ebcf2bd59da781f08340c2cbc0f5861a07",
+  "sha256_destino": "7c79eb03e2875f5f007c982a946fa84feaa48e4aef1009f717c7163cb9aa2ff1",
+  "bytes_destino": 14668686,
+  "resumen": {
+    "total_ordenes": 4,
+    "total_aplicadas": 4,
+    "total_fallidas": 0,
+    "parrafos": "824 -> 824",
+    "tablas": "59 -> 59",
+    "elementos_body": "885 -> 885",
+    "nodos_w_t": "4682 -> 4682",
+    "saneamiento_espacios": {"parrafos_saneados": 0, "caracteres_recortados": 0}
+  },
+  "lote": {
+    "archivo": "uniformidad_notacional_v14_complemento.json",
+    "sha256": "e85a39e171499f7eb99ad7cf2ef49f2fbf6dd04963f9ee8d16d02244b0296514",
+    "ordenes": 4,
+    "celdas": [
+      {"tabla_indice": 41, "fila": 3, "columna": 4, "antes": "0.001", "despues": ".001"},
+      {"tabla_indice": 42, "fila": 3, "columna": 4, "antes": "0.001", "despues": ".001"},
+      {"tabla_indice": 42, "fila": 5, "columna": 4, "antes": "0.001", "despues": ".001"},
+      {"tabla_indice": 42, "fila": 7, "columna": 4, "antes": "0.001", "despues": ".001"}
+    ]
+  },
+  "verificacion_final": {
+    "celdas_cambiadas": 4,
+    "parrafos_cambiados": 0,
+    "p_valores_con_cero_inicial": 0,
+    "falsos_positivos_0_001": "dos concordancias '+10.00' + '1' entre nodos contiguos; no son p-valores",
+    "word_com": {"paginas": 158, "palabras": 42338, "tablas": 59, "abre_sin_reparacion": true},
+    "pdf": {"archivo": "salidas/documentos/informe_final_v15.pdf", "bytes": 6482108, "paginas": 158},
+    "matrices_49_50": "cabeceras tam_total y satisfaccion completas en paginas 153 y 154"
+  },
+  "reporte_detallado": "salidas/reportes_maquetacion/aplicacion_ordenes_v15.json"
+}

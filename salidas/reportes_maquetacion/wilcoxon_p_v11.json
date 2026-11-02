@@ -1,0 +1,132 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v11.docx",
+    "documento_base_sha256": "f5e7636fae06b3a1b3e74b5815fc54e3d25ac2ee0109e69ec337136d4db59b07",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "analista-estadistico",
+    "squad": "Squad D - Bioestadistica e Inferencia",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Unificar el p no ajustado de los siete contrastes de Wilcoxon en p = 0.001 (nueve sustituciones).",
+    "convencion_indices": "indice_docx en base 0. En ordenes de tabla identifica document.tables[N]; en ordenes de parrafo identifica document.paragraphs[N]. En ubicacion, fila y columna son base 1 e incluyen la fila de encabezado como fila 1.",
+    "calculo": {
+      "N_pares_validos": 14,
+      "W": 0.0,
+      "media_W": 52.5,
+      "varianza_W": 253.75,
+      "desviacion_estandar_W": 15.92953232207399,
+      "Z": -3.2957653080153086,
+      "p_bilateral": 0.0009815397525216685,
+      "p_redondeado_3_decimales": 0.001,
+      "regla_redondeo": "p < .001 solo si p < 0.0005; 0.000982 se reporta como 0.001."
+    },
+    "confirmacion_aritmetica": "Se confirma el fundamento: 52.5 / sqrt(253.75) = -3.295765 y 2*Phi(-3.295765) = 0.000982. La desviacion estandar exacta es 15.929532; el valor 15.9325 consignado en la comision es una aproximacion, sin efecto sobre Z ni sobre la conclusion.",
+    "total_ordenes": 9,
+    "verificacion_sin_cambio": [
+      "TABLA 40, fila 3, columna 4: ya declara 0.001 (T_reg, Wilcoxon).",
+      "TABLA 40, fila 5, columna 4: ya declara 0.001 (T_vale, Wilcoxon).",
+      "TABLA 41, fila 5, columna 4: ya declara 0.001 (CPE, Wilcoxon).",
+      "PARRAFO 686 (T_vale): ya declara p = 0.001.",
+      "PARRAFO 692 (CPE): ya declara p = 0.001.",
+      "PARRAFO 698 (TAM total): corregido por la orden adicional; queda p = 0.001 (p_adj < .001)."
+    ],
+    "prueba_esperada": "Tras aplicar las nueve ordenes sobre una copia del v11, los siete contrastes de Wilcoxon deben declarar p = 0.001: T_reg, T_vale, RSD, CPE, AP, UP y TAM total. Ninguna fila de prueba t debe cambiar su p < .001. Los p_adj de Holm, Z, W y las decisiones deben permanecer idénticos.",
+    "notas": [
+      "Las nueve ordenes de p son disjuntas de las 16 ordenes de r de Rosenthal: los anclajes se detienen antes de los valores de r y las de TAM preservan el p ajustado.",
+      "No se modifican p_adj, Z, W, medias, desviaciones estandar, tamanos del efecto ni decisiones de hipotesis.",
+      "El DOCX v11 no se edita; la aplicacion corresponde al maquetador."
+    ],
+    "resultado_ensayo": {
+      "secuencia_p_luego_r": "25/25 ordenes aplicadas (9 de p + 16 de r); sin colisiones.",
+      "secuencia_r_luego_p": "25/25 ordenes aplicadas (16 de r + 9 de p); sin colisiones.",
+      "wilcoxon_p_final": [
+        "T_reg: 0.001",
+        "T_vale: 0.001",
+        "RSD: 0.001",
+        "CPE: 0.001",
+        "AP: 0.001",
+        "UP: 0.001",
+        "TAM total: 0.001"
+      ],
+      "p_prueba_t": "sin cambio (< .001 en las siete filas paramétricas)",
+      "p_ajustado_holm": "sin cambio",
+      "Z_y_W": "sin cambio",
+      "decisiones": "sin cambio"
+    }
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 4",
+      "ancla_original": "< .001",
+      "texto_nuevo": "0.001",
+      "categoria": "p_valor",
+      "justificacion": "RSD, prueba de Wilcoxon: El contraste de Wilcoxon tiene W = 0.0, Z = -3.295765 y p bilateral asintótico 2*Phi(-3.295765) = 0.000982; redondeado a tres decimales corresponde a 0.001. Se unifica con los demás contrastes de Wilcoxon; no se altera p_adj, Z, W ni la decisión."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 4",
+      "ancla_original": "< .001",
+      "texto_nuevo": "0.001",
+      "categoria": "p_valor",
+      "justificacion": "AP, prueba de Wilcoxon: El contraste de Wilcoxon tiene W = 0.0, Z = -3.295765 y p bilateral asintótico 2*Phi(-3.295765) = 0.000982; redondeado a tres decimales corresponde a 0.001. Se unifica con los demás contrastes de Wilcoxon; no se altera p_adj, Z, W ni la decisión."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 4",
+      "ancla_original": "< .001",
+      "texto_nuevo": "0.001",
+      "categoria": "p_valor",
+      "justificacion": "UP, prueba de Wilcoxon: El contraste de Wilcoxon tiene W = 0.0, Z = -3.295765 y p bilateral asintótico 2*Phi(-3.295765) = 0.000982; redondeado a tres decimales corresponde a 0.001. Se unifica con los demás contrastes de Wilcoxon; no se altera p_adj, Z, W ni la decisión."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 4",
+      "ancla_original": "< .001",
+      "texto_nuevo": "0.001",
+      "categoria": "p_valor",
+      "justificacion": "Puntaje global TAM, prueba de Wilcoxon: El contraste de Wilcoxon tiene W = 0.0, Z = -3.295765 y p bilateral asintótico 2*Phi(-3.295765) = 0.000982; redondeado a tres decimales corresponde a 0.001. Se unifica con los demás contrastes de Wilcoxon; no se altera p_adj, Z, W ni la decisión."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "ancla_original": "p = 0.001 (p < .001)",
+      "texto_nuevo": "p = 0.001",
+      "categoria": "p_valor",
+      "justificacion": "T_reg: se elimina el paréntesis que contradecía el valor 0.001 ya declarado. El p ajustado de Holm y las demás cifras permanecen intactos."
+    },
+    {
+      "indice_docx": 692,
+      "ubicacion": "PARRAFO 692",
+      "ancla_original": "p < .001 con",
+      "texto_nuevo": "p = 0.001 con",
+      "categoria": "p_valor",
+      "justificacion": "RSD: el p asintótico de Wilcoxon es 0.000982, que se redondea a 0.001. El ancla termina antes de la frase de r para no solaparse con la orden de tamaño del efecto."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698, ocurrencia 1 (AP)",
+      "ancla_original": "p < .001 y r",
+      "texto_nuevo": "p = 0.001 y r",
+      "categoria": "p_valor",
+      "justificacion": "AP: el p asintótico de Wilcoxon es 0.000982 y se redondea a 0.001. El ancla se detiene antes del valor de r para no solaparse con la orden de tamaño del efecto."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698, ocurrencia 2 (UP)",
+      "ancla_original": "p < .001 y r",
+      "texto_nuevo": "p = 0.001 y r",
+      "categoria": "p_valor",
+      "justificacion": "UP: el p asintótico de Wilcoxon es 0.000982 y se redondea a 0.001. El ancla se detiene antes del valor de r para no solaparse con la orden de tamaño del efecto."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698 (TAM total)",
+      "ancla_original": "p < .001 (p_adj < .001)",
+      "texto_nuevo": "p = 0.001 (p_adj < .001)",
+      "categoria": "p_valor",
+      "justificacion": "Puntaje global TAM: el p no ajustado de Wilcoxon es 0.000982 y se redondea a 0.001. Se conserva intacto el paréntesis del p ajustado de Holm; la orden es disjunta de las anclas de AP y UP."
+    }
+  ]
+}

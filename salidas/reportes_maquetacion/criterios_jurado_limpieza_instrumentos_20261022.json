@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "fase": "F8",
+    "agente": "jurado-revisor",
+    "alcance": "Diseno y claridad de instrumentos v02 (7 p) y apoyo 05 (p1). No evalua tesis, no emite nota.",
+    "leidos": ["image copy.png (p1)", "00_INSTRUMENTOS p3, p6, p7", "05_APOYOS p1"],
+    "objetivo": "Muestra visiblemente distinta: jerarquia unica, espaciado medible, marcado manual."
+  },
+  "principio": "Una pagina = un titulo + un proposito + un tipo de marcado. Lo administrativo o explicativo que no se escribe durante la tarea sale de la hoja y vive en el apoyo.",
+  "correcciones": [
+    {"id":"C01","pagina":"p1, p3, p6, p7 banda superior","clase":"lectura","problema":"Tres titulos compiten y el mismo objeto recibe cuatro nombres (FORMULARIO 0X, Instrumento N, descriptor cursivo, Hoja 01); 'Pagina n de 7' se lee como parte del rotulo.","especificacion":"Una H1 'Instrumento N. <nombre>' 16 pt negrita; 'FORMULARIO 0X' sale del cuerpo y pasa al encabezado 9 pt junto a 'Instrumento N - pagina x de y'; se elimina el descriptor cursivo de la hoja (va al apoyo); un unico ID 'Instrumento N' en hoja, apoyo y pie.","comprobacion":"Por pagina: 1 H1, 1 encabezado, 0 'FORMULARIO' en cuerpo, 1 esquema de ID."},
+    {"id":"C02","pagina":"p6, p7 bloque de identificacion","clase":"lectura","problema":"El participante ve 'Fase (INICIAL o FINAL)' y puede inferir la hipotesis; p7 la preimprime y p6 la deja en blanco. 'Investigador (admin.)' y su nota ocupan la cabecera del participante.","especificacion":"Retirar de la hoja del participante las filas 'Fase' e 'Investigador (admin.)'. El estado empirico se consigna en hoja de control del investigador (apoyo) o en casilla marcada despues de recoger; cero INICIAL/FINAL visibles.","comprobacion":"INICIAL y FINAL en p6-p7 fuera del pie = 0; cabecera del participante = Codigo, Codigo de centro, Fecha."},
+    {"id":"C03","pagina":"p1 instr. 1-6; p3 instr. 1-5; p6 y p7 instr. 1-3","clase":"lectura","problema":"Pasos de distinta naturaleza al mismo nivel tipografico, sin sangria francesa ni agrupacion; el paso 6 exige aritmetica (minutos decimales) y el 5 remite a continuaciones.","especificacion":"Maximo 3 pasos por hoja en 'Antes / Durante / Al cerrar', sangria francesa 6 mm, interlineado 1.15, 3 pt entre pasos. Conversion mn:ss y reglas de pausa, cierre y continuacion pasan al apoyo.","comprobacion":"<=3 pasos numerados por hoja; 0 operaciones aritmeticas y 0 remisiones a continuacion en hoja de campo."},
+    {"id":"C04","pagina":"p3 regla de conformidad, tabla C1-C8, bloque D-01, instr. 2","clase":"lectura","problema":"La misma norma aparece cuatro veces y una instruccion explica la repeticion ('Cada bloque repite la etiqueta corta'). El auditor lee 3 listados antes del primer registro.","especificacion":"La hoja conserva solo el bloque de calificacion con etiquetas cortas C1-C8 y una nota: 'Nota. Conforme = cumple C1 a C8 a la vez.' Definiciones completas y regla de concordancia van al apoyo; se elimina la frase que justifica la duplicacion.","comprobacion":"p3 con 1 solo listado de criterios; bloque de calificacion <=45% del alto util."},
+    {"id":"C05","pagina":"todas bandas, columna de etiquetas, bordes","clase":"lectura+estetica","problema":"Cuatro pesos visuales simultaneos (rotulo, bandas de tarea, columna de etiquetas sombreada, borde 1 pt en toda celda): las etiquetas pesan mas que las respuestas.","especificacion":"Rejilla institucional conservada con 2 rellenos maximo (encabezado 15%, banda de seccion 8%), borde exterior 1 pt, interior 0.5 pt, cero sombreado en celdas de respuesta, alto de fila >=8 mm.","comprobacion":"<=2 rellenos distintos en el documento, 1 grosor interior, 0 celdas de respuesta sombreadas."},
+    {"id":"C06","pagina":"p1 Pausa/Causa; p3 CONFORME / NO CONFORME; p6-p7 'una sola casilla'","clase":"lectura","problema":"Los dominios cerrados se resuelven escribiendo o tachando, y una barra '/' figura como opcion. 'Pausa' y 'Causa' comparten fila sin condicionarse.","especificacion":"Todo dominio cerrado con casilla 4x4 mm, una por opcion, separadas 8 mm, alineadas a la izquierda de la celda. 'Causa de pausa' en fila propia, presente solo si Pausa = Si. Veredicto en dos casillas independientes.","comprobacion":"100% de dominios cerrados con casilla; 0 barras '/' como opcion; 0 campos condicionales en la fila del disparador."},
+    {"id":"C07","pagina":"p6, p7 leyenda Likert y columnas 1-5","clase":"lectura","problema":"La escala se enuncia tres veces (instruccion, tabla de anclajes, columnas) y las cinco columnas ocupan ~40% del ancho, forzando enunciados de 3 lineas.","especificacion":"Un bloque de anclajes por hoja; columnas de respuesta fijas de 12 mm; columna de enunciado >=95 mm; 10 pt en celdas, interlineado 1.15; instruccion de marcado en una linea.","comprobacion":"Anclajes 1 vez por hoja; AP-03 y UP-03 en <=2 lineas; 0 enunciados cortados."},
+    {"id":"C08","pagina":"p3-p5 bloque de auditoria D-01 y replicas","clase":"lectura","problema":"Ocho columnas con Si/No de ~20 mm, criterios en 2 lineas y un bloque por media pagina: el auditor necesita varias hojas para pocos documentos y pierde el orden correlativo.","especificacion":"Bloque en dos mitades (C1-C4 / C5-C8), etiqueta en 1 linea, alto de fila 7 mm, sin bajar de 10 pt. 'N. documento' y 'Tipo de documento' en una fila de 3 celdas. Dos bloques por pagina.","comprobacion":"2 bloques por pagina; 0 criterios en 2 lineas; tipografia de celda >=10 pt."},
+    {"id":"C09","pagina":"p1, p3, p6, p7 pie","clase":"lectura","problema":"El pie 'Instrumento N - Codigo TRAB-____' duplica el Codigo de la cabecera, no se usa y compite con el identificador.","especificacion":"Pie de una linea 8 pt: 'Instrumento N - pagina x de y'. El codigo TRAB aparece una vez, en el bloque de identificacion; cero campos escribibles en el pie.","comprobacion":"1 campo de codigo por hoja; pie sin lineas para escribir."},
+    {"id":"C10","pagina":"todas ritmo vertical y area vacia","clase":"estetica","problema":"Sin separacion medida entre titulo, cabecera, instrucciones y primer bloque; p6 y p7 quedan con media pagina vacia tras 'Observaciones del participante'.","especificacion":"12 pt antes y 6 pt despues de H1/H2, 6 mm entre bloques, 4 mm entre tabla y nota; el area libre se resuelve con 2 bloques por pagina o trasladando contenido al apoyo, no con cajas opcionales. 'Observaciones del participante' solo en p7.","comprobacion":"Separacion entre bloques 6 +/-1 mm en 7 paginas; 0 paginas con >25% del area operativa vacia."}
+  ],
+  "duplicados": [
+    {"id":"D1","contenido":"'Lo completa: <responsable>. Fase INICIAL/FINAL'","destino":"apoyo p1, tabla Quien llena cada hoja"},
+    {"id":"D2","contenido":"Orden de aplicacion y limites de uso","destino":"apoyo p1"},
+    {"id":"D3","contenido":"Continuaciones, pausas largas y cierre","destino":"apoyo 05 paginas de cierre"},
+    {"id":"D4","contenido":"Tabla completa C1-C8 y regla de concordancia","destino":"apoyo, ficha del auditor"},
+    {"id":"D5","contenido":"Conversion minutos:segundos a decimal","destino":"apoyo, tabla de conversion"},
+    {"id":"D6","contenido":"'No escriba su nombre...' en p6 y p7","destino":"una linea en p6; texto completo en apoyo"},
+    {"id":"D7","contenido":"'Observaciones del participante' en p6 y p7","destino":"solo p7"}
+  ],
+  "no_son_defectos": [
+    "Logos y rejilla institucional: se conservan.",
+    "Numeros de respuesta centrados: decision estetica.",
+    "Serif y 10 pt en celdas: se conservan, no se reduce letra.",
+    "Codigos AP/UP/PU/PE y redaccion de reactivos: intactos."
+  ],
+  "no_hacer": [
+    "No modificar reactivos, tareas, escalas ni dimensiones DEC-007.",
+    "No alterar logos, rejilla ni identificacion por codigo.",
+    "No reducir cuerpo de letra ni margenes.",
+    "No exceder 7 paginas de instrumentos + 5 de apoyo.",
+    "No tocar docx_quirurgico.py ni los maestros."
+  ],
+  "reinspeccion": {
+    "criterio": "La muestra debe diferir por jerarquia, espaciado y marcado, no por rotulo nuevo. Se verifica sobre PDF renderizado.",
+    "orden": ["C02","C01","C04","C03","C06","C07","C08","C05","C09","C10"],
+    "bloqueante": ["C02","C01"]
+  }
+}

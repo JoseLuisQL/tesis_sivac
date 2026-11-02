@@ -1,0 +1,74 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/archivo/_ensayo_v16.docx",
+    "objeto": "Ensayo en seco de las ocho órdenes de saneamiento de encabezados sobre el resultado ya aplicado de la familia C. Las anclas se declaran sobre el nodo de texto que contiene el hueco, no sobre la celda concatenada, porque el aplicador opera nodo a nodo.",
+    "diagnostico": "La celda «APtotal» está compuesta por dos nodos: «AP» y «total». El hueco que dejó la sustitución del guion bajo se restituye insertando el espacio al inicio del segundo nodo."
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador AP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador UP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre la sigla TAM y el calificador de puntaje global."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "ancla_original": "de satisfacción",
+      "texto_nuevo": " de satisfacción",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el sustantivo Nivel y su complemento."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador AP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador UP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre la sigla TAM y el calificador de puntaje global."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "ancla_original": "de satisfacción",
+      "texto_nuevo": " de satisfacción",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el sustantivo Nivel y su complemento."
+    }
+  ]
+}

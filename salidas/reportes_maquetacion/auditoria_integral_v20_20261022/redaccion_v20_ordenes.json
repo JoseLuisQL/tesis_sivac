@@ -1,0 +1,517 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "redactor-academico",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "documento_base": {
+      "ruta": "salidas/documentos/informe_final_v19.docx",
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "paginas_pdf": 158
+    },
+    "estado": "propuesta_no_aplicada",
+    "estado_de_las_propuestas": "Las 24 ordenes son propuestas tecnicas condicionadas a la evidencia documental del propio informe. No constituyen afirmaciones validadas por el autor, no han sido aprobadas por el tesista y no han sido aplicadas. Las ordenes que llevan el campo condicion_de_evidencia (O-13 y O-16) requieren cotejo previo del dato que las sustenta y no deben presentarse como correccion ya validada.",
+    "instruccion_de_aplicacion": "Ninguna orden ha sido aplicada. La aplicacion corresponde al motor canonico scripts/utilidades/docx_quirurgico.py por decision del Director General.",
+    "criterio_de_seleccion": "Solo se emiten ordenes con defecto demostrable y correccion que no altera contenido aprobado. Se excluyeron las correcciones de perfil (separador decimal, rotulos, espaciado) porque corresponden a la normalizacion automatica.",
+    "alcance_de_esta_version": "Ampliacion 2026-10-22: ademas del tramo visual 54-106 (ordenes O-01 a O-07), se reviso el texto narrativo completo fuera de ese tramo sobre INVENTARIO_V19.md, a saber pdf 13-53 (Resumen, Abstract, Chumasqa, Introduccion, Capitulo I, Capitulo II y apertura del Capitulo III) y pdf 107-140 (4.9 a 4.11, Capitulo V, Capitulo VI, Conclusiones, Recomendaciones y Referencias). Las ordenes O-08 a O-22 provienen de esa segunda pasada. O-23 es la unica orden sobre un encabezado y se emite por autorizacion expresa del Director General; su aplicacion exige refresco de indice de contenido.",
+    "fuente_de_anclas": "INVENTARIO_V19.md e INVENTARIO_V19.json del mismo directorio (3722 parrafos; 939 de cuerpo; 2783 de tabla; 59 tablas). Los identificadores Pxxxx son globales del documento y no coinciden con los indices de la coleccion de parrafos del cuerpo.",
+    "correspondencia_pagina_folio": "pagina_pdf = folio_impreso + 15, verificado en el tramo 54-106 y en el rotulo del Capitulo IV (pdf 100 = folio 85).",
+    "orden_de_aplicacion": "Aplicar primero estas ordenes y despues las reglas de normalizacion N-01 a N-04 consignadas en revision_prosa_global_v19.json, porque una de ellas modifica cadenas que varias anclas contienen. N-05 queda condicionada a verificacion previa de conteo.",
+    "garantias": [
+      "Ninguna orden modifica datos, cifras empiricas, tablas, formulas OMML ni imagenes.",
+      "Ninguna orden modifica enunciados, criterios ni escalas de los instrumentos.",
+      "Ninguna orden convierte en hecho un procedimiento descrito en futuro ni cambia tiempos verbales.",
+      "Ninguna orden introduce citas, autores, anios, DOI ni paginas nuevas.",
+      "Ninguna orden introduce etiquetas internas, corchetes de pendiente ni guiones largos U+2014.",
+      "Los reemplazos conservan el registro impersonal y la longitud aproximada del original."
+    ]
+  },
+
+  "ordenes": [
+    {
+      "id": "O-01",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0955",
+        "pagina_pdf": 71,
+        "folio": 56,
+        "seccion": "3.3.2.4 Modelado conceptual, logico y fisico de la base de datos"
+      },
+      "ancla_busqueda": "se documenta de forma exhaustiva el diccionario",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "A continuación, en las Tablas 10 a 24 se documenta de forma exhaustiva el diccionario de datos de las tablas más relevantes del esquema de la base de datos de SIVAC.",
+      "reemplazo": "A continuación, en las Tablas 10 a 24 se documenta el diccionario de datos de las tablas más relevantes del esquema de la base de datos de SIVAC.",
+      "motivo": "Contradiccion interna en la misma oracion: 'de forma exhaustiva' afirma cobertura total y la proposicion siguiente limita el alcance a 'las tablas mas relevantes'. La supresion del adverbio deja una asercion proporcional a lo efectivamente documentado, sin tocar la numeracion de tablas ni el contenido tecnico.",
+      "fuente_apoyo": "Tablas 10 a 24 del propio informe (paginas 72 a 81); nota de la Figura 20, que declara veintidos tablas normalizadas en el esquema.",
+      "riesgo_de_aplicacion": "Nulo. El parrafo no contiene campos ni formato especial."
+    },
+    {
+      "id": "O-02",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P1810",
+        "pagina_pdf": 94,
+        "folio": 79,
+        "seccion": "3.3.4 Fase IV: Pruebas de calidad del software"
+      },
+      "ancla_busqueda": "garantiza la fiabilidad operativa del software",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "La fase de pruebas en Extreme Programming constituye el componente que garantiza la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer).",
+      "reemplazo": "La fase de pruebas en Extreme Programming constituye el componente que sustenta la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer).",
+      "motivo": "'Garantizar' es un absoluto que una fase de pruebas no puede sostener: la Tabla 26 documenta 34 casos en seis suites, no una garantia de fiabilidad. 'Sustenta' conserva la funcion argumentativa de la oracion y ajusta la fuerza probatoria a la evidencia presentada.",
+      "fuente_apoyo": "Tabla 26 del propio informe: 8, 6, 5, 6, 4 y 5 casos, total 34 en seis suites automatizadas.",
+      "riesgo_de_aplicacion": "Nulo. Cambio de una sola palabra; se preservan las cursivas de la sigla del framework y del nombre del archivo si las hubiera."
+    },
+    {
+      "id": "O-03",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P1853",
+        "pagina_pdf": 96,
+        "folio": 81,
+        "seccion": "Nota de la Tabla 26"
+      },
+      "ancla_busqueda": "Cobertura automatizada que garantiza la estabilidad",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Nota. Cobertura automatizada que garantiza la estabilidad del software ante refactorizaciones o actualizaciones normativas.",
+      "reemplazo": "Nota. Cobertura automatizada que sustenta la estabilidad del software ante refactorizaciones o actualizaciones normativas.",
+      "motivo": "Mismo criterio que O-02: una suite de pruebas aporta evidencia de estabilidad, no la garantiza. La nota es el unico lugar de la tabla donde se afirma cobertura y estabilidad a la vez, sin respaldo empirico adicional.",
+      "fuente_apoyo": "Tabla 26 y su encabezado de columna 'Resultado', que registra el estado de cada suite.",
+      "riesgo_de_aplicacion": "Moderado-bajo. Es una nota de tabla: el reemplazo debe conservar el cuerpo de 9.5 pt, la cursiva de 'Nota.' y el interlineado sencillo. No alterar el resto de la nota ni su posicion."
+    },
+    {
+      "id": "O-04",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2028",
+        "pagina_pdf": 102,
+        "folio": 87,
+        "seccion": "4.5 Diseno de la investigacion, protocolo temporal"
+      },
+      "ancla_busqueda": "neutralizar potenciales sesgos de reactividad",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Para garantizar la validez metodológica interna y neutralizar potenciales sesgos de reactividad, historia o fatiga en las mediciones",
+      "reemplazo": "Para reforzar la validez metodológica interna y atenuar potenciales sesgos de reactividad, historia o fatiga en las mediciones",
+      "motivo": "Doble absoluto incompatible con el diseno declarado: en un preexperimental de un solo grupo sin control paralelo, la validez interna se refuerza y las amenazas se atenuan, no se garantizan ni se neutralizan. El propio apartado 4.2 reconoce esas amenazas. El reemplazo mantiene intacta la descripcion de las cuatro etapas del protocolo.",
+      "fuente_apoyo": "Apartado 4.2 del mismo informe, que declara las amenazas a la validez interna; Tabla 29, que las enuncia por etapa.",
+      "riesgo_de_aplicacion": "Nulo. Se sustituye solo la clausula inicial; el resto del parrafo, con sus incisos (a) a (d), no se toca."
+    },
+    {
+      "id": "O-05",
+      "categoria": "editorial_con_confirmacion",
+      "requiere_confirmacion_tesista": true,
+      "ubicacion": {
+        "parrafo": "P1955",
+        "pagina_pdf": 98,
+        "folio": 83,
+        "seccion": "3.3.4.3 Evaluacion de calidad del software segun ISO/IEC 25010:2023"
+      },
+      "ancla_busqueda": "las cuatro características de calidad esenciales",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las cuatro características de calidad esenciales para sistemas de gestión sanitaria: adecuación funcional, usabilidad, eficiencia de desempeño, y fiabilidad y seguridad. En la Tabla 28 se sintetizan los resultados de la evaluación.",
+      "reemplazo": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las cinco características de calidad esenciales para sistemas de gestión sanitaria: adecuación funcional, usabilidad, eficiencia de desempeño, fiabilidad y seguridad. En la Tabla 28 se sintetizan los resultados de la evaluación.",
+      "motivo": "La Tabla 28 documenta cinco caracteristicas: adecuacion funcional, usabilidad, eficiencia de desempeno, fiabilidad y seguridad. La oracion anuncia cuatro y fusiona las dos ultimas en un solo item, lo que ademas produce una coma antes de la conjuncion y una lectura ambigua. El reemplazo alinea el conteo con la tabla y enumera los cinco elementos por separado.",
+      "fuente_apoyo": "Tabla 28, paginas 98 y 99, cuyas filas de la primera columna son Adecuacion Funcional, Usabilidad, Eficiencia de Desempeno, Fiabilidad y Seguridad.",
+      "requiere_confirmacion_tesista_por": "Modifica un numeral en prosa. No altera ninguna celda, valor observado ni nivel de conformidad de la Tabla 28.",
+      "alternativa_si_no_se_autoriza": "Suprimir el numeral sin enumerar: 'La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las características de calidad pertinentes para sistemas de gestión sanitaria que se detallan en la Tabla 28. En la Tabla 28 se sintetizan los resultados de la evaluación.' Variante autorizada por el Director General: no introduce ningun numeral ni ninguna caracteristica nueva y remite a la tabla, que es la fuente del conteo. Exige evitar la repeticion de 'Tabla 28' en las dos oraciones, de modo que la primera se cierra en 'sistemas de gestión sanitaria.' y la segunda conserva la remision."
+    },
+    {
+      "id": "O-06",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2014",
+        "pagina_pdf": 100,
+        "folio": 85,
+        "seccion": "4.2 Nivel de investigacion"
+      },
+      "ancla_busqueda": "nivel explicativo de evaluación de intervención tecnológica",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "La investigación se enmarcó en el nivel explicativo de evaluación de intervención tecnológica;",
+      "reemplazo": "La investigación se enmarcó en el nivel explicativo, orientado a la evaluación de una intervención tecnológica;",
+      "motivo": "El original encadena tres sustantivos sin enlace sintactico ('nivel explicativo de evaluacion de intervencion tecnologica'), lo que obliga a releer. La aposicion aclara que el nivel explicativo califica al estudio y no a la evaluacion, sin alterar el sentido ni el resto del parrafo.",
+      "fuente_apoyo": "Uso institucional del nivel explicativo en la matriz de consistencia; el apartado 4.2 mantiene integros el reconocimiento de amenazas y la referencia a Hernandez-Sampieri et al. (2014).",
+      "riesgo_de_aplicacion": "Nulo. Se sustituye la clausula inicial hasta el punto y coma; el resto del parrafo permanece igual."
+    },
+    {
+      "id": "O-07",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0720",
+        "pagina_pdf": 60,
+        "folio": 45,
+        "seccion": "Nota de la Tabla 6"
+      },
+      "ancla_busqueda": "Estructura taxonómica inmutable aprobada en la matriz",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Nota. Estructura taxonómica inmutable aprobada en la matriz de operacionalización institucional de la UNAJMA.",
+      "reemplazo": "Nota. Estructura taxonómica de dimensiones e indicadores de la variable dependiente, conforme a la matriz de operacionalización institucional de la UNAJMA.",
+      "motivo": "Dos defectos en una nota breve. Primero, 'inmutable' es un absoluto que describe la taxonomia como inmodificable, cuando lo que corresponde es indicar su procedencia. Segundo, 'aprobada en la matriz' atribuye la aprobacion a un instrumento y no a la instancia que la respalda. El reemplazo declara el contenido de la tabla y su conformidad con la matriz, sin agregar autoridades ni decisiones.",
+      "fuente_apoyo": "Apartado 1.6.2 y Tabla 6 del propio informe, que ya enuncian las tres dimensiones y sus seis indicadores.",
+      "riesgo_de_aplicacion": "Moderado-bajo. Es una nota de tabla: conservar 9.5 pt, cursiva de 'Nota.' e interlineado sencillo."
+    },
+    {
+      "id": "O-08",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2302",
+        "pagina_pdf": 117,
+        "folio": 102,
+        "seccion": "5.1 Analisis de confiabilidad del Instrumento 03"
+      },
+      "ancla_busqueda": "En concordancia con las decisiones metodológicas adoptadas",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "En concordancia con las decisiones metodológicas adoptadas, el análisis de confiabilidad se circunscribió al Instrumento N.° 03",
+      "reemplazo": "En concordancia con el diseño metodológico adoptado, el análisis de confiabilidad se circunscribió al Instrumento N.° 03",
+      "motivo": "'Las decisiones metodológicas adoptadas' remite a acuerdos de planificacion que el lector no puede consultar en el informe; queda un referente sin antecedente textual. 'El diseño metodológico adoptado' remite al Capitulo IV, que si forma parte del documento, y conserva la funcion de enlace de la oracion.",
+      "fuente_apoyo": "Capitulo IV, apartados 4.1 a 4.5, donde se declara el diseno preexperimental y los instrumentos.",
+      "riesgo_de_aplicacion": "Nulo. Sustitucion de una clausula preposicional; el resto del parrafo no se toca."
+    },
+    {
+      "id": "O-09",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2626",
+        "pagina_pdf": 125,
+        "folio": 110,
+        "seccion": "5.4 Contrastacion de hipotesis"
+      },
+      "ancla_busqueda": "las hipótesis formuladas en la matriz de consistencia definitiva",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "El contraste inferencial de las hipótesis formuladas en la matriz de consistencia definitiva se desarrolló contrastando",
+      "reemplazo": "El contraste inferencial de las hipótesis formuladas en el Capítulo I se desarrolló contrastando",
+      "motivo": "El calificativo 'definitiva' designa una version de trabajo interna de la matriz. El informe final no conserva versiones, de modo que el lector no puede identificar cual matriz es la definitiva. La remision al Capitulo I es verificable y no altera ninguna formulacion de hipotesis.",
+      "fuente_apoyo": "Apartado 1.5 del informe, donde se formulan la hipotesis general y las tres especificas.",
+      "riesgo_de_aplicacion": "Nulo. Cambio de la referencia, no del contenido de la hipotesis."
+    },
+    {
+      "id": "O-10",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2574",
+        "pagina_pdf": 124,
+        "folio": 109,
+        "seccion": "5.3 Prueba de bondad de ajuste de normalidad"
+      },
+      "ancla_busqueda": "satisfacen plenamente el supuesto de ajuste normal gaussiano",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Se concluye que las diferencias pareadas pretest-postest satisfacen plenamente el supuesto de ajuste normal gaussiano, habilitando el uso legítimo y preferente de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13.",
+      "reemplazo": "Se concluye que las diferencias pareadas pretest-postest no se apartan de manera significativa del supuesto de normalidad, lo que habilita el uso de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13.",
+      "motivo": "La prueba de Shapiro-Wilk no rechaza la hipotesis nula de normalidad; no demuestra que la cumpla. Afirmar que las diferencias 'satisfacen plenamente' el supuesto convierte la no refutacion en confirmacion, y 'preferente' agrega una jerarquia que el contraste no establece. Los p-valores y los grados de libertad no se modifican.",
+      "fuente_apoyo": "Parrafo inmediatamente anterior (P2573) y Tabla 39, que solo informan W y p con decision de no rechazo.",
+      "riesgo_de_aplicacion": "Bajo. Se sustituye una oracion completa; no contiene campos ni formato especial."
+    },
+    {
+      "id": "O-11",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2422",
+        "pagina_pdf": 120,
+        "folio": 105,
+        "seccion": "5.2.2 Dimension 2: Consistencia documental"
+      },
+      "ancla_busqueda": "Estos hallazgos corroboran que la automatización del Kardex",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO reduce significativamente las inconsistencias documentales y las discrepancias entre existencias físicas y registros.",
+      "reemplazo": "Estos hallazgos evidencian que la automatización del Kardex bajo la regla FEFO se asocia con una reducción de las inconsistencias documentales y de las discrepancias entre existencias físicas y registros.",
+      "motivo": "El apartado es descriptivo y su propio parrafo ya informa la magnitud del cambio. 'Reduce significativamente' traslada al analisis descriptivo una conclusion inferencial que corresponde al apartado 5.4, y 'corroboran' presenta el hallazgo como confirmacion de una hipotesis causal que un diseno preexperimental de un solo grupo no permite aislar. No se altera ninguna cifra.",
+      "fuente_apoyo": "Parrafo P2422, con medias, DE, Mdn y variacion porcentual; Tabla 37; apartado 5.4.2, donde si corresponde el contraste inferencial.",
+      "riesgo_de_aplicacion": "Nulo. Una oracion sustituida; las cifras del parrafo permanecen intactas."
+    },
+    {
+      "id": "O-12",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2809",
+        "pagina_pdf": 131,
+        "folio": 116,
+        "seccion": "Capitulo VI: Discusion, dimension 2"
+      },
+      "ancla_busqueda": "sino de la validación transaccional automatizada: la regla FEFO impide",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Estos hallazgos confirman que la exactitud contable del kardex no depende ya de la pericia aritmética del operador, sino de la validación transaccional automatizada: la regla FEFO impide despachar lotes de vencimiento tardío cuando existen existencias próximas a caducar y el sistema bloquea toda transacción cuyo saldo resulte insuficiente.",
+      "reemplazo": "Estos hallazgos confirman que la exactitud contable del kardex no depende ya de la pericia aritmética del operador, sino de la validación transaccional automatizada.",
+      "motivo": "Duplicacion literal dentro del mismo parrafo: la oracion precedente ya enuncia los dos controles ('la regla FEFO obligatoria que impide despachar biologicos de vencimiento tardio teniendo existencias proximas a caducar, y el bloqueo estricto de transacciones con saldo insuficiente'). La supresion deja una sola formulacion de cada control y no elimina informacion.",
+      "fuente_apoyo": "Oracion inmediatamente anterior del mismo parrafo P2809.",
+      "riesgo_de_aplicacion": "Nulo. Se elimina una clausula repetida; el resto del parrafo, incluida la oracion de convergencia RSD-CPE, no se toca."
+    },
+    {
+      "id": "O-13",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "condicion_de_evidencia": "Propuesta condicionada a la evidencia del propio informe (apartados 1.3.1, 3.1.3 y 5.2.3). No es una afirmacion validada por el autor, no ratifica los enfoques de aceptacion citados y no introduce citas, autores ni constructos nuevos.",
+      "ubicacion": {
+        "parrafo": "P2810",
+        "pagina_pdf": 132,
+        "folio": 117,
+        "seccion": "Capitulo VI: Discusion, dimension 3"
+      },
+      "ancla_busqueda": "Estos resultados ratifican la hipótesis formulada por Davis",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Estos resultados ratifican la hipótesis formulada por Davis (1989) y Venkatesh et al. (2003), en el sentido de que los usuarios sanitarios adoptan favorablemente las plataformas digitales cuando experimentan de manera directa que el sistema reduce el esfuerzo cognitivo, automatiza tareas tediosas y brinda confianza en la emisión de documentos de auditoría institucional (Ministerio de Salud del Perú, 2022).",
+      "reemplazo": "Estos resultados admiten una lectura desde los enfoques de aceptación tecnológica considerados en el marco teórico, que sitúan la utilidad percibida y la aceptación del proceso entre las condiciones de la disposición del usuario hacia un sistema; la evidencia describe ese comportamiento en el grupo estudiado y no constituye, por sí misma, una validación de dichos enfoques ni de sus constructos en el ámbito sanitario.",
+      "motivo": "Tres defectos. Primero, se atribuye a Davis (1989) y a Venkatesh et al. (2003) un enunciado conjunto, cuando corresponden a formulaciones distintas (TAM y UTAUT) que el informe no declara equivalentes; llamarlas 'el modelo' fusiona dos tradiciones y atribuye a ambas un mismo contenido. Segundo, el contenido atribuido (reduccion del esfuerzo cognitivo, automatizacion de tareas, confianza en documentos de auditoria) no forma parte de los constructos medidos, que son aceptacion del proceso y utilidad percibida. Tercero, 'ratifican la hipotesis' convierte el hallazgo en confirmacion de una teoria general, cuando la justificacion teorica declara no pretender validar el modelo. El reemplazo describe la interpretacion a partir de los enfoques de aceptacion ya revisados, se limita a los dos constructos efectivamente medidos y declara que la evidencia no valida esos enfoques. La cita del Ministerio de Salud del Peru se retira de este cierre porque no sostiene ningun enunciado sobre aceptacion tecnologica; la fuente permanece citada en 1.1, en 3.1.2.1 y en la discusion de la dimension 2.",
+      "fuente_apoyo": "Apartado 1.3.1, que declara que el estudio emplea el TAM sin pretender validarlo como teoria general; apartados 3.1.3 y 5.2.3, con el baremo TAM declarado en la nota de la Tabla 41.",
+      "base_de_la_correccion": "Autorizacion expresa del Director General: el retiro de la atribucion teorica incorrecta y de la cita parentetica constituye correccion editorial, no cambio de variable ni de constructo medido (aceptacion del proceso y utilidad percibida).",
+      "riesgo_de_aplicacion": "Bajo. Sustituye una oracion de cierre; no toca cifras, puntajes ni el baremo. Comprobar que Davis (1989) y Venkatesh et al. (2003) sigan citados en el apartado 3.1.3 y figuren en la lista de referencias, para no generar referencias huerfanas."
+    },
+    {
+      "id": "O-14",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2815",
+        "pagina_pdf": 133,
+        "folio": 118,
+        "seccion": "Conclusiones, tercera (Objetivo especifico 2)"
+      },
+      "ancla_busqueda": "erradicando las fallas de arrastre en los libros de kardex",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), erradicando las fallas de arrastre en los libros de kardex.",
+      "reemplazo": "respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), reduciendo de manera sustancial las fallas de arrastre en los libros de kardex.",
+      "motivo": "La misma oracion informa un RSD de 96.00% y una CPE de 95.39%, es decir, un remanente de discrepancia de 4.00% y 4.61%. 'Erradicar' afirma extincion total y contradice la cifra que la precede. 'Reducir de manera sustancial' es proporcional al valor reportado y no altera el sentido de la conclusion.",
+      "fuente_apoyo": "Cifras de la propia conclusion y Tabla 37 (RSD postest 96.00%; CPE postest 95.39%).",
+      "riesgo_de_aplicacion": "Nulo. Cambio de un verbo en gerundio; cifras y estadisticos intactos."
+    },
+    {
+      "id": "O-15",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2807",
+        "pagina_pdf": 131,
+        "folio": 116,
+        "seccion": "Capitulo VI: Discusion, apertura"
+      },
+      "ancla_busqueda": "fue determinar de qué manera la aplicación del sistema web SIVAC",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "El propósito de la presente investigación fue determinar de qué manera la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas",
+      "reemplazo": "El propósito de la presente investigación fue determinar en qué medida la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas",
+      "motivo": "El problema general y el objetivo general del informe se formulan con 'en que medida' (apartados 1.2.1 y 1.4.1). La discusion reabre el enunciado con 'de que manera', lo que rompe la correspondencia literal entre objetivo y discusion que el propio capitulo invoca. Se restituye la formula institucional sin modificar el alcance del estudio.",
+      "fuente_apoyo": "Apartados 1.2.1 y 1.4.1, y conclusion primera.",
+      "riesgo_de_aplicacion": "Nulo. Cambio de dos palabras en la oracion inicial."
+    },
+    {
+      "id": "O-16",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2807",
+        "pagina_pdf": 131,
+        "folio": 116,
+        "seccion": "Capitulo VI: Discusion, cierre del parrafo de apertura"
+      },
+      "ancla_busqueda": "descarta que estas obedezcan a fluctuaciones muestrales",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas y descarta que estas obedezcan a fluctuaciones muestrales.",
+      "reemplazo": "La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas en el conjunto de prueba analizado, en el marco de un diseño preexperimental de un solo grupo que no permite aislar por completo explicaciones alternativas.",
+      "motivo": "La clausula original interpreta la magnitud del efecto y el valor p como probabilidad de que la explicacion sea el azar. Esa lectura es impropia por dos razones: el tamano del efecto describe la magnitud de la diferencia, no la probabilidad de una explicacion, y la significacion solo indica compatibilidad con la hipotesis nula. A ello se agrega que la poblacion es censal (N = n = 14), de modo que no existe un mecanismo de fluctuacion muestral que pueda descartarse, y que los valores analizados proceden de un conjunto de prueba. El reemplazo describe la magnitud en el conjunto efectivamente analizado y explicita la condicion interpretativa propia del diseno preexperimental de un solo grupo, sin afirmar certeza, sin asignar probabilidades a explicaciones y sin descartar alternativas.",
+      "condicion_de_evidencia": "Propuesta condicionada a la evidencia del propio informe (Tablas 38, 40, 41 y 42 y apartado 4.1). No afirma que los datos sean definitivos ni convierte el conjunto de prueba en medicion de campo.",
+      "fuente_apoyo": "Tablas 38, 40, 41 y 42, con p-valores y tamanos del efecto; apartado 4.1, diseno preexperimental y poblacion censal.",
+      "riesgo_de_aplicacion": "Bajo. Sustituye el cierre de una oracion; no toca cifras, contrastes ni tamanos del efecto."
+    },
+    {
+      "id": "O-17",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0437",
+        "pagina_pdf": 38,
+        "folio": 23,
+        "seccion": "3.1.1 Sistema web, delimitacion metodologica"
+      },
+      "ancla_busqueda": "marcos ingenieriles de construcción y aseguramiento de calidad que garantizan",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "sino marcos ingenieriles de construcción y aseguramiento de calidad que garantizan la integridad funcional y operativa del artefacto antes de contrastar su efecto",
+      "reemplazo": "sino marcos ingenieriles de construcción y aseguramiento de calidad que sustentan la integridad funcional y operativa del artefacto antes de contrastar su efecto",
+      "motivo": "Mismo criterio que O-02 y O-03: una metodologia de desarrollo y una norma de evaluacion aportan evidencia y respaldo, no una garantia de integridad. El parrafo tiene funcion delimitadora (separar el marco ingenieril de las dimensiones de la variable dependiente) y esa funcion se conserva intacta.",
+      "fuente_apoyo": "Apartados 3.1.1.3 y 3.3.4.3, y Tabla 28.",
+      "riesgo_de_aplicacion": "Nulo. Cambio de una palabra."
+    },
+    {
+      "id": "O-18",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P2708",
+        "pagina_pdf": 128,
+        "folio": 113,
+        "seccion": "Nota de la Tabla 41"
+      },
+      "ancla_busqueda": "garantizan que no existe inflación de falsos positivos",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "P-valores ajustados con corrección Holm-Bonferroni garantizan que no existe inflación de falsos positivos en los contrastes múltiples.",
+      "reemplazo": "P-valores ajustados con corrección Holm-Bonferroni reducen el riesgo de inflación de falsos positivos en los contrastes múltiples.",
+      "motivo": "La correccion de Holm controla la tasa de error por familia; no elimina la posibilidad de falsos positivos. La nota afirma una garantia absoluta sobre un procedimiento estadistico que por definicion opera con probabilidades.",
+      "fuente_apoyo": "Holm (1979), referenciado en el informe; apartado 5.4, que describe la correccion secuencial escalonada.",
+      "riesgo_de_aplicacion": "Moderado-bajo. Es una nota de tabla: conservar 9.5 pt, cursiva de 'Nota.' e interlineado sencillo, y no alterar el resto de la nota."
+    },
+    {
+      "id": "O-19",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0264",
+        "pagina_pdf": 13,
+        "folio": "preliminar (romano por confirmar en la pagina impresa)",
+        "seccion": "Resumen"
+      },
+      "ancla_busqueda": "los cuales serán sometidos a validación de contenido por juicio de tres expertos",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA, conforme al procedimiento descrito en el Capítulo IV.",
+      "reemplazo": "cuyo proceso de validación de contenido por juicio de tres expertos de la EPIS-UNAJMA se describe en el Capítulo IV.",
+      "motivo": "Anuncia en futuro un tramite que el informe ya tramita en el Capitulo IV; el resumen de un informe final no puede quedar redactado en prospectivo. El reemplazo afirma unicamente que el procedimiento se describe en el Capitulo IV, sin declarar que se ejecuto, de modo que no convierte en hecho ningun procedimiento no acreditado. No altera el conteo de palabras por encima del margen tolerable ni ninguna cifra.",
+      "fuente_apoyo": "Capitulo IV, apartados 4.10 y 4.11, que describen los instrumentos y su proceso de validacion.",
+      "riesgo_de_aplicacion": "Bajo. El reemplazo es mas breve que el original, por lo que no compromete el limite de 250 palabras del resumen, cuyo conteo exacto se reporta por separado en el hallazgo G-02."
+    },
+    {
+      "id": "O-20",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0276",
+        "pagina_pdf": 17,
+        "folio": 2,
+        "seccion": "Introduccion"
+      },
+      "ancla_busqueda": "los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme al procedimiento descrito en el Capítulo IV",
+      "reemplazo": "cuyo proceso de validación de contenido por juicio de tres expertos de la EPIS-UNAJMA se describe en el Capítulo IV",
+      "motivo": "Misma razon que O-19 y el mismo criterio de no conversion: se elimina el futuro sin afirmar ejecucion. Notese que el original no lleva coma antes de 'conforme', de modo que el ancla debe localizarse con la cadena exacta.",
+      "fuente_apoyo": "Capitulo IV, apartados 4.10 y 4.11.",
+      "riesgo_de_aplicacion": "Nulo. La oracion continua describiendo la prueba de Shapiro-Wilk y de Wilcoxon, que no se modifica."
+    },
+    {
+      "id": "O-21",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0302",
+        "pagina_pdf": 23,
+        "folio": 8,
+        "seccion": "1.3.3 Justificacion metodologica"
+      },
+      "ancla_busqueda": "cuya estimación se realizará mediante juicio de tres expertos",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "(a) la validez de contenido, cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación para ambos coeficientes;",
+      "reemplazo": "(a) la validez de contenido por juicio de tres expertos, a partir del modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), con 0.80 como criterio de aceptación adoptado en este estudio para ambos coeficientes;",
+      "motivo": "Tres defectos en una sola clausula. Primero, el futuro 'se realizara' dentro de una justificacion retrospectiva. Segundo, 'a los que esa fuente no asocia un umbral' discute con la fuente dentro del texto en lugar de declarar el criterio aplicado, y obliga al lector a reconstruir una controversia que no le corresponde. Tercero, el criterio de 0.80 se anuncia dos veces seguidas. El reemplazo declara el criterio adoptado, atribuye correctamente el modelo a Tristan-Lopez y conserva la referencia con su pagina.",
+      "fuente_apoyo": "Tristán-López (2008), ya citado en el informe y en la lista de referencias; apartado 4.11, criterios de validacion.",
+      "riesgo_de_aplicacion": "Bajo. Se sustituye una clausula entre parentesis y punto y coma; los incisos (b) y (c) del mismo parrafo no se tocan."
+    },
+    {
+      "id": "O-22",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0282",
+        "pagina_pdf": 18,
+        "folio": 3,
+        "seccion": "1.1 Descripcion de la realidad problematica"
+      },
+      "ancla_busqueda": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda, quienes demostraron que la operación de sistemas electrónicos de gestión logística incrementó la exactitud de los inventarios del 25% al 85% y aseguró una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "reemplazo": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda, quienes incrementaron la exactitud de los inventarios del 25% al 85%, y por Wasswa et al. (2023) en Uganda, quienes aseguraron una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "motivo": "La relativa plural 'quienes demostraron' atribuye las dos cifras a los dos estudios a la vez. Los apartados 2.1 del propio informe asignan el 25% a 85% a Kigenza (Ruanda) y el 90% de disponibilidad a Wasswa (Uganda, 19 hospitales regionales). El reemplazo separa las atribuciones sin introducir ningun dato nuevo: las dos cifras y los dos paises ya figuran en el parrafo y en los antecedentes.",
+      "fuente_apoyo": "Parrafos P0334 y P0337 del Capitulo II, donde cada cifra aparece atribuida a su estudio.",
+      "riesgo_de_aplicacion": "Nulo. No se agregan autores, anios ni cifras."
+    },
+    {
+      "id": "O-23",
+      "categoria": "editorial_con_refresco_de_indice",
+      "requiere_confirmacion_tesista": false,
+      "requiere_actualizacion_de_indice": true,
+      "ubicacion": {
+        "parrafo": "P2003",
+        "pagina_pdf": 99,
+        "folio": 84,
+        "seccion": "3.3.5 Encabezado de nivel 3"
+      },
+      "ancla_busqueda": "3.3.5. Fase V: Despliegue Físico y Puesta en Producción",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "3.3.5. Fase V: Despliegue Físico y Puesta en Producción",
+      "reemplazo": "3.3.5. Despliegue y puesta en operación",
+      "motivo": "El rotulo numera un despliegue como quinta fase de Extreme Programming, cuando el informe declara cuatro fases metodologicas en 3.3.1 a 3.3.4 y la nota de la Figura 11 ya califica el despliegue como actividad complementaria. Conservar la numeracion 3.3.5 mantiene intactas todas las remisiones y el esquema de encabezados, y suprime del rotulo la palabra 'Fase', que es la que crea la contradiccion. La denominacion 'Despliegue y puesta en operación' describe el contenido real del apartado: topologia de red, contenedores Docker, orquestacion y puesta en produccion. No se modifica ninguna otra linea del apartado ni de sus subapartados 3.3.5.1 y siguientes.",
+      "fuente_apoyo": "Encabezados 3.3.1 a 3.3.4 del mismo informe, Tabla 8 y nota de la Figura 11, que distinguen las fases de desarrollo de la actividad de despliegue.",
+      "riesgo_de_aplicacion": "Medio. Es un encabezado con estilo institucional: debe conservar nivel 3, Times New Roman 12 pt negrita, sin sangria y el mismo espaciado anterior y posterior. La entrada correspondiente del indice de contenido (linea de campo PAGEREF, hoy 'Fase V: Despliegue Físico y Puesta en Producción ... 84') no se edita a mano: se refresca el campo despues de aplicar la orden y se confirma que la pagina 84 se mantiene, dado que el rotulo nuevo es mas corto y no debe reflowar el cuerpo. Aplicar junto con el resto de rotulos en una sola pasada de refresco, coordinada por el maquetador."
+    },
+    {
+      "id": "O-24",
+      "categoria": "editorial_segura",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "parrafo": "P0267",
+        "pagina_pdf": 14,
+        "folio": "preliminar (romano por confirmar en la pagina impresa)",
+        "seccion": "Abstract"
+      },
+      "ancla_busqueda": "all of which will undergo content validation by a panel of three expert judges",
+      "ocurrencias_esperadas": 1,
+      "texto_original": "and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, all of which will undergo content validation by a panel of three expert judges from EPIS-UNAJMA, following the procedure described in Chapter IV.",
+      "reemplazo": "and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, whose content validation by a panel of three expert judges from EPIS-UNAJMA is described in Chapter IV.",
+      "motivo": "Paralelo obligado de O-19 en la version inglesa del resumen. El abstract declara que los instrumentos 'were designed' y, en la misma oracion, que 'will undergo' validacion: el diseno se afirma como hecho consumado y la validacion como evento futuro, lo que produce una contradiccion temporal interna. El reemplazo convierte la clausula en una remision al Capitulo IV, igual que en el Resumen en espanol, sin afirmar que la validacion se ejecuto ni que sus resultados existan. No se toca ninguna cifra, sigla ni la estructura del abstract.",
+      "fuente_apoyo": "Capitulo IV del propio informe; parrafo P0264 (Resumen), que recibe la orden O-19 con identica solucion en espanol.",
+      "riesgo_de_aplicacion": "Nulo. Cambio de una clausula en el mismo parrafo; conservar el idioma ingles y el registro academico del abstract."
+    }
+  ],
+
+  "verificacion_posterior_sugerida": {
+    "paso_1": "Localizar cada ancla en el DOCX y confirmar una unica ocurrencia antes de aplicar.",
+    "paso_2": "Aplicar en un ensayo y comprobar que el numero de parrafos y de tablas no varia (827 parrafos y 59 tablas en v19).",
+    "paso_3": "Verificar que las dos notas de tabla conservan cuerpo 9.5 pt, cursiva inicial e interlineado sencillo.",
+    "paso_4": "Reexportar el PDF y confirmar que las paginas 13, 14, 18, 23, 38, 60, 71, 94, 96, 98, 100, 102, 117, 120, 124, 125, 128, 131, 132 y 133 no ganan ni pierden linea de prosa por desborde.",
+    "paso_5": "O-23 es la unica orden que toca un rotulo: aplicarla y despues refrescar el indice de contenido y los campos PAGEREF en una sola pasada, comprobando que el apartado 3.3.5 permanece en la pagina 84 y que 3.3.5.1 conserva su numeracion. El resto de las ordenes no modifica rotulos de tabla, de figura ni encabezados y no exige refresco.",
+    "paso_6": "Aplicar O-19, O-20 y O-24 en una sola pasada y comprobar que el Resumen y el Abstract conservan una pagina cada uno y que sus cierres no se trasladan a la pagina siguiente."
+  },
+
+  "no_incluidas_deliberadamente": [
+    {
+      "tema": "Rotulo '3.3.5. Fase V'",
+      "razon": "Dejo de estar excluida: el Director General autorizo el cambio de rotulo conservando la numeracion, y se emite como orden O-23 con la actualizacion de indice a cargo de otro agente. Se mantiene aqui solo como constancia de la decision."
+    },
+    {
+      "tema": "Cifra 'almacenes zonales (11 centros)' en la Tabla 3",
+      "razon": "Modifica una celda con cifra. Registrado como S-02 para verificacion del tesista."
+    },
+    {
+      "tema": "Escala de 'Nivel de Conformidad' en la Tabla 28",
+      "razon": "Exigiria introducir un criterio no documentado. Registrado como S-03."
+    },
+    {
+      "tema": "Tiempos verbales de 4.3, 4.5 y 4.8",
+      "razon": "Convertir por via editorial un procedimiento no acreditado en hecho contraviene la restriccion expresa de la comision. Registrado como S-04 y S-05."
+    },
+    {
+      "tema": "'Relaciones Relacionales' en el cuerpo y en el rotulo de la Figura 21",
+      "razon": "El cuerpo y el rotulo deben cambiar juntos y el indice de figuras exige refresco de campos; aplicarlo solo en el cuerpo produciria divergencia. Registrado como observacion sin orden."
+    },
+    {
+      "tema": "Tiempos verbales en futuro del apartado 4.11 (P2238, P2239, P2240)",
+      "razon": "Seccion completa redactada en futuro ('se estableceran', 'se asegurara', 'se garantizara', 'se determinara'). Convertirla exigiria acreditar la ejecucion de la calibracion interobservador y de la doble verificacion, que el informe no documenta. Registrado como hallazgo sustantivo G-07 para decision del tesista."
+    },
+    {
+      "tema": "Advertencia de datos provisionales del Capitulo V (P2300)",
+      "razon": "Declara que las tablas y contrastes del capitulo corresponden a datos de prueba y que deben sustituirse antes de la sustentacion. Suprimirla o reformularla alteraria la salvaguarda de probidad; se registra como G-01 con tres alternativas de redaccion para decision del tesista."
+    },
+    {
+      "tema": "Titulo de Wasswa et al. (2023) y anio de Astuhuaman Perez y Baltazar Maza",
+      "razon": "El cuerpo y la nota de figura citan un titulo distinto del registrado en la lista de referencias, y la referencia de Astuhuaman consigna 2023 con un titulo que declara 2024. Ninguna de las dos discrepancias puede resolverse sin consultar la fuente primaria. Registrado como G-03 y G-04."
+    },
+    {
+      "tema": "Correspondencia de la cuarta recomendacion con la dimension 3",
+      "razon": "Las recomendaciones cierran con una orientada a lineas de investigacion y no con una de capacitacion y adopcion TAM, que seria la contraparte natural de la dimension 3. Redactarla exige decidir su contenido con el tesista. Registrado como G-05."
+    }
+  ]
+}

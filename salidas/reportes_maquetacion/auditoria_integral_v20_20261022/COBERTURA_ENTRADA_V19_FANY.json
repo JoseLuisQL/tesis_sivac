@@ -1,0 +1,33 @@
+{
+  "fecha_verificacion": "2026-10-22",
+  "responsable_consolidacion": "director-general",
+  "alcance": "Lectura de las fuentes de entrada, no de la futura v20 ni aprobación académica humana.",
+  "informe": {
+    "archivo": "salidas/documentos/informe_final_v19.pdf",
+    "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+    "paginas": 158,
+    "registros_por_pagina": 158,
+    "paginas_sin_registro": [],
+    "paginas_repetidas_en_tramos": []
+  },
+  "modelo": {
+    "archivo": "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+    "sha256": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+    "paginas": 106,
+    "registros_por_pagina": 106,
+    "paginas_sin_registro": [],
+    "paginas_repetidas_en_tramos": []
+  },
+  "registros_fuente": [
+    {"archivo": "auditoria_tramo_01_053.json", "agente": "analista-documental", "informe_paginas": [1, 53], "informe_registros": 53, "modelo_paginas": [1, 36], "modelo_registros": 36, "metodo_declarado": "Lectura visual a página completa; escaneos administrativos de Fany identificados sin capa de texto."},
+    {"archivo": "auditoria_tramo_054_106_redaccion.json", "agente": "redactor-academico", "informe_paginas": [54, 106], "informe_registros": 53, "modelo_paginas": [37, 72], "modelo_registros": 36, "metodo_declarado": "Lectura visual directa por lotes de páginas, sin miniaturas ni muestreo; prosa cotejada con inventario de v19."},
+    {"archivo": "auditoria_tramo_107_158_integridad.json", "agente": "verificador-integridad", "informe_paginas": [107, 158], "informe_registros": 52, "modelo_paginas": [73, 106], "modelo_registros": 34, "metodo_declarado": "Lectura visual por página; extracción automática utilizada solo para anclajes y controles transversales."}
+  ],
+  "comprobacion_de_cobertura": "Se extrajeron los números físicos de cada registro JSON y se comprobó que su unión ordenada es exactamente 1-158 y 1-106, sin huecos ni solapamientos.",
+  "revisiones_complementarias": {
+    "prosa_global": "revision_prosa_global_v19.json y redaccion_v20_ordenes.json",
+    "preflight_mecanico": "../preflight_maquetacion_v20.json",
+    "metodo_de_preflight": "Métricas nativas y muestra focalizada; no se suma como una nueva lectura visual completa."
+  },
+  "limite": "Las métricas de cuerpo 827 párrafos y las del inventario 939 de cuerpo/3722 totales usan universos distintos (SDT, tablas y párrafos descendientes); los anclajes se validan por texto y estructura, no se intercambian índices."
+}

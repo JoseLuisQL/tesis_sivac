@@ -1,0 +1,30 @@
+P139 :: [Pendiente] :: s de campo se encuentran en fase de consolidación post-test [Pendiente].
+P145 :: [Pendiente] :: ariynin), tukupay yupaykunaqa postest wichq’aypim suyachkan [Pendiente]. 
+P290 :: DEC-007 :: 25) y Luo et al. (2024) conforme a la decisión metodológica DEC-007.
+P351 :: DEC-007 :: En estricta observancia de la decisión metodológica DEC-007, cada requerimiento funcional e historia de usuario se dise
+P353 :: DEC-007 :: Estructura taxonómica inmutable aprobada en la decisión DEC-007 y en la matriz de operacionalización institucional de la UN
+P646 :: DEC-007 :: ADVERTENCIA METODOLÓGICA Y SALVAGUARDA DEONTOLÓGICA (DEC-007 / REGLA CANÓNICA 01): En estricta observancia del principio
+P646 :: REGLA CAN :: ERTENCIA METODOLÓGICA Y SALVAGUARDA DEONTOLÓGICA (DEC-007 / REGLA CANÓNICA 01): En estricta observancia del principio de probidad
+P646 :: DEC-007 :: a, transparencia cuantitativa y los mandatos de la Decisión DEC-007, se hace constar formalmente que los resultados, matrices d
+P646 :: datos/recolectados ::  datos de prueba preconfigurado en el repositorio oficial ('datos/recolectados/'), rotulado explícitamente como 'DATOS DE PRUEBA – REEMPLA
+P646 :: DATOS DE PRUEBA :: cial ('datos/recolectados/'), rotulado explícitamente como 'DATOS DE PRUEBA – REEMPLAZAR (DEC-007)'. La arquitectura bioestadística des
+P646 :: DEC-007 :: rotulado explícitamente como 'DATOS DE PRUEBA – REEMPLAZAR (DEC-007)'. La arquitectura bioestadística desarrollada en Python pe
+P646 :: scripts/estadistica :: totalidad de tablas y figuras con un único comando ('python scripts/estadistica/analisis_estadistico_sivac.py') al momento en que se cargue
+P672 :: DEC-019 :: Nota. Evaluado mediante el Cuestionario TAM Modalidad A (DEC-019). Escala Likert de 1 a 5. Rango de puntaje AP y UP: 4 a 20 
+P769 :: DEC-007 :: ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007)
+P772 :: DEC-007 :: Nota. Matriz de consistencia metodológica aprobada según DEC-007. UNAJMA (2026).
+P773 :: DEC-007 :: ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)
+P776 :: DEC-007 :: Nota. Operacionalización oficial fijada por la Decisión DEC-007. UNAJMA (2026).
+P778 :: DEC-014 :: En cumplimiento de las decisiones DEC-014 y DEC-016, se presentan los tres (3) formatos en blanco de 
+P778 :: DEC-016 :: En cumplimiento de las decisiones DEC-014 y DEC-016, se presentan los tres (3) formatos en blanco de validación
+P778 :: [Por completar :: ítems). Los coeficientes V de Aiken e IVC se consignan como [Por completar por el juez] y la aplicabilidad permanece sin dictamen hast
+T6 F0 C2 :: DEC-007 :: Dimensión de la Variable Dependiente (DEC-007)
+T34 F3 C4 :: [Pendiente] :: [Pendiente]
+T34 F3 C5 :: [Pendiente] :: [Pendiente]
+T34 F3 C6 :: [Pendiente] :: [Pendiente]
+T46 F4 C1 :: [Por completar :: V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, 
+T46 F4 C1 :: [Por completar :: ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]
+T47 F4 C1 :: [Por completar :: V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, 
+T47 F4 C1 :: [Por completar :: ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]
+T48 F4 C1 :: [Por completar :: V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, 
+T48 F4 C1 :: [Por completar :: ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]

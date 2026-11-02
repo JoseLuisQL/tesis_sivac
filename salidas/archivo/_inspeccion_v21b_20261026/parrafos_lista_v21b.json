@@ -1,0 +1,593 @@
+[
+ {
+  "i": 12,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "1. La tesis titulada: “APLICACIÓN DEL SISTEMA ‘SIVAC’ PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II”, es obra de mi exclusiva autoría intelectual, bajo la asesoría y dirección metodológica de mi Asesora de Tesis."
+ },
+ {
+  "i": 13,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "2. No contiene plagio, fraude, colusión, copia literal no autorizada ni apropiación de ideas ajenas. Toda cita, tabla, algoritmo, figura o extracto de fuentes científicas nacionales e internacionales ha sido debidamente referenciado y citado conforme a las normas de estilo de la American Psychological Association (APA 7.ª edición)."
+ },
+ {
+  "i": 14,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "3. No contiene invención, falsificación ni alteración de datos empíricos de campo; las mediciones del pretest y postest se sustentan exclusivamente en registros reales y observaciones directas en los centros de acopio de la Dirección de Salud Apurímac II."
+ },
+ {
+  "i": 15,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "4. No ha sido presentada previa ni simultáneamente ante ninguna otra universidad, instituto superior ni entidad académica para la obtención de grado académico, título profesional o certificación técnica alguna."
+ },
+ {
+  "i": 16,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "5. Asumo plenamente la responsabilidad civil, penal, ética y administrativa en caso de comprobarse cualquier falsedad o infracción a la Ley sobre el Derecho de Autor (Decreto Legislativo N.° 822) y al Reglamento de Grados y Títulos de la UNAJMA."
+ },
+ {
+  "i": 168,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• ¿En qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?"
+ },
+ {
+  "i": 169,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• ¿En qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?"
+ },
+ {
+  "i": 170,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• ¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?"
+ },
+ {
+  "i": 186,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• Determinar en qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
+ },
+ {
+  "i": 187,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• Determinar en qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
+ },
+ {
+  "i": 188,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• Determinar en qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
+ },
+ {
+  "i": 194,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• H1: La aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en la reducción del tiempo de registro de movimientos y del tiempo de emisión de vales de salida."
+ },
+ {
+  "i": 195,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• H2: La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento del porcentaje de registros sin discrepancias y de la concordancia entre la cantidad programada y la cantidad entregada."
+ },
+ {
+  "i": 196,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• H3: La aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada en el incremento de la aceptación del proceso y de la utilidad percibida."
+ },
+ {
+  "i": 563,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• GE: Grupo experimental único conformado por la totalidad censal del personal operativo de inmunizaciones y cadena de frío de la Dirección de Salud Apurímac II (14 trabajadores)."
+ },
+ {
+  "i": 564,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• O₁: Medición previa (pretest) de los seis indicadores de la gestión de movimientos mensuales de vacunas bajo el procedimiento tradicional manual (libros foliados, cuadernos de cargo y hojas de cálculo aisladas) a lo largo de una ventana de observación estandarizada de 30 días calendario."
+ },
+ {
+  "i": 565,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• X: Intervención tecnológica experimental, conformada por el despliegue del sistema web SIVAC, inducción técnica estandarizada y periodo de estabilización operativa."
+ },
+ {
+  "i": 566,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "• O₂: Medición posterior (postest) de los mismos seis indicadores de la gestión de movimientos mensuales de vacunas ejecutada mediante el sistema web SIVAC a lo largo de una ventana simétrica de 30 días calendario."
+ },
+ {
+  "i": 611,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "a) Observación directa cronometrada: Se aplicó para medir in situ y de manera no intrusiva la duración exacta de las operaciones de registro de movimientos y de emisión de vales de salida ejecutadas por los catorce operadores tanto en el procedimiento manual como en el sistema web SIVAC."
+ },
+ {
+  "i": 612,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "b) Análisis documental (auditoría de registros): Se utilizó para examinar de forma sistemática y retrospectiva los asientos del kardex físico, las solicitudes de requerimiento y las guías de remisión en el pretest, contrastándolos frente a los reportes transaccionales y comprobantes digitales generados en el postest."
+ },
+ {
+  "i": 613,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "left": "720",
+   "hanging": "360"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "c) Encuesta psicométrica: Se administró al personal censal de inmunizaciones con el propósito de recabar su valoración estructurada sobre la aceptación del proceso y la utilidad percibida en ambas etapas del estudio, fundamentándose en el Modelo de Aceptación Tecnológica (Davis, 1989)."
+ },
+ {
+  "i": 682,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  1. Tiempo de registro (Treg): W = 0.979, p = .966 (p > .05)."
+ },
+ {
+  "i": 683,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  2. Tiempo de emisión de vales (Tvale): W = 0.933, p = .331 (p > .05)."
+ },
+ {
+  "i": 684,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  3. Registros sin discrepancias (RSD): W = 0.958, p = .696 (p > .05)."
+ },
+ {
+  "i": 685,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  4. Concordancia programada vs entregada (CPE): W = 0.953, p = .614 (p > .05)."
+ },
+ {
+  "i": 686,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  5. Aceptación del proceso (AP): W = 0.909, p = .153 (p > .05)."
+ },
+ {
+  "i": 687,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  6. Utilidad percibida (UP): W = 0.876, p = .052 (p > .05)."
+ },
+ {
+  "i": 688,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  7. Puntaje global TAM: W = 0.955, p = .646 (p > .05)."
+ },
+ {
+  "i": 695,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "A. Planteamiento de hipótesis estadísticas:"
+ },
+ {
+  "i": 696,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis nula (H0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (Treg) ni de emisión de comprobantes de salida (Tvale) en el personal de inmunizaciones de la DISA Apurímac II (mudiff,Treg ≥ 0 y mudiff,Tvale ≥ 0)."
+ },
+ {
+  "i": 697,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis alterna (H1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (Treg) y de emisión de comprobantes de salida (Tvale) en el personal de inmunizaciones de la DISA Apurímac II (mudiff,Treg < 0 y mudiff,Tvale < 0)."
+ },
+ {
+  "i": 698,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "B. Resultados inferenciales:"
+ },
+ {
+  "i": 701,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "C. Decisión bioestadística:"
+ },
+ {
+  "i": 706,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "A. Planteamiento de hipótesis estadísticas:"
+ },
+ {
+  "i": 707,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis nula (H0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mudiff,RSD ≤ 0 y mudiff,CPE ≤ 0)."
+ },
+ {
+  "i": 708,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis alterna (H1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mudiff,RSD > 0 y mudiff,CPE > 0)."
+ },
+ {
+  "i": 709,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "B. Resultados inferenciales:"
+ },
+ {
+  "i": 712,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "C. Decisión bioestadística:"
+ },
+ {
+  "i": 717,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "A. Planteamiento de hipótesis estadísticas:"
+ },
+ {
+  "i": 718,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis nula (H0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mudiff,AP ≤ 0 y mudiff,UP ≤ 0)."
+ },
+ {
+  "i": 719,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis alterna (H1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mudiff,AP > 0 y mudiff,UP > 0)."
+ },
+ {
+  "i": 720,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "B. Resultados inferenciales:"
+ },
+ {
+  "i": 724,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "C. Decisión bioestadística:"
+ },
+ {
+  "i": 729,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "A. Planteamiento de hipótesis estadísticas:"
+ },
+ {
+  "i": 730,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis nula general (H0): La aplicación del sistema SIVAC no mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
+ },
+ {
+  "i": 731,
+  "style": "Normal",
+  "jc": "left",
+  "ind": {
+   "firstLine": "0",
+   "left": "0"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "  - Hipótesis alterna general (HG): La aplicación del sistema SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II."
+ },
+ {
+  "i": 732,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "B. Regla de decisión multivariada conjunta:"
+ },
+ {
+  "i": 734,
+  "style": "Normal",
+  "jc": "both",
+  "ind": {
+   "firstLine": "720"
+  },
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "C. Decisión y conclusión general:"
+ },
+ {
+  "i": 829,
+  "style": "Normal",
+  "jc": null,
+  "ind": {},
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "1. Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos (Treg y Tvale)."
+ },
+ {
+  "i": 830,
+  "style": "Normal",
+  "jc": null,
+  "ind": {},
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "2. Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes y Kardex (RSD y CPE)."
+ },
+ {
+  "i": 831,
+  "style": "Normal",
+  "jc": null,
+  "ind": {},
+  "tabs": [],
+  "n_tabs": 0,
+  "texto": "3. Instrumento N.° 03: Cuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A: AP y UP)."
+ }
+]

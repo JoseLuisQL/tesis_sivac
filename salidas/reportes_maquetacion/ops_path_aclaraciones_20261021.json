@@ -1,0 +1,335 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_auditado": "salidas/documentos/informe_final_v16.docx",
+    "texto_auditado": "salidas/reportes_maquetacion/v16_texto_por_pagina.md",
+    "fecha_emision": "2026-10-21",
+    "agente": "investigador-bibliografico",
+    "squad": "Squad A - Inteligencia Bibliografica y Evidencia",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Reconciliar la cita OPS/PATH del cuerpo con la obra de la lista de referencias, distinguiendo año de edición, depósito institucional, traducción y URL, sin asumir el año por dictámenes internos previos.",
+    "alcance": "Las cinco ocurrencias del sintagma en el texto de la v16 (cuatro citas en el cuerpo y una entrada en la lista de referencias). No se auditan otras referencias.",
+    "insumos_locales_consultados": [
+      "salidas/reportes_maquetacion/v16_texto_por_pagina.md",
+      "salidas/reportes_maquetacion/correcciones_bibliograficas_v14.json",
+      "salidas/reportes_maquetacion/pendientes_bibliograficos_v12.json",
+      "salidas/reportes_maquetacion/aplicacion_ordenes_v16.json",
+      "salidas/reportes_maquetacion/_reporte_ensayo_v16.json",
+      "salidas/reportes_maquetacion/_ops_q.json (volcado local de la API DSpace de IRIS PAHO)",
+      "salidas/reportes_maquetacion/auditoria_referencias_v09.md",
+      "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/CATALOGO_MAESTRO_FUENTES_ZOTERO_SIVAC.md",
+      "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/REFERENCIAS_SIVAC.md",
+      "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/indices_pdf/content.idx.json",
+      "C:/MisInvestigaciones/obsidian_vault/08_SISTEMA_Y_AGENTES/handoffs/2026-10-07_guardian-consistencia_dictamen_bases_teoricas.md"
+    ]
+  },
+
+  "titulo_y_cita_literales_v16": {
+    "entrada_en_lista_de_referencias": {
+      "pagina_fisica": 141,
+      "pagina_impresa": 125,
+      "indice_docx_declarado_en_expedientes_previos": 765,
+      "texto_literal": "Organización Panamericana de la Salud, y PATH. (2019). Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. https://iris.paho.org/handle/10665.2/50482",
+      "ancla_exacta": "Organización Panamericana de la Salud, y PATH. (2019).",
+      "estado": "conforme_con_la_obra_verificada"
+    },
+    "citas_en_el_cuerpo": [
+      {
+        "pagina_fisica": 19,
+        "pagina_impresa": 3,
+        "seccion": "CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN - 1.1. Descripción de la realidad problemática",
+        "texto_literal": "Las vacunas constituyen preparados biológicos termolábiles cuya potencia inmunogénica depende tanto de la preservación ininterrumpida de la cadena de frío entre +2 °C y +8 °C como de la exactitud y velocidad del flujo de información logística que respalda su recepción, almacenamiento, distribución y despacho (Organización Panamericana de la Salud [OPS] y PATH, 2020; Brooks et al., 2024).",
+        "ancla_exacta": "Salud [OPS] y PATH, 2020",
+        "anio_declarado": 2020,
+        "estado": "discrepante"
+      },
+      {
+        "pagina_fisica": 19,
+        "pagina_impresa": 3,
+        "seccion": "CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN - 1.1. Descripción de la realidad problemática",
+        "texto_literal": "Sin embargo, en numerosos sistemas de salud de ingresos bajos y medianos persiste el uso de formatos manuales en soporte de papel y hojas de cálculo desconectadas, lo cual fragmenta la trazabilidad de los lotes, retrasa la consolidación de saldos y dificulta la toma de decisiones oportunas ante emergencias sanitarias (Organización Panamericana de la Salud y PATH, 2020).",
+        "ancla_exacta": "Salud y PATH, 2020).",
+        "anio_declarado": 2020,
+        "estado": "discrepante"
+      },
+      {
+        "pagina_fisica": 46,
+        "pagina_impresa": 30,
+        "seccion": "CAPÍTULO III: MARCO TEÓRICO - 3.1.2.2. Sistemas electrónicos de información de gestión logística (e-LMIS) y control FEFO",
+        "texto_literal": "Los sistemas electrónicos de información de gestión logística (e-LMIS, por sus siglas en inglés) son plataformas digitales especializadas que automatizan la captura, consolidación y seguimiento de los movimientos de suministros médicos y biológicos a lo largo de las redes de salud (Organización Panamericana de la Salud y PATH, 2019; Wasswa et al., 2023).",
+        "ancla_exacta": "(Organización Panamericana de la Salud y PATH, 2019; Wasswa et al., 2023)",
+        "anio_declarado": 2019,
+        "estado": "conforme",
+        "nota": "El ancla no es única: se repite literalmente en la página física 55. No requiere acción."
+      },
+      {
+        "pagina_fisica": 55,
+        "pagina_impresa": 39,
+        "seccion": "CAPÍTULO III: MARCO TEÓRICO - 3.2.17. Sistema electrónico de información de gestión logística (e-LMIS)",
+        "texto_literal": "Aplicación informática centralizada que digitaliza el ciclo de suministro sanitario, integrando la programación de requerimientos, el control de inventarios por lotes, las alertas de caducidad y la trazabilidad de los despachos entre almacenes y establecimientos de salud (Organización Panamericana de la Salud y PATH, 2019; Wasswa et al., 2023).",
+        "ancla_exacta": "(Organización Panamericana de la Salud y PATH, 2019; Wasswa et al., 2023)",
+        "anio_declarado": 2019,
+        "estado": "conforme",
+        "nota": "El ancla no es única: se repite literalmente en la página física 46. No requiere acción."
+      }
+    ],
+    "recuento": {
+      "ocurrencias_totales": 5,
+      "citas_en_cuerpo": 4,
+      "entradas_en_lista": 1,
+      "citas_con_2020": 2,
+      "citas_con_2019": 2,
+      "entradas_con_2019": 1,
+      "url_erronea_53120_en_v16": 0
+    }
+  },
+
+  "fuente_que_respalda": {
+    "obra_correcta": {
+      "titulo_es": "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos",
+      "titulo_en": "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+      "autores_corporativos": ["Organización Panamericana de la Salud (PAHO)", "PATH"],
+      "anio_de_edicion": 2019,
+      "editorial": "PAHO",
+      "ciudades_de_publicacion": "Seattle: PATH; Washington, DC: OPS",
+      "tipo": "Publications (informe tecnico)",
+      "idiomas_del_mismo_deposito": ["en", "es", "fr"],
+      "isbn": {
+        "ingles": "978-92-75-32061-7",
+        "espanol": "978-92-75-22061-0",
+        "frances": "978-92-75-12061-3"
+      },
+      "deposito": {
+        "repositorio": "IRIS PAHO (DSpace)",
+        "handle": "10665.2/50482",
+        "url_canonica": "https://iris.paho.org/handle/10665.2/50482",
+        "uuid_item": "ee16da9a-85e3-425c-9707-0987c40fd538",
+        "fecha_de_ingreso": 2019,
+        "ultima_modificacion_registrada": "2021-03-11T04:36:47.311+00:00",
+        "estado": "inArchive=true; discoverable=true; withdrawn=false",
+        "derechos": "CC BY-SA 4.0"
+      },
+      "doi": null,
+      "nota_doi": "La obra no tiene DOI. No debe asignarsele el DOI 10.26633/RPSP.2020.141, que pertenece a un articulo ajeno."
+    },
+    "metadatos_primarios": {
+      "fuente_del_volcado": "salidas/reportes_maquetacion/_ops_q.json (respuesta cruda de https://iris.paho.org/server/api/discover/search/objects?query=realist%20review%20immunization%20data)",
+      "campos_citados_literalmente": {
+        "dc.title (es_ES, place 2)": "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos",
+        "dc.date.issued": "2019",
+        "dc.date.accessioned": "2019",
+        "dc.date.available": "2019",
+        "dc.contributor": "PATH",
+        "dc.contributor.corporatename": "Pan American Health Organization",
+        "dc.publisher": "PAHO",
+        "dc.identifier.citation (es_ES)": "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. Seattle: PATH; Washington, DC: OPS; 2019.",
+        "dc.identifier.uri": "https://iris.paho.org/handle/10665.2/50482",
+        "dc.language.iso": "en; es; fr",
+        "dc.type": "Publications"
+      },
+      "corroboracion_independiente": {
+        "archivo": "salidas/reportes_maquetacion/pendientes_bibliograficos_v12.json",
+        "evidencia": [
+          "2026-10-21. El handle correcto 10665.2/50482 resuelve con HTTP 200 a https://iris.paho.org/items/ee16da9a-85e3-425c-9707-0987c40fd538.",
+          "2026-10-21. Metadatos del item 50482: titulo espanol, anio 2019, editorial PAHO, cita 'Seattle: PATH; Washington, DC: OPS; 2019', sin DOI."
+        ],
+        "corroboracion_remitida_por_el_director_general": {
+          "fecha": "2026-10-21",
+          "consulta_zotero_mcp": {
+            "item": "6VVKK2MV",
+            "coleccion": "4XAQ6D3D",
+            "titulo": "Datos de inmunización: Evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización",
+            "creador": "OPS/PATH (institucional unico)",
+            "date": "2020",
+            "url": "vacia",
+            "adjuntos": "ninguno",
+            "valor_probatorio": "Nulo respecto al anio. Es un metadato de captura manual antigua, sin URL ni adjunto, que por si mismo no acredita fecha de edicion. No refuta los campos dc.date del deposito IRIS."
+          },
+          "consulta_iris_via_firecrawl_you": {
+            "resultado": "El handle 10665.2/50482 devuelve solo banner de cookies en Firecrawl y You.com; la interfaz no es raspable.",
+            "consecuencia": "La via valida para los metadatos es la API DSpace ya volcada en _ops_q.json, no el raspado de la pagina."
+          },
+          "pdf_oficial_path_leido": {
+            "url": "https://media.path.org/documents/PATH_IDEA_Precis_Spanish_R1.pdf",
+            "via": "You.com contents, lectura integra remitida por el Director General el 2026-10-21",
+            "naturaleza_documental": "RESUMEN de la publicacion (Precis), no el informe completo. No es paginable contra el informe depositado en IRIS.",
+            "evidencia_primaria_leida": [
+              "Ultima pagina, linea de derechos: '© PATH, Organización Panamericana de la Salud 2019'.",
+              "Ultima pagina, forma de cita propuesta: 'Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. Seattle: PATH; Washington, DC: OPS; 2019.'",
+              "Resultados > Uso de datos a nivel distrital: 'Las intervenciones del SIGL, en particular, mejoraron la gestión de las existencias de vacunas'; los resultados de disponibilidad precisan mejoras en gestión de existencias con SIGL y redes pares."
+            ],
+            "valor_probatorio": "Confirma de forma primaria el anio 2019 y la formula de cita institucional, coincidentes con los campos dc.date y dc.identifier.citation del item 50482. Refuerza la decision sin sustituirla: el registro IRIS sigue siendo la fuente del deposito y del handle.",
+            "limite_expreso": "No se extrapola la pagina 12 ni detalles de automatizacion de vales, que no aparecen en este resumen. Sus paginas no se trasladan al informe completo."
+          }
+        }
+      },
+      "conclusion_sobre_el_anio": "El anio de edicion de la obra es 2019. El propio registro institucional, en sus tres campos de fecha y en la cadena de cita de la edicion espanola, declara 2019. No existe en el deposito una edicion espanola con anio distinto: las versiones en, es y fr comparten el mismo item y la misma fecha."
+    },
+    "evidencia_de_contenido": {
+      "resumen_es_del_registro": "La calidad de los datos es una piedra angular del buen funcionamiento de los sistemas de salud. La información sólida y confiable permite una mejor asignación de recursos, una atención más específica, el desarrollo y la aplicación de políticas, y una Educación y formación en salud más efectivas. El llamado para mejorar la calidad y el uso de los datos ocupan un lugar prominente en varios planes de acción nacionales y en estrategias mundiales como el Plan de Acción Mundial sobre Vacunas. El objetivo del proyecto Datos de Inmunización: Evidencia para la Acción (IDEA) es identificar, revisar, sintetizar y diseminar lo que funciona para mejorar el uso de los datos sobre inmunización y por qué funciona.",
+      "resumen_en_del_registro": "Data quality is a cornerstone of well-functioning health systems... The goal of the Immunization Data: Evidence for Action (IDEA) project is to identify, review, synthesize, and disseminate what works to improve the use of immunization data and why it works.",
+      "que_respalda": [
+        "La centralidad de la calidad y del uso de los datos de inmunizacion en los sistemas de salud (sustenta el encuadre de las citas de las paginas fisicas 19, 46 y 55).",
+        "El caracter de revision realista de evidencia de paises de ingresos bajos y medianos (sustenta el alcance geografico de la afirmacion de la pagina fisica 19).",
+        "Lectura primaria del resumen oficial: 'Las intervenciones del SIGL, en particular, mejoraron la gestión de las existencias de vacunas'. Sustenta la idea de que los sistemas de información logística mejoran la gestión de existencias de vacunas, que es el núcleo de las citas de las páginas físicas 46 y 55. No sustenta la definición formal de e-LMIS ni sus cuatro funciones."
+      ],
+      "que_no_respalda_o_no_pudo_verificarse": [
+        "El rango termico +2 grados C a +8 grados C no figura en el resumen del registro ni en el resumen oficial leido. La fuente normativa del dato es la NTS N. 196-MINSA/DGIESP-2022, verificada en su PDF local: pagina impresa 10, columna 'CONSERVACIÓN DE LA VACUNA', valor '+ 2°C a +8°C'.",
+        "La definicion operativa de e-LMIS con sus cuatro funciones (programacion, lotes, alertas de caducidad, trazabilidad de despachos) no se verifica en el resumen; la carga probatoria de esas dos citas recae principalmente en Wasswa et al. (2023).",
+        "No se verifica en el resumen ningun detalle de automatizacion de vales o comprobantes de salida.",
+        "No fue posible verificar la paginacion del informe completo: el documento leido es el resumen Precis, no el informe depositado, y no existe copia local indexada de este ultimo (vease estado_del_pdf_local)."
+      ],
+      "localizadores_de_pagina": "Ninguno. El resumen Precis leido no es el informe depositado y sus paginas no son trasladables; no se propone ni se conserva numero de pagina mientras no se archive e indexe el informe completo."
+    },
+    "refutacion_del_anio_2020_y_de_la_url_53120": {
+      "handle_erroneo": "10665.2/53120",
+      "destino_real_segun_verificacion_registrada": "Item 'Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas', de Mayer-Foulkes, Serván-Mori y Nigenda, Revista Panamericana de Salud Pública, 2020;44:e141, DOI 10.26633/RPSP.2020.141.",
+      "naturaleza_del_error": "El handle 53120 no solo era intermitente (HTTP 502): apuntaba a un articulo ajeno. El anio 2020 pudo originarse en ese registro ajeno y no en la obra OPS/PATH.",
+      "origen_documental_del_desvio": "El handoff 2026-10-07_guardian-consistencia_dictamen_bases_teoricas.md, linea 19, ordeno 'corregir el anio de OPS y PATH a 2020' sin citar fuente primaria. Esa instruccion interna, no bibliografica, es el antecedente del 2020. El catalogo maestro consolido despues 2020 y el handle 53120 en su entrada 17.",
+      "estado_en_v16": "La URL 53120 ya no aparece en la v16 (cero ocurrencias). La lista de referencias ya usa 50482 y 2019."
+    },
+    "estado_del_pdf_local": {
+      "ruta_declarada_por_el_catalogo": "02-LITERATURA-ZOTERO/PDFs_SIVAC/content.pdf",
+      "ruta_real": "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/PDFs_articulos/PDFs_SIVAC/content.pdf",
+      "sha256": "aaf10b962582575d7c112f6ae5bd7cbfeead1b3e8e4e03e27b5e9ee7acec530b",
+      "identidad_real_del_archivo": "Tesis 'Implementación de un sistema de gestión documental (SISDATA) para la optimización de la gestión de documentos de la Municipalidad Distrital de Amarilis, Huánuco - 2021', Universidad Nacional Hermilio Valdizán, 151 paginas.",
+      "veredicto": "El PDF local atribuido a OPS/PATH en el catalogo maestro NO corresponde a la obra. No hay copia local del informe IDEA entre los 36 PDF de PDFs_SIVAC (verificado por listado e indices).",
+      "copia_oficial_leida": "https://media.path.org/documents/PATH_IDEA_Precis_Spanish_R1.pdf (leida integramente por el Director General el 2026-10-21). Es el RESUMEN Precis, no el informe completo; no sustituye al deposito IRIS ni habilita paginacion.",
+      "consecuencia": "La ficha bibliografica de la fuente carece de soporte documental local del informe completo y el catalogo declara un archivo falso. El resumen oficial ya fue leido y confirma el anio, pero no la paginacion del informe."
+    }
+  },
+
+  "decision": {
+    "anio_que_rige": 2019,
+    "obra_que_rige": "Organización Panamericana de la Salud y PATH. (2019). Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. https://iris.paho.org/handle/10665.2/50482",
+    "fundamento": "Metadatos primarios del deposito IRIS (dc.date.issued, dc.identifier.citation y dc.date.accessioned/available = 2019), corroborados por una comprobacion HTTP registrada el 2026-10-21. El 2020 no tiene respaldo en ningun registro de la obra y coincide con la fecha del articulo ajeno al que apuntaba el handle 53120.",
+    "no_se_adopta_2019_por_dictamen": "La decision no se apoya en el dictamen del verificador como autoridad, sino en los campos del registro institucional y en la cadena de cita de la edicion espanola, que se citan literalmente en este expediente.",
+    "corroboracion_externa_primaria": "La linea de derechos de la ultima pagina del resumen oficial leido ('© PATH, Organización Panamericana de la Salud 2019') y su forma de cita propuesta ('...Seattle: PATH; Washington, DC: OPS; 2019') confirman el anio 2019 de forma primaria. El registro IRIS sigue siendo la fuente del deposito y del handle.",
+    "estado_de_la_referencia_en_v16": "Correcta. No requiere orden de sustitucion.",
+    "estado_de_las_citas_en_v16": "Dos citas de la pagina fisica 19 conservan 2020 y deben pasar a 2019; la primera, ademas, concentra los dos defectos APA (sigla no reutilizada y orden no alfabetico). Las dos citas de las paginas fisicas 46 y 55 ya estan en 2019.",
+    "atribucion_termica": "El rango +2 a +8 grados C de la pagina fisica 19 no procede de OPS/PATH. Se propone atribuirlo a la NTS N. 196-MINSA/DGIESP-2022, ya citada en la lista y en la misma pagina, mediante una sustitucion condicionada que no se aplica por defecto."
+  },
+
+  "propuesta_apa7": {
+    "referencia_definitiva": "Organización Panamericana de la Salud, y PATH. (2019). Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. https://iris.paho.org/handle/10665.2/50482",
+    "cita_en_el_texto_primera_mencion": "(Brooks et al., 2024; Organización Panamericana de la Salud y PATH, 2019)",
+    "cita_en_el_texto_siguientes": "(Organización Panamericana de la Salud y PATH, 2019)",
+    "decisiones_de_estilo": [
+      "Se conserva el nombre corporativo completo en las cuatro citas y se suprime la definicion '[OPS]', que no se reutiliza en el resto del documento. Todas las menciones escriben 'Organización Panamericana de la Salud y PATH'.",
+      "Se omite editorial porque la Organizacion Panamericana de la Salud es autora y editora. No se trasladan a la referencia las ciudades 'Seattle' y 'Washington, DC', que APA 7 no exige desde la septima edicion.",
+      "No se agrega DOI: la obra no lo tiene. Se conserva el handle institucional como identificador persistente.",
+      "Se reproduce el titulo espanol tal como fue publicado, incluida la expresion 'paises bajos y medianos ingresos'. No debe 'corregirse' a 'paises de ingresos bajos y medianos': APA 7 reproduce el titulo publicado y el registro lo fija asi en su campo de titulo y en su cadena de cita.",
+      "No se agrega nota de traduccion. La tesis cita la version espanola depositada en el mismo item; el titulo espanol es el titulo publicado de esa version, no una traduccion del autor de la tesis.",
+      "No se asigna localizador de pagina a ninguna cita."
+    ]
+  },
+
+  "sustituciones": [
+    {
+      "indice_docx": null,
+      "ubicacion": "CUERPO - pagina fisica 19, pagina impresa 3, seccion 1.1, primer parrafo (cadena de frio y flujo de informacion)",
+      "ancla_original": "Organización Panamericana de la Salud [OPS] y PATH, 2020; Brooks et al., 2024",
+      "texto_nuevo": "Brooks et al., 2024; Organización Panamericana de la Salud y PATH, 2019",
+      "categoria": "cita",
+      "justificacion": "Orden unica que resuelve tres defectos del mismo parentesis: (a) anio 2020 por 2019, verificado; (b) sigla [OPS] definida y no reutilizada, que se retira; (c) orden alfabetico APA 7, con 'Brooks' antes de 'Organizacion'. El ancla incluye la sigla entre corchetes y el segundo autor, por lo que es unica en todo el documento. La sustitucion abarca solo el contenido del parentesis: los parentesis exteriores se conservan."
+    },
+    {
+      "indice_docx": null,
+      "ubicacion": "CUERPO - pagina fisica 19, pagina impresa 3, seccion 1.1, segundo parrafo (formatos manuales y trazabilidad)",
+      "ancla_original": "Salud y PATH, 2020).",
+      "texto_nuevo": "Salud y PATH, 2019).",
+      "categoria": "cita",
+      "justificacion": "Correccion de anio en la segunda cita. El ancla es unica: las otras dos citas del cuerpo ya dicen 2019 y la primera quedo reescrita por la orden anterior. El parentesis y el punto final se conservan."
+    }
+  ],
+
+  "nota_promocion_apa": "Las dos correcciones APA antes opcionales (retiro de la sigla [OPS] no reutilizada y orden alfabetico del parentesis multiple) quedan incorporadas a la orden 1 por instruccion del Director General del 2026-10-21. No se emiten ordenes separadas para ellas: aplicarlas por separado sobre el mismo parentesis multiplicaria el riesgo de ancla no resuelta.",
+
+  "sustitucion_condicionada_atribucion_termica": {
+    "estado": "PROPUESTA - no forma parte de las sustituciones a aplicar por defecto",
+    "motivo": "No es una correccion de anio: inserta una cita dentro de la oracion y redistribuye la atribucion del dato termico. Requiere decision expresa del Director o del tesista antes de incorporarse a 'sustituciones'.",
+    "hecho_verificado": "La oracion de la pagina fisica 19 atribuye el rango +2 grados C a +8 grados C al parentesis (OPS y PATH, 2020; Brooks et al., 2024). En ese parrafo no existe ninguna cita al MINSA. La cita a la NTS N. 196-MINSA/DGIESP-2022 aparece varios parrafos despues, y lo hace para el control de stock, kardex y vales de salida, no para el rango termico.",
+    "respaldo_normativo_verificado": {
+      "documento": "Norma Tecnica de Salud NTS N. 196-MINSA/DGIESP-2022, que establece el Esquema Nacional de Vacunacion",
+      "pdf_local": "PDFs_articulos/PDFs_SIVAC/Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N° 1.pdf",
+      "indice": "04_LITERATURA_Y_FUENTES/indices_pdf/norma-tecnica-de-salud-que-establece-el-esquema-nacional-de-vacunacion-nts-n-1.idx.json",
+      "evidencia": "Pagina impresa 10: columna 'CONSERVACIÓN DE LA VACUNA' con el valor '+ 2°C a +8°C' repetido en las filas de vacunas (parrafos p0010-002 y siguientes del indice). La cabecera de esa pagina y de la pagina 1 identifican el documento como NTS N. 196-MINSA/DGIESP-2022; las cabeceras restantes presentan ruido de OCR.",
+      "alcance_del_respaldo": "El rango aparece como valor de conservacion por vacuna en una tabla, no como enunciado general del articulado. Ademas, el propio documento remite al manejo de cadena de frio a una NTS especifica. Por tanto la NTS 196 respalda el valor termico, pero no agota el tema del manejo de la cadena de frio."
+    },
+    "orden_propuesta": {
+      "indice_docx": null,
+      "ubicacion": "CUERPO - pagina fisica 19, pagina impresa 3, seccion 1.1, primer parrafo",
+      "ancla_original": "cadena de frío entre +2 °C y +8 °C como de la exactitud",
+      "texto_nuevo": "cadena de frío entre +2 °C y +8 °C (Ministerio de Salud del Perú, 2022) como de la exactitud",
+      "categoria": "atribucion",
+      "justificacion": "Separa el dato termico, que es normativo, del dato de flujo de informacion, que es el que sostiene OPS/PATH. No crea una referencia nueva: 'Ministerio de Salud del Perú, 2022' ya figura en la lista y ya se cita en la misma pagina fisica 19."
+    },
+    "efecto_conjunto": "Con la orden 1 y esta insercion, la oracion atribuye el rango a la NTS 196 y el flujo de informacion logistica a Brooks et al. (2024) y a OPS y PATH (2019).",
+    "alternativa_si_no_se_autoriza": "Aplicar solo las dos sustituciones de anio y registrar el pasaje como [VERIFICAR: atribucion del rango +2 a +8 grados C a OPS/PATH sin respaldo en la fuente]. El expediente queda cerrado igualmente en lo bibliografico."
+  },
+
+  "observaciones_apa7_secundarias": [
+    "El parentesis de la pagina fisica 19 coloca 'Organización Panamericana de la Salud [OPS] y PATH, 2020' antes de 'Brooks et al., 2024'. APA 7 ordena alfabeticamente las obras de un parentesis multiple. Resuelto por la orden 1.",
+    "La definicion '[OPS]' no se reutiliza en ninguna de las tres citas posteriores; se retira en la orden 1.",
+    "La entrada de la lista de referencias ya es conforme en anio, titulo, subtitulo, autoria y handle; no se emite orden sobre ella.",
+    "El texto conserva la grafia 'paises bajos y medianos ingresos' del titulo publicado. No es un error de redaccion y no debe normalizarse."
+  ],
+
+  "correcciones_recomendadas_no_ejecutadas": [
+    "Zotero, item 6VVKK2MV: fijar date=2019, anadir el handle 10665.2/50482 y adjuntar el PDF del deposito. NO EJECUTADO por instruccion del Director del 2026-10-21.",
+    "CATALOGO_MAESTRO_FUENTES_ZOTERO_SIVAC.md, entrada 17: anio 2019, handle 50482, retirar la atribucion del PDF local content.pdf y renombrar la clave @opspath2020 a @opspath2019. NO EJECUTADO.",
+    "Ficha atomica @opspath2019: aun no creada. Requiere PDF local indexado y hallazgos citables verificados. NO EJECUTADO.",
+    "REFERENCIAS_SIVAC.md: sin cambios; la entrada ya dice 2019 y el handle correcto."
+  ],
+
+  "verificaciones_pendientes": [
+    "[VERIFICAR externo] Confirmar en IRIS PAHO que no existe una edicion espanola independiente de 2020 con handle propio. La busqueda local no la encontro; el item 50482 agrupa en, es y fr con fecha 2019. El raspado de IRIS por Firecrawl y You.com solo devuelve el banner de cookies: la comprobacion debe hacerse contra la API DSpace, ya volcada en _ops_q.json.",
+    "[VERIFICAR externo] Reconfirmar el destino actual del handle 10665.2/53120. La evidencia local registrada (2026-10-21) lo identifica con Mayer-Foulkes, Servan-Mori y Nigenda (2020), RPSP 44:e141, DOI 10.26633/RPSP.2020.141.",
+    "[VERIFICAR contenido] Leido el resumen oficial (2026-10-21): confirma 2019 y el hallazgo SIGL sobre gestion de existencias. Falta el INFORME COMPLETO depositado en el item 50482: obtener el bitstream espanol, archivarlo en PDFs_SIVAC e indexarlo con ingesta_pdf. Sin el, no se escribe ningun localizador de pagina.",
+    "[VERIFICAR contenido] Comprobar en el cuerpo del informe completo: (a) el tratamiento de formatos manuales y trazabilidad, (b) la definicion o caracterizacion de e-LMIS con sus funciones. No extrapolar la pagina 12 del resumen ni detalles de automatizacion de vales, que no aparecen en la lectura primaria.",
+    "[VERIFICAR contenido] Comprobar en la portada del informe completo que el titulo y el anio impresos coinciden con los metadatos del registro, en especial la expresion 'paises bajos y medianos ingresos'.",
+    "[VERIFICAR Zotero] Correccion registrada, no ejecutada: el item 6VVKK2MV conserva date=2020, sin URL y sin adjuntos (confirmado por el Director el 2026-10-21). Debe pasar a 2019, anadirse el handle 50482 y adjuntarse el PDF del deposito. El metadato 2020 no acredita el anio de edicion.",
+    "[VERIFICAR catalogo] Correccion registrada, no ejecutada: la entrada 17 del CATALOGO_MAESTRO_FUENTES_ZOTERO_SIVAC.md debe pasar a 2019 y handle 50482, sin atribucion de PDF local, y la clave @opspath2020 debe renombrarse a @opspath2019.",
+    "[VERIFICAR decision] Autorizar o descartar la sustitucion condicionada de atribucion termica (insercion de 'Ministerio de Salud del Perú, 2022' tras '+8 °C'). Si se descarta, el pasaje queda marcado como atribucion sin respaldo en la fuente.",
+    "[VERIFICAR nota] La nota de Obsidian 'Datos de inmunización Evidencia para la acción. Una revisión.md' no tiene URL, PDF ni metadatos verificables. La ficha @opspath2019 sigue pendiente de creacion."
+  ],
+
+  "preguntas_para_el_director": [
+    "Se confirma que la obra citada en las cuatro ocurrencias del cuerpo es el informe IDEA de OPS y PATH depositado con handle 10665.2/50482 y anio 2019. La consulta externa que queda es si IRIS registra ademas una edicion espanola de 2020 con handle distinto; la evidencia local dice que no.",
+    "Queda cerrada la consulta sobre Zotero: el item 6VVKK2MV tiene date=2020, sin URL ni adjuntos, y no acredita el anio. Falta solo la comprobacion MCP del handle 53120 para cerrar la trazabilidad del error.",
+    "Se solicita remitir o autorizar la descarga del INFORME COMPLETO depositado en el item 50482 (no del resumen Precis ya leido) para verificar los pasajes de las paginas fisicas 19, 46 y 55. Sin esa lectura no se escribira ningun localizador de pagina.",
+    "El expediente queda cerrado en lo bibliografico: anio 2019, deposito 50482, sin DOI, sin nota de traduccion y sin localizador de pagina. Las correcciones APA de sigla y orden se incorporaron a la orden 1. Solo queda su decision sobre la atribucion termica condicionada."
+  ],
+
+  "riesgos": [
+    "CRITICO si no se corrige: dos citas de 2020 conviven con una referencia de 2019 y con dos citas de 2019 en el mismo documento. La comprobacion 1:1 por anio falla aunque la entrada sea correcta.",
+    "ALTO: la pagina fisica 19 atribuye a OPS/PATH el rango +2 a +8 grados C, que no consta en el resumen del registro ni en el resumen oficial leido. La fuente normativa verificada de ese dato es la NTS N. 196-MINSA/DGIESP-2022 (pagina impresa 10, tabla de conservacion de la vacuna). Mientras no se aplique la sustitucion condicionada, la atribucion sigue mal asignada.",
+    "ALTO: el PDF oficial leido es el resumen Precis, no el informe. Citar sus paginas como si fueran las del informe depositado seria una atribucion falsa; queda prohibido trasladar su paginacion.",
+    "ALTO: la definicion de e-LMIS de las paginas 46 y 55 con cuatro funciones no se verifica en ninguna lectura hecha. El resumen solo sostiene que las intervenciones del SIGL mejoraron la gestion de existencias de vacunas. La carga probatoria de esas dos citas debe recaer en Wasswa et al. (2023) o reescribirse la definicion.",
+    "MEDIO: el catalogo maestro declara como PDF local de OPS/PATH un archivo que es una tesis de la UNHEVAL sobre SISDATA (2021). Cualquier verificacion de contenido que se apoye en ese archivo seria invalida.",
+    "MEDIO: el anio 2020 ingreso por una instruccion interna del 2026-10-07 sin fuente primaria; el catalogo la consolido con un handle ajeno. El error no es de redaccion sino de cadena de custodia bibliografica.",
+    "BAJO: el handle 50482 puede devolver 502 de forma intermitente. No es un identificador muerto; la respuesta 200 esta registrada.",
+    "MEDIO: el item Zotero 6VVKK2MV conserva date=2020, sin URL ni adjuntos. Si se usa como fuente de la lista de referencias, el error puede reintroducirse; debe corregirse a 2019 y anadirse el handle 50482 antes de cualquier nueva captura bibliografica."
+  ],
+
+  "criterio_de_cierre": [
+    "Aplicadas las dos sustituciones, las cuatro citas del cuerpo dicen 2019, el parentesis de la pagina fisica 19 queda en orden alfabetico y sin la sigla [OPS] no reutilizada, y la entrada de la lista dice 2019 con handle 50482: cero discrepancias de anio y de identificador.",
+    "La referencia no se modifica: ya coincide campo por campo con el registro institucional.",
+    "No se incorpora ningun localizador de pagina mientras no exista copia indexada del INFORME COMPLETO que lo respalde; las paginas del resumen Precis no son trasladables.",
+    "La atribucion termica queda resuelta por decision expresa: aplicada la sustitucion condicionada, o marcada como pasaje pendiente. El expediente bibliografico no se reabre por ello.",
+    "Zotero, el catalogo maestro y la ficha @opspath2019 quedan con la correccion registrada en este expediente; su ejecucion material es posterior e independiente de la correccion del DOCX."
+  ],
+
+  "instrucciones_de_aplicacion": {
+    "comando_ensayo_en_seco": "C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python.exe scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v16.docx --salida salidas/documentos/informe_final_v17.docx --json salidas/reportes_maquetacion/ops_path_aclaraciones_20261021.json --reporte salidas/reportes_maquetacion/aplicacion_ops_path_v17.json --solo-verificar",
+    "resultado_esperado": "2 aplicadas y 0 fallidas. El aplicador resuelve ambas ordenes por ancla unica al no declararse indice_docx. La sustitucion condicionada de atribucion termica NO se aplica: esta fuera del arreglo 'sustituciones' y solo se incorporaria si el Director la autoriza.",
+    "verificacion_posterior": [
+      "Buscar 'y PATH, 2020' en el texto extraido del DOCX resultante: cero ocurrencias.",
+      "Buscar 'y PATH, 2019': cuatro ocurrencias en el cuerpo.",
+      "Buscar '[OPS]': cero ocurrencias.",
+      "Buscar 'Brooks et al., 2024; Organización Panamericana de la Salud y PATH, 2019': una ocurrencia.",
+      "Buscar '10665.2/53120': cero ocurrencias.",
+      "Reejecutar el control de correspondencia 1:1 y remitir el resultado al verificador-integridad."
+    ]
+  }
+}

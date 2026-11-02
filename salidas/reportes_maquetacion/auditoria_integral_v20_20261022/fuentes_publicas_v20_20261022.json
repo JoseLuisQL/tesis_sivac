@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tarea": "Verificación bibliográfica acotada y adversarial previa a v20",
+    "fecha": "2026-10-22",
+    "agente": "verificador-integridad",
+    "squad": "Squad A",
+    "alcance": [
+      "O-21",
+      "O-22",
+      "G-03",
+      "O-07"
+    ],
+    "fuentes_consultadas": [
+      "Crossref REST API",
+      "Europe PMC REST API (PMC9844934)",
+      "PDF institucional UNAL de Tristán-López (2008)",
+      "Dialnet (registro 2981185)"
+    ],
+    "restricciones": [
+      "No se modificó Word ni PDF.",
+      "No se editaron datos/raw ni datos/recolectados.",
+      "No se imputaron datos, fechas, firmas, jueces ni coeficientes.",
+      "No se reetiquetaron las 53 referencias ni se recountaron las 158 páginas.",
+      "Solo se consultaron publicaciones públicas por DOI, título y nombre."
+    ],
+    "fecha_congelamiento_fuentes": "2026-10-22"
+  },
+  "tristan_lopez_2008": {
+    "id": "tristan_lopez_2008",
+    "autores": "Agustín Tristán-López",
+    "anio": 2008,
+    "titulo": "Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo",
+    "revista": "Avances en Medición",
+    "volumen": "6",
+    "numero": "1",
+    "paginas": "37-48",
+    "issn": "1692-0023",
+    "doi": null,
+    "doi_estado": "No se localizó DOI en Crossref ni OpenAlex. Identificado por registro Dialnet, ISSN y PDF institucional de la Universidad Nacional de Colombia.",
+    "url_pdf": "https://humanas.unal.edu.co/lab_psicometria/application/files/9716/0463/3548/VOL_6._Articulo4_Indice_de_validez_de_contenido_37-48.pdf",
+    "url_registro": "https://dialnet.unirioja.es/servlet/articulo?codigo=2981185",
+    "fecha_acceso": "2026-10-22",
+    "pdf_bytes": 160143,
+    "pdf_paginas": 13,
+    "pdf_sha256": "a3d4a3c7674854ebde1c25fb6437fd8b6c9a5a87eb65799da54c2b7315f10be0",
+    "conteos_texto_completo": {
+      "aiken": 0,
+      "ivc": 3,
+      "lawshe": 50,
+      "cvr": 73
+    },
+    "extractos": {
+      "resumen": "Resumen El procedimiento generalmente utilizado para evalur la validez de contenido de los instrumentos psicológicos es el juicio de expertos y el único índice cuantitativo disponible hasta el momento es el CVR (Content Validity Ratio) de Lawshe (1975). El CVR sin embargo, requiere de un gran número de jueces, exigencia poco viable en la práctica y en consecuenica es muy poco utilizado por los psicométras. Este trabajo revisa el índice de Lawshe y propone una modificación que permite superar sus limitaciones. Finalmente se presenta una aplicación práctica e ilustrativa del índice propuesto.",
+      "ivc": "Determinar el IVC (expresión [2]) como promedio de los CVR’ de todos los ítems de cuestionario o del banco de ítems (incluyendo aceptables y no aceptables). Se considera aceptable el conjunto de ítems si su IVC es",
+      "pagina_38": "38 Tristán-López preguntas del instrumento, a tal grado que si se cuenta con tres o cuatro jueces que sean expertos en el área a evaluar y que estén en disponibilidad para integrarse al comité o grupo de análisis de validez de contenido, se puede decir que se está en una situación privilegiada. En estas condiciones más realistas para muchos desarrollos, específicamente cuando se tienen menos de 7 jueces o panelistas, el modelo de Lawshe obliga a tener un acuerdo unánime entre todos los panelistas, en estos casos, basta con un sólo desacuerdo entre los jueces para invalidar el ítem. Cuando se revisa el modelo de Lawshe, se puede observar que tiene el inconveniente de que los valores de referencia se ven influidos por el efecto de tamaño, de tal modo que para grupos pequeños de panelistas el modelo es muy exigente y conforme el número de panelista se incrementa, el modelo se vuelve más lax"
+    },
+    "hallazgos": [
+      "El objeto del artículo es el CVR (Content Validity Ratio) de Lawshe (1975); propone una modificación del CVR para paneles pequeños. No menciona a Aiken ni la V de Aiken: 0 ocurrencias de 'Aiken' en las 13 páginas.",
+      "El IVC que define el artículo es el promedio de los CVR' de los ítems (IVC = media de CVR'), con criterio de aceptación superior a 0.58, no 0.80.",
+      "La página 38 desarrolla el modelo cuantitativo de Lawshe y el cálculo del CVR; no contiene la derivación de la V de Aiken ni del IVC como índices conjuntos.",
+      "Por tanto, la frase actual 'del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC)' atribuye a Tristán-López una derivación que la fuente no contiene. La afirmación 'a los que esa fuente no asocia un umbral de aceptación de 0.80' también es incorrecta: la fuente sí asocia un umbral, pero de 0.58, al IVC/CVI."
+    ],
+    "dictamen": "ATRIBUCION_NO_SOSTENIDA",
+    "orden_21": {
+      "id": "O-21",
+      "estado": "NO_APLICABLE_COMO_ESTA",
+      "texto_original": "(a) la validez de contenido, cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación para ambos coeficientes;",
+      "reemplazo_actual": "(a) la validez de contenido por juicio de tres expertos, a partir del modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), con 0.80 como criterio de aceptación adoptado en este estudio para ambos coeficientes;",
+      "problema": "El reemplazo actual conserva 'del que se derivan el coeficiente V de Aiken y el IVC', atribución que no existe en Tristán-López (2008).",
+      "reemplazo_seguro": "(a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio;",
+      "opcion_si_se_requiere_conservar_la_cita": "(a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio; la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38);",
+      "efecto_1a1": "Si se aplica el reemplazo seguro sin la cita, debe verificarse que Tristán-López (2008) siga citado en otro pasaje; de lo contrario, la referencia P2871 quedaría huérfana. La opción que conserva la cita evita ese riesgo, pero solo debe usarse si se acepta mencionar la modificación del CVR de Lawshe como antecedente metodológico, no como fuente de la V de Aiken."
+    }
+  },
+  "wasswa_2023": {
+    "id": "wasswa_2023",
+    "doi": "10.1186/s40545-023-00517-4",
+    "url_doi": "https://doi.org/10.1186/s40545-023-00517-4",
+    "pmcid": "PMC9844934",
+    "url_europepmc": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9844934/fullTextXML",
+    "fecha_acceso": "2026-10-22",
+    "titulo_real": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: lessons from COVID-19 response in Uganda",
+    "titulo_cuerpo_y_figura_7": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda",
+    "titulo_lista_referencias_actual": "Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda",
+    "autores": [
+      "John Hans Wasswa",
+      "Henry Oundo",
+      "Martin Olowo Oteba",
+      "Henry Komakech",
+      "Irene Ochola",
+      "Sheila Mwebaze",
+      "Denis Okidi",
+      "Anthony Kirunda",
+      "Shamim Nakadde",
+      "Neville Okuna Oteba",
+      "Eric Lugada"
+    ],
+    "revista": "Journal of Pharmaceutical Policy and Practice",
+    "volumen": "16",
+    "numero": "1",
+    "articulo": "6",
+    "anio": 2023,
+    "conteos_texto_completo": {
+      "90%": 0,
+      "19_hospitales": 0,
+      "20_RRH": 1,
+      "85.5%": 2,
+      "96.5%": 1,
+      "vaccine": 1,
+      "immuniz": 0
+    },
+    "extractos": {
+      "metodo": "Methods We reviewed published and unpublished literature regarding the adoption and implementation of an eELMIS during the COVID-19 preparedness and response in Uganda. Documents reviewed included journal articles, reports, and national guidelines. In addition, data were abstracted from the eELMIS database. To supplement the literature review and secondary data, we held interviews and discussions with stakeholders involved in implementing the eELMIS. Furthermore, the authors used observations during the planning, preparedness, and response to the COVID-19 in Uganda (most of whom were actively involved and attended many of the meetings and participated in the epidemic response). The results are structured to capture adoption, implementation, and results of the use of the eELMIS during the COVID-19preparedness and response in Uganda.",
+      "20_hospitales": "all 20 Regional Referral Hospitals (RRH), i.e., Mulago, Butabika, Kawempe, Kiruddu, Lira, Mubende, Mbarara, Hoima, Kabale, Moroto, Soroti, Gulu, Masaka, Jinja, Entebbe, Bombo, Mbale, Naguru, Fort portal, and Arua were processed through the eELMIS, and",
+      "resultados": "Furthermore, 96.5% (1745) of the orders that came through the eELMIS have been served since the beginning of the response. In addition, 85.5% overall/aggregate order fulfilment rate was attained. Of all the orders that came through to the logistics sub-committee, 85.5% of the emergency supplies that were requested for",
+      "figura_2": "Fig. 2 Real time stock status data at National and Regional referral hospitals (user-units) in eELMIS. Source:"
+    },
+    "hallazgos": [
+      "El título real registrado en Crossref es el de respuesta a la COVID-19. Coincide con el cuerpo P0337 y con la nota de la Figura 7 P0478. La lista de referencias P2873 contiene un título distinto y debe corregirse.",
+      "El artículo menciona 'all 20 Regional Referral Hospitals (RRH)' y enumera 20 hospitales. No menciona 19 hospitales. La cifra 19 del informe coincide numéricamente con los 19 centros de acopio de la DISA Apurímac II, no con el artículo; esto sugiere una contaminación del dato local y no una cifra de Wasswa.",
+      "El artículo no reporta una disponibilidad promedio del 90%. Reporta 96.5% (1745) de pedidos atendidos y una tasa agregada de cumplimiento de pedidos de 85.5%.",
+      "El apartado Methods declara: 'We reviewed published and unpublished literature regarding the adoption and implementation of an eELMIS during the COVID-19 pandemic'. No es un estudio cuantitativo, descriptivo y transversal con auditoría de transacciones de 19 hospitales, como afirma P0337.",
+      "El artículo se centra en suministros de COVID-19 y medicamentos esenciales; el conteo de 'vaccin' es 1 y el de 'immuniz' es 0. La atribución de resultados sobre vacunas a escala nacional requiere cautela.",
+      "La Figura 7 es una adaptación de una figura del artículo; su nota usa el título correcto. La corrección de G-03 se limita a la lista de referencias, no al cuerpo ni a la nota de figura."
+    ],
+    "dictamen": "TITULO_CUERPO_CORRECTO_REFERENCIA_INCORRECTA_Y_CIFRAS_NO_SOSTENIDAS",
+    "g03": {
+      "referencia_id": "P2873",
+      "estado": "CORREGIBLE_DIRECTO",
+      "reemplazo_referencia": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+      "nota": "Corregir solo el título de la referencia. El cuerpo P0337 y la nota de la Figura 7 P0478 ya usan el título correcto. No cambiar DOI, autores, revista, volumen ni artículo."
+    },
+    "orden_22": {
+      "id": "O-22",
+      "estado": "NO_APLICABLE_COMO_ESTA",
+      "texto_original": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda, quienes demostraron que la operación de sistemas electrónicos de gestión logística incrementó la exactitud de los inventarios del 25% al 85% y aseguró una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "reemplazo_actual": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda, quienes incrementaron la exactitud de los inventarios del 25% al 85%, y por Wasswa et al. (2023) en Uganda, quienes aseguraron una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "problema": "El reemplazo actual separa las atribuciones, pero conserva 'una disponibilidad promedio del 90% en hospitales regionales de referencia', cifra que no aparece en Wasswa et al. (2023). El motivo además menciona 19 hospitales, cuando el artículo declara 20.",
+      "reemplazo_seguro": "En el mismo sentido, Kigenza et al. (2023) reportaron en Ruanda un incremento de la exactitud de los inventarios del 25% al 85%, y Wasswa et al. (2023) documentaron en Uganda el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos durante la respuesta a la COVID-19, mientras que en el contexto sudamericano",
+      "reemplazo_con_datos_verificados": "En Ruanda, Kigenza et al. (2023) reportaron un incremento de la exactitud de los inventarios del 25% al 85%; en Uganda, Wasswa et al. (2023) documentaron el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos en los 20 hospitales regionales de referencia y una tasa agregada de cumplimiento de pedidos del 85.5%, mientras que en el contexto sudamericano",
+      "nota": "El reemplazo seguro elimina las cifras no sostenidas y no introduce datos nuevos. La opción con datos verificados usa 20 hospitales y 85.5%, ambos confirmados en el artículo; no debe presentarse como 'disponibilidad promedio' ni como equivalente a la exactitud de inventarios de Kigenza."
+    },
+    "impactos_colaterales": [
+      {
+        "id": "P0337",
+        "pagina_pdf": 30,
+        "tipo": "atribucion_metodologica_y_cifras",
+        "cambios": [
+          {
+            "texto_original": "La metodología fue cuantitativa, descriptiva y transversal, auditando las transacciones digitales de pedidos, despachos y saldos de almacén ejecutadas en la red pública del Ministerio de Salud de Uganda.",
+            "reemplazo": "El estudio revisó literatura publicada y no publicada sobre la adopción e implementación del eELMIS durante la pandemia de COVID-19 y describió su operación en la red pública del Ministerio de Salud de Uganda."
+          },
+          {
+            "texto_original": "mantener una disponibilidad promedio del 90% en 19 hospitales regionales de referencia",
+            "reemplazo": "procesar pedidos de insumos en los 20 hospitales regionales de referencia y alcanzar una tasa agregada de cumplimiento de pedidos del 85.5%"
+          }
+        ]
+      },
+      {
+        "id": "P0386",
+        "pagina_pdf": 35,
+        "tipo": "celda_de_tabla_metodologia",
+        "texto_original": "Cuantitativo, descriptivo y transversal (19 hospitales regionales)",
+        "reemplazo": "Revisión de literatura y análisis descriptivo del eELMIS (20 hospitales regionales de referencia)"
+      },
+      {
+        "id": "P0388",
+        "pagina_pdf": 35,
+        "tipo": "celda_de_tabla_resultados",
+        "texto_original": "Disponibilidad promedio del 90% y concordancia en despachos regionales",
+        "reemplazo": "Tasa agregada de cumplimiento de pedidos del 85.5% y 96.5% de pedidos atendidos"
+      }
+    ]
+  },
+  "o07": {
+    "id": "O-07",
+    "estado": "PERMITIDA",
+    "texto_original": "Nota. Estructura taxonómica inmutable aprobada en la matriz de operacionalización institucional de la UNAJMA.",
+    "reemplazo_actual": "Nota. Estructura taxonómica de dimensiones e indicadores de la variable dependiente, conforme a la matriz de operacionalización institucional de la UNAJMA.",
+    "reemplazo_actual_estado": "RECHAZADO_POR_AUTOR_INSTITUCIONAL",
+    "nota_alternativa": "Nota. Dimensiones e indicadores de la variable dependiente, según la matriz de operacionalización de la investigación.",
+    "comprobaciones": {
+      "elimina_autor_institucional_UNAJMA": true,
+      "no_declara_aprobacion_institucional": true,
+      "no_modifica_las_tres_dimensiones_DEC_007": true,
+      "no_agrega_datos_ni_indicadores": true,
+      "solo_describe_contenido_de_tabla": true
+    },
+    "dictamen": "NEUTRA_SIN_CAMBIO_DE_CONTENIDO",
+    "observacion": "La nota alternativa es descriptiva: enuncia las dimensiones e indicadores de la variable dependiente y su relación con la matriz de operacionalización de la investigación. No atribuye aprobación a la UNAJMA, no declara inmutabilidad y no altera las tres dimensiones ni los seis indicadores de DEC-007."
+  },
+  "ordenes": {
+    "O-21": {
+      "id": "O-21",
+      "estado": "NO_APLICABLE_COMO_ESTA",
+      "texto_original": "(a) la validez de contenido, cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación para ambos coeficientes;",
+      "reemplazo_actual": "(a) la validez de contenido por juicio de tres expertos, a partir del modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), con 0.80 como criterio de aceptación adoptado en este estudio para ambos coeficientes;",
+      "problema": "El reemplazo actual conserva 'del que se derivan el coeficiente V de Aiken y el IVC', atribución que no existe en Tristán-López (2008).",
+      "reemplazo_seguro": "(a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio;",
+      "opcion_si_se_requiere_conservar_la_cita": "(a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio; la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38);",
+      "efecto_1a1": "Si se aplica el reemplazo seguro sin la cita, debe verificarse que Tristán-López (2008) siga citado en otro pasaje; de lo contrario, la referencia P2871 quedaría huérfana. La opción que conserva la cita evita ese riesgo, pero solo debe usarse si se acepta mencionar la modificación del CVR de Lawshe como antecedente metodológico, no como fuente de la V de Aiken."
+    },
+    "O-22": {
+      "id": "O-22",
+      "estado": "NO_APLICABLE_COMO_ESTA",
+      "texto_original": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda, quienes demostraron que la operación de sistemas electrónicos de gestión logística incrementó la exactitud de los inventarios del 25% al 85% y aseguró una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "reemplazo_actual": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda, quienes incrementaron la exactitud de los inventarios del 25% al 85%, y por Wasswa et al. (2023) en Uganda, quienes aseguraron una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "problema": "El reemplazo actual separa las atribuciones, pero conserva 'una disponibilidad promedio del 90% en hospitales regionales de referencia', cifra que no aparece en Wasswa et al. (2023). El motivo además menciona 19 hospitales, cuando el artículo declara 20.",
+      "reemplazo_seguro": "En el mismo sentido, Kigenza et al. (2023) reportaron en Ruanda un incremento de la exactitud de los inventarios del 25% al 85%, y Wasswa et al. (2023) documentaron en Uganda el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos durante la respuesta a la COVID-19, mientras que en el contexto sudamericano",
+      "reemplazo_con_datos_verificados": "En Ruanda, Kigenza et al. (2023) reportaron un incremento de la exactitud de los inventarios del 25% al 85%; en Uganda, Wasswa et al. (2023) documentaron el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos en los 20 hospitales regionales de referencia y una tasa agregada de cumplimiento de pedidos del 85.5%, mientras que en el contexto sudamericano",
+      "nota": "El reemplazo seguro elimina las cifras no sostenidas y no introduce datos nuevos. La opción con datos verificados usa 20 hospitales y 85.5%, ambos confirmados en el artículo; no debe presentarse como 'disponibilidad promedio' ni como equivalente a la exactitud de inventarios de Kigenza."
+    },
+    "O-07": {
+      "id": "O-07",
+      "estado": "PERMITIDA",
+      "texto_original": "Nota. Estructura taxonómica inmutable aprobada en la matriz de operacionalización institucional de la UNAJMA.",
+      "reemplazo_actual": "Nota. Estructura taxonómica de dimensiones e indicadores de la variable dependiente, conforme a la matriz de operacionalización institucional de la UNAJMA.",
+      "reemplazo_actual_estado": "RECHAZADO_POR_AUTOR_INSTITUCIONAL",
+      "nota_alternativa": "Nota. Dimensiones e indicadores de la variable dependiente, según la matriz de operacionalización de la investigación.",
+      "comprobaciones": {
+        "elimina_autor_institucional_UNAJMA": true,
+        "no_declara_aprobacion_institucional": true,
+        "no_modifica_las_tres_dimensiones_DEC_007": true,
+        "no_agrega_datos_ni_indicadores": true,
+        "solo_describe_contenido_de_tabla": true
+      },
+      "dictamen": "NEUTRA_SIN_CAMBIO_DE_CONTENIDO",
+      "observacion": "La nota alternativa es descriptiva: enuncia las dimensiones e indicadores de la variable dependiente y su relación con la matriz de operacionalización de la investigación. No atribuye aprobación a la UNAJMA, no declara inmutabilidad y no altera las tres dimensiones ni los seis indicadores de DEC-007."
+    }
+  },
+  "pendientes": [
+    {
+      "id": "PEND-01",
+      "tema": "Referencia Tristán-López y V de Aiken",
+      "detalle": "El reemplazo seguro de O-21 retira la cita de Tristán-López. Verificar si P2871 sigue citado en otro pasaje. Si no, conservar la cita con la opción que menciona la modificación del CVR de Lawshe o retirar la referencia. No dejar una referencia huérfana.",
+      "responsable": "redactor-academico",
+      "estado": "ABIERTO"
+    },
+    {
+      "id": "PEND-02",
+      "tema": "Fuente primaria de la V de Aiken",
+      "detalle": "El informe usa la V de Aiken, pero la fuente citada no la contiene. Identificar la fuente primaria correcta o presentar la V como índice aplicado sin atribuir su derivación a Tristán-López. No inventar una referencia.",
+      "responsable": "redactor-academico",
+      "estado": "ABIERTO"
+    },
+    {
+      "id": "PEND-03",
+      "tema": "Cifras 90% y 19 hospitales",
+      "detalle": "No se localizaron en el texto completo de Wasswa et al. (2023). El artículo declara 20 hospitales regionales de referencia, 96.5% de pedidos atendidos y 85.5% de cumplimiento agregado. Si el tesista desea conservar 90% o 19, debe aportar la fuente primaria; de lo contrario, eliminar ambas cifras.",
+      "responsable": "tesista / redactor-academico",
+      "estado": "ABIERTO"
+    },
+    {
+      "id": "PEND-04",
+      "tema": "Metodología atribuida a Wasswa",
+      "detalle": "P0337 y P0386 describen un estudio cuantitativo, descriptivo y transversal. El apartado Methods del artículo declara una revisión de literatura publicada y no publicada. Corregir la caracterización metodológica.",
+      "responsable": "redactor-academico",
+      "estado": "ABIERTO"
+    },
+    {
+      "id": "PEND-05",
+      "tema": "Alcance sobre vacunas",
+      "detalle": "El artículo se centra en suministros de COVID-19 y medicamentos esenciales. Verificar si sostiene las afirmaciones de P0337 sobre vacunas a escala nacional; si no, limitar la atribución a insumos y suministros.",
+      "responsable": "redactor-academico",
+      "estado": "ABIERTO"
+    },
+    {
+      "id": "PEND-06",
+      "tema": "Kigenza et al. (2023)",
+      "detalle": "La cifra 25% a 85% de Kigenza no fue auditada en esta verificación acotada. No se endosa ni se corrige en este informe; queda fuera del alcance.",
+      "responsable": "verificador-integridad",
+      "estado": "FUERA_DE_ALCANCE"
+    }
+  ],
+  "dictamen": {
+    "general": "OBSERVADO_SUBSANABLE",
+    "detalle_general": "Bloqueo parcial de O-21 y O-22 hasta corregir las atribuciones; G-03 es corrección directa y O-07 queda aprobada con la nota alternativa.",
+    "O-21": "BLOQUEADO_HASTA_CORREGIR_ATRIBUCION",
+    "O-22": "BLOQUEADO_HASTA_CORREGIR_CIFRAS",
+    "G-03": "CORREGIBLE_DIRECTO",
+    "O-07": "APROBADO",
+    "clasificacion": {
+      "criticos": [
+        "O-21 atribución falsa de la V de Aiken y el IVC a Tristán-López",
+        "O-22 y P0337/P0386/P0388 atribuyen a Wasswa 90% y 19 hospitales no sostenidos; el artículo declara 20 RRH y 85.5% de cumplimiento"
+      ],
+      "mayores": [
+        "G-03 título de la referencia P2873 no coincide con el título real del DOI"
+      ],
+      "menores": []
+    },
+    "no_emite_aprobacion_jurado": true,
+    "no_modifico_word": true,
+    "no_modifico_pdf": true
+  }
+}

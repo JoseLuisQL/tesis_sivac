@@ -1,0 +1,1108 @@
+[
+ {
+  "pagina": 1,
+  "folio": null,
+  "orientacion": "vertical",
+  "lead": "UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS FACULTAD DE INGENIERÍA",
+  "chars": 536
+ },
+ {
+  "pagina": 2,
+  "folio": null,
+  "orientacion": "vertical",
+  "lead": "ACTA DE SUSTENTACIÓN Y APROBACIÓN DE TESIS",
+  "chars": 930
+ },
+ {
+  "pagina": 3,
+  "folio": null,
+  "orientacion": "vertical",
+  "lead": "DECLARACIÓN JURADA DE AUTENTICIDAD Y NO PLAGIO",
+  "chars": 2030
+ },
+ {
+  "pagina": 4,
+  "folio": "ii",
+  "orientacion": "vertical",
+  "lead": "DEDICATORIA",
+  "chars": 740
+ },
+ {
+  "pagina": 5,
+  "folio": "iii",
+  "orientacion": "vertical",
+  "lead": "AGRADECIMIENTOS",
+  "chars": 1265
+ },
+ {
+  "pagina": 6,
+  "folio": "iv",
+  "orientacion": "vertical",
+  "lead": "ÍNDICE DE CONTENIDO",
+  "chars": 7160
+ },
+ {
+  "pagina": 7,
+  "folio": "v",
+  "orientacion": "vertical",
+  "lead": "3.2.15. Oportunidad de procesamiento .....................................................",
+  "chars": 3369
+ },
+ {
+  "pagina": 8,
+  "folio": "vi",
+  "orientacion": "vertical",
+  "lead": "ÍNDICE DE FIGURAS",
+  "chars": 2165
+ },
+ {
+  "pagina": 9,
+  "folio": "vii",
+  "orientacion": "vertical",
+  "lead": "ÍNDICE DE TABLAS",
+  "chars": 913
+ },
+ {
+  "pagina": 10,
+  "folio": "viii",
+  "orientacion": "vertical",
+  "lead": "RESUMEN",
+  "chars": 2223
+ },
+ {
+  "pagina": 11,
+  "folio": "ix",
+  "orientacion": "vertical",
+  "lead": "ABSTRACT",
+  "chars": 2105
+ },
+ {
+  "pagina": 12,
+  "folio": "x",
+  "orientacion": "vertical",
+  "lead": "CHUMASQA",
+  "chars": 1827
+ },
+ {
+  "pagina": 13,
+  "folio": "1",
+  "orientacion": "vertical",
+  "lead": "INTRODUCCIÓN",
+  "chars": 2672
+ },
+ {
+  "pagina": 14,
+  "folio": "2",
+  "orientacion": "vertical",
+  "lead": "emisión de vales de salida; la consistencia documental, evaluada mediante el porcentaje de",
+  "chars": 2257
+ },
+ {
+  "pagina": 15,
+  "folio": "3",
+  "orientacion": "vertical",
+  "lead": "CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN",
+  "chars": 2589
+ },
+ {
+  "pagina": 16,
+  "folio": "4",
+  "orientacion": "vertical",
+  "lead": "implementación de un sistema digital de gestión de cadena de suministro hospitalaria en Ch",
+  "chars": 2852
+ },
+ {
+  "pagina": 17,
+  "folio": "5",
+  "orientacion": "vertical",
+  "lead": "de salud y que el 25% de los reportes presentaba datos incompletos por carecer de un siste",
+  "chars": 2812
+ },
+ {
+  "pagina": 18,
+  "folio": "6",
+  "orientacion": "vertical",
+  "lead": "En segundo término, se identificaron deficiencias recurrentes en la consistencia documenta",
+  "chars": 2369
+ },
+ {
+  "pagina": 19,
+  "folio": "7",
+  "orientacion": "vertical",
+  "lead": "• ¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en l",
+  "chars": 2438
+ },
+ {
+  "pagina": 20,
+  "folio": "8",
+  "orientacion": "vertical",
+  "lead": "1.3.3. Justificación metodológica",
+  "chars": 2538
+ },
+ {
+  "pagina": 21,
+  "folio": "9",
+  "orientacion": "vertical",
+  "lead": "web cliente-servidor desacoplada, construida con tecnologías de código abierto, servicios ",
+  "chars": 2121
+ },
+ {
+  "pagina": 22,
+  "folio": "10",
+  "orientacion": "vertical",
+  "lead": "documental y puntajes ordinales en escala Likert), la contrastación empírica de la hipótes",
+  "chars": 2250
+ },
+ {
+  "pagina": 23,
+  "folio": "11",
+  "orientacion": "vertical",
+  "lead": "de los productos biológicos en los centros de acopio de la DISA Apurímac II. Se estructura",
+  "chars": 2451
+ },
+ {
+  "pagina": 24,
+  "folio": "12",
+  "orientacion": "vertical",
+  "lead": "CAPÍTULO II: ANTECEDENTES",
+  "chars": 2692
+ },
+ {
+  "pagina": 25,
+  "folio": "13",
+  "orientacion": "vertical",
+  "lead": "arquitectura web centralizada acelera la trazabilidad de las vacunas, incrementa la calida",
+  "chars": 2873
+ },
+ {
+  "pagina": 26,
+  "folio": "14",
+  "orientacion": "vertical",
+  "lead": "Ergetie et al. (2023), en su investigación multicéntrica titulada “Vaccine cold chain mana",
+  "chars": 2934
+ },
+ {
+  "pagina": 27,
+  "folio": "15",
+  "orientacion": "vertical",
+  "lead": "logistics management information system (EIR-eLMIS) on vaccine availability in three regio",
+  "chars": 2937
+ },
+ {
+  "pagina": 28,
+  "folio": "16",
+  "orientacion": "vertical",
+  "lead": "notable reducción de tiempos operativos y fortalecen la consistencia documental en sistema",
+  "chars": 2705
+ },
+ {
+  "pagina": 29,
+  "folio": "17",
+  "orientacion": "vertical",
+  "lead": "en tiempo real y la completitud de los registros de vacunas se elevó del 50% al 95% (p. 11",
+  "chars": 2802
+ },
+ {
+  "pagina": 30,
+  "folio": "18",
+  "orientacion": "vertical",
+  "lead": "cada lote biológico (p. iii). El autor concluyó que la incorporación de herramientas infor",
+  "chars": 2551
+ },
+ {
+  "pagina": 31,
+  "folio": "19",
+  "orientacion": "vertical",
+  "lead": "Autor y año",
+  "chars": 2154
+ },
+ {
+  "pagina": 32,
+  "folio": "20",
+  "orientacion": "vertical",
+  "lead": "Autor y año",
+  "chars": 2203
+ },
+ {
+  "pagina": 33,
+  "folio": "21",
+  "orientacion": "vertical",
+  "lead": "Autor y año",
+  "chars": 2256
+ },
+ {
+  "pagina": 34,
+  "folio": "22",
+  "orientacion": "vertical",
+  "lead": "CAPÍTULO III: MARCO TEÓRICO",
+  "chars": 2425
+ },
+ {
+  "pagina": 35,
+  "folio": "23",
+  "orientacion": "vertical",
+  "lead": "iv). Como sostiene Sommerville (2016, p. 181), el procesamiento distribuido en capas indep",
+  "chars": 2059
+ },
+ {
+  "pagina": 36,
+  "folio": "24",
+  "orientacion": "vertical",
+  "lead": "estricta de identidad y privilegios en cada transacción (Ruiz Barea, 2023, p. 36) (véase l",
+  "chars": 1456
+ },
+ {
+  "pagina": 37,
+  "folio": "25",
+  "orientacion": "vertical",
+  "lead": "Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)",
+  "chars": 1470
+ },
+ {
+  "pagina": 38,
+  "folio": "26",
+  "orientacion": "vertical",
+  "lead": "Figura 4 El proceso de la metodología ágil Extreme Programming (XP)",
+  "chars": 1938
+ },
+ {
+  "pagina": 39,
+  "folio": "27",
+  "orientacion": "vertical",
+  "lead": "que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales. En la pres",
+  "chars": 1861
+ },
+ {
+  "pagina": 40,
+  "folio": "28",
+  "orientacion": "vertical",
+  "lead": "una obsolescencia de equipos de conservación superior al 60% y a discrepancias entre los s",
+  "chars": 1268
+ },
+ {
+  "pagina": 41,
+  "folio": "29",
+  "orientacion": "vertical",
+  "lead": "3.1.2.2. Sistemas electrónicos de información de gestión logística (e-LMIS) y control FEFO",
+  "chars": 1910
+ },
+ {
+  "pagina": 42,
+  "folio": "30",
+  "orientacion": "vertical",
+  "lead": "Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform",
+  "chars": 1368
+ },
+ {
+  "pagina": 43,
+  "folio": "31",
+  "orientacion": "vertical",
+  "lead": "comprobante de salida (vale). Como demuestran Dang et al. (2024) y Astuhuaman Perez y Balt",
+  "chars": 1596
+ },
+ {
+  "pagina": 44,
+  "folio": "32",
+  "orientacion": "vertical",
+  "lead": "Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información",
+  "chars": 1648
+ },
+ {
+  "pagina": 45,
+  "folio": "33",
+  "orientacion": "vertical",
+  "lead": "utilidad percibida (grado en que el profesional tiene la convicción de que el sistema pote",
+  "chars": 2053
+ },
+ {
+  "pagina": 46,
+  "folio": "34",
+  "orientacion": "vertical",
+  "lead": "percibida media decisivamente dicha relación (beta = 0.23, p < 0.001), confirmando que mit",
+  "chars": 1511
+ },
+ {
+  "pagina": 47,
+  "folio": "35",
+  "orientacion": "vertical",
+  "lead": "Dimensión Indicador",
+  "chars": 2558
+ },
+ {
+  "pagina": 48,
+  "folio": "36",
+  "orientacion": "vertical",
+  "lead": "3.2.2. Centro de acopio de vacunas",
+  "chars": 2139
+ },
+ {
+  "pagina": 49,
+  "folio": "37",
+  "orientacion": "vertical",
+  "lead": "integración permanente y validación mediante pruebas automatizadas y de aceptación con el ",
+  "chars": 1996
+ },
+ {
+  "pagina": 50,
+  "folio": "38",
+  "orientacion": "vertical",
+  "lead": "3.2.15. Oportunidad de procesamiento",
+  "chars": 2301
+ },
+ {
+  "pagina": 51,
+  "folio": "39",
+  "orientacion": "vertical",
+  "lead": "internacionales de calidad de producto de software establecidos en la norma ISO/IEC 25010:",
+  "chars": 2172
+ },
+ {
+  "pagina": 52,
+  "folio": "40",
+  "orientacion": "vertical",
+  "lead": "no funcionales, la formulación del catálogo de historias de usuario y la ejecución del jue",
+  "chars": 2330
+ },
+ {
+  "pagina": 53,
+  "folio": "41",
+  "orientacion": "vertical",
+  "lead": "Rol en SIVAC Actor Institucional",
+  "chars": 2173
+ },
+ {
+  "pagina": 54,
+  "folio": "42",
+  "orientacion": "vertical",
+  "lead": "Código Denominación del",
+  "chars": 2215
+ },
+ {
+  "pagina": 55,
+  "folio": "43",
+  "orientacion": "vertical",
+  "lead": "Requerimientos relevados mediante entrevistas y grupos focales con los profesionales de in",
+  "chars": 2127
+ },
+ {
+  "pagina": 56,
+  "folio": "44",
+  "orientacion": "vertical",
+  "lead": "Código Característica de",
+  "chars": 2294
+ },
+ {
+  "pagina": 57,
+  "folio": "45",
+  "orientacion": "vertical",
+  "lead": "Estructura taxonómica inmutable aprobada en la decisión DEC-007 y en la matriz de operacio",
+  "chars": 1940
+ },
+ {
+  "pagina": 58,
+  "folio": "46",
+  "orientacion": "vertical",
+  "lead": "Código Título de la",
+  "chars": 1706
+ },
+ {
+  "pagina": 59,
+  "folio": "47",
+  "orientacion": "vertical",
+  "lead": "Plan Detallado de las Cinco Iteraciones de Extreme Programming",
+  "chars": 1394
+ },
+ {
+  "pagina": 60,
+  "folio": "48",
+  "orientacion": "vertical",
+  "lead": "articula dieciséis casos de uso (CU-01 a CU-16) distribuidos en los paquetes funcionales d",
+  "chars": 1742
+ },
+ {
+  "pagina": 61,
+  "folio": "49",
+  "orientacion": "vertical",
+  "lead": "organizada en tres bloques cardinales: el cliente Single Page Application (SPA), el servid",
+  "chars": 1017
+ },
+ {
+  "pagina": 62,
+  "folio": "50",
+  "orientacion": "vertical",
+  "lead": "Figura 4",
+  "chars": 1525
+ },
+ {
+  "pagina": 63,
+  "folio": "51",
+  "orientacion": "vertical",
+  "lead": "Disponible (MSD = Saldo / CPA) y la ramificación semafórica estandarizada por el Ministeri",
+  "chars": 1075
+ },
+ {
+  "pagina": 64,
+  "folio": "52",
+  "orientacion": "vertical",
+  "lead": "",
+  "chars": 1725
+ },
+ {
+  "pagina": 65,
+  "folio": "53",
+  "orientacion": "vertical",
+  "lead": "Módulo del Sistema SIVAC",
+  "chars": 1902
+ },
+ {
+  "pagina": 66,
+  "folio": "54",
+  "orientacion": "vertical",
+  "lead": "El diseño de la base de datos se desarrolló bajo el estándar relacional en tercera forma n",
+  "chars": 1080
+ },
+ {
+  "pagina": 67,
+  "folio": "55",
+  "orientacion": "vertical",
+  "lead": "Figura 10",
+  "chars": 1207
+ },
+ {
+  "pagina": 68,
+  "folio": "56",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1482
+ },
+ {
+  "pagina": 69,
+  "folio": "57",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1353
+ },
+ {
+  "pagina": 70,
+  "folio": "58",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1571
+ },
+ {
+  "pagina": 71,
+  "folio": "59",
+  "orientacion": "vertical",
+  "lead": "La vinculación multi-acopio se implementa mediante la tabla intermedia usuarios_centros_ac",
+  "chars": 1420
+ },
+ {
+  "pagina": 72,
+  "folio": "60",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1499
+ },
+ {
+  "pagina": 73,
+  "folio": "61",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo Tipo de Dato",
+  "chars": 1399
+ },
+ {
+  "pagina": 74,
+  "folio": "62",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1439
+ },
+ {
+  "pagina": 75,
+  "folio": "63",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1403
+ },
+ {
+  "pagina": 76,
+  "folio": "64",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1335
+ },
+ {
+  "pagina": 77,
+  "folio": "65",
+  "orientacion": "vertical",
+  "lead": "Nombre del Campo",
+  "chars": 1425
+ },
+ {
+  "pagina": 78,
+  "folio": "66",
+  "orientacion": "vertical",
+  "lead": "Registros especializados para el monitoreo de disponibilidad según directivas de la DIGEMI",
+  "chars": 1513
+ },
+ {
+  "pagina": 79,
+  "folio": "67",
+  "orientacion": "vertical",
+  "lead": "del código y la refactorización continua (Continuous Refactoring) para mantener el sistema",
+  "chars": 1782
+ },
+ {
+  "pagina": 80,
+  "folio": "68",
+  "orientacion": "vertical",
+  "lead": "Capa Tecnológica Tecnología / Biblioteca",
+  "chars": 1093
+ },
+ {
+  "pagina": 81,
+  "folio": "69",
+  "orientacion": "vertical",
+  "lead": "",
+  "chars": 919
+ },
+ {
+  "pagina": 82,
+  "folio": "70",
+  "orientacion": "vertical",
+  "lead": "Implementación del Algoritmo de Sincronización Recursiva de Saldos Intermensuales en TypeS",
+  "chars": 1503
+ },
+ {
+  "pagina": 83,
+  "folio": "71",
+  "orientacion": "vertical",
+  "lead": "de acopio autorizados para el usuario, inyectándolos en el objeto de contexto req.user par",
+  "chars": 984
+ },
+ {
+  "pagina": 84,
+  "folio": "72",
+  "orientacion": "vertical",
+  "lead": "Implementación en TypeScript del cálculo matemático de Meses de Stock Disponible y la cate",
+  "chars": 745
+ },
+ {
+  "pagina": 85,
+  "folio": "73",
+  "orientacion": "vertical",
+  "lead": "Figura 19",
+  "chars": 537
+ },
+ {
+  "pagina": 86,
+  "folio": "74",
+  "orientacion": "vertical",
+  "lead": "Interfaz de Usuario: Módulo de Inventario y Control de Lotes de Biológicos con Trazabilida",
+  "chars": 515
+ },
+ {
+  "pagina": 87,
+  "folio": "75",
+  "orientacion": "vertical",
+  "lead": "Interfaz de Usuario: Matriz Contable de Movimientos Mensuales de Vacunas por Establecimien",
+  "chars": 509
+ },
+ {
+  "pagina": 88,
+  "folio": "76",
+  "orientacion": "vertical",
+  "lead": "Interfaz de Usuario: Módulo de Planificación Anual de Metas PAI y Programación Mensual Ene",
+  "chars": 501
+ },
+ {
+  "pagina": 89,
+  "folio": "77",
+  "orientacion": "vertical",
+  "lead": "Interfaz de Usuario: Módulo de Inteligencia Logística ICI-DEMID con Semáforo de Disponibil",
+  "chars": 499
+ },
+ {
+  "pagina": 90,
+  "folio": "78",
+  "orientacion": "vertical",
+  "lead": "Interfaz de Usuario: Vista Detallada del Kardex con Múltiples Operaciones (Ingreso, Salida",
+  "chars": 699
+ },
+ {
+  "pagina": 91,
+  "folio": "79",
+  "orientacion": "vertical",
+  "lead": "",
+  "chars": 547
+ },
+ {
+  "pagina": 92,
+  "folio": "80",
+  "orientacion": "vertical",
+  "lead": "La fase de pruebas en Extreme Programming constituye el pilar fundamental que garantiza la",
+  "chars": 1421
+ },
+ {
+  "pagina": 93,
+  "folio": "81",
+  "orientacion": "vertical",
+  "lead": "Suite de Pruebas Archivo de",
+  "chars": 1942
+ },
+ {
+  "pagina": 94,
+  "folio": "82",
+  "orientacion": "vertical",
+  "lead": "Caso de Prueba",
+  "chars": 2120
+ },
+ {
+  "pagina": 95,
+  "folio": "83",
+  "orientacion": "vertical",
+  "lead": "Caso de Prueba",
+  "chars": 2150
+ },
+ {
+  "pagina": 96,
+  "folio": "84",
+  "orientacion": "vertical",
+  "lead": "Característica ISO/IEC 25010",
+  "chars": 1582
+ },
+ {
+  "pagina": 97,
+  "folio": "85",
+  "orientacion": "vertical",
+  "lead": "Diagrama de Despliegue Físico y Topología de Red en Producción con Docker y Nginx",
+  "chars": 697
+ },
+ {
+  "pagina": 98,
+  "folio": "86",
+  "orientacion": "vertical",
+  "lead": "CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN",
+  "chars": 2339
+ },
+ {
+  "pagina": 99,
+  "folio": "87",
+  "orientacion": "vertical",
+  "lead": "25010:2023; (3) validación de contenido de los instrumentos por juicio de expertos y forma",
+  "chars": 2211
+ },
+ {
+  "pagina": 100,
+  "folio": "88",
+  "orientacion": "vertical",
+  "lead": "• GE: Grupo experimental único conformado por la totalidad censal del personal operativo d",
+  "chars": 2884
+ },
+ {
+  "pagina": 101,
+  "folio": "89",
+  "orientacion": "vertical",
+  "lead": "Etapa de Intervención",
+  "chars": 2595
+ },
+ {
+  "pagina": 102,
+  "folio": "90",
+  "orientacion": "vertical",
+  "lead": "Centro de Acopio / Dependencia Sanitaria",
+  "chars": 2584
+ },
+ {
+  "pagina": 103,
+  "folio": "91",
+  "orientacion": "vertical",
+  "lead": "sumativo directo obtenido por el operador i en cada subescala de 4 ítems (rango de 4 a 20 ",
+  "chars": 3207
+ },
+ {
+  "pagina": 104,
+  "folio": "92",
+  "orientacion": "vertical",
+  "lead": "4.9. Operacionalización de variables",
+  "chars": 2222
+ },
+ {
+  "pagina": 105,
+  "folio": "93",
+  "orientacion": "vertical",
+  "lead": "Variable Definición",
+  "chars": 2799
+ },
+ {
+  "pagina": 106,
+  "folio": "94",
+  "orientacion": "vertical",
+  "lead": "𝑇𝑣𝑎𝑙𝑒,𝑖= ∑",
+  "chars": 2275
+ },
+ {
+  "pagina": 107,
+  "folio": "95",
+  "orientacion": "vertical",
+  "lead": "Donde cada término representa la calificación ordinal asignada por el operador i al reacti",
+  "chars": 2283
+ },
+ {
+  "pagina": 108,
+  "folio": "96",
+  "orientacion": "vertical",
+  "lead": "campos de control temporal y tres escenarios operativos estandarizados (REG-01: registro d",
+  "chars": 2526
+ },
+ {
+  "pagina": 109,
+  "folio": "97",
+  "orientacion": "vertical",
+  "lead": "Dimensión Evaluada",
+  "chars": 2057
+ },
+ {
+  "pagina": 110,
+  "folio": "98",
+  "orientacion": "vertical",
+  "lead": "(κ = (P_o - P_e) / (1 - P_e)), reconociendo que cuando la auditoría es ejecutada por un ún",
+  "chars": 2505
+ },
+ {
+  "pagina": 111,
+  "folio": "99",
+  "orientacion": "vertical",
+  "lead": "𝑉= 𝑆",
+  "chars": 2564
+ },
+ {
+  "pagina": 112,
+  "folio": "100",
+  "orientacion": "vertical",
+  "lead": "Cód. Instrumento",
+  "chars": 2766
+ },
+ {
+  "pagina": 113,
+  "folio": "101",
+  "orientacion": "vertical",
+  "lead": "𝑡= 𝑑",
+  "chars": 2288
+ },
+ {
+  "pagina": 114,
+  "folio": "102",
+  "orientacion": "vertical",
+  "lead": "En segundo lugar, se garantizó el principio de autonomía y voluntariedad mediante la suscr",
+  "chars": 1077
+ },
+ {
+  "pagina": 115,
+  "folio": "103",
+  "orientacion": "vertical",
+  "lead": "CAPÍTULO V: RESULTADOS",
+  "chars": 2711
+ },
+ {
+  "pagina": 116,
+  "folio": "104",
+  "orientacion": "vertical",
+  "lead": ".915 (IC 95%: [0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%: [0.61",
+  "chars": 2178
+ },
+ {
+  "pagina": 117,
+  "folio": "105",
+  "orientacion": "vertical",
+  "lead": "5.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones",
+  "chars": 2547
+ },
+ {
+  "pagina": 118,
+  "folio": "106",
+  "orientacion": "vertical",
+  "lead": "Indicador Momento",
+  "chars": 1074
+ },
+ {
+  "pagina": 119,
+  "folio": "107",
+  "orientacion": "vertical",
+  "lead": "",
+  "chars": 1706
+ },
+ {
+  "pagina": 120,
+  "folio": "108",
+  "orientacion": "vertical",
+  "lead": "Tabla 15",
+  "chars": 1270
+ },
+ {
+  "pagina": 121,
+  "folio": "109",
+  "orientacion": "vertical",
+  "lead": "",
+  "chars": 1570
+ },
+ {
+  "pagina": 122,
+  "folio": "110",
+  "orientacion": "vertical",
+  "lead": "Tabla 16",
+  "chars": 1503
+ },
+ {
+  "pagina": 123,
+  "folio": "111",
+  "orientacion": "vertical",
+  "lead": "",
+  "chars": 1470
+ },
+ {
+  "pagina": 124,
+  "folio": "112",
+  "orientacion": "vertical",
+  "lead": "2. Tiempo de emisión de vales (T_vale): W = 0.933, p = 0.331 (p > .05). 3. Registros sin d",
+  "chars": 2182
+ },
+ {
+  "pagina": 125,
+  "folio": "113",
+  "orientacion": "vertical",
+  "lead": "Dimensión Indicador",
+  "chars": 2554
+ },
+ {
+  "pagina": 126,
+  "folio": "114",
+  "orientacion": "vertical",
+  "lead": "estandarizado Z = -3.30, p = 0.001 (p < .001) y un tamaño del efecto r de Rosenthal de 0.6",
+  "chars": 2254
+ },
+ {
+  "pagina": 127,
+  "folio": "115",
+  "orientacion": "vertical",
+  "lead": "A. Planteamiento",
+  "chars": 2223
+ },
+ {
+  "pagina": 128,
+  "folio": "116",
+  "orientacion": "vertical",
+  "lead": "Indicador Prueba",
+  "chars": 2394
+ },
+ {
+  "pagina": 129,
+  "folio": "117",
+  "orientacion": "vertical",
+  "lead": "acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación",
+  "chars": 2293
+ },
+ {
+  "pagina": 130,
+  "folio": "118",
+  "orientacion": "vertical",
+  "lead": "dimensiones operacionales, se formula la regla de decisión conjuntiva: H_G se aceptará si ",
+  "chars": 2209
+ },
+ {
+  "pagina": 131,
+  "folio": "119",
+  "orientacion": "vertical",
+  "lead": "Hipótesis de",
+  "chars": 938
+ },
+ {
+  "pagina": 132,
+  "folio": "120",
+  "orientacion": "vertical",
+  "lead": "CAPÍTULO VI: DISCUSIÓN",
+  "chars": 2714
+ },
+ {
+  "pagina": 133,
+  "folio": "121",
+  "orientacion": "vertical",
+  "lead": "+119.47%) y en la Utilidad Percibida (de 9.00 a 18.50 puntos, +105.56%), alcanzando un pun",
+  "chars": 1187
+ },
+ {
+  "pagina": 134,
+  "folio": "122",
+  "orientacion": "vertical",
+  "lead": "CONCLUSIONES",
+  "chars": 1996
+ },
+ {
+  "pagina": 135,
+  "folio": "123",
+  "orientacion": "vertical",
+  "lead": "RECOMENDACIONES",
+  "chars": 1491
+ },
+ {
+  "pagina": 136,
+  "folio": "124",
+  "orientacion": "vertical",
+  "lead": "REFERENCIAS BIBLIOGRÁFICAS",
+  "chars": 2125
+ },
+ {
+  "pagina": 137,
+  "folio": "125",
+  "orientacion": "vertical",
+  "lead": "[Tesis de licenciatura, Universidad de Ciencias y Humanidades]. Repositorio Institucional ",
+  "chars": 2140
+ },
+ {
+  "pagina": 138,
+  "folio": "126",
+  "orientacion": "vertical",
+  "lead": "Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el contr",
+  "chars": 2244
+ },
+ {
+  "pagina": 139,
+  "folio": "127",
+  "orientacion": "vertical",
+  "lead": "and Practice, 11(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22- 00295",
+  "chars": 2194
+ },
+ {
+  "pagina": 140,
+  "folio": "128",
+  "orientacion": "vertical",
+  "lead": "reproductive health services in Morocco. Clinical and Experimental Obstetrics & Gynecology",
+  "chars": 2251
+ },
+ {
+  "pagina": 141,
+  "folio": "129",
+  "orientacion": "vertical",
+  "lead": "World Health Organization. (2021). Global strategy on digital health 2020–2025. World Heal",
+  "chars": 160
+ },
+ {
+  "pagina": 142,
+  "folio": "130",
+  "orientacion": "vertical",
+  "lead": "ANEXOS",
+  "chars": 12
+ },
+ {
+  "pagina": 143,
+  "folio": "131",
+  "orientacion": "horizontal",
+  "lead": "ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007)",
+  "chars": 1794
+ },
+ {
+  "pagina": 144,
+  "folio": "132",
+  "orientacion": "horizontal",
+  "lead": "Problemas de Investigación Objetivos de Investigación",
+  "chars": 2852
+ },
+ {
+  "pagina": 145,
+  "folio": "133",
+  "orientacion": "horizontal",
+  "lead": "Problemas de Investigación Objetivos de Investigación",
+  "chars": 1651
+ },
+ {
+  "pagina": 146,
+  "folio": "134",
+  "orientacion": "vertical",
+  "lead": "ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)",
+  "chars": 1727
+ },
+ {
+  "pagina": 147,
+  "folio": "135",
+  "orientacion": "vertical",
+  "lead": "Variable Definición",
+  "chars": 1195
+ },
+ {
+  "pagina": 148,
+  "folio": "136",
+  "orientacion": "vertical",
+  "lead": "ANEXO 3: CERTIFICADOS DE VALIDACIÓN POR JUICIO DE EXPERTOS",
+  "chars": 2028
+ },
+ {
+  "pagina": 149,
+  "folio": "137",
+  "orientacion": "vertical",
+  "lead": "Juez Validador: Evaluador Pericial Designado (Experto 2)",
+  "chars": 1548
+ },
+ {
+  "pagina": 150,
+  "folio": "138",
+  "orientacion": "vertical",
+  "lead": "ANEXO 4: INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA INVESTIGACIÓN",
+  "chars": 1649
+ },
+ {
+  "pagina": 151,
+  "folio": "139",
+  "orientacion": "vertical",
+  "lead": "Código Indicador Medido",
+  "chars": 1944
+ },
+ {
+  "pagina": 152,
+  "folio": "140",
+  "orientacion": "vertical",
+  "lead": "Ítem Constructo TAM",
+  "chars": 376
+ },
+ {
+  "pagina": 153,
+  "folio": "141",
+  "orientacion": "vertical",
+  "lead": "ANEXO 5: MATRIZ DE DATOS TABULADOS DE CAMPO (PRETEST Y POSTTEST)",
+  "chars": 1336
+ },
+ {
+  "pagina": 154,
+  "folio": "142",
+  "orientacion": "vertical",
+  "lead": "suj eto",
+  "chars": 1491
+ },
+ {
+  "pagina": 155,
+  "folio": "143",
+  "orientacion": "vertical",
+  "lead": "suj eto",
+  "chars": 1468
+ },
+ {
+  "pagina": 156,
+  "folio": "144",
+  "orientacion": "vertical",
+  "lead": "ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y TRAZABILIDAD SIVAC",
+  "chars": 1770
+ },
+ {
+  "pagina": 157,
+  "folio": "145",
+  "orientacion": "vertical",
+  "lead": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO",
+  "chars": 2019
+ },
+ {
+  "pagina": 158,
+  "folio": "146",
+  "orientacion": "vertical",
+  "lead": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en",
+  "chars": 829
+ }
+]

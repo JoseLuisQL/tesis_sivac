@@ -1,0 +1,11 @@
+P151: Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel explicativo, empleando un diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂). Se trabajó con una población censal conformada por la totalidad de los 14 operadores de 
+P160: En el contexto local de la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), con sede institucional en la ciudad de Andahuaylas, la Estrategia Sanitaria Nacional de Inmunizaciones administra el abastecimiento y la distribución de vacunas hacia diecinueve centros de acopio registrados, 
+P579: Asimismo, se definieron explícitamente los criterios de inclusión y el tamaño muestral efectivo (n efectivo) por indicador. Dado que los 2 operadores del Almacén Especializado de Vacunas de la Red Chanka y los 12 operadores, uno en cada uno de los doce centros de acopio restantes, pueden ejecutar vo
+P654: La caracterización descriptiva de la variable dependiente Gestión de movimientos mensuales de vacunas se estructuró conforme a las tres dimensiones normativas inmutables fijadas para la variable dependiente: (1) Oportunidad de procesamiento, (2) Consistencia documental, y (3) Satisfacción del usuari
+T30 F1 C0: Almacén Especializado de Vacunas (Chanka)
+T52 F1 C1: ALMACÉN (CHANKA)
+T52 F2 C1: ALMACÉN (CHANKA)
+T53 F1 C1: ALMACÉN (CHANKA)
+T53 F2 C1: ALMACÉN (CHANKA)
+T56 F0 C0: ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA
+Inserte en este recuadro la fotografía de evidencia correspondiente a: Aplicación de la Ficha de Regist

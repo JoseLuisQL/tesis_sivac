@@ -1,0 +1,15 @@
+00 | Centro de Acopio / Dependencia Sanitaria || Función Operativa en la Cadena de Inmunizaciones || Personal (n) || Porcentaje (%)
+01 | Almacén Especializado de Vacunas (Chanka) || Administración del almacén central y distribución a redes || 2 || 14.29%
+02 | Hospital Andahuaylas || Almacenamiento y control de existencias de vacunas || 1 || 7.14%
+03 | Hospital ESSALUD Andahuaylas || Almacenamiento y control de existencias de vacunas || 1 || 7.14%
+04 | Centro de Salud Andahuaylas || Almacenamiento y control de existencias de vacunas || 1 || 7.14%
+05 | Talavera || Almacenamiento y despacho de biológicos en la microred Talavera || 1 || 7.14%
+06 | San Jerónimo || Almacenamiento y despacho de biológicos en la microred San Jerónimo || 1 || 7.14%
+07 | Huancaray || Almacenamiento y despacho de biológicos en la microred Huancaray || 1 || 7.14%
+08 | Chicmo || Almacenamiento y despacho de biológicos en la microred Chicmo || 1 || 7.14%
+09 | Huancabamba || Almacenamiento y despacho de biológicos en la microred Huancabamba || 1 || 7.14%
+10 | Pampachiri || Almacenamiento y despacho de biológicos en la microred Pampachiri || 1 || 7.14%
+11 | San Antonio de Cachi || Almacenamiento y despacho de biológicos en la microred Huancaray || 1 || 7.14%
+12 | Turpo || Almacenamiento y despacho de biológicos en la microred Turpo || 1 || 7.14%
+13 | Kishuara || Almacenamiento y despacho de biológicos en la microred Kishuara || 1 || 7.14%
+14 | Total || Población y Muestra Censal (N = n = 14) || 14 || 100.00%

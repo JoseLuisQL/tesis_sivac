@@ -1,0 +1,2296 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "realist review immunization data",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ " to improve the quality and use of <em>data</em> feature prominently in several national plans of action and in global strategies like the Global Vaccine Action Plan. The goal of the <em>Immunization</em> <em>Data</em>: Evidence for Action (IDEA) project is to identify, <em>review</em>", ", synthesize, and disseminate what works to improve the use of <em>immunization</em> <em>data</em> and why it works." ],
+            "dc.title" : [ "<em>Immunization</em> <em>Data</em>: Evidence for Action. <em>Realist</em> <em>Review</em> of What Works to Improve <em>Data</em> Use for <em>Immunization</em>, Evidence from Low- and Middle-Income Countries", "Données de vaccination : des preuves pour l’action, Examen <em>réaliste</em>: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "ee16da9a-85e3-425c-9707-0987c40fd538",
+              "uuid" : "ee16da9a-85e3-425c-9707-0987c40fd538",
+              "name" : "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+              "handle" : "10665.2/50482",
+              "metadata" : {
+                "dc.contributor" : [ {
+                  "value" : "PATH",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "Data quality is a cornerstone of well-functioning health systems. Sound and reliable information enables better resource allocation, more targeted care, policy development, and implementation, and more effective health education and training. Calls to improve the quality and use of data feature prominently in several national plans of action and in global strategies like the Global Vaccine Action Plan. The goal of the Immunization Data: Evidence for Action (IDEA) project is to identify, review, synthesize, and disseminate what works to improve the use of immunization data and why it works.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "La qualité des données est essentielle au bon fonctionnement des systèmes de santé. Une information solide et fiable permet une meilleure allocation des ressources, un meilleur ciblage des soins, des politiques et de la mise en oeuvre, et une plus grande efficacité de l’éducation et de la formation en matière de santé. Le plan d’action national de nombreux pays, de même que les stratégies mondiales telles que le Plan d’action mondial pour les vaccins, préconisent l’amélioration de la qualité et de l’utilisation des données. Le projet Données de vaccination : des preuves pour l’action (IDEA) a pour objectif d’identifier, d’examiner, de synthétiser et de diffuser « ce qui marche » pour améliorer l’utilisation des données de vaccination et pourquoi.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "La calidad de los datos es una piedra angular del buen funcionamiento de los sistemas de salud. La información sólida y confiable permite una mejor asignación de recursos, una atención más específica, el desarrollo y la aplicación de políticas, y una Educación y formación en salud más efectivas. El llamado para mejorar la calidad y el uso de los datos ocupan un lugar prominente en varios planes de acción nacionales y en estrategias mundiales como el Plan de Acción Mundial sobre Vacunas. El objetivo del proyecto Datos de Inmunización: Evidencia para la Acción (IDEA) es identificar, revisar, sintetizar y diseminar lo que funciona para mejorar el uso de los datos sobre inmunización y por qué funciona.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.citation" : [ {
+                  "value" : "Immunization Data: Evidence for Action. A Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle- Income Countries. Seattle: PATH; Washington, DC: PAHO; 2019.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Données de vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire. Seattle : PATH ; Washington, DC : OPS; 2019.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. Seattle: PATH; Washington, DC: OPS; 2019.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.isbn" : [ {
+                  "value" : "978-92-75-32061-7",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "978-92-75-22061-0",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "978-92-75-12061-3",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/50482",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "fr",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "CC BY-SA 4.0",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Electronic Health Records",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Immunization Programs",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Patient Generated Health Data",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Data Collection",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Health Information Systems",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Registros Electrónicos de Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Programas de Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Recolección de Datos",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Sistemas de Información en Salud",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                } ],
+                "dc.title" : [ {
+                  "value" : "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Données de vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.type" : [ {
+                  "value" : "Publications",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Family, Health Promotion and Life Course (FPL)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.subject" : [ {
+                  "value" : "Cat 3. Determinants of Health and Promoting Health throughout the Life Course",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Cat 4. Health Systems",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-03-11T04:36:47.311+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.title" : [ "<em>Immunization</em> Newsletter, v.41, n.1, Mar. 2019" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "02f12879-02d8-43f9-8429-be03e6e2b60d",
+              "uuid" : "02f12879-02d8-43f9-8429-be03e6e2b60d",
+              "name" : "Immunization Newsletter, v.41, n.1, Mar. 2019",
+              "handle" : "10665.2/54318",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2021",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2021",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.tableofcontents" : [ {
+                  "value" : "Regional Monitoring Commission on Measles and Rubella Post-Elimination Meets at PAHO | PAHO and PATH Launch New Resource to Improve Data Use for Immunization | Three Myths about Influenza Vaccination | School Health Activities in Argentina to Maintain Measles Elimination | Table 1. Prices for Vaccines Purchased through the PAHO Revolving Fund, 2019 | Table 2. Prices for Syringes Purchased through the PAHO Revolving Fund, 2019 | What I Have Learned about Vaccination against Seasonal Influenza and Pandemic Preparedness... by Alba Maria Ropero A.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/54318",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofjournal" : [ {
+                  "value" : "PAHO Immunization Newsletter",
+                  "language" : "EN",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Boletín de Inmunización de la OPS",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Boletim de Imunização da OPAS",
+                  "language" : "pt",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Bulletin d'Immunisation de l'OPS",
+                  "language" : "fr",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Immunization Newsletter (EPI Newsletter);v.41, 2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Immunization Programs",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Immunization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Vaccination",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Vaccines",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Vaccine-Preventable Diseases",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Measles",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Syringes",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Argentina",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Americas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                }, {
+                  "value" : "Caribbean Region",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 9
+                } ],
+                "dc.title" : [ {
+                  "value" : "Immunization Newsletter, v.41, n.1, Mar. 2019",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Newsletters",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Family, Health Promotion and Life Course (FPL)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/54319",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/54320",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "10665.2/54321",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-06-17T23:31:27.012+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/02f12879-02d8-43f9-8429-be03e6e2b60d"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "78f33b43-b790-4c3a-bf71-07167cd02779",
+              "uuid" : "78f33b43-b790-4c3a-bf71-07167cd02779",
+              "name" : "The strategy, cost, and progress of primary health care",
+              "handle" : "10665.2/27398",
+              "metadata" : {
+                "dc.contributor.author" : [ {
+                  "value" : "Boland, Robert G.A",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Young, M.E",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2016",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2016",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "1982",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/27398",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Bulletin of the Pan American Health Organization (PAHO);16(3),1982",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : "",
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Primary Health Care",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "China",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Cuba",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Tanzania, Rep. Unida de",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "dc.title" : [ {
+                  "value" : "The strategy, cost, and progress of primary health care",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Journal articles",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2016-03-05T22:09:43.524+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/78f33b43-b790-4c3a-bf71-07167cd02779"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "6f7c340f-28f6-43f0-9563-d40b05e6e948",
+              "uuid" : "6f7c340f-28f6-43f0-9563-d40b05e6e948",
+              "name" : "CD53/INF/3 - WHO Strategic Budget Space Allocation",
+              "handle" : "10665.2/5524",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2014",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2014",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2014",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "CD53/INF/3",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/5524",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "PAHO Directing Council",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "CD53",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.title" : [ {
+                  "value" : "CD53/INF/3 - WHO Strategic Budget Space Allocation",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Governing Bodies documents",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/60694",
+                  "language" : "Español",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/60695",
+                  "language" : "Français",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "10665.2/60696",
+                  "language" : "Português",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2024-07-21T03:00:16.356+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/6f7c340f-28f6-43f0-9563-d40b05e6e948"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "d93026a7-004d-42e6-8e7b-5ee854845168",
+              "uuid" : "d93026a7-004d-42e6-8e7b-5ee854845168",
+              "name" : "WHO Draft MTSP 2008-2013",
+              "handle" : "10665.2/18709",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2016",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2016",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2007",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "MTSP08-13",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/18709",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "es",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : "",
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "SPBA1",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Organizaciones, Comités y Convenciones",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Budgets",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Presupuestos",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Comité Ejecutivo de la OPS",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "PAHO Executive Committee",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                } ],
+                "dc.title" : [ {
+                  "value" : "WHO Draft MTSP 2008-2013",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Proyecto de Plan Estratégico a plazo medio 2008-2013",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.type" : [ {
+                  "value" : "Governing Bodies documents",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2016-02-19T17:02:26.332+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/d93026a7-004d-42e6-8e7b-5ee854845168"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "44b10f0e-fb21-4e0e-bf91-23492a2ef87b",
+              "uuid" : "44b10f0e-fb21-4e0e-bf91-23492a2ef87b",
+              "name" : "AIDS surveillance in the Americas: Report through 31 December 1985",
+              "handle" : "10665.2/39243",
+              "metadata" : {
+                "dc.contributor.author" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2018",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2018",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "1986",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "Disponible en español",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "http://hist.library.paho.org/English/EPID/8570.pdf",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "https://iris.paho.org/handle/10665.2/39243",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "PAHO. Epidemiological Bulletin;7(2),1986",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : "",
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Síndrome de Inmunodeficiencia Adquirida",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Vigilancia Epidemiológica",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "América Central",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "América del Norte",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Región del Caribe",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "América Latina",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                } ],
+                "dc.title" : [ {
+                  "value" : "AIDS surveillance in the Americas: Report through 31 December 1985",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Journal articles",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2018-05-11T15:24:39.888+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/44b10f0e-fb21-4e0e-bf91-23492a2ef87b"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.title" : [ "CD25/14 - Expanded Program on <em>Immunization</em>" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "32fa37b0-2c43-40d1-8c95-ae5db9507ddf",
+              "uuid" : "32fa37b0-2c43-40d1-8c95-ae5db9507ddf",
+              "name" : "CD25/14 - Expanded Program on Immunization",
+              "handle" : "10665.2/6387",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2015",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2015",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "1977-10-06",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "CD25/14",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/6387",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "en",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "PAHO Directing Council",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "CD25",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.title" : [ {
+                  "value" : "CD25/14 - Expanded Program on Immunization",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Governing Bodies documents",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/6352",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2025-09-30T18:14:38.522+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/32fa37b0-2c43-40d1-8c95-ae5db9507ddf"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "14602b07-b5f7-496e-a1ae-6cad048300c9",
+              "uuid" : "14602b07-b5f7-496e-a1ae-6cad048300c9",
+              "name" : "SPBA1/INF/4 - WHO Draft Medium-term Strategic Plan 2008-2013 including the Draft Proposed Programme Budget 2008-2009",
+              "handle" : "10665.2/63241",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2024-12-13T14:36:22Z",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2024-12-13T14:36:22Z",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2007-03-28",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "SPBA1/INF/4",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/63241",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "SPBA1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "PAHO Executive Committee",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.title" : [ {
+                  "value" : "SPBA1/INF/4 - WHO Draft Medium-term Strategic Plan 2008-2013 including the Draft Proposed Programme Budget 2008-2009",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Governing Bodies documents",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.page" : [ {
+                  "value" : "1 p.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/63242",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2024-12-14T03:06:00.664+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/14602b07-b5f7-496e-a1ae-6cad048300c9"
+                }
+              }
+            }
+          }
+        } ]
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%20review%20immunization%20data&page=1&size=8"
+        },
+        "last" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%20review%20immunization%20data&page=48&size=8"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%20review%20immunization%20data&size=8"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 8,
+        "totalPages" : 49,
+        "totalElements" : 391
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "213 p.",
+      "maxValue" : "Östlin, Piroska",
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/author?query=realist%20review%20immunization%20data&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/author?query=realist%20review%20immunization%20data&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Pan American Health Organization",
+          "count" : 348,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.author=Pan%20American%20Health%20Organization,equals"
+            }
+          }
+        }, {
+          "label" : "Organización Panamericana de la Salud",
+          "count" : 17,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.author=Organizaci%C3%B3n%20Panamericana%20de%20la%20Salud,equals"
+            }
+          }
+        }, {
+          "label" : "Commission of the Pan American Health Organization on Equity and Health Inequalities in the Americas",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.author=Commission%20of%20the%20Pan%20American%20Health%20Organization%20on%20Equity%20and%20Health%20Inequalities%20in%20the%20Americas,equals"
+            }
+          }
+        }, {
+          "label" : "FAO",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.author=FAO,equals"
+            }
+          }
+        }, {
+          "label" : "Organisation panaméricaine de la Santé",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.author=Organisation%20panam%C3%A9ricaine%20de%20la%20Sant%C3%A9,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/subject?query=realist%20review%20immunization%20data&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/subject?query=realist%20review%20immunization%20data&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "PAHO Directing Council",
+          "count" : 78,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.subject=PAHO%20Directing%20Council,equals"
+            }
+          }
+        }, {
+          "label" : "PAHO Executive Committee",
+          "count" : 67,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.subject=PAHO%20Executive%20Committee,equals"
+            }
+          }
+        }, {
+          "label" : "Organización Panamericana de la Salud",
+          "count" : 54,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.subject=Organizaci%C3%B3n%20Panamericana%20de%20la%20Salud,equals"
+            }
+          }
+        }, {
+          "label" : "América Latina",
+          "count" : 48,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.subject=Am%C3%A9rica%20Latina,equals"
+            }
+          }
+        }, {
+          "label" : "Pan American Sanitary Conference",
+          "count" : 37,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.subject=Pan%20American%20Sanitary%20Conference,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "1902",
+      "maxValue" : "s.d.",
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/dateIssued?query=realist%20review%20immunization%20data&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "1950 - 1979",
+          "count" : 102,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.dateIssued=%5B1950%20TO%201979%5D,equals"
+            }
+          }
+        }, {
+          "label" : "1980 - 2009",
+          "count" : 152,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.dateIssued=%5B1980%20TO%202009%5D,equals"
+            }
+          }
+        }, {
+          "label" : "2010 - 2026",
+          "count" : 136,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.dateIssued=%5B2010%20TO%202026%5D,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "has_content_in_original_bundle",
+      "facetType" : "standard",
+      "facetLimit" : 2,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/has_content_in_original_bundle?query=realist%20review%20immunization%20data&size=2"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 2
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "true",
+          "count" : 391,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.has_content_in_original_bundle=true,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/entityType?query=realist%20review%20immunization%20data"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "iswhotranslation",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/iswhotranslation?query=realist%20review%20immunization%20data&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "No",
+          "count" : 138,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.iswhotranslation=No,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "statusmandates",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/statusmandates?query=realist%20review%20immunization%20data&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "No",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.statusmandates=No,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "city",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/city?query=realist%20review%20immunization%20data&page=1&size=10"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/city?query=realist%20review%20immunization%20data&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Washington, D.C.",
+          "count" : 152,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Washington,%20D.C.,equals"
+            }
+          }
+        }, {
+          "label" : "Washington, D.C",
+          "count" : 46,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Washington,%20D.C,equals"
+            }
+          }
+        }, {
+          "label" : "Washington, D. C.",
+          "count" : 6,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Washington,%20D.%20C.,equals"
+            }
+          }
+        }, {
+          "label" : "Kingston 7",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Kingston%207,equals"
+            }
+          }
+        }, {
+          "label" : "Minneapolis",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Minneapolis,equals"
+            }
+          }
+        }, {
+          "label" : "Washington D.C",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Washington%20D.C,equals"
+            }
+          }
+        }, {
+          "label" : "Washington D.C.",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Washington%20D.C.,equals"
+            }
+          }
+        }, {
+          "label" : "Bridgetown",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Bridgetown,equals"
+            }
+          }
+        }, {
+          "label" : "Geneva",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Geneva,equals"
+            }
+          }
+        }, {
+          "label" : "Georgetown",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.city=Georgetown,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "country",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/country?query=realist%20review%20immunization%20data&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "United States",
+          "count" : 203,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=United%20States,equals"
+            }
+          }
+        }, {
+          "label" : "Jamaica",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=Jamaica,equals"
+            }
+          }
+        }, {
+          "label" : "Barbados",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=Barbados,equals"
+            }
+          }
+        }, {
+          "label" : "Chile",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=Chile,equals"
+            }
+          }
+        }, {
+          "label" : "Guyana",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=Guyana,equals"
+            }
+          }
+        }, {
+          "label" : "Not specified",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=Not%20specified,equals"
+            }
+          }
+        }, {
+          "label" : "Trinidad And Tobago",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.country=Trinidad%20And%20Tobago,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "languageiso",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/languageiso?query=realist%20review%20immunization%20data&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "en",
+          "count" : 278,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.languageiso=en,equals"
+            }
+          }
+        }, {
+          "label" : "es",
+          "count" : 31,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.languageiso=es,equals"
+            }
+          }
+        }, {
+          "label" : "fr",
+          "count" : 4,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.languageiso=fr,equals"
+            }
+          }
+        }, {
+          "label" : "pt",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=realist%2520review%2520immunization%2520data&f.languageiso=pt,equals"
+            }
+          }
+        } ]
+      }
+    } ]
+  }
+}

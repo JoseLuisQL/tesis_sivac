@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "origen": "CANDIDATO_EDITORIAL_V22_BASE.docx (copia íntegra de CANDIDATO_TABLAS_V21b.docx, SHA-256 cf4530e1...)",
+    "motivo": "Tercera ronda editorial: normalización nativa de listas, viñetas y rótulos A/B/C; reparación de las cifras partidas en las columnas numéricas (la parada decimal se sustituye por alineación derecha porque Word omite la parada cuando el valor usa punto en un documento en español) y ensanche de la columna Momento de la Tabla 37. La Tabla 33 se conserva sin cambios tras verificar que todos sus tokens caben.",
+    "fecha": "2026-10-26",
+    "sangria_lista_dxa": 720,
+    "colgante_lista_dxa": 360
+  },
+  "listas": {
+    "sangria_dxa": 720,
+    "colgante_dxa": 360,
+    "limpiar_espacios_prosa": true
+  },
+  "tablas": {
+    "geometria_proporcional": [
+      {
+        "tabla": 35,
+        "anchos_dxa": [1720, 1738, 708, 938, 1087, 1394, 1180],
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 37,
+        "anchos_dxa": [1545, 1005, 900, 800, 900, 780, 1840, 995],
+        "margen_dxa": 60
+      }
+    ],
+    "alineacion_decimal": [
+      {"tabla": 30, "columnas": [2, 3], "modo": "tab_decimal", "numero_tabla_impreso": 30},
+      {"tabla": 35, "columnas": [2, 3, 4], "modo": "tab_decimal", "numero_tabla_impreso": 35},
+      {"tabla": 36, "columnas": [2, 3, 4, 5], "modo": "tab_decimal", "numero_tabla_impreso": 36},
+      {"tabla": 37, "columnas": [2, 3, 4, 5], "modo": "tab_decimal", "numero_tabla_impreso": 37},
+      {"tabla": 38, "columnas": [2, 3, 4, 5], "modo": "tab_decimal", "numero_tabla_impreso": 38},
+      {"tabla": 39, "columnas": [2], "modo": "tab_decimal", "numero_tabla_impreso": 39},
+      {"tabla": 52, "columnas": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "modo": "tab_decimal", "numero_tabla_impreso": 49},
+      {"tabla": 53, "columnas": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "modo": "tab_decimal", "numero_tabla_impreso": 50}
+    ]
+  }
+}

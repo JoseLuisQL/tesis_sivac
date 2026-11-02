@@ -1,0 +1,1713 @@
+{
+  "origen": "salidas\\documentos\\_v19_paso1.docx",
+  "destino": "salidas\\documentos\\_v19_paso2.docx",
+  "sha256_origen": "29a8cfebcb4f154a0d34f34d973839b092b5d43add4e8c96eca7010677b34f60",
+  "sha256_destino": "71bb46466ee4bc345607248ef78281af41919e1beff80d6fc77ea3f2e7a0400f",
+  "parrafos": 827,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "hipervinculos_nativos",
+      "hipervinculos": 38,
+      "relaciones_externas": 38,
+      "acciones": [
+        {
+          "parrafo": 726,
+          "url": "https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana",
+          "r_id": "rId71"
+        },
+        {
+          "parrafo": 727,
+          "url": "http://hdl.handle.net/20.500.12894/9418",
+          "r_id": "rId72"
+        },
+        {
+          "parrafo": 728,
+          "url": "https://doi.org/10.1109/TSE.2007.17",
+          "r_id": "rId73"
+        },
+        {
+          "parrafo": 729,
+          "url": "https://hdl.handle.net/11537/43590",
+          "r_id": "rId74"
+        },
+        {
+          "parrafo": 731,
+          "url": "https://doi.org/10.1109/2.796139",
+          "r_id": "rId75"
+        },
+        {
+          "parrafo": 732,
+          "url": "https://doi.org/10.2196/62657",
+          "r_id": "rId76"
+        },
+        {
+          "parrafo": 733,
+          "url": "http://hdl.handle.net/20.500.12872/844",
+          "r_id": "rId77"
+        },
+        {
+          "parrafo": 734,
+          "url": "https://doi.org/10.3389/frhs.2023.1059611",
+          "r_id": "rId78"
+        },
+        {
+          "parrafo": 737,
+          "url": "https://doi.org/10.1007/BF02310555",
+          "r_id": "rId79"
+        },
+        {
+          "parrafo": 738,
+          "url": "https://doi.org/10.2196/45070",
+          "r_id": "rId80"
+        },
+        {
+          "parrafo": 739,
+          "url": "https://doi.org/10.2307/249008",
+          "r_id": "rId81"
+        },
+        {
+          "parrafo": 741,
+          "url": "https://doi.org/10.1186/s43058-020-00022-8",
+          "r_id": "rId82"
+        },
+        {
+          "parrafo": 742,
+          "url": "https://doi.org/10.3389/fpubh.2023.1194807",
+          "r_id": "rId83"
+        },
+        {
+          "parrafo": 743,
+          "url": "https://doi.org/10.1007/BF02289499",
+          "r_id": "rId84"
+        },
+        {
+          "parrafo": 744,
+          "url": "https://hdl.handle.net/11537/33833",
+          "r_id": "rId85"
+        },
+        {
+          "parrafo": 746,
+          "url": "https://doi.org/10.1016/j.vaccine.2019.10.059",
+          "r_id": "rId86"
+        },
+        {
+          "parrafo": 747,
+          "url": "https://doi.org/10.25176/rfmh.v24i1.6189",
+          "r_id": "rId87"
+        },
+        {
+          "parrafo": 751,
+          "url": "https://doi.org/10.1186/s12912-024-02648-8",
+          "r_id": "rId88"
+        },
+        {
+          "parrafo": 752,
+          "url": "https://doi.org/10.35870/ijsecs.v5i3.5354",
+          "r_id": "rId89"
+        },
+        {
+          "parrafo": 753,
+          "url": "https://www.iso.org/standard/78176.html",
+          "r_id": "rId90"
+        },
+        {
+          "parrafo": 754,
+          "url": "https://doi.org/10.9745/GHSP-D-22-00295",
+          "r_id": "rId91"
+        },
+        {
+          "parrafo": 755,
+          "url": "https://doi.org/10.3390/app12199462",
+          "r_id": "rId92"
+        },
+        {
+          "parrafo": 757,
+          "url": "https://doi.org/10.1057/s41599-024-02976-9",
+          "r_id": "rId93"
+        },
+        {
+          "parrafo": 758,
+          "url": "https://doi.org/10.2196/81377",
+          "r_id": "rId94"
+        },
+        {
+          "parrafo": 759,
+          "url": "https://hdl.handle.net/20.500.12867/5068",
+          "r_id": "rId95"
+        },
+        {
+          "parrafo": 760,
+          "url": "https://doi.org/10.4258/hir.2024.30.4.375",
+          "r_id": "rId96"
+        },
+        {
+          "parrafo": 762,
+          "url": "https://doi.org/10.31083/j.ceog5104088",
+          "r_id": "rId97"
+        },
+        {
+          "parrafo": 763,
+          "url": "https://doi.org/10.2196/32722",
+          "r_id": "rId98"
+        },
+        {
+          "parrafo": 764,
+          "url": "https://doi.org/10.1590/1518-8345.3360.3307",
+          "r_id": "rId99"
+        },
+        {
+          "parrafo": 765,
+          "url": "https://iris.paho.org/handle/10665.2/50482",
+          "r_id": "rId100"
+        },
+        {
+          "parrafo": 767,
+          "url": "https://hdl.handle.net/20.500.14168/854",
+          "r_id": "rId101"
+        },
+        {
+          "parrafo": 769,
+          "url": "https://doi.org/10.4135/9781412984997",
+          "r_id": "rId102"
+        },
+        {
+          "parrafo": 771,
+          "url": "https://doi.org/10.1093/biomet/52.3-4.591",
+          "r_id": "rId103"
+        },
+        {
+          "parrafo": 772,
+          "url": "https://doi.org/10.3389/fphar.2024.1373642",
+          "r_id": "rId104"
+        },
+        {
+          "parrafo": 775,
+          "url": "https://doi.org/10.2307/30036540",
+          "r_id": "rId105"
+        },
+        {
+          "parrafo": 776,
+          "url": "https://doi.org/10.1186/s40545-023-00517-4",
+          "r_id": "rId106"
+        },
+        {
+          "parrafo": 777,
+          "url": "https://doi.org/10.2307/3001968",
+          "r_id": "rId107"
+        },
+        {
+          "parrafo": 778,
+          "url": "https://apps.who.int/iris/handle/10665/344249",
+          "r_id": "rId108"
+        }
+      ]
+    },
+    {
+      "tipo": "imagen",
+      "parrafo": 674,
+      "rId": "rId63",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\figuras\\estadistica\\figura_d3_satisfaccion_tam_spss.png",
+      "pixeles": [
+        2700,
+        1500
+      ],
+      "ancho_cm": 14.73,
+      "alto_cm": 8.18,
+      "dpi_efectivo": 465.6,
+      "bytes_anteriores": 125599,
+      "bytes_nuevos": 116537,
+      "formatos_ajustados": 2
+    },
+    {
+      "tipo": "keep_next_ultima_fila",
+      "tablas": 2,
+      "acciones": [
+        {
+          "tabla": 36,
+          "aplicados": 8,
+          "filas": 7
+        },
+        {
+          "tabla": 54,
+          "aplicados": 5,
+          "filas": 8
+        }
+      ]
+    },
+    {
+      "tipo": "celdas_texto",
+      "celdas": 5,
+      "acciones": [
+        {
+          "tabla": 34,
+          "fila": 1,
+          "columna": 6,
+          "antes": "Acreditado por protocolo y concordancia interobservador"
+        },
+        {
+          "tabla": 34,
+          "fila": 2,
+          "columna": 6,
+          "antes": "Acreditado por protocolo y concordancia interevaluador"
+        },
+        {
+          "tabla": 34,
+          "fila": 3,
+          "columna": 4,
+          "antes": "[Pendiente]"
+        },
+        {
+          "tabla": 34,
+          "fila": 3,
+          "columna": 5,
+          "antes": "[Pendiente]"
+        },
+        {
+          "tabla": 34,
+          "fila": 3,
+          "columna": 6,
+          "antes": "[Pendiente]"
+        }
+      ]
+    },
+    {
+      "tipo": "celdas_leyenda",
+      "celdas": 4,
+      "acciones": [
+        {
+          "tabla": 55,
+          "fila": 0,
+          "columna": 0,
+          "texto": "Fotografía pendiente de incorporación"
+        },
+        {
+          "tabla": 56,
+          "fila": 0,
+          "columna": 0,
+          "texto": "Fotografía pendiente de incorporación"
+        },
+        {
+          "tabla": 57,
+          "fila": 0,
+          "columna": 0,
+          "texto": "Fotografía pendiente de incorporación"
+        },
+        {
+          "tabla": 58,
+          "fila": 0,
+          "columna": 0,
+          "texto": "Fotografía pendiente de incorporación"
+        }
+      ]
+    },
+    {
+      "tipo": "normalizar_tamano",
+      "acciones": [
+        {
+          "tabla": 35,
+          "runs_ajustados": 49,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 36,
+          "runs_ajustados": 56,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 37,
+          "runs_ajustados": 56,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 38,
+          "runs_ajustados": 80,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 40,
+          "runs_ajustados": 35,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 41,
+          "runs_ajustados": 35,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 42,
+          "runs_ajustados": 49,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 52,
+          "runs_ajustados": 282,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 53,
+          "runs_ajustados": 282,
+          "minimo_pt": 10.0
+        }
+      ]
+    },
+    {
+      "tipo": "rebalanceo",
+      "acciones": [
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 35,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [1810, 1429, 857, 857, 1048, 1524, 1240] -> [1810, 1429, 857, 857, 1048, 1524, 1240]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 36,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [2078, 1220, 813, 768, 858, 813, 1220, 995] -> [2052, 1220, 813, 768, 884, 813, 1220, 995]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 37,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [2078, 1220, 813, 768, 858, 813, 1220, 995] -> [2008, 1220, 857, 768, 884, 813, 1220, 995]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 38,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [2078, 1220, 813, 768, 858, 813, 1220, 995] -> [2052, 1220, 813, 768, 884, 813, 1220, 995]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 40,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [2125, 1505, 1062, 708, 1328, 974, 1063] -> [2125, 1505, 1062, 708, 1328, 974, 1063]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 41,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [2125, 1505, 1062, 708, 1328, 974, 1063] -> [2125, 1505, 1062, 708, 1328, 974, 1063]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 42,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [2125, 1505, 1062, 708, 1328, 974, 1063] -> [2125, 1505, 1062, 708, 1328, 974, 1063]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 52,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [1100, 1559, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 862, 995] -> [935, 1559, 651, 700, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 862, 1111]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 53,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [1100, 1559, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 862, 995] -> [935, 1559, 651, 700, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 862, 1111]"
+        }
+      ],
+      "tablas": [
+        {
+          "indice_tabla": 35,
+          "columnas": 7,
+          "filas": 7,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              1810,
+              1429,
+              857,
+              857,
+              1048,
+              1524,
+              1240
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1810,
+              "ancho_util_dxa": 1690,
+              "token_mas_largo": "evaluación",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 911.2,
+              "requerido_dxa": 1039,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1429,
+              "ancho_util_dxa": 1309,
+              "token_mas_largo": "(Modalidad",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 933.2,
+              "requerido_dxa": 1061,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 857,
+              "ancho_util_dxa": 737,
+              "token_mas_largo": "ítems",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 455.4,
+              "requerido_dxa": 583,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 857,
+              "ancho_util_dxa": 737,
+              "token_mas_largo": "Muestra",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 722.0,
+              "requerido_dxa": 850,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1048,
+              "ancho_util_dxa": 928,
+              "token_mas_largo": "Cronbach",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 855.5,
+              "requerido_dxa": 984,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1524,
+              "ancho_util_dxa": 1404,
+              "token_mas_largo": "[0.874,",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 566.6,
+              "requerido_dxa": 695,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1240,
+              "ancho_util_dxa": 1120,
+              "token_mas_largo": "consistencia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1022.2,
+              "requerido_dxa": 1150,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 36,
+          "columnas": 8,
+          "filas": 7,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              2078,
+              1220,
+              813,
+              768,
+              858,
+              813,
+              1220,
+              995
+            ],
+            "anchos_nuevos": [
+              2052,
+              1220,
+              813,
+              768,
+              884,
+              813,
+              1220,
+              995
+            ],
+            "ensanchadas": [
+              4
+            ],
+            "donantes": [
+              0
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 2052,
+              "ancho_util_dxa": 1932,
+              "token_mas_largo": "Indicador",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.6,
+              "requerido_dxa": 973,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1220,
+              "ancho_util_dxa": 1100,
+              "token_mas_largo": "Diferencia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.0,
+              "requerido_dxa": 972,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 813,
+              "ancho_util_dxa": 693,
+              "token_mas_largo": "−30.00",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 562.8,
+              "requerido_dxa": 691,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 768,
+              "ancho_util_dxa": 648,
+              "token_mas_largo": "3.83",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 350.0,
+              "requerido_dxa": 478,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 884,
+              "ancho_util_dxa": 764,
+              "token_mas_largo": "Mediana",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 755.6,
+              "requerido_dxa": 884,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 813,
+              "ancho_util_dxa": 693,
+              "token_mas_largo": "RIC",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 366.6,
+              "requerido_dxa": 495,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1220,
+              "ancho_util_dxa": 1100,
+              "token_mas_largo": "−35.50",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 562.8,
+              "requerido_dxa": 691,
+              "cabe": true
+            },
+            {
+              "columna": 7,
+              "ancho_dxa": 995,
+              "ancho_util_dxa": 875,
+              "token_mas_largo": "Variación",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.1,
+              "requerido_dxa": 972,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 37,
+          "columnas": 8,
+          "filas": 7,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              2078,
+              1220,
+              813,
+              768,
+              858,
+              813,
+              1220,
+              995
+            ],
+            "anchos_nuevos": [
+              2008,
+              1220,
+              857,
+              768,
+              884,
+              813,
+              1220,
+              995
+            ],
+            "ensanchadas": [
+              2,
+              4
+            ],
+            "donantes": [
+              0
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 2008,
+              "ancho_util_dxa": 1888,
+              "token_mas_largo": "Concordancia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1110.8,
+              "requerido_dxa": 1239,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1220,
+              "ancho_util_dxa": 1100,
+              "token_mas_largo": "Diferencia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.0,
+              "requerido_dxa": 972,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 857,
+              "ancho_util_dxa": 737,
+              "token_mas_largo": "+32.43%",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 729.4,
+              "requerido_dxa": 857,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 768,
+              "ancho_util_dxa": 648,
+              "token_mas_largo": "6.69%",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 516.6,
+              "requerido_dxa": 645,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 884,
+              "ancho_util_dxa": 764,
+              "token_mas_largo": "Mediana",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 755.6,
+              "requerido_dxa": 884,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 813,
+              "ancho_util_dxa": 693,
+              "token_mas_largo": "8.88%",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 516.6,
+              "requerido_dxa": 645,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1220,
+              "ancho_util_dxa": 1100,
+              "token_mas_largo": "+25.00%",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 729.4,
+              "requerido_dxa": 857,
+              "cabe": true
+            },
+            {
+              "columna": 7,
+              "ancho_dxa": 995,
+              "ancho_util_dxa": 875,
+              "token_mas_largo": "Variación",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.1,
+              "requerido_dxa": 972,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 38,
+          "columnas": 8,
+          "filas": 10,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              2078,
+              1220,
+              813,
+              768,
+              858,
+              813,
+              1220,
+              995
+            ],
+            "anchos_nuevos": [
+              2052,
+              1220,
+              813,
+              768,
+              884,
+              813,
+              1220,
+              995
+            ],
+            "ensanchadas": [
+              4
+            ],
+            "donantes": [
+              0
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 2052,
+              "ancho_util_dxa": 1932,
+              "token_mas_largo": "Constructo",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 955.4,
+              "requerido_dxa": 1083,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1220,
+              "ancho_util_dxa": 1100,
+              "token_mas_largo": "Diferencia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.0,
+              "requerido_dxa": 972,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 813,
+              "ancho_util_dxa": 693,
+              "token_mas_largo": "+19.14",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 562.8,
+              "requerido_dxa": 691,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 768,
+              "ancho_util_dxa": 648,
+              "token_mas_largo": "2.27",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 350.0,
+              "requerido_dxa": 478,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 884,
+              "ancho_util_dxa": 764,
+              "token_mas_largo": "Mediana",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 755.6,
+              "requerido_dxa": 884,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 813,
+              "ancho_util_dxa": 693,
+              "token_mas_largo": "RIC",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 366.6,
+              "requerido_dxa": 495,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1220,
+              "ancho_util_dxa": 1100,
+              "token_mas_largo": "+12.00",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 562.8,
+              "requerido_dxa": 691,
+              "cabe": true
+            },
+            {
+              "columna": 7,
+              "ancho_dxa": 995,
+              "ancho_util_dxa": 875,
+              "token_mas_largo": "Variación",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.1,
+              "requerido_dxa": 972,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 40,
+          "columnas": 7,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              2125,
+              1505,
+              1062,
+              708,
+              1328,
+              974,
+              1063
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 2125,
+              "ancho_util_dxa": 2005,
+              "token_mas_largo": "Indicador",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 844.6,
+              "requerido_dxa": 973,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1505,
+              "ancho_util_dxa": 1385,
+              "token_mas_largo": "Wilcoxon",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 788.7,
+              "requerido_dxa": 917,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1062,
+              "ancho_util_dxa": 942,
+              "token_mas_largo": "Estadístico",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 933.4,
+              "requerido_dxa": 1061,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 708,
+              "ancho_util_dxa": 588,
+              "token_mas_largo": ".001",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 350.0,
+              "requerido_dxa": 478,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1328,
+              "ancho_util_dxa": 1208,
+              "token_mas_largo": "Tamaño",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 710.9,
+              "requerido_dxa": 839,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 974,
+              "ancho_util_dxa": 854,
+              "token_mas_largo": "ajustado",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 733.4,
+              "requerido_dxa": 861,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1063,
+              "ancho_util_dxa": 943,
+              "token_mas_largo": "Rechazar",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 744.0,
+              "requerido_dxa": 872,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 41,
+          "columnas": 7,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              2125,
+              1505,
+              1062,
+              708,
+              1328,
+              974,
+              1063
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 2125,
+              "ancho_util_dxa": 2005,
+              "token_mas_largo": "Concordancia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1110.8,
+              "requerido_dxa": 1239,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1505,
+              "ancho_util_dxa": 1385,
+              "token_mas_largo": "Wilcoxon",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 788.7,
+              "requerido_dxa": 917,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1062,
+              "ancho_util_dxa": 942,
+              "token_mas_largo": "Estadístico",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 933.4,
+              "requerido_dxa": 1061,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 708,
+              "ancho_util_dxa": 588,
+              "token_mas_largo": ".001",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 350.0,
+              "requerido_dxa": 478,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1328,
+              "ancho_util_dxa": 1208,
+              "token_mas_largo": "Tamaño",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 710.9,
+              "requerido_dxa": 839,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 974,
+              "ancho_util_dxa": 854,
+              "token_mas_largo": "ajustado",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 733.4,
+              "requerido_dxa": 861,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1063,
+              "ancho_util_dxa": 943,
+              "token_mas_largo": "Rechazar",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 744.0,
+              "requerido_dxa": 872,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 42,
+          "columnas": 7,
+          "filas": 7,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              2125,
+              1505,
+              1062,
+              708,
+              1328,
+              974,
+              1063
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 2125,
+              "ancho_util_dxa": 2005,
+              "token_mas_largo": "Aceptación",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 910.8,
+              "requerido_dxa": 1039,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1505,
+              "ancho_util_dxa": 1385,
+              "token_mas_largo": "Wilcoxon",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 788.7,
+              "requerido_dxa": 917,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1062,
+              "ancho_util_dxa": 942,
+              "token_mas_largo": "Estadístico",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 933.4,
+              "requerido_dxa": 1061,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 708,
+              "ancho_util_dxa": 588,
+              "token_mas_largo": ".001",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 350.0,
+              "requerido_dxa": 478,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1328,
+              "ancho_util_dxa": 1208,
+              "token_mas_largo": "Tamaño",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 710.9,
+              "requerido_dxa": 839,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 974,
+              "ancho_util_dxa": 854,
+              "token_mas_largo": "ajustado",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 733.4,
+              "requerido_dxa": 861,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1063,
+              "ancho_util_dxa": 943,
+              "token_mas_largo": "Rechazar",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 744.0,
+              "requerido_dxa": 872,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 52,
+          "columnas": 18,
+          "filas": 15,
+          "ancho_tabla_dxa": 13630,
+          "margenes_laterales_dxa": 57,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              1100,
+              1559,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              862,
+              995
+            ],
+            "anchos_nuevos": [
+              935,
+              1559,
+              651,
+              700,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              862,
+              1111
+            ],
+            "ensanchadas": [
+              3,
+              17
+            ],
+            "donantes": [
+              0
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 935,
+              "ancho_util_dxa": 821,
+              "token_mas_largo": "TRAB-",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 600.0,
+              "requerido_dxa": 722,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1559,
+              "ancho_util_dxa": 1445,
+              "token_mas_largo": "Huancabamba",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1144.0,
+              "requerido_dxa": 1266,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "T_reg",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 510.9,
+              "requerido_dxa": 633,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 700,
+              "ancho_util_dxa": 586,
+              "token_mas_largo": "T_vale",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 577.8,
+              "requerido_dxa": 700,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "RSD",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 400.0,
+              "requerido_dxa": 522,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "CPE",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 400.0,
+              "requerido_dxa": 522,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 7,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 8,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 9,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 10,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 11,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 12,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 13,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 14,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "total",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 388.8,
+              "requerido_dxa": 511,
+              "cabe": true
+            },
+            {
+              "columna": 15,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "total",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 388.8,
+              "requerido_dxa": 511,
+              "cabe": true
+            },
+            {
+              "columna": 16,
+              "ancho_dxa": 862,
+              "ancho_util_dxa": 748,
+              "token_mas_largo": "TAM",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 466.4,
+              "requerido_dxa": 588,
+              "cabe": true
+            },
+            {
+              "columna": 17,
+              "ancho_dxa": 1111,
+              "ancho_util_dxa": 997,
+              "token_mas_largo": "satisfacción",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 988.8,
+              "requerido_dxa": 1111,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 53,
+          "columnas": 18,
+          "filas": 15,
+          "ancho_tabla_dxa": 13630,
+          "margenes_laterales_dxa": 57,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              1100,
+              1559,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              862,
+              995
+            ],
+            "anchos_nuevos": [
+              935,
+              1559,
+              651,
+              700,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              651,
+              862,
+              1111
+            ],
+            "ensanchadas": [
+              3,
+              17
+            ],
+            "donantes": [
+              0
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 935,
+              "ancho_util_dxa": 821,
+              "token_mas_largo": "TRAB-",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 600.0,
+              "requerido_dxa": 722,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1559,
+              "ancho_util_dxa": 1445,
+              "token_mas_largo": "Huancabamba",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1144.0,
+              "requerido_dxa": 1266,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "T_reg",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 510.9,
+              "requerido_dxa": 633,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 700,
+              "ancho_util_dxa": 586,
+              "token_mas_largo": "T_vale",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 577.8,
+              "requerido_dxa": 700,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "100.0",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 450.0,
+              "requerido_dxa": 572,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "100.0",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 450.0,
+              "requerido_dxa": 572,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 7,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 8,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 9,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "AP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 10,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 11,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 12,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 13,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "UP",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 266.6,
+              "requerido_dxa": 389,
+              "cabe": true
+            },
+            {
+              "columna": 14,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "total",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 388.8,
+              "requerido_dxa": 511,
+              "cabe": true
+            },
+            {
+              "columna": 15,
+              "ancho_dxa": 651,
+              "ancho_util_dxa": 537,
+              "token_mas_largo": "total",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 388.8,
+              "requerido_dxa": 511,
+              "cabe": true
+            },
+            {
+              "columna": 16,
+              "ancho_dxa": 862,
+              "ancho_util_dxa": 748,
+              "token_mas_largo": "TAM",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 466.4,
+              "requerido_dxa": 588,
+              "cabe": true
+            },
+            {
+              "columna": 17,
+              "ancho_dxa": 1111,
+              "ancho_util_dxa": 997,
+              "token_mas_largo": "satisfacción",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 988.8,
+              "requerido_dxa": 1111,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        }
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 797,
+      "dividido": true,
+      "parrafos": 4,
+      "textos": [
+        "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación para la medición de la Variable De",
+        "1. Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos (T_reg y T_vale).",
+        "2. Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes y Kardex (RSD y CPE).",
+        "3. Instrumento N.° 03: Cuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A: AP y UP)."
+      ]
+    }
+  ],
+  "tablas_verificadas": [
+    {
+      "tabla": 35,
+      "filas": 7,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 36,
+      "filas": 7,
+      "columnas": 8,
+      "cantSplit": true
+    },
+    {
+      "tabla": 37,
+      "filas": 7,
+      "columnas": 8,
+      "cantSplit": true
+    },
+    {
+      "tabla": 38,
+      "filas": 10,
+      "columnas": 8,
+      "cantSplit": true
+    },
+    {
+      "tabla": 40,
+      "filas": 5,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 41,
+      "filas": 5,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 42,
+      "filas": 7,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 52,
+      "filas": 15,
+      "columnas": 18,
+      "cantSplit": true
+    },
+    {
+      "tabla": 53,
+      "filas": 15,
+      "columnas": 18,
+      "cantSplit": true
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "redactor-academico",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "comision": "Revision academica de la prosa del informe v19 con propuestas exactas de edicion verificable y auditoria visual completa del tramo central comparado con la tesis modelo UNAJMA de Fany (2024). Sin compilar Word y sin integrar cambios.",
+    "raiz": "C:/MisInvestigaciones/tesis/sivac",
+    "documento_auditado": {
+      "docx": "salidas/documentos/informe_final_v19.docx",
+      "docx_sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "pdf": "salidas/documentos/informe_final_v19.pdf",
+      "pdf_sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas_pdf": 158
+    },
+    "modelo_comparado": {
+      "archivo": "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+      "paginas_pdf_leidas": "37-72",
+      "paginas_impresas_leidas": "24-59",
+      "total_paginas": 36
+    },
+    "estado": "completado",
+    "naturaleza": "Auditoria de prosa y de forma. No es aprobacion editorial, no es dictamen de jurado y no sustituye la revision del tesista."
+  },
+
+  "metodo": {
+    "lectura_sivac": {
+      "modalidad": "Lectura visual directa de las paginas renderizadas por el lector de PDF, sin miniaturas y sin muestreo.",
+      "llamadas": [
+        "paginas 54-63",
+        "paginas 64-73",
+        "paginas 74-83",
+        "paginas 84-93",
+        "paginas 94-103",
+        "paginas 104-106"
+      ],
+      "cobertura": "53 de 53 paginas fisicas del tramo asignado",
+      "verificacion_de_texto": "La redaccion exacta de cada pasaje se cotejo contra los artefactos derivados del propio ejemplar v19: PDF_TEXTO_informe_final_v19.json, INVENTARIO_V19.json y ANCLAS_informe_final_v19.json (este ultimo con sha256 del DOCX y del PDF del ejemplar auditado)."
+    },
+    "lectura_fany": {
+      "modalidad": "Lectura visual directa por lotes, sin miniaturas y sin muestreo.",
+      "llamadas": [
+        "paginas 37-46",
+        "paginas 47-56",
+        "paginas 57-66",
+        "paginas 67-72"
+      ],
+      "cobertura": "36 de 36 paginas fisicas del rango asignado"
+    },
+    "correspondencia_pagina_folio": {
+      "regla_verificada": "pagina_pdf = folio_impreso + 15 en todo el tramo",
+      "puntos_de_control": [
+        "pagina 54 = folio 39",
+        "pagina 100 = folio 85 (rotulo CAPITULO IV, coincidente con el indice de contenido)",
+        "pagina 106 = folio 91"
+      ]
+    },
+    "advertencia_de_fuente": {
+      "hallazgo": "El volcado v16_texto_por_pagina.md no es fuente valida de anclas para el ejemplar v19.",
+      "evidencia": "El volcado v16 conserva 'PostgreSQL ($transaction)' y 'Consola de ejecucion de la suite de pruebas', cadenas ausentes en v19; esta ultima fue sustituida por 'se ilustra el codigo de la prueba unitaria'. El ejemplar v19 tambien tiene 158 paginas frente a 159 de v16.",
+      "consecuencia": "Todas las anclas de las ordenes se tomaron del inventario del ejemplar v19, no del volcado v16."
+    },
+    "herramientas_ejecutadas": {
+      "scripts": "ninguno",
+      "interpretes": "ninguno",
+      "motivo": "El subagente no dispuso de interprete ni de ejecucion de scripts en esta sesion; el cotejo se apoyo en la lectura directa y en los artefactos JSON ya generados por el pipeline.",
+      "declaracion": "No se ejecuto revisor_prosa.py ni buscador_citas.py. Ninguna cifra de esta auditoria proviene de una ejecucion de script propia."
+    },
+    "restricciones_respetadas": [
+      "No se modifico ningun archivo DOCX ni PDF.",
+      "No se integro ninguna orden.",
+      "No se introdujo cita, autor, anio, DOI ni pagina nuevos.",
+      "No se altero ningun enunciado de instrumento, criterio, dato, valor numerico, tabla, formula OMML ni imagen.",
+      "No se convirtio en hecho ningun procedimiento descrito en futuro; las ordenes propuestas no cambian tiempos ni modos verbales.",
+      "No se copiaron dimensiones, preguntas ni metodologia del modelo Fany; el contraste es exclusivamente de forma y registro."
+    ]
+  },
+
+  "cobertura": {
+    "sivac_paginas_leidas": 53,
+    "sivac_paginas_asignadas": 53,
+    "sivac_porcentaje": 100.0,
+    "fany_paginas_leidas": 36,
+    "fany_paginas_asignadas": 36,
+    "fany_porcentaje": 100.0,
+    "distribucion_del_tramo_sivac": {
+      "paginas_con_prosa_revisable": "54-71 y 94-106 (31 paginas)",
+      "paginas_ocupadas_principalmente_por_objetos": "72-93 (22 paginas: diccionario de datos, capturas de interfaz y diagramas)",
+      "observacion": "En el tramo central predominan tablas de diccionario y capturas de interfaz; la revision de prosa se concentra en el cierre de 3.3.1, la apertura de 3.3.2, el bloque 3.3.4 a 3.3.5 y el inicio del capitulo IV. La totalidad narrativa del informe se contrastara con PROSA_V19.md cuando ese inventario quede disponible; a la fecha de emision no existia en el directorio de trabajo."
+    }
+  },
+
+  "ledger_sivac": [
+    {"pagina_pdf": 54, "folio": 39, "genero": "prosa", "objeto": "Cierre de 3.2.16, 3.2.17 y 3.2.18 (definiciones de ORM, e-LMIS y trazabilidad)", "observacion": "Registro impersonal y citas en orden. Sin hallazgo."},
+    {"pagina_pdf": 55, "folio": 40, "genero": "prosa", "objeto": "Cierre de 3.3 y apertura de 3.3.1 y 3.3.1.1", "observacion": "Transicion correcta entre metodologia y metefora del sistema."},
+    {"pagina_pdf": 56, "folio": 41, "genero": "mixto", "objeto": "Cierre de la metefora, Tabla 3 (roles) y apertura de 3.3.1.2", "observacion": "Ver hallazgo sustantivo S-02 sobre 'almacenes zonales (11 centros)'."},
+    {"pagina_pdf": 57, "folio": 42, "genero": "mixto", "objeto": "3.3.1.2 y apertura de la Tabla 4 (RF-01 a RF-16)", "observacion": "Sin hallazgo de prosa."},
+    {"pagina_pdf": 58, "folio": 43, "genero": "tabla", "objeto": "Continuacion de la Tabla 4", "observacion": "Solo celdas; sin prosa revisable."},
+    {"pagina_pdf": 59, "folio": 44, "genero": "tabla", "objeto": "Tabla 5 (RNF segun ISO/IEC 25010:2023)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 60, "folio": 45, "genero": "mixto", "objeto": "Tabla 6 (matriz de correspondencia) y su nota (P0720)", "observacion": "Orden O-07 sobre la nota de la Tabla 6."},
+    {"pagina_pdf": 61, "folio": 46, "genero": "tabla", "objeto": "Tabla 7 (Planning Game)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 62, "folio": 47, "genero": "tabla", "objeto": "Continuacion de la Tabla 7 e inicio de la Tabla 8", "observacion": "Solo celdas."},
+    {"pagina_pdf": 63, "folio": 48, "genero": "tabla", "objeto": "Tabla 8 (entregas, iteraciones y velocidad)", "observacion": "Suma de puntos de historia y velocidad 14.2 internamente consistentes."},
+    {"pagina_pdf": 64, "folio": 49, "genero": "prosa", "objeto": "3.3.2 Fase II y 3.3.2.1 arquitectura logica en capas", "observacion": "Prosa tecnica densa y bien cohesionada. Sin hallazgo."},
+    {"pagina_pdf": 65, "folio": 50, "genero": "prosa", "objeto": "Capas de seguridad HTTP, dominio y persistencia", "observacion": "Sin hallazgo."},
+    {"pagina_pdf": 66, "folio": 51, "genero": "figura", "objeto": "Figura 15 (diagrama de actividades de registro de movimientos)", "observacion": "Rotulo y nota conformes."},
+    {"pagina_pdf": 67, "folio": 52, "genero": "figura", "objeto": "Figura 16 (ICI-DEMID y clasificacion semaforica)", "observacion": "Conforme."},
+    {"pagina_pdf": 68, "folio": 53, "genero": "mixto", "objeto": "Figura 17 (secuencia de autenticacion y RBAC) y apertura de 3.3.2.3", "observacion": "Conforme."},
+    {"pagina_pdf": 69, "folio": 54, "genero": "mixto", "objeto": "Tabla 9 (matriz de permisos) y apertura de la Figura 18", "observacion": "Conforme."},
+    {"pagina_pdf": 70, "folio": 55, "genero": "mixto", "objeto": "Cierre de 3.3.2.3, Figura 19 y 3.3.2.4", "observacion": "Conforme."},
+    {"pagina_pdf": 71, "folio": 56, "genero": "mixto", "objeto": "Figura 20, Figura 21 y parrafo de enlace con las Tablas 10 a 24 (P0951 y P0955)", "observacion": "Orden O-01. Observacion sin orden: 'Relaciones Relacionales' (cuerpo y rotulo de la Figura 21)."},
+    {"pagina_pdf": 72, "folio": 57, "genero": "tabla", "objeto": "Tabla 10 (diccionario: redes)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 73, "folio": 58, "genero": "tabla", "objeto": "Tablas 11 y 12", "observacion": "Solo celdas."},
+    {"pagina_pdf": 74, "folio": 59, "genero": "tabla", "objeto": "Tabla 14 (usuarios y usuarios_centros_acopio)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 75, "folio": 60, "genero": "tabla", "objeto": "Tablas 15 y 16", "observacion": "Solo celdas."},
+    {"pagina_pdf": 76, "folio": 61, "genero": "tabla", "objeto": "Tabla 17 (lotes_vacunas)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 77, "folio": 62, "genero": "tabla", "objeto": "Tablas 18 y 19", "observacion": "Solo celdas."},
+    {"pagina_pdf": 78, "folio": 63, "genero": "tabla", "objeto": "Tablas 20 y 21", "observacion": "Solo celdas."},
+    {"pagina_pdf": 79, "folio": 64, "genero": "tabla", "objeto": "Tablas 22 y 23", "observacion": "Solo celdas."},
+    {"pagina_pdf": 80, "folio": 65, "genero": "tabla", "objeto": "Inicio de la Tabla 24", "observacion": "Solo celdas."},
+    {"pagina_pdf": 81, "folio": 66, "genero": "tabla", "objeto": "Cierre de la Tabla 24", "observacion": "Solo celdas."},
+    {"pagina_pdf": 82, "folio": 67, "genero": "tabla", "objeto": "Tabla 25 (stack tecnologico)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 83, "folio": 68, "genero": "mixto", "objeto": "Figura 22 (estructura del backend) y apertura de 3.3.3.2", "observacion": "Conforme."},
+    {"pagina_pdf": 84, "folio": 69, "genero": "mixto", "objeto": "Figuras 23 y 24 (algoritmos de saldos y sincronizacion M+1)", "observacion": "Conforme."},
+    {"pagina_pdf": 85, "folio": 70, "genero": "figura", "objeto": "Figura 25 (alertas tempranas con cooldown de 7 dias)", "observacion": "Conforme."},
+    {"pagina_pdf": 86, "folio": 71, "genero": "figura", "objeto": "Figura 26 (middleware JWT y RBAC multi-acopio)", "observacion": "Conforme."},
+    {"pagina_pdf": 87, "folio": 72, "genero": "mixto", "objeto": "Apertura de 3.3.3.3 y Figuras 28 y 29", "observacion": "Conforme."},
+    {"pagina_pdf": 88, "folio": 73, "genero": "figura", "objeto": "Figuras 30 y 31", "observacion": "Conforme."},
+    {"pagina_pdf": 89, "folio": 74, "genero": "figura", "objeto": "Figuras 32 y 33", "observacion": "Conforme."},
+    {"pagina_pdf": 90, "folio": 75, "genero": "figura", "objeto": "Figuras 34 y 35", "observacion": "Conforme."},
+    {"pagina_pdf": 91, "folio": 76, "genero": "figura", "objeto": "Figuras 36 y 37", "observacion": "Conforme."},
+    {"pagina_pdf": 92, "folio": 77, "genero": "figura", "objeto": "Figuras 38 y 39", "observacion": "Conforme."},
+    {"pagina_pdf": 93, "folio": 78, "genero": "figura", "objeto": "Figuras 40 y 41", "observacion": "Conforme."},
+    {"pagina_pdf": 94, "folio": 79, "genero": "mixto", "objeto": "Figuras 42 y 43, rotulo 3.3.4 y apertura del parrafo P1810", "observacion": "Orden O-02."},
+    {"pagina_pdf": 95, "folio": 80, "genero": "mixto", "objeto": "Cierre de P1810, Figura 44 e inicio de la Tabla 26", "observacion": "La descripcion de la Figura 44 como codigo de prueba unitaria ya esta corregida en v19."},
+    {"pagina_pdf": 96, "folio": 81, "genero": "mixto", "objeto": "Cierre de la Tabla 26, su nota (P1853) y apertura de 3.3.4.2", "observacion": "Orden O-03."},
+    {"pagina_pdf": 97, "folio": 82, "genero": "tabla", "objeto": "Tabla 27 (CP-01 a CP-04)", "observacion": "Solo celdas."},
+    {"pagina_pdf": 98, "folio": 83, "genero": "mixto", "objeto": "Tabla 27 (CP-05 a CP-13), 3.3.4.3, P1955 e inicio de la Tabla 28", "observacion": "Orden O-05."},
+    {"pagina_pdf": 99, "folio": 84, "genero": "mixto", "objeto": "Cierre y nota de la Tabla 28, rotulo 3.3.5 y Figura 45", "observacion": "Ver hallazgo sustantivo S-01 (rotulo 'Fase V')."},
+    {"pagina_pdf": 100, "folio": 85, "genero": "prosa", "objeto": "CAPITULO IV, 4.1, 4.2 (P2014) y apertura de 4.3", "observacion": "Orden O-06."},
+    {"pagina_pdf": 101, "folio": 86, "genero": "prosa", "objeto": "Cierre de 4.3 (incisos 3 y 4), 4.4 y apertura de 4.5", "observacion": "Ver hallazgo sustantivo S-04."},
+    {"pagina_pdf": 102, "folio": 87, "genero": "mixto", "objeto": "4.5 (bullets del diseno), protocolo temporal (P2028) e inicio de la Tabla 29", "observacion": "Orden O-04. Ver hallazgo sustantivo S-05."},
+    {"pagina_pdf": 103, "folio": 88, "genero": "mixto", "objeto": "Cierre y nota de la Tabla 29, 4.6, 4.7 e inicio de la Tabla 30", "observacion": "Conforme en prosa."},
+    {"pagina_pdf": 104, "folio": 89, "genero": "tabla", "objeto": "Tabla 30 y su nota sobre el residuo de 0.03 puntos porcentuales", "observacion": "La nota declara el residuo; aritmetica verificada (13 filas, 99.97 por ciento)."},
+    {"pagina_pdf": 105, "folio": 90, "genero": "prosa", "objeto": "4.8 unidad de analisis, regla de agregacion por operador e inicio de la Tabla 31", "observacion": "Ver hallazgo sustantivo S-05."},
+    {"pagina_pdf": 106, "folio": 91, "genero": "tabla", "objeto": "Continuacion de la Tabla 31 hasta el limite del tramo", "observacion": "Solo celdas."}
+  ],
+
+  "ledger_fany": [
+    {"pagina_pdf": 37, "folio_impreso": 24, "objeto": "CAPITULO III: MARCO TEORICO; 3.1 Bases teoricas; 3.1.1 Extreme Programming", "contraste": "Rotulo de capitulo centrado en negrita y numeracion 3.1.1 en negrita cursiva. SIVAC usa la misma jerarquia; el rotulo de capitulo de SIVAC es igualmente centrado."},
+    {"pagina_pdf": 38, "folio_impreso": 25, "objeto": "Figura 1 (Secuencia de mapeo de procesos) y 3.1.2 Aplicacion Web", "contraste": "Rotulo de figura arriba, titulo en cursiva y nota al pie con la fuente: estructura que SIVAC replica."},
+    {"pagina_pdf": 39, "folio_impreso": 26, "objeto": "Software, funcionalidad, confiabilidad y usabilidad (Somerville, Constanzo, Amin y otros, Sanchez)", "contraste": "Prosa con muletillas ('Por otro lado', 'es por ello por lo que'). SIVAC mantiene registro mas sobrio; no conviene imitar este modelo."},
+    {"pagina_pdf": 40, "folio_impreso": 27, "objeto": "3.1.3 Gestion de proyectos", "contraste": "Parrafos de 3 a 5 oraciones con cita al cierre. SIVAC usa parrafos mas densos."},
+    {"pagina_pdf": 41, "folio_impreso": 28, "objeto": "Figura 2 (ciclo de vida del proyecto) y prosa de enlace", "contraste": "La prosa de enlace repite literalmente el contenido de la figura; SIVAC evita esa duplicacion."},
+    {"pagina_pdf": 42, "folio_impreso": 29, "objeto": "Figura 3 (fases del proyecto) y triple restriccion (Barreto, GERENS)", "contraste": "Uso de 'en base a' en el modelo. SIVAC emplea 'con base en'; se mantiene la forma de SIVAC."},
+    {"pagina_pdf": 43, "folio_impreso": 30, "objeto": "Figura 4 (triple restriccion) y cronograma (Fernandez)", "contraste": "Figura con fuente como enlace activo; SIVAC resuelve la nota en texto."},
+    {"pagina_pdf": 44, "folio_impreso": 31, "objeto": "3.1.4 Inversion publica, 3.1.5 PIP y 3.1.6 Invierte.pe", "contraste": "Subsecciones muy breves, de un solo parrafo. SIVAC desarrolla mas cada base teorica."},
+    {"pagina_pdf": 45, "folio_impreso": 32, "objeto": "DGPMI y OPMI; 3.1.7 ciclos de inversion", "contraste": "Listas con guion; SIVAC usa numeracion."},
+    {"pagina_pdf": 46, "folio_impreso": 33, "objeto": "Formulacion y evaluacion; Figura 5; 3.1.8 Ley de contrataciones", "contraste": "Conforme en rotulos y numeracion."},
+    {"pagina_pdf": 47, "folio_impreso": 34, "objeto": "Principios de contratacion y 3.2 Marco conceptual (OSCE, SEACE, requerimiento, contrato, valorizacion)", "contraste": "El marco conceptual se ordena alfabeticamente con el termino en negrita. SIVAC aplica el mismo criterio; conviene conservarlo."},
+    {"pagina_pdf": 48, "folio_impreso": 35, "objeto": "CAPITULO IV: METODOLOGIA; 4.1 Tipo, nivel y diseno; 4.1.1 Tipo", "contraste": "El modelo agrupa tipo, nivel y diseno en 4.1; SIVAC los separa en 4.1 a 4.5 y agrega metodo y enfoque. Diferencia de granularidad, no de exigencia institucional."},
+    {"pagina_pdf": 49, "folio_impreso": 36, "objeto": "4.1.2 Nivel, 4.1.3 Diseno preexperimental, esquema G 01 X 02 y 4.2 Variables", "contraste": "El modelo enuncia el diseno y dibuja el esquema. SIVAC enuncia el diseno con las mismas siglas y anade justificacion del grupo unico censal: desarrollo superior en fundamentacion."},
+    {"pagina_pdf": 50, "folio_impreso": 37, "objeto": "Tabla 1 (matriz de operacionalizacion) y 4.3 Poblacion, muestra y muestreo", "contraste": "El modelo incluye la matriz como Tabla 1 del capitulo IV; SIVAC la situa en 4.9, fuera del tramo auditado. No se copian dimensiones ni indicadores del modelo."},
+    {"pagina_pdf": 51, "folio_impreso": 38, "objeto": "Tabla 2 (estados de proyectos), muestreo no probabilistico y 4.4 Tecnicas e instrumentos", "contraste": "Tablas de tres lineas sin verticales, conformes en ambos documentos."},
+    {"pagina_pdf": 52, "folio_impreso": 39, "objeto": "Instrumento, 4.5 Procedimientos y 4.6 Metodo de analisis de datos", "contraste": "El modelo describe el procedimiento en futuro ('Se realizara una entrevista'); SIVAC lo describe en preterito. Ver S-04 y S-05."},
+    {"pagina_pdf": 53, "folio_impreso": 40, "objeto": "Pasos 1 a 6 del procesamiento y 4.7 Aspectos eticos", "contraste": "El modelo lista pasos numerados; SIVAC desarrolla el procesamiento en prosa. Ambas formas son admisibles."},
+    {"pagina_pdf": 54, "folio_impreso": 41, "objeto": "CAPITULO V: RESULTADOS; 5.1; juicio de expertos; Tabla 3 (validez); Tabla 4 (alfa de Cronbach de la VI)", "contraste": "El modelo presenta la validacion por expertos con marcas de verificacion y alfa por dimension. SIVAC declara la validacion en estado condicional; ver hallazgo S-04."},
+    {"pagina_pdf": 55, "folio_impreso": 42, "objeto": "Tabla 5 (alfa de la VD) y Tabla 6 (porcentajes de culminacion)", "contraste": "Rotulo 'Tabla N' en negrita, titulo en cursiva y fuente al pie: identico criterio en SIVAC."},
+    {"pagina_pdf": 56, "folio_impreso": 43, "objeto": "Figura 6 (barras 3D) y Tabla 7", "contraste": "El modelo usa barras en perspectiva 3D, no recomendadas por APA 7. SIVAC emplea graficos 2D a 300 DPI; no debe imitar el 3D."},
+    {"pagina_pdf": 57, "folio_impreso": 44, "objeto": "Figura 7 y Tabla 8 (estado de proyectos)", "contraste": "Prosa descriptiva que repite cifras de la tabla. SIVAC interpreta ademas el sentido del cambio."},
+    {"pagina_pdf": 58, "folio_impreso": 45, "objeto": "Figura 8 e inicio de la descripcion del instrumento", "contraste": "Conforme."},
+    {"pagina_pdf": 59, "folio_impreso": 46, "objeto": "Figura 9 y Tabla 9 (instrumento antes de la implantacion)", "contraste": "El modelo usa niveles Bajo, Medio y Alto sin definirlos. SIVAC debe evitar ese vacio; ver S-03 sobre la escala de la Tabla 28."},
+    {"pagina_pdf": 60, "folio_impreso": 47, "objeto": "Figura 10 y Tabla 10 (instrumento despues de la implantacion)", "contraste": "Conforme en forma."},
+    {"pagina_pdf": 61, "folio_impreso": 48, "objeto": "5.2 Analisis inferencial y Tabla 11 (Shapiro-Wilk, n = 24)", "contraste": "El modelo reporta estadistico, grados de libertad y significancia en tabla de tres lineas. SIVAC sigue el mismo esquema."},
+    {"pagina_pdf": 62, "folio_impreso": 49, "objeto": "Contrastacion de hipotesis general y Tabla 12 (Wilcoxon)", "contraste": "El modelo enuncia H0 y H1 antes de la tabla. SIVAC aplica el mismo orden por hipotesis."},
+    {"pagina_pdf": 63, "folio_impreso": 50, "objeto": "Tabla 13 (HE1), hipotesis especifica 2 y Tabla 14", "contraste": "El modelo no reporta tamano del efecto. SIVAC incorpora r de Rosenthal: desarrollo superior, conservarlo."},
+    {"pagina_pdf": 64, "folio_impreso": 51, "objeto": "Cierre de la Tabla 14 y CAPITULO VI: DISCUSION", "contraste": "La discusion del modelo se organiza por objetivo y contrasta con antecedentes uno a uno; SIVAC debe conservar esa correspondencia biunivoca por dimension."},
+    {"pagina_pdf": 65, "folio_impreso": 52, "objeto": "Discusion del objetivo general y de los objetivos especificos (Yanqui, Lucas, Davalos)", "contraste": "Parrafos de confrontacion con antecedentes; el modelo no contrasta con bases teoricas. SIVAC anade ese nivel."},
+    {"pagina_pdf": 66, "folio_impreso": 53, "objeto": "Cierre de la discusion (Galvez)", "contraste": "Cierre por concordancia con antecedentes. Conforme."},
+    {"pagina_pdf": 67, "folio_impreso": 54, "objeto": "CONCLUSIONES (tres vinetas: general y dos especificas)", "contraste": "Una conclusion por objetivo, sin numeracion. SIVAC numera; ambas formas son aceptables, pero debe mantenerse una sola convencion en todo el documento."},
+    {"pagina_pdf": 68, "folio_impreso": 55, "objeto": "RECOMENDACIONES (cuatro vinetas)", "contraste": "Recomendaciones en vinetas con 'Se recomienda'. SIVAC puede adoptar la misma apertura sintactica."},
+    {"pagina_pdf": 69, "folio_impreso": 56, "objeto": "BIBLIOGRAFIA (A a C)", "contraste": "Rotulo 'BIBLIOGRAFIA'; sangria francesa y DOI o URL. SIVAC usa 'REFERENCIAS', forma preferida por APA 7; se mantiene la de SIVAC."},
+    {"pagina_pdf": 70, "folio_impreso": 57, "objeto": "BIBLIOGRAFIA (C a I)", "contraste": "El modelo omite la coma antes de 'y' en algunos casos y usa 'y' fuera de parentesis; SIVAC ya aplica APA 7."},
+    {"pagina_pdf": 71, "folio_impreso": 58, "objeto": "BIBLIOGRAFIA (I a R)", "contraste": "Conforme en sangria y orden alfabetico."},
+    {"pagina_pdf": 72, "folio_impreso": 59, "objeto": "BIBLIOGRAFIA (S a Y)", "contraste": "Cierre del tramo comparado. Sin observaciones de forma."}
+  ],
+
+  "hallazgos": {
+    "editoriales_con_orden": [
+      {
+        "id": "O-01",
+        "ubicacion": "P0955, pagina 71, folio 56, cierre de 3.3.2.4",
+        "sintesis": "Contradiccion entre 'de forma exhaustiva' y 'las tablas mas relevantes'."
+      },
+      {
+        "id": "O-02",
+        "ubicacion": "P1810, pagina 94, folio 79, apertura de 3.3.4",
+        "sintesis": "Absoluto 'garantiza la fiabilidad operativa' en la presentacion de la fase de pruebas."
+      },
+      {
+        "id": "O-03",
+        "ubicacion": "P1853, pagina 96, folio 81, nota de la Tabla 26",
+        "sintesis": "Absoluto 'garantiza la estabilidad' en nota de tabla."
+      },
+      {
+        "id": "O-04",
+        "ubicacion": "P2028, pagina 102, folio 87, 4.5",
+        "sintesis": "Doble absoluto 'garantizar la validez interna' y 'neutralizar potenciales sesgos' en un diseno preexperimental."
+      },
+      {
+        "id": "O-05",
+        "ubicacion": "P1955, pagina 98, folio 83, 3.3.4.3",
+        "sintesis": "El texto anuncia cuatro caracteristicas de calidad; la Tabla 28 documenta cinco. Requiere confirmacion del tesista."
+      },
+      {
+        "id": "O-06",
+        "ubicacion": "P2014, pagina 100, folio 85, 4.2",
+        "sintesis": "Cadena nominal 'nivel explicativo de evaluacion de intervencion tecnologica' sin enlace sintactico."
+      },
+      {
+        "id": "O-07",
+        "ubicacion": "P0720, pagina 60, folio 45, nota de la Tabla 6",
+        "sintesis": "'Estructura taxonomica inmutable aprobada en la matriz': absoluto y error de atribucion."
+      }
+    ],
+    "sustantivos_pendientes": [
+      {
+        "id": "S-01",
+        "ubicacion": "Rotulo 3.3.5, pagina 99, folio 84, y su entrada en el indice de contenido (85)",
+        "hallazgo": "El rotulo '3.3.5. Fase V: Despliegue Fisico y Puesta en Produccion' introduce una quinta fase atribuida a Extreme Programming, mientras el resumen y el inciso 2 de 4.3 sostienen cuatro fases. La contradiccion es interna y explicita: la nota de la Figura 11, pagina 55, folio 40, ya declara el despliegue como 'actividad operativa complementaria a las cuatro fases de XP: planificacion, diseño, codificacion y pruebas'.",
+        "requiere": "Decision de guardian-consistencia y del tesista; afecta encabezado, indice de contenido y campos PAGEREF.",
+        "no_se_propone": "No se emite orden porque el cambio de encabezado excede el alcance editorial de esta comision."
+      },
+      {
+        "id": "S-02",
+        "ubicacion": "Tabla 3, celda del rol 'Responsable de centro de acopio', pagina 56, folio 41",
+        "hallazgo": "La celda remite a 'almacenes zonales (11 centros)'. El informe declara diecinueve centros de acopio registrados y trece con personal censado; la Tabla 30 distribuye catorce operadores entre el Almacen Especializado (dos) y doce centros (uno por centro). La relacion entre once y trece no queda explicitada.",
+        "requiere": "Verificacion del tesista sobre el universo de almacenes zonales.",
+        "no_se_propone": "No se emite orden porque modifica una celda con una cifra."
+      },
+      {
+        "id": "S-03",
+        "ubicacion": "Tabla 28, columna 'Nivel de Conformidad', paginas 98 y 99, folios 83 y 84",
+        "hallazgo": "Las ocho filas registran 'Excelente' y el informe no define la escala ni el criterio que sostiene esa adjetivacion. Una valoracion sin escala declarada no es verificable.",
+        "requiere": "Decision del tesista: declarar el criterio de valoracion aplicado o sustituir el adjetivo por la referencia al valor observado.",
+        "no_se_propone": "Introducir una escala no documentada equivaldria a crear criterio nuevo."
+      },
+      {
+        "id": "S-04",
+        "ubicacion": "4.3, incisos 3 y 4, pagina 101, folio 86",
+        "hallazgo": "El inciso 3 afirma en preterito la 'validacion de contenido de los instrumentos por juicio de expertos y formalizacion del protocolo de confiabilidad' y el inciso 4 la 'medicion basal pretest (O1)'. Con la compuerta de validacion abierta y la validacion reportada en estado condicional, la forma verbal presenta como ejecutado lo que aun no esta respaldado por actas firmadas.",
+        "requiere": "Decision del tesista. Si los soportes existen, el preterito se mantiene sin cambios; si no, procede reformular como procedimiento previsto y ajustar el tiempo verbal en todo el capitulo.",
+        "no_se_propone": "No se emite orden para no convertir por via editorial un procedimiento no acreditado en hecho."
+      },
+      {
+        "id": "S-05",
+        "ubicacion": "4.5, protocolo temporal, pagina 102, folio 87, y 4.8, regla de agregacion, pagina 105, folio 90",
+        "hallazgo": "Se describen en preterito la capacitacion, la estabilizacion operativa, las ventanas de treinta dias y el calculo de promedios por operador. La misma observacion de S-04 alcanza a estos pasajes.",
+        "requiere": "Una decision unica y coherente para todo el capitulo, no correcciones aisladas."
+      },
+      {
+        "id": "S-06",
+        "ubicacion": "Tabla 27, CP-06, pagina 98, folio 83",
+        "hallazgo": "La celda consigna 'Tiempo medio de registro: 1.15 min (antes 14.8 min)' y la nota de la tabla ya aclara que los resultados de CP-06 y CP-11 son pruebas funcionales y no equivalen a medicion pretest/postest. La nota acota el alcance, pero el parentesis conserva una comparacion temporal implicita.",
+        "requiere": "Evaluar si conviene retirar el parentesis o rotularlo expresamente como referencia de prueba.",
+        "estado": "Atendido parcialmente por la nota de la tabla; se registra como tension residual, no como defecto."
+      }
+    ],
+    "observaciones_sin_orden": [
+      {
+        "ubicacion": "P0951 y rotulo de la Figura 21, pagina 71, folio 56",
+        "observacion": "'Diccionario Fisico de Base de Datos y Relaciones Relacionales': el adjetivo 'relacionales' es redundante respecto de 'relaciones'. Se sugiere 'Diccionario Fisico de Base de Datos y Relaciones en PostgreSQL 16'. No se emite orden porque el cuerpo y el rotulo deben cambiar juntos y el indice de figuras exige refresco de campos; aplicarlo solo en el cuerpo produciria divergencia entre texto y rotulo."
+      },
+      {
+        "ubicacion": "4.6, pagina 103, folio 88",
+        "observacion": "'Dicha poblacion ascendio a un universo finito de catorce operadores': la pareja poblacion y universo es redundante. Redaccion alternativa: 'Dicha poblacion estuvo conformada por catorce operadores'. Se deja a criterio del tesista por ser mejora de estilo y no defecto."
+      },
+      {
+        "ubicacion": "3.3.1.7, 3.3.3.1 y 3.3.3.2, paginas 62, 83 y 84",
+        "observacion": "El verbo 'se exhibe' aparece tres veces para presentar figuras. La variacion es opcional; no se emite orden para no acumular cambios cosmeticos."
+      },
+      {
+        "ubicacion": "Apertura de la metefora del sistema, pagina 56, folio 41",
+        "observacion": "La comparacion con termos portavacunas, cajas termicas y camaras frigorificas se formula con 'garantizan que la temperatura jamas quebrante el rango normativo'. Es el registro analogico aprobado de la seccion; se conserva integro y no se propone orden."
+      }
+    ],
+    "normalizacion_de_motor": [
+      "Separador decimal y espaciado antes del signo de porcentaje: conviven formas como 1.15 min, 14.29% y 99.97 %. Corresponde a la normalizacion por perfil, no a una orden de redaccion.",
+      "Rotulos de tabla: alternan mayuscula inicial en cada palabra y estilo de oracion. Uniformar en el motor.",
+      "Notas al pie de tabla: el modelo Fany alterna 'Fuente.' y 'Nota.'; el informe v19 usa 'Nota.' de forma consistente. No modificar."
+    ]
+  },
+
+  "ordenes": {
+    "archivo": "salidas/reportes_maquetacion/auditoria_integral_v20_20261022/redaccion_v20_ordenes.json",
+    "total": 7,
+    "editoriales_seguras": 6,
+    "editoriales_con_confirmacion": 1,
+    "ids": ["O-01", "O-02", "O-03", "O-04", "O-05", "O-06", "O-07"]
+  },
+
+  "declaracion_de_limites": [
+    "No se compilo Word ni se integro ninguna orden en el DOCX.",
+    "No se ejecuto ningun script ni interprete; el cotejo se apoyo en lectura visual directa y en los artefactos JSON derivados del ejemplar v19.",
+    "El tramo auditado no incluye 4.9 en adelante; los pasajes sobre confiabilidad, validez y consideraciones eticas corresponden al tramo complementario.",
+    "La revision de la totalidad narrativa contra PROSA_V19.md queda pendiente: ese inventario no existia en el directorio al momento de emitir este informe.",
+    "Las cifras citadas en las ordenes (34 casos de prueba de seis suites; cinco caracteristicas de la Tabla 28) provienen de tablas del propio informe y no de calculo propio."
+  ]
+}

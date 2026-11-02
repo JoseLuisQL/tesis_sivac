@@ -1,0 +1,302 @@
+{
+  "tablas": 59,
+  "acciones": [
+    {
+      "tabla": 0,
+      "flotacion_retirada": false,
+      "filas": 1
+    },
+    {
+      "tabla": 1,
+      "flotacion_retirada": false,
+      "filas": 14
+    },
+    {
+      "tabla": 2,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 3,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 4,
+      "flotacion_retirada": false,
+      "filas": 17
+    },
+    {
+      "tabla": 5,
+      "flotacion_retirada": false,
+      "filas": 9
+    },
+    {
+      "tabla": 6,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 7,
+      "flotacion_retirada": false,
+      "filas": 16
+    },
+    {
+      "tabla": 8,
+      "flotacion_retirada": false,
+      "filas": 6
+    },
+    {
+      "tabla": 9,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 10,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 11,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 12,
+      "flotacion_retirada": false,
+      "filas": 9
+    },
+    {
+      "tabla": 13,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 14,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 15,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 16,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 17,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 18,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 19,
+      "flotacion_retirada": false,
+      "filas": 12
+    },
+    {
+      "tabla": 20,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 21,
+      "flotacion_retirada": false,
+      "filas": 11
+    },
+    {
+      "tabla": 22,
+      "flotacion_retirada": false,
+      "filas": 11
+    },
+    {
+      "tabla": 23,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 24,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 25,
+      "flotacion_retirada": false,
+      "filas": 13
+    },
+    {
+      "tabla": 26,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 27,
+      "flotacion_retirada": false,
+      "filas": 16
+    },
+    {
+      "tabla": 28,
+      "flotacion_retirada": false,
+      "filas": 9
+    },
+    {
+      "tabla": 29,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 30,
+      "flotacion_retirada": false,
+      "filas": 15
+    },
+    {
+      "tabla": 31,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 32,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 33,
+      "flotacion_retirada": false,
+      "filas": 4
+    },
+    {
+      "tabla": 34,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 35,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 36,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 37,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 38,
+      "flotacion_retirada": false,
+      "filas": 10
+    },
+    {
+      "tabla": 39,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 40,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 41,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 42,
+      "flotacion_retirada": false,
+      "filas": 7
+    },
+    {
+      "tabla": 43,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 44,
+      "flotacion_retirada": false,
+      "filas": 21
+    },
+    {
+      "tabla": 45,
+      "flotacion_retirada": false,
+      "filas": 5
+    },
+    {
+      "tabla": 46,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 47,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 48,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 49,
+      "flotacion_retirada": false,
+      "filas": 4
+    },
+    {
+      "tabla": 50,
+      "flotacion_retirada": false,
+      "filas": 4
+    },
+    {
+      "tabla": 51,
+      "flotacion_retirada": false,
+      "filas": 9
+    },
+    {
+      "tabla": 52,
+      "flotacion_retirada": false,
+      "filas": 15
+    },
+    {
+      "tabla": 53,
+      "flotacion_retirada": false,
+      "filas": 15
+    },
+    {
+      "tabla": 54,
+      "flotacion_retirada": false,
+      "filas": 8
+    },
+    {
+      "tabla": 55,
+      "flotacion_retirada": false,
+      "filas": 1
+    },
+    {
+      "tabla": 56,
+      "flotacion_retirada": false,
+      "filas": 1
+    },
+    {
+      "tabla": 57,
+      "flotacion_retirada": false,
+      "filas": 1
+    },
+    {
+      "tabla": 58,
+      "flotacion_retirada": false,
+      "filas": 1
+    }
+  ],
+  "destino": "salidas\\documentos\\_v18d_blindado.docx",
+  "sha256_destino": "af96a3c7abff41122214fcff45642c1c2ed08751ac15e7c6728edf81882764db"
+}

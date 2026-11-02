@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "redactor-academico",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "tarea": "Revision academica global de la prosa de informe_final_v19 fuera del tramo visual 54-106",
+    "documento_base": {
+      "ruta": "salidas/documentos/informe_final_v19.docx",
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "paginas_pdf": 158
+    },
+    "estado": "propuesta_no_aplicada",
+    "relacion_con_entregables_previos": "Complementa auditoria_tramo_054_106_redaccion.json y amplia redaccion_v20_ordenes.json con las ordenes O-08 a O-24. Los hallazgos S-01 a S-06 del entregable anterior siguen vigentes, con la salvedad de que S-01 (rotulo 3.3.5) quedo resuelto por autorizacion del Director General y se emite como orden O-23.",
+    "no_toca": [
+      "salidas/documentos/informe_final_v19.docx ni su PDF",
+      "ordenes de otros agentes (integridad_v20_ordenes.json, auditoria_tramo_01_053.json, auditoria_tramo_107_158_integridad.json)"
+    ]
+  },
+
+  "metodo": {
+    "fuente_unica_de_texto": "INVENTARIO_V19.md e INVENTARIO_V19.json del mismo directorio",
+    "advertencia_sobre_identificadores": "Los identificadores Pxxxx son globales del documento (3722 parrafos: 939 de cuerpo y 2783 de celdas de tabla). No equivalen a la posicion en la coleccion de parrafos del cuerpo, de modo que P0955 no es paragraphs[955] ni paragraphs[954]. Toda orden se localiza por la cadena textual exacta, no por indice.",
+    "unidad_de_lectura": "Parrafo de cuerpo con pagina asignada: 542 parrafos. Se excluyeron las entradas de tabla de contenido generadas por campo de Word (marcadas como toc), que reproducen los encabezados y no constituyen prosa del autor.",
+    "herramientas_ejecutadas": "Ninguna. No se dispone de interprete en este subagente; no se ejecutaron revisor_prosa.py ni buscador_citas.py ni se calcularon hashes.",
+    "tecnica": "Lectura directa del inventario por rangos de linea, con verificacion cruzada de cifras, conteos y rotulos contra otros apartados del mismo inventario y contra el indice de tablas del propio documento.",
+    "correspondencia_pagina_folio": "En el cuerpo, pagina_pdf = folio_impreso + 15 (verificado en el tramo 54-106 y en el rotulo del Capitulo IV, pdf 100 = folio 85). En preliminares la numeracion es romana y no se deduce por suma; se deja marcada para confirmacion en la pagina impresa."
+  },
+
+  "cobertura": {
+    "tramo_visual_previo": {
+      "paginas_pdf": "54-106",
+      "paginas": 53,
+      "modalidad": "lectura visual directa del PDF pagina por pagina",
+      "estado": "53 de 53, ya reportado en auditoria_tramo_054_106_redaccion.json"
+    },
+    "lectura_narrativa_adicional": [
+      {
+        "paginas_pdf": "13-17",
+        "contenido": "Resumen, palabras clave, Abstract, keywords, Chumasqa, chawpi rimaykuna, Introduccion",
+        "estado": "leido"
+      },
+      {
+        "paginas_pdf": "18-34",
+        "contenido": "Capitulo I completo (realidad problematica, problemas, justificaciones, objetivos, hipotesis, variables, delimitacion) y Capitulo II (antecedentes internacionales y nacionales)",
+        "estado": "leido"
+      },
+      {
+        "paginas_pdf": "37-53",
+        "contenido": "Cierre del Capitulo II (brecha cientifica), Capitulo III: 3.1.1 sistemas web, XP e ISO/IEC 25010, 3.1.2 cadena de frio y e-LMIS, y 3.2 marco conceptual con sus 15 definiciones",
+        "estado": "leido"
+      },
+      {
+        "paginas_pdf": "107-118",
+        "contenido": "4.9 operacionalizacion y ecuaciones, 4.10 tecnicas e instrumentos, 4.11 confiabilidad, etica, apertura del Capitulo V y 5.1 confiabilidad del Instrumento 03",
+        "estado": "leido"
+      },
+      {
+        "paginas_pdf": "119-130",
+        "contenido": "5.2 estadistica descriptiva por dimension, 5.3 normalidad, 5.4 contrastacion de hipotesis especificas y general",
+        "estado": "leido en sus parrafos narrativos y notas; las tablas se consultaron como referencia de contraste"
+      },
+      {
+        "paginas_pdf": "131-134",
+        "contenido": "Capitulo VI: Discusion y cierre de recomendaciones",
+        "estado": "leido"
+      },
+      {
+        "paginas_pdf": "135-140",
+        "contenido": "Referencias bibliograficas",
+        "estado": "leido integramente como insumo de contraste, no auditado campo por campo"
+      },
+      {
+        "paginas_pdf": "142",
+        "contenido": "Apertura de anexos y matriz de consistencia",
+        "estado": "leido"
+      }
+    ],
+    "fuera_de_alcance_por_diseno": [
+      "paginas 141-158: anexos tabulares, rotulos de instrumentos y transcripciones. La comision las declara congeladas salvo desorden editorial.",
+      "paginas 1-12: portada, acta, declaracion jurada, dedicatoria, agradecimientos e indices. Se leyeron los parrafos de cuerpo (P0001 a P0042) y no se emiten ordenes, conforme a la instruccion de no reescribir la declaracion jurada sin aprobacion del autor."
+    ],
+    "declaracion": "El texto narrativo de las paginas 13-53 y 107-140 fue leido en su totalidad; el tramo 54-106 se cubrio por lectura visual previa. No se declara cobertura de las paginas 141-158."
+  },
+
+  "reglas_de_normalizacion": [
+    {
+      "id": "N-01",
+      "defecto": "Parentesis de cita seguido de un segundo parentesis de remision a figura",
+      "patron": ") (vease la Figura",
+      "patron_literal": ") (véase la Figura",
+      "ocurrencias": 5,
+      "parrafos": ["P0446 (p.39)", "P0451 (p.40)", "P0455 (p.41)", "P0475 (p.45)", "P0489 (p.48)"],
+      "correccion": "Fusionar en un solo parentesis separado por punto y coma: '(Autor, anio, p. X; vease la Figura N)'.",
+      "motivo": "APA 7 admite una unica apertura parentetica por remision; dos parentesis consecutivos fragmentan la lectura y el segundo queda sin verbo.",
+      "riesgo": "Bajo. Requiere expresion regular que capture la cita previa; conviene aplicarla manualmente por parrafo si el motor no garantiza el emparejamiento."
+    },
+    {
+      "id": "N-02",
+      "defecto": "Calificativo 'oficiales' aplicado a las dimensiones de la variable dependiente",
+      "patron_literal": "dimensiones oficiales",
+      "ocurrencias": 7,
+      "correccion": "Sustituir por 'dimensiones de la variable dependiente'.",
+      "motivo": "'Oficial' remite a la instancia que aprobo la taxonomia, dato que el lector no necesita y que introduce lenguaje de gestion interna en la prosa. La sustitucion conserva el referente y la extension.",
+      "riesgo": "Nulo. No altera el numero de dimensiones ni los nombres de los indicadores.",
+      "nota": "Una de las siete ocurrencias esta en el parrafo del Resumen (P0264), que tambien recibe O-19; las dos sustituciones no se solapan. El Abstract repite el calificativo en ingles ('three official dimensions', P0267), de modo que la normalizacion debe cubrir la variante 'three dimensions of the dependent variable' en la misma pasada; ese recuento ingles no se suma a las siete ocurrencias en espanol."
+    },
+    {
+      "id": "N-03",
+      "defecto": "Locucion 'en base a'",
+      "patron_literal": "en base a",
+      "ocurrencias": 1,
+      "parrafos": ["P2624 (nota de tabla, p.125)"],
+      "correccion": "Sustituir por 'con base en'.",
+      "motivo": "Uso censurado por la norma culta; 'con base en' es la forma admitida en registro academico. La misma nota atribuye el calculo a SPSS y a Python, atribucion que corresponde unificar con el analista estadistico y no por via de redaccion.",
+      "riesgo": "Nulo. Es una nota de tabla: conservar 9.5 pt e interlineado sencillo."
+    },
+    {
+      "id": "N-04",
+      "defecto": "Conjuncion 'y' ante palabra que comienza con sonido vocalico /i/",
+      "patron_literal": "y International Electrotechnical Commission",
+      "ocurrencias": 1,
+      "parrafos": ["P0461"],
+      "correccion": "Sustituir por 'e International Electrotechnical Commission'.",
+      "motivo": "El informe ya emplea 'e' en los otros tres lugares donde nombra a la entidad (P0298, cuerpo del Capitulo III y lista de referencias). La ocurrencia con 'y' es la excepcion.",
+      "riesgo": "Nulo. Cambio de una letra."
+    },
+    {
+      "id": "N-05",
+      "defecto": "Cero inicial en coeficientes acotados por la unidad",
+      "patron": "0.xxx aplicado a coeficientes e intervalos de confianza",
+      "ocurrencias": "no determinadas sin interprete",
+      "correccion": "Suprimir el cero inicial en valores que no pueden exceder 1 (alfa de Cronbach, limites de intervalo de confianza, V de Aiken), conforme al criterio ya aplicado en el propio informe (.939, .915, .877).",
+      "motivo": "Inconsistencia interna: el mismo parrafo escribe '.939 (IC 95%: [0.874, 0.977])'. APA 7 omite el cero cuando el estadistico esta acotado por 1.",
+      "riesgo": "Medio. Afecta prosa y celdas de tabla; exige que el motor excluya valores no acotados (p, d, r pueden superar 1 o no estar acotados). Aplicar solo si el conteo se verifica antes."
+    }
+  ],
+
+  "hallazgos_sustantivos": [
+    {
+      "id": "G-01",
+      "prioridad": "alta",
+      "parrafo": "P2300",
+      "pagina_pdf": 117,
+      "tema": "Advertencia de datos provisionales al inicio del Capitulo V",
+      "texto_clave": "los resultados, las matrices descriptivas, las pruebas de normalidad, los contrastes de hipotesis y las figuras presentados en este capitulo corresponden a un conjunto de datos provisionales de prueba. Dichos valores deben sustituirse por los registros definitivos que se recolecten en el trabajo de campo ... antes de la sustentacion de la tesis.",
+      "problema": "La advertencia es deontologicamente correcta y no debe suprimirse, pero su formulacion actual anuncia al jurado que el capitulo no contiene mediciones de campo y que el documento no esta en condiciones de sustentarse. En un informe final esa declaracion, tal como esta redactada, es un bloqueante de sustentacion, no una nota de transparencia.",
+      "por_que_no_se_ordena": "Cualquier reformulacion cambia el estatus epistemico del capitulo y corresponde al tesista y al Director General, no a la redaccion.",
+      "opciones_para_el_tesista": [
+        "A: conservar el texto integro y no presentar el documento como informe final hasta incorporar los registros definitivos.",
+        "B: mantener la advertencia y sustituir 'deben sustituirse ... antes de la sustentacion' por 'se sustituiran por los registros definitivos antes de la sustentacion', conservando la etiqueta de provisionalidad sin fijar una fecha de cierre.",
+        "C: trasladar la advertencia completa a la nota de la primera tabla del capitulo y dejar en el cuerpo una remision breve, con lo que el capitulo se abre con prosa de resultados y la salvaguarda queda en el aparato de tablas."
+      ]
+    },
+    {
+      "id": "G-02",
+      "prioridad": "alta",
+      "parrafo": "P0264 y P0267",
+      "pagina_pdf": 13,
+      "tema": "Extension y cierre del Resumen y del Abstract",
+      "problema": "El resumen estructurado tiene una extension visiblemente superior a las 250 palabras que exige la guia institucional y no fue posible medirla con exactitud porque no hay interprete disponible. Ademas, tanto el resumen como el abstract cierran afirmando que los estadisticos definitivos 'se encuentran en fase de consolidacion postest' / 'remain under posttest consolidation', con lo que el resumen de un informe final no reporta ningun resultado. La guia institucional pide objetivo, metodologia, resultados cuantitativos clave y conclusion.",
+      "por_que_no_se_ordena": "Reducirlo a 250 palabras y decidir si se reportan cifras exige decidir antes el estatus de los datos (G-01).",
+      "accion_concreta": "Medir con scripts/agentes/revisor_prosa.py conteo-palabras sobre el parrafo P0264 y sobre P0267 cuando haya interprete; si se mantiene la provisionalidad, al menos declarar en el resumen la direccion del cambio observado sin presentarla como medicion definitiva.",
+      "nota": "Las ordenes O-19, O-20 y O-24 no agravan el conteo: sustituyen una clausula prospectiva por otra mas breve en los tres resumenes (espanol, ingles e introduccion). Queda pendiente decidir si el resumen informa alguna cifra del cambio observado."
+    },
+    {
+      "id": "G-03",
+      "prioridad": "alta",
+      "parrafo": "P0337 y nota de la Figura 7; P2873",
+      "pagina_pdf": 30,
+      "tema": "Titulo discrepante de Wasswa et al. (2023)",
+      "problema": "En el cuerpo y en la nota de figura el titulo se cita como 'Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda'. En la lista de referencias, el mismo autor, anio, revista, volumen y articulo aparecen con el titulo 'Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda'.",
+      "riesgo": "Dos titulos distintos para una misma fuente es un defecto de verificabilidad que el jurado detecta de inmediato.",
+      "accion_concreta": "Consultar el articulo original (DOI 10.1186/s40545-023-00517-4) y corregir el titulo en el lugar que no coincida. No se propone sustitucion porque elegir sin verificar equivaldria a inventar el dato bibliografico."
+    },
+    {
+      "id": "G-04",
+      "prioridad": "media",
+      "parrafo": "P0341 y P2826",
+      "pagina_pdf": 32,
+      "tema": "Anio de Astuhuaman Perez y Baltazar Maza",
+      "problema": "El cuerpo y la referencia consignan 2023, mientras el titulo de la propia tesis declara 'Apurimac 2024'. La inconsistencia esta dentro del mismo asiento bibliografico.",
+      "accion_concreta": "Verificar el anio de sustentacion en el repositorio de la UPN (handle 11537/43590) y unificar cuerpo, referencia y cita."
+    },
+    {
+      "id": "G-05",
+      "prioridad": "media",
+      "parrafo": "P2818 a P2821",
+      "pagina_pdf": 134,
+      "tema": "Correspondencia de las recomendaciones con la tercera dimension",
+      "problema": "Las conclusiones mantienen correspondencia 1:1 con el objetivo general y los tres especificos. Las recomendaciones no: la primera es institucional, la segunda atiende infraestructura de conectividad (dimension 1), la tercera atiende auditoria y FEFO (dimension 2) y la cuarta se dirige a la EPIS-UNAJMA para promover lineas de investigacion. No hay recomendacion que cierre el ciclo de la dimension 3 (capacitacion y sostenibilidad de la adopcion bajo TAM), que es la contraparte natural de la conclusion cuarta.",
+      "por_que_no_se_ordena": "Redactarla exige decidir su contenido con el tesista; inventar una recomendacion contravendria la restriccion de la comision.",
+      "accion_concreta": "Decidir si se agrega una recomendacion de capacitacion y acompanamiento, o si se reordena la actual cuarta para que el cierre quede en la dimension 3."
+    },
+    {
+      "id": "G-06",
+      "prioridad": "media",
+      "parrafo": "P2811",
+      "pagina_pdf": 132,
+      "tema": "Cierre de la discusion: ausencia de limitaciones y sobreafirmacion de validacion",
+      "problema": "La discusion cierra afirmando que la metodologia 'demostro ser un marco eficaz' y que se obtuvo 'una herramienta robusta, validada y con metricas de alta calidad bajo el estandar ISO/IEC 25010:2023'. La norma ISO/IEC 25010 permite evaluar caracteristicas de calidad; no valida el producto. Ademas, el capitulo no declara limitaciones del estudio en ningun parrafo, pese a que el propio apartado 4.1 reconoce amenazas a la validez interna de un diseno de un solo grupo.",
+      "accion_concreta": "Sustituir 'validada' por 'verificada' cuando se aplique la ronda de ordenes y decidir si se incorpora un parrafo de limitaciones al cierre del capitulo. Se deja como decision del tesista porque agregar un parrafo excede la correccion editorial."
+    },
+    {
+      "id": "G-07",
+      "prioridad": "media",
+      "parrafo": "P2238, P2239, P2240",
+      "pagina_pdf": 111,
+      "tema": "Apartado de confiabilidad redactado en futuro",
+      "problema": "El apartado anuncia 'se estableceran protocolos', 'se asegurara', 'se garantizara' y 'se determinara', mientras el Capitulo V ya reporta coeficientes alfa calculados (.939, .915, .877, .874, .831, .841). El informe alterna futuro prospectivo y resultados consumados sobre el mismo objeto.",
+      "por_que_no_se_ordena": "Convertir a pasado afirmaria la ejecucion de la calibracion interobservador y de la doble verificacion de una submuestra del 20% con kappa mayor o igual a 0.80, que el documento no acredita en ningun anexo. La restriccion de la comision prohibe esa conversion.",
+      "accion_concreta": "Decidir entre (a) conservar el futuro y anadir una remision al Capitulo V, o (b) convertir a pasado solo si existen los registros de calibracion y de doble verificacion que lo sustenten. La conversion del tramo del alfa es la mas defendible, porque el coeficiente ya se reporta."
+    }
+  ],
+
+  "observaciones_de_maquetacion": [
+    {
+      "tema": "Enumeraciones incrustadas en un solo parrafo",
+      "parrafos": ["P2572", "P2573", "P2628", "P2629", "P2630", "P2710", "P2711", "P2712", "P2765", "P2766", "P2767"],
+      "detalle": "Las hipotesis y los resultados se presentan como un unico parrafo con separadores '   - ' y triples espacios. En Word eso produce lineas corridas con guiones sueltos en lugar de una lista. No es un defecto de redaccion sino de estructura: corresponde al maquetador convertir cada guion en un elemento de lista o en parrafo independiente con sangria.",
+      "riesgo": "Al convertirlo en lista se altera el conteo de parrafos del cuerpo (939) y se desplaza la paginacion de las paginas 124 a 130. Requiere reexportacion y refresco de PAGEREF."
+    },
+    {
+      "tema": "Rotulos de nivel corridos dentro del parrafo",
+      "detalle": "'Advertencia metodologica y salvaguarda deontologica:', 'A. Planteamiento de hipotesis estadisticas:', 'B. Resultados inferenciales:' y 'C. Decision bioestadistica:' funcionan como encabezados de cuarto nivel pero estan embebidos en el texto. UNAJMA admite el rotulo corrido en cursiva; si se mantiene, conviene uniformar la cursiva y el punto."
+    },
+    {
+      "tema": "Espacios dobles en la portada",
+      "parrafo": "P0007",
+      "detalle": "'Bach. Jose Luis Quispe Leon  ASESORA: ...' conserva dos espacios antes de ASESORA. Correccion de motor, no de redaccion."
+    },
+    {
+      "tema": "Atribucion de software en notas de tabla",
+      "parrafos": ["P2624"],
+      "detalle": "'Elaboracion propia en base a SPSS/Python' atribuye el calculo a SPSS y a Python. La auditoria de software declarado corresponde al analista estadistico; la redaccion solo registra que la formula debe unificarse con el resto de notas, que no nombran SPSS."
+    }
+  ],
+
+  "verificaciones_cruzadas_realizadas": [
+    {
+      "punto": "Conteo de centros de acopio",
+      "resultado": "Consistente en todo el informe: 19 registrados = 4 de la sede central (almacen especializado, dos hospitales y un centro de salud) + 15 de redes y microredes; 13 con operadores censados; 14 operadores = 2 del almacen especializado + 12 en los doce centros restantes. El parrafo P2357 nombra los trece centros y el conteo cierra (1 almacen + 2 hospitales + 10 centros de salud)."
+    },
+    {
+      "punto": "Cifra 'almacenes zonales (11 centros)' de la Tabla 3",
+      "resultado": "No se modifica. La instruccion expresa es no alterar celdas sin verificar unidades: 11 almacenes zonales mas 2 establecimientos hospitalarios explicarian la diferencia frente a 13 centros con personal censado. Se mantiene como punto de verificacion del tesista y no como error demostrado."
+    },
+    {
+      "punto": "Numero de iteraciones de Extreme Programming",
+      "resultado": "Consistente: cinco iteraciones en el Resumen, el Abstract, el Chumasqa, la Tabla 8 ('Plan detallado de las cinco iteraciones') y la Tabla 51. Se descarta la hipotesis de discrepancia con el esquema de cuatro fases: el informe distingue cuatro fases metodologicas y cinco iteraciones de entrega, y la nota de la Figura 11 ya declara el despliegue como actividad complementaria."
+    },
+    {
+      "punto": "Baremo del cuestionario TAM",
+      "resultado": "Declarado en la nota de la Tabla 41: Bajo (8 a 18), Medio (19 a 29), Alto (30 a 40). El nivel 'Alto' que la discusion asigna al puntaje global de 36.21 esta respaldado por ese baremo."
+    },
+    {
+      "punto": "Caracteristicas de ISO/IEC 25010:2023",
+      "resultado": "El apartado 3.1.1.4 enuncia las ocho caracteristicas del modelo vigente (adecuacion funcional, eficiencia de desempeno, compatibilidad, capacidad de interaccion, fiabilidad, seguridad, mantenibilidad y flexibilidad). La Tabla 28 evalua cinco de ellas. La orden O-05 propone alinear el conteo a cinco; su alternativa autorizada suprime el numeral y remite a la tabla, sin alterar ninguna celda."
+    },
+    {
+      "punto": "Numeracion de tablas y figuras citadas en prosa",
+      "resultado": "Las remisiones del tramo revisado (Tabla 6, 8, 26, 28, 32, 33, 35, 37, 39, 40, 41, 42, 43, 44, 51; Figuras 1 a 7 y 46 a 48) apuntan a objetos existentes en el inventario. No se detectaron remisiones a tablas inexistentes."
+    }
+  ],
+
+  "limitaciones_de_esta_revision": [
+    "Sin interprete no se ejecutaron revisor_prosa.py, buscador_citas.py ni el conteo exacto de palabras; las afirmaciones sobre extension del resumen son cualitativas.",
+    "La lista de referencias se leyo como insumo de contraste, no se audito campo por campo; la correspondencia censal cita-referencia y la comprobacion de DOI corresponden a verificador-integridad.",
+    "Las paginas 141-158 no se revisaron: son anexos tabulares declarados congelados por la comision.",
+    "El tramo 54-106 se cubrio por lectura visual previa; no se releyo su prosa en el inventario, por lo que las reglas N-01 y N-02 se cuantificaron sobre el documento completo pero solo se ejemplificaron con parrafos verificados.",
+    "No se emitieron ordenes sobre encabezados fuera de O-23, autorizada expresamente por el Director General: cualquier otra rotulacion exigiria refresco de campos y actualizacion de indice por otro agente."
+  ],
+
+  "resumen_ejecutivo": "Se completo la revision narrativa del informe fuera del tramo visual: paginas 13-53 y 107-140 leidas integramente sobre INVENTARIO_V19, mas las 53 paginas ya auditadas visualmente. Se emiten 17 ordenes nuevas (O-08 a O-24), todas con ancla textual exacta y sin alterar cifras, tablas, formulas ni imagenes: once corrigen sobreafirmaciones o falacias de no refutacion, tres suprimen futuros prospectivos sin convertirlos en hechos (Resumen, Abstract e Introduccion), una restituye la formula oficial del objetivo general, una separa una atribucion bibliografica doble, una elimina una duplicacion literal y una retitula el apartado 3.3.5 como 'Despliegue y puesta en operación' conservando su numero y sin tocar el esquema de cuatro fases de Extreme Programming. Se registran siete hallazgos que requieren decision del tesista, de los cuales tres son bloqueantes de sustentacion (G-01 datos provisionales, G-02 resumen sin resultados y fuera de extension, G-03 titulo discrepante de Wasswa). Se documentan cuatro reglas de normalizacion con conteo exacto, una quinta condicionada a verificacion previa, y cuatro observaciones de maquetacion que no deben resolverse por via de redaccion."
+}

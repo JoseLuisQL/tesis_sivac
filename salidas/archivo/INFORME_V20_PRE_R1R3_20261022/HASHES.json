@@ -1,0 +1,50 @@
+{
+ "fecha": "2026-10-22",
+ "motivo": "Respaldo de la base publicada v20 previa al parche R1/R2/R3, antes de promover CANDIDATO_ROTULOS_V20_FINAL",
+ "archivos": [
+  {
+   "archivo": "informe_final_v20.docx",
+   "origen": "salidas/documentos/informe_final_v20.docx",
+   "destino": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/informe_final_v20.docx",
+   "sha256_origen": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+   "sha256_destino": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+   "sha256": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+   "bytes": 16713292,
+   "coincide": true
+  },
+  {
+   "archivo": "informe_final_v20.pdf",
+   "origen": "salidas/documentos/informe_final_v20.pdf",
+   "destino": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/informe_final_v20.pdf",
+   "sha256_origen": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+   "sha256_destino": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+   "sha256": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+   "bytes": 20075006,
+   "coincide": true
+  },
+  {
+   "archivo": "informe_final_v20_pre_alineacion.docx",
+   "etapa": "pre_alineacion_APA7",
+   "origen": "salidas/documentos/informe_final_v20.docx",
+   "destino": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/informe_final_v20_pre_alineacion.docx",
+   "sha256_origen": "1f2e4bea8bf0e446ae4b2f151a84ecca67da40d14695a543c8215c0aa416ae73",
+   "sha256_destino": "1f2e4bea8bf0e446ae4b2f151a84ecca67da40d14695a543c8215c0aa416ae73",
+   "sha256": "1f2e4bea8bf0e446ae4b2f151a84ecca67da40d14695a543c8215c0aa416ae73",
+   "bytes": 16127428,
+   "coincide": true
+  },
+  {
+   "archivo": "informe_final_v20_pre_alineacion.pdf",
+   "etapa": "pre_alineacion_APA7",
+   "origen": "salidas/documentos/informe_final_v20.pdf",
+   "destino": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/informe_final_v20_pre_alineacion.pdf",
+   "sha256_origen": "ea2f0ddd8128734d90647dd04ecea22829f2fd9881d8a4d05b2c152b1160b850",
+   "sha256_destino": "ea2f0ddd8128734d90647dd04ecea22829f2fd9881d8a4d05b2c152b1160b850",
+   "sha256": "ea2f0ddd8128734d90647dd04ecea22829f2fd9881d8a4d05b2c152b1160b850",
+   "bytes": 20093783,
+   "coincide": true
+  }
+ ],
+ "verificacion": "sha256 de cada copia archivada coincide exactamente con el de su origen",
+ "actualizacion_20261023": "Se anaden las dos copias pre_alineacion; las dos copias pre-R1R3 originales quedan intactas."
+}

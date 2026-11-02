@@ -1,0 +1,29 @@
+{
+  "origen": "salidas/documentos/informe_final_v18.docx",
+  "sha256_origen": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+  "destino": "salidas/documentos/informe_final_v19.docx",
+  "sha256_destino": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+  "fecha": "2026-10-21",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "operaciones": [
+    "21 ordenes de correccion de veracidad por indice y busqueda unica",
+    "38 hipervinculos nativos en REFERENCIAS con relaciones externas",
+    "9 tablas normalizadas a 10 pt sin reducir fuente",
+    "tablas 36, 53 y 54 con keepNext en la ultima fila",
+    "leyenda unica en los cuatro marcos del Anexo 7 y retiro de avisos duplicados en rotulos y notas",
+    "parrafo de introduccion del Anexo 4 dividido en parrafos nativos justificados",
+    "figura 48 regenerada con etiquetas sobre el intervalo de confianza",
+    "margenes verticales de celdas reducidos a 20 dxa en tablas 52, 53 y 54",
+    "indices nativos sincronizados sin borrar campos ni fijar folios",
+    "actualizacion de campos y repaginacion con Word COM"
+  ],
+  "sha256_intermedios": {
+    "_v19_paso1.docx": "29a8cfebcb4f154a0d34f34d973839b092b5d43add4e8c96eca7010677b34f60",
+    "_v19_paso2.docx": "71bb46466ee4bc345607248ef78281af41919e1beff80d6fc77ea3f2e7a0400f",
+    "_v19_paso2b.docx": "b6605fe179f10ddadd13b5bf65c3a8606647755788353970226dff16ae3e4403",
+    "_v19_paso3a.docx": "e4ff7962454204938cfb21280715ae7d73dbebdca4814411e3819aa0d831a25a",
+    "_v19_paso3b.docx": "5808ed92cf1e5de87f885384d885da9f33dd4bdc09d1107a6955494455b8cb36",
+    "_v19_paso3c.docx": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+  },
+  "nota": "El DOCX final es la etapa _v19_paso3c; no se modifico el archivo v18 ni los insumos de referencias."
+}

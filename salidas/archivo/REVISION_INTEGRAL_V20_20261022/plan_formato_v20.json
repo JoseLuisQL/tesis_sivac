@@ -1,0 +1,121 @@
+{
+  "imagenes": [
+    {
+      "indice_docx": 1,
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REVISION_INTEGRAL_V20_20261022/_diagnostico/logo_derivado.png",
+      "ancho_cm": 3.9688,
+      "alto_cm": 5.1327
+    }
+  ],
+  "tablas": {
+    "rebalanceo": [
+      1,
+      2
+    ]
+  },
+  "ajustes_formato": {
+    "estilos_fuente": [
+      {
+        "style_id": "Encabezado",
+        "font": "Times New Roman",
+        "sz": 22
+      },
+      {
+        "style_id": "Tabladeilustraciones",
+        "font": "Times New Roman",
+        "sz": 22
+      }
+    ],
+    "nivel3_negrita_cursiva": true,
+    "parrafos_alineacion": [
+      {
+        "indices": [
+          223,
+          234,
+          240,
+          245,
+          250,
+          256,
+          263,
+          269,
+          278,
+          283,
+          288,
+          290,
+          569,
+          575,
+          581,
+          588,
+          617,
+          629
+        ],
+        "jc": "left"
+      }
+    ],
+    "parrafos_espaciado": [
+      {
+        "indice": 646,
+        "line": 360,
+        "first_line": 720
+      }
+    ],
+    "celdas_espaciado": {
+      "tablas": [
+        0,
+        44,
+        46,
+        47,
+        48
+      ]
+    },
+    "runs_firma": [
+      {
+        "tablas": [
+          46,
+          47,
+          48
+        ],
+        "fila": 8,
+        "font": "Times New Roman",
+        "sz": 20
+      }
+    ],
+    "rejilla_formularios": [
+      {
+        "tablas": [
+          46,
+          47,
+          48
+        ],
+        "sz": 4,
+        "verticales_por_celda": true
+      },
+      {
+        "tablas": [
+          49,
+          50,
+          51
+        ],
+        "sz": 4
+      }
+    ],
+    "marcos_fotografia": [
+      {
+        "tablas": [
+          55,
+          56,
+          57,
+          58
+        ],
+        "sz": 4,
+        "mover_rotulo": true
+      }
+    ],
+    "folio_preliminar": {
+      "seccion": 1,
+      "encabezado_limpiar": true,
+      "desvincular_pie_seccion": 2,
+      "tamano_pt": 11
+    }
+  }
+}

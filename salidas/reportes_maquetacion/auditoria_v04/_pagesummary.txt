@@ -1,0 +1,316 @@
+  1 f=(none) | FACULTAD DE INGENIERÍA ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
+         END: ANDAHUAYLAS - PERÚ 2026
+  2 f=(none) | UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS FACULTAD DE INGENIERÍA
+         END: dahuaylas, _____ de _________________ de 2026 Dictamen Final: APROBADO CON MENCIÓN [ _______________________ ]
+  3 f=DECLARACIÓN JURADA DE AUTENTICIDAD Y NO PLAGIO | (ANEXO 32) Yo, José Luis Quispe León, identificado con DNI N.° [Completar DNI oficial
+         END: DNI N.° [Completar DNI oficial antes de impresión] Autor de la Tesis
+  4 f=   ii | DEDICATORIA A Dios, por brindarme la salud, la fortaleza espiritual y la perseverancia
+         END:  y Chincheros inspiró la creación del sistema web SIVAC para dignificar y agilizar su servicio a la comunidad.
+  5 f=  iii | AGRADECIMIENTOS A mi alma mater, la Universidad Nacional José María Arguedas (UNAJMA), y
+         END: en los laboratorios de programación y por su sincera amistad que perdura a través del tiempo.
+  6 f=   iv | ÍNDICE DE CONTENIDO DEDICATORIA ..............................................................................
+         END: Aceptación Tecnológica (TAM) .............................................................................. 37
+  7 f=    v | 3.2.15. Oportunidad de procesamiento .........................................................................
+         END: CAS....................................................................................................... 124
+  8 f=   vi | ÍNDICE DE FIGURAS Figura 1 Pilares tecnológicos de la arquitectura web (URL, HTTP y HTML) ....................
+         END: ........................................................................................................... 34
+  9 f=  vii | ÍNDICE DE TABLAS Tabla 1 Dimensiones, indicadores y escalas de medición de la gestión de movimientos mensuales
+         END: la 5 Estructura de la validación de los instrumentos de recolección de datos .............................. 99
+ 10 f= viii | RESUMEN Esta investigación tuvo como finalidad determinar en qué medida la aplicación del
+         END:  vacunas, cadena de frío, consistencia documental, Modelo de Aceptación Tecnológica (TAM), prueba de Wilcoxon.
+ 11 f=   ix | ABSTRACT This research aimed to determine the extent to which the application of the
+         END: management, cold chain, documentary consistency, Technology Acceptance Model (TAM), Wilcoxon test.
+ 12 f=    x | CHUMASQA Kay yachaymaskhaypa hatun munayninmi karqa SIVAC sutiyniyuq web llikapa
+         END: apaykachay, chiri apaykachay, qillqa chiqap kaynin, TAM yachay, Wilcoxon chimpapuray.
+ 13 f=    1 | INTRODUCCIÓN El propósito de esta investigación fue determinar en qué medida la aplicación del
+         END: ntales: la oportunidad de procesamiento, medida a través del tiempo de registro de movimientos y del tiempo de
+ 14 f=    2 | emisión de vales de salida; la consistencia documental, evaluada mediante el porcentaje de registros sin discr
+         END: intervenciones de sistemas de información logística sanitaria en redes de salud de alta dispersión geográfica.
+ 15 f=    3 | CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN 1.1. Descripción de la realidad problemática
+         END: enúa de forma sustancial estas deficiencias operativas y documentales. Shen et al. (2024, p. 1), al evaluar la
+ 16 f=    4 | implementación de un sistema digital de gestión de cadena de suministro hospitalaria en China, verificaron que
+         END: salud que el 45% de los operadores aún recababa información de vacunas desplazándose físicamente a los centros
+ 17 f=    5 | de salud y que el 25% de los reportes presentaba datos incompletos por carecer de un sistema web centralizado.
+         END: de completitud documental que sustentaron la necesidad de implementar una solución digital centralizada.
+ 18 f=    6 | En segundo término, se identificaron deficiencias recurrentes en la consistencia documental, expresadas en err
+         END: ión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?
+ 19 f=    7 | • ¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimie
+         END: s aritméticas en las conciliaciones mensuales y disminuir la carga administrativa asociada al registro manual.
+ 20 f=    8 | 1.3.3. Justificación metodológica Desde la perspectiva metodológica, el estudio se justificó porque estructuró
+         END: zar la infraestructura informática del área de inmunizaciones de la DISA Apurímac II mediante una arquitectura
+ 21 f=    9 | web cliente-servidor desacoplada, construida con tecnologías de código abierto, servicios de interfaz de progr
+         END:  conformada por indicadores medidos en escalas heterogéneas (minutos cronometrados, porcentajes de conformidad
+ 22 f=   10 | documental y puntajes ordinales en escala Likert), la contrastación empírica de la hipótesis general se determ
+         END: l proceso técnico- administrativo de registro, validación, trazabilidad en kardex y emisión de vales de salida
+ 23 f=   11 | de los productos biológicos en los centros de acopio de la DISA Apurímac II. Se estructura en tres dimensiones
+         END: y el contraste no paramétrico de rangos con signo de Wilcoxon para respaldar el rigor inferencial del estudio.
+ 24 f=   12 | CAPÍTULO II: ANTECEDENTES 2.1. Antecedentes internacionales
+         END:  de las inmunizaciones. La investigación concluyó que el reemplazo definitivo de los formatos en papel por una
+ 25 f=   13 | arquitectura web centralizada acelera la trazabilidad de las vacunas, incrementa la calidad de los datos repor
+         END: iza la fiabilidad de los saldos disponibles y eleva la satisfacción operativa de los usuarios institucionales.
+ 26 f=   14 | Ergetie et al. (2023), en su investigación multicéntrica titulada “Vaccine cold chain management practices in 
+         END:  de series temporales interrumpidas titulada “The impact of an integrated electronic immunization registry and
+ 27 f=   15 | logistics management information system (EIR-eLMIS) on vaccine availability in three regions in Tanzania: A pr
+         END: oncluyeron que el ciclo iterativo de Extreme Programming y el desarrollo centrado en el usuario garantizan una
+ 28 f=   16 | notable reducción de tiempos operativos y fortalecen la consistencia documental en sistemas de información san
+         END: ón (p. 32); tras el despliegue del sistema web, el 87.5% de los usuarios accedió a la información centralizada
+ 29 f=   17 | en tiempo real y la completitud de los registros de vacunas se elevó del 50% al 95% (p. 113). El autor concluy
+         END: ias no detectadas en el almacenamiento frigorífico y aseguraron la integridad de los datos de conservación por
+ 30 f=   18 | cada lote biológico (p. iii). El autor concluyó que la incorporación de herramientas informáticas en los servi
+         END: diferencia con SIVAC
+ 31 f=   19 | Autor y año
+         END: automatizando el kardex.
+ 32 f=   20 | Autor y año
+         END: kardex y vales de salida.
+ 33 f=   21 | Autor y año
+         END: brecha científica y operativa justifica el desarrollo e implementación del sistema web SIVAC.
+ 34 f=   22 | CAPÍTULO III: MARCO TEÓRICO 3.1. Bases teóricas
+         END: a del dominio o reglas de negocio, y la capa de persistencia relacional (De la Torre Llorente et al., 2010, p.
+ 35 f=   23 | iv). Como sostiene Sommerville (2016, p. 181), el procesamiento distribuido en capas independientes permite es
+         END:  estado (JSON Web Tokens) y esquemas de control de acceso basado en roles (RBAC), garantizando la verificación
+ 36 f=   24 | estricta de identidad y privilegios en cada transacción (Ruiz Barea, 2023, p. 36) (véase la Figura 2).
+         END: ra afrontar requerimientos críticos y cambiantes como los vinculados a la logística y distribución de vacunas.
+ 37 f=   25 | Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP) Nota. Adaptado de «Emb
+         END: nitidez metodológica de las dimensiones analíticas de la variable dependiente evaluada en la investigación.
+ 38 f=   26 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP) Nota. Adaptado de Ingeniería del software:
+         END: bilidad, la protección contra errores de los usuarios y la adecuación funcional son los componentes esenciales
+ 39 f=   27 | que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales. En la presente investigación, 
+         END: programa nacional de inmunizaciones del Perú persisten marcadas vulnerabilidades en la cadena de frío debido a
+ 40 f=   28 | una obsolescencia de equipos de conservación superior al 60% y a discrepancias entre los sistemas patrimoniale
+         END:  la cadena de frío de las vacunas (p. 12), por J. M. Champi Velásquez, 2023, Universidad Tecnológica del Perú.
+ 41 f=   29 | 3.1.2.2. Sistemas electrónicos de información de gestión logística (e-LMIS) y control FEFO
+         END:  trazabilidad integral de extremo a extremo en la red de suministro (Wasswa et al., 2023) (véase la Figura 7).
+ 42 f=   30 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de información de gestión log
+         END: s indicadores cronométricos directos: el tiempo de registro de movimiento de vacunas y el tiempo de emisión de
+ 43 f=   31 | comprobante de salida (vale). Como demuestran Dang et al. (2024) y Astuhuaman Perez y Baltazar Maza (2023, p. 
+         END: rdex de vacunas y asegurar la correspondencia estricta con el requerimiento institucional (véase la Figura 8).
+ 44 f=   32 | Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información rutinaria de salud 
+         END:  usuario considera que la interacción con la plataforma está libre de esfuerzo cognitivo y procedimental) y la
+ 45 f=   33 | utilidad percibida (grado en que el profesional tiene la convicción de que el sistema potencia su rendimiento,
+         END: predictor directo cardinal de la aceptación del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad
+ 46 f=   34 | percibida media decisivamente dicha relación (beta = 0.23, p < 0.001), confirmando que mitigar la fatiga opera
+         END: Unidad y escala de medición
+ 47 f=   35 | Dimensión Indicador
+         END: ón hasta su administración al usuario final (Ministerio de Salud, 2022, p. 14; Champi Velásquez, 2023, p. 14).
+ 48 f=   36 | 3.2.2. Centro de acopio de vacunas Instalación sanitaria intermedia dotada de equipos frigoríficos certificado
+         END:  en ciclos iterativos cortos, planificación por historias de usuario, diseño simple, refactorización continua,
+ 49 f=   37 | integración permanente y validación mediante pruebas automatizadas y de aceptación con el cliente (Beck, 1999,
+         END: e uso percibida y la utilidad percibida en el desempeño laboral (Davis, 1989, p. 320; Luo et al., 2024, p. 4).
+ 50 f=   38 | 3.2.15. Oportunidad de procesamiento Atributo operativo de la gestión logística que mide la rapidez y puntuali
+         END:  el suministro de biológicos con la construcción de una plataforma web escalable, evaluada bajo los estándares
+ 51 f=   39 | internacionales de calidad de producto de software establecidos en la norma ISO/IEC 25010:2023.
+         END: ta fase integró la definición de la metáfora del sistema, el levantamiento de los requerimientos funcionales y
+ 52 f=   40 | no funcionales, la formulación del catálogo de historias de usuario y la ejecución del juego de la planificaci
+         END: kardex y autorización de transferencias.
+ 53 f=   41 | Rol en SIVAC Actor Institucional
+         END: rangos térmicos y jeringas complementarias.
+ 54 f=   42 | Código Denominación del
+         END: Meses de Stock Disponible (ICI- DEMID).
+ 55 f=   43 | Requerimientos relevados mediante entrevistas y grupos focales con los profesionales de inmunizaciones y audit
+         END: cabeceras de seguridad Helmet.
+ 56 f=   44 | Código Característica de
+         END: percibida bajo modelo TAM (UP)
+ 57 f=   45 | Estructura taxonómica inmutable aprobada en la decisión DEC-007 y en la matriz de operacionalización instituci
+         END: Dimensión 1 y Dimensión 3
+ 58 f=   46 | Código Título de la
+         END: detalla el cronograma de iteraciones. Tabla 6
+ 59 f=   47 | Plan Detallado de las Cinco Iteraciones de Extreme Programming Iteración
+         END: as de interacción con los actores institucionales se sintetizan en el diagrama de casos de uso UML. El sistema
+ 60 f=   48 | articula dieciséis casos de uso (CU-01 a CU-16) distribuidos en los paquetes funcionales de Seguridad, Gestión
+         END: y los servicios de dominio del servidor. En la Figura 3 se ilustra la arquitectura de subsistemas del sistema,
+ 61 f=   49 | organizada en tres bloques cardinales: el cliente Single Page Application (SPA), el servidor de aplicaciones E
+         END: Infraestructura de Datos (Prisma ORM y motor relacional PostgreSQL 16 Alpine con soporte transaccional ACID).
+ 62 f=   50 | Figura 4 Arquitectura en Cuatro Capas del Sistema SIVAC
+         END: os almacenes, el cálculo del Consumo Promedio Mensualizado (CPA), la determinación del ratio de Meses de Stock
+ 63 f=   51 | Disponible (MSD = Saldo / CPA) y la ramificación semafórica estandarizada por el Ministerio de Salud: condició
+         END:  expedición del token JWT y la inyección del contexto territorial para el filtrado seguro de establecimientos.
+ 64 f=   52 | Figura 7 Diagrama de Secuencia UML: Autenticación Segura y Control de Acceso RBAC
+         END: Verificación de recepción física
+ 65 f=   53 | Módulo del Sistema SIVAC
+         END:  y la propagación de saldos a meses futuros. 3.3.2.4. Modelado Conceptual, Lógico y Físico de la Base de Datos
+ 66 f=   54 | El diseño de la base de datos se desarrolló bajo el estándar relacional en tercera forma normal (3FN), asegura
+         END: s foráneas y cardinalidades de uno a muchos (1:N) que preservan la integridad de la información institucional.
+ 67 f=   55 | Figura 10 Esquema Relacional Lógico de Entidades Principales en PostgreSQL / Prisma ORM
+         END: asignado a la Red de Salud.
+ 68 f=   56 | Nombre del Campo
+         END: Tabla 10 Diccionario de Datos: Tabla centros_acopio
+ 69 f=   57 | Nombre del Campo
+         END: puesto o posta médica.
+ 70 f=   58 | Nombre del Campo
+         END: último inicio de sesión exitoso.
+ 71 f=   59 | La vinculación multi-acopio se implementa mediante la tabla intermedia usuarios_centros_acopio(usuario_id, cen
+         END: Descripción y Restricciones
+ 72 f=   60 | Nombre del Campo
+         END: recibidas en la remesa original.
+ 73 f=   61 | Nombre del Campo Tipo de Dato
+         END: Descripción y Restricciones
+ 74 f=   62 | Nombre del Campo
+         END: movimiento mensual principal.
+ 75 f=   63 | Nombre del Campo
+         END: solo_base, solo_adicionales).
+ 76 f=   64 | Nombre del Campo
+         END: ejecución de la transacción.
+ 77 f=   65 | Nombre del Campo
+         END: NORMOSTOCK, SOBRESTOCK).
+ 78 f=   66 | Registros especializados para el monitoreo de disponibilidad según directivas de la DIGEMID. Tabla 22
+         END: s (Pair Programming), el desarrollo guiado por pruebas (Test-Driven Development - TDD), la propiedad colectiva
+ 79 f=   67 | del código y la refactorización continua (Continuous Refactoring) para mantener el sistema libre de deuda técn
+         END: PECOSA y reportes contables.
+ 80 f=   68 | Capa Tecnológica Tecnología / Biblioteca
+         END: estado global. En la Figura 13 se muestra el árbol de directorios del frontend en React 18, TypeScript y Vite.
+ 81 f=   69 | Figura 13 Estructura Modular del Cliente Web SPA en React 18, TypeScript y Vite
+         END: Salida, más la Entrega Total. Figura 14
+ 82 f=   70 | Implementación del Algoritmo de Sincronización Recursiva de Saldos Intermensuales en TypeScript
+         END:  valida la firma criptográfica contra la clave secreta institucional y recupera los identificadores de centros
+ 83 f=   71 | de acopio autorizados para el usuario, inyectándolos en el objeto de contexto req.user para aislar las consult
+         END: Algoritmo de Cálculo de Indicadores de Disponibilidad Logística MSD y Semáforo Normativo
+ 84 f=   72 | Implementación en TypeScript del cálculo matemático de Meses de Stock Disponible y la categorización de alerta
+         END: tema SIVAC con soporte para credenciales institucionales y generación de sesiones seguras mediante tokens JWT.
+ 85 f=   73 | Figura 19 Interfaz de Usuario: Dashboard Principal de Monitoreo PAI, Curvas de Tendencia y
+         END: eventos operacionales. Figura 21
+ 86 f=   74 | Interfaz de Usuario: Módulo de Inventario y Control de Lotes de Biológicos con Trazabilidad FEFO
+         END: de disponibilidad en cámara fría. Figura 23
+ 87 f=   75 | Interfaz de Usuario: Matriz Contable de Movimientos Mensuales de Vacunas por Establecimiento
+         END: extraordinarias por establecimiento. Figura 25
+ 88 f=   76 | Interfaz de Usuario: Módulo de Planificación Anual de Metas PAI y Programación Mensual Ene-Dic
+         END: gestión sanitaria. Figura 27
+ 89 f=   77 | Interfaz de Usuario: Módulo de Inteligencia Logística ICI-DEMID con Semáforo de Disponibilidad MSD
+         END: resultantes. Figura 29
+ 90 f=   78 | Interfaz de Usuario: Vista Detallada del Kardex con Múltiples Operaciones (Ingreso, Salida y Transferencia)
+         END: n de usuarios durante la ejecución de pruebas automatizadas de creación y asignación de privilegios de acceso.
+ 91 f=   79 | Figura 32 Interfaz de Usuario: Centro de Alertas Tempranas y Triaje Operativo con Severidades
+         END: por dosis biológica. 3.3.4. Fase IV: Pruebas de Calidad del Software
+ 92 f=   80 | La fase de pruebas en Extreme Programming constituye el pilar fundamental que garantiza la fiabilidad operativ
+         END: Casos Ejecutados Resultado
+ 93 f=   81 | Suite de Pruebas Archivo de
+         END: verificado. Aprobado
+ 94 f=   82 | Caso de Prueba
+         END: manual. Aprobado
+ 95 f=   83 | Caso de Prueba
+         END: cubiertos Excelente
+ 96 f=   84 | Característica ISO/IEC 25010
+         END: despliegue físico y topología de red en producción. Figura 35
+ 97 f=   85 | Diagrama de Despliegue Físico y Topología de Red en Producción con Docker y Nginx Topología de red que ilustra
+         END: e Datos (PostgreSQL 16 Alpine) con volúmenes persistentes y copias de seguridad automáticas diarias (pg_dump).
+ 98 f=   86 | CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN 4.1. Tipo de investigación
+         END: llo e ingeniería del sistema web SIVAC aplicando las cuatro fases de Extreme Programming y el estándar ISO/IEC
+ 99 f=   87 | 25010:2023; (3) validación de contenido de los instrumentos por juicio de expertos y formalización del protoco
+         END: GE: 𝑂1 →𝑋→𝑂2 Donde:
+100 f=   88 | • GE: Grupo experimental único conformado por la totalidad censal del personal operativo de inmunizaciones y c
+         END: tecnológica previa al post-test.
+101 f=   89 | Etapa de Intervención
+         END: 2 14.29%
+102 f=   90 | Centro de Acopio / Dependencia Sanitaria
+         END: s al operador i; y (e) para la Aceptación del proceso (AP) y la Utilidad percibida (UP), se utilizó el puntaje
+103 f=   91 | sumativo directo obtenido por el operador i en cada subescala de 4 ítems (rango de 4 a 20 puntos), correspondi
+         END: adas en campo y los pares agregados por operador (N = 14) requeridos para el análisis estadístico inferencial.
+104 f=   92 | 4.9. Operacionalización de variables 4.9.1. Variable independiente: Sistema web SIVAC
+         END: Manual, X₁ = SIVAC)
+105 f=   93 | Variable Definición
+         END:  de emisión de comprobante de salida o vale pecosa para el operador i, se determinó a través de la Ecuación 2:
+106 f=   94 | 𝑇𝑣𝑎𝑙𝑒,𝑖= ∑
+         END: 𝑗=1 (5)
+107 f=   95 | Donde cada término representa la calificación ordinal asignada por el operador i al reactivo j (del reactivo A
+         END: erativas rigurosas: (a) el Instrumento N.° 01, Ficha de observación de tiempos cronometrados, estructurada con
+108 f=   96 | campos de control temporal y tres escenarios operativos estandarizados (REG-01: registro de ingreso de lote de
+         END: MINSA/DGIESP- 2022
+109 f=   97 | Dimensión Evaluada
+         END: -MINSA/DGIESP-2022 y la verificación de la concordancia interevaluador a través del coeficiente Kappa de Cohen
+110 f=   98 | (κ = (P_o - P_e) / (1 - P_e)), reconociendo que cuando la auditoría es ejecutada por un único investigador se 
+         END: os derivados del modelo de Tristán-López (2008), que para tres jueces fija un valor mínimo por ítem de 0.5823:
+111 f=   99 | 𝑉= 𝑆
+         END: interevaluad or
+112 f=  100 | Cód. Instrumento
+         END: os cuyas diferencias pareadas (dᵢ = O₂ᵢ - O₁ᵢ) confirmaron normalidad en la prueba de Shapiro-Wilk (p > 0.05):
+113 f=  101 | 𝑡= 𝑑
+         END: nes técnicas no alteraran la provisión regular de biológicos a los establecimientos de salud jurisdiccionales.
+114 f=  102 | En segundo lugar, se garantizó el principio de autonomía y voluntariedad mediante la suscripción del consentim
+         END: ital para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial.
+115 f=  103 | CAPÍTULO V: RESULTADOS ADVERTENCIA METODOLÓGICA Y SALVAGUARDA DEONTOLÓGICA
+         END:  medición del postest (tras la implantación del sistema web SIVAC), la consistencia interna global se situó en
+116 f=  104 | .915 (IC 95%: [0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%: [0.618, 0.939]) y la sube
+         END: : >= .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. Fuente: Matriz de recolección de campo SIVAC (2026).
+117 f=  105 | 5.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones La caracterización descriptiva 
+         END: va comparativa pretest y postest para los indicadores de la Dimensión 1: Oportunidad de procesamiento (n = 14)
+118 f=  106 | Indicador Momento
+         END: ión porcentual calculada respecto a la media del pretest. Fuente: Ficha de Registro Cronométrico SIVAC (2026).
+119 f=  107 | Figura 5 Diagramas de cajas pareados (Boxplots) para los tiempos de registro y emisión de vales
+         END: istros. Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7.
+120 f=  108 | Tabla 15 Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión
+         END: cta concordancia con la cuota mensual programada. Fuente: Ficha de Cotejo Documental de Lotes y Kardex (2026).
+121 f=  109 | Figura 6 Gráfico de barras e intervalos de confianza para los indicadores de consistencia
+         END: 30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones.
+122 f=  110 | Tabla 16 Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión
+         END: Bajo (8 a 18), Medio (19 a 29), Alto (30 a 40). Fuente: Cuestionario de Satisfacción del Usuario SIVAC (2026).
+123 f=  111 | Figura 7 Comparación de puntajes del Modelo de Aceptación Tecnológica (TAM) pretest vs posttest
+         END: > .05).
+124 f=  112 | 2. Tiempo de emisión de vales (T_vale): W = 0.933, p = 0.331 (p > .05). 3. Registros sin discrepancias (RSD): 
+         END: Student pareada
+125 f=  113 | Dimensión Indicador
+         END: de' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico
+126 f=  114 | estandarizado Z = -3.30, p = 0.001 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r 
+         END: Wilcoxon. Elaboración propia. 5.4.2. Contrastación de la Hipótesis Específica 2
+127 f=  115 | A. Planteamiento
+         END: Rechazar H0,2
+128 f=  116 | Indicador Prueba
+         END:  p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se
+129 f=  117 | acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC e
+         END: conjunta: Para aceptar la Hipótesis General en un diseño preexperimental compuesto por múltiples
+130 f=  118 | dimensiones operacionales, se formula la regla de decisión conjuntiva: H_G se aceptará si y solo si se rechaza
+         END: documental superior al 95%
+131 f=  119 | Hipótesis de
+         END:  confirma la validez de la Hipótesis General con un nivel de confianza del 95% (p < .001). Elaboración propia.
+132 f=  120 | CAPÍTULO VI: DISCUSIÓN El propósito medular de la presente investigación fue determinar de qué manera la
+         END: e evidenció una elevación estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos,
+133 f=  121 | +119.47%) y en la Utilidad Percibida (de 9.00 a 18.50 puntos, +105.56%), alcanzando un puntaje global TAM de 3
+         END: logrando una herramienta robusta, validada y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023.
+134 f=  122 | CONCLUSIONES Primera (Objetivo General): Se determinó que la aplicación del sistema web
+         END: puntos (nivel 'Alto'), con t(13) = 33.35 y t(13) = 34.88 (p < .001; d > 8.9), evidenciando alta aceptabilidad.
+135 f=  123 | RECOMENDACIONES Primera (Gestión Institucional y Despliegue): A la Dirección de Salud Apurímac II
+         END: vacunas y sensores IoT de monitoreo de temperatura en tiempo real integrados a la API REST de SIVAC.
+136 f=  124 | REFERENCIAS BIBLIOGRÁFICAS Addy, A., Ajayi, O., y Mensah, K. (2024). Artificial intelligence in the supply cha
+         END: la conservación en la cadena de frío de vacunas del servicio de inmunizaciones en el distrito de Puente Piedra
+137 f=  125 | [Tesis de licenciatura, Universidad de Ciencias y Humanidades]. Repositorio Institucional UCH. http://hdl.hand
+         END: rthwest Ethiopia. Frontiers in Public Health, 11, Artículo 1194807. https://doi.org/10.3389/fpubh.2023.1194807
+138 f=  126 | Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el control de inventario en 
+         END: sons learned from a workforce development intervention in Rwanda’s health supply chain. Global Health: Science
+139 f=  127 | and Practice, 11(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22- 00295
+         END: enabdellah, N. C., y Hamal, O. (2024). ISO/IEC 25010-based quality evaluation of three mobile applications for
+140 f=  128 | reproductive health services in Morocco. Clinical and Experimental Obstetrics & Gynecology, 51(4), Artículo 88
+         END: nda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4
+141 f=  129 | World Health Organization. (2021). Global strategy on digital health 2020–2025. World Health Organization. htt
+         END: strategy on digital health 2020–2025. World Health Organization. https://apps.who.int/iris/handle/10665/344249
+142 f=  130 | ANEXOS
+         END: 130 ANEXOS
+143 f=  131 | ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007) En la Tabla A1.1 se presenta la matriz de consistencia 
+         END: heterogéneas en un p-valor global artificial
+144 f=  132 | Problemas de Investigación Objetivos de Investigación
+         END: aceptación tecnológica (Inst. 03, Modalidad A)
+145 f=  133 | Problemas de Investigación Objetivos de Investigación
+         END: sqrt(N) Nota. Matriz de consistencia metodológica aprobada según DEC-007. UNAJMA (2026).
+146 f=  134 | ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007) En la Tabla A2.1 se presenta la operacionalizació
+         END: De razón (continua)
+147 f=  135 | Variable Definición
+         END: 40) Nota. Operacionalización oficial fijada por la Decisión DEC-007. UNAJMA (2026).
+148 f=  136 | ANEXO 3: CERTIFICADOS DE VALIDACIÓN POR JUICIO DE EXPERTOS En cumplimiento de las decisiones DEC-015 y DEC-020
+         END: Ficha Cronométrica N.° 01, Ficha de Cotejo N.° 02 y Cuestionario TAM N.° 03
+149 f=  137 | Juez Validador: Evaluador Pericial Designado (Experto 2)
+         END: Firma y Sello del Juez Validador: Experto 3 DNI: [Registrado en expediente]
+150 f=  138 | ANEXO 4: INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA INVESTIGACIÓN
+         END: auditadas) * 100 Porcentaje (0% a 100%)
+151 f=  139 | Código Indicador Medido
+         END: 1 = Muy en desacuerdo 5 = Muy de acuerdo
+152 f=  140 | Ítem Constructo TAM
+         END: uerdo Nota. Cuestionario validado por juicio de expertos (V = 1.00) con confiabilidad Alfa de Cronbach > 0.90.
+153 f=  141 | ANEXO 5: MATRIZ DE DATOS TABULADOS DE CAMPO (PRETEST Y POSTTEST)
+         END: 10 Bajo
+154 f=  142 | suj eto
+         END: 34 Alto
+155 f=  143 | suj eto
+         END: Alto Nota. Mediciones finales obtenidas tras la implementación de SIVAC.
+156 f=  144 | ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y TRAZABILIDAD SIVAC
+         END: saldos Nota. Resumen del backlog de desarrollo implementado en el repositorio syncova (2026).
+157 f=  145 | ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO
+         END: (Resolución recomendada: 300 DPI, formato PNG o JPG nítido). Figura A7.3
+158 f=  146 | Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores 
+         END: personal de salud. Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (2026).

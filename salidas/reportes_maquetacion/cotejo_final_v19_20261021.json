@@ -1,0 +1,239 @@
+{
+  "version": "v19",
+  "fecha": "2026-10-21",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "agente": "verificador-integridad",
+  "squad": "Squad A",
+  "tipo_control": "cotejo final acotado de cambios v18 -> v19",
+  "alcance": {
+    "auditoria_previa": "La auditoria de 159 paginas, 40 controles y 79 filas por pagina corresponde a la v18 y consta en salidas/reportes_maquetacion/auditoria_independiente_v18_p081_p159.json.",
+    "este_informe": "Cotejo de cambios de la v19 de 158 paginas. No repite la auditoria completa de la v18 ni declara que las 158 paginas hayan sido leidas visualmente ampliadas.",
+    "inspeccion_visual": "16 paginas leidas visualmente a pagina completa sobre los renders de 110 dpi de paginas_control_v19_completo/, seleccionadas por contenido y no por folios heredados. No se hicieron recortes ampliados adicionales.",
+    "barrido_global": "Las 158 paginas se barrieron automaticamente con PyMuPDF (texto, numero de palabras, geometria, desbordes, paginas casi vacias) y con el DOCX congelado (cuerpo, tablas, formulas, imagenes, relaciones externas). No se generaron hojas de contacto graficas.",
+    "sin_edicion": "No se modifico el DOCX, el PDF ni el motor docx_quirurgico.py durante este control.",
+    "paginas_en_folios": "Las paginas citadas son paginas fisicas del PDF v19; el folio impreso puede diferir (por ejemplo, pagina fisica 55 = folio 40)."
+  },
+  "artefactos_verificados": {
+    "docx": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v19.docx",
+      "bytes": 15090858,
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "parrafos_body": 827,
+      "tablas": 59,
+      "secciones": 7,
+      "formulas_omml": 12,
+      "formulas_omml_en_tablas": 0,
+      "relaciones_externas": 38,
+      "hipervinculos_w_hyperlink": 38,
+      "urls_distintas": 38,
+      "blips_de_imagen": 49
+    },
+    "pdf": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v19.pdf",
+      "bytes": 17906375,
+      "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas": 158,
+      "retrato": "152 paginas de 595.3 x 841.9 pt",
+      "apaisado": "6 paginas de 841.9 x 595.3 pt (142-145 y 153-154)",
+      "imagenes_colocadas": 49,
+      "enlaces_uri": 40,
+      "enlaces_uri_distintos": 38
+    },
+    "base_v18_preservada": {
+      "docx_sha256": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+      "pdf_sha256": "d0dbe841df7bcad3132a45277c746aaf69008ce3ce886eb6703eac75b8373d00",
+      "paginas": 159,
+      "estado": "No fue reescrita por este control."
+    }
+  },
+  "controles": [
+    {
+      "id": "C-01",
+      "materia": "Identidad de artefactos y conservacion de la base v18",
+      "estado": "resuelto",
+      "evidencia": "Bytes y SHA-256 del DOCX y del PDF coinciden con la senal de ejecucion. La v18 conserva sus hashes y 159 paginas.",
+      "paginas": []
+    },
+    {
+      "id": "C-02",
+      "materia": "INC-01: eliminacion de tokens [Pendiente] / [Pending]",
+      "estado": "resuelto",
+      "evidencia": "0 ocurrencias de [Pendiente], [Pending] y [VERIFICAR] en el texto del DOCX y del PDF.",
+      "paginas": []
+    },
+    {
+      "id": "C-03",
+      "materia": "INC-02: Anexo 5 declara datos de prueba y no mediciones de campo",
+      "estado": "resuelto",
+      "evidencia": "El titulo dice MATRIZ DE DATOS TABULADOS DE PRUEBA; la introduccion afirma que los valores 'son datos de prueba y no constituyen mediciones de campo'; las notas de las Tablas 49 y 50 repiten que no son mediciones de campo ni finales.",
+      "paginas": [153, 154]
+    },
+    {
+      "id": "C-04",
+      "materia": "INC-03: atribucion veraz de las salidas estadisticas",
+      "estado": "resuelto",
+      "evidencia": "Las notas de las Figuras 46, 47 y 48 dicen 'Salida bioestadistica generada con Python (Matplotlib) a 300 DPI'. Las unicas menciones a SPSS son 'Elaboracion propia en base a SPSS/Python' y el titulo del libro de George y Mallery; no se atribuye a SPSS una figura generada con Matplotlib.",
+      "paginas": [120, 122, 123]
+    },
+    {
+      "id": "C-05",
+      "materia": "INC-04: Anexo 7 no simula fotografias ni acreditacion de campo",
+      "estado": "resuelto",
+      "evidencia": "El titulo lleva '(PENDIENTE DE INCORPORACION)'; cada marco dice 'Fotografia pendiente de incorporacion'; el texto precisa que 'los espacios no acreditan por si mismos la realizacion del registro' y cada nota dice 'El espacio se reserva...'.",
+      "paginas": [156, 157, 158]
+    },
+    {
+      "id": "C-06",
+      "materia": "INC-13: Table 34 no declara ICC/kappa inexistentes",
+      "estado": "resuelto",
+      "evidencia": "INST-01 e INST-02 muestran 'Verificacion de concordancia pendiente', V e IVC 'No aplica'; INST-03 muestra 'Ver VAL-VD' y 'Pendiente de cotejo'. No aparece 'Acreditado' ni se presenta la declaracion de 4 expertos como ICC/kappa calculado. El texto describe ICC(2,1) y kappa como verificaciones futuras.",
+      "paginas": [113]
+    },
+    {
+      "id": "C-07",
+      "materia": "Figura 11: nota con cuatro fases y despliegue",
+      "estado": "resuelto",
+      "evidencia": "La nota visible dice: 'El esquema incluye el despliegue como actividad operativa complementaria a las cuatro fases de XP: planificacion, diseno, codificacion y pruebas'.",
+      "paginas": [55]
+    },
+    {
+      "id": "C-08",
+      "materia": "Notas de Tablas 36 y 51 junto al final de la tabla",
+      "estado": "resuelto",
+      "evidencia": "En la pagina 120, la ultima fila de la Tabla 36 y su nota aparecen juntas, sin nota huerfana. En la pagina 155, la Tabla 51 cierra con su nota 'Resumen del backlog...' en la misma pagina.",
+      "paginas": [119, 120, 155]
+    },
+    {
+      "id": "C-09",
+      "materia": "Minimo 10 pt en las 9 tablas de datos senaladas",
+      "estado": "resuelto",
+      "evidencia": "Las Tablas 36, 37, 38, 39, 41, 42, 43, 49 y 50 tienen tamano minimo y maximo de 10.0 pt en sus runs. La lectura visual de 36, 37, 38, 49 y 50 confirma legibilidad.",
+      "paginas": [119, 120, 121, 123, 153, 154]
+    },
+    {
+      "id": "C-10",
+      "materia": "38 hipervinculos nativos desde 38 URL actuales",
+      "estado": "resuelto",
+      "evidencia": "El DOCX contiene 38 relaciones externas, 38 etiquetas w:hyperlink y 38 URL distintas. El PDF contiene 40 anotaciones URI pero 38 URI distintas, con conjuntos identicos entre DOCX y PDF. La pagina de referencias muestra enlaces azules subrayados y sangria francesa.",
+      "paginas": [135]
+    },
+    {
+      "id": "C-11",
+      "materia": "Cero rayas U+2014, cero tokens pendientes y cero 'acreditado' no respaldado",
+      "estado": "resuelto",
+      "evidencia": "0 U+2014 en DOCX y PDF (se conservan 64 U+2013 permitidos). 0 [Pendiente], 0 [Pending], 0 [VERIFICAR]. 'Acreditado/acreditado' tiene 0 ocurrencias; las formas 'acredito', 'acreditan' y 'acreditacion' aparecen solo en contextos atributivos o negativos que no declaran una acreditacion inexistente.",
+      "paginas": []
+    },
+    {
+      "id": "C-12",
+      "materia": "Tablas 49, 50 y 51 completas con nota legible (pp. 153-155)",
+      "estado": "resuelto",
+      "evidencia": "Tabla 49: 14 filas TRAB-01 a TRAB-14, 18 columnas y nota, integra en la pagina 153. Tabla 50: 14 filas, 18 columnas y nota, integra en la pagina 154. Tabla 51: 7 filas HU-01 a HU-15, 5 columnas y nota, integra en la pagina 155. Sin fractura intrapalabra en la lectura visual.",
+      "paginas": [153, 154, 155]
+    },
+    {
+      "id": "C-13",
+      "materia": "Reparacion de 49 imagenes sin ambiguedad y sin intercambio de Figuras 31/32",
+      "estado": "resuelto",
+      "evidencia": "El PDF contiene 49 colocaciones de imagen. La Figura 31 (modulo de inventario y control de lotes FEFO) y la Figura 32 (gestion de lotes y filtros) conservan su contenido y orden secuencial; no hay intercambio. La Figura 30 y la 33 mantienen la secuencia visual.",
+      "paginas": [88, 89]
+    },
+    {
+      "id": "C-14",
+      "materia": "47 de 48 figuras numeradas con imagen a 300 dpi o mas",
+      "estado": "parcial",
+      "evidencia": "Se contaron 48 figuras numeradas con imagen (Figuras 1-48) y 49 colocaciones totales (la restante es el escudo de portada). 47 de 48 alcanzan 300 dpi o mas; solo la Figura 6 queda en 136.5 dpi (pagina 44). El escudo de portada esta a 117.8 dpi, no es figura numerada y se considera exento. Las Figuras 49-52 no tienen imagen: son marcos declarados pendientes.",
+      "paginas": [1, 44]
+    },
+    {
+      "id": "C-15",
+      "materia": "Escala experta 1-4 y TAM 1-5 declaradas sin conversion indebida",
+      "estado": "resuelto",
+      "evidencia": "El texto de la pagina 113 distingue 12 componentes en escala experta de 1 a 4 y el cuestionario TAM Modalidad A con 8 reactivos en escala Likert de 1 a 5. No se usa la escala 1-4 como ICC/kappa ni se convierte en acreditacion.",
+      "paginas": [113]
+    },
+    {
+      "id": "C-16",
+      "materia": "DNI en blanco y cierre del Capitulo I conservados intencionalmente",
+      "estado": "resuelto",
+      "evidencia": "No se rellenaron DNI, firmas ni fotografias. El espacio de cierre del Capitulo I se conserva. No se computan como defectos editoriales segun la instruccion del Director.",
+      "paginas": []
+    },
+    {
+      "id": "C-17",
+      "materia": "Barrido global de integridad y geometria de las 158 paginas",
+      "estado": "resuelto",
+      "evidencia": "158 paginas; 43,102 palabras extraidas; 152 retrato y 6 apaisado; 0 desbordes de cuerpo (solo numeros de pagina en la zona de encabezado, sobre el margen superior); 1 pagina casi vacia (141, separadora 'ANEXOS', intencional). No se hallaron paginas en blanco accidentales ni texto duplicado masivo.",
+      "paginas": [141]
+    }
+  ],
+  "paginas_inspeccionadas_visualmente": [
+    {"pagina_pdf": 55, "folio": 40, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Figura 11 y nota con cuatro fases de XP y despliegue; texto y nota legibles."},
+    {"pagina_pdf": 88, "folio": 73, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Figuras 30 y 31 secuenciales; Figura 31 muestra inventario y control de lotes FEFO, sin intercambio."},
+    {"pagina_pdf": 89, "folio": 74, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Figuras 32 y 33 secuenciales; Figura 32 muestra gestion de lotes y filtros, sin intercambio con la 31."},
+    {"pagina_pdf": 113, "folio": 98, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Tabla 34 completa: 'Verificacion de concordancia pendiente', 'No aplica', 'Ver VAL-VD', 'Pendiente de cotejo'. Sin 'Acreditado'."},
+    {"pagina_pdf": 119, "folio": 104, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Inicio de la Tabla 36 con encabezado y filas legibles a 10 pt."},
+    {"pagina_pdf": 120, "folio": 105, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Ultima fila de la Tabla 36 seguida de su nota; Figura 46 con nota 'Python (Matplotlib) a 300 DPI'."},
+    {"pagina_pdf": 121, "folio": 106, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Tabla 37 integra con nota al pie; 10 pt legible."},
+    {"pagina_pdf": 122, "folio": 107, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Figura 47 con nota 'Python (Matplotlib) a 300 DPI'."},
+    {"pagina_pdf": 123, "folio": 108, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Tabla 38 con nota y Figura 48 con nota 'Python (Matplotlib) a 300 DPI'; sin fractura."},
+    {"pagina_pdf": 135, "folio": 120, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Inicio de REFERENCIAS BIBLIOGRAFICAS con sangria francesa, cursivas y enlaces azules subrayados; uso de 'y' antes del ultimo autor."},
+    {"pagina_pdf": 153, "folio": 138, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Anexo 5, Tabla 49 completa (TRAB-01 a TRAB-14) y nota de datos de prueba; apaisado legible."},
+    {"pagina_pdf": 154, "folio": 139, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Tabla 50 completa (TRAB-01 a TRAB-14) y nota 'no constituyen mediciones finales de campo'; apaisado legible."},
+    {"pagina_pdf": 155, "folio": 140, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Anexo 6, Tabla 51 completa (HU-01 a HU-15) y nota al final de la tabla en la misma pagina."},
+    {"pagina_pdf": 156, "folio": 141, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Anexo 7 '(PENDIENTE DE INCORPORACION)', marco 'Fotografia pendiente de incorporacion' y Figura 49 con nota de espacio reservado."},
+    {"pagina_pdf": 157, "folio": 142, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Figuras 50 y 51 con marcos pendientes y notas de espacio reservado; sin superposicion."},
+    {"pagina_pdf": 158, "folio": 143, "metodo": "visual_pagina_completa_110dpi", "estado": "conforme", "hallazgo": "Figura 52 con marco pendiente y nota; cierre del Anexo 7 sin fotografia simulada."}
+  ],
+  "barrido_global": {
+    "paginas": 158,
+    "palabras_extraidas": 43102,
+    "paginas_retrato": 152,
+    "paginas_apaisado": 6,
+    "paginas_casi_vacias": [
+      {"pagina_pdf": 141, "palabras": 2, "texto": "126 ANEXOS", "dictamen": "separadora intencional, no pagina en blanco accidental"}
+    ],
+    "desbordes_de_cuerpo": 0,
+    "observacion_desbordes": "Los unicos bloques fuera del area util son los numeros de pagina en la zona de encabezado (y aproximada 36 pt), comportamiento esperado.",
+    "figuras_rotuladas": "Figuras 1-52 presentes; 48 con imagen y 49-52 como marcos pendientes.",
+    "tablas_docx": "59 objetos de tabla: 51 con rotulo numerico visible y 8 tablas de portada, formatos de validacion o marcos fotograficos sin rotulo numerico.",
+    "enlaces_pdf": "40 anotaciones URI, 38 URI distintas, identicas a las 38 relaciones externas del DOCX."
+  },
+  "reparacion_imagenes": {
+    "colocaciones_pdf_contadas": 49,
+    "figuras_numeradas_con_imagen": 48,
+    "figuras_300_o_mas": 47,
+    "figuras_bajo_300": [
+      {"figura": 6, "pagina_pdf": 44, "dpi": 136.5, "estado": "residual conocido"}
+    ],
+    "escudo_portada": {"pagina_pdf": 1, "dpi": 117.8, "estado": "no numerado, exento"},
+    "figuras_sin_imagen": [49, 50, 51, 52],
+    "intercambio_31_32": "no detectado",
+    "asignaciones_sin_ambiguedad": true
+  },
+  "incidencias_verificadas": [
+    {"id": "INC-01", "estado": "resuelto", "evidencia": "0 tokens [Pendiente]/[Pending] en DOCX y PDF."},
+    {"id": "INC-02", "estado": "resuelto", "evidencia": "Anexo 5 y notas de Tablas 49/50 declaran datos de prueba, no mediciones de campo."},
+    {"id": "INC-03", "estado": "resuelto", "evidencia": "Notas de Figuras 46/47/48 atribuidas a Python (Matplotlib); SPSS solo en contextos legitimos."},
+    {"id": "INC-04", "estado": "resuelto", "evidencia": "Anexo 7 rotulado como pendiente; marcos y notas no acreditan el registro."},
+    {"id": "INC-13", "estado": "resuelto", "evidencia": "Tabla 34 declara concordancia pendiente; no hay 'Acreditado' ni ICC/kappa presentados como calculados."}
+  ],
+  "hallazgos_residuales": [
+    {"id": "RES-01", "tipo": "residual_no_bloqueante", "descripcion": "Figura 6 a 136.5 dpi en la pagina 44; no alcanza 300 dpi. Se conserva como residual conocido.", "accion": "Sustituir la imagen por una version de 300 dpi si el tesista aporta el original; no impide la revision editorial."},
+    {"id": "RES-02", "tipo": "informativo", "descripcion": "Escudo de portada a 117.8 dpi en la pagina 1; no es figura numerada.", "accion": "Sin accion obligatoria."},
+    {"id": "RES-03", "tipo": "residual_no_bloqueante", "descripcion": "Acta de validacion sin firmas; coeficientes V e IVC declarados condicionales; ICC(2,1) y kappa no calculados por falta de datos individuales.", "accion": "Completar con las firmas y los registros reales de los jueces; no simular coeficientes."},
+    {"id": "RES-04", "tipo": "residual_no_bloqueante", "descripcion": "Anexo 7 sin fotografias: cuatro marcos 'Fotografia pendiente de incorporacion'.", "accion": "Incorporar las fotografias reales cuando el tesista las entregue; el rotulo actual es veraz."},
+    {"id": "RES-05", "tipo": "informativo", "descripcion": "DNI en blanco y espacio de cierre del Capitulo I conservados por instruccion del Director.", "accion": "Sin accion."},
+    {"id": "RES-06", "tipo": "informativo", "descripcion": "Los datos de las Tablas 49/50 son datos de prueba declarados; no son mediciones de campo.", "accion": "Mantener la declaracion; no presentarlos como resultados empiricos definitivos."},
+    {"id": "RES-07", "tipo": "informativo", "descripcion": "Figuras 49-52 no tienen imagen porque son marcos reservados del Anexo 7.", "accion": "Sin accion hasta recibir las fotografias."}
+  ],
+  "incidencias_altas_abiertas": [],
+  "dictamen": {
+    "estado": "APTO_PARA_REVISION_EDITORIAL",
+    "bloqueantes_altos_de_subproceso": 0,
+    "justificacion": "Las cinco incidencias verificadas (INC-01, INC-02, INC-03, INC-04 e INC-13) estan resueltas textual y visualmente. Los residuales son reales, estan declarados y no constituyen bloqueantes altos de subproceso: Figura 6 bajo 300 dpi, escudo exento, validacion sin firmas, fotografias pendientes y datos de prueba explicitados.",
+    "QG9": "NO CERTIFICADA",
+    "aprobacion_humana": "NO CERTIFICADA",
+    "nota": "Este dictamen no certifica la compuerta QG-9 ni la aprobacion del tesista o del jurado; solo declara que la v19 es entregable para revision editorial con residuales explicitos."
+  }
+}

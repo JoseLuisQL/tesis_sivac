@@ -1,0 +1,705 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v12.docx",
+    "documento_base_sha256": "284cc76b3a2eb756599da7d1e04765ecf43c66674a9fa47043312cfa51268c1c",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "squad": "Squad E - Redacción, Estilo y Maquetación Editorial",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Resolver las dos inconsistencias notacionales que subsisten en el informe final: (1) el p-valor escrito con cero inicial frente a la forma APA 7 sin cero inicial; (2) el guion ASCII en lugar del signo menos tipográfico en las magnitudes negativas.",
+    "decision_unica_de_p_valor": {
+      "regla_adoptada": "Todo p-valor se escribe sin cero inicial: p < .001, p = .001, p = .966, p > .05. La regla rige por igual en el cuerpo narrativo y en las celdas de tabla.",
+      "fundamento": "APA 7 prescribe omitir el cero inicial en las probabilidades, porque p está acotado al intervalo [0, 1]. No se admite en ningún pasaje del documento la forma con cero inicial.",
+      "alcance": "37 ocurrencias: 24 en párrafos (20 medidas en el cuerpo P138-P734 más 4 que introduce el expediente de Wilcoxon) y 13 en celdas (3 de la Tabla 1, 7 de la Tabla 39 y 3 de las Tablas 40 y 41).",
+      "no_hay_segunda_convencion": "Tras esta pasada no subsiste ninguna forma p = 0.xxx ni p < 0.xxx en el documento; la coexistencia de dos criterios queda cerrada."
+    },
+    "decision_unica_de_signo_menos": {
+      "regla_adoptada": "Toda magnitud negativa se escribe con el signo menos tipográfico U+2212, nunca con el guion ASCII U+002D.",
+      "alcance": "41 ocurrencias: 18 en párrafos y 23 en celdas (Tabla 1, Tabla 36 y Tablas 40, 41 y 42).",
+      "coherencia_de_fila_y_de_oracion": "En las tablas de contraste se normalizan a la vez el estadístico (columna 3) y el tamaño del efecto (columna 6), para que una misma fila no mezcle dos glifos de menos. En P711 se normalizan también los dos porcentajes de variación, porque comparten oración con los estadísticos t."
+    },
+    "convencion_indices": "indice_docx en base 0. En órdenes de párrafo identifica document.paragraphs[N]; en órdenes de tabla identifica document.tables[N], que coincide con el rótulo de la tabla. En ubicacion, fila y columna son base 1 e incluyen la fila de encabezado como fila 1.",
+    "geometria_de_tablas": {
+      "tabla_1": "14 filas x 6 columnas. Columna 5 = Resultado relevante (contiene los p-valores y los porcentajes citados de los antecedentes).",
+      "tabla_36": "7 filas x 10 columnas. Columna 4 = Media, 6 = Mediana, 8 = Mínimo, 9 = Máximo, 10 = Variación.",
+      "tabla_39": "8 filas x 8 columnas. Columna 6 = p-valor.",
+      "tablas_40_41_42": "Nueve columnas: 1 Indicador, 2 Prueba Estadística, 3 Estadístico, 4 gl, 5 p-valor, 6 Tamaño del Efecto, 7 Magnitud, 8 p-ajustado Holm, 9 Decisión. Filas de las Tablas 40 y 41: 5; de la Tabla 42: 7.",
+      "fuente": "Volcado de texto de la v04 (dimensiones declaradas por python-docx) y encabezados literales de nueve columnas. Si el maquetador observara otra geometría, el aplicador reportará las órdenes de celda como fallidas sin alterar ningún otro contenido."
+    },
+    "inventario": {
+      "total_ordenes": 67,
+      "total_sustituciones": 67,
+      "p_valores": {
+        "ocurrencias": 37,
+        "en_parrafos": 24,
+        "en_celdas": 13
+      },
+      "signos_menos": {
+        "ocurrencias": 41,
+        "en_parrafos": 18,
+        "en_celdas": 23
+      },
+      "por_bloque": [
+        {"bloque": "1. p-valor en párrafos", "ordenes": "1-19", "ocurrencias_p": 19},
+        {"bloque": "2. signo menos en párrafos", "ordenes": "20-27", "ocurrencias_menos": 10},
+        {"bloque": "3. dependientes de Wilcoxon", "ordenes": "28-32", "ocurrencias_p": 5, "ocurrencias_menos": 5},
+        {"bloque": "4. Tabla 1", "ordenes": "33-36", "ocurrencias_p": 3, "ocurrencias_menos": 2},
+        {"bloque": "5. Tabla 39", "ordenes": "37-43", "ocurrencias_p": 7},
+        {"bloque": "6. Tablas 40-41, celdas p", "ordenes": "44-46", "ocurrencias_p": 3},
+        {"bloque": "7. Tablas 40-42, signo menos", "ordenes": "47-57", "ocurrencias_menos": 11},
+        {"bloque": "8. Tabla 36, signo menos", "ordenes": "58-67", "ocurrencias_menos": 10}
+      ]
+    },
+    "dependencias": {
+      "wilcoxon_p_v11.json": "Debe aplicarse ANTES. Las órdenes 28 a 32 están escritas sobre el texto final que produce ese expediente: la orden 5 elimina el paréntesis de P686 y las órdenes 6 a 9 escriben p = 0.001 en P692 y P698. Si se aplicara esta pasada primero, esas cinco órdenes no localizarían su ancla.",
+      "notacion_matematica_v11.json": "Debe aplicarse ANTES. Las órdenes 8 y 9 anclan sobre «β = 0.35» y «(β = 0.23)», que resultan de la sustitución de «beta» por β en P284.",
+      "rosenthal_v10_ordenes.json": "Sin dependencia. Las anclas 18, 19 y 29 se detienen antes de los valores de r, de modo que el resultado es idéntico si ese expediente se aplica antes o después.",
+      "acabado_tipografico_v12.json": "Sin dependencia. Ese expediente opera sobre P12 y P142; esta pasada sobre P213 a P717 y sobre las tablas 1, 36, 39, 40, 41 y 42.",
+      "orden_interno": "Las órdenes de celda van después de las de párrafo a propósito: al convertir primero el párrafo, los valores 0.966 a 0.646 y los porcentajes -80.69% y -83.33% dejan de existir en el texto y el aplicador no puede capturarlos por búsqueda global."
+    },
+    "colisiones": {
+      "con_jerarquias_previas": "Ninguna ancla de esta pasada coincide literalmente con las de los expedientes precedentes. Las coincidencias son de vecindad, no de solapamiento: en P686 la orden 18 toca «p = 0.001» y el guion de Z, mientras que Rosenthal toca la cifra de r; en P692 la orden 29 se detiene antes de «con r de Rosenthal de».",
+      "resultado_esperado_de_la_combinacion": "29 de notación + 16 de Rosenthal + 9 de Wilcoxon + 4 de acabado tipográfico + 67 de esta pasada. Los dos expedientes estadísticos arrastran el defecto de coordenadas de tabla descrito en hallazgos_de_coordinacion; sus órdenes de párrafo sí aplican."
+    },
+    "exclusiones_verificadas": [
+      {
+        "clase": "p-valores en notación científica",
+        "detalle": "Verificados uno por uno: p = 7.57e-15, p = 2.88e-12, p = 1.00e-12, p = 4.92e-13, p = 5.57e-14, p = 3.13e-14, p = 1.36e-15, y los ajustados p_adj = 4.54e-14, 2.88e-12, 2.00e-12, 1.48e-12, 2.23e-13 y 1.57e-13. No son ceros iniciales truncados: el guion pertenece al exponente y se conserva intacto."
+      },
+      {
+        "clase": "p-valores ya correctos",
+        "detalle": "Las 29 ocurrencias de p < .001 y las 9 de p > .05, así como las formas (p <= .05) y (p_adj < .001), no requieren intervención y no se tocan."
+      },
+      {
+        "clase": "guiones que no son signo menos",
+        "detalle": "Se conservan los guiones de palabras compuestas y denominaciones (e-LMIS, NTS N.° 196-MINSA/DGIESP-2022, COVID-19, schema.prisma) y los guiones de los exponentes científicos."
+      },
+      {
+        "clase": "estadísticos con cero inicial conservado",
+        "detalle": "W de Shapiro-Wilk (0.979), W de Wilcoxon (0.0), r de Rosenthal (0.881), d de Cohen (9.32), ICC, V de Aiken, alfa de Cronbach y coeficientes beta mantienen el cero inicial. La regla del cero omitido se aplica únicamente al p-valor, que es la clase que APA 7 regula de ese modo."
+      }
+    ],
+    "observaciones_derivadas": [
+      {
+        "tema": "Estadístico W de Shapiro-Wilk",
+        "detalle": "W está acotado al intervalo unitario y bajo una lectura estricta de APA 7 admitiría la forma .979. Se conserva 0.979 (y 0.0 en los contrastes de Wilcoxon) porque (a) no forma parte de las veinte ocurrencias medidas, (b) una conversión parcial introduciría una nueva inconsistencia dentro de la misma columna y (c) la literatura psicométrica consultada lo reporta con cero inicial. Si el Director General decidiera la forma estricta, serían catorce ocurrencias: siete en P678 y siete en la Tabla 39, columna 4."
+      },
+      {
+        "tema": "Alcance ampliado del signo menos",
+        "detalle": "La medición del Director General registró diez ocurrencias (8 Z = - y 2 t = -). Esta pasada normaliza 41, por tres razones declaradas: (a) las formas t(13) = -38.944 y t(13) = -24.51 son el mismo estadístico negativo y el detector no las capturó por su paréntesis; (b) las Tablas 40 a 42 reproducen los mismos valores y habrían quedado con glifo ASCII frente al texto con glifo tipográfico; (c) los tamaños del efecto y los porcentajes de variación que comparten oración o fila con un estadístico convertido se normalizan para no mezclar dos glifos en la misma línea."
+      }
+    ],
+    "hallazgos_de_coordinacion": [
+      {
+        "expediente": "rosenthal_v10_ordenes.json",
+        "severidad": "alta",
+        "hallazgo": "Sus siete órdenes de tabla (indice_docx 40, 41 y 42) apuntan a la columna 5, pero las Tablas 40, 41 y 42 tienen nueve columnas: 1 Indicador, 2 Prueba Estadística, 3 Estadístico, 4 gl, 5 p-valor, 6 Tamaño del Efecto, 7 Magnitud, 8 p ajustado, 9 Decisión. La columna 5 es el p-valor; el tamaño del efecto está en la columna 6. Además, el ancla «r = 0.62 (grande)» no existe como tal: la celda de la columna 6 contiene «r = 0.62» y el texto «Grande (r >= 0.5)» ocupa la columna 7.",
+        "consecuencia": "Esas siete órdenes no localizarán su ancla y quedarán como fallidas; las tablas conservarían r = 0.62 mientras el texto declara r = 0.881 en P686, P692 y P698, con contradicción numérica visible entre tabla y prosa.",
+        "correccion_sugerida": "Reemitir esas siete órdenes con indice_docx 40 (filas 3 y 5), 41 (filas 3 y 5) y 42 (filas 3, 5 y 7), columna 6, y ancla literal «r = 0.62», ya desambiguada por tabla, fila y columna como el propio expediente hace."
+      },
+      {
+        "expediente": "wilcoxon_p_v11.json",
+        "severidad": "media",
+        "hallazgo": "Sus cuatro órdenes de tabla usan la columna 4, que en la geometría real es la columna gl y contiene «—» en las filas de Wilcoxon; el p-valor está en la columna 5.",
+        "consecuencia": "Esas cuatro órdenes no aplicarán. El efecto es inocuo para la convención APA, porque las cuatro celdas conservarían «< .001», que ya es la forma correcta; pero quedaría pendiente la unificación numérica de las celdas en 0.001.",
+        "correccion_sugerida": "Si se reemiten con columna 5, esas celdas pasarán a 0.001 y requerirán después las cuatro órdenes condicionales registradas en pendientes_condicionados."
+      },
+      {
+        "expediente": "wilcoxon_p_v11.json",
+        "severidad": "baja",
+        "hallazgo": "Sus cinco órdenes de párrafo (P686, P692 y P698) sí aplicarán, porque el aplicador resuelve por texto.",
+        "consecuencia": "Introducirán cuatro p = 0.001 nuevos (P692 RSD, P698 AP, P698 UP y P698 TAM) que, sin esta pasada, reproducirían exactamente la inconsistencia que se corrige. Las órdenes 28 a 32 los neutralizan."
+      }
+    ],
+    "pendientes_condicionados": [
+      {
+        "indice_docx": 41,
+        "ubicacion": "TABLA 41, fila 3, columna 5",
+        "ancla_original": "0.001",
+        "texto_nuevo": ".001",
+        "condicion": "Solo si se corrige y aplica la orden de tabla de Wilcoxon para RSD. Hoy la celda contiene «< .001», que ya es correcto."
+      },
+      {
+        "indice_docx": 42,
+        "ubicacion": "TABLA 42, fila 3, columna 5",
+        "ancla_original": "0.001",
+        "texto_nuevo": ".001",
+        "condicion": "Solo si se corrige y aplica la orden de tabla de Wilcoxon para AP."
+      },
+      {
+        "indice_docx": 42,
+        "ubicacion": "TABLA 42, fila 5, columna 5",
+        "ancla_original": "0.001",
+        "texto_nuevo": ".001",
+        "condicion": "Solo si se corrige y aplica la orden de tabla de Wilcoxon para UP."
+      },
+      {
+        "indice_docx": 42,
+        "ubicacion": "TABLA 42, fila 7, columna 5",
+        "ancla_original": "0.001",
+        "texto_nuevo": ".001",
+        "condicion": "Solo si se corrige y aplica la orden de tabla de Wilcoxon para el puntaje global TAM."
+      }
+    ],
+    "instrucciones_aplicacion": {
+      "comando": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v12.docx --salida salidas/documentos/informe_final_v13.docx --json salidas/reportes_maquetacion/uniformidad_notacional_v12.json --reporte salidas/reportes_maquetacion/aplicacion_uniformidad_v13.json --solo-verificar",
+      "comando_combinado": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v12.docx --salida salidas/documentos/informe_final_v13.docx --json salidas/reportes_maquetacion/wilcoxon_p_v11.json salidas/reportes_maquetacion/notacion_matematica_v11.json salidas/reportes_maquetacion/rosenthal_v10_ordenes.json salidas/reportes_maquetacion/acabado_tipografico_v12.json salidas/reportes_maquetacion/uniformidad_notacional_v12.json --reporte salidas/reportes_maquetacion/aplicacion_combinada_v13.json --solo-verificar",
+      "resultado_esperado": "67 aplicadas, 0 omitidas, 0 fallidas, siempre que se respete el orden indicado en dependencias. Los dos expedientes estadísticos reportarán además las fallas de sus once órdenes de tabla descritas en hallazgos_de_coordinacion, que no afectan a esta pasada.",
+      "verificacion_posterior": [
+        "Buscar el patrón p\\s*[<>=]\\s*0\\. en el cuerpo y en las tablas: debe devolver cero resultados.",
+        "Buscar el patrón [(-\\s]-\\d en el cuerpo y en las tablas: debe devolver cero resultados.",
+        "Contar U+2212 en el documento: deben aparecer 41 ocurrencias.",
+        "Comprobar que los siete contrastes de Wilcoxon declaran la misma forma: p = .001 en P686 (dos), P692 (dos) y P698 (tres).",
+        "Comprobar que los p-valores científicos (7.57e-15, 2.88e-12, 1.00e-12, 4.92e-13, 5.57e-14, 3.13e-14, 1.36e-15) permanecen idénticos."
+      ],
+      "nota_de_verificacion": "No dispongo de intérprete en esta sesión: la comprobación es documental, ancla por ancla, contra el volcado de v04 y los volcados de v11 y v12 (P686, P692, P698, P701, P711 y P717). La unicidad de cada ancla se verificó sobre esos volcados y debe confirmarse con --solo-verificar."
+    }
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "ancla_original": "2.1% (p < 0.01), registrándose",
+      "texto_nuevo": "2.1% (p < .01), registrándose",
+      "categoria": "p_valor",
+      "justificacion": "Tasa de desabastecimiento general en el antecedente de Tanzania: se retira el cero inicial para alinearla con la convención APA 7 adoptada."
+    },
+    {
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "ancla_original": "(de 12.5% a 2.1%, p < 0.01)",
+      "texto_nuevo": "(de 12.5% a 2.1%, p < .01)",
+      "categoria": "p_valor",
+      "justificacion": "Vacuna antipoliomielítica oral: se retira el cero inicial del p-valor; las cifras de variación no se alteran."
+    },
+    {
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "ancla_original": "(de 9.4% a 1.0%, p < 0.01)",
+      "texto_nuevo": "(de 9.4% a 1.0%, p < .01)",
+      "categoria": "p_valor",
+      "justificacion": "Vacuna sarampión-rubeola: se retira el cero inicial del p-valor."
+    },
+    {
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "ancla_original": "(de 8.1% a 1.7%, p < 0.01)",
+      "texto_nuevo": "(de 8.1% a 1.7%, p < .01)",
+      "categoria": "p_valor",
+      "justificacion": "Vacuna pentavalente: se retira el cero inicial del p-valor."
+    },
+    {
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "ancla_original": "(OR = 0.959, p < 0.001)",
+      "texto_nuevo": "(OR = 0.959, p < .001)",
+      "categoria": "p_valor",
+      "justificacion": "Razón de momios semanal: se retira el cero inicial del p-valor; el OR conserva su forma con cero inicial por ser una razón no acotada a la unidad."
+    },
+    {
+      "indice_docx": 216,
+      "ubicacion": "PÁRRAFO 216 (antecedente Astuhuaman Perez y Baltazar Maza, 2023)",
+      "ancla_original": "Wilcoxon con p < 0.001, además",
+      "texto_nuevo": "Wilcoxon con p < .001, además",
+      "categoria": "p_valor",
+      "justificacion": "Prueba de rangos con signo del antecedente de Apurímac: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 218,
+      "ubicacion": "PÁRRAFO 218 (antecedente Garcia Villacorta y Calderón Huaman, 2023)",
+      "ancla_original": "Z = -7.15 con p < 0.001.",
+      "texto_nuevo": "Z = −7.15 con p < .001.",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Estadístico Z del antecedente de inventario farmacéutico: se aplica el signo menos tipográfico U+2212 y se retira el cero inicial del p-valor."
+    },
+    {
+      "indice_docx": 284,
+      "ubicacion": "PÁRRAFO 284 (fundamentación TAM, cita Hussain et al., 2025)",
+      "ancla_original": "β = 0.35, p < 0.001)",
+      "texto_nuevo": "β = 0.35, p < .001)",
+      "categoria": "p_valor",
+      "justificacion": "Coeficiente de facilidad de uso percibida: ancla escrita sobre el texto final de notación matemática (β en lugar de beta). Se retira el cero inicial del p-valor.",
+      "depende_de": "notacion_matematica_v11.json"
+    },
+    {
+      "indice_docx": 284,
+      "ubicacion": "PÁRRAFO 284 (fundamentación TAM, cita Hussain et al., 2025)",
+      "ancla_original": "(β = 0.23, p < 0.001)",
+      "texto_nuevo": "(β = 0.23, p < .001)",
+      "categoria": "p_valor",
+      "justificacion": "Coeficiente de utilidad percibida como mediadora: ancla escrita sobre el texto final de notación matemática. Se retira el cero inicial del p-valor.",
+      "depende_de": "notacion_matematica_v11.json"
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.979, p = 0.966",
+      "texto_nuevo": "W = 0.979, p = .966",
+      "categoria": "p_valor",
+      "justificacion": "Tiempo de registro: el p-valor se escribe sin cero inicial; el estadístico W conserva el suyo."
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.933, p = 0.331",
+      "texto_nuevo": "W = 0.933, p = .331",
+      "categoria": "p_valor",
+      "justificacion": "Tiempo de emisión de vales: el p-valor se escribe sin cero inicial; W permanece intacto."
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.958, p = 0.696",
+      "texto_nuevo": "W = 0.958, p = .696",
+      "categoria": "p_valor",
+      "justificacion": "Registros sin discrepancias: el p-valor se escribe sin cero inicial; W permanece intacto."
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.953, p = 0.614",
+      "texto_nuevo": "W = 0.953, p = .614",
+      "categoria": "p_valor",
+      "justificacion": "Concordancia programada vs entregada: el p-valor se escribe sin cero inicial; W permanece intacto."
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.909, p = 0.153",
+      "texto_nuevo": "W = 0.909, p = .153",
+      "categoria": "p_valor",
+      "justificacion": "Aceptación del proceso: el p-valor se escribe sin cero inicial; W permanece intacto."
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.876, p = 0.052",
+      "texto_nuevo": "W = 0.876, p = .052",
+      "categoria": "p_valor",
+      "justificacion": "Utilidad percibida: el p-valor se escribe sin cero inicial; W permanece intacto."
+    },
+    {
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "ancla_original": "W = 0.955, p = 0.646",
+      "texto_nuevo": "W = 0.955, p = .646",
+      "categoria": "p_valor",
+      "justificacion": "Puntaje global TAM: el p-valor se escribe sin cero inicial; W permanece intacto."
+    },
+    {
+      "indice_docx": null,
+      "ubicacion": "PÁRRAFO del apartado 5.4, párrafo previo a la Tabla 39 (criterio de normalidad del contraste)",
+      "ancla_original": "Shapiro-Wilk (p > 0.05)",
+      "texto_nuevo": "Shapiro-Wilk (p > .05)",
+      "categoria": "p_valor",
+      "justificacion": "Criterio de no rechazo de la normalidad en la fase inferencial: se retira el cero inicial. Ancla única; el índice no se consigna porque no dispongo de volcado indexado de esa zona y el aplicador resuelve por búsqueda global."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_vale",
+      "ancla_original": "Z = -3.30, p = 0.001 y r de Rosenthal",
+      "texto_nuevo": "Z = −3.30, p = .001 y r de Rosenthal",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon para T_vale: se aplica el signo menos tipográfico y se retira el cero inicial del p-valor. El ancla se detiene antes de la cifra de r para no depender del expediente de Rosenthal."
+    },
+    {
+      "indice_docx": 692,
+      "ubicacion": "PÁRRAFO 692, oración de CPE",
+      "ancla_original": "Z = -3.30, p = 0.001 con r =",
+      "texto_nuevo": "Z = −3.30, p = .001 con r =",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon para CPE: signo menos tipográfico y p-valor sin cero inicial. El ancla termina en «r =», de modo que no toca la cifra de r."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_reg",
+      "ancla_original": "t(13) = -38.944",
+      "texto_nuevo": "t(13) = −38.944",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico t de la prueba pareada para T_reg: se sustituye el guion ASCII por el signo menos tipográfico. La cifra no cambia."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_vale",
+      "ancla_original": "t(13) = -24.509",
+      "texto_nuevo": "t(13) = −24.509",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico t de la prueba pareada para T_vale: signo menos tipográfico. La cifra no cambia."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_reg",
+      "ancla_original": "d de Cohen de -10.41",
+      "texto_nuevo": "d de Cohen de −10.41",
+      "categoria": "signo_menos",
+      "justificacion": "Tamaño del efecto de T_reg: se normaliza el signo para que la oración no mezcle dos glifos de menos. El valor absoluto se conserva."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_vale",
+      "ancla_original": "d de Cohen de -6.55",
+      "texto_nuevo": "d de Cohen de −6.55",
+      "categoria": "signo_menos",
+      "justificacion": "Tamaño del efecto de T_vale: se normaliza el signo por coherencia con el estadístico t de la misma oración."
+    },
+    {
+      "indice_docx": 711,
+      "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+      "ancla_original": "t = -38.94 y t = -24.51",
+      "texto_nuevo": "t = −38.94 y t = −24.51",
+      "categoria": "signo_menos",
+      "justificacion": "Los dos estadísticos t citados en la discusión: se sustituyen ambos guiones ASCII por el signo menos tipográfico."
+    },
+    {
+      "indice_docx": 711,
+      "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+      "ancla_original": "(-80.69%)",
+      "texto_nuevo": "(−80.69%)",
+      "categoria": "signo_menos",
+      "justificacion": "Variación porcentual del tiempo de registro: comparte oración con los estadísticos t y se normaliza para no mezclar glifos."
+    },
+    {
+      "indice_docx": 711,
+      "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+      "ancla_original": "(-83.33%)",
+      "texto_nuevo": "(−83.33%)",
+      "categoria": "signo_menos",
+      "justificacion": "Variación porcentual del tiempo de emisión de vales: misma razón de coherencia oracional."
+    },
+    {
+      "indice_docx": 717,
+      "ubicacion": "PÁRRAFO 717 (conclusión del objetivo específico 1)",
+      "ancla_original": "t(13) = -38.94 y t(13) = -24.51",
+      "texto_nuevo": "t(13) = −38.94 y t(13) = −24.51",
+      "categoria": "signo_menos",
+      "justificacion": "Estadísticos t citados en la conclusión del primer objetivo específico: se normalizan ambos signos."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_reg",
+      "ancla_original": "Z = -3.30, p = 0.001 y un tamaño",
+      "texto_nuevo": "Z = −3.30, p = .001 y un tamaño",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon para T_reg: ancla escrita sobre el texto final de Wilcoxon, que elimina el paréntesis «(p < .001)» contiguo. Aplica el signo menos y retira el cero inicial.",
+      "depende_de": "wilcoxon_p_v11.json"
+    },
+    {
+      "indice_docx": 692,
+      "ubicacion": "PÁRRAFO 692, oración de RSD",
+      "ancla_original": "Z = -3.30, p = 0.001 con r de Rosenthal",
+      "texto_nuevo": "Z = −3.30, p = .001 con r de Rosenthal",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon para RSD: el p = 0.001 lo introduce el expediente de Wilcoxon; se ordena el texto final con signo tipográfico y sin cero inicial.",
+      "depende_de": "wilcoxon_p_v11.json"
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PÁRRAFO 698, oración de AP",
+      "ancla_original": "y Wilcoxon obtuvo W = 0.0, Z = -3.30, p = 0.001 y r =",
+      "texto_nuevo": "y Wilcoxon obtuvo W = 0.0, Z = −3.30, p = .001 y r =",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon para AP: se ordena el texto final posterior a Wilcoxon. El ancla termina en «y r =» y no toca la cifra de r, por lo que es indiferente al orden respecto de Rosenthal.",
+      "depende_de": "wilcoxon_p_v11.json"
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PÁRRAFO 698, oración de UP",
+      "ancla_original": "y Wilcoxon registró W = 0.0, Z = -3.30, p = 0.001 y r =",
+      "texto_nuevo": "y Wilcoxon registró W = 0.0, Z = −3.30, p = .001 y r =",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon para UP: mismo tratamiento que en AP; el verbo «registró» desambigua la ancla frente a la oración de AP.",
+      "depende_de": "wilcoxon_p_v11.json"
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PÁRRAFO 698, oración del puntaje global TAM",
+      "ancla_original": "y no paramétrico W = 0.0, Z = -3.30, p = 0.001 (p_adj",
+      "texto_nuevo": "y no paramétrico W = 0.0, Z = −3.30, p = .001 (p_adj",
+      "categoria": "p_valor_y_signo_menos",
+      "justificacion": "Contraste de Wilcoxon del puntaje global TAM: se normaliza el signo y el p-valor no ajustado; el paréntesis del p ajustado de Holm queda intacto.",
+      "depende_de": "wilcoxon_p_v11.json"
+    },
+    {
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 8, columna 5",
+      "ancla_original": "(p < 0.01)",
+      "texto_nuevo": "(p < .01)",
+      "categoria": "p_valor",
+      "justificacion": "Celda de resultado relevante del antecedente Gilbert et al. (2020): se retira el cero inicial para que la tabla use la misma convención que el cuerpo."
+    },
+    {
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 10, columna 5",
+      "ancla_original": "(p < 0.001)",
+      "texto_nuevo": "(p < .001)",
+      "categoria": "p_valor",
+      "justificacion": "Celda del antecedente Astuhuaman Perez y Baltazar Maza (2023): p-valor sin cero inicial."
+    },
+    {
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 12, columna 5",
+      "ancla_original": "(p < 0.001)",
+      "texto_nuevo": "(p < .001)",
+      "categoria": "p_valor",
+      "justificacion": "Celda del antecedente Garcia Villacorta y Calderón Huaman (2023): p-valor sin cero inicial."
+    },
+    {
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 3, columna 5",
+      "ancla_original": "(-98%) y -38%",
+      "texto_nuevo": "(−98%) y −38%",
+      "categoria": "signo_menos",
+      "justificacion": "Celda del antecedente Dang et al. (2024): los dos porcentajes negativos pasan al signo menos tipográfico. Ancla recortada antes de «de carga» para no depender de la redacción final del cierre de la celda."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 2, columna 6",
+      "ancla_original": "0.966",
+      "texto_nuevo": ".966",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor de la prueba de Shapiro-Wilk para T_reg: se retira el cero inicial. La orden se emite después de la del párrafo 678 para que el valor ya no exista en el texto."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 3, columna 6",
+      "ancla_original": "0.331",
+      "texto_nuevo": ".331",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor, T_vale: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 4, columna 6",
+      "ancla_original": "0.696",
+      "texto_nuevo": ".696",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor, RSD: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 5, columna 6",
+      "ancla_original": "0.614",
+      "texto_nuevo": ".614",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor, CPE: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 6, columna 6",
+      "ancla_original": "0.153",
+      "texto_nuevo": ".153",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor, AP: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 7, columna 6",
+      "ancla_original": "0.052",
+      "texto_nuevo": ".052",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor, UP: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 8, columna 6",
+      "ancla_original": "0.646",
+      "texto_nuevo": ".646",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor, puntaje global TAM: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 3, columna 5",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor de la fila Wilcoxon de T_reg: se retira el cero inicial. La columna contiene además «< .001» en las filas paramétricas, de modo que la columna queda internamente uniforme."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 5, columna 5",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor de la fila Wilcoxon de T_vale: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 5, columna 5",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Columna p-valor de la fila Wilcoxon de CPE: se retira el cero inicial."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 2, columna 3",
+      "ancla_original": "t = -38.944",
+      "texto_nuevo": "t = −38.944",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico t de la fila paramétrica de T_reg: signo menos tipográfico; la cifra no se altera."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 4, columna 3",
+      "ancla_original": "t = -24.509",
+      "texto_nuevo": "t = −24.509",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico t de la fila paramétrica de T_vale: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 3, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon de T_reg: signo menos tipográfico; W y la cifra de Z permanecen intactos."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 5, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon de T_vale: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon de RSD: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 5, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon de CPE: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon de AP: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon de UP: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 3",
+      "ancla_original": "(Z = -3.30)",
+      "texto_nuevo": "(Z = −3.30)",
+      "categoria": "signo_menos",
+      "justificacion": "Estadístico Z de la fila Wilcoxon del puntaje global TAM: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 2, columna 6",
+      "ancla_original": "d = -10.41",
+      "texto_nuevo": "d = −10.41",
+      "categoria": "signo_menos",
+      "justificacion": "Tamaño del efecto de la fila paramétrica de T_reg: se normaliza el signo para que la fila no mezcle glifos. La celda de magnitud (columna 7) no se toca."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 4, columna 6",
+      "ancla_original": "d = -6.55",
+      "texto_nuevo": "d = −6.55",
+      "categoria": "signo_menos",
+      "justificacion": "Tamaño del efecto de la fila paramétrica de T_vale: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 3, columna 10",
+      "ancla_original": "-80.69%",
+      "texto_nuevo": "−80.69%",
+      "categoria": "signo_menos",
+      "justificacion": "Variación porcentual del tiempo de registro en la tabla descriptiva: signo menos tipográfico. Se emite después de la orden 25 para que el valor ya no exista en el párrafo 711."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 4",
+      "ancla_original": "-30.00",
+      "texto_nuevo": "−30.00",
+      "categoria": "signo_menos",
+      "justificacion": "Media de la diferencia pareada de T_reg: signo menos tipográfico; la cifra no se altera."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 6",
+      "ancla_original": "-29.75",
+      "texto_nuevo": "−29.75",
+      "categoria": "signo_menos",
+      "justificacion": "Mediana de la diferencia pareada de T_reg: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 8",
+      "ancla_original": "-35.50",
+      "texto_nuevo": "−35.50",
+      "categoria": "signo_menos",
+      "justificacion": "Valor mínimo de la diferencia pareada de T_reg: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 9",
+      "ancla_original": "-25.50",
+      "texto_nuevo": "−25.50",
+      "categoria": "signo_menos",
+      "justificacion": "Valor máximo de la diferencia pareada de T_reg: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 6, columna 10",
+      "ancla_original": "-83.33%",
+      "texto_nuevo": "−83.33%",
+      "categoria": "signo_menos",
+      "justificacion": "Variación porcentual del tiempo de emisión de vales: signo menos tipográfico. Se emite después de la orden 26."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 4",
+      "ancla_original": "-15.18",
+      "texto_nuevo": "−15.18",
+      "categoria": "signo_menos",
+      "justificacion": "Media de la diferencia pareada de T_vale: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 6",
+      "ancla_original": "-14.75",
+      "texto_nuevo": "−14.75",
+      "categoria": "signo_menos",
+      "justificacion": "Mediana de la diferencia pareada de T_vale: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 8",
+      "ancla_original": "-20.00",
+      "texto_nuevo": "−20.00",
+      "categoria": "signo_menos",
+      "justificacion": "Valor mínimo de la diferencia pareada de T_vale: signo menos tipográfico."
+    },
+    {
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 9",
+      "ancla_original": "-12.50",
+      "texto_nuevo": "−12.50",
+      "categoria": "signo_menos",
+      "justificacion": "Valor máximo de la diferencia pareada de T_vale: signo menos tipográfico."
+    }
+  ]
+}

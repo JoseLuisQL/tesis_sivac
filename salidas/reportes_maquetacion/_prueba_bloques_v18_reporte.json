@@ -1,0 +1,26 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v17.docx",
+  "destino": "salidas\\archivo\\_prueba_bloques_v18.docx",
+  "sha256_origen": "33897dd5819d6686a80b2b87e223e4155eea312297cf345d1a3052a4ca8aeac6",
+  "sha256_destino": "d37127c1c6db6e6a0486c4f9f818436d9402d51a62ba2efc55ba6d44294c570f",
+  "parrafos": 824,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "reorganizar_bloques",
+      "tabla_original": 1,
+      "reorganizada": true,
+      "filas": 79,
+      "columnas": 2,
+      "ancho_util_dxa": 8788,
+      "ancho_etiqueta_dxa": 2500,
+      "ancho_valor_dxa": 6288,
+      "orientacion": "vertical",
+      "celdas_origen": 78,
+      "filas_extra": 0,
+      "texto_conservado": true
+    }
+  ],
+  "tablas_verificadas": []
+}

@@ -1,0 +1,137 @@
+=== P28 len=609 corte=340 cola=269 bloque=197
+  FIN_COLA: ...' de recolección de datos y validación operativa del sistema web SIVAC.'
+  UNION   : ...'de recolección de datos y validación operativa del sistema web SIVAC. ' ||COLA|| 'Estrategia Sanitaria de Inmunizaciones y a los 14 profesionales de los'
+
+=== P145 len=3213 corte=1646 cola=1567 bloque=849
+  FIN_COLA: ...'nin), tukupay yupaykunaqa post-test wichq’aypim suyachkan [Pendiente].'
+  UNION   : ...'in), tukupay yupaykunaqa post-test wichq’aypim suyachkan [Pendiente]. ' ||COLA|| 'web llikapa yanapayninwan imaynatas sapakilla hampi churanakuna apayka'
+
+=== P152 len=1611 corte=1385 cola=226 bloque=191
+  FIN_COLA: ...'n logística sanitaria en redes de salud de alta dispersión geográfica.'
+  UNION   : ...'vimientos mensuales de vacunas hacia las redes y microredes de salud; ' ||COLA|| 'asimismo, en el plano metodológico, estableció una estructura de medic'
+
+=== P163 len=973 corte=520 cola=453 bloque=228
+  FIN_COLA: ...'s y la ejecución presupuestal no forman parte de la variable evaluada.'
+  UNION   : ...' y la ejecución presupuestal no forman parte de la variable evaluada. ' ||COLA|| 'gestión de movimientos mensuales de vacunas comprende exclusivamente e'
+
+=== P191 len=714 corte=387 cola=327 bloque=257
+  FIN_COLA: ...'incremento de la satisfacción y aceptación del sistema por el usuario.'
+  UNION   : ...'l aumento de la satisfacción y aceptación del sistema por el usuario. ' ||COLA|| 'la gestión de movimientos mensuales de vacunas en el personal de inmun'
+
+=== P221 len=474 corte=262 cola=212 bloque=212
+  FIN_COLA: ...'rincipales y su diferenciación específica frente al sistema web SIVAC.'
+  UNION   : ...'incipales y su diferenciación específica frente al sistema web SIVAC. ' ||COLA|| 'comparativa de los antecedentes internacionales y nacionales analizado'
+
+=== P228 len=2150 corte=1105 cola=1045 bloque=1020
+  FIN_COLA: ...'rastar su efecto sobre la gestión de movimientos mensuales de vacunas.'
+  UNION   : ...'astar su efecto sobre la gestión de movimientos mensuales de vacunas. ' ||COLA|| 'actúa epistemológicamente como la intervención tecnológica aplicada (e'
+
+=== P253 len=2534 corte=1316 cola=1218 bloque=1086
+  FIN_COLA: ...'fundirse con las dimensiones de evaluación de la variable dependiente.'
+  UNION   : ...'undirse con las dimensiones de evaluación de la variable dependiente. ' ||COLA|| 'de salud, Moumane et al. (2024, p. 3) destacan que la adecuación funci'
+
+=== P284 len=3129 corte=1123 cola=2006 bloque=985
+  FIN_COLA: ...'duce de manera directa a elevar la satisfacción del usuario sanitario.'
+  UNION   : ...'undamentación concuerda con los hallazgos empíricos de Hussain et al. ' ||COLA|| '(2025, p. 8), quienes comprobaron en personal de enfermería de estable'
+
+=== P370 len=1223 corte=953 cola=270 bloque=166
+  FIN_COLA: ...'a capa de datos y archivos en PostgreSQL y almacenamiento persistente.'
+  UNION   : ...'faz de usuario en el cliente y los servicios de dominio del servidor. ' ||COLA|| 'En la Figura 13 se ilustra la arquitectura de subsistemas del sistema,'
+
+=== P383 len=1020 corte=536 cola=484 bloque=307
+  FIN_COLA: ...' (MSD < 2.0), Normostock (2.0 <= MSD <= 6.0) y Sobrestock (MSD > 6.0).'
+  UNION   : ...'o (MSD < 2.0), normostock (2.0 ≤ MSD ≤ 6.0) y sobrestock (MSD > 6.0). ' ||COLA|| 'Inteligencia Logística ICI-DEMID y Clasificación Semafórica MSD, grafi'
+
+=== P446 len=387 corte=218 cola=169 bloque=80
+  FIN_COLA: ...'s institucionales. En la Tabla 25 se sintetiza el stack de desarrollo.'
+  UNION   : ...' institucionales. En la Tabla 23 se sintetiza el stack de desarrollo. ' ||COLA|| 'priorizando el rendimiento, la robustez tipográfica y la compatibilida'
+
+=== P525 len=584 corte=317 cola=267 bloque=250
+  FIN_COLA: ...'as de aceptación formal con el cliente en el sitio (On-site Customer).'
+  UNION   : ...'s de aceptación formal con el cliente en el sitio (On-site Customer). ' ||COLA|| 'pilar fundamental que garantiza la fiabilidad operativa del software. '
+
+=== P553 len=1815 corte=928 cola=887 bloque=887
+  FIN_COLA: ...'ptimización de los procesos operativos en la cadena de frío sanitaria.'
+  UNION   : ...'timización de los procesos operativos en la cadena de frío sanitaria. ' ||COLA|| 'explicativo de evaluación de intervención tecnológica; no obstante, de'
+
+=== P555 len=1911 corte=983 cola=928 bloque=865
+  FIN_COLA: ...' formal de las hipótesis formuladas (Hernández-Sampieri et al., 2014).'
+  UNION   : ...'formal de las hipótesis formuladas (Hernández-Sampieri et al., 2014). ' ||COLA|| 'sistemáticamente a lo largo de siete fases consecutivas previstas dura'
+
+=== P567 len=1608 corte=829 cola=779 bloque=674
+  FIN_COLA: ...'ronograma y protocolo de ejecución de la intervención preexperimental.'
+  UNION   : ...'onograma y protocolo de ejecución de la intervención preexperimental. ' ||COLA|| 'neutralizar potenciales sesgos de reactividad, historia o fatiga en la'
+
+=== P648 len=1462 corte=756 cola=706 bloque=429
+  FIN_COLA: ...'idez se sustenta en el protocolo de calibración inter-observador PMMV.'
+  UNION   : ...'dez se sustenta en el protocolo de calibración inter-observador PMMV. ' ||COLA|| 'constituye un requisito metodológico insoslayable para certificar la f'
+
+=== P649 len=2147 corte=1034 cola=1113 bloque=525
+  FIN_COLA: ...', 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.943]).'
+  UNION   : ...'0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%: ' ||COLA|| '[0.618, 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.'
+
+=== P650 len=1402 corte=724 cola=678 bloque=620
+  FIN_COLA: ...'En la Tabla 35 se consolidan los coeficientes psicométricos obtenidos.'
+  UNION   : ...'En la Tabla 4 se consolidan los coeficientes psicométricos obtenidos. ' ||COLA|| 'psicométrico de .800 exigido por la literatura científica (George & Ma'
+
+=== P656 len=2021 corte=1282 cola=739 bloque=339
+  FIN_COLA: ...' la Figura 46 se detallan estas distribuciones temporales emparejadas.'
+  UNION   : ...' 36.75; RIC = 5.50) en el pretest a tan solo 7.18 minutos (DE = 1.05; ' ||COLA|| 'Mdn = 7.00; RIC = 1.38) en el postest, lo que representa una contracci'
+
+=== P663 len=2596 corte=1220 cola=1376 bloque=978
+  FIN_COLA: ...'solidan en la Tabla 37 y se ilustran comparativamente en la Figura 47.'
+  UNION   : ...'cumentales y las discrepancias entre existencias físicas y registros. ' ||COLA|| 'Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran '
+
+=== P670 len=2288 corte=1164 cola=1124 bloque=661
+  FIN_COLA: ...'gura 48 se presenta el comportamiento descriptivo de estas mediciones.'
+  UNION   : ...'gura 8 se presenta el comportamiento descriptivo de estas mediciones. ' ||COLA|| 'evaluación mediante el modelo TAM evidenció un cambio cualitativo prof'
+
+=== P677 len=911 corte=806 cola=105 bloque=55
+  FIN_COLA: ...'able no provienen de una población con distribución normal (p <= .05).'
+  UNION   : ...'blación con distribución normal (p > .05).\n  Hipótesis alterna (H_1): ' ||COLA|| 'Las diferencias pareadas de la variable no provienen de una población '
+
+=== P683 len=1414 corte=727 cola=687 bloque=634
+  FIN_COLA: ...' no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal).'
+  UNION   : ...'no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal). ' ||COLA|| 'matriz de consistencia definitiva (DEC-007 / DEC-027) se desarrolló co'
+
+=== P685 len=618 corte=364 cola=254 bloque=118
+  FIN_COLA: ...'iones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).'
+  UNION   : ...'iff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): ' ||COLA|| 'La aplicación del sistema web SIVAC reduce significativamente los tiem'
+
+=== P691 len=551 corte=301 cola=250 bloque=163
+  FIN_COLA: ...'nizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).'
+  UNION   : ...'iones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  ' ||COLA|| '- Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejor'
+
+=== P697 len=589 corte=320 cola=269 bloque=183
+  FIN_COLA: ...'munizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).'
+  UNION   : ...'aciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  ' ||COLA|| '- Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incre'
+
+=== P703 len=469 corte=259 cola=210 bloque=144
+  FIN_COLA: ...'en el personal de inmunizaciones de la Dirección de Salud Apurímac II.'
+  UNION   : ...'el personal de inmunizaciones de la Dirección de Salud Apurímac II.\n  ' ||COLA|| '- Hipótesis alterna general (H_G): La aplicación del sistema SIVAC mej'
+
+=== P706 len=1124 corte=578 cola=546 bloque=270
+  FIN_COLA: ...'esenta el balance consolidado de la decisión inferencial multivariada.'
+  UNION   : ...'senta el balance consolidado de la decisión inferencial multivariada. ' ||COLA|| 'web SIVAC mejora significativamente la gestión de movimientos mensuale'
+
+=== P710 len=1482 corte=890 cola=592 bloque=270
+  FIN_COLA: ...' de procesamiento, consistencia documental y satisfacción del usuario.'
+  UNION   : ...'observadas y descarta que estas obedezcan a fluctuaciones muestrales. ' ||COLA|| 'determinar de qué manera la aplicación del sistema web SIVAC mejora la'
+
+=== P711 len=1746 corte=894 cola=852 bloque=498
+  FIN_COLA: ...' operativos y agiliza la distribución de biológicos en la red de frío.'
+  UNION   : ...'operativos y agiliza la distribución de biológicos en la red de frío. ' ||COLA|| 'procesamiento, los hallazgos demostraron que el sistema SIVAC redujo e'
+
+=== P712 len=1643 corte=1127 cola=516 bloque=516
+  FIN_COLA: ...'en vacunas obedecen a fallas aritméticas manuales en el kardex físico.'
+  UNION   : ...'tativa en la exactitud contable de los kardex (t = 26.63 y t = 28.15; ' ||COLA|| 'p < .001; d > 7.0). Este logro se fundamenta en los controles algorítm'
+
+=== P721 len=704 corte=406 cola=298 bloque=250
+  FIN_COLA: ...' de biológicos en los 19 centros de acopio y microredes territoriales.'
+  UNION   : ...'e acopio registrados en el sistema y en las microredes territoriales. ' ||COLA|| 'de Salud Apurímac II y a la Coordinación Regional de Inmunizaciones, f'
+
+=== P800 len=816 corte=439 cola=377 bloque=272
+  FIN_COLA: ...'suario que guiaron las cuatro iteraciones de Extreme Programming (XP).'
+  UNION   : ...'suario que guiaron las cinco iteraciones de Extreme Programming (XP). ' ||COLA|| 'alojado bajo control de versiones Git en el repositorio institucional '
+
+TOTAL 34

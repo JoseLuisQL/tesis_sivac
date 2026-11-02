@@ -1,0 +1,5 @@
+filas 4 cols 4
+0 'I-1.1'
+1 'Tiempo de registro de movimiento (T_reg)'
+2 'Intervalo desde la apertura del kardex o formulario hasta la confirmación de gu
+3 'Minutos (cronométrico)'

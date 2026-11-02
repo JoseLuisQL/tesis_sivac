@@ -1,0 +1,131 @@
+{
+  "fecha": "2026-10-22",
+  "solicitud": "Revisar y corregir integralmente el informe final, hoja por hoja, comparándolo con Fany 2024; redacción clara y justificada, tablas, figuras, estructura y Word nativo.",
+  "fase": "F8",
+  "fuente_vigente": {
+    "docx": "salidas/documentos/informe_final_v19.docx",
+    "docx_sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "pdf": "salidas/documentos/informe_final_v19.pdf",
+    "pdf_sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+    "paginas_pdf": 158,
+    "parrafos": 827,
+    "tablas": 59
+  },
+  "modelo_inmutable": {
+    "pdf": "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+    "sha256": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+    "paginas": 106
+  },
+  "respaldo_verificado": "salidas/archivo/RESPALDO_INFORME_V19_PRE_REVISION_INTEGRAL_20261022",
+  "destino_previsto": "salidas/documentos/informe_final_v20.docx y salidas/documentos/informe_final_v20.pdf",
+  "carpeta_de_control": "salidas/reportes_maquetacion/auditoria_integral_v20_20261022",
+  "comisiones": [
+    {
+      "tarea": "Auditar visualmente páginas físicas SIVAC 1-53 y Fany 1-36 y generar inventario nativo global del DOCX para anclaje de órdenes.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "analista-documental",
+      "entradas": ["salidas/documentos/informe_final_v19.docx", "salidas/documentos/informe_final_v19.pdf", "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf"],
+      "salida_esperada": "auditoria_integral_v20_20261022/INVENTARIO_V19.json, PROSA_V19.md, texto por página PDF y auditoria_tramo_01_053.json",
+      "restricciones": ["Originales inmutables", "No copiar metodología ni datos de Fany", "No atribuir lectura visual a extracción automática", "No editar Word"],
+      "criterio_exito": "53 páginas SIVAC y 36 Fany leídas y registradas individualmente; inventario íntegro con índices y SHA fuente."
+    },
+    {
+      "tarea": "Revisar toda la prosa de v19 y auditar visualmente SIVAC 54-106 y Fany 37-72; proponer correcciones textuales exactas y sustentadas.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "redactor-academico",
+      "entradas": ["salidas/documentos/informe_final_v19.pdf", "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf", "auditoria_integral_v20_20261022/INVENTARIO_V19.json", "auditoria_integral_v20_20261022/PROSA_V19.md"],
+      "salida_esperada": "auditoria_integral_v20_20261022/auditoria_tramo_054_106_redaccion.json y redaccion_v20_ordenes.json",
+      "restricciones": ["No inventar citas o datos", "No convertir protocolos no ejecutados en hechos pasados", "Mantener cifras, enunciados, ecuaciones y fuentes", "Separar cambios editoriales de cambios sustantivos"],
+      "criterio_exito": "53 páginas SIVAC y 36 Fany visuales registradas y prosa completa examinada con método declarado; órdenes de reemplazo reproducibles."
+    },
+    {
+      "tarea": "Auditar visualmente SIVAC 107-158 y Fany 73-106 y verificar integridad transversal de citas, referencias, método, datos y anexos.",
+      "fase": "F8",
+      "squad": "Squad A (Evidencia y Bibliometría)",
+      "subagente": "verificador-integridad",
+      "entradas": ["salidas/documentos/informe_final_v19.docx", "salidas/documentos/informe_final_v19.pdf", "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf", "datos/raw/validacion_expertos_declaracion_20261021.json", "salidas/reportes_maquetacion/CIERRE_EDITORIAL_v19_20261021.json"],
+      "salida_esperada": "auditoria_integral_v20_20261022/auditoria_tramo_107_158_integridad.json y integridad_v20_ordenes.json",
+      "restricciones": ["No fabricar evidencia, coeficientes ni fuentes", "No ocultar datos de prueba o fotografías y firmas faltantes", "Fuentes y código SIVAC solo lectura", "No editar Word"],
+      "criterio_exito": "52 páginas SIVAC y 34 Fany visuales registradas, controles reproducidos y pendientes empíricos separados de defectos editoriales."
+    },
+    {
+      "tarea": "Preparar preflight técnico y mecánica de cirugía Word v19 a v20; no aplicar todavía órdenes pendientes de auditoría.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "maquetador-docx",
+      "entradas": ["salidas/documentos/informe_final_v19.docx", "salidas/documentos/informe_final_v19.pdf", "scripts/utilidades/docx_quirurgico.py", "salidas/reportes_maquetacion/reporte_maquetacion_v19.json", "salidas/reportes_maquetacion/auditoria_openxml_v19_final.json"],
+      "salida_esperada": "auditoria_integral_v20_20261022/preflight_maquetacion_v20.json",
+      "restricciones": ["No sobrescribir v19 o modelo", "Motor centralizado y extensión solo aditiva", "No recompilación degradante ni scripts de versión ad hoc", "No integración automática de instrumentos recientes"],
+      "criterio_exito": "Plan nativo concreto de estilos, geometría, campos, índices y conservación, preparado para ejecutar tras consolidar las órdenes."
+    }
+  ],
+  "cobertura_exigida": {
+    "SIVAC": [[1, 53], [54, 106], [107, 158]],
+    "Fany": [[1, 36], [37, 72], [73, 106]],
+    "regla": "La unión de los registros debe cubrir 158 y 106 páginas sin huecos. Cada página indica método real, observaciones y acciones; no sustituir lectura visual por texto automático.",
+    "poscorreccion": "La nueva v20 requiere conteo y revisión de su propia paginación; no atribuir a v20 el registro visual de v19."
+  },
+  "criterios_de_direccion": [
+    "Tomar de Fany estructura y organización institucional, no su tema, variables, diseño, datos ni defectos gráficos.",
+    "Conservar las normas canónicas TNR 12, cuerpo 1,5 y sangría 1,27 cm; justificar prosa narrativa, no celdas angostas, captions o referencias indiscriminadamente.",
+    "Preservar tablas nativas, doce ecuaciones OMML, referencias e hipervínculos, imágenes y campos de índices y paginación.",
+    "Resultados de prueba, validación reportada, firmas y fotografías pendientes deben continuar identificados con veracidad.",
+    "No reemplazar figuras por otras ni interpolar para simular 300 DPI. Evaluar fuentes originales disponibles.",
+    "La autorización de corregir una copia no constituye aprobación humana de un capítulo definitivo ni cierre de QG-5 o QG-9."
+  ],
+  "avance_verificado": {
+    "tramos_recibidos": ["SIVAC 1-53/Fany 1-36", "SIVAC 54-106/Fany 37-72", "SIVAC 107-158/Fany 73-106"],
+    "paginas_sivac_registradas": 158,
+    "paginas_fany_registradas": 106,
+    "cobertura": "Unión de páginas cotejada exactamente contra 1-158 y 1-106, sin huecos ni solapamientos; consolidado en COBERTURA_ENTRADA_V19_FANY.json.",
+    "prosa_global": "Revisión ampliada recibida como revision_prosa_global_v19.json y redaccion_v20_ordenes.json de 24 órdenes; la lectura textual completa fuera del tramo visual se declara como tal, no como otra lectura visual.",
+    "preflight": "Recibido y candidato de formato producido sin cambios de texto o celdas; se aplica lote textual según DECISIONES_APLICACION_V20.json.",
+    "verificacion_bibliografica": "Dos atribuciones no sostenidas comprobadas contra fuentes primarias; se preparan correcciones exactas sin alterar datos empíricos SIVAC."
+  },
+  "aplicacion_etapa_formato": {
+    "destino_candidato": "salidas/archivo/REVISION_INTEGRAL_V20_20261022/CANDIDATO_FORMATO_V20.docx/pdf",
+    "autorizado": [
+      "TNR en folios, índices, números y puntos guía, conservando los tres TOC y todos los niveles.",
+      "Notas a la izquierda, advertencia narrativa a 1,5 y sangría correspondiente.",
+      "Rejilla únicamente en formularios T47-T52 y normalización de celdas y firmas sin cambio de texto.",
+      "Folios preliminares romanos al pie centrado, conservando conteos; cuerpo arábigo superior derecho.",
+      "Nivel 3 en negrita cursiva según nivel de esquema real.",
+      "Rebalanceo de tablas 1 y 2 sin reducir fuente, partir filas o cambiar celdas.",
+      "Orden rótulo-marco-nota en fotografías pendientes, sin agregar evidencia.",
+      "Sustitución del escudo por el logotipo original aportado si la identidad se verifica visualmente y se conserva proporción."
+    ],
+    "no_autorizado": [
+      "Eliminar entradas de tercer nivel para compactar el índice.",
+      "Suprimir divisorias o inicios capitulares solo para llenar blancos, en particular el cierre del Capítulo I ya aceptado por el tesista.",
+      "Desactivar cantSplit o trasladar tablas a otro capítulo o anexo por conveniencia.",
+      "Redibujar/traducir figuras citadas o interpolar Figura 6 para simular resolución.",
+      "Modificar acta o declaración jurada institucional sin decisión humana.",
+      "Alterar cifras de centros o tablas sin verificar unidades y evidencia."
+    ],
+    "limite": "Es un candidato de formato, todavía no la v20 final. Las órdenes textuales verificadas se incorporarán después."
+  },
+  "lote_textual_y_fuentes": {
+    "autoridad": "auditoria_integral_v20_20261022/DECISIONES_APLICACION_V20.json",
+    "redaccion": "24 propuestas recibidas, seleccionadas y ajustadas por dirección; no aplicación ciega de condicionadas.",
+    "integridad": "22 propuestas recibidas; se distinguen correcciones editoriales, cambios de protocolo no autorizados y pendientes documentales.",
+    "fuentes_primarias": "Siete órdenes específicas de FUENTES_CORRECCIONES_V20.json autorizadas; Aiken añadido con cita activa, atribución de Tristán-López corregida y pasajes de Wasswa corregidos; Kigenza contrastado.",
+    "invariante_resultados": "Ninguna cifra empírica, p-valor, intervalo o coeficiente SIVAC se recalcula o modifica; las correcciones numéricas de literatura quedan como excepciones verificadas."
+  },
+  "salida_generada": {
+    "docx": "salidas/documentos/informe_final_v20.docx",
+    "docx_sha256": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+    "pdf": "salidas/documentos/informe_final_v20.pdf",
+    "pdf_sha256": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+    "paginas": 159,
+    "cotejo_direccion": "auditoria_integral_v20_20261022/COTEJO_DIRECCION_V20.json",
+    "auditoria_visual": {
+      "estado": "reanudada_tras_interrupcion_sin_registros_finales_previos",
+      "rangos": [[1, 53], [54, 106], [107, 159]],
+      "salidas_exigidas": ["SALIDA_V20_001_053.json", "SALIDA_V20_054_106.json", "SALIDA_V20_107_159.json"],
+      "regla": "No se atribuye al documento nuevo la lectura visual ya realizada sobre v19 o Fany."
+    }
+  },
+  "estado": "v20_generada_conservacion_tecnica_cotejada_auditoria_visual_final_reanudada"
+}

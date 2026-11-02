@@ -1,0 +1,150 @@
+== DUPLICADOS EXACTOS CONSECUTIVOS ==
+== DUPLICADOS EN VENTANA 3 ==
+P800 ~ P803 :: Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (2026)
+P803 ~ P806 :: Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (2026)
+P806 ~ P809 :: Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (2026)
+== FRASES SOSPECHOSAS (final truncado) ==
+P0 [SIN PUNTO FINAL] ...S
+FACULTAD DE INGENIERÍA
+ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
+P3 [SIN PUNTO FINAL] ... EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II
+P5 [SIN PUNTO FINAL] ...A DE INVESTIGACIÓN:
+Tecnologías de Información y Comunicación en Salud
+P6 [SIN PUNTO FINAL] ...ach. José Luis Quispe León
+
+ASESORA:
+Dra. Norma Lorena Catacora Flores
+P18 [SIN PUNTO FINAL] ...n
+DNI N.° [Completar DNI oficial antes de impresión]
+Autor de la Tesis
+P32 [SIN PUNTO FINAL] ...ra 1 Pilares tecnológicos de la arquitectura web (URL, HTTP y HTML)	23
+P33 [SIN PUNTO FINAL] ...a aplicación web basada en el patrón Modelo-Vista-Controlador (MVC)	24
+P34 [SIN PUNTO FINAL] ...esde el ciclo en cascada e iterativo hacia Extreme Programming (XP)	25
+P35 [SIN PUNTO FINAL] ...Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+P36 [SIN PUNTO FINAL] ...sticas del modelo de calidad del producto de software ISO/IEC 25010	27
+P37 [SIN PUNTO FINAL] ...munizaciones desde la fabricación hasta el establecimiento de salud	28
+P38 [SIN PUNTO FINAL] ...un sistema electrónico de información de gestión logística (e-LMIS)	30
+P39 [SIN PUNTO FINAL] ...encia de datos en sistemas de información rutinaria de salud (RHIS)	32
+P40 [SIN PUNTO FINAL] ... percibida en la adopción de sistemas de información en salud (TAM)	33
+P41 [SIN PUNTO FINAL] ...e un sistema de información del programa nacional de inmunizaciones	34
+P44 [SIN PUNTO FINAL] ...calas de medición de la gestión de movimientos mensuales de vacunas	34
+P45 [SIN PUNTO FINAL] ...sal por función operativa y centro de acopio en la DISA Apurímac II	89
+P46 [SIN PUNTO FINAL] ...Tabla 3 Operacionalización de las variables de investigación	92
+P47 [SIN PUNTO FINAL] ...as e instrumentos de recolección de datos por dimensión e indicador	96
+P48 [SIN PUNTO FINAL] ...uctura de la validación de los instrumentos de recolección de datos	99
+P112 [SIN PUNTO FINAL] ...6.2. Variable dependiente: Gestión de movimientos mensuales de vacunas
+P134 [SIN PUNTO FINAL] ...ecedentes internacionales y nacionales y diferenciación frente a SIVAC
+P147 [SIN PUNTO FINAL] ...ta-Controlador (MVC) y APIs RESTful con autenticación basada en tokens
+P157 [SIN PUNTO FINAL] ... por K. Beck, 1999, Computer, 32(10). https://doi.org/10.1109/2.796139
+P163 [SIN PUNTO FINAL] ...1.4. Calidad de producto de software según la norma ISO/IEC 25010:2023
+P166 [SIN PUNTO FINAL] ...erísticas del modelo de calidad del producto de software ISO/IEC 25010
+P168 [SIN PUNTO FINAL] ...Gynecology, 51(4), Artículo 88. https://doi.org/10.31083/j.ceog5104088
+P170 [SIN PUNTO FINAL] ....1.2.1. Cadena de frío e inmunizaciones en el sistema de salud pública
+P173 [SIN PUNTO FINAL] ... inmunizaciones desde la fabricación hasta el establecimiento de salud
+P176 [SIN PUNTO FINAL] ...ectrónicos de información de gestión logística (e-LMIS) y control FEFO
+P181 [SIN PUNTO FINAL] ...d Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4
+P190 [SIN PUNTO FINAL] ...rvices, 3, Artículo 1059611. https://doi.org/10.3389/frhs.2023.1059611
+P195 [SIN PUNTO FINAL] ...ications, 11, Artículo 516. https://doi.org/10.1057/s41599-024-02976-9
+P198 [SIN PUNTO FINAL] ...o de un sistema de información del programa nacional de inmunizaciones
+P200 [SIN PUNTO FINAL] ...magem, 28, Artículo e3307. https://doi.org/10.1590/1518-8345.3360.3307
+P201 [SIN PUNTO FINAL] ... escalas de medición de la gestión de movimientos mensuales de vacunas
+P246 [SIN PUNTO FINAL] ...ases del ciclo de desarrollo Extreme Programming (XP) adaptado a SIVAC
+P248 [SIN PUNTO FINAL] ...se I: Planificación (Planning Game) y Especificación de Requerimientos
+P254 [SIN PUNTO FINAL] ...oles de usuarios y responsabilidades operativas en la DISA Apurímac II
+P261 [SIN PUNTO FINAL] ...3.3.1.3. Requerimientos No Funcionales según ISO/IEC 25010:2023
+P264 [SIN PUNTO FINAL] ...Catálogo de Requerimientos No Funcionales según ISO/IEC 25010:2023
+P266 [SIN PUNTO FINAL] ... Trazabilidad Requerimientos vs Dimensiones de la Variable Dependiente
+P269 [SIN PUNTO FINAL] ...ionales, Historias de Usuario y Dimensiones de la Variable Dependiente
+P271 [SIN PUNTO FINAL] ... la Planificación (Planning Game) y Estimación de Historias de Usuario
+P274 [SIN PUNTO FINAL] ...Planning Game: Estimación en Puntos de Historia, Prioridad e Iteración
+P279 [SIN PUNTO FINAL] ...Plan Detallado de las Cinco Iteraciones de Extreme Programming
+P289 [SIN PUNTO FINAL] ...3.3.2.1. Arquitectura Lógica en Capas y Subsistemas del Sistema
+P304 [SIN PUNTO FINAL] ... del Proceso de Registro de Movimientos de Vacunas con Validación FEFO
+P309 [SIN PUNTO FINAL] ...ulo de Inteligencia Logística ICI-DEMID y Clasificación Semafórica MSD
+P315 [SIN PUNTO FINAL] ...agrama de Secuencia UML: Autenticación Segura y Control de Acceso RBAC
+P319 [SIN PUNTO FINAL] ... de Control de Acceso Basado en Roles (RBAC) por Módulos y Operaciones
+P324 [SIN PUNTO FINAL] ... de Entregas Adicionales, Descuento FEFO y Sincronización Intermensual
+P326 [SIN PUNTO FINAL] ...3.3.2.4. Modelado Conceptual, Lógico y Físico de la Base de Datos
+P335 [SIN PUNTO FINAL] ... Relacional Lógico de Entidades Principales en PostgreSQL / Prisma ORM
+P340 [SIN PUNTO FINAL] ...rio Físico de Base de Datos y Relaciones Relacionales en PostgreSQL 16
+P356 [SIN PUNTO FINAL] ...Diccionario de Datos: Tablas usuarios y usuarios_centros_acopio
+P362 [SIN PUNTO FINAL] ...Diccionario de Datos: Tablas jeringas y configuracion_jeringa_vacuna
+P393 [SIN PUNTO FINAL] ...Stack Tecnológico de Desarrollo y Librerías del Ecosistema SIVAC
+P398 [SIN PUNTO FINAL] ...Estructura del Proyecto Backend en Node.js, Express y Prisma ORM
+P403 [SIN PUNTO FINAL] ...Estructura Modular del Cliente Web SPA en React 18, TypeScript y Vite
+P409 [SIN PUNTO FINAL] ...tmo de Sincronización Recursiva de Saldos Intermensuales en TypeScript
+P414 [SIN PUNTO FINAL] ...cción Proactiva de Alertas Tempranas con Ventana de Cooldown de 7 Días
+P419 [SIN PUNTO FINAL] ...ificación Criptográfica JWT y Extracción de Permisos RBAC Multi-Acopio
+P424 [SIN PUNTO FINAL] ...lo de Indicadores de Disponibilidad Logística MSD y Semáforo Normativo
+P430 [SIN PUNTO FINAL] ...rfaz de Usuario: Pantalla de Autenticación e Inicio de Sesión de SIVAC
+P434 [SIN PUNTO FINAL] ...board Principal de Monitoreo PAI, Curvas de Tendencia y Cadena de Frío
+P438 [SIN PUNTO FINAL] ...ferior del Dashboard con Centros de Acopio Zonales, Alertas y Bitácora
+P442 [SIN PUNTO FINAL] ...o de Inventario y Control de Lotes de Biológicos con Trazabilidad FEFO
+P446 [SIN PUNTO FINAL] ...: Vista de Gestión de Lotes y Filtros Dinámicos por Estado y Caducidad
+P450 [SIN PUNTO FINAL] ...atriz Contable de Movimientos Mensuales de Vacunas por Establecimiento
+P454 [SIN PUNTO FINAL] ... y Cuadrícula Operativa de Movimientos con Entregas Base y Adicionales
+P458 [SIN PUNTO FINAL] ...ulo de Planificación Anual de Metas PAI y Programación Mensual Ene-Dic
+P462 [SIN PUNTO FINAL] ...o: Centro de Reportes y Matriz Trimestral de Seguimiento CENARES Q1-Q4
+P466 [SIN PUNTO FINAL] ...de Inteligencia Logística ICI-DEMID con Semáforo de Disponibilidad MSD
+P470 [SIN PUNTO FINAL] ...Módulo de Kardex Digital Cronológico de Movimientos por Lote y Almacén
+P478 [SIN PUNTO FINAL] ...uario: Módulo de Administración de Usuarios y Asignación de Roles RBAC
+P482 [SIN PUNTO FINAL] ... Usuario: Gestión de Usuarios mostrando Fixture de Prueba Automatizada
+P486 [SIN PUNTO FINAL] ...suario: Centro de Alertas Tempranas y Triaje Operativo con Severidades
+P490 [SIN PUNTO FINAL] ...ulo de Asignación y Reglas Normativas de Jeringas e Insumos por Vacuna
+P498 [SIN PUNTO FINAL] ...Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock
+P502 [SIN PUNTO FINAL] ... de Suites de Pruebas Automatizadas Unitarias y de Integración en Jest
+P509 [SIN PUNTO FINAL] ...3.3.4.3. Evaluación de Calidad del Software según ISO/IEC 25010:2023
+P512 [SIN PUNTO FINAL] ...valuación de Calidad del Producto de Software según ISO/IEC 25010:2023
+P515 [SIN PUNTO FINAL] ...3.3.5.1. Topología de Red, Contenedores Docker y Orquestación
+P519 [SIN PUNTO FINAL] ... Despliegue Físico y Topología de Red en Producción con Docker y Nginx
+P541 [SIN PUNTO FINAL] ...Cronograma y protocolo de ejecución de la intervención preexperimental
+P547 [SIN PUNTO FINAL] ...censal por función operativa y centro de acopio en la DISA Apurímac II
+P553 [SIN PUNTO FINAL] ...vación primaria, reglas de agregación pareada y criterios de inclusión
+P558 [SIN PUNTO FINAL] ...9.2. Variable dependiente: Gestión de movimientos mensuales de vacunas
+P589 [SIN PUNTO FINAL] ...nicas e instrumentos de recolección de datos por dimensión e indicador
+P601 [SIN PUNTO FINAL] ...structura de la validación de los instrumentos de recolección de datos
+P604 [SIN PUNTO FINAL] ...4.13. Técnicas estadísticas para el procesamiento de la información
+P627 [SIN PUNTO FINAL] ...adística Descriptiva de la Variable Dependiente y sus Tres Dimensiones
+P670 [SIN PUNTO FINAL] ...procesamiento mediante pruebas paramétricas y no paramétricas pareadas
+P677 [SIN PUNTO FINAL] ...ia documental mediante pruebas paramétricas y no paramétricas pareadas
+P684 [SIN PUNTO FINAL] ...n del usuario mediante pruebas paramétricas y no paramétricas pareadas
+P692 [SIN PUNTO FINAL] ...ión para la Hipótesis General con ajuste secuencial de Holm-Bonferroni
+P712 [SIN PUNTO FINAL] ...epositorio Institucional UNCP. http://hdl.handle.net/20.500.12894/9418
+P713 [SIN PUNTO FINAL] ...oftware Engineering, 33(2), 65–86. https://doi.org/10.1109/TSE.2007.17
+P714 [SIN PUNTO FINAL] ...te]. Repositorio Institucional UPN. https://hdl.handle.net/11537/43590
+P715 [SIN PUNTO FINAL] ...na]. Repositorio Institucional UPSE. https://hdl.handle.net/46000/9257
+P716 [SIN PUNTO FINAL] ...programming. Computer, 32(10), 70–77. https://doi.org/10.1109/2.796139
+P717 [SIN PUNTO FINAL] ...ccine, 42(5), 1120–1131. https://doi.org/10.1016/j.vaccine.2024.01.045
+P718 [SIN PUNTO FINAL] ... Repositorio Institucional UCH. http://hdl.handle.net/20.500.12872/844
+P719 [SIN PUNTO FINAL] ...rvices, 3, Artículo 1059611. https://doi.org/10.3389/frhs.2023.1059611
+P722 [SIN PUNTO FINAL] ... Internet Research, 26, Artículo e45070. https://doi.org/10.2196/45070
+P723 [SIN PUNTO FINAL] ...hnology. MIS Quarterly, 13(3), 319–340. https://doi.org/10.2307/249008
+P725 [SIN PUNTO FINAL] ...cations, 1(1), Artículo 38. https://doi.org/10.1186/s43058-020-00022-8
+P726 [SIN PUNTO FINAL] ...alth, 11, Artículo 1194807. https://doi.org/10.3389/fpubh.2023.1194807
+P727 [SIN PUNTO FINAL] ...te]. Repositorio Institucional UPN. https://hdl.handle.net/11537/33833
+P728 [SIN PUNTO FINAL] ...Vaccine, 38(3), 562–569. https://doi.org/10.1016/j.vaccine.2019.10.059
+P729 [SIN PUNTO FINAL] ...edicina Humana, 24(1), 73–84. https://doi.org/10.25176/rfmh.v24i1.6189
+P731 [SIN PUNTO FINAL] ...ursing, 24(1), Artículo 33. https://doi.org/10.1186/s12912-024-02648-8
+P732 [SIN PUNTO FINAL] ...e (IJSECS), 5(3), 1244–1259. https://doi.org/10.35870/ijsecs.v5i3.5354
+P733 [SIN PUNTO FINAL] ...ty model (ISO/IEC 25010:2023). https://www.iso.org/standard/78176.html
+P734 [SIN PUNTO FINAL] ...ice, 11(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22-00295
+P735 [SIN PUNTO FINAL] ...d Sciences, 12(19), Artículo 9462. https://doi.org/10.3390/app12199462
+P737 [SIN PUNTO FINAL] ...tions, 11(1), Artículo 516. https://doi.org/10.1057/s41599-024-02976-9
+P738 [SIN PUNTO FINAL] ...cal Informatics, 14(1), Artículo e81377. https://doi.org/10.2196/81377
+P739 [SIN PUNTO FINAL] ...epositorio Institucional UTP. https://hdl.handle.net/20.500.12867/5068
+P740 [SIN PUNTO FINAL] ...cs Research, 30(4), 375–386. https://doi.org/10.4258/hir.2024.30.4.375
+P741 [SIN PUNTO FINAL] ...s://www.gob.pe/institucion/minsa/normas-legales/3576882-884-2022-minsa
+P742 [SIN PUNTO FINAL] ...Gynecology, 51(4), Artículo 88. https://doi.org/10.31083/j.ceog5104088
+P743 [SIN PUNTO FINAL] ...rmative Research, 5(4), Artículo e32722. https://doi.org/10.2196/32722
+P744 [SIN PUNTO FINAL] ...magem, 28, Artículo e3307. https://doi.org/10.1590/1518-8345.3360.3307
+P745 [SIN PUNTO FINAL] ... para la inmunización. OPS. https://iris.paho.org/handle/10665.2/53120
+P748 [SIN PUNTO FINAL] ...logy, 15, Artículo 1373642. https://doi.org/10.3389/fphar.2024.1373642
+P751 [SIN PUNTO FINAL] ...d Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4
+P752 [SIN PUNTO FINAL] ...rld Health Organization. https://apps.who.int/iris/handle/10665/344249
+P762 [SIN PUNTO FINAL] ...Matriz de operacionalización de las variables de investigación
+P772 [SIN PUNTO FINAL] ...ANEXO 4: INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA INVESTIGACIÓN
+P775 [SIN PUNTO FINAL] ...strumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos
+P778 [SIN PUNTO FINAL] ...Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes
+P791 [SIN PUNTO FINAL] ...ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y TRAZABILIDAD SIVAC
+P794 [SIN PUNTO FINAL] ...de Historias de Usuario desarrolladas e implementadas en SIVAC bajo XP
+P796 [SIN PUNTO FINAL] ...ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO

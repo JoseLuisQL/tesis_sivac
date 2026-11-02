@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "agente": "guardian-consistencia",
+    "squad": "Squad B",
+    "objeto": "Reinspeccion metodologica del cuerpo limpio v02: cobertura, traslados, ausencia de nuevas mediciones, fase y omisiones de sentido.",
+    "leido": "00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf, paginas 1, 2, 3, 4 y 5 (01 p1; 02 p1, p2 y p3; 03 p1)",
+    "no_leido": "Apoyos del investigador y modulo B: en correccion, no se dictaminan",
+    "no_es": "Revision visual ni certificacion de validacion"
+  },
+  "cobertura_6": [
+    {"id": "T_reg", "hoja": "01", "campo": "Tabla A, REG-01 a REG-03, columnas Inicio, Fin, Tiempo, Pausa, Valida", "estado": "completo"},
+    {"id": "T_vale", "hoja": "01", "campo": "Tabla B, VALE-01 a VALE-03, mismas columnas", "estado": "completo"},
+    {"id": "RSD", "hoja": "02", "campo": "D-01 a D-04 con C1 a C8, veredicto y causa; D-05 a D-07 remitidos", "estado": "completo"},
+    {"id": "CPE", "hoja": "02 p3", "campo": "E-01 a E-12: programada, entregada, diferencia, documento que autoriza, concordante", "estado": "completo"},
+    {"id": "AP", "hoja": "03", "campo": "AP-01 a AP-04, escala 1 a 5", "estado": "completo y literal"},
+    {"id": "UP", "hoja": "03", "campo": "UP-01 a UP-04, escala 1 a 5", "estado": "completo y literal"}
+  ],
+  "traslados_verificados": [
+    {"de": "Causa de pausa y observaciones por tarea", "a": "Tabla H del apoyo", "remision_en_hoja": true},
+    {"de": "Consolidado de media y mediana", "a": "Hoja de cierre del investigador", "remision_en_hoja": false, "nota": "No hay calculo en campo"},
+    {"de": "Conteos crudos de RSD y CPE", "a": "Hoja de cierre del investigador", "remision_en_hoja": false, "nota": "Recuperables por reconteo"},
+    {"de": "Definiciones completas de C1 a C8", "a": "Apoyos del auditor", "remision_en_hoja": true},
+    {"de": "Investigador (admin.) y observaciones del participante", "a": "Apoyo, control de aplicacion", "remision_en_hoja": false, "nota": "Retiro sin perdida"},
+    {"de": "Protocolo de inicio, fin, pausa y validez", "a": "Protocolo del apoyo", "remision_en_hoja": true, "nota": "Ver D-02"}
+  ],
+  "ausencia_nuevas_mediciones": {
+    "sin_reactivos_nuevos": true,
+    "sin_indicadores_nuevos": true,
+    "sin_demograficos": true,
+    "sin_firma_participante": true,
+    "sin_formulas_en_celdas": true,
+    "sin_coeficientes": true,
+    "descripciones_de_tarea": "REG-01 a REG-03 y VALE-01 a VALE-03 literales de la fuente"
+  },
+  "fase_y_modalidades": {
+    "fase_en_01_02_03": "linea en blanco con opciones INICIAL o FINAL; administrativa",
+    "A": "una pagina, sin puntaje ni suma; aplicable en ambas fases",
+    "B": "no leido; se conserva como complementario solo post y no aditivo",
+    "sin_redefinicion_de_constructo": true
+  },
+  "omisiones_de_sentido": [
+    {"id": "D-02", "hoja": "01", "tipo": "remision_imprecisa", "detalle": "Las reglas que fijan el inicio y el fin de T_reg y T_vale ya no figuran en la hoja y la remision dice 'protocolo y en H-01 a H-04', mezclando el protocolo con las filas de incidencias.", "condicion": "Valido solo si el protocolo del apoyo contiene ambas fronteras literales; la remision debe nombrar la seccion del protocolo.", "severidad": "media"},
+    {"id": "D-03", "hoja": "02 p3", "tipo": "continuacion_sin_remision", "detalle": "La tabla de entregas termina en E-12 sin nota de continuacion, a diferencia de D-05 que si remite. Se pierde la traza de E-13 en adelante.", "condicion": "Agregar remision a la continuacion de CPE.", "severidad": "media"},
+    {"id": "D-04", "hoja": "03", "tipo": "omision_menor", "detalle": "Se retiro 'No hay respuestas correctas ni incorrectas'. La leyenda 1 a 5 cubre el sentido de la escala, no el encuadre neutro.", "condicion": "Restituir la frase si el espacio lo permite.", "severidad": "baja"}
+  ],
+  "regresiones_en_correccion": [
+    {"id": "R-01", "tema": "Titulo Instrumento 4 en modulo B", "estado": "en correccion; no verificado"},
+    {"id": "R-02", "tema": "Inicio de vale omitido en apoyo", "estado": "en correccion; no verificado"},
+    {"id": "R-03", "tema": "Aritmetica en celdas de conversion", "estado": "en correccion; no verificado"}
+  ],
+  "invariantes": [
+    "Tres dimensiones y seis indicadores",
+    "N = n = 14",
+    "16 reactivos literales en escala 1 a 5",
+    "B complementario, solo post, no aditivo",
+    "Ningun porcentaje, promedio ni coeficiente en hojas de campo"
+  ],
+  "estado": {"qg_5": "abierta", "f6": "bloqueada", "limitacion": "documental"}
+}

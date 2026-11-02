@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "generado": "2026-10-21T22:26:36",
+    "fecha_declarada": "2026-10-21",
+    "version_libro": "5.0",
+    "script": "scripts/estadistica/build_tablas_anexos_v3.py",
+    "interprete": "Python 3.11.9",
+    "argumentos": {
+      "--fuente-docx": "informe_final_v19.docx",
+      "--base-xlsx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\estadistica\\TABLAS_ANEXOS_SIVAC_v2.xlsx",
+      "--salida": "TABLAS_ANEXOS_SIVAC_v5.xlsx",
+      "--referencia-paridad": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\estadistica\\TABLAS_ANEXOS_SIVAC_v3.xlsx",
+      "--actualizar-hu": true,
+      "--correcciones-veracidad": "salidas/reportes_maquetacion/correcciones_veracidad_v19_20261021.json",
+      "--hoja-validez": true,
+      "--recalcular": true
+    }
+  },
+  "fuente_docx": {
+    "nombre": "informe_final_v19.docx",
+    "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v19.docx",
+    "bytes": 15090858,
+    "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+  },
+  "base_xlsx": {
+    "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\estadistica\\TABLAS_ANEXOS_SIVAC_v2.xlsx",
+    "sha256": "6399acb323444dc1e9068150573eb99dc8451a460e51c3756d2dcc492ee50c88"
+  },
+  "salida_xlsx": {
+    "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\estadistica\\TABLAS_ANEXOS_SIVAC_v5.xlsx",
+    "sha256": "1632d1ebe1b37069b247e5da10e4d40f08291a0b2fbac2c41c083eb7be672d7e",
+    "bytes": 68483,
+    "hojas": [
+      "00_PORTADA",
+      "01_TABLA_44_CONSISTENCIA",
+      "02_TABLA_45_OPERACIONALIZACION",
+      "03_TABLA_46_INSTRUMENTO_01",
+      "04_TABLA_47_INSTRUMENTO_02",
+      "05_TABLA_48_INSTRUMENTO_03_TAM",
+      "06_TABLA_49_PRETEST",
+      "07_TABLA_50_POSTTEST",
+      "08_TABLA_51_HISTORIAS_XP",
+      "09_DESCRIPTIVOS",
+      "10_CONFIABILIDAD",
+      "11_NORMALIDAD",
+      "12_CONTRASTES",
+      "13_SPSS_SINTAXIS",
+      "14_SPSS_SALIDAS",
+      "15_NOTAS_TRAZABILIDAD",
+      "16_VALIDEZ_REPORTADA"
+    ]
+  },
+  "referencia_paridad": {
+    "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\estadistica\\TABLAS_ANEXOS_SIVAC_v3.xlsx",
+    "sha256": "e1d8d0f87786fa27bf1b4a9a085096c27f6de34a31a4a6690b105c36f54ede38"
+  },
+  "paridad_numerica": {
+    "contra_base": {
+      "celdas_comparadas": 968,
+      "discrepancias": [],
+      "celdas_nuevas_estadisticas": [],
+      "celdas_nuevas_hoja_validez": [
+        [
+          "16_VALIDEZ_REPORTADA",
+          "B7"
+        ],
+        [
+          "16_VALIDEZ_REPORTADA",
+          "B8"
+        ]
+      ]
+    },
+    "contra_referencia": {
+      "celdas_comparadas": 968,
+      "discrepancias": [],
+      "celdas_nuevas_estadisticas": [],
+      "celdas_nuevas_hoja_validez": [
+        [
+          "16_VALIDEZ_REPORTADA",
+          "B7"
+        ],
+        [
+          "16_VALIDEZ_REPORTADA",
+          "B8"
+        ]
+      ]
+    },
+    "resultado": "EXACTA"
+  },
+  "tabla_51": {
+    "filas_docx": 7,
+    "filas_hoja": 7,
+    "cabecera": 5,
+    "nota": 14,
+    "filas_ajustadas": 2
+  },
+  "hoja_validez": {
+    "hoja": "16_VALIDEZ_REPORTADA",
+    "formulas": [
+      "B11",
+      "B12"
+    ],
+    "imputa_n": false,
+    "matriz_por_juez": false,
+    "escala": "matriz VD de 12 componentes, ordinal 1-4",
+    "no_es": "cuestionario TAM de 8 reactivos, Likert 1-5",
+    "leyenda": "Resultados calculados a partir de calificaciones comunicadas por el tesista. Pendientes de cotejo con las fichas originales."
+  },
+  "recalculo": {
+    "estado": "recalculado",
+    "motor": "Excel COM 16.0",
+    "paginas_impresion": {
+      "00_PORTADA": 2,
+      "01_TABLA_44_CONSISTENCIA": 1,
+      "02_TABLA_45_OPERACIONALIZACION": 1,
+      "03_TABLA_46_INSTRUMENTO_01": 1,
+      "04_TABLA_47_INSTRUMENTO_02": 1,
+      "05_TABLA_48_INSTRUMENTO_03_TAM": 1,
+      "06_TABLA_49_PRETEST": 1,
+      "07_TABLA_50_POSTTEST": 1,
+      "08_TABLA_51_HISTORIAS_XP": 1,
+      "09_DESCRIPTIVOS": 2,
+      "10_CONFIABILIDAD": 1,
+      "11_NORMALIDAD": 1,
+      "12_CONTRASTES": 2,
+      "13_SPSS_SINTAXIS": 8,
+      "14_SPSS_SALIDAS": 9,
+      "15_NOTAS_TRAZABILIDAD": 1,
+      "16_VALIDEZ_REPORTADA": 1
+    },
+    "paginas_totales": 35,
+    "formulas": 2,
+    "valores_cache": {
+      "B11": 1.0,
+      "B12": 1.0
+    },
+    "cache_verificada": true,
+    "errores_formula": 0,
+    "error_summary": []
+  },
+  "texto": {
+    "menciones_openpyxl": 0,
+    "fuente_obsoleta": [],
+    "dobles_puntos": 0,
+    "etiquetas_internas": [],
+    "raya_larga_restante": [],
+    "avisos_por_hoja": {
+      "00_PORTADA": 1,
+      "06_TABLA_49_PRETEST": 1,
+      "07_TABLA_50_POSTTEST": 1,
+      "09_DESCRIPTIVOS": 1,
+      "10_CONFIABILIDAD": 1,
+      "11_NORMALIDAD": 1,
+      "12_CONTRASTES": 1,
+      "13_SPSS_SINTAXIS": 1
+    },
+    "aviso_de_datos": "Datos de prueba. Serán sustituidos por los registros definitivos de campo antes de la sustentación."
+  },
+  "barrido_u2014": {
+    "celdas_corregidas": 168,
+    "incisos_puntuados": 0,
+    "por_hoja": {
+      "09_DESCRIPTIVOS": 14,
+      "12_CONTRASTES": 14,
+      "14_SPSS_SALIDAS": 140
+    },
+    "notas_ampliadas": [
+      [
+        "09_DESCRIPTIVOS",
+        13
+      ],
+      [
+        "12_CONTRASTES",
+        11
+      ],
+      [
+        "14_SPSS_SALIDAS",
+        260
+      ]
+    ]
+  },
+  "rotulo_spss_salidas": {
+    "titulo": "RESULTADOS CON PRESENTACIÓN TIPO SPSS - SIVAC (n = 14)",
+    "fuente": "Cálculos elaborados con Python; presentación tipo SPSS; datos de prueba.",
+    "titulo_ok": true,
+    "fuente_ok": true
+  },
+  "veracidad_rotulos": {
+    "json": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\correcciones_veracidad_v19_20261021.json",
+    "sha256": "e8428c75da662f45b6ca1834ae1af55a442019dbf5282938c303116ff65d7375",
+    "caso": "DATOS DE PRUEBA",
+    "hojas": {
+      "06_TABLA_49_PRETEST": {
+        "rotulo": "Matriz de datos de prueba en el Pretest (Gestión manual basal, n = 14)",
+        "rotulo_previo": "Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)",
+        "nota": "Nota. Datos de prueba del pretest sobre 14 operadores y los centros de acopio registrados en SIVAC; no constituyen mediciones de campo.",
+        "centros_preservados": 14
+      },
+      "07_TABLA_50_POSTTEST": {
+        "rotulo": "Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)",
+        "rotulo_previo": "Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14)",
+        "nota": "Nota. Datos de prueba del postest sobre 14 operadores y los centros de acopio registrados en SIVAC; no constituyen mediciones finales de campo.",
+        "centros_preservados": 14
+      }
+    }
+  },
+  "portada": {
+    "paginas": 2,
+    "motivo": "Portada institucional y trazabilidad de la fuente; salto de pagina intencional en la fila 26."
+  },
+  "verificacion_de_ejecucion": {
+    "codigo_salida": 0,
+    "base_intacta": true,
+    "referencia_intacta": true,
+    "hoja_de_validez_escrita": true,
+    "tabla_51_sincronizada": true,
+    "rotulos_veracidad_sincronizados": true,
+    "rotulo_spss_salidas_ok": true,
+    "errores_formula": 0,
+    "paginas_impresion_totales": 35,
+    "raya_larga_restante": 0
+  }
+}

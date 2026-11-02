@@ -1,0 +1,94 @@
+{
+ "fecha": "2026-10-22",
+ "fase": "F8_INTEGRACION_EDITORIAL",
+ "estado": "CERRADO CON RESIDUALES ACEPTADOS",
+ "documento": {
+  "docx": "salidas/documentos/informe_final_v20.docx",
+  "pdf": "salidas/documentos/informe_final_v20.pdf"
+ },
+ "hashes_finales": {
+  "docx_sha256": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+  "pdf_sha256": "93956168b70730e14dfcd61c108f5d268c8a0ed45d78bb117c05d1b514c57fde"
+ },
+ "procedencia": {
+  "candidato": "salidas/archivo/REVISION_INTEGRAL_V20_20261022/CANDIDATO_ROTULOS_V20_ALINEADO",
+  "modo": "promocion por copia byte a byte; sin re-maquetar, sin re-exportar, sin actualizar campos, sin editar contenido",
+  "sha256_verificado_tras_copia": true,
+  "historial": [
+   "CANDIDATO_ROTULOS_V20_FINAL (pre-alineacion, promovido y luego archivado)",
+   "CANDIDATO_ROTULOS_V20_ALINEADO (version final promovida)"
+  ]
+ },
+ "base_anterior_archivada": {
+  "directorio": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/",
+  "docx_sha256": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+  "pdf_sha256": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+  "integridad": "HASHES.json; hashes de las copias coinciden con los originales"
+ },
+ "metricas": {
+  "paginas": 159,
+  "referencias": 54,
+  "referencias_huerfanas": 0,
+  "verificado_por": "Dirección"
+ },
+ "resolucion_r1_r2_r3": {
+  "R1": {
+   "pagina": 132,
+   "asunto": "Restitucion de la cita Venkatesh et al. (2003) en el parrafo de discusion de la tercera dimension",
+   "estado": "RESUELTA"
+  },
+  "R2": {
+   "pagina": 140,
+   "asunto": "Eliminacion del DOI duplicado en Wasswa et al. (2023); un unico hipervinculo nativo",
+   "estado": "RESUELTA"
+  },
+  "R3": {
+   "pagina": 135,
+   "asunto": "Guion medio correcto 131–142 en Aiken (1985)",
+   "estado": "RESUELTA"
+  },
+  "complementarias": [
+   {
+    "id": "d",
+    "asunto": "Numerales SEQ de rotulos Figura/Tabla en negrita",
+    "resultado": "103/103",
+    "estado": "RESUELTA"
+   },
+   {
+    "id": "e",
+    "asunto": "Cursiva APA en titulo de revista y volumen de Aiken (1985) y Wasswa et al. (2023)",
+    "estado": "RESUELTA"
+   },
+   {
+    "id": "f",
+    "asunto": "Alineación izquierda APA 7 de los 54 párrafos de referencia; 159 páginas conservadas, secuencia de palabras idéntica y desplazamiento vertical máximo 0,000 pt; solo cambia la distribución horizontal en las páginas 135 a 141.",
+    "comprobacion_no_reflujo": "159 paginas; secuencia de palabras identica en las 159 paginas; desplazamiento vertical maximo 0,000 pt; cambios horizontales solo en paginas 135-141",
+    "evidencia_docx": "54/54 parrafos 726-779 con jc both->left; 828 parrafos con texto identico",
+    "estado": "RESUELTA"
+   }
+  ]
+ },
+ "residuales_aceptados_no_corregidos_aqui": [
+  "Figura 6 a 136,5 DPI (sin fuente de mayor resolucion; no se remuestreo)",
+  "Fotografias 49–52 ausentes",
+  "Firmas y coeficientes de los jueces ausentes",
+  "Los datos de prueba no son datos de campo",
+  "Declaracion pendiente de originales",
+  "Figuras 40–41 con datos identificables, pendientes de decision del autor",
+  "ORD-INT-01/02/11 pendientes metodologicos",
+  "QG-5 abierta",
+  "QG-9 abierta"
+ ],
+ "compuertas": {
+  "QG-5": "ABIERTA",
+  "QG-9": "ABIERTA"
+ },
+ "nota": "Este cierre no corrige los residuales listados; quedan registrados para decision del tesista y del jurado.",
+ "copia_pre_alineacion_archivada": {
+  "directorio": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/",
+  "docx": "informe_final_v20_pre_alineacion.docx",
+  "pdf": "informe_final_v20_pre_alineacion.pdf",
+  "docx_sha256": "1f2e4bea8bf0e446ae4b2f151a84ecca67da40d14695a543c8215c0aa416ae73",
+  "pdf_sha256": "ea2f0ddd8128734d90647dd04ecea22829f2fd9881d8a4d05b2c152b1160b850"
+ }
+}

@@ -1,0 +1,7 @@
+{
+  "tablas": {
+    "reorganizar_bloques": [
+      {"tabla": 1, "etiqueta_campo": "Campo", "etiqueta_valor": "Contenido"}
+    ]
+  }
+}

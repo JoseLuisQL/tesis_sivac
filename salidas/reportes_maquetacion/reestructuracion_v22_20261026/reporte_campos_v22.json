@@ -1,0 +1,19 @@
+{
+  "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22.docx",
+  "salida": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\_campos_final.docx",
+  "sha256_origen": "f77bac6d174ed1d4952c912a0bc73cc6ab4c2e7881aa67e67dd4a36b59afcf6f",
+  "sha256_salida": "687af3fef72e3425e893fda05a0516ab12f81edd6c5bb22a470a829f63cb0124",
+  "paginas": 187,
+  "campos_actualizados": 360,
+  "campos_omitidos": 0,
+  "filtro": [
+    "REF",
+    "SEQ",
+    "TOC",
+    "PAGEREF"
+  ],
+  "excepto_instr": [
+    "\\c \"Tabla\"",
+    "\\c \"Figura\""
+  ]
+}

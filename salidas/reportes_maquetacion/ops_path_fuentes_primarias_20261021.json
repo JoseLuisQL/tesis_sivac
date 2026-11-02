@@ -1,0 +1,46 @@
+{
+  "fecha_consulta": "2026-10-21",
+  "responsable": "director-general",
+  "resultado": "anio_de_edicion_2019_verificado_en_fuentes_primarias",
+  "obra": "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos",
+  "autores_institucionales": ["Organización Panamericana de la Salud", "PATH"],
+  "anio": 2019,
+  "fuentes_leidas": [
+    {
+      "url": "https://iris.paho.org/handle/10665.2/50482",
+      "url_actual": "https://iris.paho.org/items/ee16da9a-85e3-425c-9707-0987c40fd538",
+      "metodo": "Navegación y lectura de la página pública mediante Playwright, más consulta de la API pública desde la página",
+      "evidencias": [
+        "Fecha: 2019",
+        "Autores: Pan American Health Organization; PATH",
+        "Archivos: versión española de 108 páginas, versión inglesa de 100 páginas y versión francesa de 108 páginas",
+        "Citación española: Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. Seattle: PATH; Washington, DC: OPS; 2019."
+      ],
+      "api_consultada": "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538",
+      "dc_date_issued": "2019",
+      "isbn_declarados": ["978-92-75-32061-7", "978-92-75-22061-0", "978-92-75-12061-3"],
+      "enlace_pdf_espanol_observado": "https://iris.paho.org/bitstreams/527589dd-1606-4598-b4b6-9dc6d8e01c6b/download",
+      "limite": "La interfaz dinámica no resultó legible con raspado simple; se verificó mediante navegador. La descarga PDF por Firecrawl devolvió HTML, no lectura del PDF completo."
+    },
+    {
+      "url": "https://media.path.org/documents/PATH_IDEA_Precis_Spanish_R1.pdf",
+      "metodo": "You.com contents, lectura íntegra del resumen oficial en español",
+      "evidencias": [
+        "© PATH, Organización Panamericana de la Salud 2019",
+        "Forma de cita propuesta termina: Seattle: PATH; Washington, DC: OPS; 2019.",
+        "Resultados, uso de datos a nivel distrital: Las intervenciones del SIGL, en particular, mejoraron la gestión de las existencias de vacunas."
+      ],
+      "naturaleza": "Resumen Precis, no informe completo; sus páginas no se trasladan a la paginación del informe de 108 páginas."
+    }
+  ],
+  "metadato_discrepante": {
+    "sistema": "Zotero",
+    "item_key": "6VVKK2MV",
+    "fecha_registrada": "2020",
+    "url": null,
+    "adjuntos": 0,
+    "interpretacion": "El registro manual carece de fuente adjunta y discrepa de la edición primaria de 2019.",
+    "accion": "Se documenta la recomendación de corregir el metadato; no se ha modificado la biblioteca externa."
+  },
+  "correccion_autorizada": "Actualizar las dos citas de 2020 en el cuerpo del informe a 2019, conservando las otras dos citas y la referencia que ya dicen 2019; no inventar DOI ni localizadores de página."
+}

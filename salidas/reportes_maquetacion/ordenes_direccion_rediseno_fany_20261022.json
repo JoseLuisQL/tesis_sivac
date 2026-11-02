@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-10-22",
+  "agente": "director-general",
+  "tipo": "órdenes editoriales de supervisión",
+  "nota_de_trazabilidad": "El archivo revision_direccion_rediseno_fany_20261022.json contiene ahora la verificación del snapshot realizada por analista-documental, que lo sobrescribió. Este archivo conserva las órdenes de dirección sin revertir aquella verificación.",
+  "ordenes": [
+    {"id": "RD-01", "accion": "Ubicar la nota de continuación desde D-06 inmediatamente después de D-05 y antes de Entregas, no después de D-04."},
+    {"id": "RD-02", "accion": "Identificar individualmente cierre y continuaciones con código TRAB, fase inicial/final, centro y fecha en blanco. Aclarar continuidad del correlativo real al reimprimir."},
+    {"id": "RD-03", "accion": "Añadir una presentación breve de propósito y confidencialidad con código en A y B, sin alterar los enunciados ni asegurar anonimato absoluto."},
+    {"id": "RD-04", "accion": "Sustituir las expresiones de cálculo en texto plano de la hoja de cierre por instrucciones narrativas equivalentes. No editar fórmulas formales del informe."},
+    {"id": "RD-05", "accion": "Restituir en A y B Código de centro, Investigador y Observaciones del participante (opcional), presentes en ambos PDF previos pero omitidos en el primer rediseño. Conservar los ocho reactivos y el tamaño de letra; preferir una página por cuestionario.", "evidencia": ["PAQUETE_CAMPO_14_20261022/PAQ-TRAB-01/01_PRE/04_CUESTIONARIO_A_PRE.pdf, página 1", "PAQUETE_CAMPO_14_20261022/PAQ-TRAB-01/02_POST/09_CUESTIONARIO_B_POST.pdf, página 1"]}
+  ],
+  "aclaraciones_de_auditoria": [
+    "La regla de concordancia con diferencia autorizada está documentada en guia_campo_contenido_20261022.md:188; no fue creada por este rediseño.",
+    "La ficha previa de auditoría, página 2, ya expresaba los indicadores como proporciones de documentos y entregas y no como suma de dosis.",
+    "El módulo B está correctamente identificado como complementario; PE no se incorpora como séptimo indicador de la VD.",
+    "Los resultados de auditoría del snapshot 09:49 no se atribuyen a versiones posteriores; el cierre exige verificar las correcciones realmente emitidas."
+  ]
+}

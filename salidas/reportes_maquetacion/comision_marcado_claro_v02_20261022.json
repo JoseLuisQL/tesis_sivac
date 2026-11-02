@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-10-22",
+  "tarea": "Sustituir símbolos pequeños de marcado y códigos alfanuméricos crípticos por celdas nativas amplias y etiquetas descriptivas en todos los instrumentos y apoyos.",
+  "fase": "F8",
+  "squad": "Squad E (Redacción y Maquetación)",
+  "subagente": "maquetador-docx",
+  "entradas": ["image copy 2.png", "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02", "scripts/compiladores/paquete_campo_builder.py", "scripts/utilidades/docx_quirurgico.py", "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx"],
+  "salida_esperada": "Actualizar los seis pares DOCX/PDF y sus controles en la misma carpeta v02, con reporte salidas/reportes_maquetacion/marcado_claro_v02_20261022.json y mapa interno de correspondencias.",
+  "restricciones": [
+    "No cambiar enunciados, criterios, tareas, unidades, diseño ni participantes.",
+    "No usar símbolos Unicode de cuadraditos, fuentes especiales ni corchetes como casillas; usar celdas reales vacías con columnas Sí y No.",
+    "Sustituir C1-C8 por nombres comprensibles; los códigos solo permanecen en un mapa interno no impreso.",
+    "Sustituir códigos de filas y reactivos por numeración ordinaria con correspondencia interna; conservar los dieciséis enunciados completos y su orden.",
+    "Mantener los campos de participante, centro, fecha y fase para trazabilidad, con nombres claros y sin prefijos crípticos preimpresos.",
+    "No crear otra carpeta de entrega ni v03; preservar originales, respaldo y logotipos.",
+    "No añadir una certificación humana de validación."
+  ],
+  "criterio_exito": "Celdas de respuesta vacías, delimitadas y amplias en todos los documentos; ausencia de glifos de casilla y códigos crípticos impresos; nombres legibles, reactivos completos y campos preservados; Word/PDF nativos inspeccionados y mapa de correspondencia verificable.",
+  "respaldo_verificado": {
+    "ruta": "salidas/archivo/INSTRUMENTOS_V02_ANTES_MARCADO_CLARO_20261022",
+    "archivos": 38,
+    "sha256_manifiesto": "eefb6e0d07040e8de36d189cbbbe1d9569c012dde01f7769dbfc894e4f3d8046"
+  },
+  "decisiones": [
+    "Auditoría documental: matriz por pares de documentos con columnas de aspecto descriptivo y grupos Sí/No; veredicto y causa por documento.",
+    "Tiempos: grupos Pausa y Válida con columnas Sí/No; tareas numeradas ordinariamente.",
+    "Entregas: grupo Concordancia con columnas Sí/No y números simples de entrega.",
+    "Cuestionarios: enunciados literales numerados de 1 a 8; anclajes Likert y celdas vacías conservados.",
+    "Apoyos: remisiones por título y nombres de criterios en vez de siglas internas; identificación constante para medición inicial y final."
+  ],
+  "supervision_del_candidato": {
+    "inspeccion": "Dirección revisó las primeras páginas candidatas de tiempos y auditoría: el marcado en celdas y los nombres descriptivos son legibles.",
+    "correccion_de_paginacion": "La tabla de veredicto de los documentos 1 y 2 no puede quedar sola en otra página. Debe permanecer con la matriz de aspectos de esos mismos documentos, recuperando espacio de instrucciones duplicadas y metadatos, sin reducir respuesta o fuente."
+  },
+  "cierre": {
+    "reporte_direccion": "salidas/reportes_maquetacion/cierre_marcado_claro_v02_20261022.json",
+    "archivos_cotejados": 12,
+    "discrepancias": 0,
+    "enunciados_completos_conservados": 16,
+    "matrices_con_nombres": 5,
+    "celdas_binarias_vacias_comprobadas": 160,
+    "conjunto_paginas": 6,
+    "apoyos_paginas": 7,
+    "paginacion": "Evaluación y veredicto del mismo par permanecen juntos, sin la página huérfana detectada en el candidato."
+  },
+  "estado": "publicado_y_cotejado_para_revision_del_tesista"
+}

@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "analista-documental",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "Squad E",
+    "tarea": "Diseno de instrumentos de Fany en la hoja 68: desambiguacion folio impreso vs pagina fisica y pautas aplicables a SIVAC",
+    "insumo": "Fany_Tesis_Bachiller_2024.pdf, modelo UNAJMA 2024 en la carpeta de modelos de tesis (solo lectura)",
+    "modo": "inspeccion de solo lectura; sin builder, sin edicion de formularios SIVAC"
+  },
+  "desambiguacion_paginas": {
+    "regla_de_mapeo": "folio_impreso = pagina_fisica_pdf - 13 (comprobada en el tramo PDF 74-90)",
+    "evidencia": [
+      "PDF 75 imprime 62; PDF 80 imprime 67; PDF 81 imprime 68; PDF 82 imprime 69; PDF 83 imprime 70.",
+      "PDF 68-69, leidos antes por el Director, imprimen 55 y 56 (recomendaciones y bibliografia): no contienen instrumentos.",
+      "El instrumento arranca en el folio 68 con el rotulo 'Anexo 3. Instrumento de recojo de datos' y termina en el folio 70 con 'Nota. Elaboracion propia.'"
+    ],
+    "pagina_referida_por_el_tesista": {
+      "folio_impreso": 68,
+      "pagina_fisica_pdf": 81,
+      "titulo": "Anexo 3. Instrumento de recojo de datos",
+      "continua_en": [
+        {"folio": 69, "pdf": 82, "contenido": "reactivos 8 a 16; inicio de la tabla de la variable dependiente"},
+        {"folio": 70, "pdf": 83, "contenido": "reactivos 17 a 20; cierre con Nota. Elaboracion propia."}
+      ]
+    },
+    "contexto_anexo_2": {
+      "folios": "62-67",
+      "pdf": "75-80",
+      "hallazgo": "El Anexo 2 (instrumento de validacion) esta insertado como imagen rasterizada, sin capa de texto: el PDF 80 muestra la hoja diligenciada a mano con sello y firma. No sirve como fuente tipografica ni como texto reutilizable."
+    },
+    "imagenes_generadas": [
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/fany_pdf-080.png",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/fany_pdf-081.png",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/fany_pdf-082.png",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/fany_pdf-083.png",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/sivac_actual/ficha01-1.png",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/sivac_actual/ficha02-1.png",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/fany_p68_rediseno_20261022/sivac_actual/cuestionarioA-1.png"
+    ]
+  },
+  "geometria_medida_fany": {
+    "pagina": {"formato": "A4", "ancho_pt": 595.32, "alto_pt": 841.92},
+    "bloque_de_texto": {"x0_pt": 85.1, "x1_pt": 510.3, "ancho_pt": 425.2, "ancho_cm": 15.0, "margen_izquierdo_cm": 3.0, "margen_derecho_cm": 3.0},
+    "tabla_nomenclatura_likert": {
+      "bbox_pt": [130.1, 159.0, 465.2, 245.4],
+      "ancho_pt": 335.1, "ancho_cm": 11.82, "alto_pt": 86.4, "alto_cm": 3.05,
+      "centrado": "margen izquierdo y derecho iguales (130.1 pt)",
+      "filas_pt": [15.0, 15.0, 25.0, 15.4],
+      "estructura": "banda ESCALA DE MEDICION - LIKERT / Nomenclatura / cinco etiquetas / Valoracion / valores 1-5"
+    },
+    "tabla_principal_reactivos": {
+      "bbox_pt": [63.7, 277.2, 545.9, 725.9],
+      "ancho_pt": 482.2, "ancho_cm": 17.01, "alto_pdf81_pt": 448.7,
+      "desborde_izquierdo_pt": 21.4, "desborde_izquierdo_cm": 0.76,
+      "desborde_derecho_pt": 35.6, "desborde_derecho_cm": 1.26,
+      "diagnostico": "La tabla excede el bloque de texto en 2.02 cm y reduce el margen de empastado a 2.24 cm; no debe replicarse.",
+      "rejilla": "completa, con reglas verticales y horizontales; 311 rectangulos de borde en PDF 81 y 336 en PDF 82",
+      "linewidth_registrado_pt": 0,
+      "relleno": "sin sombreado: unico color 0.0 (negro); encabezados diferenciados solo por negrita",
+      "filas_cabecera_pt": 15.0,
+      "filas_etiqueta_dimension_pt": 25.0,
+      "columnas_aprox_pt": {"nro": 30, "enunciado": 250, "casillas_1_a_5": "33-35 cada una"},
+      "casillas_de_marcado": "vacias, sin glifos ni corchetes"
+    },
+    "pie_y_folio": {
+      "texto": "68 / 69 / 70",
+      "x0_pt": 499.2, "top_pt": 795.3,
+      "ubicacion": "inferior derecho, dentro del margen inferior (1.64 cm del borde)",
+      "desviacion_unayma": "el cuerpo de tesis UNAJMA lleva folio arabigo en esquina superior derecha; Fany usa inferior derecho"
+    },
+    "interlineado": {
+      "parrafo_introductorio_pt": 19.0,
+      "interlineado_equivalente": "1.5 aprox. para Arial 11 pt",
+      "parrafo_introductorio_sangria_pt": 35.4,
+      "parrafo_introductorio_sangria_cm": 1.25,
+      "parrafo_introductorio_alineacion": "justificado",
+      "dentro_de_celdas_pt": 15.0,
+      "dentro_de_celdas_equivalente": "simple o 1.15"
+    }
+  },
+  "tipografia_fany": {
+    "cuerpo_y_tablas": "ArialMT 11 pt",
+    "rotulos": "Arial-BoldMT 11 pt",
+    "cursivas": "Arial-ItalicMT 11 pt (solo Nota)",
+    "conteo_pdf81": {"ArialMT": 1603, "Arial-BoldMT": 192, "Arial-ItalicMT": 5, "Calibri": 3},
+    "diagnostico": "Todo el anexo es Arial 11, incluida la tabla. No coincide con Times New Roman 12 pt ni con celdas de 10 pt de la norma SIVAC-UNAJMA."
+  },
+  "estructura_y_jerarquia_fany": {
+    "niveles": [
+      "1. Rotulo de anexo: Anexo 3. Instrumento de recojo de datos, negrita 11 pt, sin numeracion de capitulo.",
+      "2. Parrafo introductorio: 3 lineas, justificado, con sangria de primera linea, que declara objetivo, numero de preguntas y anonimato.",
+      "3. Leyenda de escala: tabla centrada de 11.82 cm con etiquetas y valores.",
+      "4. Banda de variable: fila combinada a todo el ancho, mayusculas negrita centrada.",
+      "5. Banda de dimension: fila combinada a todo el ancho, negrita centrada.",
+      "6. Cabecera de columnas: Nro. y Escala de medicion con subfila 1-5.",
+      "7. Reactivos numerados 1-20 en columna angosta."
+    ],
+    "repeticion_de_cabecera": "La cabecera Escala de medicion / 1 2 3 4 5 se repite en cada bloque de dimension; la cabecera de columnas no se repite al cambiar de pagina.",
+    "defectos_de_paginacion": [
+      "PDF 82 (folio 69) inicia con el reactivo 8 sin fila de cabecera: fila huerfana sin etiquetas de columna.",
+      "PDF 83 (folio 70) corta la tabla de la variable dependiente: la banda Dimension 2: Presupuesto queda en la pagina siguiente, separada del rotulo de variable.",
+      "El folio 70 queda vacio en mas del 60 por ciento de su altura."
+    ],
+    "instrucciones": "Una sola instruccion para 20 reactivos de dos variables; no distingue secciones ni tiempos. Declara caracter anonimo pese a no recoger ningun codigo de participante.",
+    "trazabilidad": "Sin codigo de participante, centro, fecha, fase ni investigador: no permite emparejar pretest y postest."
+  },
+  "comparativa_con_sivac_actual": {
+    "documentos_revisados": [
+      "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/PAQ-TRAB-01/01_PRE/02_FICHA_01_TIEMPOS_PRE.pdf",
+      "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/PAQ-TRAB-01/01_PRE/03_FICHA_02_AUDITORIA_PRE.pdf",
+      "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/PAQ-TRAB-01/01_PRE/04_CUESTIONARIO_A_PRE.pdf"
+    ],
+    "medidas_sivac": {
+      "bloque_de_texto_pt": [85.1, 527.6],
+      "margen_izquierdo_cm": 3.0,
+      "margen_derecho_cm": 2.39,
+      "tablas_pt": [82.3, 523.0],
+      "ancho_tabla_cm": 15.55,
+      "fuentes": "Times New Roman 12 pt en cuerpo, 10 pt en celdas, 9.5 pt en notas y protocolo, 11 pt italica en subtitulo",
+      "rejilla": "visible, sin sombreado",
+      "cuestionario_A": "1 pagina, tabla de 7 columnas por 11 filas, casillas con corchetes literales",
+      "ficha_01": "2 paginas; la pagina 2 abre con Cierre de la ficha sin nombre del formulario ni codigo de participante",
+      "ficha_02": "2 paginas; tabla principal de 13 columnas por 13 filas"
+    },
+    "coincidencias": [
+      "Rejilla visible con reglas verticales y horizontales, sin sombreado: robusta en fotocopia y blanco y negro.",
+      "Columna de codigo de reactivo a la izquierda y columna unica de enunciado.",
+      "Bandas de indicador o dimension combinadas a todo el ancho."
+    ],
+    "diferencias_observadas": [
+      "SIVAC respeta el ancho imprimible; Fany lo excede en 2.02 cm.",
+      "SIVAC usa Times New Roman; Fany usa Arial 11.",
+      "SIVAC agrega bloque de metadatos y fase; Fany no identifica al participante.",
+      "SIVAC separa Ficha 01, Ficha 02, Cuestionario A y B por constructo y momento; Fany mezcla variable independiente y dependiente en un solo instrumento.",
+      "En el Cuestionario A las casillas llevan corchetes escritos que compiten con la rejilla; Fany deja la celda vacia.",
+      "La leyenda de escala SIVAC separa etiquetas y numeros: la tabla de etiquetas no lleva valor numerico y los numeros solo aparecen en la cabecera de la tabla de reactivos.",
+      "La leyenda SIVAC ocupa 15.55 cm de ancho y 1.24 cm de alto; la de Fany 11.82 cm y 3.05 cm, con etiqueta y valor en la misma columna.",
+      "SIVAC no repite cabecera de columnas por bloque; si una tabla se parte, el encuestado puede quedar sin etiquetas 1-5."
+    ]
+  },
+  "pautas_editoriales_aplicables": [
+    {"id": "P-01", "pauta": "Conservar la rejilla completa visible en los formatos de campo, aunque no sea APA 7 de tres lineas: es un formulario de captura, no una tabla de resultados del cuerpo.", "fundamento": "Fany y SIVAC ya usan rejilla; las casillas delimitan la marca manual y la transcripcion.", "aplicacion": "Mantener en Ficha 01, Ficha 02 y Cuestionarios; rotularlos como formato de campo o anexo, nunca como Tabla N del cuerpo."},
+    {"id": "P-02", "pauta": "Ancho maximo de tabla 8788 dxa (15.5 cm); nunca replicar los 17.01 cm de Fany.", "fundamento": "El desborde de Fany reduce el margen de empastado a 2.24 cm e incumple el margen izquierdo de 3.0 cm.", "aplicacion": "Reparto sugerido: Nro 700 dxa, enunciado 4588 dxa, cinco casillas de 700 dxa (total 8788 dxa)."},
+    {"id": "P-03", "pauta": "Cabecera de columnas con repeticion nativa en cada pagina y filas no fragmentables.", "fundamento": "El folio 69 de Fany abre con el reactivo 8 sin etiquetas de columna.", "aplicacion": "Aplicar tblHeader a la fila de cabecera y cantSplit a todas las filas; mantener la banda de dimension unida al primer reactivo."},
+    {"id": "P-04", "pauta": "Repetir la microcabecera 1-5 al inicio de cada bloque de dimension o indicador.", "fundamento": "Fany la repite por dimension y evita que el encuestado pierda la referencia de la escala.", "aplicacion": "Fila compacta de 15 pt con los valores 1 a 5 sobre las casillas, aun cuando la tabla continue en la misma pagina."},
+    {"id": "P-05", "pauta": "Unificar etiqueta y valor numerico en una sola leyenda de escala.", "fundamento": "Fany apila etiqueta y valor en la misma columna; SIVAC hoy obliga a cruzar dos tablas.", "aplicacion": "Tabla de dos filas por cinco columnas: etiqueta de 9 pt y valor de 10 pt en negrita; ancho 6700 dxa centrado o 8788 dxa si se requiere."},
+    {"id": "P-06", "pauta": "Casillas de marcado vacias, sin corchetes literales.", "fundamento": "La rejilla ya dibuja el recuadro; el glifo duplica el borde, se desalinea al justificar y ensucia la fotocopia.", "aplicacion": "Eliminar en Cuestionario A y B; dejar la celda en blanco con alto minimo de 454 dxa (0.8 cm)."},
+    {"id": "P-07", "pauta": "Enunciados alineados a la izquierda con margen derecho irregular, no justificados dentro de la celda.", "fundamento": "Fany justifica textos de dos a cuatro lineas en columna angosta y produce separaciones desparejas.", "aplicacion": "Aplicar alineacion izquierda en la columna de enunciado; reservar el justificado para la instruccion general."},
+    {"id": "P-08", "pauta": "Instruccion al encuestado breve: proposito, numero de reactivos, tiempo estimado y confidencialidad; el protocolo largo va en la guia.", "fundamento": "Fany resuelve la instruccion en tres lineas; SIVAC acumula protocolo y notas en la carilla del participante.", "aplicacion": "Maximo cuatro lineas justificadas con sangria de 720 dxa; las reglas de medicion permanecen en la guia de campo."},
+    {"id": "P-09", "pauta": "Identificacion en cada pagina suelta: codigo de formulario, codigo de participante y Pagina X de Y.", "fundamento": "La pagina 2 de la Ficha 01 solo lleva Paquete TRAB-01 - Fase PRE; no dice que formulario es ni a quien pertenece.", "aplicacion": "Encabezado de 9 pt con Ficha 01 - TRAB-01 - Fase PRE y pie con Pagina X de Y; conservar el bloque de metadatos de la pagina 1."},
+    {"id": "P-10", "pauta": "Mantener la separacion por constructo y momento; no fusionar variable independiente y dependiente en un solo cuestionario.", "fundamento": "Fany mezcla 12 reactivos de la VI y 8 de la VD con una sola instruccion y una unica declaracion de anonimato.", "aplicacion": "Conservar Ficha 01, Ficha 02, Cuestionario A y Cuestionario B como documentos independientes y emparejables."},
+    {"id": "P-11", "pauta": "Declarar confidencialidad con codigo, no anonimato.", "fundamento": "Los instrumentos SIVAC se emparejan pretest-postest mediante codigo, por lo que no son anonimos en sentido estricto.", "aplicacion": "Redactar la informacion es confidencial y se identifica solo con un codigo en lugar de caracter anonimo."}
+  ],
+  "no_debe_copiarse": [
+    "Ancho de tabla de 17.01 cm y desborde del bloque de texto.",
+    "Arial 11 pt como tipografia del instrumento.",
+    "Folio arabigo inferior derecho aislado, sin total de paginas, heredado de un cuerpo de tesis con paginacion distinta a la UNAJMA.",
+    "Ausencia de codigo de participante, fecha, centro y fase.",
+    "Declaracion de anonimato sin identificacion.",
+    "Fila huerfana sin cabecera al inicio de pagina y pagina de cierre con 60 por ciento en blanco.",
+    "Condicion incrustada en cada reactivo del tipo sin el sistema / tras la implantacion: SIVAC ya separa versiones PRE y POST.",
+    "Enunciados justificados en columna angosta.",
+    "Nota de elaboracion propia intercalada en un formulario de campo, dos veces en tres paginas."
+  ],
+  "operacionalizacion_ajena": {
+    "advertencia": "No se transcriben ni se reutilizan dimensiones, indicadores ni redacciones de Fany. Las tres dimensiones y los seis indicadores de SIVAC permanecen los de DEC-007; este analisis solo describe geometria, jerarquia y mecanica de captura."
+  },
+  "pendientes_verificar": [
+    "[VERIFICAR] Confirmar con el tesista que hoja 68 designa el folio impreso 68 (PDF 81), no la pagina fisica 68 (folio 55).",
+    "[VERIFICAR] Decidir si el pie de los formatos usara Pagina X de Y o solo Pagina X, para no confundirlo con la paginacion del cuerpo de la tesis.",
+    "[VERIFICAR] Decidir si la leyenda de escala se mantiene a 15.55 cm o se compacta a 6700 dxa centrados.",
+    "[VERIFICAR] Confirmar que la rejilla visible de los formatos de campo queda exceptuada de la regla APA 7 de tres lineas, por tratarse de instrumentos y no de tablas de resultados."
+  ],
+  "restricciones_respetadas": [
+    "Cero escrituras en la carpeta de modelos de tesis de la UNAJMA.",
+    "Sin ejecucion de builders ni modificacion de los formularios del paquete de campo.",
+    "Sin redaccion de reactivos nuevos ni copia de tema, nombres, logotipo o autoria de Fany.",
+    "Analisis acotado a PDF 80-83 y a las paginas 1-2 de tres instrumentos SIVAC; no se releyeron las 106 paginas."
+  ]
+}
+

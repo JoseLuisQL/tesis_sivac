@@ -1,0 +1,388 @@
+{
+ "tablas": [
+  {
+   "src": 0,
+   "dst": 55,
+   "tabla": 52,
+   "dim_src": [
+    17,
+    4
+   ],
+   "dim_dst": [
+    17,
+    4
+   ],
+   "cab": [
+    "ID",
+    "Nombre del requerimiento"
+   ]
+  },
+  {
+   "src": 1,
+   "dst": 56,
+   "tabla": 53,
+   "dim_src": [
+    9,
+    3
+   ],
+   "dim_dst": [
+    9,
+    3
+   ],
+   "cab": [
+    "ID",
+    "Requerimiento"
+   ]
+  },
+  {
+   "src": 2,
+   "dst": 57,
+   "tabla": 54,
+   "dim_src": [
+    17,
+    4
+   ],
+   "dim_dst": [
+    17,
+    4
+   ],
+   "cab": [
+    "Funcionalidad / Módulo del Sistema",
+    "Resp. Acopio / Operador"
+   ]
+  },
+  {
+   "src": 3,
+   "dst": 58,
+   "tabla": 55,
+   "dim_src": [
+    13,
+    5
+   ],
+   "dim_dst": [
+    13,
+    5
+   ],
+   "cab": [
+    "ID",
+    "Historia de usuario"
+   ]
+  },
+  {
+   "src": 4,
+   "dst": 25,
+   "tabla": 22,
+   "dim_src": [
+    5,
+    4
+   ],
+   "dim_dst": [
+    5,
+    4
+   ],
+   "cab": [
+    "HU-01",
+    "Iniciar sesión en el sistema con control de ámbito RBAC"
+   ]
+  },
+  {
+   "src": 5,
+   "dst": 26,
+   "tabla": 23,
+   "dim_src": [
+    5,
+    4
+   ],
+   "dim_dst": [
+    5,
+    4
+   ],
+   "cab": [
+    "HU-04",
+    "Registrar lotes biológicos y controlar vencimientos bajo criterio FEFO"
+   ]
+  },
+  {
+   "src": 6,
+   "dst": 27,
+   "tabla": 24,
+   "dim_src": [
+    5,
+    4
+   ],
+   "dim_dst": [
+    5,
+    4
+   ],
+   "cab": [
+    "HU-06",
+    "Registrar movimientos mensuales y sincronizar saldos automáticamente"
+   ]
+  },
+  {
+   "src": 7,
+   "dst": 28,
+   "tabla": 25,
+   "dim_src": [
+    5,
+    4
+   ],
+   "dim_dst": [
+    5,
+    4
+   ],
+   "cab": [
+    "HU-09",
+    "Importar formato ICI-DEMID y calcular Meses de Stock Disponible (MSD)"
+   ]
+  },
+  {
+   "src": 8,
+   "dst": 29,
+   "tabla": 26,
+   "dim_src": [
+    5,
+    4
+   ],
+   "dim_dst": [
+    5,
+    4
+   ],
+   "cab": [
+    "HU-12",
+    "Gestionar usuarios, matriz de permisos RBAC y reportes corporativos"
+   ]
+  },
+  {
+   "src": 9,
+   "dst": null,
+   "tabla": null,
+   "dim_src": [
+    6,
+    3
+   ],
+   "cab": [
+    "Iteración",
+    "Historias asignadas"
+   ]
+  },
+  {
+   "src": 10,
+   "dst": 32,
+   "tabla": 29,
+   "dim_src": [
+    12,
+    2
+   ],
+   "dim_dst": [
+    12,
+    2
+   ],
+   "cab": [
+    "Tipo enumerado (Prisma / PostgreSQL)",
+    "Valores permitidos en el esquema"
+   ]
+  },
+  {
+   "src": 11,
+   "dst": 59,
+   "tabla": 56,
+   "dim_src": [
+    12,
+    4
+   ],
+   "dim_dst": [
+    12,
+    4
+   ],
+   "cab": [
+    "Atributo",
+    "Tipo de dato"
+   ]
+  },
+  {
+   "src": 12,
+   "dst": 60,
+   "tabla": 57,
+   "dim_src": [
+    12,
+    4
+   ],
+   "dim_dst": [
+    12,
+    4
+   ],
+   "cab": [
+    "Atributo",
+    "Tipo de dato"
+   ]
+  },
+  {
+   "src": 13,
+   "dst": 61,
+   "tabla": 58,
+   "dim_src": [
+    10,
+    4
+   ],
+   "dim_dst": [
+    10,
+    4
+   ],
+   "cab": [
+    "Atributo",
+    "Tipo de dato"
+   ]
+  },
+  {
+   "src": 14,
+   "dst": 48,
+   "tabla": 45,
+   "dim_src": [
+    12,
+    4
+   ],
+   "dim_dst": [
+    12,
+    4
+   ],
+   "cab": [
+    "Tabla origen",
+    "Columna FK"
+   ]
+  },
+  {
+   "src": 15,
+   "dst": null,
+   "tabla": null,
+   "dim_src": [
+    10,
+    3
+   ],
+   "cab": [
+    "Capa / Ámbito",
+    "Tecnología (versión)"
+   ]
+  },
+  {
+   "src": 23,
+   "dst": 71,
+   "tabla": 68,
+   "dim_src": [
+    13,
+    3
+   ],
+   "dim_dst": [
+    13,
+    3
+   ],
+   "cab": [
+    "Conjunto de pruebas (Suite Jest)",
+    "Casos"
+   ]
+  },
+  {
+   "src": 24,
+   "dst": 51,
+   "tabla": 48,
+   "dim_src": [
+    9,
+    3
+   ],
+   "dim_dst": [
+    9,
+    3
+   ],
+   "cab": [
+    "Escenario de prueba sobre la API REST",
+    "Resultado esperado"
+   ]
+  },
+  {
+   "src": 25,
+   "dst": 52,
+   "tabla": 49,
+   "dim_src": [
+    8,
+    4
+   ],
+   "dim_dst": [
+    8,
+    4
+   ],
+   "cab": [
+    "HU",
+    "Escenario de aceptación validado"
+   ]
+  }
+ ],
+ "parrafos": {
+  "total": 65,
+  "presentes": 2,
+  "faltantes": [
+   "Para la construcción del Sistema de Gestión y Control de Vacunas y Jeringas (SIV",
+   "El sistema SIVAC integra las reglas de negocio de la Estrategia Sanitaria Nacion",
+   "Nota. Elaboración propia adaptada de los principios de Extreme Programming (Beck",
+   "En la fase de planificación se establecieron los requerimientos funcionales, los",
+   "Los requerimientos funcionales especifican las capacidades operativas y reglas d",
+   "Los requerimientos no funcionales definen los atributos de calidad, seguridad, r",
+   "El sistema SIVAC define cuatro perfiles operativos alineados con la estructura o",
+   "Siguiendo la disciplina de Extreme Programming (XP), los requerimientos funciona",
+   "A continuación se especifican en detalle las cinco historias de usuario más repr",
+   "El desarrollo del sistema SIVAC se organizó en cinco iteraciones incrementales d",
+   "El diagrama de casos de uso general modela las interacciones entre los actores o",
+   "Siguiendo el principio de «diseño simple» de Extreme Programming (XP), la arquit",
+   "La arquitectura del sistema organiza el software en subsistemas y componentes co",
+   "Un principio rector gobierna toda la arquitectura de SIVAC: el servidor constitu",
+   "Los diagramas de actividad y de secuencia permiten especificar con rigor algorít",
+   "De manera complementaria, la Figura 6 representa mediante un diagrama de activid",
+   "La Figura 7 presenta el diagrama de secuencia UML de la autenticación con JWT y ",
+   "Nota. Elaboración propia. Se observa la validación del hash de contraseña, la ca",
+   "Asimismo, la Figura 8 muestra el diagrama de secuencia del registro de una entre",
+   "Para la persistencia de datos se diseñó e implementó una base de datos relaciona",
+   "El modelo conceptual representa a alto nivel las entidades fundamentales del dom",
+   "El modelo lógico traduce las entidades conceptuales a un esquema relacional norm",
+   "El modelo físico detalla la implementación concreta del esquema en PostgreSQL 16",
+   "El esquema de base de datos define 11 tipos enumerados nativos en PostgreSQL que",
+   "El diccionario de datos especifica la estructura detallada de cada tabla, descri",
+   "La Tabla 15 sintetiza las principales relaciones de integridad referencial (llav",
+   "La fase de codificación se ejecutó aplicando las prácticas esenciales de Extreme",
+   "El sistema SIVAC implementa una arquitectura cliente-servidor desacoplada dentro",
+   "La organización del código fuente del backend sigue una arquitectura limpia por ",
+   "Por su parte, el frontend está estructurado de forma modular por dominios funcio",
+   "A continuación se presentan cuatro fragmentos representativos del código fuente ",
+   "La Figura 15 muestra la implementación de AlertaAutomaticaService.ts, que inspec",
+   "La Figura 16 presenta el middleware de autenticación JWT (authenticate en backen",
+   "La Figura 17 ilustra el algoritmo de consolidación mensual y cálculo del indicad",
+   "Como resultado de la fase de codificación se construyeron las interfaces de usua",
+   "La Figura 19 presenta el panel de control ejecutivo (Dashboard PAI), donde los c",
+   "Nota. Elaboración propia. Integra los indicadores clave (KPIs), curva comparativ",
+   "La Figura 20 expone el módulo de Inventario en la vista de Lotes de Vacunas (/in",
+   "La Figura 21 presenta el módulo de Movimientos Mensuales (/movimientos), donde s",
+   "Nota. Elaboración propia. Matriz contable mensual por establecimiento de salud c",
+   "La Figura 22 muestra el módulo de Planificación Anual PAI (/planificacion), que ",
+   "Nota. Elaboración propia. Matriz de programación mensual (enero a diciembre) por",
+   "La Figura 23 presenta el módulo ICI-DEMID (/ici-demid), donde se consolidan las ",
+   "Nota. Elaboración propia. Matriz consolidada ICI-DEMID con distribución mensual,",
+   "La Figura 24 muestra el módulo de Kardex de Movimientos (/kardex), que registra ",
+   "Nota. Elaboración propia. Libro auditable de movimientos por lote con filtros po",
+   "Finalmente, la Figura 25 presenta el módulo de administración de Usuarios, Roles",
+   "Nota. Elaboración propia. Directorio de cuentas institucionales de la DISA Apurí",
+   "Nota. Elaboración propia. Bandeja de triaje operativo de alertas clasificadas po",
+   "La metodología Extreme Programming (XP) exige la validación continua del softwar",
+   "Las pruebas unitarias y de integración del backend se desarrollaron con el frame",
+   "El fragmento de código de la Figura 27 muestra una prueba unitaria representativ",
+   "Las pruebas de API evalúan el comportamiento de los endpoints HTTP del backend a",
+   "Las pruebas de aceptación validaron junto con los usuarios responsables de la ca",
+   "La fase de despliegue comprende la puesta en producción del sistema SIVAC una ve",
+   "Nota. Elaboración propia. Se detallan los nodos clientes (escritorio y móvil) y ",
+   "Entornos contenerizados (Docker): aislamiento de los servicios de aplicación, ba",
+   "Despliegue del backend (sivac-backend): compilación del código TypeScript a Java",
+   "Despliegue del frontend SPA y Proxy Nginx: empaquetado de producción generado co",
+   "Respaldo automatizado de base de datos (syncova-pgdump): contenedor especializad",
+   "Seguridad en producción: inyección estricta de secretos criptográficos (JWT_SECR",
+   "El uso de scripts automatizados de verificación e integridad de datos (verify-da",
+   "Centro Nacional de Abastecimiento de Recursos Estratégicos en Salud [CENARES]. ("
+  ]
+ }
+}

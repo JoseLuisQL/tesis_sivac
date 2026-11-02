@@ -1,0 +1,95 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v12.docx",
+    "documento_base_sha256": null,
+    "nota_sha256": "No calculable desde este subagente, que carece de interprete de comandos. Debe aportarlo el orquestador con Get-FileHash antes de la aplicacion, para dejar constancia de la base exacta sobre la que se ensayo.",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "squad": "Squad B",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Uniformar las comillas tipograficas del informe final: sustituir las cuatro comillas rectas residuales por los glifos U+201C y U+201D, y dictaminar sobre los cuatro defectos de acabado restantes medidos en la version 12.",
+    "convencion": "Comillas tipograficas dobles de apertura (U+201C) y cierre (U+201D). En espanol y en ingles los puntos de codigo son los mismos; el ABSTRACT no requiere glifos distintos. No se emiten ordenes para comillas simples ni para apostrofes, porque el barrido no detecto ninguno en prosa.",
+    "convencion_indices": "indice_docx en base 0 sobre document.paragraphs. Todas las ordenes son de parrafo; ninguna toca tablas.",
+    "anclas": "Las anclas son literales y unicas. En P12 se emiten dos ordenes puntuales sobre los delimitadores, y no una sobre el titulo completo, para que la sustitucion no dependa de la literalidad integra del titulo oficial ni de su particion en runs; cada orden arrastra el contexto inmediato necesario para ser unica. La orden de anidamiento se ejecuta en primer lugar, porque su ancla contiene la comilla recta de apertura que la primera orden convierte en tipografica; las tres restantes son disjuntas entre si.",
+    "orden_de_ejecucion": "1) anidamiento interno de P12; 2) apertura del titulo en P12; 3) cierre del titulo en P12; 4) ABSTRACT en P142. El aplicador respeta el orden del arreglo. Las ordenes 1 a 3 pueden aplicarse en ese unico orden; invertir la primera con la segunda haria fallar la de anidamiento sin propagar dano.",
+    "total_ordenes": 4,
+    "total_sustituciones": 4,
+    "mediciones_y_dictamen": {
+      "comillas_rectas": {
+        "medido": 4,
+        "halladas_tipograficas": 50,
+        "dictamen": "Las cuatro son defecto. Dos en P12, que son los delimitadores del titulo oficial en el numeral 1 de la declaracion jurada, y dos en P142, que abrazan el nombre del sistema en el ABSTRACT. La inconsistencia de P142 es interna y comprobada: el RESUMEN equivalente (P139) ya usa comillas tipograficas en el mismo sintagma. Se emiten cuatro ordenes: tres que cubren las cuatro comillas rectas y una cuarta que resuelve el anidamiento de P12.",
+        "observacion_de_anidamiento": "RESUELTA por decision del Director General. Una vez delimitado el titulo con comillas dobles tipograficas, el nombre del sistema queda dentro de ellas, y la practica editorial espanola resuelve ese caso con comillas simples internas (U+2018 y U+2019). No es una convencion distinta sino la misma regla aplicada al caso anidado, y el titulo oficial no se altera: el nombre del sistema sigue siendo SIVAC y solo cambia el nivel de comilla que lo delimita.",
+        "alcance_del_anidamiento": "La comilla simple se aplica unicamente en P12, donde el titulo esta entrecomillado. En la portada (P3) el mismo sintagma aparece sin comillas que delimiten el titulo, de modo que “SIVAC” es alli una mencion simple en comillas dobles y se conserva; lo mismo vale para el RESUMEN, el ABSTRACT, el CHUMASQA y el cuerpo, donde no hay anidamiento.",
+        "verificacion_de_unicidad": "La cadena desnuda 'SISTEMA “SIVAC” PARA' NO es unica: aparece dos veces en el documento, en la portada (P3) y en el numeral 1 de la declaracion jurada (P12). Por eso el ancla se acota a la izquierda con la formula introductoria 'La tesis titulada: ' y la comilla recta de apertura, que solo existen en P12. Asi acotada, la ocurrencia es unica y la orden no alcanza la portada."
+      },
+      "ampersand_entre_autores": {
+        "medido": 3,
+        "ubicaciones": "P650 (George & Mallery; Hernandez-Sampieri & Mendoza) y P677 (Razali & Wah)",
+        "dictamen": "Confirmado: ya estan cubiertos y no se duplican. referencias_v09_ordenes.json contiene una orden para P650 cuyo ancla abarca las dos ocurrencias y cuyo texto de reemplazo las convierte en 'y' ('(George y Mallery, 2003; Hernandez-Sampieri y Mendoza, 2018)'), y dos ordenes para P677: 'Shapiro-Wilk (1965)' por 'Shapiro y Wilk (1965)' y 'Razali & Wah, 2011' por 'Razali y Wah, 2011'. Las tres anclas son literales y coinciden con el texto del cuerpo. No se emite orden nueva.",
+        "excepcion_intocable": "El ampersand del nombre propio de la revista (Obstetrics & Gynecology) no es un conector entre autores y debe permanecer literal en la lista de referencias."
+      },
+      "doble_espacio": {
+        "medido": 40,
+        "dictamen": "Ninguno es defecto real de espaciado interpalabra. Los de P591 a P638 pertenecen a la sangria de las once ecuaciones numeradas, construida con doble tabulador para centrar la formula y alinear su numero correlativo; es sangria de ecuacion, no separacion entre palabras, y sustituirla por un espacio simple desplomaria la numeracion. El de P677 es el salto previo a la vineta de la hipotesis nula dentro del apartado de planteamiento de hipotesis estadisticas. No se emite orden. Si el maquetador desea sustituir esa sangria por tabulaciones reales o por una lista, es una intervencion de formato de parrafo, no una sustitucion de caracteres, y queda fuera de este expediente."
+      },
+      "parentesis_vacio": {
+        "medido": 1,
+        "ubicacion": "P470",
+        "dictamen": "Falso positivo confirmado. El par corresponde a la invocacion de la funcion calcularIndicadoresDisponibilidad() en el codigo fuente citado. El identificador es intocable por la restriccion expresa de la comision y porque una llamada sin argumentos es sintacticamente correcta. Sin accion."
+      },
+      "punto_seguido_de_minuscula": {
+        "medido": 28,
+        "dictamen": "Falsos positivos confirmados. El patron '. x' se activa sobre decimales sin cero inicial y sobre abreviaturas de la notacion estadistica y normativa (p = .001, alfa = .05, r >= .50, N.° de norma, et al.), donde el punto no cierra una oracion y el token siguiente no inicia una frase. Ninguna ocurrencia corresponde a una frontera oracional real. Sin accion; si apareciera una fuera de contexto matematico, corresponderia a una orden puntual y no a una normalizacion masiva."
+      }
+    },
+    "colisiones": {
+      "notacion_matematica_v11": "Sin colision. Las 29 ordenes de ese expediente actuan sobre P284, P620, P623, P637, P639, P652, P677, P679, P681, P685 a P689, P691, P693, P695, P697 a P699, P701 y las tablas 14, 34 y 44. Este expediente actua solo sobre P12 y P142.",
+      "rosenthal_v10_y_wilcoxon_p_v11": "Sin colision: ninguno alcanza los preliminares ni el ABSTRACT.",
+      "correccion_estructural_v12": "Sin colision: no contiene ordenes sobre P12 ni sobre P142.",
+      "referencias_v09": "Sin colision: los ampersands de P650 y P677 quedan bajo su titularidad y no se duplican aqui."
+    },
+    "instrucciones_aplicacion": {
+      "comando": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v12.docx --salida salidas/documentos/informe_final_v13.docx --json salidas/reportes_maquetacion/acabado_tipografico_v12.json --reporte salidas/reportes_maquetacion/aplicacion_acabado_v13.json --solo-verificar",
+      "resultado_esperado": "4 aplicadas, 0 omitidas, 0 fallidas.",
+      "verificacion_posterior": "Recuento de comillas rectas en el texto plano de la version resultante: debe ser cero. Recuento de comillas dobles tipograficas: cincuenta y dos. Recuento de comillas simples tipograficas: dos, ambas en el titulo de P12. El total de glifos tipograficos de comilla asciende a cincuenta y cuatro.",
+      "nota_aritmetica": "La cuenta final no es de cincuenta y cuatro dobles. Las cincuenta dobles medidas incluyen ya las dos que abrazan «SIVAC» en P12; al convertirlas en simples se restan dos, y las cuatro rectas pasan a dobles: 50 - 2 + 4 = 52 dobles y 2 simples. El total tipografico sigue siendo 54."
+    }
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 12,
+      "ubicacion": "PARRAFO 12, comillas internas del título (anidamiento)",
+      "ancla_original": "La tesis titulada: \"APLICACIÓN DEL SISTEMA “SIVAC” PARA",
+      "texto_nuevo": "La tesis titulada: \"APLICACIÓN DEL SISTEMA ‘SIVAC’ PARA",
+      "categoria": "comillas",
+      "justificacion": "Anidamiento en el título delimitado del numeral 1 de la declaración jurada: el nombre del sistema pasa a comillas simples tipográficas (U+2018 y U+2019) porque ya está contenido en un título entrecomillado. El título oficial no se altera y el nombre del sistema sigue siendo SIVAC; solo cambia el nivel de comilla. La cadena desnuda 'SISTEMA “SIVAC” PARA' no es única —aparece también en la portada, donde no hay anidamiento y debe conservarse—, de modo que el ancla se acota con la fórmula introductoria y la comilla recta de apertura, exclusivas de P12. Esta orden se ejecuta antes que la de apertura porque su ancla contiene esa comilla recta; ambas son disjuntas y las dos se aplican sin conflicto."
+    },
+    {
+      "indice_docx": 12,
+      "ubicacion": "PARRAFO 12, delimitador de apertura",
+      "ancla_original": "titulada: \"APLICACIÓN DEL SISTEMA",
+      "texto_nuevo": "titulada: “APLICACIÓN DEL SISTEMA",
+      "categoria": "comillas",
+      "justificacion": "Numeral 1 de la declaración jurada de autenticidad y no plagio: se abre el título oficial con comilla tipográfica U+201C en lugar de la comilla recta. Se conserva el texto del título, su mayúscula sostenida y los dos puntos que lo introducen."
+    },
+    {
+      "indice_docx": 12,
+      "ubicacion": "PARRAFO 12, delimitador de cierre",
+      "ancla_original": "APURÍMAC II\", es obra de mi exclusiva",
+      "texto_nuevo": "APURÍMAC II”, es obra de mi exclusiva",
+      "categoria": "comillas",
+      "justificacion": "Cierre del mismo título con comilla tipográfica U+201D. El ancla arrastra la coma y el arranque de la oración siguiente para ser única; ni la coma ni el resto de la oración se alteran."
+    },
+    {
+      "indice_docx": 142,
+      "ubicacion": "PARRAFO 142",
+      "ancla_original": "the \"SIVAC\" system improves",
+      "texto_nuevo": "the “SIVAC” system improves",
+      "categoria": "comillas",
+      "justificacion": "ABSTRACT: se sustituyen las dos comillas rectas que abrazan el nombre del sistema por los glifos U+201C y U+201D, en coherencia con el RESUMEN (P139), que ya emplea comillas tipográficas en el sintagma equivalente. No se altera ninguna otra palabra del resumen en inglés."
+    }
+  ]
+}

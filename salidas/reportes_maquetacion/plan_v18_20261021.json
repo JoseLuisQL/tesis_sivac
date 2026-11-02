@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "v18b",
+    "origen": "informe_final_v17.docx",
+    "objetivo": "Ajuste local de margenes de celda y 10 pt por run; conservar tablas comparativas de 1, 32, 34, 43 y 45; bloques solo en 44; limpieza 4.12 y Anexo 3"
+  },
+  "parrafos_reemplazo": [
+    {
+      "indice": 625,
+      "texto": "La validez de contenido determinará el grado en que el formato de evaluación refleje el dominio teórico de las dimensiones evaluadas (Hernández-Sampieri et al., 2014). El juicio se aplicará al formato disponible, integrado por la matriz de la variable dependiente con 12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4, y por el cuestionario TAM de la Modalidad A con 8 reactivos en escala Likert de 1 a 5. La concordancia se cuantificará con el Coeficiente V de Aiken (Ecuación 8) y el Índice de Validez de Contenido (IVC); se adopta como criterio de aceptación V ≥ 0.80 e IVC ≥ 0.80:"
+    },
+    {
+      "indice": 627,
+      "texto": "Donde S representa la sumatoria de las diferencias r − l, con r como la calificación asignada por el juez al ítem y l como la categoría inferior de la escala, que en el formato disponible es 1; n indica el número de jueces del panel y c denota el número de categorías de la escala de valoración, que en el formato disponible es 4. Los coeficientes se registrarán por ítem y por dimensión una vez concluida la evaluación del panel, y se contrastarán contra el criterio de aceptación adoptado de V ≥ 0.80 e IVC ≥ 0.80. La estabilidad de las fichas 01 y 02 se verificará mediante el coeficiente de correlación intraclase ICC(2,1) mayor o igual a 0.75 y el kappa de Cohen mayor o igual a 0.80, que son evidencias de confiabilidad y no de validez de contenido."
+    },
+    {
+      "indice": 629,
+      "texto": "Nota. El formato de evaluación disponible comprende la matriz de la variable dependiente con 12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4, y el cuestionario TAM de la Modalidad A con 8 reactivos en escala Likert de 1 a 5. Para este formato, la unanimidad de calificaciones 4 comunicada corresponde condicionalmente a V = 1.000 e IVC = 1.000; el resultado permanece pendiente de cotejo con las fichas de evaluación."
+    },
+    {
+      "indice": 630,
+      "texto": "La designación de los tres jueces expertos se fundamentará en su idoneidad académica, experiencia docente e investigativa en ingeniería de sistemas, diseño de sistemas de información transaccionales y auditoría de sistemas de información en la Universidad Nacional José María Arguedas. Cada juez recibirá el formato de evaluación en blanco, con la presentación institucional adoptada por el proyecto, para su llenado manuscrito."
+    },
+    {
+      "indice": 789,
+      "texto": "Se presentan los tres (3) formatos de evaluación en blanco por juicio de expertos, que remiten al formato disponible descrito en la sección 4.12: matriz de la variable dependiente con 12 componentes en escala experta de 1 a 4 y cuestionario TAM con ocho ítems en escala Likert de 1 a 5. Los coeficientes V de Aiken e IVC se consignan como campos por completar y la aplicabilidad permanece sin dictamen hasta la recepción de los tres informes firmados."
+    }
+  ],
+  "erradicar_raya": "No aplica",
+  "redimensiones_figura": [
+    {"indice_parrafo": 233, "ancho_cm": 8.45}
+  ],
+  "tablas": {
+    "celdas_texto": [
+      {"tabla": 34, "fila": 1, "columna": 3, "texto": "Confiabilidad por protocolo PMMV e ICC(2,1) ≥ 0.75 entre observadores"},
+      {"tabla": 34, "fila": 1, "columna": 6, "texto": "Acreditado por protocolo y concordancia interobservador"},
+      {"tabla": 34, "fila": 2, "columna": 3, "texto": "Confiabilidad por regla de 8 criterios y kappa de Cohen ≥ 0.80 entre evaluadores"},
+      {"tabla": 34, "fila": 2, "columna": 6, "texto": "Acreditado por protocolo y concordancia interevaluador"},
+      {"tabla": 34, "fila": 3, "columna": 3, "texto": "Juicio de contenido sobre el formato disponible de la Modalidad A"},
+      {"tabla": 46, "fila": 4, "columna": 1, "texto": "V de Aiken: ______; IVC: ______"},
+      {"tabla": 46, "fila": 6, "columna": 1, "texto": "Andahuaylas, Apurímac, Perú, ____ de ____________ de 2026"},
+      {"tabla": 47, "fila": 4, "columna": 1, "texto": "V de Aiken: ______; IVC: ______"},
+      {"tabla": 47, "fila": 6, "columna": 1, "texto": "Andahuaylas, Apurímac, Perú, ____ de ____________ de 2026"},
+      {"tabla": 48, "fila": 4, "columna": 1, "texto": "V de Aiken: ______; IVC: ______"},
+      {"tabla": 48, "fila": 6, "columna": 1, "texto": "Andahuaylas, Apurímac, Perú, ____ de ____________ de 2026"},
+      {"tabla": 54, "fila": 6, "columna": 3, "texto": "No especificado"},
+      {"tabla": 54, "fila": 7, "columna": 3, "texto": "No especificado"}
+    ],
+    "celdas_parrafos": [
+      {"tabla": 46, "fila": 7, "columna": 0, "parrafos": ["_________________________________________________________", "Firma y Sello del Juez Validador: Juez 1", "DNI: ____________________"]},
+      {"tabla": 47, "fila": 7, "columna": 0, "parrafos": ["_________________________________________________________", "Firma y Sello del Juez Validador: Juez 2", "DNI: ____________________"]},
+      {"tabla": 48, "fila": 7, "columna": 0, "parrafos": ["_________________________________________________________", "Firma y Sello del Juez Validador: Juez 3", "DNI: ____________________"]}
+    ],
+    "margenes_celda": [
+      {"tabla": 1, "izquierdo_dxa": 28, "derecho_dxa": 28},
+      {"tabla": 32, "izquierdo_dxa": 28, "derecho_dxa": 28},
+      {"tabla": 34, "izquierdo_dxa": 28, "derecho_dxa": 28},
+      {"tabla": 43, "izquierdo_dxa": 28, "derecho_dxa": 28},
+      {"tabla": 45, "izquierdo_dxa": 28, "derecho_dxa": 28}
+    ],
+    "normalizar_tamano": [
+      {"tabla": 1, "minimo_pt": 10},
+      {"tabla": 32, "minimo_pt": 10},
+      {"tabla": 34, "minimo_pt": 10},
+      {"tabla": 43, "minimo_pt": 10},
+      {"tabla": 45, "minimo_pt": 10}
+    ],
+    "rebalanceo": [1, 32, 34, 43, 45],
+    "anexar_filas": [
+      {
+        "tabla": 34,
+        "filas": [
+          [
+            "VAL-VD",
+            "Matriz de la variable dependiente (formato de evaluación por juicio de expertos)",
+            "12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4",
+            "Juicio de contenido del formato disponible; resultado comunicado condicional, pendiente de cotejo",
+            "1.000 comunicado (condicional)",
+            "1.000 comunicado (condicional)",
+            "Sin dictamen"
+          ]
+        ]
+      }
+    ],
+    "reorganizar_bloques": [
+      {"tabla": 44, "etiqueta_campo": "Campo", "etiqueta_valor": "Contenido", "ancho_etiqueta_dxa": 3200}
+    ]
+  }
+}

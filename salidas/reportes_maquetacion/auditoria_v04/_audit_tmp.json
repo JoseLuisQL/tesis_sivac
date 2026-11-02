@@ -1,0 +1,2314 @@
+{
+  "meta": {
+    "documento": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v04.docx",
+    "pdf": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v04.pdf",
+    "sha256": "134c0ecad628432356f121662adb7b41462d4e32117074a111a9fe0398094887",
+    "bytes": 15229744,
+    "fecha_auditoria": "2026-10-21",
+    "agente": "analista-documental",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "Squad A y E",
+    "metodo": "Render de las 158 páginas a 110 DPI con PyMuPDF, inspección visual de cada página, análisis del paquete OpenXML (document.xml, styles.xml, numbering.xml) y medición de las cajas de dibujo contra los márgenes.",
+    "referencia_contraste": "Fany_Tesis_Bachiller_2024.pdf (106 páginas)",
+    "margenes_dxa": {
+      "izquierdo": 1701,
+      "derecho": 1440,
+      "superior": 1440,
+      "inferior": 1440
+    },
+    "caja_util_vertical_dxa": 8765,
+    "caja_util_horizontal_dxa": 13697
+  },
+  "resumen": {
+    "paginas_totales": 158,
+    "paginas_revisadas": 158,
+    "paginas_conformes": 99,
+    "paginas_observadas": 59,
+    "defectos_totales": 90,
+    "defectos_por_severidad": {
+      "alta": 63,
+      "critica": 10,
+      "baja": 7,
+      "media": 10
+    },
+    "defectos_por_tipo": {
+      "TEXTO_INCOMPLETO": 10,
+      "DESORDEN_SECCION": 1,
+      "ESPACIADO_INCORRECTO": 1,
+      "ROTULO_INCORRECTO": 15,
+      "NUMERACION_SALTADA": 3,
+      "SALTO_PAGINA_AUSENTE": 5,
+      "ENCABEZADO_HUERFANO": 6,
+      "TEXTO_CORTADO": 7,
+      "TABLA_DESBORDADA": 14,
+      "CELDA_ILEGIBLE": 11,
+      "VIUDA_HUERFANA": 9,
+      "EMOJI": 7,
+      "TEXTO_DUPLICADO": 1
+    },
+    "parrafos_nivel_superior": 810,
+    "tablas": 59,
+    "imagenes_en_linea": 49,
+    "formulas_omml": 12,
+    "tablas_con_tblpPr": 0,
+    "filas_con_cantSplit": 462,
+    "filas_con_tblHeader": 54,
+    "tablas_que_exceden_caja_util": 33,
+    "tablas_con_exceso_significativo": 19,
+    "tablas_con_exceso_leve": 14,
+    "tablas_desbordadas_dxa": [
+      {
+        "tabla": 14,
+        "rejilla": 8856,
+        "columnas": 5
+      },
+      {
+        "tabla": 17,
+        "rejilla": 8961,
+        "columnas": 5
+      },
+      {
+        "tabla": 19,
+        "rejilla": 8900,
+        "columnas": 5
+      },
+      {
+        "tabla": 22,
+        "rejilla": 8895,
+        "columnas": 5
+      },
+      {
+        "tabla": 23,
+        "rejilla": 8817,
+        "columnas": 5
+      },
+      {
+        "tabla": 27,
+        "rejilla": 8898,
+        "columnas": 6
+      },
+      {
+        "tabla": 35,
+        "rejilla": 8981,
+        "columnas": 8
+      },
+      {
+        "tabla": 36,
+        "rejilla": 8981,
+        "columnas": 10
+      },
+      {
+        "tabla": 37,
+        "rejilla": 8981,
+        "columnas": 10
+      },
+      {
+        "tabla": 38,
+        "rejilla": 8981,
+        "columnas": 10
+      },
+      {
+        "tabla": 39,
+        "rejilla": 8981,
+        "columnas": 8
+      },
+      {
+        "tabla": 40,
+        "rejilla": 8981,
+        "columnas": 9
+      },
+      {
+        "tabla": 41,
+        "rejilla": 8981,
+        "columnas": 9
+      },
+      {
+        "tabla": 42,
+        "rejilla": 8981,
+        "columnas": 9
+      },
+      {
+        "tabla": 43,
+        "rejilla": 8981,
+        "columnas": 8
+      },
+      {
+        "tabla": 44,
+        "rejilla": 14000,
+        "columnas": 5
+      },
+      {
+        "tabla": 52,
+        "rejilla": 8981,
+        "columnas": 18
+      },
+      {
+        "tabla": 53,
+        "rejilla": 8981,
+        "columnas": 18
+      },
+      {
+        "tabla": 54,
+        "rejilla": 8981,
+        "columnas": 5
+      }
+    ],
+    "tablas_con_exceso_leve_dxa": [
+      {
+        "tabla": 0,
+        "rejilla": 8788,
+        "columnas": 1
+      },
+      {
+        "tabla": 1,
+        "rejilla": 8784,
+        "columnas": 6
+      },
+      {
+        "tabla": 2,
+        "rejilla": 8784,
+        "columnas": 4
+      },
+      {
+        "tabla": 3,
+        "rejilla": 8766,
+        "columnas": 3
+      },
+      {
+        "tabla": 4,
+        "rejilla": 8766,
+        "columnas": 3
+      },
+      {
+        "tabla": 7,
+        "rejilla": 8766,
+        "columnas": 6
+      },
+      {
+        "tabla": 13,
+        "rejilla": 8778,
+        "columnas": 5
+      },
+      {
+        "tabla": 29,
+        "rejilla": 8784,
+        "columnas": 4
+      },
+      {
+        "tabla": 30,
+        "rejilla": 8784,
+        "columnas": 4
+      },
+      {
+        "tabla": 31,
+        "rejilla": 8784,
+        "columnas": 4
+      },
+      {
+        "tabla": 32,
+        "rejilla": 8784,
+        "columnas": 6
+      },
+      {
+        "tabla": 33,
+        "rejilla": 8783,
+        "columnas": 5
+      },
+      {
+        "tabla": 34,
+        "rejilla": 8784,
+        "columnas": 7
+      },
+      {
+        "tabla": 45,
+        "rejilla": 8766,
+        "columnas": 6
+      }
+    ],
+    "paginas_horizontales": [
+      143,
+      144,
+      145
+    ],
+    "folio_conforme": true,
+    "orden_canonico_conforme": true
+  },
+  "paginas": [
+    {
+      "pagina": 1,
+      "folio_impreso": null,
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_sin_folio",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 2,
+      "folio_impreso": null,
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_sin_folio",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 3,
+      "folio_impreso": null,
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_sin_folio",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 4,
+      "folio_impreso": "ii",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 5,
+      "folio_impreso": "iii",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 6,
+      "folio_impreso": "iv",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 7,
+      "folio_impreso": "v",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 8,
+      "folio_impreso": "vi",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 9,
+      "folio_impreso": "vii",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 10,
+      "folio_impreso": "viii",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 11,
+      "folio_impreso": "ix",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 12,
+      "folio_impreso": "x",
+      "orientacion": "vertical",
+      "esquema_folio": "preliminar_romano",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 13,
+      "folio_impreso": "1",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 14,
+      "folio_impreso": "2",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 15,
+      "folio_impreso": "3",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 16,
+      "folio_impreso": "4",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 17,
+      "folio_impreso": "5",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 18,
+      "folio_impreso": "6",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 19,
+      "folio_impreso": "7",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 20,
+      "folio_impreso": "8",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 21,
+      "folio_impreso": "9",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 22,
+      "folio_impreso": "10",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 23,
+      "folio_impreso": "11",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 24,
+      "folio_impreso": "12",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 25,
+      "folio_impreso": "13",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 26,
+      "folio_impreso": "14",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 27,
+      "folio_impreso": "15",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 28,
+      "folio_impreso": "16",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 29,
+      "folio_impreso": "17",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 30,
+      "folio_impreso": "18",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 31,
+      "folio_impreso": "19",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 32,
+      "folio_impreso": "20",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 33,
+      "folio_impreso": "21",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 34,
+      "folio_impreso": "22",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 35,
+      "folio_impreso": "23",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 36,
+      "folio_impreso": "24",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 37,
+      "folio_impreso": "25",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 38,
+      "folio_impreso": "26",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 39,
+      "folio_impreso": "27",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 40,
+      "folio_impreso": "28",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 41,
+      "folio_impreso": "29",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 42,
+      "folio_impreso": "30",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 43,
+      "folio_impreso": "31",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 44,
+      "folio_impreso": "32",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 45,
+      "folio_impreso": "33",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 46,
+      "folio_impreso": "34",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 47,
+      "folio_impreso": "35",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 48,
+      "folio_impreso": "36",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 49,
+      "folio_impreso": "37",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 50,
+      "folio_impreso": "38",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 51,
+      "folio_impreso": "39",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 52,
+      "folio_impreso": "40",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 53,
+      "folio_impreso": "41",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 54,
+      "folio_impreso": "42",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 55,
+      "folio_impreso": "43",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 56,
+      "folio_impreso": "44",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 57,
+      "folio_impreso": "45",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 58,
+      "folio_impreso": "46",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 59,
+      "folio_impreso": "47",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 60,
+      "folio_impreso": "48",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 61,
+      "folio_impreso": "49",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 62,
+      "folio_impreso": "50",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 63,
+      "folio_impreso": "51",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 64,
+      "folio_impreso": "52",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 65,
+      "folio_impreso": "53",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 66,
+      "folio_impreso": "54",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 67,
+      "folio_impreso": "55",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 68,
+      "folio_impreso": "56",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 69,
+      "folio_impreso": "57",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 70,
+      "folio_impreso": "58",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 71,
+      "folio_impreso": "59",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 72,
+      "folio_impreso": "60",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 73,
+      "folio_impreso": "61",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 74,
+      "folio_impreso": "62",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 75,
+      "folio_impreso": "63",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 76,
+      "folio_impreso": "64",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 77,
+      "folio_impreso": "65",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 78,
+      "folio_impreso": "66",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 79,
+      "folio_impreso": "67",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 80,
+      "folio_impreso": "68",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 81,
+      "folio_impreso": "69",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 82,
+      "folio_impreso": "70",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 83,
+      "folio_impreso": "71",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 84,
+      "folio_impreso": "72",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 85,
+      "folio_impreso": "73",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 86,
+      "folio_impreso": "74",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 87,
+      "folio_impreso": "75",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 88,
+      "folio_impreso": "76",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 89,
+      "folio_impreso": "77",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 90,
+      "folio_impreso": "78",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 91,
+      "folio_impreso": "79",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 92,
+      "folio_impreso": "80",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 93,
+      "folio_impreso": "81",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 94,
+      "folio_impreso": "82",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 95,
+      "folio_impreso": "83",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 96,
+      "folio_impreso": "84",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 97,
+      "folio_impreso": "85",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 98,
+      "folio_impreso": "86",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 99,
+      "folio_impreso": "87",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 100,
+      "folio_impreso": "88",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 101,
+      "folio_impreso": "89",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 102,
+      "folio_impreso": "90",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 103,
+      "folio_impreso": "91",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 104,
+      "folio_impreso": "92",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 105,
+      "folio_impreso": "93",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 106,
+      "folio_impreso": "94",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 107,
+      "folio_impreso": "95",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 108,
+      "folio_impreso": "96",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 109,
+      "folio_impreso": "97",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 110,
+      "folio_impreso": "98",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 111,
+      "folio_impreso": "99",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 112,
+      "folio_impreso": "100",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 113,
+      "folio_impreso": "101",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 114,
+      "folio_impreso": "102",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 115,
+      "folio_impreso": "103",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 116,
+      "folio_impreso": "104",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 117,
+      "folio_impreso": "105",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 118,
+      "folio_impreso": "106",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 119,
+      "folio_impreso": "107",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 120,
+      "folio_impreso": "108",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 121,
+      "folio_impreso": "109",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 122,
+      "folio_impreso": "110",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 123,
+      "folio_impreso": "111",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 124,
+      "folio_impreso": "112",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 125,
+      "folio_impreso": "113",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 126,
+      "folio_impreso": "114",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 127,
+      "folio_impreso": "115",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 128,
+      "folio_impreso": "116",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 129,
+      "folio_impreso": "117",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 130,
+      "folio_impreso": "118",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 131,
+      "folio_impreso": "119",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 132,
+      "folio_impreso": "120",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 133,
+      "folio_impreso": "121",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 134,
+      "folio_impreso": "122",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 135,
+      "folio_impreso": "123",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 136,
+      "folio_impreso": "124",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 137,
+      "folio_impreso": "125",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 138,
+      "folio_impreso": "126",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 139,
+      "folio_impreso": "127",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 140,
+      "folio_impreso": "128",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 141,
+      "folio_impreso": "129",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 142,
+      "folio_impreso": "130",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 143,
+      "folio_impreso": "131",
+      "orientacion": "horizontal",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 144,
+      "folio_impreso": "132",
+      "orientacion": "horizontal",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 145,
+      "folio_impreso": "133",
+      "orientacion": "horizontal",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 146,
+      "folio_impreso": "134",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 147,
+      "folio_impreso": "135",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 148,
+      "folio_impreso": "136",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 149,
+      "folio_impreso": "137",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 150,
+      "folio_impreso": "138",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 151,
+      "folio_impreso": "139",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 152,
+      "folio_impreso": "140",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "CONFORME"
+    },
+    {
+      "pagina": 153,
+      "folio_impreso": "141",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 154,
+      "folio_impreso": "142",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 155,
+      "folio_impreso": "143",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 156,
+      "folio_impreso": "144",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 157,
+      "folio_impreso": "145",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    },
+    {
+      "pagina": 158,
+      "folio_impreso": "146",
+      "orientacion": "vertical",
+      "esquema_folio": "cuerpo_arabigo",
+      "folio_correcto": true,
+      "veredicto": "OBSERVADA"
+    }
+  ],
+  "defectos": [
+    {
+      "pagina": 2,
+      "elemento": "parrafo",
+      "indice_docx": null,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Acta de sustentación armada con una instrucción editorial entre corchetes (espacio reservado para insertar el acta oficial escaneada) y con el dictamen prellenado APROBADO CON MENCION; fecha, jurado y firmas quedan en blanco.",
+      "severidad": "alta",
+      "correccion_sugerida": "Sustituir la caja de instrucción por el acta oficial firmada; retirar el dictamen prellenado."
+    },
+    {
+      "pagina": 3,
+      "elemento": "parrafo",
+      "indice_docx": 18,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "La declaración jurada conserva dos marcadores de identidad: DNI N.° [Completar DNI oficial antes de impresión] en el encabezado y de nuevo bajo la línea de firma.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reemplazar ambos marcadores por el número de DNI real."
+    },
+    {
+      "pagina": 7,
+      "elemento": "encabezado",
+      "indice_docx": null,
+      "tipo": "DESORDEN_SECCION",
+      "descripcion": "El índice de contenido termina en REFERENCIAS BIBLIOGRÁFICAS tras el apartado 3.2: omite el 3.3 (Metodología XP, pp. 40-85), el CAPÍTULO V, el CAPÍTULO VI, CONCLUSIONES, RECOMENDACIONES y ANEXOS.",
+      "severidad": "critica",
+      "correccion_sugerida": "Aplicar estilos Heading 1 a 3 a todos los títulos y regenerar el campo TOC."
+    },
+    {
+      "pagina": 8,
+      "elemento": "encabezado",
+      "indice_docx": null,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "El índice de figuras enumera solo Figura 1 a Figura 10; faltan las 35 figuras del Capítulo III y las cuatro del Anexo 7.",
+      "severidad": "alta",
+      "correccion_sugerida": "Regenerar la lista de figuras con rótulos nativos y numeración única."
+    },
+    {
+      "pagina": 9,
+      "elemento": "encabezado",
+      "indice_docx": null,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "El índice de tablas enumera solo Tabla 1 a Tabla 5; faltan las tablas 6-26, las tablas 13-21 del Capítulo V y las tablas de los Anexos 1-6.",
+      "severidad": "alta",
+      "correccion_sugerida": "Regenerar la lista de tablas completa a partir de rótulos SEQ."
+    },
+    {
+      "pagina": 9,
+      "elemento": "parrafo",
+      "indice_docx": 47,
+      "tipo": "ESPACIADO_INCORRECTO",
+      "descripcion": "La entrada Tabla 4 del índice de tablas es la única sin línea de puntos conductores hasta el número de página.",
+      "severidad": "baja",
+      "correccion_sugerida": "Restituir el tabulador con relleno de puntos en esa entrada."
+    },
+    {
+      "pagina": 22,
+      "elemento": "parrafo",
+      "indice_docx": 113,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "El texto remite a la Tabla 10 del Capítulo IV para la matriz de operacionalización; en el Capítulo IV esa matriz es la Tabla 3 y la Tabla 10 es un diccionario de datos del Capítulo III.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia cruzada a Tabla 3."
+    },
+    {
+      "pagina": 30,
+      "elemento": "tabla",
+      "indice_docx": 1,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "La tabla de síntesis de antecedentes (14 filas x 6 columnas, pp. 30-33) carece de rótulo Tabla N: solo lleva título descriptivo.",
+      "severidad": "alta",
+      "correccion_sugerida": "Asignar número correlativo y anteponer el rótulo."
+    },
+    {
+      "pagina": 35,
+      "elemento": "encabezado",
+      "indice_docx": null,
+      "tipo": "NUMERACION_SALTADA",
+      "descripcion": "La numeración de figuras reinicia tres veces: Figuras 1-10 en el Capítulo III (pp. 35-46), Figuras 1-35 en el mismo capítulo (pp. 46-97) y Figuras 5-7 en el Capítulo V.",
+      "severidad": "alta",
+      "correccion_sugerida": "Renumerar las figuras de forma continua y actualizar todas las referencias cruzadas."
+    },
+    {
+      "pagina": 46,
+      "elemento": "tabla",
+      "indice_docx": 2,
+      "tipo": "SALTO_PAGINA_AUSENTE",
+      "descripcion": "El rótulo Tabla 1 Dimensiones, indicadores y escalas de medición queda al pie de p46 y la tabla (7 x 4) se desarrolla en p47.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 52,
+      "elemento": "parrafo",
+      "indice_docx": 253,
+      "tipo": "NUMERACION_SALTADA",
+      "descripcion": "Segunda tabla rotulada Tabla 1 (roles y responsabilidades, 7 x 4) coexistiendo con la Tabla 1 de P0201; la numeración del Capítulo III arranca en 1 pese a las tablas previas.",
+      "severidad": "alta",
+      "correccion_sugerida": "Renumerar de forma continua y eliminar el rótulo duplicado."
+    },
+    {
+      "pagina": 58,
+      "elemento": "parrafo",
+      "indice_docx": 278,
+      "tipo": "ENCABEZADO_HUERFANO",
+      "descripcion": "El rótulo Tabla 6 queda como último bloque de p58 (y = 758 pt de 842) y el título, la tabla y la nota pasan a p59.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 58,
+      "elemento": "encabezado",
+      "indice_docx": null,
+      "tipo": "SALTO_PAGINA_AUSENTE",
+      "descripcion": "Causa sistémica: de 115 párrafos de rótulo (Tabla/Figura) solo 15 tienen keepNext, por lo que rótulos y títulos se separan de su objeto en pp. 46, 58, 81, 85-89, 96, 104, 108, 111, 117 y 130.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext a todos los rótulos y títulos mediante docx_quirurgico."
+    },
+    {
+      "pagina": 65,
+      "elemento": "parrafo",
+      "indice_docx": 326,
+      "tipo": "ENCABEZADO_HUERFANO",
+      "descripcion": "El encabezado 3.3.2.4. Modelado Conceptual, Lógico y Físico de la Base de Datos queda al pie de p65 sin ninguna línea de texto debajo.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext a los encabezados de nivel 2 y 3."
+    },
+    {
+      "pagina": 68,
+      "elemento": "parrafo",
+      "indice_docx": 345,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "Párrafo de nota que comienza con la palabra Tabla (Tabla maestra que representa el nivel superior de la estructura sanitaria) y resulta capturable por cualquier índice automático de tablas.",
+      "severidad": "baja",
+      "correccion_sugerida": "Reformular el inicio del párrafo."
+    },
+    {
+      "pagina": 74,
+      "elemento": "parrafo",
+      "indice_docx": 372,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "Párrafo que comienza con Tabla sin ser rótulo (Tabla central transaccional con restricción de unicidad uk_movimiento_establecimiento_vacuna_mes_anio).",
+      "severidad": "baja",
+      "correccion_sugerida": "Reformular el inicio del párrafo."
+    },
+    {
+      "pagina": 81,
+      "elemento": "parrafo",
+      "indice_docx": 408,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 14 queda al pie de p81 (y = 751 pt) y su título descriptivo pasa a p82: número y título en páginas distintas.",
+      "severidad": "alta",
+      "correccion_sugerida": "Unir rótulo y título en un párrafo único con keepNext."
+    },
+    {
+      "pagina": 85,
+      "elemento": "parrafo",
+      "indice_docx": 441,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 21 queda al pie de p85 y su título pasa a p86.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext y unir rótulo y título."
+    },
+    {
+      "pagina": 86,
+      "elemento": "parrafo",
+      "indice_docx": 445,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 23 queda al pie de p86 y su título pasa a p87.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext y unir rótulo y título."
+    },
+    {
+      "pagina": 87,
+      "elemento": "parrafo",
+      "indice_docx": 449,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 25 queda al pie de p87 y su título pasa a p88.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext y unir rótulo y título."
+    },
+    {
+      "pagina": 88,
+      "elemento": "parrafo",
+      "indice_docx": 453,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 27 queda al pie de p88 y su título pasa a p89.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext y unir rótulo y título."
+    },
+    {
+      "pagina": 89,
+      "elemento": "parrafo",
+      "indice_docx": 457,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 29 queda al pie de p89 y su título pasa a p90.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext y unir rótulo y título."
+    },
+    {
+      "pagina": 91,
+      "elemento": "parrafo",
+      "indice_docx": 492,
+      "tipo": "ENCABEZADO_HUERFANO",
+      "descripcion": "El encabezado 3.3.4. Fase IV: Pruebas de Calidad del Software queda al pie de p91 sin texto debajo.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext a los encabezados."
+    },
+    {
+      "pagina": 96,
+      "elemento": "parrafo",
+      "indice_docx": 518,
+      "tipo": "TEXTO_CORTADO",
+      "descripcion": "El rótulo Figura 35 queda al pie de p96 y su título pasa a p97.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext y unir rótulo y título."
+    },
+    {
+      "pagina": 100,
+      "elemento": "tabla",
+      "indice_docx": 29,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "La tabla Cronograma y protocolo de ejecución de la intervención preexperimental (5 x 4) no lleva rótulo Tabla N.",
+      "severidad": "alta",
+      "correccion_sugerida": "Asignar número correlativo y anteponer el rótulo."
+    },
+    {
+      "pagina": 103,
+      "elemento": "tabla",
+      "indice_docx": 31,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "La tabla Estructura de unidades de observación primaria, reglas de agregación pareada y criterios de inclusión (7 x 4) no lleva rótulo Tabla N.",
+      "severidad": "alta",
+      "correccion_sugerida": "Asignar número correlativo y anteponer el rótulo."
+    },
+    {
+      "pagina": 104,
+      "elemento": "tabla",
+      "indice_docx": 32,
+      "tipo": "SALTO_PAGINA_AUSENTE",
+      "descripcion": "El rótulo Tabla 3 Operacionalización de las variables de investigación queda al pie de p104 y la tabla se desarrolla en p105.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 108,
+      "elemento": "tabla",
+      "indice_docx": 33,
+      "tipo": "SALTO_PAGINA_AUSENTE",
+      "descripcion": "El rótulo Tabla 4 Relación de técnicas e instrumentos de recolección de datos queda al pie de p108 y la tabla se desarrolla en p109.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 111,
+      "elemento": "tabla",
+      "indice_docx": 34,
+      "tipo": "SALTO_PAGINA_AUSENTE",
+      "descripcion": "El rótulo Tabla 5 Estructura de la validación de los instrumentos queda al pie de p111 y la tabla (4 x 7) se desarrolla en p112.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 115,
+      "elemento": "parrafo",
+      "indice_docx": 619,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Advertencia interna impresa en el cuerpo del Capítulo V: declara que los resultados corresponden a DATOS DE PRUEBA - REEMPLAZAR (DEC-007) e incluye rutas y comandos del repositorio.",
+      "severidad": "critica",
+      "correccion_sugerida": "Retirar la advertencia del informe final y trasladarla a una nota interna no impresa."
+    },
+    {
+      "pagina": 116,
+      "elemento": "tabla",
+      "indice_docx": 35,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla descriptiva de 8 columnas y 7 filas con 8 981 dxa de rejilla frente a 8 765 dxa útiles (216 dxa de exceso, 0.19 cm por lado).",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa y redistribuir columnas."
+    },
+    {
+      "pagina": 116,
+      "elemento": "parrafo",
+      "indice_docx": 623,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "En la Tabla 4 se consolidan los coeficientes remite a la Tabla 4 del Capítulo IV (técnicas e instrumentos); la tabla de confiabilidad es la Tabla 13.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia a Tabla 13."
+    },
+    {
+      "pagina": 117,
+      "elemento": "parrafo",
+      "indice_docx": 631,
+      "tipo": "ENCABEZADO_HUERFANO",
+      "descripcion": "El rótulo Tabla 14 y su título quedan al pie de p117 y la tabla (7 x 10) aparece sola en p118.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 117,
+      "elemento": "parrafo",
+      "indice_docx": 630,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "En la Tabla 5 y en la Figura 6 se detallan remite a objetos del Capítulo IV; lo correcto es Tabla 14 y Figura 5.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir ambas referencias cruzadas."
+    },
+    {
+      "pagina": 118,
+      "elemento": "tabla",
+      "indice_docx": 36,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 10 columnas y 7 filas con rejilla de 8 981 dxa frente a 8 765 dxa de caja útil (márgenes 3.0 / 2.54 / 2.54 cm): excede 216 dxa, 0.19 cm por lado. En el PDF llega a x = 528.8 pt frente al límite derecho de 523.3 pt y arranca en x = 79.0 pt frente al límite izquierdo de 85.05 pt.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa; valorar orientación horizontal o fusión de columnas."
+    },
+    {
+      "pagina": 118,
+      "elemento": "tabla",
+      "indice_docx": 36,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "La columna n mide 682 dxa (1.20 cm) y la de indicador 1 061 dxa (1.87 cm): encabezados partidos en tres y cuatro líneas y celdas de indicador en cinco líneas.",
+      "severidad": "media",
+      "correccion_sugerida": "Ampliar las columnas de texto y reducir el cuerpo a 9 pt dentro de la tabla."
+    },
+    {
+      "pagina": 120,
+      "elemento": "tabla",
+      "indice_docx": 37,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 10 columnas y 7 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles (216 dxa de exceso); en el PDF llega a x = 528.8 pt frente al límite de 523.3 pt.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 120,
+      "elemento": "tabla",
+      "indice_docx": 37,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "La columna n mide 411 dxa (0.72 cm), la más estrecha del documento: fractura palabras y cifras (Momen to, Variació n, Median a, 1 4).",
+      "severidad": "critica",
+      "correccion_sugerida": "Eliminar la columna n, constante igual a 14, o ensancharla a 700 dxa."
+    },
+    {
+      "pagina": 121,
+      "elemento": "parrafo",
+      "indice_docx": 648,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "En la Tabla 7 y en la Figura 8 se presenta: los objetos de la Dimensión 3 son la Tabla 16 y la Figura 7.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir ambas referencias cruzadas."
+    },
+    {
+      "pagina": 122,
+      "elemento": "tabla",
+      "indice_docx": 38,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 10 columnas y 10 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles (216 dxa de exceso); en el PDF alcanza x = 528.8 pt.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 122,
+      "elemento": "tabla",
+      "indice_docx": 38,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "La columna más estrecha mide 634 dxa (1.12 cm); Constructo/subescala y Momento evaluado se parten en cuatro líneas y las etiquetas TAM se apilan verticalmente.",
+      "severidad": "media",
+      "correccion_sugerida": "Ampliar columnas de texto y abreviar encabezados."
+    },
+    {
+      "pagina": 124,
+      "elemento": "tabla",
+      "indice_docx": 39,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 8 columnas y 8 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles; en el PDF alcanza x = 528.8 pt.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 124,
+      "elemento": "parrafo",
+      "indice_docx": 659,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "La Tabla 8 resume las decisiones: la tabla de normalidad que sigue es la Tabla 17.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia a Tabla 17."
+    },
+    {
+      "pagina": 125,
+      "elemento": "tabla",
+      "indice_docx": 39,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "La tabla de 8 filas se fragmenta entre p124 y p125; la segunda página arrastra el remanente de filas con el encabezado repetido.",
+      "severidad": "media",
+      "correccion_sugerida": "Mantener la tabla en una página o dividirla por dimensión con subtítulos propios."
+    },
+    {
+      "pagina": 126,
+      "elemento": "parrafo",
+      "indice_docx": 672,
+      "tipo": "ENCABEZADO_HUERFANO",
+      "descripcion": "5.4.2. Contrastación de la Hipótesis Específica 2 queda al pie de p126 sin texto debajo.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al encabezado."
+    },
+    {
+      "pagina": 126,
+      "elemento": "tabla",
+      "indice_docx": 40,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 9 columnas y 5 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles (216 dxa de exceso).",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 126,
+      "elemento": "tabla",
+      "indice_docx": 40,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "Encabezados fracturados: p-valor Ajusta do Holm y Decisió n sobre H0,1; la columna más estrecha mide 791 dxa (1.40 cm).",
+      "severidad": "alta",
+      "correccion_sugerida": "Abreviar encabezados y redistribuir anchos."
+    },
+    {
+      "pagina": 126,
+      "elemento": "parrafo",
+      "indice_docx": 668,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "(Tabla 9) remite al diccionario de datos; el contraste de la HE1 se presenta en la Tabla 18.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia a Tabla 18."
+    },
+    {
+      "pagina": 127,
+      "elemento": "tabla",
+      "indice_docx": 41,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 9 columnas y 5 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles (216 dxa de exceso).",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 127,
+      "elemento": "tabla",
+      "indice_docx": 41,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "La columna más estrecha mide 635 dxa (1.12 cm): Concordanc ia, Wilcoxo n, Rechaz ar, Gran de.",
+      "severidad": "critica",
+      "correccion_sugerida": "Ampliar las columnas de indicador y decisión; abreviar encabezados."
+    },
+    {
+      "pagina": 127,
+      "elemento": "parrafo",
+      "indice_docx": 675,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "(Tabla 10): el contraste de la HE2 se presenta en la Tabla 19.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia a Tabla 19."
+    },
+    {
+      "pagina": 128,
+      "elemento": "tabla",
+      "indice_docx": 41,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "La tabla se divide entre p127 y p128 con el encabezado repetido, dejando la segunda página con el remanente de filas.",
+      "severidad": "media",
+      "correccion_sugerida": "Reajustar anchos y altura para mantener la tabla en una página."
+    },
+    {
+      "pagina": 128,
+      "elemento": "parrafo",
+      "indice_docx": 682,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "(Tabla 11): el contraste de la HE3 se presenta en la Tabla 20.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia a Tabla 20."
+    },
+    {
+      "pagina": 129,
+      "elemento": "tabla",
+      "indice_docx": 42,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 9 columnas y 7 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles (216 dxa de exceso).",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 129,
+      "elemento": "tabla",
+      "indice_docx": 42,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "Encabezados fracturados: Estadísti co t, p-valor Ajusta do Holm, Decisió n sobre H0,3.",
+      "severidad": "alta",
+      "correccion_sugerida": "Abreviar encabezados y redistribuir anchos."
+    },
+    {
+      "pagina": 130,
+      "elemento": "parrafo",
+      "indice_docx": 691,
+      "tipo": "ENCABEZADO_HUERFANO",
+      "descripcion": "El rótulo Tabla 21 y su título quedan al pie de p130 y la tabla continúa sola en p131.",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar keepNext al rótulo y al título."
+    },
+    {
+      "pagina": 130,
+      "elemento": "tabla",
+      "indice_docx": 43,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Tabla de 8 columnas y 5 filas con rejilla de 8 981 dxa frente a 8 765 dxa útiles (216 dxa de exceso).",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 130,
+      "elemento": "tabla",
+      "indice_docx": 43,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "Encabezados fracturados: Hipótesi s de Investigació n, Decisió n, Operativ a; celdas Rechaz ar H0,1 y Reducció n > 15%.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir el número de columnas y abreviar encabezados."
+    },
+    {
+      "pagina": 130,
+      "elemento": "parrafo",
+      "indice_docx": 690,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "En la Tabla 12 se presenta el balance consolidado: la tabla resumen es la Tabla 21.",
+      "severidad": "alta",
+      "correccion_sugerida": "Corregir la referencia a Tabla 21."
+    },
+    {
+      "pagina": 131,
+      "elemento": "tabla",
+      "indice_docx": 43,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "p131 contiene solo las filas finales y la nota de la Tabla 21 (938 caracteres en toda la página); más del 60 por ciento del área queda en blanco.",
+      "severidad": "alta",
+      "correccion_sugerida": "Cerrar la tabla en p130 reduciendo altura de fila o cuerpo tipográfico."
+    },
+    {
+      "pagina": 71,
+      "elemento": "tabla",
+      "indice_docx": 17,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Sobrancho leve y sistemático (pp. 71-93) en las tablas de cinco y seis columnas del Capítulo III: T14 (8 856 dxa), T17 (8 961), T19 (8 900), T22 (8 895), T23 (8 817) y T27 (8 898) frente a 8 765 dxa útiles. El exceso de 52 a 196 dxa no recorta texto, pero invade el margen derecho.",
+      "severidad": "baja",
+      "correccion_sugerida": "Reajustar la rejilla de esas seis tablas a 8 765 dxa."
+    },
+    {
+      "pagina": 141,
+      "elemento": "parrafo",
+      "indice_docx": 752,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "Página con una sola referencia (World Health Organization, 2021), 160 caracteres, y más del 80 por ciento del área en blanco.",
+      "severidad": "media",
+      "correccion_sugerida": "Ajustar el interlineado de la lista para evitar el arrastre de una sola entrada."
+    },
+    {
+      "pagina": 142,
+      "elemento": "parrafo",
+      "indice_docx": 753,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "Página dedicada exclusivamente a la palabra ANEXOS (12 caracteres), sin otro contenido.",
+      "severidad": "baja",
+      "correccion_sugerida": "Integrar la portadilla con el primer anexo o eliminarla."
+    },
+    {
+      "pagina": 143,
+      "elemento": "tabla",
+      "indice_docx": 44,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Matriz de consistencia en orientación horizontal con rejilla de 14 000 dxa frente a 13 697 dxa de caja útil (21.0 - 3.0 - 2.54 - 2.54 cm): excede 303 dxa (0.53 cm). En el PDF abarca de x = 76.8 a 777.6 pt frente a los límites de 85.05 y 769.92 pt.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir la rejilla a 13 697 dxa o ampliar la caja útil horizontal a 3.0 / 2.0 cm."
+    },
+    {
+      "pagina": 145,
+      "elemento": "tabla",
+      "indice_docx": 44,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "p145 contiene solo las dos últimas filas y la nota de la Tabla A1.1; el resto de la página queda en blanco.",
+      "severidad": "media",
+      "correccion_sugerida": "Ajustar anchos y altura de fila para cerrar la matriz en p144."
+    },
+    {
+      "pagina": 146,
+      "elemento": "tabla",
+      "indice_docx": 45,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "La matriz de operacionalización (6 columnas, 8 766 dxa) comprime la primera columna hasta partir palabras (Variable Independie nte) y apila las definiciones en 8 a 10 líneas por celda.",
+      "severidad": "media",
+      "correccion_sugerida": "Ampliar las columnas de variable y definición; mover la definición operacional a una nota."
+    },
+    {
+      "pagina": 147,
+      "elemento": "tabla",
+      "indice_docx": 45,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "La Tabla A2.1 se prolonga a p147 con tres filas y su nota, dejando el resto de la página vacío.",
+      "severidad": "media",
+      "correccion_sugerida": "Reducir altura de fila o cuerpo tipográfico para cerrar la tabla en p146."
+    },
+    {
+      "pagina": 148,
+      "elemento": "tabla",
+      "indice_docx": 46,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Certificado del Experto 1 con el nombre sustituido por Evaluador Pericial Designado (Experto 1), DNI [Registrado en expediente] y firma no insertada.",
+      "severidad": "alta",
+      "correccion_sugerida": "Insertar nombre, grado, institución, DNI y firma reales del juez validador."
+    },
+    {
+      "pagina": 148,
+      "elemento": "tabla",
+      "indice_docx": 46,
+      "tipo": "EMOJI",
+      "descripcion": "El pictograma U+270D precede a ESPACIO RESERVADO PARA INSERCION DE FIRMA Y SELLO ESCANEADO DEL EXPERTO.",
+      "severidad": "alta",
+      "correccion_sugerida": "Sustituir el pictograma por un recuadro rotulado Firma y sello del juez validador."
+    },
+    {
+      "pagina": 149,
+      "elemento": "tabla",
+      "indice_docx": 47,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Certificado del Experto 2 con nombre genérico, DNI [Registrado en expediente] y firma no insertada.",
+      "severidad": "alta",
+      "correccion_sugerida": "Insertar los datos reales del juez validador."
+    },
+    {
+      "pagina": 149,
+      "elemento": "tabla",
+      "indice_docx": 47,
+      "tipo": "EMOJI",
+      "descripcion": "Segundo pictograma U+270D en el espacio de firma del Experto 2.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reemplazar por un recuadro de firma sin pictogramas."
+    },
+    {
+      "pagina": 149,
+      "elemento": "tabla",
+      "indice_docx": 48,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Certificado del Experto 3 con nombre genérico, DNI [Registrado en expediente] y firma no insertada.",
+      "severidad": "alta",
+      "correccion_sugerida": "Insertar los datos reales del juez validador."
+    },
+    {
+      "pagina": 149,
+      "elemento": "tabla",
+      "indice_docx": 48,
+      "tipo": "EMOJI",
+      "descripcion": "Tercer pictograma U+270D en el espacio de firma del Experto 3.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reemplazar por un recuadro de firma sin pictogramas."
+    },
+    {
+      "pagina": 150,
+      "elemento": "tabla",
+      "indice_docx": 49,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "La ficha A4.1 comprime cuatro columnas de 2 191 dxa (3.86 cm) y corta fórmulas como (Total registros conformes sin error / Total transacciones auditadas) * 100 en seis líneas.",
+      "severidad": "media",
+      "correccion_sugerida": "Trasladar las fórmulas al cuerpo narrativo, conforme a la prohibición de fórmulas en celdas."
+    },
+    {
+      "pagina": 151,
+      "elemento": "tabla",
+      "indice_docx": 51,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "La Tabla A4.3 (cuestionario TAM) se prolonga a p152, donde queda una sola fila (UP-04) y la nota; el 80 por ciento de la página queda en blanco.",
+      "severidad": "alta",
+      "correccion_sugerida": "Reducir el enunciado de los reactivos o el interlineado para cerrar la tabla en p151."
+    },
+    {
+      "pagina": 153,
+      "elemento": "tabla",
+      "indice_docx": 52,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Matriz de datos del pretest con 18 columnas y 15 filas: 8 981 dxa de rejilla frente a 8 765 dxa útiles (216 dxa de exceso). En el PDF arranca en x = 107.1 pt y llega a x = 528.8 pt frente al límite derecho de 523.3 pt.",
+      "severidad": "critica",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa; pasar la matriz a horizontal o dividirla en dos tablas."
+    },
+    {
+      "pagina": 153,
+      "elemento": "tabla",
+      "indice_docx": 52,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "Con 18 columnas el ancho medio es de 499 dxa (0.88 cm) y el mínimo de 363 dxa (0.64 cm): las cifras se fracturan hasta en cuatro líneas (3 8. 5 0), ALMACEN (CHANKA) ocupa tres líneas y las cabeceras se leen suj eto_id, centr o_aco pio, nivel_s atisfaccion.",
+      "severidad": "critica",
+      "correccion_sugerida": "Dividir en dos tablas de 9 columnas o girar a horizontal con anchos mínimos de 700 dxa."
+    },
+    {
+      "pagina": 154,
+      "elemento": "tabla",
+      "indice_docx": 53,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "Matriz de datos del postest con 18 columnas y 15 filas: 8 981 dxa de rejilla frente a 8 765 dxa útiles, con el mismo desborde de 5.5 pt sobre el margen derecho.",
+      "severidad": "critica",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa o pasar la matriz a orientación horizontal."
+    },
+    {
+      "pagina": 154,
+      "elemento": "tabla",
+      "indice_docx": 53,
+      "tipo": "CELDA_ILEGIBLE",
+      "descripcion": "Mismas patologías que la matriz del pretest: columna mínima de 400 dxa (0.71 cm), cifras y etiquetas partidas en varias líneas, cabeceras ilegibles.",
+      "severidad": "critica",
+      "correccion_sugerida": "Dividir la matriz o ampliar columnas en horizontal."
+    },
+    {
+      "pagina": 155,
+      "elemento": "tabla",
+      "indice_docx": 53,
+      "tipo": "VIUDA_HUERFANA",
+      "descripcion": "La segunda página de la matriz ocupa por completo p155 sin encabezado de sección ni contexto.",
+      "severidad": "baja",
+      "correccion_sugerida": "Repetir el encabezado de columna y rotular la continuación."
+    },
+    {
+      "pagina": 156,
+      "elemento": "tabla",
+      "indice_docx": 54,
+      "tipo": "TABLA_DESBORDADA",
+      "descripcion": "La Tabla A6.1 (5 columnas, 8 981 dxa) excede la caja útil en 216 dxa; en el PDF llega a x = 528.8 pt frente al límite de 523.3 pt.",
+      "severidad": "media",
+      "correccion_sugerida": "Reducir la rejilla a 8 765 dxa."
+    },
+    {
+      "pagina": 157,
+      "elemento": "tabla",
+      "indice_docx": 55,
+      "tipo": "EMOJI",
+      "descripcion": "La caja de la Figura A7.1 contiene el pictograma U+1F4F7 (cámara) antes de ESPACIO RESERVADO PARA FOTOGRAFIA DE EVIDENCIA EN CAMPO.",
+      "severidad": "alta",
+      "correccion_sugerida": "Sustituir el pictograma por el texto Espacio reservado para fotografía de evidencia en campo."
+    },
+    {
+      "pagina": 157,
+      "elemento": "tabla",
+      "indice_docx": 56,
+      "tipo": "EMOJI",
+      "descripcion": "La caja de la Figura A7.2 repite el pictograma U+1F4F7.",
+      "severidad": "alta",
+      "correccion_sugerida": "Eliminar el pictograma y conservar solo el rótulo textual."
+    },
+    {
+      "pagina": 157,
+      "elemento": "tabla",
+      "indice_docx": 57,
+      "tipo": "EMOJI",
+      "descripcion": "La caja de la Figura A7.3 repite el pictograma U+1F4F7.",
+      "severidad": "alta",
+      "correccion_sugerida": "Eliminar el pictograma y conservar solo el rótulo textual."
+    },
+    {
+      "pagina": 158,
+      "elemento": "tabla",
+      "indice_docx": 58,
+      "tipo": "EMOJI",
+      "descripcion": "La caja de la Figura A7.4 repite el pictograma U+1F4F7.",
+      "severidad": "alta",
+      "correccion_sugerida": "Eliminar el pictograma y conservar solo el rótulo textual."
+    },
+    {
+      "pagina": 157,
+      "elemento": "parrafo",
+      "indice_docx": null,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Las cuatro cajas del Anexo 7 conservan la instrucción editorial Instrucción para el tesista: Insertar en este espacio la fotografía correspondiente a, visible en el documento final.",
+      "severidad": "critica",
+      "correccion_sugerida": "Insertar las fotografías definitivas a 300 DPI o retirar el anexo."
+    },
+    {
+      "pagina": 158,
+      "elemento": "tabla",
+      "indice_docx": 58,
+      "tipo": "TEXTO_INCOMPLETO",
+      "descripcion": "Cuarta caja del Anexo 7 con la misma instrucción editorial y sin fotografía insertada.",
+      "severidad": "critica",
+      "correccion_sugerida": "Insertar la fotografía definitiva o retirar la caja."
+    },
+    {
+      "pagina": 157,
+      "elemento": "parrafo",
+      "indice_docx": 804,
+      "tipo": "ROTULO_INCORRECTO",
+      "descripcion": "El rótulo Figura A7.3 queda al pie de p157 y su título y su nota pasan a p158, separados de la caja correspondiente.",
+      "severidad": "alta",
+      "correccion_sugerida": "Unir rótulo, título, caja y nota con keepNext."
+    },
+    {
+      "pagina": 157,
+      "elemento": "parrafo",
+      "indice_docx": 800,
+      "tipo": "TEXTO_DUPLICADO",
+      "descripcion": "La nota Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (2026). se repite literalmente cuatro veces (P0800, P0803, P0806, P0809).",
+      "severidad": "baja",
+      "correccion_sugerida": "Diferenciar cada nota con la fecha y el lugar específicos de la toma."
+    },
+    {
+      "pagina": 52,
+      "elemento": "encabezado",
+      "indice_docx": null,
+      "tipo": "NUMERACION_SALTADA",
+      "descripcion": "La numeración de tablas reinicia en el Capítulo III (1 a 26), vuelve a reiniciar en el Capítulo IV (2 a 5) y salta a 13 en el Capítulo V (13 a 21).",
+      "severidad": "alta",
+      "correccion_sugerida": "Aplicar numeración continua 1 a 59 en el cuerpo y reservar A1.1 a A7.4 para los anexos."
+    }
+  ]
+}

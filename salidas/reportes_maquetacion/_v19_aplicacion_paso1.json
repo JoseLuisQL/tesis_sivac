@@ -1,0 +1,368 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v18.docx",
+  "destino": "salidas\\documentos\\_v19_paso1.docx",
+  "solo_verificar": false,
+  "sha256_origen": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+  "sha256_destino": "29a8cfebcb4f154a0d34f34d973839b092b5d43add4e8c96eca7010677b34f60",
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 21,
+  "total_aplicadas": 21,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "_v19_lote_parrafos_corregido",
+      "total": 21,
+      "aplicadas": 21,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 804,
+          "ubicacion": "PARRAFO 804, titulo del Anexo 5 (p. 153, folio 138)",
+          "ancla": "ANEXO 5: MATRIZ DE DATOS TABULADOS DE CAMPO (PRETEST Y POSTTEST)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 805,
+          "ubicacion": "PARRAFO 805, parrafo introductorio del Anexo 5 (p. 153, folio 138)",
+          "ancla": "A continuación se presenta la matriz completa de datos recolectados de los n = 1",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 806,
+          "ubicacion": "PARRAFO 806, rotulo de la Tabla 49 (p. 153, folio 138)",
+          "ancla": "Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 807,
+          "ubicacion": "PARRAFO 807, nota de la Tabla 49 (p. 153, folio 138)",
+          "ancla": "Nota. Datos basales recopilados sobre 14 operadores en centros de acopio reales ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 808,
+          "ubicacion": "PARRAFO 808, rotulo de la Tabla 50 (p. 154, folio 139)",
+          "ancla": "Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 809,
+          "ubicacion": "PARRAFO 809, nota de la Tabla 50 (p. 154, folio 139)",
+          "ancla": "Nota. Mediciones finales obtenidas tras la implementación de SIVAC.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 661,
+          "ubicacion": "PARRAFO 661, nota de la Figura 46 (p. 120, folio 105)",
+          "ancla": "Salida bioestadística generada en formato SPSS a 300 DPI.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 668,
+          "ubicacion": "PARRAFO 668, nota de la Figura 47 (p. 121, folio 106)",
+          "ancla": "Salida bioestadística generada en formato SPSS a 300 DPI.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 675,
+          "ubicacion": "PARRAFO 675, nota de la Figura 48 (p. 123, folio 108)",
+          "ancla": "Salida bioestadística generada en formato SPSS a 300 DPI.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 814,
+          "ubicacion": "PARRAFO 814, titulo del Anexo 7 (p. 157, folio 142)",
+          "ancla": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 815,
+          "ubicacion": "PARRAFO 815, parrafo introductorio del Anexo 7 (p. 157, folio 142)",
+          "ancla": "En observancia de los requerimientos de acreditación de trabajo de campo de la U",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 816,
+          "ubicacion": "PARRAFO 816, titulo de la Figura 49 (p. 157, folio 142)",
+          "ancla": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 817,
+          "ubicacion": "PARRAFO 817, nota de la Figura 49 (p. 157, folio 142)",
+          "ancla": "Nota. Registro fotográfico de la sesión de capacitación en la sede central. Dire",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 818,
+          "ubicacion": "PARRAFO 818, titulo de la Figura 50 (p. 158, folio 143)",
+          "ancla": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de bioló",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 819,
+          "ubicacion": "PARRAFO 819, nota de la Figura 50 (p. 158, folio 143)",
+          "ancla": "Nota. Registro fotográfico del cronometraje de tiempos en el Almacén Especializa",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 820,
+          "ubicacion": "PARRAFO 820, titulo de la Figura 51 (p. 158, folio 143)",
+          "ancla": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la reg",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 821,
+          "ubicacion": "PARRAFO 821, nota de la Figura 51 (p. 158, folio 143)",
+          "ancla": "Nota. Registro fotográfico del cotejo documental y la verificación física de lot",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 822,
+          "ubicacion": "PARRAFO 822, titulo de la Figura 52 (p. 159, folio 144)",
+          "ancla": "Evaluación de la aceptación del proceso operativo y utilidad percibida del siste",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 823,
+          "ubicacion": "PARRAFO 823, nota de la Figura 52 (p. 159, folio 144)",
+          "ancla": "Nota. Registro fotográfico de la aplicación del cuestionario TAM a los operadore",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "PARRAFO DE LA NOTA DE LA FIGURA 11 (p. 55, folio 40); localizar por ancla",
+          "ancla": "las pruebas de aceptación con el cliente en la DISA Apurímac II.",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "PARRAFO INICIAL DE CONCLUSIONES (p. 133, folio 118); localizar por ancla",
+          "ancla": "Primera (Objetivo General): Se determinó que la aplicación del sistema web SIVAC",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 804,
+      "ubicacion": "PARRAFO 804, titulo del Anexo 5 (p. 153, folio 138)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 805,
+      "ubicacion": "PARRAFO 805, parrafo introductorio del Anexo 5 (p. 153, folio 138)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 806,
+      "ubicacion": "PARRAFO 806, rotulo de la Tabla 49 (p. 153, folio 138)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 807,
+      "ubicacion": "PARRAFO 807, nota de la Tabla 49 (p. 153, folio 138)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 808,
+      "ubicacion": "PARRAFO 808, rotulo de la Tabla 50 (p. 154, folio 139)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 809,
+      "ubicacion": "PARRAFO 809, nota de la Tabla 50 (p. 154, folio 139)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 661,
+      "ubicacion": "PARRAFO 661, nota de la Figura 46 (p. 120, folio 105)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 668,
+      "ubicacion": "PARRAFO 668, nota de la Figura 47 (p. 121, folio 106)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 675,
+      "ubicacion": "PARRAFO 675, nota de la Figura 48 (p. 123, folio 108)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 814,
+      "ubicacion": "PARRAFO 814, titulo del Anexo 7 (p. 157, folio 142)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 815,
+      "ubicacion": "PARRAFO 815, parrafo introductorio del Anexo 7 (p. 157, folio 142)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 816,
+      "ubicacion": "PARRAFO 816, titulo de la Figura 49 (p. 157, folio 142)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 817,
+      "ubicacion": "PARRAFO 817, nota de la Figura 49 (p. 157, folio 142)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 818,
+      "ubicacion": "PARRAFO 818, titulo de la Figura 50 (p. 158, folio 143)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 819,
+      "ubicacion": "PARRAFO 819, nota de la Figura 50 (p. 158, folio 143)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 820,
+      "ubicacion": "PARRAFO 820, titulo de la Figura 51 (p. 158, folio 143)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 821,
+      "ubicacion": "PARRAFO 821, nota de la Figura 51 (p. 158, folio 143)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 822,
+      "ubicacion": "PARRAFO 822, titulo de la Figura 52 (p. 159, folio 144)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": 823,
+      "ubicacion": "PARRAFO 823, nota de la Figura 52 (p. 159, folio 144)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": null,
+      "ubicacion": "PARRAFO DE LA NOTA DE LA FIGURA 11 (p. 55, folio 40); localizar por ancla",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_v19_lote_parrafos_corregido",
+      "indice_docx": null,
+      "ubicacion": "PARRAFO INICIAL DE CONCLUSIONES (p. 133, folio 118); localizar por ancla",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    }
+  ]
+}

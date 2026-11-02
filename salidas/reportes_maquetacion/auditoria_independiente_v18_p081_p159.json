@@ -1,0 +1,1154 @@
+{
+ "tipo": "auditoria_independiente_verificador_integridad",
+ "version": "v18",
+ "fecha": "2026-10-21",
+ "fase": "F8",
+ "squad": "A",
+ "agente": "verificador-integridad",
+ "objeto": {
+  "docx": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v18.docx",
+  "pdf": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v18.pdf",
+  "docx_bytes": 15097973,
+  "pdf_bytes": 17891321,
+  "paginas_pdf": 159,
+  "parrafos_body": 824,
+  "tablas": 59,
+  "imagenes": 49,
+  "secciones": 7
+ },
+ "hashes_verificados": {
+  "sha256_docx": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+  "sha256_pdf": "d0dbe841df7bcad3132a45277c746aaf69008ce3ce886eb6703eac75b8373d00",
+  "coinciden_con_hash_director": true,
+  "sha256_docx_v16": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5"
+ },
+ "alcance": {
+  "controles_estructurales": 40,
+  "paginas_auditadas": "81-159",
+  "total_paginas": 79,
+  "fuera_de_alcance": "1-80 (otro analista)"
+ },
+ "metodo_global": {
+  "lectura_visual_ampliada": "26 paginas de atencion prioritaria, leidas una a una a 150 DPI con ampliacion de regiones criticas.",
+  "contacto_mas_geometria": "53 paginas restantes, revisadas en hojas de contacto 4x2 y cotejadas con geometria/texto del PDF.",
+  "no_mezcla": "Cada fila declara un solo metodo."
+ },
+ "control_global": [
+  {
+   "id": "A-01",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Numeracion y secuencia de paginas del PDF",
+   "resultado": "conforme",
+   "evidencia": "159 paginas fisicas continuas 1-159; 0 duplicadas; 0 vacias; texto extraible en todas. Foliacion impresa 1-144 y romanos ii-xiii."
+  },
+  {
+   "id": "A-02",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Paginacion por pagina y por seccion",
+   "resultado": "conforme",
+   "evidencia": "824 parrafos; 679/681 parrafos de >=45 caracteres localizados literalmente en el PDF. Los 2 restantes son entradas de indice con folio anadido (Tabla 10 y Tabla 22). Verificacion base/final: texto por pagina identico."
+  },
+  {
+   "id": "A-03",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Margenes y ancho util calculado por seccion",
+   "resultado": "conforme",
+   "evidencia": "7 secciones: 5 retrato y 2 apaisado. Margenes 1417 dxa (2.5 cm) salvo izquierdo 1701 dxa (3.0 cm). Ancho util calculado: 11906-1701-1417=8788 dxa en retrato; 16838-1701-1417=13720 dxa en apaisado."
+  },
+  {
+   "id": "A-04",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Numeracion romana en preliminares y arabiga reiniciada en el cuerpo",
+   "resultado": "conforme",
+   "evidencia": "Portada sin folio; preliminares ii-xiii; cuerpo inicia en 1 en la pagina fisica 16; secuencia arabiga 1-144 sin saltos."
+  },
+  {
+   "id": "A-05",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Encabezados y rotulos sin separacion de su contenido",
+   "resultado": "observado",
+   "evidencia": "Sin encabezados huerfanos. Dos notas quedaron separadas de su tabla: Tabla 36 (nota en p120) y Tabla 51 (nota sola en p156)."
+  },
+  {
+   "id": "A-06",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Portada unica y preliminares sin duplicacion",
+   "resultado": "conforme",
+   "evidencia": "Una sola portada (p1); p2 acta y p3 declaracion no repiten el bloque de portada."
+  },
+  {
+   "id": "A-07",
+   "grupo": "Correspondencia DOCX-PDF y paginacion",
+   "control": "Metodo de inspeccion declarado por pagina",
+   "resultado": "conforme",
+   "evidencia": "79/79 paginas con metodo declarado: 26 por lectura visual ampliada y 53 por hoja de contacto + geometria; sin mezclar metodos dentro de una misma pagina."
+  },
+  {
+   "id": "B-01",
+   "grupo": "Integridad textual y tokens",
+   "control": "Cero guion largo U+2014",
+   "resultado": "conforme",
+   "evidencia": "0 ocurrencias de U+2014 en document.xml (cuerpo, tablas, notas, anexos e indices)."
+  },
+  {
+   "id": "B-02",
+   "grupo": "Integridad textual y tokens",
+   "control": "Cero tokens internos o metadatos de agente",
+   "resultado": "no_conforme",
+   "evidencia": "3 ocurrencias de [Pendiente] en la Tabla 34 (fila INST-03, columnas V de Aiken, IVC y Dictamen), p113. 0 [Pending], [VERIFICAR], TBD, TODO, TrueFalse, rutas locales o nombres de script."
+  },
+  {
+   "id": "B-03",
+   "grupo": "Integridad textual y tokens",
+   "control": "DNI y datos de jueces",
+   "resultado": "conforme",
+   "evidencia": "5 campos DNI con linea vacia, condicion intencional aprobada (no es defecto); 0 digitos, 0 nombres, 0 CIP, 0 fechas de evaluacion. Solo roles Juez 1/2/3."
+  },
+  {
+   "id": "B-04",
+   "grupo": "Integridad textual y tokens",
+   "control": "Cero OMML dentro de celdas de tabla",
+   "resultado": "conforme",
+   "evidencia": "59 tablas; 0 m:oMath dentro de w:tc. Las 11 ecuaciones estan en cuerpo narrativo, centradas y numeradas (1)-(11)."
+  },
+  {
+   "id": "B-05",
+   "grupo": "Integridad textual y tokens",
+   "control": "Datos de prueba declarados como tales",
+   "resultado": "no_conforme",
+   "evidencia": "p117 (folio 102) declara datos provisionales de prueba; p153-154 (folios 138-139) presentan las mismas matrices como 'datos recolectados', 'centros de acopio reales' y 'mediciones finales obtenidas tras la implementacion'."
+  },
+  {
+   "id": "B-06",
+   "grupo": "Integridad textual y tokens",
+   "control": "Figura 44 y su descripcion",
+   "resultado": "conforme",
+   "evidencia": "La imagen embebida (image45, 406.9 DPI) es codigo TypeScript de prueba Jest de movimientos-entrega-adicional-stock.test.ts; no es consola ni afirma 100% de ejecucion. La nota describe mocks de Jest/Prisma."
+  },
+  {
+   "id": "C-01",
+   "grupo": "Tablas",
+   "control": "Ancho util y desbordes",
+   "resultado": "conforme",
+   "evidencia": "59 tablas: 56 con grid 8765 dxa (<=8788), Tabla 44 con 13720 dxa exactos y Tablas 49-50 con 13630 dxa (<=13720). Sin columnas cortadas ni texto fuera de celda."
+  },
+  {
+   "id": "C-02",
+   "grupo": "Tablas",
+   "control": "Legibilidad y fractura intrapalabra",
+   "resultado": "observado",
+   "evidencia": "Sin fractura intrapalabra en las tablas inspeccionadas (32, 34, 43, 44, 45, 46, 47, 48, 49, 50, 51). Nueve tablas de datos usan fuente inferior a 10 pt: 36-39 y 41-43 a 9 pt; 49-50 a 8/8.5 pt."
+  },
+  {
+   "id": "C-03",
+   "grupo": "Tablas",
+   "control": "Filas no fragmentadas y encabezado repetido",
+   "resultado": "conforme",
+   "evidencia": "59/59 tablas con cantSplit en todas sus filas y una fila tblHeader; tablas de varias paginas repiten encabezado (34, 43, 44, 45, 47, 49-50)."
+  },
+  {
+   "id": "C-04",
+   "grupo": "Tablas",
+   "control": "Regla de bordes segun el tipo de tabla",
+   "resultado": "conforme",
+   "evidencia": "Tablas academicas con borde superior, inferior de encabezado e inferior de tabla; 0 bordes verticales. Marcos de rejilla solo en formularios y espacios fotograficos solicitados."
+  },
+  {
+   "id": "C-05",
+   "grupo": "Tablas",
+   "control": "Contenido textual en celdas",
+   "resultado": "conforme",
+   "evidencia": "0 expresiones algebraicas, fracciones u OMML en celdas; solo texto descriptivo, dimensiones, indicadores, unidades y escalas."
+  },
+  {
+   "id": "C-06",
+   "grupo": "Tablas",
+   "control": "Numeracion correlativa y correspondencia con el indice",
+   "resultado": "conforme",
+   "evidencia": "51 tablas numeradas 1-51 sin duplicados ni saltos; el indice de tablas coincide en numero, titulo y folio (p. ej. Tabla 32->92, 34->98, 43->114, 44->127, 45->131, 49->138, 50->139)."
+  },
+  {
+   "id": "D-01",
+   "grupo": "Figuras y DPI",
+   "control": "DPI efectivo por figura en DOCX y en PDF",
+   "resultado": "observado",
+   "evidencia": "49 imagenes: 47 de las 48 figuras numeradas con imagen alcanzan >=300 DPI (300.0 a 496.6). Figura 6 = 136.5 DPI (residuo de origen). Escudo de portada = 117.8 DPI (no numerado). Figuras 49-52 sin imagen. La cifra '48 figuras >300 DPI' no se sostiene: son 47 de 48."
+  },
+  {
+   "id": "D-02",
+   "grupo": "Figuras y DPI",
+   "control": "Sin reescalado artificial ni sustitucion silenciosa",
+   "resultado": "conforme",
+   "evidencia": "49 nombres de media identicos entre v16 y v18; solo cambian image2, image3 e image10 (Figuras 1, 2 y 9), declaradas para reparacion de DPI. Sin altas, bajas ni sustitucion silenciosa."
+  },
+  {
+   "id": "D-03",
+   "grupo": "Figuras y DPI",
+   "control": "Estructura rotulo, imagen y nota",
+   "resultado": "conforme",
+   "evidencia": "48/48 figuras numeradas con imagen: rotulo 'Figura N' + titulo en cursiva antes de la imagen y nota 'Nota.' despues. El escudo de portada no lleva rotulo, conforme a su caracter no numerado."
+  },
+  {
+   "id": "D-04",
+   "grupo": "Figuras y DPI",
+   "control": "Correspondencia figura-texto",
+   "resultado": "no_conforme",
+   "evidencia": "Figuras 46, 47 y 48: la nota afirma 'Salida bioestadistica generada en formato SPSS'; los PNG embebidos image47, image48 e image49 declaran 'Matplotlib version 3.10.6'. Ademas, en la Figura 48 la etiqueta 17.1 esta atravesada por la barra de error."
+  },
+  {
+   "id": "E-01",
+   "grupo": "Referencias y citas",
+   "control": "Cursivas APA 7 en referencias",
+   "resultado": "conforme",
+   "evidencia": "53/53 asentamientos con cursiva en titulo de obra o nombre de revista/libro; 0 cursivas en autores, ano, DOI o entrada completa. Volumen de revista en cursiva cuando corresponde."
+  },
+  {
+   "id": "E-02",
+   "grupo": "Referencias y citas",
+   "control": "Formato de lista",
+   "resultado": "conforme",
+   "evidencia": "53/53 con sangria francesa 720/-720 dxa (1.27 cm), interlineado 1.5 y 6 pt posteriores; 0 rupturas de orden alfabetico."
+  },
+  {
+   "id": "E-03",
+   "grupo": "Referencias y citas",
+   "control": "Correspondencia biunivoca 1:1",
+   "resultado": "conforme",
+   "evidencia": "53 referencias, todas con uso en el cuerpo. 52 coinciden por autor-ano; ISO/IEC 25010:2023 se cita por codigo de norma. Los 24 candidatos a cita sin referencia resultaron fragmentos de apellidos compuestos o falsos positivos; 0 citas huerfanas reales."
+  },
+  {
+   "id": "E-04",
+   "grupo": "Referencias y citas",
+   "control": "Correspondencia de DOI y URL de las fuentes existentes",
+   "resultado": "observado",
+   "evidencia": "La observacion es la ausencia de hipervinculos activos (0 w:hyperlink), no la falta de DOI en libros: 9 libros sin DOI no constituyen por si error APA si la fuente existe y no se tratan como bloqueo editorial. 28 DOI unicos y sintacticamente validos, 6 handle y 4 URL institucionales: 38/53 con enlace; 15 sin enlace (9 libros y 6 articulos/norma/tesis: Balon Morejon, Holm, Ministerio de Salud, Razali y Wah, Ruiz Barea, Tristan-Lopez). No se resolvieron en linea; no se declara '100% DOI verificados'."
+  },
+  {
+   "id": "E-05",
+   "grupo": "Referencias y citas",
+   "control": "Consistencia OPS/PATH 2019",
+   "resultado": "conforme",
+   "evidencia": "Las 4 citas del cuerpo y la referencia de la lista dicen 2019, coincidentes con el JSON primario confirmado; 0 residuos de 2020."
+  },
+  {
+   "id": "E-06",
+   "grupo": "Referencias y citas",
+   "control": "Sin bibliografia nueva no autorizada",
+   "resultado": "conforme",
+   "evidencia": "v16 y v18 tienen 53 asentamientos; la unica diferencia es la eliminacion de la coma en la entrada ISO ('Standardization, e' -> 'Standardization e'). Sin altas ni fuentes nuevas."
+  },
+  {
+   "id": "F-01",
+   "grupo": "Validacion por expertos",
+   "control": "Escalas no confundidas",
+   "resultado": "conforme",
+   "evidencia": "Formato experto de 12 componentes en escala 1-4; cuestionario TAM Modalidad A de 8 reactivos en Likert 1-5. Sin conversion ni equiparacion entre escalas."
+  },
+  {
+   "id": "F-02",
+   "grupo": "Validacion por expertos",
+   "control": "Doce componentes frente a ocho reactivos AP/UP",
+   "resultado": "conforme",
+   "evidencia": "El texto y la Tabla 34 distinguen 12 componentes (4 campos de D1/D2 + 8 reactivos AP/UP) del cuestionario TAM de 8 reactivos. No se adjudican resultados de uno al otro."
+  },
+  {
+   "id": "F-03",
+   "grupo": "Validacion por expertos",
+   "control": "V e IVC condicionales",
+   "resultado": "observado",
+   "evidencia": "Fila VAL-VD: '1.000 comunicado (condicional)' con nota que lo liga a la unanimidad de calificaciones 4 y a la escala 1-4. Fila INST-03: [Pendiente] en V de Aiken, IVC y Dictamen, sin formulacion condicional. Ademas, INST-01 e INST-02 declaran 'Acreditado por protocolo y concordancia interobservador/interevaluador' sin coeficiente calculado. No se certifican formularios ni se calculan alfa/ICC/kappa."
+  },
+  {
+   "id": "F-04",
+   "grupo": "Validacion por expertos",
+   "control": "Sin datos individualizados inventados",
+   "resultado": "conforme",
+   "evidencia": "Solo roles Juez 1/2/3; 0 nombres, 0 DNI, 0 fechas, 0 matrices por juez, 0 opiniones de aplicabilidad marcadas. Los campos no informados quedan vacios."
+  },
+  {
+   "id": "F-05",
+   "grupo": "Validacion por expertos",
+   "control": "Existencia real de los soportes citados",
+   "resultado": "no_conforme",
+   "evidencia": "INST-01 e INST-02 afirman en la columna Dictamen 'Acreditado por protocolo y concordancia interobservador/interevaluador'. El texto solo describe un protocolo previsto ('se verificara', 'se garantizara') con umbrales ICC(2,1) >= 0.75 y kappa >= 0.80; no existe ningun coeficiente calculado en el documento (0 coincidencias de ICC/kappa con valor numerico). La declaracion de calificaciones 4 no equivale a acreditacion ICC/kappa."
+  },
+  {
+   "id": "F-06",
+   "grupo": "Validacion por expertos",
+   "control": "Lenguaje de estado",
+   "resultado": "conforme",
+   "evidencia": "Se usa 'comunicado', 'condicional' y 'pendiente de cotejo'; no se afirma validacion institucional ni juicio firmado revisado."
+  },
+  {
+   "id": "G-01",
+   "grupo": "Indices",
+   "control": "Indice general, de tablas y de figuras actualizados",
+   "resultado": "conforme",
+   "evidencia": "Indice de tablas y de figuras con folios vigentes: Tabla 32->92, 34->98, 43->114, 44->127, 45->131, 49->138, 50->139; Figuras 49-52->142-144. Sin entradas obsoletas."
+  },
+  {
+   "id": "H-01",
+   "grupo": "Reparacion DPI del PDF",
+   "control": "Asignacion no ambigua imagen PDF a parte DOCX",
+   "resultado": "conforme",
+   "evidencia": "49 candidatos DOCX, 49 ocurrencias PDF, 49 asignadas, 0 sin asignar; correspondencia unica por posicion, dimensiones y contenido."
+  },
+  {
+   "id": "H-02",
+   "grupo": "Reparacion DPI del PDF",
+   "control": "Rectangulos y geometria de las imagenes reparadas",
+   "resultado": "conforme",
+   "evidencia": "rects_identicos=true; geometria_identica=true; 49/49 con rect igual; sin recorte ni superposicion."
+  },
+  {
+   "id": "H-03",
+   "grupo": "Reparacion DPI del PDF",
+   "control": "Texto igual entre DOCX y PDF",
+   "resultado": "conforme",
+   "evidencia": "texto_identico=true; 159 paginas; comparacion base/final sin perdida ni alteracion textual."
+  },
+  {
+   "id": "H-04",
+   "grupo": "Reparacion DPI del PDF",
+   "control": "Efectividad real de la reparacion de DPI",
+   "resultado": "conforme",
+   "evidencia": "dpi_min 117.8, mediana 413.8, maximo 496.6; 49/49 medidas. La mejora se demuestra por sustitucion declarada de media, no por interpolacion presentada como mejora."
+  }
+ ],
+ "resumen": {
+  "paginas_conformes": 61,
+  "paginas_observadas": 17,
+  "paginas_bloqueadas": 1,
+  "controles_conformes": 31,
+  "controles_observados": 5,
+  "controles_no_conformes": 4
+ },
+ "incidencias": [
+  {
+   "id": "INC-01",
+   "severidad": "alta",
+   "pagina": 113,
+   "folio": "98",
+   "tipo": "token_interno",
+   "hallazgo": "Tres [Pendiente] visibles en la Tabla 34, fila INST-03, columnas V de Aiken, IVC y Dictamen.",
+   "evidencia": "document.xml: 3 ocurrencias; inspeccion visual ampliada p113.",
+   "accion": "Sustituir por formulacion condicional ('pendiente de cotejo') o 'No reportado', alineada con la fila VAL-VD y con la nota de la tabla. No inventar coeficientes."
+  },
+  {
+   "id": "INC-02",
+   "severidad": "alta",
+   "pagina": "153-154",
+   "folio": "138-139",
+   "tipo": "representacion_de_datos",
+   "hallazgo": "El Anexo 5 presenta las matrices como 'datos recolectados', 'centros de acopio reales' y 'mediciones finales', mientras el Capitulo V (p117) declara que son datos provisionales de prueba.",
+   "evidencia": "Parrafos 805-809 y notas de Tablas 49-50; parrafo 646.",
+   "accion": "Etiquetar Tablas 49 y 50 como datos de prueba y ajustar 'recolectados/reales/mediciones finales' para que no se lean como medicion de campo."
+  },
+  {
+   "id": "INC-03",
+   "severidad": "alta",
+   "pagina": "120,121,123",
+   "folio": "105,106,108",
+   "tipo": "atribucion_falsa_de_herramienta",
+   "hallazgo": "Las notas de Figuras 46, 47 y 48 afirman 'Salida bioestadistica generada en formato SPSS'; los PNG embebidos declaran Matplotlib 3.10.6.",
+   "evidencia": "Parrafos 661, 668 y 675; metadatos de image47, image48 e image49: 'Software\\x00Matplotlib version3.10.6'.",
+   "accion": "Corregir la fuente de las notas a Python/Matplotlib o a una formula neutra ('Salida bioestadistica a 300 DPI')."
+  },
+  {
+   "id": "INC-04",
+   "severidad": "alta",
+   "pagina": "157-159",
+   "folio": "142-144",
+   "tipo": "evidencia_ausente",
+   "hallazgo": "Figuras 49-52 tienen rotulo y nota en pasado ('Registro fotografico...') pero no contienen imagen; solo hay marcos 'ESPACIO RESERVADO'.",
+   "evidencia": "Parrafos 816-823 y Tablas 56-59; inspeccion visual p157-159.",
+   "accion": "Insertar las fotografias o rotular los espacios como 'pendiente de insercion', sin afirmar que el registro existe."
+  },
+  {
+   "id": "INC-05",
+   "severidad": "media",
+   "pagina": 151,
+   "folio": "136",
+   "tipo": "justificacion",
+   "hallazgo": "Espaciado interpalabra extremo en el parrafo introductorio del Anexo 4 ('vacunas' en la DISA Apurimac II:').",
+   "evidencia": "Inspeccion visual ampliada p151.",
+   "accion": "Reajustar el parrafo o el ancho de la caja para eliminar la linea estirada."
+  },
+  {
+   "id": "INC-06",
+   "severidad": "baja",
+   "pagina": "119-120",
+   "folio": "104-105",
+   "tipo": "nota_separada",
+   "hallazgo": "La nota de la Tabla 36 queda sola al inicio de p120, separada de su tabla en p119.",
+   "evidencia": "Texto PDF p120: 'Nota. n = 14 operadores...'.",
+   "accion": "Mantener la nota en la misma pagina de la tabla o ajustar el salto."
+  },
+  {
+   "id": "INC-07",
+   "severidad": "baja",
+   "pagina": 156,
+   "folio": "141",
+   "tipo": "pagina_casi_vacia",
+   "hallazgo": "p156 contiene solo la nota de la Tabla 51 y el resto queda en blanco.",
+   "evidencia": "Texto PDF p156: 'Nota. Resumen del backlog...'.",
+   "accion": "Reubicar la nota en p155 o eliminar el salto."
+  },
+  {
+   "id": "INC-08",
+   "severidad": "baja",
+   "pagina": 123,
+   "folio": "108",
+   "tipo": "etiqueta_figura",
+   "hallazgo": "En la Figura 48, la etiqueta '17.1' esta atravesada por la barra de error del tercer grupo.",
+   "evidencia": "Ampliacion 12x del area de la etiqueta.",
+   "accion": "Regenerar la figura con desplazamiento de etiqueta."
+  },
+  {
+   "id": "INC-09",
+   "severidad": "baja",
+   "pagina": "135-140",
+   "folio": "120-125",
+   "tipo": "hipervinculos",
+   "hallazgo": "0 hipervinculos activos en las referencias; los 38 enlaces estan en texto plano.",
+   "evidencia": "54 parrafos de referencias; 0 w:hyperlink; 28 DOI + 6 handle + 4 URL.",
+   "accion": "Convertir DOI/URL en hipervinculos activos APA 7."
+  },
+  {
+   "id": "INC-10",
+   "severidad": "baja",
+   "pagina": "global",
+   "folio": "-",
+   "tipo": "tamano_fuente_tablas",
+   "hallazgo": "Nueve tablas de datos usan fuente inferior a 10 pt: 36-39 y 41-43 a 9 pt; 49-50 a 8/8.5 pt.",
+   "evidencia": "XML rPr/sz por tabla.",
+   "accion": "Revisar si la reduccion es imprescindible; mantener legibilidad y no ocultar falta de espacio."
+  },
+  {
+   "id": "INC-11",
+   "severidad": "informativa",
+   "pagina": "global",
+   "folio": "-",
+   "tipo": "cobertura_enlaces",
+   "hallazgo": "15/53 referencias sin DOI/URL: 9 libros y 6 articulos/norma/tesis. 28 DOI validos y unicos, no resueltos en linea. La ausencia de DOI en libros no es error APA por si misma y no se eleva a bloqueo editorial.",
+   "evidencia": "Conteo de la lista de referencias.",
+   "accion": "Completar enlaces cuando existan y activar los 38 URL/DOI; no declarar verificacion total ni convertir los libros sin DOI en bloqueo."
+  },
+  {
+   "id": "INC-12",
+   "severidad": "informativa",
+   "pagina": "1,44",
+   "folio": "portada,29",
+   "tipo": "resolucion_residual",
+   "hallazgo": "Escudo de portada 117.8 DPI (no numerado) y Figura 6 136.5 DPI (residuo de origen).",
+   "evidencia": "Medicion px/pulgada en DOCX y PDF.",
+   "accion": "Reportar como residual conocido; no certificar resolucion plena."
+  },
+  {
+   "id": "INC-13",
+   "severidad": "alta",
+   "pagina": 113,
+   "folio": "98",
+   "tipo": "acreditacion_sin_evidencia",
+   "hallazgo": "Tabla 34, columna Dictamen: INST-01 dice 'Acreditado por protocolo y concordancia interobservador' e INST-02 'Acreditado por protocolo y concordancia interevaluador', pero no existe ningun coeficiente ICC(2,1) ni kappa calculado en el documento.",
+   "evidencia": "Tabla 34 (5x7) en document.xml; texto previo en futuro ('se verificara mediante ICC(2,1) >= 0.75 y kappa de Cohen >= 0.80') y 'se garantizara'; busqueda de valores numericos ICC/kappa: 0 coincidencias en las 159 paginas.",
+   "accion": "Sustituir 'Acreditado...' por 'Confiabilidad prevista por protocolo; coeficiente pendiente de calculo' o equivalente, sin afirmar concordancia observada. No convertir la declaracion de calificaciones 4 en acreditacion ICC/kappa."
+  }
+ ],
+ "paginas": [
+  {
+   "pagina": 81,
+   "folio": "66",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 82,
+   "folio": "67",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 83,
+   "folio": "68",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 84,
+   "folio": "69",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 85,
+   "folio": "70",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 86,
+   "folio": "71",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 87,
+   "folio": "72",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 88,
+   "folio": "73",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 89,
+   "folio": "74",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 90,
+   "folio": "75",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 91,
+   "folio": "76",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 92,
+   "folio": "77",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 93,
+   "folio": "78",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 94,
+   "folio": "79",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 95,
+   "folio": "80",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Figura 44: imagen de codigo TypeScript/Jest, no consola ni 100%; Tabla 26 legible.",
+   "incidencias": []
+  },
+  {
+   "pagina": 96,
+   "folio": "81",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 97,
+   "folio": "82",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 98,
+   "folio": "83",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 99,
+   "folio": "84",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 100,
+   "folio": "85",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 101,
+   "folio": "86",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 102,
+   "folio": "87",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 103,
+   "folio": "88",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 104,
+   "folio": "89",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 105,
+   "folio": "90",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 106,
+   "folio": "91",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 107,
+   "folio": "92",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 32 (5x6, grid 8765): legible, sin fractura intrapalabra; nota y texto posterior correctos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 108,
+   "folio": "93",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 109,
+   "folio": "94",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 110,
+   "folio": "95",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 111,
+   "folio": "96",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 112,
+   "folio": "97",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 113,
+   "folio": "98",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "bloqueada",
+   "evidencia": "Tabla 34: 3 [Pendiente] en fila INST-03; resto legible; ecuacion (8) correcta.",
+   "incidencias": [
+    "INC-01",
+    "INC-13"
+   ]
+  },
+  {
+   "pagina": 114,
+   "folio": "99",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 34 continua con encabezado repetido; fila VAL-VD '1.000 comunicado (condicional)' y nota condicional; ecuacion (9).",
+   "incidencias": []
+  },
+  {
+   "pagina": 115,
+   "folio": "100",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 116,
+   "folio": "101",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 117,
+   "folio": "102",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 118,
+   "folio": "103",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 119,
+   "folio": "104",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Tabla 36 completa; su nota fluye a p120.",
+   "incidencias": [
+    "INC-06"
+   ]
+  },
+  {
+   "pagina": 120,
+   "folio": "105",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Nota de Tabla 36 al inicio; Figura 46 con rotulo/imagen/nota; nota afirma SPSS.",
+   "incidencias": [
+    "INC-03",
+    "INC-06"
+   ]
+  },
+  {
+   "pagina": 121,
+   "folio": "106",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Tabla 37 y Figura 47 legibles; nota de Figura 47 afirma SPSS.",
+   "incidencias": [
+    "INC-03"
+   ]
+  },
+  {
+   "pagina": 122,
+   "folio": "107",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 38 con nota en la misma pagina; sin defecto.",
+   "incidencias": []
+  },
+  {
+   "pagina": 123,
+   "folio": "108",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Figura 48: nota afirma SPSS; etiqueta 17.1 atravesada por barra de error.",
+   "incidencias": [
+    "INC-03",
+    "INC-08"
+   ]
+  },
+  {
+   "pagina": 124,
+   "folio": "109",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 125,
+   "folio": "110",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 126,
+   "folio": "111",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 127,
+   "folio": "112",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 128,
+   "folio": "113",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 129,
+   "folio": "114",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 43: filas HE1-HE3 y encabezado; continua p130.",
+   "incidencias": []
+  },
+  {
+   "pagina": 130,
+   "folio": "115",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 131,
+   "folio": "116",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 132,
+   "folio": "117",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 133,
+   "folio": "118",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 134,
+   "folio": "119",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 135,
+   "folio": "120",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": [
+    "INC-09"
+   ]
+  },
+  {
+   "pagina": 136,
+   "folio": "121",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": [
+    "INC-09"
+   ]
+  },
+  {
+   "pagina": 137,
+   "folio": "122",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": [
+    "INC-09"
+   ]
+  },
+  {
+   "pagina": 138,
+   "folio": "123",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": [
+    "INC-09"
+   ]
+  },
+  {
+   "pagina": 139,
+   "folio": "124",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": [
+    "INC-09"
+   ]
+  },
+  {
+   "pagina": 140,
+   "folio": "125",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": [
+    "INC-09"
+   ]
+  },
+  {
+   "pagina": 141,
+   "folio": "126",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 142,
+   "folio": "127",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 44 (21x2, grid 13720): inicio legible, sin desborde.",
+   "incidencias": []
+  },
+  {
+   "pagina": 143,
+   "folio": "128",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 44 continua con encabezado repetido; contenido legible.",
+   "incidencias": []
+  },
+  {
+   "pagina": 144,
+   "folio": "129",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 44 continua; filas de metodologia y problema especifico 2 legibles.",
+   "incidencias": []
+  },
+  {
+   "pagina": 145,
+   "folio": "130",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 44 cierra con nota en la misma pagina.",
+   "incidencias": []
+  },
+  {
+   "pagina": 146,
+   "folio": "131",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 45: filas VI, D1 y D2 legibles; continua p147.",
+   "incidencias": []
+  },
+  {
+   "pagina": 147,
+   "folio": "132",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 45 cierra con fila D3 y nota; sin defecto.",
+   "incidencias": []
+  },
+  {
+   "pagina": 148,
+   "folio": "133",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Anexo 3: Juez 1 en blanco; DNI, fecha y V/IVC vacios.",
+   "incidencias": []
+  },
+  {
+   "pagina": 149,
+   "folio": "134",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Anexo 3: Juez 2 en blanco; campos vacios.",
+   "incidencias": []
+  },
+  {
+   "pagina": 150,
+   "folio": "135",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Anexo 3: Juez 3 en blanco; campos vacios.",
+   "incidencias": []
+  },
+  {
+   "pagina": 151,
+   "folio": "136",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Anexo 4: parrafo introductorio con espaciado interpalabra extremo; Tablas 46 y 47 legibles.",
+   "incidencias": [
+    "INC-05"
+   ]
+  },
+  {
+   "pagina": 152,
+   "folio": "137",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "conforme",
+   "evidencia": "Tabla 47 cierra; Tabla 48 con 8 reactivos AP/UP y Likert 1-5; legible.",
+   "incidencias": []
+  },
+  {
+   "pagina": 153,
+   "folio": "138",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Anexo 5 y Tabla 49 landscape 18 columnas, 8 pt: legible; nota dice 'datos recolectados... reales'.",
+   "incidencias": [
+    "INC-02"
+   ]
+  },
+  {
+   "pagina": 154,
+   "folio": "139",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Tabla 50 landscape 18 columnas, 8 pt: legible; nota dice 'mediciones finales'.",
+   "incidencias": [
+    "INC-02"
+   ]
+  },
+  {
+   "pagina": 155,
+   "folio": "140",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "conforme",
+   "evidencia": "Hoja de contacto + geometria: sin desbordes, encabezados huerfanos, paginas vacias ni solapamientos.",
+   "incidencias": []
+  },
+  {
+   "pagina": 156,
+   "folio": "141",
+   "metodo_inspeccion": "contacto+geometria",
+   "estado": "observada",
+   "evidencia": "Solo la nota de Tabla 51; resto de la pagina en blanco.",
+   "incidencias": [
+    "INC-07"
+   ]
+  },
+  {
+   "pagina": 157,
+   "folio": "142",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Anexo 7: Figura 49 con marco vacio; nota afirma registro fotografico.",
+   "incidencias": [
+    "INC-04"
+   ]
+  },
+  {
+   "pagina": 158,
+   "folio": "143",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Figuras 50 y 51 con marcos vacios; notas afirman registro fotografico.",
+   "incidencias": [
+    "INC-04"
+   ]
+  },
+  {
+   "pagina": 159,
+   "folio": "144",
+   "metodo_inspeccion": "visual_ampliado",
+   "estado": "observada",
+   "evidencia": "Figura 52 con marco vacio; nota afirma registro fotografico.",
+   "incidencias": [
+    "INC-04"
+   ]
+  }
+ ],
+ "aclaraciones_incorporadas": [
+  "El alcance declarado (159 paginas, 59 tablas, 49 imagenes) corresponde exclusivamente a la v18; no se hereda automaticamente a la v19.",
+  "El DNI en blanco es una condicion intencional aprobada y no se registra como defecto.",
+  "El hueco de p27 al final del Capitulo I se conserva por decision aprobada; no se audita como incidencia.",
+  "Los libros sin DOI no son por si mismos error APA si la fuente existe; no se convierten en bloqueo editorial."
+ ],
+ "dictamen": "OBSERVADO_SUBSANABLE",
+ "estado_para_cierre": "NO APTO PARA QG-9 NI APROBACION HUMANA",
+ "condicion_de_cierre": "Corregir INC-01, INC-02 e INC-13 (alta severidad) y revisar INC-03 e INC-04 antes de cualquier aprobacion. No se certifica QG-9 ni aprobacion del tesista.",
+ "limitaciones": [
+  "No se recalcularon estadisticos ni se investigaron fuentes externas.",
+  "No se resolvieron en linea los 28 DOI: solo se verifico sintaxis, unicidad y correspondencia con la lista existente.",
+  "No se auditaron las paginas 1-80, asignadas a otro analista.",
+  "No se modifico DOCX, PDF, motor ni scripts."
+ ],
+ "verificaciones_motor": {
+  "import_docx_quirurgico": "OK",
+  "py_compile_docx": "OK",
+  "py_compile_compiladores": "OK",
+  "py_compile_xlsx_v2_v3": "OK",
+  "tests_seguridad": "2 passed in 0.13s",
+  "nota": "2/2 pruebas de seguridad correctas no equivalen a aprobar el legado ni los 80 tests."
+ }
+}

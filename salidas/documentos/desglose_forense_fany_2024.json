@@ -1,0 +1,4682 @@
+{
+  "metadatos_documento": {
+    "archivo_fuente": "Fany_Tesis_Bachiller_2024.pdf",
+    "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\referencias\\modelos_tesis\\Fany_Tesis_Bachiller_2024.pdf",
+    "paginas_totales": 106,
+    "autora": "Fany Quispe Tello",
+    "asesor": "MSc. Edwing Alcides Maquera Flores",
+    "institucion": "Universidad Nacional José María Arguedas (UNAJMA)",
+    "facultad": "Facultad de Ingeniería",
+    "escuela": "Escuela Profesional de Ingeniería de Sistemas (EPIS)",
+    "titulo": "INFLUENCIA DEL APLICATIVO WEBFQT PARA EL SEGUIMIENTO DE PROYECTOS DE INVERSIÓN PÚBLICA EN LA MUNICIPALIDAD DISTRITAL DE PORVENIR",
+    "anio": 2024,
+    "fecha_auditoria": "2026-10-21",
+    "auditor": "analista-documental (Squad A / Squad E)"
+  },
+  "resumen_estructural": {
+    "total_paginas_preliminares": 23,
+    "total_paginas_cuerpo_capitular": 43,
+    "total_paginas_finales_referencias": 6,
+    "total_paginas_anexos": 34,
+    "orientacion_general": "PORTRAIT",
+    "paginas_landscape": [
+      73,
+      74
+    ],
+    "paginas_escaneadas_sin_texto": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      104,
+      105,
+      106
+    ],
+    "ubicacion_numeracion": "PIE_DE_PAGINA_DERECHA",
+    "fuente_predominante": "Arial",
+    "tamanio_cuerpo_pt": 11.0,
+    "interlineado": "1.5 lineas",
+    "sangria_primera_linea_cm": 1.25
+  },
+  "paginas": [
+    {
+      "pagina_pdf": 1,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "PORTADA_OFICIAL",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS",
+        "FACULTAD DE INGENIERÍA",
+        "ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS"
+      ],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT"
+      ],
+      "tamanios_fuente_pt": [
+        12.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.46,
+        "superior": 2.52,
+        "derecho": 3.3,
+        "inferior": 2.9
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Portada oficial institucional UNAJMA (Anexo 17) con escudo oficial a color, título, autora, asesor, grado y fecha."
+    },
+    {
+      "pagina_pdf": 2,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (1/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 3,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (2/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 4,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (3/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 5,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (4/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 6,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        547.38,
+        821.78
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (5/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 7,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        550.39,
+        822.53
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (6/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 8,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        541.38,
+        824.78
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (7/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 9,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        542.88,
+        816.52
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (8/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 10,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        548.14,
+        818.02
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (9/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 11,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        540.63,
+        821.78
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (10/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 12,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        545.13,
+        821.78
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (11/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 13,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        546.63,
+        815.77
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (12/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 14,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTO_ADMINISTRATIVO_ESCANEADO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        534.62,
+        813.52
+      ],
+      "rotacion_grados": 90,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Página escaneada de trámite administrativo institucional (13/13): acta de sustentación, informe Turnitin, conformidad asesor, dictámenes del jurado calificador."
+    },
+    {
+      "pagina_pdf": 15,
+      "pagina_impresa_etiqueta": "ii",
+      "seccion": "DEDICATORIA",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "DEDICATORIA"
+      ],
+      "primeras_lineas": [
+        "ii",
+        "DEDICATORIA",
+        "A mi papá Florencio, quien desde el cielo me"
+      ],
+      "posicion_numeracion": [
+        505.3,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 9.01,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Dedicatoria personal de la tesista (a su padre, madre, hermanos y familia)."
+    },
+    {
+      "pagina_pdf": 16,
+      "pagina_impresa_etiqueta": "iii",
+      "seccion": "AGRADECIMIENTO",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "AGRADECIMIENTO"
+      ],
+      "primeras_lineas": [
+        "iii",
+        "AGRADECIMIENTO",
+        "Agradezco a Dios por su guía a lo largo de"
+      ],
+      "posicion_numeracion": [
+        502.8,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 8.56,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Agradecimiento a Dios, a la UNAJMA, docentes de la EPIS, asesor y compañeros."
+    },
+    {
+      "pagina_pdf": 17,
+      "pagina_impresa_etiqueta": "iv",
+      "seccion": "INDICE_GENERAL",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "ÍNDICE",
+        "1.1.",
+        "1.2.",
+        "1.2.1."
+      ],
+      "primeras_lineas": [
+        "iv",
+        "ÍNDICE",
+        "DEDICATORIA ............................................................................................................. ii"
+      ],
+      "posicion_numeracion": [
+        502.9,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Índice general de contenidos (1/2), jerarquía capitular decimal con tabulación punteada y número de página."
+    },
+    {
+      "pagina_pdf": 18,
+      "pagina_impresa_etiqueta": "v",
+      "seccion": "INDICE_GENERAL",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN .................................. 35",
+        "4.1.",
+        "4.1.1.",
+        "4.1.2."
+      ],
+      "primeras_lineas": [
+        "v",
+        "4.",
+        "CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN .................................. 35"
+      ],
+      "posicion_numeracion": [
+        505.4,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Índice general de contenidos (2/2), jerarquía capitular decimal con tabulación punteada y número de página."
+    },
+    {
+      "pagina_pdf": 19,
+      "pagina_impresa_etiqueta": "vi",
+      "seccion": "INDICE_DE_FIGURAS",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "ÍNDICE DE FIGURAS"
+      ],
+      "primeras_lineas": [
+        "vi",
+        "ÍNDICE DE FIGURAS",
+        "Figura 1 Secuencia de mapeo de procesos. ............................................................... 25"
+      ],
+      "posicion_numeracion": [
+        502.9,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 1 Secuencia de mapeo de procesos. ............................................................... 25",
+        "Figura 2 Ciclo de vida de un proyecto. ........................................................................ 28",
+        "Figura 3 Fases de un proyecto. .................................................................................. 29",
+        "Figura 4 Triple restricción de un proyecto. .................................................................. 30",
+        "Figura 5 Las fases del ciclos de Inversión ................................................................... 33",
+        "Figura 6 Cantidad de proyectos culminados. .............................................................. 43",
+        "Figura 7 Culminación de proyectos con el presupuesto asignado. .............................. 44",
+        "Figura 8 Histograma sobre el estado de proyectos. .................................................... 45",
+        "Figura 6  Histograma de seguimiento de proyectos antes de la implantación del",
+        "Figura 7  Histograma de seguimiento de proyectos posterior a la implantación del",
+        "Figura 8  Diagrama de actividades del usuario del área de infraestructura ................. 76",
+        "Figura 9  Diagrama de actividades del usuario ciudadano del municipio..................... 77"
+      ],
+      "imagenes_count": 0,
+      "descripcion_forense": "Índice de figuras (Figura 1 a Figura 9) con título descriptivo y página."
+    },
+    {
+      "pagina_pdf": 20,
+      "pagina_impresa_etiqueta": "vii",
+      "seccion": "INDICE_DE_TABLAS",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "ÍNDICE DE TABLAS"
+      ],
+      "primeras_lineas": [
+        "vii",
+        "ÍNDICE DE TABLAS",
+        "Tabla 1.  Matriz de operacionalización de variables .................................................... 37"
+      ],
+      "posicion_numeracion": [
+        500.4,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 1.  Matriz de operacionalización de variables .................................................... 37",
+        "Tabla 2.  Estados de los proyectos en ejecución. ....................................................... 38",
+        "Tabla 3  Validez de instrumentos por juicio de expertos en las variables. ................... 41",
+        "Tabla 4  Prueba de confiabilidad de la variable independiente. ................................... 41",
+        "Tabla 5  Prueba de confiabilidad de la variable dependiente. ..................................... 42",
+        "Tabla 6  Porcentajes de proyectos culminados. .......................................................... 42",
+        "Tabla 7  Proyectos que culminaron con el presupuesto asignado. .............................. 43",
+        "Tabla 8  Estado de proyectos. .................................................................................... 44",
+        "Tabla 10  Instrumento aplicado antes de la implantación del software. ....................... 46",
+        "Tabla 11 Instrumento aplicado posterior a la implantación del software. ..................... 47",
+        "Tabla 12  Prueba de normalidad ................................................................................. 48",
+        "Tabla 13  Contrastación de hipótesis general ............................................................. 49",
+        "Tabla 14  Contrastación de hipótesis específica 1 ...................................................... 50",
+        "Tabla 15  Contrastación de hipótesis específica 2 ...................................................... 50",
+        "Tabla 16  Historia de usuario - Desarrollo de la página principal de la aplicación",
+        "Tabla 17 Historia de usuario - Creación del menú principal para el ciudadano ........... 73",
+        "Tabla 18 Creación del menú carga de información ..................................................... 74",
+        "Tabla 19 Creación del menú reporte de gestión .......................................................... 75"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Índice de tablas (Tabla 1 a Tabla 19) con título descriptivo y página."
+    },
+    {
+      "pagina_pdf": 21,
+      "pagina_impresa_etiqueta": "viii",
+      "seccion": "RESUMEN",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "RESUMEN"
+      ],
+      "primeras_lineas": [
+        "viii",
+        "RESUMEN",
+        "Esta investigación tuvo el propósito de determinar la influencia del aplicativo"
+      ],
+      "posicion_numeracion": [
+        497.7,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Resumen estructurado en un solo párrafo en español con 5 palabras clave."
+    },
+    {
+      "pagina_pdf": 22,
+      "pagina_impresa_etiqueta": "ix",
+      "seccion": "ABSTRACT",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "ABSTRACT"
+      ],
+      "primeras_lineas": [
+        "ix",
+        "ABSTRACT",
+        "This research was carried out with the purpose of determining the influence of"
+      ],
+      "posicion_numeracion": [
+        503.0,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Abstract en inglés formal con 5 keywords."
+    },
+    {
+      "pagina_pdf": 23,
+      "pagina_impresa_etiqueta": "x",
+      "seccion": "CHUMASQA",
+      "categoria": "PAGINAS_PRELIMINARES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "CHUMASQA"
+      ],
+      "primeras_lineas": [
+        "x",
+        "CHUMASQA",
+        "Kay investigacionqa ruwakurqa chay propósito nisqawanmi determinanankupaq"
+      ],
+      "posicion_numeracion": [
+        505.5,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ROMANO_MINUSCULA",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Chumasqa en lengua originaria quechua chanka con 5 sapaq simikuna (keywords)."
+    },
+    {
+      "pagina_pdf": 24,
+      "pagina_impresa_etiqueta": "11",
+      "seccion": "INTRODUCCION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "INTRODUCCIÓN",
+        "Capítulo I: Problema de investigación, donde contiene la realidad problemática,",
+        "la formulación del problema, los objetivos, la justificación y la hipótesis. Capítulo II:",
+        "Antecedentes el cual lo integran los internacionales y nacionales. Capítulo III: Marco"
+      ],
+      "primeras_lineas": [
+        "11",
+        "INTRODUCCIÓN",
+        "La administración de proyectos es una diligencia muy relevante dentro del"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Introducción general de la investigación: motivación, justificación y síntesis capitular."
+    },
+    {
+      "pagina_pdf": 25,
+      "pagina_impresa_etiqueta": "12",
+      "seccion": "CAPITULO_I_PROBLEMA_DE_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "CAPITULO I: PROBLEMA DE INVESTIGACIÓN",
+        "1.1."
+      ],
+      "primeras_lineas": [
+        "12",
+        "CAPITULO I: PROBLEMA DE INVESTIGACIÓN",
+        "1.1."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo I: Problema de Investigación (1/4). Realidad problemática, formulación general/específica, justificación e hipótesis."
+    },
+    {
+      "pagina_pdf": 26,
+      "pagina_impresa_etiqueta": "13",
+      "seccion": "CAPITULO_I_PROBLEMA_DE_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "1.2.",
+        "1.2.1. Problema general",
+        "1.2.2. Problemas específicos",
+        "1.3."
+      ],
+      "primeras_lineas": [
+        "13",
+        "1.2.",
+        "Formulación del problema"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 3.61,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo I: Problema de Investigación (2/4). Realidad problemática, formulación general/específica, justificación e hipótesis."
+    },
+    {
+      "pagina_pdf": 27,
+      "pagina_impresa_etiqueta": "14",
+      "seccion": "CAPITULO_I_PROBLEMA_DE_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "1.4."
+      ],
+      "primeras_lineas": [
+        "14",
+        "1.4.",
+        "Justificación"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo I: Problema de Investigación (3/4). Realidad problemática, formulación general/específica, justificación e hipótesis."
+    },
+    {
+      "pagina_pdf": 28,
+      "pagina_impresa_etiqueta": "15",
+      "seccion": "CAPITULO_I_PROBLEMA_DE_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "1.5.",
+        "1.5.1. Hipótesis general",
+        "1.5.2. Hipótesis específicas"
+      ],
+      "primeras_lineas": [
+        "15",
+        "1.5.",
+        "Hipótesis"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo I: Problema de Investigación (4/4). Realidad problemática, formulación general/específica, justificación e hipótesis."
+    },
+    {
+      "pagina_pdf": 29,
+      "pagina_impresa_etiqueta": "16",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "2. CAPITULO II: ANTECEDENTES",
+        "2.1."
+      ],
+      "primeras_lineas": [
+        "16",
+        "2. CAPITULO II: ANTECEDENTES",
+        "2.1."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (1/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 30,
+      "pagina_impresa_etiqueta": "17",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "inesperados. El investigador llegó a las siguientes conclusiones: en primer lugar,"
+      ],
+      "primeras_lineas": [
+        "17",
+        "investigación. Los resultados obtenidos de cada prueba se ajustan a las",
+        "especificaciones de los diferentes módulos. El investigador concluye que se"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (2/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 31,
+      "pagina_impresa_etiqueta": "18",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "18",
+        "Rodríguez (2022) elaboró una investigación que llevó por título “Software para",
+        "el seguimiento, la gestión y el control de proyectos de grado en el Departamento de"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (3/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 32,
+      "pagina_impresa_etiqueta": "19",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "2.2."
+      ],
+      "primeras_lineas": [
+        "19",
+        "desarrollo ágil y flexible. El resultado alcanzado fue la entrega de un software o",
+        "aplicación con un entorno web intuitivo para los usuarios y con funcionalidades para"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (4/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 33,
+      "pagina_impresa_etiqueta": "20",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "20",
+        "de desarrollar un sistema web que permita automatizar el proceso de seguimiento y",
+        "monitoreo del avance técnico y financiero de transferencias hasta la liquidación de la"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (5/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 34,
+      "pagina_impresa_etiqueta": "21",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "21",
+        "desviación de costos de la administración de proyectos mineros, en la etapa de",
+        "Pre_Test consiguió una media de 84,58%, así mismo, la etapa Pos_Test se tuvo un"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (6/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 35,
+      "pagina_impresa_etiqueta": "22",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "22",
+        "la empresa Hundred S.A.C.”, la metodología que usó en esta investigación fue de tipo",
+        "aplicada con un diseño experimental. Los resultados mostraron una gran discrepancia"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (7/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 36,
+      "pagina_impresa_etiqueta": "23",
+      "seccion": "CAPITULO_II_ANTECEDENTES",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "23",
+        "registro para su posterior búsqueda en otras palabras se redujo considerablemente el",
+        "tiempo de obtención de esta información, en ese mismo sentido un SI de comisión"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo II: Antecedentes (8/8). Antecedentes internacionales, nacionales y locales según formato canónico UNAJMA."
+    },
+    {
+      "pagina_pdf": 37,
+      "pagina_impresa_etiqueta": "24",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3. CAPITULO III: MARCO TEÓRICO",
+        "3.1.",
+        "3.1.1. Extreme Programming (XP)"
+      ],
+      "primeras_lineas": [
+        "24",
+        "3. CAPITULO III: MARCO TEÓRICO",
+        "3.1."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo III: Marco Teórico (1/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 38,
+      "pagina_impresa_etiqueta": "25",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3.1.2. Aplicación Web"
+      ],
+      "primeras_lineas": [
+        "25",
+        "equipo de desarrollo y el cliente.",
+        "La metodología ágil es recomendada para cualquier empresa o entidad pública"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 1"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo III: Marco Teórico (2/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 39,
+      "pagina_impresa_etiqueta": "26",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3.1.3. Gestión de proyectos"
+      ],
+      "primeras_lineas": [
+        "26",
+        "En ese mismo sentido Somerville (2011) define al software como programas de",
+        "cómputo y su documentación asociada para un adecuado funcionamiento, estos se"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.86,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo III: Marco Teórico (3/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 40,
+      "pagina_impresa_etiqueta": "27",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "27",
+        "La gestión de proyectos los cuales aportan de manera significativa a la presente",
+        "investigación."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.86,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo III: Marco Teórico (4/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 41,
+      "pagina_impresa_etiqueta": "28",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "28",
+        "Figura 2",
+        "Ciclo de vida de un proyecto."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 2"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo III: Marco Teórico (5/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 42,
+      "pagina_impresa_etiqueta": "29",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "29",
+        "Figura 3",
+        "Fases de un proyecto."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 3"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo III: Marco Teórico (6/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 43,
+      "pagina_impresa_etiqueta": "30",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "30",
+        "Figura 4",
+        "Triple restricción de un proyecto."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 4"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo III: Marco Teórico (7/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 44,
+      "pagina_impresa_etiqueta": "31",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3.1.4. Inversión Pública",
+        "3.1.5. Proyecto de Inversión Pública (PIP)",
+        "3.1.6. Invierte Pe"
+      ],
+      "primeras_lineas": [
+        "31",
+        "Generalmente el mayor coste en el proyecto corresponde al pago del personal, por lo",
+        "tanto es muy importante controlar el número de horas que se asignan a cada actividad"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo III: Marco Teórico (8/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 45,
+      "pagina_impresa_etiqueta": "32",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3.1.7. Ciclos de Inversión del Invierte Perú"
+      ],
+      "primeras_lineas": [
+        "32",
+        "esta iniciativa es la “Dirección General de Programación Multianual de Inversiones”",
+        "(DGPMI) del “Ministerio de Economía y Finanzas” (MEF) quien es la autoridad rectora,"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo III: Marco Teórico (9/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 46,
+      "pagina_impresa_etiqueta": "33",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3.1.8. Ley de contrataciones del estado"
+      ],
+      "primeras_lineas": [
+        "33",
+        "sirve de filtro para la ejecución del proyecto. Se formulan los proyectos y se evalúa su",
+        "pertinencia en los niveles de financiamiento, operación y mantenimiento. Dependiendo"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 5"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo III: Marco Teórico (10/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 47,
+      "pagina_impresa_etiqueta": "34",
+      "seccion": "CAPITULO_III_MARCO_TEORICO",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "3.2."
+      ],
+      "primeras_lineas": [
+        "34",
+        "Existen principios que rigen las contrataciones del Estado, puesto que se",
+        "desarrollan sobre la base de los siguientes principios, sin perjuicio de la aplicación de"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo III: Marco Teórico (11/11). Bases teóricas del software, Scrum/XP, gestión de proyectos y marco conceptual."
+    },
+    {
+      "pagina_pdf": 48,
+      "pagina_impresa_etiqueta": "35",
+      "seccion": "CAPITULO_IV_METODOLOGIA_DE_LA_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "4. CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN",
+        "4.1.",
+        "4.1.1. Tipo de investigación",
+        "4.1.2. Nivel de investigación"
+      ],
+      "primeras_lineas": [
+        "35",
+        "4. CAPITULO IV: METODOLOGÍA DE LA INVESTIGACIÓN",
+        "4.1."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo IV: Metodología (1/6). Tipo, nivel, diseño preexperimental, operacionalización, técnicas e instrumentos, validación y análisis de datos."
+    },
+    {
+      "pagina_pdf": 49,
+      "pagina_impresa_etiqueta": "36",
+      "seccion": "CAPITULO_IV_METODOLOGIA_DE_LA_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "4.1.3. Diseño de investigación",
+        "4.2."
+      ],
+      "primeras_lineas": [
+        "36",
+        "4.1.3. Diseño de investigación",
+        "Hernandez & Mendoza (2018) indican que una investigación es de diseño"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo IV: Metodología (2/6). Tipo, nivel, diseño preexperimental, operacionalización, técnicas e instrumentos, validación y análisis de datos."
+    },
+    {
+      "pagina_pdf": 50,
+      "pagina_impresa_etiqueta": "37",
+      "seccion": "CAPITULO_IV_METODOLOGIA_DE_LA_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "4.3."
+      ],
+      "primeras_lineas": [
+        "37",
+        "Tabla 1.",
+        "Matriz de operacionalización de variables"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        10.7,
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.83,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 1."
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo IV: Metodología (3/6). Tipo, nivel, diseño preexperimental, operacionalización, técnicas e instrumentos, validación y análisis de datos."
+    },
+    {
+      "pagina_pdf": 51,
+      "pagina_impresa_etiqueta": "38",
+      "seccion": "CAPITULO_IV_METODOLOGIA_DE_LA_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "4.4."
+      ],
+      "primeras_lineas": [
+        "38",
+        "a esta totalidad se les hizo el seguimiento y control para clasificarlos en diferentes",
+        "estados."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 2."
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo IV: Metodología (4/6). Tipo, nivel, diseño preexperimental, operacionalización, técnicas e instrumentos, validación y análisis de datos."
+    },
+    {
+      "pagina_pdf": 52,
+      "pagina_impresa_etiqueta": "39",
+      "seccion": "CAPITULO_IV_METODOLOGIA_DE_LA_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "4.5.",
+        "4.6."
+      ],
+      "primeras_lineas": [
+        "39",
+        "diferentes y son los siguientes: una forma y un contenido.",
+        "El instrumento principal para la captura de datos fue el cuestionario con un"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo IV: Metodología (5/6). Tipo, nivel, diseño preexperimental, operacionalización, técnicas e instrumentos, validación y análisis de datos."
+    },
+    {
+      "pagina_pdf": 53,
+      "pagina_impresa_etiqueta": "40",
+      "seccion": "CAPITULO_IV_METODOLOGIA_DE_LA_INVESTIGACION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "4.7."
+      ],
+      "primeras_lineas": [
+        "40",
+        "ya que permite trabajar con diferentes fórmulas matemáticas y generar gráficos acordes",
+        "a lo necesitado en esta investigación, posterior a ello se utilizará el software SPSS en"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo IV: Metodología (6/6). Tipo, nivel, diseño preexperimental, operacionalización, técnicas e instrumentos, validación y análisis de datos."
+    },
+    {
+      "pagina_pdf": 54,
+      "pagina_impresa_etiqueta": "41",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "5. CAPITULO V: RESULTADOS",
+        "5.1.",
+        "0.872",
+        "0.766"
+      ],
+      "primeras_lineas": [
+        "41",
+        "5. CAPITULO V: RESULTADOS",
+        "5.1."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri",
+        "Wingdings-Regular"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 3",
+        "Tabla 4"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo V: Resultados (1/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 55,
+      "pagina_impresa_etiqueta": "42",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "0.892",
+        "0.866",
+        "0.729"
+      ],
+      "primeras_lineas": [
+        "42",
+        "Tabla 5",
+        "Prueba de confiabilidad de la variable dependiente."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 5",
+        "Tabla 6"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo V: Resultados (2/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 56,
+      "pagina_impresa_etiqueta": "43",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "43",
+        "Figura 6",
+        "Cantidad de proyectos culminados."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 7"
+      ],
+      "figuras": [
+        "Figura 6"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo V: Resultados (3/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 57,
+      "pagina_impresa_etiqueta": "44",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "44",
+        "Figura 7",
+        "Culminación de proyectos con el presupuesto asignado."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 8"
+      ],
+      "figuras": [
+        "Figura 7"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo V: Resultados (4/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 58,
+      "pagina_impresa_etiqueta": "45",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "muestra el reporte de los estados de proyectos el cual se observa en el Anexo 17."
+      ],
+      "primeras_lineas": [
+        "45",
+        "Figura 8",
+        "Histograma sobre el estado de proyectos."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 8"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo V: Resultados (5/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 59,
+      "pagina_impresa_etiqueta": "46",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "20.83% perciben como medio y solo el 4.17% como nivel alto.",
+        "75.00",
+        "20.83",
+        "4.17"
+      ],
+      "primeras_lineas": [
+        "46",
+        "Figura 9",
+        "Histograma de seguimiento de proyectos antes de la implantación del software"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 9"
+      ],
+      "figuras": [
+        "Figura 9"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo V: Resultados (6/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 60,
+      "pagina_impresa_etiqueta": "47",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "16.66",
+        "25.00",
+        "58.33"
+      ],
+      "primeras_lineas": [
+        "47",
+        "Figura 10",
+        "Histograma de seguimiento de proyectos posterior a la implantación del software"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 10"
+      ],
+      "figuras": [
+        "Figura 10"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Capítulo V: Resultados (7/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 61,
+      "pagina_impresa_etiqueta": "48",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "5.2.",
+        "0.188",
+        "0.000",
+        "0.176"
+      ],
+      "primeras_lineas": [
+        "48",
+        "5.2.",
+        "Análisis inferencial"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 11"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo V: Resultados (8/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 62,
+      "pagina_impresa_etiqueta": "49",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "0.002"
+      ],
+      "primeras_lineas": [
+        "49",
+        "Contrastación de hipótesis",
+        "Hipótesis general"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 12"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo V: Resultados (9/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 63,
+      "pagina_impresa_etiqueta": "50",
+      "seccion": "CAPITULO_V_RESULTADOS",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "0.000",
+        "0.001"
+      ],
+      "primeras_lineas": [
+        "50",
+        "Tabla 13",
+        "Contrastación de hipótesis específica 1"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 13",
+        "Tabla 14"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo V: Resultados (10/10). Juicio de expertos, confiabilidad, descriptivos pretest/postest, normalidad Shapiro-Wilk y contrastación de hipótesis."
+    },
+    {
+      "pagina_pdf": 64,
+      "pagina_impresa_etiqueta": "51",
+      "seccion": "CAPITULO_VI_DISCUSION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "CAPITULO VI: DISCUSIÓN",
+        "administración de proyectos e incidió de manera positiva en el índice de desviación de",
+        "cronograma y en el índice de desviación de costos, sus resultados concuerdan con los"
+      ],
+      "primeras_lineas": [
+        "51",
+        "CAPITULO VI: DISCUSIÓN",
+        "El objetivo general fue determinar la influencia del aplicativo WebFQT en el"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo VI: Discusión (1/3). Triangulación de resultados frente a antecedentes y bases teóricas."
+    },
+    {
+      "pagina_pdf": 65,
+      "pagina_impresa_etiqueta": "52",
+      "seccion": "CAPITULO_VI_DISCUSION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "52",
+        "obtenidos en la presente investigación, ya que ambos concluyen en que un sistema",
+        "informático optimiza los procesos de seguimiento y control de proyectos en ejecución."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo VI: Discusión (2/3). Triangulación de resultados frente a antecedentes y bases teóricas."
+    },
+    {
+      "pagina_pdf": 66,
+      "pagina_impresa_etiqueta": "53",
+      "seccion": "CAPITULO_VI_DISCUSION",
+      "categoria": "CUERPO_PRINCIPAL",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "53",
+        "determinar la influencia de un sistema web en el proceso de control de proyectos en la",
+        "empresa Hundred S.A.C., los resultados evidenciaron una gran diferencia entre el antes"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Capítulo VI: Discusión (3/3). Triangulación de resultados frente a antecedentes y bases teóricas."
+    },
+    {
+      "pagina_pdf": 67,
+      "pagina_impresa_etiqueta": "54",
+      "seccion": "CONCLUSIONES",
+      "categoria": "SECCIONES_FINALES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "CONCLUSIONES"
+      ],
+      "primeras_lineas": [
+        "54",
+        "CONCLUSIONES",
+        "•"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri",
+        "SymbolMT"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Conclusiones generales y específicas alineadas 1:1 a los objetivos de la investigación."
+    },
+    {
+      "pagina_pdf": 68,
+      "pagina_impresa_etiqueta": "55",
+      "seccion": "RECOMENDACIONES",
+      "categoria": "SECCIONES_FINALES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "RECOMENDACIONES"
+      ],
+      "primeras_lineas": [
+        "55",
+        "RECOMENDACIONES",
+        "•"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri",
+        "SymbolMT"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Recomendaciones prácticas para la entidad beneficiaria, la universidad y futuros investigadores."
+    },
+    {
+      "pagina_pdf": 69,
+      "pagina_impresa_etiqueta": "56",
+      "seccion": "BIBLIOGRAFIA",
+      "categoria": "SECCIONES_FINALES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "BIBLIOGRAFÍA",
+        "Arias, F. (2012). El Proyecto de Investigación Introducción a la metodología científica"
+      ],
+      "primeras_lineas": [
+        "56",
+        "BIBLIOGRAFÍA",
+        "Amin, A., Grunske, L., y Colman, A. (2013). An approach to software reliability prediction"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        7.0,
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Bibliografía y Referencias (1/4) en formato APA 7 con sangría francesa y DOIs."
+    },
+    {
+      "pagina_pdf": 70,
+      "pagina_impresa_etiqueta": "57",
+      "seccion": "BIBLIOGRAFIA",
+      "categoria": "SECCIONES_FINALES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "57",
+        "Constanzo, M. (2014). Comparación de modelos de calidad, factores y métricas en el",
+        "ámbito"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Bibliografía y Referencias (2/4) en formato APA 7 con sangría francesa y DOIs."
+    },
+    {
+      "pagina_pdf": 71,
+      "pagina_impresa_etiqueta": "58",
+      "seccion": "BIBLIOGRAFIA",
+      "categoria": "SECCIONES_FINALES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "58",
+        "Iñigo, R., y Losune, V. (2010). Guía para la elaboración de proyectos. Vasco.",
+        "Ley 30225. (2014). Ley de contrataciones del estado. Recuperado a partir de"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        7.0,
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Bibliografía y Referencias (3/4) en formato APA 7 con sangría francesa y DOIs."
+    },
+    {
+      "pagina_pdf": 72,
+      "pagina_impresa_etiqueta": "59",
+      "seccion": "BIBLIOGRAFIA",
+      "categoria": "SECCIONES_FINALES",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "59",
+        "Colombia:",
+        "Pontificia Universidad Javeriana. Recuperado a partir de"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        7.0,
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.89,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Bibliografía y Referencias (4/4) en formato APA 7 con sangría francesa y DOIs."
+    },
+    {
+      "pagina_pdf": 73,
+      "pagina_impresa_etiqueta": "60",
+      "seccion": "ANEXO_1_MATRIZ_DE_CONSISTENCIA",
+      "categoria": "ANEXOS",
+      "orientacion": "LANDSCAPE",
+      "dimensiones_pt": [
+        841.92,
+        595.32
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "ANEXO",
+        "Anexo 1. Matriz de consistencia"
+      ],
+      "primeras_lineas": [
+        "60",
+        "ANEXO",
+        "Anexo 1. Matriz de consistencia"
+      ],
+      "posicion_numeracion": [
+        759.9,
+        548.6,
+        773.6,
+        559.7
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0,
+        12.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 1.52,
+        "superior": 3.02,
+        "derecho": 2.41,
+        "inferior": 1.26
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 1: Matriz de Consistencia (1/2) en orientación HORIZONTAL (LANDSCAPE)."
+    },
+    {
+      "pagina_pdf": 74,
+      "pagina_impresa_etiqueta": "61",
+      "seccion": "ANEXO_1_MATRIZ_DE_CONSISTENCIA",
+      "categoria": "ANEXOS",
+      "orientacion": "LANDSCAPE",
+      "dimensiones_pt": [
+        841.92,
+        595.32
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "61",
+        "b. ¿De qué manera el aplicativo",
+        "WebFQT influye en el tiempo de"
+      ],
+      "posicion_numeracion": [
+        759.9,
+        548.6,
+        773.6,
+        559.7
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 1.52,
+        "superior": 3.03,
+        "derecho": 2.41,
+        "inferior": 1.26
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 1: Matriz de Consistencia (2/2) en orientación HORIZONTAL (LANDSCAPE)."
+    },
+    {
+      "pagina_pdf": 75,
+      "pagina_impresa_etiqueta": "62",
+      "seccion": "ANEXO_2_INSTRUMENTO_DE_VALIDACION",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 2. Instrumento de validación"
+      ],
+      "primeras_lineas": [
+        "62",
+        "Anexo 2. Instrumento de validación"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 2: Instrumentos y certificados de validación por juicio de 3 expertos (1/6)."
+    },
+    {
+      "pagina_pdf": 76,
+      "pagina_impresa_etiqueta": "63",
+      "seccion": "ANEXO_2_INSTRUMENTO_DE_VALIDACION",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "63"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 17.61,
+        "superior": 28.06,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 2: Instrumentos y certificados de validación por juicio de 3 expertos (2/6)."
+    },
+    {
+      "pagina_pdf": 77,
+      "pagina_impresa_etiqueta": "64",
+      "seccion": "ANEXO_2_INSTRUMENTO_DE_VALIDACION",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "64"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 17.61,
+        "superior": 28.06,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 2: Instrumentos y certificados de validación por juicio de 3 expertos (3/6)."
+    },
+    {
+      "pagina_pdf": 78,
+      "pagina_impresa_etiqueta": "65",
+      "seccion": "ANEXO_2_INSTRUMENTO_DE_VALIDACION",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "65"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 17.61,
+        "superior": 28.06,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 2: Instrumentos y certificados de validación por juicio de 3 expertos (4/6)."
+    },
+    {
+      "pagina_pdf": 79,
+      "pagina_impresa_etiqueta": "66",
+      "seccion": "ANEXO_2_INSTRUMENTO_DE_VALIDACION",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "66"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 17.61,
+        "superior": 28.06,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 2: Instrumentos y certificados de validación por juicio de 3 expertos (5/6)."
+    },
+    {
+      "pagina_pdf": 80,
+      "pagina_impresa_etiqueta": "67",
+      "seccion": "ANEXO_2_INSTRUMENTO_DE_VALIDACION",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "67"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 17.61,
+        "superior": 28.06,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 2: Instrumentos y certificados de validación por juicio de 3 expertos (6/6)."
+    },
+    {
+      "pagina_pdf": 81,
+      "pagina_impresa_etiqueta": "68",
+      "seccion": "ANEXO_3_INSTRUMENTO_DE_RECOJO_DE_DATOS",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 3. Instrumento de recojo de datos"
+      ],
+      "primeras_lineas": [
+        "68",
+        "Anexo 3. Instrumento de recojo de datos",
+        "El objetivo es determinar la influencia del aplicativo WebFQT en el seguimiento"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 2.37,
+        "superior": 2.51,
+        "derecho": 1.84,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 3: Instrumento de recolección de datos (1/3), cuestionario en escala Likert."
+    },
+    {
+      "pagina_pdf": 82,
+      "pagina_impresa_etiqueta": "69",
+      "seccion": "ANEXO_3_INSTRUMENTO_DE_RECOJO_DE_DATOS",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "69",
+        "8",
+        "¿La percepción de los usuarios, (sin el sistema /tras la implantación"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 2.37,
+        "superior": 2.53,
+        "derecho": 1.84,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 3: Instrumento de recolección de datos (2/3), cuestionario en escala Likert."
+    },
+    {
+      "pagina_pdf": 83,
+      "pagina_impresa_etiqueta": "70",
+      "seccion": "ANEXO_3_INSTRUMENTO_DE_RECOJO_DE_DATOS",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "70",
+        "Dimensión 2: Presupuesto",
+        "Escala de medición"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 2.54,
+        "superior": 2.51,
+        "derecho": 1.84,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 3: Instrumento de recolección de datos (3/3), cuestionario en escala Likert."
+    },
+    {
+      "pagina_pdf": 84,
+      "pagina_impresa_etiqueta": "71",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 4. Metodología de desarrollo XP",
+        "1.1. Historias de Usuario"
+      ],
+      "primeras_lineas": [
+        "71",
+        "Anexo 4. Metodología de desarrollo XP",
+        "1. Fase de planificación"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (1/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 85,
+      "pagina_impresa_etiqueta": "72",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "1.2. Descripción de las Historias de Usuario"
+      ],
+      "primeras_lineas": [
+        "72",
+        "1.2. Descripción de las Historias de Usuario",
+        "Tabla 15"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 15"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (2/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 86,
+      "pagina_impresa_etiqueta": "73",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "73",
+        "Tabla 16",
+        "Historia de usuario - Creación del menú principal para el ciudadano"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 16"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (3/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 87,
+      "pagina_impresa_etiqueta": "74",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "74",
+        "Tabla 17",
+        "Creación del menú carga de información"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 17"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (4/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 88,
+      "pagina_impresa_etiqueta": "75",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "75",
+        "Tabla 18",
+        "Creación del menú reporte de gestión"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [
+        "Tabla 18"
+      ],
+      "figuras": [],
+      "imagenes_count": 0,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (5/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 89,
+      "pagina_impresa_etiqueta": "76",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "2.1. Diagrama de actividades"
+      ],
+      "primeras_lineas": [
+        "76",
+        "2. Diseño",
+        "2.1. Diagrama de actividades"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-BoldMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 11"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (6/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 90,
+      "pagina_impresa_etiqueta": "77",
+      "seccion": "ANEXO_4_METODOLOGIA_DESARROLLO_XP",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [],
+      "primeras_lineas": [
+        "77",
+        "Figura 12",
+        "Diagrama de actividades del usuario ciudadano del municipio"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldItalicMT",
+        "Arial-ItalicMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [
+        "Figura 12"
+      ],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 4: Metodología de desarrollo XP (7/7), historias de usuario HU-01 a HU-04, diagramas de actividades."
+    },
+    {
+      "pagina_pdf": 91,
+      "pagina_impresa_etiqueta": "78",
+      "seccion": "ANEXO_5_DIAGRAMA_RELACIONAL_BD",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 5. Diagrama relacional de la base de datos"
+      ],
+      "primeras_lineas": [
+        "78",
+        "Anexo 5. Diagrama relacional de la base de datos"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 5: Diagrama físico relacional de la base de datos MySQL/PostgreSQL."
+    },
+    {
+      "pagina_pdf": 92,
+      "pagina_impresa_etiqueta": "79",
+      "seccion": "ANEXO_6_DIAGRAMA_CASOS_DE_USO",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 6. Diagrama de casos de uso del usuario administrador",
+        "En el anexo 6, se muestra el diagrama de casos de uso. El responsable del área"
+      ],
+      "primeras_lineas": [
+        "79",
+        "Anexo 6. Diagrama de casos de uso del usuario administrador",
+        "En el anexo 6, se muestra el diagrama de casos de uso. El responsable del área"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 6: Diagrama de casos de uso UML para roles del sistema."
+    },
+    {
+      "pagina_pdf": 93,
+      "pagina_impresa_etiqueta": "80",
+      "seccion": "ANEXO_7_DIAGRAMA_CASOS_DE_USO",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 7. Diagrama de casos de uso del usuario contratista",
+        "En el anexo 7, es el caso de uso del contratista tendrá acceso a los siguiente"
+      ],
+      "primeras_lineas": [
+        "80",
+        "Anexo 7. Diagrama de casos de uso del usuario contratista",
+        "En el anexo 7, es el caso de uso del contratista tendrá acceso a los siguiente"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 7: Diagrama de casos de uso UML para roles del sistema."
+    },
+    {
+      "pagina_pdf": 94,
+      "pagina_impresa_etiqueta": "81",
+      "seccion": "ANEXO_8_DIAGRAMA_CASOS_DE_USO",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 8. Diagrama de casos de uso del usuario Supervisor de obra",
+        "En el anexo 8, es el diagrama de casos de uso del supervisor tiene acceso a los"
+      ],
+      "primeras_lineas": [
+        "81",
+        "Anexo 8. Diagrama de casos de uso del usuario Supervisor de obra",
+        "En el anexo 8, es el diagrama de casos de uso del supervisor tiene acceso a los"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 8: Diagrama de casos de uso UML para roles del sistema."
+    },
+    {
+      "pagina_pdf": 95,
+      "pagina_impresa_etiqueta": "82",
+      "seccion": "ANEXO_9_DIAGRAMA_CASOS_DE_USO",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 9. Diagrama de casos de uso del usuario del público en general",
+        "En el anexo 9, se muestra en la primera pantalla ir al botón ver reportes pueden"
+      ],
+      "primeras_lineas": [
+        "82",
+        "Anexo 9. Diagrama de casos de uso del usuario del público en general",
+        "En el anexo 9, se muestra en la primera pantalla ir al botón ver reportes pueden"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 9: Diagrama de casos de uso UML para roles del sistema."
+    },
+    {
+      "pagina_pdf": 96,
+      "pagina_impresa_etiqueta": "83",
+      "seccion": "ANEXO_10_ORGANIGRAMA",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 10. Organigrama de la municipalidad distrital de el Provenir"
+      ],
+      "primeras_lineas": [
+        "83",
+        "Anexo 10. Organigrama de la municipalidad distrital de el Provenir"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 10: Organigrama estructural de la entidad intervenida."
+    },
+    {
+      "pagina_pdf": 97,
+      "pagina_impresa_etiqueta": "84",
+      "seccion": "ANEXO_11_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 11. Acceso a Login y tipo de usuario"
+      ],
+      "primeras_lineas": [
+        "84",
+        "Anexo 11. Acceso a Login y tipo de usuario"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 11: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 98,
+      "pagina_impresa_etiqueta": "85",
+      "seccion": "ANEXO_12_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 12. Menú principal"
+      ],
+      "primeras_lineas": [
+        "85",
+        "Anexo 12. Menú principal",
+        "Cuando ingresa como encargado del área de infraestructura tiene todos los"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Anexo 12: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 99,
+      "pagina_impresa_etiqueta": "86",
+      "seccion": "ANEXO_13_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 13. Menú usuario del responsable del área de infraestructura"
+      ],
+      "primeras_lineas": [
+        "86",
+        "Anexo 13. Menú usuario del responsable del área de infraestructura",
+        "El responsable de infraestructura registra al usuario y configuración los datos"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 13: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 100,
+      "pagina_impresa_etiqueta": "87",
+      "seccion": "ANEXO_14_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 14. Menú agregar proyecto",
+        "El anexo 14, se ingresa un proyecto nuevo que se ejecutará con su respectivo"
+      ],
+      "primeras_lineas": [
+        "87",
+        "Anexo 14. Menú agregar proyecto",
+        "El anexo 14, se ingresa un proyecto nuevo que se ejecutará con su respectivo"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 3,
+      "descripcion_forense": "Anexo 14: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 101,
+      "pagina_impresa_etiqueta": "88",
+      "seccion": "ANEXO_15_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 15. Se ingresa el cronograma de ejecución"
+      ],
+      "primeras_lineas": [
+        "88",
+        "Anexo 15. Se ingresa el cronograma de ejecución",
+        "Se selecciona el proyecto que se ejecuta y se habilita la siguiente imagen, en"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 2.51,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 15: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 102,
+      "pagina_impresa_etiqueta": "89",
+      "seccion": "ANEXO_16_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 16. Avance físico del proyecto"
+      ],
+      "primeras_lineas": [
+        "89",
+        "Anexo 16. Avance físico del proyecto",
+        "Se ingresa el avance mensual físico del proyecto con sus respectivos metrados"
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 11.64,
+        "derecho": 2.9,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 16: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 103,
+      "pagina_impresa_etiqueta": "90",
+      "seccion": "ANEXO_17_CAPTURA_INTERFAZ_SOFTWARE",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.32,
+        841.92
+      ],
+      "rotacion_grados": 0,
+      "es_escaneo_imagen": false,
+      "titulos_encabezados": [
+        "Anexo 17. Reporte de los estados de los proyectos."
+      ],
+      "primeras_lineas": [
+        "90",
+        "Anexo 17. Reporte de los estados de los proyectos."
+      ],
+      "posicion_numeracion": [
+        499.2,
+        795.3,
+        512.8,
+        806.4
+      ],
+      "tipo_numeracion": "ARABIGO",
+      "fuentes_detectadas": [
+        "Arial-BoldMT",
+        "ArialMT",
+        "Calibri"
+      ],
+      "tamanios_fuente_pt": [
+        11.0
+      ],
+      "margenes_estimados_cm": {
+        "izquierdo": 3.0,
+        "superior": 9.33,
+        "derecho": 2.91,
+        "inferior": 1.25
+      },
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 2,
+      "descripcion_forense": "Anexo 17: Capturas de pantalla e interfaces de módulos del software desarrollado."
+    },
+    {
+      "pagina_pdf": 104,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTOS_ESCANEADOS_FINALES",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Documentos finales escaneados (1/3): Constancia de aplicación y conformidad emitida por la entidad beneficiaria."
+    },
+    {
+      "pagina_pdf": 105,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTOS_ESCANEADOS_FINALES",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Documentos finales escaneados (2/3): Constancia de aplicación y conformidad emitida por la entidad beneficiaria."
+    },
+    {
+      "pagina_pdf": 106,
+      "pagina_impresa_etiqueta": null,
+      "seccion": "DOCUMENTOS_ESCANEADOS_FINALES",
+      "categoria": "ANEXOS",
+      "orientacion": "PORTRAIT",
+      "dimensiones_pt": [
+        595.44,
+        842.04
+      ],
+      "rotacion_grados": 270,
+      "es_escaneo_imagen": true,
+      "titulos_encabezados": [],
+      "primeras_lineas": [],
+      "posicion_numeracion": null,
+      "tipo_numeracion": "NO_IMPRESA",
+      "fuentes_detectadas": [],
+      "tamanios_fuente_pt": [],
+      "margenes_estimados_cm": {},
+      "tablas": [],
+      "figuras": [],
+      "imagenes_count": 1,
+      "descripcion_forense": "Documentos finales escaneados (3/3): Constancia de aplicación y conformidad emitida por la entidad beneficiaria."
+    }
+  ]
+}

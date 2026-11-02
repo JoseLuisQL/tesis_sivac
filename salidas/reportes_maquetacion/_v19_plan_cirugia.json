@@ -1,0 +1,135 @@
+{
+  "hipervinculos_nativos": {
+    "desde": "REFERENCIAS BIBLIOGRÁFICAS",
+    "hasta": "ANEXOS"
+  },
+  "keep_next_ultima_fila": {
+    "tablas": [
+      36,
+      54
+    ]
+  },
+  "tablas": {
+    "celdas_texto": [
+      {
+        "tabla": 34,
+        "fila": 1,
+        "columna": 6,
+        "texto": "Verificación de concordancia pendiente"
+      },
+      {
+        "tabla": 34,
+        "fila": 2,
+        "columna": 6,
+        "texto": "Verificación de concordancia pendiente"
+      },
+      {
+        "tabla": 34,
+        "fila": 3,
+        "columna": 4,
+        "texto": "Ver VAL-VD"
+      },
+      {
+        "tabla": 34,
+        "fila": 3,
+        "columna": 5,
+        "texto": "Ver VAL-VD"
+      },
+      {
+        "tabla": 34,
+        "fila": 3,
+        "columna": 6,
+        "texto": "Pendiente de cotejo"
+      }
+    ],
+    "celdas_leyenda": [
+      {
+        "tabla": 55,
+        "fila": 0,
+        "columna": 0,
+        "texto": "Fotografía pendiente de incorporación"
+      },
+      {
+        "tabla": 56,
+        "fila": 0,
+        "columna": 0,
+        "texto": "Fotografía pendiente de incorporación"
+      },
+      {
+        "tabla": 57,
+        "fila": 0,
+        "columna": 0,
+        "texto": "Fotografía pendiente de incorporación"
+      },
+      {
+        "tabla": 58,
+        "fila": 0,
+        "columna": 0,
+        "texto": "Fotografía pendiente de incorporación"
+      }
+    ],
+    "normalizar_tamano": [
+      {
+        "tabla": 35,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 36,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 37,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 38,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 40,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 41,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 42,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 52,
+        "minimo_pt": 10.0
+      },
+      {
+        "tabla": 53,
+        "minimo_pt": 10.0
+      }
+    ],
+    "rebalanceo": [
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      52,
+      53
+    ]
+  },
+  "imagenes": [
+    {
+      "indice_docx": 674,
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\figuras\\estadistica\\figura_d3_satisfaccion_tam_spss.png",
+      "ancho_cm": 14.73,
+      "alto_cm": 8.18
+    }
+  ],
+  "dividir_parrafos": [
+    {
+      "indice": 797,
+      "alineacion_lista": "left"
+    }
+  ]
+}

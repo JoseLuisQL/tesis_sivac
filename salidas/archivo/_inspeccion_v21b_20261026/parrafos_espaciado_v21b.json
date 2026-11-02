@@ -1,0 +1,182 @@
+[
+ {
+  "i": 0,
+  "jc": "center",
+  "n_br": 2,
+  "n_tab": 0,
+  "dobles": 0,
+  "lead": 0,
+  "texto": "UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS\nFACULTAD DE INGENIERÍA\nESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS"
+ },
+ {
+  "i": 4,
+  "jc": "center",
+  "n_br": 1,
+  "n_tab": 0,
+  "dobles": 0,
+  "lead": 0,
+  "texto": "Para optar el Título Profesional de:\nINGENIERO DE SISTEMAS"
+ },
+ {
+  "i": 5,
+  "jc": "center",
+  "n_br": 1,
+  "n_tab": 0,
+  "dobles": 0,
+  "lead": 0,
+  "texto": "LÍNEA DE INVESTIGACIÓN:\nTecnologías de Información y Comunicación en Salud"
+ },
+ {
+  "i": 6,
+  "jc": "center",
+  "n_br": 4,
+  "n_tab": 0,
+  "dobles": 0,
+  "lead": 0,
+  "texto": "AUTOR:\nBach. José Luis Quispe León\n\nASESORA:\nDra. Norma Lorena Catacora Flores"
+ },
+ {
+  "i": 7,
+  "jc": "center",
+  "n_br": 1,
+  "n_tab": 0,
+  "dobles": 0,
+  "lead": 0,
+  "texto": "ANDAHUAYLAS - PERÚ\n2026"
+ },
+ {
+  "i": 18,
+  "jc": "center",
+  "n_br": 3,
+  "n_tab": 0,
+  "dobles": 0,
+  "lead": 0,
+  "texto": "_______________________________________\nBach. José Luis Quispe León\nDNI N.° ____________________\nAutor de la Tesis"
+ },
+ {
+  "i": 679,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Hipótesis nula (H0): Las diferencias pareadas de la variable provienen de una población con distribución normal (p > .05)."
+ },
+ {
+  "i": 680,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Hipótesis alterna (H1): Las diferencias pareadas de la variable no provienen de una población con distribución normal (p ≤ .05)."
+ },
+ {
+  "i": 699,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Para el tiempo de registro (Treg), la prueba t de Student pareada arrojó un estadístico t(13) = −38.944 con un p-valor bilateral de p = 7.57e-15 (p < .001) y "
+ },
+ {
+  "i": 700,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Para el tiempo de emisión de vales (Tvale), la prueba t de Student pareada reportó t(13) = −24.509, p = 2.88e-12 (p < .001), d de Cohen de −6.55 (|d| ≥ 0.80),"
+ },
+ {
+  "i": 702,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia α = .05 (p < .001), se rechaza la hipótesis n"
+ },
+ {
+  "i": 710,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 26.628, p = 1.00e-12 (p < .001), d de Cohen de 7.12 (efecto grande),"
+ },
+ {
+  "i": 711,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 28.147, p = 4.92e-13 (p < .001), d de Cohen de 7.52 (efec"
+ },
+ {
+  "i": 713,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Al ser los p-valores ajustados inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H0,2 y se acepta la hipótesis alterna H1,2. Se demuestra con un n"
+ },
+ {
+  "i": 721,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d de Cohen de 8.91 (|d| ≥ 0.80), y Wilcoxon"
+ },
+ {
+  "i": 722,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 34.881, p = 3.13e-14 (p < .001), d de Cohen de 9.32 (|d| ≥ 0.80), y Wilcoxon re"
+ },
+ {
+  "i": 723,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 44.477, p = 1.36e-15 (p < .001), d de Cohen = 11.89, y no paramétrico W ="
+ },
+ {
+  "i": 725,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H0,3 "
+ },
+ {
+  "i": 733,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Para aceptar la Hipótesis General en un diseño preexperimental compuesto por múltiples dimensiones operacionales, se formula la regla de decisión conjuntiva: "
+ },
+ {
+  "i": 735,
+  "jc": "both",
+  "n_br": 0,
+  "n_tab": 0,
+  "dobles": 1,
+  "lead": 2,
+  "texto": "  Habiéndose rechazado de manera concluyente y simultánea las tres hipótesis nulas específicas con p-valores ajustados por Holm-Bonferroni estrictamente inferio"
+ }
+]

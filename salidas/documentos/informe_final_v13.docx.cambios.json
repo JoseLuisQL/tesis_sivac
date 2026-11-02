@@ -1,0 +1,75 @@
+{
+  "comando": "aplicar-ordenes",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "fecha": "2026-10-21",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "agente": "maquetador-docx",
+  "origen": "salidas/documentos/informe_final_v12.docx",
+  "destino": "salidas/documentos/informe_final_v13.docx",
+  "sha256_origen": "284cc76b3a2eb756599da7d1e04765ecf43c66674a9fa47043312cfa51268c1c",
+  "sha256_destino": "93c0a303671dbfddc21c8b7442a76600a98ba4244ea2f7a6287295db59a81753",
+  "base_certificada_intacta": true,
+  "resumen": {
+    "total_ordenes": 98,
+    "total_aplicadas": 98,
+    "total_fallidas": 0,
+    "parrafos": "824 -> 824",
+    "tablas": "59 -> 59",
+    "elementos_body": "885 -> 885",
+    "nodos_w_t": "4682 -> 4682",
+    "referencias": "53 -> 53 (sin inserciones nuevas)"
+  },
+  "lotes": [
+    {"lote": "codigos_internos_v09.json", "ordenes": 11, "aplicadas": 11, "fallidas": 0},
+    {"lote": "codigos_internos_extra_v11.json", "ordenes": 3, "aplicadas": 3, "fallidas": 0},
+    {"lote": "rosenthal_v10_ordenes.json", "ordenes": 16, "aplicadas": 16, "fallidas": 0,
+     "sha256": "369ad7e7afad624c5b8b618f390cade2ca9752496c4c70dd7e5606b93c23e54d"},
+    {"lote": "wilcoxon_p_v11.json", "ordenes": 9, "aplicadas": 9, "fallidas": 0},
+    {"lote": "integridad_padron_v11.json", "ordenes": 3, "aplicadas": 3, "fallidas": 0},
+    {"lote": "refinamiento_v10_ordenes.json", "ordenes": 1, "aplicadas": 1, "fallidas": 0},
+    {"lote": "referencias_v09_ordenes.json", "ordenes": 22, "aplicadas": 22, "fallidas": 0, "alcance": "solo sustituciones; sin inserciones"},
+    {"lote": "acabado_tipografico_v12.json", "ordenes": 4, "aplicadas": 4, "fallidas": 0,
+     "sha256": "eae38049232545d40f762cb9190c0c1b1a7892281a28a62be63b29876aa38f7f"},
+    {"lote": "notacion_matematica_v11.json", "ordenes": 29, "aplicadas": 29, "fallidas": 0}
+  ],
+  "geometria_matrices": {
+    "tablas": [52, 53],
+    "via_unica": "rebalanceo de columnas",
+    "margenes_laterales_dxa": 57,
+    "margen_aplicado_en_esta_pasada": false,
+    "nota_margenes": "Los 57 dxa ya existian en la base certificada v12; no se reescribieron.",
+    "tamano_pt": 8.0,
+    "columnas_centradas": "2 a 17 (16 columnas)",
+    "anchos_dxa": [1100, 1559, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 651, 862, 995],
+    "ancho_total_dxa": 13630,
+    "verificacion": {
+      "tam_total": {"glifo_dxa": 657.6, "util_dxa": 748, "holgura_dxa": 90.4, "pdf_ancho_pt": 35.3},
+      "satisfaccion": {"glifo_dxa": 791.0, "util_dxa": 881, "holgura_dxa": 90.0, "pdf_ancho_pt": 42.0},
+      "score_": {"glifo_dxa": 435.3, "util_dxa": 537, "holgura_dxa": 101.7}
+    },
+    "cabeceras_sin_fractura_pdf": true
+  },
+  "tabla_14": {
+    "indice_tabla": 14,
+    "token": "responsable_acopio,",
+    "glifo_dxa": 1627.4,
+    "util_dxa": 1705,
+    "margenes_laterales_dxa": 60,
+    "ancho_tabla_dxa": 8765,
+    "accion": "ninguna: no hay desborde en la base certificada",
+    "explicacion": "La medicion 1615/1609 presuponia margenes de 108 dxa; la tabla usa 60 dxa, por lo que el ancho util real es 1705 dxa."
+  },
+  "verificacion_final": {
+    "tokens_prohibidos": {">=": 0, "<=": 0, "->": 0, "beta": 0, "sqrt": 0, "alpha": 1},
+    "alpha_contexto": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Titulo bibliografico original; no se translitera.",
+    "p689": "Dos ordenes de eslabones distintos con anclas disjuntas: rosenthal sustituyo (|Z| / sqrt(2n)) y notacion sustituyo alpha = .05. Ambas aplicadas; sin omision.",
+    "word_com": {"paginas": 158, "palabras": 42338, "tablas": 59, "abre_sin_reparacion": true},
+    "auditoria_openxml": {"tablas_flotantes": 0, "tablas_con_header": 59, "tablas_con_cantsplit": 59, "referencias_sangria_francesa": 53, "formulas_omml": 12},
+    "margenes": "top=1440, left=1701, bottom=1440, right=1440 (identico a la base v12; no modificado en esta pasada)"
+  },
+  "eslabon_diferido": {
+    "archivo": "uniformidad_notacional_v12.json",
+    "motivo": "Aun en emision por redactor-academico; se difiere a la v14 para no solapar compilaciones ni certificar un insumo no validado."
+  },
+  "reporte_detallado": "salidas/reportes_maquetacion/aplicacion_ordenes_v13.json"
+}

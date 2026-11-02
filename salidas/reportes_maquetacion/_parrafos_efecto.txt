@@ -1,0 +1,26 @@
+=== P686
+B. Resultados inferenciales:
+  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -38.944 con un p-valor bilateral de p = 7.57e-15 (p < .001) y un tamaño del efecto d de Cohen de -10.41, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.001 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 4.54e-14 (p < .001).
+  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -24.509, p = 2.88e-12 (p < .001), d de Cohen de -6.55 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_ad
+
+=== P689
+Nota. Nivel de significancia alpha = .05. Grados de libertad gl = n - 1 = 13. Ajuste de p-valor mediante el procedimiento secuencial escalonado de Holm-Bonferroni para control de la tasa de error por familia (FWER). d de Cohen calculada para la prueba paramétrica y r de Rosenthal (|Z| / sqrt(2n)) para la prueba no paramétrica de Wilcoxon. Elaboración propia.
+
+=== P692
+B. Resultados inferenciales:
+  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 26.628, p = 1.00e-12 (p < .001), d de Cohen de 7.12 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 2.00e-12 (p < .001).
+  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 28.147, p = 4.92e-13 (p < .001), d de Cohen de 7.52 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.48e-12 (p < .001).
+
+=== P698
+B. Resultados inferenciales:
+  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d de Cohen de 8.91 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.23e-13 (p < .001).
+  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 34.881, p = 3.13e-14 (p < .001), d de Cohen de 9.32 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.57e-13 (p < .001).
+  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 44.477, p = 1.36e-15 (p < .001), d de Cohen = 11.89, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).
+
+=== P701
+Nota. Evaluado con la Modalidad A del Instrumento 03. gl = 13. Nivel de significancia alpha = .05. El tamaño del efecto (|d| > 8.0 y r > 0.60) refleja un impacto masivo y positivo en la satisfacción tecnológica y operativa de los usuarios de inmunizaciones. Elaboración propia.
+
+=== P705
+C. Decisión y conclusión general:
+  Habiéndose rechazado de manera concluyente y simultánea las tres hipótesis nulas específicas con p-valores ajustados por Holm-Bonferroni estrictamente inferiores a .001 (p_adj < .001 en todos los indicadores), y respaldados por magnitudes del efecto extraordinariamente grandes (|d| > 6.00 y r > 0.60), se rechaza formalmente la Hipótesis Nula General H_0 y se acepta la Hipótesis Alterna General H_G con un nivel de confianza del 95% (p < .001).
+

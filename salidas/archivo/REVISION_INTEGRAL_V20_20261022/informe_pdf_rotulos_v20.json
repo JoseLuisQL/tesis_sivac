@@ -1,0 +1,20 @@
+{
+  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20.docx",
+  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20.pdf",
+  "metodo_exportacion": "ExportAsFixedFormat2",
+  "optimize_for_image_quality": true,
+  "paginas": 159,
+  "medicion_pdf": {
+    "paginas": 159,
+    "rect_primera": [
+      595.32,
+      841.92
+    ],
+    "imagenes": 49,
+    "dpi_min": 136.5,
+    "dpi_mediana": 199.8,
+    "dpi_max": 200.0
+  },
+  "sha256_docx": "bc0c3fa54e511b37a219dc06122fa2ec5e91f17dede981fdc1a5152305452119",
+  "sha256_pdf": "924b0476d4d4fd6750ea338a9f3ac186ea7a7db09d811d9a2b76d72e8bd93a33"
+}

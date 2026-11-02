@@ -1,0 +1,271 @@
+{
+  "tabla_indice": 30,
+  "filas_antes": 10,
+  "filas_despues": 15,
+  "encabezado_conservado": true,
+  "total_al_final": true,
+  "cant_split": 15,
+  "tabla_flotante": false,
+  "grid": [
+    3305,
+    3161,
+    1150,
+    1149
+  ],
+  "ancho_total_dxa": 8765,
+  "parrafos_antes": 813,
+  "parrafos_despues": 813,
+  "tablas_antes": 59,
+  "tablas_despues": 59,
+  "nota_actualizada": true,
+  "sha256_origen": "be94f87516f24adb42db1a55f65b526a6f81b73676e3ea49f7b6652f904e2ce1",
+  "sha256_destino": "f5e7636fae06b3a1b3e74b5815fc54e3d25ac2ee0109e69ec337136d4db59b07",
+  "destino": "salidas\\documentos\\informe_final_v11.docx",
+  "detalle_filas": [
+    {
+      "indice": 1,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Almacén Especializado de Vacunas (Chanka)",
+        "Administración del almacén central y distribución a redes",
+        "2",
+        "14.29%"
+      ]
+    },
+    {
+      "indice": 2,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Hospital Andahuaylas",
+        "Almacenamiento y control de existencias de vacunas",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 3,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Hospital ESSALUD Andahuaylas",
+        "Almacenamiento y control de existencias de vacunas",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 4,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Centro de Salud Andahuaylas",
+        "Almacenamiento y control de existencias de vacunas",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 5,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Talavera",
+        "Almacenamiento y despacho de biológicos en la microred Talavera",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 6,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "San Jerónimo",
+        "Almacenamiento y despacho de biológicos en la microred San Jerónimo",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 7,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Huancaray",
+        "Almacenamiento y despacho de biológicos en la microred Huancaray",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 8,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Chicmo",
+        "Almacenamiento y despacho de biológicos en la microred Chicmo",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 9,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Huancabamba",
+        "Almacenamiento y despacho de biológicos en la microred Huancabamba",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 10,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Pampachiri",
+        "Almacenamiento y despacho de biológicos en la microred Pampachiri",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 11,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "San Antonio de Cachi",
+        "Almacenamiento y despacho de biológicos en la microred Huancaray",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 12,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Turpo",
+        "Almacenamiento y despacho de biológicos en la microred Turpo",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 13,
+      "origen": "plantilla_fila_1",
+      "celdas": [
+        "Kishuara",
+        "Almacenamiento y despacho de biológicos en la microred Kishuara",
+        "1",
+        "7.14%"
+      ]
+    },
+    {
+      "indice": 14,
+      "origen": "fila_total_conservada",
+      "celdas": [
+        "Total",
+        "Población y Muestra Censal (N = n = 14)",
+        "14",
+        "100.00%"
+      ]
+    }
+  ],
+  "insumo": {
+    "docx_origen": "salidas/documentos/informe_final_v10.docx",
+    "json_filas": "salidas/reportes_maquetacion/consistencia_tabla30_v06.json (clave filas_propuestas)",
+    "motor": "scripts/utilidades/docx_quirurgico.py :: reconstruir_tabla_filas",
+    "comando": "reconstruir-tabla --tabla 30 --clave filas_propuestas --ultima-fila-es-total --porcentaje-compacto"
+  },
+  "validacion_aritmetica": {
+    "cuota_dos_operadores": "2/14 = 14.2857 % -> 14.29 %",
+    "cuota_un_operador": "1/14 = 7.1429 % -> 7.14 %",
+    "doce_cuotas": "12 x 7.14 % = 85.68 %",
+    "suma_filas_datos": 99.97,
+    "residuo_redondeo": 0.03,
+    "total_personal": 14,
+    "total_porcentaje": "100.00%",
+    "consistente": true
+  },
+  "correspondencia_centros": {
+    "centros_evaluados": 13,
+    "todos_existen": true,
+    "detalle": [
+      {
+        "centro_tabla": "Almacén Especializado de Vacunas (Chanka)",
+        "coincide_en_json": true,
+        "nombre_json": "ALMACÉN (CHANKA)"
+      },
+      {
+        "centro_tabla": "Hospital Andahuaylas",
+        "coincide_en_json": true,
+        "nombre_json": "Hospital Andahuaylas"
+      },
+      {
+        "centro_tabla": "Hospital ESSALUD Andahuaylas",
+        "coincide_en_json": true,
+        "nombre_json": "Hospital ESSALUD Andahuaylas"
+      },
+      {
+        "centro_tabla": "Centro de Salud Andahuaylas",
+        "coincide_en_json": true,
+        "nombre_json": "Centro de Salud Andahuaylas"
+      },
+      {
+        "centro_tabla": "Talavera",
+        "coincide_en_json": true,
+        "nombre_json": "Talavera"
+      },
+      {
+        "centro_tabla": "San Jerónimo",
+        "coincide_en_json": true,
+        "nombre_json": "San Jeronimo"
+      },
+      {
+        "centro_tabla": "Huancaray",
+        "coincide_en_json": true,
+        "nombre_json": "Huancaray"
+      },
+      {
+        "centro_tabla": "Chicmo",
+        "coincide_en_json": true,
+        "nombre_json": "Chicmo"
+      },
+      {
+        "centro_tabla": "Huancabamba",
+        "coincide_en_json": true,
+        "nombre_json": "Huancabamba"
+      },
+      {
+        "centro_tabla": "Pampachiri",
+        "coincide_en_json": true,
+        "nombre_json": "Pampachiri"
+      },
+      {
+        "centro_tabla": "San Antonio de Cachi",
+        "coincide_en_json": true,
+        "nombre_json": "San Antonio de Cachi"
+      },
+      {
+        "centro_tabla": "Turpo",
+        "coincide_en_json": true,
+        "nombre_json": "Turpo"
+      },
+      {
+        "centro_tabla": "Kishuara",
+        "coincide_en_json": true,
+        "nombre_json": "Kishuara"
+      }
+    ],
+    "notas": "ALMACÉN (CHANKA) y San Jeronimo figuran en el JSON sin la denominación extendida y sin tilde, respectivamente; la tabla usa la denominación del párrafo 654 y la grafía con tilde."
+  },
+  "nota_tabla": {
+    "texto": "Nota. Padrón nominal del personal técnico y administrativo de la Estrategia Sanitaria de Inmunizaciones y Cadena de Frío de la Dirección de Salud Apurímac II. Los porcentajes resultan del cociente entre el personal de cada centro de acopio y el total censal (N = n = 14); el redondeo a dos decimales deja un residuo de 0.03 puntos porcentuales, de modo que la suma de las trece filas de datos (99.97 %) difiere del 100.00 % consignado en el total.",
+    "prefijo_cursiva": true,
+    "tamano_pt": 9.5,
+    "interlineado": "sencillo (w:line=240)"
+  },
+  "restricciones": {
+    "filas_esperadas": 15,
+    "filas_obtenidas": 15,
+    "encabezado_con_tblheader": true,
+    "cant_split_filas": 15,
+    "bordes_apa7": "superior e inferior de tabla + inferior de encabezado; sin insideH ni insideV",
+    "tablas_flotantes": 0,
+    "ancho_dxa": 8765,
+    "sin_scripts_adhoc": true,
+    "motor_reutilizable": true
+  }
+}

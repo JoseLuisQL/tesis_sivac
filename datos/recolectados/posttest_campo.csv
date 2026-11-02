@@ -1,0 +1,15 @@
+sujeto_id,centro_acopio,t_reg,t_vale,rsd,cpe,ap_01,ap_02,ap_03,ap_04,up_01,up_02,up_03,up_04,score_ap,score_up,score_tam_total,nivel_satisfaccion
+TRAB-01,ALMACÉN (CHANKA),7.5,3.0,96.0,95.0,4,5,4,5,5,5,4,5,18,19,37,Alto
+TRAB-02,ALMACÉN (CHANKA),8.0,3.5,94.5,93.5,4,4,4,4,5,4,4,5,16,18,34,Alto
+TRAB-03,Hospital Andahuaylas,6.5,2.5,98.0,97.0,5,5,5,4,5,5,5,5,19,20,39,Alto
+TRAB-04,Hospital ESSALUD Andahuaylas,6.0,2.5,97.5,98.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-05,Centro de Salud Andahuaylas,9.0,4.0,93.0,92.5,4,4,4,4,4,4,4,4,16,16,32,Alto
+TRAB-06,Talavera,7.0,3.0,96.5,96.0,5,4,5,4,5,5,4,5,18,19,37,Alto
+TRAB-07,San Jeronimo,8.5,4.0,92.0,91.5,4,4,4,4,4,4,4,4,16,16,32,Alto
+TRAB-08,Huancaray,5.5,2.0,100.0,100.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-09,Chicmo,6.0,2.5,98.5,97.5,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-10,Huancabamba,7.5,3.5,95.0,94.0,4,4,4,4,4,5,4,5,16,18,34,Alto
+TRAB-11,Pampachiri,7.0,3.0,96.0,95.5,4,4,5,4,5,4,4,5,17,18,35,Alto
+TRAB-12,San Antonio de Cachi,8.5,3.5,93.5,93.0,4,4,4,4,4,4,4,4,16,16,32,Alto
+TRAB-13,Turpo,6.5,2.5,97.0,96.5,5,5,5,4,5,5,5,5,19,20,39,Alto
+TRAB-14,Kishuara,7.0,3.0,96.5,95.5,4,4,5,4,5,5,4,5,17,19,36,Alto

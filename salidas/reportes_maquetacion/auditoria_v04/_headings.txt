@@ -1,0 +1,97 @@
+59 | Normal | INTRODUCCIÓN
+65 | Normal | CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN
+66 | Normal | 1.1. Descripción de la realidad problemática
+76 | Normal | 1.2. Formulación del problema
+77 | Normal | 1.2.1. Problema general
+79 | Normal | 1.2.2. Problemas específicos
+83 | Normal | 1.3. Justificación de la investigación
+84 | Normal | 1.3.1. Justificación teórica
+86 | Normal | 1.3.2. Justificación práctica
+88 | Normal | 1.3.3. Justificación metodológica
+90 | Normal | 1.3.4. Justificación social
+92 | Normal | 1.3.5. Justificación tecnológica
+94 | Normal | 1.4. Objetivos de la investigación
+95 | Normal | 1.4.1. Objetivo general
+97 | Normal | 1.4.2. Objetivos específicos
+101 | Normal | 1.5. Hipótesis de la investigación
+102 | Normal | 1.5.1. Hipótesis general
+105 | Normal | 1.5.2. Hipótesis específicas
+109 | Normal | 1.6. Variables de la investigación
+110 | Normal | 1.6.1. Variable independiente: Sistema web SIVAC
+112 | Normal | 1.6.2. Variable dependiente: Gestión de movimientos mensuales de vacunas
+114 | Normal | 1.7. Delimitación de la investigación
+117 | Normal | CAPÍTULO II: ANTECEDENTES
+118 | Normal | 2.1. Antecedentes internacionales
+127 | Normal | 2.2. Antecedentes a nivel nacional
+137 | Normal | CAPÍTULO III: MARCO TEÓRICO
+138 | Normal | 3.1. Bases teóricas
+139 | Normal | 3.1.1. Sistema web
+169 | Normal | 3.1.2. Gestión de movimientos mensuales de vacunas
+203 | Normal | 3.2. Marco conceptual
+204 | Normal | 3.2.1. Cadena de frío de inmunizaciones
+206 | Normal | 3.2.2. Centro de acopio de vacunas
+208 | Normal | 3.2.3. Comprobante de salida (vale de entrega)
+210 | Normal | 3.2.4. Concordancia de cantidad programada versus entregada
+212 | Normal | 3.2.5. Consistencia documental
+214 | Normal | 3.2.6. Control de acceso basado en roles (RBAC)
+216 | Normal | 3.2.7. Criterio FEFO (First Expired, First Out)
+218 | Normal | 3.2.8. Extreme Programming (XP)
+220 | Normal | 3.2.9. Factor de pérdida de biológicos
+222 | Normal | 3.2.10. Historia de usuario
+224 | Normal | 3.2.11. JSON Web Token (JWT)
+226 | Normal | 3.2.12. Kardex digital de biológicos
+228 | Normal | 3.2.13. Lote de vacuna
+230 | Normal | 3.2.14. Modelo de Aceptación Tecnológica (TAM)
+232 | Normal | 3.2.15. Oportunidad de procesamiento
+234 | Normal | 3.2.16. ORM (Object-Relational Mapping)
+236 | Normal | 3.2.17. Sistema electrónico de información de gestión logística (e-LMIS)
+238 | Normal | 3.2.18. Trazabilidad de vacunas
+240 | Normal | 3.3. Metodología de Desarrollo de Software Extreme Programming (XP)
+248 | Normal | 3.3.1. Fase I: Planificación (Planning Game) y Especificación de Requerimientos
+287 | Normal | 3.3.2. Fase II: Diseño Simple y Modelado del Software
+388 | Normal | 3.3.3. Fase III: Codificación y Prácticas de Ingeniería Ágil
+492 | Normal | 3.3.4. Fase IV: Pruebas de Calidad del Software
+514 | Normal | 3.3.5. Fase V: Despliegue Físico y Puesta en Producción
+522 | Normal | CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN
+523 | Normal | 4.1. Tipo de investigación
+525 | Normal | 4.2. Nivel de investigación
+527 | Normal | 4.3. Método de investigación
+529 | Normal | 4.4. Enfoque de investigación
+531 | Normal | 4.5. Diseño de la investigación
+543 | Normal | 4.6. Población de estudio
+545 | Normal | 4.7. Muestra
+549 | Normal | 4.8. Unidad de análisis
+555 | Normal | 4.9. Operacionalización de variables
+556 | Normal | 4.9.1. Variable independiente: Sistema web SIVAC
+558 | Normal | 4.9.2. Variable dependiente: Gestión de movimientos mensuales de vacunas
+581 | Normal | 4.10. Técnicas e instrumentos de recolección de datos
+582 | Normal | 4.10.1. Técnicas de recolección de datos
+587 | Normal | 4.10.2. Instrumentos de recolección de datos
+591 | Normal | 4.11. Confiabilidad de los instrumentos
+597 | Normal | 4.12. Validez de los instrumentos
+604 | Normal | 4.13. Técnicas estadísticas para el procesamiento de la información
+614 | Normal | 4.14. Consideraciones éticas y salvaguarda institucional
+618 | Normal | CAPÍTULO V: RESULTADOS
+620 | Normal | 5.1. Análisis de Confiabilidad del Instrumento 03
+627 | Normal | 5.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones
+629 | Normal | 5.2.1. Dimensión 1: Oportunidad de Procesamiento (T_reg y T_vale)
+638 | Normal | 5.2.2. Dimensión 2: Consistencia Documental (RSD y CPE)
+647 | Normal | 5.2.3. Dimensión 3: Satisfacción del Usuario (AP y UP bajo Modelo TAM)
+656 | Normal | 5.3. Prueba de Bondad de Ajuste de Normalidad
+663 | Normal | 5.4. Contrastación de Hipótesis
+665 | Normal | 5.4.1. Contrastación de la Hipótesis Específica 1
+672 | Normal | 5.4.2. Contrastación de la Hipótesis Específica 2
+679 | Normal | 5.4.3. Contrastación de la Hipótesis Específica 3
+686 | Normal | 5.4.4. Contrastación de la Hipótesis General
+694 | Normal | CAPÍTULO VI: DISCUSIÓN
+700 | Normal | CONCLUSIONES
+705 | Normal | RECOMENDACIONES
+710 | Normal | REFERENCIAS BIBLIOGRÁFICAS
+753 | Normal | ANEXOS
+754 | Normal | ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007)
+759 | Normal | ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)
+764 | Normal | ANEXO 3: CERTIFICADOS DE VALIDACIÓN POR JUICIO DE EXPERTOS
+772 | Normal | ANEXO 4: INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA INVESTIGACIÓN
+783 | Normal | ANEXO 5: MATRIZ DE DATOS TABULADOS DE CAMPO (PRETEST Y POSTTEST)
+791 | Normal | ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y TRAZABILIDAD SIVAC
+796 | Normal | ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO

@@ -1,0 +1,46 @@
+{
+ "sustituciones": [
+  {
+   "id": "ORD-TRI-01",
+   "ancla_original": "(a) la validez de contenido, cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación para ambos coeficientes;",
+   "texto_nuevo": "(a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken (Aiken, 1985) y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio; la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38);",
+   "ocurrencias": 1,
+   "indice_docx": 177
+  },
+  {
+   "id": "ORD-WAS-01",
+   "ancla_original": "Wasswa et al. (2023), en su estudio evaluativo titulado “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicado en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de vacunas e insumos sanitarios a escala nacional. La metodología fue cuantitativa, descriptiva y transversal, auditando las transacciones digitales de pedidos, despachos y saldos de almacén ejecutadas en la red pública del Ministerio de Salud de Uganda. Los resultados demostraron que el procesamiento digital de requisiciones y comprobantes de despacho permitió monitorear en tiempo real los lotes distribuidos y mantener una disponibilidad promedio del 90% en 19 hospitales regionales de referencia, reduciendo sustancialmente los tiempos de respuesta frente a los procedimientos manuales. El estudio concluyó que los sistemas web de gestión logística fortalecen la visibilidad de extremo a extremo en la cadena de frío, aseguran la concordancia entre las cantidades solicitadas y las despachadas, y previenen el desabastecimiento de productos biológicos.",
+   "texto_nuevo": "Wasswa et al. (2023), en su revisión titulada “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicada en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de suministros e insumos sanitarios durante la respuesta a la COVID-19 en Uganda. El estudio revisó literatura publicada y no publicada sobre la adopción e implementación del eELMIS durante la pandemia de COVID-19 y describió su operación en la red pública del Ministerio de Salud de Uganda. Los resultados documentaron el procesamiento digital de requisiciones y comprobantes de despacho para los 20 hospitales regionales de referencia, con 96.5% de pedidos atendidos y una tasa agregada de cumplimiento de pedidos del 85.5%, lo que favoreció la visibilidad de los suministros frente a los procedimientos manuales. El estudio concluyó que la disponibilidad de datos oportunos y confiables es esencial para la toma de decisiones y que el eELMIS apoyó la coordinación y la disponibilidad oportuna de suministros durante la respuesta a la COVID-19.",
+   "ocurrencias": 1,
+   "indice_docx": 212
+  },
+  {
+   "id": "ORD-WAS-05",
+   "ancla_original": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda, quienes demostraron que la operación de sistemas electrónicos de gestión logística incrementó la exactitud de los inventarios del 25% al 85% y aseguró una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+   "texto_nuevo": "En el mismo sentido, Kigenza et al. (2023) documentaron en Ruanda mejoras en la exactitud de los inventarios mediante la intervención de gestión de calidad apoyada en el e-LMIS, y Wasswa et al. (2023) documentaron en Uganda el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos durante la respuesta a la COVID-19, mientras que en el contexto sudamericano",
+   "ocurrencias": 1,
+   "indice_docx": 157
+  },
+  {
+   "id": "ORD-WAS-04",
+   "ancla_original": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+   "texto_nuevo": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+   "ocurrencias": 1,
+   "indice_docx": 776
+  },
+  {
+   "id": "ORD-WAS-02",
+   "ancla_original": "Cuantitativo, descriptivo y transversal (19 hospitales regionales)",
+   "texto_nuevo": "Revisión de literatura y análisis descriptivo (20 hospitales regionales de referencia)",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 1, fila 7, columna 3"
+  },
+  {
+   "id": "ORD-WAS-03",
+   "ancla_original": "Disponibilidad promedio del 90% y concordancia en despachos regionales",
+   "texto_nuevo": "96.5% de pedidos atendidos y 85.5% de cumplimiento agregado de pedidos",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 1, fila 7, columna 5"
+  }
+ ]
+}

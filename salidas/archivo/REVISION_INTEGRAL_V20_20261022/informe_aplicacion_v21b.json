@@ -1,0 +1,1898 @@
+{
+  "origen": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_TABLAS_V21.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_TABLAS_V21b.docx",
+  "sha256_origen": "792ee2fcbf4e66fa6cadf199de0584c31fbe1fdf79c2c538255b0053e2dbcc1d",
+  "sha256_destino": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9",
+  "parrafos": 858,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 33,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1405,
+        1347,
+        1331,
+        1341,
+        3341
+      ],
+      "anchos_despues": [
+        1405,
+        1347,
+        1331,
+        1541,
+        3141
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 20
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 35,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1720,
+        2073,
+        708,
+        938,
+        1087,
+        894,
+        1345
+      ],
+      "anchos_despues": [
+        1720,
+        1873,
+        708,
+        938,
+        1087,
+        1394,
+        1045
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 49
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 37,
+      "estado": "aplicada",
+      "anchos_antes": [
+        2008,
+        1220,
+        857,
+        768,
+        884,
+        813,
+        1220,
+        995
+      ],
+      "anchos_despues": [
+        1650,
+        900,
+        900,
+        800,
+        900,
+        780,
+        1840,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 56
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 30,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3
+      ],
+      "celdas_alineadas": 28,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 2,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 35.5,
+          "posicion_tabulador_porcentaje_pt": 42.2,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1030,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 24.6,
+          "posicion_tabulador_porcentaje_pt": 42.1,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1029,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 300.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 35,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4
+      ],
+      "celdas_alineadas": 18,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 3,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 20.1,
+          "ancho_util_pt": 29.4,
+          "ancho_util_dxa": 588,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 24.9,
+          "posicion_tabulador_porcentaje_pt": 31.6,
+          "ancho_util_pt": 40.9,
+          "ancho_util_dxa": 818,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 24.9,
+          "posicion_tabulador_porcentaje_pt": 39.0,
+          "ancho_util_pt": 48.4,
+          "ancho_util_dxa": 967,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 36,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 4,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 13.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 19.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 37,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 2,
+      "columnas_degradadas_lista": [
+        2,
+        4
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 2,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 7.2,
+          "posicion_tabulador_porcentaje_pt": 24.7,
+          "ancho_util_pt": 34.0,
+          "ancho_util_dxa": 680,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 6.2,
+          "posicion_tabulador_porcentaje_pt": 23.7,
+          "ancho_util_pt": 33.0,
+          "ancho_util_dxa": 660,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 38,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 36,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 4,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 13.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 19.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 39,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2
+      ],
+      "celdas_alineadas": 7,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 1,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 7,
+          "celdas_alineadas": 7,
+          "posicion_tabulador_pt": 7.6,
+          "posicion_tabulador_porcentaje_pt": 21.8,
+          "ancho_util_pt": 31.1,
+          "ancho_util_dxa": 622,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 52,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 15,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 21.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 53,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 2,
+      "columnas_degradadas_lista": [
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 13,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 21.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    }
+  ],
+  "aplicadas": [
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 33,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1405,
+        1347,
+        1331,
+        1341,
+        3341
+      ],
+      "anchos_despues": [
+        1405,
+        1347,
+        1331,
+        1541,
+        3141
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 20
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 35,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1720,
+        2073,
+        708,
+        938,
+        1087,
+        894,
+        1345
+      ],
+      "anchos_despues": [
+        1720,
+        1873,
+        708,
+        938,
+        1087,
+        1394,
+        1045
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 49
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 37,
+      "estado": "aplicada",
+      "anchos_antes": [
+        2008,
+        1220,
+        857,
+        768,
+        884,
+        813,
+        1220,
+        995
+      ],
+      "anchos_despues": [
+        1650,
+        900,
+        900,
+        800,
+        900,
+        780,
+        1840,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 56
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 30,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3
+      ],
+      "celdas_alineadas": 28,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 2,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 35.5,
+          "posicion_tabulador_porcentaje_pt": 42.2,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1030,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 24.6,
+          "posicion_tabulador_porcentaje_pt": 42.1,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1029,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 300.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 35,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4
+      ],
+      "celdas_alineadas": 18,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 3,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 20.1,
+          "ancho_util_pt": 29.4,
+          "ancho_util_dxa": 588,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 24.9,
+          "posicion_tabulador_porcentaje_pt": 31.6,
+          "ancho_util_pt": 40.9,
+          "ancho_util_dxa": 818,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 24.9,
+          "posicion_tabulador_porcentaje_pt": 39.0,
+          "ancho_util_pt": 48.4,
+          "ancho_util_dxa": 967,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 36,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 4,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 13.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 19.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 37,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 2,
+      "columnas_degradadas_lista": [
+        2,
+        4
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 2,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 7.2,
+          "posicion_tabulador_porcentaje_pt": 24.7,
+          "ancho_util_pt": 34.0,
+          "ancho_util_dxa": 680,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 6.2,
+          "posicion_tabulador_porcentaje_pt": 23.7,
+          "ancho_util_pt": 33.0,
+          "ancho_util_dxa": 660,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 38,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 36,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 4,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 13.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 19.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 16.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 39,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2
+      ],
+      "celdas_alineadas": 7,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 1,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 7,
+          "celdas_alineadas": 7,
+          "posicion_tabulador_pt": 7.6,
+          "posicion_tabulador_porcentaje_pt": 21.8,
+          "ancho_util_pt": 31.1,
+          "ancho_util_dxa": 622,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 52,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 0,
+      "columnas_degradadas_lista": [],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 15,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 21.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 53,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 2,
+      "columnas_degradadas_lista": [
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 13,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 13.3,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "parte entera + cola decimal + holgura (0,6 em) exceden el ancho útil: se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 10.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 21.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    }
+  ],
+  "fallidas": [],
+  "tablas_afectadas_por_clase": {
+    "margenes_celda": 0,
+    "geometria_proporcional": 3,
+    "ensanche_rango": 0,
+    "reparar_tcw": 0,
+    "valign": 0,
+    "alineacion_decimal": 8
+  },
+  "tablas_distintas_afectadas": [
+    30,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    52,
+    53
+  ],
+  "alto_tablas": [
+    {
+      "tabla": 1,
+      "alto_antes_pt": 976.0,
+      "alto_despues_pt": 976.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 8,
+      "alto_antes_pt": 219.5,
+      "alto_despues_pt": 219.5,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 32,
+      "alto_antes_pt": 434.0,
+      "alto_despues_pt": 434.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 33,
+      "alto_antes_pt": 315.0,
+      "alto_despues_pt": 326.5,
+      "delta_pt": 11.5
+    },
+    {
+      "tabla": 34,
+      "alto_antes_pt": 342.0,
+      "alto_despues_pt": 342.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 35,
+      "alto_antes_pt": 189.0,
+      "alto_despues_pt": 189.0,
+      "delta_pt": 0.0
+    }
+  ],
+  "tablas_verificadas": []
+}

@@ -1,0 +1,406 @@
+{
+  "ambito": "ambos",
+  "identificadores": [
+    "lotes_vacunas",
+    "vacuna_id",
+    "movimientos_vacunas",
+    "planificacion_anual",
+    "entregas_adicionales",
+    "vales_entrega",
+    "ici_demid_registros",
+    "usuarios_roles",
+    "centros_acopio",
+    "establecimientos"
+  ],
+  "cuerpo": [
+    {
+      "indice": 578,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "indice": 592,
+      "terminos": [
+        "t_fin",
+        "t_inicio"
+      ]
+    },
+    {
+      "indice": 595,
+      "terminos": [
+        "t_emision",
+        "t_solicitud"
+      ]
+    },
+    {
+      "indice": 601,
+      "terminos": [
+        "Q_entregada",
+        "Q_programada"
+      ]
+    },
+    {
+      "indice": 639,
+      "terminos": [
+        "N_v"
+      ]
+    },
+    {
+      "indice": 654,
+      "terminos": [
+        "O_1",
+        "O_2",
+        "Q_3",
+        "Q_1"
+      ]
+    },
+    {
+      "indice": 656,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "indice": 677,
+      "terminos": [
+        "O_1",
+        "O_2",
+        "D_i",
+        "X_post,i",
+        "X_pre,i",
+        "H_0",
+        "H_1"
+      ]
+    },
+    {
+      "indice": 678,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "indice": 685,
+      "terminos": [
+        "H_0,1",
+        "T_reg",
+        "T_vale",
+        "mu_diff",
+        "T_reg",
+        "mu_diff",
+        "T_vale",
+        "H_1,1",
+        "T_reg",
+        "T_vale",
+        "mu_diff",
+        "T_reg",
+        "mu_diff",
+        "T_vale"
+      ]
+    },
+    {
+      "indice": 686,
+      "terminos": [
+        "T_reg",
+        "p_adj",
+        "T_vale",
+        "p_adj"
+      ]
+    },
+    {
+      "indice": 687,
+      "terminos": [
+        "H_0,1",
+        "H_1,1"
+      ]
+    },
+    {
+      "indice": 691,
+      "terminos": [
+        "H_0,2",
+        "mu_diff,RSD",
+        "mu_diff,CPE",
+        "H_1,2",
+        "mu_diff,RSD",
+        "mu_diff,CPE"
+      ]
+    },
+    {
+      "indice": 692,
+      "terminos": [
+        "p_adj",
+        "p_adj"
+      ]
+    },
+    {
+      "indice": 693,
+      "terminos": [
+        "H_0,2",
+        "H_1,2"
+      ]
+    },
+    {
+      "indice": 697,
+      "terminos": [
+        "H_0,3",
+        "mu_diff,AP",
+        "mu_diff,UP",
+        "H_1,3",
+        "mu_diff,AP",
+        "mu_diff,UP"
+      ]
+    },
+    {
+      "indice": 698,
+      "terminos": [
+        "p_adj",
+        "p_adj",
+        "p_adj"
+      ]
+    },
+    {
+      "indice": 699,
+      "terminos": [
+        "H_0,3",
+        "H_1,3"
+      ]
+    },
+    {
+      "indice": 703,
+      "terminos": [
+        "H_0",
+        "H_G"
+      ]
+    },
+    {
+      "indice": 704,
+      "terminos": [
+        "H_G",
+        "H_0,1",
+        "H_0,2",
+        "H_0,3",
+        "p_adj"
+      ]
+    },
+    {
+      "indice": 705,
+      "terminos": [
+        "p_adj",
+        "H_0",
+        "H_G"
+      ]
+    },
+    {
+      "indice": 708,
+      "terminos": [
+        "p_adj"
+      ]
+    },
+    {
+      "indice": 717,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "indice": 799,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    }
+  ],
+  "celdas": [
+    {
+      "tabla": 31,
+      "fila": 1,
+      "col": 0,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 31,
+      "fila": 2,
+      "col": 0,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 32,
+      "fila": 2,
+      "col": 3,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 36,
+      "fila": 1,
+      "col": 0,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 36,
+      "fila": 2,
+      "col": 0,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 36,
+      "fila": 3,
+      "col": 0,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 36,
+      "fila": 4,
+      "col": 0,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 36,
+      "fila": 5,
+      "col": 0,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 36,
+      "fila": 6,
+      "col": 0,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 39,
+      "fila": 1,
+      "col": 1,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 39,
+      "fila": 2,
+      "col": 1,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 40,
+      "fila": 1,
+      "col": 0,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 40,
+      "fila": 2,
+      "col": 0,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 40,
+      "fila": 3,
+      "col": 0,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 40,
+      "fila": 4,
+      "col": 0,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 44,
+      "fila": 9,
+      "col": 1,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 45,
+      "fila": 2,
+      "col": 3,
+      "terminos": [
+        "T_reg",
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 49,
+      "fila": 1,
+      "col": 1,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 49,
+      "fila": 2,
+      "col": 1,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 52,
+      "fila": 0,
+      "col": 2,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 52,
+      "fila": 0,
+      "col": 3,
+      "terminos": [
+        "T_vale"
+      ]
+    },
+    {
+      "tabla": 53,
+      "fila": 0,
+      "col": 2,
+      "terminos": [
+        "T_reg"
+      ]
+    },
+    {
+      "tabla": 53,
+      "fila": 0,
+      "col": 3,
+      "terminos": [
+        "T_vale"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "sustituciones": [
+    {
+      "indice_docx": 370,
+      "ancla_original": "En la Figura 3 se ilustra la arquitectura de subsistemas",
+      "texto_nuevo": "En la Figura 13 se ilustra la arquitectura de subsistemas",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 383,
+      "ancla_original": "graficado en la Figura 6. Este proceso modela",
+      "texto_nuevo": "graficado en la Figura 16. Este proceso modela",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 412,
+      "ancla_original": "en las Tablas 8 a 22 se documenta",
+      "texto_nuevo": "en las Tablas 10 a 24 se documenta",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 446,
+      "ancla_original": "En la Tabla 23 se sintetiza el stack de desarrollo",
+      "texto_nuevo": "En la Tabla 25 se sintetiza el stack de desarrollo",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 650,
+      "ancla_original": "En la Tabla 4 se consolidan los coeficientes psicométricos obtenidos",
+      "texto_nuevo": "En la Tabla 35 se consolidan los coeficientes psicométricos obtenidos",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 656,
+      "ancla_original": "En la Tabla 5 y en la Figura 6 se detallan estas distribuciones",
+      "texto_nuevo": "En la Tabla 36 y en la Figura 46 se detallan estas distribuciones",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 670,
+      "ancla_original": "En la Tabla 7 y en la Figura 8 se presenta el comportamiento",
+      "texto_nuevo": "En la Tabla 38 y en la Figura 48 se presenta el comportamiento",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    },
+    {
+      "indice_docx": 706,
+      "ancla_original": "En la Tabla 12 se presenta el balance consolidado",
+      "texto_nuevo": "En la Tabla 43 se presenta el balance consolidado",
+      "justificacion": "Normalización de referencia cruzada contra el rótulo real del documento"
+    }
+  ]
+}

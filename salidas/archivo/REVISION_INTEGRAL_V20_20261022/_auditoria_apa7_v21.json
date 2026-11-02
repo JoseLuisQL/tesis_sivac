@@ -1,0 +1,15 @@
+{
+  "archivo": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_TABLAS_V21.docx",
+  "existe": true,
+  "sha256": "792ee2fcbf4e66fa6cadf199de0584c31fbe1fdf79c2c538255b0053e2dbcc1d",
+  "bytes": 16132261,
+  "margenes_unajma_ok": true,
+  "tablas_total": 59,
+  "tablas_flotantes": 0,
+  "tablas_con_header": 59,
+  "tablas_con_cantsplit": 59,
+  "referencias_sangria_francesa": 54,
+  "formulas_omml": 12,
+  "cumple_apa7": true,
+  "hallazgos": []
+}

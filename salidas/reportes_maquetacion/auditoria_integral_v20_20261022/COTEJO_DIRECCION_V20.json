@@ -1,0 +1,40 @@
+{
+  "fecha": "2026-10-22",
+  "agente": "director-general",
+  "alcance": "Cotejo técnico reproducido directamente sobre v19 y v20 al retomar la sesión; no sustituye lectura visual final por página.",
+  "hashes": {
+    "docx_v19": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "pdf_v19": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+    "docx_v20": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+    "pdf_v20": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3"
+  },
+  "estructura": {
+    "parrafos_cuerpo_directo": 828,
+    "tablas": 59,
+    "ecuaciones_omml": 12,
+    "campos_toc": 3,
+    "campos_seq": 103,
+    "paginas_pdf": 159,
+    "imagenes_pdf": 49
+  },
+  "conservacion": {
+    "v19_intacta": true,
+    "imagenes_originales_preservadas": 48,
+    "imagenes_sustituidas": 1,
+    "sustitucion_autorizada": "Escudo de portada por archivo de mayor resolución aportado por el tesista, preservando su proporción.",
+    "urls_previas_preservadas": true,
+    "unica_url_nueva": "https://doi.org/10.1177/0013164485451012",
+    "tablas_iguales": 54,
+    "tablas_con_texto_cambiado_base0": [1, 29, 31, 33, 34],
+    "tablas_con_texto_cambiado_ordinal_base1": [2, 30, 32, 34, 35],
+    "explicacion": "Cambios autorizados: cifras bibliográficas verificadas de Wasswa, mayúsculas de PECOSA y nomenclatura de instrumentos. Las tablas de resultados SIVAC no cambian.",
+    "aclaracion_de_prueba": "La aserción anterior falló por comparar índices base cero con ordinales base uno. Se corrigió el criterio y se verificaron las celdas; no era una modificación no autorizada del documento."
+  },
+  "auditoria_visual_de_salida": {
+    "estado": "reanudada_tras_interrupcion_de_sesion",
+    "archivos_de_cierre_previos": "No se encontraron SALIDA_V20_001_053.json, SALIDA_V20_054_106.json ni SALIDA_V20_107_159.json al retomar.",
+    "rangos_reanudados": [[1, 53], [54, 106], [107, 159]],
+    "regla": "Completar y comprobar los 159 registros de la salida v20 antes de atribuirle validación visual completa."
+  },
+  "limites": "Copia editorial para revisión, sin aprobación del tesista o jurado, sin cierre empírico de QG-5 o QG-9."
+}

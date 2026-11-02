@@ -1,0 +1,823 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v17.docx",
+  "destino": "salidas\\archivo\\_v18d_previo_blindaje.docx",
+  "sha256_origen": "33897dd5819d6686a80b2b87e223e4155eea312297cf345d1a3052a4ca8aeac6",
+  "sha256_destino": "1aec368f1808386f40ee89aea04f1f1c1e1ad46491587b3b92bb31aaa5073612",
+  "parrafos": 824,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "erradicar_raya",
+      "nodos_reemplazados": 24,
+      "celdas_placeholder": 21,
+      "rayas_restantes_cuerpo": 0
+    },
+    {
+      "tipo": "parrafos_reemplazo",
+      "reemplazados": 5,
+      "acciones": [
+        {
+          "indice": 625,
+          "caracteres_previos": 1150,
+          "caracteres_nuevos": 632
+        },
+        {
+          "indice": 627,
+          "caracteres_previos": 1874,
+          "caracteres_nuevos": 755
+        },
+        {
+          "indice": 629,
+          "caracteres_previos": 851,
+          "caracteres_nuevos": 467
+        },
+        {
+          "indice": 630,
+          "caracteres_previos": 851,
+          "caracteres_nuevos": 428
+        },
+        {
+          "indice": 789,
+          "caracteres_previos": 532,
+          "caracteres_nuevos": 451
+        }
+      ]
+    },
+    {
+      "tipo": "redimension_figura",
+      "indice_parrafo": 233,
+      "aplicado": true,
+      "ancho_anterior_cm": 8.46,
+      "alto_anterior_cm": 3.184,
+      "ancho_nuevo_cm": 8.45,
+      "alto_nuevo_cm": 3.18,
+      "ancho_px": 999,
+      "dpi": 300.29
+    },
+    {
+      "tipo": "anexar_filas",
+      "tabla": 34,
+      "filas_agregadas": 1,
+      "filas": [
+        [
+          "VAL-VD",
+          "Matriz de la variable dependiente (formato de evaluación por juicio de expertos)",
+          "12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4",
+          "Juicio de contenido del formato disponible; resultado comunicado condicional, pendiente de cotejo",
+          "1.000 comunicado (condicional)",
+          "1.000 comunicado (condicional)",
+          "Sin dictamen"
+        ]
+      ]
+    },
+    {
+      "tipo": "celdas_texto",
+      "celdas": 13,
+      "acciones": [
+        {
+          "tabla": 34,
+          "fila": 1,
+          "columna": 3,
+          "antes": "No se somete a juicio de contenido. Protocolo PMMV e ICC(2,1) ≥ 0.75 entre obser"
+        },
+        {
+          "tabla": 34,
+          "fila": 1,
+          "columna": 6,
+          "antes": "Acreditado por protocolo y concordancia interobservador"
+        },
+        {
+          "tabla": 34,
+          "fila": 2,
+          "columna": 3,
+          "antes": "No se somete a juicio de contenido. Regla de 8 criterios y kappa de Cohen ≥ 0.80"
+        },
+        {
+          "tabla": 34,
+          "fila": 2,
+          "columna": 6,
+          "antes": "Acreditado por protocolo y concordancia interevaluador"
+        },
+        {
+          "tabla": 34,
+          "fila": 3,
+          "columna": 3,
+          "antes": "Juicio de contenido mediante certificado único con criterios dicotómicos Pertine"
+        },
+        {
+          "tabla": 46,
+          "fila": 4,
+          "columna": 1,
+          "antes": "V = [Por completar por el juez] (12 componentes de la matriz VD en escala de 1 a"
+        },
+        {
+          "tabla": 46,
+          "fila": 6,
+          "columna": 1,
+          "antes": "Andahuaylas, Apurímac , Perú, ____ de ____________ de 2026"
+        },
+        {
+          "tabla": 47,
+          "fila": 4,
+          "columna": 1,
+          "antes": "V = [Por completar por el juez] (12 componentes de la matriz VD en escala de 1 a"
+        },
+        {
+          "tabla": 47,
+          "fila": 6,
+          "columna": 1,
+          "antes": "Andahuaylas, Apurímac , Perú, ____ de ____________ de 2026"
+        },
+        {
+          "tabla": 48,
+          "fila": 4,
+          "columna": 1,
+          "antes": "V = [Por completar por el juez] (12 componentes de la matriz VD en escala de 1 a"
+        },
+        {
+          "tabla": 48,
+          "fila": 6,
+          "columna": 1,
+          "antes": "Andahuaylas, Apurímac , Perú, ____ de ____________ de 2026"
+        },
+        {
+          "tabla": 54,
+          "fila": 6,
+          "columna": 3,
+          "antes": "No declarado en la Tabla 7"
+        },
+        {
+          "tabla": 54,
+          "fila": 7,
+          "columna": 3,
+          "antes": "No declarado en la Tabla 7"
+        }
+      ]
+    },
+    {
+      "tipo": "celdas_parrafos",
+      "celdas": 3,
+      "acciones": [
+        {
+          "tabla": 46,
+          "fila": 7,
+          "columna": 0,
+          "parrafos": 3
+        },
+        {
+          "tabla": 47,
+          "fila": 7,
+          "columna": 0,
+          "parrafos": 3
+        },
+        {
+          "tabla": 48,
+          "fila": 7,
+          "columna": 0,
+          "parrafos": 3
+        }
+      ]
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 1,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 14
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 32,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 34,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 43,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 45,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 5
+    },
+    {
+      "tipo": "normalizar_tamano",
+      "acciones": [
+        {
+          "tabla": 1,
+          "runs_ajustados": 0,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 32,
+          "runs_ajustados": 0,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 34,
+          "runs_ajustados": 0,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 43,
+          "runs_ajustados": 35,
+          "minimo_pt": 10.0
+        },
+        {
+          "tabla": 45,
+          "runs_ajustados": 0,
+          "minimo_pt": 10.0
+        }
+      ]
+    },
+    {
+      "tipo": "rebalanceo",
+      "acciones": [
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 1,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [1113, 1470, 1603, 1569, 1613, 1397] -> [1113, 1470, 1603, 1569, 1613, 1397]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 32,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [1408, 1983, 1336, 1767, 1207, 1064] -> [1408, 1937, 1336, 1767, 1253, 1064]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 34,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [862, 1638, 1638, 1954, 833, 618, 1222] -> [862, 1522, 1638, 1164, 1130, 1130, 1319]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 43,
+          "estado": "corregido",
+          "detalle": "rebalanceo=si; anchos [1800, 1750, 1150, 750, 950, 950, 1415] -> [1751, 1750, 1150, 750, 950, 950, 1464]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 45,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [1461, 1461, 1461, 1461, 1461, 1460] -> [1461, 1461, 1461, 1461, 1461, 1460]"
+        }
+      ],
+      "tablas": [
+        {
+          "indice_tabla": 1,
+          "columnas": 6,
+          "filas": 14,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              1113,
+              1470,
+              1603,
+              1569,
+              1613,
+              1397
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1113,
+              "ancho_util_dxa": 1057,
+              "token_mas_largo": "Astuhuaman",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1011.0,
+              "requerido_dxa": 1075,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1470,
+              "ancho_util_dxa": 1414,
+              "token_mas_largo": "Establecimientos",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1366.6,
+              "requerido_dxa": 1431,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1603,
+              "ancho_util_dxa": 1547,
+              "token_mas_largo": "Cuasiexperimental",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1499.8,
+              "requerido_dxa": 1564,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1569,
+              "ancho_util_dxa": 1513,
+              "token_mas_largo": "desabastecimiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1466.4,
+              "requerido_dxa": 1530,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1613,
+              "ancho_util_dxa": 1557,
+              "token_mas_largo": "Desabastecimiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1510.8,
+              "requerido_dxa": 1575,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1397,
+              "ancho_util_dxa": 1341,
+              "token_mas_largo": "inmunizaciones.",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1305.4,
+              "requerido_dxa": 1369,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 32,
+          "columnas": 6,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              1408,
+              1983,
+              1336,
+              1767,
+              1207,
+              1064
+            ],
+            "anchos_nuevos": [
+              1408,
+              1937,
+              1336,
+              1767,
+              1253,
+              1064
+            ],
+            "ensanchadas": [
+              4
+            ],
+            "donantes": [
+              1
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1408,
+              "ancho_util_dxa": 1352,
+              "token_mas_largo": "Independiente:",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1289.0,
+              "requerido_dxa": 1353,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1937,
+              "ancho_util_dxa": 1881,
+              "token_mas_largo": "Operacional",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1055.6,
+              "requerido_dxa": 1120,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1336,
+              "ancho_util_dxa": 1280,
+              "token_mas_largo": "procesamiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1166.4,
+              "requerido_dxa": 1230,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1767,
+              "ancho_util_dxa": 1711,
+              "token_mas_largo": "Concordancia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1110.8,
+              "requerido_dxa": 1175,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1253,
+              "ancho_util_dxa": 1197,
+              "token_mas_largo": "cronometrados",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1188.6,
+              "requerido_dxa": 1253,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1064,
+              "ancho_util_dxa": 1008,
+              "token_mas_largo": "Valoración",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 944.1,
+              "requerido_dxa": 1008,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 34,
+          "columnas": 7,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              862,
+              1638,
+              1638,
+              1954,
+              833,
+              618,
+              1222
+            ],
+            "anchos_nuevos": [
+              862,
+              1522,
+              1638,
+              1164,
+              1130,
+              1130,
+              1319
+            ],
+            "ensanchadas": [
+              4,
+              5,
+              6
+            ],
+            "donantes": [
+              1,
+              3
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 862,
+              "ancho_util_dxa": 806,
+              "token_mas_largo": "INST-",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 510.7,
+              "requerido_dxa": 575,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1522,
+              "ancho_util_dxa": 1466,
+              "token_mas_largo": "cronometrados",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1188.6,
+              "requerido_dxa": 1253,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1638,
+              "ancho_util_dxa": 1582,
+              "token_mas_largo": "MINSA/DGIESP-",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1466.6,
+              "requerido_dxa": 1531,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1164,
+              "ancho_util_dxa": 1108,
+              "token_mas_largo": "Confiabilidad",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1100.0,
+              "requerido_dxa": 1164,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1130,
+              "ancho_util_dxa": 1074,
+              "token_mas_largo": "(condicional)",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1066.4,
+              "requerido_dxa": 1130,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1130,
+              "ancho_util_dxa": 1074,
+              "token_mas_largo": "(condicional)",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1066.4,
+              "requerido_dxa": 1130,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1319,
+              "ancho_util_dxa": 1263,
+              "token_mas_largo": "interobservador",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1255.2,
+              "requerido_dxa": 1319,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 43,
+          "columnas": 7,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": true,
+            "anchos_anteriores": [
+              1800,
+              1750,
+              1150,
+              750,
+              950,
+              950,
+              1415
+            ],
+            "anchos_nuevos": [
+              1751,
+              1750,
+              1150,
+              750,
+              950,
+              950,
+              1464
+            ],
+            "ensanchadas": [
+              6
+            ],
+            "donantes": [
+              0
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1751,
+              "ancho_util_dxa": 1695,
+              "token_mas_largo": "Específica",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 833.0,
+              "requerido_dxa": 897,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1750,
+              "ancho_util_dxa": 1694,
+              "token_mas_largo": "procesamiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1166.4,
+              "requerido_dxa": 1230,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1150,
+              "ancho_util_dxa": 1094,
+              "token_mas_largo": "conjuntivo",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 855.6,
+              "requerido_dxa": 920,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 750,
+              "ancho_util_dxa": 694,
+              "token_mas_largo": "original",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 666.8,
+              "requerido_dxa": 731,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 950,
+              "ancho_util_dxa": 894,
+              "token_mas_largo": "ajustado",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 733.4,
+              "requerido_dxa": 797,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 950,
+              "ancho_util_dxa": 894,
+              "token_mas_largo": "Rechazar",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 744.0,
+              "requerido_dxa": 808,
+              "cabe": true
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1464,
+              "ancho_util_dxa": 1408,
+              "token_mas_largo": "multidimensional",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1400.2,
+              "requerido_dxa": 1464,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        },
+        {
+          "indice_tabla": 45,
+          "columnas": 6,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              1461,
+              1461,
+              1461,
+              1461,
+              1461,
+              1460
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1461,
+              "ancho_util_dxa": 1405,
+              "token_mas_largo": "Independiente:",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1188.6,
+              "requerido_dxa": 1253,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1461,
+              "ancho_util_dxa": 1405,
+              "token_mas_largo": "Operacional",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1055.6,
+              "requerido_dxa": 1120,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1461,
+              "ancho_util_dxa": 1405,
+              "token_mas_largo": "procesamiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1166.4,
+              "requerido_dxa": 1230,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1461,
+              "ancho_util_dxa": 1405,
+              "token_mas_largo": "Concordancia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1110.8,
+              "requerido_dxa": 1175,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1461,
+              "ancho_util_dxa": 1405,
+              "token_mas_largo": "cronometrados",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1188.6,
+              "requerido_dxa": 1253,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1460,
+              "ancho_util_dxa": 1404,
+              "token_mas_largo": "Valoración",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 944.1,
+              "requerido_dxa": 1008,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        }
+      ]
+    },
+    {
+      "tipo": "reorganizar_bloques",
+      "tabla_original": 44,
+      "reorganizada": true,
+      "filas": 21,
+      "columnas": 2,
+      "ancho_util_dxa": 13720,
+      "ancho_etiqueta_dxa": 3200,
+      "ancho_valor_dxa": 10520,
+      "orientacion": "horizontal",
+      "celdas_origen": 20,
+      "filas_extra": 0,
+      "texto_conservado": true
+    }
+  ],
+  "tablas_verificadas": [
+    {
+      "tabla": 1,
+      "filas": 14,
+      "columnas": 6,
+      "cantSplit": true
+    },
+    {
+      "tabla": 32,
+      "filas": 5,
+      "columnas": 6,
+      "cantSplit": true
+    },
+    {
+      "tabla": 34,
+      "filas": 5,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 43,
+      "filas": 5,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 45,
+      "filas": 5,
+      "columnas": 6,
+      "cantSplit": true
+    },
+    {
+      "tabla": 34,
+      "filas": 5,
+      "columnas": 7,
+      "cantSplit": true
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "metadatos": {
+    "documento_auditado": "salidas/documentos/informe_final_v12.docx",
+    "sha256": "284cc76b3a2eb756599da7d1e04765ecf43c66674a9fa47043312cfa51268c1c",
+    "parrafos": 824,
+    "tablas": 59,
+    "fecha_auditoria": "2026-10-21",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "agente": "verificador-integridad",
+    "squad": "Squad A (Inteligencia Bibliográfica y Evidencia)",
+    "rango_lista_referencias": [
+      726,
+      778
+    ],
+    "referencias_listadas": 53,
+    "modalidad": "Auditoría en solo lectura. El DOCX no se modificó en ninguna circunstancia.",
+    "servicios_de_verificacion": [
+      "Crossref REST API (api.crossref.org)",
+      "OpenAlex API (api.openalex.org)",
+      "Resolución de DOIs en doi.org",
+      "Handle System API (hdl.handle.net/api/handles)",
+      "Wayback Machine CDX API (web.archive.org)",
+      "DSpace REST API de la UNAJMA y de IRIS PAHO",
+      "Repositorio OJS del International Journal of Legal Science and Innovation (IJLSI)",
+      "Plataforma gob.pe (normas legales del MINSA)",
+      "Sitio oficial de ISO y instantáneas archivadas"
+    ],
+    "limitacion_de_herramientas": "En esta sesión las herramientas MCP zotero, firecrawl y ydc-server no estuvieron expuestas en el conjunto de funciones disponible. La verificación se ejecutó con consultas HTTP deterministas a las APIs primarias y a los repositorios institucionales, con la misma trazabilidad y fecha de consulta. No se inventó ningún identificador."
+  },
+  "resumen_veredictos": {
+    "total_registros_de_la_comision": 8,
+    "total_subregistros_verificados": 9,
+    "identificador_confirmado": 2,
+    "sustituto_confirmado": 2,
+    "sin_identificador_disponible": 3,
+    "requiere_ajuste_de_referencia": 2,
+    "detalle": {
+      "identificador_confirmado": [
+        "ISO/IEC 25010:2023",
+        "Mego Navarro (2021), UTP"
+      ],
+      "sustituto_confirmado": [
+        "Ministerio de Salud del Perú (2022), NTS N.° 196",
+        "Quispe Tello (2024), UNAJMA"
+      ],
+      "sin_identificador_disponible": [
+        "Balón Morejón (2023)",
+        "Holm (1979)",
+        "Razali y Wah (2011)"
+      ],
+      "requiere_ajuste_de_referencia": [
+        "Addy (2023/2024)",
+        "Organización Panamericana de la Salud y PATH (2019/2020)"
+      ]
+    }
+  },
+  "registros": [
+    {
+      "id": 1,
+      "registro": "Addy et al. (2024)",
+      "entrada_actual": "Addy, A., Ajayi, O., y Mensah, K. (2024). Artificial intelligence in the supply chain management for vaccine distribution in the West African healthcare sector with a focus on Ghana. International Journal of Legal Science and Innovation, 5(6), 1–25.",
+      "veredicto": "requiere_ajuste_de_referencia",
+      "identificador_confirmado": "https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana",
+      "tipo_identificador": "URL de artículo OJS; no existe DOI registrado",
+      "evidencia": [
+        "2026-10-21. Página del artículo en IJLSI: HTTP 200. Título exacto. Autor único: Alfred Addy (RN, MPH, Independent Researcher, Ghana). Vol. 5, No. VI (2023), pp. 1701–1705. Publicado el 22-12-2023. No hay metaetiqueta de DOI.",
+        "2026-10-21. PDF del artículo: HTTP 200; 26 páginas (portada + 25). Paginación interna 1–25. No hay DOI del artículo; las cadenas 10.xxxx detectadas pertenecen a las referencias bibliográficas del propio artículo.",
+        "2026-10-21. Crossref, revista ISSN 2581-9453: 22 registros, todos de 2026; ninguno de Addy y ninguno de 2023. El artículo no está depositado en Crossref.",
+        "2026-10-21. OpenAlex: no se localizó obra de Addy (2023 o 2024) con este título."
+      ],
+      "texto_apa7_definitivo": "Addy, A. (2023). Artificial intelligence in the supply chain management for vaccine distribution in the West African healthcare sector with a focus on Ghana. International Journal of Legal Science and Innovation, 5(6), 1–25. https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana",
+      "cambios_requeridos": [
+        "P726: sustituir la entrada completa por el texto APA 7 definitivo. Se eliminan los coautores Ajayi y Mensah, se corrige el año a 2023 y se añade la URL del artículo.",
+        "P260: sustituir «Addy et al., 2024, p. 2» por «Addy, 2023». Si el redactor desea conservar un localizador, debe verificarlo contra el PDF: la afirmación sobre trazabilidad documental se apoya en las páginas impresas 8–10 (blockchain y registros inmutables), no en la página 2.",
+        "P327: sustituir «Addy et al., 2024, p. 2» por «Addy, 2023» con la misma precisión sobre el localizador."
+      ],
+      "alerta": "CRÍTICA. La fuente existe y es verificable, pero la entrada le atribuye dos coautores inexistentes (Ajayi y Mensah) y un año equivocado (2024). El artículo es de autor único y se publicó en 2023. No es una referencia inventada; es una referencia mal atribuida. La corrección es obligatoria antes del cierre.",
+      "observacion": "La página del artículo muestra «pp. 1701–1705», mientras que el PDF tiene paginación interna 1–25. Se conserva 1–25 porque es la paginación efectiva del documento publicado y la que ya figuraba en la entrada. La discrepancia se documenta para que el maquetador no la altere sin decisión editorial."
+    },
+    {
+      "id": 2,
+      "registro": "Balón Morejón (2023)",
+      "entrada_actual": "Balón Morejón, R. M. (2023). Aplicación web de gestión de citas, control de inventario y campañas de vacunación en el centro de salud Dr. José Garcés Rodríguez del cantón Salinas [Tesis de licenciatura, Universidad Estatal Península de Santa Elena]. Repositorio Institucional UPSE. https://hdl.handle.net/46000/9257",
+      "veredicto": "sin_identificador_disponible",
+      "identificador_confirmado": null,
+      "tipo_identificador": "Ninguno vigente",
+      "evidencia": [
+        "2026-10-21. https://hdl.handle.net/46000/9257: HTTP 404.",
+        "2026-10-21. Handle System API: responseCode 100, SERVICE_NOT_FOUND. El prefijo 0.NA/46000 no está registrado en el resolver global.",
+        "2026-10-21. Wayback Machine, instantánea 2024-02-22: HTTP 200. Título exacto; autoría «Balón Morejón, Ricardo Miguel»; fecha 19-04-2023; editorial «La Libertad: Universidad Estatal Península de Santa Elena»; archivo UPSE-TTI-2023-0003.pdf.",
+        "2026-10-21. Wayback Machine, instantáneas 2026-10-09: HTTP 500. El repositorio no responde.",
+        "2026-10-21. Repositorio UPSE en vivo: tiempo de espera agotado. No se localizó un identificador alternativo (DOI, handle nuevo o URL persistente) en Crossref, OpenAlex ni en el resolver de handles."
+      ],
+      "texto_apa7_definitivo": "Balón Morejón, R. M. (2023). Aplicación web de gestión de citas, control de inventario y campañas de vacunación en el centro de salud Dr. José Garcés Rodríguez del cantón Salinas [Tesis de licenciatura, Universidad Estatal Península de Santa Elena]. Repositorio Institucional UPSE.",
+      "cambios_requeridos": [
+        "P730: eliminar «https://hdl.handle.net/46000/9257» y conservar la referencia sin enlace. La cita narrativa del cuerpo (P210) no requiere cambio."
+      ],
+      "alerta": "MAYOR. El registro existió y está archivado, pero el identificador declarado ya no resuelve. Se prefiere una referencia sin enlace antes que un handle muerto. No se inventa un sustituto.",
+      "observacion": "La referencia sin URL es una forma admitida por APA 7 para una tesis de repositorio cuando no existe un identificador persistente activo."
+    },
+    {
+      "id": 3,
+      "registro": "Ministerio de Salud del Perú (2022), NTS N.° 196-MINSA/DGIESP-2022",
+      "entrada_actual": "Ministerio de Salud del Perú. (2022). Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N.° 196-MINSA/DGIESP-2022, aprobada mediante Resolución Ministerial N.° 884-2022/MINSA). MINSA. https://www.gob.pe/institucion/minsa/normas-legales/3576882-884-2022-minsa",
+      "veredicto": "sustituto_confirmado",
+      "identificador_confirmado": "https://www.gob.pe/institucion/minsa/normas-legales/3642636-884-2022-minsa",
+      "tipo_identificador": "URL oficial en gob.pe",
+      "evidencia": [
+        "2026-10-21. URL actual 3576882: HTTP 200 tras redirección a https://www.gob.pe/institucion/regionpiura/normas-legales/3576882-002438-2018-grds. Título: «Resolución Gerencial Regional N.° 002438-2018-GRDS». Es una norma ajena de Piura, no la NTS 196.",
+        "2026-10-21. URL corregida 3642636: HTTP 200. Título: «Resolución Ministerial N.° 884-2022-MINSA». La página menciona la NTS N.° 196-MINSA/DGIESP-2022 y la Resolución Ministerial N.° 884-2022/MINSA."
+      ],
+      "texto_apa7_definitivo": "Ministerio de Salud del Perú. (2022). Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N.° 196-MINSA/DGIESP-2022, aprobada mediante Resolución Ministerial N.° 884-2022/MINSA). https://www.gob.pe/institucion/minsa/normas-legales/3642636-884-2022-minsa",
+      "cambios_requeridos": [
+        "P761: reemplazar la URL 3576882 por 3642636 y eliminar «MINSA.» como editorial, porque coincide con el autor corporativo (APA 7, elemento fuente)."
+      ],
+      "alerta": "MAYOR. El enlace anterior redirigía a una norma ajena. El enlace corregido es el oficial y menciona expresamente la NTS 196.",
+      "observacion": "No se requiere cambio en las citas del cuerpo: todas usan «Ministerio de Salud del Perú» o «Ministerio de Salud» con el año 2022."
+    },
+    {
+      "id": 4,
+      "registro": "Holm (1979)",
+      "entrada_actual": "Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70.",
+      "veredicto": "sin_identificador_disponible",
+      "identificador_confirmado": null,
+      "tipo_identificador": "Ninguno",
+      "evidencia": [
+        "2026-10-21. https://doi.org/10.2307/4615733: HTTP 404. El DOI no está registrado.",
+        "2026-10-21. https://www.jstor.org/stable/4615733: HTTP 200, pero la página presenta un desafío anti-bot y exige sesión autenticada; no permite extraer metadatos ni sirve como enlace estable de acceso abierto.",
+        "2026-10-21. Crossref y OpenAlex: no existe DOI registrado para el artículo de Holm (1979). Las obras recuperadas con títulos similares son de 1986, 1987 y 1990, ajenas a esta entrada."
+      ],
+      "texto_apa7_definitivo": "Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70.",
+      "cambios_requeridos": [
+        "P750: conservar la referencia sin enlace. No añadir el DOI 10.2307/4615733 ni la URL de JSTOR."
+      ],
+      "alerta": "NINGUNA. La decisión provisional de citar sin enlace queda confirmada.",
+      "observacion": "APA 7 admite la referencia de artículo de revista sin URL cuando no existe DOI. El artículo es real y la referencia es correcta."
+    },
+    {
+      "id": 5,
+      "registro": "Quispe Tello (2024)",
+      "entrada_actual": "Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas].",
+      "veredicto": "sustituto_confirmado",
+      "identificador_confirmado": "https://hdl.handle.net/20.500.14168/854",
+      "tipo_identificador": "Handle institucional UNAJMA",
+      "evidencia": [
+        "2026-10-21. PDF local referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf: portada con «FANY QUISPE TELLO»; título «INFLUENCIA DEL APLICATIVO WEBFQT PARA EL SEGUIMIENTO DE PROYECTOS DE INVERSIÓN PÚBLICA EN LA MUNICIPALIDAD DISTRITAL DE PORVENIR»; «TESIS PARA OPTAR EL TÍTULO PROFESIONAL DE INGENIERA DE SISTEMAS»; «UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS», Facultad de Ingeniería, EPIS; año 2024; 106 páginas.",
+        "2026-10-21. PDF local, página impresa 36 (PDF 49): la tesis declara un diseño preexperimental con un solo grupo y medición pre-post.",
+        "2026-10-21. PDF local, páginas impresas 62–64 (PDF 75–77): «Anexo 2. Instrumento de validación», con columnas Pertinencia, Relevancia y Claridad.",
+        "2026-10-21. Handle System API: responseCode 1 para 20.500.14168/854; URL de destino https://repositorio.unajma.edu.pe/handle/20.500.14168/854.",
+        "2026-10-21. https://hdl.handle.net/20.500.14168/854: HTTP 200; redirige a https://repositorio.unajma.edu.pe/handle/20.500.14168/854.",
+        "2026-10-21. DSpace UNAJMA: UUID e7a31d2e-d663-4dd3-85fe-7e8e799b2349; handle 20.500.14168/854; tipo bachelorThesis; año 2024."
+      ],
+      "texto_apa7_definitivo": "Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas]. Repositorio Institucional UNAJMA. https://hdl.handle.net/20.500.14168/854",
+      "cambios_requeridos": [
+        "P767: añadir «Repositorio Institucional UNAJMA.» y el handle https://hdl.handle.net/20.500.14168/854.",
+        "P630: sustituir «Fany (2024)» por «Quispe Tello (2024, p. 62)». Es la corrección obligatoria que resuelve la cita huérfana.",
+        "P177 (recomendada): añadir la cita narrativa «Quispe Tello (2024, p. 36)» al justificar el diseño preexperimental.",
+        "P625 (recomendada): añadir la cita parentética «(Quispe Tello, 2024, p. 62)» al describir el certificado de validación por expertos."
+      ],
+      "alerta": "NINGUNA sobre la existencia de la fuente. La entrada es verificable y sus datos son exactos. El defecto es de correspondencia 1:1: la única mención en el cuerpo usaba el nombre de pila «Fany (2024)», que no coincidía con el apellido de la entrada.",
+      "observacion": "Por DEC-015, el Anexo 2 de esta tesis es el formato vigente de validación por juicio de expertos. Citarla es una obligación de atribución, no un adorno. No se recomienda su retiro."
+    },
+    {
+      "id": 6,
+      "registro": "Razali y Wah (2011)",
+      "entrada_actual": "Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.",
+      "veredicto": "sin_identificador_disponible",
+      "identificador_confirmado": null,
+      "tipo_identificador": "Ninguno",
+      "evidencia": [
+        "2026-10-21. Crossref: no existe registro de la revista «Journal of Statistical Modeling and Analytics» (total de revistas: 0). Las búsquedas bibliográficas devuelven artículos ajenos de 2011, 2016, 2023 y 2025, ninguno de Razali y Wah.",
+        "2026-10-21. OpenAlex: no existe fuente con ese nombre (count 0). La búsqueda por título devuelve obras ajenas; no se recupera el artículo de 2011.",
+        "2026-10-21. No se localizó DOI propio del artículo ni de la revista. La revista no aparece en el sistema de DOIs de Crossref."
+      ],
+      "texto_apa7_definitivo": "Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.",
+      "cambios_requeridos": [
+        "P768: conservar la referencia sin enlace. No añadir DOI ni URL."
+      ],
+      "alerta": "NINGUNA. La obra es real y la referencia es correcta; simplemente no tiene DOI.",
+      "observacion": "La revista no está indexada en Crossref ni en OpenAlex. APA 7 admite la referencia sin enlace."
+    },
+    {
+      "id": 7,
+      "registro": "ISO/IEC 25010:2023",
+      "entrada_actual": "International Organization for Standardization, y International Electrotechnical Commission. (2023). Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): Product quality model (ISO/IEC 25010:2023). https://www.iso.org/standard/78176.html",
+      "veredicto": "identificador_confirmado",
+      "identificador_confirmado": "https://www.iso.org/standard/78176.html",
+      "tipo_identificador": "URL oficial de ISO",
+      "evidencia": [
+        "2026-10-21. https://www.iso.org/standard/78176.html en vivo: HTTP 403 con desafío Cloudflare («Just a moment...»). Es una restricción anti-bot/comercial, no un 404.",
+        "2026-10-21. Wayback Machine, instantánea 2026-10-10 16:11:41: HTTP 200. Título: «ISO/IEC 25010:2023 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model». Confirma que la URL corresponde a la edición 2023.",
+        "2026-10-21. Instantáneas 2026-09-17 y 2026-10-02: HTTP 200 con el mismo título."
+      ],
+      "texto_apa7_definitivo": "International Organization for Standardization, e International Electrotechnical Commission. (2023). Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): Product quality model (ISO/IEC 25010:2023). https://www.iso.org/standard/78176.html",
+      "cambios_requeridos": [
+        "P753: cambiar la conjunción «y» por «e» ante «International» (regla ortográfica del español y APA 7 en español). Conservar la URL oficial."
+      ],
+      "alerta": "NINGUNA. El 403 es una restricción de acceso automatizado, no un identificador muerto.",
+      "observacion": "Si el criterio editorial exigiera cero errores de acceso incluso para verificadores automatizados, la alternativa APA 7 sería omitir la URL y citar el número de norma. No se recomienda porque el enlace oficial es correcto y resuelve en navegador."
+    },
+    {
+      "id": 8,
+      "registro": "Handles de UTP y OPS (403 y 502)",
+      "veredicto_consolidado": "requiere_ajuste_de_referencia",
+      "subregistros": [
+        {
+          "id": "8a",
+          "registro": "Mego Navarro (2021), Universidad Tecnológica del Perú",
+          "entrada_actual": "Mego Navarro, D. P. (2021). Implementación de un sistema web para la gestión de vacunas del Covid-19 en una entidad pública 2021 [Trabajo de suficiencia profesional, Universidad Tecnológica del Perú]. Repositorio Institucional UTP. https://hdl.handle.net/20.500.12867/5068",
+          "veredicto": "identificador_confirmado",
+          "identificador_confirmado": "https://hdl.handle.net/20.500.12867/5068",
+          "tipo_identificador": "Handle institucional UTP",
+          "evidencia": [
+            "2026-10-21. Handle System API: responseCode 1 para 20.500.12867/5068; URL de destino https://repositorio.utp.edu.pe/handle/20.500.12867/5068.",
+            "2026-10-21. https://repositorio.utp.edu.pe/handle/20.500.12867/5068: HTTP 403 con página «Making sure you're not a bot!» (desafío Anubis). No es un 404.",
+            "2026-10-21. El backend DSpace de la UTP también responde con el desafío Anubis. La restricción es permanente para clientes automatizados, pero el handle sigue registrado y resuelve en navegador."
+          ],
+          "texto_apa7_definitivo": "Mego Navarro, D. P. (2021). Implementación de un sistema web para la gestión de vacunas del Covid-19 en una entidad pública 2021 [Trabajo de suficiencia profesional, Universidad Tecnológica del Perú]. Repositorio Institucional UTP. https://hdl.handle.net/20.500.12867/5068",
+          "cambios_requeridos": [
+            "P759: conservar la entrada y el handle. No se propone sustituto."
+          ],
+          "alerta": "NINGUNA. El 403 es un desafío anti-bot, no un enlace muerto.",
+          "observacion": "No fue posible verificar el contenido de la página de destino por el desafío Anubis; la validez del identificador se sustenta en el registro del Handle System."
+        },
+        {
+          "id": "8b",
+          "registro": "Organización Panamericana de la Salud y PATH (2020)",
+          "entrada_actual": "Organización Panamericana de la Salud, y PATH. (2020). Datos de inmunización: Evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. OPS. https://iris.paho.org/handle/10665.2/53120",
+          "veredicto": "requiere_ajuste_de_referencia",
+          "identificador_confirmado": "https://iris.paho.org/handle/10665.2/50482",
+          "tipo_identificador": "Handle institucional IRIS PAHO",
+          "evidencia": [
+            "2026-10-21. El handle actual 10665.2/53120 resuelve al ítem «Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas», de Mayer-Foulkes, Serván-Mori y Nigenda (Revista Panamericana de Salud Pública, 2020;44:e141, DOI 10.26633/RPSP.2020.141). Es un documento ajeno a la referencia.",
+            "2026-10-21. El handle correcto 10665.2/50482 resuelve con HTTP 200 a https://iris.paho.org/items/ee16da9a-85e3-425c-9707-0987c40fd538.",
+            "2026-10-21. Metadatos del ítem 50482: título español «Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos»; año 2019; editorial PAHO; cita «Seattle: PATH; Washington, DC: OPS; 2019»; sin DOI.",
+            "2026-10-21. El handle 53120 devolvió 502 en una comprobación posterior. El 502 es intermitente, pero el problema de fondo es que el destino es un artículo ajeno."
+          ],
+          "texto_apa7_definitivo": "Organización Panamericana de la Salud, y PATH. (2019). Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. https://iris.paho.org/handle/10665.2/50482",
+          "cambios_requeridos": [
+            "P765: corregir el año a 2019, añadir el subtítulo «Evidencia de los países bajos y medianos ingresos», eliminar «OPS.» como editorial y reemplazar el handle 53120 por 50482.",
+            "P265: cambiar «Organización Panamericana de la Salud y PATH, 2020» por «Organización Panamericana de la Salud y PATH, 2019».",
+            "P325: cambiar «Organización Panamericana de la Salud y PATH, 2020» por «Organización Panamericana de la Salud y PATH, 2019»."
+          ],
+          "alerta": "CRÍTICA. El enlace declarado no solo era intermitente: apuntaba a un artículo ajeno. El año correcto es 2019, no 2020. La referencia debe corregirse en la lista y en las dos citas del cuerpo.",
+          "observacion": "El handle 50482 es el documento que la referencia describe. No tiene DOI; el handle es el identificador persistente."
+        }
+      ]
+    }
+  ],
+  "seccion_quispe_tello": {
+    "estado": "Fuente verificada; defecto de correspondencia 1:1 resuelto por sustitución en el cuerpo.",
+    "pdf_local": {
+      "ruta": "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+      "paginas": 106,
+      "metadatos_confirmados": {
+        "autora": "Fany Quispe Tello",
+        "asesor": "MSc. Edwing Alcides Maquera Flores",
+        "institucion": "Universidad Nacional José María Arguedas, Facultad de Ingeniería, Escuela Profesional de Ingeniería de Sistemas",
+        "titulo": "Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir",
+        "grado": "Tesis para optar el título profesional de Ingeniera de Sistemas",
+        "anio": 2024
+      },
+      "verificacion_de_datos_apa": "La entrada APA coincide campo por campo con la portada y la página de título del PDF. No hay divergencia que corregir en apellidos, nombre, año, título, grado ni universidad. Solo falta el repositorio y el handle."
+    },
+    "repositorio": {
+      "uuid": "e7a31d2e-d663-4dd3-85fe-7e8e799b2349",
+      "handle": "20.500.14168/854",
+      "uri": "https://hdl.handle.net/20.500.14168/854",
+      "destino": "https://repositorio.unajma.edu.pe/handle/20.500.14168/854",
+      "http": 200,
+      "tipo": "bachelorThesis",
+      "anio": 2024,
+      "nota": "El metadato del repositorio escribe «Quipe Tello, Fany» (error tipográfico del repositorio). La portada del PDF y la entrada APA usan «Quispe Tello, F.», que es la grafía correcta."
+    },
+    "entrada_apa7_definitiva": "Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas]. Repositorio Institucional UNAJMA. https://hdl.handle.net/20.500.14168/854",
+    "citas_activas": [
+      {
+        "parrafo": 177,
+        "seccion": "1.3.3. Justificación metodológica",
+        "ancla_literal": "bajo los lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141), adaptado a una población censal de 14 operadores especializados (N = n = 14).",
+        "forma_apa7": "Quispe Tello (2024, p. 36)",
+        "tipo_cita": "narrativa",
+        "pagina_verificada": "36 (PDF 49): diseño preexperimental con un solo grupo y medición pre-post",
+        "justificacion": "La tesis de Quispe Tello adoptó el mismo diseño preexperimental que el informe declara. La cita narrativa atribuye el diseño sin desplazar la fuente metodológica principal (Hernández-Sampieri et al., 2014).",
+        "obligatoria": false
+      },
+      {
+        "parrafo": 625,
+        "seccion": "4.12. Validez de los instrumentos",
+        "ancla_literal": "Pertinencia (Sí/No), Relevancia (Sí/No) y Claridad (Sí/No).",
+        "forma_apa7": "(Quispe Tello, 2024, p. 62)",
+        "tipo_cita": "parentética",
+        "pagina_verificada": "62 (PDF 75): «Anexo 2. Instrumento de validación», con las columnas Pertinencia, Relevancia y Claridad",
+        "justificacion": "El certificado de validación que describe el párrafo reproduce el Anexo 2 de la tesis. La cita parentética documenta la procedencia del formato.",
+        "obligatoria": false
+      },
+      {
+        "parrafo": 630,
+        "seccion": "4.12. Validez de los instrumentos",
+        "ancla_literal": "cuyo modelo es el formato institucional de Fany (2024) adoptado por la normativa del proyecto",
+        "forma_apa7": "Quispe Tello (2024, p. 62)",
+        "tipo_cita": "narrativa",
+        "pagina_verificada": "62 (PDF 75)",
+        "justificacion": "Sustituye la mención por nombre de pila «Fany (2024)» por la cita APA 7 con el apellido. Es la corrección que resuelve la cita huérfana y restablece la correspondencia 1:1.",
+        "obligatoria": true
+      }
+    ],
+    "orden_de_insercion": [
+      {
+        "indice_docx": 630,
+        "tipo": "sustitucion_cuerpo",
+        "ancla_original": "cuyo modelo es el formato institucional de Fany (2024) adoptado por la normativa del proyecto",
+        "texto_nuevo": "cuyo modelo es el formato institucional de Quispe Tello (2024, p. 62) adoptado por la normativa del proyecto",
+        "ocurrencias": 1,
+        "obligatoria": true,
+        "justificacion": "Corrige la cita huérfana. La fuente ya está en la lista de referencias (P767); no se inserta una nueva referencia."
+      },
+      {
+        "indice_docx": 177,
+        "tipo": "insercion_cuerpo",
+        "ancla_original": "bajo los lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141), adaptado a una población censal de 14 operadores especializados (N = n = 14).",
+        "texto_nuevo": "bajo los lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141) y el diseño preexperimental de un solo grupo adoptado por Quispe Tello (2024, p. 36), adaptado a una población censal de 14 operadores especializados (N = n = 14).",
+        "ocurrencias": 1,
+        "obligatoria": false,
+        "justificacion": "Refuerza la atribución del diseño preexperimental a la tesis modelo. Cita narrativa."
+      },
+      {
+        "indice_docx": 625,
+        "tipo": "insercion_cuerpo",
+        "ancla_original": "Pertinencia (Sí/No), Relevancia (Sí/No) y Claridad (Sí/No).",
+        "texto_nuevo": "Pertinencia (Sí/No), Relevancia (Sí/No) y Claridad (Sí/No) (Quispe Tello, 2024, p. 62).",
+        "ocurrencias": 1,
+        "obligatoria": false,
+        "justificacion": "Documenta que el certificado de validación reproduce el Anexo 2. Cita parentética."
+      }
+    ],
+    "nota_apa7": {
+      "parentetica": "(Quispe Tello, 2024) o (Quispe Tello, 2024, p. 62). El apellido y el año van entre paréntesis, normalmente al final de la oración.",
+      "narrativa": "Quispe Tello (2024) o Quispe Tello (2024, p. 62). El apellido forma parte de la oración y el año va entre paréntesis.",
+      "multiple": "(Hernández-Sampieri et al., 2014; Quispe Tello, 2024). Los autores se ordenan alfabéticamente y se separan con punto y coma.",
+      "conjuncion": "En español se usa «y» entre apellidos fuera de paréntesis; dentro del paréntesis se usa «y» o «e» según la fonética. Nunca «&» en el cuerpo."
+    }
+  },
+  "hallazgo_de_control": {
+    "inserciones_bibliograficas_aplicadas_en_v12": 11,
+    "con_cita_activa": {
+      "Cronbach (1951)": 9,
+      "Feldt (1965)": 3,
+      "George y Mallery (2003)": 1,
+      "Hernández-Sampieri y Mendoza (2018)": 1,
+      "Holm (1979)": 21,
+      "Razali y Wah (2011)": 1,
+      "Rosenthal (1991)": 6,
+      "Shapiro y Wilk (1965)": 11,
+      "Venkatesh et al. (2003)": 1,
+      "Wilcoxon (1945)": 36
+    },
+    "huerfana_detectada": "Quispe Tello, F. (2024) aparecía una sola vez en todo el documento, en la propia lista de referencias (P767), sin cita en el cuerpo ni en las tablas.",
+    "causa": "El cuerpo citaba «Fany (2024)» en P630, usando el nombre de pila en lugar del apellido. La coincidencia léxica con la entrada «Quispe Tello, F.» no se producía.",
+    "solucion": "Sustituir «Fany (2024)» por «Quispe Tello (2024, p. 62)» en P630. Es una sustitución, no una inserción de una referencia nueva.",
+    "estado_tras_la_orden": "Si se aplica la sustitución de P630, las 11 inserciones quedan con cita activa y la correspondencia 1:1 se restablece.",
+    "naturaleza_del_defecto": "No es un problema de existencia ni de verificabilidad de la fuente. La tesis es real, está en el repositorio local y tiene handle público. Es un problema de correspondencia biunívoca."
+  },
+  "alertas_globales": [
+    {
+      "nivel": "CRITICA",
+      "registro": "Addy et al. (2024)",
+      "detalle": "La entrada atribuye dos coautores inexistentes y un año equivocado. La fuente existe, pero la atribución es falsa. Corregir a Addy, A. (2023)."
+    },
+    {
+      "nivel": "CRITICA",
+      "registro": "Organización Panamericana de la Salud y PATH (2020)",
+      "detalle": "El handle declarado apunta a un artículo ajeno. El documento correcto es de 2019 y su handle es 10665.2/50482. Corregir la lista y las dos citas del cuerpo."
+    },
+    {
+      "nivel": "MAYOR",
+      "registro": "Balón Morejón (2023)",
+      "detalle": "El handle 46000/9257 devuelve 404 y el prefijo no está registrado. Eliminar el enlace; citar sin URL."
+    },
+    {
+      "nivel": "MAYOR",
+      "registro": "Quispe Tello (2024)",
+      "detalle": "Cita huérfana por uso del nombre de pila en P630. Sustituir por «Quispe Tello (2024, p. 62)»."
+    },
+    {
+      "nivel": "MENOR",
+      "registro": "ISO/IEC 25010:2023",
+      "detalle": "Cambiar «y» por «e» ante «International». El enlace oficial es correcto; el 403 es anti-bot."
+    },
+    {
+      "nivel": "INFORMATIVA",
+      "registro": "Mego Navarro (2021), UTP",
+      "detalle": "El 403 es un desafío Anubis; el handle sigue registrado. No se propone sustituto."
+    }
+  ],
+  "veredicto_general": "OBSERVADO_SUBSANABLE",
+  "condicion_de_cierre": "Ningún registro queda sin veredicto. Tras aplicar las sustituciones de la lista y del cuerpo, ningún registro declara un enlace que devuelva error de acceso. El documento no se declara aprobado hasta que se apliquen las correcciones de Addy y de OPS/PATH, que son las dos alertas críticas.",
+  "restriccion_docx": "El archivo salidas/documentos/informe_final_v12.docx no se modificó. Todas las órdenes son para que el maquetador las aplique en un pase posterior."
+}

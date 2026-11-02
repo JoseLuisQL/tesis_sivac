@@ -1,0 +1,64 @@
+{
+  "fecha": "2026-10-22",
+  "agente": "director-general",
+  "fase": "F8",
+  "estado": "correccion_editorial_entregada_para_revision_del_tesista",
+  "destino_vigente": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+  "respaldo": "salidas/archivo/INSTRUMENTOS_V02_ANTES_LIMPIEZA_20261022",
+  "archivos_principales": {
+    "conjunto_docx": "00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+    "conjunto_pdf": "00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+    "paginas_conjunto": 6,
+    "conjunto_pdf_sha256": "3cb57421fb718ae84042c0540f1b9993de457a1b308d52627ea2aac3b4794fa8",
+    "apoyos_pdf": "APOYOS_INVESTIGADOR/05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+    "paginas_apoyos": 6,
+    "apoyos_pdf_sha256": "267656b14dc75ad085170aaf30bd19ae4950d34657415af12d84180e58fb94ed"
+  },
+  "revisiones": {
+    "diseno_independiente": "criterios_jurado_limpieza_instrumentos_20261022.json",
+    "coherencia_metodologica": "criterios_metodologicos_limpieza_instrumentos_20261022.json",
+    "reinspeccion_metodologica": "reinspeccion_metodologica_limpieza_v02_20261022.json",
+    "maquetacion_y_mapa_de_campos": "limpieza_profesional_v02_20261022.json",
+    "limite": "Son revisiones técnicas de agentes especialistas, no certificados de jueces humanos ni pruebas de comprensión con participantes."
+  },
+  "cotejo_final_reproducido_por_direccion": {
+    "archivos_docx_pdf_contra_manifiesto": 12,
+    "discrepancias": 0,
+    "paginas_por_documento": {"tiempos": 1, "auditoria_documental": 3, "cuestionario_A": 1, "modulo_B": 1, "conjunto": 6, "apoyos": 6},
+    "logos_presentes_en_paginas_pdf": 18,
+    "secciones_docx_con_dos_imagenes_inline_embebidas": 9,
+    "tablas_inspeccionadas": 72,
+    "ancho_dxa": 8788,
+    "omml_en_celdas": 0,
+    "aritmetica_en_celdas": 0,
+    "filas_CPE": 12,
+    "altura_minima_CPE_dxa": 510,
+    "reactivos_completos_docx_y_pdf_iguales_al_rector": 16,
+    "documentos_originales_del_respaldo_cotejados": 12,
+    "renders_vigentes": 18,
+    "sin_renders_obsoletos": true,
+    "regresiones_resueltas": [
+      "Módulo B identificado como complemento del Instrumento 3, sin Instrumento 4 en DOCX/PDF.",
+      "Restituidos inicio y fin de emisión de vale en el protocolo del observador.",
+      "Conservados inicio y fin de registro, pausas, anulación y causas/acciones de incidencia.",
+      "Retirada tabla nueva de operaciones aritméticas; ejemplo de conversión narrativo con coma decimal y sin carácter de medición.",
+      "Remisión al protocolo diferenciada del registro H de incidencias.",
+      "Continuación E-13 expresamente referida desde la página de entregas."
+    ],
+    "lectura_visual": "Se inspeccionaron las doce páginas únicas del conjunto y apoyos y posteriormente las páginas modificadas de tiempos, entregas, módulo B y protocolo. No se atribuye una nueva lectura visual a las copias individuales idénticas."
+  },
+  "traslados_sin_perdida": [
+    "Consolidación de tiempos y conteos crudos a la hoja de cierre del investigador.",
+    "Causa, acción y observación por tarea a las tablas H, con código, fase y referencia de tarea/documento.",
+    "Criterios completos y regla de concordancia a apoyos; leyenda breve y registro binario permanecen en campo.",
+    "Investigador administrativo y observaciones opcionales de A/B al control de aplicación y observaciones."
+  ],
+  "validacion_por_expertos": {
+    "dato_disponible": "Declaración del tesista de fecha 2026-10-21: los jueces calificaron con 4 todos los componentes.",
+    "estado": "reportada; certificación documental pendiente de inspección",
+    "no_acreditado_por_esta_edicion": "Validez de contenido, confiabilidad y aplicación real de campo.",
+    "QG_5": "abierta",
+    "analisis_inferencial": "bloqueado sin datos de campo reales"
+  },
+  "preservacion": "No se creó v03 ni otra carpeta de entrega. Se conservan el respaldo previo, los logotipos originales, el expediente rector y el informe."
+}

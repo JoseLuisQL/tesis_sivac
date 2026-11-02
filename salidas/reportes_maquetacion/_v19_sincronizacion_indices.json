@@ -1,0 +1,48 @@
+{
+  "origen": "salidas\\documentos\\_v19_paso2.docx",
+  "destino": "salidas\\documentos\\_v19_paso2b.docx",
+  "sha256_origen": "71bb46466ee4bc345607248ef78281af41919e1beff80d6fc77ea3f2e7a0400f",
+  "sha256_destino": "b6605fe179f10ddadd13b5bf65c3a8606647755788353970226dff16ae3e4403",
+  "parrafos": 827,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "sincronizar_indices",
+      "entradas_actualizadas": 6,
+      "acciones": [
+        {
+          "parrafo": 80,
+          "viejo": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC",
+          "nuevo": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC"
+        },
+        {
+          "parrafo": 81,
+          "viejo": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de bioló",
+          "nuevo": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de bioló"
+        },
+        {
+          "parrafo": 82,
+          "viejo": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la reg",
+          "nuevo": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la reg"
+        },
+        {
+          "parrafo": 83,
+          "viejo": "Evaluación de la aceptación del proceso operativo y utilidad percibida del siste",
+          "nuevo": "Evaluación de la aceptación del proceso operativo y utilidad percibida del siste"
+        },
+        {
+          "parrafo": 134,
+          "viejo": "Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)",
+          "nuevo": "Matriz de datos de prueba en el Pretest (Gestión manual basal, n = 14)"
+        },
+        {
+          "parrafo": 135,
+          "viejo": "Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14",
+          "nuevo": "Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)"
+        }
+      ]
+    }
+  ],
+  "tablas_verificadas": []
+}

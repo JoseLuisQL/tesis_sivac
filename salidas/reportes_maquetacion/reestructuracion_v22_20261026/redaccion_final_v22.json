@@ -1,0 +1,593 @@
+{
+  "meta": {
+    "fecha": "2026-10-26",
+    "agente": "redactor-academico",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "estado": "ordenes_finales_no_aplicadas",
+    "version": "v22_final",
+    "documento_base": {
+      "ruta": "salidas/documentos/informe_final_v20.docx",
+      "sha256": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+      "paginas_pdf": 159,
+      "modo_de_lectura": "solo_lectura"
+    },
+    "insumos_utilizados": {
+      "mapa_documental": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+      "auditoria_estadistica": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/auditoria_estadistica_y_propuesta.json",
+      "propuesta_de_tablas_y_figuras": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/propuesta_tablas_figuras_redactor.json"
+    },
+    "anclas_verificadas": "Lectura directa del PDF v20: páginas físicas 13-14 para Resumen y Abstract, 117-118 y 129-130 para el Capítulo V, y 131-133 para Discusión y Conclusiones. La numeración de página citada en las órdenes es la del PDF, no el folio impreso.",
+    "instruccion_de_aplicacion": "Ninguna orden ha sido aplicada. El maquetador-docx es el único escritor del DOCX y del motor. La renumeración continua de campos SEQ, índices, PAGEREF y llamadas es automática y no requiere consulta al tesista.",
+    "destinatario_de_aplicacion": "maquetador-docx, agente de background a60568a533289e0f7, único autorizado para escribir el DOCX y el motor.",
+    "garantias": [
+      "No se modificó el DOCX ni el motor.",
+      "No se introducen cifras, fuentes, autores, DOI ni páginas nuevas.",
+      "No se elimina ningún resultado histórico: el bloque estadístico completo se conserva en el Anexo 7.",
+      "Se mantienen las tres dimensiones y los seis indicadores oficiales de la variable dependiente.",
+      "Se mantiene el diseño preexperimental con pretest y postest en un solo grupo y población censal de 14 trabajadores.",
+      "No se emplean rayas U+2014 ni códigos internos de gobernanza en el texto que se emite.",
+      "No se cita el referente Jhon 2026 porque el ejemplar disponible es una carátula de una página.",
+      "No se adopta un total de historias de usuario entre los valores discrepantes 12, 10 y 15."
+    ]
+  },
+  "decisiones_vigentes": {
+    "procedencia": "No existe evidencia de campo verificable. Los dos CSV están rotulados como datos de prueba y no hay manifiesto de campo. El análisis inferencial permanece bloqueado.",
+    "auditoria": "La auditoría identificó siete defectos de severidad alta, entre ellos incongruencias entre los valores p y los estadísticos Z, ausencia de contraste propio para la hipótesis general y un ajuste de Holm incompleto. Conservar todas las cifras en el cuerpo con una frase preventiva no es suficiente.",
+    "destino_del_bloque_estadistico": "El bloque estadístico actual completo se traslada al Anexo 7, rotulado como salida histórica con datos de prueba, preservado y advertido como no validado y no equivalente a evidencia empírica.",
+    "capitulo_v": "Se reemplaza por un texto breve con tres secciones: estado de la evidencia, presentación prevista por dimensión e indicador, y estado del contraste de hipótesis. Sin cifras de resultados, sin tablas nuevas, sin figuras nuevas y sin casillas ficticias.",
+    "renumeracion": "La numeración de tablas y figuras es continua en todo el informe. Las llamadas del cuerpo se actualizan al número final. No se usan series independientes ni se conservan los números 35-43 y 46-48 de la v20.",
+    "contraste_primario": "No se declara unilateralmente la prueba de Wilcoxon como contraste primario. La propuesta del analista estadístico queda sujeta a aprobación metodológica posterior y el diseño no se modifica.",
+    "anexo_xp": "El desarrollo aplicado se traslada al Anexo 6 existente. El marco teórico conserva solo el fundamento citado en 3.1.1.3 y 3.2.8.",
+    "historias_de_usuario": "Los conteos 12, 10 y 15 se preservan tal como aparecen en cada artefacto. No se adopta un total ni se inventa una reconciliación."
+  },
+  "bloque_1_fundamento_xp": {
+    "seccion": "3.1.1.3. Metodología de desarrollo ágil Extreme Programming (XP)",
+    "criterio": "Tres párrafos de fundamento conceptual. Cuatro fases de XP y despliegue como etapa posterior. Sin referencias al desarrollo aplicado, a las historias de usuario de SIVAC, al código ni a las capturas.",
+    "ordenes": [
+      {
+        "id": "XP-01F",
+        "tipo": "reemplazo_de_parrafo",
+        "ubicacion": {
+          "pagina_pdf": 40,
+          "folio": 25,
+          "seccion": "3.1.1.3",
+          "parrafo": "primer párrafo, inmediatamente después del rótulo"
+        },
+        "ancla_corta": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida",
+        "texto_original": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida para equipos de desarrollo pequeños y medianos que enfrentan requerimientos dinámicos o sujetos a cambios normativos recurrentes (Beck, 1999, p. 70). A diferencia del modelo lineal en cascada y de los ciclos iterativos convencionales de larga duración, XP acorta radicalmente los bucles de retroalimentación técnica y funcional, integrando el análisis, el diseño, la codificación y las pruebas dentro de iteraciones breves con entregas continuas de software operativo (Beck, 1999, p. 71; Sommerville, 2016, p. 57) (véase la Figura 3). En este ámbito, Kokol (2022) comprobó en una revisión sistemática de alcance sobre desarrollo ágil en el sector sanitario que las metodologías ágiles entregan soluciones de software médico con mayor rapidez y superior calidad técnica que los enfoques en cascada, adaptándose rigurosamente a marcos regulatorios exigentes y resultando idóneas para afrontar requerimientos críticos y cambiantes como los vinculados a la logística y distribución de vacunas.",
+        "reemplazo": "Extreme Programming (XP) es una metodología ágil de ingeniería de software diseñada para equipos pequeños y medianos que trabajan con requerimientos cambiantes o sujetos a ajustes normativos frecuentes (Beck, 1999, p. 70). A diferencia del modelo lineal en cascada y de los ciclos iterativos de larga duración, XP reduce los bucles de retroalimentación técnica y funcional, de modo que el análisis, el diseño, la codificación y las pruebas se integran en iteraciones breves con entregas frecuentes de software operativo (Beck, 1999, p. 71; Sommerville, 2016) (véase la Figura 3). Kokol (2022), en una revisión sistemática de alcance sobre desarrollo ágil en el sector sanitario, reportó que los enfoques ágiles permiten entregar software médico con mayor rapidez y calidad técnica que los modelos en cascada, además de adaptarse a marcos regulatorios exigentes. Esa condición resulta pertinente para dominios en los que los requerimientos deben ajustarse a normas sanitarias y a procesos operativos sujetos a variación.",
+        "motivo": "Se conservan la definición y la ventaja de XP con Beck (1999). Se retira la página de Sommerville (2016) por no estar comprobada. Se elimina la referencia expresa a la logística de vacunas y se sustituye el verbo comprobó por reportó.",
+        "fuente_apoyo": "Beck (1999), DOI 10.1109/2.796139; Sommerville (2016); Kokol (2022), DOI 10.3390/app12199462.",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "XP-02F",
+        "tipo": "reemplazo_de_parrafo",
+        "ubicacion": {
+          "pagina_pdf": 41,
+          "folio": 26,
+          "seccion": "3.1.1.3",
+          "parrafo": "segundo párrafo, antes de la Figura 4"
+        },
+        "ancla_corta": "El proceso disciplinar de XP se articula en cuatro fases metodológicas",
+        "texto_original": "El proceso disciplinar de XP se articula en cuatro fases metodológicas interdependientes: planeación, diseño, codificación y pruebas (Pressman, 2010, p. 61). La fase de planeación inicia con la captura de requerimientos mediante historias de usuario redactadas en el lenguaje del dominio operativo, las cuales son estimadas en puntos de esfuerzo y priorizadas junto al cliente en el sitio para conformar el plan de entregas (Cohn, 2004, p. vii). La fase de diseño aplica el principio de simplicidad estructural, apoyándose en tarjetas CRC y prototipos operativos; la fase de codificación incorpora la refactorización continua y la integración permanente; y la fase de pruebas verifica cada incremento mediante pruebas unitarias automatizadas y pruebas de aceptación validadas por los usuarios finales (Pressman, 2010, p. 62) (véase la Figura 4).",
+        "reemplazo": "El proceso disciplinar de XP se organiza en cuatro fases interdependientes: planeación, diseño, codificación y pruebas (Pressman, 2010). La planeación captura los requerimientos como historias de usuario redactadas en el lenguaje del dominio, las estima en puntos de esfuerzo y las prioriza con el cliente en el sitio para construir el plan de entregas (Cohn, 2004). El diseño privilegia la simplicidad estructural y se apoya en tarjetas CRC y prototipos; la codificación incorpora la refactorización continua y la integración permanente; y las pruebas verifican cada incremento mediante pruebas unitarias automatizadas y pruebas de aceptación validadas por los usuarios finales (Pressman, 2010). A estas fases se suman prácticas de trabajo que sostienen la calidad del incremento, como la programación en parejas, la integración continua y la propiedad colectiva del código (Beck, 1999). El despliegue en producción constituye una etapa posterior del proyecto y no una quinta fase de la metodología.",
+        "motivo": "Se conservan las cuatro fases y las prácticas nucleares. Se retiran las páginas de Pressman (2010) y Cohn (2004) porque no fueron comprobadas contra los PDF; la paráfrasis se mantiene con la obra y el año. Se explicita que el despliegue no es una quinta fase.",
+        "fuente_apoyo": "Pressman (2010); Cohn (2004), ISBN 978-0-321-20568-1; Beck (1999).",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "XP-03F",
+        "tipo": "reemplazo_de_parrafo",
+        "ubicacion": {
+          "pagina_pdf": 41,
+          "folio": 26,
+          "seccion": "3.1.1.3",
+          "parrafo": "tercer párrafo, inmediatamente antes del rótulo 3.1.1.4"
+        },
+        "ancla_corta": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas)",
+        "texto_original": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas) constituyen el marco procedimental de la ingeniería de software que asegura la construcción reproducible de la intervención tecnológica y se diferencian de las dimensiones analíticas de la variable dependiente evaluada en la investigación.",
+        "reemplazo": "Las cuatro fases de XP conforman el marco procedimental que orienta la construcción reproducible de la intervención tecnológica y se mantienen separadas de las dimensiones analíticas de la variable dependiente evaluada en la investigación. El desarrollo aplicado de esta metodología en el sistema SIVAC, junto con sus artefactos de planificación, diseño, codificación y pruebas, y con la etapa posterior de despliegue, se presenta de forma íntegra en el Anexo 6. En esta sección se conserva únicamente el fundamento conceptual que sustenta la elección metodológica y su articulación con las dimensiones evaluadas.",
+        "motivo": "Se sustituye asegura por orienta, porque la metodología no garantiza por sí misma la reproducibilidad. Se agrega la transición al Anexo 6 y se conserva la distinción entre marco procedimental y dimensiones de la variable dependiente.",
+        "fuente_apoyo": "Sin fuente adicional; preserva el contenido del párrafo original.",
+        "riesgo": "bajo"
+      }
+    ]
+  },
+  "bloque_2_ordenes_estructurales": {
+    "criterio": "Dos traslados independientes. El bloque de XP no contiene material estadístico y el bloque estadístico no contiene material de XP, de modo que pueden ejecutarse en cualquier orden. Ambos preservan el contenido original y se someten a la renumeración continua del informe.",
+    "ordenes": [
+      {
+        "id": "E6-01",
+        "tipo": "orden_estructural",
+        "requiere_confirmacion_tesista": false,
+        "descripcion": "Trasladar el bloque completo de desarrollo aplicado de XP, párrafos P328 a P548, al Anexo 6 existente, conservando íntegramente su contenido, sus tablas y sus figuras. Eliminar la sección 3.3 del marco teórico. No se suprime ningún artefacto histórico.",
+        "destino": {
+          "rotulo": "ANEXO 6: DESARROLLO DE SOFTWARE SIVAC BAJO EXTREME PROGRAMMING",
+          "estado": "anexo existente que se amplía con el bloque trasladado y los complementos de la fuente",
+          "orden_interno": "Las cuatro fases en su orden original (Planificación, Diseño, Codificación y Pruebas) y, a continuación, la sección de Despliegue como etapa posterior del proyecto. El despliegue no se rotula como quinta fase."
+        },
+        "delimitacion_exacta": {
+          "inicio": "rótulo 3.3. Metodología de Desarrollo de Software Extreme Programming (XP), párrafo P328, página 54 del PDF, folio 39",
+          "fin": "último párrafo de 3.3.5.1, párrafo P548, antes del rótulo CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN, página 99 del PDF, folio 84",
+          "subsecciones_incluidas": ["3.3.1 Planificación", "3.3.2 Diseño", "3.3.3 Codificación", "3.3.4 Pruebas", "3.3.5 Despliegue"],
+          "elementos_incluidos": "26 tablas (Tabla 3 a Tabla 28) y 35 figuras (Figura 11 a Figura 45), más los rótulos y las notas internos del bloque."
+        },
+        "complementos_desde_la_fuente": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+          "modo": "Injertar solo los elementos ausentes en v20; no duplicar los que ya existen.",
+          "elementos": [
+            "Cinco fichas individuales de historia de usuario (Tablas 5-9 del documento XP)",
+            "Tabla ENUM de estados (Tabla 11 del documento XP)",
+            "Tabla de relaciones con ON DELETE (Tabla 15 del documento XP)",
+            "Tabla de pruebas de API (Tabla 18 del documento XP)",
+            "Matriz completa de roles de 17 filas en lugar de la versión reducida de 5 filas"
+          ],
+          "sustituciones": [
+            "Reemplazar la Tabla 51 del Anexo 6 actual por la tabla de historias de usuario del bloque trasladado",
+            "Conservar el stack tecnológico y los quince diccionarios de datos de v20",
+            "No duplicar las Figuras 11-45: el bloque trasladado ya contiene todas las imágenes del documento XP"
+          ],
+          "verificacion_de_medios": "Los 35 archivos de imagen del documento XP ya existen en v20. Cero pérdida de imágenes al integrar."
+        },
+        "instrucciones_de_aplicacion": [
+          "Trasladar el bloque P328-P548 al Anexo 6 existente, después de su rótulo, y retirarlo del Capítulo III.",
+          "Conservar literalmente los títulos internos de las cinco secciones y sus subsecciones, adaptando solo la jerarquía al esquema del anexo.",
+          "Injertar los complementos de la fuente XP antes de cerrar el anexo, según la lista anterior.",
+          "Conservar el orden y el contenido de las tablas y figuras del bloque. No reescribir sus notas.",
+          "Aplicar la renumeración continua de todo el informe, sin series independientes. Las llamadas del cuerpo se actualizan al número final que asigne el motor.",
+          "No conservar los números 3-28 ni 11-45 del bloque trasladado. Tampoco se conservan los números 35-43 y 46-48 del Capítulo V, porque ese bloque sale del cuerpo.",
+          "Actualizar los tres índices, los campos PAGEREF, los campos SEQ, los rótulos y los folios posteriores al bloque.",
+          "Verificar que no queden llamadas huérfanas: el mapa confirma que ningún párrafo posterior a P549 cita las Tablas 3-28 ni las Figuras 11-45.",
+          "Verificar que el inventario final conserve 51 tablas y 52 figuras, sin pérdida respecto de la v20."
+        ],
+        "tratamiento_de_historias_de_usuario": "Los conteos discrepan: 12 en el catálogo del documento XP, 10 en su tabla de iteraciones y 15 en v20. Se conservan las cifras tal como aparecen en cada artefacto. No se adopta un total, no se completa el faltante y no se propone reconciliación. El punto queda marcado para verificación del tesista.",
+        "motivo": "La decisión editorial vigente dispone que en las bases teóricas permanezca solo el fundamento citado de XP y que el desarrollo aplicado se presente en el anexo completo. El mapa documental identifica el Anexo 6 como destino existente y confirma que no hay referencias cruzadas externas al bloque.",
+        "riesgo_de_aplicacion": "alto",
+        "riesgo_detalle": "El bloque contiene 26 tablas y 35 figuras. La renumeración continua modifica los números de todas las tablas y figuras posteriores y exige actualizar cada llamada del texto. El maquetador debe verificar la correspondencia una a una antes de cerrar el documento.",
+        "fuente_apoyo": "DEC-029; comparacion_modelos_y_mapa_xp.json; SIVAC_Desarrollo_Software_XP.docx."
+      },
+      {
+        "id": "E7-01",
+        "tipo": "orden_estructural",
+        "requiere_confirmacion_tesista": false,
+        "descripcion": "Trasladar el bloque estadístico completo del Capítulo V a un Anexo 7 nuevo, rotulado como salida histórica con datos de prueba. El bloque se conserva íntegro, con sus tablas, figuras y notas, y se encabeza con una advertencia que impide leerlo como evidencia empírica.",
+        "destino": {
+          "rotulo": "ANEXO 7: SALIDA ESTADÍSTICA HISTÓRICA CON DATOS DE PRUEBA",
+          "ubicacion": "después del Anexo 6 y antes del actual Anexo 7",
+          "consecuencia": "El actual Anexo 7, dedicado al registro fotográfico, pasa a ser Anexo 8. Se actualizan el índice de anexos y todas las llamadas internas.",
+          "estado": "anexo nuevo"
+        },
+        "delimitacion_exacta": {
+          "inicio": "rótulo Advertencia metodológica y salvaguarda deontológica, página 117 del PDF, folio 102, incluido su párrafo",
+          "fin": "nota de la Tabla 43, párrafo final antes del rótulo CAPÍTULO VI: DISCUSIÓN, página 131 del PDF, folio 116",
+          "ancla_inicio_textual": "Advertencia metodológica y salvaguarda deontológica",
+          "ancla_fin_textual": "Regla conjuntiva multivariada: La Hipótesis General HG se acepta si y solo si se rechazan simultáneamente las tres hipótesis nulas específicas",
+          "elementos_incluidos": "Advertencia, secciones 5.1 a 5.4 con sus subsecciones, Tablas 35 a 43, Figuras 46 a 48, notas de tabla y de figura, y todo párrafo intermedio. Se conserva también la lista histórica de centros de acopio que figura en el bloque.",
+          "elementos_excluidos": "El rótulo CAPÍTULO V: RESULTADOS permanece en el cuerpo. El rótulo CAPÍTULO VI: DISCUSIÓN no se mueve."
+        },
+        "advertencia_de_cabecera": {
+          "estilo": "párrafo en cursiva, sin sangría, inmediatamente después del rótulo del anexo",
+          "texto": "Advertencia de carácter histórico. El contenido de este anexo reproduce la salida estadística generada con un conjunto de datos de prueba, identificado como tal en los archivos de origen. No corresponde a mediciones de campo, no ha sido validado y no constituye evidencia empírica sobre la población de estudio. Se conserva para preservar la trazabilidad del procedimiento y permitir la reproducción de los cálculos cuando se disponga de los registros definitivos. Las cifras, tablas y figuras que siguen no deben citarse como resultados de la investigación."
+        },
+        "instrucciones_de_aplicacion": [
+          "Insertar el rótulo del Anexo 7 y, a continuación, la advertencia de cabecera.",
+          "Mover el rango completo definido, sin reescribir el texto, las tablas, las figuras ni las notas.",
+          "Conservar los valores, los estadísticos, los valores p y las decisiones de contraste tal como están, aunque la auditoría los haya observado. No corregirlos y no eliminarlos.",
+          "No añadir notas por cada defecto ni un capítulo de marcadores. La advertencia de cabecera cumple la función de salvedad global.",
+          "Renumerar de forma continua las tablas y figuras trasladadas y actualizar todas las llamadas del cuerpo. No conservar los números 35-43 ni 46-48.",
+          "Actualizar el índice de anexos y las llamadas que mencionen el Anexo 7 anterior, que pasa a Anexo 8.",
+          "Verificar que el inventario final conserve 51 tablas y 52 figuras, sin pérdida respecto de la v20.",
+          "No generar figuras nuevas ni gráficos en este anexo."
+        ],
+        "motivo": "La auditoría concluyó que la salida estadística se produjo sobre datos de prueba y que contiene defectos de severidad alta. Conservar esas cifras en el cuerpo del Capítulo V, aun con una frase preventiva, mantendría afirmaciones empíricas no sostenidas. El traslado preserva la trazabilidad histórica y deja el cuerpo sin evidencia no validada.",
+        "riesgo_de_aplicacion": "alto",
+        "riesgo_detalle": "El bloque contiene nueve tablas y tres figuras, además de la lista histórica de centros de acopio. Cualquier pérdida de párrafos o de notas alteraría el registro histórico. La renumeración continua afecta a todos los recursos posteriores y obliga a revisar las llamadas del cuerpo.",
+        "fuente_apoyo": "auditoria_estadistica_y_propuesta.json; propuesta_tablas_figuras_redactor.json; DEC-029."
+      }
+    ]
+  },
+  "bloque_3_capitulo_v": {
+    "criterio": "Capítulo V breve, sin cifras de resultados, sin tablas, sin figuras y sin casillas ficticias. La presentación se limita a declarar el estado de la evidencia, la estructura prevista por dimensión e indicador y la situación del contraste. No se declara una prueba primaria.",
+    "orden": {
+      "id": "CV-00",
+      "tipo": "reemplazo_de_rango",
+      "requiere_confirmacion_tesista": false,
+      "ubicacion": {
+        "inicio": "inmediatamente después del rótulo CAPÍTULO V: RESULTADOS, página 117 del PDF, folio 102",
+        "fin": "inmediatamente antes del rótulo CAPÍTULO VI: DISCUSIÓN, página 131 del PDF, folio 116"
+      },
+      "ancla_inicio_textual": "Advertencia metodológica y salvaguarda deontológica",
+      "ancla_fin_textual": "Regla conjuntiva multivariada: La Hipótesis General HG se acepta si y solo si se rechazan simultáneamente las tres hipótesis nulas específicas",
+      "contenido_que_se_retira": "Advertencia, secciones 5.1 a 5.4, Tablas 35 a 43, Figuras 46 a 48 y sus notas. Ese contenido no se destruye: se traslada al Anexo 7 por la orden E7-01.",
+      "texto_de_reemplazo": [
+        {
+          "estilo": "cuerpo",
+          "texto": "Este capítulo presenta el estado de la evidencia, la estructura prevista para la presentación de resultados por dimensión e indicador y la situación del contraste de hipótesis. No se reportan mediciones de campo porque aún no han sido recolectadas."
+        },
+        {
+          "estilo": "heading2",
+          "texto": "5.1. Estado de la evidencia"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La evidencia disponible en esta etapa no corresponde a mediciones de campo. Los registros utilizados hasta ahora provienen de un conjunto de datos de prueba, identificado como tal en los archivos de origen, cuyo propósito fue verificar el funcionamiento del procedimiento de cálculo. La auditoría de procedencia confirmó que no existe un manifiesto de datos de campo ni instrumentos firmados que permitan acreditar observaciones sobre la población de estudio. Por esa razón, el análisis inferencial permanece bloqueado y ninguna cifra de la salida provisional se presenta como hallazgo empírico."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La salida estadística producida con esos datos se conserva íntegra en el Anexo 7, rotulada como histórica y no validada. Su inclusión preserva la trazabilidad del procedimiento y permite reproducir los cálculos cuando se disponga de los registros definitivos, pero no constituye evidencia empírica ni sostiene afirmaciones sobre la gestión de movimientos de vacunas."
+        },
+        {
+          "estilo": "heading2",
+          "texto": "5.2. Presentación prevista de resultados por dimensión e indicador"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La presentación definitiva se organizará por las tres dimensiones oficiales de la variable dependiente y sus seis indicadores. Para cada indicador se informará la estadística descriptiva del pretest y del postest, el cambio observado y el resultado del contraste pareado que se apruebe, con su tamaño del efecto y el ajuste por comparaciones múltiples. Las tablas y figuras se elaborarán únicamente cuando existan los datos de campo; no se incluyen casillas vacías ni valores provisionales."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "En la dimensión de oportunidad de procesamiento se reportarán el tiempo de registro de movimientos mensuales y el tiempo de emisión del comprobante de salida o vale. La descripción incluirá la media, la desviación estándar, la mediana, el rango intercuartílico y los valores extremos de cada momento, junto con la diferencia pareada."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "En la dimensión de consistencia documental se reportarán el porcentaje de registros sin discrepancias y la concordancia entre la cantidad programada y la entregada. El cambio de estos indicadores se expresará en puntos porcentuales, sin confundirlo con la variación relativa."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "En la dimensión de satisfacción del usuario se reportarán la aceptación del proceso y la utilidad percibida. El puntaje global del modelo TAM se presentará solo como descriptivo secundario, porque deriva de la suma de ambos indicadores y no constituye un contraste independiente."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La exposición de cada dimensión se limitará a un párrafo interpretativo y a los recursos que la sustenten, de modo que la narración no repita las cifras que la tabla o la figura ya muestran."
+        },
+        {
+          "estilo": "heading2",
+          "texto": "5.3. Estado del contraste de hipótesis"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "El contraste de las hipótesis específicas y de la hipótesis general no se ha ejecutado sobre datos de campo. La especificación del contraste primario por indicador, del método de cálculo de los valores p y del ajuste por comparaciones múltiples se definirá con la aprobación metodológica correspondiente, antes de examinar los resultados. No se adopta de antemano una prueba como primaria ni se modifica el diseño preexperimental con pretest y postest en un solo grupo."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La hipótesis general se evaluará como una regla conjuntiva derivada de las tres hipótesis específicas y no como un contraste con valor p propio. Cuando existan los registros definitivos y la aprobación metodológica, se reportarán las decisiones por dimensión y la decisión conjunta, con la salvedad de que el diseño de un solo grupo permite formular asociaciones compatibles con la intervención, no efectos causales aislados."
+        }
+      ],
+      "instrucciones_de_aplicacion": [
+        "Reemplazar el rango completo por los párrafos y encabezados indicados, en el orden dado.",
+        "Conservar el rótulo CAPÍTULO V: RESULTADOS sin cambios.",
+        "No insertar tablas, figuras, ecuaciones ni marcadores de posición en este capítulo.",
+        "No mencionar cifras de resultados, valores p, estadísticos ni tamaños del efecto.",
+        "No nombrar una prueba como primaria. La referencia al contraste pareado se mantiene en términos genéricos.",
+        "Verificar que el capítulo no exceda cuatro páginas."
+      ],
+      "motivo": "La auditoría declaró bloqueado el análisis inferencial y observó defectos de severidad alta en la salida existente. Un capítulo de resultados con cifras no validadas, aunque se advierta, mantiene afirmaciones empíricas. La versión breve conserva la estructura metodológica y deja constancia del estado real de la evidencia.",
+      "riesgo_de_aplicacion": "medio",
+      "riesgo_detalle": "Al retirar el bloque, el Capítulo V queda sin tablas ni figuras. El maquetador debe comprobar que no sobrevivan llamadas a las Tablas 35-43 ni a las Figuras 46-48 en otros capítulos.",
+      "fuente_apoyo": "auditoria_estadistica_y_propuesta.json; propuesta_tablas_figuras_redactor.json."
+    }
+  },
+  "bloque_4_resumen_y_abstract": {
+    "criterio": "Se retiran del resumen y del abstract las cifras no verificadas de historias de usuario, la selección unilateral de una prueba como primaria y toda formulación que sugiera resultados de campo existentes. Se conservan la finalidad, el diseño, los instrumentos y las dimensiones.",
+    "ordenes": [
+      {
+        "id": "RA-01",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Resumen en español",
+        "ubicacion": "párrafo único del resumen, página 13 del PDF, folio xi",
+        "texto_original": "en los trece (13) centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14), de un universo de diecinueve (19) centros de acopio registrados en el sistema.",
+        "reemplazo": "en los centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14), de un universo de centros de acopio registrados en el sistema.",
+        "motivo": "Se eliminan los conteos 13 y 19, cuya discrepancia con la lista histórica está observada. No se elige uno de los valores ni se inventa una reconciliación. La lista histórica se conserva en el Anexo 7.",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "RA-02",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Resumen en español",
+        "ubicacion": "párrafo único del resumen, página 13 del PDF, folio xi",
+        "texto_original": "a lo largo de cinco iteraciones (71 puntos de historia y 15 historias de usuario)",
+        "reemplazo": "a lo largo de las iteraciones de entrega previstas por la metodología",
+        "motivo": "Se retiran el número de iteraciones y el conteo de historias de usuario, que discrepa entre 12, 10 y 15. No se adopta un total.",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "RA-03",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Resumen en español",
+        "ubicacion": "párrafo único del resumen, página 13 del PDF, folio xi",
+        "texto_original": "se diseñó mediante la prueba de normalidad de Shapiro-Wilk y la prueba de rangos con signo de Wilcoxon para muestras relacionadas (α = 0.05) con ajuste de Holm-Bonferroni",
+        "reemplazo": "se definirá con la aprobación metodológica correspondiente e incluirá el diagnóstico de normalidad y un contraste pareado por indicador",
+        "motivo": "No se declara unilateralmente una prueba como primaria. La propuesta del analista estadístico queda sujeta a aprobación metodológica y el diseño no se modifica.",
+        "riesgo": "medio"
+      },
+      {
+        "id": "RA-04",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Resumen en español",
+        "ubicacion": "cierre del párrafo único del resumen, página 13 del PDF, folio xi",
+        "texto_original": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest.",
+        "reemplazo": "cuyo análisis empírico permanece pendiente de la recolección de los datos de campo.",
+        "motivo": "La fórmula anterior sugiere que existen estadísticos de campo en consolidación. No existen datos de campo. Se declara el estado real.",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "AB-01",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Abstract",
+        "ubicacion": "párrafo único del abstract, página 14 del PDF, folio xii",
+        "texto_original": "across the thirteen (13) storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14), out of a universe of nineteen (19) centers registered in the SIVAC system.",
+        "reemplazo": "across the storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14), out of the universe of centers registered in the SIVAC system.",
+        "motivo": "Equivalente en inglés de RA-01. Se eliminan los conteos discrepantes sin elegir un valor.",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "AB-02",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Abstract",
+        "ubicacion": "párrafo único del abstract, página 14 del PDF, folio xii",
+        "texto_original": "across five iterations (71 story points and 15 user stories)",
+        "reemplazo": "across the delivery iterations defined by the methodology",
+        "motivo": "Equivalente en inglés de RA-02. Se retira el conteo no reconciliado de historias de usuario.",
+        "riesgo": "bajo"
+      },
+      {
+        "id": "AB-03",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Abstract",
+        "ubicacion": "párrafo único del abstract, página 14 del PDF, folio xii",
+        "texto_original": "was structured using the Shapiro-Wilk normality test and the Wilcoxon signed-rank test for related samples (α = 0.05) with Holm-Bonferroni adjustment",
+        "reemplazo": "will be defined with the corresponding methodological approval and will include a normality diagnosis and one paired contrast per indicator",
+        "motivo": "Equivalente en inglés de RA-03. No se selecciona una prueba primaria sin aprobación metodológica.",
+        "riesgo": "medio"
+      },
+      {
+        "id": "AB-04",
+        "tipo": "reemplazo_de_fragmento",
+        "documento": "Abstract",
+        "ubicacion": "cierre del párrafo único del abstract, página 14 del PDF, folio xii",
+        "texto_original": "whose definitive field statistics remain under posttest consolidation.",
+        "reemplazo": "whose empirical analysis remains pending field data collection.",
+        "motivo": "Equivalente en inglés de RA-04. Se elimina la sugerencia de estadísticos de campo existentes.",
+        "riesgo": "bajo"
+      }
+    ],
+    "verificacion_posterior": "El resumen debe quedar en 250 palabras, con el margen instrumental de 240 a 260 solo como control de medición. El abstract debe conservar su extensión actual. No se añaden citas ni cifras nuevas."
+  },
+  "bloque_5_discusion": {
+    "orden": {
+      "id": "DI-01",
+      "tipo": "reemplazo_de_rango",
+      "documento": "Capítulo VI: Discusión de resultados",
+      "ubicacion": {
+        "inicio": "primer párrafo de la discusión, página 131 del PDF, folio 116",
+        "fin": "último párrafo de la discusión, antes del rótulo CONCLUSIONES, página 133 del PDF, folio 118"
+      },
+      "ancla_inicio_textual": "El propósito de la presente investigación fue determinar en qué medida la aplicación del sistema web SIVAC",
+      "ancla_fin_textual": "verificada funcionalmente y con métricas de alta calidad",
+      "criterio_de_delimitacion": "El reemplazo comprende desde el párrafo iniciado por el ancla de apertura hasta el último párrafo antes del rótulo CONCLUSIONES, incluido el párrafo que contiene el ancla de cierre.",
+      "contenido_que_se_retira": "Los cinco párrafos de discusión que confrontan cifras de la salida provisional con los antecedentes y que incluyen valores porcentuales, decisiones de contraste y referencias a la hipótesis general.",
+      "texto_de_reemplazo": [
+        {
+          "estilo": "cuerpo",
+          "texto": "La discusión de resultados se realizará una vez que se disponga de las mediciones de campo y del contraste inferencial aprobado. El diseño preexperimental con un solo grupo (O₁ → X → O₂) sobre la población censal de 14 trabajadores permite comparar el pretest y el postest, pero no aislar por completo explicaciones alternativas, por lo que la interpretación se formulará como asociación compatible con la intervención y no como efecto causal aislado."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Cuando existan los datos definitivos, el contraste se organizará por las tres dimensiones oficiales y sus seis indicadores: oportunidad de procesamiento (tiempo de registro y tiempo de emisión de vales), consistencia documental (porcentaje de registros sin discrepancias y concordancia programada versus entregada) y satisfacción del usuario (aceptación del proceso y utilidad percibida). Cada dimensión se confrontará con los antecedentes y las bases teóricas revisados en el Capítulo II, sin trasladar a esta tesis los valores que esos estudios reportan para otros contextos."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "El análisis de la salida estadística conservada en el Anexo 7 no sustituye esa confrontación: se trata de una verificación histórica del procedimiento sobre datos de prueba, no validada y no utilizable como evidencia empírica."
+        }
+      ],
+      "instrucciones_de_aplicacion": [
+        "Reemplazar el rango completo por los tres párrafos indicados.",
+        "Conservar el rótulo CAPÍTULO VI: DISCUSIÓN sin cambios.",
+        "No conservar cifras, valores p, porcentajes ni decisiones de hipótesis de la versión anterior.",
+        "No citar el Anexo 7 como resultado. Solo se admite la referencia metodológica del tercer párrafo.",
+        "No añadir citas nuevas."
+      ],
+      "motivo": "La discusión actual afirma mejoras y decisiones de contraste a partir de una salida no validada. Mantener esas afirmaciones fuera del Capítulo V contradice la decisión de trasladar el bloque estadístico y conservaría conclusiones empíricas sin evidencia.",
+      "riesgo_de_aplicacion": "medio",
+      "riesgo_detalle": "La discusión es el punto donde más afirmaciones empíricas se concentran. El maquetador debe verificar que no queden párrafos residuales con porcentajes o valores p.",
+      "fuente_apoyo": "auditoria_estadistica_y_propuesta.json; DEC-029."
+    }
+  },
+  "bloque_6_conclusiones": {
+    "orden": {
+      "id": "CO-01",
+      "tipo": "reemplazo_de_rango",
+      "documento": "Conclusiones",
+      "ubicacion": {
+        "inicio": "primera conclusión, página 133 del PDF, folio 118",
+        "fin": "inmediatamente antes del rótulo RECOMENDACIONES, página 134 del PDF, folio 119"
+      },
+      "ancla_inicio_textual": "Primera (Objetivo General):",
+      "ancla_fin_textual": "RECOMENDACIONES",
+      "ancla_ultima_conclusion": "Cuarta (Objetivo Específico 3):",
+      "criterio_de_delimitacion": "El reemplazo comprende desde la primera conclusión hasta el párrafo que antecede al rótulo RECOMENDACIONES, incluida la cuarta conclusión completa.",
+      "contenido_que_se_retira": "Las cuatro conclusiones actuales, que reportan mejoras, porcentajes y decisiones de contraste sobre la salida provisional.",
+      "texto_de_reemplazo": [
+        {
+          "estilo": "cuerpo",
+          "texto": "Primera (Objetivo General): la investigación completó el diseño metodológico y la implementación del sistema, pero no cuenta aún con datos de campo que permitan contrastar la hipótesis general. No se formula, por tanto, una conclusión de efecto sobre la gestión de movimientos mensuales de vacunas."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Segunda (Objetivo Específico 1): la oportunidad de procesamiento queda definida por el tiempo de registro y el tiempo de emisión de vales; su contraste empírico permanece pendiente de las mediciones definitivas."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Tercera (Objetivo Específico 2): la consistencia documental queda definida por el porcentaje de registros sin discrepancias y la concordancia programada versus entregada; su contraste empírico permanece pendiente de las mediciones definitivas."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Cuarta (Objetivo Específico 3): la satisfacción del usuario queda definida por la aceptación del proceso y la utilidad percibida; su contraste empírico permanece pendiente de las mediciones definitivas."
+        }
+      ],
+      "instrucciones_de_aplicacion": [
+        "Reemplazar el rango completo por las cuatro conclusiones indicadas, conservando la numeración ordinal y la correspondencia con los objetivos.",
+        "No incorporar cifras, porcentajes, valores p ni decisiones de hipótesis.",
+        "Conservar el rótulo CONCLUSIONES y el rótulo RECOMENDACIONES sin cambios.",
+        "No modificar las recomendaciones, que no contienen afirmaciones empíricas."
+      ],
+      "motivo": "Las conclusiones actuales responden a objetivos con resultados no validados. La correspondencia biunívoca se conserva, pero se declara el estado pendiente en lugar de afirmar efectos.",
+      "riesgo_de_aplicacion": "medio",
+      "riesgo_detalle": "Debe verificarse que las cuatro conclusiones sigan correspondiendo una a una con el objetivo general y los tres específicos, sin introducir una quinta.",
+      "fuente_apoyo": "auditoria_estadistica_y_propuesta.json; DEC-029."
+    }
+  },
+  "reglas_de_aplicacion": {
+    "orden_de_ejecucion": [
+      "XP-01F, XP-02F y XP-03F en la sección 3.1.1.3.",
+      "E6-01: traslado del bloque P328-P548 al Anexo 6 y eliminación de la sección 3.3.",
+      "E7-01: traslado del bloque estadístico al Anexo 7 y reubicación del actual Anexo 7 como Anexo 8.",
+      "CV-00: reemplazo del contenido del Capítulo V por las secciones 5.1, 5.2 y 5.3.",
+      "RA-01 a RA-04 y AB-01 a AB-04 en Resumen y Abstract.",
+      "DI-01 en el Capítulo VI.",
+      "CO-01 en Conclusiones.",
+      "Actualización automática de campos SEQ, PAGEREF, índices y llamadas del cuerpo.",
+      "Verificación final de inventario y de llamadas huérfanas."
+    ],
+    "localizacion_de_anclas": "Cada ancla corta y cada fragmento se verifican contra el DOCX antes de reemplazar. Si el fragmento no coincide literalmente por diferencias tipográficas, se localiza el párrafo por el ancla corta y se aplica el reemplazo sobre la oración equivalente, sin alterar el resto del párrafo.",
+    "renumeracion": {
+      "regla": "Numeración continua en todo el informe, con una sola serie para tablas y otra para figuras.",
+      "series_independientes": false,
+      "numeros_que_no_se_conservan": ["3-28 del bloque XP", "11-45 de las figuras XP", "35-43 de las tablas del Capítulo V", "46-48 de las figuras del Capítulo V"],
+      "llamadas": "Toda llamada del cuerpo se actualiza al número final. No se admiten llamadas huérfanas ni números fijos escritos a mano.",
+      "responsable": "maquetador-docx, mediante el motor canónico.",
+      "consulta_al_tesista": false
+    },
+    "inventario_de_control": {
+      "tablas_v20": 51,
+      "figuras_v20": 52,
+      "regla": "El total final debe coincidir con el inventario de la v20. Toda diferencia indica pérdida o duplicación y obliga a detener la aplicación.",
+      "verificacion": "Contar los recursos del cuerpo y de los anexos después de la renumeración y comparar con el inventario de origen."
+    },
+    "prohibiciones": [
+      "No generar figuras ni gráficos nuevos.",
+      "No introducir cifras de resultados en el cuerpo, el resumen, el abstract, la discusión o las conclusiones.",
+      "No introducir citas, autores, años, DOI ni páginas nuevas.",
+      "No eliminar tablas, figuras, párrafos o notas del bloque histórico.",
+      "No corregir los valores observados por la auditoría dentro del Anexo 7.",
+      "No conservar los números antiguos de tablas y figuras.",
+      "No declarar una prueba como primaria sin aprobación metodológica.",
+      "No adoptar un total de historias de usuario entre 12, 10 y 15.",
+      "No citar el referente Jhon 2026.",
+      "No emplear rayas U+2014 ni códigos internos de gobernanza en el texto emitido.",
+      "No modificar las recomendaciones.",
+      "No editar el DOCX ni el motor desde el Squad E."
+    ]
+  },
+  "bloqueos_y_aprobaciones": [
+    {
+      "id": "B-01",
+      "tipo": "bloqueo_empirico",
+      "descripcion": "No existen datos de campo ni manifiesto de procedencia. El análisis inferencial permanece bloqueado.",
+      "efecto_sobre_estas_ordenes": "Ninguno. Las órdenes son editoriales y no requieren datos de campo.",
+      "responsable_de_levantamiento": "tesista, mediante la recolección y el registro en datos/raw/."
+    },
+    {
+      "id": "B-02",
+      "tipo": "aprobacion_metodologica",
+      "descripcion": "La especificación del contraste primario, del método de los valores p y del ajuste por comparaciones múltiples requiere aprobación metodológica posterior.",
+      "efecto_sobre_estas_ordenes": "El Capítulo V, el Resumen y el Abstract se redactan sin nombrar una prueba primaria.",
+      "responsable_de_levantamiento": "dirección metodológica, a propuesta del analista estadístico."
+    },
+    {
+      "id": "B-03",
+      "tipo": "dato_no_reconciliado",
+      "descripcion": "El conteo de historias de usuario discrepa entre 12, 10 y 15 según el artefacto.",
+      "efecto_sobre_estas_ordenes": "Se conservan las cifras en el Anexo 6 y se retiran del Resumen y del Abstract. No se adopta un total.",
+      "responsable_de_levantamiento": "tesista."
+    },
+    {
+      "id": "B-04",
+      "tipo": "fuente_no_comparable",
+      "descripcion": "El ejemplar local de Jhon 2026 es una carátula de una página.",
+      "efecto_sobre_estas_ordenes": "No se cita ni se compara.",
+      "responsable_de_levantamiento": "investigador bibliográfico, si se incorpora el ejemplar completo."
+    },
+    {
+      "id": "B-05",
+      "tipo": "defectos_estadisticos_preservados",
+      "descripcion": "Los siete defectos de severidad alta no se corrigen en el anexo histórico.",
+      "efecto_sobre_estas_ordenes": "El Anexo 7 los conserva bajo advertencia global. La auditoría queda como reporte técnico externo.",
+      "responsable_de_levantamiento": "analista estadístico, cuando existan datos de campo."
+    },
+    {
+      "id": "B-06",
+      "tipo": "consecuencia_estructural",
+      "descripcion": "La inserción del Anexo 7 desplaza el actual Anexo 7 a Anexo 8.",
+      "efecto_sobre_estas_ordenes": "Se actualizan el índice de anexos y las llamadas internas.",
+      "responsable_de_levantamiento": "maquetador-docx."
+    },
+    {
+      "id": "B-07",
+      "tipo": "verificacion_tecnica",
+      "descripcion": "En esta sesión de redacción no se dispone de intérprete para validar el JSON ni de las skills de Zotero. La comprobación se realizó por lectura directa de los archivos y del PDF.",
+      "efecto_sobre_estas_ordenes": "El maquetador debe validar la estructura antes de aplicar y el verificador debe auditar las citas conservadas.",
+      "responsable_de_levantamiento": "maquetador-docx y verificador-integridad."
+    }
+  ],
+  "fuentes": {
+    "conservadas": [
+      {
+        "cita": "Beck (1999)",
+        "uso": "Definición de XP, reducción de bucles de retroalimentación, práctica de programación en parejas y propiedad colectiva.",
+        "paginas": "70-71",
+        "estado": "verificada dentro del rango del artículo, DOI 10.1109/2.796139"
+      },
+      {
+        "cita": "Sommerville (2016)",
+        "uso": "Contraste con el modelo en cascada.",
+        "paginas": "sin página",
+        "estado": "paráfrasis sin página"
+      },
+      {
+        "cita": "Kokol (2022)",
+        "uso": "Revisión sistemática de alcance sobre desarrollo ágil en el sector sanitario.",
+        "paginas": "sin página",
+        "estado": "verificada, DOI 10.3390/app12199462"
+      },
+      {
+        "cita": "Pressman (2010)",
+        "uso": "Fases de XP y prácticas de pruebas.",
+        "paginas": "sin página",
+        "estado": "paráfrasis sin página"
+      },
+      {
+        "cita": "Cohn (2004)",
+        "uso": "Historias de usuario, estimación y priorización.",
+        "paginas": "sin página",
+        "estado": "paráfrasis sin página"
+      }
+    ],
+    "excluidas": [
+      {
+        "cita": "Beck y Andres (2004)",
+        "motivo": "No se cita. No se inventa la referencia ni se atribuye a Beck una obra que no fue comprobada."
+      },
+      {
+        "cita": "Jhon (2026)",
+        "motivo": "El ejemplar local es una carátula de una página. No se usa como comparación."
+      }
+    ],
+    "nuevas": []
+  },
+  "no_alterado": [
+    "Las tres dimensiones oficiales y los seis indicadores de la variable dependiente.",
+    "El diseño preexperimental con pretest y postest en un solo grupo.",
+    "La población censal de 14 trabajadores.",
+    "Los instrumentos, su validación por expertos y las fichas metodológicas.",
+    "Las recomendaciones, que no contienen afirmaciones empíricas.",
+    "La lista de referencias, salvo la actualización de llamadas que no añade ni retira fuentes.",
+    "El contenido existente del Anexo 6, que se amplía y no se reescribe.",
+    "Todas las tablas, figuras, notas y cifras históricas, que se conservan en el Anexo 7.",
+    "La lista histórica de centros de acopio, que permanece dentro del bloque trasladado.",
+    "El archivo redaccion_y_ordenes_v22.json, que se conserva sin sobrescritura como registro de la etapa anterior."
+  ],
+  "verificacion_tecnica_de_este_archivo": "Archivo redactado sin intérprete de JSON disponible en la sesión. La estructura se verificó por lectura. Antes de aplicar, el maquetador debe validar la sintaxis y confirmar que cada ancla textual aparece una sola vez en el DOCX."
+}

@@ -1,0 +1,49 @@
+{
+  "fecha": "2026-10-22",
+  "agente": "director-general",
+  "fase": "F8",
+  "estado": "entregado_para_revision_del_tesista",
+  "destino": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+  "documento_principal": {
+    "docx": "00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+    "pdf": "00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+    "paginas": 7,
+    "sha256_pdf": "8921fcf957e7d2cc5c3e18bccae7ee327e6255489b60b970070a415cb68ba6b9"
+  },
+  "apoyos": {
+    "docx": "APOYOS_INVESTIGADOR/05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+    "pdf": "APOYOS_INVESTIGADOR/05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+    "paginas": 5,
+    "sha256_pdf": "1c3d38efcdab066867517d340caf65678fc88459deede58951a7c74927108c9d"
+  },
+  "comprobacion_independiente_direccion": {
+    "archivos_nuevos_cotejados_con_manifiesto": 12,
+    "discrepancias_de_huella": 0,
+    "docx": 6,
+    "secciones_inspeccionadas": 9,
+    "cabeceras_nativas": "Todas las secciones contienen dos imágenes DrawingML inline embebidas, sin anclajes ni vínculos externos.",
+    "simetria_geometrica": "Tabla de cabecera de 1900/4988/1900 dxa; lados iguales y ancho total 8788 dxa en las nueve secciones.",
+    "paginas_pdf_cotejadas": 19,
+    "logos_pdf": "Dos imágenes de cabecera presentes en todas las páginas de los seis PDF; altura de ambos logotipos 34,0 pt.",
+    "reactivos_docx": "Dieciséis enunciados completos iguales al rector, normalizando únicamente espacios.",
+    "reactivos_pdf": "Dieciséis enunciados completos presentes en A y B, comparando sin espacios y saltos de línea.",
+    "fuentes_principales_preservadas": "Ambos logotipos originales, manifiesto v01 y DOCX principal v01 conservan las cuatro huellas iniciales.",
+    "v01_preservada": "Los doce DOCX/PDF de v01 conservan las huellas de su manifiesto.",
+    "revision_visual": "Dirección leyó las siete páginas del conjunto y las cinco páginas únicas de apoyos; comprobó cabeceras, roles, identificación, tablas, espacios y continuaciones. El maquetador inspeccionó además las copias individuales."
+  },
+  "mejoras_de_claridad": [
+    "Identificación institucional simétrica y editable, separada de la línea de formulario y paginación.",
+    "Responsable y fase de aplicación indicados al principio de cada formulario.",
+    "Campos administrativos de los cuestionarios distinguidos de las respuestas del participante.",
+    "Bloque de auditoría separado del número del documento efectivamente revisado.",
+    "Instrucciones del participante centradas en responder la escala y mantener confidencialidad; reglas de puntuación y tratamiento de faltantes en apoyos.",
+    "Campos, observaciones opcionales, tareas, criterios, unidades y reactivos preservados."
+  ],
+  "limites": [
+    "No se acredita validación empírica ni comprensión probada con participantes.",
+    "No se modifica el alcance de los tres instrumentos ni el carácter complementario y no aditivo del módulo B.",
+    "No se sustituye la aceptación del tesista ni la revisión de la asesora.",
+    "No se reemplaza automáticamente el paquete previo de catorce trabajadores.",
+    "QG-5 y los pendientes metodológicos continúan abiertos."
+  ]
+}

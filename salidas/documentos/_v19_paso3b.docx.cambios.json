@@ -1,0 +1,10 @@
+{
+  "origen": "salidas/documentos/_v19_paso3a.docx",
+  "sha256_origen": "e4ff7962454204938cfb21280715ae7d73dbebdca4814411e3819aa0d831a25a",
+  "destino": "salidas/documentos/_v19_paso3b.docx",
+  "sha256_destino": "5808ed92cf1e5de87f885384d885da9f33dd4bdc09d1107a6955494455b8cb36",
+  "fecha": "2026-10-21",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "plan": "salidas/reportes_maquetacion/_v19_plan_leyenda_unica.json",
+  "detalle": "Sincronizacion de entradas de indice sin borrar campos; keepNext en la ultima fila de las tablas 36, 53 y 54; margenes verticales de celda de 20 dxa en las tablas 52, 53 y 54."
+}

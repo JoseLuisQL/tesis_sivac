@@ -1,0 +1,1605 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "fase": "F8",
+    "squad": "Squad E (Redacción y Maquetación)",
+    "destino": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01",
+    "modo": "rediseno editorial aislado; no sustituye el paquete de catorce",
+    "fuente_reactivos": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\evidencias\\instrumentos_aplicados\\EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx",
+    "regla_extraccion": "tablas identificadas por código AP/UP en 14 y PU/PE en 15; sin retranscripción manual"
+  },
+  "fuentes_preservadas_sha256": {
+    "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+    "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+    "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/_MANIFIESTO_EMISION.json": "f3053c809d5e2599973adefaf7263008d47951c4d7d6ef1e8fd2f61a4c101a87",
+    "salidas/documentos/informe_final_v19.docx": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+  },
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\01_FICHA_TIEMPOS.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\01_FICHA_TIEMPOS.pdf",
+      "sha256_docx": "fc4b73ee94888f38a7106e2865c6e3f285cedb1b04615bcfebf6e6ebb0860f55",
+      "sha256_pdf": "42a2da22fc5749c073016197ee37a41d8849047ccaa163252ff23031249b2353",
+      "bytes_docx": 40962,
+      "bytes_pdf": 46232,
+      "paginas": 2,
+      "tablas": 12,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 3,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 4,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 5,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 6,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 7,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 8,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 9,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 10,
+          "filas": 5,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 11,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 9.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\01_FICHA_TIEMPOS.docx",
+        "existe": true,
+        "sha256": "fc4b73ee94888f38a7106e2865c6e3f285cedb1b04615bcfebf6e6ebb0860f55",
+        "bytes": 40962,
+        "margenes_unajma_ok": true,
+        "tablas_total": 12,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 2,
+        "tablas_con_cantsplit": 12,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      }
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\02_FICHA_AUDITORIA_DOCUMENTAL.pdf",
+      "sha256_docx": "3f07ba2647d63f16ff92b9bda6f78402e019ab23d5954cb33dde236a0ba44245",
+      "sha256_pdf": "3d50f3a799e1facbe64f229e66b2bc009a45839b84742e5cc945c88c484ad530",
+      "bytes_docx": 42572,
+      "bytes_pdf": 92659,
+      "paginas": 3,
+      "tablas": 21,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 2,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 2,
+          "filas": 9,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 9,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 3,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 4,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 5,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 6,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 7,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 8,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 9,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 10,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 11,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 12,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 13,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 14,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 15,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 16,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 17,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 18,
+          "filas": 13,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 13,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 19,
+          "filas": 7,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 7,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 20,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 9.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+        "existe": true,
+        "sha256": "3f07ba2647d63f16ff92b9bda6f78402e019ab23d5954cb33dde236a0ba44245",
+        "bytes": 42572,
+        "margenes_unajma_ok": true,
+        "tablas_total": 21,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 9,
+        "tablas_con_cantsplit": 21,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      }
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\03_CUESTIONARIO_SATISFACCION_A.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\03_CUESTIONARIO_SATISFACCION_A.pdf",
+      "sha256_docx": "072e3e9ad48ab181c97d4e2b9a4e1c011a2071eef0f6dec9ab67143ababa17d5",
+      "sha256_pdf": "c38469d2a2ba3b1a1f5fa7041c4c85a1504fb68b355e35be6ff14cf3c3e24944",
+      "bytes_docx": 40247,
+      "bytes_pdf": 31757,
+      "paginas": 1,
+      "tablas": 4,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 3,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 9.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": true,
+        "Observaciones del participante (opcional)": true
+      },
+      "observaciones_alto_cm": 0.9,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\03_CUESTIONARIO_SATISFACCION_A.docx",
+        "existe": true,
+        "sha256": "072e3e9ad48ab181c97d4e2b9a4e1c011a2071eef0f6dec9ab67143ababa17d5",
+        "bytes": 40247,
+        "margenes_unajma_ok": true,
+        "tablas_total": 4,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 0,
+        "tablas_con_cantsplit": 4,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      }
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\04_MODULO_COMPLEMENTARIO_B_POST.pdf",
+      "sha256_docx": "582abc3c6f141ef55f8444333954eceb357313e1b0f1a8a1d99354830a8b3276",
+      "sha256_pdf": "2498a06e360600f6257d7460bc289e7978abe3cca6c3324b7beddfb2bb6ee7dd",
+      "bytes_docx": 40415,
+      "bytes_pdf": 32672,
+      "paginas": 1,
+      "tablas": 4,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 3,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 9.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": true,
+        "Observaciones del participante (opcional)": true
+      },
+      "observaciones_alto_cm": 0.9,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+        "existe": true,
+        "sha256": "582abc3c6f141ef55f8444333954eceb357313e1b0f1a8a1d99354830a8b3276",
+        "bytes": 40415,
+        "margenes_unajma_ok": true,
+        "tablas_total": 4,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 0,
+        "tablas_con_cantsplit": 4,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      }
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+      "sha256_docx": "4ea681eaf5b25cacf17d31346ff6151a6334d26bc091ba32bd50b5904f420c29",
+      "sha256_pdf": "7c60c02a3a126343cc8dbb403be01842d564af98fdb043d49c917ae36438ff49",
+      "bytes_docx": 53081,
+      "bytes_pdf": 179584,
+      "paginas": 7,
+      "tablas": 41,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 3,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 4,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 5,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 6,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 7,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 8,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 9,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 10,
+          "filas": 5,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 11,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 12,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 13,
+          "filas": 2,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 14,
+          "filas": 9,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 9,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 15,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 16,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 17,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 18,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 19,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 20,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 21,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 22,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 23,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 24,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 25,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 26,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 27,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 28,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 29,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 30,
+          "filas": 13,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 13,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 31,
+          "filas": 7,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 7,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 32,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 33,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 34,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 35,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 36,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 37,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 38,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 39,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 40,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 9.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": true,
+        "Observaciones del participante (opcional)": true
+      },
+      "observaciones_alto_cm": 0.9,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+        "existe": true,
+        "sha256": "4ea681eaf5b25cacf17d31346ff6151a6334d26bc091ba32bd50b5904f420c29",
+        "bytes": 53081,
+        "margenes_unajma_ok": true,
+        "tablas_total": 41,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 11,
+        "tablas_con_cantsplit": 41,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      }
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+      "sha256_docx": "7dba0ece587126f77ebf1fbf6293a0c7788bb50e048549a1dc1fd6b74c44a8bc",
+      "sha256_pdf": "64271dea19a4b920ae96e8128fe51cad9ced235ebf8bacbdfea38c7bc93dc912",
+      "bytes_docx": 43454,
+      "bytes_pdf": 149553,
+      "paginas": 5,
+      "tablas": 19,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 5,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 1,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 3,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 4,
+          "filas": 4,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 5,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 6,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 7,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 8,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 9,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 10,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 11,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 12,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 13,
+          "filas": 5,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 14,
+          "filas": 1,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 15,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 16,
+          "filas": 13,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 13,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 17,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 18,
+          "filas": 9,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 9,
+          "filas_tblHeader": 1
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 9.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+        "existe": true,
+        "sha256": "7dba0ece587126f77ebf1fbf6293a0c7788bb50e048549a1dc1fd6b74c44a8bc",
+        "bytes": 43454,
+        "margenes_unajma_ok": true,
+        "tablas_total": 19,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 9,
+        "tablas_con_cantsplit": 19,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      }
+    }
+  ],
+  "reactivos": {
+    "total_esperado": 16,
+    "igualdad_completa": true,
+    "detalle": {
+      "AP-01": {
+        "igual": true,
+        "longitud_fuente": 92,
+        "longitud_salida": 92
+      },
+      "AP-02": {
+        "igual": true,
+        "longitud_fuente": 101,
+        "longitud_salida": 101
+      },
+      "AP-03": {
+        "igual": true,
+        "longitud_fuente": 126,
+        "longitud_salida": 126
+      },
+      "AP-04": {
+        "igual": true,
+        "longitud_fuente": 109,
+        "longitud_salida": 109
+      },
+      "UP-01": {
+        "igual": true,
+        "longitud_fuente": 115,
+        "longitud_salida": 115
+      },
+      "UP-02": {
+        "igual": true,
+        "longitud_fuente": 106,
+        "longitud_salida": 106
+      },
+      "UP-03": {
+        "igual": true,
+        "longitud_fuente": 144,
+        "longitud_salida": 144
+      },
+      "UP-04": {
+        "igual": true,
+        "longitud_fuente": 124,
+        "longitud_salida": 124
+      },
+      "PU-01": {
+        "igual": true,
+        "longitud_fuente": 130,
+        "longitud_salida": 130
+      },
+      "PU-02": {
+        "igual": true,
+        "longitud_fuente": 129,
+        "longitud_salida": 129
+      },
+      "PU-03": {
+        "igual": true,
+        "longitud_fuente": 137,
+        "longitud_salida": 137
+      },
+      "PU-04": {
+        "igual": true,
+        "longitud_fuente": 126,
+        "longitud_salida": 126
+      },
+      "PE-01": {
+        "igual": true,
+        "longitud_fuente": 125,
+        "longitud_salida": 125
+      },
+      "PE-02": {
+        "igual": true,
+        "longitud_fuente": 123,
+        "longitud_salida": 123
+      },
+      "PE-03": {
+        "igual": true,
+        "longitud_fuente": 127,
+        "longitud_salida": 127
+      },
+      "PE-04": {
+        "igual": true,
+        "longitud_fuente": 125,
+        "longitud_salida": 125
+      }
+    }
+  },
+  "pruebas_rd05": {
+    "A_campos_completos": true,
+    "B_campos_completos": true,
+    "A_observaciones_alto_cm": 0.9,
+    "B_observaciones_alto_cm": 0.9,
+    "A_una_pagina": true,
+    "B_una_pagina": true,
+    "B_fase_fija_final": true,
+    "sin_codigos_trab_completos": true
+  },
+  "correcciones_direccion": {
+    "fecha_aplicacion": "2026-10-22",
+    "aplicadas": [
+      {
+        "id": "RD-01",
+        "estado": "aplicada",
+        "detalle": "Nota de continuación desde D-06 reubicada después de D-05 y antes de Entregas, en la página 2 de la Ficha 02."
+      },
+      {
+        "id": "RD-02",
+        "estado": "aplicada",
+        "detalle": "Identificación con TRAB, fase en blanco, centro y fecha en cierre y continuaciones; correlativo real sin reinicio."
+      },
+      {
+        "id": "RD-03",
+        "estado": "aplicada",
+        "detalle": "Presentación y confidencialidad con código en A y B, sin alterar reactivos, escalas ni una página por hoja."
+      },
+      {
+        "id": "RD-04",
+        "estado": "aplicada",
+        "detalle": "Cálculo del cierre en instrucciones narrativas, sin ecuaciones; regla CPE y nota de no sumar dosis conservadas."
+      },
+      {
+        "id": "RD-05",
+        "estado": "aplicada",
+        "detalle": "Restituidos código de centro e investigador en la cabecera de A y B, y recuadro opcional de observaciones al pie; B mantiene fase fija FINAL."
+      }
+    ]
+  },
+  "prevalencias_gobernanza": [
+    "No se adopta ni imprime la atribución de un certificado único al Instrumento 03 como regla vigente. Las referencias del JSON del especialista a ese punto están superadas y son ajenas a este rediseño editorial.",
+    "No se afirma que exista un anexo firmado remitido a expertos ni se describe un juicio inspeccionado. La fuente se denomina versión fuente preservada.",
+    "La secuencia 04 es una decisión editorial de este rediseño, no una preferencia atribuida al tesista.",
+    "Los campos nuevos de C-03 quedan excluidos: prevalece la fuente real emitida y no se agregan campos empíricos.",
+    "Los cálculos se concentran en la hoja de cierre. No se emiten afirmaciones de estimabilidad psicométrica ni umbrales nuevos en documentos de uso."
+  ],
+  "correspondencia_campos": [
+    {
+      "origen": "Encabezado Paquete TRAB-XX · Fase PRE/POST",
+      "destino": "Cabecera de identificación con Fase en blanco (01, 02, 03) y rótulo fijo final (04)"
+    },
+    {
+      "origen": "Código TRAB-XX y código de centro",
+      "destino": "Cabecera de 01, 02, 03 y 04"
+    },
+    {
+      "origen": "Fecha de aplicación",
+      "destino": "Línea en blanco en la cabecera de las cuatro hojas"
+    },
+    {
+      "origen": "Observador o investigador",
+      "destino": "Cabecera y firma de la Ficha 01; campo Investigador en la cabecera de 03 y 04"
+    },
+    {
+      "origen": "Tarea y descripción (tabla de ocho columnas)",
+      "destino": "Título de cada bloque de tarea, con la descripción literal del constructor vigente"
+    },
+    {
+      "origen": "Hora de inicio, hora de fin y duración",
+      "destino": "Rejilla interna del bloque de tarea"
+    },
+    {
+      "origen": "Pausa con causa",
+      "destino": "Rejilla interna del bloque de tarea"
+    },
+    {
+      "origen": "Tarea válida",
+      "destino": "Rejilla interna del bloque de tarea"
+    },
+    {
+      "origen": "Observaciones por tarea",
+      "destino": "Rejilla interna del bloque de tarea"
+    },
+    {
+      "origen": "Media, mediana y tareas válidas",
+      "destino": "Consolidado de la página 2 de la Ficha 01"
+    },
+    {
+      "origen": "Incidencias: número, hora, tarea, causa, acción y observaciones",
+      "destino": "Tabla de incidencias de la Ficha 01 y continuación H-05"
+    },
+    {
+      "origen": "Observaciones del observador y firma",
+      "destino": "Cierre de la Ficha 01"
+    },
+    {
+      "origen": "Horas de inicio y fin de la sesión",
+      "destino": "Pie de la Ficha 01"
+    },
+    {
+      "origen": "Ventana auditada y fecha de auditoría",
+      "destino": "Cabecera de la Ficha 02"
+    },
+    {
+      "origen": "Tabla RSD de trece columnas: número, tipo, fecha, C1 a C8, conforme y motivo",
+      "destino": "Bloques D-01 a D-05 con rejilla de ocho criterios y veredicto; continuación D-06"
+    },
+    {
+      "origen": "Criterios C1 a C8",
+      "destino": "Leyenda completa una vez y etiqueta corta en cada bloque"
+    },
+    {
+      "origen": "Tabla CPE: número, programada, entregada, diferencia, documento y concordante",
+      "destino": "Tabla compacta de seis columnas en la Ficha 02 y continuación E-13"
+    },
+    {
+      "origen": "Conteos de cierre y porcentajes",
+      "destino": "Conteos crudos en la Ficha 02; porcentajes en la hoja de cierre"
+    },
+    {
+      "origen": "Observaciones, firma y fecha de cierre del auditor",
+      "destino": "Cierre de la Ficha 02"
+    },
+    {
+      "origen": "Reactivos AP-01 a AP-04 y UP-01 a UP-04",
+      "destino": "Tabla del Cuestionario A, extracción literal del rector"
+    },
+    {
+      "origen": "Reactivos PU-01 a PU-04 y PE-01 a PE-04",
+      "destino": "Tabla del Módulo B, extracción literal del rector"
+    },
+    {
+      "origen": "Escala de 1 a 5",
+      "destino": "Leyenda unificada de etiqueta y valor en 03 y 04"
+    },
+    {
+      "origen": "Código de participante, código de centro, fase, fecha de aplicación e investigador",
+      "destino": "Cabecera compacta del Cuestionario A y del Módulo B; en B la fase se imprime fija como FINAL"
+    },
+    {
+      "origen": "Observaciones del participante",
+      "destino": "Recuadro opcional al pie del Cuestionario A y del Módulo B, de 0.9 cm"
+    },
+    {
+      "origen": "Puntajes, sumas y terciles teóricos",
+      "destino": "Hoja de cierre y hoja de puntuación vigente del kit, sin duplicar baremos"
+    },
+    {
+      "origen": "Consentimiento informado",
+      "destino": "Soporte separado existente; no se reproduce"
+    },
+    {
+      "origen": "Calibración, matriz de captura, manual y certificado de jueces",
+      "destino": "Soportes separados existentes; no se reproducen"
+    }
+  ],
+  "divergencias": [
+    {
+      "id": "C-03",
+      "tema": "Campos de biológico, lote, dosis, vacuna, causa y vale o requerimiento",
+      "decision": "Excluidos. Prevalece la fuente real emitida: el formulario vigente no los contiene y no se agregan campos empíricos.",
+      "estado": "cerrado por prevalencia de la fuente emitida"
+    },
+    {
+      "id": "D-01",
+      "tema": "Geometría de Fany",
+      "decision": "No se adopta Arial 11 ni el ancho de 17.01 cm. Se usa Times New Roman 12/10/9.5 y 8788 dxa.",
+      "estado": "resuelto editorialmente"
+    },
+    {
+      "id": "D-02",
+      "tema": "Identificación de Fany",
+      "decision": "Fany no recoge código de participante. SIVAC conserva TRAB en blanco para emparejar pretest y postest.",
+      "estado": "resuelto editorialmente"
+    },
+    {
+      "id": "D-03",
+      "tema": "Tabla de trece columnas de la Ficha 02",
+      "decision": "Sustituida por bloques verticales con los mismos campos crudos; no se pierde ningún criterio.",
+      "estado": "resuelto editorialmente"
+    },
+    {
+      "id": "D-04",
+      "tema": "Casillas con corchetes literales",
+      "decision": "Se eliminan; la rejilla dibuja la casilla vacía.",
+      "estado": "resuelto editorialmente"
+    },
+    {
+      "id": "D-05",
+      "tema": "Capacidad de la ficha",
+      "decision": "Cinco bloques RSD y doce entregas CPE en la hoja base; el excedente pasa a continuación correlativa entregada.",
+      "estado": "resuelto editorialmente"
+    },
+    {
+      "id": "C-02",
+      "tema": "Modo de corpus",
+      "decision": "El campo queda en blanco con tres opciones; no se fija tamaño.",
+      "estado": "pendiente de aprobación"
+    }
+  ],
+  "continuaciones_entregadas": [
+    "RSD desde D-06",
+    "CPE desde E-13",
+    "Incidencias desde H-05"
+  ],
+  "render": [
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\01_FICHA_TIEMPOS_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\01_FICHA_TIEMPOS_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p003.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\03_CUESTIONARIO_SATISFACCION_A_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\04_MODULO_COMPLEMENTARIO_B_POST_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p003.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p004.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p005.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p006.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p007.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p003.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p004.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v01\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p005.png"
+  ],
+  "pendientes": [
+    "Revisión visual del tesista y de la asesora antes de imprimir.",
+    "Definir el modo de corpus antes del pretest."
+  ]
+}

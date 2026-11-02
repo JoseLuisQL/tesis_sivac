@@ -1,0 +1,43 @@
+{
+  "fecha": "2026-10-22",
+  "solicitud": "Nueva mejora de orden, limpieza, legibilidad y comprensión metodológica; integrar los logotipos proporcionados de UNAJMA y EPIS simétricamente en la cabecera nativa de todas las páginas Word y PDF.",
+  "tarea": "Emitir una versión v02 aislada de los instrumentos y apoyos, con cabecera institucional nativa y mejoras editoriales reales en el cuerpo.",
+  "fase": "F8",
+  "squad": "Squad E (Redacción y Maquetación)",
+  "subagente": "maquetador-docx",
+  "entradas": [
+    "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/",
+    "LOGO-UNAJMA.jpg",
+    "LOGO-EPIS.jpg",
+    "scripts/compiladores/paquete_campo_builder.py",
+    "scripts/utilidades/docx_quirurgico.py"
+  ],
+  "salida_esperada": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02/ con conjunto, cuatro formularios y apoyos en DOCX/PDF, MANIFIESTO.json y control_visual; reporte propio salidas/reportes_maquetacion/maquetacion_institucional_v02_20261022.json",
+  "restricciones": [
+    "Preservar logos originales, versión v01, paquete de catorce, expediente de evaluación e informe.",
+    "Cabecera Word real de tres columnas simétricas, logotipos embebidos en línea, texto central editable, sin imágenes vinculadas ni cabecera rasterizada completa.",
+    "Preservar proporción y colores de los logotipos; solo recorte de márgenes vacíos o marco externo en copia derivada, sin recortar símbolos o textos.",
+    "Ambos logos en todas las páginas y secciones, incluidas continuaciones y apoyos; evitar colisión con paginación o cuerpo.",
+    "Márgenes A4 institucionales y tipografía TNR; no reducir fuente ni márgenes para mantener una cantidad arbitraria de páginas.",
+    "Conservar dieciséis enunciados completos, criterios, tareas, seis indicadores y tres dimensiones. Redacción modificable solo en instrucciones y rótulos sin cambio de significado.",
+    "No perder campos, firmas de responsables, observaciones opcionales ni identificación de hojas sueltas.",
+    "No publicar ni subir archivos a servicios externos. No atribuir aprobación institucional o validación empírica a la cabecera."
+  ],
+  "criterio_exito": "Seis pares de archivos reales, cabeceras XML y DrawingML verificadas, logos proporcionales y simétricos en todos los PDF, revisión visual de todas las páginas, reactivos y campos conservados, y fuentes previas sin cambios.",
+  "huellas_iniciales": {
+    "LOGO-UNAJMA.jpg": "52ac000644b8dbd6ee631bc0537e2917a8c2353e1e7e11abb3c6a9c944f1de98",
+    "LOGO-EPIS.jpg": "7d1888ce844eca6c4812a58cf841b979be683f289bbcc692318057a754dd50d2",
+    "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/MANIFIESTO.json": "6bac57d7812f33d9df5d2acc49d6f130edb2fb952e9e889299a62fafaa856027",
+    "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/00_INSTRUMENTOS_RECOLECCION_SIVAC.docx": "4ea681eaf5b25cacf17d31346ff6151a6334d26bc091ba32bd50b5904f420c29"
+  },
+  "criterios_visuales_y_de_comprension": [
+    "Dos logotipos identificables, proporcionados y alineados en torno a un bloque institucional centrado.",
+    "Paginación y rótulo de formulario sin colisiones con imágenes, texto o cuerpo.",
+    "Responsable y fase de cada formulario identificables al principio, sin confundir campos administrativos con respuestas del participante.",
+    "Jerarquía consistente de título, propósito, instrucciones, registro y observaciones; sin bloques encimados o negritas indiscriminadas.",
+    "Casillas y líneas utilizables para escritura manual, con encabezados legibles y rejilla de contraste suficiente.",
+    "Unidades y reglas de llenado explícitas sin convertir tiempos o proporciones en escalas de opinión.",
+    "Todas las continuaciones suministradas, identificadas y enlazadas con el bloque precedente."
+  ],
+  "criterio_de_revision": "La revisión técnica y visual no sustituye la aceptación del tesista ni una prueba de comprensión con participantes reales; QG-5 y las limitaciones empíricas se mantienen."
+}

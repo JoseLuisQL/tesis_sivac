@@ -1,0 +1,3198 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "Datos de inmunización evidencia para la acción",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ {
+          "hitHighlights" : {
+            "dc.title" : [ "Boletín <em>de</em> <em>Inmunización</em>, v.41, n.1, Mar. 2019" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "9d77987b-f371-4c52-8e20-94530e822be3",
+              "uuid" : "9d77987b-f371-4c52-8e20-94530e822be3",
+              "name" : "Boletín de Inmunización, v.41, n.1, Mar. 2019",
+              "handle" : "10665.2/54319",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2021",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2021",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2019",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.tableofcontents" : [ {
+                  "value" : "La Comisión Regional de Verificación de la Eliminación del Sarampión y la Rubéola se reúne en la OPS | La OPS y PATH lanzan un nuevo recurso para mejorar el uso de datos para la inmunización | Tres mitos sobre la vacunación contra la influenza | Actividades de salud escolar en Argentina para mantener la eliminación del sarampión | Tabla 1. Precios de las vacunas compradas a través del Fondo Rotatorio de la OPS, 2019 | Tabla 2. Precios de las jeringas compradas a través del Fondo Rotatorio de la OPS, 2019 | Lo que he aprendido sobre vacunación contra influenza estacional y preparación para una pandemia…por Alba Maria Ropero A.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/54319",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofjournal" : [ {
+                  "value" : "PAHO Immunization Newsletter",
+                  "language" : "EN",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Boletín de Inmunización de la OPS",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Boletim de Imunização da OPAS",
+                  "language" : "pt",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Bulletin d'Immunisation de l'OPS",
+                  "language" : "fr",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Boletín de Inmunización (Boletín Informativo PAI);v.41, 2019",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Programas de Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Vacunación",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Vacunas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Sarampión",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Jeringas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Vacunas contra la Influenza",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Argentina",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Américas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                }, {
+                  "value" : "Región del Caribe",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 9
+                } ],
+                "dc.title" : [ {
+                  "value" : "Boletín de Inmunización, v.41, n.1, Mar. 2019",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Newsletters",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Family, Health Promotion and Life Course (FPL)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/54318",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/54320",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "10665.2/54321",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-06-18T00:02:54.277+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/9d77987b-f371-4c52-8e20-94530e822be3"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ "El Plan <em>de</em> <em>acción</em> regional sobre <em>inmunización</em> <em>para</em> las Américas 2030 (RIAP) constituye un paso fundamental <em>para</em> consolidar los avances alcanzados y proporciona una visión clara <em>para</em> enfrentar los desafíos actuales y futuros, con el objetivo <em>de</em>", " población tengan <em>la</em> oportunidad <em>de</em> beneficiarse <em>de</em> programas <em>de</em> <em>inmunización</em> resilientes, eficaces y equitativos a lo largo del curso <em>de</em> vida.\n\nDiseñado en el marco <em>de</em> <em>la</em> política sobre Revitalizar <em>la</em> <em>inmunización</em> como un bien público <em>para</em> <em>la</em> salud universal" ],
+            "dc.title" : [ "Plan <em>de</em> <em>acción</em> regional sobre <em>inmunización</em> <em>para</em> las Américas 2030. Versión revisada" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde",
+              "uuid" : "62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde",
+              "name" : "Plan de acción regional sobre inmunización para las Américas 2030. Versión revisada",
+              "handle" : "10665.2/72163",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2026-08-26T12:51:32Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2026-08-26T12:51:32Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2026-08-26",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "El Plan de acción regional sobre inmunización para las Américas 2030 (RIAP) constituye un paso fundamental para consolidar los avances alcanzados y proporciona una visión clara para enfrentar los desafíos actuales y futuros, con el objetivo de alcanzar las metas establecidas para el año 2030. Este plan es esencial para fortalecer los sistemas de salud, mejorar el acceso a la vacunación y optimizar la coordinación entre las partes interesadas, de manera de asegurar que todos los sectores de la población tengan la oportunidad de beneficiarse de programas de inmunización resilientes, eficaces y equitativos a lo largo del curso de vida.\n\nDiseñado en el marco de la política sobre Revitalizar la inmunización como un bien público para la salud universal y en consonancia con la Agenda de Inmunización 2030, en este plan se integran las prioridades definidas por los países y territorios, con indicadores que abordan seis líneas de acción: gobernanza, seguimiento, integración, comunicación, recursos humanos y toma de decisiones basada en la evidencia. Este enfoque integral e inclusivo reafirma el compromiso con el logro de la cobertura universal de salud y de los Objetivos de Desarrollo Sostenible.\n\nDe cara al futuro, es esencial mantener un compromiso sólido a todos los niveles y adaptar las estrategias a los cambios que enfrentan los países y territorios, a fin de avanzar de manera eficaz en los esfuerzos de inmunización mediante mejores prácticas y enfoques innovadores. Se invita a todas las partes interesadas a unirse a este esfuerzo colectivo para garantizar la inmunización como un bien público y proteger a la población contra las enfermedades prevenibles mediante la vacunación.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.notes" : [ {
+                  "value" : "Este documento constituye una versión revisada de la edición publicada por la OPS en 2025, disponible en: https://iris.paho.org/handle/10665.2/67808",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : 0,
+                  "place" : 0
+                } ],
+                "dc.description.tableofcontents" : [ {
+                  "value" : "Agradecimientos; Introducción; Métodos: elaboración del plan de acción regional sobre inmunización liderada por los países; Resultados de la asignación de prioridades a nivel regional; Priorización de las líneas de acción estratégicas; Guía sobre los objetivos e indicadores de cada línea de acción estratégica; ¿Cómo contribuirán la OPS y otros socios a la implementación del RIAP en los países y territorios de la Región de las Américas?; Seguimiento y evaluación; Referencias; Anexos; Anexo 1: Líneas de acción estratégicas, objetivos e indicadores; Anexo 2: Variaciones regionales en la prioridad de las LAE; Anexo 3: Variaciones regionales en la prioridad de los objetivos de las líneas de acción estratégicas.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "OPS/CIM/26-0007",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/72163",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "Attribution-NonCommercial-ShareAlike 3.0 IGO",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Inmunización",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Cobertura Universal de Salud",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Objetivos del Desarrollo Sostenible",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Américas",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "dc.title" : [ {
+                  "value" : "Plan de acción regional sobre inmunización para las Américas 2030. Versión revisada",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Publications",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Comprehensive Immunizations (CIM)",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.page" : [ {
+                  "value" : "29 p.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/72164",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-09-16T18:24:02.503+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/62c8ffbc-0f84-4ef3-8d8c-1f3daf0a5fde"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ "El Plan <em>de</em> <em>acción</em> regional sobre <em>inmunización</em> <em>para</em> las Américas 2030, RIAP, por su sigla en inglés, es el resultado <em>de</em> un trabajo conjunto con los países y territorios <em>de</em> <em>la</em> Región, enmarcado en el documento estratégico Revigorizar <em>la</em> <em>inmunización</em>", " como un bien <em>de</em> salud pública <em>para</em> <em>la</em> salud universal y <em>la</em> Agenda <em>de</em> <em>Inmunización</em> 2030 (IA2030 por sus siglas en ingles) Su objetivo es fortalecer los sistemas <em>de</em> salud, mejorar el acceso a <em>la</em> <em>inmunización</em> y garantizar su equidad, con un enfoque en <em>la</em>" ],
+            "dc.title" : [ "Plan <em>de</em> <em>acción</em> regional sobre <em>inmunización</em> <em>para</em> las Américas 2030: Fichas técnicas" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "4ebfc57a-cb09-4b89-8598-b92f134db624",
+              "uuid" : "4ebfc57a-cb09-4b89-8598-b92f134db624",
+              "name" : "Plan de acción regional sobre inmunización para las Américas 2030: Fichas técnicas",
+              "handle" : "10665.2/69316",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2025-12-03T20:24:18Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2025-12-03T20:24:18Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2025-12-03",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "El Plan de acción regional sobre inmunización para las Américas 2030, RIAP, por su sigla en inglés, es el resultado de un trabajo conjunto con los países y territorios de la Región, enmarcado en el documento estratégico Revigorizar la inmunización como un bien de salud pública para la salud universal y la Agenda de Inmunización 2030 (IA2030 por sus siglas en ingles) Su objetivo es fortalecer los sistemas de salud, mejorar el acceso a la inmunización y garantizar su equidad, con un enfoque en la resiliencia de los programas a lo largo del curso de vida. El RIAP contempla 36 indicadores agrupados en seis líneas de acción prioritarias: gobernanza, monitoreo, integración, comunicación, recursos humanos y toma de decisiones basada en evidencia. Cada indicador cuenta con una ficha técnica que actúa como guía estandarizada, describiendo su definición, metodología de cálculo, fuetnes de datos, propósito, limitaciones y vinculación con las líneas estratégicas del plan regional. Las fichas técnicas describen en detalle los metadatos de los 29 indicadores priorizados por los países, así como los 7 indicadores correspondientes a los objectivos de implacto de la Agenda de Inmunización 2030. Los indicadores priorizados se presentan con un mayor nivel de detalle, mientras que los objetivos de impacto están alineados con la información establecida en la IA2030. El Programa Especial de Inmunización Integral de la Organización Panamericana de la Salud (OPS) pondrá a disposición un tablero de monitoreo del RIAP2030, donde estarán disponibles todas las fichas técnicas. Este tablero facilitará la experiencia del usuario y permitirá un seguimiento integral y accesible de los indicadores.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "OPS/CIM/25-0016",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/69316",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "Attribution-NonCommercial-ShareAlike 3.0 IGO",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Immunization",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Vaccination",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Sistemas de Salud",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Universal Health Coverage",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Sustainable Development Goals",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Americas",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                } ],
+                "dc.title" : [ {
+                  "value" : "Plan de acción regional sobre inmunización para las Américas 2030: Fichas técnicas",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Fact Sheets",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Comprehensive Immunizations (CIM)",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.page" : [ {
+                  "value" : "38 p.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington; D.C.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2025-12-04T02:03:20.923+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/4ebfc57a-cb09-4b89-8598-b92f134db624"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ "El Plan <em>de</em> <em>acción</em> regional sobre <em>inmunización</em> <em>para</em> las Américas (RIAP) constituye un paso fundamental <em>para</em> consolidar los avances alcanzados y proporciona una visión clara <em>para</em> enfrentar los desafíos actuales y futuros, con el objetivo <em>de</em> alcanzar", " población tengan <em>la</em> oportunidad <em>de</em> beneficiarse <em>de</em> programas <em>de</em> <em>inmunización</em> resilientes, eficaces y equitativos a lo largo del curso <em>de</em> vida. Diseñado en el marco <em>de</em> <em>la</em> política sobre Revitalizar <em>la</em> <em>inmunización</em> como un bien <em>de</em> salud pública <em>para</em> <em>la</em> salud" ],
+            "dc.title" : [ "Plan <em>de</em> <em>acción</em> regional sobre <em>inmunización</em> <em>para</em> las Américas 2030" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "1e650b46-74c7-4dcf-9f18-c10f74c6ffe8",
+              "uuid" : "1e650b46-74c7-4dcf-9f18-c10f74c6ffe8",
+              "name" : "Plan de acción regional sobre inmunización para las Américas 2030",
+              "handle" : "10665.2/67808",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2025-07-08T22:26:02Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2025-07-08T22:26:02Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2025-07-08",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "El Plan de acción regional sobre inmunización para las Américas (RIAP) constituye un paso fundamental para consolidar los avances alcanzados y proporciona una visión clara para enfrentar los desafíos actuales y futuros, con el objetivo de alcanzar las metas establecidas para el año 2030. Este plan es esencial para fortalecer los sistemas de salud, mejorar el acceso a la vacunación y optimizar la coordinación entre las partes interesadas, de manera de asegurar que todos los sectores de la población tengan la oportunidad de beneficiarse de programas de inmunización resilientes, eficaces y equitativos a lo largo del curso de vida. Diseñado en el marco de la política sobre Revitalizar la inmunización como un bien de salud pública para la salud universal y en consonancia con la Agenda de Inmunización 2030, en este plan se integran las prioridades definidas por los países y territorios, con indicadores que abordan seis líneas de acción: gobernanza, seguimiento, integración, comunicación, recursos humanos y toma de decisiones basada en la evidencia. Este enfoque integral e inclusivo reafirma el compromiso con el logro de la cobertura universal de salud y de los Objetivos de Desarrollo Sostenible. De cara al futuro, es esencial mantener un compromiso sólido a todos los niveles y adaptar las estrategias a los cambios que enfrentan los países y territorios, a fin de avanzar de manera eficaz en los esfuerzos de inmunización mediante mejores prácticas y enfoques innovadores. Se invita a todas las partes interesadas a unirse a este esfuerzo colectivo para garantizar la inmunización como un bien público y proteger a la población contra las enfermedades prevenibles por vacunación.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "OPS/CIM/24-0018",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/67808",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "Attribution-NonCommercial-ShareAlike 3.0 IGO",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Cobertura Universal de Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Objetivos del Desarrollo Sostenible",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Américas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "dc.title" : [ {
+                  "value" : "Plan de acción regional sobre inmunización para las Américas 2030",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Information kit (folder, banner, brochure)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Comprehensive Immunizations (CIM)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.page" : [ {
+                  "value" : "29 p.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/67807",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/63317",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "10665.2/67809",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-04-27T18:10:01.783+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1e650b46-74c7-4dcf-9f18-c10f74c6ffe8"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.title" : [ "Boletín <em>de</em> <em>Inmunización</em>, v.37, n.4, Dic. 2015 ﻿" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "bc334253-9c18-495b-91d1-596d6dcbec0e",
+              "uuid" : "bc334253-9c18-495b-91d1-596d6dcbec0e",
+              "name" : "Boletín de Inmunización, v.37, n.4, Dic. 2015 ﻿",
+              "handle" : "10665.2/34382",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2017",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2017",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2015",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.tableofcontents" : [ {
+                  "value" : "- El Comité Internacional de Expertos se reúne en Brasil y analiza la evidencia para verificar la interrupción de la circulación endémica de sarampión. - Los Estados Miembros de la OPS aprueban el Plan de Acción Regional sobre Inmunización en el 54.º Consejo Directivo. - Campaña de vacunación contra la influenza en el Ecuador, 2014-15. - Avances en la aplicación de la caja de herramientas para el monitoreo de coberturas de intervenciones integradas en salud pública de la OPS. - Prueba: Inmunización y administración de vacunas. - COLUMNA: Lo que he aprendido...por la Dra. Merceline Dahl-Regis. -",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.issn" : [ {
+                  "value" : "1814-6252",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/34382",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Boletín de Inmunización (Boletín Informativo PAI);v.37, 2015",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Vacunas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Cobertura de Vacunación",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.title" : [ {
+                  "value" : "Boletín de Inmunización, v.37, n.4, Dic. 2015 ﻿",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Newsletters",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/54233",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/54485",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.subject" : [ {
+                  "value" : "Cat 3. Determinants of Health and Promoting Health throughout the Life Course",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-07-02T21:12:46.041+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc334253-9c18-495b-91d1-596d6dcbec0e"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ " objetivo del proyecto <em>Datos</em> <em>de</em> <em>Inmunización</em>: <em>Evidencia</em> <em>para</em> <em>la</em> <em>Acción</em> (IDEA) es identificar, revisar, sintetizar y diseminar lo que funciona <em>para</em> mejorar el uso <em>de</em> los <em>datos</em> sobre <em>inmunización</em> y por qué funciona.", " una Educación y formación en salud más efectivas. El llamado <em>para</em> mejorar <em>la</em> calidad y el uso <em>de</em> los <em>datos</em> ocupan un lugar prominente en varios planes <em>de</em> <em>acción</em> nacionales y en estrategias mundiales como el Plan <em>de</em> <em>Acción</em> Mundial sobre Vacunas. El" ],
+            "dc.title" : [ "<em>Datos</em> <em>de</em> <em>inmunización</em>: <em>evidencia</em> <em>para</em> <em>la</em> <em>acción</em>. Una revisión realista <em>de</em> lo que funciona <em>para</em> mejorar el uso <em>de</em> <em>datos</em> <em>para</em> <em>la</em> <em>inmunización</em>. <em>Evidencia</em> <em>de</em> los países bajos y medianos ingresos", "Données <em>de</em> vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour <em>la</em> vaccination, Données probantes des pays à revenu faible et intermédiaire" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "ee16da9a-85e3-425c-9707-0987c40fd538",
+              "uuid" : "ee16da9a-85e3-425c-9707-0987c40fd538",
+              "name" : "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+              "handle" : "10665.2/50482",
+              "metadata" : {
+                "dc.contributor" : [ {
+                  "value" : "PATH",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "Data quality is a cornerstone of well-functioning health systems. Sound and reliable information enables better resource allocation, more targeted care, policy development, and implementation, and more effective health education and training. Calls to improve the quality and use of data feature prominently in several national plans of action and in global strategies like the Global Vaccine Action Plan. The goal of the Immunization Data: Evidence for Action (IDEA) project is to identify, review, synthesize, and disseminate what works to improve the use of immunization data and why it works.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "La qualité des données est essentielle au bon fonctionnement des systèmes de santé. Une information solide et fiable permet une meilleure allocation des ressources, un meilleur ciblage des soins, des politiques et de la mise en oeuvre, et une plus grande efficacité de l’éducation et de la formation en matière de santé. Le plan d’action national de nombreux pays, de même que les stratégies mondiales telles que le Plan d’action mondial pour les vaccins, préconisent l’amélioration de la qualité et de l’utilisation des données. Le projet Données de vaccination : des preuves pour l’action (IDEA) a pour objectif d’identifier, d’examiner, de synthétiser et de diffuser « ce qui marche » pour améliorer l’utilisation des données de vaccination et pourquoi.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "La calidad de los datos es una piedra angular del buen funcionamiento de los sistemas de salud. La información sólida y confiable permite una mejor asignación de recursos, una atención más específica, el desarrollo y la aplicación de políticas, y una Educación y formación en salud más efectivas. El llamado para mejorar la calidad y el uso de los datos ocupan un lugar prominente en varios planes de acción nacionales y en estrategias mundiales como el Plan de Acción Mundial sobre Vacunas. El objetivo del proyecto Datos de Inmunización: Evidencia para la Acción (IDEA) es identificar, revisar, sintetizar y diseminar lo que funciona para mejorar el uso de los datos sobre inmunización y por qué funciona.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.citation" : [ {
+                  "value" : "Immunization Data: Evidence for Action. A Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle- Income Countries. Seattle: PATH; Washington, DC: PAHO; 2019.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Données de vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire. Seattle : PATH ; Washington, DC : OPS; 2019.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. Seattle: PATH; Washington, DC: OPS; 2019.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.isbn" : [ {
+                  "value" : "978-92-75-32061-7",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "978-92-75-22061-0",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "978-92-75-12061-3",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/50482",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "fr",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "PAHO",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "CC BY-SA 4.0",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Electronic Health Records",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Immunization Programs",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Patient Generated Health Data",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Data Collection",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Health Information Systems",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Registros Electrónicos de Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Programas de Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Recolección de Datos",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Sistemas de Información en Salud",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                } ],
+                "dc.title" : [ {
+                  "value" : "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Données de vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.type" : [ {
+                  "value" : "Publications",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Family, Health Promotion and Life Course (FPL)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.subject" : [ {
+                  "value" : "Cat 3. Determinants of Health and Promoting Health throughout the Life Course",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Cat 4. Health Systems",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-03-11T04:36:47.311+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.title" : [ "Boletín <em>de</em> <em>Inmunización</em>, v.35, n.5, Oct. 2013 ﻿" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "1285bd8a-3998-4256-ba75-dd41956f2b71",
+              "uuid" : "1285bd8a-3998-4256-ba75-dd41956f2b71",
+              "name" : "Boletín de Inmunización, v.35, n.5, Oct. 2013 ﻿",
+              "handle" : "10665.2/54217",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2021",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2021",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2013",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/54217",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofjournal" : [ {
+                  "value" : "PAHO Immunization Newsletter",
+                  "language" : "EN",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Boletín de Inmunización de la OPS",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Boletim de Imunização da OPAS",
+                  "language" : "pt",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Bulletin d'Immunisation de l'OPS",
+                  "language" : "fr",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Boletín de Inmunización (Boletín Informativo PAI);v.35, 2013",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Programas de Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Vacunas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Rotavirus",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Sarampión",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Rubéola (Sarampión Alemán)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Síndrome de Rubéola Congénita",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Américas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Región del Caribe",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                } ],
+                "dc.title" : [ {
+                  "value" : "Boletín de Inmunización, v.35, n.5, Oct. 2013 ﻿",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Newsletters",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Family, Health Promotion and Life Course (FPL)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/54216",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/54782",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-09-01T03:05:35.138+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/1285bd8a-3998-4256-ba75-dd41956f2b71"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.title" : [ "CE168/14 - Revitalizar <em>la</em> <em>inmunización</em> como un bien público <em>para</em> <em>la</em> salud universal" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b",
+              "uuid" : "bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b",
+              "name" : "CE168/14 - Revitalizar la inmunización como un bien público para la salud universal",
+              "handle" : "10665.2/59030",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2023",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2023",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2021-06-25",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "CE168/14",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/59030",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "CE168",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Comité Ejecutivo de la OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.title" : [ {
+                  "value" : "CE168/14 - Revitalizar la inmunización como un bien público para la salud universal",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Governing Bodies documents",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.page" : [ {
+                  "value" : "20 p.",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/59029",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "10665.2/59031",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "10665.2/59032",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2025-01-20T03:05:22.244+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/bc6a14df-8545-4ff6-8bd1-0c5e52e3b36b"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ "El Marco regional <em>para</em> el seguimiento y <em>la</em> reverificación <em>de</em> <em>la</em> eliminación del sarampión, <em>la</em> rubéola y el síndrome <em>de</em> rubéola congénita en <em>la</em> Región <em>de</em> las Américas tiene por objeto orientar a los Estados Miembros <em>de</em> <em>la</em> Organización Panamericana <em>de</em>", " <em>la</em> Salud y a los Comités Nacionales <em>de</em> Sostenibilidad sobre los requisitos y los procedimientos <em>de</em> seguimiento y reverificación <em>de</em> <em>la</em> eliminación del sarampión y <em>la</em> rubéola. En el marco regional se mantienen algunos elementos del plan <em>de</em> <em>acción</em>" ],
+            "dc.title" : [ "Marco regional <em>para</em> el seguimiento y <em>la</em> reverificación <em>de</em> <em>la</em> eliminación del sarampión, <em>la</em> rubéola y el síndrome <em>de</em> rubéola congénita en <em>la</em> Región <em>de</em> las Américas" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "84b2a788-1d30-436e-9cef-d72fb44f3266",
+              "uuid" : "84b2a788-1d30-436e-9cef-d72fb44f3266",
+              "name" : "Marco regional para el seguimiento y la reverificación de la eliminación del sarampión, la rubéola y el síndrome de rubéola congénita en la Región de las Américas",
+              "handle" : "10665.2/56039",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2022",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2022",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2022",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "El Marco regional para el seguimiento y la reverificación de la eliminación del sarampión, la rubéola y el síndrome de rubéola congénita en la Región de las Américas tiene por objeto orientar a los Estados Miembros de la Organización Panamericana de la Salud y a los Comités Nacionales de Sostenibilidad sobre los requisitos y los procedimientos de seguimiento y reverificación de la eliminación del sarampión y la rubéola. En el marco regional se mantienen algunos elementos del plan de acción original del 2011 para documentar y verificar la eliminación, y se proporcionan orientación sólida y actualizada que se ajusta a las nuevas situaciones epidemiológicas. Para cumplir los criterios de reverificación, los países en los que esas enfermedades son endémicas ahora tendrán que demostrar que no hay transmisión del virus del sarampión durante más de un año y que poseen la capacidad nacional para mantener la eliminación del sarampión y la rubéola. La entidad responsable de elaborar el marco y hacer la revisión crítica fue la Comisión Regional de Monitoreo y Reverificación de la Eliminación del Sarampión y la Rubéola, un nuevo grupo de expertos independientes que fueron designados en el 2019 y que orientarán el proceso de reverificación y seguimiento de la sostenibilidad de la eliminación.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.citation" : [ {
+                  "value" : "Marco regional para el seguimiento y la reverificación de la eliminación  del sarampión, la rubéola y el síndrome de rubéola congénita en la Región de las Américas.  Washington, D.C.; 2022. Organización Panamericana de la Salud. Licencia: CC BY-NC-SA 3.0 IGO.  https://doi.org/10.37774/9789275324066.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.doi" : [ {
+                  "value" : "https://doi.org/10.37774/9789275324066",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.isbn" : [ {
+                  "value" : "978-92-75-32405-9 (Impreso)",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "978-92-75-32406-6 (PDF)",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/56039",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "Attribution-NonCommercial-ShareAlike 3.0 IGO",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Programas de Inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Virus de la Rubéola",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Síndrome de Rubéola Congénita",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Vacunación",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Vacunas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Vacuna contra la Rubéola",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Vacuna Antisarampión",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "COVID-19",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                } ],
+                "dc.title" : [ {
+                  "value" : "Marco regional para el seguimiento y la reverificación de la eliminación del sarampión, la rubéola y el síndrome de rubéola congénita en la Región de las Américas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Procedures, manuals, guidelines",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Family, Health Promotion and Life Course (FPL)",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/55074",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2022-09-15T17:09:56.531+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/84b2a788-1d30-436e-9cef-d72fb44f3266"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : {
+            "dc.title" : [ "CE156/12, Rev. 2 - Plan <em>de</em> <em>acción</em> sobre <em>inmunización</em>" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "0425bf64-4882-4106-b2fe-f0b3c7797c90",
+              "uuid" : "0425bf64-4882-4106-b2fe-f0b3c7797c90",
+              "name" : "CE156/12, Rev. 2 - Plan de acción sobre inmunización",
+              "handle" : "10665.2/66139",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2025-04-11T21:04:39Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2025-04-11T21:04:39Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2015-06-26",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.govdoc" : [ {
+                  "value" : "CE156/12, Rev. 2",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/66139",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "CE156",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Comité Ejecutivo de la OPS",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.title" : [ {
+                  "value" : "CE156/12, Rev. 2 - Plan de acción sobre inmunización",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Governing Bodies documents",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.page" : [ {
+                  "value" : "25 p.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Washington, D.C.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "United States",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.relation.languageVersion" : [ {
+                  "value" : "10665.2/18820",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2025-05-14T03:31:03.440+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/0425bf64-4882-4106-b2fe-f0b3c7797c90"
+                }
+              }
+            }
+          }
+        } ]
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&page=1&size=10"
+        },
+        "last" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&page=122&size=10"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10,
+        "totalPages" : 123,
+        "totalElements" : 1228
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "213 p.",
+      "maxValue" : "Östlin, Piroska",
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/author?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/author?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Organización Panamericana de la Salud",
+          "count" : 1025,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.author=Organizaci%C3%B3n%20Panamericana%20de%20la%20Salud,equals"
+            }
+          }
+        }, {
+          "label" : "Pan American Health Organization",
+          "count" : 110,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.author=Pan%20American%20Health%20Organization,equals"
+            }
+          }
+        }, {
+          "label" : "Organización Panamericana de la Salud",
+          "count" : 14,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.author=Organizaci%C3%B3n%20Panamericana%20de%20la%20Salud,equals"
+            }
+          }
+        }, {
+          "label" : "Organização Pan-Americana da Saúde",
+          "count" : 12,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.author=Organiza%C3%A7%C3%A3o%20Pan-Americana%20da%20Sa%C3%BAde,equals"
+            }
+          }
+        }, {
+          "label" : "Durón, Regina",
+          "count" : 4,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.author=Dur%C3%B3n,%20Regina,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/subject?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/subject?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Américas",
+          "count" : 252,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.subject=Am%C3%A9ricas,equals"
+            }
+          }
+        }, {
+          "label" : "COVID-19",
+          "count" : 220,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.subject=COVID-19,equals"
+            }
+          }
+        }, {
+          "label" : "Cooperación Técnica",
+          "count" : 154,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.subject=Cooperaci%C3%B3n%20T%C3%A9cnica,equals"
+            }
+          }
+        }, {
+          "label" : "Consejo Directivo de la OPS",
+          "count" : 150,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.subject=Consejo%20Directivo%20de%20la%20OPS,equals"
+            }
+          }
+        }, {
+          "label" : "Inmunización",
+          "count" : 148,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.subject=Inmunizaci%C3%B3n,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "1902",
+      "maxValue" : "s.d.",
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/dateIssued?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "1920 - 1949",
+          "count" : 6,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.dateIssued=%5B1920%20TO%201949%5D,equals"
+            }
+          }
+        }, {
+          "label" : "1950 - 1979",
+          "count" : 111,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.dateIssued=%5B1950%20TO%201979%5D,equals"
+            }
+          }
+        }, {
+          "label" : "1980 - 2009",
+          "count" : 284,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.dateIssued=%5B1980%20TO%202009%5D,equals"
+            }
+          }
+        }, {
+          "label" : "2010 - 2026",
+          "count" : 824,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.dateIssued=%5B2010%20TO%202026%5D,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "has_content_in_original_bundle",
+      "facetType" : "standard",
+      "facetLimit" : 2,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/has_content_in_original_bundle?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=2"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 2
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "true",
+          "count" : 1226,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.has_content_in_original_bundle=true,equals"
+            }
+          }
+        }, {
+          "label" : "false",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.has_content_in_original_bundle=false,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/entityType?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "iswhotranslation",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/iswhotranslation?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "No",
+          "count" : 722,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.iswhotranslation=No,equals"
+            }
+          }
+        }, {
+          "label" : "yes",
+          "count" : 34,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.iswhotranslation=yes,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "statusmandates",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/statusmandates?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "No",
+          "count" : 7,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.statusmandates=No,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "city",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/city?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&page=1&size=10"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/city?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Washington, D.C.",
+          "count" : 631,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Washington,%20D.C.,equals"
+            }
+          }
+        }, {
+          "label" : "Washington, D.C",
+          "count" : 53,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Washington,%20D.C,equals"
+            }
+          }
+        }, {
+          "label" : "Buenos Aires",
+          "count" : 40,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Buenos%20Aires,equals"
+            }
+          }
+        }, {
+          "label" : "Rio de Janeiro",
+          "count" : 29,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Rio%20de%20Janeiro,equals"
+            }
+          }
+        }, {
+          "label" : "Ciudad de Panamá",
+          "count" : 21,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Ciudad%20de%20Panam%C3%A1,equals"
+            }
+          }
+        }, {
+          "label" : "La Habana",
+          "count" : 18,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=La%20Habana,equals"
+            }
+          }
+        }, {
+          "label" : "Asunción",
+          "count" : 17,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Asunci%C3%B3n,equals"
+            }
+          }
+        }, {
+          "label" : "Lima",
+          "count" : 15,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Lima,equals"
+            }
+          }
+        }, {
+          "label" : "Washington, DC",
+          "count" : 15,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Washington,%20DC,equals"
+            }
+          }
+        }, {
+          "label" : "Caracas",
+          "count" : 10,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.city=Caracas,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "country",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/country?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&page=1&size=10"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/country?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "United States",
+          "count" : 697,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=United%20States,equals"
+            }
+          }
+        }, {
+          "label" : "Argentina",
+          "count" : 40,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Argentina,equals"
+            }
+          }
+        }, {
+          "label" : "Brazil",
+          "count" : 35,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Brazil,equals"
+            }
+          }
+        }, {
+          "label" : "Panama",
+          "count" : 26,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Panama,equals"
+            }
+          }
+        }, {
+          "label" : "Cuba",
+          "count" : 22,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Cuba,equals"
+            }
+          }
+        }, {
+          "label" : "Paraguay",
+          "count" : 19,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Paraguay,equals"
+            }
+          }
+        }, {
+          "label" : "Mexico",
+          "count" : 15,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Mexico,equals"
+            }
+          }
+        }, {
+          "label" : "Peru",
+          "count" : 14,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Peru,equals"
+            }
+          }
+        }, {
+          "label" : "Dominican Republic",
+          "count" : 13,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Dominican%20Republic,equals"
+            }
+          }
+        }, {
+          "label" : "Venezuela, Bolivarian Republic Of",
+          "count" : 10,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.country=Venezuela,%20Bolivarian%20Republic%20Of,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "languageiso",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/languageiso?query=Datos%20de%20inmunizaci%C3%B3n%20evidencia%20para%20la%20acci%C3%B3n&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "es",
+          "count" : 1043,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.languageiso=es,equals"
+            }
+          }
+        }, {
+          "label" : "en",
+          "count" : 41,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.languageiso=en,equals"
+            }
+          }
+        }, {
+          "label" : "pt",
+          "count" : 16,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.languageiso=pt,equals"
+            }
+          }
+        }, {
+          "label" : "fr",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=Datos%2520de%2520inmunizaci%25C3%25B3n%2520evidencia%2520para%2520la%2520acci%25C3%25B3n&f.languageiso=fr,equals"
+            }
+          }
+        } ]
+      }
+    } ]
+  }
+}

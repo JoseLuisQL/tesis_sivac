@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "estado": "completado",
+    "version": "v02",
+    "destino": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+    "alcance": "Iteración editorial aislada de los seis pares DOCX/PDF; no sustituye v01, el paquete de catorce, el informe ni el expediente.",
+    "motor": "scripts/compiladores/paquete_campo_builder.py, modo --rediseno-fany --version-editorial v02; exportación Word COM y motor docx_quirurgico.py"
+  },
+  "comparativa_v01_v02": {
+    "paginas": [
+      {
+        "documento": "01_FICHA_TIEMPOS",
+        "paginas_v01": 2,
+        "paginas_v02": 2,
+        "delta_paginas": 0,
+        "sha256_pdf_v02": "2bdd35fdddd56efa9d8279fd99eebdf8aea656a0166eafdc76daccc07e5e63e0"
+      },
+      {
+        "documento": "02_FICHA_AUDITORIA_DOCUMENTAL",
+        "paginas_v01": 3,
+        "paginas_v02": 3,
+        "delta_paginas": 0,
+        "sha256_pdf_v02": "089c056c8c8b99326efeeca59ffb0a582dc3a9dc8c5fc79074db6c35f591bfc2"
+      },
+      {
+        "documento": "03_CUESTIONARIO_SATISFACCION_A",
+        "paginas_v01": 1,
+        "paginas_v02": 1,
+        "delta_paginas": 0,
+        "sha256_pdf_v02": "c4059274a5e36ad7089507aa9d4020a87edf58c72e74adcd710e6b7288439faf"
+      },
+      {
+        "documento": "04_MODULO_COMPLEMENTARIO_B_POST",
+        "paginas_v01": 1,
+        "paginas_v02": 1,
+        "delta_paginas": 0,
+        "sha256_pdf_v02": "d9cb76f80305a773ad6d588d8d730a9e005d909de1d742d1c37f01db89ac2bc0"
+      },
+      {
+        "documento": "00_INSTRUMENTOS_RECOLECCION_SIVAC",
+        "paginas_v01": 7,
+        "paginas_v02": 7,
+        "delta_paginas": 0,
+        "sha256_pdf_v02": "8921fcf957e7d2cc5c3e18bccae7ee327e6255489b60b970070a415cb68ba6b9"
+      },
+      {
+        "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+        "paginas_v01": 5,
+        "paginas_v02": 5,
+        "delta_paginas": 0,
+        "sha256_pdf_v02": "1c3d38efcdab066867517d340caf65678fc88459deede58951a7c74927108c9d"
+      }
+    ],
+    "total_paginas_v02": 19,
+    "cambios": [
+      {
+        "id": "V02-01",
+        "estado": "aplicada",
+        "detalle": "Cabecera institucional nativa de tres columnas sin bordes en todas las páginas y en las cuatro secciones del documento reunido; logos DrawingML inline, nunca anclados."
+      },
+      {
+        "id": "V02-02",
+        "estado": "aplicada",
+        "detalle": "Logotipo UNAJMA derivado con recorte de margen y marco externo; EPIS original. Altura visual común de 1.2 cm, sin deformación."
+      },
+      {
+        "id": "V02-03",
+        "estado": "aplicada",
+        "detalle": "Línea de control con rótulo del formulario a la izquierda y PAGE/NUMPAGES arriba a la derecha, con regla fina de separación."
+      },
+      {
+        "id": "V02-04",
+        "estado": "aplicada",
+        "detalle": "Rol y momento de aplicación en el cuerpo inicial de 01 a 04: observador, auditor o participante; sin fechas ni aplicación atribuida. En B se retiró el rótulo duplicado de aplicación."
+      },
+      {
+        "id": "V02-05",
+        "estado": "aplicada",
+        "detalle": "Campos de identificación marcados como administrativos en A y B; el investigador no se presenta como pregunta al participante."
+      },
+      {
+        "id": "V02-06",
+        "estado": "aplicada",
+        "detalle": "Bloques D rotulados como bloque de auditoría y campo separado para el número del documento revisado; códigos fuente intactos."
+      },
+      {
+        "id": "V02-07",
+        "estado": "aplicada",
+        "detalle": "Instrucciones del participante limitadas a marcar de 1 a 5 y confidencialidad; notas de puntaje o imputación retiradas de las hojas del participante."
+      }
+    ],
+    "sin_paginas_huerfanas": true,
+    "nota": "La Ficha 02 volvió a 3 páginas al impedir el quiebre de «N.° del documento revisado»; el conjunto reunido conserva 7 páginas y los apoyos 5."
+  },
+  "cabecera_institucional": {
+    "tabla_columnas_dxa": [
+      1900,
+      4988,
+      1900
+    ],
+    "columnas_laterales_iguales": true,
+    "alto_logo_cm": 1.2,
+    "alto_logo_pt": 34.0,
+    "distancia_cabecera_cm": 0.5,
+    "margen_superior_cm": 2.5,
+    "margenes_cm": {
+      "izquierdo": 3.0,
+      "derecho": 2.5,
+      "superior": 2.5,
+      "inferior": 2.5
+    },
+    "lineas": [
+      "UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS",
+      "Facultad de Ingeniería",
+      "Escuela Profesional de Ingeniería de Sistemas"
+    ],
+    "logos": {
+      "unajma_fuente": {
+        "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\LOGO-UNAJMA.jpg",
+        "sha256": "52ac000644b8dbd6ee631bc0537e2917a8c2353e1e7e11abb3c6a9c944f1de98",
+        "bytes": 263452
+      },
+      "unajma_derivado": {
+        "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\_assets\\LOGO-UNAJMA-recorte.png",
+        "sha256": "0750c44b86975e78f1e7827099a9cd6ffbf4bfbbf38e6595e02b79b55922ade1",
+        "bytes": 1687149,
+        "recorte_px": [
+          348,
+          154,
+          1707,
+          1914
+        ],
+        "criterio": "solo margen blanco y marco azul externo; escudo, símbolos y texto intactos"
+      },
+      "epis": {
+        "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\LOGO-EPIS.jpg",
+        "sha256": "7d1888ce844eca6c4812a58cf841b979be683f289bbcc692318057a754dd50d2",
+        "bytes": 14086
+      }
+    },
+    "posiciones_pdf": {
+      "inset_izquierdo_pt": 0.01,
+      "inset_derecho_pt": 0.0,
+      "diferencia_simetria_pt": 0.01,
+      "altura_logo_izquierdo_pt": 34.0,
+      "altura_logo_derecho_pt": 34.0,
+      "diferencia_altura_pt": 0.0,
+      "centro_vertical_diferencia_pt": 0.0,
+      "cabecera_bottom_pt": 63.91,
+      "cuerpo_top_pt": "71.37 en páginas con título; 74.91 a 75.27 en páginas que abren con tabla",
+      "separacion_cabecera_cuerpo_pt": "7.46 a 11.35",
+      "sin_solape_epis_paginacion": true,
+      "margen_superior_respetado": true
+    },
+    "auditoria_openxml": {
+      "secciones_reunido": 4,
+      "secciones_desvinculadas": true,
+      "imagenes_inline_por_seccion": 2,
+      "imagenes_ancla": 0,
+      "tablas_cabecera": 1,
+      "bordes_nil": true,
+      "flotacion": false,
+      "campos": [
+        "PAGE",
+        "NUMPAGES"
+      ],
+      "relaciones": [
+        {
+          "imagen": "UNAJMA",
+          "destino": "media/image1.png",
+          "cx_emu": 333573,
+          "cy_emu": 432000,
+          "aspecto": 0.77216
+        },
+        {
+          "imagen": "EPIS",
+          "destino": "media/image2.jpg",
+          "cx_emu": 432000,
+          "cy_emu": 432000,
+          "aspecto": 1.0
+        }
+      ]
+    }
+  },
+  "verificaciones": {
+    "cabecera_en_todas_las_paginas": true,
+    "altura_visual_uniforme": true,
+    "simetria_lateral": true,
+    "secciones_desvinculadas": true,
+    "imagenes_solo_inline": true,
+    "campos_nativos_page_numpages": true,
+    "A_una_pagina": true,
+    "B_una_pagina": true,
+    "A_campos_completos": true,
+    "B_campos_completos": true,
+    "reactivos_16_iguales": true,
+    "auditoria_motor_reunido": {
+      "tablas_total": 41,
+      "tablas_flotantes": 0,
+      "tablas_con_cantsplit": 41,
+      "cumple_apa7": true,
+      "hallazgos": []
+    },
+    "auditoria_motor_apoyos": {
+      "tablas_total": 19,
+      "tablas_flotantes": 0,
+      "tablas_con_cantsplit": 19,
+      "cumple_apa7": true,
+      "hallazgos": []
+    },
+    "dieciseis_reactivos_literales": true,
+    "campos_rd05_A": {
+      "Código de centro": true,
+      "Investigador": true,
+      "Observaciones del participante (opcional)": true
+    },
+    "campos_rd05_B": {
+      "Código de centro": true,
+      "Investigador": true,
+      "Observaciones del participante (opcional)": true
+    },
+    "observaciones_A_cm": 0.9,
+    "observaciones_B_cm": 0.9,
+    "sin_tokens_prohibidos": true,
+    "sin_desborde_inferior": true,
+    "fuente_minima_pt": 8.5,
+    "ancho_maximo_dxa": 8788
+  },
+  "instrucciones_participante_v02": {
+    "A": [
+      "Marque con una X una sola casilla por enunciado.",
+      "La escala va de 1 a 5: 1 es totalmente en desacuerdo y 5 es totalmente de acuerdo.",
+      "No escriba su nombre, apellido ni documento de identidad. Use solo el código que le entregue el investigador."
+    ],
+    "B": [
+      "Este módulo se aplica solo al final, después de haber usado SIVAC.",
+      "Marque con una X una sola casilla por enunciado, de 1 a 5.",
+      "No escriba su nombre, apellido ni documento de identidad. Use solo el código que le entregue el investigador."
+    ],
+    "nota": "Las reglas de puntaje, imputación o suma se concentran en la hoja de cierre de los apoyos del investigador."
+  },
+  "notas_retiradas_de_hojas_participante": [
+    "A: se retiró la nota sobre suma con el Módulo B y traslado del puntaje.",
+    "B: se retiró la nota sobre no imputación y el registro de módulo no aplicado.",
+    "Las reglas de puntaje, suma y no imputación permanecen en la hoja de cierre de los apoyos."
+  ],
+  "rotulos_auditoria_v02": {
+    "bloque": "Bloque de auditoría D-01 a D-08",
+    "campo_documento": "N.° del documento revisado",
+    "columnas_dxa": [
+      2450,
+      2144,
+      1400,
+      2794
+    ],
+    "nota": "D-01 identifica el bloque de auditoría, no un documento real; el número del documento se anota en el campo contiguo."
+  },
+  "inspeccion_visual": {
+    "paginas_renderizadas": [
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\01_FICHA_TIEMPOS_p001.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\01_FICHA_TIEMPOS_p002.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p001.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p002.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p003.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\03_CUESTIONARIO_SATISFACCION_A_p001.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\04_MODULO_COMPLEMENTARIO_B_POST_p001.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p001.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p002.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p003.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p004.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p005.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p006.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p007.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p001.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p002.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p003.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p004.png",
+      "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p005.png"
+    ],
+    "total_paginas_inspeccionadas": 19,
+    "hallazgos": [
+      "Los dos logotipos aparecen en las 19 páginas, incluidos los apoyos y las continuaciones.",
+      "El bloque institucional está centrado y la segunda línea lleva el rótulo del formulario a la izquierda y PAGE/NUMPAGES a la derecha.",
+      "No hay colisión entre el logotipo EPIS y la paginación; la separación mínima entre cabecera y cuerpo es 7.46 pt.",
+      "Las páginas 2, 3, 4, 5 y 7 del conjunto reunido cambian de rótulo por sección sin perder la cabecera.",
+      "A y B permanecen en una página; la Ficha 02 recuperó 3 páginas y no deja página huérfana."
+    ]
+  },
+  "archivos_v02": {
+    "documentos": [
+      {
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.docx",
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.pdf",
+        "paginas": 2,
+        "bytes_docx": 1742728,
+        "sha256_docx": "5c63bd4dbcce12eace9f1ab163fddf630aa2b96d308da5b28ad21afe8d921a92",
+        "bytes_pdf": 55870,
+        "sha256_pdf": "2bdd35fdddd56efa9d8279fd99eebdf8aea656a0166eafdc76daccc07e5e63e0"
+      },
+      {
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.pdf",
+        "paginas": 3,
+        "bytes_docx": 1744364,
+        "sha256_docx": "917121eec557bbbedd3f65b2adf2fcbd3b28956711a64c85e8f266c343833b86",
+        "bytes_pdf": 102800,
+        "sha256_pdf": "089c056c8c8b99326efeeca59ffb0a582dc3a9dc8c5fc79074db6c35f591bfc2"
+      },
+      {
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.docx",
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.pdf",
+        "paginas": 1,
+        "bytes_docx": 1741949,
+        "sha256_docx": "6eaf655c8b2e0df67c0dcdc9e62f388776e10700472e92be77bd0b3aa5b49130",
+        "bytes_pdf": 40849,
+        "sha256_pdf": "c4059274a5e36ad7089507aa9d4020a87edf58c72e74adcd710e6b7288439faf"
+      },
+      {
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.pdf",
+        "paginas": 1,
+        "bytes_docx": 1742095,
+        "sha256_docx": "bb10a79226d22d5f979186750efbe54e9390b12264bd423fd84f1fbef8bb4d3d",
+        "bytes_pdf": 41315,
+        "sha256_pdf": "d9cb76f80305a773ad6d588d8d730a9e005d909de1d742d1c37f01db89ac2bc0"
+      },
+      {
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+        "paginas": 7,
+        "bytes_docx": 1758179,
+        "sha256_docx": "ef6496079a5f830f19d6600e5b75f1af059b7eb204c359b05cba39cb9dad6ff4",
+        "bytes_pdf": 191766,
+        "sha256_pdf": "8921fcf957e7d2cc5c3e18bccae7ee327e6255489b60b970070a415cb68ba6b9"
+      },
+      {
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+        "paginas": 5,
+        "bytes_docx": 1745200,
+        "sha256_docx": "b3c5ec972652abe49abeb438afa3238e39133d3ecb08947ca3b638daefdf3a69",
+        "bytes_pdf": 159797,
+        "sha256_pdf": "1c3d38efcdab066867517d340caf65678fc88459deede58951a7c74927108c9d"
+      }
+    ],
+    "manifiesto": {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\MANIFIESTO.json",
+      "bytes": 115901,
+      "sha256": "d2feb42aaa89f91b28e3c0aa78c616db1b23ab71af18ee69366633c44ee59aed"
+    },
+    "renders": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual"
+  },
+  "preservacion": {
+    "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+    "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+    "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/_MANIFIESTO_EMISION.json": "f3053c809d5e2599973adefaf7263008d47951c4d7d6ef1e8fd2f61a4c101a87",
+    "salidas/documentos/informe_final_v19.docx": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/MANIFIESTO.json": "6bac57d7812f33d9df5d2acc49d6f130edb2fb952e9e889299a62fafaa856027",
+    "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/00_INSTRUMENTOS_RECOLECCION_SIVAC.docx": "4ea681eaf5b25cacf17d31346ff6151a6334d26bc091ba32bd50b5904f420c29",
+    "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf": "7c60c02a3a126343cc8dbb403be01842d564af98fdb043d49c917ae36438ff49",
+    "LOGO-UNAJMA.jpg": "52ac000644b8dbd6ee631bc0537e2917a8c2353e1e7e11abb3c6a9c944f1de98",
+    "LOGO-EPIS.jpg": "7d1888ce844eca6c4812a58cf841b979be683f289bbcc692318057a754dd50d2"
+  },
+  "pendientes": [
+    "Revisión visual del tesista y la asesora antes de imprimir.",
+    "Definir el modo de corpus antes del pretest.",
+    "Confirmar si el tesista autoriza reemplazar el paquete previo por esta iteración v02."
+  ]
+}

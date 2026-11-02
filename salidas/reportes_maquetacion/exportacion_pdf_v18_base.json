@@ -1,0 +1,20 @@
+{
+  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v18.docx",
+  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\_v18_base.pdf",
+  "metodo_exportacion": "ExportAsFixedFormat2",
+  "optimize_for_image_quality": true,
+  "paginas": 159,
+  "medicion_pdf": {
+    "paginas": 159,
+    "rect_primera": [
+      595.32,
+      841.92
+    ],
+    "imagenes": 49,
+    "dpi_min": 117.8,
+    "dpi_mediana": 199.8,
+    "dpi_max": 200.0
+  },
+  "sha256_docx": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+  "sha256_pdf": "ae44eb17545b6b514ebf8bc7fc7fcdb2631ce11eb005d5459ac198c55ef44c08"
+}

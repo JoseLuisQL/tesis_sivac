@@ -1,0 +1,1146 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "53120",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "580b5b69-3b5e-4abb-acf5-7a834c5c5305",
+              "uuid" : "580b5b69-3b5e-4abb-acf5-7a834c5c5305",
+              "name" : "Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas",
+              "handle" : "10665.2/53120",
+              "metadata" : {
+                "dc.contributor.author" : [ {
+                  "value" : "Mayer-Foulkes, David",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Serván-Mori, Edson",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Nigenda, Gustavo",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2020",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2020",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2020",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "[RESUMEN]. Para lograr los objetivos de desarrollo y salud sostenibles, es esencial incrementar las capacidades tecnológicas de las poblaciones más desfavorecidas. Entrado el siglo XXI, existen las tecnologías necesarias para ello. El déficit en capacidades tecnológicas se debe a la existencia de un gradiente tecnológico entre la producción de gran y de pequeña escalas, debido a la falta de incentivos para la innovación y la difusión en empresas y comunidades pequeñas. En estos ámbitos el cambio tecnológico, punto medular del desarrollo, es un bien público que la economía de mercado no provee eficientemente. Su provisión requiere la aplicación de políticas públicas de innovación y difusión tecnológicas. La reducción del gradiente tecnológico constituye, pues, parte medular de la Agenda 2030 para el Desarrollo Sostenible, de las Naciones Unidas, y la Agenda de Salud Sostenible para las Américas 2018-2030, de la Organización Panamericana de la Salud. Esto es aplicable, así mismo, al desarrollo de los sistemas de salud, que funcionan también como mecanismos de redistribución para romper las trampas de pobreza. Asimismo, las experiencias en esos sistemas tienen relevancia para aplicar políticas de incremento de capacidades tecnológicas que disminuyan la pobreza, mejoren los determinantes sociales de la salud y, con ello, reduzcan la magnitud de la trampa de desarrollo humano.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "[ABSTRACT]. In order to achieve the Sustainable Development and Health Goals, it is essential to increase the technological capacity of the most disadvantaged populations. In the 21st century, the necessary technologies for this exist. The gap in technological capacity reflects the existence of a technological gradient between large- and small-scale production, due to an absence of incentives for innovation and a lack of technological dissemination in small businesses and communities. Technological change is central to development, but it is a public good that the market economy does not provide efficiently. Providing it requires the implementation of public policies aimed at technological innovation and dissemination. Reducing the technological gradient is therefore a major part of the United Nations 2030 Agenda for Sustainable Development and the Pan American Health Organization’s 2018-2030 Sustainable Health Agenda for the Americas. This also applies to the development of health systems, which function as a redistribution mechanism to break poverty traps. In addition, experiences in these systems are relevant to the implementation of policies that increase technological capacities aimed at reducing poverty, improving social determinants of health, and thereby reducing the scale of the human development trap.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "[RESUMO]. Para alcançar os objetivos de desenvolvimento e saúde sustentáveis, é fundamental aumentar a capacidade tecnológica das populações mais desfavorecidas. Com a entrada do século XXI, há tecnologias necessárias para isso. O déficit em capacidade tecnológica decorre de um gradiente tecnológico entre a produção em pequena e larga escala pela falta de incentivos à inovação e difusão em empresas e comunidades pequenas. Nestas esferas, a evolução tecnológica, que é o eixo do desenvolvimento, é um bem público que não é provido de forma eficiente pela economia de mercado. Políticas públicas de inovação e difusão tecnológicas são necessárias. Diminuir o gradiente tecnológico constitui, portanto, a base da Agenda 2030 para o Desenvolvimento Sustentável, da Agenda das Nações Unidas e da Agenda de Saúde Sustentável para as Américas 2018-2030 da Organização Pan-Americana da Saúde. Requer também o desenvolvimento dos sistemas de saúde que servem como mecanismos de redistribuição para romper com as armadilhas da pobreza. Ademais, a experiência adquirida nesses sistemas é indispensável para instituir políticas de aumento da capacidade tecnológica que diminuam a pobreza, melhorem os determinantes sociais da saúde e, assim, reduzam a dimensão da armadilha do desenvolvimento humano.",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.identifier.citation" : [ {
+                  "value" : "Mayer-Foulker D, Serván-Mori E, Nigenda G. Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas. Rev Panam Salud Publica. 2020;44:e141. https://doi.org/10.26633/RPSP.2020.141",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.doi" : [ {
+                  "value" : "https://doi.org/10.26633/RPSP.2020.141",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.issn" : [ {
+                  "value" : "1680 5348",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/53120",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofjournal" : [ {
+                  "value" : "Revista Panamericana de Salud Pública",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Pan American Journal of Public Health",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Rev Panam Salud Pública;44, dic. 2020",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "Attribution-NonCommercial-NoDerivs 3.0 IGO",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://creativecommons.org/licenses/by-nc-nd/3.0/igo/",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Ciencia, Tecnología y Sociedad",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Desarrollo Sostenible",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Equidad",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Sistemas de Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Política de Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Determinantes Sociales de la Salud",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Science, Technology and Society",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Sustainable Development",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Equity",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                }, {
+                  "value" : "Health Systems",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 9
+                }, {
+                  "value" : "Health Policy",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 10
+                }, {
+                  "value" : "Social Determinants of Health",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 11
+                }, {
+                  "value" : "Ciência, Tecnologia e Sociedade",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 12
+                }, {
+                  "value" : "Desenvolvimento Sustentável",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 13
+                }, {
+                  "value" : "Equidade",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 14
+                }, {
+                  "value" : "Sistemas de Saúde",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 15
+                } ],
+                "dc.title" : [ {
+                  "value" : "Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "The Sustainable Development Goals and Technological Capacity",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Os Objetivos de Desenvolvimento Sustentável e a capacidade tecnológica",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.type" : [ {
+                  "value" : "Journal articles",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.articletype" : [ {
+                  "value" : "Opinion and analysis",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "US1.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-11-19T03:37:11.585+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "b7e675f6-9089-49ad-9b8e-395a76f257f6",
+              "uuid" : "b7e675f6-9089-49ad-9b8e-395a76f257f6",
+              "name" : "Los murciélagos y la salud pública : Estudio con especial referencia a Puerto Rico",
+              "handle" : "10665.2/11612",
+              "metadata" : {
+                "dc.contributor.author" : [ {
+                  "value" : "Tamsitt, J. R",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Valdivieso, Dario",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2015",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2015",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "s.d.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "1970",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/11612",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.relation.ispartofseries" : [ {
+                  "value" : "Boletín de la Oficina Sanitaria Panamericana (OSP);69(2),ago. 1970",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : "",
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Quirópteros",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Saúde Pública",
+                  "language" : "pt_BR",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Vetores de Doenças",
+                  "language" : "pt_BR",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Reservatórios de Doenças",
+                  "language" : "pt_BR",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Raiva",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Rickettsia",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Infecções Bacterianas",
+                  "language" : "pt_BR",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Infecções por Protozoários",
+                  "language" : "pt_BR",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Helmintíase",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                }, {
+                  "value" : "Controle de Pragas",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 9
+                }, {
+                  "value" : "Porto Rico",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 10
+                } ],
+                "dc.title" : [ {
+                  "value" : "Los murciélagos y la salud pública : Estudio con especial referencia a Puerto Rico",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.title.alternative" : [ {
+                  "value" : "Bats and public health : A review with special reference to Puerto Rico",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Journal articles",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2015-12-08T05:06:58.382+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/b7e675f6-9089-49ad-9b8e-395a76f257f6"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "58da4e39-d793-4b33-b177-5951120ce87b",
+              "uuid" : "58da4e39-d793-4b33-b177-5951120ce87b",
+              "name" : "RILAA 7. 7a Asamblea Ordinaria de la Red Interamericana de Laboratorios de Análisis de Alimentos: Informe Final (Jiutepec, 28-31 oct. 2014)",
+              "handle" : "10665.2/50947",
+              "metadata" : {
+                "dc.contributor.corporatename" : [ {
+                  "value" : "Organización Panamericana de la Salud",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2019",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2014",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "[Apertura de la Asamblea] La Séptima Asamblea de la Red Interamericana de Laboratorios de Análisis de Alimentos (RILAA) se reunió en la ciudad de Jiutepec, Morelos, México, 28 al 31 de octubre de 2014. En la ceremonia de apertura hicieron uso de la palabra EL Dr. Juan Gay Gutiérrez, Director del Centro Nacional de Servicios de Constatación en Salud Animal de México; la Lic. Patricia Alejandra Gatti, Presidenta del Comité Ejecutivo de la RILAA; el Dr. Enrique Pérez Gutiérrez, Asesor en Inocuidad de Alimentos y Zoonosis de OPS/OMS y el Dr. Joaquín Delgadillo Álvarez, Director General de Salud Animal de SENASICA de México, quien declaró inaugurada la 7 a Asamblea de la RILAA. También integraron la mesa de honor la Dra. Armida Zúniga, Comisionada de la CCAYAC de México y el Lic. Jorge Eduardo Torroba de la Secretaría ex officio de la OPS/OMS de la RILAA.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.tableofcontents" : [ {
+                  "value" : "Apertura de la Asamblea | Instalación de la Mesa de la Asamblea| Aprobación de la Agenda | Informe de la Ejecución del Plan de Acción 2013-2014 | Discusión y Aprobación de los Informes | Propuesta de vinculación de la RILAA a FOSCOLLAB | Redes WHO-GFN y PulseNet América Latina y el Caribe | Ceremonia de Reconocimiento | Metrología química, materiales de referencia y trazabilidad | Informe sobre la orientación ISO 17025 | Criterios para la aceptación de laboratorios No Gubernamentales como miembros de la RILAA | Informe sobre las acciones para el financiamiento de la RILAA | Informe de las Redes Nacionales | Elaboración del Plan de Acción 2015-2016 de la RILAA | Renovación de los miembros del Comité Ejecutivo y de los Facilitadores de los Grupos Técnicos | Primera reunión del Comité Ejecutivo para definir su organización interna | Definición del lugar y fecha de la 8° Asamblea Ordinaria | Ceremonia de Reconocimiento a los Facilitadores, Miembros Salientes del Comité Ejecutivo y Contribuciones Extraordinarias | Aprobación del Informe de la 7a Asamblea | Cierre de la Asamblea.",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://iris.paho.org/handle/10665.2/50947",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "es",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "OPS",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.holder" : [ {
+                  "value" : "Pan American Health Organization",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "RILAA",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Análisis de los Alimentos",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Laboratorios",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Calidad de los Alimentos",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Inocuidad de los Alimentos",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Américas",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                } ],
+                "dc.title" : [ {
+                  "value" : "RILAA 7. 7a Asamblea Ordinaria de la Red Interamericana de Laboratorios de Análisis de Alimentos: Informe Final (Jiutepec, 28-31 oct. 2014)",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Meeting reports",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.contributor.department" : [ {
+                  "value" : "Centro Panamericano de Fiebre Aftosa y Salud Pública Veterinaria (PANAFTOSA)",
+                  "language" : "es_ES",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.isfeatured" : [ {
+                  "value" : "0",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.iswhotranslation" : [ {
+                  "value" : "No",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.city" : [ {
+                  "value" : "Rio de Janeiro",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.publisher.country" : [ {
+                  "value" : "Brazil",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.source.centercode" : [ {
+                  "value" : "BR680.1",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "paho.subject" : [ {
+                  "value" : "Cat 1. Communicable Diseases",
+                  "language" : "en_US",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2021-03-21T01:40:01.875+00:00",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/relationships"
+                },
+                "version" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/thumbnail"
+                },
+                "relateditemlistconfigs" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b/relateditemlistconfigs"
+                },
+                "self" : {
+                  "href" : "https://iris.paho.org/server/api/core/items/58da4e39-d793-4b33-b177-5951120ce87b"
+                }
+              }
+            }
+          }
+        } ]
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&page=1&size=3"
+        },
+        "last" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&page=1&size=3"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&size=3"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 3,
+        "totalPages" : 2,
+        "totalElements" : 5
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "213 p.",
+      "maxValue" : "Östlin, Piroska",
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/author?query=53120&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/author?query=53120&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Organización Panamericana de la Salud",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.author=Organizaci%C3%B3n%20Panamericana%20de%20la%20Salud,equals"
+            }
+          }
+        }, {
+          "label" : "Mayer-Foulkes, David",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.author=Mayer-Foulkes,%20David,equals"
+            }
+          }
+        }, {
+          "label" : "Nigenda, Gustavo",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.author=Nigenda,%20Gustavo,equals"
+            }
+          }
+        }, {
+          "label" : "Serván-Mori, Edson",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.author=Serv%C3%A1n-Mori,%20Edson,equals"
+            }
+          }
+        }, {
+          "label" : "Tamsitt, J. R",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.author=Tamsitt,%20J.%20R,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "_links" : {
+        "next" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/subject?query=53120&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/subject?query=53120&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Américas",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.subject=Am%C3%A9ricas,equals"
+            }
+          }
+        }, {
+          "label" : "Análisis de los Alimentos",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.subject=An%C3%A1lisis%20de%20los%20Alimentos,equals"
+            }
+          }
+        }, {
+          "label" : "Calidad de los Alimentos",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.subject=Calidad%20de%20los%20Alimentos,equals"
+            }
+          }
+        }, {
+          "label" : "Inocuidad de los Alimentos",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.subject=Inocuidad%20de%20los%20Alimentos,equals"
+            }
+          }
+        }, {
+          "label" : "Laboratorios",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.subject=Laboratorios,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "1902",
+      "maxValue" : "s.d.",
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/dateIssued?query=53120&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "1950 - 1979",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.dateIssued=%5B1950%20TO%201979%5D,equals"
+            }
+          }
+        }, {
+          "label" : "2010 - 2026",
+          "count" : 4,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.dateIssued=%5B2010%20TO%202026%5D,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "has_content_in_original_bundle",
+      "facetType" : "standard",
+      "facetLimit" : 2,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/has_content_in_original_bundle?query=53120&size=2"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 2
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "true",
+          "count" : 5,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.has_content_in_original_bundle=true,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/entityType?query=53120"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "iswhotranslation",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/iswhotranslation?query=53120&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "No",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.iswhotranslation=No,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "statusmandates",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/statusmandates?query=53120"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "city",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/city?query=53120&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Rio de Janeiro",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.city=Rio%20de%20Janeiro,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "country",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/country?query=53120&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Brazil",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.country=Brazil,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "languageiso",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "_links" : {
+        "self" : {
+          "href" : "https://iris.paho.org/server/api/discover/facets/languageiso?query=53120&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "es",
+          "count" : 4,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://iris.paho.org/server/api/discover/search/objects?query=53120&f.languageiso=es,equals"
+            }
+          }
+        } ]
+      }
+    } ]
+  }
+}

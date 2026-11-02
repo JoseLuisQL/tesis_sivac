@@ -1,0 +1,39 @@
+{
+  "metadatos": {
+    "documento_base": "salidas/documentos/informe_final_v11.docx",
+    "fecha_emision": "2026-10-21",
+    "agente": "director-general",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "motivo": "Correccion de integridad: la denominacion 'Almacen Especializado de Vacunas de la Red Chanka' no consta en el padron de centros ni en el resto del documento. El padron datos/schemas/centros_acopio_reales_sivac.json registra el establecimiento como 'ALMACEN (CHANKA)' con red 'SEDE CENTRAL DISA'. Se sustituye la adscripcion inferida por la que consta en la fuente.",
+    "fuente_verificacion": "datos/schemas/centros_acopio_reales_sivac.json (19 registros; el almacen figura en la red SEDE CENTRAL DISA)",
+    "ordenes_emitidas": 3,
+    "resultado_esperado": "3 aplicadas, 0 omitidas, 0 fallidas.",
+    "nota": "Las tres anclas son identicas en su segmento minimo 'Almacen Especializado de Vacunas de la Red Chanka', por lo que cada orden se resuelve por ubicacion de parrafo y no por unicidad global. La Tabla 30 ya emplea la denominacion 'Almacen Especializado de Vacunas (Chanka)', concordante con el padron, y no requiere cambio."
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 151,
+      "ubicacion": "PARRAFO 151",
+      "ancla_original": "dos operadores del Almacén Especializado de Vacunas de la Red Chanka",
+      "texto_nuevo": "dos operadores del Almacén Especializado de Vacunas (Chanka) de la sede central",
+      "categoria": "integridad_padron",
+      "justificacion": "El padron adscribe el almacen a la sede central de la DISA, no a una red nominal. Se conserva el identificador (Chanka) que consta en la fuente y se retira la adscripcion inferida."
+    },
+    {
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "ancla_original": "dos operadores en el Almacén Especializado de Vacunas de la Red Chanka",
+      "texto_nuevo": "dos operadores en el Almacén Especializado de Vacunas (Chanka) de la sede central",
+      "categoria": "integridad_padron",
+      "justificacion": "Misma operacion que en el parrafo 151. El resto de la enumeracion censal permanece intacto."
+    },
+    {
+      "indice_docx": 579,
+      "ubicacion": "PARRAFO 579",
+      "ancla_original": "los 2 operadores del Almacén Especializado de Vacunas de la Red Chanka",
+      "texto_nuevo": "los 2 operadores del Almacén Especializado de Vacunas (Chanka) de la sede central",
+      "categoria": "integridad_padron",
+      "justificacion": "Misma operacion. No se altera la cifra de operadores ni la regla de agregacion pareada."
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v15.docx",
+    "documento_base_sha256": "7c79eb03e2875f5f007c982a946fa84feaa48e4aef1009f717c7163cb9aa2ff1",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "squad": "Squad E - Redacción, Estilo y Maquetación Editorial",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Convertir en órdenes quirúrgicas el dictamen de integridad bibliográfica (dos alertas críticas, cuatro ajustes de lista, una cita huérfana) y erradicar los códigos de base de datos de los encabezados de las matrices de anexo.",
+    "fuente_del_dictamen": "salidas/reportes_maquetacion/pendientes_bibliograficos_v12.json (verificador-integridad, 32958 bytes, veredicto OBSERVADO_SUBSANIBLE)",
+    "base_de_trabajo": "Si la v15 ya estuviera compilada, este expediente se aplica sin cambios: el complemento notacional solo modificó cuatro celdas de las Tablas 41 y 42 y ningún párrafo de texto, de modo que todos los índices se conservan.",
+    "total_ordenes": 77,
+    "recuento_por_familia": {
+      "A_referencias_y_citas": 16,
+      "B_codigo_de_rol_tabla_3": 1,
+      "C_encabezados_matrices_52_53": 60
+    },
+    "detalle_por_familia": {
+      "A_referencias_y_citas": {
+        "addy": 4,
+        "ops_path": 5,
+        "balon_morejon": 1,
+        "iso_iec_25010": 1,
+        "minsa": 1,
+        "quispe_tello": 4
+      },
+      "B_codigo_de_rol_tabla_3": 1,
+      "C_encabezados_matrices_52_53": {
+        "tabla_52": 30,
+        "tabla_53": 30,
+        "nota": "Seis columnas simples y doce etiquetas compuestas resueltas en dos órdenes cada una, por el salto interno de la celda."
+      }
+    },
+    "verificaciones_sin_orden": [
+      {
+        "registro": "Holm (1979), P750",
+        "veredicto": "La entrada ya está sin enlace y es correcta. No se emite orden. El DOI 10.2307/4615733 no existe y la URL de JSTOR no es un enlace estable; se confirma la decisión de citar sin enlace."
+      },
+      {
+        "registro": "Razali y Wah (2011), P768",
+        "veredicto": "La entrada ya está sin enlace. No se emite orden. La revista no está indexada en Crossref ni en OpenAlex; APA 7 admite la referencia sin URL."
+      },
+      {
+        "registro": "Mego Navarro (2021), P759",
+        "veredicto": "El 403 es un desafío anti-bot; el handle sigue registrado. No se emite orden."
+      }
+    ],
+    "decisiones_editoriales": [
+      "Las entradas largas no se sustituyen en bloque: se fragmentan en anclas cortas que contienen exactamente el tramo que cambia. El aplicador exige unicidad del fragmento y un ancla de trescientas palabras multiplica el riesgo de desvío tipográfico sin aportar precisión.",
+      "Addy: se elimina el localizador «p. 2» en lugar de corregirlo. El dictamen sitúa la afirmación en las páginas impresas 8 a 10, pero esa atribución no fue verificada por el redactor y no se escribe un localizador no comprobado. Si el tesista desea conservarlo, debe verificarse contra el PDF antes de reincorporarlo.",
+      "OPS y PATH: se adopta la entrada definitiva del dictamen, con año 2019, subtítulo completo y handle 50482; se elimina «OPS.» como editorial porque coincide con el autor corporativo y se aplica mayúscula inicial solo a la primera palabra del título y del subtítulo, conforme a la sentencia de mayúsculas de APA 7.",
+      "Quispe Tello: se añade repositorio y handle, y se sustituye «Fany (2024)» por «Quispe Tello (2024, p. 62)», que restablece la correspondencia 1:1 entre lista y cuerpo.",
+      "Encabezados de matriz: se conservan los símbolos de indicador que el cuerpo ya emplea (T_reg, T_vale, RSD, CPE, AP, UP, TAM) y se traducen solo los códigos de base de datos. Las tablas 10 a 24 no se tocan: documentan el esquema real de PostgreSQL y ahí el snake_case es evidencia, no descuido."
+    ],
+    "observaciones_de_geometria": {
+      "encabezados_con_salto_interno": "Ocho etiquetas de cada matriz contienen un salto entre el prefijo y el número, o entre el prefijo y el sustantivo: «ap_ 01», «up_ 01», «score_ ap», «score_ tam_total», «nivel_ satisfaccion». El aplicador localiza la celda con el texto normalizado, pero reemplaza sobre el texto concatenado de los nodos w:t, donde el salto no existe. Por eso cada etiqueta se resuelve en dos órdenes consecutivas sobre la misma celda: la primera retira el prefijo codificado y la segunda completa la etiqueta. Ambas están emitidas y declaradas.",
+      "residuo_de_salto": "El salto interno permanece en el OpenXML y no se elimina con sustitución de texto: la etiqueta se leerá en dos líneas, que es como ya está compuesta hoy. Si el maquetador prefiere una sola línea, debe retirar el salto en el pase de saneamiento, junto con los espacios finales; no se emite orden para ello porque el motor de reemplazo no distingue el antes del después.",
+      "anchura": "Ninguna etiqueta nueva supera los veinte caracteres y la más larga es «de satisfacción», que ocupa la segunda línea de una celda ya partida en dos."
+    },
+    "pendientes_o_verificar": [
+      "OPS y PATH: el dictamen identifica dos citas del cuerpo (P265 y P325), pero el borrador de trabajo mostraba cuatro ocurrencias del sintagma. Las órdenes usan el ancla corta «y PATH, 2020», que alcanza también la variante con la sigla intercalada. Si alguna ocurrencia sobrevive, quedará en desacuerdo con la entrada de 2019 y debe repetirse el control 1:1 tras aplicar el expediente.",
+      "P177 y P625: las dos citas recomendadas se emiten con anclas cortas y literales. Si el texto hubiera cambiado, el aplicador las reportará como fallidas y bastará con no forzarlas: la correspondencia 1:1 queda igualmente cerrada por la orden de P630.",
+      "Addy: si el tesista quiere localizador, verificar antes las páginas impresas 8 a 10 del PDF de IJLSI; el rango 1-25 que figura en la entrada corresponde a la paginación del archivo y no se altera.",
+      "Tabla 3: la columna de la celda se declara como 2. Si el rol ocupara otra celda, el motor reubica por fila al existir una sola coincidencia."
+    ],
+    "instrucciones_aplicacion": {
+      "comando_verificacion": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v14.docx --salida salidas/documentos/informe_final_v15.docx --json salidas/reportes_maquetacion/correcciones_bibliograficas_v14.json --reporte salidas/reportes_maquetacion/aplicacion_correcciones_bibliograficas_v15.json --solo-verificar",
+      "resultado_esperado": "77 aplicadas y 0 fallidas.",
+      "verificacion_posterior": [
+        "Ninguna entrada declara coautores inexistentes ni un año distinto del verificado.",
+        "Ninguna URL de la lista devuelve 404 en la fecha de cierre.",
+        "Correspondencia 1:1: cincuenta y tres entradas y cincuenta y tres citas activas, con Quispe Tello entre ellas.",
+        "Los encabezados de las tablas 52 y 53 no contienen ningún guion bajo."
+      ]
+    },
+    "depuracion": {
+      "fecha": "2026-10-21",
+      "ordenes_retiradas": 2,
+      "detalle": [
+        "P761 (lista de referencias, MINSA): pretendía sustituir la URL 3576882 por la 3642636. El ensayo dio cero ocurrencias del ancla: la entrada no porta enlace y el editorial ya estaba corregido.",
+        "P630 (validez de instrumentos): declaraba el ancla «de Fany (2024) adoptado», forma que el documento ya no conserva porque la sustitución del nombre de pila se ejecutó con anterioridad. La corrección se reemite en el complemento con el ancla vigente y el localizador de página."
+      ],
+      "recuento_original": 77,
+      "recuento_depurado": 75
+    }
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 726,
+      "ubicacion": "PÁRRAFO 726 (lista de referencias, Addy) - autoría y año",
+      "ancla_original": "Addy, A., Ajayi, O., y Mensah, K. (2024).",
+      "texto_nuevo": "Addy, A. (2023).",
+      "categoria": "referencia",
+      "justificacion": "El artículo es de autor único (Alfred Addy) y se publicó en 2023, vol. 5, n.º VI, pp. 1701-1705. Se eliminan los coautores inexistentes y se corrige el año."
+    },
+    {
+      "indice_docx": 726,
+      "ubicacion": "PÁRRAFO 726 (lista de referencias, Addy) - enlace",
+      "ancla_original": ", 5(6), 1–25.",
+      "texto_nuevo": ", 5(6), 1–25. https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana",
+      "categoria": "referencia",
+      "justificacion": "La revista no asigna DOI; la URL del artículo en IJLSI es el único identificador verificable y devuelve el texto completo."
+    },
+    {
+      "indice_docx": 260,
+      "ubicacion": "PÁRRAFO 260 (cita de Addy en el planteamiento)",
+      "ancla_original": "Addy et al., 2024, p. 2",
+      "texto_nuevo": "Addy, 2023",
+      "categoria": "cita",
+      "justificacion": "Autor único: la forma «et al.» es incorrecta y el año es 2023. Se elimina el localizador no verificado."
+    },
+    {
+      "indice_docx": 327,
+      "ubicacion": "PÁRRAFO 327 (cita de Addy en las bases teóricas)",
+      "ancla_original": "Addy et al., 2024, p. 2",
+      "texto_nuevo": "Addy, 2023",
+      "categoria": "cita",
+      "justificacion": "Misma corrección en la segunda cita del cuerpo."
+    },
+    {
+      "indice_docx": 765,
+      "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - año",
+      "ancla_original": "PATH. (2020).",
+      "texto_nuevo": "PATH. (2019).",
+      "categoria": "referencia",
+      "justificacion": "El documento verificado es de 2019; el handle 53120 resuelve a un artículo ajeno de Mayer-Foulkes."
+    },
+    {
+      "indice_docx": 765,
+      "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - uso de mayúsculas",
+      "ancla_original": "inmunización: Evidencia para la acción",
+      "texto_nuevo": "inmunización: evidencia para la acción",
+      "categoria": "referencia",
+      "justificacion": "APA 7 aplica mayúscula inicial a la primera palabra del título y del subtítulo; «Evidencia» es la segunda palabra del subtítulo y va en minúscula."
+    },
+    {
+      "indice_docx": 765,
+      "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - subtítulo, editorial y handle",
+      "ancla_original": "para la inmunización. OPS. https://iris.paho.org/handle/10665.2/53120",
+      "texto_nuevo": "para la inmunización. Evidencia de los países bajos y medianos ingresos. https://iris.paho.org/handle/10665.2/50482",
+      "categoria": "referencia",
+      "justificacion": "Se restituye el subtítulo omitido, se suprime «OPS.» como editorial duplicada del autor corporativo y se corrige el handle al del documento real."
+    },
+    {
+      "indice_docx": 265,
+      "ubicacion": "PÁRRAFO 265 (primera cita de OPS y PATH)",
+      "ancla_original": "y PATH, 2020",
+      "texto_nuevo": "y PATH, 2019",
+      "categoria": "cita",
+      "justificacion": "Año corregido conforme al documento verificado. El ancla corta alcanza también la variante que intercala la sigla entre el autor corporativo y la conjunción."
+    },
+    {
+      "indice_docx": 325,
+      "ubicacion": "PÁRRAFO 325 (segunda cita de OPS y PATH)",
+      "ancla_original": "y PATH, 2020",
+      "texto_nuevo": "y PATH, 2019",
+      "categoria": "cita",
+      "justificacion": "Año corregido conforme al documento verificado."
+    },
+    {
+      "indice_docx": 730,
+      "ubicacion": "PÁRRAFO 730 (lista de referencias, Balón Morejón)",
+      "ancla_original": "UPSE. https://hdl.handle.net/46000/9257",
+      "texto_nuevo": "UPSE.",
+      "categoria": "referencia",
+      "justificacion": "El handle 46000/9257 devuelve 404 y el prefijo no está registrado en el resolver global. Se prefiere una referencia sin enlace antes que un identificador muerto; no se inventa sustituto."
+    },
+    {
+      "indice_docx": 753,
+      "ubicacion": "PÁRRAFO 753 (lista de referencias, ISO/IEC 25010)",
+      "ancla_original": "Standardization, y International",
+      "texto_nuevo": "Standardization, e International",
+      "categoria": "referencia",
+      "justificacion": "Regla ortográfica del español: la conjunción copulativa se escribe «e» ante palabra que empieza por sonido de i. La URL oficial se conserva."
+    },
+    {
+      "indice_docx": 767,
+      "ubicacion": "PÁRRAFO 767 (lista de referencias, Quispe Tello)",
+      "ancla_original": "José María Arguedas].",
+      "texto_nuevo": "José María Arguedas]. Repositorio Institucional UNAJMA. https://hdl.handle.net/20.500.14168/854",
+      "categoria": "referencia",
+      "justificacion": "Se añade el repositorio y el handle institucional verificado, que resuelve a la tesis modelo."
+    },
+    {
+      "indice_docx": 177,
+      "ubicacion": "PÁRRAFO 177 (justificación metodológica)",
+      "ancla_original": "Hernández-Sampieri et al. (2014, p. 141), adaptado a",
+      "texto_nuevo": "Hernández-Sampieri et al. (2014, p. 141) y el diseño preexperimental de un solo grupo adoptado por Quispe Tello (2024, p. 36), adaptado a",
+      "categoria": "cita",
+      "justificacion": "Refuerza la atribución del diseño preexperimental a la tesis modelo. Cita recomendada por el dictamen y condicionada a que el ancla se sostenga en la v14."
+    },
+    {
+      "indice_docx": 625,
+      "ubicacion": "PÁRRAFO 625 (validez de instrumentos)",
+      "ancla_original": "y Claridad (Sí/No).",
+      "texto_nuevo": "y Claridad (Sí/No) (Quispe Tello, 2024, p. 62).",
+      "categoria": "cita",
+      "justificacion": "Documenta que el certificado de validez reproduce el Anexo 2 de la tesis modelo."
+    },
+    {
+      "indice_docx": 3,
+      "ubicacion": "TABLA 3, fila 3, columna 2",
+      "ancla_original": "Centro de Acopio (responsable_acopio)",
+      "texto_nuevo": "centro de acopio",
+      "categoria": "codigo_interno",
+      "justificacion": "El paréntesis es el nombre de la columna en la base de datos y no pertenece al texto académico. El rol queda como «Responsable de centro de acopio»."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 1",
+      "ancla_original": "sujeto_id",
+      "texto_nuevo": "Sujeto",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se sustituye el nombre de la columna por la etiqueta académica."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 2",
+      "ancla_original": "centro_acopio",
+      "texto_nuevo": "Centro de acopio",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se traduce el código de columna a lenguaje natural."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 3",
+      "ancla_original": "t_reg",
+      "texto_nuevo": "T_reg (min)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se adopta el símbolo del indicador que usa el cuerpo y se declara la unidad."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 4",
+      "ancla_original": "t_vale",
+      "texto_nuevo": "T_vale (min)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 5",
+      "ancla_original": "rsd",
+      "texto_nuevo": "RSD (%)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad porcentual."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 6",
+      "ancla_original": "cpe",
+      "texto_nuevo": "CPE (%)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad porcentual."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 7",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Primera de las dos órdenes que resuelven la etiqueta compuesta «ap_ 01»: se elimina el prefijo codificado."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 7",
+      "ancla_original": "01",
+      "texto_nuevo": "1",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: se retira el relleno con cero y la etiqueta queda AP 1."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 8",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del segundo ítem de aceptación del proceso."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 8",
+      "ancla_original": "02",
+      "texto_nuevo": "2",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 9",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del tercer ítem de aceptación del proceso."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 9",
+      "ancla_original": "03",
+      "texto_nuevo": "3",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 10",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del cuarto ítem de aceptación del proceso."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 10",
+      "ancla_original": "04",
+      "texto_nuevo": "4",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 11",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del primer ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 11",
+      "ancla_original": "01",
+      "texto_nuevo": "1",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 12",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del segundo ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 12",
+      "ancla_original": "02",
+      "texto_nuevo": "2",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 13",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del tercer ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 13",
+      "ancla_original": "03",
+      "texto_nuevo": "3",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 14",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del cuarto ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 14",
+      "ancla_original": "04",
+      "texto_nuevo": "4",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "ancla_original": "score_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Puntaje total de aceptación del proceso: se elimina el prefijo codificado."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "ancla_original": "ap",
+      "texto_nuevo": "total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda AP total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "ancla_original": "score_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Puntaje total de utilidad percibida."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "ancla_original": "up",
+      "texto_nuevo": "total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda UP total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "ancla_original": "score_",
+      "texto_nuevo": "TAM",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Puntaje global del modelo de aceptación tecnológica."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "ancla_original": "tam_total",
+      "texto_nuevo": "total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda TAM total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "ancla_original": "nivel_",
+      "texto_nuevo": "Nivel",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Nivel de satisfacción del usuario: se elimina el prefijo codificado."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "ancla_original": "satisfaccion",
+      "texto_nuevo": "de satisfacción",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: se restituye la tilde y la etiqueta queda Nivel de satisfacción."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 1",
+      "ancla_original": "sujeto_id",
+      "texto_nuevo": "Sujeto",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado de la segunda matriz de anexo: misma etiqueta académica."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 2",
+      "ancla_original": "centro_acopio",
+      "texto_nuevo": "Centro de acopio",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se traduce el código de columna a lenguaje natural."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 3",
+      "ancla_original": "t_reg",
+      "texto_nuevo": "T_reg (min)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 4",
+      "ancla_original": "t_vale",
+      "texto_nuevo": "T_vale (min)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 5",
+      "ancla_original": "rsd",
+      "texto_nuevo": "RSD (%)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad porcentual."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 6",
+      "ancla_original": "cpe",
+      "texto_nuevo": "CPE (%)",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Símbolo del indicador con su unidad porcentual."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 7",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Primera de las dos órdenes de la etiqueta compuesta."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 7",
+      "ancla_original": "01",
+      "texto_nuevo": "1",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda AP 1."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 8",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del segundo ítem de aceptación del proceso."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 8",
+      "ancla_original": "02",
+      "texto_nuevo": "2",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 9",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del tercer ítem de aceptación del proceso."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 9",
+      "ancla_original": "03",
+      "texto_nuevo": "3",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 10",
+      "ancla_original": "ap_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del cuarto ítem de aceptación del proceso."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 10",
+      "ancla_original": "04",
+      "texto_nuevo": "4",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 11",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del primer ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 11",
+      "ancla_original": "01",
+      "texto_nuevo": "1",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 12",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del segundo ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 12",
+      "ancla_original": "02",
+      "texto_nuevo": "2",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 13",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del tercer ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 13",
+      "ancla_original": "03",
+      "texto_nuevo": "3",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 14",
+      "ancla_original": "up_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Encabezado del cuarto ítem de utilidad percibida."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 14",
+      "ancla_original": "04",
+      "texto_nuevo": "4",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Se retira el relleno con cero."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "ancla_original": "score_",
+      "texto_nuevo": "AP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Puntaje total de aceptación del proceso."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "ancla_original": "ap",
+      "texto_nuevo": "total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda AP total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "ancla_original": "score_",
+      "texto_nuevo": "UP",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Puntaje total de utilidad percibida."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "ancla_original": "up",
+      "texto_nuevo": "total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda UP total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "ancla_original": "score_",
+      "texto_nuevo": "TAM",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Puntaje global del modelo de aceptación tecnológica."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "ancla_original": "tam_total",
+      "texto_nuevo": "total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda TAM total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "ancla_original": "nivel_",
+      "texto_nuevo": "Nivel",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Nivel de satisfacción del usuario."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "ancla_original": "satisfaccion",
+      "texto_nuevo": "de satisfacción",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Segunda orden de la celda: la etiqueta queda Nivel de satisfacción."
+    }
+  ]
+}

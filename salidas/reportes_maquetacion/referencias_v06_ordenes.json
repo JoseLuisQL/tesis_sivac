@@ -1,0 +1,90 @@
+{
+  "referencias_existentes": 42,
+  "sustituciones": [
+    {
+      "indice_docx": 742,
+      "ubicacion": "PARRAFO 742",
+      "ancla_original": "Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el control de inventario en la Farmacia Pro, 2023 [Tesis de licenciatura, Universidad Privada del Norte]. Repositorio Institucional UPN. https://hdl.handle.net/11537/33833",
+      "texto_nuevo": "Garcia Villacorta, M. D. M., y Calderón Huaman, J. L. O. (2023). Sistema web para el control de inventario en la Farmacia Pro, 2023 [Tesis de licenciatura, Universidad Privada del Norte]. Repositorio Institucional UPN. https://hdl.handle.net/11537/33833\nGeorge, D., y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and reference (4.ª ed.). Allyn & Bacon.",
+      "categoria": "insercion_referencia",
+      "justificacion": "Cita (George & Mallery, 2003) en el párrafo 650 sin asentamiento en la lista. Inserción alfabética entre Garcia Villacorta (2023) y Gilbert et al. (2020): Garcia < George < Gilbert."
+    },
+    {
+      "indice_docx": 745,
+      "ubicacion": "PARRAFO 745",
+      "ancla_original": "Hernández-Sampieri, R., Fernández-Collado, C., y Baptista-Lucio, P. (2014). Metodología de la investigación (6.ª ed.). McGraw-Hill Education.",
+      "texto_nuevo": "Hernández-Sampieri, R., Fernández-Collado, C., y Baptista-Lucio, P. (2014). Metodología de la investigación (6.ª ed.). McGraw-Hill Education.\nHernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las rutas cuantitativa, cualitativa y mixta. McGraw-Hill. ISBN 978-1-4562-6096-5.",
+      "categoria": "insercion_referencia",
+      "justificacion": "Cita (Hernández-Sampieri & Mendoza, 2018) en el párrafo 650 sin asentamiento. Se inserta después de la edición 2014 del mismo primer autor, por orden cronológico ascendente APA 7, y antes de Hussain et al. (2025)."
+    },
+    {
+      "indice_docx": 761,
+      "ubicacion": "PARRAFO 761",
+      "ancla_original": "Pressman, R. S. (2010). Ingeniería del software: Un enfoque práctico (7.ª ed.). McGraw-Hill Interamericana.",
+      "texto_nuevo": "Pressman, R. S. (2010). Ingeniería del software: Un enfoque práctico (7.ª ed.). McGraw-Hill Interamericana.\nRosenthal, R. (1991). Meta-analytic procedures for social research (ed. rev.). Sage. https://doi.org/10.4135/9781412984997",
+      "categoria": "insercion_referencia",
+      "justificacion": "Cita (Rosenthal, 1991) en el párrafo 637 y usos de r de Rosenthal en los párrafos 683, 686, 689 y 692. Inserción alfabética entre Pressman (2010) y Ruiz Barea (2023): P < Rosenthal < Ruiz."
+    },
+    {
+      "indice_docx": 765,
+      "ubicacion": "PARRAFO 765",
+      "ancla_original": "Tristán-López, A. (2008). Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo. Avances en Medición, 6(1), 37–48.",
+      "texto_nuevo": "Tristán-López, A. (2008). Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo. Avances en Medición, 6(1), 37–48.\nVenkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478. https://doi.org/10.2307/30036540",
+      "categoria": "insercion_referencia",
+      "justificacion": "Cita (Venkatesh et al., 2003) en el párrafo 713 sin asentamiento. Inserción alfabética entre Tristán-López (2008) y Wasswa et al. (2023): T < Venkatesh < W."
+    }
+  ],
+  "citas_huerfanas": [
+    {
+      "cita": "Cronbach (1951)",
+      "parrafo": 649
+    },
+    {
+      "cita": "Feldt (1965)",
+      "parrafo": 649
+    },
+    {
+      "cita": "Shapiro-Wilk (1965)",
+      "parrafo": 677
+    },
+    {
+      "cita": "Razali & Wah (2011)",
+      "parrafo": 677
+    },
+    {
+      "cita": "Wilcoxon (1945)",
+      "parrafo": 679
+    },
+    {
+      "cita": "Holm (1979)",
+      "parrafo": 683
+    },
+    {
+      "cita": "Fany (2024)",
+      "parrafo": 630
+    },
+    {
+      "cita": "OMS y UNICEF (2021)",
+      "parrafo": 711
+    },
+    {
+      "cita": "Mamani (2023)",
+      "parrafo": 711
+    },
+    {
+      "cita": "Rojas y Vargas (2022)",
+      "parrafo": 712
+    }
+  ],
+  "referencias_no_citadas": [
+    {
+      "referencia": "Arisholm et al. (2007)",
+      "parrafo": 728
+    },
+    {
+      "referencia": "Dolan et al. (2020)",
+      "parrafo": 740
+    }
+  ],
+  "veredicto": "REQUIERE_AJUSTE"
+}

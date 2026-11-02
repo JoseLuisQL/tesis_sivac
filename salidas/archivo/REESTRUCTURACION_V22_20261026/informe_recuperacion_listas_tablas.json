@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "tarea": "Recuperación de la maquetación interrumpida v21b: normalización nativa de listas y rótulos, reparación de tablas con cifras partidas y rangos ilegibles",
+    "agente": "maquetador-docx",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "fecha": "2026-10-26",
+    "motor": "scripts/utilidades/docx_quirurgico.py (único escritor; sin scripts ad hoc)",
+    "promocion_a_salidas_documentos": false,
+    "motivo_no_promocion": "Entrega pendiente de verificación final y de la redacción definitiva del Capítulo V y del traslado del bloque estadístico al Anexo 7; falta la autorización del tesista para la copia v22 definitiva."
+  },
+  "archivos": {
+    "base_intacta": {
+      "ruta": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22_BASE.docx",
+      "descripcion": "Copia íntegra e inalterada de CANDIDATO_TABLAS_V21b.docx; todo el trabajo se aplicó desde aquí.",
+      "sha256": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9"
+    },
+    "candidato_docx": {
+      "ruta": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx",
+      "sha256": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
+      "bytes": 16130599
+    },
+    "candidato_pdf": {
+      "ruta": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.pdf",
+      "sha256": "d62ee56bd39fb2ea93ac487d518ae27bf531abb8efa0b8c98d245081ea26dbc0",
+      "paginas": 159,
+      "imagenes": 49,
+      "dpi_min": 136.5,
+      "dpi_mediana": 199.8,
+      "metodo": "ExportAsFixedFormat2 (Word COM)"
+    },
+    "plan": "salidas/archivo/REESTRUCTURACION_V22_20261026/plan_v22.json",
+    "reporte_aplicacion": "salidas/archivo/REESTRUCTURACION_V22_20261026/informe_aplicacion_v22.json",
+    "reporte_render": "salidas/archivo/REESTRUCTURACION_V22_20261026/informe_render_v22.json",
+    "paginas_testigo": "salidas/archivo/REESTRUCTURACION_V22_20261026/paginas_testigo/ (16 PNG a 170 DPI)"
+  },
+  "insumos_preservados_sin_modificar": [
+    "salidas/documentos/informe_final_v20.docx y .pdf",
+    "salidas/archivo/REVISION_INTEGRAL_V20_20261022/CANDIDATO_TABLAS_V21b.docx y _v21b_raw.pdf",
+    "referencias/proyecto_base/PROYECTO_TESIS.docx y referencias/modelos_tesis/",
+    "C:/Proyectos/syncova (solo lectura)"
+  ],
+  "cambios_aplicados": {
+    "listas_y_rotulos": {
+      "operacion": "parrafos.normalizar_listas (docx_quirurgico.py)",
+      "items_numerados_o_vinetas_normalizados": 39,
+      "rotulos_A_B_C_normalizados": 12,
+      "parrafos_de_prosa_desangrados": 14,
+      "omitidos": 0,
+      "fallidos": 0,
+      "geometria": "una sola linea por elemento: tabulador nativo en 720 dxa, sangria izquierda 720 dxa, colgante 360 dxa, alineacion izquierda; prosa conservada justificada con sangria de primera linea 720 dxa",
+      "verificacion_final": {
+        "items_justificados": 0,
+        "items_sin_tabulador": 0,
+        "items_sin_colgante": 0,
+        "items_con_salto_de_linea_manual": 0,
+        "rotulos": 12,
+        "rotulos_justificados": 0,
+        "parrafos_de_prosa_justificados": 236,
+        "parrafos_de_prosa_con_sangria_manual": 0
+      }
+    },
+    "tablas_geometria": [
+      {
+        "tabla": 35,
+        "columnas_antes_dxa": [1720, 1873, 708, 938, 1087, 1394, 1045],
+        "columnas_despues_dxa": [1720, 1738, 708, 938, 1087, 1394, 1180],
+        "suma_dxa": 8765,
+        "motivo": "devolver 135 dxa a la columna «Nivel de consistencia» para que «Excelente» y «Buena» no queden al borde"
+      },
+      {
+        "tabla": 37,
+        "columnas_antes_dxa": [1650, 900, 900, 800, 900, 780, 1840, 995],
+        "columnas_despues_dxa": [1545, 1005, 900, 800, 900, 780, 1840, 995],
+        "suma_dxa": 8765,
+        "motivo": "trasvasar 105 dxa del indicador al momento de evaluación para que «Pretest (Manual)» no se parta"
+      },
+      {
+        "tabla": 33,
+        "cambio": "ninguno",
+        "motivo": "verificado en render: todos los tokens caben y la columna Instrumento es legible; no se aplicó el trasvase de 200 dxa previsto para no alterar una tabla ya conforme"
+      }
+    ],
+    "alineacion_numerica": {
+      "operacion": "tablas.alineacion_decimal (docx_quirurgico.py) sobre tablas 30, 35, 36, 37, 38, 39, 52 y 53",
+      "resultado": "todas las columnas numéricas quedan alineadas a la derecha; 0 tabuladores decimales remanentes en el documento",
+      "tabuladores_decimales_retirados": 517,
+      "tablas_afectadas": [30, 35, 36, 37, 38, 39, 52, 53]
+    }
+  },
+  "hallazgo_tecnico_raiz": {
+    "sintoma": "Los coeficientes de la Tabla 35 y los porcentajes de la Tabla 30 se partían en dos líneas («0.» / «939»; «14.» / «29%»).",
+    "diagnostico": "Word ignora una parada de tabulación decimal cuando el valor no contiene el separador decimal de la configuración regional del documento (coma en español). El tabulador salta entonces a la parada por omisión de 36 pt y el número, al no caber, se parte en el punto.",
+    "evidencia_empirica": [
+      "Sonda COM sobre la celda real: párrafo «\\t0.939» con parada decimal en 24,85 pt; el número se posiciona a 379,5 pt = origen de celda (343,5) + 36 pt de parada por omisión, es decir, la parada decimal fue omitida.",
+      "En la misma celda, cambiando la parada a tabulador izquierdo en 24,85 pt, el número se coloca a 368,25 pt y ocupa una sola línea: la parada sí se respeta cuando no es decimal.",
+      "Exportación de control con valores que usan coma: las paradas decimales se honran (posiciones distintas por parada: 114,9 / 125,1 / 105,0 / 140,1 pt)."
+    ],
+    "correccion_en_motor": "aplicar_alineacion_decimal degrada a alineación derecha, retirando la parada y su run, toda columna cuyos valores usen punto como separador decimal; el criterio queda documentado en el docstring y en el motivo del reporte.",
+    "justificacion_editorial": "Todos los valores afectados tienen idéntica estructura (0,XXX o XX,XX%), por lo que la alineación derecha produce exactamente la misma alineación decimal visible sin tabuladores que Word pueda omitir."
+  },
+  "verificacion_visual_render": {
+    "metodo": "ExportAsFixedFormat2 + renderizado PyMuPDF a 170 DPI y lectura de las páginas testigo",
+    "paginas_revisadas": [
+      {"pdf": 102, "contenido": "Tabla 30", "resultado": "«14.29%» completo en una línea, columna Porcentaje legible (defecto preexistente corregido)"},
+      {"pdf": 110, "contenido": "Tabla 33", "resultado": "sin desbordes; columna Instrumento legible; nota íntegra"},
+      {"pdf": 117, "contenido": "Tabla 35", "resultado": "los seis coeficientes 0.939, 0.877, 0.874, 0.915, 0.831 y 0.841 completos en una línea, alineados; nota con la advertencia de datos de prueba legible"},
+      {"pdf": 118, "contenido": "Tabla 36", "resultado": "rangos «31.50 – 44.00» y «−35.50 – −25.50» completos en una línea"},
+      {"pdf": 120, "contenido": "Tabla 37", "resultado": "rangos «52.50% – 75.00%» y «+22.00% – +33.50%» completos; columna Momento sin partir"},
+      {"pdf": 122, "contenido": "Tabla 38", "resultado": "rangos y decimales completos; tabla cerrada en una página"},
+      {"pdf": 124, "contenido": "Tabla 39 y lista 4-7", "resultado": "valores W y p completos; elementos de lista alineados con tabulador y colgante"},
+      {"pdf": 154, "contenido": "Tabla 49 (Anexo 5, horizontal)", "resultado": "18 columnas legibles, valores completos, nota íntegra"}
+    ],
+    "barrido_automatico_del_pdf_completo": {
+      "prueba": "detección de líneas compuestas solo por una cifra truncada (patrón ^\\d{1,3}[.,]$)",
+      "resultado": "0 cortes de cifras en las 159 páginas; la única coincidencia (p. 95, «196.») es la sigla «NTS N° 196.» al final de una celda, texto legítimo"
+    },
+    "paridad_estructural_con_la_base": {
+      "capitulos_y_anexos": "idénticos en página: Cap. I 18, Cap. II 28, Cap. III 38, Cap. IV 99, Cap. V 116, Cap. VI 131, Referencias 135, Anexos 143/147/149/152/154/156/157",
+      "paginas_totales": "159 en la base y 159 en el candidato"
+    }
+  },
+  "verificacion_automatica": {
+    "auditoria_openxml": {
+      "comando": "docx_quirurgico.py auditar",
+      "margenes_unajma_ok": true,
+      "tablas_total": 59,
+      "tablas_flotantes": 0,
+      "tablas_con_encabezado_repetido": 59,
+      "tablas_con_filas_indivisibles": 59,
+      "referencias_con_sangria_francesa": 54,
+      "formulas_omml": 12,
+      "cumple_apa7": true,
+      "hallazgos": []
+    },
+    "auditoria_apa7": {
+      "comando": "auditor_docx_apa7.py auditar",
+      "dictamen": "APROBADO"
+    },
+    "paridad_de_elementos_base_vs_candidato": {
+      "parrafos": [3708, 3708],
+      "tablas": [59, 59],
+      "omml": [13, 13],
+      "fldChar": [1920, 1920],
+      "instrText": [640, 640],
+      "PAGEREF": [214, 214],
+      "SEQ": [103, 103],
+      "TOC": [3, 3],
+      "hipervinculos": [253, 253],
+      "vertAlign_subindices": [102, 102],
+      "saltos_w_br": [121, 121],
+      "tblpPr": [0, 0],
+      "tabuladores_decimales": [517, 0]
+    },
+    "interpretacion": "No se perdió ni se duplicó ningún párrafo, tabla, fórmula, campo, hipervínculo ni subíndice; el único delta es la eliminación de los 517 tabuladores decimales sustituidos por alineación derecha.",
+    "conciliacion_de_alineaciones": {
+      "jc_right": [40, 557, "+517 celdas numéricas pasan de izquierda a derecha"],
+      "jc_left": [586, 105, "-517 celdas numéricas, +33 elementos de lista justificados, +3 rótulos sin jc explícito"],
+      "jc_both": [269, 236, "-33 elementos de lista que estaban justificados"],
+      "parrafos_de_nivel_superior_modificados": 36,
+      "cambios_fuera_de_izquierda_derecha": 0,
+      "conclusion": "Toda variación de alineación queda explicada por las dos operaciones aplicadas: no hay ningún párrafo de prosa que haya perdido el justificado."
+    }
+  },
+  "pendientes_y_verificaciones": [
+    "[VERIFICAR] El tesista debe confirmar en pantalla las páginas 102, 110, 117, 118, 120, 122, 124 y 154 antes de promover la copia a salidas/documentos/.",
+    "[VERIFICAR] Las cifras de las tablas 35 a 43 siguen siendo datos de prueba; la advertencia figura en la nota de la Tabla 35 y en el Anexo 5, no así en todas las tablas del bloque estadístico, que se trasladará al Anexo 7 con advertencia única.",
+    "Pendiente de otra comisión: traslado de las tablas 35-43, figuras 46-48 y prosa asociada al Anexo 7, renumeración continua con actualización de llamadas, índices y campos, y redacción definitiva del Capítulo V por tres dimensiones sin cifras históricas.",
+    "Pendiente de otra comisión: injertos XP en el Anexo 6 y conservación nativa de las tablas fuente complementarias (RF con módulo asociado, RNF con taxonomía distinta, catálogo de HU con rol, archivos de prueba y diccionarios).",
+    "El motor no expone todavía una operación de renumeración de tablas/figuras con reescritura de PAGEREF, SEQ y remisiones cruzadas; debe implementarse antes del traslado al Anexo 7."
+  ],
+  "riesgos": [
+    "La degradación a alineación derecha afecta a 8 tablas; es estable y verificable en render, pero cambia la alineación interna de tablas que en v21b usaban tabulador decimal sin beneficio real.",
+    "El documento conserva una página casi vacía en el anexo 142 y el desbalance propio de la maquetación previa; no se alteró para no reflotar el resto."
+  ]
+}

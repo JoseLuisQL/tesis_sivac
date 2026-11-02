@@ -1,0 +1,20 @@
+{
+  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_TABLAS_V21b.docx",
+  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\_v21b_raw.pdf",
+  "metodo_exportacion": "ExportAsFixedFormat2",
+  "optimize_for_image_quality": true,
+  "paginas": 159,
+  "medicion_pdf": {
+    "paginas": 159,
+    "rect_primera": [
+      595.32,
+      841.92
+    ],
+    "imagenes": 49,
+    "dpi_min": 136.5,
+    "dpi_mediana": 199.8,
+    "dpi_max": 200.0
+  },
+  "sha256_docx": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9",
+  "sha256_pdf": "169217d8619475ac6f6eea4771d5f3c40945f7bbc7fb8aeea3aa1eefc5ed38e9"
+}

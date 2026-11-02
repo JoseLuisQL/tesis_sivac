@@ -1,0 +1,795 @@
+{
+  "version": 1,
+  "meta": {
+    "proposito": "Reestructuracion editorial v22: fundamento XP depurado, traslado integro del desarrollo aplicado al Anexo 6 con complementos de la fuente, Anexo 7 historico no validado, Anexo 8 fotografico, Capitulo V breve y salvedades en resumen, abstract, discusion y conclusiones.",
+    "documento_base": "CANDIDATO_EDITORIAL_V22.docx",
+    "fuente_complementos": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+    "condicion": "Copia para revision: no es version definitiva ni cierra compuertas de calidad.",
+    "no_sobrescribir": "CANDIDATO_EDITORIAL_V22.docx"
+  },
+  "operaciones": [
+    {
+      "id": "V0",
+      "tipo": "verificar"
+    },
+    {
+      "id": "XP-01F",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida",
+      "texto": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida para equipos de desarrollo pequeños y medianos que enfrentan requerimientos dinámicos o sujetos a cambios normativos recurrentes (Beck, 1999). A diferencia del modelo lineal en cascada y de los ciclos iterativos convencionales de larga duración, XP acorta los bucles de retroalimentación técnica y funcional, integrando el análisis, el diseño, la codificación y las pruebas dentro de iteraciones breves con entregas continuas de software operativo (Beck, 1999) (véase la Figura 3). Kokol (2022), en una revisión sintética de alcance sobre desarrollo ágil en el sector sanitario, señaló el potencial de esos enfoques y de la colaboración para mejorar el desarrollo de software sanitario, condicionado por las exigencias de seguridad y regulación y por barreras de riesgo y de tiempo real."
+    },
+    {
+      "id": "XP-02F",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "El proceso disciplinar de XP se articula en cuatro fases metodológicas interdependientes",
+      "texto": "El proceso disciplinar de XP se articula en cuatro fases metodológicas interdependientes: planeación, diseño, codificación y pruebas (Pressman, 2010). La fase de planeación inicia con la captura de requerimientos mediante historias de usuario redactadas en el lenguaje del dominio operativo, las cuales se estiman en puntos de esfuerzo y se priorizan junto al cliente en el sitio para conformar el plan de entregas (Cohn, 2004). La fase de diseño aplica el principio de simplicidad estructural, apoyándose en tarjetas CRC y prototipos operativos; la fase de codificación incorpora la refactorización continua y la integración permanente; y la fase de pruebas verifica cada incremento mediante pruebas unitarias automatizadas y pruebas de aceptación validadas por los usuarios finales (Pressman, 2010) (véase la Figura 4). A estas fases se suman las prácticas de trabajo que XP incorpora para sostener la calidad del incremento (Beck, 1999). El despliegue en producción constituye una etapa posterior del proyecto y no una quinta fase de la metodología."
+    },
+    {
+      "id": "XP-03F",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas)",
+      "texto": "Las cuatro fases de XP conforman el marco procedimental que orienta la construcción reproducible de la intervención tecnológica y se mantienen separadas de las dimensiones analíticas de la variable dependiente evaluada en la investigación. El desarrollo aplicado de esta metodología en el sistema SIVAC, junto con sus artefactos de planificación, diseño, codificación y pruebas, y con la etapa posterior de despliegue, se presenta de forma íntegra en el Anexo 6. En esta sección se conserva únicamente el fundamento conceptual que sustenta la elección metodológica y su articulación con las dimensiones evaluadas."
+    },
+    {
+      "id": "E6-00",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y TRAZABILIDAD SIVAC",
+      "texto": "ANEXO 6: DESARROLLO DE SOFTWARE SIVAC BAJO EXTREME PROGRAMMING"
+    },
+    {
+      "id": "E6-01",
+      "tipo": "insertar_parrafos",
+      "despues_de": "Nota. Resumen del backlog de desarrollo implementado en el repositorio syncova",
+      "parrafos": [
+        {
+          "estilo": "cuerpo",
+          "texto": "El presente anexo documenta el desarrollo aplicado del sistema SIVAC bajo Extreme Programming (XP): la planificación con el juego de planificación y la especificación de requerimientos, el diseño simple y el modelado del software, la codificación con las prácticas de ingeniería ágil, las pruebas de calidad del software y la etapa posterior de despliegue. Se conservan los artefactos, las tablas y las figuras del desarrollo documentado, junto con los complementos que aporta la fuente de desarrollo del sistema."
+        }
+      ]
+    },
+    {
+      "id": "E6-02",
+      "tipo": "trasladar_rango",
+      "desde": "3.3. Metodología de Desarrollo de Software Extreme Programming (XP)",
+      "hasta": "La infraestructura se diseñó considerando tres niveles de aislamiento",
+      "destino_despues_de": "El presente anexo documenta el desarrollo aplicado del sistema SIVAC"
+    },
+    {
+      "id": "G01",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 4,
+      "antes_de": "Tabla 8 Plan Detallado de las Cinco Iteraciones",
+      "numero": 900,
+      "titulo": "Historia de usuario HU-01: Iniciar sesión en el sistema con control de ámbito RBAC",
+      "lead_in": "Las fichas siguientes documentan las historias de usuario centrales del desarrollo en el formato de tarjeta de Extreme Programming (XP).",
+      "nota": "Nota. Elaboración propia, según el formato de historia de usuario de Extreme Programming (XP)."
+    },
+    {
+      "id": "G02",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 5,
+      "antes_de": "Tabla 8 Plan Detallado de las Cinco Iteraciones",
+      "numero": 901,
+      "titulo": "Historia de usuario HU-04: Registrar lotes biológicos y controlar vencimientos bajo criterio FEFO",
+      "nota": "Nota. Elaboración propia, según el formato de historia de usuario de Extreme Programming (XP)."
+    },
+    {
+      "id": "G03",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 6,
+      "antes_de": "Tabla 8 Plan Detallado de las Cinco Iteraciones",
+      "numero": 902,
+      "titulo": "Historia de usuario HU-06: Registrar movimientos mensuales y sincronizar saldos automáticamente",
+      "nota": "Nota. Elaboración propia, según el formato de historia de usuario de Extreme Programming (XP)."
+    },
+    {
+      "id": "G04",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 7,
+      "antes_de": "Tabla 8 Plan Detallado de las Cinco Iteraciones",
+      "numero": 903,
+      "titulo": "Historia de usuario HU-09: Importar formato ICI-DEMID y calcular Meses de Stock Disponible (MSD)",
+      "nota": "Nota. Elaboración propia, según el formato de historia de usuario de Extreme Programming (XP)."
+    },
+    {
+      "id": "G05",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 8,
+      "antes_de": "Tabla 8 Plan Detallado de las Cinco Iteraciones",
+      "numero": 904,
+      "titulo": "Historia de usuario HU-12: Gestionar usuarios, matriz de permisos RBAC y reportes corporativos",
+      "nota": "Nota. Elaboración propia, según el formato de historia de usuario de Extreme Programming (XP)."
+    },
+    {
+      "id": "G06",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 10,
+      "antes_de": "Tabla 10 Diccionario de Datos: Tabla redes",
+      "numero": 905,
+      "titulo": "Tipos enumerados (ENUM) definidos en la base de datos PostgreSQL de SIVAC",
+      "lead_in": "El esquema físico restringe los valores admitidos en las columnas de estado y categoría mediante tipos enumerados.",
+      "nota": "Nota. Elaboración propia."
+    },
+    {
+      "id": "G07",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 14,
+      "antes_de": "3.3.3. Fase III: Codificación y Prácticas de Ingeniería Ágil",
+      "numero": 906,
+      "titulo": "Principales relaciones por llave foránea del esquema relacional de SIVAC",
+      "lead_in": "El modelo relacional fija la política de integridad referencial de cada llave foránea mediante las reglas siguientes.",
+      "nota": "Nota. Elaboración propia."
+    },
+    {
+      "id": "G08",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 24,
+      "antes_de": "Tabla 27 Matriz de Casos de Prueba de Aceptación con el Usuario",
+      "numero": 907,
+      "titulo": "Verificaciones de seguridad y control de acceso sobre la API REST de SIVAC",
+      "lead_in": "Además de las suites automatizadas, se ejecutaron verificaciones específicas de seguridad y control de acceso sobre la API REST.",
+      "nota": "Nota. Elaboración propia."
+    },
+    {
+      "id": "G09",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 25,
+      "antes_de": "Tabla 27 Matriz de Casos de Prueba de Aceptación con el Usuario",
+      "numero": 916,
+      "titulo": "Escenarios de aceptación de las historias de usuario registrados con el usuario",
+      "lead_in": "La validación funcional con los usuarios se documentó mediante escenarios de aceptación sobre las historias de usuario implementadas.",
+      "nota": "Nota. Elaboración propia. Los escenarios se registraron como aceptados en la documentación de origen del desarrollo del sistema."
+    },
+    {
+      "id": "S6-00",
+      "tipo": "insertar_parrafos",
+      "despues_de": "La infraestructura se diseñó considerando tres niveles de aislamiento",
+      "parrafos": [
+        {
+          "estilo": "heading2",
+          "texto": "6.6. Complementos documentales del desarrollo"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Los complementos siguientes proceden de la documentación de origen del desarrollo del sistema y se incorporan como objetos nativos porque su contenido no queda cubierto por los artefactos anteriores. No se completan valores sin fuente ni se reconcilian los conteos discrepantes entre documentos."
+        }
+      ]
+    },
+    {
+      "id": "S1",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 0,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 908,
+      "titulo": "Requerimientos funcionales del sistema SIVAC",
+      "lead_in": "La documentación de origen registra los requerimientos funcionales con la columna del módulo asociado, que no figura en el catálogo anterior; se conserva como complemento porque la correspondencia atributo a atributo no se ha demostrado.",
+      "nota": "Nota. Elaboración propia a partir del análisis funcional del sistema SIVAC en la DISA Apurímac II."
+    },
+    {
+      "id": "S2",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 1,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 909,
+      "titulo": "Requerimientos no funcionales del sistema SIVAC",
+      "lead_in": "Los requerimientos no funcionales de la fuente de desarrollo emplean una taxonomía distinta de la del catálogo anterior; se conservan sin forzar una correspondencia no demostrada.",
+      "nota": "Nota. Elaboración propia a partir del modelo de calidad de software ISO/IEC 25010 (ISO/IEC, 2011)."
+    },
+    {
+      "id": "S3a",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 2,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 910,
+      "titulo": "Matriz de roles y permisos operativos del sistema SIVAC",
+      "lead_in": "La matriz de roles y permisos operativos se documenta por módulo y operación, con el detalle de los tres perfiles institucionales.",
+      "nota": "Nota. Elaboración propia a partir de la configuración implementada en defaultRolePermissions.ts y los middlewares authorize y accessControl."
+    },
+    {
+      "id": "S3b",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 3,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 911,
+      "titulo": "Catálogo de historias de usuario del sistema SIVAC",
+      "lead_in": "El catálogo de historias de usuario de la fuente de desarrollo incorpora el rol asociado a cada historia y complementa la matriz del juego de planificación.",
+      "nota": "Nota. Elaboración propia. La prioridad y la asignación por iteración responden a la dependencia funcional entre el catálogo base, los lotes de inventario y los movimientos mensuales."
+    },
+    {
+      "id": "S5a",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 11,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 912,
+      "titulo": "Diccionario de datos de la tabla lotes_vacunas según la fuente de desarrollo",
+      "lead_in": "La fuente de desarrollo registra los diccionarios de datos de tres tablas del núcleo transaccional con una estructura de cuatro columnas; se conservan como complemento de los diccionarios anteriores.",
+      "nota": "Nota. Elaboración propia."
+    },
+    {
+      "id": "S5b",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 12,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 913,
+      "titulo": "Diccionario de datos de la tabla movimientos_vacunas según la fuente de desarrollo",
+      "nota": "Nota. Elaboración propia. La restricción única uk_movimiento_establecimiento_vacuna_mes_anio garantiza un único registro mensual por establecimiento y biológico."
+    },
+    {
+      "id": "S5c",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 13,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 914,
+      "titulo": "Diccionario de datos de la tabla ici_demid_registros según la fuente de desarrollo",
+      "nota": "Nota. Elaboración propia. La combinación compuesta (establecimiento_id, vacuna_id, anio) permite actualizar los indicadores mediante operaciones Upsert idempotentes."
+    },
+    {
+      "id": "S4",
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice_tabla": 23,
+      "antes_de": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA",
+      "numero": 915,
+      "titulo": "Resumen de pruebas unitarias y de integración del backend de SIVAC (Jest)",
+      "lead_in": "El registro de pruebas automatizadas de la fuente de desarrollo enumera los archivos de especificación de la suite de pruebas del backend.",
+      "nota": "Nota. Elaboración propia. Se ejecutaron 14 conjuntos de pruebas con un total de 141 casos de prueba aprobados."
+    },
+    {
+      "id": "A7-NEW",
+      "tipo": "insertar_parrafos",
+      "despues_de": "Nota. Elaboración propia. Se ejecutaron 14 conjuntos de pruebas",
+      "parrafos": [
+        {
+          "estilo": "heading1",
+          "salto_pagina": true,
+          "texto": "ANEXO 7: SALIDA ESTADÍSTICA E INTERPRETACIONES HISTÓRICAS NO VALIDADAS"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Este anexo conserva, con fines de trazabilidad, la salida estadística producida con el conjunto de datos de prueba y las interpretaciones que la acompañaban en la versión anterior del informe. La auditoría identificó inconsistencias metodológicas y de cálculo que no han sido corregidas en esta reproducción histórica. Las cifras se conservan sin recalcular y no constituyen evidencia empírica de campo. Las tablas y figuras de este anexo no sostienen afirmaciones sobre la gestión de movimientos mensuales de vacunas y no acreditan la verificación exitosa de los procedimientos."
+        }
+      ]
+    },
+    {
+      "id": "TAB-S4",
+      "tipo": "trasladar_tabla",
+      "contiene": "Conjunto de pruebas (Suite Jest)",
+      "antes_de": "ANEXO 7: SALIDA ESTADÍSTICA"
+    },
+    {
+      "id": "A7-HIST",
+      "tipo": "trasladar_rango",
+      "desde": "Advertencia metodológica y salvaguarda deontológica",
+      "hasta": "Nota. Regla conjuntiva multivariada",
+      "destino_despues_de": "Este anexo conserva, con fines de trazabilidad, la salida estadística"
+    },
+    {
+      "id": "H-71",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.1. Análisis de Confiabilidad del Instrumento 03",
+      "texto": "7.1. Análisis de Confiabilidad del Instrumento 03"
+    },
+    {
+      "id": "H-72",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones",
+      "texto": "7.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones"
+    },
+    {
+      "id": "H-721",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2.1. Dimensión 1: Oportunidad de Procesamiento",
+      "texto": "7.2.1. Dimensión 1: Oportunidad de Procesamiento (tiempo de registro y tiempo de emisión de vale)"
+    },
+    {
+      "id": "H-722",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2.2. Dimensión 2: Consistencia Documental",
+      "texto": "7.2.2. Dimensión 2: Consistencia Documental (RSD y CPE)"
+    },
+    {
+      "id": "H-723",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2.3. Dimensión 3: Satisfacción del Usuario",
+      "texto": "7.2.3. Dimensión 3: Satisfacción del Usuario (AP y UP bajo Modelo TAM)"
+    },
+    {
+      "id": "H-73",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.3. Prueba de Bondad de Ajuste de Normalidad",
+      "texto": "7.3. Prueba de Bondad de Ajuste de Normalidad"
+    },
+    {
+      "id": "H-74",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4. Contrastación de Hipótesis",
+      "texto": "7.4. Contrastación de Hipótesis"
+    },
+    {
+      "id": "H-741",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.1. Contrastación de la Hipótesis Específica 1",
+      "texto": "7.4.1. Contrastación de la Hipótesis Específica 1"
+    },
+    {
+      "id": "H-742",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.2. Contrastación de la Hipótesis Específica 2",
+      "texto": "7.4.2. Contrastación de la Hipótesis Específica 2"
+    },
+    {
+      "id": "H-743",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.3. Contrastación de la Hipótesis Específica 3",
+      "texto": "7.4.3. Contrastación de la Hipótesis Específica 3"
+    },
+    {
+      "id": "H-744",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.4. Contrastación de la Hipótesis General",
+      "texto": "7.4.4. Contrastación de la Hipótesis General"
+    },
+    {
+      "id": "A7-75",
+      "tipo": "insertar_parrafos",
+      "despues_de": "Nota. Regla conjuntiva multivariada",
+      "parrafos": [
+        {
+          "estilo": "heading2",
+          "texto": "7.5. Interpretaciones históricas no validadas"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Los cinco párrafos siguientes reproducen la discusión de resultados de la versión anterior del informe y, a continuación, sus cuatro conclusiones, con sus cifras y citas originales. La auditoría identificó inconsistencias metodológicas y de cálculo que no han sido corregidas en esta reproducción histórica. No constituyen conclusiones vigentes del estudio ni evidencia empírica de campo."
+        }
+      ]
+    },
+    {
+      "id": "A7-751",
+      "tipo": "insertar_parrafos",
+      "despues_de": "Los cinco párrafos siguientes reproducen la discusión de resultados",
+      "parrafos": [
+        {
+          "estilo": "heading3",
+          "texto": "7.5.1. Discusión histórica de resultados"
+        }
+      ]
+    },
+    {
+      "id": "A7-DISC",
+      "tipo": "trasladar_rango",
+      "desde": "El propósito de la presente investigación fue determinar en qué medida",
+      "hasta": "Finalmente, la contrastación de la Hipótesis General bajo una regla de decisión conjuntiva",
+      "destino_despues_de": "7.5.1. Discusión histórica de resultados"
+    },
+    {
+      "id": "A7-752",
+      "tipo": "insertar_parrafos",
+      "despues_de": "Finalmente, la contrastación de la Hipótesis General bajo una regla de decisión conjuntiva",
+      "parrafos": [
+        {
+          "estilo": "heading3",
+          "texto": "7.5.2. Conclusiones históricas"
+        }
+      ]
+    },
+    {
+      "id": "A7-CONC",
+      "tipo": "trasladar_rango",
+      "desde": "Primera (Objetivo General): A partir del conjunto de datos provisionales",
+      "hasta": "Cuarta (Objetivo Específico 3): Se determinó que el sistema web SIVAC eleva",
+      "destino_despues_de": "7.5.2. Conclusiones históricas"
+    },
+    {
+      "id": "A7-REF5",
+      "tipo": "reemplazo_fragmento",
+      "ancla": "Primera (Objetivo General): A partir del conjunto de datos provisionales",
+      "sustituciones": [
+        {
+          "buscar": "descrito en el Capítulo V",
+          "reemplazar": "descrito en el Anexo 7 de este informe"
+        }
+      ]
+    },
+    {
+      "id": "A8",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO",
+      "texto": "ANEXO 8: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO (PENDIENTE DE INCORPORACIÓN)"
+    },
+    {
+      "id": "CV-00",
+      "tipo": "insertar_parrafos",
+      "despues_de": "CAPÍTULO V: RESULTADOS",
+      "parrafos": [
+        {
+          "estilo": "cuerpo",
+          "texto": "Este capítulo presenta el estado de la evidencia, la estructura prevista para la presentación de resultados por dimensión e indicador y la situación del contraste de hipótesis. No se reportan mediciones de campo porque no se han aportado registros de campo verificables."
+        },
+        {
+          "estilo": "heading2",
+          "texto": "5.1. Estado de la evidencia"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La evidencia disponible en esta etapa no corresponde a mediciones de campo. Los registros utilizados hasta ahora provienen de un conjunto de datos de prueba, identificado como tal en los archivos de origen, cuyo propósito fue verificar el funcionamiento del procedimiento de cálculo. Hasta el momento no se han aportado registros de campo verificables. Por esa razón, el análisis inferencial permanece bloqueado y ninguna cifra de la salida provisional se presenta como hallazgo empírico."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La salida estadística producida con esos datos se conserva íntegra en el Anexo 7, rotulada como histórica y no validada. Su inclusión preserva la trazabilidad histórica del procedimiento. La auditoría identificó inconsistencias metodológicas y de cálculo que no han sido corregidas en esta reproducción histórica, y las cifras se conservan sin recalcular. El anexo no constituye evidencia empírica ni sostiene afirmaciones sobre la gestión de movimientos de vacunas."
+        },
+        {
+          "estilo": "heading2",
+          "texto": "5.2. Presentación prevista de resultados por dimensión e indicador"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La presentación definitiva se organizará por las tres dimensiones oficiales de la variable dependiente y sus seis indicadores. Para cada indicador se informará la estadística descriptiva del pretest y del postest, el cambio observado y el resultado del contraste pareado que se apruebe, con su tamaño del efecto y el tratamiento de la multiplicidad que se ratifique. Las tablas y figuras se elaborarán únicamente cuando se aporten los registros de campo verificables; no se incluyen casillas vacías ni valores provisionales."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "En la dimensión de oportunidad de procesamiento se reportarán el tiempo de registro de movimientos mensuales y el tiempo de emisión del comprobante de salida o vale. La descripción incluirá la media, la desviación estándar, la mediana, el rango intercuartílico y los valores extremos de cada momento, junto con la diferencia pareada."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "En la dimensión de consistencia documental se reportarán el porcentaje de registros sin discrepancias y la concordancia entre la cantidad programada y la entregada. El cambio de estos indicadores se expresará en puntos porcentuales, sin confundirlo con la variación relativa."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "En la dimensión de satisfacción del usuario se reportarán la aceptación del proceso y la utilidad percibida. El puntaje global del modelo TAM, por derivar de la suma de ambos indicadores, no se tratará como un contraste independiente; su presentación quedará sujeta al protocolo que se ratifique."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "La exposición de cada dimensión se limitará a un párrafo interpretativo y a los recursos que la sustenten, de modo que la narración no repita las cifras que la tabla o la figura ya muestran."
+        },
+        {
+          "estilo": "heading2",
+          "texto": "5.3. Estado del contraste de hipótesis"
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "El contraste de las hipótesis específicas y de la hipótesis general no se ha ejecutado sobre registros de campo verificables. La especificación del contraste primario por indicador, del método de cálculo de los valores p y del tratamiento de las comparaciones múltiples se definirá en el protocolo que se ratifique antes del análisis. No se adopta de antemano una prueba como primaria, no se elige la técnica por la significancia observada y no se modifica el diseño preexperimental con pretest y postest en un solo grupo."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "El tratamiento de la hipótesis general se definirá en el protocolo que se ratifique antes del análisis. Cuando se aporten los registros de campo verificables y exista ratificación metodológica, se reportarán las decisiones por dimensión y la decisión general, con la salvedad de que el diseño de un solo grupo permite formular asociaciones compatibles con la intervención, no efectos causales aislados."
+        }
+      ]
+    },
+    {
+      "id": "DI-01",
+      "tipo": "insertar_parrafos",
+      "despues_de": "CAPÍTULO VI: DISCUSIÓN",
+      "parrafos": [
+        {
+          "estilo": "cuerpo",
+          "texto": "La discusión de resultados se realizará una vez que se disponga de registros de campo verificables y del contraste inferencial ratificado. El diseño preexperimental con un solo grupo (O₁ → X → O₂) sobre la población censal de 14 trabajadores permite comparar el pretest y el postest, pero no aislar por completo explicaciones alternativas, por lo que la interpretación se formulará como asociación compatible con la intervención y no como efecto causal aislado."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Cuando se aporten los registros de campo verificables, el contraste se organizará por las tres dimensiones oficiales y sus seis indicadores: oportunidad de procesamiento (tiempo de registro y tiempo de emisión de vales), consistencia documental (porcentaje de registros sin discrepancias y concordancia programada versus entregada) y satisfacción del usuario (aceptación del proceso y utilidad percibida). Cada dimensión se confrontará con los antecedentes y las bases teóricas revisados en los Capítulos II y III, sin trasladar a esta tesis los valores que esos estudios reportan para otros contextos."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "El análisis de la salida estadística conservada en el Anexo 7 no sustituye esa confrontación: se trata de una reproducción histórica sobre datos de prueba, con inconsistencias metodológicas y de cálculo no corregidas, no validada y no utilizable como evidencia empírica."
+        }
+      ]
+    },
+    {
+      "id": "CO-01",
+      "tipo": "insertar_parrafos",
+      "despues_de": "CONCLUSIONES",
+      "parrafos": [
+        {
+          "estilo": "cuerpo",
+          "texto": "Primera (Objetivo General): la investigación documenta el diseño metodológico y la implementación del sistema; la evaluación empírica de la hipótesis general permanece pendiente, incluida la ratificación del protocolo de análisis, por lo que no se formula una conclusión de efecto sobre la gestión de movimientos mensuales de vacunas."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Segunda (Objetivo Específico 1): la oportunidad de procesamiento queda definida por el tiempo de registro y el tiempo de emisión de vales; su contraste empírico permanece pendiente de registros de campo verificables."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Tercera (Objetivo Específico 2): la consistencia documental queda definida por el porcentaje de registros sin discrepancias y la concordancia programada versus entregada; su contraste empírico permanece pendiente de registros de campo verificables."
+        },
+        {
+          "estilo": "cuerpo",
+          "texto": "Cuarta (Objetivo Específico 3): la satisfacción del usuario queda definida por la aceptación del proceso y la utilidad percibida; su contraste empírico permanece pendiente de registros de campo verificables."
+        }
+      ]
+    },
+    {
+      "id": "RA-01",
+      "tipo": "reemplazo_fragmento",
+      "documento": "RESUMEN",
+      "ancla": "en los trece (13) centros de acopio de la sede central",
+      "sustituciones": [
+        {
+          "buscar": "en los trece (13) centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14), de un universo de diecinueve (19) centros de acopio registrados en el sistema.",
+          "reemplazar": "en los centros de acopio de la sede central y de las redes de salud de Andahuaylas y Chincheros (N = n = 14), de un universo de centros de acopio registrados en el sistema."
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "RA-02",
+      "tipo": "reemplazo_fragmento",
+      "documento": "RESUMEN",
+      "ancla": "a lo largo de cinco iteraciones (71 puntos de historia y 15 historias de usuario)",
+      "sustituciones": [
+        {
+          "buscar": "a lo largo de cinco iteraciones (71 puntos de historia y 15 historias de usuario)",
+          "reemplazar": "a lo largo de las iteraciones de entrega previstas por la metodología"
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "RA-03",
+      "tipo": "reemplazo_fragmento",
+      "documento": "RESUMEN",
+      "ancla": "se diseñó mediante la prueba de normalidad de Shapiro-Wilk",
+      "sustituciones": [
+        {
+          "buscar": "se diseñó mediante la prueba de normalidad de Shapiro-Wilk y la prueba de rangos con signo de Wilcoxon para muestras relacionadas (α = 0.05) con ajuste de Holm-Bonferroni, con el propósito de determinar",
+          "reemplazar": "se definirá mediante el diagnóstico de normalidad y un contraste pareado por indicador; la especificación definitiva del protocolo se ratificará antes del análisis con el propósito de determinar"
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "RA-04",
+      "tipo": "reemplazo_fragmento",
+      "documento": "RESUMEN",
+      "ancla": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest",
+      "sustituciones": [
+        {
+          "buscar": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest.",
+          "reemplazar": "cuyo análisis empírico permanece pendiente de registros de campo verificables."
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "AB-01",
+      "tipo": "reemplazo_fragmento",
+      "documento": "ABSTRACT",
+      "ancla": "across the thirteen (13) storage centers at the central headquarters",
+      "sustituciones": [
+        {
+          "buscar": "across the thirteen (13) storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14), out of a universe of nineteen (19) centers registered in the SIVAC system.",
+          "reemplazar": "across the storage centers at the central headquarters and the Andahuaylas and Chincheros health networks (N = n = 14), out of the universe of centers registered in the SIVAC system."
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "AB-02",
+      "tipo": "reemplazo_fragmento",
+      "documento": "ABSTRACT",
+      "ancla": "across five iterations (71 story points and 15 user stories)",
+      "sustituciones": [
+        {
+          "buscar": "across five iterations (71 story points and 15 user stories)",
+          "reemplazar": "across the delivery iterations defined by the methodology"
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "AB-03",
+      "tipo": "reemplazo_fragmento",
+      "documento": "ABSTRACT",
+      "ancla": "was structured using the Shapiro-Wilk normality test",
+      "sustituciones": [
+        {
+          "buscar": "was structured using the Shapiro-Wilk normality test and the Wilcoxon signed-rank test for related samples (α = 0.05) with Holm-Bonferroni adjustment to determine",
+          "reemplazar": "will comprise a normality diagnosis and one paired contrast per indicator; its final specification will be ratified before the analysis in order to determine"
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "AB-04",
+      "tipo": "reemplazo_fragmento",
+      "documento": "ABSTRACT",
+      "ancla": "whose definitive field statistics remain under posttest consolidation",
+      "sustituciones": [
+        {
+          "buscar": "whose definitive field statistics remain under posttest consolidation.",
+          "reemplazar": "whose empirical analysis remains pending verifiable field records."
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "F-RANGOS",
+      "tipo": "reemplazo_fragmento",
+      "ancla": "A continuación, en las Tablas 10 a 24 se documenta",
+      "sustituciones": [
+        {
+          "buscar": "en las Tablas 10 a 24 se documenta",
+          "reemplazar": "en las tablas siguientes se documenta"
+        }
+      ],
+      "modo": "contiene"
+    },
+    {
+      "id": "H-331",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1. Fase I: Planificación",
+      "texto": "6.1. Fase I: Planificación (Planning Game) y Especificación de Requerimientos"
+    },
+    {
+      "id": "H-3311",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.1. Metáfora del Sistema",
+      "texto": "6.1.1. Metáfora del Sistema y Definición de Actores"
+    },
+    {
+      "id": "H-3312",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.2. Requerimientos Funcionales del Sistema SIVAC",
+      "texto": "6.1.2. Requerimientos Funcionales del Sistema SIVAC"
+    },
+    {
+      "id": "H-3313",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.3. Requerimientos No Funcionales",
+      "texto": "6.1.3. Requerimientos No Funcionales según ISO/IEC 25010:2023"
+    },
+    {
+      "id": "H-3314",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.4. Trazabilidad Requerimientos",
+      "texto": "6.1.4. Trazabilidad Requerimientos vs Dimensiones de la Variable Dependiente"
+    },
+    {
+      "id": "H-3315",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.5. El Juego de la Planificación",
+      "texto": "6.1.5. El Juego de la Planificación (Planning Game) y Estimación de Historias de Usuario"
+    },
+    {
+      "id": "H-3316",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.6. Plan de Entregas e Iteraciones",
+      "texto": "6.1.6. Plan de Entregas e Iteraciones (Release Plan)"
+    },
+    {
+      "id": "H-3317",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.7. Diagrama de Casos de Uso General",
+      "texto": "6.1.7. Diagrama de Casos de Uso General del Sistema"
+    },
+    {
+      "id": "H-332",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2. Fase II: Diseño Simple",
+      "texto": "6.2. Fase II: Diseño Simple y Modelado del Software"
+    },
+    {
+      "id": "H-3321",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.1. Arquitectura Lógica en Capas",
+      "texto": "6.2.1. Arquitectura Lógica en Capas y Subsistemas del Sistema"
+    },
+    {
+      "id": "H-3322",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.2. Diagramas de Flujo y Procesos",
+      "texto": "6.2.2. Diagramas de Flujo y Procesos Operativos"
+    },
+    {
+      "id": "H-3323",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.3. Diagramas de Secuencia UML",
+      "texto": "6.2.3. Diagramas de Secuencia UML de Procesos Críticos"
+    },
+    {
+      "id": "H-3324",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.4. Modelado Conceptual, Lógico y Físico",
+      "texto": "6.2.4. Modelado Conceptual, Lógico y Físico de la Base de Datos"
+    },
+    {
+      "id": "H-333",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3. Fase III: Codificación",
+      "texto": "6.3. Fase III: Codificación y Prácticas de Ingeniería Ágil"
+    },
+    {
+      "id": "H-3331",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3.1. Estructura del Proyecto y Stack",
+      "texto": "6.3.1. Estructura del Proyecto y Stack Tecnológico"
+    },
+    {
+      "id": "H-3332",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3.2. Implementación de Algoritmos Críticos",
+      "texto": "6.3.2. Implementación de Algoritmos Críticos de Negocio"
+    },
+    {
+      "id": "H-3333",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3.3. Interfaces Gráficas de Usuario",
+      "texto": "6.3.3. Interfaces Gráficas de Usuario Desarrolladas (UI)"
+    },
+    {
+      "id": "H-334",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4. Fase IV: Pruebas de Calidad",
+      "texto": "6.4. Fase IV: Pruebas de Calidad del Software"
+    },
+    {
+      "id": "H-3341",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4.1. Estrategia Piramidal",
+      "texto": "6.4.1. Estrategia Piramidal de Pruebas Automatizadas"
+    },
+    {
+      "id": "H-3342",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4.2. Pruebas de Aceptación con el Cliente",
+      "texto": "6.4.2. Pruebas de Aceptación con el Cliente (DISA Apurímac II)"
+    },
+    {
+      "id": "H-3343",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4.3. Evaluación de Calidad del Software",
+      "texto": "6.4.3. Evaluación de Calidad del Software según ISO/IEC 25010:2023"
+    },
+    {
+      "id": "H-335",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.5. Despliegue y puesta en operación",
+      "texto": "6.5. Despliegue y puesta en operación"
+    },
+    {
+      "id": "H-3351",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.5.1. Topología de Red",
+      "texto": "6.5.1. Topología de Red, Contenedores Docker y Orquestación"
+    },
+    {
+      "id": "H-330",
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3. Metodología de Desarrollo de Software Extreme Programming (XP)",
+      "texto": "Aplicación de Extreme Programming en el desarrollo del sistema SIVAC"
+    },
+    {
+      "id": "N-01",
+      "tipo": "normalizar_rotulos"
+    },
+    {
+      "id": "N-02",
+      "tipo": "renumerar",
+      "llamadas": true
+    },
+    {
+      "id": "N-03",
+      "tipo": "recomponer_indices"
+    },
+    {
+      "id": "V1",
+      "tipo": "verificar"
+    }
+  ]
+}

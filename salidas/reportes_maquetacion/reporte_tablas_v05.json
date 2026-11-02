@@ -1,0 +1,2424 @@
+{
+  "version": "v05",
+  "fecha": "2026-10-21",
+  "fuente_inmutable": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v04.docx",
+  "sha256_origen": "134c0ecad628432356f121662adb7b41462d4e32117074a111a9fe0398094887",
+  "salida_docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v05.docx",
+  "sha256_salida": "f36a666c02ebdec3f6427c660c92a71645ae9caa9b59559e77deef8d4f4a1a70",
+  "secciones_total": 7,
+  "secciones_originales_conservadas": 5,
+  "secciones_nuevas": 2,
+  "orientaciones": [
+    "portrait",
+    "portrait",
+    "portrait",
+    "landscape",
+    "portrait",
+    "landscape",
+    "portrait"
+  ],
+  "tablas_total": 59,
+  "tablas_conformes": 59,
+  "tablas": [
+    {
+      "indice": 1,
+      "rotulo": "(sin rótulo)",
+      "filas": 1,
+      "columnas": 1,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        8765
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 0,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 2,
+      "rotulo": "Tabla 1",
+      "filas": 14,
+      "columnas": 6,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1113,
+        1470,
+        1603,
+        1569,
+        1613,
+        1397
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 3,
+      "rotulo": "Tabla 2",
+      "filas": 7,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1896,
+        1896,
+        3193,
+        1780
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 4,
+      "rotulo": "Tabla 3",
+      "filas": 5,
+      "columnas": 3,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2922,
+        2922,
+        2921
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 5,
+      "rotulo": "Tabla 4",
+      "filas": 17,
+      "columnas": 3,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2922,
+        2922,
+        2921
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 6,
+      "rotulo": "Tabla 5",
+      "filas": 9,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2191,
+        2191,
+        2191,
+        2192
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 7,
+      "rotulo": "Tabla 6",
+      "filas": 7,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2191,
+        2191,
+        2191,
+        2192
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 8,
+      "rotulo": "Tabla 7",
+      "filas": 16,
+      "columnas": 6,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1461,
+        1461,
+        1461,
+        1461,
+        1461,
+        1460
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 9,
+      "rotulo": "Tabla 8",
+      "filas": 6,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 10,
+      "rotulo": "Tabla 9",
+      "filas": 10,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 11,
+      "rotulo": "Tabla 10",
+      "filas": 8,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 12,
+      "rotulo": "Tabla 11",
+      "filas": 7,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 13,
+      "rotulo": "Tabla 12",
+      "filas": 9,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 14,
+      "rotulo": "Tabla 13",
+      "filas": 8,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1750,
+        1750,
+        1750,
+        1750,
+        1765
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 15,
+      "rotulo": "Tabla 14",
+      "filas": 10,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1735,
+        1735,
+        1735,
+        1735,
+        1825
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 16,
+      "rotulo": "Tabla 15",
+      "filas": 10,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 17,
+      "rotulo": "Tabla 16",
+      "filas": 7,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 18,
+      "rotulo": "Tabla 17",
+      "filas": 10,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1906,
+        1715,
+        1715,
+        1715,
+        1714
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 19,
+      "rotulo": "Tabla 18",
+      "filas": 7,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 20,
+      "rotulo": "Tabla 19",
+      "filas": 12,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1726,
+        1726,
+        1726,
+        1726,
+        1861
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 21,
+      "rotulo": "Tabla 20",
+      "filas": 8,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 22,
+      "rotulo": "Tabla 21",
+      "filas": 11,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 23,
+      "rotulo": "Tabla 22",
+      "filas": 11,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1855,
+        1727,
+        1727,
+        1727,
+        1729
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 24,
+      "rotulo": "Tabla 23",
+      "filas": 10,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1794,
+        1743,
+        1743,
+        1743,
+        1742
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 25,
+      "rotulo": "Tabla 24",
+      "filas": 10,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 26,
+      "rotulo": "Tabla 25",
+      "filas": 13,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2191,
+        2191,
+        2191,
+        2192
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 27,
+      "rotulo": "Tabla 26",
+      "filas": 7,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 28,
+      "rotulo": "Tabla 27",
+      "filas": 16,
+      "columnas": 6,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1439,
+        1439,
+        1493,
+        1515,
+        1439,
+        1440
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 29,
+      "rotulo": "Tabla 28",
+      "filas": 9,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 30,
+      "rotulo": "Tabla 29",
+      "filas": 5,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1868,
+        3449,
+        1581,
+        1867
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 31,
+      "rotulo": "Tabla 30",
+      "filas": 10,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        3305,
+        3161,
+        1150,
+        1149
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 32,
+      "rotulo": "Tabla 31",
+      "filas": 7,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2299,
+        2155,
+        2586,
+        1725
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 33,
+      "rotulo": "Tabla 32",
+      "filas": 5,
+      "columnas": 6,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1408,
+        1983,
+        1336,
+        1767,
+        1207,
+        1064
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 34,
+      "rotulo": "Tabla 33",
+      "filas": 4,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1624,
+        2055,
+        1552,
+        1839,
+        1695
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 35,
+      "rotulo": "Tabla 34",
+      "filas": 4,
+      "columnas": 7,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        862,
+        1638,
+        1638,
+        1954,
+        833,
+        618,
+        1222
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 36,
+      "rotulo": "Tabla 35",
+      "filas": 7,
+      "columnas": 7,
+      "columnas_esperadas": 7,
+      "anchos_dxa": [
+        1810,
+        1429,
+        857,
+        857,
+        1048,
+        1524,
+        1240
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 37,
+      "rotulo": "Tabla 36",
+      "filas": 7,
+      "columnas": 8,
+      "columnas_esperadas": 8,
+      "anchos_dxa": [
+        2078,
+        1220,
+        813,
+        768,
+        858,
+        813,
+        1220,
+        995
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 38,
+      "rotulo": "Tabla 37",
+      "filas": 7,
+      "columnas": 8,
+      "columnas_esperadas": 8,
+      "anchos_dxa": [
+        2078,
+        1220,
+        813,
+        768,
+        858,
+        813,
+        1220,
+        995
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 39,
+      "rotulo": "Tabla 38",
+      "filas": 10,
+      "columnas": 8,
+      "columnas_esperadas": 8,
+      "anchos_dxa": [
+        2078,
+        1220,
+        813,
+        768,
+        858,
+        813,
+        1220,
+        995
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 40,
+      "rotulo": "Tabla 39",
+      "filas": 8,
+      "columnas": 6,
+      "columnas_esperadas": 6,
+      "anchos_dxa": [
+        1762,
+        2412,
+        742,
+        788,
+        1391,
+        1670
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 41,
+      "rotulo": "Tabla 40",
+      "filas": 5,
+      "columnas": 7,
+      "columnas_esperadas": 7,
+      "anchos_dxa": [
+        2125,
+        1505,
+        1062,
+        708,
+        1328,
+        974,
+        1063
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 42,
+      "rotulo": "Tabla 41",
+      "filas": 5,
+      "columnas": 7,
+      "columnas_esperadas": 7,
+      "anchos_dxa": [
+        2125,
+        1505,
+        1062,
+        708,
+        1328,
+        974,
+        1063
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 43,
+      "rotulo": "Tabla 42",
+      "filas": 7,
+      "columnas": 7,
+      "columnas_esperadas": 7,
+      "anchos_dxa": [
+        2125,
+        1505,
+        1062,
+        708,
+        1328,
+        974,
+        1063
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 44,
+      "rotulo": "Tabla 43",
+      "filas": 5,
+      "columnas": 7,
+      "columnas_esperadas": 7,
+      "anchos_dxa": [
+        1800,
+        1750,
+        1150,
+        750,
+        950,
+        950,
+        1415
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 2,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 45,
+      "rotulo": "Tabla 44",
+      "filas": 5,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2739,
+        2739,
+        2739,
+        2739,
+        2741
+      ],
+      "ancho_total_dxa": 13697,
+      "seccion": 3,
+      "orientacion": "landscape",
+      "ancho_util_dxa": 13697,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 46,
+      "rotulo": "Tabla 45",
+      "filas": 5,
+      "columnas": 6,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1461,
+        1461,
+        1461,
+        1461,
+        1461,
+        1460
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 47,
+      "rotulo": "(sin rótulo)",
+      "filas": 8,
+      "columnas": 2,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        4382,
+        4383
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 48,
+      "rotulo": "(sin rótulo)",
+      "filas": 8,
+      "columnas": 2,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        4382,
+        4383
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 49,
+      "rotulo": "(sin rótulo)",
+      "filas": 8,
+      "columnas": 2,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        4382,
+        4383
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 50,
+      "rotulo": "Tabla 46",
+      "filas": 4,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2191,
+        2191,
+        2191,
+        2192
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 51,
+      "rotulo": "Tabla 47",
+      "filas": 4,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2191,
+        2191,
+        2191,
+        2192
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 52,
+      "rotulo": "Tabla 48",
+      "filas": 9,
+      "columnas": 4,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        2191,
+        2191,
+        2191,
+        2192
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 4,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 53,
+      "rotulo": "Tabla 49",
+      "filas": 15,
+      "columnas": 18,
+      "columnas_esperadas": 18,
+      "anchos_dxa": [
+        1100,
+        2100,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        665
+      ],
+      "ancho_total_dxa": 13630,
+      "seccion": 5,
+      "orientacion": "landscape",
+      "ancho_util_dxa": 13697,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 54,
+      "rotulo": "Tabla 50",
+      "filas": 15,
+      "columnas": 18,
+      "columnas_esperadas": 18,
+      "anchos_dxa": [
+        1100,
+        2100,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        651,
+        665
+      ],
+      "ancho_total_dxa": 13630,
+      "seccion": 5,
+      "orientacion": "landscape",
+      "ancho_util_dxa": 13697,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 55,
+      "rotulo": "Tabla 51",
+      "filas": 6,
+      "columnas": 5,
+      "columnas_esperadas": null,
+      "anchos_dxa": [
+        1439,
+        2520,
+        1588,
+        1631,
+        1587
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 6,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 56,
+      "rotulo": "(sin rótulo)",
+      "filas": 1,
+      "columnas": 1,
+      "columnas_esperadas": 1,
+      "anchos_dxa": [
+        8765
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 6,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 57,
+      "rotulo": "Figura 49",
+      "filas": 1,
+      "columnas": 1,
+      "columnas_esperadas": 1,
+      "anchos_dxa": [
+        8765
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 6,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 58,
+      "rotulo": "Figura 50",
+      "filas": 1,
+      "columnas": 1,
+      "columnas_esperadas": 1,
+      "anchos_dxa": [
+        8765
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 6,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    },
+    {
+      "indice": 59,
+      "rotulo": "Figura 51",
+      "filas": 1,
+      "columnas": 1,
+      "columnas_esperadas": 1,
+      "anchos_dxa": [
+        8765
+      ],
+      "ancho_total_dxa": 8765,
+      "seccion": 6,
+      "orientacion": "portrait",
+      "ancho_util_dxa": 8765,
+      "tblpPr": false,
+      "tblHeader": true,
+      "cantSplit_todas_filas": true,
+      "tblLayout_fijo": true,
+      "cumple": true
+    }
+  ],
+  "tablas_reconstruidas": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    53,
+    54,
+    56,
+    57,
+    58,
+    59
+  ],
+  "geometria": {
+    "ancho_util_portrait_dxa": 8765,
+    "ancho_util_landscape_dxa": 13697,
+    "ancho_anexo5_dxa": 13630,
+    "criterio": "Anchos útiles medidos en los sectPr reales (A4 11906/16838 menos márgenes 1701 + 1440). Toda tabla se normaliza a 8765 dxa en vertical; la matriz A1.1 y las matrices A5.x se ajustan a 13697 y 13630 dxa respectivamente."
+  },
+  "numeracion": {
+    "tablas_total": 51,
+    "figuras_total": 52,
+    "mapa": [
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 0",
+        "nuevo": "Tabla 1",
+        "texto": "Tabla 1 Síntesis comparativa de antecedentes internacionales y nacionales y diferenciación frente a SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 1",
+        "nuevo": "Figura 1",
+        "texto": "Figura 1 Pilares tecnológicos de la arquitectura web (URL, HTTP y HTML)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 2",
+        "nuevo": "Figura 2",
+        "texto": "Figura 2 Arquitectura de una aplicación web basada en el patrón Modelo-Vista-Controlador (MVC)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 3",
+        "nuevo": "Figura 3",
+        "texto": "Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 4",
+        "nuevo": "Figura 4",
+        "texto": "Figura 4 El proceso de la metodología ágil Extreme Programming (XP)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 5",
+        "nuevo": "Figura 5",
+        "texto": "Figura 5 Características y subcaracterísticas del modelo de calidad del producto de software ISO/IEC 25010"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 6",
+        "nuevo": "Figura 6",
+        "texto": "Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta el establecimiento de salud"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 7",
+        "nuevo": "Figura 7",
+        "texto": "Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de información de gestión logística (e-LMIS)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 8",
+        "nuevo": "Figura 8",
+        "texto": "Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información rutinaria de salud (RHIS)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 9",
+        "nuevo": "Figura 9",
+        "texto": "Figura 9 Marco teórico de facilidad de uso percibida y utilidad percibida en la adopción de sistemas de información en salud (TAM)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 10",
+        "nuevo": "Figura 10",
+        "texto": "Figura 10 Factores determinantes de la aceptación y uso de un sistema de información del programa nacional de inmunizaciones"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 1",
+        "nuevo": "Tabla 2",
+        "texto": "Tabla 2 Dimensiones, indicadores y escalas de medición de la gestión de movimientos mensuales de vacunas"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 1",
+        "nuevo": "Figura 11",
+        "texto": "Figura 11 Fases del ciclo de desarrollo Extreme Programming (XP) adaptado a SIVAC"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 1",
+        "nuevo": "Tabla 3",
+        "texto": "Tabla 3 Roles de usuarios y responsabilidades operativas en la DISA Apurímac II"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 2",
+        "nuevo": "Tabla 4",
+        "texto": "Tabla 4 Catálogo de Requerimientos Funcionales del Sistema SIVAC"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 3",
+        "nuevo": "Tabla 5",
+        "texto": "Tabla 5 Catálogo de Requerimientos No Funcionales según ISO/IEC 25010:2023"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 4",
+        "nuevo": "Tabla 6",
+        "texto": "Tabla 6 Matriz de trazabilidad entre Requerimientos Funcionales, Historias de Usuario y Dimensiones de la Variable Dependiente"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 5",
+        "nuevo": "Tabla 7",
+        "texto": "Tabla 7 Matriz del Planning Game: Estimación en Puntos de Historia, Prioridad e Iteración"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 6",
+        "nuevo": "Tabla 8",
+        "texto": "Tabla 8 Plan Detallado de las Cinco Iteraciones de Extreme Programming"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 2",
+        "nuevo": "Figura 12",
+        "texto": "Figura 12 Diagrama de Casos de Uso del Sistema SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 3",
+        "nuevo": "Figura 13",
+        "texto": "Figura 13 Arquitectura Lógica en Capas y Subsistemas del Sistema SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 4",
+        "nuevo": "Figura 14",
+        "texto": "Figura 14 Arquitectura en Cuatro Capas del Sistema SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 5",
+        "nuevo": "Figura 15",
+        "texto": "Figura 15 Diagrama de Actividades del Proceso de Registro de Movimientos de Vacunas con Validación FEFO"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 6",
+        "nuevo": "Figura 16",
+        "texto": "Figura 16 Diagrama de Actividades del Módulo de Inteligencia Logística ICI-DEMID y Clasificación Semafórica MSD"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 7",
+        "nuevo": "Figura 17",
+        "texto": "Figura 17 Diagrama de Secuencia UML: Autenticación Segura y Control de Acceso RBAC"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 7",
+        "nuevo": "Tabla 9",
+        "texto": "Tabla 9 Matriz de Control de Acceso Basado en Roles (RBAC) por Módulos y Operaciones"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 8",
+        "nuevo": "Figura 18",
+        "texto": "Figura 18 Diagrama de Secuencia UML: Registro de Entregas Adicionales, Descuento FEFO y Sincronización Intermensual"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 9",
+        "nuevo": "Figura 19",
+        "texto": "Figura 19 Modelo Entidad-Relación Conceptual por Dominios de SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 10",
+        "nuevo": "Figura 20",
+        "texto": "Figura 20 Esquema Relacional Lógico de Entidades Principales en PostgreSQL / Prisma ORM"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 11",
+        "nuevo": "Figura 21",
+        "texto": "Figura 21 Diccionario Físico de Base de Datos y Relaciones Relacionales en PostgreSQL 16"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 8",
+        "nuevo": "Tabla 10",
+        "texto": "Tabla 10 Diccionario de Datos: Tabla redes"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 9",
+        "nuevo": "Tabla 11",
+        "texto": "Tabla 11 Diccionario de Datos: Tabla microredes"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 10",
+        "nuevo": "Tabla 12",
+        "texto": "Tabla 12 Diccionario de Datos: Tabla centros_acopio"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 11",
+        "nuevo": "Tabla 13",
+        "texto": "Tabla 13 Diccionario de Datos: Tabla establecimientos"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 12",
+        "nuevo": "Tabla 14",
+        "texto": "Tabla 14 Diccionario de Datos: Tablas usuarios y usuarios_centros_acopio"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 13",
+        "nuevo": "Tabla 15",
+        "texto": "Tabla 15 Diccionario de Datos: Tabla vacunas"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 14",
+        "nuevo": "Tabla 16",
+        "texto": "Tabla 16 Diccionario de Datos: Tablas jeringas y configuracion_jeringa_vacuna"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 15",
+        "nuevo": "Tabla 17",
+        "texto": "Tabla 17 Diccionario de Datos: Tabla lotes_vacunas"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 16",
+        "nuevo": "Tabla 18",
+        "texto": "Tabla 18 Diccionario de Datos: Tabla planificacion_anual"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 17",
+        "nuevo": "Tabla 19",
+        "texto": "Tabla 19 Diccionario de Datos: Tabla movimientos_vacunas"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 18",
+        "nuevo": "Tabla 20",
+        "texto": "Tabla 20 Diccionario de Datos: Tabla entregas_adicionales"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 19",
+        "nuevo": "Tabla 21",
+        "texto": "Tabla 21 Diccionario de Datos: Tablas vales_entrega y vales_detalle"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 20",
+        "nuevo": "Tabla 22",
+        "texto": "Tabla 22 Diccionario de Datos: Tabla kardex"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 21",
+        "nuevo": "Tabla 23",
+        "texto": "Tabla 23 Diccionario de Datos: Tabla ici_demid_registros"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 22",
+        "nuevo": "Tabla 24",
+        "texto": "Tabla 24 Diccionario de Datos: Tabla alertas"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 23",
+        "nuevo": "Tabla 25",
+        "texto": "Tabla 25 Stack Tecnológico de Desarrollo y Librerías del Ecosistema SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 12",
+        "nuevo": "Figura 22",
+        "texto": "Figura 22 Estructura del Proyecto Backend en Node.js, Express y Prisma ORM"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 13",
+        "nuevo": "Figura 23",
+        "texto": "Figura 23 Estructura Modular del Cliente Web SPA en React 18, TypeScript y Vite"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 14",
+        "nuevo": "Figura 24",
+        "texto": "Figura 24 Implementación del Algoritmo de Sincronización Recursiva de Saldos Intermensuales en TypeScript"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 15",
+        "nuevo": "Figura 25",
+        "texto": "Figura 25 Servicio de Detección Proactiva de Alertas Tempranas con Ventana de Cooldown de 7 Días"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 16",
+        "nuevo": "Figura 26",
+        "texto": "Figura 26 Middleware de Autenticación, Verificación Criptográfica JWT y Extracción de Permisos RBAC Multi-Acopio"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 17",
+        "nuevo": "Figura 27",
+        "texto": "Figura 27 Algoritmo de Cálculo de Indicadores de Disponibilidad Logística MSD y Semáforo Normativo"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 18",
+        "nuevo": "Figura 28",
+        "texto": "Figura 28 Interfaz de Usuario: Pantalla de Autenticación e Inicio de Sesión de SIVAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 19",
+        "nuevo": "Figura 29",
+        "texto": "Figura 29 Interfaz de Usuario: Dashboard Principal de Monitoreo PAI, Curvas de Tendencia y Cadena de Frío"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 20",
+        "nuevo": "Figura 30",
+        "texto": "Figura 30 Interfaz de Usuario: Panel Inferior del Dashboard con Centros de Acopio Zonales, Alertas y Bitácora"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 21",
+        "nuevo": "Figura 31",
+        "texto": "Figura 31 Interfaz de Usuario: Módulo de Inventario y Control de Lotes de Biológicos con Trazabilidad FEFO"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 22",
+        "nuevo": "Figura 32",
+        "texto": "Figura 32 Interfaz de Usuario: Vista de Gestión de Lotes y Filtros Dinámicos por Estado y Caducidad"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 23",
+        "nuevo": "Figura 33",
+        "texto": "Figura 33 Interfaz de Usuario: Matriz Contable de Movimientos Mensuales de Vacunas por Establecimiento"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 24",
+        "nuevo": "Figura 34",
+        "texto": "Figura 34 Interfaz de Usuario: Registro y Cuadrícula Operativa de Movimientos con Entregas Base y Adicionales"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 25",
+        "nuevo": "Figura 35",
+        "texto": "Figura 35 Interfaz de Usuario: Módulo de Planificación Anual de Metas PAI y Programación Mensual Ene-Dic"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 26",
+        "nuevo": "Figura 36",
+        "texto": "Figura 36 Interfaz de Usuario: Centro de Reportes y Matriz Trimestral de Seguimiento CENARES Q1-Q4"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 27",
+        "nuevo": "Figura 37",
+        "texto": "Figura 37 Interfaz de Usuario: Módulo de Inteligencia Logística ICI-DEMID con Semáforo de Disponibilidad MSD"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 28",
+        "nuevo": "Figura 38",
+        "texto": "Figura 38 Interfaz de Usuario: Módulo de Kardex Digital Cronológico de Movimientos por Lote y Almacén"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 29",
+        "nuevo": "Figura 39",
+        "texto": "Figura 39 Interfaz de Usuario: Vista Detallada del Kardex con Múltiples Operaciones (Ingreso, Salida y Transferencia)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 30",
+        "nuevo": "Figura 40",
+        "texto": "Figura 40 Interfaz de Usuario: Módulo de Administración de Usuarios y Asignación de Roles RBAC"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 31",
+        "nuevo": "Figura 41",
+        "texto": "Figura 41 Interfaz de Usuario: Gestión de Usuarios mostrando Fixture de Prueba Automatizada"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 32",
+        "nuevo": "Figura 42",
+        "texto": "Figura 42 Interfaz de Usuario: Centro de Alertas Tempranas y Triaje Operativo con Severidades"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 33",
+        "nuevo": "Figura 43",
+        "texto": "Figura 43 Interfaz de Usuario: Módulo de Asignación y Reglas Normativas de Jeringas e Insumos por Vacuna"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 34",
+        "nuevo": "Figura 44",
+        "texto": "Figura 44 Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 24",
+        "nuevo": "Tabla 26",
+        "texto": "Tabla 26 Resumen de Suites de Pruebas Automatizadas Unitarias y de Integración en Jest"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 25",
+        "nuevo": "Tabla 27",
+        "texto": "Tabla 27 Matriz de Casos de Prueba de Aceptación con el Usuario (CP-01 a CP-15)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 26",
+        "nuevo": "Tabla 28",
+        "texto": "Tabla 28 Matriz de Evaluación de Calidad del Producto de Software según ISO/IEC 25010:2023"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 35",
+        "nuevo": "Figura 45",
+        "texto": "Figura 45 Diagrama de Despliegue Físico y Topología de Red en Producción con Docker y Nginx"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 0",
+        "nuevo": "Tabla 29",
+        "texto": "Tabla 29 Cronograma y protocolo de ejecución de la intervención preexperimental"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 2",
+        "nuevo": "Tabla 30",
+        "texto": "Tabla 30 Distribución de la población y muestra censal por función operativa y centro de acopio en la DISA Apurímac II"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 0",
+        "nuevo": "Tabla 31",
+        "texto": "Tabla 31 Estructura de unidades de observación primaria, reglas de agregación pareada y criterios de inclusión"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 3",
+        "nuevo": "Tabla 32",
+        "texto": "Tabla 32 Operacionalización de las variables de investigación"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 4",
+        "nuevo": "Tabla 33",
+        "texto": "Tabla 33 Relación de técnicas e instrumentos de recolección de datos por dimensión e indicador"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 5",
+        "nuevo": "Tabla 34",
+        "texto": "Tabla 34 Estructura de la validación de los instrumentos de recolección de datos"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 13",
+        "nuevo": "Tabla 35",
+        "texto": "Tabla 35 Confiabilidad de consistencia interna del Cuestionario TAM (Instrumento N.° 03) mediante el coeficiente Alfa de Cronbach e interval"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 14",
+        "nuevo": "Tabla 36",
+        "texto": "Tabla 36 Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 1: Oportunidad de procesamiento (n = 14)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 5",
+        "nuevo": "Figura 46",
+        "texto": "Figura 46 Diagramas de cajas pareados (Boxplots) para los tiempos de registro y emisión de vales (D1)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 15",
+        "nuevo": "Tabla 37",
+        "texto": "Tabla 37 Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 2: Consistencia documental (n = 14)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 6",
+        "nuevo": "Figura 47",
+        "texto": "Figura 47 Gráfico de barras e intervalos de confianza para los indicadores de consistencia documental (D2)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 16",
+        "nuevo": "Tabla 38",
+        "texto": "Tabla 38 Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 3: Satisfacción del usuario (n = 14)"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura 7",
+        "nuevo": "Figura 48",
+        "texto": "Figura 48 Comparación de puntajes del Modelo de Aceptación Tecnológica (TAM) pretest vs posttest (D3)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 17",
+        "nuevo": "Tabla 39",
+        "texto": "Tabla 39 Prueba de bondad de ajuste de normalidad de Shapiro-Wilk para las diferencias pareadas pretest y postest (n = 14)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 18",
+        "nuevo": "Tabla 40",
+        "texto": "Tabla 40 Contraste inferencial de la Hipótesis Específica 1: Oportunidad de procesamiento mediante pruebas paramétricas y no paramétricas pa"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 19",
+        "nuevo": "Tabla 41",
+        "texto": "Tabla 41 Contraste inferencial de la Hipótesis Específica 2: Consistencia documental mediante pruebas paramétricas y no paramétricas pareada"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 20",
+        "nuevo": "Tabla 42",
+        "texto": "Tabla 42 Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario mediante pruebas paramétricas y no paramétricas paread"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla 21",
+        "nuevo": "Tabla 43",
+        "texto": "Tabla 43 Resumen de contrastación inferencial multivariada y regla de decisión para la Hipótesis General con ajuste secuencial de Holm-Bonfe"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A1.1",
+        "nuevo": "Tabla 44",
+        "texto": "Tabla 44 Matriz de consistencia metodológica del estudio SIVAC"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A2.1",
+        "nuevo": "Tabla 45",
+        "texto": "Tabla 45 Matriz de operacionalización de las variables de investigación"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A4.1",
+        "nuevo": "Tabla 46",
+        "texto": "Tabla 46 Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A4.2",
+        "nuevo": "Tabla 47",
+        "texto": "Tabla 47 Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A4.3",
+        "nuevo": "Tabla 48",
+        "texto": "Tabla 48 Instrumento N.° 03: Cuestionario TAM de Satisfacción del Usuario (Modalidad A)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A5.1",
+        "nuevo": "Tabla 49",
+        "texto": "Tabla 49 Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A5.2",
+        "nuevo": "Tabla 50",
+        "texto": "Tabla 50 Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14)"
+      },
+      {
+        "tipo": "Tabla",
+        "antiguo": "Tabla A6.1",
+        "nuevo": "Tabla 51",
+        "texto": "Tabla 51 Matriz de Historias de Usuario desarrolladas e implementadas en SIVAC bajo XP"
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura A7.1",
+        "nuevo": "Figura 49",
+        "texto": "Figura 49 Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC impartida a los operadores de inmunizaciones."
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura A7.2",
+        "nuevo": "Figura 50",
+        "texto": "Figura 50 Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central."
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura A7.3",
+        "nuevo": "Figura 51",
+        "texto": "Figura 51 Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales."
+      },
+      {
+        "tipo": "Figura",
+        "antiguo": "Figura A7.4",
+        "nuevo": "Figura 52",
+        "texto": "Figura 52 Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud."
+      }
+    ],
+    "referencias_cruzadas_actualizadas": [
+      {
+        "ancla": "La matriz detallada de operacionalización de variables se presenta en ",
+        "antes": "en la Tabla 10 del Capítulo IV",
+        "despues": "en la Tabla 32"
+      },
+      {
+        "ancla": "En la Tabla 1 se presenta la estructura integral de las tres dimension",
+        "antes": "En la Tabla 1",
+        "despues": "En la Tabla 2"
+      },
+      {
+        "ancla": "En la Figura 1 se esquematizan las fases metodológicas",
+        "antes": "En la Figura 1",
+        "despues": "En la Figura 11"
+      },
+      {
+        "ancla": "se formalizaron cuatro roles operativos en la Tabla 1",
+        "antes": "en la Tabla 1",
+        "despues": "en la Tabla 3"
+      },
+      {
+        "ancla": "En la Tabla 2 se consolida el catálogo oficial",
+        "antes": "En la Tabla 2",
+        "despues": "En la Tabla 4"
+      },
+      {
+        "ancla": "En la Tabla 3 se detallan los ocho requerimientos no funcionales",
+        "antes": "En la Tabla 3",
+        "despues": "En la Tabla 5"
+      },
+      {
+        "ancla": "En la Tabla 4 se establece la matriz de correspondencia",
+        "antes": "En la Tabla 4",
+        "despues": "En la Tabla 6"
+      },
+      {
+        "ancla": "En la Tabla 5 se presentan las historias de usuario priorizadas",
+        "antes": "En la Tabla 5",
+        "despues": "En la Tabla 7"
+      },
+      {
+        "ancla": "En la Tabla 6 se detalla el cronograma de iteraciones",
+        "antes": "En la Tabla 6",
+        "despues": "En la Tabla 8"
+      },
+      {
+        "ancla": "En la Figura 2 se exhibe el modelado visual",
+        "antes": "En la Figura 2",
+        "despues": "En la Figura 12"
+      },
+      {
+        "ancla": "En la Figura 3 se ilustra la arquitectura de subsistemas",
+        "antes": "En la Figura 3",
+        "despues": "En la Figura 13"
+      },
+      {
+        "ancla": "conforme se detalla en la Figura 4:",
+        "antes": "en la Figura 4",
+        "despues": "en la Figura 14"
+      },
+      {
+        "ancla": "modelado en la Figura 5. El flujo describe",
+        "antes": "en la Figura 5",
+        "despues": "en la Figura 15"
+      },
+      {
+        "ancla": "graficado en la Figura 6. Este proceso modela",
+        "antes": "en la Figura 6",
+        "despues": "en la Figura 16"
+      },
+      {
+        "ancla": "En la Figura 7 se expone el diagrama de secuencia",
+        "antes": "En la Figura 7",
+        "despues": "En la Figura 17"
+      },
+      {
+        "ancla": "en la Tabla 7 se detalla la matriz de privilegios",
+        "antes": "en la Tabla 7",
+        "despues": "en la Tabla 9"
+      },
+      {
+        "ancla": "En la Figura 8 se presenta el diagrama de secuencia",
+        "antes": "En la Figura 8",
+        "despues": "En la Figura 18"
+      },
+      {
+        "ancla": "En la Figura 9 se exhibe el Modelo Entidad-Relación",
+        "antes": "En la Figura 9",
+        "despues": "En la Figura 19"
+      },
+      {
+        "ancla": "En la Figura 10 se presenta el Esquema Relacional",
+        "antes": "En la Figura 10",
+        "despues": "En la Figura 20"
+      },
+      {
+        "ancla": "En la Figura 11 se visualiza el Diccionario Físico",
+        "antes": "En la Figura 11",
+        "despues": "En la Figura 21"
+      },
+      {
+        "ancla": "En la Tabla 23 se sintetiza el stack de desarrollo",
+        "antes": "En la Tabla 23",
+        "despues": "En la Tabla 25"
+      },
+      {
+        "ancla": "En la Figura 12 se exhibe el árbol de directorios del proyecto backend",
+        "antes": "En la Figura 12",
+        "despues": "En la Figura 22"
+      },
+      {
+        "ancla": "En la Figura 13 se muestra el árbol de directorios del frontend",
+        "antes": "En la Figura 13",
+        "despues": "En la Figura 23"
+      },
+      {
+        "ancla": "documentado en la Figura 15. Este componente evalúa",
+        "antes": "en la Figura 15",
+        "despues": "en la Figura 25"
+      },
+      {
+        "ancla": "Tal como se ilustra en la Figura 16",
+        "antes": "en la Figura 16",
+        "despues": "en la Figura 26"
+      },
+      {
+        "ancla": "En la Figura 17 se exhibe el método calcularIndicadoresDisponibilidad",
+        "antes": "En la Figura 17",
+        "despues": "En la Figura 27"
+      },
+      {
+        "ancla": "En la Figura 34 se ilustra la ejecución real",
+        "antes": "En la Figura 34",
+        "despues": "En la Figura 44"
+      },
+      {
+        "ancla": "En la Tabla 24 se resume la cobertura",
+        "antes": "En la Tabla 24",
+        "despues": "En la Tabla 26"
+      },
+      {
+        "ancla": "En la Tabla 25 se consolidan los resultados observados",
+        "antes": "En la Tabla 25",
+        "despues": "En la Tabla 27"
+      },
+      {
+        "ancla": "En la Tabla 26 se sintetizan los resultados de la evaluación",
+        "antes": "En la Tabla 26",
+        "despues": "En la Tabla 28"
+      },
+      {
+        "ancla": "En la Figura 35 se detalla el diagrama de despliegue",
+        "antes": "En la Figura 35",
+        "despues": "En la Figura 45"
+      },
+      {
+        "ancla": "En la Tabla 9 se detalla la distribución del personal evaluado",
+        "antes": "En la Tabla 9",
+        "despues": "En la Tabla 30"
+      },
+      {
+        "ancla": "se presentan en la Tabla 10.",
+        "antes": "en la Tabla 10",
+        "despues": "en la Tabla 32"
+      },
+      {
+        "ancla": "En la Tabla 11 se sintetiza la correspondencia metodológica",
+        "antes": "En la Tabla 11",
+        "despues": "En la Tabla 33"
+      },
+      {
+        "ancla": "se reportarán en la Tabla 12 una vez concluida",
+        "antes": "en la Tabla 12",
+        "despues": "en la Tabla 34"
+      },
+      {
+        "ancla": "En la Tabla 4 se consolidan los coeficientes psicométricos",
+        "antes": "En la Tabla 4",
+        "despues": "En la Tabla 35"
+      },
+      {
+        "ancla": "En la Tabla 5 y en la Figura 6 se detallan",
+        "antes": "En la Tabla 5 y en la Figura 6",
+        "despues": "En la Tabla 36 y en la Figura 46"
+      },
+      {
+        "ancla": "en la Tabla 6 y se ilustran comparativamente en la Figura 7",
+        "antes": "en la Tabla 6 y se ilustran comparativamente en la Figura 7",
+        "despues": "en la Tabla 37 y se ilustran comparativamente en la Figura 47"
+      },
+      {
+        "ancla": "En la Tabla 7 y en la Figura 8 se presenta",
+        "antes": "En la Tabla 7 y en la Figura 8",
+        "despues": "En la Tabla 38 y en la Figura 48"
+      },
+      {
+        "ancla": "La Tabla 8 resume las decisiones",
+        "antes": "La Tabla 8",
+        "despues": "La Tabla 39"
+      },
+      {
+        "ancla": "(Tabla 9).",
+        "antes": "(Tabla 9)",
+        "despues": "(Tabla 40)"
+      },
+      {
+        "ancla": "(Tabla 10).",
+        "antes": "(Tabla 10)",
+        "despues": "(Tabla 41)"
+      },
+      {
+        "ancla": "(Tabla 11).",
+        "antes": "(Tabla 11)",
+        "despues": "(Tabla 42)"
+      },
+      {
+        "ancla": "En la Tabla 12 se presenta el balance",
+        "antes": "En la Tabla 12",
+        "despues": "En la Tabla 43"
+      },
+      {
+        "ancla": "En la Tabla A1.1 se presenta",
+        "antes": "En la Tabla A1.1",
+        "despues": "En la Tabla 44"
+      },
+      {
+        "ancla": "En la Tabla A2.1 se presenta",
+        "antes": "En la Tabla A2.1",
+        "despues": "En la Tabla 45"
+      },
+      {
+        "ancla": "En la Tabla A6.1 se sintetizan",
+        "antes": "En la Tabla A6.1",
+        "despues": "En la Tabla 51"
+      }
+    ],
+    "referencias_cruzadas_fallidas": [],
+    "rotulos_insertados": 3,
+    "rotulos_fusionados_con_titulo": 85
+  },
+  "indices": {
+    "contenido_entradas": 111,
+    "figuras_entradas": 52,
+    "tablas_entradas": 51,
+    "incluye": {
+      "3.3": true,
+      "capitulo_v": true,
+      "capitulo_vi": true,
+      "conclusiones": true,
+      "recomendaciones": true,
+      "anexo_1": true,
+      "anexo_7": true
+    }
+  },
+  "integridad": {
+    "acta": [
+      {
+        "campo": "instruccion_acta",
+        "antes": "[ Espacio reservado para la inserción del documento oficial escaneado del Acta de Sustentación, dictamen aprobatorio del Jurado Calificador y firmas correspondientes, expedida por la Escuela Profesional de Ingeniería de Sistemas de la UNAJMA ]",
+        "despues": "Acta pendiente de suscripción por el jurado evaluador."
+      },
+      {
+        "campo": "dictamen_prellenado",
+        "antes": "Dictamen Final: APROBADO CON MENCIÓN [ _______________________ ]",
+        "despues": "Calificación final: __________________________________________"
+      }
+    ]
+  },
+  "pictogramas": {
+    "U+270D": 3,
+    "U+FE0F": 3
+  },
+  "notas_anexo7_diferenciadas": [
+    {
+      "figura": "A7.1",
+      "nota": "Nota. Registro fotográfico de la sesión de capacitación en la sede central. Dirección de Salud Apurímac II (2026)."
+    },
+    {
+      "figura": "A7.2",
+      "nota": "Nota. Registro fotográfico del cronometraje de tiempos en el Almacén Especializado de Vacunas. Dirección de Salud Apurímac II (2026)."
+    },
+    {
+      "figura": "A7.3",
+      "nota": "Nota. Registro fotográfico del cotejo documental y la verificación física de lotes. Dirección de Salud Apurímac II (2026)."
+    },
+    {
+      "figura": "A7.4",
+      "nota": "Nota. Registro fotográfico de la aplicación del cuestionario TAM a los operadores de inmunizaciones. Dirección de Salud Apurímac II (2026)."
+    }
+  ],
+  "emojis_erradicados_por_reconstruccion": [
+    "U+1F4F7 (4 marcadores del Anexo 7, sustituidos por recuadro nativo)"
+  ],
+  "rotulos_duplicados": [],
+  "tablas_sin_rotulo_numerado": [
+    {
+      "indice": 1,
+      "filas": 1,
+      "columnas": 1
+    },
+    {
+      "indice": 47,
+      "filas": 8,
+      "columnas": 2
+    },
+    {
+      "indice": 48,
+      "filas": 8,
+      "columnas": 2
+    },
+    {
+      "indice": 49,
+      "filas": 8,
+      "columnas": 2
+    },
+    {
+      "indice": 56,
+      "filas": 1,
+      "columnas": 1
+    }
+  ],
+  "auditoria_motor_nota": "margenes_unajma_ok=false obedece a la expectativa hardcodeada 1985/1418 del motor de auditoría; los 7 sectPr cumplen la regla canónica UNAJMA (izquierdo 1701 dxa, superior/derecho/inferior 1440 dxa).",
+  "figuras": {
+    "inline_shapes_total": 49,
+    "escaladas": [
+      {
+        "figura": 47,
+        "ancho_previo_in": 6.0,
+        "ancho_nuevo_in": 5.8
+      },
+      {
+        "figura": 48,
+        "ancho_previo_in": 6.0,
+        "ancho_nuevo_in": 5.8
+      },
+      {
+        "figura": 49,
+        "ancho_previo_in": 6.0,
+        "ancho_nuevo_in": 5.8
+      }
+    ],
+    "notas_figura_prefijadas": 35
+  },
+  "emojis_erradicados": [
+    "U+270D",
+    "U+FE0F"
+  ],
+  "pdf_paginas": 156,
+  "auditoria_motor": {
+    "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v05.docx",
+    "existe": true,
+    "sha256": "f36a666c02ebdec3f6427c660c92a71645ae9caa9b59559e77deef8d4f4a1a70",
+    "bytes": 15252132,
+    "margenes_unajma_ok": false,
+    "tablas_total": 59,
+    "tablas_flotantes": 0,
+    "tablas_con_header": 59,
+    "tablas_con_cantsplit": 59,
+    "referencias_sangria_francesa": 42,
+    "formulas_omml": 12,
+    "cumple_apa7": false,
+    "hallazgos": [
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440",
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440",
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440",
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440",
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440",
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440",
+      "Márgenes fuera de norma UNAJMA: top=1440, left=1701, bottom=1440, right=1440"
+    ]
+  },
+  "verificacion_interna": [],
+  "paginas_control_png": [
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_006.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_009.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_012.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_117.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_118.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_119.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_126.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_129.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_151.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_152.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\paginas_control\\pagina_154.png"
+  ]
+}

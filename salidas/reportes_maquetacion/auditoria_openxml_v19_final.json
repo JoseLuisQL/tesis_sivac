@@ -1,0 +1,22 @@
+{
+  "archivo": "salidas/documentos/informe_final_v19.docx",
+  "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+  "bytes": 15090858,
+  "margenes_unajma_ok": true,
+  "tablas_total": 59,
+  "tablas_flotantes": 0,
+  "tablas_con_header": 59,
+  "tablas_con_cantsplit": 59,
+  "referencias_sangria_francesa": 53,
+  "formulas_omml": 12,
+  "formulas_omml_en_tablas": 0,
+  "cumple_apa7": true,
+  "hallazgos": [],
+  "auditor_independiente_apa7": {
+    "margenes": "OK",
+    "tablas_sin_flotacion": "59/59",
+    "referencias_sangria_francesa": 53,
+    "formulas_omml": 12,
+    "dictamen_global": "APROBADO"
+  }
+}

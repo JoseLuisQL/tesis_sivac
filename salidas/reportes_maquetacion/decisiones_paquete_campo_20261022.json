@@ -1,0 +1,120 @@
+{
+  "documento": "Registro de decisiones del Director General sobre el paquete de campo",
+  "fecha": "2026-10-22",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "estado_empirico": "Preparacion de formularios para aplicacion real. No acredita aplicacion, validacion ni resultados de campo.",
+  "alcance_autorizado": "Emitir paquetes en blanco, listos para aplicar, identificados solo por codigo, mas el kit del investigador y la guia de campo en PDF.",
+  "alcance_no_autorizado": [
+    "Rellenar respuestas, mediciones, nombres, firmas o fechas de aplicacion.",
+    "Simular la ejecucion de campo.",
+    "Firmar por el personal.",
+    "Asignar personas o establecimientos a partir de los CSV de prueba."
+  ],
+  "decisiones": [
+    {
+      "id": "D-PC-01",
+      "asunto": "Ruta de emision",
+      "decision": "salidas/instrumentos/PAQUETE_CAMPO_14_20261022",
+      "motivo": "Coincide con el destino_previsto del registro de comision vigente. La ruta propuesta por el especialista en la especificacion queda subordinada.",
+      "divergencia_registrada": "especificacion_paquete_campo_20261022.json propone salidas/evidencias/instrumentos_aplicados/paquetes_campo_20261022"
+    },
+    {
+      "id": "D-PC-02",
+      "asunto": "Fuente literal de los reactivos",
+      "decision": "Extraer por codigo las tablas 13, 14 y 15 del modelo rector EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx. Prohibida la retranscripcion manual.",
+      "motivo": "Evita deriva de redaccion y preserva la correspondencia con el texto sometido a juicio de expertos."
+    },
+    {
+      "id": "D-PC-03",
+      "asunto": "DC-01 Modalidad A postest inexistente",
+      "decision": "Emitir el cuestionario A de postest desde la tabla 14, con los mismos ocho reactivos y rotulo POST.",
+      "motivo": "La redaccion de la tabla 14 es neutra respecto de la fase ('El procedimiento...'), por lo que el reactivo no se altera al aplicarse despues de la intervencion. La redaccion de salidas/instrumentos menciona el 'procedimiento actual' y no es reutilizable en postest.",
+      "resuelve": "DC-01"
+    },
+    {
+      "id": "D-PC-04",
+      "asunto": "DC-02 archivo rotulado Modalidad B que contiene AP/UP",
+      "decision": "La Modalidad B se emite exclusivamente desde la tabla 15 (PU-01 a PU-04 y PE-01 a PE-04). El archivo salidas/instrumentos/INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_B_POSTEST.docx queda descartado como fuente.",
+      "motivo": "Contiene AP/UP con redaccion de SIVAC: es una Modalidad A postest mal rotulada.",
+      "resuelve": "DC-02"
+    },
+    {
+      "id": "D-PC-05",
+      "asunto": "Bordado de los formularios de campo",
+      "decision": "Rejilla visible en todos los formularios y en las tablas de la guia.",
+      "motivo": "Excepcion declarada al bordado APA 7 de tres lineas: los instrumentos de campo requieren celdas delimitadas para el registro manual. Se implementa como funcion aditiva aplicar_bordes_rejilla en el motor, sin alterar funciones existentes.",
+      "base": "DEC-025 y DEC-026"
+    },
+    {
+      "id": "D-PC-06",
+      "asunto": "Geometria y tipografia",
+      "decision": "A4 vertical; margenes 3.0 cm izquierdo y 2.5 cm derecho, superior e inferior; ancho util 8788 dxa; Times New Roman 12 pt cuerpo, 10 pt tablas, 9.5 pt notas; interlineado 1.5 en cuerpo y 1.0 en celdas; filas de formulario con alto minimo 0.9 cm.",
+      "motivo": "Regla canonica 03, con ajuste de alto de fila para escritura manual."
+    },
+    {
+      "id": "D-PC-07",
+      "asunto": "Formulas dentro de celdas",
+      "decision": "Prohibidas. Las celdas de la Ficha 02 describen la operacion en palabras. La formula formal permanece en el cuerpo del capitulo IV.",
+      "motivo": "Regla canonica 03, seccion 4, estandar UNAJMA."
+    },
+    {
+      "id": "D-PC-08",
+      "asunto": "Ubicacion de los maestros DOCX",
+      "decision": "Los maestros editables se guardan en _MAESTROS_DOCX; las carpetas del trabajador contienen unicamente PDF listos para imprimir.",
+      "motivo": "Evita confusion en la aplicacion y permite reimpresion controlada."
+    },
+    {
+      "id": "D-PC-09",
+      "asunto": "Emision por etapas",
+      "decision": "Etapa 1: constructor, un paquete completo (PAQ-TRAB-01) y la guia. Etapa 2: los trece paquetes restantes y el kit del investigador, una vez auditada la muestra.",
+      "motivo": "Un defecto de geometria replicado en 14 paquetes obliga a reimprimir 210 paginas."
+    },
+    {
+      "id": "D-PC-10",
+      "asunto": "Cierre de la emision y auditoria de direccion",
+      "decision": "Se acepta la emision completa: 14 paquetes con 12 rutas PDF cada uno (238 paginas), guia de 14 paginas, kit de 11 formularios y matriz de captura. Manifiesto consolidado _MANIFIESTO_EMISION.json, 299.739 bytes, SHA-256 f3053c809d5e2599973adefaf7263008d47951c4d7d6ef1e8fd2f61a4c101a87.",
+      "verificacion_independiente": {
+        "archivos_cotejados": 360,
+        "discrepancias_de_huella": 0,
+        "paginas_en_blanco": 0,
+        "exclusividad_de_codigo": "verificada en los 168 PDF de paquete por extraccion de texto",
+        "literalidad_de_reactivos": "AP-01 a UP-04 y PU-01 a PE-04 identicos a las tablas 14 y 15 del rector",
+        "rejilla_y_ancho": "180 tablas maestras con seis bordes y 8788 dxa"
+      },
+      "correcciones_aplicadas": [
+        "Consentimiento con investigador y asesora, subtitulo unico y contacto en blanco.",
+        "Ficha 01 con reparto de anchos en 8788 dxa, tabla de incidencias de seis filas y descripciones en dos lineas.",
+        "Ficha 02 con remision a la hoja de continuacion.",
+        "Notas de calibracion con coma decimal (0,75 y 0,80)."
+      ],
+      "error_de_direccion_registrado": "El reparto de anchos ordenado para la Ficha 01 sumaba 9788 dxa; el especialista lo ajusto a 8788 dxa y lo declaro como divergencia en el manifiesto.",
+      "alcance": "Material listo para impresion. No acredita aplicacion, medicion ni resultados. QG-5 abierta y analisis inferencial BLOQUEADO."
+    }
+  ],
+  "pendientes_que_no_resuelve_el_director": [
+    {
+      "id": "P-01",
+      "asunto": "Modo de corpus documental",
+      "detalle": "La fuente fija de 40 a 60 documentos por ventana sin precisar si es global o por trabajador. Decide la asesora antes del pretest. La matriz de captura lleva el parametro vacio con tres opciones.",
+      "responsable": "asesora"
+    },
+    {
+      "id": "P-02",
+      "asunto": "Version corregida del consentimiento informado",
+      "detalle": "El modelo institucional menciona diez preguntas y veinte registros y contiene contactos no verificados. Debe aprobarse la version corregida antes de imprimir.",
+      "responsable": "asesora"
+    },
+    {
+      "id": "P-03",
+      "asunto": "Criterio minimo de exposicion a SIVAC",
+      "detalle": "No se fija un minimo de dias de uso. Debe aprobarse antes del postest y registrarse en el control de exposicion.",
+      "responsable": "asesora"
+    },
+    {
+      "id": "P-04",
+      "asunto": "Ubicacion de salidas/matrices",
+      "detalle": "La fuente normativa no se localizo en el arbol de trabajo al 2026-10-22. La copia del vault esta alineada, pero es registro derivado.",
+      "responsable": "tesista"
+    }
+  ]
+}

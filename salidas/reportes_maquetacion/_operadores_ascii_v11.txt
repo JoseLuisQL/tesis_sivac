@@ -1,0 +1,44 @@
+P145  chi   x8 | Kay yachaymaskhaypa hatun munayninmi karqa SIVAC sutiyniyuq web llikapa yanapayninwan imaynatas sapakilla hampi churanakuna apaykachay allinchakusqanta tupuy, D
+P146  chi   x3 | Chawpi rimaykuna: Web llika, Extreme Programming, sapakilla hampi churanakuna apaykachay, chiri apaykachay, qillqa chiqap kaynin, TAM yachay, Wilcoxon chimpapur
+P181  chi   x1 | Tecnológicamente, el estudio se justificó al modernizar la infraestructura informática del área de inmunizaciones de la DISA Apurímac II mediante una arquitectu
+P284  beta  x2 | En consonancia con las decisiones metodológicas institucionales de la presente investigación, la tercera dimensión oficial, Satisfacción del usuario, se operaci
+P370  chi   x1 | La arquitectura de SIVAC se concibió bajo un patrón desacoplado en capas lógicas intercomunicadas mediante una Interfaz de Programación de Aplicaciones basada e
+P407  chi   x1 | Nota. Esquema relacional lógico que detalla las veintidós tablas normalizadas, sus claves compuestas e índices optimizados definidos en el archivo schema.prisma
+P620  >=    x1 | Para el Instrumento N.° 02 (Guía de cotejo de consistencia documental), la confiabilidad de la auditoría se garantizará mediante un manual formal de codificació
+P623  >=    x1 | Donde el parámetro K representa el número de reactivos analizados, la sumatoria acumula las varianzas de los ítems individuales y el denominador indica la varia
+P637  >=    x3 | Donde W representa la suma de rangos con signo asignados a las diferencias absolutas no nulas y n indica el número de pares con diferencia distinta de cero. Par
+P639  >=    x3 | Donde el valor absoluto del estadístico Z se divide entre la raíz cuadrada del número de pares válidos con diferencia distinta de cero (N_válidos), interpretánd
+P652  >=    x1 | Nota. Intervalo de confianza (IC) al 95% calculado según el método de distribución F asintótica de Feldt (1965). Muestra censal n = 14 trabajadores de la cadena
+P654  chi   x2 | La caracterización descriptiva de la variable dependiente Gestión de movimientos mensuales de vacunas se estructuró conforme a las tres dimensiones normativas i
+P677  <=    x1 | La contrastación formal de hipótesis en diseños preexperimentales de medidas repetidas con un solo grupo (O_1 -> X -> O_2) exige verificar rigurosamente el supu
+P677  ->    x2 | La contrastación formal de hipótesis en diseños preexperimentales de medidas repetidas con un solo grupo (O_1 -> X -> O_2) exige verificar rigurosamente el supu
+P679  alpha x1 | Puesto que en todos los indicadores evaluados los valores p computados superan el nivel de significancia prefijado de alpha = .05, no se rechaza la hipótesis nu
+P681  alpha x1 | Nota. Prueba de Shapiro-Wilk (1965) aplicada sobre las diferencias pareadas individuales (D = Postest - Pretest). Nivel de significancia alpha = .05. Si p > .05
+P685  >=    x2 | A. Planteamiento de hipótesis estadísticas:   - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro
+P686  >=    x3 | B. Resultados inferenciales:   Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -38.944 con un p-valor bilateral
+P687  alpha x1 | C. Decisión bioestadística:   Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < 
+P689  alpha x1 | Nota. Nivel de significancia alpha = .05. Grados de libertad gl = n - 1 = 13. Ajuste de p-valor mediante el procedimiento secuencial escalonado de Holm-Bonferro
+P689  sqrt  x1 | Nota. Nivel de significancia alpha = .05. Grados de libertad gl = n - 1 = 13. Ajuste de p-valor mediante el procedimiento secuencial escalonado de Holm-Bonferro
+P691  <=    x2 | A. Planteamiento de hipótesis estadísticas:   - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documen
+P693  alpha x1 | C. Decisión bioestadística:   Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis al
+P695  alpha x1 | Nota. Nivel de significancia alpha = .05. El incremento en consistencia documental es estadísticamente significativo bajo ambas pruebas inferenciales. P-valores
+P697  <=    x2 | A. Planteamiento de hipótesis estadísticas:   - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del
+P698  >=    x2 | B. Resultados inferenciales:   En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d de Cohen de 
+P699  alpha x1 | C. Decisión bioestadística:   Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se
+P701  alpha x1 | Nota. Evaluado con la Modalidad A del Instrumento 03. gl = 13. Nivel de significancia alpha = .05. El tamaño del efecto (|d| > 8.0 y r > 0.60) refleja un impact
+P722  chi   x2 | Segunda (Infraestructura y Conectividad): A la Oficina de Informática y Telecomunicaciones de la DISA Apurímac II, dotar a los centros de acopio más alejados (c
+T5 r3 c2 chi   x1 | Emisión instantánea de comprobantes de despacho y exportación de archivos oficiales para impresión.
+T14 r4 c4 >=    x1 | Contraseña cifrada mediante hash Bcrypt (salt >= 10).
+T26 r0 c1 chi   x1 | Archivo de Especificación
+T30 r10 c0 chi   x1 | Pampachiri
+T30 r10 c1 chi   x1 | Almacenamiento y despacho de biológicos en la microred Pampachiri
+T30 r11 c0 chi   x1 | San Antonio de Cachi
+T34 r1 c3 >=    x1 | No se somete a juicio de contenido. Protocolo PMMV e ICC(2,1) >= 0.75 entre observadores
+T34 r2 c3 >=    x1 | No se somete a juicio de contenido. Regla de 8 criterios y kappa de Cohen >= 0.80 entre evaluadores
+T44 r4 c4 sqrt  x1 | Procesamiento y Análisis: • Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7 • Normalidad: Prueba 
+T52 r11 c1 chi   x1 | Pampachiri
+T52 r12 c1 chi   x1 | San Antonio de Cachi
+T53 r11 c1 chi   x1 | Pampachiri
+T53 r12 c1 chi   x1 | San Antonio de Cachi
+
+TOTALES: {'>=': 19, '<=': 5, '!=': 0, '~=': 0, '+-': 0, '->': 2, '<-': 0, '...': 0, 'alpha': 8, 'beta': 2, 'chi': 27, 'sqrt': 2, 'phi': 0}

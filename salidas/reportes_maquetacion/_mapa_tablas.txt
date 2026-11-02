@@ -1,0 +1,32 @@
+46 8 x 2 | 'Juez Validador:'
+47 8 x 2 | 'Juez Validador:'
+48 8 x 2 | 'Juez Validador:'
+49 4 x 4 | 'Código'
+50 4 x 4 | 'Código'
+51 9 x 4 | 'Ítem'
+52 15 x 18 | 'sujeto_id'
+53 15 x 18 | 'sujeto_id'
+54 6 x 5 | 'Código HU'
+55 1 x 1 | 'ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA\nI
+56 1 x 1 | 'ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA\nI
+57 1 x 1 | 'ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA\nI
+58 1 x 1 | 'ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA\nI
+--- T52 fila1 ---
+0 'TRAB-01'
+1 'ALMACÉN (CHANKA)'
+2 '38.5'
+3 '18.5'
+4 '62.5'
+5 '65.0'
+6 '2'
+7 '2'
+8 '2'
+9 '2'
+10 '2'
+11 '3'
+12 '2'
+13 '2'
+14 '8'
+15 '9'
+16 '17'
+17 'Bajo'

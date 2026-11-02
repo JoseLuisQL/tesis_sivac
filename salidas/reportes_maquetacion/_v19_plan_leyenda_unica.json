@@ -1,0 +1,36 @@
+{
+  "sincronizar_indices": [
+    {
+      "viejo": " (fotografía pendiente de incorporación)",
+      "nuevo": ""
+    }
+  ],
+  "keep_next_ultima_fila": {
+    "tablas": [36, 53, 54]
+  },
+  "tablas": {
+    "margenes_celda": [
+      {
+        "tabla": 52,
+        "izquierdo_dxa": 57,
+        "derecho_dxa": 57,
+        "superior_dxa": 20,
+        "inferior_dxa": 20
+      },
+      {
+        "tabla": 53,
+        "izquierdo_dxa": 57,
+        "derecho_dxa": 57,
+        "superior_dxa": 20,
+        "inferior_dxa": 20
+      },
+      {
+        "tabla": 54,
+        "izquierdo_dxa": 60,
+        "derecho_dxa": 60,
+        "superior_dxa": 20,
+        "inferior_dxa": 20
+      }
+    ]
+  }
+}

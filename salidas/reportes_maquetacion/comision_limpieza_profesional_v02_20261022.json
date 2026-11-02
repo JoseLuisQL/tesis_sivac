@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-10-22",
+  "solicitud": "Corregir el diseño desordenado de los instrumentos Word/PDF de la carpeta v02, respetando orden y espaciado, con presentación limpia y clara, sin información innecesaria, consultando memoria y especialistas y comprobando el alcance de la validación por expertos.",
+  "fase": "F8",
+  "destino_vigente": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+  "respaldo_previo": {
+    "ruta": "salidas/archivo/INSTRUMENTOS_V02_ANTES_LIMPIEZA_20261022",
+    "archivos": 33,
+    "bytes": 16256000,
+    "copias_identicas_verificadas": true,
+    "manifiesto_sha256": "d2feb42aaa89f91b28e3c0aa78c616db1b23ab71af18ee69366633c44ee59aed"
+  },
+  "alcance": "Corrección editorial de la carpeta indicada, respaldada previamente. No crear otra carpeta de entrega al tesista ni alterar las mediciones o enunciados.",
+  "comisiones": [
+    {
+      "tarea": "Revisar independientemente composición visual y claridad de uso y proponer correcciones medibles.",
+      "fase": "F8",
+      "squad": "Squad F (Gobernanza, Memoria y Evaluación Externa)",
+      "subagente": "jurado-revisor",
+      "entradas": ["image copy.png", "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02/00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf", "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02/APOYOS_INVESTIGADOR/05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf"],
+      "salida_esperada": "salidas/reportes_maquetacion/criterios_jurado_limpieza_instrumentos_20261022.json",
+      "restricciones": ["No modificar formularios", "No emitir calificación ficticia ni certificación humana", "No alterar reactivos o métodos", "Diagnóstico visual focalizado"],
+      "criterio_exito": "Correcciones específicas de bloques, jerarquía, separación y escritura manual con métricas de reinspección."
+    },
+    {
+      "tarea": "Determinar información necesaria por hoja, invariantes metodológicas y evidencia disponible sobre validación por expertos.",
+      "fase": "F8",
+      "squad": "Squad B (Metodología y Psicometría)",
+      "subagente": "guardian-consistencia",
+      "entradas": ["C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/ESTADO_TESIS.md", "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/DECISIONES.md", "datos/raw/validacion_expertos_declaracion_20261021.json", "salidas/reportes_maquetacion/concordancia_validacion_declarada_20261021.json", "salidas/reportes_maquetacion/especificacion_rediseno_instrumentos_fany_20261022.json"],
+      "salida_esperada": "salidas/reportes_maquetacion/criterios_metodologicos_limpieza_instrumentos_20261022.json",
+      "restricciones": ["No cambiar tres dimensiones, seis indicadores ni dieciséis reactivos", "Separar evidencia comunicada de certificados inspeccionados", "No equiparar revisión editorial de agentes con juicio humano real", "No adoptar DEC-020 histórica sobre decisiones posteriores"],
+      "criterio_exito": "Contenido imprescindible en campo/apoyo, duplicaciones prescindibles e instrucciones breves compatibles con el protocolo."
+    }
+  ],
+  "limites": [
+    "Conservar los dos logotipos nativos, proporcionales y simétricos en todas las páginas.",
+    "No reducir tipografía o márgenes para forzar el número anterior de páginas.",
+    "No perder campos crudos: todo traslado debe identificar su destino concreto.",
+    "No inventar certificados, calificaciones, firmas ni resultados de campo."
+  ],
+  "implementacion": {
+    "tarea": "Recomponer el cuerpo de los seis documentos con jerarquía única, espaciado medido, tablas de tareas claras y apoyos separados; actualizar la carpeta v02 una vez revisado el candidato.",
+    "fase": "F8",
+    "squad": "Squad E (Redacción y Maquetación)",
+    "subagente": "maquetador-docx",
+    "entradas": ["salidas/reportes_maquetacion/criterios_jurado_limpieza_instrumentos_20261022.json", "salidas/reportes_maquetacion/criterios_metodologicos_limpieza_instrumentos_20261022.json", "salidas/archivo/INSTRUMENTOS_V02_ANTES_LIMPIEZA_20261022", "scripts/compiladores/paquete_campo_builder.py", "scripts/utilidades/docx_quirurgico.py"],
+    "salida_esperada": "Candidato en salidas/archivo/_CANDIDATO_LIMPIEZA_INSTRUMENTOS_20261022, posterior actualización de v02 y reporte salidas/reportes_maquetacion/limpieza_profesional_v02_20261022.json",
+    "restricciones": ["Respaldo inmutable", "No nuevas carpetas de entrega", "Enunciados completos, criterios y tareas congelados", "Traslados con destino explícito, no eliminación de campos", "No cerrar aplicaciones del usuario", "Motor nativo canónico y constructor permanente", "Sin certificación de expertos no documentada"],
+    "criterio_exito": "Cambio de composición visible y comprobable, campos e ítems conservados, cabeceras nativas, espacios de escritura y tablas alineadas en Word/PDF, candidato inspeccionado antes de sustituir."
+  },
+  "prevalencias_de_direccion": [
+    "Se conserva fase administrativa para el emparejamiento; no se adopta la inferencia no comprobada de que su presencia genere sesgo.",
+    "La descripción de biológico y lote forma parte de la tarea: no se borra ni crea un nuevo campo por observación del revisor.",
+    "Los cálculos agregados y protocolos extensos se trasladan a apoyos con remisión breve; permanecen los registros crudos.",
+    "Los campos administrativos y observaciones trasladados de A/B se entregan en un registro específico, no en el control privado código-nombre.",
+    "No se impone una geometría aritméticamente imposible ni porcentaje arbitrario de ocupación del papel.",
+    "La cantidad de filas vacías puede redistribuirse si todas las continuaciones y correlativos quedan actualizados; no cambia el corpus del protocolo."
+  ],
+  "supervision_del_candidato": [
+    "Se leyó directamente la primera versión del candidato: Ficha 01 con dos tablas de tareas, Ficha 02 de dos páginas y Cuestionario A simplificado; la composición ya difiere de la captura.",
+    "Se requiere eliminar párrafos vacíos y alturas excesivas de filas de identificación; usar líneas de hora en blanco en lugar de repetir HH:MM:SS en celdas llenables.",
+    "La CPE puede ocupar una página propia para conservar doce filas con espacio manual suficiente, sin forzar dos páginas de Ficha 02.",
+    "Toda página suelta lleva código y fase administrativos; la leyenda breve de los ocho criterios evita códigos crípticos sin repetir definiciones extensas.",
+    "Las hojas A/B conservan propósito y confidencialidad breves y una sola leyenda de escala; se evita repetir los anclajes en la instrucción."
+  ],
+  "supervision_de_salida_publicada": {
+    "lectura_visual": "Dirección inspeccionó las seis páginas del conjunto y las seis de apoyos publicadas.",
+    "regresiones_a_subsanar": [
+      "El módulo B se rotuló como Instrumento 4 pese al carácter complementario del Instrumento 3; corregir título y pie.",
+      "El protocolo trasladado omitió el inicio de emisión del vale; restituir recepción o apertura de solicitud y conservar el final.",
+      "Una tabla nueva de conversión incluyó operaciones aritméticas en celdas y ejemplos con punto decimal; retirarla y usar conversión narrativa breve con coma decimal.",
+      "La reinspección del guardián solicita separar la remisión al protocolo de la remisión a incidencias y restituir la nota de continuación E-13 en la tabla de entregas. La frase de neutralidad de respuesta puede restituirse sin ampliar página."
+    ],
+    "criterio": "Son regresiones objetivas frente al contrato, no nuevas preferencias de diseño. No se da por cerrada la versión antes de subsanarlas y cotejar archivos finales."
+  },
+  "cierre": {
+    "estado_regresiones": "corregidas_y_verificadas_en_archivos_finales",
+    "reporte_direccion": "salidas/reportes_maquetacion/cierre_limpieza_profesional_v02_20261022.json",
+    "archivos_cotejados": 12,
+    "discrepancias": 0,
+    "reactivos_completos_conservados": 16,
+    "paginas_conjunto": 6,
+    "paginas_apoyos": 6,
+    "QG_5": "abierta; revisión editorial no sustituye certificados de jueces"
+  },
+  "estado": "correccion_publicada_y_cotejada_para_revision_humana"
+}

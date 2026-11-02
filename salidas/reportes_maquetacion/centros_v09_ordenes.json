@@ -1,0 +1,59 @@
+{
+  "metadatos": {
+    "base": "informe_final_v09.docx",
+    "origen": "consistencia_tabla30_v06.json (guardian-consistencia), anclas reajustadas al v09",
+    "proposito": "Alinear la composicion de la muestra censal (14 operadores en 13 centros) con el catalogo real de centros de acopio y con la Tabla 30 reconstruida.",
+    "fecha": "2026-10-21"
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 149,
+      "ubicacion": "PARRAFO 149",
+      "ancla_original": "a través de diecinueve centros de acopio (el almacén especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud), operaba",
+      "texto_nuevo": "a través de diecinueve centros de acopio registrados (cuatro establecimientos de la sede central, entre ellos el almacén especializado, y quince centros de acopio de las redes y microredes de salud de ambas provincias), de los cuales trece cuentan con operadores incluidos en la muestra censal, operaba",
+      "categoria": "consistencia_centros"
+    },
+    {
+      "indice_docx": 151,
+      "ubicacion": "PARRAFO 151",
+      "ancla_original": "integrada por dos operadores del Almacén Especializado de la sede central y doce responsables de los centros de acopio de las redes de salud.",
+      "texto_nuevo": "integrada por dos operadores del Almacén Especializado de Vacunas de la Red Chanka y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado.",
+      "categoria": "consistencia_centros"
+    },
+    {
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "ancla_original": "hacia diecinueve centros de acopio, los cuales comprenden el almacén especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud de las provincias de Andahuaylas y Chincheros; de ellos",
+      "texto_nuevo": "hacia diecinueve centros de acopio registrados, integrados por cuatro establecimientos de la sede central (el almacén especializado, dos hospitales y un centro de salud) y quince centros de acopio de las redes y microredes de salud de las provincias de Andahuaylas y Chincheros; de ellos",
+      "categoria": "consistencia_centros"
+    },
+    {
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "ancla_original": "(dos operadores en el Almacén Especializado de la sede central y doce responsables de cadena de frío en los centros de acopio de las redes de salud)",
+      "texto_nuevo": "(dos operadores en el Almacén Especializado de Vacunas de la Red Chanka y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado)",
+      "categoria": "consistencia_centros"
+    },
+    {
+      "indice_docx": 163,
+      "ubicacion": "PARRAFO 163",
+      "ancla_original": "en los diecinueve centros de acopio de la DISA Apurímac II.",
+      "texto_nuevo": "en los diecinueve centros de acopio registrados de la DISA Apurímac II, trece de los cuales cuentan con operadores incluidos en la muestra censal.",
+      "categoria": "consistencia_centros"
+    },
+    {
+      "indice_docx": 203,
+      "ubicacion": "PARRAFO 203",
+      "ancla_original": "abarcando sus diecinueve centros de acopio: el almacén especializado de la sede central en Andahuaylas y los centros de acopio vinculados a las redes y microredes de salud de las provincias de Andahuaylas y Chincheros.",
+      "texto_nuevo": "abarcando sus diecinueve centros de acopio registrados: cuatro establecimientos de la sede central en Andahuaylas (el almacén especializado, dos hospitales y un centro de salud) y quince centros de acopio de las redes y microredes de salud de las provincias de Andahuaylas y Chincheros.",
+      "categoria": "consistencia_centros"
+    },
+    {
+      "indice_docx": 579,
+      "ubicacion": "PARRAFO 579",
+      "ancla_original": "los 2 operadores del Almacén Especializado de la sede central y los 12 responsables de centros de acopio de las redes de salud pueden ejecutar",
+      "texto_nuevo": "los 2 operadores del Almacén Especializado de Vacunas de la Red Chanka y los 12 operadores, uno en cada uno de los doce centros de acopio restantes, pueden ejecutar",
+      "categoria": "consistencia_centros"
+    }
+  ]
+}

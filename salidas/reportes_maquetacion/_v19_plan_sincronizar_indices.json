@@ -1,0 +1,28 @@
+{
+  "sincronizar_indices": [
+    {
+      "viejo": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC impartida a los operadores de inmunizaciones.",
+      "nuevo": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC dirigida a los operadores de inmunizaciones (fotografía pendiente de incorporación)."
+    },
+    {
+      "viejo": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central.",
+      "nuevo": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central (fotografía pendiente de incorporación)."
+    },
+    {
+      "viejo": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales.",
+      "nuevo": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales (fotografía pendiente de incorporación)."
+    },
+    {
+      "viejo": "Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud.",
+      "nuevo": "Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud (fotografía pendiente de incorporación)."
+    },
+    {
+      "viejo": "Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)",
+      "nuevo": "Matriz de datos de prueba en el Pretest (Gestión manual basal, n = 14)"
+    },
+    {
+      "viejo": "Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14)",
+      "nuevo": "Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)"
+    }
+  ]
+}

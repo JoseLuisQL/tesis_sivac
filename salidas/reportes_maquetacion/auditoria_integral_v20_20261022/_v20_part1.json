@@ -1,0 +1,97 @@
+{
+ "meta": {
+  "fecha": "2026-10-22",
+  "agente": "analista-documental",
+  "squad": "Squad E",
+  "fase": "F8",
+  "tarea": "Auditoria visual de salida v20, PDF fisico 1-53 (53 paginas)",
+  "documento": "salidas/documentos/informe_final_v20.pdf",
+  "pdf_sha256": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+  "pdf_paginas": 159,
+  "docx": "salidas/documentos/informe_final_v20.docx",
+  "docx_sha256": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+  "fuente_original": "v19 preservada; no se audita como v20",
+  "metodo": "Lectura visual de pagina completa sobre PNG 110 dpi (Read), por lotes de 8-9 paginas; texto PDF solo como ancla. 53/53 paginas leidas visualmente.",
+  "rango": "PDF 1-53 inclusive; sin landscape en el tramo",
+  "restricciones": "Solo lectura. No se edito DOCX, PDF, candidato, motor ni informes ajenos.",
+  "referencia_folio": "PDF = folio impreso + 15 desde el cuerpo; preliminares en romanos al pie"
+ },
+ "cobertura": {
+  "pdf_1_53": 53,
+  "visual_read": 53,
+  "landscape": 0,
+  "faltantes": []
+ },
+ "verificaciones": [
+  "Emblema de portada nitido y proporcionado; no deformado.",
+  "Cuerpo en Times New Roman 12, interlineado 1,5, justificado y sangria de primera linea 1,27 cm en prosa.",
+  "Romanos ii-xiii al pie centrado; arabigo 1 en adelante en esquina superior derecha.",
+  "Indices nativos actualizados: Figura 1 p24, Figura 6 p29, Tabla 1 p20, Tabla 2 p35, Tabla 32 p92; coinciden con el cuerpo.",
+  "3.3.5 se rotula 'Despliegue y puesta en operacion', sin 'Fase V'.",
+  "Tabla 1: fuente Wasswa con 20 hospitales, 96,5% pedidos atendidos y 85,5% cumplimiento; fila legible, encabezado repetido y nota al pie.",
+  "Aiken (1985) y Tristán-López (2008) corregidos en 1.3.3; referencia activa.",
+  "Figura 6 se conserva a 136,5 dpi por ausencia de fuente mejor; limitacion aceptada.",
+  "Acta sin firmas y declaracion sin DNI: limitaciones de fuente aceptadas; no se rellenan."
+ ],
+ "limitaciones_aceptadas": [
+  {
+   "pagina": 27,
+   "folio": "12",
+   "tema": "blanco final del Capitulo I",
+   "detalle": "Dos lineas y ~90% en blanco antes del Capitulo II; aceptado previamente, no se reporta como defecto nuevo."
+  },
+  {
+   "pagina": 44,
+   "folio": "29",
+   "tema": "Figura 6",
+   "detalle": "136,5 dpi; sin fuente mejor; no se remuestreo."
+  },
+  {
+   "pagina": 2,
+   "folio": "s/f",
+   "tema": "Acta sin firmas",
+   "detalle": "Campo pendiente de suscripcion; aceptado."
+  },
+  {
+   "pagina": 3,
+   "folio": "s/f",
+   "tema": "Declaracion jurada",
+   "detalle": "DNI y firma en blanco; acto legal no modificable."
+  }
+ ],
+ "defectos": [
+  {
+   "id": "V20-01",
+   "pagina": 45,
+   "folio": "30",
+   "tipo": "hueco por salto de figura",
+   "severidad": "baja",
+   "evidencia": "El texto termina hacia 55% de la altura; Figura 7 pasa a la pagina 46 y deja ~45% en blanco. Sin desborde ni recorte.",
+   "accion": "Opcional: valorar reubicacion o escala sin reducir legibilidad; no bloqueante."
+  },
+  {
+   "id": "V20-02",
+   "pagina": 47,
+   "folio": "32",
+   "tipo": "hueco por salto de figura",
+   "severidad": "baja",
+   "evidencia": "El texto termina hacia 50% de la altura; Figura 8 pasa a la pagina 48 y deja ~45% en blanco. Sin desborde ni recorte.",
+   "accion": "Opcional: valorar reubicacion; no bloqueante."
+  },
+  {
+   "id": "V20-03",
+   "pagina": 37,
+   "folio": "22",
+   "tipo": "fila huerfana de tabla",
+   "severidad": "baja",
+   "evidencia": "Tabla 1 cierra en pagina nueva con una sola fila (Mamani-Pari et al., 2026), su nota y un parrafo; ~55% inferior en blanco. Encabezado repetido y tres reglas correctas.",
+   "accion": "Residual de v19; rebalancear solo si se autoriza; no altera contenido."
+  }
+ ],
+ "no_regresiones": [
+  "Sin tablas flotantes ni desbordes en el tramo.",
+  "Sin letras recortadas ni glifos faltantes en el texto PDF.",
+  "Sin cambios de foliacion ni de anclas de indices en 1-53.",
+  "Sin paginas nuevas casi vacias distintas del blanco aceptado en 12."
+ ]
+}

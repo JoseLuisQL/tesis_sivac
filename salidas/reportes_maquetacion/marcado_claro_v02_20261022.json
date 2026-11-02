@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "Squad E",
+    "version": "v02-marcado-claro",
+    "estado": "publicado en v02 vigente",
+    "destino": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02"
+  },
+  "resumen": {
+    "paginas_por_documento": {
+      "01_FICHA_TIEMPOS": 1,
+      "02_FICHA_AUDITORIA_DOCUMENTAL": 3,
+      "03_CUESTIONARIO_SATISFACCION_A": 1,
+      "04_MODULO_COMPLEMENTARIO_B_POST": 1,
+      "00_INSTRUMENTOS_RECOLECCION_SIVAC": 6,
+      "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES": 7
+    },
+    "reactivos_16_iguales": true,
+    "control_marcado": {
+      "sin_glifos_checkbox": true,
+      "sin_codigos_protocolo_visibles": true,
+      "etiquetas_por_nombre": true
+    }
+  },
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.pdf",
+      "paginas": 1,
+      "sha256_docx": "760f5a86e7d407fdfa6d0a35bea8a1ca108177d544d7b13f8147d3d6af6a1ab8",
+      "sha256_pdf": "eaa8027aa43e096b75f87b1fb76c2bad61d796e92d0755ae1ee594334d2f6220",
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.pdf",
+      "paginas": 3,
+      "sha256_docx": "bef325ffee8dff58046f986fb4c370a9ddc94795d9334a653d8432124fb981b9",
+      "sha256_pdf": "d953e3010ff60c4043f8ccc8fdc4e10db299ded9e70e63b4cee8f6fc95743617",
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.pdf",
+      "paginas": 1,
+      "sha256_docx": "cfc9d8d4e88047f38a25aed7851c71d6084499c955e336c8384581e8dac17035",
+      "sha256_pdf": "a51b78ea30ae47bebed06191764bb8ea91752370bd3ab588025f655aa6f1cea2",
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.pdf",
+      "paginas": 1,
+      "sha256_docx": "332f3e1ba178ad79b1ce7382ee1d18edc5f5e8d7c4b90228cebb36b6d6694d11",
+      "sha256_pdf": "6651b3c3d8b3ee8e87bcc8dad654e54281ff1ee97655985180567cf4bdc52f66",
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+      "paginas": 6,
+      "sha256_docx": "43bc36383d3b2d9ca4e316e0894e4e2851b41af141c9e2ada530d813dbf78ace",
+      "sha256_pdf": "a88c1630a60eeb904b7d651da5f19aa196e4e6e710fcca6c04ddf75a5da38a62",
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+      "paginas": 7,
+      "sha256_docx": "c251decbfd44e05f8e31b9f3daeb1aa197be8d4f4cbcd4a75624d8e98f091408",
+      "sha256_pdf": "41c03b3e1c32fadab2affd393a7ef234197e8ed22ad7beea5f2db7b896c25962",
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    }
+  ],
+  "controles": {
+    "paginas_por_documento": {
+      "01_FICHA_TIEMPOS": 1,
+      "02_FICHA_AUDITORIA_DOCUMENTAL": 3,
+      "03_CUESTIONARIO_SATISFACCION_A": 1,
+      "04_MODULO_COMPLEMENTARIO_B_POST": 1,
+      "00_INSTRUMENTOS_RECOLECCION_SIVAC": 6,
+      "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES": 7
+    },
+    "total_instrumentos": 6,
+    "A_una_pagina": true,
+    "B_una_pagina": true,
+    "reactivos_16_iguales": true,
+    "dos_logos_todas_las_paginas": true,
+    "sin_formulario_en_cabecera": true,
+    "paginacion_en_todas_las_paginas": true,
+    "secciones_desvinculadas": true,
+    "imagenes_solo_inline": true,
+    "sin_desborde_inferior": true,
+    "ancho_maximo_dxa": 8788,
+    "fuente_minima_pt": 8.5,
+    "sin_tokens_prohibidos": true,
+    "B_titulo_modulo_sin_instrumento_4": true,
+    "B_pie_instrumento_3_modulo_b": true,
+    "conjunto_sin_instrumento_4": true,
+    "todos_los_entregables_sin_instrumento_4": true,
+    "F01_remision_protocolo_y_registro": true,
+    "F02_remision_continuacion": true,
+    "AB_neutralidad_de_fuente": true,
+    "apoyos_inicio_vale_literal": true,
+    "apoyos_causas_acciones_incidencia": true,
+    "sin_glifos_checkbox_o_corchetes": true,
+    "sin_codigos_protocolo_visibles": true,
+    "etiquetas_por_nombre": true,
+    "apoyos_sin_tabla_conversion": true,
+    "apoyos_ejemplo_conversion_coma": true,
+    "apoyos_horas_vacias_con_guion_bajo": true,
+    "F01_dos_tablas_tiempo": true
+  },
+  "mapa_interno": {
+    "tareas": [
+      {
+        "visible": 1,
+        "interno": "REG-01"
+      },
+      {
+        "visible": 2,
+        "interno": "REG-02"
+      },
+      {
+        "visible": 3,
+        "interno": "REG-03"
+      },
+      {
+        "visible": 4,
+        "interno": "VALE-01"
+      },
+      {
+        "visible": 5,
+        "interno": "VALE-02"
+      },
+      {
+        "visible": 6,
+        "interno": "VALE-03"
+      }
+    ],
+    "reactivos": {
+      "cuestionario_satisfaccion": [
+        {
+          "visible": 1,
+          "interno": "AP-01"
+        },
+        {
+          "visible": 2,
+          "interno": "AP-02"
+        },
+        {
+          "visible": 3,
+          "interno": "AP-03"
+        },
+        {
+          "visible": 4,
+          "interno": "AP-04"
+        },
+        {
+          "visible": 5,
+          "interno": "UP-01"
+        },
+        {
+          "visible": 6,
+          "interno": "UP-02"
+        },
+        {
+          "visible": 7,
+          "interno": "UP-03"
+        },
+        {
+          "visible": 8,
+          "interno": "UP-04"
+        }
+      ],
+      "cuestionario_complementario": [
+        {
+          "visible": 1,
+          "interno": "PU-01"
+        },
+        {
+          "visible": 2,
+          "interno": "PU-02"
+        },
+        {
+          "visible": 3,
+          "interno": "PU-03"
+        },
+        {
+          "visible": 4,
+          "interno": "PU-04"
+        },
+        {
+          "visible": 5,
+          "interno": "PE-01"
+        },
+        {
+          "visible": 6,
+          "interno": "PE-02"
+        },
+        {
+          "visible": 7,
+          "interno": "PE-03"
+        },
+        {
+          "visible": 8,
+          "interno": "PE-04"
+        }
+      ]
+    },
+    "criterios": [
+      {
+        "visible": "Tipo de movimiento",
+        "interno": "C1"
+      },
+      {
+        "visible": "Denominación del biológico",
+        "interno": "C2"
+      },
+      {
+        "visible": "Número de lote",
+        "interno": "C3"
+      },
+      {
+        "visible": "Cantidad de dosis o viales",
+        "interno": "C4"
+      },
+      {
+        "visible": "Fecha del movimiento",
+        "interno": "C5"
+      },
+      {
+        "visible": "Establecimiento y código oficial",
+        "interno": "C6"
+      },
+      {
+        "visible": "Responsable identificable",
+        "interno": "C7"
+      },
+      {
+        "visible": "Documento de respaldo",
+        "interno": "C8"
+      }
+    ],
+    "documentos": [
+      {
+        "visible": 1,
+        "interno": "D-01"
+      },
+      {
+        "visible": 2,
+        "interno": "D-02"
+      },
+      {
+        "visible": 3,
+        "interno": "D-03"
+      },
+      {
+        "visible": 4,
+        "interno": "D-04"
+      },
+      {
+        "visible": 5,
+        "interno": "D-05"
+      },
+      {
+        "visible": 6,
+        "interno": "D-06"
+      }
+    ],
+    "entregas": [
+      {
+        "visible": 1,
+        "interno": "E-01"
+      },
+      {
+        "visible": 2,
+        "interno": "E-02"
+      },
+      {
+        "visible": 3,
+        "interno": "E-03"
+      },
+      {
+        "visible": 4,
+        "interno": "E-04"
+      },
+      {
+        "visible": 5,
+        "interno": "E-05"
+      },
+      {
+        "visible": 6,
+        "interno": "E-06"
+      },
+      {
+        "visible": 7,
+        "interno": "E-07"
+      },
+      {
+        "visible": 8,
+        "interno": "E-08"
+      },
+      {
+        "visible": 9,
+        "interno": "E-09"
+      },
+      {
+        "visible": 10,
+        "interno": "E-10"
+      },
+      {
+        "visible": 11,
+        "interno": "E-11"
+      },
+      {
+        "visible": 12,
+        "interno": "E-12"
+      },
+      {
+        "visible": 13,
+        "interno": "E-13"
+      },
+      {
+        "visible": 14,
+        "interno": "E-14"
+      },
+      {
+        "visible": 15,
+        "interno": "E-15"
+      },
+      {
+        "visible": 16,
+        "interno": "E-16"
+      },
+      {
+        "visible": 17,
+        "interno": "E-17"
+      },
+      {
+        "visible": 18,
+        "interno": "E-18"
+      },
+      {
+        "visible": 19,
+        "interno": "E-19"
+      },
+      {
+        "visible": 20,
+        "interno": "E-20"
+      },
+      {
+        "visible": 21,
+        "interno": "E-21"
+      },
+      {
+        "visible": 22,
+        "interno": "E-22"
+      },
+      {
+        "visible": 23,
+        "interno": "E-23"
+      },
+      {
+        "visible": 24,
+        "interno": "E-24"
+      }
+    ],
+    "incidencias": [
+      {
+        "visible": 1,
+        "interno": "H-01"
+      },
+      {
+        "visible": 2,
+        "interno": "H-02"
+      },
+      {
+        "visible": 3,
+        "interno": "H-03"
+      },
+      {
+        "visible": 4,
+        "interno": "H-04"
+      },
+      {
+        "visible": 5,
+        "interno": "H-05"
+      },
+      {
+        "visible": 6,
+        "interno": "H-06"
+      },
+      {
+        "visible": 7,
+        "interno": "H-07"
+      },
+      {
+        "visible": 8,
+        "interno": "H-08"
+      },
+      {
+        "visible": 9,
+        "interno": "H-09"
+      },
+      {
+        "visible": 10,
+        "interno": "H-10"
+      },
+      {
+        "visible": 11,
+        "interno": "H-11"
+      },
+      {
+        "visible": 12,
+        "interno": "H-12"
+      }
+    ]
+  },
+  "antes_despues": [
+    {
+      "antes": "C1 a C8 y Sí □ No □ en ocho columnas",
+      "despues": "Ocho aspectos nombrados; Sí/No en celdas vacías para dos documentos por página"
+    },
+    {
+      "antes": "Pausa y Válida con □ Sí / □ No en una celda",
+      "despues": "Dos columnas Sí/No con celdas vacías; tareas visibles 1 a 6"
+    },
+    {
+      "antes": "Entregas E-01 a E-12 con Sí □ No □",
+      "despues": "Entregas 1 a 12 con columnas Concordancia Sí/No vacías"
+    },
+    {
+      "antes": "Reactivos AP-01/UP-01/PU-01/PE-01",
+      "despues": "Reactivos numerados 1 a 8, bandas con nombre y códigos solo en el mapa interno"
+    }
+  ],
+  "bordes_vacios": {
+    "celdas_respuesta": "vacías, sin caracteres ni controles",
+    "ancho_minimo_respuesta_dxa": 620,
+    "alto_minimo_fila_cm": 0.9
+  },
+  "nota_alcance": "Corrección de marcado y etiquetas visibles; no cambia reactivos, dimensiones ni reglas. QG-5 abierta."
+}

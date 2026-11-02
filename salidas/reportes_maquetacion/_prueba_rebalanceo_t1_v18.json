@@ -1,0 +1,7 @@
+{
+  "tablas": {
+    "margenes_celda": [{"tabla": 1, "izquierdo_dxa": 28, "derecho_dxa": 28}],
+    "normalizar_tamano": [{"tabla": 1, "minimo_pt": 10}],
+    "rebalanceo": [1]
+  }
+}

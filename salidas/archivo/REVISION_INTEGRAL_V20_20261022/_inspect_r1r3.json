@@ -1,0 +1,102 @@
+[
+ {
+  "idx": 157,
+  "text": "En contrapartida, la literatura científica internacional demostró que la adopción de plataformas digitales y sistemas web especializados atenúa de forma sustancial estas deficiencias operativas y documentales. Shen et al. (2024, p. 1), al evaluar la implementación de un sistema digital de gestión de cadena de suministro hospitalaria en China, verificaron que la tasa de roturas de stock se redujo de 0.425% a 0.277% y que la eficiencia operativa global se incrementó de manera significativa gracias al control automatizado de inventarios. Asimismo, Dang et al. (2024), en un estudio longitudinal sobre la transición del registro en papel hacia un sistema nacional de inmunización digital en Vietnam, comprobaron que el tiempo transcurrido hasta la disponibilidad efectiva del dato disminuyó de 43.7 a 0.7 días (reducción del 98%) y que la carga administrativa del personal se redujo en un 38%. En el mismo sentido, Kigenza et al. (2023) documentaron en Ruanda mejoras en la exactitud de los inventarios mediante la intervención de gestión de calidad apoyada en el e-LMIS, y Wasswa et al. (2023) documentaron en Uganda el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos durante la respuesta a la COVID-19, mientras que en el contexto sudamericano Balón Morejón (2023, p. xii) acreditó que una aplicación web de inventario vacunal en Ecuador redujo la emisión de reportes de varios días a segundos.",
+  "seq": false
+ },
+ {
+  "idx": 173,
+  "text": "El presente estudio se justificó teóricamente porque articuló los principios de la ingeniería de software ágil, la calidad de producto informático y la evaluación de aceptación tecnológica aplicados a la logística sanitaria de inmunizaciones. En el ámbito del desarrollo de software, la investigación empleó la metodología Extreme Programming formulada por Beck (1999, p. 71) como marco de ingeniería de software para construir sistemas transaccionales mediante entregas incrementales y retroalimentación continua en entornos públicos con reglas operativas estrictas. Asimismo, el estudio aplicó el modelo de calidad de producto establecido por la International Organization for Standardization e International Electrotechnical Commission [ISO/IEC] (2023, p. 2) a través de la norma ISO/IEC 25010:2023, sustentando cómo la adecuación funcional, la eficiencia de desempeño y la capacidad de interacción se vinculan con la oportunidad de procesamiento y la consistencia documental de los inventarios biológicos. De igual forma, el estudio empleó el Modelo de Aceptación Tecnológica (TAM) propuesto por Davis (1989, p. 320), articulado con la literatura de éxito de sistemas de información, como referente evaluativo de la percepción del usuario a través de la utilidad percibida y la facilidad de uso percibida en el personal sanitario, sin pretender validar el modelo TAM como teoría general.",
+  "seq": false
+ },
+ {
+  "idx": 177,
+  "text": "Desde la perspectiva metodológica, el estudio se justificó porque estructuró un diseño preexperimental con pretest y postest en un solo grupo (GE: O₁ – X – O₂) bajo los lineamientos del enfoque cuantitativo de Hernández-Sampieri et al. (2014, p. 141) y el diseño preexperimental de un solo grupo adoptado por Quispe Tello (2024, p. 36), adaptado a una población censal de 14 operadores especializados (N = n = 14). Asimismo, la investigación diseñó tres instrumentos de medición específicos para evaluar el flujo de movimientos mensuales de vacunas (una ficha de observación de tiempos cronometrados, una guía de cotejo de ocho criterios normativos de integridad documental y un cuestionario psicométrico de satisfacción), estableciendo una distinción rigurosa entre: (a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken (Aiken, 1985) y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio; la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38); (b) la confiabilidad por consistencia interna, estimada mediante el coeficiente Alfa de Cronbach por subescala para el cuestionario psicométrico TAM; y (c) la objetividad procedimental y concordancia interevaluador, garantizadas mediante un protocolo estandarizado de observación con disparadores unívocos y el coeficiente Kappa de Cohen para las fichas de tiempos y la guía de cotejo documental.",
+  "seq": false
+ },
+ {
+  "idx": 212,
+  "text": "Wasswa et al. (2023), en su revisión titulada “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicada en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de suministros e insumos sanitarios durante la respuesta a la COVID-19 en Uganda. El estudio revisó literatura publicada y no publicada sobre la adopción e implementación del eELMIS durante la pandemia de COVID-19 y describió su operación en la red pública del Ministerio de Salud de Uganda. Los resultados documentaron el procesamiento digital de requisiciones y comprobantes de despacho para los 20 hospitales regionales de referencia, con 96.5% de pedidos atendidos y una tasa agregada de cumplimiento de pedidos del 85.5%, lo que favoreció la visibilidad de los suministros frente a los procedimientos manuales. El estudio concluyó que la disponibilidad de datos oportunos y confiables es esencial para la toma de decisiones y que el eELMIS apoyó la coordinación y la disponibilidad oportuna de suministros durante la respuesta a la COVID-19.",
+  "seq": false
+ },
+ {
+  "idx": 220,
+  "text": "Mamani-Pari et al. (2026), en su investigación metodológica y psicométrica titulada “Development and psychometric validation of a usability instrument based on ISO 25010 for electronic health record systems in Peruvian health care settings: Methodological study”, publicada en la revista indexada JMIR Human Factors, tuvieron como objetivo desarrollar y validar psicométricamente un instrumento estandarizado para evaluar la usabilidad y calidad de software clínico basado en el estándar internacional ISO/IEC 25010 y adaptado a las exigencias normativas del Ministerio de Salud del Perú (p. 1). El diseño metodológico contempló tres etapas sucesivas: operacionalización de dimensiones bajo ISO 25010, validación de contenido por juicio de 10 expertos multidisciplinarios y evaluación de consistencia interna y validez estructural con una muestra de n = 115 usuarios reales de establecimientos de salud peruanos (53 médicos, 48 enfermeros y 14 trabajadores administrativos). Los resultados demostraron excelentes propiedades psicométricas, alcanzando un coeficiente V de Aiken de 0.95 (IC 95%: 0.84–0.98), una consistencia interna sobresaliente con Alfa de Cronbach α = 0.968 y un ajuste factorial óptimo (CFI = 1.000, TLI = 1.001); asimismo, el 81.7% de los profesionales de salud calificó la usabilidad general del sistema en el nivel muy alto y el 18.3% en el nivel alto, destacando la dimensión de protección contra errores y la operabilidad. Los autores concluyeron que la articulación entre la norma ISO/IEC 25010 y las directivas sanitarias peruanas del MINSA constituye un marco de referencia robusto para asegurar que los sistemas de información optimicen los flujos de trabajo asistenciales y alcancen una satisfacción usuaria sobresaliente.",
+  "seq": false
+ },
+ {
+  "idx": 224,
+  "text": "Los antecedentes revisados evidencian que los sistemas digitales de información logística contribuyen a mejorar la oportunidad de registro, la trazabilidad por lote y la disponibilidad de insumos sanitarios. Sin embargo, se identificó una limitada evidencia empírica aplicada específicamente a la gestión de movimientos mensuales de vacunas en centros de acopio de una Dirección de Salud regional en el Perú, que evalúe de forma integrada tiempos cronometrados de procesamiento, consistencia documental bajo la NTS N.° 196-MINSA/DGIESP-2022 y percepción de aceptación tecnológica del usuario. Esta brecha científica y operativa justifica el desarrollo e implementación del sistema web SIVAC.",
+  "seq": false
+ },
+ {
+  "idx": 265,
+  "text": "Los sistemas electrónicos de información de gestión logística (e-LMIS, por sus siglas en inglés) son plataformas digitales especializadas que automatizan la captura, consolidación y seguimiento de los movimientos de suministros médicos y biológicos a lo largo de las redes de salud (Organización Panamericana de la Salud y PATH, 2019; Wasswa et al., 2023). A diferencia de los registros tradicionales basados en libros físicos de kardex y planillas aisladas, un sistema e-LMIS integra en tiempo real la programación anual de metas, la recepción de lotes, la validación de existencias y la emisión de órdenes de despacho, optimizando la capacidad de respuesta ante campañas regulares y contingencias epidemiológicas (Kigenza et al., 2023). En concordancia con ello, Gilbert et al. (2020, p. 562) verificaron en un estudio a gran escala sobre 924 centros sanitarios que la implementación de una plataforma digital integrada de registro de inmunizaciones y gestión logística redujo la tasa de desabastecimiento de vacunas de 7.1% a 2.1%, comprobando que la deducción automática de inventario por cada atención registrada previene pérdidas y consolida la disponibilidad biológica en el primer nivel de atención.",
+  "seq": false
+ },
+ {
+  "idx": 266,
+  "text": "Un pilar algorítmico indispensable en los sistemas e-LMIS aplicados a inmunizaciones es la regla de control FEFO (First Expired, First Out o Primero en Expirar, Primero en Salir), la cual prioriza de forma automática la asignación y salida de aquellos lotes cuya fecha de caducidad sea más próxima (Shen et al., 2024, p. 1). Asimismo, la plataforma vincula cada dosis biológica con sus jeringas descartables y diluyentes según los multiplicadores normados, garantizando una trazabilidad integral de extremo a extremo en la red de suministro (Wasswa et al., 2023) (véase la Figura 7).",
+  "seq": false
+ },
+ {
+  "idx": 269,
+  "text": "Nota. Adaptado de «Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda» (p. 4), por J. Wasswa et al., 2023, Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+  "seq": false
+ },
+ {
+  "idx": 299,
+  "text": "Indicador de consistencia logística que cuantifica el grado de correspondencia porcentual entre las dosis de biológicos planificadas en el requerimiento periódico y las cantidades físicamente despachadas y validadas en los comprobantes de entrega (Wasswa et al., 2023; Mekonen et al., 2024, p. 375).",
+  "seq": false
+ },
+ {
+  "idx": 325,
+  "text": "Aplicación informática centralizada que digitaliza el ciclo de suministro sanitario, integrando la programación de requerimientos, el control de inventarios por lotes, las alertas de caducidad y la trazabilidad de los despachos entre almacenes y establecimientos de salud (Organización Panamericana de la Salud y PATH, 2019; Wasswa et al., 2023).",
+  "seq": false
+ },
+ {
+  "idx": 557,
+  "text": "La investigación se desarrolló bajo el enfoque cuantitativo, caracterizado por la recolección secuencial y probatoria de datos numéricos estandarizados y el uso del análisis estadístico descriptivo e inferencial para establecer patrones de comportamiento y probar las hipótesis formuladas (Hernández-Sampieri et al., 2014). En virtud de este enfoque, las tres dimensiones de la gestión de movimientos mensuales de vacunas fueron medidas en escalas métricas y ordinales rigurosas: tiempos cronometrados expresados en minutos, proporciones auditadas de exactitud documental en porcentaje y puntuaciones psicométricas de aceptación tecnológica en escala de cinco niveles.",
+  "seq": false
+ },
+ {
+  "idx": 625,
+  "text": "La validez de contenido determinará el grado en que el formato de evaluación refleje el dominio teórico de las dimensiones evaluadas (Hernández-Sampieri et al., 2014). El juicio se aplicará al formato disponible, integrado por la matriz de la variable dependiente con 12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4, y por el cuestionario TAM de la Modalidad A con 8 reactivos en escala Likert de 1 a 5. La concordancia se cuantificará con el Coeficiente V de Aiken (Ecuación 8) y el Índice de Validez de Contenido (IVC); se adopta como criterio de aceptación V ≥ 0.80 e IVC ≥ 0.80:",
+  "seq": false
+ },
+ {
+  "idx": 699,
+  "text": "C. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 42).",
+  "seq": false
+ },
+ {
+  "idx": 706,
+  "text": "Se concluye que la aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, optimizando de manera concurrente la oportunidad de procesamiento (reducción de tiempos superior al 80%), la consistencia documental (exactitud registral y concordancia de suministros superior al 95%) y la satisfacción del usuario (incremento superior al 100% en la aceptación tecnológica). En la Tabla 43 se presenta el balance consolidado de la decisión inferencial multivariada.",
+  "seq": false
+ },
+ {
+  "idx": 713,
+  "text": "En lo concerniente a la tercera dimensión, Satisfacción del usuario evaluada bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), se evidenció una elevación estadísticamente significativa en la Aceptación del Proceso (de 8.07 a 17.71 puntos, +119.47%) y en la Utilidad Percibida (de 9.00 a 18.50 puntos, +105.56%), alcanzando un puntaje global TAM de 36.21 sobre 40 puntos, correspondiente al baremo 'Alto'. Estos resultados admiten una lectura desde los enfoques de aceptación tecnológica considerados en el marco teórico, que sitúan la utilidad percibida y la aceptación del proceso entre las condiciones de la disposición del usuario hacia un sistema; la evidencia describe ese comportamiento en el grupo estudiado y no constituye, por sí misma, una validación de dichos enfoques ni de sus constructos en el ámbito sanitario.",
+  "seq": false
+ },
+ {
+  "idx": 727,
+  "text": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131-142. https://doi.org/10.1177/0013164485451012",
+  "seq": false
+ },
+ {
+  "idx": 777,
+  "text": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4https://doi.org/10.1186/s40545-023-00517-4",
+  "seq": false
+ },
+ {
+  "idx": 790,
+  "text": "Se presentan los tres (3) formatos de evaluación en blanco por juicio de expertos, que remiten al formato disponible descrito en la sección 4.12: matriz de la variable dependiente con 12 componentes en escala experta de 1 a 4 y cuestionario TAM con ocho ítems en escala Likert de 1 a 5. Los coeficientes V de Aiken e IVC se consignan como campos por completar y la aplicabilidad permanece sin dictamen hasta la recepción de los tres informes firmados.",
+  "seq": false
+ },
+ {
+  "idx": 807,
+  "text": "Nota. Cuestionario TAM de ocho ítems (Modalidad A) remitido a juicio de expertos. Los coeficientes V de Aiken e IVC se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces. El coeficiente Alfa de Cronbach reportado en la Tabla 35 corresponde a un cálculo provisional sobre datos de prueba.",
+  "seq": false
+ }
+]

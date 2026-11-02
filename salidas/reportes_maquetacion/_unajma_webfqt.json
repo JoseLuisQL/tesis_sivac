@@ -1,0 +1,499 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "WEBFQT",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ {
+          "hitHighlights" : {
+            "dc.description.abstract" : [ "Esta investigación tuvo el propósito de determinar la influencia del aplicativo <em>WebFQT</em> en el seguimiento de proyectos de inversión pública en la municipalidad distrital de El Porvenir., Este presente estudio tuvo un enfoque cuantitativo, de tipo de aplicada, de alcance aplicativa correlacional, diseño preexperimental de corte transversal en el tiempo. ", "El resultado obtenido a través del análisis y procesamiento de los datos fue que la implementación del aplicativo <em>WebFQT</em> redujo drásticamente el tiempo de acceso a la información referente al avance físico y económico de los proyectos; lo que permite concluir que el aplicativo web brinda diversos beneficios y optimiza procesos que inicialmente eran manuales en la gestión de proyectos de inversión pública en la municipalidad distrital de El Porvenir." ],
+            "dc.title" : [ "Influencia del aplicativo <em>WebFQT</em> para el seguimiento de proyectos de inversión pública en la Municipalidad Distrital de Porvenir." ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "e7a31d2e-d663-4dd3-85fe-7e8e799b2349",
+              "uuid" : "e7a31d2e-d663-4dd3-85fe-7e8e799b2349",
+              "name" : "Influencia del aplicativo WebFQT para el seguimiento de proyectos de inversión pública en la Municipalidad Distrital de Porvenir.",
+              "handle" : "20.500.14168/854",
+              "metadata" : {
+                "dc.contributor.advisor" : [ {
+                  "value" : "Maquera Flores, Edwing Alcides",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.author" : [ {
+                  "value" : "Quipe Tello, Fany",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2024-09-16T13:57:48Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2024-09-16T13:57:48Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2024",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "Esta investigación tuvo el propósito de determinar la influencia del aplicativo WebFQT en el seguimiento de proyectos de inversión pública en la municipalidad distrital de El Porvenir., Este presente estudio tuvo un enfoque cuantitativo, de tipo de aplicada, de alcance aplicativa correlacional, diseño preexperimental de corte transversal en el tiempo. La población encuestada fue de 28 proyectos que fueron gestionados por la Municipalidad de El Porvenir, entre las personas encuestadas se encontraban trabajadores y público en general del municipio, habiendo desarrollado, implantado el sistema web y encuestado a los usuarios se cumplió con los objetivos tanto general como específicos, la técnica de recolección utilizada fue la encuesta y el instrumento usado un cuestionario. El resultado obtenido a través del análisis y procesamiento de los datos fue que la implementación del aplicativo WebFQT redujo drásticamente el tiempo de acceso a la información referente al avance físico y económico de los proyectos; lo que permite concluir que el aplicativo web brinda diversos beneficios y optimiza procesos que inicialmente eran manuales en la gestión de proyectos de inversión pública en la municipalidad distrital de El Porvenir.",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.format" : [ {
+                  "value" : "application/pdf",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://hdl.handle.net/20.500.14168/854",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "spa",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher" : [ {
+                  "value" : "Universidad Nacional José María Arguedas",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.publisher.country" : [ {
+                  "value" : "PE",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights" : [ {
+                  "value" : "info:eu-repo/semantics/openAccess",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Attribution-NonCommercial-NoDerivatives 4.0 Internacional",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+                  "language" : "*",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "Proyectos,",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Presupuesto ",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Usuarios.",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                } ],
+                "dc.subject.ocde" : [ {
+                  "value" : "http://purl.org/pe-repo/ocde/ford#2.02.04",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.title" : [ {
+                  "value" : "Influencia del aplicativo WebFQT para el seguimiento de proyectos de inversión pública en la Municipalidad Distrital de Porvenir.",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "info:eu-repo/semantics/bachelorThesis",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type.version" : [ {
+                  "value" : "info:eu-repo/semantics/publishedVersion",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "renati.advisor.dni" : [ {
+                  "value" : "00509928",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "renati.advisor.orcid" : [ {
+                  "value" : "https://orcid.org/0000- 0003-1441-4207",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "renati.author.dni" : [ {
+                  "value" : "47259761",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "renati.discipline" : [ {
+                  "value" : "612076",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "renati.juror" : [ {
+                  "value" : "Catacora Flores, Norma Lorena",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Condor Tinoco,  Enrique Edgardo",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Menejes Palomino, Neptalí",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "m",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                } ],
+                "renati.level" : [ {
+                  "value" : "https://purl.org/pe-repo/renati/level#tituloProfesional",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "renati.type" : [ {
+                  "value" : "https://purl.org/pe-repo/renati/type#tesis",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "thesis.degree.discipline" : [ {
+                  "value" : "Ingeniería Sistemas",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "thesis.degree.grantor" : [ {
+                  "value" : "Universidad Nacional José María Arguedas, Facultad de Ingeniería",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "thesis.degree.name" : [ {
+                  "value" : "Ingeniero Sistemas",
+                  "language" : "es_PE",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-10-01T19:00:58.690728Z",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/relationships"
+                },
+                "version" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/thumbnail"
+                },
+                "submitter" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349/submitter"
+                },
+                "self" : {
+                  "href" : "https://repositorio.unajma.edu.pe/backend/api/core/items/e7a31d2e-d663-4dd3-85fe-7e8e799b2349"
+                }
+              }
+            }
+          }
+        } ]
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5,
+        "totalPages" : 1,
+        "totalElements" : 1
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "Abollaneda Condori, Jefil Víctor",
+      "maxValue" : "Zuñiga Rodas, Alfredo",
+      "openByDefault" : true,
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/facets/author?query=WEBFQT&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Quipe Tello, Fany",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.author=Quipe%20Tello,%20Fany,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/facets/subject?query=WEBFQT&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Presupuesto",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.subject=Presupuesto,equals"
+            }
+          }
+        }, {
+          "label" : "Proyectos,",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.subject=Proyectos,,equals"
+            }
+          }
+        }, {
+          "label" : "Usuarios.",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.subject=Usuarios.,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "2013",
+      "maxValue" : "2026-10-19",
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/facets/dateIssued?query=WEBFQT&size=5"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "2020 - 2026",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.dateIssued=%5B2020%20TO%202026%5D,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "has_content_in_original_bundle",
+      "facetType" : "standard",
+      "facetLimit" : 2,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/facets/has_content_in_original_bundle?query=WEBFQT&size=2"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 2
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "true",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.has_content_in_original_bundle=true,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/facets/entityType?query=WEBFQT"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "access_status",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/facets/access_status?query=WEBFQT&size=10"
+        }
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "open.access",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://repositorio.unajma.edu.pe/backend/api/discover/search/objects?query=WEBFQT&f.access_status=open.access,equals"
+            }
+          }
+        } ]
+      }
+    } ]
+  }
+}

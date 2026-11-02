@@ -1,0 +1,739 @@
+{
+  "meta": {
+    "agente": "analista-documental",
+    "squad": "Squad E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "fecha": "2026-10-21",
+    "alcance": "Auditoría independiente hoja por hoja del PDF informe_final_v18.pdf, páginas 1-80 de 159",
+    "advertencia_alcance": "Esta comisión cubre exclusivamente las páginas 1-80. No constituye verificación de las 159 páginas ni porcentaje global de calidad.",
+    "pdf": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v18.pdf",
+      "sha256": "d0dbe841df7bcad3132a45277c746aaf69008ce3ce886eb6703eac75b8373d00",
+      "bytes": 17891321,
+      "paginas": 159,
+      "tamano_pagina_pt": "595.32 x 841.92"
+    },
+    "docx": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v18.docx",
+      "sha256": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+      "bytes": 15097973
+    },
+    "paginas_control": {
+      "ruta": "salidas/reportes_maquetacion/páginas_control_v18_completo/informe_final_v18_p001.png .. p159.png",
+      "dpi": 150
+    },
+    "metodo_general": "Revisión de las 80 páginas en cinco contactos 4x4 (320x460 px por página), extracción de texto y posiciones con PyMuPDF y ampliaciones dirigidas a 110-200 dpi en páginas con tablas, figuras, índices o incidencias. DPI efectivo calculado como píxeles nativos / tamaño mostrado en pulgadas.",
+    "firmas_verificadas": true,
+    "rectificacion_2026_10_21": "Por indicación del Director: Tabla 1 se localiza por PDF 35-37 / folios 20-22; el DNI en blanco de la página 3 es decisión expresa del usuario para el manuscrito y no se corrige; la página 27 es observación de aprovechamiento, no error. No se releyó el PDF ni se modificó documento alguno."
+  },
+  "matriz_paginas": [
+    {
+      "pagina": 1,
+      "folio": "sin folio",
+      "estado": "observada",
+      "metodo": "zoom 130 dpi + texto/posiciones PDF",
+      "notas": "Portada completa: Universidad, Facultad, Escuela, título oficial, grado, línea, autor, asesora y sede/año. Escudo nativo de 212x238 pxmostrado a 1,81x2,01 in (118 dpi efectivos): definido pero por debajo de 300 dpi; no se solicita reemplazo."
+    },
+    {
+      "pagina": 2,
+      "folio": "sin folio",
+      "estado": "observada",
+      "metodo": "zoom 120 dpi + texto PDF",
+      "notas": "Acta de sustentación: miembros del jurado, fecha y calificación con líneas en blanco; el propio texto declara \"Acta pendiente de suscripción por el jurado evaluador\". Confirmar si se conserva como plantilla o se retira antes de la entrega final."
+    },
+    {
+      "pagina": 3,
+      "folio": "sin folio",
+      "estado": "conforme_con_observacion_intencional",
+      "metodo": "zoom 200 dpi + texto PDF",
+      "notas": "Declaración jurada (Anexo 32): DNI en blanco en el cuerpo y en el pie de firma. El usuario aprobó expresamente dejarlo para el manuscrito firmado; es una observación intencional, no un defecto editorial. No introducir números ni modificar la maqueta."
+    },
+    {
+      "pagina": 4,
+      "folio": "ii",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Dedicatoria: texto completo, sin desbordes ni cortes; folio romano ii correcto."
+    },
+    {
+      "pagina": 5,
+      "folio": "iii",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Agradecimientos: texto completo; folio iii correcto; párrafos justificados sin líneas cortadas."
+    },
+    {
+      "pagina": 6,
+      "folio": "iv",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Índice de contenido: capítulos y secciónes con líderes y folios; jerarquía legible."
+    },
+    {
+      "pagina": 7,
+      "folio": "v",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Índice de contenido, continuación: secciónes 3.2.6 y siguientes con folios actuales."
+    },
+    {
+      "pagina": 8,
+      "folio": "vi",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Índice de contenido, continuación: Referencias bibliográficas y Anexos con folios."
+    },
+    {
+      "pagina": 9,
+      "folio": "vii",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Índice de figuras: Figuras 1-32 listadas con folios."
+    },
+    {
+      "pagina": 10,
+      "folio": "viii",
+      "estado": "observada",
+      "metodo": "zoom 170 dpi índice + texto/posiciones PDF",
+      "notas": "Índice de figuras, continuación: Figuras 33-52 listadas. En Figura 41 (folio 78), Figura 42 (folio 79) y Figura 45 (folio 84) el número de página quedó en una línea de puntos separada debajo del título."
+    },
+    {
+      "pagina": 11,
+      "folio": "ix",
+      "estado": "observada",
+      "metodo": "zoom 170 dpi índice + texto/posiciones PDF",
+      "notas": "Índice de tablas: Tablas 1-38 listadas. En Tabla 28 (folio 83) y Tabla 33 (folio 96) el número de página quedó en una línea de puntos separada debajo del título."
+    },
+    {
+      "pagina": 12,
+      "folio": "x",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Índice de tablas, continuación: Tablas 39-51 con folios; sin títulos perdidos."
+    },
+    {
+      "pagina": 13,
+      "folio": "xi",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Resumen en español: párrafo completo y palabras clave; folio xi correcto; sin desbordes."
+    },
+    {
+      "pagina": 14,
+      "folio": "xii",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Abstract en inglés: párrafo completo y keywords; folio xii correcto."
+    },
+    {
+      "pagina": 15,
+      "folio": "xiii",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Chumasqa (quechua): párrafo completo y palabras clave; folio xiii correcto."
+    },
+    {
+      "pagina": 16,
+      "folio": "1",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Introducción: inicio de foliación arábiga en 1, esquina superior derecha; párrafo inicial completo."
+    },
+    {
+      "pagina": 17,
+      "folio": "2",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Introducción, continuación: dimensiones de la VD y estructura del informe; folio 2 correcto."
+    },
+    {
+      "pagina": 18,
+      "folio": "3",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "CAPÍTULO I: Problema de investigación; título 14 pt negrita, sin sangría; folio 3."
+    },
+    {
+      "pagina": 19,
+      "folio": "4",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, realidad problemática: texto justificado con sangría de primera línea; folio 4."
+    },
+    {
+      "pagina": 20,
+      "folio": "5",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, continuación: párrafos y citas sin desbordes; folio 5."
+    },
+    {
+      "pagina": 21,
+      "folio": "6",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, formulación del problema: bullets y párrafos sin cortes; folio 6."
+    },
+    {
+      "pagina": 22,
+      "folio": "7",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, preguntas de investigación: lista con viñetas alíneada; folio 7."
+    },
+    {
+      "pagina": 23,
+      "folio": "8",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, objetivos y justificación: jerarquía 1.3.x correcta; folio 8."
+    },
+    {
+      "pagina": 24,
+      "folio": "9",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, justificación tecnológica: texto y subtítulo sin desbordes; folio 9."
+    },
+    {
+      "pagina": 25,
+      "folio": "10",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, justificación y delimitación: párrafos completos; folio 10."
+    },
+    {
+      "pagina": 26,
+      "folio": "11",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo I, variables: definición conceptual y operacional; folio 11."
+    },
+    {
+      "pagina": 27,
+      "folio": "12",
+      "estado": "observada",
+      "metodo": "zoom 110 dpi + texto/posiciones PDF",
+      "notas": "Página 27 (folio 12) con solo dos líneas finales del Capítulo I (Shapiro-Wilk y Wilcoxon). Observación de aprovechamiento de espacio: no es error editorial y no justifica borrar texto ni eliminar el salto capitular."
+    },
+    {
+      "pagina": 28,
+      "folio": "13",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "CAPÍTULO II: Antecedentes; título 14 pt negrita; folio 13."
+    },
+    {
+      "pagina": 29,
+      "folio": "14",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo II, antecedentes internacionales: párrafos y citas; folio 14."
+    },
+    {
+      "pagina": 30,
+      "folio": "15",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo II, antecedentes: texto justificado sin cortes; folio 15."
+    },
+    {
+      "pagina": 31,
+      "folio": "16",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo II, antecedentes: párrafos completos; folio 16."
+    },
+    {
+      "pagina": 32,
+      "folio": "17",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo II, antecedentes nacionales: párrafos y citas; folio 17."
+    },
+    {
+      "pagina": 33,
+      "folio": "18",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo II, antecedentes: texto sin desbordes; folio 18."
+    },
+    {
+      "pagina": 34,
+      "folio": "19",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Capítulo II, síntesis de antecedentes: cierre de sección; folio 19."
+    },
+    {
+      "pagina": 35,
+      "folio": "20",
+      "estado": "conforme",
+      "metodo": "contacto + zoom 170 dpi tabla + texto/posiciones",
+      "notas": "Tabla 1, inicio (PDF p. 35 / folio 20): rótulo y título en negrita/cursiva, seis columnas y encabezado; primera fila íntegra."
+    },
+    {
+      "pagina": 36,
+      "folio": "21",
+      "estado": "conforme",
+      "metodo": "zoom 170/200 dpi tabla + texto/posiciones",
+      "notas": "Tabla 1, continuación (PDF p. 36 / folio 21): encabezado repetido; seis filas íntegras, sin fractura de palabras ni filas partidas; tres reglas horizontales."
+    },
+    {
+      "pagina": 37,
+      "folio": "22",
+      "estado": "conforme",
+      "metodo": "zoom 180 dpi tabla + texto/posiciones",
+      "notas": "Tabla 1, fin (PDF p. 37 / folio 22): encabezado repetido, última fila (Mamani-Pari et al., 2026) íntegra y Nota al pie. La tabla ocupa PDF 35-37 (folios 20-22), tres páginas físicas, no PDF 35-36; sin fracturas."
+    },
+    {
+      "pagina": 38,
+      "folio": "23",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "CAPÍTULO III: Marco teórico; título 14 pt negrita; folio 23."
+    },
+    {
+      "pagina": 39,
+      "folio": "24",
+      "estado": "conforme",
+      "metodo": "bbox/DPI 300,3 + zoom 170 dpi + texto",
+      "notas": "Figura 1: imagen 999x376 px a 8,45x3,18 cm = 300,3 dpi; rótulo, título y Nota en la misma página; etiquetas legibles; folio 24."
+    },
+    {
+      "pagina": 40,
+      "folio": "25",
+      "estado": "conforme",
+      "metodo": "bbox/DPI 300,2 + zoom 170 dpi + texto",
+      "notas": "Figura 2: imagen 1651x1433 px a 13,97x12,12 cm = 300,2 dpi; rótulo, título y Nota en la misma página; diagrama legible; folio 25."
+    },
+    {
+      "pagina": 41,
+      "folio": "26",
+      "estado": "conforme",
+      "metodo": "zoom 120 dpi + bbox/DPI + texto",
+      "notas": "Figura 3: imagen 2302x834 px a 13,97x3,64 cm = 419 dpi; rótulo y Nota presentes; etiquetas Waterfall/Iterative/XP legibles aunque el bitmap de origen es suave."
+    },
+    {
+      "pagina": 42,
+      "folio": "27",
+      "estado": "conforme",
+      "metodo": "zoom 120 dpi + bbox/DPI + texto",
+      "notas": "Figura 4: imagen 1685x934 px a 13,97x5,54 cm = 306 dpi; proceso XP completo, rótulo y Nota en la misma página."
+    },
+    {
+      "pagina": 43,
+      "folio": "28",
+      "estado": "conforme",
+      "metodo": "zoom 120 dpi + bbox/DPI + texto",
+      "notas": "Figura 5: imagen 1960x1074 px a 13,97x7,65 cm = 356 dpi; rótulo y Nota presentes; etiquetas en inglés legibles."
+    },
+    {
+      "pagina": 44,
+      "folio": "29",
+      "estado": "observada",
+      "metodo": "bbox/DPI 136,5 + zoom 200 dpi + texto",
+      "notas": "Figura 6: imagen 751x700 px a 13,97x13,02 cm = 136,5 dpi; rótulo y Nota correctos, pero la imagen se ve blanda. Residual conocido por falta de fuente de 300 dpi; no se investiga de nuevo."
+    },
+    {
+      "pagina": 45,
+      "folio": "30",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Sección 3.1.2.2, sistemás e-LMIS: texto y subtítulos sin desbordes; folio 30."
+    },
+    {
+      "pagina": 46,
+      "folio": "31",
+      "estado": "conforme",
+      "metodo": "zoom 120 dpi + bbox/DPI + texto",
+      "notas": "Figura 7: imagen 2042x2031 px a 13,23x10,47 cm = 391 dpi; diagrama y leyenda legibles; rótulo y Nota en la misma página."
+    },
+    {
+      "pagina": 47,
+      "folio": "32",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Dimensión 1: oportunidad de procesamiento; párrafos y ecuaciones OMML sin desbordes; folio 32."
+    },
+    {
+      "pagina": 48,
+      "folio": "33",
+      "estado": "conforme",
+      "metodo": "zoom 120 dpi + bbox/DPI + texto",
+      "notas": "Figura 8: imagen 2101x1603 px a 13,97x10,66 cm = 382 dpi; rótulo y Nota presentes; texto interno legible."
+    },
+    {
+      "pagina": 49,
+      "folio": "34",
+      "estado": "conforme",
+      "metodo": "bbox/DPI 300,1 + zoom 170 dpi + texto",
+      "notas": "Figura 9: imagen 971x510 px a 8,22x4,32 cm = 300,1 dpi; rótulo, título y Nota en la misma página; etiquetas legibles; folio 34."
+    },
+    {
+      "pagina": 50,
+      "folio": "35",
+      "estado": "conforme",
+      "metodo": "zoom 110 dpi + bbox/DPI 363,6 + texto",
+      "notas": "Figura 10: imagen 2001x1380 px a 13,97x9,64 cm = 363,6 dpi; diagrama completo, rótulo y Nota; inicia Tabla 2 al pie con encabezado."
+    },
+    {
+      "pagina": 51,
+      "folio": "36",
+      "estado": "conforme",
+      "metodo": "zoom 115 dpi tabla + texto/posiciones",
+      "notas": "Tabla 2, continuación: encabezado repetido y cuatro filas íntegras; Nota al pie; sin fracturas; folio 36."
+    },
+    {
+      "pagina": 52,
+      "folio": "37",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Sección 3.2.3, comprobante de salida (vale): texto y definiciones; folio 37."
+    },
+    {
+      "pagina": 53,
+      "folio": "38",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Sección 3.2.x, cadena de frío y términos: párrafos completos; folio 38."
+    },
+    {
+      "pagina": 54,
+      "folio": "39",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Sección 3.2.16, ORM: definición y párrafos sin cortes; folio 39."
+    },
+    {
+      "pagina": 55,
+      "folio": "40",
+      "estado": "observada",
+      "metodo": "zoom 110/120 dpi + bbox/DPI 476 + texto",
+      "notas": "Figura 11: imagen 2760x750 px a 14,73x4,00 cm = 476 dpi, rótulo y Nota correctos. Inconsistencia editorial: el texto dice \"cuatro fases\" (Planificación, Diseño, Codificación y Pruebas) y la figura rotula \"FASE 5 Despliegue\"."
+    },
+    {
+      "pagina": 56,
+      "folio": "41",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Tabla 3, roles y responsabilidades: rótulo, encabezado y Nota en la misma página; filas íntegras; folio 41."
+    },
+    {
+      "pagina": 57,
+      "folio": "42",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Tabla 4, catálogo de requerimientos funcionales: inicio con rótulo y encabezado; folio 42."
+    },
+    {
+      "pagina": 58,
+      "folio": "43",
+      "estado": "conforme",
+      "metodo": "zoom 160 dpi tabla + texto/posiciones",
+      "notas": "Tabla 4, continuación: encabezado repetido; filas RF-10 a RF-12 íntegras, sin fracturas; folio 43."
+    },
+    {
+      "pagina": 59,
+      "folio": "44",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Tabla 5, requerimientos no funcionales ISO/IEC 25010:2023: rótulo, tabla y Nota en la misma página; folio 44."
+    },
+    {
+      "pagina": 60,
+      "folio": "45",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Tabla 6, matriz de trazabilidad: rótulo, encabezado y Nota; filas completas; folio 45."
+    },
+    {
+      "pagina": 61,
+      "folio": "46",
+      "estado": "conforme",
+      "metodo": "contacto 4x4 + texto/posiciones PDF",
+      "notas": "Tabla 7, matriz del Planning Game: rótulo y encabezado al inicio; tabla continúa en p62; folio 46."
+    },
+    {
+      "pagina": 62,
+      "folio": "47",
+      "estado": "conforme",
+      "metodo": "zoom 190 dpi tabla + texto/posiciones",
+      "notas": "Tabla 7, fin: encabezado repetido, filas HU-14 y HU-15 íntegras y Nota. Inicia Tabla 8 (plan de cinco iteraciones) con rótulo y encabezado; folio 47."
+    },
+    {
+      "pagina": 63,
+      "folio": "48",
+      "estado": "conforme",
+      "metodo": "zoom 190 dpi tabla + contacto + texto",
+      "notas": "Tabla 8, fin: encabezado repetido; Iteraciones 4 y 5 íntegras y Nota. Figura 12 (casos de uso, 2880x1300 px a 14,75x4,95 cm = 497 dpi) con rótulo y Nota; folio 48."
+    },
+    {
+      "pagina": 64,
+      "folio": "49",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figura 13 (arquitectura en capas, 2800x1200 px = 483 dpi): rótulo y Nota en la misma página; diagrama legible; folio 49."
+    },
+    {
+      "pagina": 65,
+      "folio": "50",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figura 14 (arquitectura de cuatro capas, 2800x1270 px = 483 dpi): rótulo y Nota; texto interno legible; folio 50."
+    },
+    {
+      "pagina": 66,
+      "folio": "51",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figura 15 (actividades con validación FEFO, 2520x1470 px = 434 dpi): rótulo y Nota; diagrama legible; folio 51."
+    },
+    {
+      "pagina": 67,
+      "folio": "52",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figura 16 (actividades ICI-DEMID, 2600x1480 px = 448 dpi): rótulo y Nota; diagrama legible; folio 52."
+    },
+    {
+      "pagina": 68,
+      "folio": "53",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figura 17 (secuencia UML RBAC, 2720x1280 px = 469 dpi) con rótulo y Nota. Inicia Tabla 9 (control de acceso) con rótulo y encabezado; folio 53."
+    },
+    {
+      "pagina": 69,
+      "folio": "54",
+      "estado": "conforme",
+      "metodo": "zoom 160 dpi tabla + texto/posiciones",
+      "notas": "Tabla 9, fin: encabezado repetido, fila Alertas e ICI-DEMID íntegra y Nota. Figura 18 (secuencia UML, 2800x1300 px = 483 dpi) con rótulo y Nota; folio 54."
+    },
+    {
+      "pagina": 70,
+      "folio": "55",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figuras 19 y 20 (modelo entidad-relación y esquema relacional, 2800x1260/1280 px = 483 dpi): ambas con rótulo y Nota; diagramás legibles; folio 55."
+    },
+    {
+      "pagina": 71,
+      "folio": "56",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 100 dpi + bbox/DPI + texto",
+      "notas": "Figura 21 (diccionario físico PostgreSQL, 2800x1220 px = 483 dpi) con rótulo y Nota. Inicia Tabla 10 con rótulo, encabezado y primera fila; folio 56."
+    },
+    {
+      "pagina": 72,
+      "folio": "57",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + zoom + texto/posiciones",
+      "notas": "Tabla 10, fin con Nota; Tablas 11 y 12 inician con encabezados repetidos y Notas; sin fracturas; folio 57."
+    },
+    {
+      "pagina": 73,
+      "folio": "58",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + zoom 170 dpi + texto",
+      "notas": "Tabla 13, diccionario de datos de establecimientos: cinco columnas, encabezado y Nota; filas íntegras, sin fracturas; folio 58."
+    },
+    {
+      "pagina": 74,
+      "folio": "59",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tablas 14 y 15 (usuarios y vacunas): encabezados y Notas; filas completas; folio 59."
+    },
+    {
+      "pagina": 75,
+      "folio": "60",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tabla 16 (jeringas y configuración): encabezado y Nota; sin fracturas; folio 60."
+    },
+    {
+      "pagina": 76,
+      "folio": "61",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tablas 17 y 18 (lotes y planificación anual): encabezados y Notas; filas íntegras; folio 61."
+    },
+    {
+      "pagina": 77,
+      "folio": "62",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tablas 19 y 20 (lotes-ubicación y entregas adicionales): encabezados y Notas; tabla 20 inicia al pie con una fila, continúa en p77; folio 62."
+    },
+    {
+      "pagina": 78,
+      "folio": "63",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tabla 21 (vales, entregas y detalle): encabezado y Nota; filas completas; folio 63."
+    },
+    {
+      "pagina": 79,
+      "folio": "64",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tabla 22 (kardex): encabezado y Nota; filas completas; folio 64."
+    },
+    {
+      "pagina": 80,
+      "folio": "65",
+      "estado": "conforme",
+      "metodo": "contacto 3x3 + texto/posiciones",
+      "notas": "Tablas 23 y 24 (alertas y detalle de alertas): encabezados y Notas; la Tabla 24 continúa en p81, fuera de este tramo, por lo que su Nota no se evalúa aquí; folio 65."
+    }
+  ],
+  "cobertura": {
+    "paginas_solicitadas": 80,
+    "paginas_revisadas": 80,
+    "cobertura": "80/80",
+    "sin_muestreo": true,
+    "conteo_por_estado": {
+      "observada": 7,
+      "conforme_con_observacion_intencional": 1,
+      "conforme": 72
+    },
+    "nota": "Conteo descriptivo del tramo 1-80; no es porcentaje global de calidad ni cubre las páginas 81-159.",
+    "lectura": "No se contabiliza la observación intencional del DNI como defecto. La página 27 es una observación de aprovechamiento, no un error editorial. No se emite porcentaje global."
+  },
+  "inventario_incidencias": [
+    {
+      "id": "INC-01",
+      "pagina": 3,
+      "folio": "sin folio",
+      "rotulo": "Declaración jurada (Anexo 32)",
+      "severidad": "informativa",
+      "estado": "aprobado_por_usuario",
+      "descripcion": "DNI en blanco en el cuerpo y en el pie de firma de la Declaración jurada; el usuario aprobó expresamente dejarlo para el manuscrito firmado.",
+      "evidencia": "Dos ocurrencias de DNI N.° con línea en blanco; el resto de la declaración está completo y fechado el 09/10/2026. No es un defecto de maqueta.",
+      "accion_sugerida": "No modificar ni introducir números: el tesista completará el DNI en el manuscrito firmado.",
+      "naturaleza": "observacion_intencional"
+    },
+    {
+      "id": "INC-02",
+      "pagina": 27,
+      "folio": "12",
+      "rotulo": "Fin de párrafo antes del Capitulo II",
+      "severidad": "baja",
+      "estado": "no_requiere_correccion",
+      "descripcion": "Página con solo dos líneas finales del Capítulo I; es una observación de aprovechamiento de espacio, no un error editorial.",
+      "evidencia": "Texto: verificación distribucional con la prueba de Shapiro-Wilk y el contraste no paramétrico de rangos con signo de Wilcoxon para respaldar el rigor inferencial del estudio. La hoja no contiene más texto ni imágenes.",
+      "accion_sugerida": "No borrar texto ni eliminar el salto capitular; si se desea, refluir solo en una revisión editorial posterior.",
+      "naturaleza": "observacion_de_aprovechamiento"
+    },
+    {
+      "id": "INC-03",
+      "pagina": 2,
+      "folio": "sin folio",
+      "rotulo": "Acta de sustentación",
+      "severidad": "media",
+      "estado": "verificar",
+      "descripcion": "Acta con nombres del jurado, fecha y calificación en blanco; el texto indica que está pendiente de suscripción.",
+      "evidencia": "Acta pendiente de suscripción por el jurado evaluador; líneas vacías para Presidente, Secretario, Vocal, fecha y calificación.",
+      "accion_sugerida": "[VERIFICAR] Confirmar con el tesista si el acta debe permanecer como plantilla en el PDF final o retirarse hasta la sustentación.",
+      "naturaleza": "pendiente_de_verificacion"
+    },
+    {
+      "id": "INC-04",
+      "pagina": 10,
+      "folio": "viii",
+      "rotulo": "Indice de figuras",
+      "severidad": "baja",
+      "estado": "abierto",
+      "descripcion": "Tres entradas tienen el número de página en una línea de puntos separada debajo del título.",
+      "evidencia": "Figura 41 -> folio 78, Figura 42 -> folio 79 y Figura 45 -> folio 84: el título termina sin número y la línea siguiente contiene solo puntos y el folio.",
+      "accion_sugerida": "Reajustar la tabulación o el ancho de la entrada para que el folio cierre en la misma línea del título.",
+      "naturaleza": "error_editorial_menor"
+    },
+    {
+      "id": "INC-05",
+      "pagina": 11,
+      "folio": "ix",
+      "rotulo": "Indice de tablas",
+      "severidad": "baja",
+      "estado": "abierto",
+      "descripcion": "Dos entradas tienen el número de página en una línea de puntos separada debajo del título.",
+      "evidencia": "Tabla 28 -> folio 83 y Tabla 33 -> folio 96: el título termina sin número y la línea siguiente contiene solo puntos y el folio.",
+      "accion_sugerida": "Reajustar la tabulación o el ancho de la entrada para que el folio cierre en la misma línea del título.",
+      "naturaleza": "error_editorial_menor"
+    },
+    {
+      "id": "INC-06",
+      "pagina": 44,
+      "folio": "29",
+      "rotulo": "Figura 6",
+      "severidad": "media",
+      "estado": "residual_conocido",
+      "descripcion": "La imagen se muestra a 136,5 dpi efectivos (751x700 px en 13,97x13,02 cm), por debajo de 300 dpi; se percibe blanda.",
+      "evidencia": "xref 508; 751x700 px; bbox 106,75-502,74 x 337,53-706,63 pt. No existe fuente local de 300 dpi segun la ampliacion previa del 2026-10-21.",
+      "accion_sugerida": "No reinvestigar. Mantener como residual documentado o sustituir solo si el tesista aporta una fuente original de mayor resolución.",
+      "naturaleza": "residual_conocido"
+    },
+    {
+      "id": "INC-07",
+      "pagina": 55,
+      "folio": "40",
+      "rotulo": "Figura 11 y texto de la sección 3.3",
+      "severidad": "media",
+      "estado": "abierto",
+      "descripcion": "El texto describe cuatro fases del ciclo XP y la figura rotula cinco cajas, incluida FASE 5 Despliegue.",
+      "evidencia": "Texto: abarco cuatro fases secuenciales e iterativas: Planificacion, Diseño Simple, Codificación y Pruebas, concluyendo con el despliegue físico. Figura 11: FASE 1 a FASE 5, con Despliegue como FASE 5 y Plan de 5 iteraciones en FASE 1.",
+      "accion_sugerida": "Unificar la rotulación: o bien describir cuatro fases más despliegue como etapa de cierre, o bien rotular el despliegue como fase 5 también en el texto. No alterar el recuento de cinco iteraciones.",
+      "naturaleza": "inconsistencia_editorial"
+    },
+    {
+      "id": "INC-08",
+      "pagina": 1,
+      "folio": "sin folio",
+      "rotulo": "Escudo de portada",
+      "severidad": "baja",
+      "estado": "observacion",
+      "descripcion": "El escudo institucional se muestra a 118 dpi efectivos (212x238 px en 1,81x2,01 in).",
+      "evidencia": "Imagen xref 18; 212x238 px; bbox 240-370 x 136-281 pt. Se ve definido en pantalla pero no alcanza 300 dpi.",
+      "accion_sugerida": "Opcional: sustituir por el escudo institucional vectorial o de mayor resolución si el archivo oficial está disponible; no es un defecto de legibilidad.",
+      "naturaleza": "observacion_menor"
+    }
+  ],
+  "residuales_y_limites": [
+    "La Tabla 24 continúa en la página 81; su Nota y el cierre de la tabla quedan fuera de este tramo y corresponden al verificador de 81-159.",
+    "Las Figuras 22-52 y las Tablas 25-51 no aparecen en las páginas 1-80 y no se evalúan aqui.",
+    "La Figura 6 se mantiene como residual conocido de 136,5 dpi; no se reinvestigó su fuente por instrucción expresa.",
+    "No se reauditó la geometría OpenXML del DOCX ni se modificó documento alguno; solo se firmaron los hashes del PDF y del DOCX revisados.",
+    "No se emite porcentaje global de calidad ni se afirma que las 159 páginas esten verificadas."
+  ],
+  "verificaciones": {
+    "folios": "Secuencia completa: páginas 1-3 sin folio; 4-15 en romanos ii-xiii; 16-80 en arábigos 1-65, sin saltos ni duplicados.",
+    "titulos": "Capitulos y preliminares a 14 pt negrita; secciónes a 12 pt negrita; jerarquía 1, 1.1, 1.1.1 y hasta 3.3.1.1.1 sin saltos observados en el tramo.",
+    "indices": "Todos los números de Figura 1-52 y Tabla 1-51 estan listados; no hay títulos perdidos. Unica anomalia: cinco folios desplazados a una línea de puntos separada (INC-04 e INC-05).",
+    "tabla_1": "Ocupa PDF 35-37 (folios 20-22): tres páginas físicas, no PDF 35-36. Encabezado repetido en cada página, filas íntegras, tres reglas horizontales y Nota final; sin fracturas.",
+    "figuras_1_2_9": "Figura 1: 300,3 dpi a 8,45 cm; Figura 2: 300,2 dpi a 13,97 cm; Figura 9: 300,1 dpi a 8,22 cm. Rotulo, título y Nota en la misma página; etiquetas legibles.",
+    "otras_figuras": "Figuras 3-5, 7-8, 10-21: todas por encima de 300 dpi (306-497 dpi), con rótulo y Nota en la misma página. Excepcion: Figura 6 (136,5 dpi, INC-06).",
+    "tablas": "Tablas 1-23 sin fracturas de fila ni texto cortado; encabezados repetidos en las continuaciones verificadas (Tabla 1, 2, 4, 7, 8, 9 y diccionarios 10-24).",
+    "hashes": "PDF d0dbe841df7bcad3132a45277c746aaf69008ce3ce886eb6703eac75b8373d00 (17.891.321 bytes, 159 páginas); DOCX fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b (15.097.973 bytes)."
+  },
+  "clasificacion": {
+    "errores_editoriales": [
+      "INC-04",
+      "INC-05",
+      "INC-07"
+    ],
+    "observaciones_intencionales_o_de_aprovechamiento": [
+      "INC-01",
+      "INC-02"
+    ],
+    "pendientes_de_verificacion": [
+      "INC-03"
+    ],
+    "residuales_conocidos": [
+      "INC-06"
+    ],
+    "observaciones_menores": [
+      "INC-08"
+    ]
+  }
+}

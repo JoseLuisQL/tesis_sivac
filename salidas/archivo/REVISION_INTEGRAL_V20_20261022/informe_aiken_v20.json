@@ -1,0 +1,33 @@
+{
+  "origen": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\_v20_biblio.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\_v20_aiken.docx",
+  "sha256_origen": "3e4024e17e4f56d1bd70878945d61a96d9b91b66cb7423ccf8d9c5c29daf8004",
+  "sha256_destino": "ec8102a0261d81f7e7a76b6c60465941002f445dd1663bc5982501bea6604d19",
+  "parrafos": 828,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "referencias",
+      "acciones": [
+        {
+          "categoria": "referencia_insertada",
+          "orden": 1,
+          "ancla": "Addy, A. (2023)",
+          "criterio": "ancla_alfabetica",
+          "referencia": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of rati",
+          "clave": "aiken l r|1985",
+          "duplicada": false,
+          "estado": "insertada"
+        }
+      ],
+      "entradas_antes": 53,
+      "entradas_despues": 54,
+      "inversiones_antes": [],
+      "inversiones_despues": [],
+      "orden_alfabetico_conservado": true,
+      "claves_duplicadas": []
+    }
+  ],
+  "tablas_verificadas": []
+}

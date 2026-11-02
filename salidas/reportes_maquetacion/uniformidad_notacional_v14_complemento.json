@@ -1,0 +1,86 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v14.docx",
+    "documento_base_sha256": "1b81020cf551914e74b21d7f875566ebcf2bd59da781f08340c2cbc0f5861a07",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "squad": "Squad E - Redacción, Estilo y Maquetación Editorial",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Cerrar la unificación del p-valor en las cuatro celdas de las Tablas 41 y 42 que quedaron fuera del expediente uniformidad_notacional_v12.json. El expediente se redactó cuando el estado de las celdas era condicional; la aplicación de wilcoxon_p_v11.json en la v13 convirtió esas cuatro celdas a 0.001 y las dejó dentro del universo por corregir.",
+    "estado_de_partida": {
+      "expediente_previo": "uniformidad_notacional_v12.json",
+      "aplicacion": "salidas/reportes_maquetacion/aplicacion_ordenes_v14.json",
+      "resultado": "67 de 67 órdenes aplicadas sobre la v13; cero fallidas. El presente complemento añade las cuatro celdas restantes.",
+      "causa_de_la_exclusion": "La versión emitida trataba cuatro celdas como pendientes condicionados a que wilcoxon_p_v11.json se aplicara. Wilcoxon se aplicó efectivamente en la v13 y las celdas pasaron de «< .001» a «0.001»; por tanto la condición se cumplió y las órdenes deben emitirse."
+    },
+    "decision_unica_de_p_valor": "Se mantiene sin cambios la convención declarada en el expediente previo: todo p-valor se escribe sin cero inicial, tanto en el cuerpo como en las celdas de tabla. Este complemento agota el último residuo de la convención en el aparato tabular.",
+    "geometria_verificada": "Las Tablas 40, 41 y 42 tienen siete columnas: 1 Indicador, 2 Prueba Estadística, 3 Estadístico, 4 p-valor, 5 Tamaño del Efecto con su magnitud entre paréntesis, 6 p-ajustado de Holm, 7 Decisión. La estructura se verificó contra el volcado fila por fila de la auditoría geométrica y contra las filas literales del expediente de contraste.",
+    "filas_afectadas": [
+      "TABLA 41, fila 3 (Registros sin discrepancias, prueba de Wilcoxon): p = 0.001 en la columna 4.",
+      "TABLA 42, fila 3 (Aceptación del proceso, prueba de Wilcoxon): p = 0.001 en la columna 4.",
+      "TABLA 42, fila 5 (Utilidad percibida, prueba de Wilcoxon): p = 0.001 en la columna 4.",
+      "TABLA 42, fila 7 (Puntaje global TAM, prueba de Wilcoxon): p = 0.001 en la columna 4."
+    ],
+    "celdas_ya_conformes": [
+      "TABLA 40, filas 3 y 5: convertidas por el expediente previo.",
+      "TABLA 41, fila 5: convertida por el expediente previo.",
+      "TABLAS 40, 41 y 42, filas paramétricas: declaran «< .001» en la columna 4 y «< .001» en la columna 6; ambas formas son correctas y no se tocan.",
+      "TABLA 39, filas 2 a 8: columna 6 convertida por el expediente previo."
+    ],
+    "correccion_de_un_hallazgo_previo": {
+      "hallazgo_descartado": "El expediente previo afirmaba que las siete órdenes de tabla de rosenthal_v10_ordenes.json y las cuatro de wilcoxon_p_v11.json estaban mal direccionadas por suponer nueve columnas en las Tablas 40 a 42.",
+      "verificacion": "El reporte salidas/reportes_maquetacion/aplicacion_ordenes_v13.json registra 98 órdenes aplicadas y cero fallidas, incluidas las once órdenes de tabla aludidas. El aplicador quirúrgico resuelve la celda por fila cuando la columna declarada no contiene el ancla (modo «celda_reubicada»).",
+      "conclusion": "Las Tablas 40 a 42 tienen siete columnas y las órdenes estadísticas se aplicaron correctamente. El hallazgo queda rectificado y no debe trasladarse al informe ni al jurado. El expediente previo se conserva sin editar para no romper la trazabilidad del SHA aplicado en la v14."
+    },
+    "observaciones_para_el_maquetador": [
+      "Los 25 párrafos con un espacio residual final (28, 145, 152, 163, 191, 221, 228, 253, 383, 446, 525, 553, 555, 567, 648, 649, 650, 663, 670, 683, 706, 710, 711, 721 y 811) no requieren órdenes de sustitución: el recorte de espacios finales es una operación geométrica sobre los nodos de texto y corresponde al motor quirúrgico como paso de saneamiento.",
+      "Los párrafos de fórmula numerados del 1 al 10 conservan sus dos tabuladores reales; no se tocan."
+    ],
+    "instrucciones_aplicacion": {
+      "comando": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v14.docx --salida salidas/documentos/informe_final_v15.docx --json salidas/reportes_maquetacion/uniformidad_notacional_v14_complemento.json --reporte salidas/reportes_maquetacion/aplicacion_ordenes_v15.json",
+      "resultado_esperado": "4 aplicadas, 0 fallidas."
+    },
+    "verificacion_posterior": [
+      "Buscar el patrón p\\s*[<>=]\\s*0\\. en el cuerpo del documento y en las 51 tablas rotuladas: debe devolver cero resultados.",
+      "Comprobar que los siete contrastes de Wilcoxon declaran la misma forma en tabla y en prosa: p = .001.",
+      "Comprobar que las celdas paramétricas conservan «< .001» sin alteración.",
+      "Revisar los anexos y la matriz de consistencia, fuera del universo medido en el cuerpo, para descartar alguna ocurrencia residual de p con cero inicial."
+    ]
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 4",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Registros sin discrepancias, prueba de Wilcoxon: el p bilateral asintótico es 0.000982, que redondeado a tres decimales se reporta como .001 sin cero inicial conforme a la convención adoptada. La fila solo contiene una celda con el ancla, de modo que la sustitución es inequívoca."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 4",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Aceptación del proceso, prueba de Wilcoxon: mismo contraste y mismo redondeo; se retira el cero inicial para uniformar la columna con las filas paramétricas, que declaran «< .001»."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 4",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Utilidad percibida, prueba de Wilcoxon: se retira el cero inicial. No se altera el estadístico, el tamaño del efecto ni la decisión de la fila."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 4",
+      "ancla_original": "0.001",
+      "texto_nuevo": ".001",
+      "categoria": "p_valor",
+      "justificacion": "Puntaje global TAM, prueba de Wilcoxon: se retira el cero inicial. Con esta orden la columna 4 de las Tablas 40, 41 y 42 queda uniforme: siete celdas en la forma .001 y las paramétricas en «< .001»."
+    }
+  ]
+}

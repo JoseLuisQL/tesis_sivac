@@ -1,0 +1,139 @@
+{
+  "metadatos": {
+    "entrada": "salidas\\documentos\\informe_final_v11.docx",
+    "salida": null,
+    "ordenes": 11,
+    "aplicadas": 11,
+    "omitidas": 0,
+    "fallidas": 0,
+    "excluidos": [],
+    "solo_verificar": true
+  },
+  "aplicadas": [
+    {
+      "indice_docx": 290,
+      "ubicacion": "PARRAFO 290",
+      "ancla_original": "y la evidencia empírica de Hussain et al. (2025) y Luo et al. (2024) conforme a la decisión metodológica DEC-007.",
+      "texto_nuevo": "y la evidencia empírica de Hussain et al. (2025) y Luo et al. (2024), en correspondencia con la matriz de operacionalización institucional.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se suprime el código de decisión interna y se conserva íntegra la atribución teórica: la nota sigue declarando la misma ascendencia bibliográfica y el mismo anclaje en la matriz de operacionalización. No se altera ninguna cifra ni indicador.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 290
+    },
+    {
+      "indice_docx": 351,
+      "ubicacion": "PARRAFO 351",
+      "ancla_original": "En estricta observancia de la decisión metodológica DEC-007, cada requerimiento funcional e historia de usuario",
+      "texto_nuevo": "En estricta observancia de la matriz de operacionalización institucional, cada requerimiento funcional e historia de usuario",
+      "categoria": "codigo_interno",
+      "justificacion": "La referencia a la decisión interna se sustituye por el instrumento metodológico que el lector sí puede identificar. La oración conserva sujeto, predicado y la remisión a la Tabla 4.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 351
+    },
+    {
+      "indice_docx": 353,
+      "ubicacion": "PARRAFO 353",
+      "ancla_original": "Estructura taxonómica inmutable aprobada en la decisión DEC-007 y en la matriz de operacionalización institucional de la UNAJMA.",
+      "texto_nuevo": "Estructura taxonómica inmutable aprobada en la matriz de operacionalización institucional de la UNAJMA.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se elimina la mención redundante a la decisión interna y se preserva el atributo de inmutabilidad de la taxonomía, que es el contenido metodológico relevante.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 353
+    },
+    {
+      "indice_docx": 351,
+      "ubicacion": "TABLA 6, fila 1, columna 3",
+      "ancla_original": "Dimensión de la Variable Dependiente (DEC-007)",
+      "texto_nuevo": "Dimensión de la Variable Dependiente",
+      "categoria": "codigo_interno",
+      "justificacion": "El encabezado de la matriz de trazabilidad identifica la columna por su concepto; el código de decisión no aporta información al lector. La geometría de la tabla y el resto de encabezados quedan intactos.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "celda/diferencia_minima",
+      "tabla": 6,
+      "fila": 0,
+      "columna": 2
+    },
+    {
+      "indice_docx": 646,
+      "ubicacion": "PARRAFO 646",
+      "ancla_original": "ADVERTENCIA METODOLÓGICA Y SALVAGUARDA DEONTOLÓGICA (DEC-007 / REGLA CANÓNICA 01):",
+      "texto_nuevo": "Advertencia metodológica y salvaguarda deontológica:",
+      "categoria": "codigo_interno",
+      "justificacion": "El rótulo conserva su función de llamado de atención y su jerarquía tipográfica, pero se redacta en caja baja académica y sin códigos de gobernanza ni referencias a reglas internas.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 646
+    },
+    {
+      "indice_docx": 646,
+      "ubicacion": "PARRAFO 646",
+      "ancla_original": "En estricta observancia del principio de probidad científica, transparencia cuantitativa y los mandatos de la Decisión DEC-007, se hace constar formalmente que los resultados, matrices descriptivas, pruebas de normalidad, contrastes de hipótesis y figuras presentados en este capítulo corresponden al conjunto de datos de prueba preconfigurado en el repositorio oficial ('datos/recolectados/'), rotulado explícitamente como 'DATOS DE PRUEBA – REEMPLAZAR (DEC-007)'. La arquitectura bioestadística desarrollada en Python permite la reejecución completa e instantánea de la totalidad de tablas y figuras con un único comando ('python scripts/estadistica/analisis_estadistico_sivac.py') al momento en que se carguen las mediciones definitivas recolectadas en el trabajo de campo de la Dirección de Salud Apurímac II.",
+      "texto_nuevo": "En estricta observancia del principio de probidad científica y de transparencia cuantitativa, se hace constar que los resultados, las matrices descriptivas, las pruebas de normalidad, los contrastes de hipótesis y las figuras presentados en este capítulo corresponden a un conjunto de datos provisionales de prueba. Dichos valores deben sustituirse por los registros definitivos que se recolecten en el trabajo de campo en la Dirección de Salud Apurímac II antes de la sustentación de la tesis. La arquitectura bioestadística implementada permite reejecutar íntegramente las tablas y las figuras una vez incorporadas las mediciones definitivas, sin necesidad de rehacer el análisis.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se preserva íntegra la salvaguarda de integridad empírica: los valores son provisionales y deben ser sustituidos por los registros definitivos de campo antes de la sustentación. Se suprime el código de decisión, la referencia a reglas internas, la ruta del repositorio, el rótulo en mayúsculas de sistema y el comando de ejecución, y se redacta en prosa académica impersonal. No se modifica ninguna cifra ni tabla del capítulo.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 646
+    },
+    {
+      "indice_docx": 677,
+      "ubicacion": "PARRAFO 677",
+      "ancla_original": "Nota. Evaluado mediante el Cuestionario TAM Modalidad A (DEC-019).",
+      "texto_nuevo": "Nota. Evaluado mediante el Cuestionario TAM, Modalidad A.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se suprime el código de decisión que identificaba la modalidad del instrumento. Se añade la coma entre sigla y modalidad conforme a la puntuación académica. Se conservan intactos la escala, los rangos, los baremos y la fuente.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/busqueda_unica/multiples_tramos",
+      "resuelto_en": 672
+    },
+    {
+      "indice_docx": 769,
+      "ubicacion": "PARRAFO 769",
+      "ancla_original": "ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007)",
+      "texto_nuevo": "ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA",
+      "categoria": "codigo_interno",
+      "justificacion": "El título del anexo se nombra por su contenido. Se conserva la caja alta institucional del rótulo y se elimina el paréntesis con el código interno.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 769
+    },
+    {
+      "indice_docx": 772,
+      "ubicacion": "PARRAFO 772",
+      "ancla_original": "Nota. Matriz de consistencia metodológica aprobada según DEC-007. UNAJMA (2026).",
+      "texto_nuevo": "Nota. Matriz de consistencia metodológica del estudio. Elaboración propia.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se sustituye la atribución de aprobación por decisión interna por la declaración de autoría, conforme al uso APA 7 para instrumentos de elaboración propia. Se preserva la función identificadora de la nota.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 772
+    },
+    {
+      "indice_docx": 773,
+      "ubicacion": "PARRAFO 773",
+      "ancla_original": "ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)",
+      "texto_nuevo": "ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES",
+      "categoria": "codigo_interno",
+      "justificacion": "Misma operación que en el Anexo 1: el título se nombra por su contenido y se retira el paréntesis con el código de decisión.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 773
+    },
+    {
+      "indice_docx": 776,
+      "ubicacion": "PARRAFO 776",
+      "ancla_original": "Nota. Operacionalización oficial fijada por la Decisión DEC-007. UNAJMA (2026).",
+      "texto_nuevo": "Nota. Operacionalización de las variables del estudio. Elaboración propia.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se retira la referencia a la decisión interna y la atribución institucional a un acto administrativo, conservando la identificación de la matriz y su carácter de instrumento propio del estudio.",
+      "_origen": "codigos_internos_v09.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 776
+    }
+  ],
+  "omitidas": [],
+  "fallidas": []
+}

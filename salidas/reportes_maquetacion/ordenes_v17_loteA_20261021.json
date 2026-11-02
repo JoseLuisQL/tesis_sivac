@@ -1,0 +1,381 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v16.docx",
+    "documento_base_sha256": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5",
+    "fecha_emision": "2026-10-21",
+    "agente": "maquetador-docx",
+    "squad": "Squad E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Lote A de sustituciones de texto para la v17, derivado del plan de aclaraciones. Solo se incluyen anclas verificadas; A-20 queda fuera por GAP-09.",
+    "total_sustituciones": 21,
+    "excluidas": [
+      {
+        "id": "A-20",
+        "motivo": "texto dentro de w:hyperlink; requiere GAP-09"
+      }
+    ]
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 10,
+      "ubicacion": "PÁRRAFO 10",
+      "ancla_original": "DNI N.° [Completar DNI oficial antes de impresión],",
+      "texto_nuevo": "DNI N.° ____________________,",
+      "ocurrencias": 1,
+      "categoria": "B-01",
+      "justificacion": "Caratula. DNI manuscrito confirmado por el tesista. Sin numeros inventados."
+    },
+    {
+      "indice_docx": 18,
+      "ubicacion": "PÁRRAFO 18",
+      "ancla_original": "DNI N.° [Completar DNI oficial antes de impresión]",
+      "texto_nuevo": "DNI N.° ____________________",
+      "ocurrencias": 1,
+      "categoria": "B-01",
+      "justificacion": "Pagina de autor. Segunda y ultima advertencia de DNI."
+    },
+    {
+      "indice_docx": 142,
+      "ubicacion": "PÁRRAFO 142",
+      "ancla_original": " [Pending].",
+      "texto_nuevo": ".",
+      "ocurrencias": 1,
+      "categoria": "B-02",
+      "justificacion": "Elimina el token sin borrar la declaracion de datos pendientes: la oracion conserva 'remain under posttest consolidation'."
+    },
+    {
+      "indice_docx": 792,
+      "ubicacion": "PÁRRAFO 792",
+      "ancla_original": "Frío) en Enfermería / Especialista en Inmunizaciones y Cadena de Frío)",
+      "texto_nuevo": "Frío)",
+      "ocurrencias": 1,
+      "categoria": "M-14",
+      "justificacion": "El ancla incluye 'Frío)' para no coincidir con el tramo '(Licenciado en Enfermería...'."
+    },
+    {
+      "indice_docx": 794,
+      "ubicacion": "PÁRRAFO 794",
+      "ancla_original": "Cuantitativa) / Especialista en Estadística y Medición Cuantitativa)",
+      "texto_nuevo": "Cuantitativa)",
+      "ocurrencias": 1,
+      "categoria": "M-14",
+      "justificacion": ""
+    },
+    {
+      "indice_docx": 803,
+      "ubicacion": "PÁRRAFO 803",
+      "ancla_original": "dictámenes de los tres jueces.) con confiabilidad Alfa de Cronbach > 0.90.",
+      "texto_nuevo": "dictámenes de los tres jueces.",
+      "ocurrencias": 1,
+      "categoria": "B-07",
+      "justificacion": "Elimina el parentesis huerfano y la afirmacion de fiabilidad no sustentada."
+    },
+    {
+      "indice_docx": 753,
+      "ubicacion": "PÁRRAFO 753",
+      "ancla_original": "Standardization, e International",
+      "texto_nuevo": "Standardization e International",
+      "ocurrencias": 1,
+      "categoria": "M-10",
+      "justificacion": ""
+    },
+    {
+      "indice_docx": 155,
+      "ubicacion": "PÁRRAFO 155",
+      "ancla_original": "[OPS] y PATH, 2020",
+      "texto_nuevo": "[OPS] y PATH, 2019",
+      "ocurrencias": 1,
+      "categoria": "C-02",
+      "justificacion": "Primera de dos menciones erroneas. Expediente del investigador: salidas/reportes_maquetacion/ops_path_aclaraciones_20261021.json (handle 10665.2/50482, anio de edicion 2019). De las cinco ocurrencias de PATH en la v16, solo estas dos del parrafo 155 son discrepantes."
+    },
+    {
+      "indice_docx": 155,
+      "ubicacion": "PÁRRAFO 155",
+      "ancla_original": "y PATH, 2020).",
+      "texto_nuevo": "y PATH, 2019).",
+      "ocurrencias": 1,
+      "categoria": "C-02",
+      "justificacion": "Segunda y ultima mencion erronea. Verificado contra el DOCX: PATH aparece cinco veces en total (par#155 x2 con 2020; par#265 y par#325 con 2019; par#765 entrada de la lista con 2019). Las tres ocurrencias de 2019 NO se tocan."
+    },
+    {
+      "indice_docx": 655,
+      "ubicacion": "PÁRRAFO 655",
+      "ancla_original": "(T_reg y T_vale)",
+      "texto_nuevo": "(tiempo de registro y tiempo de emisión de vale)",
+      "ocurrencias": 1,
+      "categoria": "C-06",
+      "justificacion": "Encabezado 5.2.1. Sustituye guiones bajos por prosa."
+    },
+    {
+      "indice_docx": 23,
+      "ubicacion": "TABLA 23, fila 9, columna 5",
+      "ancla_original": "(MSD = Saldo / CPA)",
+      "texto_nuevo": "(relación entre el saldo disponible y el consumo promedio mensual)",
+      "ocurrencias": 1,
+      "categoria": "M-22",
+      "justificacion": "Tabla 23 impresa = tables[23]. Fila 9 base 1."
+    },
+    {
+      "indice_docx": 31,
+      "ubicacion": "TABLA 31, fila 5, columna 3",
+      "ancla_original": "(Q_entregada = Q_programada)",
+      "texto_nuevo": "(cantidad entregada igual a la cantidad programada)",
+      "ocurrencias": 1,
+      "categoria": "M-22",
+      "justificacion": ""
+    },
+    {
+      "indice_docx": 50,
+      "ubicacion": "TABLA 50, fila 2, columna 3",
+      "ancla_original": "(Total registros conformes sin error / Total transacciones auditadas) * 100",
+      "texto_nuevo": "Registros conformes sin error sobre el total de transacciones auditadas, expresado en porcentaje",
+      "ocurrencias": 1,
+      "categoria": "B-06",
+      "justificacion": "Tabla 47 IMPRESA = tables[50]. La ecuacion (3) RSD ya existe como OMML en par#597; no se pierde la formula."
+    },
+    {
+      "indice_docx": 50,
+      "ubicacion": "TABLA 50, fila 3, columna 3",
+      "ancla_original": "(Cantidad física biológica entregada / Cantidad programada en requerimiento) * 100",
+      "texto_nuevo": "Cantidad física biológica entregada sobre la cantidad programada en el requerimiento, expresado en porcentaje",
+      "ocurrencias": 1,
+      "categoria": "B-06",
+      "justificacion": "La ecuacion (4) CPE ya existe como OMML en par#600."
+    },
+    {
+      "indice_docx": 620,
+      "ubicacion": "PÁRRAFO 620",
+      "ancla_original": "(κ = (P_o - P_e) / (1 - P_e))",
+      "texto_nuevo": "(proporción de concordancia observada corregida por la concordancia esperada por azar)",
+      "ocurrencias": 1,
+      "categoria": "C-07",
+      "justificacion": "Via prosa, autorizada por el dictamen. Evita insertar una ecuacion (12) y renumerar las ecuaciones (8)-(11)."
+    },
+    {
+      "indice_docx": 652,
+      "ubicacion": "PÁRRAFO 652",
+      "ancla_original": "Nota. Intervalo de confianza (IC) al 95% calculado según el método de distribución F asintótica de Feldt (1965). Muestra censal n = 14 trabajadores de la cadena de inmunizaciones de la Dirección de Salud Apurímac II. Criterios de baremación psicométrica: ≥ .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. El intervalo de confianza se expresa como [límite inferior, límite superior]. Fuente: Matriz de recolección de campo SIVAC (2026).",
+      "texto_nuevo": "Nota. Resultados provisionales calculados con datos de prueba (n = 14); no constituyen mediciones de campo. Intervalo de confianza (IC) al 95% calculado según el método de distribución F asintótica de Feldt (1965). Criterios de baremación psicométrica: ≥ .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. El intervalo de confianza se expresa como [límite inferior, límite superior]. Fuente: datos de prueba.",
+      "ocurrencias": 1,
+      "categoria": "C-05",
+      "justificacion": "Sustitucion integra de la nota, en un unico run. Sin tokens internos ni rutas tecnicas en la tesis: DEC-007, nombres de CSV y ruta datos/recolectados/ quedan solo en el reporte. No altera ninguna cifra de la Tabla 35. El prefijo 'Nota.' seguira en redonda hasta que se apruebe GAP-01 (M-04)."
+    },
+    {
+      "indice_docx": 527,
+      "ubicacion": "PÁRRAFO 527",
+      "ancla_original": "En la Figura 44 se ilustra la ejecución real de las pruebas unitarias de MovimientosCalculationService.ts",
+      "texto_nuevo": "En la Figura 44 se ilustra el código de la prueba unitaria de MovimientosCalculationService.ts",
+      "ocurrencias": 1,
+      "categoria": "B-05",
+      "justificacion": "La imagen es codigo TypeScript, no una consola. Se elimina la sobreafirmacion 'ejecucion real'. No se declara el 100 % de casos."
+    },
+    {
+      "indice_docx": 528,
+      "ubicacion": "PÁRRAFO 528",
+      "ancla_original": "Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+      "texto_nuevo": "Prueba unitaria de entregas adicionales y sincronización de stock",
+      "ocurrencias": 1,
+      "categoria": "B-05",
+      "justificacion": "Titulo breve y fiel al contenido de la imagen; evita el desborde de la entrada del indice de figuras. Se sustituye solo el tramo en cursiva del rotulo."
+    },
+    {
+      "indice_docx": 530,
+      "ubicacion": "PÁRRAFO 530",
+      "ancla_original": "Consola de ejecución de la suite de pruebas unitarias en Jest demostrando el cumplimiento del 100% de los casos de prueba transaccionales sin discrepancias.",
+      "texto_nuevo": "Elaboración propia. La prueba utiliza dobles de prueba (mocks de Jest sobre Prisma) para verificar el cálculo determinista de entregas y la propagación del saldo al mes siguiente.",
+      "ocurrencias": 1,
+      "categoria": "B-05",
+      "justificacion": "Ancla sin el prefijo 'Nota. ', que ya esta en cursiva. No se atribuye a la imagen una salida de consola inexistente."
+    },
+    {
+      "indice_docx": 811,
+      "ubicacion": "PÁRRAFO 811",
+      "ancla_original": "En la Tabla A6.1 se sintetizan",
+      "texto_nuevo": "En la Tabla 51 se sintetizan",
+      "ocurrencias": 1,
+      "categoria": "C-03",
+      "justificacion": "Corrige la remision al rotulo impreso. No altera el recuento de cinco iteraciones."
+    },
+    {
+      "indice_docx": 537,
+      "ubicacion": "PÁRRAFO 537",
+      "ancla_original": "Pruebas de aceptación ejecutadas en las instalaciones de la DISA Apurímac II con participación de los usuarios finales de la cadena de frío.",
+      "texto_nuevo": "Pruebas de aceptación ejecutadas en las instalaciones de la DISA Apurímac II con participación de los usuarios finales de la cadena de frío. Los resultados de CP-06 y CP-11 corresponden a pruebas de aceptación funcional; no equivalen a medición pretest/postest ni acreditan reducción de tiempos de campo.",
+      "ocurrencias": 1,
+      "categoria": "C-01",
+      "justificacion": "Amplia la nota existente tras la Tabla 27. No declara protocolo de medicion, no cambia cifras de la D1 y no convierte CP-06/CP-11 en indicadores."
+    },
+    {
+      "indice_docx": 625,
+      "ubicacion": "PÁRRAFO 625",
+      "ancla_original": "El objeto del juicio es un único certificado de validez de contenido correspondiente al Instrumento N.° 03, que reproduce literalmente los 8 ítems de su Modalidad A (AP-01 a AP-04 y UP-01 a UP-04) y los somete a tres criterios dicotómicos independientes por ítem: Pertinencia (Sí/No), Relevancia (Sí/No) y Claridad (Sí/No) (Quispe Tello, 2024, p. 62).",
+      "texto_nuevo": "El objeto del juicio es el formato de evaluación disponible, que integra la matriz de la variable dependiente con 12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4, y el cuestionario TAM de la Modalidad A con 8 reactivos en escala Likert de 1 a 5; el formato anterior de 8 ítems con tres criterios dicotómicos (Pertinencia, Relevancia y Claridad) no se cotejó con las fichas y no se recodifica (Quispe Tello, 2024, p. 62).",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Distingue el formato disponible de 12 componentes en escala 1-4 del TAM de 8 reactivos Likert. Identifica el formato anterior 8 Si/No como no cotejado, sin recodificar 4 a Si."
+    },
+    {
+      "indice_docx": 627,
+      "ubicacion": "PÁRRAFO 627",
+      "ancla_original": "que bajo criterios dicotámicos Sí/No adopta el valor c = 2, de modo que el denominador n(c - 1) se reduce a n.",
+      "texto_nuevo": "que en el formato anterior con criterios dicotámicos Sí/No adoptaba el valor c = 2, de modo que el denominador n(c - 1) se reducía a n; el formato disponible de 12 componentes emplea una escala experta de 1 a 4, por lo que allí c = 4.",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Conserva la formula (8) sin cambios y explicita c=4 para el formato disponible y c=2 para el formato anterior no cotejado."
+    },
+    {
+      "indice_docx": 629,
+      "ubicacion": "PÁRRAFO 629",
+      "ancla_original": "Solo el Instrumento N.° 03 (Modalidad A) se somete a juicio de contenido.",
+      "texto_nuevo": "El formato de evaluación disponible comprende la matriz de la variable dependiente con 12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP) en escala experta de 1 a 4 y el cuestionario TAM de la Modalidad A con 8 reactivos en escala Likert de 1 a 5; el formato anterior de 8 ítems con criterios dicotómicos Sí/No no se cotejó con las fichas y no se recodifica.",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Nota de tabla 34. Presenta la matriz VD como objeto de juicio distinguido del TAM, sin recodificar."
+    },
+    {
+      "indice_docx": 629,
+      "ubicacion": "PÁRRAFO 629",
+      "ancla_original": "no se reporta ningún coeficiente mientras no exista evaluación real.",
+      "texto_nuevo": "para el formato disponible, la unanimidad de calificaciones 4 reportada corresponde condicionalmente a V = 1.000 e IVC = 1.000; estos resultados comunicados requieren cotejo con las fichas de evaluación y no establecen aplicabilidad ni confiabilidad.",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Declaracion cauta: coeficiente marcado REPORTADO condicional, nunca certificado. Sin rutas, DEC, QG, fecha ni numero de jueces."
+    },
+    {
+      "indice_docx": 630,
+      "ubicacion": "PÁRRAFO 630",
+      "ancla_original": "Cada juez emitirá un certificado único sobre el Instrumento N.° 03, cuyo modelo es el formato institucional de Quispe Tello (2024, p. 62) adoptado por la normativa del proyecto, y lo entregará en blanco para su llenado manuscrito.",
+      "texto_nuevo": "Cada juez recibirá el formato de evaluación en blanco, con la presentación institucional adoptada por el proyecto, para su llenado manuscrito; no se atribuye firma ni evaluación no realizada.",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Los certificados del Anexo 3 estan en blanco y no se atribuye firma. Se identifica el formato de evaluacion sin inventar identidad."
+    },
+    {
+      "indice_docx": 789,
+      "ubicacion": "PÁRRAFO 789",
+      "ancla_original": "Se presentan los tres (3) formatos en blanco de validación de contenido por juicio de expertos, correspondientes exclusivamente al Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems).",
+      "texto_nuevo": "Se presentan los tres (3) formatos de evaluación en blanco por juicio de expertos, que remiten al formato disponible descrito en la sección 4.12: matriz de la variable dependiente con 12 componentes en escala de 1 a 4 y cuestionario TAM con ocho ítems Likert.",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Anexo 3. Identifica los formatos como Formato de evaluacion y remite al formato disponible real, sin atribuir firma."
+    },
+    {
+      "indice_docx": 629,
+      "ubicacion": "PÁRRAFO 629",
+      "ancla_original": "con el certificado único del instrumento",
+      "texto_nuevo": "con el formato de evaluación del instrumento",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Coherencia con la declaracion: el formato de evaluacion reemplaza al certificado unico; no se atribuye firma ni evaluacion no realizada."
+    },
+    {
+      "indice_docx": 788,
+      "ubicacion": "PÁRRAFO 788",
+      "ancla_original": "ANEXO 3: CERTIFICADOS DE VALIDACIÓN POR JUICIO DE EXPERTOS",
+      "texto_nuevo": "ANEXO 3: FORMATOS DE EVALUACIÓN POR JUICIO DE EXPERTOS",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Los formatos estan en blanco y no hay firmas: se identifican como formatos de evaluacion, no como certificados emitidos."
+    },
+    {
+      "indice_docx": 46,
+      "ubicacion": "TABLA 46, fila 4, columna 2",
+      "ancla_original": "Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems)",
+      "texto_nuevo": "Formato de evaluación disponible: matriz de la variable dependiente (12 componentes, escala de 1 a 4) y Cuestionario TAM (Modalidad A, ocho ítems Likert).",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Fila Instrumentos Auditados del Juez 1. Distingue la matriz VD del TAM sin recodificar."
+    },
+    {
+      "indice_docx": 46,
+      "ubicacion": "TABLA 46, fila 5, columna 2",
+      "ancla_original": "V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]",
+      "texto_nuevo": "V = [Por completar por el juez] (12 componentes de la matriz VD en escala de 1 a 4, con c = 4 y categoría inferior 1; ocho ítems del TAM en escala de 1 a 5); IVC = [Por completar por el juez]",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Coeficiente marcado por completar, sin certificar. Distingue las dos escalas."
+    },
+    {
+      "indice_docx": 47,
+      "ubicacion": "TABLA 47, fila 4, columna 2",
+      "ancla_original": "Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems)",
+      "texto_nuevo": "Formato de evaluación disponible: matriz de la variable dependiente (12 componentes, escala de 1 a 4) y Cuestionario TAM (Modalidad A, ocho ítems Likert).",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Fila Instrumentos Auditados del Juez 2."
+    },
+    {
+      "indice_docx": 47,
+      "ubicacion": "TABLA 47, fila 5, columna 2",
+      "ancla_original": "V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]",
+      "texto_nuevo": "V = [Por completar por el juez] (12 componentes de la matriz VD en escala de 1 a 4, con c = 4 y categoría inferior 1; ocho ítems del TAM en escala de 1 a 5); IVC = [Por completar por el juez]",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Coeficiente marcado por completar, sin certificar."
+    },
+    {
+      "indice_docx": 48,
+      "ubicacion": "TABLA 48, fila 4, columna 2",
+      "ancla_original": "Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems)",
+      "texto_nuevo": "Formato de evaluación disponible: matriz de la variable dependiente (12 componentes, escala de 1 a 4) y Cuestionario TAM (Modalidad A, ocho ítems Likert).",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Fila Instrumentos Auditados del Juez 3."
+    },
+    {
+      "indice_docx": 48,
+      "ubicacion": "TABLA 48, fila 5, columna 2",
+      "ancla_original": "V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]",
+      "texto_nuevo": "V = [Por completar por el juez] (12 componentes de la matriz VD en escala de 1 a 4, con c = 4 y categoría inferior 1; ocho ítems del TAM en escala de 1 a 5); IVC = [Por completar por el juez]",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Coeficiente marcado por completar, sin certificar."
+    },
+    {
+      "indice_docx": 625,
+      "ubicacion": "PÁRRAFO 625",
+      "ancla_original": "ambos derivados del modelo de Tristán-López (2008), que para tres jueces fija un valor mínimo por ítem de 0.5823",
+      "texto_nuevo": "y el criterio de decisión se apoya en Tristán-López (2008), que para un panel de tres jueces fija un valor mínimo por ítem de 0.5823",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "El coeficiente V es de Aiken; Tristán-López (2008) fundamenta el criterio de decisión, no ambos coeficientes. No se agrega fuente nueva."
+    },
+    {
+      "indice_docx": 627,
+      "ubicacion": "PÁRRAFO 627",
+      "ancla_original": "Donde S representa la sumatoria de las valoraciones favorables asignadas por los jueces al ítem, n indica el número de expertos evaluadores (3 jueces) y c denota el número de categorías de la escala de valoración",
+      "texto_nuevo": "Donde S representa la sumatoria de las diferencias r − l, con r como la calificación asignada por el juez al ítem y l como la categoría inferior de la escala (l = 1); n indica el número de jueces del panel y c denota el número de categorías de la escala de valoración",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Definicion formal de S para la Ecuacion 8 general V = S/[n(c-1)]; el tamano del panel queda como variable formal, sin confirmarlo por calculo."
+    },
+    {
+      "indice_docx": 627,
+      "ubicacion": "PÁRRAFO 627",
+      "ancla_original": "con tres jueces y criterios dicotómicos",
+      "texto_nuevo": "con el panel de tres jueces previsto en el diseño y criterios dicotómicos",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "El numero de jueces proviene del diseno del panel, no de un calculo derivado del coeficiente."
+    },
+    {
+      "indice_docx": 627,
+      "ubicacion": "PÁRRAFO 627",
+      "ancla_original": "(l = 1)",
+      "texto_nuevo": ", que en el formato disponible es 1",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Evita que la letra ele se confunda con el digito 1 en la definicion de S, sin cambiar la formula ni el valor."
+    },
+    {
+      "indice_docx": 627,
+      "ubicacion": "PÁRRAFO 627",
+      "ancla_original": "escala , que en el formato disponible es 1",
+      "texto_nuevo": "escala, que en el formato disponible es 1",
+      "ocurrencias": 1,
+      "categoria": "VAL-VD",
+      "justificacion": "Sanea el espacio residual antes de la coma introducido por la sustitucion anterior."
+    }
+  ]
+}

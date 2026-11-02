@@ -1,0 +1,201 @@
+{
+ "fecha": "2026-10-22",
+ "documento": "salidas/documentos/informe_final_v20.docx",
+ "pdf": {
+  "paginas": 159,
+  "imagenes": 49,
+  "dpi_min": 136.5,
+  "dpi_mediana": 413.8,
+  "dpi_max": 875.8,
+  "texto_caracteres": 306659
+ },
+ "hashes": {
+  "docx_v20": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+  "pdf_v20": "93956168b70730e14dfcd61c108f5d268c8a0ed45d78bb117c05d1b514c57fde",
+  "docx_v19": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+  "pdf_v19": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268"
+ },
+ "estructura": {
+  "paginas_pdf": 159,
+  "parrafos_v20": 828,
+  "parrafos_v19": 827,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "toc": 3,
+  "seq": 103,
+  "hipervinculos": 253,
+  "urls_externas": 39,
+  "bookmarks": 214,
+  "pageref": 214,
+  "referencias": 54,
+  "imagenes": 49
+ },
+ "cambios": {
+  "sustituciones_textuales": 49,
+  "parrafos_insertados": 1,
+  "parrafos_reemplazados": 46,
+  "celdas_reemplazadas": 10,
+  "tablas_con_cambio": [
+   1,
+   29,
+   31,
+   33,
+   34
+  ],
+  "tablas_identicas": 54,
+  "tablas_total": 59,
+  "detalle_parrafos": "34 cambios editoriales de contenido y 12 actualizaciones de folio en listas de tablas/figuras"
+ },
+ "conservacion": {
+  "texto_parrafos_iguales": 826,
+  "tablas_identicas_excepto_autorizadas": 54,
+  "omml": 12,
+  "seq": 103,
+  "toc": 3,
+  "bookmarks": 214,
+  "urls_externas": 39,
+  "anchos_portrait_dxa": 8765,
+  "anchos_landscape_dxa": 13720,
+  "flotantes": 0,
+  "cantsplit": 59,
+  "tblheader": 59
+ },
+ "tipografia": {
+  "parrafos_sangria_1_27": 225,
+  "con_1_5_y_justificado_explicito": 223,
+  "hereda_1_5_2": 2,
+  "fuente_cuerpo": "Times New Roman 12"
+ },
+ "renders": {
+  "directorio": "salidas/reportes_maquetacion/auditoria_integral_v20_20261022/PAGINAS_V20",
+  "cantidad": 159,
+  "dpi": 110
+ },
+ "pruebas": [
+  {
+   "id": "T01",
+   "prueba": "Integridad v19",
+   "resultado": "PASS",
+   "detalle": "DOCX y PDF v19 sin cambios de hash"
+  },
+  {
+   "id": "T02",
+   "prueba": "Conteo estructural",
+   "resultado": "PASS",
+   "detalle": "159 pp, 828 párrafos, 59 tablas, 12 OMML, 3 TOC, 103 SEQ"
+  },
+  {
+   "id": "T03",
+   "prueba": "Cambios de texto autorizados",
+   "resultado": "PASS",
+   "detalle": "50 operaciones (49 sustituciones + 1 inserción); 0 fallidas"
+  },
+  {
+   "id": "T04",
+   "prueba": "Tablas de resultados congeladas",
+   "resultado": "PASS",
+   "detalle": "54/59 tablas con hash de celdas idéntico; 5 tablas con cambios bibliográficos/nomenclatura autorizados"
+  },
+  {
+   "id": "T05",
+   "prueba": "Celdas de resultados numéricos",
+   "resultado": "PASS",
+   "detalle": "Ninguna celda de Tablas 38, 40, 41, 42, 49, 50 modificada"
+  },
+  {
+   "id": "T06",
+   "prueba": "Referencias 1:1",
+   "resultado": "PASS",
+   "detalle": "54 referencias; Aiken (1985) con cita activa en P0302 y DOI nativo"
+  },
+  {
+   "id": "T07",
+   "prueba": "Geometría APA 7",
+   "resultado": "PASS",
+   "detalle": "auditar: 0 flotantes, 59/59 cantSplit y tblHeader, márgenes UNAJMA OK"
+  },
+  {
+   "id": "T08",
+   "prueba": "Figura 6",
+   "resultado": "EXCEPCION",
+   "detalle": "136,5 dpi; sin fuente mejor; no se remuestreó"
+  },
+  {
+   "id": "T09",
+   "prueba": "Firmas y fotografías",
+   "resultado": "PENDIENTE",
+   "detalle": "Firmas de jueces y fotografías 49-52 no disponibles; marcos y leyendas conservados"
+  },
+  {
+   "id": "T10",
+   "prueba": "Pendientes fuente",
+   "resultado": "PENDIENTE",
+   "detalle": "O-21/O-22 originales no aplicadas; sustituidas por correcciones verificadas cuando existió fuente primaria"
+  }
+ ],
+ "parche_r1r3_20261022": {
+  "fecha": "2026-10-22",
+  "verificado_por": "Dirección",
+  "origen_promovido": {
+   "docx": "salidas/archivo/REVISION_INTEGRAL_V20_20261022/CANDIDATO_ROTULOS_V20_FINAL.docx",
+   "pdf": "salidas/archivo/REVISION_INTEGRAL_V20_20261022/CANDIDATO_ROTULOS_V20_FINAL.pdf"
+  },
+  "hashes_previos_archivados": {
+   "docx_v20": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+   "pdf_v20": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3"
+  },
+  "respaldo": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/",
+  "correcciones": [
+   {
+    "id": "a",
+    "pagina": 132,
+    "descripcion": "Restitucion de la cita Venkatesh et al. (2003) en el parrafo de discusion de la tercera dimension",
+    "resultado": "PASS",
+    "evidencia": "parrafo 713 del DOCX y pagina 132 del PDF contienen (Venkatesh et al., 2003)"
+   },
+   {
+    "id": "b",
+    "pagina": 140,
+    "descripcion": "Eliminacion del DOI duplicado en la referencia Wasswa et al. (2023); se conserva un unico hipervinculo",
+    "resultado": "PASS",
+    "evidencia": "1 ocurrencia de 10.1186/s40545-023-00517-4 en la pagina 140 y 1 hipervinculo externo nativo"
+   },
+   {
+    "id": "c",
+    "pagina": 135,
+    "descripcion": "Guion medio correcto 131–142 en Aiken (1985)",
+    "resultado": "PASS",
+    "evidencia": "pagina 135 contiene 131–142 y no contiene 131-142"
+   },
+   {
+    "id": "d",
+    "paginas": "rotulos Figura/Tabla",
+    "descripcion": "Numerales SEQ de rotulos Figura/Tabla en negrita",
+    "resultado": "PASS",
+    "evidencia": "103/103 numerales SEQ con w:b"
+   },
+   {
+    "id": "e",
+    "paginas": [
+     135,
+     140
+    ],
+    "descripcion": "Cursiva APA en titulo de revista y volumen de Aiken (1985) y Wasswa et al. (2023)",
+    "resultado": "PASS",
+    "evidencia": "runs en cursiva: 'Educational and Psychological Measurement, 45' y 'Journal of Pharmaceutical Policy and Practice, 16'"
+   },
+   {
+    "id": "f",
+    "paginas": "135-141",
+    "descripcion": "Alineación izquierda APA 7 de los 54 párrafos de referencia; 159 páginas conservadas, secuencia de palabras idéntica y desplazamiento vertical máximo 0,000 pt; solo cambia la distribución horizontal en las páginas 135 a 141.",
+    "resultado": "PASS",
+    "evidencia": "828 parrafos con texto identico; 54/54 pPr modificados solo en jc both->left (726-779); 159 paginas y secuencia de palabras identica en las 159; desplazamiento vertical 0,000 pt verificado por Direccion"
+   }
+  ],
+  "hashes_previos_alineacion": {
+   "docx_v20": "1f2e4bea8bf0e446ae4b2f151a84ecca67da40d14695a543c8215c0aa416ae73",
+   "pdf_v20": "ea2f0ddd8128734d90647dd04ecea22829f2fd9881d8a4d05b2c152b1160b850"
+  },
+  "respaldo_pre_alineacion": "salidas/archivo/INFORME_V20_PRE_R1R3_20261022/informe_final_v20_pre_alineacion"
+ }
+}

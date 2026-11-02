@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-10-26",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "encargo": "Ordenar listas y tablas, simplificar resultados con referencia a Fany y Jhon y trasladar el desarrollo aplicado XP a un anexo completo.",
+  "autorizacion": "Solicitud expresa del tesista en esta conversación; no equivale a acreditación empírica ni a aprobación final del documento.",
+  "fuentes_inmutables": [
+    "salidas/documentos/informe_final_v20.docx",
+    "salidas/documentos/informe_final_v20.pdf",
+    "SIVAC_Desarrollo_Software_XP.docx",
+    "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+    "referencias/modelos_tesis/MODELO_TESIS_UNAJMA_JHON_2026.pdf"
+  ],
+  "compuertas_editoriales": [
+    "Listas e incisos con alineación izquierda, numeración y sangrías nativas; prosa narrativa justificada sin fragmentos expandidos por saltos manuales.",
+    "Coeficientes de Tabla 35 íntegros en una línea y rangos de Tablas 36, 37 y 38 legibles; verificar por render, no solo por XML.",
+    "Ninguna cifra se altera por corregir tabulación, alineación o ancho de columna.",
+    "Fundamento teórico XP breve con fuentes verificadas, sin historias, código ni capturas del desarrollo aplicado.",
+    "Desarrollo XP completo en anexo con texto, tablas, imágenes, relaciones, referencias y ecuaciones nativos conservados; mapa explícito de cualquier duplicación o discrepancia entre fuentes.",
+    "Capítulo de resultados organizado por objetivos y tres dimensiones oficiales sin duplicación innecesaria de salidas ni acumulación de pruebas elegidas por significancia.",
+    "Tres índices nativos actualizados; numeración de figuras, tablas, ecuaciones, remisiones y folios coherentes con nueva ubicación de XP.",
+    "Sin rótulos separados de objetos, columnas numéricas cortadas, texto fuera de márgenes, caracteres perdidos ni páginas vacías imprevistas.",
+    "No imponer un total de páginas ni reducir tipografía para fingir compactación.",
+    "Cotejo independiente antes de entrega; alcance visual y automatizado declarado por separado."
+  ],
+  "compuertas_empiricas": [
+    "Verificar existencia, procedencia y emparejamiento de datos reales antes de cualquier nueva inferencia.",
+    "Los resultados históricos con datos de prueba no se acreditan como hallazgos de campo; conservarlos separadamente sin recalcular ni generar simulaciones nuevas.",
+    "No fabricar mediciones, firmas, validaciones, diagnósticos ni gráficos con datos ficticios.",
+    "QG-5, QG-7 y QG-9 no se cierran por una mejora editorial."
+  ],
+  "responsabilidades": {
+    "analista-documental": "Comparación de modelos y mapa estructural del traslado XP.",
+    "analista-estadistico": "Procedencia, auditoría de lógica y especificación estadística concisa.",
+    "redactor-academico": "Fundamento XP citado y órdenes de redacción sin sobreafirmación.",
+    "maquetador-docx": "Único escritor del motor canónico y de las copias DOCX/PDF.",
+    "director-general": "Coordinación, decisiones de integración, estado y entrega fiel."
+  },
+  "estado": "en_ejecucion_no_certificado"
+}

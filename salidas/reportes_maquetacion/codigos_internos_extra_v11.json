@@ -1,0 +1,42 @@
+{
+  "metadatos": {
+    "documento_base": "salidas/documentos/informe_final_v11.docx",
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "motivo": "Complemento del entregable codigos_internos_v09.json. El barrido de verificación sobre la base v11 localizó tres ocurrencias no cubiertas por las once órdenes anteriores y corrige la afirmación previa de que DEC-014 y DEC-016 solo figuraban en reportes internos: ambos códigos constan en la prosa visible del párrafo 778. Los marcadores [Pendiente] de los resúmenes en español y en quechua también son visibles en la cara del documento.",
+    "ordenes_emitidas": 3,
+    "resultado_esperado": "3 aplicadas, 0 omitidas, 0 fallidas.",
+    "verificacion_anclas": "Las tres anclas se contrastaron como cadenas literales únicas: la de P778 contiene la fórmula administrativa y el objeto de los tres formatos, sin otra aparición en el documento; la de P139 contiene el cierre del resumen en español con la variante post-test y el marcador; la de P145 contiene el cierre del resumen en quechua con el apóstrofo U+2019. Ninguna de las tres coincide con los marcadores [Por completar por el juez] de P778 ni de las tablas 46, 47 y 48, que se conservan por ser estado real de un dato no asentado.",
+    "instrucciones_aplicacion": {
+      "comando": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v11.docx --salida salidas/documentos/informe_final_v12.docx --json salidas/reportes_maquetacion/codigos_internos_v09.json salidas/reportes_maquetacion/codigos_internos_extra_v11.json --reporte salidas/reportes_maquetacion/aplicacion_codigos_internos_v12.json",
+      "nota": "Puede aplicarse junto con las once órdenes de codigos_internos_v09.json; los conjuntos de anclas son disjuntos."
+    }
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 778,
+      "ubicacion": "PARRAFO 778",
+      "ancla_original": "En cumplimiento de las decisiones DEC-014 y DEC-016, se presentan los tres (3) formatos en blanco de validación de contenido por juicio de expertos, correspondientes exclusivamente al Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems).",
+      "texto_nuevo": "Se presentan los tres (3) formatos en blanco de validación de contenido por juicio de expertos, correspondientes exclusivamente al Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems).",
+      "categoria": "codigo_interno",
+      "justificacion": "Se retira la fórmula administrativa de cumplimiento y los dos códigos de decisión interna. Permanecen íntegros el objeto de los formatos, la delimitación al Instrumento N.° 03 con sus ocho ítems y, en la oración siguiente, la salvaguarda de que los coeficientes se consignan como pendientes y la aplicabilidad carece de dictamen hasta la emisión de los informes firmados. Los marcadores [Por completar por el juez] no se tocan."
+    },
+    {
+      "indice_docx": 139,
+      "ubicacion": "PARRAFO 139",
+      "ancla_original": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación post-test [Pendiente].",
+      "texto_nuevo": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se suprime el corchete de estado en el cierre del resumen en español y se normaliza la variante post-test a postest, conforme al uso dominante del documento. La declaración de que los estadísticos definitivos de campo están en fase de consolidación se conserva sin alteración y no se modifica ninguna cifra."
+    },
+    {
+      "indice_docx": 145,
+      "ubicacion": "PARRAFO 145",
+      "ancla_original": "tukupay yupaykunaqa postest wichq’aypim suyachkan [Pendiente].",
+      "texto_nuevo": "tukupay yupaykunaqa postest wichq’aypim suyachkan.",
+      "categoria": "codigo_interno",
+      "justificacion": "Se suprime el corchete de estado en el cierre del resumen en quechua. Se conserva el apóstrofo U+2019 de wichq’aypim, la ortografía quechua, el término postest y la declaración de que los estadísticos definitivos se encuentran en espera de cierre. No se altera ninguna cifra ni la estructura del resumen."
+    }
+  ]
+}

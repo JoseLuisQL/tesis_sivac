@@ -1,0 +1,133 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v17.docx",
+  "destino": "salidas\\archivo\\_prueba_rebalanceo_t1_v18.docx",
+  "sha256_origen": "33897dd5819d6686a80b2b87e223e4155eea312297cf345d1a3052a4ca8aeac6",
+  "sha256_destino": "2b338936f28635223fbb0b99ac07277fda8bc006671503dac79f8ab31a999320",
+  "parrafos": 824,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "margenes_celda",
+      "tabla": 1,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 14
+    },
+    {
+      "tipo": "normalizar_tamano",
+      "acciones": [
+        {
+          "tabla": 1,
+          "runs_ajustados": 0,
+          "minimo_pt": 10.0
+        }
+      ]
+    },
+    {
+      "tipo": "rebalanceo",
+      "acciones": [
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 1,
+          "estado": "corregido",
+          "detalle": "rebalanceo=no; anchos [1113, 1470, 1603, 1569, 1613, 1397] -> [1113, 1470, 1603, 1569, 1613, 1397]"
+        }
+      ],
+      "tablas": [
+        {
+          "indice_tabla": 1,
+          "columnas": 6,
+          "filas": 14,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Ninguna columna requiere ensanche",
+            "anchos_nuevos": [
+              1113,
+              1470,
+              1603,
+              1569,
+              1613,
+              1397
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1113,
+              "ancho_util_dxa": 1057,
+              "token_mas_largo": "Astuhuaman",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1011.0,
+              "requerido_dxa": 1075,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1470,
+              "ancho_util_dxa": 1414,
+              "token_mas_largo": "Establecimientos",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1366.6,
+              "requerido_dxa": 1431,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1603,
+              "ancho_util_dxa": 1547,
+              "token_mas_largo": "Cuasiexperimental",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1499.8,
+              "requerido_dxa": 1564,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1569,
+              "ancho_util_dxa": 1513,
+              "token_mas_largo": "desabastecimiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1466.4,
+              "requerido_dxa": 1530,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1613,
+              "ancho_util_dxa": 1557,
+              "token_mas_largo": "Desabastecimiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1510.8,
+              "requerido_dxa": 1575,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1397,
+              "ancho_util_dxa": 1341,
+              "token_mas_largo": "inmunizaciones.",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1305.4,
+              "requerido_dxa": 1369,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [],
+          "cabe_sin_desborde": true
+        }
+      ]
+    }
+  ],
+  "tablas_verificadas": [
+    {
+      "tabla": 1,
+      "filas": 14,
+      "columnas": 6,
+      "cantSplit": true
+    }
+  ]
+}

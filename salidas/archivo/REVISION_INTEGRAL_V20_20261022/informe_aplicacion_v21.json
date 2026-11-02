@@ -1,0 +1,3393 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v20.docx",
+  "destino": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_TABLAS_V21.docx",
+  "sha256_origen": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+  "sha256_destino": "792ee2fcbf4e66fa6cadf199de0584c31fbe1fdf79c2c538255b0053e2dbcc1d",
+  "parrafos": 858,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "keep_next",
+      "candidatos": 111,
+      "modificados": 99,
+      "indices": [
+        222,
+        232,
+        238,
+        243,
+        248,
+        254,
+        261,
+        267,
+        276,
+        281,
+        286,
+        289,
+        332,
+        340,
+        344,
+        348,
+        352,
+        356,
+        360,
+        364,
+        371,
+        375,
+        380,
+        384,
+        389,
+        393,
+        396,
+        401,
+        405,
+        409,
+        413,
+        415,
+        417,
+        419,
+        421,
+        423,
+        425,
+        427,
+        429,
+        431,
+        433,
+        435,
+        437,
+        439,
+        441,
+        447,
+        450,
+        454,
+        459,
+        463,
+        467,
+        471,
+        476,
+        479,
+        482,
+        485,
+        488,
+        491,
+        494,
+        497,
+        500,
+        503,
+        506,
+        509,
+        512,
+        515,
+        518,
+        521,
+        528,
+        532,
+        536,
+        540,
+        545,
+        568,
+        574,
+        580,
+        587,
+        616,
+        628,
+        651,
+        657,
+        659,
+        664,
+        666,
+        671,
+        673,
+        680,
+        688,
+        694,
+        700,
+        707,
+        783,
+        787,
+        802,
+        804,
+        806,
+        810,
+        812,
+        816
+      ]
+    },
+    {
+      "tipo": "subindices",
+      "estado": "aplicada",
+      "ambito": "ambos",
+      "aplicadas": [
+        {
+          "ambito": "cuerpo",
+          "indice": 578,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 592,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 595,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 601,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 639,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 654,
+          "ocurrencias": 4,
+          "guiones_bajos_retirados": 4,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 656,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 677,
+          "ocurrencias": 7,
+          "guiones_bajos_retirados": 7,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 678,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 685,
+          "ocurrencias": 10,
+          "guiones_bajos_retirados": 14,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 686,
+          "ocurrencias": 4,
+          "guiones_bajos_retirados": 4,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 687,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 691,
+          "ocurrencias": 6,
+          "guiones_bajos_retirados": 6,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 692,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 693,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 697,
+          "ocurrencias": 6,
+          "guiones_bajos_retirados": 6,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 698,
+          "ocurrencias": 3,
+          "guiones_bajos_retirados": 3,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 699,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 703,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 704,
+          "ocurrencias": 5,
+          "guiones_bajos_retirados": 5,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 705,
+          "ocurrencias": 3,
+          "guiones_bajos_retirados": 3,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 708,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 717,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 799,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 31,
+          "fila": 1,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 31,
+          "fila": 2,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 32,
+          "fila": 2,
+          "columna": 3,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 1,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 2,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 3,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 4,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 5,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 6,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 39,
+          "fila": 1,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 39,
+          "fila": 2,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 1,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 2,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 3,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 4,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 44,
+          "fila": 9,
+          "columna": 1,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 45,
+          "fila": 2,
+          "columna": 3,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 49,
+          "fila": 1,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 49,
+          "fila": 2,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 52,
+          "fila": 0,
+          "columna": 2,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 52,
+          "fila": 0,
+          "columna": 3,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 53,
+          "fila": 0,
+          "columna": 2,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 53,
+          "fila": 0,
+          "columna": 3,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        }
+      ],
+      "fallidas": [],
+      "parrafos_con_subindices": 24,
+      "celdas_con_subindices": 23,
+      "ocurrencias": 102,
+      "guiones_bajos_retirados": 106
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 1,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 14
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 8,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 6
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 32,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 33,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 4
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 34,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 52,
+      "izquierdo_dxa": 57,
+      "derecho_dxa": 57,
+      "superior_dxa": 5,
+      "inferior_dxa": 5,
+      "filas": 15
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 53,
+      "izquierdo_dxa": 57,
+      "derecho_dxa": 57,
+      "superior_dxa": 5,
+      "inferior_dxa": 5,
+      "filas": 15
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 33,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1624,
+        2055,
+        1552,
+        1839,
+        1695
+      ],
+      "anchos_despues": [
+        1405,
+        1347,
+        1331,
+        1341,
+        3341
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 20
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 8,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "anchos_despues": [
+        943,
+        4401,
+        1496,
+        943,
+        982
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 30
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 35,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1810,
+        1429,
+        857,
+        857,
+        1048,
+        1524,
+        1240
+      ],
+      "anchos_despues": [
+        1720,
+        2073,
+        708,
+        938,
+        1087,
+        894,
+        1345
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 49
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 1,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1113,
+        1470,
+        1603,
+        1569,
+        1613,
+        1397
+      ],
+      "anchos_despues": [
+        1058,
+        1414,
+        1550,
+        1520,
+        1565,
+        1658
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 84
+    },
+    {
+      "tipo": "ensanche_rango",
+      "tabla": 36,
+      "estado": "aplicada",
+      "anchos_antes": [
+        2052,
+        1220,
+        813,
+        768,
+        884,
+        813,
+        1220,
+        995
+      ],
+      "anchos_despues": [
+        1912,
+        1080,
+        813,
+        768,
+        884,
+        813,
+        1500,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 56,
+      "operacion": "ensanche_rango",
+      "columna_objetivo": 6,
+      "ancho_objetivo_dxa": 1500,
+      "donantes": {
+        "0": 140,
+        "1": 140
+      }
+    },
+    {
+      "tipo": "ensanche_rango",
+      "tabla": 38,
+      "estado": "aplicada",
+      "anchos_antes": [
+        2052,
+        1220,
+        813,
+        768,
+        884,
+        813,
+        1220,
+        995
+      ],
+      "anchos_despues": [
+        1912,
+        1080,
+        813,
+        768,
+        884,
+        813,
+        1500,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 80,
+      "operacion": "ensanche_rango",
+      "columna_objetivo": 6,
+      "ancho_objetivo_dxa": 1500,
+      "donantes": {
+        "0": 140,
+        "1": 140
+      }
+    },
+    {
+      "tipo": "reparar_tcw",
+      "tabla": 44,
+      "estado": "aplicada",
+      "celdas_revisadas": 42,
+      "celdas_corregidas": 42,
+      "grid_dxa": [
+        6860,
+        6860
+      ]
+    },
+    {
+      "tipo": "valign",
+      "tabla": 1,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 78,
+      "celdas_modificadas": 78
+    },
+    {
+      "tipo": "valign",
+      "tabla": 8,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 25,
+      "celdas_modificadas": 25
+    },
+    {
+      "tipo": "valign",
+      "tabla": 32,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 24,
+      "celdas_modificadas": 24
+    },
+    {
+      "tipo": "valign",
+      "tabla": 33,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 15,
+      "celdas_modificadas": 15
+    },
+    {
+      "tipo": "valign",
+      "tabla": 34,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 28,
+      "celdas_modificadas": 28
+    },
+    {
+      "tipo": "valign",
+      "tabla": 45,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 24,
+      "celdas_modificadas": 24
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 30,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3
+      ],
+      "celdas_alineadas": 28,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 40.5,
+          "posicion_tabulador_porcentaje_pt": 42.2,
+          "ancho_util_pt": 51.5,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 29.6,
+          "posicion_tabulador_porcentaje_pt": 42.1,
+          "ancho_util_pt": 51.5,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 300.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 35,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4
+      ],
+      "celdas_alineadas": 18,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 23.4,
+          "posicion_tabulador_porcentaje_pt": 20.1,
+          "ancho_util_pt": 29.4,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 29.9,
+          "posicion_tabulador_porcentaje_pt": 31.6,
+          "ancho_util_pt": 40.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 29.9,
+          "posicion_tabulador_porcentaje_pt": 39.0,
+          "ancho_util_pt": 48.4,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 36,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 18.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 24.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 37,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 15.6,
+          "posicion_tabulador_porcentaje_pt": 27.5,
+          "ancho_util_pt": 36.9,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 10.6,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 16.4,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 12.8,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 38,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 36,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 18.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 24.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 39,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2
+      ],
+      "celdas_alineadas": 7,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 7,
+          "celdas_alineadas": 7,
+          "posicion_tabulador_pt": 12.6,
+          "posicion_tabulador_porcentaje_pt": 21.8,
+          "ancho_util_pt": 31.1,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 52,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 26.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 53,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 300.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 300.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 26.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        }
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 705,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión y conclusión general:",
+        "  Habiéndose rechazado de manera concluyente y simultánea las tres hipótesis nulas específicas con p-valores ajustados p"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 704,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "B. Regla de decisión multivariada conjunta:",
+        "  Para aceptar la Hipótesis General en un diseño preexperimental compuesto por múltiples dimensiones operacionales, se f"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 703,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula general (H0): La aplicación del sistema SIVAC no mejora significativamente la gestión de movimientos ",
+        "  - Hipótesis alterna general (HG): La aplicación del sistema SIVAC mejora significativamente la gestión de movimientos "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 699,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión bioestadística:",
+        "  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a α = .05 (p < ."
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 698,
+      "dividido": true,
+      "parrafos": 4,
+      "textos": [
+        "B. Resultados inferenciales:",
+        "  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d d",
+        "  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 34.881, p = 3.13e-14 (p < .001), d de C",
+        "  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 44.477, p = 1.36e-15 (p < .001), "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 697,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula (H0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usua",
+        "  - Hipótesis alterna (H1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usua"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 693,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión bioestadística:",
+        "  Al ser los p-valores ajustados inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H0,2 y se acepta la hipót"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 692,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "B. Resultados inferenciales:",
+        "  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 26.628, p = 1.00e-12 (p < .0",
+        "  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 28.147, p = 4.92e"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 691,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula (H0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental e",
+        "  - Hipótesis alterna (H1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental e"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 687,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión bioestadística:",
+        "  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia α = ."
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 686,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "B. Resultados inferenciales:",
+        "  Para el tiempo de registro (Treg), la prueba t de Student pareada arrojó un estadístico t(13) = −38.944 con un p-valor",
+        "  Para el tiempo de emisión de vales (Tvale), la prueba t de Student pareada reportó t(13) = −24.509, p = 2.88e-12 (p < "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 685,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula (H0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de m",
+        "  - Hipótesis alterna (H1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de m"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 678,
+      "dividido": true,
+      "parrafos": 8,
+      "textos": [
+        "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de ",
+        "  1. Tiempo de registro (Treg): W = 0.979, p = .966 (p > .05).",
+        "  2. Tiempo de emisión de vales (Tvale): W = 0.933, p = .331 (p > .05).",
+        "  3. Registros sin discrepancias (RSD): W = 0.958, p = .696 (p > .05).",
+        "  4. Concordancia programada vs entregada (CPE): W = 0.953, p = .614 (p > .05).",
+        "  5. Aceptación del proceso (AP): W = 0.909, p = .153 (p > .05).",
+        "  6. Utilidad percibida (UP): W = 0.876, p = .052 (p > .05).",
+        "  7. Puntaje global TAM: W = 0.955, p = .646 (p > .05)."
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 677,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "La contrastación formal de hipótesis en diseños preexperimentales de medidas repetidas con un solo grupo (O1 → X → O2) e",
+        "  Hipótesis nula (H0): Las diferencias pareadas de la variable provienen de una población con distribución normal (p > .",
+        "  Hipótesis alterna (H1): Las diferencias pareadas de la variable no provienen de una población con distribución normal "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 646,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "Advertencia metodológica y salvaguarda deontológica:",
+        "En estricta observancia del principio de probidad científica y de transparencia cuantitativa, se hace constar que los re"
+      ]
+    },
+    {
+      "tipo": "ajustes_formato",
+      "estilos": [],
+      "nivel3_negrita_cursiva": [],
+      "parrafos_alineados": [],
+      "parrafos_espaciados": [
+        647,
+        679,
+        680,
+        699,
+        700,
+        702,
+        710,
+        711,
+        713,
+        721,
+        722,
+        723,
+        725,
+        733,
+        735
+      ],
+      "celdas_espaciadas": 0,
+      "runs_firma_normalizados": 0,
+      "rejillas": [],
+      "marcos_fotografia": [],
+      "folio_preliminar": {}
+    }
+  ],
+  "aplicadas": [
+    {
+      "tipo": "keep_next",
+      "candidatos": 111,
+      "modificados": 99,
+      "indices": [
+        222,
+        232,
+        238,
+        243,
+        248,
+        254,
+        261,
+        267,
+        276,
+        281,
+        286,
+        289,
+        332,
+        340,
+        344,
+        348,
+        352,
+        356,
+        360,
+        364,
+        371,
+        375,
+        380,
+        384,
+        389,
+        393,
+        396,
+        401,
+        405,
+        409,
+        413,
+        415,
+        417,
+        419,
+        421,
+        423,
+        425,
+        427,
+        429,
+        431,
+        433,
+        435,
+        437,
+        439,
+        441,
+        447,
+        450,
+        454,
+        459,
+        463,
+        467,
+        471,
+        476,
+        479,
+        482,
+        485,
+        488,
+        491,
+        494,
+        497,
+        500,
+        503,
+        506,
+        509,
+        512,
+        515,
+        518,
+        521,
+        528,
+        532,
+        536,
+        540,
+        545,
+        568,
+        574,
+        580,
+        587,
+        616,
+        628,
+        651,
+        657,
+        659,
+        664,
+        666,
+        671,
+        673,
+        680,
+        688,
+        694,
+        700,
+        707,
+        783,
+        787,
+        802,
+        804,
+        806,
+        810,
+        812,
+        816
+      ]
+    },
+    {
+      "tipo": "subindices",
+      "estado": "aplicada",
+      "ambito": "ambos",
+      "aplicadas": [
+        {
+          "ambito": "cuerpo",
+          "indice": 578,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 592,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 595,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 601,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 639,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 654,
+          "ocurrencias": 4,
+          "guiones_bajos_retirados": 4,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 656,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 677,
+          "ocurrencias": 7,
+          "guiones_bajos_retirados": 7,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 678,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 685,
+          "ocurrencias": 10,
+          "guiones_bajos_retirados": 14,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 686,
+          "ocurrencias": 4,
+          "guiones_bajos_retirados": 4,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 687,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 691,
+          "ocurrencias": 6,
+          "guiones_bajos_retirados": 6,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 692,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 693,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 697,
+          "ocurrencias": 6,
+          "guiones_bajos_retirados": 6,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 698,
+          "ocurrencias": 3,
+          "guiones_bajos_retirados": 3,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 699,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 703,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 704,
+          "ocurrencias": 5,
+          "guiones_bajos_retirados": 5,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 705,
+          "ocurrencias": 3,
+          "guiones_bajos_retirados": 3,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 708,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 717,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "cuerpo",
+          "indice": 799,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 31,
+          "fila": 1,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 31,
+          "fila": 2,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 32,
+          "fila": 2,
+          "columna": 3,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 1,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 2,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 3,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 4,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 5,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 36,
+          "fila": 6,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 39,
+          "fila": 1,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 39,
+          "fila": 2,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 1,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 2,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 3,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 40,
+          "fila": 4,
+          "columna": 0,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 44,
+          "fila": 9,
+          "columna": 1,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 45,
+          "fila": 2,
+          "columna": 3,
+          "ocurrencias": 2,
+          "guiones_bajos_retirados": 2,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 49,
+          "fila": 1,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 49,
+          "fila": 2,
+          "columna": 1,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 52,
+          "fila": 0,
+          "columna": 2,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 52,
+          "fila": 0,
+          "columna": 3,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 53,
+          "fila": 0,
+          "columna": 2,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        },
+        {
+          "ambito": "celdas",
+          "tabla": 53,
+          "fila": 0,
+          "columna": 3,
+          "ocurrencias": 1,
+          "guiones_bajos_retirados": 1,
+          "estado": "aplicada"
+        }
+      ],
+      "fallidas": [],
+      "parrafos_con_subindices": 24,
+      "celdas_con_subindices": 23,
+      "ocurrencias": 102,
+      "guiones_bajos_retirados": 106
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 1,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 14
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 8,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 6
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 32,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 33,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 4
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 34,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "superior_dxa": 40,
+      "inferior_dxa": 40,
+      "filas": 5
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 52,
+      "izquierdo_dxa": 57,
+      "derecho_dxa": 57,
+      "superior_dxa": 5,
+      "inferior_dxa": 5,
+      "filas": 15
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 53,
+      "izquierdo_dxa": 57,
+      "derecho_dxa": 57,
+      "superior_dxa": 5,
+      "inferior_dxa": 5,
+      "filas": 15
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 33,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1624,
+        2055,
+        1552,
+        1839,
+        1695
+      ],
+      "anchos_despues": [
+        1405,
+        1347,
+        1331,
+        1341,
+        3341
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 20
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 8,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1753,
+        1753,
+        1753,
+        1753,
+        1753
+      ],
+      "anchos_despues": [
+        943,
+        4401,
+        1496,
+        943,
+        982
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 30
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 35,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1810,
+        1429,
+        857,
+        857,
+        1048,
+        1524,
+        1240
+      ],
+      "anchos_despues": [
+        1720,
+        2073,
+        708,
+        938,
+        1087,
+        894,
+        1345
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 49
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 1,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1113,
+        1470,
+        1603,
+        1569,
+        1613,
+        1397
+      ],
+      "anchos_despues": [
+        1058,
+        1414,
+        1550,
+        1520,
+        1565,
+        1658
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 84
+    },
+    {
+      "tipo": "ensanche_rango",
+      "tabla": 36,
+      "estado": "aplicada",
+      "anchos_antes": [
+        2052,
+        1220,
+        813,
+        768,
+        884,
+        813,
+        1220,
+        995
+      ],
+      "anchos_despues": [
+        1912,
+        1080,
+        813,
+        768,
+        884,
+        813,
+        1500,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 56,
+      "operacion": "ensanche_rango",
+      "columna_objetivo": 6,
+      "ancho_objetivo_dxa": 1500,
+      "donantes": {
+        "0": 140,
+        "1": 140
+      }
+    },
+    {
+      "tipo": "ensanche_rango",
+      "tabla": 38,
+      "estado": "aplicada",
+      "anchos_antes": [
+        2052,
+        1220,
+        813,
+        768,
+        884,
+        813,
+        1220,
+        995
+      ],
+      "anchos_despues": [
+        1912,
+        1080,
+        813,
+        768,
+        884,
+        813,
+        1500,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 80,
+      "operacion": "ensanche_rango",
+      "columna_objetivo": 6,
+      "ancho_objetivo_dxa": 1500,
+      "donantes": {
+        "0": 140,
+        "1": 140
+      }
+    },
+    {
+      "tipo": "reparar_tcw",
+      "tabla": 44,
+      "estado": "aplicada",
+      "celdas_revisadas": 42,
+      "celdas_corregidas": 42,
+      "grid_dxa": [
+        6860,
+        6860
+      ]
+    },
+    {
+      "tipo": "valign",
+      "tabla": 1,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 78,
+      "celdas_modificadas": 78
+    },
+    {
+      "tipo": "valign",
+      "tabla": 8,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 25,
+      "celdas_modificadas": 25
+    },
+    {
+      "tipo": "valign",
+      "tabla": 32,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 24,
+      "celdas_modificadas": 24
+    },
+    {
+      "tipo": "valign",
+      "tabla": 33,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 15,
+      "celdas_modificadas": 15
+    },
+    {
+      "tipo": "valign",
+      "tabla": 34,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 28,
+      "celdas_modificadas": 28
+    },
+    {
+      "tipo": "valign",
+      "tabla": 45,
+      "estado": "aplicada",
+      "valor": "top",
+      "excepto_encabezado": true,
+      "celdas": 24,
+      "celdas_modificadas": 24
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 30,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3
+      ],
+      "celdas_alineadas": 28,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 40.5,
+          "posicion_tabulador_porcentaje_pt": 42.2,
+          "ancho_util_pt": 51.5,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 29.6,
+          "posicion_tabulador_porcentaje_pt": 42.1,
+          "ancho_util_pt": 51.5,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 300.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 35,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4
+      ],
+      "celdas_alineadas": 18,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 23.4,
+          "posicion_tabulador_porcentaje_pt": 20.1,
+          "ancho_util_pt": 29.4,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 29.9,
+          "posicion_tabulador_porcentaje_pt": 31.6,
+          "ancho_util_pt": 40.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 29.9,
+          "posicion_tabulador_porcentaje_pt": 39.0,
+          "ancho_util_pt": 48.4,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 36,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 18.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 24.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 37,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 15.6,
+          "posicion_tabulador_porcentaje_pt": 27.5,
+          "ancho_util_pt": 36.9,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 10.6,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 16.4,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 12.8,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 416.6,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 38,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 36,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 18.9,
+          "posicion_tabulador_porcentaje_pt": 23.1,
+          "ancho_util_pt": 32.4,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 24.7,
+          "posicion_tabulador_porcentaje_pt": 28.9,
+          "ancho_util_pt": 38.2,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 312.8
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "posicion_tabulador_pt": 21.1,
+          "posicion_tabulador_porcentaje_pt": 25.3,
+          "ancho_util_pt": 34.6,
+          "cola_decimal_dxa": 250.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 39,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2
+      ],
+      "celdas_alineadas": 7,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 7,
+          "celdas_alineadas": 7,
+          "posicion_tabulador_pt": 12.6,
+          "posicion_tabulador_porcentaje_pt": 21.8,
+          "ancho_util_pt": 31.1,
+          "cola_decimal_dxa": 350.0,
+          "parte_entera_dxa": 100.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 52,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 200.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 26.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 53,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.8,
+          "posicion_tabulador_porcentaje_pt": 20.0,
+          "ancho_util_pt": 29.3,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 100.0
+        },
+        {
+          "columna": 4,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 300.0
+        },
+        {
+          "columna": 5,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 18.4,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 150.0,
+          "parte_entera_dxa": 300.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 100.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 15.8,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 26.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "cola_decimal_dxa": 200.0,
+          "parte_entera_dxa": 0.0
+        }
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 705,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión y conclusión general:",
+        "  Habiéndose rechazado de manera concluyente y simultánea las tres hipótesis nulas específicas con p-valores ajustados p"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 704,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "B. Regla de decisión multivariada conjunta:",
+        "  Para aceptar la Hipótesis General en un diseño preexperimental compuesto por múltiples dimensiones operacionales, se f"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 703,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula general (H0): La aplicación del sistema SIVAC no mejora significativamente la gestión de movimientos ",
+        "  - Hipótesis alterna general (HG): La aplicación del sistema SIVAC mejora significativamente la gestión de movimientos "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 699,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión bioestadística:",
+        "  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a α = .05 (p < ."
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 698,
+      "dividido": true,
+      "parrafos": 4,
+      "textos": [
+        "B. Resultados inferenciales:",
+        "  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d d",
+        "  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 34.881, p = 3.13e-14 (p < .001), d de C",
+        "  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 44.477, p = 1.36e-15 (p < .001), "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 697,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula (H0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usua",
+        "  - Hipótesis alterna (H1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usua"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 693,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión bioestadística:",
+        "  Al ser los p-valores ajustados inferiores a α = .05 (p < .001), se rechaza la hipótesis nula H0,2 y se acepta la hipót"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 692,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "B. Resultados inferenciales:",
+        "  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 26.628, p = 1.00e-12 (p < .0",
+        "  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 28.147, p = 4.92e"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 691,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula (H0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental e",
+        "  - Hipótesis alterna (H1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental e"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 687,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "C. Decisión bioestadística:",
+        "  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia α = ."
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 686,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "B. Resultados inferenciales:",
+        "  Para el tiempo de registro (Treg), la prueba t de Student pareada arrojó un estadístico t(13) = −38.944 con un p-valor",
+        "  Para el tiempo de emisión de vales (Tvale), la prueba t de Student pareada reportó t(13) = −24.509, p = 2.88e-12 (p < "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 685,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "A. Planteamiento de hipótesis estadísticas:",
+        "  - Hipótesis nula (H0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de m",
+        "  - Hipótesis alterna (H1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de m"
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 678,
+      "dividido": true,
+      "parrafos": 8,
+      "textos": [
+        "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de ",
+        "  1. Tiempo de registro (Treg): W = 0.979, p = .966 (p > .05).",
+        "  2. Tiempo de emisión de vales (Tvale): W = 0.933, p = .331 (p > .05).",
+        "  3. Registros sin discrepancias (RSD): W = 0.958, p = .696 (p > .05).",
+        "  4. Concordancia programada vs entregada (CPE): W = 0.953, p = .614 (p > .05).",
+        "  5. Aceptación del proceso (AP): W = 0.909, p = .153 (p > .05).",
+        "  6. Utilidad percibida (UP): W = 0.876, p = .052 (p > .05).",
+        "  7. Puntaje global TAM: W = 0.955, p = .646 (p > .05)."
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 677,
+      "dividido": true,
+      "parrafos": 3,
+      "textos": [
+        "La contrastación formal de hipótesis en diseños preexperimentales de medidas repetidas con un solo grupo (O1 → X → O2) e",
+        "  Hipótesis nula (H0): Las diferencias pareadas de la variable provienen de una población con distribución normal (p > .",
+        "  Hipótesis alterna (H1): Las diferencias pareadas de la variable no provienen de una población con distribución normal "
+      ]
+    },
+    {
+      "tipo": "dividir_parrafo",
+      "indice": 646,
+      "dividido": true,
+      "parrafos": 2,
+      "textos": [
+        "Advertencia metodológica y salvaguarda deontológica:",
+        "En estricta observancia del principio de probidad científica y de transparencia cuantitativa, se hace constar que los re"
+      ]
+    },
+    {
+      "tipo": "ajustes_formato",
+      "estilos": [],
+      "nivel3_negrita_cursiva": [],
+      "parrafos_alineados": [],
+      "parrafos_espaciados": [
+        647,
+        679,
+        680,
+        699,
+        700,
+        702,
+        710,
+        711,
+        713,
+        721,
+        722,
+        723,
+        725,
+        733,
+        735
+      ],
+      "celdas_espaciadas": 0,
+      "runs_firma_normalizados": 0,
+      "rejillas": [],
+      "marcos_fotografia": [],
+      "folio_preliminar": {}
+    }
+  ],
+  "fallidas": [],
+  "tablas_afectadas_por_clase": {
+    "margenes_celda": 7,
+    "geometria_proporcional": 4,
+    "ensanche_rango": 2,
+    "reparar_tcw": 1,
+    "valign": 6,
+    "alineacion_decimal": 8
+  },
+  "tablas_distintas_afectadas": [
+    1,
+    8,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    44,
+    45,
+    52,
+    53
+  ],
+  "alto_tablas": [
+    {
+      "tabla": 1,
+      "alto_antes_pt": 1137.0,
+      "alto_despues_pt": 976.0,
+      "delta_pt": -161.0
+    },
+    {
+      "tabla": 8,
+      "alto_antes_pt": 415.0,
+      "alto_despues_pt": 219.5,
+      "delta_pt": -195.5
+    },
+    {
+      "tabla": 32,
+      "alto_antes_pt": 434.0,
+      "alto_despues_pt": 434.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 33,
+      "alto_antes_pt": 430.0,
+      "alto_despues_pt": 315.0,
+      "delta_pt": -115.0
+    },
+    {
+      "tabla": 34,
+      "alto_antes_pt": 342.0,
+      "alto_despues_pt": 342.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 35,
+      "alto_antes_pt": 212.0,
+      "alto_despues_pt": 189.0,
+      "delta_pt": -23.0
+    }
+  ],
+  "tablas_verificadas": [],
+  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_TABLAS_V21.pdf",
+  "paginas_pdf": 159,
+  "sha256_pdf": "db6672f639019e0b2b5a8e3cefd9ba1de6e48c4305ab13a5f69f48c32dafd4e7"
+}

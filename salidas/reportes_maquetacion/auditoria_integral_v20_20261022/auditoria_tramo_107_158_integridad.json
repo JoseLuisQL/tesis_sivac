@@ -1,0 +1,2020 @@
+{
+  "meta": {
+    "auditoria": "Integridad académica del tramo final v19 y del modelo Fany 2024",
+    "agente": "verificador-integridad",
+    "squad": "A",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "fecha": "2026-10-22",
+    "raiz": "C:/MisInvestigaciones/tesis/sivac",
+    "fuente_docx": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v19.docx",
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "bytes": 15090858
+    },
+    "fuente_pdf": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v19.pdf",
+      "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas": 158
+    },
+    "modelo_fany": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+      "sha256": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+      "paginas": 106
+    },
+    "inventario_usado": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/auditoria_integral_v20_20261022/INVENTARIO_V19.json",
+      "sha256_archivo": "6901944a863251d3230cd8316f432e82aac60913396f2d312cebe3c1f0a1b39e",
+      "sha256_docx_en_inventario": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "parrafos": 3722,
+      "tablas": 59
+    },
+    "rango_visual": {
+      "sivac": {
+        "pdf_pages": [
+          107,
+          158
+        ],
+        "count": 52,
+        "printed_offset": -15
+      },
+      "fany": {
+        "pdf_pages": [
+          73,
+          106
+        ],
+        "count": 34,
+        "printed_offset": -13
+      }
+    },
+    "metodo_visual": "Lectura visual página por página de las 52 páginas SIVAC y las 34 páginas Fany, mediante renderizado PDF y las imágenes PNG a 110 DPI. La capa de texto se utilizó exclusivamente para extraer anclas literales y verificar celdas; no se declara ningún barrido automático como lectura visual.",
+    "limites": [
+      "El DOCX, el PDF y el modelo Fany no fueron modificados.",
+      "No se reabrió el análisis estadístico ni se recalcularon pruebas, intervalos o decisiones.",
+      "No se revalidaron los identificadores DOI/URL en línea; se conserva el cotejo v19 y no se detectó discrepancia nueva.",
+      "Las páginas fuera del rango visual se citan solo cuando una comprobación de capa de texto lo justifica y se identifican como tales.",
+      "La lectura visual acredita existencia, orden, formato y contenido aparente; no sustituye la pericia del jurado ni la aprobación humana."
+    ]
+  },
+  "cobertura": {
+    "sivac": {
+      "pages_total": 52,
+      "pages_read": 52,
+      "acreditacion": "52/52",
+      "rango": "PDF 107-158"
+    },
+    "fany": {
+      "pages_total": 34,
+      "pages_read": 34,
+      "acreditacion": "34/34",
+      "rango": "PDF 73-106"
+    }
+  },
+  "ledger_sivac": [
+    {
+      "page_pdf": 107,
+      "page_printed": 92,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Tabla 32 Operacionalización de las variables de investigación",
+        "Variable Definición Operacional Dimensiones Indicadores Unidad de",
+        "Medida"
+      ],
+      "hallazgos": [],
+      "nota": "Tabla 32 de operacionalización; tres dimensiones y seis indicadores."
+    },
+    {
+      "page_pdf": 108,
+      "page_printed": 93,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "𝑇𝑟𝑒𝑔,𝑖=",
+        "∑ (𝑡𝑓𝑖𝑛,𝑖𝑗−𝑡𝑖𝑛𝑖𝑐𝑖𝑜,𝑖𝑗) 𝑘𝑖",
+        "𝑗=1"
+      ],
+      "hallazgos": [
+        "SIV-16"
+      ],
+      "nota": "Ecuaciones 1 a 4; aparece 'vale pecosa' en minúsculas."
+    },
+    {
+      "page_pdf": 109,
+      "page_printed": 94,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "el total de despachos auditados al operador i en el periodo, garantizando que el indicador",
+        "quede acotado estrictamente en el rango de 0% a 100% y evitando distorsiones por",
+        "sobredespacho."
+      ],
+      "hallazgos": [],
+      "nota": "Definición y acotación del RSD y del CPE entre 0% y 100%; sin hallazgo."
+    },
+    {
+      "page_pdf": 110,
+      "page_printed": 95,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "requerimiento y las guías de remisión en el pretest, contrastándolos frente a los",
+        "reportes transaccionales y comprobantes digitales generados en el postest.",
+        "c) Encuesta psicométrica: Se administró al personal censal de inmunizaciones con el"
+      ],
+      "hallazgos": [
+        "SIV-08",
+        "SIV-16"
+      ],
+      "nota": "Técnicas e instrumentos; 'vale pecosa' y nombres abreviados de instrumentos."
+    },
+    {
+      "page_pdf": 111,
+      "page_printed": 96,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Tabla 33 Relación de técnicas e instrumentos de recolección de datos por dimensión e indicador",
+        "Dimensión",
+        "Evaluada Indicadores Técnica de Recolección"
+      ],
+      "hallazgos": [
+        "SIV-08"
+      ],
+      "nota": "Tabla 33; nombres de instrumentos no coinciden con el Anexo 4."
+    },
+    {
+      "page_pdf": 112,
+      "page_printed": 97,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "asegurará mediante un protocolo estandarizado de cronometraje con disparadores unívocos",
+        "de inicio (apertura del formulario de captura) y corte (confirmación de guardado y",
+        "emisión), complementado con una prueba piloto de calibración interobservador e"
+      ],
+      "hallazgos": [],
+      "nota": "Protocolo de cronometraje con disparadores de inicio y corte, prueba piloto y calibración interobservador; sin hallazgo."
+    },
+    {
+      "page_pdf": 113,
+      "page_printed": 98,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "dependiente con 12 componentes (4 campos de las dimensiones 1 y 2 y 8 reactivos AP/UP)",
+        "en escala experta de 1 a 4, y por el cuestionario TAM de la Modalidad A con 8 reactivos en",
+        "escala Likert de 1 a 5. La concordancia se cuantificará con el Coeficiente V de Aiken"
+      ],
+      "hallazgos": [
+        "SIV-08"
+      ],
+      "nota": "Tabla 34; estructura de validación con dictámenes pendientes."
+    },
+    {
+      "page_pdf": 114,
+      "page_printed": 99,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Cód. Instrumento",
+        "Evaluado",
+        "Estructura"
+      ],
+      "hallazgos": [
+        "SIV-01"
+      ],
+      "nota": "Ecuaciones 9 a 11 y transición a la fase inferencial; P2287 invierte la jerarquía Wilcoxon/t."
+    },
+    {
+      "page_pdf": 115,
+      "page_printed": 100,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "diferencias para los n operadores evaluados. En la prueba de los rangos con signo de",
+        "Wilcoxon, el estadístico Z estandarizado se calculó según la Ecuación 10:",
+        "𝑊−𝑛(𝑛+1)"
+      ],
+      "hallazgos": [
+        "SIV-02",
+        "SIV-07"
+      ],
+      "nota": "P2294 describe Holm sobre seis indicadores; P2296 y P2297 afirman autorización y consentimiento."
+    },
+    {
+      "page_pdf": 116,
+      "page_printed": 101,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "personales mediante la asignación de identificadores alfanuméricos correlativos (OP-01 a",
+        "OP-14). Asimismo, se resguardó la confidencialidad de la información estratégica",
+        "institucional, restringiendo el acceso a los registros y velando porque el estudio no"
+      ],
+      "hallazgos": [
+        "SIV-07",
+        "SIV-12"
+      ],
+      "nota": "Cierre de consideraciones éticas; 'cero riesgo'."
+    },
+    {
+      "page_pdf": 117,
+      "page_printed": 102,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "CAPÍTULO V: RESULTADOS",
+        "Advertencia metodológica y salvaguarda deontológica: En estricta observancia del principio de probidad científica y de transparencia cuantitativa, se hace constar que los resultados, las matrices descriptivas, las pruebas de normalidad, los",
+        "5.1. Análisis de Confiabilidad del Instrumento 03"
+      ],
+      "hallazgos": [
+        "SIV-08",
+        "SIV-17"
+      ],
+      "nota": "Advertencia metodológica del Capítulo V, correcta y explícita; P2302 usa nombres abreviados; espaciado extremo en el rótulo."
+    },
+    {
+      "page_pdf": 118,
+      "page_printed": 103,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Los coeficientes observados superan el umbral psicométrico de .800 exigido por la",
+        "literatura científica (George y Mallery, 2003; Hernández-Sampieri y Mendoza, 2018),",
+        "categorizándose como de nivel 'Bueno' en las dimensiones específicas y de nivel"
+      ],
+      "hallazgos": [],
+      "nota": "Tabla 35; Alfa provisional sobre datos de prueba."
+    },
+    {
+      "page_pdf": 119,
+      "page_printed": 104,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "de la Red Chanka, Hospital Andahuaylas, Hospital ESSALUD, C.S. Andahuaylas, C.S.",
+        "Talavera, C.S. San Jerónimo, C.S. Huancaray, C.S. Chicmo, C.S. Huancabamba, C.S.",
+        "Pampachiri, C.S. San Antonio de Cachi, C.S. Turpo y C.S. Kishuara). A fin de"
+      ],
+      "hallazgos": [],
+      "nota": "Listado de los trece centros con operadores censales."
+    },
+    {
+      "page_pdf": 120,
+      "page_printed": 105,
+      "n_images": 1,
+      "estado": "leida_ok",
+      "bloques": [
+        "Indicador Momento Media DE Mediana RIC Mín – Máx Variación",
+        "Tiempo de emisión de vales (T_vale, min)",
+        "Diferencia Pareada −15.18 2.32 −14.75 2.75 −20.00 –"
+      ],
+      "hallazgos": [],
+      "nota": "Tabla 36 y Figura 47; 300 DPI."
+    },
+    {
+      "page_pdf": 121,
+      "page_printed": 106,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla",
+        "FEFO reduce significativamente las inconsistencias documentales y las discrepancias entre",
+        "existencias físicas y registros."
+      ],
+      "hallazgos": [],
+      "nota": "Tabla 37."
+    },
+    {
+      "page_pdf": 122,
+      "page_printed": 107,
+      "n_images": 1,
+      "estado": "leida_ok",
+      "bloques": [
+        "Figura 47 Gráfico de barras e intervalos de confianza para los indicadores de",
+        "consistencia documental (D2)",
+        "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Incremento sustancial en los porcentajes de registros sin discrepancias y concordancia programada vs entregada (n = 14)."
+      ],
+      "hallazgos": [],
+      "nota": "Figura 48; 300 DPI."
+    },
+    {
+      "page_pdf": 123,
+      "page_printed": 108,
+      "n_images": 1,
+      "estado": "leida_ok",
+      "bloques": [
+        "Tabla 38 Estadística descriptiva comparativa pretest y postest para los indicadores de la",
+        "Dimensión 3: Satisfacción del usuario (n = 14)",
+        "Constructo /"
+      ],
+      "hallazgos": [],
+      "nota": "Tabla 38 y Figura 49; 300 DPI."
+    },
+    {
+      "page_pdf": 124,
+      "page_printed": 109,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "5.3. Prueba de Bondad de Ajuste de Normalidad",
+        "La contrastación formal de hipótesis en diseños preexperimentales de medidas",
+        "repetidas con un solo grupo (O_1 → X → O_2) exige verificar rigurosamente el supuesto"
+      ],
+      "hallazgos": [
+        "SIV-01",
+        "SIV-14",
+        "SIV-17"
+      ],
+      "nota": "Tabla 39 y P2573; 'gl = 14' y espaciado extremo en P2572."
+    },
+    {
+      "page_pdf": 125,
+      "page_printed": 110,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Tabla 39 Prueba de bondad de ajuste de normalidad de Shapiro-Wilk para las diferencias",
+        "pareadas pretest y postest (n = 14)",
+        "Dimensión Indicador W p Decisión distribucional Prueba asignada"
+      ],
+      "hallazgos": [
+        "SIV-01",
+        "SIV-03",
+        "SIV-17"
+      ],
+      "nota": "Tabla 39 y P2624; nota SPSS/Python; espaciado extremo en P2628."
+    },
+    {
+      "page_pdf": 126,
+      "page_printed": 111,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "significativamente los tiempos de registro de movimientos (T_reg) y de emisión de",
+        "comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II",
+        "(mu_diff,T_reg < 0 y mu_diff,T_vale < 0)."
+      ],
+      "hallazgos": [],
+      "nota": "Resultados t para T_reg y T_vale."
+    },
+    {
+      "page_pdf": 127,
+      "page_printed": 112,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "5.4.2. Contrastación de la Hipótesis Específica 2",
+        "A. Planteamiento de hipótesis estadísticas:",
+        "- Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora"
+      ],
+      "hallazgos": [
+        "SIV-13",
+        "SIV-17"
+      ],
+      "nota": "P2671 usa 'erradicando'; espaciado extremo en P2669."
+    },
+    {
+      "page_pdf": 128,
+      "page_printed": 113,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Indicador Prueba Estadístico p Tamaño del",
+        "efecto",
+        "p ajustado"
+      ],
+      "hallazgos": [
+        "SIV-17"
+      ],
+      "nota": "Tabla 41; espaciado extremo en P2710."
+    },
+    {
+      "page_pdf": 129,
+      "page_printed": 114,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "implantación del sistema SIVAC eleva de manera estadísticamente significativa la",
+        "aceptación tecnológica y la utilidad percibida en los operadores (Tabla 42).",
+        "Tabla 42 Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario"
+      ],
+      "hallazgos": [
+        "SIV-17"
+      ],
+      "nota": "Tabla 42; espaciado extremo en P2765."
+    },
+    {
+      "page_pdf": 130,
+      "page_printed": 115,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "específicas con p-valores ajustados por Holm-Bonferroni estrictamente inferiores a .001",
+        "(p_adj < .001 en todos los indicadores), y respaldados por magnitudes del efecto",
+        "extraordinariamente grandes (|d| > 6.00 y r ≥ 0.50), se rechaza formalmente la Hipótesis"
+      ],
+      "hallazgos": [],
+      "nota": "Decisión general; P2768 es enfático pero está cubierto por la advertencia del Capítulo V."
+    },
+    {
+      "page_pdf": 131,
+      "page_printed": 116,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "CAPÍTULO VI: DISCUSIÓN",
+        "El propósito de la presente investigación fue determinar de qué manera la",
+        "aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de"
+      ],
+      "hallazgos": [
+        "SIV-06"
+      ],
+      "nota": "Discusión; P2811 afirma 'validada'."
+    },
+    {
+      "page_pdf": 132,
+      "page_printed": 117,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "SIVAC: la regla FEFO obligatoria que impide despachar biológicos de vencimiento tardío",
+        "teniendo existencias próximas a caducar, y el bloqueo estricto de transacciones con saldo",
+        "insuficiente. Estos hallazgos confirman que la exactitud contable del kardex no depende ya"
+      ],
+      "hallazgos": [],
+      "nota": "Discusión de consistencia documental."
+    },
+    {
+      "page_pdf": 133,
+      "page_printed": 118,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "CONCLUSIONES",
+        "Primera (Objetivo General): A partir del conjunto de datos provisionales de prueba",
+        "descrito en el Capítulo V, se determinó que la aplicación del sistema web SIVAC mejora"
+      ],
+      "hallazgos": [
+        "SIV-13"
+      ],
+      "nota": "Conclusiones; P2813 aclara que se parte de datos provisionales de prueba; P2815 usa 'erradicando'."
+    },
+    {
+      "page_pdf": 134,
+      "page_printed": 119,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "RECOMENDACIONES",
+        "Primera (Gestión Institucional y Despliegue): A la Dirección de Salud Apurímac II",
+        "y a la Coordinación Regional de Inmunizaciones, formalizar la adopción oficial del sistema"
+      ],
+      "hallazgos": [],
+      "nota": "Recomendaciones; se mencionan los diecinueve centros registrados."
+    },
+    {
+      "page_pdf": 135,
+      "page_printed": 120,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "REFERENCIAS BIBLIOGRÁFICAS",
+        "Addy, A. (2023). Artificial intelligence in the supply chain management for vaccine",
+        "distribution in the West African healthcare sector with a focus on Ghana."
+      ],
+      "hallazgos": [],
+      "nota": "Inicio de referencias; 53 entradas."
+    },
+    {
+      "page_pdf": 136,
+      "page_printed": 121,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Champi Velásquez, J. M. (2023). Implementación de un sistema de monitoreo inalámbrico",
+        "mediante Internet de las cosas para monitorear la conservación en la cadena de",
+        "frío de vacunas del servicio de inmunizaciones en el distrito de Puente Piedra"
+      ],
+      "hallazgos": [],
+      "nota": "Referencias."
+    },
+    {
+      "page_pdf": 137,
+      "page_printed": 122,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Ergetie, F. S., Kassaw, A. T., y Sendekie, A. K. (2023). Vaccine cold chain management",
+        "practices in primary health centers providing an expanded immunization program",
+        "in Northwest Ethiopia. Frontiers in Public Health, 11, Artículo 1194807."
+      ],
+      "hallazgos": [],
+      "nota": "Referencias."
+    },
+    {
+      "page_pdf": 138,
+      "page_printed": 123,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "intentions to adopt advanced technology. BMC Nursing, 24(1), Artículo 33.",
+        "https://doi.org/10.1186/s12912-024-02648-8",
+        "Inarotul Huda, I., Yunengsih, Y., y Abdussalaam, F. (2025). Application of Extreme"
+      ],
+      "hallazgos": [],
+      "nota": "Referencias."
+    },
+    {
+      "page_pdf": 139,
+      "page_printed": 124,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "profesional, Universidad Tecnológica del Perú]. Repositorio Institucional UTP.",
+        "https://hdl.handle.net/20.500.12867/5068",
+        "Mekonen, Z. T., Cho, D. J., Nadeem, S. P., Garza-Reyes, J. A., y Fenta, T. G. (2024)."
+      ],
+      "hallazgos": [],
+      "nota": "Referencias."
+    },
+    {
+      "page_pdf": 140,
+      "page_printed": 125,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "María Arguedas]. Repositorio Institucional UNAJMA.",
+        "https://hdl.handle.net/20.500.14168/854",
+        "Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-"
+      ],
+      "hallazgos": [],
+      "nota": "Cierre de referencias."
+    },
+    {
+      "page_pdf": 141,
+      "page_printed": 126,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "ANEXOS"
+      ],
+      "hallazgos": [],
+      "nota": "Página divisoria de anexos."
+    },
+    {
+      "page_pdf": 142,
+      "page_printed": 127,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA",
+        "En la Tabla 44 se presenta la matriz de consistencia metodológica oficial de la investigación, la cual articula de forma isomórfica 1:1",
+        "los problemas, objetivos e hipótesis con las variables, dimensiones, indicadores y la metodología aplicada."
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 1; Tabla 44, formato de tres líneas."
+    },
+    {
+      "page_pdf": 143,
+      "page_printed": 128,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Campo Contenido",
+        "Metodología de la Investigación Tipo y Nivel: Aplicada, explicativo Método y Enfoque: Hipotético-deductivo, cuantitativo Criterio de Integración HG: Integración convergente de las hipótesis específicas H1, H2 y H3 sin agregar escalas hetero"
+      ],
+      "hallazgos": [],
+      "nota": "Continuación de la Tabla 44."
+    },
+    {
+      "page_pdf": 144,
+      "page_printed": 129,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Campo Contenido",
+        "Metodología de la Investigación Diseño de Investigación: Preexperimental con pretest y postest en un solo grupo (GE: O₁ - X - O₂) Unidad de Análisis: Gestión de movimientos mensuales de vacunas en la red de frío Unidad de Observación Primar"
+      ],
+      "hallazgos": [
+        "SIV-15"
+      ],
+      "nota": "Tabla 44; notación del diseño con guiones cortos."
+    },
+    {
+      "page_pdf": 145,
+      "page_printed": 130,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Campo Contenido",
+        "Problemas de Investigación Problema Específico 3: ¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salu",
+        "Nota. Matriz de consistencia metodológica del estudio. Elaboración propia."
+      ],
+      "hallazgos": [
+        "SIV-01"
+      ],
+      "nota": "Tabla 44; la fila de procesamiento solo menciona Wilcoxon."
+    },
+    {
+      "page_pdf": 146,
+      "page_printed": 131,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES",
+        "En la Tabla 45 se presenta la operacionalización de las variables de la investigación",
+        "bajo el estándar institucional UNAJMA (contenido estrictamente descriptivo en celdas, sin"
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 2; Tabla 45 de operacionalización."
+    },
+    {
+      "page_pdf": 147,
+      "page_printed": 132,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Variable Definición Operacional Dimensiones Indicadores Unidad de",
+        "Medida",
+        "Escala de Valoración"
+      ],
+      "hallazgos": [],
+      "nota": "Continuación de la Tabla 45."
+    },
+    {
+      "page_pdf": 148,
+      "page_printed": 133,
+      "n_images": 0,
+      "estado": "leida_con_pendiente_empirico",
+      "bloques": [
+        "ANEXO 3: FORMATOS DE EVALUACIÓN POR JUICIO DE EXPERTOS",
+        "Se presentan los tres (3) formatos de evaluación en blanco por juicio de expertos,",
+        "que remiten al formato disponible descrito en la sección 4.12: matriz de la variable"
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 3; formatos de validación en blanco."
+    },
+    {
+      "page_pdf": 149,
+      "page_printed": 134,
+      "n_images": 0,
+      "estado": "leida_con_pendiente_empirico",
+      "bloques": [
+        "Formato de Validación de Contenido - Juez 2 (Licenciado en Enfermería / Especialista",
+        "en Inmunizaciones y Cadena de Frío)",
+        "Juez Validador: ____________________ (Juez 2)"
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 3; formatos en blanco, Juez 2."
+    },
+    {
+      "page_pdf": 150,
+      "page_printed": 135,
+      "n_images": 0,
+      "estado": "leida_con_pendiente_empirico",
+      "bloques": [
+        "Formato de Validación de Contenido - Juez 3 (Metodólogo / Especialista en Estadística",
+        "y Medición Cuantitativa)",
+        "Juez Validador: ____________________ (Juez 3)"
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 3; formatos en blanco, Juez 3."
+    },
+    {
+      "page_pdf": 151,
+      "page_printed": 136,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "ANEXO 4: INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA",
+        "INVESTIGACIÓN",
+        "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación"
+      ],
+      "hallazgos": [
+        "SIV-04"
+      ],
+      "nota": "Anexo 4; P3017 afirma instrumentos 'diseñados y aplicados'."
+    },
+    {
+      "page_pdf": 152,
+      "page_printed": 137,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "Código Indicador Medido Fórmula Operativa de",
+        "Cálculo Rango de Escala",
+        "Criterio Auditoría de 8 ítems binarios obligatorios"
+      ],
+      "hallazgos": [
+        "SIV-05",
+        "SIV-09"
+      ],
+      "nota": "Tabla 47 con ocho ítems y cinco criterios enumerados; Tabla 48 y nota de Alfa."
+    },
+    {
+      "page_pdf": 153,
+      "page_printed": 138,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "ANEXO 5: MATRIZ DE DATOS TABULADOS DE PRUEBA (PRETEST Y POSTTEST)",
+        "A continuación se presenta la matriz completa de los datos de prueba correspondientes a los n = 14 trabajadores pareados de la",
+        "Dirección de Salud Apurímac II y a los centros de acopio registrados en el sistema SIVAC. Los valores numéricos consignados son datos de"
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 5; matriz de datos de prueba, con nota de no medición de campo."
+    },
+    {
+      "page_pdf": 154,
+      "page_printed": 139,
+      "n_images": 0,
+      "estado": "leida_ok",
+      "bloques": [
+        "Tabla 50 Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)",
+        "Sujeto Centro de",
+        "acopio"
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 5; matriz postest de prueba, con nota de no medición final."
+    },
+    {
+      "page_pdf": 155,
+      "page_printed": 140,
+      "n_images": 0,
+      "estado": "leida_con_hallazgo",
+      "bloques": [
+        "ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y",
+        "TRAZABILIDAD SIVAC",
+        "El código fuente íntegro del sistema web SIVAC se encuentra alojado bajo control"
+      ],
+      "hallazgos": [
+        "SIV-18",
+        "SIV-19"
+      ],
+      "nota": "Anexo 6; P3666 afirma repositorio institucional sin URL; Tabla 51 con dos actores no especificados."
+    },
+    {
+      "page_pdf": 156,
+      "page_printed": 141,
+      "n_images": 0,
+      "estado": "leida_con_pendiente_empirico",
+      "bloques": [
+        "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN",
+        "CAMPO (PENDIENTE DE INCORPORACIÓN)",
+        "En observancia de los requisitos de acreditación de trabajo de campo de la"
+      ],
+      "hallazgos": [
+        "SIV-18"
+      ],
+      "nota": "Anexo 7; fotografías pendientes; la nota aclara que los espacios no acreditan el registro."
+    },
+    {
+      "page_pdf": 157,
+      "page_printed": 142,
+      "n_images": 0,
+      "estado": "leida_con_pendiente_empirico",
+      "bloques": [
+        "Fotografía pendiente de incorporación",
+        "Figura 50 Cronometraje de tiempos de registro y emisión de comprobantes de salida de",
+        "biológicos en la cadena de frío de la sede central."
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 7; Figuras 50 y 51 pendientes."
+    },
+    {
+      "page_pdf": 158,
+      "page_printed": 143,
+      "n_images": 0,
+      "estado": "leida_con_pendiente_empirico",
+      "bloques": [
+        "Fotografía pendiente de incorporación",
+        "Figura 52 Evaluación de la aceptación del proceso operativo y utilidad percibida del",
+        "sistema SIVAC por parte del personal de salud."
+      ],
+      "hallazgos": [],
+      "nota": "Anexo 7; Figura 52 pendiente."
+    }
+  ],
+  "ledger_fany": [
+    {
+      "page_pdf": 73,
+      "page_printed": 60,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "ANEXO",
+        "Anexo 1. Matriz de consistencia"
+      ],
+      "nota": "Anexo 1, matriz de consistencia en orientación horizontal. Se examina como formato; no replicar la orientación horizontal, pues el producto SIVAC es vertical."
+    },
+    {
+      "page_pdf": 74,
+      "page_printed": 61,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "b. ¿De qué manera el aplicativo",
+        "WebFQT influye en el tiempo de"
+      ],
+      "nota": "Continuación de la matriz de consistencia horizontal."
+    },
+    {
+      "page_pdf": 75,
+      "page_printed": 62,
+      "n_images": 1,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "Anexo 2. Instrumento de validación"
+      ],
+      "nota": "Anexo 2, instrumento de validación. Imagen escaneada; se toma como formato, no como evidencia SIVAC."
+    },
+    {
+      "page_pdf": 76,
+      "page_printed": 63,
+      "n_images": 1,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Formato de validación escaneado; no copiar nombres, firmas ni datos."
+    },
+    {
+      "page_pdf": 77,
+      "page_printed": 64,
+      "n_images": 2,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Formato de validación escaneado; no copiar nombres, firmas ni datos."
+    },
+    {
+      "page_pdf": 78,
+      "page_printed": 65,
+      "n_images": 2,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Formato de validación escaneado; no copiar nombres, firmas ni datos."
+    },
+    {
+      "page_pdf": 79,
+      "page_printed": 66,
+      "n_images": 2,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Formato de validación escaneado; no copiar nombres, firmas ni datos."
+    },
+    {
+      "page_pdf": 80,
+      "page_printed": 67,
+      "n_images": 1,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Formato de validación escaneado; no copiar nombres, firmas ni datos."
+    },
+    {
+      "page_pdf": 81,
+      "page_printed": 68,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 3. Instrumento de recojo de datos",
+        "El objetivo es determinar la influencia del aplicativo WebFQT en el seguimiento"
+      ],
+      "nota": "Anexo 3, instrumento de recojo de datos de 20 preguntas. No copiar reactivos ni escala."
+    },
+    {
+      "page_pdf": 82,
+      "page_printed": 69,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "¿La percepción de los usuarios, (sin el sistema /tras la implantación",
+        "del aplicativo web) respecto a la confiabilidad del aplicativo web"
+      ],
+      "nota": "Continuación del instrumento de recojo de datos."
+    },
+    {
+      "page_pdf": 83,
+      "page_printed": 70,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Dimensión 2: Presupuesto Escala de medición",
+        "1 2 3 4 5"
+      ],
+      "nota": "Cierre del instrumento de recojo de datos."
+    },
+    {
+      "page_pdf": 84,
+      "page_printed": 71,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 4. Metodología de desarrollo XP",
+        "1. Fase de planificación"
+      ],
+      "nota": "Anexo 4, metodología XP; fase de planificación."
+    },
+    {
+      "page_pdf": 85,
+      "page_printed": 72,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "1.2. Descripción de las Historias de Usuario",
+        "Tabla 15 Historia de usuario - Desarrollo de la página principal de la aplicación WebFQT"
+      ],
+      "nota": "Tabla 15, historia de usuario 1."
+    },
+    {
+      "page_pdf": 86,
+      "page_printed": 73,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Tabla 16",
+        "Historia de usuario - Creación del menú principal para el ciudadano"
+      ],
+      "nota": "Tabla 16, historia de usuario 2."
+    },
+    {
+      "page_pdf": 87,
+      "page_printed": 74,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Tabla 17",
+        "Creación del menú carga de información"
+      ],
+      "nota": "Tabla 17, historia de usuario número 3."
+    },
+    {
+      "page_pdf": 88,
+      "page_printed": 75,
+      "n_images": 0,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Tabla 18",
+        "Creación del menú reporte de gestión"
+      ],
+      "nota": "Tabla 18, también numerada como historia de usuario número 3; duplicidad del modelo que no debe replicarse."
+    },
+    {
+      "page_pdf": 89,
+      "page_printed": 76,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "2. Diseño",
+        "2.1. Diagrama de actividades"
+      ],
+      "nota": "Figura 11, diagrama de actividades."
+    },
+    {
+      "page_pdf": 90,
+      "page_printed": 77,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Figura 12",
+        "Diagrama de actividades del usuario ciudadano del municipio"
+      ],
+      "nota": "Figura 12; el texto remite a la figura 9, error de referencia cruzada del modelo que no debe replicarse."
+    },
+    {
+      "page_pdf": 91,
+      "page_printed": 78,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 5. Diagrama relacional de la base de datos"
+      ],
+      "nota": "Anexo 5, diagrama relacional."
+    },
+    {
+      "page_pdf": 92,
+      "page_printed": 79,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 6. Diagrama de casos de uso del usuario administrador",
+        "En el anexo 6, se muestra el diagrama de casos de uso. El responsable del área"
+      ],
+      "nota": "Anexo 6, casos de uso del administrador."
+    },
+    {
+      "page_pdf": 93,
+      "page_printed": 80,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 7. Diagrama de casos de uso del usuario contratista",
+        "En el anexo 7, es el caso de uso del contratista tendrá acceso a los siguiente"
+      ],
+      "nota": "Anexo 7, casos de uso del contratista."
+    },
+    {
+      "page_pdf": 94,
+      "page_printed": 81,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 8. Diagrama de casos de uso del usuario Supervisor de obra",
+        "En el anexo 8, es el diagrama de casos de uso del supervisor tiene acceso a los"
+      ],
+      "nota": "Anexo 8, casos de uso del supervisor."
+    },
+    {
+      "page_pdf": 95,
+      "page_printed": 82,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 9. Diagrama de casos de uso del usuario del público en general",
+        "En el anexo 9, se muestra en la primera pantalla ir al botón ver reportes pueden"
+      ],
+      "nota": "Anexo 9, casos de uso del público."
+    },
+    {
+      "page_pdf": 96,
+      "page_printed": 83,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 10. Organigrama de la municipalidad distrital de el Provenir"
+      ],
+      "nota": "Anexo 10, organigrama institucional; no copiar personas ni datos."
+    },
+    {
+      "page_pdf": 97,
+      "page_printed": 84,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 11. Acceso a Login y tipo de usuario"
+      ],
+      "nota": "Anexo 11, login y tipo de usuario; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 98,
+      "page_printed": 85,
+      "n_images": 1,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 12. Menú principal",
+        "Cuando ingresa como encargado del área de infraestructura tiene todos los"
+      ],
+      "nota": "Anexo 12, menú principal; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 99,
+      "page_printed": 86,
+      "n_images": 2,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 13. Menú usuario del responsable del área de infraestructura",
+        "El responsable de infraestructura registra al usuario y configuración los datos"
+      ],
+      "nota": "Anexo 13, menú del responsable; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 100,
+      "page_printed": 87,
+      "n_images": 3,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 14. Menú agregar proyecto",
+        "El anexo 14, se ingresa un proyecto nuevo que se ejecutará con su respectivo"
+      ],
+      "nota": "Anexo 14, alta de proyecto; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 101,
+      "page_printed": 88,
+      "n_images": 2,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 15. Se ingresa el cronograma de ejecución",
+        "Se selecciona el proyecto que se ejecuta y se habilita la siguiente imagen, en"
+      ],
+      "nota": "Anexo 15, cronograma; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 102,
+      "page_printed": 89,
+      "n_images": 2,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 16. Avance físico del proyecto",
+        "Se ingresa el avance mensual físico del proyecto con sus respectivos metrados"
+      ],
+      "nota": "Anexo 16, avance físico; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 103,
+      "page_printed": 90,
+      "n_images": 2,
+      "estado": "formato_referencia",
+      "bloques": [
+        "Anexo 17. Reporte de los estados de los proyectos."
+      ],
+      "nota": "Anexo 17, reporte de estados; captura del sistema modelo."
+    },
+    {
+      "page_pdf": 104,
+      "page_printed": 91,
+      "n_images": 1,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Página de imagen completa sin capa de texto; se examina como formato o escaneo, no como evidencia SIVAC."
+    },
+    {
+      "page_pdf": 105,
+      "page_printed": 92,
+      "n_images": 1,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Página de imagen completa sin capa de texto; se examina como formato o escaneo, no como evidencia SIVAC."
+    },
+    {
+      "page_pdf": 106,
+      "page_printed": 93,
+      "n_images": 1,
+      "estado": "formato_referencia_escaneado",
+      "bloques": [
+        "[Página sin capa de texto: imagen escaneada de página completa]"
+      ],
+      "nota": "Página de imagen completa sin capa de texto; se examina como formato o escaneo, no como evidencia SIVAC."
+    }
+  ],
+  "controles_transversales": {
+    "citas_referencias": {
+      "referencias_total": 53,
+      "referencias_con_cita_activa": 53,
+      "referencias_huerfanas": 0,
+      "citas_sin_referencia": 0,
+      "metodo": "Extracción de la sección REFERENCIAS BIBLIOGRÁFICAS (P2822 a P2875) y búsqueda de apellido y año en el cuerpo; cotejo manual de 28 candidatos no emparejados.",
+      "falsos_positivos_resueltos": [
+        "Apellidos compuestos: Huaman, Maza, Morejón, Navarro, Velásquez, Tello, Mora, Barea, Torre Llorente.",
+        "Títulos y nombres institucionales: 'Farmacia Pro', 'Ethiopia 2021', 'Commission 2023'.",
+        "Notas internas de fuente: 'SIVAC (2026)'."
+      ],
+      "dois": "Se conserva la validación de identificadores DOI/URL del cotejo v19. No se reconsultó Crossref en esta pasada por instrucción expresa; no apareció discrepancia nueva.",
+      "limitacion": "Control de capa de texto y cotejo manual; no sustituye la lectura semántica de cada atribución."
+    },
+    "tablas_figuras": {
+      "tablas": 51,
+      "figuras": 52,
+      "numeracion_tablas": "1 a 51, completa",
+      "numeracion_figuras": "1 a 52, completa",
+      "duplicados_reales": 0,
+      "nota": "Las 102 coincidencias de 'Tabla N' y las 104 de 'Figura N' corresponden a la tabla de contenido más el rótulo de cada elemento, no a duplicados.",
+      "referencias_cruzadas": "No se detectaron remisiones a números inexistentes en el tramo visual ni en el control global de capa de texto."
+    },
+    "aritmetica_tablas_49_50": {
+      "pretest": {
+        "T_reg": 37.18,
+        "T_vale": 18.21,
+        "RSD": 63.57,
+        "CPE": 67.61,
+        "AP": 8.07,
+        "UP": 9.0,
+        "TAM": 17.07
+      },
+      "postest": {
+        "T_reg": 7.18,
+        "T_vale": 3.04,
+        "RSD": 96.0,
+        "CPE": 95.39,
+        "AP": 17.71,
+        "UP": 18.5,
+        "TAM": 36.21
+      },
+      "coincidencia": "Las medias reproducen exactamente las Tablas 36, 37 y 38.",
+      "metodo": "Promedio aritmético de las 14 filas de las Tablas 49 y 50. No se recalcularon contrastes ni intervalos.",
+      "hallazgo": "Ninguno. No hay discrepancia aritmética."
+    },
+    "imagenes_dpi": {
+      "figura_6": {
+        "archivo": "media/image7.png",
+        "px": [
+          751,
+          700
+        ],
+        "pt": [
+          396.0,
+          369.1
+        ],
+        "dpi": 136.5,
+        "estado": "por debajo de 300 DPI"
+      },
+      "portada": {
+        "archivo": "media/image1.png",
+        "px": [
+          212,
+          238
+        ],
+        "pt": [
+          129.6,
+          145.4
+        ],
+        "dpi": 117.8,
+        "estado": "por debajo de 300 DPI"
+      },
+      "resto_cuerpo": "Las demás imágenes de cuerpo superan 300 DPI, en su mayoría entre 386 y 496 DPI.",
+      "logo_propuesto": {
+        "archivo": "LOGO-UNAJMA.jpg",
+        "px": [
+          2048,
+          2048
+        ],
+        "bytes": 263452,
+        "estado": "suficiente para 300 DPI en portada"
+      }
+    },
+    "tokens_prohibidos": {
+      "DEC-": 0,
+      "[VERIFICAR]": 0,
+      "U+2014": 0,
+      "metodo": "Conteo sobre los 3722 párrafos del inventario DOCX.",
+      "nota": "La copia limpia v20 no debe introducir estos tokens."
+    },
+    "datos_prueba": {
+      "advertencia_capitulo_v": "P2300, PDF 117: los resultados, matrices, pruebas de normalidad, contrastes y figuras corresponden a datos provisionales de prueba y deben sustituirse por registros definitivos antes de la sustentación.",
+      "notas_de_tablas": [
+        "P2355, PDF 118",
+        "P3380, PDF 153",
+        "P3664, PDF 154"
+      ],
+      "fotos_pendientes": "P3709 a P3720, PDF 156-158; la nota aclara que los espacios no acreditan por sí mismos la realización del registro.",
+      "formularios_expertos": "P2958 a P3013, PDF 148-150, en blanco.",
+      "conclusion": "La tesis declara los datos como provisionales de prueba; no los presenta como mediciones de campo certificadas. QG-5 y QG-9 permanecen abiertas."
+    },
+    "autorizacion_consentimiento": {
+      "documentos_localizados": false,
+      "afirmaciones": [
+        "P2296",
+        "P2297"
+      ],
+      "nota": "No se localizan en el corpus auditado. Se emiten órdenes condicionales. No se imputan fechas, firmas ni identidades."
+    },
+    "software": {
+      "declaracion_metodos": "P2286: Python (scipy.stats, statsmodels, pingouin) y R.",
+      "nota_tabla_39": "P2624: SPSS/Python.",
+      "hallazgo": "SIV-03."
+    },
+    "centros_19_vs_13": {
+      "aparente_contradiccion": "19 centros registrados frente a 13 centros con operadores censales.",
+      "resolucion": "P2357 lista los 13 centros con operadores; P2818 recomienda los 19 centros registrados en el sistema. No es contradicción.",
+      "accion": "Ninguna. Se sugiere precisar en la recomendación si se desea evitar ambigüedad."
+    },
+    "unidades_11_13": {
+      "aparente_discrepancia": "11 almacenes zonales frente a 13 centros de acopio.",
+      "tratamiento": "No se marca como hallazgo: pueden ser unidades distintas (almacenes zonales frente a centros de acopio con operadores). No hay contraste documental suficiente.",
+      "accion": "Ninguna. Si el tesista desea precisarlo, conviene definir la unidad en la Tabla 3."
+    },
+    "estructura_openxml": {
+      "media": 49,
+      "oMath": 12,
+      "toc": 3,
+      "seq": 103,
+      "metodo": "Conteo directo sobre word/document.xml y word/media del DOCX v19, sin modificar el archivo.",
+      "nota": "Coincide con los informes previos: 49 imágenes, 12 expresiones OMML, 3 campos TOC y 103 campos SEQ."
+    },
+    "declaracion_jurada": {
+      "parrafo": "P0027",
+      "texto": "No contiene invención, falsificación ni alteración de datos empíricos de campo; las mediciones del pretest y postest se sustentan exclusivamente en registros reales y observaciones directas en los centros de acopio de la Dirección de Salud Apurímac II.",
+      "contraste": "P2300, P2355, P3380 y P3664 declaran datos de prueba; los formatos de expertos están en blanco y el DNI de la declaración está vacío.",
+      "tratamiento": "Limitación de versión y firma pendiente, no hallazgo de fraude.",
+      "no_se_altera_acto_legal": true,
+      "no_se_limita_firma": true,
+      "nota": "La declaración presupone la versión con datos definitivos. La v19 es una versión de trabajo con datos de prueba. La decisión de suscribir corresponde al tesista; el auditor solo registra que la versión v19 no satisface la afirmación del punto 3. No se imputa intención ni se modifica el texto legal."
+    },
+    "verificacion_ordenes_redaccion": {
+      "archivo": "salidas/reportes_maquetacion/auditoria_integral_v20_20261022/redaccion_v20_ordenes.json",
+      "total": 7,
+      "editoriales_seguras": 6,
+      "con_confirmacion": 1,
+      "metodo": "Cotejo literal del texto_original contra INVENTARIO_V19.json, página contra ANCLAS, conteo de ocurrencias en los 3722 párrafos y comparación de números y longitud.",
+      "ordenes": [
+        {
+          "id": "O-01",
+          "parrafo": "P0955",
+          "pagina": 71,
+          "ancla_exacta": true,
+          "ocurrencias": 1,
+          "longitud": [
+            165,
+            145
+          ],
+          "numeros": "sin cambio (10, 24)",
+          "veredicto": "PROCEDENTE",
+          "nota": "Elimina un absoluto contradicho por 'las tablas más relevantes'; no altera números ni contenido técnico."
+        },
+        {
+          "id": "O-02",
+          "parrafo": "P1810",
+          "pagina": 94,
+          "ancla_exacta": true,
+          "ocurrencias": 1,
+          "longitud": [
+            316,
+            315
+          ],
+          "numeros": "sin cambio",
+          "veredicto": "PROCEDENTE",
+          "nota": "Sustituye un absoluto por una atribución de sustento; cambia una palabra."
+        },
+        {
+          "id": "O-03",
+          "parrafo": "P1853",
+          "pagina": 96,
+          "ancla_exacta": true,
+          "ocurrencias": 1,
+          "longitud": [
+            123,
+            122
+          ],
+          "numeros": "sin cambio",
+          "veredicto": "PROCEDENTE",
+          "nota": "Misma lógica en nota de tabla; conservar 9.5 pt, cursiva inicial e interlineado sencillo."
+        },
+        {
+          "id": "O-04",
+          "parrafo": "P2028",
+          "pagina": 102,
+          "ancla_exacta": true,
+          "ocurrencias": 1,
+          "longitud": [
+            132,
+            126
+          ],
+          "numeros": "sin cambio",
+          "veredicto": "PROCEDENTE",
+          "nota": "Ajusta garantizar/neutralizar a reforzar/atenuar, coherente con el diseño preexperimental."
+        },
+        {
+          "id": "O-06",
+          "parrafo": "P2014",
+          "pagina": 100,
+          "ancla_exacta": true,
+          "ocurrencias": 1,
+          "longitud": [
+            94,
+            111
+          ],
+          "numeros": "sin cambio",
+          "veredicto": "PROCEDENTE",
+          "nota": "Aclaración sintáctica; no introduce hechos ni autoridades."
+        },
+        {
+          "id": "O-07",
+          "parrafo": "P0720",
+          "pagina": 60,
+          "ancla_exacta": true,
+          "ocurrencias": 1,
+          "longitud": [
+            109,
+            155
+          ],
+          "numeros": "sin cambio",
+          "veredicto": "OBSERVADA",
+          "nota": "El ancla es exacta, pero 'inmutable' está respaldado por DEC-007 (tres dimensiones oficiales e inmutables). La supresión propuesta elimina una afirmación de gobernanza y amplía la nota 42%. No aplicar sin confirmación; alternativa mínima: conservar 'inmutable' y sustituir solo 'aprobada en' por 'conforme a'."
+        }
+      ],
+      "o05": {
+        "parrafo": "P1955",
+        "pagina": 98,
+        "ancla_exacta": true,
+        "ocurrencias": 1,
+        "tabla_28": {
+          "caracteristicas_distintas": 5,
+          "lista": [
+            "Adecuación Funcional",
+            "Usabilidad",
+            "Eficiencia de Desempeño",
+            "Fiabilidad",
+            "Seguridad"
+          ],
+          "filas": 9,
+          "subfilas_por_caracteristica": [
+            2,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "conteo_original": "cuatro (fusiona fiabilidad y seguridad)",
+        "conteo_tabla": 5,
+        "veredicto": "PROCEDENTE CON REFORMULACIÓN",
+        "reemplazo_sin_numeral": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las características de calidad esenciales para sistemas de gestión sanitaria: adecuación funcional, usabilidad, eficiencia de desempeño, fiabilidad y seguridad. En la Tabla 28 se sintetizan los resultados de la evaluación.",
+        "nota": "El conteo de cinco es correcto. La reformulación sin numeral evita modificar una cifra en prosa y enumera las cinco categorías exactas de la Tabla 28, sin inventar categorías."
+      }
+    }
+  },
+  "hallazgos": [
+    {
+      "id": "SIV-01",
+      "severidad": "MAYOR",
+      "tipo": "consistencia_metodologica",
+      "ubicacion": [
+        "PDF 114 / impresa 99 / P2287",
+        "PDF 125 / impresa 110 / Tabla 39",
+        "PDF 145 / impresa 130 / T044.20.1"
+      ],
+      "texto_original_o_ancla": "P2287: 'la prueba de los rangos con signo de Wilcoxon constituyó el estimador primario robusto y uniforme para muestras pareadas pequeñas, complementada por la prueba t de Student pareada ... únicamente en los indicadores continuos ...'.",
+      "evidencia": [
+        "P2574: 'habilitando el uso legítimo y preferente de la prueba paramétrica t de Student'.",
+        "P2629: los resultados inferenciales se encabezan con la prueba t de Student pareada; Wilcoxon corrobora.",
+        "Tabla 39: la columna Prueba asignada indica t de Student pareada para los siete indicadores.",
+        "Tabla 44, fila 20: la matriz de consistencia solo menciona Wilcoxon."
+      ],
+      "impacto": "La jerarquía declarada no coincide con la reportada. El lector puede concluir que la prueba principal cambió después de observar los datos, lo que afecta la transparencia metodológica.",
+      "accion_correctiva": "Alinear la descripción con la práctica reportada: t como prueba principal cuando hay normalidad y Wilcoxon como contraste de robustez. Ver ORD-INT-01 y ORD-INT-02.",
+      "ordenes": [
+        "ORD-INT-01",
+        "ORD-INT-02"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-02",
+      "severidad": "MAYOR",
+      "tipo": "consistencia_estadistica",
+      "ubicacion": [
+        "PDF 115 / impresa 100 / P2294"
+      ],
+      "texto_original_o_ancla": "P2294: 'aplicando la corrección secuencial de Holm-Bonferroni sobre los seis indicadores'.",
+      "evidencia": [
+        "P2573 reporta siete pruebas de Shapiro-Wilk, incluido el puntaje global TAM.",
+        "Los p_adj de las Tablas 41 y 42 reproducen exactamente Holm sobre siete pruebas ordenadas, no sobre seis.",
+        "La Tabla 42 incluye el contraste global TAM."
+      ],
+      "impacto": "La descripción del universo de contrastes no permite reproducir la corrección. La aritmética de los p_adj es consistente con siete pruebas.",
+      "accion_correctiva": "Corregir la descripción a seis indicadores más el puntaje global TAM. No alterar p-valores ni p_adj. Ver ORD-INT-03.",
+      "ordenes": [
+        "ORD-INT-03"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-03",
+      "severidad": "MAYOR",
+      "tipo": "reproducibilidad",
+      "ubicacion": [
+        "PDF 125 / impresa 110 / P2624"
+      ],
+      "texto_original_o_ancla": "P2624: 'Elaboración propia en base a SPSS/Python.'.",
+      "evidencia": [
+        "P2286 declara el procesamiento en Python (scipy.stats, statsmodels, pingouin) y el entorno bioestadístico R.",
+        "No se localiza otra mención de SPSS en el cuerpo.",
+        "Las figuras se declaran generadas con Python (Matplotlib) a 300 DPI."
+      ],
+      "impacto": "La procedencia del cálculo estadístico no es reproducible tal como está declarada.",
+      "accion_correctiva": "Alinear la nota con la sección de métodos: Python y R. Si se usó SPSS, declararlo en 3.6. Ver ORD-INT-04.",
+      "ordenes": [
+        "ORD-INT-04"
+      ],
+      "requiere_confirmacion": true
+    },
+    {
+      "id": "SIV-04",
+      "severidad": "MAYOR",
+      "tipo": "sobreafirmacion_empirica",
+      "ubicacion": [
+        "PDF 151 / impresa 136 / P3017"
+      ],
+      "texto_original_o_ancla": "P3017: 'Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación'.",
+      "evidencia": [
+        "P2300: los resultados del Capítulo V son datos provisionales de prueba y deben sustituirse antes de la sustentación.",
+        "P3096 y P3380: la matriz es de prueba y no constituye mediciones de campo.",
+        "P3709: las fotografías de evidencia de aplicación en campo están pendientes; los espacios no acreditan el registro.",
+        "P3094: los dictámenes de los tres jueces aún no están emitidos ni firmados."
+      ],
+      "impacto": "El anexo afirma una aplicación empírica que el propio documento declara pendiente. Es una sobreafirmación corregible.",
+      "accion_correctiva": "Sustituir 'diseñados y aplicados' por 'diseñados'. Ver ORD-INT-05.",
+      "ordenes": [
+        "ORD-INT-05"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-05",
+      "severidad": "MAYOR",
+      "tipo": "contradiccion_interna",
+      "ubicacion": [
+        "PDF 152 / impresa 137 / P3094",
+        "PDF 118 / impresa 103 / Tabla 35"
+      ],
+      "texto_original_o_ancla": "P3094: 'Los coeficientes V de Aiken, IVC y Alfa de Cronbach se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces.'.",
+      "evidencia": [
+        "La Tabla 35 ya reporta Alfa de Cronbach: .939, .877, .874, .915, .831 y .841.",
+        "La nota de la Tabla 35 aclara que son resultados provisionales sobre datos de prueba.",
+        "P3094 afirma que el Alfa se consignará después de los dictámenes."
+      ],
+      "impacto": "La tesis reporta un coeficiente y simultáneamente afirma que se consignará más adelante. La contradicción afecta la trazabilidad de la validación.",
+      "accion_correctiva": "Distinguir el Alfa provisional ya calculado de los coeficientes de juicio de expertos pendientes. Ver ORD-INT-06.",
+      "ordenes": [
+        "ORD-INT-06"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-06",
+      "severidad": "MAYOR",
+      "tipo": "ambiguedad_validacion",
+      "ubicacion": [
+        "PDF 131 / impresa 116 / P2811"
+      ],
+      "texto_original_o_ancla": "P2811: 'logrando una herramienta robusta, validada y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023'.",
+      "evidencia": [
+        "P2958: los tres formatos de evaluación por juicio de expertos se presentan en blanco.",
+        "P3094: los dictámenes de los tres jueces aún no están emitidos ni firmados.",
+        "P2279: el resultado del juicio de contenido es condicional y pendiente de cotejo."
+      ],
+      "impacto": "La palabra 'validada' puede leerse como validación de contenido certificada, que aún no existe. La verificación funcional del software es un alcance distinto.",
+      "accion_correctiva": "Sustituir 'validada' por 'verificada funcionalmente'. Ver ORD-INT-07.",
+      "ordenes": [
+        "ORD-INT-07"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-07",
+      "severidad": "MAYOR",
+      "tipo": "soporte_empirico",
+      "ubicacion": [
+        "PDF 115 / impresa 100 / P2296",
+        "PDF 115-116 / impresa 100-101 / P2297"
+      ],
+      "texto_original_o_ancla": "P2296: 'se tramitó la debida autorización institucional'. P2297: 'se garantizó ... mediante la suscripción del consentimiento informado por parte de los catorce operadores participantes'.",
+      "evidencia": [
+        "No se localiza en el corpus auditado el documento de autorización institucional, su fecha o su número de expediente.",
+        "No se localizan los catorce consentimientos informados firmados ni su registro de custodia.",
+        "La Comisión prohíbe imputar fechas, firmas o identidades."
+      ],
+      "impacto": "Se afirman actos administrativos y éticos que no están documentados en el corpus. Si los documentos existen, el texto es correcto; si no, debe formularse como previsión.",
+      "accion_correctiva": "Confirmar la existencia de los documentos. Si existen, conservar el texto y anexarlos. Si no, aplicar las formulaciones preventivas de ORD-INT-08 y ORD-INT-09.",
+      "ordenes": [
+        "ORD-INT-08",
+        "ORD-INT-09"
+      ],
+      "requiere_confirmacion": true
+    },
+    {
+      "id": "SIV-08",
+      "severidad": "MAYOR",
+      "tipo": "consistencia_documental",
+      "ubicacion": [
+        "PDF 110 / impresa 95 / P2214",
+        "PDF 111 / impresa 96 / Tabla 33",
+        "PDF 113 / impresa 98 / Tabla 34",
+        "PDF 117 / impresa 102 / P2302"
+      ],
+      "texto_original_o_ancla": "Denominaciones alternativas para los mismos instrumentos: 'Ficha de observación de tiempos cronometrados', 'Guía de cotejo documental', 'Ficha de Registro Cronométrico', 'Ficha de Cotejo Documental de Kardex'.",
+      "evidencia": [
+        "P3018 a P3020 fijan los nombres oficiales: Ficha de Registro Cronométrico de Tiempos Operativos; Ficha de Auditoría y Cotejo Documental de Lotes y Kardex; Cuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A).",
+        "Las Tablas 33 y 34 usan denominaciones abreviadas distintas.",
+        "P2302 usa otra variante."
+      ],
+      "impacto": "La correspondencia entre métodos, tablas y anexos se debilita; el lector no puede emparejar con certeza cada instrumento con su anexo.",
+      "accion_correctiva": "Unificar la nomenclatura conforme al Anexo 4. Ver ORD-INT-10.",
+      "ordenes": [
+        "ORD-INT-10"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-09",
+      "severidad": "MAYOR",
+      "tipo": "consistencia_documental",
+      "ubicacion": [
+        "PDF 152 / impresa 137 / T050.3.2 (Tabla 47)"
+      ],
+      "texto_original_o_ancla": "Tabla 47: 'Auditoría de 8 ítems binarios obligatorios' y 'Verificación de lote, vencimiento, cantidad, firma de recepción y consistencia de saldo'.",
+      "evidencia": [
+        "P2192 enumera los ocho criterios: identificación del biológico, lote, vencimiento, cantidad física, centro de origen o destino, identificación del responsable, saldo aritmético y correlatividad temporal.",
+        "La Tabla 44 declara RSD bajo ocho criterios normativos.",
+        "La descripción de la Tabla 47 solo enumera cinco y sustituye identificación del responsable por firma de recepción."
+      ],
+      "impacto": "La descripción no permite reproducir el RSD y contradice el cuerpo y la matriz de consistencia.",
+      "accion_correctiva": "Completar la descripción con los ocho criterios ya definidos. No cambiar el número ocho ni la fórmula. Ver ORD-INT-11.",
+      "ordenes": [
+        "ORD-INT-11"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-10",
+      "severidad": "MAYOR",
+      "tipo": "calidad_editorial",
+      "ubicacion": [
+        "PDF 44 / impresa 29 / Figura 6 / media/image7.png (fuera del rango visual; medición de DPI sobre el PDF)"
+      ],
+      "texto_original_o_ancla": "Figura 6: 'Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta el establecimiento de salud'.",
+      "evidencia": [
+        "Imagen de 751 x 700 px colocada a 396.0 x 369.1 pt, equivalente a 136.5 DPI.",
+        "Es la única figura de cuerpo por debajo de 300 DPI; las demás superan el umbral."
+      ],
+      "impacto": "Riesgo de impresión deficiente y de pérdida de legibilidad de etiquetas y flechas.",
+      "accion_correctiva": "Reexportar desde la fuente editable o rasterizar a 300 DPI efectivos, sin interpolación artificial. Ver ORD-INT-12.",
+      "ordenes": [
+        "ORD-INT-12"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-11",
+      "severidad": "MENOR",
+      "tipo": "calidad_editorial",
+      "ubicacion": [
+        "PDF 1 / portada / media/image1.png (fuera del rango visual; medición de DPI sobre el PDF)"
+      ],
+      "texto_original_o_ancla": "Sello institucional de portada, 212 x 238 px a 129.6 x 145.4 pt.",
+      "evidencia": [
+        "Equivale a 117.8 DPI.",
+        "LOGO-UNAJMA.jpg tiene 2048 x 2048 px y 263,452 bytes.",
+        "La portada renderizada muestra el mismo sello institucional."
+      ],
+      "impacto": "El sello puede verse pixelado en impresión. Existe un archivo de mayor resolución del mismo emblema.",
+      "accion_correctiva": "Sustituir por un recorte de LOGO-UNAJMA.jpg, preservando proporción y sin remuestreo artificial. Confirmar identidad del sello. Ver ORD-INT-13.",
+      "ordenes": [
+        "ORD-INT-13"
+      ],
+      "requiere_confirmacion": true
+    },
+    {
+      "id": "SIV-12",
+      "severidad": "MENOR",
+      "tipo": "atenuacion_editorial",
+      "ubicacion": [
+        "PDF 116 / impresa 101 / P2298"
+      ],
+      "texto_original_o_ancla": "P2298: 'para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial'.",
+      "evidencia": [
+        "El diseño es preexperimental, n = 14 y ventana acotada.",
+        "P2300 declara que los resultados son provisionales de prueba."
+      ],
+      "impacto": "Una garantía absoluta de riesgo cero no es verificable con el diseño y los datos disponibles.",
+      "accion_correctiva": "Sustituir 'cero riesgo' por 'reducir el riesgo'. Ver ORD-INT-14.",
+      "ordenes": [
+        "ORD-INT-14"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-13",
+      "severidad": "MENOR",
+      "tipo": "atenuacion_editorial",
+      "ubicacion": [
+        "PDF 127 / impresa 112 / P2671",
+        "PDF 133 / impresa 118 / P2815"
+      ],
+      "texto_original_o_ancla": "P2671: 'erradicando los errores de digitación en el Kardex'. P2815: 'erradicando las fallas de arrastre en los libros de kardex'.",
+      "evidencia": [
+        "La evidencia es una matriz de datos de prueba con n = 14.",
+        "P2300 y P2813 aclaran el carácter provisional de los datos.",
+        "No hay seguimiento longitudinal que permita sostener erradicación."
+      ],
+      "impacto": "Se atribuye al sistema una magnitud absoluta no demostrada.",
+      "accion_correctiva": "Sustituir 'erradicando' por 'reduciendo' en ambas ocurrencias. Ver ORD-INT-15 y ORD-INT-16.",
+      "ordenes": [
+        "ORD-INT-15",
+        "ORD-INT-16"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-14",
+      "severidad": "MENOR",
+      "tipo": "precision_estadistica",
+      "ubicacion": [
+        "PDF 124 / impresa 109 / P2573"
+      ],
+      "texto_original_o_ancla": "P2573: 'Los resultados de la prueba de Shapiro-Wilk ... arrojaron los siguientes estadísticos de contraste (gl = 14)'.",
+      "evidencia": [
+        "La prueba se aplica sobre n = 14 diferencias pareadas; gl = 14 no corresponde a los grados de libertad del contraste.",
+        "P2624 diferencia correctamente n = 14 de gl = n - 1 = 13 para la prueba t."
+      ],
+      "impacto": "Etiqueta imprecisa que puede confundir la lectura de la tabla de normalidad.",
+      "accion_correctiva": "Sustituir 'gl = 14' por 'n = 14'. Ver ORD-INT-17.",
+      "ordenes": [
+        "ORD-INT-17"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-15",
+      "severidad": "MENOR",
+      "tipo": "consistencia_editorial",
+      "ubicacion": [
+        "PDF 144 / impresa 129 / T044.10.1 (Tabla 44)"
+      ],
+      "texto_original_o_ancla": "Tabla 44: '(GE: O₁ - X - O₂)' con guiones cortos.",
+      "evidencia": [
+        "El cuerpo usa guion largo: '(GE: O₁ – X – O₂)' (por ejemplo, P0276, PDF 17).",
+        "La notación es la misma; solo cambia el separador tipográfico."
+      ],
+      "impacto": "Inconsistencia tipográfica menor en la matriz de consistencia.",
+      "accion_correctiva": "Unificar al guion largo. Ver ORD-INT-18.",
+      "ordenes": [
+        "ORD-INT-18"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-16",
+      "severidad": "MENOR",
+      "tipo": "consistencia_editorial",
+      "ubicacion": [
+        "PDF 102 / impresa 87 / T029.1.1 (fuera del rango visual; capa de texto)",
+        "PDF 105 / impresa 90 / T031.2.1 (fuera del rango visual; capa de texto)",
+        "PDF 108 / impresa 93 / P2192",
+        "PDF 110 / impresa 95 / P2214"
+      ],
+      "texto_original_o_ancla": "Cuatro ocurrencias en minúsculas: 'vales pecosa físicos', 'vales pecosa', 'vale pecosa', 'emisión de vale pecosa'.",
+      "evidencia": [
+        "Tabla 8, Tabla 25 y Tabla 51 usan 'PECOSA' en mayúsculas.",
+        "Se trata de una sigla administrativa, no de un nombre común."
+      ],
+      "impacto": "Inconsistencia de grafía en la denominación del comprobante.",
+      "accion_correctiva": "Sustituir las cuatro ocurrencias por 'PECOSA'. No alterar las mayúsculas ya correctas. Ver ORD-INT-19.",
+      "ordenes": [
+        "ORD-INT-19"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-17",
+      "severidad": "MENOR",
+      "tipo": "formato_editorial",
+      "ubicacion": [
+        "PDF 117 / impresa 102 / P2300",
+        "PDF 124 / impresa 109 / P2572",
+        "PDF 125 / impresa 110 / P2628",
+        "PDF 127 / impresa 112 / P2669",
+        "PDF 128 / impresa 113 / P2710",
+        "PDF 129 / impresa 114 / P2765"
+      ],
+      "texto_original_o_ancla": "Párrafos con justificación completa y líneas internas cortas o fórmulas, que producen separación interpalabra extremadamente amplia.",
+      "evidencia": [
+        "Lectura visual de las páginas citadas: el rótulo 'Advertencia metodológica y salvaguarda deontológica' y las líneas de hipótesis aparecen con espacios anómalos.",
+        "El fenómeno se concentra en párrafos que combinan justificación con fórmulas o saltos de línea internos."
+      ],
+      "impacto": "Afecta la legibilidad y la presentación editorial, sin alterar el contenido.",
+      "accion_correctiva": "Aplicar alineación izquierda o convertir las líneas internas en una lista no justificada. No cambiar el texto. Ver ORD-INT-20.",
+      "ordenes": [
+        "ORD-INT-20"
+      ],
+      "requiere_confirmacion": false
+    },
+    {
+      "id": "SIV-18",
+      "severidad": "MENOR",
+      "tipo": "completitud_documental",
+      "ubicacion": [
+        "PDF 155-156 / impresas 140-141 / T054.6.3 y T054.7.3 (Tabla 51)"
+      ],
+      "texto_original_o_ancla": "Tabla 51: las filas HU-14 y HU-15 tienen 'No especificado' en la columna Rol / Actor.",
+      "evidencia": [
+        "Las demás historias de usuario sí identifican un actor.",
+        "No se debe inferir el actor desde el título; debe tomarse de la HU original."
+      ],
+      "impacto": "Dos historias de usuario quedan sin responsable identificado.",
+      "accion_correctiva": "Completar desde la fuente primaria de las HU. Si el actor no está definido en la fuente, declarar la limitación en la nota. Ver ORD-INT-21.",
+      "ordenes": [
+        "ORD-INT-21"
+      ],
+      "requiere_confirmacion": true
+    },
+    {
+      "id": "SIV-19",
+      "severidad": "MENOR",
+      "tipo": "trazabilidad",
+      "ubicacion": [
+        "PDF 155 / impresa 140 / P3666",
+        "PDF 82 / impresa 67 / P1733 (fuera del rango visual, detectado por capa de texto)"
+      ],
+      "texto_original_o_ancla": "P3666: 'se encuentra alojado bajo control de versiones Git en el repositorio institucional syncova'.",
+      "evidencia": [
+        "No se consigna URL, identificador de repositorio ni commit verificable.",
+        "P1733 repite la expresión 'repositorio institucional' sin URL.",
+        "El código local está en C:/Proyectos/syncova, de solo lectura."
+      ],
+      "impacto": "La trazabilidad del código no es verificable desde el documento.",
+      "accion_correctiva": "Añadir URL y commit si el repositorio existe; en caso contrario, declarar la entrega en medio digital. Ver ORD-INT-22.",
+      "ordenes": [
+        "ORD-INT-22"
+      ],
+      "requiere_confirmacion": true
+    }
+  ],
+  "hallazgos_fany": [
+    {
+      "id": "F-01",
+      "tipo": "formato_modelo",
+      "ubicacion": "PDF 73-74 / Anexo 1",
+      "hallazgo": "Matriz de consistencia en orientación horizontal.",
+      "uso_correcto": "Se examina como formato de referencia. No replicar la orientación horizontal: el producto SIVAC es vertical y así debe permanecer."
+    },
+    {
+      "id": "F-02",
+      "tipo": "escaneo_modelo",
+      "ubicacion": "PDF 75-80 / Anexo 2",
+      "hallazgo": "Formatos de validación escaneados, con imágenes y posiblemente firmas.",
+      "uso_correcto": "Se examinan como formato, no como evidencia SIVAC. No copiar nombres, firmas, fechas ni datos de personas."
+    },
+    {
+      "id": "F-03",
+      "tipo": "defecto_modelo",
+      "ubicacion": "PDF 87-88 / Tablas 17 y 18",
+      "hallazgo": "Dos historias de usuario distintas aparecen numeradas como 'Número: 3'.",
+      "uso_correcto": "No replicar la duplicidad de numeración. En SIVAC, cada HU debe tener un código único."
+    },
+    {
+      "id": "F-04",
+      "tipo": "defecto_modelo",
+      "ubicacion": "PDF 90 / Figura 12",
+      "hallazgo": "El texto dice 'En la figura 9' mientras la figura mostrada es la 12.",
+      "uso_correcto": "No replicar el error de referencia cruzada. Verificar cada remisión a figura."
+    },
+    {
+      "id": "F-05",
+      "tipo": "escaneo_modelo",
+      "ubicacion": "PDF 104-106",
+      "hallazgo": "Páginas de imagen completa sin capa de texto.",
+      "uso_correcto": "Se examinan como formato o escaneo, no como evidencia SIVAC. No copiar contenido, firmas ni datos."
+    },
+    {
+      "id": "F-06",
+      "tipo": "datos_modelo",
+      "ubicacion": "PDF 96 / Anexo 10",
+      "hallazgo": "Organigrama institucional con datos de la municipalidad modelo.",
+      "uso_correcto": "No copiar personas, cargos ni datos institucionales. SIVAC debe usar su propia estructura."
+    },
+    {
+      "id": "F-07",
+      "tipo": "capturas_modelo",
+      "ubicacion": "PDF 97-103 / Anexos 11-17",
+      "hallazgo": "Capturas del sistema WebFQT.",
+      "uso_correcto": "No copiar capturas ni presentarlas como evidencia de SIVAC. Las figuras de SIVAC deben provenir de su propio sistema."
+    },
+    {
+      "id": "F-08",
+      "tipo": "formato_modelo",
+      "ubicacion": "PDF 73-106 / anexos",
+      "hallazgo": "Tablas de anexos en rejilla y páginas horizontales.",
+      "uso_correcto": "La rejilla es una excepción admitida en anexos; la orientación horizontal no. Mantener vertical el producto SIVAC y no aplicar tres líneas de forma indiscriminada."
+    }
+  ],
+  "no_hallazgos_verificados": [
+    {
+      "tema": "Correspondencia de citas y referencias",
+      "resultado": "53 referencias, 53 con cita activa, 0 huérfanas y 0 citas sin referencia."
+    },
+    {
+      "tema": "Numeración de tablas y figuras",
+      "resultado": "51 tablas y 52 figuras, numeración completa, sin duplicados reales."
+    },
+    {
+      "tema": "Aritmética de las Tablas 49 y 50",
+      "resultado": "Las medias reproducen exactamente las Tablas 36, 37 y 38."
+    },
+    {
+      "tema": "Corrección de Holm",
+      "resultado": "Los p_adj son consistentes con siete pruebas ordenadas, no con seis; el problema es de descripción, no de cálculo."
+    },
+    {
+      "tema": "CPE pretest",
+      "resultado": "La media correcta es 67.61, no 95.3; la lectura inicial de 95.3 fue un error de alineación de columnas. No hay discrepancia."
+    },
+    {
+      "tema": "Centros 19 vs 13",
+      "resultado": "19 registrados en el sistema y 13 con operadores censales; no es contradicción."
+    },
+    {
+      "tema": "Chicmo y Turpo",
+      "resultado": "La capa de texto y el DOCX dicen Chicmo y Turpo; 'Chico' y 'Turbo' fueron falsos positivos de lectura a baja resolución."
+    },
+    {
+      "tema": "Íntegro",
+      "resultado": "P3666 usa 'íntegro' con tilde; no hay error."
+    },
+    {
+      "tema": "d de Cohen calculada",
+      "resultado": "El uso de 'd' como sustantivo femenino es aceptable en español; no se corrige."
+    },
+    {
+      "tema": "Tablas de anexos en rejilla",
+      "resultado": "Son una excepción admitida; no se les aplica el formato de tres líneas."
+    },
+    {
+      "tema": "Tokens prohibidos en v19",
+      "resultado": "0 ocurrencias de DEC-, [VERIFICAR] y U+2014 en los 3722 párrafos."
+    }
+  ],
+  "pendientes_empiricos": [
+    {
+      "id": "PE-01",
+      "tema": "Datos de campo reales",
+      "estado": "PENDIENTE",
+      "detalle": "Las Tablas 49 y 50 son datos de prueba. Deben sustituirse por mediciones de campo antes de la sustentación."
+    },
+    {
+      "id": "PE-02",
+      "tema": "Validación por juicio de expertos",
+      "estado": "ABIERTA",
+      "detalle": "Los formatos están en blanco; no hay dictámenes firmados, V de Aiken, IVC ni identidades de jueces. La declaración de que todos calificaron 4 no sustituye la evidencia documental."
+    },
+    {
+      "id": "PE-03",
+      "tema": "Fotografías 49 a 52",
+      "estado": "PENDIENTE",
+      "detalle": "Los espacios están reservados; las fotografías no se han incorporado."
+    },
+    {
+      "id": "PE-04",
+      "tema": "Acta de sustentación",
+      "estado": "PENDIENTE",
+      "detalle": "El acta está pendiente de suscripción por el jurado."
+    },
+    {
+      "id": "PE-05",
+      "tema": "Autorización institucional y consentimientos",
+      "estado": "POR CONFIRMAR",
+      "detalle": "No se localizan en el corpus auditado; confirmar su existencia antes de mantener las afirmaciones en tiempo pasado."
+    },
+    {
+      "id": "PE-06",
+      "tema": "Repositorio de código",
+      "estado": "POR CONFIRMAR",
+      "detalle": "No se consigna URL ni commit; confirmar si existe un repositorio institucional."
+    },
+    {
+      "id": "PE-07",
+      "tema": "QG-5",
+      "estado": "ABIERTA",
+      "detalle": "No se certifica la validación de instrumentos."
+    },
+    {
+      "id": "PE-08",
+      "tema": "QG-9",
+      "estado": "NO CERTIFICADA",
+      "detalle": "No se certifica el documento final ni la aprobación de impresión."
+    },
+    {
+      "id": "PE-09",
+      "tema": "Aprobación humana",
+      "estado": "NO EMITIDA",
+      "detalle": "Este informe no emite aprobación del jurado ni del tesista."
+    },
+    {
+      "id": "PE-10",
+      "tema": "Declaración jurada y datos de prueba",
+      "estado": "LIMITACIÓN DE VERSIÓN",
+      "detalle": "P0027 afirma mediciones reales; P2300, P2355, P3380 y P3664 declaran datos de prueba. La declaración presupone la versión con datos definitivos. No se altera el acto legal ni se condiciona la firma; la decisión corresponde al tesista."
+    }
+  ],
+  "pendientes_editoriales": [
+    {
+      "id": "PED-01",
+      "tema": "O-05, conteo de características de la Tabla 28",
+      "estado": "POR CONFIRMAR",
+      "detalle": "La Tabla 28 tiene cinco características distintas y el texto anuncia cuatro. Es procedente, pero conviene la reformulación sin numeral propuesta en controles_transversales.verificacion_ordenes_redaccion.o05; no requiere cambiar cifras ni inventar categorías."
+    },
+    {
+      "id": "PED-02",
+      "tema": "O-07, nota de la Tabla 6",
+      "estado": "OBSERVADA",
+      "detalle": "El ancla es exacta, pero 'inmutable' está respaldado por DEC-007. No aplicar la supresión sin confirmación. Alternativa mínima: conservar 'inmutable' y sustituir solo 'aprobada en' por 'conforme a'."
+    }
+  ],
+  "dictamen": {
+    "estado": "OBSERVADO_SUBSANABLE",
+    "justificacion": "No se hallaron fuentes inexistentes, DOIs rotos ni citas huérfanas. Se identificaron diez hallazgos mayores y nueve menores, todos corregibles mediante edición quirúrgica o condicionados a documentación del tesista. Las limitaciones empíricas están declaradas en el propio documento: datos de prueba, validación de expertos pendiente y fotografías pendientes. Se añade una limitación de versión: la declaración jurada P0027 afirma mediciones reales mientras v19 declara datos de prueba; se trata como firma pendiente, no como fraude, y no se altera el acto legal. Se verificaron las siete órdenes de redacción: seis son procedentes y O-07 queda observada por su premisa sobre 'inmutable'; O-05 es procedente con reformulación sin numeral. QG-5 y QG-9 no se certifican y no se emite aprobación humana.",
+    "conteo": {
+      "criticos": 0,
+      "mayores": 10,
+      "menores": 9,
+      "total": 19
+    },
+    "qg5": "ABIERTA",
+    "qg9": "NO CERTIFICADA",
+    "aprobacion_humana": "NO EMITIDA",
+    "bloqueos_altos": 0,
+    "apto_para": "Revisión editorial y corrección quirúrgica; no apto para sustentación ni impresión final."
+  }
+}

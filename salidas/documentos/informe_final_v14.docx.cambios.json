@@ -1,0 +1,51 @@
+{
+  "comando": "aplicar-ordenes",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "fecha": "2026-10-21",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "agente": "maquetador-docx",
+  "origen": "salidas/documentos/informe_final_v13.docx",
+  "destino": "salidas/documentos/informe_final_v14.docx",
+  "sha256_origen": "93c0a303671dbfddc21c8b7442a76600a98ba4244ea2f7a6287295db59a81753",
+  "sha256_destino": "1b81020cf551914e74b21d7f875566ebcf2bd59da781f08340c2cbc0f5861a07",
+  "resumen": {
+    "total_ordenes": 67,
+    "total_aplicadas": 67,
+    "total_fallidas": 0,
+    "parrafos": "824 -> 824",
+    "tablas": "59 -> 59",
+    "elementos_body": "885 -> 885",
+    "nodos_w_t": "4682 -> 4682",
+    "saneamiento_espacios": {"parrafos_saneados": 25, "caracteres_recortados": 25}
+  },
+  "lote": {
+    "archivo": "uniformidad_notacional_v12.json",
+    "sha256": "2445b46abf689ce5037f48699338321eaf2e83a8e508e10efd8d4522dc8d5276",
+    "ordenes": 67,
+    "categorias": {"p_valor": 29, "signo_menos": 30, "p_valor_y_signo_menos": 8},
+    "modos_de_resolucion": {"indice": 44, "celda_reubicada": 22, "busqueda_unica": 1}
+  },
+  "saneamiento_espacios": {
+    "implementacion": "funcion nueva sanear_espacios_finales() en scripts/utilidades/docx_quirurgico.py; se invoca con --sanear-espacios en aplicar-ordenes y corregir-estructura",
+    "alcance": "solo parrafos del cuerpo (documento.paragraphs); no toca celdas ni titulos",
+    "indices": [28, 145, 152, 163, 191, 221, 228, 253, 383, 446, 525, 553, 555, 567, 648, 649, 650, 663, 670, 683, 706, 710, 711, 721, 811],
+    "coincidencia_con_la_comision": "25 de 25 indices; un caracter por parrafo"
+  },
+  "verificacion_final": {
+    "p_valores_con_cero_inicial": 0,
+    "p_adj_con_cero_inicial": 0,
+    "guion_ascii_ante_digito": 0,
+    "menos_tipografico_u2212": 43,
+    "parrafos_con_espacio_final": 0,
+    "residual_0_001": {
+      "casos": 4,
+      "ubicaciones": ["TABLA 41 fila 3 columna 4", "TABLA 42 fila 3 columna 4", "TABLA 42 fila 5 columna 4", "TABLA 42 fila 7 columna 4"],
+      "motivo": "El expediente uniformidad_notacional_v12.json no incluye esas cuatro celdas; no se inventaron ordenes.",
+      "estado": "pendiente para el redactor"
+    },
+    "word_com": {"paginas": 158, "palabras": 42338, "tablas": 59, "abre_sin_reparacion": true},
+    "auditoria_openxml": {"tablas_flotantes": 0, "tablas_con_header": 59, "tablas_con_cantsplit": 59, "referencias_sangria_francesa": 53, "formulas_omml": 12},
+    "referencias": "53, sin inserciones ni duplicados"
+  },
+  "reporte_detallado": "salidas/reportes_maquetacion/aplicacion_ordenes_v14.json"
+}

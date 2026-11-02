@@ -1,0 +1,25 @@
+{
+  "sustituciones": [
+    {
+      "indice_docx": 713,
+      "ubicacion": "O13 parrafo p132 (regresion R1)",
+      "ancla_original": "considerados en el marco teórico, que sitúan",
+      "texto_nuevo": "considerados en el marco teórico (Venkatesh et al., 2003), que sitúan",
+      "ocurrencias": 1
+    },
+    {
+      "indice_docx": 727,
+      "ubicacion": "Referencia Aiken 1985 (regresion R3)",
+      "ancla_original": "45(1), 131-142.",
+      "texto_nuevo": "45(1), 131–142.",
+      "ocurrencias": 1
+    },
+    {
+      "indice_docx": 777,
+      "ubicacion": "Referencia Wasswa 2023 (regresion R2: retirar DOI en texto plano, conservar hipervinculo)",
+      "ancla_original": "Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+      "texto_nuevo": "Artículo 6.",
+      "ocurrencias": 1
+    }
+  ]
+}

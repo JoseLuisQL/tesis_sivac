@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "fecha_verificacion": "2026-10-22T09:55:27",
+    "agente": "analista-documental",
+    "fase": "F8",
+    "objeto": "Auditoria independiente de INSTRUMENTOS_REDISENADOS_FANY_20261022_v01",
+    "metodo": "Controles reproducidos con script diagnostico propio; sin confiar en los booleanos del maquetador",
+    "script": "salidas/reportes_maquetacion/_diag_rediseno_20261022.py",
+    "snapshot": "Los hashes corresponden a los archivos con mtime 09:49:16-09:49:39 del 2026-10-22. Si la salida cambia despues, estos valores no aplican a la version siguiente. Los DOCX fueron reescritos a las 09:56-09:57 del mismo dia; esta auditoria no cubre esa version ni sus hashes."
+  },
+  "snapshot_hashes": {
+    "00_INSTRUMENTOS_RECOLECCION_SIVAC.docx": "c80926ee687b691f4f4c793f605f2196d5cf564be7950b3619b1858742c6543c",
+    "00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf": "6d8b54e5b0f0d97c32e19f0b8efc7824c939cca1467c0548143b0f7cdae11a01",
+    "01_FICHA_TIEMPOS.docx": "3969c649e9979609bf78cc93a1dca53c69e6665ed15e8f0373f7892ca268c124",
+    "01_FICHA_TIEMPOS.pdf": "73838ac8327f07d7e9f98bf416a25fc7e2de823e23413d7e59b7e4d84aff9bda",
+    "02_FICHA_AUDITORIA_DOCUMENTAL.docx": "aafa9d4ccd3a7563dd7b728c5789a69ffcf040406954b535e02173c84643afab",
+    "02_FICHA_AUDITORIA_DOCUMENTAL.pdf": "4c728412a381124030e843a66c2338d3bb988e69a581b46f992ee1419d2affab",
+    "03_CUESTIONARIO_SATISFACCION_A.docx": "58aebd27768e86b3590ca1e1b3e68bf331ee94df70eaba0bbdacc45db6f039e3",
+    "03_CUESTIONARIO_SATISFACCION_A.pdf": "ecfb84a3bd2b98e97bc59dc67cced64244c0b7f237f53219f351b274f214b4d2",
+    "04_MODULO_COMPLEMENTARIO_B_POST.docx": "875cfbafc151cc823643e86294513aeadf09ce3d8006bc748097241c2d9ed64d",
+    "04_MODULO_COMPLEMENTARIO_B_POST.pdf": "ad473ae21628ec2acd6193a8fc14326232b1a55fd4b9096152c5672ff4f083e1"
+  },
+  "controles": {
+    "integridad_hashes": {
+      "documentos": 12,
+      "coinciden_manifiesto": 12,
+      "resultado": "sin divergencia"
+    },
+    "huellas_fuentes": {
+      "fuentes": 4,
+      "coinciden": 4,
+      "manifiesto_igual_comision": true
+    },
+    "reactivos": {
+      "rector": 16,
+      "A": 8,
+      "B": 8,
+      "faltantes": 0,
+      "igualdad_estricta_16_de_16": true,
+      "metodo": "comparacion de la celda de enunciado mas larga, normalizada"
+    },
+    "pdf_reactivos": {
+      "A": {
+        "paginas": 1,
+        "codigos": 8,
+        "escala_1_5": true
+      },
+      "B": {
+        "paginas": 1,
+        "codigos": 8,
+        "escala_1_5": true
+      }
+    },
+    "paginacion": {
+      "conjunto": 7,
+      "tiempos": 2,
+      "auditoria": 3,
+      "A": 1,
+      "B": 1,
+      "apoyos": 5,
+      "total": 19,
+      "coincide_render_manifiesto": true
+    },
+    "geometria": {
+      "ancho_rejilla_dxa": {
+        "00": 8788,
+        "01": 8788,
+        "02": 8788,
+        "03": 8788,
+        "04": 8788
+      },
+      "margenes_dxa": {
+        "left": 1701,
+        "right": 1417,
+        "top": 1417,
+        "bottom": 1417
+      },
+      "cantSplit": {
+        "00": "150/150",
+        "01": "38/38",
+        "02": "81/81",
+        "03": "16/16",
+        "04": "15/15"
+      },
+      "tblHeader": {
+        "00": 11,
+        "01": 2,
+        "02": 9,
+        "03": 0,
+        "04": 0
+      },
+      "tblHeader_nota": "03 y 04 ocupan una sola pagina; la ausencia de tblHeader no produce perdida de etiquetas en este snapshot.",
+      "tblpPr": 0,
+      "oMath_en_celdas": 0
+    },
+    "campos": {
+      "01": [
+        "Codigo TRAB-______",
+        "Fase en blanco (INICIAL o FINAL)",
+        "Centro en blanco",
+        "Observador",
+        "Hora inicio y fin",
+        "Duracion en minutos decimales",
+        "Tarea valida"
+      ],
+      "02": [
+        "Codigo TRAB-______",
+        "Fase en blanco",
+        "Centro",
+        "Ventana auditada",
+        "Auditor",
+        "Firma del auditor",
+        "Fecha de cierre",
+        "Bloques D-01 a D-05",
+        "Entregas E-01 a E-12"
+      ],
+      "03": [
+        "Codigo TRAB-______",
+        "Fase en blanco (INICIAL o FINAL)",
+        "Fecha"
+      ],
+      "04": [
+        "Codigo TRAB-______; sin campo Fase porque el rotulo fija aplicacion solo al final"
+      ],
+      "resultado": "Los campos existen y estan en blanco; ningun valor precargado distinto de la plantilla TRAB-______."
+    },
+    "continuaciones": {
+      "D-06": true,
+      "E-13": true,
+      "H-05": true,
+      "soporte": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx/pdf",
+      "porcentajes_y_RSD_CPE_en_hoja_de_cierre": true
+    },
+    "conjunto_vs_separados": {
+      "01": "53 lineas, 0 ausentes",
+      "02": "64 lineas, 0 ausentes",
+      "03": "31 lineas, 0 ausentes",
+      "04": "32 lineas, 0 ausentes"
+    },
+    "documento_04": {
+      "titulo": "Modulo B. Cuestionario complementario",
+      "declara_no_sumar": true,
+      "variable_nueva": false,
+      "cuarto_instrumento": false
+    },
+    "protocolo_01": "Los seis pasos conservan definiciones de inicio y fin, pausa, anulacion, ventana y conversion a minutos decimales; la redaccion se condenso sin alterar la regla.",
+    "afirmaciones_de_validez": "No se detectan afirmaciones de validez, confiabilidad, juicio de experto ni comprension de usuarios. La palabra comprensibles aparece solo dentro del reactivo PE-01."
+  },
+  "discrepancias": [
+    {
+      "id": "A-01",
+      "severidad": "informativa",
+      "tema": "Explicitacion de la regla CPE en la ficha",
+      "hecho": "La regla agregada coincide literalmente con guia_campo_contenido_20261022.md linea 188 y con el criterio de proporcion ya impreso en PAQ-TRAB-01/01_PRE/03_FICHA_02_AUDITORIA_PRE.pdf pagina 2.",
+      "efecto": "No es una modificacion metodologica: la ficha redisenada explicita en el formulario una regla que ya estaba en el protocolo de campo.",
+      "accion": "Sin cambio de contenido. Trazabilidad: citar la guia y la ficha previa como fuente de la regla."
+    },
+    {
+      "id": "A-02",
+      "severidad": "advertencia_de_alcance",
+      "tema": "Modulo B y PE",
+      "hecho": "04 esta rotulado como modulo complementario y declara que no se suma al Cuestionario A; PU y PE provienen del rector.",
+      "efecto": "No es discrepancia del rediseno. PE no figura entre los seis indicadores DEC-007.",
+      "accion": "Mantener 04 como evidencia complementaria y no reportarlo como indicador de la VD."
+    },
+    {
+      "id": "A-03",
+      "severidad": "baja",
+      "tema": "Correspondencia del manifiesto",
+      "hecho": "Varias descripciones de destino son funcionales, no literales.",
+      "efecto": "Los campos citados existen y el conjunto contiene todas las lineas de los separados.",
+      "accion": "Ninguna."
+    },
+    {
+      "id": "A-04",
+      "severidad": "informativa",
+      "tema": "Ajustes RD01-RD04",
+      "hecho": "El snapshot auditado (09:49) no contiene los cuatro ajustes de direccion; los DOCX se reescribieron a las 09:56-09:57.",
+      "efecto": "Los hashes de este informe no cubren la version corregida.",
+      "accion": "Verificar solo los deltas en la siguiente version."
+    }
+  ],
+  "no_evaluado": [
+    "Legibilidad visual fina de las 12 paginas (revision del Director).",
+    "Correspondencia semantica de cada reactivo con la matriz de consistencia (fuera de alcance).",
+    "Validez de contenido o confiabilidad: no se simulan."
+  ],
+  "estado_RD_en_snapshot": {
+    "RD01": "no aplicado: la nota D-06 esta entre las tablas D-04 y D-05 (orden del cuerpo verificado).",
+    "RD02": "incompleto por ubicacion: las tablas de identificacion que anteceden a las continuaciones D-06 (T5), E-13 (T15) y H-05 (T17) llevan Codigo y Fase, pero no Centro ni Fecha.",
+    "RD03": "no aplicado: A y B no contienen proposito ni confidencialidad.",
+    "RD04": "no aplicado: APOYOS conserva RSD y CPE como formulas en texto plano con x 100."
+  },
+  "aclaracion_metodo_RD02": "La busqueda de las palabras Fase, Centro o Fecha en cualquier parte del DOCX no prueba RD02; la prueba se hizo por la cabecera de la tabla que precede a cada continuacion.",
+  "conclusion": "Sin discrepancias metodologicas atribuibles al rediseno en el snapshot 09:49: 16/16 reactivos identicos, 12/12 hashes, geometria conforme. La regla CPE es explicitacion de una regla previa del protocolo. A-02 queda como advertencia de alcance, no como hallazgo."
+}

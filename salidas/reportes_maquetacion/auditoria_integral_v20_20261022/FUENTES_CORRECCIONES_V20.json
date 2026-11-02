@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "tarea": "Correcciones bibliográficas aplicables para la v20",
+    "fecha": "2026-10-22",
+    "agente": "verificador-integridad",
+    "squad": "Squad A",
+    "alcance": [
+      "Aiken 1985",
+      "Tristán-López 2008",
+      "Wasswa 2023",
+      "Kigenza 2023"
+    ],
+    "archivo_previo": "fuentes_publicas_v20_20261022.json",
+    "precedencia": "Para O-21, O-22 y las órdenes Wasswa, este archivo prevalece sobre fuentes_publicas_v20_20261022.json.",
+    "restricciones": [
+      "No se modificó Word ni PDF.",
+      "No se tocaron cifras empíricas SIVAC ni Tablas 49/50.",
+      "No se revalidaron las 53 referencias existentes.",
+      "Solo se añade una referencia nueva: Aiken (1985), verificada por DOI.",
+      "No se cambiaron fórmulas, métricas, escalas ni el criterio 0.80."
+    ],
+    "conteo_referencias": {
+      "antes": 53,
+      "nuevas": 1,
+      "despues": 54
+    }
+  },
+  "aiken_1985": {
+    "id": "aiken_1985",
+    "doi": "10.1177/0013164485451012",
+    "url_doi": "https://doi.org/10.1177/0013164485451012",
+    "doi_registrado_crossref": true,
+    "doi_resuelve": true,
+    "doi_http_status": 302,
+    "doi_redirect": "https://journals.sagepub.com/doi/10.1177/0013164485451012",
+    "abstract_crossref": "Three numerical coefficients (V, R, and H) for analyzing the validity and reliability of ratings are described.",
+    "verificacion_contenido": "El resumen registrado en Crossref confirma que el artículo describe los tres coeficientes V, R y H para analizar la validez y confiabilidad de las calificaciones.",
+    "titulo": "Three Coefficients for Analyzing the Reliability and Validity of Ratings",
+    "autores": "Aiken, Lewis R.",
+    "revista": "Educational and Psychological Measurement",
+    "volumen": "45",
+    "numero": "1",
+    "paginas": "131–142",
+    "anio": 1985,
+    "fecha_acceso": "2026-10-22",
+    "referencia_apa7": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012",
+    "cita_en_texto": "(Aiken, 1985)",
+    "formato_apa7": {
+      "fuente": "Times New Roman 12 pt",
+      "interlineado": "1.5",
+      "sangria_francesa_cm": 1.27,
+      "cursiva": [
+        "Educational and Psychological Measurement",
+        "45"
+      ],
+      "espaciado_posterior_pt": 6
+    },
+    "insercion": {
+      "ancla_id": "P2823",
+      "ancla_texto": "Addy, A. (2023). Artificial intelligence in the supply chain management for vaccine distribution in the West African healthcare sector with a focus on Ghana. International Journal of Legal Science and Innovation, 5(6), 1–25. https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana",
+      "texto_siguiente_id": "P2824",
+      "texto_siguiente": "Alvarez Ticllasuca, K., Flores Marín, G., y Poma Rojas, W. J. (2023). Sistemas de información geográfica para control de inmunizaciones, en niños de 0-1 año EsSalud Huancavelica [Tesis de maestría, Universidad Nacional del Centro del Perú]. Repositorio Institucional UNCP. http://hdl.handle.net/20.500.12894/9418",
+      "posicion": "insertar como párrafo independiente después de P2823 y antes de P2824"
+    },
+    "estado": "VERIFICADO",
+    "nota": "Metadatos completos verificados en Crossref. No se descargó PDF; no se usó Zotero en esta pasada. La adición de la referencia y de una cita en el texto es una corrección bibliográfica, no una nueva variable, escala ni fórmula."
+  },
+  "tristan_lopez_2008": {
+    "id": "tristan_lopez_2008",
+    "doi": null,
+    "url_pdf": "https://humanas.unal.edu.co/lab_psicometria/application/files/9716/0463/3548/VOL_6._Articulo4_Indice_de_validez_de_contenido_37-48.pdf",
+    "url_registro": "https://dialnet.unirioja.es/servlet/articulo?codigo=2981185",
+    "fecha_acceso": "2026-10-22",
+    "titulo": "Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo",
+    "revista": "Avances en Medición",
+    "volumen": "6",
+    "numero": "1",
+    "paginas": "37-48",
+    "conteos_texto_completo": {
+      "aiken": 0,
+      "ivc": 3,
+      "lawshe": 50,
+      "cvr": 73
+    },
+    "hallazgo": "El artículo modifica el CVR de Lawshe y define el IVC como media de los CVR'; no menciona Aiken y no deriva la V de Aiken. Se conserva la cita solo para la modificación de Lawshe/CVR, sin atribuirle la V.",
+    "ocurrencias": [
+      {
+        "id": "P0302",
+        "pagina_pdf": 23,
+        "tipo": "cita_en_texto",
+        "accion": "corregir atribución; conservar la cita para Lawshe/CVR"
+      },
+      {
+        "id": "P2871",
+        "pagina_pdf": 140,
+        "tipo": "referencia",
+        "accion": "conservar; sigue activa por la cita corregida de P0302"
+      }
+    ],
+    "orden": "ORD-TRI-01",
+    "no_elimina_referencia": true
+  },
+  "wasswa_2023": {
+    "id": "wasswa_2023",
+    "doi": "10.1186/s40545-023-00517-4",
+    "url_doi": "https://doi.org/10.1186/s40545-023-00517-4",
+    "pmcid": "PMC9844934",
+    "url_europepmc": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9844934/fullTextXML",
+    "fecha_acceso": "2026-10-22",
+    "titulo_real": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: lessons from COVID-19 response in Uganda",
+    "autores": [
+      "John Hans Wasswa",
+      "Henry Oundo",
+      "Martin Olowo Oteba",
+      "Henry Komakech",
+      "Irene Ochola",
+      "Sheila Mwebaze",
+      "Denis Okidi",
+      "Anthony Kirunda",
+      "Shamim Nakadde",
+      "Neville Okuna Oteba",
+      "Eric Lugada"
+    ],
+    "revista": "Journal of Pharmaceutical Policy and Practice",
+    "volumen": "16",
+    "numero": "1",
+    "articulo": "6",
+    "anio": 2023,
+    "conteos_texto_completo": {
+      "90%": 0,
+      "19_hospitales": 0,
+      "20_RRH": 1,
+      "85.5%": 2,
+      "96.5%": 1,
+      "vaccine": 1,
+      "immuniz": 0
+    },
+    "extractos": {
+      "metodo": "Methods We reviewed published and unpublished literature regarding the adoption and implementation of an eELMIS during the COVID-19 preparedness and response in Uganda. Documents reviewed included journal articles, reports, and national guidelines. In addition, data were abstracted from the eELMIS database. To supplement the literature review and secondary data, we held interviews and discussions with stakeholders involved in implementing the eELMIS. Furthermore, the authors used observations during the planning, preparedness, and response to the COVID-19 in Uganda (most of whom were actively involved and attended many of the meetings and participated in the epidemic response). The results are structured to capture adoption, implementation, and results of the use of the eELMIS during the COVID-19preparedness and response in Uganda.",
+      "20_hospitales": "all 20 Regional Referral Hospitals (RRH), i.e., Mulago, Butabika, Kawempe, Kiruddu, Lira, Mubende, Mbarara, Hoima, Kabale, Moroto, Soroti, Gulu, Masaka, Jinja, Entebbe, Bombo, Mbale, Naguru, Fort portal, and Arua were processed through the eELMIS, and",
+      "resultados": "Furthermore, 96.5% (1745) of the orders that came through the eELMIS have been served since the beginning of the response. In addition, 85.5% overall/aggregate order fulfilment rate was attained. Of all the orders that came through to the logistics sub-committee, 85.5% of the emergency supplies that were requested for",
+      "figura_2": "Fig. 2 Real time stock status data at National and Regional referral hospitals (user-units) in eELMIS. Source:",
+      "conclusion": "Availability of reliable, quality real-time data are essential for effective decision making during public health emergencies. The emergency Electronic Logistic Management Information Systems supported health authorities to mount coordinated and effective responses to ensure timely availability of commodities and supplies to support the COVID-19 pandemic response."
+    },
+    "hallazgo": "El artículo declara 20 Regional Referral Hospitals, 96.5% de pedidos atendidos y 85.5% de cumplimiento agregado. No contiene 90% ni 19 hospitales. Methods declara revisión de literatura, no estudio cuantitativo transversal. La referencia P2873 tiene el título equivocado; el cuerpo P0337 y la nota P0478 usan el título correcto."
+  },
+  "kigenza_2023": {
+    "id": "kigenza_2023",
+    "doi": "10.9745/GHSP-D-22-00295",
+    "url_doi": "https://doi.org/10.9745/GHSP-D-22-00295",
+    "pmcid": "PMC9972377",
+    "url_europepmc": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9972377/fullTextXML",
+    "fecha_acceso": "2026-10-22",
+    "titulo": "The Quality Management Improvement Approach: Successes and Lessons Learned From a Workforce Development Intervention in Rwanda's Health Supply Chain",
+    "revista": "Global Health: Science and Practice",
+    "volumen": "11",
+    "numero": "4",
+    "articulo": "e2200295",
+    "anio": 2023,
+    "extracto": "The intervention has contributed to major improvements in several key supply chain outcomes (2017 versus 2019): increased utilization of the e-LMIS (55% to 96%), higher inventory data accuracy (25% to 85%), and reduced stock-outs (10% to 1%).",
+    "estado": "VERIFICADO",
+    "hallazgo": "La cifra 25% a 85% corresponde a exactitud de los datos de inventario, no a disponibilidad. P0334 la describe correctamente como exactitud; no requiere corrección."
+  },
+  "ordenes": [
+    {
+      "id": "ORD-AIKEN-01",
+      "tipo": "insercion_referencia_nueva",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P2823",
+        "pagina_pdf": 135,
+        "posicion": "después de P2823 y antes de P2824"
+      },
+      "texto_original": "Addy, A. (2023). Artificial intelligence in the supply chain management for vaccine distribution in the West African healthcare sector with a focus on Ghana. International Journal of Legal Science and Innovation, 5(6), 1–25. https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana",
+      "reemplazo": "Addy, A. (2023). Artificial intelligence in the supply chain management for vaccine distribution in the West African healthcare sector with a focus on Ghana. International Journal of Legal Science and Innovation, 5(6), 1–25. https://ijlsi.com/article/view/artificial-intelligence-in-the-supply-chain-management-for-vaccine-distribution-in-the-west-african-healthcare-sector-with-a-focus-on-ghana\nAiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012",
+      "modo": "insertar un párrafo independiente; no concatenar la referencia al párrafo de Addy",
+      "texto_nuevo": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012",
+      "fuente": {
+        "doi": "10.1177/0013164485451012",
+        "url": "https://doi.org/10.1177/0013164485451012",
+        "titulo": "Three Coefficients for Analyzing the Reliability and Validity of Ratings",
+        "autores": "Aiken, Lewis R.",
+        "revista": "Educational and Psychological Measurement",
+        "volumen": "45",
+        "numero": "1",
+        "paginas": "131–142",
+        "anio": 1985,
+        "fecha_acceso": "2026-10-22"
+      },
+      "no_cambia": [
+        "fórmulas",
+        "métricas",
+        "escalas",
+        "criterio 0.80",
+        "dimensiones DEC-007"
+      ],
+      "validacion": "DOI registrado en Crossref; referencia APA 7 completa; posición alfabética Addy-Aiken-Alvarez."
+    },
+    {
+      "id": "ORD-TRI-01",
+      "tipo": "correccion_atribucion",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P0302",
+        "pagina_pdf": 23,
+        "seccion": "1.3.3 Justificación metodológica"
+      },
+      "texto_original": "(a) la validez de contenido, cuya estimación se realizará mediante juicio de tres expertos aplicando el modelo modificado por Tristán-López (2008, p. 38), del que se derivan el coeficiente V de Aiken y el Índice de Validez de Contenido (IVC), a los que esa fuente no asocia un umbral de aceptación de 0.80. Este estudio adopta de manera expresa el valor de 0.80 como criterio propio de aceptación para ambos coeficientes;",
+      "reemplazo": "(a) la validez de contenido por juicio de tres expertos, con el coeficiente V de Aiken (Aiken, 1985) y el Índice de Validez de Contenido (IVC) como medidas de acuerdo, y 0.80 como criterio de aceptación adoptado en este estudio; la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38);",
+      "fuente": {
+        "tristan": {
+          "url_pdf": "https://humanas.unal.edu.co/lab_psicometria/application/files/9716/0463/3548/VOL_6._Articulo4_Indice_de_validez_de_contenido_37-48.pdf",
+          "url_registro": "https://dialnet.unirioja.es/servlet/articulo?codigo=2981185",
+          "titulo": "Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo",
+          "paginas": "37-48",
+          "hallazgo": "El artículo modifica el CVR de Lawshe y define el IVC como media de los CVR'; no menciona Aiken y no deriva la V de Aiken. Se conserva la cita solo para la modificación de Lawshe/CVR, sin atribuirle la V."
+        },
+        "aiken": {
+          "doi": "10.1177/0013164485451012",
+          "url": "https://doi.org/10.1177/0013164485451012",
+          "referencia": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012"
+        }
+      },
+      "no_cambia": [
+        "fórmulas",
+        "métricas",
+        "escalas",
+        "criterio 0.80",
+        "dimensiones DEC-007"
+      ],
+      "validacion": "Conserva Tristán-López para la modificación de Lawshe/CVR; añade Aiken para la V; no atribuye la V a Tristán."
+    },
+    {
+      "id": "ORD-WAS-01",
+      "tipo": "correccion_integral_antecedente",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P0337",
+        "pagina_pdf": 30,
+        "seccion": "2.1 Antecedentes internacionales"
+      },
+      "texto_original": "Wasswa et al. (2023), en su estudio evaluativo titulado “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicado en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de vacunas e insumos sanitarios a escala nacional. La metodología fue cuantitativa, descriptiva y transversal, auditando las transacciones digitales de pedidos, despachos y saldos de almacén ejecutadas en la red pública del Ministerio de Salud de Uganda. Los resultados demostraron que el procesamiento digital de requisiciones y comprobantes de despacho permitió monitorear en tiempo real los lotes distribuidos y mantener una disponibilidad promedio del 90% en 19 hospitales regionales de referencia, reduciendo sustancialmente los tiempos de respuesta frente a los procedimientos manuales. El estudio concluyó que los sistemas web de gestión logística fortalecen la visibilidad de extremo a extremo en la cadena de frío, aseguran la concordancia entre las cantidades solicitadas y las despachadas, y previenen el desabastecimiento de productos biológicos.",
+      "reemplazo": "Wasswa et al. (2023), en su revisión titulada “Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda”, publicada en el Journal of Pharmaceutical Policy and Practice, se plantearon como objetivo analizar el desempeño del sistema electrónico de información de gestión logística para optimizar la distribución, trazabilidad y disponibilidad de suministros e insumos sanitarios durante la respuesta a la COVID-19 en Uganda. El estudio revisó literatura publicada y no publicada sobre la adopción e implementación del eELMIS durante la pandemia de COVID-19 y describió su operación en la red pública del Ministerio de Salud de Uganda. Los resultados documentaron el procesamiento digital de requisiciones y comprobantes de despacho para los 20 hospitales regionales de referencia, con 96.5% de pedidos atendidos y una tasa agregada de cumplimiento de pedidos del 85.5%, lo que favoreció la visibilidad de los suministros frente a los procedimientos manuales. El estudio concluyó que la disponibilidad de datos oportunos y confiables es esencial para la toma de decisiones y que el eELMIS apoyó la coordinación y la disponibilidad oportuna de suministros durante la respuesta a la COVID-19.",
+      "fuente": {
+        "doi": "10.1186/s40545-023-00517-4",
+        "url": "https://doi.org/10.1186/s40545-023-00517-4",
+        "titulo": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: lessons from COVID-19 response in Uganda",
+        "autores": [
+          "John Hans Wasswa",
+          "Henry Oundo",
+          "Martin Olowo Oteba",
+          "Henry Komakech",
+          "Irene Ochola",
+          "Sheila Mwebaze",
+          "Denis Okidi",
+          "Anthony Kirunda",
+          "Shamim Nakadde",
+          "Neville Okuna Oteba",
+          "Eric Lugada"
+        ],
+        "revista": "Journal of Pharmaceutical Policy and Practice",
+        "volumen": "16",
+        "numero": "1",
+        "articulo": "6",
+        "anio": 2023,
+        "fecha_acceso": "2026-10-22",
+        "extractos": {
+          "metodo": "Methods We reviewed published and unpublished literature regarding the adoption and implementation of an eELMIS during the COVID-19 preparedness and response in Uganda. Documents reviewed included journal articles, reports, and national guidelines. In addition, data were abstracted from the eELMIS database. To supplement the literature review and secondary data, we held interviews and discussions with stakeholders involved in implementing the eELMIS. Furthermore, the authors used observations during the planning, preparedness, and response to the COVID-19 in Uganda (most of whom were actively involved and attended many of the meetings and participated in the epidemic response). The results are structured to capture adoption, implementation, and results of the use of the eELMIS during the COVID-19preparedness and response in Uganda.",
+          "20_hospitales": "all 20 Regional Referral Hospitals (RRH), i.e., Mulago, Butabika, Kawempe, Kiruddu, Lira, Mubende, Mbarara, Hoima, Kabale, Moroto, Soroti, Gulu, Masaka, Jinja, Entebbe, Bombo, Mbale, Naguru, Fort portal, and Arua were processed through the eELMIS, and",
+          "resultados": "Furthermore, 96.5% (1745) of the orders that came through the eELMIS have been served since the beginning of the response. In addition, 85.5% overall/aggregate order fulfilment rate was attained. Of all the orders that came through to the logistics sub-committee, 85.5% of the emergency supplies that were requested for",
+          "figura_2": "Fig. 2 Real time stock status data at National and Regional referral hospitals (user-units) in eELMIS. Source:",
+          "conclusion": "Availability of reliable, quality real-time data are essential for effective decision making during public health emergencies. The emergency Electronic Logistic Management Information Systems supported health authorities to mount coordinated and effective responses to ensure timely availability of commodities and supplies to support the COVID-19 pandemic response."
+        }
+      },
+      "no_cambia": [
+        "cifras empíricas SIVAC",
+        "Tablas 49/50",
+        "datos/raw",
+        "datos/recolectados"
+      ],
+      "validacion": "Reemplaza la metodología no sostenida y las cifras 90%/19 por la caracterización de revisión y las métricas reales 96.5% pedidos atendidos y 85.5% cumplimiento agregado, con unidades explícitas."
+    },
+    {
+      "id": "ORD-WAS-02",
+      "tipo": "correccion_celda_tabla",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P0386",
+        "pagina_pdf": 35,
+        "tabla": "antecedentes"
+      },
+      "texto_original": "Cuantitativo, descriptivo y transversal (19 hospitales regionales)",
+      "reemplazo": "Revisión de literatura y análisis descriptivo (20 hospitales regionales de referencia)",
+      "fuente": {
+        "doi": "10.1186/s40545-023-00517-4",
+        "url": "https://doi.org/10.1186/s40545-023-00517-4",
+        "extracto_metodo": "Methods We reviewed published and unpublished literature regarding the adoption and implementation of an eELMIS during the COVID-19 preparedness and response in Uganda. Documents reviewed included journal articles, reports, and national guidelines. In addition, data were abstracted from the eELMIS database. To supplement the literature review and secondary data, we held interviews and discussions with stakeholders involved in implementing the eELMIS. Furthermore, the authors used observations during the planning, preparedness, and response to the COVID-19 in Uganda (most of whom were actively involved and attended many of the meetings and participated in the epidemic response). The results are structured to capture adoption, implementation, and results of the use of the eELMIS during the COVID-19preparedness and response in Uganda.",
+        "extracto_20": "all 20 Regional Referral Hospitals (RRH), i.e., Mulago, Butabika, Kawempe, Kiruddu, Lira, Mubende, Mbarara, Hoima, Kabale, Moroto, Soroti, Gulu, Masaka, Jinja, Entebbe, Bombo, Mbale, Naguru, Fort portal, and Arua were processed through the eELMIS, and"
+      },
+      "no_cambia": [
+        "estructura de la tabla",
+        "cifras SIVAC"
+      ],
+      "validacion": "Corrige el carácter metodológico y el número de hospitales; no introduce métricas nuevas."
+    },
+    {
+      "id": "ORD-WAS-03",
+      "tipo": "correccion_celda_tabla",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P0388",
+        "pagina_pdf": 35,
+        "tabla": "antecedentes"
+      },
+      "texto_original": "Disponibilidad promedio del 90% y concordancia en despachos regionales",
+      "reemplazo": "96.5% de pedidos atendidos y 85.5% de cumplimiento agregado de pedidos",
+      "fuente": {
+        "doi": "10.1186/s40545-023-00517-4",
+        "url": "https://doi.org/10.1186/s40545-023-00517-4",
+        "extracto_resultados": "Furthermore, 96.5% (1745) of the orders that came through the eELMIS have been served since the beginning of the response. In addition, 85.5% overall/aggregate order fulfilment rate was attained. Of all the orders that came through to the logistics sub-committee, 85.5% of the emergency supplies that were requested for"
+      },
+      "no_cambia": [
+        "estructura de la tabla",
+        "cifras SIVAC"
+      ],
+      "validacion": "No sustituye disponibilidad por cumplimiento: elimina la etiqueta 'disponibilidad' y conserva las dos métricas reales con su unidad."
+    },
+    {
+      "id": "ORD-WAS-04",
+      "tipo": "correccion_referencia",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P2873",
+        "pagina_pdf": 140,
+        "seccion": "Referencias"
+      },
+      "texto_original": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance the availability of essential medicines and health supplies in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+      "reemplazo": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+      "fuente": {
+        "doi": "10.1186/s40545-023-00517-4",
+        "url": "https://doi.org/10.1186/s40545-023-00517-4",
+        "titulo": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: lessons from COVID-19 response in Uganda",
+        "autores": [
+          "John Hans Wasswa",
+          "Henry Oundo",
+          "Martin Olowo Oteba",
+          "Henry Komakech",
+          "Irene Ochola",
+          "Sheila Mwebaze",
+          "Denis Okidi",
+          "Anthony Kirunda",
+          "Shamim Nakadde",
+          "Neville Okuna Oteba",
+          "Eric Lugada"
+        ],
+        "revista": "Journal of Pharmaceutical Policy and Practice",
+        "volumen": "16",
+        "articulo": "6",
+        "anio": 2023,
+        "fecha_acceso": "2026-10-22"
+      },
+      "no_cambia": [
+        "DOI",
+        "autores",
+        "revista",
+        "volumen",
+        "artículo"
+      ],
+      "validacion": "Corrige solo el título; los demás metadatos coinciden con Crossref."
+    },
+    {
+      "id": "ORD-WAS-05",
+      "tipo": "correccion_atribucion_y_cifras",
+      "prioridad": "obligatoria",
+      "ubicacion": {
+        "parrafo": "P0282",
+        "pagina_pdf": 18,
+        "seccion": "1.1 Descripción de la realidad problemática"
+      },
+      "texto_original": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y por Wasswa et al. (2023) en Uganda, quienes demostraron que la operación de sistemas electrónicos de gestión logística incrementó la exactitud de los inventarios del 25% al 85% y aseguró una disponibilidad promedio del 90% en hospitales regionales de referencia, mientras que en el contexto sudamericano",
+      "reemplazo": "En el mismo sentido, Kigenza et al. (2023) documentaron en Ruanda mejoras en la exactitud de los inventarios mediante la intervención de gestión de calidad apoyada en el e-LMIS, y Wasswa et al. (2023) documentaron en Uganda el uso de un sistema electrónico de gestión logística para procesar pedidos de insumos durante la respuesta a la COVID-19, mientras que en el contexto sudamericano",
+      "fuente": {
+        "wasswa": {
+          "doi": "10.1186/s40545-023-00517-4",
+          "url": "https://doi.org/10.1186/s40545-023-00517-4",
+          "titulo": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: lessons from COVID-19 response in Uganda"
+        },
+        "kigenza": {
+          "doi": "10.9745/GHSP-D-22-00295",
+          "url": "https://doi.org/10.9745/GHSP-D-22-00295",
+          "titulo": "The Quality Management Improvement Approach: Successes and Lessons Learned From a Workforce Development Intervention in Rwanda's Health Supply Chain",
+          "extracto": "The intervention has contributed to major improvements in several key supply chain outcomes (2017 versus 2019): increased utilization of the e-LMIS (55% to 96%), higher inventory data accuracy (25% to 85%), and reduced stock-outs (10% to 1%)."
+        }
+      },
+      "no_cambia": [
+        "cifras empíricas SIVAC",
+        "Tablas 49/50",
+        "datos/raw",
+        "datos/recolectados"
+      ],
+      "validacion": "Retira 90% y 19 hospitales del enunciado del problema; conserva la narrativa y deja la cuantificación verificada en el antecedente P0334/P0337 y en la tabla P0388."
+    }
+  ],
+  "verificaciones_sin_cambio": [
+    {
+      "id": "P0478",
+      "pagina_pdf": 46,
+      "tipo": "nota_de_figura_7",
+      "texto_actual": "Nota. Adaptado de «Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda» (p. 4), por J. Wasswa et al., 2023, Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+      "veredicto": "SIN_CAMBIO",
+      "motivo": "El título y el DOI coinciden con el artículo real. La página 4 no se revalidó en esta pasada y no se altera."
+    },
+    {
+      "id": "P0389",
+      "pagina_pdf": 35,
+      "tipo": "celda_de_tabla",
+      "texto_actual": "Aporta métricas de concordancia de entregas; SIVAC operacionaliza el indicador CPE por operador censal.",
+      "veredicto": "SIN_CAMBIO",
+      "motivo": "La métrica de cumplimiento de pedidos respalda la idea de concordancia de entregas; no se modifica."
+    },
+    {
+      "id": "P0334",
+      "pagina_pdf": 29,
+      "tipo": "antecedente_Kigenza",
+      "texto_actual": "Kigenza et al. (2023), en su estudio cuasiexperimental titulado “The Quality Management Improvement Approach: Successes and lessons learned from a workforce development intervention in Rwanda’s health supply chain”, publicado en la revista Global Health: Science and Practice, tuvieron como objetivo determinar el efecto de una intervención de gestión de calidad apoyada en el sistema electrónico de información de gestión logística (e-LMIS) sobre el desempeño de la cadena de suministro de salud pública en Ruanda. El diseño metodológico fue cuantitativo, longitudinal y de alcance nacional, evaluando una muestra de 596 establecimientos de salud, 30 almacenes distritales y 1,296 operadores logísticos mediante listas de verificación de inventarios y reportes transaccionales del sistema. Los resultados determinaron que la utilización estandarizada del sistema electrónico aumentó del 55% al 96%, la exactitud de los datos de inventario entre el saldo físico y el saldo digital se incrementó del 25% al 85%, y la tasa de desabastecimiento de insumos se redujo del 10% a menos del 1%. Los autores concluyeron que la integración del sistema informático e-LMIS con protocolos estandarizados de control de calidad asegura la consistencia documental de los inventarios y previene quiebres de stock en las redes de salud.",
+      "veredicto": "SIN_CAMBIO",
+      "motivo": "La cifra 25% a 85% está verificada en Kigenza et al. (2023) como exactitud de los datos de inventario, no como disponibilidad."
+    }
+  ],
+  "resumen": {
+    "ordenes": 7,
+    "nuevas_referencias": 1,
+    "referencia_nueva": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131–142. https://doi.org/10.1177/0013164485451012",
+    "correcciones_wasswa": [
+      "P0337",
+      "P0386",
+      "P0388",
+      "P2873",
+      "P0282"
+    ],
+    "correccion_tristan": [
+      "P0302"
+    ],
+    "sin_cambio": [
+      "P0478",
+      "P0389",
+      "P0334"
+    ],
+    "estado": "LISTO_PARA_APLICAR"
+  },
+  "dictamen": {
+    "general": "OBSERVADO_SUBSANABLE",
+    "detalle": "Correcciones bibliográficas listas para la v20; no se emite aprobación de jurado ni cierre empírico.",
+    "no_modifico_word": true,
+    "no_modifico_pdf": true,
+    "no_toco_datos_empiricos": true
+  }
+}

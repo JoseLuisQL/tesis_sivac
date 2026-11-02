@@ -1,0 +1,5 @@
+iteraciones -> {'cinco': 2, 'de': 2, 'por': 1, 'e': 1, 'Cinco': 1}
+puntos -> {'71': 2, '13': 1, '2': 1}
+hu -> {'15': 1}
+centros19 -> {'diecinueve': 8}
+centros13 -> {'trece': 12}

@@ -1,0 +1,722 @@
+{
+  "meta": {
+    "fecha": "2026-10-26",
+    "agente": "redactor-academico",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "estado": "propuesta_no_aplicada",
+    "documento_base": {
+      "ruta": "salidas/documentos/informe_final_v20.docx",
+      "sha256": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+      "paginas_pdf": 159,
+      "modo_de_lectura": "solo_lectura"
+    },
+    "fuente_de_anclas": "PDF_TEXTO_V20.json del directorio auditoria_integral_v20_20261022. Las anclas se normalizaron a espacio simple porque el volcado PDF introduce saltos de linea. El maquetador debe verificar cada ancla contra el texto real de los parrafos del DOCX y reportar cualquier discrepancia antes de aplicar.",
+    "correspondencia_pagina_folio": "pagina_pdf = folio_impreso + 15, verificada en la tabla de contenido y en el rotulo del Capitulo V.",
+    "instruccion_de_aplicacion": "Ninguna orden ha sido aplicada. El maquetador-docx es el unico escritor del DOCX y del motor. El mapa documental fue recibido el 2026-10-26 y fija el Anexo 6 para el desarrollo aplicado. Las ordenes de resultados quedan condicionadas a la auditoria estadistica pendiente. La renumeracion de campos SEQ, indices y referencias cruzadas la ejecuta el maquetador de forma automatica; no se solicita decision al tesista sobre ese punto.",
+    "advertencia_de_procedencia": "Los valores del Capitulo V corresponden a un conjunto de datos provisionales de prueba. No se redactan como hallazgos de campo, no se atribuyen causalmente al sistema y no sustituyen la auditoria estadistica pendiente.",
+    "garantias": [
+      "No se modifico el DOCX ni el motor.",
+      "No se introducen cifras, fuentes, autores, DOI ni paginas nuevas.",
+      "Se conservan las tres dimensiones y los seis indicadores de la variable dependiente.",
+      "Se conserva el diseno preexperimental con N = n = 14.",
+      "No se emplean rayas U+2014 ni codigos internos de gobernanza en el texto nuevo.",
+      "No se alteran tablas, figuras, ecuaciones, referencias ni instrumentos.",
+      "No se cita el referente Jhon 2026 ni se afirma comparacion estructural con el, porque el ejemplar disponible es una caratula de una pagina."
+    ]
+  },
+  "mapa_recibido": {
+    "ruta": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+    "agente": "analista-documental",
+    "fecha": "2026-10-26",
+    "estado": "recibido_y_utilizado",
+    "referente_fany_2024": {
+      "resultados": "PDF 54-63, 10 páginas; Tablas 3-14 y Figuras 6-10",
+      "discusion": "PDF 64-66, 3 páginas de prosa corrida, sin tablas ni figuras",
+      "anexo_xp": "PDF 84-90, 7 páginas; Anexo 4 con 4 fichas de historia de usuario y 2 diagramas",
+      "patron_de_concision": "Cada tabla o figura va seguida de un párrafo breve de interpretación; no se repiten en prosa todas las cifras ya tabuladas"
+    },
+    "referente_jhon_2026": {
+      "estado": "impedimento",
+      "hallazgo": "El PDF y el DOCX disponibles son una carátula sintética de una página que declara 223 páginas inexistentes en el espacio de trabajo",
+      "consecuencia": "No se extrajo estructura, tabla ni geometría. Prohibido citar o afirmar comparación con este referente."
+    },
+    "bloque_xp_aplicado_v20": {
+      "parrafos": "P328-P548 inclusive",
+      "pdf": "54-99",
+      "folios": "39-84",
+      "extension": "46 páginas; 26 tablas (Tabla 3 a Tabla 28) y 35 figuras (Figura 11 a Figura 45)",
+      "destino": "Anexo 6 existente, titulado ANEXO 6: DESARROLLO DE SOFTWARE SIVAC BAJO EXTREME PROGRAMMING"
+    },
+    "teoria_que_permanece": [
+      "3.1.1.3, párrafos 241-250, con las Figuras 3 y 4",
+      "3.2.8, párrafos 306-307"
+    ],
+    "referencias_cruzadas_externas": "Ninguna. Ningún párrafo posterior a P549 cita las Tablas 3-28 ni las Figuras 11-45; todas las menciones son internas al bloque.",
+    "consecuencias_para_la_redaccion": [
+      "La transición al desarrollo aplicado se redacta con la referencia expresa Anexo 6.",
+      "La sección 3.3 se elimina del marco teórico y su contenido se traslada íntegro, sin reescribirlo.",
+      "El fundamento teórico se limita a cuatro fases de XP; el despliegue se describe como etapa posterior y no como quinta fase.",
+      "No se adopta un total de historias de usuario entre los valores discrepantes 12, 10 y 15."
+    ]
+  },
+  "mapa_de_dimensiones": [
+    {
+      "dimension": "D1. Oportunidad de procesamiento",
+      "indicadores": ["T_reg", "T_vale"],
+      "objetivo_especifico": "OE1",
+      "seccion_descriptiva": "5.2.1",
+      "tabla_descriptiva": "Tabla 36",
+      "figura": "Figura 46",
+      "contraste": "5.4.1",
+      "tabla_inferencial": "Tabla 40"
+    },
+    {
+      "dimension": "D2. Consistencia documental",
+      "indicadores": ["RSD", "CPE"],
+      "objetivo_especifico": "OE2",
+      "seccion_descriptiva": "5.2.2",
+      "tabla_descriptiva": "Tabla 37",
+      "figura": "Figura 47",
+      "contraste": "5.4.2",
+      "tabla_inferencial": "Tabla 41"
+    },
+    {
+      "dimension": "D3. Satisfaccion del usuario",
+      "indicadores": ["AP", "UP"],
+      "objetivo_especifico": "OE3",
+      "seccion_descriptiva": "5.2.3",
+      "tabla_descriptiva": "Tabla 38",
+      "figura": "Figura 48",
+      "contraste": "5.4.3",
+      "tabla_inferencial": "Tabla 42"
+    },
+    {
+      "dimension": "Gestion global de movimientos de vacunas",
+      "indicadores": ["T_reg", "T_vale", "RSD", "CPE", "AP", "UP"],
+      "objetivo_especifico": "OG",
+      "seccion_descriptiva": "5.2.1 a 5.2.3",
+      "tabla_descriptiva": "Tablas 36 a 38",
+      "figura": "Figuras 46 a 48",
+      "contraste": "5.4.4",
+      "tabla_inferencial": "Tabla 43"
+    }
+  ],
+  "diagnostico_de_sobrecarga": [
+    "5.2.1: la narracion repite media, desviacion estandar, mediana, rango intercuartilico y extremos que ya figuran en la Tabla 36; la nota de la Figura 46 repite la interpretacion de reduccion. Se conservan solo las dos medias y las variaciones.",
+    "5.2.2: la narracion repite todos los descriptivos de la Tabla 37 y la nota de la Figura 47 repite el incremento. Se conservan solo las dos medias y las variaciones.",
+    "5.2.3: la narracion repite todos los descriptivos de la Tabla 38 y agrega la frase sobre el transito de categoria de satisfaccion, que no esta acreditada. Se conservan solo las medias y el puntaje global.",
+    "5.3: enumera los siete pares de estadistico W y valor p que ya estan en la Tabla 39. Se sustituye por una remision a la tabla y una frase de decision.",
+    "5.4.1 a 5.4.3: los incisos A, B y C expanden la hipotesis, repiten todos los estadisticos y vuelven a decidir con los mismos valores p. Se reemplazan por dos parrafos compactos: planteamiento y resultados con la decision.",
+    "5.4.4: el inciso C repite los tamanos del efecto y agrega porcentajes de impacto no acreditados. Se reemplaza por una decision conjunta condicionada.",
+    "Tabla 43: la columna de impacto operativo afirma reducciones superiores al 80 por ciento, exactitud superior al 95 por ciento e incremento superior al 100 por ciento. Se propone un texto neutro y una nota de procedencia.",
+    "5.1: el parrafo interpretativo sobre los intervalos de confianza afirma precision y captura de la percepcion. Se condensa y se condiciona.",
+    "5.2 introductorio: enumera los trece centros de acopio en prosa. Se propone conservar la cifra y remitir el detalle al expediente técnico. El mapa documental no asigna un anexo para esa lista, por lo que la supresión requiere confirmación del tesista.",
+    "Tecnicismos: Kardex, FEFO, PMMV, TAM y Holm-Bonferroni reaparecen con su definición o con paráfrasis en varias subsecciones del capítulo. Se propone conservar la definición en la primera mención y usar la sigla en las siguientes, sin alterar el contenido técnico."
+  ],
+  "reglas_de_procedencia": [
+    "Toda cifra del Capitulo V se lee como valor del conjunto de prueba, no como medicion de campo.",
+    "No usar los verbos evidenciar, demostrar ni concluir que el sistema reduce o mejora en la narracion descriptiva.",
+    "No atribuir causalidad al sistema.",
+    "Conservar la advertencia inicial del capitulo y ampliarla con la frase de no atribucion.",
+    "Anadir a las notas de las Tablas 36, 37, 38, 40, 41, 42 y 43 la frase: Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo.",
+    "Anadir a las notas de las Figuras 46, 47 y 48 la misma salvedad de procedencia.",
+    "Mantener las seis medidas de los indicadores y el puntaje global TAM; no eliminar indicadores ni dimensiones.",
+    "No seleccionar entre la prueba t y la prueba de Wilcoxon por el valor p; reportar ambas como complementarias.",
+    "No introducir cifras, fuentes, autores ni paginas nuevas.",
+    "El Anexo 6 conserva las cifras del bloque aplicado tal como están. No se normaliza el conteo de historias de usuario ni se completa ningún dato faltante.",
+    "No se cita el referente Jhon 2026 ni se afirma que la estructura del informe siga su modelo, porque el ejemplar disponible es una carátula de una página."
+  ],
+  "bloque_a_fundamento_xp": {
+    "seccion": "3.1.1.3. Metodología de desarrollo ágil Extreme Programming (XP)",
+    "paginas_pdf": "40-42",
+    "folios": "25-27",
+    "criterio": "Conservar entre dos y cuatro párrafos de fundamento conceptual. Retirar toda referencia al desarrollo aplicado de SIVAC, a sus artefactos, a sus historias de usuario, a su código y a sus capturas. Mantener las Figuras 3 y 4 por ser diagramas genéricos de XP y no capturas de la implementación.",
+    "ordenes": [
+      {
+        "id": "XP-01",
+        "tipo": "reemplazo_de_parrafo",
+        "ubicacion": {
+          "parrafo": "primer párrafo de 3.1.1.3, inmediatamente después del rótulo de la sección",
+          "pagina_pdf": 40,
+          "folio": 25,
+          "seccion": "3.1.1.3"
+        },
+        "ancla_corta": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida",
+        "texto_original": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida para equipos de desarrollo pequeños y medianos que enfrentan requerimientos dinámicos o sujetos a cambios normativos recurrentes (Beck, 1999, p. 70). A diferencia del modelo lineal en cascada y de los ciclos iterativos convencionales de larga duración, XP acorta radicalmente los bucles de retroalimentación técnica y funcional, integrando el análisis, el diseño, la codificación y las pruebas dentro de iteraciones breves con entregas continuas de software operativo (Beck, 1999, p. 71; Sommerville, 2016, p. 57) (véase la Figura 3). En este ámbito, Kokol (2022) comprobó en una revisión sistemática de alcance sobre desarrollo ágil en el sector sanitario que las metodologías ágiles entregan soluciones de software médico con mayor rapidez y superior calidad técnica que los enfoques en cascada, adaptándose rigurosamente a marcos regulatorios exigentes y resultando idóneas para afrontar requerimientos críticos y cambiantes como los vinculados a la logística y distribución de vacunas.",
+        "reemplazo": "Extreme Programming (XP) es una metodología ágil de ingeniería de software diseñada para equipos pequeños y medianos que trabajan con requerimientos cambiantes o sujetos a ajustes normativos frecuentes (Beck, 1999, p. 70). A diferencia del modelo lineal en cascada y de los ciclos iterativos de larga duración, XP reduce los bucles de retroalimentación técnica y funcional, de modo que el análisis, el diseño, la codificación y las pruebas se integran en iteraciones breves con entregas frecuentes de software operativo (Beck, 1999, p. 71; Sommerville, 2016, p. 57) (véase la Figura 3). Kokol (2022), en una revisión sistemática de alcance sobre desarrollo ágil en el sector sanitario, reportó que los enfoques ágiles permiten entregar software médico con mayor rapidez y calidad técnica que los modelos en cascada, además de adaptarse a marcos regulatorios exigentes. Esa condición resulta pertinente para dominios en los que los requerimientos deben ajustarse a normas sanitarias y a procesos operativos sujetos a variación.",
+        "motivo": "Se conserva la definición y la ventaja de XP frente al modelo en cascada con las mismas fuentes y páginas. Se elimina la referencia expresa a la logística de vacunas, que anticipa el objeto aplicado y confunde el fundamento teórico con el desarrollo del sistema. Se sustituye el verbo comprobó por reportó para no atribuir a la revisión de Kokol (2022) una conclusión causal que el diseño de ese estudio no permite.",
+        "fuente_apoyo": "Beck (1999), DOI 10.1109/2.796139, @beck1999; Sommerville (2016), @sommerville2016; Kokol (2022), DOI 10.3390/app12199462, @kokol2022agile.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "XP-02",
+        "tipo": "reemplazo_de_parrafo",
+        "ubicacion": {
+          "parrafo": "segundo párrafo de 3.1.1.3, antes de la Figura 4",
+          "pagina_pdf": 41,
+          "folio": 26,
+          "seccion": "3.1.1.3"
+        },
+        "ancla_corta": "El proceso disciplinar de XP se articula en cuatro fases metodológicas",
+        "texto_original": "El proceso disciplinar de XP se articula en cuatro fases metodológicas interdependientes: planeación, diseño, codificación y pruebas (Pressman, 2010, p. 61). La fase de planeación inicia con la captura de requerimientos mediante historias de usuario redactadas en el lenguaje del dominio operativo, las cuales son estimadas en puntos de esfuerzo y priorizadas junto al cliente en el sitio para conformar el plan de entregas (Cohn, 2004, p. vii). La fase de diseño aplica el principio de simplicidad estructural, apoyándose en tarjetas CRC y prototipos operativos; la fase de codificación incorpora la refactorización continua y la integración permanente; y la fase de pruebas verifica cada incremento mediante pruebas unitarias automatizadas y pruebas de aceptación validadas por los usuarios finales (Pressman, 2010, p. 62) (véase la Figura 4).",
+        "reemplazo": "El proceso disciplinar de XP se organiza en cuatro fases interdependientes: planeación, diseño, codificación y pruebas (Pressman, 2010, p. 61). La planeación captura los requerimientos como historias de usuario redactadas en el lenguaje del dominio, las estima en puntos de esfuerzo y las prioriza con el cliente en el sitio para construir el plan de entregas (Cohn, 2004, p. vii). El diseño privilegia la simplicidad estructural y se apoya en tarjetas CRC y prototipos; la codificación incorpora la refactorización continua y la integración permanente; y las pruebas verifican cada incremento mediante pruebas unitarias automatizadas y pruebas de aceptación validadas por los usuarios finales (Pressman, 2010, p. 62) (véase la Figura 4). A estas fases se suman prácticas de trabajo que sostienen la calidad del incremento, como la programación en parejas, la integración continua y la propiedad colectiva del código (Beck, 1999). El despliegue en producción constituye una etapa posterior del proyecto y no una quinta fase de la metodología.",
+        "motivo": "Se precisa el nombre de las cuatro fases y se agrega una síntesis de prácticas nucleares de XP. La adición no introduce cifras ni páginas nuevas y se apoya en la fuente primaria ya verificada. Se explicita que el despliegue es una etapa posterior del proyecto y no una quinta fase, en coherencia con las cuatro fases que reportan las fuentes. Se elimina el adjetivo operativo aplicado a los prototipos para no sugerir artefactos de SIVAC.",
+        "fuente_apoyo": "Pressman (2010), @pressman2010; Cohn (2004), ISBN 978-0-321-20568-1, @cohn2004; Beck (1999), @beck1999.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "XP-03",
+        "tipo": "reemplazo_de_parrafo",
+        "ubicacion": {
+          "parrafo": "tercer párrafo de 3.1.1.3, inmediatamente antes del rótulo 3.1.1.4",
+          "pagina_pdf": 41,
+          "folio": 26,
+          "seccion": "3.1.1.3"
+        },
+        "ancla_corta": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas)",
+        "texto_original": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas) constituyen el marco procedimental de la ingeniería de software que asegura la construcción reproducible de la intervención tecnológica y se diferencian de las dimensiones analíticas de la variable dependiente evaluada en la investigación.",
+        "reemplazo": "Las cuatro fases de XP conforman el marco procedimental que asegura la construcción reproducible de la intervención tecnológica y se mantienen separadas de las dimensiones analíticas de la variable dependiente evaluada en la investigación. El desarrollo aplicado de esta metodología en el sistema SIVAC, junto con sus artefactos de planificación, diseño, codificación y pruebas, y con la etapa posterior de despliegue, se presenta de forma íntegra en el Anexo 6. En esta sección se conserva únicamente el fundamento conceptual que sustenta la elección metodológica y su articulación con las dimensiones evaluadas.",
+        "motivo": "El mapa documental fija el Anexo 6, de modo que la transición se redacta con esa referencia y no con una expresión provisional. Se conserva la distinción entre el marco procedimental y las dimensiones de la variable dependiente, y se remite el desarrollo aplicado al anexo para evitar la duplicación con las secciones 3.1.1.3 y 3.2.8, que permanecen en el cuerpo.",
+        "fuente_apoyo": "No requiere fuente adicional; preserva el contenido del párrafo original.",
+        "riesgo_de_aplicacion": "bajo"
+      }
+    ]
+  },
+  "bloque_a_transicion_anexo": {
+    "id": "E-01",
+    "tipo": "orden_estructural",
+    "requiere_confirmacion_tesista": false,
+    "autorizacion": "Reestructuración v22 autorizada por el tesista y registrada en DEC-029. El mapa documental fija el destino.",
+    "descripcion": "Trasladar el bloque completo de desarrollo aplicado de XP, párrafos P328 a P548, al Anexo 6 existente, conservando íntegramente su contenido, sus tablas y sus figuras. Eliminar la sección 3.3 del marco teórico. No se suprime ningún resultado ni artefacto histórico.",
+    "destino": {
+      "rotulo": "ANEXO 6: DESARROLLO DE SOFTWARE SIVAC BAJO EXTREME PROGRAMMING",
+      "estado": "anexo existente en el documento base; se amplía con el bloque trasladado y los complementos de la fuente",
+      "columna_vertebral": "Las cuatro fases del bloque en su orden original (Planificación, Diseño, Codificación y Pruebas) y, a continuación, la sección de Despliegue como etapa posterior del proyecto. El despliegue no se rotula como quinta fase de XP."
+    },
+    "delimitacion_exacta": {
+      "inicio": "rótulo 3.3. Metodología de Desarrollo de Software Extreme Programming (XP), párrafo P328, página 54 del PDF, folio 39",
+      "fin": "último párrafo de 3.3.5.1, párrafo P548, antes del rótulo CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN, página 99 del PDF, folio 84",
+      "subsecciones_incluidas": ["3.3.1 Planificación", "3.3.2 Diseño", "3.3.3 Codificación", "3.3.4 Pruebas", "3.3.5 Despliegue"],
+      "elementos_incluidos": "26 tablas (Tabla 3 a Tabla 28) y 35 figuras (Figura 11 a Figura 45), más los rótulos y las notas internos del bloque. El bloque no contiene ecuaciones OMML."
+    },
+    "complementos_desde_la_fuente": {
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "modo": "Injertar solo los elementos ausentes en v20; no duplicar los que ya existen.",
+      "elementos": [
+        "Cinco fichas individuales de historia de usuario (Tablas 5-9 del documento XP)",
+        "Tabla ENUM de estados (Tabla 11 del documento XP)",
+        "Tabla de relaciones con ON DELETE (Tabla 15 del documento XP)",
+        "Tabla de pruebas de API (Tabla 18 del documento XP)",
+        "Matriz completa de roles de 17 filas en lugar de la versión reducida de 5 filas"
+      ],
+      "sustituciones": [
+        "Reemplazar la Tabla 51 del Anexo 6 actual por la tabla de historias de usuario del bloque trasladado",
+        "Conservar el stack tecnológico y los quince diccionarios de datos de v20",
+        "No duplicar las Figuras 11-45: el bloque trasladado ya contiene todas las imágenes del documento XP"
+      ],
+      "verificacion_de_medios": "Los 35 archivos de imagen del documento XP ya existen en v20. Cero pérdida de imágenes al integrar."
+    },
+    "instrucciones_de_aplicacion": [
+      "Trasladar el bloque P328-P548 al Anexo 6 existente, después de su rótulo, y retirarlo del Capítulo III.",
+      "Conservar literalmente los títulos internos de las cinco secciones y sus subsecciones, adaptando solo la jerarquía al esquema del anexo.",
+      "Injertar los complementos de la fuente XP antes de cerrar el anexo, según la lista anterior.",
+      "Conservar el orden y el contenido de las tablas y figuras del bloque. No reescribir sus notas.",
+      "Aplicar la renumeración continua con series SEQ independientes para el cuerpo y para el anexo. La ejecución es automática del maquetador y no requiere decisión del tesista.",
+      "Actualizar los tres índices, los 214 campos PAGEREF, los 103 campos SEQ, los 103 rótulos y los folios posteriores al bloque. Verificar que las Tablas 36-43 y las Figuras 46-48 del Capítulo V conserven su número.",
+      "Verificar que no queden llamadas huérfanas: el mapa confirma que ningún párrafo posterior a P549 cita las Tablas 3-28 ni las Figuras 11-45."
+    ],
+    "tratamiento_de_historias_de_usuario": "Los conteos discrepan: 12 en el catálogo del documento XP, 10 en su tabla de iteraciones y 15 en v20. Se conservan las cifras tal como aparecen en cada artefacto. No se adopta un total, no se completa el faltante y no se propone reconciliación. El punto queda marcado para verificación del tesista.",
+    "motivo": "La decisión editorial vigente dispone que en las bases teóricas permanezca solo el fundamento citado de XP y que el desarrollo aplicado se presente en el anexo completo. El mapa documental identifica el Anexo 6 como destino existente, confirma que no hay referencias cruzadas externas al bloque y cuantifica los campos que deben actualizarse.",
+    "riesgo_de_aplicacion": "alto",
+    "riesgo_detalle": "El bloque contiene 26 tablas y 35 figuras. Si el motor renumera por campos SEQ sin series independientes, las Tablas 36-43 y las Figuras 46-48 del Capítulo V cambiarían de número y se romperían las referencias del texto. La operación debe ejecutarse con series de numeración separadas. La renumeración es automática y no se escala al tesista.",
+    "fuente_apoyo": "DEC-029; comparacion_modelos_y_mapa_xp.json; SIVAC_Desarrollo_Software_XP.docx."
+  },
+  "bloque_b_resultados": {
+    "seccion": "CAPÍTULO V: RESULTADOS",
+    "paginas_pdf": "117-130",
+    "folios": "102-115",
+    "criterio": "Reducir la duplicación entre narración, tabla y figura. Cada salida se presenta una sola vez: la tabla concentra los descriptivos y la figura los ilustra; la prosa conserva solo las medias y las variaciones, con remisión a la tabla y a la figura. El patrón se toma del referente Fany 2024, donde cada tabla o figura va seguida de un párrafo breve que no repite las cifras tabuladas. Toda cifra se condiciona por su procedencia de datos de prueba. No se elimina ninguna tabla, figura, contraste ni resultado.",
+    "meta_de_extension": "El mapa propone 8-9 páginas frente a las 14 actuales, en línea con las 10 páginas de resultados de Fany 2024. Es una meta editorial, no una instrucción de recorte de contenido.",
+    "ordenes": [
+      {
+        "id": "RES-00",
+        "tipo": "reemplazo_de_parrafo",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "párrafo único de la advertencia metodológica, después del rótulo del capítulo",
+          "pagina_pdf": 117,
+          "folio": 102,
+          "seccion": "Advertencia metodológica y salvaguarda deontológica"
+        },
+        "ancla_corta": "En estricta observancia del principio de probidad científica",
+        "texto_original": "En estricta observancia del principio de probidad científica y de transparencia cuantitativa, se hace constar que los resultados, las matrices descriptivas, las pruebas de normalidad, los contrastes de hipótesis y las figuras presentados en este capítulo corresponden a un conjunto de datos provisionales de prueba. Dichos valores deben sustituirse por los registros definitivos que se recolecten en el trabajo de campo en la Dirección de Salud Apurímac II antes de la sustentación de la tesis. La arquitectura bioestadística implementada permite reejecutar íntegramente las tablas y las figuras una vez incorporadas las mediciones definitivas, sin necesidad de rehacer el análisis.",
+        "reemplazo": "En estricta observancia del principio de probidad científica y de transparencia cuantitativa, se hace constar que los resultados, las matrices descriptivas, las pruebas de normalidad, los contrastes de hipótesis y las figuras presentados en este capítulo corresponden a un conjunto de datos provisionales de prueba. Dichos valores deben sustituirse por los registros definitivos que se recolecten en el trabajo de campo en la Dirección de Salud Apurímac II antes de la sustentación de la tesis. Por su carácter provisional, estos valores no acreditan mediciones de campo ni permiten atribuir al sistema web SIVAC una relación causal sobre las variaciones observadas. La arquitectura bioestadística implementada permite reejecutar íntegramente las tablas y las figuras una vez incorporadas las mediciones definitivas, sin necesidad de rehacer el análisis.",
+        "motivo": "Se conserva la advertencia y se agrega una frase que impide leer los valores como mediciones de campo o como evidencia causal. Es la salvaguarda que condiciona todas las órdenes siguientes.",
+        "fuente_apoyo": "DEC-029 y estado vigente del proyecto.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "RES-01",
+        "tipo": "reemplazo_de_fragmento",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "párrafo final de 5.1, antes de la Tabla 35",
+          "pagina_pdf": 118,
+          "folio": 103,
+          "seccion": "5.1"
+        },
+        "ancla_corta": "Los coeficientes observados superan el umbral psicométrico de .800",
+        "texto_original": "Los coeficientes observados superan el umbral psicométrico de .800 exigido por la literatura científica (George y Mallery, 2003; Hernández-Sampieri y Mendoza, 2018), categorizándose como de nivel 'Bueno' en las dimensiones específicas y de nivel 'Excelente' en el constructo general. Asimismo, la amplitud contenida de los intervalos de confianza de Feldt ratifica la precisión de la estimación sobre la población censal de 14 trabajadores de la Dirección de Salud Apurímac II, evidenciando que los reactivos capturan de manera coherente, robusta y reproducible la percepción del personal sanitario respecto a la operatividad del sistema de información. En la Tabla 35 se consolidan los coeficientes psicométricos obtenidos.",
+        "reemplazo": "Los coeficientes observados superan el umbral psicométrico de .800 exigido por la literatura científica (George y Mallery, 2003; Hernández-Sampieri y Mendoza, 2018), por lo que se clasifican como buenos en las dimensiones específicas y excelentes en el constructo general. La amplitud de los intervalos de confianza de Feldt permite valorar la precisión de la estimación en la población censal de 14 trabajadores de la Dirección de Salud Apurímac II. Estos coeficientes describen el comportamiento del conjunto de prueba y deberán confirmarse con las mediciones definitivas. En la Tabla 35 se consolidan los coeficientes psicométricos obtenidos.",
+        "motivo": "Se elimina la afirmación de que los reactivos capturan de manera robusta y reproducible la percepción del personal, que excede lo que un alfa de Cronbach sobre datos de prueba permite sostener. Se conservan los coeficientes y la referencia a la tabla.",
+        "fuente_apoyo": "George y Mallery (2003); Hernández-Sampieri y Mendoza (2018); Feldt (1965), ya citados en el original.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "RES-02",
+        "tipo": "reemplazo_de_fragmento",
+        "requiere_confirmacion_tesista": true,
+        "ubicacion": {
+          "parrafo": "segundo párrafo de 5.2, continuación de la página 104",
+          "pagina_pdf": 119,
+          "folio": 104,
+          "seccion": "5.2"
+        },
+        "ancla_corta": "distribuidos en trece (13) centros de acopio de la DISA Apurímac II",
+        "texto_original": "se llevó a cabo sobre la totalidad de la población censal de n = 14 operadores de inmunizaciones, distribuidos en trece (13) centros de acopio de la DISA Apurímac II (Almacén Especializado de Vacunas de la Red Chanka, Hospital Andahuaylas, Hospital ESSALUD, C.S. Andahuaylas, C.S. Talavera, C.S. San Jerónimo, C.S. Huancaray, C.S. Chicmo, C.S. Huancabamba, C.S. Pampachiri, C.S. San Antonio de Cachi, C.S. Turpo y C.S. Kishuara).",
+        "reemplazo": "se llevó a cabo sobre la totalidad de la población censal de n = 14 operadores de inmunizaciones, distribuidos en trece (13) centros de acopio de la DISA Apurímac II.",
+        "motivo": "La enumeración de los trece establecimientos interrumpe la lectura y no aporta información necesaria para interpretar los resultados. Se propone retirarla del cuerpo y conservarla en el expediente técnico o en el anexo de centros de acopio que fije el mapa documental. La orden requiere confirmación porque implica mover un dato descriptivo de la población, no eliminarlo.",
+        "fuente_apoyo": "Ninguna adicional; el dato se conserva en el expediente.",
+        "riesgo_de_aplicacion": "medio",
+        "nota": "Si el tesista prefiere conservar la enumeración, se mantiene el texto original y se omite esta orden."
+      },
+      {
+        "id": "RES-03",
+        "tipo": "reemplazo_de_parrafo",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "párrafo único de 5.2.1, antes de la Tabla 36",
+          "pagina_pdf": 119,
+          "folio": 104,
+          "seccion": "5.2.1"
+        },
+        "ancla_corta": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados",
+        "texto_original": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados evidenciaron una reducción temporal significativa. El tiempo promedio de registro de movimientos mensuales (T_reg) disminuyó de 37.18 minutos (DE = 3.83; Mdn = 36.75; RIC = 5.50) en el pretest a tan solo 7.18 minutos (DE = 1.05; Mdn = 7.00; RIC = 1.38) en el postest, lo que representa una contracción del tiempo operativo de digitación del 80.69%, con un ahorro medio neto de 30.00 minutos por operación. De forma concordante, el tiempo de emisión de comprobantes de salida o vales mensuales (T_vale) experimentó un descenso sustancial de 18.21 minutos (DE = 2.87; Mdn = 17.75) a 3.04 minutos (DE = 0.60; Mdn = 3.00), lográndose una optimización del 83.33%, equivalente a un recorte de 15.18 minutos por documento. La dispersión de los datos disminuyó de manera notable en el postest, denotando una estandarización homogénea en los tiempos de respuesta institucional. En la Tabla 36 y en la Figura 46 se detallan estas distribuciones temporales emparejadas.",
+        "reemplazo": "En la Dimensión 1 (Oportunidad de procesamiento), el tiempo medio de registro de movimientos mensuales (T_reg) pasó de 37.18 minutos en el pretest a 7.18 minutos en el postest, con una variación de −80.69%. El tiempo medio de emisión de comprobantes de salida o vales mensuales (T_vale) descendió de 18.21 a 3.04 minutos, equivalente a una variación de −83.33%. La dispersión de ambas medidas también disminuyó en el postest. Estos valores corresponden al conjunto de prueba y describen el comportamiento de los indicadores, sin atribuir al sistema una relación causal. La distribución completa, incluidas la mediana, el rango intercuartílico y los extremos, se presenta en la Tabla 36 y en la Figura 46.",
+        "motivo": "Se retiran de la prosa la desviación estándar, la mediana, el rango intercuartílico y los extremos, que ya figuran en la Tabla 36. Se conservan las dos medias y las dos variaciones. Se elimina la lectura de estandarización homogénea y se condiciona la procedencia.",
+        "fuente_apoyo": "Tabla 36 del documento base. No se introducen cifras nuevas.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "RES-04",
+        "tipo": "reemplazo_de_nota_de_figura",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "nota de la Figura 46",
+          "pagina_pdf": 120,
+          "folio": 105,
+          "seccion": "5.2.1"
+        },
+        "ancla_corta": "Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Gráficos de cajas pareados",
+        "texto_original": "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Gráficos de cajas pareados que ilustran la reducción drástica de tiempos operativos tras la implementación de SIVAC (n = 14).",
+        "reemplazo": "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Diagramas de cajas pareados de los tiempos de registro y de emisión de vales (n = 14). Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo.",
+        "motivo": "Se retira la interpretación de reducción drástica y la atribución a la implementación. La nota debe describir la figura y declarar la procedencia.",
+        "fuente_apoyo": "Figura 46 del documento base.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "RES-05",
+        "tipo": "reemplazo_de_rango_de_parrafos",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "dos párrafos de 5.2.2, entre el rótulo y la Tabla 37; el primero cierra en la página 105 y el segundo abre en la página 106",
+          "pagina_pdf": "120-121",
+          "folio": "105-106",
+          "seccion": "5.2.2"
+        },
+        "ancla_corta": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC",
+        "texto_original_referencial": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación sustancial en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8.88%) a un promedio postest de 96.00% (DE = 2.23%; Mdn = 96.25%; RIC = 2.75%), lo que refleja una ganancia relativa neta del +51.01% (diferencia media absoluta de +32.43 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos evidencian que la automatización del Kardex bajo la regla FEFO se asocia con una reducción de las inconsistencias documentales y de las discrepancias entre existencias físicas y registros.",
+        "ancla_inicio": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación sustancial en la exactitud y fiabilidad de la información sanitaria.",
+        "ancla_fin": "Estos hallazgos evidencian que la automatización del Kardex bajo la regla FEFO se asocia con una reducción de las inconsistencias documentales y de las discrepancias entre existencias físicas y registros.",
+        "reemplazo": "En la Dimensión 2 (Consistencia documental), el porcentaje medio de registros sin discrepancias (RSD), auditado a partir de ocho criterios de consistencia física y lógica en el Kardex, se incrementó de 63.57% en el pretest a 96.00% en el postest, con una variación de +51.01%. La concordancia entre cantidad programada y entregada (CPE) aumentó de 67.61% a 95.39%, con una variación de +41.10%. Estos valores corresponden al conjunto de prueba y describen el comportamiento de los indicadores, sin atribuir al sistema una relación causal. La distribución completa, incluidas la mediana, el rango intercuartílico y los extremos, se presenta en la Tabla 37 y en la Figura 47.",
+        "motivo": "Se condensan dos párrafos en uno, se retiran los descriptivos duplicados de la Tabla 37 y se elimina la afirmación de que la automatización se asocia con reducción de inconsistencias, que no puede sostenerse con datos de prueba. Se conservan ambas medias y ambas variaciones.",
+        "fuente_apoyo": "Tabla 37 del documento base.",
+        "riesgo_de_aplicacion": "medio",
+        "nota": "El maquetador debe reemplazar el rango completo y conservar un solo párrafo con la misma clase de estilo del cuerpo."
+      },
+      {
+        "id": "RES-06",
+        "tipo": "reemplazo_de_nota_de_figura",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "nota de la Figura 47",
+          "pagina_pdf": 122,
+          "folio": 107,
+          "seccion": "5.2.2"
+        },
+        "ancla_corta": "Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Incremento sustancial",
+        "texto_original": "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Incremento sustancial en los porcentajes de registros sin discrepancias y concordancia programada vs entregada (n = 14).",
+        "reemplazo": "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Gráfico de barras e intervalos de confianza de los indicadores de consistencia documental (n = 14). Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo.",
+        "motivo": "Se sustituye la valoración de incremento sustancial por una descripción neutral y se declara la procedencia.",
+        "fuente_apoyo": "Figura 47 del documento base.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "RES-07",
+        "tipo": "reemplazo_de_parrafo",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "párrafo único de 5.2.3, antes de la Tabla 38",
+          "pagina_pdf": 122,
+          "folio": 107,
+          "seccion": "5.2.3"
+        },
+        "ancla_corta": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el",
+        "texto_original": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el modelo TAM evidenció un cambio sustancial en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 17.71 puntos (DE = 1.64; Mdn = 17.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual del +119.47% (diferencia media de +9.64 puntos). En la subescala de Utilidad Percibida (UP), la valoración promedio aumentó de 9.00 puntos (DE = 1.88; Mdn = 8.00) a 18.50 puntos (DE = 1.56; Mdn = 19.00), representando un progreso del +105.56% (+9.50 puntos). Finalmente, el Puntaje Global TAM (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 36.21 puntos (DE = 3.09; Mdn = 36.50), lo que supone una elevación global del +112.13%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 38 y en la Figura 48 se presenta el comportamiento descriptivo de estas mediciones.",
+        "reemplazo": "En la Dimensión 3 (Satisfacción del usuario), la Aceptación del Proceso (AP) pasó de 8.07 puntos en el pretest a 17.71 puntos en el postest, con una variación de +119.47%. La Utilidad Percibida (UP) aumentó de 9.00 a 18.50 puntos, con una variación de +105.56%. El puntaje global TAM evolucionó de 17.07 a 36.21 puntos, con una variación de +112.13%. Estos valores corresponden al conjunto de prueba y describen el comportamiento de los indicadores, sin atribuir al sistema una relación causal ni afirmar un cambio de categoría diagnóstica. La distribución completa, incluidas la mediana, el rango intercuartílico y los extremos, se presenta en la Tabla 38 y en la Figura 48.",
+        "motivo": "Se retiran las desviaciones estándar y medianas duplicadas de la Tabla 38. Se elimina la afirmación de tránsito desde satisfacción baja hacia satisfacción alta, que constituye una interpretación no acreditada por el conjunto de prueba. Se conservan las tres medias y las tres variaciones.",
+        "fuente_apoyo": "Tabla 38 del documento base.",
+        "riesgo_de_aplicacion": "bajo"
+      },
+      {
+        "id": "RES-08",
+        "tipo": "reemplazo_de_nota_de_figura",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "nota de la Figura 48",
+          "pagina_pdf": 123,
+          "folio": 108,
+          "seccion": "5.2.3"
+        },
+        "ancla_corta": "Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Elevación significativa",
+        "texto_original": "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Elevación significativa en aceptación del proceso y utilidad percibida (n = 14).",
+        "reemplazo": "Nota. Salida bioestadística generada con Python (Matplotlib) a 300 DPI. Comparación de los puntajes del Modelo de Aceptación Tecnológica (TAM) entre pretest y postest (n = 14). Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo.",
+        "motivo": "Se sustituye la valoración de elevación significativa por una descripción neutral y se declara la procedencia.",
+        "fuente_apoyo": "Figura 48 del documento base.",
+        "riesgo_de_aplicacion": "bajo"
+      }
+    ]
+  },
+  "bloque_b_contrastes": {
+    "seccion": "5.3 y 5.4",
+    "paginas_pdf": "124-130",
+    "folios": "109-115",
+    "criterio": "Sustituir los incisos A, B y C por párrafos compactos de planteamiento, resultados y decisión. Conservar todos los estadísticos, grados de libertad, tamaños del efecto y valores p. No elegir entre la prueba t y la prueba de Wilcoxon por el valor p: ambas se reportan como complementarias.",
+    "ordenes": [
+      {
+        "id": "RES-09",
+        "tipo": "reemplazo_de_rango_de_parrafos",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "desde la frase introductoria de la lista de Shapiro-Wilk hasta el párrafo previo a la Tabla 39",
+          "pagina_pdf": 124,
+          "folio": 109,
+          "seccion": "5.3"
+        },
+        "ancla_corta": "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales",
+        "texto_original_referencial": "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (n = 14): 1. Tiempo de registro (T_reg): W = 0.979, p = .966 (p > .05). 2. Tiempo de emisión de vales (T_vale): W = 0.933, p = .331 (p > .05). 3. Registros sin discrepancias (RSD): W = 0.958, p = .696 (p > .05). 4. Concordancia programada vs entregada (CPE): W = 0.953, p = .614 (p > .05). 5. Aceptación del proceso (AP): W = 0.909, p = .153 (p > .05). 6. Utilidad percibida (UP): W = 0.876, p = .052 (p > .05). 7. Puntaje global TAM: W = 0.955, p = .646 (p > .05). Puesto que en todos los indicadores evaluados los valores p computados superan el nivel de significancia prefijado de α = .05, no se rechaza la hipótesis nula de normalidad. Se concluye que las diferencias pareadas pretest-postest no se apartan de manera significativa del supuesto de normalidad, lo que habilita el uso de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13. Adicionalmente, y atendiendo a un principio de probidad bioestadística y robustez ante la naturaleza censal (n = 14) y el escalamiento ordinal de origen en los reactivos Likert, se procedió a reportar en paralelo la prueba no paramétrica de Rangos con Signo de Wilcoxon (Wilcoxon, 1945), confirmando que las conclusiones inferenciales exhiben total invariancia metodológica. La Tabla 39 resume las decisiones sobre la bondad de ajuste de normalidad.",
+        "ancla_inicio": "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (n = 14):",
+        "ancla_fin": "La Tabla 39 resume las decisiones sobre la bondad de ajuste de normalidad.",
+        "reemplazo": "Los estadísticos de la prueba de Shapiro-Wilk para los siete indicadores se presentan en la Tabla 39. En todos los casos, los valores p superan el nivel de significancia prefijado de α = .05, por lo que no se rechaza la hipótesis nula de normalidad. Esa decisión habilita el uso de la prueba t de Student para muestras emparejadas con grados de libertad gl = 13. De forma complementaria, y ante la naturaleza censal de la muestra y el escalamiento ordinal de los reactivos Likert, se reporta en paralelo la prueba de rangos con signo de Wilcoxon (Wilcoxon, 1945). La Tabla 39 resume las decisiones sobre la bondad de ajuste.",
+        "motivo": "Se elimina la enumeración de los siete pares de W y p, que ya figuran en la Tabla 39. Se retira la afirmación de invariancia metodológica total, que no se deriva de la prueba de normalidad. Se conserva la decisión distribucional y el fundamento de reportar ambas pruebas.",
+        "fuente_apoyo": "Tabla 39 del documento base; Shapiro y Wilk (1965); Wilcoxon (1945).",
+        "riesgo_de_aplicacion": "medio",
+        "nota": "El maquetador debe eliminar la lista numerada completa y el párrafo de cierre, y dejar un solo párrafo narrativo con estilo de cuerpo."
+      },
+      {
+        "id": "RES-10",
+        "tipo": "reemplazo_de_bloque",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "bloque completo de 5.4.1, desde el inciso A hasta el párrafo que cierra con la llamada a la Tabla 40",
+          "pagina_pdf": "125-126",
+          "folio": "110-111",
+          "seccion": "5.4.1"
+        },
+        "ancla_inicio": "A. Planteamiento de hipótesis estadísticas:",
+        "ancla_fin": "reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 40).",
+        "reemplazo": [
+          "La hipótesis específica 1 postula que la aplicación del sistema web SIVAC reduce los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II. Para T_reg, la prueba t de Student pareada reportó t(13) = −38.944 y p < .001, con d de Cohen de −10.41; la prueba de Wilcoxon reportó W = 0.0, Z = −3.30, p = .001 y r de Rosenthal de 0.881. Para T_vale, la prueba t reportó t(13) = −24.509 y p < .001, con d de Cohen de −6.55; Wilcoxon reportó W = 0.0, Z = −3.30, p = .001 y r de Rosenthal de 0.881. Los valores p ajustados por Holm-Bonferroni de las pruebas t se mantuvieron por debajo de .001 en ambos indicadores.",
+          "Con ambos contrastes y con los valores p ajustados inferiores a α = .05, se rechaza la hipótesis nula y se acepta la hipótesis alterna. La decisión se limita al conjunto de prueba analizado y no constituye una demostración de efecto causal. El detalle de los estadísticos se presenta en la Tabla 40."
+        ],
+        "motivo": "Se eliminan los incisos A, B y C y la lista de hipótesis. Se conserva el planteamiento en prosa, se reportan ambas pruebas con sus estadísticos y se formula la decisión sin atribuir causalidad. Se reduce la repetición de los mismos valores en el texto y en la tabla.",
+        "fuente_apoyo": "Tabla 40 del documento base.",
+        "riesgo_de_aplicacion": "medio",
+        "nota": "El maquetador debe eliminar los rótulos A, B y C y las viñetas, y conservar dos párrafos de cuerpo."
+      },
+      {
+        "id": "RES-11",
+        "tipo": "reemplazo_de_bloque",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "bloque completo de 5.4.2, desde el inciso A hasta el párrafo que cierra con la llamada a la Tabla 41",
+          "pagina_pdf": "127-128",
+          "folio": "112-113",
+          "seccion": "5.4.2"
+        },
+        "ancla_inicio": "A. Planteamiento de hipótesis estadísticas:",
+        "ancla_fin": "asegurando la fidelidad de los suministros entregados (Tabla 41).",
+        "reemplazo": [
+          "La hipótesis específica 2 postula que la aplicación del sistema web SIVAC mejora la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II. Para los registros sin discrepancias (RSD), la prueba t de Student pareada reportó t(13) = 26.628 y p < .001, con d de Cohen de 7.12; la prueba de Wilcoxon reportó W = 0.0, Z = −3.30, p = .001 y r de Rosenthal de 0.881. Para la concordancia programada versus entregada (CPE), la prueba t reportó t(13) = 28.147 y p < .001, con d de Cohen de 7.52; Wilcoxon reportó W = 0.0, Z = −3.30, p = .001 y r de Rosenthal de 0.881. Los valores p ajustados por Holm-Bonferroni de las pruebas t se mantuvieron por debajo de .001 en ambos indicadores.",
+          "Con ambos contrastes y con los valores p ajustados inferiores a α = .05, se rechaza la hipótesis nula y se acepta la hipótesis alterna. La decisión se limita al conjunto de prueba analizado y no permite afirmar que el sistema reduzca los errores de digitación ni que asegure la fidelidad de los suministros. El detalle de los estadísticos se presenta en la Tabla 41."
+        ],
+        "motivo": "Se eliminan los incisos y la lista de hipótesis, se conservan ambos contrastes con sus estadísticos y se retira la afirmación de que el sistema reduce errores o asegura fidelidad, que excede la evidencia del conjunto de prueba.",
+        "fuente_apoyo": "Tabla 41 del documento base.",
+        "riesgo_de_aplicacion": "medio"
+      },
+      {
+        "id": "RES-12",
+        "tipo": "reemplazo_de_bloque",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "bloque completo de 5.4.3, desde el inciso A hasta el párrafo que cierra con la llamada a la Tabla 42",
+          "pagina_pdf": "128-129",
+          "folio": "113-114",
+          "seccion": "5.4.3"
+        },
+        "ancla_inicio": "A. Planteamiento de hipótesis estadísticas:",
+        "ancla_fin": "la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 42).",
+        "reemplazo": [
+          "La hipótesis específica 3 postula que la aplicación del sistema web SIVAC incrementa la satisfacción del usuario en sus indicadores de Aceptación del Proceso (AP) y Utilidad Percibida (UP). Para AP, la prueba t de Student pareada reportó t(13) = 33.352 y p < .001, con d de Cohen de 8.91; la prueba de Wilcoxon reportó W = 0.0, Z = −3.30, p = .001 y r de Rosenthal de 0.881. Para UP, la prueba t reportó t(13) = 34.881 y p < .001, con d de Cohen de 9.32; Wilcoxon reportó W = 0.0, Z = −3.30, p = .001 y r de Rosenthal de 0.881. El puntaje global TAM presentó t(13) = 44.477 y p < .001, con d de Cohen de 11.89, y Wilcoxon W = 0.0, Z = −3.30, p = .001. Los valores p ajustados por Holm-Bonferroni se mantuvieron por debajo de .001.",
+          "Con los contrastes individuales y el contraste global con valores p ajustados inferiores a α = .05, se rechaza la hipótesis nula y se acepta la hipótesis alterna. La decisión se limita al conjunto de prueba analizado. El detalle de los estadísticos se presenta en la Tabla 42."
+        ],
+        "motivo": "Se eliminan los incisos y la lista de hipótesis, se conservan los tres contrastes con sus estadísticos y se evita presentar el resultado como elevación efectiva de la aceptación tecnológica.",
+        "fuente_apoyo": "Tabla 42 del documento base.",
+        "riesgo_de_aplicacion": "medio"
+      },
+      {
+        "id": "RES-13",
+        "tipo": "reemplazo_de_bloque",
+        "requiere_confirmacion_tesista": false,
+        "ubicacion": {
+          "parrafo": "bloque completo de 5.4.4, desde el inciso A hasta el párrafo que cierra con la llamada a la Tabla 43",
+          "pagina_pdf": "129-130",
+          "folio": "114-115",
+          "seccion": "5.4.4"
+        },
+        "ancla_inicio": "A. Planteamiento de hipótesis estadísticas:",
+        "ancla_fin": "se presenta el balance consolidado de la decisión inferencial multivariada.",
+        "reemplazo": [
+          "La hipótesis general postula que la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. La regla de decisión conjuntiva establece que la hipótesis general se acepta si y solo si se rechazan simultáneamente las tres hipótesis nulas específicas con un nivel de significancia ajustado inferior a .05.",
+          "Al haberse rechazado las tres hipótesis nulas específicas con valores p ajustados inferiores a .001, se rechaza la hipótesis nula general y se acepta la hipótesis alterna general. La decisión se limita al conjunto de prueba analizado y no autoriza a afirmar una mejora efectiva en la gestión ni a cuantificar un impacto operativo. El balance consolidado se presenta en la Tabla 43."
+        ],
+        "motivo": "Se eliminan los incisos A, B y C y se retiran los porcentajes de impacto no acreditados (reducción superior al 80%, exactitud superior al 95%, incremento superior al 100%). Se conserva la regla conjuntiva y la decisión estadística.",
+        "fuente_apoyo": "Tabla 43 del documento base.",
+        "riesgo_de_aplicacion": "medio"
+      }
+    ]
+  },
+  "bloque_b_tablas_y_notas": {
+    "criterio": "Las notas de tabla y figura deben declarar la procedencia provisional de los valores. No se alteran las celdas numéricas ni la estructura de tres líneas. Solo se sustituyen leyendas verbales no acreditadas y se anexa la salvedad de procedencia.",
+    "ordenes": [
+      {
+        "id": "RES-14",
+        "tipo": "intervencion_tabla",
+        "requiere_confirmacion_tesista": false,
+        "tabla": "Tabla 43",
+        "ubicacion": {
+          "pagina_pdf": 130,
+          "folio": 115,
+          "seccion": "5.4.4"
+        },
+        "encabezado": {
+          "texto_original": "Impacto operativo",
+          "reemplazo": "Síntesis de la decisión"
+        },
+        "celdas": [
+          {
+            "texto_original": "Reducción > 80% en tiempos operativos",
+            "reemplazo": "Diferencia descriptiva en los tiempos de registro y emisión"
+          },
+          {
+            "texto_original": "Exactitud documental superior al 95%",
+            "reemplazo": "Diferencia descriptiva en los indicadores de consistencia"
+          },
+          {
+            "texto_original": "Incremento > 100% en aceptación y utilidad",
+            "reemplazo": "Diferencia descriptiva en los indicadores de satisfacción"
+          },
+          {
+            "texto_original": "Mejora integral multidimensional significativa",
+            "reemplazo": "Rechazo conjunto de las tres hipótesis nulas específicas"
+          }
+        ],
+        "nota": {
+          "modo": "anexo_al_final",
+          "texto_a_anexar": " Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo ni un impacto operativo."
+        },
+        "motivo": "Se sustituyen las afirmaciones de impacto por descripciones de la decisión estadística. Se renombra el encabezado para que sea coherente con el nuevo contenido. No se modifican los valores p, los estadísticos ni la estructura de la tabla.",
+        "fuente_apoyo": "Tabla 43 del documento base.",
+        "riesgo_de_aplicacion": "medio",
+        "nota_tecnica": "La sustitución debe hacerse celda por celda con el motor de tablas, preservando el formato APA 7 de tres líneas y la fuente de 10 pt."
+      },
+      {
+        "id": "RES-15",
+        "tipo": "intervencion_de_notas",
+        "requiere_confirmacion_tesista": false,
+        "intervenciones": [
+          {
+            "tabla": "Tabla 36",
+            "modo": "anexo_al_final",
+            "texto_a_anexar": " Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo."
+          },
+          {
+            "tabla": "Tabla 37",
+            "modo": "anexo_al_final",
+            "texto_a_anexar": " Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo."
+          },
+          {
+            "tabla": "Tabla 38",
+            "modo": "anexo_al_final",
+            "texto_a_anexar": " Los valores corresponden a datos provisionales de prueba y no acreditan mediciones de campo."
+          },
+          {
+            "tabla": "Tabla 39",
+            "modo": "anexo_al_final",
+            "texto_a_anexar": " Los valores corresponden a datos provisionales de prueba."
+          },
+          {
+            "tabla": "Tabla 40",
+            "modo": "anexo_al_final",
+            "texto_a_anexar": " Los valores corresponden a datos provisionales de prueba."
+          },
+          {
+            "tabla": "Tabla 41",
+            "modo": "reemplazo_de_fragmento",
+            "texto_original": "Nota. Nivel de significancia α = .05. El incremento en consistencia documental es estadísticamente significativo bajo ambas pruebas inferenciales. P-valores ajustados con corrección Holm-Bonferroni reducen el riesgo de inflación de falsos positivos en los contrastes múltiples. Elaboración propia. Grados de libertad gl = n − 1 = 13.",
+            "reemplazo": "Nota. Nivel de significancia α = .05. Los contrastes se reportan bajo ambas pruebas inferenciales. P-valores ajustados con corrección Holm-Bonferroni reducen el riesgo de inflación de falsos positivos en los contrastes múltiples. Elaboración propia. Grados de libertad gl = n − 1 = 13. Los valores corresponden a datos provisionales de prueba."
+          },
+          {
+            "tabla": "Tabla 42",
+            "modo": "reemplazo_de_fragmento",
+            "texto_original": "Nota. Evaluado con la Modalidad A del Instrumento 03. gl = 13. Nivel de significancia α = .05. El tamaño del efecto (|d| > 8.0 y r ≥ 0.50) refleja un impacto masivo y positivo en la satisfacción tecnológica y operativa de los usuarios de inmunizaciones. Elaboración propia.",
+            "reemplazo": "Nota. Evaluado con la Modalidad A del Instrumento 03. gl = 13. Nivel de significancia α = .05. El tamaño del efecto (|d| > 8.0 y r ≥ 0.50) se reporta como magnitud descriptiva del conjunto de prueba. Elaboración propia. Los valores corresponden a datos provisionales de prueba."
+          }
+        ],
+        "motivo": "Se agrega la salvedad de procedencia a las notas que solo identificaban la fuente. En las Tablas 41 y 42 se sustituyen las valoraciones de significación e impacto por descripciones neutrales.",
+        "fuente_apoyo": "Notas de las Tablas 36 a 42 del documento base.",
+        "riesgo_de_aplicacion": "bajo",
+        "nota_tecnica": "Editar el párrafo de nota con el motor, conservando Times New Roman 10 pt, interlineado sencillo y el prefijo Nota. en cursiva."
+      }
+    ]
+  },
+  "sintesis_por_objetivo": [
+    {
+      "objetivo": "OE1",
+      "dimension": "D1. Oportunidad de procesamiento",
+      "cuerpo_conciso": "Conservar en 5.2.1 solo las medias de T_reg y T_vale y sus variaciones. La mediana, el rango intercuartílico y los extremos quedan en la Tabla 36. La Figura 46 ilustra sin repetir la interpretación. El contraste de 5.4.1 reporta t y Wilcoxon con sus estadísticos y remite a la Tabla 40.",
+      "ordenes": ["RES-03", "RES-04", "RES-10"]
+    },
+    {
+      "objetivo": "OE2",
+      "dimension": "D2. Consistencia documental",
+      "cuerpo_conciso": "Conservar en 5.2.2 solo las medias de RSD y CPE y sus variaciones. Los descriptivos completos quedan en la Tabla 37. La Figura 47 ilustra sin valorar el incremento. El contraste de 5.4.2 reporta t y Wilcoxon y remite a la Tabla 41.",
+      "ordenes": ["RES-05", "RES-06", "RES-11"]
+    },
+    {
+      "objetivo": "OE3",
+      "dimension": "D3. Satisfacción del usuario",
+      "cuerpo_conciso": "Conservar en 5.2.3 solo las medias de AP, UP y puntaje global TAM con sus variaciones. Se elimina la afirmación de cambio de categoría diagnóstica. Los descriptivos completos quedan en la Tabla 38 y la Figura 48 ilustra. El contraste de 5.4.3 reporta t y Wilcoxon y remite a la Tabla 42.",
+      "ordenes": ["RES-07", "RES-08", "RES-12"]
+    },
+    {
+      "objetivo": "OG",
+      "dimension": "Gestión global de movimientos de vacunas",
+      "cuerpo_conciso": "La decisión conjunta de 5.4.4 se limita al rechazo simultáneo de las tres hipótesis nulas específicas. No se cuantifica un impacto operativo ni se afirma una mejora efectiva. La Tabla 43 resume la decisión con leyendas neutrales y nota de procedencia.",
+      "ordenes": ["RES-13", "RES-14"]
+    }
+  ],
+  "insumos_faltantes": [
+    {
+      "insumo": "Auditoría de procedencia y cálculos del analista estadístico",
+      "ruta_esperada": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/",
+      "estado": "pendiente",
+      "impacto": "Impide validar los estadísticos, los valores p ajustados y la decisión de reportar t y Wilcoxon en paralelo. Las órdenes de resultados quedan condicionadas a esa auditoría."
+    },
+    {
+      "insumo": "Definición del conteo oficial de historias de usuario y del formato de sus fichas",
+      "ruta_esperada": "no aplica",
+      "estado": "pendiente de verificación del tesista",
+      "impacto": "Los conteos discrepan entre 12, 10 y 15. No se adopta un total ni se inventa una reconciliación. Tampoco se fija si las fichas se maquetan como tarjeta con bordes o como tabla de tres líneas."
+    },
+    {
+      "insumo": "Confirmación del tesista para suprimir la enumeración de los trece centros de acopio",
+      "ruta_esperada": "no aplica",
+      "estado": "pendiente",
+      "impacto": "La enumeración es un dato descriptivo de la población. Su retiro del cuerpo requiere aprobación expresa; el dato se conserva en el expediente técnico."
+    }
+  ],
+  "insumos_resueltos": [
+    {
+      "insumo": "Mapa documental de los modelos y del bloque XP",
+      "ruta": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+      "consecuencia": "Fija el Anexo 6, delimita el bloque P328-P548 y confirma que no existen referencias cruzadas externas."
+    },
+    {
+      "insumo": "Inventario y brechas de SIVAC_Desarrollo_Software_XP.docx",
+      "ruta": "incluido en comparacion_modelos_y_mapa_xp.json",
+      "consecuencia": "Permite injertar los cinco complementos sin duplicar tablas ni perder imágenes."
+    },
+    {
+      "insumo": "Mapa de referencias cruzadas a las Tablas 3-28 y Figuras 11-45",
+      "ruta": "incluido en comparacion_modelos_y_mapa_xp.json",
+      "consecuencia": "No hay llamadas externas al bloque; el traslado no deja referencias huérfanas."
+    }
+  ],
+  "fuentes_verificadas": [
+    {
+      "citekey": "@beck1999",
+      "referencia": "Beck, K. (1999). Embracing change with extreme programming. Computer, 32(10), 70-77.",
+      "identificador": "DOI 10.1109/2.796139",
+      "uso": "Definición de XP, iteraciones breves y prácticas nucleares."
+    },
+    {
+      "citekey": "@cohn2004",
+      "referencia": "Cohn, M. (2004). User stories applied: For agile software development. Addison-Wesley.",
+      "identificador": "ISBN 978-0-321-20568-1",
+      "uso": "Historias de usuario y planificación con el cliente en el sitio."
+    },
+    {
+      "citekey": "@pressman2010",
+      "referencia": "Pressman, R. S. (2010). Ingeniería del software: Un enfoque práctico (7.ª ed.). McGraw-Hill Interamericana.",
+      "identificador": "Obra registrada en el catálogo maestro de fuentes",
+      "uso": "Cuatro fases de XP y prácticas de diseño, codificación y pruebas."
+    },
+    {
+      "citekey": "@sommerville2016",
+      "referencia": "Sommerville, I. (2016). Ingeniería de software (10.ª ed.). Pearson.",
+      "identificador": "Obra registrada en el catálogo maestro de fuentes",
+      "uso": "Contraste de XP con los ciclos iterativos convencionales."
+    },
+    {
+      "citekey": "@kokol2022agile",
+      "referencia": "Kokol, P. (2022). Agile software development in healthcare: A systematic scoping review. Applied Sciences, 12(19), 9462.",
+      "identificador": "DOI 10.3390/app12199462",
+      "uso": "Evidencia sobre agilidad y calidad en software sanitario."
+    }
+  ],
+  "fuentes_excluidas": [
+    {
+      "referencia": "Beck, K. y Andres, C. (2004). Extreme programming explained: Embrace change (2.ª ed.). Addison-Wesley.",
+      "motivo": "No figura en el catálogo maestro de fuentes ni cuenta con DOI o URL primaria comprobada en esta sesión. No se cita."
+    }
+  ],
+  "advertencias_de_verificacion": [
+    "Las páginas 61-62 de Pressman (2010) y la página vii de Cohn (2004) provienen del texto v20 y no se reabrieron en esta sesión; el verificador-integridad debe confirmarlas contra los PDF.",
+    "La frase sobre programación en parejas, integración continua y propiedad colectiva del código se apoya en Beck (1999) sin página, por tratarse de una paráfrasis.",
+    "No se dispuso de las herramientas Skill ni del MCP Zotero en esta sesión; la verificación se apoyó en el catálogo maestro y en las citas ya presentes en v20.",
+    "No se ejecutaron revisor_prosa.py ni buscador_citas.py por ausencia de intérprete.",
+    "El referente Jhon 2026 disponible es una carátula de una página. No se cita ni se afirma comparación estructural con él.",
+    "El conteo de historias de usuario discrepa entre 12 (catálogo del documento XP), 10 (tabla de iteraciones) y 15 (v20). No se elige un total ni se propone reconciliación; queda [VERIFICAR] para el tesista."
+  ],
+  "no_alterado": [
+    "No se modificó el DOCX ni el motor de maquetación.",
+    "No se modificaron los archivos de referencias, los modelos UNAJMA, la fuente XP, el código de syncova ni los datos.",
+    "No se alteraron las tres dimensiones ni los seis indicadores de la variable dependiente.",
+    "No se alteró el diseño preexperimental con N = n = 14.",
+    "No se eliminaron tablas, figuras, ecuaciones, contrastes ni resultados históricos.",
+    "No se publicó ningún documento en servicios externos.",
+    "No se generó ningún artefacto Markdown fuera del vault."
+  ]
+}

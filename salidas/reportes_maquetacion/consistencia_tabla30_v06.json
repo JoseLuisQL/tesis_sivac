@@ -1,0 +1,139 @@
+{
+  "diagnostico": {
+    "centros_institucionales": 19,
+    "centros_censales": 13,
+    "operadores": 14,
+    "justificacion": "El ámbito institucional y la muestra censal son dos universos distintos y no intercambiables. El JSON centros_acopio_reales_sivac.json registra 19 centros de acopio: 4 de la red SEDE CENTRAL DISA (ALMACÉN CHANKA, Hospital Andahuaylas, Hospital ESSALUD Andahuaylas y Centro de Salud Andahuaylas) y 15 de las redes Andahuaylas-Chincheros (Andarapa, Huancaray, San Antonio de Cachi, Chaccrampa, Turpo, Pampachiri, San Jerónimo, Umamarca, Huancabamba, Kishuara, Matapuquio, Kaquiabamba, Pacucha, Talavera y Chicmo). Las bases pretest_campo.csv y posttest_campo.csv contienen exactamente 14 sujetos (TRAB-01 a TRAB-14), distribuidos en 13 centros distintos: 2 en ALMACÉN (CHANKA) y 1 en cada uno de los 12 restantes, que suman 2 + 12 = 14. La Tabla 30 vigente es falsa en sus 8 filas: atribuye 4 operadores al Almacén, 2 a Andahuaylas, Talavera y San Jerónimo, e incorpora Huancarama, Chincheros y Uripa/Ocobamba, que no existen como centro de acopio ni en el JSON ni en las bases, a la vez que omite ocho centros reales. La reconstrucción debe conservar la fila 0 de encabezado, reemplazar las filas 1 a 8, insertar cinco filas nuevas (posiciones 9 a 13, clonando el formato de las filas de datos) y mantener la fila Total al final. El orden propuesto reproduce la enumeración ya fijada en el párrafo 654 del Capítulo V, lo que garantiza correspondencia biunívoca entre tabla y prosa. Aritmética porcentual: 2/14 = 14.2857 % y 1/14 = 7.1429 %; redondeados a dos decimales, 14.29 % + 12 x 7.14 % = 99.97 %. Doce cuotas idénticas no pueden redondearse a valores distintos sin falsear la frecuencia, por lo que se conserva 7.14 % en las doce filas y el Total consigna el 100.00 % exacto; la nota de la tabla debe declarar el residuo de 0.03 puntos porcentuales por redondeo. La denominación de la fila 1 corresponde a ALMACÉN (CHANKA) en las bases de campo y a Almacén Especializado de Vacunas de la Red Chanka en el párrafo 654."
+  },
+  "filas_propuestas": [
+    {
+      "centro": "Almacén Especializado de Vacunas (Chanka)",
+      "funcion": "Administración del almacén central y distribución a redes",
+      "personal": 2,
+      "porcentaje": "14.29 %"
+    },
+    {
+      "centro": "Hospital Andahuaylas",
+      "funcion": "Almacenamiento y control de existencias de vacunas",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Hospital ESSALUD Andahuaylas",
+      "funcion": "Almacenamiento y control de existencias de vacunas",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Centro de Salud Andahuaylas",
+      "funcion": "Almacenamiento y control de existencias de vacunas",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Talavera",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Talavera",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "San Jerónimo",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred San Jerónimo",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Huancaray",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Huancaray",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Chicmo",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Chicmo",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Huancabamba",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Huancabamba",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Pampachiri",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Pampachiri",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "San Antonio de Cachi",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Huancaray",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Turpo",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Turpo",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Kishuara",
+      "funcion": "Almacenamiento y despacho de biológicos en la microred Kishuara",
+      "personal": 1,
+      "porcentaje": "7.14 %"
+    },
+    {
+      "centro": "Total",
+      "funcion": "Población y Muestra Censal (N = n = 14)",
+      "personal": 14,
+      "porcentaje": "100.00 %"
+    }
+  ],
+  "sustituciones": [
+    {
+      "indice_docx": 149,
+      "ubicacion": "PARRAFO 149",
+      "ancla_original": "Previo a la intervención tecnológica ejecutada en el presente estudio, la administración de movimientos mensuales de vacunas en la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), cuya jurisdicción comprende las provincias de Andahuaylas y Chincheros a través de diecinueve centros de acopio (el almacén especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud), operaba mediante procedimientos manuales basados en libros físicos de kardex, formatos impresos de requisición y hojas de cálculo aisladas sin conexión en red. Esta dependencia del soporte en papel ocasionaba tiempos prolongados en el asentamiento de transacciones y en la emisión de vales de salida (equivalentes institucionalmente a comprobantes de salida o entrega), frecuentes discrepancias aritméticas y de codificación entre los saldos registrados y las existencias físicas en refrigeración, así como una pronunciada sobrecarga operativa e insatisfacción en los trabajadores responsables de la cadena de frío.",
+      "texto_nuevo": "Previo a la intervención tecnológica ejecutada en el presente estudio, la administración de movimientos mensuales de vacunas en la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), cuya jurisdicción comprende las provincias de Andahuaylas y Chincheros a través de diecinueve centros de acopio registrados (cuatro establecimientos de la sede central, entre ellos el almacén especializado, y quince centros de acopio de las redes y microredes de salud de ambas provincias), de los cuales trece cuentan con operadores incluidos en la muestra censal, operaba mediante procedimientos manuales basados en libros físicos de kardex, formatos impresos de requisición y hojas de cálculo aisladas sin conexión en red. Esta dependencia del soporte en papel ocasionaba tiempos prolongados en el asentamiento de transacciones y en la emisión de vales de salida (equivalentes institucionalmente a comprobantes de salida o entrega), frecuentes discrepancias aritméticas y de codificación entre los saldos registrados y las existencias físicas en refrigeración, así como una pronunciada sobrecarga operativa e insatisfacción en los trabajadores responsables de la cadena de frío.",
+      "justificacion": "Se conserva diecinueve porque es el ámbito jurisdiccional registrado en el sistema, pero se repara la enumeración interna: la fórmula vigente (almacén especializado más centros vinculados a las redes) solo justificaba 1 + 15 = 16 centros y omitía los dos hospitales y el centro de salud de la sede central. Se explicita 4 + 15 = 19 y se distingue de los 13 centros con operadores censales."
+    },
+    {
+      "indice_docx": 151,
+      "ubicacion": "PARRAFO 151",
+      "ancla_original": "Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel explicativo, empleando un diseño preexperimental con pre-test y post-test en un solo grupo (GE: O₁ – X – O₂). Se trabajó con una población censal conformada por la totalidad de los 14 operadores de la cadena de inmunizaciones de la DISA Apurímac II (N = n = 14), integrada por dos operadores del Almacén Especializado de la sede central y doce responsables de los centros de acopio de las redes de salud. Para la recolección de datos empíricos se diseñaron tres instrumentos: una ficha de observación de tiempos cronometrados, una guía de cotejo documental de kardex y vales de salida, y un cuestionario psicométrico en escala Likert, los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme al procedimiento descrito en el Capítulo IV, contemplando la prueba de Shapiro-Wilk para el análisis de normalidad y la prueba de rangos con signo de Wilcoxon (α = 0.05) para la contrastación de hipótesis.",
+      "texto_nuevo": "Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel explicativo, empleando un diseño preexperimental con pre-test y post-test en un solo grupo (GE: O₁ – X – O₂). Se trabajó con una población censal conformada por la totalidad de los 14 operadores de la cadena de inmunizaciones de la DISA Apurímac II (N = n = 14): dos operadores del Almacén Especializado de Vacunas (Chanka) y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado. Para la recolección de datos empíricos se diseñaron tres instrumentos: una ficha de observación de tiempos cronometrados, una guía de cotejo documental de kardex y vales de salida, y un cuestionario psicométrico en escala Likert, los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme al procedimiento descrito en el Capítulo IV, contemplando la prueba de Shapiro-Wilk para el análisis de normalidad y la prueba de rangos con signo de Wilcoxon (α = 0.05) para la contrastación de hipótesis.",
+      "justificacion": "La fórmula dos más doce es correcta en el total, pero atribuía los doce operadores restantes a centros de las redes de salud cuando tres de ellos (Hospital Andahuaylas, Hospital ESSALUD y Centro de Salud Andahuaylas) pertenecen a la red SEDE CENTRAL DISA. Se explicita la composición y los trece centros, en coherencia con el párrafo 579 y con la Tabla 30."
+    },
+    {
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "ancla_original": "En el contexto local de la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), con sede institucional en la ciudad de Andahuaylas, la Estrategia Sanitaria Nacional de Inmunizaciones administra el abastecimiento y la distribución de vacunas hacia diecinueve centros de acopio, los cuales comprenden el almacén especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud de las provincias de Andahuaylas y Chincheros; de ellos, trece cuentan con personal incluido en la muestra censal. Este flujo operativo recae sobre una dotación censal de 14 trabajadores (dos operadores en el Almacén Especializado de la sede central y doce responsables de cadena de frío en los centros de acopio de las redes de salud), quienes ejecutaban de manera manual el asentamiento de ingresos, transferencias, saldos de kardex y vales de salida. En primer término, esta modalidad tradicional afectó la oportunidad de procesamiento, dado que la transcripción manual en cuadernos físicos y hojas de cálculo locales demandaba tiempos prolongados tanto para registrar cada movimiento de lote como para verificar y emitir los vales de salida hacia las microredes.",
+      "texto_nuevo": "En el contexto local de la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), con sede institucional en la ciudad de Andahuaylas, la Estrategia Sanitaria Nacional de Inmunizaciones administra el abastecimiento y la distribución de vacunas hacia diecinueve centros de acopio registrados, integrados por cuatro establecimientos de la sede central (el almacén especializado, dos hospitales y un centro de salud) y quince centros de acopio de las redes y microredes de salud de las provincias de Andahuaylas y Chincheros; de ellos, trece cuentan con personal incluido en la muestra censal. Este flujo operativo recae sobre una dotación censal de 14 trabajadores: dos operadores en el Almacén Especializado de Vacunas (Chanka) y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado. En primer término, esta modalidad tradicional afectó la oportunidad de procesamiento, dado que la transcripción manual en cuadernos físicos y hojas de cálculo locales demandaba tiempos prolongados tanto para registrar cada movimiento de lote como para verificar y emitir los vales de salida hacia las microredes.",
+      "justificacion": "Se conserva la doble mención (19 institucional y 13 censal), que ya era correcta, y se corrigen dos defectos numéricos: la enumeración del universo sumaba 1 + 15 = 16 y la composición de los doce operadores los adscribía todos a las redes de salud, cuando tres centros pertenecen a la sede central."
+    },
+    {
+      "indice_docx": 163,
+      "ubicacion": "PARRAFO 163",
+      "ancla_original": "Para efectos de esta investigación, la variable dependiente gestión de movimientos mensuales de vacunas comprende exclusivamente el registro, validación, trazabilidad documental y emisión de vales de salida vinculados a los ingresos, salidas, transferencias y saldos de biológicos en los diecinueve centros de acopio de la DISA Apurímac II. La conservación termodinámica de los equipos frigoríficos, el acto clínico de vacunación nominal de pacientes y la ejecución presupuestal no forman parte de la variable evaluada.",
+      "texto_nuevo": "Para efectos de esta investigación, la variable dependiente gestión de movimientos mensuales de vacunas comprende exclusivamente el registro, validación, trazabilidad documental y emisión de vales de salida vinculados a los ingresos, salidas, transferencias y saldos de biológicos en los diecinueve centros de acopio registrados de la DISA Apurímac II, trece de los cuales cuentan con operadores incluidos en la muestra censal. La conservación termodinámica de los equipos frigoríficos, el acto clínico de vacunación nominal de pacientes y la ejecución presupuestal no forman parte de la variable evaluada.",
+      "justificacion": "Se conserva diecinueve como alcance de la variable, pero se añade la precisión de que solo trece centros aportan operadores a la medición, para impedir que el lector infiera 19 unidades observadas."
+    },
+    {
+      "indice_docx": 203,
+      "ubicacion": "PARRAFO 203",
+      "ancla_original": "La investigación se circunscribió espacialmente a la jurisdicción sanitaria de la DISA Apurímac II, abarcando sus diecinueve centros de acopio: el almacén especializado de la sede central en Andahuaylas y los centros de acopio vinculados a las redes y microredes de salud de las provincias de Andahuaylas y Chincheros. Temporalmente, el estudio se ejecutó durante el periodo 2025–2026, estructurando ventanas simétricas de observación basal (pre-test) y post-intervención (post-test) de 30 días calendario cada una. Social y poblacionalmente, se delimitó a la totalidad censal de los 14 operadores responsables de la cadena de frío e inmunizaciones de dicha entidad, distribuidos en trece centros de acopio (N = n = 14).",
+      "texto_nuevo": "La investigación se circunscribió espacialmente a la jurisdicción sanitaria de la DISA Apurímac II, abarcando sus diecinueve centros de acopio registrados: cuatro establecimientos de la sede central en Andahuaylas (el almacén especializado, dos hospitales y un centro de salud) y quince centros de acopio de las redes y microredes de salud de las provincias de Andahuaylas y Chincheros. Temporalmente, el estudio se ejecutó durante el periodo 2025–2026, estructurando ventanas simétricas de observación basal (pre-test) y post-intervención (post-test) de 30 días calendario cada una. Social y poblacionalmente, se delimitó a la totalidad censal de los 14 operadores responsables de la cadena de frío e inmunizaciones de dicha entidad, distribuidos en trece centros de acopio (N = n = 14).",
+      "justificacion": "Se conservan el ámbito de 19 centros y la delimitación poblacional de 14 operadores en 13 centros. Se repara la enumeración del ámbito espacial, que tras los dos puntos solo justificaba 1 + 15 = 16 centros e ignoraba los dos hospitales y el centro de salud de la sede central."
+    },
+    {
+      "indice_docx": 579,
+      "ubicacion": "PARRAFO 579",
+      "ancla_original": "Asimismo, se definieron explícitamente los criterios de inclusión y el tamaño muestral efectivo (n efectivo) por indicador. Dado que los 2 operadores del Almacén Especializado de la sede central y los 12 responsables de centros de acopio de las redes de salud pueden ejecutar volúmenes diferenciados de emisión de vales frente a recepción física de biológicos, se reporta con transparencia el n efectivo de pares válidos por cada indicador cuando un operador no emita comprobantes de salida en ambos periodos o presente diferencia nula en los rangos con signo de Wilcoxon (O₂ᵢ - O₁ᵢ = 0). En el cuadro siguiente se detalla la correspondencia entre unidades de observación primaria, reglas de agregación pareada por operador y criterios de inclusión.",
+      "texto_nuevo": "Asimismo, se definieron explícitamente los criterios de inclusión y el tamaño muestral efectivo (n efectivo) por indicador. Dado que los 2 operadores del Almacén Especializado de Vacunas (Chanka) y los 12 operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado, pueden ejecutar volúmenes diferenciados de emisión de vales frente a recepción física de biológicos, se reporta con transparencia el n efectivo de pares válidos por cada indicador cuando un operador no emita comprobantes de salida en ambos periodos o presente diferencia nula en los rangos con signo de Wilcoxon (O₂ᵢ - O₁ᵢ = 0). En la tabla siguiente se detalla la correspondencia entre unidades de observación primaria, reglas de agregación pareada por operador y criterios de inclusión.",
+      "justificacion": "El total de 14 era correcto, pero la composición atribuía los doce operadores restantes a centros de las redes de salud cuando tres pertenecen a la sede central, y no declaraba los trece centros que sostiene la Tabla 30. Se unifica además cuadro por tabla, conforme al uso dominante del documento."
+    }
+  ],
+  "veredicto": "REQUIERE_AJUSTE"
+}

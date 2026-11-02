@@ -1,0 +1,331 @@
+{
+  "id" : "ee16da9a-85e3-425c-9707-0987c40fd538",
+  "uuid" : "ee16da9a-85e3-425c-9707-0987c40fd538",
+  "name" : "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+  "handle" : "10665.2/50482",
+  "metadata" : {
+    "dc.contributor" : [ {
+      "value" : "PATH",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.contributor.corporatename" : [ {
+      "value" : "Pan American Health Organization",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.accessioned" : [ {
+      "value" : "2019",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.available" : [ {
+      "value" : "2019",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.issued" : [ {
+      "value" : "2019",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.abstract" : [ {
+      "value" : "Data quality is a cornerstone of well-functioning health systems. Sound and reliable information enables better resource allocation, more targeted care, policy development, and implementation, and more effective health education and training. Calls to improve the quality and use of data feature prominently in several national plans of action and in global strategies like the Global Vaccine Action Plan. The goal of the Immunization Data: Evidence for Action (IDEA) project is to identify, review, synthesize, and disseminate what works to improve the use of immunization data and why it works.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "La qualité des données est essentielle au bon fonctionnement des systèmes de santé. Une information solide et fiable permet une meilleure allocation des ressources, un meilleur ciblage des soins, des politiques et de la mise en oeuvre, et une plus grande efficacité de l’éducation et de la formation en matière de santé. Le plan d’action national de nombreux pays, de même que les stratégies mondiales telles que le Plan d’action mondial pour les vaccins, préconisent l’amélioration de la qualité et de l’utilisation des données. Le projet Données de vaccination : des preuves pour l’action (IDEA) a pour objectif d’identifier, d’examiner, de synthétiser et de diffuser « ce qui marche » pour améliorer l’utilisation des données de vaccination et pourquoi.",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "La calidad de los datos es una piedra angular del buen funcionamiento de los sistemas de salud. La información sólida y confiable permite una mejor asignación de recursos, una atención más específica, el desarrollo y la aplicación de políticas, y una Educación y formación en salud más efectivas. El llamado para mejorar la calidad y el uso de los datos ocupan un lugar prominente en varios planes de acción nacionales y en estrategias mundiales como el Plan de Acción Mundial sobre Vacunas. El objetivo del proyecto Datos de Inmunización: Evidencia para la Acción (IDEA) es identificar, revisar, sintetizar y diseminar lo que funciona para mejorar el uso de los datos sobre inmunización y por qué funciona.",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.identifier.citation" : [ {
+      "value" : "Immunization Data: Evidence for Action. A Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle- Income Countries. Seattle: PATH; Washington, DC: PAHO; 2019.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Données de vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire. Seattle : PATH ; Washington, DC : OPS; 2019.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos. Seattle: PATH; Washington, DC: OPS; 2019.",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.identifier.isbn" : [ {
+      "value" : "978-92-75-32061-7",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "978-92-75-22061-0",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "978-92-75-12061-3",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.identifier.uri" : [ {
+      "value" : "https://iris.paho.org/handle/10665.2/50482",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.language.iso" : [ {
+      "value" : "en",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "es",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "fr",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.publisher" : [ {
+      "value" : "PAHO",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights" : [ {
+      "value" : "CC BY-SA 4.0",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights.holder" : [ {
+      "value" : "Pan American Health Organization",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights.uri" : [ {
+      "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.subject" : [ {
+      "value" : "Electronic Health Records",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Immunization Programs",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Patient Generated Health Data",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    }, {
+      "value" : "Data Collection",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 3
+    }, {
+      "value" : "Health Information Systems",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 4
+    }, {
+      "value" : "Registros Electrónicos de Salud",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 5
+    }, {
+      "value" : "Programas de Inmunización",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 6
+    }, {
+      "value" : "Recolección de Datos",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 7
+    }, {
+      "value" : "Sistemas de Información en Salud",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 8
+    } ],
+    "dc.title" : [ {
+      "value" : "Immunization Data: Evidence for Action. Realist Review of What Works to Improve Data Use for Immunization, Evidence from Low- and Middle-Income Countries",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Données de vaccination : des preuves pour l’action, Examen réaliste: ce qui marche pour améliorer l’utilisation des données pour la vaccination, Données probantes des pays à revenu faible et intermédiaire",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Datos de inmunización: evidencia para la acción. Una revisión realista de lo que funciona para mejorar el uso de datos para la inmunización. Evidencia de los países bajos y medianos ingresos",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.type" : [ {
+      "value" : "Publications",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.contributor.department" : [ {
+      "value" : "Family, Health Promotion and Life Course (FPL)",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.isfeatured" : [ {
+      "value" : "0",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.iswhotranslation" : [ {
+      "value" : "No",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.publisher.city" : [ {
+      "value" : "Washington, D.C.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.publisher.country" : [ {
+      "value" : "United States",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.source.centercode" : [ {
+      "value" : "US1.1",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.subject" : [ {
+      "value" : "Cat 3. Determinants of Health and Promoting Health throughout the Life Course",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Cat 4. Health Systems",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    } ]
+  },
+  "inArchive" : true,
+  "discoverable" : true,
+  "withdrawn" : false,
+  "lastModified" : "2021-03-11T04:36:47.311+00:00",
+  "entityType" : null,
+  "type" : "item",
+  "_links" : {
+    "accessStatus" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/accessStatus"
+    },
+    "bundles" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/bundles"
+    },
+    "identifiers" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/identifiers"
+    },
+    "mappedCollections" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/mappedCollections"
+    },
+    "owningCollection" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/owningCollection"
+    },
+    "relationships" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/relationships"
+    },
+    "version" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/version"
+    },
+    "templateItemOf" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/templateItemOf"
+    },
+    "thumbnail" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/thumbnail"
+    },
+    "relateditemlistconfigs" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538/relateditemlistconfigs"
+    },
+    "self" : {
+      "href" : "https://iris.paho.org/server/api/core/items/ee16da9a-85e3-425c-9707-0987c40fd538"
+    }
+  }
+}

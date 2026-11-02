@@ -1,0 +1,171 @@
+{
+  "keep_next": {
+    "incluir_rotulos": true,
+    "incluir_formulas": true
+  },
+  "tablas": {
+    "margenes_celda": [
+      {
+        "tabla": 1,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 8,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 32,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 33,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 34,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      }
+    ]
+  },
+  "dividir_parrafos": [
+    {
+      "indice": 705,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 704,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 703,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 699,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 698,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 697,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 693,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 692,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 691,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 687,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 686,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 685,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 678,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 677,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 646,
+      "alineacion_lista": "both"
+    }
+  ],
+  "ajustes_formato": {
+    "parrafos_espaciado": [
+      {
+        "indice": 647,
+        "first_line": 720
+      },
+      {
+        "indice": 679,
+        "first_line": 720
+      },
+      {
+        "indice": 680,
+        "first_line": 720
+      },
+      {
+        "indice": 699,
+        "first_line": 720
+      },
+      {
+        "indice": 700,
+        "first_line": 720
+      },
+      {
+        "indice": 702,
+        "first_line": 720
+      },
+      {
+        "indice": 710,
+        "first_line": 720
+      },
+      {
+        "indice": 711,
+        "first_line": 720
+      },
+      {
+        "indice": 713,
+        "first_line": 720
+      },
+      {
+        "indice": 721,
+        "first_line": 720
+      },
+      {
+        "indice": 722,
+        "first_line": 720
+      },
+      {
+        "indice": 723,
+        "first_line": 720
+      },
+      {
+        "indice": 725,
+        "first_line": 720
+      },
+      {
+        "indice": 733,
+        "first_line": 720
+      },
+      {
+        "indice": 735,
+        "first_line": 720
+      }
+    ]
+  }
+}

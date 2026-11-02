@@ -1,0 +1,813 @@
+{
+  "meta": {
+    "archivo_origen": "salidas/documentos/informe_final_v20.docx",
+    "sha256_origen": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+    "fecha": "2026-10-23",
+    "agente": "maquetador-docx",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "fuente_plan": "plan_correccion_tablas_v20.json",
+    "fuente_inventario": "inventario_subindices_v21.json",
+    "nota_tablas_49_50": "La Tabla impresa 49 y la 50 son los indices 52 y 53 de document.tables; las tablas de instrumento (indices 49/50) son textuales y no admiten tabulador decimal."
+  },
+  "keep_next": {
+    "incluir_rotulos": true,
+    "incluir_formulas": true
+  },
+  "subindices": {
+    "ambito": "ambos",
+    "identificadores": [
+      "lotes_vacunas",
+      "vacuna_id",
+      "movimientos_vacunas",
+      "planificacion_anual",
+      "entregas_adicionales",
+      "vales_entrega",
+      "ici_demid_registros",
+      "usuarios_roles",
+      "centros_acopio",
+      "establecimientos"
+    ],
+    "cuerpo": [
+      {
+        "indice": 578,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "indice": 592,
+        "terminos": [
+          "t_fin",
+          "t_inicio"
+        ]
+      },
+      {
+        "indice": 595,
+        "terminos": [
+          "t_emision",
+          "t_solicitud"
+        ]
+      },
+      {
+        "indice": 601,
+        "terminos": [
+          "Q_entregada",
+          "Q_programada"
+        ]
+      },
+      {
+        "indice": 639,
+        "terminos": [
+          "N_v"
+        ]
+      },
+      {
+        "indice": 654,
+        "terminos": [
+          "O_1",
+          "O_2",
+          "Q_3",
+          "Q_1"
+        ]
+      },
+      {
+        "indice": 656,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "indice": 677,
+        "terminos": [
+          "O_1",
+          "O_2",
+          "D_i",
+          "X_post,i",
+          "X_pre,i",
+          "H_0",
+          "H_1"
+        ]
+      },
+      {
+        "indice": 678,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "indice": 685,
+        "terminos": [
+          "H_0,1",
+          "T_reg",
+          "T_vale",
+          "mu_diff",
+          "T_reg",
+          "mu_diff",
+          "T_vale",
+          "H_1,1",
+          "T_reg",
+          "T_vale",
+          "mu_diff",
+          "T_reg",
+          "mu_diff",
+          "T_vale"
+        ]
+      },
+      {
+        "indice": 686,
+        "terminos": [
+          "T_reg",
+          "p_adj",
+          "T_vale",
+          "p_adj"
+        ]
+      },
+      {
+        "indice": 687,
+        "terminos": [
+          "H_0,1",
+          "H_1,1"
+        ]
+      },
+      {
+        "indice": 691,
+        "terminos": [
+          "H_0,2",
+          "mu_diff,RSD",
+          "mu_diff,CPE",
+          "H_1,2",
+          "mu_diff,RSD",
+          "mu_diff,CPE"
+        ]
+      },
+      {
+        "indice": 692,
+        "terminos": [
+          "p_adj",
+          "p_adj"
+        ]
+      },
+      {
+        "indice": 693,
+        "terminos": [
+          "H_0,2",
+          "H_1,2"
+        ]
+      },
+      {
+        "indice": 697,
+        "terminos": [
+          "H_0,3",
+          "mu_diff,AP",
+          "mu_diff,UP",
+          "H_1,3",
+          "mu_diff,AP",
+          "mu_diff,UP"
+        ]
+      },
+      {
+        "indice": 698,
+        "terminos": [
+          "p_adj",
+          "p_adj",
+          "p_adj"
+        ]
+      },
+      {
+        "indice": 699,
+        "terminos": [
+          "H_0,3",
+          "H_1,3"
+        ]
+      },
+      {
+        "indice": 703,
+        "terminos": [
+          "H_0",
+          "H_G"
+        ]
+      },
+      {
+        "indice": 704,
+        "terminos": [
+          "H_G",
+          "H_0,1",
+          "H_0,2",
+          "H_0,3",
+          "p_adj"
+        ]
+      },
+      {
+        "indice": 705,
+        "terminos": [
+          "p_adj",
+          "H_0",
+          "H_G"
+        ]
+      },
+      {
+        "indice": 708,
+        "terminos": [
+          "p_adj"
+        ]
+      },
+      {
+        "indice": 717,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "indice": 799,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      }
+    ],
+    "celdas": [
+      {
+        "tabla": 31,
+        "fila": 1,
+        "col": 0,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 31,
+        "fila": 2,
+        "col": 0,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 32,
+        "fila": 2,
+        "col": 3,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 36,
+        "fila": 1,
+        "col": 0,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 36,
+        "fila": 2,
+        "col": 0,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 36,
+        "fila": 3,
+        "col": 0,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 36,
+        "fila": 4,
+        "col": 0,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 36,
+        "fila": 5,
+        "col": 0,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 36,
+        "fila": 6,
+        "col": 0,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 39,
+        "fila": 1,
+        "col": 1,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 39,
+        "fila": 2,
+        "col": 1,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 40,
+        "fila": 1,
+        "col": 0,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 40,
+        "fila": 2,
+        "col": 0,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 40,
+        "fila": 3,
+        "col": 0,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 40,
+        "fila": 4,
+        "col": 0,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 44,
+        "fila": 9,
+        "col": 1,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 45,
+        "fila": 2,
+        "col": 3,
+        "terminos": [
+          "T_reg",
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 49,
+        "fila": 1,
+        "col": 1,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 49,
+        "fila": 2,
+        "col": 1,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 52,
+        "fila": 0,
+        "col": 2,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 52,
+        "fila": 0,
+        "col": 3,
+        "terminos": [
+          "T_vale"
+        ]
+      },
+      {
+        "tabla": 53,
+        "fila": 0,
+        "col": 2,
+        "terminos": [
+          "T_reg"
+        ]
+      },
+      {
+        "tabla": 53,
+        "fila": 0,
+        "col": 3,
+        "terminos": [
+          "T_vale"
+        ]
+      }
+    ]
+  },
+  "tablas": {
+    "margenes_celda": [
+      {
+        "tabla": 1,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 8,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 32,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 33,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 34,
+        "izquierdo_dxa": 28,
+        "derecho_dxa": 28,
+        "superior_dxa": 40,
+        "inferior_dxa": 40
+      },
+      {
+        "tabla": 52,
+        "izquierdo_dxa": 57,
+        "derecho_dxa": 57,
+        "superior_dxa": 5,
+        "inferior_dxa": 5
+      },
+      {
+        "tabla": 53,
+        "izquierdo_dxa": 57,
+        "derecho_dxa": 57,
+        "superior_dxa": 5,
+        "inferior_dxa": 5
+      }
+    ],
+    "geometria_proporcional": [
+      {
+        "tabla": 33,
+        "anchos_dxa": [
+          1405,
+          1347,
+          1331,
+          1341,
+          3341
+        ],
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 8,
+        "anchos_dxa": [
+          943,
+          4401,
+          1496,
+          943,
+          982
+        ],
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 35,
+        "anchos_dxa": [
+          1720,
+          2073,
+          708,
+          938,
+          1087,
+          894,
+          1345
+        ],
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 1,
+        "anchos_dxa": [
+          1058,
+          1414,
+          1550,
+          1520,
+          1565,
+          1658
+        ],
+        "margen_dxa": 60
+      }
+    ],
+    "ensanchar_rango": [
+      {
+        "tabla": 36,
+        "columna_objetivo": 6,
+        "ancho_objetivo_dxa": 1500,
+        "donantes": {
+          "0": 140,
+          "1": 140
+        },
+        "margen_dxa": 60
+      },
+      {
+        "tabla": 38,
+        "columna_objetivo": 6,
+        "ancho_objetivo_dxa": 1500,
+        "donantes": {
+          "0": 140,
+          "1": 140
+        },
+        "margen_dxa": 60
+      }
+    ],
+    "reparar_tcw": [
+      44
+    ],
+    "valign": [
+      {
+        "tabla": 1,
+        "valor": "top",
+        "excepto_encabezado": true
+      },
+      {
+        "tabla": 8,
+        "valor": "top",
+        "excepto_encabezado": true
+      },
+      {
+        "tabla": 32,
+        "valor": "top",
+        "excepto_encabezado": true
+      },
+      {
+        "tabla": 33,
+        "valor": "top",
+        "excepto_encabezado": true
+      },
+      {
+        "tabla": 34,
+        "valor": "top",
+        "excepto_encabezado": true
+      },
+      {
+        "tabla": 45,
+        "valor": "top",
+        "excepto_encabezado": true
+      }
+    ],
+    "alineacion_decimal": [
+      {
+        "tabla": 30,
+        "columnas": [
+          2,
+          3
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 30
+      },
+      {
+        "tabla": 35,
+        "columnas": [
+          2,
+          3,
+          4
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 35
+      },
+      {
+        "tabla": 36,
+        "columnas": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 36
+      },
+      {
+        "tabla": 37,
+        "columnas": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 37
+      },
+      {
+        "tabla": 38,
+        "columnas": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 38
+      },
+      {
+        "tabla": 39,
+        "columnas": [
+          2
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 39
+      },
+      {
+        "tabla": 52,
+        "columnas": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 49
+      },
+      {
+        "tabla": 53,
+        "columnas": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "modo": "tab_decimal",
+        "numero_tabla_impreso": 50
+      }
+    ]
+  },
+  "dividir_parrafos": [
+    {
+      "indice": 705,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 704,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 703,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 699,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 698,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 697,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 693,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 692,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 691,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 687,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 686,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 685,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 678,
+      "alineacion_lista": "left"
+    },
+    {
+      "indice": 677,
+      "alineacion_lista": "both"
+    },
+    {
+      "indice": 646,
+      "alineacion_lista": "both"
+    }
+  ],
+  "ajustes_formato": {
+    "parrafos_espaciado": [
+      {
+        "indice": 647,
+        "first_line": 720
+      },
+      {
+        "indice": 679,
+        "first_line": 720
+      },
+      {
+        "indice": 680,
+        "first_line": 720
+      },
+      {
+        "indice": 699,
+        "first_line": 720
+      },
+      {
+        "indice": 700,
+        "first_line": 720
+      },
+      {
+        "indice": 702,
+        "first_line": 720
+      },
+      {
+        "indice": 710,
+        "first_line": 720
+      },
+      {
+        "indice": 711,
+        "first_line": 720
+      },
+      {
+        "indice": 713,
+        "first_line": 720
+      },
+      {
+        "indice": 721,
+        "first_line": 720
+      },
+      {
+        "indice": 722,
+        "first_line": 720
+      },
+      {
+        "indice": 723,
+        "first_line": 720
+      },
+      {
+        "indice": 725,
+        "first_line": 720
+      },
+      {
+        "indice": 733,
+        "first_line": 720
+      },
+      {
+        "indice": 735,
+        "first_line": 720
+      }
+    ]
+  }
+}

@@ -1,0 +1,1264 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v15.docx",
+  "destino": "salidas\\archivo\\_ensayo_v16.docx",
+  "solo_verificar": false,
+  "sha256_origen": "7c79eb03e2875f5f007c982a946fa84feaa48e4aef1009f717c7163cb9aa2ff1",
+  "sha256_destino": "65bb181e2e91e711b1b6d5282d23956fe0ebb1def6b798e8b9fdb6f17454f297",
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 77,
+  "total_aplicadas": 75,
+  "total_fallidas": 2,
+  "lotes": [
+    {
+      "lote": "correcciones_bibliograficas_v14",
+      "total": 77,
+      "aplicadas": 75,
+      "fallidas": 2,
+      "detalles": [
+        {
+          "indice_docx": 726,
+          "ubicacion": "PÁRRAFO 726 (lista de referencias, Addy) - autoría y año",
+          "ancla": "Addy, A., Ajayi, O., y Mensah, K. (2024).",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 726,
+          "ubicacion": "PÁRRAFO 726 (lista de referencias, Addy) - enlace",
+          "ancla": ", 5(6), 1–25.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 260,
+          "ubicacion": "PÁRRAFO 260 (cita de Addy en el planteamiento)",
+          "ancla": "Addy et al., 2024, p. 2",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 327,
+          "ubicacion": "PÁRRAFO 327 (cita de Addy en las bases teóricas)",
+          "ancla": "Addy et al., 2024, p. 2",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 765,
+          "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - año",
+          "ancla": "PATH. (2020).",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 765,
+          "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - uso de mayúsculas",
+          "ancla": "inmunización: Evidencia para la acción",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 765,
+          "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - subtítulo, editorial y handle",
+          "ancla": "para la inmunización. OPS. https://iris.paho.org/handle/10665.2/53120",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 265,
+          "ubicacion": "PÁRRAFO 265 (primera cita de OPS y PATH)",
+          "ancla": "y PATH, 2020",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 325,
+          "ubicacion": "PÁRRAFO 325 (segunda cita de OPS y PATH)",
+          "ancla": "y PATH, 2020",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 730,
+          "ubicacion": "PÁRRAFO 730 (lista de referencias, Balón Morejón)",
+          "ancla": "UPSE. https://hdl.handle.net/46000/9257",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 753,
+          "ubicacion": "PÁRRAFO 753 (lista de referencias, ISO/IEC 25010)",
+          "ancla": "Standardization, y International",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 761,
+          "ubicacion": "PÁRRAFO 761 (lista de referencias, MINSA)",
+          "ancla": "MINSA. https://www.gob.pe/institucion/minsa/normas-legales/3576882-884-2022-mins",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 767,
+          "ubicacion": "PÁRRAFO 767 (lista de referencias, Quispe Tello)",
+          "ancla": "José María Arguedas].",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 630,
+          "ubicacion": "PÁRRAFO 630 (validez de instrumentos)",
+          "ancla": "de Fany (2024) adoptado",
+          "sustituciones": 0,
+          "modo": "fallida",
+          "estado": "fallida"
+        },
+        {
+          "indice_docx": 177,
+          "ubicacion": "PÁRRAFO 177 (justificación metodológica)",
+          "ancla": "Hernández-Sampieri et al. (2014, p. 141), adaptado a",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 625,
+          "ubicacion": "PÁRRAFO 625 (validez de instrumentos)",
+          "ancla": "y Claridad (Sí/No).",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 3,
+          "ubicacion": "TABLA 3, fila 3, columna 2",
+          "ancla": "Centro de Acopio (responsable_acopio)",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 1",
+          "ancla": "sujeto_id",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 2",
+          "ancla": "centro_acopio",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 3",
+          "ancla": "t_reg",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 4",
+          "ancla": "t_vale",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 5",
+          "ancla": "rsd",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 6",
+          "ancla": "cpe",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 7",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 7",
+          "ancla": "01",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 8",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 8",
+          "ancla": "02",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 9",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 9",
+          "ancla": "03",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 10",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 10",
+          "ancla": "04",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 11",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 11",
+          "ancla": "01",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 12",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 12",
+          "ancla": "02",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 13",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 13",
+          "ancla": "03",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 14",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 14",
+          "ancla": "04",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 15",
+          "ancla": "score_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 15",
+          "ancla": "ap",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 16",
+          "ancla": "score_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 16",
+          "ancla": "up",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 17",
+          "ancla": "score_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 17",
+          "ancla": "tam_total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 18",
+          "ancla": "nivel_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 18",
+          "ancla": "satisfaccion",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 1",
+          "ancla": "sujeto_id",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 2",
+          "ancla": "centro_acopio",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 3",
+          "ancla": "t_reg",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 4",
+          "ancla": "t_vale",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 5",
+          "ancla": "rsd",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 6",
+          "ancla": "cpe",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 7",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 7",
+          "ancla": "01",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 8",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 8",
+          "ancla": "02",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 9",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 9",
+          "ancla": "03",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 10",
+          "ancla": "ap_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 10",
+          "ancla": "04",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 11",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 11",
+          "ancla": "01",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 12",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 12",
+          "ancla": "02",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 13",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 13",
+          "ancla": "03",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 14",
+          "ancla": "up_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 14",
+          "ancla": "04",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 15",
+          "ancla": "score_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 15",
+          "ancla": "ap",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 16",
+          "ancla": "score_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 16",
+          "ancla": "up",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 17",
+          "ancla": "score_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 17",
+          "ancla": "tam_total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 18",
+          "ancla": "nivel_",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 18",
+          "ancla": "satisfaccion",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 726,
+      "ubicacion": "PÁRRAFO 726 (lista de referencias, Addy) - autoría y año",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 726,
+      "ubicacion": "PÁRRAFO 726 (lista de referencias, Addy) - enlace",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 260,
+      "ubicacion": "PÁRRAFO 260 (cita de Addy en el planteamiento)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 327,
+      "ubicacion": "PÁRRAFO 327 (cita de Addy en las bases teóricas)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 765,
+      "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - año",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 765,
+      "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - uso de mayúsculas",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 765,
+      "ubicacion": "PÁRRAFO 765 (lista de referencias, OPS y PATH) - subtítulo, editorial y handle",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 265,
+      "ubicacion": "PÁRRAFO 265 (primera cita de OPS y PATH)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 325,
+      "ubicacion": "PÁRRAFO 325 (segunda cita de OPS y PATH)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 730,
+      "ubicacion": "PÁRRAFO 730 (lista de referencias, Balón Morejón)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 753,
+      "ubicacion": "PÁRRAFO 753 (lista de referencias, ISO/IEC 25010)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 761,
+      "ubicacion": "PÁRRAFO 761 (lista de referencias, MINSA)",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 767,
+      "ubicacion": "PÁRRAFO 767 (lista de referencias, Quispe Tello)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 630,
+      "ubicacion": "PÁRRAFO 630 (validez de instrumentos)",
+      "estado": "fallida",
+      "detalle": "0 sustitucion(es); modo fallida"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 177,
+      "ubicacion": "PÁRRAFO 177 (justificación metodológica)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 625,
+      "ubicacion": "PÁRRAFO 625 (validez de instrumentos)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 3,
+      "ubicacion": "TABLA 3, fila 3, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 1",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 7",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 7",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 8",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 8",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 9",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 9",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 11",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 11",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 12",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 12",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 13",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 13",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 14",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 14",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 1",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 7",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 7",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 8",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 8",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 9",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 9",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 11",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 11",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 12",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 12",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 13",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 13",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 14",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 14",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "correcciones_bibliograficas_v14",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tipo_registro": "declaracion_directa_del_tesista",
+  "fecha_recepcion": "2026-10-21",
+  "fuente": "Mensaje del tesista en la conversación de revisión del informe SIVAC",
+  "texto_literal": "la los jueces me dierocsn su valdiacion todo pucieros 4 en todo",
+  "lectura_normalizada": "El tesista informa que los jueces entregaron su validación y calificaron todos los elementos con 4.",
+  "dato_expresamente_reportado": {
+    "calificacion": 4,
+    "alcance_literal": "todos los jueces, en todo"
+  },
+  "no_especificado_en_el_mensaje": {
+    "numero_de_jueces": null,
+    "identidades_de_los_jueces": null,
+    "fecha_de_evaluacion": null,
+    "version_del_formato_aplicado": null,
+    "numero_de_componentes_evaluados": null,
+    "matriz_por_item_y_criterio": null,
+    "opinion_de_aplicabilidad_literal": null,
+    "observaciones_cualitativas": null
+  },
+  "evidencia_documental_adjunta_en_este_mensaje": [],
+  "condicion": "Información comunicada directamente por el tesista. No es una reproducción ni una inspección de fichas firmadas.",
+  "restricciones": [
+    "No completar campos no especificados mediante suposición.",
+    "No construir una matriz por juez presentada como transcripción de documentos ausentes.",
+    "No equiparar puntuación 4 a Sí sin comprobar el formato y la codificación efectivamente aplicados.",
+    "No utilizar este registro como respuestas de participantes para alfa, ICC, kappa o contrastes pretest/postest.",
+    "Este archivo conserva la declaración recibida y no desbloquea por sí solo el análisis de campo."
+  ]
+}

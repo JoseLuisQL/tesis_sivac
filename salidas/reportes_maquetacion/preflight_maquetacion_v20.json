@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "Squad E",
+    "etapa": "preflight_tecnico_y_plan_de_geometria",
+    "estado": "listo_para_ordenes_de_aplicacion",
+    "compilado_v20": false,
+    "fuentes_modificadas": false,
+    "motor": "scripts/utilidades/docx_quirurgico.py",
+    "nota_de_alcance": "Este preflight es mecánico y no destructivo. No emite v20, no sobrescribe v19, no toca referencias/ ni PROYECTO_TESIS.docx. No duplica el inventario de prosa ni el barrido visual de los auditores; solo mide formato, estructura y campos.",
+    "aclaracion_indices": "Se verificó el XML actual: los índices son nativos (TOC/PAGEREF/SEQ). No se propone reconstruirlos ni convertirlos a texto. El párrafo antiguo de ESTADO_TESIS sobre índices en texto plano es un falso positivo histórico."
+  },
+  "base_congelada": {
+    "docx": {
+      "ruta": "salidas/documentos/informe_final_v19.docx",
+      "bytes": 15090858,
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "paginas_pdf": 158,
+      "parrafos_document_paragraphs": 827,
+      "parrafos_wp_cuerpo": 827,
+      "tablas": 59,
+      "formulas_omml": 12,
+      "omml_para": 1,
+      "omml_en_tablas": 0,
+      "hipervinculos_totales": 252,
+      "hipervinculos_internos_indices": 214,
+      "hipervinculos_externos": 38,
+      "imagenes_drawing": 49,
+      "secciones": 7,
+      "referencias_sangria_francesa": 53
+    },
+    "pdf": {
+      "ruta": "salidas/documentos/informe_final_v19.pdf",
+      "bytes": 17906375,
+      "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas": 158
+    },
+    "respaldo": "salidas/archivo/RESPALDO_INFORME_V19_PRE_REVISION_INTEGRAL_20261022/",
+    "cadena_previa": {
+      "v18_sha256": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+      "v19_sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+    }
+  },
+  "verificacion_campos_nativos": {
+    "toc_campos": 3,
+    "toc_instrucciones": [
+      "TOC \\o \"1-3\" \\h \\z \\u",
+      "TOC \\h \\z \\c \"Figura\"",
+      "TOC \\h \\z \\c \"Tabla\""
+    ],
+    "sdt": 1,
+    "sdt_parrafos": 112,
+    "sdt_entradas": 111,
+    "sdt_estilos": {
+      "TDC1": 23,
+      "TDC2": 30,
+      "TDC3": 58,
+      "sin_estilo": 1
+    },
+    "entradas_listas_figuras_tablas": 103,
+    "paginaref": 214,
+    "paginaref_desglose": "111 entradas de contenido + 103 entradas de figuras/tablas",
+    "seq": 103,
+    "fld_simple": 0,
+    "page_en_cuerpo": 0,
+    "numpages_en_cuerpo": 0,
+    "page_en_encabezados": 6,
+    "encabezados_totales": 9,
+    "encabezados_vacios": 3,
+    "conclusion": "Índices y campos nativos íntegros. No se requiere reconstrucción; solo normalización tipográfica de números de página y folios."
+  },
+  "hallazgos": [
+    {
+      "id": "H01",
+      "severidad": "alta",
+      "titulo": "Folios de encabezado en Cambria 11, no en Times New Roman",
+      "medicion": "Los 6 encabezados con campo PAGE (header4.xml a header9.xml) usan el estilo 'Encabezado', que no declara rFonts. El run del resultado PAGE solo lleva w:noProof; hereda minorHAnsi/sz22 de docDefaults. En el PDF, las 158 páginas muestran el folio en BCDEEE+Cambria 11.0 (verificado en pp. 4, 6, 9, 13, 26, 141 y 142).",
+      "evidencia_pdf": "p004='ii', p006='iv', p009='vii', p013='xi', p026='11', p141='126', p142='127': todos Cambria 11.",
+      "accion": "Añadir rFonts Times New Roman y sz/szCs 22 al estilo 'Encabezado'; no se toca ningún header part individualmente.",
+      "impacto_paginas": 0,
+      "requiere_aprobacion": false
+    },
+    {
+      "id": "H02",
+      "severidad": "media",
+      "titulo": "Números y puntos guía de los índices de figuras/tablas en Cambria",
+      "medicion": "103 párrafos con estilo 'table of figures' (styleId Tabladeilustraciones). El estilo solo define spacing after=0 y line=240: no declara fuente. Las etiquetas y títulos llevan TNR 11 explícita, pero los números PAGEREF y los líderes de tabulación heredan el tema: Cambria 11-12 (p. 9: 'vii', puntos y '24'; p. 11: 'ix', 'Tabla 1', puntos y números). El índice de contenido (pp. iv-vi) sí está correcto en TNR 10.",
+      "accion": "Declarar TNR en el estilo 'table of figures' y normalizar el w:pPr/w:rPr de los 103 párrafos (quitar asciiTheme y fijar sz/szCs=22) para que números y líderes queden TNR 11, igual que las entradas.",
+      "impacto_paginas": "0 esperado; vigilar reflujo menor de líneas.",
+      "requiere_aprobacion": false
+    },
+    {
+      "id": "H03",
+      "severidad": "media",
+      "titulo": "Página de índice casi vacía (vi) y colas de índices con gran blanco",
+      "medicion": "PDF: p6=52 líneas, p7=55, p8=11 (9 entradas, fondo de contenido 212 pt sobre 787 útiles: 575 pt en blanco); p9=29 figuras/56 líneas, p10=18 figuras/43 líneas con 194 pt en blanco; p11=33 tablas/57 líneas, p12=13 tablas/19 líneas con 465 pt en blanco. Fany: índice general 2 pp (iv-v), figuras 1 p (vi, 12 entradas), tablas 1 p (vii, 19 entradas), Arial 11 con paso 18.6 pt.",
+      "accion": "No cambiar tamaños ni contenido sin decisión. Opciones medidas: (a) conservar 3+2+2 páginas (actual, sin pérdida); (b) TOC \\o \"1-2\" elimina 58 entradas de nivel 3 y reduce el índice general a 1-2 páginas (decisión de contenido); (c) iniciar el índice de figuras en la misma página donde termina el de contenido, sin salto (rompe la convención Fany de una sección por página). Se recomienda (a) por defecto y elevar (b) al tesista.",
+      "impacto_paginas": "a=0; b=-2; c=-2",
+      "requiere_aprobacion": true
+    },
+    {
+      "id": "H04",
+      "severidad": "media",
+      "titulo": "18 notas de tabla justificadas",
+      "medicion": "18 párrafos 'Nota.' con jc=both (índices Document.paragraphs 223, 234, 240, 245, 250, 256, 263, 269, 278, 283, 288, 290, 569, 575, 581, 588, 617, 629). La norma pide no justificar notas de forma indiscriminada.",
+      "accion": "Fijar jc=left en esos 18 párrafos; conservar tamaño, interlineado y prefijo en cursiva.",
+      "impacto_paginas": 0,
+      "requiere_aprobacion": false
+    },
+    {
+      "id": "H05",
+      "severidad": "media",
+      "titulo": "Párrafo de advertencia metodológica con interlineado 1.15 y sin sangría",
+      "medicion": "Document.paragraphs[646] ('Advertencia metodológica y salvaguarda deontológica...'): spacing before=240 after=360, sin w:line (hereda 276 = 1.15) y sin w:ind (hereda firstLine=0). Es prosa narrativa en cursiva con entrada en negrita.",
+      "accion": "Añadir line=360 lineRule=auto y firstLine=720; conservar before/after actuales para no perder el bloque de advertencia.",
+      "impacto_paginas": "0-1",
+      "requiere_aprobacion": false
+    },
+    {
+      "id": "H06",
+      "severidad": "alta",
+      "titulo": "Formularios de validación y aplicación sin rejilla (DEC-025)",
+      "medicion": "Las 59 tablas solo tienen bordes top/bottom (single, sz=8); no hay left/right/insideH/insideV. Son formularios: T47, T48, T49 (Formato de Validación de Contenido, Jueces 1-3) y T50, T51, T52 (Instrumentos 01, 02 y Cuestionario TAM). Las matrices académicas T44, T45, T46, T53, T54 y T55 deben permanecer APA de tres líneas.",
+      "accion": "Aplicar aplicar_bordes_rejilla(tabla, sz=4) solo a T47-T52. Secuencia obligatoria: primero blindar-todas (si se ejecuta), después la rejilla; blindar-todas reescribe tblBorders y borraría la rejilla.",
+      "impacto_paginas": "0 por bordes; posible -1 por normalización de espaciado en celdas (H07).",
+      "requiere_aprobacion": true,
+      "nota": "DEC-025 autoriza rejilla solo para formularios de validación y aplicación, no para tablas narrativas ni matrices."
+    },
+    {
+      "id": "H07",
+      "severidad": "media",
+      "titulo": "Celdas con espaciado heredado de 10 pt y runs sin fuente en los formularios",
+      "medicion": "41 párrafos de celda sin w:spacing/@after (heredan after=200 y line=276): T1=1, T45=22 de 42, T47=6, T48=6, T49=6. Además, 18 runs sin rFonts ni sz en la fila de firma de T47-T49 ('Firma y Sello del Juez Validador', 'DNI', línea de firma), que renderizan en Calibri 11.",
+      "accion": "En T45 y T47-T49: fijar spacing after=0, line=240 y sz=20 (10 pt) en los párrafos de celda afectados. En la fila de firma de T47-T49: rFonts TNR y sz=20 en los 18 runs. No se altera texto.",
+      "impacto_paginas": "0 a -1",
+      "requiere_aprobacion": false
+    },
+    {
+      "id": "H08",
+      "severidad": "baja",
+      "titulo": "Marcos de fotografía con estética distinta al resto de figuras",
+      "medicion": "T56-T59 son tablas de una celda (8765 dxa, portrait), con solo bordes superior e inferior. En el orden actual el marco precede a su rótulo ('Fotografía pendiente' -> 'Figura 49'), mientras las 48 figuras reales tienen rótulo antes de la imagen. Las páginas 156-158 son portrait y el ancho 8765 dxa es correcto para el área útil.",
+      "accion": "Opcional: mover cada rótulo antes de su marco y aplicar aplicar_bordes_campo (caja exterior, sin interiores) para que el marco se lea como espacio fotográfico. No cambia texto ni dimensiones.",
+      "impacto_paginas": 0,
+      "requiere_aprobacion": true
+    },
+    {
+      "id": "H09",
+      "severidad": "baja",
+      "titulo": "Página divisoria 'ANEXOS' casi vacía (p. 141 impresa 126)",
+      "medicion": "PDF p141 contiene 11 glifos ('126' y 'ANEXOS'). El párrafo 'ANEXOS' (Document.paragraphs[779], hijo 824 del cuerpo) porta el w:sectPr que cierra la sección de referencias; no puede eliminarse sin trasladar antes ese sectPr. Fany no usa divisoria: 'ANEXO' y 'Anexo 1' comparten página (PDF Fany p73).",
+      "accion": "Opcional y de riesgo medio: mover el w:sectPr de p824 al párrafo anterior (hijo 823), retirar pageBreakBefore de p824 y de 'ANEXO 1' (hijo 825) para que la divisoria y el Anexo 1 compartan la página landscape. Conserva el bookmark _Toc243512728 y la entrada del índice. Si no se autoriza, la divisoria se conserva.",
+      "impacto_paginas": -1,
+      "requiere_aprobacion": true
+    },
+    {
+      "id": "H10",
+      "severidad": "informativa",
+      "titulo": "Figura 6 y escudo de carátula por debajo de 300 DPI",
+      "medicion": "Figura 6: image7.png de 751x700 px mostrada a 5.5x5.13 in = 136.5 dpi. La única fuente candidata en el proyecto (salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig06_cadena_frio_champi_p12.jpeg) mide 280x265 px, inferior a la incrustada: no existe fuente mejor. Escudo de carátula: image1.png de 212x238 px a 1.8x2.02 in = 117.8 dpi. LOGO-UNAJMA.jpg mide 2048x2048 pero es cuadrada (aspecto 1.0 frente a 0.89) y su identidad no se ha verificado.",
+      "accion": "No remuestrear ni interpolar. Mantener Figura 6 y documentar el límite. Para el escudo, solo con autorización expresa y verificación visual de que LOGO-UNAJMA.jpg es el mismo emblema, se podría sustituir y recortar; no se propone inserción automática.",
+      "impacto_paginas": 0,
+      "requiere_aprobacion": true
+    },
+    {
+      "id": "H11",
+      "severidad": "informativa",
+      "titulo": "Geometría, secciones y campos ya conformes",
+      "medicion": "0 tablas flotantes; 59/59 con cantSplit y tblHeader; 0 OMML en celdas; anchos portrait <=8765 dxa (limite 8788), landscape 13720 y 13630 (limite 14000); margenes L=1701 (3 cm), R/T/B=1417 (2.5 cm); 7 secciones con 6 cambios de orientacion; S1 titlePg; S2 lowerRoman start=2; S3 decimal start=1; folio a la derecha en encabezado. Los 48 rotulos de figura preceden a su imagen (APA correcto): no se requiere reordenar figuras.",
+      "accion": "Conservar sin cambios. No normalizar docDefaults (Calibri 11 / after 200 / line 276) porque cada parrafo narrativo tiene overrides directos; tocarlo afectaria notas y celdas.",
+      "impacto_paginas": 0,
+      "requiere_aprobacion": false
+    }
+  ],
+  "plan_geometria": {
+    "base_de_indices": "Parrafos: base 0 de Document.paragraphs (excluye sdt y celdas). Tablas: se indica base 0 y etiqueta 1-based. Hijos del cuerpo: base 0 de w:body.iterchildren().",
+    "tipografia_indices_y_folios": {
+      "estilos": [
+        {"style_id": "Encabezado", "nombre": "header", "operacion": "rFonts TNR (ascii/hAnsi/cs) + sz=22 + szCs=22", "alcance": "6 encabezados con PAGE"},
+        {"style_id": "Tabladeilustraciones", "nombre": "table of figures", "operacion": "rFonts TNR (ascii/hAnsi/cs); conservar spacing after=0 line=240", "alcance": "103 parrafos de indice de figuras/tablas"}
+      ],
+      "parrafos_indice": {
+        "seleccion": "pStyle in {TDC1,TDC2,TDC3,Tabladeilustraciones}, incluidos los del sdt",
+        "operacion": "en w:pPr/w:rPr y en runs sin rPr: quitar asciiTheme/hAnsiTheme/cstheme, fijar TNR, sz/szCs=20 para TDC1-3 y 22 para listas",
+        "no_tocar": "TOC: ya esta en TNR 10 y sus numeros son TNR 10; no se altera su tamano"
+      },
+      "resultado_esperado": "Folios TNR 11; numeros y lideres de listas TNR 11; TOC TNR 10; cero Cambria fuera de las ecuaciones OMML"
+    },
+    "notas": {
+      "parrafos": [223, 234, 240, 245, 250, 256, 263, 269, 278, 283, 288, 290, 569, 575, 581, 588, 617, 629],
+      "operacion": "jc=left",
+      "conservar": "sz actual, line 240, prefijo 'Nota.' en cursiva"
+    },
+    "parrafo_advertencia": {
+      "parrafo": 646,
+      "operacion": "w:spacing line=360 lineRule=auto; w:ind firstLine=720",
+      "conservar": "before=240, after=360, jc=both, negrita inicial y cursiva del cuerpo"
+    },
+    "tablas": {
+      "rejilla_de_formularios": {
+        "tablas_1based": [47, 48, 49, 50, 51, 52],
+        "tablas_base0": [46, 47, 48, 49, 50, 51],
+        "operacion": "aplicar_bordes_rejilla(tabla, sz=4)",
+        "secuencia": "despues de blindar-todas, nunca antes"
+      },
+      "mantener_apa7": {
+        "tablas_1based": [44, 45, 46, 53, 54, 55],
+        "tablas_base0": [43, 44, 45, 52, 53, 54],
+        "operacion": "sin cambios de borde"
+      },
+      "celdas": {
+        "tablas_1based": [1, 45, 47, 48, 49],
+        "tablas_base0": [0, 44, 46, 47, 48],
+        "operacion": "spacing after=0 line=240 sz=20 en parrafos de celda sin after explicito (41 en total)",
+        "runs_formularios": {
+          "tablas_1based": [47, 48, 49],
+          "fila": 7,
+          "operacion": "rFonts TNR + sz=20 en los 18 runs de firma/DNI"
+        }
+      },
+      "marcos_fotografia": {
+        "tablas_1based": [56, 57, 58, 59],
+        "tablas_base0": [55, 56, 57, 58],
+        "estado": "opcional",
+        "operacion": "aplicar_bordes_campo(exterior, sin interiores) y mover el rotulo antes del marco",
+        "ancho": "8765 dxa correcto para portrait; no ampliar"
+      },
+      "geometria_intacta": {
+        "portrait_max_dxa": 8765,
+        "limite_portrait_dxa": 8788,
+        "landscape_T45": 13720,
+        "landscape_T53_T54": 13630,
+        "limite_landscape_dxa": 14000
+      }
+    },
+    "divisor_anexos": {
+      "estado": "opcional_riesgo_medio",
+      "parrafo_document_paragraphs": 779,
+      "hijo_cuerpo": 824,
+      "hijo_anterior": 823,
+      "hijo_siguiente": 825,
+      "bookmark": "_Toc243512728",
+      "operacion": [
+        "mover w:sectPr de w:pPr del hijo 824 al w:pPr del hijo 823",
+        "retirar w:pageBreakBefore del hijo 824",
+        "retirar w:pageBreakBefore del hijo 825 (ANEXO 1)"
+      ],
+      "prohibido": "eliminar el parrafo o el bookmark: romperia la entrada ANEXOS del indice",
+      "impacto_paginas": -1
+    },
+    "conservar_sin_cambios": [
+      "7 secciones y sus orientaciones (S4 y S6 landscape; S1, S2, S3, S5, S7 portrait)",
+      "margenes L=1701 dxa y R/T/B=1417 dxa",
+      "S2 lowerRoman start=2 y S3 decimal start=1",
+      "encabezados desvinculados con folio a la derecha",
+      "59 tablas con cantSplit y tblHeader",
+      "12 ecuaciones OMML y 0 OMML en tablas",
+      "53 referencias con sangria francesa 720 dxa",
+      "38 hipervinculos externos y 214 PAGEREF",
+      "48 rotulos de figura antes de su imagen",
+      "anchos de tabla y secciones apaisadas necesarias"
+    ]
+  },
+  "propuesta_extension_motor": {
+    "justificacion": "El motor cubre auditoria, blindaje, campos, PDF e imagenes, pero no expone formato de parrafo por indice, fuente de estilo, rejilla selectiva ni movimiento de parrafos/sectPr. Sin estas operaciones, la unica via seria un script ad-hoc, prohibido. Se propone una extension estrictamente aditiva, sin cambiar firmas ni comportamiento existente.",
+    "funciones_nuevas": [
+      {
+        "nombre": "normalizar_tipografia_indices_y_encabezados",
+        "lineas_estimadas": 45,
+        "alcance": "estilos Encabezado y Tabladeilustraciones; parrafos TDC1-3 y Tabladeilustraciones dentro y fuera del sdt",
+        "parametros": {"tamano_toc_pt": 10.0, "tamano_listas_pt": 11.0, "tamano_folio_pt": 11.0},
+        "idempotente": true
+      },
+      {
+        "nombre": "aplicar_formato_parrafos",
+        "lineas_estimadas": 45,
+        "alcance": "jc, spacing (line/before/after/lineRule), ind (firstLine/left/hanging) y rPr (rFonts/sz/szCs/b/i) por indice",
+        "uso": "18 notas, parrafo 646, runs de firma"
+      },
+      {
+        "nombre": "aplicar_bordes_tablas",
+        "lineas_estimadas": 15,
+        "alcance": "envoltorio de aplicar_bordes_rejilla y aplicar_bordes_campo por indice",
+        "uso": "T47-T52 y, opcional, T56-T59"
+      },
+      {
+        "nombre": "mover_parrafos",
+        "lineas_estimadas": 25,
+        "alcance": "mover un w:p antes/despues de otro sin duplicar ni perder bookmarks",
+        "uso": "rotulos de Figura 49-52 y divisor ANEXOS"
+      },
+      {
+        "nombre": "mover_sectpr",
+        "lineas_estimadas": 20,
+        "alcance": "trasladar w:sectPr entre parrafos conservando headerReference y pgNumType",
+        "uso": "divisor ANEXOS"
+      }
+    ],
+    "dispatch": {
+      "claves_nuevas_en_cirugia_extension": [
+        "tipografia_indices",
+        "formato_parrafos",
+        "tablas.rejilla",
+        "tablas.campos",
+        "mover_parrafos",
+        "mover_sectpr"
+      ],
+      "modificaciones_a_funciones_existentes": "ninguna; solo ramas nuevas en el despachador"
+    },
+    "total_lineas_estimadas": 150,
+    "prueba": "ejecutar la extension sobre una copia _preflight_probe.docx, auditar y comparar hashes antes de tocar la cadena v20"
+  },
+  "comandos_motor": {
+    "interprete": "C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python.exe",
+    "raiz": "C:/MisInvestigaciones/tesis/sivac",
+    "secuencia_prevista": [
+      "python scripts/utilidades/docx_quirurgico.py auditar salidas/documentos/informe_final_v19.docx --json",
+      "python scripts/utilidades/docx_quirurgico.py blindar-todas salidas/documentos/_v20_paso0.docx --salida salidas/documentos/_v20_paso1.docx",
+      "python scripts/utilidades/docx_quirurgico.py cirugia-extension salidas/documentos/_v20_paso1.docx --plan salidas/reportes_maquetacion/plan_v20.json --salida salidas/documentos/_v20_paso2.docx --reporte salidas/reportes_maquetacion/reporte_v20_paso2.json",
+      "python scripts/utilidades/docx_quirurgico.py actualizar-campos salidas/documentos/_v20_paso2.docx --salida salidas/documentos/_v20_paso3.docx --reporte salidas/reportes_maquetacion/campos_v20.json",
+      "python scripts/utilidades/docx_quirurgico.py auditar salidas/documentos/_v20_paso3.docx --json",
+      "python scripts/utilidades/docx_quirurgico.py exportar-pdf salidas/documentos/_v20_paso3.docx --salida salidas/documentos/_v20_paso3.pdf",
+      "python scripts/utilidades/docx_quirurgico.py renderizar-paginas salidas/documentos/_v20_paso3.pdf --paginas 1,4,6,8,9,10,11,12,126,141,142,148,149,150,151,152,156,157,158 --dpi 150 --salida-dir salidas/reportes_maquetacion/paginas_control_v20"
+    ],
+    "advertencias": [
+      "blindar-todas reescribe tblBorders en las 59 tablas: debe ejecutarse antes de la rejilla o no ejecutarse (v19 ya cumple 59/59).",
+      "actualizar-campos es obligatorio antes de exportar: los resultados PAGE cacheados en los encabezados dicen '1' y solo Word los recalcula.",
+      "cirugia-extension no admite --solo-verificar; la prueba en seco se hace sobre una copia _preflight_probe.docx.",
+      "aplicar-ordenes --solo-verificar sirve para ordenes de texto, no para formato."
+    ]
+  },
+  "controles_conservacion": {
+    "sha256_docx_base": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "sha256_pdf_base": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+    "texto": {
+      "caracteres_concatenados": 281438,
+      "sha256_texto_orden": "dbd58ca93cc6bf8983d59863ecd21b5228cb8e18615c81e352f4f3b4cd2b852d",
+      "sha256_texto_multiset": "facf4674c6e513afd61c8dfa25e6daa58c9cc460074ea203faac1832f7e7402e",
+      "nodos_wt": 4761,
+      "regla": "El multiset debe permanecer identico. El hash ordenado puede cambiar solo si se autoriza mover parrafos (H08/H09)."
+    },
+    "estructura": {
+      "parrafos": 827,
+      "tablas": 59,
+      "omml": 12,
+      "omml_para": 1,
+      "omml_en_tablas": 0,
+      "hipervinculos": 252,
+      "paginaref": 214,
+      "seq": 103,
+      "toc": 3,
+      "secciones": 7,
+      "imagenes": 49,
+      "referencias": 53,
+      "anchos": {"portrait_max": 8765, "landscape_max": 13720}
+    },
+    "tablas_texto_sha256_16": {
+      "1": "f451f24c33ebaf30", "2": "1881ad34a3406f68", "3": "0d6ae6eb1eb81967",
+      "4": "8f2eac9989700650", "5": "2837f033babc2490", "6": "772a72d5913252a2",
+      "7": "293860c87e03576f", "8": "21896da1f274f752", "9": "254cd9dc5ca2f4e2",
+      "10": "e4367172a64a3a2b", "11": "616b0dfca7049208", "12": "ee9a6a15732e263b",
+      "13": "f7fb91b935166bc2", "14": "afb7b88946ba19a3", "15": "609b28866b2f0fd1",
+      "16": "71e0858a955ca2c4", "17": "dabb3a9d4391a3d9", "18": "8402bed52730fcda",
+      "19": "5c2b0c437d3b7163", "20": "64e65f8037f91803", "21": "ca8aaf88233e6a88",
+      "22": "83d17df4555562e9", "23": "b253cbc11474c1a8", "24": "52e35d2e8656b54b",
+      "25": "d5ab13211a862e0b", "26": "b7814c8511f6d1b7", "27": "ca6311ae3ed5f07a",
+      "28": "c39a7a04b921e4a7", "29": "c87497a408ad1434", "30": "682d84309f667dbf",
+      "31": "bd8764bc42663b7e", "32": "c1a3edee3384dda0", "33": "01344ed63970c1f7",
+      "34": "64f3b1b9d1f00844", "35": "9bc561d46a9d7922", "36": "5c6af684d9e3f97f",
+      "37": "bbb8e90db480f2b3", "38": "af1963bd7d5e4eb2", "39": "95f15edac04eb039",
+      "40": "7ba38bab9878de86", "41": "11585d77df485deb", "42": "d4c73f3e56225c86",
+      "43": "cfcb4a79164cc016", "44": "c53636936b450b69", "45": "586cdd11bedd7644",
+      "46": "01344ed63970c1f7", "47": "e25c792c33d6f49e", "48": "7987305f1b07073b",
+      "49": "e2ce00b72351d85a", "50": "2535e5c7f7718c7c", "51": "22c7b0f9e96917f1",
+      "52": "506c8e0291d4aa8c", "53": "34621311bf233b62", "54": "30b6a96da7509c2f",
+      "55": "d1937a28d800d727", "56": "294bc9ba3a51eee3", "57": "294bc9ba3a51eee3",
+      "58": "294bc9ba3a51eee3", "59": "294bc9ba3a51eee3"
+    },
+    "nota_tablas": "T33 y T46 comparten hash porque la matriz de operacionalizacion se repite integra en el Anexo 2: es duplicacion editorial existente, no un error; ambas se conservan. T56-T59 comparten hash por ser marcos identicos.",
+    "valores_estadisticos": "Ninguna operacion del plan escribe texto, numeros ni celdas. Los 59 hashes deben ser identicos al cierre; cualquier diferencia es un fallo bloqueante.",
+    "prohibiciones_de_conservacion": [
+      "No cambiar un solo valor de las tablas 49 y 50 (matrices pretest/postest) ni de las tablas 35-43 (resultados).",
+      "No inventar datos, jueces, firmas, fotografias ni DOI.",
+      "No remuestrear la Figura 6 ni el escudo.",
+      "No integrar los instrumentos limpios v02 en el informe v19.",
+      "No convertir los indices a texto ni duplicar el TOC."
+    ]
+  },
+  "pruebas_previstas": [
+    {"id": "P01", "prueba": "Multiset de texto identico", "criterio": "sha256_texto_multiset == facf4674..."},
+    {"id": "P02", "prueba": "Hashes de las 59 tablas identicos", "criterio": "0 diferencias"},
+    {"id": "P03", "prueba": "Conteos estructurales", "criterio": "827 parrafos, 59 tablas, 12 OMML, 53 refs, 252 hipervinculos, 3 TOC, 214 PAGEREF, 103 SEQ, 7 secciones"},
+    {"id": "P04", "prueba": "Auditoria OpenXML", "criterio": "0 flotantes; 59/59 cantSplit y tblHeader; 0 OMML en tablas; margenes OK"},
+    {"id": "P05", "prueba": "Rejilla selectiva", "criterio": "T47-T52 con insideH/insideV/left/right; T44-T46 y T53-T55 solo top/bottom"},
+    {"id": "P06", "prueba": "Tipografia del PDF", "criterio": "solo TimesNewRoman en texto, encabezados e indices; Cambria solo en ecuaciones (Cambria Math)"},
+    {"id": "P07", "prueba": "Folios y secciones", "criterio": "romanos ii-x en preliminares; arabigo 1 en Introduccion; folio a la derecha; 6 secciones apaisadas conservadas"},
+    {"id": "P08", "prueba": "Conteo de paginas", "criterio": "158 sin quitar divisor; 157 si se autoriza H09"},
+    {"id": "P09", "prueba": "Referencias", "criterio": "53 parrafos con hanging=720 y left=720; cursivas intactas"},
+    {"id": "P10", "prueba": "Figura 6", "criterio": "hash de image7.png sin cambios; 136.5 dpi documentado"},
+    {"id": "P11", "prueba": "Revision visual", "criterio": "PNG de pp. 1, 4-12, 126, 141-142, 148-152, 156-158 sin desbordes ni rotulos separados"}
+  ],
+  "pendientes": [
+    "Informes de los tres auditores aun no entregados (salidas/reportes_maquetacion/auditoria_integral_v20_20261022/ vacia): pueden añadir ordenes de prosa o estructura que este preflight no cubre.",
+    "Aprobacion expresa del tesista para compilar v20; no consta autorizacion registrada.",
+    "Decision sobre H03 (compactar el indice general a niveles 1-2) y H09 (quitar la divisoria ANEXOS).",
+    "Decision sobre H08 (caja y orden de los marcos de fotografia).",
+    "Verificacion visual e autorizacion para el escudo de caratula (LOGO-UNAJMA.jpg); sin ella no se sustituye.",
+    "Confirmar si el folio normalizado se fija en 11 pt (igual al actual) o en 12 pt (igual al cuerpo).",
+    "Figura 6: no existe fuente de 300 dpi en el proyecto; el limite se mantiene y se declara."
+  ],
+  "no_hacer": [
+    "No emitir informe_final_v20.docx ni PDF en esta etapa.",
+    "No modificar v19, referencias/ ni PROYECTO_TESIS.docx.",
+    "No crear scripts ad-hoc v20_x.py.",
+    "No reconstruir ni convertir indices nativos.",
+    "No cambiar contenido, cifras, citas ni fuentes.",
+    "No forzar todas las secciones a vertical."
+  ]
+}

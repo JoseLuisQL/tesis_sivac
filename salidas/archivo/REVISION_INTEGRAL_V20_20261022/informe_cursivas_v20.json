@@ -1,0 +1,26 @@
+{
+  "cursivas_aplicadas": 2,
+  "cursivas_fallidas": 0,
+  "acciones": [
+    {
+      "lote": "plan_cursivas_referencias_v20",
+      "indice_docx": 727,
+      "ubicacion": "Referencia Aiken (1985): título de revista y volumen en cursiva",
+      "texto": "Educational and Psychological Measurement, 45",
+      "estado": "aplicada",
+      "detalle": "3 runs nativos"
+    },
+    {
+      "lote": "plan_cursivas_referencias_v20",
+      "indice_docx": 777,
+      "ubicacion": "Referencia Wasswa et al. (2023): título de revista y volumen en cursiva",
+      "texto": "Journal of Pharmaceutical Policy and Practice, 16",
+      "estado": "aplicada",
+      "detalle": "3 runs nativos"
+    }
+  ],
+  "sha256_origen": "106458f7106f104b2ee7d0569ab43c0aa6ea62df29764fa119b2a1c410516c14",
+  "solo_verificar": false,
+  "sha256_destino": "1f2e4bea8bf0e446ae4b2f151a84ecca67da40d14695a543c8215c0aa416ae73",
+  "salida": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20_FINAL.docx"
+}

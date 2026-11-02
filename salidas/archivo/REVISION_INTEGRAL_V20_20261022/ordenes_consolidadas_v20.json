@@ -1,0 +1,305 @@
+{
+ "sustituciones": [
+  {
+   "id": "O-01",
+   "ancla_original": "A continuación, en las Tablas 10 a 24 se documenta de forma exhaustiva el diccionario de datos de las tablas más relevantes del esquema de la base de datos de SIVAC.",
+   "texto_nuevo": "A continuación, en las Tablas 10 a 24 se documenta el diccionario de datos de las tablas más relevantes del esquema de la base de datos de SIVAC.",
+   "ocurrencias": 1,
+   "indice_docx": 412
+  },
+  {
+   "id": "O-02",
+   "ancla_original": "La fase de pruebas en Extreme Programming constituye el componente que garantiza la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer).",
+   "texto_nuevo": "La fase de pruebas en Extreme Programming constituye el componente que sustenta la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer).",
+   "ocurrencias": 1,
+   "indice_docx": 525
+  },
+  {
+   "id": "O-03",
+   "ancla_original": "Nota. Cobertura automatizada que garantiza la estabilidad del software ante refactorizaciones o actualizaciones normativas.",
+   "texto_nuevo": "Nota. Cobertura automatizada que sustenta la estabilidad del software ante refactorizaciones o actualizaciones normativas.",
+   "ocurrencias": 1,
+   "indice_docx": 533
+  },
+  {
+   "id": "O-04",
+   "ancla_original": "Para garantizar la validez metodológica interna y neutralizar potenciales sesgos de reactividad, historia o fatiga en las mediciones",
+   "texto_nuevo": "Para reforzar la validez metodológica interna y atenuar potenciales sesgos de reactividad, historia o fatiga en las mediciones",
+   "ocurrencias": 1,
+   "indice_docx": 567
+  },
+  {
+   "id": "O-05",
+   "ancla_original": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las cuatro características de calidad esenciales para sistemas de gestión sanitaria: adecuación funcional, usabilidad, eficiencia de desempeño, y fiabilidad y seguridad. En la Tabla 28 se sintetizan los resultados de la evaluación.",
+   "texto_nuevo": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las características de calidad presentadas en la Tabla 28: adecuación funcional, usabilidad, eficiencia de desempeño, fiabilidad y seguridad.",
+   "ocurrencias": 1,
+   "indice_docx": 539
+  },
+  {
+   "id": "O-06",
+   "ancla_original": "La investigación se enmarcó en el nivel explicativo de evaluación de intervención tecnológica;",
+   "texto_nuevo": "La investigación se enmarcó en el nivel explicativo, orientado a la evaluación de una intervención tecnológica;",
+   "ocurrencias": 1,
+   "indice_docx": 553
+  },
+  {
+   "id": "O-07",
+   "ancla_original": "Estructura taxonómica inmutable aprobada en la matriz de operacionalización institucional de la UNAJMA.",
+   "texto_nuevo": "Dimensiones e indicadores de la variable dependiente, según la matriz de operacionalización de la investigación.",
+   "ocurrencias": 1,
+   "indice_docx": 353
+  },
+  {
+   "id": "O-08",
+   "ancla_original": "En concordancia con las decisiones metodológicas adoptadas, el análisis de confiabilidad se circunscribió al Instrumento N.° 03",
+   "texto_nuevo": "En concordancia con el diseño metodológico adoptado, el análisis de confiabilidad se circunscribió al Instrumento N.° 03",
+   "ocurrencias": 1,
+   "indice_docx": 648
+  },
+  {
+   "id": "O-09",
+   "ancla_original": "El contraste inferencial de las hipótesis formuladas en la matriz de consistencia definitiva se desarrolló contrastando",
+   "texto_nuevo": "El contraste inferencial de las hipótesis formuladas en el Capítulo I se desarrolló contrastando",
+   "ocurrencias": 1,
+   "indice_docx": 683
+  },
+  {
+   "id": "O-10",
+   "ancla_original": "Se concluye que las diferencias pareadas pretest-postest satisfacen plenamente el supuesto de ajuste normal gaussiano, habilitando el uso legítimo y preferente de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13.",
+   "texto_nuevo": "Se concluye que las diferencias pareadas pretest-postest no se apartan de manera significativa del supuesto de normalidad, lo que habilita el uso de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13.",
+   "ocurrencias": 1,
+   "indice_docx": 679
+  },
+  {
+   "id": "O-11",
+   "ancla_original": "Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO reduce significativamente las inconsistencias documentales y las discrepancias entre existencias físicas y registros.",
+   "texto_nuevo": "Estos hallazgos evidencian que la automatización del Kardex bajo la regla FEFO se asocia con una reducción de las inconsistencias documentales y de las discrepancias entre existencias físicas y registros.",
+   "ocurrencias": 1,
+   "indice_docx": 663
+  },
+  {
+   "id": "O-12",
+   "ancla_original": "Estos hallazgos confirman que la exactitud contable del kardex no depende ya de la pericia aritmética del operador, sino de la validación transaccional automatizada: la regla FEFO impide despachar lotes de vencimiento tardío cuando existen existencias próximas a caducar y el sistema bloquea toda transacción cuyo saldo resulte insuficiente.",
+   "texto_nuevo": "Estos hallazgos confirman que la exactitud contable del kardex no depende ya de la pericia aritmética del operador, sino de la validación transaccional automatizada.",
+   "ocurrencias": 1,
+   "indice_docx": 712
+  },
+  {
+   "id": "O-13",
+   "ancla_original": "Estos resultados ratifican la hipótesis formulada por Davis (1989) y Venkatesh et al. (2003), en el sentido de que los usuarios sanitarios adoptan favorablemente las plataformas digitales cuando experimentan de manera directa que el sistema reduce el esfuerzo cognitivo, automatiza tareas tediosas y brinda confianza en la emisión de documentos de auditoría institucional (Ministerio de Salud del Perú, 2022).",
+   "texto_nuevo": "Estos resultados admiten una lectura desde los enfoques de aceptación tecnológica considerados en el marco teórico, que sitúan la utilidad percibida y la aceptación del proceso entre las condiciones de la disposición del usuario hacia un sistema; la evidencia describe ese comportamiento en el grupo estudiado y no constituye, por sí misma, una validación de dichos enfoques ni de sus constructos en el ámbito sanitario.",
+   "ocurrencias": 1,
+   "indice_docx": 713
+  },
+  {
+   "id": "O-14",
+   "ancla_original": "respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), erradicando las fallas de arrastre en los libros de kardex.",
+   "texto_nuevo": "respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), reduciendo de manera sustancial las fallas de arrastre en los libros de kardex.",
+   "ocurrencias": 1,
+   "indice_docx": 718
+  },
+  {
+   "id": "O-15",
+   "ancla_original": "El propósito de la presente investigación fue determinar de qué manera la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas",
+   "texto_nuevo": "El propósito de la presente investigación fue determinar en qué medida la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas",
+   "ocurrencias": 1,
+   "indice_docx": 710
+  },
+  {
+   "id": "O-16",
+   "ancla_original": "La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas y descarta que estas obedezcan a fluctuaciones muestrales.",
+   "texto_nuevo": "La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas en el conjunto de prueba analizado, en el marco de un diseño preexperimental de un solo grupo que no permite aislar por completo explicaciones alternativas.",
+   "ocurrencias": 1,
+   "indice_docx": 710
+  },
+  {
+   "id": "O-17",
+   "ancla_original": "sino marcos ingenieriles de construcción y aseguramiento de calidad que garantizan la integridad funcional y operativa del artefacto antes de contrastar su efecto",
+   "texto_nuevo": "sino marcos ingenieriles de construcción y aseguramiento de calidad que sustentan la integridad funcional y operativa del artefacto antes de contrastar su efecto",
+   "ocurrencias": 1,
+   "indice_docx": 228
+  },
+  {
+   "id": "O-18",
+   "ancla_original": "P-valores ajustados con corrección Holm-Bonferroni garantizan que no existe inflación de falsos positivos en los contrastes múltiples.",
+   "texto_nuevo": "P-valores ajustados con corrección Holm-Bonferroni reducen el riesgo de inflación de falsos positivos en los contrastes múltiples.",
+   "ocurrencias": 1,
+   "indice_docx": 695
+  },
+  {
+   "id": "O-19",
+   "ancla_original": "los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA, conforme al procedimiento descrito en el Capítulo IV.",
+   "texto_nuevo": "cuyo proceso de validación de contenido por juicio de tres expertos de la EPIS-UNAJMA se describe en el Capítulo IV.",
+   "ocurrencias": 1,
+   "indice_docx": 139
+  },
+  {
+   "id": "O-20",
+   "ancla_original": "los cuales serán sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme al procedimiento descrito en el Capítulo IV",
+   "texto_nuevo": "cuyo proceso de validación de contenido por juicio de tres expertos de la EPIS-UNAJMA se describe en el Capítulo IV",
+   "ocurrencias": 1,
+   "indice_docx": 151
+  },
+  {
+   "id": "O-23",
+   "ancla_original": "3.3.5. Fase V: Despliegue Físico y Puesta en Producción",
+   "texto_nuevo": "3.3.5. Despliegue y puesta en operación",
+   "ocurrencias": 1,
+   "indice_docx": 542
+  },
+  {
+   "id": "O-24",
+   "ancla_original": "and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, all of which will undergo content validation by a panel of three expert judges from EPIS-UNAJMA, following the procedure described in Chapter IV.",
+   "texto_nuevo": "and a structured questionnaire based on the Technology Acceptance Model (TAM) were designed, whose content validation by a panel of three expert judges from EPIS-UNAJMA is described in Chapter IV.",
+   "ocurrencias": 1,
+   "indice_docx": 142
+  },
+  {
+   "id": "ORD-INT-03",
+   "ancla_original": "sobre los seis indicadores para controlar rigurosamente la tasa de error familiar tipo I (FWER)",
+   "texto_nuevo": "sobre los seis indicadores y el puntaje global de satisfacción TAM (siete contrastes en total) para controlar rigurosamente la tasa de error familiar tipo I (FWER)",
+   "ocurrencias": 1,
+   "indice_docx": 640
+  },
+  {
+   "id": "ORD-INT-05",
+   "ancla_original": "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación",
+   "texto_nuevo": "Se incluyen los tres instrumentos oficiales diseñados para la investigación",
+   "ocurrencias": 1,
+   "indice_docx": 797
+  },
+  {
+   "id": "ORD-INT-06",
+   "ancla_original": "Los coeficientes V de Aiken, IVC y Alfa de Cronbach se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces.",
+   "texto_nuevo": "Los coeficientes V de Aiken e IVC se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces. El coeficiente Alfa de Cronbach reportado en la Tabla 35 corresponde a un cálculo provisional sobre datos de prueba.",
+   "ocurrencias": 1,
+   "indice_docx": 806
+  },
+  {
+   "id": "ORD-INT-07",
+   "ancla_original": "logrando una herramienta robusta, validada y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023",
+   "texto_nuevo": "logrando una herramienta robusta, verificada funcionalmente y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023",
+   "ocurrencias": 1,
+   "indice_docx": 714
+  },
+  {
+   "id": "ORD-INT-14",
+   "ancla_original": "para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial",
+   "texto_nuevo": "para reducir el riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial",
+   "ocurrencias": 1,
+   "indice_docx": 644
+  },
+  {
+   "id": "ORD-INT-15",
+   "ancla_original": "erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados",
+   "texto_nuevo": "reduciendo los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados",
+   "ocurrencias": 1,
+   "indice_docx": 693
+  },
+  {
+   "id": "ORD-INT-17",
+   "ancla_original": "estadísticos de contraste (gl = 14)",
+   "texto_nuevo": "estadísticos de contraste (n = 14)",
+   "ocurrencias": 1,
+   "indice_docx": 678
+  },
+  {
+   "id": "ORD-INT-10/P2214/1",
+   "ancla_original": "Ficha de observación de tiempos cronometrados",
+   "texto_nuevo": "Ficha de Registro Cronométrico de Tiempos Operativos",
+   "ocurrencias": 1,
+   "indice_docx": 615
+  },
+  {
+   "id": "ORD-INT-10/P2214/2",
+   "ancla_original": "Guía de cotejo documental",
+   "texto_nuevo": "Ficha de Auditoría y Cotejo Documental de Lotes y Kardex",
+   "ocurrencias": 1,
+   "indice_docx": 615
+  },
+  {
+   "id": "ORD-INT-10/P2302/1",
+   "ancla_original": "Ficha de Registro Cronométrico",
+   "texto_nuevo": "Ficha de Registro Cronométrico de Tiempos Operativos",
+   "ocurrencias": 1,
+   "indice_docx": 648
+  },
+  {
+   "id": "ORD-INT-10/P2302/2",
+   "ancla_original": "Ficha de Cotejo Documental de Kardex",
+   "texto_nuevo": "Ficha de Auditoría y Cotejo Documental de Lotes y Kardex",
+   "ocurrencias": 1,
+   "indice_docx": 648
+  },
+  {
+   "id": "ORD-INT-10/T33.2.4",
+   "ancla_original": "Ficha de observación de tiempos cronometrados",
+   "texto_nuevo": "Ficha de Registro Cronométrico de Tiempos Operativos",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 33, fila 2, columna 4"
+  },
+  {
+   "id": "ORD-INT-10/T33.3.4",
+   "ancla_original": "Guía de cotejo de consistencia documental",
+   "texto_nuevo": "Ficha de Auditoría y Cotejo Documental de Lotes y Kardex",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 33, fila 3, columna 4"
+  },
+  {
+   "id": "ORD-INT-10/T33.4.4",
+   "ancla_original": "Cuestionario de satisfacción del usuario y aceptación tecnológica",
+   "texto_nuevo": "Cuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A)",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 33, fila 4, columna 4"
+  },
+  {
+   "id": "ORD-INT-10/T34.2.2",
+   "ancla_original": "Ficha de observación de tiempos cronometrados",
+   "texto_nuevo": "Ficha de Registro Cronométrico de Tiempos Operativos",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 34, fila 2, columna 2"
+  },
+  {
+   "id": "ORD-INT-10/T34.3.2",
+   "ancla_original": "Guía de cotejo documental",
+   "texto_nuevo": "Ficha de Auditoría y Cotejo Documental de Lotes y Kardex",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 34, fila 3, columna 2"
+  },
+  {
+   "id": "ORD-INT-10/T34.4.2",
+   "ancla_original": "Cuestionario de satisfacción del usuario y aceptación tecnológica (Modalidad A)",
+   "texto_nuevo": "Cuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A)",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 34, fila 4, columna 2"
+  },
+  {
+   "id": "ORD-INT-19/P2192",
+   "ancla_original": "vale pecosa",
+   "texto_nuevo": "vale PECOSA",
+   "ocurrencias": 1,
+   "indice_docx": 593
+  },
+  {
+   "id": "ORD-INT-19/P2214",
+   "ancla_original": "emisión de vale pecosa",
+   "texto_nuevo": "emisión de vale PECOSA",
+   "ocurrencias": 1,
+   "indice_docx": 615
+  },
+  {
+   "id": "ORD-INT-19/T29",
+   "ancla_original": "vales pecosa físicos",
+   "texto_nuevo": "vales PECOSA físicos",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 29, fila 2, columna 2"
+  },
+  {
+   "id": "ORD-INT-19/T31",
+   "ancla_original": "vales pecosa",
+   "texto_nuevo": "vales PECOSA",
+   "ocurrencias": 1,
+   "ubicacion": "TABLA 31, fila 3, columna 2"
+  }
+ ]
+}

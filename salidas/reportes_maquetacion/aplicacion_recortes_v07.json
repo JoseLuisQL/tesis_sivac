@@ -1,0 +1,373 @@
+{
+  "metadatos": {
+    "entrada": "salidas\\documentos\\informe_final_v06.docx",
+    "salida": "salidas\\documentos\\informe_final_v07.docx",
+    "ordenes": 33,
+    "aplicadas": 33,
+    "omitidas": 0,
+    "fallidas": 0,
+    "excluidos": [],
+    "solo_verificar": false
+  },
+  "aplicadas": [
+    {
+      "indice_docx": 28,
+      "recorte_cola": {
+        "desde": 340,
+        "prefijo": "ción de datos y validación operativa del sistema web SIVAC. ",
+        "sufijo": "Estrategia Sanitaria de Inmunizaciones y a los 14 profesiona"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 28
+    },
+    {
+      "indice_docx": 145,
+      "recorte_cola": {
+        "desde": 1646,
+        "prefijo": "ay yupaykunaqa post-test wichq’aypim suyachkan [Pendiente]. ",
+        "sufijo": "web llikapa yanapayninwan imaynatas sapakilla hampi churanak"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 145
+    },
+    {
+      "indice_docx": 152,
+      "recorte_cola": {
+        "desde": 813,
+        "prefijo": " sanitaria en redes de salud de alta dispersión geográfica. ",
+        "sufijo": "metodológico e institucional directo para la gestión sanitar"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 152
+    },
+    {
+      "indice_docx": 163,
+      "recorte_cola": {
+        "desde": 520,
+        "prefijo": "ución presupuestal no forman parte de la variable evaluada. ",
+        "sufijo": "gestión de movimientos mensuales de vacunas comprende exclus"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 163
+    },
+    {
+      "indice_docx": 191,
+      "recorte_cola": {
+        "desde": 387,
+        "prefijo": "de la satisfacción y aceptación del sistema por el usuario. ",
+        "sufijo": "la gestión de movimientos mensuales de vacunas en el persona"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 191
+    },
+    {
+      "indice_docx": 221,
+      "recorte_cola": {
+        "desde": 262,
+        "prefijo": "y su diferenciación específica frente al sistema web SIVAC. ",
+        "sufijo": "comparativa de los antecedentes internacionales y nacionales"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 221
+    },
+    {
+      "indice_docx": 228,
+      "recorte_cola": {
+        "desde": 1105,
+        "prefijo": "fecto sobre la gestión de movimientos mensuales de vacunas. ",
+        "sufijo": "actúa epistemológicamente como la intervención tecnológica a"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 228
+    },
+    {
+      "indice_docx": 253,
+      "recorte_cola": {
+        "desde": 1316,
+        "prefijo": "n las dimensiones de evaluación de la variable dependiente. ",
+        "sufijo": "de salud, Moumane et al. (2024, p. 3) destacan que la adecua"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 253
+    },
+    {
+      "indice_docx": 370,
+      "recorte_cola": {
+        "desde": 633,
+        "prefijo": " datos y archivos en PostgreSQL y almacenamiento persistente",
+        "sufijo": ". desacoplado en capas lógicas intercomunicadas mediante una"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 370
+    },
+    {
+      "indice_docx": 383,
+      "recorte_cola": {
+        "desde": 536,
+        "prefijo": ".0), normostock (2.0 ≤ MSD ≤ 6.0) y sobrestock (MSD > 6.0). ",
+        "sufijo": "Inteligencia Logística ICI-DEMID y Clasificación Semafórica "
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 383
+    },
+    {
+      "indice_docx": 446,
+      "recorte_cola": {
+        "desde": 218,
+        "prefijo": "onales. En la Tabla 23 se sintetiza el stack de desarrollo. ",
+        "sufijo": "priorizando el rendimiento, la robustez tipográfica y la com"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 446
+    },
+    {
+      "indice_docx": 525,
+      "recorte_cola": {
+        "desde": 317,
+        "prefijo": "ación formal con el cliente en el sitio (On-site Customer). ",
+        "sufijo": "pilar fundamental que garantiza la fiabilidad operativa del "
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 525
+    },
+    {
+      "indice_docx": 553,
+      "recorte_cola": {
+        "desde": 928,
+        "prefijo": " de los procesos operativos en la cadena de frío sanitaria. ",
+        "sufijo": "explicativo de evaluación de intervención tecnológica; no ob"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 553
+    },
+    {
+      "indice_docx": 555,
+      "recorte_cola": {
+        "desde": 983,
+        "prefijo": "las hipótesis formuladas (Hernández-Sampieri et al., 2014). ",
+        "sufijo": "sistemáticamente a lo largo de siete fases consecutivas prev"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 555
+    },
+    {
+      "indice_docx": 567,
+      "recorte_cola": {
+        "desde": 829,
+        "prefijo": " protocolo de ejecución de la intervención preexperimental. ",
+        "sufijo": "neutralizar potenciales sesgos de reactividad, historia o fa"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 567
+    },
+    {
+      "indice_docx": 648,
+      "recorte_cola": {
+        "desde": 756,
+        "prefijo": "tenta en el protocolo de calibración inter-observador PMMV. ",
+        "sufijo": "constituye un requisito metodológico insoslayable para certi"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 648
+    },
+    {
+      "indice_docx": 649,
+      "recorte_cola": {
+        "desde": 1111,
+        "prefijo": " la subescala UP un valor de .841 (IC 95%: [0.640, 0.943]). ",
+        "sufijo": "Cuestionario TAM (conformada por ocho reactivos atómicos en "
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 649
+    },
+    {
+      "indice_docx": 650,
+      "recorte_cola": {
+        "desde": 724,
+        "prefijo": "a 4 se consolidan los coeficientes psicométricos obtenidos. ",
+        "sufijo": "psicométrico de .800 exigido por la literatura científica (G"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 650
+    },
+    {
+      "indice_docx": 656,
+      "recorte_cola": {
+        "desde": 1030,
+        "prefijo": " 6 se detallan estas distribuciones temporales emparejadas.,",
+        "sufijo": " los resultados evidenciaron una reducción temporal drástica"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 656
+    },
+    {
+      "indice_docx": 663,
+      "recorte_cola": {
+        "desde": 1220,
+        "prefijo": " y las discrepancias entre existencias físicas y registros. ",
+        "sufijo": "Los parámetros descriptivos se consolidan en la Tabla 6 y se"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 663
+    },
+    {
+      "indice_docx": 670,
+      "recorte_cola": {
+        "desde": 1164,
+        "prefijo": "presenta el comportamiento descriptivo de estas mediciones. ",
+        "sufijo": "evaluación mediante el modelo TAM evidenció un cambio cualit"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 670
+    },
+    {
+      "indice_docx": 683,
+      "recorte_cola": {
+        "desde": 727,
+        "prefijo": "rica de Wilcoxon (con el tamaño del efecto r de Rosenthal). ",
+        "sufijo": "matriz de consistencia definitiva (DEC-007 / DEC-027) se des"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 683
+    },
+    {
+      "indice_docx": 706,
+      "recorte_cola": {
+        "desde": 578,
+        "prefijo": "alance consolidado de la decisión inferencial multivariada. ",
+        "sufijo": "web SIVAC mejora significativamente la gestión de movimiento"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 706
+    },
+    {
+      "indice_docx": 710,
+      "recorte_cola": {
+        "desde": 890,
+        "prefijo": " y descarta que estas obedezcan a fluctuaciones muestrales. ",
+        "sufijo": "determinar de qué manera la aplicación del sistema web SIVAC"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 710
+    },
+    {
+      "indice_docx": 711,
+      "recorte_cola": {
+        "desde": 894,
+        "prefijo": " y agiliza la distribución de biológicos en la red de frío. ",
+        "sufijo": "procesamiento, los hallazgos demostraron que el sistema SIVA"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 711
+    },
+    {
+      "indice_docx": 712,
+      "recorte_cola": {
+        "desde": 850,
+        "prefijo": "obedecen a fallas aritméticas manuales en el kardex físico.,",
+        "sufijo": " el incremento del porcentaje de registros sin discrepancias"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 712
+    },
+    {
+      "indice_docx": 721,
+      "recorte_cola": {
+        "desde": 406,
+        "prefijo": "egistrados en el sistema y en las microredes territoriales. ",
+        "sufijo": "de Salud Apurímac II y a la Coordinación Regional de Inmuniz"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 721
+    },
+    {
+      "indice_docx": 800,
+      "recorte_cola": {
+        "desde": 439,
+        "prefijo": " guiaron las cinco iteraciones de Extreme Programming (XP). ",
+        "sufijo": "alojado bajo control de versiones Git en el repositorio inst"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 800
+    },
+    {
+      "indice_docx": 247,
+      "recorte_cola": {
+        "desde": 314,
+        "prefijo": "cas de la variable dependiente evaluada en la investigación.",
+        "sufijo": " ciclo XP (planeación, diseño, codificación y pruebas) const"
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 247
+    },
+    {
+      "indice_docx": 284,
+      "recorte_cola": {
+        "desde": 1571,
+        "prefijo": "nera directa a elevar la satisfacción del usuario sanitario.",
+        "sufijo": " institucionales de la presente investigación (DEC-007), la "
+      },
+      "_origen": "recorte_colas_v06.json",
+      "modo": "recorte_cola",
+      "resuelto_en": 284
+    },
+    {
+      "indice_docx": 370,
+      "ancla_original": "almacenamiento persistente",
+      "texto_nuevo": "almacenamiento persistente.",
+      "ubicacion": "P370/cierre",
+      "_origen": "puntuacion_recortes_v07.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 370
+    },
+    {
+      "indice_docx": 656,
+      "ancla_original": "distribuciones temporales emparejadas.,",
+      "texto_nuevo": "distribuciones temporales emparejadas.",
+      "ubicacion": "P656/cierre",
+      "_origen": "puntuacion_recortes_v07.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 656
+    },
+    {
+      "indice_docx": 712,
+      "ancla_original": "en el kardex físico.,",
+      "texto_nuevo": "en el kardex físico.",
+      "ubicacion": "P712/cierre",
+      "_origen": "puntuacion_recortes_v07.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 712
+    }
+  ],
+  "omitidas": [],
+  "fallidas": []
+}

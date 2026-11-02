@@ -1,0 +1,957 @@
+{
+  "origen": "salidas\\archivo\\_v17_paso1_textos.docx",
+  "destino": "salidas\\archivo\\_v17_paso2_extension.docx",
+  "sha256_origen": "8020dc9cc17d6259f4a57d25de66b0888674b25ba7cbd1bf68b4168f81b17540",
+  "sha256_destino": "0a7424c1f322d1678a4cf4f998386c1b15552f6713d72c025f065511c6ae04ea",
+  "parrafos": 824,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "hipervinculo",
+      "indice_docx": 75,
+      "aplicadas": 1,
+      "estado": "aplicada"
+    },
+    {
+      "tipo": "formula_fraccion",
+      "parrafo": 626,
+      "aplicado": true,
+      "numerador": "S",
+      "denominador": "n ( c − 1 )",
+      "runs_numerador": 1,
+      "runs_denominador": 6
+    },
+    {
+      "tipo": "imagen",
+      "parrafo": 233,
+      "rId": "rId16",
+      "archivo": "salidas\\figuras\\aclaraciones_20261021\\fuentes_300dpi\\fig01_pilares_web_lujan_p16.png",
+      "pixeles": [
+        999,
+        376
+      ],
+      "ancho_cm": 8.46,
+      "alto_cm": 3.18,
+      "dpi_efectivo": 299.9,
+      "bytes_anteriores": 164357,
+      "bytes_nuevos": 17395,
+      "formatos_ajustados": 2
+    },
+    {
+      "tipo": "imagen",
+      "parrafo": 239,
+      "rId": "rId17",
+      "archivo": "salidas\\figuras\\aclaraciones_20261021\\fuentes_300dpi\\fig02_mvc_sommerville_p177.png",
+      "pixeles": [
+        1651,
+        1433
+      ],
+      "ancho_cm": 13.97,
+      "alto_cm": 12.13,
+      "dpi_efectivo": 300.2,
+      "bytes_anteriores": 110612,
+      "bytes_nuevos": 156717,
+      "formatos_ajustados": 2
+    },
+    {
+      "tipo": "imagen",
+      "parrafo": 282,
+      "rId": "rId24",
+      "archivo": "salidas\\figuras\\aclaraciones_20261021\\luo_editorial_3194d7\\figura1_editorial_luo.png",
+      "pixeles": [
+        971,
+        510
+      ],
+      "ancho_cm": 8.22,
+      "alto_cm": 4.32,
+      "dpi_efectivo": 300.0,
+      "bytes_anteriores": 110412,
+      "bytes_nuevos": 52737,
+      "formatos_ajustados": 2
+    },
+    {
+      "tipo": "cursivas",
+      "acciones": [
+        {
+          "indice_docx": 726,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 727,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 728,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 729,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 730,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 731,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 732,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 733,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 734,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 735,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 736,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 737,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 738,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 739,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 740,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 741,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 742,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 743,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 744,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 745,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 746,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 747,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 748,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 749,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 750,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 751,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 752,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 753,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 754,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 755,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 756,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 757,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 758,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 759,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 760,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 761,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 762,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 763,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 764,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 765,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 766,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 767,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 768,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 769,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 770,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 771,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 772,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 773,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 774,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 775,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 776,
+          "tramos": 1,
+          "runs_marcados": 0
+        },
+        {
+          "indice_docx": 777,
+          "tramos": 1,
+          "runs_marcados": 1
+        },
+        {
+          "indice_docx": 778,
+          "tramos": 1,
+          "runs_marcados": 0
+        }
+      ],
+      "fallos": [],
+      "parrafos_ok": 53,
+      "parrafos_fallidos": 0
+    },
+    {
+      "tipo": "jerarquia",
+      "nivel2": 58,
+      "nivel3": 18,
+      "cursivas_retiradas": 58,
+      "nivel3_estilizados": 0,
+      "indices_nivel3": [
+        337,
+        342,
+        346,
+        350,
+        354,
+        358,
+        362,
+        369,
+        378,
+        387,
+        399,
+        445,
+        457,
+        474,
+        526,
+        534,
+        538,
+        543
+      ]
+    },
+    {
+      "tipo": "keep_next",
+      "candidatos": 111,
+      "modificados": 12,
+      "indices": [
+        561,
+        591,
+        594,
+        597,
+        600,
+        603,
+        606,
+        622,
+        626,
+        634,
+        636,
+        638
+      ]
+    },
+    {
+      "tipo": "notas",
+      "acciones": [
+        {
+          "parrafo": 414,
+          "estado": "corregido",
+          "detalle": "prefijo Nota. insertado"
+        },
+        {
+          "parrafo": 432,
+          "estado": "corregido",
+          "detalle": "prefijo Nota. insertado"
+        }
+      ]
+    },
+    {
+      "tipo": "margenes_celda",
+      "tabla": 1,
+      "izquierdo_dxa": 28,
+      "derecho_dxa": 28,
+      "filas": 14
+    },
+    {
+      "tipo": "rebalanceo",
+      "acciones": [
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 1,
+          "estado": "parcial",
+          "detalle": "rebalanceo=no; anchos [1113, 1470, 1603, 1569, 1613, 1397] -> [1113, 1470, 1603, 1569, 1613, 1397]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 32,
+          "estado": "parcial",
+          "detalle": "rebalanceo=no; anchos [1408, 1983, 1336, 1767, 1207, 1064] -> [1408, 1983, 1336, 1767, 1207, 1064]"
+        },
+        {
+          "categoria": "tabla_rebalanceo",
+          "tabla": 34,
+          "estado": "parcial",
+          "detalle": "rebalanceo=no; anchos [862, 1638, 1638, 1954, 833, 618, 1222] -> [862, 1638, 1638, 1954, 833, 618, 1222]"
+        }
+      ],
+      "tablas": [
+        {
+          "indice_tabla": 1,
+          "columnas": 6,
+          "filas": 14,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 28,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Los requerimientos exceden el ancho total de la tabla",
+            "anchos_nuevos": [
+              1113,
+              1470,
+              1603,
+              1569,
+              1613,
+              1397
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1113,
+              "ancho_util_dxa": 1057,
+              "token_mas_largo": "Mamani-Pari",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1055.4,
+              "requerido_dxa": 1119,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1470,
+              "ancho_util_dxa": 1414,
+              "token_mas_largo": "Establecimientos",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1366.6,
+              "requerido_dxa": 1431,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1603,
+              "ancho_util_dxa": 1547,
+              "token_mas_largo": "descriptivo-propositiva",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1855.4,
+              "requerido_dxa": 1919,
+              "cabe": false
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1569,
+              "ancho_util_dxa": 1513,
+              "token_mas_largo": "desabastecimiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1466.4,
+              "requerido_dxa": 1530,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1613,
+              "ancho_util_dxa": 1557,
+              "token_mas_largo": "Desabastecimiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1510.8,
+              "requerido_dxa": 1575,
+              "cabe": true
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1397,
+              "ancho_util_dxa": 1341,
+              "token_mas_largo": "inmunizaciones.",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1305.4,
+              "requerido_dxa": 1369,
+              "cabe": true
+            }
+          ],
+          "columnas_desbordadas": [
+            2
+          ],
+          "cabe_sin_desborde": false
+        },
+        {
+          "indice_tabla": 32,
+          "columnas": 6,
+          "filas": 5,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Los requerimientos exceden el ancho total de la tabla",
+            "anchos_nuevos": [
+              1408,
+              1983,
+              1336,
+              1767,
+              1207,
+              1064
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 1408,
+              "ancho_util_dxa": 1288,
+              "token_mas_largo": "Independiente:Sistema",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1955.6,
+              "requerido_dxa": 2084,
+              "cabe": false
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1983,
+              "ancho_util_dxa": 1863,
+              "token_mas_largo": "post-intervención",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1399.8,
+              "requerido_dxa": 1528,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1336,
+              "ancho_util_dxa": 1216,
+              "token_mas_largo": "procesamiento",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1166.4,
+              "requerido_dxa": 1294,
+              "cabe": true
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1767,
+              "ancho_util_dxa": 1647,
+              "token_mas_largo": "(RSD)Concordancia",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1633.0,
+              "requerido_dxa": 1761,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 1207,
+              "ancho_util_dxa": 1087,
+              "token_mas_largo": "cronometrados",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1188.6,
+              "requerido_dxa": 1317,
+              "cabe": false
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 1064,
+              "ancho_util_dxa": 944,
+              "token_mas_largo": "Valoración",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 944.1,
+              "requerido_dxa": 1072,
+              "cabe": false
+            }
+          ],
+          "columnas_desbordadas": [
+            0,
+            4,
+            5
+          ],
+          "cabe_sin_desborde": false
+        },
+        {
+          "indice_tabla": 34,
+          "columnas": 7,
+          "filas": 4,
+          "ancho_tabla_dxa": 8765,
+          "margenes_laterales_dxa": 60,
+          "via_geometria": "rebalanceo",
+          "rebalanceo": {
+            "aplicado": false,
+            "motivo": "Los requerimientos exceden el ancho total de la tabla",
+            "anchos_nuevos": [
+              862,
+              1638,
+              1638,
+              1954,
+              833,
+              618,
+              1222
+            ]
+          },
+          "verificacion_glifos": [
+            {
+              "columna": 0,
+              "ancho_dxa": 862,
+              "ancho_util_dxa": 742,
+              "token_mas_largo": "INST-01",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 710.7,
+              "requerido_dxa": 839,
+              "cabe": true
+            },
+            {
+              "columna": 1,
+              "ancho_dxa": 1638,
+              "ancho_util_dxa": 1518,
+              "token_mas_largo": "03:Cuestionario",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1277.8,
+              "requerido_dxa": 1406,
+              "cabe": true
+            },
+            {
+              "columna": 2,
+              "ancho_dxa": 1638,
+              "ancho_util_dxa": 1518,
+              "token_mas_largo": "196-MINSA/DGIESP-2022",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 2233.2,
+              "requerido_dxa": 2361,
+              "cabe": false
+            },
+            {
+              "columna": 3,
+              "ancho_dxa": 1954,
+              "ancho_util_dxa": 1834,
+              "token_mas_largo": "observadores",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1055.2,
+              "requerido_dxa": 1183,
+              "cabe": true
+            },
+            {
+              "columna": 4,
+              "ancho_dxa": 833,
+              "ancho_util_dxa": 713,
+              "token_mas_largo": "[Pendiente]",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 922.0,
+              "requerido_dxa": 1050,
+              "cabe": false
+            },
+            {
+              "columna": 5,
+              "ancho_dxa": 618,
+              "ancho_util_dxa": 498,
+              "token_mas_largo": "[Pendiente]",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 922.0,
+              "requerido_dxa": 1050,
+              "cabe": false
+            },
+            {
+              "columna": 6,
+              "ancho_dxa": 1222,
+              "ancho_util_dxa": 1102,
+              "token_mas_largo": "interobservador",
+              "tamano_token_pt": 10.0,
+              "ancho_token_dxa": 1255.2,
+              "requerido_dxa": 1383,
+              "cabe": false
+            }
+          ],
+          "columnas_desbordadas": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "cabe_sin_desborde": false
+        }
+      ]
+    },
+    {
+      "tipo": "quitar_tblheader",
+      "tabla": 46,
+      "retirado": true
+    },
+    {
+      "tipo": "quitar_tblheader",
+      "tabla": 47,
+      "retirado": true
+    },
+    {
+      "tipo": "quitar_tblheader",
+      "tabla": 48,
+      "retirado": true
+    },
+    {
+      "tipo": "anexar_filas",
+      "tabla": 54,
+      "filas_agregadas": 2,
+      "filas": [
+        [
+          "HU-14",
+          "Iteración 5 (Inteligencia Logística y Alertas)",
+          "Alertas Tempranas de Vencimiento y Stock",
+          "No declarado en la Tabla 7",
+          "Notificación de alerta visual roja en campana de interfaz ante lote con 25 días restantes y stock bajo mínimo."
+        ],
+        [
+          "HU-15",
+          "Iteración 5 (Inteligencia Logística y Alertas)",
+          "Dashboard Ejecutivo y Módulo ICI-DEMID (MSD)",
+          "No declarado en la Tabla 7",
+          "Despliegue interactivo de gráficos y semáforos en menos de 2 s."
+        ]
+      ]
+    },
+    {
+      "tipo": "estilo_indice",
+      "estilo": "table of figures",
+      "line_anterior": null,
+      "line_nuevo": 240
+    },
+    {
+      "tipo": "saltos_pagina",
+      "acciones": [
+        {
+          "parrafo": 792,
+          "aplicado": true,
+          "texto": "Formato de Validación de Contenido - Juez 2 (Licenciado en Enfermería / Especialista en In"
+        },
+        {
+          "parrafo": 794,
+          "aplicado": true,
+          "texto": "Formato de Validación de Contenido - Juez 3 (Metodólogo / Especialista en Estadística y Me"
+        }
+      ],
+      "aplicados": 2
+    },
+    {
+      "tipo": "margenes_seccion",
+      "objetivo_cm": {
+        "izquierdo": 3.0,
+        "derecho": 2.5,
+        "superior": 2.5,
+        "inferior": 2.5
+      },
+      "secciones": [
+        {
+          "seccion": 0,
+          "orientacion": "PORTRAIT (0)",
+          "ancho_pagina_emu": 7560310,
+          "alto_pagina_emu": 10692130,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 5580380,
+          "ancho_util_dxa": 8788,
+          "cambio": true
+        },
+        {
+          "seccion": 1,
+          "orientacion": "PORTRAIT (0)",
+          "ancho_pagina_emu": 7560310,
+          "alto_pagina_emu": 10692130,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 5580380,
+          "ancho_util_dxa": 8788,
+          "cambio": true
+        },
+        {
+          "seccion": 2,
+          "orientacion": "PORTRAIT (0)",
+          "ancho_pagina_emu": 7560310,
+          "alto_pagina_emu": 10692130,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 5580380,
+          "ancho_util_dxa": 8788,
+          "cambio": true
+        },
+        {
+          "seccion": 3,
+          "orientacion": "LANDSCAPE (1)",
+          "ancho_pagina_emu": 10692130,
+          "alto_pagina_emu": 7560310,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 8712200,
+          "ancho_util_dxa": 13720,
+          "cambio": true
+        },
+        {
+          "seccion": 4,
+          "orientacion": "PORTRAIT (0)",
+          "ancho_pagina_emu": 7560310,
+          "alto_pagina_emu": 10692130,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 5580380,
+          "ancho_util_dxa": 8788,
+          "cambio": true
+        },
+        {
+          "seccion": 5,
+          "orientacion": "LANDSCAPE (1)",
+          "ancho_pagina_emu": 10692130,
+          "alto_pagina_emu": 7560310,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 8712200,
+          "ancho_util_dxa": 13720,
+          "cambio": true
+        },
+        {
+          "seccion": 6,
+          "orientacion": "PORTRAIT (0)",
+          "ancho_pagina_emu": 7560310,
+          "alto_pagina_emu": 10692130,
+          "antes_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 914400,
+            "superior_emu": 914400,
+            "inferior_emu": 914400
+          },
+          "despues_emu": {
+            "izquierdo_emu": 1080135,
+            "derecho_emu": 899795,
+            "superior_emu": 899795,
+            "inferior_emu": 899795
+          },
+          "ancho_util_emu": 5580380,
+          "ancho_util_dxa": 8788,
+          "cambio": true
+        }
+      ],
+      "secciones_ajustadas": 7
+    }
+  ],
+  "tablas_verificadas": [
+    {
+      "tabla": 1,
+      "filas": 14,
+      "columnas": 6,
+      "cantSplit": true
+    },
+    {
+      "tabla": 32,
+      "filas": 5,
+      "columnas": 6,
+      "cantSplit": true
+    },
+    {
+      "tabla": 34,
+      "filas": 4,
+      "columnas": 7,
+      "cantSplit": true
+    },
+    {
+      "tabla": 54,
+      "filas": 8,
+      "columnas": 5,
+      "cantSplit": true
+    }
+  ]
+}

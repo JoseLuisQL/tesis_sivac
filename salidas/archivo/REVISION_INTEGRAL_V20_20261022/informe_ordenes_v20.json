@@ -1,0 +1,720 @@
+{
+  "origen": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_FORMATO_V20.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\_v20_textual.docx",
+  "solo_verificar": false,
+  "sha256_origen": "cb701ebe4f3fdcb856a9fedefe250d5ac84360e13bc4cbad61296fdcf1b7c687",
+  "sha256_destino": "12c37ba337f517db43ae1ef4974b89fac42cfebc1de3fbc442e411f981f08007",
+  "parrafos": 827,
+  "tablas": 59,
+  "total_ordenes": 43,
+  "total_aplicadas": 43,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "ordenes_consolidadas_v20",
+      "total": 43,
+      "aplicadas": 43,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 412,
+          "ubicacion": null,
+          "ancla": "A continuación, en las Tablas 10 a 24 se documenta de forma exhaustiva el diccio",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 525,
+          "ubicacion": null,
+          "ancla": "La fase de pruebas en Extreme Programming constituye el componente que garantiza",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 533,
+          "ubicacion": null,
+          "ancla": "Nota. Cobertura automatizada que garantiza la estabilidad del software ante refa",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 567,
+          "ubicacion": null,
+          "ancla": "Para garantizar la validez metodológica interna y neutralizar potenciales sesgos",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 539,
+          "ubicacion": null,
+          "ancla": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 553,
+          "ubicacion": null,
+          "ancla": "La investigación se enmarcó en el nivel explicativo de evaluación de intervenció",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 353,
+          "ubicacion": null,
+          "ancla": "Estructura taxonómica inmutable aprobada en la matriz de operacionalización inst",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 648,
+          "ubicacion": null,
+          "ancla": "En concordancia con las decisiones metodológicas adoptadas, el análisis de confi",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 683,
+          "ubicacion": null,
+          "ancla": "El contraste inferencial de las hipótesis formuladas en la matriz de consistenci",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 679,
+          "ubicacion": null,
+          "ancla": "Se concluye que las diferencias pareadas pretest-postest satisfacen plenamente e",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 663,
+          "ubicacion": null,
+          "ancla": "Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO r",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 712,
+          "ubicacion": null,
+          "ancla": "Estos hallazgos confirman que la exactitud contable del kardex no depende ya de ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 713,
+          "ubicacion": null,
+          "ancla": "Estos resultados ratifican la hipótesis formulada por Davis (1989) y Venkatesh e",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 718,
+          "ubicacion": null,
+          "ancla": "respaldado por contrastes t(13) = 26.63 y t(13) = 28.15 (p < .001; d > 7.0), err",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 710,
+          "ubicacion": null,
+          "ancla": "El propósito de la presente investigación fue determinar de qué manera la aplica",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 710,
+          "ubicacion": null,
+          "ancla": "La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a l",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 228,
+          "ubicacion": null,
+          "ancla": "sino marcos ingenieriles de construcción y aseguramiento de calidad que garantiz",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 695,
+          "ubicacion": null,
+          "ancla": "P-valores ajustados con corrección Holm-Bonferroni garantizan que no existe infl",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 139,
+          "ubicacion": null,
+          "ancla": "los cuales serán sometidos a validación de contenido por juicio de tres expertos",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 151,
+          "ubicacion": null,
+          "ancla": "los cuales serán sometidos a validación de contenido por juicio de tres expertos",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 542,
+          "ubicacion": null,
+          "ancla": "3.3.5. Fase V: Despliegue Físico y Puesta en Producción",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 142,
+          "ubicacion": null,
+          "ancla": "and a structured questionnaire based on the Technology Acceptance Model (TAM) we",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 640,
+          "ubicacion": null,
+          "ancla": "sobre los seis indicadores para controlar rigurosamente la tasa de error familia",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 797,
+          "ubicacion": null,
+          "ancla": "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investig",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 806,
+          "ubicacion": null,
+          "ancla": "Los coeficientes V de Aiken, IVC y Alfa de Cronbach se consignarán en el expedie",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 714,
+          "ubicacion": null,
+          "ancla": "logrando una herramienta robusta, validada y con métricas de alta calidad bajo e",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 644,
+          "ubicacion": null,
+          "ancla": "para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento en la c",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 693,
+          "ubicacion": null,
+          "ancla": "erradicando los errores de digitación en el Kardex y asegurando la fidelidad de ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": null,
+          "ancla": "estadísticos de contraste (gl = 14)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 615,
+          "ubicacion": null,
+          "ancla": "Ficha de observación de tiempos cronometrados",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 615,
+          "ubicacion": null,
+          "ancla": "Guía de cotejo documental",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 648,
+          "ubicacion": null,
+          "ancla": "Ficha de Registro Cronométrico",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 648,
+          "ubicacion": null,
+          "ancla": "Ficha de Cotejo Documental de Kardex",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 33, fila 2, columna 4",
+          "ancla": "Ficha de observación de tiempos cronometrados",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 33, fila 3, columna 4",
+          "ancla": "Guía de cotejo de consistencia documental",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 33, fila 4, columna 4",
+          "ancla": "Cuestionario de satisfacción del usuario y aceptación tecnológica",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 34, fila 2, columna 2",
+          "ancla": "Ficha de observación de tiempos cronometrados",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 34, fila 3, columna 2",
+          "ancla": "Guía de cotejo documental",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 34, fila 4, columna 2",
+          "ancla": "Cuestionario de satisfacción del usuario y aceptación tecnológica (Modalidad A)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 593,
+          "ubicacion": null,
+          "ancla": "vale pecosa",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 615,
+          "ubicacion": null,
+          "ancla": "emisión de vale pecosa",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 29, fila 2, columna 2",
+          "ancla": "vales pecosa físicos",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 31, fila 3, columna 2",
+          "ancla": "vales pecosa",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 412,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 525,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 533,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 567,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 539,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 553,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 353,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 648,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 683,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 679,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 663,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 712,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 713,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 718,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 710,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 710,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 228,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 695,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 139,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 151,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 542,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 142,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 640,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 797,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 806,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 714,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 644,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 693,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 678,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 615,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 615,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 648,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 648,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 33, fila 2, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 33, fila 3, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 33, fila 4, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 34, fila 2, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 34, fila 3, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 34, fila 4, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 593,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": 615,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 29, fila 2, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_consolidadas_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 31, fila 3, columna 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "meta": {
+    "titulo": "Plan de maquetacion nativa y aclaraciones del dictamen hoja por hoja v16",
+    "fecha": "2026-10-21",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "Squad E",
+    "agente": "maquetador-docx",
+    "comisionado_por": "director-general",
+    "estado": "plan_entregado_sin_ejecucion",
+    "destino_previsto": "salidas/documentos/informe_final_v17.docx",
+    "sha256_origen": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5",
+    "bytes_origen": 14668806,
+    "paginas_pdf_origen": 159,
+    "nota_de_alcance": "Documento de planificacion. NO se compilo la v17, NO se invoco Word COM, NO se modifico el motor docx_quirurgico.py ni ningun archivo original."
+  },
+
+  "estado_operativo": {
+    "motor_docx_quirurgico": "solo_lectura_verificado_por_lectura_de_codigo",
+    "motor_ruta_absoluta": "C:/MisInvestigaciones/tesis/sivac/scripts/utilidades/docx_quirurgico.py",
+    "motor_bytes": 104726,
+    "motor_sha256": "2e2bfb3724b627dc73f5e19d84b2e8fb9f84850202fba38bb7fc22e5a9e7d8b6",
+    "word_com": "no_iniciado",
+    "v17": "no_iniciada",
+    "archivos_modificados": 0,
+    "scripts_ad_hoc_creados_en_el_proyecto": 0,
+    "inspecciones_realizadas_en": "C:/Users/jquis/AppData/Local/Temp/sivac_inspect (fuera del proyecto)",
+    "bloqueo_vigente": "Otra sesion trabaja con scripts/utilidades/docx_quirurgico.py. Se mantiene la espera hasta confirmacion del Director.",
+    "dry_run_lote_A": {
+      "comando": "aplicar-ordenes informe_final_v16.docx --lotes ordenes_v17_loteA_20261021.json --solo-verificar",
+      "resultado": "21 ordenes, 21 aplicadas, 0 fallidas; todas en modo 'indice', sin 'celda_reubicada'.",
+      "reporte": "salidas/reportes_maquetacion/verificacion_ordenes_v17_20261021.json",
+      "sha256_origen_verificado": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5",
+      "excluida": "A-20 (texto en w:hyperlink) por GAP-09."
+    }
+  },
+
+  "linea_base": {
+    "parrafos_cuerpo": 824,
+    "tablas": 59,
+    "secciones": 7,
+    "parrafos_dentro_de_sdt": 112,
+    "ecuaciones_omml_en_parrafos": 12,
+    "ecuaciones_omml_en_tablas": 0,
+    "parrafos_con_fldChar": 208,
+    "geometria_pagina": {
+      "vertical_ancho_util_dxa": 8765,
+      "horizontal_ancho_util_dxa": 13697,
+      "margen_izquierdo_emu": 1080135,
+      "margen_derecho_emu": 914400
+    }
+  },
+
+  "mapa_indices_tablas": {
+    "regla": "documento.tables[N] de python-docx NO coincide con el rotulo impreso despues de la Tabla 45.",
+    "pares_uno_a_uno": "tables[1..45] = rotulos impresos Tabla 1..45",
+    "desplazamiento_anexos": {
+      "tables[46]": "Anexo 3 - Formato Juez 1 (sin rotulo)",
+      "tables[47]": "Anexo 3 - Formato Juez 2 (sin rotulo)",
+      "tables[48]": "Anexo 3 - Formato Juez 3 (sin rotulo)",
+      "tables[49]": "rotulo impreso Tabla 46 (Instrumento N. 01)",
+      "tables[50]": "rotulo impreso Tabla 47 (Instrumento N. 02) - aqui estan las formulas (* 100)",
+      "tables[51]": "rotulo impreso Tabla 48 (Instrumento N. 03, TAM)",
+      "tables[52]": "rotulo impreso Tabla 49 (matriz pretest 18 columnas)",
+      "tables[53]": "rotulo impreso Tabla 50 (matriz postest 18 columnas)",
+      "tables[54]": "rotulo impreso Tabla 51 (historias de usuario XP)"
+    },
+    "tablas_especiales": {
+      "tables[0]": "recuadro de caratula 1x1",
+      "tables[55..58]": "marcadores fotograficos 1x1 del Anexo 7"
+    },
+    "riesgo_operativo": "Una orden con ubicacion 'TABLA 47, fila N, columna M' resuelve contra tables[47], es decir, el formato del Juez 2, no contra la Tabla 47 impresa. Debe emitirse como indice_docx 50. El motor incluye un respaldo por texto unico que reubica la celda, pero el modo 'celda_reubicada' debe tratarse como advertencia."
+  },
+
+  "capacidades_motor_confirmadas": [
+    {
+      "funcion": "eliminar_flotacion_tabla(table)",
+      "sirve_para": ["erradicar w:tblpPr"],
+      "estado": "disponible"
+    },
+    {
+      "funcion": "blindar_filas_tabla(table, cant_split=True, repetir_encabezado=True)",
+      "sirve_para": ["w:cantSplit en todas las filas", "w:tblHeader en la fila 0"],
+      "estado": "disponible",
+      "verificacion": "En v16 las tablas 43, 44 y 45 ya tienen cantSplit en las 5 filas y tblHeader en la fila 0."
+    },
+    {
+      "funcion": "configurar_geometria_tabla(...)",
+      "sirve_para": ["w:tblGrid y w:tcW en dxa"],
+      "estado": "disponible"
+    },
+    {
+      "funcion": "aplicar_bordes_apa7(table)",
+      "sirve_para": ["tres lineas horizontales", "cero verticales"],
+      "estado": "disponible",
+      "verificacion": "Las tablas 46, 47 y 48 solo tienen borde superior e inferior; falta la linea de cabecera."
+    },
+    {
+      "funcion": "rebalancear_tabla(documento, indices, relleno_dxa=8)",
+      "sirve_para": ["redistribuir anchos midiendo glifos reales", "reportar columnas_desbordadas"],
+      "limites": "Conserva el ancho total; no puede superar 8765 dxa en vertical.",
+      "estado": "disponible"
+    },
+    {
+      "funcion": "ajustar_matriz_anexo(documento, indices, margenes_dxa, tamano_pt, columnas_centradas, aplicar_margenes, rebalancear)",
+      "sirve_para": ["margenes tcMar", "tamano de fuente", "rebalanceo", "tblHeader y cantSplit"],
+      "limites": "La CLI no expone columnas_centradas: con --tablas-matriz centra por defecto las columnas 2..n, inaceptable para tablas de texto como la Tabla 1.",
+      "estado": "disponible_con_brecha"
+    },
+    {
+      "funcion": "insertar_prefijo_notas(documento)",
+      "sirve_para": ["anteponer 'Nota. ' en cursiva a notas sin prefijo"],
+      "condiciones": "Solo tablas hijas directas del body; parrafo siguiente con sz en {19,20} y w:line=240; omite textos que inician con 'Nota.', 'Tabla' o 'Figura'.",
+      "verificacion": "par#414 (Tabla 10) y par#432 (Tabla 19) cumplen sz=19 y line=240.",
+      "estado": "disponible"
+    },
+    {
+      "funcion": "normalizar_rotulos_ilustracion(documento)",
+      "sirve_para": ["rotulo negrita + titulo cursiva en leyendas del cuerpo"],
+      "limites": "Requiere w:fldChar end en el parrafo y estilo de rotulo; no alcanza las entradas de los indices.",
+      "estado": "disponible_solo_para_leyendas"
+    },
+    {
+      "funcion": "insertar_referencias(documento, inserciones)",
+      "sirve_para": ["insertar entradas nuevas con sangria francesa 720/720"],
+      "limites": "_crear_parrafo_referencia genera UN solo run sin cursiva; no interpreta asteriscos ni produce cursivas APA.",
+      "estado": "disponible_sin_cursivas"
+    },
+    {
+      "funcion": "aplicar_ordenes_edicion(...)",
+      "sirve_para": ["sustitucion de texto por indice_docx o por 'TABLA n, fila n, columna n'", "solo-verificar", "tablas-rebalanceo", "tablas-matriz"],
+      "limites": "No inserta ni elimina parrafos; no aplica formato; no alcanza parrafos dentro de w:sdt.",
+      "estado": "disponible"
+    }
+  ],
+
+  "brechas_del_motor": [
+    {
+      "id": "GAP-01",
+      "necesidad": "Aplicar cursiva a un tramo dentro de un run unico (referencias APA, prefijo 'Nota.', entradas de indice).",
+      "afecta": ["M-04", "M-06", "M-09"],
+      "propuesta": "Funcion normalizar_cursivas_apa7 que divida el run en fronteras conocidas (titulo de obra, nombre de revista, prefijo) y marque w:i."
+    },
+    {
+      "id": "GAP-02",
+      "necesidad": "Aplicar w:keepNext a parrafos o a la ultima fila de una tabla.",
+      "afecta": ["M-05", "M-07"],
+      "propuesta": "Orden de tipo 'keep_next' con indice_docx o indice_tabla."
+    },
+    {
+      "id": "GAP-03",
+      "necesidad": "Reducir margenes laterales de celda sin cambiar el tamano de fuente.",
+      "afecta": ["M-01", "M-02"],
+      "propuesta": "Exponer --margenes-matriz con --tamano-matriz igual al vigente o anadir --solo-margenes."
+    },
+    {
+      "id": "GAP-04",
+      "necesidad": "Exponer columnas_centradas en la CLI.",
+      "afecta": ["M-01", "M-02"],
+      "propuesta": "Flag --sin-centrado para tablas de texto."
+    },
+    {
+      "id": "GAP-05",
+      "necesidad": "Ajustar el interlineado del estilo 'Tabladeilustraciones'.",
+      "afecta": ["M-16"],
+      "propuesta": "Igualar a 'toc 1' con w:line=240 en el estilo."
+    },
+    {
+      "id": "GAP-06",
+      "necesidad": "Insertar guiones blandos y activar hyphenation automatica.",
+      "afecta": ["M-08"],
+      "propuesta": "Funcion insertar_guiones_blandos(tokens) y w:autoHyphens en settings.xml."
+    },
+    {
+      "id": "GAP-07",
+      "necesidad": "Permitir que filas concretas se partan entre paginas.",
+      "afecta": ["M-11", "M-12", "M-13"],
+      "propuesta": "DESCARTADA POR DIRECTIVA: prohibido fragmentar filas. Las Tablas 43, 44 y 45 se resuelven reorganizando bloques o filas nativas sin perder contenido; si no es corregible en esta pasada, se declara residual.",
+      "estado": "no_implementar"
+    },
+    {
+      "id": "GAP-08",
+      "necesidad": "Insertar una ecuacion OMML nueva con renumeracion correlativa.",
+      "afecta": ["C-07"],
+      "propuesta": "Evitable: la alternativa en prosa no requiere renumerar las ecuaciones (1)-(11)."
+    },
+    {
+      "id": "GAP-09",
+      "necesidad": "Sustituir texto dentro de w:hyperlink: python-docx no expone esos runs en paragraph.runs (entradas de indice con runs=0).",
+      "afecta": ["B-05 (A-20)"],
+      "propuesta": "Extender _reemplazar_texto_parrafo para recorrer .//w:hyperlink/w:r/w:t, o actualizar campos con Word COM bajo autorizacion explicita."
+    }
+  ],
+
+  "hallazgos_del_dictamen": [
+    {
+      "id": "M-02",
+      "veredicto": "impreciso",
+      "texto_dictamen": "Columna 6 de la Tabla 1 demasiado estrecha, causa raiz de las fracturas del tramo.",
+      "evidencia": "Medicion de glifos reales con Times New Roman 10 pt: las SEIS columnas de tables[1] desbordan. Deficit por columna: c1 -11 (Astuhuaman), c2 -10 (Establecimientos), c3 -9 (Cuasiexperimental), c4 -9 (desabastecimiento), c5 -9 (Desabastecimiento), c6 -21 (inmunizaciones.). Suma de minimos 8834 dxa contra 8765 disponibles: la tabla excede en 69 dxa.",
+      "consecuencia": "Ensanchar solo la columna 6 deja intactas las fracturas de 'Establecimiento/s', 'Cuasiexperimenta/l' y 'desabastecimient/o'. Ademas las fracturas del tramo incluyen tables[32] c5 (-93) y tables[34] c5/c6 (-201/-416), ajenas a la Tabla 1.",
+      "remedio": "Reducir margenes laterales de celda de 57 a 28 dxa y rebalancear las seis columnas. Sin ese margen no existe excedente que cubra los 69 dxa."
+    },
+    {
+      "id": "M-06",
+      "veredicto": "real_pero_mal_ubicado",
+      "texto_dictamen": "Titulos de las Tablas 1, 29 y 31 en negrita en lugar de cursiva (pag. 12).",
+      "evidencia": "Las leyendas del cuerpo (estilo 'Rotulo de ilustracion') estan correctas: 'Tabla ' en negrita y el titulo en cursiva. El defecto esta en las entradas del INDICE DE TABLAS, estilo 'Tabladeilustraciones', donde el run del titulo lleva w:b y no w:i. Las entradas de Tabla 28 y Tabla 33 si llevan cursiva.",
+      "consecuencia": "Corregir las leyendas no cambia nada; hay que marcar los tres runs de titulo en el indice. Requiere GAP-01."
+    },
+    {
+      "id": "M-15",
+      "veredicto": "no_es_defecto",
+      "texto_dictamen": "Indices con lineas de puntos sin texto en Figuras 41, 42, 45 y Tablas 28 y 33.",
+      "evidencia": "Las cinco entradas existen completas en el DOCX, con texto integro, cursiva correcta y numero de pagina. El segundo renglon de puntos es la tabulacion con relleno que salta a la linea siguiente cuando el titulo agota el ancho. No hay texto perdido.",
+      "remedio": "Ninguno por maquetacion. Si se desea evitar el renglon de puntos huerfano, hay que acortar los cinco titulos (redactor-academico)."
+    },
+    {
+      "id": "M-17",
+      "veredicto": "no_es_defecto",
+      "texto_dictamen": "Pagina 28 con dos lineas y 93 % vacia.",
+      "evidencia": "La pagina 28 (folio 12) contiene el cierre del Capitulo I; el Capitulo II comienza en la pagina 29. No existe ningun salto de pagina explicito en el cuerpo: el arranque capitular usa pageBreakBefore.",
+      "remedio": "No es corregible por geometria. Solo se resuelve reflotando el texto del Capitulo I (redactor-academico)."
+    },
+    {
+      "id": "B-04",
+      "veredicto": "parcialmente_incorrecto",
+      "texto_dictamen": "Anexo 3 con '[Por completar por el juez]' para ambos coeficientes y para la aplicabilidad.",
+      "evidencia": "El token aparece exactamente 6 veces, todas en la fila 'Coeficiente V de Aiken' de tables[46], [47] y [48]: dos por juez (V e IVC). La fila 'Opinion Pericial Global' contiene casillas vacias intencionales y la pagina 150 declara que la aplicabilidad permanece sin dictamen. No hay token en la aplicabilidad.",
+      "consecuencia": "El bloqueo se limita a los coeficientes. Las casillas no deben rellenarse."
+    },
+    {
+      "id": "M-14",
+      "veredicto": "real_pero_mal_atribuido",
+      "texto_dictamen": "Anexo 3 con '(Juez 1)' y '(Juez 2)' duplicados, parentesis desbalanceado, cabecera repetida y ausencia de la tercera linea.",
+      "evidencia": "La duplicacion de '(Juez N)' proviene de w:tblHeader en la fila 0 de cada formato, que se repite al cortar la pagina. El parentesis desbalanceado no esta en las tablas sino en los encabezados par#792 y par#794, que repiten el final del texto. Los bordes existen solo arriba y abajo: falta la linea de cabecera.",
+      "remedio": "Quitar tblHeader de las tres tablas, aplicar bordes APA 7 y sustituir los dos parrafos."
+    },
+    {
+      "id": "M-01",
+      "veredicto": "real_con_causas_agrupadas",
+      "texto_dictamen": "Fracturas intra-palabra en celdas (lista de 12 casos).",
+      "evidencia": "Seis casos pertenecen a tables[1]; uno a tables[32] c5 ('cronometrad/os', deficit 93 dxa); dos a tables[34] c5/c6 ('[Pendien/te]', '[Pend/iente]', deficit 201 y 416 dxa). 'Valoracio/n', 'interobservad/or' e 'interevaluado/r' corresponden a tables[34] c7.",
+      "consecuencia": "[Pendien/te] y [Pend/iente] son consecuencia del ancho, no defectos independientes, y su contenido esta bloqueado por B-03."
+    },
+    {
+      "id": "M-19",
+      "veredicto": "incorrecto_en_la_descripcion",
+      "texto_dictamen": "Niveles 3 y 4 de encabezado con identico formato de negrita cursiva.",
+      "evidencia": "par#335 ('3.3.1.', nivel 2) va en negrita Y cursiva; par#337 y siguientes ('3.3.1.1.', nivel 3) van solo en negrita. No son identicos: la anomalia es un unico encabezado de nivel 2 en cursiva.",
+      "remedio": "Decision estilistica: retirar la cursiva de par#335, o extender cursiva a todo el nivel 3. Requiere criterio del Director."
+    },
+    {
+      "id": "M-09",
+      "veredicto": "subestimado",
+      "texto_dictamen": "Cursivas APA 7 ausentes en catorce entradas bibliograficas.",
+      "evidencia": "Las 53 entradas de referencia son un run unico sin w:i. Ninguna tiene cursiva APA. Ademas varias entradas contienen runs vacios con w:i, residuo de una pasada anterior que vacio el texto de los runs en cursiva.",
+      "consecuencia": "El alcance real es la lista completa y el arreglo exige GAP-01. La causa esta en _crear_parrafo_referencia, que no genera cursivas."
+    },
+    {
+      "id": "C-03",
+      "veredicto": "incompleto",
+      "texto_dictamen": "El texto remite a 'Tabla A6.1' y el rotulo dice 'Tabla 51'; se declaran cinco iteraciones y la tabla muestra cuatro.",
+      "evidencia": "'Tabla A6.1' y 'cinco iteraciones' estan en par#811. Pero 'cinco iteraciones' tambien esta en el RESUMEN (par#139) y 'five iterations' en el ABSTRACT (par#142). La Tabla 51 (tables[54]) muestra iteraciones 1, 2, 3, 3, 4.",
+      "consecuencia": "Corregir solo la pagina 156 deja la contradiccion en dos lugares mas. Requiere decision del tesista."
+    },
+    {
+      "id": "M-03",
+      "veredicto": "confirmado_y_automatizable",
+      "texto_dictamen": "Notas de las Tablas 10 y 19 sin el prefijo 'Nota.' ni cursiva.",
+      "evidencia": "par#414 y par#432 son runs unicos en 9.5 pt con interlineado 240; ambos cumplen las condiciones de insertar_prefijo_notas. El resto de notas de la serie (par#416 a par#434) ya tiene el prefijo.",
+      "accion": "Ejecutar insertar_prefijo_notas con verificacion previa del universo de parrafos afectados."
+    }
+  ],
+
+  "hallazgos_de_validacion": {
+    "expediente": "salidas/reportes_maquetacion/validacion_jueces_aclaraciones_20261021.json (analista-estadistico, 2026-10-21)",
+    "instrumentos_incompatibles": [
+      "Expediente v09: 12 items x 3 criterios, escala ordinal 1-4 (1 = No cumple; 4 = Cumple plenamente). Hay tres copias identicas del mismo DOCX, sin nombres, DNI, fechas, firmas ni marcas de calificacion.",
+      "Cuerpo del v16 (seccion 4.12, Tabla 34 y Anexo 3): 8 items x 3 criterios, dicotomico Si/No (c = 2).",
+      "JSON anexos_instrumentos_validacion.json: 12 items con criterios Si/No."
+    ],
+    "declaracion_del_tesista": "«los jueces me dieron su validacion, todos pusieron 4 en todo». Es un dato reportado, no una validacion documentada; solo es compatible con la escala 1-4 del expediente v09.",
+    "prohibiciones": [
+      "No convertir 4 en 'Si' ni recodificar la escala.",
+      "No sustituir [Pendiente] de la Tabla 34 ni [Por completar por el juez] del Anexo 3 por 1.000 ni por ningun otro coeficiente.",
+      "No insertar en la tesis los parrafos de trazabilidad propuestos por el estadistico tras par#627, par#629 y par#789: son metagobernanza y quedan en el reporte, no en el documento.",
+      "No usar la declaracion para calcular alfa, omega, ICC o kappa."
+    ],
+    "calculo_condicional": "Bajo la matriz v09 (12 items, escala 1-4) y si los tres jueces calificaron 4 en todas las celdas: V = 1.000 por item e IVC = 1.000; IC de Wilson 95% por item [0.4385, 1.000]. El limite inferior no alcanza 0.70. Se registra solo en el reporte separado; no cierra QG-5 ni desbloquea F6.",
+    "tabla_35": "Los seis coeficientes y sus intervalos se reproducen exactamente desde datos/recolectados/pretest_campo.csv y posttest_campo.csv (n = 14), rotulados DATOS DE PRUEBA - REEMPLAZAR (DEC-007). La nota actual atribuye la fuente a una matriz de campo: es inexacta. A-16 corrige la atribucion sin alterar cifras y mantiene visible la identidad del dataset.",
+    "estado_de_compuertas": "QG-5 permanece abierta y F6 bloqueada. La declaracion no acredita firmas ni identidad de los jueces."
+  },
+
+  "aclaraciones_xp": {
+    "expediente": "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json (analista-documental, 2026-10-21)",
+    "figura_44": "La imagen de la v16 es byte-identica (SHA-256 0683c8ac11169c11508cb31508e9ac57392cdfaa3b1d2cd1997e627b89547eea) a la Figura 27 del DOCX XP del tesista: captura de codigo TypeScript de movimientos-entrega-adicional-stock.test.ts, no una consola. No existe ninguna captura de consola de Jest en los documentos del tesista. Se conserva la imagen autentica y se corrigen contexto (A-17), rotulo (A-18) y nota (A-19); el indice de figuras requiere A-20. No se pide otra captura ni se simula una salida.",
+    "iteraciones": "Cinco (5) verificadas: P368 y Tablas 4 y 10 del DOCX XP, y Tablas 7 y 8 del v16. La Tabla 51 es un resumen que omite la Iteracion 5. Se agregan HU-14 y HU-15 (G-08) y se corrige la remision 'Tabla A6.1' a 'Tabla 51' (A-21). HU-12 permanece en la Iteracion 4 y no se mueve.",
+    "cp06_cp11": "CP-06 y CP-11 son pruebas de aceptacion funcional por historia de usuario: CP-06 mide persistencia en base de datos en minutos y CP-11 emision del comprobante en segundos. T_reg y T_vale son indicadores de la D1 cronometrados por operador y agregados por promedio (Tabla 31). No consta el protocolo de los CP. A-22 agrega una nota prudente; no se alteran las cifras de la D1 ni se declara equivalencia.",
+    "prohibiciones": [
+      "No declarar que la prueba se ejecuto al 100 % ni que la imagen muestra una consola.",
+      "No generar imagenes sinteticas ni transcribir salidas de consola inventadas.",
+      "No cambiar el recuento de iteraciones a cuatro ni reetiquetar HU-12 como Iteracion 5.",
+      "No presentar CP-06/CP-11 como mediciones pretest/postest ni atribuirles reduccion de tiempos de campo."
+    ]
+  },
+
+  "jerarquia_encabezados": {
+    "hallazgo": "Los 58 encabezados de nivel 2 (w:outlineLvl val=2) estan en negrita y cursiva; los 18 de nivel 3, solo en negrita. El dictamen M-19 describia un solo caso (par#335); el alcance real es todo el nivel 2.",
+    "nivel3_indices": [337, 342, 346, 350, 354, 358, 362, 369, 378, 387, 399, 445, 457, 474, 526, 534, 538, 543],
+    "orden": "EXT-05: retirar cursiva de los 58 niveles 2 y aplicar Heading 3 (Ttulo3) a los 18 niveles 3.",
+    "estado": "requiere_extension_aditiva"
+  },
+
+  "extension_motor": {
+    "diseno": "salidas/reportes_maquetacion/extension_motor_v17_20261021.json",
+    "principio": "Solo aditiva: no cambia firmas ni valores por defecto de las funciones existentes.",
+    "funciones": ["EXT-01 cursivas por tramos", "EXT-02 keepNext", "EXT-03 margenes de celda sin reducir letra", "EXT-04 retirar tblHeader", "EXT-05 jerarquia de encabezados", "EXT-06 texto en hipervinculos", "EXT-07 estilo de indice", "EXT-08 reorganizar filas/bloques de Tablas 43-45", "EXT-09 actualizar campos en copia nueva"],
+    "estado": "diseno_para_aprobacion_sin_ejecucion"
+  },
+
+  "advertencias_de_conteo_del_dictamen": {
+    "inconsistencia_interna": "El encabezado del DICTAMEN_VALIDACION_HOJA_POR_HOJA_v16.md declara 41 defectos distintos, pero su inventario enumera 36: 7 bloqueantes (B-01..B-07), 7 criticos (C-01..C-07) y 22 de maquetacion (M-01..M-22).",
+    "regla_de_uso": "Las cifras del dictamen (99 paginas conformes, 60 con defecto, 62.3 %, 41 defectos) no se usan como prueba de cobertura ni de perfeccion. Solo se corrigen los defectos reproducidos y verificados contra el XML de la v16.",
+    "alcance_de_este_plan": "El lote A contiene 15 sustituciones reproducidas una a una. Los defectos no reproducidos, mal atribuidos o no defectos se registran en hallazgos_del_dictamen y no generan ordenes."
+  },
+
+  "lotes": {
+    "lote_A_sustituciones_seguras": {
+      "descripcion": "Veintidos sustituciones de texto exactas (21 ejecutables y A-20 condicionada a GAP-09), sin insumos externos. Todas las anclas viven en un run unico o en una celda unica. A-16 corrige la fuente de la Tabla 35; A-17 a A-20 resuelven la Figura 44 sin reemplazar la imagen; A-21 y A-22 resuelven las iteraciones y el alcance de CP-06/CP-11.",
+      "sustituciones": [
+        {
+          "id": "A-01",
+          "indice_docx": 10,
+          "ancla_original": "DNI N.° [Completar DNI oficial antes de impresión],",
+          "texto_nuevo": "DNI N.° ____________________,",
+          "ocurrencias": 1,
+          "defecto": "B-01",
+          "nota": "Caratula. DNI manuscrito confirmado por el tesista. Sin numeros inventados."
+        },
+        {
+          "id": "A-02",
+          "indice_docx": 18,
+          "ancla_original": "DNI N.° [Completar DNI oficial antes de impresión]",
+          "texto_nuevo": "DNI N.° ____________________",
+          "ocurrencias": 1,
+          "defecto": "B-01",
+          "nota": "Pagina de autor. Segunda y ultima advertencia de DNI."
+        },
+        {
+          "id": "A-03",
+          "indice_docx": 142,
+          "ancla_original": " [Pending].",
+          "texto_nuevo": ".",
+          "ocurrencias": 1,
+          "defecto": "B-02",
+          "nota": "Elimina el token sin borrar la declaracion de datos pendientes: la oracion conserva 'remain under posttest consolidation'."
+        },
+        {
+          "id": "A-04",
+          "indice_docx": 792,
+          "ancla_original": "Frío) en Enfermería / Especialista en Inmunizaciones y Cadena de Frío)",
+          "texto_nuevo": "Frío)",
+          "ocurrencias": 1,
+          "defecto": "M-14",
+          "nota": "El ancla incluye 'Frío)' para no coincidir con el tramo '(Licenciado en Enfermería...'."
+        },
+        {
+          "id": "A-05",
+          "indice_docx": 794,
+          "ancla_original": "Cuantitativa) / Especialista en Estadística y Medición Cuantitativa)",
+          "texto_nuevo": "Cuantitativa)",
+          "ocurrencias": 1,
+          "defecto": "M-14"
+        },
+        {
+          "id": "A-06",
+          "indice_docx": 803,
+          "ancla_original": "dictámenes de los tres jueces.) con confiabilidad Alfa de Cronbach > 0.90.",
+          "texto_nuevo": "dictámenes de los tres jueces.",
+          "ocurrencias": 1,
+          "defecto": "B-07",
+          "nota": "Elimina el parentesis huerfano y la afirmacion de fiabilidad no sustentada."
+        },
+        {
+          "id": "A-07",
+          "indice_docx": 753,
+          "ancla_original": "Standardization, e International",
+          "texto_nuevo": "Standardization e International",
+          "ocurrencias": 1,
+          "defecto": "M-10"
+        },
+        {
+          "id": "A-08",
+          "indice_docx": 155,
+          "ancla_original": "[OPS] y PATH, 2020",
+          "texto_nuevo": "[OPS] y PATH, 2019",
+          "ocurrencias": 1,
+          "defecto": "C-02",
+          "nota": "Primera de dos menciones erroneas. Expediente del investigador: salidas/reportes_maquetacion/ops_path_aclaraciones_20261021.json (handle 10665.2/50482, anio de edicion 2019). De las cinco ocurrencias de PATH en la v16, solo estas dos del parrafo 155 son discrepantes."
+        },
+        {
+          "id": "A-09",
+          "indice_docx": 155,
+          "ancla_original": "y PATH, 2020).",
+          "texto_nuevo": "y PATH, 2019).",
+          "ocurrencias": 1,
+          "defecto": "C-02",
+          "nota": "Segunda y ultima mencion erronea. Verificado contra el DOCX: PATH aparece cinco veces en total (par#155 x2 con 2020; par#265 y par#325 con 2019; par#765 entrada de la lista con 2019). Las tres ocurrencias de 2019 NO se tocan."
+        },
+        {
+          "id": "A-10",
+          "indice_docx": 655,
+          "ancla_original": "(T_reg y T_vale)",
+          "texto_nuevo": "(tiempo de registro y tiempo de emisión de vale)",
+          "ocurrencias": 1,
+          "defecto": "C-06",
+          "nota": "Encabezado 5.2.1. Sustituye guiones bajos por prosa."
+        },
+        {
+          "id": "A-11",
+          "indice_docx": 23,
+          "ubicacion": "TABLA 23, fila 9, columna 5",
+          "ancla_original": "(MSD = Saldo / CPA)",
+          "texto_nuevo": "(relación entre el saldo disponible y el consumo promedio mensual)",
+          "ocurrencias": 1,
+          "defecto": "M-22",
+          "nota": "Tabla 23 impresa = tables[23]. Fila 9 base 1."
+        },
+        {
+          "id": "A-12",
+          "indice_docx": 31,
+          "ubicacion": "TABLA 31, fila 5, columna 3",
+          "ancla_original": "(Q_entregada = Q_programada)",
+          "texto_nuevo": "(cantidad entregada igual a la cantidad programada)",
+          "ocurrencias": 1,
+          "defecto": "M-22"
+        },
+        {
+          "id": "A-13",
+          "indice_docx": 50,
+          "ubicacion": "TABLA 50, fila 2, columna 3",
+          "ancla_original": "(Total registros conformes sin error / Total transacciones auditadas) * 100",
+          "texto_nuevo": "Registros conformes sin error sobre el total de transacciones auditadas, expresado en porcentaje",
+          "ocurrencias": 1,
+          "defecto": "B-06",
+          "nota": "Tabla 47 IMPRESA = tables[50]. La ecuacion (3) RSD ya existe como OMML en par#597; no se pierde la formula."
+        },
+        {
+          "id": "A-14",
+          "indice_docx": 50,
+          "ubicacion": "TABLA 50, fila 3, columna 3",
+          "ancla_original": "(Cantidad física biológica entregada / Cantidad programada en requerimiento) * 100",
+          "texto_nuevo": "Cantidad física biológica entregada sobre la cantidad programada en el requerimiento, expresado en porcentaje",
+          "ocurrencias": 1,
+          "defecto": "B-06",
+          "nota": "La ecuacion (4) CPE ya existe como OMML en par#600."
+        },
+        {
+          "id": "A-15",
+          "indice_docx": 620,
+          "ancla_original": "(κ = (P_o - P_e) / (1 - P_e))",
+          "texto_nuevo": "(proporción de concordancia observada corregida por la concordancia esperada por azar)",
+          "ocurrencias": 1,
+          "defecto": "C-07",
+          "nota": "Via prosa, autorizada por el dictamen. Evita insertar una ecuacion (12) y renumerar las ecuaciones (8)-(11)."
+        },
+        {
+          "id": "A-16",
+          "indice_docx": 652,
+          "ancla_original": "Nota. Intervalo de confianza (IC) al 95% calculado según el método de distribución F asintótica de Feldt (1965). Muestra censal n = 14 trabajadores de la cadena de inmunizaciones de la Dirección de Salud Apurímac II. Criterios de baremación psicométrica: ≥ .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. El intervalo de confianza se expresa como [límite inferior, límite superior]. Fuente: Matriz de recolección de campo SIVAC (2026).",
+          "texto_nuevo": "Nota. Resultados provisionales calculados con datos de prueba (n = 14); no constituyen mediciones de campo. Intervalo de confianza (IC) al 95% calculado según el método de distribución F asintótica de Feldt (1965). Criterios de baremación psicométrica: ≥ .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. El intervalo de confianza se expresa como [límite inferior, límite superior]. Fuente: datos de prueba.",
+          "ocurrencias": 1,
+          "defecto": "C-05",
+          "fuente": "salidas/reportes_maquetacion/validacion_jueces_aclaraciones_20261021.json (tabla_35_procedencia.parche_propuesto)",
+          "nota": "Sustitucion integra de la nota, en un unico run. Sin tokens internos ni rutas tecnicas en la tesis: DEC-007, nombres de CSV y ruta datos/recolectados/ quedan solo en el reporte. No altera ninguna cifra de la Tabla 35. El prefijo 'Nota.' seguira en redonda hasta que se apruebe GAP-01 (M-04)."
+        },
+        {
+          "id": "A-17",
+          "indice_docx": 527,
+          "ancla_original": "En la Figura 44 se ilustra la ejecución real de las pruebas unitarias de MovimientosCalculationService.ts",
+          "texto_nuevo": "En la Figura 44 se ilustra el código de la prueba unitaria de MovimientosCalculationService.ts",
+          "ocurrencias": 1,
+          "defecto": "B-05",
+          "fuente": "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json (figura_44.parche_propuesto)",
+          "nota": "La imagen es codigo TypeScript, no una consola. Se elimina la sobreafirmacion 'ejecucion real'. No se declara el 100 % de casos."
+        },
+        {
+          "id": "A-18",
+          "indice_docx": 528,
+          "ancla_original": "Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+          "texto_nuevo": "Prueba unitaria de cálculo de entregas adicionales y sincronización de stock (movimientos-entrega-adicional-stock.test.ts)",
+          "ocurrencias": 1,
+          "defecto": "B-05",
+          "fuente": "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json (rotulo de la Figura 27 del DOCX XP)",
+          "nota": "Se sustituye solo el tramo en cursiva del rotulo; 'Figura ' y '44' conservan su formato."
+        },
+        {
+          "id": "A-19",
+          "indice_docx": 530,
+          "ancla_original": "Consola de ejecución de la suite de pruebas unitarias en Jest demostrando el cumplimiento del 100% de los casos de prueba transaccionales sin discrepancias.",
+          "texto_nuevo": "Elaboración propia. La prueba utiliza dobles de prueba (mocks de Jest sobre Prisma) para verificar el cálculo determinista de entregas y la propagación del saldo al mes siguiente.",
+          "ocurrencias": 1,
+          "defecto": "B-05",
+          "fuente": "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json (nota de la Figura 27 del DOCX XP)",
+          "nota": "Ancla sin el prefijo 'Nota. ', que ya esta en cursiva. No se atribuye a la imagen una salida de consola inexistente."
+        },
+        {
+          "id": "A-20",
+          "indice_docx": 75,
+          "ancla_original": "Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+          "texto_nuevo": "Prueba unitaria de cálculo de entregas adicionales y sincronización de stock (movimientos-entrega-adicional-stock.test.ts)",
+          "ocurrencias": 1,
+          "defecto": "B-05",
+          "estado": "requiere_GAP-09",
+          "nota": "Entrada del indice de figuras: el texto vive dentro de w:hyperlink y python-docx no la expone en paragraph.runs. Si no se extiende el motor, el indice quedara con el rotulo antiguo. Alternativa: actualizar campos con Word COM al exportar, con autorizacion."
+        },
+        {
+          "id": "A-21",
+          "indice_docx": 811,
+          "ancla_original": "En la Tabla A6.1 se sintetizan",
+          "texto_nuevo": "En la Tabla 51 se sintetizan",
+          "ocurrencias": 1,
+          "defecto": "C-03",
+          "fuente": "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json (iteraciones_xp)",
+          "nota": "Corrige la remision al rotulo impreso. No altera el recuento de cinco iteraciones."
+        },
+        {
+          "id": "A-22",
+          "indice_docx": 537,
+          "ancla_original": "Pruebas de aceptación ejecutadas en las instalaciones de la DISA Apurímac II con participación de los usuarios finales de la cadena de frío.",
+          "texto_nuevo": "Pruebas de aceptación ejecutadas en las instalaciones de la DISA Apurímac II con participación de los usuarios finales de la cadena de frío. Los resultados de CP-06 y CP-11 corresponden a pruebas de aceptación funcional; no equivalen a medición pretest/postest ni acreditan reducción de tiempos de campo.",
+          "ocurrencias": 1,
+          "defecto": "C-01",
+          "fuente": "salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json (cp06_cp11_vs_treg_tvale)",
+          "nota": "Amplia la nota existente tras la Tabla 27. No declara protocolo de medicion, no cambia cifras de la D1 y no convierte CP-06/CP-11 en indicadores."
+        }
+      ]
+    },
+
+    "lote_A_geometria": {
+      "descripcion": "Operaciones geometricas nativas. Se expresan como invocaciones del motor, no como sustituciones.",
+      "operaciones": [
+        {
+          "id": "G-01",
+          "defectos": ["M-01", "M-02"],
+          "tabla": 1,
+          "accion": "margenes laterales de celda 57 -> 28 dxa y rebalanceo de las seis columnas",
+          "estado": "requiere_GAP-03_y_GAP-04",
+          "fundamento": "Sin reducir margenes no hay excedente: la suma de minimos es 8834 dxa y el ancho util es 8765."
+        },
+        {
+          "id": "G-02",
+          "defectos": ["M-01"],
+          "tabla": 32,
+          "accion": "rebalanceo",
+          "cli": "docx_quirurgico.py aplicar-ordenes <docx> --lotes <json> --tablas-rebalanceo 32 --salida <docx>",
+          "estado": "listo_para_ejecutar"
+        },
+        {
+          "id": "G-03",
+          "defectos": ["M-01", "B-03"],
+          "tabla": 34,
+          "accion": "rebalanceo con ensanche de las columnas 5 y 6",
+          "detalle": "tables[34] c5 necesita 1034 dxa y tiene 833; c6 necesita 1034 y tiene 618.",
+          "estado": "depende_de_G-01"
+        },
+        {
+          "id": "G-04",
+          "defectos": ["M-14"],
+          "tablas": [46, 47, 48],
+          "accion": "aplicar_bordes_apa7 + retirar w:tblHeader de la fila 0",
+          "estado": "requiere_orden_especifica",
+          "nota": "Retirar tblHeader elimina la repeticion del bloque 'Juez Validador' al cortar pagina."
+        },
+        {
+          "id": "G-05",
+          "defectos": ["M-16"],
+          "accion": "fijar w:line=240 en el estilo 'Tabladeilustraciones', igualando 'toc 1'",
+          "estado": "requiere_GAP-05",
+          "fundamento": "El indice de figuras vuelca una sola entrada (Figura 52) al folio ix. Con interlineado 240 las 52 entradas caben en dos folios."
+        },
+        {
+          "id": "G-06",
+          "defectos": ["M-03"],
+          "accion": "insertar_prefijo_notas",
+          "objetivo_verificado": ["par#414 (Tabla 10)", "par#432 (Tabla 19)"],
+          "estado": "listo_con_verificacion_previa",
+          "nota": "Antes de escribir, listar todos los parrafos que cumplen las condiciones para descartar notas ajenas."
+        },
+        {
+          "id": "G-08",
+          "defectos": ["C-03"],
+          "tabla": 54,
+          "accion": "conservar la cabecera y las cinco filas actuales y agregar dos filas de Iteracion 5 con HU-14 y HU-15",
+          "filas_nuevas": [
+            ["HU-14", "Iteración 5 (Inteligencia Logística y Alertas)", "Alertas Tempranas de Vencimiento y Stock", "No declarado en la Tabla 7", "Notificación de alerta visual roja en campana de interfaz ante lote con 25 días restantes y stock bajo mínimo."],
+            ["HU-15", "Iteración 5 (Inteligencia Logística y Alertas)", "Dashboard Ejecutivo y Módulo ICI-DEMID (MSD)", "No declarado en la Tabla 7", "Despliegue interactivo de gráficos y semáforos en menos de 2 s."]
+          ],
+          "estado": "listo_para_ejecutar_con_motor",
+          "fundamento": "La Tabla 8 asigna HU-14 y HU-15 a la Iteracion 5. HU-12 permanece en la Iteracion 4: no se mueve ni se reetiqueta.",
+          "nota": "El rol/actor de ambas historias no consta en la Tabla 7; se consigna 'No declarado en la Tabla 7' para no inventarlo y queda [VERIFICAR] con el tesista. Los criterios provienen de CP-14 y CP-15 (Tabla 27)."
+        }
+      ]
+    },
+
+    "lote_B_bloqueado": [
+      {
+        "id": "B-03",
+        "motivo": "Faltan los coeficientes V de Aiken e IVC del Instrumento N. 03.",
+        "anclas": ["tables[34] fila 4, columna 5", "tables[34] fila 4, columna 6", "tables[34] fila 4, columna 7"],
+        "no_hacer": "No rellenar ni sustituir por valores supuestos."
+      },
+      {
+        "id": "B-04",
+        "motivo": "Depende de los dictamenes firmados de los tres jueces.",
+        "anclas": ["tables[46] fila 5, columna 2", "tables[47] fila 5, columna 2", "tables[48] fila 5, columna 2"],
+        "no_hacer": "No tocar las casillas de Opinion Pericial. No inventar coeficientes. No convertir la calificacion 4 de la escala 1-4 en 'Si' ni sustituir los placeholders por 1.000."
+      },
+      {
+        "id": "M-08",
+        "motivo": "Requiere decision tipografica y GAP-06.",
+        "anclas": ["par#85-88 aprox. (pag. 85, 86, 88)", "par#649-652 (pag. 119)", "pag. 125-130"],
+        "detalle": "Los huecos provienen de tokens largos sin punto de corte: MovimientosCalculationService.ts, AlertaAutomaticaService.ts, IciDemidService.ts, calcularIndicadoresDisponibilidad().",
+        "opciones": ["guiones blandos U+00AD en fronteras camelCase", "hyphenation automatica de Word en espanol", "alineacion izquierda solo en esos parrafos"]
+      },
+      {
+        "id": "M-09",
+        "motivo": "Requiere GAP-01 y la lista de tramos en cursiva por entrada.",
+        "alcance_real": 53,
+        "nota": "El dictamen enumera 14; el defecto abarca las 53 entradas."
+      },
+      {
+        "id": "M-11_M-12_M-13",
+        "motivo": "Requiere decision: rotulo de continuacion, particion de filas o reduccion tipografica.",
+        "anclas": ["tables[43]", "tables[44]", "tables[45]"],
+        "estado_actual": "cantSplit activo en las 5 filas y tblHeader en la fila 0",
+        "observacion": "APA 7 no exige rotulo de continuacion; exige repeticion de cabecera, ya presente. La pagina semivacia se resuelve permitiendo la particion de filas (GAP-07) o reduciendo la fuente de esas tres tablas."
+      },
+      {
+        "id": "M-20",
+        "motivo": "Decision de sentido unico.",
+        "detalle": "Seis valores alfa en par#649 sin cero inicial (.939, .877, .874, .915, .831, .841) frente a 0.939 en la Tabla 35.",
+        "opciones": ["alinear la tabla a la prosa (APA 7: sin cero en valores acotados a 1)", "alinear la prosa a la tabla"]
+      },
+      {
+        "id": "M-21",
+        "motivo": "La legibilidad de la Figura 28 depende de una captura nueva a mayor resolucion.",
+        "anclas": ["par#476 leyenda", "par#477 imagen", "par#478 nota"],
+        "no_hacer": "No remuestrear la imagen existente."
+      },
+      {
+        "id": "M-04",
+        "motivo": "El prefijo 'Nota.' existe pero esta en redonda; requiere GAP-01.",
+        "ancla": "par#652"
+      },
+      {
+        "id": "M-05",
+        "motivo": "Requiere GAP-02: w:keepNext en la ultima fila de tables[33].",
+        "ancla": "tables[33] + par#617"
+      },
+      {
+        "id": "M-07",
+        "motivo": "Requiere GAP-02: w:keepNext en par#561 (ecuacion del diseno) y par#562 ('Donde:').",
+        "anclas": ["par#561", "par#562"]
+      }
+    ]
+  },
+
+  "secuencia_de_ejecucion_propuesta": [
+    "1. Recibir confirmacion del Director de fin de la colision sobre docx_quirurgico.py.",
+    "2. Ejecutar aplicar-ordenes con el lote A en --solo-verificar y revisar que las 15 ordenes reporten estado 'aplicada' sin 'celda_reubicada'.",
+    "3. Resolver las brechas GAP-01 a GAP-07 aprobadas y reejecutar la auditoria de la linea base.",
+    "4. Aplicar el lote A de sustituciones sobre una copia versionada nueva.",
+    "5. Aplicar el lote A de geometria (G-01 a G-06).",
+    "6. Ejecutar auditar y blindar-todas sobre el destino.",
+    "7. Exportar PDF y renderizar las paginas testigo 3, 12, 28, 36, 37, 73, 79, 97, 113, 119, 131, 137, 150, 152, 153.",
+    "8. Emitir el reporte de maquetacion y el handoff."
+  ],
+
+  "criterios_de_aceptacion_v17": [
+    "Cero tablas con w:tblpPr.",
+    "Cero columnas con desborde de glifo en tables[1], [32] y [34].",
+    "Cero tokens [Pending], [Pendiente] o [Por completar por el juez] en el cuerpo fuera de tables[34], [46], [47] y [48].",
+    "Cero formulas con asterisco ASCII en celdas.",
+    "Cero parentesis desbalanceados en los encabezados del Anexo 3.",
+    "Indice de figuras contenido en dos folios.",
+    "159 paginas o menos, sin paginas nuevas en blanco.",
+    "Los 12 bloques OMML conservados y ninguna ecuacion renumerada.",
+    "Tabla 34 y Anexo 3 conservan [Pendiente] y [Por completar por el juez]: cero coeficientes insertados y ninguna recodificacion de 4 a 'Si'.",
+    "La nota de la Tabla 35 identifica los CSV de prueba y no atribuye los coeficientes a mediciones de campo.",
+    "Figura 44 conserva la imagen autentica; contexto, rotulo y nota describen codigo de prueba y ningun texto declara ejecucion al 100 %.",
+    "Tabla 51 contiene la Iteracion 5 con HU-14 y HU-15; HU-12 sigue en la Iteracion 4.",
+    "La nota posterior a la Tabla 27 advierte que CP-06 y CP-11 son pruebas de aceptacion y no equivalen a pretest/postest."
+  ],
+
+  "advertencias_para_el_director": [
+    "El motor no puede hoy producir cursivas APA en referencias ni en entradas de indice. Sin GAP-01, M-04, M-06 y M-09 quedan fuera de la v17.",
+    "Toda orden de tabla debe emitirse con indice_docx, no con el rotulo impreso: la Tabla 47 impresa es tables[50].",
+    "insertar_prefijo_notas recorre todas las tablas del cuerpo; debe auditarse su universo antes de escribir.",
+    "El archivo ~$informe_final_v16.docx existe en salidas/documentos: hay una sesion de Word con el documento abierto. Conviene cerrarla antes de exportar por COM.",
+    "Cuatro figuras (1, 2, 6 y 9) incumplen 300 DPI en el DOCX y el PDF reduce todas a ~200 ppi. La compuerta de resolucion no se supera sin regenerar las figuras y cambiar el exportador.",
+    "Ninguna sustitucion del lote A modifica datos empiricos, coeficientes ni resultados.",
+    "OPS/PATH: de cinco ocurrencias de PATH, solo las dos del parrafo 155 son erroneas. La entrada de la lista de referencias (par#765) y las citas de par#265 y par#325 ya dicen 2019 con el handle 10665.2/50482 y no deben alterarse. Las contaminaciones del catalogo maestro se gestionan aparte.",
+    "El recuento de 41 defectos del dictamen no coincide con los 36 que enumera. No se emplean sus porcentajes como prueba de cobertura; se corrigen solo los defectos reproducidos.",
+    "No ejecutar el comando de instrucciones_de_aplicacion del expediente OPS/PATH: produciria una v17 por una via paralela a este plan. Las dos sustituciones ya estan integradas como A-08 y A-09 y se aplican en la unica pasada del lote A con el motor canonico.",
+    "Validacion: la declaracion «todos 4» solo es compatible con la escala 1-4 del expediente v09 de 12 items. No se recodifica a Si, no se llenan Tabla 34 ni Anexo 3 y el V/IVC condicional queda en el reporte separado. La v17 espera las ordenes finales de validacion y captura.",
+    "No incorporar a la tesis los parrafos defensivos de trazabilidad instrumental propuestos por el estadistico; se conservan en el reporte. Los placeholders del Anexo 3 permanecen hasta que existan fichas firmadas.",
+    "Tabla 35: la sustitucion A-16 cambia solo la atribucion de fuente. Las cifras y sus intervalos no se tocan y la identidad del dataset de prueba permanece visible.",
+    "Figura 44: no existe captura de consola de Jest en ningun documento del tesista. Se conserva la imagen autentica y se corrigen leyenda y contexto. No pedir otra captura al usuario ni declarar 100 % de ejecucion.",
+    "Tabla 51: se agregan HU-14 y HU-15 en la Iteracion 5. El rol/actor no consta en la Tabla 7 y queda como 'No declarado en la Tabla 7' hasta confirmacion; no se inventa.",
+    "CP-06/CP-11: la nota es prudente y no declara protocolo ni equivalencia con T_reg/T_vale. Las cifras de la D1 no se modifican."
+  ]
+}

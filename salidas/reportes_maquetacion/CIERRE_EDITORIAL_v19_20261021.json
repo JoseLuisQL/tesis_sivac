@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-10-21",
+  "responsable": "director-general",
+  "estado": "correccion_editorial_terminada_para_revision_del_tesista",
+  "documentos": {
+    "word": {
+      "ruta": "salidas/documentos/informe_final_v19.docx",
+      "bytes": 15090858,
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+    },
+    "pdf": {
+      "ruta": "salidas/documentos/informe_final_v19.pdf",
+      "bytes": 17906375,
+      "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas": 158
+    },
+    "excel": {
+      "ruta": "salidas/estadistica/TABLAS_ANEXOS_SIVAC_v5.xlsx",
+      "hojas": 17,
+      "bytes": 68483,
+      "sha256": "1632d1ebe1b37069b247e5da10e4d40f08291a0b2fbac2c41c083eb7be672d7e",
+      "paginas_impresion": 35,
+      "procedencia": "informe_final_v19.docx",
+      "paridad_numerica": "968 celdas sin discrepancias frente a los libros de base y referencia",
+      "nota": "El hash final y la configuración de impresión constan en paridad_TABLAS_ANEXOS_SIVAC_v5.json."
+    }
+  },
+  "aclaraciones_atendidas": {
+    "dni": "Campo en blanco para llenado manuscrito, conforme a la instrucción expresa.",
+    "jueces": "Declaración directa de calificaciones 4 preservada. V e IVC de 1.000 únicamente como resultado condicional para escala experta 1-4; sin simular certificados ni imputar número de jueces.",
+    "captura_xp": "Figura 44 conserva la imagen auténtica del documento XP y ahora se describe como código de una prueba unitaria, no como consola de ejecución.",
+    "ops_path": "Año 2019 comprobado en IRIS y PATH; corregidas las dos citas discrepantes."
+  },
+  "cambios_editoriales_verificados": [
+    "Tablas legibles, ajustes de ancho y márgenes internos, repetición de encabezados y filas íntegras.",
+    "Notas de tablas y rótulos vinculados a sus objetos, índices y folios actualizados.",
+    "Cursivas y sangría francesa en referencias, con 38 enlaces externos nativos existentes.",
+    "Doce ecuaciones nativas OMML y ninguna ecuación dentro de tablas.",
+    "Cero rayas U+2014 y cero tokens [Pendiente], [Pending] o [VERIFICAR] en la copia final.",
+    "ICC y kappa previstos no se presentan como coeficientes calculados ni como acreditaciones.",
+    "Anexo 5 identifica valores de prueba, conservando los nombres reales de los centros de acopio.",
+    "Fotografías no aportadas identificadas como pendientes, sin simular evidencia.",
+    "Gráficos identificados como elaborados con Python; presentación tipo SPSS distinguida del software de cálculo.",
+    "PDF con imágenes recuperadas desde los objetos originales, sin rasterizar páginas y sin intercambio de figuras."
+  ],
+  "alcance_de_revision": {
+    "v18": "159 de 159 páginas revisadas en dos tramos, con método de inspección declarado por página.",
+    "v19": "Cotejo final de correcciones: 17 controles, 16 resueltos y uno parcial; 16 páginas visuales y barrido automático de las 158 páginas.",
+    "limite": "No se presenta el cotejo focalizado de v19 como una nueva inspección visual ampliada de todas sus páginas.",
+    "resultado": "APTO_PARA_REVISION_EDITORIAL, cero bloqueantes altos del subproceso.",
+    "informe_independiente": "salidas/reportes_maquetacion/cotejo_final_v19_20261021.json"
+  },
+  "resolucion_de_imagenes": {
+    "figuras_numeradas_con_imagen": 48,
+    "figuras_numeradas_al_menos_300_dpi": 47,
+    "figura_6": "136.5 DPI, limitación de fuente documentada; no se reescaló para aparentar detalle.",
+    "escudo": "117.8 DPI, no numerado.",
+    "figuras_49_52": "Fotografías pendientes de incorporación, sin imagen fabricada."
+  },
+  "limites_para_cierre_definitivo": [
+    "Cotejo de las calificaciones comunicadas con las fichas originales de evaluación.",
+    "Datos reales de campo para sustituir los valores identificados como datos de prueba.",
+    "Fotografías de evidencia, firmas y campos institucionales todavía no aportados.",
+    "Fuente de mayor calidad para la Figura 6, si se exige el umbral de 300 DPI.",
+    "Revisión y aprobación expresa del tesista; no se emite aprobación real del jurado ni autorización de impresión."
+  ],
+  "pruebas_tecnicas": {
+    "seguridad": "2 de 2 pruebas aprobadas",
+    "sintaxis_e_importacion": "correctas en motor y generador Excel",
+    "compatibilidad_motor": "48 funciones previas conservadas sin eliminación ni cambio de firmas; extensión aditiva",
+    "suite_legada": "No aprobada: recolección bloqueada por ANCHO_UTIL_PORTRAIT_DXA en generar_expediente_integral_fany_x3.py:86; se informa separadamente y no se oculta."
+  },
+  "preservacion": "Fuentes, documento XP, referencias y versiones anteriores preservados; Excel v4 ya entregado no se sobrescribió.",
+  "aprobacion_humana": "pendiente"
+}

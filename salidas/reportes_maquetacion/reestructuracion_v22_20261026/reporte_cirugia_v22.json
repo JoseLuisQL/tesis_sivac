@@ -1,0 +1,1060 @@
+{
+  "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22.docx",
+  "salida": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22.docx",
+  "sha256_origen": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
+  "sha256_salida": "c1923764f8622a62f75bce49000495c8b4c56402c19e1ce7939131e5b9efdb45",
+  "operaciones": 86,
+  "aplicadas": 86,
+  "fallidas": [],
+  "marcadores_unificados": {
+    "ids_reescritos": 0,
+    "nombres_reescritos": 0,
+    "marcadores": 231
+  },
+  "detalle": [
+    {
+      "parrafos": 858,
+      "tablas": 59,
+      "rotulos_tabla": 51,
+      "rotulos_figura": 52,
+      "omml": 12,
+      "secciones": 7,
+      "hipervinculos": 253,
+      "marcadores": 214,
+      "campos": 320,
+      "tipo": "verificar",
+      "id": "V0"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "Extreme Programming (XP) es una metodología ágil de ingeniería de software concebida",
+      "caracteres": 872,
+      "id": "XP-01F"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "El proceso disciplinar de XP se articula en cuatro fases metodológicas interdependientes",
+      "caracteres": 1052,
+      "id": "XP-02F"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas)",
+      "caracteres": 613,
+      "id": "XP-03F"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "ANEXO 6: EVIDENCIAS DE DESARROLLO DE SOFTWARE Y TRAZABILIDAD SIVAC",
+      "caracteres": 62,
+      "id": "E6-00"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "Nota. Resumen del backlog de desarrollo implementado en el repositorio",
+      "parrafos": 1,
+      "estilos": [
+        "cuerpo"
+      ],
+      "id": "E6-01"
+    },
+    {
+      "tipo": "trasladar_rango",
+      "desde": "3.3. Metodología de Desarrollo de Software Extreme Programming (XP)",
+      "hasta": "La infraestructura se diseñó considerando tres niveles de aislamiento",
+      "elementos": 247,
+      "destino": "El presente anexo documenta el desarrollo aplicado del sistema SIVAC",
+      "id": "E6-02"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 4,
+      "filas": 5,
+      "relaciones": 0,
+      "estilos": [
+        "TableGrid",
+        "TableNormal"
+      ],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 27,
+      "titulo": "Historia de usuario HU-01: Iniciar sesión en el sistema con control de ámbito RB",
+      "id": "G01"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 5,
+      "filas": 5,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 27,
+      "titulo": "Historia de usuario HU-04: Registrar lotes biológicos y controlar vencimientos b",
+      "id": "G02"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 6,
+      "filas": 5,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 27,
+      "titulo": "Historia de usuario HU-06: Registrar movimientos mensuales y sincronizar saldos ",
+      "id": "G03"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 7,
+      "filas": 5,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 27,
+      "titulo": "Historia de usuario HU-09: Importar formato ICI-DEMID y calcular Meses de Stock ",
+      "id": "G04"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 8,
+      "filas": 5,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 27,
+      "titulo": "Historia de usuario HU-12: Gestionar usuarios, matriz de permisos RBAC y reporte",
+      "id": "G05"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 10,
+      "filas": 12,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 48,
+      "titulo": "Tipos enumerados (ENUM) definidos en la base de datos PostgreSQL de SIVAC",
+      "id": "G06"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 14,
+      "filas": 12,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 96,
+      "titulo": "Principales relaciones por llave foránea del esquema relacional de SIVAC",
+      "id": "G07"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 24,
+      "filas": 9,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8766,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 54,
+      "titulo": "Verificaciones de seguridad y control de acceso sobre la API REST de SIVAC",
+      "id": "G08"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 25,
+      "filas": 8,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 64,
+      "titulo": "Escenarios de aceptación de las historias de usuario registrados con el usuario",
+      "id": "G09"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "La infraestructura se diseñó considerando tres niveles de aislamiento",
+      "parrafos": 2,
+      "estilos": [
+        "heading2",
+        "cuerpo"
+      ],
+      "id": "S6-00"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 0,
+      "filas": 17,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 136,
+      "titulo": "Requerimientos funcionales del sistema SIVAC",
+      "id": "S1"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 1,
+      "filas": 9,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8766,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 54,
+      "titulo": "Requerimientos no funcionales del sistema SIVAC",
+      "id": "S2"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 2,
+      "filas": 17,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 136,
+      "titulo": "Matriz de roles y permisos operativos del sistema SIVAC",
+      "id": "S3a"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 3,
+      "filas": 13,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8765,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 130,
+      "titulo": "Catálogo de historias de usuario del sistema SIVAC",
+      "id": "S3b"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 11,
+      "filas": 12,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 96,
+      "titulo": "Diccionario de datos de la tabla lotes_vacunas según la fuente de desarrollo",
+      "id": "S5a"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 12,
+      "filas": 12,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 96,
+      "titulo": "Diccionario de datos de la tabla movimientos_vacunas según la fuente de desarrol",
+      "id": "S5b"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 13,
+      "filas": 10,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8764,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 80,
+      "titulo": "Diccionario de datos de la tabla ici_demid_registros según la fuente de desarrol",
+      "id": "S5c"
+    },
+    {
+      "tipo": "injertar_tabla",
+      "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+      "indice": 23,
+      "filas": 13,
+      "relaciones": 0,
+      "estilos": [],
+      "geometria": {
+        "escalada": true,
+        "ancho_original_dxa": 9360,
+        "ancho_final_dxa": 8766,
+        "factor": 0.9364
+      },
+      "runs_normalizados": 78,
+      "titulo": "Resumen de pruebas unitarias y de integración del backend de SIVAC (Jest)",
+      "id": "S4"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "Nota. Elaboración propia. Se ejecutaron 14 conjuntos de pruebas",
+      "parrafos": 2,
+      "estilos": [
+        "heading1",
+        "cuerpo"
+      ],
+      "id": "A7-NEW"
+    },
+    {
+      "tipo": "trasladar_tabla",
+      "filas": 13,
+      "destino": "antes de ANEXO 7: SALIDA ESTADÍSTICA",
+      "id": "TAB-S4"
+    },
+    {
+      "tipo": "trasladar_rango",
+      "desde": "Advertencia metodológica y salvaguarda deontológica",
+      "hasta": "Nota. Regla conjuntiva multivariada",
+      "elementos": 102,
+      "destino": "Este anexo conserva, con fines de trazabilidad, la salida estadística",
+      "id": "A7-HIST"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.1. Análisis de Confiabilidad del Instrumento 03",
+      "caracteres": 49,
+      "id": "H-71"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2. Estadística Descriptiva de la Variable Dependiente y sus Tres Dimensiones",
+      "caracteres": 78,
+      "id": "H-72"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2.1. Dimensión 1: Oportunidad de Procesamiento",
+      "caracteres": 97,
+      "id": "H-721"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2.2. Dimensión 2: Consistencia Documental",
+      "caracteres": 55,
+      "id": "H-722"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.2.3. Dimensión 3: Satisfacción del Usuario",
+      "caracteres": 70,
+      "id": "H-723"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.3. Prueba de Bondad de Ajuste de Normalidad",
+      "caracteres": 45,
+      "id": "H-73"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4. Contrastación de Hipótesis",
+      "caracteres": 31,
+      "id": "H-74"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.1. Contrastación de la Hipótesis Específica 1",
+      "caracteres": 49,
+      "id": "H-741"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.2. Contrastación de la Hipótesis Específica 2",
+      "caracteres": 49,
+      "id": "H-742"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.3. Contrastación de la Hipótesis Específica 3",
+      "caracteres": 49,
+      "id": "H-743"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "5.4.4. Contrastación de la Hipótesis General",
+      "caracteres": 44,
+      "id": "H-744"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "Nota. Regla conjuntiva multivariada",
+      "parrafos": 2,
+      "estilos": [
+        "heading2",
+        "cuerpo"
+      ],
+      "id": "A7-75"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "Los cinco párrafos siguientes reproducen la discusión de resultados",
+      "parrafos": 1,
+      "estilos": [
+        "heading3"
+      ],
+      "id": "A7-751"
+    },
+    {
+      "tipo": "trasladar_rango",
+      "desde": "El propósito de la presente investigación fue determinar en qué medida",
+      "hasta": "Finalmente, la contrastación de la Hipótesis General bajo una regla de",
+      "elementos": 5,
+      "destino": "7.5.1. Discusión histórica de resultados",
+      "id": "A7-DISC"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "Finalmente, la contrastación de la Hipótesis General bajo una regla de",
+      "parrafos": 1,
+      "estilos": [
+        "heading3"
+      ],
+      "id": "A7-752"
+    },
+    {
+      "tipo": "trasladar_rango",
+      "desde": "Primera (Objetivo General): A partir del conjunto de datos provisional",
+      "hasta": "Cuarta (Objetivo Específico 3): Se determinó que el sistema web SIVAC ",
+      "elementos": 4,
+      "destino": "7.5.2. Conclusiones históricas",
+      "id": "A7-CONC"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "Primera (Objetivo General): A partir del conjunto de datos provisionales",
+      "sustituciones": 1,
+      "id": "A7-REF5"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO",
+      "caracteres": 94,
+      "id": "A8"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "CAPÍTULO V: RESULTADOS",
+      "parrafos": 13,
+      "estilos": [
+        "cuerpo",
+        "heading2",
+        "cuerpo",
+        "cuerpo",
+        "heading2",
+        "cuerpo",
+        "cuerpo",
+        "cuerpo",
+        "cuerpo",
+        "cuerpo",
+        "heading2",
+        "cuerpo",
+        "cuerpo"
+      ],
+      "id": "CV-00"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "CAPÍTULO VI: DISCUSIÓN",
+      "parrafos": 3,
+      "estilos": [
+        "cuerpo",
+        "cuerpo",
+        "cuerpo"
+      ],
+      "id": "DI-01"
+    },
+    {
+      "tipo": "insertar_parrafos",
+      "despues_de": "CONCLUSIONES",
+      "parrafos": 4,
+      "estilos": [
+        "cuerpo",
+        "cuerpo",
+        "cuerpo",
+        "cuerpo"
+      ],
+      "id": "CO-01"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "en los trece (13) centros de acopio de la sede central",
+      "sustituciones": 1,
+      "id": "RA-01"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "a lo largo de cinco iteraciones (71 puntos de historia y 15 historias de usuario)",
+      "sustituciones": 1,
+      "id": "RA-02"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "se diseñó mediante la prueba de normalidad de Shapiro-Wilk",
+      "sustituciones": 1,
+      "id": "RA-03"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación postest",
+      "sustituciones": 1,
+      "id": "RA-04"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "across the thirteen (13) storage centers at the central headquarters",
+      "sustituciones": 1,
+      "id": "AB-01"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "across five iterations (71 story points and 15 user stories)",
+      "sustituciones": 1,
+      "id": "AB-02"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "was structured using the Shapiro-Wilk normality test",
+      "sustituciones": 1,
+      "id": "AB-03"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "whose definitive field statistics remain under posttest consolidation",
+      "sustituciones": 1,
+      "id": "AB-04"
+    },
+    {
+      "tipo": "reemplazo_fragmento",
+      "ancla": "A continuación, en las Tablas 10 a 24 se documenta",
+      "sustituciones": 1,
+      "id": "F-RANGOS"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1. Fase I: Planificación",
+      "caracteres": 77,
+      "id": "H-331"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.1. Metáfora del Sistema",
+      "caracteres": 51,
+      "id": "H-3311"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.2. Requerimientos Funcionales del Sistema SIVAC",
+      "caracteres": 51,
+      "id": "H-3312"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.3. Requerimientos No Funcionales",
+      "caracteres": 61,
+      "id": "H-3313"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.4. Trazabilidad Requerimientos",
+      "caracteres": 76,
+      "id": "H-3314"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.5. El Juego de la Planificación",
+      "caracteres": 88,
+      "id": "H-3315"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.6. Plan de Entregas e Iteraciones",
+      "caracteres": 52,
+      "id": "H-3316"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.1.7. Diagrama de Casos de Uso General",
+      "caracteres": 51,
+      "id": "H-3317"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2. Fase II: Diseño Simple",
+      "caracteres": 51,
+      "id": "H-332"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.1. Arquitectura Lógica en Capas",
+      "caracteres": 61,
+      "id": "H-3321"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.2. Diagramas de Flujo y Procesos",
+      "caracteres": 47,
+      "id": "H-3322"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.3. Diagramas de Secuencia UML",
+      "caracteres": 54,
+      "id": "H-3323"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.2.4. Modelado Conceptual, Lógico y Físico",
+      "caracteres": 63,
+      "id": "H-3324"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3. Fase III: Codificación",
+      "caracteres": 58,
+      "id": "H-333"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3.1. Estructura del Proyecto y Stack",
+      "caracteres": 50,
+      "id": "H-3331"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3.2. Implementación de Algoritmos Críticos",
+      "caracteres": 55,
+      "id": "H-3332"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.3.3. Interfaces Gráficas de Usuario",
+      "caracteres": 56,
+      "id": "H-3333"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4. Fase IV: Pruebas de Calidad",
+      "caracteres": 45,
+      "id": "H-334"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4.1. Estrategia Piramidal",
+      "caracteres": 52,
+      "id": "H-3341"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4.2. Pruebas de Aceptación con el Cliente",
+      "caracteres": 62,
+      "id": "H-3342"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.4.3. Evaluación de Calidad del Software",
+      "caracteres": 66,
+      "id": "H-3343"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.5. Despliegue y puesta en operación",
+      "caracteres": 37,
+      "id": "H-335"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3.5.1. Topología de Red",
+      "caracteres": 59,
+      "id": "H-3351"
+    },
+    {
+      "tipo": "reemplazo_parrafo",
+      "ancla": "3.3. Metodología de Desarrollo de Software Extreme Programming (XP)",
+      "caracteres": 68,
+      "id": "H-330"
+    },
+    {
+      "rotulos_divididos": 103,
+      "sin_titulo": [
+        "Tabla 900",
+        "Tabla 901",
+        "Tabla 902",
+        "Tabla 903",
+        "Tabla 904",
+        "Tabla 905",
+        "Tabla 906",
+        "Tabla 907",
+        "Tabla 916",
+        "Tabla 908",
+        "Tabla 909",
+        "Tabla 910",
+        "Tabla 911",
+        "Tabla 912",
+        "Tabla 913",
+        "Tabla 914",
+        "Tabla 915"
+      ],
+      "detalle": [
+        "Tabla 1",
+        "Figura 1",
+        "Figura 2",
+        "Figura 3",
+        "Figura 4",
+        "Figura 5",
+        "Figura 6",
+        "Figura 7",
+        "Figura 8",
+        "Figura 9",
+        "Figura 10",
+        "Tabla 2",
+        "Tabla 29",
+        "Tabla 30",
+        "Tabla 31",
+        "Tabla 32",
+        "Tabla 33",
+        "Tabla 34",
+        "Tabla 44",
+        "Tabla 45",
+        "Tabla 46",
+        "Tabla 47",
+        "Tabla 48",
+        "Tabla 49",
+        "Tabla 50",
+        "Tabla 51",
+        "Figura 11",
+        "Tabla 3",
+        "Tabla 4",
+        "Tabla 5",
+        "Tabla 6",
+        "Tabla 7",
+        "Tabla 8",
+        "Figura 12",
+        "Figura 13",
+        "Figura 14",
+        "Figura 15",
+        "Figura 16",
+        "Figura 17",
+        "Tabla 9",
+        "Figura 18",
+        "Figura 19",
+        "Figura 20",
+        "Figura 21",
+        "Tabla 10",
+        "Tabla 11",
+        "Tabla 12",
+        "Tabla 13",
+        "Tabla 14",
+        "Tabla 15",
+        "Tabla 16",
+        "Tabla 17",
+        "Tabla 18",
+        "Tabla 19",
+        "Tabla 20",
+        "Tabla 21",
+        "Tabla 22",
+        "Tabla 23",
+        "Tabla 24",
+        "Tabla 25",
+        "Figura 22",
+        "Figura 23",
+        "Figura 24",
+        "Figura 25",
+        "Figura 26",
+        "Figura 27",
+        "Figura 28",
+        "Figura 29",
+        "Figura 30",
+        "Figura 31",
+        "Figura 32",
+        "Figura 33",
+        "Figura 34",
+        "Figura 35",
+        "Figura 36",
+        "Figura 37",
+        "Figura 38",
+        "Figura 39",
+        "Figura 40",
+        "Figura 41",
+        "Figura 42",
+        "Figura 43",
+        "Figura 44",
+        "Tabla 26",
+        "Tabla 27",
+        "Tabla 28",
+        "Figura 45",
+        "Tabla 35",
+        "Tabla 36",
+        "Figura 46",
+        "Tabla 37",
+        "Figura 47",
+        "Tabla 38",
+        "Figura 48",
+        "Tabla 39",
+        "Tabla 40",
+        "Tabla 41",
+        "Tabla 42",
+        "Tabla 43",
+        "Figura 49",
+        "Figura 50",
+        "Figura 51",
+        "Figura 52"
+      ],
+      "tipo": "normalizar_rotulos",
+      "id": "N-01"
+    },
+    {
+      "tablas_numeradas": 68,
+      "figuras_numeradas": 52,
+      "caches_reescritas": 120,
+      "codigos_reescritos": 66,
+      "llamadas_reescritas": 27,
+      "mapas": {
+        "Tabla": {
+          "1": 1,
+          "2": 2,
+          "29": 3,
+          "30": 4,
+          "31": 5,
+          "32": 6,
+          "33": 7,
+          "34": 8,
+          "44": 9,
+          "45": 10,
+          "46": 11,
+          "47": 12,
+          "48": 13,
+          "49": 14,
+          "50": 15,
+          "51": 16,
+          "3": 17,
+          "4": 18,
+          "5": 19,
+          "6": 20,
+          "7": 21,
+          "900": 22,
+          "901": 23,
+          "902": 24,
+          "903": 25,
+          "904": 26,
+          "8": 27,
+          "9": 28,
+          "905": 29,
+          "10": 30,
+          "11": 31,
+          "12": 32,
+          "13": 33,
+          "14": 34,
+          "15": 35,
+          "16": 36,
+          "17": 37,
+          "18": 38,
+          "19": 39,
+          "20": 40,
+          "21": 41,
+          "22": 42,
+          "23": 43,
+          "24": 44,
+          "906": 45,
+          "25": 46,
+          "26": 47,
+          "907": 48,
+          "916": 49,
+          "27": 50,
+          "28": 51,
+          "908": 52,
+          "909": 53,
+          "910": 54,
+          "911": 55,
+          "912": 56,
+          "913": 57,
+          "914": 58,
+          "915": 59,
+          "35": 60,
+          "36": 61,
+          "37": 62,
+          "38": 63,
+          "39": 64,
+          "40": 65,
+          "41": 66,
+          "42": 67,
+          "43": 68
+        },
+        "Figura": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13,
+          "14": 14,
+          "15": 15,
+          "16": 16,
+          "17": 17,
+          "18": 18,
+          "19": 19,
+          "20": 20,
+          "21": 21,
+          "22": 22,
+          "23": 23,
+          "24": 24,
+          "25": 25,
+          "26": 26,
+          "27": 27,
+          "28": 28,
+          "29": 29,
+          "30": 30,
+          "31": 31,
+          "32": 32,
+          "33": 33,
+          "34": 34,
+          "35": 35,
+          "36": 36,
+          "37": 37,
+          "38": 38,
+          "39": 39,
+          "40": 40,
+          "41": 41,
+          "42": 42,
+          "43": 43,
+          "44": 44,
+          "45": 45,
+          "46": 46,
+          "47": 47,
+          "48": 48,
+          "49": 49,
+          "50": 50,
+          "51": 51,
+          "52": 52
+        }
+      },
+      "tipo": "renumerar",
+      "id": "N-02"
+    },
+    {
+      "Figura": {
+        "estado": "recompuesto",
+        "entradas": 52
+      },
+      "Tabla": {
+        "estado": "recompuesto",
+        "entradas": 68
+      },
+      "tipo": "recomponer_indices",
+      "id": "N-03"
+    },
+    {
+      "parrafos": 1071,
+      "tablas": 76,
+      "rotulos_tabla": 68,
+      "rotulos_figura": 52,
+      "omml": 12,
+      "secciones": 7,
+      "hipervinculos": 270,
+      "marcadores": 231,
+      "campos": 354,
+      "tipo": "verificar",
+      "id": "V1"
+    }
+  ],
+  "estructura_final": {
+    "parrafos": 1071,
+    "tablas": 76,
+    "rotulos_tabla": 68,
+    "rotulos_figura": 52,
+    "omml": 12,
+    "secciones": 7,
+    "hipervinculos": 270,
+    "marcadores": 231,
+    "campos": 354
+  }
+}

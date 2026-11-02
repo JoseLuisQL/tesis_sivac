@@ -1,0 +1,14 @@
+{
+  "comando": "reconstruir-tabla",
+  "motor": "scripts/utilidades/docx_quirurgico.py",
+  "origen": "salidas/documentos/informe_final_v10.docx",
+  "sha256_origen": "be94f87516f24adb42db1a55f65b526a6f81b73676e3ea49f7b6652f904e2ce1",
+  "destino": "salidas/documentos/informe_final_v11.docx",
+  "sha256_destino": "f5e7636fae06b3a1b3e74b5815fc54e3d25ac2ee0109e69ec337136d4db59b07",
+  "tabla_indice": 30,
+  "filas_antes": 10,
+  "filas_despues": 15,
+  "parrafos": 813,
+  "tablas": 59,
+  "fecha_utc": "2026-10-21"
+}

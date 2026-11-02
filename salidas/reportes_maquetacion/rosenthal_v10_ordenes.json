@@ -1,0 +1,192 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v10.docx",
+    "documento_base_sha256": "be94f87516f24adb42db1a55f65b526a6f81b73676e3ea49f7b6652f904e2ce1",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "analista-estadistico",
+    "squad": "Squad D - Bioestadistica e Inferencia",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "convencion_indices": "indice_docx en base 0. En ordenes de tabla identifica document.tables[N]; en ordenes de parrafo identifica document.paragraphs[N]. En ubicacion, fila y columna son base 1 e incluyen la fila de encabezado como fila 1.",
+    "formula_rosenthal": "r = |Z| / sqrt(N), donde N es el numero de pares validos (diferencias no nulas)",
+    "N_pares_validos": 14,
+    "Z_origen": -3.2957653080153086,
+    "r_anterior": "0.62 en el documento emitido (denominador duplicado); sustituido por 0.881",
+    "r_corregido": "0.881 (calculado como |Z|/sqrt(N))",
+    "magnitud_cohen_1988": {
+      "pequeno": 0.1,
+      "mediano": 0.3,
+      "grande": 0.5
+    },
+    "total_sustituciones": 16,
+    "ajuste_glifos_2026-10-21": {
+      "fecha": "2026-10-21",
+      "objeto": "Normalizacion tipografica de los tres textos de reemplazo que introducian notacion ASCII, a peticion del Director General tras el analisis de coordinacion con notacion_matematica_v11.json.",
+      "criterio": "Solo se modifican los campos texto_nuevo y justificacion de las ordenes 9, 14 y 15. Las dieciseis anclas originales, las cifras, los p-valores, los estadisticos y las decisiones permanecen intactos.",
+      "cadenas_modificadas": [
+        {
+          "orden": 9,
+          "ubicacion": "PARRAFO 689",
+          "campo": "texto_nuevo",
+          "antes": "(|Z| / sqrt(N)), donde N es el número de pares válidos",
+          "despues": "(|Z| / √N), donde N es el número de pares válidos",
+          "glifo": "√ U+221A"
+        },
+        {
+          "orden": 14,
+          "ubicacion": "PARRAFO 701",
+          "campo": "texto_nuevo",
+          "antes": "(|d| > 8.0 y r >= 0.50)",
+          "despues": "(|d| > 8.0 y r ≥ 0.50)",
+          "glifo": "≥ U+2265"
+        },
+        {
+          "orden": 15,
+          "ubicacion": "PARRAFO 705",
+          "campo": "texto_nuevo",
+          "antes": "(|d| > 6.00 y r >= 0.50)",
+          "despues": "(|d| > 6.00 y r ≥ 0.50)",
+          "glifo": "≥ U+2265"
+        }
+      ]
+    },
+    "notas": [
+      "Cada r se recalculo desde el Z original, no mediante la multiplicacion ciega por la raiz de dos.",
+      "No se modifican p-valores, estadisticos t o W, medias, desviaciones estandar ni decisiones.",
+      "Las anclas fueron verificadas como literales y unicas contra el DOCX v10; las siete celdas con el mismo texto se desambiguan por tabla, fila y columna.",
+      "La Ecuacion 11 y la Tabla 44 ya declaran |Z|/sqrt(N); no requieren sustitucion.",
+      "Todas las anclas de parrafo y de celda estan contenidas en un unico run de python-docx, por lo que la sustitucion puede aplicarse sin fragmentar el formato."
+    ]
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 3, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de T_reg, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 5, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de T_vale, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de RSD, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 5, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de CPE, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de AP, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de UP, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 5",
+      "ancla_original": "r = 0.62 (grande)",
+      "texto_nuevo": "r = 0.881 (grande)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Celda de tamaño del efecto de Puntaje global TAM, prueba de Wilcoxon. Se sustituye el valor calculado con la variante de denominador duplicado por el valor correcto |Z|/sqrt(N) = 3.296/sqrt(14) = 0.881; la magnitud sigue siendo grande (r >= 0.50, Cohen, 1988)."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "ancla_original": "r de Rosenthal de 0.62 (efecto grande",
+      "texto_nuevo": "r de Rosenthal de 0.881 (efecto grande",
+      "categoria": "tamano_efecto",
+      "justificacion": "T_reg: el valor 0.62 proviene de la variante de denominador duplicado; recalculado desde Z = -3.296 con N = 14 pares válidos resulta 0.881. Se conserva la calificación de efecto grande, ahora respaldada por el valor correcto."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "ancla_original": "y r de Rosenthal = 0.62",
+      "texto_nuevo": "y r de Rosenthal = 0.881",
+      "categoria": "tamano_efecto",
+      "justificacion": "T_vale: mismo estadístico Z = -3.296 y N = 14; r = 0.881. Se actualiza la cifra sin alterar el resto de la oración."
+    },
+    {
+      "indice_docx": 689,
+      "ubicacion": "PARRAFO 689",
+      "ancla_original": "(|Z| / sqrt(2n))",
+      "texto_nuevo": "(|Z| / √N), donde N es el número de pares válidos",
+      "categoria": "tamano_efecto",
+      "justificacion": "Nota de la Tabla 40: se corrige la fórmula declarada. La variante del denominador duplicado no corresponde a la convención adoptada; la ecuación 11 del propio documento ya presenta el cociente entre el valor absoluto de Z y la raíz del número de pares válidos. El radical se escribe con el signo tipográfico √ (U+221A) en lugar de la notación ASCII sqrt; el cálculo, el valor de r y su interpretación no cambian."
+    },
+    {
+      "indice_docx": 692,
+      "ubicacion": "PARRAFO 692",
+      "ancla_original": "con r de Rosenthal de 0.62,",
+      "texto_nuevo": "con r de Rosenthal de 0.881,",
+      "categoria": "tamano_efecto",
+      "justificacion": "RSD: r recalculado desde Z = -3.296 y N = 14 pares válidos; el valor 0.62 correspondía a la variante de denominador duplicado."
+    },
+    {
+      "indice_docx": 692,
+      "ubicacion": "PARRAFO 692",
+      "ancla_original": "con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.48e-12",
+      "texto_nuevo": "con r = 0.881, alcanzando un p ajustado por Holm de p_adj = 1.48e-12",
+      "categoria": "tamano_efecto",
+      "justificacion": "CPE: se actualiza únicamente el tamaño del efecto; el p ajustado de Holm no se modifica."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "ancla_original": "y r = 0.62, con un p ajustado por Holm de p_adj = 2.23e-13",
+      "texto_nuevo": "y r = 0.881, con un p ajustado por Holm de p_adj = 2.23e-13",
+      "categoria": "tamano_efecto",
+      "justificacion": "AP: r corregido a 0.881 desde el Z de origen; el p ajustado de Holm permanece inalterado."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "ancla_original": "y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.57e-13",
+      "texto_nuevo": "y r = 0.881, alcanzando un p ajustado por Holm de p_adj = 1.57e-13",
+      "categoria": "tamano_efecto",
+      "justificacion": "UP: r corregido a 0.881; se preserva el p ajustado de Holm y el resto de las cifras."
+    },
+    {
+      "indice_docx": 701,
+      "ubicacion": "PARRAFO 701",
+      "ancla_original": "(|d| > 8.0 y r > 0.60)",
+      "texto_nuevo": "(|d| > 8.0 y r ≥ 0.50)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Nota de la Tabla 42: se alinea el umbral de r con los criterios de Cohen (1988) declarados en el documento (efecto grande, r ≥ 0.50). El operador se escribe con el signo tipográfico ≥ (U+2265), coherente con el resto del informe. El valor corregido 0.881 satisface holgadamente el umbral."
+    },
+    {
+      "indice_docx": 705,
+      "ubicacion": "PARRAFO 705",
+      "ancla_original": "(|d| > 6.00 y r > 0.60)",
+      "texto_nuevo": "(|d| > 6.00 y r ≥ 0.50)",
+      "categoria": "tamano_efecto",
+      "justificacion": "Decisión general: se explicita el umbral convencional de Cohen (1988) para el efecto grande en r (≥ 0.50), coherente con los valores corregidos de 0.881. El operador se escribe con el signo tipográfico ≥ (U+2265), coherente con el resto del informe."
+    }
+  ]
+}

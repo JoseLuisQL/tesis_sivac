@@ -1,0 +1,21 @@
+origen               salidas\documentos\informe_final_v11.docx
+destino              salidas\documentos\informe_final_v12.docx
+sha256_origen        f5e7636fae06b3a1b3e74b5815fc54e3d25ac2ee0109e69ec337136d4db59b07
+sha256_destino       b583f59f40f670b3ba403bfc5ad60c67e618a99866837cbea4ad160ef8483fbc
+parrafos_antes       813
+parrafos_despues     813
+tablas_antes         59
+tablas_despues       59
+duplicados_antes     {'bloques_duplicados': [], 'encabezados_consecutivos_repetidos': []}
+duplicados_despues   {'bloques_duplicados': [], 'encabezados_consecutivos_repetidos': []}
+
+EJEMPLOS DE ACCIONES:
+{'categoria': 'orden_figura_rotulo', 'parrafo': 337, 'figura': 11, 'estado': 'corregido', 'detalle': 'imagen movida delante del rótulo al espacio entre rótulo y nota'}
+{'categoria': 'orden_figura_rotulo', 'parrafo': 375, 'figura': 12, 'estado': 'corregido', 'detalle': 'imagen movida delante del rótulo al espacio entre rótulo y nota'}
+{'categoria': 'orden_figura_rotulo', 'parrafo': 382, 'figura': 13, 'estado': 'corregido', 'detalle': 'imagen movida delante del rótulo al espacio entre rótulo y nota'}
+{'categoria': 'orden_figura_rotulo', 'parrafo': 386, 'figura': 14, 'estado': 'corregido', 'detalle': 'imagen movida delante del rótulo al espacio entre rótulo y nota'}
+{'categoria': 'orden_figura_rotulo', 'parrafo': 391, 'figura': 15, 'estado': 'corregido', 'detalle': 'imagen movida delante del rótulo al espacio entre rótulo y nota'}
+{'categoria': 'orden_figura_rotulo', 'parrafo': 395, 'figura': 16, 'estado': 'corregido', 'detalle': 'imagen movida delante del rótulo al espacio entre rótulo y nota'}
+{'categoria': 'nota_sin_prefijo', 'tabla': 27, 'parrafo': 561, 'estado': 'corregido', 'detalle': 'prefijo Nota. en cursiva insertado; texto original intacto'}
+{'categoria': 'nota_sin_prefijo', 'tabla': 28, 'parrafo': 566, 'estado': 'corregido', 'detalle': 'prefijo Nota. en cursiva insertado; texto original intacto'}
+{'categoria': 'nota_sin_prefijo', 'tabla': 29, 'parrafo': 571, 'estado': 'corregido', 'detalle': 'prefijo Nota. en cursiva insertado; texto original intacto'}

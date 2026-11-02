@@ -1,0 +1,28 @@
+ultimo parrafo tipo indice: P136
+P134  Tabla 49 Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)	135
+P135  Tabla 50 Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14)	136
+P136  Tabla 51 Matriz de Historias de Usuario desarrolladas e implementadas en SIVAC bajo XP	137
+P137  
+P138  RESUMEN
+P139  Esta investigación tuvo como finalidad determinar en qué medida la aplicación del sistema “SIVAC” mejora la ge
+P140  Palabras clave: Sistema web, Extreme Programming, gestión de movimientos mensuales de vacunas, cadena de frío,
+P141  ABSTRACT
+P142  This research aimed to determine the extent to which the application of the "SIVAC" system improves monthly va
+P143  Keywords: Web system, Extreme Programming, monthly vaccine movement management, cold chain, documentary consis
+P144  CHUMASQA
+P145  Kay yachaymaskhaypa hatun munayninmi karqa SIVAC sutiyniyuq web llikapa yanapayninwan imaynatas sapakilla hamp
+P146  Chawpi rimaykuna: Web llika, Extreme Programming, sapakilla hampi churanakuna apaykachay, chiri apaykachay, qi
+P147  INTRODUCCIÓN
+P148  El propósito de esta investigación fue determinar en qué medida la aplicación del sistema web SIVAC mejora la 
+P149  Previo a la intervención tecnológica ejecutada en el presente estudio, la administración de movimientos mensua
+P150  Para atender dicha problemática operativa, se desarrolló e implementó el sistema web SIVAC aplicando las cuatr
+P151  Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel expli
+P152  Finalmente, el estudio configuró un aporte práctico, metodológico e institucional directo para la gestión sani
+P153  CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN
+P154  1.1. Descripción de la realidad problemática
+P155  A escala global, el fortalecimiento de la cadena de suministro de productos biológicos representa un imperativ
+P156  Diversas investigaciones internacionales evidenciaron las limitaciones críticas asociadas a la gestión manual 
+P157  En contrapartida, la literatura científica internacional demostró que la adopción de plataformas digitales y s
+P158  En el ámbito nacional peruano, la gestión técnica y administrativa de los productos biológicos se rige por la 
+P159  De igual modo, Champi Velásquez (2023, p. 14) advirtió que en los servicios públicos de inmunizaciones del paí
+P160  En el contexto local de la Dirección de Salud Apurímac II (en adelante, DISA Apurímac II), con sede institucio

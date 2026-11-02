@@ -1,0 +1,20 @@
+{
+  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22.docx",
+  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22.pdf",
+  "metodo_exportacion": "ExportAsFixedFormat2",
+  "optimize_for_image_quality": true,
+  "paginas": 186,
+  "medicion_pdf": {
+    "paginas": 186,
+    "rect_primera": [
+      595.32,
+      841.92
+    ],
+    "imagenes": 49,
+    "dpi_min": 136.5,
+    "dpi_mediana": 199.8,
+    "dpi_max": 200.0
+  },
+  "sha256_docx": "c360941f6a3ef34b5e533e6092434fa54955b750bc4dee863fe082a1a2f543cf",
+  "sha256_pdf": "f30e790dbabcee09c577737cc4cd82ceb97611aafef8f9b74ffd70f8a56c6ea7"
+}

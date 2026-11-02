@@ -1,0 +1,2154 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "fase": "F8",
+    "squad": "Squad E",
+    "version": "v02-limpieza",
+    "destino": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+    "modo": "publicado en v02",
+    "origen_respaldo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_V02_ANTES_LIMPIEZA_20261022",
+    "publicado_desde": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\_CANDIDATO_LIMPIEZA_INSTRUMENTOS_20261022",
+    "sha256_candidato": "7b3809afcf4f7a54ba1c239e77ff35c1f604c426cf29a2a802c3d4e74446ec4a",
+    "respaldo_manifest_sha256": "d2feb42aaa89f91b28e3c0aa78c616db1b23ab71af18ee69366633c44ee59aed"
+  },
+  "fuentes_preservadas_sha256": {
+    "respaldo_manifest": "d2feb42aaa89f91b28e3c0aa78c616db1b23ab71af18ee69366633c44ee59aed",
+    "builder": "be09d0f2f5f52ec6cc8f344bccf7541e9c650cd231ac7f3f61ecd62a947e356a",
+    "motor": "fc4ecff42838951c13305f36bffa5e12753da16a28477c4c3a13fd8fbaea8782",
+    "logo_unajma": "52ac000644b8dbd6ee631bc0537e2917a8c2353e1e7e11abb3c6a9c944f1de98",
+    "logo_epis": "7d1888ce844eca6c4812a58cf841b979be683f289bbcc692318057a754dd50d2",
+    "informe_final_v19": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+  },
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.pdf",
+      "sha256_docx": "cf021eedc1926dd40bbe18c8226d90082bba38822d2522342f6c8133082514af",
+      "sha256_pdf": "ad4a22dd938103ba10df397b9e0713e1e03d675d3dbe4cd2fd2ea03c5519227b",
+      "bytes_docx": 1741481,
+      "bytes_pdf": 81342,
+      "paginas": 1,
+      "tablas": 4,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 4,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 2,
+          "filas": 4,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 3,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 8.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.docx",
+        "existe": true,
+        "sha256": "cf021eedc1926dd40bbe18c8226d90082bba38822d2522342f6c8133082514af",
+        "bytes": 1741481,
+        "margenes_unajma_ok": true,
+        "tablas_total": 4,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 2,
+        "tablas_con_cantsplit": 4,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      },
+      "cabecera_institucional": {
+        "secciones": [
+          {
+            "indice": 0,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          }
+        ],
+        "paginas": [
+          {
+            "pagina": 1,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          }
+        ],
+        "todas_las_paginas_con_dos_logos": true,
+        "todas_las_paginas_sin_solape": true,
+        "todas_las_paginas_sin_empuje": false,
+        "altura_visual_uniforme": true,
+        "simetria_lateral": true,
+        "secciones_desvinculadas": true,
+        "todas_las_secciones_con_tabla": true,
+        "imagenes_solo_inline": true,
+        "campos_nativos": true
+      },
+      "render": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\01_FICHA_TIEMPOS_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.pdf",
+      "sha256_docx": "ad6ebbe3bc6791b5dbd34280131df7d9b9d539c51a5441fae369ca9e53eb84eb",
+      "sha256_pdf": "49d5794efa1d5ed2344f9f1f51435513078744d6e9b50ec866a646613a9ea363",
+      "bytes_docx": 1742366,
+      "bytes_pdf": 113850,
+      "paginas": 3,
+      "tablas": 15,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 3,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 4,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 5,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 6,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 7,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 8,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 9,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 10,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 11,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 12,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 13,
+          "filas": 13,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 13,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 14,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 8.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+        "existe": true,
+        "sha256": "ad6ebbe3bc6791b5dbd34280131df7d9b9d539c51a5441fae369ca9e53eb84eb",
+        "bytes": 1742366,
+        "margenes_unajma_ok": true,
+        "tablas_total": 15,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 5,
+        "tablas_con_cantsplit": 15,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      },
+      "cabecera_institucional": {
+        "secciones": [
+          {
+            "indice": 0,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          }
+        ],
+        "paginas": [
+          {
+            "pagina": 1,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 2,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 72.31,
+            "separacion_cabecera_cuerpo_pt": 8.4,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": true,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 3,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 72.31,
+            "separacion_cabecera_cuerpo_pt": 8.4,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": true,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          }
+        ],
+        "todas_las_paginas_con_dos_logos": true,
+        "todas_las_paginas_sin_solape": true,
+        "todas_las_paginas_sin_empuje": false,
+        "altura_visual_uniforme": true,
+        "simetria_lateral": true,
+        "secciones_desvinculadas": true,
+        "todas_las_secciones_con_tabla": true,
+        "imagenes_solo_inline": true,
+        "campos_nativos": true
+      },
+      "render": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p001.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p002.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p003.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.pdf",
+      "sha256_docx": "41dfad516e7a9cc67dadac6c7dad1512b79fb84a1c2e1d255111fa7563ed97a1",
+      "sha256_pdf": "0df6c98da108068886b3f5c8e7df57f9f7b61d264dd9ba1b49ae0c9cd69b8cfd",
+      "bytes_docx": 1741590,
+      "bytes_pdf": 37960,
+      "paginas": 1,
+      "tablas": 3,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 8.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.docx",
+        "existe": true,
+        "sha256": "41dfad516e7a9cc67dadac6c7dad1512b79fb84a1c2e1d255111fa7563ed97a1",
+        "bytes": 1741590,
+        "margenes_unajma_ok": true,
+        "tablas_total": 3,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 0,
+        "tablas_con_cantsplit": 3,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      },
+      "cabecera_institucional": {
+        "secciones": [
+          {
+            "indice": 0,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          }
+        ],
+        "paginas": [
+          {
+            "pagina": 1,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          }
+        ],
+        "todas_las_paginas_con_dos_logos": true,
+        "todas_las_paginas_sin_solape": true,
+        "todas_las_paginas_sin_empuje": false,
+        "altura_visual_uniforme": true,
+        "simetria_lateral": true,
+        "secciones_desvinculadas": true,
+        "todas_las_secciones_con_tabla": true,
+        "imagenes_solo_inline": true,
+        "campos_nativos": true
+      },
+      "render": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\03_CUESTIONARIO_SATISFACCION_A_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.pdf",
+      "sha256_docx": "bb97434068ef6ee3a1a41c8f010cee8a779f9979dc67f287bc53175d95dba0ff",
+      "sha256_pdf": "3388d1fee889bd94ba66f3016c3efa9a2fb2c451a67ed961fd5a5a142195385b",
+      "bytes_docx": 1741787,
+      "bytes_pdf": 38594,
+      "paginas": 1,
+      "tablas": 3,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 2,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 8.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+        "existe": true,
+        "sha256": "bb97434068ef6ee3a1a41c8f010cee8a779f9979dc67f287bc53175d95dba0ff",
+        "bytes": 1741787,
+        "margenes_unajma_ok": true,
+        "tablas_total": 3,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 0,
+        "tablas_con_cantsplit": 3,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      },
+      "cabecera_institucional": {
+        "secciones": [
+          {
+            "indice": 0,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          }
+        ],
+        "paginas": [
+          {
+            "pagina": 1,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          }
+        ],
+        "todas_las_paginas_con_dos_logos": true,
+        "todas_las_paginas_sin_solape": true,
+        "todas_las_paginas_sin_empuje": false,
+        "altura_visual_uniforme": true,
+        "simetria_lateral": true,
+        "secciones_desvinculadas": true,
+        "todas_las_secciones_con_tabla": true,
+        "imagenes_solo_inline": true,
+        "campos_nativos": true
+      },
+      "render": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\04_MODULO_COMPLEMENTARIO_B_POST_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+      "sha256_docx": "d208699b2c539fdb6d13a1a9a838d9974f16a73d80d6f4be9f9a00093a11827b",
+      "sha256_pdf": "3cb57421fb718ae84042c0540f1b9993de457a1b308d52627ea2aac3b4794fa8",
+      "bytes_docx": 1754216,
+      "bytes_pdf": 182530,
+      "paginas": 6,
+      "tablas": 25,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 1,
+          "filas": 4,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 2,
+          "filas": 4,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 3,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 4,
+          "filas": 4,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 5,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 6,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 7,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 8,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 9,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 10,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 11,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 12,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 13,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 14,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 15,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 16,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 17,
+          "filas": 13,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 13,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 18,
+          "filas": 1,
+          "columnas": 1,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 19,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 20,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 21,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 22,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 23,
+          "filas": 2,
+          "columnas": 5,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 24,
+          "filas": 12,
+          "columnas": 7,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 12,
+          "filas_tblHeader": 0
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 8.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": false,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+        "existe": true,
+        "sha256": "d208699b2c539fdb6d13a1a9a838d9974f16a73d80d6f4be9f9a00093a11827b",
+        "bytes": 1754216,
+        "margenes_unajma_ok": true,
+        "tablas_total": 25,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 7,
+        "tablas_con_cantsplit": 25,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      },
+      "cabecera_institucional": {
+        "secciones": [
+          {
+            "indice": 0,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          },
+          {
+            "indice": 1,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          },
+          {
+            "indice": 2,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          },
+          {
+            "indice": 3,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          }
+        ],
+        "paginas": [
+          {
+            "pagina": 1,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 2,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 3,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 72.31,
+            "separacion_cabecera_cuerpo_pt": 8.4,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": true,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 4,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 72.31,
+            "separacion_cabecera_cuerpo_pt": 8.4,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": true,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 5,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 6,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          }
+        ],
+        "todas_las_paginas_con_dos_logos": true,
+        "todas_las_paginas_sin_solape": true,
+        "todas_las_paginas_sin_empuje": false,
+        "altura_visual_uniforme": true,
+        "simetria_lateral": true,
+        "secciones_desvinculadas": true,
+        "todas_las_secciones_con_tabla": true,
+        "imagenes_solo_inline": true,
+        "campos_nativos": true
+      },
+      "render": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p001.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p002.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p003.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p004.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p005.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p006.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+      "sha256_docx": "03eb4ed09237ba868b75451c2eea1625c170a889562e690cee6c829c30afd572",
+      "sha256_pdf": "267656b14dc75ad085170aaf30bd19ae4950d34657415af12d84180e58fb94ed",
+      "bytes_docx": 1745855,
+      "bytes_pdf": 170299,
+      "paginas": 6,
+      "tablas": 22,
+      "tablas_detalle": [
+        {
+          "indice": 0,
+          "filas": 5,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 1,
+          "filas": 5,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 5,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 2,
+          "filas": 9,
+          "columnas": 2,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 9,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 3,
+          "filas": 9,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 9,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 4,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 5,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 6,
+          "filas": 4,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 7,
+          "filas": 3,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 3,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 8,
+          "filas": 4,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 4,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 9,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 10,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 11,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 12,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 13,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 14,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 15,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 16,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 17,
+          "filas": 2,
+          "columnas": 8,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 18,
+          "filas": 1,
+          "columnas": 3,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 1,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 19,
+          "filas": 2,
+          "columnas": 4,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 2,
+          "filas_tblHeader": 0
+        },
+        {
+          "indice": 20,
+          "filas": 13,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 13,
+          "filas_tblHeader": 1
+        },
+        {
+          "indice": 21,
+          "filas": 9,
+          "columnas": 6,
+          "ancho_dxa": 8788,
+          "flotante": false,
+          "insideV": "single",
+          "filas_cantSplit": 9,
+          "filas_tblHeader": 1
+        }
+      ],
+      "ancho_max_dxa": 8788,
+      "tablas_fuera_de_ancho": [],
+      "tablas_flotantes": [],
+      "tablas_sin_rejilla": [],
+      "filas_sin_cantsplit": [],
+      "desborde_inferior_pt": 0.0,
+      "fuente_minima_pt": 8.5,
+      "tokens_prohibidos": [],
+      "fechas_impresas": [],
+      "trab_con_numero": [],
+      "campos_participante": {
+        "Código de centro": true,
+        "Investigador": true,
+        "Observaciones del participante (opcional)": false
+      },
+      "observaciones_alto_cm": null,
+      "auditoria_motor": {
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+        "existe": true,
+        "sha256": "03eb4ed09237ba868b75451c2eea1625c170a889562e690cee6c829c30afd572",
+        "bytes": 1745855,
+        "margenes_unajma_ok": true,
+        "tablas_total": 22,
+        "tablas_flotantes": 0,
+        "tablas_con_header": 13,
+        "tablas_con_cantsplit": 22,
+        "referencias_sangria_francesa": 0,
+        "formulas_omml": 0,
+        "cumple_apa7": true,
+        "hallazgos": []
+      },
+      "cabecera_institucional": {
+        "secciones": [
+          {
+            "indice": 0,
+            "vinculada_anterior": false,
+            "tablas": 1,
+            "columnas_dxa": [
+              1900,
+              4988,
+              1900
+            ],
+            "columnas_laterales_iguales": true,
+            "bordes_nil": true,
+            "flotante": false,
+            "imagenes_inline": 2,
+            "imagenes_ancla": 0,
+            "imagenes": [
+              {
+                "relacion": "rId1",
+                "destino": "media/image1.png",
+                "cx_emu": 333573,
+                "cy_emu": 432000,
+                "relacion_aspecto": 0.77216
+              },
+              {
+                "relacion": "rId2",
+                "destino": "media/image2.jpg",
+                "cx_emu": 432000,
+                "cy_emu": 432000,
+                "relacion_aspecto": 1.0
+              }
+            ],
+            "campos": [
+              " PAGE ",
+              " NUMPAGES "
+            ],
+            "page": true,
+            "numpages": true,
+            "lineas_institucionales": true,
+            "distancia_cabecera_cm": 0.499,
+            "margen_superior_cm": 2.499,
+            "margen_inferior_cm": 2.499,
+            "margen_izquierdo_cm": 3.0,
+            "margen_derecho_cm": 2.499,
+            "ancho_pagina_cm": 21.001,
+            "alto_pagina_cm": 29.7
+          }
+        ],
+        "paginas": [
+          {
+            "pagina": 1,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 83.29,
+            "separacion_cabecera_cuerpo_pt": 19.38,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 2,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 84.37,
+            "separacion_cabecera_cuerpo_pt": 20.46,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 3,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 84.37,
+            "separacion_cabecera_cuerpo_pt": 20.46,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 4,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 84.37,
+            "separacion_cabecera_cuerpo_pt": 20.46,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 5,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 84.37,
+            "separacion_cabecera_cuerpo_pt": 20.46,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": false,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          },
+          {
+            "pagina": 6,
+            "alto_pagina_pt": 841.92,
+            "logos": 2,
+            "alto_logo_izq_pt": 34.0,
+            "alto_logo_der_pt": 34.0,
+            "diferencia_alto_logos_pt": 0.0,
+            "centro_vertical_logos_pt": 0.0,
+            "inset_izq_pt": 0.01,
+            "inset_der_pt": 0.0,
+            "diferencia_simetria_pt": 0.01,
+            "cabecera_bottom_pt": 63.91,
+            "cuerpo_top_pt": 71.29,
+            "separacion_cabecera_cuerpo_pt": 7.37,
+            "margen_superior_respetado": true,
+            "sin_empuje_de_cabecera": true,
+            "sin_solape_epis_paginacion": true,
+            "rotulo_en_cabecera": false,
+            "paginacion_en_cabecera": true
+          }
+        ],
+        "todas_las_paginas_con_dos_logos": true,
+        "todas_las_paginas_sin_solape": true,
+        "todas_las_paginas_sin_empuje": false,
+        "altura_visual_uniforme": true,
+        "simetria_lateral": true,
+        "secciones_desvinculadas": true,
+        "todas_las_secciones_con_tabla": true,
+        "imagenes_solo_inline": true,
+        "campos_nativos": true
+      },
+      "render": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p001.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p002.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p003.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p004.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p005.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p006.png"
+      ]
+    }
+  ],
+  "reactivos": {
+    "total_esperado": 16,
+    "igualdad_completa": true,
+    "detalle": {
+      "AP-01": {
+        "igual": true,
+        "longitud_fuente": 92,
+        "longitud_salida": 92
+      },
+      "AP-02": {
+        "igual": true,
+        "longitud_fuente": 101,
+        "longitud_salida": 101
+      },
+      "AP-03": {
+        "igual": true,
+        "longitud_fuente": 126,
+        "longitud_salida": 126
+      },
+      "AP-04": {
+        "igual": true,
+        "longitud_fuente": 109,
+        "longitud_salida": 109
+      },
+      "UP-01": {
+        "igual": true,
+        "longitud_fuente": 115,
+        "longitud_salida": 115
+      },
+      "UP-02": {
+        "igual": true,
+        "longitud_fuente": 106,
+        "longitud_salida": 106
+      },
+      "UP-03": {
+        "igual": true,
+        "longitud_fuente": 144,
+        "longitud_salida": 144
+      },
+      "UP-04": {
+        "igual": true,
+        "longitud_fuente": 124,
+        "longitud_salida": 124
+      },
+      "PU-01": {
+        "igual": true,
+        "longitud_fuente": 130,
+        "longitud_salida": 130
+      },
+      "PU-02": {
+        "igual": true,
+        "longitud_fuente": 129,
+        "longitud_salida": 129
+      },
+      "PU-03": {
+        "igual": true,
+        "longitud_fuente": 137,
+        "longitud_salida": 137
+      },
+      "PU-04": {
+        "igual": true,
+        "longitud_fuente": 126,
+        "longitud_salida": 126
+      },
+      "PE-01": {
+        "igual": true,
+        "longitud_fuente": 125,
+        "longitud_salida": 125
+      },
+      "PE-02": {
+        "igual": true,
+        "longitud_fuente": 123,
+        "longitud_salida": 123
+      },
+      "PE-03": {
+        "igual": true,
+        "longitud_fuente": 127,
+        "longitud_salida": 127
+      },
+      "PE-04": {
+        "igual": true,
+        "longitud_fuente": 125,
+        "longitud_salida": 125
+      }
+    }
+  },
+  "mapa_campos": [
+    {
+      "origen": "F01: seis bloques verticales de tres filas",
+      "destino": "Dos tablas de tres tareas: Tarea, Inicio, Fin, Tiempo, Pausa, Válida"
+    },
+    {
+      "origen": "F01: causa de pausa y observaciones por tarea",
+      "destino": "Tabla H-01 a H-04 del apoyo y continuación H-05"
+    },
+    {
+      "origen": "F01: consolidado de media, mediana y tareas válidas",
+      "destino": "Hoja de cierre del investigador"
+    },
+    {
+      "origen": "F01: tabla de incidencias en la hoja de campo",
+      "destino": "Apoyo, continuación H-05 a H-12"
+    },
+    {
+      "origen": "F01: seis instrucciones y conversión decimal",
+      "destino": "Tres instrucciones en la hoja; protocolo completo y conversión en apoyo"
+    },
+    {
+      "origen": "F02: tabla completa C1-C8 y reglas duplicadas",
+      "destino": "Apoyo, criterios C1-C8 una sola vez y regla de concordancia"
+    },
+    {
+      "origen": "F02: bloques D-01 a D-05 y rejilla de ocho criterios",
+      "destino": "Bloques D-01 a D-04 en la hoja; D-05 a D-07 en continuación"
+    },
+    {
+      "origen": "F02: conteos crudos en la hoja",
+      "destino": "Hoja de cierre del investigador, tabla de conteo crudo"
+    },
+    {
+      "origen": "A/B: Investigador (admin.) y observaciones opcionales",
+      "destino": "Apoyo, Control de aplicación y observaciones"
+    },
+    {
+      "origen": "Pie con segundo campo TRAB escribible",
+      "destino": "Pie de identificación breve; TRAB solo en la cabecera administrativa"
+    }
+  ],
+  "cambios_limpieza": [
+    {
+      "id": "L01",
+      "detalle": "H1 única de 12 pt; se retiró el rótulo FORMULARIO de la cabecera y el subtítulo cursivo."
+    },
+    {
+      "id": "L02",
+      "detalle": "Cabecera solo con institución, logos y paginación; pie con ID breve sin campos escribibles."
+    },
+    {
+      "id": "L03",
+      "detalle": "Ritmo 12/6 pt en H1, 10 pt antes de sección y separación entre tablas."
+    },
+    {
+      "id": "L04",
+      "detalle": "F01 con dos tablas de tres tareas y seis columnas; pausa y validez con casillas."
+    },
+    {
+      "id": "L05",
+      "detalle": "F02 en tres páginas: bloques D-01 a D-04, CPE E-01 a E-12 en página propia y líneas de código y fase en las continuaciones; D-05 a D-07 en apoyo."
+    },
+    {
+      "id": "L06",
+      "detalle": "A/B con una H1, presentación confidencial, instrucción única de marcado, anclajes una vez y columnas Likert de 9 mm; reactivos literales."
+    },
+    {
+      "id": "L07",
+      "detalle": "Apoyos con protocolo, criterios, control administrativo, cierre y continuaciones."
+    }
+  ],
+  "pruebas_limpieza": {
+    "paginas_por_documento": {
+      "01_FICHA_TIEMPOS": 1,
+      "02_FICHA_AUDITORIA_DOCUMENTAL": 3,
+      "03_CUESTIONARIO_SATISFACCION_A": 1,
+      "04_MODULO_COMPLEMENTARIO_B_POST": 1,
+      "00_INSTRUMENTOS_RECOLECCION_SIVAC": 6,
+      "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES": 6
+    },
+    "total_instrumentos": 6,
+    "A_una_pagina": true,
+    "B_una_pagina": true,
+    "reactivos_16_iguales": true,
+    "dos_logos_todas_las_paginas": true,
+    "sin_formulario_en_cabecera": true,
+    "paginacion_en_todas_las_paginas": true,
+    "secciones_desvinculadas": true,
+    "imagenes_solo_inline": true,
+    "sin_desborde_inferior": true,
+    "ancho_maximo_dxa": 8788,
+    "fuente_minima_pt": 8.5,
+    "sin_tokens_prohibidos": true,
+    "B_titulo_modulo_sin_instrumento_4": true,
+    "B_pie_instrumento_3_modulo_b": true,
+    "conjunto_sin_instrumento_4": true,
+    "todos_los_entregables_sin_instrumento_4": true,
+    "F01_remision_protocolo_y_registro": true,
+    "F02_remision_E13": true,
+    "AB_neutralidad_de_fuente": true,
+    "apoyos_inicio_vale_literal": true,
+    "apoyos_causas_acciones_incidencia": true,
+    "apoyos_sin_tabla_conversion": true,
+    "apoyos_ejemplo_conversion_coma": true,
+    "apoyos_horas_vacias_con_guion_bajo": true,
+    "F01_dos_tablas_tiempo": true,
+    "F02_tres_paginas_CPE_propia": true
+  },
+  "render": [
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\01_FICHA_TIEMPOS_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\02_FICHA_AUDITORIA_DOCUMENTAL_p003.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\03_CUESTIONARIO_SATISFACCION_A_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\04_MODULO_COMPLEMENTARIO_B_POST_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p003.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p004.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p005.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\00_INSTRUMENTOS_RECOLECCION_SIVAC_p006.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p001.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p002.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p003.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p004.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p005.png",
+    "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\control_visual\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES_p006.png"
+  ],
+  "pendientes": [
+    "Cotejo visual del tesista sobre la v02 publicada.",
+    "QG-5 permanece abierta: esta edición no acredita validación de contenido."
+  ],
+  "protocolo_validacion": [
+    {
+      "documento": "01_FICHA_TIEMPOS",
+      "frase": "Criterios de inicio, fin, pausa y validez: sección Protocolo del observador de los apoyos. Incidencias: H-01 y siguientes.",
+      "constatacion": "remisión final separa protocolo de registro; no atribuye el protocolo a H-01 a H-04"
+    },
+    {
+      "documento": "02_FICHA_AUDITORIA_DOCUMENTAL",
+      "frase": "Para más entregas, continúe desde E-13 en Continuación. Entregas de los apoyos, manteniendo el correlativo real.",
+      "constatacion": "remisión bajo E-12 en la tercera página"
+    },
+    {
+      "documento": "03_CUESTIONARIO_SATISFACCION_A / 04_MODULO_COMPLEMENTARIO_B_POST",
+      "frase": "No hay respuestas correctas ni incorrectas",
+      "constatacion": "neutralidad de fuente en A y B, una sola página"
+    },
+    {
+      "documento": "04_MODULO_COMPLEMENTARIO_B_POST",
+      "frase": "Módulo B. Cuestionario complementario del Instrumento 3",
+      "constatacion": "presente en cuerpo y pie; ausencia literal de 'Instrumento 4'"
+    },
+    {
+      "documento": "00_INSTRUMENTOS_RECOLECCION_SIVAC",
+      "frase": "Módulo B. Cuestionario complementario del Instrumento 3",
+      "constatacion": "presente en el conjunto; ausencia literal de 'Instrumento 4'"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "El tiempo de emisión inicia al recibir o abrir la solicitud y termina cuando el vale queda generado, firmado o impreso con numeración oficial.",
+      "constatacion": "frase literal presente en el protocolo"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "Causa: interrupción externa, desviación del protocolo o ayuda sustantiva del investigador. Acción: pausa, anulación o repetición.",
+      "constatacion": "causas y acciones presentes en la nota de H-01 a H-04"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "Ejemplo de conversión, no medición: 3 minutos y 15 segundos equivalen a 3,25 minutos.",
+      "constatacion": "ejemplo con coma decimal; sin tabla 'Conversión rápida' y sin '3 + 15/60'"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "__:__",
+      "constatacion": "horas vacías de H-01 a H-12 con guion bajo"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "_meta": "Reparacion de puntuacion en las juntas de recorte",
+  "sustituciones": [
+    {
+      "indice_docx": 370,
+      "ancla_original": "almacenamiento persistente",
+      "texto_nuevo": "almacenamiento persistente.",
+      "ubicacion": "P370/cierre"
+    },
+    {
+      "indice_docx": 656,
+      "ancla_original": "distribuciones temporales emparejadas.,",
+      "texto_nuevo": "distribuciones temporales emparejadas.",
+      "ubicacion": "P656/cierre"
+    },
+    {
+      "indice_docx": 712,
+      "ancla_original": "en el kardex físico.,",
+      "texto_nuevo": "en el kardex físico.",
+      "ubicacion": "P712/cierre"
+    }
+  ]
+}

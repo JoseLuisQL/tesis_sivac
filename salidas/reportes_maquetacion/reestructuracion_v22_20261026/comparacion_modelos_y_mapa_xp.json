@@ -1,0 +1,591 @@
+{
+  "meta": {
+    "fecha": "2026-10-26",
+    "agente": "analista-documental",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "E",
+    "comision": "Inspeccion documental acotada para reestructurar resultados y trasladar XP aplicado al anexo (solicitud del tesista, 2026-10-26)",
+    "metodo": "Lectura visual de paginas renderizadas a 110 dpi mas extraccion OpenXML/PDF como ancla; la extraccion automatica no se contabiliza como inspeccion visual",
+    "inmutabilidad": "Cero escrituras en los insumos institucionales ni en el repositorio del software; los unicos artefactos creados son este JSON, los PNG de vistas, el handoff y la bitacora",
+    "insumos_solo_lectura": {
+      "fany": "Fany_Tesis_Bachiller_2024.pdf (106 p.)",
+      "jhon": "referente Jhon (PDF de 1 p. y DOCX de 3,874 bytes)"
+    },
+    "v20_referencia": {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v20.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v20.pdf",
+      "pdf_paginas": 159,
+      "sha256_docx_prefijo": "12bfcb3b...9ac072",
+      "sha256_pdf_prefijo": "93956168...14c57fde"
+    },
+    "vistas_renderizadas": [
+      "FANY_p054.png",
+      "FANY_p056.png",
+      "FANY_p061.png",
+      "FANY_p064.png",
+      "FANY_p084.png",
+      "FANY_p085.png",
+      "V20_p054.png",
+      "V20_p055.png",
+      "V20_p066.png",
+      "V20_p080.png",
+      "V20_p099.png",
+      "V20_p117.png",
+      "V20_p120.png",
+      "V20_p124.png",
+      "V20_p130.png",
+      "V20_p156.png",
+      "JHON_p001.png"
+    ]
+  },
+  "referentes": {
+    "fany_2024": {
+      "paginas_pdf": 106,
+      "bytes": 6501855,
+      "regla_de_folio": "folio impreso = pagina PDF - 13 (verificado en capitulo V y anexos)",
+      "preliminares_sin_capa_de_texto": "PDF 2-12 escaneadas; solo muestras visuales, no se transcribieron",
+      "capitulo_v_resultados": {
+        "pdf": "54-63",
+        "folios": "41-50",
+        "paginas": 10,
+        "estructura": [
+          "5.1 analisis descriptivo (validez y confiabilidad; frecuencias por dimension)",
+          "5.2 analisis inferencial (normalidad y contraste de hipotesis)"
+        ],
+        "rotulos_tablas": "Tablas 3-14 (12 tablas)",
+        "rotulos_figuras": "Figuras 6-10 (5 figuras)"
+      },
+      "discusion": {
+        "pdf": "64-66",
+        "folios": "51-53",
+        "paginas": 3,
+        "forma": "prosa corrida sin tablas ni figuras; 3 parrafos verificados visualmente en PDF 64, cada uno compara un objetivo con antecedentes"
+      },
+      "conclusiones": {
+        "pdf": "67",
+        "folio": 54,
+        "forma": "3 vinetas"
+      },
+      "recomendaciones": {
+        "pdf": "68",
+        "folio": 55
+      },
+      "referencias": {
+        "pdf": "69-72",
+        "folios": "56-59"
+      },
+      "anexos": {
+        "pdf": "73-106",
+        "folios": "60-93",
+        "cantidad": "Anexos 1-17; el bloque XP es el Anexo 4 y los Anexos 5-17 ocupan PDF 91-106"
+      },
+      "anexo_4_xp": {
+        "pdf": "84-90",
+        "folios": "71-77",
+        "paginas": 7,
+        "contenido": "4 fichas de Historia de Usuario como Tablas 15-18 y 2 diagramas de actividades como Figuras 11-12; sin evidencia de codificacion, pruebas ni despliegue",
+        "numeracion": "continua respecto del cuerpo (Tabla 15 sigue a la Tabla 14 de contraste de hipotesis)"
+      },
+      "patrones_de_concision_verificados": [
+        "Cada tabla o figura va seguida de un parrafo corto de interpretacion; no se repiten en prosa todas las cifras ya tabuladas",
+        "Rotulo en negrita y titulo en cursiva en lineas separadas (visto en Tabla 11 y Tabla 15)",
+        "Tablas de tres lineas horizontales en el cuerpo; las fichas HU del anexo usan tarjeta con bordes completos y cabecera combinada HISTORIA DE USUARIO",
+        "El referente tolera espacio en blanco al pie (PDF 61 deja media pagina vacia): no se rellena con texto",
+        "Discusion en 3 paginas y anexo XP en 7 paginas: el desarrollo no compite en extension con los resultados"
+      ]
+    },
+    "jhon_2026": {
+      "estado": "IMPEDIMENTO",
+      "hallazgo": "El PDF tiene 1 pagina y 1391 bytes; el DOCX 3874 bytes. Ambos son una caratula sintetica que se autodescribe como referente estructural complementario (Seccion 3.3 XP y Capitulos IV-VI) y declara 'Pagina 1 de 1'",
+      "discrepancia": "El README de la carpeta de insumos declara un referente de 223 paginas que no existe en el workspace; no hay otro ejemplar",
+      "consecuencia": "No se extrajo estructura, tablas ni geometria del referente Jhon. No se infiere nada en su nombre"
+    }
+  },
+  "mapa_bloque_xp_v20": {
+    "limites_exactos": {
+      "parrafos_docx": "P328-P548 inclusive (desde el titulo 3.3 hasta 3.3.5.1 antes del Capitulo IV)",
+      "pdf": "54-99",
+      "folios": "39-84",
+      "paginas": 46,
+      "rotulos": "26 tablas (Tabla 3 a Tabla 28) y 35 figuras (Figura 11 a Figura 45)"
+    },
+    "subsecciones": [
+      {
+        "id": "3.3",
+        "parrafo": 328,
+        "pdf": 54,
+        "folio": 39,
+        "tablas": [],
+        "figuras": []
+      },
+      {
+        "id": "3.3.1 Planificacion",
+        "parrafo": 335,
+        "pdf": 55,
+        "folio": 40,
+        "tablas": [
+          "3 roles",
+          "4 RF",
+          "5 RNF",
+          "6 trazabilidad",
+          "7 catalogo de 15 HU",
+          "8 cinco iteraciones"
+        ],
+        "figuras": [
+          "11 ciclo XP adaptado",
+          "12 casos de uso"
+        ]
+      },
+      {
+        "id": "3.3.2 Diseno",
+        "parrafo": 367,
+        "pdf": 64,
+        "folio": 49,
+        "tablas": [
+          "9 RBAC",
+          "10-24 diccionario de datos (15 tablas)"
+        ],
+        "figuras": [
+          "13-14 arquitectura",
+          "15-16 actividades",
+          "17-18 secuencia",
+          "19-21 esquemas de BD"
+        ]
+      },
+      {
+        "id": "3.3.3 Codificacion",
+        "parrafo": 443,
+        "pdf": 81,
+        "folio": 66,
+        "tablas": [
+          "25 stack tecnologico"
+        ],
+        "figuras": [
+          "22-23 arboles de proyecto",
+          "24-27 codigo",
+          "28-43 interfaces (16 capturas)"
+        ]
+      },
+      {
+        "id": "3.3.4 Pruebas",
+        "parrafo": 524,
+        "pdf": 94,
+        "folio": 79,
+        "tablas": [
+          "26 suites Jest",
+          "27 criterios de aceptacion CP-01..CP-15"
+        ],
+        "figuras": [
+          "44 codigo de prueba"
+        ]
+      },
+      {
+        "id": "3.3.5 Despliegue",
+        "parrafo": 542,
+        "pdf": 99,
+        "folio": 84,
+        "tablas": [
+          "28 matriz ISO/IEC 25010"
+        ],
+        "figuras": [
+          "45 topologia Docker/Nginx"
+        ]
+      }
+    ],
+    "teoria_que_permanece_en_el_cuerpo": [
+      {
+        "id": "3.1.1.3",
+        "parrafos": "241-250",
+        "figuras": [
+          "3",
+          "4"
+        ]
+      },
+      {
+        "id": "3.2.8",
+        "parrafos": "306-307"
+      }
+    ],
+    "dependencias_de_la_mudanza": {
+      "referencias_cruzadas_externas": "Ninguna: ningun parrafo desde P549 cita Tablas 3-28 ni Figuras 11-45; todas las menciones son internas al bloque",
+      "campos_a_actualizar": {
+        "TOC": 3,
+        "PAGEREF": 214,
+        "SEQ": 103,
+        "rotulos_tabla": 51,
+        "rotulos_figura": 52,
+        "hipervinculos": 253
+      },
+      "nota": "Ademas de los indices, se desplazan los folios de todo el texto posterior (Capitulos IV-VI, conclusiones, recomendaciones, referencias y Anexos 1-7)"
+    },
+    "renumeracion_propuesta": {
+      "precedente": "Fany numera de forma continua entre cuerpo y anexos (Tabla 15 sigue a la 14); se propone el mismo criterio",
+      "tablas": {
+        "cuerpo_actual": "29-51",
+        "cuerpo_nuevo": "3-25",
+        "bloque_xp_actual": "3-28",
+        "bloque_xp_nuevo": "26-51",
+        "total": 51
+      },
+      "figuras": {
+        "cuerpo_actual": "46-52",
+        "cuerpo_nuevo": "11-17",
+        "bloque_xp_actual": "11-45",
+        "bloque_xp_nuevo": "18-52",
+        "total": 52
+      },
+      "alternativa_sin_renumerar": "Conservar 3-28 y 11-45 en el anexo rompe la continuidad del cuerpo (salto de Tabla 2 a Tabla 29); no se recomienda"
+    }
+  },
+  "capitulo_v_v20": {
+    "pdf": "117-130",
+    "folios": "102-115",
+    "paginas": 14,
+    "rotulos": "Tablas 35-43 (9) y Figuras 46-48 (3)",
+    "estructura_parrafos": {
+      "5.1": 647,
+      "5.2": 653,
+      "5.2.1": 655,
+      "5.2.2": 662,
+      "5.2.3": 669,
+      "5.3": 676,
+      "5.4": 682,
+      "5.4.1": 684,
+      "5.4.2": 690,
+      "5.4.3": 696,
+      "5.4.4": 702
+    },
+    "advertencia_datos_de_prueba": "Presente al abrir el capitulo (PDF 117 / folio 102), en cursiva: todos los resultados son datos provisionales de prueba. Debe conservarse literalmente y replicarse como etiqueta en cada seccion",
+    "defecto_de_densidad": "La prosa reitera en frases las mismas cifras ya tabuladas (folio 115: p_adj, d y r repetidos antes y despues de la Tabla 43)"
+  },
+  "inventario_xp_fuente": {
+    "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\SIVAC_Desarrollo_Software_XP.docx",
+    "bytes": 10918427,
+    "parrafos": 267,
+    "tablas": 26,
+    "figuras_rotuladas": 28,
+    "imagenes_referenciadas": 28,
+    "media_total": 35,
+    "media_huerfana": [
+      "image20",
+      "image22",
+      "image24",
+      "image26",
+      "image28",
+      "image31",
+      "image33"
+    ],
+    "ecuaciones_omml": 0,
+    "secciones": 1,
+    "estructura": [
+      {
+        "fase": "1 Planificacion",
+        "parrafo": 20,
+        "tablas": "1 RF (17x4), 2 RNF (9x3), 3 roles (17x4), 4 catalogo (13x5 = 12 HU), 5-9 fichas HU-01/04/06/09/12 (5x4), 10 iteraciones (6x3, 2 HU por iteracion)",
+        "figuras": "2 casos de uso"
+      },
+      {
+        "fase": "2 Diseno",
+        "parrafo": 71,
+        "tablas": "11 ENUM (12x2), 12-14 diccionarios (12x4, 12x4, 10x4), 15 relaciones con ON DELETE (12x4)",
+        "figuras": "3-4 arquitectura, 5-8 flujo y secuencia, 9-11 BD conceptual/logica/fisica"
+      },
+      {
+        "fase": "3 Codificacion",
+        "parrafo": 147,
+        "tablas": "16 stack (10x3)",
+        "figuras": "12-13 estructura, 14-17 codigo, 18-26 interfaces (9, de las cuales 19-23 y 25-26 son tablas de imagen 1x1)"
+      },
+      {
+        "fase": "4 Pruebas",
+        "parrafo": 224,
+        "tablas": "17 Jest (13x3), 18 pruebas de API (9x3), 19 aceptacion (8x4)",
+        "figuras": "27 codigo de prueba"
+      },
+      {
+        "fase": "Actividad posterior: despliegue (el documento fuente la numera como seccion 5)",
+        "parrafo": 247,
+        "tablas": [],
+        "figuras": "28 despliegue"
+      }
+    ],
+    "comparacion_de_imagenes": "35/35 hashes SHA-256 de word/media del documento XP existen en v20; las 7 huerfanas de XP se usan en v20 como imagenes 31,33,35,37,39,42,44. Las 14 imagenes de v20 ausentes en XP son logos, teoria y resultados. Cero perdida de imagenes al fusionar",
+    "ausencias_de_evidencia": [
+      "Sin ecuaciones OMML: las formulas de indicadores no viven en este documento",
+      "Sin metricas de cobertura, velocidad por iteracion ni actas de aceptacion firmadas",
+      "Sin evidencia de control de versiones (commits, ramas) pese a mencionar Git",
+      "Sin capturas de despliegue real en produccion: solo el diagrama de topologia"
+    ]
+  },
+  "brechas_xp_fuente_frente_a_v20": [
+    "5 fichas individuales de HU (XP Tablas 5-9) ausentes en v20",
+    "Tabla ENUM (XP Tabla 11, 12x2) ausente en v20",
+    "Tabla de relaciones con ON DELETE (XP Tabla 15, 12x4) ausente en v20",
+    "Tabla de pruebas de API (XP Tabla 18, 9x3) ausente en v20",
+    "Matriz de roles de 17 filas (XP Tabla 3) reducida a 5 filas en v20 Tabla 3",
+    "Inconsistencia de conteo: 12 HU en el catalogo XP, 10 en su tabla de iteraciones (5 x 2) y 15 en v20 Tabla 7",
+    "Anexo 6 actual (Tabla 51, objeto d.tables[54], 8x5) resume solo 7 de 15 HU con etiquetas de iteracion inconsistentes y 'No especificado' en HU-14 y HU-15"
+  ],
+  "propuesta_anexo_unico": {
+    "titulo": "ANEXO 6: DESARROLLO DE SOFTWARE SIVAC BAJO EXTREME PROGRAMMING",
+    "columna_vertebral": "Cuatro fases de XP segun el documento fuente: Planificacion, Diseno, Codificacion y Pruebas; el despliegue se trata como actividad posterior, no como quinta fase",
+    "base_nativa": "Mover el bloque v20 P328-P548 completo (26 tablas y 35 figuras) sin reescribir contenido",
+    "injertos_para_cerrar_brechas": [
+      "5 fichas HU",
+      "ENUM",
+      "relaciones con ON DELETE",
+      "pruebas de API",
+      "matriz de roles completa en lugar de la version de 5 filas"
+    ],
+    "sustituciones_para_evitar_duplicacion": [
+      "Reemplazar la Tabla 51 del Anexo 6 actual por la tabla de 15 HU de v20 (Tabla 7), que es superconjunto",
+      "Conservar el stack de v20 (13x4) y no el de XP (10x3)",
+      "Conservar los 15 diccionarios de v20 y no los 3 de XP",
+      "No duplicar las Figuras 11-45: el bloque v20 ya contiene todas las imagenes de XP"
+    ],
+    "totales_resultantes": {
+      "tablas": 34,
+      "figuras": 35,
+      "imagenes_perdidas": 0,
+      "nota": "34 = 26 del bloque v20 + 8 injertos; los 2 reemplazos no suman. La integralidad plena exige los residuales S1 a S5"
+    },
+    "numeracion": "Continua tras el cuerpo segun el precedente Fany: Tablas 26-51 y Figuras 18-52 con el mapa de renumeracion de este informe",
+    "maquetacion": "Retrato (Fany es integramente retrato). Las fichas HU pueden adoptar la tarjeta con bordes de Fany o la tabla de tres lineas; la eleccion debe confirmarla el tesista porque la tarjeta incumple la regla APA de tres lineas",
+    "advertencia_de_geometria": "La Tabla 22 (diccionario) deja una fila huerfana (created_at) al pie del folio 65 con encabezado repetido: al pasar al anexo conviene consolidar diccionarios por entidad o comprimir la columna de descripcion"
+  },
+  "propuesta_capitulo_v_compacto": {
+    "criterio": "Una seccion por dimension oficial (DEC-007) mas un bloque de supuestos y un bloque de contraste; cada tabla o figura con un unico parrafo interpretativo",
+    "esquema": [
+      {
+        "seccion": "5.1 Instrumentos y supuestos",
+        "contenido": "confiabilidad del instrumento y normalidad (fusiona la 5.1 y la 5.3 actuales)",
+        "recursos": "2 tablas; 1 figura opcional"
+      },
+      {
+        "seccion": "5.2 Oportunidad de procesamiento (OE1)",
+        "contenido": "T_reg y T_vale pre/post, diferencia y porcentaje",
+        "recursos": "1 tabla consolidada, 1 figura, 1 parrafo"
+      },
+      {
+        "seccion": "5.3 Consistencia documental (OE2)",
+        "contenido": "RSD y CPE",
+        "recursos": "1 tabla, 1 figura, 1 parrafo"
+      },
+      {
+        "seccion": "5.4 Satisfaccion del usuario (OE3)",
+        "contenido": "AP, UP y puntaje TAM",
+        "recursos": "1 tabla, 1 figura, 1 parrafo"
+      },
+      {
+        "seccion": "5.5 Contraste de hipotesis (OG)",
+        "contenido": "decision por hipotesis especifica y regla conjunta",
+        "recursos": "2 tablas, sin figuras"
+      }
+    ],
+    "reglas_de_redaccion": [
+      "Conservar literal la advertencia de datos de prueba y rotular cada seccion como dato de prueba",
+      "No acreditar datos de prueba como datos de campo ni cerrar compuertas empiricas",
+      "Eliminar de la prosa las cifras que la tabla ya muestra; dejar interpretacion y decision",
+      "No introducir OMML dentro de celdas; las formulas quedan en el cuerpo",
+      "Escribir subindices como subindices reales, no con guion bajo"
+    ],
+    "meta_de_extension": "8-9 paginas frente a las 14 actuales, alineado con las 10 paginas de resultados de Fany"
+  },
+  "defectos_visuales_verificados_v20": [
+    {
+      "pdf": 80,
+      "folio": 65,
+      "hallazgo": "Tabla 22 fragmentada: una sola fila (created_at) pasa a la pagina siguiente con encabezado repetido"
+    },
+    {
+      "pdf": 66,
+      "folio": 51,
+      "hallazgo": "Aproximadamente 40% de pagina en blanco despues de la Figura 15"
+    },
+    {
+      "pdf": 124,
+      "folio": 109,
+      "hallazgo": "Subindices escritos con guion bajo: O_1, X_post,i, T_reg, T_vale"
+    },
+    {
+      "pdf": 130,
+      "folio": 115,
+      "hallazgo": "H_0 y H_G con guion bajo en el texto que precede a la Tabla 43"
+    },
+    {
+      "pdf": 117,
+      "folio": 102,
+      "hallazgo": "Apertura del capitulo correcta (advertencia en cursiva), pero prosa muy densa en 5.1"
+    },
+    {
+      "pdf": 156,
+      "folio": 141,
+      "hallazgo": "Tabla 51 del Anexo 6 con 7 de 15 HU, iteraciones inconsistentes y rol 'No especificado'"
+    }
+  ],
+  "pendientes": [
+    "[VERIFICAR] Cual es el conteo oficial de HU: 12 del catalogo XP, 10 de su tabla de iteraciones o 15 de v20",
+    "[VERIFICAR] Si las fichas HU del anexo se maquetan como tarjeta con bordes (Fany) o como tabla de tres lineas (APA)",
+    "[VERIFICAR] Granularidad de la tabla Jest: 7 suites (v20) o 12 pruebas (XP)",
+    "[VERIFICAR] Si se consolidan los 15 diccionarios de datos o se reduce su columna de descripcion para evitar fractura de filas",
+    "[VERIFICAR] Autorizacion del tesista para renumerar Tablas 3-51 y Figuras 11-52 de forma continua"
+  ],
+  "impedimentos": [
+    "El referente Jhon 2026 no esta disponible: PDF de 1 pagina y DOCX de 3,874 bytes que solo declaran 223 paginas inexistentes en el workspace",
+    "Las paginas PDF 2-12 de Fany no tienen capa de texto (escaneadas); no se transcribieron"
+  ],
+  "ordenes_union_nativa": {
+    "correccion_conceptual": "XP tiene cuatro fases: Planificacion, Diseno, Codificacion y Pruebas. El despliegue es actividad posterior, no quinta fase. El documento fuente la numera como seccion 5 y la nota de la Figura 11 de v20 ya la declara actividad complementaria, pero los rotulos internos de esa figura dicen 'Fase 5' y deben rotularse como actividad posterior en la v22",
+    "operaciones_totales": 10,
+    "manifiesto_injertos": [
+      {
+        "n": 1,
+        "tabla_xp": "Tabla 5",
+        "objeto": 4,
+        "dimensiones": "5x2",
+        "contenido": "Ficha HU-01 (inicio de sesion y RBAC)",
+        "ancla_origen": "Rotulo 'Tabla 5' + linea 'Historia de usuario HU-01: Iniciar sesion en el sistema con control de ambito RBAC' + nota",
+        "destino": "Fase 1 Planificacion: tras el objeto tabla de la Tabla 7 de v20 (P356) y antes del rotulo 'Tabla 8' (P360), en orden correlativo",
+        "modo": "agrega"
+      },
+      {
+        "n": 2,
+        "tabla_xp": "Tabla 6",
+        "objeto": 5,
+        "dimensiones": "5x2",
+        "contenido": "Ficha HU-04 (lotes y FEFO)",
+        "ancla_origen": "Rotulo 'Tabla 6' + linea 'Historia de usuario HU-04: Registrar lotes biologicos y controlar vencimientos bajo criterio FEFO' + nota",
+        "destino": "Fase 1 Planificacion: tras el objeto tabla de la Tabla 7 de v20 (P356) y antes del rotulo 'Tabla 8' (P360), en orden correlativo",
+        "modo": "agrega"
+      },
+      {
+        "n": 3,
+        "tabla_xp": "Tabla 7",
+        "objeto": 6,
+        "dimensiones": "5x2",
+        "contenido": "Ficha HU-06 (movimientos y saldos)",
+        "ancla_origen": "Rotulo 'Tabla 7' + linea 'Historia de usuario HU-06: Registrar movimientos mensuales y sincronizar saldos automaticamente' + nota",
+        "destino": "Fase 1 Planificacion: tras el objeto tabla de la Tabla 7 de v20 (P356) y antes del rotulo 'Tabla 8' (P360), en orden correlativo",
+        "modo": "agrega"
+      },
+      {
+        "n": 4,
+        "tabla_xp": "Tabla 8",
+        "objeto": 7,
+        "dimensiones": "5x2",
+        "contenido": "Ficha HU-09 (ICI-DEMID y MSD)",
+        "ancla_origen": "Rotulo 'Tabla 8' + linea 'Historia de usuario HU-09: Importar formato ICI-DEMID y calcular Meses de Stock Disponible (MSD)' + nota",
+        "destino": "Fase 1 Planificacion: tras el objeto tabla de la Tabla 7 de v20 (P356) y antes del rotulo 'Tabla 8' (P360), en orden correlativo",
+        "modo": "agrega"
+      },
+      {
+        "n": 5,
+        "tabla_xp": "Tabla 9",
+        "objeto": 8,
+        "dimensiones": "5x2",
+        "contenido": "Ficha HU-12 (usuarios, RBAC y reportes)",
+        "ancla_origen": "Rotulo 'Tabla 9' + linea 'Historia de usuario HU-12: Gestionar usuarios, matriz de permisos RBAC y reportes corporativos' + nota",
+        "destino": "Fase 1 Planificacion: tras el objeto tabla de la Tabla 7 de v20 (P356) y antes del rotulo 'Tabla 8' (P360), en orden correlativo",
+        "modo": "agrega"
+      },
+      {
+        "n": 6,
+        "tabla_xp": "Tabla 11",
+        "objeto": 10,
+        "dimensiones": "12x2",
+        "contenido": "Tipos enumerados ENUM del esquema PostgreSQL",
+        "ancla_origen": "Rotulo 'Tabla 11' + linea 'Tipos enumerados (ENUM) definidos en la base de datos PostgreSQL de SIVAC' + nota",
+        "destino": "Fase 2 Diseno: inmediatamente antes del rotulo 'Tabla 10' de v20 (P413), al abrir el diccionario de datos",
+        "modo": "agrega"
+      },
+      {
+        "n": 7,
+        "tabla_xp": "Tabla 15",
+        "objeto": 14,
+        "dimensiones": "12x4",
+        "contenido": "Relaciones por llave foranea y regla ON DELETE",
+        "ancla_origen": "Rotulo 'Tabla 15' + linea 'Principales relaciones por llave foranea del esquema relacional de SIVAC' + nota",
+        "destino": "Fase 2 Diseno: tras el objeto tabla de la Tabla 24 de v20 (P441) y antes del titulo 3.3.3 (P443)",
+        "modo": "agrega"
+      },
+      {
+        "n": 8,
+        "tabla_xp": "Tabla 18",
+        "objeto": 24,
+        "dimensiones": "9x3",
+        "contenido": "Pruebas de seguridad y control de acceso sobre la API REST",
+        "ancla_origen": "Rotulo 'Tabla 18' + linea 'Verificaciones de seguridad y control de acceso sobre la API REST de SIVAC' + nota",
+        "destino": "Fase 4 Pruebas: tras la nota de la Tabla 26 de v20 (P532) y antes del rotulo 'Tabla 27' (P536)",
+        "modo": "agrega"
+      }
+    ],
+    "parrafos_asociados_no_cubiertos": "Verificado por comparacion normalizada: ninguna linea de Historia de usuario, ningun encabezado ENUM, relaciones o API y ninguna nota de las 8 tablas existe en v20. Cada injerto debe arrastrar rotulo, linea introductoria y nota, no solo el objeto tabular",
+    "reemplazos": [
+      {
+        "operacion": "R1",
+        "fuente": "XP Tabla 3, objeto 2 (17x4): Funcionalidad/Modulo + Resp. Acopio/Operador + Coordinador PAI + Administrador DEMID",
+        "destino": "Sustituye el objeto tabla de la Tabla 3 de v20 (objeto 3, 5x3, P340); se conserva rotulo y numero",
+        "efecto": "Restituye la matriz completa de roles por funcionalidad; cambia el eje (roles como columnas frente a roles como filas)",
+        "riesgo": "Encabezado en una sola fila; verificar que no se duplique el rotulo ni se hereden anchos"
+      },
+      {
+        "operacion": "R2",
+        "fuente": "v20 Tabla 7 (objeto 7, 16x6, 15 HU)",
+        "destino": "Sustituye la tabla del Anexo 6 (objeto 54, 8x5, 7 HU) situada tras el rotulo 'Tabla 51' (P816)",
+        "efecto": "Elimina el resumen parcial de 7 HU y las etiquetas de iteracion inconsistentes",
+        "riesgo": "El rotulo P816 y el parrafo introductorio P815 deben actualizarse al nuevo numero; la nota P817 se conserva"
+      }
+    ],
+    "decision_integridad": {
+      "veredicto": "NO",
+      "alcance": "Con las 8 tablas injertadas y los 2 reemplazos, la union conserva integras las imagenes (35/35) y las 8 tablas, pero NO conserva integra la documentacion XP: hay 5 residuales verificados",
+      "residuales": [
+        {
+          "id": "S1",
+          "tema": "Requerimientos funcionales",
+          "evidencia": "v20 Tabla 4 es 17x3 y carece de la columna 'Modulo asociado' de XP Tabla 1 (17x4); 11 de los 15 valores de esa columna no aparecen en el texto de v20",
+          "operacion": "Restituir la columna con los valores nativos de XP Tabla 1"
+        },
+        {
+          "id": "S2",
+          "tema": "Requerimientos no funcionales",
+          "evidencia": "Los 8 nombres de XP Tabla 2 no aparecen en v20, cuya Tabla 5 usa otra taxonomia (9x4)",
+          "operacion": "Injertar XP Tabla 2 o mapear 1:1; requiere decision"
+        },
+        {
+          "id": "S3",
+          "tema": "Rol por historia de usuario",
+          "evidencia": "v20 Tabla 7 no tiene columna 'Rol'; XP Tabla 4 si la tiene y solo 5 HU declaran rol en las fichas",
+          "operacion": "Anadir columna con los 12 valores de XP Tabla 4; las HU sin fuente quedan [VERIFICAR]"
+        },
+        {
+          "id": "S4",
+          "tema": "Detalle de pruebas automatizadas",
+          "evidencia": "v20 Tabla 26 tiene 6 suites; XP Tabla 17 lista 12 archivos y 11 no se mencionan en v20",
+          "operacion": "Injertar XP Tabla 17 (12x3) o anexar sus 12 filas a la Tabla 26"
+        },
+        {
+          "id": "S5",
+          "tema": "Diccionarios de datos",
+          "evidencia": "v20 aporta 15 tablas de 5 columnas frente a 3 de 4 en XP; la cobertura atributo por atributo no se verifico en esta pasada",
+          "operacion": "Verificacion puntual antes de declarar integralidad"
+        }
+      ],
+      "condicion_para_veredicto_si": "Injertar XP Tablas 2 y 17, restituir las columnas 'Modulo asociado' y 'Rol', y verificar diccionarios: 2 injertos y 2 restituciones adicionales",
+      "sin_invencion": "No se rellena ninguna HU ni modulo sin fuente; no se corrige el conteo de HU"
+    },
+    "conteo_hu": {
+      "cifras": "12 en XP Tabla 4; 10 en XP Tabla 10 (5 iteraciones x 2); 15 en v20 Tabla 7 y en el Anexo 6, que muestra 7 de 15",
+      "decision": "No se reconcilian ni se derivan. La union traslada cada fuente sin alterar cifras: el catalogo del anexo es v20 Tabla 7 y las fichas injertadas son HU-01, 04, 06, 09 y 12, subconjunto de las tres listas. La diferencia permanece [VERIFICAR]"
+    },
+    "ordenes_para_maquetador": [
+      "Insertar cada injerto antes del parrafo ancla indicado, en orden 1 a 8, sin reescribir texto",
+      "Copiar objeto tabular, rotulo, linea introductoria y nota como una unidad nativa",
+      "No reinsertar imagenes: las 35 figuras del bloque ya estan en v20",
+      "Aplicar R1 y R2 en el mismo movimiento, conservando los rotulos Tabla 3 y Tabla 7",
+      "Renumerar de forma continua segun el mapa autorizado y regenerar 3 TOC, 214 PAGEREF y 103 SEQ",
+      "Conservar las fichas en su formato nativo de origen",
+      "No modificar el motor compartido ni los candidatos; trabajar solo sobre copia versionada"
+    ]
+  }
+}

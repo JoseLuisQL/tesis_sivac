@@ -1,0 +1,80 @@
+{
+  "origen": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20_R1R3.docx",
+  "solo_verificar": false,
+  "sha256_origen": "bc0c3fa54e511b37a219dc06122fa2ec5e91f17dede981fdc1a5152305452119",
+  "sha256_destino": "e30bcecb6d685c0c55c643345890ed82b88d702bbe0ae4a36c0480d2fa98fcca",
+  "parrafos": 828,
+  "tablas": 59,
+  "total_ordenes": 3,
+  "total_aplicadas": 3,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "plan_r1r3_v20",
+      "total": 3,
+      "aplicadas": 3,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 713,
+          "ubicacion": "O13 parrafo p132 (regresion R1)",
+          "ancla": "considerados en el marco teórico, que sitúan",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 727,
+          "ubicacion": "Referencia Aiken 1985 (regresion R3)",
+          "ancla": "45(1), 131-142.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 777,
+          "ubicacion": "Referencia Wasswa 2023 (regresion R2: retirar DOI en texto plano, conservar hipervinculo)",
+          "ancla": "Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "plan_r1r3_v20",
+      "indice_docx": 713,
+      "ubicacion": "O13 parrafo p132 (regresion R1)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "plan_r1r3_v20",
+      "indice_docx": 727,
+      "ubicacion": "Referencia Aiken 1985 (regresion R3)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "plan_r1r3_v20",
+      "indice_docx": 777,
+      "ubicacion": "Referencia Wasswa 2023 (regresion R2: retirar DOI en texto plano, conservar hipervinculo)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+=== TABLA 40 ===
+F0 | Indicador || Prueba || Estadístico || p || Tamaño del efecto || p ajustado (Holm) || Decisión
+F1 | Tiempo de registro (T_reg) || t de Student pareada || t = -38.944 || < .001 || d = -10.41 (grande) || < .001 || Rechazar H0,1
+F2 | Tiempo de registro (T_reg) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || 0.001 || r = 0.62 (grande) || — || Rechazar H0,1
+F3 | Tiempo de emisión de vales (T_vale) || t de Student pareada || t = -24.509 || < .001 || d = -6.55 (grande) || < .001 || Rechazar H0,1
+F4 | Tiempo de emisión de vales (T_vale) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || 0.001 || r = 0.62 (grande) || — || Rechazar H0,1
+=== TABLA 41 ===
+F0 | Indicador || Prueba || Estadístico || p || Tamaño del efecto || p ajustado (Holm) || Decisión
+F1 | Registros sin discrepancias (RSD) || t de Student pareada || t = 26.628 || < .001 || d = 7.12 (grande) || < .001 || Rechazar H0,2
+F2 | Registros sin discrepancias (RSD) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || < .001 || r = 0.62 (grande) || — || Rechazar H0,2
+F3 | Concordancia programada vs entregada (CPE) || t de Student pareada || t = 28.147 || < .001 || d = 7.52 (grande) || < .001 || Rechazar H0,2
+F4 | Concordancia programada vs entregada (CPE) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || 0.001 || r = 0.62 (grande) || — || Rechazar H0,2
+=== TABLA 42 ===
+F0 | Indicador || Prueba || Estadístico || p || Tamaño del efecto || p ajustado (Holm) || Decisión
+F1 | Aceptación del proceso (AP) || t de Student pareada || t = 33.352 || < .001 || d = 8.91 (grande) || < .001 || Rechazar H0,3
+F2 | Aceptación del proceso (AP) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || < .001 || r = 0.62 (grande) || — || Rechazar H0,3
+F3 | Utilidad percibida (UP) || t de Student pareada || t = 34.881 || < .001 || d = 9.32 (grande) || < .001 || Rechazar H0,3
+F4 | Utilidad percibida (UP) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || < .001 || r = 0.62 (grande) || — || Rechazar H0,3
+F5 | Puntaje global TAM (AP + UP) || t de Student pareada || t = 44.477 || < .001 || d = 11.89 (grande) || < .001 || Rechazar H0,3
+F6 | Puntaje global TAM (AP + UP) || Wilcoxon pareado || W = 0.0 (Z = -3.30) || < .001 || r = 0.62 (grande) || — || Rechazar H0,3

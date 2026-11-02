@@ -1,0 +1,52 @@
+{
+  "fecha": "2026-10-22",
+  "agente": "director-general",
+  "fase": "F8",
+  "estado": "copia_editorial_entregable_para_revision_del_tesista_y_asesora",
+  "carpeta": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01",
+  "referencia_visual": {"documento": "Fany_Tesis_Bachiller_2024.pdf", "folio_impreso": 68, "pagina_fisica_pdf": 81, "continuaciones": [82, 83]},
+  "documentos": [
+    {"nombre": "00_INSTRUMENTOS_RECOLECCION_SIVAC", "formatos": ["docx", "pdf"], "paginas_pdf": 7, "sha256_pdf": "7c60c02a3a126343cc8dbb403be01842d564af98fdb043d49c917ae36438ff49"},
+    {"nombre": "01_FICHA_TIEMPOS", "formatos": ["docx", "pdf"], "paginas_pdf": 2},
+    {"nombre": "02_FICHA_AUDITORIA_DOCUMENTAL", "formatos": ["docx", "pdf"], "paginas_pdf": 3},
+    {"nombre": "03_CUESTIONARIO_SATISFACCION_A", "formatos": ["docx", "pdf"], "paginas_pdf": 1},
+    {"nombre": "04_MODULO_COMPLEMENTARIO_B_POST", "formatos": ["docx", "pdf"], "paginas_pdf": 1},
+    {"nombre": "APOYOS_INVESTIGADOR/05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES", "formatos": ["docx", "pdf"], "paginas_pdf": 5, "sha256_pdf": "64271dea19a4b920ae96e8128fe51cad9ced235ebf8bacbdfea38c7bc93dc912"}
+  ],
+  "verificacion_final_direccion": {
+    "archivos_nuevos_sha256_contra_manifiesto": 12,
+    "discrepancias_de_huella": 0,
+    "archivos_anteriores_cotejados": 361,
+    "archivos_anteriores_modificados": 0,
+    "fuentes_principales_cotejadas": 4,
+    "fuentes_principales_modificadas": 0,
+    "reactivos_A_docx_iguales_completos": "8 de 8, normalizando solo espacios",
+    "reactivos_B_docx_iguales_completos": "8 de 8, normalizando solo espacios",
+    "reactivos_A_y_B_pdf": "16 de 16 enunciados completos presentes, eliminando únicamente espacios y saltos para comparar",
+    "campos_restaurados_A_B": ["Código de centro", "Investigador", "Observaciones del participante (opcional)"],
+    "RD01": "Comprobada visualmente la nota D-06 después de D-05.",
+    "RD02": "Comprobadas visualmente las identificaciones de cierre y las tres continuaciones, con fase, centro y fecha.",
+    "RD03": "Comprobadas visualmente finalidad y confidencialidad en A y B.",
+    "RD04": "Comprobadas instrucciones narrativas de cálculo en hoja de cierre.",
+    "RD05": "Comprobados visualmente los campos restituidos, manteniendo una página por cuestionario.",
+    "metodo_visual": "Lectura de las doce páginas únicas de la primera salida y nueva inspección de las páginas modificadas. No se presenta como prueba de comprensión realizada con participantes."
+  },
+  "auditoria_independiente": {
+    "archivo": "salidas/reportes_maquetacion/auditoria_rediseno_fany_20261022.json",
+    "alcance": "Snapshot inicial 09:49, no las huellas finales. Sus controles de contenido y geometría se complementan con la supervisión y cotejo de la salida final.",
+    "rectificacion_CPE": "La regla de diferencia autorizada ya estaba en guia_campo_contenido_20261022.md:188; no es un nuevo criterio introducido por el rediseño."
+  },
+  "limites": [
+    "No sustituye la aprobación del tesista ni de la asesora.",
+    "No modifica el informe v19 ni el expediente de evaluación.",
+    "No replica ni reemplaza todavía los catorce paquetes anteriores.",
+    "No acredita aplicación, validación, confiabilidad ni resultados de campo.",
+    "QG-5 permanece abierta y el análisis inferencial continúa bloqueado sin datos reales."
+  ],
+  "pendientes_metodologicos_preservados": [
+    "Confirmar tareas heterogéneas frente a repeticiones estandarizadas antes del uso; el rediseño conserva las descripciones previas.",
+    "Definir modo de corpus documental global o por trabajador.",
+    "Revisión del consentimiento y criterio mínimo de exposición a SIVAC.",
+    "Localizar y conciliar la fuente normativa de las matrices declarada en salidas/matrices."
+  ]
+}

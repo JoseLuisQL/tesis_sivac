@@ -1,0 +1,1431 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v13.docx",
+  "destino": "salidas\\documentos\\informe_final_v14.docx",
+  "solo_verificar": false,
+  "sha256_origen": "93c0a303671dbfddc21c8b7442a76600a98ba4244ea2f7a6287295db59a81753",
+  "sha256_destino": "1b81020cf551914e74b21d7f875566ebcf2bd59da781f08340c2cbc0f5861a07",
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 67,
+  "total_aplicadas": 67,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "uniformidad_notacional_v12",
+      "total": 67,
+      "aplicadas": 67,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 213,
+          "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+          "ancla": "2.1% (p < 0.01), registrándose",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 213,
+          "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+          "ancla": "(de 12.5% a 2.1%, p < 0.01)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 213,
+          "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+          "ancla": "(de 9.4% a 1.0%, p < 0.01)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 213,
+          "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+          "ancla": "(de 8.1% a 1.7%, p < 0.01)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 213,
+          "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+          "ancla": "(OR = 0.959, p < 0.001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 216,
+          "ubicacion": "PÁRRAFO 216 (antecedente Astuhuaman Perez y Baltazar Maza, 2023)",
+          "ancla": "Wilcoxon con p < 0.001, además",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 218,
+          "ubicacion": "PÁRRAFO 218 (antecedente Garcia Villacorta y Calderón Huaman, 2023)",
+          "ancla": "Z = -7.15 con p < 0.001.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 284,
+          "ubicacion": "PÁRRAFO 284 (fundamentación TAM, cita Hussain et al., 2025)",
+          "ancla": "β = 0.35, p < 0.001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 284,
+          "ubicacion": "PÁRRAFO 284 (fundamentación TAM, cita Hussain et al., 2025)",
+          "ancla": "(β = 0.23, p < 0.001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.979, p = 0.966",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.933, p = 0.331",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.958, p = 0.696",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.953, p = 0.614",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.909, p = 0.153",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.876, p = 0.052",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 678,
+          "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+          "ancla": "W = 0.955, p = 0.646",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "PÁRRAFO del apartado 5.4, párrafo previo a la Tabla 39 (criterio de normalidad del contraste)",
+          "ancla": "Shapiro-Wilk (p > 0.05)",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PÁRRAFO 686, oración de T_vale",
+          "ancla": "Z = -3.30, p = 0.001 y r de Rosenthal",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 692,
+          "ubicacion": "PÁRRAFO 692, oración de CPE",
+          "ancla": "Z = -3.30, p = 0.001 con r =",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PÁRRAFO 686, oración de T_reg",
+          "ancla": "t(13) = -38.944",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PÁRRAFO 686, oración de T_vale",
+          "ancla": "t(13) = -24.509",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PÁRRAFO 686, oración de T_reg",
+          "ancla": "d de Cohen de -10.41",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PÁRRAFO 686, oración de T_vale",
+          "ancla": "d de Cohen de -6.55",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 711,
+          "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+          "ancla": "t = -38.94 y t = -24.51",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 711,
+          "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+          "ancla": "(-80.69%)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 711,
+          "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+          "ancla": "(-83.33%)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 717,
+          "ubicacion": "PÁRRAFO 717 (conclusión del objetivo específico 1)",
+          "ancla": "t(13) = -38.94 y t(13) = -24.51",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PÁRRAFO 686, oración de T_reg",
+          "ancla": "Z = -3.30, p = 0.001 y un tamaño",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 692,
+          "ubicacion": "PÁRRAFO 692, oración de RSD",
+          "ancla": "Z = -3.30, p = 0.001 con r de Rosenthal",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PÁRRAFO 698, oración de AP",
+          "ancla": "y Wilcoxon obtuvo W = 0.0, Z = -3.30, p = 0.001 y r =",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PÁRRAFO 698, oración de UP",
+          "ancla": "y Wilcoxon registró W = 0.0, Z = -3.30, p = 0.001 y r =",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PÁRRAFO 698, oración del puntaje global TAM",
+          "ancla": "y no paramétrico W = 0.0, Z = -3.30, p = 0.001 (p_adj",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 1,
+          "ubicacion": "TABLA 1, fila 8, columna 5",
+          "ancla": "(p < 0.01)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 1,
+          "ubicacion": "TABLA 1, fila 10, columna 5",
+          "ancla": "(p < 0.001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 1,
+          "ubicacion": "TABLA 1, fila 12, columna 5",
+          "ancla": "(p < 0.001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 1,
+          "ubicacion": "TABLA 1, fila 3, columna 5",
+          "ancla": "(-98%) y -38%",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 2, columna 6",
+          "ancla": "0.966",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 3, columna 6",
+          "ancla": "0.331",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 4, columna 6",
+          "ancla": "0.696",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 5, columna 6",
+          "ancla": "0.614",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 6, columna 6",
+          "ancla": "0.153",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 7, columna 6",
+          "ancla": "0.052",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 39,
+          "ubicacion": "TABLA 39, fila 8, columna 6",
+          "ancla": "0.646",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 3, columna 5",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 5, columna 5",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 5, columna 5",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 2, columna 3",
+          "ancla": "t = -38.944",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 4, columna 3",
+          "ancla": "t = -24.509",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 3, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 5, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 3, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 5, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 3, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 5, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 7, columna 3",
+          "ancla": "(Z = -3.30)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 2, columna 6",
+          "ancla": "d = -10.41",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 4, columna 6",
+          "ancla": "d = -6.55",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 3, columna 10",
+          "ancla": "-80.69%",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 4, columna 4",
+          "ancla": "-30.00",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 4, columna 6",
+          "ancla": "-29.75",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 4, columna 8",
+          "ancla": "-35.50",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 4, columna 9",
+          "ancla": "-25.50",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 6, columna 10",
+          "ancla": "-83.33%",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 7, columna 4",
+          "ancla": "-15.18",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 7, columna 6",
+          "ancla": "-14.75",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 7, columna 8",
+          "ancla": "-20.00",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 36,
+          "ubicacion": "TABLA 36, fila 7, columna 9",
+          "ancla": "-12.50",
+          "sustituciones": 1,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 28,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 145,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 152,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 163,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 191,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 221,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 228,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 253,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 383,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 446,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 525,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 553,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 555,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 567,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 648,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 649,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 650,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 663,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 670,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 683,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 706,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 710,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 711,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 721,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      },
+      {
+        "categoria": "saneamiento_espacios_finales",
+        "parrafo": 811,
+        "caracteres_recortados": 1,
+        "estado": "corregido"
+      }
+    ],
+    "parrafos_saneados": 25,
+    "indices": [
+      28,
+      145,
+      152,
+      163,
+      191,
+      221,
+      228,
+      253,
+      383,
+      446,
+      525,
+      553,
+      555,
+      567,
+      648,
+      649,
+      650,
+      663,
+      670,
+      683,
+      706,
+      710,
+      711,
+      721,
+      811
+    ],
+    "caracteres_recortados": 25
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 213,
+      "ubicacion": "PÁRRAFO 213 (antecedente Gilbert et al., 2020)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 216,
+      "ubicacion": "PÁRRAFO 216 (antecedente Astuhuaman Perez y Baltazar Maza, 2023)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 218,
+      "ubicacion": "PÁRRAFO 218 (antecedente Garcia Villacorta y Calderón Huaman, 2023)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 284,
+      "ubicacion": "PÁRRAFO 284 (fundamentación TAM, cita Hussain et al., 2025)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 284,
+      "ubicacion": "PÁRRAFO 284 (fundamentación TAM, cita Hussain et al., 2025)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 678,
+      "ubicacion": "PÁRRAFO 678 (listado de Shapiro-Wilk por indicador)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": null,
+      "ubicacion": "PÁRRAFO del apartado 5.4, párrafo previo a la Tabla 39 (criterio de normalidad del contraste)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_vale",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 692,
+      "ubicacion": "PÁRRAFO 692, oración de CPE",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_reg",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_vale",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_reg",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_vale",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 711,
+      "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 711,
+      "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 711,
+      "ubicacion": "PÁRRAFO 711 (discusión, primera dimensión)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 717,
+      "ubicacion": "PÁRRAFO 717 (conclusión del objetivo específico 1)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 686,
+      "ubicacion": "PÁRRAFO 686, oración de T_reg",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 692,
+      "ubicacion": "PÁRRAFO 692, oración de RSD",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 698,
+      "ubicacion": "PÁRRAFO 698, oración de AP",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 698,
+      "ubicacion": "PÁRRAFO 698, oración de UP",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 698,
+      "ubicacion": "PÁRRAFO 698, oración del puntaje global TAM",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 8, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 10, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 12, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 1,
+      "ubicacion": "TABLA 1, fila 3, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 2, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 3, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 4, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 5, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 6, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 7, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 39,
+      "ubicacion": "TABLA 39, fila 8, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 3, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 5, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 5, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 2, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 4, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 3, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 5, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 5, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 2, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 4, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 3, columna 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 8",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 4, columna 9",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 6, columna 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 6",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 8",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v12",
+      "indice_docx": 36,
+      "ubicacion": "TABLA 36, fila 7, columna 9",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo celda_reubicada"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 28,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 145,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 152,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 163,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 191,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 221,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 228,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 253,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 383,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 446,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 525,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 553,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 555,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 567,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 648,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 649,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 650,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 663,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 670,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 683,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 706,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 710,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 711,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 721,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    },
+    {
+      "categoria": "saneamiento_espacios_finales",
+      "parrafo": 811,
+      "caracteres_recortados": 1,
+      "estado": "corregido"
+    }
+  ]
+}

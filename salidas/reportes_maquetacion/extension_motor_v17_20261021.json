@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "fecha": "2026-10-21",
+    "agente": "maquetador-docx",
+    "squad": "Squad E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "motor": "C:/MisInvestigaciones/tesis/sivac/scripts/utilidades/docx_quirurgico.py",
+    "motor_bytes": 104726,
+    "motor_sha256": "2e2bfb3724b627dc73f5e19d84b2e8fb9f84850202fba38bb7fc22e5a9e7d8b6",
+    "estado": "diseno_para_aprobacion_sin_ejecucion",
+    "principio": "Extension exclusivamente aditiva. No se modifican firmas, valores por defecto ni comportamiento de las funciones existentes. Cada funcion nueva se inserta como bloque independiente y se expone por un subcomando nuevo o por una bandera opcional con valor por defecto que preserva el comportamiento actual."
+  },
+  "funciones_nuevas": [
+    {
+      "id": "EXT-01",
+      "firma": "aplicar_cursivas_por_tramos(documento, especificacion)",
+      "proposito": "Aplicar cursiva APA 7 a tramos internos de las 53 entradas de referencia sin cursivar autores, ano, DOI ni la entrada completa.",
+      "especificacion": [
+        {
+          "indice_docx": "entero base 0",
+          "tramos": ["subcadenas exactas que deben quedar en cursiva, en orden de aparicion"]
+        }
+      ],
+      "mecanica": "Divide los runs en fronteras de subcadena preservando rPr de cada tramo; usa deepcopy del run original y ajusta w:t. No toca parrafos sin especificacion.",
+      "invariantes": ["No cambia el texto concatenado.", "No altera sz, sangria ni interlineado.", "Falla si un tramo no aparece exactamente una vez."]
+    },
+    {
+      "id": "EXT-02",
+      "firma": "aplicar_keep_next(documento, indices, incluir_ultima_fila_tabla=None)",
+      "proposito": "Inyectar w:keepNext en parrafos y en la ultima fila de una tabla para evitar titulos y ecuaciones huerfanas.",
+      "mecanica": "Inserta w:keepNext en w:pPr respetando el orden de CT_PPr; para tablas lo aplica a los parrafos de la ultima fila.",
+      "invariantes": ["No modifica texto ni geometria.", "Idempotente."]
+    },
+    {
+      "id": "EXT-03",
+      "firma": "reducir_margenes_celda(tabla, izquierdo_dxa=28, derecho_dxa=28)",
+      "proposito": "Ganar ancho util en Tabla 1 sin reducir tamano de letra ni margenes de pagina.",
+      "mecanica": "Fija w:tcMar izquierdo/derecho en todas las celdas y luego llama a rebalancear_tabla existente.",
+      "invariantes": ["No cambia w:sz ni w:spacing.", "No cambia el ancho total de la tabla.", "Reporta columnas_desbordadas."]
+    },
+    {
+      "id": "EXT-04",
+      "firma": "retirar_encabezado_repetido(tabla)",
+      "proposito": "Eliminar w:tblHeader de la fila 0 de las Tablas 46, 47 y 48 para que no se duplique el bloque 'Juez Validador'.",
+      "mecanica": "Recorre w:trPr y retira w:tblHeader solo de la fila indicada.",
+      "invariantes": ["No toca w:cantSplit.", "No toca bordes."]
+    },
+    {
+      "id": "EXT-05",
+      "firma": "normalizar_jerarquia_encabezados(documento, nivel2_sin_cursiva=(), nivel3_estilo=None)",
+      "proposito": "Retirar la cursiva accidental de los 58 encabezados de nivel 2 y aplicar el estilo institucional Heading 3 a los 18 encabezados de nivel 3.",
+      "especificacion_concreta": {
+        "nivel2_sin_cursiva": "todos los parrafos con w:outlineLvl val=2 (58 en la v16; incluye par#335)",
+        "nivel3_estilo": "Heading 3 (Ttulo3) en los indices 337, 342, 346, 350, 354, 358, 362, 369, 378, 387, 399, 445, 457, 474, 526, 534, 538, 543"
+      },
+      "mecanica": "Recorre w:rPr de los parrafos indicados y retira w:i/w:iCs; para nivel 3 asigna w:pStyle al estilo recibido sin reescribir el texto.",
+      "invariantes": ["No cambia numeracion ni texto.", "No altera niveles 0 y 1.", "Conserva la negrita de nivel 2 y 3."]
+    },
+    {
+      "id": "EXT-06",
+      "firma": "reemplazar_en_hipervinculos(parrafo, viejo, nuevo, ocurrencias=1)",
+      "proposito": "Actualizar el rotulo de la Figura 44 dentro de la entrada del indice de figuras (w:hyperlink), que python-docx no expone en paragraph.runs.",
+      "mecanica": "Recorre .//w:hyperlink/w:r/w:t y aplica el mismo reemplazo flexible de _reemplazar_texto_parrafo.",
+      "invariantes": ["Conserva w:anchor y w:history.", "No duplica el hipervinculo.", "Falla si el ancla no es unica."]
+    },
+    {
+      "id": "EXT-07",
+      "firma": "ajustar_estilo_indice(documento, nombre_estilo='Tabladeilustraciones', line=240)",
+      "proposito": "Fijar interlineado 240 en el estilo del indice de figuras para que las 52 entradas no vuelquen una pagina extra.",
+      "mecanica": "Modifica styles.xml en el estilo indicado; no toca los parrafos uno por uno.",
+      "invariantes": ["No cambia fuente ni tamano.", "No afecta 'toc 1'."]
+    },
+    {
+      "id": "EXT-08",
+      "firma": "reorganizar_bloques_tabla(tabla, orden_filas=None, orden_bloques=None)",
+      "proposito": "Resolver Tablas 43, 44 y 45 reordenando filas o bloques nativos sin partir filas ni perder contenido.",
+      "mecanica": "Mueve w:tr completos con deepcopy y reinserta en el orden indicado; conserva w:cantSplit, w:trPr y w:tcPr.",
+      "invariantes": ["Cero filas partidas.", "Mismo numero de filas y mismo texto concatenado.", "Si el orden no elimina el espacio residual, se declara residual."]
+    },
+    {
+      "id": "EXT-09",
+      "firma": "actualizar_campos_docx(ruta_docx, ruta_salida)",
+      "proposito": "Actualizar campos nativos (indices y referencias cruzadas) en una copia NUEVA, nunca sobre el archivo que el usuario pueda tener abierto.",
+      "mecanica": "Word COM sobre la copia de salida; verifica que no exista ~$ruta_salida antes de abrir.",
+      "invariantes": ["No abre el archivo base.", "No guarda sobre v16.", "Registra el SHA-256 de entrada y salida."]
+    }
+  ],
+  "funciones_existentes_que_no_se_tocan": [
+    "aplicar_ordenes_edicion",
+    "rebalancear_tabla",
+    "blindar_filas_tabla",
+    "aplicar_bordes_apa7",
+    "eliminar_flotacion_tabla",
+    "insertar_prefijo_notas",
+    "normalizar_rotulos_ilustracion",
+    "reconstruir_tabla_filas",
+    "exportar_docx_a_pdf",
+    "renderizar_paginas_pdf"
+  ],
+  "subcomandos_nuevos_propuestos": [
+    "cursivas-tramos <docx> --especificacion <json> --salida <docx>",
+    "keep-next <docx> --parrafos 561,562 --tabla 33 --salida <docx>",
+    "margenes-celda <docx> --tabla 1 --izq 28 --der 28 --salida <docx>",
+    "quitar-tblheader <docx> --tablas 46,47,48 --salida <docx>",
+    "jerarquia <docx> --nivel2-sin-cursiva 335 --nivel3-estilo 'Heading 3' --salida <docx>",
+    "reemplazar-hipervinculo <docx> --parrafo 75 --ancla \"...\" --nuevo \"...\" --salida <docx>",
+    "estilo-indice <docx> --estilo Tabladeilustraciones --line 240 --salida <docx>",
+    "reorganizar-tabla <docx> --tabla 43 --orden <json> --salida <docx>",
+    "actualizar-campos <docx> --salida <docx_nueva>"
+  ],
+  "pruebas_de_aceptacion_de_la_extension": [
+    "Cada comando corre primero con --solo-verificar y reporta 0 fallidas.",
+    "El texto concatenado del documento no cambia salvo en las sustituciones declaradas.",
+    "El SHA-256 del archivo base no cambia.",
+    "Ninguna fila de tablas 43, 44 o 45 queda partida; w:cantSplit permanece en el 100 % de las filas.",
+    "Ningun w:sz cambia por debajo de 10 pt en celdas ni de 9.5 pt en notas.",
+    "Los margenes de pagina del sectPr no cambian."
+  ],
+  "residuales_declarados_si_no_se_aprueba_la_extension": [
+    "M-04, M-06, M-09 y A-20: cursivas e indice sin corregir.",
+    "M-05 y M-07: titulos y ecuaciones sin keepNext.",
+    "M-01 y M-02: Tabla 1 mantiene fracturas por 69 dxa.",
+    "M-14: persiste la cabecera repetida en el Anexo 3.",
+    "M-16: indice de figuras mantiene la pagina extra.",
+    "M-11 a M-13: Tablas 43 a 45 sin reacomodo; se declaran residuales, nunca se finge cierre."
+  ]
+}

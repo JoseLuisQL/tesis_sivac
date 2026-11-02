@@ -1,0 +1,102 @@
+{
+  "fecha": "2026-10-26",
+  "fase": "F8_INTEGRACION_EDITORIAL",
+  "estado": "parcial_reestructuracion_en_ejecucion",
+  "alcance": "Registro de coordinación y controles focalizados; no es dictamen final ni aprobación humana.",
+  "candidato_estable_listas_tablas": {
+    "docx": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx",
+    "sha256_docx_reproducido": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
+    "bytes_docx": 16130599,
+    "pdf": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.pdf",
+    "sha256_pdf_reproducido": "d62ee56bd39fb2ea93ac487d518ae27bf531abb8efa0b8c98d245081ea26dbc0",
+    "bytes_pdf": 6486181,
+    "paginas_segun_reporte_maquetador": 159,
+    "no_es": "Candidato con XP y salida estadística trasladados; esas operaciones siguen pendientes."
+  },
+  "lectura_visual_directa_direccion": {
+    "metodo": "Read de renders PNG de Word exportado, no inferencia desde texto/XML.",
+    "paginas_fisicas": [110, 117, 120, 124, 125],
+    "confirmaciones": [
+      "Página 110: Tabla 33 legible, sin desborde visible; no se confirma necesidad del trasvase de ancho propuesto.",
+      "Página 117: seis coeficientes de Tabla 35 completos, sin división después del punto.",
+      "Página 120: rangos de Tabla 37 completos en las celdas.",
+      "Página 124: elementos numerados 4 a 7 alineados a izquierda y sin expansión de espacios; valores W/p completos en Tabla 39.",
+      "Página 125: incisos A/B/C y viñetas con alineación izquierda sin expansión de palabras."
+    ],
+    "observaciones_para_integracion": [
+      "Rótulo y título de tabla comparten párrafo en el candidato estable. En la reestructuración se solicita separarlos nativamente conforme a la regla editorial del proyecto, conservando SEQ, bookmarks e índices.",
+      "El PDF estable exportado por Word no acredita conservación de resolución de todos los medios. El PDF reestructurado deberá pasar por la reparación de imágenes del motor y documentar DPI reales, sin escalado artificial.",
+      "La legibilidad de cifras no valida los cálculos ni las afirmaciones históricas que acompañan a las tablas."
+    ],
+    "no_cubre": "No es lectura visual integral de las 159 páginas ni del futuro PDF reestructurado."
+  },
+  "fuentes_bibliograficas_consultadas": [
+    {
+      "autor_anio": "Beck, 1999",
+      "doi": "10.1109/2.796139",
+      "url_primaria": "https://ieeexplore.ieee.org/document/796139",
+      "metodo": "Firecrawl: metadatos y abstract público, respuesta HTTP 200.",
+      "verificado": "Embracing change with extreme programming; Computer, 32(10), 70-77. El abstract respalda realizar planificación, análisis y diseño de forma incremental durante el desarrollo frente a requisitos cambiantes.",
+      "no_verificado": "No se leyó el texto completo ni se corroboraron los localizadores 70 y 71 para afirmaciones específicas, cambios normativos o cada práctica atribuida. Se retiran localizadores no comprobados."
+    },
+    {
+      "autor_anio": "Kokol, 2022",
+      "doi": "10.3390/app12199462",
+      "url_primaria": "https://www.mdpi.com/2076-3417/12/19/9462",
+      "metodo": "Firecrawl y extracción local de apartados de la respuesta; lectura parcial: abstract, introducción/background y sección 5 de conclusiones.",
+      "verificado": "Agile Software Development in Healthcare: A Synthetic Scoping Review. La síntesis Scopus/Web of Science señala potencial de enfoques ágiles para desarrollo sanitario y cooperación profesional, con barreras de seguridad, regulación y riesgo.",
+      "no_verificado": "No se realizó lectura íntegra del artículo ni de los estudios primarios que cita. No se atribuye una demostración experimental propia de superioridad de XP frente a cascada."
+    }
+  ],
+  "zotero": {
+    "consultas": ["Beck 1999", "Kokol"],
+    "resultado": "Sin coincidencia exacta; el servicio devolvió alternativas semánticas. Estas alternativas no verifican las fuentes buscadas ni prueban ausencia en todas las bibliotecas.",
+    "mutaciones_biblioteca": false,
+    "consulta_adicional": {
+      "items": ["J2PSI2PB", "X83AK6DP"],
+      "operacion": "Metadatos sin abstract de Cohn y Sommerville",
+      "resultado": "Ambas llamadas fallaron: WinError 10061, conexión local rechazada.",
+      "alcance": "No se verificaron los metadatos completos de estos ítems; no se interpreta el fallo como ausencia de las fuentes. No bloquea la integración editorial con las evidencias ya comprobadas.",
+      "accion": "Fallo comunicado al maquetador; no ampliar el alcance ni atribuir verificación inexistente."
+    }
+  },
+  "borrador_redaccion_corregida": {
+    "ruta": ".claude/worktrees/agent-ad791913133a91b32/salidas/reportes_maquetacion/reestructuracion_v22_20261026/redaccion_final_v22.json",
+    "sha256": "e5076f0da3eae186608ce8b29c10ff80e8a896b9f80b713e8e4365e5f7b7c7a5",
+    "json_validado": true,
+    "bytes": 68789,
+    "bloques_principales": 14,
+    "lectura_direccion": "Leídas líneas 1-556: fundamento XP, traslados, advertencia, capítulos V/VI, resumen/abstract, conclusiones y reglas de aplicación. No se leyó toda la metadata final.",
+    "limitacion": "El aislamiento worktree se solicitó por error de Dirección, sin petición del tesista. La escritura del redactor en el destino compartido fue bloqueada. No se fuerza ese bloqueo ni se copia al destino por otro actor; el borrador permanece como insumo de lectura para el proceso de integración ya autorizado.",
+    "destino_compartido": "El JSON principal conserva su versión anterior. No debe confundirse con el borrador corregido.",
+    "datos_sensibles_publicados": false
+  },
+  "ordenes_en_ejecucion": [
+    "Maquetador: nuevo CANDIDATO_REESTRUCTURADO_V22.docx/pdf, sin sobrescribir candidato estable; ampliar exclusivamente motor canónico para traslado, injerto nativo y renumeración continua.",
+    "Redactor: alcance terminado en borrador aislado; no debe escribir ni copiar al destino compartido bloqueado. El maquetador integra la corrección ya autorizada, con la precedencia editorial final de Dirección.",
+    "Anexo 6: bloque XP íntegro y complementos únicos de la fuente; matriz de cobertura de 26 tablas, prosa sustantiva y 35 medios.",
+    "Anexo 7: salida estadística y prosa interpretativa histórica preservadas bajo advertencia de datos de prueba y de inconsistencias no corregidas; ninguna nueva inferencia.",
+    "Resultados, discusión, resumen, abstract y conclusiones: sin cifras de prueba presentadas como hallazgos de campo; no imponer desde redacción un nuevo protocolo estadístico.",
+    "Registro fotográfico anterior pasa a Anexo 8; actualización de llamadas, SEQ, REF/PAGEREF y tres índices nativos.",
+    "Reparación de medios del PDF, controles de conservación, renders finales y cotejo independiente antes de entrega para revisión."
+  ],
+  "control_preservacion_al_continuar": {
+    "fecha": "2026-10-26",
+    "metodo": "Lectura binaria local y SHA-256 con hashlib; no edición de documentos.",
+    "resultado": "Las cuatro huellas de v20 DOCX/PDF y candidato editorial DOCX/PDF coinciden con el control anterior.",
+    "fuente_xp": {
+      "ruta": "SIVAC_Desarrollo_Software_XP.docx",
+      "bytes": 10918427,
+      "sha256_observado": "04798502f7aa07b92879d0954b25b407044af9c0e202529dd9047ced584b0397",
+      "alcance": "Huella actual de la fuente para cotejo de preservación posterior; no prueba por sí sola la cobertura del anexo."
+    },
+    "comision_cotejo": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comision_cotejo_independiente_v22.json",
+    "estado_comision": "Contrato conforme al esquema, preparado pero no despachado; requiere entrega estable del maquetador.",
+    "estado_integracion": "Maquetador sigue activo. No se acredita todavía candidato reestructurado terminado ni entrega v22."
+  },
+  "autorizacion": {
+    "origen": "Solicitud expresa previa del tesista de corregir y ordenar el informe y trasladar XP completo al anexo.",
+    "separacion_historica": "Salvaguarda editorial de Dirección derivada de la auditoría; no aprobación humana nueva ni ratificación de otro diseño estadístico.",
+    "estado_definitivo": "No aprobado. QG-5, QG-7 y QG-9 no se cierran."
+  }
+}

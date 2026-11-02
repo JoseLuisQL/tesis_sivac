@@ -1,0 +1,778 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "fecha_emision": "2026-10-21",
+    "agente_responsable": "especialista-instrumentos",
+    "squad": "Squad B (Metodología, Medición y Psicometría)",
+    "proyecto": "SIVAC-THESIS-LAB",
+    "titulo_oficial_tesis": "APLICACIÓN DEL SISTEMA “SIVAC” PARA MEJORAR LA GESTIÓN DE MOVIMIENTOS MENSUALES DE VACUNAS EN EL PERSONAL DE INMUNIZACIONES DE LA DIRECCIÓN DE SALUD APURÍMAC II",
+    "tesista": "Bach. José Luis Quispe León",
+    "asesora": "Dra. Norma Lorena Catacora Flores",
+    "institucion": "Universidad Nacional José María Arguedas",
+    "facultad": "Facultad de Ingeniería",
+    "escuela_profesional": "Escuela Profesional de Ingeniería de Sistemas",
+    "fase_activa": "F5_REABIERTA_SANEAMIENTO_F5_1",
+    "normas_aplicadas": [
+      "DEC-007 (3 dimensiones oficiales de la Variable Dependiente: Oportunidad, Consistencia y Satisfacción)",
+      "DEC-015 (Adopción institucional del modelo Fany 2024 de validación pericial)",
+      "DEC-016 (Emisión de certificados y formatos de validación 100% en blanco para llenado manuscrito)",
+      "DEC-019 (Estructura psicométrica del Cuestionario TAM: Modalidad A oficial para HE3 pretest/postest en 8 reactivos; Modalidad B complementaria postest)",
+      "DEC-020 (Acreditación metodológica: juicio de expertos para satisfacción, PMMV + ICC/Kappa para fichas de registro)",
+      "DEC-023 y DEC-024 (Estructuración integral de expedientes con los 12 elementos evaluados para las 3 dimensiones)",
+      "DEC-025 y DEC-026 (Maquetación en vertical, rejilla visible de formularios de captura, ancho útil APA 7)",
+      "DEC-027 (Título oficial con 'movimientos mensuales' y variable dependiente canónica)"
+    ],
+    "diseno_metodologico": {
+      "tipo": "Aplicada, cuantitativa",
+      "nivel": "Explicativo",
+      "diseno": "Preexperimental con pretest y postest en un solo grupo (O1 -> X -> O2)",
+      "poblacion_y_muestra": "Censal, conformada por la totalidad del personal responsable de la gestión de vacunas en la DISA Apurímac II (N = n = 14)",
+      "variable_independiente": "Sistema web SIVAC (Intervención tecnológica)",
+      "variable_dependiente": "Gestión de movimientos mensuales de vacunas"
+    }
+  },
+  "anexo_3_validacion_juicio_expertos": {
+    "identificador": "ANEXO 3",
+    "titulo": "CERTIFICADOS DE VALIDACIÓN DE INSTRUMENTOS POR JUICIO DE EXPERTOS",
+    "proposito": "Acreditar formal y metodológicamente la validez de contenido de los instrumentos de recolección de datos mediante la evaluación pericial independiente de tres (3) jueces expertos multidisciplinarios, bajo el modelo institucional UNAJMA (Fany 2024 / DEC-015 / DEC-020 / DEC-027).",
+    "fundamentacion_psicometrica": {
+      "criterios_evaluacion": [
+        {
+          "criterio": "Pertinencia",
+          "definicion": "El elemento, criterio o reactivo se encuentra estrechamente vinculado con el constructo teórico y la dimensión que pretende medir.",
+          "nota_al_pie": "Nota 1: El ítem corresponde al concepto teórico formulado."
+        },
+        {
+          "criterio": "Relevancia",
+          "definicion": "El elemento, criterio o reactivo es fundamental y aporta significativamente a la medición representativa del indicador correspondiente.",
+          "nota_al_pie": "Nota 2: El ítem es apropiado para representar al componente o dimensión específica del constructo."
+        },
+        {
+          "criterio": "Claridad",
+          "definicion": "La redacción del enunciado o definición operacional es concisa, directa, comprensible y no genera ambigüedades interpretativas.",
+          "nota_al_pie": "Nota 3: Se entiende sin dificultad alguna el enunciado del ítem, es conciso, exacto y directo."
+        }
+      ],
+      "escala_calificacion_fany": {
+        "tipo": "Dicotómica institucional Sí / No (conforme a Fany 2024)",
+        "valores": {
+          "Si": 1,
+          "No": 0
+        },
+        "formula_v_aiken_dicotomica": "V = S / n",
+        "donde": "S es la sumatoria de calificaciones favorables (Sí = 1) asignadas por los jueces, y n es el número total de jueces evaluadores (n = 3).",
+        "regla_decision_n3": "Para n = 3 jueces y c = 2 categorías, los únicos valores posibles de V son 0.000 (S=0), 0.333 (S=1), 0.667 (S=2) y 1.000 (S=3). Por consiguiente, alcanzar el umbral mínimo exigido (V >= 0.80) exige unanimidad perfecta de los tres expertos (3 de 3 marcan Sí)."
+      },
+      "formula_indice_validez_contenido": {
+        "formula_i_cvi": "I-CVI = n_favorables / n_total_jueces",
+        "formula_s_cvi_ave": "S-CVI/Ave = sum(I-CVI) / k_items",
+        "umbral_aceptacion": "V >= 0.80 e IVC >= 0.80 (Polit, Beck & Owen, 2007; Aiken, 1985)"
+      }
+    },
+    "inventario_12_items_evaluados": [
+      {
+        "item_numero": 1,
+        "instrumento": "Ficha N.° 01 (Tiempos)",
+        "dimension": "Dimensión 1: Oportunidad de procesamiento",
+        "indicador_codigo": "Treg",
+        "indicador_nombre": "Tiempo de registro de movimientos de vacunas",
+        "elemento_evaluado": "Cronometraje de la tarea estandarizada representativa única (registro de salida programada de tres biológicos con lote, cantidad, fecha, destino y responsable), evaluada mediante tres ensayos homogéneos (REG-E1, REG-E2, REG-E3) por operador, desde que toma el documento fuente o abre la digitación hasta que el movimiento queda grabado con saldo actualizado, expresado en minutos decimales (mediana por operador).",
+        "objeto_auditoria": "Especificación de puntos de corte (inicio y fin), estandarización de la tarea única de registro, regla de pausa por imprevistos y consolidación de la mediana intrasujeto anti-pseudorreplicación."
+      },
+      {
+        "item_numero": 2,
+        "instrumento": "Ficha N.° 01 (Tiempos)",
+        "dimension": "Dimensión 1: Oportunidad de procesamiento",
+        "indicador_codigo": "Tvale",
+        "indicador_nombre": "Tiempo de emisión de comprobantes de salida / vales",
+        "elemento_evaluado": "Cronometraje de la tarea estandarizada representativa única (emisión de vale oficial para salida programada de tres biológicos a un establecimiento de salud), evaluada mediante tres ensayos homogéneos (VALE-E1, VALE-E2, VALE-E3) por operador, desde que recibe o abre la solicitud de pedido hasta que el comprobante de salida queda generado y disponible para su entrega, impresión o registro institucional, expresado en minutos decimales (mediana por operador).",
+        "objeto_auditoria": "Puntos de corte operativo del vale de salida, tres ensayos homogéneos, agregación temporal objetiva y neutralidad instrumental frente al método de registro."
+      },
+      {
+        "item_numero": 3,
+        "instrumento": "Ficha N.° 02 (Cotejo)",
+        "dimension": "Dimensión 2: Consistencia documental",
+        "indicador_codigo": "RSD",
+        "indicador_nombre": "Porcentaje de registros sin discrepancias",
+        "elemento_evaluado": "Proporción de movimientos auditados que cumplen simultáneamente los ocho (8) criterios de conformidad: (1) tipo de movimiento unívoco, (2) denominación oficial estandarizada del biológico, (3) número de lote exacto coincidente con frasco, (4) cantidad registrada concordante con documento fuente de sustento (acta/guía en entradas, vale en salidas, documento oficial en ajustes), (5) fecha completa y cronológica, (6) establecimiento individualizado con código RENIPRESS, (7) responsable plenamente trazable, y (8) documento formal de respaldo asociado y verificado. Corpus de 40 a 60 documentos por operador consolidados en porcentaje para n = 14 observaciones pareadas.",
+        "objeto_auditoria": "Regla inmutable de conformidad simultánea en 8 campos clave y protocolo PMMV en ventana simétrica de 30 días calendario."
+      },
+      {
+        "item_numero": 4,
+        "instrumento": "Ficha N.° 02 (Cotejo)",
+        "dimension": "Dimensión 2: Consistencia documental",
+        "indicador_codigo": "CPE",
+        "indicador_nombre": "Concordancia entre cantidad programada y entregada",
+        "elemento_evaluado": "Proporción de despachos y entregas en las que la cantidad entregada coincide frasco a frasco con lo programado o cuenta con documento técnico sustentatorio formal MINSA archivado que autoriza expresamente la variación. Corpus de 40 a 60 entregas por operador consolidadas en porcentaje acotado entre 0% y 100% para n = 14 observaciones pareadas de Wilcoxon.",
+        "objeto_auditoria": "Criterio de concordancia dosis a dosis, justificación ministerial documentada y delimitación del indicador acotado a [0, 100]%."
+      },
+      {
+        "item_numero": 5,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "AP-01",
+        "indicador_nombre": "Aceptación del proceso - Agilidad operativa",
+        "elemento_evaluado": "El procedimiento actual para asentar los movimientos diarios y cierres de mes es ágil y no demanda un esfuerzo mental o físico excesivo.",
+        "objeto_auditoria": "Redacción afirmativa Likert 1-5, univocidad y pertinencia respecto a la sobrecarga cognitiva y física en el asentamiento de inventarios."
+      },
+      {
+        "item_numero": 6,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "AP-02",
+        "indicador_nombre": "Aceptación del proceso - Fluidez en comprobantes",
+        "elemento_evaluado": "El flujo de trabajo requerido para emitir comprobantes de salida y vales de entrega es fluido y está libre de demoras o trabas burocráticas.",
+        "objeto_auditoria": "Claridad proposicional y medición de la percepción de fluidez operativa en la emisión de vales de biológicos."
+      },
+      {
+        "item_numero": 7,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "AP-03",
+        "indicador_nombre": "Aceptación del proceso - Tranquilidad en conciliación",
+        "elemento_evaluado": "El método empleado me permite conciliar los saldos de inventario con las microredes generando tranquilidad y reduciendo el estrés laboral.",
+        "objeto_auditoria": "Representatividad del constructo de bienestar laboral y reducción de tensión durante los cierres mensuales de inmunizaciones."
+      },
+      {
+        "item_numero": 8,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "AP-04",
+        "indicador_nombre": "Aceptación del proceso - Compatibilidad horaria",
+        "elemento_evaluado": "El tiempo que dedico al registro administrativo de vacunas es equilibrado y me deja disponibilidad para mis labores sanitarias y asistenciales.",
+        "objeto_auditoria": "Alineación con el rol profesional sanitario del personal de la cadena de frío y equilibrio trabajo asistencial vs administrativo."
+      },
+      {
+        "item_numero": 9,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "UP-01",
+        "indicador_nombre": "Utilidad percibida - Stock fidedigno en tiempo real",
+        "elemento_evaluado": "El mecanismo de registro utilizado me permite disponer de información fidedigna y en tiempo real del stock de vacunas y jeringas.",
+        "objeto_auditoria": "Pertinencia teórica bajo TAM sobre la veracidad, oportunidad y fidelidad de los datos de inventario para la toma de decisiones."
+      },
+      {
+        "item_numero": 10,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "UP-02",
+        "indicador_nombre": "Utilidad percibida - Control de lotes y prevención de mermas",
+        "elemento_evaluado": "El control de números de lote y fechas de vencimiento que brinda el proceso previene oportunamente mermas o pérdidas de biológicos.",
+        "objeto_auditoria": "Relevancia técnica sanitaria en cadena de frío: rotación oportuna, regla FEFO y mitigación de caducidad de vacunas."
+      },
+      {
+        "item_numero": 11,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "UP-03",
+        "indicador_nombre": "Utilidad percibida - Detección de descuadres físicos",
+        "elemento_evaluado": "La metodología de gestión facilita la detección inmediata y rectificación de cualquier descuadre de inventario físico versus registrado.",
+        "objeto_auditoria": "Exactitud y pertinencia metodológica en la conciliación de existencias reales frente a la documentación de almacén."
+      },
+      {
+        "item_numero": 12,
+        "instrumento": "Cuestionario N.° 03 (TAM)",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicador_codigo": "UP-04",
+        "indicador_nombre": "Utilidad percibida - Eficacia global en abastecimiento",
+        "elemento_evaluado": "En general, considero que el procedimiento empleado es una herramienta altamente eficaz para garantizar el abastecimiento oportuno de vacunas.",
+        "objeto_auditoria": "Síntesis evaluativa del constructo de Utilidad Percibida global en la logística de inmunizaciones de la DISA Apurímac II."
+      }
+    ],
+    "certificados_individuales": [
+      {
+        "experto_id": "EXP-01",
+        "numero": 1,
+        "perfil_profesional": {
+          "titulo_academico": "Ingeniero(a) de Sistemas",
+          "grado_academico": "Magíster en Ingeniería de Sistemas / Tecnologías de la Información",
+          "especialidad": "Ingeniería de Software, Automatización de Procesos y Auditoría de Sistemas de Información",
+          "rol_pericial": "Evaluador temático principal en arquitectura de sistemas, diseño de bases de datos, ergonomía de software y trazabilidad digital de flujos de trabajo."
+        },
+        "campos_identificacion": {
+          "apellidos_y_nombres": "[ PLACEHOLDER: APELLIDOS Y NOMBRES DEL EXPERTO 1 ]",
+          "dni": "[ PLACEHOLDER: DNI ]",
+          "grado_y_titulo": "Ing. de Sistemas, Magíster en Ingeniería de Sistemas",
+          "institucion_laboral": "Universidad Nacional José María Arguedas / Entidad Tecnológica",
+          "registro_profesional": "Colegio de Ingenieros del Perú - CIP N.° [ PLACEHOLDER: CIP ]",
+          "fecha_evaluacion": "Andahuaylas, ........ de ........................ de 2026"
+        },
+        "matriz_evaluacion_fany": {
+          "columnas": ["N.°", "Instrumento", "Dimensión / Indicador", "Elemento, Criterio o Reactivo Evaluado", "Pertinencia (Sí/No)", "Relevancia (Sí/No)", "Claridad (Sí/No)", "Sugerencias"],
+          "filas": "Los 12 ítems del inventario estructurado con casillas [ ] Sí  [ ] No en blanco y espacio para sugerencias conforme a DEC-016."
+        },
+        "cuadro_calificacion_cuantitativa": {
+          "titulo": "Resumen Cuantitativo de Evaluación Pericial (V de Aiken e IVC)",
+          "columnas": ["Dimensión", "Ítems", "Puntaje Pertinencia (0-1)", "Puntaje Relevancia (0-1)", "Puntaje Claridad (0-1)", "V de Aiken", "Veredicto"],
+          "filas": [
+            {
+              "dimension": "Dimensión 1: Oportunidad de procesamiento",
+              "items": "Ítems 1 y 2 (Treg, Tvale)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "Dimensión 2: Consistencia documental",
+              "items": "Ítems 3 y 4 (RSD, CPE)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "Dimensión 3: Satisfacción del usuario",
+              "items": "Ítems 5 al 12 (AP-01..04, UP-01..04)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "TOTAL GENERAL DE LA VARIABLE DEPENDIENTE",
+              "items": "12 elementos evaluados",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken_global": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            }
+          ]
+        },
+        "declaracion_aplicabilidad": {
+          "opinion_global_instrumentos": [
+            "[   ] Aplicable sin modificaciones",
+            "[   ] Aplicable con modificaciones menores",
+            "[   ] Requiere revisión y reestructuración sustancial",
+            "[   ] No aplicable"
+          ],
+          "suficiencia_elementos": "¿Los elementos propuestos son suficientes para medir la variable en estudio?: [   ] Sí      [   ] No",
+          "observaciones_y_recomendaciones": [
+            "1. ............................................................................................................................................................",
+            "2. ............................................................................................................................................................",
+            "3. ............................................................................................................................................................"
+          ]
+        },
+        "placeholders_firma_y_sello": {
+          "linea_firma": "________________________________________________________",
+          "texto_firma": "Firma del Juez Validador",
+          "linea_post_firma": "Ing. [ NOMBRE COMPLETO ] — CIP N.° [ REGISTRO ]",
+          "placeholder_sello": "[ PLACEHOLDER: SELLO PROFESIONAL / INSTITUCIONAL ]"
+        }
+      },
+      {
+        "experto_id": "EXP-02",
+        "numero": 2,
+        "perfil_profesional": {
+          "titulo_academico": "Licenciado(a) en Enfermería",
+          "grado_academico": "Magíster en Salud Pública / Epidemiología / Gestión Sanitaria",
+          "especialidad": "Cadena de Frío, Estrategia Sanitaria de Inmunizaciones y Gestión de Suministros Biológicos",
+          "rol_pericial": "Evaluador(a) temático(a) sustantivo(a) en normatividad técnica MINSA (NTS N.° 196-MINSA/DGIESP-2022), flujo operativo de almacén de vacunas, PECOSA, kardex y vales."
+        },
+        "campos_identificacion": {
+          "apellidos_y_nombres": "[ PLACEHOLDER: APELLIDOS Y NOMBRES DEL EXPERTO 2 ]",
+          "dni": "[ PLACEHOLDER: DNI ]",
+          "grado_y_titulo": "Lic. en Enfermería, Magíster en Salud Pública",
+          "institucion_laboral": "Dirección de Salud Apurímac II / Hospital Subregional de Andahuaylas",
+          "registro_profesional": "Colegio de Enfermeros del Perú - CEP N.° [ PLACEHOLDER: CEP ]",
+          "fecha_evaluacion": "Andahuaylas, ........ de ........................ de 2026"
+        },
+        "matriz_evaluacion_fany": {
+          "columnas": ["N.°", "Instrumento", "Dimensión / Indicador", "Elemento, Criterio o Reactivo Evaluado", "Pertinencia (Sí/No)", "Relevancia (Sí/No)", "Claridad (Sí/No)", "Sugerencias"],
+          "filas": "Los 12 ítems del inventario estructurado con casillas [ ] Sí  [ ] No en blanco y espacio para sugerencias conforme a DEC-016."
+        },
+        "cuadro_calificacion_cuantitativa": {
+          "titulo": "Resumen Cuantitativo de Evaluación Pericial (V de Aiken e IVC)",
+          "columnas": ["Dimensión", "Ítems", "Puntaje Pertinencia (0-1)", "Puntaje Relevancia (0-1)", "Puntaje Claridad (0-1)", "V de Aiken", "Veredicto"],
+          "filas": [
+            {
+              "dimension": "Dimensión 1: Oportunidad de procesamiento",
+              "items": "Ítems 1 y 2 (Treg, Tvale)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "Dimensión 2: Consistencia documental",
+              "items": "Ítems 3 y 4 (RSD, CPE)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "Dimensión 3: Satisfacción del usuario",
+              "items": "Ítems 5 al 12 (AP-01..04, UP-01..04)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "TOTAL GENERAL DE LA VARIABLE DEPENDIENTE",
+              "items": "12 elementos evaluados",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken_global": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            }
+          ]
+        },
+        "declaracion_aplicabilidad": {
+          "opinion_global_instrumentos": [
+            "[   ] Aplicable sin modificaciones",
+            "[   ] Aplicable con modificaciones menores",
+            "[   ] Requiere revisión y reestructuración sustancial",
+            "[   ] No aplicable"
+          ],
+          "suficiencia_elementos": "¿Los elementos propuestos son suficientes para medir la variable en estudio?: [   ] Sí      [   ] No",
+          "observaciones_y_recomendaciones": [
+            "1. ............................................................................................................................................................",
+            "2. ............................................................................................................................................................",
+            "3. ............................................................................................................................................................"
+          ]
+        },
+        "placeholders_firma_y_sello": {
+          "linea_firma": "________________________________________________________",
+          "texto_firma": "Firma del Juez Validador",
+          "linea_post_firma": "Lic. [ NOMBRE COMPLETO ] — CEP N.° [ REGISTRO ]",
+          "placeholder_sello": "[ PLACEHOLDER: SELLO PROFESIONAL / INSTITUCIONAL ]"
+        }
+      },
+      {
+        "experto_id": "EXP-03",
+        "numero": 3,
+        "perfil_profesional": {
+          "titulo_academico": "Licenciado(a) en Estadística / Ciencias Sociales",
+          "grado_academico": "Magíster en Gestión Pública / Estadística e Investigación Científica",
+          "especialidad": "Metodología de la Investigación Cuantitativa, Bioestadística y Validación Psicométrica de Instrumentos",
+          "rol_pericial": "Evaluador metodológico y bioestadístico en diseño preexperimental de un solo grupo (O1 -> X -> O2), escalas sumativas Likert, análisis de consistencia interna y pruebas de Wilcoxon."
+        },
+        "campos_identificacion": {
+          "apellidos_y_nombres": "[ PLACEHOLDER: APELLIDOS Y NOMBRES DEL EXPERTO 3 ]",
+          "dni": "[ PLACEHOLDER: DNI ]",
+          "grado_y_titulo": "Magíster en Gestión Pública / Estadística",
+          "institucion_laboral": "Universidad Nacional José María Arguedas / Escuela de Posgrado",
+          "registro_profesional": "[ PLACEHOLDER: COLEGIO PROFESIONAL / REGISTRO ]",
+          "fecha_evaluacion": "Andahuaylas, ........ de ........................ de 2026"
+        },
+        "matriz_evaluacion_fany": {
+          "columnas": ["N.°", "Instrumento", "Dimensión / Indicador", "Elemento, Criterio o Reactivo Evaluado", "Pertinencia (Sí/No)", "Relevancia (Sí/No)", "Claridad (Sí/No)", "Sugerencias"],
+          "filas": "Los 12 ítems del inventario estructurado con casillas [ ] Sí  [ ] No en blanco y espacio para sugerencias conforme a DEC-016."
+        },
+        "cuadro_calificacion_cuantitativa": {
+          "titulo": "Resumen Cuantitativo de Evaluación Pericial (V de Aiken e IVC)",
+          "columnas": ["Dimensión", "Ítems", "Puntaje Pertinencia (0-1)", "Puntaje Relevancia (0-1)", "Puntaje Claridad (0-1)", "V de Aiken", "Veredicto"],
+          "filas": [
+            {
+              "dimension": "Dimensión 1: Oportunidad de procesamiento",
+              "items": "Ítems 1 y 2 (Treg, Tvale)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "Dimensión 2: Consistencia documental",
+              "items": "Ítems 3 y 4 (RSD, CPE)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "Dimensión 3: Satisfacción del usuario",
+              "items": "Ítems 5 al 12 (AP-01..04, UP-01..04)",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            },
+            {
+              "dimension": "TOTAL GENERAL DE LA VARIABLE DEPENDIENTE",
+              "items": "12 elementos evaluados",
+              "pertinencia": "[ EN BLANCO ]",
+              "relevancia": "[ EN BLANCO ]",
+              "claridad": "[ EN BLANCO ]",
+              "v_aiken_global": "[ EN BLANCO ]",
+              "veredicto": "[ EN BLANCO ]"
+            }
+          ]
+        },
+        "declaracion_aplicabilidad": {
+          "opinion_global_instrumentos": [
+            "[   ] Aplicable sin modificaciones",
+            "[   ] Aplicable con modificaciones menores",
+            "[   ] Requiere revisión y reestructuración sustancial",
+            "[   ] No aplicable"
+          ],
+          "suficiencia_elementos": "¿Los elementos propuestos son suficientes para medir la variable en estudio?: [   ] Sí      [   ] No",
+          "observaciones_y_recomendaciones": [
+            "1. ............................................................................................................................................................",
+            "2. ............................................................................................................................................................",
+            "3. ............................................................................................................................................................"
+          ]
+        },
+        "placeholders_firma_y_sello": {
+          "linea_firma": "________________________________________________________",
+          "texto_firma": "Firma del Juez Validador",
+          "linea_post_firma": "Mg. [ NOMBRE COMPLETO ] — Especialista Metodológico",
+          "placeholder_sello": "[ PLACEHOLDER: SELLO PROFESIONAL / INSTITUCIONAL ]"
+        }
+      }
+    ],
+    "plantilla_matriz_triangulacion_v_aiken": {
+      "descripcion": "Estructura de consolidación pericial para el cálculo final del Coeficiente V de Aiken e Índice de Validez de Contenido una vez recepcionadas las actas físicas firmadas por los 3 expertos.",
+      "columnas": [
+        "Ítem N.°",
+        "Instrumento y Dimensión",
+        "Pertinencia: Juez 1 (0-1)",
+        "Pertinencia: Juez 2 (0-1)",
+        "Pertinencia: Juez 3 (0-1)",
+        "Suma Pertinencia (S_p)",
+        "V de Aiken (Pertinencia)",
+        "Relevancia: Juez 1 (0-1)",
+        "Relevancia: Juez 2 (0-1)",
+        "Relevancia: Juez 3 (0-1)",
+        "Suma Relevancia (S_r)",
+        "V de Aiken (Relevancia)",
+        "Claridad: Juez 1 (0-1)",
+        "Claridad: Juez 2 (0-1)",
+        "Claridad: Juez 3 (0-1)",
+        "Suma Claridad (S_c)",
+        "V de Aiken (Claridad)",
+        "V de Aiken Promedio Ítem",
+        "I-CVI Ítem",
+        "Decisión Psicométrica (Aprobado V>=0.80 / Rechazado)"
+      ],
+      "umbral_validez_global": "S-CVI/Ave >= 0.80 y V_global >= 0.80 con p < 0.05"
+    }
+  },
+  "anexo_4_instrumentos_recoleccion_datos": {
+    "identificador": "ANEXO 4",
+    "titulo": "INSTRUMENTOS DE RECOLECCIÓN DE DATOS DE LA INVESTIGACIÓN",
+    "proposito": "Contener los tres (3) instrumentos oficiales e inmutables diseñados y calibrados para capturar la evidencia empírica en pretest y postest de las tres dimensiones de la Variable Dependiente fijadas por DEC-007.",
+    "instrumentos": [
+      {
+        "instrumento_id": "INST-01",
+        "codigo": "INSTRUMENTO N.° 01",
+        "nombre": "FICHA DE OBSERVACIÓN SISTEMÁTICA Y MEDICIÓN DE TIEMPOS CRONOMETRADOS",
+        "variable_dependiente": "Gestión de movimientos mensuales de vacunas",
+        "dimension": "Dimensión 1: Oportunidad de procesamiento",
+        "indicadores": [
+          {
+            "codigo": "I1.1",
+            "simbolo": "Treg",
+            "nombre": "Tiempo de registro de movimientos de vacunas",
+            "unidad": "Minutos decimales (min)",
+            "escala": "Razón / Cuantitativa continua"
+          },
+          {
+            "codigo": "I1.2",
+            "simbolo": "Tvale",
+            "nombre": "Tiempo de emisión de comprobantes de salida / vales",
+            "unidad": "Minutos decimales (min)",
+            "escala": "Razón / Cuantitativa continua"
+          }
+        ],
+        "tecnica": "Observación sistemática estructurada no participante",
+        "poblacion_objetivo": "Personal responsable de centros de acopio y red de frío de la DISA Apurímac II (N = n = 14)",
+        "secciones": {
+          "seccion_1_datos_generales": {
+            "titulo": "1. Datos Generales de la Observación",
+            "campos": [
+              {"campo": "Código del operador evaluado", "placeholder": "TRAB-____  (TRAB-01 a TRAB-14)"},
+              {"campo": "Rol institucional", "opciones": ["[  ] Responsable de centro de acopio / red de frío", "[  ] Personal de estrategia sanitaria de inmunizaciones"]},
+              {"campo": "Centro de acopio / red / microred", "placeholder": "________________________________________________________"},
+              {"campo": "Provincia sanitaria", "opciones": ["[  ] Andahuaylas", "[  ] Chincheros"]},
+              {"campo": "Momento de medición", "opciones": ["[  ] Pretest (kardex físico, libros y Excel manual)", "[  ] Postest (sistema web SIVAC)"]},
+              {"campo": "Fecha de observación", "placeholder": "______ / ______ / 2025"},
+              {"campo": "Evaluador principal", "valor": "Bach. José Luis Quispe León (Tesista UNAJMA)"},
+              {"campo": "Evaluador secundario (calibración)", "placeholder": "________________________________________________________"}
+            ]
+          },
+          "seccion_2_protocolo_pmmv": {
+            "titulo": "2. Protocolo de Estandarización y Cronometraje (PMMV)",
+            "reglas": [
+              "Aparato y Precisión: Cronómetro digital con resolución de centésimas de segundo (0.01 s). Cada tiempo se registra en minutos decimales: min = minutos + (segundos / 60).",
+              "Punto de Corte Treg: Inicia exactamente en el instante en que el operador toma físicamente el documento fuente o abre la ventana de digitación; finaliza cuando el movimiento queda grabado y balanceado con saldo actualizado en el kardex o sistema.",
+              "Punto de Corte Tvale: Inicia en el instante en que el operador recibe o abre la solicitud de pedido; finaliza cuando el vale o comprobante de salida queda generado, firmado o disponible para su impresión y entrega institucional.",
+              "Regla de Pausa por Factores Fortuitos: Ante cualquier interrupción externa no atribuible al flujo normal de trabajo (corte eléctrico, consulta urgente ajena), el cronómetro se detiene de inmediato y se reanuda una vez restablecida la labor, computando estrictamente el tiempo neto efectivo.",
+              "Tratamiento Anti-Pseudorreplicación: Cada operador ejecuta tres (3) ensayos homogéneos de la tarea estandarizada única para Treg (REG-E1, REG-E2, REG-E3) y tres (3) ensayos para Tvale (VALE-E1, VALE-E2, VALE-E3). Se calcula la mediana intrasujeto como estadístico principal representativo y el promedio como descriptivo complementario, consolidando exactamente 14 observaciones pareadas para la prueba de Wilcoxon.",
+              "Confiabilidad Interobservador: Protocolo de calibración previa sobre 15 observaciones simultáneas a ciegas mediante Coeficiente de Correlación Intraclase ICC(2,1) >= 0.75 y tolerancia de error absoluto |t1 - t2| < 5 segundos."
+            ]
+          },
+          "seccion_3_tabla_treg": {
+            "titulo": "3. Sección A: Medición del Tiempo de Registro de Movimientos (Treg)",
+            "formula": "Treg = t_fin_registro - t_inicio_registro",
+            "encabezados": ["N.° Ensayo", "Tarea Estandarizada Representativa Única", "Lote y Biológico", "Dosis", "Hora Inicio (hh:mm:ss.cc)", "Hora Fin (hh:mm:ss.cc)", "Tiempo Neto (min : s)", "Treg (Minutos Decimales)", "Incidencias"],
+            "filas": [
+              ["1 (REG-E1)", "Registro de salida programada de tres biológicos con lote, cantidad, fecha, destino y responsable (Ensayo 1)", "____________________", "______", "___:___:___.___ ", "___:___:___.___ ", "___ min ___ s", "_________ min", "____________________"],
+              ["2 (REG-E2)", "Registro de salida programada de tres biológicos con lote, cantidad, fecha, destino y responsable (Ensayo 2)", "____________________", "______", "___:___:___.___ ", "___:___:___.___ ", "___ min ___ s", "_________ min", "____________________"],
+              ["3 (REG-E3)", "Registro de salida programada de tres biológicos con lote, cantidad, fecha, destino y responsable (Ensayo 3)", "____________________", "______", "___:___:___.___ ", "___:___:___.___ ", "___ min ___ s", "_________ min", "____________________"]
+            ],
+            "consolidados": {
+              "mediana_intrasujeto_principal": "Mediana intrasujeto Treg (Estadístico oficial por operador TRAB-i): ____________ min",
+              "promedio_descriptivo": "Promedio descriptivo complementario: ____________ min"
+            }
+          },
+          "seccion_4_tabla_tvale": {
+            "titulo": "4. Sección B: Medición del Tiempo de Emisión de Vales Oficiales (Tvale)",
+            "formula": "Tvale = t_emision_documento - t_apertura_solicitud",
+            "encabezados": ["N.° Ensayo", "Tarea Estandarizada Representativa Única", "N.° Documento / Vale", "Ítems", "Hora Inicio (hh:mm:ss.cc)", "Hora Fin (hh:mm:ss.cc)", "Tiempo Neto (min : s)", "Tvale (Minutos Decimales)", "Incidencias"],
+            "filas": [
+              ["1 (VALE-E1)", "Emisión de vale oficial para salida programada de tres biológicos a un establecimiento de salud (Ensayo 1)", "Vale N.°: ________", "______", "___:___:___.___ ", "___:___:___.___ ", "___ min ___ s", "_________ min", "____________________"],
+              ["2 (VALE-E2)", "Emisión de vale oficial para salida programada de tres biológicos a un establecimiento de salud (Ensayo 2)", "Vale N.°: ________", "______", "___:___:___.___ ", "___:___:___.___ ", "___ min ___ s", "_________ min", "____________________"],
+              ["3 (VALE-E3)", "Emisión de vale oficial para salida programada de tres biológicos a un establecimiento de salud (Ensayo 3)", "Vale N.°: ________", "______", "___:___:___.___ ", "___:___:___.___ ", "___ min ___ s", "_________ min", "____________________"]
+            ],
+            "consolidados": {
+              "mediana_intrasujeto_principal": "Mediana intrasujeto Tvale (Estadístico oficial por operador TRAB-i): ____________ min",
+              "promedio_descriptivo": "Promedio descriptivo complementario: ____________ min"
+            }
+          },
+          "seccion_5_declaracion_y_firmas": {
+            "declaracion": "Declaración: La presente toma cronométrica respetó estrictamente los puntos de inicio y corte operativo, las reglas de pausa y los procedimientos bioéticos institucionales.",
+            "firma_evaluador": "Firma del Evaluador Principal: ______________________________  (Bach. José Luis Quispe León)",
+            "firma_operador": "Conformidad del Operador TRAB-____: ______________________________"
+          }
+        }
+      },
+      {
+        "instrumento_id": "INST-02",
+        "codigo": "INSTRUMENTO N.° 02",
+        "nombre": "FICHA DE REGISTRO Y COTEJO DOCUMENTAL DE CONSISTENCIA",
+        "variable_dependiente": "Gestión de movimientos mensuales de vacunas",
+        "dimension": "Dimensión 2: Consistencia documental",
+        "indicadores": [
+          {
+            "codigo": "I2.1",
+            "simbolo": "RSD",
+            "nombre": "Porcentaje de registros sin discrepancias",
+            "unidad": "Porcentaje (%)",
+            "escala": "Razón / Cuantitativa continua"
+          },
+          {
+            "codigo": "I2.2",
+            "simbolo": "CPE",
+            "nombre": "Concordancia de programación vs entrega",
+            "unidad": "Porcentaje (%) acotado entre 0 y 100",
+            "escala": "Razón / Cuantitativa continua"
+          }
+        ],
+        "tecnica": "Análisis documental y auditoría de inventario físico vs registros",
+        "poblacion_objetivo": "Personal responsable de centros de acopio y red de frío de la DISA Apurímac II (N = n = 14)",
+        "secciones": {
+          "seccion_1_datos_generales": {
+            "titulo": "1. Datos Generales de la Auditoría Documental",
+            "campos": [
+              {"campo": "Código del operador auditado", "placeholder": "TRAB-____  (TRAB-01 a TRAB-14)"},
+              {"campo": "Centro de acopio / red / microred", "placeholder": "________________________________________________________"},
+              {"campo": "Provincia sanitaria", "opciones": ["[  ] Andahuaylas", "[  ] Chincheros"]},
+              {"campo": "Unidad de registro documental", "valor": "Cada movimiento individual de biológico en documento oficial (RSD) y cada entrega programada despachada (CPE)."},
+              {"campo": "Unidad de análisis para contraste Wilcoxon", "valor": "Cada operador evaluado (TRAB-01 a TRAB-14). Se consolida un porcentaje de RSD y un porcentaje de CPE por operador (14 pares)."},
+              {"campo": "Documentos fuente auditados", "valor": "Pretest: Kardex físico, PECOSA manual, cuaderno de control de temperatura y hojas Excel locales. Postest: Módulo de movimientos de SIVAC, comprobantes electrónicos de salida y logs de auditoría PostgreSQL."},
+              {"campo": "Ventana temporal de auditoría (PMMV)", "placeholder": "Del _____ / _____ / 2025  al  _____ / _____ / 2025  (30 días calendario consecutivos)"},
+              {"campo": "Fecha de ejecución de auditoría", "placeholder": "______ / ______ / 2025"},
+              {"campo": "Auditor principal", "valor": "Bach. José Luis Quispe León (Tesista UNAJMA)"},
+              {"campo": "Auditor secundario (calibración)", "placeholder": "________________________________________________________"}
+            ]
+          },
+          "seccion_2_regla_8_criterios_rsd": {
+            "titulo": "2. Regla Inmutable de los Ocho (8) Criterios de Conformidad para RSD",
+            "descripcion": "Un registro de movimiento es CONFORME (1) si y solo si cumple simultáneamente los ocho criterios; si incumple al menos uno, es NO CONFORME (0):",
+            "criterios": [
+              "C1: Tipo de movimiento clasificado de forma unívoca (entrada por remesa, salida a establecimiento o ajuste de inventario).",
+              "C2: Denominación oficial estandarizada del biológico según el esquema regular nacional de vacunación del MINSA.",
+              "C3: Identificación exacta del número de lote, rigurosamente coincidente con el rótulo del frasco y empaque.",
+              "C4: Cantidad registrada concordante con el documento fuente que sustenta el movimiento (acta/guía en entrada, orden/vale en salida, documento de autorización en ajuste).",
+              "C5: Fecha del movimiento consignada de manera completa (día, mes, año) y en estricta secuencia cronológica.",
+              "C6: Establecimiento de origen o destino plenamente individualizado con su código oficial RENIPRESS.",
+              "C7: Nombre completo, firma o usuario responsable del despacho o recepción plenamente trazable e identificable.",
+              "C8: Documento formal de respaldo asociado y verificado (vale oficial foliado, PECOSA o guía de remisión)."
+            ]
+          },
+          "seccion_3_matriz_rsd": {
+            "titulo": "3. Matriz de Auditoría de Registros sin Discrepancias (RSD)",
+            "formula": "RSD = (N_registros_conformes / N_total_registros_auditados) * 100",
+            "encabezados": ["N.°", "Vacuna o Insumo Auditado", "N.° Lote", "Cantidad", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "Veredicto (1 = Conforme, 0 = No Conforme)", "Tipo de Discrepancia / Causa Raíz"],
+            "filas_muestra": [
+              ["01", "Vacuna BCG 0.1 ml", "L-BCG-2025", "150", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[  ] 1   [  ] 0", "______________________________"],
+              ["02", "Hepatitis B Pediátrica", "L-HVB-4421", "120", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[  ] 1   [  ] 0", "______________________________"],
+              ["03", "Vacuna Pentavalente", "L-PENTA-88", "300", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[  ] 1   [  ] 0", "______________________________"],
+              ["04", "Neumococo Conjugada", "L-NEUMO-09", "250", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[  ] 1   [  ] 0", "______________________________"],
+              ["05", "Vacuna Rotavirus", "L-ROTA-331", "180", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[  ] 1   [  ] 0", "______________________________"],
+              ["...", "Continúa según corpus real de 40 a 60 transacciones auditadas por ventana de 30 días", "...", "...", "...", "...", "...", "...", "...", "...", "...", "...", "[  ] 1   [  ] 0", "______________________________"]
+            ],
+            "consolidado_rsd": {
+              "total_registros_evaluados": "Total de registros evaluados: ______",
+              "registros_conformes": "Registros conformes (1): ______",
+              "registros_discrepancia": "Registros con discrepancia (0): ______",
+              "porcentaje_rsd_operador": "% RSD consolidado por operador TRAB-i: ____________ %"
+            }
+          },
+          "seccion_4_matriz_cpe": {
+            "titulo": "4. Regla de Concordancia y Matriz de Auditoría de Entregas (CPE)",
+            "formula": "CPE = (N_entregas_concordantes / N_total_entregas_evaluadas) * 100",
+            "regla_concordancia": "Una entrega es CONCORDANTE (1) si la cantidad entregada es idéntica a la programada (Q_ent = Q_prog) o si, existiendo diferencia, cuenta con justificación documental autorizada MINSA archivada; en cualquier otro caso es NO CONCORDANTE (0).",
+            "encabezados": ["N.°", "Biológico Despachado", "N.° Vale / Pedido", "Cantidad Programada (Q_prog)", "Cantidad Entregada (Q_ent)", "Diferencia (|Qp - Qe|)", "Justificación Formal MINSA (Sí/No/NA)", "Veredicto (1 = Concordante, 0 = No Conc.)", "Causa Raíz del Desfase"],
+            "filas_muestra": [
+              ["01", "Vacuna Pentavalente", "Vale N.°: ________", "50", "50", "0", "[  ] Sí  [  ] No  [  ] NA", "[  ] 1   [  ] 0", "______________________________"],
+              ["02", "Neumococo Conjugada", "Vale N.°: ________", "40", "30", "10", "[  ] Sí  [  ] No  [  ] NA", "[  ] 1   [  ] 0", "Quiebre transitorio / remesa"],
+              ["03", "Vacuna Rotavirus", "Vale N.°: ________", "30", "30", "0", "[  ] Sí  [  ] No  [  ] NA", "[  ] 1   [  ] 0", "______________________________"],
+              ["04", "Antipolio IPV", "Vale N.°: ________", "60", "60", "0", "[  ] Sí  [  ] No  [  ] NA", "[  ] 1   [  ] 0", "______________________________"],
+              ["...", "Continúa según corpus real de 40 a 60 despachos auditados por ventana de 30 días", "...", "...", "...", "...", "...", "[  ] 1   [  ] 0", "______________________________"]
+            ],
+            "consolidado_cpe": {
+              "total_entregas_evaluadas": "Total de entregas auditadas: ______",
+              "entregas_concordantes": "Entregas conformes (1): ______",
+              "entregas_no_concordantes": "Entregas no conformes (0): ______",
+              "porcentaje_cpe_operador": "% CPE consolidado por operador TRAB-i: ____________ %"
+            }
+          },
+          "seccion_5_declaracion_y_firmas": {
+            "declaracion": "Declaración: La presente auditoría se ejecutó revisando evidencias documentales primarias físicas y digitales en la ventana de 30 días calendario, bajo criterios de confidencialidad institucional.",
+            "firma_auditor": "Firma del Auditor Principal: ______________________________  (Bach. José Luis Quispe León)",
+            "firma_responsable_acopio": "Conformidad del Responsable del Centro de Acopio: ______________________________"
+          }
+        }
+      },
+      {
+        "instrumento_id": "INST-03",
+        "codigo": "INSTRUMENTO N.° 03",
+        "nombre": "CUESTIONARIO DE SATISFACCIÓN DEL USUARIO CON EL PROCESO OPERATIVO (MODELO TAM)",
+        "variable_dependiente": "Gestión de movimientos mensuales de vacunas",
+        "dimension": "Dimensión 3: Satisfacción del usuario",
+        "indicadores": [
+          {
+            "codigo": "I3.1",
+            "simbolo": "AP",
+            "nombre": "Aceptación del proceso operativo",
+            "unidad": "Puntuación escalar (4 a 20 puntos)",
+            "escala": "Ordinal politómica tratada como escala sumativa de intervalo"
+          },
+          {
+            "codigo": "I3.2",
+            "simbolo": "UP",
+            "nombre": "Utilidad percibida para la gestión sanitaria",
+            "unidad": "Puntuación escalar (4 a 20 puntos)",
+            "escala": "Ordinal politómica tratada como escala sumativa de intervalo"
+          }
+        ],
+        "tecnica": "Encuesta estructurada autoadministrada",
+        "poblacion_objetivo": "Personal de la cadena de frío e inmunizaciones de la DISA Apurímac II (N = n = 14)",
+        "fundamentacion_teorica": "Technology Acceptance Model (TAM; Davis, 1989), Adaptación Metodológica EPIS-UNAJMA y Norma ISO/IEC 25010:2023 (Calidad en Uso).",
+        "diferenciacion_modalidades": {
+          "modalidad_a": "Oficial para la contrastación pareada de la Hipótesis Específica 3 (HE3) en pretest y postest. Mide la satisfacción del personal con el proceso operativo (método manual en pretest vs sistema SIVAC en postest). Consta de 8 reactivos (4 AP + 4 UP), baremable de 8 a 40 puntos y alimentador de Wilcoxon en n = 14 pares.",
+          "modalidad_b": "Módulo complementario postest de evaluación de la calidad del software SIVAC bajo TAM clásico (PU y PEOU). No se barema, no se suma a la Modalidad A y no se somete a contraste de hipótesis pareado."
+        },
+        "secciones": {
+          "seccion_1_instrucciones_y_escala": {
+            "titulo": "1. Instrucciones para el Participante y Consideraciones Éticas",
+            "texto_instrucciones": "Estimado(a) trabajador(a) de inmunizaciones: Las respuestas son estrictamente anónimas y confidenciales (Ley N.° 29733 de Protección de Datos Personales y Código de Ética de la UNAJMA). Se codifican mediante código numérico neutro (TRAB-01 a TRAB-14). Marque con una equis (X) la opción que refleje con mayor precisión su valoración respecto al proceso de gestión:",
+            "escala_likert_5_niveles": [
+              {"puntos": 1, "etiqueta": "Totalmente en Desacuerdo (TD)", "descripcion": "La condición no se cumple en absoluto; genera severas demoras, sobrecarga mental y fricciones operativas."},
+              {"puntos": 2, "etiqueta": "En Desacuerdo (D)", "descripcion": "La condición se cumple de forma deficiente en las tareas de la jornada laboral diaria."},
+              {"puntos": 3, "etiqueta": "Neutral / Indiferente (N)", "descripcion": "Posición neutra o intermedia; no percibe beneficio sustancial ni perjuicio apreciable."},
+              {"puntos": 4, "etiqueta": "De Acuerdo (A)", "descripcion": "Conformidad; la condición se cumple satisfactoriamente en las labores rutinarias de vacunas."},
+              {"puntos": 5, "etiqueta": "Totalmente de Acuerdo (TA)", "descripcion": "Plena conformidad; la condición se cumple con excelencia, máxima agilidad y alta eficacia."}
+            ]
+          },
+          "seccion_2_datos_participante": {
+            "titulo": "2. Datos Generales del Participante",
+            "campos": [
+              {"campo": "Código de participante", "placeholder": "TRAB-____  (TRAB-01 a TRAB-14)"},
+              {"campo": "Centro de acopio / red / microred", "placeholder": "________________________________________________________"},
+              {"campo": "Provincia sanitaria", "opciones": ["[  ] Andahuaylas", "[  ] Chincheros"]},
+              {"campo": "Condición laboral", "opciones": ["[  ] Nombrado (D.L. 276)", "[  ] Contratado CAS (D.L. 1057)", "[  ] Tercerizado / Locación"]},
+              {"campo": "Profesión / cargo", "opciones": ["[  ] Lic. en Enfermería", "[  ] Técnico(a) en Enfermería", "[  ] Estadístico / Soporte"]},
+              {"campo": "Tiempo de experiencia en cadena de frío", "opciones": ["[  ] Menos de 2 años", "[  ] 2 a 5 años", "[  ] 6 a 10 años", "[  ] Más de 10 años"]},
+              {"campo": "Momento de aplicación", "opciones": ["[  ] Pretest (evaluación del proceso manual tradicional)", "[  ] Postest (evaluación del proceso asistido por SIVAC)"]},
+              {"campo": "Fecha de aplicación", "placeholder": "______ / ______ / 2025"}
+            ]
+          },
+          "seccion_3_modalidad_a_tabla": {
+            "titulo": "3. Modalidad A: Satisfacción con el Proceso Operativo (Oficial para HE3)",
+            "descripcion": "Ocho afirmaciones literales. En el pretest el trabajador evalúa el método manual tradicional y en el postest evalúa el proceso operando el software SIVAC:",
+            "encabezados": ["Código", "Subdimensión / Reactivo Literal", "1 (TD)", "2 (D)", "3 (N)", "4 (A)", "5 (TA)"],
+            "reactivos": [
+              {
+                "subdimension": "SUBDIMENSIÓN 3.1: ACEPTACIÓN DEL PROCESO OPERATIVO (AP)",
+                "items": [
+                  {"codigo": "AP-01", "enunciado": "El procedimiento actual para asentar los movimientos diarios y cierres de mes es ágil y no demanda un esfuerzo mental o físico excesivo."},
+                  {"codigo": "AP-02", "enunciado": "El flujo de trabajo requerido para emitir comprobantes de salida y vales de entrega es fluido y está libre de demoras o trabas burocráticas."},
+                  {"codigo": "AP-03", "enunciado": "El método empleado me permite conciliar los saldos de inventario con las microredes generando tranquilidad y reduciendo el estrés laboral."},
+                  {"codigo": "AP-04", "enunciado": "El tiempo que dedico al registro administrativo de vacunas es equilibrado y me deja disponibilidad para mis labores sanitarias y asistenciales."}
+                ]
+              },
+              {
+                "subdimension": "SUBDIMENSIÓN 3.2: UTILIDAD PERCIBIDA PARA LA GESTIÓN SANITARIA (UP)",
+                "items": [
+                  {"codigo": "UP-01", "enunciado": "El mecanismo de registro utilizado me permite disponer de información fidedigna y en tiempo real del stock de vacunas y jeringas."},
+                  {"codigo": "UP-02", "enunciado": "El control de números de lote y fechas de vencimiento que brinda el proceso previene oportunamente mermas o pérdidas de biológicos."},
+                  {"codigo": "UP-03", "enunciado": "La metodología de gestión facilita la detección inmediata y rectificación de cualquier descuadre de inventario físico versus registrado."},
+                  {"codigo": "UP-04", "enunciado": "En general, considero que el procedimiento empleado es una herramienta altamente eficaz para garantizar el abastecimiento oportuno de vacunas."}
+                ]
+              }
+            ],
+            "calificacion_sumativa": {
+              "subescala_ap": "Puntaje Subescala AP (AP-01 a AP-04): sum(AP_j) -> Rango [4 a 20 puntos]",
+              "subescala_up": "Puntaje Subescala UP (UP-01 a UP-04): sum(UP_j) -> Rango [4 a 20 puntos]",
+              "puntaje_global_modalidad_a": "Puntaje Global Satisfacción = Puntaje AP + Puntaje UP -> Rango [8 a 40 puntos]"
+            }
+          },
+          "seccion_4_baremo_terciles": {
+            "titulo": "4. Baremo de Interpretación por Terciles Teóricos de la Modalidad A",
+            "descripcion": "Partición teórica de 33 valores enteros del rango (8 a 40 puntos) en tres grupos de 11 unidades (DEC-019):",
+            "tabla": [
+              {"nivel": "NIVEL BAJO (Insatisfacción / Rechazo)", "rango_global": "8 a 18 puntos", "rango_subescala": "4 a 9 puntos", "porcentaje": "20.0% a 45.0%", "interpretacion": "Percepción de alta sobrecarga administrativa, procedimientos lentos, estrés laboral y riesgo latente de errores de inventario."},
+              {"nivel": "NIVEL MEDIO (Satisfacción Moderada)", "rango_global": "19 a 29 puntos", "rango_subescala": "10 a 14 puntos", "porcentaje": "47.5% a 72.5%", "interpretacion": "Funcionalidad aceptable pero susceptible de mejoras; fluidez moderada con áreas de fricción puntual."},
+              {"nivel": "NIVEL ALTO (Plena Satisfacción)", "rango_global": "30 a 40 puntos", "rango_subescala": "15 a 20 puntos", "porcentaje": "75.0% a 100.0%", "interpretacion": "Elevada complacencia y confort laboral; el proceso es valorado como altamente ágil, confiable y de alto valor estratégico para la salud."}
+            ]
+          },
+          "seccion_5_modalidad_b_anexo": {
+            "titulo": "5. Modalidad B: Módulo Complementario Postest de Aceptación del Software SIVAC",
+            "descripcion": "Anexo técnico descriptivo de postest bajo TAM clásico de Davis (1989) y calidad en uso ISO/IEC 25010:2023. No se barema ni se suma a la variable dependiente:",
+            "encabezados": ["Código", "Dimensión TAM / Reactivo del Software", "1 (TD)", "2 (D)", "3 (N)", "4 (A)", "5 (TA)"],
+            "reactivos": [
+              {
+                "subdimension": "UTILIDAD PERCIBIDA DEL SOFTWARE SIVAC (PU)",
+                "items": [
+                  {"codigo": "PU-01", "enunciado": "Utilizar el sistema SIVAC agiliza notablemente el registro de entradas, salidas y transferencias de dosis de vacunas en mi centro."},
+                  {"codigo": "PU-02", "enunciado": "SIVAC me permite consultar de manera inmediata y precisa los saldos de existencias por lote en cualquier momento que lo requiera."},
+                  {"codigo": "PU-03", "enunciado": "La generación automática de vales oficiales en formato PDF en SIVAC facilita enormemente el despacho hacia los establecimientos de salud."},
+                  {"codigo": "PU-04", "enunciado": "En conjunto, SIVAC incrementa mi productividad y mejora significativamente el control de la cadena de frío en mi jurisdicción."}
+                ]
+              },
+              {
+                "subdimension": "FACILIDAD DE USO PERCIBIDA DEL SOFTWARE SIVAC (PE)",
+                "items": [
+                  {"codigo": "PE-01", "enunciado": "La interfaz gráfica de SIVAC es clara, intuitiva, limpia y sus botones y opciones de navegación son fácilmente comprensibles."},
+                  {"codigo": "PE-02", "enunciado": "Aprender a operar los módulos de movimientos, lotes y reportes de SIVAC fue sencillo y demandó poco tiempo de capacitación."},
+                  {"codigo": "PE-03", "enunciado": "Los mensajes de confirmación, validación de stock y advertencias que emite el sistema SIVAC son claros y orientan mis acciones."},
+                  {"codigo": "PE-04", "enunciado": "Me resulta fácil lograr que SIVAC ejecute con exactitud las tareas operativas que necesito realizar en mi jornada de trabajo."}
+                ]
+              }
+            ]
+          },
+          "seccion_6_declaracion_y_firmas": {
+            "declaracion": "Declaración: Mis respuestas reflejan mi libre valoración y experiencia operativa en el servicio de inmunizaciones.",
+            "firma_participante": "Firma del Participante: ______________________________  (Código TRAB-____)",
+            "firma_encuestador": "Firma del Encuestador: ______________________________  (Bach. José Luis Quispe León, Tesista)"
+          }
+        }
+      }
+    ]
+  }
+}

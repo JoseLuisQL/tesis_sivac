@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "fecha": "2026-10-21",
+    "fase": "F8",
+    "squad": "Squad E",
+    "agente": "analista-documental",
+    "tarea": "Localizar la captura real de la Figura 44, resolver el recuento de iteraciones XP y verificar el alcance de CP-06/CP-11 frente a T_reg/T_vale",
+    "caracter": "Analisis de solo lectura sobre los documentos del tesista; no se modifico ningun original, no se uso Word COM y no se recreo ninguna captura.",
+    "documentos_fuente": [
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/SIVAC_Desarrollo_Software_XP.docx",
+        "rol": "Documento original del tesista sobre el desarrollo XP de SIVAC",
+        "bytes": 10918427,
+        "sha256": "04798502f7aa07b92879d0954b25b407044af9c0e202529dd9047ced584b0397"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v16.docx",
+        "rol": "Base canonica vigente del informe final",
+        "bytes": 14668806,
+        "sha256": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/v16_texto_por_pagina.md",
+        "rol": "Volcado de texto por pagina de la v16",
+        "bytes": 338419
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_jurado/DICTAMEN_VALIDACION_HOJA_POR_HOJA_v16.md",
+        "rol": "Dictamen consolidado hoja por hoja",
+        "bytes": 13185
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/desglose_forense_fany_2024.md",
+        "rol": "Desglose forense del modelo UNAJMA Fany 2024; usado solo como referencia de estructura editorial",
+        "bytes": 22421
+      }
+    ]
+  },
+  "figura_44": {
+    "defecto_dictaminado": {
+      "id": "B-05",
+      "pagina_pdf": 97,
+      "descripcion": "La Figura 44 muestra un archivo fuente TypeScript, mientras su nota describe la consola de ejecucion al 100 % de casos.",
+      "origen": "Error de insercion",
+      "subsanacion_dictamen": "Requiere la captura correcta del tesista"
+    },
+    "ancla_v16": {
+      "parrafo_contexto": 1811,
+      "parrafo_rotulo": 1812,
+      "parrafo_imagen": 1813,
+      "parrafo_nota": 1814,
+      "contexto": "La suite de pruebas automatizadas se estructuro empleando el framework Jest y la libreria Supertest para la simulacion de peticiones HTTP en memoria. En la Figura 44 se ilustra la ejecucion real de las pruebas unitarias de MovimientosCalculationService.ts en backend/src/__tests__/movimientos-entrega-adicional-stock.test.ts, validando la suma exacta de entregas base y adicionales y la propagacion de saldos calculados al mes subsiguiente (M+1).",
+      "rotulo": "Figura 44 Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+      "nota": "Nota. Consola de ejecucion de la suite de pruebas unitarias en Jest demostrando el cumplimiento del 100% de los casos de prueba transaccionales sin discrepancias.",
+      "rId": "rId59",
+      "parte": "word/media/image45.png",
+      "relacion": {
+        "id": "rId59",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "media/image45.png"
+      },
+      "sha256": "0683c8ac11169c11508cb31508e9ac57392cdfaa3b1d2cd1997e627b89547eea",
+      "dimensiones_px": [
+        2360,
+        1024
+      ],
+      "extension_emu": [
+        5303520,
+        2301188
+      ],
+      "tamano_cm": [
+        14.73,
+        6.39
+      ],
+      "dpi_efectivo": 407,
+      "docPr": "Picture 54",
+      "pic_cNvPr": "imagen_xp_34.png"
+    },
+    "candidatas": [
+      {
+        "id": "CAND-01",
+        "fuente": "salidas/documentos/informe_final_v16.docx",
+        "rId": "rId59",
+        "parte": "word/media/image45.png",
+        "relacion": {
+          "id": "rId59",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "target": "media/image45.png"
+        },
+        "sha256": "0683c8ac11169c11508cb31508e9ac57392cdfaa3b1d2cd1997e627b89547eea",
+        "dimensiones_px": [
+          2360,
+          1024
+        ],
+        "caption_asociado": "Figura 44 Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+        "contexto": "P1811-P1814, pagina 97 del PDF. La nota promete una consola de ejecucion; la imagen es un editor de codigo.",
+        "contenido_visual": "Captura del editor con la pestana backend/src/__tests__/movimientos-entrega-adicional-stock.test.ts y la etiqueta Jest 29.7 - Suite Unitaria. Muestra las lineas 14-35 con dos bloques it(): suma de entregaBase y entregasAdicionales (300 + 120 + 80 = 500) y sincronizacion del saldoAnterior al mes siguiente (100 + 20 - 90 - 10 + 150 = 170). No hay salida de terminal, ni PASS, ni Test Suites, ni Tests, ni tiempo de ejecucion.",
+        "coincide_con_defecto": true,
+        "resolucion": "Conservar la imagen y corregir rotulo, contexto y nota. No es una captura de consola."
+      },
+      {
+        "id": "CAND-02",
+        "fuente": "SIVAC_Desarrollo_Software_XP.docx",
+        "rId": "rId42",
+        "parte": "word/media/image34.png",
+        "relacion": {
+          "id": "rId42",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "target": "media/image34.png"
+        },
+        "sha256": "0683c8ac11169c11508cb31508e9ac57392cdfaa3b1d2cd1997e627b89547eea",
+        "dimensiones_px": [
+          2360,
+          1024
+        ],
+        "caption_asociado": "Figura 27 Prueba unitaria de calculo de entregas adicionales y sincronizacion de stock (movimientos-entrega-adicional-stock.test.ts)",
+        "contexto": "P841: El fragmento de codigo de la Figura 27 muestra una prueba unitaria representativa perteneciente a movimientos-entrega-adicional-stock.test.ts. P845: Nota. Elaboracion propia. La prueba utiliza dobles de prueba (mocks de Jest sobre Prisma) para verificar el calculo determinista de entregas y la propagacion del saldo al mes siguiente.",
+        "contenido_visual": "Identica byte a byte a CAND-01 (mismo SHA-256 y mismas dimensiones). Es la fuente nativa del tesista para el contenido que hoy ocupa la Figura 44.",
+        "coincide_con_defecto": true,
+        "resolucion": "Usar como fuente verificada del rotulo y la nota corregidos. No requiere reemplazo de imagen."
+      },
+      {
+        "id": "CAND-03",
+        "fuente": "SIVAC_Desarrollo_Software_XP.docx",
+        "rId": "rId28, rId30, rId32, rId34, rId36, rId39, rId41",
+        "parte": "word/media/image20.png, image22.png, image24.png, image26.png, image28.png, image31.png, image33.png",
+        "relacion": "Siete relaciones de imagen existentes en word/_rels/document.xml.rels pero no referenciadas por ningun r:embed de word/document.xml (huerfanas).",
+        "sha256": "bbab241107c5ccda, 8fc8c00fefe5904e, f81610628319a23b, 0e046b585cf124de, 65401dca62ee2f99, 845d3937dd92c4c1, caa83dad32655334",
+        "dimensiones_px": [
+          2400,
+          1290
+        ],
+        "caption_asociado": "Sin rotulo: no estan insertadas en el cuerpo del documento.",
+        "contexto": "Barrido visual de las 35 imagenes del DOCX XP.",
+        "contenido_visual": "Capturas de interfaz SIVAC: dashboard, lotes de vacunas, planificacion mensual, reportes, kardex, usuarios y jeringas. Ninguna es una consola de Jest.",
+        "coincide_con_defecto": false,
+        "resolucion": "Descartar como reemplazo de la Figura 44."
+      },
+      {
+        "id": "CAND-04",
+        "fuente": "Barrido de todos los documentos del tesista y versiones locales",
+        "rId": null,
+        "parte": null,
+        "relacion": null,
+        "sha256": null,
+        "dimensiones_px": null,
+        "caption_asociado": "Consola de ejecucion Jest (PASS, Test Suites, Tests, Time)",
+        "contexto": "35 imagenes del DOCX XP; 9 imagenes adicionales de v02/v03; 14 imagenes exclusivas de v16; versiones de archivo _ensayo_v16 y _v05 sin imagenes unicas.",
+        "contenido_visual": "No existe ninguna captura de consola de Jest en los documentos del tesista. La ausencia se acredita por barrido visual completo, no por presuncion.",
+        "coincide_con_defecto": false,
+        "resolucion": "No se puede reemplazar la imagen por una captura de consola inexistente. No se recrea ni se simula."
+      }
+    ],
+    "comparacion_visual": {
+      "metodo": "Inspeccion visual de las 35 imagenes del DOCX XP y de las imagenes adicionales de las versiones locales, mas comparacion criptografica SHA-256 y metadatos OpenXML.",
+      "hallazgos": [
+        "CAND-01 y CAND-02 son el mismo archivo: SHA-256 0683c8ac11169c11508cb31508e9ac57392cdfaa3b1d2cd1997e627b89547eea.",
+        "La imagen mide 2360 x 1024 px y se inserta a 14.73 x 6.39 cm, lo que da 407 dpi efectivos; supera la compuerta de 300 dpi.",
+        "El texto visible es codigo TypeScript con numeracion de lineas 14-35; no hay prompt de shell, ni fondo de terminal, ni marcas de PASS/Tests.",
+        "La etiqueta superior derecha dice Jest 29.7 - Suite Unitaria: identifica el framework, no una ejecucion.",
+        "Las dos pruebas visibles son: (a) suma exacta de entregaBase y entregasAdicionales, con expect(total).toBe(500); (b) sincronizacion del saldoAnterior al mes siguiente, con expect(updateMany).toHaveBeenCalledWith(... saldoAnterior: 170)."
+      ],
+      "veredicto": "La imagen es genuina y legible, pero su naturaleza es codigo fuente, no consola. El defecto B-05 es de rotulo/nota, no de imagen faltante."
+    },
+    "barrido_medios": {
+      "xp_docx": {
+        "total_media": 35,
+        "referenciadas_en_document_xml": 28,
+        "huerfanas": 7,
+        "categorias": {
+          "diagramas_uml_arquitectura": 11,
+          "fragmentos_codigo": 7,
+          "capturas_interfaz": 16,
+          "diagrama_despliegue": 1
+        },
+        "consola_jest": 0,
+        "detalle_huerfanas": "image20, image22, image24, image26, image28, image31, image33; todas capturas de interfaz, ninguna consola."
+      },
+      "v16_exclusivas": {
+        "total": 14,
+        "categorias": "11 figuras metodologicas y 3 graficos estadisticos",
+        "consola_jest": 0
+      },
+      "v03_adicionales": {
+        "total": 9,
+        "categorias": "3 diagramas y 6 capturas de interfaz",
+        "consola_jest": 0
+      },
+      "versiones_archivo": {
+        "_ensayo_v16.docx": "0 imagenes nuevas respecto de v16",
+        "_v05_previo_a_renumeracion.docx": "0 imagenes nuevas respecto de v16"
+      }
+    },
+    "conclusion": "No existe captura de consola de Jest en los documentos del tesista. La Figura 44 usa una captura de codigo TypeScript que es byte-identica a la Figura 27 del DOCX XP del tesista. El defecto B-05 se resuelve corrigiendo el contexto, el rotulo y la nota para describir la prueba unitaria de codigo; no se reemplaza la imagen ni se recrea una captura.",
+    "parche_propuesto": {
+      "tipo": "correccion_editorial_de_contexto_rotulo_y_nota_sin_reemplazo_de_imagen",
+      "anclas": [
+        {
+          "parte": "word/document.xml",
+          "parrafo": 1811,
+          "texto_actual": "La suite de pruebas automatizadas se estructuro empleando el framework Jest y la libreria Supertest para la simulacion de peticiones HTTP en memoria. En la Figura 44 se ilustra la ejecucion real de las pruebas unitarias de MovimientosCalculationService.ts en backend/src/__tests__/movimientos-entrega-adicional-stock.test.ts, validando la suma exacta de entregas base y adicionales y la propagacion de saldos calculados al mes subsiguiente (M+1).",
+          "texto_propuesto": "La suite de pruebas automatizadas se estructuro empleando el framework Jest y la libreria Supertest para la simulacion de peticiones HTTP en memoria. En la Figura 44 se ilustra el codigo de la prueba unitaria de MovimientosCalculationService.ts en backend/src/__tests__/movimientos-entrega-adicional-stock.test.ts, que valida la suma exacta de entregas base y adicionales y la propagacion de saldos calculados al mes subsiguiente (M+1).",
+          "justificacion": "La imagen es codigo fuente, no una ejecucion. La expresion ejecucion real sobreafirma lo que la imagen muestra."
+        },
+        {
+          "parte": "word/document.xml",
+          "parrafo": 1812,
+          "texto_actual": "Figura 44 Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+          "texto_propuesto": "Figura 44 Prueba unitaria de calculo de entregas adicionales y sincronizacion de stock (movimientos-entrega-adicional-stock.test.ts)",
+          "justificacion": "Rotulo tomado literalmente de la Figura 27 del DOCX XP del tesista, que describe la misma imagen."
+        },
+        {
+          "parte": "word/document.xml",
+          "parrafo": 1814,
+          "texto_actual": "Nota. Consola de ejecucion de la suite de pruebas unitarias en Jest demostrando el cumplimiento del 100% de los casos de prueba transaccionales sin discrepancias.",
+          "texto_propuesto": "Nota. Elaboracion propia. La prueba utiliza dobles de prueba (mocks de Jest sobre Prisma) para verificar el calculo determinista de entregas y la propagacion del saldo al mes siguiente.",
+          "justificacion": "Nota tomada literalmente de la Figura 27 del DOCX XP del tesista. Describe los mocks y las dos pruebas visibles; no atribuye a la imagen una salida de consola inexistente."
+        }
+      ],
+      "opcion_b_si_el_tesista_entrega_la_captura": "Si el tesista aporta una captura real de la consola de Jest, reemplazar word/media/image45.png conservando el rotulo y la nota actuales, verificar que la captura muestre las suites y los casos y registrar su SHA-256. No se debe recrear la captura ni simular la salida.",
+      "no_hacer": "No generar una imagen sintetica, no transcribir una salida de consola inventada y no declarar que la prueba se ejecuto al 100 % si la imagen no lo muestra."
+    },
+    "imagen_extraida": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/figuras/aclaraciones_20261021/figura44_candidata_codigo_movimientos-entrega-adicional-stock.png",
+      "fuente": "SIVAC_Desarrollo_Software_XP.docx#word/media/image34.png (rId42, Figura 27)",
+      "sha256": "0683c8ac11169c11508cb31508e9ac57392cdfaa3b1d2cd1997e627b89547eea",
+      "dimensiones_px": [
+        2360,
+        1024
+      ],
+      "es_consola": false,
+      "nota": "Se extrae la unica imagen genuina que corresponde al contenido actual de la Figura 44. No es una captura de consola. No se extrae ninguna captura de Jest porque no existe en los documentos del tesista."
+    }
+  },
+  "iteraciones_xp": {
+    "pregunta": "El texto declara cinco iteraciones y la Tabla 51 muestra cuatro etiquetas distintas. Cual es el recuento correcto?",
+    "conclusion": "Cinco (5) iteraciones. La Tabla 51 es un resumen no exhaustivo de cinco historias representativas y omite la Iteracion 5; no es evidencia de una cuarta iteracion.",
+    "evidencia": [
+      {
+        "documento": "SIVAC_Desarrollo_Software_XP.docx",
+        "ancla": "P368, seccion 1.5 Plan de Publicaciones (Iteraciones)",
+        "cita": "El desarrollo del sistema SIVAC se organizo en cinco iteraciones incrementales de corta duracion, garantizando entregas verificables al finalizar cada ciclo.",
+        "tipo": "declaracion_explicita_del_tesista"
+      },
+      {
+        "documento": "SIVAC_Desarrollo_Software_XP.docx",
+        "ancla": "Tabla 10 Plan de iteraciones del sistema SIVAC, P369-P388",
+        "cita": "Iteracion 1(2 semanas): HU-01, HU-02; Iteracion 2(2 semanas): HU-03, HU-04; Iteracion 3(2 semanas): HU-05, HU-06, HU-07; Iteracion 4(2 semanas): HU-08, HU-09, HU-10; Iteracion 5(2 semanas): HU-11, HU-12.",
+        "tipo": "tabla_del_tesista"
+      },
+      {
+        "documento": "SIVAC_Desarrollo_Software_XP.docx",
+        "ancla": "Tabla 4 Catalogo de historias de usuario del sistema SIVAC, P203-P269",
+        "cita": "Columna Iteracion: HU-01 y HU-02 en Iteracion 1; HU-03 y HU-04 en Iteracion 2; HU-05, HU-06 y HU-07 en Iteracion 3; HU-08, HU-09 y HU-10 en Iteracion 4; HU-11 y HU-12 en Iteracion 5.",
+        "tipo": "tabla_del_tesista"
+      },
+      {
+        "documento": "salidas/documentos/informe_final_v16.docx",
+        "ancla": "Seccion 3.3.1.6 y Tabla 8 Plan Detallado de las Cinco Iteraciones de Extreme Programming, pp. 47-48",
+        "cita": "se diseno un plan de entregas estructurado en cinco (5) iteraciones agiles de dos semanas de duracion cada una (diez semanas en total). La Tabla 8 contiene las filas Iteracion 1 a Iteracion 5.",
+        "tipo": "declaracion_y_tabla_interna_v16"
+      },
+      {
+        "documento": "salidas/documentos/informe_final_v16.docx",
+        "ancla": "Tabla 7 Matriz del Planning Game: Estimacion en Puntos de Historia, Prioridad e Iteracion, p. 46",
+        "cita": "HU-14 Alertas Tempranas de Vencimiento y Stock e HU-15 Dashboard Ejecutivo y Modulo ICI-DEMID (MSD) figuran en Iteracion 5.",
+        "tipo": "tabla_interna_v16"
+      }
+    ],
+    "analisis_tabla_51": {
+      "ancla": "Tabla 51, Anexo 6, p. 140 del PDF",
+      "filas": [
+        {
+          "HU": "HU-01",
+          "iteracion": "Iteracion 1 (Planificacion/Autenticacion)"
+        },
+        {
+          "HU": "HU-04",
+          "iteracion": "Iteracion 2 (Gestion de Inventario)"
+        },
+        {
+          "HU": "HU-06",
+          "iteracion": "Iteracion 3 (Nucleo Transaccional y Despacho)"
+        },
+        {
+          "HU": "HU-09",
+          "iteracion": "Iteracion 3 (Auditoria/Vales)"
+        },
+        {
+          "HU": "HU-12",
+          "iteracion": "Iteracion 4 (Consolidacion/TAM)"
+        }
+      ],
+      "etiquetas_distintas": 4,
+      "explicacion": "La Tabla 51 contiene cinco filas seleccionadas, no el backlog completo. Su propia nota la describe como Resumen del backlog. En la taxonomia de 15 HU de la v16 (Tabla 7 y Tabla 8), HU-12 pertenece a Iteracion 4 y las historias de Iteracion 5 son HU-14 y HU-15. Por tanto, la ausencia de la etiqueta Iteracion 5 es una omision de muestreo, no una cuarta iteracion.",
+      "coherencia_con_tabla_8": "Las etiquetas de la Tabla 51 son coherentes con la Tabla 8 de la v16: HU-01 en 1, HU-04 en 2, HU-06 y HU-09 en 3, HU-12 en 4. La unica ausencia es la Iteracion 5."
+    },
+    "inconsistencias": [
+      "La Tabla 51 no incluye ninguna fila de Iteracion 5 y su nota no advierte que el resumen es parcial.",
+      "El texto que precede a la Tabla 51 afirma cinco iteraciones; la tabla muestra cuatro etiquetas distintas, lo que produce una contradiccion aparente.",
+      "El DOCX XP del tesista usa 12 HU (HU-01 a HU-12) y la v16 usa 15 HU (HU-01 a HU-15). Las dos taxonomias asignan las iteraciones de forma distinta. Este hallazgo no se usa para cambiar el recuento, pero se marca [VERIFICAR]."
+    ],
+    "parche_propuesto": {
+      "opcion_1_recomendada": "Anadir a la nota de la Tabla 51: Nota. Resumen no exhaustivo: se presentan cinco historias representativas; la Iteracion 5 se detalla en la Tabla 8 (HU-14 y HU-15). Con esto el recuento de cinco queda explicitado sin alterar las filas.",
+      "opcion_2": "Anadir una sexta fila con HU-14, Iteracion 5 (Inteligencia Logistica y Alertas), titulo y criterio tomados de la Tabla 8 y del CP-14, marcando [VERIFICAR] el rol/actor porque la tabla no lo declara.",
+      "no_hacer": "No cambiar el recuento a cuatro ni reetiquetar HU-12 como Iteracion 5 dentro de la v16: la Tabla 8 asigna HU-12 a Iteracion 4 y la Iteracion 5 a HU-14 y HU-15."
+    },
+    "incertidumbre": [
+      "[VERIFICAR] Cual es la taxonomia oficial de historias de usuario: la de 12 HU del DOCX XP o la de 15 HU de la v16. La diferencia no afecta el numero de iteraciones, pero afecta la trazabilidad HU-iteracion.",
+      "[VERIFICAR] Si la Tabla 51 debe ser un resumen de cinco casos o una matriz completa; la nota actual no lo precisa."
+    ]
+  },
+  "cp06_cp11_vs_treg_tvale": {
+    "conclusion": "CP-06 y CP-11 son pruebas de aceptacion funcional por historia de usuario; T_reg y T_vale son indicadores de la Dimension 1 medidos con el Instrumento N.° 01 y agregados por operador. No consta que compartan objeto ni protocolo de medicion. La diferencia de alcance esta respaldada por las definiciones del propio documento, pero el protocolo de los CP no esta declarado; por tanto, no se alteran las cifras oficiales de la Dimension 1.",
+    "evidencia_definicional": [
+      {
+        "ancla": "v16, Tabla 2 Dimensiones, indicadores y escalas de medicion, pp. 35-36",
+        "cita": "T_reg: Duracion cronometrada requerida por el operador para registrar y validar el movimiento mensual de vacunas de los establecimientos asignados.",
+        "lectura": "El objeto es el proceso mensual completo de registro y validacion por operador, no una unica persistencia."
+      },
+      {
+        "ancla": "v16, Tabla 2, p. 36",
+        "cita": "T_vale: Duracion cronometrada desde la confirmacion del despacho hasta la generacion y descarga del vale oficial de entrega en formato PDF.",
+        "lectura": "El objeto es el flujo completo confirmacion-generacion-descarga, no solo la latencia de emision."
+      },
+      {
+        "ancla": "v16, Tabla 31 Estructura de unidades de observacion primaria, reglas de agregacion pareada y criterios de inclusion, p. 91",
+        "cita": "T_reg: promedio aritmetico en minutos de las k operaciones del operador i en la ventana de 30 dias; T_vale: promedio aritmetico de los m vales emitidos por el operador i; n = 14 operadores.",
+        "lectura": "La D1 se mide por operador y se agrega por promedio; no es una prueba puntual de aceptacion."
+      },
+      {
+        "ancla": "v16, Tabla 36, nota, p. 121",
+        "cita": "Tiempos medidos en minutos cronometrados por movimiento mensual segun el Protocolo PMMV.",
+        "lectura": "La D1 tiene protocolo cronometrico declarado y fuente en la Ficha de Registro Cronometrico SIVAC (2026)."
+      },
+      {
+        "ancla": "v16, Tabla 27 Matriz de Casos de Prueba de Aceptacion con el Usuario (CP-01 a CP-15), CP-06, pp. 99-100",
+        "cita": "Escenario: Captura digital de movimientos mensuales en cuadricula interactiva. Criterio: Persistencia en base de datos en tiempo inferior a 2 minutos. Observado: Tiempo medio de registro: 1.15 min (antes 14.8 min).",
+        "lectura": "El criterio nombra la persistencia en base de datos; no declara muestra, operador ni limites del cronometro. Es una prueba de aceptacion de HU-06."
+      },
+      {
+        "ancla": "v16, Tabla 27, CP-11, pp. 99-100",
+        "cita": "Escenario: Emision de vale mensual para postas adscritas con correlativo unico. Criterio: Comprobante emitido en menos de 3 s con cero duplicidad. Observado: Vale emitido en 1.45 s con correlativo seguro.",
+        "lectura": "El criterio esta en segundos y mide la emision del comprobante; no declara el flujo completo confirmacion-generacion-descarga ni la muestra."
+      }
+    ],
+    "comparacion_numerica": {
+      "T_reg_pretest_min": 37.18,
+      "T_reg_postest_min": 7.18,
+      "CP06_min": 1.15,
+      "ratio_T_reg_postest_entre_CP06": 6.24,
+      "CP06_antecedente_min": 14.8,
+      "ratio_T_reg_pretest_oficial_entre_antecedente_CP06": 2.51,
+      "T_vale_pretest_min": 18.21,
+      "T_vale_postest_min": 3.04,
+      "CP11_s": 1.45,
+      "T_vale_postest_s": 182.4,
+      "ratio_T_vale_postest_entre_CP11": 125.79,
+      "nota": "Los cocientes son indicios de distinto alcance, no prueba por si solos. La prueba esta en las definiciones y en la ausencia de protocolo de los CP."
+    },
+    "lo_que_no_se_puede_afirmar": [
+      "No se puede afirmar que CP-06 y T_reg sean la misma medicion: el criterio de CP-06 es la persistencia en base de datos y el de T_reg es el registro y la validacion del movimiento mensual completo de los establecimientos asignados.",
+      "No se puede afirmar que CP-11 y T_vale sean la misma medicion: CP-11 esta en segundos y mide emision; T_vale esta en minutos y mide confirmacion, generacion y descarga.",
+      "No se puede afirmar que antes 14.8 min sea el pretest oficial de T_reg: el pretest documentado es 37.18 min. El 14.8 no tiene ancla documental en el expediente.",
+      "No se puede declarar una simple diferencia de alcance sin protocolo: el documento no declara n, operador, numero de repeticiones ni limites del cronometro para CP-06/CP-11.",
+      "No se deben modificar las cifras de la Tabla 36 ni convertir CP-06/CP-11 en indicadores de la Dimension 1."
+    ],
+    "incertidumbre": [
+      "[VERIFICAR] CP-06 y CP-11 se midieron en un solo operador, en un solo registro/vale, o en la misma muestra de 14 operadores?",
+      "[VERIFICAR] El 1.15 min de CP-06 incluye solo la persistencia o toda la captura en la cuadricula interactiva?",
+      "[VERIFICAR] El 1.45 s de CP-11 es latencia de servidor o incluye la generacion y descarga del PDF?",
+      "[VERIFICAR] De donde proviene antes 14.8 min? No coincide con los 37.18 min del pretest oficial ni con los 18.21 min del pretest de T_vale."
+    ],
+    "parche_propuesto": {
+      "tipo": "nota_metodologica",
+      "ubicacion": "Inmediatamente despues de la Tabla 27 (p. 100) o como nota al pie de las filas CP-06 y CP-11.",
+      "texto": "Nota. Los resultados de CP-06 y CP-11 corresponden a pruebas de aceptacion funcional por historia de usuario y miden el tiempo de respuesta del sistema en el escenario descrito (persistencia en base de datos y emision del comprobante, respectivamente). No consta que compartan objeto ni protocolo de medicion con los indicadores T_reg y T_vale de la Dimension 1, obtenidos con el Instrumento N.° 01 mediante cronometraje por operador y agregacion promedio de k operaciones y m vales en la ventana de 30 dias (Tabla 31). El antecedente antes 14.8 min de CP-06 no corresponde al pretest oficial de T_reg (37.18 min) y debe identificarse como referencia de la prueba funcional o retirarse.",
+      "justificacion": "Elimina la contradiccion aparente sin alterar las cifras oficiales y sin declarar una equivalencia que el documento no sustenta.",
+      "no_hacer": "No cambiar la Tabla 36, no recalcular la D1 y no presentar CP-06/CP-11 como mediciones del proceso mensual."
+    }
+  },
+  "verificaciones": {
+    "metodo": "Inspeccion OpenXML en memoria con Python -I; lectura de word/document.xml, word/_rels/document.xml.rels y word/media; comparacion SHA-256; barrido visual de imagenes; lectura del volcado de texto por pagina.",
+    "word_com": false,
+    "escrituras_en_originales": false,
+    "archivos_modificados": [],
+    "salidas_escritas": [
+      "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/evidencia_xp_aclaraciones_20261021.json",
+      "C:/MisInvestigaciones/tesis/sivac/salidas/figuras/aclaraciones_20261021/figura44_candidata_codigo_movimientos-entrega-adicional-stock.png"
+    ],
+    "comprobacion_inmutabilidad": {
+      "SIVAC_Desarrollo_Software_XP.docx": "SHA-256 inicial y final 04798502f7aa07b92879d0954b25b407044af9c0e202529dd9047ced584b0397",
+      "informe_final_v16.docx": "SHA-256 inicial y final cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5"
+    },
+    "limitaciones": [
+      "No se dispone de una captura de consola de Jest en ningun documento del tesista; la ausencia se acredita por barrido, no por busqueda bibliografica.",
+      "No se reauditaron las 159 paginas ni se busco bibliografia, conforme al alcance de la comision."
+    ]
+  }
+}

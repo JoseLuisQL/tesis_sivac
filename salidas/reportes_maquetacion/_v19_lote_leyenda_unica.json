@@ -1,0 +1,60 @@
+{
+  "sustituciones": [
+    {
+      "indice_docx": 819,
+      "ancla_original": " (fotografía pendiente de incorporación)",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Párrafo de rótulo de la Figura 49 (Anexo 7)"
+    },
+    {
+      "indice_docx": 821,
+      "ancla_original": " (fotografía pendiente de incorporación)",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Párrafo de rótulo de la Figura 50 (Anexo 7)"
+    },
+    {
+      "indice_docx": 823,
+      "ancla_original": " (fotografía pendiente de incorporación)",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Párrafo de rótulo de la Figura 51 (Anexo 7)"
+    },
+    {
+      "indice_docx": 825,
+      "ancla_original": " (fotografía pendiente de incorporación)",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Párrafo de rótulo de la Figura 52 (Anexo 7)"
+    },
+    {
+      "indice_docx": 820,
+      "ancla_original": "Fotografía pendiente de incorporación. ",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Nota de la Figura 49 (Anexo 7)"
+    },
+    {
+      "indice_docx": 822,
+      "ancla_original": "Fotografía pendiente de incorporación. ",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Nota de la Figura 50 (Anexo 7)"
+    },
+    {
+      "indice_docx": 824,
+      "ancla_original": "Fotografía pendiente de incorporación. ",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Nota de la Figura 51 (Anexo 7)"
+    },
+    {
+      "indice_docx": 826,
+      "ancla_original": "Fotografía pendiente de incorporación. ",
+      "texto_nuevo": "",
+      "ocurrencias": 1,
+      "ubicacion": "Nota de la Figura 52 (Anexo 7)"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v20.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\_v20_biblio.docx",
+  "solo_verificar": false,
+  "sha256_origen": "41dc78e73b9bc711ced365d1b26dde2e1e0a6953a52901bd88c5576ccf677216",
+  "sha256_destino": "3e4024e17e4f56d1bd70878945d61a96d9b91b66cb7423ccf8d9c5c29daf8004",
+  "parrafos": 827,
+  "tablas": 59,
+  "total_ordenes": 6,
+  "total_aplicadas": 6,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "ordenes_fuentes_v20",
+      "total": 6,
+      "aplicadas": 6,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 177,
+          "ubicacion": null,
+          "ancla": "(a) la validez de contenido, cuya estimación se realizará mediante juicio de tre",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 212,
+          "ubicacion": null,
+          "ancla": "Wasswa et al. (2023), en su estudio evaluativo titulado “Leveraging electronic l",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 157,
+          "ubicacion": null,
+          "ancla": "Resultados equivalentes fueron reportados por Kigenza et al. (2023) en Ruanda y ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 776,
+          "ubicacion": null,
+          "ancla": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 1, fila 7, columna 3",
+          "ancla": "Cuantitativo, descriptivo y transversal (19 hospitales regionales)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": null,
+          "ubicacion": "TABLA 1, fila 7, columna 5",
+          "ancla": "Disponibilidad promedio del 90% y concordancia en despachos regionales",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_fuentes_v20",
+      "indice_docx": 177,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_fuentes_v20",
+      "indice_docx": 212,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_fuentes_v20",
+      "indice_docx": 157,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_fuentes_v20",
+      "indice_docx": 776,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_fuentes_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 1, fila 7, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_fuentes_v20",
+      "indice_docx": null,
+      "ubicacion": "TABLA 1, fila 7, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

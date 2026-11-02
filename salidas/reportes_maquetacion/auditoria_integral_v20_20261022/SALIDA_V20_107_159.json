@@ -1,0 +1,938 @@
+{
+  "meta": {
+    "auditoria": "Final de salida v20, PDF 107-159 (53 páginas) y controles de integridad bibliográficos",
+    "agente": "verificador-integridad",
+    "squad": "Squad A — Inteligencia Bibliográfica y Evidencia",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "fecha": "2026-10-22",
+    "fuente_docx": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v20.docx",
+    "fuente_pdf": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v20.pdf",
+    "docx_bytes": 16713292,
+    "pdf_bytes": 20075006,
+    "hash_inicio_docx": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+    "hash_fin_docx": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+    "hash_inicio_pdf": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+    "hash_fin_pdf": "3b6f0fe23ba7281740c3977bfe15bad95f8d65bfdb1924bb11d87b5957cf1ce3",
+    "pdf_paginas": 159,
+    "rango_auditado": "107-159",
+    "paginas_auditadas": 53,
+    "metodo_lectura": "Lectura visual con Read PDF en cuatro lotes: 107-119, 120-132, 133-145 y 146-159. Cada página se inspeccionó a página completa; PDF_TEXTO_V20.json se usó solo para localizar anclas y mapear páginas, nunca como sustituto de la lectura visual.",
+    "lotes_lectura": [
+      {
+        "rango": "107-119",
+        "paginas": 13
+      },
+      {
+        "rango": "120-132",
+        "paginas": 13
+      },
+      {
+        "rango": "133-145",
+        "paginas": 13
+      },
+      {
+        "rango": "146-159",
+        "paginas": 14
+      }
+    ],
+    "snapshot_estable": true,
+    "docx_pdf_sin_modificar": true,
+    "fuentes_originales_intactas": true,
+    "dois_no_revalidados": "Los 54 DOIs no se revalidaron en esta salida; se usó la verificación previa de la comisión de fuentes."
+  },
+  "ledger": [
+    {
+      "pagina_pdf": 107,
+      "pagina_impresa": 92,
+      "seccion": "Capítulo IV. Operacionalización",
+      "observacion": "Tabla 32 de operacionalización; se observan las 3 dimensiones oficiales y los 6 indicadores (T_reg, T_vale, RSD, CPE, AP, UP); nota de cierre coherente con DEC-007.",
+      "anclas": [
+        "Tabla 32",
+        "D1-D3",
+        "6 indicadores"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 108,
+      "pagina_impresa": 93,
+      "seccion": "Capítulo IV. Fórmulas de indicadores",
+      "observacion": "Ecuaciones 1 a 4 visibles y nativas: T_reg, T_vale, RSD y CPE; numeración correlativa y términos definidos.",
+      "anclas": [
+        "Ecuaciones 1-4",
+        "OMML"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 109,
+      "pagina_impresa": 94,
+      "seccion": "Capítulo IV. Fórmulas de indicadores",
+      "observacion": "Ecuaciones 5 y 6 visibles: AP y UP; cierre de la sección 4.10 sin fórmulas incrustadas en tablas.",
+      "anclas": [
+        "Ecuaciones 5-6",
+        "OMML"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 110,
+      "pagina_impresa": 95,
+      "seccion": "Capítulo IV. Técnicas e instrumentos",
+      "observacion": "Se describen Instrumentos 01, 02 y 03; NTS N.° 196-MINSA/DGIESP-2022; escala Likert 1-5; Modalidades A y B.",
+      "anclas": [
+        "Instrumentos 01-03",
+        "NTS 196",
+        "Likert 1-5"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 111,
+      "pagina_impresa": 96,
+      "seccion": "Capítulo IV. Correspondencia técnica-instrumento",
+      "observacion": "Tabla 33 relaciona las 3 dimensiones con sus técnicas e instrumentos; no hay fórmulas en celdas.",
+      "anclas": [
+        "Tabla 33",
+        "D1-D3"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 112,
+      "pagina_impresa": 97,
+      "seccion": "Capítulo IV. Confiabilidad",
+      "observacion": "Confiabilidad por Alfa de Cronbach; Ecuación 7 visible y numerada; texto metodológico coherente.",
+      "anclas": [
+        "Ecuación 7",
+        "Alfa de Cronbach"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 113,
+      "pagina_impresa": 98,
+      "seccion": "Capítulo IV. Validez de contenido",
+      "observacion": "V de Aiken (Ecuación 8); criterio adoptado V ≥ 0.80 e IVC ≥ 0.80; Tabla 34. No se atribuye la V a Tristán-López.",
+      "anclas": [
+        "Ecuación 8",
+        "V de Aiken",
+        "Tabla 34"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 114,
+      "pagina_impresa": 99,
+      "seccion": "Capítulo IV. Validez de contenido",
+      "observacion": "Continuación de Tabla 34; VAL-VD 1.000 se presenta como 'comunicado (condicional)' y la nota mantiene el cotejo pendiente con las fichas firmadas.",
+      "anclas": [
+        "Tabla 34",
+        "VAL-VD",
+        "nota de pendiente"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 115,
+      "pagina_impresa": 100,
+      "seccion": "Capítulo IV. Procesamiento estadístico",
+      "observacion": "Ecuaciones 10 y 11; corrección de Holm-Bonferroni declarada sobre 7 contrastes; secuencia metodológica visible.",
+      "anclas": [
+        "Ecuaciones 10-11",
+        "Holm-Bonferroni",
+        "7 contrastes"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 116,
+      "pagina_impresa": 101,
+      "seccion": "Capítulo IV. Consideraciones éticas",
+      "observacion": "Autorización institucional, consentimiento informado, confidencialidad y contingencia; sin datos personales inventados.",
+      "anclas": [
+        "Ética",
+        "consentimiento"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 117,
+      "pagina_impresa": 102,
+      "seccion": "Capítulo V. Resultados",
+      "observacion": "Apertura del capítulo; advertencia expresa de que los datos son provisionales de prueba y serán sustituidos antes de la sustentación.",
+      "anclas": [
+        "Capítulo V",
+        "datos de prueba"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 118,
+      "pagina_impresa": 103,
+      "seccion": "Capítulo V. Confiabilidad",
+      "observacion": "Alfa de Cronbach pretest .939/.877/.874 y postest .915/.831/.841; Tabla 35 con IC; lectura coherente.",
+      "anclas": [
+        "Tabla 35",
+        "Alfa pretest/postest"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 119,
+      "pagina_impresa": 104,
+      "seccion": "Capítulo V. D1 Oportunidad",
+      "observacion": "n = 14 y 'trece (13) centros de acopio'; Tabla 36: T_reg 37.18 → 7.18 min (-80.69%), diferencia -30.00; sin cambio de cifras.",
+      "anclas": [
+        "Tabla 36",
+        "T_reg",
+        "n=14"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 120,
+      "pagina_impresa": 105,
+      "seccion": "Capítulo V. D1 y D2",
+      "observacion": "Tabla 36 continuación: T_vale 18.21 → 3.04 min (-83.33%), diferencia -15.18; Figura 46 (boxplots); inicio de D2 con RSD y CPE.",
+      "anclas": [
+        "Tabla 36",
+        "Figura 46",
+        "T_vale"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 121,
+      "pagina_impresa": 106,
+      "seccion": "Capítulo V. D2 Consistencia documental",
+      "observacion": "RSD 63.57 → 96.00% y CPE 67.61 → 95.39% (+41.10%); Tabla 37; narrativa consistente con Tabla 36.",
+      "anclas": [
+        "Tabla 37",
+        "RSD",
+        "CPE"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 122,
+      "pagina_impresa": 107,
+      "seccion": "Capítulo V. D2 y D3",
+      "observacion": "Figura 47 con barras e IC: 63.6 → 96.0 y 67.6 → 95.4; D3 AP 8.07 → 17.71 (+119.47%), UP 9.00 → 18.50 (+105.56%), TAM global 17.07 → 36.21 (+112.13%).",
+      "anclas": [
+        "Figura 47",
+        "AP",
+        "UP",
+        "TAM global"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 123,
+      "pagina_impresa": 108,
+      "seccion": "Capítulo V. D3 Satisfacción",
+      "observacion": "Tabla 38 con descriptivos de AP, UP y TAM; Figura 48 comparativa pretest-postest; baremos visibles.",
+      "anclas": [
+        "Tabla 38",
+        "Figura 48"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 124,
+      "pagina_impresa": 109,
+      "seccion": "Capítulo V. Normalidad",
+      "observacion": "Shapiro-Wilk: T_reg .979/.966; T_vale .933/.331; RSD .958/.696; CPE .953/.614; AP .909/.153; UP .876/.052; TAM .955/.646; p > .05; se anuncian t pareada y Wilcoxon.",
+      "anclas": [
+        "Shapiro-Wilk",
+        "Tabla 39"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 125,
+      "pagina_impresa": 110,
+      "seccion": "Capítulo V. HE1",
+      "observacion": "Tabla 39 de normalidad y apertura de la sección 5.4; HE1 planteada; sin valores alterados.",
+      "anclas": [
+        "Tabla 39",
+        "HE1"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 126,
+      "pagina_impresa": 111,
+      "seccion": "Capítulo V. HE1",
+      "observacion": "t(13) = -38.944, p = 7.57e-15, d = -10.41; Wilcoxon W = 0.0, Z = -3.30, p = .001, r = .881; Holm p_adj = 4.54e-14; T_vale t = -24.509, p = 2.88e-12, d = -6.55; Tabla 40.",
+      "anclas": [
+        "Tabla 40",
+        "HE1",
+        "T_reg",
+        "T_vale"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 127,
+      "pagina_impresa": 112,
+      "seccion": "Capítulo V. HE2",
+      "observacion": "RSD t = 26.628, p = 1.00e-12, d = 7.12; Wilcoxon p = .001, r = .881; p_adj = 2.00e-12; CPE t = 28.147, p = 4.92e-13, d = 7.52; p_adj = 1.48e-12; Tabla 41.",
+      "anclas": [
+        "Tabla 41",
+        "HE2",
+        "RSD",
+        "CPE"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 128,
+      "pagina_impresa": 113,
+      "seccion": "Capítulo V. HE2 y HE3",
+      "observacion": "Tabla 41 continuación; AP t = 33.352, p = 5.57e-14, d = 8.91; UP t = 34.881, p = 3.13e-14, d = 9.32; TAM t = 44.477, p = 1.36e-15, d = 11.89; Wilcoxon p = .001.",
+      "anclas": [
+        "Tabla 41",
+        "HE3",
+        "AP",
+        "UP",
+        "TAM"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 129,
+      "pagina_impresa": 114,
+      "seccion": "Capítulo V. HE3 e hipótesis general",
+      "observacion": "Tabla 42 con los contrastes de HE3; sección 5.4.4 y regla conjuntiva multivariada; sin cambios de cifras.",
+      "anclas": [
+        "Tabla 42",
+        "HE3",
+        "regla conjuntiva"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 130,
+      "pagina_impresa": 115,
+      "seccion": "Capítulo V. Conclusión general",
+      "observacion": "Conclusión general y Tabla 43 de resumen multivariado; reducción >80%, exactitud >95% e incremento >100% coherentes con las tablas precedentes.",
+      "anclas": [
+        "Tabla 43",
+        "conclusión general"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 131,
+      "pagina_impresa": 116,
+      "seccion": "Capítulo VI. Discusión",
+      "observacion": "Inicio de discusión; citas a Inarotul Huda et al. (2025, p. 1244), Gilbert et al. (2020, p. 564) y Dolan et al. (2020); D1 y D2.",
+      "anclas": [
+        "Discusión",
+        "Inarotul Huda 2025",
+        "Gilbert 2020",
+        "Dolan 2020"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 132,
+      "pagina_impresa": 117,
+      "seccion": "Capítulo VI. Discusión D3",
+      "observacion": "Discusión D3: TAM, FEFO, hipótesis general, XP e ISO/IEC 25010:2023. Se observa que el párrafo de D3 ya no cita a Venkatesh et al. (2003), aunque la referencia permanece en la lista: referencia huérfana.",
+      "anclas": [
+        "D3",
+        "TAM",
+        "Venkatesh et al. (2003)",
+        "p. 117"
+      ],
+      "veredicto": "conforme_visual_con_observacion_mayor"
+    },
+    {
+      "pagina_pdf": 133,
+      "pagina_impresa": 118,
+      "seccion": "Conclusiones",
+      "observacion": "Conclusiones primera (objetivo general) y segunda (objetivo específico 1); cifras de T_reg y T_vale coinciden con Tablas 36 y 40; sin tablas nuevas.",
+      "anclas": [
+        "Conclusiones",
+        "T_reg",
+        "T_vale"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 134,
+      "pagina_impresa": 119,
+      "seccion": "Recomendaciones",
+      "observacion": "Cuatro recomendaciones; la primera menciona 'diecinueve (19) centros de acopio registrados', coherente con el universo registrado y con los 13 centros que aportan operadores a la muestra.",
+      "anclas": [
+        "Recomendaciones",
+        "19 centros registrados",
+        "13 centros con operadores"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 135,
+      "pagina_impresa": 120,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Inicio de referencias: Addy, Aiken, Alvarez, Arisholm, Astuhuaman, Balón, Beck y Brooks. Aiken está entre Addy y Alvarez y su DOI es hipervínculo nativo activo; el rango se muestra como '131-142' con guion simple.",
+      "anclas": [
+        "Addy 2023",
+        "Aiken 1985",
+        "Alvarez 2023",
+        "DOI Aiken"
+      ],
+      "veredicto": "conforme_visual_con_observacion_menor"
+    },
+    {
+      "pagina_pdf": 136,
+      "pagina_impresa": 121,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Champi, Chekol, Cohen, Cohn, Cronbach, Dang, Davis, De la Torre y Dolan; orden alfabético y sangría francesa conservados.",
+      "anclas": [
+        "Referencias A-D"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 137,
+      "pagina_impresa": 122,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Continuación de Dolan; Ergetie, Feldt, Garcia, George, Gilbert, Gutiérrez-Aguado, Hernández-Sampieri 2014 y 2018, Holm.",
+      "anclas": [
+        "Referencias D-H"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 138,
+      "pagina_impresa": 123,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Hussain, Inarotul Huda, ISO/IEC, Kigenza, Kokol, Luján, Luo y Mamani-Pari; Mamani-Pari se registra en JMIR Human Factors.",
+      "anclas": [
+        "Referencias H-M",
+        "Mamani-Pari 2026"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 139,
+      "pagina_impresa": 124,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Mego, Mekonen, Ministerio de Salud del Perú, Moumane, Ndlovu, Oliveira, OPS/PATH y Pressman; sin referencias inventadas.",
+      "anclas": [
+        "Referencias M-P"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 140,
+      "pagina_impresa": 125,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Quispe, Razali, Rosenthal, Ruiz, Shapiro, Shen, Sommerville, Tristán-López, Venkatesh y Wasswa. Se observa el DOI de Wasswa duplicado en la misma entrada; Venkatesh et al. (2003) figura aquí pero no tiene cita activa en el cuerpo.",
+      "anclas": [
+        "Tristán-López 2008",
+        "Venkatesh 2003",
+        "Wasswa 2023",
+        "DOI Wasswa"
+      ],
+      "veredicto": "conforme_visual_con_observacion_mayor_y_menor"
+    },
+    {
+      "pagina_pdf": 141,
+      "pagina_impresa": 126,
+      "seccion": "Referencias bibliográficas",
+      "observacion": "Wilcoxon y World Health Organization; cierre de la lista con 54 entradas; no hay referencias adicionales después.",
+      "anclas": [
+        "Wilcoxon 1945",
+        "WHO 2021",
+        "54 referencias"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 142,
+      "pagina_impresa": 127,
+      "seccion": "Anexos",
+      "observacion": "Portadilla 'ANEXOS'; página de separación intencional, sin contenido sustantivo.",
+      "anclas": [
+        "ANEXOS"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 143,
+      "pagina_impresa": 128,
+      "seccion": "Anexo 1. Matriz de consistencia",
+      "observacion": "Tabla 44, inicio: problemas, objetivos, hipótesis y variables; articulación isomórfica 1:1 declarada.",
+      "anclas": [
+        "Tabla 44",
+        "Anexo 1"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 144,
+      "pagina_impresa": 129,
+      "seccion": "Anexo 1. Matriz de consistencia",
+      "observacion": "Tabla 44 continuación: metodología, problema/objetivo/hipótesis específicos 1, dimensión 1 y N = n = 14 en 13 centros.",
+      "anclas": [
+        "Tabla 44",
+        "D1",
+        "n=14"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 145,
+      "pagina_impresa": 130,
+      "seccion": "Anexo 1. Matriz de consistencia",
+      "observacion": "Tabla 44 continuación: problemas, objetivos e hipótesis específicos 2 y 3; dimensiones 2 y 3; instrumentos oficiales.",
+      "anclas": [
+        "Tabla 44",
+        "D2",
+        "D3"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 146,
+      "pagina_impresa": 131,
+      "seccion": "Anexo 1. Matriz de consistencia",
+      "observacion": "Cierre de Tabla 44: dimensión 3, procesamiento y análisis; nota de elaboración propia. La matriz menciona Wilcoxon y Holm; la t pareada se desarrolla en el cuerpo, sin alterar el protocolo.",
+      "anclas": [
+        "Tabla 44",
+        "D3",
+        "Holm-Bonferroni"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 147,
+      "pagina_impresa": 132,
+      "seccion": "Anexo 2. Operacionalización",
+      "observacion": "Tabla 45, inicio: variable independiente y dimensiones 1 y 2 de la VD; celdas descriptivas, sin ecuaciones OMML incrustadas.",
+      "anclas": [
+        "Tabla 45",
+        "Anexo 2"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 148,
+      "pagina_impresa": 133,
+      "seccion": "Anexo 2. Operacionalización",
+      "observacion": "Tabla 45 continuación: dimensión 3 (AP y UP), escala ordinal/intervalar y nota de elaboración propia; sin fórmulas en celdas.",
+      "anclas": [
+        "Tabla 45",
+        "D3",
+        "AP",
+        "UP"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 149,
+      "pagina_impresa": 134,
+      "seccion": "Anexo 3. Juicio de expertos",
+      "observacion": "Tres formatos en blanco; Juez 1 con perfil declarado; V de Aiken e IVC como campos por completar; firma y DNI vacíos; aplicabilidad sin dictamen.",
+      "anclas": [
+        "Anexo 3",
+        "Juez 1",
+        "V de Aiken",
+        "IVC"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 150,
+      "pagina_impresa": 135,
+      "seccion": "Anexo 3. Juicio de expertos",
+      "observacion": "Formato del Juez 2; perfil y campos en blanco; no se inventan nombres, firmas ni coeficientes.",
+      "anclas": [
+        "Anexo 3",
+        "Juez 2"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 151,
+      "pagina_impresa": 136,
+      "seccion": "Anexo 3. Juicio de expertos",
+      "observacion": "Formato del Juez 3; perfil y campos en blanco; aplicabilidad pendiente de los tres informes firmados.",
+      "anclas": [
+        "Anexo 3",
+        "Juez 3"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 152,
+      "pagina_impresa": 137,
+      "seccion": "Anexo 4. Instrumentos",
+      "observacion": "Instrumentos 01 y 02; Tabla 46 y inicio de Tabla 47; nota de 14 operadores en 13 centros; sin fórmulas en celdas.",
+      "anclas": [
+        "Tabla 46",
+        "Tabla 47",
+        "13 centros"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 153,
+      "pagina_impresa": 138,
+      "seccion": "Anexo 4. Instrumentos",
+      "observacion": "Cierre de Tabla 47 y Tabla 48 (cuestionario TAM, 8 ítems, Likert 1-5); nota de Alfa provisional sobre datos de prueba.",
+      "anclas": [
+        "Tabla 47",
+        "Tabla 48",
+        "TAM"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 154,
+      "pagina_impresa": 139,
+      "seccion": "Anexo 5. Datos de prueba pretest",
+      "observacion": "Tabla 49 con 14 sujetos; valores de T_reg, T_vale, RSD, CPE, AP, UP y TAM; nota de datos de prueba, no mediciones de campo.",
+      "anclas": [
+        "Tabla 49",
+        "pretest",
+        "n=14"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 155,
+      "pagina_impresa": 140,
+      "seccion": "Anexo 5. Datos de prueba postest",
+      "observacion": "Tabla 50 con 14 sujetos; valores postest y nivel de satisfacción; nota de datos de prueba; sin cambio respecto de v19.",
+      "anclas": [
+        "Tabla 50",
+        "postest",
+        "n=14"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 156,
+      "pagina_impresa": 141,
+      "seccion": "Anexo 6. Evidencias de desarrollo",
+      "observacion": "Tabla 51 con historias de usuario e iteraciones XP; HU-14 y HU-15 conservan 'No especificado' en rol/actor, sin inventar responsables.",
+      "anclas": [
+        "Tabla 51",
+        "XP",
+        "HU-14",
+        "HU-15"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 157,
+      "pagina_impresa": 142,
+      "seccion": "Anexo 7. Registro fotográfico",
+      "observacion": "Figura 49 con marco y nota; leyenda 'Fotografía pendiente de incorporación'; no se simula evidencia gráfica.",
+      "anclas": [
+        "Figura 49",
+        "Anexo 7"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 158,
+      "pagina_impresa": 143,
+      "seccion": "Anexo 7. Registro fotográfico",
+      "observacion": "Figuras 50 y 51 con marcos y notas; ambas pendientes de incorporación; no se inventan imágenes.",
+      "anclas": [
+        "Figura 50",
+        "Figura 51"
+      ],
+      "veredicto": "conforme"
+    },
+    {
+      "pagina_pdf": 159,
+      "pagina_impresa": 144,
+      "seccion": "Anexo 7. Registro fotográfico",
+      "observacion": "Figura 52 con marco y nota; pendiente de incorporación; cierre del documento.",
+      "anclas": [
+        "Figura 52",
+        "Anexo 7"
+      ],
+      "veredicto": "conforme"
+    }
+  ],
+  "controles_integridad": {
+    "estructura_nativa": {
+      "parrafos": 828,
+      "tablas": 59,
+      "imagenes": 49,
+      "inline": 49,
+      "flotantes": 0,
+      "hipervinculos": 253,
+      "bookmarks": 214
+    },
+    "referencias": {
+      "total": 54,
+      "con_cita_activa": 53,
+      "huerfanas": [
+        {
+          "referencia": "Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478. https://doi.org/10.2307/30036540",
+          "pagina_referencia_pdf": 140,
+          "pagina_referencia_impresa": 125,
+          "pagina_cuerpo_pdf": 132,
+          "pagina_cuerpo_impresa": 117,
+          "evidencia": "En v19 el párrafo de discusión D3 citaba «Davis (1989) y Venkatesh et al. (2003)»; en v20 la cita a Venkatesh fue retirada y la referencia permaneció en la lista.",
+          "severidad": "mayor"
+        }
+      ],
+      "citas_sin_referencia_detectadas": 0,
+      "metodo_1a1": "Extracción de los 54 asentamientos; búsqueda de cada apellido y año en el cuerpo (párrafos 0-724); barrido inverso de patrones autor-año con descarte de coautores. El único asentamiento sin cita activa es Venkatesh et al. (2003).",
+      "orden_controlado": "Addy (2023) → Aiken (1985) → Alvarez Ticllasuca et al. (2023); lista alfabética completa.",
+      "aiken": {
+        "posicion_1based": 2,
+        "entre": [
+          "Addy, A. (2023)",
+          "Alvarez Ticllasuca, K., Flores Marín, G., y Poma Rojas, W. J. (2023)"
+        ],
+        "referencia": "Aiken, L. R. (1985). Three coefficients for analyzing the reliability and validity of ratings. Educational and Psychological Measurement, 45(1), 131-142. https://doi.org/10.1177/0013164485451012",
+        "cita_activa": "p. 23: «coeficiente V de Aiken (Aiken, 1985)»",
+        "doi": "10.1177/0013164485451012",
+        "hipervinculo_nativo": true,
+        "rango_paginas": "131-142",
+        "observacion": "El rango usa guion simple; APA 7 exige raya: 131–142. El DOI ya fue verificado en la comisión de fuentes y no se revalidó en esta salida."
+      },
+      "tristan": {
+        "referencia": "Tristán-López, A. (2008). Modificación al modelo de Lawshe para el dictamen cuantitativo de la validez de contenido de un instrumento objetivo. Avances en Medición, 6(1), 37-48.",
+        "cita_activa": "p. 23: «la modificación del CVR de Lawshe se documenta en Tristán-López (2008, p. 38)»",
+        "atribucion": "CVR/Lawshe",
+        "deriva_v_aiken": false,
+        "observacion": "Se conserva para el CVR; no se le atribuye la V de Aiken."
+      },
+      "wasswa": {
+        "referencia": "Wasswa, J., Oundo, H., Oteba, M., Komakech, H., Ochola, I., Mwebaze, S., Okidi, D., Kirunda, A., Nakadde, S., Oteba, N. O., y Lugada, E. (2023). Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda. Journal of Pharmaceutical Policy and Practice, 16, Artículo 6. https://doi.org/10.1186/s40545-023-00517-4",
+        "titulo_verificado": "Leveraging electronic logistics management information systems to enhance and optimize supply chain response during public health emergencies: Lessons from COVID-19 response in Uganda",
+        "metodo": "Revisión de literatura y análisis descriptivo",
+        "hospitales": 20,
+        "pedidos_atendidos_pct": 96.5,
+        "cumplimiento_agregado_pct": 85.5,
+        "citas": [
+          "p. 30 (cuerpo)",
+          "Tabla 2, fila 7",
+          "p. 125 (referencia)"
+        ],
+        "doi": "10.1186/s40545-023-00517-4",
+        "observacion": "Título, método y cifras correctos; el DOI aparece duplicado en la entrada de referencias."
+      },
+      "kigenza": {
+        "referencia": "Kigenza, R., Nsengiyumva, E., y Sabagirirwa, V. (2023). The Quality Management Improvement Approach: Successes and lessons learned from a workforce development intervention in Rwanda's health supply chain. Global Health: Science and Practice, 11(4), Artículo e2200295. https://doi.org/10.9745/GHSP-D-22-00295",
+        "cita_activa": "p. 29 (cuerpo) y Tabla 2, fila 4",
+        "exactitud_inventario": "25% a 85%",
+        "observacion": "Se conserva como exactitud de inventario; no se convierte en disponibilidad."
+      }
+    },
+    "tablas": {
+      "total": 59,
+      "indices_base0_modificados": [
+        1,
+        29,
+        31,
+        33,
+        34
+      ],
+      "ordinales_1based_modificados": [
+        2,
+        30,
+        32,
+        34,
+        35
+      ],
+      "identicas": 54,
+      "tablas_datos_sivac_sin_cambio": [
+        "38",
+        "40",
+        "41",
+        "42",
+        "49",
+        "50"
+      ],
+      "celdas_modificadas": [
+        {
+          "tabla_ordinal": 2,
+          "indice_base0": 1,
+          "fila_1based": 7,
+          "columnas_1based": [
+            3,
+            5
+          ],
+          "cambio": "Wasswa: método de revisión y 20 hospitales; 96.5% pedidos atendidos y 85.5% cumplimiento agregado."
+        },
+        {
+          "tabla_ordinal": 30,
+          "indice_base0": 29,
+          "fila_1based": 2,
+          "columnas_1based": [
+            2
+          ],
+          "cambio": "PECOSA con mayúsculas."
+        },
+        {
+          "tabla_ordinal": 32,
+          "indice_base0": 31,
+          "fila_1based": 3,
+          "columnas_1based": [
+            2
+          ],
+          "cambio": "PECOSA con mayúsculas."
+        },
+        {
+          "tabla_ordinal": 34,
+          "indice_base0": 33,
+          "filas_1based": [
+            2,
+            3,
+            4
+          ],
+          "columnas_1based": [
+            4
+          ],
+          "cambio": "Nomenclatura de los Instrumentos 01, 02 y 03."
+        },
+        {
+          "tabla_ordinal": 35,
+          "indice_base0": 34,
+          "filas_1based": [
+            2,
+            3,
+            4
+          ],
+          "columnas_1based": [
+            2
+          ],
+          "cambio": "Nomenclatura de los Instrumentos 01, 02 y 03."
+        }
+      ],
+      "nota": "Ninguna celda numérica de resultados SIVAC cambió. Los 5 cambios son de literatura, PECOSA y nomenclatura de instrumentos."
+    },
+    "estadistica": {
+      "valores_clave_identicos_v19_v20": true,
+      "tablas_49_50_identicas": true,
+      "p_valores_ic_d_r_identicos": true,
+      "evidencia": "Se compararon 41 cadenas críticas (medias, t, p, d, r, IC y porcentajes) en el cuerpo v19/v20 sin diferencias; las Tablas 38, 40, 41, 42, 49 y 50 son idénticas."
+    },
+    "omml_toc_seq_urls": {
+      "omml": 12,
+      "toc_campos_reales": 3,
+      "seq_campos": 103,
+      "urls_externas": 39,
+      "omml_sha256_16": "8c4ef016cc06ea0f",
+      "seq_sha256_16": "ae9cb38a165b1136",
+      "toc_instr": [
+        " TOC \\o \"1-3\" \\h \\z \\u ",
+        " TOC \\h \\z \\c \"Figura\" ",
+        " TOC \\h \\z \\c \"Tabla\" "
+      ],
+      "comparacion_v19": "OMML y SEQ idénticos; TOC idénticos; URLs 38 → 39, única adición el DOI de Aiken.",
+      "nota": "Se contaron campos reales en w:instrText; no se contaron entradas cacheadas del TOC como campos nuevos."
+    },
+    "visual": {
+      "paginas_leidas": 53,
+      "cobertura": "53/53",
+      "paginas_con_observacion": [
+        132,
+        135,
+        140
+      ],
+      "paginas_conformes": 50
+    }
+  },
+  "regresiones": [
+    {
+      "id": "R1",
+      "severidad": "mayor",
+      "tipo": "referencia huérfana / 1:1",
+      "pagina_pdf": 132,
+      "pagina_impresa": 117,
+      "ancla": "«En lo concerniente a la tercera dimensión, Satisfacción del usuario...»",
+      "descripcion": "Venkatesh et al. (2003) permanece en la lista de referencias (p. 125) pero ya no tiene cita activa en el cuerpo. En v19 el mismo párrafo citaba «Davis (1989) y Venkatesh et al. (2003)».",
+      "accion": "Restituir una cita activa a Venkatesh et al. (2003) en el pasaje sobre enfoques de aceptación tecnológica o retirar la referencia; no dejarla huérfana. Preferible restituir la cita para conservar las 54 referencias.",
+      "no_es": "No es una fuente inexistente ni un DOI roto; la referencia es real."
+    },
+    {
+      "id": "R2",
+      "severidad": "menor",
+      "tipo": "DOI duplicado en referencia",
+      "pagina_pdf": 140,
+      "pagina_impresa": 125,
+      "ancla": "Wasswa et al. (2023), entrada de referencias",
+      "descripcion": "La entrada muestra el DOI dos veces concatenado: «...00517-4https://doi.org/...00517-4». El XML contiene un texto plano y un hipervínculo con el mismo DOI.",
+      "accion": "Eliminar el texto plano duplicado y conservar un único hipervínculo DOI.",
+      "no_es": "No es un DOI roto; el DOI ya fue verificado y resuelve."
+    },
+    {
+      "id": "R3",
+      "severidad": "menor",
+      "tipo": "formato APA 7",
+      "pagina_pdf": 135,
+      "pagina_impresa": 120,
+      "ancla": "Aiken, L. R. (1985), rango de páginas",
+      "descripcion": "El rango se muestra como «131-142» con guion simple; APA 7 exige raya: «131–142».",
+      "accion": "Sustituir el guion simple por raya en el rango de páginas.",
+      "no_es": "No afecta la validez del DOI ni la existencia de la fuente."
+    }
+  ],
+  "residuales": [
+    {
+      "tema": "D13 judicial",
+      "estado": "pendiente de originales",
+      "detalle": "No se declara fraude ni se califica el acto judicial; no puede declararse «imprimible definitivo» hasta contar con los originales."
+    },
+    {
+      "tema": "Fotografías 49-52",
+      "estado": "pendiente",
+      "detalle": "Marcos y notas presentes; las imágenes no se incorporan ni se simulan."
+    },
+    {
+      "tema": "Firmas y coeficientes de jueces",
+      "estado": "pendiente",
+      "detalle": "Anexo 3 en blanco; V de Aiken e IVC no se inventan; aplicabilidad sin dictamen hasta recibir los tres informes firmados."
+    },
+    {
+      "tema": "Figura 6",
+      "estado": "excepción declarada",
+      "detalle": "136.5 dpi; excepción de fuente declarada, no resuelta por el auditor."
+    },
+    {
+      "tema": "ORD-INT-01/02/11",
+      "estado": "pendiente metodológica",
+      "detalle": "No aplicadas por decisión del Director; se documentan como residuales sin rediseñar el protocolo."
+    },
+    {
+      "tema": "ORD-INT-04/21/22",
+      "estado": "pendiente de fuente/evidencia",
+      "detalle": "Se conserva «No especificado» y no se inventan responsables, herramientas ni entrega digital."
+    },
+    {
+      "tema": "13 vs 19 centros",
+      "estado": "coherente",
+      "detalle": "19 centros registrados en el universo; 13 centros aportan los 14 operadores de la muestra censal. No es una contradicción."
+    },
+    {
+      "tema": "Datos de prueba",
+      "estado": "pendiente de aprobación humana",
+      "detalle": "Tablas 49/50 y resultados se declaran datos provisionales de prueba; no son mediciones de campo definitivas."
+    },
+    {
+      "tema": "Tabla 2, fila Mamani-Pari",
+      "estado": "discrepancia preexistente",
+      "detalle": "La tabla consigna «JMIR Medical Informatics»; el cuerpo (p. 34) y la referencia (p. 138) consignan «JMIR Human Factors». Ya estaba en v19; no es regresión v20; cotejar con el DOI ya verificado."
+    }
+  ],
+  "dictamen": {
+    "resultado": "OBSERVADO_SUBSANABLE",
+    "apto_para_impresion_definitiva": false,
+    "motivo": "53 de 54 referencias tienen cita activa; Venkatesh et al. (2003) quedó huérfana. Además, el DOI de Wasswa se muestra duplicado y el rango de Aiken usa guion simple. No se detectaron fuentes inexistentes, DOIs rotos ni datos empíricos inventados.",
+    "condicion": "Subsanar R1-R3. Permanecen pendientes D13, fotografías 49-52, firmas/coeficientes de jueces, Figura 6 y la sustitución de datos de prueba por datos reales. No se certifica QG-9 ni aprobación humana."
+  }
+}

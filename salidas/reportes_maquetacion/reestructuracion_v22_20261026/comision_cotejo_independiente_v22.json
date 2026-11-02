@@ -1,0 +1,27 @@
+{
+  "tarea": "Cotejar de forma independiente el candidato reestructurado estable, una vez entregado por el maquetador. Esta comisión no se despacha mientras la tarea de integración siga abierta.",
+  "fase": "F8",
+  "squad": "Squad A (Evidencia y Bibliometría)",
+  "subagente": "verificador-integridad",
+  "entradas": [
+    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_REESTRUCTURADO_V22.docx",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_REESTRUCTURADO_V22.pdf",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx",
+    "C:/MisInvestigaciones/tesis/sivac/SIVAC_Desarrollo_Software_XP.docx",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/criterios_aceptacion_direccion.json",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/control_direccion_intermedio_v22.json"
+  ],
+  "salida_esperada": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/cotejo_independiente_v22.json; handoff de máximo 300 palabras y bitácora del verificador en Obsidian. El informe distinguirá verificaciones automatizadas, lectura visual directa y límites no comprobados.",
+  "restricciones": [
+    "No modificar el motor, DOCX, PDF, fuentes, datos, otros informes o configuración. Trabajo en sitio, sin crear worktree. Usar Python -I cuando corresponda.",
+    "No ejecutar nuevos contrastes ni recalcular datos de prueba; no interpretar la edición como acreditación empírica o aprobación definitiva.",
+    "No repetir una auditoría bibliográfica o estadística general. Limitarse a las secciones modificadas, su conservación, remisiones y consistencia.",
+    "No publicar documentos, imágenes o contenido identificable en servicios externos. Las consultas públicas, si fueran indispensables, no deben contener datos privados.",
+    "No copiar ni sobrescribir el JSON cuya escritura fue bloqueada por aislamiento. No sortear límites de permisos.",
+    "No imponer un número total de páginas o tablas ni un nuevo método estadístico; no usar el ejemplar de Jhon de una página como evidencia de comparación capitular.",
+    "Las 26 tablas de la fuente XP no deben reducirse a coincidencia de imágenes o a ocho injertos. Comprobar también prosa sustantiva, cinco residuales S1-S5 y contenido único del antiguo Anexo 6.",
+    "Mantener diseño de un grupo, N=n=14, las tres dimensiones y seis indicadores oficiales; no elegir entre conteos históricos discrepantes de historias de usuario sin evidencia."
+  ],
+  "criterio_exito": "Emitir hallazgos reproducibles y localizados: XP aplicado fuera del cuerpo teórico y completo en Anexo 6; Anexo 7 con salida e interpretaciones históricas preservadas y advertencia explícita de prueba y errores no corregidos; resumen, abstract, resultados, discusión y conclusiones sin cifras de prueba como campo; fotos en Anexo 8; numeración continua, campos/índices, rótulos separados y sin referencias rotas; listas a izquierda y cifras/rangos íntegros en renders finales; preservación de medios y DPI reales declarados. Calcular hashes de los artefactos auditados y señalar cada comprobación no realizada. Aprobar únicamente la aptitud editorial para revisión si no quedan defectos bloqueantes, sin cerrar compuertas empíricas ni la aprobación humana."
+}

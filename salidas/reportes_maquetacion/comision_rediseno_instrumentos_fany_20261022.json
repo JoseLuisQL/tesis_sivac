@@ -1,0 +1,74 @@
+{
+  "fecha": "2026-10-22",
+  "solicitud": "Analizar los instrumentos de Fany, hoja 68, y rehacer los instrumentos SIVAC con presentación más clara, precisa y profesional, porque el formato actual resulta confuso al tesista.",
+  "fase": "F8",
+  "alcance": "Reelaboración editorial de los formularios esenciales en una nueva copia DOCX/PDF para revisión. Mantener contenido metodológico; separar hojas del participante, fichas del investigador y apoyos operativos. No sustituir todavía el paquete de 14 ni integrar anexos en el informe.",
+  "destino": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01",
+  "fuentes_preservadas_sha256": {
+    "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+    "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+    "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/_MANIFIESTO_EMISION.json": "f3053c809d5e2599973adefaf7263008d47951c4d7d6ef1e8fd2f61a4c101a87",
+    "salidas/documentos/informe_final_v19.docx": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+  },
+  "invariantes": [
+    "Tres dimensiones oficiales y seis indicadores de la VD; N = n = 14 y diseño preexperimental.",
+    "Modalidad A: ocho reactivos AP/UP idénticos en pretest y postest, escala 1 a 5.",
+    "Modalidad B: ocho reactivos PU/PE solo en postest y sin suma con A.",
+    "No copiar tema, reactivos, nombres, firmas, logotipos ni resultados de Fany.",
+    "Campos de identidad, respuestas, mediciones, firmas y fechas reales vacíos.",
+    "Rejilla visible de formularios; A4 vertical; márgenes institucionales; texto nativo, sin fórmulas en tablas.",
+    "Usar motor docx_quirurgico.py y constructor permanente, no scripts de versión ad hoc.",
+    "No acreditar validación real ni resolver controversias de protocolo por una decisión editorial."
+  ],
+  "comisiones": [
+    {
+      "tarea": "Localizar folio impreso 68, analizar instrumentos cercanos y comparar presentación con muestra actual.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "analista-documental",
+      "entradas": ["referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf", "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/PAQ-TRAB-01"],
+      "salida_esperada": "salidas/reportes_maquetacion/analisis_fany_p68_rediseno_20261022.json",
+      "restricciones": ["Solo lectura de fuentes", "No rediseñar variables ni reactivos", "Desambiguar folio impreso y página física"],
+      "criterio_exito": "Pautas editoriales específicas verificadas visualmente en las páginas correctas."
+    },
+    {
+      "tarea": "Especificar organización simple y trazable de los formularios sin cambiar contenido sustantivo.",
+      "fase": "F8",
+      "squad": "Squad B (Metodología y Psicometría)",
+      "subagente": "especialista-instrumentos",
+      "entradas": ["salidas/reportes_maquetacion/guia_campo_contenido_20261022.md", "salidas/reportes_maquetacion/especificacion_paquete_campo_20261022.json", "scripts/compiladores/paquete_campo_builder.py", "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/DECISIONES.md"],
+      "salida_esperada": "salidas/reportes_maquetacion/especificacion_rediseno_instrumentos_fany_20261022.json",
+      "restricciones": ["Sin cambio de reactivos o de escala", "No reducir captura objetiva a preguntas de percepción", "Registrar conflictos de protocolo sin inventar solución"],
+      "criterio_exito": "Bloques, instrucciones y campos implementables, con correspondencia a la versión fuente y soportes separados."
+    },
+    {
+      "tarea": "Implementar los cuatro documentos esenciales y su conjunto reunido en DOCX/PDF nativos, con apoyos separados y control visual completo.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "maquetador-docx",
+      "entradas": ["salidas/reportes_maquetacion/analisis_fany_p68_rediseno_20261022.json", "salidas/reportes_maquetacion/especificacion_rediseno_instrumentos_fany_20261022.json", "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx", "scripts/compiladores/paquete_campo_builder.py", "scripts/utilidades/docx_quirurgico.py"],
+      "salida_esperada": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/ con cuatro pares DOCX/PDF, conjunto reunido, APOYOS_INVESTIGADOR, control_visual y MANIFIESTO.json",
+      "restricciones": ["Conservar archivos del paquete anterior", "Extraer reactivos completos por código del rector", "No añadir biológico/lote/dosis ni tareas distintos si no figuran en formulario real actual", "Separar cálculos y protocolos de hojas de respuesta", "Entregar todas las continuaciones referidas", "Usar el motor canónico y un constructor permanente", "No copiar defectos geométricos ni dimensiones de Fany", "Sin datos empíricos ni validación presunta"],
+      "criterio_exito": "Archivos reales, render completo, campos trazables y enunciados idénticos completos, no solo prefijos; originales y paquete previo preservados."
+    },
+    {
+      "tarea": "Auditar independientemente contenido, cobertura de campos, equivalencia del conjunto, geometría y huellas de la nueva salida sin asumir las verificaciones del manifiesto.",
+      "fase": "F8",
+      "squad": "Squad E (Redacción y Maquetación)",
+      "subagente": "analista-documental",
+      "entradas": ["salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/", "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx", "salidas/instrumentos/PAQUETE_CAMPO_14_20261022/", "salidas/reportes_maquetacion/revision_direccion_rediseno_fany_20261022.json"],
+      "salida_esperada": "salidas/reportes_maquetacion/auditoria_rediseno_fany_20261022.json, handoff y bitácora",
+      "restricciones": ["No modificar documentos", "Identificar la versión auditada por huella", "Cotejar los enunciados completos", "Distinguir correcciones editoriales de cambios sustantivos", "No inferir comprensión de usuarios ni aprobación humana"],
+      "criterio_exito": "Pruebas reproducidas y discrepancias fácticas, con versión auditada y límites explícitos."
+    }
+  ],
+  "decisiones_de_direccion": {
+    "pagina_modelo": "Folio impreso 68 = página física 81; continúa en 82 y 83.",
+    "referencia_visual": "Rejilla, introducción breve, escala visible y bloques por indicador. No se copian preguntas, dimensiones, Arial ni tablas fuera de márgenes.",
+    "revisar_antes_de_replicar": "La nueva salida se presenta al tesista como copia editorial para revisión; no sustituye aún el expediente previo ni se replica catorce veces.",
+    "criterio_de_congelamiento": "Los campos y descripciones del formulario efectivamente emitido prevalecen para esta edición sobre propuestas contradictorias de la especificación. Las diferencias metodológicas permanecen pendientes, fuera de hojas de respuesta.",
+    "alcance_de_certificados": "El rediseño no decide ni modifica el alcance del expediente de validación. No usar DEC-020 histórica como regla prevalente sobre DEC-023 a DEC-026; no atribuir inspección de firmas ni aplicación real no acreditada.",
+    "secuencia_04": "El nombre de archivo 04 es una secuencia editorial propuesta por el equipo, no una preferencia expresada por el tesista ni un cuarto instrumento.",
+    "criterio_de_cierre": "La revisión técnica y visual permite entregar una copia para revisión; no acredita comprensión por usuarios, aprobación humana de impresión ni validación empírica."
+  }
+}

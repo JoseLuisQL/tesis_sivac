@@ -1,0 +1,22 @@
+{
+  "solo_verificar": true,
+  "sha256_origen": "7c79eb03e2875f5f007c982a946fa84feaa48e4aef1009f717c7163cb9aa2ff1",
+  "sha256_destino": null,
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 77,
+  "total_aplicadas": 75,
+  "total_fallidas": 2,
+  "saneamiento_espacios": {
+    "parrafos_saneados": 0,
+    "caracteres_recortados": 0
+  },
+  "lotes": [
+    {
+      "lote": "correcciones_bibliograficas_v14",
+      "total": 77,
+      "aplicadas": 75,
+      "fallidas": 2
+    }
+  ]
+}

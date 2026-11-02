@@ -1,0 +1,2239 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v12.docx",
+  "destino": "salidas\\documentos\\informe_final_v13.docx",
+  "solo_verificar": false,
+  "sha256_origen": "284cc76b3a2eb756599da7d1e04765ecf43c66674a9fa47043312cfa51268c1c",
+  "sha256_destino": "93c0a303671dbfddc21c8b7442a76600a98ba4244ea2f7a6287295db59a81753",
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 98,
+  "total_aplicadas": 98,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "codigos_internos_v09",
+      "total": 11,
+      "aplicadas": 11,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 290,
+          "ubicacion": "PARRAFO 290",
+          "ancla": "y la evidencia empírica de Hussain et al. (2025) y Luo et al. (2024) conforme a ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 351,
+          "ubicacion": "PARRAFO 351",
+          "ancla": "En estricta observancia de la decisión metodológica DEC-007, cada requerimiento ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 353,
+          "ubicacion": "PARRAFO 353",
+          "ancla": "Estructura taxonómica inmutable aprobada en la decisión DEC-007 y en la matriz d",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 351,
+          "ubicacion": "TABLA 6, fila 1, columna 3",
+          "ancla": "Dimensión de la Variable Dependiente (DEC-007)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 646,
+          "ubicacion": "PARRAFO 646",
+          "ancla": "ADVERTENCIA METODOLÓGICA Y SALVAGUARDA DEONTOLÓGICA (DEC-007 / REGLA CANÓNICA 01",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 646,
+          "ubicacion": "PARRAFO 646",
+          "ancla": "En estricta observancia del principio de probidad científica, transparencia cuan",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 677,
+          "ubicacion": "PARRAFO 677",
+          "ancla": "Nota. Evaluado mediante el Cuestionario TAM Modalidad A (DEC-019).",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 769,
+          "ubicacion": "PARRAFO 769",
+          "ancla": "ANEXO 1: MATRIZ DE CONSISTENCIA METODOLÓGICA (DEC-007)",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 772,
+          "ubicacion": "PARRAFO 772",
+          "ancla": "Nota. Matriz de consistencia metodológica aprobada según DEC-007. UNAJMA (2026).",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 773,
+          "ubicacion": "PARRAFO 773",
+          "ancla": "ANEXO 2: MATRIZ DE OPERACIONALIZACIÓN DE VARIABLES (DEC-007)",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 776,
+          "ubicacion": "PARRAFO 776",
+          "ancla": "Nota. Operacionalización oficial fijada por la Decisión DEC-007. UNAJMA (2026).",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "codigos_internos_extra_v11",
+      "total": 3,
+      "aplicadas": 3,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 778,
+          "ubicacion": "PARRAFO 778",
+          "ancla": "En cumplimiento de las decisiones DEC-014 y DEC-016, se presentan los tres (3) f",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 139,
+          "ubicacion": "PARRAFO 139",
+          "ancla": "cuyos estadísticos definitivos de campo se encuentran en fase de consolidación p",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 145,
+          "ubicacion": "PARRAFO 145",
+          "ancla": "tukupay yupaykunaqa postest wichq’aypim suyachkan [Pendiente].",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "rosenthal_v10_ordenes",
+      "total": 16,
+      "aplicadas": 16,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 3, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 40,
+          "ubicacion": "TABLA 40, fila 5, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 3, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 5, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 3, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 5, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 7, columna 5",
+          "ancla": "r = 0.62 (grande)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PARRAFO 686",
+          "ancla": "r de Rosenthal de 0.62 (efecto grande",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PARRAFO 686",
+          "ancla": "y r de Rosenthal = 0.62",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 689,
+          "ubicacion": "PARRAFO 689",
+          "ancla": "(|Z| / sqrt(2n))",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 692,
+          "ubicacion": "PARRAFO 692",
+          "ancla": "con r de Rosenthal de 0.62,",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 692,
+          "ubicacion": "PARRAFO 692",
+          "ancla": "con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.48e-12",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698",
+          "ancla": "y r = 0.62, con un p ajustado por Holm de p_adj = 2.23e-13",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698",
+          "ancla": "y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.57e-13",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 701,
+          "ubicacion": "PARRAFO 701",
+          "ancla": "(|d| > 8.0 y r > 0.60)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 705,
+          "ubicacion": "PARRAFO 705",
+          "ancla": "(|d| > 6.00 y r > 0.60)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "wilcoxon_p_v11",
+      "total": 9,
+      "aplicadas": 9,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 3, columna 4",
+          "ancla": "< .001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 3, columna 4",
+          "ancla": "< .001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 5, columna 4",
+          "ancla": "< .001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 7, columna 4",
+          "ancla": "< .001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PARRAFO 686",
+          "ancla": "p = 0.001 (p < .001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 692,
+          "ubicacion": "PARRAFO 692",
+          "ancla": "p < .001 con",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698, ocurrencia 1 (AP)",
+          "ancla": "p < .001 y r",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698, ocurrencia 2 (UP)",
+          "ancla": "p < .001 y r",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698 (TAM total)",
+          "ancla": "p < .001 (p_adj < .001)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "integridad_padron_v11",
+      "total": 3,
+      "aplicadas": 3,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 151,
+          "ubicacion": "PARRAFO 151",
+          "ancla": "dos operadores del Almacén Especializado de Vacunas de la Red Chanka",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 160,
+          "ubicacion": "PARRAFO 160",
+          "ancla": "dos operadores en el Almacén Especializado de Vacunas de la Red Chanka",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 579,
+          "ubicacion": "PARRAFO 579",
+          "ancla": "los 2 operadores del Almacén Especializado de Vacunas de la Red Chanka",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "refinamiento_v10_ordenes",
+      "total": 1,
+      "aplicadas": 1,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 160,
+          "ubicacion": "PARRAFO 160",
+          "ancla": "y doce operadores, uno en cada uno de los doce centros de acopio restantes, que ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "referencias_v09_ordenes",
+      "total": 22,
+      "aplicadas": 22,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 158,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022",
+          "sustituciones": 2,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 220,
+          "ubicacion": null,
+          "ancla": "publicada en la revista indexada JMIR Medical Informatics",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 259,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022, p. 14",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 285,
+          "ubicacion": null,
+          "ancla": "Ndlovu et al. (2021)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 293,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022, p. 14",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 295,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022, p. 14",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 309,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022, p. 14",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 317,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022, p. 14",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 444,
+          "ubicacion": null,
+          "ancla": "(Beck, 1999; Sommerville, 2016)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 586,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud, 2022",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 630,
+          "ubicacion": null,
+          "ancla": "Fany (2024)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 650,
+          "ubicacion": null,
+          "ancla": "(George & Mallery, 2003; Hernández-Sampieri & Mendoza, 2018)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 677,
+          "ubicacion": null,
+          "ancla": "Shapiro-Wilk (1965)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 677,
+          "ubicacion": null,
+          "ancla": "Razali & Wah, 2011",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 681,
+          "ubicacion": null,
+          "ancla": "Prueba de Shapiro-Wilk (1965)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 711,
+          "ubicacion": null,
+          "ancla": "disminuye la probabilidad de desabastecimiento.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 713,
+          "ubicacion": null,
+          "ancla": "(NTS N.° 196-MINSA/DGIESP-2022)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 732,
+          "ubicacion": null,
+          "ancla": "Brooks, D. J., Kim, C. I., Mboussou, F., y Danovaro-Holliday, M. C. (2024). Deve",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 734,
+          "ubicacion": null,
+          "ancla": "Chekol, A., Ketema, H., Endalew, B., y Asmare, G. (2023). Data quality of routin",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 753,
+          "ubicacion": null,
+          "ancla": "Mamani-Pari, D., Peñaloza-Hualpa, A. F., Humpiri-Flores, M. E., Gutierrez-Quispe",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 756,
+          "ubicacion": null,
+          "ancla": "Ministerio de Salud del Perú. (2022). Norma Técnica de Salud que establece el Es",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 758,
+          "ubicacion": null,
+          "ancla": "Ndlovu, K., Mauco, K. L., Keetile, M., Kadimo, K., Senyatso, R. Y., Ntebela, D.,",
+          "sustituciones": 1,
+          "modo": "busqueda_unica",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "acabado_tipografico_v12",
+      "total": 4,
+      "aplicadas": 4,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 12,
+          "ubicacion": "PARRAFO 12, comillas internas del título (anidamiento)",
+          "ancla": "La tesis titulada: \"APLICACIÓN DEL SISTEMA “SIVAC” PARA",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 12,
+          "ubicacion": "PARRAFO 12, delimitador de apertura",
+          "ancla": "titulada: \"APLICACIÓN DEL SISTEMA",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 12,
+          "ubicacion": "PARRAFO 12, delimitador de cierre",
+          "ancla": "APURÍMAC II\", es obra de mi exclusiva",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 142,
+          "ubicacion": "PARRAFO 142",
+          "ancla": "the \"SIVAC\" system improves",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    },
+    {
+      "lote": "notacion_matematica_v11",
+      "total": 29,
+      "aplicadas": 29,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 620,
+          "ubicacion": "PARRAFO 620",
+          "ancla": "asegurar que κ >= 0.80.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 623,
+          "ubicacion": "PARRAFO 623",
+          "ancla": "un valor α >= 0.70",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 637,
+          "ubicacion": "PARRAFO 637",
+          "ancla": "pequeño >= 0.10, mediano >= 0.30, grande >= 0.50",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 639,
+          "ubicacion": "PARRAFO 639",
+          "ancla": "pequeño >= 0.10, mediano >= 0.30 y grande >= 0.50",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 652,
+          "ubicacion": "PARRAFO 652",
+          "ancla": "baremación psicométrica: >= .90 Excelente",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 685,
+          "ubicacion": "PARRAFO 685",
+          "ancla": "mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PARRAFO 686",
+          "ancla": "(|d| >= 0.80). La prueba no paramétrica",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PARRAFO 686",
+          "ancla": "d de Cohen de -6.55 (|d| >= 0.80)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 686,
+          "ubicacion": "PARRAFO 686",
+          "ancla": "(efecto grande, r >= 0.50)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698",
+          "ancla": "d de Cohen de 8.91 (|d| >= 0.80)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 698,
+          "ubicacion": "PARRAFO 698",
+          "ancla": "d de Cohen de 9.32 (|d| >= 0.80)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 14,
+          "ubicacion": "TABLA 14, fila 5, columna 5",
+          "ancla": "(salt >= 10)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 34,
+          "ubicacion": "TABLA 34, fila 2, columna 4",
+          "ancla": "ICC(2,1) >= 0.75",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 34,
+          "ubicacion": "TABLA 34, fila 3, columna 4",
+          "ancla": "kappa de Cohen >= 0.80",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 677,
+          "ubicacion": "PARRAFO 677",
+          "ancla": "O_1 -> X -> O_2",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 677,
+          "ubicacion": "PARRAFO 677",
+          "ancla": "normal (p <= .05).",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 691,
+          "ubicacion": "PARRAFO 691",
+          "ancla": "mu_diff,RSD <= 0 y mu_diff,CPE <= 0",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 697,
+          "ubicacion": "PARRAFO 697",
+          "ancla": "mu_diff,AP <= 0 y mu_diff,UP <= 0",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 679,
+          "ubicacion": "PARRAFO 679",
+          "ancla": "prefijado de alpha = .05",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 681,
+          "ubicacion": "PARRAFO 681",
+          "ancla": "Nivel de significancia alpha = .05. Si p > .05",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 687,
+          "ubicacion": "PARRAFO 687",
+          "ancla": "umbral de significancia alpha = .05",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 689,
+          "ubicacion": "PARRAFO 689",
+          "ancla": "Nivel de significancia alpha = .05. Grados de libertad",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 693,
+          "ubicacion": "PARRAFO 693",
+          "ancla": "ajustados inferiores a alpha = .05",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 695,
+          "ubicacion": "PARRAFO 695",
+          "ancla": "Nivel de significancia alpha = .05. El incremento",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 699,
+          "ubicacion": "PARRAFO 699",
+          "ancla": "marcadamente inferiores a alpha = .05",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 701,
+          "ubicacion": "PARRAFO 701",
+          "ancla": "Nivel de significancia alpha = .05. El tamaño del efecto",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 284,
+          "ubicacion": "PARRAFO 284, ocurrencia 1",
+          "ancla": "coeficiente beta = 0.35",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 284,
+          "ubicacion": "PARRAFO 284, ocurrencia 2",
+          "ancla": "relación (beta = 0.23",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 44,
+          "ubicacion": "TABLA 44, fila 5, columna 4",
+          "ancla": "Procesamiento y Análisis: • Descriptivo: Mediana, RIQ, media, desviación estánda",
+          "sustituciones": 2,
+          "modo": "celda_reubicada",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [
+    {
+      "indice_tabla": 52,
+      "columnas": 18,
+      "filas": 15,
+      "ancho_tabla_dxa": 13630,
+      "margenes_laterales_dxa": 57,
+      "via_geometria": "rebalanceo",
+      "tamano_pt": 8.0,
+      "columnas_centradas": 16,
+      "rebalanceo": {
+        "aplicado": true,
+        "anchos_anteriores": [
+          1100,
+          2100,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          665
+        ],
+        "anchos_nuevos": [
+          1100,
+          1559,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          862,
+          995
+        ],
+        "ensanchadas": [
+          16,
+          17
+        ],
+        "donantes": [
+          1
+        ]
+      },
+      "verificacion_glifos": [
+        {
+          "columna": 0,
+          "ancho_dxa": 1100,
+          "ancho_util_dxa": 986,
+          "token_mas_largo": "TRAB-01",
+          "tamano_token_pt": 8.5,
+          "ancho_token_dxa": 680.0,
+          "requerido_dxa": 802,
+          "cabe": true
+        },
+        {
+          "columna": 1,
+          "ancho_dxa": 1559,
+          "ancho_util_dxa": 1445,
+          "token_mas_largo": "Huancabamba",
+          "tamano_token_pt": 8.5,
+          "ancho_token_dxa": 972.4,
+          "requerido_dxa": 1094,
+          "cabe": true
+        },
+        {
+          "columna": 2,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "t_reg",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 355.3,
+          "requerido_dxa": 477,
+          "cabe": true
+        },
+        {
+          "columna": 3,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "t_vale",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 408.8,
+          "requerido_dxa": 531,
+          "cabe": true
+        },
+        {
+          "columna": 4,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "62.5",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 280.0,
+          "requerido_dxa": 402,
+          "cabe": true
+        },
+        {
+          "columna": 5,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "65.0",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 280.0,
+          "requerido_dxa": 402,
+          "cabe": true
+        },
+        {
+          "columna": 6,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 7,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 8,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 9,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 10,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 11,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 12,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 13,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 14,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "score_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 435.3,
+          "requerido_dxa": 557,
+          "cabe": true
+        },
+        {
+          "columna": 15,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "score_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 435.3,
+          "requerido_dxa": 557,
+          "cabe": true
+        },
+        {
+          "columna": 16,
+          "ancho_dxa": 862,
+          "ancho_util_dxa": 748,
+          "token_mas_largo": "tam_total",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 657.6,
+          "requerido_dxa": 780,
+          "cabe": true
+        },
+        {
+          "columna": 17,
+          "ancho_dxa": 995,
+          "ancho_util_dxa": 881,
+          "token_mas_largo": "satisfaccion",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 791.0,
+          "requerido_dxa": 913,
+          "cabe": true
+        }
+      ],
+      "columnas_desbordadas": [],
+      "cabe_sin_desborde": true
+    },
+    {
+      "indice_tabla": 53,
+      "columnas": 18,
+      "filas": 15,
+      "ancho_tabla_dxa": 13630,
+      "margenes_laterales_dxa": 57,
+      "via_geometria": "rebalanceo",
+      "tamano_pt": 8.0,
+      "columnas_centradas": 16,
+      "rebalanceo": {
+        "aplicado": true,
+        "anchos_anteriores": [
+          1100,
+          2100,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          665
+        ],
+        "anchos_nuevos": [
+          1100,
+          1559,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          651,
+          862,
+          995
+        ],
+        "ensanchadas": [
+          16,
+          17
+        ],
+        "donantes": [
+          1
+        ]
+      },
+      "verificacion_glifos": [
+        {
+          "columna": 0,
+          "ancho_dxa": 1100,
+          "ancho_util_dxa": 986,
+          "token_mas_largo": "TRAB-01",
+          "tamano_token_pt": 8.5,
+          "ancho_token_dxa": 680.0,
+          "requerido_dxa": 802,
+          "cabe": true
+        },
+        {
+          "columna": 1,
+          "ancho_dxa": 1559,
+          "ancho_util_dxa": 1445,
+          "token_mas_largo": "Huancabamba",
+          "tamano_token_pt": 8.5,
+          "ancho_token_dxa": 972.4,
+          "requerido_dxa": 1094,
+          "cabe": true
+        },
+        {
+          "columna": 2,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "t_reg",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 355.3,
+          "requerido_dxa": 477,
+          "cabe": true
+        },
+        {
+          "columna": 3,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "t_vale",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 408.8,
+          "requerido_dxa": 531,
+          "cabe": true
+        },
+        {
+          "columna": 4,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "100.0",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 360.0,
+          "requerido_dxa": 482,
+          "cabe": true
+        },
+        {
+          "columna": 5,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "100.0",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 360.0,
+          "requerido_dxa": 482,
+          "cabe": true
+        },
+        {
+          "columna": 6,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 7,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 8,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 9,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "ap_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 249.0,
+          "requerido_dxa": 371,
+          "cabe": true
+        },
+        {
+          "columna": 10,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 11,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 12,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 13,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "up_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 257.9,
+          "requerido_dxa": 380,
+          "cabe": true
+        },
+        {
+          "columna": 14,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "score_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 435.3,
+          "requerido_dxa": 557,
+          "cabe": true
+        },
+        {
+          "columna": 15,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "token_mas_largo": "score_",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 435.3,
+          "requerido_dxa": 557,
+          "cabe": true
+        },
+        {
+          "columna": 16,
+          "ancho_dxa": 862,
+          "ancho_util_dxa": 748,
+          "token_mas_largo": "tam_total",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 657.6,
+          "requerido_dxa": 780,
+          "cabe": true
+        },
+        {
+          "columna": 17,
+          "ancho_dxa": 995,
+          "ancho_util_dxa": 881,
+          "token_mas_largo": "satisfaccion",
+          "tamano_token_pt": 8.0,
+          "ancho_token_dxa": 791.0,
+          "requerido_dxa": 913,
+          "cabe": true
+        }
+      ],
+      "columnas_desbordadas": [],
+      "cabe_sin_desborde": true
+    }
+  ],
+  "tablas_rebalanceadas": [
+    {
+      "indice_tabla": 14,
+      "columnas": 5,
+      "filas": 10,
+      "ancho_tabla_dxa": 8765,
+      "margenes_laterales_dxa": 60,
+      "via_geometria": "rebalanceo",
+      "rebalanceo": {
+        "aplicado": false,
+        "motivo": "Ninguna columna requiere ensanche",
+        "anchos_nuevos": [
+          1735,
+          1735,
+          1735,
+          1735,
+          1825
+        ]
+      },
+      "verificacion_glifos": [
+        {
+          "columna": 0,
+          "ancho_dxa": 1735,
+          "ancho_util_dxa": 1615,
+          "token_mas_largo": "ultimo_acceso",
+          "tamano_token_pt": 10.0,
+          "ancho_token_dxa": 1155.4,
+          "requerido_dxa": 1283,
+          "cabe": true
+        },
+        {
+          "columna": 1,
+          "ancho_dxa": 1735,
+          "ancho_util_dxa": 1615,
+          "token_mas_largo": "VARCHAR(100)",
+          "tamano_token_pt": 10.0,
+          "ancho_token_dxa": 1410.6,
+          "requerido_dxa": 1539,
+          "cabe": true
+        },
+        {
+          "columna": 2,
+          "ancho_dxa": 1735,
+          "ancho_util_dxa": 1615,
+          "token_mas_largo": "Nulabilidad",
+          "tamano_token_pt": 10.0,
+          "ancho_token_dxa": 1011.6,
+          "requerido_dxa": 1140,
+          "cabe": true
+        },
+        {
+          "columna": 3,
+          "ancho_dxa": 1735,
+          "ancho_util_dxa": 1615,
+          "token_mas_largo": "Ninguna",
+          "tamano_token_pt": 10.0,
+          "ancho_token_dxa": 688.8,
+          "requerido_dxa": 817,
+          "cabe": true
+        },
+        {
+          "columna": 4,
+          "ancho_dxa": 1825,
+          "ancho_util_dxa": 1705,
+          "token_mas_largo": "responsable_acopio,",
+          "tamano_token_pt": 10.0,
+          "ancho_token_dxa": 1627.4,
+          "requerido_dxa": 1755,
+          "cabe": true
+        }
+      ],
+      "columnas_desbordadas": [],
+      "cabe_sin_desborde": true
+    }
+  ],
+  "acciones": [
+    {
+      "categoria": "matriz_anexo_geometria",
+      "tabla": 52,
+      "estado": "corregido",
+      "detalle": "margenes laterales vigentes conservados (57 dxa); cabecera y celdas numericas a 8.0 pt; 16 columnas centradas; tblHeader y cantSplit; rebalanceo=si; via=rebalanceo"
+    },
+    {
+      "categoria": "matriz_anexo_geometria",
+      "tabla": 53,
+      "estado": "corregido",
+      "detalle": "margenes laterales vigentes conservados (57 dxa); cabecera y celdas numericas a 8.0 pt; 16 columnas centradas; tblHeader y cantSplit; rebalanceo=si; via=rebalanceo"
+    },
+    {
+      "categoria": "tabla_rebalanceo",
+      "tabla": 14,
+      "estado": "corregido",
+      "detalle": "rebalanceo=no; anchos [1735, 1735, 1735, 1735, 1825] -> [1735, 1735, 1735, 1735, 1825]"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 290,
+      "ubicacion": "PARRAFO 290",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 351,
+      "ubicacion": "PARRAFO 351",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 353,
+      "ubicacion": "PARRAFO 353",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 351,
+      "ubicacion": "TABLA 6, fila 1, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 646,
+      "ubicacion": "PARRAFO 646",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 646,
+      "ubicacion": "PARRAFO 646",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 677,
+      "ubicacion": "PARRAFO 677",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 769,
+      "ubicacion": "PARRAFO 769",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 772,
+      "ubicacion": "PARRAFO 772",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 773,
+      "ubicacion": "PARRAFO 773",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_v09",
+      "indice_docx": 776,
+      "ubicacion": "PARRAFO 776",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_extra_v11",
+      "indice_docx": 778,
+      "ubicacion": "PARRAFO 778",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_extra_v11",
+      "indice_docx": 139,
+      "ubicacion": "PARRAFO 139",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "codigos_internos_extra_v11",
+      "indice_docx": 145,
+      "ubicacion": "PARRAFO 145",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 3, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 40,
+      "ubicacion": "TABLA 40, fila 5, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 5, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 689,
+      "ubicacion": "PARRAFO 689",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 692,
+      "ubicacion": "PARRAFO 692",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 692,
+      "ubicacion": "PARRAFO 692",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 701,
+      "ubicacion": "PARRAFO 701",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "rosenthal_v10_ordenes",
+      "indice_docx": 705,
+      "ubicacion": "PARRAFO 705",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 692,
+      "ubicacion": "PARRAFO 692",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698, ocurrencia 1 (AP)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698, ocurrencia 2 (UP)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "wilcoxon_p_v11",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698 (TAM total)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "integridad_padron_v11",
+      "indice_docx": 151,
+      "ubicacion": "PARRAFO 151",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "integridad_padron_v11",
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "integridad_padron_v11",
+      "indice_docx": 579,
+      "ubicacion": "PARRAFO 579",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "refinamiento_v10_ordenes",
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 158,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "2 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 220,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 259,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 285,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 293,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 295,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 309,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 317,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 444,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 586,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 630,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 650,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 677,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 677,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 681,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 711,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 713,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 732,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 734,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 753,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 756,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "referencias_v09_ordenes",
+      "indice_docx": 758,
+      "ubicacion": null,
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo busqueda_unica"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "acabado_tipografico_v12",
+      "indice_docx": 12,
+      "ubicacion": "PARRAFO 12, comillas internas del título (anidamiento)",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "acabado_tipografico_v12",
+      "indice_docx": 12,
+      "ubicacion": "PARRAFO 12, delimitador de apertura",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "acabado_tipografico_v12",
+      "indice_docx": 12,
+      "ubicacion": "PARRAFO 12, delimitador de cierre",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "acabado_tipografico_v12",
+      "indice_docx": 142,
+      "ubicacion": "PARRAFO 142",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 620,
+      "ubicacion": "PARRAFO 620",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 623,
+      "ubicacion": "PARRAFO 623",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 637,
+      "ubicacion": "PARRAFO 637",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 639,
+      "ubicacion": "PARRAFO 639",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 652,
+      "ubicacion": "PARRAFO 652",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 685,
+      "ubicacion": "PARRAFO 685",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 14,
+      "ubicacion": "TABLA 14, fila 5, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 2, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 3, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 677,
+      "ubicacion": "PARRAFO 677",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 677,
+      "ubicacion": "PARRAFO 677",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 691,
+      "ubicacion": "PARRAFO 691",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 697,
+      "ubicacion": "PARRAFO 697",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 679,
+      "ubicacion": "PARRAFO 679",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 681,
+      "ubicacion": "PARRAFO 681",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 687,
+      "ubicacion": "PARRAFO 687",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 689,
+      "ubicacion": "PARRAFO 689",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 693,
+      "ubicacion": "PARRAFO 693",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 695,
+      "ubicacion": "PARRAFO 695",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 699,
+      "ubicacion": "PARRAFO 699",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 701,
+      "ubicacion": "PARRAFO 701",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 284,
+      "ubicacion": "PARRAFO 284, ocurrencia 1",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 284,
+      "ubicacion": "PARRAFO 284, ocurrencia 2",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "notacion_matematica_v11",
+      "indice_docx": 44,
+      "ubicacion": "TABLA 44, fila 5, columna 4",
+      "estado": "aplicada",
+      "detalle": "2 sustitucion(es); modo celda_reubicada"
+    }
+  ]
+}

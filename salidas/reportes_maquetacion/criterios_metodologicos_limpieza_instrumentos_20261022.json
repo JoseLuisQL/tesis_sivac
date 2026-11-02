@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "agente": "guardian-consistencia",
+    "squad": "Squad B",
+    "objeto": "Fijar invariantes, alcance de 'validado por expertos', clasificacion de contenido y limites implementables para la limpieza editorial de los instrumentos. No rediseña constructos ni rehace matrices.",
+    "fuente_auditada": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v02/00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf (7 paginas)",
+    "fuera_de_alcance": "Geometria, margenes, tipografia, bordes y logotipos: competen al maquetador."
+  },
+  "invariantes": {
+    "dimensiones": 3,
+    "indicadores": 6,
+    "poblacion": "N = n = 14, censal",
+    "diseno": "Preexperimental O1 -> X -> O2, un solo grupo",
+    "modalidades": "A oficial pre/post; B complementaria solo post; no aditivas, sin puntaje global",
+    "reactivos": "16 congelados y literales: AP-01 a AP-04, UP-01 a UP-04, PU-01 a PU-04, PE-01 a PE-04",
+    "escala": "Likert 1 a 5",
+    "vi": "Intervencion tecnologica dicotomica, sin dimensiones psicometricas propias"
+  },
+  "cobertura_indicadores": [
+    {"indicador": "T_reg", "dim": "Oportunidad", "hoja": "01", "campo": "REG-01 a REG-03: hora inicio, hora fin, duracion, pausa, tarea valida", "estado": "cubierto"},
+    {"indicador": "T_vale", "dim": "Oportunidad", "hoja": "01", "campo": "VALE-01 a VALE-03, mismos campos", "estado": "cubierto"},
+    {"indicador": "RSD", "dim": "Consistencia", "hoja": "02", "campo": "Bloques D-01 a D-05 con C1 a C8, veredicto y causa; unidad documento", "estado": "cubierto"},
+    {"indicador": "CPE", "dim": "Consistencia", "hoja": "02", "campo": "Tabla E-01 a E-12: programada, entregada, diferencia, documento que autoriza, concordante; unidad entrega", "estado": "cubierto"},
+    {"indicador": "AP", "dim": "Satisfaccion", "hoja": "03", "campo": "AP-01 a AP-04, escala 1-5, pre y post", "estado": "cubierto"},
+    {"indicador": "UP", "dim": "Satisfaccion", "hoja": "03", "campo": "UP-01 a UP-04, escala 1-5, pre y post", "estado": "cubierto"},
+    {"indicador": "PU y PE", "dim": "No es indicador DEC-007", "hoja": "04", "campo": "Modulo B complementario, solo post, no aditivo", "estado": "cubierto como modulo anexo"}
+  ],
+  "alcance_validado_por_expertos": {
+    "verificacion_tecnica": {
+      "que_es": "Control editorial y de integridad: siete paginas, cabecera, fase en blanco, 8 reactivos A, 8 B, 8 criterios, ausencia de formulas, puntajes y datos personales.",
+      "que_no_prueba": "No acredita validez de contenido, ni confiabilidad, ni aplicacion de campo.",
+      "estado": "verificable por lectura y por los controles del contrato de impresion"
+    },
+    "validacion_de_contenido_real": {
+      "que_exige": "Fichas firmadas por cada juez, con nombre, DNI, fecha, opinion de aplicabilidad y matriz por item y criterio, sobre un formato y version identificados.",
+      "dato_disponible": "Declaracion del tesista del 2026-10-21: todos los jueces calificaron 4 en todo.",
+      "limite_del_dato": "No enumera jueces, no identifica formato ni version, no aporta matriz ni fecha de evaluacion, no adjunta actas.",
+      "consecuencia": "Se registra como dato reportado y provisional. No autoriza rotular el instrumento como validado ni rellenar certificados. No constituye rechazo: la limitacion es documental.",
+      "valores_reportados": "V e IVC de 1.000 bajo escala 1-4, sin recalculo ni intervalo"
+    },
+    "evidencia_faltante_para_rotular_validado": [
+      "Fichas o actas firmadas por los jueces",
+      "Numero e identidad de los jueces que evaluaron",
+      "Fecha efectiva de evaluacion",
+      "Formato y version aplicados (8 items Si/No o 12 componentes 1-4)",
+      "Matriz por juez, item y criterio",
+      "Opinion de aplicabilidad y observaciones",
+      "Calibracion ICC(2,1) y kappa de campo, si se invocan como acreditacion"
+    ]
+  },
+  "clasificacion_contenido": {
+    "imprescindible_en_campo": [
+      "01: codigo TRAB, codigo de centro, fase, fecha, observador; seis tareas con hora inicio, hora fin, duracion, pausa con causa, tarea valida y observaciones de tarea; firma del observador",
+      "02: codigo, centro, fase, fecha y ventana auditada; tipo y fecha del documento; C1 a C8; veredicto; causa o motivo; tabla CPE de seis columnas; conteos crudos; firma del auditor",
+      "03: codigo, centro, fase, fecha; escala 1-5; ocho reactivos AP y UP",
+      "04: codigo, centro, fecha; escala 1-5; ocho reactivos PU y PE"
+    ],
+    "imprescindible_en_apoyo": [
+      {"contenido": "Consolidado de media, mediana y tareas validas (hoja 01)", "destino": "Hoja de cierre del investigador", "condicion": "Los tiempos crudos permanecen en campo; dejar linea de remision", "motivo": "Calculo de consolidacion, no registro"},
+      {"contenido": "Instrucciones de pausa, anulacion y repeticion (hoja 01)", "destino": "Hoja de instrucciones del aplicador", "condicion": "Conservar el campo Pausa, Tarea valida y causal; una linea remite a la regla completa", "motivo": "Se conserva el tratamiento de pausas, se aligera la hoja"},
+      {"contenido": "Incidencias H-01 a H-04 (hoja 01)", "destino": "Registro de campo o continuacion correlativa", "condicion": "Mantener remision; no perder la traza de la incidencia", "motivo": "Registro accesorio, no medicion"},
+      {"contenido": "Observaciones del observador y del auditor", "destino": "Registro de campo, con recuadro breve en la hoja", "condicion": "No eliminar el espacio de forma total", "motivo": "Texto libre, no campo del indicador"},
+      {"contenido": "Campo Investigador (admin.) en hojas 03 y 04", "destino": "Control privado codigo-nombre", "condicion": "Es administrativo; no se convierte en dato del participante", "motivo": "No lo llena el participante"}
+    ],
+    "prescindible_por_duplicacion": [
+      {"contenido": "Observaciones del participante (opcional) en hojas 03 y 04", "destino": "Registro de campo del investigador", "condicion": "Retirar de la hoja del participante sin destruir el texto ya recogido", "motivo": "No es campo del instrumento y duplica el registro de campo"},
+      {"contenido": "Leyenda completa de C1 a C8 repetida por bloque", "destino": "Una sola impresion en la hoja 02", "condicion": "En cada bloque queda la etiqueta corta", "motivo": "Duplicacion sin valor de registro"},
+      {"contenido": "Repeticion de la regla de pausa en hoja y manual", "destino": "Instrucciones del aplicador", "condicion": "Una sola redaccion vigente", "motivo": "Dos redacciones del mismo protocolo abren divergencia"}
+    ]
+  },
+  "limites_implementables": [
+    "L-01: Solo se cambian rotulos, orden e instrucciones; ningun reactivo, criterio, tarea, escala, unidad o umbral se redefine.",
+    "L-02: Todo campo de la v02 se conserva en su hoja o se traslada a un soporte con destino declarado; ninguno se elimina sin destino.",
+    "L-03: Los 16 reactivos permanecen literales y congelados; A en pre y post, B solo en post, sin suma entre modalidades.",
+    "L-04: Prohibido anadir campos demograficos, firma del participante, variables, items o baremos nuevos.",
+    "L-05: Ninguna hoja de campo lleva formulas, porcentajes, puntajes, V, IVC, ICC, kappa, alfa u omega.",
+    "L-06: Toda hoja debe leerse como tres dimensiones y seis indicadores; ninguna puede sugerir una cuarta dimension.",
+    "L-07: Los pendientes de asesora se conservan marcados y sin resolver por edicion; no se abren capitulos por esta tarea."
+  ],
+  "instrucciones_breves": {
+    "observador": [
+      "Anote hora de inicio y de fin con segundos y convierta a minutos decimales.",
+      "Si hay interrupcion, detenga el cronometro y anote la causa; el tiempo pausado no se cuenta.",
+      "Si la tarea no se completa, anule, anote el motivo y repitala en la ventana; nunca la anule por ser lenta."
+    ],
+    "auditor": [
+      "Califique cada documento con C1 a C8; es conforme solo si los ocho son Si.",
+      "Una entrega es concordante si la cantidad iguala la programada o si la diferencia tiene documento formal que la autoriza.",
+      "Registre conteos de documentos y de entregas; el porcentaje se calcula fuera de la hoja y no se suman dosis."
+    ],
+    "participante": [
+      "Marque una sola casilla por enunciado: 1 es totalmente en desacuerdo y 5 totalmente de acuerdo.",
+      "Responda segun su experiencia real; no hay respuestas correctas ni incorrectas.",
+      "No escriba nombre, apellido ni DNI; use solo el codigo que le entregue el investigador."
+    ]
+  },
+  "pendientes_asesora": [
+    {"id": "C-01", "tema": "Tareas heterogeneas frente a repeticiones estandarizadas", "tratamiento": "Se conservan REG-01 a REG-03 y VALE-01 a VALE-03 de la fuente; no se convierten en seis repeticiones"},
+    {"id": "C-02", "tema": "Modo del corpus de 40 a 60 documentos", "tratamiento": "Parametro vacio; global por ventana o por trabajador"},
+    {"id": "C-06", "tema": "Version aprobada del consentimiento", "tratamiento": "Soporte separado; no se usa el modelo actual"},
+    {"id": "C-07", "tema": "Criterio minimo de exposicion a SIVAC", "tratamiento": "Campo vacio; sin registro no se declara valido el postest"}
+  ],
+  "no_hacer": [
+    "No recalcular ni certificar V, IVC, ICC, kappa, alfa u omega.",
+    "No inferir numero de jueces, puntajes ni identidades no reportadas.",
+    "No recodificar la calificacion 4 como Si.",
+    "No rehacer matrices, capitulos ni instrumentos fuente.",
+    "No adoptar DEC-020 como regla unica; es registro historico.",
+    "No declarar validado, aprobado ni cerrado QG-5."
+  ],
+  "estado": {
+    "qg_5": "abierta",
+    "f6": "bloqueada",
+    "naturaleza_limitacion": "documental",
+    "instrumentos_v02": "conservados; edicion solo de rotulos e instrucciones"
+  }
+}

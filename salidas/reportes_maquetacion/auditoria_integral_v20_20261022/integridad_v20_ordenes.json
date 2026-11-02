@@ -1,0 +1,809 @@
+{
+  "meta": {
+    "auditoria": "Integridad académica del tramo final v19 y modelo Fany 2024",
+    "agente": "verificador-integridad",
+    "squad": "A",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "fecha": "2026-10-22",
+    "raiz": "C:/MisInvestigaciones/tesis/sivac",
+    "fuente_docx": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v19.docx",
+      "sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "bytes": 15090858
+    },
+    "fuente_pdf": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v19.pdf",
+      "sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+      "paginas": 158
+    },
+    "modelo_fany": {
+      "ruta": "C:/MisInvestigaciones/tesis/sivac/referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+      "sha256": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+      "paginas": 106
+    },
+    "rango_visual": {
+      "sivac": {
+        "pdf_pages": [
+          107,
+          158
+        ],
+        "count": 52,
+        "printed_offset": -15
+      },
+      "fany": {
+        "pdf_pages": [
+          73,
+          106
+        ],
+        "count": 34,
+        "printed_offset": -13
+      }
+    },
+    "metodo_visual": "Lectura visual página por página de las 52 páginas SIVAC y las 34 páginas Fany, mediante renderizado PDF y las imágenes PNG a 110 DPI. La capa de texto se utilizó exclusivamente para extraer anclas literales y verificar celdas; no se declara ningún barrido automático como lectura visual.",
+    "limites": [
+      "No se modificó el DOCX, el PDF ni el modelo Fany.",
+      "No se reabrió el análisis estadístico ni se recalcularon pruebas.",
+      "No se revalidaron los 53 DOIs en línea; se conserva la validación Crossref de la versión 19 y no se detectó discrepancia nueva.",
+      "Las páginas fuera del rango visual se citan solo cuando una comprobación automatizada de capa de texto lo justifica y se identifican como tales."
+    ]
+  },
+  "principios_de_aplicacion": [
+    "No alterar valores numéricos, tablas, intervalos de confianza, p-valores ni decisiones inferenciales.",
+    "No imputar datos, fechas, firmas, jueces, coeficientes ni identidades.",
+    "No introducir DEC, [VERIFICAR] ni U+2014 en la copia limpia de Word; los pendientes se reportan en el JSON de auditoría.",
+    "Las tablas de anexos en rejilla son excepción admitida; no aplicarles el formato de tres líneas.",
+    "Toda orden es editorial o de consistencia; las órdenes condicionales requieren confirmación documental del tesista antes de aplicarse."
+  ],
+  "resumen": {
+    "total_ordenes": 22,
+    "alta": 10,
+    "media": 3,
+    "baja": 9,
+    "condicionales": 6,
+    "con_reemplazo_textual": 21
+  },
+  "ordenes": [
+    {
+      "id": "ORD-INT-01",
+      "hallazgo_id": "SIV-01",
+      "prioridad": "ALTA",
+      "tipo": "consistencia_metodologica",
+      "alcance": "parrafo_completo",
+      "ubicaciones": [
+        {
+          "page_pdf": 114,
+          "page_printed": 99,
+          "paragraph_id": "P2287",
+          "ancla": "la prueba de los rangos con signo de Wilcoxon constituyó el estimador primario"
+        }
+      ],
+      "texto_original": "En la fase inferencial, considerando el tamaño reducido de la población censal (N = 14) y la presencia de escalas ordinales en la tercera dimensión, la prueba de los rangos con signo de Wilcoxon constituyó el estimador primario robusto y uniforme para muestras pareadas pequeñas, complementada por la prueba t de Student pareada (Ecuación 9) únicamente en los indicadores continuos cuyas diferencias pareadas (dᵢ = O₂ᵢ - O₁ᵢ) confirmaron normalidad en la prueba de Shapiro-Wilk (p > .05):",
+      "reemplazo_propuesto": "En la fase inferencial, considerando el tamaño reducido de la población censal (N = 14) y la presencia de escalas ordinales en la tercera dimensión, la prueba t de Student para muestras pareadas constituyó el estimador primario en los indicadores cuyas diferencias pareadas (dᵢ = O₂ᵢ - O₁ᵢ) confirmaron normalidad en la prueba de Shapiro-Wilk (p > .05), mientras que la prueba de los rangos con signo de Wilcoxon se reportó de forma paralela como contraste de robustez para muestras pareadas pequeñas:",
+      "evidencia": [
+        "P2574 (PDF 124): habilita el uso legítimo y preferente de la prueba paramétrica t de Student y reporta Wilcoxon en paralelo.",
+        "P2629 (PDF 126): los resultados inferenciales se encabezan con la prueba t de Student pareada y Wilcoxon corrobora la conclusión.",
+        "Tabla 39 (PDF 125): la columna Prueba asignada indica t de Student pareada para los siete indicadores.",
+        "Tabla 44, fila 20 (PDF 145): la matriz de consistencia solo menciona Wilcoxon, omisión que se corrige en ORD-INT-02."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "No altera estadísticos, p-valores, grados de libertad ni decisiones. Solo alinea la jerarquía metodológica declarada con la efectivamente reportada."
+    },
+    {
+      "id": "ORD-INT-02",
+      "hallazgo_id": "SIV-01",
+      "prioridad": "ALTA",
+      "tipo": "consistencia_metodologica",
+      "alcance": "celda_completa",
+      "ubicaciones": [
+        {
+          "page_pdf": 145,
+          "page_printed": 130,
+          "tabla": "44",
+          "fila": 20,
+          "columna": 1,
+          "cell_id": "T044.20.1",
+          "ancla": "Procesamiento y Análisis"
+        }
+      ],
+      "texto_original": "Procesamiento y Análisis:\n• Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7\n• Normalidad: Prueba de Shapiro-Wilk (n = 14)\n• Inferencial: Prueba de rangos con signo de Wilcoxon pareada (α = 0.05 bilateral)\n• Control FWER: Ajuste de p-valor mediante Holm-Bonferroni\n• Tamaño del efecto: r de Rosenthal a partir del estadístico Z",
+      "reemplazo_propuesto": "Procesamiento y Análisis:\n• Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7\n• Normalidad: Prueba de Shapiro-Wilk (n = 14)\n• Inferencial: Prueba t de Student pareada para muestras relacionadas y prueba de rangos con signo de Wilcoxon como contraste de robustez (α = 0.05 bilateral)\n• Control FWER: Ajuste de p-valor mediante Holm-Bonferroni\n• Tamaño del efecto: d de Cohen para la prueba paramétrica y r de Rosenthal a partir del estadístico Z",
+      "evidencia": [
+        "P2629 (PDF 126): t de Student pareada como prueba principal, con d de Cohen.",
+        "P2574 (PDF 124): t de Student preferente; Wilcoxon en paralelo.",
+        "Tabla 39 (PDF 125): t de Student pareada asignada a los siete indicadores."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "La matriz de consistencia debe reflejar ambos contrastes, tal como se reportan en el Capítulo V."
+    },
+    {
+      "id": "ORD-INT-03",
+      "hallazgo_id": "SIV-02",
+      "prioridad": "ALTA",
+      "tipo": "consistencia_estadistica",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 115,
+          "page_printed": 100,
+          "paragraph_id": "P2294",
+          "ancla": "corrección secuencial de Holm-Bonferroni sobre los seis indicadores"
+        }
+      ],
+      "texto_original": "sobre los seis indicadores para controlar rigurosamente la tasa de error familiar tipo I (FWER)",
+      "reemplazo_propuesto": "sobre los seis indicadores y el puntaje global de satisfacción TAM (siete contrastes en total) para controlar rigurosamente la tasa de error familiar tipo I (FWER)",
+      "evidencia": [
+        "P2573 (PDF 124): la prueba de Shapiro-Wilk reporta siete contrastes, incluido el puntaje global TAM.",
+        "Los p_adj de la Tabla 41 y de la Tabla 42 son exactamente compatibles con Holm sobre siete pruebas ordenadas: 7.57e-15×6=4.54e-14; 3.13e-14×5=1.57e-13; 5.57e-14×4=2.23e-13; 4.92e-13×3=1.48e-12; 1.00e-12×2=2.00e-12; 2.88e-12×1=2.88e-12.",
+        "La Tabla 42 incluye el contraste global TAM, por lo que la corrección no puede describirse como aplicada solo a seis indicadores."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "No se modifican los p-valores ni los p_adj. Solo se corrige la descripción del universo de contrastes."
+    },
+    {
+      "id": "ORD-INT-04",
+      "hallazgo_id": "SIV-03",
+      "prioridad": "ALTA",
+      "tipo": "reproducibilidad",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 125,
+          "page_printed": 110,
+          "paragraph_id": "P2624",
+          "ancla": "Elaboración propia en base a SPSS/Python"
+        }
+      ],
+      "texto_original": "Elaboración propia en base a SPSS/Python.",
+      "reemplazo_propuesto": "Elaboración propia en base a Python y R.",
+      "evidencia": [
+        "P2286 (PDF 114): el procesamiento se declara en Python (scipy.stats, statsmodels, pingouin) y el entorno bioestadístico R.",
+        "No se localiza otra mención de SPSS en el cuerpo del documento; las figuras se declaran generadas con Python (Matplotlib) a 300 DPI."
+      ],
+      "requiere_confirmacion": true,
+      "nota": "Si el tesista confirma que también utilizó SPSS, debe declararlo en 3.6 y conservar la mención en la nota. Si no lo utilizó, aplicar el reemplazo propuesto."
+    },
+    {
+      "id": "ORD-INT-05",
+      "hallazgo_id": "SIV-04",
+      "prioridad": "ALTA",
+      "tipo": "sobreafirmacion_empirica",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 151,
+          "page_printed": 136,
+          "paragraph_id": "P3017",
+          "ancla": "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación"
+        }
+      ],
+      "texto_original": "Se incluyen los tres instrumentos oficiales diseñados y aplicados en la investigación",
+      "reemplazo_propuesto": "Se incluyen los tres instrumentos oficiales diseñados para la investigación",
+      "evidencia": [
+        "P2300 (PDF 117): los resultados del Capítulo V corresponden a un conjunto de datos provisionales de prueba y deben sustituirse por registros definitivos antes de la sustentación.",
+        "P3096 y P3380 (PDF 153): la matriz de datos es de prueba y no constituye mediciones de campo.",
+        "P3709 (PDF 156): las fotografías de evidencia de aplicación en campo están pendientes de incorporación; los espacios no acreditan por sí mismos la realización del registro.",
+        "P3094 (PDF 152): los dictámenes de los tres jueces aún no están emitidos ni firmados."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Mantiene la descripción de los instrumentos y elimina la afirmación de aplicación empírica no acreditada. No suprime la limitación; la hace explícita."
+    },
+    {
+      "id": "ORD-INT-06",
+      "hallazgo_id": "SIV-05",
+      "prioridad": "ALTA",
+      "tipo": "contradiccion_interna",
+      "alcance": "parrafo_completo",
+      "ubicaciones": [
+        {
+          "page_pdf": 152,
+          "page_printed": 137,
+          "paragraph_id": "P3094",
+          "ancla": "Los coeficientes V de Aiken, IVC y Alfa de Cronbach se consignarán"
+        }
+      ],
+      "texto_original": "Nota. Cuestionario TAM de ocho ítems (Modalidad A) remitido a juicio de expertos. Los coeficientes V de Aiken, IVC y Alfa de Cronbach se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces.",
+      "reemplazo_propuesto": "Nota. Cuestionario TAM de ocho ítems (Modalidad A) remitido a juicio de expertos. Los coeficientes V de Aiken e IVC se consignarán en el expediente una vez emitidos y firmados los dictámenes de los tres jueces. El coeficiente Alfa de Cronbach reportado en la Tabla 35 corresponde a un cálculo provisional sobre datos de prueba.",
+      "evidencia": [
+        "Tabla 35 (PDF 118): reporta Alfa de Cronbach de .939, .877, .874, .915, .831 y .841, con nota de resultados provisionales sobre datos de prueba.",
+        "P3094 (PDF 152): afirma que el Alfa se consignará una vez firmados los dictámenes, lo que contradice la Tabla 35.",
+        "P2355 (PDF 118): los resultados de la Tabla 35 no constituyen mediciones de campo."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Distingue el Alfa provisional ya calculado de los coeficientes de juicio de expertos aún pendientes. No altera los valores de la Tabla 35."
+    },
+    {
+      "id": "ORD-INT-07",
+      "hallazgo_id": "SIV-06",
+      "prioridad": "MEDIA",
+      "tipo": "ambiguedad_validacion",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 131,
+          "page_printed": 116,
+          "paragraph_id": "P2811",
+          "ancla": "logrando una herramienta robusta, validada y con métricas de alta calidad"
+        }
+      ],
+      "texto_original": "logrando una herramienta robusta, validada y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023",
+      "reemplazo_propuesto": "logrando una herramienta robusta, verificada funcionalmente y con métricas de alta calidad bajo el estándar ISO/IEC 25010:2023",
+      "evidencia": [
+        "P2958 (PDF 148): los tres formatos de evaluación por juicio de expertos se presentan en blanco.",
+        "P3094 (PDF 152): los dictámenes de los tres jueces aún no están emitidos ni firmados.",
+        "P2279 (PDF 114): el resultado del juicio de contenido se declara condicional y pendiente de cotejo."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Evita que validada se lea como validación de contenido ya certificada. La verificación funcional del software es un alcance distinto y sí está documentada."
+    },
+    {
+      "id": "ORD-INT-08",
+      "hallazgo_id": "SIV-07",
+      "prioridad": "ALTA",
+      "tipo": "soporte_empirico",
+      "alcance": "parrafo_completo",
+      "ubicaciones": [
+        {
+          "page_pdf": 115,
+          "page_printed": 100,
+          "paragraph_id": "P2296",
+          "ancla": "se tramitó la debida autorización institucional",
+          "nota": "El párrafo inicia en la página 100 y continúa en la 101."
+        }
+      ],
+      "texto_original": "La ejecución de la presente investigación se rigió por los principios éticos de la investigación científica y la salvaguarda de la gestión sanitaria pública en la Dirección de Salud Apurímac II. En primer lugar, se tramitó la debida autorización institucional ante la Dirección General y la Coordinación de la Estrategia Sanitaria de Inmunizaciones y Cadena de Frío de la entidad, garantizando que las intervenciones técnicas no alteraran la provisión regular de biológicos a los establecimientos de salud jurisdiccionales.",
+      "reemplazo_propuesto": "La ejecución de la presente investigación se rigió por los principios éticos de la investigación científica y la salvaguarda de la gestión sanitaria pública en la Dirección de Salud Apurímac II. En primer lugar, se previó la autorización institucional ante la Dirección General y la Coordinación de la Estrategia Sanitaria de Inmunizaciones y Cadena de Frío de la entidad, garantizando que las intervenciones técnicas no alteraran la provisión regular de biológicos a los establecimientos de salud jurisdiccionales.",
+      "evidencia": [
+        "No se localiza en el corpus auditado el documento de autorización institucional, su fecha o su número de expediente.",
+        "La Comisión prohíbe imputar fechas, firmas o actos administrativos no acreditados."
+      ],
+      "requiere_confirmacion": true,
+      "nota": "Si el documento de autorización existe, conservar el texto original y anexarlo. Si no existe, aplicar la formulación preventiva propuesta."
+    },
+    {
+      "id": "ORD-INT-09",
+      "hallazgo_id": "SIV-07",
+      "prioridad": "ALTA",
+      "tipo": "soporte_empirico",
+      "alcance": "parrafo_completo",
+      "ubicaciones": [
+        {
+          "page_pdf": 115,
+          "page_printed": 100,
+          "paragraph_id": "P2297",
+          "ancla": "suscripción del consentimiento informado por parte de los catorce operadores",
+          "nota": "El párrafo inicia en la página 100 y continúa en la 101."
+        }
+      ],
+      "texto_original": "En segundo lugar, se garantizó el principio de autonomía y voluntariedad mediante la suscripción del consentimiento informado por parte de los catorce operadores participantes, asegurando la confidencialidad estricta y el anonimato de sus datos personales mediante la asignación de identificadores alfanuméricos correlativos (OP-01 a OP-14). Asimismo, se resguardó la confidencialidad de la información estratégica institucional, restringiendo el acceso a los registros y velando porque el estudio no involucrara datos clínicos nominales de pacientes ni menores de edad, limitándose estrictamente al control transaccional y volumétrico de lotes.",
+      "reemplazo_propuesto": "En segundo lugar, se estableció como requisito la suscripción del consentimiento informado por parte de los catorce operadores participantes, asegurando la confidencialidad estricta y el anonimato de sus datos personales mediante la asignación de identificadores alfanuméricos correlativos (OP-01 a OP-14). Asimismo, se resguardó la confidencialidad de la información estratégica institucional, restringiendo el acceso a los registros y velando porque el estudio no involucrara datos clínicos nominales de pacientes ni menores de edad, limitándose estrictamente al control transaccional y volumétrico de lotes.",
+      "evidencia": [
+        "No se localizan en el corpus auditado los catorce consentimientos informados firmados ni su registro de custodia.",
+        "La Comisión prohíbe imputar firmas, fechas o identidades de participantes."
+      ],
+      "requiere_confirmacion": true,
+      "nota": "Si los consentimientos existen, conservar el texto original y anexar el registro. Si no existen, aplicar la formulación de requisito propuesta."
+    },
+    {
+      "id": "ORD-INT-10",
+      "hallazgo_id": "SIV-08",
+      "prioridad": "MEDIA",
+      "tipo": "consistencia_documental",
+      "alcance": "multiples_fragmentos_y_celdas",
+      "ubicaciones": [
+        {
+          "page_pdf": 110,
+          "page_printed": 95,
+          "paragraph_id": "P2214",
+          "ancla": "Ficha de observación de tiempos cronometrados / Guía de cotejo documental"
+        },
+        {
+          "page_pdf": 117,
+          "page_printed": 102,
+          "paragraph_id": "P2302",
+          "ancla": "Ficha de Registro Cronométrico / Ficha de Cotejo Documental de Kardex"
+        },
+        {
+          "page_pdf": 111,
+          "page_printed": 96,
+          "tabla": "33",
+          "fila": 1,
+          "columna": 3,
+          "cell_id": "T033.1.3"
+        },
+        {
+          "page_pdf": 111,
+          "page_printed": 96,
+          "tabla": "33",
+          "fila": 2,
+          "columna": 3,
+          "cell_id": "T033.2.3"
+        },
+        {
+          "page_pdf": 111,
+          "page_printed": 96,
+          "tabla": "33",
+          "fila": 3,
+          "columna": 3,
+          "cell_id": "T033.3.3"
+        },
+        {
+          "page_pdf": 113,
+          "page_printed": 98,
+          "tabla": "34",
+          "fila": 1,
+          "columna": 1,
+          "cell_id": "T034.1.1"
+        },
+        {
+          "page_pdf": 113,
+          "page_printed": 98,
+          "tabla": "34",
+          "fila": 2,
+          "columna": 1,
+          "cell_id": "T034.2.1"
+        },
+        {
+          "page_pdf": 113,
+          "page_printed": 98,
+          "tabla": "34",
+          "fila": 3,
+          "columna": 1,
+          "cell_id": "T034.3.1"
+        }
+      ],
+      "texto_original": "Nomenclatura dispersa en ocho ubicaciones; véase cambios.",
+      "reemplazo_propuesto": "Nomenclatura única conforme al Anexo 4; véase cambios.",
+      "cambios": [
+        {
+          "ubicacion_index": 0,
+          "texto_original": "Ficha de observación de tiempos cronometrados",
+          "reemplazo_propuesto": "Ficha de Registro Cronométrico de Tiempos Operativos"
+        },
+        {
+          "ubicacion_index": 0,
+          "texto_original": "Guía de cotejo documental",
+          "reemplazo_propuesto": "Ficha de Auditoría y Cotejo Documental de Lotes y Kardex"
+        },
+        {
+          "ubicacion_index": 1,
+          "texto_original": "Ficha de Registro Cronométrico",
+          "reemplazo_propuesto": "Ficha de Registro Cronométrico de Tiempos Operativos"
+        },
+        {
+          "ubicacion_index": 1,
+          "texto_original": "Ficha de Cotejo Documental de Kardex",
+          "reemplazo_propuesto": "Ficha de Auditoría y Cotejo Documental de Lotes y Kardex"
+        },
+        {
+          "ubicacion_index": 2,
+          "texto_original": "Instrumento N.° 01:\nFicha de observación de tiempos cronometrados",
+          "reemplazo_propuesto": "Instrumento N.° 01:\nFicha de Registro Cronométrico de Tiempos Operativos"
+        },
+        {
+          "ubicacion_index": 3,
+          "texto_original": "Instrumento N.° 02:\nGuía de cotejo de consistencia documental",
+          "reemplazo_propuesto": "Instrumento N.° 02:\nFicha de Auditoría y Cotejo Documental de Lotes y Kardex"
+        },
+        {
+          "ubicacion_index": 4,
+          "texto_original": "Instrumento N.° 03:\nCuestionario de satisfacción del usuario y aceptación tecnológica",
+          "reemplazo_propuesto": "Instrumento N.° 03:\nCuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A)"
+        },
+        {
+          "ubicacion_index": 5,
+          "texto_original": "Instrumento N.° 01:\nFicha de observación de tiempos cronometrados",
+          "reemplazo_propuesto": "Instrumento N.° 01:\nFicha de Registro Cronométrico de Tiempos Operativos"
+        },
+        {
+          "ubicacion_index": 6,
+          "texto_original": "Instrumento N.° 02:\nGuía de cotejo documental",
+          "reemplazo_propuesto": "Instrumento N.° 02:\nFicha de Auditoría y Cotejo Documental de Lotes y Kardex"
+        },
+        {
+          "ubicacion_index": 7,
+          "texto_original": "Instrumento N.° 03:\nCuestionario de satisfacción del usuario y aceptación tecnológica (Modalidad A)",
+          "reemplazo_propuesto": "Instrumento N.° 03:\nCuestionario de Satisfacción del Usuario bajo el Modelo TAM (Modalidad A)"
+        }
+      ],
+      "evidencia": [
+        "P3018 a P3020 (PDF 151): el Anexo 4 fija los nombres oficiales completos de los tres instrumentos.",
+        "Tabla 33 (PDF 111) y Tabla 34 (PDF 113): usan denominaciones abreviadas distintas para los mismos instrumentos.",
+        "P2302 (PDF 117): usa Ficha de Registro Cronométrico y Ficha de Cotejo Documental de Kardex."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Aplicar la nomenclatura del Anexo 4 en todos los puntos. Las celdas conservan su estructura de dos líneas."
+    },
+    {
+      "id": "ORD-INT-11",
+      "hallazgo_id": "SIV-09",
+      "prioridad": "ALTA",
+      "tipo": "consistencia_documental",
+      "alcance": "celda_completa",
+      "ubicaciones": [
+        {
+          "page_pdf": 152,
+          "page_printed": 137,
+          "tabla": "47",
+          "fila": 3,
+          "columna": 2,
+          "cell_id": "T050.3.2",
+          "ancla": "Verificación de lote, vencimiento, cantidad, firma de recepción y consistencia de saldo"
+        }
+      ],
+      "texto_original": "Verificación de lote, vencimiento, cantidad, firma de recepción y consistencia de saldo",
+      "reemplazo_propuesto": "Verificación de los ocho criterios: identificación del biológico, lote, vencimiento, cantidad física, centro de origen o destino, identificación del responsable, saldo aritmético y correlatividad temporal",
+      "evidencia": [
+        "P2192 (PDF 108): enumera los ocho criterios de conformidad simultánea que sustentan el RSD.",
+        "Tabla 44 (PDF 144): declara porcentaje de registros sin discrepancias bajo ocho criterios normativos.",
+        "La Tabla 47 declara ocho ítems binarios, pero su descripción solo enumera cinco y sustituye identificación del responsable por firma de recepción."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "No cambia el número ocho ni la fórmula del RSD. Completa la descripción con los ocho criterios ya definidos en el cuerpo."
+    },
+    {
+      "id": "ORD-INT-12",
+      "hallazgo_id": "SIV-10",
+      "prioridad": "ALTA",
+      "tipo": "calidad_editorial",
+      "alcance": "accion_tecnica",
+      "ubicaciones": [
+        {
+          "page_pdf": 44,
+          "page_printed": 29,
+          "ancla": "Figura 6. Flujo logístico de la cadena de frío e inmunizaciones"
+        }
+      ],
+      "texto_original": "Figura 6. Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta el establecimiento de salud (imagen media/image7.png, 751 x 700 px).",
+      "reemplazo_propuesto": "Reexportar la Figura 6 desde su fuente editable o rasterizar a 300 DPI efectivos, conservando proporciones y sin reescalado artificial.",
+      "evidencia": [
+        "Imagen media/image7.png: 751 x 700 px colocada a 396.0 x 369.1 pt, equivalente a 136.5 DPI.",
+        "El resto de figuras del cuerpo supera los 300 DPI; la Figura 6 es la única figura de cuerpo por debajo del umbral."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "No se debe aumentar el tamaño de píxeles por interpolación. Si no existe fuente editable, declarar la limitación en la nota de figura."
+    },
+    {
+      "id": "ORD-INT-13",
+      "hallazgo_id": "SIV-11",
+      "prioridad": "MEDIA",
+      "tipo": "calidad_editorial",
+      "alcance": "accion_tecnica",
+      "ubicaciones": [
+        {
+          "page_pdf": 1,
+          "page_printed": null,
+          "ancla": "Sello institucional UNAJMA de portada"
+        }
+      ],
+      "texto_original": "Imagen de portada media/image1.png, 212 x 238 px, colocada a 129.6 x 145.4 pt.",
+      "reemplazo_propuesto": "Sustituir el sello de portada por un recorte del archivo LOGO-UNAJMA.jpg (2048 x 2048 px), ajustado al área del sello y preservando la proporción; no remuestrear artificialmente.",
+      "evidencia": [
+        "Imagen media/image1.png: 212 x 238 px a 129.6 x 145.4 pt, equivalente a 117.8 DPI.",
+        "LOGO-UNAJMA.jpg: 2048 x 2048 px, 263,452 bytes; resolución suficiente para 300 DPI al tamaño de portada.",
+        "La portada renderizada muestra el mismo sello institucional."
+      ],
+      "requiere_confirmacion": true,
+      "nota": "Confirmar que el recorte corresponde al sello oficial y que no se altera el escudo. No usar LOGO-EPIS.jpg, de 225 x 225 px, por resolución insuficiente."
+    },
+    {
+      "id": "ORD-INT-14",
+      "hallazgo_id": "SIV-12",
+      "prioridad": "BAJA",
+      "tipo": "atenuacion_editorial",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 116,
+          "page_printed": 101,
+          "paragraph_id": "P2298",
+          "ancla": "para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento"
+        }
+      ],
+      "texto_original": "para asegurar cero riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial",
+      "reemplazo_propuesto": "para reducir el riesgo de pérdida de trazabilidad o desabastecimiento en la cadena de frío provincial",
+      "evidencia": [
+        "La investigación es preexperimental, con n = 14 y una ventana acotada; no permite demostrar riesgo cero.",
+        "P2300 (PDF 117): los resultados son provisionales y deben sustituirse por mediciones definitivas."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "No modifica la descripción de la salvaguarda; solo evita una garantía absoluta no verificable."
+    },
+    {
+      "id": "ORD-INT-15",
+      "hallazgo_id": "SIV-13",
+      "prioridad": "BAJA",
+      "tipo": "atenuacion_editorial",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 127,
+          "page_printed": 112,
+          "paragraph_id": "P2671",
+          "ancla": "erradicando los errores de digitación en el Kardex"
+        }
+      ],
+      "texto_original": "erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados",
+      "reemplazo_propuesto": "reduciendo los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados",
+      "evidencia": [
+        "La evidencia es una matriz de datos de prueba con n = 14, no un seguimiento longitudinal que permita afirmar erradicación.",
+        "P2300 (PDF 117): resultados provisionales de prueba."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Conserva la dirección del hallazgo y elimina una magnitud absoluta no demostrada."
+    },
+    {
+      "id": "ORD-INT-16",
+      "hallazgo_id": "SIV-13",
+      "prioridad": "BAJA",
+      "tipo": "atenuacion_editorial",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 133,
+          "page_printed": 118,
+          "paragraph_id": "P2815",
+          "ancla": "erradicando las fallas de arrastre en los libros de kardex"
+        }
+      ],
+      "texto_original": "erradicando las fallas de arrastre en los libros de kardex",
+      "reemplazo_propuesto": "reduciendo las fallas de arrastre en los libros de kardex",
+      "evidencia": [
+        "La conclusión se apoya en datos provisionales de prueba, según P2813 (PDF 133).",
+        "No existe seguimiento posterior que permita sostener erradicación definitiva."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Mantiene la conclusión provisional y evita una afirmación absoluta."
+    },
+    {
+      "id": "ORD-INT-17",
+      "hallazgo_id": "SIV-14",
+      "prioridad": "BAJA",
+      "tipo": "precision_estadistica",
+      "alcance": "fragmento",
+      "ubicaciones": [
+        {
+          "page_pdf": 124,
+          "page_printed": 109,
+          "paragraph_id": "P2573",
+          "ancla": "estadísticos de contraste (gl = 14)"
+        }
+      ],
+      "texto_original": "estadísticos de contraste (gl = 14)",
+      "reemplazo_propuesto": "estadísticos de contraste (n = 14)",
+      "evidencia": [
+        "La prueba de Shapiro-Wilk se aplica sobre n = 14 diferencias pareadas; gl = 14 no corresponde a los grados de libertad del contraste.",
+        "P2624 (PDF 125): la nota diferencia n = 14 de gl = n - 1 = 13 para la prueba t."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "No altera W, p ni la decisión de normalidad."
+    },
+    {
+      "id": "ORD-INT-18",
+      "hallazgo_id": "SIV-15",
+      "prioridad": "BAJA",
+      "tipo": "consistencia_editorial",
+      "alcance": "multiples_fragmentos",
+      "ubicaciones": [
+        {
+          "page_pdf": 144,
+          "page_printed": 129,
+          "tabla": "44",
+          "fila": 10,
+          "columna": 1,
+          "cell_id": "T044.10.1",
+          "ancla": "Preexperimental con pretest y postest en un solo grupo"
+        },
+        {
+          "page_pdf": 144,
+          "page_printed": 129,
+          "paragraph_id": "P2901",
+          "ancla": "Diseno de Investigacion: Preexperimental con pretest y postest en un solo grupo"
+        }
+      ],
+      "texto_original": "Guiones cortos en la notacion del diseno, en dos ubicaciones; vease cambios.",
+      "reemplazo_propuesto": "Guiones largos en la notacion del diseno, en dos ubicaciones; vease cambios.",
+      "evidencia": [
+        "El cuerpo usa el guion largo en la notación del diseño, por ejemplo P0276 (PDF 17): (GE: O₁ – X – O₂).",
+        "La Tabla 44 usa guiones cortos, lo que genera inconsistencia tipográfica.",
+        "P2901 (PDF 144), narrativa del Anexo 1, usa la misma notacion con guiones cortos."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Solo cambia el separador tipografico en la Tabla 44 y en la narrativa inmediata; no altera la notacion metodologica.",
+      "cambios": [
+        {
+          "ubicacion_index": 0,
+          "texto_original": "O₁ - X - O₂",
+          "reemplazo_propuesto": "O₁ – X – O₂"
+        },
+        {
+          "ubicacion_index": 1,
+          "texto_original": "O₁ - X - O₂",
+          "reemplazo_propuesto": "O₁ – X – O₂"
+        }
+      ]
+    },
+    {
+      "id": "ORD-INT-19",
+      "hallazgo_id": "SIV-16",
+      "prioridad": "BAJA",
+      "tipo": "consistencia_editorial",
+      "alcance": "multiples_fragmentos",
+      "ubicaciones": [
+        {
+          "page_pdf": 108,
+          "page_printed": 93,
+          "paragraph_id": "P2192",
+          "ancla": "vale pecosa"
+        },
+        {
+          "page_pdf": 110,
+          "page_printed": 95,
+          "paragraph_id": "P2214",
+          "ancla": "emisión de vale pecosa"
+        },
+        {
+          "page_pdf": 102,
+          "page_printed": 87,
+          "tabla": "29",
+          "fila": 1,
+          "columna": 1,
+          "cell_id": "T029.1.1",
+          "ancla": "vales pecosa físicos"
+        },
+        {
+          "page_pdf": 105,
+          "page_printed": 90,
+          "tabla": "31",
+          "fila": 2,
+          "columna": 1,
+          "cell_id": "T031.2.1",
+          "ancla": "vales pecosa"
+        }
+      ],
+      "texto_original": "pecosa (minúsculas en cuatro ocurrencias); véase cambios.",
+      "reemplazo_propuesto": "PECOSA (mayúsculas sostenidas, por tratarse de una sigla); véase cambios.",
+      "cambios": [
+        {
+          "ubicacion_index": 0,
+          "texto_original": "vale pecosa",
+          "reemplazo_propuesto": "vale PECOSA"
+        },
+        {
+          "ubicacion_index": 1,
+          "texto_original": "emisión de vale pecosa",
+          "reemplazo_propuesto": "emisión de vale PECOSA"
+        },
+        {
+          "ubicacion_index": 2,
+          "texto_original": "vales pecosa físicos",
+          "reemplazo_propuesto": "vales PECOSA físicos"
+        },
+        {
+          "ubicacion_index": 3,
+          "texto_original": "vales pecosa",
+          "reemplazo_propuesto": "vales PECOSA"
+        }
+      ],
+      "evidencia": [
+        "Tabla 8 (PDF 60): Vales PECOSA.",
+        "Tabla 25 (PDF 65): vales PECOSA.",
+        "Tabla 51 (PDF 155): Vales PECOSA."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Aplicar la sustitución solo en las cuatro ocurrencias en minúsculas; no alterar las mayúsculas ya correctas."
+    },
+    {
+      "id": "ORD-INT-20",
+      "hallazgo_id": "SIV-17",
+      "prioridad": "BAJA",
+      "tipo": "formato_editorial",
+      "alcance": "formato",
+      "ubicaciones": [
+        {
+          "page_pdf": 117,
+          "page_printed": 102,
+          "paragraph_id": "P2300",
+          "ancla": "Advertencia metodológica y salvaguarda deontológica"
+        },
+        {
+          "page_pdf": 124,
+          "page_printed": 109,
+          "paragraph_id": "P2572",
+          "ancla": "El sistema de hipótesis estadísticas para evaluar el ajuste distribucional"
+        },
+        {
+          "page_pdf": 125,
+          "page_printed": 110,
+          "paragraph_id": "P2628",
+          "ancla": "A. Planteamiento de hipótesis estadísticas"
+        },
+        {
+          "page_pdf": 127,
+          "page_printed": 112,
+          "paragraph_id": "P2669",
+          "ancla": "A. Planteamiento de hipótesis estadísticas"
+        },
+        {
+          "page_pdf": 128,
+          "page_printed": 113,
+          "paragraph_id": "P2710",
+          "ancla": "A. Planteamiento de hipótesis estadísticas"
+        },
+        {
+          "page_pdf": 129,
+          "page_printed": 114,
+          "paragraph_id": "P2765",
+          "ancla": "A. Planteamiento de hipótesis estadísticas"
+        }
+      ],
+      "texto_original": null,
+      "descripcion_original": "Párrafos justificados con líneas internas de ancho variable que generan espaciado extremo entre palabras.",
+      "reemplazo_propuesto": "Aplicar alineación izquierda o convertir las líneas de hipótesis en una lista con saltos de línea no justificados, sin alterar el texto.",
+      "evidencia": [
+        "Lectura visual de PDF 117, 124, 125, 127, 128 y 129: líneas con separación interpalabra anormalmente amplia.",
+        "El fenómeno se concentra en párrafos que combinan justificación completa con fórmulas o líneas cortas internas."
+      ],
+      "requiere_confirmacion": false,
+      "nota": "Es un ajuste de formato. No cambia redacción, cifras ni estructura de las hipótesis."
+    },
+    {
+      "id": "ORD-INT-21",
+      "hallazgo_id": "SIV-18",
+      "prioridad": "BAJA",
+      "tipo": "completitud_documental",
+      "alcance": "celdas_pendientes",
+      "ubicaciones": [
+        {
+          "page_pdf": 156,
+          "page_printed": 141,
+          "tabla": "51",
+          "fila": 6,
+          "columna": 3,
+          "cell_id": "T054.6.3",
+          "ancla": "HU-14, Rol / Actor"
+        },
+        {
+          "page_pdf": 156,
+          "page_printed": 141,
+          "tabla": "51",
+          "fila": 7,
+          "columna": 3,
+          "cell_id": "T054.7.3",
+          "ancla": "HU-15, Rol / Actor"
+        }
+      ],
+      "texto_original": "No especificado",
+      "reemplazo_propuesto": null,
+      "evidencia": [
+        "Tabla 51 (PDF 155-156): las historias HU-14 y HU-15 no tienen rol o actor definido.",
+        "No se debe inferir el actor desde el título de la historia; debe tomarse de la HU original."
+      ],
+      "requiere_confirmacion": true,
+      "nota": "Completar desde la fuente primaria de las HU. Si el actor no está definido en la fuente, declarar la limitación en la nota de la tabla."
+    },
+    {
+      "id": "ORD-INT-22",
+      "hallazgo_id": "SIV-19",
+      "prioridad": "BAJA",
+      "tipo": "trazabilidad",
+      "alcance": "parrafo_completo",
+      "ubicaciones": [
+        {
+          "page_pdf": 155,
+          "page_printed": 140,
+          "paragraph_id": "P3666",
+          "ancla": "repositorio institucional 'syncova'"
+        }
+      ],
+      "texto_original": "El código fuente íntegro del sistema web SIVAC se encuentra alojado bajo control de versiones Git en el repositorio institucional 'syncova', estructurado en una arquitectura cliente-servidor desacoplada con backend Node.js/Express, ORM Prisma, base de datos relacional PostgreSQL 15 y frontend web interactivo en React. En la Tabla 51 se sintetizan las historias de usuario que guiaron las cinco iteraciones de Extreme Programming (XP).",
+      "reemplazo_propuesto": "El código fuente íntegro del sistema web SIVAC se encuentra bajo control de versiones Git y se entrega en el medio digital complementario de la tesis, estructurado en una arquitectura cliente-servidor desacoplada con backend Node.js/Express, ORM Prisma, base de datos relacional PostgreSQL 15 y frontend web interactivo en React. En la Tabla 51 se sintetizan las historias de usuario que guiaron las cinco iteraciones de Extreme Programming (XP).",
+      "evidencia": [
+        "P3666 (PDF 155): no consigna URL, identificador de repositorio ni commit verificable.",
+        "P1733 (PDF 82): repite la expresión repositorio institucional sin URL.",
+        "El código fuente local se encuentra en C:/Proyectos/syncova, de solo lectura."
+      ],
+      "requiere_confirmacion": true,
+      "nota": "Si existe un repositorio institucional con URL pública o interna, conservar la mención y añadir la URL y el commit. Si no existe, aplicar la formulación de entrega en medio digital."
+    }
+  ]
+}

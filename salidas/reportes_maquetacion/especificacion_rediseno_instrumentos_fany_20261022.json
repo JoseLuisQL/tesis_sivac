@@ -1,0 +1,1245 @@
+{
+  "meta": {
+    "titulo": "Especificación editorial de rediseño de los instrumentos SIVAC para claridad de campo, con separación de hojas aplicables y manual",
+    "fecha_preparacion": "2026-10-22",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "autor": "especialista-instrumentos",
+    "squad": "Squad B (Metodología, Medición y Psicometría)",
+    "version": "1.1_claridad_editorial_campos_congelados",
+    "estado": "especificacion_lista_para_implementar",
+    "destino_implementacion": "C:/MisInvestigaciones/tesis/sivac/salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01",
+    "alcance": "Reelaboración editorial de la presentación de los instrumentos de campo. Congela los campos reales del formulario emitido y no modifica reactivos, criterios, escalas, indicadores, dimensiones, población ni protocolo de medición.",
+    "no_es": [
+      "No es un certificado de validación por jueces.",
+      "No es un expediente de expertos.",
+      "No es una base de datos ni contiene mediciones.",
+      "No sustituye los instrumentos fuente ni los capítulos de la tesis.",
+      "No resuelve por intuición las divergencias metodológicas pendientes."
+    ],
+    "aviso_reactivos": "Los enunciados literales de AP-01 a AP-04, UP-01 a UP-04, PU-01 a PU-04 y PE-01 a PE-04 no se transcriben en este JSON. El maquetador los extrae por código de las tablas 14 y 15 del modelo rector EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx, conforme a D-PC-02. Prohibida la retranscripción manual y prohibida cualquier variación de caracteres.",
+    "aviso_fany": "La referencia al folio 68 de Fany 2024 se adopta solo como jerarquía editorial: un instrumento por documento, título, instrucciones breves, tabla de reactivos y cierre. La geometría, márgenes, tipografía y bordes competen al maquetador y no se analizan aquí.",
+    "advertencia_empirica": "Todas las hojas se emiten en blanco. No se preimprimen respuestas, puntajes, fechas de aplicación, nombres, DNI, firmas ni dictámenes.",
+    "nota_de_prevalencia_campos": "Ante cualquier discrepancia entre esta especificación y el formulario emitido, prevalece el formulario emitido. Los campos no presentes en él no se añaden. Las referencias a campos propuestos que subsistan en el diccionario son descriptivas y no autorizan su incorporación. No se sustituyen las descripciones de tareas del formulario emitido."
+  },
+  "decision_editorial": {
+    "problema_declarado": "El tesista manifiesta que los instrumentos actuales están muy confundidos y pide que se presenten como los instrumentos del folio 68 del modelo Fany 2024.",
+    "diagnostico": "La confusión no proviene de los constructos ni de los reactivos, sino de la presentación: tablas anchas, fase preimpresa, instrucciones extensas dentro de la hoja, campos de cálculo mezclados con el registro y documentos del investigador impresos junto con los del participante.",
+    "respuesta": "Reelaboración editorial con cuatro hojas esenciales, una por función y por persona que la llena, con fase en blanco, bloques verticales vinculados y instrucciones de cuatro a seis líneas. Los soportes de calibración, baremos, consentimiento, matriz y manual se separan.",
+    "criterio_de_éxito": "Un aplicador distingue en menos de un minuto qué hoja llena, quién la firma y en qué fase se usa, sin perder ningún campo crudo, criterio de RSD, regla de CPE ni posibilidad de continuación.",
+    "reduccion_buscada": "Pasar de un paquete con doce rutas y documentos mezclados a cuatro hojas esenciales que suman siete páginas por conjunto de aplicación, más hojas de continuación solo cuando el corpus lo exija.",
+    "lo_que_no_cambia": "No se crea una escala nueva, no se agrega una dimensión, no se altera un reactivo ni se convierte una equivalencia editorial en evidencia de validación real."
+  },
+  "principios_de_rediseno": [
+    {
+      "id": "P-01",
+      "principio": "Una hoja, un llenador.",
+      "aplicacion": "Cada documento impreso declara en su cabecera una sola persona responsable de llenarlo. No se mezclan campos del observador, del auditor y del participante en la misma hoja."
+    },
+    {
+      "id": "P-02",
+      "principio": "Fase en blanco.",
+      "aplicacion": "Las hojas 01, 02 y 03 llevan una línea de fase con las opciones INICIAL o FINAL entre paréntesis, sin marca preimpresa. La hoja 04 declara de forma fija su uso exclusivo al final."
+    },
+    {
+      "id": "P-03",
+      "principio": "Bloques verticales vinculados antes que tablas anchas.",
+      "aplicacion": "La Ficha 02 abandona la tabla de trece columnas. Cada documento auditado ocupa un bloque con ocho criterios en rejilla de dos por cuatro, veredicto y motivo. Los bloques se numeran de forma continua para poder continuarlos."
+    },
+    {
+      "id": "P-04",
+      "principio": "La instrucción va antes de la tabla y no dentro de ella.",
+      "aplicacion": "Cada hoja abre con cuatro a seis instrucciones numeradas, en segunda persona y en una sola línea por idea. Las notas extensas de protocolo se remiten al manual del investigador."
+    },
+    {
+      "id": "P-05",
+      "principio": "Lo que no se llena en campo no ocupa la hoja de campo.",
+      "aplicacion": "Porcentajes, fórmulas, promedios, baremos, calibraciones, ICC, kappa, alfa y omega se trasladan a la hoja de cierre y al manual del investigador."
+    },
+    {
+      "id": "P-06",
+      "principio": "Cero datos identificatorios en las hojas esenciales.",
+      "aplicacion": "Solo código TRAB, código de centro, fase, fecha y responsable. Se prohíben nombre, apellido, DNI, cargo, profesión, edad, sexo y nombre del establecimiento."
+    },
+    {
+      "id": "P-07",
+      "principio": "Literalidad de reactivos y criterios.",
+      "aplicacion": "Los ocho reactivos de la Modalidad A y los ocho de la Modalidad B se extraen del rector. Los ocho criterios de RSD y las seis tareas se conservan del formulario emitido sin reescribir su alcance ni sustituir sus descripciones."
+    },
+    {
+      "id": "P-08",
+      "principio": "Continuación explícita y trazable.",
+      "aplicacion": "Todo bloque que pueda exceder la hoja remite a una hoja de continuación con el mismo identificador correlativo. No se abren bloques nuevos sin número."
+    },
+    {
+      "id": "P-09",
+      "principio": "No reproducir catorce paquetes en esta etapa.",
+      "aplicacion": "Se emiten maestros únicos por tipo de documento. La asignación de código y fase se realiza al imprimir o al aplicar. La reproducción de los catorce paquetes se decide después de la revisión visual."
+    },
+    {
+      "id": "P-10",
+      "principio": "Lo esencial se imprime; lo instrumental se consulta.",
+      "aplicacion": "El participante recibe solo la hoja que responde. El investigador conserva el manual, la hoja de cierre y el kit. El expediente de jueces nunca entra al paquete de campo."
+    }
+  ],
+  "fuentes_y_ausencias": {
+    "usadas": [
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/guia_campo_contenido_20261022.md",
+        "uso": "Protocolo de tiempos, seis tareas, ocho criterios de RSD, regla de CPE, ventanas, ausencias y custodia."
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/especificacion_paquete_campo_20261022.json",
+        "uso": "Estructura de documentos, campos declarados, roles, matriz de captura y criterios de aceptación."
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/decisiones_paquete_campo_20261022.json",
+        "uso": "D-PC-02 fuente literal, D-PC-05 rejilla, D-PC-06 geometría, D-PC-07 prohibición de fórmulas en celdas, D-PC-09 emisión por etapas y D-PC-10 emisión previa cerrada."
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/scripts/compiladores/paquete_campo_builder.py",
+        "uso": "Lectura focalizada de las funciones de Ficha 01, Ficha 02, cuestionarios y continuación, para el diccionario de campos trasladados."
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/obsidian_vault/02_PROYECTOS/02.1_TESIS_SIVAC/01_PLANIFICACION_Y_MATRICES/OPERACIONALIZACION_VARIABLES_DEFINITIVA.md",
+        "uso": "Tres dimensiones, seis indicadores, unidades y umbrales de confiabilidad. Copia histórica alineada."
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/DECISIONES.md",
+        "uso": "DEC-007, DEC-014 a DEC-020 como registro histórico, DEC-023 a DEC-026 y estado de QG-5."
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/ESTADO_TESIS.md",
+        "uso": "Fase F8, QG-5 abierta, F6 bloqueada y advertencia de que lo editorial no acredita validación."
+      }
+    ],
+    "matriz_normativa": {
+      "ruta_declarada": "salidas/matrices/",
+      "estado": "AUSENTE_CON_ARCHIVOS_AL_2026-10-22",
+      "verificacion": "Glob sobre salidas/matrices/**/* no devolvió archivos.",
+      "tratamiento": "Se usa la copia del vault como referencia histórica alineada. No se declara fuente normativa localizada. Debe verificarse antes de imprimir. Registrado como conflicto C-09."
+    },
+    "modelo_rector_reactivos": {
+      "ruta": "salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx",
+      "tablas": ["13", "14", "15"],
+      "regla": "Extracción programática por código. Sin retranscripción manual."
+    }
+  },
+  "quien_llena_que": [
+    {
+      "hoja": "01. Ficha de observación de tiempos",
+      "llena": "Observador",
+      "firma": "Observador",
+      "fase": "INICIAL o FINAL, anotada a mano",
+      "no_llena": "No la llena el participante ni el auditor.",
+      "paginas": 2
+    },
+    {
+      "hoja": "02. Ficha de auditoría documental",
+      "llena": "Auditor",
+      "firma": "Auditor",
+      "fase": "INICIAL o FINAL, anotada a mano",
+      "no_llena": "No la llena el participante ni el observador de tiempos.",
+      "paginas": 3
+    },
+    {
+      "hoja": "03. Cuestionario A. Satisfacción del usuario",
+      "llena": "Participante",
+      "firma": "No requiere firma",
+      "fase": "INICIAL o FINAL, anotada a mano",
+      "no_llena": "No la llena el investigador por el participante.",
+      "paginas": 1
+    },
+    {
+      "hoja": "04. Módulo B. Cuestionario complementario",
+      "llena": "Participante",
+      "firma": "No requiere firma",
+      "fase": "Solo FINAL. Fijo impreso.",
+      "no_llena": "No se aplica en la fase inicial. No se suma al Cuestionario A.",
+      "paginas": 1
+    },
+    {
+      "hoja": "Consentimiento informado",
+      "llena": "Participante, con explicación del investigador",
+      "firma": "Participante e investigador",
+      "fase": "Antes de cualquier hoja",
+      "no_llena": "No forma parte del conjunto esencial de instrumentos.",
+      "paginas": 2
+    },
+    {
+      "hoja": "Hoja de cierre de indicadores",
+      "llena": "Investigador",
+      "firma": "Investigador",
+      "fase": "Después de cerrar cada fase",
+      "no_llena": "No se entrega al participante.",
+      "paginas": 1
+    },
+    {
+      "hoja": "Expediente de evaluación por expertos",
+      "llena": "Juez experto",
+      "firma": "Juez experto",
+      "fase": "Trámite separado, antes del campo",
+      "no_llena": "No se incluye en ningún paquete de trabajador. No se prescribe su alcance ni su estado de aplicación.",
+      "paginas": 0
+    }
+  ],
+  "orden_de_paginas": {
+    "conjunto_esencial": {
+      "orden": ["01", "02", "03", "04"],
+      "total_paginas": 7,
+      "regla": "El orden 01 a 03 se usa en la fase inicial. En la fase final se repite 01, 02, 03 y se agrega 04. El consentimiento se firma antes y se archiva aparte.",
+      "no_incluye": ["Consentimiento", "Manual", "Calibración", "Matriz de captura", "Expediente de evaluación", "Baremos", "Cronograma"]
+    },
+    "01": {
+      "paginas": 2,
+      "pagina_1": [
+        "1. Título: Instrumento 1. Ficha de observación de tiempos",
+        "2. Subtítulo: Oportunidad de procesamiento. Tiempo de registro y tiempo de emisión de vales",
+        "3. Cabecera de identificación",
+        "4. Instrucciones de cronometraje, seis líneas numeradas",
+        "5. Bloque REG-01",
+        "6. Bloque REG-02",
+        "7. Bloque REG-03"
+      ],
+      "pagina_2": [
+        "8. Bloque VALE-01",
+        "9. Bloque VALE-02",
+        "10. Bloque VALE-03",
+        "11. Consolidado por indicador y fase",
+        "12. Incidencias de la sesión, cuatro filas y remisión a continuación",
+        "13. Observaciones del observador",
+        "14. Firma del observador y horas de inicio y fin de la sesión"
+      ]
+    },
+    "02": {
+      "paginas": 3,
+      "pagina_1": [
+        "1. Título: Instrumento 2. Ficha de auditoría documental",
+        "2. Subtítulo: Consistencia documental. Registros sin discrepancias y concordancia programada con entregada",
+        "3. Cabecera de identificación y ventana auditada",
+        "4. Instrucciones de auditoría, cinco líneas numeradas",
+        "5. Regla de conformidad y regla de concordancia, en dos recuadros breves",
+        "6. Leyenda completa de los ocho criterios C1 a C8",
+        "7. Bloque de documento D-01",
+        "8. Bloque de documento D-02"
+      ],
+      "pagina_2": [
+        "9. Bloques de documento D-03, D-04 y D-05",
+        "10. Nota de continuación para D-06 en adelante"
+      ],
+      "pagina_3": [
+        "11. Título de sección: Entregas. Concordancia entre cantidad programada y entregada",
+        "12. Tabla CPE de doce filas",
+        "13. Conteos de cierre, sin porcentajes",
+        "14. Nota de cálculo diferido a la hoja de cierre",
+        "15. Observaciones del auditor",
+        "16. Firma del auditor y fecha de cierre"
+      ]
+    },
+    "03": {
+      "paginas": 1,
+      "pagina_1": [
+        "1. Título: Instrumento 3. Cuestionario A. Satisfacción del usuario",
+        "2. Cabecera de identificación",
+        "3. Instrucciones, cuatro líneas numeradas",
+        "4. Leyenda de la escala 1 a 5",
+        "5. Tabla de ocho reactivos agrupados por AP y UP",
+        "6. Nota de cierre: no se suma con el Módulo B y no se anota puntaje en esta hoja"
+      ]
+    },
+    "04": {
+      "paginas": 1,
+      "pagina_1": [
+        "1. Título: Módulo B. Cuestionario complementario",
+        "2. Rótulo fijo: Solo se aplica al final, después de usar SIVAC",
+        "3. Cabecera de identificación sin campo de fase",
+        "4. Instrucciones, cinco líneas numeradas",
+        "5. Leyenda de la escala 1 a 5",
+        "6. Tabla de ocho reactivos agrupados por PU y PE",
+        "7. Nota de cierre: no se suma al Cuestionario A y no tiene puntaje global"
+      ]
+    }
+  },
+  "documentos": [
+    {
+      "id": "01",
+      "rotulo_secuencia": "01",
+      "naturaleza": "instrumento_oficial_1",
+      "titulo_impreso": "Instrumento 1. Ficha de observación de tiempos",
+      "subtitulo_impreso": "Oportunidad de procesamiento: tiempo de registro y tiempo de emisión de vales",
+      "dimension": "Oportunidad de procesamiento",
+      "indicadores": ["T_reg", "T_vale"],
+      "quien_llena": "Observador",
+      "fase": "línea en blanco con opciones INICIAL o FINAL",
+      "paginas_objetivo": 2,
+      "cabecera": {
+        "campos": [
+          {"id": "codigo_trabajador", "etiqueta": "Código", "formato": "TRAB-______"},
+          {"id": "codigo_centro", "etiqueta": "Código de centro", "formato": "__________"},
+          {"id": "fase", "etiqueta": "Fase", "formato": "____________________ (INICIAL o FINAL)"},
+          {"id": "fecha_aplicacion", "etiqueta": "Fecha", "formato": "____/____/______"},
+          {"id": "observador", "etiqueta": "Observador", "formato": "____________________________"}
+        ],
+        "regla": "No se imprime nombre del trabajador ni nombre del establecimiento. El código de centro lo administra el investigador."
+      },
+      "instrucciones": [
+        "Cronometre con un cronómetro digital y anote la hora de inicio y la de fin con segundos.",
+        "El tiempo de registro inicia cuando el operador toma el documento fuente o abre el módulo, y termina cuando el movimiento queda guardado y balanceado.",
+        "El tiempo de emisión inicia cuando se recibe o abre la solicitud, y termina cuando el vale queda generado, firmado o impreso con numeración oficial.",
+        "Si hay una interrupción externa, pause el cronómetro y anote la causa. No cuente el tiempo pausado.",
+        "Si la tarea no se completa, anule, anote el motivo y repítala dentro de la ventana. No anule una tarea por ser lenta.",
+        "Convierta a minutos decimales: minutos más segundos divididos entre sesenta."
+      ],
+      "bloques": [
+        {
+          "tipo": "bloque_tarea",
+          "repeticion": "uno por cada una de las seis tareas",
+          "estructura": "título de tarea, rejilla de campos en dos columnas y fila de observaciones",
+          "tareas": [
+            {"codigo": "REG-01", "titulo": "REG-01. Ingreso simple de remesa, con un biológico y lote único."},
+            {"codigo": "REG-02", "titulo": "REG-02. Salida regular programada, de dos a tres vacunas hacia puesto de salud."},
+            {"codigo": "REG-03", "titulo": "REG-03. Redistribución con varios biológicos, de cuatro a seis ítems."},
+            {"codigo": "VALE-01", "titulo": "VALE-01. Vale simple para puesto de salud I-1 o I-2, de una a dos vacunas."},
+            {"codigo": "VALE-02", "titulo": "VALE-02. Vale regular para centro de salud I-3 o I-4, de tres a cinco vacunas."},
+            {"codigo": "VALE-03", "titulo": "VALE-03. Vale de reposición urgente o contingencia de cadena de frío."}
+          ],
+          "campos": [
+            {"id": "hora_inicio", "etiqueta": "Hora de inicio", "formato": "__:__:__"},
+            {"id": "hora_fin", "etiqueta": "Hora de fin", "formato": "__:__:__"},
+            {"id": "duracion_min", "etiqueta": "Duración en minutos decimales", "formato": "__________"},
+            {"id": "pausa", "etiqueta": "Pausa", "formato": "Sí / No. Causa: ____________________"},
+            {"id": "valida", "etiqueta": "Tarea válida", "formato": "Sí / No"},
+            {"id": "observaciones_tarea", "etiqueta": "Observaciones", "formato": "________________________________"}
+          ],
+          "nota_campos": "Se conservan únicamente los campos reales del formulario emitido. El motivo de anulación se anota dentro de Observaciones. No se añaden biológico, lote ni dosis. Ver nota de prevalencia y C-03."
+        }
+      ],
+      "consolidado": {
+        "titulo": "Consolidado por indicador y fase",
+        "columnas": ["Indicador", "Media (minutos decimales)", "Mediana (minutos decimales)", "Tareas válidas (número)"],
+        "filas": [
+          "Tiempo de registro (REG-01 a REG-03)",
+          "Tiempo de emisión de vales (VALE-01 a VALE-03)"
+        ],
+        "nota_literal": "La mediana de las tres tareas es el valor principal del trabajador en la fase; la media es complemento descriptivo. Si solo hay dos tareas válidas, anote 2 y no complete la tercera."
+      },
+      "incidencias": {
+        "titulo": "Incidencias de la sesión",
+        "columnas": ["N.°", "Hora", "Tarea afectada", "Causa", "Acción y detalle"],
+        "filas": 4,
+        "opciones_causa": "interrupción externa / desviación del protocolo / ayuda del investigador",
+        "opciones_accion": "pausa / anulación / repetición",
+        "continuacion": "Si hay más de cuatro incidencias, continúe en la hoja de continuación de incidencias con el número correlativo."
+      },
+      "cierre": {
+        "observaciones": "Observaciones del observador. Recuadro de 2,5 cm.",
+        "firma": "Firma del observador: ______________________________",
+        "sesion": "Hora de inicio de la sesión: __________    Hora de fin de la sesión: __________"
+      },
+      "prohibiciones": [
+        "No imprimir tiempos, promedios, medianas ni resultados.",
+        "No imprimir la fase PRE o POST como texto fijo.",
+        "No incluir el nombre del trabajador ni del establecimiento.",
+        "No firmar por otra persona."
+      ]
+    },
+    {
+      "id": "02",
+      "rotulo_secuencia": "02",
+      "naturaleza": "instrumento_oficial_2",
+      "titulo_impreso": "Instrumento 2. Ficha de auditoría documental",
+      "subtitulo_impreso": "Consistencia documental: registros sin discrepancias y concordancia programada con entregada",
+      "dimension": "Consistencia documental",
+      "indicadores": ["RSD", "CPE"],
+      "quien_llena": "Auditor",
+      "fase": "línea en blanco con opciones INICIAL o FINAL",
+      "paginas_objetivo": 3,
+      "cabecera": {
+        "campos": [
+          {"id": "codigo_trabajador", "etiqueta": "Código", "formato": "TRAB-______"},
+          {"id": "codigo_centro", "etiqueta": "Código de centro", "formato": "__________"},
+          {"id": "fase", "etiqueta": "Fase", "formato": "____________________ (INICIAL o FINAL)"},
+          {"id": "fecha_auditoria", "etiqueta": "Fecha de auditoría", "formato": "____/____/______"},
+          {"id": "ventana", "etiqueta": "Ventana auditada", "formato": "del ____/____/______ al ____/____/______"},
+          {"id": "auditor", "etiqueta": "Auditor", "formato": "____________________________"}
+        ]
+      },
+      "instrucciones": [
+        "Audite solo documentos de movimiento de stock. No audite tarjetas de vacunación ni documentos con datos de pacientes.",
+        "Un documento es conforme solo si cumple los ocho criterios a la vez. Si falla uno, es no conforme.",
+        "Una entrega es concordante si la cantidad entregada es igual a la programada o si la diferencia tiene un documento formal que la autoriza.",
+        "Registre proporciones de documentos y de entregas. No sume dosis.",
+        "Si el documento no cabe en esta hoja, continúe en la hoja de continuación y conserve el mismo número de bloque."
+      ],
+      "reglas_destacadas": [
+        {
+          "titulo": "Regla de conformidad",
+          "texto_literal": "Un documento es conforme solo si cumple los ocho criterios a la vez; si falla uno, es no conforme."
+        },
+        {
+          "titulo": "Regla de concordancia",
+          "texto_literal": "Una entrega es concordante si la cantidad entregada es igual a la programada, o si la diferencia tiene un documento formal archivado que la autoriza. No se suman dosis; la concordancia es una proporción de entregas."
+        }
+      ],
+      "leyenda_criterios": {
+        "titulo": "Criterios de conformidad. Cada documento se califica con los ocho criterios.",
+        "columnas": ["Código", "Criterio"],
+        "filas": [
+          {"codigo": "C1", "texto": "Tipo de movimiento clasificado unívocamente: entrada por remesa, salida a establecimiento de salud o ajuste."},
+          {"codigo": "C2", "texto": "Denominación oficial estandarizada del biológico según el esquema regular nacional del Ministerio de Salud."},
+          {"codigo": "C3", "texto": "Identificación exacta del número de lote, con rotulado del frasco coincidente con el documento."},
+          {"codigo": "C4", "texto": "Cantidad de dosis o viales exacta y coincidente con el stock físico y el acta de recepción."},
+          {"codigo": "C5", "texto": "Fecha del movimiento consignada con formato completo y secuencia cronológica."},
+          {"codigo": "C6", "texto": "Establecimiento de origen o destino plenamente individualizado con código oficial."},
+          {"codigo": "C7", "texto": "Nombre completo, firma o usuario responsable del despacho o recepción plenamente trazable."},
+          {"codigo": "C8", "texto": "Documento formal de respaldo asociado y verificado: vale oficial, PECOSA, guía de remisión o acta."}
+        ]
+      },
+      "bloques": [
+        {
+          "tipo": "bloque_documento_rsd",
+          "repeticion": "uno por documento auditado. En el maestro: D-01 a D-05. Continúa en hoja de continuación desde D-06.",
+          "titulo": "Documento D-__",
+          "campos_cabecera": [
+            {"id": "tipo_documento", "etiqueta": "Tipo de documento", "opciones": "kardex / vale / PECOSA / guía de remisión / registro electrónico"},
+            {"id": "fecha_documento", "etiqueta": "Fecha", "formato": "____/____/______"}
+          ],
+          "rejilla_criterios": {
+            "columnas": ["Código y criterio abreviado", "Cumple Sí / No"],
+            "distribucion": "dos columnas de cuatro filas para no ensanchar la hoja",
+            "filas": [
+              {"codigo": "C1", "etiqueta_corta": "Tipo de movimiento"},
+              {"codigo": "C2", "etiqueta_corta": "Denominación del biológico"},
+              {"codigo": "C3", "etiqueta_corta": "Número de lote"},
+              {"codigo": "C4", "etiqueta_corta": "Cantidad de dosis o viales"},
+              {"codigo": "C5", "etiqueta_corta": "Fecha del movimiento"},
+              {"codigo": "C6", "etiqueta_corta": "Establecimiento y código"},
+              {"codigo": "C7", "etiqueta_corta": "Responsable trazable"},
+              {"codigo": "C8", "etiqueta_corta": "Documento de respaldo"}
+            ]
+          },
+          "cierre_bloque": [
+            {"id": "veredicto", "etiqueta": "Veredicto", "formato": "____________ (CONFORME solo si C1 a C8 son Sí)"},
+            {"id": "motivo", "etiqueta": "Motivo o documento de justificación", "formato": "________________________________"}
+          ],
+          "nota": "Se conservan los campos reales del formulario emitido: tipo de documento, fecha, C1 a C8, veredicto y motivo. No se añaden vacuna ni lote. Ver nota de prevalencia y C-03."
+        }
+      ],
+      "tabla_cpe": {
+        "titulo": "Entregas. Concordancia entre cantidad programada y entregada",
+        "columnas": [
+          {"id": "n", "etiqueta": "N.°"},
+          {"id": "cantidad_programada", "etiqueta": "Cantidad programada"},
+          {"id": "cantidad_entregada", "etiqueta": "Cantidad entregada"},
+          {"id": "diferencia", "etiqueta": "Diferencia"},
+          {"id": "documento_autoriza", "etiqueta": "Documento que autoriza"},
+          {"id": "concordante", "etiqueta": "Concordante Sí / No"}
+        ],
+        "filas": 12,
+        "anchos_referenciales_dxa": [600, 1650, 1650, 1250, 2388, 1250],
+        "suma_dxa": 8788,
+        "nota_causa": "La causa no forma parte de la tabla CPE del formulario emitido. No se añade columna. Si el auditor necesita consignarla, usa el recuadro de observaciones.",
+        "continuacion": "Si hay más de doce entregas, continúe en la hoja de continuación de CPE con el número correlativo E-13 en adelante."
+      },
+      "conteos_cierre": {
+        "titulo": "Conteos de cierre de la ficha",
+        "columnas": ["Concepto", "Valor"],
+        "filas": [
+          "Documentos auditados (total)",
+          "Documentos conformes",
+          "Documentos no conformes",
+          "Entregas evaluadas (total)",
+          "Entregas concordantes",
+          "Entregas no concordantes"
+        ],
+        "nota_literal": "Los porcentajes se calculan en la hoja de cierre del investigador. No se anotan en esta ficha.",
+        "prohibicion": "No imprimir fórmulas, porcentajes, promedios ni resultados dentro de las celdas."
+      },
+      "cierre": {
+        "observaciones": "Observaciones del auditor. Recuadro de 2,5 cm.",
+        "firma": "Firma del auditor: ______________________________",
+        "fecha": "Fecha de cierre de la ficha: ____/____/______"
+      },
+      "prohibiciones": [
+        "No volver a la tabla de trece columnas.",
+        "No imprimir la fase PRE o POST como texto fijo.",
+        "No incluir fórmulas dentro de celdas.",
+        "No auditar documentos con datos de pacientes."
+      ]
+    },
+    {
+      "id": "03",
+      "rotulo_secuencia": "03",
+      "naturaleza": "instrumento_oficial_3_modalidad_a",
+      "titulo_impreso": "Instrumento 3. Cuestionario A. Satisfacción del usuario",
+      "subtitulo_impreso": "Modalidad A. Ocho reactivos con escala de 1 a 5",
+      "dimension": "Satisfacción del usuario",
+      "indicadores": ["AP", "UP"],
+      "quien_llena": "Participante",
+      "fase": "línea en blanco con opciones INICIAL o FINAL",
+      "paginas_objetivo": 1,
+      "cabecera": {
+        "campos": [
+          {"id": "codigo_trabajador", "etiqueta": "Código", "formato": "TRAB-______"},
+          {"id": "fase", "etiqueta": "Fase", "formato": "____________________ (INICIAL o FINAL)"},
+          {"id": "fecha_aplicacion", "etiqueta": "Fecha", "formato": "____/____/______"}
+        ],
+        "regla": "Sin nombre, sin apellido, sin DNI y sin establecimiento."
+      },
+      "instrucciones": [
+        "Marque con una X una sola casilla por enunciado.",
+        "1 es totalmente en desacuerdo y 5 es totalmente de acuerdo. No hay respuestas correctas ni incorrectas.",
+        "Responda según su experiencia en el registro y control de movimientos de vacunas.",
+        "No escriba su nombre, apellido ni DNI. Use solo el código que le entregue el investigador."
+      ],
+      "escala": {
+        "formato": "una fila de cinco celdas",
+        "valores": [
+          "1. Totalmente en desacuerdo",
+          "2. En desacuerdo",
+          "3. Ni de acuerdo ni en desacuerdo",
+          "4. De acuerdo",
+          "5. Totalmente de acuerdo"
+        ]
+      },
+      "tabla_reactivos": {
+        "columnas": ["N.°", "Enunciado", "1", "2", "3", "4", "5"],
+        "filas": 8,
+        "grupos": [
+          {"rotulo": "Aceptación del proceso (AP)", "codigos": ["AP-01", "AP-02", "AP-03", "AP-04"]},
+          {"rotulo": "Utilidad percibida (UP)", "codigos": ["UP-01", "UP-02", "UP-03", "UP-04"]}
+        ],
+        "fuente_literal": "Tabla 14 del modelo rector. Extracción programática por código.",
+        "prohibicion": "No se transcribe, no se parafrasea y no se corrige el enunciado."
+      },
+      "nota_cierre": "Esta hoja no se suma con el Módulo B. El puntaje se traslada a la hoja de puntuación del investigador; no se calcula en presencia del participante.",
+      "prohibiciones": [
+        "No imprimir puntajes, sumas, niveles ni baremos.",
+        "No imprimir la fase PRE o POST como texto fijo.",
+        "No inducir respuestas ni explicar el sentido del reactivo más allá de la lectura literal.",
+        "No incluir observaciones del participante en esta hoja."
+      ]
+    },
+    {
+      "id": "04",
+      "rotulo_secuencia": "04",
+      "naturaleza": "modulo_anexo_no_aditivo_de_la_modalidad_a",
+      "titulo_impreso": "Módulo B. Cuestionario complementario",
+      "subtitulo_impreso": "Solo se aplica al final, después de usar SIVAC",
+      "dimension": "Satisfacción del usuario, módulo complementario. No constituye una cuarta dimensión ni un cuarto instrumento oficial.",
+      "indicadores": ["PU", "PE como constructos complementarios, no indicadores DEC-007"],
+      "quien_llena": "Participante",
+      "fase": "FINAL, fija impresa",
+      "paginas_objetivo": 1,
+      "cabecera": {
+        "campos": [
+          {"id": "codigo_trabajador", "etiqueta": "Código", "formato": "TRAB-______"},
+          {"id": "fecha_aplicacion", "etiqueta": "Fecha", "formato": "____/____/______"}
+        ],
+        "rotulo_fijo": "Aplicación: solo al final, después de usar SIVAC.",
+        "regla": "Sin campo de fase porque su uso es exclusivamente final. Sin nombre, sin apellido, sin DNI y sin establecimiento."
+      },
+      "instrucciones": [
+        "Este módulo se aplica solo al final, después de haber usado SIVAC.",
+        "Marque con una X una sola casilla por enunciado. La escala es la misma de 1 a 5.",
+        "No hay respuestas correctas ni incorrectas.",
+        "Este módulo no se suma al Cuestionario A y no tiene puntaje global.",
+        "No escriba su nombre, apellido ni DNI."
+      ],
+      "escala": {
+        "formato": "una fila de cinco celdas",
+        "valores": [
+          "1. Totalmente en desacuerdo",
+          "2. En desacuerdo",
+          "3. Ni de acuerdo ni en desacuerdo",
+          "4. De acuerdo",
+          "5. Totalmente de acuerdo"
+        ]
+      },
+      "tabla_reactivos": {
+        "columnas": ["N.°", "Enunciado", "1", "2", "3", "4", "5"],
+        "filas": 8,
+        "grupos": [
+          {"rotulo": "PU. Utilidad percibida del software (módulo complementario)", "codigos": ["PU-01", "PU-02", "PU-03", "PU-04"]},
+          {"rotulo": "PE. Facilidad de uso percibida (módulo complementario)", "codigos": ["PE-01", "PE-02", "PE-03", "PE-04"]}
+        ],
+        "fuente_literal": "Tabla 15 del modelo rector. Extracción programática por código.",
+        "prohibicion": "No se transcribe, no se parafrasea y no se corrige el enunciado."
+      },
+      "nota_cierre": "No se suma al Cuestionario A. No tiene baremo ni contraste inferencial. Si no se aplica, se registra como no aplicado y no se imputa.",
+      "prohibiciones": [
+        "No aplicar en la fase inicial.",
+        "No imprimir puntajes, sumas, niveles ni baremos.",
+        "No rotularlo como Instrumento 4 oficial ni como cuarta dimensión.",
+        "No incluir observaciones del participante en esta hoja."
+      ]
+    }
+  ],
+  "instrucciones_hoja_cero": {
+    "titulo": "Hoja de instrucciones de una página para el aplicador",
+    "naturaleza": "soporte separado, no se entrega al participante",
+    "texto_literal": [
+      "Quién llena cada hoja: la 01 la llena el observador, la 02 el auditor, la 03 el participante y la 04 el participante solo al final.",
+      "El consentimiento se firma antes de aplicar cualquier hoja y se guarda aparte.",
+      "Escriba solo el código TRAB y el código de centro. No escriba nombres, DNI ni el nombre del establecimiento.",
+      "Anote la fase con las palabras INICIAL o FINAL. No use marcas preimpresas.",
+      "No invente fechas, respuestas, mediciones ni firmas.",
+      "El Módulo B no se aplica al inicio y no se suma al Cuestionario A."
+    ],
+    "paginas": 1
+  },
+  "diccionario_campos": [
+    {
+      "campo_origen": "Encabezado Paquete TRAB-XX · Fase PRE/POST",
+      "documento_origen": "01, 02, 03 y 04",
+      "ubicacion_nueva": "Cabecera de identificación con Código TRAB-______ y línea de Fase",
+      "tratamiento": "Se elimina la fase preimpresa. La fase se anota a mano en 01, 02 y 03. En 04 se imprime fijo el uso final.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "codigo TRAB-XX",
+      "documento_origen": "Todos",
+      "ubicacion_nueva": "Cabecera, primera línea",
+      "tratamiento": "Se conserva el prefijo TRAB y se deja el número en blanco. No se reproducen catorce paquetes en esta etapa.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "codigo de centro",
+      "documento_origen": "01 y 02",
+      "ubicacion_nueva": "Cabecera",
+      "tratamiento": "Solo código. Nunca nombre del establecimiento.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "fecha de aplicación",
+      "documento_origen": "Todos",
+      "ubicacion_nueva": "Cabecera",
+      "tratamiento": "Línea en blanco. No se preimprime ninguna fecha.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "observador",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Cabecera y pie de firma",
+      "tratamiento": "Nombre del observador, no del trabajador observado.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Tarea y descripción (tabla de ocho columnas)",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Título de cada bloque de tarea",
+      "tratamiento": "La descripción completa pasa al título del bloque. Se elimina la columna Descripción.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Hora inicio, hora fin, duración",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Rejilla interna del bloque de tarea",
+      "tratamiento": "Tres campos en la primera fila del bloque.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Pausa sí/no y causa",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Rejilla interna del bloque de tarea",
+      "tratamiento": "Se conserva como campo único con opción y causa.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Tarea válida sí/no",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Rejilla interna del bloque de tarea",
+      "tratamiento": "Se conserva.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Motivo de anulación",
+      "documento_origen": "01, implícito en las instrucciones",
+      "ubicacion_nueva": "Campo de Observaciones del bloque de tarea",
+      "tratamiento": "No se agrega un campo nuevo. El motivo se anota dentro de Observaciones, como en el formulario emitido.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Biológico y lote, dosis o viales",
+      "documento_origen": "01, declarado en la especificación del paquete",
+      "ubicacion_nueva": "No aplica. No existe en el formulario emitido.",
+      "tratamiento": "No se incorporan. Se congelan los campos reales del formulario emitido. Ver C-03 y la nota de prevalencia.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Observaciones por tarea",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Última fila del bloque de tarea",
+      "tratamiento": "Se conserva.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Media, mediana y tareas válidas",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Consolidado de la página 2",
+      "tratamiento": "Se conserva la tabla de cuatro columnas. No se agregan porcentajes.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Incidencias: N.°, hora, tarea, causa, acción, observaciones",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Tabla de incidencias de cuatro filas y cinco columnas",
+      "tratamiento": "Observaciones se integra en Acción y detalle. Se remite a continuación si hay más filas.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Observaciones del observador",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Recuadro de cierre",
+      "tratamiento": "Se reduce a 2,5 cm y se conserva.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Firma del observador y horas de sesión",
+      "documento_origen": "01",
+      "ubicacion_nueva": "Pie de la página 2",
+      "tratamiento": "Se conserva.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Tabla RSD de trece columnas: N.°, tipo de documento, fecha, C1 a C8, conforme, motivo",
+      "documento_origen": "02",
+      "ubicacion_nueva": "Bloque vertical por documento D-__",
+      "tratamiento": "Se elimina la tabla ancha. Los ocho criterios se distribuyen en rejilla de dos por cuatro. Se conservan todos los campos crudos.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Vacuna y lote del documento auditado",
+      "documento_origen": "02, declarados en la especificación del paquete",
+      "ubicacion_nueva": "No aplica. No existen en el formulario emitido.",
+      "tratamiento": "No se incorporan. Se congelan los campos reales del formulario emitido. Ver C-03 y la nota de prevalencia.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Criterios C1 a C8",
+      "documento_origen": "02",
+      "ubicacion_nueva": "Leyenda completa una vez al inicio y etiqueta corta en cada bloque",
+      "tratamiento": "El texto íntegro se imprime una sola vez. En el bloque se usa la etiqueta corta para no repetir párrafos.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Conforme sí/no y motivo",
+      "documento_origen": "02",
+      "ubicacion_nueva": "Cierre del bloque D-__",
+      "tratamiento": "Se conservan Veredicto y Motivo del formulario emitido. El documento de justificación, si existe, se anota en el mismo campo Motivo.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Cantidad programada, entregada, diferencia, documento que autoriza, concordante",
+      "documento_origen": "02",
+      "ubicacion_nueva": "Tabla CPE de seis columnas",
+      "tratamiento": "Se conservan las seis columnas reales del formulario emitido. No se agrega Causa ni Vale o requerimiento.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Numerador, denominador y porcentaje de RSD y CPE",
+      "documento_origen": "02",
+      "ubicacion_nueva": "Conteos crudos en la ficha; porcentajes en la hoja de cierre",
+      "tratamiento": "La ficha conserva documentos y entregas contados. El porcentaje y la fórmula pasan a la hoja de cierre del investigador.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Observaciones del auditor, firma y fecha de cierre",
+      "documento_origen": "02",
+      "ubicacion_nueva": "Pie de la página 3",
+      "tratamiento": "Se conserva.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Hoja de continuación",
+      "documento_origen": "02 y 01",
+      "ubicacion_nueva": "Soporte separado con bloques correlativos",
+      "tratamiento": "Se conserva como documento aparte. Se numera D-06 en adelante para RSD, E-13 en adelante para CPE y H-05 en adelante para incidencias.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Reactivos AP-01 a AP-04 y UP-01 a UP-04",
+      "documento_origen": "03",
+      "ubicacion_nueva": "Tabla de ocho filas",
+      "tratamiento": "Extracción literal de la tabla 14 del rector. Sin cambios.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Escala Likert 1 a 5",
+      "documento_origen": "03 y 04",
+      "ubicacion_nueva": "Leyenda de una fila y columnas 1 a 5",
+      "tratamiento": "Se conserva la escala y sus cinco rótulos.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Reactivos PU-01 a PU-04 y PE-01 a PE-04",
+      "documento_origen": "04",
+      "ubicacion_nueva": "Tabla de ocho filas",
+      "tratamiento": "Extracción literal de la tabla 15 del rector. Sin cambios.",
+      "obligatorio": true
+    },
+    {
+      "campo_origen": "Puntajes AP, UP, total y nivel",
+      "documento_origen": "03",
+      "ubicacion_nueva": "Hoja de puntuación del investigador, soporte separado",
+      "tratamiento": "No se imprime en la hoja del participante. Se conservan las sumas 4 a 20, 4 a 20 y 8 a 40, y los terciles teóricos 8 a 18, 19 a 29 y 30 a 40.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Observaciones del participante",
+      "documento_origen": "03 y 04",
+      "ubicacion_nueva": "Registro de campo del investigador, si se requiere",
+      "tratamiento": "Se retira de la hoja del participante porque no es un campo del instrumento.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Consentimiento, datos de contacto y firmas",
+      "documento_origen": "Paquete actual",
+      "ubicacion_nueva": "Soporte separado de dos páginas",
+      "tratamiento": "No se incluye en el conjunto esencial. Requiere versión aprobada por la asesora.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Calibración ICC de quince observaciones",
+      "documento_origen": "Kit",
+      "ubicacion_nueva": "Soporte separado del investigador",
+      "tratamiento": "No se imprime en las hojas esenciales.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Calibración kappa de treinta registros",
+      "documento_origen": "Kit",
+      "ubicacion_nueva": "Soporte separado del investigador",
+      "tratamiento": "No se imprime en las hojas esenciales.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Modo de corpus A, B o C",
+      "documento_origen": "Matriz de captura",
+      "ubicacion_nueva": "Hoja de cierre del investigador y matriz",
+      "tratamiento": "Parámetro vacío hasta la decisión de la asesora.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Control código-nombre, registro de campo, ausencias, exposición, trazabilidad",
+      "documento_origen": "Kit del investigador",
+      "ubicacion_nueva": "Soportes separados del investigador",
+      "tratamiento": "No se incluyen en el conjunto esencial ni en la hoja del participante.",
+      "obligatorio": false
+    },
+    {
+      "campo_origen": "Expediente de evaluación por expertos",
+      "documento_origen": "Expediente de jueces",
+      "ubicacion_nueva": "Expediente separado",
+      "tratamiento": "Se conserva como registro separado. No se prescribe alcance ni número de certificados. QG-5 permanece abierta. Nunca dentro de un paquete de trabajador.",
+      "obligatorio": false
+    }
+  ],
+  "invariantes": [
+    {
+      "id": "I-01",
+      "regla": "Se conservan exactamente tres dimensiones y seis indicadores: Oportunidad de procesamiento con T_reg y T_vale; Consistencia documental con RSD y CPE; Satisfacción del usuario con AP y UP.",
+      "fuente": "DEC-007 y operacionalización definitiva"
+    },
+    {
+      "id": "I-02",
+      "regla": "La Modalidad A conserva ocho reactivos, AP-01 a AP-04 y UP-01 a UP-04, con escala Likert de 1 a 5. La Modalidad B conserva ocho reactivos, PU-01 a PU-04 y PE-01 a PE-04.",
+      "fuente": "DEC-019"
+    },
+    {
+      "id": "I-03",
+      "regla": "La Modalidad A se aplica en la fase inicial y en la final con los mismos ocho reactivos. La Modalidad B se aplica solo en la fase final. No se suman, no se comparan entre sí y no producen puntaje global.",
+      "fuente": "DEC-019 y guía de campo"
+    },
+    {
+      "id": "I-04",
+      "regla": "La Modalidad A conserva la subescala de 4 a 20 puntos por indicador y el total de 8 a 40 puntos. Los niveles 8 a 18, 19 a 29 y 30 a 40 son terciles teóricos, no baremos normativos.",
+      "fuente": "Especificación del paquete y corrección de la expresión normalizados"
+    },
+    {
+      "id": "I-05",
+      "regla": "La población es censal, N = n = 14 trabajadores. No se agregan ni se sustituyen sujetos.",
+      "fuente": "DEC-007"
+    },
+    {
+      "id": "I-06",
+      "regla": "Cada trabajador ejecuta tres tareas de registro y tres tareas de emisión de vales por fase. Las tareas son REG-01, REG-02, REG-03, VALE-01, VALE-02 y VALE-03, con las descripciones del formulario emitido. No se convierten en seis repeticiones idénticas sin decisión metodológica.",
+      "fuente": "Guía de campo 2026-10-22, sección 7.2, y formulario emitido. Ver C-01."
+    },
+    {
+      "id": "I-07",
+      "regla": "El indicador RSD usa como unidad el documento de movimiento. El indicador CPE usa como unidad la entrega o despacho. No se suman dosis.",
+      "fuente": "Guía de campo, sección 7.5"
+    },
+    {
+      "id": "I-08",
+      "regla": "Un documento es conforme solo si cumple los ocho criterios a la vez. Una entrega es concordante si la cantidad entregada iguala la programada o si la diferencia tiene documento formal que la autoriza.",
+      "fuente": "Guía de campo, sección 7.5"
+    },
+    {
+      "id": "I-09",
+      "regla": "Los ocho criterios de RSD se conservan literalmente. No se agregan, eliminan ni reformulan criterios.",
+      "fuente": "Especificación del paquete y guía de campo"
+    },
+    {
+      "id": "I-10",
+      "regla": "Los enunciados de AP, UP, PU y PE se extraen por código de las tablas 14 y 15 del rector. La reelaboración editorial no puede alterar un solo carácter.",
+      "fuente": "D-PC-02"
+    },
+    {
+      "id": "I-11",
+      "regla": "El expediente de evaluación por expertos se conserva separado de las hojas de campo. Este rediseño no prescribe su alcance, su número de certificados ni su estado de aplicación. QG-5 permanece abierta.",
+      "fuente": "DEC-023 a DEC-026 y ESTADO_TESIS"
+    },
+    {
+      "id": "I-12",
+      "regla": "Los umbrales se conservan: V de Aiken mayor o igual a 0,80; IVC total mayor o igual a 0,80; ICC(2,1) mayor o igual a 0,75; kappa de Cohen mayor o igual a 0,80.",
+      "fuente": "DEC-015 y guía de campo"
+    },
+    {
+      "id": "I-13",
+      "regla": "No se calculan V de Aiken, IVC, ICC, kappa, alfa ni omega sin datos reales. Omega no es estimable con n = 14 y debe declararse su no estimabilidad.",
+      "fuente": "DEC-014 y guía de campo"
+    },
+    {
+      "id": "I-14",
+      "regla": "No se agregan campos demográficos, de autorización, de validación ni de identificación personal a las hojas esenciales. Solo código, centro, fase, fecha y responsable.",
+      "fuente": "Principios del paquete y regla canónica 01"
+    },
+    {
+      "id": "I-15",
+      "regla": "No se preimprimen respuestas, puntajes, fechas de aplicación, firmas, sellos, dictámenes ni marcas de calificación.",
+      "fuente": "DEC-016"
+    },
+    {
+      "id": "I-16",
+      "regla": "No se incrustan fórmulas, ecuaciones ni objetos OMML dentro de celdas. Las fórmulas permanecen en el cuerpo narrativo del capítulo IV y en la hoja de cierre.",
+      "fuente": "Regla canónica 03 y D-PC-07"
+    },
+    {
+      "id": "I-17",
+      "regla": "El Módulo B se rotula como módulo complementario de la Modalidad A. El número 04 es una secuencia editorial de documento propuesta por el equipo, no un cuarto instrumento oficial ni una cuarta dimensión.",
+      "fuente": "DEC-007 y esta especificación"
+    },
+    {
+      "id": "I-18",
+      "regla": "El expediente de evaluación, el consentimiento, la calibración, los baremos, la matriz de captura y el manual no se imprimen dentro de las hojas esenciales.",
+      "fuente": "Guía de campo y decisiones del paquete"
+    },
+    {
+      "id": "I-19",
+      "regla": "Toda hoja que pueda exceder su capacidad remite a una continuación con identificador correlativo. No se abren bloques sin número.",
+      "fuente": "Principio P-08 de esta especificación"
+    },
+    {
+      "id": "I-20",
+      "regla": "La emisión anterior del paquete no se sobrescribe. La versión claridad se emite como v01 y la anterior se conserva archivada.",
+      "fuente": "D-PC-10 y regla canónica 01"
+    }
+  ],
+  "conflictos_sin_resolver": [
+    {
+      "id": "C-01",
+      "tema": "Tareas heterogéneas frente a repeticiones estandarizadas",
+      "evidencia": "La guía de campo 2026-10-22, sección 7.2, define tres tipos de tarea por indicador y advierte que no son seis repeticiones de la misma tarea. La operacionalización definitiva, indicadores 1.1 y 1.2, habla de tres observaciones y tres emisiones por participante. Los antecedentes v09 pueden describir repeticiones estandarizadas.",
+      "que_se_preserva": "Se conserva la fuente de campo vigente: tres tipos de tarea por indicador y fase, con los códigos y alcances REG-01 a REG-03 y VALE-01 a VALE-03.",
+      "que_no_se_hace": "No se convierte el protocolo en seis repeticiones idénticas ni se agregan tareas. No se resuelve por intuición.",
+      "responsable": "Asesora y guardian-consistencia antes de imprimir",
+      "marca": "[VERIFICAR]"
+    },
+    {
+      "id": "C-02",
+      "tema": "Modo del corpus documental",
+      "evidencia": "La fuente fija de 40 a 60 documentos por ventana, sin precisar si el corpus es global para la red o por trabajador. Un corpus global deja pocos documentos por trabajador; uno por trabajador multiplica el total.",
+      "que_se_preserva": "El parámetro modo_corpus queda vacío en la hoja de cierre y en la matriz, con tres opciones: A global por ventana, B por trabajador y ventana, C otro número acordado.",
+      "que_no_se_hace": "No se decide por cuenta propia ni se llena el parámetro sin aprobación.",
+      "responsable": "Asesora antes del pretest",
+      "marca": "[VERIFICAR]"
+    },
+    {
+      "id": "C-03",
+      "tema": "Campos de biológico, lote, dosis, vacuna y causa ausentes en el formulario emitido",
+      "evidencia": "La especificación del paquete declara biológico y lote, dosis, vacuna y causa. El formulario emitido no los contiene. No consta inspección de la aplicación del expediente ni de una versión firmada o remitida.",
+      "que_se_preserva": "Dirección resuelve congelar los campos reales del formulario emitido. Se conservan las descripciones de tareas actuales y no se añaden campos basados solo en la especificación.",
+      "que_no_se_hace": "No se añaden biológico, lote, dosis, vacuna ni causa. No se sustituyen las descripciones de tareas. No se modifica el formulario emitido.",
+      "responsable": "Dirección (resuelto)",
+      "marca": "RESUELTO_POR_DIRECCION"
+    },
+    {
+      "id": "C-04",
+      "tema": "Descripción de la tarea REG-03",
+      "evidencia": "El formulario emitido usa la descripción Redistribución con varios biológicos, de cuatro a seis ítems. No se sustituye por otra redacción.",
+      "que_se_preserva": "Se conserva la descripción del formulario emitido y el código REG-03 con su alcance.",
+      "que_no_se_hace": "No se cambia la tarea, su descripción ni el número de tareas.",
+      "responsable": "Dirección (resuelto)",
+      "marca": "RESUELTO_POR_DIRECCION"
+    },
+    {
+      "id": "C-05",
+      "tema": "Expresión normalizados en el baremo de satisfacción",
+      "evidencia": "La fuente usa normalizados; la matriz vigente aclara que son terciles teóricos sin distribución de referencia con catorce casos.",
+      "que_se_preserva": "Se imprime terciles teóricos 8 a 18, 19 a 29 y 30 a 40 en la hoja de puntuación del investigador.",
+      "que_no_se_hace": "No se usa la palabra normalizados ni se presenta como baremo normativo.",
+      "responsable": "Maquetador",
+      "marca": "RESUELTO_EDITORIAL"
+    },
+    {
+      "id": "C-06",
+      "tema": "Consentimiento institucional desalineado",
+      "evidencia": "El modelo disponible menciona diez preguntas y veinte registros, y contiene contactos no verificados. Los instrumentos vigentes tienen ocho reactivos A, ocho B y un corpus paramétrico.",
+      "que_se_preserva": "El consentimiento queda como soporte separado y se emite solo con la versión aprobada por la asesora.",
+      "que_no_se_hace": "No se usa el modelo tal como está ni se inventan correos o teléfonos.",
+      "responsable": "Asesora antes de imprimir",
+      "marca": "[VERIFICAR]"
+    },
+    {
+      "id": "C-07",
+      "tema": "Criterio mínimo de exposición a SIVAC",
+      "evidencia": "No se fija un mínimo de días de uso. El control de exposición existe, pero el criterio debe aprobarse antes del postest.",
+      "que_se_preserva": "El campo queda vacío en el soporte de exposición. Sin registro de exposición no se declara válido el postest.",
+      "que_no_se_hace": "No se inventa un mínimo de días.",
+      "responsable": "Asesora antes del postest",
+      "marca": "[VERIFICAR]"
+    },
+    {
+      "id": "C-08",
+      "tema": "Instrumentos fuente y expediente de evaluación frente a la reelaboración editorial",
+      "evidencia": "La petición actual autoriza reelaboración editorial, no sustitución sustantiva. No consta inspección de la aplicación del expediente ni de una versión firmada o remitida.",
+      "que_se_preserva": "Se conservan la versión fuente y el expediente de evaluación como registros separados. El rediseño de campo no los sustituye ni declara su estado de aplicación.",
+      "que_no_se_hace": "No se afirma que el anexo esté firmado o remitido. No se prescribe el alcance ni el número de certificados del expediente. Si el rediseño exigiera cambiar el texto de un reactivo, se trataría como nueva versión y nueva evaluación.",
+      "responsable": "Director General y asesora",
+      "marca": "[VERIFICAR]"
+    },
+    {
+      "id": "C-09",
+      "tema": "Fuente normativa de matrices ausente",
+      "evidencia": "salidas/matrices/ no contiene archivos al 2026-10-22. La copia del vault está alineada, pero es registro histórico.",
+      "que_se_preserva": "Se usa la copia del vault solo como referencia y se deja constancia. No se declara fuente localizada.",
+      "que_no_se_hace": "No se inventa una matriz ni se declara una ruta que no se pudo abrir.",
+      "responsable": "Tesista o guardian-consistencia antes de imprimir",
+      "marca": "[VERIFICAR]"
+    },
+    {
+      "id": "C-10",
+      "tema": "Emisión previa cerrada y nueva versión editorial",
+      "evidencia": "D-PC-10 declara cerrada una emisión de 14 paquetes, 238 páginas y un manifiesto con SHA-256. La petición actual pide un rediseño por confusión.",
+      "que_se_preserva": "La emisión anterior se conserva archivada e intacta. La versión claridad se emite como v01 con su propio manifiesto.",
+      "que_no_se_hace": "No se sobrescriben los maestros ni los PDF de la emisión anterior. No se declara que la nueva versión acredita aplicación o validación.",
+      "responsable": "Director General y maquetador",
+      "marca": "GESTIONABLE"
+    },
+    {
+      "id": "C-11",
+      "tema": "Numeración 04 frente a la norma de tres dimensiones",
+      "evidencia": "La secuencia 01 a 04 es una decisión editorial propuesta por el equipo para ordenar documentos. No es una preferencia expresada por el tesista. DEC-007 fija tres dimensiones.",
+      "que_se_preserva": "04 es una secuencia editorial de documento. El título impreso es Módulo B, no Instrumento 4. Se declara módulo anexo no aditivo.",
+      "que_no_se_hace": "No se atribuye la numeración al tesista. No se crea una cuarta dimensión, un cuarto indicador ni un cuarto certificado.",
+      "responsable": "Maquetador y especialista-instrumentos",
+      "marca": "RESUELTO_EDITORIAL"
+    }
+  ],
+  "soportes_separados": {
+    "regla_general": "Ninguno de estos soportes se imprime dentro de las hojas esenciales 01 a 04 ni se entrega al participante, salvo el consentimiento.",
+    "elementos": [
+      {
+        "id": "S-01",
+        "nombre": "Consentimiento informado",
+        "paginas": 2,
+        "quien": "Participante e investigador",
+        "uso": "Se firma antes de aplicar cualquier hoja. Se guarda en sobre aparte, identificado solo con el código.",
+        "condicion": "Requiere versión aprobada por la asesora."
+      },
+      {
+        "id": "S-02",
+        "nombre": "Hoja de instrucciones de una página para el aplicador",
+        "paginas": 1,
+        "quien": "Investigador",
+        "uso": "Resumen de quién llena qué, fase, anonimato y prohibiciones.",
+        "condicion": "No se entrega al participante."
+      },
+      {
+        "id": "S-03",
+        "nombre": "Hoja de cierre de indicadores",
+        "paginas": 1,
+        "quien": "Investigador",
+        "uso": "Convierte los conteos crudos de la Ficha 02 en RSD y CPE porcentuales. Registra el modo de corpus.",
+        "condicion": "Sin fórmulas en celdas; cálculo en prosa o en hoja de cálculo aparte."
+      },
+      {
+        "id": "S-04",
+        "nombre": "Hoja de puntuación del Cuestionario A",
+        "paginas": 1,
+        "quien": "Investigador",
+        "uso": "Transcribe AP, UP, total y terciles teóricos. No se entrega al participante.",
+        "condicion": "Sin alfa, omega ni contraste."
+      },
+      {
+        "id": "S-05",
+        "nombre": "Calibración ICC de observadores",
+        "paginas": 1,
+        "quien": "Dos observadores",
+        "uso": "Quince observaciones simultáneas a ciegas. ICC(2,1) se calcula después.",
+        "condicion": "No se prellena ni se certifica de antemano."
+      },
+      {
+        "id": "S-06",
+        "nombre": "Calibración kappa de auditores",
+        "paginas": 1,
+        "quien": "Dos auditores",
+        "uso": "Treinta registros auditados a ciegas. Kappa se calcula después.",
+        "condicion": "No se prellena ni se certifica de antemano."
+      },
+      {
+        "id": "S-07",
+        "nombre": "Control privado código-nombre",
+        "paginas": 1,
+        "quien": "Investigador",
+        "uso": "Única relación entre código y nombre. Bajo llave. No se escanea.",
+        "condicion": "Nunca se incluye en el paquete."
+      },
+      {
+        "id": "S-08",
+        "nombre": "Registro de campo, ausencias, exposición y trazabilidad",
+        "paginas": 4,
+        "quien": "Investigador",
+        "uso": "Registro diario, faltantes sin imputación, exposición a SIVAC y control de escaneo.",
+        "condicion": "No se imputan valores."
+      },
+      {
+        "id": "S-09",
+        "nombre": "Matriz de captura",
+        "paginas": 0,
+        "quien": "Investigador",
+        "uso": "Catorce hojas de captura y parámetros. Se trabaja sobre copia.",
+        "condicion": "Todas las celdas de datos vacías."
+      },
+      {
+        "id": "S-10",
+        "nombre": "Manual del investigador y guía de campo",
+        "paginas": 0,
+        "quien": "Investigador",
+        "uso": "Protocolo extenso, calibración, corpus, custodia, cronograma y rutas de contingencia.",
+        "condicion": "Se conserva separado. No se imprime en el paquete del participante."
+      },
+      {
+        "id": "S-11",
+        "nombre": "Expediente de evaluación por expertos",
+        "paginas": 0,
+        "quien": "Juez experto",
+        "uso": "Se conserva separado de las hojas de campo. No se prescribe su alcance ni su estado de aplicación.",
+        "condicion": "QG-5 permanece abierta. No consta inspección de su aplicación. No entra al paquete de campo."
+      },
+      {
+        "id": "S-12",
+        "nombre": "Hojas de continuación",
+        "paginas": 0,
+        "quien": "Observador o auditor",
+        "uso": "RSD desde D-06, CPE desde E-13, incidencias desde H-05.",
+        "condicion": "Se imprimen solo si el corpus o la sesión exceden la hoja base."
+      }
+    ]
+  },
+  "contrato_impresion": {
+    "maestros": [
+      "01_FICHA_TIEMPOS_MAESTRO_v01.docx",
+      "02_FICHA_AUDITORIA_MAESTRO_v01.docx",
+      "03_CUESTIONARIO_A_MAESTRO_v01.docx",
+      "04_MODULO_B_MAESTRO_v01.docx"
+    ],
+    "ruta_version": "salidas/instrumentos/INSTRUMENTOS_REDISENADOS_FANY_20261022_v01/",
+    "version_anterior": "Conservar intacta la carpeta _MAESTROS_DOCX de la emisión previa en salidas/instrumentos/PAQUETE_CAMPO_14_20261022/. No sobrescribir.",
+    "cantidad_en_esta_etapa": "Cuatro maestros y una muestra visual. No se reproducen los catorce paquetes.",
+    "codigo_y_fase": "Se dejan en blanco en el maestro. Se anotan a mano o se sobreimprimen al generar cada paquete, según decisión posterior.",
+    "geometria": "A4 vertical, márgenes 3,0 cm izquierdo y 2,5 cm superior, derecho e inferior; ancho útil 8788 dxa; Times New Roman 12 pt cuerpo, 10 pt tablas y 9,5 pt notas; interlineado 1,5 en prosa y 1,0 en celdas. Conforme a D-PC-06.",
+    "rejilla": "Rejilla visible en todos los formularios, conforme a D-PC-05 y DEC-025/DEC-026. No se aplica el bordado APA 7 de tres líneas a los formularios de campo.",
+    "filas": "Alto mínimo de 0,9 cm en filas de escritura manual. Las filas de solo marca pueden reducirse a 0,7 cm si la geometría lo exige, sin afectar la legibilidad.",
+    "texto": "Todo el texto debe ser nativo de Word. Sin imágenes de texto. Sin OMML en celdas. Sin fórmulas en celdas.",
+    "encabezado": "Encabezado con el nombre del documento y la secuencia editorial. Sin nombre de persona ni de establecimiento. Pie con número de página.",
+    "prohibido_en_texto_imprimible": [
+      "Códigos de decisión DEC-xxx.",
+      "Rutas internas y tokens.",
+      "La raya larga U+2014.",
+      "Marcadores TODO, TrueFalse o corchetes de verificación.",
+      "Nombres de trabajadores, DNI o establecimientos.",
+      "Fechas de aplicación preimpresas."
+    ],
+    "verificacion_antes_de_entregar": [
+      "Contar siete páginas en el conjunto esencial.",
+      "Verificar que 01, 02 y 03 tengan la fase en blanco y que 04 diga solo al final.",
+      "Contar ocho reactivos A, ocho B y ocho criterios.",
+      "Verificar que no haya B en la fase inicial y que no se sume A con B.",
+      "Verificar que no exista tabla de trece columnas.",
+      "Verificar que no haya fórmulas, puntajes ni baremos en las hojas 01 a 04.",
+      "Verificar que la Ficha 02 remita a la continuación.",
+      "Verificar que el expediente de evaluación no esté en el conjunto esencial."
+    ]
+  },
+  "verificacion_editorial": {
+    "criterios": [
+      "Cada hoja declara un solo llenador.",
+      "Cada hoja tiene instrucciones de cuatro a seis líneas antes de la tabla.",
+      "La Ficha 01 usa bloques de tarea y no una tabla de ocho columnas.",
+      "La Ficha 02 usa bloques de documento y no una tabla de trece columnas.",
+      "La tabla CPE conserva las seis columnas del formulario emitido.",
+      "Los ocho criterios aparecen completos una vez y abreviados en cada bloque.",
+      "Los bloques tienen numeración correlativa y remisión a continuación.",
+      "La fase está en blanco en 01, 02 y 03; en 04 es fija al final.",
+      "No hay campos demográficos, de autorización ni de validación en las hojas esenciales.",
+      "No hay puntajes, niveles, porcentajes ni fórmulas en las hojas del participante.",
+      "Los reactivos se extraen del rector y no se retranscriben.",
+      "El Módulo B no se rotula como Instrumento 4 oficial.",
+      "El conjunto esencial no contiene consentimiento, manual, calibración, matriz ni expediente de evaluación."
+    ],
+    "prueba_de_claridad": {
+      "pregunta": "¿Un aplicador nuevo puede decir en menos de un minuto quién llena cada hoja y en qué fase?",
+      "condicion_de_aceptacion": "Sí, usando solo la hoja de instrucciones de una página y la cabecera de cada hoja."
+    },
+    "prueba_de_no_perdida": {
+      "pregunta": "¿Se conservan todos los campos crudos y las reglas del instrumento anterior?",
+      "condicion_de_aceptacion": "Sí, según el diccionario de campos y los invariantes I-06 a I-09."
+    }
+  },
+  "alineacion_fany_folio_68": {
+    "referencia": "Folio 68 del modelo Fany 2024, citado por el tesista.",
+    "que_se_adopta": [
+      "Un instrumento por documento.",
+      "Secuencia título, instrucciones breves, tabla de reactivos y cierre.",
+      "Lenguaje directo al participante.",
+      "Ausencia de notas metodológicas, fórmulas y baremos en la hoja aplicable."
+    ],
+    "que_no_se_adopta_ni_analiza": [
+      "Márgenes, tipografía, bordes y geometría exacta; competen al maquetador.",
+      "Contenido literal de los instrumentos de Fany; no se copia.",
+      "Cantidad de páginas del modelo; no se replica."
+    ],
+    "advertencia": "No se afirma equivalencia con el folio 68. Solo se adopta su jerarquía editorial para reducir la confusión."
+  },
+  "trazabilidad_decisiones": {
+    "DEC-007": "Tres dimensiones y seis indicadores. Invariantes I-01, I-05 e I-17.",
+    "DEC-014": "Prohibición de coeficientes atribuidos a jueces que no evaluaron. Invariante I-13.",
+    "DEC-015": "Referencia de formato institucional. No prescribe el alcance del expediente de evaluación.",
+    "DEC-016": "Emisión en blanco. Invariante I-15.",
+    "DEC-019": "Modalidades A y B no aditivas. Invariantes I-02 e I-03.",
+    "DEC-020": "Registro histórico. No se usa para prescribir el alcance del expediente de evaluación en este rediseño. Ver I-11.",
+    "DEC-023_y_DEC-024": "Expediente de evaluación y alcance editorial; se preserva separado. Ver I-11.",
+    "DEC-025_y_DEC-026": "Rejilla visible en formularios. Contrato de impresión.",
+    "D-PC-02": "Extracción literal de reactivos desde el rector. Invariante I-10.",
+    "D-PC-05": "Rejilla visible. Contrato de impresión.",
+    "D-PC-06": "Geometría y tipografía. Contrato de impresión.",
+    "D-PC-07": "Prohibición de fórmulas en celdas. Invariante I-16.",
+    "D-PC-09": "Emisión por etapas. Contrato de impresión.",
+    "D-PC-10": "Emisión previa cerrada. Conflicto C-10 e invariante I-20."
+  },
+  "resumen_para_el_maquetador": {
+    "que_hacer_primero": "Producir los cuatro maestros v01 y una muestra visual de siete páginas. No reproducir catorce paquetes.",
+    "que_no_tocar": "Reactivos, criterios, escalas, tareas, umbrales, expediente de evaluación y capítulos.",
+    "que_consultar_antes_de_imprimir": [
+      "C-01 tareas heterogéneas frente a repeticiones.",
+      "C-02 modo de corpus.",
+      "C-03 resuelto por dirección: congelar los campos reales del formulario emitido; no añadir campos.",
+      "C-06 consentimiento.",
+      "C-08 preservar la versión fuente y el expediente; no consta inspección de su aplicación.",
+      "C-09 fuente normativa de matrices."
+    ],
+    "criterio_de_entrega": "Siete páginas esenciales, cuatro maestros, fase en blanco, sin tabla de trece columnas, sin nombres ni datos personales, con remisión a continuación, campos congelados al formulario emitido y diccionario de campos respetado."
+  }
+}

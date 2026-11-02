@@ -1,0 +1,1405 @@
+{
+  "meta": {
+    "auditor": "analista-documental",
+    "squad": "Squad E",
+    "fase": "F8",
+    "date": "2026-10-22",
+    "scope_sivac": "páginas físicas 1–53 inclusive (53/53 leídas visualmente)",
+    "scope_fany": "páginas físicas 1–36 inclusive (36/36 leídas visualmente; 13 escaneadas)",
+    "criterion": "cobertura visual acreditada página por página; defectos verificables; no se modificó ningún original",
+    "sources": {
+      "fany": "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+      "fany_sha256": "9bd06460361cd33c38fbb0702dc9aebdfb384976ce79de8f985186f692ba4401",
+      "fany_pages": 106,
+      "sivac_docx": "salidas/documentos/informe_final_v19.docx",
+      "sivac_docx_sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+      "sivac_pdf": "salidas/documentos/informe_final_v19.pdf",
+      "sivac_pdf_sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268"
+    },
+    "read_mode": "Lectura visual de página completa a 110 dpi; el texto extraído se usó solo como apoyo de localización, no como sustituto de la lectura visual.",
+    "limitations": [
+      "Los anclajes automáticos cubren 1,684/3,722 párrafos; las páginas con tablas/figuras se asignaron por lectura visual y por el texto PDF, no por ancla.",
+      "El tramo 54–158 no se audita aquí; D-14 se detectó por inventario y requiere confirmación visual del tramo correspondiente.",
+      "Los documentos escaneados de Fany (2–14) se leyeron como imagen; no se les aplicó OCR ni se evaluaron firmas como evidencia SIVAC."
+    ]
+  },
+  "inventory": {
+    "docx": "salidas/documentos/informe_final_v19.docx",
+    "docx_sha256": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "pdf": "salidas/documentos/informe_final_v19.pdf",
+    "pdf_sha256": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+    "pdf_pages": 158,
+    "paragraphs": 3722,
+    "body_paragraphs": 939,
+    "table_cell_paragraphs": 2783,
+    "tables": 59,
+    "table_cells": 2742,
+    "sections": 7,
+    "images": 49,
+    "fields": 320,
+    "toc_fields": 3,
+    "pageref_fields": 214,
+    "seq_fields": 103,
+    "floating_tables": 0,
+    "overprint_tables_raw": 3,
+    "overprint_real": 0,
+    "landscape_width_limit_dxa": 14000,
+    "portrait_width_limit_dxa": 8788,
+    "font_body": "Times New Roman",
+    "body_size_pt": 12.0,
+    "body_line": 360,
+    "body_indent_firstLine_dxa": 720,
+    "margins_cm": {
+      "left": 3.0,
+      "right": 2.5,
+      "top": 2.5,
+      "bottom": 2.5
+    },
+    "section_map": [
+      {
+        "section": 1,
+        "content": "portada, acta, declaración",
+        "folio": "sin folio",
+        "pgNumType": null
+      },
+      {
+        "section": 2,
+        "content": "dedicatoria a chumasqa",
+        "folio": "lowerRoman start=2",
+        "pgNumType": "lowerRoman start=2"
+      },
+      {
+        "section": 3,
+        "content": "introducción a referencias",
+        "folio": "arabic start=1",
+        "pgNumType": "arabic start=1"
+      },
+      {
+        "section": 4,
+        "content": "anexos landscape",
+        "folio": "continúa",
+        "pgNumType": null
+      },
+      {
+        "section": 5,
+        "content": "anexos portrait",
+        "folio": "continúa",
+        "pgNumType": null
+      },
+      {
+        "section": 6,
+        "content": "anexos landscape",
+        "folio": "continúa",
+        "pgNumType": null
+      },
+      {
+        "section": 7,
+        "content": "cierre portrait",
+        "folio": "continúa",
+        "pgNumType": null
+      }
+    ],
+    "image_dpi_findings": [
+      {
+        "figure": "Portada (escudo)",
+        "px": "212x238",
+        "cm": "4.57x5.13",
+        "dpi": 118
+      },
+      {
+        "figure": "Figura 1",
+        "px": "999x376",
+        "cm": "8.45x3.18",
+        "dpi": 300
+      },
+      {
+        "figure": "Figura 2",
+        "px": "1651x1433",
+        "cm": "13.97x12.13",
+        "dpi": 300
+      },
+      {
+        "figure": "Figura 3",
+        "px": "2302x834",
+        "cm": "13.97x5.06",
+        "dpi": 419
+      },
+      {
+        "figure": "Figura 4",
+        "px": "1685x934",
+        "cm": "13.97x7.74",
+        "dpi": 306
+      },
+      {
+        "figure": "Figura 5",
+        "px": "1960x1074",
+        "cm": "13.97x7.65",
+        "dpi": 356
+      },
+      {
+        "figure": "Figura 6",
+        "px": "751x700",
+        "cm": "13.97x13.02",
+        "dpi": 137
+      },
+      {
+        "figure": "Figura 7",
+        "px": "2042x2031",
+        "cm": "13.28x13.21",
+        "dpi": 391
+      },
+      {
+        "figure": "Figura 8",
+        "px": "2101x1603",
+        "cm": "13.97x10.66",
+        "dpi": 382
+      },
+      {
+        "figure": "Figura 9",
+        "px": "971x510",
+        "cm": "8.22x4.32",
+        "dpi": 300
+      },
+      {
+        "figure": "Figura 10",
+        "px": "2001x1380",
+        "cm": "13.97x9.63",
+        "dpi": 364
+      }
+    ],
+    "notes": "59 tablas, 0 flotantes. T000 es el formulario 1x1 del acta; T001 Tabla 1; T002 Tabla 2. Todos los rows_meta revisados tienen cantSplit=True y los encabezados tblHeader=True. Los 3 avisos de sobreancho corresponden a tablas landscape y no superan 14,000 dxa."
+  },
+  "coverage_sivac": [
+    {
+      "pdf_page": 1,
+      "printed_folio": "s/f",
+      "section": "Portada oficial",
+      "visual_read": true,
+      "summary": "Portada nativa TNR: universidad/facultad/escuela 15 pt negrita, escudo, título 13 pt, grado, línea, autor, asesora, ciudad y año. Sin folio. Escudo de 212x238 px a 4.57x5.13 cm (118 dpi efectivos), borde blando.",
+      "defect_ids": [
+        "D-04"
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "printed_folio": "s/f",
+      "section": "Acta de sustentación",
+      "visual_read": true,
+      "summary": "Acta nativa en tabla 1x1 con reglas superior e inferior; título 13 pt; jurado con líneas en blanco; leyenda 'Acta pendiente de suscripción por el jurado evaluador'. Sin folio; placeholder veraz.",
+      "defect_ids": [
+        "D-11",
+        "D-12"
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "printed_folio": "s/f",
+      "section": "Declaración jurada",
+      "visual_read": true,
+      "summary": "Declaración jurada (Anexo 32) nativa: título, párrafo justificado 12/1.5 con sangría, lista numerada, DNI y fecha en blanco, firma. Sin folio.",
+      "defect_ids": [
+        "D-12",
+        "D-13"
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "printed_folio": "ii",
+      "section": "Dedicatoria (ii)",
+      "visual_read": true,
+      "summary": "Dedicatoria centrada en cursiva 12/1.5; folio romano 'ii' en encabezado superior derecho.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_folio": "iii",
+      "section": "Agradecimientos (iii)",
+      "visual_read": true,
+      "summary": "Agradecimientos en prosa justificada con sangría; folio 'iii' superior derecho.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "printed_folio": "iv",
+      "section": "Índice de contenido (iv)",
+      "visual_read": true,
+      "summary": "Índice 1/3: jerarquía decimal, puntos guía y página; capítulos en negrita; entrada 3.1.1.2 en dos líneas. Folio 'iv'.",
+      "defect_ids": [
+        "D-02",
+        "D-10"
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "printed_folio": "v",
+      "section": "Índice de contenido (v)",
+      "visual_read": true,
+      "summary": "Índice 2/3: 3.2.6–3.3.5, Cap IV y 4.x; páginas coherentes con el cuerpo. Folio 'v'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "printed_folio": "vi",
+      "section": "Índice de contenido (vi)",
+      "visual_read": true,
+      "summary": "Índice 3/3: Referencias 120 y Anexos 126–141. Folio 'vi'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "printed_folio": "vii",
+      "section": "Índice de figuras (vii)",
+      "visual_read": true,
+      "summary": "Índice de figuras 1/2 (Figura 1–32) con puntos guía y página; numeración correlativa. Folio 'vii'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "printed_folio": "viii",
+      "section": "Índice de figuras (viii)",
+      "visual_read": true,
+      "summary": "Índice de figuras 2/2 (Figura 33–52), incluidas figuras fotográficas de anexo. Folio 'viii'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "printed_folio": "ix",
+      "section": "Índice de tablas (ix)",
+      "visual_read": true,
+      "summary": "Índice de tablas 1/2 (Tabla 1–38) con puntos guía y página. Folio 'ix'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "printed_folio": "x",
+      "section": "Índice de tablas (x)",
+      "visual_read": true,
+      "summary": "Índice de tablas 2/2 (Tabla 39–51), incluidas tablas de anexo. Folio 'x'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "printed_folio": "xi",
+      "section": "Resumen (xi)",
+      "visual_read": true,
+      "summary": "Resumen en un párrafo justificado 12/1.5, palabras clave al final; folio 'xi'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 14,
+      "printed_folio": "xii",
+      "section": "Abstract (xii)",
+      "visual_read": true,
+      "summary": "Abstract en inglés, párrafo justificado, keywords; folio 'xii'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 15,
+      "printed_folio": "xiii",
+      "section": "Chumasqa (xiii)",
+      "visual_read": true,
+      "summary": "Chumasqa en quechua con términos técnicos en español; párrafo justificado, palabras clave; folio 'xiii'.",
+      "defect_ids": [
+        "D-02"
+      ]
+    },
+    {
+      "pdf_page": 16,
+      "printed_folio": "1",
+      "section": "Introducción (1)",
+      "visual_read": true,
+      "summary": "'INTRODUCCIÓN' 14 pt centrada; texto justificado TNR 12/1.5 con sangría 1.27; folio arábigo '1' superior derecho.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 17,
+      "printed_folio": "2",
+      "section": "Introducción (2)",
+      "visual_read": true,
+      "summary": "Continuación de la introducción; párrafos justificados, sin espacios interpárrafo; folio 2.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 18,
+      "printed_folio": "3",
+      "section": "Capítulo I (3)",
+      "visual_read": true,
+      "summary": "'CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN' 14 pt centrada; 1.1 Descripción de la realidad problemática; folio 3.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 19,
+      "printed_folio": "4",
+      "section": "1.1 (4)",
+      "visual_read": true,
+      "summary": "Prosa de realidad problemática con citas; justificado 12/1.5; folio 4.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 20,
+      "printed_folio": "5",
+      "section": "1.1 (5)",
+      "visual_read": true,
+      "summary": "Cierre de 1.1 con datos contextuales; folio 5.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 21,
+      "printed_folio": "6",
+      "section": "1.2 (6)",
+      "visual_read": true,
+      "summary": "1.2 Formulación del problema, 1.2.1 problema general y 1.2.2 problemas específicos con viñetas; folio 6.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 22,
+      "printed_folio": "7",
+      "section": "1.2.2 (7)",
+      "visual_read": true,
+      "summary": "Continuación de problemas específicos; lista con sangría; folio 7.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 23,
+      "printed_folio": "8",
+      "section": "1.3 (8)",
+      "visual_read": true,
+      "summary": "1.3 Justificación y subsecciones 1.3.1–1.3.4; folio 8.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 24,
+      "printed_folio": "9",
+      "section": "1.3.5–1.4 (9)",
+      "visual_read": true,
+      "summary": "1.3.5 Justificación tecnológica y 1.4 Objetivos (general y específicos); folio 9.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 25,
+      "printed_folio": "10",
+      "section": "1.4–1.5 (10)",
+      "visual_read": true,
+      "summary": "Objetivos específicos e 1.5 Hipótesis (general y específicas H1–H3); folio 10.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 26,
+      "printed_folio": "11",
+      "section": "1.6 (11)",
+      "visual_read": true,
+      "summary": "1.6 Variables: independiente SIVAC y dependiente gestión de movimientos; folio 11.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 27,
+      "printed_folio": "12",
+      "section": "1.7 (12)",
+      "visual_read": true,
+      "summary": "Solo dos líneas finales de 1.7 Delimitación; el resto en blanco por salto de página del Capítulo II. Folio 12.",
+      "defect_ids": [
+        "D-01"
+      ]
+    },
+    {
+      "pdf_page": 28,
+      "printed_folio": "13",
+      "section": "Capítulo II (13)",
+      "visual_read": true,
+      "summary": "'CAPÍTULO II: ANTECEDENTES' 14 pt centrada; 2.1 Antecedentes internacionales; folio 13.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 29,
+      "printed_folio": "14",
+      "section": "2.1 (14)",
+      "visual_read": true,
+      "summary": "Antecedentes internacionales en prosa, párrafos densos; folio 14.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 30,
+      "printed_folio": "15",
+      "section": "2.1 (15)",
+      "visual_read": true,
+      "summary": "Antecedentes internacionales (Ergetie et al., 2023); folio 15.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 31,
+      "printed_folio": "16",
+      "section": "2.1 (16)",
+      "visual_read": true,
+      "summary": "Antecedentes con títulos de investigación y resultados; folio 16.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 32,
+      "printed_folio": "17",
+      "section": "2.1 (17)",
+      "visual_read": true,
+      "summary": "Cierre de antecedentes internacionales; folio 17.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 33,
+      "printed_folio": "18",
+      "section": "2.1 (18)",
+      "visual_read": true,
+      "summary": "Antecedentes nacionales; folio 18.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 34,
+      "printed_folio": "19",
+      "section": "2.1 (19)",
+      "visual_read": true,
+      "summary": "Antecedentes nacionales, cierre; folio 19.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 35,
+      "printed_folio": "20",
+      "section": "Tabla 1 (20)",
+      "visual_read": true,
+      "summary": "'Tabla 1' 10 pt negrita + título en cursiva; 6 columnas y 14 filas, encabezado repetido, tres reglas horizontales y cero verticales; primeras filas; folio 20.",
+      "defect_ids": [
+        "D-07"
+      ]
+    },
+    {
+      "pdf_page": 36,
+      "printed_folio": "21",
+      "section": "Tabla 1 (21)",
+      "visual_read": true,
+      "summary": "Continuación de Tabla 1 con encabezado repetido; columnas de 1.96–2.85 cm, texto 10 pt; folio 21.",
+      "defect_ids": [
+        "D-07"
+      ]
+    },
+    {
+      "pdf_page": 37,
+      "printed_folio": "22",
+      "section": "Tabla 1 (22)",
+      "visual_read": true,
+      "summary": "Última fila (Mamani-Pari et al., 2026), nota 9.5 pt y párrafo de cierre; más de la mitad inferior en blanco; folio 22.",
+      "defect_ids": [
+        "D-07"
+      ]
+    },
+    {
+      "pdf_page": 38,
+      "printed_folio": "23",
+      "section": "Capítulo III (23)",
+      "visual_read": true,
+      "summary": "'CAPÍTULO III: MARCO TEÓRICO'; 3.1 Bases teóricas, 3.1.1 Sistema web, 3.1.1.1 Aplicaciones web y arquitectura cliente-servidor; folio 23.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 39,
+      "printed_folio": "24",
+      "section": "3.1.1.1–3.1.1.2 (24)",
+      "visual_read": true,
+      "summary": "Figura 1 (999x376 px, 300 dpi) con rótulo arriba y nota abajo; luego 3.1.1.2 en dos líneas; folio 24.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 40,
+      "printed_folio": "25",
+      "section": "3.1.1.3 (25)",
+      "visual_read": true,
+      "summary": "Figura 2 MVC (1651x1433 px, 300 dpi); 3.1.1.3 Extreme Programming y prosa; folio 25.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 41,
+      "printed_folio": "26",
+      "section": "Figura 3 (26)",
+      "visual_read": true,
+      "summary": "Figura 3 (2302x834 px, 419 dpi) con fondo texturado y compresión visible; dos párrafos sobre fases XP; tercio inferior en blanco; folio 26.",
+      "defect_ids": [
+        "D-06",
+        "D-08"
+      ]
+    },
+    {
+      "pdf_page": 42,
+      "printed_folio": "27",
+      "section": "3.1.1.4 (27)",
+      "visual_read": true,
+      "summary": "Figura 4 XP en estilo boceto, etiquetas pequeñas; 3.1.1.4 ISO/IEC 25010:2023 y prosa; folio 27.",
+      "defect_ids": [
+        "D-06"
+      ]
+    },
+    {
+      "pdf_page": 43,
+      "printed_folio": "28",
+      "section": "Figura 5 (28)",
+      "visual_read": true,
+      "summary": "Figura 5 ISO 25010 con texto interno pequeño; 3.1.2 Gestión de movimientos y 3.1.2.1 cadena de frío; folio 28.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 44,
+      "printed_folio": "29",
+      "section": "Figura 6 (29)",
+      "visual_read": true,
+      "summary": "Figura 6 infografía de cadena de frío (751x700 px a 13.97 cm = 137 dpi), pixelada; nota; folio 29.",
+      "defect_ids": [
+        "D-03"
+      ]
+    },
+    {
+      "pdf_page": 45,
+      "printed_folio": "30",
+      "section": "3.1.2.2 (30)",
+      "visual_read": true,
+      "summary": "3.1.2.2 e-LMIS y FEFO; dos párrafos; tercio inferior en blanco antes de Figura 7; folio 30.",
+      "defect_ids": [
+        "D-08"
+      ]
+    },
+    {
+      "pdf_page": 46,
+      "printed_folio": "31",
+      "section": "3.1.2.3 (31)",
+      "visual_read": true,
+      "summary": "Figura 7 flujo e-LMIS con etiquetas en inglés y texto denso; 3.1.2.3 Dimensión 1 y prosa; folio 31.",
+      "defect_ids": [
+        "D-06"
+      ]
+    },
+    {
+      "pdf_page": 47,
+      "printed_folio": "32",
+      "section": "3.1.2.4 (32)",
+      "visual_read": true,
+      "summary": "3.1.2.4 Dimensión 2 y dos párrafos; casi la mitad inferior en blanco antes de Figura 8; folio 32.",
+      "defect_ids": [
+        "D-08"
+      ]
+    },
+    {
+      "pdf_page": 48,
+      "printed_folio": "33",
+      "section": "Figura 8 (33)",
+      "visual_read": true,
+      "summary": "Figura 8 marco RHIS con texto pequeño en inglés; 3.1.2.5 Dimensión 3 y TAM; folio 33.",
+      "defect_ids": [
+        "D-06"
+      ]
+    },
+    {
+      "pdf_page": 49,
+      "printed_folio": "34",
+      "section": "Figura 9 (34)",
+      "visual_read": true,
+      "summary": "Figura 9 TAM (971x510 px, 300 dpi); prosa con β y p sin cursiva; folio 34.",
+      "defect_ids": [
+        "D-05"
+      ]
+    },
+    {
+      "pdf_page": 50,
+      "printed_folio": "35",
+      "section": "Figura 10–Tabla 2 (35)",
+      "visual_read": true,
+      "summary": "Figura 10 con etiquetas en inglés; Tabla 2 inicia con encabezado + 2 filas de datos; folio 35.",
+      "defect_ids": [
+        "D-06",
+        "D-09"
+      ]
+    },
+    {
+      "pdf_page": 51,
+      "printed_folio": "36",
+      "section": "Tabla 2–3.2.2 (36)",
+      "visual_read": true,
+      "summary": "Tabla 2 continúa con 4 filas y nota; 3.2 Marco conceptual, 3.2.1 y 3.2.2; folio 36.",
+      "defect_ids": [
+        "D-09"
+      ]
+    },
+    {
+      "pdf_page": 52,
+      "printed_folio": "37",
+      "section": "3.2.3–3.2.9 (37)",
+      "visual_read": true,
+      "summary": "Definiciones conceptuales 3.2.3 a 3.2.9, cada una con encabezado y párrafo breve; folio 37.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 53,
+      "printed_folio": "38",
+      "section": "3.2.10–3.2.15 (38)",
+      "visual_read": true,
+      "summary": "Definiciones 3.2.10 a 3.2.15 (JWT, kardex, lote, TAM, oportunidad de procesamiento); folio 38.",
+      "defect_ids": []
+    }
+  ],
+  "coverage_fany": [
+    {
+      "pdf_page": 1,
+      "printed_folio": "s/f",
+      "section": "Portada",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Portada UNAJMA en Arial negrita: universidad/facultad/escuela, escudo, 'Presentado por:', autora, título dentro de recuadro con borde negro, asesor, grado, ciudad y año. Sin folio.",
+      "defect_ids": [
+        "F-01"
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "printed_folio": "s/f",
+      "section": "Aprobación del asesor",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: logos, 'APROBACION DEL ASESOR', certificación y firmas del asesor y tesista, 13-06-2024. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "printed_folio": "s/f",
+      "section": "Acta de sustentación",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo del acta oficial: jurado, aprobación por unanimidad, tabla de nota (15, quince, BUENO) y firmas. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "printed_folio": "s/f",
+      "section": "Aprobación del jurado",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: 'APROBACION DEL JURADO DICTAMINADOR', jurado y firmas, 13-06-2024. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_folio": "s/f",
+      "section": "Constancia Turnitin",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo de constancia de similitud 26% (C015-2024) con firmas; folio arábigo '1' al pie derecho.",
+      "defect_ids": [
+        "F-03"
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 1",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo del resumen: 14132 palabras, 90 páginas, 26% de similitud, firmas. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 2",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 1–8 (hdl.handle.net, repositorios). Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 3",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 9–20. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 4",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 21–32. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 5",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 33–44. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 6",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 45–56. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 7",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 57–68. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 8",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 69–80. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 14,
+      "printed_folio": "s/f",
+      "section": "Reporte Turnitin 9",
+      "document_type": "escaneo",
+      "visual_read": true,
+      "summary": "Escaneo: fuentes 81–82 y cierre; página mayormente vacía. Sin folio.",
+      "defect_ids": [
+        "F-02"
+      ]
+    },
+    {
+      "pdf_page": 15,
+      "printed_folio": "ii",
+      "section": "Dedicatoria (ii)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "'DEDICATORIA' Arial negrita centrada; tres párrafos alineados a la derecha con sangría; folio 'ii' al pie derecho.",
+      "defect_ids": [
+        "F-04"
+      ]
+    },
+    {
+      "pdf_page": 16,
+      "printed_folio": "iii",
+      "section": "Agradecimiento (iii)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "'AGRADECIMIENTO'; tres párrafos justificados con sangría; folio 'iii' al pie derecho.",
+      "defect_ids": [
+        "F-04"
+      ]
+    },
+    {
+      "pdf_page": 17,
+      "printed_folio": "iv",
+      "section": "Índice (iv)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "'ÍNDICE' con puntos guía; incluye ÍNDICE, ÍNDICE DE FIGURAS e ÍNDICE DE TABLAS; capítulo I sin número y II–V con prefijo 2.–5.; folio 'iv'.",
+      "defect_ids": [
+        "F-05",
+        "F-06"
+      ]
+    },
+    {
+      "pdf_page": 18,
+      "printed_folio": "v",
+      "section": "Índice (v)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Continuación: Cap IV–VI, conclusiones, recomendaciones, bibliografía y anexo; folio 'v'.",
+      "defect_ids": [
+        "F-05",
+        "F-06"
+      ]
+    },
+    {
+      "pdf_page": 19,
+      "printed_folio": "vi",
+      "section": "Índice de figuras (vi)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Numeración duplicada: Figura 6, 7 y 8 aparecen dos veces (páginas 45–47) y luego Figura 9; folio 'vi'.",
+      "defect_ids": [
+        "F-07"
+      ]
+    },
+    {
+      "pdf_page": 20,
+      "printed_folio": "vii",
+      "section": "Índice de tablas (vii)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Tablas 1–8 y 10–19: falta Tabla 9; folio 'vii'.",
+      "defect_ids": [
+        "F-08"
+      ]
+    },
+    {
+      "pdf_page": 21,
+      "printed_folio": "viii",
+      "section": "Resumen (viii)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Resumen en un párrafo Arial justificado; 'Palabras clave:' en negrita; folio 'viii' al pie.",
+      "defect_ids": [
+        "F-04"
+      ]
+    },
+    {
+      "pdf_page": 22,
+      "printed_folio": "ix",
+      "section": "Abstract (ix)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Abstract en inglés, párrafo justificado; 'Keywords:'; folio 'ix'.",
+      "defect_ids": [
+        "F-04"
+      ]
+    },
+    {
+      "pdf_page": 23,
+      "printed_folio": "x",
+      "section": "Chumasqa (x)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Chumasqa en quechua con términos españoles; 'Sapaq simikuna' con palabras clave en español; folio 'x'.",
+      "defect_ids": [
+        "F-09"
+      ]
+    },
+    {
+      "pdf_page": 24,
+      "printed_folio": "11",
+      "section": "Introducción (11)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "'INTRODUCCIÓN' Arial negrita centrada; dos párrafos y síntesis capitular; folio arábigo '11' al pie (el cuerpo no reinicia en 1).",
+      "defect_ids": [
+        "F-10"
+      ]
+    },
+    {
+      "pdf_page": 25,
+      "printed_folio": "12",
+      "section": "Capítulo I (12)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "'CAPITULO I: PROBLEMA DE INVESTIGACIÓN' centrado; 1.1 Realidad problemática; folio 12.",
+      "defect_ids": [
+        "F-04"
+      ]
+    },
+    {
+      "pdf_page": 26,
+      "printed_folio": "13",
+      "section": "1.2–1.3 (13)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "1.2 Formulación (general y específicos) y 1.3 Objetivos; subniveles en negrita cursiva; viñetas con guion; folio 13.",
+      "defect_ids": [
+        "F-11"
+      ]
+    },
+    {
+      "pdf_page": 27,
+      "printed_folio": "14",
+      "section": "1.4 (14)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "1.4 Justificación en dos párrafos; tercio inferior en blanco; folio 14.",
+      "defect_ids": [
+        "F-12"
+      ]
+    },
+    {
+      "pdf_page": 28,
+      "printed_folio": "15",
+      "section": "1.5 (15)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "1.5 Hipótesis general y específicas; más de la mitad inferior en blanco; folio 15.",
+      "defect_ids": [
+        "F-12"
+      ]
+    },
+    {
+      "pdf_page": 29,
+      "printed_folio": "16",
+      "section": "Capítulo II (16)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "'CAPITULO II: ANTECEDENTES' centrado; 2.1 Antecedentes internacionales (Gifra 2017; Blanco y Hernández 2016); folio 16.",
+      "defect_ids": [
+        "F-04"
+      ]
+    },
+    {
+      "pdf_page": 30,
+      "printed_folio": "17",
+      "section": "2.1 (17)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Continuación de antecedentes; párrafos justificados con sangría; folio 17.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 31,
+      "printed_folio": "18",
+      "section": "2.1 (18)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Antecedentes (Rodríguez 2022; Coba y Coba 2017); folio 18.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 32,
+      "printed_folio": "19",
+      "section": "2.1–2.2 (19)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Cierre de internacionales e inicio de 2.2 Antecedentes nacionales; folio 19.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 33,
+      "printed_folio": "20",
+      "section": "2.2 (20)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Antecedentes nacionales (Yanqui 2020; Lucas 2019); folio 20.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 34,
+      "printed_folio": "21",
+      "section": "2.2 (21)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Antecedentes nacionales (Dávalos 2017; Galvez 2019); folio 21.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 35,
+      "printed_folio": "22",
+      "section": "2.2 (22)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Antecedentes nacionales (Reyna 2017); folio 22.",
+      "defect_ids": []
+    },
+    {
+      "pdf_page": 36,
+      "printed_folio": "23",
+      "section": "2.2 (23)",
+      "document_type": "nativo",
+      "visual_read": true,
+      "summary": "Solo cuatro líneas finales del último antecedente; el resto en blanco antes del Capítulo III; folio 23.",
+      "defect_ids": [
+        "F-12"
+      ]
+    }
+  ],
+  "defects": [
+    {
+      "id": "D-01",
+      "severity": "alta",
+      "category": "paginación",
+      "document": "informe_final_v19.pdf",
+      "location": {
+        "pdf_page": 27,
+        "printed_page": "12",
+        "element": "final de 1.7 Delimitación / salto de Capítulo II"
+      },
+      "evidence": "La página impresa 12 contiene solo dos líneas (final de 1.7) y ~90% de área en blanco; el Capítulo II tiene page_break_before.",
+      "norm": "Regla 03: cuerpo 12/1.5, sin páginas casi vacías; QG-9.",
+      "proposed_fix": "Recuperar dos líneas en la página anterior ajustando spacing before/after de encabezados 1.6/1.7 y párrafos contiguos, sin tocar interlineado 1.5 ni texto; reconstruir y verificar que el Capítulo II siga iniciando en página nueva.",
+      "motor_compatible": "parcial",
+      "modifies_content": false
+    },
+    {
+      "id": "D-02",
+      "severity": "media",
+      "category": "foliación",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "4-15",
+        "printed_page": "ii-xiii",
+        "element": "header4.xml / sección 2"
+      },
+      "evidence": "El campo PAGE con formato lowerRoman está alineado a la derecha del encabezado; los folios ii–xiii aparecen en la esquina superior derecha.",
+      "norm": "Regla 03: preliminares en romanos minúsculos centrados o al pie.",
+      "proposed_fix": "Centrar el párrafo del campo PAGE en header4.xml (o moverlo al pie centrado), conservando w:pgNumType fmt=lowerRoman start=2; verificar que no se dupliquen folios con la sección 1.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-03",
+      "severity": "media",
+      "category": "figuras",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": 44,
+        "printed_page": "29",
+        "element": "Figura 6, P0471, media embebida"
+      },
+      "evidence": "Imagen de 751x700 px mostrada a 13.97x13.02 cm: 137 dpi efectivos; pixelación visible en trazos y textos.",
+      "norm": "Regla 03: figuras a 300 dpi.",
+      "proposed_fix": "Sustituir el archivo por fuente vectorial o raster >=300 dpi (>=1654 px de ancho a 13.97 cm), conservando relación, rótulo, nota y anclaje inline; no reescalar la imagen actual.",
+      "motor_compatible": "parcial",
+      "modifies_content": false
+    },
+    {
+      "id": "D-04",
+      "severity": "baja",
+      "category": "figuras",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": 1,
+        "printed_page": "s/f",
+        "element": "P0002, escudo de portada"
+      },
+      "evidence": "Escudo de 212x238 px a 4.57x5.13 cm: 118 dpi efectivos; bordes suavizados.",
+      "norm": "Regla 03: figuras a 300 dpi; portada institucional nítida.",
+      "proposed_fix": "Reemplazar por escudo oficial vectorial o PNG >=300 dpi con fondo transparente, mismo tamaño y posición.",
+      "motor_compatible": "parcial",
+      "modifies_content": false
+    },
+    {
+      "id": "D-05",
+      "severity": "baja",
+      "category": "tipografía",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "34 y otras",
+        "printed_page": "34",
+        "element": "P0493 y notas/captions"
+      },
+      "evidence": "β, p, n, M y DE se escriben en redonda; el párrafo P0493 con 'coeficiente β = 0.35, p < .001' es un solo run sin cursiva.",
+      "norm": "APA 7: símbolos estadísticos en cursiva; Regla 03.",
+      "proposed_fix": "Aplicar cursiva solo a los tokens estadísticos (n, p, β, M, DE, r, t, W) en cuerpo, notas y títulos de tabla, dividiendo runs sin alterar texto.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-06",
+      "severity": "media",
+      "category": "figuras",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "25-35",
+        "printed_page": "25-35",
+        "element": "Figuras 2, 5, 7, 8 y 10"
+      },
+      "evidence": "Diagramas con etiquetas únicamente en inglés (Browser, Controller, View, Model; Technical/Organizational/Behavioral factor; Suppliers, Logistics Sub-Committee, District Task Force; Enabling conditions, Effort expectation) dentro de una tesis en español; en Figuras 3, 4 y 6 el estilo es boceto/clip-art con textos pequeños y fondo texturado.",
+      "norm": "Regla 03: figuras legibles, coherentes y en español; APA 7 exige título/nota en el idioma del documento.",
+      "proposed_fix": "Redibujar o traducir etiquetas al español manteniendo el contenido técnico y la fuente citada; unificar paleta, fondo blanco y tipografía sans >=8 pt; no alterar el significado ni la nota de adaptación.",
+      "motor_compatible": false,
+      "modifies_content": false
+    },
+    {
+      "id": "D-07",
+      "severity": "media",
+      "category": "tablas",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "35-37",
+        "printed_page": "20-22",
+        "element": "T001 (Tabla 1), 14x6"
+      },
+      "evidence": "Tabla de 14 filas y 6 columnas (anchos 1.96–2.85 cm) ocupa tres páginas; la última contiene una sola fila (Mamani-Pari et al., 2026), su nota y un párrafo, dejando ~55% en blanco. Encabezado repetido y tres reglas horizontales correctas; sin líneas verticales.",
+      "norm": "Regla 03: tablas APA 7 de tres líneas, legibles y sin filas huérfanas; QG-9.",
+      "proposed_fix": "Rebalancear anchos (más espacio a 'Resultado relevante' y 'Aporte', menos a 'Autor y año') y reducir márgenes de celda; si persiste la fila huérfana, permitir partición de filas largas (cantSplit off) solo en T001 o reubicar la tabla completa en sección landscape de anexo con aprobación; no cambiar texto.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-08",
+      "severity": "baja",
+      "category": "paginación",
+      "document": "informe_final_v19.pdf",
+      "location": {
+        "pdf_page": "41,45,47",
+        "printed_page": "26,30,32",
+        "element": "Figuras 3, 7 y 8"
+      },
+      "evidence": "Bloques inferiores en blanco de ~30–45% porque la figura siguiente no cabe y salta a la página próxima; la página 32 queda casi a media plana.",
+      "norm": "Regla 03: aprovechamiento editorial; QG-9.",
+      "proposed_fix": "Reducir selectivamente el ancho de figuras full-width (13.97 cm) a 12.5–13.0 cm, o ajustar spacing before/after de rótulos y notas, para permitir el flujo; verificar legibilidad y numeración.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-09",
+      "severity": "baja",
+      "category": "tablas",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "50-51",
+        "printed_page": "35-36",
+        "element": "T002 (Tabla 2), 7x4"
+      },
+      "evidence": "La tabla se parte tras la segunda fila de datos y continúa con cuatro filas y nota en la página siguiente; el encabezado se repite correctamente. No es una tabla duplicada ni un borde espurio: Word cierra el marco del fragmento.",
+      "norm": "Regla 03: tablas APA 7; no es defecto crítico.",
+      "proposed_fix": "Opcional: iniciar Tabla 2 en la página 36 para conservarla completa, o aceptar la partición actual; no requiere cambio de contenido.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-10",
+      "severity": "baja",
+      "category": "índices",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "6-12",
+        "printed_page": "iv-x",
+        "element": "TOC de contenido, figuras y tablas"
+      },
+      "evidence": "El índice de contenido no lista 'ÍNDICE DE FIGURAS' ni 'ÍNDICE DE TABLAS' (el modelo Fany sí los incluye); los índices de figuras (1–52) y tablas (1–51) son correlativos y completos.",
+      "norm": "Estructura preliminar UNAJMA; Regla 03.",
+      "proposed_fix": "Agregar al TOC las entradas de índice de figuras y de tablas (o justificar su omisión); actualizar campos TOC sin alterar el cuerpo.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-11",
+      "severity": "baja",
+      "category": "estructura",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": 2,
+        "printed_page": "s/f",
+        "element": "T000, acta"
+      },
+      "evidence": "El acta rotula 'MIEMBROS DEL JURADO DICTAMINADOR' e incluye 'Asesora de Tesis: Dra. Norma Lorena Catacora Flores' dentro de esa lista; además 'Primer Miembro / Secretario' y 'Segundo Miembro / Vocal'.",
+      "norm": "Formato institucional de acta; la asesora no es miembro del jurado.",
+      "proposed_fix": "Separar 'Asesora de Tesis' del bloque de jurados o rotularla como no integrante; confirmar denominaciones con Secretaría Académica.",
+      "motor_compatible": true,
+      "modifies_content": true
+    },
+    {
+      "id": "D-12",
+      "severity": "baja",
+      "category": "foliación",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "1-4",
+        "printed_page": "s/f-ii",
+        "element": "secciones 1–2"
+      },
+      "evidence": "Portada, acta y declaración no llevan folio; la dedicatoria inicia en 'ii' (sección 2 con pgNumType start=2). La secuencia impresa salta de portada a ii sin representar las dos páginas administrativas.",
+      "norm": "Regla 03: romanos desde la carátula sin imprimir número; práctica institucional para actas.",
+      "proposed_fix": "Confirmar si acta y declaración deben contar en la numeración; si no, documentar la exclusión y mantener start=2; si sí, renumerar la sección 2 desde iv.",
+      "motor_compatible": true,
+      "modifies_content": false
+    },
+    {
+      "id": "D-13",
+      "severity": "alta",
+      "category": "integridad",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": 3,
+        "printed_page": "s/f",
+        "element": "Declaración jurada, numeral 3"
+      },
+      "evidence": "La declaración afirma que las mediciones pretest/postest 'se sustentan exclusivamente en registros reales y observaciones directas', mientras los anexos identifican 'Matriz de datos de prueba' y el estado del proyecto indica ausencia de datos de campo reales.",
+      "norm": "Regla 01: integridad empírica, cero simulación; Regla 03: cero alucinaciones.",
+      "proposed_fix": "No suscribir ni presentar la declaración hasta contar con datos reales; mientras tanto, mantener el rótulo de datos de prueba y evitar afirmaciones de medición real. Es un bloqueo de contenido, no de maquetación.",
+      "motor_compatible": false,
+      "modifies_content": true
+    },
+    {
+      "id": "D-14",
+      "severity": "baja",
+      "category": "tipografía",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": 117,
+        "printed_page": "102",
+        "element": "P2300"
+      },
+      "evidence": "Párrafo 'Advertencia metodológica y salvaguarda deontológica' con spacing_line=276 (1.15), fuera del patrón 360 (1.5) del cuerpo; detectado por inventario, pendiente de confirmación visual por el tramo 54–158.",
+      "norm": "Regla 03: cuerpo 1.5.",
+      "proposed_fix": "Verificar en página 102 y, si es cuerpo narrativo, normalizar a 360; si es un cuadro destacado, documentar la excepción.",
+      "motor_compatible": true,
+      "modifies_content": false,
+      "page_registry_note": "Hallazgo de inventario fuera del rango visual 1-53 o transversal; no se replica por pagina."
+    },
+    {
+      "id": "D-15",
+      "severity": "baja",
+      "category": "estructura",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "23-38",
+        "printed_page": "8-23",
+        "element": "encabezados 3.1.1, 3.1.1.1, 3.2.1"
+      },
+      "evidence": "Todos los niveles 3 y 4 usan negrita redonda; el modelo Fany usa negrita cursiva en el tercer nivel y la Regla 03 pide cursiva+negrita para nivel 3. SIVAC tiene cuatro niveles (3.1.1.1).",
+      "norm": "Regla 03: nivel 3 cursiva y negrita; jerarquía descendente.",
+      "proposed_fix": "Definir una vez la jerarquía: nivel 2 negrita redonda, nivel 3 negrita cursiva, nivel 4 negrita redonda (o la que apruebe el asesor) y aplicarla globalmente; no cambiar numeración ni texto.",
+      "motor_compatible": true,
+      "modifies_content": false,
+      "page_registry_note": "Hallazgo de inventario fuera del rango visual 1-53 o transversal; no se replica por pagina."
+    },
+    {
+      "id": "D-16",
+      "severity": "baja",
+      "category": "tablas",
+      "document": "informe_final_v19.docx",
+      "location": {
+        "pdf_page": "142-145,147",
+        "printed_page": "127-145",
+        "element": "T044, T052, T053"
+      },
+      "evidence": "El inventario marca tres tablas con ancho 13,720/13,630 dxa frente al límite portrait 8,788; están en secciones landscape (4 y 6), donde el límite aplicable es 14,000 dxa, por lo que caben. No son desbordes reales.",
+      "norm": "Área imprimible landscape 14,000 dxa.",
+      "proposed_fix": "Ninguna; corregir el criterio del reporte para comparar contra el límite según orientación.",
+      "motor_compatible": true,
+      "modifies_content": false,
+      "page_registry_note": "Hallazgo de inventario fuera del rango visual 1-53 o transversal; no se replica por pagina."
+    }
+  ],
+  "fany_patterns_to_adopt": [
+    "Orden preliminar: portada, documentos administrativos, dedicatoria, agradecimiento, índices, resumen, abstract, chumasqa, introducción.",
+    "Estructura capitular: Introducción; I Problema; II Antecedentes; III Marco teórico; IV Metodología; V Resultados; VI Discusión; conclusiones; recomendaciones; referencias; anexos.",
+    "Índices de figuras y tablas con puntos guía y número de página, ubicados antes del resumen.",
+    "Tercer nivel de encabezado en negrita cursiva (1.2.1, 1.3.1) y cuarto nivel diferenciado.",
+    "Prosa justificada con sangría de primera línea próxima a 1.27 cm e interlineado 1.5.",
+    "Tablas de resultados simples y legibles, con título arriba y nota al pie."
+  ],
+  "fany_defects_not_to_copy": [
+    "F-01: portada en Arial con título dentro de recuadro negro; no replicar el recuadro ni la fuente.",
+    "F-02: documentos administrativos escaneados, con tamaños, tipografías y calidad heterogéneos; preferir nativos cuando existan.",
+    "F-03: constancia Turnitin escaneada con folio arábigo '1' aislado en el pie, ajeno a la secuencia romana.",
+    "F-04: cuerpo en Arial 11, folios al pie derecho y numeración arábiga que inicia en 11 (no reinicia en 1).",
+    "F-05: índice con capítulos I y VI sin prefijo numérico y II–V con prefijo 2.–5.; numeración inconsistente.",
+    "F-06: el índice se lista a sí mismo y lista los índices de figuras/tablas; decisión editorial, no error.",
+    "F-07: índice de figuras con numeración duplicada (Figura 6, 7 y 8 dos veces).",
+    "F-08: índice de tablas omite la Tabla 9.",
+    "F-09: chumasqa con palabras clave en español.",
+    "F-10: el cuerpo inicia en 11 y no en 1; no replicar.",
+    "F-11: subniveles 1.2.1/1.3.1 en negrita cursiva; útil como referencia de jerarquía.",
+    "F-12: páginas 15, 23 y 28 con grandes áreas en blanco por saltos de capítulo; no replicar."
+  ],
+  "proposed_order": [
+    "1. Congelar v19 y respaldar; no modificar referencias ni el DOCX original.",
+    "2. Corregir foliación: centrar el campo PAGE romano en header4 (D-02) y confirmar la secuencia portada/acta/declaración (D-12); verificar campos PAGE y TOC.",
+    "3. Recuperar paginación: ajustar spacing before/after en 1.7 (D-01) y reducir selectivamente figuras full-width a 12.5–13 cm (D-08); reconstruir PDF y comprobar folios y TOC.",
+    "4. Tabla 1: rebalancear anchos y márgenes de celda; si persiste la fila huérfana, habilitar partición de filas largas solo en T001 o reubicarla con aprobación (D-07).",
+    "5. Figuras: reemplazar Figura 6 y escudo por fuentes >=300 dpi (D-03, D-04); redibujar/traducir Figuras 2, 5, 7, 8 y 10 y unificar estilo (D-06).",
+    "6. Tipografía: cursiva de símbolos estadísticos (D-05); definir y aplicar jerarquía de encabezados (D-15); revisar P2300 (D-14).",
+    "7. Índices: agregar entradas de índice de figuras/tablas al TOC si se aprueba (D-10); actualizar campos.",
+    "8. Integridad: no suscribir la declaración jurada hasta que existan datos reales; mantener rótulos de datos de prueba (D-13).",
+    "9. Revisión final del tramo 1–53: 0 tablas flotantes, anchos <=8,788 portrait / <=14,000 landscape, figuras >=300 dpi, folios romanos centrados y arábigos superiores derechos."
+  ],
+  "fany_findings": [
+    {
+      "id": "F-01",
+      "description": "portada en Arial con título dentro de recuadro negro; no replicar el recuadro ni la fuente.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-02",
+      "description": "documentos administrativos escaneados, con tamaños, tipografías y calidad heterogéneos; preferir nativos cuando existan.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-03",
+      "description": "constancia Turnitin escaneada con folio arábigo '1' aislado en el pie, ajeno a la secuencia romana.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-04",
+      "description": "cuerpo en Arial 11, folios al pie derecho y numeración arábiga que inicia en 11 (no reinicia en 1).",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-05",
+      "description": "índice con capítulos I y VI sin prefijo numérico y II–V con prefijo 2.–5.; numeración inconsistente.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-06",
+      "description": "el índice se lista a sí mismo y lista los índices de figuras/tablas; decisión editorial, no error.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-07",
+      "description": "índice de figuras con numeración duplicada (Figura 6, 7 y 8 dos veces).",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-08",
+      "description": "índice de tablas omite la Tabla 9.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-09",
+      "description": "chumasqa con palabras clave en español.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-10",
+      "description": "el cuerpo inicia en 11 y no en 1; no replicar.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-11",
+      "description": "subniveles 1.2.1/1.3.1 en negrita cursiva; útil como referencia de jerarquía.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    },
+    {
+      "id": "F-12",
+      "description": "páginas 15, 23 y 28 con grandes áreas en blanco por saltos de capítulo; no replicar.",
+      "applies_to": "modelo Fany 2024, no a SIVAC"
+    }
+  ]
+}

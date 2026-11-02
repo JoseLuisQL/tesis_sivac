@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "fecha": "2026-10-21",
+    "agente": "maquetador-docx",
+    "base": "salidas/documentos/informe_final_v16.docx",
+    "funcion": "EXT-01 a EXT-09 mediante cirugia_extension",
+    "principio": "Operaciones nativas; sin partir filas, sin reducir fuente, sin alterar margenes de pagina ni valores."
+  },
+  "hipervinculos": [
+    {
+      "indice_docx": 75,
+      "ancla_original": "Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos y Stock",
+      "texto_nuevo": "Prueba unitaria de entregas adicionales y sincronización de stock",
+      "ocurrencias": 1
+    }
+  ],
+  "formulas": [
+    {
+      "indice_parrafo": 626,
+      "numerador": ["S"],
+      "denominador": ["n", "(", "c", "−", "1", ")"],
+      "nota": "Ecuacion 8 general de Aiken: V = S/[n(c-1)]. Se conserva la numeracion (8) y el caracter nativo m:oMath."
+    }
+  ],
+  "imagenes": [
+    {
+      "indice_docx": 233,
+      "ruta": "salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig01_pilares_web_lujan_p16.png",
+      "ancho_cm": 8.46,
+      "figura": 1,
+      "nota": "Fuente nativa 999x376 px; 300 dpi exactos a 8.46 cm. No se remuestrea."
+    },
+    {
+      "indice_docx": 239,
+      "ruta": "salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig02_mvc_sommerville_p177.png",
+      "ancho_cm": 13.97,
+      "figura": 2,
+      "nota": "Extraccion vectorial 1651x1433 px; 300 dpi a 13.97 cm. Alto proporcional 12.13 cm."
+    },
+    {
+      "indice_docx": 282,
+      "ruta": "salidas/figuras/aclaraciones_20261021/luo_editorial_3194d7/figura1_editorial_luo.png",
+      "ancho_cm": 8.22,
+      "figura": 9,
+      "nota": "PNG editorial oficial 971x510 px (SHA-256 8f216f...ee2f0); 300 dpi a 8.22 cm. Sustituye al JPEG extraido para evitar recompresion; no se amplia ni interpola."
+    }
+  ],
+  "cursivas": {
+    "especificacion_ruta": "salidas/reportes_maquetacion/cursivas_referencias_v17_20261021.json"
+  },
+  "jerarquia": {
+    "quitar_cursiva_nivel2": true,
+    "nivel3_estilo": null,
+    "nota": "No se asigna 'Heading 3' porque el estilo Ttulo3 arrastra color azul 4F81BD ajeno a la norma UNAJMA; el nivel 3 ya esta en negrita Times New Roman 12 pt con outlineLvl 3."
+  },
+  "keep_next": {
+    "incluir_rotulos": true,
+    "incluir_formulas": true
+  },
+  "notas": {
+    "indices": [414, 432]
+  },
+  "tablas": {
+    "margenes_celda": [
+      {"tabla": 1, "izquierdo_dxa": 28, "derecho_dxa": 28}
+    ],
+    "rebalanceo": [1, 32, 34],
+    "quitar_tblheader": [46, 47, 48],
+    "anexar_filas": [
+      {
+        "tabla": 54,
+        "filas": [
+          [
+            "HU-14",
+            "Iteración 5 (Inteligencia Logística y Alertas)",
+            "Alertas Tempranas de Vencimiento y Stock",
+            "No declarado en la Tabla 7",
+            "Notificación de alerta visual roja en campana de interfaz ante lote con 25 días restantes y stock bajo mínimo."
+          ],
+          [
+            "HU-15",
+            "Iteración 5 (Inteligencia Logística y Alertas)",
+            "Dashboard Ejecutivo y Módulo ICI-DEMID (MSD)",
+            "No declarado en la Tabla 7",
+            "Despliegue interactivo de gráficos y semáforos en menos de 2 s."
+          ]
+        ]
+      }
+    ]
+  },
+  "saltos_pagina": {
+    "prefijos": [
+      "Formato de Validación de Contenido - Juez 2",
+      "Formato de Validación de Contenido - Juez 3"
+    ],
+    "nota": "Cada formato del Anexo 3 inicia en pagina propia mediante pageBreakBefore, sin insertar parrafos. El Juez 1 ya inicia tras la introduccion del anexo."
+  },
+  "margenes_seccion": {
+    "izquierdo_cm": 3.0,
+    "derecho_cm": 2.5,
+    "superior_cm": 2.5,
+    "inferior_cm": 2.5,
+    "nota": "Regla 03 UNAJMA: izquierdo 3.0 cm para empastado; derecho, superior e inferior 2.5 cm exactos (900000 EMU, 1417 dxa). No se altera orientacion ni tamano de pagina."
+  },
+  "estilo_indice": {
+    "nombre": "table of figures",
+    "line": 240
+  }
+}

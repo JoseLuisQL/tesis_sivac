@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "agente": "maquetador-docx",
+    "fase": "F8",
+    "fecha": "2026-10-22",
+    "etapa": "candidato_formato_v20"
+  },
+  "entrada": "salidas/documentos/informe_final_v19.docx",
+  "salida_docx": "salidas/archivo/REVISION_INTEGRAL_V20_20261022/CANDIDATO_FORMATO_V20.docx",
+  "salida_pdf": {
+    "paginas": 158,
+    "dpi_min": 136.5,
+    "dpi_mediana": 199.8,
+    "dpi_max": 200.0
+  },
+  "sha256_docx": "cb701ebe4f3fdcb856a9fedefe250d5ac84360e13bc4cbad61296fdcf1b7c687",
+  "sha256_pdf": "ca12231cc012e328db09c043012ad133cbeab0cbe8a3d72ddc9e230ecfde1de0",
+  "comandos": [
+    "python scripts/utilidades/docx_quirurgico.py cirugia-extension <v19> --plan plan_formato_v20.json --salida CANDIDATO_FORMATO_V20.docx",
+    "python scripts/utilidades/docx_quirurgico.py actualizar-campos CANDIDATO_FORMATO_V20.docx --salida _CAMPOS.docx",
+    "python scripts/utilidades/docx_quirurgico.py exportar-pdf CANDIDATO_FORMATO_V20.docx",
+    "python scripts/utilidades/docx_quirurgico.py renderizar-paginas CANDIDATO_FORMATO_V20.pdf --paginas 1,7,9,16,37,117,148,150,156"
+  ],
+  "operaciones": {
+    "logo_portada": [
+      {
+        "tipo": "imagen",
+        "parrafo": 1,
+        "rId": "rId8",
+        "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\_diagnostico\\logo_derivado.png",
+        "pixeles": [
+          1368,
+          1769
+        ],
+        "ancho_cm": 3.97,
+        "alto_cm": 5.13,
+        "dpi_efectivo": 875.5,
+        "bytes_anteriores": 129474,
+        "bytes_nuevos": 1750079,
+        "formatos_ajustados": 2
+      }
+    ],
+    "rebalanceo_tablas_1_2": {
+      "aplicado": false,
+      "motivo": "ninguna columna requiere ensanche; anchos y contenido intactos"
+    },
+    "estilos": [
+      {
+        "style_id": "Encabezado",
+        "fuente": "Times New Roman",
+        "sz_medios_puntos": 22
+      },
+      {
+        "style_id": "Tabladeilustraciones",
+        "fuente": "Times New Roman",
+        "sz_medios_puntos": 22
+      }
+    ],
+    "nivel3_negrita_cursiva": 18,
+    "notas_izquierda": 18,
+    "parrafo_advertencia": [
+      646
+    ],
+    "celdas_espaciadas": 32,
+    "runs_firma": 18,
+    "rejillas": [
+      {
+        "tabla": 46,
+        "sz": 4,
+        "tcBorders_retirados": 2,
+        "verticales_por_celda": true
+      },
+      {
+        "tabla": 47,
+        "sz": 4,
+        "tcBorders_retirados": 2,
+        "verticales_por_celda": true
+      },
+      {
+        "tabla": 48,
+        "sz": 4,
+        "tcBorders_retirados": 2,
+        "verticales_por_celda": true
+      },
+      {
+        "tabla": 49,
+        "sz": 4,
+        "tcBorders_retirados": 4,
+        "verticales_por_celda": false
+      },
+      {
+        "tabla": 50,
+        "sz": 4,
+        "tcBorders_retirados": 4,
+        "verticales_por_celda": false
+      },
+      {
+        "tabla": 51,
+        "sz": 4,
+        "tcBorders_retirados": 4,
+        "verticales_por_celda": false
+      }
+    ],
+    "marcos_fotografia": [
+      {
+        "tabla": 55,
+        "sz": 4,
+        "tcBorders_retirados": 1,
+        "rotulo_movido_antes": true
+      },
+      {
+        "tabla": 56,
+        "sz": 4,
+        "tcBorders_retirados": 1,
+        "rotulo_movido_antes": true
+      },
+      {
+        "tabla": 57,
+        "sz": 4,
+        "tcBorders_retirados": 1,
+        "rotulo_movido_antes": true
+      },
+      {
+        "tabla": 58,
+        "sz": 4,
+        "tcBorders_retirados": 1,
+        "rotulo_movido_antes": true
+      }
+    ],
+    "folio_preliminar": {
+      "seccion": 1,
+      "campo_pagina_en_pie": true,
+      "encabezado_vaciado": true,
+      "pie_seccion_siguiente_vacio": true,
+      "formato_conservado": "lowerRoman start=2"
+    }
+  },
+  "conservacion": {
+    "parrafos": 827,
+    "diferencias_texto": 0,
+    "tablas_identicas": "59/59",
+    "omml": 12,
+    "hipervinculos": 252,
+    "cantSplit": "59/59",
+    "tblHeader": "59/59",
+    "flotantes": 0
+  },
+  "salida_pdf_medicion": {
+    "paginas": 158,
+    "dpi_min": 136.5,
+    "dpi_mediana": 413.8,
+    "dpi_max": 875.8,
+    "imagenes": 49
+  }
+}

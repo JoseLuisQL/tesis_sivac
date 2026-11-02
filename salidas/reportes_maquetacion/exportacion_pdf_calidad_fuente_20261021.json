@@ -1,0 +1,18 @@
+{
+  "fecha_consulta": "2026-10-21",
+  "fuente": "Microsoft Learn",
+  "url": "https://learn.microsoft.com/en-us/office/vba/api/word.document.exportasfixedformat2",
+  "metodo": "Word.Document.ExportAsFixedFormat2",
+  "parametro": "OptimizeForImageQuality",
+  "tipo": "Boolean",
+  "valor_predeterminado": false,
+  "valor_propuesto": true,
+  "descripcion_literal": "Specifies whether to downsample images or keep their original quality. If True, the resulting files will have better image quality but may be larger. Default value is False.",
+  "implicacion": "Existe una vía del propio exportador para conservar calidad sin modificar el registro de Windows. Su disponibilidad debe comprobarse en la versión de Word instalada.",
+  "rectificacion": "La afirmación previa de que la API no expone una opción de calidad de imagen era incompleta: solo consideraba ExportAsFixedFormat, no ExportAsFixedFormat2.",
+  "limites": [
+    "La opción no añade resolución ni detalle a imágenes originalmente pequeñas.",
+    "La conservación debe verificarse midiendo los píxeles y rectángulos de imagen del PDF exportado.",
+    "No modificar configuración global ni registro; actuar solo sobre el nuevo documento de salida."
+  ]
+}

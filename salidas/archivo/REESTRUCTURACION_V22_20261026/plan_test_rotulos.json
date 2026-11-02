@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "meta": {
+    "proposito": "Prueba de la normalización de rótulos en dos párrafos y de la recomposición de índices sobre una copia del candidato estable.",
+    "documento_base": "CANDIDATO_EDITORIAL_V22.docx"
+  },
+  "operaciones": [
+    {"id": "T1", "tipo": "verificar"},
+    {"id": "T2", "tipo": "normalizar_rotulos"},
+    {"id": "T3", "tipo": "recomponer_indices"},
+    {"id": "T4", "tipo": "verificar"}
+  ]
+}

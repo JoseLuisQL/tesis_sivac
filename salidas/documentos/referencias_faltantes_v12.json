@@ -1,0 +1,79 @@
+[
+  {
+    "orden": 1,
+    "ancla_indice": 736,
+    "ancla_texto": "Cohn, M. (2004)",
+    "texto": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometrika, 16(3), 297–334. https://doi.org/10.1007/BF02310555",
+    "encadenada": false
+  },
+  {
+    "orden": 2,
+    "ancla_indice": 741,
+    "ancla_texto": "Ergetie, F. S.",
+    "texto": "Feldt, L. S. (1965). The approximate sampling distribution of Kuder-Richardson reliability coefficient twenty. Psychometrika, 30(3), 357–370. https://doi.org/10.1007/BF02289499",
+    "encadenada": false
+  },
+  {
+    "orden": 3,
+    "ancla_indice": 742,
+    "ancla_texto": "Garcia Villacorta, M. D. M.",
+    "texto": "George, D., y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and reference (4.ª ed.). Allyn & Bacon.",
+    "encadenada": false
+  },
+  {
+    "orden": 4,
+    "ancla_indice": 745,
+    "ancla_texto": "Hernández-Sampieri, R., Fernández-Collado, C.",
+    "texto": "Hernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las rutas cuantitativa, cualitativa y mixta. McGraw-Hill Education.",
+    "encadenada": false
+  },
+  {
+    "orden": 5,
+    "ancla_indice": 745,
+    "ancla_texto": "Hernández-Sampieri, R., y Mendoza, C. P. (2018)",
+    "texto": "Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics, 6(2), 65–70.",
+    "encadenada": true
+  },
+  {
+    "orden": 6,
+    "ancla_indice": 761,
+    "ancla_texto": "Pressman, R. S. (2010)",
+    "texto": "Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos de inversión pública en la municipalidad distrital de Porvenir [Tesis para optar el título profesional de Ingeniera de Sistemas, Universidad Nacional José María Arguedas].",
+    "encadenada": false
+  },
+  {
+    "orden": 7,
+    "ancla_indice": 761,
+    "ancla_texto": "Quispe Tello, F. (2024)",
+    "texto": "Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.",
+    "encadenada": true
+  },
+  {
+    "orden": 8,
+    "ancla_indice": 761,
+    "ancla_texto": "Razali, N. M.",
+    "texto": "Rosenthal, R. (1991). Meta-analytic procedures for social research (ed. rev.). Sage. https://doi.org/10.4135/9781412984997",
+    "encadenada": true
+  },
+  {
+    "orden": 9,
+    "ancla_indice": 762,
+    "ancla_texto": "Ruiz Barea, R. (2023)",
+    "texto": "Shapiro, S. S., y Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, 52(3–4), 591–611. https://doi.org/10.1093/biomet/52.3-4.591",
+    "encadenada": false
+  },
+  {
+    "orden": 10,
+    "ancla_indice": 765,
+    "ancla_texto": "Tristán-López, A. (2008)",
+    "texto": "Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478. https://doi.org/10.2307/30036540",
+    "encadenada": false
+  },
+  {
+    "orden": 11,
+    "ancla_indice": 766,
+    "ancla_texto": "Wasswa, J.",
+    "texto": "Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6), 80–83. https://doi.org/10.2307/3001968",
+    "encadenada": false
+  }
+]

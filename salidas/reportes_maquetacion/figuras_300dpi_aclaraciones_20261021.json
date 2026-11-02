@@ -1,0 +1,188 @@
+{
+  "fecha": "2026-10-21",
+  "fase": "F8",
+  "agente": "analista-documental",
+  "alcance": "Figuras 1, 2, 6 y 9 de informe_final_v16.docx. Extraccion desde PDF ya catalogados que las notas identifican. Sin busqueda ilimitada, sin generar figuras nuevas, sin reescalar raster.",
+  "figuras": [
+    {
+      "figura": 1,
+      "rotulo_v16": "Pilares tecnologicos de la arquitectura web (URL, HTTP y HTML)",
+      "v16": {
+        "part": "word/media/image2.png",
+        "rId": "rId16",
+        "pixeles": [
+          1416,
+          555
+        ],
+        "ancho_cm": 13.97,
+        "dpi_efectivo": 257.5
+      },
+      "fuente": {
+        "documento": "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/PDFs_articulos/PDFs_SIVAC/Programación de aplicaciones web Historia, principios básicos y clientes web.pdf",
+        "sha256": "8dc2663152db2945b09290837931fe83f0bff3c17ca1ee3ee4afa4b455efa22d",
+        "pagina_pdf_index": 43,
+        "pagina_impresa": 16,
+        "figura": "Figura 2.5 Los pilares de la Web",
+        "tipo": "raster_nativo",
+        "xref": 142,
+        "crop": null
+      },
+      "extraccion": {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig01_pilares_web_lujan_p16.png",
+        "sha256": "dab37e3ac2a32a7cdfee4d92a454e33e23f3d5862f9b1b9132375841792c9e5d",
+        "pixeles": [
+          999,
+          376
+        ],
+        "tamano_max_300dpi_cm": [
+          8.46,
+          3.18
+        ],
+        "dpi_efectivo_a_13_97_cm": 181.7,
+        "remuestreo": false
+      },
+      "verificacion_visual": "Coincide con la Figura 1 de v16: dos equipos, documento HTML y flechas URL/HTTP.",
+      "estado": "residual_raster_nativo_insuficiente",
+      "nota": "El PDF contiene una unica imagen de 999x376 px (217 dpi a su tamano original de 11.7 cm). No existe version vectorial ni raster mayor. Los 1416 px de v16 son una ampliacion; no se reescala."
+    },
+    {
+      "figura": 2,
+      "rotulo_v16": "Arquitectura de una aplicacion web basada en el patron Modelo-Vista-Controlador (MVC)",
+      "v16": {
+        "part": "word/media/image3.png",
+        "rId": "rId17",
+        "pixeles": [
+          1430,
+          972
+        ],
+        "ancho_cm": 13.97,
+        "dpi_efectivo": 260.0
+      },
+      "fuente": {
+        "documento": "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/PDFs_articulos/PDFs_SIVAC/Software Engineering.pdf",
+        "sha256": "cabeeeae791371a199f28372b0f4695a760877953333528f101e7f747988bd22",
+        "pagina_pdf_index": 177,
+        "pagina_impresa": 177,
+        "figura": "Figure 6.6 Web application architecture using the MVC pattern",
+        "tipo": "vectorial",
+        "xref": null,
+        "crop_pt": [
+          185,
+          55,
+          450,
+          285
+        ]
+      },
+      "extraccion": {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig02_mvc_sommerville_p177.png",
+        "sha256": "f171b92b9076e04273ed444f6001d7dbbdad1b4ef8b113948b6e1e4215c2558b",
+        "pixeles": [
+          1651,
+          1433
+        ],
+        "tamano_max_300dpi_cm": [
+          13.98,
+          12.13
+        ],
+        "dpi_efectivo_a_13_97_cm": 300.0,
+        "remuestreo": false
+      },
+      "verificacion_visual": "Coincide con la Figura 2 de v16: Browser, Controller, View y Model con las etiquetas Form to display, User events, Update request, Change notification y Refresh request. El recorte excluye el rotulo Figure 6.6 del PDF.",
+      "estado": "extraida_300dpi_vector",
+      "nota": "Render vectorial a 300 dpi para 13.97 cm de ancho; 1651x1433 px. Al conservar la proporcion del contenido, la altura resulta 12.13 cm frente a 9.50 cm de v16, que incluye relleno lateral."
+    },
+    {
+      "figura": 6,
+      "rotulo_v16": "Flujo logistico de la cadena de frio e inmunizaciones desde la fabricacion hasta el establecimiento de salud",
+      "v16": {
+        "part": "word/media/image7.png",
+        "rId": "rId21",
+        "pixeles": [
+          751,
+          700
+        ],
+        "ancho_cm": 13.97,
+        "dpi_efectivo": 136.5
+      },
+      "fuente": {
+        "documento": "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/PDFs_articulos/PDFs_SIVAC/Implementación de un sistema de monitoreo inalámbrico mediante Internet de las c.pdf",
+        "sha256": "bfda6ec5a9fbae6f1f9c8a045f7e063c090ab779b68b3415147ec439dbdd0bc2",
+        "pagina_pdf_index": 22,
+        "pagina_impresa": 12,
+        "figura": "Figura 1 Operaciones de la cadena de frio",
+        "tipo": "raster_nativo",
+        "xref": 151,
+        "crop": null
+      },
+      "extraccion": {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig06_cadena_frio_champi_p12.jpeg",
+        "sha256": "459e93d776bd2ac8f48a513c318b604ae0233a8debfb102cb7cdcfa58b15a061",
+        "pixeles": [
+          280,
+          265
+        ],
+        "tamano_max_300dpi_cm": [
+          2.37,
+          2.24
+        ],
+        "dpi_efectivo_a_13_97_cm": 50.9,
+        "remuestreo": false
+      },
+      "verificacion_visual": "Coincide con la Figura 6 de v16: avion, camion, fabrica, almacenes, termos, vacuna, profesional y usuario.",
+      "estado": "residual_raster_nativo_insuficiente",
+      "nota": "La fuente nativa es de 280x265 px (119 dpi en el PDF). Los 751 px de v16 son una ampliacion interpolada. No hay version de mayor resolucion en el PDF catalogado; no se puede alcanzar 300 dpi sin generar un grafico nuevo."
+    },
+    {
+      "figura": 9,
+      "rotulo_v16": "Marco teorico de facilidad de uso percibida y utilidad percibida en la adopcion de sistemas de informacion en salud (TAM)",
+      "v16": {
+        "part": "word/media/image10.png",
+        "rId": "rId24",
+        "pixeles": [
+          1006,
+          545
+        ],
+        "ancho_cm": 13.97,
+        "dpi_efectivo": 182.9
+      },
+      "fuente": {
+        "documento": "C:/MisInvestigaciones/obsidian_vault/04_LITERATURA_Y_FUENTES/PDFs_articulos/PDFs_SIVAC/Luo - 2024 - role-perceived-ease-use-usefulness.pdf",
+        "sha256": "0b5571bad13b0706cadce39e9ab3a871ddc1bae10c908de560972f8600ad6a15",
+        "pagina_pdf_index": 3,
+        "pagina_impresa": 4,
+        "figura": "Fig. 1 Theoretical framework for the adoption of health information system",
+        "tipo": "raster_nativo",
+        "xref": 176,
+        "crop": null
+      },
+      "extraccion": {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/figuras/aclaraciones_20261021/fuentes_300dpi/fig09_tam_luo_p4.jpeg",
+        "sha256": "300735e14090fc163251b0df0c21e43c9c87349be26eefdbe232a8754e8c1f26",
+        "pixeles": [
+          971,
+          510
+        ],
+        "tamano_max_300dpi_cm": [
+          8.22,
+          4.32
+        ],
+        "dpi_efectivo_a_13_97_cm": 176.5,
+        "remuestreo": false
+      },
+      "verificacion_visual": "Coincide con la Figura 9 de v16: Size of Hospital, Financial Capability/Strength, Perceived Ease of Use, Perceived Usefulness, Adoption of Information System y relaciones H-1 a H-6.",
+      "estado": "fuente_nativa_300dpi_solo_hasta_8_22_cm",
+      "nota": "El JPEG nativo tiene 971x510 px y esta embebido a 300 dpi exactos en 8.22 cm de ancho. A 13.97 cm solo rinde 176.5 dpi; los 1006 px de v16 son una ampliacion leve. Para 300 dpi reales debe insertarse a 8.22 cm o menos."
+    }
+  ],
+  "resumen": {
+    "extraidas_300dpi": 1,
+    "residuales": 3,
+    "figuras_evaluadas": 4
+  },
+  "restricciones_cumplidas": {
+    "word_com": false,
+    "originales_modificados": [],
+    "raster_ampliado": false,
+    "figuras_generadas": false
+  }
+}

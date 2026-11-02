@@ -1,0 +1,994 @@
+[
+ {
+  "idx": 44,
+  "rows": 5,
+  "cols": 5,
+  "cells": [
+   [
+    "Problemas de Investigación",
+    "Objetivos de Investigación",
+    "Hipótesis de Investigación",
+    "Variables, Dimensiones e Indicadores",
+    "Metodología de la Investigación"
+   ],
+   [
+    "Problema General:\n¿En qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+    "Objetivo General:\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Hipótesis General:\nLa aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Variable Independiente (VI):\nIntervención tecnológica dicotómica:\n\n• Pre-intervención manual (X₀): Kardex manual físico, libros de registro y hojas de cálculo dispersas\n\n• Post-intervención tecnológica (X₁): Sistema web SIVAC con arquitectura transaccional, regla FEFO y emisión digital de vales (desarrollado con Extreme Programming; evaluado con ISO/IEC 25010:2023).",
+    "Tipo y Nivel:\nAplicada, explicativo\n\nMétodo y Enfoque:\nHipotético-deductivo, cuantitativo\n\nCriterio de Integración HG:\nIntegración convergente de las hipótesis específicas H1, H2 y H3 sin agregar escalas heterogéneas en un p-valor global artificial"
+   ],
+   [
+    "Problema Específico 1:\n¿En qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+    "Objetivo Específico 1:\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Hipótesis Específica 1:\nLa aplicación del sistema web SIVAC mejora significativamente la oportunidad de procesamiento en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Variable Dependiente (VD):\nGestión de movimientos mensuales de vacunas\n\nDimensión 1: Oportunidad de procesamiento\n• Tiempo de registro de movimiento de vacunas (T_reg; minutos decimales)\n• Tiempo de emisión de comprobante de salida o vale (T_vale; minutos decimales)",
+    "Diseño de Investigación:\nPreexperimental con pre-test y post-test en un solo grupo (GE: O₁ - X - O₂)\n\nUnidad de Análisis:\nGestión de movimientos mensuales de vacunas en la red de frío\n\nUnidad de Observación Primaria:\nTransacciones logísticas, registros de kardex, despachos y cuestionarios\n\nSujetos de Agregación Pareada:\nPoblación censal conformada por N = n = 14 operadores en 13 centros de acopio"
+   ],
+   [
+    "Problema Específico 2:\n¿En qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+    "Objetivo Específico 2:\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Hipótesis Específica 2:\nLa aplicación del sistema web SIVAC mejora significativamente la consistencia documental en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Dimensión 2: Consistencia documental\n• Porcentaje de registros sin discrepancias (RSD; porcentaje % bajo 8 criterios normativos)\n• Concordancia de cantidad programada versus entregada (CPE; porcentaje %)",
+    "Técnicas de Recolección:\n• Observación directa sistemática\n• Análisis y auditoría documental\n• Encuesta estructurada\n\nInstrumentos Oficiales:\n• Ficha de observación de tiempos (Inst. 01)\n• Guía de cotejo documental (Inst. 02)\n• Cuestionario de satisfacción y aceptación tecnológica (Inst. 03, Modalidad A)"
+   ],
+   [
+    "Problema Específico 3:\n¿En qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II?",
+    "Objetivo Específico 3:\nDeterminar en qué medida la aplicación del sistema “SIVAC” mejora la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Hipótesis Específica 3:\nLa aplicación del sistema web SIVAC mejora significativamente la satisfacción del usuario en la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",
+    "Dimensión 3: Satisfacción del usuario\n• Aceptación del proceso (AP; reactivos AP-01 a AP-04, escala ordinal Likert 1 a 5, puntuación sumatoria 4 a 20)\n• Utilidad percibida (UP; reactivos UP-01 a UP-04, escala ordinal Likert 1 a 5, puntuación sumatoria 4 a 20)\n• Total de la dimensión sobre los 8 ítems de la Modalidad A: 8 a 40",
+    "Procesamiento y Análisis:\n• Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7\n• Normalidad: Prueba de Shapiro-Wilk (n = 14)\n• Inferencial: Prueba de rangos con signo de Wilcoxon pareada (alfa = 0.05 bilateral)\n• Control FWER: Ajuste de p-valor mediante Holm-Bonferroni\n• Tamaño del efecto: r = |Z| / sqrt(N)"
+   ]
+  ]
+ },
+ {
+  "idx": 45,
+  "rows": 5,
+  "cols": 6,
+  "cells": [
+   [
+    "Variable",
+    "Definición Operacional",
+    "Dimensiones",
+    "Indicadores",
+    "Unidad de Medida",
+    "Escala de Valoración"
+   ],
+   [
+    "Variable Independiente:\nSistema web SIVAC",
+    "Intervención tecnológica dicotómica: condición basal pre-intervención (X₀: gestión manual en formatos físicos) vs. condición post-intervención (X₁: gestión digitalizada mediante el sistema web SIVAC). Su ingeniería bajo XP y verificación técnica bajo ISO/IEC 25010:2023 se documentan en el Capítulo III.",
+    "Intervención tecnológica dicotómica",
+    "Condición basal pre-intervención (X₀: gestión manual en formatos físicos)\n\nCondición post-intervención (X₁: gestión digitalizada mediante el sistema web SIVAC)",
+    "Condición operativa del sistema",
+    "Nominal dicotómica (X₀ = Manual, X₁ = SIVAC)"
+   ],
+   [
+    "Variable Dependiente:\nGestión de movimientos mensuales de vacunas",
+    "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
+    "1. Oportunidad de procesamiento",
+    "Tiempo de registro de movimiento de vacunas (T_reg)\n\nTiempo de emisión de comprobante de salida o vale (T_vale)",
+    "Minutos cronometrados por transacción (promedio pareado)",
+    "De razón (continua)"
+   ],
+   [
+    "Variable Dependiente:\nGestión de movimientos mensuales de vacunas",
+    "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
+    "2. Consistencia documental",
+    "Porcentaje de registros sin discrepancias (RSD)\n\nConcordancia de cantidad programada versus entregada (CPE)",
+    "Porcentaje de exactitud y conformidad documental",
+    "De razón (0% a 100%)"
+   ],
+   [
+    "Variable Dependiente:\nGestión de movimientos mensuales de vacunas",
+    "Desempeño integral del proceso logístico de registro, control documental y despacho de biológicos en la cadena de frío sanitaria.",
+    "3. Satisfacción del usuario",
+    "Aceptación del proceso operativo (AP: reactivos AP-01 a AP-04)\n\nUtilidad percibida para la gestión (UP: reactivos UP-01 a UP-04)",
+    "Puntaje sumativo en cuestionario psicométrico (4 a 20 puntos por indicador; 8 a 40 puntos en el total de la dimensión)",
+    "Ordinal / Intervalar (total de la dimensión: 8 a 40)"
+   ]
+  ]
+ },
+ {
+  "idx": 46,
+  "rows": 8,
+  "cols": 2,
+  "cells": [
+   [
+    "Juez Validador:",
+    "____________________ (Juez 1)"
+   ],
+   [
+    "Grado y Especialidad:",
+    "Mg. en Ingeniería de Sistemas - Ingeniero de Sistemas / Especialista en Software y Bases de Datos"
+   ],
+   [
+    "Institución de Referencia:",
+    "Dirección de Salud Apurímac II / Universidad Nacional José María Arguedas"
+   ],
+   [
+    "Instrumentos Auditados:",
+    "Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems)"
+   ],
+   [
+    "Coeficiente V de Aiken:",
+    "V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]"
+   ],
+   [
+    "Opinión Pericial Global:",
+    "[   ] Aplicable sin modificaciones     [   ] Aplicable con observaciones   [     ] No aplicable"
+   ],
+   [
+    "Fecha y Lugar:",
+    "Andahuaylas, Apurímac — Perú, ____ de ____________ de 2026"
+   ],
+   [
+    "[ESPACIO RESERVADO PARA FIRMA Y SELLO DEL JUEZ]     _________________________________________________________ Firma y Sello del Juez Validador: Juez 1 DNI: ____________________",
+    "[ESPACIO RESERVADO PARA FIRMA Y SELLO DEL JUEZ]     _________________________________________________________ Firma y Sello del Juez Validador: Juez 1 DNI: ____________________"
+   ]
+  ]
+ },
+ {
+  "idx": 47,
+  "rows": 8,
+  "cols": 2,
+  "cells": [
+   [
+    "Juez Validador:",
+    "____________________ (Juez 2)"
+   ],
+   [
+    "Grado y Especialidad:",
+    "Mg. en Salud Pública - Licenciado en Enfermería / Especialista en Inmunizaciones y Cadena de Frío"
+   ],
+   [
+    "Institución de Referencia:",
+    "Dirección de Salud Apurímac II / Universidad Nacional José María Arguedas"
+   ],
+   [
+    "Instrumentos Auditados:",
+    "Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems)"
+   ],
+   [
+    "Coeficiente V de Aiken:",
+    "V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]"
+   ],
+   [
+    "Opinión Pericial Global:",
+    "[   ] Aplicable sin modificaciones     [   ] Aplicable con observaciones   [     ] No aplicable"
+   ],
+   [
+    "Fecha y Lugar:",
+    "Andahuaylas, Apurímac — Perú, ____ de ____________ de 2026"
+   ],
+   [
+    "[ESPACIO RESERVADO PARA FIRMA Y SELLO DEL JUEZ]     _________________________________________________________ Firma y Sello del Juez Validador: Juez 2 DNI: ____________________",
+    "[ESPACIO RESERVADO PARA FIRMA Y SELLO DEL JUEZ]     _________________________________________________________ Firma y Sello del Juez Validador: Juez 2 DNI: ____________________"
+   ]
+  ]
+ },
+ {
+  "idx": 48,
+  "rows": 8,
+  "cols": 2,
+  "cells": [
+   [
+    "Juez Validador:",
+    "____________________ (Juez 3)"
+   ],
+   [
+    "Grado y Especialidad:",
+    "Dr. en Ciencias de la Educación / Estadística - Metodólogo / Especialista en Estadística y Medición Cuantitativa"
+   ],
+   [
+    "Institución de Referencia:",
+    "Dirección de Salud Apurímac II / Universidad Nacional José María Arguedas"
+   ],
+   [
+    "Instrumentos Auditados:",
+    "Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho ítems)"
+   ],
+   [
+    "Coeficiente V de Aiken:",
+    "V = [Por completar por el juez] (ocho ítems del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]"
+   ],
+   [
+    "Opinión Pericial Global:",
+    "[   ] Aplicable sin modificaciones     [   ] Aplicable con observaciones   [     ] No aplicable"
+   ],
+   [
+    "Fecha y Lugar:",
+    "Andahuaylas, Apurímac — Perú, ____ de ____________ de 2026"
+   ],
+   [
+    "[ESPACIO RESERVADO PARA FIRMA Y SELLO DEL JUEZ]     _________________________________________________________ Firma y Sello del Juez Validador: Juez 3 DNI: ____________________",
+    "[ESPACIO RESERVADO PARA FIRMA Y SELLO DEL JUEZ]     _________________________________________________________ Firma y Sello del Juez Validador: Juez 3 DNI: ____________________"
+   ]
+  ]
+ },
+ {
+  "idx": 49,
+  "rows": 4,
+  "cols": 4,
+  "cells": [
+   [
+    "Código",
+    "Indicador Medido",
+    "Definición Operativa del Intervalo",
+    "Unidad de Medida"
+   ],
+   [
+    "I-1.1",
+    "Tiempo de registro de movimiento (T_reg)",
+    "Intervalo desde la apertura del kardex o formulario hasta la confirmación de guardado",
+    "Minutos (cronométrico)"
+   ],
+   [
+    "I-1.2",
+    "Tiempo de emisión de vales de salida (T_vale)",
+    "Intervalo desde la orden de despacho hasta la generación física o digital del vale PECOSA",
+    "Minutos (cronométrico)"
+   ],
+   [
+    "Criterio",
+    "Condiciones de medición estandarizada",
+    "Medición pareada pretest (manual) y posttest (con SIVAC) sobre idéntico volumen transaccional",
+    "n = 14 operadores"
+   ]
+  ]
+ },
+ {
+  "idx": 50,
+  "rows": 4,
+  "cols": 4,
+  "cells": [
+   [
+    "Código",
+    "Indicador Medido",
+    "Fórmula Operativa de Cálculo",
+    "Rango de Escala"
+   ],
+   [
+    "I-2.1",
+    "Registros sin discrepancias (RSD)",
+    "(Total registros conformes sin error / Total transacciones auditadas) * 100",
+    "Porcentaje (0% a 100%)"
+   ],
+   [
+    "I-2.2",
+    "Concordancia programada vs entregada (CPE)",
+    "(Cantidad física biológica entregada / Cantidad programada en requerimiento) * 100",
+    "Porcentaje (0% a 100%)"
+   ],
+   [
+    "Criterio",
+    "Auditoría de 8 ítems binarios obligatorios",
+    "Verificación de lote, vencimiento, cantidad, firma de recepción y consistencia de saldo",
+    "Conformidad documental"
+   ]
+  ]
+ },
+ {
+  "idx": 51,
+  "rows": 9,
+  "cols": 4,
+  "cells": [
+   [
+    "Ítem",
+    "Constructo TAM",
+    "Enunciado del Reactivo de Medición",
+    "Escala Likert (1-5)"
+   ],
+   [
+    "AP-01",
+    "Aceptación del Proceso (AP)",
+    "El procedimiento de registro de movimientos de vacunas resulta ágil y sin demoras innecesarias.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "AP-02",
+    "Aceptación del Proceso (AP)",
+    "La emisión de comprobantes y vales de salida se realiza con facilidad y claridad en los pasos requeridos.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "AP-03",
+    "Aceptación del Proceso (AP)",
+    "El flujo operativo para conciliar saldos mensuales reduce la fatiga y el esfuerzo administrativo.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "AP-04",
+    "Aceptación del Proceso (AP)",
+    "Considero que la modalidad de trabajo empleada es cómoda, ordenada y eficiente para mis labores.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "UP-01",
+    "Utilidad Percibida (UP)",
+    "La plataforma o método de trabajo mejora mi productividad y desempeño en el control de vacunas.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "UP-02",
+    "Utilidad Percibida (UP)",
+    "El sistema proporciona información precisa y oportuna para la toma de decisiones en inmunizaciones.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "UP-03",
+    "Utilidad Percibida (UP)",
+    "La aplicación de reglas automáticas de control (como FEFO) evita errores y vencimiento de biológicos.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ],
+   [
+    "UP-04",
+    "Utilidad Percibida (UP)",
+    "En términos generales, considero sumamente útil la herramienta para la gestión institucional en la DISA.",
+    "1 = Muy en desacuerdo\n5 = Muy de acuerdo"
+   ]
+  ]
+ },
+ {
+  "idx": 52,
+  "rows": 15,
+  "cols": 18,
+  "cells": [
+   [
+    "sujeto_id",
+    "centro_acopio",
+    "t_reg",
+    "t_vale",
+    "rsd",
+    "cpe",
+    "ap_\n01",
+    "ap_\n02",
+    "ap_\n03",
+    "ap_\n04",
+    "up_\n01",
+    "up_\n02",
+    "up_\n03",
+    "up_\n04",
+    "score_\nap",
+    "score_\nup",
+    "score_\ntam_total",
+    "nivel_\nsatisfaccion"
+   ],
+   [
+    "TRAB-01",
+    "ALMACÉN (CHANKA)",
+    "38.5",
+    "18.5",
+    "62.5",
+    "65.0",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "3",
+    "2",
+    "2",
+    "8",
+    "9",
+    "17",
+    "Bajo"
+   ],
+   [
+    "TRAB-02",
+    "ALMACÉN (CHANKA)",
+    "42.0",
+    "22.0",
+    "58.0",
+    "62.5",
+    "1",
+    "2",
+    "1",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "6",
+    "8",
+    "14",
+    "Bajo"
+   ],
+   [
+    "TRAB-03",
+    "Hospital Andahuaylas",
+    "35.0",
+    "16.0",
+    "66.0",
+    "70.0",
+    "2",
+    "2",
+    "3",
+    "2",
+    "3",
+    "2",
+    "2",
+    "3",
+    "9",
+    "10",
+    "19",
+    "Medio"
+   ],
+   [
+    "TRAB-04",
+    "Hospital ESSALUD Andahuaylas",
+    "33.5",
+    "15.0",
+    "71.5",
+    "75.0",
+    "3",
+    "3",
+    "2",
+    "3",
+    "3",
+    "3",
+    "3",
+    "3",
+    "11",
+    "12",
+    "23",
+    "Medio"
+   ],
+   [
+    "TRAB-05",
+    "Centro de Salud Andahuaylas",
+    "40.0",
+    "20.5",
+    "55.0",
+    "60.0",
+    "2",
+    "1",
+    "2",
+    "1",
+    "2",
+    "2",
+    "2",
+    "2",
+    "6",
+    "8",
+    "14",
+    "Bajo"
+   ],
+   [
+    "TRAB-06",
+    "Talavera",
+    "36.5",
+    "17.0",
+    "64.0",
+    "68.5",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "8",
+    "8",
+    "16",
+    "Bajo"
+   ],
+   [
+    "TRAB-07",
+    "San Jeronimo",
+    "44.0",
+    "24.0",
+    "52.5",
+    "58.0",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "2",
+    "1",
+    "2",
+    "4",
+    "6",
+    "10",
+    "Bajo"
+   ],
+   [
+    "TRAB-08",
+    "Huancaray",
+    "32.0",
+    "14.5",
+    "75.0",
+    "78.0",
+    "3",
+    "3",
+    "3",
+    "3",
+    "3",
+    "3",
+    "3",
+    "3",
+    "12",
+    "12",
+    "24",
+    "Medio"
+   ],
+   [
+    "TRAB-09",
+    "Chicmo",
+    "31.5",
+    "15.0",
+    "72.0",
+    "74.5",
+    "3",
+    "2",
+    "3",
+    "2",
+    "3",
+    "3",
+    "2",
+    "3",
+    "10",
+    "11",
+    "21",
+    "Medio"
+   ],
+   [
+    "TRAB-10",
+    "Huancabamba",
+    "39.0",
+    "19.5",
+    "60.5",
+    "66.0",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "8",
+    "8",
+    "16",
+    "Bajo"
+   ],
+   [
+    "TRAB-11",
+    "Pampachiri",
+    "37.0",
+    "18.0",
+    "63.0",
+    "67.5",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "8",
+    "8",
+    "16",
+    "Bajo"
+   ],
+   [
+    "TRAB-12",
+    "San Antonio de Cachi",
+    "41.5",
+    "21.0",
+    "56.5",
+    "61.0",
+    "1",
+    "2",
+    "1",
+    "1",
+    "2",
+    "2",
+    "2",
+    "1",
+    "5",
+    "7",
+    "12",
+    "Bajo"
+   ],
+   [
+    "TRAB-13",
+    "Turpo",
+    "34.0",
+    "16.5",
+    "68.0",
+    "71.5",
+    "3",
+    "2",
+    "2",
+    "3",
+    "3",
+    "3",
+    "2",
+    "3",
+    "10",
+    "11",
+    "21",
+    "Medio"
+   ],
+   [
+    "TRAB-14",
+    "Kishuara",
+    "36.0",
+    "17.5",
+    "65.5",
+    "69.0",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "8",
+    "8",
+    "16",
+    "Bajo"
+   ]
+  ]
+ },
+ {
+  "idx": 53,
+  "rows": 15,
+  "cols": 18,
+  "cells": [
+   [
+    "sujeto_id",
+    "centro_acopio",
+    "t_reg",
+    "t_vale",
+    "rsd",
+    "cpe",
+    "ap_\n01",
+    "ap_\n02",
+    "ap_\n03",
+    "ap_\n04",
+    "up_\n01",
+    "up_\n02",
+    "up_\n03",
+    "up_\n04",
+    "score_\nap",
+    "score_\nup",
+    "score_\ntam_total",
+    "nivel_\nsatisfaccion"
+   ],
+   [
+    "TRAB-01",
+    "ALMACÉN (CHANKA)",
+    "7.5",
+    "3.0",
+    "96.0",
+    "95.0",
+    "4",
+    "5",
+    "4",
+    "5",
+    "5",
+    "5",
+    "4",
+    "5",
+    "18",
+    "19",
+    "37",
+    "Alto"
+   ],
+   [
+    "TRAB-02",
+    "ALMACÉN (CHANKA)",
+    "8.0",
+    "3.5",
+    "94.5",
+    "93.5",
+    "4",
+    "4",
+    "4",
+    "4",
+    "5",
+    "4",
+    "4",
+    "5",
+    "16",
+    "18",
+    "34",
+    "Alto"
+   ],
+   [
+    "TRAB-03",
+    "Hospital Andahuaylas",
+    "6.5",
+    "2.5",
+    "98.0",
+    "97.0",
+    "5",
+    "5",
+    "5",
+    "4",
+    "5",
+    "5",
+    "5",
+    "5",
+    "19",
+    "20",
+    "39",
+    "Alto"
+   ],
+   [
+    "TRAB-04",
+    "Hospital ESSALUD Andahuaylas",
+    "6.0",
+    "2.5",
+    "97.5",
+    "98.0",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "20",
+    "20",
+    "40",
+    "Alto"
+   ],
+   [
+    "TRAB-05",
+    "Centro de Salud Andahuaylas",
+    "9.0",
+    "4.0",
+    "93.0",
+    "92.5",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "16",
+    "16",
+    "32",
+    "Alto"
+   ],
+   [
+    "TRAB-06",
+    "Talavera",
+    "7.0",
+    "3.0",
+    "96.5",
+    "96.0",
+    "5",
+    "4",
+    "5",
+    "4",
+    "5",
+    "5",
+    "4",
+    "5",
+    "18",
+    "19",
+    "37",
+    "Alto"
+   ],
+   [
+    "TRAB-07",
+    "San Jeronimo",
+    "8.5",
+    "4.0",
+    "92.0",
+    "91.5",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "16",
+    "16",
+    "32",
+    "Alto"
+   ],
+   [
+    "TRAB-08",
+    "Huancaray",
+    "5.5",
+    "2.0",
+    "100.0",
+    "100.0",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "20",
+    "20",
+    "40",
+    "Alto"
+   ],
+   [
+    "TRAB-09",
+    "Chicmo",
+    "6.0",
+    "2.5",
+    "98.5",
+    "97.5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "20",
+    "20",
+    "40",
+    "Alto"
+   ],
+   [
+    "TRAB-10",
+    "Huancabamba",
+    "7.5",
+    "3.5",
+    "95.0",
+    "94.0",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "5",
+    "4",
+    "5",
+    "16",
+    "18",
+    "34",
+    "Alto"
+   ],
+   [
+    "TRAB-11",
+    "Pampachiri",
+    "7.0",
+    "3.0",
+    "96.0",
+    "95.5",
+    "4",
+    "4",
+    "5",
+    "4",
+    "5",
+    "4",
+    "4",
+    "5",
+    "17",
+    "18",
+    "35",
+    "Alto"
+   ],
+   [
+    "TRAB-12",
+    "San Antonio de Cachi",
+    "8.5",
+    "3.5",
+    "93.5",
+    "93.0",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "16",
+    "16",
+    "32",
+    "Alto"
+   ],
+   [
+    "TRAB-13",
+    "Turpo",
+    "6.5",
+    "2.5",
+    "97.0",
+    "96.5",
+    "5",
+    "5",
+    "5",
+    "4",
+    "5",
+    "5",
+    "5",
+    "5",
+    "19",
+    "20",
+    "39",
+    "Alto"
+   ],
+   [
+    "TRAB-14",
+    "Kishuara",
+    "7.0",
+    "3.0",
+    "96.5",
+    "95.5",
+    "4",
+    "4",
+    "5",
+    "4",
+    "5",
+    "5",
+    "4",
+    "5",
+    "17",
+    "19",
+    "36",
+    "Alto"
+   ]
+  ]
+ },
+ {
+  "idx": 54,
+  "rows": 6,
+  "cols": 5,
+  "cells": [
+   [
+    "Código HU",
+    "Iteración XP",
+    "Título de la Historia de Usuario",
+    "Rol / Actor",
+    "Criterio de Aceptación Clave"
+   ],
+   [
+    "HU-01",
+    "Iteración 1 (Planificación/Autenticación)",
+    "Iniciar sesión en el sistema con credenciales y roles",
+    "Operador de Vacunas",
+    "Autenticación segura JWT y control de acceso RBAC"
+   ],
+   [
+    "HU-04",
+    "Iteración 2 (Gestión de Inventario)",
+    "Registrar lotes biológicos y control estricto de vencimiento (FEFO)",
+    "Encargado de Almacén",
+    "Validación automática de fechas de caducidad y temperatura"
+   ],
+   [
+    "HU-06",
+    "Iteración 3 (Núcleo Transaccional y Despacho)",
+    "Registrar movimientos mensuales de ingreso y egreso de vacunas",
+    "Responsable de Red",
+    "Cálculo instantáneo de saldo y bloqueo ante stock insuficiente"
+   ],
+   [
+    "HU-09",
+    "Iteración 3 (Auditoría/Vales)",
+    "Generar comprobantes de salida de vacunas (Vales PECOSA)",
+    "Operador de Inmunizaciones",
+    "Exportación automática a PDF/Excel con código de verificación"
+   ],
+   [
+    "HU-12",
+    "Iteración 4 (Consolidación/TAM)",
+    "Auditar concordancia documental y reportes de discrepancias",
+    "Director de Salud",
+    "Reporte analítico de discrepancias y conciliación de saldos"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,13 @@
+{
+  "fecha_consulta": "2026-10-21",
+  "figura_tesis": 9,
+  "fuente_primaria": "https://www.nature.com/articles/s41599-024-02976-9/figures/1",
+  "pie_editorial": "Theoretical framework for the adoption of health information system.",
+  "imagen_editorial": "https://media.springernature.com/full/springer-static/image/art%3A10.1057%2Fs41599-024-02976-9/MediaObjects/41599_2024_2976_Fig1_HTML.png",
+  "archivo_local": "salidas/figuras/aclaraciones_20261021/luo_editorial_3194d7/figura1_editorial_luo.png",
+  "sha256": "8f216fdeb80adb6a4a84622f06d1cd3614476a565bf31dbab30098bebfcaa2f0",
+  "bytes": 52737,
+  "pixeles": [971, 510],
+  "ancho_maximo_a_300_dpi_cm": 8.22,
+  "conclusion": "La imagen oficial publicada tiene el mismo tamaño en píxeles que la encontrada en el PDF; no se encontró detalle adicional. Puede usarse el PNG editorial sin pérdida adicional por JPEG, a 8.22 cm de ancho como máximo para 300 DPI efectivos. No se amplía ni se interpola."
+}

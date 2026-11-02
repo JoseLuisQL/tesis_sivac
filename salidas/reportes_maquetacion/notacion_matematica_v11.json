@@ -1,0 +1,287 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v11.docx",
+    "documento_base_sha256": "f5e7636fae06b3a1b3e74b5815fc54e3d25ac2ee0109e69ec337136d4db59b07",
+    "documento_base_editable": false,
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "squad": "Squad C - Redaccion y Estilo",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Normalizar los residuos de notacion ASCII a glifos Unicode tipograficos (>= a U+2265, <= a U+2264, -> a U+2192, alpha a U+03B1, beta a U+03B2) y retirar la expresion algebraica incrustada en la celda de Procesamiento y Analisis de la tabla 44.",
+    "convencion_indices": "En ordenes de parrafo, indice_docx es base 0 sobre document.paragraphs. En ordenes de tabla, indice_docx identifica document.tables[N] y coincide con el rotulo de la tabla para los rotulos 1 a 45 de este documento. En ubicacion, fila y columna son base 1 e incluyen la fila de encabezado como fila 1, de modo que el aplicador las convierte a base 0 al restar uno.",
+    "criterio_de_normalizacion": "Se normaliza hacia el uso que el propio documento ya adopto de forma mayoritaria: alfa U+03B1 en P139, P142, P145, P151, P192, P220, P621, P623 y P640; menor o igual U+2264 en P383; flecha U+2192 en P710.",
+    "fuentes_de_verificacion": [
+      "salidas/reportes_maquetacion/_operadores_ascii_v11.txt (conteo y ubicacion por parrafo y por celda)",
+      "salidas/reportes_maquetacion/_griegas_v11.txt (glifos ya adoptados y contexto de beta y de la tabla 44)",
+      "salidas/reportes_maquetacion/colas_diagnostico.txt (texto literal de P677, P685, P691, P697)",
+      "salidas/reportes_maquetacion/_parrafos_efecto.txt (texto literal de P686, P689, P698, P701)",
+      "salidas/documentos/informe_final_v04_texto_plano.md (texto literal de P620, P623, P637, P639, P652 y P284, estable entre versiones)"
+    ],
+    "cobertura": {
+      "mayor_o_igual": {"ocurrencias": 19, "ordenes": 14},
+      "menor_o_igual": {"ocurrencias": 5, "ordenes": 3},
+      "flecha": {"ocurrencias": 2, "ordenes": 1},
+      "alfa": {"ocurrencias": 8, "ordenes": 8},
+      "beta": {"ocurrencias": 2, "ordenes": 2},
+      "celda_algebraica": {"ocurrencias": 1, "ordenes": 1},
+      "total_ordenes": 29
+    },
+    "anclas": "Toda ancla arrastra la cifra o el subindice contiguo, porque el operador aislado no es unico. Las ocurrencias repetidas dentro de un mismo parrafo se resuelven con una sola orden que abarca la cadena completa (P637, P639, P685, P691, P697, P677) o con anclas desambiguadas por la cifra que las precede (P686, P698).",
+    "colisiones": {
+      "analisis": "Verificacion estatica de solapamiento entre las 29 anclas y las 16 ordenes de rosenthal_v10_ordenes.json y las 9 de wilcoxon_p_v11.json. Ningun tramo modificado coincide: las ordenes de Rosenthal de P686 tocan solo el valor 0.62 y la formula de P689; mi orden de P686 toca el enunciado del umbral '(efecto grande, r >= 0.50)'; la de P689 toca 'alpha = .05' al inicio de la nota. Las ordenes de p tocan exclusivamente los valores de p. En las tablas 40, 41 y 42 las ordenes ajenas ocupan las columnas 4 y 5 y las mias no tocan celdas de esas tablas.",
+      "secuencia_1_notacion_luego_rosenthal_y_p": "29 + 16 + 9 = 54 ordenes aplicables; 0 colisiones esperadas.",
+      "secuencia_2_rosenthal_y_p_luego_notacion": "16 + 9 + 29 = 54 ordenes aplicables; 0 colisiones esperadas.",
+      "salvedad": "El ensayo con --solo-verificar no pudo ejecutarse desde este subagente, que carece de interprete de comandos. La verificacion realizada es documental: cada ancla se contrasto como subcadena literal de los volcados de texto de v11 y de los parrafos equivalentes del volcado v04. Debe ejecutarse la pasada previa antes de la aplicacion."
+    },
+    "hallazgos_de_coordinacion": [
+      "sqrt subsiste despues de la orden de Rosenthal. Su texto de reemplazo original para P689 era '(|Z| / sqrt(N)), donde N es el numero de pares validos'. RESUELTO el 2026-10-21: rosenthal_v10_ordenes.json escribe ahora '(|Z| / √N)' con U+221A. La otra ocurrencia, la de la tabla 44, desaparece con la orden 29 de este archivo. Tras ambos ajustes no queda 'sqrt' en ningun texto visible del informe; P639 dice 'raiz cuadrada' en prosa.",
+      "Rosenthal introducia dos '>=' nuevas. Sus ordenes de P701 y P705 escribian 'r >= 0.50'. RESUELTO el 2026-10-21: ambas escriben ahora 'r ≥ 0.50' con U+2265. No se emitio orden desde este archivo porque el ancla no existe en v11 y fallaria en el ensayo.",
+      "Las 27 detecciones de 'chi' son falsos positivos por subcadena: corresponden a 'Chawpi', 'chimpapuranapaq', 'Pampachiri', 'San Antonio de Cachi', 'Archivo de Especificacion', 'Arquitectura' y 'schema.prisma'. No hay la letra griega chi en notacion ASCII ni en glifo. No se emite orden.",
+      "No se emitieron ordenes para '!=', '~=', '+-', '<-', '...' ni 'phi': el volcado declara cero ocurrencias."
+    ],
+    "total_ordenes": 29,
+    "instrucciones_aplicacion": {
+      "comando": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v11.docx --salida salidas/documentos/informe_final_v12.docx --json salidas/reportes_maquetacion/notacion_matematica_v11.json --reporte salidas/reportes_maquetacion/aplicacion_notacion_v12.json --solo-verificar",
+      "comando_combinado": "python scripts/compiladores/aplicar_correcciones_redaccion.py --entrada salidas/documentos/informe_final_v11.docx --salida salidas/documentos/informe_final_v12.docx --json salidas/reportes_maquetacion/rosenthal_v10_ordenes.json salidas/reportes_maquetacion/wilcoxon_p_v11.json salidas/reportes_maquetacion/notacion_matematica_v11.json --reporte salidas/reportes_maquetacion/aplicacion_combinada_v12.json --solo-verificar (y la permutacion inversa de los tres archivos)",
+      "resultado_esperado": "29 aplicadas, 0 omitidas, 0 fallidas.",
+      "verificacion_posterior": "Sobre el texto plano de v12, los conteos de '>=', '<=', '->', 'alpha' y 'beta' deben ser cero. Tras el ajuste de glifos del 2026-10-21 en rosenthal_v10_ordenes.json, tampoco deben aparecer 'sqrt' ni '>=' introducidos por las ordenes de tamano del efecto."
+    }
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 620,
+      "ubicacion": "PARRAFO 620",
+      "ancla_original": "asegurar que κ >= 0.80.",
+      "texto_nuevo": "asegurar que κ ≥ 0.80.",
+      "categoria": "notacion_matematica",
+      "justificacion": "Umbral de concordancia interevaluador del Instrumento N.° 02. Se sustituye el operador ASCII por U+2265. La cifra 0.80 y el coeficiente kappa no se alteran."
+    },
+    {
+      "indice_docx": 623,
+      "ubicacion": "PARRAFO 623",
+      "ancla_original": "un valor α >= 0.70",
+      "texto_nuevo": "un valor α ≥ 0.70",
+      "categoria": "notacion_matematica",
+      "justificacion": "Umbral mínimo de consistencia interna. La letra griega ya está en glifo en este párrafo; solo el operador era ASCII."
+    },
+    {
+      "indice_docx": 637,
+      "ubicacion": "PARRAFO 637",
+      "ancla_original": "pequeño >= 0.10, mediano >= 0.30, grande >= 0.50",
+      "texto_nuevo": "pequeño ≥ 0.10, mediano ≥ 0.30, grande ≥ 0.50",
+      "categoria": "notacion_matematica",
+      "justificacion": "Tres umbrales de Cohen para el tamaño del efecto. Una sola orden cubre las tres ocurrencias del párrafo; los valores y su orden no cambian."
+    },
+    {
+      "indice_docx": 639,
+      "ubicacion": "PARRAFO 639",
+      "ancla_original": "pequeño >= 0.10, mediano >= 0.30 y grande >= 0.50",
+      "texto_nuevo": "pequeño ≥ 0.10, mediano ≥ 0.30 y grande ≥ 0.50",
+      "categoria": "notacion_matematica",
+      "justificacion": "Misma escala de umbrales en el párrafo del estadístico Z. La conjunción 'y' distingue esta cadena de la de P637, de modo que el ancla es única."
+    },
+    {
+      "indice_docx": 652,
+      "ubicacion": "PARRAFO 652",
+      "ancla_original": "baremación psicométrica: >= .90 Excelente",
+      "texto_nuevo": "baremación psicométrica: ≥ .90 Excelente",
+      "categoria": "notacion_matematica",
+      "justificacion": "Nota de la tabla de confiabilidad. Se conserva el formato decimal con punto inicial (.90), propio de la nota."
+    },
+    {
+      "indice_docx": 685,
+      "ubicacion": "PARRAFO 685",
+      "ancla_original": "mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0",
+      "texto_nuevo": "mu_diff,T_reg ≥ 0 y mu_diff,T_vale ≥ 0",
+      "categoria": "notacion_matematica",
+      "justificacion": "Enunciado de la hipótesis nula específica 1. Una sola orden cubre las dos ocurrencias; los subíndices de indicador permanecen intactos."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "ancla_original": "(|d| >= 0.80). La prueba no paramétrica",
+      "texto_nuevo": "(|d| ≥ 0.80). La prueba no paramétrica",
+      "categoria": "notacion_matematica",
+      "justificacion": "Umbral de magnitud grande de d de Cohen en T_reg. El contexto posterior distingue esta ocurrencia de la de T_vale, que va seguida de coma."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "ancla_original": "d de Cohen de -6.55 (|d| >= 0.80)",
+      "texto_nuevo": "d de Cohen de -6.55 (|d| ≥ 0.80)",
+      "categoria": "notacion_matematica",
+      "justificacion": "Segunda ocurrencia del mismo umbral en el párrafo, desambiguada por la cifra contigua -6.55."
+    },
+    {
+      "indice_docx": 686,
+      "ubicacion": "PARRAFO 686",
+      "ancla_original": "(efecto grande, r >= 0.50)",
+      "texto_nuevo": "(efecto grande, r ≥ 0.50)",
+      "categoria": "notacion_matematica",
+      "justificacion": "Tercera ocurrencia. La ancla se ciñe al paréntesis del umbral y no toca el valor de r, que es objeto de una orden independiente de tamaño del efecto."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "ancla_original": "d de Cohen de 8.91 (|d| >= 0.80)",
+      "texto_nuevo": "d de Cohen de 8.91 (|d| ≥ 0.80)",
+      "categoria": "notacion_matematica",
+      "justificacion": "Umbral de magnitud en Aceptación del Proceso, desambiguado por la cifra 8.91."
+    },
+    {
+      "indice_docx": 698,
+      "ubicacion": "PARRAFO 698",
+      "ancla_original": "d de Cohen de 9.32 (|d| >= 0.80)",
+      "texto_nuevo": "d de Cohen de 9.32 (|d| ≥ 0.80)",
+      "categoria": "notacion_matematica",
+      "justificacion": "Umbral de magnitud en Utilidad Percibida, desambiguado por la cifra 9.32."
+    },
+    {
+      "indice_docx": 14,
+      "ubicacion": "TABLA 14, fila 5, columna 5",
+      "ancla_original": "(salt >= 10)",
+      "texto_nuevo": "(salt ≥ 10)",
+      "categoria": "notacion_matematica",
+      "justificacion": "Restricción del campo de contraseña en el diccionario de datos. Se conservan el nombre del parámetro y el valor 10."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 2, columna 4",
+      "ancla_original": "ICC(2,1) >= 0.75",
+      "texto_nuevo": "ICC(2,1) ≥ 0.75",
+      "categoria": "notacion_matematica",
+      "justificacion": "Criterio de acreditación del Instrumento N.° 01. Se conservan el coeficiente, sus grados de libertad y el umbral."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 3, columna 4",
+      "ancla_original": "kappa de Cohen >= 0.80",
+      "texto_nuevo": "kappa de Cohen ≥ 0.80",
+      "categoria": "notacion_matematica",
+      "justificacion": "Criterio de acreditación del Instrumento N.° 02. El nombre del estadístico y el umbral permanecen; solo cambia el operador."
+    },
+    {
+      "indice_docx": 677,
+      "ubicacion": "PARRAFO 677",
+      "ancla_original": "O_1 -> X -> O_2",
+      "texto_nuevo": "O_1 → X → O_2",
+      "categoria": "notacion_matematica",
+      "justificacion": "Diseño preexperimental. Una sola orden cubre las dos flechas del esquema, en coherencia con el uso de U+2192 ya adoptado en P710. Se conservan los subíndices y la letra X."
+    },
+    {
+      "indice_docx": 677,
+      "ubicacion": "PARRAFO 677",
+      "ancla_original": "normal (p <= .05).",
+      "texto_nuevo": "normal (p ≤ .05).",
+      "categoria": "notacion_matematica",
+      "justificacion": "Enunciado de la hipótesis nula de normalidad. Se conserva el decimal con punto inicial y el valor .05."
+    },
+    {
+      "indice_docx": 691,
+      "ubicacion": "PARRAFO 691",
+      "ancla_original": "mu_diff,RSD <= 0 y mu_diff,CPE <= 0",
+      "texto_nuevo": "mu_diff,RSD ≤ 0 y mu_diff,CPE ≤ 0",
+      "categoria": "notacion_matematica",
+      "justificacion": "Hipótesis nula específica 2. Una sola orden cubre ambas ocurrencias; los subíndices RSD y CPE no se alteran."
+    },
+    {
+      "indice_docx": 697,
+      "ubicacion": "PARRAFO 697",
+      "ancla_original": "mu_diff,AP <= 0 y mu_diff,UP <= 0",
+      "texto_nuevo": "mu_diff,AP ≤ 0 y mu_diff,UP ≤ 0",
+      "categoria": "notacion_matematica",
+      "justificacion": "Hipótesis nula específica 3. Una sola orden cubre ambas ocurrencias; los subíndices AP y UP no se alteran."
+    },
+    {
+      "indice_docx": 679,
+      "ubicacion": "PARRAFO 679",
+      "ancla_original": "prefijado de alpha = .05",
+      "texto_nuevo": "prefijado de α = .05",
+      "categoria": "notacion_matematica",
+      "justificacion": "Nivel de significancia del contraste de normalidad. Se conserva el espaciado alrededor del signo igual y el valor .05."
+    },
+    {
+      "indice_docx": 681,
+      "ubicacion": "PARRAFO 681",
+      "ancla_original": "Nivel de significancia alpha = .05. Si p > .05",
+      "texto_nuevo": "Nivel de significancia α = .05. Si p > .05",
+      "categoria": "notacion_matematica",
+      "justificacion": "Nota de la prueba de Shapiro-Wilk. El contexto posterior distingue esta nota de las demás que declaran el mismo nivel."
+    },
+    {
+      "indice_docx": 687,
+      "ubicacion": "PARRAFO 687",
+      "ancla_original": "umbral de significancia alpha = .05",
+      "texto_nuevo": "umbral de significancia α = .05",
+      "categoria": "notacion_matematica",
+      "justificacion": "Decisión bioestadística de la hipótesis específica 1. No se tocan los p-valores ni la decisión."
+    },
+    {
+      "indice_docx": 689,
+      "ubicacion": "PARRAFO 689",
+      "ancla_original": "Nivel de significancia alpha = .05. Grados de libertad",
+      "texto_nuevo": "Nivel de significancia α = .05. Grados de libertad",
+      "categoria": "notacion_matematica",
+      "justificacion": "Nota de la tabla de contrastes de la dimensión 1. La ancla se detiene antes de la fórmula del tamaño del efecto, que corresponde a otra orden."
+    },
+    {
+      "indice_docx": 693,
+      "ubicacion": "PARRAFO 693",
+      "ancla_original": "ajustados inferiores a alpha = .05",
+      "texto_nuevo": "ajustados inferiores a α = .05",
+      "categoria": "notacion_matematica",
+      "justificacion": "Decisión bioestadística de la hipótesis específica 2. La cadena 'ajustados inferiores' la distingue de la de P699."
+    },
+    {
+      "indice_docx": 695,
+      "ubicacion": "PARRAFO 695",
+      "ancla_original": "Nivel de significancia alpha = .05. El incremento",
+      "texto_nuevo": "Nivel de significancia α = .05. El incremento",
+      "categoria": "notacion_matematica",
+      "justificacion": "Nota de la tabla de consistencia documental. El contexto posterior desambigua la cadena común."
+    },
+    {
+      "indice_docx": 699,
+      "ubicacion": "PARRAFO 699",
+      "ancla_original": "marcadamente inferiores a alpha = .05",
+      "texto_nuevo": "marcadamente inferiores a α = .05",
+      "categoria": "notacion_matematica",
+      "justificacion": "Decisión bioestadística de la hipótesis específica 3. El adverbio 'marcadamente' hace única la ancla."
+    },
+    {
+      "indice_docx": 701,
+      "ubicacion": "PARRAFO 701",
+      "ancla_original": "Nivel de significancia alpha = .05. El tamaño del efecto",
+      "texto_nuevo": "Nivel de significancia α = .05. El tamaño del efecto",
+      "categoria": "notacion_matematica",
+      "justificacion": "Nota de la tabla de satisfacción del usuario. La ancla termina justo antes del paréntesis del umbral del tamaño del efecto, que modifica otra orden."
+    },
+    {
+      "indice_docx": 284,
+      "ubicacion": "PARRAFO 284, ocurrencia 1",
+      "ancla_original": "coeficiente beta = 0.35",
+      "texto_nuevo": "coeficiente β = 0.35",
+      "categoria": "notacion_matematica",
+      "justificacion": "Coeficiente de la facilidad de uso percibida en el modelo TAM. Se conservan el valor, el p-valor contiguo y la cita."
+    },
+    {
+      "indice_docx": 284,
+      "ubicacion": "PARRAFO 284, ocurrencia 2",
+      "ancla_original": "relación (beta = 0.23",
+      "texto_nuevo": "relación (β = 0.23",
+      "categoria": "notacion_matematica",
+      "justificacion": "Coeficiente de la utilidad percibida como mediadora. Desambiguada por la cifra 0.23; no se altera ningún estadístico."
+    },
+    {
+      "indice_docx": 44,
+      "ubicacion": "TABLA 44, fila 5, columna 4",
+      "ancla_original": "Procesamiento y Análisis: • Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7 • Normalidad: Prueba de Shapiro-Wilk (n = 14) • Inferencial: Prueba de rangos con signo de Wilcoxon pareada (alfa = 0.05 bilateral) • Control FWER: Ajuste de p-valor mediante Holm-Bonferroni • Tamaño del efecto: r = |Z| / sqrt(N)",
+      "texto_nuevo": "Procesamiento y Análisis: • Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7 • Normalidad: Prueba de Shapiro-Wilk (n = 14) • Inferencial: Prueba de rangos con signo de Wilcoxon pareada (α = 0.05 bilateral) • Control FWER: Ajuste de p-valor mediante Holm-Bonferroni • Tamaño del efecto: r de Rosenthal a partir del estadístico Z",
+      "categoria": "celda_algebraica",
+      "justificacion": "La celda de la matriz de consistencia contenía la expresión algebraica 'r = |Z| / sqrt(N)', prohibida por la regla institucional que reserva las ecuaciones para el cuerpo narrativo. Se reescribe la viñeta como enunciado verbal del procedimiento, sin fórmula, y se normaliza 'alfa' a la letra griega. Las viñetas descriptiva, de normalidad y de control de FWER permanecen literalmente iguales; no se altera ninguna cifra.",
+      "dxa_requerido": null,
+      "dxa_disponible": null
+    }
+  ]
+}

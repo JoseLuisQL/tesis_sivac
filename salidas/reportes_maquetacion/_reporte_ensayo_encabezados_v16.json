@@ -1,0 +1,160 @@
+{
+  "origen": "salidas\\archivo\\_ensayo_v16.docx",
+  "destino": null,
+  "solo_verificar": true,
+  "sha256_origen": "65bb181e2e91e711b1b6d5282d23956fe0ebb1def6b798e8b9fdb6f17454f297",
+  "sha256_destino": null,
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 8,
+  "total_aplicadas": 8,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "_ensayo_encabezados_v16",
+      "total": 8,
+      "aplicadas": 8,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 15",
+          "ancla": "total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 16",
+          "ancla": "total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 17",
+          "ancla": "total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 52,
+          "ubicacion": "TABLA 52, fila 1, columna 18",
+          "ancla": "de satisfacción",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 15",
+          "ancla": "total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 16",
+          "ancla": "total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 17",
+          "ancla": "total",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 53,
+          "ubicacion": "TABLA 53, fila 1, columna 18",
+          "ancla": "de satisfacción",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "_ensayo_encabezados_v16",
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "metadatos": {
+    "entrada": "salidas\\documentos\\informe_final_v11.docx",
+    "salida": null,
+    "ordenes": 22,
+    "aplicadas": 22,
+    "omitidas": 0,
+    "fallidas": 0,
+    "excluidos": [],
+    "solo_verificar": true
+  },
+  "aplicadas": [
+    {
+      "indice_docx": 158,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022",
+      "ocurrencias": 2,
+      "justificacion": "Uniformar la cita en texto con la denominación del asentamiento 756 (Ministerio de Salud del Perú).",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 158
+    },
+    {
+      "indice_docx": 220,
+      "tipo": "cuerpo",
+      "ancla_original": "publicada en la revista indexada JMIR Medical Informatics",
+      "texto_nuevo": "publicada en la revista indexada JMIR Human Factors",
+      "ocurrencias": 1,
+      "justificacion": "Crossref registra el DOI 10.2196/81377 en JMIR Human Factors, 13, e81377. El nombre de la revista consignado en el cuerpo era erróneo.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 220
+    },
+    {
+      "indice_docx": 259,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022, p. 14",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022, p. 14",
+      "ocurrencias": 1,
+      "justificacion": "Uniformidad autor-año con el asentamiento 756.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 259
+    },
+    {
+      "indice_docx": 285,
+      "tipo": "cuerpo",
+      "ancla_original": "Ndlovu et al. (2021)",
+      "texto_nuevo": "Ndlovu et al. (2022)",
+      "ocurrencias": 1,
+      "justificacion": "Crossref registra el artículo en JMIR Formative Research, 6(3), e32722, con fecha de publicación 2022-03-15. El año 2021 era incorrecto.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 285
+    },
+    {
+      "indice_docx": 293,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022, p. 14",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022, p. 14",
+      "ocurrencias": 1,
+      "justificacion": "Uniformidad autor-año con el asentamiento 756.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 293
+    },
+    {
+      "indice_docx": 295,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022, p. 14",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022, p. 14",
+      "ocurrencias": 1,
+      "justificacion": "Uniformidad autor-año con el asentamiento 756.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 295
+    },
+    {
+      "indice_docx": 309,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022, p. 14",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022, p. 14",
+      "ocurrencias": 1,
+      "justificacion": "Uniformidad autor-año con el asentamiento 756.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 309
+    },
+    {
+      "indice_docx": 317,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022, p. 14",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022, p. 14",
+      "ocurrencias": 1,
+      "justificacion": "Uniformidad autor-año con el asentamiento 756.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 317
+    },
+    {
+      "indice_docx": 444,
+      "tipo": "cuerpo",
+      "ancla_original": "(Beck, 1999; Sommerville, 2016)",
+      "texto_nuevo": "(Arisholm et al., 2007; Beck, 1999; Sommerville, 2016)",
+      "ocurrencias": 1,
+      "justificacion": "Resuelve la referencia no citada 728: Arisholm et al. (2007) evalúa la programación por pares, tema exacto de la oración. Se ordena alfabéticamente dentro del paréntesis.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 444
+    },
+    {
+      "indice_docx": 586,
+      "tipo": "cuerpo",
+      "ancla_original": "Ministerio de Salud, 2022",
+      "texto_nuevo": "Ministerio de Salud del Perú, 2022",
+      "ocurrencias": 1,
+      "justificacion": "Uniformidad autor-año con el asentamiento 756.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 586
+    },
+    {
+      "indice_docx": 630,
+      "tipo": "cuerpo",
+      "ancla_original": "Fany (2024)",
+      "texto_nuevo": "Quispe Tello (2024)",
+      "ocurrencias": 1,
+      "justificacion": "El PDF primario de la tesis modelo UNAJMA identifica como autora a Fany Quispe Tello. «Fany» es nombre de pila, no apellido; la cita correcta es Quispe Tello (2024).",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 630
+    },
+    {
+      "indice_docx": 650,
+      "tipo": "cuerpo",
+      "ancla_original": "(George & Mallery, 2003; Hernández-Sampieri & Mendoza, 2018)",
+      "texto_nuevo": "(George y Mallery, 2003; Hernández-Sampieri y Mendoza, 2018)",
+      "ocurrencias": 1,
+      "justificacion": "APA 7 en español: conjunción «y» entre apellidos, no ampersand.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 650
+    },
+    {
+      "indice_docx": 677,
+      "tipo": "cuerpo",
+      "ancla_original": "Shapiro-Wilk (1965)",
+      "texto_nuevo": "Shapiro y Wilk (1965)",
+      "ocurrencias": 1,
+      "justificacion": "La cita autor-año debe identificar a los dos autores; «Shapiro-Wilk» es el nombre de la prueba, no la cita.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 677
+    },
+    {
+      "indice_docx": 677,
+      "tipo": "cuerpo",
+      "ancla_original": "Razali & Wah, 2011",
+      "texto_nuevo": "Razali y Wah, 2011",
+      "ocurrencias": 1,
+      "justificacion": "APA 7 en español: conjunción «y» entre apellidos.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 677
+    },
+    {
+      "indice_docx": 681,
+      "tipo": "cuerpo",
+      "ancla_original": "Prueba de Shapiro-Wilk (1965)",
+      "texto_nuevo": "Prueba de Shapiro y Wilk (1965)",
+      "ocurrencias": 1,
+      "justificacion": "Coherencia con la corrección del párrafo 677 y con el asentamiento insertado.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 681
+    },
+    {
+      "indice_docx": 711,
+      "tipo": "cuerpo",
+      "ancla_original": "disminuye la probabilidad de desabastecimiento.",
+      "texto_nuevo": "disminuye la probabilidad de desabastecimiento, en concordancia con los factores percibidos que condicionan la introducción y adopción de los registros electrónicos de inmunización (Dolan et al., 2020).",
+      "ocurrencias": 1,
+      "justificacion": "Resuelve la referencia no citada 740. Dolan et al. (2020) estudia los factores percibidos de introducción y adopción de registros electrónicos de inmunización en Tanzania y Zambia; la cláusula es una paráfrasis fiel y no añade datos empíricos.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 711
+    },
+    {
+      "indice_docx": 713,
+      "tipo": "cuerpo",
+      "ancla_original": "(NTS N.° 196-MINSA/DGIESP-2022)",
+      "texto_nuevo": "(Ministerio de Salud del Perú, 2022)",
+      "ocurrencias": 1,
+      "justificacion": "La norma se cita en formato autor-año, conforme a su asentamiento 756; el número normativo ya se explicita en el párrafo 158.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 713
+    },
+    {
+      "indice_docx": 732,
+      "tipo": "lista_referencia",
+      "ancla_original": "Brooks, D. J., Kim, C. I., Mboussou, F., y Danovaro-Holliday, M. C. (2024). Developing national information systems to monitor COVID-19 vaccination: A global observational study. Vaccine, 42(5), 1120–1131. https://doi.org/10.1016/j.vaccine.2024.01.045",
+      "texto_nuevo": "Brooks, D. J., Kim, C. I., Mboussou, F. F., y Danovaro-Holliday, M. C. (2024). Developing national information systems to monitor COVID-19 vaccination: A global observational study. JMIR Public Health and Surveillance, 10, Artículo e62657. https://doi.org/10.2196/62657",
+      "ocurrencias": 1,
+      "justificacion": "El DOI 10.1016/j.vaccine.2024.01.045 resuelve a un artículo ajeno. Crossref confirma el registro 10.2196/62657 con estos autores, título, revista, volumen y artículo.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 732
+    },
+    {
+      "indice_docx": 734,
+      "tipo": "lista_referencia",
+      "ancla_original": "Chekol, A., Ketema, H., Endalew, B., y Asmare, G. (2023). Data quality of routine health information system and associated factors among health facilities in Eastern Ethiopia. Frontiers in Health Services, 3, Artículo 1059611. https://doi.org/10.3389/frhs.2023.1059611",
+      "texto_nuevo": "Chekol, A., Ketemaw, A., Endale, A., Aschale, A., Endalew, B., y Asemahagn, M. A. (2023). Data quality and associated factors of routine health information system among health centers of West Gojjam Zone, northwest Ethiopia, 2021. Frontiers in Health Services, 3, Artículo 1059611. https://doi.org/10.3389/frhs.2023.1059611",
+      "ocurrencias": 1,
+      "justificacion": "Crossref confirma la nómina completa de seis autores y el título correcto. La nota del párrafo 278 ya consignaba el título correcto; la entrada de la lista era la divergente.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 734
+    },
+    {
+      "indice_docx": 753,
+      "tipo": "lista_referencia",
+      "ancla_original": "Mamani-Pari, D., Peñaloza-Hualpa, A. F., Humpiri-Flores, M. E., Gutierrez-Quispe, E., y Otazu-Luque, J. E. (2026). Development and psychometric validation of a usability instrument based on ISO 25010 for electronic health record systems in Peruvian health care settings: Methodological study. JMIR Medical Informatics, 14(1), Artículo e81377. https://doi.org/10.2196/81377",
+      "texto_nuevo": "Mamani-Pari, D., Peñaloza-Hualpa, A. F., Humpiri-Flores, M. E., Gutierrez-Quispe, E., y Otazu-Luque, J. E. (2026). Development and psychometric validation of a usability instrument based on ISO 25010 for electronic health record systems in Peruvian health care settings: Methodological study. JMIR Human Factors, 13, Artículo e81377. https://doi.org/10.2196/81377",
+      "ocurrencias": 1,
+      "justificacion": "Crossref registra la revista JMIR Human Factors, volumen 13, artículo e81377. Ni la revista ni el volumen de la entrada eran correctos.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 753
+    },
+    {
+      "indice_docx": 756,
+      "tipo": "lista_referencia",
+      "ancla_original": "Ministerio de Salud del Perú. (2022). Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N.° 196-MINSA/DGIESP-2022, aprobada mediante Resolución Ministerial N.° 884-2022/MINSA). MINSA. https://www.gob.pe/institucion/minsa/normas-legales/3576882-884-2022-minsa",
+      "texto_nuevo": "Ministerio de Salud del Perú. (2022). Norma Técnica de Salud que establece el Esquema Nacional de Vacunación (NTS N.° 196-MINSA/DGIESP-2022, aprobada mediante Resolución Ministerial N.° 884-2022/MINSA). Ministerio de Salud del Perú.",
+      "ocurrencias": 1,
+      "justificacion": "La URL consignada redirige a una norma de la Región Piura de 2018, ajena a la NTS. Se retira la URL no fiable; queda pendiente incorporar la URL oficial MINSA cuando el tesista la aporte.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/diferencia_minima",
+      "resuelto_en": 756
+    },
+    {
+      "indice_docx": 758,
+      "tipo": "lista_referencia",
+      "ancla_original": "Ndlovu, K., Mauco, K. L., Keetile, M., Kadimo, K., Senyatso, R. Y., Ntebela, D., Valela, B., y Murambi, C. (2021). Acceptance of the District Health Information System Version 2 platform for malaria case-based surveillance by health care workers in Botswana: Web-based survey. JMIR Formative Research, 5(4), Artículo e32722. https://doi.org/10.2196/32722",
+      "texto_nuevo": "Ndlovu, K., Mauco, K. L., Keetile, M., Kadimo, K., Senyatso, R. Y., Ntebela, D., Valela, B., y Murambi, C. (2022). Acceptance of the District Health Information System Version 2 platform for malaria case-based surveillance by health care workers in Botswana: Web-based survey. JMIR Formative Research, 6(3), Artículo e32722. https://doi.org/10.2196/32722",
+      "ocurrencias": 1,
+      "justificacion": "Crossref registra el año 2022, volumen 6, número 3, artículo e32722.",
+      "_origen": "referencias_v09_ordenes.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 758
+    }
+  ],
+  "omitidas": [],
+  "fallidas": []
+}

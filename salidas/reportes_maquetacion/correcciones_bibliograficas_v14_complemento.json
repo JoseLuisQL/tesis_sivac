@@ -1,0 +1,101 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "documento_base": "salidas/documentos/informe_final_v15.docx",
+    "documento_base_sha256": "7c79eb03e2875f5f007c982a946fa84feaa48e4aef1009f717c7163cb9aa2ff1",
+    "documento_base_editable": false,
+    "orden_de_aplicacion": "Segundo lote. Se aplica después de correcciones_bibliograficas_v14_sin_p761.json, en la misma invocación y separado por coma.",
+    "fecha_emision": "2026-10-21",
+    "agente": "director-general",
+    "squad": "Squad E - Redacción, Estilo y Maquetación Editorial",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Cerrar los dos defectos que el ensayo en seco del expediente principal puso de manifiesto: cuatro etiquetas de encabezado sin espacio de separación y la cita de Quispe Tello que no admitió su ancla por haber cambiado ya de forma.",
+    "estado_de_partida": {
+      "ensayo_principal": "La aplicación del lote de 77 órdenes sobre la v15 devolvió 75 aplicadas y 2 fallidas.",
+      "fallida_retirada": "P761 (lista de referencias, MINSA): el ancla declarada contenía la URL 3576882, que ya no existe en el documento. La entrada no porta enlace alguno, de modo que la corrección de enlace es innecesaria y se retira del universo en el lote depurado.",
+      "fallida_corregida": "P630 (validez de instrumentos): el ancla declarada era «de Fany (2024) adoptado», pero el documento ya dice «de Quispe Tello (2024) adoptado». La sustitución del nombre de pila por el apellido se había ejecutado con anterioridad; solo resta incorporar el localizador de página.",
+      "defecto_de_la_familia_C": "Las órdenes de segunda pasada sobre las etiquetas compuestas sustituyeron el segmento que contenía el guion bajo sin restituir el espacio, de modo que cuatro encabezados quedaron unidos: «APtotal», «UPtotal», «TAMtotal» y «Nivelde satisfacción», en ambas matrices.",
+      "causa_del_primer_intento": "El primer complemento declaró como ancla la celda concatenada («APtotal»). El aplicador opera nodo de texto a nodo de texto, y la celda está partida en dos nodos —«AP» y «total»—, de modo que el ancla no existía en ninguno de ellos y las ocho órdenes fallaron con cero sustituciones. Las anclas quedan ahora declaradas sobre el nodo que contiene el hueco, con el espacio restituido al inicio del mismo."
+    },
+    "alcance": "Nueve órdenes: ocho de saneamiento de encabezados en las tablas índice 52 y 53, y una de localizador en P630. No se emite ninguna orden para P761.",
+    "verificacion_posterior": [
+      "Los dieciocho encabezados de las tablas índice 52 y 53 deben leerse sin identificadores de base de datos y sin palabras unidas: «AP total», «UP total», «TAM total» y «Nivel de satisfacción».",
+      "P630 debe declarar «Quispe Tello (2024, p. 62)».",
+      "El recuento de ocurrencias de «Quispe Tello» debe ser dos: una cita activa y una entrada de lista."
+    ]
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 15",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador AP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 16",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador UP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 17",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre la sigla TAM y el calificador de puntaje global."
+    },
+    {
+      "indice_docx": 52,
+      "ubicacion": "TABLA 52, fila 1, columna 18",
+      "ancla_original": "de satisfacción",
+      "texto_nuevo": " de satisfacción",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el sustantivo Nivel y su complemento."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 15",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador AP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 16",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el indicador UP y el calificador de puntaje total."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 17",
+      "ancla_original": "total",
+      "texto_nuevo": " total",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre la sigla TAM y el calificador de puntaje global."
+    },
+    {
+      "indice_docx": 53,
+      "ubicacion": "TABLA 53, fila 1, columna 18",
+      "ancla_original": "de satisfacción",
+      "texto_nuevo": " de satisfacción",
+      "categoria": "encabezado_matriz",
+      "justificacion": "Restituir el espacio entre el sustantivo Nivel y su complemento."
+    },
+    {
+      "indice_docx": 630,
+      "ubicacion": "PÁRRAFO 630 (validez de instrumentos)",
+      "ancla_original": "de Quispe Tello (2024) adoptado",
+      "texto_nuevo": "de Quispe Tello (2024, p. 62) adoptado",
+      "categoria": "cita_activa",
+      "justificacion": "Incorporar el localizador de página que respalda el formato institucional del certificado de validación, conforme al dictamen del verificador. La cita ya existía; esta orden solo la precisa."
+    }
+  ]
+}

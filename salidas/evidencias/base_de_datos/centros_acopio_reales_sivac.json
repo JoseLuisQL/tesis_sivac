@@ -1,0 +1,154 @@
+[
+  {
+    "id": "b8a0118e-2cd6-4834-a30e-317182236aab",
+    "codigo": "S/C",
+    "nombre": "Hospital Andahuaylas",
+    "responsable": "Director Hospital Andahuaylas",
+    "microred": "ALMACÉN CENTRAL / SIN MICRORED",
+    "red": "SEDE CENTRAL DISA"
+  },
+  {
+    "id": "39d47057-23b2-4e8e-b23c-340d9d84134c",
+    "codigo": "11214",
+    "nombre": "Hospital ESSALUD Andahuaylas",
+    "responsable": "Director Hospital ESSALUD",
+    "microred": "ALMACÉN CENTRAL / SIN MICRORED",
+    "red": "SEDE CENTRAL DISA"
+  },
+  {
+    "id": "a1b70eb9-b121-4186-aee5-1cfb1cb03dd1",
+    "codigo": "4132",
+    "nombre": "Andarapa",
+    "responsable": "Jefe Centro Andarapa",
+    "microred": "ANDARAPA",
+    "red": "SONDOR"
+  },
+  {
+    "id": "1eaaacd1-f992-443c-8e7b-3629923eaac3",
+    "codigo": "4158",
+    "nombre": "Huancaray",
+    "responsable": "Jefe Centro Huancaray",
+    "microred": "HUANCARAY",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "21f9b79c-e5e8-460b-9af0-14b8d47d5243",
+    "codigo": "4160",
+    "nombre": "San Antonio de Cachi",
+    "responsable": "Jefe Centro San Antonio de Cachi",
+    "microred": "HUANCARAY",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "4329d283-515e-48e2-8c5d-286ba31e4c0d",
+    "codigo": "4162",
+    "nombre": "Chaccrampa",
+    "responsable": "Jefe Centro Chaccrampa",
+    "microred": "HUANCARAY",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "0e17b67e-74a3-4da9-abd1-987d21c7478e",
+    "codigo": "4163",
+    "nombre": "Turpo",
+    "responsable": "Jefe Centro Turpo",
+    "microred": "TURPO",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "a7cceebd-4eba-44d2-be44-1f5457516436",
+    "codigo": "4167",
+    "nombre": "Pampachiri",
+    "responsable": "Jefe Centro Pampachiri",
+    "microred": "PAMPACHIRI",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "15e21bd9-fd63-4d2c-93a8-4d35c45324d7",
+    "codigo": "4167-SJ",
+    "nombre": "San Jeronimo",
+    "responsable": "Jefe Centro San Jerónimo",
+    "microred": "SAN JERONIMO",
+    "red": "SONDOR"
+  },
+  {
+    "id": "74e3f134-9ed9-45bf-8c26-bfe5aa21250a",
+    "codigo": "4171",
+    "nombre": "Umamarca",
+    "responsable": "Jefe Centro Umamarca",
+    "microred": "PAMPACHIRI",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "4858259f-b674-483e-8a9f-7f69862ace65",
+    "codigo": "4172",
+    "nombre": "Huancabamba",
+    "responsable": "Jefe Centro Huancabamba",
+    "microred": "HUANCABAMBA",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "2952d8af-fa7f-4d72-86c4-80c6816db99a",
+    "codigo": "4183",
+    "nombre": "Kishuara",
+    "responsable": "Jefe Centro Kishuara",
+    "microred": "KISHUARA",
+    "red": "SONDOR"
+  },
+  {
+    "id": "aed7f352-1e70-4aaa-ac53-4cc9f32d6d10",
+    "codigo": "4185",
+    "nombre": "Matapuquio",
+    "responsable": "Jefe Centro Matapuquio",
+    "microred": "KISHUARA",
+    "red": "SONDOR"
+  },
+  {
+    "id": "0e5938d8-c804-4edc-8dca-41ffbc4ad993",
+    "codigo": "4188",
+    "nombre": "Kaquiabamba",
+    "responsable": "Jefe Centro Kaquiabamba",
+    "microred": "PACUCHA",
+    "red": "SONDOR"
+  },
+  {
+    "id": "79b4e886-4b99-43d1-b8f4-1300864109f3",
+    "codigo": "4189",
+    "nombre": "Pacucha",
+    "responsable": "Jefe Centro Pacucha",
+    "microred": "PACUCHA",
+    "red": "SONDOR"
+  },
+  {
+    "id": "54555513-6735-49e1-9871-84cc3b0a411f",
+    "codigo": "4195",
+    "nombre": "Talavera",
+    "responsable": "Jefe Centro Talavera",
+    "microred": "TALAVERA",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "ea6b7953-1a58-48ea-8243-d366ad7b2702",
+    "codigo": "4202",
+    "nombre": "Chicmo",
+    "responsable": "Jefe Centro Chicmo",
+    "microred": "CHICMO",
+    "red": "JOSE MARIA ARGUEDAS"
+  },
+  {
+    "id": "49251292-54c4-47fe-a6a2-9f2dea7fd330",
+    "codigo": "6804",
+    "nombre": "Centro de Salud Andahuaylas",
+    "responsable": "Jefe Centro de Salud",
+    "microred": "ALMACÉN CENTRAL / SIN MICRORED",
+    "red": "SEDE CENTRAL DISA"
+  },
+  {
+    "id": "12d99184-2e89-4f50-acc6-666aaa017b74",
+    "codigo": "CHANKA-001",
+    "nombre": "ALMACÉN (CHANKA)",
+    "responsable": "Administrador Central",
+    "microred": "ALMACÉN CENTRAL / SIN MICRORED",
+    "red": "SEDE CENTRAL DISA"
+  }
+]

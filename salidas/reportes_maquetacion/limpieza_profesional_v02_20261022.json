@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "squad": "Squad E",
+    "version": "v02-limpieza",
+    "estado": "publicado en v02 vigente",
+    "destino": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02",
+    "criterios": [
+      "criterios_jurado_limpieza_instrumentos_20261022.json",
+      "criterios_metodologicos_limpieza_instrumentos_20261022.json"
+    ],
+    "prevalencias_direccion": [
+      "Fase administrativa visible para emparejar pre y post; sin explicación de hipótesis.",
+      "H1 de 12 pt, no 16 pt; sin rótulo FORMULARIO en el cuerpo.",
+      "Sin campo biológico nuevo ni límite ciego 7+5; páginas medidas por contenido.",
+      "Sin rótulos de validado, V, IVC ni sellos; QG-5 abierta."
+    ]
+  },
+  "resumen": {
+    "paginas_instrumentos": 6,
+    "paginas_apoyos": 6,
+    "paginas_por_documento": {
+      "01_FICHA_TIEMPOS": 1,
+      "02_FICHA_AUDITORIA_DOCUMENTAL": 3,
+      "03_CUESTIONARIO_SATISFACCION_A": 1,
+      "04_MODULO_COMPLEMENTARIO_B_POST": 1,
+      "00_INSTRUMENTOS_RECOLECCION_SIVAC": 6,
+      "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES": 6
+    },
+    "reactivos_16_iguales": true,
+    "A_una_pagina": true,
+    "B_una_pagina": true,
+    "F01_dos_tablas": true,
+    "F02_bloques_en_hoja": "D-01 a D-04; D-05 a D-07 en continuación"
+  },
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\01_FICHA_TIEMPOS.pdf",
+      "paginas": 1,
+      "sha256_docx": "cf021eedc1926dd40bbe18c8226d90082bba38822d2522342f6c8133082514af",
+      "sha256_pdf": "ad4a22dd938103ba10df397b9e0713e1e03d675d3dbe4cd2fd2ea03c5519227b",
+      "desborde_inferior_pt": 0.0,
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\02_FICHA_AUDITORIA_DOCUMENTAL.pdf",
+      "paginas": 3,
+      "sha256_docx": "ad6ebbe3bc6791b5dbd34280131df7d9b9d539c51a5441fae369ca9e53eb84eb",
+      "sha256_pdf": "49d5794efa1d5ed2344f9f1f51435513078744d6e9b50ec866a646613a9ea363",
+      "desborde_inferior_pt": 0.0,
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\03_CUESTIONARIO_SATISFACCION_A.pdf",
+      "paginas": 1,
+      "sha256_docx": "41dfad516e7a9cc67dadac6c7dad1512b79fb84a1c2e1d255111fa7563ed97a1",
+      "sha256_pdf": "0df6c98da108068886b3f5c8e7df57f9f7b61d264dd9ba1b49ae0c9cd69b8cfd",
+      "desborde_inferior_pt": 0.0,
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\04_MODULO_COMPLEMENTARIO_B_POST.pdf",
+      "paginas": 1,
+      "sha256_docx": "bb97434068ef6ee3a1a41c8f010cee8a779f9979dc67f287bc53175d95dba0ff",
+      "sha256_pdf": "3388d1fee889bd94ba66f3016c3efa9a2fb2c451a67ed961fd5a5a142195385b",
+      "desborde_inferior_pt": 0.0,
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.pdf",
+      "paginas": 6,
+      "sha256_docx": "d208699b2c539fdb6d13a1a9a838d9974f16a73d80d6f4be9f9a00093a11827b",
+      "sha256_pdf": "3cb57421fb718ae84042c0540f1b9993de457a1b308d52627ea2aac3b4794fa8",
+      "desborde_inferior_pt": 0.0,
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.docx",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\APOYOS_INVESTIGADOR\\05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES.pdf",
+      "paginas": 6,
+      "sha256_docx": "03eb4ed09237ba868b75451c2eea1625c170a889562e690cee6c829c30afd572",
+      "sha256_pdf": "267656b14dc75ad085170aaf30bd19ae4950d34657415af12d84180e58fb94ed",
+      "desborde_inferior_pt": 0.0,
+      "ancho_max_dxa": 8788,
+      "dos_logos": true
+    }
+  ],
+  "controles": {
+    "paginas_por_documento": {
+      "01_FICHA_TIEMPOS": 1,
+      "02_FICHA_AUDITORIA_DOCUMENTAL": 3,
+      "03_CUESTIONARIO_SATISFACCION_A": 1,
+      "04_MODULO_COMPLEMENTARIO_B_POST": 1,
+      "00_INSTRUMENTOS_RECOLECCION_SIVAC": 6,
+      "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES": 6
+    },
+    "total_instrumentos": 6,
+    "A_una_pagina": true,
+    "B_una_pagina": true,
+    "reactivos_16_iguales": true,
+    "dos_logos_todas_las_paginas": true,
+    "sin_formulario_en_cabecera": true,
+    "paginacion_en_todas_las_paginas": true,
+    "secciones_desvinculadas": true,
+    "imagenes_solo_inline": true,
+    "sin_desborde_inferior": true,
+    "ancho_maximo_dxa": 8788,
+    "fuente_minima_pt": 8.5,
+    "sin_tokens_prohibidos": true,
+    "B_titulo_modulo_sin_instrumento_4": true,
+    "B_pie_instrumento_3_modulo_b": true,
+    "conjunto_sin_instrumento_4": true,
+    "todos_los_entregables_sin_instrumento_4": true,
+    "F01_remision_protocolo_y_registro": true,
+    "F02_remision_E13": true,
+    "AB_neutralidad_de_fuente": true,
+    "apoyos_inicio_vale_literal": true,
+    "apoyos_causas_acciones_incidencia": true,
+    "apoyos_sin_tabla_conversion": true,
+    "apoyos_ejemplo_conversion_coma": true,
+    "apoyos_horas_vacias_con_guion_bajo": true,
+    "F01_dos_tablas_tiempo": true,
+    "F02_tres_paginas_CPE_propia": true
+  },
+  "protocolo_validacion": [
+    {
+      "documento": "01_FICHA_TIEMPOS",
+      "frase": "Criterios de inicio, fin, pausa y validez: sección Protocolo del observador de los apoyos. Incidencias: H-01 y siguientes.",
+      "constatacion": "remisión final separa protocolo de registro; no atribuye el protocolo a H-01 a H-04"
+    },
+    {
+      "documento": "02_FICHA_AUDITORIA_DOCUMENTAL",
+      "frase": "Para más entregas, continúe desde E-13 en Continuación. Entregas de los apoyos, manteniendo el correlativo real.",
+      "constatacion": "remisión bajo E-12 en la tercera página"
+    },
+    {
+      "documento": "03_CUESTIONARIO_SATISFACCION_A / 04_MODULO_COMPLEMENTARIO_B_POST",
+      "frase": "No hay respuestas correctas ni incorrectas",
+      "constatacion": "neutralidad de fuente en A y B, una sola página"
+    },
+    {
+      "documento": "04_MODULO_COMPLEMENTARIO_B_POST",
+      "frase": "Módulo B. Cuestionario complementario del Instrumento 3",
+      "constatacion": "presente en cuerpo y pie; ausencia literal de 'Instrumento 4'"
+    },
+    {
+      "documento": "00_INSTRUMENTOS_RECOLECCION_SIVAC",
+      "frase": "Módulo B. Cuestionario complementario del Instrumento 3",
+      "constatacion": "presente en el conjunto; ausencia literal de 'Instrumento 4'"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "El tiempo de emisión inicia al recibir o abrir la solicitud y termina cuando el vale queda generado, firmado o impreso con numeración oficial.",
+      "constatacion": "frase literal presente en el protocolo"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "Causa: interrupción externa, desviación del protocolo o ayuda sustantiva del investigador. Acción: pausa, anulación o repetición.",
+      "constatacion": "causas y acciones presentes en la nota de H-01 a H-04"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "Ejemplo de conversión, no medición: 3 minutos y 15 segundos equivalen a 3,25 minutos.",
+      "constatacion": "ejemplo con coma decimal; sin tabla 'Conversión rápida' y sin '3 + 15/60'"
+    },
+    {
+      "documento": "05_APOYOS_INVESTIGADOR_INSTRUCCIONES_CIERRE_CONTINUACIONES",
+      "frase": "__:__",
+      "constatacion": "horas vacías de H-01 a H-12 con guion bajo"
+    }
+  ],
+  "mapa_campos": [
+    {
+      "origen": "F01: seis bloques verticales de tres filas",
+      "destino": "Dos tablas de tres tareas: Tarea, Inicio, Fin, Tiempo, Pausa, Válida"
+    },
+    {
+      "origen": "F01: causa de pausa y observaciones por tarea",
+      "destino": "Tabla H-01 a H-04 del apoyo y continuación H-05"
+    },
+    {
+      "origen": "F01: consolidado de media, mediana y tareas válidas",
+      "destino": "Hoja de cierre del investigador"
+    },
+    {
+      "origen": "F01: tabla de incidencias en la hoja de campo",
+      "destino": "Apoyo, continuación H-05 a H-12"
+    },
+    {
+      "origen": "F01: seis instrucciones y conversión decimal",
+      "destino": "Tres instrucciones en la hoja; protocolo completo y conversión en apoyo"
+    },
+    {
+      "origen": "F02: tabla completa C1-C8 y reglas duplicadas",
+      "destino": "Apoyo, criterios C1-C8 una sola vez y regla de concordancia"
+    },
+    {
+      "origen": "F02: bloques D-01 a D-05 y rejilla de ocho criterios",
+      "destino": "Bloques D-01 a D-04 en la hoja; D-05 a D-07 en continuación"
+    },
+    {
+      "origen": "F02: conteos crudos en la hoja",
+      "destino": "Hoja de cierre del investigador, tabla de conteo crudo"
+    },
+    {
+      "origen": "A/B: Investigador (admin.) y observaciones opcionales",
+      "destino": "Apoyo, Control de aplicación y observaciones"
+    },
+    {
+      "origen": "Pie con segundo campo TRAB escribible",
+      "destino": "Pie de identificación breve; TRAB solo en la cabecera administrativa"
+    }
+  ],
+  "cambios_limpieza": [
+    {
+      "id": "L01",
+      "detalle": "H1 única de 12 pt; se retiró el rótulo FORMULARIO de la cabecera y el subtítulo cursivo."
+    },
+    {
+      "id": "L02",
+      "detalle": "Cabecera solo con institución, logos y paginación; pie con ID breve sin campos escribibles."
+    },
+    {
+      "id": "L03",
+      "detalle": "Ritmo 12/6 pt en H1, 10 pt antes de sección y separación entre tablas."
+    },
+    {
+      "id": "L04",
+      "detalle": "F01 con dos tablas de tres tareas y seis columnas; pausa y validez con casillas."
+    },
+    {
+      "id": "L05",
+      "detalle": "F02 en tres páginas: bloques D-01 a D-04, CPE E-01 a E-12 en página propia y líneas de código y fase en las continuaciones; D-05 a D-07 en apoyo."
+    },
+    {
+      "id": "L06",
+      "detalle": "A/B con una H1, presentación confidencial, instrucción única de marcado, anclajes una vez y columnas Likert de 9 mm; reactivos literales."
+    },
+    {
+      "id": "L07",
+      "detalle": "Apoyos con protocolo, criterios, control administrativo, cierre y continuaciones."
+    }
+  ],
+  "preservacion": {
+    "respaldo_manifest": "d2feb42aaa89f91b28e3c0aa78c616db1b23ab71af18ee69366633c44ee59aed",
+    "builder": "be09d0f2f5f52ec6cc8f344bccf7541e9c650cd231ac7f3f61ecd62a947e356a",
+    "motor": "fc4ecff42838951c13305f36bffa5e12753da16a28477c4c3a13fd8fbaea8782",
+    "logo_unajma": "52ac000644b8dbd6ee631bc0537e2917a8c2353e1e7e11abb3c6a9c944f1de98",
+    "logo_epis": "7d1888ce844eca6c4812a58cf841b979be683f289bbcc692318057a754dd50d2",
+    "informe_final_v19": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb"
+  },
+  "nota_alcance": "Edición de composición y rotulados; no acredita validación de contenido ni cierra QG-5. Los 16 reactivos y las unidades se conservan literales."
+}

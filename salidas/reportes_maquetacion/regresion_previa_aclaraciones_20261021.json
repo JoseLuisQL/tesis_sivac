@@ -1,0 +1,46 @@
+{
+  "fecha": "2026-10-21",
+  "alcance": "Comprobación de las pruebas existentes durante la preparación de la corrección editorial; no sustituye la inspección del DOCX y PDF resultantes.",
+  "control_posterior_v18": {
+    "sintaxis_motor_docx": "valida",
+    "sintaxis_generador_excel": "valida",
+    "importacion_motor": "correcta_desde_ruta_sivac",
+    "seguridad_pytest": "2 passed in 0.07s",
+    "git_diff_check": "sin_errores_de_espacios",
+    "limite": "No se declara aprobada la suite del generador legado cuya recolección había fallado."
+  },
+  "ejecuciones": [
+    {
+      "pruebas": "scripts/tests",
+      "invocacion": ".venv/Scripts/python.exe -I -m pytest scripts/tests -q",
+      "codigo_salida": 2,
+      "resultado": "Fallo durante recolección; las pruebas no llegaron a ejecutarse.",
+      "errores": [
+        "ModuleNotFoundError: No module named 'scripts.comun'",
+        "AttributeError: module 'docx_quirurgico' has no attribute 'ANCHO_UTIL_PORTRAIT_DXA'"
+      ],
+      "interpretacion": "La importación del proyecto requiere una raíz explícita en modo aislado. El generador de expedientes también referencia una constante que no está expuesta por el motor cargado; no se declara aprobada la suite completa.",
+      "registro_local": "bspngb072.output"
+    },
+    {
+      "pruebas": "scripts/tests/test_comun_y_seguridad.py",
+      "invocacion": "Python aislado, sys.path con raíz del proyecto explícita y pytest.main sobre el módulo de seguridad",
+      "codigo_salida": 0,
+      "resultado_literal": "2 passed in 5.33s",
+      "alcance_verificado": [
+        "Bloqueo de escritura sobre rutas protegidas",
+        "Pipeline empírico bloqueado sin MANIFEST.json"
+      ],
+      "limite": "Este resultado no valida la maquetación ni el generador legado de expedientes."
+    },
+    {
+      "pruebas": "scripts/tests/test_expediente_integral_fany.py",
+      "invocacion": "Python aislado, raíz del proyecto explícita y pytest.main sobre el módulo del expediente",
+      "codigo_salida": 2,
+      "resultado_literal": "1 error in 0.46s",
+      "error_persistente": "AttributeError: module 'docx_quirurgico' has no attribute 'ANCHO_UTIL_PORTRAIT_DXA'",
+      "ubicacion": "scripts/compiladores/generar_expediente_integral_fany_x3.py:86",
+      "interpretacion": "El fallo del generador persiste tras resolver el aislamiento de importaciones; es distinto del primer error de entorno. Sus pruebas quedan sin ejecutar, no aprobadas."
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+[
+ {
+  "src": 0,
+  "dst": 54,
+  "nf_src": 17,
+  "nc_src": 4,
+  "nf_dst": 17,
+  "nc_dst": 4,
+  "cab": [
+   "ID",
+   "Nombre del requerimiento",
+   "Descripción del requerimiento"
+  ]
+ },
+ {
+  "src": 1,
+  "dst": 55,
+  "nf_src": 9,
+  "nc_src": 3,
+  "nf_dst": 9,
+  "nc_dst": 3,
+  "cab": [
+   "ID",
+   "Requerimiento",
+   "Descripción del requerimiento"
+  ]
+ },
+ {
+  "src": 2,
+  "dst": 56,
+  "nf_src": 17,
+  "nc_src": 4,
+  "nf_dst": 17,
+  "nc_dst": 4,
+  "cab": [
+   "Funcionalidad / Módulo del Sistema",
+   "Resp. Acopio / Operador",
+   "Coordinador PAI"
+  ]
+ },
+ {
+  "src": 3,
+  "dst": 57,
+  "nf_src": 13,
+  "nc_src": 5,
+  "nf_dst": 13,
+  "nc_dst": 5,
+  "cab": [
+   "ID",
+   "Historia de usuario",
+   "Rol"
+  ]
+ },
+ {
+  "src": 4,
+  "dst": 25,
+  "nf_src": 5,
+  "nc_src": 4,
+  "nf_dst": 5,
+  "nc_dst": 4,
+  "cab": [
+   "HU-01",
+   "Iniciar sesión en el sistema con control de ámbito RBAC",
+   "Iniciar sesión en el sistema con control de ámbito RBAC"
+  ]
+ },
+ {
+  "src": 5,
+  "dst": 26,
+  "nf_src": 5,
+  "nc_src": 4,
+  "nf_dst": 5,
+  "nc_dst": 4,
+  "cab": [
+   "HU-04",
+   "Registrar lotes biológicos y controlar vencimientos bajo criterio FEFO",
+   "Registrar lotes biológicos y controlar vencimientos bajo criterio FEFO"
+  ]
+ },
+ {
+  "src": 6,
+  "dst": 27,
+  "nf_src": 5,
+  "nc_src": 4,
+  "nf_dst": 5,
+  "nc_dst": 4,
+  "cab": [
+   "HU-06",
+   "Registrar movimientos mensuales y sincronizar saldos automáticamente",
+   "Registrar movimientos mensuales y sincronizar saldos automáticamente"
+  ]
+ },
+ {
+  "src": 7,
+  "dst": 28,
+  "nf_src": 5,
+  "nc_src": 4,
+  "nf_dst": 5,
+  "nc_dst": 4,
+  "cab": [
+   "HU-09",
+   "Importar formato ICI-DEMID y calcular Meses de Stock Disponible (MSD)",
+   "Importar formato ICI-DEMID y calcular Meses de Stock Disponible (MSD)"
+  ]
+ },
+ {
+  "src": 8,
+  "dst": 29,
+  "nf_src": 5,
+  "nc_src": 4,
+  "nf_dst": 5,
+  "nc_dst": 4,
+  "cab": [
+   "HU-12",
+   "Gestionar usuarios, matriz de permisos RBAC y reportes corporativos",
+   "Gestionar usuarios, matriz de permisos RBAC y reportes corporativos"
+  ]
+ },
+ {
+  "src": 9,
+  "dst": null,
+  "nf_src": 6,
+  "nc_src": 3,
+  "cab": [
+   "Iteración",
+   "Historias asignadas",
+   "Entregables y tareas principales de ingeniería"
+  ]
+ },
+ {
+  "src": 10,
+  "dst": 32,
+  "nf_src": 12,
+  "nc_src": 2,
+  "nf_dst": 12,
+  "nc_dst": 2,
+  "cab": [
+   "Tipo enumerado (Prisma / PostgreSQL)",
+   "Valores permitidos en el esquema"
+  ]
+ },
+ {
+  "src": 11,
+  "dst": 58,
+  "nf_src": 12,
+  "nc_src": 4,
+  "nf_dst": 12,
+  "nc_dst": 4,
+  "cab": [
+   "Atributo",
+   "Tipo de dato",
+   "PK/FK"
+  ]
+ },
+ {
+  "src": 12,
+  "dst": 59,
+  "nf_src": 12,
+  "nc_src": 4,
+  "nf_dst": 12,
+  "nc_dst": 4,
+  "cab": [
+   "Atributo",
+   "Tipo de dato",
+   "PK/FK"
+  ]
+ },
+ {
+  "src": 13,
+  "dst": 60,
+  "nf_src": 10,
+  "nc_src": 4,
+  "nf_dst": 10,
+  "nc_dst": 4,
+  "cab": [
+   "Atributo",
+   "Tipo de dato",
+   "PK/FK"
+  ]
+ },
+ {
+  "src": 14,
+  "dst": 48,
+  "nf_src": 12,
+  "nc_src": 4,
+  "nf_dst": 12,
+  "nc_dst": 4,
+  "cab": [
+   "Tabla origen",
+   "Columna FK",
+   "Tabla destino (PK)"
+  ]
+ },
+ {
+  "src": 15,
+  "dst": null,
+  "nf_src": 10,
+  "nc_src": 3,
+  "cab": [
+   "Capa / Ámbito",
+   "Tecnología (versión)",
+   "Propósito en el sistema SIVAC"
+  ]
+ },
+ {
+  "src": 16,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 17,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 18,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 19,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 20,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 21,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 22,
+  "dst": null,
+  "nf_src": 1,
+  "nc_src": 1,
+  "cab": [
+   ""
+  ]
+ },
+ {
+  "src": 23,
+  "dst": 70,
+  "nf_src": 13,
+  "nc_src": 3,
+  "nf_dst": 13,
+  "nc_dst": 3,
+  "cab": [
+   "Conjunto de pruebas (Suite Jest)",
+   "Casos",
+   "Resultado"
+  ]
+ },
+ {
+  "src": 24,
+  "dst": 51,
+  "nf_src": 9,
+  "nc_src": 3,
+  "nf_dst": 9,
+  "nc_dst": 3,
+  "cab": [
+   "Escenario de prueba sobre la API REST",
+   "Resultado esperado",
+   "Resultado obtenido"
+  ]
+ },
+ {
+  "src": 25,
+  "dst": null,
+  "nf_src": 8,
+  "nc_src": 4,
+  "cab": [
+   "HU",
+   "Escenario de aceptación validado",
+   "Resultado esperado y verificado"
+  ]
+ }
+]

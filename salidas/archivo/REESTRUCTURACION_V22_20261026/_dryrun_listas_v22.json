@@ -1,0 +1,640 @@
+{
+  "comando": "parrafos.normalizar_listas",
+  "solo_verificar": true,
+  "sha256_origen": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9",
+  "aplicadas": [
+    {
+      "estado": "aplicable",
+      "sangria_dxa": 720,
+      "colgante_dxa": 360,
+      "items": 39,
+      "rotulos": 12,
+      "prosa_limpiada": 14,
+      "ya_normalizados": 0,
+      "omitidos": 0,
+      "fallidos": [],
+      "detalle": [
+        {
+          "parrafo": 12,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 13,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 14,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 15,
+          "clase": "item",
+          "marcador": "4.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 16,
+          "clase": "item",
+          "marcador": "5.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 168,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 169,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 170,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 186,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 187,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 188,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 194,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 195,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 196,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 563,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 564,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 565,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 566,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 611,
+          "clase": "item",
+          "marcador": "a)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 612,
+          "clase": "item",
+          "marcador": "b)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 613,
+          "clase": "item",
+          "marcador": "c)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 679,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 680,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 682,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 683,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 684,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 685,
+          "clase": "item",
+          "marcador": "4.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 686,
+          "clase": "item",
+          "marcador": "5.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 687,
+          "clase": "item",
+          "marcador": "6.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 688,
+          "clase": "item",
+          "marcador": "7.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 695,
+          "clase": "rotulo",
+          "marcador": "A.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 696,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 697,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 698,
+          "clase": "rotulo",
+          "marcador": "B.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 699,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 700,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 701,
+          "clase": "rotulo",
+          "marcador": "C.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 702,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 706,
+          "clase": "rotulo",
+          "marcador": "A.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 707,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 708,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 709,
+          "clase": "rotulo",
+          "marcador": "B.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 710,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 711,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 712,
+          "clase": "rotulo",
+          "marcador": "C.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 713,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 717,
+          "clase": "rotulo",
+          "marcador": "A.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 718,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 719,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 720,
+          "clase": "rotulo",
+          "marcador": "B.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 721,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 722,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 723,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 724,
+          "clase": "rotulo",
+          "marcador": "C.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 725,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 729,
+          "clase": "rotulo",
+          "marcador": "A.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 730,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 731,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 732,
+          "clase": "rotulo",
+          "marcador": "B.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 733,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 734,
+          "clase": "rotulo",
+          "marcador": "C.",
+          "jc": "left",
+          "ind": {
+            "left": 0,
+            "firstLine": 0
+          }
+        },
+        {
+          "parrafo": 735,
+          "clase": "prosa",
+          "accion": "espacios_iniciales"
+        },
+        {
+          "parrafo": 829,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 830,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 831,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        }
+      ]
+    }
+  ],
+  "fallidas": []
+}

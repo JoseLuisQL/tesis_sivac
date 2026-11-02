@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "agente": "maquetador-docx",
+    "fase": "F8",
+    "fecha": "2026-10-22",
+    "etapa": "candidato_formato_v20",
+    "base": "informe_final_v19.docx"
+  },
+  "hashes": {
+    "v19_docx": "1bccc605bdf8a494d1c1eb51a73998fa65e4af5d178d5bd1a531f0d9169db7bb",
+    "v19_pdf": "a9c4580d45b096948399d4c1d9a3763a3ae467c9473483088accc4428f6ae268",
+    "candidato_docx": "cb701ebe4f3fdcb856a9fedefe250d5ac84360e13bc4cbad61296fdcf1b7c687",
+    "candidato_pdf": "ca12231cc012e328db09c043012ad133cbeab0cbe8a3d72ddc9e230ecfde1de0",
+    "plan": "88c32450bdbf6cd6f3c15c4d84a2aea8de60b349a68bd2e719c534256a368a9b",
+    "logo_derivado": "08d2e5414fba54ee7051c0a16c0e3ab33f42f87ba616c96e59e05b8bd7e7bba3"
+  },
+  "conservacion": {
+    "parrafos": 827,
+    "diferencias_texto_parrafos": 0,
+    "tablas": 59,
+    "tablas_texto_identicas": 59,
+    "omml": 12,
+    "hipervinculos": 252,
+    "campos_toc": 9,
+    "pageref": 214,
+    "seq": 103,
+    "cantSplit": 59,
+    "tblHeader": 59,
+    "tablas_flotantes": 0,
+    "ancho_portrait_max_dxa": 8765,
+    "ancho_landscape_max_dxa": 13720,
+    "imagenes_pdf": 49,
+    "dpi_min": 136.5,
+    "dpi_mediana": 413.8,
+    "dpi_max": 875.8
+  },
+  "paginacion": {
+    "paginas_pdf": 158,
+    "preliminares": {
+      "formato": "lowerRoman",
+      "start": 2,
+      "folio": "pie centrado",
+      "muestra_pagina_7": [
+        [
+          "v",
+          302.1,
+          783.1
+        ]
+      ]
+    },
+    "cuerpo": {
+      "formato": "decimal",
+      "start": 1,
+      "folio": "superior derecha",
+      "muestra_pagina_16": [
+        [
+          "1",
+          519.1,
+          37.5
+        ]
+      ]
+    },
+    "pie_cuerpo_vacio": true
+  },
+  "cambios_aplicados": [
+    {
+      "id": "H01",
+      "cambio": "Estilo Encabezado a Times New Roman 11 pt",
+      "antes": "Cambria 11 (tema minorHAnsi)",
+      "despues": "TimesNewRomanPSMT 11",
+      "evidencia": "PDF p16 folio x=519 top=38"
+    },
+    {
+      "id": "H02",
+      "cambio": "Estilo Tabladeilustraciones a Times New Roman 11 pt",
+      "antes": "numeros y lideres Cambria",
+      "despues": "TimesNewRomanPSMT 11",
+      "evidencia": "PDF p9 numeros 24-27 TNR"
+    },
+    {
+      "id": "H04",
+      "cambio": "18 notas alineadas a la izquierda",
+      "antes": "justificadas",
+      "despues": "izquierda",
+      "evidencia": "PDF p37 Nota x0=85"
+    },
+    {
+      "id": "H05",
+      "cambio": "Parrafo 646 advertencia: line 1.5 + sangria 1.27 cm",
+      "antes": "line 276 sin firstLine",
+      "despues": "line 360 firstLine 720",
+      "evidencia": "PDF p117"
+    },
+    {
+      "id": "H06",
+      "cambio": "Rejilla DEC-025 en formularios T47-T52",
+      "antes": "solo lineas superior/inferior",
+      "despues": "rejilla 0.5 pt; firmas sin divisor interior",
+      "evidencia": "PDF p148/p150"
+    },
+    {
+      "id": "H07",
+      "cambio": "32 parrafos de celda sin espaciado heredado y 18 runs de firma TNR 10",
+      "antes": "Calibri 11",
+      "despues": "Times New Roman 10",
+      "evidencia": "PDF p148"
+    },
+    {
+      "id": "NIVEL3",
+      "cambio": "18 encabezados con outlineLvl=3 en negrita y cursiva",
+      "antes": "solo negrita",
+      "despues": "negrita+cursiva",
+      "evidencia": "XML/PDF"
+    },
+    {
+      "id": "FOTOS",
+      "cambio": "Orden rotulo->marco->nota en Figuras 49-52 y marco exterior 0.5 pt",
+      "antes": "marco->rotulo->nota",
+      "despues": "rotulo->marco->nota",
+      "evidencia": "PDF p156"
+    },
+    {
+      "id": "LOGO",
+      "cambio": "Escudo de portada sustituido por derivado 1368x1769 del LOGO-UNAJMA 2048",
+      "antes": "235x264 px aprox., 4.572x5.133 cm",
+      "despues": "875.5 dpi, 3.969x5.133 cm, misma altura y centrado",
+      "evidencia": "PDF p1"
+    },
+    {
+      "id": "PRELIMINAR",
+      "cambio": "Folio romano movido de encabezado a pie centrado en seccion 1",
+      "antes": "superior derecha",
+      "despues": "pie centrado",
+      "evidencia": "PDF p7 folio v"
+    }
+  ],
+  "no_aplicado": [
+    {
+      "id": "H03",
+      "motivo": "compactar TOC eliminaria 58 entradas; orden de Direccion mantener 3 indices completos"
+    },
+    {
+      "id": "H09",
+      "motivo": "divisoria ANEXOS posee sectPr; conservar"
+    },
+    {
+      "id": "FIG6",
+      "motivo": "sin fuente mejor; se conserva a 136.5 dpi"
+    },
+    {
+      "id": "FOTOS_REALES",
+      "motivo": "no existen fotografias fuente; marcos reservados y leyenda REAL conservados"
+    },
+    {
+      "id": "D01",
+      "motivo": "pagina de cierre cap1 aceptada por tesista; no se rellena"
+    }
+  ],
+  "pruebas": [
+    {
+      "prueba": "texto identico",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "59 tablas identicas",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "OMML 12 y 0 en tablas",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "campos nativos TOC/PAGEREF/SEQ",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "hipervinculos 252",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "cantSplit y tblHeader 59/59",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "sin flotacion",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "geometria <= limites",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "paginacion romana/arabiga",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "pdf 158 paginas y 49 imagenes",
+      "resultado": "PASS"
+    }
+  ],
+  "pendientes": [
+    "ordenes de redaccion de redactor/verificador",
+    "aprobacion del tesista",
+    "fotografias reales 49-52",
+    "firmas de jueces",
+    "acta y declaracion jurada"
+  ],
+  "previsualizaciones": [
+    "paginas_control/CANDIDATO_FORMATO_V20_p001.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p007.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p009.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p016.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p037.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p117.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p148.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p150.png",
+    "paginas_control/CANDIDATO_FORMATO_V20_p156.png"
+  ]
+}

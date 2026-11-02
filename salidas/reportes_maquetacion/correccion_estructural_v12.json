@@ -1,0 +1,1725 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v11.docx",
+  "destino": "salidas\\documentos\\informe_final_v12.docx",
+  "sha256_origen": "f5e7636fae06b3a1b3e74b5815fc54e3d25ac2ee0109e69ec337136d4db59b07",
+  "sha256_destino": "284cc76b3a2eb756599da7d1e04765ecf43c66674a9fa47043312cfa51268c1c",
+  "parrafos_antes": 813,
+  "parrafos_despues": 824,
+  "tablas_antes": 59,
+  "tablas_despues": 59,
+  "antes": {
+    "rotulos_total": 103,
+    "rotulos_sin_estilo": 103,
+    "figuras_imagen_antes_del_rotulo": 38,
+    "notas_sin_prefijo": 24
+  },
+  "despues": {
+    "rotulos_total": 103,
+    "rotulos_sin_estilo": 4,
+    "figuras_imagen_antes_del_rotulo": 0,
+    "notas_sin_prefijo": 0
+  },
+  "duplicados_antes": {
+    "bloques_duplicados": [],
+    "encabezados_consecutivos_repetidos": []
+  },
+  "duplicados_despues": {
+    "bloques_duplicados": [],
+    "encabezados_consecutivos_repetidos": []
+  },
+  "matrices_anexo": [
+    {
+      "indice_tabla": 52,
+      "columnas": 18,
+      "filas": 15,
+      "ancho_tabla_dxa": 13630,
+      "margenes_laterales_dxa": 57,
+      "tamano_pt": 8.0,
+      "columnas_centradas": 16,
+      "verificacion_glifos": [
+        {
+          "columna": 0,
+          "ancho_dxa": 1100,
+          "ancho_util_dxa": 986,
+          "glifo_mas_largo": "TRAB-01",
+          "ancho_glifo_dxa": 640.0,
+          "cabe": true
+        },
+        {
+          "columna": 1,
+          "ancho_dxa": 2100,
+          "ancho_util_dxa": 1986,
+          "glifo_mas_largo": "Hospital ESSALUD Andahuaylas",
+          "ancho_glifo_dxa": 2177.5,
+          "cabe": false
+        },
+        {
+          "columna": 2,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "t_reg",
+          "ancho_glifo_dxa": 328.8,
+          "cabe": true
+        },
+        {
+          "columna": 3,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "t_vale",
+          "ancho_glifo_dxa": 391.0,
+          "cabe": true
+        },
+        {
+          "columna": 4,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "62.5",
+          "ancho_glifo_dxa": 280.0,
+          "cabe": true
+        },
+        {
+          "columna": 5,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "65.0",
+          "ancho_glifo_dxa": 280.0,
+          "cabe": true
+        },
+        {
+          "columna": 6,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 7,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 8,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 9,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 10,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 11,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 12,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 13,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 14,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "score_",
+          "ancho_glifo_dxa": 417.6,
+          "cabe": true
+        },
+        {
+          "columna": 15,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "score_",
+          "ancho_glifo_dxa": 417.6,
+          "cabe": true
+        },
+        {
+          "columna": 16,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "tam_total",
+          "ancho_glifo_dxa": 604.5,
+          "cabe": false
+        },
+        {
+          "columna": 17,
+          "ancho_dxa": 665,
+          "ancho_util_dxa": 551,
+          "glifo_mas_largo": "satisfaccion",
+          "ancho_glifo_dxa": 755.4,
+          "cabe": false
+        }
+      ],
+      "columnas_desbordadas": [
+        1,
+        16,
+        17
+      ],
+      "cabe_sin_desborde": false
+    },
+    {
+      "indice_tabla": 53,
+      "columnas": 18,
+      "filas": 15,
+      "ancho_tabla_dxa": 13630,
+      "margenes_laterales_dxa": 57,
+      "tamano_pt": 8.0,
+      "columnas_centradas": 16,
+      "verificacion_glifos": [
+        {
+          "columna": 0,
+          "ancho_dxa": 1100,
+          "ancho_util_dxa": 986,
+          "glifo_mas_largo": "TRAB-01",
+          "ancho_glifo_dxa": 640.0,
+          "cabe": true
+        },
+        {
+          "columna": 1,
+          "ancho_dxa": 2100,
+          "ancho_util_dxa": 1986,
+          "glifo_mas_largo": "Hospital ESSALUD Andahuaylas",
+          "ancho_glifo_dxa": 2177.5,
+          "cabe": false
+        },
+        {
+          "columna": 2,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "t_reg",
+          "ancho_glifo_dxa": 328.8,
+          "cabe": true
+        },
+        {
+          "columna": 3,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "t_vale",
+          "ancho_glifo_dxa": 391.0,
+          "cabe": true
+        },
+        {
+          "columna": 4,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "100.0",
+          "ancho_glifo_dxa": 360.0,
+          "cabe": true
+        },
+        {
+          "columna": 5,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "100.0",
+          "ancho_glifo_dxa": 360.0,
+          "cabe": true
+        },
+        {
+          "columna": 6,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 7,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 8,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 9,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "ap_",
+          "ancho_glifo_dxa": 231.0,
+          "cabe": true
+        },
+        {
+          "columna": 10,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 11,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 12,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 13,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "up_",
+          "ancho_glifo_dxa": 240.0,
+          "cabe": true
+        },
+        {
+          "columna": 14,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "score_",
+          "ancho_glifo_dxa": 417.6,
+          "cabe": true
+        },
+        {
+          "columna": 15,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "score_",
+          "ancho_glifo_dxa": 417.6,
+          "cabe": true
+        },
+        {
+          "columna": 16,
+          "ancho_dxa": 651,
+          "ancho_util_dxa": 537,
+          "glifo_mas_largo": "tam_total",
+          "ancho_glifo_dxa": 604.5,
+          "cabe": false
+        },
+        {
+          "columna": 17,
+          "ancho_dxa": 665,
+          "ancho_util_dxa": 551,
+          "glifo_mas_largo": "satisfaccion",
+          "ancho_glifo_dxa": 755.4,
+          "cabe": false
+        }
+      ],
+      "columnas_desbordadas": [
+        1,
+        16,
+        17
+      ],
+      "cabe_sin_desborde": false
+    }
+  ],
+  "referencias": {
+    "acciones": [
+      {
+        "categoria": "referencia_insertada",
+        "orden": 1,
+        "ancla": "Cohn, M. (2004)",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometri",
+        "clave": "cronbach l j|1951",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 2,
+        "ancla": "Ergetie, F. S.",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Feldt, L. S. (1965). The approximate sampling distribution of Kuder-Richardson reliability",
+        "clave": "feldt l s|1965",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 3,
+        "ancla": "Garcia Villacorta, M. D. M.",
+        "criterio": "ancla_alfabetica",
+        "referencia": "George, D., y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and refere",
+        "clave": "george d y mallery p|2003",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 4,
+        "ancla": "Hernández-Sampieri, R., Fernández-Collado, C.",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Hernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las ruta",
+        "clave": "hernandez sampieri r y mendoza c p|2018",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 5,
+        "ancla": "Hernández-Sampieri, R., y Mendoza, C. P. (2018)",
+        "criterio": "despues_de_insercion_previa",
+        "referencia": "Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Jou",
+        "clave": "holm s|1979",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 6,
+        "ancla": "Pressman, R. S. (2010)",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos",
+        "clave": "quispe tello f|2024",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 7,
+        "ancla": "Quispe Tello, F. (2024)",
+        "criterio": "despues_de_insercion_previa",
+        "referencia": "Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov,",
+        "clave": "razali n m y wah y b|2011",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 8,
+        "ancla": "Razali, N. M.",
+        "criterio": "despues_de_insercion_previa",
+        "referencia": "Rosenthal, R. (1991). Meta-analytic procedures for social research (ed. rev.). Sage. https",
+        "clave": "rosenthal r|1991",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 9,
+        "ancla": "Ruiz Barea, R. (2023)",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Shapiro, S. S., y Wilk, M. B. (1965). An analysis of variance test for normality (complete",
+        "clave": "shapiro s s y wilk m b|1965",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 10,
+        "ancla": "Tristán-López, A. (2008)",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of info",
+        "clave": "venkatesh v morris m g davis g b y davis f d|2003",
+        "duplicada": false,
+        "estado": "insertada"
+      },
+      {
+        "categoria": "referencia_insertada",
+        "orden": 11,
+        "ancla": "Wasswa, J.",
+        "criterio": "ancla_alfabetica",
+        "referencia": "Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6),",
+        "clave": "wilcoxon f|1945",
+        "duplicada": false,
+        "estado": "insertada"
+      }
+    ],
+    "entradas_antes": 42,
+    "entradas_despues": 53,
+    "inversiones_antes": [],
+    "inversiones_despues": [],
+    "orden_alfabetico_conservado": true,
+    "claves_duplicadas": []
+  },
+  "acciones": [
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 337,
+      "figura": 11,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 375,
+      "figura": 12,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 382,
+      "figura": 13,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 386,
+      "figura": 14,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 391,
+      "figura": 15,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 395,
+      "figura": 16,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 400,
+      "figura": 17,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 408,
+      "figura": 18,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 413,
+      "figura": 19,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 417,
+      "figura": 20,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 421,
+      "figura": 21,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 478,
+      "figura": 22,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 482,
+      "figura": 23,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 487,
+      "figura": 24,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 491,
+      "figura": 25,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 495,
+      "figura": 26,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 499,
+      "figura": 27,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 504,
+      "figura": 28,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 507,
+      "figura": 29,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 510,
+      "figura": 30,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 513,
+      "figura": 31,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 516,
+      "figura": 32,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 519,
+      "figura": 33,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 522,
+      "figura": 34,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 525,
+      "figura": 35,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 528,
+      "figura": 36,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 531,
+      "figura": 37,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 534,
+      "figura": 38,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 537,
+      "figura": 39,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 540,
+      "figura": 40,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 543,
+      "figura": 41,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 546,
+      "figura": 42,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 549,
+      "figura": 43,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 556,
+      "figura": 44,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 576,
+      "figura": 45,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 698,
+      "figura": 46,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 706,
+      "figura": 47,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "orden_figura_rotulo",
+      "parrafo": 714,
+      "figura": 48,
+      "estado": "corregido",
+      "detalle": "imagen movida delante del rótulo al espacio entre rótulo y nota"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 224,
+      "rotulo": "Tabla 1",
+      "estado": "corregido",
+      "detalle": "negrita, cursiva, negrita_retirada_titulo, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 235,
+      "rotulo": "Figura 1",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 241,
+      "rotulo": "Figura 2",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 246,
+      "rotulo": "Figura 3",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 251,
+      "rotulo": "Figura 4",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 257,
+      "rotulo": "Figura 5",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 264,
+      "rotulo": "Figura 6",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 270,
+      "rotulo": "Figura 7",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 279,
+      "rotulo": "Figura 8",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 284,
+      "rotulo": "Figura 9",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 289,
+      "rotulo": "Figura 10",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 292,
+      "rotulo": "Tabla 2",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 336,
+      "rotulo": "Figura 11",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 344,
+      "rotulo": "Tabla 3",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 349,
+      "rotulo": "Tabla 4",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 354,
+      "rotulo": "Tabla 5",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 359,
+      "rotulo": "Tabla 6",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 364,
+      "rotulo": "Tabla 7",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 369,
+      "rotulo": "Tabla 8",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 374,
+      "rotulo": "Figura 12",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 381,
+      "rotulo": "Figura 13",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 385,
+      "rotulo": "Figura 14",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 390,
+      "rotulo": "Figura 15",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 394,
+      "rotulo": "Figura 16",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 399,
+      "rotulo": "Figura 17",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 403,
+      "rotulo": "Tabla 9",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 407,
+      "rotulo": "Figura 18",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 412,
+      "rotulo": "Figura 19",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 416,
+      "rotulo": "Figura 20",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 420,
+      "rotulo": "Figura 21",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 424,
+      "rotulo": "Tabla 10",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 427,
+      "rotulo": "Tabla 11",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 430,
+      "rotulo": "Tabla 12",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 433,
+      "rotulo": "Tabla 13",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 436,
+      "rotulo": "Tabla 14",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 439,
+      "rotulo": "Tabla 15",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 442,
+      "rotulo": "Tabla 16",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 445,
+      "rotulo": "Tabla 17",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 448,
+      "rotulo": "Tabla 18",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 451,
+      "rotulo": "Tabla 19",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 454,
+      "rotulo": "Tabla 20",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 457,
+      "rotulo": "Tabla 21",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 460,
+      "rotulo": "Tabla 22",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 463,
+      "rotulo": "Tabla 23",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 466,
+      "rotulo": "Tabla 24",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 473,
+      "rotulo": "Tabla 25",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 477,
+      "rotulo": "Figura 22",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 481,
+      "rotulo": "Figura 23",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 486,
+      "rotulo": "Figura 24",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 490,
+      "rotulo": "Figura 25",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 494,
+      "rotulo": "Figura 26",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 498,
+      "rotulo": "Figura 27",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 503,
+      "rotulo": "Figura 28",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 506,
+      "rotulo": "Figura 29",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 509,
+      "rotulo": "Figura 30",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 512,
+      "rotulo": "Figura 31",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 515,
+      "rotulo": "Figura 32",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 518,
+      "rotulo": "Figura 33",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 521,
+      "rotulo": "Figura 34",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 524,
+      "rotulo": "Figura 35",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 527,
+      "rotulo": "Figura 36",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 530,
+      "rotulo": "Figura 37",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 533,
+      "rotulo": "Figura 38",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 536,
+      "rotulo": "Figura 39",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 539,
+      "rotulo": "Figura 40",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 542,
+      "rotulo": "Figura 41",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 545,
+      "rotulo": "Figura 42",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 548,
+      "rotulo": "Figura 43",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 555,
+      "rotulo": "Figura 44",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 559,
+      "rotulo": "Tabla 26",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 564,
+      "rotulo": "Tabla 27",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 569,
+      "rotulo": "Tabla 28",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 575,
+      "rotulo": "Figura 45",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 598,
+      "rotulo": "Tabla 29",
+      "estado": "corregido",
+      "detalle": "negrita, cursiva, negrita_retirada_titulo, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 605,
+      "rotulo": "Tabla 30",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 612,
+      "rotulo": "Tabla 31",
+      "estado": "corregido",
+      "detalle": "negrita, cursiva, negrita_retirada_titulo, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 620,
+      "rotulo": "Tabla 32",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 650,
+      "rotulo": "Tabla 33",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 663,
+      "rotulo": "Tabla 34",
+      "estado": "corregido",
+      "detalle": "cursiva, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 687,
+      "rotulo": "Tabla 35",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 694,
+      "rotulo": "Tabla 36",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 697,
+      "rotulo": "Figura 46",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 702,
+      "rotulo": "Tabla 37",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 705,
+      "rotulo": "Figura 47",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 710,
+      "rotulo": "Tabla 38",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 713,
+      "rotulo": "Figura 48",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 720,
+      "rotulo": "Tabla 39",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 729,
+      "rotulo": "Tabla 40",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 736,
+      "rotulo": "Tabla 41",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 743,
+      "rotulo": "Tabla 42",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 751,
+      "rotulo": "Tabla 43",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 816,
+      "rotulo": "Tabla 44",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 821,
+      "rotulo": "Tabla 45",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 837,
+      "rotulo": "Tabla 46",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 840,
+      "rotulo": "Tabla 47",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 843,
+      "rotulo": "Tabla 48",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 848,
+      "rotulo": "Tabla 49",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 851,
+      "rotulo": "Tabla 50",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "rotulo_formato",
+      "parrafo": 856,
+      "rotulo": "Tabla 51",
+      "estado": "corregido",
+      "detalle": "negrita, estilo"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 4,
+      "parrafo": 346,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 5,
+      "parrafo": 351,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 6,
+      "parrafo": 356,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 7,
+      "parrafo": 361,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 8,
+      "parrafo": 366,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 9,
+      "parrafo": 371,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 10,
+      "parrafo": 405,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 12,
+      "parrafo": 429,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 13,
+      "parrafo": 432,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 14,
+      "parrafo": 435,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 15,
+      "parrafo": 438,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 16,
+      "parrafo": 441,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 17,
+      "parrafo": 444,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 18,
+      "parrafo": 447,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 19,
+      "parrafo": 450,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 21,
+      "parrafo": 456,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 22,
+      "parrafo": 459,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 23,
+      "parrafo": 462,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 24,
+      "parrafo": 465,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 25,
+      "parrafo": 468,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 26,
+      "parrafo": 475,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 27,
+      "parrafo": 561,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 28,
+      "parrafo": 566,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "nota_sin_prefijo",
+      "tabla": 29,
+      "parrafo": 571,
+      "estado": "corregido",
+      "detalle": "prefijo Nota. en cursiva insertado; texto original intacto"
+    },
+    {
+      "categoria": "matriz_anexo_geometria",
+      "tabla": 52,
+      "estado": "corregido",
+      "detalle": "margenes laterales 57 dxa; cabecera y celdas numericas a 8.0 pt; 16 columnas centradas; tblHeader y cantSplit"
+    },
+    {
+      "categoria": "matriz_anexo_geometria",
+      "tabla": 53,
+      "estado": "corregido",
+      "detalle": "margenes laterales 57 dxa; cabecera y celdas numericas a 8.0 pt; 16 columnas centradas; tblHeader y cantSplit"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 1,
+      "ancla": "Cohn, M. (2004)",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometri",
+      "clave": "cronbach l j|1951",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 2,
+      "ancla": "Ergetie, F. S.",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Feldt, L. S. (1965). The approximate sampling distribution of Kuder-Richardson reliability",
+      "clave": "feldt l s|1965",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 3,
+      "ancla": "Garcia Villacorta, M. D. M.",
+      "criterio": "ancla_alfabetica",
+      "referencia": "George, D., y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and refere",
+      "clave": "george d y mallery p|2003",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 4,
+      "ancla": "Hernández-Sampieri, R., Fernández-Collado, C.",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Hernández-Sampieri, R., y Mendoza, C. P. (2018). Metodología de la investigación: Las ruta",
+      "clave": "hernandez sampieri r y mendoza c p|2018",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 5,
+      "ancla": "Hernández-Sampieri, R., y Mendoza, C. P. (2018)",
+      "criterio": "despues_de_insercion_previa",
+      "referencia": "Holm, S. (1979). A simple sequentially rejective multiple test procedure. Scandinavian Jou",
+      "clave": "holm s|1979",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 6,
+      "ancla": "Pressman, R. S. (2010)",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Quispe Tello, F. (2024). Influencia del aplicativo WEBFQT para el seguimiento de proyectos",
+      "clave": "quispe tello f|2024",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 7,
+      "ancla": "Quispe Tello, F. (2024)",
+      "criterio": "despues_de_insercion_previa",
+      "referencia": "Razali, N. M., y Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov,",
+      "clave": "razali n m y wah y b|2011",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 8,
+      "ancla": "Razali, N. M.",
+      "criterio": "despues_de_insercion_previa",
+      "referencia": "Rosenthal, R. (1991). Meta-analytic procedures for social research (ed. rev.). Sage. https",
+      "clave": "rosenthal r|1991",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 9,
+      "ancla": "Ruiz Barea, R. (2023)",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Shapiro, S. S., y Wilk, M. B. (1965). An analysis of variance test for normality (complete",
+      "clave": "shapiro s s y wilk m b|1965",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 10,
+      "ancla": "Tristán-López, A. (2008)",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of info",
+      "clave": "venkatesh v morris m g davis g b y davis f d|2003",
+      "duplicada": false,
+      "estado": "insertada"
+    },
+    {
+      "categoria": "referencia_insertada",
+      "orden": 11,
+      "ancla": "Wasswa, J.",
+      "criterio": "ancla_alfabetica",
+      "referencia": "Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6),",
+      "clave": "wilcoxon f|1945",
+      "duplicada": false,
+      "estado": "insertada"
+    }
+  ]
+}

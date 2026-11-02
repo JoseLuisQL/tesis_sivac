@@ -1,0 +1,27 @@
+{
+ "vs_publicada": {
+  "paginas": [
+   159,
+   159
+  ],
+  "texto_distinto": [
+   132,
+   135,
+   140
+  ],
+  "paginas_con_otro_n": [
+   132,
+   140
+  ],
+  "max_delta_pt": 1.85
+ },
+ "vs_r1r3b": {
+  "paginas": [
+   159,
+   159
+  ],
+  "texto_distinto": [],
+  "paginas_con_otro_n": [],
+  "max_delta_pt": 1.63
+ }
+}

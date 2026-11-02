@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "fecha_verificacion": "2026-10-22T09:55:27",
+    "agente": "analista-documental",
+    "fase": "F8",
+    "objeto": "Estado de los cuatro ajustes de direccion en el snapshot auditado",
+    "snapshot": "Archivos con mtime 09:49 del 2026-10-22; esta verificacion no cubre la version posterior.",
+    "hashes_referencia": "Ver auditoria_rediseno_fany_20261022.json, seccion snapshot_hashes"
+  },
+  "RD01_nota_D06": {
+    "estado": "no aplicado",
+    "evidencia": "En el orden del cuerpo de 02_FICHA_AUDITORIA_DOCUMENTAL.docx la secuencia es D-04, nota 'Si el corpus excede estos cinco bloques...', D-05.",
+    "esperado": "Nota despues de D-05",
+    "ubicacion_exacta": "Cuerpo del documento, entre la tabla D-04 y la tabla D-05"
+  },
+  "RD02_identificacion_continuaciones": {
+    "estado": "parcial",
+    "evidencia": "La hoja de cierre de APOYOS contiene Fase, Centro y Fecha; las cabeceras 'Desde D-06', 'Desde E-13' y 'Desde H-05' solo indican 'conserve la misma identificacion'.",
+    "esperado": "Fase, centro y fecha repetidos en el cierre y en cada cabecera de continuacion",
+    "ubicacion_exacta": "05_APOYOS_INVESTIGADOR..., paginas de continuacion y cierre"
+  },
+  "RD03_proposito_confidencialidad": {
+    "estado": "no aplicado",
+    "evidencia": "Busqueda de objetivo, proposito, confidencial y anonimo en 03_CUESTIONARIO_SATISFACCION_A.docx y 04_MODULO_COMPLEMENTARIO_B_POST.docx: sin coincidencias.",
+    "esperado": "Proposito y confidencialidad breve en A y B",
+    "ubicacion_exacta": "Encabezado de 03 y 04, antes de la leyenda de escala"
+  },
+  "RD04_formulas_texto_plano": {
+    "estado": "no aplicado",
+    "evidencia": "APOYOS conserva 'Registros sin discrepancias (RSD) = documentos conformes / documentos auditados x 100' y 'Concordancia programada y entregada (CPE) = entregas concordantes / entregas evaluadas x 100' como texto plano.",
+    "esperado": "Narrativa sin formulas en texto plano",
+    "ubicacion_exacta": "05_APOYOS_INVESTIGADOR..., hoja de cierre o puntuacion"
+  },
+  "nota_de_cierre": "Los cuatro ajustes pertenecen a la version posterior al snapshot 09:49. No se atribuyen a esta version ni a sus hashes."
+}

@@ -1,0 +1,96 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v14.docx",
+  "destino": "salidas\\documentos\\informe_final_v15.docx",
+  "solo_verificar": false,
+  "sha256_origen": "1b81020cf551914e74b21d7f875566ebcf2bd59da781f08340c2cbc0f5861a07",
+  "sha256_destino": "7c79eb03e2875f5f007c982a946fa84feaa48e4aef1009f717c7163cb9aa2ff1",
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 4,
+  "total_aplicadas": 4,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "uniformidad_notacional_v14_complemento",
+      "total": 4,
+      "aplicadas": 4,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 41,
+          "ubicacion": "TABLA 41, fila 3, columna 4",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 3, columna 4",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 5, columna 4",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 42,
+          "ubicacion": "TABLA 42, fila 7, columna 4",
+          "ancla": "0.001",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v14_complemento",
+      "indice_docx": 41,
+      "ubicacion": "TABLA 41, fila 3, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v14_complemento",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 3, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v14_complemento",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 5, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "uniformidad_notacional_v14_complemento",
+      "indice_docx": 42,
+      "ubicacion": "TABLA 42, fila 7, columna 4",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

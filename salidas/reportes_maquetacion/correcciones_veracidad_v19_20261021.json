@@ -1,0 +1,294 @@
+{
+  "metadatos": {
+    "proyecto": "SIVAC - Informe Final de Tesis UNAJMA",
+    "version": "v19_correcciones_veracidad",
+    "documento_base": "salidas/documentos/informe_final_v18.docx",
+    "sha256_documento_base": "fd94879b3fd54473809ff6af92ec7b815a0b84f934c132bc4c5b8a578c9d648b",
+    "fecha_emision": "2026-10-21",
+    "agente": "redactor-academico",
+    "squad": "Squad E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "objeto": "Lote unico de sustituciones de veracidad y claridad derivado de la auditoria independiente v18 y del tramo 1-80. Solo incluye anclas verificadas en el PDF v18 y en los artefactos de auditoria. No modifica cifras ni agrega fuentes.",
+    "total_sustituciones": 30,
+    "incidentes_cubiertos": [
+      "INC-01",
+      "INC-02",
+      "INC-03",
+      "INC-04",
+      "INC-13",
+      "INC-07 tramo 1-80 (Figura 11)"
+    ]
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 804,
+      "ubicacion": "PARRAFO 804, titulo del Anexo 5 (p. 153, folio 138)",
+      "ancla_original": "ANEXO 5: MATRIZ DE DATOS TABULADOS DE CAMPO (PRETEST Y POSTTEST)",
+      "texto_nuevo": "ANEXO 5: MATRIZ DE DATOS TABULADOS DE PRUEBA (PRETEST Y POSTTEST)",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "El anexo contiene valores de prueba, no mediciones de campo. Conserva el alcance pretest y postest. La entrada del indice general es texto plano y debe actualizarse despues de aplicar."
+    },
+    {
+      "indice_docx": 805,
+      "ubicacion": "PARRAFO 805, parrafo introductorio del Anexo 5 (p. 153, folio 138)",
+      "ancla_original": "A continuación se presenta la matriz completa de datos recolectados de los n = 14 trabajadores pareados de la Dirección de Salud Apurímac II en sus centros de acopio reales de la base de datos de PostgreSQL SIVAC.",
+      "texto_nuevo": "A continuación se presenta la matriz completa de los datos de prueba correspondientes a los n = 14 trabajadores pareados de la Dirección de Salud Apurímac II y a los centros de acopio registrados en el sistema SIVAC. Los valores numéricos consignados son datos de prueba y no constituyen mediciones de campo.",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "Distingue los centros de acopio, que son registros reales del sistema, de los valores numericos, que son datos de prueba. No califica de falsos los centros ni altera cifra alguna."
+    },
+    {
+      "indice_docx": 806,
+      "ubicacion": "PARRAFO 806, rotulo de la Tabla 49 (p. 153, folio 138)",
+      "ancla_original": "Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)",
+      "texto_nuevo": "Matriz de datos de prueba en el Pretest (Gestión manual basal, n = 14)",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "Rotula la tabla como datos de prueba. No cambia n, columnas ni valores. La entrada del indice de tablas debe actualizarse despues de aplicar."
+    },
+    {
+      "indice_docx": 807,
+      "ubicacion": "PARRAFO 807, nota de la Tabla 49 (p. 153, folio 138)",
+      "ancla_original": "Nota. Datos basales recopilados sobre 14 operadores en centros de acopio reales de SIVAC.",
+      "texto_nuevo": "Nota. Datos de prueba del pretest sobre 14 operadores y los centros de acopio registrados en SIVAC; no constituyen mediciones de campo.",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "Retira la atribucion de recoleccion y el adjetivo de realidad aplicado a los valores, sin negar la existencia de los centros registrados."
+    },
+    {
+      "indice_docx": 808,
+      "ubicacion": "PARRAFO 808, rotulo de la Tabla 50 (p. 154, folio 139)",
+      "ancla_original": "Matriz de datos recolectados en el Postest (Operación con sistema SIVAC, n = 14)",
+      "texto_nuevo": "Matriz de datos de prueba en el Postest (Operación con sistema SIVAC, n = 14)",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "Rotula la tabla como datos de prueba. No cambia n, columnas ni valores. La entrada del indice de tablas debe actualizarse despues de aplicar."
+    },
+    {
+      "indice_docx": 809,
+      "ubicacion": "PARRAFO 809, nota de la Tabla 50 (p. 154, folio 139)",
+      "ancla_original": "Nota. Mediciones finales obtenidas tras la implementación de SIVAC.",
+      "texto_nuevo": "Nota. Datos de prueba del postest sobre 14 operadores y los centros de acopio registrados en SIVAC; no constituyen mediciones finales de campo.",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "Elimina la afirmacion de mediciones finales obtenidas, que atribuye al anexo un levantamiento de campo no realizado."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 2, columna 7",
+      "ancla_original": "Acreditado por protocolo y concordancia interobservador",
+      "texto_nuevo": "Verificación de concordancia pendiente",
+      "ocurrencias": 1,
+      "categoria": "INC-13",
+      "justificacion": "No existe coeficiente ICC(2,1) calculado en el documento. El metodo permanece previsto en la columna Sustento de Validez; no se acredita concordancia observada."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 3, columna 7",
+      "ancla_original": "Acreditado por protocolo y concordancia interevaluador",
+      "texto_nuevo": "Verificación de concordancia pendiente",
+      "ocurrencias": 1,
+      "categoria": "INC-13",
+      "justificacion": "No existe kappa de Cohen calculado en el documento. Se conserva el metodo previsto y se retira la acreditacion."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 4, columna 5",
+      "ancla_original": "[Pendiente]",
+      "texto_nuevo": "Ver VAL-VD",
+      "ocurrencias": 1,
+      "categoria": "INC-01",
+      "justificacion": "Remite a la fila VAL-VD, donde el valor comunicado se declara condicional y pendiente de cotejo. No se trasladan los 12 componentes de la matriz al cuestionario TAM de 8 reactivos ni se inventa un coeficiente."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 4, columna 6",
+      "ancla_original": "[Pendiente]",
+      "texto_nuevo": "Ver VAL-VD",
+      "ocurrencias": 1,
+      "categoria": "INC-01",
+      "justificacion": "Misma remision que la celda V de Aiken, aplicada por celda para no sustituir las tres ocurrencias del token con un solo texto."
+    },
+    {
+      "indice_docx": 34,
+      "ubicacion": "TABLA 34, fila 4, columna 7",
+      "ancla_original": "[Pendiente]",
+      "texto_nuevo": "Pendiente de cotejo",
+      "ocurrencias": 1,
+      "categoria": "INC-01",
+      "justificacion": "Sustituye el metatoken visible por el estado real ya declarado en la nota de la tabla y en la fila VAL-VD."
+    },
+    {
+      "indice_docx": 661,
+      "ubicacion": "PARRAFO 661, nota de la Figura 46 (p. 120, folio 105)",
+      "ancla_original": "Salida bioestadística generada en formato SPSS a 300 DPI.",
+      "texto_nuevo": "Salida bioestadística generada con Python (Matplotlib) a 300 DPI.",
+      "ocurrencias": 1,
+      "categoria": "INC-03",
+      "justificacion": "Los PNG embebidos declaran Matplotlib 3.10.6. Se retira la atribucion a SPSS sin cambiar el resto de la nota ni la presentacion de la figura."
+    },
+    {
+      "indice_docx": 668,
+      "ubicacion": "PARRAFO 668, nota de la Figura 47 (p. 121, folio 106)",
+      "ancla_original": "Salida bioestadística generada en formato SPSS a 300 DPI.",
+      "texto_nuevo": "Salida bioestadística generada con Python (Matplotlib) a 300 DPI.",
+      "ocurrencias": 1,
+      "categoria": "INC-03",
+      "justificacion": "Misma correccion de fuente que la Figura 46, verificada en el metadato del PNG y en la auditoria independiente."
+    },
+    {
+      "indice_docx": 675,
+      "ubicacion": "PARRAFO 675, nota de la Figura 48 (p. 123, folio 108)",
+      "ancla_original": "Salida bioestadística generada en formato SPSS a 300 DPI.",
+      "texto_nuevo": "Salida bioestadística generada con Python (Matplotlib) a 300 DPI.",
+      "ocurrencias": 1,
+      "categoria": "INC-03",
+      "justificacion": "Misma correccion de fuente. No se modifica la figura ni se corrige aqui la etiqueta superpuesta, que requiere regeneracion grafica."
+    },
+    {
+      "indice_docx": 814,
+      "ubicacion": "PARRAFO 814, titulo del Anexo 7 (p. 157, folio 142)",
+      "ancla_original": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO",
+      "texto_nuevo": "ANEXO 7: REGISTRO FOTOGRÁFICO DE EVIDENCIA DE APLICACIÓN EN CAMPO (PENDIENTE DE INCORPORACIÓN)",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "El anexo contiene marcos vacios. Se declara el estado pendiente sin afirmar que el registro fotografico existe. La entrada del indice general debe actualizarse despues de aplicar."
+    },
+    {
+      "indice_docx": 815,
+      "ubicacion": "PARRAFO 815, parrafo introductorio del Anexo 7 (p. 157, folio 142)",
+      "ancla_original": "En observancia de los requisitos de acreditación de trabajo de campo de la UNAJMA, se disponen los siguientes espacios delimitados para la inserción de las fotografías de evidencia empírica tomadas durante las sesiones de capacitación, cronometraje y auditoría con el personal de la DISA Apurímac II.",
+      "texto_nuevo": "En observancia de los requisitos de acreditación de trabajo de campo de la UNAJMA, se disponen los siguientes espacios delimitados para la incorporación de las fotografías de evidencia empírica de las sesiones de capacitación, cronometraje y auditoría con el personal de la DISA Apurímac II. Las fotografías se incorporarán en la versión final del informe; los espacios no acreditan por sí mismos la realización del registro.",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Sustituye tomadas por un planteamiento prospectivo y declara que el marco vacio no acredita el registro. No dibuja ni simula fotografias."
+    },
+    {
+      "indice_docx": 816,
+      "ubicacion": "PARRAFO 816, titulo de la Figura 49 (p. 157, folio 142)",
+      "ancla_original": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC impartida a los operadores de inmunizaciones.",
+      "texto_nuevo": "Sesión de capacitación técnica y entrenamiento operativo en el sistema web SIVAC dirigida a los operadores de inmunizaciones (fotografía pendiente de incorporación).",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Retira el participio que afirma una sesion ya fotografiada y declara la ausencia de imagen. La entrada del indice de figuras debe actualizarse despues de aplicar."
+    },
+    {
+      "indice_docx": 817,
+      "ubicacion": "PARRAFO 817, nota de la Figura 49 (p. 157, folio 142)",
+      "ancla_original": "Nota. Registro fotográfico de la sesión de capacitación en la sede central. Dirección de Salud Apurímac II (2026).",
+      "texto_nuevo": "Nota. Fotografía pendiente de incorporación. El espacio se reserva para la sesión de capacitación en la sede central de la Dirección de Salud Apurímac II.",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Sustituye la afirmacion de registro existente por el estado real del espacio reservado."
+    },
+    {
+      "indice_docx": 818,
+      "ubicacion": "PARRAFO 818, titulo de la Figura 50 (p. 158, folio 143)",
+      "ancla_original": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central.",
+      "texto_nuevo": "Cronometraje de tiempos de registro y emisión de comprobantes de salida de biológicos en la cadena de frío de la sede central (fotografía pendiente de incorporación).",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Declara la ausencia de imagen sin alterar el titulo descriptivo ni afirmar que la fotografia existe."
+    },
+    {
+      "indice_docx": 819,
+      "ubicacion": "PARRAFO 819, nota de la Figura 50 (p. 158, folio 143)",
+      "ancla_original": "Nota. Registro fotográfico del cronometraje de tiempos en el Almacén Especializado de Vacunas. Dirección de Salud Apurímac II (2026).",
+      "texto_nuevo": "Nota. Fotografía pendiente de incorporación. El espacio se reserva para el cronometraje de tiempos en el Almacén Especializado de Vacunas de la Dirección de Salud Apurímac II.",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Misma correccion de estado que la Figura 49, aplicada a su nota."
+    },
+    {
+      "indice_docx": 820,
+      "ubicacion": "PARRAFO 820, titulo de la Figura 51 (p. 158, folio 143)",
+      "ancla_original": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales.",
+      "texto_nuevo": "Verificación de consistencia documental y cotejo de lotes de vacunas bajo la regla FEFO en los refrigeradores institucionales (fotografía pendiente de incorporación).",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Declara la ausencia de imagen sin modificar el contenido tecnico del titulo."
+    },
+    {
+      "indice_docx": 821,
+      "ubicacion": "PARRAFO 821, nota de la Figura 51 (p. 158, folio 143)",
+      "ancla_original": "Nota. Registro fotográfico del cotejo documental y la verificación física de lotes. Dirección de Salud Apurímac II (2026).",
+      "texto_nuevo": "Nota. Fotografía pendiente de incorporación. El espacio se reserva para el cotejo documental y la verificación física de lotes en la Dirección de Salud Apurímac II.",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Sustituye la afirmacion de registro existente por el estado pendiente."
+    },
+    {
+      "indice_docx": 822,
+      "ubicacion": "PARRAFO 822, titulo de la Figura 52 (p. 159, folio 144)",
+      "ancla_original": "Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud.",
+      "texto_nuevo": "Evaluación de la aceptación del proceso operativo y utilidad percibida del sistema SIVAC por parte del personal de salud (fotografía pendiente de incorporación).",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Declara la ausencia de imagen sin alterar el titulo descriptivo."
+    },
+    {
+      "indice_docx": 823,
+      "ubicacion": "PARRAFO 823, nota de la Figura 52 (p. 159, folio 144)",
+      "ancla_original": "Nota. Registro fotográfico de la aplicación del cuestionario TAM a los operadores de inmunizaciones. Dirección de Salud Apurímac II (2026).",
+      "texto_nuevo": "Nota. Fotografía pendiente de incorporación. El espacio se reserva para la aplicación del cuestionario TAM a los operadores de inmunizaciones en la Dirección de Salud Apurímac II.",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Cierra la serie de notas con el estado real del espacio reservado."
+    },
+    {
+      "indice_docx": 56,
+      "ubicacion": "TABLA 56, fila 1, columna 1",
+      "ancla_original": "ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA",
+      "texto_nuevo": "Fotografía pendiente de incorporación",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Marco de una celda de la Figura 49. Sustituye el metatoken en mayusculas por texto plano y conserva el marco nativo. Si el ancla esta partida en runs, aplicar con la funcion general por parrafo, sin uniones destructivas."
+    },
+    {
+      "indice_docx": 57,
+      "ubicacion": "TABLA 57, fila 1, columna 1",
+      "ancla_original": "ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA",
+      "texto_nuevo": "Fotografía pendiente de incorporación",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Marco de una celda de la Figura 50. Misma sustitucion y misma advertencia sobre runs."
+    },
+    {
+      "indice_docx": 58,
+      "ubicacion": "TABLA 58, fila 1, columna 1",
+      "ancla_original": "ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA",
+      "texto_nuevo": "Fotografía pendiente de incorporación",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Marco de una celda de la Figura 51. Misma sustitucion y misma advertencia sobre runs."
+    },
+    {
+      "indice_docx": 59,
+      "ubicacion": "TABLA 59, fila 1, columna 1",
+      "ancla_original": "ESPACIO RESERVADO PARA FOTOGRAFÍA DE EVIDENCIA",
+      "texto_nuevo": "Fotografía pendiente de incorporación",
+      "ocurrencias": 1,
+      "categoria": "INC-04",
+      "justificacion": "Marco de una celda de la Figura 52. Misma sustitucion y misma advertencia sobre runs."
+    },
+    {
+      "indice_docx": null,
+      "ubicacion": "PARRAFO DE LA NOTA DE LA FIGURA 11 (p. 55, folio 40); localizar por ancla",
+      "ancla_original": "las pruebas de aceptación con el cliente en la DISA Apurímac II.",
+      "texto_nuevo": "las pruebas de aceptación con el cliente en la DISA Apurímac II. El esquema incluye el despliegue como actividad operativa complementaria a las cuatro fases de XP: planificación, diseño, codificación y pruebas.",
+      "ocurrencias": 1,
+      "categoria": "INC-07-P001-080",
+      "justificacion": "La imagen rotula FASE 5 Despliegue y la prosa describe cuatro fases. La nota aclara la relacion sin redibujar la figura y sin convertir el despliegue en quinta fase. No altera el recuento de cinco iteraciones."
+    },
+    {
+      "indice_docx": null,
+      "ubicacion": "PARRAFO INICIAL DE CONCLUSIONES (p. 133, folio 118); localizar por ancla",
+      "ancla_original": "Primera (Objetivo General): Se determinó que la aplicación del sistema web SIVAC mejora de manera global y significativa",
+      "texto_nuevo": "Primera (Objetivo General): A partir del conjunto de datos provisionales de prueba descrito en el Capítulo V, se determinó que la aplicación del sistema web SIVAC mejora de manera global y significativa",
+      "ocurrencias": 1,
+      "categoria": "INC-02",
+      "justificacion": "Mencion concisa del caracter provisional ya declarado en el Capitulo V, alli donde las conclusiones usan esos valores. No reescribe el capitulo ni altera ninguna cifra."
+    }
+  ]
+}

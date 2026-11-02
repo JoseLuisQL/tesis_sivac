@@ -1,0 +1,70 @@
+Parrafos con drawing/pict: 49
+[(1, 1, 0), (233, 1, 0), (239, 1, 0), (244, 1, 0), (249, 1, 0), (255, 1, 0), (262, 1, 0), (268, 1, 0), (277, 1, 0), (282, 1, 0), (287, 1, 0), (333, 1, 0), (365, 1, 0), (372, 1, 0), (376, 1, 0), (381, 1, 0), (385, 1, 0), (390, 1, 0), (397, 1, 0), (402, 1, 0), (406, 1, 0), (410, 1, 0), (451, 1, 0), (455, 1, 0), (460, 1, 0), (464, 1, 0), (468, 1, 0), (472, 1, 0), (477, 1, 0), (480, 1, 0), (483, 1, 0), (486, 1, 0), (489, 1, 0), (492, 1, 0), (495, 1, 0), (498, 1, 0), (501, 1, 0), (504, 1, 0), (507, 1, 0), (510, 1, 0), (513, 1, 0), (516, 1, 0), (519, 1, 0), (522, 1, 0), (529, 1, 0), (546, 1, 0), (660, 1, 0), (667, 1, 0), (674, 1, 0)]
+
+Tablas con drawing: []
+
+Primeros 12 rotulos de figura: [(1, 32), (2, 33), (3, 34), (4, 35), (5, 36), (6, 37), (7, 38), (8, 39), (9, 40), (10, 41), (11, 42), (12, 43)]
+--- Fig 1 en P32
+   P30 dr=0 | ÍNDICE DE CONTENIDO
+   P31 dr=0 | ÍNDICE DE FIGURAS
+   P32 dr=0 | Figura 1 Pilares tecnológicos de la arquitectura web (URL, HTTP y HTML)	23
+   P33 dr=0 | Figura 2 Arquitectura de una aplicación web basada en el patrón Modelo-Vista-Controlador (
+   P34 dr=0 | Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)	25
+   P35 dr=0 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+--- Fig 2 en P33
+   P31 dr=0 | ÍNDICE DE FIGURAS
+   P32 dr=0 | Figura 1 Pilares tecnológicos de la arquitectura web (URL, HTTP y HTML)	23
+   P33 dr=0 | Figura 2 Arquitectura de una aplicación web basada en el patrón Modelo-Vista-Controlador (
+   P34 dr=0 | Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)	25
+   P35 dr=0 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+--- Fig 3 en P34
+   P32 dr=0 | Figura 1 Pilares tecnológicos de la arquitectura web (URL, HTTP y HTML)	23
+   P33 dr=0 | Figura 2 Arquitectura de una aplicación web basada en el patrón Modelo-Vista-Controlador (
+   P34 dr=0 | Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)	25
+   P35 dr=0 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+   P38 dr=0 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform
+--- Fig 4 en P35
+   P33 dr=0 | Figura 2 Arquitectura de una aplicación web basada en el patrón Modelo-Vista-Controlador (
+   P34 dr=0 | Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)	25
+   P35 dr=0 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+   P38 dr=0 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform
+   P39 dr=0 | Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información
+--- Fig 5 en P36
+   P34 dr=0 | Figura 3 Evolución desde el ciclo en cascada e iterativo hacia Extreme Programming (XP)	25
+   P35 dr=0 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+   P38 dr=0 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform
+   P39 dr=0 | Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información
+   P40 dr=0 | Figura 9 Marco teórico de facilidad de uso percibida y utilidad percibida en la adopción d
+--- Fig 6 en P37
+   P35 dr=0 | Figura 4 El proceso de la metodología ágil Extreme Programming (XP)	26
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+   P38 dr=0 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform
+   P39 dr=0 | Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información
+   P40 dr=0 | Figura 9 Marco teórico de facilidad de uso percibida y utilidad percibida en la adopción d
+   P41 dr=0 | Figura 10 Factores determinantes de la aceptación y uso de un sistema de información del p
+--- Fig 7 en P38
+   P36 dr=0 | Figura 5 Características y subcaracterísticas del modelo de calidad del producto de softwa
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+   P38 dr=0 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform
+   P39 dr=0 | Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información
+   P40 dr=0 | Figura 9 Marco teórico de facilidad de uso percibida y utilidad percibida en la adopción d
+   P41 dr=0 | Figura 10 Factores determinantes de la aceptación y uso de un sistema de información del p
+   P42 dr=0 | Figura 11 Fases del ciclo de desarrollo Extreme Programming (XP) adaptado a SIVAC	39
+--- Fig 8 en P39
+   P37 dr=0 | Figura 6 Flujo logístico de la cadena de frío e inmunizaciones desde la fabricación hasta 
+   P38 dr=0 | Figura 7 Flujo operativo de suministros y trazabilidad en un sistema electrónico de inform
+   P39 dr=0 | Figura 8 Marco conceptual de la calidad y consistencia de datos en sistemas de información
+   P40 dr=0 | Figura 9 Marco teórico de facilidad de uso percibida y utilidad percibida en la adopción d
+   P41 dr=0 | Figura 10 Factores determinantes de la aceptación y uso de un sistema de información del p
+   P42 dr=0 | Figura 11 Fases del ciclo de desarrollo Extreme Programming (XP) adaptado a SIVAC	39
+   P43 dr=0 | Figura 12 Diagrama de Casos de Uso del Sistema SIVAC	48

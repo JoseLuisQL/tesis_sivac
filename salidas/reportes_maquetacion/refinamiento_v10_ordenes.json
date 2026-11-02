@@ -1,0 +1,17 @@
+{
+  "metadatos": {
+    "base": "informe_final_v10.docx",
+    "proposito": "Refinamiento de prosa y limpieza microtipografica posterior a la correccion de centros.",
+    "fecha": "2026-10-21"
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "ancla_original": "y doce operadores, uno en cada uno de los doce centros de acopio restantes, que completan trece centros con personal censado)",
+      "texto_nuevo": "y doce operadores, uno por cada uno de los doce centros de acopio restantes)",
+      "categoria": "prosa",
+      "justificacion": "Elimina la redundancia con la oracion inmediatamente anterior, que ya declara los trece centros con personal censal."
+    }
+  ]
+}

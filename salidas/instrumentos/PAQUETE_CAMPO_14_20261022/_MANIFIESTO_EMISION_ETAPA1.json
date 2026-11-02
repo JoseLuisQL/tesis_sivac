@@ -1,0 +1,1201 @@
+{
+  "meta": {
+    "titulo": "Manifiesto de emisión del paquete de campo SIVAC, etapa 1 de 2",
+    "fecha": "2026-10-22",
+    "agente": "maquetador-docx",
+    "squad": "E",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "paquete": "PAQ-TRAB-01",
+    "etapa": "1 de 2: muestra completa de un paquete y guía de campo",
+    "motor": "scripts/utilidades/docx_quirurgico.py + scripts/compiladores/paquete_campo_builder.py"
+  },
+  "divergencias_declaradas": [
+    {
+      "tema": "Ruta de destino",
+      "especificacion": "salidas/evidencias/instrumentos_aplicados/paquetes_campo_20261022",
+      "destino_real": "salidas/instrumentos/PAQUETE_CAMPO_14_20261022",
+      "decision": "El destino único del paquete es el declarado por la Dirección; la ruta de la especificación queda subordinada."
+    },
+    {
+      "tema": "Conteo de documentos",
+      "detalle": "La comisión enumera doce rutas bajo el rótulo de once PDF. Se emiten las doce rutas enumeradas: once formularios más la guía del paquete."
+    },
+    {
+      "tema": "Literales de reactivos",
+      "detalle": "Los ocho reactivos de la modalidad A y los ocho de la modalidad B se extraen programáticamente de las tablas 14 y 15 del modelo rector en cada compilación."
+    },
+    {
+      "tema": "Código en el consentimiento",
+      "detalle": "El consentimiento imprime el código del paquete para vincularlo con su sobre. No imprime nombre, documento de identidad, fecha ni firma."
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\00_GUIA_DEL_PAQUETE.pdf",
+      "documento": "Guía del paquete",
+      "fase": "transversal",
+      "paginas": 1,
+      "bytes": 67400,
+      "sha256": "f979e438767c689773d9683f5fc8f98500c9538fa53c0c4bef25294d132aeb50"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\00_GUIA_DEL_PAQUETE.docx",
+      "documento": "Maestro DOCX · Guía del paquete",
+      "fase": "transversal",
+      "paginas": null,
+      "bytes": 39391,
+      "sha256": "790b7f2fbb3f332f86f3107b260fc8d80ee5d017ffea6b8698bf04ca1cd29f63"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\01_CONSENTIMIENTO.pdf",
+      "documento": "Consentimiento informado",
+      "fase": "PRE",
+      "paginas": 2,
+      "bytes": 72227,
+      "sha256": "92f7b9b9f461fda9672891da17914b741e3c6873937fca8b80a7c95d38b02492"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_01_CONSENTIMIENTO.docx",
+      "documento": "Maestro DOCX · Consentimiento informado",
+      "fase": "PRE",
+      "paginas": null,
+      "bytes": 39970,
+      "sha256": "47beb9957125ac0afa8c8f3fe2f660bf04d85dcc6be55133255eafea64d5394b"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\02_FICHA_01_TIEMPOS_PRE.pdf",
+      "documento": "Ficha 01 de tiempos PRE",
+      "fase": "PRE",
+      "paginas": 2,
+      "bytes": 41411,
+      "sha256": "be29cafe39afd5087a882b06629a91ef58f0a2e2dd523be70cf99276d3c1961e"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_02_FICHA_01_TIEMPOS_PRE.docx",
+      "documento": "Maestro DOCX · Ficha 01 de tiempos PRE",
+      "fase": "PRE",
+      "paginas": null,
+      "bytes": 40714,
+      "sha256": "0ebde5979723cc0031dbb317ffa55867cdfea0935f779268d87244f3a9198b44"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\03_FICHA_02_AUDITORIA_PRE.pdf",
+      "documento": "Ficha 02 de auditoría PRE",
+      "fase": "PRE",
+      "paginas": 2,
+      "bytes": 60414,
+      "sha256": "d2933d27076e5b2809414ff2d0641b94a45189ff0ec5ad256fdaaa078ede8bf2"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_03_FICHA_02_AUDITORIA_PRE.docx",
+      "documento": "Maestro DOCX · Ficha 02 de auditoría PRE",
+      "fase": "PRE",
+      "paginas": null,
+      "bytes": 41348,
+      "sha256": "06bec67a03100025898c95ac62d337745cd125c31f2966f2654a3c72a102ed26"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\04_CUESTIONARIO_A_PRE.pdf",
+      "documento": "Cuestionario A PRE",
+      "fase": "PRE",
+      "paginas": 1,
+      "bytes": 31291,
+      "sha256": "105189e79bedaabe4ca34ebb29f650bbb32d6c3970d486f8c206aa604d3076e2"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_04_CUESTIONARIO_A_PRE.docx",
+      "documento": "Maestro DOCX · Cuestionario A PRE",
+      "fase": "PRE",
+      "paginas": null,
+      "bytes": 39944,
+      "sha256": "d5fc7ec079d12773ef207c646088b992e742b60cb5f75c119286743968a67a64"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\05_INSTRUCCIONES_PARTICIPANTE.pdf",
+      "documento": "Instrucciones al participante PRE",
+      "fase": "PRE",
+      "paginas": 1,
+      "bytes": 15968,
+      "sha256": "d4a23a3a654c494ef35fbd2098a1c364d1a7a64237efe0a3098840c964455a83"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_05_INSTRUCCIONES_PARTICIPANTE.docx",
+      "documento": "Maestro DOCX · Instrucciones al participante PRE",
+      "fase": "PRE",
+      "paginas": null,
+      "bytes": 39449,
+      "sha256": "eff3f32baf3e98f6f3ed3ec12d91c51a7b6e27be0b8a2632fec803df892a2caf"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\06_FICHA_01_TIEMPOS_POST.pdf",
+      "documento": "Ficha 01 de tiempos POST",
+      "fase": "POST",
+      "paginas": 2,
+      "bytes": 41421,
+      "sha256": "977bef316d32c46e6971122a8cf74cb6c2637170dc0f33e9781cdef6d7fc983d"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_06_FICHA_01_TIEMPOS_POST.docx",
+      "documento": "Maestro DOCX · Ficha 01 de tiempos POST",
+      "fase": "POST",
+      "paginas": null,
+      "bytes": 40715,
+      "sha256": "022afadd3dbf61cfa6b87054129a998843f3d62b33631b7b9fd1971e9e299587"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\07_FICHA_02_AUDITORIA_POST.pdf",
+      "documento": "Ficha 02 de auditoría POST",
+      "fase": "POST",
+      "paginas": 2,
+      "bytes": 60418,
+      "sha256": "b681e39c61ca4f27a1814a1efb5c51e378ecd8d6372f922653b3e65fd3515115"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_07_FICHA_02_AUDITORIA_POST.docx",
+      "documento": "Maestro DOCX · Ficha 02 de auditoría POST",
+      "fase": "POST",
+      "paginas": null,
+      "bytes": 41351,
+      "sha256": "0f2672819483e280ca543172c162ce02ab937255a55a9daa939d6984a6be87b6"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\08_CUESTIONARIO_A_POST.pdf",
+      "documento": "Cuestionario A POST",
+      "fase": "POST",
+      "paginas": 1,
+      "bytes": 31293,
+      "sha256": "92cdaf606bb292c81ae4d3f9cfa4fd9d3cdd018e31564901c8b8d163b5866a15"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_08_CUESTIONARIO_A_POST.docx",
+      "documento": "Maestro DOCX · Cuestionario A POST",
+      "fase": "POST",
+      "paginas": null,
+      "bytes": 39946,
+      "sha256": "c42da590fff9800056d969b71cfe4f1bde4e45d230d868e4512be53abe7193d2"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\09_CUESTIONARIO_B_POST.pdf",
+      "documento": "Cuestionario B POST",
+      "fase": "POST",
+      "paginas": 1,
+      "bytes": 31930,
+      "sha256": "9cafcdb1e5262a28023d8532eeec04ef8fcf3b4d89bdea3daf0da20a318d4cd4"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_09_CUESTIONARIO_B_POST.docx",
+      "documento": "Maestro DOCX · Cuestionario B POST",
+      "fase": "POST",
+      "paginas": null,
+      "bytes": 40110,
+      "sha256": "dca42bb2185c2908d689bfc955d5755c2f3597050c36fc57d35774fb0d3042ca"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\10_INSTRUCCIONES_PARTICIPANTE.pdf",
+      "documento": "Instrucciones al participante POST",
+      "fase": "POST",
+      "paginas": 1,
+      "bytes": 15904,
+      "sha256": "0e3bd8956acb4c47bdf34588f7f6ba1b5722de484999cbe4f0ddac0e88b609fd"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_10_INSTRUCCIONES_PARTICIPANTE.docx",
+      "documento": "Maestro DOCX · Instrucciones al participante POST",
+      "fase": "POST",
+      "paginas": null,
+      "bytes": 39450,
+      "sha256": "758bddaa22ccd900b34fc76f5b872a4e71d4ddc5f75521e16addaff5cc3beaa8"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\03_DEVOLUCION\\HOJA_DE_RECEPCION.pdf",
+      "documento": "Hoja de recepción",
+      "fase": "transversal",
+      "paginas": 1,
+      "bytes": 23975,
+      "sha256": "95b7e97b355b74ff38464c744546e1565fa06e69bdc9ec7f5ead334a87b0ae57"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\03_DEVOLUCION_HOJA_DE_RECEPCION.docx",
+      "documento": "Maestro DOCX · Hoja de recepción",
+      "fase": "transversal",
+      "paginas": null,
+      "bytes": 39262,
+      "sha256": "cb6d80de59892636d987b4f6a82582ba781d6713fd79e97bfda514977cebac20"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\00_GUIA_DE_CAMPO_SIVAC_20261022.pdf",
+      "documento": "Guía de campo SIVAC",
+      "fase": "transversal",
+      "paginas": 14,
+      "bytes": 224678,
+      "sha256": "b79f17001e75bf710c3c4e7a9eddc685d172b9f47908eeab6765818b25d3b5ba"
+    },
+    {
+      "ruta": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\00_GUIA_DE_CAMPO_SIVAC_20261022.docx",
+      "documento": "Maestro DOCX · Guía de campo",
+      "fase": "transversal",
+      "paginas": null,
+      "bytes": 52976,
+      "sha256": "490a71fbb51fe0ff0a17adfea05ac48b000b63d93b4523c3c0fa4bc771df90a9"
+    }
+  ],
+  "verificaciones": {
+    "formularios": {
+      "00_GUIA_DEL_PAQUETE.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\00_GUIA_DEL_PAQUETE.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\00_GUIA_DEL_PAQUETE.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 67400,
+        "sha256_pdf": "f979e438767c689773d9683f5fc8f98500c9538fa53c0c4bef25294d132aeb50",
+        "bytes_docx": 39391,
+        "sha256_docx": "790b7f2fbb3f332f86f3107b260fc8d80ee5d017ffea6b8698bf04ca1cd29f63",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 4,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 4,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 1,
+            "filas": 5,
+            "columnas": 3,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 1
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\00_GUIA_DEL_PAQUETE.docx",
+          "existe": true,
+          "sha256": "790b7f2fbb3f332f86f3107b260fc8d80ee5d017ffea6b8698bf04ca1cd29f63",
+          "bytes": 39391,
+          "margenes_unajma_ok": true,
+          "tablas_total": 2,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 2,
+          "tablas_con_cantsplit": 2,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "01_PRE/01_CONSENTIMIENTO.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\01_CONSENTIMIENTO.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_01_CONSENTIMIENTO.docx",
+        "paginas": 2,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 72227,
+        "sha256_pdf": "92f7b9b9f461fda9672891da17914b741e3c6873937fca8b80a7c95d38b02492",
+        "bytes_docx": 39970,
+        "sha256_docx": "47beb9957125ac0afa8c8f3fe2f660bf04d85dcc6be55133255eafea64d5394b",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 2,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 2,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 2,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 2,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_01_CONSENTIMIENTO.docx",
+          "existe": true,
+          "sha256": "47beb9957125ac0afa8c8f3fe2f660bf04d85dcc6be55133255eafea64d5394b",
+          "bytes": 39970,
+          "margenes_unajma_ok": true,
+          "tablas_total": 2,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 0,
+          "tablas_con_cantsplit": 2,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "01_PRE/02_FICHA_01_TIEMPOS_PRE.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\02_FICHA_01_TIEMPOS_PRE.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_02_FICHA_01_TIEMPOS_PRE.docx",
+        "paginas": 2,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 41411,
+        "sha256_pdf": "be29cafe39afd5087a882b06629a91ef58f0a2e2dd523be70cf99276d3c1961e",
+        "bytes_docx": 40714,
+        "sha256_docx": "0ebde5979723cc0031dbb317ffa55867cdfea0935f779268d87244f3a9198b44",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 4,
+            "columnas": 8,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 4,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 2,
+            "filas": 4,
+            "columnas": 8,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 4,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 3,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 3,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 4,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 5,
+            "filas": 7,
+            "columnas": 6,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 7,
+            "filas_tblHeader": 1
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_02_FICHA_01_TIEMPOS_PRE.docx",
+          "existe": true,
+          "sha256": "0ebde5979723cc0031dbb317ffa55867cdfea0935f779268d87244f3a9198b44",
+          "bytes": 40714,
+          "margenes_unajma_ok": true,
+          "tablas_total": 6,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 4,
+          "tablas_con_cantsplit": 6,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "01_PRE/03_FICHA_02_AUDITORIA_PRE.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\03_FICHA_02_AUDITORIA_PRE.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_03_FICHA_02_AUDITORIA_PRE.docx",
+        "paginas": 2,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 60414,
+        "sha256_pdf": "d2933d27076e5b2809414ff2d0641b94a45189ff0ec5ad256fdaaa078ede8bf2",
+        "bytes_docx": 41348,
+        "sha256_docx": "06bec67a03100025898c95ac62d337745cd125c31f2966f2654a3c72a102ed26",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 6,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 6,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 13,
+            "columnas": 13,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 13,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 2,
+            "filas": 13,
+            "columnas": 6,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 13,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 5,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 4,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_03_FICHA_02_AUDITORIA_PRE.docx",
+          "existe": true,
+          "sha256": "06bec67a03100025898c95ac62d337745cd125c31f2966f2654a3c72a102ed26",
+          "bytes": 41348,
+          "margenes_unajma_ok": true,
+          "tablas_total": 5,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 3,
+          "tablas_con_cantsplit": 5,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "01_PRE/04_CUESTIONARIO_A_PRE.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\04_CUESTIONARIO_A_PRE.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_04_CUESTIONARIO_A_PRE.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 31291,
+        "sha256_pdf": "105189e79bedaabe4ca34ebb29f650bbb32d6c3970d486f8c206aa604d3076e2",
+        "bytes_docx": 39944,
+        "sha256_docx": "d5fc7ec079d12773ef207c646088b992e742b60cb5f75c119286743968a67a64",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 1,
+            "columnas": 5,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 2,
+            "filas": 11,
+            "columnas": 7,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 11,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_04_CUESTIONARIO_A_PRE.docx",
+          "existe": true,
+          "sha256": "d5fc7ec079d12773ef207c646088b992e742b60cb5f75c119286743968a67a64",
+          "bytes": 39944,
+          "margenes_unajma_ok": true,
+          "tablas_total": 4,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 1,
+          "tablas_con_cantsplit": 4,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "01_PRE/05_INSTRUCCIONES_PARTICIPANTE.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\01_PRE\\05_INSTRUCCIONES_PARTICIPANTE.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_05_INSTRUCCIONES_PARTICIPANTE.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 15968,
+        "sha256_pdf": "d4a23a3a654c494ef35fbd2098a1c364d1a7a64237efe0a3098840c964455a83",
+        "bytes_docx": 39449,
+        "sha256_docx": "eff3f32baf3e98f6f3ed3ec12d91c51a7b6e27be0b8a2632fec803df892a2caf",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\01_PRE_05_INSTRUCCIONES_PARTICIPANTE.docx",
+          "existe": true,
+          "sha256": "eff3f32baf3e98f6f3ed3ec12d91c51a7b6e27be0b8a2632fec803df892a2caf",
+          "bytes": 39449,
+          "margenes_unajma_ok": true,
+          "tablas_total": 1,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 0,
+          "tablas_con_cantsplit": 1,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "02_POST/06_FICHA_01_TIEMPOS_POST.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\06_FICHA_01_TIEMPOS_POST.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_06_FICHA_01_TIEMPOS_POST.docx",
+        "paginas": 2,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 41421,
+        "sha256_pdf": "977bef316d32c46e6971122a8cf74cb6c2637170dc0f33e9781cdef6d7fc983d",
+        "bytes_docx": 40715,
+        "sha256_docx": "022afadd3dbf61cfa6b87054129a998843f3d62b33631b7b9fd1971e9e299587",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 4,
+            "columnas": 8,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 4,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 2,
+            "filas": 4,
+            "columnas": 8,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 4,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 3,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 3,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 4,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 5,
+            "filas": 7,
+            "columnas": 6,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 7,
+            "filas_tblHeader": 1
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_06_FICHA_01_TIEMPOS_POST.docx",
+          "existe": true,
+          "sha256": "022afadd3dbf61cfa6b87054129a998843f3d62b33631b7b9fd1971e9e299587",
+          "bytes": 40715,
+          "margenes_unajma_ok": true,
+          "tablas_total": 6,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 4,
+          "tablas_con_cantsplit": 6,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "02_POST/07_FICHA_02_AUDITORIA_POST.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\07_FICHA_02_AUDITORIA_POST.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_07_FICHA_02_AUDITORIA_POST.docx",
+        "paginas": 2,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 60418,
+        "sha256_pdf": "b681e39c61ca4f27a1814a1efb5c51e378ecd8d6372f922653b3e65fd3515115",
+        "bytes_docx": 41351,
+        "sha256_docx": "0f2672819483e280ca543172c162ce02ab937255a55a9daa939d6984a6be87b6",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 6,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 6,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 13,
+            "columnas": 13,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 13,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 2,
+            "filas": 13,
+            "columnas": 6,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 13,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 5,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 4,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_07_FICHA_02_AUDITORIA_POST.docx",
+          "existe": true,
+          "sha256": "0f2672819483e280ca543172c162ce02ab937255a55a9daa939d6984a6be87b6",
+          "bytes": 41351,
+          "margenes_unajma_ok": true,
+          "tablas_total": 5,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 3,
+          "tablas_con_cantsplit": 5,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "02_POST/08_CUESTIONARIO_A_POST.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\08_CUESTIONARIO_A_POST.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_08_CUESTIONARIO_A_POST.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 31293,
+        "sha256_pdf": "92cdaf606bb292c81ae4d3f9cfa4fd9d3cdd018e31564901c8b8d163b5866a15",
+        "bytes_docx": 39946,
+        "sha256_docx": "c42da590fff9800056d969b71cfe4f1bde4e45d230d868e4512be53abe7193d2",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 1,
+            "columnas": 5,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 2,
+            "filas": 11,
+            "columnas": 7,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 11,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_08_CUESTIONARIO_A_POST.docx",
+          "existe": true,
+          "sha256": "c42da590fff9800056d969b71cfe4f1bde4e45d230d868e4512be53abe7193d2",
+          "bytes": 39946,
+          "margenes_unajma_ok": true,
+          "tablas_total": 4,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 1,
+          "tablas_con_cantsplit": 4,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "02_POST/09_CUESTIONARIO_B_POST.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\09_CUESTIONARIO_B_POST.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_09_CUESTIONARIO_B_POST.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 31930,
+        "sha256_pdf": "9cafcdb1e5262a28023d8532eeec04ef8fcf3b4d89bdea3daf0da20a318d4cd4",
+        "bytes_docx": 40110,
+        "sha256_docx": "dca42bb2185c2908d689bfc955d5755c2f3597050c36fc57d35774fb0d3042ca",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 1,
+            "columnas": 5,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 2,
+            "filas": 11,
+            "columnas": 7,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 11,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 1,
+            "columnas": 1,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 1,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_09_CUESTIONARIO_B_POST.docx",
+          "existe": true,
+          "sha256": "dca42bb2185c2908d689bfc955d5755c2f3597050c36fc57d35774fb0d3042ca",
+          "bytes": 40110,
+          "margenes_unajma_ok": true,
+          "tablas_total": 4,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 1,
+          "tablas_con_cantsplit": 4,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "02_POST/10_INSTRUCCIONES_PARTICIPANTE.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\02_POST\\10_INSTRUCCIONES_PARTICIPANTE.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_10_INSTRUCCIONES_PARTICIPANTE.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 15904,
+        "sha256_pdf": "0e3bd8956acb4c47bdf34588f7f6ba1b5722de484999cbe4f0ddac0e88b609fd",
+        "bytes_docx": 39450,
+        "sha256_docx": "758bddaa22ccd900b34fc76f5b872a4e71d4ddc5f75521e16addaff5cc3beaa8",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\02_POST_10_INSTRUCCIONES_PARTICIPANTE.docx",
+          "existe": true,
+          "sha256": "758bddaa22ccd900b34fc76f5b872a4e71d4ddc5f75521e16addaff5cc3beaa8",
+          "bytes": 39450,
+          "margenes_unajma_ok": true,
+          "tablas_total": 1,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 0,
+          "tablas_con_cantsplit": 1,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      },
+      "03_DEVOLUCION/HOJA_DE_RECEPCION.pdf": {
+        "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\PAQ-TRAB-01\\03_DEVOLUCION\\HOJA_DE_RECEPCION.pdf",
+        "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\03_DEVOLUCION_HOJA_DE_RECEPCION.docx",
+        "paginas": 1,
+        "desborde_inferior_pt": 0.0,
+        "bytes_pdf": 23975,
+        "sha256_pdf": "95b7e97b355b74ff38464c744546e1565fa06e69bdc9ec7f5ead334a87b0ae57",
+        "bytes_docx": 39262,
+        "sha256_docx": "cb6d80de59892636d987b4f6a82582ba781d6713fd79e97bfda514977cebac20",
+        "codigos_trab": [
+          "TRAB-01"
+        ],
+        "fechas_impresas": [],
+        "tokens_prohibidos": [],
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 0
+          },
+          {
+            "indice": 1,
+            "filas": 12,
+            "columnas": 5,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 12,
+            "filas_tblHeader": 1
+          }
+        ],
+        "tablas_fuera_de_ancho": [],
+        "tablas_sin_rejilla": [],
+        "tablas_flotantes": [],
+        "filas_sin_cantsplit": [],
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\TRAB-01\\03_DEVOLUCION_HOJA_DE_RECEPCION.docx",
+          "existe": true,
+          "sha256": "cb6d80de59892636d987b4f6a82582ba781d6713fd79e97bfda514977cebac20",
+          "bytes": 39262,
+          "margenes_unajma_ok": true,
+          "tablas_total": 2,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 1,
+          "tablas_con_cantsplit": 2,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        }
+      }
+    },
+    "general": {
+      "guia": {
+        "auditoria_motor": {
+          "archivo": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\PAQUETE_CAMPO_14_20261022\\_MAESTROS_DOCX\\00_GUIA_DE_CAMPO_SIVAC_20261022.docx",
+          "existe": true,
+          "sha256": "490a71fbb51fe0ff0a17adfea05ac48b000b63d93b4523c3c0fa4bc771df90a9",
+          "bytes": 52976,
+          "margenes_unajma_ok": true,
+          "tablas_total": 7,
+          "tablas_flotantes": 0,
+          "tablas_con_header": 7,
+          "tablas_con_cantsplit": 7,
+          "referencias_sangria_francesa": 0,
+          "formulas_omml": 0,
+          "cumple_apa7": true,
+          "hallazgos": []
+        },
+        "tablas": [
+          {
+            "indice": 0,
+            "filas": 5,
+            "columnas": 5,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 5,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 1,
+            "filas": 17,
+            "columnas": 4,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 17,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 2,
+            "filas": 7,
+            "columnas": 2,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 7,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 3,
+            "filas": 10,
+            "columnas": 5,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 10,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 4,
+            "filas": 8,
+            "columnas": 3,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 8,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 5,
+            "filas": 15,
+            "columnas": 7,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 15,
+            "filas_tblHeader": 1
+          },
+          {
+            "indice": 6,
+            "filas": 15,
+            "columnas": 12,
+            "ancho_dxa": 8788,
+            "flotante": false,
+            "insideV": "single",
+            "filas_cantSplit": 15,
+            "filas_tblHeader": 1
+          }
+        ],
+        "paginas": 14
+      },
+      "documentos_emitidos": 12,
+      "todos_con_codigo": true,
+      "sin_fechas_impresas": true,
+      "sin_tokens_prohibidos": true,
+      "todas_las_tablas_en_ancho": true,
+      "rejilla_completa": true,
+      "sin_tablas_flotantes": true,
+      "filas_no_fragmentables": true,
+      "margenes_unajma": true,
+      "paginas_en_rango": true,
+      "sin_desborde_inferior": true
+    }
+  }
+}

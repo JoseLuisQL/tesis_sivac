@@ -1,0 +1,368 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v16.docx",
+  "destino": null,
+  "solo_verificar": true,
+  "sha256_origen": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5",
+  "sha256_destino": null,
+  "parrafos": 824,
+  "tablas": 59,
+  "total_ordenes": 21,
+  "total_aplicadas": 21,
+  "total_fallidas": 0,
+  "lotes": [
+    {
+      "lote": "ordenes_v17_loteA_20261021",
+      "total": 21,
+      "aplicadas": 21,
+      "fallidas": 0,
+      "detalles": [
+        {
+          "indice_docx": 10,
+          "ubicacion": "PÁRRAFO 10",
+          "ancla": "DNI N.° [Completar DNI oficial antes de impresión],",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 18,
+          "ubicacion": "PÁRRAFO 18",
+          "ancla": "DNI N.° [Completar DNI oficial antes de impresión]",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 142,
+          "ubicacion": "PÁRRAFO 142",
+          "ancla": " [Pending].",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 792,
+          "ubicacion": "PÁRRAFO 792",
+          "ancla": "Frío) en Enfermería / Especialista en Inmunizaciones y Cadena de Frío)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 794,
+          "ubicacion": "PÁRRAFO 794",
+          "ancla": "Cuantitativa) / Especialista en Estadística y Medición Cuantitativa)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 803,
+          "ubicacion": "PÁRRAFO 803",
+          "ancla": "dictámenes de los tres jueces.) con confiabilidad Alfa de Cronbach > 0.90.",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 753,
+          "ubicacion": "PÁRRAFO 753",
+          "ancla": "Standardization, e International",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 155,
+          "ubicacion": "PÁRRAFO 155",
+          "ancla": "[OPS] y PATH, 2020",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 155,
+          "ubicacion": "PÁRRAFO 155",
+          "ancla": "y PATH, 2020).",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 655,
+          "ubicacion": "PÁRRAFO 655",
+          "ancla": "(T_reg y T_vale)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 23,
+          "ubicacion": "TABLA 23, fila 9, columna 5",
+          "ancla": "(MSD = Saldo / CPA)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 31,
+          "ubicacion": "TABLA 31, fila 5, columna 3",
+          "ancla": "(Q_entregada = Q_programada)",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 50,
+          "ubicacion": "TABLA 50, fila 2, columna 3",
+          "ancla": "(Total registros conformes sin error / Total transacciones auditadas) * 100",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 50,
+          "ubicacion": "TABLA 50, fila 3, columna 3",
+          "ancla": "(Cantidad física biológica entregada / Cantidad programada en requerimiento) * 1",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 620,
+          "ubicacion": "PÁRRAFO 620",
+          "ancla": "(κ = (P_o - P_e) / (1 - P_e))",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 652,
+          "ubicacion": "PÁRRAFO 652",
+          "ancla": "Nota. Intervalo de confianza (IC) al 95% calculado según el método de distribuci",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 527,
+          "ubicacion": "PÁRRAFO 527",
+          "ancla": "En la Figura 44 se ilustra la ejecución real de las pruebas unitarias de Movimie",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 528,
+          "ubicacion": "PÁRRAFO 528",
+          "ancla": "Suite de Pruebas Unitarias Automatizadas en Jest para Algoritmos de Movimientos ",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 530,
+          "ubicacion": "PÁRRAFO 530",
+          "ancla": "Consola de ejecución de la suite de pruebas unitarias en Jest demostrando el cum",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 811,
+          "ubicacion": "PÁRRAFO 811",
+          "ancla": "En la Tabla A6.1 se sintetizan",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        },
+        {
+          "indice_docx": 537,
+          "ubicacion": "PÁRRAFO 537",
+          "ancla": "Pruebas de aceptación ejecutadas en las instalaciones de la DISA Apurímac II con",
+          "sustituciones": 1,
+          "modo": "indice",
+          "estado": "aplicada"
+        }
+      ]
+    }
+  ],
+  "matrices_anexo": [],
+  "tablas_rebalanceadas": [],
+  "saneamiento_espacios": {
+    "acciones": [],
+    "parrafos_saneados": 0,
+    "indices": [],
+    "caracteres_recortados": 0
+  },
+  "acciones": [
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 10,
+      "ubicacion": "PÁRRAFO 10",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 18,
+      "ubicacion": "PÁRRAFO 18",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 142,
+      "ubicacion": "PÁRRAFO 142",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 792,
+      "ubicacion": "PÁRRAFO 792",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 794,
+      "ubicacion": "PÁRRAFO 794",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 803,
+      "ubicacion": "PÁRRAFO 803",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 753,
+      "ubicacion": "PÁRRAFO 753",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 155,
+      "ubicacion": "PÁRRAFO 155",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 155,
+      "ubicacion": "PÁRRAFO 155",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 655,
+      "ubicacion": "PÁRRAFO 655",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 23,
+      "ubicacion": "TABLA 23, fila 9, columna 5",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 31,
+      "ubicacion": "TABLA 31, fila 5, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 50,
+      "ubicacion": "TABLA 50, fila 2, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 50,
+      "ubicacion": "TABLA 50, fila 3, columna 3",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 620,
+      "ubicacion": "PÁRRAFO 620",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 652,
+      "ubicacion": "PÁRRAFO 652",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 527,
+      "ubicacion": "PÁRRAFO 527",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 528,
+      "ubicacion": "PÁRRAFO 528",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 530,
+      "ubicacion": "PÁRRAFO 530",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 811,
+      "ubicacion": "PÁRRAFO 811",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    },
+    {
+      "categoria": "orden_edicion",
+      "lote": "ordenes_v17_loteA_20261021",
+      "indice_docx": 537,
+      "ubicacion": "PÁRRAFO 537",
+      "estado": "aplicada",
+      "detalle": "1 sustitucion(es); modo indice"
+    }
+  ]
+}

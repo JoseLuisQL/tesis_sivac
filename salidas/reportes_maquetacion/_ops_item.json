@@ -1,0 +1,328 @@
+{
+  "id" : "580b5b69-3b5e-4abb-acf5-7a834c5c5305",
+  "uuid" : "580b5b69-3b5e-4abb-acf5-7a834c5c5305",
+  "name" : "Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas",
+  "handle" : "10665.2/53120",
+  "metadata" : {
+    "dc.contributor.author" : [ {
+      "value" : "Mayer-Foulkes, David",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Serván-Mori, Edson",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Nigenda, Gustavo",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.date.accessioned" : [ {
+      "value" : "2020",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.available" : [ {
+      "value" : "2020",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.issued" : [ {
+      "value" : "2020",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.abstract" : [ {
+      "value" : "[RESUMEN]. Para lograr los objetivos de desarrollo y salud sostenibles, es esencial incrementar las capacidades tecnológicas de las poblaciones más desfavorecidas. Entrado el siglo XXI, existen las tecnologías necesarias para ello. El déficit en capacidades tecnológicas se debe a la existencia de un gradiente tecnológico entre la producción de gran y de pequeña escalas, debido a la falta de incentivos para la innovación y la difusión en empresas y comunidades pequeñas. En estos ámbitos el cambio tecnológico, punto medular del desarrollo, es un bien público que la economía de mercado no provee eficientemente. Su provisión requiere la aplicación de políticas públicas de innovación y difusión tecnológicas. La reducción del gradiente tecnológico constituye, pues, parte medular de la Agenda 2030 para el Desarrollo Sostenible, de las Naciones Unidas, y la Agenda de Salud Sostenible para las Américas 2018-2030, de la Organización Panamericana de la Salud. Esto es aplicable, así mismo, al desarrollo de los sistemas de salud, que funcionan también como mecanismos de redistribución para romper las trampas de pobreza. Asimismo, las experiencias en esos sistemas tienen relevancia para aplicar políticas de incremento de capacidades tecnológicas que disminuyan la pobreza, mejoren los determinantes sociales de la salud y, con ello, reduzcan la magnitud de la trampa de desarrollo humano.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "[ABSTRACT]. In order to achieve the Sustainable Development and Health Goals, it is essential to increase the technological capacity of the most disadvantaged populations. In the 21st century, the necessary technologies for this exist. The gap in technological capacity reflects the existence of a technological gradient between large- and small-scale production, due to an absence of incentives for innovation and a lack of technological dissemination in small businesses and communities. Technological change is central to development, but it is a public good that the market economy does not provide efficiently. Providing it requires the implementation of public policies aimed at technological innovation and dissemination. Reducing the technological gradient is therefore a major part of the United Nations 2030 Agenda for Sustainable Development and the Pan American Health Organization’s 2018-2030 Sustainable Health Agenda for the Americas. This also applies to the development of health systems, which function as a redistribution mechanism to break poverty traps. In addition, experiences in these systems are relevant to the implementation of policies that increase technological capacities aimed at reducing poverty, improving social determinants of health, and thereby reducing the scale of the human development trap.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "[RESUMO]. Para alcançar os objetivos de desenvolvimento e saúde sustentáveis, é fundamental aumentar a capacidade tecnológica das populações mais desfavorecidas. Com a entrada do século XXI, há tecnologias necessárias para isso. O déficit em capacidade tecnológica decorre de um gradiente tecnológico entre a produção em pequena e larga escala pela falta de incentivos à inovação e difusão em empresas e comunidades pequenas. Nestas esferas, a evolução tecnológica, que é o eixo do desenvolvimento, é um bem público que não é provido de forma eficiente pela economia de mercado. Políticas públicas de inovação e difusão tecnológicas são necessárias. Diminuir o gradiente tecnológico constitui, portanto, a base da Agenda 2030 para o Desenvolvimento Sustentável, da Agenda das Nações Unidas e da Agenda de Saúde Sustentável para as Américas 2018-2030 da Organização Pan-Americana da Saúde. Requer também o desenvolvimento dos sistemas de saúde que servem como mecanismos de redistribuição para romper com as armadilhas da pobreza. Ademais, a experiência adquirida nesses sistemas é indispensável para instituir políticas de aumento da capacidade tecnológica que diminuam a pobreza, melhorem os determinantes sociais da saúde e, assim, reduzam a dimensão da armadilha do desenvolvimento humano.",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.identifier.citation" : [ {
+      "value" : "Mayer-Foulker D, Serván-Mori E, Nigenda G. Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas. Rev Panam Salud Publica. 2020;44:e141. https://doi.org/10.26633/RPSP.2020.141",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.doi" : [ {
+      "value" : "https://doi.org/10.26633/RPSP.2020.141",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.issn" : [ {
+      "value" : "1680 5348",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.uri" : [ {
+      "value" : "https://iris.paho.org/handle/10665.2/53120",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.language.iso" : [ {
+      "value" : "es",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.relation.ispartofjournal" : [ {
+      "value" : "Revista Panamericana de Salud Pública",
+      "language" : "es_ES",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Pan American Journal of Public Health",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    } ],
+    "dc.relation.ispartofseries" : [ {
+      "value" : "Rev Panam Salud Pública;44, dic. 2020",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights" : [ {
+      "value" : "Attribution-NonCommercial-NoDerivs 3.0 IGO",
+      "language" : "*",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights.holder" : [ {
+      "value" : "Pan American Health Organization",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights.uri" : [ {
+      "value" : "http://creativecommons.org/licenses/by-nc-nd/3.0/igo/",
+      "language" : "*",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.subject" : [ {
+      "value" : "Ciencia, Tecnología y Sociedad",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Desarrollo Sostenible",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Equidad",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    }, {
+      "value" : "Sistemas de Salud",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 3
+    }, {
+      "value" : "Política de Salud",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 4
+    }, {
+      "value" : "Determinantes Sociales de la Salud",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 5
+    }, {
+      "value" : "Science, Technology and Society",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 6
+    }, {
+      "value" : "Sustainable Development",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 7
+    }, {
+      "value" : "Equity",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 8
+    }, {
+      "value" : "Health Systems",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 9
+    }, {
+      "value" : "Health Policy",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 10
+    }, {
+      "value" : "Social Determinants of Health",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 11
+    }, {
+      "value" : "Ciência, Tecnologia e Sociedade",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 12
+    }, {
+      "value" : "Desenvolvimento Sustentável",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 13
+    }, {
+      "value" : "Equidade",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 14
+    }, {
+      "value" : "Sistemas de Saúde",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 15
+    } ],
+    "dc.title" : [ {
+      "value" : "Los Objetivos de Desarrollo Sostenible y las capacidades tecnológicas",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "The Sustainable Development Goals and Technological Capacity",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Os Objetivos de Desenvolvimento Sustentável e a capacidade tecnológica",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.type" : [ {
+      "value" : "Journal articles",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.articletype" : [ {
+      "value" : "Opinion and analysis",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.isfeatured" : [ {
+      "value" : "0",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "paho.source.centercode" : [ {
+      "value" : "US1.1",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ]
+  },
+  "inArchive" : true,
+  "discoverable" : true,
+  "withdrawn" : false,
+  "lastModified" : "2021-11-19T03:37:11.585+00:00",
+  "entityType" : null,
+  "type" : "item",
+  "_links" : {
+    "accessStatus" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/accessStatus"
+    },
+    "bundles" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/bundles"
+    },
+    "identifiers" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/identifiers"
+    },
+    "mappedCollections" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/mappedCollections"
+    },
+    "owningCollection" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/owningCollection"
+    },
+    "relationships" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/relationships"
+    },
+    "version" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/version"
+    },
+    "templateItemOf" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/templateItemOf"
+    },
+    "thumbnail" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/thumbnail"
+    },
+    "relateditemlistconfigs" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305/relateditemlistconfigs"
+    },
+    "self" : {
+      "href" : "https://iris.paho.org/server/api/core/items/580b5b69-3b5e-4abb-acf5-7a834c5c5305"
+    }
+  }
+}

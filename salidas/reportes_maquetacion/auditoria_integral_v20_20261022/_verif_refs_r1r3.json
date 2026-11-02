@@ -1,0 +1,380 @@
+[
+ {
+  "idx": 726,
+  "apellido": "Addy",
+  "anio": "2023",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 727,
+  "apellido": "Aiken",
+  "anio": "1985",
+  "ocurrencias": 13,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 728,
+  "apellido": "Alvarez",
+  "anio": "2023",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 729,
+  "apellido": "Arisholm",
+  "anio": "2007",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 730,
+  "apellido": "Astuhuaman",
+  "anio": "2023",
+  "ocurrencias": 3,
+  "con_anio_cerca": 3
+ },
+ {
+  "idx": 731,
+  "apellido": "Balón",
+  "anio": "2023",
+  "ocurrencias": 4,
+  "con_anio_cerca": 4
+ },
+ {
+  "idx": 732,
+  "apellido": "Beck",
+  "anio": "1999",
+  "ocurrencias": 10,
+  "con_anio_cerca": 10
+ },
+ {
+  "idx": 733,
+  "apellido": "Brooks",
+  "anio": "2024",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 734,
+  "apellido": "Champi",
+  "anio": "2023",
+  "ocurrencias": 6,
+  "con_anio_cerca": 6
+ },
+ {
+  "idx": 735,
+  "apellido": "Chekol",
+  "anio": "2023",
+  "ocurrencias": 6,
+  "con_anio_cerca": 6
+ },
+ {
+  "idx": 736,
+  "apellido": "Cohen",
+  "anio": "1988",
+  "ocurrencias": 15,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 737,
+  "apellido": "Cohn",
+  "anio": "2004",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 738,
+  "apellido": "Cronbach",
+  "anio": "1951",
+  "ocurrencias": 10,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 739,
+  "apellido": "Dang",
+  "anio": "2024",
+  "ocurrencias": 7,
+  "con_anio_cerca": 7
+ },
+ {
+  "idx": 740,
+  "apellido": "Davis",
+  "anio": "1989",
+  "ocurrencias": 9,
+  "con_anio_cerca": 9
+ },
+ {
+  "idx": 741,
+  "apellido": "De",
+  "anio": "2010",
+  "ocurrencias": 5876,
+  "con_anio_cerca": 38
+ },
+ {
+  "idx": 742,
+  "apellido": "Dolan",
+  "anio": "2020",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 743,
+  "apellido": "Ergetie",
+  "anio": "2023",
+  "ocurrencias": 3,
+  "con_anio_cerca": 3
+ },
+ {
+  "idx": 744,
+  "apellido": "Feldt",
+  "anio": "1965",
+  "ocurrencias": 3,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 745,
+  "apellido": "Garcia",
+  "anio": "2023",
+  "ocurrencias": 6,
+  "con_anio_cerca": 6
+ },
+ {
+  "idx": 746,
+  "apellido": "George",
+  "anio": "2003",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 747,
+  "apellido": "Gilbert",
+  "anio": "2020",
+  "ocurrencias": 4,
+  "con_anio_cerca": 4
+ },
+ {
+  "idx": 748,
+  "apellido": "Gutiérrez-Aguado",
+  "anio": "2024",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 749,
+  "apellido": "Hernández-Sampieri",
+  "anio": "2014",
+  "ocurrencias": 13,
+  "con_anio_cerca": 12
+ },
+ {
+  "idx": 750,
+  "apellido": "Hernández-Sampieri",
+  "anio": "2018",
+  "ocurrencias": 13,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 751,
+  "apellido": "Holm",
+  "anio": "1979",
+  "ocurrencias": 23,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 752,
+  "apellido": "Hussain",
+  "anio": "2025",
+  "ocurrencias": 4,
+  "con_anio_cerca": 4
+ },
+ {
+  "idx": 753,
+  "apellido": "Inarotul",
+  "anio": "2025",
+  "ocurrencias": 3,
+  "con_anio_cerca": 3
+ },
+ {
+  "idx": 754,
+  "apellido": "International",
+  "anio": "2023",
+  "ocurrencias": 8,
+  "con_anio_cerca": 7
+ },
+ {
+  "idx": 755,
+  "apellido": "Kigenza",
+  "anio": "2023",
+  "ocurrencias": 4,
+  "con_anio_cerca": 4
+ },
+ {
+  "idx": 756,
+  "apellido": "Kokol",
+  "anio": "2022",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 757,
+  "apellido": "Luján",
+  "anio": "2002",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 758,
+  "apellido": "Luo",
+  "anio": "2024",
+  "ocurrencias": 7,
+  "con_anio_cerca": 5
+ },
+ {
+  "idx": 759,
+  "apellido": "Mamani-Pari",
+  "anio": "2026",
+  "ocurrencias": 3,
+  "con_anio_cerca": 3
+ },
+ {
+  "idx": 760,
+  "apellido": "Mego",
+  "anio": "2021",
+  "ocurrencias": 5,
+  "con_anio_cerca": 5
+ },
+ {
+  "idx": 761,
+  "apellido": "Mekonen",
+  "anio": "2024",
+  "ocurrencias": 3,
+  "con_anio_cerca": 3
+ },
+ {
+  "idx": 762,
+  "apellido": "Ministerio",
+  "anio": "2022",
+  "ocurrencias": 15,
+  "con_anio_cerca": 8
+ },
+ {
+  "idx": 763,
+  "apellido": "Moumane",
+  "anio": "2024",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 764,
+  "apellido": "Ndlovu",
+  "anio": "2022",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 765,
+  "apellido": "Oliveira",
+  "anio": "2020",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 766,
+  "apellido": "Organización",
+  "anio": "2019",
+  "ocurrencias": 11,
+  "con_anio_cerca": 4
+ },
+ {
+  "idx": 767,
+  "apellido": "Pressman",
+  "anio": "2010",
+  "ocurrencias": 5,
+  "con_anio_cerca": 5
+ },
+ {
+  "idx": 768,
+  "apellido": "Quispe",
+  "anio": "2024",
+  "ocurrencias": 4,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 769,
+  "apellido": "Razali",
+  "anio": "2011",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 770,
+  "apellido": "Rosenthal",
+  "anio": "1991",
+  "ocurrencias": 7,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 771,
+  "apellido": "Ruiz",
+  "anio": "2023",
+  "ocurrencias": 4,
+  "con_anio_cerca": 4
+ },
+ {
+  "idx": 772,
+  "apellido": "Shapiro",
+  "anio": "1965",
+  "ocurrencias": 12,
+  "con_anio_cerca": 3
+ },
+ {
+  "idx": 773,
+  "apellido": "Shen",
+  "anio": "2024",
+  "ocurrencias": 6,
+  "con_anio_cerca": 6
+ },
+ {
+  "idx": 774,
+  "apellido": "Sommerville",
+  "anio": "2016",
+  "ocurrencias": 6,
+  "con_anio_cerca": 6
+ },
+ {
+  "idx": 775,
+  "apellido": "Tristán-López",
+  "anio": "2008",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 776,
+  "apellido": "Venkatesh",
+  "anio": "2003",
+  "ocurrencias": 1,
+  "con_anio_cerca": 1
+ },
+ {
+  "idx": 777,
+  "apellido": "Wasswa",
+  "anio": "2023",
+  "ocurrencias": 8,
+  "con_anio_cerca": 8
+ },
+ {
+  "idx": 778,
+  "apellido": "Wilcoxon",
+  "anio": "1945",
+  "ocurrencias": 36,
+  "con_anio_cerca": 2
+ },
+ {
+  "idx": 779,
+  "apellido": "World",
+  "anio": "2021",
+  "ocurrencias": 2,
+  "con_anio_cerca": 2
+ }
+]

@@ -1,0 +1,746 @@
+[
+ {
+  "t": 0,
+  "page": 1,
+  "cols": 1,
+  "rows": 1,
+  "cap": "ACTA DE SUSTENTACIÓN Y APROBACIÓN DE TESIS",
+  "keys": [
+   "universidadnaciona"
+  ]
+ },
+ {
+  "t": 1,
+  "page": 30,
+  "cols": 6,
+  "rows": 14,
+  "cap": "Síntesis comparativa de antecedentes internacionales y nacionales y diferenciación fr",
+  "keys": [
+   "autoryano",
+   "contexto",
+   "disenoymuestra",
+   "variablesindicador"
+  ]
+ },
+ {
+  "t": 2,
+  "page": 46,
+  "cols": 4,
+  "rows": 7,
+  "cap": "Tabla 1 Dimensiones, indicadores y escalas de medición de la gestión de movimientos m",
+  "keys": [
+   "dimension",
+   "indicador",
+   "descripcionoperaci",
+   "unidadyescalademed"
+  ]
+ },
+ {
+  "t": 3,
+  "page": 52,
+  "cols": 3,
+  "rows": 5,
+  "cap": "Roles de usuarios y responsabilidades operativas en la DISA Apurímac II",
+  "keys": [
+   "rolensivac",
+   "actorinstitucional",
+   "responsabilidadese"
+  ]
+ },
+ {
+  "t": 4,
+  "page": 53,
+  "cols": 3,
+  "rows": 17,
+  "cap": "Catálogo de Requerimientos Funcionales del Sistema SIVAC",
+  "keys": [
+   "codigo",
+   "denominaciondelreq",
+   "descripcionoperati"
+  ]
+ },
+ {
+  "t": 5,
+  "page": 55,
+  "cols": 4,
+  "rows": 9,
+  "cap": "Catálogo de Requerimientos No Funcionales según ISO/IEC 25010:2023",
+  "keys": [
+   "codigo",
+   "caracteristicadeca",
+   "especificaciondelr",
+   "metricaoestandarde"
+  ]
+ },
+ {
+  "t": 6,
+  "page": 56,
+  "cols": 4,
+  "rows": 7,
+  "cap": "Matriz de trazabilidad entre Requerimientos Funcionales, Historias de Usuario y Dimen",
+  "keys": [
+   "requerimientofunci",
+   "historiadeusuario",
+   "dimensiondelavaria",
+   "indicadoroficialim"
+  ]
+ },
+ {
+  "t": 7,
+  "page": 57,
+  "cols": 6,
+  "rows": 16,
+  "cap": "Matriz del Planning Game: Estimación en Puntos de Historia, Prioridad e Iteración",
+  "keys": [
+   "codigo",
+   "titulodelahistoria",
+   "prioridad",
+   "estimacionph"
+  ]
+ },
+ {
+  "t": 8,
+  "page": 58,
+  "cols": 5,
+  "rows": 6,
+  "cap": "Plan Detallado de las Cinco Iteraciones de Extreme Programming",
+  "keys": [
+   "iteracion",
+   "enfoqueyentregable",
+   "husasignadas",
+   "esfuerzoph"
+  ]
+ },
+ {
+  "t": 9,
+  "page": 64,
+  "cols": 5,
+  "rows": 10,
+  "cap": "Matriz de Control de Acceso Basado en Roles (RBAC) por Módulos y Operaciones",
+  "keys": [
+   "modulodelsistemasi",
+   "operacionesautoriz",
+   "operacionesparacoo",
+   "operacionesparares"
+  ]
+ },
+ {
+  "t": 10,
+  "page": 67,
+  "cols": 5,
+  "rows": 8,
+  "cap": "Diccionario de Datos: Tabla redes",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 11,
+  "page": 68,
+  "cols": 5,
+  "rows": 7,
+  "cap": "Diccionario de Datos: Tabla microredes",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 12,
+  "page": 69,
+  "cols": 5,
+  "rows": 9,
+  "cap": "Diccionario de Datos: Tabla centros_acopio",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 13,
+  "page": 70,
+  "cols": 5,
+  "rows": 8,
+  "cap": "Diccionario de Datos: Tabla establecimientos",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 14,
+  "page": 71,
+  "cols": 5,
+  "rows": 10,
+  "cap": "Diccionario de Datos: Tablas usuarios y usuarios_centros_acopio",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 15,
+  "page": 72,
+  "cols": 5,
+  "rows": 10,
+  "cap": "Diccionario de Datos: Tabla vacunas",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 16,
+  "page": 73,
+  "cols": 5,
+  "rows": 7,
+  "cap": "Diccionario de Datos: Tablas jeringas y configuracion_jeringa_vacuna",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 17,
+  "page": 74,
+  "cols": 5,
+  "rows": 10,
+  "cap": "Diccionario de Datos: Tabla lotes_vacunas",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 18,
+  "page": 75,
+  "cols": 5,
+  "rows": 7,
+  "cap": "Diccionario de Datos: Tabla planificacion_anual",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 19,
+  "page": 76,
+  "cols": 5,
+  "rows": 12,
+  "cap": "Diccionario de Datos: Tabla movimientos_vacunas",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 20,
+  "page": 77,
+  "cols": 5,
+  "rows": 8,
+  "cap": "Diccionario de Datos: Tabla entregas_adicionales",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 21,
+  "page": 78,
+  "cols": 5,
+  "rows": 11,
+  "cap": "Diccionario de Datos: Tablas vales_entrega y vales_detalle",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 22,
+  "page": null,
+  "cols": 5,
+  "rows": 11,
+  "cap": "Diccionario de Datos: Tabla kardex",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 23,
+  "page": null,
+  "cols": 5,
+  "rows": 10,
+  "cap": "Diccionario de Datos: Tabla ici_demid_registros",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 24,
+  "page": null,
+  "cols": 5,
+  "rows": 10,
+  "cap": "Diccionario de Datos: Tabla alertas",
+  "keys": [
+   "nombredelcampo",
+   "tipodedato",
+   "nulabilidad",
+   "clave"
+  ]
+ },
+ {
+  "t": 25,
+  "page": 79,
+  "cols": 4,
+  "rows": 13,
+  "cap": "Stack Tecnológico de Desarrollo y Librerías del Ecosistema SIVAC",
+  "keys": [
+   "capatecnologica",
+   "tecnologiabibliote",
+   "version",
+   "rolfuncionalenelsi"
+  ]
+ },
+ {
+  "t": 26,
+  "page": 92,
+  "cols": 5,
+  "rows": 7,
+  "cap": "Resumen de Suites de Pruebas Automatizadas Unitarias y de Integración en Jest",
+  "keys": [
+   "suitedepruebas",
+   "archivodeespecific",
+   "componenteevaluado",
+   "casosejecutados"
+  ]
+ },
+ {
+  "t": 27,
+  "page": 93,
+  "cols": 6,
+  "rows": 16,
+  "cap": "Matriz de Casos de Prueba de Aceptación con el Usuario (CP-01 a CP-15)",
+  "keys": [
+   "casodeprueba",
+   "historiaasociada",
+   "escenariooperativo",
+   "criteriodeexito"
+  ]
+ },
+ {
+  "t": 28,
+  "page": 95,
+  "cols": 5,
+  "rows": 9,
+  "cap": "Matriz de Evaluación de Calidad del Producto de Software según ISO/IEC 25010:2023",
+  "keys": [
+   "caracteristicaisoi",
+   "subcaracteristicae",
+   "metricaevaluadaens",
+   "valorobservado"
+  ]
+ },
+ {
+  "t": 29,
+  "page": 100,
+  "cols": 4,
+  "rows": 5,
+  "cap": "Cronograma y protocolo de ejecución de la intervención preexperimental",
+  "keys": [
+   "etapadeintervencio",
+   "actividadesoperati",
+   "ventanatemporal",
+   "controldeamenazasa"
+  ]
+ },
+ {
+  "t": 30,
+  "page": 101,
+  "cols": 4,
+  "rows": 10,
+  "cap": "Tabla 2 Distribución de la población y muestra censal por función operativa y centro ",
+  "keys": [
+   "centrodeacopiodepe",
+   "funcionoperativaen",
+   "personaln",
+   "porcentaje"
+  ]
+ },
+ {
+  "t": 31,
+  "page": 103,
+  "cols": 4,
+  "rows": 7,
+  "cap": "Estructura de unidades de observación primaria, reglas de agregación pareada y criter",
+  "keys": [
+   "dimensioneindicado",
+   "unidaddeobservacio",
+   "regladeagregacionp",
+   "criteriodeinclusio"
+  ]
+ },
+ {
+  "t": 32,
+  "page": 104,
+  "cols": 6,
+  "rows": 5,
+  "cap": "Tabla 3 Operacionalización de las variables de investigación",
+  "keys": [
+   "variable",
+   "definicionoperacio",
+   "dimensiones",
+   "indicadores"
+  ]
+ },
+ {
+  "t": 33,
+  "page": 108,
+  "cols": 5,
+  "rows": 4,
+  "cap": "Tabla 4 Relación de técnicas e instrumentos de recolección de datos por dimensión e i",
+  "keys": [
+   "dimensionevaluada",
+   "indicadores",
+   "tecnicaderecolecci",
+   "instrumentodemedic"
+  ]
+ },
+ {
+  "t": 34,
+  "page": 111,
+  "cols": 7,
+  "rows": 4,
+  "cap": "Tabla 5 Estructura de la validación de los instrumentos de recolección de datos",
+  "keys": [
+   "cod",
+   "instrumentoevaluad",
+   "estructuraoperativ",
+   "sustentodevalidez"
+  ]
+ },
+ {
+  "t": 35,
+  "page": 116,
+  "cols": 8,
+  "rows": 7,
+  "cap": "Confiabilidad de consistencia interna del Cuestionario TAM (Instrumento N.° 03) media",
+  "keys": [
+   "momentodeevaluacio",
+   "escalasubescala",
+   "numerodeitems",
+   "muestran"
+  ]
+ },
+ {
+  "t": 36,
+  "page": 117,
+  "cols": 10,
+  "rows": 7,
+  "cap": "Estadística descriptiva comparativa pretest y postest para los indicadores de la Dime",
+  "keys": [
+   "indicador",
+   "momentoevaluado",
+   "media",
+   "mediana"
+  ]
+ },
+ {
+  "t": 37,
+  "page": 118,
+  "cols": 10,
+  "rows": 7,
+  "cap": "Estadística descriptiva comparativa pretest y postest para los indicadores de la Dime",
+  "keys": [
+   "indicador",
+   "momentoevaluado",
+   "media",
+   "mediana"
+  ]
+ },
+ {
+  "t": 38,
+  "page": 122,
+  "cols": 10,
+  "rows": 10,
+  "cap": "Estadística descriptiva comparativa pretest y postest para los indicadores de la Dime",
+  "keys": [
+   "constructosubescal",
+   "momentoevaluado",
+   "media",
+   "mediana"
+  ]
+ },
+ {
+  "t": 39,
+  "page": 124,
+  "cols": 8,
+  "rows": 8,
+  "cap": "Prueba de bondad de ajuste de normalidad de Shapiro-Wilk para las diferencias pareada",
+  "keys": [
+   "dimension",
+   "indicadorevaluado",
+   "estadisticow",
+   "pvalor"
+  ]
+ },
+ {
+  "t": 40,
+  "page": 126,
+  "cols": 9,
+  "rows": 5,
+  "cap": "Contraste inferencial de la Hipótesis Específica 1: Oportunidad de procesamiento medi",
+  "keys": [
+   "indicador",
+   "pruebaestadistica",
+   "estadistico",
+   "pvalor"
+  ]
+ },
+ {
+  "t": 41,
+  "page": 127,
+  "cols": 9,
+  "rows": 5,
+  "cap": "Contraste inferencial de la Hipótesis Específica 2: Consistencia documental mediante ",
+  "keys": [
+   "indicador",
+   "pruebaestadistica",
+   "estadistico",
+   "pvalor"
+  ]
+ },
+ {
+  "t": 42,
+  "page": 129,
+  "cols": 9,
+  "rows": 7,
+  "cap": "Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario mediante",
+  "keys": [
+   "constructoindicado",
+   "pruebaestadistica",
+   "estadistico",
+   "pvalor"
+  ]
+ },
+ {
+  "t": 43,
+  "page": 130,
+  "cols": 8,
+  "rows": 5,
+  "cap": "Resumen de contrastación inferencial multivariada y regla de decisión para la Hipótes",
+  "keys": [
+   "hipotesisdeinvesti",
+   "dimensionasociada",
+   "indicadoresclave",
+   "pruebadecisoria"
+  ]
+ },
+ {
+  "t": 44,
+  "page": 143,
+  "cols": 5,
+  "rows": 5,
+  "cap": "Matriz de consistencia metodológica del estudio SIVAC",
+  "keys": [
+   "problemasdeinvesti",
+   "objetivosdeinvesti",
+   "hipotesisdeinvesti",
+   "variablesdimension"
+  ]
+ },
+ {
+  "t": 45,
+  "page": 146,
+  "cols": 6,
+  "rows": 5,
+  "cap": "Matriz de operacionalización de las variables de investigación",
+  "keys": [
+   "variable",
+   "definicionoperacio",
+   "dimensiones",
+   "indicadores"
+  ]
+ },
+ {
+  "t": 46,
+  "page": 148,
+  "cols": 2,
+  "rows": 8,
+  "cap": "Certificado de Validez de Contenido - Experto 1 (Ingeniero de Sistemas / Especialista",
+  "keys": [
+   "juezvalidador",
+   "evaluadorpericiald"
+  ]
+ },
+ {
+  "t": 47,
+  "page": 149,
+  "cols": 2,
+  "rows": 8,
+  "cap": "Certificado de Validez de Contenido - Experto 2 (Licenciado en Enfermería / Especiali",
+  "keys": [
+   "juezvalidador",
+   "evaluadorpericiald"
+  ]
+ },
+ {
+  "t": 48,
+  "page": null,
+  "cols": 2,
+  "rows": 8,
+  "cap": "Certificado de Validez de Contenido - Experto 3 (Metodólogo / Especialista en Estadís",
+  "keys": [
+   "juezvalidador",
+   "evaluadorpericiald"
+  ]
+ },
+ {
+  "t": 49,
+  "page": 150,
+  "cols": 4,
+  "rows": 4,
+  "cap": "Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos Operativos",
+  "keys": [
+   "codigo",
+   "indicadormedido",
+   "definicionoperativ",
+   "unidaddemedida"
+  ]
+ },
+ {
+  "t": 50,
+  "page": 151,
+  "cols": 4,
+  "rows": 4,
+  "cap": "Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de Lotes",
+  "keys": [
+   "codigo",
+   "indicadormedido",
+   "formulaoperativade",
+   "rangodeescala"
+  ]
+ },
+ {
+  "t": 51,
+  "page": 152,
+  "cols": 4,
+  "rows": 9,
+  "cap": "Instrumento N.° 03: Cuestionario TAM de Satisfacción del Usuario (Modalidad A)",
+  "keys": [
+   "item",
+   "constructotam",
+   "enunciadodelreacti",
+   "escalalikert15"
+  ]
+ },
+ {
+  "t": 52,
+  "page": 153,
+  "cols": 18,
+  "rows": 15,
+  "cap": "Matriz de datos recolectados en el Pretest (Gestión manual basal, n = 14)",
+  "keys": [
+   "sujetoid",
+   "centroacopio",
+   "treg",
+   "tvale"
+  ]
+ },
+ {
+  "t": 53,
+  "page": 154,
+  "cols": 18,
+  "rows": 15,
+  "cap": "Matriz de datos recolectados en el Posttest (Operación con sistema SIVAC, n = 14)",
+  "keys": [
+   "sujetoid",
+   "centroacopio",
+   "treg",
+   "tvale"
+  ]
+ },
+ {
+  "t": 54,
+  "page": 156,
+  "cols": 5,
+  "rows": 6,
+  "cap": "Matriz de Historias de Usuario desarrolladas e implementadas en SIVAC bajo XP",
+  "keys": [
+   "codigohu",
+   "iteracionxp",
+   "titulodelahistoria",
+   "rolactor"
+  ]
+ },
+ {
+  "t": 55,
+  "page": 157,
+  "cols": 1,
+  "rows": 1,
+  "cap": "En observancia de los requerimientos de acreditación de trabajo de campo de la UNAJMA",
+  "keys": [
+   "espacioreservadopa"
+  ]
+ },
+ {
+  "t": 56,
+  "page": 158,
+  "cols": 1,
+  "rows": 1,
+  "cap": "Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (",
+  "keys": [
+   "espacioreservadopa"
+  ]
+ },
+ {
+  "t": 57,
+  "page": null,
+  "cols": 1,
+  "rows": 1,
+  "cap": "Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (",
+  "keys": [
+   "espacioreservadopa"
+  ]
+ },
+ {
+  "t": 58,
+  "page": null,
+  "cols": 1,
+  "rows": 1,
+  "cap": "Nota. Registro fotográfico de verificación en campo. Dirección de Salud Apurímac II (",
+  "keys": [
+   "espacioreservadopa"
+  ]
+ }
+]

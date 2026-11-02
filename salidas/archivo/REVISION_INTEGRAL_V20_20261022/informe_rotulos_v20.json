@@ -1,0 +1,460 @@
+{
+  "origen": "salidas\\documentos\\informe_final_v20.docx",
+  "destino": "salidas\\archivo\\REVISION_INTEGRAL_V20_20261022\\CANDIDATO_ROTULOS_V20.docx",
+  "sha256_origen": "70191c75f80a65adcdde7648fd3fe19a1b207f72846e74961380ad57df190ca9",
+  "sha256_destino": "bc0c3fa54e511b37a219dc06122fa2ec5e91f17dede981fdc1a5152305452119",
+  "parrafos": 828,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "negrilla_rotulos",
+      "rotulos_verificados": 103,
+      "rotulos_ajustados": 88,
+      "runs_modificados": 440,
+      "detalles": [
+        {
+          "indice_docx": 222,
+          "rotulo": "Tabla 1 Síntesis comparativa de antecedentes internacionales y naciona",
+          "runs": 5
+        },
+        {
+          "indice_docx": 332,
+          "rotulo": "Figura 11 Fases del ciclo de desarrollo Extreme Programming (XP) adapt",
+          "runs": 5
+        },
+        {
+          "indice_docx": 340,
+          "rotulo": "Tabla 3 Roles de usuarios y responsabilidades operativas en la DISA Ap",
+          "runs": 5
+        },
+        {
+          "indice_docx": 344,
+          "rotulo": "Tabla 4 Catálogo de Requerimientos Funcionales del Sistema SIVAC",
+          "runs": 5
+        },
+        {
+          "indice_docx": 348,
+          "rotulo": "Tabla 5 Catálogo de Requerimientos No Funcionales según ISO/IEC 25010:",
+          "runs": 5
+        },
+        {
+          "indice_docx": 352,
+          "rotulo": "Tabla 6 Matriz de trazabilidad entre Requerimientos Funcionales, Histo",
+          "runs": 5
+        },
+        {
+          "indice_docx": 356,
+          "rotulo": "Tabla 7 Matriz del Planning Game: Estimación en Puntos de Historia, Pr",
+          "runs": 5
+        },
+        {
+          "indice_docx": 360,
+          "rotulo": "Tabla 8 Plan Detallado de las Cinco Iteraciones de Extreme Programming",
+          "runs": 5
+        },
+        {
+          "indice_docx": 364,
+          "rotulo": "Figura 12 Diagrama de Casos de Uso del Sistema SIVAC",
+          "runs": 5
+        },
+        {
+          "indice_docx": 371,
+          "rotulo": "Figura 13 Arquitectura Lógica en Capas y Subsistemas del Sistema SIVAC",
+          "runs": 5
+        },
+        {
+          "indice_docx": 375,
+          "rotulo": "Figura 14 Arquitectura en Cuatro Capas del Sistema SIVAC",
+          "runs": 5
+        },
+        {
+          "indice_docx": 380,
+          "rotulo": "Figura 15 Diagrama de Actividades del Proceso de Registro de Movimient",
+          "runs": 5
+        },
+        {
+          "indice_docx": 384,
+          "rotulo": "Figura 16 Diagrama de Actividades del Módulo de Inteligencia Logística",
+          "runs": 5
+        },
+        {
+          "indice_docx": 389,
+          "rotulo": "Figura 17 Diagrama de Secuencia UML: Autenticación Segura y Control de",
+          "runs": 5
+        },
+        {
+          "indice_docx": 393,
+          "rotulo": "Tabla 9 Matriz de Control de Acceso Basado en Roles (RBAC) por Módulos",
+          "runs": 5
+        },
+        {
+          "indice_docx": 396,
+          "rotulo": "Figura 18 Diagrama de Secuencia UML: Registro de Entregas Adicionales,",
+          "runs": 5
+        },
+        {
+          "indice_docx": 401,
+          "rotulo": "Figura 19 Modelo Entidad-Relación Conceptual por Dominios de SIVAC",
+          "runs": 5
+        },
+        {
+          "indice_docx": 405,
+          "rotulo": "Figura 20 Esquema Relacional Lógico de Entidades Principales en Postgr",
+          "runs": 5
+        },
+        {
+          "indice_docx": 409,
+          "rotulo": "Figura 21 Diccionario Físico de Base de Datos y Relaciones Relacionale",
+          "runs": 5
+        },
+        {
+          "indice_docx": 413,
+          "rotulo": "Tabla 10 Diccionario de Datos: Tabla redes",
+          "runs": 5
+        },
+        {
+          "indice_docx": 415,
+          "rotulo": "Tabla 11 Diccionario de Datos: Tabla microredes",
+          "runs": 5
+        },
+        {
+          "indice_docx": 417,
+          "rotulo": "Tabla 12 Diccionario de Datos: Tabla centros_acopio",
+          "runs": 5
+        },
+        {
+          "indice_docx": 419,
+          "rotulo": "Tabla 13 Diccionario de Datos: Tabla establecimientos",
+          "runs": 5
+        },
+        {
+          "indice_docx": 421,
+          "rotulo": "Tabla 14 Diccionario de Datos: Tablas usuarios y usuarios_centros_acop",
+          "runs": 5
+        },
+        {
+          "indice_docx": 423,
+          "rotulo": "Tabla 15 Diccionario de Datos: Tabla vacunas",
+          "runs": 5
+        },
+        {
+          "indice_docx": 425,
+          "rotulo": "Tabla 16 Diccionario de Datos: Tablas jeringas y configuracion_jeringa",
+          "runs": 5
+        },
+        {
+          "indice_docx": 427,
+          "rotulo": "Tabla 17 Diccionario de Datos: Tabla lotes_vacunas",
+          "runs": 5
+        },
+        {
+          "indice_docx": 429,
+          "rotulo": "Tabla 18 Diccionario de Datos: Tabla planificacion_anual",
+          "runs": 5
+        },
+        {
+          "indice_docx": 431,
+          "rotulo": "Tabla 19 Diccionario de Datos: Tabla movimientos_vacunas",
+          "runs": 5
+        },
+        {
+          "indice_docx": 433,
+          "rotulo": "Tabla 20 Diccionario de Datos: Tabla entregas_adicionales",
+          "runs": 5
+        },
+        {
+          "indice_docx": 435,
+          "rotulo": "Tabla 21 Diccionario de Datos: Tablas vales_entrega y vales_detalle",
+          "runs": 5
+        },
+        {
+          "indice_docx": 437,
+          "rotulo": "Tabla 22 Diccionario de Datos: Tabla kardex",
+          "runs": 5
+        },
+        {
+          "indice_docx": 439,
+          "rotulo": "Tabla 23 Diccionario de Datos: Tabla ici_demid_registros",
+          "runs": 5
+        },
+        {
+          "indice_docx": 441,
+          "rotulo": "Tabla 24 Diccionario de Datos: Tabla alertas",
+          "runs": 5
+        },
+        {
+          "indice_docx": 447,
+          "rotulo": "Tabla 25 Stack Tecnológico de Desarrollo y Librerías del Ecosistema SI",
+          "runs": 5
+        },
+        {
+          "indice_docx": 450,
+          "rotulo": "Figura 22 Estructura del Proyecto Backend en Node.js, Express y Prisma",
+          "runs": 5
+        },
+        {
+          "indice_docx": 454,
+          "rotulo": "Figura 23 Estructura Modular del Cliente Web SPA en React 18, TypeScri",
+          "runs": 5
+        },
+        {
+          "indice_docx": 459,
+          "rotulo": "Figura 24 Implementación del Algoritmo de Sincronización Recursiva de ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 463,
+          "rotulo": "Figura 25 Servicio de Detección Proactiva de Alertas Tempranas con Ven",
+          "runs": 5
+        },
+        {
+          "indice_docx": 467,
+          "rotulo": "Figura 26 Middleware de Autenticación, Verificación Criptográfica JWT ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 471,
+          "rotulo": "Figura 27 Algoritmo de Cálculo de Indicadores de Disponibilidad Logíst",
+          "runs": 5
+        },
+        {
+          "indice_docx": 476,
+          "rotulo": "Figura 28 Interfaz de Usuario: Pantalla de Autenticación e Inicio de S",
+          "runs": 5
+        },
+        {
+          "indice_docx": 479,
+          "rotulo": "Figura 29 Interfaz de Usuario: Dashboard Principal de Monitoreo PAI, C",
+          "runs": 5
+        },
+        {
+          "indice_docx": 482,
+          "rotulo": "Figura 30 Interfaz de Usuario: Panel Inferior del Dashboard con Centro",
+          "runs": 5
+        },
+        {
+          "indice_docx": 485,
+          "rotulo": "Figura 31 Interfaz de Usuario: Módulo de Inventario y Control de Lotes",
+          "runs": 5
+        },
+        {
+          "indice_docx": 488,
+          "rotulo": "Figura 32 Interfaz de Usuario: Vista de Gestión de Lotes y Filtros Din",
+          "runs": 5
+        },
+        {
+          "indice_docx": 491,
+          "rotulo": "Figura 33 Interfaz de Usuario: Matriz Contable de Movimientos Mensuale",
+          "runs": 5
+        },
+        {
+          "indice_docx": 494,
+          "rotulo": "Figura 34 Interfaz de Usuario: Registro y Cuadrícula Operativa de Movi",
+          "runs": 5
+        },
+        {
+          "indice_docx": 497,
+          "rotulo": "Figura 35 Interfaz de Usuario: Módulo de Planificación Anual de Metas ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 500,
+          "rotulo": "Figura 36 Interfaz de Usuario: Centro de Reportes y Matriz Trimestral ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 503,
+          "rotulo": "Figura 37 Interfaz de Usuario: Módulo de Inteligencia Logística ICI-DE",
+          "runs": 5
+        },
+        {
+          "indice_docx": 506,
+          "rotulo": "Figura 38 Interfaz de Usuario: Módulo de Kardex Digital Cronológico de",
+          "runs": 5
+        },
+        {
+          "indice_docx": 509,
+          "rotulo": "Figura 39 Interfaz de Usuario: Vista Detallada del Kardex con Múltiple",
+          "runs": 5
+        },
+        {
+          "indice_docx": 512,
+          "rotulo": "Figura 40 Interfaz de Usuario: Módulo de Administración de Usuarios y ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 515,
+          "rotulo": "Figura 41 Interfaz de Usuario: Gestión de Usuarios mostrando Fixture d",
+          "runs": 5
+        },
+        {
+          "indice_docx": 518,
+          "rotulo": "Figura 42 Interfaz de Usuario: Centro de Alertas Tempranas y Triaje Op",
+          "runs": 5
+        },
+        {
+          "indice_docx": 521,
+          "rotulo": "Figura 43 Interfaz de Usuario: Módulo de Asignación y Reglas Normativa",
+          "runs": 5
+        },
+        {
+          "indice_docx": 528,
+          "rotulo": "Figura 44 Prueba unitaria de entregas adicionales y sincronización de ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 532,
+          "rotulo": "Tabla 26 Resumen de Suites de Pruebas Automatizadas Unitarias y de Int",
+          "runs": 5
+        },
+        {
+          "indice_docx": 536,
+          "rotulo": "Tabla 27 Matriz de Casos de Prueba de Aceptación con el Usuario (CP-01",
+          "runs": 5
+        },
+        {
+          "indice_docx": 540,
+          "rotulo": "Tabla 28 Matriz de Evaluación de Calidad del Producto de Software segú",
+          "runs": 5
+        },
+        {
+          "indice_docx": 545,
+          "rotulo": "Figura 45 Diagrama de Despliegue Físico y Topología de Red en Producci",
+          "runs": 5
+        },
+        {
+          "indice_docx": 568,
+          "rotulo": "Tabla 29 Cronograma y protocolo de ejecución de la intervención preexp",
+          "runs": 5
+        },
+        {
+          "indice_docx": 580,
+          "rotulo": "Tabla 31 Estructura de unidades de observación primaria, reglas de agr",
+          "runs": 5
+        },
+        {
+          "indice_docx": 651,
+          "rotulo": "Tabla 35 Confiabilidad de consistencia interna del Cuestionario TAM (I",
+          "runs": 5
+        },
+        {
+          "indice_docx": 657,
+          "rotulo": "Tabla 36 Estadística descriptiva comparativa pretest y postest para lo",
+          "runs": 5
+        },
+        {
+          "indice_docx": 659,
+          "rotulo": "Figura 46 Diagramas de cajas pareados (Boxplots) para los tiempos de r",
+          "runs": 5
+        },
+        {
+          "indice_docx": 664,
+          "rotulo": "Tabla 37 Estadística descriptiva comparativa pretest y postest para lo",
+          "runs": 5
+        },
+        {
+          "indice_docx": 666,
+          "rotulo": "Figura 47 Gráfico de barras e intervalos de confianza para los indicad",
+          "runs": 5
+        },
+        {
+          "indice_docx": 671,
+          "rotulo": "Tabla 38 Estadística descriptiva comparativa pretest y postest para lo",
+          "runs": 5
+        },
+        {
+          "indice_docx": 673,
+          "rotulo": "Figura 48 Comparación de puntajes del Modelo de Aceptación Tecnológica",
+          "runs": 5
+        },
+        {
+          "indice_docx": 680,
+          "rotulo": "Tabla 39 Prueba de bondad de ajuste de normalidad de Shapiro-Wilk para",
+          "runs": 5
+        },
+        {
+          "indice_docx": 688,
+          "rotulo": "Tabla 40 Contraste inferencial de la Hipótesis Específica 1: Oportunid",
+          "runs": 5
+        },
+        {
+          "indice_docx": 694,
+          "rotulo": "Tabla 41 Contraste inferencial de la Hipótesis Específica 2: Consisten",
+          "runs": 5
+        },
+        {
+          "indice_docx": 700,
+          "rotulo": "Tabla 42 Contraste inferencial de la Hipótesis Específica 3: Satisfacc",
+          "runs": 5
+        },
+        {
+          "indice_docx": 707,
+          "rotulo": "Tabla 43 Resumen de contrastación inferencial multivariada y regla de ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 783,
+          "rotulo": "Tabla 44 Matriz de consistencia metodológica del estudio SIVAC",
+          "runs": 5
+        },
+        {
+          "indice_docx": 787,
+          "rotulo": "Tabla 45 Matriz de operacionalización de las variables de investigació",
+          "runs": 5
+        },
+        {
+          "indice_docx": 802,
+          "rotulo": "Tabla 46 Instrumento N.° 01: Ficha de Registro Cronométrico de Tiempos",
+          "runs": 5
+        },
+        {
+          "indice_docx": 804,
+          "rotulo": "Tabla 47 Instrumento N.° 02: Ficha de Auditoría y Cotejo Documental de",
+          "runs": 5
+        },
+        {
+          "indice_docx": 806,
+          "rotulo": "Tabla 48 Instrumento N.° 03: Cuestionario TAM de Satisfacción del Usua",
+          "runs": 5
+        },
+        {
+          "indice_docx": 810,
+          "rotulo": "Tabla 49 Matriz de datos de prueba en el Pretest (Gestión manual basal",
+          "runs": 5
+        },
+        {
+          "indice_docx": 812,
+          "rotulo": "Tabla 50 Matriz de datos de prueba en el Postest (Operación con sistem",
+          "runs": 5
+        },
+        {
+          "indice_docx": 816,
+          "rotulo": "Tabla 51 Matriz de Historias de Usuario desarrolladas e implementadas ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 820,
+          "rotulo": "Figura 49 Sesión de capacitación técnica y entrenamiento operativo en ",
+          "runs": 5
+        },
+        {
+          "indice_docx": 822,
+          "rotulo": "Figura 50 Cronometraje de tiempos de registro y emisión de comprobante",
+          "runs": 5
+        },
+        {
+          "indice_docx": 824,
+          "rotulo": "Figura 51 Verificación de consistencia documental y cotejo de lotes de",
+          "runs": 5
+        },
+        {
+          "indice_docx": 826,
+          "rotulo": "Figura 52 Evaluación de la aceptación del proceso operativo y utilidad",
+          "runs": 5
+        }
+      ]
+    }
+  ],
+  "tablas_verificadas": []
+}

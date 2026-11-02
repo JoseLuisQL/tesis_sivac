@@ -1,0 +1,1299 @@
+{
+  "meta": {
+    "archivo": "plan_correccion_tablas_v20.json",
+    "fecha": "2026-10-23",
+    "agente": "maquetador-docx",
+    "fase": "F8_INTEGRACION_EDITORIAL",
+    "modo": "DRY_RUN: no se ejecuto ninguna escritura sobre el DOCX base",
+    "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v20.docx",
+    "sha256_origen": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
+    "destino_sugerido": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\documentos\\informe_final_v21.docx",
+    "comando_aplicable": "C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python.exe scripts/utilidades/docx_quirurgico.py cirugia-extension salidas/documentos/informe_final_v20.docx --plan salidas/reportes_maquetacion/auditoria_integral_v20_20261022/plan_aplicable_v21.json --salida salidas/documentos/informe_final_v21.docx",
+    "diagnostico_fuente": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\reportes_maquetacion\\auditoria_integral_v20_20261022\\DIAGNOSTICO_TABLAS_V20.json",
+    "requiere_autorizacion_del_tesista": true
+  },
+  "resumen_ejecutivo": {
+    "defectos_reportados_confirmados": "3 de 6 sin matices (1, 2, 4), 1 parcial (3), 1 no reproducido (5), 1 confirmado (6)",
+    "lo_que_el_motor_resuelve_hoy": "los 15 parrafos estirados (defecto 4) y, de forma preventiva, cualquier rotulo huerfano (defecto 5); el recorte de margenes de celda alivia el defecto 1 sin resolverlo",
+    "lo_que_exige_extender_el_motor": "reparto de anchos por volumen (defecto 1), alineacion vertical uniforme (defecto 1), alineacion decimal (defecto 3) y subindices nativos (defecto 6)",
+    "impacto_de_pagina_del_plan_aplicable": "0 paginas (solo cambia justificacion y se anaden marcas keepNext ya satisfechas); el recorte de margenes puede restar hasta 0,2 paginas"
+  },
+  "decisiones_tecnicas": {
+    "geometria_de_tablas": {
+      "decision": "Redistribuir anchos por volumen de contenido solo en las Tablas 1, 8, 33 y 35; en las Tablas 32 y 34 el solver no mejora la altura actual y se limita a alineacion vertical.",
+      "mecanismo": "w:tblLayout=fixed + w:tblGrid + w:tcW coherentes, suma constante de 8765 dxa (vertical) y 13720 dxa (horizontal).",
+      "anchos_propuestos_dxa": {
+        "33": [
+          1405,
+          1347,
+          1331,
+          1341,
+          3341
+        ],
+        "8": [
+          943,
+          4401,
+          1496,
+          943,
+          982
+        ],
+        "35": [
+          1720,
+          2073,
+          708,
+          938,
+          1087,
+          894,
+          1345
+        ],
+        "1": [
+          1058,
+          1414,
+          1550,
+          1520,
+          1565,
+          1658
+        ]
+      },
+      "altura_estimada_pt": {
+        "33": [
+          483.8,
+          365.8
+        ],
+        "8": [
+          531.0,
+          200.6
+        ],
+        "35": [
+          188.8,
+          165.2
+        ],
+        "1": [
+          1321.6,
+          1062.0
+        ]
+      },
+      "estado": "NO_APLICABLE_CON_MOTOR_ACTUAL",
+      "tablas_evaluadas_y_descartadas": {
+        "32": "el reparto empeora la altura (531,0 -> 566,4 pt) porque su columna de indicadores es la de mayor volumen",
+        "34": "el reparto es neutro (389,4 -> 389,4 pt); su problema es de segmentos con w:br, no de anchos"
+      }
+    },
+    "alineacion_vertical": {
+      "decision": "w:vAlign=top en todas las celdas de cuerpo; encabezado tambien top. La Tabla 44 no declara vAlign y ya se comporta como top.",
+      "tablas": [
+        1,
+        8,
+        32,
+        33,
+        34,
+        45
+      ],
+      "estado": "NO_APLICABLE_CON_MOTOR_ACTUAL"
+    },
+    "alineacion_decimal": {
+      "decision": "Tabulador decimal nativo (<w:tabs><w:tab w:val=\"decimal\"/></w:tabs> + <w:r><w:tab/></w:r> al inicio del parrafo de celda, con w:jc=left), NO alineacion a la derecha.",
+      "justificacion": "La alineacion a la derecha solo coincide con el separador decimal cuando todos los valores de la columna tienen el mismo numero de caracteres. En las Tablas 37 y 38 conviven valores con signo (+32.43, +9.64) y sin signo (63.57, 8.07), y en la Tabla 37 ademas el sufijo %; por tanto la derecha desplaza el separador un caracter y reproduce el defecto reportado. El tabulador decimal lo fija con independencia del prefijo y del sufijo y es estable frente a cambios de ancho porque se recalcula con el ancho de columna.",
+      "por_que_no_espacios_de_relleno": "Word colapsa los espacios multiples y no son deterministas entre Word y el PDF exportado.",
+      "posiciones_calculadas": {
+        "30": {
+          "indice_base_cero": 30,
+          "pagina_pdf": 103,
+          "folio": "88",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 51.5,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 50.5,
+              "valores": [
+                "2",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 51.5,
+              "sufijo_porcentaje": true,
+              "posicion_tabulador_decimal_pt": 42.2,
+              "valores": [
+                "14.29%",
+                "7.14%",
+                "7.14%",
+                "7.14%",
+                "7.14%",
+                "7.14%"
+              ]
+            }
+          ]
+        },
+        "35": {
+          "indice_base_cero": 35,
+          "pagina_pdf": 118,
+          "folio": "103",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 36.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 35.9,
+              "valores": [
+                "8",
+                "4",
+                "4",
+                "8",
+                "4",
+                "4"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 36.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 35.9,
+              "valores": [
+                "14",
+                "14",
+                "14",
+                "14",
+                "14",
+                "14"
+              ]
+            },
+            {
+              "columna": 4,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 46.4,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 45.4,
+              "valores": [
+                "0.939",
+                "0.877",
+                "0.874",
+                "0.915",
+                "0.831",
+                "0.841"
+              ]
+            }
+          ]
+        },
+        "36": {
+          "indice_base_cero": 36,
+          "pagina_pdf": 119,
+          "folio": "104",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 34.6,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 33.6,
+              "valores": [
+                "37.18",
+                "7.18",
+                "−30.00",
+                "18.21",
+                "3.04",
+                "−15.18"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 32.4,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 31.4,
+              "valores": [
+                "3.83",
+                "1.05",
+                "2.88",
+                "2.87",
+                "0.60",
+                "2.32"
+              ]
+            },
+            {
+              "columna": 4,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 38.2,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 37.2,
+              "valores": [
+                "36.75",
+                "7.00",
+                "−29.75",
+                "17.75",
+                "3.00",
+                "−14.75"
+              ]
+            },
+            {
+              "columna": 5,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 34.6,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 33.6,
+              "valores": [
+                "5.50",
+                "1.38",
+                "3.62",
+                "4.12",
+                "1.00",
+                "2.75"
+              ]
+            }
+          ]
+        },
+        "37": {
+          "indice_base_cero": 37,
+          "pagina_pdf": 121,
+          "folio": "106",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 36.9,
+              "sufijo_porcentaje": true,
+              "posicion_tabulador_decimal_pt": 27.6,
+              "valores": [
+                "63.57%",
+                "96.00%",
+                "+32.43%",
+                "67.61%",
+                "95.39%",
+                "+27.79%"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 32.4,
+              "sufijo_porcentaje": true,
+              "posicion_tabulador_decimal_pt": 23.1,
+              "valores": [
+                "6.69%",
+                "2.23%",
+                "4.56%",
+                "5.97%",
+                "2.35%",
+                "3.69%"
+              ]
+            },
+            {
+              "columna": 4,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 38.2,
+              "sufijo_porcentaje": true,
+              "posicion_tabulador_decimal_pt": 29.0,
+              "valores": [
+                "63.50%",
+                "96.25%",
+                "+32.75%",
+                "68.00%",
+                "95.50%",
+                "+27.75%"
+              ]
+            },
+            {
+              "columna": 5,
+              "jc_actual": {
+                "center": 6
+              },
+              "ancho_disponible_pt": 34.6,
+              "sufijo_porcentaje": true,
+              "posicion_tabulador_decimal_pt": 25.4,
+              "valores": [
+                "8.88%",
+                "2.75%",
+                "6.50%",
+                "8.00%",
+                "3.25%",
+                "5.38%"
+              ]
+            }
+          ]
+        },
+        "38": {
+          "indice_base_cero": 38,
+          "pagina_pdf": 123,
+          "folio": "108",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 9
+              },
+              "ancho_disponible_pt": 34.6,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 33.6,
+              "valores": [
+                "8.07",
+                "17.71",
+                "+9.64",
+                "9.00",
+                "18.50",
+                "+9.50"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 9
+              },
+              "ancho_disponible_pt": 32.4,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 31.4,
+              "valores": [
+                "2.27",
+                "1.64",
+                "1.08",
+                "1.88",
+                "1.56",
+                "1.02"
+              ]
+            },
+            {
+              "columna": 4,
+              "jc_actual": {
+                "center": 9
+              },
+              "ancho_disponible_pt": 38.2,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 37.2,
+              "valores": [
+                "8.00",
+                "17.50",
+                "+10.00",
+                "8.00",
+                "19.00",
+                "+10.00"
+              ]
+            },
+            {
+              "columna": 5,
+              "jc_actual": {
+                "center": 9
+              },
+              "ancho_disponible_pt": 34.6,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 33.6,
+              "valores": [
+                "3.25",
+                "3.00",
+                "1.00",
+                "2.75",
+                "2.00",
+                "1.00"
+              ]
+            }
+          ]
+        },
+        "39": {
+          "indice_base_cero": 39,
+          "pagina_pdf": 125,
+          "folio": "110",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 7
+              },
+              "ancho_disponible_pt": 31.1,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 30.1,
+              "valores": [
+                "0.979",
+                "0.933",
+                "0.958",
+                "0.953",
+                "0.909",
+                "0.876"
+              ]
+            }
+          ]
+        },
+        "49": {
+          "indice_base_cero": 49,
+          "pagina_pdf": 154,
+          "folio": "139",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": [
+                "Intervalo desde la apertura del kardex o formulario hasta la confirmación de guardado",
+                "Intervalo desde la orden de despacho hasta la generación física o digital del vale PECOSA",
+                "Medición pareada pretest (manual) y posttest (con SIVAC) sobre idéntico volumen transaccional"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 29.3,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 28.3,
+              "valores": [
+                "Minutos (cronométrico)",
+                "Minutos (cronométrico)",
+                "n = 14 operadores"
+              ]
+            },
+            {
+              "columna": 4,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 5,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 6,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 7,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 8,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 9,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 10,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 11,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 12,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 13,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 14,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 15,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 16,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 37.4,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 36.4,
+              "valores": []
+            }
+          ]
+        },
+        "50": {
+          "indice_base_cero": 50,
+          "pagina_pdf": 155,
+          "folio": "140",
+          "columnas": [
+            {
+              "columna": 2,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": [
+                "Registros conformes sin error sobre el total de transacciones auditadas, expresado en porcentaje",
+                "Cantidad física biológica entregada sobre la cantidad programada en el requerimiento, expresado en porcentaje",
+                "Verificación de lote, vencimiento, cantidad, firma de recepción y consistencia de saldo"
+              ]
+            },
+            {
+              "columna": 3,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 29.3,
+              "sufijo_porcentaje": true,
+              "posicion_tabulador_decimal_pt": 28.3,
+              "valores": [
+                "Porcentaje (0% a 100%)",
+                "Porcentaje (0% a 100%)",
+                "Conformidad documental"
+              ]
+            },
+            {
+              "columna": 4,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 5,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 6,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 7,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 8,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 9,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 10,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 11,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 12,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 13,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 14,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 15,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 26.9,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 25.9,
+              "valores": []
+            },
+            {
+              "columna": 16,
+              "jc_actual": {
+                "center": 14
+              },
+              "ancho_disponible_pt": 37.4,
+              "sufijo_porcentaje": false,
+              "posicion_tabulador_decimal_pt": 36.4,
+              "valores": []
+            }
+          ]
+        }
+      },
+      "estado": "NO_APLICABLE_CON_MOTOR_ACTUAL"
+    },
+    "rangos_que_no_deben_partirse": {
+      "decision": "Ensanchar la columna Min-Max de 1220 a 1500 dxa (+280) financiando 140 dxa de Indicador (2052->1912) y 140 dxa de Momento (1220->1080). El rango mas ancho mide 66,5 pt y con 1500 dxa la columna ofrece 69,0 pt.",
+      "alternativa_descartada": "Espacio duro (U+00A0) entre el numero y la raya: impide el corte pero no evita que Word parta el rango si el ancho total no alcanza, y altera el texto de la celda.",
+      "tablas": [
+        36,
+        38
+      ],
+      "estado": "NO_APLICABLE_CON_MOTOR_ACTUAL (el tokenizador _segmentos_indivisibles no reconoce el guion medio)"
+    },
+    "tablas_partidas": {
+      "decision": "CONSERVAR la particion con encabezado repetido; no forzar la tabla completa en una pagina.",
+      "justificacion_1": "APA 7 seccion 7.10 y el modelo Fany 2024 (106 pp) exigen repetir el encabezado, no anadir rotulo de continuacion: el modelo institucional no contiene ninguna marca de continuacion en sus tablas.",
+      "justificacion_2": "Las tablas partidas son 26 y el motor solo dispone de keepNext para la ultima fila; mantenerlas enteras exigiria keepNext en todas las filas y, en las Tablas 27, 44 y 45 (3, 4 y 2 paginas), es fisicamente imposible.",
+      "justificacion_3": "Forzar tabla completa cambia la paginacion de forma no acotada: cada tabla empujada alinea su rotulo con un salto de pagina y arrastra todos los folios posteriores.",
+      "impacto_paginacion": "0 paginas si se conserva la particion; la marca no se toca.",
+      "excepcion_evaluada_y_descartada": "La Tabla 36 (3 filas en el folio 104 y 3 en el 105) podria intentar caber entera, pero necesitaria ~120 pt mas en el folio 104, que no existen: seguiria partida."
+    },
+    "saltos_de_linea_manuales": {
+      "decision": "Sustituir los 15 w:br internos por cortes de parrafo y alinear segun la naturaleza del fragmento.",
+      "regla": "Fragmento que empieza con rotulo de nivel (A./B./C.), item numerado o vineta -> parrafo propio alineado a la izquierda sin sangria. Fragmento que es prosa narrativa -> parrafo propio justificado con sangria de primera linea de 720 dxa (1,27 cm).",
+      "casos_izquierda": {
+        "parrafos_originales": [
+          678,
+          685,
+          691,
+          697,
+          703
+        ],
+        "motivo": "listas numeradas 1-7 y rotulos A./B./C. con vinetas de hipotesis"
+      },
+      "casos_justificado_720": {
+        "parrafos_originales": [
+          646,
+          677,
+          686,
+          687,
+          692,
+          693,
+          698,
+          699,
+          704,
+          705
+        ],
+        "motivo": "prosa narrativa que hoy se estira porque el w:br la convierte en linea intermedia de un parrafo justificado"
+      },
+      "estado": "APLICABLE_CON_MOTOR_ACTUAL en dos pasos (dividir_parrafos + ajustes_formato)"
+    },
+    "subindices": {
+      "decision": "Convertir la notacion con guion bajo a <w:vertAlign w:val=\"subscript\"/> sin alterar el texto visible.",
+      "alcance": "24 parrafos de cuerpo y 23 celdas; 0 encabezados y 0 ecuaciones OMML.",
+      "exclusion": "Identificadores de base de datos (lotes_vacunas, vacuna_id, movimientos_vacunas, planificacion_anual, entregas_adicionales, vales_entrega, ici_demid_registros, usuarios_roles, centros_acopio, establecimientos) permanecen literales.",
+      "decision_pendiente_del_tesista": "Sustituir 'mu' por el glifo griego μ es una decision de contenido tipografico, no de formato: no se incluye en el plan.",
+      "estado": "NO_APLICABLE_CON_MOTOR_ACTUAL"
+    },
+    "rotulos_huerfanos": {
+      "decision": "Inyectar w:keepNext en los 103 rotulos (estilo 'Rotulo de ilustracion') y en las 12 ecuaciones.",
+      "justificacion": "No hay ningun rotulo huerfano en la v20, por lo que la marca no puede reordenar nada: es prevencion con impacto cero.",
+      "estado": "APLICABLE_CON_MOTOR_ACTUAL"
+    }
+  },
+  "plan_aplicable": {
+    "keep_next": {
+      "incluir_rotulos": true,
+      "incluir_formulas": true
+    },
+    "tablas": {
+      "margenes_celda": [
+        {
+          "tabla": 1,
+          "izquierdo_dxa": 28,
+          "derecho_dxa": 28,
+          "superior_dxa": 40,
+          "inferior_dxa": 40
+        },
+        {
+          "tabla": 8,
+          "izquierdo_dxa": 28,
+          "derecho_dxa": 28,
+          "superior_dxa": 40,
+          "inferior_dxa": 40
+        },
+        {
+          "tabla": 32,
+          "izquierdo_dxa": 28,
+          "derecho_dxa": 28,
+          "superior_dxa": 40,
+          "inferior_dxa": 40
+        },
+        {
+          "tabla": 33,
+          "izquierdo_dxa": 28,
+          "derecho_dxa": 28,
+          "superior_dxa": 40,
+          "inferior_dxa": 40
+        },
+        {
+          "tabla": 34,
+          "izquierdo_dxa": 28,
+          "derecho_dxa": 28,
+          "superior_dxa": 40,
+          "inferior_dxa": 40
+        }
+      ]
+    },
+    "dividir_parrafos": [
+      {
+        "indice": 705,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 704,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 703,
+        "alineacion_lista": "left"
+      },
+      {
+        "indice": 699,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 698,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 697,
+        "alineacion_lista": "left"
+      },
+      {
+        "indice": 693,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 692,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 691,
+        "alineacion_lista": "left"
+      },
+      {
+        "indice": 687,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 686,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 685,
+        "alineacion_lista": "left"
+      },
+      {
+        "indice": 678,
+        "alineacion_lista": "left"
+      },
+      {
+        "indice": 677,
+        "alineacion_lista": "both"
+      },
+      {
+        "indice": 646,
+        "alineacion_lista": "both"
+      }
+    ],
+    "ajustes_formato": {
+      "parrafos_espaciado": [
+        {
+          "indice": 647,
+          "first_line": 720
+        },
+        {
+          "indice": 679,
+          "first_line": 720
+        },
+        {
+          "indice": 680,
+          "first_line": 720
+        },
+        {
+          "indice": 699,
+          "first_line": 720
+        },
+        {
+          "indice": 700,
+          "first_line": 720
+        },
+        {
+          "indice": 702,
+          "first_line": 720
+        },
+        {
+          "indice": 710,
+          "first_line": 720
+        },
+        {
+          "indice": 711,
+          "first_line": 720
+        },
+        {
+          "indice": 713,
+          "first_line": 720
+        },
+        {
+          "indice": 721,
+          "first_line": 720
+        },
+        {
+          "indice": 722,
+          "first_line": 720
+        },
+        {
+          "indice": 723,
+          "first_line": 720
+        },
+        {
+          "indice": 725,
+          "first_line": 720
+        },
+        {
+          "indice": 733,
+          "first_line": 720
+        },
+        {
+          "indice": 735,
+          "first_line": 720
+        }
+      ]
+    }
+  },
+  "orden_de_ejecucion_del_motor": [
+    "1. keep_next (rotulos y formulas) - no altera el numero de parrafos",
+    "2. tablas.margenes_celda (Tablas 1, 8, 32, 33, 34) - no altera el numero de parrafos",
+    "3. dividir_parrafos EN ORDEN DESCENDENTE ESTRICTO (705 ... 646) - anade 29 parrafos",
+    "4. ajustes_formato.parrafos_espaciado con los indices POST-division - debe ir despues del paso 3",
+    "5. auditar, exportar-pdf, renderizar-paginas y actualizar-campos"
+  ],
+  "indices_post_division": {
+    "646": {
+      "n_segmentos": 2,
+      "offset": 0,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        646,
+        647
+      ]
+    },
+    "677": {
+      "n_segmentos": 3,
+      "offset": 1,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        678,
+        679,
+        680
+      ]
+    },
+    "678": {
+      "n_segmentos": 8,
+      "offset": 3,
+      "alineacion_lista": "left",
+      "indices_finales": [
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688
+      ]
+    },
+    "685": {
+      "n_segmentos": 3,
+      "offset": 10,
+      "alineacion_lista": "left",
+      "indices_finales": [
+        695,
+        696,
+        697
+      ]
+    },
+    "686": {
+      "n_segmentos": 3,
+      "offset": 12,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        698,
+        699,
+        700
+      ]
+    },
+    "687": {
+      "n_segmentos": 2,
+      "offset": 14,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        701,
+        702
+      ]
+    },
+    "691": {
+      "n_segmentos": 3,
+      "offset": 15,
+      "alineacion_lista": "left",
+      "indices_finales": [
+        706,
+        707,
+        708
+      ]
+    },
+    "692": {
+      "n_segmentos": 3,
+      "offset": 17,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        709,
+        710,
+        711
+      ]
+    },
+    "693": {
+      "n_segmentos": 2,
+      "offset": 19,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        712,
+        713
+      ]
+    },
+    "697": {
+      "n_segmentos": 3,
+      "offset": 20,
+      "alineacion_lista": "left",
+      "indices_finales": [
+        717,
+        718,
+        719
+      ]
+    },
+    "698": {
+      "n_segmentos": 4,
+      "offset": 22,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        720,
+        721,
+        722,
+        723
+      ]
+    },
+    "699": {
+      "n_segmentos": 2,
+      "offset": 25,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        724,
+        725
+      ]
+    },
+    "703": {
+      "n_segmentos": 3,
+      "offset": 26,
+      "alineacion_lista": "left",
+      "indices_finales": [
+        729,
+        730,
+        731
+      ]
+    },
+    "704": {
+      "n_segmentos": 2,
+      "offset": 28,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        732,
+        733
+      ]
+    },
+    "705": {
+      "n_segmentos": 2,
+      "offset": 29,
+      "alineacion_lista": "both",
+      "indices_finales": [
+        734,
+        735
+      ]
+    }
+  },
+  "parrafos_a_justificar_con_sangria_tras_la_division": [
+    647,
+    679,
+    680,
+    699,
+    700,
+    702,
+    710,
+    711,
+    713,
+    721,
+    722,
+    723,
+    725,
+    733,
+    735
+  ],
+  "capacidades_faltantes": [
+    {
+      "capacidad": "tablas.geometria_proporcional",
+      "firma_propuesta": "aplicar_geometria_proporcional(documento, indice_tabla, anchos_dxa: Sequence[int], margen_dxa: int = 60) -> dict",
+      "motivo": "_fijar_ancho_grid existe pero es privada y no hay clave de plan que la invoque; _rebalancear_columnas es por token y no redistribuye por volumen de contenido.",
+      "tablas_afectadas": [
+        1,
+        8,
+        33,
+        35
+      ],
+      "prioridad": "alta"
+    },
+    {
+      "capacidad": "tablas.valign",
+      "firma_propuesta": "aplicar_valign(documento, indice_tabla, valor='top', excepto_encabezado=True) -> dict",
+      "motivo": "el motor escribe w:jc pero no w:vAlign; las 59 tablas heredan centrado vertical.",
+      "tablas_afectadas": [
+        1,
+        8,
+        32,
+        33,
+        34,
+        45
+      ],
+      "prioridad": "alta"
+    },
+    {
+      "capacidad": "tablas.alineacion_decimal",
+      "firma_propuesta": "aplicar_alineacion_decimal(documento, indice_tabla, columnas: Sequence[int], modo='tab_decimal') -> dict",
+      "motivo": "no existe operacion de tabulador decimal ni de alineacion a la derecha por columna.",
+      "tablas_afectadas": [
+        30,
+        35,
+        36,
+        37,
+        38,
+        39,
+        49,
+        50
+      ],
+      "prioridad": "alta"
+    },
+    {
+      "capacidad": "runs.subindices",
+      "firma_propuesta": "convertir_notacion_subindices(documento, terminos: Sequence[dict], ambito='cuerpo') -> dict",
+      "motivo": "no existe operacion que escriba w:vertAlign val=subscript conservando el texto visible.",
+      "tablas_afectadas": [],
+      "prioridad": "media"
+    },
+    {
+      "capacidad": "tablas.keep_junta",
+      "firma_propuesta": "aplicar_keep_next_todas_las_filas(documento, indices: Sequence[int]) -> dict",
+      "motivo": "aplicar_keep_next_ultima_fila solo marca la ultima fila; para mantener una tabla corta en una pagina hace falta keepNext en todas las filas menos la ultima.",
+      "tablas_afectadas": [],
+      "prioridad": "baja"
+    },
+    {
+      "capacidad": "_segmentos_indivisibles: rangos",
+      "firma_propuesta": "extender el tokenizador para tratar 'N - M' y 'N - M' como unidad indivisible y el guion medio como punto de corte",
+      "motivo": "hoy solo corta tras guion simple; por eso rebalancear_tabla no ensancha la columna Min-Max de las Tablas 36 y 38.",
+      "tablas_afectadas": [
+        36,
+        38
+      ],
+      "prioridad": "media"
+    }
+  ],
+  "impacto_paginacion": {
+    "plan_aplicable": {
+      "keep_next": {
+        "paginas": 0,
+        "motivo": "no existe hoy ningun rotulo separado de su objeto; la marca solo actua ante un corte futuro"
+      },
+      "dividir_parrafos": {
+        "paginas": 0,
+        "motivo": "cada w:br ya forzaba un salto de linea; sustituirlo por un corte de parrafo conserva exactamente el mismo numero de lineas y solo cambia la justificacion del fragmento anterior",
+        "parrafos_anadidos": 29
+      },
+      "margenes_celda": {
+        "paginas": "0 a -0,2",
+        "detalle_pt": {
+          "1": -59.0,
+          "8": -35.4,
+          "32": -35.4,
+          "33": -11.8,
+          "34": -11.8
+        },
+        "motivo": "recuperar 3,2 pt por columna reduce alguna linea en las filas mas altas; la ganancia total no alcanza media pagina"
+      }
+    },
+    "extension_futura_del_motor": {
+      "paginas_estimadas": "-1 a -2",
+      "detalle": "Tabla 33 -118 pt; Tabla 8 -330 pt; Tabla 1 -260 pt; Tabla 35 -24 pt. Total ~732 pt, algo mas de una pagina, repartido en cuatro puntos del documento.",
+      "advertencia": "Cualquier cambio de altura o de ancho modifica la paginacion y obliga a ejecutar 'actualizar-campos' y a reverificar los tres indices (TOC), los 214 PAGEREF y los folios impresos; el PDF debe regenerarse despues, nunca antes."
+    },
+    "aviso_obligatorio": "Ejecutar actualizar-campos tras cualquier operacion que cambie alturas; verificar TOC, PAGEREF y folios con una lectura de control de las paginas 95-115, que es donde se concentran los cambios."
+  },
+  "verificacion_posterior": [
+    "docx_quirurgico.py auditar <destino>: 0 tablas flotantes, 59 con tblHeader y cantSplit",
+    "comprobar 857 parrafos (828 + 29) y que cada indice de parrafos_a_justificar_con_sangria_tras_la_division empieza por el fragmento esperado",
+    "docx_quirurgico.py exportar-pdf <destino>",
+    "docx_quirurgico.py renderizar-paginas <pdf> --paginas 111,113,119,120,124,126,127 --dpi 150",
+    "verificar que los folios 109 a 112 ya no muestran lineas estiradas",
+    "actualizar-campos y comparar el numero de paginas con las 159 de la v20"
+  ],
+  "riesgos": [
+    "El orden de dividir_parrafos es critico: cualquier reordenamiento invalida los indices de ajustes_formato.",
+    "El recorte de margenes de celda a 28 dxa puede hacer que un rotulo largo de encabezado gane una linea en Tablas 1 y 34; se comprueba en el render.",
+    "La Tabla 44 declara w:tcW de 5 y 17 dxa frente a un grid de 6860 y 6860: cualquier operacion futura que reescriba tcW sin reparar el grid colapsara las columnas. No se toca en este plan.",
+    "Ninguna cifra, texto de celda ni nombre se modifica: el plan solo cambia geometria, alineacion y estructura de parrafos."
+  ]
+}

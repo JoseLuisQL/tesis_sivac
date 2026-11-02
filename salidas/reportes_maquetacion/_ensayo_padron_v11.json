@@ -1,0 +1,49 @@
+{
+  "metadatos": {
+    "entrada": "salidas\\documentos\\informe_final_v11.docx",
+    "salida": null,
+    "ordenes": 3,
+    "aplicadas": 3,
+    "omitidas": 0,
+    "fallidas": 0,
+    "excluidos": [],
+    "solo_verificar": true
+  },
+  "aplicadas": [
+    {
+      "indice_docx": 151,
+      "ubicacion": "PARRAFO 151",
+      "ancla_original": "dos operadores del Almacén Especializado de Vacunas de la Red Chanka",
+      "texto_nuevo": "dos operadores del Almacén Especializado de Vacunas (Chanka) de la sede central",
+      "categoria": "integridad_padron",
+      "justificacion": "El padron adscribe el almacen a la sede central de la DISA, no a una red nominal. Se conserva el identificador (Chanka) que consta en la fuente y se retira la adscripcion inferida.",
+      "_origen": "integridad_padron_v11.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 151
+    },
+    {
+      "indice_docx": 160,
+      "ubicacion": "PARRAFO 160",
+      "ancla_original": "dos operadores en el Almacén Especializado de Vacunas de la Red Chanka",
+      "texto_nuevo": "dos operadores en el Almacén Especializado de Vacunas (Chanka) de la sede central",
+      "categoria": "integridad_padron",
+      "justificacion": "Misma operacion que en el parrafo 151. El resto de la enumeracion censal permanece intacto.",
+      "_origen": "integridad_padron_v11.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 160
+    },
+    {
+      "indice_docx": 579,
+      "ubicacion": "PARRAFO 579",
+      "ancla_original": "los 2 operadores del Almacén Especializado de Vacunas de la Red Chanka",
+      "texto_nuevo": "los 2 operadores del Almacén Especializado de Vacunas (Chanka) de la sede central",
+      "categoria": "integridad_padron",
+      "justificacion": "Misma operacion. No se altera la cifra de operadores ni la regla de agregacion pareada.",
+      "_origen": "integridad_padron_v11.json",
+      "modo": "parrafo/indice/multiples_tramos",
+      "resuelto_en": 579
+    }
+  ],
+  "omitidas": [],
+  "fallidas": []
+}

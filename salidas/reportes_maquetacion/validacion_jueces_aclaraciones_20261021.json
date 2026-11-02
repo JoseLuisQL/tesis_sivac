@@ -1,0 +1,741 @@
+{
+  "metadata": {
+    "comision": "Comprobar y calcular unicamente lo sustentable a partir de la nueva declaracion del tesista: «los jueces me dieron su validacion, todos pusieron 4 en todo».",
+    "fecha": "2026-10-21",
+    "agente": "analista-estadistico",
+    "squad": "Squad D — Bioestadistica e Inferencia",
+    "fase": "F8 — Integracion Editorial; F5 reabierta, QG-5 no cerrada y F6 bloqueada por DEC-018",
+    "estado": "completado_con_limitaciones_documentales",
+    "alcance": "Solo lectura, extraccion ZIP y Python -I. No se edito DOCX, motor ni scripts. No se inventaron firmas, nombres, DNI, fechas ni aplicabilidad.",
+    "restricciones_cumplidas": [
+      "No se edito ningun DOCX, motor ni script.",
+      "No se inventaron firmas, nombres, DNI, fechas ni dictamen de aplicabilidad.",
+      "No se convirtio la calificacion 4 en 'Si'.",
+      "No se infirieron alfa, omega, ICC ni kappa a partir de los 4.",
+      "No se resucitaron los valores anulados 0.987, 1.00, [0.899, 0.999] ni los CIP 184521, 197842 y 210455.",
+      "No se desbloqueo la inferencia poblacional.",
+      "No se uso el IC de Wilson 3/3 como si fuera el IC de la V de Aiken, ni para rechazar el instrumento o la compuerta QG-5.",
+      "No se asumio n = 3 como dato confirmado: es el tamano de panel del diseno, no un conteo verificado en la declaracion."
+    ],
+    "fuentes_consultadas": [
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v16.docx",
+        "sha256": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5",
+        "bytes": 14668806
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/v16_texto_por_pagina.md",
+        "uso": "Anclas textuales y paginacion"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/anexos_fany/expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_01_v09.docx",
+        "sha256": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+        "bytes": 63888
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_01_v09.docx",
+        "sha256": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+        "bytes": 63888,
+        "nota": "Copia identica a la del expediente_v09"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/evidencias/instrumentos_aplicados/EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx",
+        "sha256": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+        "bytes": 63888,
+        "nota": "Tercera copia identica; no es un ejemplar firmado"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/anexos_instrumentos_validacion.json",
+        "sha256": "628d13c0fcfa44252812cd627449d2fde80196e0eb724b65574389230b490e33"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/datos/recolectados/pretest_campo.csv",
+        "sha256": "1e74ab29a3e36d8eb04ec69e0aff48dcff6711339815b30855e41edfbb54e9c3"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/datos/recolectados/posttest_campo.csv",
+        "sha256": "98861dc39aaea9be4175b480de35b7317d2d93be315b2ead45df40779081fccc"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/datos/recolectados/README.md",
+        "uso": "Declaracion DATOS DE PRUEBA – REEMPLAZAR (DEC-007)"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/datos/raw/README.md",
+        "uso": "Sin MANIFEST.json ni datos de campo certificados"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/DECISIONES.md",
+        "uso": "DEC-014 a DEC-027"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/obsidian_vault/00_SISTEMA/ESTADO_TESIS.md",
+        "uso": "Secciones 0, 5.1 a 5.15"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/.claude/skills/validacion-psicometrica/SKILL.md",
+        "uso": "Formula V de Aiken y criterios"
+      },
+      {
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/.claude/skills/formato-instrumentos-validacion/SKILL.md",
+        "uso": "Modelo Fany 2024 y estructura del certificado"
+      }
+    ]
+  },
+  "declaracion_tesista": {
+    "texto_literal": "los jueces me dieron su validacion, todos pusieron 4 en todo",
+    "fecha_declaracion": "2026-10-21",
+    "autor": "Bach. Jose Luis Quispe Leon",
+    "clasificacion": "DATO REPORTADO POR EL TESISTA. No es revision documental de certificados, no acredita firmas, identidades, DNI, fechas ni dictamen de aplicabilidad.",
+    "supuestos_literales": [
+      "«Todos los jueces» se interpreta como el panel completo. El proyecto disena tres jueces, pero la declaracion no enumera un numero.",
+      "«4 en todo» se interpreta como la calificacion maxima en todas las celdas item x criterio. La unica escala documentada del proyecto en la que 4 es la categoria maxima es la escala ordinal 1-4 del expediente v09.",
+      "«Validacion» se interpreta como conformidad con la validez de contenido. No especifica cual de las opciones de aplicabilidad fue marcada ni si hubo observaciones."
+    ],
+    "lo_que_no_afirma": [
+      "No identifica a los jueces por nombre, DNI, especialidad ni institucion.",
+      "No indica fecha de evaluacion ni aporta firmas o sellos.",
+      "No especifica el numero exacto de jueces.",
+      "No especifica si el instrumento aplicado fue el de 8 items del v16 o el de 12 items del v09.",
+      "No especifica la opcion de aplicabilidad (Aplicable sin modificaciones, Aplicable con modificaciones menores, Requiere revision y reestructuracion sustancial, No aplicable).",
+      "No afirma ausencia de observaciones o sugerencias.",
+      "No aporta la matriz diligenciada ni puntajes por item y criterio."
+    ]
+  },
+  "evidencia_de_escala": {
+    "resumen": "El proyecto contiene tres modelos de validacion incompatibles entre si: (a) el expediente v09, con 12 items y escala ordinal 1-4; (b) el cuerpo del v16 (seccion 4.12, Tabla 34 y Anexo 3), con 8 items y criterios dicotomicos Si/No (c=2); y (c) el JSON anexos_instrumentos_validacion.json, con 12 items pero criterios Si/No. La declaracion «todos pusieron 4» solo es compatible con el modelo (a).",
+    "artefactos": [
+      {
+        "id": "v09_expediente",
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/anexos_fany/expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_01_v09.docx",
+        "sha256": "e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51",
+        "escala_experta": "Ordinal 1-4: 1 = No cumple; 2 = Cumple parcialmente; 3 = Cumple; 4 = Cumple plenamente.",
+        "items": 12,
+        "criterios": 3,
+        "items_por_dimension": {
+          "Dimension 1: Oportunidad de procesamiento": 2,
+          "Dimension 2: Consistencia documental": 2,
+          "Dimension 3: Satisfaccion del usuario": 8
+        },
+        "jueces_por_ejemplar": "Un bloque de cierre de juez por ejemplar. En disco hay tres copias identicas del mismo DOCX (raiz, expediente_v09 y evidencias/instrumentos_aplicados), no tres ejemplares personalizados.",
+        "estado": "En blanco: sin nombres, DNI, fechas, firmas, sellos ni marcas de calificacion. Sin imagenes embebidas (word/media ausente).",
+        "anclas": [
+          {
+            "ubicacion": "Parrafo P13",
+            "texto": "La labor solicitada consiste en valorar la pertinencia, relevancia y claridad de los indicadores, criterios y reactivos de los instrumentos, mediante la matriz de validacion adjunta con una escala de 1 a 4."
+          },
+          {
+            "ubicacion": "Tabla 33, escala de valoracion",
+            "texto": "1 | No cumple | El item no cumple el criterio y debe reformularse o eliminarse. / 2 | Cumple parcialmente | El item requiere modificaciones importantes. / 3 | Cumple | El item requiere modificaciones menores. / 4 | Cumple plenamente | El item cumple el criterio y no requiere modificaciones."
+          },
+          {
+            "ubicacion": "Tabla 63, cabecera",
+            "texto": "N.° | Dimension / indicador o item | Criterios de evaluacion (Escala 1 a 4) | Observaciones y sugerencias; subcabeceras: Pertinencia (1-4), Relevancia (1-4), Claridad (1-4)."
+          },
+          {
+            "ubicacion": "Parrafo P36",
+            "texto": "Asigne una calificacion de 1 a 4 para cada item en los criterios de pertinencia, relevancia y claridad."
+          },
+          {
+            "ubicacion": "Parrafo P43",
+            "texto": "Un item presentara validez de contenido adecuada cuando obtenga un V de Aiken mayor o igual a 0.80."
+          },
+          {
+            "ubicacion": "Parrafos P64-P82",
+            "texto": "Cierre con Opinion global sobre el instrumento (cuatro alternativas), Suficiencia de los elementos (Si/No), Observaciones, Apellidos y nombres, DNI, Especialidad, Fecha y Firma; todos en blanco."
+          }
+        ],
+        "items_inventario": [
+          {
+            "n": 1,
+            "codigo": "Treg",
+            "dimension": "D1 Oportunidad",
+            "elemento": "Tiempo de registro de movimientos de vacunas"
+          },
+          {
+            "n": 2,
+            "codigo": "Tvale",
+            "dimension": "D1 Oportunidad",
+            "elemento": "Tiempo de emision de vale de salida"
+          },
+          {
+            "n": 3,
+            "codigo": "RSD",
+            "dimension": "D2 Consistencia",
+            "elemento": "Registros sin discrepancias"
+          },
+          {
+            "n": 4,
+            "codigo": "CPE",
+            "dimension": "D2 Consistencia",
+            "elemento": "Concordancia entre cantidad programada y entregada"
+          },
+          {
+            "n": 5,
+            "codigo": "AP-01",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El procedimiento para registrar los movimientos diarios de vacunas se realiza de forma agil."
+          },
+          {
+            "n": 6,
+            "codigo": "AP-02",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El tramite para emitir comprobantes de salida y vales de entrega se efectua sin demoras innecesarias."
+          },
+          {
+            "n": 7,
+            "codigo": "AP-03",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El procedimiento utilizado facilita conciliar los saldos de vacunas entre el centro de acopio y los establecimientos de salud."
+          },
+          {
+            "n": 8,
+            "codigo": "AP-04",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El tiempo destinado a gestionar los movimientos de vacunas es compatible con mis demas actividades laborales."
+          },
+          {
+            "n": 9,
+            "codigo": "UP-01",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El procedimiento de registro permite disponer oportunamente de informacion actualizada sobre los saldos de vacunas."
+          },
+          {
+            "n": 10,
+            "codigo": "UP-02",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El procedimiento de emision de comprobantes facilita la asignacion correcta de los biologicos solicitados."
+          },
+          {
+            "n": 11,
+            "codigo": "UP-03",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El procedimiento de conciliacion facilita identificar y sustentar documentalmente las diferencias entre las cantidades programadas y entregadas."
+          },
+          {
+            "n": 12,
+            "codigo": "UP-04",
+            "dimension": "D3 Satisfaccion",
+            "elemento": "El procedimiento de gestion facilita el seguimiento oportuno de las existencias de vacunas en los establecimientos de salud."
+          }
+        ],
+        "observaciones": "Es el unico artefacto del proyecto con escala 1-4 y 12 items. No esta reflejado en el cuerpo del v16, que describe un certificado de 8 items y criterios Si/No."
+      },
+      {
+        "id": "v16_cuerpo_4_12",
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v16.docx",
+        "sha256": "cffa62d25dffba58ebc3aba59776b89f1a50aab2e5e145c123005946e73698e5",
+        "escala_experta": "Dicotomica Si/No (c=2).",
+        "items": 8,
+        "criterios": 3,
+        "formula": "V = S / n, con c = 2 y l = 0; el denominador n(c-1) se reduce a n.",
+        "umbral": 0.8,
+        "minimo_tristan": 0.5823,
+        "anclas": [
+          {
+            "ubicacion": "Parrafo 625 (PDF p. 115; impresa 99)",
+            "texto": "El objeto del juicio es un unico certificado de validez de contenido correspondiente al Instrumento N.° 03, que reproduce literalmente los 8 items de su Modalidad A (AP-01 a AP-04 y UP-01 a UP-04) y los somete a tres criterios dicotomicos independientes por item: Pertinencia (Si/No), Relevancia (Si/No) y Claridad (Si/No) (Quispe Tello, 2024, p. 62). La cuantificacion de la concordancia se realizara mediante el Coeficiente V de Aiken (Ecuacion 8) y el Indice de Validez de Contenido (IVC), ambos derivados del modelo de Tristan-Lopez (2008), que para tres jueces fija un valor minimo por item de 0.5823."
+          },
+          {
+            "ubicacion": "Parrafo 627 (PDF p. 116; impresa 100)",
+            "texto": "Donde S representa la sumatoria de las valoraciones favorables asignadas por los jueces al item, n indica el numero de expertos evaluadores (3 jueces) y c denota el numero de categorias de la escala de valoracion, que bajo criterios dicotomicos Si/No adopta el valor c = 2, de modo que el denominador n(c - 1) se reduce a n. ... con tres jueces y criterios dicotomicos, la Ecuacion 8 solo puede adoptar cuatro valores, 0, 0.333, 0.667 y 1.000, de modo que el umbral de 0.80 se alcanza unicamente con unanimidad perfecta de los tres jueces ... el resultado se reportara item por item con su intervalo de confianza de Wilson."
+          }
+        ],
+        "observaciones": "No hay escala 1-4 en el v16. En este modelo, 4 no es una categoria valida de respuesta; convertir 4 en 'Si' seria una recodificacion arbitraria y prohibida."
+      },
+      {
+        "id": "v16_tabla_34",
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v16.docx",
+        "tabla_indice_docx": 34,
+        "anclas": [
+          {
+            "ubicacion": "Tabla 34, fila INST-03, columna Estructura Operativa",
+            "texto": "8 items Likert de 1 a 5: AP-01 a AP-04 (Aceptacion del proceso) y UP-01 a UP-04 (Utilidad percibida)."
+          },
+          {
+            "ubicacion": "Tabla 34, fila INST-03, columna Sustento de Validez",
+            "texto": "Juicio de contenido mediante certificado unico con criterios dicotomicos Pertinencia, Relevancia y Claridad."
+          },
+          {
+            "ubicacion": "Tabla 34, fila INST-03, columnas V de Aiken, IVC y Dictamen",
+            "texto": "[Pendiente] | [Pendiente] | [Pendiente] (tres runs independientes, uno por celda)."
+          },
+          {
+            "ubicacion": "Parrafo 629 (nota de Tabla 34; PDF pp. 115-116; impresas 99-100)",
+            "texto": "Nota. Solo el Instrumento N.° 03 (Modalidad A) se somete a juicio de contenido. Los valores del Coeficiente V de Aiken, del Indice de Validez de Contenido y el dictamen se registraran una vez concluida la evaluacion del panel de tres jueces expertos con el certificado unico del instrumento; no se reporta ningun coeficiente mientras no exista evaluacion real."
+          }
+        ],
+        "observaciones": "La fila mezcla la escala de respuesta TAM (Likert 1-5) con la escala experta (criterios dicotomicos). No describe la matriz v09 de 12 items y escala 1-4. El texto [Pendiente] esta en un unico run por celda, lo que permite una sustitucion quirurgica segura."
+      },
+      {
+        "id": "v16_anexo_3",
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v16.docx",
+        "tablas_indice_docx": [
+          46,
+          47,
+          48
+        ],
+        "anclas": [
+          {
+            "ubicacion": "Parrafo 788 (PDF p. 150; impresa 134)",
+            "texto": "ANEXO 3: CERTIFICADOS DE VALIDACION POR JUICIO DE EXPERTOS"
+          },
+          {
+            "ubicacion": "Parrafo 789",
+            "texto": "Se presentan los tres (3) formatos en blanco de validacion de contenido por juicio de expertos, correspondientes exclusivamente al Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho items). Los coeficientes V de Aiken e IVC se consignan como [Por completar por el juez] y la aplicabilidad permanece sin dictamen hasta la emision de los tres informes firmados. No se declara validez de contenido anticipada ni se atribuye a los jueces una evaluacion no realizada."
+          },
+          {
+            "ubicacion": "Tablas 46, 47 y 48, fila 4, celda 2 (Jueces 1, 2 y 3)",
+            "texto": "V = [Por completar por el juez] (ocho items del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez]"
+          }
+        ],
+        "observaciones": "Los tres formatos son de 8 items y no incorporan la matriz v09 de 12 items ni la escala 1-4. No contienen firmas, nombres, DNI ni fechas."
+      },
+      {
+        "id": "json_anexos_instrumentos_validacion",
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/anexos_instrumentos_validacion.json",
+        "sha256": "628d13c0fcfa44252812cd627449d2fde80196e0eb724b65574389230b490e33",
+        "escala_declarada": "Dicotomica Si/No (c=2), segun /anexo_3_validacion_juicio_expertos/fundamentacion_psicometrica/escala_calificacion_fany.",
+        "items": 12,
+        "anclas": [
+          {
+            "ubicacion": "JSON pointer /anexo_3_validacion_juicio_expertos/fundamentacion_psicometrica/escala_calificacion_fany",
+            "texto": "tipo: Dicotomica institucional Si / No; valores: Si = 1, No = 0; formula_v_aiken_dicotomica: V = S / n; regla_decision_n3: valores 0.000, 0.333, 0.667 y 1.000; el umbral 0.80 exige unanimidad."
+          },
+          {
+            "ubicacion": "JSON pointer /anexo_3_validacion_juicio_expertos/inventario_12_items_evaluados",
+            "texto": "12 items: Treg, Tvale, RSD, CPE, AP-01 a AP-04 y UP-01 a UP-04."
+          },
+          {
+            "ubicacion": "JSON pointer /anexo_3_validacion_juicio_expertos/certificados_individuales[0]/matriz_evaluacion_fany/columnas",
+            "texto": "Columnas: N.°, Instrumento, Dimension / Indicador, Elemento, Criterio o Reactivo Evaluado, Pertinencia (Si/No), Relevancia (Si/No), Claridad (Si/No), Sugerencias."
+          }
+        ],
+        "observaciones": "Tercera variante: 12 items con Si/No. Contradice la escala 1-4 del v09 y el conteo de 8 items del v16. No es una matriz diligenciada; es una plantilla."
+      },
+      {
+        "id": "tam_likert",
+        "ruta": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/anexos_fany/expediente_v09/EXPEDIENTE_VALIDACION_SIVAC_EXPERTO_01_v09.docx",
+        "escala": "Likert de 5 puntos: 1 = Totalmente en desacuerdo; 2 = En desacuerdo; 3 = Ni de acuerdo ni en desacuerdo; 4 = De acuerdo; 5 = Totalmente de acuerdo.",
+        "items": 8,
+        "anclas": [
+          {
+            "ubicacion": "Tabla 138 del v09",
+            "texto": "1 Totalmente en Desacuerdo (TD); 2 En Desacuerdo (D); 3 Neutral / Ni de Acuerdo ni en Desacuerdo (N); 4 De Acuerdo (A); 5 Totalmente de Acuerdo (TA)."
+          },
+          {
+            "ubicacion": "Tabla 144 del v09",
+            "texto": "Ocho reactivos AP-01 a AP-04 y UP-01 a UP-04, con casillas 1 a 5."
+          }
+        ],
+        "observaciones": "Es la escala de respuesta de los participantes, no una escala de jueces. En ella, 4 = 'De acuerdo', no la categoria maxima. No se usa para la validacion de contenido."
+      }
+    ],
+    "tabla_comparativa": [
+      {
+        "artefacto": "Expediente v09",
+        "items": 12,
+        "criterios": 3,
+        "escala_experta": "1-4",
+        "compatible_con_4_en_todo": "Si"
+      },
+      {
+        "artefacto": "V16 seccion 4.12",
+        "items": 8,
+        "criterios": 3,
+        "escala_experta": "Si/No (c=2)",
+        "compatible_con_4_en_todo": "No: 4 no es categoria valida"
+      },
+      {
+        "artefacto": "V16 Tabla 34",
+        "items": 8,
+        "criterios": 3,
+        "escala_experta": "Si/No",
+        "compatible_con_4_en_todo": "No"
+      },
+      {
+        "artefacto": "V16 Anexo 3",
+        "items": 8,
+        "criterios": 3,
+        "escala_experta": "No impresa; V/IVC por completar",
+        "compatible_con_4_en_todo": "Indeterminado"
+      },
+      {
+        "artefacto": "JSON anexos_instrumentos_validacion",
+        "items": 12,
+        "criterios": 3,
+        "escala_experta": "Si/No (c=2)",
+        "compatible_con_4_en_todo": "No"
+      },
+      {
+        "artefacto": "Cuestionario TAM (participantes)",
+        "items": 8,
+        "criterios": "No aplica",
+        "escala_experta": "Likert 1-5",
+        "compatible_con_4_en_todo": "No: 4 = De acuerdo, no maximo"
+      }
+    ]
+  },
+  "conteo_documentado": {
+    "jueces": {
+      "diseno_del_proyecto": 3,
+      "documentados_con_firma": 0,
+      "declarados_por_el_tesista": "«todos», sin numero",
+      "identidades": "No atribuibles. Los tres nombres que figuran en DEC-014 (Ivan Soria Solis, Daniel Minaya Gutierrez y Javier Ramos Gonzales) fueron declarados en esa misma decision como jueces que no evaluaron; no pueden asociarse a la declaracion actual."
+    },
+    "items": {
+      "v09_expediente": 12,
+      "v16_cuerpo_tabla34_anexo3": 8,
+      "json_anexos": 12,
+      "declarado_por_el_tesista": "No especificado"
+    },
+    "criterios": {
+      "cantidad": 3,
+      "nombres": [
+        "Pertinencia",
+        "Relevancia",
+        "Claridad"
+      ]
+    },
+    "celdas": {
+      "v09_12_items": "12 items x 3 criterios = 36 celdas por juez; 108 celdas para 3 jueces.",
+      "v16_8_items": "8 items x 3 criterios = 24 celdas por juez; 72 celdas para 3 jueces."
+    },
+    "escala_experta": {
+      "v09": "Ordinal 1-4; l = 1; c = 4; denominador n(c-1) = 9 para n = 3.",
+      "v16": "Dicotomica Si/No; l = 0; c = 2; denominador n(c-1) = 3 para n = 3.",
+      "tam": "Likert 1-5; escala de participantes, no de jueces."
+    },
+    "soportes_documentales": {
+      "fichas_firmadas": 0,
+      "nombres_dni_fechas": 0,
+      "imagenes_de_firma_o_sello": 0,
+      "matrices_diligenciadas": 0,
+      "copias_del_v09_en_disco": 3,
+      "nota": "Las tres copias del v09 son identicas (SHA-256 e3fa6c6f...); no son tres ejemplares personalizados ni firmados."
+    }
+  },
+  "calculo_condicional": {
+    "condicion": "Si y solo si (a) el instrumento aplicado fue la matriz v09 de 12 items; (b) la escala fue la ordinal 1-4, con 1 = No cumple y 4 = Cumple plenamente; (c) los tres jueces calificaron 4 en las 36 celdas por juez (108 celdas en total); y (d) el tesista ratifica por escrito que '4 en todo' significa la totalidad de esos items, criterios y jueces.",
+    "formula": "V = S / [n(c-1)], con S = suma(s_i - l). Para c = 4 y l = 1, el denominador es n(4-1) = 3n.",
+    "parametros": {
+      "c": 4,
+      "l": 1,
+      "n": "No confirmado en la declaracion. El diseno preve tres jueces; n = 3 es un supuesto de diseno, no un dato verificado.",
+      "invariabilidad_del_punto": "Con todos los jueces en el maximo, S = n(c-1) y V = 1.000 para cualquier n >= 1. El valor puntual no depende de n si todos los jueces efectivamente respondieron."
+    },
+    "calculo_por_item": {
+      "s_i_por_juez": 4,
+      "S_por_item": "n(c-1) = 3n; con n = 3, S = 9",
+      "denominador_por_item": "n(c-1) = 3n; con n = 3, 9",
+      "V_por_item": "S/[n(c-1)] = 1.000 para cualquier n >= 1 si todos los jueces responden 4",
+      "I_CVI_por_item": "1.000 si todos los jueces responden 4 (proporcion de jueces, 3/3 con n = 3)",
+      "nota": "El resultado es identico en los 12 items porque todas las calificaciones son 4. No se reproduce una matriz diligenciada: la declaracion no aporta puntajes por item."
+    },
+    "resultado_condicional": {
+      "V_de_Aiken_por_item": 1.0,
+      "V_de_Aiken_global": 1.0,
+      "IVC_S_CVI_Ave": 1.0,
+      "IVC_S_CVI_UA": 1.0,
+      "dictamen": "No se consigna. La declaracion no especifica la opcion de aplicabilidad ni si hubo observaciones."
+    },
+    "intervalo_de_confianza": {
+      "estado": "No calculado para la V de Aiken.",
+      "nota_de_alcance_exacta": "El IC de Wilson 95% para 3/3 ([0.438503, 1.000]) es un intervalo de proporcion aplicable a un I-CVI entendido como proporcion de jueces (3 de 3), no el intervalo de confianza de la V de Aiken con c = 4. No se mezclan metodos: no se usa ese IC para aceptar, rechazar ni degradar la V, ni para cerrar o rechazar QG-5. El mandato exige V >= 0.80 e IVC >= 0.80 puntuales; ambos se cumplen en el punto bajo las condiciones 1-4. La limitacion es documental, no un rechazo estadistico.",
+      "wilson_3_de_3_solo_como_proporcion_I_CVI": {
+        "k": 3,
+        "n_supuesto": 3,
+        "limite_inferior": 0.438503,
+        "limite_superior": 1.0,
+        "advertencia": "n = 3 no esta confirmado en la declaracion; el intervalo es ilustrativo y no forma parte del resultado puntual."
+      },
+      "aiken_ci": "No calculado. Requiere n confirmado y el metodo de Penfield y Giacobbi (2004); con todas las calificaciones en el maximo, la aproximacion normal se degenera y no aporta una cota inferior informativa."
+    },
+    "sensibilidad": [
+      {
+        "escenario": "Un juez califica 3 y dos jueces califican 4",
+        "S": 8,
+        "V": 0.8889,
+        "supera_0_80": true
+      },
+      {
+        "escenario": "Un juez califica 2 y dos jueces califican 4",
+        "S": 7,
+        "V": 0.7778,
+        "supera_0_80": false
+      },
+      {
+        "escenario": "n = 2, todos 4",
+        "V": 1.0,
+        "Wilson_95_proporcion": [
+          0.34238,
+          1.0
+        ],
+        "nota": "El punto V es invariante a n; el intervalo de proporcion cambia. No es un IC de Aiken."
+      },
+      {
+        "escenario": "n = 4, todos 4",
+        "V": 1.0,
+        "Wilson_95_proporcion": [
+          0.510109,
+          1.0
+        ],
+        "nota": "El punto V es invariante a n; el intervalo de proporcion cambia. No es un IC de Aiken."
+      },
+      {
+        "escenario": "Instrumento de 8 items en lugar de 12",
+        "V_por_item": 1.0,
+        "IVC": 1.0,
+        "nota": "El valor no cambia, pero la cobertura se reduce a la Dimension 3 (AP/UP); no cubre oportunidad ni consistencia."
+      },
+      {
+        "escenario": "Modelo Si/No (c=2)",
+        "V": "No calculable sin recodificar 4 a Si",
+        "nota": "La recodificacion 4 -> Si es arbitraria y esta prohibida. No se ejecuta."
+      }
+    ],
+    "no_calculable": [
+      {
+        "parametro": "Alfa de Cronbach",
+        "razon": "Requiere puntajes de participantes en los items, no calificaciones de jueces sobre validez de contenido. Los 4 no son datos de aplicacion del cuestionario."
+      },
+      {
+        "parametro": "Omega de McDonald",
+        "razon": "Misma razon que alfa: requiere matriz de respuestas de participantes."
+      },
+      {
+        "parametro": "ICC(2,1)",
+        "razon": "Requiere mediciones repetidas de las mismas unidades por observadores; no se deriva de juicios de contenido."
+      },
+      {
+        "parametro": "Kappa de Cohen",
+        "razon": "Requiere acuerdo entre evaluadores sobre categorias de unidades documentales; no se deriva de los 4."
+      },
+      {
+        "parametro": "Contrastes poblacionales, p-values, d_z o r",
+        "razon": "No hay datos de campo certificados ni MANIFEST.json. F6 permanece bloqueada."
+      }
+    ],
+    "valores_anulados_no_resucitados": {
+      "V_de_Aiken_0_987": "Anulado por DEC-014; no se usa.",
+      "IVC_1_00": "Anulado por DEC-014; no se usa.",
+      "IC_Wilson_0_899_0_999": "Anulado por DEC-014; no se usa.",
+      "CIP_184521_197842_210455": "Anulados por DEC-014; no se usan.",
+      "dictamenes_de_aplicabilidad": "Anulados por DEC-014; no se usan."
+    },
+    "script_reproducible": "# V de Aiken con todos los jueces en el maximo: invariante a n\nc, l = 4, 1\nfor n in range(1, 6):\n    s = [4] * n\n    S = sum(x - l for x in s)\n    V = S / (n * (c - 1))\n    print(n, V)  # 1.0 en todos los casos si todos respondieron 4\n# I-CVI como proporcion 3/3 (solo si n = 3 se confirma)\nfrom statsmodels.stats.proportion import proportion_confint\nprint(proportion_confint(3, 3, alpha=0.05, method='wilson'))  # [0.438503, 1.0] -- proporcion, NO IC de Aiken"
+  },
+  "tabla_35_procedencia": {
+    "titulo": "Tabla 35. Confiabilidad de consistencia interna del Cuestionario TAM (Instrumento N.° 03) mediante el coeficiente Alfa de Cronbach e intervalo de confianza del 95%.",
+    "ubicacion": "PDF pp. 119-120; impresas 103-104; tabla indice 35 del DOCX; nota en parrafo 652.",
+    "reproduccion_exacta": [
+      {
+        "momento": "Pretest",
+        "escala": "Global TAM (8 items)",
+        "reportado": 0.939,
+        "recalculado": 0.93852,
+        "IC_reportado": "[0.874, 0.977]",
+        "IC_recalculado": "[0.874, 0.977]"
+      },
+      {
+        "momento": "Pretest",
+        "escala": "AP (4 items)",
+        "reportado": 0.877,
+        "recalculado": 0.876556,
+        "IC_reportado": "[0.721, 0.956]",
+        "IC_recalculado": "[0.721, 0.956]"
+      },
+      {
+        "momento": "Pretest",
+        "escala": "UP (4 items)",
+        "reportado": 0.874,
+        "recalculado": 0.873706,
+        "IC_reportado": "[0.715, 0.955]",
+        "IC_recalculado": "[0.715, 0.955]"
+      },
+      {
+        "momento": "Postest",
+        "escala": "Global TAM (8 items)",
+        "reportado": 0.915,
+        "recalculado": 0.915073,
+        "IC_reportado": "[0.826, 0.968]",
+        "IC_recalculado": "[0.826, 0.968]"
+      },
+      {
+        "momento": "Postest",
+        "escala": "AP (4 items)",
+        "reportado": 0.831,
+        "recalculado": 0.830601,
+        "IC_reportado": "[0.618, 0.939]",
+        "IC_recalculado": "[0.618, 0.939]"
+      },
+      {
+        "momento": "Postest",
+        "escala": "UP (4 items)",
+        "reportado": 0.841,
+        "recalculado": 0.840514,
+        "IC_reportado": "[0.640, 0.943]",
+        "IC_recalculado": "[0.640, 0.943]"
+      }
+    ],
+    "fuente_reproducida": {
+      "archivos": [
+        "datos/recolectados/pretest_campo.csv",
+        "datos/recolectados/posttest_campo.csv"
+      ],
+      "n": 14,
+      "items": 8,
+      "metodo_IC": "Feldt (1965), distribucion F asintotica, 95%",
+      "resultado": "Los seis coeficientes y los seis intervalos se reproducen exactamente al tercer decimal desde los CSV de prueba."
+    },
+    "estado_de_los_datos": "Los CSV estan rotulados en datos/recolectados/README.md como «DATOS DE PRUEBA – REEMPLAZAR (DEC-007)». No existe datos/raw/MANIFEST.json. No son mediciones de campo certificadas.",
+    "conclusion": "La Tabla 35 no proviene de mediciones de campo certificadas: proviene del conjunto de datos de prueba. La nota actual, que atribuye la fuente a la «Matriz de recoleccion de campo SIVAC (2026)», es inexacta y debe corregirse sin alterar las cifras.",
+    "no_inferencia": "La declaracion de los jueces (4 en todo) no permite calcular, validar ni sustituir el Alfa de Cronbach de la Tabla 35. Son datos de naturaleza distinta.",
+    "parche_propuesto": {
+      "ancla": "Parrafo 652, nota de Tabla 35.",
+      "texto_actual": "Nota. Intervalo de confianza (IC) al 95% calculado segun el metodo de distribucion F asintotica de Feldt (1965). Muestra censal n = 14 trabajadores de la cadena de inmunizaciones de la Direccion de Salud Apurimac II. Criterios de baremacion psicometrica: >= .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. El intervalo de confianza se expresa como [limite inferior, limite superior]. Fuente: Matriz de recoleccion de campo SIVAC (2026).",
+      "texto_propuesto": "Nota. Intervalo de confianza (IC) al 95% calculado segun el metodo de distribucion F asintotica de Feldt (1965). Los coeficientes se reproducen exactamente del conjunto de datos de prueba depositado en datos/recolectados/ (pretest_campo.csv y posttest_campo.csv, n = 14), marcado como DATOS DE PRUEBA – REEMPLAZAR (DEC-007); no provienen de mediciones de campo certificadas y seran recalculados con los registros definitivos. Criterios de baremacion psicometrica: >= .90 Excelente, .80 a .89 Buena, .70 a .79 Aceptable. El intervalo de confianza se expresa como [limite inferior, limite superior].",
+      "cambia_cifras": false,
+      "requiere_ratificacion_del_tesista": false
+    }
+  },
+  "anclas_y_parche_editorial": {
+    "tabla_34": {
+      "ubicacion": "Tabla indice 34 del DOCX; fila INST-03; PDF pp. 115-116; impresas 99-100.",
+      "ancla_celdas": [
+        "[Pendiente]",
+        "[Pendiente]",
+        "[Pendiente]"
+      ],
+      "ancla_nota": "Parrafo 629: «Nota. Solo el Instrumento N.° 03 (Modalidad A) se somete a juicio de contenido. Los valores del Coeficiente V de Aiken, del Indice de Validez de Contenido y el dictamen se registraran una vez concluida la evaluacion del panel de tres jueces expertos con el certificado unico del instrumento; no se reporta ningun coeficiente mientras no exista evaluacion real.»",
+      "parche_seguro": {
+        "tipo": "Anadir una nota de trazabilidad despues del parrafo 629; no sustituir [Pendiente] por cifras.",
+        "texto_propuesto": "Nota de trazabilidad. El expediente v09 documenta una matriz de 12 items con escala ordinal de 1 a 4; el cuerpo del informe describe un certificado de 8 items con criterios dicotomicos Si/No. Son instrumentos distintos. La declaracion del tesista sobre calificaciones de 4 es compatible unicamente con la escala 1-4 del v09 y no se traslada al modelo Si/No. Hasta que se ratifique cual instrumento se aplico y se entreguen las fichas firmadas, no se consigna ningun coeficiente.",
+        "requiere_ratificacion_del_tesista": false,
+        "cambia_cifras": false
+      },
+      "parche_condicional": {
+        "tipo": "Solo si el tesista ratifica por escrito que aplico la matriz v09 de 12 items y 1-4, y autoriza consignar la declaracion como resultado.",
+        "texto_propuesto": "Sustituir la fila INST-03: Estructura Operativa = «12 items: 2 de oportunidad de procesamiento (Treg, Tvale), 2 de consistencia documental (RSD, CPE) y 8 de satisfaccion del usuario (AP-01 a AP-04, UP-01 a UP-04), con escala experta ordinal de 1 a 4»; Sustento de Validez = «Juicio de contenido con criterios de Pertinencia, Relevancia y Claridad en escala 1-4»; V de Aiken = «1.000»; IVC = «1.000»; Dictamen = «Aplicable» solo si el tesista lo ratifica. Anadir: «Calculo condicional sobre declaracion del tesista, no verificado documentalmente; IC Wilson 95% [0.4385, 1.000] por item».",
+        "requiere_ratificacion_del_tesista": true,
+        "cambia_cifras": true,
+        "advertencia": "No aplicar en esta comision. No convierte la declaracion en certificado firmado ni cierra QG-5."
+      }
+    },
+    "anexo_3": {
+      "ubicacion": "Parrafo 789; Tablas 46, 47 y 48, fila 4, celda 2; PDF pp. 150-151; impresas 134-135.",
+      "ancla_intro": "Parrafo 789: «Se presentan los tres (3) formatos en blanco de validacion de contenido por juicio de expertos, correspondientes exclusivamente al Instrumento N.° 03: Cuestionario TAM (Modalidad A, ocho items). Los coeficientes V de Aiken e IVC se consignan como [Por completar por el juez] y la aplicabilidad permanece sin dictamen hasta la emision de los tres informes firmados. No se declara validez de contenido anticipada ni se atribuye a los jueces una evaluacion no realizada.»",
+      "ancla_placeholders": [
+        "V = [Por completar por el juez] (ocho items del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez] (Juez 1)",
+        "V = [Por completar por el juez] (ocho items del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez] (Juez 2)",
+        "V = [Por completar por el juez] (ocho items del Instrumento N.° 03, Modalidad A); IVC = [Por completar por el juez] (Juez 3)"
+      ],
+      "parche_seguro": {
+        "tipo": "Anadir una nota de trazabilidad despues del parrafo 789; conservar los tres formatos en blanco y los placeholders.",
+        "texto_propuesto": "Nota de trazabilidad. El expediente v09 contiene una matriz de 12 items con escala ordinal de 1 a 4. Los tres formatos de este anexo describen un certificado de 8 items con criterios Si/No. La declaracion del tesista sobre calificaciones de 4 corresponde a la escala 1-4 y no se convierte en 'Si'. Mientras no se entreguen las fichas firmadas con identidad, fecha, firma y opinion de aplicabilidad, los coeficientes V de Aiken e IVC permanecen como [Por completar por el juez].",
+        "requiere_ratificacion_del_tesista": false,
+        "cambia_cifras": false
+      },
+      "parche_condicional": {
+        "tipo": "Solo con ratificacion expresa: sustituir los tres formatos de 8 items por la matriz v09 de 12 items y escala 1-4, o mantener los formatos y anadir la matriz v09 como anexo separado.",
+        "requiere_ratificacion_del_tesista": true,
+        "cambia_cifras": true,
+        "advertencia": "No aplicar en esta comision. Exige decision del tesista sobre el instrumento efectivamente aplicado."
+      }
+    },
+    "seccion_4_12": {
+      "ubicacion": "Parrafos 625 y 627; PDF pp. 115-116; impresas 99-100.",
+      "ancla": "El cuerpo describe 8 items y criterios Si/No (c=2), con V = S/n y umbral 0.80; no menciona la escala 1-4 ni los 12 items del v09.",
+      "parche_seguro": {
+        "tipo": "Anadir un parrafo de concordancia despues del parrafo 627, sin alterar la formula ni los umbrales.",
+        "texto_propuesto": "Nota de concordancia instrumental. El expediente v09 aplica una matriz de 12 items con escala ordinal de 1 a 4, mientras que este apartado describe un certificado de 8 items con criterios dicotomicos. Ambos modelos no son equivalentes: en el primero c = 4 y el denominador de la Ecuacion 8 es n(c-1) = 9 para tres jueces; en el segundo c = 2 y el denominador se reduce a n = 3. La calificacion 4 solo tiene sentido en el primer modelo y no se recodifica como 'Si'. La identificacion del instrumento efectivamente aplicado queda pendiente de ratificacion del tesista.",
+        "requiere_ratificacion_del_tesista": false,
+        "cambia_cifras": false
+      }
+    },
+    "tabla_35": {
+      "ubicacion": "Parrafo 652; PDF pp. 119-120; impresas 103-104.",
+      "parche_seguro": "Ver tabla_35_procedencia.parche_propuesto; solo cambia la atribucion de la fuente, no las cifras."
+    }
+  },
+  "salida_breve_declaracion_preservada": {
+    "declaracion_preservada": "El tesista declaro el 2026-10-21: «los jueces me dieron su validacion, todos pusieron 4 en todo».",
+    "resultado_puntual_condicional": "Bajo las condiciones 1-4, la V de Aiken por item es 1.000 y el IVC es 1.000.",
+    "condiciones": [
+      "1. El instrumento aplicado fue la matriz del expediente v09, con 12 items y tres criterios.",
+      "2. La escala experta fue la ordinal 1-4, con 1 = No cumple y 4 = Cumple plenamente.",
+      "3. Todos los jueces que respondieron asignaron 4 en todas las celdas item x criterio.",
+      "4. El tesista ratifica que «4 en todo» cubre la totalidad de items, criterios y jueces."
+    ],
+    "no_enumera_matriz": "No se reproduce ni se finge una matriz diligenciada de 12 items x 3 criterios. La declaracion no aporta puntajes por item ni numero de jueces; solo afirma el maximo global.",
+    "estado": "Dato reportado. No acredita firmas, identidades, fechas ni dictamen; no cierra QG-5.",
+    "advertencia_de_alcance": "El IC de Wilson 3/3 es un intervalo de proporcion (I-CVI), no un IC de Aiken; el panel de 3 jueces es supuesto del diseno, no confirmado en la declaracion."
+  },
+  "conclusion": {
+    "pueden_consignarse_V_e_IVC_como_resultado_certificado": false,
+    "pueden_consignarse_como_calculo_condicional": true,
+    "resultado_condicional": "Bajo la matriz v09 de 12 items y escala 1-4, si todos los jueces calificaron 4 en todas las celdas, V = 1.000 por item e IVC = 1.000 en el punto. El valor puntual es invariante al numero de jueces si todos respondieron el maximo. El mandato exige V >= 0.80 e IVC >= 0.80 puntuales, y ambos se cumplen en el punto bajo las condiciones 1-4. No se calcula ni se reporta un IC de Aiken: n no esta confirmado y, con todas las calificaciones en el maximo, la aproximacion normal se degenera. El IC de Wilson 3/3 ([0.438503, 1.000]) es de proporcion (I-CVI), no de V, y no se usa para rechazar el instrumento ni la compuerta QG-5.",
+    "condiciones_para_consignar": [
+      "Entregar las fichas o certificados firmados por los jueces, con nombre, DNI, especialidad, fecha, firma y opinion de aplicabilidad, o una matriz consolidada firmada.",
+      "Ratificar por escrito cual instrumento se aplico: la matriz v09 de 12 items y escala 1-4, o el certificado de 8 items y criterios Si/No. El informe debe describir el mismo instrumento.",
+      "Si el instrumento aplicado es el de 1-4: usar c = 4, l = 1 y V = S/[n(c-1)]; reportar V por item e IVC en el punto. El denominador es 3n, no un 9 fijo.",
+      "Si el instrumento aplicado es Si/No: usar c = 2, l = 0 y V = S/n; no usar la calificacion 4.",
+      "Especificar el numero exacto de jueces. Si se desea reportar un IC, declarar el metodo: el IC de Aiken (Penfield y Giacobbi, 2004) para V y el IC de proporcion para el I-CVI, sin mezclarlos.",
+      "Especificar la opcion de aplicabilidad y si hubo observaciones; no inferirlas.",
+      "Mantener QG-5 abierta y F6 bloqueada hasta que exista evidencia documental."
+    ],
+    "no_cierra_QG5": true,
+    "no_rechaza_QG5": true,
+    "no_rechaza_el_instrumento": true,
+    "no_desbloquea_F6": true,
+    "no_habilita_inferencia_poblacional": true,
+    "no_resucita_valores_anulados": true,
+    "limitacion_es_documental_no_estadistica": true,
+    "sintesis_para_el_director": "La declaracion del tesista es un dato reportado, no una validacion documentada. El unico calculo sustentable es condicional: V = 1.000 e IVC = 1.000 en el punto, sobre la matriz v09 de 12 items y escala 1-4, bajo las condiciones 1-4. El punto es invariante a n si todos respondieron 4; n = 3 es supuesto de diseno, no dato confirmado. No se reporta IC de Aiken; el IC de Wilson 3/3 es de proporcion (I-CVI) y no se usa para rechazar. La limitacion es documental, no un rechazo estadistico: QG-5 sigue abierta, no rechazada. No puede trasladarse al certificado de 8 items y Si/No del v16, ni consignarse como coeficiente certificado en la Tabla 34 o el Anexo 3. El parche editorial seguro es registrar la declaracion y la pendencia documental, sin sustituir los placeholders por cifras. La Tabla 35 se reproduce exactamente desde los datos de prueba y debe corregir su atribucion de fuente, no sus cifras."
+  },
+  "riesgos_e_incoherencias": [
+    "Tres modelos de validacion incompatibles: v09 (12 items, 1-4), v16 (8 items, Si/No) y JSON (12 items, Si/No).",
+    "La Tabla 34 del v16 mezcla la escala de respuesta TAM (Likert 1-5) con la escala experta (criterios dicotomicos).",
+    "El Anexo 3 del v16 contiene tres formatos de 8 items, mientras el unico expediente con escala 1-4 es el v09 de 12 items.",
+    "La declaracion «todos pusieron 4» no enumera jueces, items ni criterios; su lectura literal es un supuesto, no un hecho documentado.",
+    "No hay fichas firmadas, nombres, DNI, fechas, firmas, sellos ni dictamen de aplicabilidad.",
+    "Las tres copias del v09 son identicas y no estan personalizadas por juez; no son tres ejemplares diligenciados.",
+    "El IC de Wilson 3/3 ([0.438503, 1.000]) es de proporcion (I-CVI), no de la V de Aiken. No se usa para rechazar el instrumento ni la compuerta QG-5; la limitacion es documental (sin fichas firmadas y con instrumentos incompatibles), no estadistica.",
+    "El panel de tres jueces es un supuesto del diseno, no un conteo confirmado en la declaracion; el valor puntual V = 1.000 es invariante a n si todos respondieron 4.",
+    "La nota de la Tabla 35 atribuye los coeficientes a una «Matriz de recoleccion de campo SIVAC (2026)», pero se reproducen exactamente desde los CSV marcados como datos de prueba.",
+    "No existe datos/raw/MANIFEST.json; los datos de datos/recolectados son de prueba. F6 sigue bloqueada.",
+    "Los valores 0.987, 1.00, [0.899, 0.999] y los CIP 184521, 197842 y 210455 siguen anulados por DEC-014 y no deben reaparecer."
+  ],
+  "hechos_no_asumidos": [
+    "No se asumio la identidad de los jueces.",
+    "No se asumio un numero de jueces distinto del diseno de tres.",
+    "No se asumio n = 3 como dato confirmado: es el tamano de panel del diseno, no un conteo verificado.",
+    "No se asumio que el IC de Wilson 3/3 sea el IC de la V de Aiken; son metodos distintos y no se mezclan.",
+    "No se asumio que la declaracion se refiera a los 8 items del v16 ni a los 12 del v09.",
+    "No se asumio que «4 en todo» incluya todos los criterios y todos los items; se declaro como supuesto literal.",
+    "No se asumio la opcion de aplicabilidad.",
+    "No se asumio ausencia de observaciones.",
+    "No se asumio que los 4 sean datos de aplicacion del cuestionario TAM.",
+    "No se asumio que los datos de prueba sean datos de campo.",
+    "No se asumio que la validacion cierre QG-5 o desbloquee F6."
+  ],
+  "verificacion_de_ejecucion": {
+    "comandos": [
+      "sha256sum de los DOCX, CSV y JSON citados.",
+      "Extraccion ZIP y lectura de word/document.xml del v09 con Python -I.",
+      "Lectura de tablas y parrafos del v16 con python-docx.",
+      "Recalculo de alfa de Cronbach y IC de Feldt desde los CSV con Python -I, scipy y statistics.",
+      "Calculo de V condicional y del intervalo de Wilson como proporcion con statsmodels; no se calculo IC de Aiken."
+    ],
+    "resultados_verificados": [
+      "El v09, la copia de la raiz y la copia de evidencias tienen el mismo SHA-256 e3fa6c6f0ac42c13bce352064721bc61966d51085d0291e73177366085cc4a51.",
+      "El v09 no contiene word/media; no hay imagenes de firma o sello.",
+      "Los seis coeficientes de la Tabla 35 se reproducen al tercer decimal desde pretest_campo.csv y posttest_campo.csv.",
+      "La Tabla 34 contiene [Pendiente] en un unico run por celda de V, IVC y Dictamen.",
+      "El Anexo 3 contiene tres placeholders identicos de V/IVC en las Tablas 46, 47 y 48.",
+      "Wilson 95% para 3/3 = [0.438503, 1.000000], reportado solo como intervalo de proporcion (I-CVI), no como IC de la V de Aiken."
+    ],
+    "docx_editados": 0,
+    "scripts_editados": 0
+  }
+}

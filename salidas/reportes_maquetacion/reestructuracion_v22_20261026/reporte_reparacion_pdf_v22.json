@@ -1,0 +1,1149 @@
+{
+  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22.docx",
+  "pdf_origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22.pdf",
+  "pdf_salida": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_REESTRUCTURADO_V22_reparado.pdf",
+  "candidatos_docx": 49,
+  "ocurrencias_pdf": 49,
+  "asignadas": 49,
+  "sin_asignar": [],
+  "texto_identico": true,
+  "geometria_identica": true,
+  "paginas": 186,
+  "dpi_min": 136.5,
+  "dpi_mediana": 413.8,
+  "dpi_max": 875.8,
+  "rects_identicos": true,
+  "imagenes_duplicadas_podadas": 49,
+  "asignaciones": [
+    {
+      "pagina": 1,
+      "xref": 18,
+      "orden_docx": 0,
+      "hamming": 0,
+      "mae": 0.28,
+      "ancho_px": 1368,
+      "alto_px": 1769,
+      "rect": [
+        248.5,
+        135.75,
+        360.97,
+        281.2
+      ],
+      "dpi_previo": 199.7,
+      "asignada": true
+    },
+    {
+      "pagina": 39,
+      "xref": 546,
+      "orden_docx": 1,
+      "hamming": 0,
+      "mae": 0.07,
+      "ancho_px": 999,
+      "alto_px": 376,
+      "rect": [
+        185.0,
+        204.39,
+        424.5,
+        294.53
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 40,
+      "xref": 548,
+      "orden_docx": 2,
+      "hamming": 0,
+      "mae": 0.02,
+      "ancho_px": 1651,
+      "alto_px": 1433,
+      "rect": [
+        106.75,
+        109.6,
+        502.74,
+        453.3
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 41,
+      "xref": 550,
+      "orden_docx": 3,
+      "hamming": 0,
+      "mae": 0.09,
+      "ancho_px": 2302,
+      "alto_px": 834,
+      "rect": [
+        106.75,
+        109.6,
+        502.7,
+        253.05
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 42,
+      "xref": 552,
+      "orden_docx": 4,
+      "hamming": 0,
+      "mae": 0.19,
+      "ancho_px": 1685,
+      "alto_px": 934,
+      "rect": [
+        106.75,
+        109.6,
+        502.74,
+        329.1
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 43,
+      "xref": 554,
+      "orden_docx": 5,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 1960,
+      "alto_px": 1074,
+      "rect": [
+        106.75,
+        245.79,
+        502.67,
+        462.74
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 45,
+      "xref": 557,
+      "orden_docx": 6,
+      "hamming": 0,
+      "mae": 0.06,
+      "ancho_px": 751,
+      "alto_px": 700,
+      "rect": [
+        106.75,
+        109.6,
+        502.74,
+        478.7
+      ],
+      "dpi_previo": 136.5,
+      "asignada": true
+    },
+    {
+      "pagina": 47,
+      "xref": 560,
+      "orden_docx": 7,
+      "hamming": 2,
+      "mae": 0.23,
+      "ancho_px": 2042,
+      "alto_px": 2031,
+      "rect": [
+        116.55,
+        126.85,
+        492.93,
+        501.2
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 49,
+      "xref": 563,
+      "orden_docx": 8,
+      "hamming": 1,
+      "mae": 0.17,
+      "ancho_px": 2101,
+      "alto_px": 1603,
+      "rect": [
+        106.75,
+        126.85,
+        502.7,
+        428.95
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 50,
+      "xref": 565,
+      "orden_docx": 9,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 971,
+      "alto_px": 510,
+      "rect": [
+        188.25,
+        221.64,
+        421.19,
+        343.99
+      ],
+      "dpi_previo": 200.0,
+      "asignada": true
+    },
+    {
+      "pagina": 51,
+      "xref": 567,
+      "orden_docx": 10,
+      "hamming": 0,
+      "mae": 0.01,
+      "ancho_px": 2001,
+      "alto_px": 1380,
+      "rect": [
+        106.75,
+        325.13,
+        502.74,
+        598.23
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 102,
+      "xref": 670,
+      "orden_docx": 11,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2760,
+      "alto_px": 750,
+      "rect": [
+        95.95,
+        192.34,
+        513.45,
+        305.79
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 112,
+      "xref": 681,
+      "orden_docx": 12,
+      "hamming": 0,
+      "mae": 0.44,
+      "ancho_px": 2880,
+      "alto_px": 1300,
+      "rect": [
+        95.95,
+        421.97,
+        513.55,
+        610.47
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 113,
+      "xref": 683,
+      "orden_docx": 13,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2800,
+      "alto_px": 1200,
+      "rect": [
+        95.95,
+        387.63,
+        513.5,
+        566.58
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 114,
+      "xref": 685,
+      "orden_docx": 14,
+      "hamming": 0,
+      "mae": 0.04,
+      "ancho_px": 2800,
+      "alto_px": 1270,
+      "rect": [
+        95.95,
+        126.25,
+        513.52,
+        315.65
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 115,
+      "xref": 687,
+      "orden_docx": 15,
+      "hamming": 0,
+      "mae": 0.01,
+      "ancho_px": 2520,
+      "alto_px": 1470,
+      "rect": [
+        95.95,
+        146.94,
+        513.55,
+        390.54
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 116,
+      "xref": 689,
+      "orden_docx": 16,
+      "hamming": 0,
+      "mae": 0.02,
+      "ancho_px": 2600,
+      "alto_px": 1480,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        384.64
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 117,
+      "xref": 691,
+      "orden_docx": 17,
+      "hamming": 0,
+      "mae": 0.02,
+      "ancho_px": 2720,
+      "alto_px": 1280,
+      "rect": [
+        95.95,
+        126.25,
+        513.51,
+        322.75
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 118,
+      "xref": 693,
+      "orden_docx": 18,
+      "hamming": 1,
+      "mae": 0.24,
+      "ancho_px": 2800,
+      "alto_px": 1300,
+      "rect": [
+        95.95,
+        481.07,
+        513.47,
+        674.92
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 119,
+      "xref": 695,
+      "orden_docx": 19,
+      "hamming": 0,
+      "mae": 0.04,
+      "ancho_px": 2800,
+      "alto_px": 1260,
+      "rect": [
+        95.95,
+        278.13,
+        513.51,
+        466.03
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 120,
+      "xref": 697,
+      "orden_docx": 20,
+      "hamming": 0,
+      "mae": 0.04,
+      "ancho_px": 2800,
+      "alto_px": 1280,
+      "rect": [
+        95.95,
+        126.25,
+        513.54,
+        317.15
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 120,
+      "xref": 698,
+      "orden_docx": 21,
+      "hamming": 0,
+      "mae": 0.07,
+      "ancho_px": 2800,
+      "alto_px": 1220,
+      "rect": [
+        95.95,
+        478.49,
+        513.54,
+        660.44
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 134,
+      "xref": 713,
+      "orden_docx": 22,
+      "hamming": 1,
+      "mae": 0.61,
+      "ancho_px": 2240,
+      "alto_px": 984,
+      "rect": [
+        95.95,
+        226.19,
+        513.45,
+        409.59
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 134,
+      "xref": 714,
+      "orden_docx": 23,
+      "hamming": 1,
+      "mae": 0.03,
+      "ancho_px": 2240,
+      "alto_px": 826,
+      "rect": [
+        95.95,
+        570.93,
+        513.44,
+        724.88
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 135,
+      "xref": 716,
+      "orden_docx": 24,
+      "hamming": 0,
+      "mae": 0.01,
+      "ancho_px": 2360,
+      "alto_px": 1222,
+      "rect": [
+        95.95,
+        340.23,
+        513.49,
+        556.43
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 136,
+      "xref": 718,
+      "orden_docx": 25,
+      "hamming": 0,
+      "mae": 0.01,
+      "ancho_px": 2360,
+      "alto_px": 1260,
+      "rect": [
+        95.95,
+        146.94,
+        513.54,
+        369.89
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 137,
+      "xref": 720,
+      "orden_docx": 26,
+      "hamming": 0,
+      "mae": 0.01,
+      "ancho_px": 2360,
+      "alto_px": 1064,
+      "rect": [
+        95.95,
+        146.94,
+        513.5,
+        335.19
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 137,
+      "xref": 721,
+      "orden_docx": 27,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2360,
+      "alto_px": 748,
+      "rect": [
+        95.95,
+        579.33,
+        513.52,
+        711.68
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 138,
+      "xref": 723,
+      "orden_docx": 28,
+      "hamming": 0,
+      "mae": 0.0,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        236.74,
+        513.53,
+        461.19
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 139,
+      "xref": 725,
+      "orden_docx": 29,
+      "hamming": 6,
+      "mae": 0.34,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 139,
+      "xref": 726,
+      "orden_docx": 30,
+      "hamming": 0,
+      "mae": 0.38,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        487.34,
+        513.53,
+        711.79
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 140,
+      "xref": 728,
+      "orden_docx": 31,
+      "hamming": 5,
+      "mae": 0.34,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 140,
+      "xref": 729,
+      "orden_docx": 32,
+      "hamming": 3,
+      "mae": 0.31,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        487.34,
+        513.53,
+        711.79
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 141,
+      "xref": 731,
+      "orden_docx": 33,
+      "hamming": 2,
+      "mae": 0.27,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 141,
+      "xref": 732,
+      "orden_docx": 34,
+      "hamming": 1,
+      "mae": 0.22,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        487.34,
+        513.53,
+        711.79
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 142,
+      "xref": 734,
+      "orden_docx": 35,
+      "hamming": 1,
+      "mae": 0.02,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 142,
+      "xref": 735,
+      "orden_docx": 36,
+      "hamming": 5,
+      "mae": 0.48,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        487.34,
+        513.53,
+        711.79
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 143,
+      "xref": 737,
+      "orden_docx": 37,
+      "hamming": 1,
+      "mae": 0.02,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 143,
+      "xref": 738,
+      "orden_docx": 38,
+      "hamming": 2,
+      "mae": 0.25,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        487.34,
+        513.53,
+        711.79
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 144,
+      "xref": 740,
+      "orden_docx": 39,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 144,
+      "xref": 741,
+      "orden_docx": 40,
+      "hamming": 3,
+      "mae": 0.28,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        466.64,
+        513.53,
+        691.09
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 145,
+      "xref": 743,
+      "orden_docx": 41,
+      "hamming": 0,
+      "mae": 0.02,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        126.25,
+        513.53,
+        350.7
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 145,
+      "xref": 744,
+      "orden_docx": 42,
+      "hamming": 1,
+      "mae": 0.3,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        445.94,
+        513.53,
+        670.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 146,
+      "xref": 746,
+      "orden_docx": 43,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2400,
+      "alto_px": 1290,
+      "rect": [
+        95.95,
+        146.94,
+        513.53,
+        371.39
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 147,
+      "xref": 748,
+      "orden_docx": 44,
+      "hamming": 0,
+      "mae": 0.02,
+      "ancho_px": 2360,
+      "alto_px": 1024,
+      "rect": [
+        95.95,
+        126.25,
+        513.44,
+        307.4
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 153,
+      "xref": 755,
+      "orden_docx": 45,
+      "hamming": 0,
+      "mae": 0.04,
+      "ancho_px": 2800,
+      "alto_px": 960,
+      "rect": [
+        95.95,
+        126.25,
+        513.47,
+        269.4
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    },
+    {
+      "pagina": 167,
+      "xref": 770,
+      "orden_docx": 46,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2700,
+      "alto_px": 1500,
+      "rect": [
+        95.95,
+        146.94,
+        513.55,
+        378.94
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 169,
+      "xref": 773,
+      "orden_docx": 47,
+      "hamming": 0,
+      "mae": 0.01,
+      "ancho_px": 2400,
+      "alto_px": 1500,
+      "rect": [
+        95.95,
+        146.94,
+        513.55,
+        407.94
+      ],
+      "dpi_previo": 199.8,
+      "asignada": true
+    },
+    {
+      "pagina": 171,
+      "xref": 776,
+      "orden_docx": 48,
+      "hamming": 0,
+      "mae": 0.03,
+      "ancho_px": 2700,
+      "alto_px": 1500,
+      "rect": [
+        96.0,
+        146.94,
+        513.5,
+        378.79
+      ],
+      "dpi_previo": 199.9,
+      "asignada": true
+    }
+  ],
+  "resoluciones": [
+    {
+      "pagina": 1,
+      "xref": 18,
+      "dpi": 875.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 39,
+      "xref": 544,
+      "dpi": 300.3,
+      "rect_igual": true
+    },
+    {
+      "pagina": 40,
+      "xref": 546,
+      "dpi": 300.2,
+      "rect_igual": true
+    },
+    {
+      "pagina": 41,
+      "xref": 548,
+      "dpi": 418.6,
+      "rect_igual": true
+    },
+    {
+      "pagina": 42,
+      "xref": 550,
+      "dpi": 306.4,
+      "rect_igual": true
+    },
+    {
+      "pagina": 43,
+      "xref": 552,
+      "dpi": 356.4,
+      "rect_igual": true
+    },
+    {
+      "pagina": 45,
+      "xref": 555,
+      "dpi": 136.5,
+      "rect_igual": true
+    },
+    {
+      "pagina": 47,
+      "xref": 558,
+      "dpi": 390.6,
+      "rect_igual": true
+    },
+    {
+      "pagina": 49,
+      "xref": 561,
+      "dpi": 382.0,
+      "rect_igual": true
+    },
+    {
+      "pagina": 50,
+      "xref": 563,
+      "dpi": 300.1,
+      "rect_igual": true
+    },
+    {
+      "pagina": 51,
+      "xref": 565,
+      "dpi": 363.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 102,
+      "xref": 666,
+      "dpi": 476.0,
+      "rect_igual": true
+    },
+    {
+      "pagina": 112,
+      "xref": 677,
+      "dpi": 496.6,
+      "rect_igual": true
+    },
+    {
+      "pagina": 113,
+      "xref": 679,
+      "dpi": 482.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 114,
+      "xref": 681,
+      "dpi": 482.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 115,
+      "xref": 683,
+      "dpi": 434.5,
+      "rect_igual": true
+    },
+    {
+      "pagina": 116,
+      "xref": 685,
+      "dpi": 448.3,
+      "rect_igual": true
+    },
+    {
+      "pagina": 117,
+      "xref": 687,
+      "dpi": 469.0,
+      "rect_igual": true
+    },
+    {
+      "pagina": 118,
+      "xref": 689,
+      "dpi": 482.9,
+      "rect_igual": true
+    },
+    {
+      "pagina": 119,
+      "xref": 691,
+      "dpi": 482.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 120,
+      "xref": 693,
+      "dpi": 482.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 120,
+      "xref": 694,
+      "dpi": 482.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 134,
+      "xref": 709,
+      "dpi": 386.3,
+      "rect_igual": true
+    },
+    {
+      "pagina": 134,
+      "xref": 710,
+      "dpi": 386.3,
+      "rect_igual": true
+    },
+    {
+      "pagina": 135,
+      "xref": 712,
+      "dpi": 407.0,
+      "rect_igual": true
+    },
+    {
+      "pagina": 136,
+      "xref": 714,
+      "dpi": 406.9,
+      "rect_igual": true
+    },
+    {
+      "pagina": 137,
+      "xref": 716,
+      "dpi": 406.9,
+      "rect_igual": true
+    },
+    {
+      "pagina": 137,
+      "xref": 717,
+      "dpi": 406.9,
+      "rect_igual": true
+    },
+    {
+      "pagina": 138,
+      "xref": 719,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 139,
+      "xref": 721,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 139,
+      "xref": 722,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 140,
+      "xref": 724,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 140,
+      "xref": 725,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 141,
+      "xref": 727,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 141,
+      "xref": 728,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 142,
+      "xref": 730,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 142,
+      "xref": 731,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 143,
+      "xref": 733,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 143,
+      "xref": 734,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 144,
+      "xref": 736,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 144,
+      "xref": 737,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 145,
+      "xref": 739,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 145,
+      "xref": 740,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 146,
+      "xref": 742,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 147,
+      "xref": 744,
+      "dpi": 407.0,
+      "rect_igual": true
+    },
+    {
+      "pagina": 153,
+      "xref": 751,
+      "dpi": 482.9,
+      "rect_igual": true
+    },
+    {
+      "pagina": 167,
+      "xref": 766,
+      "dpi": 465.5,
+      "rect_igual": true
+    },
+    {
+      "pagina": 169,
+      "xref": 769,
+      "dpi": 413.8,
+      "rect_igual": true
+    },
+    {
+      "pagina": 171,
+      "xref": 772,
+      "dpi": 465.6,
+      "rect_igual": true
+    }
+  ],
+  "sha256_pdf": "e7e9cce9662f218e33234dd5b573ea4d96babaf4c8b1669a2693f33adff5c8d0"
+}

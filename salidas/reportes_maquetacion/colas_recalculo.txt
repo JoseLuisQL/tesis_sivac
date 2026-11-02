@@ -1,0 +1,15 @@
+P152: 2da aparicion en 813 de 1611
+   ANTES: ' logística sanitaria en redes de salud de alta dispersión geográfica. '
+   DESDE: 'metodológico e institucional directo para la gestión sanitaria en el d'
+P649: 2da aparicion en 1111 de 2147
+   ANTES: ' 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.943]). '
+   DESDE: 'Cuestionario TAM (conformada por ocho reactivos atómicos en escala Lik'
+P656: 2da aparicion en 1031 de 2021
+   ANTES: 'la Figura 6 se detallan estas distribuciones temporales emparejadas., '
+   DESDE: 'los resultados evidenciaron una reducción temporal drástica y favorabl'
+P712: 2da aparicion en 851 de 1643
+   ANTES: ' vacunas obedecen a fallas aritméticas manuales en el kardex físico., '
+   DESDE: 'el incremento del porcentaje de registros sin discrepancias (RSD) de 6'
+
+=== JOINTS ROTOS EN PREFIJOS SUPERVIVIENTES ===
+  P370 @633: ...'s y archivos en PostgreSQL y almacenamiento persistente. desacoplado en capas lógicas'

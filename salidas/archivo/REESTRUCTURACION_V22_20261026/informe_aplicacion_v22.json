@@ -1,0 +1,3109 @@
+{
+  "origen": "salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22_BASE.docx",
+  "destino": "salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22.docx",
+  "sha256_origen": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9",
+  "sha256_destino": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
+  "parrafos": 858,
+  "tablas": 59,
+  "formulas_omml": 12,
+  "operaciones": [
+    {
+      "tipo": "normalizar_listas",
+      "estado": "aplicada",
+      "sangria_dxa": 720,
+      "colgante_dxa": 360,
+      "items": 39,
+      "rotulos": 12,
+      "prosa_limpiada": 14,
+      "ya_normalizados": 0,
+      "omitidos": 0,
+      "fallidos": [],
+      "detalle": [
+        {
+          "parrafo": 12,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 13,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 14,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 15,
+          "clase": "item",
+          "marcador": "4.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 16,
+          "clase": "item",
+          "marcador": "5.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 168,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 169,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 170,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 186,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 187,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 188,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 194,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 195,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 196,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 563,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 564,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 565,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 566,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 611,
+          "clase": "item",
+          "marcador": "a)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 612,
+          "clase": "item",
+          "marcador": "b)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 613,
+          "clase": "item",
+          "marcador": "c)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 679,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 680,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 682,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 683,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 684,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 685,
+          "clase": "item",
+          "marcador": "4.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 686,
+          "clase": "item",
+          "marcador": "5.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 687,
+          "clase": "item",
+          "marcador": "6.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 688,
+          "clase": "item",
+          "marcador": "7.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 695,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 696,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 697,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 698,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 699,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 700,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 701,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 702,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 706,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 707,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 708,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 709,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 710,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 711,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 712,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 713,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 717,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 718,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 719,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 720,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 721,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 722,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 723,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 724,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 725,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 729,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 730,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 731,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 732,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 733,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 734,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 735,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 829,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 830,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 831,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        }
+      ],
+      "verificacion": {
+        "items": 39,
+        "items_justificados": 0,
+        "items_sin_tab": 0,
+        "items_sin_colgante": 0,
+        "items_con_salto": 0,
+        "rotulos": 12,
+        "rotulos_justificados": 0,
+        "prosa_justificada": 236,
+        "prosa_con_sangria_manual": 0
+      }
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 35,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1720,
+        1873,
+        708,
+        938,
+        1087,
+        1394,
+        1045
+      ],
+      "anchos_despues": [
+        1720,
+        1738,
+        708,
+        938,
+        1087,
+        1394,
+        1180
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 49
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 37,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1650,
+        900,
+        900,
+        800,
+        900,
+        780,
+        1840,
+        995
+      ],
+      "anchos_despues": [
+        1545,
+        1005,
+        900,
+        800,
+        900,
+        780,
+        1840,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 56
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 30,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3
+      ],
+      "celdas_alineadas": 28,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 1,
+      "columnas_degradadas_lista": [
+        3
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 45.5,
+          "posicion_tabulador_porcentaje_pt": 42.2,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1030,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1029,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 35,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4
+      ],
+      "celdas_alineadas": 18,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 1,
+      "columnas_degradadas_lista": [
+        4
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 23.4,
+          "posicion_tabulador_porcentaje_pt": 20.1,
+          "ancho_util_pt": 29.4,
+          "ancho_util_dxa": 588,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 34.9,
+          "posicion_tabulador_porcentaje_pt": 31.6,
+          "ancho_util_pt": 40.9,
+          "ancho_util_dxa": 818,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 48.4,
+          "ancho_util_dxa": 967,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 350.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 36,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 37,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 34.0,
+          "ancho_util_dxa": 680,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 33.0,
+          "ancho_util_dxa": 660,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 38,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 36,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 39,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2
+      ],
+      "celdas_alineadas": 7,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 1,
+      "columnas_degradadas_lista": [
+        2
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 7,
+          "celdas_alineadas": 7,
+          "ancho_util_pt": 31.1,
+          "ancho_util_dxa": 622,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 350.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 52,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 31.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 53,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 31.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    }
+  ],
+  "aplicadas": [
+    {
+      "tipo": "normalizar_listas",
+      "estado": "aplicada",
+      "sangria_dxa": 720,
+      "colgante_dxa": 360,
+      "items": 39,
+      "rotulos": 12,
+      "prosa_limpiada": 14,
+      "ya_normalizados": 0,
+      "omitidos": 0,
+      "fallidos": [],
+      "detalle": [
+        {
+          "parrafo": 12,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 13,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 14,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 15,
+          "clase": "item",
+          "marcador": "4.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 16,
+          "clase": "item",
+          "marcador": "5.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 168,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 169,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 170,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 186,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 187,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 188,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 194,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 195,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 196,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 563,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 564,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 565,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 566,
+          "clase": "item",
+          "marcador": "•",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 611,
+          "clase": "item",
+          "marcador": "a)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 612,
+          "clase": "item",
+          "marcador": "b)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 613,
+          "clase": "item",
+          "marcador": "c)",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 679,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 680,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 682,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 683,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 684,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 685,
+          "clase": "item",
+          "marcador": "4.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 686,
+          "clase": "item",
+          "marcador": "5.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 687,
+          "clase": "item",
+          "marcador": "6.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 688,
+          "clase": "item",
+          "marcador": "7.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 695,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 696,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 697,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 698,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 699,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 700,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 701,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 702,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 706,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 707,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 708,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 709,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 710,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 711,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 712,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 713,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 717,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 718,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 719,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 720,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 721,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 722,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 723,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 724,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 725,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 729,
+          "clase": "rotulo",
+          "marcador": "A."
+        },
+        {
+          "parrafo": 730,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 731,
+          "clase": "item",
+          "marcador": "-",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 732,
+          "clase": "rotulo",
+          "marcador": "B."
+        },
+        {
+          "parrafo": 733,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 734,
+          "clase": "rotulo",
+          "marcador": "C."
+        },
+        {
+          "parrafo": 735,
+          "clase": "prosa",
+          "accion": "espacios_iniciales",
+          "caracteres_retirados": 2
+        },
+        {
+          "parrafo": 829,
+          "clase": "item",
+          "marcador": "1.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 830,
+          "clase": "item",
+          "marcador": "2.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        },
+        {
+          "parrafo": 831,
+          "clase": "item",
+          "marcador": "3.",
+          "jc": "left",
+          "ind": {
+            "left": 720,
+            "hanging": 360
+          },
+          "tabulador_dxa": 720
+        }
+      ],
+      "verificacion": {
+        "items": 39,
+        "items_justificados": 0,
+        "items_sin_tab": 0,
+        "items_sin_colgante": 0,
+        "items_con_salto": 0,
+        "rotulos": 12,
+        "rotulos_justificados": 0,
+        "prosa_justificada": 236,
+        "prosa_con_sangria_manual": 0
+      }
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 35,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1720,
+        1873,
+        708,
+        938,
+        1087,
+        1394,
+        1045
+      ],
+      "anchos_despues": [
+        1720,
+        1738,
+        708,
+        938,
+        1087,
+        1394,
+        1180
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 49
+    },
+    {
+      "tipo": "geometria_proporcional",
+      "tabla": 37,
+      "estado": "aplicada",
+      "anchos_antes": [
+        1650,
+        900,
+        900,
+        800,
+        900,
+        780,
+        1840,
+        995
+      ],
+      "anchos_despues": [
+        1545,
+        1005,
+        900,
+        800,
+        900,
+        780,
+        1840,
+        995
+      ],
+      "suma_dxa": 8765,
+      "margen_dxa": 60,
+      "orientacion": "vertical",
+      "celdas_tcw": 56
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 30,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3
+      ],
+      "celdas_alineadas": 28,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 1,
+      "columnas_degradadas_lista": [
+        3
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 45.5,
+          "posicion_tabulador_porcentaje_pt": 42.2,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1030,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 51.5,
+          "ancho_util_dxa": 1029,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 35,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4
+      ],
+      "celdas_alineadas": 18,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 1,
+      "columnas_degradadas_lista": [
+        4
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 23.4,
+          "posicion_tabulador_porcentaje_pt": 20.1,
+          "ancho_util_pt": 29.4,
+          "ancho_util_dxa": 588,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "posicion_tabulador_pt": 34.9,
+          "posicion_tabulador_porcentaje_pt": 31.6,
+          "ancho_util_pt": 40.9,
+          "ancho_util_dxa": 818,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 48.4,
+          "ancho_util_dxa": 967,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 350.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 36,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 37,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 24,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 34.0,
+          "ancho_util_dxa": 680,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 39.0,
+          "ancho_util_dxa": 780,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 6,
+          "celdas_alineadas": 6,
+          "ancho_util_pt": 33.0,
+          "ancho_util_dxa": 660,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 416.6,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 38,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "celdas_alineadas": 36,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 32.4,
+          "ancho_util_dxa": 648,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 38.2,
+          "ancho_util_dxa": 764,
+          "parte_entera_dxa": 312.8,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 9,
+          "celdas_alineadas": 9,
+          "ancho_util_pt": 34.6,
+          "ancho_util_dxa": 693,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 250.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 39,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2
+      ],
+      "celdas_alineadas": 7,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 1,
+      "columnas_degradadas_lista": [
+        2
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 7,
+          "celdas_alineadas": 7,
+          "ancho_util_pt": 31.1,
+          "ancho_util_dxa": 622,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 350.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 52,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 200.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 31.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    },
+    {
+      "tipo": "alineacion_decimal",
+      "tabla": 53,
+      "modo": "tab_decimal",
+      "estado": "aplicada",
+      "columnas": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "celdas_alineadas": 210,
+      "columnas_omitidas": 0,
+      "columnas_degradadas": 4,
+      "columnas_degradadas_lista": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reserva_dxa": 120.0,
+      "verificacion": {
+        "columnas_revisadas": 0,
+        "columnas_fuera_de_ancho": 0,
+        "detalle": []
+      },
+      "detalle": [
+        {
+          "columna": 2,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 3,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 29.3,
+          "ancho_util_dxa": 586,
+          "parte_entera_dxa": 100.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 4,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 5,
+          "estado": "degradada",
+          "motivo": "la columna usa punto como separador decimal y el documento está en español: Word ignora la parada decimal y partiría el número; se aplicó alineación derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "parte_entera_dxa": 300.0,
+          "cola_decimal_dxa": 150.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 6,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 7,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 8,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 9,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 10,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 11,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 12,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 13,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 100.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 14,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 15,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 20.9,
+          "posicion_tabulador_porcentaje_pt": 17.5,
+          "ancho_util_pt": 26.9,
+          "ancho_util_dxa": 537,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        },
+        {
+          "columna": 16,
+          "estado": "aplicada",
+          "alineacion": "derecha",
+          "valores_numericos": 14,
+          "celdas_alineadas": 14,
+          "posicion_tabulador_pt": 31.4,
+          "posicion_tabulador_porcentaje_pt": 28.1,
+          "ancho_util_pt": 37.4,
+          "ancho_util_dxa": 748,
+          "cola_decimal_dxa": 0.0,
+          "parte_entera_dxa": 200.0,
+          "reserva_dxa": 120.0
+        }
+      ]
+    }
+  ],
+  "fallidas": [],
+  "tablas_afectadas_por_clase": {
+    "margenes_celda": 0,
+    "geometria_proporcional": 2,
+    "ensanche_rango": 0,
+    "reparar_tcw": 0,
+    "valign": 0,
+    "alineacion_decimal": 8
+  },
+  "tablas_distintas_afectadas": [
+    30,
+    35,
+    36,
+    37,
+    38,
+    39,
+    52,
+    53
+  ],
+  "alto_tablas": [
+    {
+      "tabla": 1,
+      "alto_antes_pt": 976.0,
+      "alto_despues_pt": 976.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 8,
+      "alto_antes_pt": 219.5,
+      "alto_despues_pt": 219.5,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 32,
+      "alto_antes_pt": 434.0,
+      "alto_despues_pt": 434.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 33,
+      "alto_antes_pt": 326.5,
+      "alto_despues_pt": 326.5,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 34,
+      "alto_antes_pt": 342.0,
+      "alto_despues_pt": 342.0,
+      "delta_pt": 0.0
+    },
+    {
+      "tabla": 35,
+      "alto_antes_pt": 189.0,
+      "alto_despues_pt": 189.0,
+      "delta_pt": 0.0
+    }
+  ],
+  "tablas_verificadas": []
+}

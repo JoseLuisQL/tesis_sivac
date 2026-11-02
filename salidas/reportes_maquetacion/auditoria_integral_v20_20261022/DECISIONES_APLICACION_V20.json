@@ -1,0 +1,65 @@
+{
+  "fecha": "2026-10-22",
+  "autoridad": "director-general",
+  "alcance": "Decisiones de aplicación editorial sobre copia v20, autorizada por el encargo y por CONTINUA. No constituyen aprobación de contenido definitivo ni cierre de compuertas empíricas.",
+  "fuentes": ["redaccion_v20_ordenes.json", "integridad_v20_ordenes.json", "revision_prosa_global_v19.json"],
+  "redaccion": {
+    "aplicar_con_ancla_unica": ["O-01", "O-02", "O-03", "O-04", "O-06", "O-08", "O-09", "O-10", "O-11", "O-12", "O-13", "O-14", "O-15", "O-16", "O-17", "O-18", "O-19", "O-20", "O-23", "O-24"],
+    "O-05": {
+      "decision": "aplicar alternativa sin numeral",
+      "reemplazo": "La evaluación de la calidad de SIVAC se fundamentó en el estándar internacional ISO/IEC 25010:2023, examinando las características de calidad presentadas en la Tabla 28: adecuación funcional, usabilidad, eficiencia de desempeño, fiabilidad y seguridad.",
+      "razon": "Alinear la enumeración con la tabla sin modificar sus valores ni crear nuevas categorías."
+    },
+    "O-07": {
+      "decision": "aplicar alternativa descriptiva de dirección",
+      "reemplazo": "Nota. Dimensiones e indicadores de la variable dependiente, según la matriz de operacionalización de la investigación.",
+      "razon": "No modificar las tres dimensiones ni atribuir a una matriz o a la institución una aprobación no documentada. El carácter interno de inmutabilidad no requiere proclamarse como propiedad epistemológica en una nota."
+    },
+    "O-13": "Usar únicamente la versión revisada y verificada del redactor; distinguir TAM y UTAUT y no afirmar que los datos de prueba ratifican una teoría.",
+    "O-16": "Usar únicamente la versión revisada del redactor; no interpretar p-valores o tamaños del efecto como probabilidades de explicaciones causales.",
+    "O-21": "Pendiente de verificación primaria de Tristán-López; no reforzar una atribución equivocada de Aiken.",
+    "O-22": "Pendiente de verificación de atribuciones y cifras en las publicaciones primarias, no solo coincidencia entre secciones del propio informe."
+  },
+  "integridad": {
+    "aplicar_con_ancla_unica": ["ORD-INT-03", "ORD-INT-05", "ORD-INT-06", "ORD-INT-07", "ORD-INT-14", "ORD-INT-15", "ORD-INT-17", "ORD-INT-19"],
+    "ORD-INT-01": "No aplicar: reordena jerarquía inferencial de Wilcoxon/t como decisión de protocolo; registrar inconsistencia y separar de mera corrección de formato.",
+    "ORD-INT-02": "No aplicar: modifica matriz metodológica y medidas de efecto; requiere decisión metodológica expresa, no derivación editorial de resultados de prueba.",
+    "ORD-INT-03": "Aplicar: describir los seis indicadores y el puntaje total como siete contrastes en el ajuste ilustrativo, manteniendo íntegros los valores y sin crear un séptimo indicador.",
+    "ORD-INT-04": "Pendiente de evidencia de herramienta realmente ejecutada; no sustituir SPSS por R por mera declaración. Puede atribuirse a los scripts reproducibles cuando se compruebe su salida concreta.",
+    "ORD-INT-08": "No aplicar: ausencia de autorización en el corpus no demuestra que no se tramitó. Reportar evidencia documental pendiente sin alterar acto administrativo.",
+    "ORD-INT-09": "No aplicar por ausencia documental aislada: comprobar consentimientos; preservar limitación y no inventar firma ni ejecución.",
+    "ORD-INT-10": "Aplicar nomenclatura coherente con Anexo 4 solo después de expandir sus nueve cambios con anclas exactas; no tocar enunciados, criterios ni mediciones.",
+    "ORD-INT-11": "No aplicar: la lista de ocho criterios propuesta no coincide con el protocolo reciente; requiere conciliación de fuentes, no sustituir criterios sin aprobación.",
+    "ORD-INT-12": "Conservar Figura 6 y reportar 136,5 DPI de fuente; no interpolar ni declarar mejora inexistente.",
+    "ORD-INT-13": "Autorizado cotejo y reemplazo del emblema por el archivo original aportado, ya ejecutado en el candidato con proporción conservada.",
+    "ORD-INT-16": "Subsumida por O-14 si afecta el mismo fragmento; no aplicar dos sustituciones incompatibles.",
+    "ORD-INT-18": "Omitir normalización cosmética de separadores de notación por defecto; nunca U+2014 ni introducir ecuaciones en celdas.",
+    "ORD-INT-20": "Aplicar solo a hipótesis, listas o líneas cortas cuyo justificado deforme la lectura; la advertencia narrativa conserva justificado y 1,5 según el preflight.",
+    "ORD-INT-21": "Mantener No especificado si no hay fuente primaria de los actores de HU; no completar por inferencia.",
+    "ORD-INT-22": "No aplicar sin evidencia de entrega en medio digital; no convertir ausencia de URL en una entrega afirmada. Registrar pendiente de URL/commit o soporte."
+  },
+  "correcciones_bibliograficas_prioritarias": {
+    "estado": "FUENTES_CORRECCIONES_V20.json recibido y autorizado: siete órdenes exactas con fuentes primarias, prevalecen sobre O-21 y O-22 originales",
+    "lote_aprobado": "FUENTES_CORRECCIONES_V20.json",
+    "ordenes": ["ORD-AIKEN-01", "ORD-TRI-01", "ORD-WAS-01", "ORD-WAS-02", "ORD-WAS-03", "ORD-WAS-04", "ORD-WAS-05"],
+    "referencias_esperadas": 54,
+    "confirmacion_Kigenza": "DOI 10.9745/GHSP-D-22-00295 y PMCID PMC9972377 confirman exactitud de inventarios de 25 a 85 por ciento; no se altera el antecedente correcto.",
+    "Tristan_Lopez_2008": "La publicación trata la modificación de Lawshe/CVR; no atribuirle el coeficiente V de Aiken ni declarar que recomienda 0,80. El umbral de 0,80 sigue siendo criterio propio del estudio, sin cambiar fórmula o resultados.",
+    "Wasswa_2023": "El DOI 10.1186/s40545-023-00517-4 confirma otro título y no respalda disponibilidad del 90 por ciento en 19 hospitales. Corregir título y todas las atribuciones afectadas desde la fuente; no reemplazar mecánicamente 90 por otro porcentaje de otro indicador.",
+    "Aiken": "Se permite agregar una referencia primaria de Aiken y una cita activa solo si DOI, autor, año, título y datos editoriales son corroborados; revisar 1:1 y enlaces finales.",
+    "Kigenza": "No sostener cifras por mera coincidencia de dos secciones del informe; verificar publicación primaria o retirar la cuantificación no respaldada en el pasaje afectado.",
+    "invariantes": "Estas correcciones bibliográficas no autorizan modificar datos o valores estadísticos SIVAC, ni crear nuevos instrumentos o medidas."
+  },
+  "cierre_de_salida_y_residuales": {
+    "numeros_de_rotulo": "Confirmado en XML: algunos resultados SEQ numéricos no heredan negrita aunque la palabra Figura sí. Se autoriza candidato mínimo de formato de numeral, sin publicar sobre el hash que aún audita el último especialista; comparar texto y geometría por página antes de sustituir.",
+    "privacidad_figuras_40_41": "La auditoría detectó datos identificables en capturas de usuarios. Dirección inspeccionó PDF 93: se registra como pendiente de anonimización antes de difusión. No se inventan usuarios, ni se alteran capturas bajo apariencia de evidencia original; cualquier versión anonimizada deberá conservar fuente y declarar la ocultación.",
+    "blancos_y_filas_finales": "Espacios por mantener figuras completas y filas finales legibles son observaciones bajas, no autorización para reducir letra o eliminar capítulos.",
+    "limite_de_entrega": "Una copia corregida y revisada no equivale a lista para impresión o sustentación: datos de campo, actas, firmas, fotografías y decisiones metodológicas pendientes se reportan separadamente."
+  },
+  "reglas_de_consolidacion": [
+    "Localizar por texto exacto y única ocurrencia, usando Pxxxx global como orientación, no como índice Document.paragraphs.",
+    "Consolidar cambios coincidentes en un mismo párrafo o celda, resolver solapamientos antes de ejecutar y no aplicar dos veces una misma atenuación.",
+    "Todas las tablas, cifras, p-valores, intervalos, datos de prueba, matrices y límites se conservan salvo los cambios de nomenclatura expresamente autorizados, sin modificar valores.",
+    "Las órdenes pendientes no bloquean la entrega de una copia editorial v20 para revisión; se informan con precisión y no se declara lista para sustentar o imprimir."
+  ]
+}

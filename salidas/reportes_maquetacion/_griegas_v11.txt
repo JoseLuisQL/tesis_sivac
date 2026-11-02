@@ -1,0 +1,21 @@
+P139 U+03B1 'α' x1
+P142 U+03B1 'α' x1
+P145 U+03B1 'α' x1
+P151 U+03B1 'α' x1
+P192 U+03B1 'α' x1
+P220 U+03B1 'α' x1
+P383 U+2264 '≤' x2
+P621 U+03B1 'α' x1
+P623 U+03B1 'α' x2
+P640 U+03B1 'α' x1
+P710 U+2192 '→' x2
+--- contexto beta P284 ---
+'ctúa como predictor directo principal de la aceptación del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad percibida media dicha relación (beta = 0.2'
+'iente beta = 0.35, p < 0.001) y que la utilidad percibida media dicha relación (beta = 0.23, p < 0.001), confirmando que mitigar la fatiga operativa y agilizar el p'
+--- T44 r4c4 ---
+Procesamiento y Análisis:
+• Descriptivo: Mediana, RIQ, media, desviación estándar y gráficos APA 7
+• Normalidad: Prueba de Shapiro-Wilk (n = 14)
+• Inferencial: Prueba de rangos con signo de Wilcoxon pareada (alfa = 0.05 bilateral)
+• Control FWER: Ajuste de p-valor mediante Holm-Bonferroni
+• Tamaño del efecto: r = |Z| / sqrt(N)

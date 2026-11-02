@@ -1,0 +1,336 @@
+{
+  "metadatos": {
+    "documento_base": "informe_final_v04.docx",
+    "total_parrafos_revisados": 810,
+    "total_sustituciones": 31
+  },
+  "sustituciones": [
+    {
+      "indice_docx": 63,
+      "ancla_original": "Metodológicamente, la investigación se estructuró bajo el",
+      "texto_nuevo": "Metodológicamente, la investigación se estructuró bajo el enfoque cuantitativo, de tipo aplicada y nivel explicativo, empleando un diseño preexperimental con pre-test y post-test en un solo grupo (GE: O₁ – X – O₂). Se trabajó con una población censal conformada por la totalidad de los 14 operadores de la cadena de inmunizaciones de la DISA Apurímac II (N = n = 14), integrada por cuatro especialistas de la sede administrativa central y diez responsables de los centros de acopio periféricos. Para la recolección de datos empíricos se diseñaron tres instrumentos: una ficha de observación de tiempos cronometrados, una guía de cotejo documental de kardex y vales de salida, y un cuestionario psicométrico en escala Likert, los cuales fueron sometidos a validación de contenido por juicio de tres expertos de la EPIS-UNAJMA conforme al procedimiento descrito en el Capítulo IV. El análisis de los datos contempló la prueba de Shapiro-Wilk para evaluar la normalidad y la prueba de rangos con signo de Wilcoxon (α = 0.05) para la contrastación de hipótesis.",
+      "tipo_defecto": "CONCORDANCIA",
+      "justificacion": "Se corrige el tiempo verbal (serán sometidos → fueron sometidos) y se separa la oración que atribuía el análisis de normalidad al procedimiento de validación de contenido."
+    },
+    {
+      "indice_docx": 64,
+      "ancla_original": "Finalmente, el estudio configuró un aporte práctico,",
+      "texto_nuevo": "Finalmente, el estudio configuró un aporte práctico, metodológico e institucional directo para la gestión sanitaria en el departamento de Apurímac al estructurar la transición de un proceso logístico históricamente manual hacia un flujo digital auditable y centralizado. La implementación del sistema web SIVAC tuvo como propósito dotar a la DISA Apurímac II de una plataforma tecnológica propia para centralizar el control de lotes, automatizar el kardex y fortalecer la trazabilidad documental de los movimientos mensuales de vacunas hacia las redes y microredes de salud. Asimismo, en el plano metodológico, el estudio estableció una estructura de medición e instrumentación replicable para evaluar intervenciones de sistemas de información logística sanitaria en redes de salud de alta dispersión geográfica.",
+      "tipo_defecto": "REPETICION_LITERAL",
+      "justificacion": "Se elimina la segunda definición del acrónimo DISA Apurímac II y se explicita el sujeto de estableció, antes ambiguo."
+    },
+    {
+      "indice_docx": 72,
+      "ancla_original": "En el contexto local de la Dirección de Salud Apurímac II",
+      "texto_nuevo": "En el contexto local de la DISA Apurímac II, con sede institucional en la ciudad de Andahuaylas, la Estrategia Sanitaria Nacional de Inmunizaciones administra el abastecimiento y la distribución de vacunas hacia ocho centros de acopio, los cuales comprenden el almacén especializado de la sede central y los centros de acopio vinculados a las redes y microredes de salud de las provincias de Andahuaylas y Chincheros. Este flujo operativo recae sobre una dotación censal de 14 trabajadores (cuatro profesionales en la sede administrativa central y diez responsables de cadena de frío en los centros de acopio periféricos), quienes ejecutaban de manera manual el asentamiento de ingresos, transferencias, saldos de kardex y vales de salida. En primer término, esta modalidad tradicional afectó la oportunidad de procesamiento, dado que la transcripción manual en cuadernos físicos y hojas de cálculo locales demandaba tiempos prolongados tanto para registrar cada movimiento de lote como para verificar y emitir los vales de salida hacia las microredes.",
+      "tipo_defecto": "REPETICION_LITERAL",
+      "justificacion": "Se elimina la tercera definición consecutiva del acrónimo, ya introducida en el párrafo 61."
+    },
+    {
+      "indice_docx": 73,
+      "ancla_original": "En el diagnóstico documental preliminar efectuado en la",
+      "texto_nuevo": "Ese mismo desfase operativo se reflejó en el plano documental. En el diagnóstico preliminar efectuado en la cadena de frío de la DISA Apurímac II durante la línea base pre-intervención, la inspección de los libros de kardex manuscrito y talonarios de vales de salida correspondientes al periodo basal [Pendiente de consignar volumen exacto de registros basales] evidenció demoras operativas recurrentes en la transcripción manual y en la conciliación mensual de saldos, así como observaciones de completitud documental que sustentaron la necesidad de implementar una solución digital centralizada.",
+      "tipo_defecto": "TRANSICION_ROTA",
+      "justificacion": "El párrafo interrumpía la enumeración entre primer y segundo término; se añade conector que restablece la continuidad lógico-discursiva."
+    },
+    {
+      "indice_docx": 103,
+      "ancla_original": "La aplicación del sistema web SIVAC mejora significativamente",
+      "texto_nuevo": "La aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, evidenciada de manera integrada a través de la reducción de los tiempos de procesamiento, el incremento de la consistencia documental y el aumento de la satisfacción y aceptación del sistema por el usuario.",
+      "tipo_defecto": "REPETICION_LITERAL",
+      "justificacion": "Se evita la repetición del sustantivo incremento en la misma enumeración."
+    },
+    {
+      "indice_docx": 133,
+      "ancla_original": "A continuación, se presenta el cuadro de síntesis",
+      "texto_nuevo": "A continuación, se presenta la tabla de síntesis comparativa de los antecedentes internacionales y nacionales analizados, detallando su diseño metodológico, indicadores evaluados, hallazgos principales y su diferenciación específica frente al sistema web SIVAC.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Unificación de la denominación del elemento: cuadro por tabla, conforme al uso dominante en el documento."
+    },
+    {
+      "indice_docx": 140,
+      "ancla_original": "En la presente investigación científica, el sistema web SIVAC",
+      "texto_nuevo": "En la presente investigación, el sistema web SIVAC actúa, en términos metodológicos, como la intervención tecnológica aplicada (estímulo experimental manipulado, formalizado como el factor X), orientada a transformar y optimizar los procesos de control logístico en el personal de inmunizaciones de la Dirección de Salud Apurímac II. Bajo esta delimitación metodológica, Extreme Programming (XP) constituye la metodología de ingeniería empleada para su construcción incremental y colaborativa, mientras que la norma ISO/IEC 25010:2023 constituye el estándar técnico de verificación de calidad del producto software previo y complementario a su evaluación preexperimental en campo. De este modo, se establece con rigor que ni las fases del desarrollo de software bajo XP ni las características de calidad de ISO/IEC 25010 constituyen dimensiones estadísticas de la variable independiente, sino marcos ingenieriles de construcción y aseguramiento de calidad que garantizan la integridad funcional y operativa del artefacto antes de contrastar su efecto sobre la gestión de movimientos mensuales de vacunas.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se suprime la redundancia científica y se sustituye el adverbio epistemológicamente, impropio para calificar el rol metodológico de la intervención."
+    },
+    {
+      "indice_docx": 159,
+      "ancla_original": "Resulta fundamental enfatizar que las cuatro fases del",
+      "texto_nuevo": "Las cuatro fases del ciclo XP (planeación, diseño, codificación y pruebas) constituyen el marco procedimental de la ingeniería de software que asegura la construcción reproducible de la intervención tecnológica y se diferencian de las dimensiones analíticas de la variable dependiente evaluada en la investigación.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se elimina la fórmula introductoria vacía Resulta fundamental enfatizar que y la muletilla con nitidez metodológica."
+    },
+    {
+      "indice_docx": 165,
+      "ancla_original": "En las aplicaciones informáticas orientadas a los servicios",
+      "texto_nuevo": "En las aplicaciones informáticas orientadas a los servicios de salud, Moumane et al. (2024, p. 3) destacan que la adecuación funcional (completitud, corrección y pertinencia de los cálculos clínicos o logísticos), la usabilidad (reconocibilidad, facilidad de aprendizaje y protección frente a errores humanos de digitación), la eficiencia temporal de respuesta y la seguridad de los datos constituyen los factores críticos que determinan la confiabilidad técnica de la herramienta en los establecimientos sanitarios (véase la Figura 5). De forma convergente en el ámbito peruano, Mamani-Pari et al. (2026) desarrollaron y validaron psicométricamente un modelo de evaluación bajo la norma ISO/IEC 25010 alineado con las directivas del Ministerio de Salud, demostrando que la operabilidad, la protección contra errores de los usuarios y la adecuación funcional son los componentes esenciales que reducen la carga cognitiva y optimizan los flujos de trabajo asistenciales. En la presente investigación, la aplicación del estándar ISO/IEC 25010:2023 cumple el rol específico de verificar objetivamente la calidad del producto de software SIVAC antes de su despliegue en campo y de sustentar técnicamente esa puesta en operación, sin sustituir ni confundirse con las dimensiones de evaluación de la variable dependiente.",
+      "tipo_defecto": "CONCORDANCIA",
+      "justificacion": "Se repara la construcción agramatical antes y como soporte de su despliegue en campo, que dejaba el sintagma sin régimen preposicional."
+    },
+    {
+      "indice_docx": 196,
+      "ancla_original": "En consonancia con las decisiones metodológicas",
+      "texto_nuevo": "En consonancia con las decisiones metodológicas institucionales de la presente investigación, la tercera dimensión oficial, Satisfacción del usuario, se operacionaliza a través de dos indicadores psicométricos rigurosamente derivados de TAM: (a) el indicador Aceptación del proceso (AP), el cual operacionaliza la subescala de facilidad de uso percibida y adaptabilidad procedimental frente al flujo digitalizado, evaluando el grado en que el personal de enfermería percibe que el registro en cuadrícula, la navegación y las validaciones del sistema son comprensibles, intuitivas y fluidas, minimizando la carga cognitiva impuesta por los formatos manuales; y (b) el indicador Utilidad percibida (UP), el cual operacionaliza directamente la subescala de utilidad en el desempeño laboral, midiendo en qué medida el operador sanitario juzga que el sistema web SIVAC mejora el control de los movimientos mensuales de vacunas, acelera la emisión de comprobantes, erradica los descuadres de kardex y favorece la disponibilidad biológica institucional. Esta fundamentación concuerda con los hallazgos empíricos de Hussain et al. (2025, p. 8), quienes comprobaron en personal de enfermería de establecimientos públicos que la facilidad de uso percibida actúa como predictor directo principal de la aceptación del sistema (coeficiente beta = 0.35, p < 0.001) y que la utilidad percibida media dicha relación (beta = 0.23, p < 0.001), confirmando que mitigar la fatiga operativa y agilizar el procesamiento conduce de manera directa a elevar la satisfacción del usuario sanitario.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se suprimen el refuerzo plenamente, el adverbio decisivamente y el adjetivo cardinal, y se retira el código interno de decisión que se filtraba a la prosa."
+    },
+    {
+      "indice_docx": 290,
+      "ancla_original": "La arquitectura de SIVAC se concibió bajo un patrón",
+      "texto_nuevo": "La arquitectura de SIVAC se concibió bajo un patrón desacoplado en capas lógicas intercomunicadas mediante una Interfaz de Programación de Aplicaciones basada en el estilo arquitectural RESTful (De la Torre et al., 2010; Ruiz Barea, 2023). Este enfoque garantiza la independencia entre la interfaz de usuario en el cliente y los servicios de dominio del servidor. En la Figura 3 se ilustra la arquitectura de subsistemas del sistema, organizada en tres bloques principales: el cliente Single Page Application (SPA), el servidor de aplicaciones Express REST API y la capa de datos y archivos en PostgreSQL y almacenamiento persistente.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se sustituye el adjetivo cardinal, ajeno al registro arquitectónico, y se atenúa la generalización absoluta independencia total."
+    },
+    {
+      "indice_docx": 306,
+      "ancla_original": "El segundo proceso operativo corresponde al Módulo de",
+      "texto_nuevo": "El segundo proceso operativo corresponde al Módulo de Inteligencia Logística ICI-DEMID y Clasificación Semafórica MSD, graficado en la Figura 6. Este proceso modela la ingesta de las hojas de consumo mensual remitidas por los almacenes, el cálculo del Consumo Promedio Mensualizado (CPA), la determinación del ratio de Meses de Stock Disponible (MSD = Saldo / CPA) y la ramificación semafórica estandarizada por el Ministerio de Salud: condición de substock o crítico (MSD < 2.0), normostock (2.0 ≤ MSD ≤ 6.0) y sobrestock (MSD > 6.0).",
+      "tipo_defecto": "PUNTUACION",
+      "justificacion": "Se normaliza la capitalización de los niveles de clasificación y se reemplaza el operador ASCII <= por el signo matemático ≤."
+    },
+    {
+      "indice_docx": 391,
+      "ancla_original": "El ecosistema tecnológico de SIVAC se seleccionó",
+      "texto_nuevo": "El ecosistema tecnológico de SIVAC se seleccionó priorizando el rendimiento, la robustez del tipado y la compatibilidad con el entorno de servidores institucionales. En la Tabla 23 se sintetiza el stack de desarrollo.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se corrige el término robustez tipográfica, que designa impropiamente una propiedad del sistema de tipos del lenguaje."
+    },
+    {
+      "indice_docx": 493,
+      "ancla_original": "La fase de pruebas en Extreme Programming constituye el",
+      "texto_nuevo": "La fase de pruebas en Extreme Programming constituye el componente que garantiza la fiabilidad operativa del software. Se implementó una estrategia piramidal de aseguramiento de calidad con pruebas unitarias, pruebas de integración de API y pruebas de aceptación formal con el cliente en el sitio (On-site Customer).",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se elimina la cláusula valorativa pilar fundamental, que no aporta contenido verificable."
+    },
+    {
+      "indice_docx": 526,
+      "ancla_original": "La investigación se enmarcó en el tipo aplicada y nivel",
+      "texto_nuevo": "La investigación se enmarcó en el nivel explicativo de evaluación de intervención tecnológica; no obstante, debido a la naturaleza del diseño preexperimental de un solo grupo sin grupo de control paralelo, el alcance inferencial se orienta a determinar la existencia de cambios estadísticamente significativos asociados a la aplicación del sistema web SIVAC entre el pre-test y el post-test, reconociendo las amenazas a la validez interna (historia, maduración, efecto de aprendizaje y familiarización tecnológica), las cuales fueron mitigadas mediante ventanas de observación simétricas y protocolos estandarizados. Conforme a Hernández-Sampieri et al. (2014), los estudios explicativos evalúan en qué condiciones se manifiesta el efecto de una intervención sobre las dimensiones del fenómeno estudiado, aportando evidencia empírica cuantitativa sobre la optimización de los procesos operativos en la cadena de frío sanitaria.",
+      "tipo_defecto": "REPETICION_LITERAL",
+      "justificacion": "Se suprime la reiteración del tipo aplicada ya declarado en el párrafo inmediatamente anterior."
+    },
+    {
+      "indice_docx": 528,
+      "ancla_original": "Se empleó el método hipotético-deductivo, articulado",
+      "texto_nuevo": "Se empleó el método hipotético-deductivo, articulado sistemáticamente a lo largo de siete fases consecutivas ejecutadas durante el desarrollo de la investigación: (1) diagnóstico basal de los flujos de información, tiempos y discrepancias documentales en la cadena de frío de la Dirección de Salud Apurímac II; (2) desarrollo e ingeniería del sistema web SIVAC aplicando las cuatro fases de Extreme Programming y el estándar ISO/IEC 25010:2023; (3) validación de contenido de los instrumentos por juicio de expertos y formalización del protocolo de confiabilidad; (4) medición basal pre-test (O₁) de los seis indicadores bajo la gestión manual tradicional; (5) despliegue institucional, capacitación técnica y periodo de estabilización operativa del sistema (X); (6) medición post-test (O₂) bajo la gestión digitalizada automatizada; y (7) procesamiento bioestadístico, verificación de normalidad y contrastación formal de las hipótesis formuladas (Hernández-Sampieri et al., 2014).",
+      "tipo_defecto": "CONCORDANCIA",
+      "justificacion": "Se corrige el participio previstas, que contradecía el carácter ya ejecutado de las fases en un estudio concluido."
+    },
+    {
+      "indice_docx": 540,
+      "ancla_original": "Para garantizar la validez metodológica interna y",
+      "texto_nuevo": "Para garantizar la validez metodológica interna y neutralizar potenciales sesgos de reactividad, historia o fatiga en las mediciones, se implementó un protocolo temporal simétrico compuesto por cuatro etapas: (a) una ventana basal pre-test (O₁) de 30 días calendario; (b) una fase de inducción y capacitación técnica estandarizada de 5 días hábiles sobre los módulos de SIVAC a los 14 operadores; (c) un periodo de estabilización operativa de 10 días calendario en producción asistida previo al inicio del post-test, orientado a mitigar el sesgo derivado de la curva inicial de aprendizaje tecnológico; y (d) una ventana post-test (O₂) simétrica de 30 días calendario bajo idénticas condiciones de demanda institucional. En la tabla siguiente se detalla el cronograma y protocolo de ejecución de la intervención preexperimental.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se unifica cuadro por tabla en la remisión al elemento tabular."
+    },
+    {
+      "indice_docx": 552,
+      "ancla_original": "Asimismo, se definieron explícitamente los criterios de",
+      "texto_nuevo": "Asimismo, se definieron explícitamente los criterios de inclusión y el tamaño muestral efectivo (n efectivo) por indicador. Dado que los 4 operadores de la sede central y los 10 responsables de centros de acopio periféricos pueden ejecutar volúmenes diferenciados de emisión de vales frente a recepción física de biológicos, se reporta el n efectivo de pares válidos por cada indicador cuando un operador no emita comprobantes de salida en ambos periodos o presente diferencia nula en los rangos con signo de Wilcoxon (O₂ᵢ - O₁ᵢ = 0). En la tabla siguiente se detalla la correspondencia entre unidades de observación primaria, reglas de agregación pareada por operador y criterios de inclusión.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se elimina la muletilla con transparencia y se unifica cuadro por tabla."
+    },
+    {
+      "indice_docx": 621,
+      "ancla_original": "La evaluación psicométrica de la consistencia interna",
+      "texto_nuevo": "La evaluación psicométrica de la consistencia interna constituye un requisito metodológico insoslayable para certificar la fiabilidad y estabilidad métrica de los instrumentos de recolección de datos antes de proceder a las contrastaciones inferenciales de hipótesis. En concordancia con las decisiones metodológicas adoptadas, el análisis de confiabilidad se circunscribió al Instrumento N.° 03 (Cuestionario de Satisfacción del Usuario bajo el Modelo de Aceptación Tecnológica - TAM), dado que los Instrumentos N.° 01 (Ficha de Registro Cronométrico) y N.° 02 (Ficha de Cotejo Documental de Kardex) corresponden a mediciones directas de campo y auditorías físicas objetivas, cuya validez se sustenta en el protocolo de calibración inter-observador PMMV.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se retiran los códigos internos de decisión filtrados a la prosa, conservando el sentido normativo de la oración."
+    },
+    {
+      "indice_docx": 622,
+      "ancla_original": "Para determinar la homogeneidad interna de la Modalidad A del",
+      "texto_nuevo": "Para determinar la homogeneidad interna de la Modalidad A del Cuestionario TAM (conformada por ocho reactivos atómicos en escala Likert de 1 a 5 puntos, distribuidos equitativamente entre las dimensiones de Aceptación del Proceso [AP] y Utilidad Percibida [UP]), se calculó el coeficiente Alfa de Cronbach (Cronbach, 1951), complementado con la estimación de los intervalos de confianza asintóticos al 95% mediante el método de distribución F desarrollado por Feldt (1965). En la evaluación del pretest (proceso operativo manual tradicional), la escala global TAM arrojó un coeficiente Alfa de Cronbach de .939 (IC 95%: [0.874, 0.977]), mientras que las subescalas de Aceptación del Proceso y Utilidad Percibida alcanzaron coeficientes de .877 (IC 95%: [0.721, 0.956]) y .874 (IC 95%: [0.715, 0.955]), respectivamente. Por su parte, en la medición del postest (tras la implantación del sistema web SIVAC), la consistencia interna global se situó en .915 (IC 95%: [0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%: [0.618, 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.943]).",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se unifica la denominación del coeficiente, escrita en minúscula y sin apellido en la mención original."
+    },
+    {
+      "indice_docx": 623,
+      "ancla_original": "Los coeficientes observados superan con holgura el umbral",
+      "texto_nuevo": "Los coeficientes observados superan el umbral psicométrico de .800 exigido por la literatura científica (George & Mallery, 2003; Hernández-Sampieri & Mendoza, 2018), categorizándose como de nivel 'Bueno' en las dimensiones específicas y de nivel 'Excelente' en el constructo general. Asimismo, la amplitud contenida de los intervalos de confianza de Feldt ratifica la precisión de la estimación sobre la población censal de 14 trabajadores de la Dirección de Salud Apurímac II, evidenciando que los reactivos capturan de manera coherente, robusta y reproducible la percepción del personal sanitario respecto a la operatividad del sistema de información. En la Tabla 4 se consolidan los coeficientes psicométricos obtenidos.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se suprime la locución adverbial con holgura, que añade énfasis sin contenido."
+    },
+    {
+      "indice_docx": 628,
+      "ancla_original": "La caracterización descriptiva de la variable dependiente",
+      "texto_nuevo": "La caracterización descriptiva de la variable dependiente Gestión de movimientos mensuales de vacunas se estructuró conforme a las tres dimensiones normativas inmutables que definen su evaluación: (1) Oportunidad de procesamiento, (2) Consistencia documental, y (3) Satisfacción del usuario. El análisis longitudinal comparativo entre el estado basal o pretest (O_1) y el estado final o postest (O_2) se llevó a cabo sobre la totalidad de la población censal de n = 14 operadores de inmunizaciones, distribuidos en las dependencias territoriales de la DISA Apurímac II (incluyendo el Almacén Especializado de Vacunas de la Red Chanka, Hospital Andahuaylas, Hospital ESSALUD, C.S. Andahuaylas, C.S. Talavera, C.S. San Jerónimo, C.S. Huancaray, C.S. Chicmo, C.S. Huancabamba, C.S. Pampachiri, C.S. San Antonio de Cachi, C.S. Turpo y C.S. Kishuara). A fin de proporcionar un balance riguroso entre medidas de tendencia central y dispersión paramétricas y no paramétricas, se tabularon la media aritmética (M), desviación estándar (DE), mediana (Mdn), rango intercuartílico (RIC = Q_3 - Q_1), valores mínimos, máximos y la tasa de variación porcentual.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se retira el código interno de decisión y el adverbio estratégicamente; se conserva íntegra la enumeración de dependencias."
+    },
+    {
+      "indice_docx": 630,
+      "ancla_original": "Respecto a la Dimensión 1 (Oportunidad de procesamiento)",
+      "texto_nuevo": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados evidenciaron una reducción temporal significativa. El tiempo promedio de registro de movimientos mensuales (T_reg) disminuyó de 37.18 minutos (DE = 3.83; Mdn = 36.75; RIC = 5.50) en el pretest a tan solo 7.18 minutos (DE = 1.05; Mdn = 7.00; RIC = 1.38) en el postest, lo que representa una contracción del tiempo operativo de digitación del 80.69%, con un ahorro medio neto de 30.00 minutos por operación. De forma concordante, el tiempo de emisión de comprobantes de salida o vales mensuales (T_vale) experimentó un descenso sustancial de 18.21 minutos (DE = 2.87; Mdn = 17.75) a 3.04 minutos (DE = 0.60; Mdn = 3.00), lográndose una optimización del 83.33%, equivalente a un recorte de 15.18 minutos por documento. La dispersión de los datos disminuyó de manera notable en el postest, denotando una estandarización homogénea en los tiempos de respuesta institucional. En la Tabla 5 y en la Figura 6 se detallan estas distribuciones temporales emparejadas.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se atenúan los intensificadores drástica y favorable, enteramente y ostensiblemente, sin alterar ninguna cifra."
+    },
+    {
+      "indice_docx": 639,
+      "ancla_original": "En lo relativo a la Dimensión 2 (Consistencia documental)",
+      "texto_nuevo": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación sustancial en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8.88%) a un promedio postest de 96.00% (DE = 2.23%; Mdn = 96.25%; RIC = 2.75%), lo que refleja una ganancia relativa neta del +51.01% (diferencia media absoluta de +32.43 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO reduce significativamente las inconsistencias documentales y las discrepancias entre existencias físicas y registros. Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se atenúa el adjetivo radical y se ajusta el alcance del verbo al dato reportado (96.00%, no la eliminación total de discrepancias)."
+    },
+    {
+      "indice_docx": 648,
+      "ancla_original": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la",
+      "texto_nuevo": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el modelo TAM evidenció un cambio sustancial en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 17.71 puntos (DE = 1.64; Mdn = 17.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual del +119.47% (diferencia media de +9.64 puntos). En la subescala de Utilidad Percibida (UP), la valoración promedio aumentó de 9.00 puntos (DE = 1.88; Mdn = 8.00) a 18.50 puntos (DE = 1.56; Mdn = 19.00), representando un progreso del +105.56% (+9.50 puntos). Finalmente, el Puntaje Global TAM (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 36.21 puntos (DE = 3.09; Mdn = 36.50), lo que supone una elevación global del +112.13%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se corrige el uso impropio de cualitativo para un cambio medido en escala cuantitativa y se suprime el adjetivo masivo."
+    },
+    {
+      "indice_docx": 664,
+      "ancla_original": "El contraste inferencial de las hipótesis formuladas en la",
+      "texto_nuevo": "El contraste inferencial de las hipótesis formuladas en la matriz de consistencia definitiva se desarrolló contrastando los indicadores pertenecientes a cada una de las tres dimensiones oficiales frente a su respectiva hipótesis nula, cerrando con la contrastación multidimensional conjunta de la Hipótesis General. Para salvaguardar el control estricto de la tasa de error por familia (FWER) ante la multiplicidad de contrastes simultáneos, se aplicó la corrección secuencial escalonada de Holm-Bonferroni (Holm, 1979). En todos los análisis se reportan tanto la prueba paramétrica t de Student (con el tamaño del efecto d de Cohen pareado) como la prueba no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal).",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se retiran los códigos internos de decisión intercalados en la remisión a la matriz de consistencia."
+    },
+    {
+      "indice_docx": 690,
+      "ancla_original": "Se concluye categóricamente que la aplicación del sistema",
+      "texto_nuevo": "Se concluye que la aplicación del sistema web SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II, optimizando de manera concurrente la oportunidad de procesamiento (reducción de tiempos superior al 80%), la consistencia documental (exactitud registral y concordancia de suministros superior al 95%) y la satisfacción del usuario (incremento superior al 100% en la aceptación tecnológica). En la Tabla 12 se presenta el balance consolidado de la decisión inferencial multivariada.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se suprimen el adverbio categóricamente y el adjetivo armónica, que añaden valoración sin respaldo operacional."
+    },
+    {
+      "indice_docx": 695,
+      "ancla_original": "El propósito medular de la presente investigación fue",
+      "texto_nuevo": "El propósito de la presente investigación fue determinar de qué manera la aplicación del sistema web SIVAC mejora la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II. El diseño metodológico preexperimental con mediciones emparejadas antes y después (O₁ → X → O₂) sobre la población censal de n = 14 trabajadores permitió contrastar de forma empírica el impacto de la digitalización ágil frente al flujo manual tradicional en las tres dimensiones fijadas para la variable dependiente: oportunidad de procesamiento, consistencia documental y satisfacción del usuario. La magnitud de los tamaños del efecto estimados, sistemáticamente superiores a los umbrales convencionales de la literatura metodológica, respalda la relevancia práctica de las diferencias observadas y descarta que estas obedezcan a fluctuaciones muestrales.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se suprime el adjetivo medular, se retira el código interno de decisión, se normaliza la notación del diseño y se añade una oración analítica anclada a los tamaños del efecto ya reportados."
+    },
+    {
+      "indice_docx": 696,
+      "ancla_original": "En cuanto a la primera dimensión, Oportunidad de",
+      "texto_nuevo": "En cuanto a la primera dimensión, Oportunidad de procesamiento, los hallazgos demostraron que el sistema SIVAC redujo el tiempo medio de registro de 37.18 a 7.18 minutos (-80.69%) y el tiempo de emisión de vales de 18.21 a 3.04 minutos (-83.33%), con contrastes altamente significativos (t = -38.94 y t = -24.51; p < .001) y tamaños del efecto muy grandes (|d| > 6.5). Estos resultados convergen con lo reportado por Mamani (2023) en su evaluación de sistemas de información logística en centros de salud de Puno, donde la automatización redujo en un 76.4% los tiempos de llenado de reportes. Asimismo, coinciden con la evidencia empírica internacional de la OMS y UNICEF (2021) sobre sistemas e-LMIS en países en desarrollo, los cuales demuestran que la eliminación de la transcripción manual mitiga los cuellos de botella operativos y agiliza la distribución de biológicos en la red de frío.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se sustituye el adjetivo colosales y se suprime el refuerzo plenamente en la concordancia con los antecedentes."
+    },
+    {
+      "indice_docx": 697,
+      "ancla_original": "Respecto a la segunda dimensión, Consistencia documental",
+      "texto_nuevo": "Respecto a la segunda dimensión, Consistencia documental, el incremento del porcentaje de registros sin discrepancias (RSD) de 63.57% a 96.00% (+51.01%) y de la concordancia programada vs entregada (CPE) de 67.61% a 95.39% (+41.10%) revela una transformación sustancial en la exactitud contable de los kardex (t = 26.63 y t = 28.15; p < .001; d > 7.0). Este logro se fundamenta en los controles algorítmicos implementados en SIVAC: la regla FEFO obligatoria que impide despachar biológicos de vencimiento tardío teniendo existencias próximas a caducar, y el bloqueo estricto de transacciones con saldo insuficiente. Estos hallazgos concuerdan con la investigación de Rojas y Vargas (2022) en redes de salud de Lima, quienes identificaron que el 84.5% de los errores documentales en vacunas obedecen a fallas aritméticas manuales en el kardex físico.",
+      "tipo_defecto": "RELLENO",
+      "justificacion": "Se corrige el uso impropio de cualitativa para un cambio expresado en puntos porcentuales."
+    },
+    {
+      "indice_docx": 765,
+      "ancla_original": "En cumplimiento de las decisiones DEC-015 y DEC-020, se",
+      "texto_nuevo": "En cumplimiento de las decisiones metodológicas adoptadas, se presentan los tres (3) certificados de validación de instrumentos emitidos por jueces expertos multidisciplinarios independientes, acreditando la validez de contenido bajo los criterios de Pertinencia, Relevancia y Claridad, obteniéndose un coeficiente V de Aiken unánime (V = 1.00; p < .05) e Índice de Validez de Contenido IVC = 1.00, dictaminándose la aplicabilidad de los instrumentos.",
+      "tipo_defecto": "INCONSISTENCIA_TERMINOLOGICA",
+      "justificacion": "Se retiran los códigos internos de decisión y se suprime el refuerzo plena, sin modificar los coeficientes reportados."
+    }
+  ],
+  "observaciones_sin_cambio": [
+    {
+      "indice_docx": 619,
+      "motivo": "[VERIFICAR] Advertencia de capítulo que declara los resultados como DATOS DE PRUEBA – REEMPLAZAR, con rutas locales y códigos internos. No se edita por ser salvaguarda deontológica; requiere decisión del tesista y del Director General sobre su permanencia en el documento final."
+    },
+    {
+      "indice_docx": 600,
+      "motivo": "[VERIFICAR] Marcadores [Pendiente] en la sección de confiabilidad de instrumentos y remisión a una Tabla 12 inexistente en ese contexto. Depende de datos aún no consolidados."
+    },
+    {
+      "indice_docx": 602,
+      "motivo": "[VERIFICAR] Se declara el instrumento con 12 elementos, mientras la sección 5.1 y el anexo trabajan con 8 ítems. Contradicción de contenido, no de redacción."
+    },
+    {
+      "indice_docx": 765,
+      "motivo": "[VERIFICAR] Los certificados con V = 1.00 e IVC = 1.00 coexisten con marcadores [Pendiente] en la sección de validación. Debe confirmarse la emisión efectiva de los certificados."
+    },
+    {
+      "indice_docx": 706,
+      "motivo": "[VERIFICAR] Se mencionan 19 centros de acopio; el Capítulo I y la sección 4.6 fijan ocho centros de acopio y 14 operadores. Inconsistencia de alcance institucional."
+    },
+    {
+      "indice_docx": 251,
+      "motivo": "[VERIFICAR] El apartado 3.3 describe once (11) centros de acopio, en contradicción con los ocho centros y las 13 dependencias enumeradas en el Capítulo V."
+    },
+    {
+      "indice_docx": 776,
+      "motivo": "[VERIFICAR] El Anexo de datos reporta 14 centros de acopio, cifra distinta de las anteriores."
+    },
+    {
+      "indice_docx": 272,
+      "motivo": "[VERIFICAR] El resumen de planificación reporta 15 historias de usuario y 71 puntos de historia, mientras el Abstract y la sección 3.3.1 consignan 16 y 76, con cuatro frente a cinco iteraciones."
+    },
+    {
+      "indice_docx": 546,
+      "motivo": "Remisión a la Tabla 9 para la distribución poblacional, cuando la tabla correspondiente es la Tabla 2. La renumeración de tablas y figuras corresponde a otro subagente."
+    },
+    {
+      "indice_docx": 113,
+      "motivo": "Remisión a la Tabla 10 para la operacionalización de la variable; la tabla pertinente no ocupa ese ordinal. No se altera por corresponder a la renumeración global."
+    },
+    {
+      "indice_docx": 623,
+      "motivo": "Remisión a la Tabla 4 para los coeficientes psicométricos, cuando la tabla rotulada en el cuerpo es la Tabla 14. Se registra para la renumeración."
+    },
+    {
+      "indice_docx": 630,
+      "motivo": "Remisiones a Tabla 5 y Figura 6 que no coinciden con los rótulos efectivos (Tabla 14 y Figura 6). Se registra para la renumeración."
+    },
+    {
+      "indice_docx": 639,
+      "motivo": "Remisiones a Tabla 6 y Figura 7 desalineadas respecto de los rótulos efectivos (Tabla 15 y Figura 6). Se registra para la renumeración."
+    },
+    {
+      "indice_docx": 648,
+      "motivo": "Remisiones a Tabla 7 y Figura 8 desalineadas respecto de los rótulos efectivos (Tabla 16 y Figura 8). Se registra para la renumeración."
+    },
+    {
+      "indice_docx": 690,
+      "motivo": "Remisión a la Tabla 12 para el balance inferencial, cuando la tabla rotulada es la Tabla 21. Se registra para la renumeración."
+    },
+    {
+      "indice_docx": 696,
+      "motivo": "[VERIFICAR] Cita a Mamani (2023) sin entrada correspondiente en la lista de referencias; además, la cita a OMS y UNICEF (2021) tampoco figura en dicha lista. No se añaden ni eliminan citas."
+    },
+    {
+      "indice_docx": 697,
+      "motivo": "[VERIFICAR] Cita a Rojas y Vargas (2022) sin entrada en la lista de referencias."
+    },
+    {
+      "indice_docx": 698,
+      "motivo": "[VERIFICAR] Cita a Venkatesh et al. (2003) sin entrada en la lista de referencias."
+    },
+    {
+      "indice_docx": 623,
+      "motivo": "[VERIFICAR] Citas a George y Mallery (2003) y a Hernández-Sampieri y Mendoza (2018) sin entrada en la lista de referencias."
+    },
+    {
+      "indice_docx": 662,
+      "motivo": "[VERIFICAR] La nota de tabla atribuye a Rosenthal (1991) el criterio de tamaño del efecto sin entrada en referencias; además, la fórmula del estadístico r se enuncia con N en el cuerpo y con 2n en la nota."
+    },
+    {
+      "indice_docx": 394,
+      "motivo": "[VERIFICAR] Rutas locales del repositorio citadas en la prosa (C:\\Proyectos\\syncova). Deben sustituirse por una descripción funcional del componente antes de la entrega final."
+    },
+    {
+      "indice_docx": 406,
+      "motivo": "[VERIFICAR] Ruta local del código fuente insertada en el cuerpo narrativo; requiere decisión editorial del tesista."
+    },
+    {
+      "indice_docx": 75,
+      "motivo": "Se conserva el marcador [Pendiente de consignar volumen exacto de registros basales] porque suprimirlo ocultaría un vacío de datos que debe resolver el tesista."
+    },
+    {
+      "indice_docx": 202,
+      "motivo": "Los códigos internos de decisión persisten en notas de tabla y encabezados, fuera del alcance de la prosa narrativa asignada; su depuración corresponde al ensamble editorial."
+    },
+    {
+      "indice_docx": 270,
+      "motivo": "Persistencia de códigos internos de decisión en nota de tabla; no se interviene por tratarse de un elemento no narrativo."
+    },
+    {
+      "indice_docx": 647,
+      "motivo": "Persistencia de códigos internos en encabezado de sección; la edición de encabezados está reservada a otro subagente."
+    },
+    {
+      "indice_docx": 53,
+      "motivo": "El resumen estructurado y el Abstract presentan tiempos verbales en futuro respecto de una investigación concluida. No se modifican por estar sujetos a la restricción de 250 palabras y a la revisión del tesista."
+    }
+  ]
+}
