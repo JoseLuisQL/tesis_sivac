@@ -1,0 +1,53 @@
+{
+  "version": "v03",
+  "generado": "2026-11-02T17:19:03",
+  "especificaciones": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261102_v03\\_ESPECIFICACION",
+  "referencia_geometria": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261022_v02\\00_INSTRUMENTOS_RECOLECCION_SIVAC.docx",
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261102_v03\\01_FICHA_TIEMPOS_v03.docx",
+      "sha256": "aed10f56268d8699ca0101134de29f05499e16c1433dad25e79438cd39c42fa7",
+      "bytes": 1751198,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 4,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_exceden_ancho_util": [],
+      "nombre": "01_FICHA_TIEMPOS_v03",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261102_v03\\01_FICHA_TIEMPOS_v03.pdf",
+      "sha256_pdf": "69ae324fe3211fd43a22a7e6731ba9f6f25f611045a90ce5d95dc7acfd4c72c5",
+      "paginas": 2,
+      "paginas_pdf_medidas": 2
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261102_v03\\02_FICHA_AUDITORIA_v03.docx",
+      "sha256": "75d1aa88df471be19980d4d555e2020ce64e4a00ca5f272e9f097aba9a046f4a",
+      "bytes": 1751630,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 6,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_exceden_ancho_util": [],
+      "nombre": "02_FICHA_AUDITORIA_v03",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_REDISENADOS_FANY_20261102_v03\\02_FICHA_AUDITORIA_v03.pdf",
+      "sha256_pdf": "4451c718c5094825a99301df66e34d29b3b76a15a18307973de2226ad98c3f5b",
+      "paginas": 2,
+      "paginas_pdf_medidas": 2
+    }
+  ],
+  "advertencias": []
+}

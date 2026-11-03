@@ -90,9 +90,10 @@ Operas bajo el ciclo cerrado de memoria viva del laboratorio:
 1. **Bioética y Protección de Datos Personales (Ley N° 29733):**
    - Todo formulario digital debe contener como primera pantalla el **Consentimiento Informado**, especificando fines estrictamente académicos, confidencialidad, anonimato y derecho a desistir sin perjuicio alguno.
    - Si el participante marca "No acepto participar", el formulario finaliza inmediatamente sin registrar respuesta alguna.
-2. **Fidelidad al Constructo TAM de Davis (DEC-007, DEC-019):**
-   - Modalidad A, oficial para HE3: 8 reactivos, 4 de Aceptación del Proceso (AP-01 a AP-04) y 4 de Utilidad Percibida (UP-01 a UP-04), aplicados en pretest y postest. Subescala de 4 a 20 puntos; total de 8 a 40 puntos.
-   - Modalidad B, módulo anexo de postest: 8 reactivos, 4 de Utilidad Percibida del software (PU-01 a PU-04) y 4 de Facilidad de Uso Percibida (PE-01 a PE-04). No se barema, no se contrasta y no se suma a la Modalidad A.
+2. **Fidelidad al Constructo TAM de Davis (DEC-007, DEC-019, DEC-033):**
+   - Modalidad A, paquete vigente v05 (DEC-033): 6 reactivos, 3 de Aceptación del Proceso (AP-01 a AP-03) y 3 de Utilidad Percibida (UP-01 a UP-03), aplicados en pretest y postest. Subescala de 3 a 15 puntos; total de 6 a 30 puntos.
+   - Modalidad B, módulo anexo de postest: 8 reactivos, 4 de Utilidad Percibida del software (PU-01 a PU-04) y 4 de Facilidad de Uso Percibida (PE-01 a PE-04). No se barema, no se contrasta y no se suma a la Modalidad A. Queda fuera del paquete v05.
+   - Los ocho reactivos AP/UP de DEC-019 se conservan solo como registro histórico y no se digitalizan en el formulario vigente.
    - Escala Likert de 5 puntos homogénea (1 = Totalmente en desacuerdo a 5 = Totalmente de acuerdo).
    - Configuración obligatoria de todos los campos para evitar atrición de datos (*missing data*).
 3. **Cero Manipulación Empírica:** Prohibido alterar registros de campo brutos para favorecer resultados hipotéticos.
@@ -111,13 +112,13 @@ Para estructurar un formulario digital requieres:
 1. **Modelado y Arquitectura del Formulario:**
    - Sección 0: Presentación institucional UNAJMA / DISA Apurímac II y Consentimiento Informado.
    - Sección 1: Datos laborales de control (años en inmunizaciones, rol operativo).
-   - Sección 2: Subescala de Aceptación del Proceso ($AP$, reactivos AP-01 a AP-04).
-   - Sección 3: Subescala de Utilidad Percibida ($UP$, reactivos UP-01 a UP-04).
+   - Sección 2: Subescala de Aceptación del Proceso ($AP$, reactivos AP-01 a AP-03).
+   - Sección 3: Subescala de Utilidad Percibida ($UP$, reactivos UP-01 a UP-03).
    - Sección 4: Módulo anexo de postest (Modalidad B), con los reactivos PU-01 a PU-04 y PE-01 a PE-04, visible solo cuando la fase declarada es POSTEST y sin puntaje sumatorio asociado.
 2. **Generación Automatizada con Apps Script:**
    - Script `.gs` que invoca la API `FormApp` de Google para generar títulos, descripciones, escalas Likert requeridas y validaciones sin errores manuales.
 3. **Estandarización Tabular:**
-   - Nombres de columnas canónicos en minúsculas snake_case: `id_sujeto`, `ap_01` a `ap_04`, `up_01` a `up_04`, `score_ap` (4 a 20), `score_up` (4 a 20), `score_tam_total` (8 a 40), `nivel_satisfaccion` y `pretest_flag`.
+   - Nombres de columnas canónicos en minúsculas snake_case: `id_sujeto`, `ap_01` a `ap_03`, `up_01` a `up_03`, `score_ap` (3 a 15), `score_up` (3 a 15), `score_tam_total` (6 a 30), `nivel_satisfaccion` y `pretest_flag`.
 
 ---
 

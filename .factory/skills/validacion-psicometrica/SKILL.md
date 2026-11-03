@@ -25,26 +25,26 @@ description: Algoritmos psicométricos (V de Aiken e IVC de Tristán-López) apl
 
 ---
 
-## 0. Alcance del Juicio de Contenido (DEC-020)
+## 0. Alcance del Juicio de Contenido (DEC-020, DEC-022, DEC-024, DEC-033)
 
-El juicio de expertos se aplica a **un solo instrumento**: el Instrumento N.° 03, Cuestionario
-de Satisfacción del Usuario, Modalidad A, con sus ocho reactivos (AP-01 a AP-04 y UP-01 a
-UP-04). Los otros instrumentos no se someten a juicio de contenido y se acreditan por vía
-propia:
+El juicio de expertos se aplica a **un solo instrumento continuo**: el certificado único de la
+Variable Dependiente, de **catorce ítems** —cuatro por cada dimensión de DEC-007—, en el que los
+ítems 9 a 14 transcriben los **seis reactivos** AP-01 a AP-03 y UP-01 a UP-03 del Instrumento
+N.° 03. Los otros instrumentos no reciben certificado propio y se acreditan por vía propia:
 
 | Instrumento | Vía de acreditación | Criterio |
 |---|---|---|
-| Instrumento N.° 01, Ficha de observación cronométrica | Protocolo de medición de movimientos de vacunas (PMMV) y acuerdo interobservador | ICC(2,1) >= 0.75 |
-| Instrumento N.° 02, Ficha de registro y cotejo documental | Protocolo de medición de movimientos de vacunas (PMMV) y concordancia interauditor | Kappa de Cohen >= 0.80 |
-| Instrumento N.° 03, Modalidad A (8 reactivos) | Juicio de contenido, certificado único Fany 2024 | V de Aiken >= 0.80 e IVC >= 0.80 |
-| Instrumento N.° 03, Modalidad B (8 reactivos) | Módulo anexo de postest, sin baremación ni contraste | No recibe certificado |
+| Instrumento N.° 01, Ficha de observación cronométrica | Protocolo de medición de movimientos de vacunas (PMMV) y acuerdo interobservador; contenido cubierto por los ítems 1 a 2 y 3 a 4 | ICC(2,1) >= 0.75 |
+| Instrumento N.° 02, Ficha de registro y cotejo documental | Protocolo de medición de movimientos de vacunas (PMMV) y concordancia interauditor; contenido cubierto por los ítems 5 a 6 y 7 a 8 | Kappa de Cohen >= 0.80 |
+| Certificado VD, 14 ítems | Juicio de contenido, certificado único Fany 2024 | V de Aiken >= 0.80 e IVC >= 0.80 |
+| Instrumento N.° 03, Modalidad B (8 reactivos) | Módulo anexo de postest, sin baremación ni contraste; fuera del paquete v05 | No recibe certificado |
 
 ---
 
 ## 1. Modelo de Contenido Vigente: Fany 2024 (DEC-015)
 
 ### 1.1. Los Tres Criterios Dicotómicos por Ítem
-Cada juez experto evalúa cada uno de los ocho reactivos bajo tres criterios, y registra una
+Cada juez experto evalúa cada uno de los catorce ítems bajo tres criterios, y registra una
 sola marca por criterio:
 
 1. **Pertinencia:** El ítem corresponde al concepto teórico formulado.
@@ -88,8 +88,12 @@ El índice de cada reactivo es la media aritmética de los tres criterios:
 $$IVC_i = \frac{1}{3} \sum_{k=1}^{3} IVC_{ik} = \frac{IVC_{i,\text{Per}} + IVC_{i,\text{Rel}} + IVC_{i,\text{Cla}}}{3}$$
 
 ### 2.3. IVC Global del Instrumento (IVC_total)
-El índice global es el promedio de los IVC_i de los M = 8 reactivos de la Modalidad A:
-$$IVC_{total} = \frac{1}{8} \sum_{i=1}^{8} IVC_i$$
+El índice global es el promedio de los IVC_i de los M = 14 ítems del certificado único de la
+Variable Dependiente:
+$$IVC_{total} = \frac{1}{14} \sum_{i=1}^{14} IVC_i$$
+
+El mismo cálculo se replica por subconjunto de dimensión (ítems 1 a 4, 5 a 8 y 9 a 14) cuando se
+requiera el índice por dimensión de DEC-007.
 
 ---
 
@@ -123,7 +127,7 @@ mínima es de formato largo, con una fila por combinación de juez, ítem y crit
 | Columna | Contenido |
 |---|---|
 | `juez` | Identificador del experto (J1, J2, J3) |
-| `item` | Código literal del reactivo (AP-01 a AP-04, UP-01 a UP-04) |
+| `item` | ítems 1 a 14 del certificado único, con AP-01 a AP-03 y UP-01 a UP-03 en los ítems 9 a 14 |
 | `criterio` | `pertinencia`, `relevancia` o `claridad` |
 | `puntaje` | 1 = Sí, 0 = No |
 
@@ -131,7 +135,7 @@ Reglas de integridad:
 
 1. No se admiten celdas vacías ni valores distintos de 0 y 1.
 2. No se admiten filas duplicadas para una misma combinación de juez, ítem y criterio.
-3. El número de filas es 3 jueces x 8 ítems x 3 criterios = 72.
+3. El número de filas es 3 jueces x 14 ítems x 3 criterios = 126.
 4. La matriz se deriva del certificado firmado; jamás se rellena por estimación.
 
 El comando `scripts/agentes/validez_contenido.py plantilla` genera la captura vacía y
@@ -163,21 +167,21 @@ donde `S` es el número de jueces que marcaron Sí y `n` es el número de jueces
 
 ## 6. Confiabilidad Psicométrica: Alfa de Cronbach
 
-La consistencia interna se estima sobre los ocho reactivos de la Modalidad A (DEC-019): cuatro
-de Aceptación del Proceso (AP-01 a AP-04) y cuatro de Utilidad Percibida (UP-01 a UP-04). Cada
-subescala suma de 4 a 20 puntos y el total de la Modalidad A de 8 a 40 puntos; la Modalidad B no
-se suma ni se barema.
+La consistencia interna se estima sobre los **seis reactivos** vigentes del cuestionario
+(DEC-033): tres de Aceptación del Proceso (AP-01 a AP-03) y tres de Utilidad Percibida (UP-01 a
+UP-03). Cada subescala suma de 3 a 15 puntos y el total de 6 a 30 puntos; la Modalidad B no se
+suma ni se barema.
 $$\alpha = \frac{K}{K - 1} \left( 1 - \frac{\sum_{i=1}^{K} s_i^2}{s_t^2} \right)$$
-donde K = 8 (número de reactivos), `s_i^2` es la varianza de las puntuaciones en el ítem `i` y
+donde K = 6 (número de reactivos), `s_i^2` es la varianza de las puntuaciones en el ítem `i` y
 `s_t^2` es la varianza del puntaje total del cuestionario.
 
 **Advertencia de potencia muestral:** con la población censal N = n = 14 la razón sujetos por
-reactivo es 14 / 8 = 1.75, muy por debajo de la proporción 5:1 a 10:1 que suele exigirse para
+reactivo es 14 / 6 = 2.33, todavía por debajo de la proporción 5:1 a 10:1 que suele exigirse para
 estimar consistencia interna. El alfa debe reportarse con su intervalo de confianza al 95 % por
 el método de Feldt, Woodruff y Salih, no como un valor puntual, y su magnitud no autoriza a
 declarar de forma unívoca la fiabilidad del instrumento.
 
-**Omega de McDonald:** no es estimable con n = 14 y 8 reactivos, porque el modelo factorial que
+**Omega de McDonald:** no es estimable con n = 14 y 6 reactivos, porque el modelo factorial que
 lo sustenta no es identificable de forma estable. No debe reportarse ningún valor de omega y su
 ausencia debe constar expresamente en el informe, con la razón muestral que la motiva.
 

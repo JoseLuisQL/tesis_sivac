@@ -1,0 +1,496 @@
+{
+  "version": "v05",
+  "estado_compilacion": "definitivo",
+  "generado": "2026-11-03T00:24:30",
+  "especificaciones": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_ESPECIFICACION",
+  "geometria": {
+    "pagina_dxa": [
+      11906,
+      16838
+    ],
+    "margenes_dxa": {
+      "izquierdo": 1701,
+      "superior": 1701,
+      "derecho": 1417,
+      "inferior": 1417
+    },
+    "distancia_encabezado_dxa": 454,
+    "ancho_util_dxa": 8788,
+    "alto_util_cm": 24.2,
+    "banda_ubicacion": "encabezado nativo word/header1.xml",
+    "banda_cm": [
+      2.4,
+      10.7,
+      2.4
+    ],
+    "banda_alto_cm": 2.0,
+    "logo_alto_cm": 1.6,
+    "espaciado": {
+      "rotulos_antes_pt": 12.0,
+      "rotulos_despues_pt": 4.0,
+      "titulo_primer_elemento_pt": 6.0,
+      "tabla_rotulo_pt": 12.0,
+      "margen_celda_vertical_mm": 0.5
+    },
+    "tipo_letra": "Times New Roman",
+    "cuerpo_pt": 10.0,
+    "tablas_pt": 9.5,
+    "fuente_minima_admitida_pt": 9.5,
+    "interlineado_exacto_pt": {
+      "00": 12.0,
+      "01": 12.0,
+      "02": 12.0,
+      "03": 12.0
+    }
+  },
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\00_GUIA_DE_APLICACION_v05.docx",
+      "sha256": "6c66d5799bf13670b233be1c7c9e5e5a1d8ecab40fc40d07badefa44836e0801",
+      "bytes": 1741339,
+      "fuente_minima_global_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tablas": 2,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_flotantes": 0,
+      "omml": 0,
+      "omml_en_celdas": 0,
+      "codigos_internos": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_total": 0,
+      "partes_encabezado": [
+        "word/header1.xml"
+      ],
+      "header1_xml": true,
+      "referencias_encabezado": 1,
+      "referencias_pie": 0,
+      "dibujos_cuerpo": 0,
+      "dibujos_encabezado": 2,
+      "tablas_encabezado": 1,
+      "ancho_encabezado_dxa": 8788,
+      "alto_fila_encabezado": {
+        "val": 1134,
+        "hRule": "exact"
+      },
+      "alturas_logo_cm": [
+        1.6,
+        1.6
+      ],
+      "pg_mar_top_dxa": 1701,
+      "pg_mar_header_dxa": 454,
+      "nombre": "00_GUIA_DE_APLICACION_v05",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\00_GUIA_DE_APLICACION_v05.pdf",
+      "sha256_pdf": "c7a3db71dd3d05f03b7e9b921bd6e8132ae7f6da6575b51748f4e42fe0fd61b9",
+      "bytes_pdf": 44631,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 735.09,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 1.27,
+      "holgura_inferior_por_pagina_cm": [
+        1.27
+      ],
+      "fondo_por_pagina_pt": [
+        735.09
+      ],
+      "codigos_internos_pdf": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_pdf_total": 0,
+      "escala_totalmente_en_desacuerdo": 0,
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\00_GUIA_DE_APLICACION_v05_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\01_CUESTIONARIO_SATISFACCION_v05.docx",
+      "sha256": "90586d93733054b605cf235db10e13a5ef5680462933e2d1a9469da4075e0245",
+      "bytes": 1740948,
+      "fuente_minima_global_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tablas": 3,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_flotantes": 0,
+      "omml": 0,
+      "omml_en_celdas": 0,
+      "codigos_internos": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_total": 0,
+      "partes_encabezado": [
+        "word/header1.xml"
+      ],
+      "header1_xml": true,
+      "referencias_encabezado": 1,
+      "referencias_pie": 0,
+      "dibujos_cuerpo": 0,
+      "dibujos_encabezado": 2,
+      "tablas_encabezado": 1,
+      "ancho_encabezado_dxa": 8788,
+      "alto_fila_encabezado": {
+        "val": 1134,
+        "hRule": "exact"
+      },
+      "alturas_logo_cm": [
+        1.6,
+        1.6
+      ],
+      "pg_mar_top_dxa": 1701,
+      "pg_mar_header_dxa": 454,
+      "nombre": "01_CUESTIONARIO_SATISFACCION_v05",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\01_CUESTIONARIO_SATISFACCION_v05.pdf",
+      "sha256_pdf": "2aa588e93cc413be8283a5a6856f6cb29a01481f829c23ccc8d8f27df255d092",
+      "bytes_pdf": 55193,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 681.09,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 3.17,
+      "holgura_inferior_por_pagina_cm": [
+        3.17
+      ],
+      "fondo_por_pagina_pt": [
+        681.09
+      ],
+      "codigos_internos_pdf": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_pdf_total": 0,
+      "escala_totalmente_en_desacuerdo": 1,
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\01_CUESTIONARIO_SATISFACCION_v05_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\02_FICHA_TIEMPOS_v05.docx",
+      "sha256": "6c163ee59d3b427303df8030dc96d7666e3b714ba6707360ba8ee76fb7fc6cb3",
+      "bytes": 1741247,
+      "fuente_minima_global_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tablas": 5,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_flotantes": 0,
+      "omml": 0,
+      "omml_en_celdas": 0,
+      "codigos_internos": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_total": 0,
+      "partes_encabezado": [
+        "word/header1.xml"
+      ],
+      "header1_xml": true,
+      "referencias_encabezado": 1,
+      "referencias_pie": 0,
+      "dibujos_cuerpo": 0,
+      "dibujos_encabezado": 2,
+      "tablas_encabezado": 1,
+      "ancho_encabezado_dxa": 8788,
+      "alto_fila_encabezado": {
+        "val": 1134,
+        "hRule": "exact"
+      },
+      "alturas_logo_cm": [
+        1.6,
+        1.6
+      ],
+      "pg_mar_top_dxa": 1701,
+      "pg_mar_header_dxa": 454,
+      "nombre": "02_FICHA_TIEMPOS_v05",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\02_FICHA_TIEMPOS_v05.pdf",
+      "sha256_pdf": "c66cb9c43f6c058bd26c442e1a4f1e102b067bfa91fe7d9964dd059a2ca0283e",
+      "bytes_pdf": 62742,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 756.45,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 0.52,
+      "holgura_inferior_por_pagina_cm": [
+        0.52
+      ],
+      "fondo_por_pagina_pt": [
+        756.45
+      ],
+      "codigos_internos_pdf": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_pdf_total": 0,
+      "escala_totalmente_en_desacuerdo": 0,
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\02_FICHA_TIEMPOS_v05_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\03_FICHA_DOCUMENTAL_v05.docx",
+      "sha256": "bc36b33ea8458fc15d279ecd0b894e8e7e3d0bc13125c4bdebdc3710187af36a",
+      "bytes": 1742047,
+      "fuente_minima_global_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tablas": 6,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_flotantes": 0,
+      "omml": 0,
+      "omml_en_celdas": 0,
+      "codigos_internos": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_total": 0,
+      "partes_encabezado": [
+        "word/header1.xml"
+      ],
+      "header1_xml": true,
+      "referencias_encabezado": 1,
+      "referencias_pie": 0,
+      "dibujos_cuerpo": 0,
+      "dibujos_encabezado": 2,
+      "tablas_encabezado": 1,
+      "ancho_encabezado_dxa": 8788,
+      "alto_fila_encabezado": {
+        "val": 1134,
+        "hRule": "exact"
+      },
+      "alturas_logo_cm": [
+        1.6,
+        1.6
+      ],
+      "pg_mar_top_dxa": 1701,
+      "pg_mar_header_dxa": 454,
+      "nombre": "03_FICHA_DOCUMENTAL_v05",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\03_FICHA_DOCUMENTAL_v05.pdf",
+      "sha256_pdf": "ac7a602d4f0cfd3a759d5a59786c46a870bf47b0bcf60192a95833525af871d5",
+      "bytes_pdf": 74690,
+      "paginas_docx": 2,
+      "paginas_pdf_medidas": 2,
+      "fondo_ultima_pagina_pt": 523.26,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 8.74,
+      "holgura_inferior_por_pagina_cm": [
+        0.45,
+        8.74
+      ],
+      "fondo_por_pagina_pt": [
+        758.37,
+        523.26
+      ],
+      "codigos_internos_pdf": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_pdf_total": 0,
+      "escala_totalmente_en_desacuerdo": 0,
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\03_FICHA_DOCUMENTAL_v05_p001.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\03_FICHA_DOCUMENTAL_v05_p002.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\04_CONSENTIMIENTO_INFORMADO_v05.docx",
+      "sha256": "3a46113ac2eb80b0c392af611888ce04f1e3dd309140df5ce4cd54617cb6ffad",
+      "bytes": 1740876,
+      "fuente_minima_global_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tablas": 2,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_flotantes": 0,
+      "omml": 0,
+      "omml_en_celdas": 0,
+      "codigos_internos": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_total": 0,
+      "partes_encabezado": [
+        "word/header1.xml"
+      ],
+      "header1_xml": true,
+      "referencias_encabezado": 1,
+      "referencias_pie": 0,
+      "dibujos_cuerpo": 0,
+      "dibujos_encabezado": 2,
+      "tablas_encabezado": 1,
+      "ancho_encabezado_dxa": 8788,
+      "alto_fila_encabezado": {
+        "val": 1134,
+        "hRule": "exact"
+      },
+      "alturas_logo_cm": [
+        1.6,
+        1.6
+      ],
+      "pg_mar_top_dxa": 1701,
+      "pg_mar_header_dxa": 454,
+      "nombre": "04_CONSENTIMIENTO_INFORMADO_v05",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\04_CONSENTIMIENTO_INFORMADO_v05.pdf",
+      "sha256_pdf": "488587ec46c7febc0333b3ad11fb9936991ff8ef160eb2157d6a7d8843b20a22",
+      "bytes_pdf": 42126,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 659.01,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 3.95,
+      "holgura_inferior_por_pagina_cm": [
+        3.95
+      ],
+      "fondo_por_pagina_pt": [
+        659.01
+      ],
+      "codigos_internos_pdf": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_pdf_total": 0,
+      "escala_totalmente_en_desacuerdo": 0,
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\04_CONSENTIMIENTO_INFORMADO_v05_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\05_CERTIFICADO_VALIDACION_v05.docx",
+      "sha256": "c2e65c695377c397450ce94d110cc74da913fd516bcffa15e8455848eb0b3239",
+      "bytes": 1742182,
+      "fuente_minima_global_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tablas": 3,
+      "ancho_maximo_tabla_dxa": 8788,
+      "tablas_flotantes": 0,
+      "omml": 0,
+      "omml_en_celdas": 0,
+      "codigos_internos": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_total": 0,
+      "partes_encabezado": [
+        "word/header1.xml"
+      ],
+      "header1_xml": true,
+      "referencias_encabezado": 1,
+      "referencias_pie": 0,
+      "dibujos_cuerpo": 0,
+      "dibujos_encabezado": 2,
+      "tablas_encabezado": 1,
+      "ancho_encabezado_dxa": 8788,
+      "alto_fila_encabezado": {
+        "val": 1134,
+        "hRule": "exact"
+      },
+      "alturas_logo_cm": [
+        1.6,
+        1.6
+      ],
+      "pg_mar_top_dxa": 1701,
+      "pg_mar_header_dxa": 454,
+      "nombre": "05_CERTIFICADO_VALIDACION_v05",
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\05_CERTIFICADO_VALIDACION_v05.pdf",
+      "sha256_pdf": "055ea62dd6b42b05822c99ec20847bb7fa2e9b45bf2d35efdcfe6da043d9fb24",
+      "bytes_pdf": 71626,
+      "paginas_docx": 2,
+      "paginas_pdf_medidas": 2,
+      "fondo_ultima_pagina_pt": 648.09,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 4.34,
+      "holgura_inferior_por_pagina_cm": [
+        0.4,
+        4.34
+      ],
+      "fondo_por_pagina_pt": [
+        759.7,
+        648.09
+      ],
+      "codigos_internos_pdf": {
+        "AP-0": 0,
+        "UP-0": 0,
+        "REG-": 0,
+        "VALE-": 0,
+        "P-0": 0,
+        "C-0": 0,
+        "OP-": 0
+      },
+      "codigos_internos_pdf_total": 0,
+      "escala_totalmente_en_desacuerdo": 0,
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\05_CERTIFICADO_VALIDACION_v05_p001.png",
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\_control_visual\\05_CERTIFICADO_VALIDACION_v05_p002.png"
+      ]
+    }
+  ],
+  "advertencias": [
+    "05_CERTIFICADO_VALIDACION_v05: la página 1 cierra en 0.401 cm (mínimo PMI-05 §9: 0.4 cm) tras el ítem 7; la página 2 repite la cabecera de la matriz y contiene el ítem 8, la Dimensión 3, los ítems 9 a 14, las notas, las observaciones y la firma. Se conservan los catorce ítems y las tres dimensiones.",
+    "03_FICHA_DOCUMENTAL_v05: dos páginas. La página 1 cierra en 0.45 cm con la fila «¿Conforme?» y el conteo del Bloque A; la página 2 inicia con el Bloque B (holgura 8.74 cm) y contiene IV. Observaciones (4.0 cm) y V. Responsable. La cabecera del Bloque B usa textDirection btLr nativo en 8 celdas, sin guiones blandos; se conservan 10 columnas y 5 despachos. Para mantener el conteo del Bloque A en la página 1 se ajustó el ritmo: título 6 pt antes, ficha 4 pt antes, rótulos I-III 10 pt antes y conteo 2/11/4."
+  ]
+}

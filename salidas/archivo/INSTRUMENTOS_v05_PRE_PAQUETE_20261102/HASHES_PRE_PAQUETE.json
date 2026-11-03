@@ -1,0 +1,72 @@
+{
+  "00_GUIA_DE_APLICACION_v05": {
+    "docx": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\00_GUIA_DE_APLICACION_v05.docx",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\00_GUIA_DE_APLICACION_v05.docx",
+      "sha256": "c9dcabc11ba3a4dc757b4ee44c33bffda4e71020dcf3813e5175f6079c9f36bd",
+      "bytes": 1740913
+    },
+    "pdf": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\00_GUIA_DE_APLICACION_v05.pdf",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\00_GUIA_DE_APLICACION_v05.pdf",
+      "sha256": "aa23e15ea93bb8bf157f02031bdb27d9ba1f069831d1bd9747150cefa4e068de",
+      "bytes": 43481
+    }
+  },
+  "01_CUESTIONARIO_SATISFACCION_v05": {
+    "docx": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\01_CUESTIONARIO_SATISFACCION_v05.docx",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\01_CUESTIONARIO_SATISFACCION_v05.docx",
+      "sha256": "dfd10aabc3f5465fb3dbacdf3823d39e5b9766cdcbae36e7c849f3b7b224bbb2",
+      "bytes": 1741365
+    },
+    "pdf": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\01_CUESTIONARIO_SATISFACCION_v05.pdf",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\01_CUESTIONARIO_SATISFACCION_v05.pdf",
+      "sha256": "71ea6b633bd8b7fe5f3da3fa0a0251c9c2c32d192018468133e95d019cbb2c4c",
+      "bytes": 56737
+    }
+  },
+  "02_FICHA_TIEMPOS_v05": {
+    "docx": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\02_FICHA_TIEMPOS_v05.docx",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\02_FICHA_TIEMPOS_v05.docx",
+      "sha256": "eac1a6b4616b578a49d1e36ce5a0f8fd9f5ab00f88e0844767a73bc16f5850ff",
+      "bytes": 1740933
+    },
+    "pdf": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\02_FICHA_TIEMPOS_v05.pdf",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\02_FICHA_TIEMPOS_v05.pdf",
+      "sha256": "e0b17bf87a01c2e53e2a6ecc61d302a4fdf71f021340aea70bceae8e7551d187",
+      "bytes": 62763
+    }
+  },
+  "03_FICHA_DOCUMENTAL_v05": {
+    "docx": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\03_FICHA_DOCUMENTAL_v05.docx",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\03_FICHA_DOCUMENTAL_v05.docx",
+      "sha256": "096228ecb91ce69ae78d7ccc83cdbcc97da79ac7d559d1b98ef53327c4c2a10e",
+      "bytes": 1741972
+    },
+    "pdf": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\03_FICHA_DOCUMENTAL_v05.pdf",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\03_FICHA_DOCUMENTAL_v05.pdf",
+      "sha256": "51b06720d93eb197d30af6cd63a5dd4b1c6b8acab22d69e493aade880cc8c4d4",
+      "bytes": 71282
+    }
+  },
+  "05_CERTIFICADO_VALIDACION_v05": {
+    "docx": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\05_CERTIFICADO_VALIDACION_v05.docx",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\05_CERTIFICADO_VALIDACION_v05.docx",
+      "sha256": "772ce4e5b8c3208910f610c7adb57c260e4e116587eed99d058495398d908caa",
+      "bytes": 1742610
+    },
+    "pdf": {
+      "origen": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_DEFINITIVOS_v05\\05_CERTIFICADO_VALIDACION_v05.pdf",
+      "copia": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\INSTRUMENTOS_v05_PRE_PAQUETE_20261102\\05_CERTIFICADO_VALIDACION_v05.pdf",
+      "sha256": "366caf47716373581358168258a465b23c6980145df9d7cf17690bdb678026de",
+      "bytes": 74073
+    }
+  }
+}

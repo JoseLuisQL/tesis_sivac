@@ -29,6 +29,8 @@ Diseño preexperimental de un solo grupo, con pretest y postest (O1 → X → O2
 
 Cada dimensión se mide con su propio instrumento y ningún indicador se sustituye ni se estima a partir de otro.
 
+En este protocolo, registro documental equivale al documento de movimiento auditado, y despacho equivale a la entrega efectuada al establecimiento destino.
+
 ### 4. Tareas cronometradas, carga fija y disparadores
 
 Se cronometran seis tareas: tres de registro (REG-01, REG-02 y REG-03) y tres de emisión de vale (VALE-01, VALE-02 y VALE-03). Cada tarea se ejecuta una vez por fase y produce una observación destinada a su indicador.
@@ -42,7 +44,7 @@ Se cronometran seis tareas: tres de registro (REG-01, REG-02 y REG-03) y tres de
 | VALE-02 | Vale de reposición urgente por contingencia de cadena de frío | 1 biológico, 10 frascos | Recibe la solicitud urgente | Genera y confirma el vale impreso o digital |
 | VALE-03 | Vale de transferencia entre centros de acopio | 2 biológicos, 20 frascos | Recibe la solicitud de transferencia | Genera y confirma el vale impreso o digital |
 
-La carga es fija. Si la carga real difiere en el número de biológicos, de lotes o de frascos, la tarea no es válida.
+La carga es fija. La carga real se verifica con el número de biológicos y de frascos; solo en REG-01 a REG-03 se verifica además el número de lotes. Si la carga real difiere de la fija, la tarea no es válida.
 
 ### 5. Repeticiones de tareas no válidas
 
@@ -52,10 +54,10 @@ De cada escenario se conserva el primer tiempo válido. Las repeticiones posteri
 
 ### 6. Duración, pausa y validez
 
-- Duración: minutos decimales, calculada como fin menos inicio.
+- Duración: minutos decimales, calculada como fin menos inicio. Conversión: minutos = horas × 60 + minutos + segundos ÷ 60. Anote el resultado con dos decimales.
 - Pausa: interrupción no atribuible al procedimiento (atención a terceros, corte de energía o fuerza mayor). Se anota en minutos y se resta.
 - Tiempo válido: duración menos pausa, con dos cifras decimales.
-- Una interrupción atribuible al procedimiento no se resta; si impide completar la tarea, la anula.
+- Una interrupción externa que no impide completar la tarea se registra como pausa y se resta; una interrupción atribuible al procedimiento no se resta.
 - Una tarea con tiempo válido igual o menor que cero se anula y se repite.
 
 ### 7. Criterios de conformidad documental (RSD)

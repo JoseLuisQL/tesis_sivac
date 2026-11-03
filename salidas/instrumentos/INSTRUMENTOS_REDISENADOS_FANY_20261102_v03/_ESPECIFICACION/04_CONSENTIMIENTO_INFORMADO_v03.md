@@ -32,7 +32,7 @@ Estimado(a) participante:
 
 **4. Beneficios.** Contribuirá a mejorar el registro y control de vacunas. No hay pago ni compensación económica.
 
-**5. Confidencialidad.** Los formularios usan los códigos P01 a P14 y C01 a C13, sin nombres. La lista que vincula códigos y nombres queda en poder del investigador. Los datos se usan solo para esta tesis y se destruyen al concluir el informe.
+**5. Confidencialidad.** Los formularios usan los códigos P01 a P14 y C01 a C13, sin nombres. La lista que vincula códigos y nombres queda en poder del investigador. Los datos se usan solo para esta tesis. La lista que vincula códigos y nombres se destruye al concluir el informe; los formularios anónimos se conservan como evidencia de la investigación.
 
 **6. Voluntariedad.** La participación es libre. Puede retirarse en cualquier momento, sin perjuicio.
 

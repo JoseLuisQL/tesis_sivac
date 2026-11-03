@@ -135,6 +135,183 @@ def aplicar_bordes_campo(tabla, exterior_sz: int = 8,
         tblPr.append(bordes)
 
 
+def banda_institucional(
+    documento,
+    ruta_logo_izq: Union[str, Path],
+    ruta_logo_der: Union[str, Path],
+    ancho_total_cm: float = 15.5,
+):
+    """Compone la banda institucional superior como una sola tabla de tres celdas.
+
+    Geometría OpenXML
+    -----------------
+    El ancho total por omisión es de 15.5 cm (8788 dxa a razón de 567 dxa por
+    centímetro) y se reparte en tres columnas: 2.4 cm (1361 dxa) para el
+    logotipo izquierdo, 10.7 cm (6066 dxa) para el bloque de texto y 2.4 cm
+    (1361 dxa) para el logotipo derecho. La fila única lleva altura fija exacta
+    de 2.2 cm (``<w:trHeight w:val="1247" w:hRule="exact"/>``) y las tres celdas
+    se alinean al centro con ``<w:vAlign w:val="center"/>``. Ninguna celda lleva
+    bordes ni sombreado.
+
+    Ambos logotipos se insertan con la misma altura final de 1.9 cm; el ancho se
+    deduce de la relación de aspecto nativa del archivo, de modo que la imagen no
+    se deforma. El bloque central escribe tres líneas centradas de 9.5 pt. La
+    tabla se ancla al inicio del cuerpo, no lleva ``<w:tblHeader/>`` y, por ser
+    contenido del cuerpo, no se repite en las páginas siguientes.
+
+    Devuelve la tabla nativa creada (``docx.table.Table``).
+    """
+    from docx.enum.table import (WD_CELL_VERTICAL_ALIGNMENT,
+                                 WD_ROW_HEIGHT_RULE, WD_TABLE_ALIGNMENT)
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    from docx.shared import Cm, Pt
+
+    ruta_izq = Path(ruta_logo_izq)
+    ruta_der = Path(ruta_logo_der)
+    for ruta in (ruta_izq, ruta_der):
+        if not ruta.exists():
+            raise FileNotFoundError(f"Logotipo ausente: {ruta}")
+
+    dxa_cm = 567.0
+    total_dxa = int(round(float(ancho_total_cm) * dxa_cm))
+    ancho_logo_dxa = int(round(2.4 * dxa_cm))
+    ancho_texto_dxa = total_dxa - 2 * ancho_logo_dxa
+    if ancho_texto_dxa <= 0:
+        raise ValueError("El ancho total no admite dos celdas de 2.4 cm.")
+    anchos = [ancho_logo_dxa, ancho_texto_dxa, ancho_logo_dxa]
+
+    tabla = documento.add_table(rows=1, cols=3)
+    tabla.style = None
+    tabla.alignment = WD_TABLE_ALIGNMENT.LEFT
+    tabla.autofit = False
+    _fijar_margenes_celda_tabla(tabla._tbl, 0, 0, 0, 0)
+
+    tbl = tabla._tbl
+    tblPr = tbl.tblPr
+
+    # Ancho total explícito en dxa.
+    previo = tblPr.find(qn("w:tblW"))
+    if previo is not None:
+        tblPr.remove(previo)
+    tblW = OxmlElement("w:tblW")
+    tblW.set(qn("w:type"), "dxa")
+    tblW.set(qn("w:w"), str(sum(anchos)))
+    tblPr.insert_element_before(
+        tblW, "w:jc", "w:tblCellSpacing", "w:tblInd", "w:tblBorders",
+        "w:shd", "w:tblLayout", "w:tblCellMar", "w:tblLook",
+    )
+
+    # Rejilla y anchos de celda idénticos a la rejilla.
+    for gc, ancho in zip(tbl.tblGrid.gridCol_lst, anchos):
+        gc.set(qn("w:w"), str(ancho))
+    for indice, ancho in enumerate(anchos):
+        tcPr = tabla.rows[0].cells[indice]._tc.get_or_add_tcPr()
+        tcW = tcPr.get_or_add_tcW()
+        tcW.set(qn("w:type"), "dxa")
+        tcW.set(qn("w:w"), str(ancho))
+
+    # Bordes nulos en la tabla y en cada celda; sin sombreado.
+    previo = tblPr.find(qn("w:tblBorders"))
+    if previo is not None:
+        tblPr.remove(previo)
+    bordes_tabla = OxmlElement("w:tblBorders")
+    for lado in ("top", "left", "bottom", "right", "insideH", "insideV"):
+        nodo = OxmlElement(f"w:{lado}")
+        nodo.set(qn("w:val"), "nil")
+        nodo.set(qn("w:sz"), "0")
+        nodo.set(qn("w:space"), "0")
+        nodo.set(qn("w:color"), "auto")
+        bordes_tabla.append(nodo)
+    tblPr.insert_element_before(
+        bordes_tabla, "w:shd", "w:tblLayout", "w:tblCellMar", "w:tblLook",
+        "w:tblCaption", "w:tblDescription",
+    )
+    sombra_tabla = tblPr.find(qn("w:shd"))
+    if sombra_tabla is not None:
+        tblPr.remove(sombra_tabla)
+
+    for celda in tabla.rows[0].cells:
+        tcPr = celda._tc.get_or_add_tcPr()
+        previo = tcPr.find(qn("w:tcBorders"))
+        if previo is not None:
+            tcPr.remove(previo)
+        bordes_celda = OxmlElement("w:tcBorders")
+        for lado in ("top", "left", "bottom", "right", "insideH", "insideV"):
+            nodo = OxmlElement(f"w:{lado}")
+            nodo.set(qn("w:val"), "nil")
+            nodo.set(qn("w:sz"), "0")
+            nodo.set(qn("w:space"), "0")
+            nodo.set(qn("w:color"), "auto")
+            bordes_celda.append(nodo)
+        tcPr.insert_element_before(
+            bordes_celda, "w:shd", "w:noWrap", "w:tcMar", "w:textDirection",
+            "w:tcFitText", "w:vAlign", "w:hideMark", "w:headers",
+            "w:cellIns", "w:cellDel", "w:cellMerge", "w:tcPrChange",
+        )
+        sombra_celda = tcPr.find(qn("w:shd"))
+        if sombra_celda is not None:
+            tcPr.remove(sombra_celda)
+        celda.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+
+    # Logotipos: misma altura de 1.9 cm; ancho por relación de aspecto nativa.
+    for indice, ruta in ((0, ruta_izq), (2, ruta_der)):
+        parrafo = tabla.rows[0].cells[indice].paragraphs[0]
+        for hijo in list(parrafo._element):
+            if hijo.tag != qn("w:pPr"):
+                parrafo._element.remove(hijo)
+        pf = parrafo.paragraph_format
+        pf.space_before = Pt(0)
+        pf.space_after = Pt(0)
+        pf.line_spacing = 1.0
+        parrafo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        parrafo.add_run().add_picture(str(ruta), height=Cm(1.9))
+
+    # Bloque de texto institucional centrado, tres líneas de 9.5 pt.
+    lineas = (
+        ("UNIVERSIDAD NACIONAL JOSÉ MARÍA ARGUEDAS", True),
+        ("Facultad de Ingeniería", False),
+        ("Escuela Profesional de Ingeniería de Sistemas", False),
+    )
+    celda_texto = tabla.rows[0].cells[1]
+    for posicion, (texto, negrita) in enumerate(lineas):
+        parrafo = celda_texto.paragraphs[0] if posicion == 0 else \
+            celda_texto.add_paragraph()
+        if posicion == 0:
+            for hijo in list(parrafo._element):
+                if hijo.tag != qn("w:pPr"):
+                    parrafo._element.remove(hijo)
+        pf = parrafo.paragraph_format
+        pf.space_before = Pt(0)
+        pf.space_after = Pt(0)
+        pf.line_spacing = 1.0
+        parrafo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = parrafo.add_run(texto)
+        run.bold = negrita
+        run.font.size = Pt(9.5)
+        rPr = run._r.get_or_add_rPr()
+        rFonts = rPr.find(qn("w:rFonts"))
+        if rFonts is None:
+            rFonts = OxmlElement("w:rFonts")
+            rPr.insert(0, rFonts)
+        for atributo in ("w:ascii", "w:hAnsi", "w:cs", "w:eastAsia"):
+            rFonts.set(qn(atributo), "Times New Roman")
+
+    # Altura exacta de fila y ausencia de repetición de encabezado.
+    fila = tabla.rows[0]
+    fila.height = Cm(2.2)
+    fila.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
+    _preparar_tr(fila._tr, cant_split=True, tbl_header=False)
+    eliminar_flotacion_tabla(tabla)
+
+    # Anclaje al inicio del cuerpo.
+    cuerpo = documento.element.body
+    cuerpo.remove(tbl)
+    cuerpo.insert(0, tbl)
+    return tabla
+
+
 def _qn(tag: str):
     from docx.oxml.ns import qn
 

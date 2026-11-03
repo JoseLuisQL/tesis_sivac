@@ -1,0 +1,297 @@
+{
+  "version": "v04",
+  "generado": "2026-11-02T18:20:43",
+  "especificaciones": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_ESPECIFICACION",
+  "geometria": {
+    "pagina_dxa": [
+      11906,
+      16838
+    ],
+    "margenes_dxa": {
+      "izquierdo": 1701,
+      "superior": 1417,
+      "derecho": 1417,
+      "inferior": 1417
+    },
+    "ancho_util_dxa": 8788,
+    "tipo_letra": "Times New Roman",
+    "cuerpo_pt": 10.0,
+    "tablas_pt": 9.5,
+    "fuente_minima_admitida_pt": 9.5,
+    "interlineado_exacto_pt": {
+      "00": 11.5,
+      "01": 12.0,
+      "02": 12.0,
+      "03": 12.0,
+      "04": 12.0,
+      "05": 12.0
+    },
+    "interlineado_tabla_05_pt": 10.5
+  },
+  "documentos": [
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\05_CERTIFICADO_VALIDACION_v04.docx",
+      "sha256": "efb3785e3b0c0faf34c9d3a47b9c7ebae56467cac70591776ca857840c0db2fb",
+      "bytes": 1740726,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 2,
+      "filas": 22,
+      "filas_cant_split": 22,
+      "ancho_maximo_tabla_dxa": 8788,
+      "anchos_tabla_dxa": [
+        8788,
+        8788
+      ],
+      "tablas_exceden_ancho_util": [],
+      "lineas_relleno_docx": 7,
+      "guiones_bajos_docx": 180,
+      "nombre": "05_CERTIFICADO_VALIDACION_v04",
+      "rotulos_abreviados": {
+        "Pertinencia": "Pert.",
+        "Relevancia": "Relev.",
+        "Claridad": "Clar."
+      },
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\05_CERTIFICADO_VALIDACION_v04.pdf",
+      "sha256_pdf": "28c2673911068399de5e0cf903fe5d8bd778214d733613d53e84dca457ce0b25",
+      "bytes_pdf": 45993,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 759.93,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 0.39,
+      "guiones_bajos_pdf": 180,
+      "lineas_relleno_completas": true,
+      "fragmentos_rotulo_partido": [],
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_control_visual\\05_CERTIFICADO_VALIDACION_v04_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\00_GUIA_DE_APLICACION_v04.docx",
+      "sha256": "3a871cfde13d8153d3d5c53c76ed87a5511ad2a9507afaa574cb7d7c2adc24af",
+      "bytes": 1740093,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 2,
+      "filas": 5,
+      "filas_cant_split": 5,
+      "ancho_maximo_tabla_dxa": 8788,
+      "anchos_tabla_dxa": [
+        8788,
+        8788
+      ],
+      "tablas_exceden_ancho_util": [],
+      "lineas_relleno_docx": 0,
+      "guiones_bajos_docx": 0,
+      "nombre": "00_GUIA_DE_APLICACION_v04",
+      "rotulos_abreviados": {},
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\00_GUIA_DE_APLICACION_v04.pdf",
+      "sha256_pdf": "a6dfc0b24e4313a8a98ab94c7e55965b6f5b70ec7f2dba26aa53a2549e5b479f",
+      "bytes_pdf": 19768,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 683.37,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 3.09,
+      "guiones_bajos_pdf": 0,
+      "lineas_relleno_completas": true,
+      "fragmentos_rotulo_partido": [],
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_control_visual\\00_GUIA_DE_APLICACION_v04_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\01_CUESTIONARIO_SATISFACCION_v04.docx",
+      "sha256": "c57b36330127584f154e22beaa76c956f99fb50456a2a2b512ab97fc769d0d8a",
+      "bytes": 1739796,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 3,
+      "filas": 13,
+      "filas_cant_split": 13,
+      "ancho_maximo_tabla_dxa": 8788,
+      "anchos_tabla_dxa": [
+        8788,
+        8788,
+        8788
+      ],
+      "tablas_exceden_ancho_util": [],
+      "lineas_relleno_docx": 4,
+      "guiones_bajos_docx": 36,
+      "nombre": "01_CUESTIONARIO_SATISFACCION_v04",
+      "rotulos_abreviados": {},
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\01_CUESTIONARIO_SATISFACCION_v04.pdf",
+      "sha256_pdf": "6f5e72233f3c633d8e42bd34d062b614dbf3dd81fe00e0d975b753f1aaa21a8d",
+      "bytes_pdf": 31833,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 492.06,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 9.84,
+      "guiones_bajos_pdf": 36,
+      "lineas_relleno_completas": true,
+      "fragmentos_rotulo_partido": [],
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_control_visual\\01_CUESTIONARIO_SATISFACCION_v04_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\02_FICHA_TIEMPOS_v04.docx",
+      "sha256": "c024110b9ecc6c6e0dd818b043102e0a758926261986ec145764c670b5644bdf",
+      "bytes": 1739609,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 4,
+      "filas": 14,
+      "filas_cant_split": 14,
+      "ancho_maximo_tabla_dxa": 8788,
+      "anchos_tabla_dxa": [
+        8788,
+        8788,
+        8788,
+        8788
+      ],
+      "tablas_exceden_ancho_util": [],
+      "lineas_relleno_docx": 8,
+      "guiones_bajos_docx": 96,
+      "nombre": "02_FICHA_TIEMPOS_v04",
+      "rotulos_abreviados": {},
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\02_FICHA_TIEMPOS_v04.pdf",
+      "sha256_pdf": "41c12e1a294833ce4823e27365b641b97219a1c2112838e2b61cceb158257fa2",
+      "bytes_pdf": 63293,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 650.61,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 4.25,
+      "guiones_bajos_pdf": 96,
+      "lineas_relleno_completas": true,
+      "fragmentos_rotulo_partido": [],
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_control_visual\\02_FICHA_TIEMPOS_v04_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\03_FICHA_DOCUMENTAL_v04.docx",
+      "sha256": "88424c71cf9972764b602639e92a2c7ccdbb678ce7b9a65c7f8356bb8318765f",
+      "bytes": 1739958,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0,
+        12.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 4,
+      "filas": 28,
+      "filas_cant_split": 28,
+      "ancho_maximo_tabla_dxa": 8788,
+      "anchos_tabla_dxa": [
+        8788,
+        8788,
+        8788,
+        8788
+      ],
+      "tablas_exceden_ancho_util": [],
+      "lineas_relleno_docx": 16,
+      "guiones_bajos_docx": 132,
+      "nombre": "03_FICHA_DOCUMENTAL_v04",
+      "rotulos_abreviados": {
+        "Documento 1-5": "Doc. 1-5"
+      },
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\03_FICHA_DOCUMENTAL_v04.pdf",
+      "sha256_pdf": "c8b2e730f82b2da0544288f26339b1236de5ddb55c0df1e89f743d4a809b4f1b",
+      "bytes_pdf": 84476,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 763.89,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 0.25,
+      "guiones_bajos_pdf": 132,
+      "lineas_relleno_completas": true,
+      "fragmentos_rotulo_partido": [],
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_control_visual\\03_FICHA_DOCUMENTAL_v04_p001.png"
+      ]
+    },
+    {
+      "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\04_CONSENTIMIENTO_INFORMADO_v04.docx",
+      "sha256": "d7b73851ce3291cf8b84494c17d9349c7dc9775aa16df7760048d395f780247a",
+      "bytes": 1739682,
+      "fuente_minima_cuerpo_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "tamanos_pt": [
+        9.5,
+        10.0
+      ],
+      "omml": 0,
+      "tablas_flotantes": 0,
+      "tablas": 3,
+      "filas": 10,
+      "filas_cant_split": 10,
+      "ancho_maximo_tabla_dxa": 8788,
+      "anchos_tabla_dxa": [
+        8788,
+        8788,
+        8788
+      ],
+      "tablas_exceden_ancho_util": [],
+      "lineas_relleno_docx": 14,
+      "guiones_bajos_docx": 264,
+      "nombre": "04_CONSENTIMIENTO_INFORMADO_v04",
+      "rotulos_abreviados": {},
+      "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\04_CONSENTIMIENTO_INFORMADO_v04.pdf",
+      "sha256_pdf": "88b43da8b9b7a2085235c0d8c370ee7a420870211890773494c1166a128efe2b",
+      "bytes_pdf": 19504,
+      "paginas_docx": 1,
+      "paginas_pdf_medidas": 1,
+      "fondo_ultima_pagina_pt": 568.86,
+      "alto_pagina_pt": 841.92,
+      "margen_inferior_pt": 70.87,
+      "holgura_inferior_cm": 7.13,
+      "guiones_bajos_pdf": 264,
+      "lineas_relleno_completas": true,
+      "fragmentos_rotulo_partido": [],
+      "png": [
+        "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\instrumentos\\INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04\\_control_visual\\04_CONSENTIMIENTO_INFORMADO_v04_p001.png"
+      ]
+    }
+  ],
+  "advertencias": []
+}

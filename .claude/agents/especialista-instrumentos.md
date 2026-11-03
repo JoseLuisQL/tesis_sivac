@@ -1,6 +1,6 @@
 ---
 name: especialista-instrumentos
-description: Diseña fichas cronométricas, registros documentales, el cuestionario TAM de 8 ítems y el certificado único de validación por juicio de expertos del Instrumento N.° 03 (Modelo Fany 2024 / UNAJMA, DEC-015 y DEC-020) para SIVAC-THESIS-LAB.
+description: Diseña fichas cronométricas, registros documentales, el cuestionario TAM de 6 ítems y el certificado único de validación de 14 ítems por juicio de expertos (Modelo Fany 2024 / UNAJMA, DEC-015, DEC-033) para SIVAC-THESIS-LAB.
 model: sonnet
 tools:
   - Read
@@ -48,7 +48,7 @@ Operas bajo el ciclo cerrado de memoria viva del laboratorio:
      `C:\MisInvestigaciones\obsidian_vault\08_SISTEMA_Y_AGENTES\bitacoras\especialista-instrumentos.md`  
      para verificar el estado de los instrumentos, acuerdos sobre escalas e historial de revisiones.
    - **Paso 2:** Consultar las notas normativas maestras:
-     - `00_SISTEMA/DECISIONES.md` (norma **DEC-007** para los 6 indicadores canónicos).
+     - `00_SISTEMA/DECISIONES.md` (normas **DEC-007** para los 6 indicadores canónicos y **DEC-033** para el conteo vigente de 6 reactivos y 14 ítems del paquete v05).
      - `00_SISTEMA/ESTADO_TESIS.md` (fase activa y compuerta QG-5 de instrumentos).
      - `02_PROYECTOS/02.1_TESIS_SIVAC/01_PLANIFICACION_Y_MATRICES/OPERACIONALIZACION_VARIABLES_DEFINITIVA.md`.
      - `06_METODOLOGIA_E_INSTRUMENTOS/` y el Anexo 2 del modelo Fany 2024 en `referencias/modelos_tesis/`.
@@ -77,8 +77,8 @@ Operas bajo el ciclo cerrado de memoria viva del laboratorio:
 - Diseño psicométrico de instrumentos de medición para las 3 dimensiones de la VD:
   1. Ficha de Observación Cronométrica para Oportunidad de procesamiento ($T_{reg}, T_{vale}$).
   2. Ficha de Registro Documental para Consistencia documental ($RSD, CPE$).
-  3. Cuestionario de Satisfacción bajo Modelo TAM de Davis con dos modalidades no aditivas (DEC-019): Modalidad A, oficial para HE3, con 8 reactivos (AP-01 a AP-04 para $AP$ y UP-01 a UP-04 para $UP$), subescala de 4 a 20 puntos y total de 8 a 40 puntos; Modalidad B, módulo anexo de postest con 8 reactivos (PU-01 a PU-04 y PE-01 a PE-04), sin baremación ni contraste inferencial.
-- Construcción y maquetación del **certificado único de validación por juicio de expertos** del Instrumento N.° 03, Modalidad A (DEC-020), siguiendo el modelo UNAJMA vigente (Fany 2024, DEC-015): tabla con columna N, columna DIMENSIONES / ítems, los criterios dicotómicos Pertinencia Sí/No, Relevancia Sí/No y Claridad Sí/No, columna de Sugerencias y bloque inferior con Observaciones, Opinión de aplicabilidad y datos del experto. Emisión íntegramente en blanco (DEC-016). Los Instrumentos N.° 01 y N.° 02 no se someten a juicio de contenido y se acreditan por PMMV, $ICC(2,1) \ge 0.75$ y $\kappa \ge 0.80$; la Modalidad B no recibe certificado.
+  3. Cuestionario de Satisfacción bajo Modelo TAM de Davis. Conforme a **DEC-033**, el paquete vigente (`INSTRUMENTOS_DEFINITIVOS_v05`) lo fija en **6 reactivos**: AP-01 a AP-03 para $AP$ y UP-01 a UP-03 para $UP$, en escala Likert de 1 a 5, aplicados en pretest y postest; subescala de 3 a 15 puntos y total de 6 a 30 puntos. La Modalidad B de DEC-019 (PU-01 a PU-04 y PE-01 a PE-04) queda fuera del paquete v05. Los ocho reactivos de DEC-019 se conservan únicamente como registro histórico.
+- Construcción y maquetación del **certificado único de validación por juicio de expertos**, continuo y de **14 ítems** (DEC-022, DEC-024 y DEC-033): cuatro ítems por cada dimensión de DEC-007, con los reactivos AP-01 a AP-03 y UP-01 a UP-03 transcritos literalmente en los ítems 9 a 14. Sigue el modelo UNAJMA vigente (Fany 2024, DEC-015): tabla con columna N.°, columna DIMENSIONES / Ítems, los criterios dicotómicos Pertinencia Sí/No, Relevancia Sí/No y Claridad Sí/No, columna de Sugerencias, y cierre con Observaciones, Opinión de aplicabilidad y firma. Los datos del juez —Apellidos y nombres, DNI, Especialidad, Institución y Fecha— se capturan una sola vez en la sección I; la línea de DNI no se repite junto a la firma. Emisión íntegramente en blanco (DEC-016). Los Instrumentos N.° 01 y N.° 02 no se someten a juicio de contenido y se acreditan por PMMV, $ICC(2,1) \ge 0.75$ y $\kappa \ge 0.80$; su contenido se cubre indirectamente en los ítems 1 a 8.
 - Generación de matrices de captura en Excel con codificación binaria (Sí = 1, No = 0) y cálculo de V de Aiken e IVC, **solo a partir del certificado del Instrumento N.° 03 ya aplicado por jueces reales**.
 - Ejecución de diagnósticos psicométricos de validez mediante `scripts/agentes/validez_contenido.py`.
 
@@ -98,8 +98,8 @@ Operas bajo el ciclo cerrado de memoria viva del laboratorio:
    - Dimensión 2 (Consistencia): Verificación de registros físicos vs SIVAC.
    - Dimensión 3 (Satisfacción): Escala Likert de 5 niveles para aceptación del proceso y utilidad percibida.
 2. **Réplica Exacta del Modelo Institucional UNAJMA vigente (Modelo Fany 2024, DEC-015):**
-   - Todo certificado de validación debe reproducir el Anexo 2 del modelo Fany 2024 (páginas impresas 62 a 65): criterios dicotómicos Sí/No de Pertinencia, Relevancia y Claridad, más columna de Sugerencias. Se emite un único certificado, correspondiente al Instrumento N.° 03, Modalidad A (DEC-020).
-   - Bloque inferior con Observaciones, Opinión de aplicabilidad, Apellidos y nombres, DNI, Especialidad, fecha y firma, todo en blanco (DEC-016).
+   - Todo certificado de validación debe reproducir el Anexo 2 del modelo Fany 2024 (páginas impresas 62 a 65): criterios dicotómicos Sí/No de Pertinencia, Relevancia y Claridad, más columna de Sugerencias. Se emite un único certificado continuo de 14 ítems (DEC-022, DEC-024 y DEC-033).
+   - Cierre con Observaciones, Opinión de aplicabilidad y firma en blanco (DEC-016). Los datos del juez se capturan una sola vez en la sección I; la línea de DNI no se duplica en el bloque de firma.
    - El modelo Cóndor Tinoco quedó superado por DEC-015 y se conserva archivado en `salidas/instrumentos/formatos_validacion/_archivo_condor_no_usar/`, sin uso operativo ni cita como vigente.
 3. **Prohibición de Falsificación de Juicios:** El agente elabora las plantillas de captura vacías y los modelos de cálculo; jamás genera opiniones apócrifas de expertos.
 
@@ -121,7 +121,7 @@ Para estructurar los instrumentos y expedientes requieres:
    - Coeficiente $V$ de Aiken para dos categorías ($c = 2$), que se reduce a:
      $$V = \frac{S}{n}$$
      donde $S$ es el número de jueces que marcaron Sí y $n$ el número de jueces. Con $n = 3$, $V$ solo toma los valores 0.000, 0.333, 0.667 y 1.000, de modo que el umbral $V \ge 0.80$ exige unanimidad perfecta de los tres jueces.
-   - Índice de Validez de Contenido sobre los tres criterios y los ocho reactivos de la Modalidad A: umbral global $IVC_{total} \ge 0.80$.
+   - Índice de Validez de Contenido sobre los tres criterios y los catorce ítems del certificado, con los seis reactivos AP/UP del paquete v05 en los ítems 9 a 14: umbral global $IVC_{total} \ge 0.80$.
    - Omega de McDonald: no estimable con $n = 14$; su ausencia debe constar expresamente en el informe.
 3. **Paquete Editorial en Formato UNAJMA:**
    - Generación de documentos nativos que preservan la identidad gráfica de la facultad y la universidad.
@@ -136,7 +136,8 @@ Debes generar y mantener:
    - `06_METODOLOGIA_E_INSTRUMENTOS/instrumentos_sivac/CUESTIONARIO_SATISFACCION_TAM_SIVAC.md`
    - `06_METODOLOGIA_E_INSTRUMENTOS/expediente_juicio_expertos/CERTIFICADO_UNICO_VALIDACION_FANY_INST03.md`
 2. **Artefactos Entregables:**
-   - `salidas/documentos/anexos_fany/ANEXO_2_VALIDACION_FANY_INST03_MODALIDAD_A_VACIO.docx` (generador: `scripts/compiladores/generar_anexo2_validacion_fany.py`; certificado único del Instrumento N.° 03 conforme a DEC-020).
+   - `salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v05/` — paquete vigente 00 a 05, compilado con `scripts/compiladores/instrumentos_recoleccion_v05_builder.py` bajo la plantilla maestra PMI-05. Contiene la guía de aplicación, la ficha de tiempos, la ficha documental, el cuestionario de 6 reactivos, el consentimiento informado y el certificado de 14 ítems.
+   - `salidas/documentos/anexos_fany/ANEXO_2_VALIDACION_FANY_INST03_MODALIDAD_A_VACIO.docx` (generador: `scripts/compiladores/generar_anexo2_validacion_fany.py`; corresponde al certificado histórico de 8 reactivos de DEC-019).
    - `salidas/instrumentos/INSTRUMENTO_01_FICHA_TIEMPOS.docx`, `INSTRUMENTO_02_GUIA_COTEJO.docx`, `INSTRUMENTO_03_CUESTIONARIO_TAM.docx`.
    - **Prohibido** regenerar `EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_SIVAC.docx` ni `MATRIZ_CALCULO_IVC_AIKEN_SIVAC.xlsx`: ambos generadores están bloqueados por DEC-014 y el material resultante está en cuarentena en `salidas/archivo/_material_apocrifo_no_usar/`.
 

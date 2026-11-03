@@ -49,7 +49,7 @@ Centro: centro de acopio donde se custodian los documentos auditados. Participan
 | Cantidad: dosis o frascos coinciden con el conteo físico | | | | | | |
 | Centro: código y denominación coinciden con el documento que autoriza | | | | | | |
 | Responsable: nombre, cargo y firma o sello de quien entrega y de quien recibe, legibles | | | | | | |
-| Saldo: saldo final = saldo inicial + ingresos − salidas, sin diferencia | | | | | | |
+| Saldo: el saldo final coincide con el saldo inicial más los ingresos menos las salidas, sin diferencia | | | | | | |
 | Correlatividad: fecha y hora son coherentes con el documento que autoriza y con el asiento previo | | | | | | |
 | ¿Conforme? | | | | | | |
 

@@ -12,14 +12,18 @@ fecha: 2026-11-02
 
 Este diccionario define la estructura tabular con la que se registran las respuestas de los tres instrumentos de recolección: la Ficha de tiempos, la Ficha de auditoría documental y el Cuestionario de satisfacción. Su finalidad es asegurar que la captura, la validación y el análisis posterior utilicen los mismos nombres, tipos y reglas de ausencia. El diccionario no contiene datos: todas las celdas de captura se emiten vacías.
 
+**Equivalencia terminológica.** registro documental equivale al documento de movimiento auditado; despacho equivale a la entrega efectuada al establecimiento destino. Las fórmulas se mantienen: RSD usa documentos y CPE usa despachos.
+
 ## 2. Reglas de codificación
 
 1. Una celda vacía significa que el dato no se realizó o no es aplicable. No se usan 0 ni 99 como códigos de ausencia.
 2. No se imputan valores, promedios, valores de la fase opuesta ni datos supuestos.
 3. RSD y CPE solo se calculan cuando el denominador correspondiente es mayor que cero.
 4. AP y UP solo se calculan cuando los cuatro reactivos de la subescala están completos.
-5. El valor 0 solo se admite cuando la medición efectiva sea cero; el valor 99 no se admite en ninguna variable.
+5. El valor 0 solo se admite en las variables de conteo cuando la medición efectiva sea cero; el valor 99 no se admite en ninguna variable.
 6. Las fechas se registran en formato AAAA-MM-DD y los minutos en decimales con dos cifras.
+7. Un tiempo válido igual o menor que cero no se registra; la tarea se considera no válida.
+8. Conversión de hora a minutos decimales: minutos = horas × 60 + minutos + segundos ÷ 60, con dos decimales.
 
 ## 3. Variables
 
@@ -29,14 +33,14 @@ Este diccionario define la estructura tabular con la que se registran las respue
 | centro | Código del centro de acopio | Texto | Código | C01 a C13 | Hoja de control de aplicación | Identifica el centro donde se aplica el instrumento. |
 | fase | Momento de aplicación | Entero | Código | 1 = pretest; 2 = postest | Hoja de control de aplicación | Permite separar las dos mediciones del mismo participante. |
 | fecha | Fecha de aplicación | Fecha | AAAA-MM-DD | Fecha calendario válida; vacía si no se aplicó | Ficha 1 y Ficha 2 | No se completa si la medición no se realizó. |
-| reg_01 | Tiempo de registro de REG-01 | Decimal | Minutos | Mayor o igual que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea REG-01, ingreso de lote. |
-| reg_02 | Tiempo de registro de REG-02 | Decimal | Minutos | Mayor o igual que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea REG-02, salida o transferencia a microred. |
-| reg_03 | Tiempo de registro de REG-03 | Decimal | Minutos | Mayor o igual que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea REG-03, redistribución entre centros de acopio. |
-| vale_01 | Tiempo de emisión de VALE-01 | Decimal | Minutos | Mayor o igual que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea VALE-01, vale de salida regular. |
-| vale_02 | Tiempo de emisión de VALE-02 | Decimal | Minutos | Mayor o igual que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea VALE-02, reposición urgente por contingencia. |
-| vale_03 | Tiempo de emisión de VALE-03 | Decimal | Minutos | Mayor o igual que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea VALE-03, transferencia entre centros de acopio. |
-| t_reg | Tiempo medio de registro | Decimal | Minutos | Mayor o igual que 0; vacía si falta alguna observación | Derivada | Requiere reg_01, reg_02 y reg_03. |
-| t_vale | Tiempo medio de emisión del vale | Decimal | Minutos | Mayor o igual que 0; vacía si falta alguna observación | Derivada | Requiere vale_01, vale_02 y vale_03. |
+| reg_01 | Tiempo de registro de REG-01 | Decimal | Minutos | Mayor que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea REG-01, ingreso de lote. |
+| reg_02 | Tiempo de registro de REG-02 | Decimal | Minutos | Mayor que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea REG-02, salida o transferencia a microred. |
+| reg_03 | Tiempo de registro de REG-03 | Decimal | Minutos | Mayor que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea REG-03, redistribución entre centros de acopio. |
+| vale_01 | Tiempo de emisión de VALE-01 | Decimal | Minutos | Mayor que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea VALE-01, vale de salida regular. |
+| vale_02 | Tiempo de emisión de VALE-02 | Decimal | Minutos | Mayor que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea VALE-02, reposición urgente por contingencia. |
+| vale_03 | Tiempo de emisión de VALE-03 | Decimal | Minutos | Mayor que 0; vacía si no se realizó | Ficha 1 (tiempos) | Tiempo válido de la tarea VALE-03, transferencia entre centros de acopio. |
+| t_reg | Tiempo medio de registro | Decimal | Minutos | Mayor que 0; vacía si falta alguna observación | Derivada | Requiere reg_01, reg_02 y reg_03. |
+| t_vale | Tiempo medio de emisión del vale | Decimal | Minutos | Mayor que 0; vacía si falta alguna observación | Derivada | Requiere vale_01, vale_02 y vale_03. |
 | doc_auditados | Documentos auditados | Entero | Conteo | Mayor o igual que 0; vacía si no se auditó | Ficha 2 (auditoría) | No incluye documentos no ubicados. |
 | doc_conformes | Documentos conformes | Entero | Conteo | De 0 a doc_auditados; vacía si no se auditó | Ficha 2 (auditoría) | Solo cuenta documentos con los ocho criterios en Sí. |
 | rsd | Registros sin discrepancias | Decimal | Porcentaje | De 0 a 100; vacía si doc_auditados es 0 | Derivada | Se informa como porcentaje. |

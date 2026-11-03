@@ -99,15 +99,15 @@ def generar_boxplot_pareado(pre, post, nombre_indicador, unidad, ruta_salida):
 ```
 
 ### 2.2. Gráfico de Barras Divergentes para Escala Likert (Modelo TAM)
-Ideal para los 8 reactivos de la Modalidad A del Cuestionario de Satisfacción del Usuario: cuatro de Aceptación del Proceso (AP-01 a AP-04) y cuatro de Utilidad Percibida (UP-01 a UP-04), conforme a DEC-019.
+Ideal para los 6 reactivos vigentes del Cuestionario de Satisfacción del Usuario (DEC-033): tres de Aceptación del Proceso (AP-01 a AP-03) y tres de Utilidad Percibida (UP-01 a UP-03).
 
 **Rangos de eje obligatorios en las figuras de la Dimensión 3:**
 
 | Figura | Eje | Rango | Marcas |
 |---|---|---|---|
-| Distribución por reactivo | Eje de categorías | 8 reactivos (AP-01 a AP-04, UP-01 a UP-04) | Escala Likert de 1 a 5 |
-| Puntaje por subescala (AP o UP) | Eje de valores | 4 a 20 puntos | 4, 8, 12, 16, 20 |
-| Puntaje total de la Modalidad A | Eje de valores | 8 a 40 puntos | 8, 16, 24, 32, 40 |
+| Distribución por reactivo | Eje de categorías | 6 reactivos (AP-01 a AP-03, UP-01 a UP-03) | Escala Likert de 1 a 5 |
+| Puntaje por subescala (AP o UP) | Eje de valores | 3 a 15 puntos | 3, 6, 9, 12, 15 |
+| Puntaje total del cuestionario | Eje de valores | 6 a 30 puntos | 6, 12, 18, 24, 30 |
 
 - El eje de la escala Likert se fija en [1, 5] con marcas enteras; no se extrapola fuera de ese intervalo.
 - Los gráficos de barras divergentes se centran en el punto neutro 3 y rotulan ambos extremos con las anclas verbales de la escala.
