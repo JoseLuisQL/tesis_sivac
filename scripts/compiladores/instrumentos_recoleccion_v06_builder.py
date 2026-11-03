@@ -39,6 +39,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import json
 import re
 import shutil
@@ -93,7 +94,7 @@ BANDA_ANCHOS_CM = (2.4, 10.7, 2.4)
 ALTO_CAPTURA = 1.0
 ALTO_CAPTURA_HOLGADO = 1.05
 
-INTERLINEA = {"00": 11.5, "01": 12.0, "02": 12.0, "03": 12.0,
+INTERLINEA = {"00": 11.0, "01": 12.0, "02": 12.0, "03": 12.0,
               "04": 12.0, "05": 10.5}
 
 ALINEACION = {
@@ -105,7 +106,7 @@ ALINEACION = {
 
 _TOKEN = re.compile(r"(\*\*.+?\*\*)")
 _MARCA_CAJA = re.compile(r"(☐)")
-_CODIGOS_PROHIBIDOS = ("AP-0", "UP-0", "REG-", "VALE-", "P-0", "C-0", "OP-")
+_CODIGOS_PROHIBIDOS = ("AP-0", "UP-0", "REG-", "VALE-", "OP-")
 
 _ESTADO: Dict[str, Any] = {"hdr": [], "capturas": [], "capturas_libres": []}
 
@@ -765,8 +766,10 @@ def leyenda_escala(doc, linea: float = 12.0) -> None:
                    apa=True, margen_tb=MARGEN_TB)
 
 
-def banda_cierre_documental(doc, linea: float = 12.0) -> None:
+def banda_cierre_documental(doc, linea: float = 12.0,
+                             antes: float = 10.0) -> None:
     """Cierre IV-V en una sola fila de dos columnas, sin líneas verticales."""
+    par(doc, "", size=2, line=max(antes, 2.0), before=0, after=0)
     t = doc.add_table(rows=1, cols=2)
     t.style = None
     t.alignment = WD_TABLE_ALIGNMENT.LEFT
@@ -778,7 +781,7 @@ def banda_cierre_documental(doc, linea: float = 12.0) -> None:
     _bordes_horizontales(t, exterior=8, interior=4, apa=False, header_rows=0)
 
     fila = t.rows[0]
-    fila.height = Cm(1.70)
+    fila.height = Cm(2.25)
     fila.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
     dq._preparar_tr(fila._tr, cant_split=True, tbl_header=False)
 
@@ -793,13 +796,6 @@ def banda_cierre_documental(doc, linea: float = 12.0) -> None:
     pf.space_after = Pt(0)
     pf.line_spacing = Pt(min(linea, 9.5))
     add_runs(p, "IV. Observaciones", size=SP_TABLA, bold=True)
-
-    caja = izq.add_paragraph()
-    pf = caja.paragraph_format
-    pf.space_before = Pt(0)
-    pf.space_after = Pt(0)
-    pf.line_spacing = Cm(1.0)
-    _borde_parrafo(caja, lados=("bottom",))
 
     p = _reiniciar_celda(der)
     pf = p.paragraph_format
@@ -816,7 +812,7 @@ def banda_cierre_documental(doc, linea: float = 12.0) -> None:
         pf = p.paragraph_format
         pf.space_before = Pt(0)
         pf.space_after = Pt(0)
-        pf.line_spacing = Cm(0.45)
+        pf.line_spacing = Cm(0.52)
         add_runs(p, etiqueta + " ", size=SP_TABLA, bold=True)
         add_runs(p, valor, size=SP_TABLA, bold=False)
         _borde_parrafo(p, lados=("bottom",))
@@ -826,90 +822,103 @@ def banda_cierre_documental(doc, linea: float = 12.0) -> None:
 # Documentos
 # ---------------------------------------------------------------------------
 
+def linea_identificacion(doc, texto: str, linea: float = 10.5,
+                         salto_pagina: bool = False) -> None:
+    """Línea de identificación del instrumento, impresa bajo el título."""
+    p = par(doc, texto, size=SP_TABLA, line=linea, before=0, after=0,
+            italic=False)
+    if salto_pagina:
+        p.paragraph_format.page_break_before = True
+
+
 def doc_00(doc) -> None:
-    """Guía de aplicación: índice, secuencia de campo y reglas operativas."""
+    """Guía de aplicación: instrumentos, instantes y reglas operativas."""
     li = INTERLINEA["00"]
     titulo(doc, "Guía de aplicación de los instrumentos", line=li)
+    linea_identificacion(doc, "Instrumento 00 · Guía de aplicación · "
+                              "Versión v06 · Ejemplar del investigador", li)
 
-    rotulo(doc, "Instrumentos", line=li, before=6)
+    rotulo(doc, "Instrumentos", line=li, before=5)
     tabla_registro(doc, [
         ("Instrumento", "Qué mide", "Quién lo llena", "Cuándo"),
         ("01. Ficha de tiempos",
-         "Tiempo de registro del movimiento y tiempo de emisión del "
-         "comprobante o vale, en minutos",
+         "T_reg y T_vale, en minutos",
          "Investigador, por observación directa", "Pretest y postest"),
         ("02. Ficha documental",
-         "Porcentaje de documentos sin discrepancias y de despachos conformes",
-         "Investigador, por revisión documental",
-         "Pretest y postest, sobre treinta días por momento"),
-        ("03. Cuestionario de satisfacción",
-         "Aceptación del proceso y utilidad percibida, en escala de 1 a 5",
+         "RSD y CPE, en porcentaje",
+         "Investigador, por revisión documental", "Pretest y postest"),
+        ("03. Cuestionario",
+         "AP y UP, escala de 1 a 5",
          "Trabajador, sin nombre", "Al final de cada momento"),
-        ("04. Consentimiento informado",
-         "Aceptación voluntaria de participar",
-         "Trabajador e investigador", "Antes de la primera medición"),
-        ("05. Certificado de validación",
-         "Validez de contenido de los ítems",
-         "Tres jueces expertos", "Antes del trabajo de campo"),
-    ], (3.2, 5.8, 3.0, 3.5), header_rows=1, linea=li,
+        ("04. Consentimiento",
+         "Aceptación voluntaria", "Trabajador e investigador",
+         "Antes de la primera medición"),
+        ("05. Certificado",
+         "Validez de contenido", "Tres jueces expertos",
+         "Antes del trabajo de campo"),
+    ], (3.1, 4.0, 4.6, 3.8), header_rows=1, linea=li,
         align_defecto="left", flex_col=1, rejilla=False, apa=True)
 
-    rotulo(doc, "Secuencia de aplicación en campo", line=li)
+    rotulo(doc, "Los cuatro instantes y las dos fórmulas", line=li)
     tabla_registro(doc, [
-        ("Paso", "Momento", "Documento", "Quién y copias"),
-        ("1", "Validación previa, antes del trabajo de campo",
-         "05. Certificado de validación",
-         "Tres jueces; un ejemplar por juez"),
-        ("2", "Antes de la primera medición",
-         "04. Consentimiento informado",
-         "Participante e investigador; dos ejemplares por participante"),
-        ("3", "Pretest",
-         "01. Ficha de tiempos, 02. Ficha documental y 03. Cuestionario, "
-         "en ese orden",
-         "Una hoja de cada instrumento por participante"),
-        ("4", "Intervención", "Sistema SIVAC", "Sin formulario"),
-        ("5", "Postest",
-         "01, 02 y 03, en el mismo orden del pretest",
-         "Una hoja de cada instrumento por participante"),
-    ], (1.2, 2.9, 6.4, 5.0), header_rows=1, linea=li,
-        align_defecto="left", flex_col=2, rejilla=False, apa=True)
-    par(doc, "Se imprime una hoja de la ficha de tiempos, una de la ficha "
-             "documental y una del cuestionario por participante y por "
-             "momento. El consentimiento se imprime por duplicado una sola "
-             "vez por participante. El certificado de validación es de un "
-             "solo uso por evaluador: se firma antes del trabajo de campo y "
-             "no se entrega a los participantes.", align="both", line=li,
-        before=10, after=0)
+        ("Instante", "Definición"),
+        ("Inicio", "El trabajador dispone del documento fuente completo y "
+                   "comienza el registro del movimiento."),
+        ("Corte de registro", "El movimiento queda registrado y guardado."),
+        ("Solicitud de despacho", "El establecimiento destino presenta la "
+                                  "solicitud del vale."),
+        ("Emisión", "El comprobante o vale está emitido y disponible."),
+        ("Fórmulas", "**T_reg = corte de registro − inicio.**  "
+                     "**T_vale = emisión − solicitud de despacho.** Son las "
+                     "únicas definiciones; no se usa ninguna otra."),
+    ], (3.1, 12.4), header_rows=1, linea=li, align_defecto="left",
+        flex_col=1, rejilla=False, apa=True)
 
     rotulo(doc, "Reglas operativas", line=li)
     tabla_registro(doc, [
         ("Regla", "Aplicación"),
-        ("1. Cronometraje",
-         "Cronómetro; horas en hh:mm:ss; minutos con dos decimales; tres "
-         "mediciones por operación, promediadas fuera del formulario; un "
-         "tiempo cero o negativo se anula y se repite."),
-        ("2. Documento conforme",
-         "Cumple los ocho criterios de la ficha documental; un solo criterio "
-         "incumplido lo hace no conforme."),
-        ("3. Despacho conforme",
-         "La cantidad entregada iguala la programada y existe el documento "
-         "que lo autoriza; cualquier diferencia lo hace no conforme."),
-        ("4. Porcentajes",
-         "Documentos conformes entre documentos revisados, por cien. "
-         "Despachos conformes entre despachos revisados, por cien. No se "
+        ("1. Réplicas",
+         "Tres mediciones válidas por indicador y momento. El valor del "
+         "trabajador es la mediana de las tres, calculada fuera del "
+         "formulario. Horas en hh:mm:ss; minutos con dos decimales."),
+        ("2. Interrupción externa",
+         "Se anota en la columna correspondiente y la réplica se repite; no "
+         "se descuenta del tiempo."),
+        ("3. Documento conforme",
+         "Cumple los ocho criterios de la ficha 02. Un solo No anula el "
+         "documento."),
+        ("4. Despacho conforme",
+         "La cantidad entregada iguala la programada en la misma unidad. "
+         "Toda diferencia se anota como observación y no altera la "
+         "conformidad."),
+        ("5. Hoja de continuación",
+         "Si hay más asientos que filas, se usa la hoja siguiente con la "
+         "numeración corrida y «Hoja __ de __»."),
+        ("6. Doble codificación",
+         "Un segundo observador, ciego, codifica el 20 % de la muestra: ocho "
+         "documentos y cinco despachos por trabajador. Se anota su nombre en "
+         "la ficha y se calcula kappa de Cohen."),
+        ("7. Trabajador ausente",
+         "Si no está en el postest, se conserva en el padrón, se registra «No "
+         "aplica — ausente» y el caso se excluye por pares. No se imputa."),
+        ("8. Dos centros",
+         "Un trabajador que cubre dos centros recibe un solo código; el "
+         "centro se anota por observación y se reporta el principal."),
+        ("9. Operación no ocurrida",
+         "Se registra la siguiente operación del mismo bloque y se anota; no "
+         "se deja la fila vacía ni se inventa el dato."),
+        ("10. Numeración",
+         "TRAB-01 a TRAB-14, igual en pretest y postest. La lista de nombres "
+         "se guarda aparte y se destruye al cerrar el estudio."),
+        ("11. Porcentajes",
+         "Conformes entre revisados, por cien, en cada indicador. No se "
          "compensan entre sí."),
-        ("5. Numeración del trabajador",
-         "Del 1 al 14 según la lista del personal de inmunizaciones; el mismo "
-         "número en pretest y postest; la lista de nombres se guarda aparte y "
-         "se destruye al concluir el informe."),
-        ("6. Menos de cinco documentos",
-         "Se revisan todos los disponibles y se anota el número real en la "
-         "línea de conteo."),
-        ("7. Operación no ocurrida",
-         "Se registra otra operación del mismo bloque y se anota en "
-         "Observación; no se deja la fila vacía."),
-    ], (4.2, 11.3), header_rows=1, linea=li, align_defecto="left",
+    ], (3.6, 11.9), header_rows=1, linea=li, align_defecto="left",
         flex_col=1, rejilla=False, apa=True)
+
+    par(doc, "Se imprime una hoja de 01, 02 y 03 por trabajador y momento, "
+             "más las de continuación. El consentimiento va por duplicado.",
+        align="both", size=SP_TABLA, line=li, before=8, after=0)
     parrafo_final_compacto(doc)
 
 
@@ -917,173 +926,174 @@ def doc_01(doc) -> None:
     """Ficha de tiempos: Dimensión 1, oportunidad de procesamiento."""
     li = INTERLINEA["01"]
     titulo(doc, "Ficha de tiempos", line=li)
-
-    ficha_tecnica_cuatro(doc, [
-        ("Variable", "Gestión de movimientos mensuales de vacunas",
-         "Dimensión", "Oportunidad de procesamiento"),
-        ("Indicador", "Tiempo de registro (T_reg) y tiempo de emisión del "
-                      "comprobante o vale (T_vale), en minutos", "", ""),
-        ("Aplicación", "Pretest y postest; observación directa del "
-                       "investigador", "", ""),
-    ], linea=li, alturas_cm=(1.0, 1.0, 0.50),
-        merges=((1, 1, 1, 3), (2, 1, 2, 3)))
+    linea_identificacion(doc, "Instrumento 01 · Ficha de tiempos · "
+                              "Versión v06 · Hoja 1 de 1", li)
 
     seccion_romana(doc, "I", "Datos generales", lambda: tabla_registro(doc, [
         ("N.° de trabajador", "", "Centro de salud", ""),
         ("Fecha", "____ / ____ / ________", "Momento",
          "☐ Antes de SIVAC      ☐ Con SIVAC"),
-    ], (3.4, 3.4, 2.6, 6.1), header_rows=0, linea=li,
+    ], (3.3, 3.5, 2.5, 6.2), header_rows=0, linea=li,
         align_defecto="left", flex_col=3,
         negritas=((0, 0), (0, 2), (1, 0), (1, 2)),
         alturas_cm=(ALTO_CAPTURA, ALTO_CAPTURA), regla_altura="atLeast",
-        captura=True), linea=li, before=4, after=2)
+        captura=True), linea=li, before=5, after=2)
 
     seccion_romana(doc, "II", "Instrucciones", lambda: instrucciones(doc, [
-        "Use cronómetro y anote las horas en hh:mm:ss. Exprese el tiempo en "
-        "minutos con dos decimales; si resulta cero o negativo, anule la "
-        "medición y repítala. Ante una interrupción externa, anótela en "
-        "Observación y repita la medición.",
-    ], linea=li), linea=li, before=4, after=2)
+        "T_reg = hora de corte de registro − hora de inicio. T_vale = hora de "
+        "emisión − hora de solicitud de despacho. No hay otra definición.",
+        "Anote tres mediciones válidas por indicador. El valor del trabajador "
+        "es la mediana de las tres y se calcula fuera de este formulario. Si "
+        "hay interrupción externa (llamada, atención a usuarios no "
+        "relacionada, falla de energía, espera de terceros), anótela y repita "
+        "la medición: no se descuenta del tiempo.",
+    ], linea=li), linea=li, before=5, after=2)
 
-    cabecera_bloques = ("N.°", "Registro observado", "Hora de inicio",
-                        "Hora de fin", "Tiempo (min)", "Observación")
-    filas_bloque = [cabecera_bloques] + [("1", "", "", "", "", ""),
-                                         ("2", "", "", "", "", ""),
-                                         ("3", "", "", "", "", "")]
-    alturas_bloque = (0.52, ALTO_CAPTURA, ALTO_CAPTURA, ALTO_CAPTURA)
+    cab_a = ("N.°", "Escenario", "Inicio", "Corte de registro",
+             "T_reg (min)", "Interrupción externa")
+    filas_a = [cab_a,
+               ("1", "Registro de ingreso", "", "", "", ""),
+               ("2", "Registro de salida", "", "", "", ""),
+               ("3", "Registro de transferencia", "", "", "", "")]
+    cab_b = ("N.°", "Escenario", "Solicitud de despacho", "Emisión",
+             "T_vale (min)", "Interrupción externa")
+    filas_b = [cab_b,
+               ("1", "Vale regular", "", "", "", ""),
+               ("2", "Vale por reposición", "", "", "", ""),
+               ("3", "Vale de transferencia", "", "", "", "")]
+    anchos = (0.8, 3.9, 2.5, 2.8, 2.5, 3.0)
 
     def contenido_tiempos() -> None:
-        par(doc, "Bloque A. Tiempo de registro del movimiento de vacunas: un "
-                 "ingreso, una salida y una transferencia.", bold=True,
-            line=li, before=6, after=3, keep=True, keep_lines=True)
-        tabla_registro(doc, filas_bloque, (0.8, 5.0, 2.4, 2.4, 2.4, 2.5),
-                       header_rows=1, linea=li, align_defecto="center",
-                       flex_col=1, alturas_cm=alturas_bloque,
+        par(doc, "**Bloque A. T_reg** — tiempo de registro del movimiento: un "
+                 "ingreso, una salida y una transferencia.", line=li,
+            before=4, after=2, keep=True, keep_lines=True)
+        tabla_registro(doc, filas_a, anchos, header_rows=1, linea=li,
+                       align_defecto="center", flex_col=1,
+                       alturas_cm=(0.85, 1.0, 1.0, 1.0),
                        regla_altura="atLeast", captura=True)
-        par(doc, "Bloque B. Tiempo de emisión del comprobante de salida o "
-                 "vale: un vale regular, una reposición urgente y una "
-                 "transferencia.", bold=True, line=li, before=6, after=3,
-            keep=True, keep_lines=True)
-        tabla_registro(doc, filas_bloque, (0.8, 5.0, 2.4, 2.4, 2.4, 2.5),
-                       header_rows=1, linea=li, align_defecto="center",
-                       flex_col=1, alturas_cm=alturas_bloque,
+        par(doc, "**Bloque B. T_vale** — tiempo de emisión del comprobante o "
+                 "vale: uno regular, una reposición urgente y una "
+                 "transferencia.", line=li, before=8, after=2, keep=True,
+            keep_lines=True)
+        tabla_registro(doc, filas_b, anchos, header_rows=1, linea=li,
+                       align_defecto="center", flex_col=1,
+                       alturas_cm=(0.85, 1.0, 1.0, 1.0),
                        regla_altura="atLeast", captura=True)
 
     seccion_romana(doc, "III", "Contenido", contenido_tiempos, linea=li,
-                   before=4, after=2)
+                   before=5, after=2)
 
     seccion_romana(doc, "IV", "Observaciones", lambda: tabla_registro(
         doc, [("",), ("",)], (15.5,), header_rows=0, linea=li,
         align_defecto="left", flex_col=0,
-        alturas_cm=(ALTO_CAPTURA, ALTO_CAPTURA), regla_altura="atLeast",
-        captura=True, margen_tb=MARGEN_TB), linea=li, before=4, after=2)
+        alturas_cm=(1.0, 1.0), regla_altura="atLeast",
+        captura=True, margen_tb=MARGEN_TB), linea=li, before=5, after=2)
 
     seccion_romana(doc, "V", "Responsable", lambda: tabla_registro(doc, [
-        ("Nombre del observador", "_" * 24, "Fecha", "____ / ____ / ________"),
-        ("Firma", "_" * 46, "", ""),
-    ], (4.0, 5.0, 1.6, 4.9), header_rows=0, linea=li,
+        ("Nombre del observador", "_" * 22, "Fecha", "____ / ____ / ________"),
+        ("Firma", "_" * 44, "", ""),
+    ], (4.1, 4.9, 1.6, 4.9), header_rows=0, linea=li,
         align_defecto="left", flex_col=1,
         negritas=((0, 0), (0, 2), (1, 0)),
-        alturas_cm=(ALTO_CAPTURA, ALTO_CAPTURA), regla_altura="atLeast",
-        captura=True, merges=((1, 1, 1, 3),)), linea=li, before=4, after=2)
+        alturas_cm=(1.0, 1.0), regla_altura="atLeast",
+        captura=True, merges=((1, 1, 1, 3),)), linea=li, before=5, after=2)
     parrafo_final_compacto(doc)
+
+
 def doc_02(doc) -> None:
     """Ficha documental: Dimensión 2, consistencia documental."""
     li = INTERLINEA["02"]
     lt = 10.5                     # interlineado exacto de las tablas compactas
     mt = MARGEN_TB
     titulo(doc, "Ficha documental", line=li)
+    linea_identificacion(doc, "Instrumento 02 · Ficha documental · "
+                              "Versión v06 · Hoja ____ de ____", li)
 
-    def ficha() -> None:
-        rotulo(doc, "Ficha técnica", line=lt, before=2.0)
+    seccion_romana(doc, "I", "Datos generales", lambda: (
         tabla_registro(doc, [
-            ("Variable", "Gestión de movimientos mensuales de vacunas",
-             "Dimensión", "Consistencia documental"),
-            ("Indicador", "Registros sin discrepancias (RSD) y concordancia "
-                          "entre lo programado y lo entregado (CPE), en "
-                          "porcentaje", "", ""),
-            ("Aplicación", "Pretest y postest; revisión documental por el "
-                           "investigador", "", ""),
-        ], (3.6, 4.4, 3.0, 4.5), header_rows=0, linea=lt,
+            ("N.° de trabajador", "", "Centro de salud", ""),
+            ("Fecha", "____/____/______", "Momento",
+             "☐ Antes del SIVAC   ☐ Con SIVAC"),
+        ], (3.9, 3.4, 2.9, 5.3), header_rows=0, linea=lt,
             align_defecto="left", flex_col=3,
-            negritas=((0, 0), (0, 2), (1, 0), (2, 0)),
-            alturas_cm=(0.72, 0.90, 0.45), regla_altura="atLeast",
-            merges=((1, 1, 1, 3), (2, 1, 2, 3)), margen_tb=mt)
+            negritas=((0, 0), (0, 2), (1, 0), (1, 2)),
+            alturas_cm=(0.6, 0.6), regla_altura="atLeast",
+            captura=True, libre=True, margen_tb=mt),
+        par(doc, "Periodo revisado: del ____ / ____ / ________ al "
+                 "____ / ____ / ________", size=SP_TABLA, line=lt,
+            before=3, after=0),
+    ), linea=li, before=4, after=2)
 
-    ficha()
+    seccion_romana(doc, "II", "Instrucciones", lambda: par(
+        doc, "Un renglón por asiento; marque Sí o No en los ocho criterios: "
+             "1 biológico (nombre y presentación); 2 lote; 3 vencimiento (mes "
+             "y año); 4 cantidad; 5 establecimiento; 6 responsable y firmas; "
+             "7 saldo aritmético (inicial + ingresos − salidas); 8 "
+             "correlatividad temporal con los asientos contiguos. **Un solo No "
+             "anula el documento.** El Bloque B (hoja 2) registra los "
+             "despachos: es conforme solo si lo entregado iguala lo programado "
+             "en la misma unidad; toda diferencia es una observación.",
+        align="both",
+        size=SP_TABLA, line=lt, before=2, after=0), linea=li, before=4,
+        after=2)
 
-    seccion_romana(doc, "I", "Datos generales", lambda: tabla_registro(doc, [
-        ("N.° de trabajador", "", "Centro de salud", ""),
-        ("Fecha", "____ / ____ / ________", "Momento",
-         "☐ Antes de SIVAC\n☐ Con SIVAC"),
-        ("Periodo revisado",
-         "del ____ / ____ / ________ al ____ / ____ / ________", "", ""),
-    ], (4.0, 3.75, 4.0, 3.75), header_rows=0, linea=lt,
-        align_defecto="left", flex_col=3,
-        negritas=((0, 0), (0, 2), (1, 0), (1, 2), (2, 0)),
-        alturas_cm=(0.58, 0.92, 0.58), regla_altura="atLeast",
-        captura=True, libre=True, merges=((2, 1, 2, 3),),
-        margen_tb=mt), linea=li, before=3, after=2)
+    cab_a = ("N.°", "Fecha", "Tipo de doc.", "N.° de doc.", "Lote",
+             "1", "2", "3", "4", "5", "6", "7", "8", "Conf.")
+    filas_a = [cab_a] + [(str(n), "", "", "", "", "", "", "", "", "", "",
+                          "", "", "") for n in range(1, 41)]
 
-    seccion_romana(doc, "II", "Instrucciones", lambda: instrucciones(doc, [
-        "Marque Sí o No en cada casilla; un solo No hace no conforme el "
-        "documento. Revise los cinco primeros documentos del periodo, en "
-        "orden de fecha.",
-    ], linea=li), linea=li, before=3, after=2)
+    cab_b = ("N.°", "Fecha", "Establecimiento destino", "Biológico",
+             "Prog.", "Entr.", "Dif.", "Observación", "Conforme")
+    filas_b = [cab_b] + [(str(n), "", "", "", "", "", "", "", "")
+                         for n in range(1, 26)]
 
-    criterios = [
-        "Biológico (nombre y presentación)",
-        "Lote (número rotulado)",
-        "Vencimiento (mes y año)",
-        "Cantidad (dosis o frascos)",
-        "Centro (código y nombre)",
-        "Responsable y firmas (entrega y recepción)",
-        "Saldo (inicial, ingresos y salidas)",
-        "Correlatividad (fecha y hora)",
-        "¿Conforme?",
-    ]
-    filas_documentos = [("Criterio", "Documento\n1", "Documento\n2",
-                         "Documento\n3", "Documento\n4", "Documento\n5")]
-    filas_documentos += [(criterio, "", "", "", "", "") for criterio in criterios]
-    alturas_documentos = [0.44] * len(filas_documentos)
-    alturas_documentos[0] = 0.78      # cabecera en dos líneas
-    alturas_documentos[1] = 0.44      # «Biológico (…)»: una línea con 5.8 cm
-    alturas_documentos[6] = 0.80      # «Responsable y firmas (…)»
-
-    filas_despachos = [("N.°", "Fecha", "Establecimiento\ndestino",
-                        "Programado", "Entregado", "Diferencia",
-                        "Documento que\nautoriza", "¿Conforme?")]
-    filas_despachos += [(str(n), "", "", "", "", "", "", "")
-                        for n in range(1, 11)]
-    alturas_despachos = [0.80] + [0.44] * 10
-
-    def contenido_documental() -> None:
-        par(doc, "Bloque A. Documentos sin discrepancias: marque Sí o No por "
-                 "criterio en cada documento.", bold=True,
-            line=li, before=3, after=2, keep=True, keep_lines=True)
-        tabla_registro(doc, filas_documentos,
-                       (5.8, 1.94, 1.94, 1.94, 1.94, 1.94),
-                       header_rows=1, linea=lt, align_defecto="center",
-                       flex_col=0, negritas=((r, 0) for r in range(1, 10)),
-                       alturas_cm=alturas_documentos, captura=True,
-                       margen_tb=mt)
-        par(doc, "Bloque B. Despachos: cantidad programada frente a entregada.",
-            bold=True, line=li, before=3, after=2, keep=True,
+    def bloque_a() -> None:
+        par(doc, "**III. Bloque A. Documentos auditados (40 por hoja).**",
+            size=SP_TABLA, line=lt, before=2, after=2, keep=True,
             keep_lines=True)
-        tabla_registro(doc, filas_despachos,
-                       (0.8, 1.9, 2.6, 2.1, 1.8, 1.8, 2.5, 2.0),
+        tabla_registro(doc, filas_a,
+                       (0.8, 1.7, 1.85, 1.95, 1.7, 0.75, 0.75, 0.75, 0.75,
+                        0.75, 0.75, 0.75, 0.75, 1.3),
+                       header_rows=1, linea=10.0, align_defecto="center",
+                       flex_col=2,
+                       alturas_cm=[0.70] + [0.42] * 40,
+                       regla_altura="atLeast", captura=True, margen_tb=14)
+
+    bloque_a()
+
+    linea_identificacion(doc, "Instrumento 02 · Ficha documental · "
+                              "Versión v06 · Hoja ____ de ____", li,
+                         salto_pagina=True)
+    par(doc, "N.°: ______   Centro: __________   Momento: ☐ Antes de SIVAC "
+             "☐ Con SIVAC   Fecha: __/__/____", size=SP_TABLA, line=lt,
+        before=4, after=0)
+
+    def bloque_b() -> None:
+        par(doc, "**III (continuación). Bloque B. Despachos auditados (25 "
+                 "por hoja).** Prog. = cantidad programada; Entr. = cantidad "
+                 "entregada; Dif. = entregado − programado, en la misma unidad "
+                 "(dosis o frascos). El documento de ajuste se anota como "
+                 "observación.", size=SP_TABLA, line=lt, before=6,
+            after=2, keep=True, keep_lines=True)
+        tabla_registro(doc, filas_b,
+                       (0.8, 1.6, 2.7, 1.9, 1.1, 1.1, 1.1, 3.2, 2.0),
                        header_rows=1, linea=lt, align_defecto="center",
-                       flex_col=2, alturas_cm=alturas_despachos, captura=True,
-                       margen_tb=mt)
+                       flex_col=2,
+                       alturas_cm=[0.8] + [0.62] * 25,
+                       captura=True, margen_tb=mt)
 
-    seccion_romana(doc, "III", "Contenido", contenido_documental, linea=li,
-                   before=3, after=2)
+    bloque_b()
 
-    par(doc, "Documentos conformes ____ / revisados ____      Despachos "
-             "conformes ____ / revisados ____", size=20, bold=True,
-        line=li, before=3, after=0)
+    par(doc, "Documentos conformes ______ / revisados ______      Despachos "
+             "conformes ______ / revisados ______", size=SP_TABLA, bold=True,
+        line=lt, before=10, after=0)
+    par(doc, "Si el número de asientos supera las filas de la hoja, continúe "
+             "en la hoja siguiente con la numeración corrida y anote «Hoja __ "
+             "de __» en ambas. El segundo observador firma la doble "
+             "codificación en la hoja de continuación.", size=SP_TABLA, line=lt,
+        before=6, after=0)
 
-    banda_cierre_documental(doc, linea=li)
+    banda_cierre_documental(doc, linea=li, antes=15.0)
     parrafo_final_compacto(doc)
 
 
@@ -1091,6 +1101,8 @@ def doc_03(doc) -> None:
     """Cuestionario de satisfacción: Dimensión 3, satisfacción del usuario."""
     li = INTERLINEA["03"]
     titulo(doc, "Cuestionario de satisfacción del usuario", line=li)
+    linea_identificacion(doc, "Instrumento 03 · Cuestionario de satisfacción · "
+                              "Versión v06 · Hoja 1 de 1", li)
 
     ficha_tecnica(doc, [
         ("Variable", "Gestión de movimientos mensuales de vacunas"),
@@ -1098,14 +1110,14 @@ def doc_03(doc) -> None:
         ("Indicador", "Aceptación del proceso (AP) y utilidad percibida (UP), "
                       "en escala ordinal de 1 a 5"),
         ("Aplicación", "Pretest y postest; cuestionario autoadministrado"),
-    ], linea=li)
+    ], linea=li, alturas_cm=(0.52,) * 4)
 
     seccion_romana(doc, "I", "Datos generales", lambda: datos_generales(doc, [
         ("N.° de trabajador", ""),
-        ("Momento", "☐ Antes de SIVAC        ☐ Con SIVAC"),
-        ("Fecha", "____ / ____ / ________"),
         ("Centro de salud", ""),
-    ], linea=li), linea=li, before=6)
+        ("Fecha", "____ / ____ / ________"),
+        ("Momento", "☐ Antes de SIVAC        ☐ Con SIVAC"),
+    ], linea=li, alto_filas_cm=0.85), linea=li, before=5)
 
     def instrucciones_y_escala() -> None:
         par(doc, "Marque con una X un solo número por afirmación. No escriba "
@@ -1114,44 +1126,54 @@ def doc_03(doc) -> None:
         leyenda_escala(doc, linea=li)
 
     seccion_romana(doc, "II", "Instrucciones", instrucciones_y_escala,
-                   linea=li, before=6)
+                   linea=li, before=5)
 
-    reactivos = [
-        ("N.°", "Afirmación", "1", "2", "3", "4", "5"),
-        ("1", "El procedimiento actual para asentar los movimientos diarios y "
-              "cierres de mes es ágil y no demanda un esfuerzo mental o físico "
-              "excesivo.", "", "", "", "", ""),
-        ("2", "El flujo de trabajo requerido para emitir comprobantes de salida "
-              "y vales de entrega es fluido y está libre de demoras o trabas "
-              "burocráticas.", "", "", "", "", ""),
-        ("3", "El método empleado me permite conciliar los saldos de inventario "
-              "con las microredes generando tranquilidad y reduciendo el estrés "
-              "laboral.", "", "", "", "", ""),
-        ("4", "El tiempo que dedico al registro administrativo de vacunas es "
-              "equilibrado y me deja disponibilidad para mis labores sanitarias "
-              "y asistenciales.", "", "", "", "", ""),
-        ("5", "El mecanismo de registro utilizado me permite disponer de "
-              "información fidedigna y en tiempo real del stock de vacunas y "
-              "jeringas.", "", "", "", "", ""),
-        ("6", "El control de números de lote y fechas de vencimiento que brinda "
-              "el proceso previene oportunamente mermas o pérdidas de "
-              "biológicos.", "", "", "", "", ""),
-        ("7", "La metodología de gestión facilita la detección inmediata y "
-              "rectificación de cualquier descuadre de inventario físico versus "
-              "registrado.", "", "", "", "", ""),
-        ("8", "En general, considero que el procedimiento empleado es una "
-              "herramienta altamente eficaz para garantizar el abastecimiento "
-              "oportuno de vacunas.", "", "", "", "", ""),
+    cabecera = ("N.°", "Afirmación", "1", "2", "3", "4", "5")
+    banda_ap = ("", "**Aceptación del proceso (AP)**", "", "", "", "", "")
+    banda_up = ("", "**Utilidad percibida (UP)**", "", "", "", "", "")
+    items_ap = [
+        "El procedimiento actual para asentar los movimientos diarios y "
+        "cierres de mes es ágil y no demanda un esfuerzo mental o físico "
+        "excesivo.",
+        "El flujo de trabajo requerido para emitir comprobantes de salida y "
+        "vales de entrega es fluido y está libre de demoras o trabas "
+        "burocráticas.",
+        "El método empleado me permite conciliar los saldos de inventario con "
+        "las microredes generando tranquilidad y reduciendo el estrés laboral.",
+        "El tiempo que dedico al registro administrativo de vacunas es "
+        "equilibrado y me deja disponibilidad para mis labores sanitarias y "
+        "asistenciales.",
     ]
-    seccion_romana(doc, "III", "Contenido", lambda: tabla_registro(
-        doc, reactivos, (0.8, 11.45, 0.65, 0.65, 0.65, 0.65, 0.65),
-        header_rows=1, linea=li, align_defecto="left", flex_col=1,
-        negritas=((r, 0) for r in range(1, 9)),
-        alto_filas_cm=ALTO_CAPTURA_HOLGADO, regla_altura="atLeast",
-        captura=True, libre=True), linea=li, before=6)
+    items_up = [
+        "El mecanismo de registro que utilizo me permite disponer de "
+        "información fidedigna del stock de vacunas y jeringas cuando la "
+        "necesito.",
+        "El control de números de lote y fechas de vencimiento que brinda el "
+        "proceso previene oportunamente mermas o pérdidas de biológicos.",
+        "La metodología de gestión facilita la detección inmediata y "
+        "rectificación de cualquier descuadre de inventario físico versus "
+        "registrado.",
+        "El procedimiento que utilizo me permite atender a tiempo los "
+        "requerimientos de vacunas de los establecimientos de mi "
+        "jurisdicción.",
+    ]
+    filas = [cabecera, banda_ap]
+    filas += [(str(n), texto, "", "", "", "", "")
+              for n, texto in enumerate(items_ap, start=1)]
+    filas.append(banda_up)
+    filas += [(str(n), texto, "", "", "", "", "")
+              for n, texto in enumerate(items_up, start=5)]
 
-    par(doc, "Gracias por su participación.", align="left", line=li,
-        before=8, after=0)
+    seccion_romana(doc, "III", "Contenido", lambda: tabla_registro(
+        doc, filas, (0.9, 11.2, 0.68, 0.68, 0.68, 0.68, 0.68),
+        header_rows=1, linea=li, align_defecto="left", flex_col=1,
+        negritas=((1, 1), (6, 1)),
+        alturas_cm=[0.55, 0.62] + [1.0] * 4 + [0.62] + [1.0] * 4,
+        regla_altura="atLeast", captura=True, libre=True), linea=li, before=5)
+
+    par(doc, "Total AP: ____ / 20      Total UP: ____ / 20      Total: ____ "
+             "/ 40", size=SP_TABLA, line=li, before=6, after=0)
+    par(doc, "Gracias por su participación.", line=li, before=6, after=0)
     parrafo_final_compacto(doc)
 
 
@@ -1160,13 +1182,16 @@ def doc_04(doc) -> None:
     li = INTERLINEA["04"]
     titulo(doc, "Consentimiento informado para participar en la investigación",
            line=li)
+    linea_identificacion(doc, "Instrumento 04 · Consentimiento informado · "
+                              "Versión v06 · Hoja 1 de 1", li)
 
     seccion_romana(doc, "I", "Datos generales del participante",
                    lambda: datos_generales(doc, [
                        ("N.° de trabajador", ""),
                        ("Centro de salud", ""),
                        ("Fecha", "____ / ____ / ________"),
-                   ], linea=li), linea=li, before=6)
+                       ("Momento", "Antes de la primera medición"),
+                   ], linea=li, alto_filas_cm=0.7), linea=li, before=4)
 
     bloques = [
         ("1. Propósito.", "Esta investigación evalúa si el sistema SIVAC "
@@ -1189,7 +1214,13 @@ def doc_04(doc) -> None:
          "solo para esta tesis."),
         ("6. Voluntariedad.", "La participación es libre. Puede retirarse en "
          "cualquier momento, sin perjuicio."),
-        ("7. Contacto.", "Para consultas, comuníquese con el investigador."),
+        ("7. Aprobación y contacto.", "El estudio cuenta con la aprobación del "
+         "Comité de Ética en Investigación de la Universidad Nacional José "
+         "María Arguedas, o con su constancia de exención (N.° ____________). "
+         "Investigador: Bach. "
+         "José Luis Quispe León, Escuela Profesional de Ingeniería de "
+         "Sistemas, UNAJMA, Andahuaylas. Correo: jquispe.leon20@gmail.com. "
+         "Teléfono: ____________."),
         ("8. Declaración de consentimiento.", "He leído y comprendido la "
          "información. Mis preguntas fueron respondidas. Acepto participar "
          "voluntariamente."),
@@ -1198,30 +1229,33 @@ def doc_04(doc) -> None:
     def informacion() -> None:
         par(doc, "Estimado(a) participante:", line=li, after=0)
         for lead, texto in bloques:
-            par(doc, f"**{lead}** {texto}", line=li, before=8, after=0)
-            if lead.startswith("7."):
-                par(doc, "Correo electrónico: ______________________    "
-                         "Teléfono: ______________________", line=li, after=0)
+            par(doc, f"**{lead}** {texto}", line=li, before=6, after=0,
+                align="both")
 
     seccion_romana(doc, "II", "Información al participante", informacion,
-                   linea=li, before=8)
+                   linea=li, before=5)
 
     seccion_romana(doc, "III", "Firmas", lambda: tabla_registro(doc, [
         ("Participante", "Investigador"),
         ("Nombre: ______________________________",
          "Nombre: ______________________________"),
+        ("DNI: ______________",
+         "DNI: ______________"),
         ("Firma: ______________________________",
          "Firma: ______________________________"),
         ("Fecha: ____ / ____ / ________",
          "Fecha: ____ / ____ / ________"),
+        ("Testigo (si el participante no puede firmar): nombre, DNI y firma. "
+         "Si no puede firmar, impresión de huella digital del dedo índice "
+         "derecho.", ""),
     ], (7.75, 7.75), header_rows=1, linea=li, align_defecto="left",
-        flex_col=0, alturas_cm=(0.60, 1.15, 1.35, 1.00),
-        regla_altura="atLeast", captura=True, libre=True), linea=li,
-        before=8)
+        flex_col=0, alturas_cm=(0.55, 0.95, 0.75, 1.15, 0.75, 0.85),
+        regla_altura="atLeast", captura=True, libre=True,
+        merges=((5, 0, 5, 1),)), linea=li, before=5)
 
     par(doc, "Este documento se emite por duplicado: una copia para el "
-             "participante y otra para el investigador.", line=li, before=8,
-        after=0)
+             "participante y otra para el investigador.", size=SP_TABLA,
+        line=li, before=6, after=0)
     parrafo_final_compacto(doc)
 
 
@@ -1230,13 +1264,15 @@ def doc_05(doc) -> None:
     li = INTERLINEA["05"]
     lt = 10.5          # matriz: interlineado exacto de la especificación
     titulo(doc, "Certificado de validación de contenido", line=10.0)
+    linea_identificacion(doc, "Instrumento 05 · Certificado de validación · "
+                              "Versión v06 · Hoja ____ de ____", lt)
 
     ficha_tecnica(doc, [
         ("Variable", "Gestión de movimientos mensuales de vacunas"),
         ("Dimensión", "Todas"),
         ("Indicador", "Los seis indicadores de la variable dependiente"),
         ("Aplicación", "Juicio de expertos, tres jueces"),
-    ], linea=10.0, con_cabecera=False, alturas_cm=(0.50,) * 4)
+    ], linea=lt, con_cabecera=False, alturas_cm=(0.48,) * 4)
 
     seccion_romana(doc, "I", "Datos del juez validador",
                    lambda: tabla_registro(doc, [
@@ -1244,123 +1280,126 @@ def doc_05(doc) -> None:
                         "DNI: ____________________"),
                        ("Especialidad: ______________________________",
                         "Institución: ______________________________"),
-                       ("Fecha: ____ de ____________________ de 2026", ""),
-                   ], (7.75, 7.75), header_rows=0, linea=10.0,
-                       align_defecto="left", flex_col=0,
-                       alturas_cm=(0.55, 0.55, 0.55), regla_altura="atLeast",
-                       captura=True, libre=True), linea=10.0)
+                       ("Cargo: ______________________________",
+                        "CIP: ____________________"),
+                       ("Fecha: ____ de ____________________ de ________",
+                        ""),
+                   ], (7.75, 7.75), header_rows=0, linea=lt,
+                       align_defecto="left", flex_col=1,
+                       alturas_cm=(0.6, 0.6, 0.6, 0.6), regla_altura="atLeast",
+                       captura=True, libre=True, merges=((3, 0, 3, 1),)),
+                   linea=li, before=4)
 
     seccion_romana(doc, "II", "Instrucciones", lambda: instrucciones(doc, [
-        "Marque Sí o No en cada criterio y por cada ítem. Use la columna "
-        "Sugerencias para indicar mejoras. Las definiciones de los criterios "
-        "figuran al pie de la tabla.",
-    ], linea=li), linea=10.0)
+        "Marque Sí o No en cada criterio y por cada ítem; use Sugerencias para "
+        "indicar mejoras. No hay respuestas correctas: se valora el "
+        "instrumento, no los resultados del estudio. Pert. = pertinencia; "
+        "Relev. = relevancia; Clar. = claridad.",
+        "Pertinencia: el ítem corresponde al concepto formulado. Relevancia: "
+        "el ítem representa el componente o dimensión. Claridad: el enunciado "
+        "se entiende sin dificultad, es conciso, exacto y directo.",
+    ], linea=lt), linea=li, before=4)
 
-    items = [
-        "El tiempo que demora el trabajador en registrar un movimiento de "
-        "vacunas, en minutos, permite valorar la oportunidad de procesamiento.",
-        "El tiempo que demora el trabajador en emitir el comprobante o vale, "
-        "en minutos, permite valorar la oportunidad de procesamiento.",
-        "La reducción del tiempo de registro entre pretest y postest mejora "
-        "la oportunidad de procesamiento.",
-        "La reducción del tiempo del vale entre pretest y postest mejora la "
-        "oportunidad de procesamiento.",
-        "El porcentaje de documentos sin discrepancias permite valorar la "
-        "consistencia documental.",
-        "El porcentaje de despachos conformes permite valorar la "
-        "consistencia documental.",
-        "El aumento de documentos sin discrepancias entre pretest y postest "
-        "mejora la consistencia documental.",
-        "El aumento de despachos conformes entre pretest y postest mejora la "
-        "consistencia documental.",
-        "El procedimiento actual para asentar los movimientos diarios y "
-        "cierres de mes es ágil y no demanda un esfuerzo mental o físico "
-        "excesivo.",
-        "El flujo de trabajo requerido para emitir comprobantes de salida y "
-        "vales de entrega es fluido y está libre de demoras o trabas "
-        "burocráticas.",
-        "El método empleado me permite conciliar los saldos de inventario con "
-        "las microredes generando tranquilidad y reduciendo el estrés laboral.",
-        "El tiempo que dedico al registro administrativo de vacunas es "
-        "equilibrado y me deja disponibilidad para mis labores sanitarias y "
-        "asistenciales.",
-        "El mecanismo de registro utilizado me permite disponer de "
-        "información fidedigna y en tiempo real del stock de vacunas y "
-        "jeringas.",
-        "El control de números de lote y fechas de vencimiento que brinda el "
-        "proceso previene oportunamente mermas o pérdidas de biológicos.",
-        "La metodología de gestión facilita la detección inmediata y "
-        "rectificación de cualquier descuadre de inventario físico versus "
-        "registrado.",
-        "En general, considero que el procedimiento empleado es una "
-        "herramienta altamente eficaz para garantizar el abastecimiento "
-        "oportuno de vacunas.",
+    def tabla_items(etiqueta: str, filas: Sequence[Sequence[str]]) -> None:
+        rotulo(doc, etiqueta, line=lt, before=6, after=2)
+        cuerpo = [("N.°", "Ítem", "Pert.", "", "Relev.", "",
+                   "Clar.", "", "Sugerencias"),
+                  ("", "", "Sí", "No", "Sí", "No", "Sí", "No", "")]
+        cuerpo += list(filas)
+        tabla_registro(doc, cuerpo,
+                       (1.2, 7.2, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 2.5),
+                       header_rows=2, linea=lt, align_defecto="left",
+                       align_cols=("center", "left", "center", "center",
+                                   "center", "center", "center", "center",
+                                   "left"),
+                       flex_col=1, margen_tb=MARGEN_TB,
+                       alturas_cm=[0.55, 0.45] + [0.85] * len(filas),
+                       regla_altura="atLeast",
+                       merges=((0, 2, 0, 3), (0, 4, 0, 5), (0, 6, 0, 7)))
+
+    items_t = [
+        ("T-01", "Los campos de la ficha permiten anotar la hora de inicio y "
+                 "la de corte del registro, de modo que T_reg = corte − "
+                 "inicio, en minutos."),
+        ("T-02", "Los campos permiten anotar la hora de solicitud de despacho "
+                 "y la de emisión, de modo que T_vale = emisión − solicitud, "
+                 "en minutos."),
+        ("T-03", "Las tres réplicas por indicador y la regla de la mediana "
+                 "bastan para obtener un valor por trabajador y momento."),
+        ("T-04", "La hoja identifica instrumento, versión, trabajador, centro, "
+                 "fecha y momento, y permite repetir la medición ante una "
+                 "interrupción externa."),
+    ]
+    items_d = [
+        ("D-01", "El criterio 1 comprueba el biológico: nombre y "
+                 "presentación."),
+        ("D-02", "El criterio 2 comprueba el número de lote."),
+        ("D-03", "El criterio 3 comprueba el vencimiento, mes y año."),
+        ("D-04", "El criterio 4 comprueba la cantidad de dosis o frascos."),
+        ("D-05", "El criterio 5 comprueba el establecimiento de origen o "
+                 "destino."),
+        ("D-06", "El criterio 6 comprueba el responsable y las firmas de "
+                 "entrega y recepción."),
+        ("D-07", "El criterio 7 comprueba el saldo aritmético: inicial más "
+                 "ingresos menos salidas."),
+        ("D-08", "El criterio 8 comprueba la correlatividad temporal entre "
+                 "asientos contiguos."),
+        ("D-09", "La regla conjuntiva es explícita: un solo No anula el "
+                 "documento, y la columna Conforme no se marca por impresión "
+                 "global."),
+        ("D-10", "El bloque B compara cantidad programada y entregada en la "
+                 "misma unidad, y trata toda diferencia como observación, no "
+                 "como criterio de conformidad."),
+    ]
+    items_c = [
+        ("AP-01", "El procedimiento actual para asentar los movimientos "
+                  "diarios y cierres de mes es ágil y no demanda un esfuerzo "
+                  "mental o físico excesivo."),
+        ("AP-02", "El flujo de trabajo requerido para emitir comprobantes de "
+                  "salida y vales de entrega es fluido y está libre de demoras "
+                  "o trabas burocráticas."),
+        ("AP-03", "El método empleado me permite conciliar los saldos de "
+                  "inventario con las microredes generando tranquilidad y "
+                  "reduciendo el estrés laboral."),
+        ("AP-04", "El tiempo que dedico al registro administrativo de vacunas "
+                  "es equilibrado y me deja disponibilidad para mis labores "
+                  "sanitarias y asistenciales."),
+        ("UP-01", "El mecanismo de registro que utilizo me permite disponer "
+                  "de información fidedigna del stock de vacunas y jeringas "
+                  "cuando la necesito."),
+        ("UP-02", "El control de números de lote y fechas de vencimiento que "
+                  "brinda el proceso previene oportunamente mermas o pérdidas "
+                  "de biológicos."),
+        ("UP-03", "La metodología de gestión facilita la detección inmediata y "
+                  "rectificación de cualquier descuadre de inventario físico "
+                  "versus registrado."),
+        ("UP-04", "El procedimiento que utilizo me permite atender a tiempo "
+                  "los requerimientos de vacunas de los establecimientos de "
+                  "mi jurisdicción."),
     ]
 
-    filas_matriz = [
-        ("N.°", "DIMENSIONES / Ítems", "Pertinencia", "", "Relevancia",
-         "", "Claridad", "", "Sugerencias"),
-        ("", "", "Sí", "No", "Sí", "No", "Sí", "No", ""),
-        ("**Dimensión 1. Oportunidad de procesamiento (ítems 1 a 4)**",
-         "", "", "", "", "", "", "", ""),
-    ]
-    negritas_matriz = [(2, 0)]
-    for numero, texto in enumerate(items, start=1):
-        filas_matriz.append((str(numero), texto, "", "", "", "", "", "", ""))
-    filas_matriz.insert(7, ("**Dimensión 2. Consistencia documental "
-                               "(ítems 5 a 8)**", "", "", "", "", "", "",
-                             ""))
-    negritas_matriz.append((7, 0))
-    filas_matriz.insert(12, ("**Dimensión 3. Satisfacción del usuario "
-                                "(ítems 9 a 16)**", "", "", "", "", "", "",
-                             ""))
-    negritas_matriz.append((12, 0))
-    merges_matriz = [
-        (0, 2, 0, 3), (0, 4, 0, 5), (0, 6, 0, 7),
-        (2, 0, 2, 8), (7, 0, 7, 8), (12, 0, 12, 8),
-    ]
+    tabla_items("(a) Ficha de tiempos — Instrumento 01", items_t)
+    tabla_items("(b) Ficha documental — Instrumento 02", items_d)
+    tabla_items("(c) Cuestionario de satisfacción — Instrumento 03", items_c)
 
-    def matriz() -> None:
-        tabla_registro(
-            doc, filas_matriz,
-            (0.7, 6.95, 0.975, 0.975, 0.975, 0.975, 0.975, 0.975, 2.0),
-            header_rows=2, linea=lt, align_defecto="left",
-            align_cols=("center", "left", "center", "center", "center",
-                        "center", "center", "center", "center"),
-            negritas=negritas_matriz, flex_col=1,
-            margen_lr=MARGEN_LR, margen_tb=MARGEN_TB,
-            merges=merges_matriz)
-
-    seccion_romana(doc, "III", "Matriz de ítems", matriz, linea=10.0)
-
-    par(doc, "**Notas al pie**", line=9.5, before=8, after=3)
-    notas = [
-        "1. **Pertinencia:** el ítem corresponde al concepto teórico formulado.",
-        "2. **Relevancia:** el ítem es apropiado para representar al componente "
-        "o dimensión específica del constructo.",
-        "3. **Claridad:** el enunciado se entiende sin dificultad alguna; es "
-        "conciso, exacto y directo.",
-    ]
-    for nota in notas:
-        par(doc, nota, size=SP_TABLA, line=9.5, before=0, after=0)
-
-    seccion_romana(doc, "IV", "Observaciones y opinión de aplicabilidad",
+    seccion_romana(doc, "III", "Observaciones y opinión de aplicabilidad",
                    lambda: (
                        par(doc, "**Observaciones (precisar si hay "
                                 "suficiencia):** ______________________________",
-                           line=10.0, after=0),
+                           line=lt, before=2, after=4),
                        par(doc, "**Opinión de aplicabilidad:** ☐ Aplicable   "
                                 "☐ Aplicable después de corregir   "
-                                "☐ No aplicable", size=SP_TABLA, line=10.0,
-                           after=0),
-                   ), linea=10.0)
+                                "☐ No aplicable", size=SP_TABLA, line=lt,
+                           after=2),
+                   ), linea=li, before=6)
 
-    seccion_romana(doc, "V", "Firma", lambda: tabla_registro(
-        doc, [("Firma del juez validador", "", "Fecha", "")], (5.0, 5.5, 1.5, 3.5),
-        header_rows=0, linea=li, align_defecto="left", flex_col=1,
-        negritas=((0, 0), (0, 2)),
-        alturas_cm=(1.40,), regla_altura="atLeast", captura=True,
-        libre=True), linea=10.0)
+    seccion_romana(doc, "IV", "Firma", lambda: tabla_registro(
+        doc, [("Firma del juez validador", "", "DNI / CIP", ""),
+              ("", "", "Fecha", "__ / __ / ____")],
+        (4.3, 5.6, 2.0, 3.6), header_rows=0, linea=li, align_defecto="left",
+        flex_col=1, negritas=((0, 0), (0, 2), (1, 2)),
+        alturas_cm=(1.5, 0.6), regla_altura="atLeast", captura=True,
+        libre=True), linea=li, before=4)
     parrafo_final_compacto(doc)
 # ---------------------------------------------------------------------------
 # Inspección
@@ -1373,6 +1412,90 @@ NS_WP = "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
 
 PT_CM = 28.3465           # puntos por centímetro
 MARGEN_INFERIOR_PT = 70.87  # 2.5 cm
+
+
+def exportar_pdf(docx: Path, pdf: Path) -> Dict[str, Any]:
+    """Exporta a PDF con Word; si no hay Word, con LibreOffice.
+
+    La exportación con Word COM solo existe en Windows. En cualquier otro
+    sistema se usa ``soffice --headless``, que respeta la geometría del DOCX
+    y sustituye Times New Roman por Liberation Serif, de métricas idénticas.
+    """
+    try:
+        resultado = dq.exportar_docx_a_pdf(docx, pdf)
+        normalizar_pdf(pdf, pdf)
+        return resultado
+    except Exception as error:            # sin Word COM en este sistema
+        import subprocess
+        import tempfile
+        with tempfile.TemporaryDirectory() as temporal:
+            subprocess.run(["soffice", "--headless", "--norestore",
+                            "--convert-to", "pdf", "--outdir", temporal,
+                            str(docx)], check=True, capture_output=True,
+                           timeout=300)
+            generado = Path(temporal) / (docx.stem + ".pdf")
+            normalizar_pdf(generado, pdf)
+        return {"motor": "libreoffice", "detalle": type(error).__name__}
+
+
+def normalizar_pdf(origen: Path, destino: Path,
+                   sello: str = "D:20260101000000Z") -> None:
+    """Fija la fecha del PDF y reescribe el archivo sin basura variable.
+
+    LibreOffice sella la hora de conversión y el identificador del documento,
+    de modo que dos compilaciones idénticas daban PDF distintos. Con la fecha
+    fija y ``garbage=4`` el archivo depende solo del contenido.
+    """
+    import fitz
+    documento = fitz.open(origen)
+    metadatos = documento.metadata or {}
+    metadatos["creationDate"] = sello
+    metadatos["modDate"] = ""
+    documento.set_metadata(metadatos)
+    documento.save(destino, garbage=4, deflate=True, no_new_id=True)
+    documento.close()
+    # PyMuPDF vuelve a sortear el /ID del trailer en cada guardado; se
+    # reemplaza por uno derivado del contenido. El reemplazo conserva la
+    # longitud, así que los desplazamientos de la tabla xref no cambian.
+    crudo = destino.read_bytes()
+    patron = re.compile(rb"/ID\[<[0-9A-Fa-f]{32}><[0-9A-Fa-f]{32}>\]")
+    fijo = (hashlib.sha256(patron.sub(b"", crudo)).hexdigest().upper()
+            [:32].encode())
+    destino.write_bytes(patron.sub(b"/ID[<" + fijo + b"><" + fijo + b">]",
+                                   crudo))
+
+
+def sello_compilacion() -> str:
+    """Hora de compilación determinista.
+
+    Respeta ``SOURCE_DATE_EPOCH`` (convención de compilación reproducible);
+    sin esa variable usa el instante cero del día de la versión. Así el
+    manifiesto sale idéntico en cada corrida.
+    """
+    segundos = os.environ.get("SOURCE_DATE_EPOCH")
+    if segundos and segundos.isdigit():
+        return datetime.utcfromtimestamp(int(segundos)).isoformat(
+            timespec="seconds")
+    return "2026-11-03T00:00:00"
+
+
+def fijar_marcas_zip(ruta: Path, marca: Tuple[int, int, int, int, int, int]
+                     = (1980, 1, 1, 0, 0, 0)) -> None:
+    """Reescribe el DOCX con fechas de entrada fijas.
+
+    python-docx sella cada entrada del ZIP con la hora de compilación; eso
+    hace que el archivo cambie en cada corrida aunque el contenido sea el
+    mismo. Con marcas fijas el paquete es reproducible byte a byte.
+    """
+    with zipfile.ZipFile(ruta) as original:
+        entradas = [(i.filename, original.read(i.filename))
+                    for i in original.infolist()]
+    with zipfile.ZipFile(ruta, "w", zipfile.ZIP_DEFLATED) as destino:
+        for nombre, datos in entradas:
+            info = zipfile.ZipInfo(nombre, date_time=marca)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o600 << 16
+            destino.writestr(info, datos)
 
 
 def sha256(ruta: Path) -> str:
@@ -1393,7 +1516,9 @@ def _fuentes(raiz_xml) -> list[int]:
 
 
 def inspeccionar_docx(ruta: Path, capturas: Sequence[float],
-                      capturas_libres: Sequence[float]) -> Dict[str, Any]:
+                      capturas_libres: Sequence[float],
+                      codigos: Sequence[str] = _CODIGOS_PROHIBIDOS
+                      ) -> Dict[str, Any]:
     """Audita el paquete DOCX: bordes, fuentes, OMML, códigos y encabezado."""
     with zipfile.ZipFile(ruta) as paquete:
         nombres = paquete.namelist()
@@ -1427,8 +1552,8 @@ def inspeccionar_docx(ruta: Path, capturas: Sequence[float],
     imagenes_cuerpo = sum(1 for _ in raiz.iter(f"{{{NS_W}}}drawing"))
 
     textos = "".join(nodo.text or "" for nodo in raiz.iter(f"{{{NS_W}}}t"))
-    codigos = {token: textos.count(token) for token in _CODIGOS_PROHIBIDOS}
-    codigos = {k: v for k, v in codigos.items() if v}
+    hallados = {token: textos.count(token) for token in codigos}
+    hallados = {k: v for k, v in hallados.items() if v}
 
     logotipos = (sum(1 for _ in raiz_hdr.iter(f"{{{NS_PIC}}}pic"))
                  if raiz_hdr is not None else 0)
@@ -1457,7 +1582,7 @@ def inspeccionar_docx(ruta: Path, capturas: Sequence[float],
         "altura_logotipo_cm": alturas_logo,
         "header_references": xml_doc.count("<w:headerReference"),
         "imagenes_en_cuerpo": imagenes_cuerpo,
-        "codigos_internos": codigos,
+        "codigos_internos": hallados,
         "altura_minima_fila_cm": (min(capturas) if capturas else None),
         "altura_minima_captura_libre_cm": (min(capturas_libres)
                                            if capturas_libres else None),
@@ -1503,18 +1628,19 @@ META = {
         "titulo": "Guía de aplicación de los instrumentos",
         "que_mide": "No mide: ordena la aplicación de los cinco instrumentos "
                     "y fija las reglas operativas del trabajo de campo.",
-        "secciones": ["Instrumentos", "Secuencia de aplicación en campo",
-                      "Reglas operativas"],
-        "tablas": ["Instrumentos: 3.2, 5.8, 3.0 y 3.5 cm",
-                   "Secuencia de aplicación: 1.2, 2.9, 6.4 y 5.0 cm",
-                   "Reglas operativas: 4.2 y 11.3 cm"],
+        "secciones": ["Instrumentos", "Los cuatro instantes y las dos "
+                      "fórmulas", "Reglas operativas"],
+        "tablas": ["Instrumentos: 3.1, 4.0, 4.6 y 3.8 cm",
+                   "Instantes y fórmulas: 3.1 y 12.4 cm",
+                   "Reglas operativas: 3.6 y 11.9 cm"],
         "cambios": [
-            "Se añade la tabla «Secuencia de aplicación en campo» con los "
-            "cinco pasos reales: certificado antes del campo, consentimiento "
-            "antes de la primera medición, pretest 01, 02 y 03, intervención "
-            "SIVAC y postest en el mismo orden.",
-            "Se explicita qué se imprime por participante y qué documento es "
-            "de un solo uso por evaluador.",
+            "Una sola definición por indicador: T_reg = corte de registro − "
+            "inicio; T_vale = emisión − solicitud de despacho.",
+            "Once reglas operativas: réplicas y mediana, interrupción externa, "
+            "documento conforme (ocho criterios), despacho conforme (igualdad "
+            "exacta), hoja de continuación, doble codificación del 20 %, "
+            "trabajador ausente, dos centros, operación no ocurrida, "
+            "numeración y cálculo de porcentajes.",
         ],
     },
     "01": {
@@ -1522,20 +1648,22 @@ META = {
         "que_mide": "Oportunidad de procesamiento: tiempo de registro "
                     "(T_reg) y tiempo de emisión del comprobante o vale "
                     "(T_vale), en minutos.",
-        "secciones": ["Ficha técnica", "I. Datos generales",
-                      "II. Instrucciones", "III. Contenido",
-                      "IV. Observaciones", "V. Responsable"],
-        "tablas": ["Ficha técnica: 3.6, 4.4, 3.0 y 4.5 cm",
-                   "Datos generales: 3.4, 3.4, 2.6 y 6.1 cm",
-                   "Bloques A y B: 0.8, 5.0, 2.4, 2.4, 2.4 y 2.5 cm",
+        "secciones": ["I. Datos generales", "II. Instrucciones",
+                      "III. Contenido", "IV. Observaciones",
+                      "V. Responsable"],
+        "tablas": ["Datos generales: 3.3, 3.5, 2.5 y 6.2 cm",
+                   "Bloques A y B: 0.8, 3.9, 2.5, 2.8, 2.5 y 3.0 cm",
                    "Observaciones: 15.5 cm",
-                   "Responsable: 4.0, 5.0, 1.6 y 4.9 cm"],
+                   "Responsable: 4.1, 4.9, 1.6 y 4.9 cm"],
         "cambios": [
-            "Las seis filas de medición suben de 0.68 cm a 1.0 cm.",
-            "Las dos filas de observaciones y las filas de datos generales "
-            "suben a 1.0 cm.",
-            "La ficha técnica pasa a cuatro columnas con la fila del "
-            "indicador y la de aplicación en 1.0 cm.",
+            "El bloque A admite tres réplicas de T_reg y el bloque B tres de "
+            "T_vale; la fila identifica el escenario (ingreso, salida, "
+            "transferencia; vale regular, reposición, transferencia).",
+            "Se añade la columna «Solicitud de despacho», de modo que T_vale = "
+            "emisión − solicitud, como en la Ecuación 2.",
+            "Se elimina la ficha técnica: sus datos ya están en la guía y en "
+            "las instrucciones, y no se llenan en campo.",
+            "Cada fila de medición mide 1.0 cm y la hoja cabe en una página.",
         ],
     },
     "02": {
@@ -1543,21 +1671,26 @@ META = {
         "que_mide": "Consistencia documental: registros sin discrepancias "
                     "(RSD) y concordancia entre lo programado y lo entregado "
                     "(CPE), en porcentaje.",
-        "secciones": ["Ficha técnica", "I. Datos generales",
-                      "II. Instrucciones", "III. Contenido",
-                      "IV. Observaciones", "V. Responsable"],
-        "tablas": ["Ficha técnica: 3.6, 4.4, 3.0 y 4.5 cm",
-                   "Datos generales: 4.0, 3.75, 4.0 y 3.75 cm",
-                   "Bloque A: 5.8 cm y cinco columnas de 1.94 cm",
-                   "Bloque B: 0.8, 1.9, 2.6, 2.1, 1.8, 1.8, 2.5 y 2.0 cm",
+        "secciones": ["I. Datos generales", "II. Instrucciones",
+                      "III. Bloque A. Documentos auditados (40 por hoja)",
+                      "III (continuación). Bloque B. Despachos auditados "
+                      "(25 por hoja)", "IV. Observaciones", "V. Responsable"],
+        "tablas": ["Datos generales: 3.9, 3.4, 2.9 y 5.3 cm",
+                   "Bloque A: 0.8, 1.7, 1.85, 1.95, 1.7, ocho columnas de "
+                   "0.75 y 1.3 cm",
+                   "Bloque B: 0.8, 1.6, 2.7, 1.9, 1.1, 1.1, 1.1, 3.2 y 2.0 cm",
                    "Cierre IV-V: 8.2 y 7.3 cm"],
         "cambios": [
-            "El bloque A conserva los nueve criterios y los cinco documentos; "
-            "el bloque B conserva los diez despachos.",
-            "Se recupera holgura con separaciones de 4 pt para que el cierre "
-            "no quede al ras del margen inferior.",
-            "La columna de documento mide 1.94 cm en lugar de 1.10 cm, para "
-            "que «Documento 1» a «Documento 5» se lean completos.",
+            "El bloque A pasa a 40 asientos por hoja, con ocho criterios "
+            "dicotómicos y una columna Conforme; el bloque B, a 25 despachos. "
+            "Ambos con «Hoja __ de __» y numeración corrida.",
+            "Cada asiento se identifica con fecha, tipo de documento, número "
+            "y lote, de modo que el Sí/No se puede reconstruir.",
+            "La regla es conjuntiva y explícita: un solo No anula el "
+            "documento.",
+            "En el bloque B la conformidad es la igualdad exacta entre "
+            "programado y entregado; el documento de ajuste se anota como "
+            "observación y no altera la conformidad.",
         ],
     },
     "03": {
@@ -1569,14 +1702,23 @@ META = {
         "tablas": ["Ficha técnica: 3.5 y 12.0 cm",
                    "Datos generales: 4.0 y 11.5 cm",
                    "Leyenda de escala: cinco celdas de 3.1 cm",
-                   "Reactivos: 0.8, 11.45 y cinco columnas de 0.65 cm"],
+                   "Reactivos: 0.9, 11.2 y cinco columnas de 0.68 cm"],
         "cambios": [
-            "La explicación corrida de la escala se sustituye por una banda "
-            "horizontal de cinco celdas, una por valor, con su rótulo.",
-            "Las ocho filas de respuesta suben a 1.15 cm y las cuatro filas "
-            "de datos generales a 1.0 cm.",
-            "Los ocho enunciados, su orden y la escala 1 a 5 se conservan "
-            "literalmente.",
+            "Se restituyen los ocho reactivos: AP-01 a AP-04 y UP-01 a UP-04, "
+            "con la escala única de 1 a 5 y los rangos 4–20, 4–20 y 8–40.",
+            "Seis enunciados se transcriben literales del expediente DEC-007 "
+            "(AP-01 a AP-04, UP-02 y UP-03), que es la redacción que "
+            "acompaña a las columnas ap_01…ap_04 y up_01…up_04.",
+            "Se reformulan dos enunciados, con decisión anotada: UP-01 "
+            "sustituye «en tiempo real» por «cuando la necesito», para que "
+            "pueda responderse en el pretest manual; UP-04 deja de ser un "
+            "juicio global de eficacia y pasa a una consecuencia concreta, "
+            "de modo que ningún ítem de satisfacción global se sume dentro de "
+            "UP. El puntaje y el alfa no cambian: dependen de los valores, "
+            "no de la redacción.",
+            "La separación AP/UP se imprime como banda de subescala; los "
+            "códigos de reactivo quedan en la ficha de especificación y el "
+            "trabajador solo ve el número de orden.",
         ],
     },
     "04": {
@@ -1588,10 +1730,11 @@ META = {
         "tablas": ["Datos generales: 4.0 y 11.5 cm",
                    "Firmas: dos columnas de 7.75 cm"],
         "cambios": [
-            "Las tres filas de datos generales y las tres filas de firmas "
-            "suben a 1.0 cm como mínimo, con la fila de firma en 1.35 cm.",
-            "Los ocho bloques de información se conservan textualmente, con "
-            "aire de 8 pt entre ellos.",
+            "Se añade la aprobación por comité de ética (o su constancia de "
+            "exención) con su número.",
+            "Se añade el contacto real del investigador: correo y teléfono.",
+            "Se añade la opción de testigo o huella digital para quien no "
+            "puede firmar.",
         ],
     },
     "05": {
@@ -1599,17 +1742,23 @@ META = {
         "que_mide": "No mide: acredita la validez de contenido de los ítems "
                     "por juicio de tres expertos, antes del trabajo de campo.",
         "secciones": ["Ficha técnica", "I. Datos del juez validador",
-                      "II. Instrucciones", "III. Matriz de ítems",
+                      "II. Instrucciones",
+                      "III. Matriz de ítems: (a) ficha de tiempos, (b) ficha "
+                      "documental, (c) cuestionario",
                       "IV. Observaciones y opinión de aplicabilidad",
                       "V. Firma"],
         "tablas": ["Ficha técnica: 3.5 y 12.0 cm",
                    "Datos del juez: 7.75 y 7.75 cm",
-                   "Matriz: 0.7, 6.95, seis columnas de 0.975, 2.0 cm",
-                   "Firma: 5.0, 5.5, 1.5 y 3.5 cm"],
+                   "Matriz: 1.2, 7.2, seis columnas de 0.75 y 2.5 cm",
+                   "Firma: 4.3, 5.6, 2.0 y 3.6 cm"],
         "cambios": [
-            "Los 16 ítems, las tres dimensiones y los tres criterios de "
-            "juicio se conservan; la matriz ocupa dos páginas.",
-            "Las filas de datos del juez y de firma ganan altura de escritura.",
+            "El certificado queda en blanco: sin nombres, sin V de Aiken y sin "
+            "dictamen pre-marcado.",
+            "Se estructura en tres secciones, una por instrumento, con los "
+            "códigos visibles para el juez: T-01 a T-04, D-01 a D-10 y AP-01 a "
+            "UP-04.",
+            "Se retiran las hipótesis de cambio: el juez valora instrumentos, "
+            "no resultados esperados.",
         ],
     },
 }
@@ -1621,14 +1770,16 @@ def escribir_especificaciones(registro: Dict[str, Dict[str, Any]]) -> list[str]:
     for clave, _funcion, _orden in DOCUMENTOS:
         codigo = clave[:2]
         meta = META[codigo]
-        datos = registro[clave]
+        datos = registro.get(clave)
+        if datos is None:
+            continue
         lineas = [
             "---",
             "tipo: instrumento",
             "fase: F8",
             "agente: maquetador-docx",
             "estado: borrador",
-            "fecha: 2026-11-02",
+            "fecha: 2026-11-03",
             "---",
             "",
             "| [Logotipo UNAJMA] | **UNIVERSIDAD NACIONAL JOSÉ MARÍA "
@@ -1648,11 +1799,10 @@ def escribir_especificaciones(registro: Dict[str, Dict[str, Any]]) -> list[str]:
             "## Estructura",
             "",
         ]
-        lineas += [f"{i}. {seccion}"
-                   for i, seccion in enumerate(meta["secciones"], start=1)]
+        lineas += [f"- {seccion}" for seccion in meta["secciones"]]
         lineas += ["", "## Geometría de las tablas", ""]
         lineas += [f"- {tabla}" for tabla in meta["tablas"]]
-        lineas += ["", "## Cambios autorizados respecto de v05", ""]
+        lineas += ["", "## Cambios respecto de v05", ""]
         lineas += [f"- {cambio}" for cambio in meta["cambios"]]
         lineas += [
             "",
@@ -1705,7 +1855,9 @@ def escribir_guia_lectura(registro: Dict[str, Dict[str, Any]]) -> Path:
     filas = []
     for clave, _funcion, _orden in DOCUMENTOS:
         meta = META[clave[:2]]
-        datos = registro[clave]
+        datos = registro.get(clave)
+        if datos is None:
+            continue
         filas.append(
             f"| {clave[:2]} | {meta['titulo']} | "
             f"`01_IMPRIMIBLES/{clave}.pdf` | `02_EDITABLES/{clave}.docx` | "
@@ -1717,7 +1869,7 @@ def escribir_guia_lectura(registro: Dict[str, Dict[str, Any]]) -> Path:
         "movimientos mensuales de vacunas en el personal de inmunizaciones de "
         "la Dirección de Salud Apurímac II.",
         "",
-        "**Fecha de compilación:** 2026-11-02. **Estado:** borrador para "
+        "**Fecha de compilación:** 2026-11-03. **Estado:** borrador para "
         "revisión del tesista; no sustituye la aprobación del tesista.",
         "",
         "## Contenido del paquete",
@@ -1778,6 +1930,22 @@ def escribir_guia_lectura(registro: Dict[str, Dict[str, Any]]) -> Path:
         "horizontales; no llevan líneas verticales. No se imprime ninguna "
         "nota de producción.",
         "",
+        "## Reproducibilidad",
+        "",
+        "El paquete se regenera con:",
+        "",
+        "```",
+        "python scripts/compiladores/instrumentos_recoleccion_v06_builder.py",
+        "python scripts/compiladores/concordancia_v06_builder.py",
+        "python scripts/compiladores/verificar_instrumentos_v06.py",
+        "```",
+        "",
+        "Dos corridas seguidas producen archivos idénticos byte a byte: el "
+        "DOCX se reescribe con fechas de entrada fijas en el ZIP, el PDF se "
+        "normaliza (fecha fija e identificador derivado del contenido) y el "
+        "manifiesto usa `SOURCE_DATE_EPOCH` o, en su defecto, el instante "
+        "cero de la fecha de la versión.",
+        "",
     ]
     destino = BASE / "00_LEEME_v06.md"
     destino.write_text("\n".join(lineas), encoding="utf-8")
@@ -1821,17 +1989,23 @@ def construir(solo: Optional[Sequence[str]] = None, sin_pdf: bool = False,
         doc = nueva_plantilla()
         funcion(doc)
         doc.save(str(docx))
+        fijar_marcas_zip(docx)
         capturas = list(_ESTADO["capturas"])
         libres = list(_ESTADO["capturas_libres"])
-        datos = inspeccionar_docx(docx, capturas, libres)
+        permitidos = (("AP-", "UP-") if orden == "05" else ())
+        vigilados = tuple(c for c in _CODIGOS_PROHIBIDOS
+                          if not any(c.startswith(p) for p in permitidos))
+        datos = inspeccionar_docx(docx, capturas, libres, vigilados)
         datos["docx"] = str(docx)
         datos["capturas_registradas"] = len(capturas)
         datos["alturas_captura_cm"] = sorted(set(capturas))
 
         pdf = DIR_IMPRIMIBLES / f"{nombre}.pdf"
         datos["pdf"] = str(pdf)
+        for obsoleto in DIR_CONTROL.glob(f"{nombre}_p*.png"):
+            obsoleto.unlink()
         if not sin_pdf:
-            dq.exportar_docx_a_pdf(docx, pdf)
+            datos["exportacion"] = exportar_pdf(docx, pdf)
             datos.update(inspeccionar_pdf(pdf))
             if not sin_render:
                 paginas = list(range(1, datos["paginas"] + 1))
@@ -1847,8 +2021,8 @@ def construir(solo: Optional[Sequence[str]] = None, sin_pdf: bool = False,
 
     manifiesto = {
         "version": "v06",
-        "fecha": "2026-11-02",
-        "generado": datetime.now().isoformat(timespec="seconds"),
+        "fecha": "2026-11-03",
+        "generado": sello_compilacion(),
         "builder": str(Path(__file__).resolve()),
         "base_v05": str(BASE_V05),
         "paquete": str(BASE),

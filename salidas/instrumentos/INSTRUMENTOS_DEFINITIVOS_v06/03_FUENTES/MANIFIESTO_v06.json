@@ -1,0 +1,302 @@
+{
+  "version": "v06",
+  "fecha": "2026-11-03",
+  "generado": "2026-11-03T00:00:00",
+  "builder": "/workspace/tesis_sivac/scripts/compiladores/instrumentos_recoleccion_v06_builder.py",
+  "base_v05": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v05",
+  "paquete": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06",
+  "geometria": {
+    "pagina": "A4 vertical 11906 x 16838 dxa",
+    "margenes_cm": {
+      "izquierdo": 3.0,
+      "superior": 3.0,
+      "derecho": 2.5,
+      "inferior": 2.5
+    },
+    "ancho_util_dxa": 8788,
+    "alto_util_cm": 24.2,
+    "cuerpo_pt": 10.0,
+    "tablas_pt": 9.5,
+    "encabezado": "word/header1.xml, banda 2.4 + 10.7 + 2.4 cm, fila 2.0 cm, logotipos 1.6 cm"
+  },
+  "documentos": {
+    "00_GUIA_DE_APLICACION_v06": {
+      "sha256": "958d50e545edf2d914e98417cce943c2f1c932049080240e83f6236a0dfb89c3",
+      "bytes": 1741642,
+      "tablas": 3,
+      "tablas_flotantes": 0,
+      "bordes_verticales": 0,
+      "insideV": 0,
+      "verticales_en_tblBorders": 0,
+      "omml": 0,
+      "fuente_minima_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "logotipos_encabezado": 2,
+      "altura_logotipo_cm": [
+        1.6,
+        1.6
+      ],
+      "header_references": 1,
+      "imagenes_en_cuerpo": 0,
+      "codigos_internos": {},
+      "altura_minima_fila_cm": null,
+      "altura_minima_captura_libre_cm": null,
+      "docx": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/02_EDITABLES/00_GUIA_DE_APLICACION_v06.docx",
+      "capturas_registradas": 0,
+      "alturas_captura_cm": [],
+      "pdf": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/01_IMPRIMIBLES/00_GUIA_DE_APLICACION_v06.pdf",
+      "exportacion": {
+        "motor": "libreoffice",
+        "detalle": "ModuleNotFoundError"
+      },
+      "paginas": 1,
+      "holguras_por_pagina_cm": [
+        1.11
+      ],
+      "holgura_inferior_cm": 1.11,
+      "png": [
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/00_GUIA_DE_APLICACION_v06_p001.png"
+      ]
+    },
+    "01_FICHA_TIEMPOS_v06": {
+      "sha256": "e7ee4e33259ecb1dc1ee433c049ba57f55789c032fae9dcfbd15eacc5081e81c",
+      "bytes": 1740949,
+      "tablas": 5,
+      "tablas_flotantes": 0,
+      "bordes_verticales": 0,
+      "insideV": 0,
+      "verticales_en_tblBorders": 0,
+      "omml": 0,
+      "fuente_minima_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "logotipos_encabezado": 2,
+      "altura_logotipo_cm": [
+        1.6,
+        1.6
+      ],
+      "header_references": 1,
+      "imagenes_en_cuerpo": 0,
+      "codigos_internos": {},
+      "altura_minima_fila_cm": 1.0,
+      "altura_minima_captura_libre_cm": null,
+      "docx": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/02_EDITABLES/01_FICHA_TIEMPOS_v06.docx",
+      "capturas_registradas": 12,
+      "alturas_captura_cm": [
+        1.0
+      ],
+      "pdf": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/01_IMPRIMIBLES/01_FICHA_TIEMPOS_v06.pdf",
+      "exportacion": {
+        "motor": "libreoffice",
+        "detalle": "ModuleNotFoundError"
+      },
+      "paginas": 1,
+      "holguras_por_pagina_cm": [
+        1.85
+      ],
+      "holgura_inferior_cm": 1.85,
+      "png": [
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/01_FICHA_TIEMPOS_v06_p001.png"
+      ]
+    },
+    "02_FICHA_DOCUMENTAL_v06": {
+      "sha256": "5f4d30058c247420d038614092be0645b7bddd6e44e6d714cc9258defe0b1771",
+      "bytes": 1744691,
+      "tablas": 4,
+      "tablas_flotantes": 0,
+      "bordes_verticales": 0,
+      "insideV": 0,
+      "verticales_en_tblBorders": 0,
+      "omml": 0,
+      "fuente_minima_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "logotipos_encabezado": 2,
+      "altura_logotipo_cm": [
+        1.6,
+        1.6
+      ],
+      "header_references": 1,
+      "imagenes_en_cuerpo": 0,
+      "codigos_internos": {},
+      "altura_minima_fila_cm": 0.42,
+      "altura_minima_captura_libre_cm": 0.6,
+      "docx": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/02_EDITABLES/02_FICHA_DOCUMENTAL_v06.docx",
+      "capturas_registradas": 67,
+      "alturas_captura_cm": [
+        0.42,
+        0.6,
+        0.62
+      ],
+      "pdf": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/01_IMPRIMIBLES/02_FICHA_DOCUMENTAL_v06.pdf",
+      "exportacion": {
+        "motor": "libreoffice",
+        "detalle": "ModuleNotFoundError"
+      },
+      "paginas": 2,
+      "holguras_por_pagina_cm": [
+        0.48,
+        0.97
+      ],
+      "holgura_inferior_cm": 0.97,
+      "png": [
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/02_FICHA_DOCUMENTAL_v06_p001.png",
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/02_FICHA_DOCUMENTAL_v06_p002.png"
+      ]
+    },
+    "03_CUESTIONARIO_SATISFACCION_v06": {
+      "sha256": "368edc4cbfa168eb146a24e10e9abb800cb8563fa86820b12281e34764a13d68",
+      "bytes": 1741616,
+      "tablas": 4,
+      "tablas_flotantes": 0,
+      "bordes_verticales": 0,
+      "insideV": 0,
+      "verticales_en_tblBorders": 0,
+      "omml": 0,
+      "fuente_minima_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "logotipos_encabezado": 2,
+      "altura_logotipo_cm": [
+        1.6,
+        1.6
+      ],
+      "header_references": 1,
+      "imagenes_en_cuerpo": 0,
+      "codigos_internos": {},
+      "altura_minima_fila_cm": 0.62,
+      "altura_minima_captura_libre_cm": 0.62,
+      "docx": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/02_EDITABLES/03_CUESTIONARIO_SATISFACCION_v06.docx",
+      "capturas_registradas": 14,
+      "alturas_captura_cm": [
+        0.62,
+        0.85,
+        1.0
+      ],
+      "pdf": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/01_IMPRIMIBLES/03_CUESTIONARIO_SATISFACCION_v06.pdf",
+      "exportacion": {
+        "motor": "libreoffice",
+        "detalle": "ModuleNotFoundError"
+      },
+      "paginas": 1,
+      "holguras_por_pagina_cm": [
+        0.93
+      ],
+      "holgura_inferior_cm": 0.93,
+      "png": [
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/03_CUESTIONARIO_SATISFACCION_v06_p001.png"
+      ]
+    },
+    "04_CONSENTIMIENTO_INFORMADO_v06": {
+      "sha256": "f2957cff2fd44b481f097793b7400ee316cc09601b4f54ba0e9060f309d0f1c4",
+      "bytes": 1741187,
+      "tablas": 2,
+      "tablas_flotantes": 0,
+      "bordes_verticales": 0,
+      "insideV": 0,
+      "verticales_en_tblBorders": 0,
+      "omml": 0,
+      "fuente_minima_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "logotipos_encabezado": 2,
+      "altura_logotipo_cm": [
+        1.6,
+        1.6
+      ],
+      "header_references": 1,
+      "imagenes_en_cuerpo": 0,
+      "codigos_internos": {},
+      "altura_minima_fila_cm": 0.7,
+      "altura_minima_captura_libre_cm": 0.7,
+      "docx": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/02_EDITABLES/04_CONSENTIMIENTO_INFORMADO_v06.docx",
+      "capturas_registradas": 9,
+      "alturas_captura_cm": [
+        0.7,
+        0.75,
+        0.85,
+        0.95,
+        1.15
+      ],
+      "pdf": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/01_IMPRIMIBLES/04_CONSENTIMIENTO_INFORMADO_v06.pdf",
+      "exportacion": {
+        "motor": "libreoffice",
+        "detalle": "ModuleNotFoundError"
+      },
+      "paginas": 1,
+      "holguras_por_pagina_cm": [
+        1.4
+      ],
+      "holgura_inferior_cm": 1.4,
+      "png": [
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/04_CONSENTIMIENTO_INFORMADO_v06_p001.png"
+      ]
+    },
+    "05_CERTIFICADO_VALIDACION_v06": {
+      "sha256": "2b6fff3b8735e9b0e5d327d7ff794f10c31d85f36be4798e6ee699e89e63a199",
+      "bytes": 1743868,
+      "tablas": 6,
+      "tablas_flotantes": 0,
+      "bordes_verticales": 0,
+      "insideV": 0,
+      "verticales_en_tblBorders": 0,
+      "omml": 0,
+      "fuente_minima_pt": 9.5,
+      "fuente_minima_tablas_pt": 9.5,
+      "fuente_minima_encabezado_pt": 9.5,
+      "logotipos_encabezado": 2,
+      "altura_logotipo_cm": [
+        1.6,
+        1.6
+      ],
+      "header_references": 1,
+      "imagenes_en_cuerpo": 0,
+      "codigos_internos": {},
+      "altura_minima_fila_cm": 0.6,
+      "altura_minima_captura_libre_cm": 0.6,
+      "docx": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/02_EDITABLES/05_CERTIFICADO_VALIDACION_v06.docx",
+      "capturas_registradas": 6,
+      "alturas_captura_cm": [
+        0.6,
+        1.5
+      ],
+      "pdf": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/01_IMPRIMIBLES/05_CERTIFICADO_VALIDACION_v06.pdf",
+      "exportacion": {
+        "motor": "libreoffice",
+        "detalle": "ModuleNotFoundError"
+      },
+      "paginas": 2,
+      "holguras_por_pagina_cm": [
+        0.6,
+        3.46
+      ],
+      "holgura_inferior_cm": 3.46,
+      "png": [
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/05_CERTIFICADO_VALIDACION_v06_p001.png",
+        "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/04_CONTROL_VISUAL/05_CERTIFICADO_VALIDACION_v06_p002.png"
+      ]
+    }
+  },
+  "resumen": {
+    "documentos": 6,
+    "bordes_verticales": 0,
+    "insideV": 0,
+    "tablas_flotantes": 0,
+    "omml": 0,
+    "fuente_minima_pt": 9.5,
+    "codigos_internos": 0,
+    "logotipos_encabezado": [
+      2
+    ]
+  },
+  "especificaciones": [
+    "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/03_FUENTES/00_GUIA_DE_APLICACION_v06.md",
+    "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/03_FUENTES/01_FICHA_TIEMPOS_v06.md",
+    "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/03_FUENTES/02_FICHA_DOCUMENTAL_v06.md",
+    "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/03_FUENTES/03_CUESTIONARIO_SATISFACCION_v06.md",
+    "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/03_FUENTES/04_CONSENTIMIENTO_INFORMADO_v06.md",
+    "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/03_FUENTES/05_CERTIFICADO_VALIDACION_v06.md"
+  ],
+  "leeme": "/workspace/tesis_sivac/salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v06/00_LEEME_v06.md"
+}
