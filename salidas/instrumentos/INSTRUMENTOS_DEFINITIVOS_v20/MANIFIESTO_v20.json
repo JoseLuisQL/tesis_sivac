@@ -1,0 +1,52 @@
+{
+  "version": "v20",
+  "fecha": "2026-11-04T00:00:00+00:00",
+  "modelo": "referencias/modelos_tesis/Fany_Tesis_Bachiller_2024.pdf",
+  "tipografia": "Times New Roman",
+  "documentos": {
+    "01_CARTA_AUTORIZACION": {
+      "descripcion": "Carta de autorización institucional",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/01_IMPRIMIBLES/01_CARTA_AUTORIZACION_v20.pdf",
+      "sha256_pdf": "71523b51d2d91863335b3827fb12a67cdd569bcf1cca8674523c2b0745ca9d99",
+      "origen": "CARTA-DE-AUTORIZACION.pdf",
+      "paginas": 2
+    },
+    "02_FORMATO_VALIDACION": {
+      "descripcion": "Anexo 3. Formato de validación por juicio de expertos",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/02_EDITABLES/02_FORMATO_VALIDACION_v20.docx",
+      "sha256_docx": "41cf14bf488c7fb090a90062163fca69b268d97892d8c96bd8bef801304b05e0",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/01_IMPRIMIBLES/02_FORMATO_VALIDACION_v20.pdf",
+      "paginas": 3,
+      "sha256_pdf": "49e773dc81f7996899869ab1e65b113bbf15eea567f465bb722e46116fb49f49"
+    },
+    "03_INSTRUMENTO_01_TIEMPOS": {
+      "descripcion": "Anexo 4.1. Ficha de registro de tiempos",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/02_EDITABLES/03_INSTRUMENTO_01_TIEMPOS_v20.docx",
+      "sha256_docx": "4680a1b2b155233ed0bcb35e6466ddc321d53a1363c4cc01f47aca28b0d1b36f",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/01_IMPRIMIBLES/03_INSTRUMENTO_01_TIEMPOS_v20.pdf",
+      "paginas": 1,
+      "sha256_pdf": "2712437d5b250a2388e650dcbfffa3462b5317fb18866399bea19a85ee3af79f"
+    },
+    "04_INSTRUMENTO_02_DOCUMENTAL": {
+      "descripcion": "Anexo 4.2. Ficha de auditoría documental",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/02_EDITABLES/04_INSTRUMENTO_02_DOCUMENTAL_v20.docx",
+      "sha256_docx": "d241c662302cebcfd0e470ef7baa8614bc8947004e599fa49e3ad5fe6e8ab10c",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/01_IMPRIMIBLES/04_INSTRUMENTO_02_DOCUMENTAL_v20.pdf",
+      "paginas": 3,
+      "sha256_pdf": "490e0622083313c2798c86e39f7fe3b608cc82be472544a4c8363445ba1dc68f"
+    },
+    "05_INSTRUMENTO_03_CUESTIONARIO": {
+      "descripcion": "Anexo 4.3. Cuestionario de satisfacción del usuario",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/02_EDITABLES/05_INSTRUMENTO_03_CUESTIONARIO_v20.docx",
+      "sha256_docx": "df833a4960129b64df0b734104871abab804256216d555ff200092b8dbd4944a",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/01_IMPRIMIBLES/05_INSTRUMENTO_03_CUESTIONARIO_v20.pdf",
+      "paginas": 1,
+      "sha256_pdf": "d659637e429039727b017f52ff8b3000d9a958cd8fd21bd876cc69c2354c287f"
+    }
+  },
+  "paquete_completo": {
+    "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v20/01_IMPRIMIBLES/00_PAQUETE_COMPLETO_v20.pdf",
+    "paginas": 10,
+    "sha256_pdf": "6c79278b7a396cddcc405aa205362a819f1b787bc2e8c0c2553ea6277c16cbbc"
+  }
+}
