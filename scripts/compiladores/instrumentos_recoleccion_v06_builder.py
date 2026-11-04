@@ -9,13 +9,23 @@ autorizados para v06 son tres:
    02 ficha documental, 03 cuestionario de satisfacción, 04 consentimiento
    informado, 05 certificado de validación y 00 guía de aplicación. El
    contenido, la redacción y los ítems de cada instrumento se conservan.
-2. Erradicación de líneas verticales: ningún ``w:tblBorders`` lleva ``w:left``,
-   ``w:right`` ni ``w:insideV``. Se conservan el borde superior, los separadores
-   horizontales internos y el borde inferior; la fila de encabezado recibe un
-   separador horizontal propio.
+2. Formulario legible de los instrumentos: las tablas de captura llevan
+   contorno y separadores internos horizontales, y el separador vertical se
+   dibuja solo en las columnas que se marcan (los ocho criterios y «Conf.» en
+   la ficha documental; «Prog./Entr./Dif./Conforme» en los despachos; la
+   escala 1-5 del cuestionario; Sí/No de la matriz de validación). Los campos
+   de texto largo —fecha, tipo de documento, número, lote, observación— quedan
+   abiertos, de modo que la hoja se puede escribir de corrido y sin rejas a
+   los lados. El contorno va al doble de grosor que las separaciones internas.
+   La fila de encabezado va sombreada en gris claro y en negrita; las filas de
+   un listado largo llevan bandas alternas para no perder el renglón. Las
+   tablas de lectura de la guía conservan la rejilla completa, porque no se
+   llenan.
 3. Comodidad de llenado: filas de captura de 1.0 cm como mínimo donde la
    geometría lo permite, leyenda compacta de cinco celdas en el cuestionario y
    reequilibrio de la mancha para cerrar entre 0.8 y 3.0 cm de holgura inferior.
+   Las instrucciones de cada formulario se imprimen como caja numerada de pasos,
+   no como prosa corrida.
 
 Geometría común (idéntica a v05)
 --------------------------------
@@ -462,25 +472,96 @@ def _borde_celda(celda, lados: Sequence[str], sz: int) -> None:
     )
 
 
-def _bordes_horizontales(tabla, exterior: int = 8, interior: int = 4,
-                         apa: bool = False, header_rows: int = 1) -> None:
-    """Bordes horizontales exclusivos: superior, internos y superior.
+def _agregar_borde_celda(celda, lado: str, sz: int = 4) -> None:
+    """Añade un borde a la celda sin borrar los que ya tenga."""
+    tcPr = celda._tc.get_or_add_tcPr()
+    bordes = tcPr.find(qn("w:tcBorders"))
+    if bordes is None:
+        bordes = OxmlElement("w:tcBorders")
+        tcPr.insert_element_before(
+            bordes, "w:shd", "w:noWrap", "w:tcMar", "w:textDirection",
+            "w:tcFitText", "w:vAlign", "w:hideMark", "w:headers",
+            "w:cellIns", "w:cellDel", "w:cellMerge", "w:tcPrChange",
+        )
+    previo = bordes.find(qn(f"w:{lado}"))
+    if previo is not None:
+        bordes.remove(previo)
+    el = OxmlElement(f"w:{lado}")
+    el.set(qn("w:val"), "single")
+    el.set(qn("w:sz"), str(sz))
+    el.set(qn("w:space"), "0")
+    el.set(qn("w:color"), "000000")
+    bordes.append(el)
 
-    ``apa=True`` deja solo las tres líneas canónicas: borde superior, borde
-    inferior del encabezado y borde inferior de la tabla. ``insideV``,
-    ``w:left`` y ``w:right`` no se emiten nunca; la ausencia del elemento deja
-    la tabla sin líneas verticales en Word.
+
+def _verticales_en(tabla, fronteras: Sequence[int], sz: int = 4) -> None:
+    """Dibuja un separador vertical en la frontera izquierda de esas columnas."""
+    for fila in tabla.rows:
+        celdas = fila.cells
+        for frontera in fronteras:
+            if 0 < frontera < len(celdas):
+                _agregar_borde_celda(celdas[frontera], "left", sz)
+
+
+SHADOW = "EDEDED"
+BANDA = "F7F7F7"
+
+
+def _sombrear(celda, relleno: str) -> None:
+    """Rellena la celda con un gris claro opaco (no imprime trama)."""
+    tcPr = celda._tc.get_or_add_tcPr()
+    previo = tcPr.find(qn("w:shd"))
+    if previo is not None:
+        tcPr.remove(previo)
+    shd = OxmlElement("w:shd")
+    shd.set(qn("w:val"), "clear")
+    shd.set(qn("w:color"), "auto")
+    shd.set(qn("w:fill"), relleno)
+    tcPr.insert_element_before(
+        shd, "w:noWrap", "w:tcMar", "w:textDirection", "w:tcFitText",
+        "w:vAlign", "w:hideMark", "w:headers", "w:cellIns", "w:cellDel",
+        "w:cellMerge", "w:tcPrChange",
+    )
+
+
+def _bordes_tabla(tabla, modo: str = "rejilla", exterior: int = 8,
+                  interior: int = 4, header_rows: int = 1,
+                  banda: bool = False) -> None:
+    """Dibuja el contorno de la tabla según el modo pedido.
+
+    ``rejilla`` cierra todas las celdas (cuatro lados exteriores y los
+    separadores internos, horizontales y verticales): cada casilla queda como
+    una caja donde se escribe. ``horizontal`` deja solo el borde superior, los
+    separadores internos horizontales y el inferior. ``caja`` dibuja únicamente
+    el contorno exterior. La fila de encabezado se sombrea siempre; ``banda``
+    alterna el relleno de las filas de datos para no perder el renglón.
     """
     tblPr = tabla._tbl.tblPr
     previo = tblPr.find(qn("w:tblBorders"))
     if previo is not None:
         tblPr.remove(previo)
     bordes = OxmlElement("w:tblBorders")
-    lados = ("top", "bottom") if apa else ("top", "insideH", "bottom")
+    if modo == "rejilla":
+        lados = ("top", "left", "bottom", "right", "insideH", "insideV")
+    elif modo == "formulario":
+        lados = ("top", "left", "bottom", "right", "insideH")
+    elif modo == "horizontal":
+        lados = ("top", "bottom", "insideH")
+    else:
+        lados = ("top", "left", "bottom", "right")
     for borde in lados:
         el = OxmlElement(f"w:{borde}")
         el.set(qn("w:val"), "single")
-        el.set(qn("w:sz"), str(exterior if borde != "insideH" else interior))
+        # Contorno al doble de grosor que las separaciones; las verticales
+        # interiores son un pelo más finas que las horizontales, para que la
+        # tabla se lea como formulario y no como una cuadrícula de rejas.
+        if borde in ("top", "left", "bottom", "right"):
+            grosor = exterior
+        elif borde == "insideV":
+            grosor = max(2, interior // 2)
+        else:
+            grosor = interior
+        el.set(qn("w:sz"), str(grosor))
         el.set(qn("w:space"), "0")
         el.set(qn("w:color"), "000000")
         bordes.append(el)
@@ -488,10 +569,17 @@ def _bordes_horizontales(tabla, exterior: int = 8, interior: int = 4,
         bordes, "w:shd", "w:tblLayout", "w:tblCellMar", "w:tblLook",
         "w:tblCaption", "w:tblDescription",
     )
+    for indice, fila in enumerate(tabla.rows):
+        if indice < header_rows:
+            for celda in fila.cells:
+                _sombrear(celda, SHADOW)
+        elif banda and (indice - header_rows) % 2 == 1:
+            for celda in fila.cells:
+                _sombrear(celda, BANDA)
     if header_rows and header_rows > 0:
         fila = tabla.rows[header_rows - 1]
         for celda in fila.cells:
-            _borde_celda(celda, ("bottom",), 4 if apa else 8)
+            _borde_celda(celda, ("bottom",), exterior)
 
 
 def _reiniciar_celda(celda):
@@ -588,7 +676,9 @@ def tabla_registro(doc, filas: Sequence[Sequence[Any]],
                    align_defecto: str = "left", header_align: str = "center",
                    align_cols: Optional[Sequence[str]] = None,
                    negritas: Sequence[Tuple[int, int]] = (),
-                   rejilla: bool = True, apa: bool = False,
+                   rejilla: bool = True, banda: bool = False,
+                   verticales: Optional[Sequence[int]] = None,
+                   rail: Optional[int] = None,
                    flex_col: Optional[int] = None,
                    alto_filas_cm: Optional[float] = None,
                    alto_exacto_cm: Optional[float] = None,
@@ -600,8 +690,16 @@ def tabla_registro(doc, filas: Sequence[Sequence[Any]],
                    merges: Sequence[Tuple[int, int, int, int]] = ()):
     """Tabla de registro con geometría exacta y protección de filas.
 
-    ``rejilla`` dibuja los separadores horizontales de los formularios (sin
-    líneas verticales); ``apa`` aplica las tres líneas horizontales de la guía.
+    ``rejilla=True`` cierra todas las celdas —cuatro lados exteriores y
+    separadores internos horizontales y verticales— para que cada casilla sea
+    una caja donde se escribe; la fila de encabezado va sombreada y en negrita.
+    ``verticales`` dibuja la tabla como formulario: contorno y líneas
+    horizontales, con separador vertical únicamente en las fronteras
+    indicadas. Los campos de texto largo quedan abiertos —sin reja a los
+    lados— para poder escribir de corrido. ``banda=True`` alterna el relleno
+    de las filas de datos, útil en listados largos. ``rail`` sombrea una columna fija de las filas de datos —la de
+    numeración— para que la vista no se pierda al recorrer una hoja de 40
+    renglones.
     ``alto_filas_cm`` fija una altura mínima de escritura y ``alto_exacto_cm``
     una altura exacta para filas de captura vacías. ``captura=True`` registra
     la altura mínima efectiva de las filas de llenado para el manifiesto.
@@ -667,12 +765,19 @@ def tabla_registro(doc, filas: Sequence[Sequence[Any]],
 
     _geometria(t, anchos_dxa)
     dq.eliminar_flotacion_tabla(t)
-    if apa:
-        _bordes_horizontales(t, exterior=8, interior=4, apa=True,
-                             header_rows=header_rows)
-    elif rejilla:
-        _bordes_horizontales(t, exterior=8, interior=4, apa=False,
-                             header_rows=header_rows)
+    if rejilla:
+        if verticales is None:
+            _bordes_tabla(t, modo="rejilla", exterior=8, interior=4,
+                          header_rows=header_rows, banda=banda)
+        else:
+            _bordes_tabla(t, modo="formulario", exterior=8, interior=4,
+                          header_rows=header_rows, banda=banda)
+            _verticales_en(t, verticales, sz=4)
+        if rail is not None and not banda:
+            for fila in t.rows[header_rows:]:
+                celdas = fila.cells
+                if rail < len(celdas):
+                    _sombrear(celdas[rail], BANDA)
     else:
         _sin_bordes(t)
     return t
@@ -739,10 +844,21 @@ def datos_generales(doc, pares: Sequence[Tuple[str, str]],
 
 
 def instrucciones(doc, lineas: Sequence[str], linea: float = 12.0,
-                  after: float = 1.0) -> None:
-    """Párrafos de instrucciones justificados, sin sangría."""
-    for texto in lineas:
-        par(doc, texto, align="both", line=linea, before=0, after=after)
+                  after: float = 2.0, numeradas: bool = True) -> None:
+    """Instrucciones como lista numerada, con sangría francesa.
+
+    Cada paso ocupa un párrafo: el número queda alineado a la izquierda y el
+    texto cuelga de él, de modo que el aplicador lee un paso por renglón sin
+    cruzar líneas de tabla. Es la forma habitual de un instructivo impreso:
+    no compite visualmente con las casillas que se van a llenar.
+    """
+    if not numeradas:
+        for texto in lineas:
+            par(doc, texto, align="both", line=linea, before=0, after=after)
+        return
+    for indice, texto in enumerate(lineas, start=1):
+        par(doc, f"**{indice}.**\t{texto}", align="both", line=linea,
+            before=0, after=after, left=0.75, first=-0.75)
 
 
 def seccion_romana(doc, numero: str, titulo_seccion: str,
@@ -760,62 +876,54 @@ def leyenda_escala(doc, linea: float = 12.0) -> None:
     fila = (("**1** Totalmente en desacuerdo", "**2** En desacuerdo",
              "**3** Ni de acuerdo ni en desacuerdo", "**4** De acuerdo",
              "**5** Totalmente de acuerdo"),)
-    tabla_registro(doc, fila, (3.1, 3.1, 3.1, 3.1, 3.1), header_rows=0,
-                   linea=10.5, align_defecto="center", flex_col=2,
-                   regla_altura="atLeast", alto_filas_cm=1.00,
-                   apa=True, margen_tb=MARGEN_TB)
+    t = tabla_registro(doc, fila, (3.1, 3.1, 3.1, 3.1, 3.1), header_rows=0,
+                       linea=10.5, align_defecto="center", flex_col=2,
+                       regla_altura="atLeast", alto_filas_cm=0.9,
+                       margen_tb=MARGEN_TB)
+    for celda in t.rows[0].cells:
+        _sombrear(celda, SHADOW)
+
+
+def leyenda_criterios(doc, criterios: Sequence[str],
+                      linea: float = 10.5) -> None:
+    """Leyenda de los criterios de una matriz dicotómica, en dos renglones.
+
+    Se imprime bajo el título del bloque, con el número en negrita alineado
+    con la columna que lleva ese mismo número en la tabla.
+    """
+    mitad = (len(criterios) + 1) // 2
+    filas = []
+    for indice in range(mitad):
+        izquierda = criterios[indice]
+        derecha = (criterios[indice + mitad]
+                   if indice + mitad < len(criterios) else "")
+        filas.append((f"**{indice + 1}** {izquierda}",
+                      f"**{indice + mitad + 1}** {derecha}" if derecha else ""))
+    t = tabla_registro(doc, filas, (7.75, 7.75), header_rows=0, linea=linea,
+                       align_defecto="left", flex_col=0, margen_tb=22)
+    for fila in t.rows:
+        for celda in fila.cells:
+            _sombrear(celda, BANDA)
 
 
 def banda_cierre_documental(doc, linea: float = 12.0,
-                             antes: float = 10.0) -> None:
-    """Cierre IV-V en una sola fila de dos columnas, sin líneas verticales."""
+                            antes: float = 10.0,
+                            numeros: Tuple[str, str] = ("IV", "V")) -> None:
+    """Cierre: observaciones y responsable, en dos cajas con rejilla."""
     par(doc, "", size=2, line=max(antes, 2.0), before=0, after=0)
-    t = doc.add_table(rows=1, cols=2)
-    t.style = None
-    t.alignment = WD_TABLE_ALIGNMENT.LEFT
-    t.autofit = False
-    dq._fijar_margenes_celda_tabla(t._tbl, MARGEN_LR, MARGEN_LR,
-                                   MARGEN_TB, MARGEN_TB)
-    _geometria(t, _dxa((8.2, 7.3), 1))
-    dq.eliminar_flotacion_tabla(t)
-    _bordes_horizontales(t, exterior=8, interior=4, apa=False, header_rows=0)
-
-    fila = t.rows[0]
-    fila.height = Cm(2.25)
-    fila.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
-    dq._preparar_tr(fila._tr, cant_split=True, tbl_header=False)
-
-    izq, der = t.cell(0, 0), t.cell(0, 1)
-    for celda in (izq, der):
-        celda.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
-        _fijar_margen_celda(celda, MARGEN_LR, MARGEN_TB)
-
-    p = _reiniciar_celda(izq)
-    pf = p.paragraph_format
-    pf.space_before = Pt(0)
-    pf.space_after = Pt(0)
-    pf.line_spacing = Pt(min(linea, 9.5))
-    add_runs(p, "IV. Observaciones", size=SP_TABLA, bold=True)
-
-    p = _reiniciar_celda(der)
-    pf = p.paragraph_format
-    pf.space_before = Pt(0)
-    pf.space_after = Pt(0)
-    pf.line_spacing = Pt(min(linea, 9.5))
-    add_runs(p, "V. Responsable", size=SP_TABLA, bold=True)
-
-    for etiqueta, valor in (
-            ("Nombre del observador:", "_" * 16),
-            ("Firma:", "_" * 32),
-            ("Fecha:", "____ / ____ / ________")):
-        p = der.add_paragraph()
-        pf = p.paragraph_format
-        pf.space_before = Pt(0)
-        pf.space_after = Pt(0)
-        pf.line_spacing = Cm(0.52)
-        add_runs(p, etiqueta + " ", size=SP_TABLA, bold=True)
-        add_runs(p, valor, size=SP_TABLA, bold=False)
-        _borde_parrafo(p, lados=("bottom",))
+    t = tabla_registro(doc, [
+        (f"{numeros[0]}. Observaciones", f"{numeros[1]}. Responsable"),
+        ("", "Nombre del observador: ________________\n"
+             "Firma: ______________________________\n"
+             "Fecha: ____ / ____ / ________"),
+    ], (8.2, 7.3), header_rows=1, linea=min(linea, 11.5),
+        align_defecto="left", flex_col=0,
+        alturas_cm=(0.55, 2.3), regla_altura="atLeast", margen_tb=MARGEN_TB)
+    for fila in t.rows[1:]:
+        for celda in fila.cells:
+            celda.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
+            for p in celda.paragraphs:
+                p.paragraph_format.line_spacing = Cm(0.62)
 
 
 # ---------------------------------------------------------------------------
@@ -857,7 +965,7 @@ def doc_00(doc) -> None:
          "Validez de contenido", "Tres jueces expertos",
          "Antes del trabajo de campo"),
     ], (3.1, 4.0, 4.6, 3.8), header_rows=1, linea=li,
-        align_defecto="left", flex_col=1, rejilla=False, apa=True)
+        align_defecto="left", flex_col=1, banda=True)
 
     rotulo(doc, "Los cuatro instantes y las dos fórmulas", line=li)
     tabla_registro(doc, [
@@ -872,7 +980,7 @@ def doc_00(doc) -> None:
                      "**T_vale = emisión − solicitud de despacho.** Son las "
                      "únicas definiciones; no se usa ninguna otra."),
     ], (3.1, 12.4), header_rows=1, linea=li, align_defecto="left",
-        flex_col=1, rejilla=False, apa=True)
+        flex_col=1)
 
     rotulo(doc, "Reglas operativas", line=li)
     tabla_registro(doc, [
@@ -914,7 +1022,7 @@ def doc_00(doc) -> None:
          "Conformes entre revisados, por cien, en cada indicador. No se "
          "compensan entre sí."),
     ], (3.6, 11.9), header_rows=1, linea=li, align_defecto="left",
-        flex_col=1, rejilla=False, apa=True)
+        flex_col=1, banda=True)
 
     par(doc, "Se imprime una hoja de 01, 02 y 03 por trabajador y momento, "
              "más las de continuación. El consentimiento va por duplicado.",
@@ -969,6 +1077,7 @@ def doc_01(doc) -> None:
             before=4, after=2, keep=True, keep_lines=True)
         tabla_registro(doc, filas_a, anchos, header_rows=1, linea=li,
                        align_defecto="center", flex_col=1,
+                       verticales=(2, 3, 4, 5),
                        alturas_cm=(0.85, 1.0, 1.0, 1.0),
                        regla_altura="atLeast", captura=True)
         par(doc, "**Bloque B. T_vale** — tiempo de emisión del comprobante o "
@@ -977,6 +1086,7 @@ def doc_01(doc) -> None:
             keep_lines=True)
         tabla_registro(doc, filas_b, anchos, header_rows=1, linea=li,
                        align_defecto="center", flex_col=1,
+                       verticales=(2, 3, 4, 5),
                        alturas_cm=(0.85, 1.0, 1.0, 1.0),
                        regla_altura="atLeast", captura=True)
 
@@ -986,7 +1096,7 @@ def doc_01(doc) -> None:
     seccion_romana(doc, "IV", "Observaciones", lambda: tabla_registro(
         doc, [("",), ("",)], (15.5,), header_rows=0, linea=li,
         align_defecto="left", flex_col=0,
-        alturas_cm=(1.0, 1.0), regla_altura="atLeast",
+        alturas_cm=(1.3, 1.3), regla_altura="atLeast",
         captura=True, margen_tb=MARGEN_TB), linea=li, before=5, after=2)
 
     seccion_romana(doc, "V", "Responsable", lambda: tabla_registro(doc, [
@@ -1000,100 +1110,137 @@ def doc_01(doc) -> None:
     parrafo_final_compacto(doc)
 
 
+def leyenda_criterios_documentales(doc, linea: float = 11.0) -> None:
+    """Rejilla de 4x2 con el nombre corto de cada criterio de auditoría.
+
+    La tabla de captura solo lleva los números 1 a 8; esta leyenda, impresa
+    inmediatamente encima, dice qué comprueba cada número sin obligar a leer
+    un párrafo corrido.
+    """
+    criterios = (
+        "**1** Biológico (nombre y presentación)",
+        "**2** Lote",
+        "**3** Vencimiento (mes y año)",
+        "**4** Cantidad (dosis o frascos)",
+        "**5** Establecimiento",
+        "**6** Responsable y firmas",
+        "**7** Saldo (inicial + ingresos − salidas)",
+        "**8** Correlatividad temporal",
+    )
+    filas = (criterios[:4], criterios[4:])
+    tabla_registro(doc, filas, (3.875,) * 4, header_rows=0, linea=linea,
+                   align_defecto="left", flex_col=0,
+                   alturas_cm=(0.5, 0.5), regla_altura="atLeast",
+                   margen_tb=24)
+
+
 def doc_02(doc) -> None:
     """Ficha documental: Dimensión 2, consistencia documental."""
     li = INTERLINEA["02"]
-    lt = 10.5                     # interlineado exacto de las tablas compactas
+    lt = 11.5                     # interlineado de las tablas compactas
     mt = MARGEN_TB
-    titulo(doc, "Ficha documental", line=li)
-    linea_identificacion(doc, "Instrumento 02 · Ficha documental · "
-                              "Versión v06 · Hoja ____ de ____", li)
-
-    seccion_romana(doc, "I", "Datos generales", lambda: (
-        tabla_registro(doc, [
-            ("N.° de trabajador", "", "Centro de salud", ""),
-            ("Fecha", "____/____/______", "Momento",
-             "☐ Antes del SIVAC   ☐ Con SIVAC"),
-        ], (3.9, 3.4, 2.9, 5.3), header_rows=0, linea=lt,
-            align_defecto="left", flex_col=3,
-            negritas=((0, 0), (0, 2), (1, 0), (1, 2)),
-            alturas_cm=(0.6, 0.6), regla_altura="atLeast",
-            captura=True, libre=True, margen_tb=mt),
-        par(doc, "Periodo revisado: del ____ / ____ / ________ al "
-                 "____ / ____ / ________", size=SP_TABLA, line=lt,
-            before=3, after=0),
-    ), linea=li, before=4, after=2)
-
-    seccion_romana(doc, "II", "Instrucciones", lambda: par(
-        doc, "Un renglón por asiento; marque Sí o No en los ocho criterios: "
-             "1 biológico (nombre y presentación); 2 lote; 3 vencimiento (mes "
-             "y año); 4 cantidad; 5 establecimiento; 6 responsable y firmas; "
-             "7 saldo aritmético (inicial + ingresos − salidas); 8 "
-             "correlatividad temporal con los asientos contiguos. **Un solo No "
-             "anula el documento.** El Bloque B (hoja 2) registra los "
-             "despachos: es conforme solo si lo entregado iguala lo programado "
-             "en la misma unidad; toda diferencia es una observación.",
-        align="both",
-        size=SP_TABLA, line=lt, before=2, after=0), linea=li, before=4,
-        after=2)
+    asientos_hoja = 20            # asientos de la hoja 1; la hoja 2 lleva 20
+    total_asientos = 40
+    total_despachos = 25
 
     cab_a = ("N.°", "Fecha", "Tipo de doc.", "N.° de doc.", "Lote",
              "1", "2", "3", "4", "5", "6", "7", "8", "Conf.")
-    filas_a = [cab_a] + [(str(n), "", "", "", "", "", "", "", "", "", "",
-                          "", "", "") for n in range(1, 41)]
-
-    cab_b = ("N.°", "Fecha", "Establecimiento destino", "Biológico",
+    anchos_a = (0.8, 1.6, 2.3, 2.2, 1.5, 0.72, 0.72, 0.72, 0.72,
+                0.72, 0.72, 0.72, 0.72, 1.26)
+    cab_b = ("N.°", "Fecha", "Destino", "Biológico",
              "Prog.", "Entr.", "Dif.", "Observación", "Conforme")
-    filas_b = [cab_b] + [(str(n), "", "", "", "", "", "", "", "")
-                         for n in range(1, 26)]
+    anchos_b = (0.8, 1.6, 2.6, 1.9, 1.1, 1.1, 1.1, 3.1, 2.2)
 
-    def bloque_a() -> None:
-        par(doc, "**III. Bloque A. Documentos auditados (40 por hoja).**",
-            size=SP_TABLA, line=lt, before=2, after=2, keep=True,
+    titulo(doc, "Ficha documental", line=li)
+    linea_identificacion(doc, "Instrumento 02 · Ficha documental · "
+                              "Versión v06 · Hoja 1 de 3", lt)
+
+    seccion_romana(doc, "I", "Datos generales", lambda: tabla_registro(doc, [
+        ("N.° de trabajador", "", "Centro de salud", ""),
+        ("Fecha", "____/____/______", "Momento",
+         "☐ Antes del SIVAC  ☐ Con SIVAC"),
+        ("Periodo revisado", "del ____ / ____ / ______ al ____ / ____ / ______",
+         "", ""),
+    ], (3.2, 3.2, 2.9, 6.2), header_rows=0, linea=lt,
+        align_defecto="left", flex_col=3,
+        negritas=((0, 0), (0, 2), (1, 0), (1, 2), (2, 0)),
+        alturas_cm=(0.55, 0.55, 0.55), regla_altura="atLeast",
+        captura=True, libre=True, margen_tb=mt,
+        merges=((2, 1, 2, 3),)), linea=li, before=3, after=1)
+
+    seccion_romana(doc, "II", "Instrucciones", lambda: instrucciones(doc, [
+        "Una fila por documento revisado: anote fecha, tipo, número y lote.",
+        "Escriba **S** (sí) o **N** (no) en cada uno de los ocho criterios.",
+        "Marque **Conf.** con S solo si los ocho criterios quedaron en S: "
+        "**un solo N anula el documento.**",
+        "El bloque B revisa los despachos: **Prog.** programado, **Entr.** "
+        "entregado, **Dif.** entregado − programado, en la misma unidad. "
+        "Es conforme solo si entregado = programado.",
+        "La hoja 2 continúa el bloque A desde el asiento 21; la hoja 3 revisa "
+        "los despachos y cierra la ficha.",
+    ], linea=10.5, after=2), linea=li, before=3, after=1)
+
+    def hoja_a(inicio: int, fin: int, rotulo_bloque: str,
+               primera: bool, alto: float) -> None:
+        if primera:
+            rotulo(doc, "III. Bloque A. Documentos auditados", line=li,
+                   before=5, after=1)
+            par(doc, f"Asientos {inicio} a {fin} de {total_asientos}.",
+                size=SP_TABLA, line=9.5, before=0, after=2, keep=True,
+                keep_lines=True)
+        else:
+            par(doc, rotulo_bloque, size=SP, bold=True, line=lt,
+                before=0, after=2, keep=True, keep_lines=True)
+        par(doc, "Criterios: **1** biológico · **2** lote · **3** vencimiento "
+                 "· **4** cantidad · **5** establecimiento · **6** responsable "
+                 "y firmas · **7** saldo · **8** correlatividad temporal.",
+            size=SP_TABLA, line=10.0, before=0, after=2, keep=True,
             keep_lines=True)
-        tabla_registro(doc, filas_a,
-                       (0.8, 1.7, 1.85, 1.95, 1.7, 0.75, 0.75, 0.75, 0.75,
-                        0.75, 0.75, 0.75, 0.75, 1.3),
-                       header_rows=1, linea=10.0, align_defecto="center",
-                       flex_col=2,
-                       alturas_cm=[0.70] + [0.42] * 40,
-                       regla_altura="atLeast", captura=True, margen_tb=14)
+        filas = [cab_a] + [(str(n), "", "", "", "") +
+                           ("",) * 9 for n in range(inicio, fin + 1)]
+        tabla_registro(doc, filas, anchos_a, header_rows=1, linea=10.0,
+                       align_defecto="center", flex_col=2, rail=0,
+                       verticales=tuple(range(5, 14)),
+                       alturas_cm=[0.8] + [alto] * (fin - inicio + 1),
+                       regla_altura="exact", captura=True, margen_tb=8)
 
-    bloque_a()
+    hoja_a(1, asientos_hoja,
+           "III. Bloque A (continuación). Documentos auditados", True, 0.74)
 
     linea_identificacion(doc, "Instrumento 02 · Ficha documental · "
-                              "Versión v06 · Hoja ____ de ____", li,
+                              "Versión v06 · Hoja 2 de 3", lt,
                          salto_pagina=True)
-    par(doc, "N.°: ______   Centro: __________   Momento: ☐ Antes de SIVAC "
-             "☐ Con SIVAC   Fecha: __/__/____", size=SP_TABLA, line=lt,
-        before=4, after=0)
+    par(doc, "N.° de trabajador: ________   Centro: ___________________   "
+             "Momento: ☐ Antes del SIVAC   ☐ Con SIVAC", size=SP_TABLA,
+        line=lt, before=4, after=2)
+    hoja_a(asientos_hoja + 1, total_asientos,
+           "III. Bloque A (continuación). Asientos 21 a 40.", False, 0.95)
+    par(doc, "**Documentos revisados** ______   ·   **Documentos conformes** "
+             "______", size=SP_TABLA, line=lt, before=10, after=0)
 
-    def bloque_b() -> None:
-        par(doc, "**III (continuación). Bloque B. Despachos auditados (25 "
-                 "por hoja).** Prog. = cantidad programada; Entr. = cantidad "
-                 "entregada; Dif. = entregado − programado, en la misma unidad "
-                 "(dosis o frascos). El documento de ajuste se anota como "
-                 "observación.", size=SP_TABLA, line=lt, before=6,
-            after=2, keep=True, keep_lines=True)
-        tabla_registro(doc, filas_b,
-                       (0.8, 1.6, 2.7, 1.9, 1.1, 1.1, 1.1, 3.2, 2.0),
-                       header_rows=1, linea=lt, align_defecto="center",
-                       flex_col=2,
-                       alturas_cm=[0.8] + [0.62] * 25,
-                       captura=True, margen_tb=mt)
+    linea_identificacion(doc, "Instrumento 02 · Ficha documental · "
+                              "Versión v06 · Hoja 3 de 3", lt,
+                         salto_pagina=True)
+    par(doc, "N.° de trabajador: ________   Centro: ___________________   "
+             "Momento: ☐ Antes del SIVAC   ☐ Con SIVAC", size=SP_TABLA,
+        line=lt, before=4, after=2)
 
-    bloque_b()
+    rotulo(doc, "IV. Bloque B. Despachos auditados", line=li,
+           before=4, after=1)
+    filas_b = [cab_b] + [(str(n), "", "", "", "", "", "", "", "")
+                         for n in range(1, 26)]
+    tabla_registro(doc, filas_b, anchos_b, header_rows=1, linea=lt,
+                   align_defecto="center", flex_col=2, rail=0,
+                   verticales=(4, 5, 6, 7, 8),
+                   alturas_cm=[0.7] + [0.62] * 25, regla_altura="exact",
+                   captura=True, margen_tb=mt)
 
-    par(doc, "Documentos conformes ______ / revisados ______      Despachos "
-             "conformes ______ / revisados ______", size=SP_TABLA, bold=True,
-        line=lt, before=10, after=0)
-    par(doc, "Si el número de asientos supera las filas de la hoja, continúe "
-             "en la hoja siguiente con la numeración corrida y anote «Hoja __ "
-             "de __» en ambas. El segundo observador firma la doble "
-             "codificación en la hoja de continuación.", size=SP_TABLA, line=lt,
-        before=6, after=0)
+    par(doc, f"**Documentos conformes** ______ / {total_asientos}      ·      "
+             f"**Despachos conformes** ______ / {total_despachos}",
+        size=SP_TABLA, line=lt, before=10, after=0)
 
-    banda_cierre_documental(doc, linea=li, antes=15.0)
+    banda_cierre_documental(doc, linea=li, antes=5.0,
+                            numeros=("V", "VI"))
     parrafo_final_compacto(doc)
 
 
@@ -1121,7 +1268,7 @@ def doc_03(doc) -> None:
 
     def instrucciones_y_escala() -> None:
         par(doc, "Marque con una X un solo número por afirmación. No escriba "
-                 "su nombre; sus respuestas son confidenciales.", align="both",
+                 "su nombre: sus respuestas son confidenciales.", align="both",
             line=li, before=0, after=4)
         leyenda_escala(doc, linea=li)
 
@@ -1164,12 +1311,18 @@ def doc_03(doc) -> None:
     filas += [(str(n), texto, "", "", "", "", "")
               for n, texto in enumerate(items_up, start=5)]
 
-    seccion_romana(doc, "III", "Contenido", lambda: tabla_registro(
-        doc, filas, (0.9, 11.2, 0.68, 0.68, 0.68, 0.68, 0.68),
-        header_rows=1, linea=li, align_defecto="left", flex_col=1,
-        negritas=((1, 1), (6, 1)),
-        alturas_cm=[0.55, 0.62] + [1.0] * 4 + [0.62] + [1.0] * 4,
-        regla_altura="atLeast", captura=True, libre=True), linea=li, before=5)
+    def contenido() -> None:
+        t = tabla_registro(
+            doc, filas, (0.9, 11.2, 0.68, 0.68, 0.68, 0.68, 0.68),
+            header_rows=1, linea=li, align_defecto="left", flex_col=1,
+            negritas=((1, 1), (6, 1)), verticales=(2, 3, 4, 5, 6),
+            alturas_cm=[0.55, 0.62] + [1.05] * 4 + [0.62] + [1.05] * 4,
+            regla_altura="atLeast", captura=True, libre=True, rail=0)
+        for indice in (1, 6):          # bandas de subescala AP y UP
+            for celda in t.rows[indice].cells:
+                _sombrear(celda, SHADOW)
+
+    seccion_romana(doc, "III", "Contenido", contenido, linea=li, before=5)
 
     par(doc, "Total AP: ____ / 20      Total UP: ____ / 20      Total: ____ "
              "/ 40", size=SP_TABLA, line=li, before=6, after=0)
@@ -1814,15 +1967,22 @@ def escribir_especificaciones(registro: Dict[str, Dict[str, Any]]) -> list[str]:
             "en `word/header1.xml`, con altura de fila exacta de 2.0 cm, ambos "
             "logotipos a 1.6 cm y `vAlign` centrado; el cuerpo no contiene "
             "imágenes. Times New Roman 10 pt en el cuerpo y 9.5 pt en las "
-            "tablas; ninguna fuente por debajo de 9.5 pt. Bordes: solo líneas "
-            "horizontales nativas; ningún `w:tblBorders` lleva `w:left`, "
-            "`w:right` ni `w:insideV`. Todas las filas con `cantSplit`; la "
+            "tablas; ninguna fuente por debajo de 9.5 pt. Bordes: contorno y "
+            "separadores horizontales nativos en las tablas de captura —"
+            "`w:top`, `w:left`, `w:bottom`, `w:right`, `w:insideH`—, con "
+            "`w:insideV` solo en las columnas de marcado, de modo que los "
+            "campos de texto quedan abiertos para escribir de corrido; el "
+            "contorno dobla el grosor de las separaciones internas. La fila de "
+            "encabezado va sombreada en gris claro y la columna de numeración "
+            "como carril de lectura. Todas las filas con `cantSplit`; la "
             "fila de encabezado con `tblHeader`. Cero OMML, cero tablas "
             "flotantes y cero códigos internos visibles.",
             "",
             "## Control medido",
             "",
-            f"- Bordes verticales: {datos.get('bordes_verticales')}.",
+            f"- Bordes verticales dibujados: {datos.get('bordes_verticales')} "
+            f"(contorno de cada tabla y separadores de las columnas de "
+            f"marcado).",
             f"- Tablas flotantes: {datos.get('tablas_flotantes')}.",
             f"- OMML: {datos.get('omml')}.",
             f"- Fuente mínima: {datos.get('fuente_minima_pt')} pt; en "
@@ -1926,9 +2086,15 @@ def escribir_guia_lectura(registro: Dict[str, Dict[str, Any]]) -> Path:
         "",
         "A4 vertical, sin escala. Márgenes: izquierdo 3.0 cm, superior "
         "3.0 cm, derecho e inferior 2.5 cm. Times New Roman 10 pt en el "
-        "cuerpo y 9.5 pt en las tablas. Las tablas usan solo líneas "
-        "horizontales; no llevan líneas verticales. No se imprime ninguna "
-        "nota de producción.",
+        "cuerpo y 9.5 pt en las tablas. Las tablas de captura llevan contorno "
+        "y separadores horizontales, con línea vertical solo en las columnas "
+        "que se marcan: los ocho criterios y Conf. en la ficha documental, "
+        "Prog./Entr./Dif./Conforme en los despachos, la escala 1 a 5 del "
+        "cuestionario y los Sí/No de la matriz de validación. Los campos de "
+        "texto quedan abiertos para escribir de corrido. El encabezado va "
+        "sombreado en gris claro y, en los listados de 20, 25 o 40 renglones, "
+        "la columna de numeración va sombreada como carril de lectura. No se "
+        "imprime ninguna nota de producción.",
         "",
         "## Reproducibilidad",
         "",

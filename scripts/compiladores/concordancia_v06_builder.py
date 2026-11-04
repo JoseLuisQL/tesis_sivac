@@ -3,7 +3,7 @@
 
 El .md es la fuente y manda el orden de los bloques; este script solo le da
 la manufactura del paquete (A4, márgenes 3/3/2.5/2.5, Times New Roman 10 pt
-cuerpo y 9.5 pt tablas, tablas APA 7 sin líneas verticales) y comprueba que
+cuerpo y 9.5 pt tablas, contorno con separadores horizontales) y comprueba que
 no pase de dos páginas.
 
 Uso:
@@ -46,12 +46,14 @@ def _dxa(valor_cm: float) -> int:
     return int(round(valor_cm * 567))
 
 
-def _bordes_horizontales(tabla) -> None:
+def _rejilla(tabla) -> None:
+    """Cierra todas las celdas: contorno y separadores internos, H y V."""
     tbl_pr = tabla._tbl.tblPr
     for hijo in tbl_pr.findall(qn("w:tblBorders")):
         tbl_pr.remove(hijo)
     bordes = OxmlElement("w:tblBorders")
-    for lado, tamano in (("top", 8), ("bottom", 8), ("insideH", 4)):
+    for lado, tamano in (("top", 8), ("left", 8), ("bottom", 8),
+                         ("right", 8), ("insideH", 4), ("insideV", 4)):
         el = OxmlElement(f"w:{lado}")
         el.set(qn("w:val"), "single")
         el.set(qn("w:sz"), str(tamano))
@@ -194,7 +196,7 @@ def _tabla(doc, filas, anchos_cm) -> None:
     tabla = doc.add_table(rows=len(filas), cols=len(anchos_cm))
     tabla.alignment = WD_TABLE_ALIGNMENT.LEFT
     tabla.style = None
-    _bordes_horizontales(tabla)
+    _rejilla(tabla)
     _geometria(tabla, anchos_cm)
     for indice, fila in enumerate(filas):
         for celda, valor, ancho in zip(tabla.rows[indice].cells, fila,

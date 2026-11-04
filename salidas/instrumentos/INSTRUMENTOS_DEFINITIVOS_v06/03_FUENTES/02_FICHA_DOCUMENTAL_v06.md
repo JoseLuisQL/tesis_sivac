@@ -11,7 +11,7 @@ fecha: 2026-11-03
 
 # Ficha documental
 
-**Archivo:** `02_FICHA_DOCUMENTAL_v06.docx`. **Orden de aplicación:** 02. **Páginas:** 2.
+**Archivo:** `02_FICHA_DOCUMENTAL_v06.docx`. **Orden de aplicación:** 02. **Páginas:** 3.
 
 ## Función en el trabajo de campo
 
@@ -42,17 +42,17 @@ Consistencia documental: registros sin discrepancias (RSD) y concordancia entre 
 
 ## Producción
 
-A4 vertical; margen izquierdo 3.0 cm; superior 3.0 cm; derecho e inferior 2.5 cm; ancho útil 15.5 cm; distancia del encabezado 0.8 cm. Banda institucional de tres celdas de 2.4, 10.7 y 2.4 cm en `word/header1.xml`, con altura de fila exacta de 2.0 cm, ambos logotipos a 1.6 cm y `vAlign` centrado; el cuerpo no contiene imágenes. Times New Roman 10 pt en el cuerpo y 9.5 pt en las tablas; ninguna fuente por debajo de 9.5 pt. Bordes: solo líneas horizontales nativas; ningún `w:tblBorders` lleva `w:left`, `w:right` ni `w:insideV`. Todas las filas con `cantSplit`; la fila de encabezado con `tblHeader`. Cero OMML, cero tablas flotantes y cero códigos internos visibles.
+A4 vertical; margen izquierdo 3.0 cm; superior 3.0 cm; derecho e inferior 2.5 cm; ancho útil 15.5 cm; distancia del encabezado 0.8 cm. Banda institucional de tres celdas de 2.4, 10.7 y 2.4 cm en `word/header1.xml`, con altura de fila exacta de 2.0 cm, ambos logotipos a 1.6 cm y `vAlign` centrado; el cuerpo no contiene imágenes. Times New Roman 10 pt en el cuerpo y 9.5 pt en las tablas; ninguna fuente por debajo de 9.5 pt. Bordes: contorno y separadores horizontales nativos en las tablas de captura —`w:top`, `w:left`, `w:bottom`, `w:right`, `w:insideH`—, con `w:insideV` solo en las columnas de marcado, de modo que los campos de texto quedan abiertos para escribir de corrido; el contorno dobla el grosor de las separaciones internas. La fila de encabezado va sombreada en gris claro y la columna de numeración como carril de lectura. Todas las filas con `cantSplit`; la fila de encabezado con `tblHeader`. Cero OMML, cero tablas flotantes y cero códigos internos visibles.
 
 ## Control medido
 
-- Bordes verticales: 0.
+- Bordes verticales dibujados: 522 (contorno de cada tabla y separadores de las columnas de marcado).
 - Tablas flotantes: 0.
 - OMML: 0.
 - Fuente mínima: 9.5 pt; en tablas: 9.5 pt.
-- Altura mínima de fila de captura: 0.42 cm.
-- Holgura inferior: 0.97 cm.
-- SHA-256 del DOCX: `5f4d30058c247420d038614092be0645b7bddd6e44e6d714cc9258defe0b1771`.
+- Altura mínima de fila de captura: 0.55 cm.
+- Holgura inferior: 2.61 cm.
+- SHA-256 del DOCX: `8df6ff0e273c46f808521ac210cc01a2401ad6a104f3f0f85564f2959d1a9d14`.
 
 ## Límites que el maquetador no debe cruzar
 

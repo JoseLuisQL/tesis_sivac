@@ -41,17 +41,17 @@ No mide: acredita la validez de contenido de los ítems por juicio de tres exper
 
 ## Producción
 
-A4 vertical; margen izquierdo 3.0 cm; superior 3.0 cm; derecho e inferior 2.5 cm; ancho útil 15.5 cm; distancia del encabezado 0.8 cm. Banda institucional de tres celdas de 2.4, 10.7 y 2.4 cm en `word/header1.xml`, con altura de fila exacta de 2.0 cm, ambos logotipos a 1.6 cm y `vAlign` centrado; el cuerpo no contiene imágenes. Times New Roman 10 pt en el cuerpo y 9.5 pt en las tablas; ninguna fuente por debajo de 9.5 pt. Bordes: solo líneas horizontales nativas; ningún `w:tblBorders` lleva `w:left`, `w:right` ni `w:insideV`. Todas las filas con `cantSplit`; la fila de encabezado con `tblHeader`. Cero OMML, cero tablas flotantes y cero códigos internos visibles.
+A4 vertical; margen izquierdo 3.0 cm; superior 3.0 cm; derecho e inferior 2.5 cm; ancho útil 15.5 cm; distancia del encabezado 0.8 cm. Banda institucional de tres celdas de 2.4, 10.7 y 2.4 cm en `word/header1.xml`, con altura de fila exacta de 2.0 cm, ambos logotipos a 1.6 cm y `vAlign` centrado; el cuerpo no contiene imágenes. Times New Roman 10 pt en el cuerpo y 9.5 pt en las tablas; ninguna fuente por debajo de 9.5 pt. Bordes: contorno y separadores horizontales nativos en las tablas de captura —`w:top`, `w:left`, `w:bottom`, `w:right`, `w:insideH`—, con `w:insideV` solo en las columnas de marcado, de modo que los campos de texto quedan abiertos para escribir de corrido; el contorno dobla el grosor de las separaciones internas. La fila de encabezado va sombreada en gris claro y la columna de numeración como carril de lectura. Todas las filas con `cantSplit`; la fila de encabezado con `tblHeader`. Cero OMML, cero tablas flotantes y cero códigos internos visibles.
 
 ## Control medido
 
-- Bordes verticales: 0.
+- Bordes verticales dibujados: 24 (contorno de cada tabla y separadores de las columnas de marcado).
 - Tablas flotantes: 0.
 - OMML: 0.
 - Fuente mínima: 9.5 pt; en tablas: 9.5 pt.
 - Altura mínima de fila de captura: 0.6 cm.
 - Holgura inferior: 3.46 cm.
-- SHA-256 del DOCX: `2b6fff3b8735e9b0e5d327d7ff794f10c31d85f36be4798e6ee699e89e63a199`.
+- SHA-256 del DOCX: `b81f3c833ed383ccf7fd2f84e27d9b7731b1110aa8c29d961c226c985633a866`.
 
 ## Límites que el maquetador no debe cruzar
 

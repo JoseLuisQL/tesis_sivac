@@ -19,7 +19,7 @@
 |---|---|---|---|---|
 | 00 | Guía de aplicación de los instrumentos | `01_IMPRIMIBLES/00_GUIA_DE_APLICACION_v06.pdf` | `02_EDITABLES/00_GUIA_DE_APLICACION_v06.docx` | 1 |
 | 01 | Ficha de tiempos | `01_IMPRIMIBLES/01_FICHA_TIEMPOS_v06.pdf` | `02_EDITABLES/01_FICHA_TIEMPOS_v06.docx` | 1 |
-| 02 | Ficha documental | `01_IMPRIMIBLES/02_FICHA_DOCUMENTAL_v06.pdf` | `02_EDITABLES/02_FICHA_DOCUMENTAL_v06.docx` | 2 |
+| 02 | Ficha documental | `01_IMPRIMIBLES/02_FICHA_DOCUMENTAL_v06.pdf` | `02_EDITABLES/02_FICHA_DOCUMENTAL_v06.docx` | 3 |
 | 03 | Cuestionario de satisfacción del usuario | `01_IMPRIMIBLES/03_CUESTIONARIO_SATISFACCION_v06.pdf` | `02_EDITABLES/03_CUESTIONARIO_SATISFACCION_v06.docx` | 1 |
 | 04 | Consentimiento informado | `01_IMPRIMIBLES/04_CONSENTIMIENTO_INFORMADO_v06.pdf` | `02_EDITABLES/04_CONSENTIMIENTO_INFORMADO_v06.docx` | 1 |
 | 05 | Certificado de validación de contenido | `01_IMPRIMIBLES/05_CERTIFICADO_VALIDACION_v06.pdf` | `02_EDITABLES/05_CERTIFICADO_VALIDACION_v06.docx` | 2 |
@@ -45,7 +45,7 @@
 
 ## Reglas de impresión
 
-A4 vertical, sin escala. Márgenes: izquierdo 3.0 cm, superior 3.0 cm, derecho e inferior 2.5 cm. Times New Roman 10 pt en el cuerpo y 9.5 pt en las tablas. Las tablas usan solo líneas horizontales; no llevan líneas verticales. No se imprime ninguna nota de producción.
+A4 vertical, sin escala. Márgenes: izquierdo 3.0 cm, superior 3.0 cm, derecho e inferior 2.5 cm. Times New Roman 10 pt en el cuerpo y 9.5 pt en las tablas. Las tablas de captura llevan contorno y separadores horizontales, con línea vertical solo en las columnas que se marcan: los ocho criterios y Conf. en la ficha documental, Prog./Entr./Dif./Conforme en los despachos, la escala 1 a 5 del cuestionario y los Sí/No de la matriz de validación. Los campos de texto quedan abiertos para escribir de corrido. El encabezado va sombreado en gris claro y, en los listados de 20, 25 o 40 renglones, la columna de numeración va sombreada como carril de lectura. No se imprime ninguna nota de producción.
 
 ## Reproducibilidad
 
