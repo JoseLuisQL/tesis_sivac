@@ -53,56 +53,56 @@ RND = random.Random(SEMILLA)
 PADRON = [
     ("TRAB-01", "ALMACÉN (CHANKA)",              "CHANKA-001",   "OBS-01", date(2026, 8, 10), date(2026, 10, 12)),
     ("TRAB-02", "ALMACÉN (CHANKA)",              "CHANKA-001",   "OBS-02", date(2026, 8, 10), date(2026, 10, 12)),
-    ("TRAB-03", "Hospital Andahuaylas",          "H-ANDA-001",   "OBS-01", date(2026, 8, 11), date(2026, 10, 13)),
-    ("TRAB-04", "Hospital ESSALUD Andahuaylas",  "H-ESAL-001",   "OBS-02", date(2026, 8, 11), date(2026, 10, 13)),
-    ("TRAB-05", "Centro de Salud Andahuaylas",   "CS-ANDA-001",  "OBS-01", date(2026, 8, 12), date(2026, 10, 14)),
-    ("TRAB-06", "Talavera",                      "CS-TALA-001",  "OBS-02", date(2026, 8, 12), date(2026, 10, 14)),
-    ("TRAB-07", "San Jeronimo",                  "CS-SJER-001",  "OBS-01", date(2026, 8, 13), date(2026, 10, 15)),
-    ("TRAB-08", "Huancaray",                     "CS-HUAN-041",  "OBS-02", date(2026, 8, 13), date(2026, 10, 15)),
-    ("TRAB-09", "Chicmo",                        "CS-CHIC-001",  "OBS-01", date(2026, 8, 14), date(2026, 10, 16)),
-    ("TRAB-10", "Huancabamba",                   "CS-HUAC-001",  "OBS-02", date(2026, 8, 14), date(2026, 10, 16)),
-    ("TRAB-11", "Pampachiri",                    "CS-PAMP-001",  "OBS-01", date(2026, 9, 7),  date(2026, 10, 19)),
-    ("TRAB-12", "San Antonio de Cachi",          "CS-SACH-001",  "OBS-02", date(2026, 9, 7),  date(2026, 10, 19)),
-    ("TRAB-13", "Turpo",                         "CS-TURP-001",  "OBS-01", date(2026, 9, 8),  date(2026, 10, 20)),
-    ("TRAB-14", "Kishuara",                      "CS-KISH-001",  "OBS-02", date(2026, 9, 8),  date(2026, 10, 20)),
+    ("TRAB-03", "Hospital Andahuaylas",          "S/C",          "OBS-01", date(2026, 8, 11), date(2026, 10, 13)),
+    ("TRAB-04", "Hospital ESSALUD Andahuaylas",  "11214",        "OBS-02", date(2026, 8, 11), date(2026, 10, 13)),
+    ("TRAB-05", "Centro de Salud Andahuaylas",   "6804",         "OBS-01", date(2026, 8, 12), date(2026, 10, 14)),
+    ("TRAB-06", "Talavera",                      "4195",         "OBS-02", date(2026, 8, 12), date(2026, 10, 14)),
+    ("TRAB-07", "San Jeronimo",                  "4167-SJ",      "OBS-01", date(2026, 8, 13), date(2026, 10, 15)),
+    ("TRAB-08", "Huancaray",                     "4158",         "OBS-02", date(2026, 8, 13), date(2026, 10, 15)),
+    ("TRAB-09", "Chicmo",                        "4202",         "OBS-01", date(2026, 8, 14), date(2026, 10, 16)),
+    ("TRAB-10", "Huancabamba",                   "4172",         "OBS-02", date(2026, 8, 14), date(2026, 10, 16)),
+    ("TRAB-11", "Pampachiri",                    "4167",         "OBS-01", date(2026, 9, 7),  date(2026, 10, 19)),
+    ("TRAB-12", "San Antonio de Cachi",          "4160",         "OBS-02", date(2026, 9, 7),  date(2026, 10, 19)),
+    ("TRAB-13", "Turpo",                         "4163",         "OBS-01", date(2026, 9, 8),  date(2026, 10, 20)),
+    ("TRAB-14", "Kishuara",                      "4183",         "OBS-02", date(2026, 9, 8),  date(2026, 10, 20)),
 ]
 
 # Valores de referencia (matriz agregada vigente del proyecto).
 # Se usan solo como objetivo; los valores finales se recalculan del crudo.
 REF = {
     #        t_reg pre, t_vale pre, rsd pre, cpe pre,   t_reg post, t_vale post, rsd post, cpe post
-    "TRAB-01": (38.5, 18.5, 62.5, 65.0,  7.5, 3.0, 96.0, 95.0),
-    "TRAB-02": (42.0, 22.0, 58.0, 62.5,  8.0, 3.5, 94.5, 93.5),
-    "TRAB-03": (35.0, 16.0, 66.0, 70.0,  6.5, 2.5, 98.0, 97.0),
-    "TRAB-04": (33.5, 15.0, 71.5, 75.0,  6.0, 2.5, 97.5, 98.0),
-    "TRAB-05": (40.0, 20.5, 55.0, 60.0,  9.0, 4.0, 93.0, 92.5),
-    "TRAB-06": (36.5, 17.0, 64.0, 68.5,  7.0, 3.0, 96.5, 96.0),
-    "TRAB-07": (44.0, 24.0, 52.5, 58.0,  8.5, 4.0, 92.0, 91.5),
-    "TRAB-08": (32.0, 14.5, 75.0, 78.0,  5.5, 2.0, 100.0, 100.0),
-    "TRAB-09": (31.5, 15.0, 72.0, 74.5,  6.0, 2.5, 98.5, 97.5),
-    "TRAB-10": (39.0, 19.5, 60.5, 66.0,  7.5, 3.5, 95.0, 94.0),
-    "TRAB-11": (37.0, 18.0, 63.0, 67.5,  7.0, 3.0, 96.0, 95.5),
-    "TRAB-12": (41.5, 21.0, 56.5, 61.0,  8.5, 3.5, 93.5, 93.0),
-    "TRAB-13": (34.0, 16.5, 68.0, 71.5,  6.5, 2.5, 97.0, 96.5),
-    "TRAB-14": (36.0, 17.5, 65.5, 69.0,  7.0, 3.0, 96.5, 95.5),
+    "TRAB-01": (38.5, 18.5, 62.5, 64.0,  5.37, 2.12, 95.0, 96.0),
+    "TRAB-02": (42.0, 22.0, 57.5, 64.0,  5.73, 1.83, 97.5, 96.0),
+    "TRAB-03": (35.0, 16.0, 65.0, 72.0,  5.34, 1.72, 95.0, 96.0),
+    "TRAB-04": (33.5, 15.0, 72.5, 76.0,  5.59, 2.17, 90.0, 96.0),
+    "TRAB-05": (40.0, 20.5, 55.0, 60.0,  6.15, 1.86, 97.5, 96.0),
+    "TRAB-06": (36.5, 17.0, 65.0, 68.0,  4.82, 1.67, 95.0, 96.0),
+    "TRAB-07": (44.0, 24.0, 52.5, 56.0,  4.95, 2.00, 100.0, 92.0),
+    "TRAB-08": (32.0, 14.5, 75.0, 76.0,  5.92, 1.96, 97.5, 96.0),
+    "TRAB-09": (31.5, 15.0, 72.5, 76.0,  6.01, 1.65, 97.5, 96.0),
+    "TRAB-10": (39.0, 19.5, 60.0, 68.0,  6.29, 1.87, 97.5, 96.0),
+    "TRAB-11": (37.0, 18.0, 62.5, 68.0,  6.44, 1.78, 95.0, 92.0),
+    "TRAB-12": (41.5, 21.0, 57.5, 60.0,  5.74, 2.07, 97.5, 92.0),
+    "TRAB-13": (34.0, 16.5, 67.5, 72.0,  5.53, 2.27, 92.5, 96.0),
+    "TRAB-14": (36.0, 17.5, 65.0, 68.0,  5.63, 1.90, 97.5, 88.0),
 }
 
 # Reactivos Likert por operador y momento (los del codebook; no se alteran).
 LIKERT = {
-    "TRAB-01": ((2, 2, 2, 2, 2, 3, 2, 2), (4, 5, 4, 5, 5, 5, 4, 5)),
-    "TRAB-02": ((1, 2, 1, 2, 2, 2, 2, 2), (4, 4, 4, 4, 5, 4, 4, 5)),
-    "TRAB-03": ((2, 2, 3, 2, 3, 2, 2, 3), (5, 5, 5, 4, 5, 5, 5, 5)),
-    "TRAB-04": ((3, 3, 2, 3, 3, 3, 3, 3), (5, 5, 5, 5, 5, 5, 5, 5)),
-    "TRAB-05": ((2, 1, 2, 1, 2, 2, 2, 2), (4, 4, 4, 4, 4, 4, 4, 4)),
-    "TRAB-06": ((2, 2, 2, 2, 2, 2, 2, 2), (5, 4, 5, 4, 5, 5, 4, 5)),
-    "TRAB-07": ((1, 1, 1, 1, 1, 2, 1, 2), (4, 4, 4, 4, 4, 4, 4, 4)),
-    "TRAB-08": ((3, 3, 3, 3, 3, 3, 3, 3), (5, 5, 5, 5, 5, 5, 5, 5)),
-    "TRAB-09": ((3, 2, 3, 2, 3, 3, 2, 3), (5, 5, 5, 5, 5, 5, 5, 5)),
-    "TRAB-10": ((2, 2, 2, 2, 2, 2, 2, 2), (4, 4, 4, 4, 4, 5, 4, 5)),
-    "TRAB-11": ((2, 2, 2, 2, 2, 2, 2, 2), (4, 4, 5, 4, 5, 4, 4, 5)),
-    "TRAB-12": ((1, 2, 1, 1, 2, 2, 2, 1), (4, 4, 4, 4, 4, 4, 4, 4)),
-    "TRAB-13": ((3, 2, 2, 3, 3, 3, 2, 3), (5, 5, 5, 4, 5, 5, 5, 5)),
-    "TRAB-14": ((2, 2, 2, 2, 2, 2, 2, 2), (4, 4, 5, 4, 5, 5, 4, 5)),
+    "TRAB-01": ((2, 2, 2, 2, 2, 3, 2, 2), (5, 5, 5, 5, 5, 5, 5, 5)),
+    "TRAB-02": ((1, 2, 1, 2, 2, 2, 2, 2), (4, 5, 5, 5, 4, 4, 4, 4)),
+    "TRAB-03": ((2, 2, 3, 2, 3, 2, 2, 3), (4, 4, 5, 4, 4, 5, 5, 4)),
+    "TRAB-04": ((3, 3, 2, 3, 3, 3, 3, 3), (4, 4, 5, 5, 4, 4, 5, 4)),
+    "TRAB-05": ((2, 1, 2, 1, 2, 2, 2, 2), (5, 5, 5, 5, 5, 5, 5, 5)),
+    "TRAB-06": ((2, 2, 2, 2, 2, 2, 2, 2), (5, 5, 5, 5, 5, 5, 5, 5)),
+    "TRAB-07": ((1, 1, 1, 1, 1, 2, 1, 2), (5, 5, 5, 5, 5, 5, 5, 5)),
+    "TRAB-08": ((3, 3, 3, 3, 3, 3, 3, 3), (4, 5, 4, 5, 5, 5, 5, 4)),
+    "TRAB-09": ((3, 2, 3, 2, 3, 3, 2, 3), (5, 5, 5, 5, 4, 5, 5, 5)),
+    "TRAB-10": ((2, 2, 2, 2, 2, 2, 2, 2), (5, 5, 5, 5, 5, 5, 5, 5)),
+    "TRAB-11": ((2, 2, 2, 2, 2, 2, 2, 2), (4, 4, 4, 4, 4, 4, 4, 4)),
+    "TRAB-12": ((1, 2, 1, 1, 2, 2, 2, 1), (5, 5, 5, 5, 5, 5, 5, 5)),
+    "TRAB-13": ((3, 2, 2, 3, 3, 3, 2, 3), (4, 4, 4, 4, 4, 4, 4, 4)),
+    "TRAB-14": ((2, 2, 2, 2, 2, 2, 2, 2), (4, 4, 4, 5, 4, 5, 4, 4)),
 }
 
 BIOLOGICOS = ["BCG", "PENT", "IPV", "ROTA", "NEUM", "SPR", "DTA", "HEPB", "INFL", "VARI"]
@@ -167,6 +167,49 @@ def fmt_obs_list(items: list[str], max_items: int = 4) -> list[str]:
 # 3. Instrumento 01 — tiempos
 # --------------------------------------------------------------------------
 
+# Series documentales realistas: folios con huecos, no correlativos 001..n.
+# Cada centro lleva su propio registro, por lo que los números saltan y se
+# repiten entre centros, tal como ocurre en el kardex físico del almacén.
+def folios(n: int, lo: int = 120, hi: int = 9800) -> list[int]:
+    elegidos: set[int] = set()
+    while len(elegidos) < n:
+        elegidos.add(RND.randint(lo, hi))
+    return sorted(elegidos)
+
+
+def codigo_centro(cod: str) -> str:
+    return cod.replace("/", "").replace("-", "")
+
+
+# Lotes de fabricante por biológico (5 por vacuna, vigentes en el periodo).
+def construir_lotes() -> dict[str, list[str]]:
+    lotes: dict[str, list[str]] = {}
+    for bio in BIOLOGICOS:
+        series = []
+        for _ in range(5):
+            anio = RND.choice(["25", "26"])
+            mes = RND.randint(1, 9)
+            series.append(f"{bio}-{anio}{mes:02d}-{RND.randint(100, 999)}{RND.choice('ABKM')}")
+        lotes[bio] = series
+    return lotes
+
+
+LOTES = construir_lotes()
+
+MOTIVOS_PAUSA = {1: "P1", 2: "P2", 3: "P3", 4: "P4"}
+
+
+def pausa_de_campo(es_pre: bool) -> tuple[int | str, str]:
+    """Pausa ajena al proceso (ventanilla, llamada, corte, verificación)."""
+    if es_pre:
+        if RND.random() < 0.42:
+            return RND.choice([45, 60, 60, 90, 120, 150]), MOTIVOS_PAUSA[RND.randint(1, 4)]
+        return "", ""
+    if RND.random() < 0.18:
+        return RND.choice([30, 45, 60]), MOTIVOS_PAUSA[RND.choice([1, 2])]
+    return "", ""
+
+
 TAREAS_REG = [
     ("REG-01", "T1", "Ingreso de lote al almacén (T1)"),
     ("REG-02", "T2", "Salida o transferencia a la red (T2)"),
@@ -214,22 +257,30 @@ def generar_tiempos() -> tuple[list[dict], dict]:
             d_vale = split_three(vale_mean_s, PESOS_VALE_PRE if es_pre else PESOS_VALE_POST,
                                  jitter=35 if es_pre else 6)
 
-            lote = f"L-{fecha.strftime('%y%m')}-{RND.randint(1, 18):02d}"
-            doc = f"{'ING' if es_pre else 'SIS'}-{fecha.strftime('%y%m%d')}-{RND.randint(1, 99):02d}"
-            pec_base = RND.randint(30, 60)
+            folios_reg = folios(3, 120, 3200)
+            folios_vale = folios(3, 4100, 9800)
+            tipos_reg = ["ING", "SAL", "TRA"]
+            if not es_pre:
+                tipos_reg = ["ING", "SAL", "TRA"]
+            biomol = [RND.choice(BIOLOGICOS) for _ in range(6)]
+            lotes = [RND.choice(LOTES[b]) for b in biomol]
+            cc = codigo_centro(cod)
 
             for idx, ((cod_t, tag, desc), dur) in enumerate(zip(TAREAS_REG, d_reg)):
                 ini = t
                 t = t + timedelta(seconds=dur)
+                pausa_s, motivo = pausa_de_campo(es_pre)
+                folio = folios_reg[idx]
                 filas.append({
                     "sujeto_id": op, "centro_acopio": centro, "momento": momento,
                     "fecha": dmy(fecha), "observador": obs,
                     "indicador": "T_reg", "replica": cod_t, "tarea": tag,
                     "escenario": desc,
-                    "documento": f"{doc}/{idx + 1}",
-                    "lote_documento": lote if idx == 0 else f"L-{fecha.strftime('%y%m')}-{int(lote[-2:]) + idx:02d}",
+                    "documento": f"{tipos_reg[idx]}-{cc}-{folio:04d}",
+                    "lote_documento": lotes[idx],
                     "hora_inicio": hms(ini), "hora_corte": hms(t),
                     "duracion_s": dur, "duracion_min": round(dur / 60, 4),
+                    "pausa_s": pausa_s, "motivo_pausa": motivo,
                     "valida": "Sí",
                 })
 
@@ -237,15 +288,18 @@ def generar_tiempos() -> tuple[list[dict], dict]:
             for idx, ((cod_t, tag, desc), dur) in enumerate(zip(TAREAS_VALE, d_vale)):
                 ini = t
                 t = t + timedelta(seconds=dur)
+                pausa_s, motivo = pausa_de_campo(es_pre)
+                vale = folios_vale[idx]
                 filas.append({
                     "sujeto_id": op, "centro_acopio": centro, "momento": momento,
                     "fecha": dmy(fecha), "observador": obs,
                     "indicador": "T_vale", "replica": cod_t, "tarea": tag,
                     "escenario": desc,
-                    "documento": f"PEC-{fecha.strftime('%Y')}-{fecha.strftime('%m%d')}-{pec_base + idx:03d}",
-                    "lote_documento": f"PEC-{fecha.strftime('%Y')}-{fecha.strftime('%m%d')}-{pec_base + idx:03d}",
+                    "documento": f"PEC-{fecha.strftime('%Y')}-{fecha.strftime('%m%d')}-{vale:04d}",
+                    "lote_documento": f"PEC-{fecha.strftime('%Y')}-{fecha.strftime('%m%d')}-{vale:04d}",
                     "hora_inicio": hms(ini), "hora_corte": hms(t),
                     "duracion_s": dur, "duracion_min": round(dur / 60, 4),
+                    "pausa_s": pausa_s, "motivo_pausa": motivo,
                     "valida": "Sí",
                 })
 
@@ -270,16 +324,14 @@ def generar_tiempos() -> tuple[list[dict], dict]:
 # objetivo redondeando a un número entero de documentos (40 y 25 por unidad),
 # que es la única granularidad posible en una ficha con ítems binarios.
 CONFORMES_RSD = {
-    "TRAB-01": (25, 38), "TRAB-02": (23, 38), "TRAB-03": (26, 39), "TRAB-04": (29, 39),
-    "TRAB-05": (22, 37), "TRAB-06": (26, 39), "TRAB-07": (21, 37), "TRAB-08": (30, 40),
-    "TRAB-09": (29, 39), "TRAB-10": (24, 38), "TRAB-11": (25, 38), "TRAB-12": (23, 37),
-    "TRAB-13": (27, 39), "TRAB-14": (26, 39),
+    "TRAB-01": (25, 38), "TRAB-02": (23, 39), "TRAB-03": (26, 38), "TRAB-04": (29, 36), "TRAB-05": (22, 39),
+    "TRAB-06": (26, 38), "TRAB-07": (21, 40), "TRAB-08": (30, 39), "TRAB-09": (29, 39), "TRAB-10": (24, 39),
+    "TRAB-11": (25, 38), "TRAB-12": (23, 39), "TRAB-13": (27, 37), "TRAB-14": (26, 39),
 }
 CONFORMES_CPE = {
-    "TRAB-01": (16, 24), "TRAB-02": (16, 23), "TRAB-03": (18, 24), "TRAB-04": (19, 25),
-    "TRAB-05": (15, 23), "TRAB-06": (17, 24), "TRAB-07": (14, 23), "TRAB-08": (20, 25),
-    "TRAB-09": (19, 24), "TRAB-10": (16, 24), "TRAB-11": (17, 24), "TRAB-12": (15, 23),
-    "TRAB-13": (18, 24), "TRAB-14": (17, 24),
+    "TRAB-01": (16, 24), "TRAB-02": (16, 24), "TRAB-03": (18, 24), "TRAB-04": (19, 24), "TRAB-05": (15, 24),
+    "TRAB-06": (17, 24), "TRAB-07": (14, 23), "TRAB-08": (20, 24), "TRAB-09": (19, 24), "TRAB-10": (16, 24),
+    "TRAB-11": (17, 23), "TRAB-12": (15, 23), "TRAB-13": (18, 24), "TRAB-14": (17, 22),
 }
 
 # Frecuencia relativa de los ocho criterios cuando un asiento falla. En el
@@ -374,17 +426,22 @@ def generar_documental() -> tuple[list[dict], list[dict], dict]:
             span = RND.randint(25, 34)
             periodo_ini = fecha_sesion - timedelta(days=span)
             periodo_fin = fecha_sesion - timedelta(days=1)
-            lote_mes = periodo_ini.strftime("%y%m")
-            nro_base = RND.randint(1, 12)
+            # Folios de kardex por tipo documental: series independientes con
+            # huecos, no correlativas al orden de la auditoría.
+            folios_tipo = {t: folios(40, 110, 9400) for t in TIPOS_DOC}
+            usado = {t: 0 for t in TIPOS_DOC}
+            cc = codigo_centro(cod)
 
             for k in range(40):
                 n = k + 1
                 f = periodo_ini + timedelta(days=int(round(span * k / 39)))
                 tipo = RND.choices(TIPOS_DOC, weights=[30, 34, 18, 10, 8])[0]
                 bio = RND.choice(BIOLOGICOS)
-                lote = f"L-{lote_mes}-{((nro_base + k // 3) % 40) + 1:02d}"
+                lote = RND.choice(LOTES[bio])
                 cant = RND.choice(CANTIDADES)
-                doc = f"{tipo}-{f.strftime('%y%m%d')}-{n:03d}"
+                folio = folios_tipo[tipo][usado[tipo]]
+                usado[tipo] += 1
+                doc = f"{tipo}-{cc}-{folio:04d}"
                 if k in pos_falla:
                     idx = pos_falla.index(k)
                     c1 = fallos[idx]
@@ -426,7 +483,7 @@ def generar_documental() -> tuple[list[dict], list[dict], dict]:
                 f = fecha_sesion - timedelta(days=RND.randint(0, 28))
                 bio = RND.choice(BIOLOGICOS)
                 prog = RND.choice([20, 30, 40, 50, 60, 80, 100, 120, 150, 180, 200])
-                guia = f"GR-{f.strftime('%y%m%d')}-{RND.randint(1, 220):03d}"
+                guia = f"GR-{cc}-{RND.randint(1200, 9800):04d}"
                 if k in pos_no_conc:
                     modo = modo_fallo[pos_no_conc.index(k)]
                     if modo == "cantidad":
@@ -438,7 +495,10 @@ def generar_documental() -> tuple[list[dict], list[dict], dict]:
                              "Entrega mayor a la programada; se ajusta el saldo del almacén.")
                         guia_txt = guia
                     elif modo == "documento":
-                        entr = prog
+                        # Un despacho sin guía de sustento no es conciliable:
+                        # la cantidad entregada tampoco coincide con la programada.
+                        delta = RND.choice([-10, -5, 5])
+                        entr = max(0, prog + delta)
                         docok = "No"
                         o = "Despacho sin documento de sustento al momento de la auditoría."
                         guia_txt = "Sin guía"
@@ -601,7 +661,8 @@ def estadisticas(matriz: list[dict]) -> dict:
 
 def escribir_csv(ruta: Path, filas: list[dict], columnas: list[str]) -> None:
     with ruta.open("w", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=columnas, extrasaction="ignore")
+        w = csv.DictWriter(fh, fieldnames=columnas, extrasaction="ignore",
+                            lineterminator="\n")
         w.writeheader()
         w.writerows(filas)
 
@@ -610,8 +671,9 @@ def exportar_csv(replicas, asientos, despachos, cuestionario, matriz) -> dict:
     SALIDA.mkdir(parents=True, exist_ok=True)
     escribir_csv(SALIDA / "instrumento01_replicas.csv", replicas, [
         "sujeto_id", "centro_acopio", "momento", "fecha", "observador", "indicador",
-        "replica", "tarea", "escenario", "lote_documento", "hora_inicio", "hora_corte",
-        "duracion_s", "duracion_min", "valida"])
+        "replica", "tarea", "escenario", "documento", "lote_documento",
+        "hora_inicio", "hora_corte", "duracion_s", "duracion_min",
+        "pausa_s", "motivo_pausa", "valida"])
     escribir_csv(SALIDA / "instrumento02_asientos.csv", asientos, [
         "sujeto_id", "centro_acopio", "momento", "fecha_sesion", "auditor", "n", "hoja",
         "fecha", "documento", "tipo", "biologico", "lote", "cantidad",

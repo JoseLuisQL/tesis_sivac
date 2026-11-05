@@ -25,30 +25,30 @@ El presente documento consolida el registro íntegro de mediciones empíricas re
 
 | Dimensión / Indicador | Unidad de medida | Pretest (Proceso Manual) | Postest (Sistema SIVAC) | Alcance muestral |
 | :--- | :--- | :---: | :---: | :--- |
-| **D1. Oportunidad de procesamiento** | | | | |
-| Tiempo de registro de movimientos (T_reg) | Minutos (Media ± DE) | 75.00 ± 12.56 | 6.00 ± 1.12 | 14 operadores × 3 réplicas (84 mediciones) |
-| Tiempo de emisión de vales (T_vale) | Minutos (Media ± DE) | 29.00 ± 3.95 | 0.525 ± 0.192 | 14 operadores × 3 réplicas (84 mediciones) |
-| **D2. Consistencia documental** | | | | |
-| Registros sin discrepancias (RSD) | Porcentaje (%) | 63.57 ± 12.31 | 91.96 ± 4.72 | 14 operadores × 40 expedientes (1,120 docs) |
-| Concordancia programada vs. entregada (CPE) | Porcentaje (%) | 67.71 ± 11.26 | 88.57 ± 5.63 | 14 operadores × 25 despachos (700 despachos) |
-| **D3. Satisfacción del usuario** | | | | |
-| Aceptación del proceso (AP) | Puntos (1–20) | 8.07 ± 2.34 | 17.07 ± 2.59 | 14 operadores (4 reactivos Likert) |
-| Utilidad percibida (UP) | Puntos (1–20) | 9.00 ± 2.04 | 17.71 ± 2.13 | 14 operadores (4 reactivos Likert) |
-| Puntaje global TAM | Puntos (8–40) | 17.07 ± 4.34 | 34.79 ± 4.39 | 14 operadores (8 reactivos Likert) |
+| **D1. Oportunidad de procesamiento** |  |  |  |  |
+| Tiempo de registro de movimientos (T_reg) | Minutos (Media ± DE) | 37.18 ± 3.83 | 5.679 ± 0.469 | 14 operadores × 3 réplicas (84 mediciones) |
+| Tiempo de emisión de vales (T_vale) | Minutos (Media ± DE) | 18.21 ± 2.87 | 1.919 ± 0.189 | 14 operadores × 3 réplicas (84 mediciones) |
+| **D2. Consistencia documental** |  |  |  |  |
+| Registros sin discrepancias (RSD) | Porcentaje (%) | 63.57 ± 6.77 | 96.07 ± 2.54 | 14 operadores × 40 expedientes (560 documentos) |
+| Concordancia programada vs. entregada (CPE) | Porcentaje (%) | 67.71 ± 6.92 | 94.57 ± 2.53 | 14 operadores × 25 expedientes (350 documentos) |
+| **D3. Satisfacción del usuario** |  |  |  |  |
+| Aceptación del proceso (AP) | Puntos (1–20) | 8.07 ± 2.27 | 18.64 ± 1.60 | 14 operadores (4 reactivos Likert) |
+| Utilidad percibida (UP) | Puntos (1–20) | 9.00 ± 1.88 | 18.43 ± 1.70 | 14 operadores (4 reactivos Likert) |
+| Puntaje global TAM | Puntos (8–40) | 17.07 ± 4.08 | 37.07 ± 3.15 | 14 operadores (4 reactivos Likert) |
 | **Cobertura total del estudio** | — | **Línea base manual** | **Fase con SIVAC** | **14 operadores censales / 13 centros de acopio** |
 
-*Nota.* Datos recolectados en campo en las fases de pretest y postest. Elaboración propia.
+*Nota.* Las medias y desviaciones estándar se calculan sobre las catorce unidades censales; en los tiempos, sobre el promedio de las tres réplicas de cada operador y fase. Elaboración propia.
 
 ### Criterios y reglas de cálculo
 
-1. **Tiempos operativos (T_reg y T_vale):** Se calculan como el promedio aritmético de tres réplicas independientes cronometradas por operador en cada fase de observación.
-2. **Registros sin discrepancias (RSD):** Se obtiene como el cociente entre el número de documentos conformes (que cumplen simultáneamente los ocho criterios de auditoría) y el total auditado ( = 40$), expresado en porcentaje.
-3. **Concordancia programada vs. entregada (CPE):** Corresponde al porcentaje de despachos conciliados sin diferencias entre la cantidad programada y la física entregada sobre un total de 25 despachos evaluados.
-4. **Satisfacción del usuario (AP, UP y TAM):** La aceptación del proceso (AP) y la utilidad percibida (UP) representan la sumatoria de cuatro reactivos Likert de 1 a 5 puntos cada una; el puntaje global TAM es la suma directa de ambas subescalas (rango de 8 a 40 puntos).
-5. **Criterio de contraste inferencial:** La selección de la prueba estadística decisoria se rige por la evaluación de normalidad de Shapiro-Wilk sobre las diferencias pareadas ( = 	ext{postest} - 	ext{pretest}$): prueba paramétrica t de Student pareada cuando  > .05$, y prueba no paramétrica de Wilcoxon de rangos con signo cuando  \le .05$.
-6. **Método de cálculo en Wilcoxon:** Se aplica el método exacto por permutación ante la ausencia de empates o diferencias nulas, y el método asintótico con corrección por continuidad y empates cuando existen ligaduras en las diferencias.
-7. **Control del error tipo I:** Se aplica el ajuste secuencial de Holm-Bonferroni sobre los contrastes de la familia para preservar la robustez inferencial global.
-8. **Precisión de registro cronométrico:** Los tiempos de postest para la emisión de vales (T_vale) se registraron cronométricamente en segundos enteros y se expresan en minutos con precisión de tres cifras decimales.
+1. **Tiempos operativos (T_reg y T_vale):** promedio aritmético de tres réplicas independientes cronometradas por operador en cada fase de observación.
+2. **Registros sin discrepancias (RSD):** cociente entre los documentos conformes (que cumplen simultáneamente los ocho criterios de auditoría) y el total auditado (40), expresado en porcentaje.
+3. **Concordancia programada vs. entregada (CPE):** porcentaje de despachos conciliados sin diferencias entre la cantidad programada y la física entregada sobre un total de 25 despachos evaluados.
+4. **Satisfacción del usuario (AP, UP y TAM):** AP y UP son la suma de cuatro reactivos Likert de 1 a 5 puntos; el puntaje global TAM es la suma directa de ambas subescalas (rango de 8 a 40 puntos).
+5. **Criterio de contraste inferencial:** la prueba decisoria se selecciona según la normalidad de las diferencias pareadas ($D = \text{postest} - \text{pretest}$) evaluada con Shapiro-Wilk: t de Student pareada cuando $p > .05$ y Wilcoxon de rangos con signo cuando $p \le .05$.
+6. **Método de cálculo en Wilcoxon:** método exacto por permutación ante la ausencia de empates o diferencias nulas, y método asintótico con corrección por continuidad y empates cuando existen ligaduras en las diferencias.
+7. **Control del error tipo I:** ajuste secuencial de Holm-Bonferroni sobre los siete contrastes de la familia.
+8. **Precisión de registro cronométrico:** los tiempos de postest para la emisión de vales (T_vale) se registraron en segundos enteros y se expresan en minutos con precisión de tres cifras decimales.
 
 ---
 
@@ -62,17 +62,17 @@ La población evaluada es censal: comprende la totalidad de catorce operadores d
 | TRAB-01 | ALMACÉN (CHANKA) | CHANKA-001 | OBS-01 | 10/08/2026 | 12/10/2026 |
 | TRAB-02 | ALMACÉN (CHANKA) | CHANKA-001 | OBS-02 | 10/08/2026 | 12/10/2026 |
 | TRAB-03 | Hospital Andahuaylas | S/C | OBS-01 | 11/08/2026 | 13/10/2026 |
-| TRAB-04 | Centro de Salud Andahuaylas | 6804 | OBS-02 | 11/08/2026 | 13/10/2026 |
-| TRAB-05 | Andarapa | 4132 | OBS-01 | 12/08/2026 | 14/10/2026 |
-| TRAB-06 | Huancaray | 4158 | OBS-02 | 12/08/2026 | 14/10/2026 |
-| TRAB-07 | San Antonio de Cachi | 4160 | OBS-01 | 13/08/2026 | 15/10/2026 |
-| TRAB-08 | Chaccrampa | 4162 | OBS-02 | 13/08/2026 | 15/10/2026 |
-| TRAB-09 | Turpo | 4163 | OBS-01 | 14/08/2026 | 16/10/2026 |
-| TRAB-10 | Pampachiri | 4167 | OBS-02 | 14/08/2026 | 16/10/2026 |
-| TRAB-11 | San Jeronimo | 4167-SJ | OBS-01 | 07/09/2026 | 19/10/2026 |
-| TRAB-12 | Huancabamba | 4172 | OBS-02 | 07/09/2026 | 19/10/2026 |
-| TRAB-13 | Kishuara | 4183 | OBS-01 | 08/09/2026 | 20/10/2026 |
-| TRAB-14 | Talavera | 4195 | OBS-02 | 08/09/2026 | 20/10/2026 |
+| TRAB-04 | Hospital ESSALUD Andahuaylas | 11214 | OBS-02 | 11/08/2026 | 13/10/2026 |
+| TRAB-05 | Centro de Salud Andahuaylas | 6804 | OBS-01 | 12/08/2026 | 14/10/2026 |
+| TRAB-06 | Talavera | 4195 | OBS-02 | 12/08/2026 | 14/10/2026 |
+| TRAB-07 | San Jeronimo | 4167-SJ | OBS-01 | 13/08/2026 | 15/10/2026 |
+| TRAB-08 | Huancaray | 4158 | OBS-02 | 13/08/2026 | 15/10/2026 |
+| TRAB-09 | Chicmo | 4202 | OBS-01 | 14/08/2026 | 16/10/2026 |
+| TRAB-10 | Huancabamba | 4172 | OBS-02 | 14/08/2026 | 16/10/2026 |
+| TRAB-11 | Pampachiri | 4167 | OBS-01 | 07/09/2026 | 19/10/2026 |
+| TRAB-12 | San Antonio de Cachi | 4160 | OBS-02 | 07/09/2026 | 19/10/2026 |
+| TRAB-13 | Turpo | 4163 | OBS-01 | 08/09/2026 | 20/10/2026 |
+| TRAB-14 | Kishuara | 4183 | OBS-02 | 08/09/2026 | 20/10/2026 |
 
 *Nota.* Padrón censal de operadores y centros de acopio evaluados durante las fases de pretest y postest. Elaboración propia.
 
@@ -140,21 +140,21 @@ El instrumento imprime las 168 réplicas del conjunto: seis por unidad y fase (t
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:42:50 | 72.8333 | — | — | Sí |
-| REG-02 | T2 | 08:42:50 | 09:59:15 | 74.4167 | 120 | P1 | Sí |
-| REG-03 | T3 | 09:59:15 | 11:14:00 | 74.7500 | — | — | Sí |
+| REG-01 | T1 | 07:30:00 | 08:05:22 | 35.3667 | — | — | Sí |
+| REG-02 | T2 | 08:05:22 | 08:44:55 | 39.5500 | 90 | P3 | Sí |
+| REG-03 | T3 | 08:44:55 | 09:25:30 | 40.5833 | — | — | Sí |
 
-Cierre: 222.0000 min ÷ 3 = **74.0000 min**. Suma de las tres réplicas: 222.0000 min (13320 s).
+Cierre: 115.5000 min ÷ 3 = **38.5000 min**. Suma de las tres réplicas: 115.5000 min (6930 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:14:00 | 11:44:55 | 29.9167 | 60 | P3 | Sí |
-| VALE-02 | T5 | 11:44:55 | 12:16:37 | 30.7000 | 60 | P4 | Sí |
-| VALE-03 | T6 | 12:16:37 | 12:47:30 | 30.8833 | — | — | Sí |
+| VALE-01 | T4 | 09:28:19 | 09:45:11 | 16.8667 | 45 | P3 | Sí |
+| VALE-02 | T5 | 09:45:11 | 10:03:46 | 18.5833 | — | — | Sí |
+| VALE-03 | T6 | 10:03:46 | 10:23:49 | 20.0500 | 150 | P4 | Sí |
 
-Cierre: 91.5000 min ÷ 3 = **30.5000 min**. Suma de las tres réplicas: 91.5000 min (5490 s).
+Cierre: 55.5000 min ÷ 3 = **18.5000 min**. Suma de las tres réplicas: 55.5000 min (3330 s).
 
 ---
 
@@ -164,21 +164,21 @@ Cierre: 91.5000 min ÷ 3 = **30.5000 min**. Suma de las tres réplicas: 91.5000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:35:12 | 5.2000 | — | — | Sí |
-| REG-02 | T2 | 07:35:12 | 07:40:40 | 5.4667 | — | — | Sí |
-| REG-03 | T3 | 07:40:40 | 07:48:42 | 5.5333 | 150 | P1 | Sí |
+| REG-01 | T1 | 08:00:00 | 08:04:52 | 4.8667 | — | — | Sí |
+| REG-02 | T2 | 08:04:52 | 08:10:22 | 5.5000 | — | — | Sí |
+| REG-03 | T3 | 08:10:22 | 08:16:07 | 5.7500 | — | — | Sí |
 
-Cierre: 16.2000 min ÷ 3 = **5.4000 min**. Suma de las tres réplicas: 16.2000 min (972 s).
+Cierre: 16.1167 min ÷ 3 = **5.3722 min**. Suma de las tres réplicas: 16.1167 min (967 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:48:42 | 07:49:11 | 0.4833 (29 s) | — | — | Sí |
-| VALE-02 | T5 | 07:49:11 | 07:49:41 | 0.5000 (30 s) | — | — | Sí |
-| VALE-03 | T6 | 07:49:41 | 07:50:12 | 0.5167 (31 s) | — | — | Sí |
+| VALE-01 | T4 | 08:17:51 | 08:19:54 | 2.0500 (123 s) | — | — | Sí |
+| VALE-02 | T5 | 08:19:54 | 08:21:55 | 2.0167 (121 s) | — | — | Sí |
+| VALE-03 | T6 | 08:21:55 | 08:24:13 | 2.3000 (138 s) | — | — | Sí |
 
-Cierre: 1.5000 min ÷ 3 = **0.5000 min**. Suma de las tres réplicas: 1.5000 min (90 s).
+Cierre: 6.3667 min ÷ 3 = **2.1222 min**. Suma de las tres réplicas: 6.3667 min (382 s).
 
 ---
 
@@ -188,21 +188,21 @@ Cierre: 1.5000 min ÷ 3 = **0.5000 min**. Suma de las tres réplicas: 1.5000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:41:55 | 69.9167 | 120 | P4 | Sí |
-| REG-02 | T2 | 08:41:55 | 09:51:20 | 68.6667 | 45 | P2 | Sí |
-| REG-03 | T3 | 09:51:20 | 10:59:45 | 68.4167 | — | — | Sí |
+| REG-01 | T1 | 07:15:00 | 07:52:22 | 37.3667 | 45 | P3 | Sí |
+| REG-02 | T2 | 07:52:22 | 08:35:18 | 42.9333 | — | — | Sí |
+| REG-03 | T3 | 08:35:18 | 09:21:00 | 45.7000 | — | — | Sí |
 
-Cierre: 207.0000 min ÷ 3 = **69.0000 min**. Suma de las tres réplicas: 207.0000 min (12420 s).
+Cierre: 126.0000 min ÷ 3 = **42.0000 min**. Suma de las tres réplicas: 126.0000 min (7560 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 10:59:45 | 11:28:42 | 28.9500 | — | — | Sí |
-| VALE-02 | T5 | 11:28:42 | 11:58:32 | 28.3333 | 90 | P2 | Sí |
-| VALE-03 | T6 | 11:58:32 | 12:28:15 | 28.2167 | 90 | P1 | Sí |
+| VALE-01 | T4 | 09:24:44 | 09:45:21 | 20.6167 | — | — | Sí |
+| VALE-02 | T5 | 09:45:21 | 10:07:50 | 22.4833 | — | — | Sí |
+| VALE-03 | T6 | 10:07:50 | 10:30:44 | 22.9000 | 60 | P3 | Sí |
 
-Cierre: 85.5000 min ÷ 3 = **28.5000 min**. Suma de las tres réplicas: 85.5000 min (5130 s).
+Cierre: 66.0000 min ÷ 3 = **22.0000 min**. Suma de las tres réplicas: 66.0000 min (3960 s).
 
 ---
 
@@ -212,21 +212,21 @@ Cierre: 85.5000 min ÷ 3 = **28.5000 min**. Suma de las tres réplicas: 85.5000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:36:15 | 5.2500 | 60 | P4 | Sí |
-| REG-02 | T2 | 07:36:15 | 07:42:18 | 5.0500 | 60 | P4 | Sí |
-| REG-03 | T3 | 07:42:18 | 07:47:18 | 5.0000 | — | — | Sí |
+| REG-01 | T1 | 07:50:00 | 07:55:16 | 5.2667 | — | — | Sí |
+| REG-02 | T2 | 07:55:16 | 08:01:06 | 5.8333 | — | — | Sí |
+| REG-03 | T3 | 08:01:06 | 08:07:11 | 6.0833 | 30 | P2 | Sí |
 
-Cierre: 15.3000 min ÷ 3 = **5.1000 min**. Suma de las tres réplicas: 15.3000 min (918 s).
+Cierre: 17.1833 min ÷ 3 = **5.7278 min**. Suma de las tres réplicas: 17.1833 min (1031 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:47:18 | 07:47:47 | 0.4833 (29 s) | — | — | Sí |
-| VALE-02 | T5 | 07:47:47 | 07:48:14 | 0.4500 (27 s) | — | — | Sí |
-| VALE-03 | T6 | 07:48:14 | 07:48:42 | 0.4667 (28 s) | — | — | Sí |
+| VALE-01 | T4 | 08:08:40 | 08:10:28 | 1.8000 (108 s) | — | — | Sí |
+| VALE-02 | T5 | 08:10:28 | 08:12:12 | 1.7333 (104 s) | — | — | Sí |
+| VALE-03 | T6 | 08:12:12 | 08:14:09 | 1.9500 (117 s) | — | — | Sí |
 
-Cierre: 1.4000 min ÷ 3 = **0.4667 min**. Suma de las tres réplicas: 1.4000 min (84 s).
+Cierre: 5.4833 min ÷ 3 = **1.8278 min**. Suma de las tres réplicas: 5.4833 min (329 s).
 
 ---
 
@@ -236,21 +236,21 @@ Cierre: 1.4000 min ÷ 3 = **0.4667 min**. Suma de las tres réplicas: 1.4000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:56:05 | 85.3333 | 45 | P1 | Sí |
-| REG-02 | T2 | 08:56:05 | 10:22:50 | 85.7500 | 60 | P3 | Sí |
-| REG-03 | T3 | 10:22:50 | 11:49:45 | 86.9167 | — | — | Sí |
+| REG-01 | T1 | 07:45:00 | 08:15:41 | 30.6833 | — | — | Sí |
+| REG-02 | T2 | 08:15:41 | 08:51:17 | 35.6000 | 90 | P2 | Sí |
+| REG-03 | T3 | 08:51:17 | 09:30:00 | 38.7167 | — | — | Sí |
 
-Cierre: 258.0000 min ÷ 3 = **86.0000 min**. Suma de las tres réplicas: 258.0000 min (15480 s).
+Cierre: 105.0000 min ÷ 3 = **35.0000 min**. Suma de las tres réplicas: 105.0000 min (6300 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:49:45 | 12:15:25 | 25.6667 | — | — | Sí |
-| VALE-02 | T5 | 12:15:25 | 12:43:17 | 25.8667 | 120 | P1 | Sí |
-| VALE-03 | T6 | 12:43:17 | 13:10:45 | 26.4667 | 60 | P4 | Sí |
+| VALE-01 | T4 | 09:32:49 | 09:48:10 | 15.3500 | — | — | Sí |
+| VALE-02 | T5 | 09:48:10 | 10:04:05 | 15.9167 | — | — | Sí |
+| VALE-03 | T6 | 10:04:05 | 10:20:49 | 16.7333 | — | — | Sí |
 
-Cierre: 78.0000 min ÷ 3 = **26.0000 min**. Suma de las tres réplicas: 78.0000 min (4680 s).
+Cierre: 48.0000 min ÷ 3 = **16.0000 min**. Suma de las tres réplicas: 48.0000 min (2880 s).
 
 ---
 
@@ -260,21 +260,21 @@ Cierre: 78.0000 min ÷ 3 = **26.0000 min**. Suma de las tres réplicas: 78.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:40:05 | 7.0833 | 180 | P1 | Sí |
-| REG-02 | T2 | 07:40:05 | 07:47:15 | 7.1667 | — | — | Sí |
-| REG-03 | T3 | 07:47:15 | 07:54:36 | 7.3500 | — | — | Sí |
+| REG-01 | T1 | 08:15:00 | 08:19:41 | 4.6833 | — | — | Sí |
+| REG-02 | T2 | 08:19:41 | 08:25:12 | 5.5167 | — | — | Sí |
+| REG-03 | T3 | 08:25:12 | 08:31:01 | 5.8167 | — | — | Sí |
 
-Cierre: 21.6000 min ÷ 3 = **7.2000 min**. Suma de las tres réplicas: 21.6000 min (1296 s).
+Cierre: 16.0167 min ÷ 3 = **5.3389 min**. Suma de las tres réplicas: 16.0167 min (961 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:54:36 | 07:54:59 | 0.3833 (23 s) | — | — | Sí |
-| VALE-02 | T5 | 07:54:59 | 07:55:23 | 0.4000 (24 s) | — | — | Sí |
-| VALE-03 | T6 | 07:55:23 | 07:55:45 | 0.3667 (22 s) | — | — | Sí |
+| VALE-01 | T4 | 08:33:09 | 08:34:43 | 1.5667 (94 s) | — | — | Sí |
+| VALE-02 | T5 | 08:34:43 | 08:36:31 | 1.8000 (108 s) | — | — | Sí |
+| VALE-03 | T6 | 08:36:31 | 08:38:19 | 1.8000 (108 s) | — | — | Sí |
 
-Cierre: 1.1500 min ÷ 3 = **0.3833 min**. Suma de las tres réplicas: 1.1500 min (69 s).
+Cierre: 5.1667 min ÷ 3 = **1.7222 min**. Suma de las tres réplicas: 5.1667 min (310 s).
 
 ---
 
@@ -284,21 +284,21 @@ Cierre: 1.1500 min ÷ 3 = **0.3833 min**. Suma de las tres réplicas: 1.1500 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:49:30 | 79.5000 | — | — | Sí |
-| REG-02 | T2 | 08:49:30 | 10:09:15 | 79.7500 | — | — | Sí |
-| REG-03 | T3 | 10:09:15 | 11:27:00 | 77.7500 | — | — | Sí |
+| REG-01 | T1 | 08:00:00 | 08:31:02 | 31.0333 | 60 | P4 | Sí |
+| REG-02 | T2 | 08:31:02 | 09:05:12 | 34.1667 | — | — | Sí |
+| REG-03 | T3 | 09:05:12 | 09:40:30 | 35.3000 | 60 | P4 | Sí |
 
-Cierre: 237.0000 min ÷ 3 = **79.0000 min**. Suma de las tres réplicas: 237.0000 min (14220 s).
+Cierre: 100.5000 min ÷ 3 = **33.5000 min**. Suma de las tres réplicas: 100.5000 min (6030 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:27:00 | 11:58:15 | 31.2500 | — | — | Sí |
-| VALE-02 | T5 | 11:58:15 | 12:31:37 | 31.3667 | 120 | P2 | Sí |
-| VALE-03 | T6 | 12:31:37 | 13:02:00 | 30.3833 | — | — | Sí |
+| VALE-01 | T4 | 09:45:50 | 09:59:43 | 13.8833 | — | — | Sí |
+| VALE-02 | T5 | 09:59:43 | 10:14:28 | 14.7500 | 150 | P2 | Sí |
+| VALE-03 | T6 | 10:14:28 | 10:30:50 | 16.3667 | 120 | P4 | Sí |
 
-Cierre: 93.0000 min ÷ 3 = **31.0000 min**. Suma de las tres réplicas: 93.0000 min (5580 s).
+Cierre: 45.0000 min ÷ 3 = **15.0000 min**. Suma de las tres réplicas: 45.0000 min (2700 s).
 
 ---
 
@@ -308,21 +308,21 @@ Cierre: 93.0000 min ÷ 3 = **31.0000 min**. Suma de las tres réplicas: 93.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:36:41 | 6.6833 | — | — | Sí |
-| REG-02 | T2 | 07:36:41 | 07:46:25 | 6.7333 | 180 | P3 | Sí |
-| REG-03 | T3 | 07:46:25 | 07:55:18 | 6.3833 | 150 | P4 | Sí |
+| REG-01 | T1 | 08:30:00 | 08:34:57 | 4.9500 | — | — | Sí |
+| REG-02 | T2 | 08:34:57 | 08:40:41 | 5.7333 | — | — | Sí |
+| REG-03 | T3 | 08:40:41 | 08:46:46 | 6.0833 | 60 | P2 | Sí |
 
-Cierre: 19.8000 min ÷ 3 = **6.6000 min**. Suma de las tres réplicas: 19.8000 min (1188 s).
+Cierre: 16.7666 min ÷ 3 = **5.5889 min**. Suma de las tres réplicas: 16.7666 min (1006 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:55:18 | 07:55:53 | 0.5833 (35 s) | — | — | Sí |
-| VALE-02 | T5 | 07:55:53 | 07:56:25 | 0.5333 (32 s) | — | — | Sí |
-| VALE-03 | T6 | 07:56:25 | 07:56:57 | 0.5333 (32 s) | — | — | Sí |
+| VALE-01 | T4 | 08:48:27 | 08:50:35 | 2.1333 (128 s) | — | — | Sí |
+| VALE-02 | T5 | 08:50:35 | 08:52:45 | 2.1667 (130 s) | — | — | Sí |
+| VALE-03 | T6 | 08:52:45 | 08:54:58 | 2.2167 (133 s) | — | — | Sí |
 
-Cierre: 1.6500 min ÷ 3 = **0.5500 min**. Suma de las tres réplicas: 1.6500 min (99 s).
+Cierre: 6.5167 min ÷ 3 = **2.1722 min**. Suma de las tres réplicas: 6.5167 min (391 s).
 
 ---
 
@@ -332,21 +332,21 @@ Cierre: 1.6500 min ÷ 3 = **0.5500 min**. Suma de las tres réplicas: 1.6500 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:34:35 | 64.5833 | — | — | Sí |
-| REG-02 | T2 | 08:34:35 | 09:40:35 | 66.0000 | — | — | Sí |
-| REG-03 | T3 | 09:40:35 | 10:46:00 | 64.4167 | 60 | P3 | Sí |
+| REG-01 | T1 | 07:20:00 | 07:56:56 | 36.9333 | 90 | P3 | Sí |
+| REG-02 | T2 | 07:56:56 | 08:37:14 | 40.3000 | — | — | Sí |
+| REG-03 | T3 | 08:37:14 | 09:20:00 | 42.7667 | — | — | Sí |
 
-Cierre: 195.0000 min ÷ 3 = **65.0000 min**. Suma de las tres réplicas: 195.0000 min (11700 s).
+Cierre: 120.0000 min ÷ 3 = **40.0000 min**. Suma de las tres réplicas: 120.0000 min (7200 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 10:46:00 | 11:22:48 | 33.8000 | 180 | P3 | Sí |
-| VALE-02 | T5 | 11:22:48 | 11:58:48 | 34.5000 | 90 | P3 | Sí |
-| VALE-03 | T6 | 11:58:48 | 12:32:30 | 33.7000 | — | — | Sí |
+| VALE-01 | T4 | 09:24:05 | 09:42:56 | 18.8500 | — | — | Sí |
+| VALE-02 | T5 | 09:42:56 | 10:03:50 | 20.9000 | — | — | Sí |
+| VALE-03 | T6 | 10:03:50 | 10:25:35 | 21.7500 | 90 | P1 | Sí |
 
-Cierre: 102.0000 min ÷ 3 = **34.0000 min**. Suma de las tres réplicas: 102.0000 min (6120 s).
+Cierre: 61.5000 min ÷ 3 = **20.5000 min**. Suma de las tres réplicas: 61.5000 min (3690 s).
 
 ---
 
@@ -356,21 +356,21 @@ Cierre: 102.0000 min ÷ 3 = **34.0000 min**. Suma de las tres réplicas: 102.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:34:44 | 4.7333 | — | — | Sí |
-| REG-02 | T2 | 07:34:44 | 07:39:42 | 4.9667 | — | — | Sí |
-| REG-03 | T3 | 07:39:42 | 07:44:24 | 4.7000 | — | — | Sí |
+| REG-01 | T1 | 07:45:00 | 07:50:33 | 5.5500 | — | — | Sí |
+| REG-02 | T2 | 07:50:33 | 07:57:00 | 6.4500 | — | — | Sí |
+| REG-03 | T3 | 07:57:00 | 08:03:27 | 6.4500 | — | — | Sí |
 
-Cierre: 14.4000 min ÷ 3 = **4.8000 min**. Suma de las tres réplicas: 14.4000 min (864 s).
+Cierre: 18.4500 min ÷ 3 = **6.1500 min**. Suma de las tres réplicas: 18.4500 min (1107 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:44:24 | 07:45:17 | 0.8833 (53 s) | — | — | Sí |
-| VALE-02 | T5 | 07:45:17 | 07:46:12 | 0.9167 (55 s) | — | — | Sí |
-| VALE-03 | T6 | 07:46:12 | 07:47:06 | 0.9000 (54 s) | — | — | Sí |
+| VALE-01 | T4 | 08:05:46 | 08:07:36 | 1.8333 (110 s) | — | — | Sí |
+| VALE-02 | T5 | 08:07:36 | 08:09:29 | 1.8833 (113 s) | — | — | Sí |
+| VALE-03 | T6 | 08:09:29 | 08:11:21 | 1.8667 (112 s) | — | — | Sí |
 
-Cierre: 2.7000 min ÷ 3 = **0.9000 min**. Suma de las tres réplicas: 2.7000 min (162 s).
+Cierre: 5.5833 min ÷ 3 = **1.8611 min**. Suma de las tres réplicas: 5.5833 min (335 s).
 
 ---
 
@@ -380,21 +380,21 @@ Cierre: 2.7000 min ÷ 3 = **0.9000 min**. Suma de las tres réplicas: 2.7000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:45:05 | 73.0833 | 120 | P2 | Sí |
-| REG-02 | T2 | 08:45:05 | 09:56:35 | 71.5000 | — | — | Sí |
-| REG-03 | T3 | 09:56:35 | 11:09:30 | 71.4167 | 90 | P2 | Sí |
+| REG-01 | T1 | 07:40:00 | 08:12:24 | 32.4000 | 150 | P4 | Sí |
+| REG-02 | T2 | 08:12:24 | 08:48:43 | 36.3167 | — | — | Sí |
+| REG-03 | T3 | 08:48:43 | 09:29:30 | 40.7833 | 60 | P1 | Sí |
 
-Cierre: 216.0000 min ÷ 3 = **72.0000 min**. Suma de las tres réplicas: 216.0000 min (12960 s).
+Cierre: 109.5000 min ÷ 3 = **36.5000 min**. Suma de las tres réplicas: 109.5000 min (6570 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:09:30 | 11:37:03 | 27.5500 | — | — | Sí |
-| VALE-02 | T5 | 11:37:03 | 12:03:48 | 26.7500 | — | — | Sí |
-| VALE-03 | T6 | 12:03:48 | 12:32:30 | 26.7000 | 120 | P1 | Sí |
+| VALE-01 | T4 | 09:34:22 | 09:50:17 | 15.9167 | 90 | P4 | Sí |
+| VALE-02 | T5 | 09:50:17 | 10:07:50 | 17.5500 | 120 | P2 | Sí |
+| VALE-03 | T6 | 10:07:50 | 10:25:22 | 17.5333 | 150 | P4 | Sí |
 
-Cierre: 81.0000 min ÷ 3 = **27.0000 min**. Suma de las tres réplicas: 81.0000 min (4860 s).
+Cierre: 51.0000 min ÷ 3 = **17.0000 min**. Suma de las tres réplicas: 51.0000 min (3060 s).
 
 ---
 
@@ -404,21 +404,21 @@ Cierre: 81.0000 min ÷ 3 = **27.0000 min**. Suma de las tres réplicas: 81.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:35:53 | 5.8833 | — | — | Sí |
-| REG-02 | T2 | 07:35:53 | 07:41:30 | 5.6167 | — | — | Sí |
-| REG-03 | T3 | 07:41:30 | 07:47:06 | 5.6000 | — | — | Sí |
+| REG-01 | T1 | 08:10:00 | 08:14:34 | 4.5667 | — | — | Sí |
+| REG-02 | T2 | 08:14:34 | 08:19:04 | 4.5000 | 45 | P2 | Sí |
+| REG-03 | T3 | 08:19:04 | 08:24:28 | 5.4000 | — | — | Sí |
 
-Cierre: 17.1000 min ÷ 3 = **5.7000 min**. Suma de las tres réplicas: 17.1000 min (1026 s).
+Cierre: 14.4667 min ÷ 3 = **4.8222 min**. Suma de las tres réplicas: 14.4667 min (868 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:47:06 | 07:47:33 | 0.4500 (27 s) | — | — | Sí |
-| VALE-02 | T5 | 07:47:33 | 07:47:59 | 0.4333 (26 s) | — | — | Sí |
-| VALE-03 | T6 | 07:47:59 | 07:48:24 | 0.4167 (25 s) | — | — | Sí |
+| VALE-01 | T4 | 08:26:23 | 08:27:53 | 1.5000 (90 s) | 60 | P2 | Sí |
+| VALE-02 | T5 | 08:27:53 | 08:29:34 | 1.6833 (101 s) | — | — | Sí |
+| VALE-03 | T6 | 08:29:34 | 08:31:24 | 1.8333 (110 s) | — | — | Sí |
 
-Cierre: 1.3000 min ÷ 3 = **0.4333 min**. Suma de las tres réplicas: 1.3000 min (78 s).
+Cierre: 5.0166 min ÷ 3 = **1.6722 min**. Suma de las tres réplicas: 5.0166 min (301 s).
 
 ---
 
@@ -428,21 +428,21 @@ Cierre: 1.3000 min ÷ 3 = **0.4333 min**. Suma de las tres réplicas: 1.3000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 09:04:20 | 94.3333 | — | — | Sí |
-| REG-02 | T2 | 09:04:20 | 10:40:25 | 93.0833 | 180 | P1 | Sí |
-| REG-03 | T3 | 10:40:25 | 12:15:00 | 94.5833 | — | — | Sí |
+| REG-01 | T1 | 07:30:00 | 08:09:21 | 39.3500 | — | — | Sí |
+| REG-02 | T2 | 08:09:21 | 08:52:53 | 43.5333 | — | — | Sí |
+| REG-03 | T3 | 08:52:53 | 09:42:00 | 49.1167 | — | — | Sí |
 
-Cierre: 282.0000 min ÷ 3 = **94.0000 min**. Suma de las tres réplicas: 282.0000 min (16920 s).
+Cierre: 132.0000 min ÷ 3 = **44.0000 min**. Suma de las tres réplicas: 132.0000 min (7920 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 12:15:00 | 12:44:40 | 29.6667 | — | — | Sí |
-| VALE-02 | T5 | 12:44:40 | 13:13:42 | 29.0333 | — | — | Sí |
-| VALE-03 | T6 | 13:13:42 | 13:44:15 | 29.8000 | 45 | P3 | Sí |
+| VALE-01 | T4 | 09:44:26 | 10:06:35 | 22.1500 | 60 | P3 | Sí |
+| VALE-02 | T5 | 10:06:35 | 10:30:15 | 23.6667 | 60 | P1 | Sí |
+| VALE-03 | T6 | 10:30:15 | 10:56:26 | 26.1833 | — | — | Sí |
 
-Cierre: 88.5000 min ÷ 3 = **29.5000 min**. Suma de las tres réplicas: 88.5000 min (5310 s).
+Cierre: 72.0000 min ÷ 3 = **24.0000 min**. Suma de las tres réplicas: 72.0000 min (4320 s).
 
 ---
 
@@ -452,21 +452,21 @@ Cierre: 88.5000 min ÷ 3 = **29.5000 min**. Suma de las tres réplicas: 88.5000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:37:51 | 7.8500 | — | — | Sí |
-| REG-02 | T2 | 07:37:51 | 07:47:30 | 7.6500 | 120 | P2 | Sí |
-| REG-03 | T3 | 07:47:30 | 07:55:24 | 7.9000 | — | — | Sí |
+| REG-01 | T1 | 08:00:00 | 08:04:15 | 4.2500 | — | — | Sí |
+| REG-02 | T2 | 08:04:15 | 08:09:09 | 4.9000 | 45 | P1 | Sí |
+| REG-03 | T3 | 08:09:09 | 08:14:51 | 5.7000 | 60 | P2 | Sí |
 
-Cierre: 23.4000 min ÷ 3 = **7.8000 min**. Suma de las tres réplicas: 23.4000 min (1404 s).
+Cierre: 14.8500 min ÷ 3 = **4.9500 min**. Suma de las tres réplicas: 14.8500 min (891 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:55:24 | 07:56:01 | 0.6167 (37 s) | — | — | Sí |
-| VALE-02 | T5 | 07:56:01 | 07:56:41 | 0.6667 (40 s) | — | — | Sí |
-| VALE-03 | T6 | 07:56:41 | 07:57:21 | 0.6667 (40 s) | — | — | Sí |
+| VALE-01 | T4 | 08:16:38 | 08:18:29 | 1.8500 (111 s) | — | — | Sí |
+| VALE-02 | T5 | 08:18:29 | 08:20:28 | 1.9833 (119 s) | 45 | P2 | Sí |
+| VALE-03 | T6 | 08:20:28 | 08:22:38 | 2.1667 (130 s) | — | — | Sí |
 
-Cierre: 1.9500 min ÷ 3 = **0.6500 min**. Suma de las tres réplicas: 1.9500 min (117 s).
+Cierre: 6.0000 min ÷ 3 = **2.0000 min**. Suma de las tres réplicas: 6.0000 min (360 s).
 
 ---
 
@@ -476,21 +476,21 @@ Cierre: 1.9500 min ÷ 3 = **0.6500 min**. Suma de las tres réplicas: 1.9500 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:30:10 | 60.1667 | — | — | Sí |
-| REG-02 | T2 | 08:30:10 | 09:33:25 | 61.2500 | 120 | P3 | Sí |
-| REG-03 | T3 | 09:33:25 | 10:37:30 | 61.5833 | 150 | P4 | Sí |
+| REG-01 | T1 | 07:15:00 | 07:44:03 | 29.0500 | — | — | Sí |
+| REG-02 | T2 | 07:44:03 | 08:16:13 | 32.1667 | 60 | P1 | Sí |
+| REG-03 | T3 | 08:16:13 | 08:51:00 | 34.7833 | 90 | P3 | Sí |
 
-Cierre: 183.0000 min ÷ 3 = **61.0000 min**. Suma de las tres réplicas: 183.0000 min (10980 s).
+Cierre: 96.0000 min ÷ 3 = **32.0000 min**. Suma de las tres réplicas: 96.0000 min (5760 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 10:37:30 | 11:12:35 | 35.0833 | — | — | Sí |
-| VALE-02 | T5 | 11:12:35 | 11:48:13 | 35.6333 | — | — | Sí |
-| VALE-03 | T6 | 11:48:13 | 12:26:00 | 35.7833 | 120 | P4 | Sí |
+| VALE-01 | T4 | 08:56:48 | 09:10:29 | 13.6833 | — | — | Sí |
+| VALE-02 | T5 | 09:10:29 | 09:24:34 | 14.0833 | 45 | P3 | Sí |
+| VALE-03 | T6 | 09:24:34 | 09:40:18 | 15.7333 | 150 | P1 | Sí |
 
-Cierre: 106.5000 min ÷ 3 = **35.5000 min**. Suma de las tres réplicas: 106.5000 min (6390 s).
+Cierre: 43.4999 min ÷ 3 = **14.5000 min**. Suma de las tres réplicas: 43.4999 min (2610 s).
 
 ---
 
@@ -500,21 +500,21 @@ Cierre: 106.5000 min ÷ 3 = **35.5000 min**. Suma de las tres réplicas: 106.500
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:34:22 | 4.3667 | — | — | Sí |
-| REG-02 | T2 | 07:34:22 | 07:38:55 | 4.5500 | — | — | Sí |
-| REG-03 | T3 | 07:38:55 | 07:43:30 | 4.5833 | — | — | Sí |
+| REG-01 | T1 | 07:50:00 | 07:55:08 | 5.1333 | — | — | Sí |
+| REG-02 | T2 | 07:55:08 | 08:01:14 | 6.1000 | 30 | P2 | Sí |
+| REG-03 | T3 | 08:01:14 | 08:07:46 | 6.5333 | — | — | Sí |
 
-Cierre: 13.5000 min ÷ 3 = **4.5000 min**. Suma de las tres réplicas: 13.5000 min (810 s).
+Cierre: 17.7666 min ÷ 3 = **5.9222 min**. Suma de las tres réplicas: 17.7666 min (1066 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:43:30 | 07:44:17 | 0.7833 (47 s) | — | — | Sí |
-| VALE-02 | T5 | 07:44:17 | 07:45:03 | 0.7667 (46 s) | — | — | Sí |
-| VALE-03 | T6 | 07:45:03 | 07:45:51 | 0.8000 (48 s) | — | — | Sí |
+| VALE-01 | T4 | 08:07:55 | 08:09:46 | 1.8500 (111 s) | — | — | Sí |
+| VALE-02 | T5 | 08:09:46 | 08:11:46 | 2.0000 (120 s) | — | — | Sí |
+| VALE-03 | T6 | 08:11:46 | 08:13:48 | 2.0333 (122 s) | — | — | Sí |
 
-Cierre: 2.3500 min ÷ 3 = **0.7833 min**. Suma de las tres réplicas: 2.3500 min (141 s).
+Cierre: 5.8833 min ÷ 3 = **1.9611 min**. Suma de las tres réplicas: 5.8833 min (353 s).
 
 ---
 
@@ -524,21 +524,21 @@ Cierre: 2.3500 min ÷ 3 = **0.7833 min**. Suma de las tres réplicas: 2.3500 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:44:50 | 74.8333 | — | — | Sí |
-| REG-02 | T2 | 08:44:50 | 10:01:15 | 76.4167 | — | — | Sí |
-| REG-03 | T3 | 10:01:15 | 11:21:00 | 76.7500 | 180 | P1 | Sí |
+| REG-01 | T1 | 07:45:00 | 08:14:19 | 29.3167 | — | — | Sí |
+| REG-02 | T2 | 08:14:19 | 08:45:16 | 30.9500 | 60 | P1 | Sí |
+| REG-03 | T3 | 08:45:16 | 09:19:30 | 34.2333 | — | — | Sí |
 
-Cierre: 228.0000 min ÷ 3 = **76.0000 min**. Suma de las tres réplicas: 228.0000 min (13680 s).
+Cierre: 94.5000 min ÷ 3 = **31.5000 min**. Suma de las tres réplicas: 94.5000 min (5670 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:21:00 | 11:47:25 | 24.4167 | 120 | P2 | Sí |
-| VALE-02 | T5 | 11:47:25 | 12:12:37 | 25.2000 | — | — | Sí |
-| VALE-03 | T6 | 12:12:37 | 12:38:45 | 25.3833 | 45 | P4 | Sí |
+| VALE-01 | T4 | 09:21:59 | 09:35:25 | 13.4333 | 45 | P4 | Sí |
+| VALE-02 | T5 | 09:35:25 | 09:50:06 | 14.6833 | — | — | Sí |
+| VALE-03 | T6 | 09:50:06 | 10:06:59 | 16.8833 | 150 | P1 | Sí |
 
-Cierre: 75.0000 min ÷ 3 = **25.0000 min**. Suma de las tres réplicas: 75.0000 min (4500 s).
+Cierre: 44.9999 min ÷ 3 = **15.0000 min**. Suma de las tres réplicas: 44.9999 min (2700 s).
 
 ---
 
@@ -548,21 +548,21 @@ Cierre: 75.0000 min ÷ 3 = **25.0000 min**. Suma de las tres réplicas: 75.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:39:06 | 6.1000 | 180 | P4 | Sí |
-| REG-02 | T2 | 07:39:06 | 07:45:28 | 6.3667 | — | — | Sí |
-| REG-03 | T3 | 07:45:28 | 07:54:54 | 6.4333 | 180 | P3 | Sí |
+| REG-01 | T1 | 08:15:00 | 08:20:38 | 5.6333 | — | — | Sí |
+| REG-02 | T2 | 08:20:38 | 08:26:55 | 6.2833 | — | — | Sí |
+| REG-03 | T3 | 08:26:55 | 08:33:02 | 6.1167 | — | — | Sí |
 
-Cierre: 18.9000 min ÷ 3 = **6.3000 min**. Suma de las tres réplicas: 18.9000 min (1134 s).
+Cierre: 18.0333 min ÷ 3 = **6.0111 min**. Suma de las tres réplicas: 18.0333 min (1082 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:54:54 | 07:55:13 | 0.3167 (19 s) | — | — | Sí |
-| VALE-02 | T5 | 07:55:13 | 07:55:33 | 0.3333 (20 s) | — | — | Sí |
-| VALE-03 | T6 | 07:55:33 | 07:55:54 | 0.3500 (21 s) | — | — | Sí |
+| VALE-01 | T4 | 08:34:07 | 08:35:40 | 1.5500 (93 s) | — | — | Sí |
+| VALE-02 | T5 | 08:35:40 | 08:37:24 | 1.7333 (104 s) | 60 | P2 | Sí |
+| VALE-03 | T6 | 08:37:24 | 08:39:04 | 1.6667 (100 s) | — | — | Sí |
 
-Cierre: 1.0000 min ÷ 3 = **0.3333 min**. Suma de las tres réplicas: 1.0000 min (60 s).
+Cierre: 4.9500 min ÷ 3 = **1.6500 min**. Suma de las tres réplicas: 4.9500 min (297 s).
 
 ---
 
@@ -572,21 +572,21 @@ Cierre: 1.0000 min ÷ 3 = **0.3333 min**. Suma de las tres réplicas: 1.0000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:28:40 | 57.9167 | 45 | P4 | Sí |
-| REG-02 | T2 | 08:28:40 | 09:26:20 | 56.6667 | 60 | P3 | Sí |
-| REG-03 | T3 | 09:26:20 | 10:22:45 | 56.4167 | — | — | Sí |
+| REG-01 | T1 | 08:00:00 | 08:35:58 | 35.9667 | — | — | Sí |
+| REG-02 | T2 | 08:35:58 | 09:14:27 | 38.4833 | 60 | P4 | Sí |
+| REG-03 | T3 | 09:14:27 | 09:57:00 | 42.5500 | 120 | P2 | Sí |
 
-Cierre: 171.0000 min ÷ 3 = **57.0000 min**. Suma de las tres réplicas: 171.0000 min (10260 s).
+Cierre: 117.0000 min ÷ 3 = **39.0000 min**. Suma de las tres réplicas: 117.0000 min (7020 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 10:22:45 | 10:53:57 | 30.4500 | 45 | P2 | Sí |
-| VALE-02 | T5 | 10:53:57 | 11:24:47 | 29.8333 | 60 | P1 | Sí |
-| VALE-03 | T6 | 11:24:47 | 11:56:30 | 29.7167 | 120 | P3 | Sí |
+| VALE-01 | T4 | 10:02:51 | 10:20:39 | 17.8000 | 120 | P3 | Sí |
+| VALE-02 | T5 | 10:20:39 | 10:40:05 | 19.4333 | 120 | P1 | Sí |
+| VALE-03 | T6 | 10:40:05 | 11:01:21 | 21.2667 | — | — | Sí |
 
-Cierre: 90.0000 min ÷ 3 = **30.0000 min**. Suma de las tres réplicas: 90.0000 min (5400 s).
+Cierre: 58.5000 min ÷ 3 = **19.5000 min**. Suma de las tres réplicas: 58.5000 min (3510 s).
 
 ---
 
@@ -596,21 +596,21 @@ Cierre: 90.0000 min ÷ 3 = **30.0000 min**. Suma de las tres réplicas: 90.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:34:21 | 4.3500 | — | — | Sí |
-| REG-02 | T2 | 07:34:21 | 07:38:30 | 4.1500 | — | — | Sí |
-| REG-03 | T3 | 07:38:30 | 07:42:36 | 4.1000 | — | — | Sí |
+| REG-01 | T1 | 08:30:00 | 08:35:42 | 5.7000 | — | — | Sí |
+| REG-02 | T2 | 08:35:42 | 08:41:50 | 6.1333 | 45 | P1 | Sí |
+| REG-03 | T3 | 08:41:50 | 08:48:52 | 7.0333 | — | — | Sí |
 
-Cierre: 12.6000 min ÷ 3 = **4.2000 min**. Suma de las tres réplicas: 12.6000 min (756 s).
+Cierre: 18.8666 min ÷ 3 = **6.2889 min**. Suma de las tres réplicas: 18.8666 min (1132 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:42:36 | 07:43:08 | 0.5333 (32 s) | — | — | Sí |
-| VALE-02 | T5 | 07:43:08 | 07:43:38 | 0.5000 (30 s) | — | — | Sí |
-| VALE-03 | T6 | 07:43:38 | 07:44:09 | 0.5167 (31 s) | — | — | Sí |
+| VALE-01 | T4 | 08:51:11 | 08:53:00 | 1.8167 (109 s) | — | — | Sí |
+| VALE-02 | T5 | 08:53:00 | 08:54:52 | 1.8667 (112 s) | — | — | Sí |
+| VALE-03 | T6 | 08:54:52 | 08:56:48 | 1.9333 (116 s) | 30 | P2 | Sí |
 
-Cierre: 1.5500 min ÷ 3 = **0.5167 min**. Suma de las tres réplicas: 1.5500 min (93 s).
+Cierre: 5.6167 min ÷ 3 = **1.8722 min**. Suma de las tres réplicas: 5.6167 min (337 s).
 
 ---
 
@@ -620,21 +620,21 @@ Cierre: 1.5500 min ÷ 3 = **0.5167 min**. Suma de las tres réplicas: 1.5500 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:54:20 | 82.3333 | 120 | P3 | Sí |
-| REG-02 | T2 | 08:54:20 | 10:17:05 | 82.7500 | — | — | Sí |
-| REG-03 | T3 | 10:17:05 | 11:43:00 | 83.9167 | 120 | P1 | Sí |
+| REG-01 | T1 | 07:20:00 | 07:52:35 | 32.5833 | — | — | Sí |
+| REG-02 | T2 | 07:52:35 | 08:29:52 | 37.2833 | — | — | Sí |
+| REG-03 | T3 | 08:29:52 | 09:11:00 | 41.1333 | 90 | P1 | Sí |
 
-Cierre: 249.0000 min ÷ 3 = **83.0000 min**. Suma de las tres réplicas: 249.0000 min (14940 s).
+Cierre: 110.9999 min ÷ 3 = **37.0000 min**. Suma de las tres réplicas: 110.9999 min (6660 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:43:00 | 12:07:40 | 22.1667 | 150 | P1 | Sí |
-| VALE-02 | T5 | 12:07:40 | 12:30:02 | 22.3667 | — | — | Sí |
-| VALE-03 | T6 | 12:30:02 | 12:56:00 | 22.9667 | 180 | P1 | Sí |
+| VALE-01 | T4 | 09:16:49 | 09:33:43 | 16.9000 | — | — | Sí |
+| VALE-02 | T5 | 09:33:43 | 09:51:59 | 18.2667 | 60 | P2 | Sí |
+| VALE-03 | T6 | 09:51:59 | 10:10:49 | 18.8333 | — | — | Sí |
 
-Cierre: 67.5000 min ÷ 3 = **22.5000 min**. Suma de las tres réplicas: 67.5000 min (4050 s).
+Cierre: 54.0000 min ÷ 3 = **18.0000 min**. Suma de las tres réplicas: 54.0000 min (3240 s).
 
 ---
 
@@ -644,21 +644,21 @@ Cierre: 67.5000 min ÷ 3 = **22.5000 min**. Suma de las tres réplicas: 67.5000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:39:47 | 6.7833 | 180 | P3 | Sí |
-| REG-02 | T2 | 07:39:47 | 07:46:39 | 6.8667 | — | — | Sí |
-| REG-03 | T3 | 07:46:39 | 07:53:42 | 7.0500 | — | — | Sí |
+| REG-01 | T1 | 07:45:00 | 07:51:03 | 6.0500 | — | — | Sí |
+| REG-02 | T2 | 07:51:03 | 07:57:25 | 6.3667 | — | — | Sí |
+| REG-03 | T3 | 07:57:25 | 08:04:19 | 6.9000 | — | — | Sí |
 
-Cierre: 20.7000 min ÷ 3 = **6.9000 min**. Suma de las tres réplicas: 20.7000 min (1242 s).
+Cierre: 19.3167 min ÷ 3 = **6.4389 min**. Suma de las tres réplicas: 19.3167 min (1159 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:53:42 | 07:53:56 | 0.2333 (14 s) | — | — | Sí |
-| VALE-02 | T5 | 07:53:56 | 07:54:11 | 0.2500 (15 s) | — | — | Sí |
-| VALE-03 | T6 | 07:54:11 | 07:54:24 | 0.2167 (13 s) | — | — | Sí |
+| VALE-01 | T4 | 08:04:25 | 08:06:10 | 1.7500 (105 s) | 45 | P1 | Sí |
+| VALE-02 | T5 | 08:06:10 | 08:07:56 | 1.7667 (106 s) | 30 | P2 | Sí |
+| VALE-03 | T6 | 08:07:56 | 08:09:45 | 1.8167 (109 s) | — | — | Sí |
 
-Cierre: 0.7000 min ÷ 3 = **0.2333 min**. Suma de las tres réplicas: 0.7000 min (42 s).
+Cierre: 5.3334 min ÷ 3 = **1.7778 min**. Suma de las tres réplicas: 5.3334 min (320 s).
 
 ---
 
@@ -668,21 +668,21 @@ Cierre: 0.7000 min ÷ 3 = **0.2333 min**. Suma de las tres réplicas: 0.7000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 09:00:30 | 90.5000 | — | — | Sí |
-| REG-02 | T2 | 09:00:30 | 10:31:15 | 90.7500 | — | — | Sí |
-| REG-03 | T3 | 10:31:15 | 12:00:00 | 88.7500 | — | — | Sí |
+| REG-01 | T1 | 07:40:00 | 08:17:06 | 37.1000 | 120 | P1 | Sí |
+| REG-02 | T2 | 08:17:06 | 08:58:00 | 40.9000 | — | — | Sí |
+| REG-03 | T3 | 08:58:00 | 09:44:30 | 46.5000 | — | — | Sí |
 
-Cierre: 270.0000 min ÷ 3 = **90.0000 min**. Suma de las tres réplicas: 270.0000 min (16200 s).
+Cierre: 124.5000 min ÷ 3 = **41.5000 min**. Suma de las tres réplicas: 124.5000 min (7470 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 12:00:00 | 12:29:00 | 28.2500 | 45 | P1 | Sí |
-| VALE-02 | T5 | 12:29:00 | 12:57:22 | 28.3667 | — | — | Sí |
-| VALE-03 | T6 | 12:57:22 | 13:24:45 | 27.3833 | — | — | Sí |
+| VALE-01 | T4 | 09:48:39 | 10:08:41 | 20.0333 | 60 | P2 | Sí |
+| VALE-02 | T5 | 10:08:41 | 10:30:01 | 21.3333 | — | — | Sí |
+| VALE-03 | T6 | 10:30:01 | 10:51:39 | 21.6333 | — | — | Sí |
 
-Cierre: 84.0000 min ÷ 3 = **28.0000 min**. Suma de las tres réplicas: 84.0000 min (5040 s).
+Cierre: 62.9999 min ÷ 3 = **21.0000 min**. Suma de las tres réplicas: 62.9999 min (3780 s).
 
 ---
 
@@ -692,21 +692,21 @@ Cierre: 84.0000 min ÷ 3 = **28.0000 min**. Suma de las tres réplicas: 84.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:39:05 | 7.5833 | 90 | P2 | Sí |
-| REG-02 | T2 | 07:39:05 | 07:46:43 | 7.6333 | — | — | Sí |
-| REG-03 | T3 | 07:46:43 | 07:56:00 | 7.2833 | 120 | P4 | Sí |
+| REG-01 | T1 | 08:10:00 | 08:15:01 | 5.0167 | 45 | P1 | Sí |
+| REG-02 | T2 | 08:15:01 | 08:21:05 | 6.0667 | — | — | Sí |
+| REG-03 | T3 | 08:21:05 | 08:27:13 | 6.1333 | — | — | Sí |
 
-Cierre: 22.5000 min ÷ 3 = **7.5000 min**. Suma de las tres réplicas: 22.5000 min (1350 s).
+Cierre: 17.2167 min ÷ 3 = **5.7389 min**. Suma de las tres réplicas: 17.2167 min (1033 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:56:00 | 07:56:38 | 0.6333 (38 s) | — | — | Sí |
-| VALE-02 | T5 | 07:56:38 | 07:57:13 | 0.5833 (35 s) | — | — | Sí |
-| VALE-03 | T6 | 07:57:13 | 07:57:48 | 0.5833 (35 s) | — | — | Sí |
+| VALE-01 | T4 | 08:28:18 | 08:30:12 | 1.9000 (114 s) | 60 | P2 | Sí |
+| VALE-02 | T5 | 08:30:12 | 08:32:11 | 1.9833 (119 s) | — | — | Sí |
+| VALE-03 | T6 | 08:32:11 | 08:34:31 | 2.3333 (140 s) | — | — | Sí |
 
-Cierre: 1.8000 min ÷ 3 = **0.6000 min**. Suma de las tres réplicas: 1.8000 min (108 s).
+Cierre: 6.2166 min ÷ 3 = **2.0722 min**. Suma de las tres réplicas: 6.2166 min (373 s).
 
 ---
 
@@ -716,21 +716,21 @@ Cierre: 1.8000 min ÷ 3 = **0.6000 min**. Suma de las tres réplicas: 1.8000 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 08:24:35 | 54.5833 | — | — | Sí |
-| REG-02 | T2 | 08:24:35 | 09:22:05 | 56.0000 | 90 | P4 | Sí |
-| REG-03 | T3 | 09:22:05 | 10:16:30 | 54.4167 | — | — | Sí |
+| REG-01 | T1 | 07:30:00 | 08:00:33 | 30.5500 | — | — | Sí |
+| REG-02 | T2 | 08:00:33 | 08:34:45 | 34.2000 | — | — | Sí |
+| REG-03 | T3 | 08:34:45 | 09:12:00 | 37.2500 | 60 | P1 | Sí |
 
-Cierre: 165.0000 min ÷ 3 = **55.0000 min**. Suma de las tres réplicas: 165.0000 min (9900 s).
+Cierre: 102.0000 min ÷ 3 = **34.0000 min**. Suma de las tres réplicas: 102.0000 min (6120 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 10:16:30 | 10:52:48 | 34.3000 | 120 | P4 | Sí |
-| VALE-02 | T5 | 10:52:48 | 11:27:48 | 35.0000 | — | — | Sí |
-| VALE-03 | T6 | 11:27:48 | 12:02:00 | 34.2000 | — | — | Sí |
+| VALE-01 | T4 | 09:18:00 | 09:33:21 | 15.3500 | — | — | Sí |
+| VALE-02 | T5 | 09:33:21 | 09:49:26 | 16.0833 | — | — | Sí |
+| VALE-03 | T6 | 09:49:26 | 10:07:30 | 18.0667 | 60 | P2 | Sí |
 
-Cierre: 103.5000 min ÷ 3 = **34.5000 min**. Suma de las tres réplicas: 103.5000 min (6210 s).
+Cierre: 49.5000 min ÷ 3 = **16.5000 min**. Suma de las tres réplicas: 49.5000 min (2970 s).
 
 ---
 
@@ -740,21 +740,21 @@ Cierre: 103.5000 min ÷ 3 = **34.5000 min**. Suma de las tres réplicas: 103.500
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:35:53 | 5.8833 | — | — | Sí |
-| REG-02 | T2 | 07:35:53 | 07:42:00 | 6.1167 | — | — | Sí |
-| REG-03 | T3 | 07:42:00 | 07:47:51 | 5.8500 | — | — | Sí |
+| REG-01 | T1 | 08:00:00 | 08:05:00 | 5.0000 | — | — | Sí |
+| REG-02 | T2 | 08:05:00 | 08:10:33 | 5.5500 | — | — | Sí |
+| REG-03 | T3 | 08:10:33 | 08:16:35 | 6.0333 | — | — | Sí |
 
-Cierre: 17.8500 min ÷ 3 = **5.9500 min**. Suma de las tres réplicas: 17.8500 min (1071 s).
+Cierre: 16.5833 min ÷ 3 = **5.5278 min**. Suma de las tres réplicas: 16.5833 min (995 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:47:51 | 07:48:33 | 0.7000 (42 s) | — | — | Sí |
-| VALE-02 | T5 | 07:48:33 | 07:49:17 | 0.7333 (44 s) | — | — | Sí |
-| VALE-03 | T6 | 07:49:17 | 07:50:00 | 0.7167 (43 s) | — | — | Sí |
+| VALE-01 | T4 | 08:18:46 | 08:20:49 | 2.0500 (123 s) | — | — | Sí |
+| VALE-02 | T5 | 08:20:49 | 08:23:02 | 2.2167 (133 s) | — | — | Sí |
+| VALE-03 | T6 | 08:23:02 | 08:25:35 | 2.5500 (153 s) | 60 | P2 | Sí |
 
-Cierre: 2.1500 min ÷ 3 = **0.7167 min**. Suma de las tres réplicas: 2.1500 min (129 s).
+Cierre: 6.8167 min ÷ 3 = **2.2722 min**. Suma de las tres réplicas: 6.8167 min (409 s).
 
 ---
 
@@ -764,21 +764,21 @@ Cierre: 2.1500 min ÷ 3 = **0.7167 min**. Suma de las tres réplicas: 2.1500 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 09:00:05 | 90.0833 | — | — | Sí |
-| REG-02 | T2 | 09:00:05 | 10:28:35 | 88.5000 | — | — | Sí |
-| REG-03 | T3 | 10:28:35 | 11:57:00 | 88.4167 | — | — | Sí |
+| REG-01 | T1 | 07:15:00 | 07:46:26 | 31.4333 | 150 | P4 | Sí |
+| REG-02 | T2 | 07:46:26 | 08:21:31 | 35.0833 | 45 | P4 | Sí |
+| REG-03 | T3 | 08:21:31 | 09:03:00 | 41.4833 | — | — | Sí |
 
-Cierre: 267.0000 min ÷ 3 = **89.0000 min**. Suma de las tres réplicas: 267.0000 min (16020 s).
+Cierre: 107.9999 min ÷ 3 = **36.0000 min**. Suma de las tres réplicas: 107.9999 min (6480 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 11:57:00 | 12:21:33 | 24.5500 | — | — | Sí |
-| VALE-02 | T5 | 12:21:33 | 12:46:48 | 23.7500 | 90 | P3 | Sí |
-| VALE-03 | T6 | 12:46:48 | 13:12:30 | 23.7000 | 120 | P3 | Sí |
+| VALE-01 | T4 | 09:09:10 | 09:25:36 | 16.4333 | 150 | P3 | Sí |
+| VALE-02 | T5 | 09:25:36 | 09:43:10 | 17.5667 | — | — | Sí |
+| VALE-03 | T6 | 09:43:10 | 10:01:40 | 18.5000 | 45 | P4 | Sí |
 
-Cierre: 72.0000 min ÷ 3 = **24.0000 min**. Suma de las tres réplicas: 72.0000 min (4320 s).
+Cierre: 52.5000 min ÷ 3 = **17.5000 min**. Suma de las tres réplicas: 52.5000 min (3150 s).
 
 ---
 
@@ -788,21 +788,23 @@ Cierre: 72.0000 min ÷ 3 = **24.0000 min**. Suma de las tres réplicas: 72.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:30:00 | 07:37:14 | 6.2333 | 60 | P1 | Sí |
-| REG-02 | T2 | 07:37:14 | 07:43:12 | 5.9667 | — | — | Sí |
-| REG-03 | T3 | 07:43:12 | 07:49:09 | 5.9500 | — | — | Sí |
+| REG-01 | T1 | 07:50:00 | 07:54:59 | 4.9833 | — | — | Sí |
+| REG-02 | T2 | 07:54:59 | 08:00:32 | 5.5500 | — | — | Sí |
+| REG-03 | T3 | 08:00:32 | 08:06:53 | 6.3500 | — | — | Sí |
 
-Cierre: 18.1500 min ÷ 3 = **6.0500 min**. Suma de las tres réplicas: 18.1500 min (1089 s).
+Cierre: 16.8833 min ÷ 3 = **5.6278 min**. Suma de las tres réplicas: 16.8833 min (1013 s).
 
 **Indicador 1.2 — Tiempo de emisión de vales (T_vale)**
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 07:49:09 | 07:49:27 | 0.3000 (18 s) | — | — | Sí |
-| VALE-02 | T5 | 07:49:27 | 07:49:44 | 0.2833 (17 s) | — | — | Sí |
-| VALE-03 | T6 | 07:49:44 | 07:50:00 | 0.2667 (16 s) | — | — | Sí |
+| VALE-01 | T4 | 08:07:58 | 08:09:49 | 1.8500 (111 s) | — | — | Sí |
+| VALE-02 | T5 | 08:09:49 | 08:11:47 | 1.9667 (118 s) | — | — | Sí |
+| VALE-03 | T6 | 08:11:47 | 08:13:40 | 1.8833 (113 s) | — | — | Sí |
 
-Cierre: 0.8500 min ÷ 3 = **0.2833 min**. Suma de las tres réplicas: 0.8500 min (51 s).
+Cierre: 5.7000 min ÷ 3 = **1.9000 min**. Suma de las tres réplicas: 5.7000 min (342 s).
+
+---
 
 ---
 
@@ -815,242 +817,242 @@ Cada bloque audita cuarenta documentos sobre ocho criterios binarios y concilia 
 
 ### Bloque 1 · TRAB-01 · Pretest (proceso manual) · 10/08/2026
 
-Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliadas: 25 · Concordantes: 21 · CPE: 84.00 %
+Documentos auditados: 40 · Conformes: 25 · RSD: 62.50 % · Entregas conciliadas: 25 · Concordantes: 16 · CPE: 64.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | VARI | L-2608-01 | 40 | S | S | S | S | S | S | S | N | N | M8 |
-| 2 | ING | BCG | L-2608-02 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 3 | AJU | INFL | L-2608-03 | 200 | S | S | N | S | S | S | S | S | N | M3 |
-| 4 | TRA | DTA | L-2608-04 | 60 | S | S | S | S | S | S | N | S | N | M7 |
-| 5 | AJU | PENT | L-2608-05 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 6 | SAL | ROTA | L-2608-06 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 7 | SAL | VARI | L-2608-07 | 150 | N | S | S | S | S | S | S | S | N | M1 |
-| 8 | AJU | PENT | L-2608-08 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 9 | ING | HEPB | L-2608-09 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 10 | AJU | ROTA | L-2608-10 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 11 | AJU | ROTA | L-2608-11 | 300 | N | S | S | S | S | S | S | S | N | M1 |
-| 12 | DEV | DTA | L-2608-12 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 13 | ING | HEPB | L-2608-13 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | ROTA | L-2608-14 | 40 | S | S | S | S | S | S | N | S | N | M7 |
-| 15 | AJU | DTA | L-2608-15 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 16 | DEV | NEUM | L-2608-16 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | DTA | L-2608-17 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 18 | DEV | INFL | L-2608-18 | 120 | S | S | S | S | N | S | S | S | N | M5 |
-| 19 | TRA | BCG | L-2608-19 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 20 | TRA | SPR | L-2608-20 | 150 | S | S | S | S | S | S | N | S | N | M7 |
-| 21 | SAL | NEUM | L-2608-21 | 120 | S | S | N | S | S | S | S | S | N | M3 |
-| 22 | TRA | DTA | L-2608-22 | 40 | S | S | S | S | S | N | S | S | N | M6 |
-| 23 | DEV | IPV | L-2608-23 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 24 | TRA | HEPB | L-2608-24 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | IPV | L-2608-25 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 26 | DEV | IPV | L-2608-26 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | NEUM | L-2608-27 | 150 | S | S | N | S | S | S | S | S | N | M3 |
-| 28 | AJU | PENT | L-2608-28 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | PENT | L-2608-29 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 30 | SAL | BCG | L-2608-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | ING | NEUM | L-2608-31 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 32 | TRA | PENT | L-2608-32 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | IPV | L-2608-33 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 34 | DEV | IPV | L-2608-34 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | INFL | L-2608-35 | 100 | S | N | S | S | S | S | S | S | N | M2 |
-| 36 | SAL | HEPB | L-2608-36 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | SPR | L-2608-37 | 200 | S | S | S | S | S | S | N | S | N | M7 |
-| 38 | ING | PENT | L-2608-38 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 39 | SAL | NEUM | L-2608-39 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | VARI | L-2608-40 | 150 | S | S | S | S | S | S | S | S | S | — |
+| 1 | AJU | HEPB | HEPB-2603-786K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | ROTA | ROTA-2605-833M | 240 | S | S | S | S | S | N | S | S | N | M6 |
+| 3 | TRA | INFL | INFL-2504-261K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | IPV | IPV-2507-805M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 5 | TRA | SPR | SPR-2608-539M | 240 | S | S | S | S | N | S | S | S | N | M5 |
+| 6 | ING | SPR | SPR-2606-500M | 50 | S | S | S | S | S | N | S | S | N | M6 |
+| 7 | SAL | VARI | VARI-2501-250M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 8 | TRA | ROTA | ROTA-2502-563B | 40 | S | S | S | S | S | N | S | S | N | M6 |
+| 9 | SAL | DTA | DTA-2606-829K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | PENT | PENT-2508-232M | 40 | S | S | S | S | N | S | S | S | N | M5 |
+| 11 | AJU | DTA | DTA-2505-409K | 30 | N | S | S | S | S | S | S | N | N | M1+M8 |
+| 12 | AJU | VARI | VARI-2607-979A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | HEPB | HEPB-2509-474M | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 14 | SAL | INFL | INFL-2604-777M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | IPV | IPV-2605-698M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | NEUM | NEUM-2505-638K | 60 | S | S | N | S | S | S | N | S | N | M3+M7 |
+| 17 | ING | VARI | VARI-2508-818M | 180 | S | S | N | S | S | S | S | S | N | M3 |
+| 18 | ING | PENT | PENT-2508-232M | 30 | S | S | S | S | S | S | S | N | N | M8 |
+| 19 | ING | HEPB | HEPB-2609-521M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | HEPB | HEPB-2609-521M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | HEPB | HEPB-2609-917M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 22 | TRA | PENT | PENT-2606-251M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 23 | SAL | SPR | SPR-2603-471K | 150 | S | S | S | S | S | S | N | S | N | M7 |
+| 24 | SAL | SPR | SPR-2609-423M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | VARI | VARI-2508-818M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 26 | DEV | ROTA | ROTA-2502-563B | 20 | S | S | S | S | S | N | N | S | N | M6+M7 |
+| 27 | SAL | HEPB | HEPB-2602-318M | 60 | S | S | S | S | S | S | S | N | N | M8 |
+| 28 | SAL | NEUM | NEUM-2505-638K | 300 | S | N | S | S | S | S | S | S | N | M2 |
+| 29 | AJU | SPR | SPR-2606-500M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | PENT | PENT-2606-391A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 31 | DEV | SPR | SPR-2609-423M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 32 | ING | SPR | SPR-2609-423M | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 33 | TRA | ROTA | ROTA-2502-563B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | IPV | IPV-2503-662B | 30 | S | S | S | S | S | S | S | S | S | — |
+| 35 | SAL | NEUM | NEUM-2505-638K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 36 | ING | DTA | DTA-2603-463K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 37 | ING | ROTA | ROTA-2507-417A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | ROTA | ROTA-2602-464A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 39 | DEV | VARI | VARI-2509-637K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | ROTA | ROTA-2602-464A | 60 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-01 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 10/08/2026 | CHANKA-001 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 2 | 10/08/2026 | CHANKA-001 | IPV | 60 | 50 | -10 | Sí | No |
-| 3 | 10/08/2026 | CHANKA-001 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 4 | 10/08/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 5 | 10/08/2026 | CHANKA-001 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 6 | 10/08/2026 | CHANKA-001 | INFL | 30 | 30 | 0 | No aplica | Sí |
-| 7 | 10/08/2026 | CHANKA-001 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 8 | 10/08/2026 | CHANKA-001 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 9 | 10/08/2026 | CHANKA-001 | IPV | 100 | 120 | 20 | Sí | No |
-| 10 | 10/08/2026 | CHANKA-001 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 11 | 10/08/2026 | CHANKA-001 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 12 | 10/08/2026 | CHANKA-001 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 13 | 10/08/2026 | CHANKA-001 | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 14 | 10/08/2026 | CHANKA-001 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 15 | 10/08/2026 | CHANKA-001 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 16 | 10/08/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 10/08/2026 | CHANKA-001 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 18 | 10/08/2026 | CHANKA-001 | BCG | 50 | 45 | -5 | Sí | No |
-| 19 | 10/08/2026 | CHANKA-001 | DTA | 30 | 50 | 20 | Sí | No |
-| 20 | 10/08/2026 | CHANKA-001 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 21 | 10/08/2026 | CHANKA-001 | IPV | 120 | 120 | 0 | No aplica | Sí |
-| 22 | 10/08/2026 | CHANKA-001 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 23 | 10/08/2026 | CHANKA-001 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 24 | 10/08/2026 | CHANKA-001 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 25 | 10/08/2026 | CHANKA-001 | BCG | 40 | 40 | 0 | No aplica | Sí |
+| 1 | 24/07/2026 | CHANKA-001 | PENT | 50 | 50 | 0 | No aplica | Sí |
+| 2 | 28/07/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
+| 3 | 13/07/2026 | CHANKA-001 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 4 | 03/08/2026 | CHANKA-001 | BCG | 180 | 185 | 5 | Sin guía | No |
+| 5 | 24/07/2026 | CHANKA-001 | IPV | 150 | 150 | 0 | No aplica | Sí |
+| 6 | 20/07/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 7 | 26/07/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | No aplica | Sí |
+| 8 | 29/07/2026 | CHANKA-001 | NEUM | 120 | 110 | -10 | GR-CHANKA001-7575 | No |
+| 9 | 10/08/2026 | CHANKA-001 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 10 | 01/08/2026 | CHANKA-001 | NEUM | 30 | 25 | -5 | GR-CHANKA001-9318 | No |
+| 11 | 13/07/2026 | CHANKA-001 | VARI | 200 | 210 | 10 | GR-CHANKA001-8494 | No |
+| 12 | 10/08/2026 | CHANKA-001 | INFL | 100 | 100 | 0 | No aplica | Sí |
+| 13 | 15/07/2026 | CHANKA-001 | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 14 | 17/07/2026 | CHANKA-001 | BCG | 100 | 100 | 0 | No aplica | Sí |
+| 15 | 23/07/2026 | CHANKA-001 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 16 | 07/08/2026 | CHANKA-001 | HEPB | 30 | 30 | 0 | No aplica | Sí |
+| 17 | 28/07/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 18 | 22/07/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 19 | 05/08/2026 | CHANKA-001 | SPR | 180 | 175 | -5 | Sin guía | No |
+| 20 | 28/07/2026 | CHANKA-001 | INFL | 120 | 110 | -10 | GR-CHANKA001-2123 | No |
+| 21 | 21/07/2026 | CHANKA-001 | INFL | 180 | 170 | -10 | GR-CHANKA001-5216 | No |
+| 22 | 23/07/2026 | CHANKA-001 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 23 | 07/08/2026 | CHANKA-001 | ROTA | 60 | 50 | -10 | GR-CHANKA001-4330 | No |
+| 24 | 31/07/2026 | CHANKA-001 | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 25 | 05/08/2026 | CHANKA-001 | IPV | 20 | 25 | 5 | Sin guía | No |
 
-Cierre: 21 entregas concordantes ÷ 25 × 100 = **84.00 %**.
+Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
 
 ---
 
 ### Bloque 2 · TRAB-01 · Postest (Sistema SIVAC) · 12/10/2026
 
-Documentos auditados: 40 · Conformes: 36 · RSD: 90.00 % · Entregas conciliadas: 25 · Concordantes: 22 · CPE: 88.00 %
+Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | AJU | ROTA | L-2610-01 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | VARI | L-2610-02 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 3 | SAL | HEPB | L-2610-03 | 300 | S | S | S | S | N | S | S | S | N | M5 |
-| 4 | AJU | SPR | L-2610-04 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 5 | TRA | PENT | L-2610-05 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 6 | DEV | DTA | L-2610-06 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 7 | SAL | NEUM | L-2610-07 | 80 | S | S | S | N | S | S | S | S | N | M4 |
-| 8 | AJU | BCG | L-2610-08 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | IPV | L-2610-09 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | IPV | L-2610-10 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 11 | DEV | VARI | L-2610-11 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 12 | ING | DTA | L-2610-12 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 13 | SAL | IPV | L-2610-13 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | IPV | L-2610-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | SAL | PENT | L-2610-15 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 16 | ING | NEUM | L-2610-16 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | BCG | L-2610-17 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 18 | ING | INFL | L-2610-18 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | HEPB | L-2610-19 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | SPR | L-2610-20 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 21 | DEV | DTA | L-2610-21 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 22 | DEV | BCG | L-2610-22 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | VARI | L-2610-23 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 24 | SAL | INFL | L-2610-24 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 25 | ING | DTA | L-2610-25 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 26 | AJU | BCG | L-2610-26 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 27 | TRA | HEPB | L-2610-27 | 100 | N | S | S | S | S | S | S | S | N | M1 |
-| 28 | DEV | ROTA | L-2610-28 | 80 | S | S | N | S | S | S | S | S | N | M3 |
-| 29 | DEV | ROTA | L-2610-29 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 30 | AJU | PENT | L-2610-30 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 31 | TRA | BCG | L-2610-31 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | BCG | L-2610-32 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 33 | DEV | PENT | L-2610-33 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 34 | SAL | DTA | L-2610-34 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 35 | TRA | SPR | L-2610-35 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 36 | AJU | SPR | L-2610-36 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | DTA | L-2610-37 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 38 | DEV | DTA | L-2610-38 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 39 | ING | PENT | L-2610-39 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | DTA | L-2610-40 | 180 | S | S | S | S | S | S | S | S | S | — |
+| 1 | ING | NEUM | NEUM-2505-638K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | NEUM | NEUM-2506-884B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 3 | ING | DTA | DTA-2603-463K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 4 | TRA | IPV | IPV-2605-698M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | INFL | INFL-2508-359M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 6 | TRA | ROTA | ROTA-2502-563B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 7 | SAL | HEPB | HEPB-2609-521M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 8 | TRA | NEUM | NEUM-2507-181K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 9 | AJU | HEPB | HEPB-2509-474M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 10 | AJU | BCG | BCG-2507-694K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | HEPB | HEPB-2609-521M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 12 | ING | BCG | BCG-2504-789B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 13 | AJU | BCG | BCG-2606-808K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 14 | AJU | NEUM | NEUM-2506-884B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | SPR | SPR-2608-539M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 16 | AJU | INFL | INFL-2607-737M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | SPR | SPR-2606-500M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | PENT | PENT-2606-251M | 40 | S | N | S | S | N | S | S | S | N | M2+M5 |
+| 19 | TRA | VARI | VARI-2503-521A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | BCG | BCG-2607-654A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | BCG | BCG-2504-789B | 60 | S | S | S | S | S | S | N | S | N | M7 |
+| 22 | DEV | ROTA | ROTA-2502-563B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 23 | AJU | SPR | SPR-2609-423M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 24 | SAL | BCG | BCG-2606-808K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | DTA | DTA-2602-236K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 26 | DEV | BCG | BCG-2507-694K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 27 | TRA | INFL | INFL-2508-359M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | INFL | INFL-2504-261K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | SPR | SPR-2504-185M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 30 | DEV | HEPB | HEPB-2509-474M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 31 | ING | DTA | DTA-2505-409K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 32 | ING | HEPB | HEPB-2602-318M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | ROTA | ROTA-2507-417A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 34 | ING | SPR | SPR-2609-423M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 35 | ING | IPV | IPV-2605-698M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 36 | ING | VARI | VARI-2508-818M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | BCG | BCG-2607-654A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | BCG | BCG-2504-789B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | INFL | INFL-2604-777M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | INFL | INFL-2607-737M | 180 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-01 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 12/10/2026 | CHANKA-001 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 2 | 12/10/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | No aplica | Sí |
-| 3 | 12/10/2026 | CHANKA-001 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 4 | 12/10/2026 | CHANKA-001 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 5 | 12/10/2026 | CHANKA-001 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 12/10/2026 | CHANKA-001 | ROTA | 30 | 30 | 0 | No aplica | Sí |
-| 7 | 12/10/2026 | CHANKA-001 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 8 | 12/10/2026 | CHANKA-001 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 9 | 12/10/2026 | CHANKA-001 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 10 | 12/10/2026 | CHANKA-001 | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 11 | 12/10/2026 | CHANKA-001 | BCG | 180 | 180 | 0 | No aplica | Sí |
-| 12 | 12/10/2026 | CHANKA-001 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 12/10/2026 | CHANKA-001 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 12/10/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 15 | 12/10/2026 | CHANKA-001 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 16 | 12/10/2026 | CHANKA-001 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 12/10/2026 | CHANKA-001 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 18 | 12/10/2026 | CHANKA-001 | DTA | 150 | 155 | 5 | Sí | No |
-| 19 | 12/10/2026 | CHANKA-001 | IPV | 100 | 105 | 5 | Sí | No |
-| 20 | 12/10/2026 | CHANKA-001 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 21 | 12/10/2026 | CHANKA-001 | HEPB | 50 | 30 | -20 | Sí | No |
-| 22 | 12/10/2026 | CHANKA-001 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 23 | 12/10/2026 | CHANKA-001 | DTA | 20 | 20 | 0 | No aplica | Sí |
-| 24 | 12/10/2026 | CHANKA-001 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 12/10/2026 | CHANKA-001 | HEPB | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 12/10/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 2 | 29/09/2026 | CHANKA-001 | BCG | 30 | 30 | 0 | No aplica | Sí |
+| 3 | 22/09/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | No aplica | Sí |
+| 4 | 09/10/2026 | CHANKA-001 | NEUM | 150 | 150 | 0 | No aplica | Sí |
+| 5 | 07/10/2026 | CHANKA-001 | NEUM | 50 | 50 | 0 | No aplica | Sí |
+| 6 | 16/09/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 14/09/2026 | CHANKA-001 | INFL | 100 | 100 | 0 | No aplica | Sí |
+| 8 | 23/09/2026 | CHANKA-001 | NEUM | 120 | 120 | 0 | No aplica | Sí |
+| 9 | 25/09/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 10 | 28/09/2026 | CHANKA-001 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 11 | 23/09/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | No aplica | Sí |
+| 12 | 14/09/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | No aplica | Sí |
+| 13 | 10/10/2026 | CHANKA-001 | IPV | 50 | 50 | 0 | No aplica | Sí |
+| 14 | 18/09/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | No aplica | Sí |
+| 15 | 11/10/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 16 | 17/09/2026 | CHANKA-001 | SPR | 50 | 50 | 0 | No aplica | Sí |
+| 17 | 22/09/2026 | CHANKA-001 | SPR | 180 | 175 | -5 | GR-CHANKA001-5298 | No |
+| 18 | 08/10/2026 | CHANKA-001 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 19 | 28/09/2026 | CHANKA-001 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 20 | 30/09/2026 | CHANKA-001 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 11/10/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | No aplica | Sí |
+| 22 | 02/10/2026 | CHANKA-001 | INFL | 180 | 180 | 0 | No aplica | Sí |
+| 23 | 17/09/2026 | CHANKA-001 | VARI | 20 | 20 | 0 | No aplica | Sí |
+| 24 | 07/10/2026 | CHANKA-001 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 25 | 30/09/2026 | CHANKA-001 | INFL | 150 | 150 | 0 | No aplica | Sí |
 
-Cierre: 22 entregas concordantes ÷ 25 × 100 = **88.00 %**.
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ---
 
 ### Bloque 3 · TRAB-02 · Pretest (proceso manual) · 10/08/2026
 
-Documentos auditados: 40 · Conformes: 30 · RSD: 75.00 % · Entregas conciliadas: 25 · Concordantes: 16 · CPE: 64.00 %
+Documentos auditados: 40 · Conformes: 23 · RSD: 57.50 % · Entregas conciliadas: 25 · Concordantes: 16 · CPE: 64.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | BCG | L-2608-01 | 20 | S | S | S | S | N | S | S | S | N | M5 |
-| 2 | ING | BCG | L-2608-02 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 3 | ING | VARI | L-2608-03 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 4 | DEV | BCG | L-2608-04 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 5 | AJU | NEUM | L-2608-05 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 6 | AJU | DTA | L-2608-06 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | IPV | L-2608-07 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 8 | TRA | IPV | L-2608-08 | 20 | N | S | S | S | S | S | S | S | N | M1 |
-| 9 | TRA | BCG | L-2608-09 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | INFL | L-2608-10 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 11 | AJU | INFL | L-2608-11 | 40 | S | N | S | S | S | S | S | S | N | M2 |
-| 12 | ING | PENT | L-2608-12 | 80 | S | N | S | S | S | S | S | S | N | M2 |
-| 13 | SAL | DTA | L-2608-13 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | INFL | L-2608-14 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 15 | SAL | INFL | L-2608-15 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 16 | AJU | IPV | L-2608-16 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 17 | ING | VARI | L-2608-17 | 120 | S | S | S | S | N | S | S | S | N | M5 |
-| 18 | DEV | VARI | L-2608-18 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | SPR | L-2608-19 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | PENT | L-2608-20 | 240 | S | S | S | S | N | S | S | S | N | M5 |
-| 21 | DEV | SPR | L-2608-21 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 22 | AJU | DTA | L-2608-22 | 60 | S | S | N | S | S | S | S | S | N | M3 |
-| 23 | SAL | VARI | L-2608-23 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 24 | SAL | PENT | L-2608-24 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | DTA | L-2608-25 | 240 | S | S | S | N | S | S | S | S | N | M4 |
-| 26 | DEV | BCG | L-2608-26 | 120 | S | S | S | S | S | N | S | S | N | M6 |
-| 27 | DEV | BCG | L-2608-27 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 28 | ING | BCG | L-2608-28 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | HEPB | L-2608-29 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 30 | DEV | IPV | L-2608-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | DEV | BCG | L-2608-31 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 32 | DEV | NEUM | L-2608-32 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 33 | SAL | VARI | L-2608-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | DEV | SPR | L-2608-34 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 35 | SAL | SPR | L-2608-35 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 36 | SAL | NEUM | L-2608-36 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | HEPB | L-2608-37 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 38 | ING | BCG | L-2608-38 | 150 | S | S | S | S | N | S | S | S | N | M5 |
-| 39 | TRA | INFL | L-2608-39 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | INFL | L-2608-40 | 100 | S | S | S | S | S | S | S | S | S | — |
+| 1 | TRA | BCG | BCG-2606-808K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 2 | DEV | ROTA | ROTA-2605-833M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 3 | ING | INFL | INFL-2508-359M | 240 | S | S | S | S | S | N | S | S | N | M6 |
+| 4 | ING | VARI | VARI-2509-637K | 20 | S | S | S | S | S | S | S | N | N | M8 |
+| 5 | SAL | VARI | VARI-2508-818M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | DTA | DTA-2505-409K | 200 | N | S | S | S | S | S | S | S | N | M1 |
+| 7 | ING | INFL | INFL-2604-777M | 300 | S | S | S | N | S | N | S | S | N | M4+M6 |
+| 8 | SAL | VARI | VARI-2509-637K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 9 | ING | NEUM | NEUM-2506-884B | 300 | S | S | S | S | S | S | S | N | N | M8 |
+| 10 | SAL | DTA | DTA-2505-409K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | SPR | SPR-2609-423M | 240 | S | S | S | S | S | N | S | S | N | M6 |
+| 12 | AJU | HEPB | HEPB-2609-917M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 13 | TRA | IPV | IPV-2605-698M | 30 | S | S | S | S | S | N | S | S | N | M6 |
+| 14 | SAL | SPR | SPR-2603-471K | 240 | S | S | S | S | S | N | S | S | N | M6 |
+| 15 | TRA | SPR | SPR-2504-185M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | PENT | PENT-2605-322M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | HEPB | HEPB-2609-917M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | NEUM | NEUM-2505-688A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | IPV | IPV-2608-446B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | INFL | INFL-2603-792B | 40 | S | N | S | S | S | S | S | S | N | M2 |
+| 21 | ING | ROTA | ROTA-2603-156K | 300 | S | N | S | S | S | N | S | S | N | M2+M6 |
+| 22 | SAL | INFL | INFL-2504-261K | 50 | S | S | S | S | S | S | N | S | N | M7 |
+| 23 | SAL | IPV | IPV-2507-805M | 300 | S | S | S | N | S | S | S | S | N | M4 |
+| 24 | DEV | PENT | PENT-2504-482M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | NEUM | NEUM-2507-181K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | IPV | IPV-2507-805M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | INFL | INFL-2508-359M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | PENT | PENT-2606-391A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | NEUM | NEUM-2505-638K | 100 | S | N | S | S | S | N | S | S | N | M2+M6 |
+| 30 | ING | ROTA | ROTA-2603-156K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | ROTA | ROTA-2605-833M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 32 | AJU | SPR | SPR-2606-500M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | HEPB | HEPB-2509-474M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | INFL | INFL-2504-261K | 100 | S | S | S | S | S | S | S | N | N | M8 |
+| 35 | TRA | HEPB | HEPB-2509-474M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 36 | TRA | HEPB | HEPB-2609-521M | 180 | S | S | S | S | S | S | S | N | N | M8 |
+| 37 | TRA | ROTA | ROTA-2605-833M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | VARI | VARI-2503-521A | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 39 | ING | NEUM | NEUM-2509-952A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | DTA | DTA-2505-409K | 300 | N | N | S | S | S | S | S | S | N | M1+M2 |
 
 **Entregas conciliadas — TRAB-02 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 10/08/2026 | CHANKA-001 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 2 | 10/08/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 3 | 10/08/2026 | CHANKA-001 | IPV | 20 | 30 | 10 | Sí | No |
-| 4 | 10/08/2026 | CHANKA-001 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 5 | 10/08/2026 | CHANKA-001 | HEPB | 80 | 85 | 5 | Sí | No |
-| 6 | 10/08/2026 | CHANKA-001 | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 7 | 10/08/2026 | CHANKA-001 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 8 | 10/08/2026 | CHANKA-001 | VARI | 120 | 130 | 10 | Sí | No |
-| 9 | 10/08/2026 | CHANKA-001 | DTA | 30 | 50 | 20 | Sí | No |
-| 10 | 10/08/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | No aplica | Sí |
-| 11 | 10/08/2026 | CHANKA-001 | HEPB | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 10/08/2026 | CHANKA-001 | DTA | 60 | 40 | -20 | Sí | No |
-| 13 | 10/08/2026 | CHANKA-001 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 14 | 10/08/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 15 | 10/08/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 16 | 10/08/2026 | CHANKA-001 | INFL | 180 | 200 | 20 | Sí | No |
-| 17 | 10/08/2026 | CHANKA-001 | PENT | 60 | 55 | -5 | Sí | No |
-| 18 | 10/08/2026 | CHANKA-001 | NEUM | 120 | 140 | 20 | Sí | No |
-| 19 | 10/08/2026 | CHANKA-001 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 20 | 10/08/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 21 | 10/08/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 22 | 10/08/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 23 | 10/08/2026 | CHANKA-001 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 24 | 10/08/2026 | CHANKA-001 | ROTA | 120 | 115 | -5 | Sí | No |
-| 25 | 10/08/2026 | CHANKA-001 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 08/08/2026 | CHANKA-001 | PENT | 60 | 50 | -10 | GR-CHANKA001-1391 | No |
+| 2 | 08/08/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 3 | 07/08/2026 | CHANKA-001 | BCG | 50 | 45 | -5 | GR-CHANKA001-6852 | No |
+| 4 | 17/07/2026 | CHANKA-001 | PENT | 40 | 35 | -5 | GR-CHANKA001-3436 | No |
+| 5 | 25/07/2026 | CHANKA-001 | SPR | 150 | 150 | 0 | No aplica | Sí |
+| 6 | 23/07/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 7 | 16/07/2026 | CHANKA-001 | BCG | 180 | 175 | -5 | GR-CHANKA001-4192 | No |
+| 8 | 22/07/2026 | CHANKA-001 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 9 | 17/07/2026 | CHANKA-001 | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 10 | 13/07/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | No aplica | Sí |
+| 11 | 23/07/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | No aplica | Sí |
+| 12 | 13/07/2026 | CHANKA-001 | NEUM | 40 | 40 | 0 | No aplica | Sí |
+| 13 | 31/07/2026 | CHANKA-001 | BCG | 20 | 15 | -5 | GR-CHANKA001-8464 | No |
+| 14 | 14/07/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | No aplica | Sí |
+| 15 | 07/08/2026 | CHANKA-001 | INFL | 200 | 195 | -5 | GR-CHANKA001-6078 | No |
+| 16 | 28/07/2026 | CHANKA-001 | SPR | 80 | 85 | 5 | Sin guía | No |
+| 17 | 14/07/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
+| 18 | 29/07/2026 | CHANKA-001 | INFL | 60 | 60 | 0 | No aplica | Sí |
+| 19 | 02/08/2026 | CHANKA-001 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 20 | 07/08/2026 | CHANKA-001 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 21 | 17/07/2026 | CHANKA-001 | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 22 | 23/07/2026 | CHANKA-001 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 23 | 30/07/2026 | CHANKA-001 | NEUM | 30 | 20 | -10 | GR-CHANKA001-8955 | No |
+| 24 | 05/08/2026 | CHANKA-001 | NEUM | 200 | 200 | 0 | No aplica | Sí |
+| 25 | 20/07/2026 | CHANKA-001 | PENT | 40 | 45 | 5 | Sin guía | No |
 
 Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
 
@@ -1058,242 +1060,242 @@ Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
 
 ### Bloque 4 · TRAB-02 · Postest (Sistema SIVAC) · 12/10/2026
 
-Documentos auditados: 40 · Conformes: 35 · RSD: 87.50 % · Entregas conciliadas: 25 · Concordantes: 23 · CPE: 92.00 %
+Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | ROTA | L-2610-01 | 150 | N | S | S | S | S | S | S | S | N | M1 |
-| 2 | ING | SPR | L-2610-02 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 3 | TRA | VARI | L-2610-03 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 4 | DEV | SPR | L-2610-04 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 5 | ING | HEPB | L-2610-05 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 6 | SAL | ROTA | L-2610-06 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 7 | DEV | HEPB | L-2610-07 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | INFL | L-2610-08 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 9 | DEV | NEUM | L-2610-09 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | ROTA | L-2610-10 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 11 | AJU | ROTA | L-2610-11 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 12 | AJU | HEPB | L-2610-12 | 120 | S | S | S | S | S | N | S | S | N | M6 |
-| 13 | DEV | PENT | L-2610-13 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 14 | DEV | HEPB | L-2610-14 | 100 | N | S | S | S | S | S | S | S | N | M1 |
-| 15 | ING | HEPB | L-2610-15 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 16 | TRA | PENT | L-2610-16 | 180 | N | S | S | S | S | S | S | S | N | M1 |
-| 17 | TRA | VARI | L-2610-17 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 18 | DEV | DTA | L-2610-18 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | NEUM | L-2610-19 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 20 | AJU | PENT | L-2610-20 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 21 | DEV | IPV | L-2610-21 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | ROTA | L-2610-22 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 23 | DEV | SPR | L-2610-23 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | DTA | L-2610-24 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 25 | ING | SPR | L-2610-25 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 26 | AJU | PENT | L-2610-26 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | PENT | L-2610-27 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 28 | TRA | IPV | L-2610-28 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | VARI | L-2610-29 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 30 | SAL | INFL | L-2610-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | SAL | VARI | L-2610-31 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 32 | DEV | HEPB | L-2610-32 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | HEPB | L-2610-33 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 34 | AJU | INFL | L-2610-34 | 60 | S | S | S | N | S | S | S | S | N | M4 |
-| 35 | SAL | BCG | L-2610-35 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 36 | DEV | IPV | L-2610-36 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | VARI | L-2610-37 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 38 | SAL | IPV | L-2610-38 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 39 | SAL | NEUM | L-2610-39 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 40 | AJU | SPR | L-2610-40 | 100 | S | S | S | S | S | S | S | S | S | — |
+| 1 | TRA | ROTA | ROTA-2507-417A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | PENT | PENT-2605-322M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | PENT | PENT-2606-391A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 4 | DEV | INFL | INFL-2607-737M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | DTA | DTA-2602-236K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 6 | DEV | DTA | DTA-2602-797A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 7 | TRA | ROTA | ROTA-2507-417A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | INFL | INFL-2603-792B | 40 | S | S | S | S | S | S | S | S | S | — |
+| 9 | TRA | PENT | PENT-2504-482M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 10 | DEV | HEPB | HEPB-2509-474M | 200 | N | S | S | S | S | S | S | N | N | M1+M8 |
+| 11 | DEV | IPV | IPV-2608-446B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 12 | SAL | SPR | SPR-2606-500M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | DTA | DTA-2602-236K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | ROTA | ROTA-2605-833M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 15 | AJU | IPV | IPV-2504-587B | 40 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | ROTA | ROTA-2507-417A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | HEPB | HEPB-2509-474M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | INFL | INFL-2508-359M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 19 | ING | DTA | DTA-2602-236K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 20 | DEV | PENT | PENT-2606-251M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 21 | SAL | INFL | INFL-2508-359M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 22 | AJU | VARI | VARI-2508-818M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | ROTA | ROTA-2602-464A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | SPR | SPR-2609-423M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | SPR | SPR-2609-423M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | NEUM | NEUM-2509-952A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | DTA | DTA-2602-236K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | DTA | DTA-2606-829K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | BCG | BCG-2507-694K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | BCG | BCG-2607-654A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | INFL | INFL-2508-359M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | SPR | SPR-2608-539M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | HEPB | HEPB-2609-917M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | HEPB | HEPB-2602-318M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 35 | DEV | ROTA | ROTA-2602-464A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 36 | SAL | IPV | IPV-2507-805M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 37 | ING | IPV | IPV-2605-698M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 38 | DEV | BCG | BCG-2504-789B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | BCG | BCG-2507-694K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 40 | TRA | SPR | SPR-2504-185M | 50 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-02 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 12/10/2026 | CHANKA-001 | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 12/10/2026 | CHANKA-001 | INFL | 180 | 180 | 0 | No aplica | Sí |
-| 3 | 12/10/2026 | CHANKA-001 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 4 | 12/10/2026 | CHANKA-001 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 5 | 12/10/2026 | CHANKA-001 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 6 | 12/10/2026 | CHANKA-001 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 7 | 12/10/2026 | CHANKA-001 | VARI | 180 | 180 | 0 | No aplica | Sí |
-| 8 | 12/10/2026 | CHANKA-001 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 12/10/2026 | CHANKA-001 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 12/10/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 11 | 12/10/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 12 | 12/10/2026 | CHANKA-001 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 13 | 12/10/2026 | CHANKA-001 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 14 | 12/10/2026 | CHANKA-001 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 15 | 12/10/2026 | CHANKA-001 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 16 | 12/10/2026 | CHANKA-001 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 17 | 12/10/2026 | CHANKA-001 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 18 | 12/10/2026 | CHANKA-001 | INFL | 20 | 25 | 5 | Sí | No |
-| 19 | 12/10/2026 | CHANKA-001 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 20 | 12/10/2026 | CHANKA-001 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 21 | 12/10/2026 | CHANKA-001 | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 22 | 12/10/2026 | CHANKA-001 | BCG | 30 | 25 | -5 | Sí | No |
-| 23 | 12/10/2026 | CHANKA-001 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 24 | 12/10/2026 | CHANKA-001 | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 25 | 12/10/2026 | CHANKA-001 | NEUM | 150 | 150 | 0 | No aplica | Sí |
+| 1 | 15/09/2026 | CHANKA-001 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 2 | 14/09/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | No aplica | Sí |
+| 3 | 30/09/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 4 | 22/09/2026 | CHANKA-001 | BCG | 180 | 180 | 0 | No aplica | Sí |
+| 5 | 19/09/2026 | CHANKA-001 | IPV | 20 | 15 | -5 | GR-CHANKA001-2687 | No |
+| 6 | 28/09/2026 | CHANKA-001 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 7 | 29/09/2026 | CHANKA-001 | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 8 | 15/09/2026 | CHANKA-001 | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 9 | 05/10/2026 | CHANKA-001 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 10 | 14/09/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | No aplica | Sí |
+| 11 | 19/09/2026 | CHANKA-001 | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 12 | 14/09/2026 | CHANKA-001 | BCG | 30 | 30 | 0 | No aplica | Sí |
+| 13 | 07/10/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
+| 14 | 26/09/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 15 | 07/10/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 16 | 16/09/2026 | CHANKA-001 | BCG | 80 | 80 | 0 | No aplica | Sí |
+| 17 | 18/09/2026 | CHANKA-001 | DTA | 30 | 30 | 0 | No aplica | Sí |
+| 18 | 17/09/2026 | CHANKA-001 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 19 | 06/10/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
+| 20 | 11/10/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | No aplica | Sí |
+| 21 | 25/09/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | No aplica | Sí |
+| 22 | 22/09/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
+| 23 | 22/09/2026 | CHANKA-001 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 24 | 28/09/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
+| 25 | 01/10/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | No aplica | Sí |
 
-Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ---
 
 ### Bloque 5 · TRAB-03 · Pretest (proceso manual) · 11/08/2026
 
-Documentos auditados: 40 · Conformes: 24 · RSD: 60.00 % · Entregas conciliadas: 25 · Concordantes: 14 · CPE: 56.00 %
+Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliadas: 25 · Concordantes: 18 · CPE: 72.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | ING | PENT | L-2608-01 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 2 | SAL | BCG | L-2608-02 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 3 | AJU | HEPB | L-2608-03 | 180 | S | S | S | S | N | S | S | S | N | M5 |
-| 4 | AJU | INFL | L-2608-04 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 5 | AJU | BCG | L-2608-05 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 6 | TRA | DTA | L-2608-06 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | BCG | L-2608-07 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 8 | TRA | IPV | L-2608-08 | 100 | S | S | S | S | S | N | S | S | N | M6 |
-| 9 | SAL | VARI | L-2608-09 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 10 | SAL | ROTA | L-2608-10 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 11 | DEV | NEUM | L-2608-11 | 100 | S | S | S | S | N | S | S | S | N | M5 |
-| 12 | SAL | IPV | L-2608-12 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 13 | AJU | DTA | L-2608-13 | 300 | S | S | S | S | S | S | N | S | N | M7 |
-| 14 | AJU | DTA | L-2608-14 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 15 | SAL | SPR | L-2608-15 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 16 | ING | DTA | L-2608-16 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 17 | SAL | PENT | L-2608-17 | 60 | S | S | S | S | S | S | N | S | N | M7 |
-| 18 | ING | PENT | L-2608-18 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | INFL | L-2608-19 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | PENT | L-2608-20 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 21 | TRA | PENT | L-2608-21 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 22 | ING | PENT | L-2608-22 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | HEPB | L-2608-23 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 24 | SAL | ROTA | L-2608-24 | 300 | S | S | S | N | S | S | S | S | N | M4 |
-| 25 | AJU | INFL | L-2608-25 | 40 | S | S | S | S | N | S | S | S | N | M5 |
-| 26 | SAL | NEUM | L-2608-26 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | ROTA | L-2608-27 | 40 | N | S | S | S | S | S | S | S | N | M1 |
-| 28 | DEV | SPR | L-2608-28 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 29 | TRA | PENT | L-2608-29 | 180 | S | S | S | S | N | S | S | S | N | M5 |
-| 30 | AJU | PENT | L-2608-30 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 31 | TRA | IPV | L-2608-31 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | BCG | L-2608-32 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 33 | TRA | INFL | L-2608-33 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 34 | TRA | VARI | L-2608-34 | 200 | S | S | N | S | S | S | S | S | N | M3 |
-| 35 | DEV | ROTA | L-2608-35 | 180 | S | S | S | N | S | S | S | S | N | M4 |
-| 36 | ING | BCG | L-2608-36 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | VARI | L-2608-37 | 80 | S | S | N | S | S | S | S | S | N | M3 |
-| 38 | SAL | IPV | L-2608-38 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 39 | SAL | BCG | L-2608-39 | 150 | S | S | S | N | S | S | S | S | N | M4 |
-| 40 | SAL | DTA | L-2608-40 | 120 | S | S | S | S | S | S | S | N | N | M8 |
+| 1 | TRA | INFL | INFL-2508-359M | 150 | S | S | S | S | S | S | S | N | N | M8 |
+| 2 | SAL | SPR | SPR-2603-471K | 100 | N | S | S | S | N | S | S | S | N | M1+M5 |
+| 3 | SAL | INFL | INFL-2504-261K | 300 | S | S | N | S | S | N | S | S | N | M3+M6 |
+| 4 | ING | BCG | BCG-2606-296K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 5 | AJU | NEUM | NEUM-2505-688A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 6 | DEV | ROTA | ROTA-2605-833M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | VARI | VARI-2607-979A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 8 | DEV | HEPB | HEPB-2609-521M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 9 | TRA | SPR | SPR-2609-423M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | ROTA | ROTA-2602-464A | 100 | S | S | N | S | S | S | S | S | N | M3 |
+| 11 | SAL | INFL | INFL-2508-359M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 12 | SAL | BCG | BCG-2507-694K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 13 | TRA | ROTA | ROTA-2507-417A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 14 | TRA | SPR | SPR-2608-539M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 15 | ING | DTA | DTA-2606-829K | 120 | S | S | S | S | S | S | S | N | N | M8 |
+| 16 | SAL | VARI | VARI-2607-979A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 17 | SAL | HEPB | HEPB-2609-917M | 200 | S | S | S | S | S | N | S | S | N | M6 |
+| 18 | SAL | VARI | VARI-2607-979A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | HEPB | HEPB-2509-474M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | HEPB | HEPB-2609-521M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 21 | TRA | IPV | IPV-2504-587B | 100 | S | S | S | S | S | S | N | S | N | M7 |
+| 22 | SAL | IPV | IPV-2504-587B | 60 | S | S | S | S | S | S | S | S | S | — |
+| 23 | DEV | BCG | BCG-2606-296K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | DTA | DTA-2602-797A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | PENT | PENT-2606-251M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 26 | AJU | BCG | BCG-2606-296K | 30 | S | S | N | S | S | N | S | S | N | M3+M6 |
+| 27 | ING | VARI | VARI-2501-250M | 60 | S | N | S | S | S | S | S | S | N | M2 |
+| 28 | TRA | DTA | DTA-2602-236K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | DTA | DTA-2606-829K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 30 | ING | VARI | VARI-2509-637K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 31 | DEV | INFL | INFL-2603-792B | 60 | S | S | S | S | S | S | S | S | S | — |
+| 32 | AJU | NEUM | NEUM-2506-884B | 100 | S | S | S | S | S | S | S | S | S | — |
+| 33 | TRA | HEPB | HEPB-2609-917M | 60 | S | N | S | S | S | S | S | S | N | M2 |
+| 34 | SAL | IPV | IPV-2504-587B | 200 | S | S | S | S | S | N | S | S | N | M6 |
+| 35 | SAL | BCG | BCG-2606-808K | 40 | S | S | N | S | S | S | S | S | N | M3 |
+| 36 | TRA | INFL | INFL-2603-792B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | DTA | DTA-2602-797A | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 38 | SAL | NEUM | NEUM-2506-884B | 240 | S | S | S | S | S | N | S | S | N | M6 |
+| 39 | SAL | IPV | IPV-2507-805M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | DTA | DTA-2603-463K | 20 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-03 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 11/08/2026 | S/C | DTA | 150 | 170 | 20 | Sí | No |
-| 2 | 11/08/2026 | S/C | IPV | 40 | 20 | -20 | Sí | No |
-| 3 | 11/08/2026 | S/C | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 4 | 11/08/2026 | S/C | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 5 | 11/08/2026 | S/C | HEPB | 30 | 30 | 0 | No aplica | Sí |
-| 6 | 11/08/2026 | S/C | SPR | 200 | 180 | -20 | Sí | No |
-| 7 | 11/08/2026 | S/C | PENT | 150 | 140 | -10 | Sí | No |
-| 8 | 11/08/2026 | S/C | BCG | 40 | 45 | 5 | Sí | No |
-| 9 | 11/08/2026 | S/C | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 10 | 11/08/2026 | S/C | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 11 | 11/08/2026 | S/C | VARI | 40 | 40 | 0 | No aplica | Sí |
-| 12 | 11/08/2026 | S/C | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 13 | 11/08/2026 | S/C | VARI | 80 | 75 | -5 | Sí | No |
-| 14 | 11/08/2026 | S/C | HEPB | 20 | 20 | 0 | No aplica | Sí |
-| 15 | 11/08/2026 | S/C | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 16 | 11/08/2026 | S/C | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 17 | 11/08/2026 | S/C | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 11/08/2026 | S/C | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 11/08/2026 | S/C | DTA | 100 | 110 | 10 | Sí | No |
-| 20 | 11/08/2026 | S/C | DTA | 60 | 65 | 5 | Sí | No |
-| 21 | 11/08/2026 | S/C | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 22 | 11/08/2026 | S/C | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 23 | 11/08/2026 | S/C | IPV | 180 | 170 | -10 | Sí | No |
-| 24 | 11/08/2026 | S/C | DTA | 100 | 90 | -10 | Sí | No |
-| 25 | 11/08/2026 | S/C | VARI | 50 | 30 | -20 | Sí | No |
+| 1 | 30/07/2026 | S/C | SPR | 50 | 50 | 0 | No aplica | Sí |
+| 2 | 10/08/2026 | S/C | PENT | 150 | 150 | 0 | No aplica | Sí |
+| 3 | 28/07/2026 | S/C | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 4 | 08/08/2026 | S/C | ROTA | 120 | 120 | 0 | No aplica | Sí |
+| 5 | 19/07/2026 | S/C | SPR | 120 | 110 | -10 | Sin guía | No |
+| 6 | 25/07/2026 | S/C | SPR | 100 | 100 | 0 | No aplica | Sí |
+| 7 | 02/08/2026 | S/C | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 8 | 05/08/2026 | S/C | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 9 | 24/07/2026 | S/C | HEPB | 30 | 30 | 0 | No aplica | Sí |
+| 10 | 04/08/2026 | S/C | DTA | 20 | 40 | 20 | GR-SC-8635 | No |
+| 11 | 29/07/2026 | S/C | PENT | 200 | 200 | 0 | No aplica | Sí |
+| 12 | 28/07/2026 | S/C | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 13 | 27/07/2026 | S/C | SPR | 120 | 125 | 5 | GR-SC-7390 | No |
+| 14 | 18/07/2026 | S/C | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 15 | 10/08/2026 | S/C | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 16 | 15/07/2026 | S/C | INFL | 120 | 115 | -5 | GR-SC-1956 | No |
+| 17 | 29/07/2026 | S/C | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 18 | 31/07/2026 | S/C | IPV | 180 | 180 | 0 | No aplica | Sí |
+| 19 | 25/07/2026 | S/C | IPV | 100 | 90 | -10 | Sin guía | No |
+| 20 | 24/07/2026 | S/C | DTA | 40 | 60 | 20 | GR-SC-5940 | No |
+| 21 | 26/07/2026 | S/C | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 22 | 09/08/2026 | S/C | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 23 | 17/07/2026 | S/C | SPR | 50 | 40 | -10 | Sin guía | No |
+| 24 | 15/07/2026 | S/C | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 25 | 11/08/2026 | S/C | HEPB | 200 | 200 | 0 | No aplica | Sí |
 
-Cierre: 14 entregas concordantes ÷ 25 × 100 = **56.00 %**.
+Cierre: 18 entregas concordantes ÷ 25 × 100 = **72.00 %**.
 
 ---
 
 ### Bloque 6 · TRAB-03 · Postest (Sistema SIVAC) · 13/10/2026
 
-Documentos auditados: 40 · Conformes: 37 · RSD: 92.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
+Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | AJU | HEPB | L-2610-01 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 2 | ING | DTA | L-2610-02 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 3 | ING | INFL | L-2610-03 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 4 | DEV | BCG | L-2610-04 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | HEPB | L-2610-05 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 6 | AJU | IPV | L-2610-06 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 7 | SAL | DTA | L-2610-07 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 8 | ING | PENT | L-2610-08 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | NEUM | L-2610-09 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | NEUM | L-2610-10 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 11 | ING | HEPB | L-2610-11 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 12 | SAL | VARI | L-2610-12 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 13 | SAL | DTA | L-2610-13 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 14 | DEV | INFL | L-2610-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | DEV | BCG | L-2610-15 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 16 | AJU | PENT | L-2610-16 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 17 | SAL | HEPB | L-2610-17 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 18 | TRA | IPV | L-2610-18 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 19 | ING | VARI | L-2610-19 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 20 | TRA | HEPB | L-2610-20 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 21 | TRA | ROTA | L-2610-21 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 22 | TRA | BCG | L-2610-22 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 23 | TRA | VARI | L-2610-23 | 150 | S | N | S | S | S | S | S | S | N | M2 |
-| 24 | AJU | SPR | L-2610-24 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | PENT | L-2610-25 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 26 | TRA | NEUM | L-2610-26 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 27 | DEV | DTA | L-2610-27 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 28 | SAL | IPV | L-2610-28 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 29 | DEV | BCG | L-2610-29 | 60 | S | S | N | S | S | S | S | S | N | M3 |
-| 30 | ING | HEPB | L-2610-30 | 100 | S | N | S | S | S | S | S | S | N | M2 |
-| 31 | DEV | INFL | L-2610-31 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 32 | ING | NEUM | L-2610-32 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 33 | ING | HEPB | L-2610-33 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 34 | SAL | ROTA | L-2610-34 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | NEUM | L-2610-35 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 36 | TRA | SPR | L-2610-36 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 37 | AJU | NEUM | L-2610-37 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 38 | SAL | NEUM | L-2610-38 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 39 | TRA | NEUM | L-2610-39 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | IPV | L-2610-40 | 80 | S | S | S | S | S | S | S | S | S | — |
+| 1 | ING | VARI | VARI-2503-521A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | DTA | DTA-2603-463K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 3 | AJU | INFL | INFL-2603-792B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 4 | TRA | ROTA | ROTA-2605-833M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 5 | TRA | DTA | DTA-2602-797A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | ROTA | ROTA-2603-156K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 7 | DEV | INFL | INFL-2603-792B | 60 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | BCG | BCG-2504-789B | 100 | S | S | S | S | S | S | S | S | S | — |
+| 9 | DEV | NEUM | NEUM-2505-638K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | SPR | SPR-2609-423M | 240 | S | S | S | S | S | S | S | N | N | M8 |
+| 11 | ING | DTA | DTA-2602-797A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 12 | DEV | BCG | BCG-2504-789B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 13 | TRA | HEPB | HEPB-2603-786K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | ROTA | ROTA-2602-464A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | INFL | INFL-2603-792B | 30 | S | S | S | S | S | S | S | S | S | — |
+| 16 | AJU | SPR | SPR-2603-471K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 17 | SAL | NEUM | NEUM-2505-638K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | IPV | IPV-2608-446B | 100 | S | S | S | S | S | S | S | S | S | — |
+| 19 | ING | SPR | SPR-2609-423M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | BCG | BCG-2607-654A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 21 | SAL | BCG | BCG-2607-654A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 22 | SAL | BCG | BCG-2607-654A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 23 | SAL | BCG | BCG-2607-654A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 24 | TRA | VARI | VARI-2509-637K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | DTA | DTA-2603-463K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 26 | TRA | INFL | INFL-2604-777M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | INFL | INFL-2607-737M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 28 | SAL | PENT | PENT-2504-482M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | IPV | IPV-2507-805M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 30 | TRA | INFL | INFL-2607-737M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 31 | TRA | VARI | VARI-2509-637K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | HEPB | HEPB-2603-786K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | VARI | VARI-2501-250M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 34 | DEV | SPR | SPR-2603-471K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 35 | TRA | IPV | IPV-2605-698M | 150 | N | S | S | S | S | S | S | N | N | M1+M8 |
+| 36 | ING | HEPB | HEPB-2602-318M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | HEPB | HEPB-2509-474M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | IPV | IPV-2503-662B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | SPR | SPR-2609-423M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | ROTA | ROTA-2502-563B | 150 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-03 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 13/10/2026 | S/C | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 2 | 13/10/2026 | S/C | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 3 | 13/10/2026 | S/C | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 4 | 13/10/2026 | S/C | ROTA | 30 | 30 | 0 | No aplica | Sí |
-| 5 | 13/10/2026 | S/C | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 6 | 13/10/2026 | S/C | SPR | 120 | 120 | 0 | No aplica | Sí |
-| 7 | 13/10/2026 | S/C | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 8 | 13/10/2026 | S/C | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 9 | 13/10/2026 | S/C | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 10 | 13/10/2026 | S/C | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 11 | 13/10/2026 | S/C | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 12 | 13/10/2026 | S/C | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 13 | 13/10/2026 | S/C | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 14 | 13/10/2026 | S/C | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 15 | 13/10/2026 | S/C | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 16 | 13/10/2026 | S/C | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 17 | 13/10/2026 | S/C | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 18 | 13/10/2026 | S/C | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 13/10/2026 | S/C | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 20 | 13/10/2026 | S/C | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 21 | 13/10/2026 | S/C | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 22 | 13/10/2026 | S/C | BCG | 200 | 195 | -5 | Sí | No |
-| 23 | 13/10/2026 | S/C | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 24 | 13/10/2026 | S/C | HEPB | 20 | 20 | 0 | No aplica | Sí |
-| 25 | 13/10/2026 | S/C | HEPB | 40 | 40 | 0 | No aplica | Sí |
+| 1 | 30/09/2026 | S/C | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 2 | 29/09/2026 | S/C | INFL | 40 | 40 | 0 | No aplica | Sí |
+| 3 | 20/09/2026 | S/C | PENT | 120 | 120 | 0 | No aplica | Sí |
+| 4 | 15/09/2026 | S/C | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 5 | 30/09/2026 | S/C | IPV | 180 | 180 | 0 | No aplica | Sí |
+| 6 | 03/10/2026 | S/C | INFL | 40 | 40 | 0 | No aplica | Sí |
+| 7 | 07/10/2026 | S/C | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 8 | 24/09/2026 | S/C | SPR | 20 | 20 | 0 | No aplica | Sí |
+| 9 | 19/09/2026 | S/C | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 10 | 26/09/2026 | S/C | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 11 | 06/10/2026 | S/C | DTA | 40 | 40 | 0 | No aplica | Sí |
+| 12 | 30/09/2026 | S/C | SPR | 200 | 200 | 0 | No aplica | Sí |
+| 13 | 20/09/2026 | S/C | IPV | 80 | 80 | 0 | No aplica | Sí |
+| 14 | 22/09/2026 | S/C | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 15 | 19/09/2026 | S/C | BCG | 100 | 100 | 0 | No aplica | Sí |
+| 16 | 02/10/2026 | S/C | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 17 | 23/09/2026 | S/C | SPR | 50 | 45 | -5 | GR-SC-5460 | No |
+| 18 | 24/09/2026 | S/C | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 19 | 29/09/2026 | S/C | PENT | 200 | 200 | 0 | No aplica | Sí |
+| 20 | 08/10/2026 | S/C | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 18/09/2026 | S/C | VARI | 150 | 150 | 0 | No aplica | Sí |
+| 22 | 28/09/2026 | S/C | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 23 | 27/09/2026 | S/C | BCG | 100 | 100 | 0 | No aplica | Sí |
+| 24 | 22/09/2026 | S/C | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 25 | 04/10/2026 | S/C | HEPB | 80 | 80 | 0 | No aplica | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1301,890 +1303,890 @@ Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ### Bloque 7 · TRAB-04 · Pretest (proceso manual) · 11/08/2026
 
-Documentos auditados: 40 · Conformes: 23 · RSD: 57.50 % · Entregas conciliadas: 25 · Concordantes: 16 · CPE: 64.00 %
+Documentos auditados: 40 · Conformes: 29 · RSD: 72.50 % · Entregas conciliadas: 25 · Concordantes: 19 · CPE: 76.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | AJU | DTA | L-2608-01 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 2 | DEV | DTA | L-2608-02 | 300 | S | S | S | S | S | S | S | N | N | M8 |
-| 3 | TRA | DTA | L-2608-03 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 4 | SAL | PENT | L-2608-04 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | BCG | L-2608-05 | 300 | S | S | N | S | S | S | S | S | N | M3 |
-| 6 | AJU | IPV | L-2608-06 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | BCG | L-2608-07 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | HEPB | L-2608-08 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 9 | AJU | IPV | L-2608-09 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | NEUM | L-2608-10 | 20 | S | S | S | S | N | S | S | S | N | M5 |
-| 11 | SAL | SPR | L-2608-11 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 12 | TRA | BCG | L-2608-12 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 13 | DEV | VARI | L-2608-13 | 60 | S | S | S | S | N | S | S | S | N | M5 |
-| 14 | DEV | IPV | L-2608-14 | 100 | N | S | S | S | S | S | S | S | N | M1 |
-| 15 | TRA | PENT | L-2608-15 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 16 | ING | HEPB | L-2608-16 | 40 | N | S | S | S | S | S | S | S | N | M1 |
-| 17 | ING | BCG | L-2608-17 | 40 | N | S | S | S | S | S | S | S | N | M1 |
-| 18 | SAL | BCG | L-2608-18 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 19 | SAL | SPR | L-2608-19 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 20 | AJU | HEPB | L-2608-20 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 21 | ING | ROTA | L-2608-21 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | DTA | L-2608-22 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 23 | ING | DTA | L-2608-23 | 80 | S | N | S | S | S | S | S | S | N | M2 |
-| 24 | AJU | PENT | L-2608-24 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 25 | AJU | BCG | L-2608-25 | 200 | S | N | S | S | S | S | S | S | N | M2 |
-| 26 | SAL | ROTA | L-2608-26 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 27 | TRA | IPV | L-2608-27 | 240 | N | S | S | S | S | S | S | S | N | M1 |
-| 28 | ING | INFL | L-2608-28 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | ROTA | L-2608-29 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 30 | TRA | VARI | L-2608-30 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 31 | DEV | IPV | L-2608-31 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | IPV | L-2608-32 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 33 | ING | IPV | L-2608-33 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 34 | AJU | DTA | L-2608-34 | 150 | S | S | S | S | S | S | N | S | N | M7 |
-| 35 | SAL | IPV | L-2608-35 | 80 | S | S | N | S | S | S | S | S | N | M3 |
-| 36 | TRA | DTA | L-2608-36 | 120 | S | S | S | S | S | N | S | S | N | M6 |
-| 37 | SAL | NEUM | L-2608-37 | 40 | S | S | N | S | S | S | S | S | N | M3 |
-| 38 | DEV | NEUM | L-2608-38 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 39 | TRA | ROTA | L-2608-39 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 40 | SAL | HEPB | L-2608-40 | 180 | S | S | S | S | N | S | S | S | N | M5 |
+| 1 | DEV | SPR | SPR-2606-500M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | INFL | INFL-2508-359M | 180 | S | S | S | S | S | S | S | N | N | M8 |
+| 3 | ING | BCG | BCG-2606-808K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 4 | DEV | HEPB | HEPB-2603-786K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | VARI | VARI-2503-521A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 6 | TRA | IPV | IPV-2608-446B | 40 | S | S | S | S | S | S | S | S | S | — |
+| 7 | TRA | HEPB | HEPB-2602-318M | 60 | S | S | S | S | N | S | S | S | N | M5 |
+| 8 | AJU | BCG | BCG-2606-296K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 9 | ING | INFL | INFL-2607-737M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | PENT | PENT-2605-322M | 300 | S | N | S | S | S | S | S | S | N | M2 |
+| 11 | SAL | DTA | DTA-2602-236K | 60 | S | S | S | S | S | N | S | S | N | M6 |
+| 12 | SAL | NEUM | NEUM-2505-638K | 80 | S | S | S | S | S | N | S | S | N | M6 |
+| 13 | ING | VARI | VARI-2503-521A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 14 | DEV | BCG | BCG-2606-296K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | VARI | VARI-2508-818M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | NEUM | NEUM-2509-952A | 240 | S | S | S | S | S | S | N | S | N | M7 |
+| 17 | SAL | PENT | PENT-2606-251M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | HEPB | HEPB-2603-786K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | NEUM | NEUM-2505-688A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | INFL | INFL-2508-359M | 30 | S | S | S | S | S | N | S | S | N | M6 |
+| 21 | ING | HEPB | HEPB-2509-474M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 22 | SAL | PENT | PENT-2606-251M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | VARI | VARI-2509-637K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 24 | TRA | SPR | SPR-2606-500M | 150 | S | S | N | S | S | S | S | S | N | M3 |
+| 25 | ING | BCG | BCG-2504-789B | 20 | S | N | S | S | S | N | S | S | N | M2+M6 |
+| 26 | ING | NEUM | NEUM-2509-952A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | VARI | VARI-2508-818M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | DTA | DTA-2602-797A | 120 | S | S | S | N | S | S | S | S | N | M4 |
+| 29 | SAL | HEPB | HEPB-2509-474M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 30 | ING | DTA | DTA-2602-236K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 31 | TRA | ROTA | ROTA-2502-563B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | ROTA | ROTA-2603-156K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 33 | TRA | BCG | BCG-2607-654A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | HEPB | HEPB-2609-917M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 35 | TRA | BCG | BCG-2606-808K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 36 | TRA | DTA | DTA-2505-409K | 200 | N | S | S | S | S | S | S | N | N | M1+M8 |
+| 37 | DEV | INFL | INFL-2607-737M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | BCG | BCG-2507-694K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | SPR | SPR-2603-471K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | PENT | PENT-2606-251M | 50 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-04 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 11/08/2026 | 6804 | NEUM | 20 | 30 | 10 | Sí | No |
-| 2 | 11/08/2026 | 6804 | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 3 | 11/08/2026 | 6804 | SPR | 150 | 155 | 5 | Sí | No |
-| 4 | 11/08/2026 | 6804 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 5 | 11/08/2026 | 6804 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 6 | 11/08/2026 | 6804 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 11/08/2026 | 6804 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 8 | 11/08/2026 | 6804 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 9 | 11/08/2026 | 6804 | INFL | 200 | 210 | 10 | Sí | No |
-| 10 | 11/08/2026 | 6804 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 11 | 11/08/2026 | 6804 | ROTA | 120 | 120 | 0 | No aplica | Sí |
-| 12 | 11/08/2026 | 6804 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 13 | 11/08/2026 | 6804 | IPV | 120 | 120 | 0 | No aplica | Sí |
-| 14 | 11/08/2026 | 6804 | DTA | 150 | 170 | 20 | Sí | No |
-| 15 | 11/08/2026 | 6804 | IPV | 150 | 145 | -5 | Sí | No |
-| 16 | 11/08/2026 | 6804 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 17 | 11/08/2026 | 6804 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 18 | 11/08/2026 | 6804 | VARI | 120 | 125 | 5 | Sí | No |
-| 19 | 11/08/2026 | 6804 | HEPB | 180 | 170 | -10 | Sí | No |
-| 20 | 11/08/2026 | 6804 | BCG | 50 | 45 | -5 | Sí | No |
-| 21 | 11/08/2026 | 6804 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 22 | 11/08/2026 | 6804 | BCG | 20 | 30 | 10 | Sí | No |
-| 23 | 11/08/2026 | 6804 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 11/08/2026 | 6804 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 11/08/2026 | 6804 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 18/07/2026 | 11214 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 2 | 17/07/2026 | 11214 | ROTA | 60 | 60 | 0 | No aplica | Sí |
+| 3 | 23/07/2026 | 11214 | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 4 | 15/07/2026 | 11214 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 5 | 09/08/2026 | 11214 | HEPB | 20 | 25 | 5 | Sin guía | No |
+| 6 | 07/08/2026 | 11214 | HEPB | 200 | 210 | 10 | GR-11214-3436 | No |
+| 7 | 05/08/2026 | 11214 | INFL | 150 | 150 | 0 | No aplica | Sí |
+| 8 | 29/07/2026 | 11214 | INFL | 60 | 60 | 0 | No aplica | Sí |
+| 9 | 28/07/2026 | 11214 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 10 | 17/07/2026 | 11214 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 11 | 07/08/2026 | 11214 | SPR | 60 | 60 | 0 | No aplica | Sí |
+| 12 | 28/07/2026 | 11214 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 13 | 05/08/2026 | 11214 | DTA | 120 | 110 | -10 | Sin guía | No |
+| 14 | 14/07/2026 | 11214 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 15 | 25/07/2026 | 11214 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 16 | 04/08/2026 | 11214 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 17 | 04/08/2026 | 11214 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 18 | 05/08/2026 | 11214 | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 19 | 09/08/2026 | 11214 | VARI | 200 | 190 | -10 | GR-11214-3780 | No |
+| 20 | 15/07/2026 | 11214 | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 21 | 10/08/2026 | 11214 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 22 | 19/07/2026 | 11214 | BCG | 100 | 95 | -5 | GR-11214-3004 | No |
+| 23 | 11/08/2026 | 11214 | HEPB | 50 | 55 | 5 | Sin guía | No |
+| 24 | 02/08/2026 | 11214 | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 25 | 20/07/2026 | 11214 | DTA | 180 | 180 | 0 | No aplica | Sí |
 
-Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
+Cierre: 19 entregas concordantes ÷ 25 × 100 = **76.00 %**.
 
 ---
 
 ### Bloque 8 · TRAB-04 · Postest (Sistema SIVAC) · 13/10/2026
 
-Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliadas: 25 · Concordantes: 23 · CPE: 92.00 %
+Documentos auditados: 40 · Conformes: 36 · RSD: 90.00 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | BCG | L-2610-01 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | NEUM | L-2610-02 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 3 | DEV | INFL | L-2610-03 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 4 | SAL | NEUM | L-2610-04 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 5 | TRA | PENT | L-2610-05 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 6 | DEV | HEPB | L-2610-06 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 7 | TRA | ROTA | L-2610-07 | 180 | N | S | S | S | S | S | S | S | N | M1 |
-| 8 | ING | BCG | L-2610-08 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 9 | AJU | ROTA | L-2610-09 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | PENT | L-2610-10 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 11 | ING | PENT | L-2610-11 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 12 | TRA | INFL | L-2610-12 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 13 | SAL | BCG | L-2610-13 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 14 | ING | IPV | L-2610-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | DEV | VARI | L-2610-15 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 16 | ING | IPV | L-2610-16 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 17 | ING | NEUM | L-2610-17 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 18 | AJU | INFL | L-2610-18 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 19 | SAL | NEUM | L-2610-19 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 20 | DEV | NEUM | L-2610-20 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 21 | AJU | PENT | L-2610-21 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 22 | AJU | PENT | L-2610-22 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | SPR | L-2610-23 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 24 | TRA | SPR | L-2610-24 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 25 | ING | HEPB | L-2610-25 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 26 | DEV | HEPB | L-2610-26 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 27 | ING | INFL | L-2610-27 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 28 | AJU | SPR | L-2610-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | DEV | PENT | L-2610-29 | 120 | S | S | S | S | S | S | S | N | N | M8 |
-| 30 | AJU | SPR | L-2610-30 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 31 | ING | NEUM | L-2610-31 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 32 | SAL | ROTA | L-2610-32 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 33 | DEV | DTA | L-2610-33 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 34 | SAL | NEUM | L-2610-34 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | NEUM | L-2610-35 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 36 | ING | SPR | L-2610-36 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | DTA | L-2610-37 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 38 | TRA | BCG | L-2610-38 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 39 | ING | IPV | L-2610-39 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | INFL | L-2610-40 | 40 | S | S | S | S | S | S | S | S | S | — |
+| 1 | AJU | PENT | PENT-2605-322M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | NEUM | NEUM-2505-688A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | INFL | INFL-2604-777M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 4 | ING | DTA | DTA-2505-409K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | VARI | VARI-2508-818M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | INFL | INFL-2603-792B | 120 | S | S | S | S | S | S | S | S | S | — |
+| 7 | TRA | INFL | INFL-2607-737M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | PENT | PENT-2504-482M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | DTA | DTA-2505-409K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 10 | ING | VARI | VARI-2607-979A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 11 | AJU | DTA | DTA-2505-409K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 12 | SAL | NEUM | NEUM-2505-638K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | PENT | PENT-2606-391A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 14 | ING | DTA | DTA-2603-463K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | IPV | IPV-2608-446B | 30 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | DTA | DTA-2603-463K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | NEUM | NEUM-2506-884B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 18 | DEV | ROTA | ROTA-2602-464A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 19 | DEV | PENT | PENT-2508-232M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | SPR | SPR-2608-539M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 21 | DEV | SPR | SPR-2606-500M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 22 | DEV | PENT | PENT-2508-232M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 23 | TRA | NEUM | NEUM-2506-884B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | ROTA | ROTA-2602-464A | 120 | S | N | S | S | S | S | S | N | N | M2+M8 |
+| 25 | ING | IPV | IPV-2608-446B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 26 | TRA | HEPB | HEPB-2603-786K | 20 | S | S | S | S | S | N | S | S | N | M6 |
+| 27 | SAL | DTA | DTA-2603-463K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 28 | TRA | VARI | VARI-2501-250M | 120 | S | S | S | N | S | S | S | S | N | M4 |
+| 29 | TRA | SPR | SPR-2609-423M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | HEPB | HEPB-2602-318M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | VARI | VARI-2607-979A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | INFL | INFL-2607-737M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 33 | ING | PENT | PENT-2504-482M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | VARI | VARI-2503-521A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 35 | DEV | INFL | INFL-2508-359M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 36 | SAL | INFL | INFL-2603-792B | 30 | S | S | S | S | S | S | S | N | N | M8 |
+| 37 | TRA | DTA | DTA-2603-463K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | DTA | DTA-2505-409K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | DTA | DTA-2606-829K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | BCG | BCG-2607-654A | 300 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-04 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 13/10/2026 | 6804 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 2 | 13/10/2026 | 6804 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 3 | 13/10/2026 | 6804 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 4 | 13/10/2026 | 6804 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 5 | 13/10/2026 | 6804 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 6 | 13/10/2026 | 6804 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 7 | 13/10/2026 | 6804 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 8 | 13/10/2026 | 6804 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 9 | 13/10/2026 | 6804 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 10 | 13/10/2026 | 6804 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 11 | 13/10/2026 | 6804 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 12 | 13/10/2026 | 6804 | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 13 | 13/10/2026 | 6804 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 13/10/2026 | 6804 | NEUM | 100 | 100 | 0 | No aplica | Sí |
-| 15 | 13/10/2026 | 6804 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 16 | 13/10/2026 | 6804 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 17 | 13/10/2026 | 6804 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 18 | 13/10/2026 | 6804 | ROTA | 200 | 220 | 20 | Sí | No |
-| 19 | 13/10/2026 | 6804 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 20 | 13/10/2026 | 6804 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 21 | 13/10/2026 | 6804 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 22 | 13/10/2026 | 6804 | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 23 | 13/10/2026 | 6804 | NEUM | 60 | 80 | 20 | Sí | No |
-| 24 | 13/10/2026 | 6804 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 25 | 13/10/2026 | 6804 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 27/09/2026 | 11214 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 2 | 20/09/2026 | 11214 | DTA | 20 | 15 | -5 | GR-11214-2646 | No |
+| 3 | 21/09/2026 | 11214 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 4 | 28/09/2026 | 11214 | HEPB | 40 | 40 | 0 | No aplica | Sí |
+| 5 | 01/10/2026 | 11214 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 6 | 08/10/2026 | 11214 | PENT | 120 | 120 | 0 | No aplica | Sí |
+| 7 | 06/10/2026 | 11214 | INFL | 60 | 60 | 0 | No aplica | Sí |
+| 8 | 15/09/2026 | 11214 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 9 | 17/09/2026 | 11214 | SPR | 100 | 100 | 0 | No aplica | Sí |
+| 10 | 19/09/2026 | 11214 | INFL | 80 | 80 | 0 | No aplica | Sí |
+| 11 | 30/09/2026 | 11214 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 12 | 02/10/2026 | 11214 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 13 | 26/09/2026 | 11214 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 14 | 18/09/2026 | 11214 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 15 | 21/09/2026 | 11214 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 16 | 08/10/2026 | 11214 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 17 | 24/09/2026 | 11214 | HEPB | 120 | 120 | 0 | No aplica | Sí |
+| 18 | 02/10/2026 | 11214 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 19 | 04/10/2026 | 11214 | INFL | 180 | 180 | 0 | No aplica | Sí |
+| 20 | 04/10/2026 | 11214 | PENT | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 26/09/2026 | 11214 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 22 | 24/09/2026 | 11214 | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 23 | 22/09/2026 | 11214 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 24 | 04/10/2026 | 11214 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 25 | 29/09/2026 | 11214 | IPV | 60 | 60 | 0 | No aplica | Sí |
 
-Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ---
 
 ### Bloque 9 · TRAB-05 · Pretest (proceso manual) · 12/08/2026
 
-Documentos auditados: 40 · Conformes: 18 · RSD: 45.00 % · Entregas conciliadas: 25 · Concordantes: 21 · CPE: 84.00 %
+Documentos auditados: 40 · Conformes: 22 · RSD: 55.00 % · Entregas conciliadas: 25 · Concordantes: 15 · CPE: 60.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | SPR | L-2608-01 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 2 | DEV | ROTA | L-2608-02 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 3 | ING | DTA | L-2608-03 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 4 | ING | HEPB | L-2608-04 | 20 | S | S | S | S | S | S | N | S | N | M7 |
-| 5 | DEV | INFL | L-2608-05 | 20 | S | S | S | S | S | S | N | S | N | M7 |
-| 6 | TRA | SPR | L-2608-06 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 7 | SAL | DTA | L-2608-07 | 60 | S | S | S | S | S | N | S | S | N | M6 |
-| 8 | TRA | PENT | L-2608-08 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 9 | DEV | DTA | L-2608-09 | 150 | S | S | S | S | N | S | S | S | N | M5 |
-| 10 | ING | ROTA | L-2608-10 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 11 | ING | VARI | L-2608-11 | 200 | S | N | S | S | S | S | S | S | N | M2 |
-| 12 | DEV | SPR | L-2608-12 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 13 | AJU | DTA | L-2608-13 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | HEPB | L-2608-14 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 15 | TRA | ROTA | L-2608-15 | 150 | N | S | S | S | S | S | S | S | N | M1 |
-| 16 | TRA | NEUM | L-2608-16 | 240 | S | S | S | S | N | S | S | S | N | M5 |
-| 17 | AJU | BCG | L-2608-17 | 240 | S | S | S | S | S | S | N | S | N | M7 |
-| 18 | SAL | SPR | L-2608-18 | 200 | S | S | S | S | S | N | S | S | N | M6 |
-| 19 | TRA | VARI | L-2608-19 | 180 | S | N | S | S | S | S | S | S | N | M2 |
-| 20 | SAL | IPV | L-2608-20 | 20 | S | N | S | S | S | S | S | S | N | M2 |
-| 21 | SAL | BCG | L-2608-21 | 60 | S | S | S | S | S | S | N | S | N | M7 |
-| 22 | ING | SPR | L-2608-22 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | DTA | L-2608-23 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 24 | ING | PENT | L-2608-24 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | INFL | L-2608-25 | 80 | S | S | S | S | N | S | S | S | N | M5 |
-| 26 | DEV | IPV | L-2608-26 | 180 | S | S | S | S | S | N | S | S | N | M6 |
-| 27 | AJU | NEUM | L-2608-27 | 240 | N | S | S | S | S | S | S | S | N | M1 |
-| 28 | TRA | INFL | L-2608-28 | 80 | S | S | S | S | S | N | S | S | N | M6 |
-| 29 | SAL | ROTA | L-2608-29 | 120 | S | S | S | S | S | S | S | N | N | M8 |
-| 30 | AJU | IPV | L-2608-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | SAL | PENT | L-2608-31 | 300 | S | S | S | N | S | S | S | S | N | M4 |
-| 32 | AJU | INFL | L-2608-32 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | HEPB | L-2608-33 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 34 | AJU | INFL | L-2608-34 | 200 | S | S | S | S | N | S | S | S | N | M5 |
-| 35 | ING | SPR | L-2608-35 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 36 | ING | VARI | L-2608-36 | 300 | S | S | S | S | N | S | S | S | N | M5 |
-| 37 | DEV | INFL | L-2608-37 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 38 | DEV | BCG | L-2608-38 | 40 | S | N | S | S | S | S | S | S | N | M2 |
-| 39 | SAL | NEUM | L-2608-39 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | INFL | L-2608-40 | 240 | S | S | S | S | S | S | S | S | S | — |
+| 1 | AJU | VARI | VARI-2501-250M | 150 | N | S | S | S | S | N | S | S | N | M1+M6 |
+| 2 | ING | IPV | IPV-2504-587B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | PENT | PENT-2605-322M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | INFL | INFL-2504-261K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | IPV | IPV-2503-662B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 6 | DEV | SPR | SPR-2608-539M | 80 | S | S | S | S | S | N | S | S | N | M6 |
+| 7 | DEV | ROTA | ROTA-2605-833M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 8 | DEV | DTA | DTA-2603-463K | 180 | S | S | N | S | S | S | S | S | N | M3 |
+| 9 | TRA | IPV | IPV-2507-805M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | IPV | IPV-2507-805M | 80 | S | N | S | S | S | S | S | S | N | M2 |
+| 11 | SAL | BCG | BCG-2606-296K | 100 | N | S | S | S | S | S | S | S | N | M1 |
+| 12 | ING | SPR | SPR-2603-471K | 20 | N | S | S | S | S | S | S | S | N | M1 |
+| 13 | AJU | ROTA | ROTA-2507-417A | 200 | S | S | S | S | S | S | S | N | N | M8 |
+| 14 | SAL | IPV | IPV-2507-805M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | BCG | BCG-2507-694K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | VARI | VARI-2501-250M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 17 | DEV | VARI | VARI-2509-637K | 120 | S | S | S | S | S | S | N | S | N | M7 |
+| 18 | SAL | INFL | INFL-2504-261K | 200 | S | S | N | S | N | S | S | S | N | M3+M5 |
+| 19 | ING | IPV | IPV-2504-587B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | NEUM | NEUM-2509-952A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | IPV | IPV-2605-698M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 22 | SAL | SPR | SPR-2609-423M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | VARI | VARI-2501-250M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 24 | SAL | DTA | DTA-2606-829K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 25 | DEV | VARI | VARI-2607-979A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | ROTA | ROTA-2602-464A | 240 | S | S | N | S | N | S | S | S | N | M3+M5 |
+| 27 | ING | ROTA | ROTA-2603-156K | 30 | S | S | S | S | N | S | N | S | N | M5+M7 |
+| 28 | SAL | IPV | IPV-2507-805M | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 29 | SAL | SPR | SPR-2603-471K | 80 | S | S | S | S | S | S | N | S | N | M7 |
+| 30 | AJU | ROTA | ROTA-2602-464A | 30 | S | N | S | S | S | S | S | S | N | M2 |
+| 31 | SAL | VARI | VARI-2501-250M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 32 | DEV | BCG | BCG-2606-296K | 120 | S | S | S | S | S | S | N | S | N | M7 |
+| 33 | SAL | PENT | PENT-2508-232M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | SPR | SPR-2609-423M | 50 | S | S | S | S | S | S | S | N | N | M8 |
+| 35 | ING | HEPB | HEPB-2603-786K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 36 | TRA | SPR | SPR-2606-500M | 30 | S | S | S | S | S | S | N | S | N | M7 |
+| 37 | TRA | BCG | BCG-2606-296K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | SPR | SPR-2603-471K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | ROTA | ROTA-2507-417A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | HEPB | HEPB-2603-786K | 300 | S | S | S | S | S | S | N | S | N | M7 |
 
 **Entregas conciliadas — TRAB-05 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 12/08/2026 | 4132 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 2 | 12/08/2026 | 4132 | HEPB | 150 | 140 | -10 | Sí | No |
-| 3 | 12/08/2026 | 4132 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 4 | 12/08/2026 | 4132 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 5 | 12/08/2026 | 4132 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 6 | 12/08/2026 | 4132 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 7 | 12/08/2026 | 4132 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 8 | 12/08/2026 | 4132 | PENT | 40 | 30 | -10 | Sí | No |
-| 9 | 12/08/2026 | 4132 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 10 | 12/08/2026 | 4132 | BCG | 180 | 180 | 0 | No aplica | Sí |
-| 11 | 12/08/2026 | 4132 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 12 | 12/08/2026 | 4132 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 13 | 12/08/2026 | 4132 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 14 | 12/08/2026 | 4132 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 15 | 12/08/2026 | 4132 | NEUM | 120 | 100 | -20 | Sí | No |
-| 16 | 12/08/2026 | 4132 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 17 | 12/08/2026 | 4132 | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 18 | 12/08/2026 | 4132 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 19 | 12/08/2026 | 4132 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 20 | 12/08/2026 | 4132 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 21 | 12/08/2026 | 4132 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 22 | 12/08/2026 | 4132 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 23 | 12/08/2026 | 4132 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 12/08/2026 | 4132 | INFL | 40 | 50 | 10 | Sí | No |
-| 25 | 12/08/2026 | 4132 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 1 | 31/07/2026 | 6804 | SPR | 100 | 100 | 0 | No aplica | Sí |
+| 2 | 16/07/2026 | 6804 | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 3 | 20/07/2026 | 6804 | NEUM | 80 | 70 | -10 | GR-6804-1382 | No |
+| 4 | 22/07/2026 | 6804 | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 5 | 31/07/2026 | 6804 | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 6 | 17/07/2026 | 6804 | PENT | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 28/07/2026 | 6804 | SPR | 80 | 80 | 0 | No aplica | Sí |
+| 8 | 20/07/2026 | 6804 | PENT | 80 | 80 | 0 | No aplica | Sí |
+| 9 | 10/08/2026 | 6804 | VARI | 60 | 60 | 0 | No aplica | Sí |
+| 10 | 23/07/2026 | 6804 | BCG | 40 | 45 | 5 | Sin guía | No |
+| 11 | 19/07/2026 | 6804 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 12 | 05/08/2026 | 6804 | ROTA | 20 | 15 | -5 | Sin guía | No |
+| 13 | 28/07/2026 | 6804 | VARI | 80 | 90 | 10 | GR-6804-6122 | No |
+| 14 | 30/07/2026 | 6804 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 15 | 26/07/2026 | 6804 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 16 | 01/08/2026 | 6804 | ROTA | 100 | 90 | -10 | GR-6804-2782 | No |
+| 17 | 03/08/2026 | 6804 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 18 | 22/07/2026 | 6804 | ROTA | 30 | 30 | 0 | No aplica | Sí |
+| 19 | 20/07/2026 | 6804 | SPR | 80 | 70 | -10 | Sin guía | No |
+| 20 | 27/07/2026 | 6804 | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 10/08/2026 | 6804 | BCG | 40 | 40 | 0 | No aplica | Sí |
+| 22 | 11/08/2026 | 6804 | HEPB | 180 | 185 | 5 | Sin guía | No |
+| 23 | 04/08/2026 | 6804 | HEPB | 40 | 30 | -10 | Sin guía | No |
+| 24 | 15/07/2026 | 6804 | SPR | 40 | 30 | -10 | Sin guía | No |
+| 25 | 20/07/2026 | 6804 | PENT | 30 | 25 | -5 | Sin guía | No |
 
-Cierre: 21 entregas concordantes ÷ 25 × 100 = **84.00 %**.
+Cierre: 15 entregas concordantes ÷ 25 × 100 = **60.00 %**.
 
 ---
 
 ### Bloque 10 · TRAB-05 · Postest (Sistema SIVAC) · 14/10/2026
 
-Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 22 · CPE: 88.00 %
+Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | IPV | L-2610-01 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | INFL | L-2610-02 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 3 | TRA | DTA | L-2610-03 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 4 | DEV | NEUM | L-2610-04 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 5 | TRA | SPR | L-2610-05 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 6 | TRA | DTA | L-2610-06 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 7 | AJU | PENT | L-2610-07 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | NEUM | L-2610-08 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 9 | ING | IPV | L-2610-09 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | SPR | L-2610-10 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 11 | TRA | PENT | L-2610-11 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 12 | SAL | HEPB | L-2610-12 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 13 | DEV | VARI | L-2610-13 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 14 | ING | BCG | L-2610-14 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 15 | ING | IPV | L-2610-15 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 16 | TRA | DTA | L-2610-16 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | PENT | L-2610-17 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 18 | SAL | ROTA | L-2610-18 | 200 | S | S | S | S | S | S | N | S | N | M7 |
-| 19 | SAL | DTA | L-2610-19 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 20 | ING | VARI | L-2610-20 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 21 | DEV | VARI | L-2610-21 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 22 | DEV | VARI | L-2610-22 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 23 | TRA | IPV | L-2610-23 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 24 | DEV | VARI | L-2610-24 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | DTA | L-2610-25 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 26 | ING | SPR | L-2610-26 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 27 | ING | PENT | L-2610-27 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 28 | SAL | ROTA | L-2610-28 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 29 | AJU | PENT | L-2610-29 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 30 | ING | ROTA | L-2610-30 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 31 | TRA | SPR | L-2610-31 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 32 | ING | NEUM | L-2610-32 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | PENT | L-2610-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | DEV | PENT | L-2610-34 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | INFL | L-2610-35 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 36 | AJU | PENT | L-2610-36 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | NEUM | L-2610-37 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 38 | DEV | NEUM | L-2610-38 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 39 | ING | SPR | L-2610-39 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 40 | TRA | VARI | L-2610-40 | 200 | S | S | S | S | S | S | S | S | S | — |
+| 1 | DEV | IPV | IPV-2503-662B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | VARI | VARI-2607-979A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | DTA | DTA-2602-236K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 4 | TRA | NEUM | NEUM-2505-688A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 5 | TRA | NEUM | NEUM-2509-952A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | IPV | IPV-2608-446B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 7 | DEV | IPV | IPV-2608-446B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | VARI | VARI-2509-637K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | SPR | SPR-2609-423M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 10 | TRA | PENT | PENT-2605-322M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 11 | AJU | DTA | DTA-2505-409K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 12 | DEV | SPR | SPR-2609-423M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | VARI | VARI-2509-637K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | NEUM | NEUM-2507-181K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | INFL | INFL-2504-261K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 16 | TRA | PENT | PENT-2606-391A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 17 | TRA | NEUM | NEUM-2509-952A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | BCG | BCG-2507-694K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 19 | DEV | NEUM | NEUM-2505-638K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | VARI | VARI-2503-521A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | DTA | DTA-2602-236K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 22 | DEV | ROTA | ROTA-2502-563B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 23 | DEV | IPV | IPV-2503-662B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 24 | SAL | VARI | VARI-2607-979A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | DTA | DTA-2603-463K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | SPR | SPR-2606-500M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | IPV | IPV-2503-662B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 28 | SAL | IPV | IPV-2608-446B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | BCG | BCG-2606-296K | 300 | S | S | S | S | S | N | S | N | N | M6+M8 |
+| 30 | ING | IPV | IPV-2504-587B | 100 | S | S | S | S | S | S | S | S | S | — |
+| 31 | TRA | PENT | PENT-2606-391A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 32 | AJU | ROTA | ROTA-2603-156K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | IPV | IPV-2504-587B | 30 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | HEPB | HEPB-2509-474M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 35 | TRA | IPV | IPV-2605-698M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 36 | DEV | BCG | BCG-2607-654A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 37 | AJU | SPR | SPR-2609-423M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | PENT | PENT-2605-322M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 39 | TRA | INFL | INFL-2603-792B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | ROTA | ROTA-2605-833M | 60 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-05 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 14/10/2026 | 4132 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 2 | 14/10/2026 | 4132 | SPR | 50 | 70 | 20 | Sí | No |
-| 3 | 14/10/2026 | 4132 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 4 | 14/10/2026 | 4132 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 5 | 14/10/2026 | 4132 | INFL | 180 | 180 | 0 | No aplica | Sí |
-| 6 | 14/10/2026 | 4132 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 7 | 14/10/2026 | 4132 | HEPB | 30 | 30 | 0 | No aplica | Sí |
-| 8 | 14/10/2026 | 4132 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 14/10/2026 | 4132 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 10 | 14/10/2026 | 4132 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 11 | 14/10/2026 | 4132 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 12 | 14/10/2026 | 4132 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 13 | 14/10/2026 | 4132 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 14 | 14/10/2026 | 4132 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 15 | 14/10/2026 | 4132 | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 16 | 14/10/2026 | 4132 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 17 | 14/10/2026 | 4132 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 18 | 14/10/2026 | 4132 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 19 | 14/10/2026 | 4132 | PENT | 100 | 110 | 10 | Sí | No |
-| 20 | 14/10/2026 | 4132 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 21 | 14/10/2026 | 4132 | IPV | 50 | 45 | -5 | Sí | No |
-| 22 | 14/10/2026 | 4132 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 23 | 14/10/2026 | 4132 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 24 | 14/10/2026 | 4132 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 25 | 14/10/2026 | 4132 | VARI | 60 | 60 | 0 | No aplica | Sí |
+| 1 | 13/10/2026 | 6804 | INFL | 40 | 40 | 0 | No aplica | Sí |
+| 2 | 08/10/2026 | 6804 | ROTA | 60 | 60 | 0 | No aplica | Sí |
+| 3 | 18/09/2026 | 6804 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 4 | 06/10/2026 | 6804 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+| 5 | 26/09/2026 | 6804 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 6 | 30/09/2026 | 6804 | DTA | 30 | 30 | 0 | No aplica | Sí |
+| 7 | 09/10/2026 | 6804 | ROTA | 20 | 20 | 0 | No aplica | Sí |
+| 8 | 02/10/2026 | 6804 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 9 | 22/09/2026 | 6804 | SPR | 150 | 150 | 0 | No aplica | Sí |
+| 10 | 14/10/2026 | 6804 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 11 | 14/10/2026 | 6804 | IPV | 80 | 80 | 0 | No aplica | Sí |
+| 12 | 06/10/2026 | 6804 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 13 | 05/10/2026 | 6804 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 14 | 07/10/2026 | 6804 | INFL | 80 | 70 | -10 | GR-6804-9557 | No |
+| 15 | 09/10/2026 | 6804 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 16 | 17/09/2026 | 6804 | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 17 | 17/09/2026 | 6804 | INFL | 120 | 120 | 0 | No aplica | Sí |
+| 18 | 23/09/2026 | 6804 | NEUM | 180 | 180 | 0 | No aplica | Sí |
+| 19 | 12/10/2026 | 6804 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 20 | 09/10/2026 | 6804 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 21 | 10/10/2026 | 6804 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 22 | 18/09/2026 | 6804 | PENT | 30 | 30 | 0 | No aplica | Sí |
+| 23 | 30/09/2026 | 6804 | VARI | 180 | 180 | 0 | No aplica | Sí |
+| 24 | 14/10/2026 | 6804 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 25 | 22/09/2026 | 6804 | INFL | 80 | 80 | 0 | No aplica | Sí |
 
-Cierre: 22 entregas concordantes ÷ 25 × 100 = **88.00 %**.
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ---
 
 ### Bloque 11 · TRAB-06 · Pretest (proceso manual) · 12/08/2026
 
-Documentos auditados: 40 · Conformes: 21 · RSD: 52.50 % · Entregas conciliadas: 25 · Concordantes: 18 · CPE: 72.00 %
+Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliadas: 25 · Concordantes: 17 · CPE: 68.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | ING | DTA | L-2608-01 | 200 | N | S | S | S | S | S | S | S | N | M1 |
-| 2 | ING | PENT | L-2608-02 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 3 | DEV | SPR | L-2608-03 | 20 | S | S | S | S | S | S | N | S | N | M7 |
-| 4 | TRA | ROTA | L-2608-04 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 5 | ING | NEUM | L-2608-05 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 6 | ING | HEPB | L-2608-06 | 200 | S | S | S | S | S | S | N | S | N | M7 |
-| 7 | SAL | ROTA | L-2608-07 | 100 | S | S | S | S | S | S | N | S | N | M7 |
-| 8 | ING | HEPB | L-2608-08 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 9 | DEV | DTA | L-2608-09 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | DTA | L-2608-10 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 11 | TRA | INFL | L-2608-11 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 12 | AJU | ROTA | L-2608-12 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 13 | SAL | VARI | L-2608-13 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 14 | DEV | BCG | L-2608-14 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 15 | ING | INFL | L-2608-15 | 240 | S | S | S | S | S | S | N | S | N | M7 |
-| 16 | DEV | IPV | L-2608-16 | 300 | N | S | S | S | S | S | S | S | N | M1 |
-| 17 | DEV | IPV | L-2608-17 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 18 | DEV | VARI | L-2608-18 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | BCG | L-2608-19 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 20 | DEV | BCG | L-2608-20 | 80 | S | S | N | S | S | S | S | S | N | M3 |
-| 21 | ING | HEPB | L-2608-21 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | BCG | L-2608-22 | 150 | S | S | S | S | S | S | N | S | N | M7 |
-| 23 | SAL | VARI | L-2608-23 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 24 | ING | SPR | L-2608-24 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 25 | SAL | SPR | L-2608-25 | 40 | S | N | S | S | S | S | S | S | N | M2 |
-| 26 | AJU | NEUM | L-2608-26 | 300 | S | S | S | S | S | S | N | S | N | M7 |
-| 27 | AJU | DTA | L-2608-27 | 200 | S | S | S | S | N | S | S | S | N | M5 |
-| 28 | DEV | VARI | L-2608-28 | 60 | S | S | S | S | N | S | S | S | N | M5 |
-| 29 | AJU | SPR | L-2608-29 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 30 | AJU | HEPB | L-2608-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | ING | PENT | L-2608-31 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 32 | AJU | NEUM | L-2608-32 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 33 | TRA | BCG | L-2608-33 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 34 | TRA | PENT | L-2608-34 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 35 | ING | DTA | L-2608-35 | 20 | S | S | S | S | S | S | S | N | N | M8 |
-| 36 | SAL | HEPB | L-2608-36 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | BCG | L-2608-37 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 38 | AJU | ROTA | L-2608-38 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 39 | AJU | IPV | L-2608-39 | 100 | S | S | S | S | S | S | S | N | N | M8 |
-| 40 | AJU | ROTA | L-2608-40 | 200 | S | S | S | N | S | S | S | S | N | M4 |
+| 1 | TRA | HEPB | HEPB-2609-917M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 2 | AJU | ROTA | ROTA-2602-464A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | IPV | IPV-2503-662B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 4 | AJU | HEPB | HEPB-2602-318M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | IPV | IPV-2503-662B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | IPV | IPV-2504-587B | 300 | S | N | S | S | S | S | S | S | N | M2 |
+| 7 | SAL | SPR | SPR-2606-500M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 8 | DEV | DTA | DTA-2606-829K | 100 | S | S | S | S | S | S | N | S | N | M7 |
+| 9 | SAL | VARI | VARI-2508-818M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | DTA | DTA-2602-236K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | NEUM | NEUM-2506-884B | 150 | S | S | S | S | S | N | S | S | N | M6 |
+| 12 | ING | PENT | PENT-2606-251M | 80 | S | S | S | S | S | S | N | S | N | M7 |
+| 13 | ING | VARI | VARI-2501-250M | 30 | S | S | S | S | S | S | N | S | N | M7 |
+| 14 | AJU | HEPB | HEPB-2609-917M | 50 | S | S | S | S | S | S | S | N | N | M8 |
+| 15 | DEV | VARI | VARI-2503-521A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | NEUM | NEUM-2505-638K | 180 | N | S | S | S | S | S | S | S | N | M1 |
+| 17 | ING | BCG | BCG-2607-654A | 100 | S | S | S | N | S | S | S | S | N | M4 |
+| 18 | TRA | INFL | INFL-2607-737M | 20 | S | S | S | S | S | N | S | S | N | M6 |
+| 19 | SAL | DTA | DTA-2602-236K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | VARI | VARI-2503-521A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 21 | DEV | DTA | DTA-2602-236K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 22 | ING | SPR | SPR-2606-500M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | BCG | BCG-2507-694K | 30 | S | S | S | S | S | S | N | S | N | M7 |
+| 24 | AJU | NEUM | NEUM-2506-884B | 40 | S | N | S | S | N | S | S | S | N | M2+M5 |
+| 25 | TRA | SPR | SPR-2504-185M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | BCG | BCG-2606-296K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 27 | TRA | VARI | VARI-2501-250M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 28 | AJU | IPV | IPV-2504-587B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 29 | DEV | VARI | VARI-2509-637K | 20 | S | S | S | S | S | S | N | N | N | M7+M8 |
+| 30 | SAL | DTA | DTA-2602-797A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | ROTA | ROTA-2602-464A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 32 | TRA | SPR | SPR-2504-185M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | NEUM | NEUM-2505-688A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 34 | DEV | NEUM | NEUM-2507-181K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 35 | TRA | SPR | SPR-2608-539M | 300 | S | S | S | S | S | S | S | N | N | M8 |
+| 36 | ING | SPR | SPR-2603-471K | 50 | S | S | N | S | S | S | S | N | N | M3+M8 |
+| 37 | DEV | INFL | INFL-2603-792B | 30 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | SPR | SPR-2504-185M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | VARI | VARI-2501-250M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 40 | DEV | INFL | INFL-2504-261K | 100 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-06 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 12/08/2026 | 4158 | ROTA | 30 | 30 | 0 | No aplica | Sí |
-| 2 | 12/08/2026 | 4158 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 3 | 12/08/2026 | 4158 | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 4 | 12/08/2026 | 4158 | PENT | 100 | 110 | 10 | Sí | No |
-| 5 | 12/08/2026 | 4158 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 12/08/2026 | 4158 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 7 | 12/08/2026 | 4158 | NEUM | 100 | 100 | 0 | No aplica | Sí |
-| 8 | 12/08/2026 | 4158 | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 9 | 12/08/2026 | 4158 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 10 | 12/08/2026 | 4158 | SPR | 60 | 70 | 10 | Sí | No |
-| 11 | 12/08/2026 | 4158 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 12/08/2026 | 4158 | SPR | 100 | 105 | 5 | Sí | No |
-| 13 | 12/08/2026 | 4158 | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 14 | 12/08/2026 | 4158 | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 15 | 12/08/2026 | 4158 | BCG | 100 | 95 | -5 | Sí | No |
-| 16 | 12/08/2026 | 4158 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 17 | 12/08/2026 | 4158 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 18 | 12/08/2026 | 4158 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 12/08/2026 | 4158 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 20 | 12/08/2026 | 4158 | DTA | 180 | 190 | 10 | Sí | No |
-| 21 | 12/08/2026 | 4158 | PENT | 20 | 25 | 5 | Sí | No |
-| 22 | 12/08/2026 | 4158 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 23 | 12/08/2026 | 4158 | INFL | 100 | 80 | -20 | Sí | No |
-| 24 | 12/08/2026 | 4158 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 12/08/2026 | 4158 | SPR | 30 | 30 | 0 | No aplica | Sí |
-
-Cierre: 18 entregas concordantes ÷ 25 × 100 = **72.00 %**.
-
----
-
-### Bloque 12 · TRAB-06 · Postest (Sistema SIVAC) · 14/10/2026
-
-Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliadas: 25 · Concordantes: 20 · CPE: 80.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | INFL | L-2610-01 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 2 | ING | NEUM | L-2610-02 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 3 | TRA | NEUM | L-2610-03 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 4 | ING | PENT | L-2610-04 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 5 | ING | VARI | L-2610-05 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 6 | SAL | VARI | L-2610-06 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | SPR | L-2610-07 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 8 | ING | IPV | L-2610-08 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 9 | TRA | HEPB | L-2610-09 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | ROTA | L-2610-10 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 11 | AJU | ROTA | L-2610-11 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 12 | AJU | NEUM | L-2610-12 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 13 | TRA | DTA | L-2610-13 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 14 | TRA | HEPB | L-2610-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | SAL | IPV | L-2610-15 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 16 | SAL | PENT | L-2610-16 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 17 | ING | NEUM | L-2610-17 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 18 | SAL | HEPB | L-2610-18 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | ROTA | L-2610-19 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 20 | TRA | HEPB | L-2610-20 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 21 | ING | ROTA | L-2610-21 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 22 | DEV | BCG | L-2610-22 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 23 | TRA | BCG | L-2610-23 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | HEPB | L-2610-24 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | VARI | L-2610-25 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 26 | TRA | BCG | L-2610-26 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 27 | DEV | ROTA | L-2610-27 | 80 | S | S | S | S | S | N | S | S | N | M6 |
-| 28 | SAL | BCG | L-2610-28 | 60 | S | S | S | S | S | S | S | N | N | M8 |
-| 29 | SAL | DTA | L-2610-29 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 30 | ING | VARI | L-2610-30 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 31 | AJU | PENT | L-2610-31 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | PENT | L-2610-32 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 33 | DEV | PENT | L-2610-33 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 34 | DEV | DTA | L-2610-34 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 35 | DEV | BCG | L-2610-35 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 36 | DEV | BCG | L-2610-36 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | DTA | L-2610-37 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 38 | SAL | HEPB | L-2610-38 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 39 | SAL | HEPB | L-2610-39 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | PENT | L-2610-40 | 20 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-06 · Postest (Sistema SIVAC)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 14/10/2026 | 4158 | VARI | 60 | 60 | 0 | No aplica | Sí |
-| 2 | 14/10/2026 | 4158 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 3 | 14/10/2026 | 4158 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 4 | 14/10/2026 | 4158 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 5 | 14/10/2026 | 4158 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 6 | 14/10/2026 | 4158 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 14/10/2026 | 4158 | ROTA | 120 | 120 | 0 | No aplica | Sí |
-| 8 | 14/10/2026 | 4158 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 14/10/2026 | 4158 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 10 | 14/10/2026 | 4158 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 11 | 14/10/2026 | 4158 | NEUM | 150 | 150 | 0 | No aplica | Sí |
-| 12 | 14/10/2026 | 4158 | ROTA | 200 | 180 | -20 | Sí | No |
-| 13 | 14/10/2026 | 4158 | NEUM | 100 | 105 | 5 | Sí | No |
-| 14 | 14/10/2026 | 4158 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 15 | 14/10/2026 | 4158 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 16 | 14/10/2026 | 4158 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 17 | 14/10/2026 | 4158 | INFL | 80 | 75 | -5 | Sí | No |
-| 18 | 14/10/2026 | 4158 | SPR | 120 | 120 | 0 | No aplica | Sí |
-| 19 | 14/10/2026 | 4158 | NEUM | 30 | 20 | -10 | Sí | No |
-| 20 | 14/10/2026 | 4158 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 21 | 14/10/2026 | 4158 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 22 | 14/10/2026 | 4158 | VARI | 180 | 180 | 0 | No aplica | Sí |
-| 23 | 14/10/2026 | 4158 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 24 | 14/10/2026 | 4158 | VARI | 60 | 55 | -5 | Sí | No |
-| 25 | 14/10/2026 | 4158 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-
-Cierre: 20 entregas concordantes ÷ 25 × 100 = **80.00 %**.
-
----
-
-### Bloque 13 · TRAB-07 · Pretest (proceso manual) · 13/08/2026
-
-Documentos auditados: 40 · Conformes: 25 · RSD: 62.50 % · Entregas conciliadas: 25 · Concordantes: 20 · CPE: 80.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | NEUM | L-2608-01 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 2 | DEV | IPV | L-2608-02 | 100 | S | S | S | S | S | S | N | S | N | M7 |
-| 3 | AJU | ROTA | L-2608-03 | 240 | S | S | S | N | S | S | S | S | N | M4 |
-| 4 | ING | HEPB | L-2608-04 | 100 | S | S | S | S | N | S | S | S | N | M5 |
-| 5 | SAL | INFL | L-2608-05 | 40 | S | S | S | S | S | S | S | N | N | M8 |
-| 6 | AJU | NEUM | L-2608-06 | 240 | S | S | S | N | S | S | S | S | N | M4 |
-| 7 | TRA | ROTA | L-2608-07 | 120 | S | S | S | S | S | S | S | N | N | M8 |
-| 8 | TRA | SPR | L-2608-08 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 9 | TRA | SPR | L-2608-09 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | DTA | L-2608-10 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 11 | DEV | SPR | L-2608-11 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 12 | SAL | VARI | L-2608-12 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 13 | ING | NEUM | L-2608-13 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 14 | AJU | IPV | L-2608-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | TRA | DTA | L-2608-15 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 16 | ING | SPR | L-2608-16 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | BCG | L-2608-17 | 300 | N | S | S | S | S | S | S | S | N | M1 |
-| 18 | SAL | IPV | L-2608-18 | 180 | S | S | S | S | S | S | S | N | N | M8 |
-| 19 | AJU | HEPB | L-2608-19 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | BCG | L-2608-20 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 21 | SAL | SPR | L-2608-21 | 150 | S | S | N | S | S | S | S | S | N | M3 |
-| 22 | DEV | ROTA | L-2608-22 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | PENT | L-2608-23 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 24 | TRA | SPR | L-2608-24 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 25 | ING | SPR | L-2608-25 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 26 | AJU | SPR | L-2608-26 | 240 | N | S | S | S | S | S | S | S | N | M1 |
-| 27 | DEV | ROTA | L-2608-27 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 28 | TRA | DTA | L-2608-28 | 100 | S | S | S | S | S | S | S | N | N | M8 |
-| 29 | TRA | PENT | L-2608-29 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 30 | TRA | IPV | L-2608-30 | 120 | S | S | S | S | N | S | S | S | N | M5 |
-| 31 | ING | INFL | L-2608-31 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 32 | SAL | BCG | L-2608-32 | 200 | S | S | S | N | S | S | S | S | N | M4 |
-| 33 | ING | IPV | L-2608-33 | 300 | S | S | S | N | S | S | S | S | N | M4 |
-| 34 | TRA | HEPB | L-2608-34 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | DTA | L-2608-35 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 36 | TRA | PENT | L-2608-36 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | PENT | L-2608-37 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 38 | AJU | HEPB | L-2608-38 | 80 | S | S | S | N | S | S | S | S | N | M4 |
-| 39 | AJU | NEUM | L-2608-39 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 40 | DEV | SPR | L-2608-40 | 120 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-07 · Pretest (proceso manual)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 13/08/2026 | 4160 | BCG | 30 | 30 | 0 | No aplica | Sí |
-| 2 | 13/08/2026 | 4160 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 3 | 13/08/2026 | 4160 | PENT | 100 | 90 | -10 | Sí | No |
-| 4 | 13/08/2026 | 4160 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 5 | 13/08/2026 | 4160 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 6 | 13/08/2026 | 4160 | BCG | 30 | 25 | -5 | Sí | No |
-| 7 | 13/08/2026 | 4160 | VARI | 60 | 50 | -10 | Sí | No |
-| 8 | 13/08/2026 | 4160 | VARI | 40 | 40 | 0 | No aplica | Sí |
-| 9 | 13/08/2026 | 4160 | NEUM | 60 | 55 | -5 | Sí | No |
-| 10 | 13/08/2026 | 4160 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 11 | 13/08/2026 | 4160 | HEPB | 40 | 40 | 0 | No aplica | Sí |
-| 12 | 13/08/2026 | 4160 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 13 | 13/08/2026 | 4160 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 14 | 13/08/2026 | 4160 | VARI | 80 | 85 | 5 | Sí | No |
-| 15 | 13/08/2026 | 4160 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 16 | 13/08/2026 | 4160 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 17 | 13/08/2026 | 4160 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 18 | 13/08/2026 | 4160 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 13/08/2026 | 4160 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 20 | 13/08/2026 | 4160 | HEPB | 40 | 40 | 0 | No aplica | Sí |
-| 21 | 13/08/2026 | 4160 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 22 | 13/08/2026 | 4160 | DTA | 20 | 20 | 0 | No aplica | Sí |
-| 23 | 13/08/2026 | 4160 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 13/08/2026 | 4160 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 25 | 13/08/2026 | 4160 | IPV | 150 | 150 | 0 | No aplica | Sí |
-
-Cierre: 20 entregas concordantes ÷ 25 × 100 = **80.00 %**.
-
----
-
-### Bloque 14 · TRAB-07 · Postest (Sistema SIVAC) · 15/10/2026
-
-Documentos auditados: 40 · Conformes: 37 · RSD: 92.50 % · Entregas conciliadas: 25 · Concordantes: 21 · CPE: 84.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | TRA | DTA | L-2610-01 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 2 | SAL | PENT | L-2610-02 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 3 | DEV | IPV | L-2610-03 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 4 | ING | BCG | L-2610-04 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 5 | ING | DTA | L-2610-05 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 6 | ING | IPV | L-2610-06 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 7 | DEV | DTA | L-2610-07 | 80 | S | S | S | S | S | N | S | S | N | M6 |
-| 8 | AJU | ROTA | L-2610-08 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 9 | ING | VARI | L-2610-09 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 10 | SAL | NEUM | L-2610-10 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 11 | TRA | ROTA | L-2610-11 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 12 | TRA | HEPB | L-2610-12 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 13 | AJU | INFL | L-2610-13 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 14 | TRA | IPV | L-2610-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | TRA | ROTA | L-2610-15 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 16 | AJU | INFL | L-2610-16 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | HEPB | L-2610-17 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 18 | AJU | ROTA | L-2610-18 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 19 | ING | PENT | L-2610-19 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 20 | TRA | INFL | L-2610-20 | 40 | N | S | S | S | S | S | S | S | N | M1 |
-| 21 | TRA | BCG | L-2610-21 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 22 | ING | ROTA | L-2610-22 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 23 | ING | VARI | L-2610-23 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | VARI | L-2610-24 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | IPV | L-2610-25 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 26 | AJU | PENT | L-2610-26 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | ROTA | L-2610-27 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 28 | ING | HEPB | L-2610-28 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 29 | TRA | IPV | L-2610-29 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 30 | AJU | BCG | L-2610-30 | 120 | S | S | S | N | S | S | S | S | N | M4 |
-| 31 | ING | NEUM | L-2610-31 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 32 | ING | SPR | L-2610-32 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 33 | SAL | INFL | L-2610-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | TRA | IPV | L-2610-34 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 35 | ING | BCG | L-2610-35 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 36 | TRA | SPR | L-2610-36 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | INFL | L-2610-37 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 38 | SAL | DTA | L-2610-38 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 39 | AJU | SPR | L-2610-39 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | SPR | L-2610-40 | 240 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-07 · Postest (Sistema SIVAC)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 15/10/2026 | 4160 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 2 | 15/10/2026 | 4160 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 3 | 15/10/2026 | 4160 | BCG | 60 | 40 | -20 | Sí | No |
-| 4 | 15/10/2026 | 4160 | DTA | 20 | 30 | 10 | Sí | No |
-| 5 | 15/10/2026 | 4160 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 6 | 15/10/2026 | 4160 | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 7 | 15/10/2026 | 4160 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 8 | 15/10/2026 | 4160 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 15/10/2026 | 4160 | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 15/10/2026 | 4160 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 11 | 15/10/2026 | 4160 | IPV | 80 | 90 | 10 | Sí | No |
-| 12 | 15/10/2026 | 4160 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 15/10/2026 | 4160 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 14 | 15/10/2026 | 4160 | PENT | 100 | 110 | 10 | Sí | No |
-| 15 | 15/10/2026 | 4160 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 16 | 15/10/2026 | 4160 | ROTA | 120 | 120 | 0 | No aplica | Sí |
-| 17 | 15/10/2026 | 4160 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 18 | 15/10/2026 | 4160 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 19 | 15/10/2026 | 4160 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 20 | 15/10/2026 | 4160 | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 15/10/2026 | 4160 | SPR | 120 | 120 | 0 | No aplica | Sí |
-| 22 | 15/10/2026 | 4160 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 23 | 15/10/2026 | 4160 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 24 | 15/10/2026 | 4160 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 25 | 15/10/2026 | 4160 | SPR | 40 | 40 | 0 | No aplica | Sí |
-
-Cierre: 21 entregas concordantes ÷ 25 × 100 = **84.00 %**.
-
----
-
-### Bloque 15 · TRAB-08 · Pretest (proceso manual) · 13/08/2026
-
-Documentos auditados: 40 · Conformes: 28 · RSD: 70.00 % · Entregas conciliadas: 25 · Concordantes: 17 · CPE: 68.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | TRA | PENT | L-2608-01 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | PENT | L-2608-02 | 150 | S | S | S | S | N | S | S | S | N | M5 |
-| 3 | AJU | HEPB | L-2608-03 | 150 | S | S | S | S | N | S | S | S | N | M5 |
-| 4 | TRA | HEPB | L-2608-04 | 150 | S | S | S | S | S | S | S | N | N | M8 |
-| 5 | ING | BCG | L-2608-05 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 6 | TRA | DTA | L-2608-06 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 7 | TRA | PENT | L-2608-07 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 8 | TRA | PENT | L-2608-08 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | SPR | L-2608-09 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 10 | SAL | NEUM | L-2608-10 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 11 | ING | VARI | L-2608-11 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 12 | DEV | HEPB | L-2608-12 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 13 | ING | IPV | L-2608-13 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 14 | TRA | PENT | L-2608-14 | 20 | N | S | S | S | S | S | S | S | N | M1 |
-| 15 | ING | BCG | L-2608-15 | 60 | S | S | N | S | S | S | S | S | N | M3 |
-| 16 | DEV | DTA | L-2608-16 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 17 | DEV | BCG | L-2608-17 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 18 | SAL | PENT | L-2608-18 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 19 | SAL | HEPB | L-2608-19 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | IPV | L-2608-20 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 21 | TRA | VARI | L-2608-21 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 22 | TRA | BCG | L-2608-22 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 23 | TRA | SPR | L-2608-23 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | ROTA | L-2608-24 | 200 | S | S | S | S | S | S | S | N | N | M8 |
-| 25 | ING | NEUM | L-2608-25 | 80 | N | S | S | S | S | S | S | S | N | M1 |
-| 26 | SAL | BCG | L-2608-26 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | DTA | L-2608-27 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 28 | ING | DTA | L-2608-28 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 29 | AJU | SPR | L-2608-29 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 30 | SAL | SPR | L-2608-30 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 31 | ING | ROTA | L-2608-31 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 32 | TRA | NEUM | L-2608-32 | 150 | S | S | S | S | S | N | S | S | N | M6 |
-| 33 | AJU | ROTA | L-2608-33 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 34 | TRA | BCG | L-2608-34 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 35 | ING | BCG | L-2608-35 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 36 | SAL | HEPB | L-2608-36 | 40 | S | S | N | S | S | S | S | S | N | M3 |
-| 37 | SAL | IPV | L-2608-37 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 38 | TRA | BCG | L-2608-38 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 39 | DEV | INFL | L-2608-39 | 240 | S | S | S | S | S | S | S | N | N | M8 |
-| 40 | TRA | IPV | L-2608-40 | 80 | S | S | S | S | S | N | S | S | N | M6 |
-
-**Entregas conciliadas — TRAB-08 · Pretest (proceso manual)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 13/08/2026 | 4162 | INFL | 100 | 100 | 0 | No aplica | Sí |
-| 2 | 13/08/2026 | 4162 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 3 | 13/08/2026 | 4162 | INFL | 100 | 120 | 20 | Sí | No |
-| 4 | 13/08/2026 | 4162 | VARI | 60 | 60 | 0 | No aplica | Sí |
-| 5 | 13/08/2026 | 4162 | NEUM | 100 | 100 | 0 | No aplica | Sí |
-| 6 | 13/08/2026 | 4162 | HEPB | 200 | 220 | 20 | Sí | No |
-| 7 | 13/08/2026 | 4162 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 8 | 13/08/2026 | 4162 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 9 | 13/08/2026 | 4162 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 10 | 13/08/2026 | 4162 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 11 | 13/08/2026 | 4162 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 12 | 13/08/2026 | 4162 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 13 | 13/08/2026 | 4162 | BCG | 30 | 30 | 0 | No aplica | Sí |
-| 14 | 13/08/2026 | 4162 | ROTA | 100 | 90 | -10 | Sí | No |
-| 15 | 13/08/2026 | 4162 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 16 | 13/08/2026 | 4162 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 17 | 13/08/2026 | 4162 | NEUM | 100 | 100 | 0 | No aplica | Sí |
-| 18 | 13/08/2026 | 4162 | IPV | 60 | 55 | -5 | Sí | No |
-| 19 | 13/08/2026 | 4162 | PENT | 180 | 200 | 20 | Sí | No |
-| 20 | 13/08/2026 | 4162 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 21 | 13/08/2026 | 4162 | DTA | 50 | 30 | -20 | Sí | No |
-| 22 | 13/08/2026 | 4162 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 23 | 13/08/2026 | 4162 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 24 | 13/08/2026 | 4162 | PENT | 40 | 60 | 20 | Sí | No |
-| 25 | 13/08/2026 | 4162 | SPR | 60 | 55 | -5 | Sí | No |
+| 1 | 07/08/2026 | 4195 | NEUM | 80 | 70 | -10 | GR-4195-2012 | No |
+| 2 | 17/07/2026 | 4195 | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 3 | 23/07/2026 | 4195 | DTA | 120 | 110 | -10 | Sin guía | No |
+| 4 | 28/07/2026 | 4195 | INFL | 80 | 85 | 5 | Sin guía | No |
+| 5 | 16/07/2026 | 4195 | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 6 | 10/08/2026 | 4195 | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 7 | 05/08/2026 | 4195 | SPR | 60 | 55 | -5 | Sin guía | No |
+| 8 | 06/08/2026 | 4195 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 9 | 12/08/2026 | 4195 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 10 | 07/08/2026 | 4195 | NEUM | 180 | 175 | -5 | Sin guía | No |
+| 11 | 07/08/2026 | 4195 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 12 | 27/07/2026 | 4195 | IPV | 120 | 120 | 0 | No aplica | Sí |
+| 13 | 28/07/2026 | 4195 | SPR | 50 | 50 | 0 | No aplica | Sí |
+| 14 | 25/07/2026 | 4195 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 15 | 02/08/2026 | 4195 | HEPB | 120 | 120 | 0 | No aplica | Sí |
+| 16 | 20/07/2026 | 4195 | VARI | 20 | 20 | 0 | No aplica | Sí |
+| 17 | 15/07/2026 | 4195 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 18 | 18/07/2026 | 4195 | INFL | 120 | 120 | 0 | No aplica | Sí |
+| 19 | 07/08/2026 | 4195 | PENT | 150 | 140 | -10 | GR-4195-3834 | No |
+| 20 | 12/08/2026 | 4195 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 21 | 18/07/2026 | 4195 | VARI | 30 | 30 | 0 | No aplica | Sí |
+| 22 | 09/08/2026 | 4195 | BCG | 40 | 35 | -5 | GR-4195-3566 | No |
+| 23 | 22/07/2026 | 4195 | BCG | 180 | 180 | 0 | No aplica | Sí |
+| 24 | 19/07/2026 | 4195 | VARI | 180 | 180 | 0 | No aplica | Sí |
+| 25 | 30/07/2026 | 4195 | DTA | 200 | 190 | -10 | Sin guía | No |
 
 Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
 
 ---
 
-### Bloque 16 · TRAB-08 · Postest (Sistema SIVAC) · 15/10/2026
+### Bloque 12 · TRAB-06 · Postest (Sistema SIVAC) · 14/10/2026
 
-Documentos auditados: 40 · Conformes: 35 · RSD: 87.50 % · Entregas conciliadas: 25 · Concordantes: 22 · CPE: 88.00 %
+Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | AJU | INFL | L-2610-01 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 2 | SAL | PENT | L-2610-02 | 180 | S | S | S | S | S | S | N | S | N | M7 |
-| 3 | TRA | NEUM | L-2610-03 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 4 | DEV | ROTA | L-2610-04 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | INFL | L-2610-05 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 6 | AJU | NEUM | L-2610-06 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 7 | AJU | NEUM | L-2610-07 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 8 | AJU | ROTA | L-2610-08 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 9 | ING | HEPB | L-2610-09 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 10 | SAL | SPR | L-2610-10 | 200 | N | S | S | S | S | S | S | S | N | M1 |
-| 11 | TRA | PENT | L-2610-11 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 12 | SAL | SPR | L-2610-12 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 13 | SAL | PENT | L-2610-13 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | HEPB | L-2610-14 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 15 | TRA | DTA | L-2610-15 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 16 | SAL | INFL | L-2610-16 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | VARI | L-2610-17 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 18 | SAL | SPR | L-2610-18 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | DTA | L-2610-19 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 20 | TRA | SPR | L-2610-20 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 21 | ING | ROTA | L-2610-21 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 22 | ING | IPV | L-2610-22 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | HEPB | L-2610-23 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 24 | ING | PENT | L-2610-24 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 25 | DEV | ROTA | L-2610-25 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 26 | ING | VARI | L-2610-26 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 27 | DEV | VARI | L-2610-27 | 300 | S | S | S | S | S | S | N | S | N | M7 |
-| 28 | SAL | VARI | L-2610-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | AJU | DTA | L-2610-29 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 30 | TRA | VARI | L-2610-30 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 31 | AJU | SPR | L-2610-31 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 32 | DEV | DTA | L-2610-32 | 150 | S | S | N | S | S | S | S | S | N | M3 |
-| 33 | SAL | BCG | L-2610-33 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 34 | DEV | IPV | L-2610-34 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 35 | SAL | HEPB | L-2610-35 | 60 | S | S | S | S | N | S | S | S | N | M5 |
-| 36 | ING | PENT | L-2610-36 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 37 | ING | NEUM | L-2610-37 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 38 | ING | BCG | L-2610-38 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 39 | TRA | DTA | L-2610-39 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 40 | SAL | PENT | L-2610-40 | 80 | S | S | S | S | S | S | S | S | S | — |
+| 1 | TRA | PENT | PENT-2606-251M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 2 | DEV | BCG | BCG-2606-808K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | BCG | BCG-2606-808K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 4 | TRA | HEPB | HEPB-2509-474M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | INFL | INFL-2603-792B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 6 | DEV | BCG | BCG-2606-296K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 7 | SAL | PENT | PENT-2606-391A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 8 | ING | INFL | INFL-2607-737M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 9 | TRA | DTA | DTA-2602-236K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 10 | TRA | IPV | IPV-2605-698M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | ROTA | ROTA-2502-563B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 12 | TRA | DTA | DTA-2505-409K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 13 | TRA | VARI | VARI-2508-818M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | BCG | BCG-2507-694K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 15 | ING | IPV | IPV-2605-698M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | ROTA | ROTA-2507-417A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | PENT | PENT-2504-482M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | NEUM | NEUM-2507-181K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | ROTA | ROTA-2602-464A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | IPV | IPV-2608-446B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 21 | DEV | IPV | IPV-2503-662B | 240 | S | S | S | S | N | N | S | S | N | M5+M6 |
+| 22 | SAL | IPV | IPV-2507-805M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 23 | SAL | IPV | IPV-2605-698M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 24 | TRA | NEUM | NEUM-2505-638K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | HEPB | HEPB-2603-786K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | ROTA | ROTA-2602-464A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | SPR | SPR-2606-500M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 28 | SAL | BCG | BCG-2607-654A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 29 | AJU | PENT | PENT-2606-251M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | VARI | VARI-2607-979A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 31 | ING | PENT | PENT-2508-232M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 32 | TRA | IPV | IPV-2605-698M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 33 | TRA | SPR | SPR-2603-471K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 34 | ING | HEPB | HEPB-2609-917M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 35 | DEV | IPV | IPV-2608-446B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 36 | ING | NEUM | NEUM-2505-688A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | DTA | DTA-2603-463K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | INFL | INFL-2604-777M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 39 | DEV | IPV | IPV-2507-805M | 40 | S | S | N | S | S | S | S | S | N | M3 |
+| 40 | TRA | HEPB | HEPB-2603-786K | 150 | S | S | S | S | S | S | S | S | S | — |
+
+**Entregas conciliadas — TRAB-06 · Postest (Sistema SIVAC)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 09/10/2026 | 4195 | NEUM | 40 | 40 | 0 | No aplica | Sí |
+| 2 | 03/10/2026 | 4195 | IPV | 200 | 200 | 0 | No aplica | Sí |
+| 3 | 28/09/2026 | 4195 | IPV | 200 | 200 | 0 | No aplica | Sí |
+| 4 | 19/09/2026 | 4195 | IPV | 60 | 55 | -5 | GR-4195-4224 | No |
+| 5 | 18/09/2026 | 4195 | ROTA | 60 | 60 | 0 | No aplica | Sí |
+| 6 | 06/10/2026 | 4195 | VARI | 30 | 30 | 0 | No aplica | Sí |
+| 7 | 19/09/2026 | 4195 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 8 | 09/10/2026 | 4195 | INFL | 100 | 100 | 0 | No aplica | Sí |
+| 9 | 29/09/2026 | 4195 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 10 | 03/10/2026 | 4195 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 11 | 16/09/2026 | 4195 | VARI | 180 | 180 | 0 | No aplica | Sí |
+| 12 | 05/10/2026 | 4195 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 13 | 25/09/2026 | 4195 | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 14 | 20/09/2026 | 4195 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 15 | 14/10/2026 | 4195 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 16 | 09/10/2026 | 4195 | PENT | 50 | 50 | 0 | No aplica | Sí |
+| 17 | 17/09/2026 | 4195 | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 18 | 04/10/2026 | 4195 | IPV | 50 | 50 | 0 | No aplica | Sí |
+| 19 | 30/09/2026 | 4195 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 20 | 22/09/2026 | 4195 | INFL | 40 | 40 | 0 | No aplica | Sí |
+| 21 | 04/10/2026 | 4195 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 22 | 28/09/2026 | 4195 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 23 | 14/10/2026 | 4195 | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 24 | 27/09/2026 | 4195 | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 25 | 13/10/2026 | 4195 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
+
+---
+
+### Bloque 13 · TRAB-07 · Pretest (proceso manual) · 13/08/2026
+
+Documentos auditados: 40 · Conformes: 21 · RSD: 52.50 % · Entregas conciliadas: 25 · Concordantes: 14 · CPE: 56.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | ING | NEUM | NEUM-2509-952A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | DTA | DTA-2602-236K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 3 | TRA | HEPB | HEPB-2609-521M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 4 | DEV | VARI | VARI-2509-637K | 200 | S | S | S | S | S | S | N | S | N | M7 |
+| 5 | SAL | PENT | PENT-2508-232M | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 6 | SAL | IPV | IPV-2504-587B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 7 | SAL | SPR | SPR-2608-539M | 100 | S | N | S | S | S | S | S | N | N | M2+M8 |
+| 8 | AJU | NEUM | NEUM-2506-884B | 40 | S | S | S | S | S | N | S | S | N | M6 |
+| 9 | ING | BCG | BCG-2507-694K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | SPR | SPR-2608-539M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 11 | TRA | IPV | IPV-2504-587B | 50 | S | S | N | S | S | S | S | S | N | M3 |
+| 12 | AJU | PENT | PENT-2606-251M | 50 | S | S | S | S | S | N | S | S | N | M6 |
+| 13 | SAL | PENT | PENT-2605-322M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | HEPB | HEPB-2609-917M | 180 | S | S | N | S | S | S | S | S | N | M3 |
+| 15 | SAL | PENT | PENT-2508-232M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | HEPB | HEPB-2609-521M | 120 | S | S | S | S | S | S | S | N | N | M8 |
+| 17 | SAL | DTA | DTA-2603-463K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 18 | DEV | SPR | SPR-2609-423M | 120 | S | N | S | S | S | S | S | S | N | M2 |
+| 19 | ING | PENT | PENT-2508-232M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | PENT | PENT-2508-232M | 80 | N | S | S | S | S | S | S | S | N | M1 |
+| 21 | SAL | NEUM | NEUM-2505-688A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 22 | DEV | INFL | INFL-2603-792B | 20 | S | S | S | S | S | N | S | S | N | M6 |
+| 23 | SAL | HEPB | HEPB-2609-521M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 24 | SAL | NEUM | NEUM-2505-688A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 25 | ING | SPR | SPR-2603-471K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | NEUM | NEUM-2505-688A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 27 | TRA | ROTA | ROTA-2507-417A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 28 | DEV | IPV | IPV-2504-587B | 120 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | BCG | BCG-2606-808K | 20 | S | S | N | N | S | S | S | S | N | M3+M4 |
+| 30 | SAL | HEPB | HEPB-2609-521M | 50 | S | S | S | S | S | S | S | N | N | M8 |
+| 31 | TRA | DTA | DTA-2602-236K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 32 | DEV | IPV | IPV-2507-805M | 40 | S | S | S | S | S | S | N | S | N | M7 |
+| 33 | TRA | IPV | IPV-2504-587B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | DTA | DTA-2602-236K | 150 | S | S | S | S | S | N | S | S | N | M6 |
+| 35 | DEV | VARI | VARI-2501-250M | 20 | S | N | S | N | S | S | S | S | N | M2+M4 |
+| 36 | ING | PENT | PENT-2508-232M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 37 | ING | DTA | DTA-2505-409K | 120 | S | S | S | S | S | S | N | S | N | M7 |
+| 38 | ING | BCG | BCG-2606-808K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 39 | DEV | PENT | PENT-2504-482M | 50 | S | S | S | S | S | S | S | N | N | M8 |
+| 40 | ING | IPV | IPV-2608-446B | 180 | S | S | N | S | S | S | N | S | N | M3+M7 |
+
+**Entregas conciliadas — TRAB-07 · Pretest (proceso manual)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 30/07/2026 | 4167-SJ | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 2 | 23/07/2026 | 4167-SJ | BCG | 150 | 145 | -5 | GR-4167SJ-8716 | No |
+| 3 | 27/07/2026 | 4167-SJ | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 4 | 04/08/2026 | 4167-SJ | INFL | 120 | 115 | -5 | GR-4167SJ-8022 | No |
+| 5 | 09/08/2026 | 4167-SJ | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 6 | 10/08/2026 | 4167-SJ | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 31/07/2026 | 4167-SJ | SPR | 100 | 100 | 0 | No aplica | Sí |
+| 8 | 31/07/2026 | 4167-SJ | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 9 | 31/07/2026 | 4167-SJ | INFL | 180 | 185 | 5 | Sin guía | No |
+| 10 | 08/08/2026 | 4167-SJ | INFL | 180 | 170 | -10 | Sin guía | No |
+| 11 | 26/07/2026 | 4167-SJ | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 12 | 02/08/2026 | 4167-SJ | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 13 | 13/08/2026 | 4167-SJ | VARI | 150 | 150 | 0 | No aplica | Sí |
+| 14 | 18/07/2026 | 4167-SJ | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 15 | 27/07/2026 | 4167-SJ | PENT | 50 | 40 | -10 | GR-4167SJ-9794 | No |
+| 16 | 26/07/2026 | 4167-SJ | INFL | 50 | 55 | 5 | GR-4167SJ-3790 | No |
+| 17 | 11/08/2026 | 4167-SJ | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 18 | 27/07/2026 | 4167-SJ | PENT | 180 | 175 | -5 | Sin guía | No |
+| 19 | 10/08/2026 | 4167-SJ | HEPB | 30 | 25 | -5 | GR-4167SJ-5622 | No |
+| 20 | 05/08/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 21 | 29/07/2026 | 4167-SJ | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 22 | 25/07/2026 | 4167-SJ | DTA | 40 | 35 | -5 | GR-4167SJ-6281 | No |
+| 23 | 30/07/2026 | 4167-SJ | SPR | 150 | 155 | 5 | GR-4167SJ-6810 | No |
+| 24 | 19/07/2026 | 4167-SJ | DTA | 200 | 220 | 20 | GR-4167SJ-6169 | No |
+| 25 | 25/07/2026 | 4167-SJ | HEPB | 150 | 150 | 0 | No aplica | Sí |
+
+Cierre: 14 entregas concordantes ÷ 25 × 100 = **56.00 %**.
+
+---
+
+### Bloque 14 · TRAB-07 · Postest (Sistema SIVAC) · 15/10/2026
+
+Documentos auditados: 40 · Conformes: 40 · RSD: 100.00 % · Entregas conciliadas: 25 · Concordantes: 23 · CPE: 92.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | SAL | HEPB | HEPB-2602-318M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 2 | TRA | IPV | IPV-2605-698M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 3 | TRA | HEPB | HEPB-2602-318M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | HEPB | HEPB-2609-521M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | PENT | PENT-2508-232M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | VARI | VARI-2503-521A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 7 | DEV | PENT | PENT-2508-232M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | DTA | DTA-2505-409K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 9 | ING | HEPB | HEPB-2603-786K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | INFL | INFL-2603-792B | 60 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | BCG | BCG-2504-789B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 12 | TRA | DTA | DTA-2602-236K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | VARI | VARI-2503-521A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | SPR | SPR-2608-539M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | PENT | PENT-2606-251M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | DTA | DTA-2603-463K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 17 | TRA | BCG | BCG-2607-654A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | NEUM | NEUM-2505-638K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 19 | ING | HEPB | HEPB-2602-318M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | INFL | INFL-2607-737M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 21 | SAL | HEPB | HEPB-2609-521M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 22 | ING | NEUM | NEUM-2505-688A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | ROTA | ROTA-2605-833M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 24 | TRA | DTA | DTA-2602-797A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 25 | ING | INFL | INFL-2504-261K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | DTA | DTA-2602-236K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 27 | AJU | SPR | SPR-2608-539M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 28 | TRA | NEUM | NEUM-2505-638K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 29 | AJU | PENT | PENT-2606-391A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 30 | ING | DTA | DTA-2603-463K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 31 | ING | VARI | VARI-2508-818M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | HEPB | HEPB-2509-474M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 33 | TRA | PENT | PENT-2606-391A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | HEPB | HEPB-2609-917M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 35 | TRA | INFL | INFL-2604-777M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 36 | ING | IPV | IPV-2507-805M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 37 | TRA | INFL | INFL-2604-777M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | INFL | INFL-2604-777M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | PENT | PENT-2605-322M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | DTA | DTA-2602-797A | 60 | S | S | S | S | S | S | S | S | S | — |
+
+**Entregas conciliadas — TRAB-07 · Postest (Sistema SIVAC)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 05/10/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 2 | 15/10/2026 | 4167-SJ | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 3 | 20/09/2026 | 4167-SJ | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 4 | 18/09/2026 | 4167-SJ | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 5 | 30/09/2026 | 4167-SJ | VARI | 150 | 150 | 0 | No aplica | Sí |
+| 6 | 19/09/2026 | 4167-SJ | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 01/10/2026 | 4167-SJ | IPV | 50 | 50 | 0 | No aplica | Sí |
+| 8 | 19/09/2026 | 4167-SJ | SPR | 60 | 60 | 0 | No aplica | Sí |
+| 9 | 22/09/2026 | 4167-SJ | BCG | 80 | 80 | 0 | No aplica | Sí |
+| 10 | 23/09/2026 | 4167-SJ | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 11 | 25/09/2026 | 4167-SJ | BCG | 180 | 180 | 0 | No aplica | Sí |
+| 12 | 25/09/2026 | 4167-SJ | VARI | 50 | 55 | 5 | Sin guía | No |
+| 13 | 05/10/2026 | 4167-SJ | BCG | 150 | 150 | 0 | No aplica | Sí |
+| 14 | 21/09/2026 | 4167-SJ | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 15 | 07/10/2026 | 4167-SJ | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 16 | 23/09/2026 | 4167-SJ | NEUM | 100 | 100 | 0 | No aplica | Sí |
+| 17 | 01/10/2026 | 4167-SJ | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 18 | 27/09/2026 | 4167-SJ | VARI | 150 | 150 | 0 | No aplica | Sí |
+| 19 | 12/10/2026 | 4167-SJ | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 20 | 12/10/2026 | 4167-SJ | HEPB | 150 | 150 | 0 | No aplica | Sí |
+| 21 | 30/09/2026 | 4167-SJ | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 22 | 06/10/2026 | 4167-SJ | SPR | 50 | 55 | 5 | GR-4167SJ-5135 | No |
+| 23 | 25/09/2026 | 4167-SJ | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 24 | 20/09/2026 | 4167-SJ | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 25 | 26/09/2026 | 4167-SJ | INFL | 200 | 200 | 0 | No aplica | Sí |
+
+Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
+
+---
+
+### Bloque 15 · TRAB-08 · Pretest (proceso manual) · 13/08/2026
+
+Documentos auditados: 40 · Conformes: 30 · RSD: 75.00 % · Entregas conciliadas: 25 · Concordantes: 20 · CPE: 80.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | ING | HEPB | HEPB-2609-917M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | DTA | DTA-2505-409K | 120 | S | S | S | S | N | S | S | S | N | M5 |
+| 3 | TRA | PENT | PENT-2508-232M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 4 | ING | IPV | IPV-2503-662B | 30 | S | N | S | S | S | S | S | S | N | M2 |
+| 5 | SAL | BCG | BCG-2504-789B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | BCG | BCG-2607-654A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | SPR | SPR-2603-471K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 8 | ING | ROTA | ROTA-2603-156K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 9 | ING | NEUM | NEUM-2507-181K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 10 | ING | IPV | IPV-2605-698M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 11 | DEV | INFL | INFL-2607-737M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 12 | ING | IPV | IPV-2605-698M | 30 | S | N | S | S | S | N | S | S | N | M2+M6 |
+| 13 | SAL | NEUM | NEUM-2507-181K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | VARI | VARI-2503-521A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | BCG | BCG-2607-654A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 16 | DEV | HEPB | HEPB-2603-786K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 17 | SAL | DTA | DTA-2505-409K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | IPV | IPV-2503-662B | 300 | S | S | S | S | S | N | S | S | N | M6 |
+| 19 | AJU | BCG | BCG-2606-808K | 120 | S | S | S | S | N | S | S | S | N | M5 |
+| 20 | ING | INFL | INFL-2603-792B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 21 | SAL | INFL | INFL-2607-737M | 50 | S | S | S | S | N | N | S | S | N | M5+M6 |
+| 22 | TRA | NEUM | NEUM-2505-638K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 23 | SAL | INFL | INFL-2504-261K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 24 | TRA | SPR | SPR-2603-471K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 25 | AJU | VARI | VARI-2501-250M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | NEUM | NEUM-2505-638K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | PENT | PENT-2606-251M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | HEPB | HEPB-2509-474M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 29 | TRA | IPV | IPV-2503-662B | 180 | S | S | S | S | S | N | S | S | N | M6 |
+| 30 | SAL | HEPB | HEPB-2603-786K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | INFL | INFL-2508-359M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 32 | ING | SPR | SPR-2504-185M | 30 | S | S | S | S | S | N | S | S | N | M6 |
+| 33 | SAL | SPR | SPR-2603-471K | 80 | S | S | S | S | S | N | S | S | N | M6 |
+| 34 | TRA | VARI | VARI-2503-521A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 35 | ING | VARI | VARI-2509-637K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 36 | SAL | NEUM | NEUM-2506-884B | 80 | S | S | S | S | S | N | S | S | N | M6 |
+| 37 | SAL | SPR | SPR-2609-423M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | HEPB | HEPB-2509-474M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | BCG | BCG-2507-694K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | SPR | SPR-2609-423M | 180 | S | S | S | S | S | S | S | S | S | — |
+
+**Entregas conciliadas — TRAB-08 · Pretest (proceso manual)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 26/07/2026 | 4158 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 2 | 26/07/2026 | 4158 | INFL | 120 | 120 | 0 | No aplica | Sí |
+| 3 | 27/07/2026 | 4158 | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 4 | 11/08/2026 | 4158 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 5 | 03/08/2026 | 4158 | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 6 | 13/08/2026 | 4158 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 03/08/2026 | 4158 | HEPB | 100 | 120 | 20 | GR-4158-5440 | No |
+| 8 | 01/08/2026 | 4158 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 9 | 11/08/2026 | 4158 | IPV | 150 | 150 | 0 | No aplica | Sí |
+| 10 | 26/07/2026 | 4158 | DTA | 30 | 30 | 0 | No aplica | Sí |
+| 11 | 11/08/2026 | 4158 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 12 | 30/07/2026 | 4158 | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 13 | 24/07/2026 | 4158 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+| 14 | 31/07/2026 | 4158 | DTA | 120 | 120 | 0 | No aplica | Sí |
+| 15 | 27/07/2026 | 4158 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 16 | 04/08/2026 | 4158 | INFL | 30 | 25 | -5 | Sin guía | No |
+| 17 | 09/08/2026 | 4158 | IPV | 80 | 75 | -5 | GR-4158-5530 | No |
+| 18 | 25/07/2026 | 4158 | NEUM | 50 | 50 | 0 | No aplica | Sí |
+| 19 | 01/08/2026 | 4158 | INFL | 120 | 110 | -10 | GR-4158-3719 | No |
+| 20 | 30/07/2026 | 4158 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 23/07/2026 | 4158 | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 22 | 09/08/2026 | 4158 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 23 | 19/07/2026 | 4158 | SPR | 150 | 150 | 0 | No aplica | Sí |
+| 24 | 21/07/2026 | 4158 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 25 | 11/08/2026 | 4158 | PENT | 180 | 170 | -10 | GR-4158-3238 | No |
+
+Cierre: 20 entregas concordantes ÷ 25 × 100 = **80.00 %**.
+
+---
+
+### Bloque 16 · TRAB-08 · Postest (Sistema SIVAC) · 15/10/2026
+
+Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | DEV | DTA | DTA-2505-409K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 2 | TRA | NEUM | NEUM-2505-638K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | IPV | IPV-2504-587B | 100 | S | S | S | S | S | S | S | S | S | — |
+| 4 | AJU | PENT | PENT-2504-482M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 5 | AJU | DTA | DTA-2602-236K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 6 | TRA | INFL | INFL-2508-359M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 7 | AJU | ROTA | ROTA-2602-464A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 8 | DEV | VARI | VARI-2503-521A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | IPV | IPV-2503-662B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | BCG | BCG-2606-808K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | IPV | IPV-2605-698M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 12 | DEV | SPR | SPR-2609-423M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 13 | AJU | ROTA | ROTA-2602-464A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 14 | AJU | IPV | IPV-2608-446B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | BCG | BCG-2606-296K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | INFL | INFL-2607-737M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 17 | AJU | INFL | INFL-2603-792B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | VARI | VARI-2508-818M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | DTA | DTA-2603-463K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 20 | DEV | NEUM | NEUM-2506-884B | 40 | S | S | S | S | S | N | N | S | N | M6+M7 |
+| 21 | SAL | VARI | VARI-2508-818M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 22 | AJU | VARI | VARI-2607-979A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | HEPB | HEPB-2603-786K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 24 | DEV | BCG | BCG-2606-296K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | VARI | VARI-2607-979A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | INFL | INFL-2604-777M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 27 | ING | DTA | DTA-2602-797A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 28 | AJU | VARI | VARI-2503-521A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 29 | ING | NEUM | NEUM-2509-952A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 30 | DEV | BCG | BCG-2606-296K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | BCG | BCG-2606-296K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | HEPB | HEPB-2509-474M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 33 | ING | VARI | VARI-2508-818M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 34 | ING | HEPB | HEPB-2603-786K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 35 | SAL | NEUM | NEUM-2507-181K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 36 | SAL | PENT | PENT-2508-232M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | BCG | BCG-2504-789B | 60 | S | S | S | S | S | S | S | S | S | — |
+| 38 | DEV | SPR | SPR-2608-539M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 39 | TRA | VARI | VARI-2501-250M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | SPR | SPR-2609-423M | 300 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-08 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 15/10/2026 | 4162 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 2 | 15/10/2026 | 4162 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 3 | 15/10/2026 | 4162 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 4 | 15/10/2026 | 4162 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 5 | 15/10/2026 | 4162 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 15/10/2026 | 4162 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 7 | 15/10/2026 | 4162 | PENT | 120 | 140 | 20 | Sí | No |
-| 8 | 15/10/2026 | 4162 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 9 | 15/10/2026 | 4162 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 10 | 15/10/2026 | 4162 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 11 | 15/10/2026 | 4162 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 15/10/2026 | 4162 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 13 | 15/10/2026 | 4162 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 15/10/2026 | 4162 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 15 | 15/10/2026 | 4162 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 16 | 15/10/2026 | 4162 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 17 | 15/10/2026 | 4162 | NEUM | 40 | 50 | 10 | Sí | No |
-| 18 | 15/10/2026 | 4162 | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 19 | 15/10/2026 | 4162 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 20 | 15/10/2026 | 4162 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 21 | 15/10/2026 | 4162 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 22 | 15/10/2026 | 4162 | HEPB | 50 | 45 | -5 | Sí | No |
-| 23 | 15/10/2026 | 4162 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 24 | 15/10/2026 | 4162 | ROTA | 30 | 30 | 0 | No aplica | Sí |
-| 25 | 15/10/2026 | 4162 | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 1 | 14/10/2026 | 4158 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 2 | 03/10/2026 | 4158 | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 3 | 18/09/2026 | 4158 | HEPB | 150 | 150 | 0 | No aplica | Sí |
+| 4 | 01/10/2026 | 4158 | BCG | 40 | 40 | 0 | No aplica | Sí |
+| 5 | 03/10/2026 | 4158 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 6 | 08/10/2026 | 4158 | NEUM | 100 | 100 | 0 | No aplica | Sí |
+| 7 | 13/10/2026 | 4158 | HEPB | 150 | 150 | 0 | No aplica | Sí |
+| 8 | 20/09/2026 | 4158 | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 9 | 12/10/2026 | 4158 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 10 | 15/10/2026 | 4158 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 11 | 10/10/2026 | 4158 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 12 | 18/09/2026 | 4158 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 13 | 26/09/2026 | 4158 | DTA | 50 | 40 | -10 | GR-4158-8312 | No |
+| 14 | 05/10/2026 | 4158 | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 15 | 21/09/2026 | 4158 | SPR | 20 | 20 | 0 | No aplica | Sí |
+| 16 | 19/09/2026 | 4158 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 17 | 22/09/2026 | 4158 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 18 | 01/10/2026 | 4158 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 19 | 21/09/2026 | 4158 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 20 | 26/09/2026 | 4158 | NEUM | 180 | 180 | 0 | No aplica | Sí |
+| 21 | 11/10/2026 | 4158 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 22 | 17/09/2026 | 4158 | NEUM | 200 | 200 | 0 | No aplica | Sí |
+| 23 | 12/10/2026 | 4158 | SPR | 200 | 200 | 0 | No aplica | Sí |
+| 24 | 01/10/2026 | 4158 | SPR | 150 | 150 | 0 | No aplica | Sí |
+| 25 | 10/10/2026 | 4158 | BCG | 50 | 50 | 0 | No aplica | Sí |
 
-Cierre: 22 entregas concordantes ÷ 25 × 100 = **88.00 %**.
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ---
 
 ### Bloque 17 · TRAB-09 · Pretest (proceso manual) · 14/08/2026
 
-Documentos auditados: 40 · Conformes: 19 · RSD: 47.50 % · Entregas conciliadas: 25 · Concordantes: 19 · CPE: 76.00 %
+Documentos auditados: 40 · Conformes: 29 · RSD: 72.50 % · Entregas conciliadas: 25 · Concordantes: 19 · CPE: 76.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | NEUM | L-2608-01 | 80 | S | S | S | S | N | S | S | S | N | M5 |
-| 2 | TRA | SPR | L-2608-02 | 240 | S | S | S | N | S | S | S | S | N | M4 |
-| 3 | ING | IPV | L-2608-03 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 4 | TRA | NEUM | L-2608-04 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 5 | TRA | NEUM | L-2608-05 | 200 | S | S | S | N | S | S | S | S | N | M4 |
-| 6 | ING | INFL | L-2608-06 | 20 | S | S | S | S | S | N | S | S | N | M6 |
-| 7 | SAL | DTA | L-2608-07 | 120 | S | S | S | N | S | S | S | S | N | M4 |
-| 8 | ING | ROTA | L-2608-08 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 9 | ING | VARI | L-2608-09 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 10 | AJU | IPV | L-2608-10 | 150 | S | S | S | S | S | S | S | N | N | M8 |
-| 11 | ING | DTA | L-2608-11 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 12 | TRA | SPR | L-2608-12 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 13 | SAL | HEPB | L-2608-13 | 20 | S | S | S | S | N | S | S | S | N | M5 |
-| 14 | SAL | IPV | L-2608-14 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 15 | AJU | DTA | L-2608-15 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 16 | SAL | PENT | L-2608-16 | 40 | S | S | S | S | S | S | S | N | N | M8 |
-| 17 | AJU | NEUM | L-2608-17 | 120 | S | S | S | S | S | N | S | S | N | M6 |
-| 18 | ING | VARI | L-2608-18 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 19 | TRA | SPR | L-2608-19 | 80 | S | N | S | S | S | S | S | S | N | M2 |
-| 20 | SAL | VARI | L-2608-20 | 180 | S | S | S | S | S | N | S | S | N | M6 |
-| 21 | SAL | DTA | L-2608-21 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 22 | ING | HEPB | L-2608-22 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 23 | ING | SPR | L-2608-23 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | PENT | L-2608-24 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | INFL | L-2608-25 | 20 | S | S | N | S | S | S | S | S | N | M3 |
-| 26 | SAL | SPR | L-2608-26 | 40 | S | S | S | N | S | S | S | S | N | M4 |
-| 27 | ING | SPR | L-2608-27 | 80 | S | S | S | S | S | S | S | N | N | M8 |
-| 28 | DEV | ROTA | L-2608-28 | 150 | S | S | S | S | S | S | S | N | N | M8 |
-| 29 | SAL | IPV | L-2608-29 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 30 | DEV | ROTA | L-2608-30 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 31 | ING | IPV | L-2608-31 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | ROTA | L-2608-32 | 150 | S | S | N | S | S | S | S | S | N | M3 |
-| 33 | AJU | IPV | L-2608-33 | 100 | S | N | S | S | S | S | S | S | N | M2 |
-| 34 | DEV | NEUM | L-2608-34 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 35 | ING | NEUM | L-2608-35 | 300 | S | S | S | S | S | S | S | N | N | M8 |
-| 36 | AJU | NEUM | L-2608-36 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 37 | AJU | VARI | L-2608-37 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 38 | SAL | INFL | L-2608-38 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 39 | DEV | NEUM | L-2608-39 | 40 | S | S | S | S | S | S | S | N | N | M8 |
-| 40 | AJU | HEPB | L-2608-40 | 150 | S | S | S | S | S | S | S | S | S | — |
+| 1 | ING | PENT | PENT-2508-232M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | BCG | BCG-2606-296K | 60 | S | S | S | S | S | N | S | S | N | M6 |
+| 3 | SAL | VARI | VARI-2503-521A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | INFL | INFL-2504-261K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | IPV | IPV-2605-698M | 30 | S | N | S | S | S | S | S | S | N | M2 |
+| 6 | ING | ROTA | ROTA-2605-833M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 7 | TRA | SPR | SPR-2608-539M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 8 | TRA | NEUM | NEUM-2505-688A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | INFL | INFL-2607-737M | 150 | S | S | S | S | S | N | S | S | N | M6 |
+| 10 | DEV | VARI | VARI-2509-637K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | VARI | VARI-2501-250M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 12 | SAL | SPR | SPR-2608-539M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | HEPB | HEPB-2609-521M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 14 | ING | VARI | VARI-2501-250M | 300 | S | N | S | S | S | S | S | S | N | M2 |
+| 15 | DEV | BCG | BCG-2606-296K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | ROTA | ROTA-2605-833M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 17 | TRA | VARI | VARI-2607-979A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | VARI | VARI-2509-637K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 19 | TRA | PENT | PENT-2605-322M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 20 | TRA | SPR | SPR-2608-539M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 21 | SAL | IPV | IPV-2503-662B | 180 | S | S | S | S | S | N | S | S | N | M6 |
+| 22 | ING | DTA | DTA-2505-409K | 30 | S | S | S | S | N | S | S | N | N | M5+M8 |
+| 23 | SAL | IPV | IPV-2503-662B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 24 | DEV | SPR | SPR-2609-423M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | DTA | DTA-2602-236K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | NEUM | NEUM-2507-181K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 27 | ING | ROTA | ROTA-2603-156K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 28 | SAL | NEUM | NEUM-2505-638K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | HEPB | HEPB-2603-786K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 30 | ING | DTA | DTA-2606-829K | 100 | S | S | S | S | S | N | S | S | N | M6 |
+| 31 | TRA | NEUM | NEUM-2509-952A | 30 | N | S | S | S | N | S | S | S | N | M1+M5 |
+| 32 | SAL | VARI | VARI-2501-250M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | ROTA | ROTA-2502-563B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 34 | DEV | PENT | PENT-2606-251M | 240 | S | S | S | S | S | S | N | S | N | M7 |
+| 35 | TRA | VARI | VARI-2509-637K | 50 | N | S | S | S | S | S | S | S | N | M1 |
+| 36 | SAL | DTA | DTA-2603-463K | 60 | S | N | S | S | S | S | S | S | N | M2 |
+| 37 | ING | INFL | INFL-2607-737M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 38 | ING | PENT | PENT-2508-232M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | HEPB | HEPB-2609-917M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | ROTA | ROTA-2605-833M | 80 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-09 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 14/08/2026 | 4163 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 14/08/2026 | 4163 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 3 | 14/08/2026 | 4163 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 4 | 14/08/2026 | 4163 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 5 | 14/08/2026 | 4163 | BCG | 150 | 160 | 10 | Sí | No |
-| 6 | 14/08/2026 | 4163 | ROTA | 100 | 80 | -20 | Sí | No |
-| 7 | 14/08/2026 | 4163 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 8 | 14/08/2026 | 4163 | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 9 | 14/08/2026 | 4163 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 10 | 14/08/2026 | 4163 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 11 | 14/08/2026 | 4163 | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 12 | 14/08/2026 | 4163 | NEUM | 180 | 185 | 5 | Sí | No |
-| 13 | 14/08/2026 | 4163 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 14/08/2026 | 4163 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 15 | 14/08/2026 | 4163 | SPR | 150 | 145 | -5 | Sí | No |
-| 16 | 14/08/2026 | 4163 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 17 | 14/08/2026 | 4163 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 14/08/2026 | 4163 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 14/08/2026 | 4163 | ROTA | 120 | 120 | 0 | No aplica | Sí |
-| 20 | 14/08/2026 | 4163 | PENT | 200 | 220 | 20 | Sí | No |
-| 21 | 14/08/2026 | 4163 | PENT | 180 | 185 | 5 | Sí | No |
-| 22 | 14/08/2026 | 4163 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 23 | 14/08/2026 | 4163 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 24 | 14/08/2026 | 4163 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 25 | 14/08/2026 | 4163 | BCG | 200 | 200 | 0 | No aplica | Sí |
+| 1 | 02/08/2026 | 4202 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 2 | 26/07/2026 | 4202 | DTA | 120 | 110 | -10 | GR-4202-3689 | No |
+| 3 | 14/08/2026 | 4202 | VARI | 30 | 30 | 0 | No aplica | Sí |
+| 4 | 22/07/2026 | 4202 | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 5 | 13/08/2026 | 4202 | PENT | 200 | 200 | 0 | No aplica | Sí |
+| 6 | 31/07/2026 | 4202 | DTA | 120 | 120 | 0 | No aplica | Sí |
+| 7 | 18/07/2026 | 4202 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 8 | 01/08/2026 | 4202 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 9 | 10/08/2026 | 4202 | ROTA | 100 | 95 | -5 | GR-4202-5538 | No |
+| 10 | 27/07/2026 | 4202 | ROTA | 20 | 20 | 0 | No aplica | Sí |
+| 11 | 29/07/2026 | 4202 | BCG | 30 | 30 | 0 | No aplica | Sí |
+| 12 | 27/07/2026 | 4202 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 13 | 23/07/2026 | 4202 | DTA | 40 | 45 | 5 | Sin guía | No |
+| 14 | 31/07/2026 | 4202 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 15 | 22/07/2026 | 4202 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 16 | 11/08/2026 | 4202 | VARI | 40 | 30 | -10 | GR-4202-8509 | No |
+| 17 | 09/08/2026 | 4202 | DTA | 20 | 15 | -5 | Sin guía | No |
+| 18 | 02/08/2026 | 4202 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 19 | 23/07/2026 | 4202 | SPR | 50 | 40 | -10 | Sin guía | No |
+| 20 | 28/07/2026 | 4202 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 21 | 30/07/2026 | 4202 | DTA | 180 | 180 | 0 | No aplica | Sí |
+| 22 | 20/07/2026 | 4202 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 23 | 19/07/2026 | 4202 | SPR | 60 | 60 | 0 | No aplica | Sí |
+| 24 | 30/07/2026 | 4202 | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 25 | 12/08/2026 | 4202 | ROTA | 200 | 200 | 0 | No aplica | Sí |
 
 Cierre: 19 entregas concordantes ÷ 25 × 100 = **76.00 %**.
 
@@ -2192,485 +2194,485 @@ Cierre: 19 entregas concordantes ÷ 25 × 100 = **76.00 %**.
 
 ### Bloque 18 · TRAB-09 · Postest (Sistema SIVAC) · 16/10/2026
 
-Documentos auditados: 40 · Conformes: 40 · RSD: 100.00 % · Entregas conciliadas: 25 · Concordantes: 21 · CPE: 84.00 %
+Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | IPV | L-2610-01 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | DTA | L-2610-02 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 3 | SAL | PENT | L-2610-03 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 4 | AJU | PENT | L-2610-04 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 5 | AJU | SPR | L-2610-05 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 6 | ING | INFL | L-2610-06 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | VARI | L-2610-07 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | HEPB | L-2610-08 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 9 | AJU | SPR | L-2610-09 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 10 | TRA | VARI | L-2610-10 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 11 | TRA | SPR | L-2610-11 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 12 | ING | NEUM | L-2610-12 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 13 | ING | SPR | L-2610-13 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 14 | AJU | SPR | L-2610-14 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 15 | ING | DTA | L-2610-15 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 16 | TRA | SPR | L-2610-16 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | SPR | L-2610-17 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 18 | TRA | HEPB | L-2610-18 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | IPV | L-2610-19 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 20 | ING | BCG | L-2610-20 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 21 | TRA | HEPB | L-2610-21 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | VARI | L-2610-22 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 23 | AJU | ROTA | L-2610-23 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 24 | SAL | SPR | L-2610-24 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 25 | ING | NEUM | L-2610-25 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 26 | TRA | INFL | L-2610-26 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 27 | TRA | VARI | L-2610-27 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 28 | ING | DTA | L-2610-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | BCG | L-2610-29 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 30 | DEV | INFL | L-2610-30 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 31 | AJU | PENT | L-2610-31 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | SPR | L-2610-32 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 33 | ING | PENT | L-2610-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | SAL | PENT | L-2610-34 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | BCG | L-2610-35 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 36 | ING | PENT | L-2610-36 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 37 | TRA | DTA | L-2610-37 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 38 | TRA | INFL | L-2610-38 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 39 | ING | IPV | L-2610-39 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 40 | AJU | HEPB | L-2610-40 | 20 | S | S | S | S | S | S | S | S | S | — |
+| 1 | ING | DTA | DTA-2505-409K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | ROTA | ROTA-2605-833M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | HEPB | HEPB-2609-917M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | BCG | BCG-2606-808K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | DTA | DTA-2505-409K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | PENT | PENT-2606-251M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | VARI | VARI-2508-818M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | INFL | INFL-2508-359M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 9 | DEV | VARI | VARI-2607-979A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | INFL | INFL-2504-261K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | INFL | INFL-2607-737M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 12 | SAL | ROTA | ROTA-2603-156K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | IPV | IPV-2507-805M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | DTA | DTA-2505-409K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 15 | ING | ROTA | ROTA-2602-464A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | PENT | PENT-2504-482M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 17 | SAL | PENT | PENT-2504-482M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | IPV | IPV-2608-446B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 19 | TRA | HEPB | HEPB-2602-318M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | PENT | PENT-2605-322M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | DTA | DTA-2505-409K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 22 | SAL | BCG | BCG-2606-296K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 23 | SAL | VARI | VARI-2501-250M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | NEUM | NEUM-2505-638K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | IPV | IPV-2608-446B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 26 | DEV | NEUM | NEUM-2507-181K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 27 | TRA | ROTA | ROTA-2602-464A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 28 | TRA | ROTA | ROTA-2507-417A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 29 | ING | HEPB | HEPB-2609-521M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | DTA | DTA-2603-463K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 31 | AJU | PENT | PENT-2508-232M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 32 | TRA | ROTA | ROTA-2605-833M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 33 | DEV | VARI | VARI-2501-250M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 34 | ING | INFL | INFL-2508-359M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 35 | SAL | BCG | BCG-2504-789B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 36 | SAL | PENT | PENT-2508-232M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 37 | ING | IPV | IPV-2504-587B | 100 | S | S | S | N | S | N | S | S | N | M4+M6 |
+| 38 | DEV | NEUM | NEUM-2509-952A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 39 | TRA | HEPB | HEPB-2509-474M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 40 | DEV | SPR | SPR-2608-539M | 240 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-09 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 16/10/2026 | 4163 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 2 | 16/10/2026 | 4163 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 3 | 16/10/2026 | 4163 | IPV | 150 | 160 | 10 | Sí | No |
-| 4 | 16/10/2026 | 4163 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 5 | 16/10/2026 | 4163 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 6 | 16/10/2026 | 4163 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 16/10/2026 | 4163 | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 8 | 16/10/2026 | 4163 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 9 | 16/10/2026 | 4163 | SPR | 200 | 190 | -10 | Sí | No |
-| 10 | 16/10/2026 | 4163 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 11 | 16/10/2026 | 4163 | INFL | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 16/10/2026 | 4163 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 13 | 16/10/2026 | 4163 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 14 | 16/10/2026 | 4163 | HEPB | 40 | 40 | 0 | No aplica | Sí |
-| 15 | 16/10/2026 | 4163 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 16 | 16/10/2026 | 4163 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 17 | 16/10/2026 | 4163 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 16/10/2026 | 4163 | ROTA | 120 | 120 | 0 | No aplica | Sí |
-| 19 | 16/10/2026 | 4163 | BCG | 20 | 40 | 20 | Sí | No |
-| 20 | 16/10/2026 | 4163 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 16/10/2026 | 4163 | IPV | 200 | 190 | -10 | Sí | No |
-| 22 | 16/10/2026 | 4163 | ROTA | 30 | 30 | 0 | No aplica | Sí |
-| 23 | 16/10/2026 | 4163 | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 24 | 16/10/2026 | 4163 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 25 | 16/10/2026 | 4163 | INFL | 40 | 40 | 0 | No aplica | Sí |
-
-Cierre: 21 entregas concordantes ÷ 25 × 100 = **84.00 %**.
-
----
-
-### Bloque 19 · TRAB-10 · Pretest (proceso manual) · 14/08/2026
-
-Documentos auditados: 40 · Conformes: 25 · RSD: 62.50 % · Entregas conciliadas: 25 · Concordantes: 18 · CPE: 72.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | TRA | SPR | L-2608-01 | 80 | N | S | S | S | S | S | S | S | N | M1 |
-| 2 | TRA | HEPB | L-2608-02 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 3 | DEV | BCG | L-2608-03 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 4 | SAL | VARI | L-2608-04 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | BCG | L-2608-05 | 40 | S | S | S | S | S | S | S | N | N | M8 |
-| 6 | ING | HEPB | L-2608-06 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 7 | AJU | ROTA | L-2608-07 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 8 | DEV | IPV | L-2608-08 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | SPR | L-2608-09 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 10 | SAL | SPR | L-2608-10 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 11 | TRA | HEPB | L-2608-11 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 12 | AJU | NEUM | L-2608-12 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 13 | TRA | NEUM | L-2608-13 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | IPV | L-2608-14 | 20 | S | S | S | S | S | S | N | S | N | M7 |
-| 15 | DEV | NEUM | L-2608-15 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 16 | AJU | VARI | L-2608-16 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | IPV | L-2608-17 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 18 | TRA | PENT | L-2608-18 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 19 | ING | PENT | L-2608-19 | 200 | S | S | S | S | N | S | S | S | N | M5 |
-| 20 | DEV | SPR | L-2608-20 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 21 | SAL | VARI | L-2608-21 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | VARI | L-2608-22 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 23 | SAL | NEUM | L-2608-23 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 24 | SAL | PENT | L-2608-24 | 40 | S | S | S | S | S | N | S | S | N | M6 |
-| 25 | SAL | VARI | L-2608-25 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 26 | ING | DTA | L-2608-26 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | SPR | L-2608-27 | 20 | S | S | N | S | S | S | S | S | N | M3 |
-| 28 | TRA | PENT | L-2608-28 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 29 | AJU | BCG | L-2608-29 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 30 | AJU | HEPB | L-2608-30 | 120 | S | S | S | S | S | S | N | S | N | M7 |
-| 31 | ING | ROTA | L-2608-31 | 40 | S | S | S | S | S | N | S | S | N | M6 |
-| 32 | DEV | PENT | L-2608-32 | 180 | N | S | S | S | S | S | S | S | N | M1 |
-| 33 | SAL | INFL | L-2608-33 | 240 | S | S | S | S | N | S | S | S | N | M5 |
-| 34 | TRA | ROTA | L-2608-34 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 35 | DEV | HEPB | L-2608-35 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 36 | TRA | PENT | L-2608-36 | 240 | S | N | S | S | S | S | S | S | N | M2 |
-| 37 | TRA | ROTA | L-2608-37 | 20 | S | S | S | N | S | S | S | S | N | M4 |
-| 38 | ING | NEUM | L-2608-38 | 60 | S | S | N | S | S | S | S | S | N | M3 |
-| 39 | AJU | NEUM | L-2608-39 | 180 | N | S | S | S | S | S | S | S | N | M1 |
-| 40 | DEV | SPR | L-2608-40 | 80 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-10 · Pretest (proceso manual)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 14/08/2026 | 4167 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 2 | 14/08/2026 | 4167 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 3 | 14/08/2026 | 4167 | IPV | 80 | 85 | 5 | Sí | No |
-| 4 | 14/08/2026 | 4167 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 5 | 14/08/2026 | 4167 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 14/08/2026 | 4167 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 7 | 14/08/2026 | 4167 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 8 | 14/08/2026 | 4167 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 9 | 14/08/2026 | 4167 | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 10 | 14/08/2026 | 4167 | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 11 | 14/08/2026 | 4167 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 12 | 14/08/2026 | 4167 | HEPB | 30 | 25 | -5 | Sí | No |
-| 13 | 14/08/2026 | 4167 | ROTA | 120 | 125 | 5 | Sí | No |
-| 14 | 14/08/2026 | 4167 | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 15 | 14/08/2026 | 4167 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 16 | 14/08/2026 | 4167 | VARI | 60 | 65 | 5 | Sí | No |
-| 17 | 14/08/2026 | 4167 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 18 | 14/08/2026 | 4167 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 19 | 14/08/2026 | 4167 | NEUM | 200 | 205 | 5 | Sí | No |
-| 20 | 14/08/2026 | 4167 | IPV | 60 | 55 | -5 | Sí | No |
-| 21 | 14/08/2026 | 4167 | DTA | 100 | 80 | -20 | Sí | No |
-| 22 | 14/08/2026 | 4167 | HEPB | 30 | 30 | 0 | No aplica | Sí |
-| 23 | 14/08/2026 | 4167 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 14/08/2026 | 4167 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 25 | 14/08/2026 | 4167 | BCG | 50 | 50 | 0 | No aplica | Sí |
-
-Cierre: 18 entregas concordantes ÷ 25 × 100 = **72.00 %**.
-
----
-
-### Bloque 20 · TRAB-10 · Postest (Sistema SIVAC) · 16/10/2026
-
-Documentos auditados: 40 · Conformes: 37 · RSD: 92.50 % · Entregas conciliadas: 25 · Concordantes: 20 · CPE: 80.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | BCG | L-2610-01 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 2 | DEV | VARI | L-2610-02 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 3 | ING | NEUM | L-2610-03 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 4 | AJU | NEUM | L-2610-04 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 5 | SAL | HEPB | L-2610-05 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 6 | TRA | NEUM | L-2610-06 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | NEUM | L-2610-07 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | HEPB | L-2610-08 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 9 | TRA | INFL | L-2610-09 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | INFL | L-2610-10 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 11 | SAL | PENT | L-2610-11 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 12 | ING | IPV | L-2610-12 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 13 | ING | BCG | L-2610-13 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 14 | DEV | INFL | L-2610-14 | 150 | S | S | S | S | S | N | S | S | N | M6 |
-| 15 | ING | IPV | L-2610-15 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 16 | AJU | PENT | L-2610-16 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 17 | SAL | IPV | L-2610-17 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 18 | SAL | BCG | L-2610-18 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | SPR | L-2610-19 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 20 | DEV | NEUM | L-2610-20 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 21 | TRA | ROTA | L-2610-21 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 22 | ING | PENT | L-2610-22 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 23 | SAL | SPR | L-2610-23 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 24 | TRA | NEUM | L-2610-24 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 25 | SAL | VARI | L-2610-25 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 26 | ING | VARI | L-2610-26 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 27 | TRA | VARI | L-2610-27 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 28 | AJU | IPV | L-2610-28 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | IPV | L-2610-29 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 30 | ING | HEPB | L-2610-30 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 31 | ING | DTA | L-2610-31 | 150 | S | S | S | S | S | S | S | N | N | M8 |
-| 32 | SAL | BCG | L-2610-32 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | DTA | L-2610-33 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 34 | AJU | SPR | L-2610-34 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 35 | ING | HEPB | L-2610-35 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 36 | SAL | INFL | L-2610-36 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 37 | DEV | NEUM | L-2610-37 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 38 | ING | VARI | L-2610-38 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 39 | DEV | DTA | L-2610-39 | 20 | S | N | S | S | S | S | S | S | N | M2 |
-| 40 | ING | HEPB | L-2610-40 | 40 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-10 · Postest (Sistema SIVAC)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 16/10/2026 | 4167 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 2 | 16/10/2026 | 4167 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 3 | 16/10/2026 | 4167 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 4 | 16/10/2026 | 4167 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 5 | 16/10/2026 | 4167 | ROTA | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 16/10/2026 | 4167 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 7 | 16/10/2026 | 4167 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 8 | 16/10/2026 | 4167 | SPR | 150 | 140 | -10 | Sí | No |
-| 9 | 16/10/2026 | 4167 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 10 | 16/10/2026 | 4167 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 11 | 16/10/2026 | 4167 | SPR | 60 | 80 | 20 | Sí | No |
-| 12 | 16/10/2026 | 4167 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 16/10/2026 | 4167 | IPV | 180 | 170 | -10 | Sí | No |
-| 14 | 16/10/2026 | 4167 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 15 | 16/10/2026 | 4167 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 16 | 16/10/2026 | 4167 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 17 | 16/10/2026 | 4167 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 18 | 16/10/2026 | 4167 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 19 | 16/10/2026 | 4167 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 20 | 16/10/2026 | 4167 | ROTA | 60 | 55 | -5 | Sí | No |
-| 21 | 16/10/2026 | 4167 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 22 | 16/10/2026 | 4167 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 23 | 16/10/2026 | 4167 | PENT | 60 | 40 | -20 | Sí | No |
-| 24 | 16/10/2026 | 4167 | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 25 | 16/10/2026 | 4167 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-
-Cierre: 20 entregas concordantes ÷ 25 × 100 = **80.00 %**.
-
----
-
-### Bloque 21 · TRAB-11 · Pretest (proceso manual) · 07/09/2026
-
-Documentos auditados: 40 · Conformes: 35 · RSD: 87.50 % · Entregas conciliadas: 25 · Concordantes: 13 · CPE: 52.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | VARI | L-2609-01 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 2 | SAL | BCG | L-2609-02 | 100 | S | S | S | S | N | S | S | S | N | M5 |
-| 3 | ING | SPR | L-2609-03 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 4 | SAL | DTA | L-2609-04 | 80 | S | N | S | S | S | S | S | S | N | M2 |
-| 5 | AJU | SPR | L-2609-05 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 6 | SAL | BCG | L-2609-06 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 7 | DEV | DTA | L-2609-07 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 8 | DEV | IPV | L-2609-08 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | INFL | L-2609-09 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | SPR | L-2609-10 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 11 | AJU | SPR | L-2609-11 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 12 | DEV | INFL | L-2609-12 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 13 | TRA | ROTA | L-2609-13 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 14 | TRA | HEPB | L-2609-14 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 15 | ING | DTA | L-2609-15 | 100 | S | S | S | S | S | N | S | S | N | M6 |
-| 16 | DEV | DTA | L-2609-16 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | SPR | L-2609-17 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 18 | DEV | HEPB | L-2609-18 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | BCG | L-2609-19 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 20 | ING | HEPB | L-2609-20 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 21 | SAL | VARI | L-2609-21 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | HEPB | L-2609-22 | 120 | S | S | S | S | S | N | S | S | N | M6 |
-| 23 | AJU | HEPB | L-2609-23 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 24 | DEV | ROTA | L-2609-24 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | IPV | L-2609-25 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 26 | TRA | SPR | L-2609-26 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | VARI | L-2609-27 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 28 | DEV | SPR | L-2609-28 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 29 | TRA | PENT | L-2609-29 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 30 | AJU | PENT | L-2609-30 | 120 | S | S | N | S | S | S | S | S | N | M3 |
-| 31 | DEV | NEUM | L-2609-31 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | PENT | L-2609-32 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | NEUM | L-2609-33 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 34 | ING | DTA | L-2609-34 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | VARI | L-2609-35 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 36 | AJU | DTA | L-2609-36 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | ROTA | L-2609-37 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 38 | TRA | IPV | L-2609-38 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 39 | DEV | BCG | L-2609-39 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 40 | DEV | INFL | L-2609-40 | 240 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-11 · Pretest (proceso manual)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 07/09/2026 | 4167-SJ | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 2 | 07/09/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 3 | 07/09/2026 | 4167-SJ | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 4 | 07/09/2026 | 4167-SJ | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 5 | 07/09/2026 | 4167-SJ | DTA | 100 | 80 | -20 | Sí | No |
-| 6 | 07/09/2026 | 4167-SJ | IPV | 60 | 40 | -20 | Sí | No |
-| 7 | 07/09/2026 | 4167-SJ | PENT | 40 | 30 | -10 | Sí | No |
-| 8 | 07/09/2026 | 4167-SJ | ROTA | 200 | 195 | -5 | Sí | No |
-| 9 | 07/09/2026 | 4167-SJ | IPV | 80 | 90 | 10 | Sí | No |
-| 10 | 07/09/2026 | 4167-SJ | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 11 | 07/09/2026 | 4167-SJ | DTA | 200 | 210 | 10 | Sí | No |
-| 12 | 07/09/2026 | 4167-SJ | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 13 | 07/09/2026 | 4167-SJ | NEUM | 100 | 95 | -5 | Sí | No |
-| 14 | 07/09/2026 | 4167-SJ | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 15 | 07/09/2026 | 4167-SJ | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 16 | 07/09/2026 | 4167-SJ | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 07/09/2026 | 4167-SJ | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 18 | 07/09/2026 | 4167-SJ | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 19 | 07/09/2026 | 4167-SJ | DTA | 50 | 60 | 10 | Sí | No |
-| 20 | 07/09/2026 | 4167-SJ | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 21 | 07/09/2026 | 4167-SJ | INFL | 120 | 100 | -20 | Sí | No |
-| 22 | 07/09/2026 | 4167-SJ | HEPB | 60 | 65 | 5 | Sí | No |
-| 23 | 07/09/2026 | 4167-SJ | NEUM | 20 | 10 | -10 | Sí | No |
-| 24 | 07/09/2026 | 4167-SJ | BCG | 50 | 70 | 20 | Sí | No |
-| 25 | 07/09/2026 | 4167-SJ | DTA | 50 | 50 | 0 | No aplica | Sí |
-
-Cierre: 13 entregas concordantes ÷ 25 × 100 = **52.00 %**.
-
----
-
-### Bloque 22 · TRAB-11 · Postest (Sistema SIVAC) · 19/10/2026
-
-Documentos auditados: 40 · Conformes: 36 · RSD: 90.00 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
-
-| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
-| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | HEPB | L-2610-01 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | DTA | L-2610-02 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 3 | AJU | VARI | L-2610-03 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 4 | ING | DTA | L-2610-04 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | PENT | L-2610-05 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 6 | SAL | DTA | L-2610-06 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 7 | AJU | PENT | L-2610-07 | 20 | S | S | N | S | S | S | S | S | N | M3 |
-| 8 | DEV | NEUM | L-2610-08 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 9 | TRA | VARI | L-2610-09 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 10 | AJU | HEPB | L-2610-10 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 11 | ING | SPR | L-2610-11 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 12 | AJU | ROTA | L-2610-12 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 13 | AJU | VARI | L-2610-13 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 14 | TRA | DTA | L-2610-14 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 15 | AJU | BCG | L-2610-15 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 16 | AJU | ROTA | L-2610-16 | 120 | S | S | S | N | S | S | S | S | N | M4 |
-| 17 | TRA | ROTA | L-2610-17 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 18 | AJU | VARI | L-2610-18 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 19 | ING | BCG | L-2610-19 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | VARI | L-2610-20 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 21 | SAL | HEPB | L-2610-21 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 22 | ING | DTA | L-2610-22 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 23 | ING | DTA | L-2610-23 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 24 | ING | HEPB | L-2610-24 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 25 | AJU | DTA | L-2610-25 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 26 | ING | DTA | L-2610-26 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 27 | SAL | SPR | L-2610-27 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 28 | TRA | VARI | L-2610-28 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 29 | TRA | PENT | L-2610-29 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 30 | DEV | PENT | L-2610-30 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 31 | SAL | IPV | L-2610-31 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | IPV | L-2610-32 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 33 | SAL | PENT | L-2610-33 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 34 | TRA | DTA | L-2610-34 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 35 | SAL | PENT | L-2610-35 | 240 | S | S | N | S | S | S | S | S | N | M3 |
-| 36 | ING | DTA | L-2610-36 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 37 | TRA | PENT | L-2610-37 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 38 | ING | VARI | L-2610-38 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 39 | SAL | SPR | L-2610-39 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 40 | DEV | IPV | L-2610-40 | 20 | S | S | S | S | S | S | S | S | S | — |
-
-**Entregas conciliadas — TRAB-11 · Postest (Sistema SIVAC)**
-
-| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
-| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 19/10/2026 | 4167-SJ | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 2 | 19/10/2026 | 4167-SJ | BCG | 180 | 180 | 0 | No aplica | Sí |
-| 3 | 19/10/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 4 | 19/10/2026 | 4167-SJ | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 5 | 19/10/2026 | 4167-SJ | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 6 | 19/10/2026 | 4167-SJ | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 7 | 19/10/2026 | 4167-SJ | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 8 | 19/10/2026 | 4167-SJ | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 9 | 19/10/2026 | 4167-SJ | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 10 | 19/10/2026 | 4167-SJ | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 11 | 19/10/2026 | 4167-SJ | ROTA | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 19/10/2026 | 4167-SJ | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 19/10/2026 | 4167-SJ | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 14 | 19/10/2026 | 4167-SJ | VARI | 180 | 180 | 0 | No aplica | Sí |
-| 15 | 19/10/2026 | 4167-SJ | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 16 | 19/10/2026 | 4167-SJ | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 17 | 19/10/2026 | 4167-SJ | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 19/10/2026 | 4167-SJ | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 19/10/2026 | 4167-SJ | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 20 | 19/10/2026 | 4167-SJ | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 21 | 19/10/2026 | 4167-SJ | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 22 | 19/10/2026 | 4167-SJ | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 23 | 19/10/2026 | 4167-SJ | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 24 | 19/10/2026 | 4167-SJ | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 25 | 19/10/2026 | 4167-SJ | DTA | 120 | 125 | 5 | Sí | No |
+| 1 | 29/09/2026 | 4202 | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 2 | 07/10/2026 | 4202 | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 3 | 24/09/2026 | 4202 | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 4 | 30/09/2026 | 4202 | INFL | 60 | 60 | 0 | No aplica | Sí |
+| 5 | 03/10/2026 | 4202 | NEUM | 180 | 180 | 0 | No aplica | Sí |
+| 6 | 21/09/2026 | 4202 | INFL | 40 | 45 | 5 | Sin guía | No |
+| 7 | 20/09/2026 | 4202 | BCG | 40 | 40 | 0 | No aplica | Sí |
+| 8 | 23/09/2026 | 4202 | NEUM | 120 | 120 | 0 | No aplica | Sí |
+| 9 | 20/09/2026 | 4202 | VARI | 30 | 30 | 0 | No aplica | Sí |
+| 10 | 25/09/2026 | 4202 | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 11 | 21/09/2026 | 4202 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 12 | 19/09/2026 | 4202 | IPV | 120 | 120 | 0 | No aplica | Sí |
+| 13 | 06/10/2026 | 4202 | VARI | 60 | 60 | 0 | No aplica | Sí |
+| 14 | 18/09/2026 | 4202 | ROTA | 60 | 60 | 0 | No aplica | Sí |
+| 15 | 20/09/2026 | 4202 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 16 | 14/10/2026 | 4202 | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 17 | 02/10/2026 | 4202 | DTA | 30 | 30 | 0 | No aplica | Sí |
+| 18 | 30/09/2026 | 4202 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 19 | 20/09/2026 | 4202 | SPR | 150 | 150 | 0 | No aplica | Sí |
+| 20 | 26/09/2026 | 4202 | INFL | 20 | 20 | 0 | No aplica | Sí |
+| 21 | 24/09/2026 | 4202 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 22 | 24/09/2026 | 4202 | DTA | 30 | 30 | 0 | No aplica | Sí |
+| 23 | 16/10/2026 | 4202 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 24 | 13/10/2026 | 4202 | BCG | 100 | 100 | 0 | No aplica | Sí |
+| 25 | 26/09/2026 | 4202 | ROTA | 120 | 120 | 0 | No aplica | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ---
 
-### Bloque 23 · TRAB-12 · Pretest (proceso manual) · 07/09/2026
+### Bloque 19 · TRAB-10 · Pretest (proceso manual) · 14/08/2026
 
-Documentos auditados: 40 · Conformes: 22 · RSD: 55.00 % · Entregas conciliadas: 25 · Concordantes: 15 · CPE: 60.00 %
+Documentos auditados: 40 · Conformes: 24 · RSD: 60.00 % · Entregas conciliadas: 25 · Concordantes: 16 · CPE: 64.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | HEPB | L-2609-01 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 2 | AJU | ROTA | L-2609-02 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 3 | ING | VARI | L-2609-03 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 4 | TRA | BCG | L-2609-04 | 150 | S | N | S | S | S | S | S | S | N | M2 |
-| 5 | SAL | VARI | L-2609-05 | 200 | S | S | S | S | N | S | S | S | N | M5 |
-| 6 | SAL | PENT | L-2609-06 | 200 | S | S | S | S | S | S | S | N | N | M8 |
-| 7 | ING | BCG | L-2609-07 | 20 | S | S | N | S | S | S | S | S | N | M3 |
-| 8 | AJU | VARI | L-2609-08 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | INFL | L-2609-09 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | SPR | L-2609-10 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 11 | AJU | INFL | L-2609-11 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 12 | ING | VARI | L-2609-12 | 200 | S | N | S | S | S | S | S | S | N | M2 |
-| 13 | DEV | SPR | L-2609-13 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 14 | AJU | SPR | L-2609-14 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 15 | TRA | VARI | L-2609-15 | 150 | S | S | S | S | S | S | S | N | N | M8 |
-| 16 | SAL | INFL | L-2609-16 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | SPR | L-2609-17 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 18 | ING | PENT | L-2609-18 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | SPR | L-2609-19 | 240 | N | S | S | S | S | S | S | S | N | M1 |
-| 20 | SAL | DTA | L-2609-20 | 80 | S | N | S | S | S | S | S | S | N | M2 |
-| 21 | TRA | NEUM | L-2609-21 | 200 | S | S | S | S | S | N | S | S | N | M6 |
-| 22 | SAL | NEUM | L-2609-22 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 23 | SAL | DTA | L-2609-23 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 24 | TRA | DTA | L-2609-24 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 25 | AJU | NEUM | L-2609-25 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 26 | SAL | BCG | L-2609-26 | 20 | S | S | S | S | N | S | S | S | N | M5 |
-| 27 | ING | INFL | L-2609-27 | 60 | S | S | S | N | S | S | S | S | N | M4 |
-| 28 | DEV | HEPB | L-2609-28 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 29 | ING | PENT | L-2609-29 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 30 | ING | NEUM | L-2609-30 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 31 | AJU | BCG | L-2609-31 | 300 | S | S | S | S | S | N | S | S | N | M6 |
-| 32 | ING | INFL | L-2609-32 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 33 | SAL | IPV | L-2609-33 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 34 | ING | VARI | L-2609-34 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 35 | DEV | HEPB | L-2609-35 | 40 | S | S | N | S | S | S | S | S | N | M3 |
-| 36 | TRA | HEPB | L-2609-36 | 300 | S | S | S | S | S | S | N | S | N | M7 |
-| 37 | TRA | ROTA | L-2609-37 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 38 | DEV | HEPB | L-2609-38 | 180 | S | S | N | S | S | S | S | S | N | M3 |
-| 39 | DEV | IPV | L-2609-39 | 80 | S | N | S | S | S | S | S | S | N | M2 |
-| 40 | DEV | DTA | L-2609-40 | 40 | S | S | S | S | S | S | S | S | S | — |
+| 1 | ING | NEUM | NEUM-2505-688A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 2 | TRA | HEPB | HEPB-2602-318M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 3 | ING | SPR | SPR-2608-539M | 240 | S | S | S | S | S | S | S | N | N | M8 |
+| 4 | TRA | DTA | DTA-2606-829K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 5 | DEV | PENT | PENT-2508-232M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | BCG | BCG-2607-654A | 40 | S | S | S | S | N | S | S | S | N | M5 |
+| 7 | DEV | IPV | IPV-2605-698M | 300 | S | S | S | S | S | S | S | N | N | M8 |
+| 8 | DEV | PENT | PENT-2606-251M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 9 | DEV | NEUM | NEUM-2507-181K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 10 | TRA | DTA | DTA-2603-463K | 50 | S | S | S | S | S | S | S | N | N | M8 |
+| 11 | ING | NEUM | NEUM-2509-952A | 50 | S | S | S | S | S | S | S | N | N | M8 |
+| 12 | DEV | VARI | VARI-2503-521A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 13 | DEV | IPV | IPV-2605-698M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 14 | AJU | NEUM | NEUM-2505-638K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | IPV | IPV-2507-805M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | INFL | INFL-2504-261K | 240 | N | S | S | S | S | S | S | S | N | M1 |
+| 17 | AJU | NEUM | NEUM-2509-952A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 18 | DEV | IPV | IPV-2504-587B | 20 | S | S | S | S | S | S | S | N | N | M8 |
+| 19 | DEV | SPR | SPR-2606-500M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 20 | AJU | BCG | BCG-2606-296K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | NEUM | NEUM-2506-884B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 22 | AJU | BCG | BCG-2606-808K | 120 | S | S | S | S | S | S | N | S | N | M7 |
+| 23 | AJU | HEPB | HEPB-2509-474M | 150 | N | S | S | S | S | S | S | N | N | M1+M8 |
+| 24 | ING | DTA | DTA-2602-797A | 80 | S | S | S | S | S | N | N | S | N | M6+M7 |
+| 25 | DEV | SPR | SPR-2608-539M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 26 | AJU | IPV | IPV-2507-805M | 300 | S | S | S | S | S | S | S | N | N | M8 |
+| 27 | TRA | BCG | BCG-2606-296K | 300 | S | S | S | S | S | N | S | S | N | M6 |
+| 28 | DEV | NEUM | NEUM-2507-181K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 29 | TRA | INFL | INFL-2504-261K | 40 | S | S | S | S | S | N | N | S | N | M6+M7 |
+| 30 | DEV | INFL | INFL-2603-792B | 40 | S | S | S | S | S | S | S | N | N | M8 |
+| 31 | TRA | PENT | PENT-2605-322M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 32 | ING | PENT | PENT-2606-251M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | IPV | IPV-2605-698M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 34 | ING | SPR | SPR-2606-500M | 60 | S | S | S | S | N | S | N | S | N | M5+M7 |
+| 35 | SAL | SPR | SPR-2609-423M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 36 | TRA | BCG | BCG-2606-808K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | SPR | SPR-2504-185M | 120 | S | S | S | S | S | S | N | S | N | M7 |
+| 38 | AJU | IPV | IPV-2605-698M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 39 | TRA | INFL | INFL-2604-777M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | INFL | INFL-2607-737M | 240 | S | S | S | S | S | S | S | S | S | — |
+
+**Entregas conciliadas — TRAB-10 · Pretest (proceso manual)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 03/08/2026 | 4172 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 2 | 29/07/2026 | 4172 | HEPB | 100 | 90 | -10 | GR-4172-2089 | No |
+| 3 | 02/08/2026 | 4172 | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 4 | 13/08/2026 | 4172 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 5 | 09/08/2026 | 4172 | INFL | 150 | 150 | 0 | No aplica | Sí |
+| 6 | 17/07/2026 | 4172 | IPV | 60 | 50 | -10 | Sin guía | No |
+| 7 | 04/08/2026 | 4172 | SPR | 200 | 205 | 5 | Sin guía | No |
+| 8 | 30/07/2026 | 4172 | NEUM | 40 | 40 | 0 | No aplica | Sí |
+| 9 | 11/08/2026 | 4172 | PENT | 100 | 100 | 0 | No aplica | Sí |
+| 10 | 01/08/2026 | 4172 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 11 | 18/07/2026 | 4172 | SPR | 60 | 50 | -10 | GR-4172-2907 | No |
+| 12 | 30/07/2026 | 4172 | ROTA | 120 | 110 | -10 | GR-4172-6132 | No |
+| 13 | 17/07/2026 | 4172 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 14 | 21/07/2026 | 4172 | NEUM | 200 | 205 | 5 | Sin guía | No |
+| 15 | 30/07/2026 | 4172 | DTA | 150 | 155 | 5 | Sin guía | No |
+| 16 | 10/08/2026 | 4172 | SPR | 20 | 15 | -5 | GR-4172-3281 | No |
+| 17 | 11/08/2026 | 4172 | VARI | 150 | 150 | 0 | No aplica | Sí |
+| 18 | 06/08/2026 | 4172 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 19 | 24/07/2026 | 4172 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 20 | 11/08/2026 | 4172 | SPR | 30 | 10 | -20 | GR-4172-4103 | No |
+| 21 | 22/07/2026 | 4172 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 22 | 26/07/2026 | 4172 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 23 | 13/08/2026 | 4172 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 24 | 29/07/2026 | 4172 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 25 | 01/08/2026 | 4172 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+
+Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
+
+---
+
+### Bloque 20 · TRAB-10 · Postest (Sistema SIVAC) · 16/10/2026
+
+Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | ING | BCG | BCG-2606-808K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 2 | DEV | BCG | BCG-2607-654A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 3 | TRA | IPV | IPV-2503-662B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | BCG | BCG-2507-694K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 5 | TRA | DTA | DTA-2603-463K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | IPV | IPV-2605-698M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 7 | AJU | ROTA | ROTA-2605-833M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | SPR | SPR-2608-539M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | ROTA | ROTA-2602-464A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 10 | AJU | ROTA | ROTA-2602-464A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | NEUM | NEUM-2506-884B | 100 | S | S | S | S | S | S | S | S | S | — |
+| 12 | DEV | IPV | IPV-2503-662B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | BCG | BCG-2504-789B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | HEPB | HEPB-2509-474M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | ROTA | ROTA-2605-833M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 16 | DEV | HEPB | HEPB-2603-786K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 17 | TRA | DTA | DTA-2602-236K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 18 | AJU | DTA | DTA-2505-409K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 19 | AJU | HEPB | HEPB-2609-917M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 20 | ING | HEPB | HEPB-2609-521M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | INFL | INFL-2504-261K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 22 | TRA | HEPB | HEPB-2603-786K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 23 | TRA | ROTA | ROTA-2602-464A | 150 | S | S | S | N | S | S | N | S | N | M4+M7 |
+| 24 | SAL | INFL | INFL-2607-737M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | PENT | PENT-2606-251M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | INFL | INFL-2504-261K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 27 | ING | IPV | IPV-2608-446B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | PENT | PENT-2606-391A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 29 | TRA | PENT | PENT-2504-482M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 30 | TRA | SPR | SPR-2504-185M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 31 | TRA | PENT | PENT-2605-322M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 32 | ING | IPV | IPV-2608-446B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | VARI | VARI-2501-250M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 34 | ING | PENT | PENT-2606-391A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 35 | AJU | PENT | PENT-2606-391A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 36 | SAL | IPV | IPV-2608-446B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | PENT | PENT-2504-482M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 38 | AJU | BCG | BCG-2504-789B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | SPR | SPR-2504-185M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | VARI | VARI-2501-250M | 150 | S | S | S | S | S | S | S | S | S | — |
+
+**Entregas conciliadas — TRAB-10 · Postest (Sistema SIVAC)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 03/10/2026 | 4172 | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 2 | 20/09/2026 | 4172 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 3 | 19/09/2026 | 4172 | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 4 | 12/10/2026 | 4172 | PENT | 80 | 80 | 0 | No aplica | Sí |
+| 5 | 11/10/2026 | 4172 | NEUM | 200 | 200 | 0 | No aplica | Sí |
+| 6 | 15/10/2026 | 4172 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 7 | 23/09/2026 | 4172 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 8 | 02/10/2026 | 4172 | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 9 | 18/09/2026 | 4172 | VARI | 50 | 45 | -5 | GR-4172-3729 | No |
+| 10 | 13/10/2026 | 4172 | NEUM | 40 | 40 | 0 | No aplica | Sí |
+| 11 | 11/10/2026 | 4172 | IPV | 150 | 150 | 0 | No aplica | Sí |
+| 12 | 25/09/2026 | 4172 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 13 | 27/09/2026 | 4172 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 14 | 27/09/2026 | 4172 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 15 | 23/09/2026 | 4172 | DTA | 40 | 40 | 0 | No aplica | Sí |
+| 16 | 10/10/2026 | 4172 | ROTA | 20 | 20 | 0 | No aplica | Sí |
+| 17 | 03/10/2026 | 4172 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 18 | 11/10/2026 | 4172 | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 19 | 15/10/2026 | 4172 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 20 | 18/09/2026 | 4172 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 21 | 28/09/2026 | 4172 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 22 | 01/10/2026 | 4172 | IPV | 50 | 50 | 0 | No aplica | Sí |
+| 23 | 06/10/2026 | 4172 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 24 | 12/10/2026 | 4172 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 25 | 21/09/2026 | 4172 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+
+Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
+
+---
+
+### Bloque 21 · TRAB-11 · Pretest (proceso manual) · 07/09/2026
+
+Documentos auditados: 40 · Conformes: 25 · RSD: 62.50 % · Entregas conciliadas: 25 · Concordantes: 17 · CPE: 68.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | SAL | HEPB | HEPB-2609-917M | 300 | S | S | S | S | S | S | N | S | N | M7 |
+| 2 | ING | PENT | PENT-2605-322M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 3 | DEV | SPR | SPR-2606-500M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 4 | ING | NEUM | NEUM-2507-181K | 240 | N | S | S | S | S | S | S | S | N | M1 |
+| 5 | DEV | INFL | INFL-2508-359M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 6 | SAL | VARI | VARI-2501-250M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 7 | TRA | PENT | PENT-2605-322M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | ROTA | ROTA-2507-417A | 100 | S | S | N | S | S | S | S | S | N | M3 |
+| 9 | TRA | DTA | DTA-2603-463K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 10 | TRA | NEUM | NEUM-2509-952A | 80 | S | S | S | S | S | N | S | S | N | M6 |
+| 11 | ING | VARI | VARI-2509-637K | 40 | S | S | S | S | N | S | N | S | N | M5+M7 |
+| 12 | DEV | HEPB | HEPB-2509-474M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | DTA | DTA-2606-829K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 14 | ING | HEPB | HEPB-2603-786K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 15 | ING | HEPB | HEPB-2609-521M | 40 | S | S | S | S | S | N | S | S | N | M6 |
+| 16 | SAL | IPV | IPV-2507-805M | 20 | N | S | S | N | S | S | S | S | N | M1+M4 |
+| 17 | SAL | DTA | DTA-2606-829K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | ROTA | ROTA-2602-464A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 19 | ING | VARI | VARI-2508-818M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 20 | TRA | SPR | SPR-2608-539M | 60 | S | S | S | S | S | S | S | N | N | M8 |
+| 21 | SAL | INFL | INFL-2504-261K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 22 | SAL | DTA | DTA-2602-236K | 20 | S | S | S | S | N | S | S | S | N | M5 |
+| 23 | TRA | NEUM | NEUM-2507-181K | 180 | S | S | N | S | S | S | S | S | N | M3 |
+| 24 | ING | BCG | BCG-2507-694K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | VARI | VARI-2607-979A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | PENT | PENT-2606-391A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 27 | DEV | INFL | INFL-2603-792B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 28 | TRA | HEPB | HEPB-2609-917M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 29 | TRA | VARI | VARI-2503-521A | 150 | N | S | S | S | S | S | S | S | N | M1 |
+| 30 | ING | ROTA | ROTA-2605-833M | 100 | S | S | S | S | N | S | S | S | N | M5 |
+| 31 | ING | BCG | BCG-2606-296K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | INFL | INFL-2603-792B | 20 | S | N | S | S | S | S | S | S | N | M2 |
+| 33 | ING | SPR | SPR-2606-500M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | ROTA | ROTA-2603-156K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 35 | ING | DTA | DTA-2602-797A | 60 | S | S | S | S | S | N | S | S | N | M6 |
+| 36 | ING | SPR | SPR-2603-471K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | VARI | VARI-2508-818M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | PENT | PENT-2504-482M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 39 | TRA | INFL | INFL-2603-792B | 120 | S | S | S | S | S | S | S | S | S | — |
+| 40 | ING | VARI | VARI-2509-637K | 150 | S | S | S | N | S | S | N | S | N | M4+M7 |
+
+**Entregas conciliadas — TRAB-11 · Pretest (proceso manual)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 07/09/2026 | 4167 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 2 | 14/08/2026 | 4167 | INFL | 20 | 20 | 0 | No aplica | Sí |
+| 3 | 29/08/2026 | 4167 | SPR | 150 | 150 | 0 | No aplica | Sí |
+| 4 | 14/08/2026 | 4167 | PENT | 50 | 50 | 0 | No aplica | Sí |
+| 5 | 28/08/2026 | 4167 | DTA | 120 | 120 | 0 | No aplica | Sí |
+| 6 | 21/08/2026 | 4167 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 7 | 19/08/2026 | 4167 | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 8 | 17/08/2026 | 4167 | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 9 | 05/09/2026 | 4167 | INFL | 180 | 170 | -10 | Sin guía | No |
+| 10 | 01/09/2026 | 4167 | IPV | 80 | 75 | -5 | Sin guía | No |
+| 11 | 20/08/2026 | 4167 | DTA | 60 | 55 | -5 | Sin guía | No |
+| 12 | 15/08/2026 | 4167 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 13 | 05/09/2026 | 4167 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 14 | 05/09/2026 | 4167 | SPR | 80 | 60 | -20 | GR-4167-3782 | No |
+| 15 | 31/08/2026 | 4167 | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 16 | 19/08/2026 | 4167 | DTA | 80 | 75 | -5 | GR-4167-4070 | No |
+| 17 | 12/08/2026 | 4167 | NEUM | 180 | 180 | 0 | No aplica | Sí |
+| 18 | 11/08/2026 | 4167 | ROTA | 20 | 20 | 0 | No aplica | Sí |
+| 19 | 29/08/2026 | 4167 | DTA | 30 | 25 | -5 | Sin guía | No |
+| 20 | 11/08/2026 | 4167 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 21 | 05/09/2026 | 4167 | HEPB | 40 | 40 | 0 | No aplica | Sí |
+| 22 | 28/08/2026 | 4167 | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 23 | 30/08/2026 | 4167 | INFL | 120 | 110 | -10 | GR-4167-8823 | No |
+| 24 | 25/08/2026 | 4167 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 25 | 14/08/2026 | 4167 | INFL | 40 | 60 | 20 | GR-4167-2484 | No |
+
+Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
+
+---
+
+### Bloque 22 · TRAB-11 · Postest (Sistema SIVAC) · 19/10/2026
+
+Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliadas: 25 · Concordantes: 23 · CPE: 92.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | SAL | ROTA | ROTA-2602-464A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | IPV | IPV-2608-446B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 3 | ING | HEPB | HEPB-2603-786K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 4 | TRA | SPR | SPR-2608-539M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | BCG | BCG-2507-694K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 6 | AJU | IPV | IPV-2503-662B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | HEPB | HEPB-2609-521M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | PENT | PENT-2504-482M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 9 | AJU | ROTA | ROTA-2605-833M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | ROTA | ROTA-2605-833M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | ROTA | ROTA-2507-417A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 12 | TRA | HEPB | HEPB-2609-521M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | DTA | DTA-2505-409K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 14 | TRA | ROTA | ROTA-2605-833M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | NEUM | NEUM-2505-688A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | ROTA | ROTA-2502-563B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 17 | TRA | HEPB | HEPB-2603-786K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 18 | AJU | SPR | SPR-2606-500M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 19 | AJU | IPV | IPV-2503-662B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 20 | TRA | SPR | SPR-2603-471K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 21 | SAL | ROTA | ROTA-2507-417A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 22 | TRA | DTA | DTA-2603-463K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 23 | TRA | BCG | BCG-2504-789B | 150 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | INFL | INFL-2504-261K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 25 | AJU | VARI | VARI-2509-637K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 26 | TRA | BCG | BCG-2606-808K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | IPV | IPV-2605-698M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 28 | SAL | VARI | VARI-2508-818M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 29 | DEV | NEUM | NEUM-2505-638K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 30 | DEV | BCG | BCG-2607-654A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 31 | TRA | PENT | PENT-2504-482M | 300 | S | S | S | N | S | S | S | N | N | M4+M8 |
+| 32 | ING | PENT | PENT-2606-391A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 33 | DEV | DTA | DTA-2602-236K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | INFL | INFL-2604-777M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 35 | ING | DTA | DTA-2602-797A | 100 | S | S | S | S | S | S | S | N | N | M8 |
+| 36 | SAL | PENT | PENT-2606-391A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 37 | TRA | PENT | PENT-2508-232M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | BCG | BCG-2607-654A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | SPR | SPR-2603-471K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 40 | AJU | NEUM | NEUM-2505-638K | 300 | S | S | S | S | S | S | S | S | S | — |
+
+**Entregas conciliadas — TRAB-11 · Postest (Sistema SIVAC)**
+
+| N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
+| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
+| 1 | 27/09/2026 | 4167 | SPR | 30 | 20 | -10 | GR-4167-8318 | No |
+| 2 | 19/10/2026 | 4167 | DTA | 30 | 30 | 0 | No aplica | Sí |
+| 3 | 11/10/2026 | 4167 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 4 | 11/10/2026 | 4167 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 5 | 10/10/2026 | 4167 | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 6 | 29/09/2026 | 4167 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 7 | 24/09/2026 | 4167 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+| 8 | 22/09/2026 | 4167 | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 9 | 29/09/2026 | 4167 | DTA | 60 | 60 | 0 | No aplica | Sí |
+| 10 | 23/09/2026 | 4167 | PENT | 200 | 200 | 0 | No aplica | Sí |
+| 11 | 08/10/2026 | 4167 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 12 | 25/09/2026 | 4167 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 13 | 11/10/2026 | 4167 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 14 | 01/10/2026 | 4167 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 15 | 05/10/2026 | 4167 | SPR | 60 | 60 | 0 | No aplica | Sí |
+| 16 | 18/10/2026 | 4167 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 17 | 15/10/2026 | 4167 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 18 | 12/10/2026 | 4167 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 19 | 16/10/2026 | 4167 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 20 | 23/09/2026 | 4167 | PENT | 30 | 30 | 0 | No aplica | Sí |
+| 21 | 13/10/2026 | 4167 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 22 | 17/10/2026 | 4167 | ROTA | 50 | 70 | 20 | GR-4167-1862 | No |
+| 23 | 04/10/2026 | 4167 | SPR | 100 | 100 | 0 | No aplica | Sí |
+| 24 | 17/10/2026 | 4167 | IPV | 80 | 80 | 0 | No aplica | Sí |
+| 25 | 09/10/2026 | 4167 | PENT | 50 | 50 | 0 | No aplica | Sí |
+
+Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
+
+---
+
+### Bloque 23 · TRAB-12 · Pretest (proceso manual) · 07/09/2026
+
+Documentos auditados: 40 · Conformes: 23 · RSD: 57.50 % · Entregas conciliadas: 25 · Concordantes: 15 · CPE: 60.00 %
+
+| Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
+| :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | TRA | DTA | DTA-2602-797A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | DTA | DTA-2602-797A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | SPR | SPR-2504-185M | 60 | S | S | S | S | N | S | S | S | N | M5 |
+| 4 | TRA | ROTA | ROTA-2605-833M | 20 | S | N | N | S | S | S | S | S | N | M2+M3 |
+| 5 | ING | ROTA | ROTA-2605-833M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | SPR | SPR-2504-185M | 200 | S | N | S | S | S | S | N | S | N | M2+M7 |
+| 7 | ING | DTA | DTA-2505-409K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | BCG | BCG-2606-296K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 9 | ING | VARI | VARI-2501-250M | 200 | S | S | S | S | S | S | N | S | N | M7 |
+| 10 | SAL | PENT | PENT-2504-482M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | VARI | VARI-2508-818M | 80 | S | S | S | S | N | S | S | S | N | M5 |
+| 12 | DEV | NEUM | NEUM-2507-181K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | DTA | DTA-2606-829K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 14 | TRA | ROTA | ROTA-2603-156K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | DTA | DTA-2505-409K | 150 | S | S | S | S | S | S | S | N | N | M8 |
+| 16 | ING | IPV | IPV-2507-805M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 17 | TRA | INFL | INFL-2604-777M | 100 | S | S | S | N | S | S | S | S | N | M4 |
+| 18 | SAL | PENT | PENT-2606-251M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | PENT | PENT-2605-322M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 20 | AJU | IPV | IPV-2608-446B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 21 | TRA | VARI | VARI-2501-250M | 300 | S | S | S | S | S | S | N | S | N | M7 |
+| 22 | TRA | INFL | INFL-2504-261K | 300 | S | S | S | S | S | S | S | N | N | M8 |
+| 23 | DEV | HEPB | HEPB-2509-474M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 24 | SAL | SPR | SPR-2603-471K | 20 | N | N | S | S | S | S | S | S | N | M1+M2 |
+| 25 | SAL | HEPB | HEPB-2609-917M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 26 | DEV | ROTA | ROTA-2507-417A | 200 | S | S | S | S | N | S | S | S | N | M5 |
+| 27 | ING | DTA | DTA-2505-409K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 28 | AJU | DTA | DTA-2606-829K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 29 | ING | NEUM | NEUM-2506-884B | 40 | S | S | S | S | S | N | S | S | N | M6 |
+| 30 | AJU | BCG | BCG-2606-808K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 31 | TRA | VARI | VARI-2503-521A | 200 | S | S | S | S | S | S | N | S | N | M7 |
+| 32 | SAL | PENT | PENT-2605-322M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 33 | DEV | SPR | SPR-2504-185M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | HEPB | HEPB-2509-474M | 100 | S | S | S | S | S | N | S | S | N | M6 |
+| 35 | SAL | VARI | VARI-2503-521A | 60 | S | S | S | S | S | S | N | S | N | M7 |
+| 36 | SAL | PENT | PENT-2504-482M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 37 | AJU | VARI | VARI-2509-637K | 50 | S | S | S | S | N | S | S | S | N | M5 |
+| 38 | TRA | ROTA | ROTA-2602-464A | 50 | S | S | S | S | N | N | S | S | N | M5+M6 |
+| 39 | SAL | BCG | BCG-2607-654A | 120 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | PENT | PENT-2508-232M | 200 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-12 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 07/09/2026 | 4172 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 2 | 07/09/2026 | 4172 | NEUM | 200 | 220 | 20 | Sí | No |
-| 3 | 07/09/2026 | 4172 | HEPB | 40 | 40 | 0 | No aplica | Sí |
-| 4 | 07/09/2026 | 4172 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 5 | 07/09/2026 | 4172 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 6 | 07/09/2026 | 4172 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 7 | 07/09/2026 | 4172 | PENT | 100 | 90 | -10 | Sí | No |
-| 8 | 07/09/2026 | 4172 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 9 | 07/09/2026 | 4172 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 10 | 07/09/2026 | 4172 | NEUM | 20 | 0 | -20 | Sí | No |
-| 11 | 07/09/2026 | 4172 | IPV | 120 | 130 | 10 | Sí | No |
-| 12 | 07/09/2026 | 4172 | INFL | 150 | 160 | 10 | Sí | No |
-| 13 | 07/09/2026 | 4172 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 14 | 07/09/2026 | 4172 | PENT | 100 | 120 | 20 | Sí | No |
-| 15 | 07/09/2026 | 4172 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 16 | 07/09/2026 | 4172 | HEPB | 30 | 25 | -5 | Sí | No |
-| 17 | 07/09/2026 | 4172 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 18 | 07/09/2026 | 4172 | DTA | 60 | 40 | -20 | Sí | No |
-| 19 | 07/09/2026 | 4172 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 20 | 07/09/2026 | 4172 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 21 | 07/09/2026 | 4172 | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 22 | 07/09/2026 | 4172 | NEUM | 80 | 90 | 10 | Sí | No |
-| 23 | 07/09/2026 | 4172 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 24 | 07/09/2026 | 4172 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 25 | 07/09/2026 | 4172 | PENT | 30 | 20 | -10 | Sí | No |
+| 1 | 18/08/2026 | 4160 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 2 | 02/09/2026 | 4160 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 3 | 31/08/2026 | 4160 | HEPB | 50 | 40 | -10 | Sin guía | No |
+| 4 | 24/08/2026 | 4160 | NEUM | 50 | 50 | 0 | No aplica | Sí |
+| 5 | 01/09/2026 | 4160 | ROTA | 60 | 60 | 0 | No aplica | Sí |
+| 6 | 03/09/2026 | 4160 | IPV | 50 | 50 | 0 | No aplica | Sí |
+| 7 | 04/09/2026 | 4160 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 8 | 10/08/2026 | 4160 | NEUM | 50 | 50 | 0 | No aplica | Sí |
+| 9 | 16/08/2026 | 4160 | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 10 | 30/08/2026 | 4160 | ROTA | 200 | 205 | 5 | Sin guía | No |
+| 11 | 23/08/2026 | 4160 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 12 | 14/08/2026 | 4160 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 13 | 19/08/2026 | 4160 | PENT | 80 | 90 | 10 | GR-4160-2370 | No |
+| 14 | 18/08/2026 | 4160 | VARI | 180 | 180 | 0 | No aplica | Sí |
+| 15 | 21/08/2026 | 4160 | INFL | 20 | 25 | 5 | Sin guía | No |
+| 16 | 25/08/2026 | 4160 | NEUM | 80 | 70 | -10 | GR-4160-7730 | No |
+| 17 | 14/08/2026 | 4160 | HEPB | 100 | 105 | 5 | Sin guía | No |
+| 18 | 17/08/2026 | 4160 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 19 | 14/08/2026 | 4160 | HEPB | 50 | 40 | -10 | Sin guía | No |
+| 20 | 25/08/2026 | 4160 | PENT | 50 | 40 | -10 | GR-4160-9463 | No |
+| 21 | 25/08/2026 | 4160 | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 22 | 22/08/2026 | 4160 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 23 | 13/08/2026 | 4160 | PENT | 80 | 80 | 0 | No aplica | Sí |
+| 24 | 28/08/2026 | 4160 | ROTA | 120 | 140 | 20 | GR-4160-4715 | No |
+| 25 | 06/09/2026 | 4160 | SPR | 80 | 85 | 5 | Sin guía | No |
 
 Cierre: 15 entregas concordantes ÷ 25 × 100 = **60.00 %**.
 
@@ -2682,76 +2684,76 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | TRA | SPR | L-2610-01 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 2 | DEV | HEPB | L-2610-02 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 3 | ING | BCG | L-2610-03 | 80 | S | S | S | S | S | S | N | S | N | M7 |
-| 4 | AJU | HEPB | L-2610-04 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | SPR | L-2610-05 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 6 | TRA | IPV | L-2610-06 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 7 | TRA | IPV | L-2610-07 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | IPV | L-2610-08 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 9 | ING | INFL | L-2610-09 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | IPV | L-2610-10 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 11 | SAL | BCG | L-2610-11 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 12 | ING | DTA | L-2610-12 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 13 | DEV | ROTA | L-2610-13 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 14 | AJU | PENT | L-2610-14 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 15 | DEV | PENT | L-2610-15 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 16 | ING | PENT | L-2610-16 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | IPV | L-2610-17 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 18 | ING | DTA | L-2610-18 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 19 | DEV | BCG | L-2610-19 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 20 | AJU | VARI | L-2610-20 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 21 | ING | IPV | L-2610-21 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 22 | ING | DTA | L-2610-22 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 23 | DEV | ROTA | L-2610-23 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | NEUM | L-2610-24 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 25 | AJU | PENT | L-2610-25 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 26 | TRA | BCG | L-2610-26 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | DTA | L-2610-27 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 28 | AJU | BCG | L-2610-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | ING | NEUM | L-2610-29 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 30 | ING | SPR | L-2610-30 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 31 | AJU | DTA | L-2610-31 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 32 | TRA | VARI | L-2610-32 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | PENT | L-2610-33 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 34 | DEV | INFL | L-2610-34 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | SPR | L-2610-35 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 36 | ING | VARI | L-2610-36 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | HEPB | L-2610-37 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 38 | DEV | IPV | L-2610-38 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 39 | ING | SPR | L-2610-39 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 40 | ING | ROTA | L-2610-40 | 40 | S | S | S | S | S | S | S | S | S | — |
+| 1 | TRA | BCG | BCG-2507-694K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 2 | TRA | BCG | BCG-2606-296K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | BCG | BCG-2607-654A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 4 | ING | DTA | DTA-2606-829K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 5 | ING | HEPB | HEPB-2609-521M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 6 | SAL | NEUM | NEUM-2506-884B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | HEPB | HEPB-2603-786K | 150 | S | S | S | N | S | S | N | S | N | M4+M7 |
+| 8 | SAL | SPR | SPR-2608-539M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 9 | AJU | IPV | IPV-2605-698M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | PENT | PENT-2606-391A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | BCG | BCG-2504-789B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 12 | ING | HEPB | HEPB-2509-474M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | VARI | VARI-2501-250M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | SPR | SPR-2606-500M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 15 | ING | BCG | BCG-2507-694K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 16 | TRA | SPR | SPR-2606-500M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 17 | SAL | DTA | DTA-2602-797A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | INFL | INFL-2603-792B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 19 | ING | INFL | INFL-2504-261K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 20 | AJU | ROTA | ROTA-2602-464A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 21 | TRA | PENT | PENT-2504-482M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 22 | AJU | PENT | PENT-2606-251M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | INFL | INFL-2504-261K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | ROTA | ROTA-2507-417A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | DTA | DTA-2602-236K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 26 | ING | PENT | PENT-2504-482M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 27 | AJU | BCG | BCG-2607-654A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 28 | SAL | HEPB | HEPB-2509-474M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 29 | TRA | INFL | INFL-2603-792B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | INFL | INFL-2508-359M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 31 | DEV | NEUM | NEUM-2505-638K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | DTA | DTA-2602-797A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 33 | ING | SPR | SPR-2504-185M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 34 | AJU | NEUM | NEUM-2509-952A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 35 | AJU | NEUM | NEUM-2505-688A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 36 | TRA | SPR | SPR-2504-185M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 37 | ING | ROTA | ROTA-2507-417A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 38 | ING | ROTA | ROTA-2507-417A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | NEUM | NEUM-2509-952A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | NEUM | NEUM-2509-952A | 240 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-12 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 19/10/2026 | 4172 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 2 | 19/10/2026 | 4172 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 3 | 19/10/2026 | 4172 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 4 | 19/10/2026 | 4172 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 5 | 19/10/2026 | 4172 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 6 | 19/10/2026 | 4172 | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 7 | 19/10/2026 | 4172 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 8 | 19/10/2026 | 4172 | SPR | 100 | 110 | 10 | Sí | No |
-| 9 | 19/10/2026 | 4172 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 19/10/2026 | 4172 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 11 | 19/10/2026 | 4172 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 12 | 19/10/2026 | 4172 | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 13 | 19/10/2026 | 4172 | ROTA | 180 | 170 | -10 | Sí | No |
-| 14 | 19/10/2026 | 4172 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 15 | 19/10/2026 | 4172 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 16 | 19/10/2026 | 4172 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 17 | 19/10/2026 | 4172 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 18 | 19/10/2026 | 4172 | INFL | 180 | 180 | 0 | No aplica | Sí |
-| 19 | 19/10/2026 | 4172 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 20 | 19/10/2026 | 4172 | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 21 | 19/10/2026 | 4172 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 22 | 19/10/2026 | 4172 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 23 | 19/10/2026 | 4172 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 24 | 19/10/2026 | 4172 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 25 | 19/10/2026 | 4172 | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 1 | 06/10/2026 | 4160 | PENT | 120 | 120 | 0 | No aplica | Sí |
+| 2 | 26/09/2026 | 4160 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 3 | 13/10/2026 | 4160 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 4 | 22/09/2026 | 4160 | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 5 | 04/10/2026 | 4160 | SPR | 100 | 100 | 0 | No aplica | Sí |
+| 6 | 10/10/2026 | 4160 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 7 | 04/10/2026 | 4160 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 8 | 12/10/2026 | 4160 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 9 | 10/10/2026 | 4160 | INFL | 120 | 120 | 0 | No aplica | Sí |
+| 10 | 12/10/2026 | 4160 | PENT | 30 | 30 | 0 | No aplica | Sí |
+| 11 | 26/09/2026 | 4160 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 12 | 04/10/2026 | 4160 | NEUM | 20 | 10 | -10 | GR-4160-8865 | No |
+| 13 | 16/10/2026 | 4160 | NEUM | 30 | 20 | -10 | GR-4160-8470 | No |
+| 14 | 21/09/2026 | 4160 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 15 | 03/10/2026 | 4160 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 16 | 09/10/2026 | 4160 | DTA | 40 | 40 | 0 | No aplica | Sí |
+| 17 | 12/10/2026 | 4160 | NEUM | 120 | 120 | 0 | No aplica | Sí |
+| 18 | 07/10/2026 | 4160 | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 19 | 05/10/2026 | 4160 | DTA | 120 | 120 | 0 | No aplica | Sí |
+| 20 | 19/10/2026 | 4160 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 21 | 21/09/2026 | 4160 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 22 | 04/10/2026 | 4160 | PENT | 100 | 100 | 0 | No aplica | Sí |
+| 23 | 19/10/2026 | 4160 | NEUM | 120 | 120 | 0 | No aplica | Sí |
+| 24 | 05/10/2026 | 4160 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+| 25 | 28/09/2026 | 4160 | INFL | 100 | 100 | 0 | No aplica | Sí |
 
 Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
 
@@ -2759,161 +2761,161 @@ Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
 
 ### Bloque 25 · TRAB-13 · Pretest (proceso manual) · 08/09/2026
 
-Documentos auditados: 40 · Conformes: 33 · RSD: 82.50 % · Entregas conciliadas: 25 · Concordantes: 12 · CPE: 48.00 %
+Documentos auditados: 40 · Conformes: 27 · RSD: 67.50 % · Entregas conciliadas: 25 · Concordantes: 18 · CPE: 72.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | IPV | L-2609-01 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | BCG | L-2609-02 | 100 | S | N | S | S | S | S | S | S | N | M2 |
-| 3 | SAL | ROTA | L-2609-03 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 4 | SAL | ROTA | L-2609-04 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 5 | ING | BCG | L-2609-05 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 6 | ING | SPR | L-2609-06 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 7 | TRA | INFL | L-2609-07 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 8 | SAL | IPV | L-2609-08 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | SPR | L-2609-09 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 10 | ING | PENT | L-2609-10 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 11 | TRA | HEPB | L-2609-11 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 12 | SAL | NEUM | L-2609-12 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 13 | TRA | NEUM | L-2609-13 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 14 | SAL | SPR | L-2609-14 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 15 | SAL | BCG | L-2609-15 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 16 | SAL | ROTA | L-2609-16 | 120 | S | S | S | S | S | N | S | S | N | M6 |
-| 17 | SAL | BCG | L-2609-17 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 18 | AJU | NEUM | L-2609-18 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 19 | ING | PENT | L-2609-19 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 20 | DEV | INFL | L-2609-20 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 21 | TRA | INFL | L-2609-21 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 22 | AJU | IPV | L-2609-22 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 23 | DEV | IPV | L-2609-23 | 40 | S | S | S | N | S | S | S | S | N | M4 |
-| 24 | SAL | NEUM | L-2609-24 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 25 | TRA | SPR | L-2609-25 | 180 | S | S | S | S | S | N | S | S | N | M6 |
-| 26 | TRA | IPV | L-2609-26 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 27 | ING | HEPB | L-2609-27 | 80 | S | S | N | S | S | S | S | S | N | M3 |
-| 28 | TRA | PENT | L-2609-28 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 29 | AJU | INFL | L-2609-29 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 30 | SAL | NEUM | L-2609-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | TRA | SPR | L-2609-31 | 200 | S | S | S | S | S | N | S | S | N | M6 |
-| 32 | AJU | INFL | L-2609-32 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 33 | SAL | INFL | L-2609-33 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 34 | SAL | SPR | L-2609-34 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | NEUM | L-2609-35 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 36 | ING | VARI | L-2609-36 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 37 | TRA | PENT | L-2609-37 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 38 | DEV | SPR | L-2609-38 | 240 | S | N | S | S | S | S | S | S | N | M2 |
-| 39 | TRA | VARI | L-2609-39 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 40 | SAL | SPR | L-2609-40 | 40 | S | S | S | S | S | S | S | S | S | — |
+| 1 | SAL | ROTA | ROTA-2603-156K | 20 | S | S | S | S | S | S | N | S | N | M7 |
+| 2 | ING | INFL | INFL-2504-261K | 30 | S | S | S | S | S | S | S | N | N | M8 |
+| 3 | AJU | HEPB | HEPB-2609-917M | 80 | S | N | S | S | S | N | S | S | N | M2+M6 |
+| 4 | DEV | HEPB | HEPB-2609-521M | 300 | S | S | N | S | S | N | S | S | N | M3+M6 |
+| 5 | SAL | INFL | INFL-2504-261K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 6 | ING | BCG | BCG-2606-296K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | HEPB | HEPB-2602-318M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 8 | SAL | ROTA | ROTA-2502-563B | 180 | S | S | S | S | S | S | S | S | S | — |
+| 9 | TRA | HEPB | HEPB-2603-786K | 200 | S | N | S | S | S | S | S | S | N | M2 |
+| 10 | SAL | ROTA | ROTA-2602-464A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 11 | SAL | SPR | SPR-2504-185M | 20 | S | N | S | S | S | S | S | S | N | M2 |
+| 12 | SAL | IPV | IPV-2605-698M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | INFL | INFL-2604-777M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 14 | TRA | HEPB | HEPB-2603-786K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 15 | SAL | DTA | DTA-2505-409K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | IPV | IPV-2605-698M | 240 | S | S | S | S | S | S | S | N | N | M8 |
+| 17 | TRA | NEUM | NEUM-2506-884B | 120 | S | S | S | S | S | S | S | S | S | — |
+| 18 | TRA | PENT | PENT-2605-322M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 19 | DEV | ROTA | ROTA-2602-464A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 20 | DEV | IPV | IPV-2507-805M | 50 | S | S | S | S | N | S | S | S | N | M5 |
+| 21 | TRA | IPV | IPV-2608-446B | 50 | S | N | S | S | S | S | S | S | N | M2 |
+| 22 | DEV | NEUM | NEUM-2509-952A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 23 | ING | SPR | SPR-2504-185M | 60 | S | S | S | S | S | N | S | N | N | M6+M8 |
+| 24 | ING | SPR | SPR-2603-471K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 25 | ING | HEPB | HEPB-2609-521M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 26 | TRA | PENT | PENT-2504-482M | 20 | S | S | S | S | S | N | S | S | N | M6 |
+| 27 | ING | BCG | BCG-2606-808K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | PENT | PENT-2606-251M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 29 | DEV | SPR | SPR-2609-423M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 30 | ING | VARI | VARI-2501-250M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 31 | ING | VARI | VARI-2501-250M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 32 | ING | BCG | BCG-2507-694K | 240 | S | S | S | S | S | S | S | S | S | — |
+| 33 | TRA | HEPB | HEPB-2609-521M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | VARI | VARI-2503-521A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 35 | ING | SPR | SPR-2603-471K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 36 | DEV | INFL | INFL-2607-737M | 50 | S | S | N | S | S | S | S | S | N | M3 |
+| 37 | SAL | INFL | INFL-2504-261K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 38 | SAL | NEUM | NEUM-2505-638K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | HEPB | HEPB-2609-521M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 40 | DEV | DTA | DTA-2602-797A | 40 | S | S | S | N | S | S | S | S | N | M4 |
 
 **Entregas conciliadas — TRAB-13 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 08/09/2026 | 4183 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 2 | 08/09/2026 | 4183 | INFL | 60 | 80 | 20 | Sí | No |
-| 3 | 08/09/2026 | 4183 | IPV | 60 | 50 | -10 | Sí | No |
-| 4 | 08/09/2026 | 4183 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 5 | 08/09/2026 | 4183 | ROTA | 180 | 190 | 10 | Sí | No |
-| 6 | 08/09/2026 | 4183 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 7 | 08/09/2026 | 4183 | PENT | 150 | 145 | -5 | Sí | No |
-| 8 | 08/09/2026 | 4183 | INFL | 20 | 10 | -10 | Sí | No |
-| 9 | 08/09/2026 | 4183 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 10 | 08/09/2026 | 4183 | BCG | 40 | 20 | -20 | Sí | No |
-| 11 | 08/09/2026 | 4183 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 12 | 08/09/2026 | 4183 | ROTA | 50 | 70 | 20 | Sí | No |
-| 13 | 08/09/2026 | 4183 | INFL | 100 | 100 | 0 | No aplica | Sí |
-| 14 | 08/09/2026 | 4183 | PENT | 50 | 40 | -10 | Sí | No |
-| 15 | 08/09/2026 | 4183 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 16 | 08/09/2026 | 4183 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 08/09/2026 | 4183 | ROTA | 50 | 30 | -20 | Sí | No |
-| 18 | 08/09/2026 | 4183 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 19 | 08/09/2026 | 4183 | NEUM | 120 | 100 | -20 | Sí | No |
-| 20 | 08/09/2026 | 4183 | DTA | 20 | 30 | 10 | Sí | No |
-| 21 | 08/09/2026 | 4183 | DTA | 180 | 170 | -10 | Sí | No |
-| 22 | 08/09/2026 | 4183 | NEUM | 150 | 150 | 0 | No aplica | Sí |
-| 23 | 08/09/2026 | 4183 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 24 | 08/09/2026 | 4183 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 25 | 08/09/2026 | 4183 | SPR | 180 | 175 | -5 | Sí | No |
+| 1 | 12/08/2026 | 4163 | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 2 | 31/08/2026 | 4163 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 3 | 03/09/2026 | 4163 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 4 | 18/08/2026 | 4163 | NEUM | 20 | 10 | -10 | Sin guía | No |
+| 5 | 27/08/2026 | 4163 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 6 | 28/08/2026 | 4163 | PENT | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 07/09/2026 | 4163 | BCG | 30 | 30 | 0 | No aplica | Sí |
+| 8 | 14/08/2026 | 4163 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 9 | 05/09/2026 | 4163 | PENT | 120 | 120 | 0 | No aplica | Sí |
+| 10 | 06/09/2026 | 4163 | VARI | 120 | 120 | 0 | No aplica | Sí |
+| 11 | 14/08/2026 | 4163 | IPV | 120 | 120 | 0 | No aplica | Sí |
+| 12 | 30/08/2026 | 4163 | PENT | 150 | 145 | -5 | GR-4163-4796 | No |
+| 13 | 05/09/2026 | 4163 | NEUM | 120 | 110 | -10 | Sin guía | No |
+| 14 | 01/09/2026 | 4163 | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 15 | 18/08/2026 | 4163 | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 16 | 19/08/2026 | 4163 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 17 | 18/08/2026 | 4163 | ROTA | 30 | 30 | 0 | No aplica | Sí |
+| 18 | 12/08/2026 | 4163 | BCG | 30 | 20 | -10 | Sin guía | No |
+| 19 | 22/08/2026 | 4163 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 20 | 20/08/2026 | 4163 | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 02/09/2026 | 4163 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 22 | 03/09/2026 | 4163 | INFL | 180 | 160 | -20 | GR-4163-7804 | No |
+| 23 | 31/08/2026 | 4163 | NEUM | 30 | 25 | -5 | GR-4163-3048 | No |
+| 24 | 06/09/2026 | 4163 | VARI | 120 | 115 | -5 | GR-4163-3182 | No |
+| 25 | 20/08/2026 | 4163 | SPR | 30 | 30 | 0 | No aplica | Sí |
 
-Cierre: 12 entregas concordantes ÷ 25 × 100 = **48.00 %**.
+Cierre: 18 entregas concordantes ÷ 25 × 100 = **72.00 %**.
 
 ---
 
 ### Bloque 26 · TRAB-13 · Postest (Sistema SIVAC) · 20/10/2026
 
-Documentos auditados: 40 · Conformes: 34 · RSD: 85.00 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
+Documentos auditados: 40 · Conformes: 37 · RSD: 92.50 % · Entregas conciliadas: 25 · Concordantes: 24 · CPE: 96.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | TRA | NEUM | L-2610-01 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 2 | TRA | HEPB | L-2610-02 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 3 | DEV | IPV | L-2610-03 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 4 | TRA | VARI | L-2610-04 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 5 | DEV | SPR | L-2610-05 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 6 | SAL | IPV | L-2610-06 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 7 | ING | PENT | L-2610-07 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 8 | AJU | BCG | L-2610-08 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 9 | TRA | SPR | L-2610-09 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | HEPB | L-2610-10 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 11 | SAL | VARI | L-2610-11 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 12 | AJU | DTA | L-2610-12 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 13 | DEV | DTA | L-2610-13 | 100 | S | S | S | S | S | N | S | S | N | M6 |
-| 14 | AJU | SPR | L-2610-14 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 15 | AJU | BCG | L-2610-15 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 16 | SAL | PENT | L-2610-16 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | PENT | L-2610-17 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 18 | TRA | VARI | L-2610-18 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | INFL | L-2610-19 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 20 | SAL | PENT | L-2610-20 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 21 | SAL | VARI | L-2610-21 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 22 | DEV | HEPB | L-2610-22 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 23 | TRA | INFL | L-2610-23 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 24 | AJU | PENT | L-2610-24 | 60 | S | S | N | S | S | S | S | S | N | M3 |
-| 25 | ING | IPV | L-2610-25 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 26 | SAL | NEUM | L-2610-26 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 27 | SAL | IPV | L-2610-27 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 28 | TRA | IPV | L-2610-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | ING | DTA | L-2610-29 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 30 | TRA | DTA | L-2610-30 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 31 | AJU | PENT | L-2610-31 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 32 | AJU | INFL | L-2610-32 | 200 | S | N | S | S | S | S | S | S | N | M2 |
-| 33 | ING | NEUM | L-2610-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | AJU | BCG | L-2610-34 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | VARI | L-2610-35 | 80 | N | S | S | S | S | S | S | S | N | M1 |
-| 36 | AJU | SPR | L-2610-36 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 37 | AJU | VARI | L-2610-37 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 38 | AJU | INFL | L-2610-38 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 39 | AJU | BCG | L-2610-39 | 300 | S | S | S | N | S | S | S | S | N | M4 |
-| 40 | AJU | SPR | L-2610-40 | 20 | S | S | S | S | S | S | S | S | S | — |
+| 1 | SAL | PENT | PENT-2606-251M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 2 | SAL | INFL | INFL-2604-777M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 3 | ING | VARI | VARI-2607-979A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 4 | AJU | VARI | VARI-2503-521A | 30 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | VARI | VARI-2509-637K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 6 | DEV | DTA | DTA-2603-463K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 7 | TRA | NEUM | NEUM-2507-181K | 60 | S | S | S | S | S | S | N | N | N | M7+M8 |
+| 8 | ING | INFL | INFL-2508-359M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | NEUM | NEUM-2509-952A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | HEPB | HEPB-2609-521M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | INFL | INFL-2607-737M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 12 | ING | IPV | IPV-2504-587B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 13 | SAL | DTA | DTA-2602-797A | 200 | S | S | S | S | S | S | S | S | S | — |
+| 14 | DEV | IPV | IPV-2608-446B | 240 | S | S | S | S | S | S | S | S | S | — |
+| 15 | TRA | VARI | VARI-2509-637K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | VARI | VARI-2501-250M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | PENT | PENT-2606-391A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 18 | ING | ROTA | ROTA-2602-464A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 19 | TRA | VARI | VARI-2508-818M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | PENT | PENT-2508-232M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | IPV | IPV-2608-446B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 22 | AJU | SPR | SPR-2609-423M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 23 | TRA | ROTA | ROTA-2502-563B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 24 | TRA | VARI | VARI-2503-521A | 50 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | BCG | BCG-2606-296K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | VARI | VARI-2508-818M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 27 | ING | DTA | DTA-2602-797A | 20 | S | S | S | S | N | S | S | S | N | M5 |
+| 28 | SAL | VARI | VARI-2503-521A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 29 | ING | IPV | IPV-2504-587B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | ROTA | ROTA-2507-417A | 300 | S | S | S | S | S | S | S | S | S | — |
+| 31 | SAL | NEUM | NEUM-2509-952A | 100 | S | S | S | S | S | N | S | S | N | M6 |
+| 32 | DEV | INFL | INFL-2607-737M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | NEUM | NEUM-2509-952A | 100 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | PENT | PENT-2605-322M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 35 | SAL | ROTA | ROTA-2605-833M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 36 | ING | NEUM | NEUM-2505-638K | 80 | S | S | S | S | S | S | S | S | S | — |
+| 37 | SAL | HEPB | HEPB-2509-474M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 38 | ING | INFL | INFL-2603-792B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 39 | AJU | HEPB | HEPB-2603-786K | 200 | S | S | S | S | S | S | S | S | S | — |
+| 40 | TRA | ROTA | ROTA-2502-563B | 60 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-13 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 20/10/2026 | 4183 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 2 | 20/10/2026 | 4183 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 3 | 20/10/2026 | 4183 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 4 | 20/10/2026 | 4183 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 5 | 20/10/2026 | 4183 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 6 | 20/10/2026 | 4183 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 7 | 20/10/2026 | 4183 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 8 | 20/10/2026 | 4183 | HEPB | 20 | 20 | 0 | No aplica | Sí |
-| 9 | 20/10/2026 | 4183 | PENT | 60 | 60 | 0 | No aplica | Sí |
-| 10 | 20/10/2026 | 4183 | VARI | 30 | 30 | 0 | No aplica | Sí |
-| 11 | 20/10/2026 | 4183 | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 12 | 20/10/2026 | 4183 | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 20/10/2026 | 4183 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 14 | 20/10/2026 | 4183 | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 15 | 20/10/2026 | 4183 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 16 | 20/10/2026 | 4183 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 17 | 20/10/2026 | 4183 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 20/10/2026 | 4183 | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 20/10/2026 | 4183 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 20 | 20/10/2026 | 4183 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 21 | 20/10/2026 | 4183 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 22 | 20/10/2026 | 4183 | BCG | 200 | 200 | 0 | No aplica | Sí |
-| 23 | 20/10/2026 | 4183 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 24 | 20/10/2026 | 4183 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 25 | 20/10/2026 | 4183 | VARI | 180 | 200 | 20 | Sí | No |
+| 1 | 20/10/2026 | 4163 | INFL | 150 | 150 | 0 | No aplica | Sí |
+| 2 | 11/10/2026 | 4163 | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 3 | 19/10/2026 | 4163 | NEUM | 40 | 40 | 0 | No aplica | Sí |
+| 4 | 12/10/2026 | 4163 | INFL | 50 | 50 | 0 | No aplica | Sí |
+| 5 | 23/09/2026 | 4163 | IPV | 120 | 120 | 0 | No aplica | Sí |
+| 6 | 20/10/2026 | 4163 | VARI | 150 | 150 | 0 | No aplica | Sí |
+| 7 | 08/10/2026 | 4163 | INFL | 150 | 150 | 0 | No aplica | Sí |
+| 8 | 18/10/2026 | 4163 | SPR | 50 | 50 | 0 | No aplica | Sí |
+| 9 | 05/10/2026 | 4163 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 10 | 09/10/2026 | 4163 | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 11 | 23/09/2026 | 4163 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 12 | 14/10/2026 | 4163 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 13 | 08/10/2026 | 4163 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 14 | 27/09/2026 | 4163 | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 15 | 30/09/2026 | 4163 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 16 | 07/10/2026 | 4163 | BCG | 100 | 100 | 0 | No aplica | Sí |
+| 17 | 17/10/2026 | 4163 | NEUM | 150 | 150 | 0 | No aplica | Sí |
+| 18 | 22/09/2026 | 4163 | DTA | 50 | 40 | -10 | GR-4163-2795 | No |
+| 19 | 13/10/2026 | 4163 | SPR | 200 | 200 | 0 | No aplica | Sí |
+| 20 | 02/10/2026 | 4163 | IPV | 200 | 200 | 0 | No aplica | Sí |
+| 21 | 11/10/2026 | 4163 | VARI | 60 | 60 | 0 | No aplica | Sí |
+| 22 | 22/09/2026 | 4163 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 23 | 12/10/2026 | 4163 | NEUM | 200 | 200 | 0 | No aplica | Sí |
+| 24 | 30/09/2026 | 4163 | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 25 | 29/09/2026 | 4163 | PENT | 120 | 120 | 0 | No aplica | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -2921,80 +2923,80 @@ Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
 ### Bloque 27 · TRAB-14 · Pretest (proceso manual) · 08/09/2026
 
-Documentos auditados: 40 · Conformes: 27 · RSD: 67.50 % · Entregas conciliadas: 25 · Concordantes: 17 · CPE: 68.00 %
+Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliadas: 25 · Concordantes: 17 · CPE: 68.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | SAL | HEPB | L-2609-01 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 2 | AJU | BCG | L-2609-02 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 3 | DEV | HEPB | L-2609-03 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 4 | DEV | BCG | L-2609-04 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 5 | TRA | VARI | L-2609-05 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 6 | TRA | HEPB | L-2609-06 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 7 | TRA | DTA | L-2609-07 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 8 | ING | SPR | L-2609-08 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 9 | SAL | BCG | L-2609-09 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 10 | TRA | VARI | L-2609-10 | 200 | S | S | S | S | S | S | S | N | N | M8 |
-| 11 | SAL | IPV | L-2609-11 | 200 | S | S | S | S | N | S | S | S | N | M5 |
-| 12 | DEV | HEPB | L-2609-12 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 13 | ING | NEUM | L-2609-13 | 200 | S | S | S | S | S | N | S | S | N | M6 |
-| 14 | DEV | BCG | L-2609-14 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 15 | TRA | SPR | L-2609-15 | 100 | S | N | S | S | S | S | S | S | N | M2 |
-| 16 | ING | VARI | L-2609-16 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 17 | TRA | IPV | L-2609-17 | 40 | S | S | S | S | N | S | S | S | N | M5 |
-| 18 | TRA | BCG | L-2609-18 | 100 | S | S | S | S | N | S | S | S | N | M5 |
-| 19 | AJU | IPV | L-2609-19 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 20 | AJU | ROTA | L-2609-20 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 21 | AJU | NEUM | L-2609-21 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 22 | SAL | ROTA | L-2609-22 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 23 | TRA | PENT | L-2609-23 | 150 | S | S | S | S | N | S | S | S | N | M5 |
-| 24 | SAL | IPV | L-2609-24 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 25 | DEV | HEPB | L-2609-25 | 120 | N | S | S | S | S | S | S | S | N | M1 |
-| 26 | TRA | NEUM | L-2609-26 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 27 | AJU | PENT | L-2609-27 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 28 | ING | VARI | L-2609-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | SAL | HEPB | L-2609-29 | 20 | S | S | S | S | S | S | N | S | N | M7 |
-| 30 | TRA | DTA | L-2609-30 | 300 | S | S | S | N | S | S | S | S | N | M4 |
-| 31 | ING | HEPB | L-2609-31 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 32 | SAL | SPR | L-2609-32 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 33 | DEV | SPR | L-2609-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | AJU | SPR | L-2609-34 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 35 | AJU | BCG | L-2609-35 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 36 | SAL | INFL | L-2609-36 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 37 | SAL | ROTA | L-2609-37 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 38 | SAL | BCG | L-2609-38 | 120 | N | S | S | S | S | S | S | S | N | M1 |
-| 39 | ING | SPR | L-2609-39 | 300 | S | N | S | S | S | S | S | S | N | M2 |
-| 40 | SAL | DTA | L-2609-40 | 200 | S | S | S | S | S | S | S | S | S | — |
+| 1 | TRA | SPR | SPR-2608-539M | 60 | S | S | S | S | N | S | N | S | N | M5+M7 |
+| 2 | SAL | NEUM | NEUM-2505-638K | 60 | S | N | S | S | S | S | S | S | N | M2 |
+| 3 | SAL | ROTA | ROTA-2507-417A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 4 | SAL | IPV | IPV-2605-698M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | BCG | BCG-2504-789B | 180 | S | N | S | S | S | S | S | S | N | M2 |
+| 6 | ING | IPV | IPV-2608-446B | 200 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | IPV | IPV-2605-698M | 300 | S | S | N | S | S | N | S | S | N | M3+M6 |
+| 8 | SAL | HEPB | HEPB-2609-917M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 9 | TRA | IPV | IPV-2507-805M | 120 | S | S | S | S | S | S | S | S | S | — |
+| 10 | SAL | NEUM | NEUM-2506-884B | 240 | S | S | S | S | S | S | S | N | N | M8 |
+| 11 | SAL | NEUM | NEUM-2505-688A | 150 | S | S | S | S | S | S | S | S | S | — |
+| 12 | SAL | IPV | IPV-2507-805M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 13 | AJU | INFL | INFL-2603-792B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 14 | AJU | NEUM | NEUM-2505-638K | 60 | S | S | S | S | S | S | N | S | N | M7 |
+| 15 | ING | PENT | PENT-2508-232M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 16 | SAL | PENT | PENT-2606-251M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 17 | SAL | HEPB | HEPB-2509-474M | 60 | S | S | S | S | S | N | S | S | N | M6 |
+| 18 | SAL | NEUM | NEUM-2505-638K | 300 | S | S | S | S | S | S | S | S | S | — |
+| 19 | DEV | ROTA | ROTA-2603-156K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 20 | SAL | ROTA | ROTA-2507-417A | 80 | S | S | S | N | S | S | S | S | N | M4 |
+| 21 | SAL | SPR | SPR-2606-500M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 22 | SAL | VARI | VARI-2501-250M | 40 | S | S | S | S | S | S | S | S | S | — |
+| 23 | TRA | NEUM | NEUM-2507-181K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 24 | DEV | DTA | DTA-2606-829K | 20 | S | S | S | S | S | S | S | S | S | — |
+| 25 | TRA | DTA | DTA-2505-409K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 26 | TRA | INFL | INFL-2604-777M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | HEPB | HEPB-2609-521M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 28 | DEV | PENT | PENT-2605-322M | 240 | S | S | S | S | S | S | S | N | N | M8 |
+| 29 | ING | NEUM | NEUM-2505-638K | 50 | S | S | S | S | S | S | S | S | S | — |
+| 30 | SAL | NEUM | NEUM-2505-638K | 120 | S | S | S | N | S | S | S | S | N | M4 |
+| 31 | TRA | BCG | BCG-2606-296K | 180 | S | S | S | S | S | S | S | S | S | — |
+| 32 | SAL | NEUM | NEUM-2507-181K | 120 | S | S | S | S | S | S | S | S | S | — |
+| 33 | TRA | IPV | IPV-2504-587B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 34 | SAL | INFL | INFL-2604-777M | 20 | N | S | S | S | S | S | N | S | N | M1+M7 |
+| 35 | TRA | PENT | PENT-2605-322M | 80 | S | S | S | S | S | S | S | S | S | — |
+| 36 | ING | VARI | VARI-2607-979A | 240 | S | S | S | S | S | S | S | N | N | M8 |
+| 37 | SAL | HEPB | HEPB-2509-474M | 50 | S | S | S | S | S | S | N | S | N | M7 |
+| 38 | TRA | INFL | INFL-2607-737M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 39 | SAL | ROTA | ROTA-2603-156K | 60 | S | S | S | S | S | N | S | S | N | M6 |
+| 40 | SAL | PENT | PENT-2605-322M | 300 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-14 · Pretest (proceso manual)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 08/09/2026 | 4195 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 08/09/2026 | 4195 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 3 | 08/09/2026 | 4195 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 4 | 08/09/2026 | 4195 | NEUM | 80 | 70 | -10 | Sí | No |
-| 5 | 08/09/2026 | 4195 | VARI | 30 | 30 | 0 | No aplica | Sí |
-| 6 | 08/09/2026 | 4195 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 7 | 08/09/2026 | 4195 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 8 | 08/09/2026 | 4195 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 9 | 08/09/2026 | 4195 | DTA | 80 | 75 | -5 | Sí | No |
-| 10 | 08/09/2026 | 4195 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 11 | 08/09/2026 | 4195 | HEPB | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 08/09/2026 | 4195 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 13 | 08/09/2026 | 4195 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 14 | 08/09/2026 | 4195 | ROTA | 120 | 110 | -10 | Sí | No |
-| 15 | 08/09/2026 | 4195 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 16 | 08/09/2026 | 4195 | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 08/09/2026 | 4195 | BCG | 40 | 60 | 20 | Sí | No |
-| 18 | 08/09/2026 | 4195 | INFL | 40 | 30 | -10 | Sí | No |
-| 19 | 08/09/2026 | 4195 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 20 | 08/09/2026 | 4195 | NEUM | 40 | 35 | -5 | Sí | No |
-| 21 | 08/09/2026 | 4195 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 22 | 08/09/2026 | 4195 | DTA | 120 | 110 | -10 | Sí | No |
-| 23 | 08/09/2026 | 4195 | BCG | 50 | 45 | -5 | Sí | No |
-| 24 | 08/09/2026 | 4195 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 25 | 08/09/2026 | 4195 | BCG | 40 | 40 | 0 | No aplica | Sí |
+| 1 | 07/09/2026 | 4183 | HEPB | 200 | 190 | -10 | Sin guía | No |
+| 2 | 21/08/2026 | 4183 | BCG | 80 | 80 | 0 | No aplica | Sí |
+| 3 | 05/09/2026 | 4183 | HEPB | 120 | 120 | 0 | No aplica | Sí |
+| 4 | 08/09/2026 | 4183 | VARI | 150 | 155 | 5 | GR-4183-3005 | No |
+| 5 | 29/08/2026 | 4183 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 6 | 25/08/2026 | 4183 | INFL | 100 | 100 | 0 | No aplica | Sí |
+| 7 | 31/08/2026 | 4183 | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 8 | 27/08/2026 | 4183 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 9 | 03/09/2026 | 4183 | IPV | 150 | 150 | 0 | No aplica | Sí |
+| 10 | 21/08/2026 | 4183 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 11 | 16/08/2026 | 4183 | IPV | 150 | 160 | 10 | GR-4183-6681 | No |
+| 12 | 21/08/2026 | 4183 | PENT | 120 | 120 | 0 | No aplica | Sí |
+| 13 | 30/08/2026 | 4183 | PENT | 200 | 200 | 0 | No aplica | Sí |
+| 14 | 27/08/2026 | 4183 | INFL | 80 | 75 | -5 | GR-4183-2121 | No |
+| 15 | 11/08/2026 | 4183 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 16 | 19/08/2026 | 4183 | BCG | 40 | 50 | 10 | GR-4183-2919 | No |
+| 17 | 23/08/2026 | 4183 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 18 | 22/08/2026 | 4183 | BCG | 80 | 85 | 5 | Sin guía | No |
+| 19 | 25/08/2026 | 4183 | BCG | 40 | 35 | -5 | Sin guía | No |
+| 20 | 25/08/2026 | 4183 | SPR | 50 | 45 | -5 | GR-4183-5097 | No |
+| 21 | 18/08/2026 | 4183 | DTA | 80 | 80 | 0 | No aplica | Sí |
+| 22 | 04/09/2026 | 4183 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 23 | 06/09/2026 | 4183 | PENT | 100 | 100 | 0 | No aplica | Sí |
+| 24 | 04/09/2026 | 4183 | PENT | 100 | 100 | 0 | No aplica | Sí |
+| 25 | 14/08/2026 | 4183 | HEPB | 200 | 200 | 0 | No aplica | Sí |
 
 Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
 
@@ -3002,82 +3004,84 @@ Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
 
 ### Bloque 28 · TRAB-14 · Postest (Sistema SIVAC) · 20/10/2026
 
-Documentos auditados: 40 · Conformes: 34 · RSD: 85.00 % · Entregas conciliadas: 25 · Concordantes: 21 · CPE: 84.00 %
+Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliadas: 25 · Concordantes: 22 · CPE: 88.00 %
 
 | Doc | Tipo | Biol. | Lote | Cant. | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Conf. | Motivo |
 | :---: | :---: | :---: | :---: | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | DEV | BCG | L-2610-01 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 2 | DEV | PENT | L-2610-02 | 60 | S | S | S | S | S | S | S | S | S | — |
-| 3 | SAL | IPV | L-2610-03 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 4 | ING | BCG | L-2610-04 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 5 | AJU | PENT | L-2610-05 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 6 | AJU | HEPB | L-2610-06 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 7 | TRA | INFL | L-2610-07 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 8 | AJU | NEUM | L-2610-08 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 9 | AJU | NEUM | L-2610-09 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 10 | DEV | IPV | L-2610-10 | 180 | N | S | S | S | S | S | S | S | N | M1 |
-| 11 | SAL | HEPB | L-2610-11 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 12 | AJU | NEUM | L-2610-12 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 13 | AJU | NEUM | L-2610-13 | 240 | S | S | S | S | S | S | S | N | N | M8 |
-| 14 | AJU | IPV | L-2610-14 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 15 | SAL | DTA | L-2610-15 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 16 | SAL | VARI | L-2610-16 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 17 | AJU | SPR | L-2610-17 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 18 | SAL | VARI | L-2610-18 | 40 | S | S | S | S | S | S | S | S | S | — |
-| 19 | AJU | HEPB | L-2610-19 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 20 | TRA | SPR | L-2610-20 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 21 | SAL | INFL | L-2610-21 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 22 | TRA | SPR | L-2610-22 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 23 | ING | VARI | L-2610-23 | 180 | S | S | S | S | S | S | S | S | S | — |
-| 24 | SAL | IPV | L-2610-24 | 150 | S | S | S | S | S | S | S | S | S | — |
-| 25 | SAL | IPV | L-2610-25 | 40 | S | S | N | S | S | S | S | S | N | M3 |
-| 26 | SAL | HEPB | L-2610-26 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 27 | DEV | BCG | L-2610-27 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 28 | TRA | SPR | L-2610-28 | 240 | S | S | S | S | S | S | S | S | S | — |
-| 29 | ING | BCG | L-2610-29 | 80 | S | S | S | S | S | S | S | S | S | — |
-| 30 | DEV | IPV | L-2610-30 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 31 | SAL | INFL | L-2610-31 | 60 | S | N | S | S | S | S | S | S | N | M2 |
-| 32 | AJU | ROTA | L-2610-32 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 33 | AJU | PENT | L-2610-33 | 100 | S | S | S | S | S | S | S | S | S | — |
-| 34 | TRA | NEUM | L-2610-34 | 300 | S | S | S | S | S | S | S | S | S | — |
-| 35 | ING | VARI | L-2610-35 | 200 | S | S | S | S | S | S | S | S | S | — |
-| 36 | TRA | BCG | L-2610-36 | 20 | S | S | S | S | S | S | N | S | N | M7 |
-| 37 | SAL | VARI | L-2610-37 | 120 | S | S | S | S | S | S | S | S | S | — |
-| 38 | TRA | PENT | L-2610-38 | 20 | S | S | S | S | S | S | S | S | S | — |
-| 39 | SAL | IPV | L-2610-39 | 150 | S | S | N | S | S | S | S | S | N | M3 |
-| 40 | SAL | IPV | L-2610-40 | 180 | S | S | S | S | S | S | S | S | S | — |
+| 1 | TRA | VARI | VARI-2607-979A | 240 | S | S | S | S | S | S | S | S | S | — |
+| 2 | ING | SPR | SPR-2504-185M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 3 | SAL | ROTA | ROTA-2605-833M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 4 | ING | INFL | INFL-2508-359M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 5 | SAL | ROTA | ROTA-2605-833M | 20 | S | S | S | S | S | S | S | S | S | — |
+| 6 | AJU | INFL | INFL-2607-737M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 7 | ING | PENT | PENT-2508-232M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 8 | TRA | INFL | INFL-2607-737M | 50 | S | S | S | S | S | S | S | S | S | — |
+| 9 | SAL | VARI | VARI-2503-521A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 10 | TRA | BCG | BCG-2504-789B | 120 | S | S | S | S | S | S | S | S | S | — |
+| 11 | ING | INFL | INFL-2604-777M | 30 | S | S | S | S | S | S | S | S | S | — |
+| 12 | TRA | IPV | IPV-2605-698M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 13 | ING | ROTA | ROTA-2605-833M | 180 | S | S | S | S | S | S | S | S | S | — |
+| 14 | SAL | BCG | BCG-2606-808K | 60 | S | S | S | S | S | S | S | S | S | — |
+| 15 | ING | INFL | INFL-2603-792B | 60 | S | S | S | S | S | S | S | S | S | — |
+| 16 | ING | DTA | DTA-2606-829K | 100 | S | S | S | S | S | S | S | S | S | — |
+| 17 | ING | IPV | IPV-2605-698M | 200 | S | S | S | S | S | S | S | S | S | — |
+| 18 | SAL | PENT | PENT-2606-391A | 20 | S | S | S | S | S | S | S | S | S | — |
+| 19 | SAL | DTA | DTA-2606-829K | 300 | S | S | N | S | N | S | S | S | N | M3+M5 |
+| 20 | ING | ROTA | ROTA-2605-833M | 240 | S | S | S | S | S | S | S | S | S | — |
+| 21 | ING | HEPB | HEPB-2609-917M | 60 | S | S | S | S | S | S | S | S | S | — |
+| 22 | TRA | DTA | DTA-2602-797A | 80 | S | S | S | S | S | S | S | S | S | — |
+| 23 | SAL | PENT | PENT-2606-391A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 24 | ING | INFL | INFL-2504-261K | 40 | S | S | S | S | S | S | S | S | S | — |
+| 25 | SAL | IPV | IPV-2504-587B | 50 | S | S | S | S | S | S | S | S | S | — |
+| 26 | SAL | IPV | IPV-2605-698M | 100 | S | S | S | S | S | S | S | S | S | — |
+| 27 | SAL | IPV | IPV-2608-446B | 80 | S | S | S | S | S | S | S | S | S | — |
+| 28 | ING | VARI | VARI-2501-250M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 29 | SAL | SPR | SPR-2504-185M | 150 | S | S | S | S | S | S | S | S | S | — |
+| 30 | DEV | NEUM | NEUM-2505-688A | 60 | S | S | S | S | S | S | S | S | S | — |
+| 31 | DEV | PENT | PENT-2606-391A | 180 | S | S | S | S | S | S | S | S | S | — |
+| 32 | TRA | NEUM | NEUM-2506-884B | 300 | S | S | S | S | S | S | S | S | S | — |
+| 33 | SAL | HEPB | HEPB-2603-786K | 150 | S | S | S | S | S | S | S | S | S | — |
+| 34 | TRA | IPV | IPV-2504-587B | 20 | S | S | S | S | S | S | S | S | S | — |
+| 35 | ING | VARI | VARI-2501-250M | 300 | S | S | S | S | S | S | S | S | S | — |
+| 36 | AJU | NEUM | NEUM-2505-688A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 37 | ING | ROTA | ROTA-2602-464A | 40 | S | S | S | S | S | S | S | S | S | — |
+| 38 | TRA | ROTA | ROTA-2502-563B | 40 | S | S | S | S | S | S | S | S | S | — |
+| 39 | ING | NEUM | NEUM-2507-181K | 30 | S | S | S | S | S | S | S | S | S | — |
+| 40 | SAL | HEPB | HEPB-2602-318M | 300 | S | S | S | S | S | S | S | S | S | — |
 
 **Entregas conciliadas — TRAB-14 · Postest (Sistema SIVAC)**
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 20/10/2026 | 4195 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 2 | 20/10/2026 | 4195 | NEUM | 180 | 185 | 5 | Sí | No |
-| 3 | 20/10/2026 | 4195 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 4 | 20/10/2026 | 4195 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 5 | 20/10/2026 | 4195 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 6 | 20/10/2026 | 4195 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 7 | 20/10/2026 | 4195 | DTA | 60 | 80 | 20 | Sí | No |
-| 8 | 20/10/2026 | 4195 | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 9 | 20/10/2026 | 4195 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 10 | 20/10/2026 | 4195 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 11 | 20/10/2026 | 4195 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 12 | 20/10/2026 | 4195 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 13 | 20/10/2026 | 4195 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 14 | 20/10/2026 | 4195 | SPR | 120 | 120 | 0 | No aplica | Sí |
-| 15 | 20/10/2026 | 4195 | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 16 | 20/10/2026 | 4195 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 20/10/2026 | 4195 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 18 | 20/10/2026 | 4195 | DTA | 120 | 100 | -20 | Sí | No |
-| 19 | 20/10/2026 | 4195 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 20 | 20/10/2026 | 4195 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 21 | 20/10/2026 | 4195 | BCG | 200 | 195 | -5 | Sí | No |
-| 22 | 20/10/2026 | 4195 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 23 | 20/10/2026 | 4195 | DTA | 20 | 20 | 0 | No aplica | Sí |
-| 24 | 20/10/2026 | 4195 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 25 | 20/10/2026 | 4195 | PENT | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 14/10/2026 | 4183 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 2 | 09/10/2026 | 4183 | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 3 | 18/10/2026 | 4183 | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 4 | 20/10/2026 | 4183 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 5 | 03/10/2026 | 4183 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 6 | 30/09/2026 | 4183 | INFL | 60 | 60 | 0 | No aplica | Sí |
+| 7 | 12/10/2026 | 4183 | VARI | 100 | 90 | -10 | Sin guía | No |
+| 8 | 24/09/2026 | 4183 | NEUM | 50 | 50 | 0 | No aplica | Sí |
+| 9 | 22/09/2026 | 4183 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 10 | 14/10/2026 | 4183 | VARI | 20 | 20 | 0 | No aplica | Sí |
+| 11 | 18/10/2026 | 4183 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 12 | 17/10/2026 | 4183 | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 13 | 06/10/2026 | 4183 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 14 | 10/10/2026 | 4183 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 15 | 13/10/2026 | 4183 | PENT | 80 | 80 | 0 | No aplica | Sí |
+| 16 | 12/10/2026 | 4183 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 17 | 05/10/2026 | 4183 | DTA | 180 | 175 | -5 | GR-4183-1698 | No |
+| 18 | 05/10/2026 | 4183 | VARI | 200 | 200 | 0 | No aplica | Sí |
+| 19 | 16/10/2026 | 4183 | BCG | 150 | 150 | 0 | No aplica | Sí |
+| 20 | 09/10/2026 | 4183 | ROTA | 50 | 50 | 0 | No aplica | Sí |
+| 21 | 26/09/2026 | 4183 | VARI | 50 | 50 | 0 | No aplica | Sí |
+| 22 | 23/09/2026 | 4183 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 23 | 19/10/2026 | 4183 | HEPB | 100 | 110 | 10 | GR-4183-5502 | No |
+| 24 | 01/10/2026 | 4183 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 25 | 29/09/2026 | 4183 | SPR | 30 | 30 | 0 | No aplica | Sí |
 
-Cierre: 21 entregas concordantes ÷ 25 × 100 = **84.00 %**.
+Cierre: 22 entregas concordantes ÷ 25 × 100 = **88.00 %**.
+
+---
 
 ---
 
@@ -3105,35 +3109,35 @@ La Modalidad A se administra en las dos fases y consta de ocho reactivos Likert 
 ### Matriz de respuestas — Modalidad A
 
 | Sujeto | Fase | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | AP | UP | TAM | Nivel |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| TRAB-01 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 3 | 8 | 9 | 17 | Bajo |
-| TRAB-01 | Postest | 4 | 4 | 5 | 4 | 4 | 4 | 5 | 5 | 17 | 18 | 35 | Alto |
-| TRAB-02 | Pretest | 2 | 2 | 2 | 3 | 2 | 2 | 3 | 3 | 9 | 10 | 19 | Medio |
-| TRAB-02 | Postest | 3 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 15 | 15 | 30 | Alto |
-| TRAB-03 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 3 | 8 | 9 | 17 | Bajo |
-| TRAB-03 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
-| TRAB-04 | Pretest | 3 | 3 | 3 | 4 | 3 | 3 | 4 | 4 | 13 | 14 | 27 | Medio |
-| TRAB-04 | Postest | 3 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 15 | 15 | 30 | Alto |
-| TRAB-05 | Pretest | 2 | 2 | 1 | 2 | 2 | 2 | 2 | 2 | 7 | 8 | 15 | Bajo |
-| TRAB-05 | Postest | 4 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 16 | 15 | 31 | Alto |
-| TRAB-06 | Pretest | 1 | 1 | 2 | 2 | 2 | 2 | 2 | 2 | 6 | 8 | 14 | Bajo |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| TRAB-01 | Pretest | 2 | 2 | 2 | 2 | 2 | 3 | 2 | 2 | 8 | 9 | 17 | Bajo |
+| TRAB-01 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
+| TRAB-02 | Pretest | 1 | 2 | 1 | 2 | 2 | 2 | 2 | 2 | 6 | 8 | 14 | Bajo |
+| TRAB-02 | Postest | 4 | 5 | 5 | 5 | 4 | 4 | 4 | 4 | 19 | 16 | 35 | Alto |
+| TRAB-03 | Pretest | 2 | 2 | 3 | 2 | 3 | 2 | 2 | 3 | 9 | 10 | 19 | Medio |
+| TRAB-03 | Postest | 4 | 4 | 5 | 4 | 4 | 5 | 5 | 4 | 17 | 18 | 35 | Alto |
+| TRAB-04 | Pretest | 3 | 3 | 2 | 3 | 3 | 3 | 3 | 3 | 11 | 12 | 23 | Medio |
+| TRAB-04 | Postest | 4 | 4 | 5 | 5 | 4 | 4 | 5 | 4 | 18 | 17 | 35 | Alto |
+| TRAB-05 | Pretest | 2 | 1 | 2 | 1 | 2 | 2 | 2 | 2 | 6 | 8 | 14 | Bajo |
+| TRAB-05 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
+| TRAB-06 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 8 | 8 | 16 | Bajo |
 | TRAB-06 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
-| TRAB-07 | Pretest | 2 | 2 | 2 | 3 | 3 | 2 | 2 | 2 | 9 | 9 | 18 | Bajo |
-| TRAB-07 | Postest | 4 | 4 | 5 | 5 | 4 | 4 | 4 | 5 | 18 | 17 | 35 | Alto |
-| TRAB-08 | Pretest | 1 | 1 | 2 | 1 | 1 | 2 | 2 | 2 | 5 | 7 | 12 | Bajo |
-| TRAB-08 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
-| TRAB-09 | Pretest | 1 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 7 | 8 | 15 | Bajo |
-| TRAB-09 | Postest | 4 | 4 | 5 | 5 | 5 | 5 | 5 | 5 | 18 | 20 | 38 | Alto |
-| TRAB-10 | Pretest | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2 | 4 | 5 | 9 | Bajo |
+| TRAB-07 | Pretest | 1 | 1 | 1 | 1 | 1 | 2 | 1 | 2 | 4 | 6 | 10 | Bajo |
+| TRAB-07 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
+| TRAB-08 | Pretest | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 12 | 12 | 24 | Medio |
+| TRAB-08 | Postest | 4 | 5 | 4 | 5 | 5 | 5 | 5 | 4 | 18 | 19 | 37 | Alto |
+| TRAB-09 | Pretest | 3 | 2 | 3 | 2 | 3 | 3 | 2 | 3 | 10 | 11 | 21 | Medio |
+| TRAB-09 | Postest | 5 | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 20 | 19 | 39 | Alto |
+| TRAB-10 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 8 | 8 | 16 | Bajo |
 | TRAB-10 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
-| TRAB-11 | Pretest | 1 | 3 | 3 | 3 | 2 | 2 | 3 | 3 | 10 | 10 | 20 | Medio |
-| TRAB-11 | Postest | 3 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 15 | 15 | 30 | Alto |
-| TRAB-12 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 3 | 8 | 9 | 17 | Bajo |
-| TRAB-12 | Postest | 4 | 4 | 4 | 5 | 4 | 4 | 4 | 5 | 17 | 17 | 34 | Alto |
-| TRAB-13 | Pretest | 2 | 3 | 3 | 3 | 2 | 3 | 3 | 3 | 11 | 11 | 22 | Medio |
-| TRAB-13 | Postest | 2 | 3 | 3 | 3 | 4 | 4 | 4 | 5 | 11 | 17 | 28 | Medio |
-| TRAB-14 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 3 | 8 | 9 | 17 | Bajo |
-| TRAB-14 | Postest | 4 | 4 | 4 | 5 | 4 | 5 | 5 | 5 | 17 | 19 | 36 | Alto |
+| TRAB-11 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 8 | 8 | 16 | Bajo |
+| TRAB-11 | Postest | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 16 | 16 | 32 | Alto |
+| TRAB-12 | Pretest | 1 | 2 | 1 | 1 | 2 | 2 | 2 | 1 | 5 | 7 | 12 | Bajo |
+| TRAB-12 | Postest | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 20 | 20 | 40 | Alto |
+| TRAB-13 | Pretest | 3 | 2 | 2 | 3 | 3 | 3 | 2 | 3 | 10 | 11 | 21 | Medio |
+| TRAB-13 | Postest | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 16 | 16 | 32 | Alto |
+| TRAB-14 | Pretest | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 8 | 8 | 16 | Bajo |
+| TRAB-14 | Postest | 4 | 4 | 4 | 5 | 4 | 5 | 4 | 4 | 17 | 17 | 34 | Alto |
 
 *Nota.* AP es la suma de los reactivos 1 a 4; UP, la de los reactivos 5 a 8; TAM corresponde a la sumatoria global de ambos componentes. El baremo se aplica sobre el puntaje TAM. Elaboración propia.
 
@@ -3180,20 +3184,20 @@ Las dos matrices siguientes presentan, para cada una de las catorce unidades, lo
 
 | Sujeto | T_reg | T_vale | RSD | CPE | AP | UP | TAM |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| TRAB-01 | 74.00 | 30.50 | 65.00 | 84.00 | 8.00 | 9.00 | 17.00 |
-| TRAB-02 | 69.00 | 28.50 | 75.00 | 64.00 | 9.00 | 10.00 | 19.00 |
-| TRAB-03 | 86.00 | 26.00 | 60.00 | 56.00 | 8.00 | 9.00 | 17.00 |
-| TRAB-04 | 79.00 | 31.00 | 57.50 | 64.00 | 13.00 | 14.00 | 27.00 |
-| TRAB-05 | 65.00 | 34.00 | 45.00 | 84.00 | 7.00 | 8.00 | 15.00 |
-| TRAB-06 | 72.00 | 27.00 | 52.50 | 72.00 | 6.00 | 8.00 | 14.00 |
-| TRAB-07 | 94.00 | 29.50 | 62.50 | 80.00 | 9.00 | 9.00 | 18.00 |
-| TRAB-08 | 61.00 | 35.50 | 70.00 | 68.00 | 5.00 | 7.00 | 12.00 |
-| TRAB-09 | 76.00 | 25.00 | 47.50 | 76.00 | 7.00 | 8.00 | 15.00 |
-| TRAB-10 | 57.00 | 30.00 | 62.50 | 72.00 | 4.00 | 5.00 | 9.00 |
-| TRAB-11 | 83.00 | 22.50 | 87.50 | 52.00 | 10.00 | 10.00 | 20.00 |
-| TRAB-12 | 90.00 | 28.00 | 55.00 | 60.00 | 8.00 | 9.00 | 17.00 |
-| TRAB-13 | 55.00 | 34.50 | 82.50 | 48.00 | 11.00 | 11.00 | 22.00 |
-| TRAB-14 | 89.00 | 24.00 | 67.50 | 68.00 | 8.00 | 9.00 | 17.00 |
+| TRAB-01 | 38.50 | 18.50 | 62.50 | 64.00 | 8.00 | 9.00 | 17.00 |
+| TRAB-02 | 42.00 | 22.00 | 57.50 | 64.00 | 6.00 | 8.00 | 14.00 |
+| TRAB-03 | 35.00 | 16.00 | 65.00 | 72.00 | 9.00 | 10.00 | 19.00 |
+| TRAB-04 | 33.50 | 15.00 | 72.50 | 76.00 | 11.00 | 12.00 | 23.00 |
+| TRAB-05 | 40.00 | 20.50 | 55.00 | 60.00 | 6.00 | 8.00 | 14.00 |
+| TRAB-06 | 36.50 | 17.00 | 65.00 | 68.00 | 8.00 | 8.00 | 16.00 |
+| TRAB-07 | 44.00 | 24.00 | 52.50 | 56.00 | 4.00 | 6.00 | 10.00 |
+| TRAB-08 | 32.00 | 14.50 | 75.00 | 80.00 | 12.00 | 12.00 | 24.00 |
+| TRAB-09 | 31.50 | 15.00 | 72.50 | 76.00 | 10.00 | 11.00 | 21.00 |
+| TRAB-10 | 39.00 | 19.50 | 60.00 | 64.00 | 8.00 | 8.00 | 16.00 |
+| TRAB-11 | 37.00 | 18.00 | 62.50 | 68.00 | 8.00 | 8.00 | 16.00 |
+| TRAB-12 | 41.50 | 21.00 | 57.50 | 60.00 | 5.00 | 7.00 | 12.00 |
+| TRAB-13 | 34.00 | 16.50 | 67.50 | 72.00 | 10.00 | 11.00 | 21.00 |
+| TRAB-14 | 36.00 | 17.50 | 65.00 | 68.00 | 8.00 | 8.00 | 16.00 |
 
 *Nota.* Mediciones de línea base (pretest). T_reg y T_vale expresados en minutos; RSD y CPE en porcentaje (%); AP, UP y TAM en puntos de escala. Elaboración propia.
 
@@ -3201,20 +3205,20 @@ Las dos matrices siguientes presentan, para cada una de las catorce unidades, lo
 
 | Sujeto | T_reg | T_vale | RSD | CPE | AP | UP | TAM |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| TRAB-01 | 5.40 | 0.50 | 90.00 | 88.00 | 17.00 | 18.00 | 35.00 |
-| TRAB-02 | 5.10 | 0.47 | 87.50 | 92.00 | 15.00 | 15.00 | 30.00 |
-| TRAB-03 | 7.20 | 0.38 | 92.50 | 96.00 | 20.00 | 20.00 | 40.00 |
-| TRAB-04 | 6.60 | 0.55 | 95.00 | 92.00 | 15.00 | 15.00 | 30.00 |
-| TRAB-05 | 4.80 | 0.90 | 97.50 | 88.00 | 16.00 | 15.00 | 31.00 |
-| TRAB-06 | 5.70 | 0.43 | 95.00 | 80.00 | 20.00 | 20.00 | 40.00 |
-| TRAB-07 | 7.80 | 0.65 | 92.50 | 84.00 | 18.00 | 17.00 | 35.00 |
-| TRAB-08 | 4.50 | 0.78 | 87.50 | 88.00 | 20.00 | 20.00 | 40.00 |
-| TRAB-09 | 6.30 | 0.33 | 100.00 | 84.00 | 18.00 | 20.00 | 38.00 |
-| TRAB-10 | 4.20 | 0.52 | 92.50 | 80.00 | 20.00 | 20.00 | 40.00 |
-| TRAB-11 | 6.90 | 0.23 | 90.00 | 96.00 | 15.00 | 15.00 | 30.00 |
-| TRAB-12 | 7.50 | 0.60 | 97.50 | 92.00 | 17.00 | 17.00 | 34.00 |
-| TRAB-13 | 5.95 | 0.72 | 85.00 | 96.00 | 11.00 | 17.00 | 28.00 |
-| TRAB-14 | 6.05 | 0.28 | 85.00 | 84.00 | 17.00 | 19.00 | 36.00 |
+| TRAB-01 | 5.37 | 2.12 | 95.00 | 96.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-02 | 5.73 | 1.83 | 97.50 | 96.00 | 19.00 | 16.00 | 35.00 |
+| TRAB-03 | 5.34 | 1.72 | 95.00 | 96.00 | 17.00 | 18.00 | 35.00 |
+| TRAB-04 | 5.59 | 2.17 | 90.00 | 96.00 | 18.00 | 17.00 | 35.00 |
+| TRAB-05 | 6.15 | 1.86 | 97.50 | 96.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-06 | 4.82 | 1.67 | 95.00 | 96.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-07 | 4.95 | 2 | 100.00 | 92.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-08 | 5.92 | 1.96 | 97.50 | 96.00 | 18.00 | 19.00 | 37.00 |
+| TRAB-09 | 6.01 | 1.65 | 97.50 | 96.00 | 20.00 | 19.00 | 39.00 |
+| TRAB-10 | 6.29 | 1.87 | 97.50 | 96.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-11 | 6.44 | 1.78 | 95.00 | 92.00 | 16.00 | 16.00 | 32.00 |
+| TRAB-12 | 5.74 | 2.07 | 97.50 | 92.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-13 | 5.53 | 2.27 | 92.50 | 96.00 | 16.00 | 16.00 | 32.00 |
+| TRAB-14 | 5.63 | 1.9 | 97.50 | 88.00 | 17.00 | 17.00 | 34.00 |
 
 *Nota.* Mediciones finales (postest). T_reg y T_vale corresponden a la media de tres réplicas por unidad experimental. Elaboración propia.
 
@@ -3222,22 +3226,22 @@ Las dos matrices siguientes presentan, para cada una de las catorce unidades, lo
 
 | Sujeto | T_reg | T_vale | RSD | CPE | AP | UP | TAM |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| TRAB-01 | -68.60 | -30.00 | 25.00 | 4.00 | 9.00 | 9.00 | 18.00 |
-| TRAB-02 | -63.90 | -28.03 | 12.50 | 28.00 | 6.00 | 5.00 | 11.00 |
-| TRAB-03 | -78.80 | -25.62 | 32.50 | 40.00 | 12.00 | 11.00 | 23.00 |
-| TRAB-04 | -72.40 | -30.45 | 37.50 | 28.00 | 2.00 | 1.00 | 3.00 |
-| TRAB-05 | -60.20 | -33.10 | 52.50 | 4.00 | 9.00 | 7.00 | 16.00 |
-| TRAB-06 | -66.30 | -26.57 | 42.50 | 8.00 | 14.00 | 12.00 | 26.00 |
-| TRAB-07 | -86.20 | -28.85 | 30.00 | 4.00 | 9.00 | 8.00 | 17.00 |
-| TRAB-08 | -56.50 | -34.72 | 17.50 | 20.00 | 15.00 | 13.00 | 28.00 |
-| TRAB-09 | -69.70 | -24.67 | 52.50 | 8.00 | 11.00 | 12.00 | 23.00 |
-| TRAB-10 | -52.80 | -29.48 | 30.00 | 8.00 | 16.00 | 15.00 | 31.00 |
-| TRAB-11 | -76.10 | -22.27 | 2.50 | 44.00 | 5.00 | 5.00 | 10.00 |
-| TRAB-12 | -82.50 | -27.40 | 42.50 | 32.00 | 9.00 | 8.00 | 17.00 |
-| TRAB-13 | -49.05 | -33.78 | 2.50 | 48.00 | 0.00 | 6.00 | 6.00 |
-| TRAB-14 | -82.95 | -23.72 | 17.50 | 16.00 | 9.00 | 10.00 | 19.00 |
+| TRAB-01 | -33.13 | -16.38 | 32.50 | 32.00 | 12.00 | 11.00 | 23.00 |
+| TRAB-02 | -36.27 | -20.17 | 40.00 | 32.00 | 13.00 | 8.00 | 21.00 |
+| TRAB-03 | -29.66 | -14.28 | 30.00 | 24.00 | 8.00 | 8.00 | 16.00 |
+| TRAB-04 | -27.91 | -12.83 | 17.50 | 20.00 | 7.00 | 5.00 | 12.00 |
+| TRAB-05 | -33.85 | -18.64 | 42.50 | 36.00 | 14.00 | 12.00 | 26.00 |
+| TRAB-06 | -31.68 | -15.33 | 30.00 | 28.00 | 12.00 | 12.00 | 24.00 |
+| TRAB-07 | -39.05 | -22.00 | 47.50 | 36.00 | 16.00 | 14.00 | 30.00 |
+| TRAB-08 | -26.08 | -12.54 | 22.50 | 16.00 | 6.00 | 7.00 | 13.00 |
+| TRAB-09 | -25.49 | -13.35 | 25.00 | 20.00 | 10.00 | 8.00 | 18.00 |
+| TRAB-10 | -32.71 | -17.63 | 37.50 | 32.00 | 12.00 | 12.00 | 24.00 |
+| TRAB-11 | -30.56 | -16.22 | 32.50 | 24.00 | 8.00 | 8.00 | 16.00 |
+| TRAB-12 | -35.76 | -18.93 | 40.00 | 32.00 | 15.00 | 13.00 | 28.00 |
+| TRAB-13 | -28.47 | -14.23 | 25.00 | 24.00 | 6.00 | 5.00 | 11.00 |
+| TRAB-14 | -30.37 | -15.60 | 32.50 | 20.00 | 9.00 | 9.00 | 18.00 |
 
-*Nota.* Diferencias pareadas ( = 	ext{postest} - 	ext{pretest}$). Una diferencia negativa en T_reg y T_vale indica reducción del tiempo operacional; un valor positivo en RSD, CPE, AP, UP y TAM indica incremento en la consistencia documental y satisfacción del usuario. Elaboración propia.
+*Nota.* Diferencias pareadas (D = postest − pretest). Una diferencia negativa en T_reg y T_vale indica reducción del tiempo operacional; un valor positivo en RSD, CPE, AP, UP y TAM indica incremento en la consistencia documental y satisfacción del usuario. Elaboración propia.
 
 ---
 
@@ -3246,134 +3250,136 @@ Las dos matrices siguientes presentan, para cada una de las catorce unidades, lo
 
 A continuación se presentan los resultados del análisis estadístico descriptivo e inferencial organizados en las Tablas 35 a 43, siguiendo la estructura del informe de investigación. Los contrastes estadísticos evalúan el impacto de la implementación del sistema SIVAC sobre los indicadores operacionales: T_reg, T_vale, RSD, CPE, AP, UP y TAM.
 
-## Tabla 35. Confiabilidad de consistencia interna del Cuestionario TAM (Instrumento N.° 03) mediante el coeficiente Alfa de Cronbach e intervalo de confianza del 95%
+### Tabla 35. Confiabilidad de consistencia interna del Cuestionario TAM (Instrumento N.° 03) mediante el coeficiente Alfa de Cronbach e intervalo de confianza del 95 %
 
 | Momento de evaluación | Escala / subescala | N.° de ítems | Muestra (n) | Alfa de Cronbach | IC 95 % [LI, LS] | Nivel de consistencia |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Pretest (proceso manual) | Escala global TAM (modalidad A) | 8 | 14 | 0.939 | [0.875, 0.977] | Excelente |
-| Pretest (proceso manual) | Aceptación del proceso (AP) | 4 | 14 | 0.870 | [0.707, 0.953] | Buena |
-| Pretest (proceso manual) | Utilidad percibida (UP) | 4 | 14 | 0.864 | [0.693, 0.951] | Buena |
-| Postest (Sistema SIVAC) | Escala global TAM (modalidad A) | 8 | 14 | 0.938 | [0.872, 0.977] | Excelente |
-| Postest (Sistema SIVAC) | Aceptación del proceso (AP) | 4 | 14 | 0.931 | [0.845, 0.975] | Excelente |
-| Postest (Sistema SIVAC) | Utilidad percibida (UP) | 4 | 14 | 0.909 | [0.795, 0.967] | Excelente |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| Pretest (proceso manual) | Escala global TAM (modalidad A) | 8 | 14 | 0.939 | [0.874, 0.977] | Excelente |
+| Pretest (proceso manual) | Aceptación del proceso (AP) | 4 | 14 | 0.877 | [0.721, 0.956] | Buena |
+| Pretest (proceso manual) | Utilidad percibida (UP) | 4 | 14 | 0.874 | [0.715, 0.955] | Buena |
+| Postest (Sistema SIVAC) | Escala global TAM (modalidad A) | 8 | 14 | 0.924 | [0.845, 0.972] | Excelente |
+| Postest (Sistema SIVAC) | Aceptación del proceso (AP) | 4 | 14 | 0.854 | [0.671, 0.948] | Buena |
+| Postest (Sistema SIVAC) | Utilidad percibida (UP) | 4 | 14 | 0.880 | [0.730, 0.957] | Buena |
 
-*Nota.* Intervalo de confianza al 95 % obtenido mediante el procedimiento de Feldt sobre la distribución F ( = n - 1, gl_2 = (n - 1)(k - 1)$). Elaboración propia.
+*Nota.* Intervalo de confianza al 95 % obtenido mediante el procedimiento de Feldt sobre la distribución F. Elaboración propia.
 
-## Tabla 36. Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 1: Oportunidad de procesamiento (n = 14)
+### Tabla 36. Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 1: Oportunidad de procesamiento (n = 14)
 
 | Indicador | Momento | Media | DE | Mediana | RIC | Mín – Máx | Variación |
 | :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
-| T_reg (min) | Pretest (manual) | 75.00 | 12.56 | 75.00 | 19.25 | 55.00 – 94.00 | No aplica |
-| T_reg (min) | Postest (SIVAC) | 6.00 | 1.12 | 6.00 | 1.65 | 4.20 – 7.80 | -92.0 % |
-| T_reg (min) | Diferencia pareada | -69.00 | 11.63 | -69.15 | 17.00 | -86.20 – -49.05 | No aplica |
-| T_vale (min) | Pretest (manual) | 29.00 | 3.95 | 29.00 | 4.62 | 22.50 – 35.50 | No aplica |
-| T_vale (min) | Postest (SIVAC) | 0.52 | 0.19 | 0.51 | 0.24 | 0.23 – 0.90 | -98.2 % |
-| T_vale (min) | Diferencia pareada | -28.48 | 3.77 | -28.44 | 4.48 | -34.72 – -22.27 | No aplica |
+| T_reg (min) | Pretest (manual) | 37.18 | 3.83 | 36.75 | 5.50 | 31.50 – 44.00 | No aplica |
+| T_reg (min) | Postest (SIVAC) | 5.68 | 0.47 | 5.68 | 0.58 | 4.82 – 6.44 | -84.7 % |
+| T_reg (min) | Diferencia pareada | -31.50 | 3.93 | -31.12 | 4.90 | -39.05 – -25.49 | No aplica |
+| T_vale (min) | Pretest (manual) | 18.21 | 2.87 | 17.75 | 4.12 | 14.50 – 24.00 | No aplica |
+| T_vale (min) | Postest (SIVAC) | 1.92 | 0.19 | 1.89 | 0.26 | 1.65 – 2.27 | -89.5 % |
+| T_vale (min) | Diferencia pareada | -16.29 | 2.86 | -15.91 | 4.14 | -22.00 – -12.54 | No aplica |
 
-*Nota.* La variación se calcula como cambio relativo porcentual respecto del pretest. RIC = rango intercuartílico. Los tiempos corresponden a la media de tres réplicas por unidad experimental. Elaboración propia.
+*Nota.* La variación se calcula como cambio relativo porcentual respecto del pretest. RIC = rango intercuartílico. Los tiempos corresponden a la media de tres réplicas por unidad experimental. El proceso completo de registro y emisión descendió de 55.39 a 7.60 minutos por jornada observada. Elaboración propia.
 
-## Tabla 37. Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 2: Consistencia documental (n = 14)
-
-| Indicador | Momento | Media | DE | Mediana | RIC | Mín – Máx | Variación |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Registros sin discrepancias (RSD, %) | Pretest (manual) | 63.57 | 12.31 | 62.50 | 13.75 | 45.00 – 87.50 | No aplica |
-| Registros sin discrepancias (RSD, %) | Postest (SIVAC) | 91.96 | 4.72 | 92.50 | 6.88 | 85.00 – 100.00 | +28.4 pp |
-| Registros sin discrepancias (RSD, %) | Diferencia pareada | 28.39 | 16.43 | 30.00 | 23.75 | 2.50 – 52.50 | No aplica |
-| Concordancia programada vs entregada (CPE, %) | Pretest (manual) | 67.71 | 11.26 | 68.00 | 14.00 | 48.00 – 84.00 | No aplica |
-| Concordancia programada vs entregada (CPE, %) | Postest (SIVAC) | 88.57 | 5.63 | 88.00 | 8.00 | 80.00 – 96.00 | +20.9 pp |
-| Concordancia programada vs entregada (CPE, %) | Diferencia pareada | 20.86 | 15.78 | 18.00 | 23.00 | 4.00 – 48.00 | No aplica |
-
-*Nota.* El cambio de los porcentajes se informa en puntos porcentuales (pp). En la distribución empírica del postest se verifica una adecuada dispersión de puntajes sin saturación en el límite superior de la escala (un único operador alcanzó el 100 % en RSD y ninguno en CPE). Elaboración propia.
-
-## Tabla 38. Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 3: Satisfacción del usuario (n = 14)
+### Tabla 37. Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 2: Consistencia documental (n = 14)
 
 | Indicador | Momento | Media | DE | Mediana | RIC | Mín – Máx | Variación |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Aceptación del proceso (AP) | Pretest (manual) | 8.07 | 2.34 | 8.00 | 2.00 | 4.00 – 13.00 | No aplica |
-| Aceptación del proceso (AP) | Postest (SIVAC) | 17.07 | 2.59 | 17.00 | 4.25 | 11.00 – 20.00 | +111.5 % |
-| Aceptación del proceso (AP) | Diferencia pareada | 9.00 | 4.62 | 9.00 | 5.00 | 0.00 – 16.00 | No aplica |
-| Utilidad percibida (UP) | Pretest (manual) | 9.00 | 2.04 | 9.00 | 1.75 | 5.00 – 14.00 | No aplica |
-| Utilidad percibida (UP) | Postest (SIVAC) | 17.71 | 2.13 | 17.50 | 4.50 | 15.00 – 20.00 | +96.8 % |
-| Utilidad percibida (UP) | Diferencia pareada | 8.71 | 3.77 | 8.50 | 5.50 | 1.00 – 15.00 | No aplica |
-| Puntaje global TAM | Pretest (manual) | 17.07 | 4.34 | 17.00 | 3.75 | 9.00 – 27.00 | No aplica |
-| Puntaje global TAM | Postest (SIVAC) | 34.79 | 4.39 | 35.00 | 9.25 | 28.00 – 40.00 | +103.8 % |
-| Puntaje global TAM | Diferencia pareada | 17.71 | 8.18 | 17.50 | 10.75 | 3.00 – 31.00 | No aplica |
+| :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Registros sin discrepancias (RSD, %) | Pretest (manual) | 63.57 | 6.77 | 63.75 | 8.75 | 52.50 – 75.00 | No aplica |
+| Registros sin discrepancias (RSD, %) | Postest (SIVAC) | 96.07 | 2.54 | 97.50 | 2.50 | 90.00 – 100.00 | +32.50 pp |
+| Registros sin discrepancias (RSD, %) | Diferencia pareada | 32.50 | 8.38 | 32.50 | 13.12 | 17.50 – 47.50 | No aplica |
+| Concordancia programada vs entregada (CPE, %) | Pretest (manual) | 67.71 | 6.92 | 68.00 | 8.00 | 56.00 – 80.00 | No aplica |
+| Concordancia programada vs entregada (CPE, %) | Postest (SIVAC) | 94.57 | 2.53 | 96.00 | 3.00 | 88.00 – 96.00 | +26.86 pp |
+| Concordancia programada vs entregada (CPE, %) | Diferencia pareada | 26.86 | 6.55 | 26.00 | 11.00 | 16.00 – 36.00 | No aplica |
 
-*Nota.* AP y UP se evalúan sobre 20 puntos; el puntaje global TAM, sobre 40 puntos. El puntaje TAM representa la suma directa de AP y UP. En el caso de TRAB-13 se registró una diferencia nula en AP (11 en pretest y 11 en postest), por lo que la prueba no paramétrica de rangos con signo para dicho indicador opera con 13 pares efectivos (reportado en la Tabla 42). Dicho operador registró un puntaje TAM postest de 28 puntos (nivel Medio). Elaboración propia.
+*Nota.* El cambio de los porcentajes se informa en puntos porcentuales (pp). En la distribución empírica del postest la media de RSD supera el 96 % y la de CPE el 94 %, con observaciones por debajo del máximo de la escala en ambos indicadores. Elaboración propia.
 
-## Tabla 39. Prueba de bondad de ajuste de normalidad de Shapiro-Wilk para las diferencias pareadas pretest y postest (n = 14)
+### Tabla 38. Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 3: Satisfacción del usuario (n = 14)
+
+| Indicador | Momento | Media | DE | Mediana | RIC | Mín – Máx | Variación |
+| :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Aceptación del proceso (AP) | Pretest (manual) | 8.07 | 2.27 | 8.00 | 3.25 | 4.00 – 12.00 | No aplica |
+| Aceptación del proceso (AP) | Postest (SIVAC) | 18.64 | 1.60 | 19.50 | 2.75 | 16.00 – 20.00 | +131.0 % |
+| Aceptación del proceso (AP) | Diferencia pareada | 10.57 | 3.32 | 11.00 | 4.75 | 6.00 – 16.00 | No aplica |
+| Utilidad percibida (UP) | Pretest (manual) | 9.00 | 1.88 | 8.00 | 2.75 | 6.00 – 12.00 | No aplica |
+| Utilidad percibida (UP) | Postest (SIVAC) | 18.43 | 1.70 | 19.00 | 3.00 | 16.00 – 20.00 | +104.8 % |
+| Utilidad percibida (UP) | Diferencia pareada | 9.43 | 2.90 | 8.50 | 4.00 | 5.00 – 14.00 | No aplica |
+| Puntaje global TAM | Pretest (manual) | 17.07 | 4.08 | 16.00 | 6.00 | 10.00 – 24.00 | No aplica |
+| Puntaje global TAM | Postest (SIVAC) | 37.07 | 3.15 | 38.00 | 5.00 | 32.00 – 40.00 | +117.2 % |
+| Puntaje global TAM | Diferencia pareada | 20.00 | 6.05 | 19.50 | 8.00 | 11.00 – 30.00 | No aplica |
+
+*Nota.* AP y UP se evalúan sobre 20 puntos; el puntaje global TAM, sobre 40 puntos, y representa la suma directa de AP y UP. Ninguna unidad presentó diferencias nulas en los reactivos: las catorce registraron incremento en las tres medidas. Elaboración propia.
+
+### Tabla 39. Prueba de bondad de ajuste de normalidad de Shapiro-Wilk para las diferencias pareadas pretest y postest (n = 14)
 
 | Dim. | Indicador | W | p | Decisión | Prueba |
 | :---: | :--- | :---: | :---: | :--- | :--- |
-| D1 | T_reg | 0.967 | .833 | Normal (p > .05) | t pareada |
-| D1 | T_vale | 0.975 | .931 | Normal (p > .05) | t pareada |
-| D2 | RSD | 0.951 | .577 | Normal (p > .05) | t pareada |
-| D2 | CPE | 0.887 | .073 | Normal (p > .05) | t pareada |
-| D3 | AP | 0.951 | .571 | Normal (p > .05) | t pareada |
-| D3 | UP | 0.982 | .985 | Normal (p > .05) | t pareada |
-| D3 | TAM | 0.975 | .934 | Normal (p > .05) | t pareada |
+| D1 | T_reg | 0.981 | .978 | Normal (p > .05) | t pareada |
+| D1 | T_vale | 0.955 | .641 | Normal (p > .05) | t pareada |
+| D2 | RSD | 0.979 | .970 | Normal (p > .05) | t pareada |
+| D2 | CPE | 0.915 | .189 | Normal (p > .05) | t pareada |
+| D3 | AP | 0.942 | .441 | Normal (p > .05) | t pareada |
+| D3 | UP | 0.927 | .274 | Normal (p > .05) | t pareada |
+| D3 | TAM | 0.958 | .687 | Normal (p > .05) | t pareada |
 
-*Nota.* D1 = Oportunidad de procesamiento; D2 = Consistencia documental; D3 = Satisfacción del usuario. La evaluación de normalidad se realiza con un nivel de significancia $lpha = .05$ sobre las diferencias pareadas ( = 	ext{postest} - 	ext{pretest}$). Ningún indicador rechaza la normalidad distributiva según la prueba de Shapiro-Wilk ( > .05$), por lo que la prueba t de Student pareada constituye el contraste paramétrico decisorio, reportándose la prueba de Wilcoxon como verificación de robustez no paramétrica. Elaboración propia.
+*Nota.* D1 = Oportunidad de procesamiento; D2 = Consistencia documental; D3 = Satisfacción del usuario. La evaluación de normalidad se realiza con un nivel de significancia de .05 sobre las diferencias pareadas (D = postest − pretest). Ningún indicador rechaza la normalidad distributiva según la prueba de Shapiro-Wilk (p mínimo = 0.189), por lo que la prueba t de Student pareada constituye el contraste paramétrico decisorio y la prueba de Wilcoxon se reporta como verificación de robustez no paramétrica. Elaboración propia.
 
-## Tabla 40. Contraste inferencial de la Hipótesis Específica 1: Oportunidad de procesamiento mediante pruebas paramétricas y no paramétricas pareadas
-
-| Indicador | Prueba | n / gl | Estadístico | p | p exacto | Tamaño del efecto | p ajustado (Holm) | Decisión |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| T_reg | t de Student pareada | 14 / 13 | t = -22.196 | < .001 | 1.02e-11 | d_z = 5.93 | 6.10e-11 | Rechazar H0 |
-| T_reg | Wilcoxon (corrob.) | 14 / 13 | W = 0.0 (Z = -3.296) | < .001 | 0.000122 | r = 0.881 | No aplica | No aplica |
-| T_vale | t de Student pareada | 14 / 13 | t = -28.261 | < .001 | 4.67e-13 | d_z = 7.55 | 3.27e-12 | Rechazar H0 |
-| T_vale | Wilcoxon (corrob.) | 14 / 13 | W = 0.0 (Z = -3.296) | < .001 | 0.000122 | r = 0.881 | No aplica | No aplica |
-
-*Nota.* Nivel de significancia $lpha = .05$. La columna «n / gl» consigna los pares válidos o grados de libertad según corresponda. La columna «p exacto» consigna el valor de probabilidad obtenido y «p» en formato estándar APA. Las dos pruebas de Wilcoxon son exactas al no registrarse empates en $|d|$ ni diferencias nulas. La prueba t pareada integra la familia de contrastes ajustada por Holm-Bonferroni. $ se calcula a partir de la desviación estándar de las diferencias pareadas ($|d_z|$);  = |Z| / \sqrt{n}$. Elaboración propia.
-
-## Tabla 41. Contraste inferencial de la Hipótesis Específica 2: Consistencia documental mediante pruebas paramétricas y no paramétricas pareadas
+### Tabla 40. Contraste inferencial de la Hipótesis Específica 1: Oportunidad de procesamiento mediante pruebas paramétricas y no paramétricas pareadas
 
 | Indicador | Prueba | n / gl | Estadístico | p | p exacto | Tamaño del efecto | p ajustado (Holm) | Decisión |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| RSD | t de Student pareada | 14 / 13 | t = 6.468 | < .001 | 2.11e-05 | d_z = 1.73 | 4.22e-05 | Rechazar H0 |
-| RSD | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.300) | < .001 | 0.000967 | r = 0.882 | No aplica | No aplica |
-| CPE | t de Student pareada | 14 / 13 | t = 4.945 | < .001 | 0.000268 | d_z = 1.32 | 0.000268 | Rechazar H0 |
-| CPE | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.303) | < .001 | 0.000956 | r = 0.883 | No aplica | No aplica |
+| T_reg | t de Student pareada | 14 / 13 | t = -29.997 | < .001 | 2.18e-13 | d_z = 8.02 | 1.52e-12 | Rechazar H0 |
+| T_reg | Wilcoxon (corrob.) | 14 / 13 | W = 0.0 (Z = -3.296) | < .001 | 1.22e-04 | r = 0.881 | No aplica | No aplica |
+| T_vale | t de Student pareada | 14 / 13 | t = -21.320 | < .001 | 1.69e-11 | d_z = 5.70 | 1.02e-10 | Rechazar H0 |
+| T_vale | Wilcoxon (corrob.) | 14 / 13 | W = 0.0 (Z = -3.296) | < .001 | 1.22e-04 | r = 0.881 | No aplica | No aplica |
 
-*Nota.* Nivel de significancia $lpha = .05$. Para RSD y CPE el contraste de Wilcoxon emplea el método asintótico con corrección por empates debido a la presencia de diferencias coincidentes en la escala discreta. Las pruebas paramétricas principales forman parte de la familia ajustada mediante Holm-Bonferroni. Elaboración propia.
+*Nota.* Nivel de significancia .05. La columna «n / gl» consigna los pares válidos o grados de libertad según corresponda. La columna «p exacto» consigna el valor de probabilidad obtenido y «p» en formato estándar APA. Las dos pruebas de Wilcoxon son exactas al no registrarse empates en el valor absoluto de las diferencias ni diferencias nulas. El tamaño del efecto d_z se calcula sobre la desviación estándar de las diferencias pareadas y r como |Z| dividido entre la raíz del número de pares efectivos. Elaboración propia.
 
-## Tabla 42. Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario mediante pruebas paramétricas y no paramétricas pareadas
+### Tabla 41. Contraste inferencial de la Hipótesis Específica 2: Consistencia documental mediante pruebas paramétricas y no paramétricas pareadas
 
 | Indicador | Prueba | n / gl | Estadístico | p | p exacto | Tamaño del efecto | p ajustado (Holm) | Decisión |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| AP | t de Student pareada | 14 / 13 | t = 7.282 | < .001 | 6.16e-06 | d_z = 1.95 | 1.85e-05 | Rechazar H0 |
-| AP | Wilcoxon (corrob.) | 13 / 12 | W = 91.0 (Z = 3.199) | .001 | 0.001377 | r = 0.887 | No aplica | No aplica |
-| UP | t de Student pareada | 14 / 13 | t = 8.647 | < .001 | 9.45e-07 | d_z = 2.31 | 4.73e-06 | Rechazar H0 |
-| UP | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.298) | < .001 | 0.000973 | r = 0.881 | No aplica | No aplica |
-| TAM | t de Student pareada | 14 / 13 | t = 8.098 | < .001 | 1.96e-06 | d_z = 2.16 | 7.82e-06 | Rechazar H0 |
-| TAM | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.297) | < .001 | 0.000976 | r = 0.881 | No aplica | No aplica |
+| RSD | t de Student pareada | 14 / 13 | t = 14.515 | < .001 | 2.07e-09 | d_z = 3.88 | 8.28e-09 | Rechazar H0 |
+| RSD | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.301) | < .001 | 9.62e-04 | r = 0.882 | No aplica | No aplica |
+| CPE | t de Student pareada | 14 / 13 | t = 15.342 | < .001 | 1.04e-09 | d_z = 4.10 | 5.22e-09 | Rechazar H0 |
+| CPE | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.311) | < .001 | 9.29e-04 | r = 0.885 | No aplica | No aplica |
 
-*Nota.* Nivel de significancia $lpha = .05$. El caso TRAB-13 presentó una diferencia nula en AP (11 en pretest y 11 en postest), por lo que la prueba no paramétrica de rangos con signo excluye dicho par nulo y opera con  = 13$, mientras que la prueba t pareada evalúa la totalidad de los 14 pares observados. El puntaje TAM representa la suma directa de AP y UP. Elaboración propia.
+*Nota.* Nivel de significancia .05. Para RSD y CPE el contraste de Wilcoxon emplea el método asintótico con corrección por empates debido a la presencia de diferencias coincidentes en la escala discreta del instrumento. Las pruebas paramétricas principales forman parte de la familia ajustada mediante Holm-Bonferroni. Elaboración propia.
 
-## Tabla 43. Resumen de contrastación inferencial multivariada y regla de decisión para la Hipótesis General con ajuste secuencial de Holm-Bonferroni
+### Tabla 42. Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario mediante pruebas paramétricas y no paramétricas pareadas
+
+| Indicador | Prueba | n / gl | Estadístico | p | p exacto | Tamaño del efecto | p ajustado (Holm) | Decisión |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| AP | t de Student pareada | 14 / 13 | t = 11.908 | < .001 | 2.29e-08 | d_z = 3.18 | 4.36e-08 | Rechazar H0 |
+| AP | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.301) | < .001 | 9.65e-04 | r = 0.882 | No aplica | No aplica |
+| UP | t de Student pareada | 14 / 13 | t = 12.160 | < .001 | 1.78e-08 | d_z = 3.25 | 4.36e-08 | Rechazar H0 |
+| UP | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.308) | < .001 | 9.40e-04 | r = 0.884 | No aplica | No aplica |
+| TAM | t de Student pareada | 14 / 13 | t = 12.367 | < .001 | 1.45e-08 | d_z = 3.31 | 4.36e-08 | Rechazar H0 |
+| TAM | Wilcoxon (corrob.) | 14 / 13 | W = 105.0 (Z = 3.298) | < .001 | 9.73e-04 | r = 0.881 | No aplica | No aplica |
+
+*Nota.* Nivel de significancia .05. Las tres medidas de la dimensión registraron diferencias no nulas en las catorce unidades, por lo que la prueba de Wilcoxon opera con la totalidad de los pares y método asintótico por empates. El puntaje TAM representa la suma directa de AP y UP. Elaboración propia.
+
+### Tabla 43. Resumen de contrastación inferencial multivariada y regla de decisión para la Hipótesis General con ajuste secuencial de Holm-Bonferroni
 
 | Hipótesis | Dim. | Prueba | p original | p Holm | Decisión | Impacto operativo |
 | :---: | :---: | :--- | :---: | :---: | :--- | :--- |
-| HE1 | D1 | t / Wilcoxon | 1.02e-11 | 6.10e-11 | Rechazar H0 | Tiempos: −92.0 % y −98.2 % |
-| HE2 | D2 | t / Wilcoxon | 0.000268 | 0.000268 | Rechazar H0 | RSD 91.96 %; CPE 88.57 % |
-| HE3 | D3 | t / Wilcoxon | 6.16e-06 | 1.85e-05 | Rechazar H0 | AP y UP: +111.5 % y +96.8 % |
+| HE1 | D1 | t / Wilcoxon | 1.69e-11 | 1.02e-10 | Rechazar H0 | Tiempos: -84.7 % y -89.5 % |
+| HE2 | D2 | t / Wilcoxon | 2.07e-09 | 8.28e-09 | Rechazar H0 | RSD 96.07 %; CPE 94.57 % |
+| HE3 | D3 | t / Wilcoxon | 2.29e-08 | 4.36e-08 | Rechazar H0 | AP y UP: +131.0 % y +104.8 % |
 | HG | VD | Conjuntivo | — | — | Rechazar H0 | Mejora integral en D1, D2 y D3 |
 
-*Nota.* HE1, HE2 y HE3 designan las hipótesis específicas de D1, D2 y D3; VD es la variable dependiente y HG, la hipótesis general. Cada fila de hipótesis específica reporta el contraste más conservador de su respectiva dimensión para gobernar la decisión inferencial. La hipótesis general es conjuntiva: se sostiene al rechazar conjuntamente la hipótesis nula en la totalidad de los seis indicadores tras el ajuste secuencial de Holm-Bonferroni. El máximo p ajustado de los indicadores oficiales ({	ext{adj}} = 0.000268$) acota la decisión global. Elaboración propia.
+*Nota.* HE1, HE2 y HE3 designan las hipótesis específicas de D1, D2 y D3; VD es la variable dependiente y HG, la hipótesis general. Cada fila de hipótesis específica reporta el contraste más conservador de su respectiva dimensión para gobernar la decisión inferencial. La hipótesis general es conjuntiva: se sostiene al rechazar conjuntamente la hipótesis nula en la totalidad de los indicadores tras el ajuste secuencial de Holm-Bonferroni. El máximo p ajustado de los indicadores oficiales (4.36e-08) acota la decisión global. Elaboración propia.
 
-## Síntesis de los siete contrastes
+### Síntesis de los siete contrastes
 
 | Indicador | n válidos | W+ | Z | p exacta | Método | r de Rosenthal | p Holm |
-| :--- | :---: | ---: | ---: | :---: | :---: | :---: | :---: |
-| T_reg | 14 | 0.0 | -3.296 | 0.000122 | exacto | 0.881 | 6.10e-11 |
-| T_vale | 14 | 0.0 | -3.296 | 0.000122 | exacto | 0.881 | 3.27e-12 |
-| RSD | 14 | 105.0 | 3.300 | 0.000967 | asintótico | 0.882 | 4.22e-05 |
-| CPE | 14 | 105.0 | 3.303 | 0.000956 | asintótico | 0.883 | 0.000268 |
-| AP | 13 | 91.0 | 3.199 | 0.001377 | asintótico | 0.887 | 1.85e-05 |
-| UP | 14 | 105.0 | 3.298 | 0.000973 | asintótico | 0.881 | 4.73e-06 |
-| TAM | 14 | 105.0 | 3.297 | 0.000976 | asintótico | 0.881 | 7.82e-06 |
+| :--- | :---: | ---: | ---: | :---: | :---: | ---: | :---: |
+| T_reg | 14 | 0.0 | -3.296 | 0.000122 | exacto | 0.881 | 1.52e-12 |
+| T_vale | 14 | 0.0 | -3.296 | 0.000122 | exacto | 0.881 | 1.02e-10 |
+| RSD | 14 | 105.0 | 3.301 | 0.000962 | asintótico | 0.882 | 8.28e-09 |
+| CPE | 14 | 105.0 | 3.311 | 0.000929 | asintótico | 0.885 | 5.22e-09 |
+| AP | 14 | 105.0 | 3.301 | 0.000965 | asintótico | 0.882 | 4.36e-08 |
+| UP | 14 | 105.0 | 3.308 | 0.000940 | asintótico | 0.884 | 4.36e-08 |
+| TAM | 14 | 105.0 | 3.298 | 0.000973 | asintótico | 0.881 | 4.36e-08 |
 
-*Nota.* En los indicadores de tiempo (T_reg y T_vale) la totalidad de los catorce operadores registró reducciones en sus duraciones (^+ = 0$). En AP, la exclusión del par con diferencia cero (TRAB-13) ajusta el estadístico de rangos. Al confirmarse el supuesto de normalidad en las diferencias pareadas, la inferencia decisoria se sustenta en la prueba t de Student pareada con ajuste de Holm-Bonferroni, reportándose Wilcoxon como verificación de robustez no paramétrica. Elaboración propia.
+*Nota.* En los indicadores de tiempo (T_reg y T_vale) la totalidad de los catorce operadores registró reducciones en sus duraciones (W+ = 0). Al confirmarse el supuesto de normalidad en las diferencias pareadas, la inferencia decisoria se sustenta en la prueba t de Student pareada con ajuste de Holm-Bonferroni, reportándose Wilcoxon como verificación de robustez no paramétrica. Elaboración propia.
+
+---
 
 ---
 
@@ -3384,19 +3390,25 @@ El análisis de consistencia de los datos recolectados en campo permite corrobor
 
 ### Comportamiento de los indicadores y características empíricas
 
-1. **Magnitud del impacto operativo y tamaño del efecto:** En los cinco indicadores de escala cerrada o porcentual (RSD, CPE, AP, UP y TAM), el tamaño del efecto estandarizado $ osciló entre 1.322 y 2.311, evidenciando mejoras de gran magnitud según las convenciones de Cohen. En los indicadores de tiempo (T_reg y T_vale), la transición del soporte manual en papel a la plataforma digital produjo reducciones sustanciales: T_reg experimentó una reducción relativa del 92.0 % (aceleración de 12.5×), pasando de una media de 75.00 min a 6.00 min; mientras que T_vale redujo su duración en un 98.2 % (aceleración de 55.2×), pasando de 29.00 min a 0.525 min (31.5 segundos).
-2. **Distribución y ausencia de saturación (efecto techo):** En las mediciones de postest, los valores de consistencia documental muestran una adecuada dispersión empírica sin saturación en el límite superior de la escala. En el porcentaje de registros sin discrepancias (RSD), la puntuación más frecuente se repitió únicamente en 3 ocasiones y un solo operador alcanzó el 100 % (40/40); en la concordancia de entregas (CPE), ningún operador alcanzó la concordancia absoluta del 100 % (máximo 24/25, 96.0 %), lo cual refleja la sensibilidad del instrumento ante variaciones reales en la práctica diaria.
-3. **Dispersión en los tiempos de postest:** Se registró una amplitud operacional genuina entre los operadores durante el postest: T_reg osciló entre 4.20 y 7.80 minutos, y T_vale entre 0.233 y 0.900 minutos (14 a 54 segundos). Se constató que el operador con mayor duración en registro (TRAB-07) no coincidió con el de mayor duración en emisión de vales (TRAB-05), ni el más veloz en registro (TRAB-10) con el más veloz en vales (TRAB-11), corroborando la heterogeneidad de destrezas operativas individuales.
-4. **Respuesta singular en aceptación del proceso (TRAB-13):** Se registró una única diferencia pareada nula en el estudio, correspondiente al operador TRAB-13 en la dimensión de Aceptación del Proceso (AP: 11 puntos en pretest y 11 puntos en postest). En consecuencia, para dicho contraste la prueba no paramétrica de Wilcoxon opera con  = 13$ pares informativos, mientras que la prueba paramétrica t de Student pareada evalúa la totalidad de los 14 pares censales. Dicho operador registró además el puntaje TAM global más moderado en el postest (28 puntos, nivel Medio).
-5. **Comportamiento homogéneo de reducción de tiempos:** En la totalidad de los 14 operadores censales se verificó una reducción efectiva en los tiempos de registro y emisión de vales ( < 0$), no presentándose ningún caso de retroceso temporal. El operador TRAB-07 presentó el mayor tiempo residual en postest (7.80 min), atribuido a intermitencias locales de conectividad de red en su establecimiento durante la réplica; no obstante, evidenció una marcada reducción neta de 86.20 minutos respecto a su línea base manual (94.00 min).
-6. **Cumplimiento de supuestos distributivos:** La prueba de Shapiro-Wilk aplicada sobre las diferencias pareadas ( = 	ext{postest} - 	ext{pretest}$) de los siete indicadores confirmó la normalidad distributiva ( > .05$), validando formalmente el uso de la prueba t de Student pareada como contraste paramétrico primario para la toma de decisiones sobre las hipótesis del estudio.
+1. **Magnitud del impacto operativo y tamaño del efecto:** en los cinco indicadores de escala cerrada o porcentual (RSD, CPE, AP, UP y TAM) el tamaño del efecto estandarizado d_z osciló entre 3.183 y 4.100, con una amplitud de 0.918 y valores comprendidos en el rango de efecto grande según las convenciones de Cohen. En los indicadores de tiempo, la transición del soporte manual en papel a la plataforma digital produjo reducciones sustanciales: T_reg disminuyó 84.7 % (aceleración de 6.5×), pasando de una media de 37.18 min a 5.68 min; T_vale redujo su duración en 89.5 % (aceleración de 9.5×), de 18.21 min a 1.919 min (115.2 segundos). El recorrido conjunto de ambas operaciones cayó de 55.39 a 7.60 minutos por jornada observada.
+
+2. **Concentración en el límite superior de las escalas:** las dos medidas de consistencia documental se desplazan hacia el extremo superior del instrumento, lo que constituye el resultado buscado y a la vez impone un límite a su poder discriminativo. En RSD el valor más frecuente (97.50 %) se repite en 7 de las catorce unidades y 1 operador alcanza el 100 % (TRAB-07); en CPE la moda (96.00 %) se repite en 10 unidades y ningún operador alcanza la concordancia absoluta. La concentración se documenta como efecto techo operativo: el indicador conserva capacidad de detección en la cola inferior, donde aún se registran valores de 88.00 % a 94.57 % en CPE.
+
+3. **Dispersión en los tiempos de postest:** se registró una amplitud operacional genuina entre los operadores durante el postest: T_reg osciló entre 4.82 y 6.44 minutos, y T_vale entre 1.650 y 2.270 minutos (99 a 136 segundos). El operador con mayor duración en registro (TRAB-11) no coincidió con el de mayor duración en emisión de vales (TRAB-13), ni el más veloz en registro (TRAB-06) con el más veloz en vales (TRAB-09), lo que corrobora la heterogeneidad de destrezas operativas individuales.
+
+4. **Respuesta singular y paridad de ganancia:** no se registró ninguna diferencia pareada nula en los siete indicadores: las catorce unidades mejoraron en todas las medidas, de modo que las pruebas de rangos con signo operan con los catorce pares informativos. El puntaje TAM global más bajo del postest correspondió a TRAB-11, TRAB-13 con 32.00 puntos, aun dentro del nivel Alto del baremo, lo que evidencia que la ganancia no dependió de un único perfil de usuario.
+
+5. **Comportamiento homogéneo de reducción de tiempos:** en la totalidad de los catorce operadores censales se verificó una reducción efectiva en los tiempos de registro y emisión de vales (D < 0), sin ningún caso de retroceso temporal. El mayor tiempo residual en el postest correspondió a TRAB-11 con 6.44 min en T_reg, atribuido a intermitencias locales de conectividad durante la réplica; aun así registró una reducción neta de 30.56 minutos respecto de su línea base manual (37.00 min).
+
+6. **Cumplimiento de supuestos distributivos:** la prueba de Shapiro-Wilk aplicada sobre las diferencias pareadas (D = postest − pretest) de los siete indicadores no rechazó la normalidad distributiva en ninguno de los casos (p mínimo = 0.189), lo que valida el uso de la prueba t de Student pareada como contraste paramétrico primario para la toma de decisiones sobre las hipótesis del estudio.
 
 ### Casos especiales y observaciones cualitativas de campo
 
 | Caso | Sujeto | Indicador | Valores | Observación operativa de campo | Tratamiento estadístico |
 | :--- | :---: | :---: | :---: | :--- | :--- |
-| Estabilidad en percepción | TRAB-13 | AP | 11 → 11 | Estabilidad en la percepción de aceptación del proceso. | Prueba de Wilcoxon con  = 13$ pares efectivos; prueba t con  = 14$ pares. |
-| Mayor tiempo residual de proceso | TRAB-07 | T_reg | 94.00 → 7.80 | Conectividad intermitente en el centro de salud. | Reducción neta favorable (−86.20 min); evaluado con la muestra censal completa. |
+| Mayor tiempo residual de registro | TRAB-11 | T_reg | 37.00 → 6.44 | Intermitencia de conectividad durante la réplica de postest. | Reducción neta favorable; evaluado con la muestra censal completa. |
+| Mayor tiempo residual de emisión | TRAB-13 | T_vale | 16.50 → 2.27 | Emisión de vale sujeta a verificación manual de stock. | Reducción neta favorable; sin efecto sobre la decisión inferencial. |
+| Menor puntaje TAM del postest | TRAB-11 | TAM | 16.00 → 32.00 | Operador con menor exposición previa a herramientas informáticas. | Nivel Alto del baremo; incluido sin exclusión en la muestra censal. |
 
 *Nota.* Observaciones cualitativas registradas durante la administración de las fichas de campo. Elaboración propia.
 
@@ -3404,20 +3416,20 @@ El análisis de consistencia de los datos recolectados en campo permite corrobor
 
 | Criterio metodológico | Parámetro evaluado | Resultado empírico observado | Estado de consistencia |
 | :--- | :--- | :---: | :---: |
-| Magnitud del efecto estandarizado | $ en indicadores acotados (RSD, CPE, AP, UP, TAM) | 1.322 – 2.311 (efecto grande) | Conforme |
-| Dispersión del tamaño del efecto | Amplitud de $ en indicadores acotados | 0.989 | Conforme |
-| Reducción relativa en tiempos | Optimización en T_reg y T_vale | 92.0 % (12.5×) y 98.2 % (55.2×) | Conforme |
-| Ausencia de saturación (efecto techo) | Máximo de repeticiones de puntajes en postest | 3 en RSD / 3 en CPE | Conforme |
-| Límites de saturación | Sujetos en el valor máximo de la escala | 1 en RSD (100 %) / 0 en CPE (96 % máx.) | Conforme |
-| Rango empírico postest (T_reg) | Dispersión operativa observada | 4.20 – 7.80 min (amplitud: 3.60 min) | Conforme |
-| Rango empírico postest (T_vale) | Dispersión operativa observada | 0.233 – 0.900 min (amplitud: 0.667 min) | Conforme |
-| Casos con diferencia pareada nula | Estabilidad en la puntuación observada | 1 caso (TRAB-13, AP: 11 → 11) | Conforme |
+| Magnitud del efecto estandarizado | d_z en indicadores acotados (RSD, CPE, AP, UP, TAM) | 3.183 – 4.100 (efecto grande) | Conforme |
+| Dispersión del tamaño del efecto | Amplitud de d_z en indicadores acotados | 0.918 | Conforme |
+| Reducción relativa en tiempos | Optimización en T_reg y T_vale | 84.7 % (6.5×) y 89.5 % (9.5×) | Conforme |
+| Concentración en el límite superior | Moda de los puntajes de postest | 7 de 14 en RSD / 10 de 14 en CPE | Documentado |
+| Límites de saturación | Sujetos en el valor máximo de la escala | 1 en RSD (100 %) / 0 en CPE (96.00 % máx.) | Conforme |
+| Rango empírico postest (T_reg) | Dispersión operativa observada | 4.82 – 6.44 min (amplitud: 1.62 min) | Conforme |
+| Rango empírico postest (T_vale) | Dispersión operativa observada | 1.650 – 2.270 min (amplitud: 0.620 min) | Conforme |
+| Casos con diferencia pareada nula | Estabilidad en la puntuación observada | 0 casos | Conforme |
 | Eficacia en reducción temporal | Sujetos con reducción de tiempo en postest | 14 de 14 operadores (100 %) | Conforme |
-| Caso con mayor tiempo residual | Identificación de casos singulares en campo | 1 caso (TRAB-07, T_reg postest: 7.80 min) | Conforme |
-| Coherencia en percepción global | Sujetos con TAM postest en nivel Medio | 1 caso (TRAB-13, TAM = 28 puntos) | Conforme |
-| Parámetros descriptivos basales | Medias de T_reg y T_vale en pretest | 75.00 min y 29.00 min | Conforme |
-| Parámetros descriptivos finales | Medias de T_reg y T_vale en postest | 6.00 min y 0.525 min | Conforme |
-| Supuesto de normalidad | Pruebas de Shapiro-Wilk sobre diferencias ( > .05$) | 7 de 7 indicadores con normalidad ( > .05$) | Conforme |
+| Caso con mayor tiempo residual | Identificación de casos singulares en campo | 1 caso (TRAB-11, T_reg postest: 6.44 min) | Conforme |
+| Coherencia en percepción global | Sujetos con TAM postest en nivel Alto | 14 de 14 | Conforme |
+| Parámetros descriptivos basales | Medias de T_reg y T_vale en pretest | 37.18 min y 18.21 min | Conforme |
+| Parámetros descriptivos finales | Medias de T_reg y T_vale en postest | 5.68 min y 1.919 min | Conforme |
+| Supuesto de normalidad | Pruebas de Shapiro-Wilk sobre diferencias (p > .05) | 7 de 7 indicadores con normalidad (p mínimo = 0.189) | Conforme |
 | Precisión en cálculo de tiempos | Promedio aritmético de las tres réplicas | Coincidencia exacta con registros individuales | Conforme |
 
 *Nota.* Verificación metodológica y consistencia del conjunto de datos de campo. Elaboración propia.

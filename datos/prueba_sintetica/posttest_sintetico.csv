@@ -1,15 +1,15 @@
 sujeto_id,centro_acopio,t_reg,t_vale,rsd,cpe,ap_01,ap_02,ap_03,ap_04,up_01,up_02,up_03,up_04,score_ap,score_up,score_tam_total,nivel_satisfaccion
-TRAB-01,ALMACÉN (CHANKA),7.5,3.0,95.0,96.0,4,5,4,5,5,5,4,5,18,19,37,Alto
-TRAB-02,ALMACÉN (CHANKA),8.0,3.5,95.0,92.0,4,4,4,4,5,4,4,5,16,18,34,Alto
-TRAB-03,Hospital Andahuaylas,6.5,2.5,97.5,96.0,5,5,5,4,5,5,5,5,19,20,39,Alto
-TRAB-04,Hospital ESSALUD Andahuaylas,6.0,2.5,97.5,100.0,5,5,5,5,5,5,5,5,20,20,40,Alto
-TRAB-05,Centro de Salud Andahuaylas,9.0,4.0,92.5,92.0,4,4,4,4,4,4,4,4,16,16,32,Alto
-TRAB-06,Talavera,7.0,3.0,97.5,96.0,5,4,5,4,5,5,4,5,18,19,37,Alto
-TRAB-07,San Jeronimo,8.5,4.0,92.5,92.0,4,4,4,4,4,4,4,4,16,16,32,Alto
-TRAB-08,Huancaray,5.5,2.0,100.0,100.0,5,5,5,5,5,5,5,5,20,20,40,Alto
-TRAB-09,Chicmo,6.0,2.5,97.5,96.0,5,5,5,5,5,5,5,5,20,20,40,Alto
-TRAB-10,Huancabamba,7.5,3.5,95.0,96.0,4,4,4,4,4,5,4,5,16,18,34,Alto
-TRAB-11,Pampachiri,7.0,3.0,95.0,96.0,4,4,5,4,5,4,4,5,17,18,35,Alto
-TRAB-12,San Antonio de Cachi,8.5,3.5,92.5,92.0,4,4,4,4,4,4,4,4,16,16,32,Alto
-TRAB-13,Turpo,6.5,2.5,97.5,96.0,5,5,5,4,5,5,5,5,19,20,39,Alto
-TRAB-14,Kishuara,7.0,3.0,97.5,96.0,4,4,5,4,5,5,4,5,17,19,36,Alto
+TRAB-01,ALMACÉN (CHANKA),5.37,2.12,95.0,96.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-02,ALMACÉN (CHANKA),5.73,1.83,97.5,96.0,4,5,5,5,4,4,4,4,19,16,35,Alto
+TRAB-03,Hospital Andahuaylas,5.34,1.72,95.0,96.0,4,4,5,4,4,5,5,4,17,18,35,Alto
+TRAB-04,Hospital ESSALUD Andahuaylas,5.59,2.17,90.0,96.0,4,4,5,5,4,4,5,4,18,17,35,Alto
+TRAB-05,Centro de Salud Andahuaylas,6.15,1.86,97.5,96.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-06,Talavera,4.82,1.67,95.0,96.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-07,San Jeronimo,4.95,2.0,100.0,92.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-08,Huancaray,5.92,1.96,97.5,96.0,4,5,4,5,5,5,5,4,18,19,37,Alto
+TRAB-09,Chicmo,6.01,1.65,97.5,96.0,5,5,5,5,4,5,5,5,20,19,39,Alto
+TRAB-10,Huancabamba,6.29,1.87,97.5,96.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-11,Pampachiri,6.44,1.78,95.0,92.0,4,4,4,4,4,4,4,4,16,16,32,Alto
+TRAB-12,San Antonio de Cachi,5.74,2.07,97.5,92.0,5,5,5,5,5,5,5,5,20,20,40,Alto
+TRAB-13,Turpo,5.53,2.27,92.5,96.0,4,4,4,4,4,4,4,4,16,16,32,Alto
+TRAB-14,Kishuara,5.63,1.9,97.5,88.0,4,4,4,5,4,5,4,4,17,17,34,Alto
