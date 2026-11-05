@@ -183,7 +183,9 @@ def ejecutar_pipeline() -> dict:
         ew = n * (n + 1) / 4.0
         vw = n * (n + 1) * (2 * n + 1) / 24.0
         z_wilc = (res_w.statistic - ew) / math.sqrt(vw)
-        r_rosenthal = abs(z_wilc) / math.sqrt(2.0 * n)
+        # r de Rosenthal = |Z| / sqrt(N), con N el numero de pares validos
+        # (Ecuacion 11 del informe; n = 14, sin diferencias nulas).
+        r_rosenthal = abs(z_wilc) / math.sqrt(n)
 
         contrastes[var] = {
             "indicador": nombre,

@@ -542,7 +542,7 @@
       "texto_intro": "El contraste inferencial de las hipótesis formuladas en la matriz de consistencia definitiva (DEC-007 / DEC-027) se desarrolló contrastando los indicadores pertenecientes a cada una de las tres dimensiones oficiales frente a su respectiva hipótesis nula, cerrando con la contrastación multidimensional conjunta de la Hipótesis General. Para salvaguardar el control estricto de la tasa de error por familia (FWER) ante la multiplicidad de contrastes simultáneos, se aplicó la corrección secuencial escalonada de Holm-Bonferroni (Holm, 1979). En todos los análisis se reportan tanto la prueba paramétrica t de Student (con el tamaño del efecto d de Cohen pareado) como la prueba no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal).",
       "he1_oportunidad": {
         "subtitulo": "5.4.1. Contrastación de la Hipótesis Específica 1",
-        "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -29.997 con un p-valor bilateral de p = 2.18e-13 (p < .001) y un tamaño del efecto d de Cohen de -8.02, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.000 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 1.52e-12 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -21.320, p = 1.69e-11 (p < .001), d de Cohen de -5.70 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.000 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_adj = 1.02e-10 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9).",
+        "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -29.997 con un p-valor bilateral de p = 2.18e-13 (p < .001) y un tamaño del efecto d de Cohen de -8.02, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.000 (p < .001) y un tamaño del efecto r de Rosenthal de 0.88 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 1.52e-12 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -21.320, p = 1.69e-11 (p < .001), d de Cohen de -5.70 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.000 y r de Rosenthal = 0.88, manteniendo un p-valor ajustado de Holm de p_adj = 1.02e-10 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9).",
         "tabla": {
           "numero": "Tabla 9",
           "titulo": "Contraste inferencial de la Hipótesis Específica 1: Oportunidad de procesamiento mediante pruebas paramétricas y no paramétricas pareadas",
@@ -575,7 +575,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "0.000",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,1"
@@ -597,7 +597,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "0.000",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,1"
@@ -608,7 +608,7 @@
       },
       "he2_consistencia": {
         "subtitulo": "5.4.2. Contrastación de la Hipótesis Específica 2",
-        "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10).",
+        "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.88, derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.88, alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10).",
         "tabla": {
           "numero": "Tabla 10",
           "titulo": "Contraste inferencial de la Hipótesis Específica 2: Consistencia documental mediante pruebas paramétricas y no paramétricas pareadas",
@@ -641,7 +641,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "< .001",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,2"
@@ -663,7 +663,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "0.001",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,2"
@@ -674,7 +674,7 @@
       },
       "he3_satisfaccion": {
         "subtitulo": "5.4.3. Contrastación de la Hipótesis Específica 3",
-        "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.29e-08 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 3.57e-08 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11).",
+        "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.88, con un p ajustado por Holm de p_adj = 2.29e-08 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.88, alcanzando un p ajustado por Holm de p_adj = 3.57e-08 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11).",
         "tabla": {
           "numero": "Tabla 11",
           "titulo": "Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario mediante pruebas paramétricas y no paramétricas pareadas",
@@ -707,7 +707,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "< .001",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,3"
@@ -729,7 +729,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "< .001",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,3"
@@ -751,7 +751,7 @@
               "W = 0.0 (Z = -3.30)",
               "—",
               "< .001",
-              "r = 0.62",
+              "r = 0.88",
               "Grande (r >= 0.5)",
               "—",
               "Rechazar H0,3"
@@ -1329,7 +1329,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "0.000",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,1"
@@ -1351,7 +1351,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "0.000",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,1"
@@ -1391,7 +1391,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,2"
@@ -1413,7 +1413,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "0.001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,2"
@@ -1453,7 +1453,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,3"
@@ -1475,7 +1475,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,3"
@@ -1497,7 +1497,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,3"
@@ -2171,7 +2171,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -29.997 con un p-valor bilateral de p = 2.18e-13 (p < .001) y un tamaño del efecto d de Cohen de -8.02, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.000 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 1.52e-12 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -21.320, p = 1.69e-11 (p < .001), d de Cohen de -5.70 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.000 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_adj = 1.02e-10 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9)."
+      "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -29.997 con un p-valor bilateral de p = 2.18e-13 (p < .001) y un tamaño del efecto d de Cohen de -8.02, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.000 (p < .001) y un tamaño del efecto r de Rosenthal de 0.88 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 1.52e-12 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -21.320, p = 1.69e-11 (p < .001), d de Cohen de -5.70 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.000 y r de Rosenthal = 0.88, manteniendo un p-valor ajustado de Holm de p_adj = 1.02e-10 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9)."
     },
     {
       "tipo": "tabla_apa7",
@@ -2206,7 +2206,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "0.000",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,1"
@@ -2228,7 +2228,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "0.000",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,1"
@@ -2242,7 +2242,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10)."
+      "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.88, derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.88, alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10)."
     },
     {
       "tipo": "tabla_apa7",
@@ -2277,7 +2277,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,2"
@@ -2299,7 +2299,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "0.001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,2"
@@ -2313,7 +2313,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.29e-08 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 3.57e-08 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11)."
+      "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.88, con un p ajustado por Holm de p_adj = 2.29e-08 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.88, alcanzando un p ajustado por Holm de p_adj = 3.57e-08 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11)."
     },
     {
       "tipo": "tabla_apa7",
@@ -2348,7 +2348,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,3"
@@ -2370,7 +2370,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,3"
@@ -2392,7 +2392,7 @@
           "W = 0.0 (Z = -3.30)",
           "—",
           "< .001",
-          "r = 0.62",
+          "r = 0.88",
           "Grande (r >= 0.5)",
           "—",
           "Rechazar H0,3"

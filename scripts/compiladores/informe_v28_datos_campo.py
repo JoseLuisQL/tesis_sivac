@@ -246,11 +246,11 @@ HE2 = (
     "B. Resultados inferenciales:\n"
     "  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó "
     "t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y "
-    "Wilcoxon registró W = 105.0, Z = 3.301, p < .001 con r de Rosenthal de 0.882, "
+    "Wilcoxon registró W = 0.0, Z = −3.296, p < .001 con r de Rosenthal de 0.881, "
     "derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n"
     "  Para la concordancia programada vs entregada (CPE), la prueba t de Student "
     "pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 "
-    "(efecto grande), y Wilcoxon arrojó W = 105.0, Z = 3.311, p < .001 con r = 0.885, "
+    "(efecto grande), y Wilcoxon arrojó W = 0.0, Z = −3.296, p < .001 con r = 0.881, "
     "alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001)."
 )
 
@@ -258,15 +258,15 @@ HE3 = (
     "B. Resultados inferenciales:\n"
     "  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó "
     "t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| ≥ 0.80), y Wilcoxon "
-    "obtuvo W = 105.0, Z = 3.301, p < .001 y r = 0.882, con un p ajustado por Holm de "
-    "p_adj = 4.36e-08 (p < .001).\n"
+    "obtuvo W = 0.0, Z = −3.296, p < .001 y r = 0.881, con un p ajustado por Holm de "
+    "p_adj = 2.29e-08 (p < .001).\n"
     "  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró "
     "t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| ≥ 0.80), y Wilcoxon "
-    "registró W = 105.0, Z = 3.308, p < .001 y r = 0.884, alcanzando un p ajustado por "
-    "Holm de p_adj = 4.36e-08 (p < .001).\n"
+    "registró W = 0.0, Z = −3.296, p < .001 y r = 0.881, alcanzando un p ajustado por "
+    "Holm de p_adj = 3.57e-08 (p < .001).\n"
     "  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico "
     "t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico "
-    "W = 105.0, Z = 3.298, p < .001 (p_adj = 4.36e-08)."
+    "W = 0.0, Z = −3.296, p < .001 (p_adj = 4.36e-08)."
 )
 
 
@@ -291,29 +291,29 @@ def paso_inferencial(doc: Document) -> None:
     fila(t41, 1, ["Registros sin discrepancias (RSD)", "t de Student pareada", "t = 14.515",
                   "< .001", "d = 3.88 (grande)", "< .001", "Rechazar H0,2"])
     fila(t41, 2, ["Registros sin discrepancias (RSD)", "Wilcoxon pareado",
-                  "W = 105.0 (Z = 3.301)", "< .001", "r = 0.882 (grande)", "No aplica",
+                  "W = 0.0 (Z = −3.296)", "< .001", "r = 0.881 (grande)", "No aplica",
                   "Rechazar H0,2"])
     fila(t41, 3, ["Concordancia programada vs entregada (CPE)", "t de Student pareada",
                   "t = 15.342", "< .001", "d = 4.10 (grande)", "< .001", "Rechazar H0,2"])
     fila(t41, 4, ["Concordancia programada vs entregada (CPE)", "Wilcoxon pareado",
-                  "W = 105.0 (Z = 3.311)", "< .001", "r = 0.885 (grande)", "No aplica",
+                  "W = 0.0 (Z = −3.296)", "< .001", "r = 0.881 (grande)", "No aplica",
                   "Rechazar H0,2"])
 
     t42 = doc.tables[42]
     fila(t42, 1, ["Aceptación del proceso (AP)", "t de Student pareada", "t = 11.908",
                   "< .001", "d = 3.18 (grande)", "< .001", "Rechazar H0,3"])
     fila(t42, 2, ["Aceptación del proceso (AP)", "Wilcoxon pareado",
-                  "W = 105.0 (Z = 3.301)", "< .001", "r = 0.882 (grande)", "No aplica",
+                  "W = 0.0 (Z = −3.296)", "< .001", "r = 0.881 (grande)", "No aplica",
                   "Rechazar H0,3"])
     fila(t42, 3, ["Utilidad percibida (UP)", "t de Student pareada", "t = 12.160",
                   "< .001", "d = 3.25 (grande)", "< .001", "Rechazar H0,3"])
     fila(t42, 4, ["Utilidad percibida (UP)", "Wilcoxon pareado",
-                  "W = 105.0 (Z = 3.308)", "< .001", "r = 0.884 (grande)", "No aplica",
+                  "W = 0.0 (Z = −3.296)", "< .001", "r = 0.881 (grande)", "No aplica",
                   "Rechazar H0,3"])
     fila(t42, 5, ["Puntaje global TAM (AP + UP)", "t de Student pareada", "t = 12.367",
                   "< .001", "d = 3.31 (grande)", "< .001", "Rechazar H0,3"])
     fila(t42, 6, ["Puntaje global TAM (AP + UP)", "Wilcoxon pareado",
-                  "W = 105.0 (Z = 3.298)", "< .001", "r = 0.881 (grande)", "No aplica",
+                  "W = 0.0 (Z = −3.296)", "< .001", "r = 0.881 (grande)", "No aplica",
                   "Rechazar H0,3"])
 
     nota = doc.paragraphs[P_NOTA_H3]

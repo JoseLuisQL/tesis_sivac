@@ -423,7 +423,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.0001220703125,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 2.1752653536650052e-13,
@@ -450,7 +450,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.0001220703125,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 1.693262088544013e-11,
@@ -477,7 +477,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.0009618222539686676,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 2.0702464718952877e-09,
@@ -504,7 +504,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.0009286427138582953,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 1.0447817631390652e-09,
@@ -531,7 +531,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.0009646226188569392,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 2.290928694662251e-08,
@@ -558,7 +558,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.000939615619221934,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 1.7833568586796878e-08,
@@ -585,7 +585,7 @@
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
         "p_valor": 0.0009730565294466851,
-        "r_rosenthal": 0.6228410989030497,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
       "p_valor_adoptado": 1.4549150967861066e-08,
