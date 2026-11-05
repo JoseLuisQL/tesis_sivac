@@ -1,0 +1,358 @@
+{
+  "semilla": 20261026,
+  "filas": {
+    "replicas": 168,
+    "asientos": 1120,
+    "despachos": 700,
+    "cuestionario": 224,
+    "matriz": 28
+  },
+  "archivos": {
+    "pretest_sintetico.csv": 1171,
+    "instrumento02_despachos.csv": 107327,
+    "instrumento03_reactivos.csv": 33572,
+    "posttest_sintetico.csv": 1160,
+    "instrumento02_asientos.csv": 150506,
+    "instrumento01_replicas.csv": 25429,
+    "matriz_analitica_pre_post.csv": 2416
+  },
+  "documento": {
+    "ruta": "datos/prueba_sintetica/DATOS_SINTETICOS_SIVAC.md",
+    "bytes": 362571,
+    "lineas": 1933
+  },
+  "estadisticas": {
+    "descriptivos": {
+      "t_reg": {
+        "nombre": "Tiempo de registro de movimientos (T_reg)",
+        "unidad": "min",
+        "dimension": "D1",
+        "pre": {
+          "media": 37.17857142857143,
+          "de": 3.831083110844478,
+          "mediana": 36.75,
+          "min": 31.5,
+          "max": 44.0,
+          "n": 14
+        },
+        "post": {
+          "media": 7.178571428571429,
+          "de": 1.048939810129602,
+          "mediana": 7.0,
+          "min": 5.5,
+          "max": 9.0,
+          "n": 14
+        },
+        "dif": {
+          "media": -30.0,
+          "de": 2.8823067684915684,
+          "mediana": -29.75,
+          "min": -35.5,
+          "max": -25.5
+        },
+        "delta_pct": -80.69164265129683
+      },
+      "t_vale": {
+        "nombre": "Tiempo de emisión de vales (T_vale)",
+        "unidad": "min",
+        "dimension": "D1",
+        "pre": {
+          "media": 18.214285714285715,
+          "de": 2.867015908532811,
+          "mediana": 17.75,
+          "min": 14.5,
+          "max": 24.0,
+          "n": 14
+        },
+        "post": {
+          "media": 3.0357142857142856,
+          "de": 0.6033332321453784,
+          "mediana": 3.0,
+          "min": 2.0,
+          "max": 4.0,
+          "n": 14
+        },
+        "dif": {
+          "media": -15.178571428571429,
+          "de": 2.3172193453588927,
+          "mediana": -14.75,
+          "min": -20.0,
+          "max": -12.5
+        },
+        "delta_pct": -83.33333333333334
+      },
+      "rsd": {
+        "nombre": "Registros sin discrepancias (RSD)",
+        "unidad": "%",
+        "dimension": "D2",
+        "pre": {
+          "media": 63.57142857142857,
+          "de": 6.773412794088434,
+          "mediana": 63.75,
+          "min": 52.5,
+          "max": 75.0,
+          "n": 14
+        },
+        "post": {
+          "media": 95.89285714285714,
+          "de": 2.3219568291601624,
+          "mediana": 96.25,
+          "min": 92.5,
+          "max": 100.0,
+          "n": 14
+        },
+        "dif": {
+          "media": 32.32142857142857,
+          "de": 4.7499277033248815,
+          "mediana": 32.5,
+          "min": 25.0,
+          "max": 40.0
+        },
+        "delta_pct": 50.84269662921348
+      },
+      "cpe": {
+        "nombre": "Concordancia programada vs. entregada (CPE)",
+        "unidad": "%",
+        "dimension": "D2",
+        "pre": {
+          "media": 67.71428571428571,
+          "de": 6.9218558141648625,
+          "mediana": 68.0,
+          "min": 56.0,
+          "max": 80.0,
+          "n": 14
+        },
+        "post": {
+          "media": 95.42857142857143,
+          "de": 2.6519741765271836,
+          "mediana": 96.0,
+          "min": 92.0,
+          "max": 100.0,
+          "n": 14
+        },
+        "dif": {
+          "media": 27.714285714285715,
+          "de": 4.826665857163027,
+          "mediana": 28.0,
+          "min": 20.0,
+          "max": 36.0
+        },
+        "delta_pct": 40.92827004219411
+      },
+      "score_ap": {
+        "nombre": "Aceptación del proceso (AP)",
+        "unidad": "pts",
+        "dimension": "D3",
+        "pre": {
+          "media": 8.071428571428571,
+          "de": 2.2689979392568094,
+          "mediana": 8.0,
+          "min": 4.0,
+          "max": 12.0,
+          "n": 14
+        },
+        "post": {
+          "media": 17.714285714285715,
+          "de": 1.6374732612530445,
+          "mediana": 17.5,
+          "min": 16.0,
+          "max": 20.0,
+          "n": 14
+        },
+        "dif": {
+          "media": 9.642857142857142,
+          "de": 1.0818177620697815,
+          "mediana": 10.0,
+          "min": 8.0,
+          "max": 12.0
+        },
+        "delta_pct": 119.4690265486726
+      },
+      "score_up": {
+        "nombre": "Utilidad percibida (UP)",
+        "unidad": "pts",
+        "dimension": "D3",
+        "pre": {
+          "media": 9.0,
+          "de": 1.8810798862519207,
+          "mediana": 8.0,
+          "min": 6.0,
+          "max": 12.0,
+          "n": 14
+        },
+        "post": {
+          "media": 18.5,
+          "de": 1.5566235649883124,
+          "mediana": 19.0,
+          "min": 16.0,
+          "max": 20.0,
+          "n": 14
+        },
+        "dif": {
+          "media": 9.5,
+          "de": 1.0190493307301363,
+          "mediana": 10.0,
+          "min": 8.0,
+          "max": 11.0
+        },
+        "delta_pct": 105.55555555555556
+      },
+      "score_tam_total": {
+        "nombre": "Puntaje global TAM",
+        "unidad": "pts",
+        "dimension": "D3",
+        "pre": {
+          "media": 17.071428571428573,
+          "de": 4.084949594158193,
+          "mediana": 16.0,
+          "min": 10.0,
+          "max": 24.0,
+          "n": 14
+        },
+        "post": {
+          "media": 36.214285714285715,
+          "de": 3.092884424923451,
+          "mediana": 36.5,
+          "min": 32.0,
+          "max": 40.0,
+          "n": 14
+        },
+        "dif": {
+          "media": 19.142857142857142,
+          "de": 1.6104057232283402,
+          "mediana": 19.5,
+          "min": 16.0,
+          "max": 22.0
+        },
+        "delta_pct": 112.1338912133891
+      }
+    },
+    "normalidad": {
+      "t_reg": {
+        "W": 0.9785715351278782,
+        "p": 0.9656857320369145,
+        "normal": true
+      },
+      "t_vale": {
+        "W": 0.9325406040976904,
+        "p": 0.33109937974655945,
+        "normal": true
+      },
+      "rsd": {
+        "W": 0.9066010872731692,
+        "p": 0.14064871006592483,
+        "normal": true
+      },
+      "cpe": {
+        "W": 0.930266875985816,
+        "p": 0.3077839534819264,
+        "normal": true
+      },
+      "score_ap": {
+        "W": 0.909122845827579,
+        "p": 0.1530302050465152,
+        "normal": true
+      },
+      "score_up": {
+        "W": 0.8763514172969616,
+        "p": 0.051576074239910674,
+        "normal": true
+      },
+      "score_tam_total": {
+        "W": 0.9553331914987993,
+        "p": 0.6461003872120697,
+        "normal": true
+      }
+    },
+    "contrastes": {
+      "t_reg": {
+        "t": -38.944404818493084,
+        "gl": 13,
+        "p_t": 7.568028939969026e-15,
+        "d": -10.408329997330664,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0009758787856927137
+      },
+      "t_vale": {
+        "t": -24.509122979721216,
+        "gl": 13,
+        "p_t": 2.8812413911470554e-12,
+        "d": -6.55033864574463,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0009674284502477448
+      },
+      "rsd": {
+        "t": 25.460537405804878,
+        "gl": 13,
+        "p_t": 1.7727984873875063e-12,
+        "d": 6.804614846833149,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0009096482823255391
+      },
+      "cpe": {
+        "t": 21.48426365751595,
+        "gl": 13,
+        "p_t": 1.5363936840631238e-11,
+        "d": 5.741910986681677,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0009123455961962472
+      },
+      "score_ap": {
+        "t": 33.35152085980445,
+        "gl": 13,
+        "p_t": 5.573624691669783e-14,
+        "d": 8.913568884659465,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0008568260572129962
+      },
+      "score_up": {
+        "t": 34.88128013281199,
+        "gl": 13,
+        "p_t": 3.130057795466612e-14,
+        "d": 9.322414247790505,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0008620124372906324
+      },
+      "score_tam_total": {
+        "t": 44.4769984354892,
+        "gl": 13,
+        "p_t": 1.362188594578727e-15,
+        "d": 11.886977838405798,
+        "W_wilcoxon": 0.0,
+        "p_wilcoxon": 0.0009123455961962472
+      }
+    },
+    "confiabilidad": {
+      "Pretest_global": {
+        "alpha": 0.9385201561691519,
+        "k": 8,
+        "n": 14
+      },
+      "Pretest_AP": {
+        "alpha": 0.8765563856278904,
+        "k": 4,
+        "n": 14
+      },
+      "Pretest_UP": {
+        "alpha": 0.8737060041407867,
+        "k": 4,
+        "n": 14
+      },
+      "Postest_global": {
+        "alpha": 0.9150734389103142,
+        "k": 8,
+        "n": 14
+      },
+      "Postest_AP": {
+        "alpha": 0.8306010928961749,
+        "k": 4,
+        "n": 14
+      },
+      "Postest_UP": {
+        "alpha": 0.840513983371126,
+        "k": 4,
+        "n": 14
+      }
+    }
+  }
+}
