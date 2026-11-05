@@ -471,6 +471,8 @@ def main() -> None:
         for aviso in sin_cambios:
             print("  ", aviso)
 
+    alineados = V27.alinear_sin_justificar(doc)
+    print("párrafos con saltos suaves alineados a la izquierda:", alineados)
     V27.marcar_actualizacion(doc)
     doc.save(SALIDA)
     print("guardado", SALIDA)

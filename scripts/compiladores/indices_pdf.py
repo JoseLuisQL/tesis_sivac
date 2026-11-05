@@ -224,6 +224,27 @@ def marcar_actualizacion(doc: Document) -> None:
         ajustes.append(el)
 
 
+def alinear_sin_justificar(doc: Document) -> int:
+    """Pasa a izquierda los párrafos justificados que llevan saltos suaves.
+
+    LibreOffice estira la línea que termina en ``<w:br/>`` para llenar el
+    ancho justificado, y quedan renglones con palabras desperdigadas (pasa
+    en los bloques A/B/C de las hipótesis y en el listado de Shapiro-Wilk).
+    Un párrafo con enunciados en varias líneas se lee mejor alineado a la
+    izquierda, como el resto de las listas del informe.
+    """
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+    cambiados = 0
+    for par in doc.paragraphs:
+        if par.paragraph_format.alignment != WD_ALIGN_PARAGRAPH.JUSTIFY:
+            continue
+        if par._p.findall(".//" + qn("w:br")):
+            par.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            cambiados += 1
+    return cambiados
+
+
 
 def verificar(pdf: Path, doc: Document) -> List[str]:
     """Compara el número impreso en cada índice con la página real."""
