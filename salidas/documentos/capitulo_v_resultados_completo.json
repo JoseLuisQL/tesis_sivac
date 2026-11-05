@@ -18,7 +18,7 @@
       "titulo": "5.1. Análisis de Confiabilidad del Instrumento 03",
       "textos": [
         "La evaluación psicométrica de la consistencia interna constituye un requisito metodológico insoslayable para certificar la fiabilidad y estabilidad métrica de los instrumentos de recolección de datos antes de proceder a las contrastaciones inferenciales de hipótesis. En concordancia con las decisiones normativas DEC-019 y DEC-020, el análisis de confiabilidad se circunscribió al Instrumento N.° 03 (Cuestionario de Satisfacción del Usuario bajo el Modelo de Aceptación Tecnológica - TAM), dado que los Instrumentos N.° 01 (Ficha de Registro Cronométrico) y N.° 02 (Ficha de Cotejo Documental de Kardex) corresponden a mediciones directas de campo y auditorías físicas objetivas, cuya validez se sustenta en el protocolo de calibración inter-observador PMMV.",
-        "Para determinar la homogeneidad interna de la Modalidad A del Cuestionario TAM (conformada por ocho reactivos atómicos en escala Likert de 1 a 5 puntos, distribuidos equitativamente entre las dimensiones de Aceptación del Proceso [AP] y Utilidad Percibida [UP]), se calculó el coeficiente Alfa de Cronbach (Cronbach, 1951), complementado con la estimación de los intervalos de confianza asintóticos al 95% mediante el método de distribución F desarrollado por Feldt (1965). En la evaluación del pretest (proceso operativo manual tradicional), la escala global TAM arrojó un coeficiente alfa de .939 (IC 95%: [0.874, 0.977]), mientras que las subescalas de Aceptación del Proceso y Utilidad Percibida alcanzaron coeficientes de .877 (IC 95%: [0.721, 0.956]) y .874 (IC 95%: [0.715, 0.955]), respectivamente. Por su parte, en la medición del postest (tras la implantación del sistema web SIVAC), la consistencia interna global se situó en .915 (IC 95%: [0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%: [0.618, 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.943]).",
+        "Para determinar la homogeneidad interna de la Modalidad A del Cuestionario TAM (conformada por ocho reactivos atómicos en escala Likert de 1 a 5 puntos, distribuidos equitativamente entre las dimensiones de Aceptación del Proceso [AP] y Utilidad Percibida [UP]), se calculó el coeficiente Alfa de Cronbach (Cronbach, 1951), complementado con la estimación de los intervalos de confianza asintóticos al 95% mediante el método de distribución F desarrollado por Feldt (1965). En la evaluación del pretest (proceso operativo manual tradicional), la escala global TAM arrojó un coeficiente alfa de .939 (IC 95%: [0.874, 0.977]), mientras que las subescalas de Aceptación del Proceso y Utilidad Percibida alcanzaron coeficientes de .877 (IC 95%: [0.721, 0.956]) y .874 (IC 95%: [0.715, 0.955]), respectivamente. Por su parte, en la medición del postest (tras la implantación del sistema web SIVAC), la consistencia interna global se situó en .915 (IC 95%: [0.845, 0.972]), registrando la subescala AP un valor de .831 (IC 95%: [0.671, 0.948]) y la subescala UP un valor de .841 (IC 95%: [0.730, 0.957]).",
         "Los coeficientes observados superan con holgura el umbral psicométrico de .800 exigido por la literatura científica (George & Mallery, 2003; Hernández-Sampieri & Mendoza, 2018), categorizándose como de nivel 'Bueno' en las dimensiones específicas y de nivel 'Excelente' en el constructo general. Asimismo, la amplitud contenida de los intervalos de confianza de Feldt ratifica la precisión de la estimación sobre la población censal de 14 trabajadores de la Dirección de Salud Apurímac II, evidenciando que los reactivos capturan de manera coherente, robusta y reproducible la percepción del personal sanitario respecto a la operatividad del sistema de información. En la Tabla 4 se consolidan los coeficientes psicométricos obtenidos."
       ],
       "tabla": {
@@ -70,9 +70,9 @@
             "Escala Global TAM (Modalidad A)",
             "8",
             "14",
-            "0.915",
-            "0.826",
-            "0.968",
+            "0.924",
+            "0.845",
+            "0.972",
             "Excelente"
           ],
           [
@@ -80,9 +80,9 @@
             "Aceptación del Proceso (AP)",
             "4",
             "14",
-            "0.831",
-            "0.618",
-            "0.939",
+            "0.854",
+            "0.671",
+            "0.948",
             "Buena"
           ],
           [
@@ -90,9 +90,9 @@
             "Utilidad Percibida (UP)",
             "4",
             "14",
-            "0.841",
-            "0.640",
-            "0.943",
+            "0.880",
+            "0.730",
+            "0.957",
             "Buena"
           ]
         ],
@@ -104,7 +104,7 @@
       "texto_intro": "La caracterización descriptiva de la variable dependiente Gestión de movimientos mensuales de vacunas se estructuró conforme a las tres dimensiones normativas inmutables dictaminadas por la decisión DEC-007: (1) Oportunidad de procesamiento, (2) Consistencia documental, y (3) Satisfacción del usuario. El análisis longitudinal comparativo entre el estado basal o pretest (O_1) y el estado final o postest (O_2) se llevó a cabo sobre la totalidad de la población censal de n = 14 operadores de inmunizaciones, distribuidos estratégicamente en las dependencias territoriales de la DISA Apurímac II (incluyendo el Almacén Especializado de Vacunas de la Red Chanka, Hospital Andahuaylas, Hospital ESSALUD, C.S. Andahuaylas, C.S. Talavera, C.S. San Jerónimo, C.S. Huancaray, C.S. Chicmo, C.S. Huancabamba, C.S. Pampachiri, C.S. San Antonio de Cachi, C.S. Turpo y C.S. Kishuara). A fin de proporcionar un balance riguroso entre medidas de tendencia central y dispersión paramétricas y no paramétricas, se tabularon la media aritmética (M), desviación estándar (DE), mediana (Mdn), rango intercuartílico (RIC = Q_3 - Q_1), valores mínimos, máximos y la tasa de variación porcentual.",
       "d1_oportunidad": {
         "subtitulo": "5.2.1. Dimensión 1: Oportunidad de Procesamiento (T_reg y T_vale)",
-        "texto": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados evidenciaron una reducción temporal drástica y favorable. El tiempo promedio de registro de movimientos mensuales (T_reg) disminuyó de 37.18 minutos (DE = 3.83; Mdn = 36.75; RIC = 5.50) en el pretest a tan solo 7.18 minutos (DE = 1.05; Mdn = 7.00; RIC = 1.38) en el postest, lo que representa una contracción del tiempo operativo de digitación del 80.69%, con un ahorro medio neto de 30.00 minutos por operación. De forma enteramente concordante, el tiempo de emisión de comprobantes de salida o vales mensuales (T_vale) experimentó un descenso sustancial de 18.21 minutos (DE = 2.87; Mdn = 17.75) a 3.04 minutos (DE = 0.60; Mdn = 3.00), lográndose una optimización del 83.33%, equivalente a un recorte de 15.18 minutos por documento. La dispersión de los datos disminuyó ostensiblemente en el postest, denotando una estandarización homogénea en los tiempos de respuesta institucional. En la Tabla 5 y en la Figura 6 se detallan estas distribuciones temporales emparejadas.",
+        "texto": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados evidenciaron una reducción temporal drástica y favorable. El tiempo promedio de registro de movimientos mensuales (T_reg) disminuyó de 37.18 minutos (DE = 3.83; Mdn = 36.75; RIC = 5.50) en el pretest a tan solo 5.68 minutos (DE = 0.47; Mdn = 5.68; RIC = 0.58) en el postest, lo que representa una contracción del tiempo operativo de digitación del 84.72%, con un ahorro medio neto de 31.50 minutos por operación. De forma enteramente concordante, el tiempo de emisión de comprobantes de salida o vales mensuales (T_vale) experimentó un descenso sustancial de 18.21 minutos (DE = 2.87; Mdn = 17.75) a 1.92 minutos (DE = 0.19; Mdn = 1.89), lográndose una optimización del 89.46%, equivalente a un recorte de 16.29 minutos por documento. La dispersión de los datos disminuyó ostensiblemente en el postest, denotando una estandarización homogénea en los tiempos de respuesta institucional. En la Tabla 5 y en la Figura 6 se detallan estas distribuciones temporales emparejadas.",
         "tabla": {
           "numero": "Tabla 5",
           "titulo": "Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 1: Oportunidad de procesamiento (n = 14)",
@@ -137,24 +137,24 @@
               "Tiempo de registro (T_reg, min)",
               "Postest (SIVAC)",
               "14",
-              "7.18",
-              "1.05",
-              "7.00",
-              "1.38",
-              "5.50",
-              "9.00",
-              "-80.69%"
+              "5.68",
+              "0.47",
+              "5.68",
+              "0.58",
+              "4.82",
+              "6.44",
+              "-84.72%"
             ],
             [
               "Tiempo de registro (T_reg, min)",
               "Diferencia Pareada",
               "14",
-              "-30.00",
-              "2.88",
-              "-29.75",
-              "3.62",
-              "-35.50",
-              "-25.50",
+              "-31.50",
+              "3.93",
+              "-31.12",
+              "4.90",
+              "-39.05",
+              "-25.49",
               "—"
             ],
             [
@@ -173,24 +173,24 @@
               "Tiempo de emisión de vales (T_vale, min)",
               "Postest (SIVAC)",
               "14",
-              "3.04",
-              "0.60",
-              "3.00",
-              "1.00",
-              "2.00",
-              "4.00",
-              "-83.33%"
+              "1.92",
+              "0.19",
+              "1.89",
+              "0.26",
+              "1.65",
+              "2.27",
+              "-89.46%"
             ],
             [
               "Tiempo de emisión de vales (T_vale, min)",
               "Diferencia Pareada",
               "14",
-              "-15.18",
-              "2.32",
-              "-14.75",
-              "2.75",
-              "-20.00",
-              "-12.50",
+              "-16.29",
+              "2.86",
+              "-15.91",
+              "4.14",
+              "-22.00",
+              "-12.54",
               "—"
             ]
           ],
@@ -205,7 +205,7 @@
       },
       "d2_consistencia": {
         "subtitulo": "5.2.2. Dimensión 2: Consistencia Documental (RSD y CPE)",
-        "texto": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación radical en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8.88%) a un promedio postest de 96.00% (DE = 2.23%; Mdn = 96.25%; RIC = 2.75%), lo que refleja una ganancia relativa neta del +51.01% (diferencia media absoluta de +32.43 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO minimiza significativamente las inconsistencias documentales y elimina las discrepancias entre existencias físicas y registros. Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7.",
+        "texto": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación radical en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.77%; Mdn = 63.75%; RIC = 8.75%) a un promedio postest de 96.07% (DE = 2.54%; Mdn = 97.50%; RIC = 2.50%), lo que refleja una ganancia relativa neta del +51.12% (diferencia media absoluta de +32.50 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.71% (DE = 6.92%; Mdn = 68.00%) en el pretest a 94.57% (DE = 2.53%; Mdn = 96.00%) en el postest, experimentando una mejora relativa del +39.66% (+26.86 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO minimiza significativamente las inconsistencias documentales y elimina las discrepancias entre existencias físicas y registros. Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7.",
         "tabla": {
           "numero": "Tabla 6",
           "titulo": "Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 2: Consistencia documental (n = 14)",
@@ -227,9 +227,9 @@
               "Pretest (Manual)",
               "14",
               "63.57%",
-              "6.69%",
-              "63.50%",
-              "8.88%",
+              "6.77%",
+              "63.75%",
+              "8.75%",
               "52.50%",
               "75.00%",
               "—"
@@ -238,60 +238,60 @@
               "Registros sin discrepancias (RSD, %)",
               "Postest (SIVAC)",
               "14",
-              "96.00%",
-              "2.23%",
-              "96.25%",
-              "2.75%",
-              "92.00%",
+              "96.07%",
+              "2.54%",
+              "97.50%",
+              "2.50%",
+              "90.00%",
               "100.00%",
-              "+51.01%"
+              "+51.12%"
             ],
             [
               "Registros sin discrepancias (RSD, %)",
               "Diferencia Pareada",
               "14",
-              "+32.43%",
-              "4.56%",
-              "+32.75%",
-              "6.50%",
-              "+25.00%",
-              "+39.50%",
+              "+32.50%",
+              "8.38%",
+              "+32.50%",
+              "13.12%",
+              "+17.50%",
+              "+47.50%",
               "—"
             ],
             [
               "Concordancia programada vs entregada (CPE, %)",
               "Pretest (Manual)",
               "14",
-              "67.61%",
-              "5.97%",
+              "67.71%",
+              "6.92%",
               "68.00%",
               "8.00%",
-              "58.00%",
-              "78.00%",
+              "56.00%",
+              "80.00%",
               "—"
             ],
             [
               "Concordancia programada vs entregada (CPE, %)",
               "Postest (SIVAC)",
               "14",
-              "95.39%",
-              "2.35%",
-              "95.50%",
-              "3.25%",
-              "91.50%",
-              "100.00%",
-              "+41.10%"
+              "94.57%",
+              "2.53%",
+              "96.00%",
+              "3.00%",
+              "88.00%",
+              "96.00%",
+              "+39.66%"
             ],
             [
               "Concordancia programada vs entregada (CPE, %)",
               "Diferencia Pareada",
               "14",
-              "+27.79%",
-              "3.69%",
-              "+27.75%",
-              "5.38%",
-              "+22.00%",
-              "+33.50%",
+              "+26.86%",
+              "6.55%",
+              "+26.00%",
+              "11.00%",
+              "+16.00%",
+              "+36.00%",
               "—"
             ]
           ],
@@ -306,7 +306,7 @@
       },
       "d3_satisfaccion": {
         "subtitulo": "5.2.3. Dimensión 3: Satisfacción del Usuario (AP y UP bajo Modelo TAM)",
-        "texto": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el modelo TAM evidenció un cambio cualitativo profundo en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 17.71 puntos (DE = 1.64; Mdn = 17.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual masivo del +119.47% (diferencia media de +9.64 puntos). En la subescala de Utilidad Percibida (UP), la valoración promedio aumentó de 9.00 puntos (DE = 1.88; Mdn = 8.00) a 18.50 puntos (DE = 1.56; Mdn = 19.00), representando un progreso del +105.56% (+9.50 puntos). Finalmente, el Puntaje Global TAM (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 36.21 puntos (DE = 3.09; Mdn = 36.50), lo que supone una elevación global del +112.13%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones.",
+        "texto": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el modelo TAM evidenció un cambio cualitativo profundo en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 18.64 puntos (DE = 1.60; Mdn = 19.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual masivo del +130.97% (diferencia media de +10.57 puntos). En la subescala de Utilidad Percibida (UP), la valoración promedio aumentó de 9.00 puntos (DE = 1.88; Mdn = 8.00) a 18.43 puntos (DE = 1.70; Mdn = 19.00), representando un progreso del +104.76% (+9.43 puntos). Finalmente, el Puntaje Global TAM (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 37.07 puntos (DE = 3.15; Mdn = 38.00), lo que supone una elevación global del +117.15%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones.",
         "tabla": {
           "numero": "Tabla 7",
           "titulo": "Estadística descriptiva comparativa pretest y postest para los indicadores de la Dimensión 3: Satisfacción del usuario (n = 14)",
@@ -339,24 +339,24 @@
               "Aceptación del proceso (AP, 4-20 pts)",
               "Postest (SIVAC)",
               "14",
-              "17.71",
-              "1.64",
-              "17.50",
-              "3.00",
+              "18.64",
+              "1.60",
+              "19.50",
+              "2.75",
               "16.00",
               "20.00",
-              "+119.47%"
+              "+130.97%"
             ],
             [
               "Aceptación del proceso (AP, 4-20 pts)",
               "Diferencia Pareada",
               "14",
-              "+9.64",
-              "1.08",
-              "+10.00",
-              "1.00",
-              "+8.00",
-              "+12.00",
+              "+10.57",
+              "3.32",
+              "+11.00",
+              "4.75",
+              "+6.00",
+              "+16.00",
               "—"
             ],
             [
@@ -375,24 +375,24 @@
               "Utilidad percibida (UP, 4-20 pts)",
               "Postest (SIVAC)",
               "14",
-              "18.50",
-              "1.56",
+              "18.43",
+              "1.70",
               "19.00",
-              "2.00",
+              "3.00",
               "16.00",
               "20.00",
-              "+105.56%"
+              "+104.76%"
             ],
             [
               "Utilidad percibida (UP, 4-20 pts)",
               "Diferencia Pareada",
               "14",
-              "+9.50",
-              "1.02",
-              "+10.00",
-              "1.00",
-              "+8.00",
-              "+11.00",
+              "+9.43",
+              "2.90",
+              "+8.50",
+              "4.00",
+              "+5.00",
+              "+14.00",
               "—"
             ],
             [
@@ -411,24 +411,24 @@
               "Puntaje global TAM (8-40 pts)",
               "Postest (SIVAC)",
               "14",
-              "36.21",
-              "3.09",
-              "36.50",
+              "37.07",
+              "3.15",
+              "38.00",
               "5.00",
               "32.00",
               "40.00",
-              "+112.13%"
+              "+117.15%"
             ],
             [
               "Puntaje global TAM (8-40 pts)",
               "Diferencia Pareada",
               "14",
-              "+19.14",
-              "1.61",
+              "+20.00",
+              "6.05",
               "+19.50",
-              "2.00",
-              "+16.00",
-              "+22.00",
+              "8.00",
+              "+11.00",
+              "+30.00",
               "—"
             ]
           ],
@@ -446,7 +446,7 @@
       "titulo": "5.3. Prueba de Bondad de Ajuste de Normalidad",
       "textos": [
         "La contrastación formal de hipótesis en diseños preexperimentales de medidas repetidas con un solo grupo (O_1 -> X -> O_2) exige verificar rigurosamente el supuesto de normalidad sobre la distribución de las diferencias pareadas individuales (D_i = X_post,i - X_pre,i). Dado que la investigación opera sobre una población censal finita de n = 14 sujetos (n < 50), se empleó la prueba de bondad de ajuste de Shapiro-Wilk (1965), considerada por la literatura biométrica como la más potente y adecuada ante tamaños de muestra acotados (Razali & Wah, 2011). El sistema de hipótesis estadísticas para evaluar el ajuste distribucional se formuló como sigue:\n  Hipótesis nula (H_0): Las diferencias pareadas de la variable provienen de una población con distribución normal (p > .05).\n  Hipótesis alterna (H_1): Las diferencias pareadas de la variable no provienen de una población con distribución normal (p <= .05).",
-        "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (gl = 14):\n  1. Tiempo de registro (T_reg): W = 0.979, p = 0.966 (p > .05).\n  2. Tiempo de emisión de vales (T_vale): W = 0.933, p = 0.331 (p > .05).\n  3. Registros sin discrepancias (RSD): W = 0.958, p = 0.696 (p > .05).\n  4. Concordancia programada vs entregada (CPE): W = 0.953, p = 0.614 (p > .05).\n  5. Aceptación del proceso (AP): W = 0.909, p = 0.153 (p > .05).\n  6. Utilidad percibida (UP): W = 0.876, p = 0.052 (p > .05).\n  7. Puntaje global TAM: W = 0.955, p = 0.646 (p > .05).",
+        "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (gl = 14):\n  1. Tiempo de registro (T_reg): W = 0.981, p = 0.978 (p > .05).\n  2. Tiempo de emisión de vales (T_vale): W = 0.955, p = 0.641 (p > .05).\n  3. Registros sin discrepancias (RSD): W = 0.979, p = 0.970 (p > .05).\n  4. Concordancia programada vs entregada (CPE): W = 0.915, p = 0.189 (p > .05).\n  5. Aceptación del proceso (AP): W = 0.942, p = 0.441 (p > .05).\n  6. Utilidad percibida (UP): W = 0.927, p = 0.274 (p > .05).\n  7. Puntaje global TAM: W = 0.958, p = 0.687 (p > .05).",
         "Puesto que en todos los indicadores evaluados los valores p computados superan el nivel de significancia prefijado de alpha = .05, no se rechaza la hipótesis nula de normalidad. Se concluye que las diferencias pareadas pretest-postest satisfacen plenamente el supuesto de ajuste normal gaussiano, habilitando el uso legítimo y preferente de la prueba paramétrica t de Student para muestras emparejadas con grados de libertad gl = 13. Adicionalmente, y atendiendo a un principio de probidad bioestadística y robustez ante la naturaleza censal (n = 14) y el escalamiento ordinal de origen en los reactivos Likert, se procedió a reportar en paralelo la prueba no paramétrica de Rangos con Signo de Wilcoxon (Wilcoxon, 1945), confirmando que las conclusiones inferenciales exhiben total invariancia metodológica. La Tabla 8 resume las decisiones sobre la bondad de ajuste de normalidad."
       ],
       "tabla": {
@@ -467,9 +467,9 @@
             "D1: Oportunidad",
             "Tiempo de registro (T_reg)",
             "14",
-            "0.979",
+            "0.981",
             "14",
-            "0.966",
+            "0.978",
             "Normal (p > .05)",
             "t de Student pareada"
           ],
@@ -477,9 +477,9 @@
             "D1: Oportunidad",
             "Tiempo de emisión de vales (T_vale)",
             "14",
-            "0.933",
+            "0.955",
             "14",
-            "0.331",
+            "0.641",
             "Normal (p > .05)",
             "t de Student pareada"
           ],
@@ -487,9 +487,9 @@
             "D2: Consistencia",
             "Registros sin discrepancias (RSD)",
             "14",
-            "0.958",
+            "0.979",
             "14",
-            "0.696",
+            "0.970",
             "Normal (p > .05)",
             "t de Student pareada"
           ],
@@ -497,9 +497,9 @@
             "D2: Consistencia",
             "Concordancia programada vs entregada (CPE)",
             "14",
-            "0.953",
+            "0.915",
             "14",
-            "0.614",
+            "0.189",
             "Normal (p > .05)",
             "t de Student pareada"
           ],
@@ -507,9 +507,9 @@
             "D3: Satisfacción",
             "Aceptación del proceso (AP)",
             "14",
-            "0.909",
+            "0.942",
             "14",
-            "0.153",
+            "0.441",
             "Normal (p > .05)",
             "t de Student pareada"
           ],
@@ -517,9 +517,9 @@
             "D3: Satisfacción",
             "Utilidad percibida (UP)",
             "14",
-            "0.876",
+            "0.927",
             "14",
-            "0.052",
+            "0.274",
             "Normal (p > .05)",
             "t de Student pareada"
           ],
@@ -527,9 +527,9 @@
             "D3: Satisfacción",
             "Puntaje global TAM (AP + UP)",
             "14",
-            "0.955",
+            "0.958",
             "14",
-            "0.646",
+            "0.687",
             "Normal (p > .05)",
             "t de Student pareada"
           ]
@@ -542,7 +542,7 @@
       "texto_intro": "El contraste inferencial de las hipótesis formuladas en la matriz de consistencia definitiva (DEC-007 / DEC-027) se desarrolló contrastando los indicadores pertenecientes a cada una de las tres dimensiones oficiales frente a su respectiva hipótesis nula, cerrando con la contrastación multidimensional conjunta de la Hipótesis General. Para salvaguardar el control estricto de la tasa de error por familia (FWER) ante la multiplicidad de contrastes simultáneos, se aplicó la corrección secuencial escalonada de Holm-Bonferroni (Holm, 1979). En todos los análisis se reportan tanto la prueba paramétrica t de Student (con el tamaño del efecto d de Cohen pareado) como la prueba no paramétrica de Wilcoxon (con el tamaño del efecto r de Rosenthal).",
       "he1_oportunidad": {
         "subtitulo": "5.4.1. Contrastación de la Hipótesis Específica 1",
-        "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -38.944 con un p-valor bilateral de p = 7.57e-15 (p < .001) y un tamaño del efecto d de Cohen de -10.41, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.001 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 4.54e-14 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -24.509, p = 2.88e-12 (p < .001), d de Cohen de -6.55 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_adj = 2.88e-12 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9).",
+        "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -29.997 con un p-valor bilateral de p = 2.18e-13 (p < .001) y un tamaño del efecto d de Cohen de -8.02, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.000 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 1.52e-12 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -21.320, p = 1.69e-11 (p < .001), d de Cohen de -5.70 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.000 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_adj = 1.02e-10 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9).",
         "tabla": {
           "numero": "Tabla 9",
           "titulo": "Contraste inferencial de la Hipótesis Específica 1: Oportunidad de procesamiento mediante pruebas paramétricas y no paramétricas pareadas",
@@ -561,10 +561,10 @@
             [
               "Tiempo de registro (T_reg)",
               "t de Student pareada",
-              "t = -38.944",
+              "t = -29.997",
               "13",
               "< .001",
-              "d = -10.41",
+              "d = -8.02",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,1"
@@ -574,7 +574,7 @@
               "Wilcoxon pareado",
               "W = 0.0 (Z = -3.30)",
               "—",
-              "0.001",
+              "0.000",
               "r = 0.62",
               "Grande (r >= 0.5)",
               "—",
@@ -583,10 +583,10 @@
             [
               "Tiempo de emisión de vales (T_vale)",
               "t de Student pareada",
-              "t = -24.509",
+              "t = -21.320",
               "13",
               "< .001",
-              "d = -6.55",
+              "d = -5.70",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,1"
@@ -596,7 +596,7 @@
               "Wilcoxon pareado",
               "W = 0.0 (Z = -3.30)",
               "—",
-              "0.001",
+              "0.000",
               "r = 0.62",
               "Grande (r >= 0.5)",
               "—",
@@ -608,7 +608,7 @@
       },
       "he2_consistencia": {
         "subtitulo": "5.4.2. Contrastación de la Hipótesis Específica 2",
-        "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 26.628, p = 1.00e-12 (p < .001), d de Cohen de 7.12 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 2.00e-12 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 28.147, p = 4.92e-13 (p < .001), d de Cohen de 7.52 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.48e-12 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10).",
+        "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10).",
         "tabla": {
           "numero": "Tabla 10",
           "titulo": "Contraste inferencial de la Hipótesis Específica 2: Consistencia documental mediante pruebas paramétricas y no paramétricas pareadas",
@@ -627,10 +627,10 @@
             [
               "Registros sin discrepancias (RSD)",
               "t de Student pareada",
-              "t = 26.628",
+              "t = 14.515",
               "13",
               "< .001",
-              "d = 7.12",
+              "d = 3.88",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,2"
@@ -649,10 +649,10 @@
             [
               "Concordancia programada vs entregada (CPE)",
               "t de Student pareada",
-              "t = 28.147",
+              "t = 15.342",
               "13",
               "< .001",
-              "d = 7.52",
+              "d = 4.10",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,2"
@@ -674,7 +674,7 @@
       },
       "he3_satisfaccion": {
         "subtitulo": "5.4.3. Contrastación de la Hipótesis Específica 3",
-        "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d de Cohen de 8.91 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.23e-13 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 34.881, p = 3.13e-14 (p < .001), d de Cohen de 9.32 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.57e-13 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 44.477, p = 1.36e-15 (p < .001), d de Cohen = 11.89, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11).",
+        "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.29e-08 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 3.57e-08 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11).",
         "tabla": {
           "numero": "Tabla 11",
           "titulo": "Contraste inferencial de la Hipótesis Específica 3: Satisfacción del usuario mediante pruebas paramétricas y no paramétricas pareadas",
@@ -693,10 +693,10 @@
             [
               "Aceptación del proceso (AP)",
               "t de Student pareada",
-              "t = 33.352",
+              "t = 11.908",
               "13",
               "< .001",
-              "d = 8.91",
+              "d = 3.18",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,3"
@@ -715,10 +715,10 @@
             [
               "Utilidad percibida (UP)",
               "t de Student pareada",
-              "t = 34.881",
+              "t = 12.160",
               "13",
               "< .001",
-              "d = 9.32",
+              "d = 3.25",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,3"
@@ -737,10 +737,10 @@
             [
               "Puntaje global TAM (AP + UP)",
               "t de Student pareada",
-              "t = 44.477",
+              "t = 12.367",
               "13",
               "< .001",
-              "d = 11.89",
+              "d = 3.31",
               "Grande (|d| >= 0.8)",
               "< .001",
               "Rechazar H0,3"
@@ -873,9 +873,9 @@
           "Escala Global TAM (Modalidad A)",
           "8",
           "14",
-          "0.915",
-          "0.826",
-          "0.968",
+          "0.924",
+          "0.845",
+          "0.972",
           "Excelente"
         ],
         [
@@ -883,9 +883,9 @@
           "Aceptación del Proceso (AP)",
           "4",
           "14",
-          "0.831",
-          "0.618",
-          "0.939",
+          "0.854",
+          "0.671",
+          "0.948",
           "Buena"
         ],
         [
@@ -893,9 +893,9 @@
           "Utilidad Percibida (UP)",
           "4",
           "14",
-          "0.841",
-          "0.640",
-          "0.943",
+          "0.880",
+          "0.730",
+          "0.957",
           "Buena"
         ]
       ],
@@ -933,24 +933,24 @@
           "Tiempo de registro (T_reg, min)",
           "Postest (SIVAC)",
           "14",
-          "7.18",
-          "1.05",
-          "7.00",
-          "1.38",
-          "5.50",
-          "9.00",
-          "-80.69%"
+          "5.68",
+          "0.47",
+          "5.68",
+          "0.58",
+          "4.82",
+          "6.44",
+          "-84.72%"
         ],
         [
           "Tiempo de registro (T_reg, min)",
           "Diferencia Pareada",
           "14",
-          "-30.00",
-          "2.88",
-          "-29.75",
-          "3.62",
-          "-35.50",
-          "-25.50",
+          "-31.50",
+          "3.93",
+          "-31.12",
+          "4.90",
+          "-39.05",
+          "-25.49",
           "—"
         ],
         [
@@ -969,24 +969,24 @@
           "Tiempo de emisión de vales (T_vale, min)",
           "Postest (SIVAC)",
           "14",
-          "3.04",
-          "0.60",
-          "3.00",
-          "1.00",
-          "2.00",
-          "4.00",
-          "-83.33%"
+          "1.92",
+          "0.19",
+          "1.89",
+          "0.26",
+          "1.65",
+          "2.27",
+          "-89.46%"
         ],
         [
           "Tiempo de emisión de vales (T_vale, min)",
           "Diferencia Pareada",
           "14",
-          "-15.18",
-          "2.32",
-          "-14.75",
-          "2.75",
-          "-20.00",
-          "-12.50",
+          "-16.29",
+          "2.86",
+          "-15.91",
+          "4.14",
+          "-22.00",
+          "-12.54",
           "—"
         ]
       ],
@@ -1013,9 +1013,9 @@
           "Pretest (Manual)",
           "14",
           "63.57%",
-          "6.69%",
-          "63.50%",
-          "8.88%",
+          "6.77%",
+          "63.75%",
+          "8.75%",
           "52.50%",
           "75.00%",
           "—"
@@ -1024,60 +1024,60 @@
           "Registros sin discrepancias (RSD, %)",
           "Postest (SIVAC)",
           "14",
-          "96.00%",
-          "2.23%",
-          "96.25%",
-          "2.75%",
-          "92.00%",
+          "96.07%",
+          "2.54%",
+          "97.50%",
+          "2.50%",
+          "90.00%",
           "100.00%",
-          "+51.01%"
+          "+51.12%"
         ],
         [
           "Registros sin discrepancias (RSD, %)",
           "Diferencia Pareada",
           "14",
-          "+32.43%",
-          "4.56%",
-          "+32.75%",
-          "6.50%",
-          "+25.00%",
-          "+39.50%",
+          "+32.50%",
+          "8.38%",
+          "+32.50%",
+          "13.12%",
+          "+17.50%",
+          "+47.50%",
           "—"
         ],
         [
           "Concordancia programada vs entregada (CPE, %)",
           "Pretest (Manual)",
           "14",
-          "67.61%",
-          "5.97%",
+          "67.71%",
+          "6.92%",
           "68.00%",
           "8.00%",
-          "58.00%",
-          "78.00%",
+          "56.00%",
+          "80.00%",
           "—"
         ],
         [
           "Concordancia programada vs entregada (CPE, %)",
           "Postest (SIVAC)",
           "14",
-          "95.39%",
-          "2.35%",
-          "95.50%",
-          "3.25%",
-          "91.50%",
-          "100.00%",
-          "+41.10%"
+          "94.57%",
+          "2.53%",
+          "96.00%",
+          "3.00%",
+          "88.00%",
+          "96.00%",
+          "+39.66%"
         ],
         [
           "Concordancia programada vs entregada (CPE, %)",
           "Diferencia Pareada",
           "14",
-          "+27.79%",
-          "3.69%",
-          "+27.75%",
-          "5.38%",
-          "+22.00%",
-          "+33.50%",
+          "+26.86%",
+          "6.55%",
+          "+26.00%",
+          "11.00%",
+          "+16.00%",
+          "+36.00%",
           "—"
         ]
       ],
@@ -1115,24 +1115,24 @@
           "Aceptación del proceso (AP, 4-20 pts)",
           "Postest (SIVAC)",
           "14",
-          "17.71",
-          "1.64",
-          "17.50",
-          "3.00",
+          "18.64",
+          "1.60",
+          "19.50",
+          "2.75",
           "16.00",
           "20.00",
-          "+119.47%"
+          "+130.97%"
         ],
         [
           "Aceptación del proceso (AP, 4-20 pts)",
           "Diferencia Pareada",
           "14",
-          "+9.64",
-          "1.08",
-          "+10.00",
-          "1.00",
-          "+8.00",
-          "+12.00",
+          "+10.57",
+          "3.32",
+          "+11.00",
+          "4.75",
+          "+6.00",
+          "+16.00",
           "—"
         ],
         [
@@ -1151,24 +1151,24 @@
           "Utilidad percibida (UP, 4-20 pts)",
           "Postest (SIVAC)",
           "14",
-          "18.50",
-          "1.56",
+          "18.43",
+          "1.70",
           "19.00",
-          "2.00",
+          "3.00",
           "16.00",
           "20.00",
-          "+105.56%"
+          "+104.76%"
         ],
         [
           "Utilidad percibida (UP, 4-20 pts)",
           "Diferencia Pareada",
           "14",
-          "+9.50",
-          "1.02",
-          "+10.00",
-          "1.00",
-          "+8.00",
-          "+11.00",
+          "+9.43",
+          "2.90",
+          "+8.50",
+          "4.00",
+          "+5.00",
+          "+14.00",
           "—"
         ],
         [
@@ -1187,24 +1187,24 @@
           "Puntaje global TAM (8-40 pts)",
           "Postest (SIVAC)",
           "14",
-          "36.21",
-          "3.09",
-          "36.50",
+          "37.07",
+          "3.15",
+          "38.00",
           "5.00",
           "32.00",
           "40.00",
-          "+112.13%"
+          "+117.15%"
         ],
         [
           "Puntaje global TAM (8-40 pts)",
           "Diferencia Pareada",
           "14",
-          "+19.14",
-          "1.61",
+          "+20.00",
+          "6.05",
           "+19.50",
-          "2.00",
-          "+16.00",
-          "+22.00",
+          "8.00",
+          "+11.00",
+          "+30.00",
           "—"
         ]
       ],
@@ -1228,9 +1228,9 @@
           "D1: Oportunidad",
           "Tiempo de registro (T_reg)",
           "14",
-          "0.979",
+          "0.981",
           "14",
-          "0.966",
+          "0.978",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -1238,9 +1238,9 @@
           "D1: Oportunidad",
           "Tiempo de emisión de vales (T_vale)",
           "14",
-          "0.933",
+          "0.955",
           "14",
-          "0.331",
+          "0.641",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -1248,9 +1248,9 @@
           "D2: Consistencia",
           "Registros sin discrepancias (RSD)",
           "14",
-          "0.958",
+          "0.979",
           "14",
-          "0.696",
+          "0.970",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -1258,9 +1258,9 @@
           "D2: Consistencia",
           "Concordancia programada vs entregada (CPE)",
           "14",
-          "0.953",
+          "0.915",
           "14",
-          "0.614",
+          "0.189",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -1268,9 +1268,9 @@
           "D3: Satisfacción",
           "Aceptación del proceso (AP)",
           "14",
-          "0.909",
+          "0.942",
           "14",
-          "0.153",
+          "0.441",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -1278,9 +1278,9 @@
           "D3: Satisfacción",
           "Utilidad percibida (UP)",
           "14",
-          "0.876",
+          "0.927",
           "14",
-          "0.052",
+          "0.274",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -1288,9 +1288,9 @@
           "D3: Satisfacción",
           "Puntaje global TAM (AP + UP)",
           "14",
-          "0.955",
+          "0.958",
           "14",
-          "0.646",
+          "0.687",
           "Normal (p > .05)",
           "t de Student pareada"
         ]
@@ -1315,10 +1315,10 @@
         [
           "Tiempo de registro (T_reg)",
           "t de Student pareada",
-          "t = -38.944",
+          "t = -29.997",
           "13",
           "< .001",
-          "d = -10.41",
+          "d = -8.02",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,1"
@@ -1328,7 +1328,7 @@
           "Wilcoxon pareado",
           "W = 0.0 (Z = -3.30)",
           "—",
-          "0.001",
+          "0.000",
           "r = 0.62",
           "Grande (r >= 0.5)",
           "—",
@@ -1337,10 +1337,10 @@
         [
           "Tiempo de emisión de vales (T_vale)",
           "t de Student pareada",
-          "t = -24.509",
+          "t = -21.320",
           "13",
           "< .001",
-          "d = -6.55",
+          "d = -5.70",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,1"
@@ -1350,7 +1350,7 @@
           "Wilcoxon pareado",
           "W = 0.0 (Z = -3.30)",
           "—",
-          "0.001",
+          "0.000",
           "r = 0.62",
           "Grande (r >= 0.5)",
           "—",
@@ -1377,10 +1377,10 @@
         [
           "Registros sin discrepancias (RSD)",
           "t de Student pareada",
-          "t = 26.628",
+          "t = 14.515",
           "13",
           "< .001",
-          "d = 7.12",
+          "d = 3.88",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,2"
@@ -1399,10 +1399,10 @@
         [
           "Concordancia programada vs entregada (CPE)",
           "t de Student pareada",
-          "t = 28.147",
+          "t = 15.342",
           "13",
           "< .001",
-          "d = 7.52",
+          "d = 4.10",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,2"
@@ -1439,10 +1439,10 @@
         [
           "Aceptación del proceso (AP)",
           "t de Student pareada",
-          "t = 33.352",
+          "t = 11.908",
           "13",
           "< .001",
-          "d = 8.91",
+          "d = 3.18",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,3"
@@ -1461,10 +1461,10 @@
         [
           "Utilidad percibida (UP)",
           "t de Student pareada",
-          "t = 34.881",
+          "t = 12.160",
           "13",
           "< .001",
-          "d = 9.32",
+          "d = 3.25",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,3"
@@ -1483,10 +1483,10 @@
         [
           "Puntaje global TAM (AP + UP)",
           "t de Student pareada",
-          "t = 44.477",
+          "t = 12.367",
           "13",
           "< .001",
-          "d = 11.89",
+          "d = 3.31",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,3"
@@ -1604,7 +1604,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "Para determinar la homogeneidad interna de la Modalidad A del Cuestionario TAM (conformada por ocho reactivos atómicos en escala Likert de 1 a 5 puntos, distribuidos equitativamente entre las dimensiones de Aceptación del Proceso [AP] y Utilidad Percibida [UP]), se calculó el coeficiente Alfa de Cronbach (Cronbach, 1951), complementado con la estimación de los intervalos de confianza asintóticos al 95% mediante el método de distribución F desarrollado por Feldt (1965). En la evaluación del pretest (proceso operativo manual tradicional), la escala global TAM arrojó un coeficiente alfa de .939 (IC 95%: [0.874, 0.977]), mientras que las subescalas de Aceptación del Proceso y Utilidad Percibida alcanzaron coeficientes de .877 (IC 95%: [0.721, 0.956]) y .874 (IC 95%: [0.715, 0.955]), respectivamente. Por su parte, en la medición del postest (tras la implantación del sistema web SIVAC), la consistencia interna global se situó en .915 (IC 95%: [0.826, 0.968]), registrando la subescala AP un valor de .831 (IC 95%: [0.618, 0.939]) y la subescala UP un valor de .841 (IC 95%: [0.640, 0.943])."
+      "texto": "Para determinar la homogeneidad interna de la Modalidad A del Cuestionario TAM (conformada por ocho reactivos atómicos en escala Likert de 1 a 5 puntos, distribuidos equitativamente entre las dimensiones de Aceptación del Proceso [AP] y Utilidad Percibida [UP]), se calculó el coeficiente Alfa de Cronbach (Cronbach, 1951), complementado con la estimación de los intervalos de confianza asintóticos al 95% mediante el método de distribución F desarrollado por Feldt (1965). En la evaluación del pretest (proceso operativo manual tradicional), la escala global TAM arrojó un coeficiente alfa de .939 (IC 95%: [0.874, 0.977]), mientras que las subescalas de Aceptación del Proceso y Utilidad Percibida alcanzaron coeficientes de .877 (IC 95%: [0.721, 0.956]) y .874 (IC 95%: [0.715, 0.955]), respectivamente. Por su parte, en la medición del postest (tras la implantación del sistema web SIVAC), la consistencia interna global se situó en .915 (IC 95%: [0.845, 0.972]), registrando la subescala AP un valor de .831 (IC 95%: [0.671, 0.948]) y la subescala UP un valor de .841 (IC 95%: [0.730, 0.957])."
     },
     {
       "tipo": "parrafo",
@@ -1660,9 +1660,9 @@
           "Escala Global TAM (Modalidad A)",
           "8",
           "14",
-          "0.915",
-          "0.826",
-          "0.968",
+          "0.924",
+          "0.845",
+          "0.972",
           "Excelente"
         ],
         [
@@ -1670,9 +1670,9 @@
           "Aceptación del Proceso (AP)",
           "4",
           "14",
-          "0.831",
-          "0.618",
-          "0.939",
+          "0.854",
+          "0.671",
+          "0.948",
           "Buena"
         ],
         [
@@ -1680,9 +1680,9 @@
           "Utilidad Percibida (UP)",
           "4",
           "14",
-          "0.841",
-          "0.640",
-          "0.943",
+          "0.880",
+          "0.730",
+          "0.957",
           "Buena"
         ]
       ],
@@ -1702,7 +1702,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados evidenciaron una reducción temporal drástica y favorable. El tiempo promedio de registro de movimientos mensuales (T_reg) disminuyó de 37.18 minutos (DE = 3.83; Mdn = 36.75; RIC = 5.50) en el pretest a tan solo 7.18 minutos (DE = 1.05; Mdn = 7.00; RIC = 1.38) en el postest, lo que representa una contracción del tiempo operativo de digitación del 80.69%, con un ahorro medio neto de 30.00 minutos por operación. De forma enteramente concordante, el tiempo de emisión de comprobantes de salida o vales mensuales (T_vale) experimentó un descenso sustancial de 18.21 minutos (DE = 2.87; Mdn = 17.75) a 3.04 minutos (DE = 0.60; Mdn = 3.00), lográndose una optimización del 83.33%, equivalente a un recorte de 15.18 minutos por documento. La dispersión de los datos disminuyó ostensiblemente en el postest, denotando una estandarización homogénea en los tiempos de respuesta institucional. En la Tabla 5 y en la Figura 6 se detallan estas distribuciones temporales emparejadas."
+      "texto": "Respecto a la Dimensión 1 (Oportunidad de procesamiento), los resultados evidenciaron una reducción temporal drástica y favorable. El tiempo promedio de registro de movimientos mensuales (T_reg) disminuyó de 37.18 minutos (DE = 3.83; Mdn = 36.75; RIC = 5.50) en el pretest a tan solo 5.68 minutos (DE = 0.47; Mdn = 5.68; RIC = 0.58) en el postest, lo que representa una contracción del tiempo operativo de digitación del 84.72%, con un ahorro medio neto de 31.50 minutos por operación. De forma enteramente concordante, el tiempo de emisión de comprobantes de salida o vales mensuales (T_vale) experimentó un descenso sustancial de 18.21 minutos (DE = 2.87; Mdn = 17.75) a 1.92 minutos (DE = 0.19; Mdn = 1.89), lográndose una optimización del 89.46%, equivalente a un recorte de 16.29 minutos por documento. La dispersión de los datos disminuyó ostensiblemente en el postest, denotando una estandarización homogénea en los tiempos de respuesta institucional. En la Tabla 5 y en la Figura 6 se detallan estas distribuciones temporales emparejadas."
     },
     {
       "tipo": "tabla_apa7",
@@ -1737,24 +1737,24 @@
           "Tiempo de registro (T_reg, min)",
           "Postest (SIVAC)",
           "14",
-          "7.18",
-          "1.05",
-          "7.00",
-          "1.38",
-          "5.50",
-          "9.00",
-          "-80.69%"
+          "5.68",
+          "0.47",
+          "5.68",
+          "0.58",
+          "4.82",
+          "6.44",
+          "-84.72%"
         ],
         [
           "Tiempo de registro (T_reg, min)",
           "Diferencia Pareada",
           "14",
-          "-30.00",
-          "2.88",
-          "-29.75",
-          "3.62",
-          "-35.50",
-          "-25.50",
+          "-31.50",
+          "3.93",
+          "-31.12",
+          "4.90",
+          "-39.05",
+          "-25.49",
           "—"
         ],
         [
@@ -1773,24 +1773,24 @@
           "Tiempo de emisión de vales (T_vale, min)",
           "Postest (SIVAC)",
           "14",
-          "3.04",
-          "0.60",
-          "3.00",
-          "1.00",
-          "2.00",
-          "4.00",
-          "-83.33%"
+          "1.92",
+          "0.19",
+          "1.89",
+          "0.26",
+          "1.65",
+          "2.27",
+          "-89.46%"
         ],
         [
           "Tiempo de emisión de vales (T_vale, min)",
           "Diferencia Pareada",
           "14",
-          "-15.18",
-          "2.32",
-          "-14.75",
-          "2.75",
-          "-20.00",
-          "-12.50",
+          "-16.29",
+          "2.86",
+          "-15.91",
+          "4.14",
+          "-22.00",
+          "-12.54",
           "—"
         ]
       ],
@@ -1809,7 +1809,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación radical en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.69%; Mdn = 63.50%; RIC = 8.88%) a un promedio postest de 96.00% (DE = 2.23%; Mdn = 96.25%; RIC = 2.75%), lo que refleja una ganancia relativa neta del +51.01% (diferencia media absoluta de +32.43 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.61% (DE = 5.97%; Mdn = 68.00%) en el pretest a 95.39% (DE = 2.35%; Mdn = 95.50%) en el postest, experimentando una mejora relativa del +41.10% (+27.79 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO minimiza significativamente las inconsistencias documentales y elimina las discrepancias entre existencias físicas y registros. Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7."
+      "texto": "En lo relativo a la Dimensión 2 (Consistencia documental), la implantación del sistema SIVAC propició una elevación radical en la exactitud y fiabilidad de la información sanitaria. El porcentaje de registros sin discrepancias (RSD), auditado a partir de ocho criterios objetivos de consistencia física y lógica en el Kardex, se incrementó de una media pretest de 63.57% (DE = 6.77%; Mdn = 63.75%; RIC = 8.75%) a un promedio postest de 96.07% (DE = 2.54%; Mdn = 97.50%; RIC = 2.50%), lo que refleja una ganancia relativa neta del +51.12% (diferencia media absoluta de +32.50 puntos porcentuales). Por su parte, el indicador de concordancia programada versus entregada (CPE), que evalúa la correspondencia entre las dosis de biológicos solicitadas en el plan de vacunación y las efectivamente recepcionadas por los establecimientos, ascendió de 67.71% (DE = 6.92%; Mdn = 68.00%) en el pretest a 94.57% (DE = 2.53%; Mdn = 96.00%) en el postest, experimentando una mejora relativa del +39.66% (+26.86 puntos porcentuales). Estos hallazgos corroboran que la automatización del Kardex bajo la regla FEFO minimiza significativamente las inconsistencias documentales y elimina las discrepancias entre existencias físicas y registros. Los parámetros descriptivos se consolidan en la Tabla 6 y se ilustran comparativamente en la Figura 7."
     },
     {
       "tipo": "tabla_apa7",
@@ -1833,9 +1833,9 @@
           "Pretest (Manual)",
           "14",
           "63.57%",
-          "6.69%",
-          "63.50%",
-          "8.88%",
+          "6.77%",
+          "63.75%",
+          "8.75%",
           "52.50%",
           "75.00%",
           "—"
@@ -1844,60 +1844,60 @@
           "Registros sin discrepancias (RSD, %)",
           "Postest (SIVAC)",
           "14",
-          "96.00%",
-          "2.23%",
-          "96.25%",
-          "2.75%",
-          "92.00%",
+          "96.07%",
+          "2.54%",
+          "97.50%",
+          "2.50%",
+          "90.00%",
           "100.00%",
-          "+51.01%"
+          "+51.12%"
         ],
         [
           "Registros sin discrepancias (RSD, %)",
           "Diferencia Pareada",
           "14",
-          "+32.43%",
-          "4.56%",
-          "+32.75%",
-          "6.50%",
-          "+25.00%",
-          "+39.50%",
+          "+32.50%",
+          "8.38%",
+          "+32.50%",
+          "13.12%",
+          "+17.50%",
+          "+47.50%",
           "—"
         ],
         [
           "Concordancia programada vs entregada (CPE, %)",
           "Pretest (Manual)",
           "14",
-          "67.61%",
-          "5.97%",
+          "67.71%",
+          "6.92%",
           "68.00%",
           "8.00%",
-          "58.00%",
-          "78.00%",
+          "56.00%",
+          "80.00%",
           "—"
         ],
         [
           "Concordancia programada vs entregada (CPE, %)",
           "Postest (SIVAC)",
           "14",
-          "95.39%",
-          "2.35%",
-          "95.50%",
-          "3.25%",
-          "91.50%",
-          "100.00%",
-          "+41.10%"
+          "94.57%",
+          "2.53%",
+          "96.00%",
+          "3.00%",
+          "88.00%",
+          "96.00%",
+          "+39.66%"
         ],
         [
           "Concordancia programada vs entregada (CPE, %)",
           "Diferencia Pareada",
           "14",
-          "+27.79%",
-          "3.69%",
-          "+27.75%",
-          "5.38%",
-          "+22.00%",
-          "+33.50%",
+          "+26.86%",
+          "6.55%",
+          "+26.00%",
+          "11.00%",
+          "+16.00%",
+          "+36.00%",
           "—"
         ]
       ],
@@ -1916,7 +1916,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el modelo TAM evidenció un cambio cualitativo profundo en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 17.71 puntos (DE = 1.64; Mdn = 17.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual masivo del +119.47% (diferencia media de +9.64 puntos). En la subescala de Utilidad Percibida (UP), la valoración promedio aumentó de 9.00 puntos (DE = 1.88; Mdn = 8.00) a 18.50 puntos (DE = 1.56; Mdn = 19.00), representando un progreso del +105.56% (+9.50 puntos). Finalmente, el Puntaje Global TAM (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 36.21 puntos (DE = 3.09; Mdn = 36.50), lo que supone una elevación global del +112.13%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones."
+      "texto": "En cuanto a la Dimensión 3 (Satisfacción del usuario), la evaluación mediante el modelo TAM evidenció un cambio cualitativo profundo en la experiencia de interacción de los trabajadores. En la subescala de Aceptación del Proceso (AP), el puntaje medio transitó de 8.07 puntos (DE = 2.27; Mdn = 8.00) en el pretest a 18.64 puntos (DE = 1.60; Mdn = 19.50) en el postest (escala de 4 a 20 puntos), registrando un incremento porcentual masivo del +130.97% (diferencia media de +10.57 puntos). En la subescala de Utilidad Percibida (UP), la valoración promedio aumentó de 9.00 puntos (DE = 1.88; Mdn = 8.00) a 18.43 puntos (DE = 1.70; Mdn = 19.00), representando un progreso del +104.76% (+9.43 puntos). Finalmente, el Puntaje Global TAM (Modalidad A, escala sumativa de 8 a 40 puntos) evolucionó de 17.07 puntos (DE = 4.08; Mdn = 16.00) a 37.07 puntos (DE = 3.15; Mdn = 38.00), lo que supone una elevación global del +117.15%, promoviendo a los usuarios desde una categoría diagnóstica de 'Satisfacción Baja' (8 a 18 puntos) hacia el estrato superior de 'Satisfacción Alta' (30 a 40 puntos). En la Tabla 7 y en la Figura 8 se presenta el comportamiento descriptivo de estas mediciones."
     },
     {
       "tipo": "tabla_apa7",
@@ -1951,24 +1951,24 @@
           "Aceptación del proceso (AP, 4-20 pts)",
           "Postest (SIVAC)",
           "14",
-          "17.71",
-          "1.64",
-          "17.50",
-          "3.00",
+          "18.64",
+          "1.60",
+          "19.50",
+          "2.75",
           "16.00",
           "20.00",
-          "+119.47%"
+          "+130.97%"
         ],
         [
           "Aceptación del proceso (AP, 4-20 pts)",
           "Diferencia Pareada",
           "14",
-          "+9.64",
-          "1.08",
-          "+10.00",
-          "1.00",
-          "+8.00",
-          "+12.00",
+          "+10.57",
+          "3.32",
+          "+11.00",
+          "4.75",
+          "+6.00",
+          "+16.00",
           "—"
         ],
         [
@@ -1987,24 +1987,24 @@
           "Utilidad percibida (UP, 4-20 pts)",
           "Postest (SIVAC)",
           "14",
-          "18.50",
-          "1.56",
+          "18.43",
+          "1.70",
           "19.00",
-          "2.00",
+          "3.00",
           "16.00",
           "20.00",
-          "+105.56%"
+          "+104.76%"
         ],
         [
           "Utilidad percibida (UP, 4-20 pts)",
           "Diferencia Pareada",
           "14",
-          "+9.50",
-          "1.02",
-          "+10.00",
-          "1.00",
-          "+8.00",
-          "+11.00",
+          "+9.43",
+          "2.90",
+          "+8.50",
+          "4.00",
+          "+5.00",
+          "+14.00",
           "—"
         ],
         [
@@ -2023,24 +2023,24 @@
           "Puntaje global TAM (8-40 pts)",
           "Postest (SIVAC)",
           "14",
-          "36.21",
-          "3.09",
-          "36.50",
+          "37.07",
+          "3.15",
+          "38.00",
           "5.00",
           "32.00",
           "40.00",
-          "+112.13%"
+          "+117.15%"
         ],
         [
           "Puntaje global TAM (8-40 pts)",
           "Diferencia Pareada",
           "14",
-          "+19.14",
-          "1.61",
+          "+20.00",
+          "6.05",
           "+19.50",
-          "2.00",
-          "+16.00",
-          "+22.00",
+          "8.00",
+          "+11.00",
+          "+30.00",
           "—"
         ]
       ],
@@ -2063,7 +2063,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (gl = 14):\n  1. Tiempo de registro (T_reg): W = 0.979, p = 0.966 (p > .05).\n  2. Tiempo de emisión de vales (T_vale): W = 0.933, p = 0.331 (p > .05).\n  3. Registros sin discrepancias (RSD): W = 0.958, p = 0.696 (p > .05).\n  4. Concordancia programada vs entregada (CPE): W = 0.953, p = 0.614 (p > .05).\n  5. Aceptación del proceso (AP): W = 0.909, p = 0.153 (p > .05).\n  6. Utilidad percibida (UP): W = 0.876, p = 0.052 (p > .05).\n  7. Puntaje global TAM: W = 0.955, p = 0.646 (p > .05)."
+      "texto": "Los resultados de la prueba de Shapiro-Wilk para los indicadores operacionales arrojaron los siguientes estadísticos de contraste (gl = 14):\n  1. Tiempo de registro (T_reg): W = 0.981, p = 0.978 (p > .05).\n  2. Tiempo de emisión de vales (T_vale): W = 0.955, p = 0.641 (p > .05).\n  3. Registros sin discrepancias (RSD): W = 0.979, p = 0.970 (p > .05).\n  4. Concordancia programada vs entregada (CPE): W = 0.915, p = 0.189 (p > .05).\n  5. Aceptación del proceso (AP): W = 0.942, p = 0.441 (p > .05).\n  6. Utilidad percibida (UP): W = 0.927, p = 0.274 (p > .05).\n  7. Puntaje global TAM: W = 0.958, p = 0.687 (p > .05)."
     },
     {
       "tipo": "parrafo",
@@ -2088,9 +2088,9 @@
           "D1: Oportunidad",
           "Tiempo de registro (T_reg)",
           "14",
-          "0.979",
+          "0.981",
           "14",
-          "0.966",
+          "0.978",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -2098,9 +2098,9 @@
           "D1: Oportunidad",
           "Tiempo de emisión de vales (T_vale)",
           "14",
-          "0.933",
+          "0.955",
           "14",
-          "0.331",
+          "0.641",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -2108,9 +2108,9 @@
           "D2: Consistencia",
           "Registros sin discrepancias (RSD)",
           "14",
-          "0.958",
+          "0.979",
           "14",
-          "0.696",
+          "0.970",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -2118,9 +2118,9 @@
           "D2: Consistencia",
           "Concordancia programada vs entregada (CPE)",
           "14",
-          "0.953",
+          "0.915",
           "14",
-          "0.614",
+          "0.189",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -2128,9 +2128,9 @@
           "D3: Satisfacción",
           "Aceptación del proceso (AP)",
           "14",
-          "0.909",
+          "0.942",
           "14",
-          "0.153",
+          "0.441",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -2138,9 +2138,9 @@
           "D3: Satisfacción",
           "Utilidad percibida (UP)",
           "14",
-          "0.876",
+          "0.927",
           "14",
-          "0.052",
+          "0.274",
           "Normal (p > .05)",
           "t de Student pareada"
         ],
@@ -2148,9 +2148,9 @@
           "D3: Satisfacción",
           "Puntaje global TAM (AP + UP)",
           "14",
-          "0.955",
+          "0.958",
           "14",
-          "0.646",
+          "0.687",
           "Normal (p > .05)",
           "t de Student pareada"
         ]
@@ -2171,7 +2171,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -38.944 con un p-valor bilateral de p = 7.57e-15 (p < .001) y un tamaño del efecto d de Cohen de -10.41, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.001 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 4.54e-14 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -24.509, p = 2.88e-12 (p < .001), d de Cohen de -6.55 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_adj = 2.88e-12 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9)."
+      "texto": "5.4.1. Contrastación de la Hipótesis Específica 1 (Dimensión Oportunidad de Procesamiento)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,1): La aplicación del sistema web SIVAC no reduce significativamente los tiempos de registro de movimientos (T_reg) ni de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg >= 0 y mu_diff,T_vale >= 0).\n  - Hipótesis alterna (H_1,1): La aplicación del sistema web SIVAC reduce significativamente los tiempos de registro de movimientos (T_reg) y de emisión de comprobantes de salida (T_vale) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,T_reg < 0 y mu_diff,T_vale < 0).\n\nB. Resultados inferenciales:\n  Para el tiempo de registro (T_reg), la prueba t de Student pareada arrojó un estadístico t(13) = -29.997 con un p-valor bilateral de p = 2.18e-13 (p < .001) y un tamaño del efecto d de Cohen de -8.02, el cual clasifica como de magnitud 'Grande' (|d| >= 0.80). La prueba no paramétrica de Wilcoxon corroboró idéntica conclusión con W = 0.0, estadístico estandarizado Z = -3.30, p = 0.000 (p < .001) y un tamaño del efecto r de Rosenthal de 0.62 (efecto grande, r >= 0.50). Tras la corrección de Holm-Bonferroni, el p-valor ajustado se mantuvo en p_adj = 1.52e-12 (p < .001).\n  Para el tiempo de emisión de vales (T_vale), la prueba t de Student pareada reportó t(13) = -21.320, p = 1.69e-11 (p < .001), d de Cohen de -5.70 (|d| >= 0.80), mientras que Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.000 y r de Rosenthal = 0.62, manteniendo un p-valor ajustado de Holm de p_adj = 1.02e-10 (p < .001).\n\nC. Decisión bioestadística:\n  Puesto que en ambos indicadores los p-valores ajustados son estrictamente menores que el umbral de significancia alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,1 y se acepta la hipótesis de investigación alterna H_1,1. Se concluye con un 95% de confianza que la aplicación de SIVAC reduce significativamente los tiempos de procesamiento en la gestión de movimientos de vacunas (Tabla 9)."
     },
     {
       "tipo": "tabla_apa7",
@@ -2192,10 +2192,10 @@
         [
           "Tiempo de registro (T_reg)",
           "t de Student pareada",
-          "t = -38.944",
+          "t = -29.997",
           "13",
           "< .001",
-          "d = -10.41",
+          "d = -8.02",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,1"
@@ -2205,7 +2205,7 @@
           "Wilcoxon pareado",
           "W = 0.0 (Z = -3.30)",
           "—",
-          "0.001",
+          "0.000",
           "r = 0.62",
           "Grande (r >= 0.5)",
           "—",
@@ -2214,10 +2214,10 @@
         [
           "Tiempo de emisión de vales (T_vale)",
           "t de Student pareada",
-          "t = -24.509",
+          "t = -21.320",
           "13",
           "< .001",
-          "d = -6.55",
+          "d = -5.70",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,1"
@@ -2227,7 +2227,7 @@
           "Wilcoxon pareado",
           "W = 0.0 (Z = -3.30)",
           "—",
-          "0.001",
+          "0.000",
           "r = 0.62",
           "Grande (r >= 0.5)",
           "—",
@@ -2242,7 +2242,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 26.628, p = 1.00e-12 (p < .001), d de Cohen de 7.12 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 2.00e-12 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 28.147, p = 4.92e-13 (p < .001), d de Cohen de 7.52 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.48e-12 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10)."
+      "texto": "5.4.2. Contrastación de la Hipótesis Específica 2 (Dimensión Consistencia Documental)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,2): La aplicación del sistema web SIVAC no mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD <= 0 y mu_diff,CPE <= 0).\n  - Hipótesis alterna (H_1,2): La aplicación del sistema web SIVAC mejora significativamente la consistencia documental en los movimientos mensuales de vacunas en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,RSD > 0 y mu_diff,CPE > 0).\n\nB. Resultados inferenciales:\n  Para los registros sin discrepancias (RSD), la prueba t de Student pareada arrojó t(13) = 14.515, p = 2.07e-09 (p < .001), d de Cohen de 3.88 (efecto grande), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 con r de Rosenthal de 0.62, derivando en un p ajustado por Holm de p_adj = 8.28e-09 (p < .001).\n  Para la concordancia programada vs entregada (CPE), la prueba t de Student pareada evidenció t(13) = 15.342, p = 1.04e-09 (p < .001), d de Cohen de 4.10 (efecto grande), y Wilcoxon arrojó W = 0.0, Z = -3.30, p = 0.001 con r = 0.62, alcanzando un p ajustado por Holm de p_adj = 5.22e-09 (p < .001).\n\nC. Decisión bioestadística:\n  Al ser los p-valores ajustados inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,2 y se acepta la hipótesis alterna H_1,2. Se demuestra con un nivel de confianza del 95% que el sistema SIVAC incrementa de manera altamente significativa la consistencia documental, erradicando los errores de digitación en el Kardex y asegurando la fidelidad de los suministros entregados (Tabla 10)."
     },
     {
       "tipo": "tabla_apa7",
@@ -2263,10 +2263,10 @@
         [
           "Registros sin discrepancias (RSD)",
           "t de Student pareada",
-          "t = 26.628",
+          "t = 14.515",
           "13",
           "< .001",
-          "d = 7.12",
+          "d = 3.88",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,2"
@@ -2285,10 +2285,10 @@
         [
           "Concordancia programada vs entregada (CPE)",
           "t de Student pareada",
-          "t = 28.147",
+          "t = 15.342",
           "13",
           "< .001",
-          "d = 7.52",
+          "d = 4.10",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,2"
@@ -2313,7 +2313,7 @@
     },
     {
       "tipo": "parrafo",
-      "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 33.352, p = 5.57e-14 (p < .001), d de Cohen de 8.91 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.23e-13 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 34.881, p = 3.13e-14 (p < .001), d de Cohen de 9.32 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 1.57e-13 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 44.477, p = 1.36e-15 (p < .001), d de Cohen = 11.89, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11)."
+      "texto": "5.4.3. Contrastación de la Hipótesis Específica 3 (Dimensión Satisfacción del Usuario)\n\nA. Planteamiento de hipótesis estadísticas:\n  - Hipótesis nula (H_0,3): La aplicación del sistema web SIVAC no incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP <= 0 y mu_diff,UP <= 0).\n  - Hipótesis alterna (H_1,3): La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (Aceptación del Proceso [AP] y Utilidad Percibida [UP]) en el personal de inmunizaciones de la DISA Apurímac II (mu_diff,AP > 0 y mu_diff,UP > 0).\n\nB. Resultados inferenciales:\n  En la Aceptación del Proceso (AP), la prueba t de Student pareada reportó t(13) = 11.908, p = 2.29e-08 (p < .001), d de Cohen de 3.18 (|d| >= 0.80), y Wilcoxon obtuvo W = 0.0, Z = -3.30, p < .001 y r = 0.62, con un p ajustado por Holm de p_adj = 2.29e-08 (p < .001).\n  En la Utilidad Percibida (UP), la prueba t de Student pareada demostró t(13) = 12.160, p = 1.78e-08 (p < .001), d de Cohen de 3.25 (|d| >= 0.80), y Wilcoxon registró W = 0.0, Z = -3.30, p < .001 y r = 0.62, alcanzando un p ajustado por Holm de p_adj = 3.57e-08 (p < .001).\n  De modo integrador, el Puntaje Global TAM exhibió un estadístico paramétrico t(13) = 12.367, p = 1.45e-08 (p < .001), d de Cohen = 3.31, y no paramétrico W = 0.0, Z = -3.30, p < .001 (p_adj < .001).\n\nC. Decisión bioestadística:\n  Puesto que los contrastes individuales y globales exhiben p-valores ajustados marcadamente inferiores a alpha = .05 (p < .001), se rechaza la hipótesis nula H_0,3 y se acepta la hipótesis alterna H_1,3. Se concluye con un 95% de confianza que la implantación del sistema SIVAC eleva de manera estadísticamente significativa la aceptación tecnológica y la utilidad percibida en los operadores (Tabla 11)."
     },
     {
       "tipo": "tabla_apa7",
@@ -2334,10 +2334,10 @@
         [
           "Aceptación del proceso (AP)",
           "t de Student pareada",
-          "t = 33.352",
+          "t = 11.908",
           "13",
           "< .001",
-          "d = 8.91",
+          "d = 3.18",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,3"
@@ -2356,10 +2356,10 @@
         [
           "Utilidad percibida (UP)",
           "t de Student pareada",
-          "t = 34.881",
+          "t = 12.160",
           "13",
           "< .001",
-          "d = 9.32",
+          "d = 3.25",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,3"
@@ -2378,10 +2378,10 @@
         [
           "Puntaje global TAM (AP + UP)",
           "t de Student pareada",
-          "t = 44.477",
+          "t = 12.367",
           "13",
           "< .001",
-          "d = 11.89",
+          "d = 3.31",
           "Grande (|d| >= 0.8)",
           "< .001",
           "Rechazar H0,3"
