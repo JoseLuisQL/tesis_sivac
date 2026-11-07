@@ -95,7 +95,10 @@ quedó atrás.
 
 1. Depositar los CSV originales y el `MANIFEST.json` firmado en `raw/`.
 2. Superar los cuatro niveles de control de calidad y promover a `processed/`.
-3. Reemplazar `recolectados/pretest_campo.csv` y `posttest_campo.csv`.
+3. Reemplazar `recolectados/pretest_campo.csv` y `posttest_campo.csv`. Si la
+digitación se hizo en el libro de captura v22, este paso lo hace
+`consolidar_libro_captura.py --escribir` (audita con solo omitir la bandera; no
+escribe si alguna de las 28 sesiones está incompleta).
 4. Retirar el rótulo `DATOS DE PRUEBA – REEMPLAZAR (DEC-007)` de
    `recolectados/README.md`, `SIVAC_DATOS_CAMPO.md` y `salidas/evidencias/README.md`.
 5. Reejecutar la cadena: `analisis_estadistico_sivac.py` →

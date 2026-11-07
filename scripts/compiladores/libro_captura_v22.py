@@ -50,9 +50,39 @@ CALCULADA = PatternFill("solid", fgColor="E8F1E4")
 ANCHO_MAX = 46
 
 
+# Fórmulas de las celdas verdes. Se escriben para que el libro cuadre a la
+# vista mientras se digita; el consolidado las recalcula de todos modos, de
+# modo que un archivo sin recalcular nunca altera el resultado.
+CELDA = "{}"
+
+FORMULA_DURACION_S = (
+    '=IF(OR($L{r}="",$M{r}=""),"",'
+    'ROUND(MOD((IF(ISNUMBER($M{r}),$M{r},TIMEVALUE($M{r}))'
+    '-IF(ISNUMBER($L{r}),$L{r},TIMEVALUE($L{r})))*86400,86400),0)'
+    '-IF($P{r}="",0,$P{r}))')
+FORMULA_DURACION_MIN = '=IF($N{r}="","",ROUND($N{r}/60,4))'
+FORMULA_DIFERENCIA = '=IF(OR($I{r}="",$J{r}=""),"",$J{r}-$I{r})'
+FORMULA_SCORE_AP = (
+    '=IF(COUNTIFS($A$3:$A$226,$A{r},$C$3:$C$226,$C{r},'
+    '$G$3:$G$226,"AP",$H$3:$H$226,">0")<4,"",'
+    'SUMIFS($H$3:$H$226,$A$3:$A$226,$A{r},$C$3:$C$226,$C{r},$G$3:$G$226,"AP"))')
+FORMULA_SCORE_UP = FORMULA_SCORE_AP.replace('"AP"', '"UP"')
+FORMULA_SCORE_TOTAL = '=IF(OR($I{r}="",$J{r}=""),"",$I{r}+$J{r})'
+FORMULA_NIVEL = ('=IF($K{r}="","",IF($K{r}<=18,"Bajo",'
+                 'IF($K{r}<=29,"Medio","Alto")))')
+
+FORMULAS_REPLICAS = {"duracion_s": FORMULA_DURACION_S,
+                     "duracion_min": FORMULA_DURACION_MIN}
+FORMULAS_DESPACHOS = {"diferencia": FORMULA_DIFERENCIA}
+FORMULAS_REACTIVOS = {"score_ap": FORMULA_SCORE_AP,
+                      "score_up": FORMULA_SCORE_UP,
+                      "score_total": FORMULA_SCORE_TOTAL,
+                      "nivel": FORMULA_NIVEL}
+
+
 def _hoja(libro: Workbook, titulo: str, columnas, filas, claves: int,
           nota: str, validaciones=(), congelar: str = "A3",
-          calculadas=()):
+          calculadas=(), formulas=None):
     hoja = libro.create_sheet(titulo)
     hoja["A1"] = nota
     hoja["A1"].font = Font(name=FUENTE, size=10, italic=True, color="444444")
@@ -73,6 +103,7 @@ def _hoja(libro: Workbook, titulo: str, columnas, filas, claves: int,
     hoja.row_dimensions[2].height = 34
 
     nombres = [nombre for nombre, _a, _t in columnas]
+    formulas = formulas or {}
     for i, fila in enumerate(filas, 3):
         for j, valor in enumerate(fila, 1):
             celda = hoja.cell(row=i, column=j, value=valor)
@@ -82,6 +113,11 @@ def _hoja(libro: Workbook, titulo: str, columnas, filas, claves: int,
                 celda.fill = CLAVE
             elif nombres[j - 1] in calculadas:
                 celda.fill = CALCULADA
+                # La celda verde no se teclea: lleva la fórmula que la ficha
+                # resuelve a mano, para que el libro cuadre a la vista.
+                plantilla = formulas.get(nombres[j - 1])
+                if plantilla:
+                    celda.value = plantilla.format(r=i)
             else:
                 celda.fill = MEDIDA
             celda.alignment = Alignment(
@@ -142,12 +178,19 @@ def hoja_leeme(libro: Workbook, conteos) -> None:
                                    "la discrepancia en observaciones. La hoja "
                                    "no se corrige en el libro."),
         ("Columnas de color", "Gris: identificación, ya escrita. Crema: se "
-                              "digita tal como está en el papel. Verde: se "
-                              "calcula al cerrar la sesión y no se teclea."),
+                              "digita tal como está en el papel. Verde: la "
+                              "calcula el script al consolidar; no se teclea ni "
+                              "se rellena a mano."),
         ("Después", "El consolidado por operador y momento se calcula desde "
                     "estas cuatro hojas: promedios de las réplicas válidas, "
                     "RSD y CPE sobre los registros revisados, AP y UP por suma "
                     "de reactivos."),
+        ("Cómo se consolida", "Con el libro cerrado y completo, el script "
+                              "scripts/estadistica/consolidar_libro_captura.py "
+                              "lee estas hojas, recalcula la aritmética y "
+                              "escribe datos/recolectados/pretest_campo.csv y "
+                              "posttest_campo.csv. Sin --escribir solo audita y "
+                              "enumera lo que falta."),
         ("Advertencia", "El libro está vacío de mediciones a propósito. Las "
                         "claves reproducen el diseño censal (14 operadores por "
                         "2 momentos) y no contienen ningún valor observado."),
@@ -206,7 +249,7 @@ def construir() -> Path:
                 asientos.append([op, centro, momento, f(fecha), obs,
                                  1 if n <= 20 else 2, n])
             for n in range(1, 26):
-                despachos.append([op, centro, momento, f(fecha), n])
+                despachos.append([op, centro, momento, f(fecha), obs, n])
             for codigo in ("AP-01", "AP-02", "AP-03", "AP-04",
                            "UP-01", "UP-02", "UP-03", "UP-04"):
                 reactivos.append([op, centro, momento, f(fecha), obs,
@@ -244,7 +287,8 @@ def construir() -> Path:
                       ("valida", ["Sí", "No"]),
                       ("motivo_pausa", ["P1", "P2", "P3", "P4"])),
         congelar="D3",
-        calculadas=("duracion_s", "duracion_min"))
+        calculadas=("duracion_s", "duracion_min"),
+        formulas=FORMULAS_REPLICAS)
 
     _hoja(libro, "02_asientos", [
         ("sujeto_id", 11, "texto"), ("centro_acopio", 26, "texto"),
@@ -273,18 +317,18 @@ def construir() -> Path:
     _hoja(libro, "02_despachos", [
         ("sujeto_id", 11, "texto"), ("centro_acopio", 26, "texto"),
         ("momento", 11, "texto"), ("fecha_sesion", 13, "texto"),
-        ("n", 7, "entero"),
+        ("auditor", 10, "texto"), ("n", 7, "entero"),
         ("fecha", 12, "texto"), ("biologico", 11, "texto"),
         ("programado", 12, "entero"), ("entregado", 11, "entero"),
         ("diferencia", 11, "entero"), ("documento", 24, "texto"),
         ("conforme", 10, "texto"), ("observacion", ANCHO_MAX, "texto"),
-    ], [d + [""] * 8 for d in despachos], 5,
+    ], [d + [""] * 8 for d in despachos], 6,
         "02_despachos · una fila por despacho conciliado (ficha 02, bloque B). "
         "Diferencia = entregado − programado, con signo; conforme solo si la "
         "diferencia es cero y el documento coincide.",
         validaciones=(("conforme", ["Sí", "No"]),),
-        congelar="F3",
-        calculadas=("diferencia",))
+        congelar="G3",
+        calculadas=("diferencia",), formulas=FORMULAS_DESPACHOS)
 
     _hoja(libro, "03_reactivos", [
         ("sujeto_id", 11, "texto"), ("centro_acopio", 26, "texto"),
@@ -303,7 +347,8 @@ def construir() -> Path:
                       ("valor", ["1", "2", "3", "4", "5"]),
                       ("nivel", ["Bajo", "Medio", "Alto"])),
         congelar="G3",
-        calculadas=("score_ap", "score_up", "score_total", "nivel"))
+        calculadas=("score_ap", "score_up", "score_total", "nivel"),
+        formulas=FORMULAS_REACTIVOS)
 
     DESTINO.parent.mkdir(parents=True, exist_ok=True)
     libro.properties.creator = "SIVAC-THESIS-LAB"

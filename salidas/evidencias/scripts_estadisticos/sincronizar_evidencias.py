@@ -58,6 +58,8 @@ COPias = [
      SCRIPTS / "generar_datos_sinteticos.py"),
     (RAIZ / "scripts" / "estadistica" / "construir_registro_campo.py",
      SCRIPTS / "construir_registro_campo.py"),
+    (RAIZ / "scripts" / "estadistica" / "consolidar_libro_captura.py",
+     SCRIPTS / "consolidar_libro_captura.py"),
     (RAIZ / "scripts" / "estadistica" / "exportar_libro_campo.py",
      SCRIPTS / "exportar_libro_campo.py"),
     (RAIZ / "scripts" / "estadistica" / "sincronizar_evidencias.py",
