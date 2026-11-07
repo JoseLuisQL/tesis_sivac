@@ -1,0 +1,52 @@
+{
+  "version": "v22",
+  "fecha": "2026-11-07T00:00:00",
+  "tipografia": "Times New Roman",
+  "geometria": "A4 21 x 29,7 cm; margenes 3,0 / 2,5 / 2,5 / 2,5 cm; ancho util 15,5 cm",
+  "documentos": {
+    "01_CARTA_AUTORIZACION": {
+      "descripcion": "Carta de autorización institucional",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/01_IMPRIMIBLES/01_CARTA_AUTORIZACION_v22.pdf",
+      "paginas": 2,
+      "sha256_pdf": "71523b51d2d91863335b3827fb12a67cdd569bcf1cca8674523c2b0745ca9d99",
+      "origen": "CARTA-DE-AUTORIZACION.pdf"
+    },
+    "03_INSTRUMENTO_01_TIEMPOS": {
+      "descripcion": "Anexo 4.1. Ficha de registro de tiempos",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/02_EDITABLES/03_INSTRUMENTO_01_TIEMPOS_v22.docx",
+      "sha256_docx": "6cc807d8d40fc378e9f5db66abd8bafe048a01d8b7ddfaedc67dc620671104b6",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/01_IMPRIMIBLES/03_INSTRUMENTO_01_TIEMPOS_v22.pdf",
+      "paginas": 1,
+      "sha256_pdf": "a91d65edc476f8e42b8a0319b8ddb568120cedc6ae4d1171da1d3afd9eb71475"
+    },
+    "04_INSTRUMENTO_02_DOCUMENTAL": {
+      "descripcion": "Anexo 4.2. Ficha de auditoría documental",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/02_EDITABLES/04_INSTRUMENTO_02_DOCUMENTAL_v22.docx",
+      "sha256_docx": "d7b65767a0645ce56713f96357cea4331b25c9c39ecb18d7384ff265f11ff27c",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/01_IMPRIMIBLES/04_INSTRUMENTO_02_DOCUMENTAL_v22.pdf",
+      "paginas": 3,
+      "sha256_pdf": "ea0eb3c2fedd99057b322625852de88c2f6611ea4f21824475f8c738a9ad4b52"
+    },
+    "05_INSTRUMENTO_03_CUESTIONARIO": {
+      "descripcion": "Anexo 4.3. Cuestionario de satisfacción del usuario",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/02_EDITABLES/05_INSTRUMENTO_03_CUESTIONARIO_v22.docx",
+      "sha256_docx": "15623b06bf3f99ab4cfe485a942f546f2984242ff82b422a4c9924a79c9d706e",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/01_IMPRIMIBLES/05_INSTRUMENTO_03_CUESTIONARIO_v22.pdf",
+      "paginas": 1,
+      "sha256_pdf": "32d1aaa97c72c75ff79c05c5c9e850c2f6996c6223a6be3f789dd3e8bcbe19a0"
+    },
+    "06_HOJA_DE_OBSERVACIONES": {
+      "descripcion": "Hoja de observaciones de la sesión",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/02_EDITABLES/06_HOJA_DE_OBSERVACIONES_v22.docx",
+      "sha256_docx": "fe50bf1d248243ea96fd4daeda751a5d29ce6a392682c2e64dcdfc0043bb299d",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/01_IMPRIMIBLES/06_HOJA_DE_OBSERVACIONES_v22.pdf",
+      "paginas": 1,
+      "sha256_pdf": "b3b72ddb22a10e525fd0e7cbc8fd5056e900f2c10f5805748f259447d55b7efa"
+    }
+  },
+  "paquete_completo": {
+    "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/01_IMPRIMIBLES/00_PAQUETE_COMPLETO_v22.pdf",
+    "paginas": 8,
+    "sha256_pdf": "bd4cbe17caf2e27b41216f9fef27409040c5331f8c5fb94c5e9e513484fb2525"
+  }
+}

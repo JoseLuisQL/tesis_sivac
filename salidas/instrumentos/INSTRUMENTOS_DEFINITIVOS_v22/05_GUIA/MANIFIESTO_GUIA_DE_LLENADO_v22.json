@@ -1,0 +1,15 @@
+{
+  "version": "v22",
+  "documento": "05_GUIA/GUIA_DE_LLENADO_v22",
+  "caracter": "Documento operativo de campo. No es anexo de la tesis.",
+  "documentos": {
+    "GUIA_DE_LLENADO": {
+      "descripcion": "Guía de llenado y plan de impresión",
+      "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/05_GUIA/GUIA_DE_LLENADO_v22.docx",
+      "sha256_docx": "db0943a2ad09785f00e43aaca2933db28d404139436723d84c040c304bd335a3",
+      "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/05_GUIA/GUIA_DE_LLENADO_v22.pdf",
+      "paginas": 7,
+      "sha256_pdf": "f3fee876e3fc22b28c4e54b0ed0435028576880d2b7e601738f6ebf50fd2f7b3"
+    }
+  }
+}

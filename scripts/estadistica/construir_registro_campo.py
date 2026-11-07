@@ -399,6 +399,9 @@ def parte_3() -> list[str]:
                     else "Postest (Sistema SIVAC)")
             L.append(f"### Bloque {bloque} · {op} · {fase} · {G.dmy(fecha)}")
             L.append("")
+            L.append(f"Centro de acopio: **{centro}** ({cod}) · Observador: "
+                     f"**{obs}**")
+            L.append("")
             for indicador, titulo in (("T_reg",
                                        "**Indicador 1.1 — Tiempo de registro (T_reg)**"),
                                       ("T_vale",
@@ -416,12 +419,18 @@ def parte_3() -> list[str]:
                         dur += f" ({int(r['duracion_s'])} s)"
                     pausa = r["pausa_s"] or "—"
                     motivo = r["motivo_pausa"] or "—"
-                    cuerpo.append([r["replica"], r["tarea"], r["hora_inicio"],
-                                   r["hora_corte"], dur, pausa, motivo,
-                                   r["valida"]])
-                L += tabla(["Réplica", "Tarea", "Inicio", "Fin",
-                            "Duración (min)", "Pausa (s)", "Motivo", "Válida"],
-                           ["| :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |"],
+                    # El vale no lleva lote: la ficha imprime una sola celda
+                    # para el número PECOSA y deja el lote sin dato.
+                    lote = (r["lote_documento"]
+                            if indicador == "T_reg" else "—")
+                    cuerpo.append([r["replica"], r["tarea"], r["documento"],
+                                   lote, r["hora_inicio"], r["hora_corte"],
+                                   dur, pausa, motivo, r["valida"]])
+                L += tabla(["Réplica", "Tarea", "Documento", "Lote", "Inicio",
+                            "Fin", "Duración (min)", "Pausa (s)", "Motivo",
+                            "Válida"],
+                           ["| :--- | :---: | :---: | :---: | :---: | :---: |"
+                            " ---: | ---: | :---: | :---: |"],
                            cuerpo)
                 suma_min = sum(float(r["duracion_min"]) for r in filas)
                 suma_s = sum(int(r["duracion_s"]) for r in filas)
@@ -430,6 +439,20 @@ def parte_3() -> list[str]:
                       f"Cierre: {suma_min:.4f} min ÷ {len(filas)} = "
                       f"**{media:.4f} min**. Suma de las tres réplicas: "
                       f"{suma_min:.4f} min ({suma_s} s).", ""]
+            # El recuadro de resumen de la ficha impresa se llena con estos
+            # tres valores: las dos medias y el conteo de réplicas válidas.
+            medias, validas = {}, 0
+            for indicador in ("T_reg", "T_vale"):
+                grupo = [r for r in rep
+                         if r["sujeto_id"] == op and r["momento"] == momento
+                         and r["indicador"] == indicador]
+                medias[indicador] = (sum(float(r["duracion_min"])
+                                         for r in grupo) / len(grupo))
+                validas += sum(1 for r in grupo if r["valida"] == "Sí")
+            L += [f"**Resumen del operador.** T_reg promedio: "
+                  f"{medias['T_reg']:.4f} min · T_vale promedio: "
+                  f"{medias['T_vale']:.4f} min · Réplicas válidas: "
+                  f"{validas} de 6.", ""]
             L += ["---", ""]
     return L
 
@@ -444,6 +467,15 @@ MOTIVOS = {
 }
 
 
+def _rango(filas: list[dict]) -> str:
+    """Primera y última fecha de un bloque, en el formato de la ficha."""
+    fechas = sorted((r["fecha"] for r in filas if r.get("fecha")),
+                    key=lambda f: (f[6:], f[3:5], f[:2]))
+    if not fechas:
+        return "—"
+    return f"{fechas[0]} al {fechas[-1]}"
+
+
 def parte_4() -> list[str]:
     asientos = leer("instrumento02_asientos.csv")
     despachos = leer("instrumento02_despachos.csv")
@@ -454,7 +486,9 @@ def parte_4() -> list[str]:
         "criterios. La tabla emplea S y N para abreviar Sí y No, y las columnas "
         "1 a 8 siguen el orden de los aspectos del instrumento. El motivo se "
         "codifica de M1 a M8 y se imprime solo cuando el documento no es "
-        "conforme. En las entregas, Dif. es la cantidad entregada menos la "
+        "conforme; la última columna reproduce la observación del auditor, que "
+        "en la ficha impresa se escribe en la celda «Motivo · Obs.». En las "
+        "entregas, Dif. es la cantidad entregada menos la "
         "programada: el signo negativo señala faltante y el positivo, exceso; "
         "la entrega es concordante solo cuando la diferencia es cero.",
         "",
@@ -481,6 +515,19 @@ def parte_4() -> list[str]:
             conc = sum(1 for r in desp if int(r["programado"]) == int(r["entregado"]))
             L.append(f"### Bloque {bloque} · {op} · {fase} · {G.dmy(fecha)}")
             L.append("")
+            L.append(f"Centro de acopio: **{centro}** ({cod}) · Auditor: "
+                     f"**{obs}** · Periodo auditado: "
+                     f"**{_rango(docs + desp)}**")
+            L.append("")
+            # La ficha impresa cierra cada hoja por separado: la primera
+            # declara el RSD parcial de los asientos 1 a 20.
+            mitad = [r for r in docs if int(r["n"]) <= 20]
+            conf_mitad = sum(1 for r in mitad
+                             if all(r[f"c{i}"] == "S" for i in range(1, 9)))
+            L.append(
+                f"Hoja 1 (asientos 1 a 20): revisados {len(mitad)} · conformes "
+                f"{conf_mitad} · RSD {100 * conf_mitad / len(mitad):.2f} %.")
+            L.append("")
             L.append(
                 f"Documentos auditados: {len(docs)} · Conformes: {conf} · "
                 f"RSD: {100 * conf / len(docs):.2f} % · Entregas conciliadas: "
@@ -492,13 +539,17 @@ def parte_4() -> list[str]:
                 criterios = [r[f"c{i}"] for i in range(1, 9)]
                 conforme = r["conforme"] == "S"
                 motivo = r["motivo"] if not conforme and r["motivo"] else "—"
-                cuerpo.append([r["n"], r["tipo"], r["biologico"], r["lote"],
-                               r["cantidad"]] + criterios +
-                              ["S" if conforme else "N", motivo])
-            L += tabla(["Doc", "Tipo", "Biol.", "Lote", "Cant.",
-                        "1", "2", "3", "4", "5", "6", "7", "8", "Conf.", "Motivo"],
-                       ["| :---: | :---: | :---: | :---: | ---: |"]
-                       + [" :---: |"] * 9 + [" :---: |"],
+                cuerpo.append([r["n"], r["fecha"], r["tipo"], r["documento"],
+                               r["biologico"], r["lote"], r["cantidad"]]
+                              + criterios +
+                              ["S" if conforme else "N", motivo,
+                               r["observacion"] or "—"])
+            L += tabla(["Doc", "Fecha", "Tipo", "Documento", "Biol.", "Lote",
+                        "Cant.", "1", "2", "3", "4", "5", "6", "7", "8",
+                        "Conf.", "Motivo", "Observación"],
+                       ["| :---: | :---: | :---: | :---: | :---: | :---: |"
+                        " ---: |"] + [" :---: |"] * 9
+                       + [" :--- | :--- |"],
                        cuerpo)
             L += ["",
                   f"**Entregas conciliadas — {op} · {fase}**", ""]
@@ -508,10 +559,11 @@ def parte_4() -> list[str]:
                 doc = r["documento"]
                 cuerpo.append([r["n"], r["fecha"], cod, r["biologico"],
                                r["programado"], r["entregado"], str(dif), doc,
-                               "Sí" if dif == 0 else "No"])
+                               "Sí" if dif == 0 else "No", r["observacion"]])
             L += tabla(["N.º", "Fecha", "Centro", "Biol.", "Prog.", "Entr.",
-                        "Dif.", "Doc.", "Conc."],
-                       ["| :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |"],
+                        "Dif.", "Doc.", "Conc.", "Observación"],
+                       ["| :---: | :---: | :---: | :---: | ---: | ---: |"
+                        " ---: | :---: | :---: | :--- |"],
                        cuerpo)
             L += ["",
                   f"Cierre: {conc} entregas concordantes ÷ {len(desp)} × 100 = "
@@ -524,9 +576,19 @@ def parte_4() -> list[str]:
 # --------------------------------------------------------------------------
 
 def parte_5(previo: str) -> list[str]:
-    enunciados = trozo(previo, "### Enunciados de la Modalidad A",
-                       "### Matriz de respuestas — Modalidad A")
+    # Los enunciados se toman del catálogo que alimenta el anexo 4.3: el
+    # registro de campo no puede citar un texto distinto del que se administra.
+    enunciados = ["### Enunciados de la Modalidad A", ""]
+    for grupo, titulo in (("AP", "**Aceptación del proceso**"),
+                          ("UP", "**Utilidad percibida**")):
+        enunciados += [titulo, ""]
+        for codigo, dim, texto in G.REACTIVOS:
+            if dim == grupo:
+                enunciados.append(f"- **{codigo}.** {texto}")
+        enunciados.append("")
+    enunciados = "\n".join(enunciados)
     modulo_b = trozo(previo, "### Módulo B", "\n---\n\n<a id=\"parte-6\">")
+    modulo_b = modulo_b.replace("( = 14$)", "(N = 14)")
 
     filas = leer("instrumento03_reactivos.csv")
     L = [

@@ -104,12 +104,12 @@
       "descripcion": "Conjunto consolidado que consume el pipeline estadístico",
       "archivos": {
         "SIVAC_DATOS_CAMPO.md": {
-          "bytes": 234738,
-          "sha256": "a30f680e2350b9c95a2bc19874fea7a5295ffaf9267d8f2b9c8bb3e965650b09"
+          "bytes": 348483,
+          "sha256": "7a8d9de986739530260dddb683beebd59ce85eb505a89fdabab996b5115c8772"
         },
         "datos_recolectados_pre_post.xlsx": {
-          "bytes": 10845,
-          "sha256": "b151f3a6875881f93121eee501cfec902cb15f843d590dc32455cb4f555eeb94"
+          "bytes": 10849,
+          "sha256": "6a1e76e8372f78ddacef2d99fa0a97f46fdf31f3fdb094334dd040205d20af76"
         },
         "posttest_campo.csv": {
           "bytes": 1169,
