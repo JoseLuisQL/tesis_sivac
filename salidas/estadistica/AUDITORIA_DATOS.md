@@ -116,8 +116,8 @@
 | H. Coherencia entre instrumentos | Ventana documental de 1 a 35 días | OK | rango 1–34 días |
 | H. Coherencia entre instrumentos | Despachos anteriores a la sesión de conciliación | OK | 0 fuera de ventana |
 | I. Evidencias | Registro de sincronización presente | OK |  |
-| I. Evidencias | Copias de evidencia con la huella registrada | OK | 23 archivos |
-| J. Informe final | Informe final versionado presente | OK | informe_final_v28.docx |
+| I. Evidencias | Copias de evidencia con la huella registrada | OK | 24 archivos |
+| J. Informe final | Informe final versionado presente | OK | informe_final_v29.docx |
 | J. Informe final | Alfas de Cronbach del informe coinciden con el reporte | OK | 6 escalas revisadas |
 | J. Informe final | Descriptivos del informe coinciden con el reporte | OK | 21 filas |
 | J. Informe final | Contrastes del informe coinciden con el reporte | OK | 14 filas |
@@ -130,10 +130,10 @@
 | K. Libro de anexos (XLSX) | Libro de tablas de anexos presente | OK | TABLAS_ANEXOS_SIVAC.xlsx |
 | K. Libro de anexos (XLSX) | Hojas del libro en el orden previsto | OK | 12 hojas |
 | K. Libro de anexos (XLSX) | Registro de paridad del libro presente | OK |  |
-| K. Libro de anexos (XLSX) | Portada identifica el informe vigente | OK | informe_final_v28.docx |
-| K. Libro de anexos (XLSX) | Portada declara el total de tablas del informe | OK | se esperaban 84 tablas |
+| K. Libro de anexos (XLSX) | Portada identifica el informe vigente | OK | informe_final_v29.docx |
+| K. Libro de anexos (XLSX) | Portada declara el total de tablas del informe | OK | se esperaban 91 tablas |
 | K. Libro de anexos (XLSX) | El libro no cita versiones anteriores del informe | OK |  |
-| K. Libro de anexos (XLSX) | Registro de paridad coherente con el libro | OK | informe_final_v28.docx |
+| K. Libro de anexos (XLSX) | Registro de paridad coherente con el libro | OK | informe_final_v29.docx |
 | K. Libro de anexos (XLSX) | Matriz pretest igual a los CSV de campo | OK | 14 sujetos × 18 columnas |
 | K. Libro de anexos (XLSX) | Matriz postest igual a los CSV de campo | OK | 14 sujetos × 18 columnas |
 | K. Libro de anexos (XLSX) | Descriptivos del libro coinciden con el reporte | OK | 21 filas |

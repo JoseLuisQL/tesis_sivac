@@ -543,13 +543,13 @@
     "bloque": "I. Evidencias",
     "comprobacion": "Copias de evidencia con la huella registrada",
     "estado": "OK",
-    "detalle": "23 archivos"
+    "detalle": "24 archivos"
   },
   {
     "bloque": "J. Informe final",
     "comprobacion": "Informe final versionado presente",
     "estado": "OK",
-    "detalle": "informe_final_v28.docx"
+    "detalle": "informe_final_v29.docx"
   },
   {
     "bloque": "J. Informe final",
@@ -627,13 +627,13 @@
     "bloque": "K. Libro de anexos (XLSX)",
     "comprobacion": "Portada identifica el informe vigente",
     "estado": "OK",
-    "detalle": "informe_final_v28.docx"
+    "detalle": "informe_final_v29.docx"
   },
   {
     "bloque": "K. Libro de anexos (XLSX)",
     "comprobacion": "Portada declara el total de tablas del informe",
     "estado": "OK",
-    "detalle": "se esperaban 84 tablas"
+    "detalle": "se esperaban 91 tablas"
   },
   {
     "bloque": "K. Libro de anexos (XLSX)",
@@ -645,7 +645,7 @@
     "bloque": "K. Libro de anexos (XLSX)",
     "comprobacion": "Registro de paridad coherente con el libro",
     "estado": "OK",
-    "detalle": "informe_final_v28.docx"
+    "detalle": "informe_final_v29.docx"
   },
   {
     "bloque": "K. Libro de anexos (XLSX)",

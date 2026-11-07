@@ -35,8 +35,8 @@
       "bytes": 8809
     },
     "base_de_datos/SIVAC_DATOS_CAMPO.md": {
-      "sha256": "7a8d9de986739530260dddb683beebd59ce85eb505a89fdabab996b5115c8772",
-      "bytes": 348483
+      "sha256": "df304bdb4671afee750a33d0b76e788ccacc0e7f865f79bc2cc197bacc10d591",
+      "bytes": 348512
     },
     "base_de_datos/README_DECLARACION_DEC007.md": {
       "sha256": "bb176c97925be87fd96badcbc22c4452e864c87904a550b0e5d5d423198a2707",
@@ -55,16 +55,20 @@
       "bytes": 67116
     },
     "scripts_estadisticos/construir_registro_campo.py": {
-      "sha256": "8b8ff684c9313227c1bca4b95152d4dd3dfdc1d79fa8de59f7808dab95286d43",
-      "bytes": 63034
+      "sha256": "9c43f10a80aace891d4e663edfdd8015e8d905ceb7f56466f3a2865171dd00f6",
+      "bytes": 63074
+    },
+    "scripts_estadisticos/consolidar_libro_captura.py": {
+      "sha256": "27e16a2d3d431a1391a5e53d745efb43fd2e45e0793165c2a5ce9f6a5b99e8c2",
+      "bytes": 15119
     },
     "scripts_estadisticos/exportar_libro_campo.py": {
-      "sha256": "40aa316d1ac20fd056adf9eb32005bf4bc2080cccbe8c99b6abab2d9527cf7cf",
-      "bytes": 7553
+      "sha256": "0920ee44daf86e59181049ca10e4e5dde961825e98140cc8b704e943cc9ae50c",
+      "bytes": 7712
     },
     "scripts_estadisticos/sincronizar_evidencias.py": {
-      "sha256": "183bdf3b33b9fffdae6d36c09f66504bad8eb19a767f5146fa0ea151df9f02fc",
-      "bytes": 6194
+      "sha256": "528fc95749f13a61083f233f3e3645b9e80376d7ea6c7ab1adc1e576851d2932",
+      "bytes": 6312
     },
     "scripts_estadisticos/verificar_conjunto_datos.py": {
       "sha256": "3e74c60fdd7e92eb66c1f13b4d2ae505705b1b77123e0d90c482ef58d004c230",
@@ -91,8 +95,8 @@
       "bytes": 134567
     },
     "base_de_datos/datos_recolectados_pre_post.xlsx": {
-      "sha256": "b151f3a6875881f93121eee501cfec902cb15f843d590dc32455cb4f555eeb94",
-      "bytes": 10845
+      "sha256": "6a1e76e8372f78ddacef2d99fa0a97f46fdf31f3fdb094334dd040205d20af76",
+      "bytes": 10849
     }
   },
   "filas": {

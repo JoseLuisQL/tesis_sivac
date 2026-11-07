@@ -154,9 +154,11 @@ def _fijar_fechas(destino: Path) -> None:
         for nombre, datos in entradas:
             if nombre == "docProps/core.xml":
                 # openpyxl reescribe `modified` con la hora de guardado.
+                # \g<1> y no \1: «\1» seguido de «2026» se lee como la
+                # escape octal \120 (= «P») y dejaba el XML del libro roto.
                 datos = re.sub(
                     rb"(<dcterms:modified[^>]*>)[^<]*(</dcterms:modified>)",
-                    rb"\1" + fijo + rb"\2", datos)
+                    rb"\g<1>" + fijo + rb"\g<2>", datos)
             info = zipfile.ZipInfo(nombre, date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
             salida.writestr(info, datos)

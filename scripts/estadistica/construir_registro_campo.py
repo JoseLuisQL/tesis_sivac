@@ -486,8 +486,9 @@ def parte_4() -> list[str]:
         "criterios. La tabla emplea S y N para abreviar Sí y No, y las columnas "
         "1 a 8 siguen el orden de los aspectos del instrumento. El motivo se "
         "codifica de M1 a M8 y se imprime solo cuando el documento no es "
-        "conforme; la última columna reproduce la observación del auditor, que "
-        "en la ficha impresa se escribe en la celda «Motivo · Obs.». En las "
+        "conforme y va en la columna Motivo; la última columna reproduce la "
+        "frase del auditor, que en la ficha impresa ocupa la casilla "
+        "«Observación» de esa misma fila. En las "
         "entregas, Dif. es la cantidad entregada menos la "
         "programada: el signo negativo señala faltante y el positivo, exceso; "
         "la entrega es concordante solo cuando la diferencia es cero.",
