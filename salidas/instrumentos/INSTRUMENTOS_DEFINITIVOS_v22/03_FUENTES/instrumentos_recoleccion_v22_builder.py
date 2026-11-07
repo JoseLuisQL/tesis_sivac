@@ -851,6 +851,43 @@ def doc_cuestionario() -> Document:
 
 CARTA = RAIZ / "CARTA-DE-AUTORIZACION.pdf"
 
+LEEME = """# Instrumentos de recolección de datos (v22)
+
+| Archivo | Contenido | Hojas |
+| --- | --- | --- |
+| 01_CARTA_AUTORIZACION | Carta de autorización institucional firmada y sellada | 2 |
+| 03_INSTRUMENTO_01_TIEMPOS | Ficha de registro de tiempos: pausa, motivo, documento y lote separados, validez | 1 |
+| 04_INSTRUMENTO_02_DOCUMENTAL | Auditoría del kardex (2 hojas, 20 asientos cada una, con tipo y observación) y conciliación de 25 despachos | 3 |
+| 05_INSTRUMENTO_03_CUESTIONARIO | Cuestionario de aceptación y utilidad percibida, 8 reactivos Likert, con encuestador y observaciones | 1 |
+| 06_HOJA_DE_OBSERVACIONES | Réplicas de reemplazo y anotaciones de la sesión | 1 |
+| 00_PAQUETE_COMPLETO | Los cinco documentos en orden de uso | 8 |
+
+Fuera de `01_IMPRIMIBLES`:
+
+| Carpeta | Contenido |
+| --- | --- |
+| 02_EDITABLES | Los cuatro documentos en DOCX, para corregir la maqueta |
+| 03_FUENTES | El compilador que genera el paquete |
+| 04_CONTROL_VISUAL | Una imagen por página, para revisar la maqueta sin abrir el PDF |
+| 05_GUIA | Guía de llenado y control de la sesión (7 páginas) |
+| 07_CAPTURA | LIBRO_DE_CAPTURA_v22.xlsx: una fila por registro previsto, claves escritas y mediciones en blanco |
+
+La v21 no admitía el registro real: no tenía pausa ni motivo, unía documento y
+lote en una celda, no declaraba el tipo de asiento, no tenía columna de validez
+y no dejaba anotar la observación de cada fila. La v22 conserva la maqueta
+aprobada (Times New Roman 12 pt, A4, márgenes 3 / 2,5 / 2,5 / 2,5 cm) y añade
+esos campos.
+
+Los conteos coinciden con la tesis y con la base de datos: seis operaciones
+cronometradas (tres de registro y tres de emisión del vale), cuarenta asientos
+de kardex por operador y momento (veinte por hoja), veinticinco despachos,
+ocho criterios de conformidad y ocho reactivos AP/UP.
+
+El paquete no incluye consentimiento informado: el permiso formal es la Carta
+de Autorización, que la tesis reproduce en el Anexo 8.
+"""
+
+
 DOCUMENTOS: Dict[str, Tuple[str, Any]] = {
     "01_CARTA_AUTORIZACION": (
         "Carta de autorización institucional", CARTA),
@@ -1025,6 +1062,7 @@ def compilar(solo: Optional[Sequence[str]] = None, con_pdf: bool = True
               f"{manifiesto['paquete_completo']['paginas']} p.")
 
     shutil.copy2(Path(__file__), DIR_FUENTES / Path(__file__).name)
+    (BASE / "LEEME.md").write_text(LEEME, encoding="utf-8")
     (BASE / f"MANIFIESTO_{VERSION}.json").write_text(
         json.dumps(manifiesto, ensure_ascii=False, indent=2), encoding="utf-8")
     return manifiesto

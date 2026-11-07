@@ -455,7 +455,7 @@ def pagina_cierre(doc) -> None:
         ["02_asientos", "asiento auditado", "1 120",
          "fecha, tipo, biológico, lote, cantidad, c1 a c8, conf. y motivo"],
         ["02_despachos", "despacho conciliado", "700",
-         "fecha, biológico, programado, entregado, diferencia y documento"],
+         "fecha, biológico, programado, entregado y documento"],
         ["03_reactivos", "reactivo respondido por fase", "224",
          "valor 1 a 5 y observación"],
     ], [3.9, 4.4, 2.6, 5.0], [0.44, 0.44, 0.44, 0.44, 0.52], size=8.2,
@@ -493,6 +493,29 @@ def pagina_cierre(doc) -> None:
              "declara en el padrón. Cuarta: si el Módulo B se aplicará en esta "
              "campaña, porque su imprimible vive en el paquete de campo y no en "
              "el anexo.")
+
+    _interlinea1(doc, "9. Qué se archiva al cerrar la campaña")
+
+    _parrafo(doc,
+             "Al término de las veintiocho sesiones el expediente de campo "
+             "tiene tres cuerpos y conviene guardarlos por separado, porque "
+             "tienen destinos distintos: el papel firmado es la evidencia "
+             "primaria y no se presta; el libro de captura es el respaldo "
+             "digitado y se copia junto con el consolidado; la guía y los "
+             "editables son material de trabajo y no se anexan a la tesis.")
+
+    _cuadro(doc, [
+        ["Cuerpo", "Contenido", "Dónde"],
+        ["Evidencia primaria", "168 hojas firmadas (6 por sesión) más las "
+                               "réplicas de reemplazo y las cartas de "
+                               "autorización",
+         "Archivador físico, por operador y momento"],
+        ["Respaldo digitado", "LIBRO_DE_CAPTURA_v22.xlsx y los dos CSV "
+                              "consolidados",
+         "07_CAPTURA y datos/recolectados/"],
+        ["Material de trabajo", "Guía de llenado y los cuatro editables DOCX",
+         "05_GUIA y 02_EDITABLES"],
+    ], [3.6, 7.6, 4.3], [0.44, 0.70, 0.58, 0.52], size=8.2, izq=(0, 1, 2))
 
     _parrafo(doc,
              "Con esas decisiones tomadas y las hojas impresas, la campaña "

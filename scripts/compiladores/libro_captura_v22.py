@@ -29,6 +29,7 @@ from pathlib import Path
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.properties import PageSetupProperties
 from openpyxl.worksheet.datavalidation import DataValidation
 
 RAIZ = Path(__file__).resolve().parents[2]
@@ -44,12 +45,14 @@ CABECERA = PatternFill("solid", fgColor="1F3A5F")
 BANDA = PatternFill("solid", fgColor="F2F5F8")
 CLAVE = PatternFill("solid", fgColor="EDEDED")
 MEDIDA = PatternFill("solid", fgColor="FFFDF0")
+CALCULADA = PatternFill("solid", fgColor="E8F1E4")
 
 ANCHO_MAX = 46
 
 
 def _hoja(libro: Workbook, titulo: str, columnas, filas, claves: int,
-          nota: str, validaciones=(), congelar: str = "A3"):
+          nota: str, validaciones=(), congelar: str = "A3",
+          calculadas=()):
     hoja = libro.create_sheet(titulo)
     hoja["A1"] = nota
     hoja["A1"].font = Font(name=FUENTE, size=10, italic=True, color="444444")
@@ -69,12 +72,18 @@ def _hoja(libro: Workbook, titulo: str, columnas, filas, claves: int,
 
     hoja.row_dimensions[2].height = 34
 
+    nombres = [nombre for nombre, _a, _t in columnas]
     for i, fila in enumerate(filas, 3):
         for j, valor in enumerate(fila, 1):
             celda = hoja.cell(row=i, column=j, value=valor)
             celda.font = Font(name=FUENTE, size=10)
             celda.border = BORDE
-            celda.fill = CLAVE if j <= claves else MEDIDA
+            if j <= claves:
+                celda.fill = CLAVE
+            elif nombres[j - 1] in calculadas:
+                celda.fill = CALCULADA
+            else:
+                celda.fill = MEDIDA
             celda.alignment = Alignment(
                 horizontal="left" if j <= claves else "center",
                 vertical="center")
@@ -92,6 +101,13 @@ def _hoja(libro: Workbook, titulo: str, columnas, filas, claves: int,
         val.add(f"{letra}{primera}:{letra}{ultima}")
 
     hoja.freeze_panes = congelar
+    hoja.page_setup.orientation = "landscape"
+    hoja.page_setup.paperSize = hoja.PAPERSIZE_A4
+    hoja.sheet_properties.pageSetUpPr = PageSetupProperties(fitToPage=True)
+    hoja.page_setup.fitToWidth = 1
+    hoja.page_setup.fitToHeight = 0
+    hoja.print_title_rows = "2:2"
+    hoja.print_options.horizontalCentered = True
     hoja.auto_filter.ref = (f"A2:{get_column_letter(len(columnas))}{ultima}")
     hoja.sheet_view.zoomScale = 100
     return hoja
@@ -125,6 +141,9 @@ def hoja_leeme(libro: Workbook, conteos) -> None:
         ("Si una cifra no cuadra", "Se digita lo que dice el papel y se anota "
                                    "la discrepancia en observaciones. La hoja "
                                    "no se corrige en el libro."),
+        ("Columnas de color", "Gris: identificación, ya escrita. Crema: se "
+                              "digita tal como está en el papel. Verde: se "
+                              "calcula al cerrar la sesión y no se teclea."),
         ("Después", "El consolidado por operador y momento se calcula desde "
                     "estas cuatro hojas: promedios de las réplicas válidas, "
                     "RSD y CPE sobre los registros revisados, AP y UP por suma "
@@ -142,6 +161,13 @@ def hoja_leeme(libro: Workbook, conteos) -> None:
         celda.alignment = Alignment(wrap_text=True, vertical="top")
         hoja.row_dimensions[fila].height = 15 * (1 + len(texto) // 95)
         fila += 1
+
+    hoja.page_setup.orientation = "portrait"
+    hoja.page_setup.paperSize = hoja.PAPERSIZE_A4
+    hoja.sheet_properties.pageSetUpPr = PageSetupProperties(fitToPage=True)
+    hoja.page_setup.fitToWidth = 1
+    hoja.page_setup.fitToHeight = 0
+    hoja.print_options.horizontalCentered = True
 
     fila += 1
     hoja.cell(row=fila, column=1, value="Hoja").font = Font(
@@ -217,7 +243,8 @@ def construir() -> Path:
         validaciones=(("indicador", ["T_reg", "T_vale"]),
                       ("valida", ["Sí", "No"]),
                       ("motivo_pausa", ["P1", "P2", "P3", "P4"])),
-        congelar="D3")
+        congelar="D3",
+        calculadas=("duracion_s", "duracion_min"))
 
     _hoja(libro, "02_asientos", [
         ("sujeto_id", 11, "texto"), ("centro_acopio", 26, "texto"),
@@ -256,7 +283,8 @@ def construir() -> Path:
         "Diferencia = entregado − programado, con signo; conforme solo si la "
         "diferencia es cero y el documento coincide.",
         validaciones=(("conforme", ["Sí", "No"]),),
-        congelar="F3")
+        congelar="F3",
+        calculadas=("diferencia",))
 
     _hoja(libro, "03_reactivos", [
         ("sujeto_id", 11, "texto"), ("centro_acopio", 26, "texto"),
@@ -274,7 +302,8 @@ def construir() -> Path:
                                     "UP-01", "UP-02", "UP-03", "UP-04"]),
                       ("valor", ["1", "2", "3", "4", "5"]),
                       ("nivel", ["Bajo", "Medio", "Alto"])),
-        congelar="G3")
+        congelar="G3",
+        calculadas=("score_ap", "score_up", "score_total", "nivel"))
 
     DESTINO.parent.mkdir(parents=True, exist_ok=True)
     libro.properties.creator = "SIVAC-THESIS-LAB"
