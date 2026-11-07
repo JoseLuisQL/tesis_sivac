@@ -1,0 +1,124 @@
+{
+  "documento_fuente": "informe_final_v28.docx",
+  "tablas_docx_total": 84,
+  "tablas_replicadas": {
+    "consistencia": "Tabla 44",
+    "operacionalizacion": "Tabla 45",
+    "matriz_pretest": "Tabla 46",
+    "matriz_postest": "Tabla 47",
+    "historias_usuario": "Tabla 48",
+    "confiabilidad": "Tabla 35",
+    "normalidad": "Tabla 39",
+    "contrastes": [
+      "Tabla 40",
+      "Tabla 41",
+      "Tabla 42"
+    ],
+    "resumen_hipotesis": "Tabla 43",
+    "poblacion": "Tabla 30"
+  },
+  "hojas": [
+    "00_PORTADA",
+    "01_ANEXO1_MATRIZ",
+    "02_ANEXO2_OPERAC",
+    "03_ANEXO5_PRETEST",
+    "04_ANEXO5_POSTEST",
+    "05_DESCRIPTIVOS",
+    "06_CONFIABILIDAD",
+    "07_NORMALIDAD",
+    "08_CONTRASTES",
+    "09_ANEXO6_TRAZABILIDAD",
+    "10_SPSS_SALIDAS",
+    "11_NOTAS"
+  ],
+  "n_registros": {
+    "pretest": 14,
+    "posttest": 14
+  },
+  "indicadores": [
+    "t_reg",
+    "t_vale",
+    "rsd",
+    "cpe",
+    "score_ap",
+    "score_up",
+    "score_tam_total"
+  ],
+  "contrastes": {
+    "t_reg": {
+      "t": -29.996666865178916,
+      "p": 2.1752653536650052e-13,
+      "p_holm": 1.5226857475655037e-12
+    },
+    "t_vale": {
+      "t": -21.319978469540402,
+      "p": 1.693262088544013e-11,
+      "p_holm": 1.0159572531264077e-10
+    },
+    "rsd": {
+      "t": 14.514518003595999,
+      "p": 2.0702464718952877e-09,
+      "p_holm": 8.28098588758115e-09
+    },
+    "cpe": {
+      "t": 15.342269907078267,
+      "p": 1.0447817631390652e-09,
+      "p_holm": 5.223908815695326e-09
+    },
+    "score_ap": {
+      "t": 11.90834853958512,
+      "p": 2.290928694662251e-08,
+      "p_holm": 2.290928694662251e-08
+    },
+    "score_up": {
+      "t": 12.159514213190562,
+      "p": 1.7833568586796878e-08,
+      "p_holm": 3.5667137173593756e-08
+    },
+    "score_tam_total": {
+      "t": 12.366938848016847,
+      "p": 1.4549150967861066e-08,
+      "p_holm": 4.3647452903583195e-08
+    }
+  },
+  "descriptivos_postest": {
+    "t_reg": {
+      "media": 5.679285714285713,
+      "mediana": 5.68,
+      "delta_porcentual": -84.72430355427475
+    },
+    "t_vale": {
+      "media": 1.9192857142857143,
+      "mediana": 1.885,
+      "delta_porcentual": -89.46274509803922
+    },
+    "rsd": {
+      "media": 96.07142857142857,
+      "mediana": 97.5,
+      "delta_porcentual": 51.12359550561798
+    },
+    "cpe": {
+      "media": 94.57142857142857,
+      "mediana": 96.0,
+      "delta_porcentual": 39.662447257383974
+    },
+    "score_ap": {
+      "media": 18.642857142857142,
+      "mediana": 19.5,
+      "delta_porcentual": 130.97345132743362
+    },
+    "score_up": {
+      "media": 18.428571428571427,
+      "mediana": 19.0,
+      "delta_porcentual": 104.76190476190474
+    },
+    "score_tam_total": {
+      "media": 37.07142857142857,
+      "mediana": 38.0,
+      "delta_porcentual": 117.15481171548115
+    }
+  },
+  "generado": "2026-11-07",
+  "libro": "salidas/estadistica/TABLAS_ANEXOS_SIVAC.xlsx",
+  "discrepancias_docx_json": []
+}

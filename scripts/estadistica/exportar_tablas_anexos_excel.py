@@ -6,11 +6,16 @@ profesional, con diseño cromático institucional y una sección de salidas SPSS
 
 Uso (sin argumentos, idempotente):
 
-    C:/MisInvestigaciones/tesis/sivac/.venv/Scripts/python.exe ^
-        scripts/estadistica/exportar_tablas_anexos_excel.py
+    python scripts/estadistica/exportar_tablas_anexos_excel.py
+
+El libro no está atado a una versión del informe. Si no se indica
+`--fuente-docx`, se toma el `informe_final_vNN.docx` de mayor número y cada
+tabla se localiza por el rótulo `Tabla NN` que la precede en el cuerpo del
+documento, no por un índice fijo. Cuando el informe avance de versión, el
+libro se regenera con las tablas y la numeración vigentes.
 
 Entradas (solo lectura):
-    - salidas/documentos/informe_final_v04.docx          (tablas 35 a 54)
+    - salidas/documentos/informe_final_vNN.docx          (informe vigente)
     - salidas/estadistica/reporte_estadistico_completo.json
     - salidas/evidencias/base_de_datos/pretest_campo.csv
     - salidas/evidencias/base_de_datos/posttest_campo.csv
@@ -20,6 +25,7 @@ Entradas (solo lectura):
 
 Salida:
     - salidas/estadistica/TABLAS_ANEXOS_SIVAC.xlsx
+    - salidas/estadistica/paridad_TABLAS_ANEXOS_SIVAC.json  (control de paridad)
 
 Regla deontológica: ninguna cifra se inventa ni se recalcula por conveniencia.
 Los estadísticos provienen del JSON inferencial; las matrices de datos y los
@@ -29,8 +35,10 @@ sobre los CSV de campo y se declaran como derivadas en la hoja 11_NOTAS.
 
 from __future__ import annotations
 
+import argparse
 import json
 import math
+import re
 import sys
 from dataclasses import dataclass
 from functools import lru_cache
@@ -54,7 +62,7 @@ from scipy import stats as scipy_stats
 # ---------------------------------------------------------------------------
 RAIZ = Path(__file__).resolve().parents[2]
 
-DOCX_INFORME = RAIZ / "salidas" / "documentos" / "informe_final_v04.docx"
+DOCS = RAIZ / "salidas" / "documentos"
 JSON_ESTADISTICO = RAIZ / "salidas" / "estadistica" / "reporte_estadistico_completo.json"
 CSV_PRETEST = RAIZ / "salidas" / "evidencias" / "base_de_datos" / "pretest_campo.csv"
 CSV_POSTEST = RAIZ / "salidas" / "evidencias" / "base_de_datos" / "posttest_campo.csv"
@@ -62,6 +70,19 @@ JSON_CENTROS = RAIZ / "datos" / "schemas" / "centros_acopio_reales_sivac.json"
 JSON_CODEBOOK = RAIZ / "datos" / "schemas" / "codebook.json"
 JSON_ANEXOS = RAIZ / "salidas" / "documentos" / "anexos_instrumentos_validacion.json"
 XLSX_SALIDA = RAIZ / "salidas" / "estadistica" / "TABLAS_ANEXOS_SIVAC.xlsx"
+JSON_PARIDAD = RAIZ / "salidas" / "estadistica" / "paridad_TABLAS_ANEXOS_SIVAC.json"
+
+
+def informe_vigente(directorio: Path = DOCS) -> Path:
+    """Devuelve el `informe_final_vNN.docx` de mayor versión del directorio."""
+    versiones = []
+    for ruta in directorio.glob("informe_final_v*.docx"):
+        m = re.search(r"informe_final_v(\d+)\.docx$", ruta.name)
+        if m and not ruta.name.startswith("~$"):
+            versiones.append((int(m.group(1)), ruta))
+    if not versiones:
+        raise FileNotFoundError(f"No hay informe_final_vNN.docx en {directorio}")
+    return max(versiones)[1]
 
 # ---------------------------------------------------------------------------
 # Paleta institucional sobria
@@ -85,6 +106,11 @@ FMT_CIENTIFICO = "0.00E+00"
 
 CM = 1.0 / 2.54  # pulgadas por centímetro
 
+# Rutas tipográficas por plataforma: Windows primero y, si no existe el
+# archivo, la equivalente de métrica compatible que trae Linux (Liberation).
+# Se usan solo para medir el texto y dimensionar columnas; el libro conserva el
+# nombre de familia declarado en cada celda.
+_DIRECTORIOS_FUENTES = [Path("C:/Windows/Fonts"), Path("/usr/share/fonts/truetype")]
 _FUENTES = {
     ("Times New Roman", False, False): "C:/Windows/Fonts/times.ttf",
     ("Times New Roman", True, False): "C:/Windows/Fonts/timesbd.ttf",
@@ -97,16 +123,43 @@ _FUENTES = {
 }
 
 
+# Equivalentes de métrica compatible cuando la fuente de Windows no está.
+_SUSTITUTAS = {
+    ("Times New Roman", False, False): "liberation/LiberationSerif-Regular.ttf",
+    ("Times New Roman", True, False): "liberation/LiberationSerif-Bold.ttf",
+    ("Times New Roman", False, True): "liberation/LiberationSerif-Italic.ttf",
+    ("Times New Roman", True, True): "liberation/LiberationSerif-BoldItalic.ttf",
+    ("Calibri", False, False): "liberation/LiberationSans-Regular.ttf",
+    ("Calibri", True, False): "liberation/LiberationSans-Bold.ttf",
+    ("Calibri", False, True): "liberation/LiberationSans-Italic.ttf",
+    ("Calibri", True, True): "liberation/LiberationSans-BoldItalic.ttf",
+}
+
+
+@lru_cache(maxsize=96)
+def _rutas_fuente(familia: str, negrita: bool, cursiva: bool) -> tuple[Path, ...]:
+    clave = (familia or "Calibri", bool(negrita), bool(cursiva))
+    rutas = []
+    preferida = _FUENTES.get(clave)
+    if preferida:
+        rutas.append(Path(preferida))
+    sustituta = _SUSTITUTAS.get(clave)
+    if sustituta:
+        rutas.extend(directorio / sustituta for directorio in _DIRECTORIOS_FUENTES)
+    return tuple(rutas)
+
+
 @lru_cache(maxsize=96)
 def _medidor(familia: str, tam: float, negrita: bool, cursiva: bool):
     """Fuente TrueType a la resolución de pantalla (96 ppp) o None si no existe."""
-    ruta = _FUENTES.get((familia or "Calibri", bool(negrita), bool(cursiva)))
-    if not ruta or not Path(ruta).exists():
-        return None
-    try:
-        return ImageFont.truetype(ruta, max(6, int(round(tam * 96 / 72))))
-    except OSError:
-        return None
+    for ruta in _rutas_fuente(familia, negrita, cursiva):
+        if not ruta.exists():
+            continue
+        try:
+            return ImageFont.truetype(str(ruta), max(6, int(round(tam * 96 / 72))))
+        except OSError:
+            continue
+    return None
 
 
 def ancho_texto_px(texto: str, familia: str, tam: float, negrita: bool,
@@ -147,29 +200,46 @@ DIMENSIONES = {
     "score_tam_total": "D3: Satisfacción",
 }
 
-HOJAS = [
-    ("00_PORTADA", "Carátula, identificación del documento e índice navegable", "—"),
-    ("01_ANEXO1_MATRIZ", "Anexo 1. Matriz de consistencia metodológica (DEC-007)", "Tabla 44"),
-    ("02_ANEXO2_OPERAC", "Anexo 2. Matriz de operacionalización de las variables", "Tabla 45"),
-    ("03_ANEXO5_PRETEST", "Anexo 5. Matriz de datos tabulados del pretest (n = 14)", "Tabla 52"),
-    ("04_ANEXO5_POSTEST", "Anexo 5. Matriz de datos tabulados del postest (n = 14)", "Tabla 53"),
-    ("05_DESCRIPTIVOS", "Estadística descriptiva por indicador y por constructo",
-     "Tablas 36, 37 y 38"),
-    ("06_CONFIABILIDAD", "Confiabilidad de consistencia interna e intervalo de confianza",
-     "Tabla 35"),
-    ("07_NORMALIDAD", "Prueba de normalidad de Shapiro-Wilk sobre diferencias pareadas",
-     "Tabla 39"),
-    ("08_CONTRASTES", "Contrastes t de Student y Wilcoxon, efecto y ajuste Holm",
-     "Tablas 40, 41, 42 y 43"),
-    ("09_ANEXO6_TRAZABILIDAD", "Anexo 6. Trazabilidad de historias de usuario XP", "Tabla 54"),
-    ("10_SPSS_SALIDAS", "Salidas del visor SPSS: descriptivos y muestras relacionadas",
-     "Réplica SPSS"),
-    ("11_NOTAS", "Trazabilidad, convenciones y marcas [VERIFICAR]", "—"),
-]
+def construir_hojas() -> list[tuple[str, str, str]]:
+    """Índice navegable con los rótulos de tabla del informe vigente.
 
-# Hoja 05 y 08: tablas replicadas del documento
-# 01, 02 y 09 se imprimen en horizontal por densidad del texto, aunque tengan
-# siete columnas o menos; el criterio se declara en la hoja 11_NOTAS.
+    Los números no se escriben a mano: se leen del DOCX en cada generación, de
+    modo que el índice no puede quedar desfasado respecto del informe.
+    """
+    filas = [
+        ("00_PORTADA", "Carátula, identificación del documento e índice navegable", "—"),
+        ("01_ANEXO1_MATRIZ", "Anexo 1. Matriz de consistencia metodológica (DEC-007)",
+         numero_rol("consistencia")),
+        ("02_ANEXO2_OPERAC", "Anexo 2. Matriz de operacionalización de las variables",
+         numero_rol("operacionalizacion")),
+        ("03_ANEXO5_PRETEST", "Anexo 5. Matriz de datos tabulados del pretest (n = 14)",
+         numero_rol("matriz", 0)),
+        ("04_ANEXO5_POSTEST", "Anexo 5. Matriz de datos tabulados del postest (n = 14)",
+         numero_rol("matriz", 1)),
+        ("05_DESCRIPTIVOS", "Estadística descriptiva por indicador y por constructo",
+         f"{numero_rol('descriptivos', 0)}, {numero_rol('descriptivos', 1)} y "
+         f"{numero_rol('descriptivos', 2)}"),
+        ("06_CONFIABILIDAD", "Confiabilidad de consistencia interna e intervalo de confianza",
+         numero_rol("confiabilidad")),
+        ("07_NORMALIDAD", "Prueba de normalidad de Shapiro-Wilk sobre diferencias pareadas",
+         numero_rol("normalidad")),
+        ("08_CONTRASTES", "Contrastes t de Student y Wilcoxon, efecto y ajuste Holm",
+         f"{numero_rol('contrastes', 0)}, {numero_rol('contrastes', 1)}, "
+         f"{numero_rol('contrastes', 2)} y {numero_rol('resumen')}"),
+        ("09_ANEXO6_TRAZABILIDAD", "Anexo 6. Trazabilidad de historias de usuario XP",
+         numero_rol("hu")),
+        ("10_SPSS_SALIDAS", "Salidas del visor SPSS: descriptivos y muestras relacionadas",
+         "Réplica SPSS"),
+        ("11_NOTAS", "Trazabilidad, convenciones y marcas [VERIFICAR]", "—"),
+    ]
+    return filas
+
+
+HOJAS: list[tuple[str, str, str]] = []
+
+# Las hojas 01, 02, 03, 04 y 09 replican tablas del DOCX; 05 a 08 y 10 se
+# construyen desde el reporte estadístico. El criterio de orientación de
+# impresión se declara en la hoja 11_NOTAS.
 
 
 # ---------------------------------------------------------------------------
@@ -458,6 +528,126 @@ def leer_tabla_docx(documento, indice: int) -> list[list[str]]:
             for fila in tabla_docx.rows]
 
 
+def catalogo_tablas(documento) -> dict[int, int]:
+    """Mapa «número de rótulo» → índice OOXML de la tabla.
+
+    Recorre el cuerpo del documento en orden y asocia cada tabla con el último
+    rótulo ``Tabla NN`` que la precede. El índice de ``document.tables`` no
+    coincide con el número impreso cuando las tablas de anexo se intercalan,
+    de modo que el rótulo es la única referencia estable entre versiones.
+    """
+    from docx.oxml.ns import qn
+    from docx.text.paragraph import Paragraph
+
+    mapa: dict[int, int] = {}
+    pendiente: int | None = None
+    indice = 0
+    for hijo in documento.element.body.iterchildren():
+        if hijo.tag == qn("w:p"):
+            texto = _limpio(Paragraph(hijo, documento).text)
+            coincidencia = re.match(r"^Tabla\s+(\d+)\b", texto)
+            if coincidencia:
+                pendiente = int(coincidencia.group(1))
+        elif hijo.tag == qn("w:tbl"):
+            if pendiente is not None and pendiente not in mapa:
+                mapa[pendiente] = indice
+            pendiente = None
+            indice += 1
+    return mapa
+
+
+def _cabecera_docx(documento, indice: int) -> tuple[str, ...]:
+    return tuple(" ".join(celda_docx.text.split()).lower()
+                 for celda_docx in documento.tables[indice].rows[0].cells)
+
+
+def localizar_tablas(documento) -> dict[str, list[tuple[int, int]]]:
+    """Identifica por firma de encabezado las tablas que usa el libro.
+
+    Devuelve ``{rol: [(número_impreso, índice_docx), ...]}``. La firma manda
+    sobre la numeración: si el informe renumera sus tablas, el libro sigue
+    encontrándolas y adopta el rótulo vigente.
+    """
+    catalogo = catalogo_tablas(documento)
+    inverso: dict[int, int] = {}
+    for numero, indice in catalogo.items():
+        inverso.setdefault(indice, numero)
+
+    roles: dict[str, list[tuple[int, int]]] = {
+        "consistencia": [], "operacionalizacion": [], "matriz": [],
+        "hu": [], "confiabilidad": [], "normalidad": [], "contrastes": [],
+        "descriptivos": [], "resumen": [], "poblacion": [],
+    }
+    for indice in range(len(documento.tables)):
+        cab = _cabecera_docx(documento, indice)
+        if not cab:
+            continue
+        numero = inverso.get(indice, 0)
+        entrada = (numero, indice)
+        if cab[:2] == ("campo", "contenido"):
+            roles["consistencia"].append(entrada)
+        elif cab[:2] == ("variable", "definición operacional"):
+            roles["operacionalizacion"].append(entrada)
+        elif cab[0] == "sujeto":
+            roles["matriz"].append(entrada)
+        elif cab[0] == "código hu":
+            roles["hu"].append(entrada)
+        elif cab[:2] == ("momento de evaluación", "escala / subescala"):
+            roles["confiabilidad"].append(entrada)
+        elif cab[:3] == ("dimensión", "indicador", "w"):
+            roles["normalidad"].append(entrada)
+        elif cab[:2] == ("indicador", "prueba"):
+            roles["contrastes"].append(entrada)
+        elif cab[0] in ("indicador", "constructo / subescala") and cab[1] == "momento":
+            roles["descriptivos"].append(entrada)
+        elif cab[:2] == ("hipótesis", "dimensión"):
+            roles["resumen"].append(entrada)
+        elif cab[0].startswith("centro de acopio / dependencia"):
+            roles["poblacion"].append(entrada)
+
+    # La operacionalización aparece dos veces (marco teórico y anexo): vale la
+    # última, la del anexo. Las matrices van en pares pretest/postest.
+    if roles["operacionalizacion"]:
+        roles["operacionalizacion"] = [roles["operacionalizacion"][-1]]
+    faltantes = [rol for rol, valor in roles.items()
+                 if not valor and rol not in ("resumen", "poblacion")]
+    if faltantes:
+        raise LookupError("No se localizaron las tablas: " + ", ".join(faltantes))
+    return roles
+
+
+def _indice_tabla(numero: int) -> int:
+    indice = CATALOGO.get(int(numero))
+    if indice is None:
+        raise KeyError(f"El informe no rotula ninguna tabla como «Tabla {numero}»")
+    return indice
+
+
+# Estado del documento en curso: se resuelve en `main()` y lo consumen las
+# hojas, de modo que ninguna función dependa de índices fijos.
+DOCUMENTO = None
+CATALOGO: dict[int, int] = {}
+ROLES: dict[str, list[tuple[int, int]]] = {}
+NOMBRE_DOCX = ""
+
+
+def leer_tabla_rol(rol: str, posicion: int = 0) -> list[list[str]]:
+    entradas = ROLES.get(rol) or []
+    if not entradas:
+        raise KeyError(f"El informe no contiene una tabla con el rol «{rol}»")
+    _, indice = entradas[posicion]
+    return leer_tabla_docx(DOCUMENTO, indice)
+
+
+def numero_rol(rol: str, posicion: int = 0) -> str:
+    """Rótulo impreso («Tabla 46») de la tabla que ocupa un rol."""
+    entradas = ROLES.get(rol) or []
+    if not entradas:
+        return "Tabla —"
+    numero, _ = entradas[posicion]
+    return f"Tabla {numero}" if numero else "Tabla sin rótulo"
+
+
 def leer_json(ruta: Path):
     with ruta.open(encoding="utf-8") as fh:
         return json.load(fh)
@@ -535,7 +725,8 @@ def hoja_portada(wb, meta: dict):
         ("Escuela profesional", meta["escuela"]),
         ("Tesista", meta["tesista"]),
         ("Asesora", meta["asesora"]),
-        ("Documento fuente", "informe_final_v04.docx (59 tablas)"),
+        ("Documento fuente",
+         f"{meta['documento']} ({meta['n_tablas']} tablas)"),
         ("Fecha de generación", date.today().isoformat()),
         ("Población y muestra",
          f"Censal, N = n = {meta['n_censal']}; diseño preexperimental O1 - X - O2"),
@@ -602,14 +793,15 @@ def hoja_portada(wb, meta: dict):
     return ws
 
 
-def hoja_replica_tabla(wb, nombre: str, tabla_idx: int, numero: str, titulo: str,
-                       *, horizontal: bool, con_leyenda: bool = False):
+def hoja_replica_tabla(wb, nombre: str, rol: str, numero: str, titulo: str,
+                       *, horizontal: bool, con_leyenda: bool = False,
+                       posicion: int = 0):
     """Hoja que replica íntegramente una tabla del documento (Times New Roman)."""
     ws = wb.create_sheet(nombre)
     ws.sheet_properties.tabColor = AZUL_ACERO
     ws.sheet_view.showGridLines = False
 
-    filas = leer_tabla_docx(DOCUMENTO, tabla_idx)
+    filas = leer_tabla_rol(rol, posicion)
     encabezados, cuerpo = filas[0], filas[1:]
     ncols = len(encabezados)
 
@@ -623,7 +815,7 @@ def hoja_replica_tabla(wb, nombre: str, tabla_idx: int, numero: str, titulo: str
     r = tabla(ws, r, columnas, cuerpo, familia="Times New Roman", tam=10)
     r += 1
     r = nota_tabla(ws, r,
-                   "Nota. Transcripción íntegra de la tabla del informe final v04. "
+                   f"Nota. Transcripción íntegra de la {numero} de {NOMBRE_DOCX}. "
                    "Formato APA 7 de tres líneas horizontales, sin líneas verticales.",
                    ncols, "Times New Roman")
 
@@ -648,6 +840,30 @@ ETIQUETAS_MATRIZ = {
 }
 
 
+def _clave_columna_matriz(encabezado: str) -> str:
+    """Traduce el encabezado impreso del DOCX a la clave del codebook.
+
+    El informe rotula los reactivos como «AP» + salto de línea + «1»; también
+    admite la forma «AP-1» y los totales «AP total». Todo se reduce a ap_01,
+    score_ap, etc., para aplicar formato numérico y etiqueta legible.
+    """
+    limpio = " ".join(encabezado.split())
+    m = re.fullmatch(r"(AP|UP)[\s-]?(\d)", limpio, re.IGNORECASE)
+    if m:
+        return f"{m.group(1).lower()}_0{m.group(2)}"
+    m = re.fullmatch(r"(AP|UP)\s*total", limpio, re.IGNORECASE)
+    if m:
+        return "score_" + m.group(1).lower()
+    m = re.fullmatch(r"TAM\s*total", limpio, re.IGNORECASE)
+    if m:
+        return "score_tam_total"
+    if limpio.lower().startswith("nivel"):
+        return "nivel_satisfaccion"
+    return {"Sujeto": "sujeto_id", "Centro de acopio": "centro_acopio",
+            "T_reg (min)": "t_reg", "T_vale (min)": "t_vale",
+            "RSD (%)": "rsd", "CPE (%)": "cpe"}.get(limpio, limpio)
+
+
 def _etiqueta_columna(nombre: str) -> str:
     if nombre.startswith("ap_"):
         return "AP-" + nombre[3:]
@@ -656,19 +872,24 @@ def _etiqueta_columna(nombre: str) -> str:
     return ETIQUETAS_MATRIZ.get(nombre, nombre)
 
 
-def hoja_matriz_datos(wb, nombre: str, tabla_idx: int, numero: str, titulo: str):
+def hoja_matriz_datos(wb, nombre: str, rol: str, numero: str, titulo: str,
+                      posicion: int = 0):
     """Matriz de datos tabulados (18 columnas) con autofiltro y formato numérico."""
     ws = wb.create_sheet(nombre)
     ws.sheet_properties.tabColor = AZUL_ACERO
     ws.sheet_view.showGridLines = False
 
-    filas = leer_tabla_docx(DOCUMENTO, tabla_idx)
+    filas = leer_tabla_rol(rol, posicion)
     encabezados, cuerpo = filas[0], filas[1:]
     ncols = len(encabezados)
 
     r = rotulo_tabla(ws, 1, numero, titulo, ncols, "Calibri")
     r = leyenda_datos(ws, r, ncols, "Calibri")
     r += 1
+
+    # El DOCX rotula los reactivos en dos líneas («AP» / «1»); se normalizan a
+    # la clave del codebook para aplicar formato y etiqueta legible.
+    encabezados = [_clave_columna_matriz(e) for e in encabezados]
 
     formatos = {
         "t_reg": FMT_UNO, "t_vale": FMT_UNO, "rsd": FMT_UNO, "cpe": FMT_UNO,
@@ -698,7 +919,7 @@ def hoja_matriz_datos(wb, nombre: str, tabla_idx: int, numero: str, titulo: str)
     ws.auto_filter.ref = f"A{fila_encabezado}:{get_column_letter(ncols)}{r - 1}"
     r += 1
     r = nota_tabla(ws, r,
-                   "Nota. Matriz íntegra de la tabla del informe final v04; los "
+                   f"Nota. Matriz íntegra de la {numero} de {NOMBRE_DOCX}; los "
                    "encabezados se presentan con su etiqueta legible y no alteran el "
                    "contenido de las celdas. " + LEYENDA_DATOS + ". Unidad de análisis: "
                    "14 operadores de inmunizaciones.",
@@ -726,13 +947,13 @@ def hoja_descriptivos(wb, est: dict, forma: dict):
     r = leyenda_datos(ws, 1, ncols, "Times New Roman") + 1
 
     bloques = [
-        ("Tabla 36",
+        (numero_rol("descriptivos", 0),
          "Estadística descriptiva de los indicadores de oportunidad de procesamiento",
          ["t_reg", "t_vale"], FMT_EST),
-        ("Tabla 37",
+        (numero_rol("descriptivos", 1),
          "Estadística descriptiva de los indicadores de consistencia documental",
          ["rsd", "cpe"], FMT_PCT),
-        ("Tabla 38",
+        (numero_rol("descriptivos", 2),
          "Estadística descriptiva de los constructos de satisfacción del usuario",
          ["score_ap", "score_up", "score_tam_total"], FMT_EST),
     ]
@@ -790,7 +1011,7 @@ def hoja_confiabilidad(wb, est: dict):
     ws.sheet_properties.tabColor = AZUL_ACERO
     ws.sheet_view.showGridLines = False
 
-    r = rotulo_tabla(ws, 1, "Tabla 35",
+    r = rotulo_tabla(ws, 1, numero_rol("confiabilidad"),
                      "Confiabilidad de consistencia interna del Instrumento N.° 03 "
                      "(Modalidad A) con intervalo de confianza al 95 %", 8, "Times New Roman")
     r = leyenda_datos(ws, r, 8, "Times New Roman") + 1
@@ -842,7 +1063,7 @@ def hoja_normalidad(wb, est: dict):
         Columna("p-valor", FMT_EST), Columna("Decisión Distribucional"),
         Columna("Prueba Inferencial Asignada"),
     ]
-    r = rotulo_tabla(ws, 1, "Tabla 39",
+    r = rotulo_tabla(ws, 1, numero_rol("normalidad"),
                      "Prueba de normalidad de Shapiro-Wilk sobre las diferencias pareadas "
                      "(D = O2 - O1)", 8, "Times New Roman")
     r = leyenda_datos(ws, r, 8, "Times New Roman") + 1
@@ -895,11 +1116,14 @@ def hoja_contrastes(wb, est: dict):
         return filas
 
     bloques = [
-        ("Tabla 40", "Contraste de la Hipótesis Específica 1: oportunidad de procesamiento",
+        (numero_rol("contrastes", 0),
+         "Contraste de la Hipótesis Específica 1: oportunidad de procesamiento",
          ["t_reg", "t_vale"], "1"),
-        ("Tabla 41", "Contraste de la Hipótesis Específica 2: consistencia documental",
+        (numero_rol("contrastes", 1),
+         "Contraste de la Hipótesis Específica 2: consistencia documental",
          ["rsd", "cpe"], "2"),
-        ("Tabla 42", "Contraste de la Hipótesis Específica 3: satisfacción del usuario",
+        (numero_rol("contrastes", 2),
+         "Contraste de la Hipótesis Específica 3: satisfacción del usuario",
          ["score_ap", "score_up", "score_tam_total"], "3"),
     ]
 
@@ -932,45 +1156,32 @@ def hoja_contrastes(wb, est: dict):
                        9, "Times New Roman")
         r += 1
 
-    # La Tabla 43 abre su propia página para no fragmentar la nota de la Tabla 42.
+    # El cuadro de síntesis abre su propia página para no fragmentar la nota
+    # precedente. Su contenido se transcribe del DOCX: no se redacta de nuevo.
     ws.row_breaks.append(Break(id=r - 1))
-    r = rotulo_tabla(ws, r, "Tabla 43",
+    numero_resumen = numero_rol("resumen")
+    r = rotulo_tabla(ws, r, numero_resumen,
                      "Resumen de contrastación inferencial multivariada y regla de decisión "
                      "para la Hipótesis General (Holm-Bonferroni)", 8, "Times New Roman")
-    columnas = [
-        Columna("Hipótesis de Investigación"), Columna("Dimensión Asociada"),
-        Columna("Indicadores Clave"), Columna("Prueba Decisoria"),
-        Columna("p-valor Original"), Columna("p-valor Ajustado"),
-        Columna("Decisión Estadística"), Columna("Impacto Operativo"),
-    ]
-    filas_43 = [
-        ["Hipótesis Específica 1 (HE1)", "D1: Oportunidad de procesamiento",
-         "T_reg, T_vale", "t pareada / Wilcoxon", "< .001", "< .001", "Rechazar H0,1",
-         "Reducción > 80% en tiempos operativos"],
-        ["Hipótesis Específica 2 (HE2)", "D2: Consistencia documental", "RSD, CPE",
-         "t pareada / Wilcoxon", "< .001", "< .001", "Rechazar H0,2",
-         "Exactitud documental superior al 95%"],
-        ["Hipótesis Específica 3 (HE3)", "D3: Satisfacción del usuario",
-         "AP, UP, TAM total", "t pareada / Wilcoxon", "< .001", "< .001", "Rechazar H0,3",
-         "Incremento > 100% en aceptación y utilidad"],
-        ["Hipótesis General (HG)", "Gestión de movimientos de vacunas", "D1 + D2 + D3",
-         "Criterio conjuntivo", "< .001", "< .001", "Rechazar H0",
-         "Mejora integral multidimensional significativa"],
-    ]
+    filas_resumen = leer_tabla_rol("resumen")
+    encabezados_resumen, cuerpo_resumen = filas_resumen[0], filas_resumen[1:]
+    columnas_resumen = [Columna(e) for e in encabezados_resumen]
+    ncols_resumen = len(encabezados_resumen)
     cabecera = r
-    r = tabla(ws, r, columnas, filas_43, familia="Times New Roman", tam=10)
+    r = tabla(ws, r, columnas_resumen, cuerpo_resumen, familia="Times New Roman", tam=10)
     for f in range(cabecera + 1, r):
-        for k in (5, 6):
+        for k in range(1, ncols_resumen + 1):
             c = ws.cell(row=f, column=k)
             if isinstance(c.value, str) and c.value.startswith("<"):
                 c.font = Font(name=c.font.name, size=c.font.sz,
                               bold=c.font.b, italic=c.font.i, color=ROJO_P)
     r += 1
     r = nota_tabla(ws, r,
-                   "Nota. La Hipótesis General se contrasta mediante regla conjuntiva: el "
-                   "rechazo simultáneo de H0,1, H0,2 y H0,3 con p ajustado por Holm. Esta "
-                   "tabla conserva la expresión < .001 del documento fuente; los valores "
-                   "exactos figuran en las tablas 40 a 42.",
+                   f"Nota. Transcripción íntegra de la {numero_resumen} de {NOMBRE_DOCX}. "
+                   "La Hipótesis General se contrasta mediante regla conjuntiva: el rechazo "
+                   "simultáneo de H0,1, H0,2 y H0,3 con p ajustado por Holm. Las cifras que "
+                   f"allí figuran como < .001 tienen su valor exacto en "
+                   f"{numero_rol('contrastes', 0)} a {numero_rol('contrastes', 2)}.",
                    8, "Times New Roman")
 
     ajustar_anchos(ws, objetivo=140)
@@ -1187,7 +1398,7 @@ def hoja_notas(wb, notas: list[tuple[str, str, str, str]]):
     ws.auto_filter.ref = f"A{fila_encabezado}:E{r - 1}"
     r += 1
     r = nota_tabla(ws, r,
-                   "Nota. Toda celda numérica procede del informe final v04, del reporte "
+                   f"Nota. Toda celda numérica procede de {NOMBRE_DOCX}, del reporte "
                    "estadístico o de los CSV de campo. Las marcas [VERIFICAR] requieren "
                    "ratificación expresa del tesista antes del cierre de la compuerta QG-7.",
                    5, "Calibri")
@@ -1208,36 +1419,105 @@ def hoja_notas(wb, notas: list[tuple[str, str, str, str]]):
 # ---------------------------------------------------------------------------
 # Control de coherencia entre el DOCX y el JSON
 # ---------------------------------------------------------------------------
+def _numeros_de(texto: str) -> list[float]:
+    """Números con signo de una celda («t = −29.997» → [-29.997])."""
+    limpio = (texto.replace("\u2212", "-").replace("\u2013", "-")
+              .replace(",", "."))
+    # El DOCX omite el cero inicial en los p-valores (APA: «.978»).
+    return [float(x if not x.startswith(".") and not x.startswith("-.")
+                  else x.replace(".", "0.", 1))
+            for x in re.findall(r"-?(?:\d+(?:\.\d+)?|\.\d+)", limpio)]
+
+
+def _p_de(texto: str) -> tuple[str, float | None]:
+    """Interpreta una celda de p-valor: umbral («< .001») o valor exacto."""
+    limpio = texto.replace(",", ".").strip()
+    if limpio.startswith("<"):
+        try:
+            return "menor", float(limpio.lstrip("< ").replace(".0", "0.", 1)
+                                  if limpio.lstrip("< ").startswith(".0")
+                                  else limpio.lstrip("< "))
+        except ValueError:
+            return "menor", 0.001
+    numeros = _numeros_de(limpio)
+    return "exacto", numeros[0] if numeros else None
+
+
 def control_coherencia(est: dict, tablas_docx: dict) -> list[str]:
+    """Contrasta las cifras del reporte con las publicadas en el DOCX.
+
+    Lee el DOCX tal como está maquetado (rótulos «t = …», «d = …», «< .001»),
+    sin suponer posiciones de columna, de modo que un cambio de diseño de la
+    tabla no invalide la comprobación.
+    """
     discrepancias = []
 
-    def comparar(etiqueta: str, valor: float, texto_docx: str, decimales: int = 3):
-        esperado = f"{valor:.{decimales}f}"
-        if esperado.lstrip("-") not in texto_docx.replace(",", "."):
-            discrepancias.append(f"{etiqueta}: el valor {esperado} del JSON no figura en el DOCX")
-
+    filas_t = [f for f in tablas_docx["contrastes"]
+               if len(f) >= 5 and "t de student" in f[1].lower()]
     for clave, datos in est["contrastes_inferenciales"].items():
         etiqueta = next(i["docx"] for i in INDICADORES if i["clave"] == clave)
-        fila = next((f for f in tablas_docx["contrastes"]
-                     if f[0].startswith(etiqueta[:16])), None)
+        fila = next((f for f in filas_t if f[0].startswith(etiqueta[:22])), None)
         if fila is None:
-            discrepancias.append(f"{etiqueta}: no se localizó la fila en las tablas 40 a 42")
+            discrepancias.append(f"{etiqueta}: no se localizó la fila del contraste t")
             continue
-        comparar(f"t {clave}", datos["t_student"]["estadistico_t"], fila[2])
-        comparar(f"d {clave}", datos["t_student"]["d_cohen"], fila[5], decimales=2)
+        t_docx = _numeros_de(fila[2])
+        if not t_docx or abs(t_docx[0] - datos["t_student"]["estadistico_t"]) > 5e-4:
+            discrepancias.append(
+                f"t {clave}: DOCX {fila[2]!r} vs reporte "
+                f"{datos['t_student']['estadistico_t']:.3f}")
+        d_docx = _numeros_de(fila[4])
+        if not d_docx or abs(abs(d_docx[0]) - abs(datos["t_student"]["d_cohen"])) > 6e-3:
+            discrepancias.append(
+                f"d {clave}: DOCX {fila[4]!r} vs reporte "
+                f"{datos['t_student']['d_cohen']:.2f}")
+        tipo, valor = _p_de(fila[3])
+        p_json = float(datos["p_valor_adoptado"])
+        if tipo == "exacto" and valor is not None and abs(valor - p_json) > 5e-4:
+            discrepancias.append(f"p {clave}: DOCX {fila[3]!r} vs reporte {p_json:.2e}")
+        if tipo == "menor" and p_json >= (valor or 0.001):
+            discrepancias.append(
+                f"p {clave}: el DOCX declara p < {valor} pero el reporte da {p_json:.2e}")
 
+    def valores(filas: list[list[str]]) -> list[float]:
+        """Todos los números publicados en una tabla, sin importar su formato."""
+        return [x for fila in filas for celda in fila for x in _numeros_de(celda)]
+
+    def contiene(valores_tabla: list[float], objetivo: float, tol: float) -> bool:
+        return any(abs(v - objetivo) <= tol for v in valores_tabla)
+
+    alfas = valores(tablas_docx["confiabilidad"])
     for momento in ("pretest", "posttest"):
         for clave in ("global_tam", "agilidad_percibida", "utilidad_percibida"):
-            comparar(f"alfa {momento} {clave}",
-                     est["confiabilidad_instrumento_03"][momento][clave]["alpha"],
-                     tablas_docx["confiabilidad"])
+            alpha = float(est["confiabilidad_instrumento_03"][momento][clave]["alpha"])
+            if not contiene(alfas, alpha, 5e-4):
+                discrepancias.append(
+                    f"alfa {momento} {clave}: {alpha:.3f} no figura en la tabla de "
+                    "confiabilidad")
 
+    normales = valores(tablas_docx["normalidad"])
     for clave, datos in est["normalidad_shapiro_wilk"].items():
-        comparar(f"W {clave}", datos["estadistico_w"], tablas_docx["normalidad"])
-        if datos["p_valor"] >= 0.05:
-            comparar(f"p {clave}", datos["p_valor"], tablas_docx["normalidad"])
+        if not contiene(normales, float(datos["estadistico_w"]), 5e-4):
+            discrepancias.append(
+                f"W {clave}: {datos['estadistico_w']:.3f} no figura en la tabla de "
+                "normalidad")
+        if datos["p_valor"] >= 0.05 and not contiene(normales, float(datos["p_valor"]), 5e-4):
+            discrepancias.append(
+                f"p {clave}: {datos['p_valor']:.3f} no figura en la tabla de normalidad")
 
     return discrepancias
+
+
+def _centros_declarados() -> list[str]:
+    """Centros de acopio que declara la tabla de población del informe."""
+    if not (ROLES.get("poblacion")):
+        return []
+    centros = []
+    for fila in leer_tabla_rol("poblacion")[1:]:
+        nombre = fila[0].strip() if fila else ""
+        if not nombre or nombre.lower().startswith("total"):
+            continue
+        centros.append(nombre)
+    return centros
 
 
 def construir_notas(est: dict, pre: pd.DataFrame, centros: list, codebook: dict,
@@ -1245,10 +1525,12 @@ def construir_notas(est: dict, pre: pd.DataFrame, centros: list, codebook: dict,
     notas: list[tuple[str, str, str, str]] = []
 
     notas.append(("Global", "Fuente primaria de las tablas",
-                  "Las hojas 01, 02, 03, 04 y 09 transcriben íntegras las tablas 44, 45, "
-                  "52, 53 y 54 de informe_final_v04.docx. Las hojas 05 a 08 se construyen "
-                  "desde reporte_estadistico_completo.json y se contrastaron contra el DOCX.",
-                  "TRAZABLE"))
+                  f"Las hojas 01, 02, 03, 04 y 09 transcriben íntegras las "
+                  f"{numero_rol('consistencia')}, {numero_rol('operacionalizacion')}, "
+                  f"{numero_rol('matriz', 0)}, {numero_rol('matriz', 1)} y "
+                  f"{numero_rol('hu')} de {NOMBRE_DOCX}. Las hojas 05 a 08 y 10 se "
+                  "construyen desde reporte_estadistico_completo.json y se contrastaron "
+                  "contra el DOCX.", "TRAZABLE"))
     notas.append(("Global", "Estado de los datos",
                   LEYENDA_DATOS + ". Los valores empíricos no deben citarse como resultados "
                   "definitivos mientras el tesista no certifique el levantamiento real.",
@@ -1278,14 +1560,19 @@ def construir_notas(est: dict, pre: pd.DataFrame, centros: list, codebook: dict,
                   "Coeficientes e intervalos de confianza de Feldt tomados del reporte "
                   "estadístico; la etiqueta AP corresponde a la clave interna "
                   "agilidad_percibida del JSON.", "TRAZABLE"))
+    minimo = min(est["normalidad_shapiro_wilk"].items(),
+                 key=lambda par: par[1]["p_valor"])
+    etiqueta_min = next(i["docx"] for i in INDICADORES if i["clave"] == minimo[0])
     notas.append(("07_NORMALIDAD", "p-valores",
-                  "Los siete indicadores arrojan p > .05. El menor valor corresponde a UP "
-                  "(p = .052), próximo al umbral; se conserva la decisión normal del informe.",
+                  f"Los {len(est['normalidad_shapiro_wilk'])} indicadores arrojan p > .05. "
+                  f"El menor valor corresponde a {etiqueta_min} (p = "
+                  f"{minimo[1]['p_valor']:.3f}); se conserva la decisión normal del informe.",
                   "TRAZABLE"))
     notas.append(("08_CONTRASTES", "p-valores y notación científica",
-                  "Las tablas 40 a 42 muestran el valor exacto en notación científica cuando "
-                  "es menor que .001; el DOCX los redondea a .001 o los expresa como < .001. "
-                  "La tabla 43 conserva la expresión < .001 por ser un cuadro de síntesis.",
+                  f"{numero_rol('contrastes', 0)} a {numero_rol('contrastes', 2)} muestran el "
+                  "valor exacto en notación científica cuando es menor que .001; el DOCX los "
+                  "redondea a .001 o los expresa como < .001. "
+                  f"{numero_rol('resumen')} se transcribe tal cual, como cuadro de síntesis.",
                   "CONVENCIÓN"))
     notas.append(("08_CONTRASTES", "Estadístico de Wilcoxon",
                   "Se conserva la expresión compuesta W y Z del DOCX en una sola celda, por "
@@ -1295,8 +1582,10 @@ def construir_notas(est: dict, pre: pd.DataFrame, centros: list, codebook: dict,
                   "no reporta esta salida; se incorpora por exigencia de la réplica SPSS.",
                   "DERIVADO"))
     notas.append(("10_SPSS_SALIDAS", "Intervalo de confianza de la diferencia",
-                  "Calculado como media de la diferencia más menos t(0.975; 13) por el error "
-                  "estándar, con t crítico = 2.160369 y n = 14.", "DERIVADO"))
+                  "Calculado como media de la diferencia más menos t(0.975; n - 1) por el "
+                  f"error estándar, con t crítico = "
+                  f"{float(scipy_stats.t.ppf(0.975, int(est['metadatos']['n_censal']) - 1)):.6f} "
+                  f"y n = {est['metadatos']['n_censal']}.", "DERIVADO"))
     notas.append(("10_SPSS_SALIDAS", "Número de columnas",
                   "Los bloques se disponen en dos o tres columnas conforme al diseño "
                   "solicitado; la prueba de muestras relacionadas se presenta en formato "
@@ -1313,24 +1602,34 @@ def construir_notas(est: dict, pre: pd.DataFrame, centros: list, codebook: dict,
                   + (f"Sin coincidencia: {', '.join(fuera_catalogo)}." if fuera_catalogo
                      else "Todas las denominaciones coinciden con el catálogo real."),
                   "TRAZABLE" if not fuera_catalogo else "[VERIFICAR]"))
-    notas.append(("03/04", "Centros declarados en la tabla 30",
-                  "La tabla 30 del informe distribuye a los 14 operadores en 8 centros "
-                  "(Almacén Especializado, Andahuaylas, Talavera, San Jerónimo, Santa María "
-                  "de Chicmo, Huancarama, Chincheros y Uripa/Ocobamba), mientras las matrices "
-                  "52 y 53 registran 13 centros del catálogo real, entre ellos Huancaray, "
-                  "Turpo, Kishuara y Pampachiri. Se requiere conciliar la distribución.",
-                  "[VERIFICAR]"))
+    centros_tabla30 = _centros_declarados()
+    if centros_tabla30:
+        normaliza = lambda t: " ".join(t.lower().replace("ó", "o").split())
+        csv_norm = {normaliza(c) for c in centros_csv}
+        declarados_norm = {normaliza(c) for c in centros_tabla30}
+        coinciden = csv_norm == declarados_norm
+        notas.append(("03/04", "Centros declarados en la tabla de población",
+                      f"{numero_rol('poblacion')} del informe distribuye a los 14 operadores "
+                      f"en {len(centros_tabla30)} centros; las matrices "
+                      f"{numero_rol('matriz', 0)} y {numero_rol('matriz', 1)} registran "
+                      f"{len(centros_csv)} centros. "
+                      + ("Ambas listas coinciden, de modo que la distribución declarada y "
+                         "los datos levantados son consistentes."
+                         if coinciden else
+                         f"Diferencia: {', '.join(sorted(declarados_norm - csv_norm))[:200]}."),
+                      "TRAZABLE" if coinciden else "[VERIFICAR]"))
     notas.append(("01_ANEXO1_MATRIZ", "Prueba inferencial declarada",
                   "La matriz de consistencia declara Wilcoxon pareada y tamaño del efecto "
                   "r = |Z| / sqrt(N), mientras el Capítulo V adopta la t de Student pareada "
                   "por normalidad de las diferencias, complementada con Wilcoxon. Ambas "
                   "pruebas se reportan; se sugiere explicitar la jerarquía en la matriz.",
                   "[VERIFICAR]"))
+    codes_hu = [f[0] for f in leer_tabla_rol("hu")[1:] if f and f[0].startswith("HU-")]
     notas.append(("09_ANEXO6_TRAZABILIDAD", "Cobertura de historias de usuario",
-                  "La tabla 54 consigna cinco historias (HU-01, HU-04, HU-06, HU-09 y HU-12) "
-                  "de las 76 documentadas en la sección 3.3. Se transcribe sin alteración; "
-                  "corresponde declarar en el anexo que se trata de una selección "
-                  "representativa por iteración.", "[VERIFICAR]"))
+                  f"{numero_rol('hu')} consigna {len(codes_hu)} historias "
+                  f"({', '.join(codes_hu)}) de las 15 definidas en la sección 3.3 "
+                  "(HU-01 a HU-15): la matriz cubre la totalidad del product backlog, "
+                  "no una selección.", "TRAZABLE"))
 
     for columna in codebook.get("columnas", []):
         nombre = columna.get("nombre")
@@ -1367,18 +1666,66 @@ def construir_notas(est: dict, pre: pd.DataFrame, centros: list, codebook: dict,
 # ---------------------------------------------------------------------------
 # Orquestación
 # ---------------------------------------------------------------------------
-DOCUMENTO = None
+def paridad_libro(est: dict, pre: pd.DataFrame, post: pd.DataFrame) -> dict:
+    """Resumen verificable de lo que el libro contiene y de dónde procede."""
+    return {
+        "documento_fuente": NOMBRE_DOCX,
+        "tablas_docx_total": len(DOCUMENTO.tables),
+        "tablas_replicadas": {
+            "consistencia": numero_rol("consistencia"),
+            "operacionalizacion": numero_rol("operacionalizacion"),
+            "matriz_pretest": numero_rol("matriz", 0),
+            "matriz_postest": numero_rol("matriz", 1),
+            "historias_usuario": numero_rol("hu"),
+            "confiabilidad": numero_rol("confiabilidad"),
+            "normalidad": numero_rol("normalidad"),
+            "contrastes": [numero_rol("contrastes", i) for i in range(3)],
+            "resumen_hipotesis": numero_rol("resumen"),
+            "poblacion": numero_rol("poblacion"),
+        },
+        "hojas": [h[0] for h in HOJAS],
+        "n_registros": {"pretest": int(len(pre)), "posttest": int(len(post))},
+        "indicadores": [i["clave"] for i in INDICADORES],
+        "contrastes": {
+            clave: {
+                "t": datos["t_student"]["estadistico_t"],
+                "p": datos["p_valor_adoptado"],
+                "p_holm": datos["holm_bonferroni"]["p_ajustado"],
+            }
+            for clave, datos in est["contrastes_inferenciales"].items()
+        },
+        "descriptivos_postest": {
+            clave: {
+                "media": datos["posttest"]["media"],
+                "mediana": datos["posttest"]["mediana"],
+                "delta_porcentual": datos["delta_porcentual"],
+            }
+            for clave, datos in est["descriptivos"].items()
+        },
+        "generado": date.today().isoformat(),
+    }
 
 
-def main() -> int:
-    global DOCUMENTO
+def main(argv: list[str] | None = None) -> int:
+    global DOCUMENTO, CATALOGO, ROLES, NOMBRE_DOCX
 
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
 
-    faltantes = [ruta for ruta in (DOCX_INFORME, JSON_ESTADISTICO, CSV_PRETEST,
+    parser = argparse.ArgumentParser(
+        description="Exporta las tablas de los anexos del Informe Final SIVAC.")
+    parser.add_argument("--fuente-docx", type=Path, default=None,
+                        help="informe_final_vNN.docx de origen (por defecto, el vigente)")
+    parser.add_argument("--salida", type=Path, default=XLSX_SALIDA,
+                        help="libro Excel de destino")
+    parser.add_argument("--reporte-paridad", type=Path, default=JSON_PARIDAD,
+                        help="JSON con el resumen de paridad del libro")
+    args = parser.parse_args(argv)
+
+    ruta_docx = args.fuente_docx or informe_vigente()
+    faltantes = [ruta for ruta in (ruta_docx, JSON_ESTADISTICO, CSV_PRETEST,
                                    CSV_POSTEST, JSON_CENTROS, JSON_ANEXOS)
-                 if not ruta.exists()]
+                 if not Path(ruta).exists()]
     if faltantes:
         for ruta in faltantes:
             print(f"[ERROR] Falta la fuente: {ruta}")
@@ -1390,7 +1737,12 @@ def main() -> int:
     codebook = leer_json(JSON_CODEBOOK) if JSON_CODEBOOK.exists() else {"columnas": []}
     pre = pd.read_csv(CSV_PRETEST)
     post = pd.read_csv(CSV_POSTEST)
-    DOCUMENTO = Document(str(DOCX_INFORME))
+
+    DOCUMENTO = Document(str(ruta_docx))
+    NOMBRE_DOCX = Path(ruta_docx).name
+    CATALOGO = catalogo_tablas(DOCUMENTO)
+    ROLES = localizar_tablas(DOCUMENTO)
+    HOJAS[:] = construir_hojas()
 
     metadatos = est["metadatos"]
     meta = {
@@ -1402,16 +1754,17 @@ def main() -> int:
         "n_censal": metadatos["n_censal"],
         "estado_datos": metadatos["estado_datos"],
         "titulo": metadatos["tesis"],
+        "documento": NOMBRE_DOCX,
+        "n_tablas": len(DOCUMENTO.tables),
     }
 
     forma = derivar_forma(pre, post)
     correlaciones = derivar_correlaciones(pre, post)
 
     tablas_docx = {
-        "contrastes": (leer_tabla_docx(DOCUMENTO, 40) + leer_tabla_docx(DOCUMENTO, 41)
-                       + leer_tabla_docx(DOCUMENTO, 42)),
-        "confiabilidad": " ".join(" ".join(f) for f in leer_tabla_docx(DOCUMENTO, 35)),
-        "normalidad": " ".join(" ".join(f) for f in leer_tabla_docx(DOCUMENTO, 39)),
+        "contrastes": [fila for i in range(3) for fila in leer_tabla_rol("contrastes", i)],
+        "confiabilidad": leer_tabla_rol("confiabilidad"),
+        "normalidad": leer_tabla_rol("normalidad"),
     }
     discrepancias = control_coherencia(est, tablas_docx)
 
@@ -1421,35 +1774,53 @@ def main() -> int:
     wb.properties.subject = meta["titulo"]
     wb.properties.creator = "Squad D - Analista Estadístico | SIVAC-THESIS-LAB"
     wb.properties.keywords = "SIVAC; UNAJMA; APA 7; SPSS; DEC-007"
+    wb.properties.description = f"Tablas de anexo derivadas de {NOMBRE_DOCX}"
 
     hoja_portada(wb, meta)
-    hoja_replica_tabla(wb, "01_ANEXO1_MATRIZ", 44, "Tabla 44",
+    hoja_replica_tabla(wb, "01_ANEXO1_MATRIZ", "consistencia",
+                       numero_rol("consistencia"),
                        "Matriz de consistencia metodológica del estudio SIVAC",
                        horizontal=True)
-    hoja_replica_tabla(wb, "02_ANEXO2_OPERAC", 45, "Tabla 45",
+    hoja_replica_tabla(wb, "02_ANEXO2_OPERAC", "operacionalizacion",
+                       numero_rol("operacionalizacion"),
                        "Matriz de operacionalización de las variables de investigación",
                        horizontal=True)
-    hoja_matriz_datos(wb, "03_ANEXO5_PRETEST", 52, "Tabla 52",
-                      "Matriz de datos recolectados en el pretest (gestión manual basal, n = 14)")
-    hoja_matriz_datos(wb, "04_ANEXO5_POSTEST", 53, "Tabla 53",
-                      "Matriz de datos recolectados en el postest (operación con SIVAC, n = 14)")
+    hoja_matriz_datos(wb, "03_ANEXO5_PRETEST", "matriz", numero_rol("matriz", 0),
+                      "Matriz de datos recolectados en el pretest "
+                      "(gestión manual basal, n = 14)", posicion=0)
+    hoja_matriz_datos(wb, "04_ANEXO5_POSTEST", "matriz", numero_rol("matriz", 1),
+                      "Matriz de datos recolectados en el postest "
+                      "(operación con SIVAC, n = 14)", posicion=1)
     hoja_descriptivos(wb, est, forma)
     hoja_confiabilidad(wb, est)
     hoja_normalidad(wb, est)
     hoja_contrastes(wb, est)
-    hoja_replica_tabla(wb, "09_ANEXO6_TRAZABILIDAD", 54, "Tabla 54",
+    hoja_replica_tabla(wb, "09_ANEXO6_TRAZABILIDAD", "hu", numero_rol("hu"),
                        "Matriz de historias de usuario desarrolladas e implementadas en "
                        "SIVAC bajo Extreme Programming", horizontal=True)
     hoja_spss(wb, est, forma, correlaciones)
     notas = construir_notas(est, pre, centros, codebook, discrepancias, meta)
     hoja_notas(wb, notas)
 
-    XLSX_SALIDA.parent.mkdir(parents=True, exist_ok=True)
-    wb.save(XLSX_SALIDA)
+    salida = Path(args.salida)
+    salida.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(salida)
     wb.close()
 
-    print(f"Libro generado: {XLSX_SALIDA}")
-    print(f"Hojas: {len(wb.sheetnames)} -> {', '.join(HOJAS[i][0] for i in range(len(HOJAS)))}")
+    reporte = paridad_libro(est, pre, post)
+    reporte["libro"] = str(salida.relative_to(RAIZ)) if salida.is_relative_to(RAIZ) \
+        else str(salida)
+    reporte["discrepancias_docx_json"] = discrepancias
+    ruta_paridad = Path(args.reporte_paridad)
+    ruta_paridad.write_text(json.dumps(reporte, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8")
+
+    print(f"Libro generado: {salida}")
+    print(f"Fuente: {NOMBRE_DOCX} ({len(DOCUMENTO.tables)} tablas)")
+    print(f"Hojas: {len(wb.sheetnames)} -> {', '.join(h[0] for h in HOJAS)}")
+    print("Tablas replicadas: " + ", ".join(
+        f"{rol}={numero_rol(rol, 0)}" for rol in
+        ("consistencia", "operacionalizacion", "matriz", "hu")))
     print(f"Notas registradas: {len(notas)}")
     if discrepancias:
         print("Discrepancias DOCX-JSON registradas:")
@@ -1457,7 +1828,8 @@ def main() -> int:
             print(f"  - {texto}")
     else:
         print("Control de coherencia DOCX-JSON: sin discrepancias al tercer decimal.")
-    print(f"Tamaño: {XLSX_SALIDA.stat().st_size / 1024:.1f} KB")
+    print(f"Paridad: {ruta_paridad}")
+    print(f"Tamaño: {salida.stat().st_size / 1024:.1f} KB")
     return 0
 
 
