@@ -16,8 +16,14 @@ Fuera de `01_IMPRIMIBLES`:
 | 02_EDITABLES | Los cuatro documentos en DOCX, para corregir la maqueta |
 | 03_FUENTES | El compilador que genera el paquete |
 | 04_CONTROL_VISUAL | Una imagen por página, para revisar la maqueta sin abrir el PDF |
-| 05_GUIA | Guía de llenado y control de la sesión (7 páginas) |
+| 05_GUIA | Guía de llenado y control de la sesión (9 páginas) |
 | 07_CAPTURA | LIBRO_DE_CAPTURA_v22.xlsx: una fila por registro previsto, claves escritas y mediciones en blanco |
+
+El libro de captura no se consolida a mano: `scripts/estadistica/
+consolidar_libro_captura.py` lee sus cuatro hojas, recalcula la aritmética de
+cada ficha y escribe `datos/recolectados/pretest_campo.csv` y
+`posttest_campo.csv`. Sin `--escribir` solo audita y enumera lo que falta; con
+`--escribir` exige las veintiocho sesiones completas.
 
 La v21 no admitía el registro real: no tenía pausa ni motivo, unía documento y
 lote en una celda, no declaraba el tipo de asiento, no tenía columna de validez
