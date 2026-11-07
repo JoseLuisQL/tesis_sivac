@@ -39,7 +39,7 @@
       "bytes": 234738
     },
     "base_de_datos/README_DECLARACION_DEC007.md": {
-      "sha256": "509789d3b03d2421400672b105dc3623508e3efd01ec50dd2b14e3cabaefb977",
+      "sha256": "bb176c97925be87fd96badcbc22c4452e864c87904a550b0e5d5d423198a2707",
       "bytes": 4021
     },
     "tablas_resultados/reporte_estadistico_completo.json": {
@@ -67,8 +67,8 @@
       "bytes": 6092
     },
     "scripts_estadisticos/verificar_conjunto_datos.py": {
-      "sha256": "72fc76b6a75c88b450481923f92b8bb0a370308e68d09ba92fe608cd420ce172",
-      "bytes": 28020
+      "sha256": "012c1cb8f2e99ab8957041b16c3569fde00bfaf607b97dac55525e7837676f02",
+      "bytes": 39731
     },
     "scripts_estadisticos/consultar_db_sivac.py": {
       "sha256": "ad83ac4fa38319e07b8621c24bf47da6556e8417d8c9673424a61874b8d5756a",

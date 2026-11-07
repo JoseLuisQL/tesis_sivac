@@ -468,6 +468,36 @@
     "detalle": "14×18 frente a 14×18; 0 celdas distintas"
   },
   {
+    "bloque": "G. Estadística",
+    "comprobacion": "Reporte estadístico presente",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Descriptivos reproducidos desde los CSV",
+    "estado": "OK",
+    "detalle": "desviación máxima 0.00e+00"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Shapiro-Wilk sobre diferencias pareadas",
+    "estado": "OK",
+    "detalle": "desviación máxima en p 0.00e+00"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Estadísticos t pareados reproducidos",
+    "estado": "OK",
+    "detalle": "desviación máxima 0.00e+00"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Reporte rotulado como datos de prueba",
+    "estado": "OK",
+    "detalle": "DATOS DE PRUEBA – REEMPLAZAR (DEC-007)"
+  },
+  {
     "bloque": "H. Coherencia entre instrumentos",
     "comprobacion": "Instrumento 02: mismo sujeto, centro, fecha y responsable",
     "estado": "OK",
@@ -504,36 +534,6 @@
     "detalle": "0 fuera de ventana"
   },
   {
-    "bloque": "G. Estadística",
-    "comprobacion": "Reporte estadístico presente",
-    "estado": "OK",
-    "detalle": ""
-  },
-  {
-    "bloque": "G. Estadística",
-    "comprobacion": "Descriptivos reproducidos desde los CSV",
-    "estado": "OK",
-    "detalle": "desviación máxima 0.00e+00"
-  },
-  {
-    "bloque": "G. Estadística",
-    "comprobacion": "Shapiro-Wilk sobre diferencias pareadas",
-    "estado": "OK",
-    "detalle": "desviación máxima en p 0.00e+00"
-  },
-  {
-    "bloque": "G. Estadística",
-    "comprobacion": "Estadísticos t pareados reproducidos",
-    "estado": "OK",
-    "detalle": "desviación máxima 0.00e+00"
-  },
-  {
-    "bloque": "G. Estadística",
-    "comprobacion": "Reporte rotulado como datos de prueba",
-    "estado": "OK",
-    "detalle": "DATOS DE PRUEBA – REEMPLAZAR (DEC-007)"
-  },
-  {
     "bloque": "I. Evidencias",
     "comprobacion": "Registro de sincronización presente",
     "estado": "OK",
@@ -544,5 +544,65 @@
     "comprobacion": "Copias de evidencia con la huella registrada",
     "estado": "OK",
     "detalle": "22 archivos"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Informe final versionado presente",
+    "estado": "OK",
+    "detalle": "informe_final_v28.docx"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Alfas de Cronbach del informe coinciden con el reporte",
+    "estado": "OK",
+    "detalle": "6 escalas revisadas"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Descriptivos del informe coinciden con el reporte",
+    "estado": "OK",
+    "detalle": "21 filas"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Contrastes del informe coinciden con el reporte",
+    "estado": "OK",
+    "detalle": "14 filas"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Decisión por hipótesis consistente con Holm",
+    "estado": "OK",
+    "detalle": "HE1-HE3 revisadas"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Matrices pretest y postest del anexo presentes",
+    "estado": "OK",
+    "detalle": "2 matrices"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Matriz pretest del anexo igual a los CSV",
+    "estado": "OK",
+    "detalle": "14 sujetos"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Matriz postest del anexo igual a los CSV",
+    "estado": "OK",
+    "detalle": "14 sujetos"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "Figuras del informe son las figuras vigentes",
+    "estado": "OK",
+    "detalle": "3 figuras"
+  },
+  {
+    "bloque": "J. Informe final",
+    "comprobacion": "El informe advierte que son datos de prueba",
+    "estado": "OK",
+    "detalle": "informe=sí; reporte=DATOS DE PRUEBA – REEMPLAZAR (DEC-007)"
   }
 ]

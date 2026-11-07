@@ -3,7 +3,7 @@
 > Informe generado por `scripts/estadistica/verificar_conjunto_datos.py`.
 > No modifica datos: solo comprueba coherencia, recálculo y sincronía.
 
-**Resultado global:** 91 de 91 comprobaciones superadas
+**Resultado global:** 101 de 101 comprobaciones superadas
 
 ## Resumen por bloque
 
@@ -15,9 +15,10 @@
 | D. Despachos | 7 | 0 | OK |
 | E. Cuestionario TAM | 4 | 0 | OK |
 | F. Matriz analítica | 11 | 0 | OK |
-| H. Coherencia entre instrumentos | 6 | 0 | OK |
 | G. Estadística | 5 | 0 | OK |
+| H. Coherencia entre instrumentos | 6 | 0 | OK |
 | I. Evidencias | 2 | 0 | OK |
+| J. Informe final | 10 | 0 | OK |
 
 ## Detalle
 
@@ -101,16 +102,26 @@
 | F. Matriz analítica | Baremo de satisfacción aplicado | OK |  |
 | F. Matriz analítica | pretest_campo.csv idéntico a la matriz (Pretest) | OK | 14×18 frente a 14×18; 0 celdas distintas |
 | F. Matriz analítica | posttest_campo.csv idéntico a la matriz (Postest) | OK | 14×18 frente a 14×18; 0 celdas distintas |
+| G. Estadística | Reporte estadístico presente | OK |  |
+| G. Estadística | Descriptivos reproducidos desde los CSV | OK | desviación máxima 0.00e+00 |
+| G. Estadística | Shapiro-Wilk sobre diferencias pareadas | OK | desviación máxima en p 0.00e+00 |
+| G. Estadística | Estadísticos t pareados reproducidos | OK | desviación máxima 0.00e+00 |
+| G. Estadística | Reporte rotulado como datos de prueba | OK | DATOS DE PRUEBA – REEMPLAZAR (DEC-007) |
 | H. Coherencia entre instrumentos | Instrumento 02: mismo sujeto, centro, fecha y responsable | OK | 0 sesiones desalineadas |
 | H. Coherencia entre instrumentos | Instrumento 02 (despachos): mismo sujeto, centro, fecha y responsable | OK | 0 sesiones desalineadas |
 | H. Coherencia entre instrumentos | Instrumento 03: mismo sujeto, centro, fecha y responsable | OK | 0 sesiones desalineadas |
 | H. Coherencia entre instrumentos | Asientos anteriores a la sesión de auditoría | OK | 0 fuera de ventana |
 | H. Coherencia entre instrumentos | Ventana documental de 1 a 35 días | OK | rango 1–34 días |
 | H. Coherencia entre instrumentos | Despachos anteriores a la sesión de conciliación | OK | 0 fuera de ventana |
-| G. Estadística | Reporte estadístico presente | OK |  |
-| G. Estadística | Descriptivos reproducidos desde los CSV | OK | desviación máxima 0.00e+00 |
-| G. Estadística | Shapiro-Wilk sobre diferencias pareadas | OK | desviación máxima en p 0.00e+00 |
-| G. Estadística | Estadísticos t pareados reproducidos | OK | desviación máxima 0.00e+00 |
-| G. Estadística | Reporte rotulado como datos de prueba | OK | DATOS DE PRUEBA – REEMPLAZAR (DEC-007) |
 | I. Evidencias | Registro de sincronización presente | OK |  |
 | I. Evidencias | Copias de evidencia con la huella registrada | OK | 22 archivos |
+| J. Informe final | Informe final versionado presente | OK | informe_final_v28.docx |
+| J. Informe final | Alfas de Cronbach del informe coinciden con el reporte | OK | 6 escalas revisadas |
+| J. Informe final | Descriptivos del informe coinciden con el reporte | OK | 21 filas |
+| J. Informe final | Contrastes del informe coinciden con el reporte | OK | 14 filas |
+| J. Informe final | Decisión por hipótesis consistente con Holm | OK | HE1-HE3 revisadas |
+| J. Informe final | Matrices pretest y postest del anexo presentes | OK | 2 matrices |
+| J. Informe final | Matriz pretest del anexo igual a los CSV | OK | 14 sujetos |
+| J. Informe final | Matriz postest del anexo igual a los CSV | OK | 14 sujetos |
+| J. Informe final | Figuras del informe son las figuras vigentes | OK | 3 figuras |
+| J. Informe final | El informe advierte que son datos de prueba | OK | informe=sí; reporte=DATOS DE PRUEBA – REEMPLAZAR (DEC-007) |

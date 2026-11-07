@@ -16,7 +16,9 @@ D. Despachos: diferencia, concordancia y guía de remisión.
 E. Cuestionario TAM: reactivos, sumas y baremo.
 F. Matriz analítica: recálculo desde el crudo y paridad con los CSV de campo.
 G. Estadística: descriptivos, normalidad y contrastes frente al reporte.
-H. Evidencias: copias sincronizadas con su fuente.
+H. Coherencia entre instrumentos: fechas y ventanas de observación.
+I. Evidencias: copias sincronizadas con su fuente.
+J. Informe final: tablas y figuras del DOCX vigente frente al reporte y los CSV.
 
 Uso:
     python scripts/estadistica/verificar_conjunto_datos.py [--sin-estadistica]
@@ -28,6 +30,7 @@ import csv
 import hashlib
 import json
 import math
+import re
 import sys
 from collections import Counter
 from datetime import datetime
@@ -42,6 +45,8 @@ SINT = RAIZ / "datos" / "prueba_sintetica"
 RECO = RAIZ / "datos" / "recolectados"
 EST = RAIZ / "salidas" / "estadistica"
 EVID = RAIZ / "salidas" / "evidencias"
+DOCS = RAIZ / "salidas" / "documentos"
+FIG_EST = RAIZ / "salidas" / "figuras" / "estadistica"
 
 N_SESIONES = 28
 COLS = {
@@ -543,6 +548,251 @@ def bloque_i() -> None:
 
 
 # --------------------------------------------------------------------------
+# J. Informe final (DOCX vigente)
+# --------------------------------------------------------------------------
+
+MAPA_INDICADOR = (
+    ("T_reg", "t_reg"), ("T_vale", "t_vale"), ("RSD", "rsd"),
+    ("CPE", "cpe"), ("Puntaje global TAM", "score_tam_total"),
+    ("Aceptaci\u00f3n del proceso", "score_ap"),
+    ("Utilidad percibida", "score_up"),
+)
+
+
+def _limpia(texto: str) -> str:
+    return (texto.replace("\u2212", "-").replace("\u2013", "-")
+            .replace("\u00a0", " ").strip())
+
+
+def _num(texto: str) -> float:
+    return float(_limpia(texto).replace("%", "").replace(" ", ""))
+
+
+def _encabezado(tabla) -> list[str]:
+    return [" ".join(_limpia(c.text).split()) for c in tabla.rows[0].cells]
+
+
+def _informe_vigente() -> Path | None:
+    versiones = []
+    for ruta in DOCS.glob("informe_final_v*.docx"):
+        m = re.search(r"informe_final_v(\d+)\.docx$", ruta.name)
+        if m and not ruta.name.startswith("~$"):
+            versiones.append((int(m.group(1)), ruta))
+    return max(versiones)[1] if versiones else None
+
+
+def _indicador(clave: str) -> str | None:
+    for token, col in MAPA_INDICADOR:
+        if token in clave:
+            return col
+    return None
+
+
+def bloque_j() -> None:
+    try:
+        from docx import Document
+    except ImportError:  # pragma: no cover
+        check("J. Informe final", "python-docx disponible", False,
+              "instale python-docx para auditar el DOCX")
+        return
+
+    ruta = _informe_vigente()
+    check("J. Informe final", "Informe final versionado presente",
+          ruta is not None, ruta.name if ruta else "no hay informe_final_v*.docx")
+    if ruta is None:
+        return
+    doc = Document(str(ruta))
+    rep = json.loads((EST / "reporte_estadistico_completo.json")
+                     .read_text(encoding="utf-8"))
+    pre = pd.read_csv(RECO / "pretest_campo.csv")
+    post = pd.read_csv(RECO / "posttest_campo.csv")
+    tablas = doc.tables
+
+    # --- Confiabilidad (Tabla 35) -------------------------------------
+    alfa_malas = []
+    for t in tablas:
+        if _encabezado(t)[:2] != ["Momento de evaluación", "Escala / subescala"]:
+            continue
+        for fila in t.rows[1:]:
+            c = [_limpia(x.text) for x in fila.cells]
+            momento = "pretest" if c[0].lower().startswith("pretest") else "posttest"
+            escala = c[1].lower()
+            clave = ("global_tam" if "global" in escala else
+                     "agilidad_percibida" if "aceptaci" in escala else
+                     "utilidad_percibida")
+            esperado = rep["confiabilidad_instrumento_03"][momento][clave]
+            if c[4] != f"{esperado['alpha']:.3f}":
+                alfa_malas.append(f"{momento}/{clave}: {c[4]}")
+        break
+    check("J. Informe final", "Alfas de Cronbach del informe coinciden con el reporte",
+          not alfa_malas, ", ".join(alfa_malas[:3]) if alfa_malas else
+          "6 escalas revisadas")
+
+    # --- Descriptivos (Tablas 36-38) ----------------------------------
+    malos = []
+    filas_descriptivas = 0
+    for t in tablas:
+        enc = _encabezado(t)
+        if enc[1:6] != ["Momento", "Media", "DE", "Mediana", "RIC"]:
+            continue
+        for fila in t.rows[1:]:
+            c = [_limpia(x.text) for x in fila.cells]
+            col = _indicador(c[0])
+            if col is None:
+                continue
+            fase = ("pretest" if c[1].lower().startswith("pretest") else
+                    "posttest" if c[1].lower().startswith("postest") else
+                    "diferencia")
+            esperado = rep["descriptivos"][col][fase]
+            filas_descriptivas += 1
+            for etiqueta, valor in (("media", _num(c[2])),
+                                    ("desv_est", _num(c[3])),
+                                    ("mediana", _num(c[4])),
+                                    ("iqr", _num(c[5]))):
+                if abs(valor - float(esperado[etiqueta])) > 0.006:
+                    malos.append(f"{col}/{fase}/{etiqueta}: {valor} vs "
+                                 f"{esperado[etiqueta]:.4f}")
+            partes = re.split(r"\s+-\s+", c[6])
+            if len(partes) == 2:
+                for etiqueta, valor in (("minimo", _num(partes[0])),
+                                        ("maximo", _num(partes[1]))):
+                    if abs(valor - float(esperado[etiqueta])) > 0.006:
+                        malos.append(f"{col}/{fase}/{etiqueta}: {valor} vs "
+                                     f"{esperado[etiqueta]:.4f}")
+            else:
+                malos.append(f"{col}/{fase}/mín-máx ilegible: {c[6]}")
+            if fase == "posttest":
+                delta = float(rep["descriptivos"][col]["delta_porcentual"])
+                if abs(_num(c[7]) - delta) > 0.006:
+                    malos.append(f"{col}/delta: {c[7]} vs {delta:+.4f}")
+            elif c[7].lower() != "no aplica":
+                malos.append(f"{col}/{fase}/variación: {c[7]}")
+    check("J. Informe final", "Descriptivos del informe coinciden con el reporte",
+          not malos and filas_descriptivas >= 21,
+          ", ".join(malos[:3]) if malos else f"{filas_descriptivas} filas")
+
+    # --- Contrastes (Tablas 40-42) ------------------------------------
+    malos = []
+    filas_contraste = 0
+    for t in tablas:
+        enc = _encabezado(t)
+        if enc[:3] != ["Indicador", "Prueba", "Estadístico"]:
+            continue
+        for fila in t.rows[1:]:
+            c = [_limpia(x.text) for x in fila.cells]
+            col = _indicador(c[0])
+            if col is None:
+                continue
+            datos = rep["contrastes_inferenciales"][col]
+            filas_contraste += 1
+            if c[1].startswith("t de Student"):
+                t_val = _num(c[2].split("=")[1])
+                d_val = _num(c[4].split("=")[1].split("(")[0])
+                if abs(t_val - float(datos["t_student"]["estadistico_t"])) > 5e-4:
+                    malos.append(f"{col}/t: {t_val}")
+                if abs(d_val - float(datos["t_student"]["d_cohen"])) > 0.006:
+                    malos.append(f"{col}/d: {d_val}")
+            else:
+                z_val = _num(re.search(r"Z = (-?[\d.]+)", c[2]).group(1))
+                r_val = _num(c[4].split("=")[1].split("(")[0])
+                if abs(z_val - float(datos["wilcoxon"]["estadistico_z"])) > 5e-4:
+                    malos.append(f"{col}/Z: {z_val}")
+                if abs(r_val - float(datos["wilcoxon"]["r_rosenthal"])) > 5e-4:
+                    malos.append(f"{col}/r: {r_val}")
+            if c[6].lower().startswith("rechazar") != bool(datos["rechazo_h0"]):
+                malos.append(f"{col}/decisión: {c[6]}")
+    check("J. Informe final", "Contrastes del informe coinciden con el reporte",
+          not malos and filas_contraste >= 14,
+          ", ".join(malos[:3]) if malos else f"{filas_contraste} filas")
+
+    # --- Decisión por hipótesis (Tabla 43) ----------------------------
+    malos = []
+    for t in tablas:
+        if _encabezado(t)[:2] != ["Hipótesis", "Dimensión"]:
+            continue
+        for fila in t.rows[1:]:
+            c = [_limpia(x.text) for x in fila.cells]
+            m = re.match(r"Hipótesis Específica (\d)", c[0])
+            if not m:
+                continue
+            clave = f"HE{m.group(1)}"
+            decision = [k for k in rep["decision_hipotesis"] if k.startswith(clave)]
+            if not decision:
+                malos.append(f"{clave}: sin decisión en el reporte")
+                continue
+            d = rep["decision_hipotesis"][decision[0]]
+            # La Tabla 43 incluye el puntaje global TAM en la dimension D3,
+            # por lo que el p ajustado de HE3 es el maximo de los tres.
+            indicadores = list(d["indicadores"])
+            if "Satisfaccion" in decision[0]:
+                indicadores.append("score_tam_total")
+            p_orig = max(float(rep["contrastes_inferenciales"][i]["p_valor_adoptado"])
+                         for i in d["indicadores"])
+            p_adj = max(float(rep["contrastes_inferenciales"][i]
+                              ["holm_bonferroni"]["p_ajustado"])
+                        for i in indicadores)
+            if c[3] != f"{p_orig:.2e}" or c[4] != f"{p_adj:.2e}":
+                malos.append(f"{clave}: {c[3]}/{c[4]}")
+            if c[5].lower().startswith("rechazar") != bool(d["rechazo_h0"]):
+                malos.append(f"{clave}/decisión: {c[5]}")
+        break
+    check("J. Informe final", "Decisión por hipótesis consistente con Holm",
+          not malos, ", ".join(malos[:3]) if malos else "HE1-HE3 revisadas")
+
+    # --- Matrices del anexo (Tablas 46-47) -----------------------------
+    matrices = [t for t in tablas
+                if _encabezado(t)[0] == "Sujeto" and len(t.columns) >= 18]
+    check("J. Informe final", "Matrices pretest y postest del anexo presentes",
+          len(matrices) == 2, f"{len(matrices)} matrices")
+    for tabla, csv, etiqueta in zip(matrices, (pre, post), ("pretest", "postest")):
+        malas = []
+        filas = tabla.rows[1:]
+        if len(filas) != len(csv):
+            malas.append(f"{len(filas)} filas vs {len(csv)}")
+        for fila, (_, ref) in zip(filas, csv.iterrows()):
+            c = [_limpia(x.text) for x in fila.cells]
+            if c[0] != str(ref["sujeto_id"]):
+                malas.append(f"{c[0]} != {ref['sujeto_id']}")
+                continue
+            if c[1] != str(ref["centro_acopio"]):
+                malas.append(f"{c[0]}/centro")
+                continue
+            valores = [float(ref[k]) for k in
+                       ("t_reg", "t_vale", "rsd", "cpe",
+                        "ap_01", "ap_02", "ap_03", "ap_04",
+                        "up_01", "up_02", "up_03", "up_04",
+                        "score_ap", "score_up", "score_tam_total")]
+            for celda, valor in zip(c[2:17], valores):
+                if abs(_num(celda) - valor) > 1e-6:
+                    malas.append(f"{c[0]}: {celda} vs {valor}")
+            if c[17] != str(ref["nivel_satisfaccion"]):
+                malas.append(f"{c[0]}/nivel: {c[17]}")
+        check("J. Informe final", f"Matriz {etiqueta} del anexo igual a los CSV",
+              not malas, ", ".join(malas[:3]) if malas else f"{len(filas)} sujetos")
+
+    # --- Figuras estadísticas embebidas --------------------------------
+    huellas = set()
+    for rel in doc.part.rels.values():
+        if "image" in rel.reltype:
+            huellas.add(hashlib.sha256(rel.target_part.blob).hexdigest())
+    faltan = [p.name for p in sorted(FIG_EST.glob("*.png"))
+              if hashlib.sha256(p.read_bytes()).hexdigest() not in huellas]
+    check("J. Informe final", "Figuras del informe son las figuras vigentes",
+          not faltan, ", ".join(faltan) if faltan else
+          f"{len(list(FIG_EST.glob('*.png')))} figuras")
+
+    # --- Rotulación de datos de prueba ---------------------------------
+    texto = " ".join(p.text for p in doc.paragraphs).lower()
+    texto += " ".join(c.text for t in tablas for f in t.rows for c in f.cells).lower()
+    rotula = "datos de prueba" in texto
+    esperado = "PRUEBA" in rep["metadatos"]["estado_datos"].upper()
+    check("J. Informe final", "El informe advierte que son datos de prueba",
+          rotula == esperado,
+          f"informe={'sí' if rotula else 'no'}; "
+          f"reporte={rep['metadatos']['estado_datos']}")
+
+
+# --------------------------------------------------------------------------
 # Informe
 # --------------------------------------------------------------------------
 
@@ -563,10 +813,11 @@ def main(argv: list[str]) -> int:
         bloque_e(datos)
     if "matriz_analitica_pre_post.csv" in datos:
         bloque_f(datos)
+    bloque_g(args.sin_estadistica)
     if len(datos) == 5:
         bloque_h(datos)
-    bloque_g(args.sin_estadistica)
     bloque_i()
+    bloque_j()
 
     fallas = [c for c in CHECKS if c[2] != "OK"]
     por_bloque = Counter(c[0] for c in CHECKS)

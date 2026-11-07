@@ -12,8 +12,8 @@ Cuando el tesista disponga de las mediciones empíricas definitivas digitadas en
 1. Reemplace los valores en `pretest_campo.csv` y `posttest_campo.csv` (o actualice las hojas en `datos_recolectados_pre_post.xlsx`).
 2. Ejecute la cadena completa de procesamiento:
    ```bash
-   python scripts/estadistica/construir_registro_campo.py   # registro integral en Markdown
    python scripts/estadistica/analisis_estadistico_sivac.py  # tablas, contrastes y figuras
+   python scripts/estadistica/construir_registro_campo.py   # registro integral en Markdown
    python scripts/estadistica/sincronizar_evidencias.py      # copias de evidencia
    python scripts/estadistica/verificar_conjunto_datos.py    # auditoría (debe dar X/X)
    ```
