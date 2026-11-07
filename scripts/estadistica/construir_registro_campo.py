@@ -237,7 +237,7 @@ def parte_0(desc: dict) -> list[str]:
         nombre, dim, unidad = ETIQUETAS[c]
         if c in ("t_reg", "t_vale"):
             pre_t = f"{f2(desc[c]['pre'][0])} ± {f2(desc[c]['pre'][1])}"
-            post_t = f"{f3(desc[c]['post'][0])} ± {f3(desc[c]['post'][1])}"
+            post_t = f"{f2(desc[c]['post'][0])} ± {f2(desc[c]['post'][1])}"
             alcance = "14 operadores × 3 réplicas (84 mediciones)"
         elif c in ("rsd", "cpe"):
             pre_t = f"{f2(desc[c]['pre'][0])} ± {f2(desc[c]['pre'][1])}"
@@ -269,13 +269,16 @@ def parte_0(desc: dict) -> list[str]:
         filas.append([etiqueta, unidad_txt, pre_t, post_t, alcance])
 
     L = [
-        "El presente documento consolida el registro íntegro de mediciones "
-        "empíricas recolectadas en campo durante la evaluación del Sistema de "
-        "Información de Vacunas (SIVAC). El estudio comprende un diseño "
-        "cuasiexperimental de comparación pretest (proceso manual tradicional "
-        "en papel) y postest (proceso automatizado con SIVAC), administrado a "
-        "catorce unidades censales de operadores en trece centros de acopio y "
-        "establecimientos de salud de la red asistencial.",
+        "El presente documento consolida el registro íntegro de las mediciones "
+        "del estudio de evaluación del Sistema de Información de Vacunas "
+        "(SIVAC). El diseño es preexperimental, con pretest (proceso manual "
+        "tradicional en papel) y postest (proceso automatizado con SIVAC) en un "
+        "solo grupo, administrado a catorce unidades censales de operadores en "
+        "trece centros de acopio y establecimientos de salud de la red "
+        "asistencial. El conjunto publicado es el de prueba rotulado en el "
+        "encabezado: se reproduce desde las fichas crudas con la semilla "
+        "20261026 y se sustituye por el registro de campo definitivo sin "
+        "alterar la estructura ni las reglas de cálculo.",
         "",
         "### Resumen de parámetros operacionales del estudio",
         "",
@@ -324,9 +327,13 @@ def parte_0(desc: dict) -> list[str]:
         "las diferencias.",
         "7. **Control del error tipo I:** ajuste secuencial de Holm-Bonferroni "
         "sobre los siete contrastes de la familia.",
-        "8. **Precisión de registro cronométrico:** los tiempos de postest para "
-        "la emisión de vales (T_vale) se registraron en segundos enteros y se "
-        "expresan en minutos con precisión de tres cifras decimales.",
+        "8. **Precisión de registro:** las duraciones se expresan en minutos con "
+        "cuatro cifras decimales en la ficha cronométrica (Parte 3) y con dos "
+        "cifras decimales en la matriz analítica (Partes 0 y 6), que es la "
+        "precisión con la que el pipeline estadístico lee los datos.",
+        "9. **Diferencia de despacho (Dif.):** entregado menos programado. Un "
+        "valor negativo indica faltante y uno positivo, exceso entregado; la "
+        "entrega es concordante solo cuando la diferencia es cero.",
         "",
     ]
     return L
@@ -371,7 +378,9 @@ def parte_3() -> list[str]:
         "indicador pueda auditarse sin recurrir al archivo de datos. Las "
         "duraciones se expresan en minutos con cuatro decimales; en el postest "
         "de T_vale se añade entre paréntesis el equivalente en segundos "
-        "enteros.",
+        "enteros. La duración es neta: el intervalo entre la hora de inicio y "
+        "la de corte equivale a la duración más la pausa externa registrada, "
+        "de modo que ambas columnas cuadran en cada réplica.",
         "",
         "**Convenciones.** T1: ingreso de remesa con un biológico y lote único. "
         "T2: salida regular programada de dos a tres vacunas. T3: "
@@ -445,7 +454,9 @@ def parte_4() -> list[str]:
         "criterios. La tabla emplea S y N para abreviar Sí y No, y las columnas "
         "1 a 8 siguen el orden de los aspectos del instrumento. El motivo se "
         "codifica de M1 a M8 y se imprime solo cuando el documento no es "
-        "conforme.",
+        "conforme. En las entregas, Dif. es la cantidad entregada menos la "
+        "programada: el signo negativo señala faltante y el positivo, exceso; "
+        "la entrega es concordante solo cuando la diferencia es cero.",
         "",
         "**Convenciones.** ING: ingreso. SAL: salida. TRA: transferencia. DEV: "
         "devolución. AJU: ajuste. BCG, PENT, IPV, ROTA, NEUM, SPR, DTA, HEPB, "
@@ -494,7 +505,7 @@ def parte_4() -> list[str]:
             cuerpo = []
             for r in desp:
                 dif = int(r["diferencia"])
-                doc = r["documento"] if dif != 0 else "No aplica"
+                doc = r["documento"]
                 cuerpo.append([r["n"], r["fecha"], cod, r["biologico"],
                                r["programado"], r["entregado"], str(dif), doc,
                                "Sí" if dif == 0 else "No"])
@@ -583,9 +594,7 @@ def parte_6(pre: dict, post: dict) -> list[str]:
         filas = []
         for op, *_ in PADRON:
             r = datos[op]
-            filas.append([op, f"{float(r['t_reg']):.2f}",
-                          f"{float(r['t_vale']):.3f}".rstrip("0").rstrip(".")
-                          if float(r["t_vale"]) < 10 else f2(float(r["t_vale"]))]
+            filas.append([op, f2(float(r["t_reg"])), f2(float(r["t_vale"]))]
                          + [f2(float(r[c])) for c in
                             ("rsd", "cpe", "score_ap", "score_up",
                              "score_tam_total")])
@@ -926,7 +935,7 @@ def parte_8(pre: dict, post: dict, desc: dict, con: dict) -> list[str]:
         f"{f2(desc['t_reg']['post'][0])} min; T_vale redujo su duración en "
         f"{abs(desc['t_vale']['rel']):.1f} % "
         f"(aceleración de {float(desc['t_vale']['pre'][0]) / float(desc['t_vale']['post'][0]):.1f}×), "
-        f"de {f2(desc['t_vale']['pre'][0])} min a {f3(desc['t_vale']['post'][0])} "
+        f"de {f2(desc['t_vale']['pre'][0])} min a {f2(desc['t_vale']['post'][0])} "
         f"min ({desc['t_vale']['post'][0] * 60:.1f} segundos). El recorrido "
         f"conjunto de ambas operaciones cayó de {f2(arq_pre)} a {f2(arq_post)} "
         "minutos por jornada observada.",
@@ -950,7 +959,7 @@ def parte_8(pre: dict, post: dict, desc: dict, con: dict) -> list[str]:
         "operacional genuina entre los operadores durante el postest: T_reg "
         f"osciló entre {f2(desc['t_reg']['post'][5])} y "
         f"{f2(desc['t_reg']['post'][6])} minutos, y T_vale entre "
-        f"{f3(desc['t_vale']['post'][5])} y {f3(desc['t_vale']['post'][6])} "
+        f"{f2(desc['t_vale']['post'][5])} y {f2(desc['t_vale']['post'][6])} "
         f"minutos ({desc['t_vale']['post'][5] * 60:.0f} a "
         f"{desc['t_vale']['post'][6] * 60:.0f} segundos). El operador con mayor "
         f"duración en registro ({max_reg}) no coincidió con el de mayor duración "
@@ -1046,7 +1055,7 @@ def parte_8(pre: dict, post: dict, desc: dict, con: dict) -> list[str]:
          f"(amplitud: {desc['t_reg']['post'][6] - desc['t_reg']['post'][5]:.2f} min)",
          "Conforme"],
         ["Rango empírico postest (T_vale)", "Dispersión operativa observada",
-         f"{f3(desc['t_vale']['post'][5])} – {f3(desc['t_vale']['post'][6])} min "
+         f"{f2(desc['t_vale']['post'][5])} – {f2(desc['t_vale']['post'][6])} min "
          f"(amplitud: {desc['t_vale']['post'][6] - desc['t_vale']['post'][5]:.3f} min)",
          "Conforme"],
         ["Casos con diferencia pareada nula",
@@ -1066,7 +1075,7 @@ def parte_8(pre: dict, post: dict, desc: dict, con: dict) -> list[str]:
          f"{f2(desc['t_reg']['pre'][0])} min y {f2(desc['t_vale']['pre'][0])} min",
          "Conforme"],
         ["Parámetros descriptivos finales", "Medias de T_reg y T_vale en postest",
-         f"{f2(desc['t_reg']['post'][0])} min y {f3(desc['t_vale']['post'][0])} min",
+         f"{f2(desc['t_reg']['post'][0])} min y {f2(desc['t_vale']['post'][0])} min",
          "Conforme"],
         ["Supuesto de normalidad",
          "Pruebas de Shapiro-Wilk sobre diferencias (p > .05)",
@@ -1088,9 +1097,16 @@ def parte_8(pre: dict, post: dict, desc: dict, con: dict) -> list[str]:
 # Ensamblado
 # --------------------------------------------------------------------------
 
-CABECERA = """# CONJUNTO INTEGRAL DE DATOS DE CAMPO — SISTEMA SIVAC
+CABECERA = """# CONJUNTO INTEGRAL DE DATOS — SISTEMA SIVAC
 
-## Registro Empírico y Análisis Estadístico Pretest - Postest en Centros de Acopio de Vacunas
+## Registro pretest - postest y análisis estadístico en centros de acopio de vacunas
+
+> **Estado del conjunto:** `DATOS DE PRUEBA — REEMPLAZAR (DEC-007)`.
+> Las cifras de este documento se derivan del conjunto sintético reproducible de
+> `datos/prueba_sintetica/` (semilla 20261026) y **no acreditan medición de
+> campo**. La estructura, los identificadores y las reglas de cálculo son los
+> definitivos; los valores deben reemplazarse por el registro de campo antes de
+> la sustentación.
 
 ## Índice
 

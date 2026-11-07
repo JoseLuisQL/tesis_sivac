@@ -181,6 +181,44 @@ def codigo_centro(cod: str) -> str:
     return cod.replace("/", "").replace("-", "")
 
 
+def unicos_documentos(asientos: list[dict], despachos: list[dict]) -> None:
+    """Garantiza que un mismo folio no se repita dentro del registro de un
+    centro. Se aplica después de generar los bloques y no consume números
+    aleatorios, de modo que ninguna otra cifra del conjunto cambia. Un folio
+    repetido contradeciría los criterios de correlatividad (M8) y de guía de
+    remisión del propio instrumento."""
+
+    def reservar(filas: list[dict], campo: str) -> None:
+        usados: dict[str, set[str]] = {}
+        for fila in filas:
+            valor = fila[campo]
+            if not valor or valor == "Sin guía" or "No aplica" in valor:
+                continue
+            prefijo, _, numero = valor.rpartition("-")
+            if not numero.isdigit():
+                continue
+            vistos = usados.setdefault((fila["centro_acopio"], prefijo), set())
+            if valor in vistos:
+                nuevo = int(numero)
+                while True:
+                    nuevo += 1
+                    if nuevo > 9999:
+                        nuevo = 100
+                    candidato = f"{prefijo}-{nuevo:04d}"
+                    if candidato not in vistos:
+                        break
+                vistos.add(candidato)
+                fila[campo] = candidato
+                if campo == "documento" and "lote_documento" in fila \
+                        and fila["lote_documento"] == valor:
+                    fila["lote_documento"] = candidato
+            else:
+                vistos.add(valor)
+
+    reservar(asientos, "documento")
+    reservar(despachos, "documento")
+
+
 # Lotes de fabricante por biológico (5 por vacuna, vigentes en el periodo).
 def construir_lotes() -> dict[str, list[str]]:
     lotes: dict[str, list[str]] = {}
@@ -268,8 +306,11 @@ def generar_tiempos() -> tuple[list[dict], dict]:
 
             for idx, ((cod_t, tag, desc), dur) in enumerate(zip(TAREAS_REG, d_reg)):
                 ini = t
-                t = t + timedelta(seconds=dur)
+                # La pausa externa ocurre dentro de la ventana de observación:
+                # el cronómetro se detiene, de modo que la duración neta es
+                # (hora_corte - hora_inicio) - pausa_s.
                 pausa_s, motivo = pausa_de_campo(es_pre)
+                t = t + timedelta(seconds=dur + int(pausa_s or 0))
                 folio = folios_reg[idx]
                 filas.append({
                     "sujeto_id": op, "centro_acopio": centro, "momento": momento,
@@ -287,8 +328,8 @@ def generar_tiempos() -> tuple[list[dict], dict]:
             t += timedelta(seconds=gap_s)
             for idx, ((cod_t, tag, desc), dur) in enumerate(zip(TAREAS_VALE, d_vale)):
                 ini = t
-                t = t + timedelta(seconds=dur)
                 pausa_s, motivo = pausa_de_campo(es_pre)
+                t = t + timedelta(seconds=dur + int(pausa_s or 0))
                 vale = folios_vale[idx]
                 filas.append({
                     "sujeto_id": op, "centro_acopio": centro, "momento": momento,
@@ -434,7 +475,10 @@ def generar_documental() -> tuple[list[dict], list[dict], dict]:
 
             for k in range(40):
                 n = k + 1
-                f = periodo_ini + timedelta(days=int(round(span * k / 39)))
+                # La ventana va de `span` días antes de la sesión hasta el día
+                # previo: ningún asiento puede llevar la fecha de la propia
+                # sesión de auditoría.
+                f = periodo_ini + timedelta(days=int(round((span - 1) * k / 39)))
                 tipo = RND.choices(TIPOS_DOC, weights=[30, 34, 18, 10, 8])[0]
                 bio = RND.choice(BIOLOGICOS)
                 lote = RND.choice(LOTES[bio])
@@ -480,7 +524,8 @@ def generar_documental() -> tuple[list[dict], list[dict], dict]:
 
             for k in range(25):
                 n = k + 1
-                f = fecha_sesion - timedelta(days=RND.randint(0, 28))
+                # Un despacho se concilia al menos un día después de ocurrido.
+                f = fecha_sesion - timedelta(days=max(1, RND.randint(0, 28)))
                 bio = RND.choice(BIOLOGICOS)
                 prog = RND.choice([20, 30, 40, 50, 60, 80, 100, 120, 150, 180, 200])
                 guia = f"GR-{cc}-{RND.randint(1200, 9800):04d}"
@@ -729,8 +774,8 @@ def seccion_1(replicas, resumen) -> list[str]:
     L += ["Cada bloque reproduce una ficha completa: encabezado, las tres réplicas de "
           "registro (REG-01 a REG-03), las tres réplicas de emisión del vale (VALE-01 a "
           "VALE-03) y el cierre con el promedio del operador. `T_reg` y `T_vale` se "
-          "obtienen como diferencia entre la hora de corte y la hora de inicio, en minutos "
-          "con cuatro decimales.", ""]
+          "obtienen como diferencia entre la hora de corte y la hora de inicio, "
+          "descontada la pausa externa registrada, en minutos con cuatro decimales.", ""]
     L += ["**Convenciones de escenario.** T1 ingreso de lote; T2 salida o transferencia a la "
           "red; T3 redistribución; T4 vale simple para puesto de salud; T5 vale regular para "
           "centro de salud; T6 vale de reposición o contingencia. Las pausas por causas "
@@ -1141,6 +1186,7 @@ def construir_matriz(replicas, resumen_t, resumen_d, cuestionario) -> list[dict]
 def main() -> int:
     replicas, resumen_t = generar_tiempos()
     asientos, despachos, resumen_d = generar_documental()
+    unicos_documentos(asientos, despachos)
     cuestionario = generar_cuestionario()
     matriz = construir_matriz(replicas, resumen_t, resumen_d, cuestionario)
     stats = estadisticas([m for m in matriz])
@@ -1161,7 +1207,8 @@ def main() -> int:
     lineas += seccion_estadistica(stats)
 
     destino = SALIDA / "DATOS_SINTETICOS_SIVAC.md"
-    destino.write_text("\n".join(lineas) + "\n", encoding="utf-8")
+    texto = "\n".join(lineas) + "\n"
+    destino.write_text(texto, encoding="utf-8")
 
     control = {
         "semilla": SEMILLA,
@@ -1171,7 +1218,7 @@ def main() -> int:
         "archivos": tam,
         "documento": {"ruta": str(destino.relative_to(RAIZ)),
                       "bytes": destino.stat().st_size,
-                      "lineas": len(lineas)},
+                      "lineas": len(texto.splitlines())},
         "estadisticas": stats,
     }
     (SALIDA / "control_integridad.json").write_text(
