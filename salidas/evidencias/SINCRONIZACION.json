@@ -63,12 +63,16 @@
       "bytes": 7553
     },
     "scripts_estadisticos/sincronizar_evidencias.py": {
-      "sha256": "675a5b50a85157fed668264276d23a4a321ef8d775e58cc7aa9f48897c6ce309",
-      "bytes": 6092
+      "sha256": "183bdf3b33b9fffdae6d36c09f66504bad8eb19a767f5146fa0ea151df9f02fc",
+      "bytes": 6194
     },
     "scripts_estadisticos/verificar_conjunto_datos.py": {
-      "sha256": "2b510bee4d32d18f45eb1452455e829d92279f79407f1ce42796ec63f07b9534",
-      "bytes": 53079
+      "sha256": "3e74c60fdd7e92eb66c1f13b4d2ae505705b1b77123e0d90c482ef58d004c230",
+      "bytes": 63473
+    },
+    "scripts_estadisticos/inventario_datos.py": {
+      "sha256": "d80c729d14fbf352db0f69c6d8ccd689c273946d7c5c1261311959bff592698e",
+      "bytes": 4872
     },
     "scripts_estadisticos/consultar_db_sivac.py": {
       "sha256": "ad83ac4fa38319e07b8621c24bf47da6556e8417d8c9673424a61874b8d5756a",

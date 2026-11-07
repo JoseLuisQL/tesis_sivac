@@ -64,6 +64,8 @@ COPias = [
      SCRIPTS / "sincronizar_evidencias.py"),
     (RAIZ / "scripts" / "estadistica" / "verificar_conjunto_datos.py",
      SCRIPTS / "verificar_conjunto_datos.py"),
+    (RAIZ / "scripts" / "estadistica" / "inventario_datos.py",
+     SCRIPTS / "inventario_datos.py"),
     (RAIZ / "scripts" / "utilidades" / "consultar_db_sivac.py",
      SCRIPTS / "consultar_db_sivac.py"),
 ] + [

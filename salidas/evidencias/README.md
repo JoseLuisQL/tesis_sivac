@@ -21,7 +21,7 @@ Esta carpeta consolida todos los artefactos, bases de datos, instrumentos y cód
 - **`instrumento02_asientos.csv`:** 1 120 asientos auditados (14 × 2 × 40) del Instrumento 02.
 - **`instrumento02_despachos.csv`:** 700 despachos conciliados (14 × 2 × 25) del Instrumento 02.
 - **`instrumento03_reactivos.csv`:** 224 respuestas Likert (14 × 2 × 8) del Instrumento 03 (TAM).
-- **`matriz_analitica_pre_post.csv`:** Consolidado (28 × 24) por unidad y momento, con los siete indicadores.
+- **`matriz_analitica_pre_post.csv`:** Consolidado (28 × 19) por unidad y momento, con los siete indicadores.
 - **`control_integridad.json`:** Recuentos, llaves y huellas del conjunto primario.
 - **`SIVAC_DATOS_CAMPO.md`:** Registro integral de campo: fichas completas de los tres instrumentos, matrices de indicadores y Tablas 35–43.
 - **`README_DECLARACION_DEC007.md`:** Declaración metodológica formal que rotula el conjunto como `DATOS DE PRUEBA – REEMPLAZAR (DEC-007)` (copia de `datos/recolectados/README.md`).
@@ -45,7 +45,7 @@ Esta carpeta consolida todos los artefactos, bases de datos, instrumentos y cód
 - **`construir_registro_campo.py`:** Compone `SIVAC_DATOS_CAMPO.md` a partir de los CSV y del reporte estadístico.
 - **`consultar_db_sivac.py`:** Auditoría de solo lectura contra la base PostgreSQL de SIVAC para mapear centros de acopio y usuarios reales.
 
-Los tres últimos scripts más `exportar_libro_campo.py`, `sincronizar_evidencias.py` y `verificar_conjunto_datos.py` viven en `scripts/estadistica/`; las copias de evidencia conservan la versión ejecutada.
+Todos ellos viven en `scripts/estadistica/`, salvo `consultar_db_sivac.py`, que se mantiene en `scripts/utilidades/`. Las copias de esta carpeta conservan la versión ejecutada.
 
 ### `tablas_resultados/`
 - **`reporte_estadistico_completo.json`:** Resultados numéricos completos, valores $p$, estadísticos de contraste y decisiones de hipótesis exportados por el pipeline.
@@ -57,7 +57,7 @@ Los tres últimos scripts más `exportar_libro_campo.py`, `sincronizar_evidencia
 
 ### Archivos de control
 - **`SINCRONIZACION.json`:** Huellas SHA-256, tamaños y recuentos de cada copia de evidencia en el momento de la última sincronización.
-- **`../estadistica/AUDITORIA_DATOS.md` / `.json`:** 115 comprobaciones: estructura, recálculo, coherencia entre instrumentos, reproducibilidad estadística, sincronía de evidencias y paridad del informe final vigente (tablas 35-43, matrices del anexo y figuras embebidas) y paridad del libro de tablas de anexos (hojas, matrices, descriptivos, alfas, normalidad y contrastes).
+- **`../estadistica/AUDITORIA_DATOS.md` / `.json`:** 132 comprobaciones: estructura, recálculo, coherencia entre instrumentos, reproducibilidad estadística, sincronía de evidencias y paridad del informe final vigente (tablas 35-43, matrices del anexo y figuras embebidas) y paridad del libro de tablas de anexos (hojas, matrices, descriptivos, alfas, normalidad y contrastes) y orden de la capa de datos (mapa documental, inventario, integridad y estado de prueba).
 
 ---
 
@@ -67,10 +67,11 @@ Desde la raíz del proyecto y con el entorno virtual activo:
 
 ```bash
 python scripts/estadistica/generar_datos_sinteticos.py    # solo si se regenera el conjunto de prueba
+python scripts/estadistica/inventario_datos.py            # inventario de datos/ (huellas y formas)
 python scripts/estadistica/analisis_estadistico_sivac.py  # tablas, contrastes y figuras
 python scripts/estadistica/construir_registro_campo.py    # registro integral en Markdown
 python scripts/estadistica/sincronizar_evidencias.py      # copias y huellas de evidencia
-python scripts/estadistica/verificar_conjunto_datos.py    # auditoría: debe cerrar 115/115
+python scripts/estadistica/verificar_conjunto_datos.py    # auditoría: debe cerrar 132/132
 python scripts/estadistica/sincronizar_evidencias.py --verificar   # control sin escribir
 ```
 

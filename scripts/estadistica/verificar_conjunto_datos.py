@@ -21,6 +21,8 @@ I. Evidencias: copias sincronizadas con su fuente.
 J. Informe final: tablas y figuras del DOCX vigente frente al reporte y los CSV.
 K. Libro de anexos: hojas, matrices, descriptivos, alfas, normalidad y
    contrastes del XLSX frente al reporte, los CSV y el informe vigente.
+L. Capa de datos: mapa documental, inventario, control de integridad,
+   esquema compartido y estado de prueba del conjunto.
 
 Uso:
     python scripts/estadistica/verificar_conjunto_datos.py [--sin-estadistica]
@@ -1084,6 +1086,220 @@ def bloque_k() -> None:
 
 
 # --------------------------------------------------------------------------
+# L. Capa de datos: inventario, mapa documental y control de integridad
+# --------------------------------------------------------------------------
+
+DATOS = RAIZ / "datos"
+MAPA_DATOS = DATOS / "README.md"
+INVENTARIO = DATOS / "INVENTARIO.json"
+
+
+def _filas_mapa(texto: str) -> list[tuple[str, str]]:
+    """Extrae (ruta, forma) de la tabla de inventario (sección 2 del mapa)."""
+    inicio = texto.find("## 2. Inventario")
+    fin = texto.find("\n## 3.", inicio)
+    if inicio < 0:
+        return []
+    filas = []
+    for linea in texto[inicio:fin if fin > 0 else len(texto)].splitlines():
+        s = linea.strip()
+        if not s.startswith("| `"):
+            continue
+        celdas = [c.strip() for c in s.strip("|").split("|")]
+        if len(celdas) < 3:
+            continue
+        ruta = celdas[0].strip("`")
+        forma = re.fullmatch(r"(\d+)\s*×\s*(\d+)", celdas[2])
+        filas.append((ruta, f"{forma.group(1)},{forma.group(2)}"
+                      if forma else ""))
+    return filas
+
+
+def bloque_l() -> None:
+    BLOQUE = "L. Capa de datos"
+    check(BLOQUE, "Mapa de la capa de datos presente", MAPA_DATOS.exists(),
+          MAPA_DATOS.name if MAPA_DATOS.exists() else "falta datos/README.md")
+    if not MAPA_DATOS.exists():
+        return
+
+    texto = MAPA_DATOS.read_text(encoding="utf-8")
+    filas = _filas_mapa(texto)
+    declaradas = dict(filas)
+    check(BLOQUE, "El mapa no repite rutas", len(declaradas) == len(filas),
+          f"{len(filas)} filas, {len(declaradas)} rutas únicas")
+
+    # --- Cobertura: ningún dato fuera del mapa, ninguna ruta fantasma ---
+    excluidos = {MAPA_DATOS, INVENTARIO}
+    reales = sorted(
+        str(p.relative_to(DATOS)).replace("\\", "/")
+        for p in DATOS.rglob("*")
+        if p.is_file() and p not in excluidos
+        and not p.name.startswith(".")
+    )
+    sin_mapa = [r for r in reales if r not in declaradas]
+    check(BLOQUE, "Todos los archivos de datos están en el mapa",
+          not sin_mapa, ", ".join(sin_mapa[:4]) if sin_mapa else
+          f"{len(reales)} archivos")
+
+    fantasmas = [r for r in declaradas if not (DATOS / r).is_file()]
+    check(BLOQUE, "El mapa no declara archivos inexistentes",
+          not fantasmas, ", ".join(fantasmas[:4]) if fantasmas else
+          f"{len(declaradas)} rutas verificadas")
+
+    # --- Formas declaradas frente a los CSV reales ---------------------
+    malas = []
+    for ruta, forma in filas:
+        if not forma:
+            continue
+        ruta_abs = DATOS / ruta
+        if not ruta_abs.is_file():
+            continue
+        with ruta_abs.open(encoding="utf-8", newline="") as f:
+            matriz = list(csv.reader(f))
+        real = (f"{len(matriz) - 1 if matriz else 0},"
+                f"{len(matriz[0]) if matriz else 0}")
+        if real != forma:
+            malas.append(f"{ruta}: mapa {forma.replace(',', ' × ')} vs "
+                         f"real {real.replace(',', ' × ')}")
+    check(BLOQUE, "Las formas del mapa coinciden con los CSV",
+          not malas, ", ".join(malas[:3]) if malas else
+          f"{sum(1 for _, f in filas if f)} archivos con forma declarada")
+
+    # --- Inventario mecánico al día ------------------------------------
+    try:
+        import inventario_datos as inv
+        actual = json.dumps(inv.construir(), ensure_ascii=False,
+                            indent=2) + "\n"
+        guardado = (INVENTARIO.read_text(encoding="utf-8")
+                    if INVENTARIO.exists() else "")
+        check(BLOQUE, "INVENTARIO.json al día", actual == guardado,
+              "" if actual == guardado else
+              "reejecute scripts/estadistica/inventario_datos.py")
+        totales = inv.construir()["totales"]
+        check(BLOQUE, "El mapa cubre todas las capas del inventario",
+              all(f"{capa}/" in declaradas or any(
+                  r.startswith(f"{capa}/") for r in declaradas)
+                  for capa in inv.CAPAS if (DATOS / capa).is_dir()),
+              f"{totales['capas']} capas, {totales['archivos']} archivos")
+    except Exception as exc:  # pragma: no cover
+        check(BLOQUE, "Inventario verificable", False, str(exc)[:120])
+
+    # --- Control de integridad del conjunto sintético ------------------
+    control = SINT / "control_integridad.json"
+    control_ok = control.exists()
+    check(BLOQUE, "Control de integridad del conjunto sintético presente",
+          control_ok, control.name)
+    if control_ok:
+        meta = json.loads(control.read_text(encoding="utf-8"))
+        malos = []
+        for nombre, esperado in meta["archivos"].items():
+            ruta = SINT / nombre
+            if not ruta.exists():
+                malos.append(f"{nombre} (ausente)")
+            elif ruta.stat().st_size != esperado:
+                malos.append(f"{nombre} ({ruta.stat().st_size} vs {esperado} B)")
+        check(BLOQUE, "Tamaños de control coinciden con los CSV",
+              not malos, ", ".join(malos[:4]) if malos else
+              f"{len(meta['archivos'])} archivos")
+
+        doc = RAIZ / meta["documento"]["ruta"]
+        lineas_doc = (len(doc.read_text(encoding="utf-8").splitlines())
+                      if doc.exists() else -1)
+        check(BLOQUE, "El documento sintético coincide con su control",
+              doc.exists()
+              and doc.stat().st_size == meta["documento"]["bytes"]
+              and lineas_doc == meta["documento"]["lineas"],
+              f"{lineas_doc} líneas" if doc.exists() else "no existe")
+
+        recuentos = {
+            "pretest_sintetico.csv": len(pd.read_csv(SINT / "pretest_sintetico.csv")),
+            "posttest_sintetico.csv": len(pd.read_csv(SINT / "posttest_sintetico.csv")),
+            "instrumento01_replicas.csv": meta["filas"]["replicas"],
+            "instrumento02_asientos.csv": meta["filas"]["asientos"],
+            "instrumento02_despachos.csv": meta["filas"]["despachos"],
+            "instrumento03_reactivos.csv": meta["filas"]["cuestionario"],
+            "matriz_analitica_pre_post.csv": meta["filas"]["matriz"],
+        }
+        distintos = [
+            f"{nombre}: {len(pd.read_csv(SINT / nombre))} vs {esperado}"
+            for nombre, esperado in recuentos.items()
+            if len(pd.read_csv(SINT / nombre)) != esperado
+        ]
+        check(BLOQUE, "Recuentos de control coinciden con las filas reales",
+              not distintos, ", ".join(distintos[:3]) if distintos else
+              f"semilla {meta['semilla']}")
+
+    # --- Diccionario, plantilla y matriz comparten esquema -------------
+    codebook = json.loads((DATOS / "schemas" / "codebook.json")
+                          .read_text(encoding="utf-8"))
+    analiticas = [c["nombre"] for c in codebook["columnas"]]
+    plantilla = (DATOS / "plantillas" / "plantilla_campo_pretest_postest.csv"
+                 ).read_text(encoding="utf-8").splitlines()[0].split(",")
+    matriz_cols = list(pd.read_csv(SINT / "matriz_analitica_pre_post.csv")
+                       .columns)
+    derivadas = [c for c in matriz_cols if c not in analiticas]
+    check(BLOQUE, "Codebook, plantilla y matriz comparten esquema",
+          plantilla == analiticas and derivadas == ["centro_acopio", "momento"],
+          f"{len(analiticas)} variables; derivadas: {derivadas}")
+
+    # --- Catálogo de centros ------------------------------------------
+    centros = json.loads((DATOS / "schemas"
+                          / "centros_acopio_reales_sivac.json")
+                         .read_text(encoding="utf-8"))
+    nombres = [c["nombre"] for c in centros]
+    usados = sorted(pd.read_csv(SINT / "matriz_analitica_pre_post.csv")
+                    ["centro_acopio"].unique())
+    fuera = [c for c in usados if c not in nombres]
+    check(BLOQUE, "Los centros de la muestra están en el catálogo",
+          not fuera and len(nombres) == len(set(nombres)),
+          ", ".join(fuera[:3]) if fuera else
+          f"{len(usados)} de {len(nombres)} centros")
+
+    # --- Estado de prueba declarado en todo el frente documental -------
+    rotulos = {
+        "recolectados/README.md": (RECO / "README.md").read_text(encoding="utf-8"),
+        "recolectados/SIVAC_DATOS_CAMPO.md":
+            (RECO / "SIVAC_DATOS_CAMPO.md").read_text(encoding="utf-8")[:4000],
+        "../salidas/evidencias/README.md":
+            (EVID / "README.md").read_text(encoding="utf-8")[:4000],
+    }
+    sin_rotulo = [n for n, t in rotulos.items()
+                  if "DATOS DE PRUEBA" not in t.upper()]
+    check(BLOQUE, "La documentación rotula el conjunto como de prueba",
+          not sin_rotulo, ", ".join(sin_rotulo) if sin_rotulo else
+          f"{len(rotulos)} documentos")
+
+    # --- Regla Canónica 01: nada firmado por accidente -----------------
+    plantilla = json.loads((DATOS / "plantillas" / "MANIFEST.plantilla.json")
+                           .read_text(encoding="utf-8"))
+    vacia = (not plantilla.get("declaracion_tesista")
+             and not plantilla.get("firmado_por"))
+    check(BLOQUE, "La plantilla de manifiesto no viene firmada", vacia,
+          "" if vacia else "la plantilla trae declaración o firma cargada")
+
+    manifiesto = DATOS / "raw" / "MANIFEST.json"
+    en_prueba_manifiesto = "DATOS DE PRUEBA" in (RECO / "README.md").read_text(
+        encoding="utf-8").upper()
+    check(BLOQUE, "Sin manifiesto firmado el pipeline sigue bloqueado",
+          not manifiesto.exists() if en_prueba_manifiesto else True,
+          "no hay MANIFEST.json en datos/raw/" if not manifiesto.exists()
+          else "hay MANIFEST.json: debe validar con manifest_datos.py")
+
+    # --- Mientras sea de prueba, campo ≡ sintético ---------------------
+    en_prueba = "DATOS DE PRUEBA" in (RECO / "README.md").read_text(
+        encoding="utf-8").upper()
+    iguales = all(
+        (RECO / f"{m}_campo.csv").read_bytes()
+        == (SINT / f"{m}_sintetico.csv").read_bytes()
+        for m in ("pretest", "posttest"))
+    check(BLOQUE, "El conjunto de campo reproduce el sintético declarado",
+          iguales if en_prueba else True,
+          "idénticos byte a byte" if iguales else
+          ("diferencias con el sintético" if en_prueba else
+           "conjunto real: no se exige igualdad"))
+
+
+# --------------------------------------------------------------------------
 # Informe
 # --------------------------------------------------------------------------
 
@@ -1110,6 +1326,7 @@ def main(argv: list[str]) -> int:
     bloque_i()
     bloque_j()
     bloque_k()
+    bloque_l()
 
     fallas = [c for c in CHECKS if c[2] != "OK"]
     por_bloque = Counter(c[0] for c in CHECKS)

@@ -1,0 +1,148 @@
+{
+  "generado_por": "scripts/estadistica/inventario_datos.py",
+  "capa": "datos/",
+  "regla": "sin MANIFEST.json firmado en datos/raw/ el pipeline inferencial permanece bloqueado (Regla Canónica 01)",
+  "capas": {
+    "plantillas": {
+      "descripcion": "Formatos vacíos para la recolección en campo",
+      "archivos": {
+        "MANIFEST.plantilla.json": {
+          "bytes": 615,
+          "sha256": "97de172ce3934d89de1a1d53393daaae703e7de6150f5e9e1a4d833aa2c380bc"
+        },
+        "plantilla_campo_pretest_postest.csv": {
+          "bytes": 132,
+          "sha256": "171e76e82b5f03eb18954b3a448c0c743b22e93a73a356bb23a5a328e6e5fc92",
+          "filas": 0,
+          "columnas": 17
+        },
+        "plantilla_campo_pretest_postest.xlsx": {
+          "bytes": 2332,
+          "sha256": "6a2b1afa806422dbf4f17513b437ab9f7cd6b158b3dd0537da22355f7ed6830e"
+        },
+        "plantilla_juicio_expertos_fany2024.csv": {
+          "bytes": 27,
+          "sha256": "aac501c976f157f9eb790001a63cb57e63157f7c49820c68c68d74af10ab365e",
+          "filas": 0,
+          "columnas": 4
+        },
+        "plantilla_juicio_expertos_fany2024.xlsx": {
+          "bytes": 2844,
+          "sha256": "c396c721cadbbbcc623c155aad3395a2681c3494164e28f0952ab8db99a3397b"
+        }
+      }
+    },
+    "processed": {
+      "descripcion": "Matrices tabuladas limpias (destino tras el control de calidad)",
+      "archivos": {}
+    },
+    "prueba_sintetica": {
+      "descripcion": "Conjunto de prueba reproducible (semilla 20261026)",
+      "archivos": {
+        "DATOS_SINTETICOS_SIVAC.md": {
+          "bytes": 368373,
+          "sha256": "9d7b4680afd830ab64087387b3a0cbed316a202c6d7d52471d2a532f573c064b"
+        },
+        "control_integridad.json": {
+          "bytes": 8809,
+          "sha256": "d74a9389e75e58183d8698817fb68edc0867e8ab8f6ab1f2421410ceb7fb5d3e"
+        },
+        "instrumento01_replicas.csv": {
+          "bytes": 29147,
+          "sha256": "fd6c5d6f71419bace44b6f9e82ed708be306fa97e67519b953f87fe8cdb83d1c",
+          "filas": 168,
+          "columnas": 18
+        },
+        "instrumento02_asientos.csv": {
+          "bytes": 154202,
+          "sha256": "79344579f501ed95b30d8af60c3aedc10482a87bc3d2628176b0055a767a5bd2",
+          "filas": 1120,
+          "columnas": 24
+        },
+        "instrumento02_despachos.csv": {
+          "bytes": 106927,
+          "sha256": "6fb9a667448f9d62011fe53e7b084da1ad5a50504701ceaa23042f07091a7e0f",
+          "filas": 700,
+          "columnas": 14
+        },
+        "instrumento03_reactivos.csv": {
+          "bytes": 33347,
+          "sha256": "e7ab174a25177aa699efd133b23333243b0cf99d77b465d081b9698338a2ab90",
+          "filas": 224,
+          "columnas": 13
+        },
+        "matriz_analitica_pre_post.csv": {
+          "bytes": 2411,
+          "sha256": "5a5b7621f6ad791de939beef8ad89301ce912ba4d2fbd9b28ff4f17edc609351",
+          "filas": 28,
+          "columnas": 19
+        },
+        "posttest_sintetico.csv": {
+          "bytes": 1169,
+          "sha256": "9b47e2ac2c1daa95bd22b41bd2dacd35d95e84eb4a7d9232215df0f61a9045e5",
+          "filas": 14,
+          "columnas": 18
+        },
+        "pretest_sintetico.csv": {
+          "bytes": 1156,
+          "sha256": "b142b58585188249878289a0ce3fe25b1b9e753cdd415fe199fca52164d8a855",
+          "filas": 14,
+          "columnas": 18
+        }
+      }
+    },
+    "raw": {
+      "descripcion": "Datos de campo brutos e inmutables",
+      "archivos": {
+        "validacion_expertos_declaracion_20261021.json": {
+          "bytes": 1570,
+          "sha256": "d487ac3ebde6fb62135df343d7a03452dc06095f5324ac6097dca0456d4c676f"
+        }
+      }
+    },
+    "recolectados": {
+      "descripcion": "Conjunto consolidado que consume el pipeline estadístico",
+      "archivos": {
+        "SIVAC_DATOS_CAMPO.md": {
+          "bytes": 234738,
+          "sha256": "a30f680e2350b9c95a2bc19874fea7a5295ffaf9267d8f2b9c8bb3e965650b09"
+        },
+        "datos_recolectados_pre_post.xlsx": {
+          "bytes": 10845,
+          "sha256": "b151f3a6875881f93121eee501cfec902cb15f843d590dc32455cb4f555eeb94"
+        },
+        "posttest_campo.csv": {
+          "bytes": 1169,
+          "sha256": "9b47e2ac2c1daa95bd22b41bd2dacd35d95e84eb4a7d9232215df0f61a9045e5",
+          "filas": 14,
+          "columnas": 18
+        },
+        "pretest_campo.csv": {
+          "bytes": 1156,
+          "sha256": "b142b58585188249878289a0ce3fe25b1b9e753cdd415fe199fca52164d8a855",
+          "filas": 14,
+          "columnas": 18
+        }
+      }
+    },
+    "schemas": {
+      "descripcion": "Catálogos y diccionario de variables",
+      "archivos": {
+        "centros_acopio_reales_sivac.json": {
+          "bytes": 4155,
+          "sha256": "b3b5deed21438e2ca54e054f2f63b65a34213661f4e8e73ec9b1269a4010eb3a"
+        },
+        "codebook.json": {
+          "bytes": 4173,
+          "sha256": "9a5e42e562200a7e34fe00e79a66894d70642bca75545b3e5b98acd49c7f6994"
+        }
+      }
+    }
+  },
+  "archivos_sueltos_en_la_raiz": [],
+  "totales": {
+    "capas": 6,
+    "archivos": 21,
+    "csv": 11
+  }
+}

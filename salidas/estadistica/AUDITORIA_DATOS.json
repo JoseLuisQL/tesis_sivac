@@ -543,7 +543,7 @@
     "bloque": "I. Evidencias",
     "comprobacion": "Copias de evidencia con la huella registrada",
     "estado": "OK",
-    "detalle": "22 archivos"
+    "detalle": "23 archivos"
   },
   {
     "bloque": "J. Informe final",
@@ -688,5 +688,107 @@
     "comprobacion": "El libro rotula los datos como de prueba",
     "estado": "OK",
     "detalle": ""
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Mapa de la capa de datos presente",
+    "estado": "OK",
+    "detalle": "README.md"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "El mapa no repite rutas",
+    "estado": "OK",
+    "detalle": "24 filas, 24 rutas únicas"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Todos los archivos de datos están en el mapa",
+    "estado": "OK",
+    "detalle": "24 archivos"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "El mapa no declara archivos inexistentes",
+    "estado": "OK",
+    "detalle": "24 rutas verificadas"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Las formas del mapa coinciden con los CSV",
+    "estado": "OK",
+    "detalle": "11 archivos con forma declarada"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "INVENTARIO.json al día",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "El mapa cubre todas las capas del inventario",
+    "estado": "OK",
+    "detalle": "6 capas, 21 archivos"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Control de integridad del conjunto sintético presente",
+    "estado": "OK",
+    "detalle": "control_integridad.json"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Tamaños de control coinciden con los CSV",
+    "estado": "OK",
+    "detalle": "7 archivos"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "El documento sintético coincide con su control",
+    "estado": "OK",
+    "detalle": "4750 líneas"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Recuentos de control coinciden con las filas reales",
+    "estado": "OK",
+    "detalle": "semilla 20261026"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Codebook, plantilla y matriz comparten esquema",
+    "estado": "OK",
+    "detalle": "17 variables; derivadas: ['centro_acopio', 'momento']"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Los centros de la muestra están en el catálogo",
+    "estado": "OK",
+    "detalle": "13 de 19 centros"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "La documentación rotula el conjunto como de prueba",
+    "estado": "OK",
+    "detalle": "3 documentos"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "La plantilla de manifiesto no viene firmada",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "Sin manifiesto firmado el pipeline sigue bloqueado",
+    "estado": "OK",
+    "detalle": "no hay MANIFEST.json en datos/raw/"
+  },
+  {
+    "bloque": "L. Capa de datos",
+    "comprobacion": "El conjunto de campo reproduce el sintético declarado",
+    "estado": "OK",
+    "detalle": "idénticos byte a byte"
   }
 ]

@@ -3,7 +3,7 @@
 > Informe generado por `scripts/estadistica/verificar_conjunto_datos.py`.
 > No modifica datos: solo comprueba coherencia, recálculo y sincronía.
 
-**Resultado global:** 115 de 115 comprobaciones superadas
+**Resultado global:** 132 de 132 comprobaciones superadas
 
 ## Resumen por bloque
 
@@ -20,6 +20,7 @@
 | I. Evidencias | 2 | 0 | OK |
 | J. Informe final | 10 | 0 | OK |
 | K. Libro de anexos (XLSX) | 14 | 0 | OK |
+| L. Capa de datos | 17 | 0 | OK |
 
 ## Detalle
 
@@ -115,7 +116,7 @@
 | H. Coherencia entre instrumentos | Ventana documental de 1 a 35 días | OK | rango 1–34 días |
 | H. Coherencia entre instrumentos | Despachos anteriores a la sesión de conciliación | OK | 0 fuera de ventana |
 | I. Evidencias | Registro de sincronización presente | OK |  |
-| I. Evidencias | Copias de evidencia con la huella registrada | OK | 22 archivos |
+| I. Evidencias | Copias de evidencia con la huella registrada | OK | 23 archivos |
 | J. Informe final | Informe final versionado presente | OK | informe_final_v28.docx |
 | J. Informe final | Alfas de Cronbach del informe coinciden con el reporte | OK | 6 escalas revisadas |
 | J. Informe final | Descriptivos del informe coinciden con el reporte | OK | 21 filas |
@@ -140,3 +141,20 @@
 | K. Libro de anexos (XLSX) | Shapiro-Wilk del libro coincide con el reporte | OK | 7 indicadores |
 | K. Libro de anexos (XLSX) | Contrastes del libro coinciden con el reporte | OK | 7 t pareadas y 7 Wilcoxon |
 | K. Libro de anexos (XLSX) | El libro rotula los datos como de prueba | OK |  |
+| L. Capa de datos | Mapa de la capa de datos presente | OK | README.md |
+| L. Capa de datos | El mapa no repite rutas | OK | 24 filas, 24 rutas únicas |
+| L. Capa de datos | Todos los archivos de datos están en el mapa | OK | 24 archivos |
+| L. Capa de datos | El mapa no declara archivos inexistentes | OK | 24 rutas verificadas |
+| L. Capa de datos | Las formas del mapa coinciden con los CSV | OK | 11 archivos con forma declarada |
+| L. Capa de datos | INVENTARIO.json al día | OK |  |
+| L. Capa de datos | El mapa cubre todas las capas del inventario | OK | 6 capas, 21 archivos |
+| L. Capa de datos | Control de integridad del conjunto sintético presente | OK | control_integridad.json |
+| L. Capa de datos | Tamaños de control coinciden con los CSV | OK | 7 archivos |
+| L. Capa de datos | El documento sintético coincide con su control | OK | 4750 líneas |
+| L. Capa de datos | Recuentos de control coinciden con las filas reales | OK | semilla 20261026 |
+| L. Capa de datos | Codebook, plantilla y matriz comparten esquema | OK | 17 variables; derivadas: ['centro_acopio', 'momento'] |
+| L. Capa de datos | Los centros de la muestra están en el catálogo | OK | 13 de 19 centros |
+| L. Capa de datos | La documentación rotula el conjunto como de prueba | OK | 3 documentos |
+| L. Capa de datos | La plantilla de manifiesto no viene firmada | OK |  |
+| L. Capa de datos | Sin manifiesto firmado el pipeline sigue bloqueado | OK | no hay MANIFEST.json en datos/raw/ |
+| L. Capa de datos | El conjunto de campo reproduce el sintético declarado | OK | idénticos byte a byte |

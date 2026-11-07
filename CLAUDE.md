@@ -49,8 +49,12 @@ sivac/ (Espacio de Trabajo Principal)
 │   └── proyecto_base/                   # Proyecto de tesis original (PROYECTO_TESIS.docx)
 │
 ├── datos/                               # 📊 [CAPA 2: PIPELINE DE DATOS Y MEDICIÓN]
+│   ├── README.md                        # 🗺️ Mapa de la capa: capas, archivo canónico, inventario y formas
+│   ├── INVENTARIO.json                  # Huellas SHA-256, bytes y formas de cada archivo
 │   ├── raw/                             # Datos de campo brutos (inmutables una vez ingresados)
 │   ├── processed/                       # Datos tabulados limpios para contrastes estadísticos
+│   ├── recolectados/                    # Conjunto consolidado que consume el pipeline (fuente de la tesis)
+│   ├── prueba_sintetica/                # Conjunto determinista (semilla 20261026) que valida el pipeline
 │   ├── plantillas/                      # Formatos vacíos para recolección en campo
 │   └── schemas/                         # Codebooks y diccionarios de variables tabulares
 │
