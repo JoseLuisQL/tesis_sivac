@@ -28,6 +28,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import instrumentos_recoleccion_v22_builder as base  # noqa: E402
 
+sys.path.insert(0, str(RAIZ / "scripts" / "estadistica"))
+import generar_datos_sinteticos as G  # noqa: E402
+
 VERSION = "v22"
 BASE = RAIZ / "salidas" / "instrumentos" / ("INSTRUMENTOS_DEFINITIVOS_" + VERSION)
 DIR_GUIA = BASE / "05_GUIA"
@@ -435,7 +438,10 @@ def pagina_cierre(doc) -> None:
              "resume: las 168 réplicas, los 1 120 asientos, los 700 despachos y "
              "los 224 reactivos. Las columnas llevan el nombre del diccionario "
              "de variables, de modo que el consolidado se obtiene agrupando y "
-             "promediando, sin volver a teclear valores.")
+             "promediando, sin volver a teclear valores: el script "
+             "consolidar_libro_captura.py lee el libro y escribe los dos CSV "
+             "de datos/recolectados/; sin la opción --escribir solo enumera "
+             "lo que falta.")
 
     _parrafo(doc,
              "El libro es el archivo LIBRO_DE_CAPTURA_v22.xlsx de la carpeta "
@@ -518,11 +524,135 @@ def pagina_cierre(doc) -> None:
     ], [3.6, 7.6, 4.3], [0.44, 0.70, 0.58, 0.52], size=8.2, izq=(0, 1, 2))
 
     _parrafo(doc,
-             "Con esas decisiones tomadas y las hojas impresas, la campaña "
-             "puede comenzar: el paquete v22 admite el registro completo, la "
-             "aritmética de las tres fichas cierra en cada hoja y el "
-             "consolidado se regenera desde el libro de captura sin intervenir "
-             "los valores.")
+             "El orden de esos tres cuerpos no es un detalle de archivo: el "
+             "papel firmado se produce primero y no se reconstruye; el libro se "
+             "digita desde él y el consolidado se calcula desde el libro. "
+             "Cualquier intento de completar una hoja faltante con valores "
+             "tomados del libro o del consolidado invierte la cadena y deja un "
+             "documento que ya no acredita lo que dice acreditar.")
+
+
+
+DIAS = ("lun.", "mar.", "mié.", "jue.", "vie.", "sáb.", "dom.")
+
+
+def pagina_plan(doc) -> None:
+    _titulo(doc, "Plan de la campaña.",
+            "Las veintiocho sesiones, sus fechas y el control previo al tiraje")
+
+    _parrafo(doc,
+             "La campaña son veintiocho sesiones: catorce operadores, cada uno "
+             "observado antes del SIVAC y con el SIVAC. La fecha de cada sesión "
+             "no se decide al llenar la hoja: vive en el padrón, se escribe en "
+             "la casilla «Fecha» de las seis hojas del juego y se repite en cada "
+             "fila del libro de captura. Esta página es la lista de control de "
+             "esa agenda: sirve para entregar a cada observador su recorrido y "
+             "para verificar, al cerrar la campaña, que ninguna sesión quedó sin "
+             "fecha ni fuera de su centro.")
+
+    _parrafo(doc,
+             "Las fechas de la tabla son las del padrón vigente. Si la agenda "
+             "real cambia —un centro no está disponible, una réplica inválida "
+             "obliga a una segunda visita, la autorización se tramita por "
+             "establecimiento—, no se corrige la hoja a mano: se corrige el "
+             "padrón y se regeneran el libro y las hojas antes de imprimir. Una "
+             "hoja con una fecha que no está en el padrón rompe la trazabilidad "
+             "entre el papel, el libro de captura y el registro en Markdown.")
+
+    _interlinea1(doc, "10. Las veintiocho sesiones")
+
+    filas = [["Sesión", "Operador", "Centro de acopio", "Código", "Momento",
+              "Fecha", "Día", "Observador"]]
+    for n, (op, centro, cod, obs, pre, post) in enumerate(G.PADRON, 1):
+        for momento, fecha in (("Pretest", pre), ("Postest", post)):
+            sesion = 2 * n - 1 if momento == "Pretest" else 2 * n
+            filas.append([str(sesion), op, centro, cod, momento,
+                          fecha.strftime("%d/%m/%Y"),
+                          DIAS[fecha.weekday()], obs])
+
+    _cuadro(doc, filas, [1.2, 1.6, 3.7, 2.3, 1.7, 2.2, 1.1, 1.7],
+            [0.44] + [0.40] * 28, size=8.0, izq=(1, 2, 3))
+
+    base.nota(doc, "Pretest: proceso manual sobre papel, sin el sistema. "
+                   "Postest: operación con el SIVAC. En el padrón vigente el "
+                   "intervalo entre las dos fases de una misma unidad va de "
+                   "cuarenta y dos a sesenta y tres días; si el diseño declara "
+                   "un intervalo único, se iguala antes de imprimir. El "
+                   "observador OBS-01 cubre siete unidades y OBS-02 las otras "
+                   "siete.", antes=4)
+
+    _titulo(doc, "Plan de la campaña.",
+            "Qué se comprueba antes del tiraje", nueva=True)
+
+    _interlinea1(doc, "11. Antes de imprimir")
+
+    _parrafo(doc,
+             "La impresión se hace una sola vez por juego, así que la revisión "
+             "previa se hace sobre el PDF, no sobre el papel. Estas seis "
+             "comprobaciones son las que, cuando fallan, obligan a repetir el "
+             "tiraje completo.")
+
+    _cuadro(doc, [
+        ["✓", "Comprobación", "Cómo se verifica"],
+        ["", "Fechas de la agenda",
+         "Las 28 filas de la página anterior coinciden con el calendario real y "
+         "ninguna es anterior al día en que se imprime."],
+        ["", "Juego completo",
+         "Seis hojas por sesión: ficha de tiempos, dos hojas A, una hoja B, "
+         "cuestionario y observaciones. 168 en total, más un 10 % de reserva."],
+        ["", "Cartas de autorización",
+         "Una por centro de acopio (trece), firmada y sellada, con el nombre del "
+         "establecimiento tal como figura en el padrón."],
+        ["", "Quién firma",
+         "Observador, auditor y encuestador de cada centro, con nombre y cargo "
+         "anotados en la hoja de observaciones; ninguna hoja se firma en blanco."],
+        ["", "Códigos impresos",
+         "TRAB-01 a TRAB-14 y el código del centro en todas las hojas. Ningún "
+         "nombre propio ni número de documento en el papel."],
+        ["", "Escala y papel",
+         "A4 al 100 %, una cara, tinta legible. Ninguna hoja reducida: las "
+         "columnas de criterios y las casillas de pausa se salen del margen."],
+    ], [0.8, 3.6, 11.1], [0.44] + [0.72] * 6, size=8.2, izq=(1, 2))
+
+    _interlinea1(doc, "12. Si cambia una fecha o el padrón")
+
+    _parrafo(doc,
+             "Los datos de identificación viven en un solo lugar: la lista "
+             "PADRON de scripts/estadistica/generar_datos_sinteticos.py, líneas "
+             "53 a 68. Ese padrón alimenta el libro de captura, la tabla de "
+             "códigos de la sección 4, esta agenda y el registro en Markdown, de "
+             "modo que un cambio hecho ahí baja a todos los documentos a la vez y "
+             "no hay que corregir ninguno a mano.")
+
+    _cuadro(doc, [
+        ["Qué cambia", "Qué se reejecuta", "Qué se revisa"],
+        ["Fechas, observadores o centros",
+         "generar_datos_sinteticos.py, libro_captura_v22.py, "
+         "instrumentos_recoleccion_v22_builder.py, guia_campo_v22_builder.py, "
+         "construir_registro_campo.py",
+         "Que las 28 filas de la agenda sean las nuevas y que el libro conserve "
+         "168 réplicas, 1 120 asientos, 700 despachos y 224 reactivos."],
+        ["Texto o columnas de una hoja",
+         "instrumentos_recoleccion_v22_builder.py, guia_campo_v22_builder.py",
+         "El número de páginas del manifiesto y las imágenes de control visual."],
+        ["Solo el libro de captura",
+         "libro_captura_v22.py", "Que las hojas 01 a 03 conserven sus filas y "
+         "que las columnas crema sigan vacías."],
+    ], [3.9, 6.6, 5.0], [0.44, 1.00, 0.86, 0.72], size=8.0, izq=(0, 1, 2))
+
+    _parrafo(doc,
+             "Mientras el conjunto de datos siga marcado como DATOS DE PRUEBA "
+             "(DEC-007), regenerar el padrón mueve también las fechas del "
+             "archivo de datos y de los dos CSV consolidados; eso es lo "
+             "esperado. Cuando existan las hojas firmadas, la dirección se "
+             "invierte: se digita el libro, se corre consolidar_libro_captura.py "
+             "--escribir y el registro se reconstruye desde el papel.")
+    _parrafo(doc,
+             "Con esas decisiones tomadas, la agenda de la sección 10 "
+             "verificada y las hojas impresas, la campaña puede comenzar: el "
+             "paquete v22 admite el registro completo, la aritmética de las tres "
+             "fichas cierra en cada hoja y el consolidado se regenera desde el "
+             "libro de captura sin intervenir los valores.")
 
 
 def documento():
@@ -532,6 +662,7 @@ def documento():
     pagina_documental(doc)
     pagina_cuestionario(doc)
     pagina_cierre(doc)
+    pagina_plan(doc)
     return doc
 
 

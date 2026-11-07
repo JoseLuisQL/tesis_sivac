@@ -6,10 +6,10 @@
     "GUIA_DE_LLENADO": {
       "descripcion": "Guía de llenado y plan de impresión",
       "docx": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/05_GUIA/GUIA_DE_LLENADO_v22.docx",
-      "sha256_docx": "65d5bf42fd9c8f9c40242d47e7a2e6eeb42203ff8a95f3a73244b2c4b4d46f0d",
+      "sha256_docx": "e9c9b4d8f340f369485782f96a236d4353ef676f183ee991c06e26ee59621b81",
       "pdf": "salidas/instrumentos/INSTRUMENTOS_DEFINITIVOS_v22/05_GUIA/GUIA_DE_LLENADO_v22.pdf",
-      "paginas": 7,
-      "sha256_pdf": "3a635264a0d3cbaff834a5f08cddf8c874fe0b8de7dc199a653e7f7cdd24207a"
+      "paginas": 9,
+      "sha256_pdf": "027d45640d99be77c252a7d01131bab294421953fca5d1e826c6d34d62e124d4"
     }
   }
 }
