@@ -1,6 +1,13 @@
-# CONJUNTO INTEGRAL DE DATOS DE CAMPO — SISTEMA SIVAC
+# CONJUNTO INTEGRAL DE DATOS — SISTEMA SIVAC
 
-## Registro Empírico y Análisis Estadístico Pretest - Postest en Centros de Acopio de Vacunas
+## Registro pretest - postest y análisis estadístico en centros de acopio de vacunas
+
+> **Estado del conjunto:** `DATOS DE PRUEBA — REEMPLAZAR (DEC-007)`.
+> Las cifras de este documento se derivan del conjunto sintético reproducible de
+> `datos/prueba_sintetica/` (semilla 20261026) y **no acreditan medición de
+> campo**. La estructura, los identificadores y las reglas de cálculo son los
+> definitivos; los valores deben reemplazarse por el registro de campo antes de
+> la sustentación.
 
 ## Índice
 
@@ -19,15 +26,15 @@
 <a id="parte-0"></a>
 ## Parte 0. Presentación del conjunto de datos y consideraciones metodológicas
 
-El presente documento consolida el registro íntegro de mediciones empíricas recolectadas en campo durante la evaluación del Sistema de Información de Vacunas (SIVAC). El estudio comprende un diseño cuasiexperimental de comparación pretest (proceso manual tradicional en papel) y postest (proceso automatizado con SIVAC), administrado a catorce unidades censales de operadores en trece centros de acopio y establecimientos de salud de la red asistencial.
+El presente documento consolida el registro íntegro de las mediciones del estudio de evaluación del Sistema de Información de Vacunas (SIVAC). El diseño es preexperimental, con pretest (proceso manual tradicional en papel) y postest (proceso automatizado con SIVAC) en un solo grupo, administrado a catorce unidades censales de operadores en trece centros de acopio y establecimientos de salud de la red asistencial. El conjunto publicado es el de prueba rotulado en el encabezado: se reproduce desde las fichas crudas con la semilla 20261026 y se sustituye por el registro de campo definitivo sin alterar la estructura ni las reglas de cálculo.
 
 ### Resumen de parámetros operacionales del estudio
 
 | Dimensión / Indicador | Unidad de medida | Pretest (Proceso Manual) | Postest (Sistema SIVAC) | Alcance muestral |
 | :--- | :--- | :---: | :---: | :--- |
 | **D1. Oportunidad de procesamiento** |  |  |  |  |
-| Tiempo de registro de movimientos (T_reg) | Minutos (Media ± DE) | 37.18 ± 3.83 | 5.679 ± 0.469 | 14 operadores × 3 réplicas (84 mediciones) |
-| Tiempo de emisión de vales (T_vale) | Minutos (Media ± DE) | 18.21 ± 2.87 | 1.919 ± 0.189 | 14 operadores × 3 réplicas (84 mediciones) |
+| Tiempo de registro de movimientos (T_reg) | Minutos (Media ± DE) | 37.18 ± 3.83 | 5.68 ± 0.47 | 14 operadores × 3 réplicas (84 mediciones) |
+| Tiempo de emisión de vales (T_vale) | Minutos (Media ± DE) | 18.21 ± 2.87 | 1.92 ± 0.19 | 14 operadores × 3 réplicas (84 mediciones) |
 | **D2. Consistencia documental** |  |  |  |  |
 | Registros sin discrepancias (RSD) | Porcentaje (%) | 63.57 ± 6.77 | 96.07 ± 2.54 | 14 operadores × 40 expedientes (560 documentos) |
 | Concordancia programada vs. entregada (CPE) | Porcentaje (%) | 67.71 ± 6.92 | 94.57 ± 2.53 | 14 operadores × 25 expedientes (350 documentos) |
@@ -48,7 +55,8 @@ El presente documento consolida el registro íntegro de mediciones empíricas re
 5. **Criterio de contraste inferencial:** la prueba decisoria se selecciona según la normalidad de las diferencias pareadas ($D = \text{postest} - \text{pretest}$) evaluada con Shapiro-Wilk: t de Student pareada cuando $p > .05$ y Wilcoxon de rangos con signo cuando $p \le .05$.
 6. **Método de cálculo en Wilcoxon:** método exacto por permutación ante la ausencia de empates o diferencias nulas, y método asintótico con corrección por continuidad y empates cuando existen ligaduras en las diferencias.
 7. **Control del error tipo I:** ajuste secuencial de Holm-Bonferroni sobre los siete contrastes de la familia.
-8. **Precisión de registro cronométrico:** los tiempos de postest para la emisión de vales (T_vale) se registraron en segundos enteros y se expresan en minutos con precisión de tres cifras decimales.
+8. **Precisión de registro:** las duraciones se expresan en minutos con cuatro cifras decimales en la ficha cronométrica (Parte 3) y con dos cifras decimales en la matriz analítica (Partes 0 y 6), que es la precisión con la que el pipeline estadístico lee los datos.
+9. **Diferencia de despacho (Dif.):** entregado menos programado. Un valor negativo indica faltante y uno positivo, exceso entregado; la entrega es concordante solo cuando la diferencia es cero.
 
 ---
 
@@ -130,7 +138,7 @@ donde $a_j$ y $b_j$ toman valores enteros de 1 a 5. El baremo del puntaje global
 <a id="parte-3"></a>
 ## Parte 3. Instrumento 1 — Ficha de observación de tiempos
 
-El instrumento imprime las 168 réplicas del conjunto: seis por unidad y fase (tres de registro y tres de emisión del vale). Cada bloque cierra con la suma y la media de sus tres réplicas, de modo que el indicador pueda auditarse sin recurrir al archivo de datos. Las duraciones se expresan en minutos con cuatro decimales; en el postest de T_vale se añade entre paréntesis el equivalente en segundos enteros.
+El instrumento imprime las 168 réplicas del conjunto: seis por unidad y fase (tres de registro y tres de emisión del vale). Cada bloque cierra con la suma y la media de sus tres réplicas, de modo que el indicador pueda auditarse sin recurrir al archivo de datos. Las duraciones se expresan en minutos con cuatro decimales; en el postest de T_vale se añade entre paréntesis el equivalente en segundos enteros. La duración es neta: el intervalo entre la hora de inicio y la de corte equivale a la duración más la pausa externa registrada, de modo que ambas columnas cuadran en cada réplica.
 
 **Convenciones.** T1: ingreso de remesa con un biológico y lote único. T2: salida regular programada de dos a tres vacunas. T3: redistribución con cuatro a seis biológicos. T4: vale simple para puesto de salud 1-1 o 1-2. T5: vale regular para centro de salud 1-3 o 1-4. T6: vale de reposición urgente o contingencia. P1: atención en ventanilla. P2: llamada del establecimiento. P3: corte breve de energía. P4: verificación de existencias.
 
@@ -141,8 +149,8 @@ El instrumento imprime las 168 réplicas del conjunto: seis por unidad y fase (t
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:30:00 | 08:05:22 | 35.3667 | — | — | Sí |
-| REG-02 | T2 | 08:05:22 | 08:44:55 | 39.5500 | 90 | P3 | Sí |
-| REG-03 | T3 | 08:44:55 | 09:25:30 | 40.5833 | — | — | Sí |
+| REG-02 | T2 | 08:05:22 | 08:46:25 | 39.5500 | 90 | P3 | Sí |
+| REG-03 | T3 | 08:46:25 | 09:27:00 | 40.5833 | — | — | Sí |
 
 Cierre: 115.5000 min ÷ 3 = **38.5000 min**. Suma de las tres réplicas: 115.5000 min (6930 s).
 
@@ -150,9 +158,9 @@ Cierre: 115.5000 min ÷ 3 = **38.5000 min**. Suma de las tres réplicas: 115.500
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:28:19 | 09:45:11 | 16.8667 | 45 | P3 | Sí |
-| VALE-02 | T5 | 09:45:11 | 10:03:46 | 18.5833 | — | — | Sí |
-| VALE-03 | T6 | 10:03:46 | 10:23:49 | 20.0500 | 150 | P4 | Sí |
+| VALE-01 | T4 | 09:29:49 | 09:47:26 | 16.8667 | 45 | P3 | Sí |
+| VALE-02 | T5 | 09:47:26 | 10:06:01 | 18.5833 | — | — | Sí |
+| VALE-03 | T6 | 10:06:01 | 10:28:34 | 20.0500 | 150 | P4 | Sí |
 
 Cierre: 55.5000 min ÷ 3 = **18.5000 min**. Suma de las tres réplicas: 55.5000 min (3330 s).
 
@@ -188,9 +196,9 @@ Cierre: 6.3667 min ÷ 3 = **2.1222 min**. Suma de las tres réplicas: 6.3667 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:15:00 | 07:52:22 | 37.3667 | 45 | P3 | Sí |
-| REG-02 | T2 | 07:52:22 | 08:35:18 | 42.9333 | — | — | Sí |
-| REG-03 | T3 | 08:35:18 | 09:21:00 | 45.7000 | — | — | Sí |
+| REG-01 | T1 | 07:15:00 | 07:53:07 | 37.3667 | 45 | P3 | Sí |
+| REG-02 | T2 | 07:53:07 | 08:36:03 | 42.9333 | — | — | Sí |
+| REG-03 | T3 | 08:36:03 | 09:21:45 | 45.7000 | — | — | Sí |
 
 Cierre: 126.0000 min ÷ 3 = **42.0000 min**. Suma de las tres réplicas: 126.0000 min (7560 s).
 
@@ -198,9 +206,9 @@ Cierre: 126.0000 min ÷ 3 = **42.0000 min**. Suma de las tres réplicas: 126.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:24:44 | 09:45:21 | 20.6167 | — | — | Sí |
-| VALE-02 | T5 | 09:45:21 | 10:07:50 | 22.4833 | — | — | Sí |
-| VALE-03 | T6 | 10:07:50 | 10:30:44 | 22.9000 | 60 | P3 | Sí |
+| VALE-01 | T4 | 09:25:29 | 09:46:06 | 20.6167 | — | — | Sí |
+| VALE-02 | T5 | 09:46:06 | 10:08:35 | 22.4833 | — | — | Sí |
+| VALE-03 | T6 | 10:08:35 | 10:32:29 | 22.9000 | 60 | P3 | Sí |
 
 Cierre: 66.0000 min ÷ 3 = **22.0000 min**. Suma de las tres réplicas: 66.0000 min (3960 s).
 
@@ -214,7 +222,7 @@ Cierre: 66.0000 min ÷ 3 = **22.0000 min**. Suma de las tres réplicas: 66.0000 
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:50:00 | 07:55:16 | 5.2667 | — | — | Sí |
 | REG-02 | T2 | 07:55:16 | 08:01:06 | 5.8333 | — | — | Sí |
-| REG-03 | T3 | 08:01:06 | 08:07:11 | 6.0833 | 30 | P2 | Sí |
+| REG-03 | T3 | 08:01:06 | 08:07:41 | 6.0833 | 30 | P2 | Sí |
 
 Cierre: 17.1833 min ÷ 3 = **5.7278 min**. Suma de las tres réplicas: 17.1833 min (1031 s).
 
@@ -222,9 +230,9 @@ Cierre: 17.1833 min ÷ 3 = **5.7278 min**. Suma de las tres réplicas: 17.1833 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:08:40 | 08:10:28 | 1.8000 (108 s) | — | — | Sí |
-| VALE-02 | T5 | 08:10:28 | 08:12:12 | 1.7333 (104 s) | — | — | Sí |
-| VALE-03 | T6 | 08:12:12 | 08:14:09 | 1.9500 (117 s) | — | — | Sí |
+| VALE-01 | T4 | 08:09:10 | 08:10:58 | 1.8000 (108 s) | — | — | Sí |
+| VALE-02 | T5 | 08:10:58 | 08:12:42 | 1.7333 (104 s) | — | — | Sí |
+| VALE-03 | T6 | 08:12:42 | 08:14:39 | 1.9500 (117 s) | — | — | Sí |
 
 Cierre: 5.4833 min ÷ 3 = **1.8278 min**. Suma de las tres réplicas: 5.4833 min (329 s).
 
@@ -237,8 +245,8 @@ Cierre: 5.4833 min ÷ 3 = **1.8278 min**. Suma de las tres réplicas: 5.4833 min
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:45:00 | 08:15:41 | 30.6833 | — | — | Sí |
-| REG-02 | T2 | 08:15:41 | 08:51:17 | 35.6000 | 90 | P2 | Sí |
-| REG-03 | T3 | 08:51:17 | 09:30:00 | 38.7167 | — | — | Sí |
+| REG-02 | T2 | 08:15:41 | 08:52:47 | 35.6000 | 90 | P2 | Sí |
+| REG-03 | T3 | 08:52:47 | 09:31:30 | 38.7167 | — | — | Sí |
 
 Cierre: 105.0000 min ÷ 3 = **35.0000 min**. Suma de las tres réplicas: 105.0000 min (6300 s).
 
@@ -246,9 +254,9 @@ Cierre: 105.0000 min ÷ 3 = **35.0000 min**. Suma de las tres réplicas: 105.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:32:49 | 09:48:10 | 15.3500 | — | — | Sí |
-| VALE-02 | T5 | 09:48:10 | 10:04:05 | 15.9167 | — | — | Sí |
-| VALE-03 | T6 | 10:04:05 | 10:20:49 | 16.7333 | — | — | Sí |
+| VALE-01 | T4 | 09:34:19 | 09:49:40 | 15.3500 | — | — | Sí |
+| VALE-02 | T5 | 09:49:40 | 10:05:35 | 15.9167 | — | — | Sí |
+| VALE-03 | T6 | 10:05:35 | 10:22:19 | 16.7333 | — | — | Sí |
 
 Cierre: 48.0000 min ÷ 3 = **16.0000 min**. Suma de las tres réplicas: 48.0000 min (2880 s).
 
@@ -284,9 +292,9 @@ Cierre: 5.1667 min ÷ 3 = **1.7222 min**. Suma de las tres réplicas: 5.1667 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 08:00:00 | 08:31:02 | 31.0333 | 60 | P4 | Sí |
-| REG-02 | T2 | 08:31:02 | 09:05:12 | 34.1667 | — | — | Sí |
-| REG-03 | T3 | 09:05:12 | 09:40:30 | 35.3000 | 60 | P4 | Sí |
+| REG-01 | T1 | 08:00:00 | 08:32:02 | 31.0333 | 60 | P4 | Sí |
+| REG-02 | T2 | 08:32:02 | 09:06:12 | 34.1667 | — | — | Sí |
+| REG-03 | T3 | 09:06:12 | 09:42:30 | 35.3000 | 60 | P4 | Sí |
 
 Cierre: 100.5000 min ÷ 3 = **33.5000 min**. Suma de las tres réplicas: 100.5000 min (6030 s).
 
@@ -294,9 +302,9 @@ Cierre: 100.5000 min ÷ 3 = **33.5000 min**. Suma de las tres réplicas: 100.500
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:45:50 | 09:59:43 | 13.8833 | — | — | Sí |
-| VALE-02 | T5 | 09:59:43 | 10:14:28 | 14.7500 | 150 | P2 | Sí |
-| VALE-03 | T6 | 10:14:28 | 10:30:50 | 16.3667 | 120 | P4 | Sí |
+| VALE-01 | T4 | 09:47:50 | 10:01:43 | 13.8833 | — | — | Sí |
+| VALE-02 | T5 | 10:01:43 | 10:18:58 | 14.7500 | 150 | P2 | Sí |
+| VALE-03 | T6 | 10:18:58 | 10:37:20 | 16.3667 | 120 | P4 | Sí |
 
 Cierre: 45.0000 min ÷ 3 = **15.0000 min**. Suma de las tres réplicas: 45.0000 min (2700 s).
 
@@ -310,7 +318,7 @@ Cierre: 45.0000 min ÷ 3 = **15.0000 min**. Suma de las tres réplicas: 45.0000 
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 08:30:00 | 08:34:57 | 4.9500 | — | — | Sí |
 | REG-02 | T2 | 08:34:57 | 08:40:41 | 5.7333 | — | — | Sí |
-| REG-03 | T3 | 08:40:41 | 08:46:46 | 6.0833 | 60 | P2 | Sí |
+| REG-03 | T3 | 08:40:41 | 08:47:46 | 6.0833 | 60 | P2 | Sí |
 
 Cierre: 16.7666 min ÷ 3 = **5.5889 min**. Suma de las tres réplicas: 16.7666 min (1006 s).
 
@@ -318,9 +326,9 @@ Cierre: 16.7666 min ÷ 3 = **5.5889 min**. Suma de las tres réplicas: 16.7666 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:48:27 | 08:50:35 | 2.1333 (128 s) | — | — | Sí |
-| VALE-02 | T5 | 08:50:35 | 08:52:45 | 2.1667 (130 s) | — | — | Sí |
-| VALE-03 | T6 | 08:52:45 | 08:54:58 | 2.2167 (133 s) | — | — | Sí |
+| VALE-01 | T4 | 08:49:27 | 08:51:35 | 2.1333 (128 s) | — | — | Sí |
+| VALE-02 | T5 | 08:51:35 | 08:53:45 | 2.1667 (130 s) | — | — | Sí |
+| VALE-03 | T6 | 08:53:45 | 08:55:58 | 2.2167 (133 s) | — | — | Sí |
 
 Cierre: 6.5167 min ÷ 3 = **2.1722 min**. Suma de las tres réplicas: 6.5167 min (391 s).
 
@@ -332,9 +340,9 @@ Cierre: 6.5167 min ÷ 3 = **2.1722 min**. Suma de las tres réplicas: 6.5167 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:20:00 | 07:56:56 | 36.9333 | 90 | P3 | Sí |
-| REG-02 | T2 | 07:56:56 | 08:37:14 | 40.3000 | — | — | Sí |
-| REG-03 | T3 | 08:37:14 | 09:20:00 | 42.7667 | — | — | Sí |
+| REG-01 | T1 | 07:20:00 | 07:58:26 | 36.9333 | 90 | P3 | Sí |
+| REG-02 | T2 | 07:58:26 | 08:38:44 | 40.3000 | — | — | Sí |
+| REG-03 | T3 | 08:38:44 | 09:21:30 | 42.7667 | — | — | Sí |
 
 Cierre: 120.0000 min ÷ 3 = **40.0000 min**. Suma de las tres réplicas: 120.0000 min (7200 s).
 
@@ -342,9 +350,9 @@ Cierre: 120.0000 min ÷ 3 = **40.0000 min**. Suma de las tres réplicas: 120.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:24:05 | 09:42:56 | 18.8500 | — | — | Sí |
-| VALE-02 | T5 | 09:42:56 | 10:03:50 | 20.9000 | — | — | Sí |
-| VALE-03 | T6 | 10:03:50 | 10:25:35 | 21.7500 | 90 | P1 | Sí |
+| VALE-01 | T4 | 09:25:35 | 09:44:26 | 18.8500 | — | — | Sí |
+| VALE-02 | T5 | 09:44:26 | 10:05:20 | 20.9000 | — | — | Sí |
+| VALE-03 | T6 | 10:05:20 | 10:28:35 | 21.7500 | 90 | P1 | Sí |
 
 Cierre: 61.5000 min ÷ 3 = **20.5000 min**. Suma de las tres réplicas: 61.5000 min (3690 s).
 
@@ -380,9 +388,9 @@ Cierre: 5.5833 min ÷ 3 = **1.8611 min**. Suma de las tres réplicas: 5.5833 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:40:00 | 08:12:24 | 32.4000 | 150 | P4 | Sí |
-| REG-02 | T2 | 08:12:24 | 08:48:43 | 36.3167 | — | — | Sí |
-| REG-03 | T3 | 08:48:43 | 09:29:30 | 40.7833 | 60 | P1 | Sí |
+| REG-01 | T1 | 07:40:00 | 08:14:54 | 32.4000 | 150 | P4 | Sí |
+| REG-02 | T2 | 08:14:54 | 08:51:13 | 36.3167 | — | — | Sí |
+| REG-03 | T3 | 08:51:13 | 09:33:00 | 40.7833 | 60 | P1 | Sí |
 
 Cierre: 109.5000 min ÷ 3 = **36.5000 min**. Suma de las tres réplicas: 109.5000 min (6570 s).
 
@@ -390,9 +398,9 @@ Cierre: 109.5000 min ÷ 3 = **36.5000 min**. Suma de las tres réplicas: 109.500
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:34:22 | 09:50:17 | 15.9167 | 90 | P4 | Sí |
-| VALE-02 | T5 | 09:50:17 | 10:07:50 | 17.5500 | 120 | P2 | Sí |
-| VALE-03 | T6 | 10:07:50 | 10:25:22 | 17.5333 | 150 | P4 | Sí |
+| VALE-01 | T4 | 09:37:52 | 09:55:17 | 15.9167 | 90 | P4 | Sí |
+| VALE-02 | T5 | 09:55:17 | 10:14:50 | 17.5500 | 120 | P2 | Sí |
+| VALE-03 | T6 | 10:14:50 | 10:34:52 | 17.5333 | 150 | P4 | Sí |
 
 Cierre: 51.0000 min ÷ 3 = **17.0000 min**. Suma de las tres réplicas: 51.0000 min (3060 s).
 
@@ -405,8 +413,8 @@ Cierre: 51.0000 min ÷ 3 = **17.0000 min**. Suma de las tres réplicas: 51.0000 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 08:10:00 | 08:14:34 | 4.5667 | — | — | Sí |
-| REG-02 | T2 | 08:14:34 | 08:19:04 | 4.5000 | 45 | P2 | Sí |
-| REG-03 | T3 | 08:19:04 | 08:24:28 | 5.4000 | — | — | Sí |
+| REG-02 | T2 | 08:14:34 | 08:19:49 | 4.5000 | 45 | P2 | Sí |
+| REG-03 | T3 | 08:19:49 | 08:25:13 | 5.4000 | — | — | Sí |
 
 Cierre: 14.4667 min ÷ 3 = **4.8222 min**. Suma de las tres réplicas: 14.4667 min (868 s).
 
@@ -414,9 +422,9 @@ Cierre: 14.4667 min ÷ 3 = **4.8222 min**. Suma de las tres réplicas: 14.4667 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:26:23 | 08:27:53 | 1.5000 (90 s) | 60 | P2 | Sí |
-| VALE-02 | T5 | 08:27:53 | 08:29:34 | 1.6833 (101 s) | — | — | Sí |
-| VALE-03 | T6 | 08:29:34 | 08:31:24 | 1.8333 (110 s) | — | — | Sí |
+| VALE-01 | T4 | 08:27:08 | 08:29:38 | 1.5000 (90 s) | 60 | P2 | Sí |
+| VALE-02 | T5 | 08:29:38 | 08:31:19 | 1.6833 (101 s) | — | — | Sí |
+| VALE-03 | T6 | 08:31:19 | 08:33:09 | 1.8333 (110 s) | — | — | Sí |
 
 Cierre: 5.0166 min ÷ 3 = **1.6722 min**. Suma de las tres réplicas: 5.0166 min (301 s).
 
@@ -438,9 +446,9 @@ Cierre: 132.0000 min ÷ 3 = **44.0000 min**. Suma de las tres réplicas: 132.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:44:26 | 10:06:35 | 22.1500 | 60 | P3 | Sí |
-| VALE-02 | T5 | 10:06:35 | 10:30:15 | 23.6667 | 60 | P1 | Sí |
-| VALE-03 | T6 | 10:30:15 | 10:56:26 | 26.1833 | — | — | Sí |
+| VALE-01 | T4 | 09:44:26 | 10:07:35 | 22.1500 | 60 | P3 | Sí |
+| VALE-02 | T5 | 10:07:35 | 10:32:15 | 23.6667 | 60 | P1 | Sí |
+| VALE-03 | T6 | 10:32:15 | 10:58:26 | 26.1833 | — | — | Sí |
 
 Cierre: 72.0000 min ÷ 3 = **24.0000 min**. Suma de las tres réplicas: 72.0000 min (4320 s).
 
@@ -453,8 +461,8 @@ Cierre: 72.0000 min ÷ 3 = **24.0000 min**. Suma de las tres réplicas: 72.0000 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 08:00:00 | 08:04:15 | 4.2500 | — | — | Sí |
-| REG-02 | T2 | 08:04:15 | 08:09:09 | 4.9000 | 45 | P1 | Sí |
-| REG-03 | T3 | 08:09:09 | 08:14:51 | 5.7000 | 60 | P2 | Sí |
+| REG-02 | T2 | 08:04:15 | 08:09:54 | 4.9000 | 45 | P1 | Sí |
+| REG-03 | T3 | 08:09:54 | 08:16:36 | 5.7000 | 60 | P2 | Sí |
 
 Cierre: 14.8500 min ÷ 3 = **4.9500 min**. Suma de las tres réplicas: 14.8500 min (891 s).
 
@@ -462,9 +470,9 @@ Cierre: 14.8500 min ÷ 3 = **4.9500 min**. Suma de las tres réplicas: 14.8500 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:16:38 | 08:18:29 | 1.8500 (111 s) | — | — | Sí |
-| VALE-02 | T5 | 08:18:29 | 08:20:28 | 1.9833 (119 s) | 45 | P2 | Sí |
-| VALE-03 | T6 | 08:20:28 | 08:22:38 | 2.1667 (130 s) | — | — | Sí |
+| VALE-01 | T4 | 08:18:23 | 08:20:14 | 1.8500 (111 s) | — | — | Sí |
+| VALE-02 | T5 | 08:20:14 | 08:22:58 | 1.9833 (119 s) | 45 | P2 | Sí |
+| VALE-03 | T6 | 08:22:58 | 08:25:08 | 2.1667 (130 s) | — | — | Sí |
 
 Cierre: 6.0000 min ÷ 3 = **2.0000 min**. Suma de las tres réplicas: 6.0000 min (360 s).
 
@@ -477,8 +485,8 @@ Cierre: 6.0000 min ÷ 3 = **2.0000 min**. Suma de las tres réplicas: 6.0000 min
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:15:00 | 07:44:03 | 29.0500 | — | — | Sí |
-| REG-02 | T2 | 07:44:03 | 08:16:13 | 32.1667 | 60 | P1 | Sí |
-| REG-03 | T3 | 08:16:13 | 08:51:00 | 34.7833 | 90 | P3 | Sí |
+| REG-02 | T2 | 07:44:03 | 08:17:13 | 32.1667 | 60 | P1 | Sí |
+| REG-03 | T3 | 08:17:13 | 08:53:30 | 34.7833 | 90 | P3 | Sí |
 
 Cierre: 96.0000 min ÷ 3 = **32.0000 min**. Suma de las tres réplicas: 96.0000 min (5760 s).
 
@@ -486,9 +494,9 @@ Cierre: 96.0000 min ÷ 3 = **32.0000 min**. Suma de las tres réplicas: 96.0000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:56:48 | 09:10:29 | 13.6833 | — | — | Sí |
-| VALE-02 | T5 | 09:10:29 | 09:24:34 | 14.0833 | 45 | P3 | Sí |
-| VALE-03 | T6 | 09:24:34 | 09:40:18 | 15.7333 | 150 | P1 | Sí |
+| VALE-01 | T4 | 08:59:18 | 09:12:59 | 13.6833 | — | — | Sí |
+| VALE-02 | T5 | 09:12:59 | 09:27:49 | 14.0833 | 45 | P3 | Sí |
+| VALE-03 | T6 | 09:27:49 | 09:46:03 | 15.7333 | 150 | P1 | Sí |
 
 Cierre: 43.4999 min ÷ 3 = **14.5000 min**. Suma de las tres réplicas: 43.4999 min (2610 s).
 
@@ -501,8 +509,8 @@ Cierre: 43.4999 min ÷ 3 = **14.5000 min**. Suma de las tres réplicas: 43.4999 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:50:00 | 07:55:08 | 5.1333 | — | — | Sí |
-| REG-02 | T2 | 07:55:08 | 08:01:14 | 6.1000 | 30 | P2 | Sí |
-| REG-03 | T3 | 08:01:14 | 08:07:46 | 6.5333 | — | — | Sí |
+| REG-02 | T2 | 07:55:08 | 08:01:44 | 6.1000 | 30 | P2 | Sí |
+| REG-03 | T3 | 08:01:44 | 08:08:16 | 6.5333 | — | — | Sí |
 
 Cierre: 17.7666 min ÷ 3 = **5.9222 min**. Suma de las tres réplicas: 17.7666 min (1066 s).
 
@@ -510,9 +518,9 @@ Cierre: 17.7666 min ÷ 3 = **5.9222 min**. Suma de las tres réplicas: 17.7666 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:07:55 | 08:09:46 | 1.8500 (111 s) | — | — | Sí |
-| VALE-02 | T5 | 08:09:46 | 08:11:46 | 2.0000 (120 s) | — | — | Sí |
-| VALE-03 | T6 | 08:11:46 | 08:13:48 | 2.0333 (122 s) | — | — | Sí |
+| VALE-01 | T4 | 08:08:25 | 08:10:16 | 1.8500 (111 s) | — | — | Sí |
+| VALE-02 | T5 | 08:10:16 | 08:12:16 | 2.0000 (120 s) | — | — | Sí |
+| VALE-03 | T6 | 08:12:16 | 08:14:18 | 2.0333 (122 s) | — | — | Sí |
 
 Cierre: 5.8833 min ÷ 3 = **1.9611 min**. Suma de las tres réplicas: 5.8833 min (353 s).
 
@@ -525,8 +533,8 @@ Cierre: 5.8833 min ÷ 3 = **1.9611 min**. Suma de las tres réplicas: 5.8833 min
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:45:00 | 08:14:19 | 29.3167 | — | — | Sí |
-| REG-02 | T2 | 08:14:19 | 08:45:16 | 30.9500 | 60 | P1 | Sí |
-| REG-03 | T3 | 08:45:16 | 09:19:30 | 34.2333 | — | — | Sí |
+| REG-02 | T2 | 08:14:19 | 08:46:16 | 30.9500 | 60 | P1 | Sí |
+| REG-03 | T3 | 08:46:16 | 09:20:30 | 34.2333 | — | — | Sí |
 
 Cierre: 94.5000 min ÷ 3 = **31.5000 min**. Suma de las tres réplicas: 94.5000 min (5670 s).
 
@@ -534,9 +542,9 @@ Cierre: 94.5000 min ÷ 3 = **31.5000 min**. Suma de las tres réplicas: 94.5000 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:21:59 | 09:35:25 | 13.4333 | 45 | P4 | Sí |
-| VALE-02 | T5 | 09:35:25 | 09:50:06 | 14.6833 | — | — | Sí |
-| VALE-03 | T6 | 09:50:06 | 10:06:59 | 16.8833 | 150 | P1 | Sí |
+| VALE-01 | T4 | 09:22:59 | 09:37:10 | 13.4333 | 45 | P4 | Sí |
+| VALE-02 | T5 | 09:37:10 | 09:51:51 | 14.6833 | — | — | Sí |
+| VALE-03 | T6 | 09:51:51 | 10:11:14 | 16.8833 | 150 | P1 | Sí |
 
 Cierre: 44.9999 min ÷ 3 = **15.0000 min**. Suma de las tres réplicas: 44.9999 min (2700 s).
 
@@ -559,8 +567,8 @@ Cierre: 18.0333 min ÷ 3 = **6.0111 min**. Suma de las tres réplicas: 18.0333 m
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | VALE-01 | T4 | 08:34:07 | 08:35:40 | 1.5500 (93 s) | — | — | Sí |
-| VALE-02 | T5 | 08:35:40 | 08:37:24 | 1.7333 (104 s) | 60 | P2 | Sí |
-| VALE-03 | T6 | 08:37:24 | 08:39:04 | 1.6667 (100 s) | — | — | Sí |
+| VALE-02 | T5 | 08:35:40 | 08:38:24 | 1.7333 (104 s) | 60 | P2 | Sí |
+| VALE-03 | T6 | 08:38:24 | 08:40:04 | 1.6667 (100 s) | — | — | Sí |
 
 Cierre: 4.9500 min ÷ 3 = **1.6500 min**. Suma de las tres réplicas: 4.9500 min (297 s).
 
@@ -573,8 +581,8 @@ Cierre: 4.9500 min ÷ 3 = **1.6500 min**. Suma de las tres réplicas: 4.9500 min
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 08:00:00 | 08:35:58 | 35.9667 | — | — | Sí |
-| REG-02 | T2 | 08:35:58 | 09:14:27 | 38.4833 | 60 | P4 | Sí |
-| REG-03 | T3 | 09:14:27 | 09:57:00 | 42.5500 | 120 | P2 | Sí |
+| REG-02 | T2 | 08:35:58 | 09:15:27 | 38.4833 | 60 | P4 | Sí |
+| REG-03 | T3 | 09:15:27 | 10:00:00 | 42.5500 | 120 | P2 | Sí |
 
 Cierre: 117.0000 min ÷ 3 = **39.0000 min**. Suma de las tres réplicas: 117.0000 min (7020 s).
 
@@ -582,9 +590,9 @@ Cierre: 117.0000 min ÷ 3 = **39.0000 min**. Suma de las tres réplicas: 117.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 10:02:51 | 10:20:39 | 17.8000 | 120 | P3 | Sí |
-| VALE-02 | T5 | 10:20:39 | 10:40:05 | 19.4333 | 120 | P1 | Sí |
-| VALE-03 | T6 | 10:40:05 | 11:01:21 | 21.2667 | — | — | Sí |
+| VALE-01 | T4 | 10:05:51 | 10:25:39 | 17.8000 | 120 | P3 | Sí |
+| VALE-02 | T5 | 10:25:39 | 10:47:05 | 19.4333 | 120 | P1 | Sí |
+| VALE-03 | T6 | 10:47:05 | 11:08:21 | 21.2667 | — | — | Sí |
 
 Cierre: 58.5000 min ÷ 3 = **19.5000 min**. Suma de las tres réplicas: 58.5000 min (3510 s).
 
@@ -597,8 +605,8 @@ Cierre: 58.5000 min ÷ 3 = **19.5000 min**. Suma de las tres réplicas: 58.5000 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 08:30:00 | 08:35:42 | 5.7000 | — | — | Sí |
-| REG-02 | T2 | 08:35:42 | 08:41:50 | 6.1333 | 45 | P1 | Sí |
-| REG-03 | T3 | 08:41:50 | 08:48:52 | 7.0333 | — | — | Sí |
+| REG-02 | T2 | 08:35:42 | 08:42:35 | 6.1333 | 45 | P1 | Sí |
+| REG-03 | T3 | 08:42:35 | 08:49:37 | 7.0333 | — | — | Sí |
 
 Cierre: 18.8666 min ÷ 3 = **6.2889 min**. Suma de las tres réplicas: 18.8666 min (1132 s).
 
@@ -606,9 +614,9 @@ Cierre: 18.8666 min ÷ 3 = **6.2889 min**. Suma de las tres réplicas: 18.8666 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:51:11 | 08:53:00 | 1.8167 (109 s) | — | — | Sí |
-| VALE-02 | T5 | 08:53:00 | 08:54:52 | 1.8667 (112 s) | — | — | Sí |
-| VALE-03 | T6 | 08:54:52 | 08:56:48 | 1.9333 (116 s) | 30 | P2 | Sí |
+| VALE-01 | T4 | 08:51:56 | 08:53:45 | 1.8167 (109 s) | — | — | Sí |
+| VALE-02 | T5 | 08:53:45 | 08:55:37 | 1.8667 (112 s) | — | — | Sí |
+| VALE-03 | T6 | 08:55:37 | 08:58:03 | 1.9333 (116 s) | 30 | P2 | Sí |
 
 Cierre: 5.6167 min ÷ 3 = **1.8722 min**. Suma de las tres réplicas: 5.6167 min (337 s).
 
@@ -622,7 +630,7 @@ Cierre: 5.6167 min ÷ 3 = **1.8722 min**. Suma de las tres réplicas: 5.6167 min
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:20:00 | 07:52:35 | 32.5833 | — | — | Sí |
 | REG-02 | T2 | 07:52:35 | 08:29:52 | 37.2833 | — | — | Sí |
-| REG-03 | T3 | 08:29:52 | 09:11:00 | 41.1333 | 90 | P1 | Sí |
+| REG-03 | T3 | 08:29:52 | 09:12:30 | 41.1333 | 90 | P1 | Sí |
 
 Cierre: 110.9999 min ÷ 3 = **37.0000 min**. Suma de las tres réplicas: 110.9999 min (6660 s).
 
@@ -630,9 +638,9 @@ Cierre: 110.9999 min ÷ 3 = **37.0000 min**. Suma de las tres réplicas: 110.999
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:16:49 | 09:33:43 | 16.9000 | — | — | Sí |
-| VALE-02 | T5 | 09:33:43 | 09:51:59 | 18.2667 | 60 | P2 | Sí |
-| VALE-03 | T6 | 09:51:59 | 10:10:49 | 18.8333 | — | — | Sí |
+| VALE-01 | T4 | 09:18:19 | 09:35:13 | 16.9000 | — | — | Sí |
+| VALE-02 | T5 | 09:35:13 | 09:54:29 | 18.2667 | 60 | P2 | Sí |
+| VALE-03 | T6 | 09:54:29 | 10:13:19 | 18.8333 | — | — | Sí |
 
 Cierre: 54.0000 min ÷ 3 = **18.0000 min**. Suma de las tres réplicas: 54.0000 min (3240 s).
 
@@ -654,9 +662,9 @@ Cierre: 19.3167 min ÷ 3 = **6.4389 min**. Suma de las tres réplicas: 19.3167 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:04:25 | 08:06:10 | 1.7500 (105 s) | 45 | P1 | Sí |
-| VALE-02 | T5 | 08:06:10 | 08:07:56 | 1.7667 (106 s) | 30 | P2 | Sí |
-| VALE-03 | T6 | 08:07:56 | 08:09:45 | 1.8167 (109 s) | — | — | Sí |
+| VALE-01 | T4 | 08:04:25 | 08:06:55 | 1.7500 (105 s) | 45 | P1 | Sí |
+| VALE-02 | T5 | 08:06:55 | 08:09:11 | 1.7667 (106 s) | 30 | P2 | Sí |
+| VALE-03 | T6 | 08:09:11 | 08:11:00 | 1.8167 (109 s) | — | — | Sí |
 
 Cierre: 5.3334 min ÷ 3 = **1.7778 min**. Suma de las tres réplicas: 5.3334 min (320 s).
 
@@ -668,9 +676,9 @@ Cierre: 5.3334 min ÷ 3 = **1.7778 min**. Suma de las tres réplicas: 5.3334 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:40:00 | 08:17:06 | 37.1000 | 120 | P1 | Sí |
-| REG-02 | T2 | 08:17:06 | 08:58:00 | 40.9000 | — | — | Sí |
-| REG-03 | T3 | 08:58:00 | 09:44:30 | 46.5000 | — | — | Sí |
+| REG-01 | T1 | 07:40:00 | 08:19:06 | 37.1000 | 120 | P1 | Sí |
+| REG-02 | T2 | 08:19:06 | 09:00:00 | 40.9000 | — | — | Sí |
+| REG-03 | T3 | 09:00:00 | 09:46:30 | 46.5000 | — | — | Sí |
 
 Cierre: 124.5000 min ÷ 3 = **41.5000 min**. Suma de las tres réplicas: 124.5000 min (7470 s).
 
@@ -678,9 +686,9 @@ Cierre: 124.5000 min ÷ 3 = **41.5000 min**. Suma de las tres réplicas: 124.500
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:48:39 | 10:08:41 | 20.0333 | 60 | P2 | Sí |
-| VALE-02 | T5 | 10:08:41 | 10:30:01 | 21.3333 | — | — | Sí |
-| VALE-03 | T6 | 10:30:01 | 10:51:39 | 21.6333 | — | — | Sí |
+| VALE-01 | T4 | 09:50:39 | 10:11:41 | 20.0333 | 60 | P2 | Sí |
+| VALE-02 | T5 | 10:11:41 | 10:33:01 | 21.3333 | — | — | Sí |
+| VALE-03 | T6 | 10:33:01 | 10:54:39 | 21.6333 | — | — | Sí |
 
 Cierre: 62.9999 min ÷ 3 = **21.0000 min**. Suma de las tres réplicas: 62.9999 min (3780 s).
 
@@ -692,9 +700,9 @@ Cierre: 62.9999 min ÷ 3 = **21.0000 min**. Suma de las tres réplicas: 62.9999 
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 08:10:00 | 08:15:01 | 5.0167 | 45 | P1 | Sí |
-| REG-02 | T2 | 08:15:01 | 08:21:05 | 6.0667 | — | — | Sí |
-| REG-03 | T3 | 08:21:05 | 08:27:13 | 6.1333 | — | — | Sí |
+| REG-01 | T1 | 08:10:00 | 08:15:46 | 5.0167 | 45 | P1 | Sí |
+| REG-02 | T2 | 08:15:46 | 08:21:50 | 6.0667 | — | — | Sí |
+| REG-03 | T3 | 08:21:50 | 08:27:58 | 6.1333 | — | — | Sí |
 
 Cierre: 17.2167 min ÷ 3 = **5.7389 min**. Suma de las tres réplicas: 17.2167 min (1033 s).
 
@@ -702,9 +710,9 @@ Cierre: 17.2167 min ÷ 3 = **5.7389 min**. Suma de las tres réplicas: 17.2167 m
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 08:28:18 | 08:30:12 | 1.9000 (114 s) | 60 | P2 | Sí |
-| VALE-02 | T5 | 08:30:12 | 08:32:11 | 1.9833 (119 s) | — | — | Sí |
-| VALE-03 | T6 | 08:32:11 | 08:34:31 | 2.3333 (140 s) | — | — | Sí |
+| VALE-01 | T4 | 08:29:03 | 08:31:57 | 1.9000 (114 s) | 60 | P2 | Sí |
+| VALE-02 | T5 | 08:31:57 | 08:33:56 | 1.9833 (119 s) | — | — | Sí |
+| VALE-03 | T6 | 08:33:56 | 08:36:16 | 2.3333 (140 s) | — | — | Sí |
 
 Cierre: 6.2166 min ÷ 3 = **2.0722 min**. Suma de las tres réplicas: 6.2166 min (373 s).
 
@@ -718,7 +726,7 @@ Cierre: 6.2166 min ÷ 3 = **2.0722 min**. Suma de las tres réplicas: 6.2166 min
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | REG-01 | T1 | 07:30:00 | 08:00:33 | 30.5500 | — | — | Sí |
 | REG-02 | T2 | 08:00:33 | 08:34:45 | 34.2000 | — | — | Sí |
-| REG-03 | T3 | 08:34:45 | 09:12:00 | 37.2500 | 60 | P1 | Sí |
+| REG-03 | T3 | 08:34:45 | 09:13:00 | 37.2500 | 60 | P1 | Sí |
 
 Cierre: 102.0000 min ÷ 3 = **34.0000 min**. Suma de las tres réplicas: 102.0000 min (6120 s).
 
@@ -726,9 +734,9 @@ Cierre: 102.0000 min ÷ 3 = **34.0000 min**. Suma de las tres réplicas: 102.000
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:18:00 | 09:33:21 | 15.3500 | — | — | Sí |
-| VALE-02 | T5 | 09:33:21 | 09:49:26 | 16.0833 | — | — | Sí |
-| VALE-03 | T6 | 09:49:26 | 10:07:30 | 18.0667 | 60 | P2 | Sí |
+| VALE-01 | T4 | 09:19:00 | 09:34:21 | 15.3500 | — | — | Sí |
+| VALE-02 | T5 | 09:34:21 | 09:50:26 | 16.0833 | — | — | Sí |
+| VALE-03 | T6 | 09:50:26 | 10:09:30 | 18.0667 | 60 | P2 | Sí |
 
 Cierre: 49.5000 min ÷ 3 = **16.5000 min**. Suma de las tres réplicas: 49.5000 min (2970 s).
 
@@ -752,7 +760,7 @@ Cierre: 16.5833 min ÷ 3 = **5.5278 min**. Suma de las tres réplicas: 16.5833 m
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
 | VALE-01 | T4 | 08:18:46 | 08:20:49 | 2.0500 (123 s) | — | — | Sí |
 | VALE-02 | T5 | 08:20:49 | 08:23:02 | 2.2167 (133 s) | — | — | Sí |
-| VALE-03 | T6 | 08:23:02 | 08:25:35 | 2.5500 (153 s) | 60 | P2 | Sí |
+| VALE-03 | T6 | 08:23:02 | 08:26:35 | 2.5500 (153 s) | 60 | P2 | Sí |
 
 Cierre: 6.8167 min ÷ 3 = **2.2722 min**. Suma de las tres réplicas: 6.8167 min (409 s).
 
@@ -764,9 +772,9 @@ Cierre: 6.8167 min ÷ 3 = **2.2722 min**. Suma de las tres réplicas: 6.8167 min
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| REG-01 | T1 | 07:15:00 | 07:46:26 | 31.4333 | 150 | P4 | Sí |
-| REG-02 | T2 | 07:46:26 | 08:21:31 | 35.0833 | 45 | P4 | Sí |
-| REG-03 | T3 | 08:21:31 | 09:03:00 | 41.4833 | — | — | Sí |
+| REG-01 | T1 | 07:15:00 | 07:48:56 | 31.4333 | 150 | P4 | Sí |
+| REG-02 | T2 | 07:48:56 | 08:24:46 | 35.0833 | 45 | P4 | Sí |
+| REG-03 | T3 | 08:24:46 | 09:06:15 | 41.4833 | — | — | Sí |
 
 Cierre: 107.9999 min ÷ 3 = **36.0000 min**. Suma de las tres réplicas: 107.9999 min (6480 s).
 
@@ -774,9 +782,9 @@ Cierre: 107.9999 min ÷ 3 = **36.0000 min**. Suma de las tres réplicas: 107.999
 
 | Réplica | Tarea | Inicio | Fin | Duración (min) | Pausa (s) | Motivo | Válida |
 | :--- | :---: | :---: | :---: | ---: | ---: | :---: | :---: |
-| VALE-01 | T4 | 09:09:10 | 09:25:36 | 16.4333 | 150 | P3 | Sí |
-| VALE-02 | T5 | 09:25:36 | 09:43:10 | 17.5667 | — | — | Sí |
-| VALE-03 | T6 | 09:43:10 | 10:01:40 | 18.5000 | 45 | P4 | Sí |
+| VALE-01 | T4 | 09:12:25 | 09:31:21 | 16.4333 | 150 | P3 | Sí |
+| VALE-02 | T5 | 09:31:21 | 09:48:55 | 17.5667 | — | — | Sí |
+| VALE-03 | T6 | 09:48:55 | 10:08:10 | 18.5000 | 45 | P4 | Sí |
 
 Cierre: 52.5000 min ÷ 3 = **17.5000 min**. Suma de las tres réplicas: 52.5000 min (3150 s).
 
@@ -811,7 +819,7 @@ Cierre: 5.7000 min ÷ 3 = **1.9000 min**. Suma de las tres réplicas: 5.7000 min
 <a id="parte-4"></a>
 ## Parte 4. Instrumento 2 — Ficha de auditoría documental y conciliación de entregas
 
-Cada bloque audita cuarenta documentos sobre ocho criterios binarios y concilia veinticinco despachos. La conformidad documental es conjuntiva: un documento es conforme solo si cumple los ocho criterios. La tabla emplea S y N para abreviar Sí y No, y las columnas 1 a 8 siguen el orden de los aspectos del instrumento. El motivo se codifica de M1 a M8 y se imprime solo cuando el documento no es conforme.
+Cada bloque audita cuarenta documentos sobre ocho criterios binarios y concilia veinticinco despachos. La conformidad documental es conjuntiva: un documento es conforme solo si cumple los ocho criterios. La tabla emplea S y N para abreviar Sí y No, y las columnas 1 a 8 siguen el orden de los aspectos del instrumento. El motivo se codifica de M1 a M8 y se imprime solo cuando el documento no es conforme. En las entregas, Dif. es la cantidad entregada menos la programada: el signo negativo señala faltante y el positivo, exceso; la entrega es concordante solo cuando la diferencia es cero.
 
 **Convenciones.** ING: ingreso. SAL: salida. TRA: transferencia. DEV: devolución. AJU: ajuste. BCG, PENT, IPV, ROTA, NEUM, SPR, DTA, HEPB, INFL y VARI abrevian los biológicos del catálogo. M1 a M8 remiten a los ocho aspectos en el orden impreso.
 
@@ -866,30 +874,30 @@ Documentos auditados: 40 · Conformes: 25 · RSD: 62.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 24/07/2026 | CHANKA-001 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 28/07/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 3 | 13/07/2026 | CHANKA-001 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 1 | 24/07/2026 | CHANKA-001 | PENT | 50 | 50 | 0 | GR-CHANKA001-6241 | Sí |
+| 2 | 28/07/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | GR-CHANKA001-4432 | Sí |
+| 3 | 13/07/2026 | CHANKA-001 | DTA | 150 | 150 | 0 | GR-CHANKA001-3735 | Sí |
 | 4 | 03/08/2026 | CHANKA-001 | BCG | 180 | 185 | 5 | Sin guía | No |
-| 5 | 24/07/2026 | CHANKA-001 | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 6 | 20/07/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 7 | 26/07/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | No aplica | Sí |
+| 5 | 24/07/2026 | CHANKA-001 | IPV | 150 | 150 | 0 | GR-CHANKA001-3108 | Sí |
+| 6 | 20/07/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | GR-CHANKA001-1676 | Sí |
+| 7 | 26/07/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | GR-CHANKA001-2127 | Sí |
 | 8 | 29/07/2026 | CHANKA-001 | NEUM | 120 | 110 | -10 | GR-CHANKA001-7575 | No |
-| 9 | 10/08/2026 | CHANKA-001 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 9 | 09/08/2026 | CHANKA-001 | DTA | 200 | 200 | 0 | GR-CHANKA001-2202 | Sí |
 | 10 | 01/08/2026 | CHANKA-001 | NEUM | 30 | 25 | -5 | GR-CHANKA001-9318 | No |
 | 11 | 13/07/2026 | CHANKA-001 | VARI | 200 | 210 | 10 | GR-CHANKA001-8494 | No |
-| 12 | 10/08/2026 | CHANKA-001 | INFL | 100 | 100 | 0 | No aplica | Sí |
-| 13 | 15/07/2026 | CHANKA-001 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 14 | 17/07/2026 | CHANKA-001 | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 15 | 23/07/2026 | CHANKA-001 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 16 | 07/08/2026 | CHANKA-001 | HEPB | 30 | 30 | 0 | No aplica | Sí |
-| 17 | 28/07/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 18 | 22/07/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
+| 12 | 09/08/2026 | CHANKA-001 | INFL | 100 | 100 | 0 | GR-CHANKA001-2987 | Sí |
+| 13 | 15/07/2026 | CHANKA-001 | DTA | 100 | 100 | 0 | GR-CHANKA001-4034 | Sí |
+| 14 | 17/07/2026 | CHANKA-001 | BCG | 100 | 100 | 0 | GR-CHANKA001-5666 | Sí |
+| 15 | 23/07/2026 | CHANKA-001 | VARI | 200 | 200 | 0 | GR-CHANKA001-4055 | Sí |
+| 16 | 07/08/2026 | CHANKA-001 | HEPB | 30 | 30 | 0 | GR-CHANKA001-5775 | Sí |
+| 17 | 28/07/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | GR-CHANKA001-6660 | Sí |
+| 18 | 22/07/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | GR-CHANKA001-8468 | Sí |
 | 19 | 05/08/2026 | CHANKA-001 | SPR | 180 | 175 | -5 | Sin guía | No |
 | 20 | 28/07/2026 | CHANKA-001 | INFL | 120 | 110 | -10 | GR-CHANKA001-2123 | No |
 | 21 | 21/07/2026 | CHANKA-001 | INFL | 180 | 170 | -10 | GR-CHANKA001-5216 | No |
-| 22 | 23/07/2026 | CHANKA-001 | PENT | 180 | 180 | 0 | No aplica | Sí |
+| 22 | 23/07/2026 | CHANKA-001 | PENT | 180 | 180 | 0 | GR-CHANKA001-7823 | Sí |
 | 23 | 07/08/2026 | CHANKA-001 | ROTA | 60 | 50 | -10 | GR-CHANKA001-4330 | No |
-| 24 | 31/07/2026 | CHANKA-001 | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 24 | 31/07/2026 | CHANKA-001 | VARI | 40 | 40 | 0 | GR-CHANKA001-1877 | Sí |
 | 25 | 05/08/2026 | CHANKA-001 | IPV | 20 | 25 | 5 | Sin guía | No |
 
 Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
@@ -947,31 +955,31 @@ Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 12/10/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 2 | 29/09/2026 | CHANKA-001 | BCG | 30 | 30 | 0 | No aplica | Sí |
-| 3 | 22/09/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 4 | 09/10/2026 | CHANKA-001 | NEUM | 150 | 150 | 0 | No aplica | Sí |
-| 5 | 07/10/2026 | CHANKA-001 | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 6 | 16/09/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 14/09/2026 | CHANKA-001 | INFL | 100 | 100 | 0 | No aplica | Sí |
-| 8 | 23/09/2026 | CHANKA-001 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 9 | 25/09/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 10 | 28/09/2026 | CHANKA-001 | HEPB | 20 | 20 | 0 | No aplica | Sí |
-| 11 | 23/09/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | No aplica | Sí |
-| 12 | 14/09/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | No aplica | Sí |
-| 13 | 10/10/2026 | CHANKA-001 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 14 | 18/09/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 15 | 11/10/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 16 | 17/09/2026 | CHANKA-001 | SPR | 50 | 50 | 0 | No aplica | Sí |
+| 1 | 11/10/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | GR-CHANKA001-4781 | Sí |
+| 2 | 29/09/2026 | CHANKA-001 | BCG | 30 | 30 | 0 | GR-CHANKA001-1850 | Sí |
+| 3 | 22/09/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | GR-CHANKA001-2190 | Sí |
+| 4 | 09/10/2026 | CHANKA-001 | NEUM | 150 | 150 | 0 | GR-CHANKA001-7585 | Sí |
+| 5 | 07/10/2026 | CHANKA-001 | NEUM | 50 | 50 | 0 | GR-CHANKA001-8026 | Sí |
+| 6 | 16/09/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | GR-CHANKA001-2923 | Sí |
+| 7 | 14/09/2026 | CHANKA-001 | INFL | 100 | 100 | 0 | GR-CHANKA001-1722 | Sí |
+| 8 | 23/09/2026 | CHANKA-001 | NEUM | 120 | 120 | 0 | GR-CHANKA001-7582 | Sí |
+| 9 | 25/09/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | GR-CHANKA001-8022 | Sí |
+| 10 | 28/09/2026 | CHANKA-001 | HEPB | 20 | 20 | 0 | GR-CHANKA001-7345 | Sí |
+| 11 | 23/09/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | GR-CHANKA001-4497 | Sí |
+| 12 | 14/09/2026 | CHANKA-001 | INFL | 80 | 80 | 0 | GR-CHANKA001-3941 | Sí |
+| 13 | 10/10/2026 | CHANKA-001 | IPV | 50 | 50 | 0 | GR-CHANKA001-1210 | Sí |
+| 14 | 18/09/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | GR-CHANKA001-3023 | Sí |
+| 15 | 11/10/2026 | CHANKA-001 | HEPB | 80 | 80 | 0 | GR-CHANKA001-3579 | Sí |
+| 16 | 17/09/2026 | CHANKA-001 | SPR | 50 | 50 | 0 | GR-CHANKA001-3955 | Sí |
 | 17 | 22/09/2026 | CHANKA-001 | SPR | 180 | 175 | -5 | GR-CHANKA001-5298 | No |
-| 18 | 08/10/2026 | CHANKA-001 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 19 | 28/09/2026 | CHANKA-001 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 20 | 30/09/2026 | CHANKA-001 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 11/10/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | No aplica | Sí |
-| 22 | 02/10/2026 | CHANKA-001 | INFL | 180 | 180 | 0 | No aplica | Sí |
-| 23 | 17/09/2026 | CHANKA-001 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 24 | 07/10/2026 | CHANKA-001 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 25 | 30/09/2026 | CHANKA-001 | INFL | 150 | 150 | 0 | No aplica | Sí |
+| 18 | 08/10/2026 | CHANKA-001 | DTA | 80 | 80 | 0 | GR-CHANKA001-2736 | Sí |
+| 19 | 28/09/2026 | CHANKA-001 | IPV | 40 | 40 | 0 | GR-CHANKA001-7712 | Sí |
+| 20 | 30/09/2026 | CHANKA-001 | DTA | 50 | 50 | 0 | GR-CHANKA001-9653 | Sí |
+| 21 | 11/10/2026 | CHANKA-001 | PENT | 60 | 60 | 0 | GR-CHANKA001-8780 | Sí |
+| 22 | 02/10/2026 | CHANKA-001 | INFL | 180 | 180 | 0 | GR-CHANKA001-5902 | Sí |
+| 23 | 17/09/2026 | CHANKA-001 | VARI | 20 | 20 | 0 | GR-CHANKA001-4982 | Sí |
+| 24 | 07/10/2026 | CHANKA-001 | ROTA | 150 | 150 | 0 | GR-CHANKA001-4411 | Sí |
+| 25 | 30/09/2026 | CHANKA-001 | INFL | 150 | 150 | 0 | GR-CHANKA001-5857 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1029,29 +1037,29 @@ Documentos auditados: 40 · Conformes: 23 · RSD: 57.50 % · Entregas conciliada
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
 | 1 | 08/08/2026 | CHANKA-001 | PENT | 60 | 50 | -10 | GR-CHANKA001-1391 | No |
-| 2 | 08/08/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | No aplica | Sí |
+| 2 | 08/08/2026 | CHANKA-001 | SPR | 180 | 180 | 0 | GR-CHANKA001-4527 | Sí |
 | 3 | 07/08/2026 | CHANKA-001 | BCG | 50 | 45 | -5 | GR-CHANKA001-6852 | No |
 | 4 | 17/07/2026 | CHANKA-001 | PENT | 40 | 35 | -5 | GR-CHANKA001-3436 | No |
-| 5 | 25/07/2026 | CHANKA-001 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 6 | 23/07/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | No aplica | Sí |
+| 5 | 25/07/2026 | CHANKA-001 | SPR | 150 | 150 | 0 | GR-CHANKA001-8093 | Sí |
+| 6 | 23/07/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | GR-CHANKA001-6827 | Sí |
 | 7 | 16/07/2026 | CHANKA-001 | BCG | 180 | 175 | -5 | GR-CHANKA001-4192 | No |
-| 8 | 22/07/2026 | CHANKA-001 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 9 | 17/07/2026 | CHANKA-001 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 13/07/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 11 | 23/07/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 12 | 13/07/2026 | CHANKA-001 | NEUM | 40 | 40 | 0 | No aplica | Sí |
+| 8 | 22/07/2026 | CHANKA-001 | NEUM | 30 | 30 | 0 | GR-CHANKA001-4466 | Sí |
+| 9 | 17/07/2026 | CHANKA-001 | DTA | 100 | 100 | 0 | GR-CHANKA001-3315 | Sí |
+| 10 | 13/07/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | GR-CHANKA001-8065 | Sí |
+| 11 | 23/07/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | GR-CHANKA001-9786 | Sí |
+| 12 | 13/07/2026 | CHANKA-001 | NEUM | 40 | 40 | 0 | GR-CHANKA001-6745 | Sí |
 | 13 | 31/07/2026 | CHANKA-001 | BCG | 20 | 15 | -5 | GR-CHANKA001-8464 | No |
-| 14 | 14/07/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | No aplica | Sí |
+| 14 | 14/07/2026 | CHANKA-001 | INFL | 20 | 20 | 0 | GR-CHANKA001-7586 | Sí |
 | 15 | 07/08/2026 | CHANKA-001 | INFL | 200 | 195 | -5 | GR-CHANKA001-6078 | No |
 | 16 | 28/07/2026 | CHANKA-001 | SPR | 80 | 85 | 5 | Sin guía | No |
-| 17 | 14/07/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 29/07/2026 | CHANKA-001 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 19 | 02/08/2026 | CHANKA-001 | INFL | 30 | 30 | 0 | No aplica | Sí |
-| 20 | 07/08/2026 | CHANKA-001 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 21 | 17/07/2026 | CHANKA-001 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 22 | 23/07/2026 | CHANKA-001 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 17 | 14/07/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | GR-CHANKA001-7464 | Sí |
+| 18 | 29/07/2026 | CHANKA-001 | INFL | 60 | 60 | 0 | GR-CHANKA001-5236 | Sí |
+| 19 | 02/08/2026 | CHANKA-001 | INFL | 30 | 30 | 0 | GR-CHANKA001-6589 | Sí |
+| 20 | 07/08/2026 | CHANKA-001 | ROTA | 40 | 40 | 0 | GR-CHANKA001-4368 | Sí |
+| 21 | 17/07/2026 | CHANKA-001 | ROTA | 200 | 200 | 0 | GR-CHANKA001-3382 | Sí |
+| 22 | 23/07/2026 | CHANKA-001 | ROTA | 100 | 100 | 0 | GR-CHANKA001-2232 | Sí |
 | 23 | 30/07/2026 | CHANKA-001 | NEUM | 30 | 20 | -10 | GR-CHANKA001-8955 | No |
-| 24 | 05/08/2026 | CHANKA-001 | NEUM | 200 | 200 | 0 | No aplica | Sí |
+| 24 | 05/08/2026 | CHANKA-001 | NEUM | 200 | 200 | 0 | GR-CHANKA001-8622 | Sí |
 | 25 | 20/07/2026 | CHANKA-001 | PENT | 40 | 45 | 5 | Sin guía | No |
 
 Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
@@ -1109,31 +1117,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 15/09/2026 | CHANKA-001 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 2 | 14/09/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 3 | 30/09/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 4 | 22/09/2026 | CHANKA-001 | BCG | 180 | 180 | 0 | No aplica | Sí |
+| 1 | 15/09/2026 | CHANKA-001 | BCG | 120 | 120 | 0 | GR-CHANKA001-1288 | Sí |
+| 2 | 14/09/2026 | CHANKA-001 | SPR | 80 | 80 | 0 | GR-CHANKA001-6127 | Sí |
+| 3 | 30/09/2026 | CHANKA-001 | NEUM | 80 | 80 | 0 | GR-CHANKA001-4433 | Sí |
+| 4 | 22/09/2026 | CHANKA-001 | BCG | 180 | 180 | 0 | GR-CHANKA001-5996 | Sí |
 | 5 | 19/09/2026 | CHANKA-001 | IPV | 20 | 15 | -5 | GR-CHANKA001-2687 | No |
-| 6 | 28/09/2026 | CHANKA-001 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 7 | 29/09/2026 | CHANKA-001 | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 8 | 15/09/2026 | CHANKA-001 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 9 | 05/10/2026 | CHANKA-001 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 14/09/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 11 | 19/09/2026 | CHANKA-001 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 12 | 14/09/2026 | CHANKA-001 | BCG | 30 | 30 | 0 | No aplica | Sí |
-| 13 | 07/10/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 14 | 26/09/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 15 | 07/10/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 16 | 16/09/2026 | CHANKA-001 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 17 | 18/09/2026 | CHANKA-001 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 18 | 17/09/2026 | CHANKA-001 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 19 | 06/10/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 20 | 11/10/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 21 | 25/09/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 22 | 22/09/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 23 | 22/09/2026 | CHANKA-001 | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 24 | 28/09/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 25 | 01/10/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | No aplica | Sí |
+| 6 | 28/09/2026 | CHANKA-001 | NEUM | 20 | 20 | 0 | GR-CHANKA001-4728 | Sí |
+| 7 | 29/09/2026 | CHANKA-001 | HEPB | 60 | 60 | 0 | GR-CHANKA001-7151 | Sí |
+| 8 | 15/09/2026 | CHANKA-001 | INFL | 200 | 200 | 0 | GR-CHANKA001-5188 | Sí |
+| 9 | 05/10/2026 | CHANKA-001 | VARI | 100 | 100 | 0 | GR-CHANKA001-3977 | Sí |
+| 10 | 14/09/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | GR-CHANKA001-4824 | Sí |
+| 11 | 19/09/2026 | CHANKA-001 | HEPB | 100 | 100 | 0 | GR-CHANKA001-4811 | Sí |
+| 12 | 14/09/2026 | CHANKA-001 | BCG | 30 | 30 | 0 | GR-CHANKA001-5989 | Sí |
+| 13 | 07/10/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | GR-CHANKA001-4803 | Sí |
+| 14 | 26/09/2026 | CHANKA-001 | IPV | 30 | 30 | 0 | GR-CHANKA001-4098 | Sí |
+| 15 | 07/10/2026 | CHANKA-001 | HEPB | 200 | 200 | 0 | GR-CHANKA001-2919 | Sí |
+| 16 | 16/09/2026 | CHANKA-001 | BCG | 80 | 80 | 0 | GR-CHANKA001-1862 | Sí |
+| 17 | 18/09/2026 | CHANKA-001 | DTA | 30 | 30 | 0 | GR-CHANKA001-3910 | Sí |
+| 18 | 17/09/2026 | CHANKA-001 | SPR | 30 | 30 | 0 | GR-CHANKA001-3523 | Sí |
+| 19 | 06/10/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | GR-CHANKA001-5900 | Sí |
+| 20 | 11/10/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | GR-CHANKA001-9114 | Sí |
+| 21 | 25/09/2026 | CHANKA-001 | VARI | 120 | 120 | 0 | GR-CHANKA001-4193 | Sí |
+| 22 | 22/09/2026 | CHANKA-001 | PENT | 150 | 150 | 0 | GR-CHANKA001-6155 | Sí |
+| 23 | 22/09/2026 | CHANKA-001 | HEPB | 50 | 50 | 0 | GR-CHANKA001-3771 | Sí |
+| 24 | 28/09/2026 | CHANKA-001 | DTA | 40 | 40 | 0 | GR-CHANKA001-7426 | Sí |
+| 25 | 01/10/2026 | CHANKA-001 | HEPB | 150 | 150 | 0 | GR-CHANKA001-3253 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1190,31 +1198,31 @@ Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 30/07/2026 | S/C | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 10/08/2026 | S/C | PENT | 150 | 150 | 0 | No aplica | Sí |
-| 3 | 28/07/2026 | S/C | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 4 | 08/08/2026 | S/C | ROTA | 120 | 120 | 0 | No aplica | Sí |
+| 1 | 30/07/2026 | S/C | SPR | 50 | 50 | 0 | GR-SC-4248 | Sí |
+| 2 | 10/08/2026 | S/C | PENT | 150 | 150 | 0 | GR-SC-9647 | Sí |
+| 3 | 28/07/2026 | S/C | NEUM | 30 | 30 | 0 | GR-SC-2504 | Sí |
+| 4 | 08/08/2026 | S/C | ROTA | 120 | 120 | 0 | GR-SC-9062 | Sí |
 | 5 | 19/07/2026 | S/C | SPR | 120 | 110 | -10 | Sin guía | No |
-| 6 | 25/07/2026 | S/C | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 7 | 02/08/2026 | S/C | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 8 | 05/08/2026 | S/C | INFL | 30 | 30 | 0 | No aplica | Sí |
-| 9 | 24/07/2026 | S/C | HEPB | 30 | 30 | 0 | No aplica | Sí |
+| 6 | 25/07/2026 | S/C | SPR | 100 | 100 | 0 | GR-SC-9684 | Sí |
+| 7 | 02/08/2026 | S/C | IPV | 20 | 20 | 0 | GR-SC-9449 | Sí |
+| 8 | 05/08/2026 | S/C | INFL | 30 | 30 | 0 | GR-SC-3368 | Sí |
+| 9 | 24/07/2026 | S/C | HEPB | 30 | 30 | 0 | GR-SC-5066 | Sí |
 | 10 | 04/08/2026 | S/C | DTA | 20 | 40 | 20 | GR-SC-8635 | No |
-| 11 | 29/07/2026 | S/C | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 12 | 28/07/2026 | S/C | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 11 | 29/07/2026 | S/C | PENT | 200 | 200 | 0 | GR-SC-9222 | Sí |
+| 12 | 28/07/2026 | S/C | ROTA | 200 | 200 | 0 | GR-SC-2905 | Sí |
 | 13 | 27/07/2026 | S/C | SPR | 120 | 125 | 5 | GR-SC-7390 | No |
-| 14 | 18/07/2026 | S/C | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 15 | 10/08/2026 | S/C | DTA | 100 | 100 | 0 | No aplica | Sí |
+| 14 | 18/07/2026 | S/C | DTA | 100 | 100 | 0 | GR-SC-2580 | Sí |
+| 15 | 10/08/2026 | S/C | DTA | 100 | 100 | 0 | GR-SC-1707 | Sí |
 | 16 | 15/07/2026 | S/C | INFL | 120 | 115 | -5 | GR-SC-1956 | No |
-| 17 | 29/07/2026 | S/C | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 18 | 31/07/2026 | S/C | IPV | 180 | 180 | 0 | No aplica | Sí |
+| 17 | 29/07/2026 | S/C | HEPB | 100 | 100 | 0 | GR-SC-7610 | Sí |
+| 18 | 31/07/2026 | S/C | IPV | 180 | 180 | 0 | GR-SC-9332 | Sí |
 | 19 | 25/07/2026 | S/C | IPV | 100 | 90 | -10 | Sin guía | No |
 | 20 | 24/07/2026 | S/C | DTA | 40 | 60 | 20 | GR-SC-5940 | No |
-| 21 | 26/07/2026 | S/C | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 22 | 09/08/2026 | S/C | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 21 | 26/07/2026 | S/C | BCG | 50 | 50 | 0 | GR-SC-4901 | Sí |
+| 22 | 09/08/2026 | S/C | ROTA | 100 | 100 | 0 | GR-SC-9309 | Sí |
 | 23 | 17/07/2026 | S/C | SPR | 50 | 40 | -10 | Sin guía | No |
-| 24 | 15/07/2026 | S/C | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 25 | 11/08/2026 | S/C | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 24 | 15/07/2026 | S/C | PENT | 40 | 40 | 0 | GR-SC-3636 | Sí |
+| 25 | 10/08/2026 | S/C | HEPB | 200 | 200 | 0 | GR-SC-2525 | Sí |
 
 Cierre: 18 entregas concordantes ÷ 25 × 100 = **72.00 %**.
 
@@ -1271,31 +1279,31 @@ Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 30/09/2026 | S/C | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 2 | 29/09/2026 | S/C | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 3 | 20/09/2026 | S/C | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 4 | 15/09/2026 | S/C | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 5 | 30/09/2026 | S/C | IPV | 180 | 180 | 0 | No aplica | Sí |
-| 6 | 03/10/2026 | S/C | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 7 | 07/10/2026 | S/C | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 8 | 24/09/2026 | S/C | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 9 | 19/09/2026 | S/C | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 10 | 26/09/2026 | S/C | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 11 | 06/10/2026 | S/C | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 12 | 30/09/2026 | S/C | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 20/09/2026 | S/C | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 14 | 22/09/2026 | S/C | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 15 | 19/09/2026 | S/C | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 16 | 02/10/2026 | S/C | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 1 | 30/09/2026 | S/C | ROTA | 80 | 80 | 0 | GR-SC-8716 | Sí |
+| 2 | 29/09/2026 | S/C | INFL | 40 | 40 | 0 | GR-SC-9536 | Sí |
+| 3 | 20/09/2026 | S/C | PENT | 120 | 120 | 0 | GR-SC-8667 | Sí |
+| 4 | 15/09/2026 | S/C | INFL | 200 | 200 | 0 | GR-SC-9230 | Sí |
+| 5 | 30/09/2026 | S/C | IPV | 180 | 180 | 0 | GR-SC-9134 | Sí |
+| 6 | 03/10/2026 | S/C | INFL | 40 | 40 | 0 | GR-SC-2371 | Sí |
+| 7 | 07/10/2026 | S/C | HEPB | 60 | 60 | 0 | GR-SC-8182 | Sí |
+| 8 | 24/09/2026 | S/C | SPR | 20 | 20 | 0 | GR-SC-4770 | Sí |
+| 9 | 19/09/2026 | S/C | DTA | 80 | 80 | 0 | GR-SC-1217 | Sí |
+| 10 | 26/09/2026 | S/C | VARI | 50 | 50 | 0 | GR-SC-7871 | Sí |
+| 11 | 06/10/2026 | S/C | DTA | 40 | 40 | 0 | GR-SC-8895 | Sí |
+| 12 | 30/09/2026 | S/C | SPR | 200 | 200 | 0 | GR-SC-1650 | Sí |
+| 13 | 20/09/2026 | S/C | IPV | 80 | 80 | 0 | GR-SC-1202 | Sí |
+| 14 | 22/09/2026 | S/C | SPR | 30 | 30 | 0 | GR-SC-2784 | Sí |
+| 15 | 19/09/2026 | S/C | BCG | 100 | 100 | 0 | GR-SC-5757 | Sí |
+| 16 | 02/10/2026 | S/C | PENT | 20 | 20 | 0 | GR-SC-1925 | Sí |
 | 17 | 23/09/2026 | S/C | SPR | 50 | 45 | -5 | GR-SC-5460 | No |
-| 18 | 24/09/2026 | S/C | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 19 | 29/09/2026 | S/C | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 20 | 08/10/2026 | S/C | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 18/09/2026 | S/C | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 22 | 28/09/2026 | S/C | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 23 | 27/09/2026 | S/C | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 24 | 22/09/2026 | S/C | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 25 | 04/10/2026 | S/C | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 18 | 24/09/2026 | S/C | INFL | 50 | 50 | 0 | GR-SC-5851 | Sí |
+| 19 | 29/09/2026 | S/C | PENT | 200 | 200 | 0 | GR-SC-4258 | Sí |
+| 20 | 08/10/2026 | S/C | BCG | 50 | 50 | 0 | GR-SC-6675 | Sí |
+| 21 | 18/09/2026 | S/C | VARI | 150 | 150 | 0 | GR-SC-8253 | Sí |
+| 22 | 28/09/2026 | S/C | ROTA | 200 | 200 | 0 | GR-SC-6369 | Sí |
+| 23 | 27/09/2026 | S/C | BCG | 100 | 100 | 0 | GR-SC-6547 | Sí |
+| 24 | 22/09/2026 | S/C | HEPB | 50 | 50 | 0 | GR-SC-5518 | Sí |
+| 25 | 04/10/2026 | S/C | HEPB | 80 | 80 | 0 | GR-SC-7852 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1352,31 +1360,31 @@ Documentos auditados: 40 · Conformes: 29 · RSD: 72.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 18/07/2026 | 11214 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 2 | 17/07/2026 | 11214 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 3 | 23/07/2026 | 11214 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 4 | 15/07/2026 | 11214 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 1 | 18/07/2026 | 11214 | PENT | 180 | 180 | 0 | GR-11214-1867 | Sí |
+| 2 | 17/07/2026 | 11214 | ROTA | 60 | 60 | 0 | GR-11214-3727 | Sí |
+| 3 | 23/07/2026 | 11214 | INFL | 200 | 200 | 0 | GR-11214-7535 | Sí |
+| 4 | 15/07/2026 | 11214 | BCG | 20 | 20 | 0 | GR-11214-6917 | Sí |
 | 5 | 09/08/2026 | 11214 | HEPB | 20 | 25 | 5 | Sin guía | No |
 | 6 | 07/08/2026 | 11214 | HEPB | 200 | 210 | 10 | GR-11214-3436 | No |
-| 7 | 05/08/2026 | 11214 | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 8 | 29/07/2026 | 11214 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 28/07/2026 | 11214 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 10 | 17/07/2026 | 11214 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 11 | 07/08/2026 | 11214 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 12 | 28/07/2026 | 11214 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 7 | 05/08/2026 | 11214 | INFL | 150 | 150 | 0 | GR-11214-3215 | Sí |
+| 8 | 29/07/2026 | 11214 | INFL | 60 | 60 | 0 | GR-11214-8558 | Sí |
+| 9 | 28/07/2026 | 11214 | SPR | 30 | 30 | 0 | GR-11214-6777 | Sí |
+| 10 | 17/07/2026 | 11214 | BCG | 20 | 20 | 0 | GR-11214-3444 | Sí |
+| 11 | 07/08/2026 | 11214 | SPR | 60 | 60 | 0 | GR-11214-8380 | Sí |
+| 12 | 28/07/2026 | 11214 | HEPB | 20 | 20 | 0 | GR-11214-8787 | Sí |
 | 13 | 05/08/2026 | 11214 | DTA | 120 | 110 | -10 | Sin guía | No |
-| 14 | 14/07/2026 | 11214 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 15 | 25/07/2026 | 11214 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 16 | 04/08/2026 | 11214 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 17 | 04/08/2026 | 11214 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 18 | 05/08/2026 | 11214 | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 14 | 14/07/2026 | 11214 | DTA | 200 | 200 | 0 | GR-11214-6766 | Sí |
+| 15 | 25/07/2026 | 11214 | ROTA | 100 | 100 | 0 | GR-11214-6379 | Sí |
+| 16 | 04/08/2026 | 11214 | ROTA | 40 | 40 | 0 | GR-11214-7297 | Sí |
+| 17 | 04/08/2026 | 11214 | PENT | 180 | 180 | 0 | GR-11214-4321 | Sí |
+| 18 | 05/08/2026 | 11214 | DTA | 20 | 20 | 0 | GR-11214-1658 | Sí |
 | 19 | 09/08/2026 | 11214 | VARI | 200 | 190 | -10 | GR-11214-3780 | No |
-| 20 | 15/07/2026 | 11214 | PENT | 40 | 40 | 0 | No aplica | Sí |
-| 21 | 10/08/2026 | 11214 | HEPB | 80 | 80 | 0 | No aplica | Sí |
+| 20 | 15/07/2026 | 11214 | PENT | 40 | 40 | 0 | GR-11214-1328 | Sí |
+| 21 | 10/08/2026 | 11214 | HEPB | 80 | 80 | 0 | GR-11214-9574 | Sí |
 | 22 | 19/07/2026 | 11214 | BCG | 100 | 95 | -5 | GR-11214-3004 | No |
-| 23 | 11/08/2026 | 11214 | HEPB | 50 | 55 | 5 | Sin guía | No |
-| 24 | 02/08/2026 | 11214 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 20/07/2026 | 11214 | DTA | 180 | 180 | 0 | No aplica | Sí |
+| 23 | 10/08/2026 | 11214 | HEPB | 50 | 55 | 5 | Sin guía | No |
+| 24 | 02/08/2026 | 11214 | ROTA | 200 | 200 | 0 | GR-11214-8880 | Sí |
+| 25 | 20/07/2026 | 11214 | DTA | 180 | 180 | 0 | GR-11214-7473 | Sí |
 
 Cierre: 19 entregas concordantes ÷ 25 × 100 = **76.00 %**.
 
@@ -1433,31 +1441,31 @@ Documentos auditados: 40 · Conformes: 36 · RSD: 90.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 27/09/2026 | 11214 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 27/09/2026 | 11214 | INFL | 30 | 30 | 0 | GR-11214-8358 | Sí |
 | 2 | 20/09/2026 | 11214 | DTA | 20 | 15 | -5 | GR-11214-2646 | No |
-| 3 | 21/09/2026 | 11214 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 4 | 28/09/2026 | 11214 | HEPB | 40 | 40 | 0 | No aplica | Sí |
-| 5 | 01/10/2026 | 11214 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 6 | 08/10/2026 | 11214 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 7 | 06/10/2026 | 11214 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 8 | 15/09/2026 | 11214 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 9 | 17/09/2026 | 11214 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 19/09/2026 | 11214 | INFL | 80 | 80 | 0 | No aplica | Sí |
-| 11 | 30/09/2026 | 11214 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 12 | 02/10/2026 | 11214 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 13 | 26/09/2026 | 11214 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 18/09/2026 | 11214 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 15 | 21/09/2026 | 11214 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 16 | 08/10/2026 | 11214 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 17 | 24/09/2026 | 11214 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 18 | 02/10/2026 | 11214 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 19 | 04/10/2026 | 11214 | INFL | 180 | 180 | 0 | No aplica | Sí |
-| 20 | 04/10/2026 | 11214 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 26/09/2026 | 11214 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 22 | 24/09/2026 | 11214 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 23 | 22/09/2026 | 11214 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 24 | 04/10/2026 | 11214 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 25 | 29/09/2026 | 11214 | IPV | 60 | 60 | 0 | No aplica | Sí |
+| 3 | 21/09/2026 | 11214 | NEUM | 30 | 30 | 0 | GR-11214-4720 | Sí |
+| 4 | 28/09/2026 | 11214 | HEPB | 40 | 40 | 0 | GR-11214-7322 | Sí |
+| 5 | 01/10/2026 | 11214 | DTA | 60 | 60 | 0 | GR-11214-8699 | Sí |
+| 6 | 08/10/2026 | 11214 | PENT | 120 | 120 | 0 | GR-11214-3294 | Sí |
+| 7 | 06/10/2026 | 11214 | INFL | 60 | 60 | 0 | GR-11214-8543 | Sí |
+| 8 | 15/09/2026 | 11214 | IPV | 40 | 40 | 0 | GR-11214-3071 | Sí |
+| 9 | 17/09/2026 | 11214 | SPR | 100 | 100 | 0 | GR-11214-5337 | Sí |
+| 10 | 19/09/2026 | 11214 | INFL | 80 | 80 | 0 | GR-11214-3298 | Sí |
+| 11 | 30/09/2026 | 11214 | NEUM | 20 | 20 | 0 | GR-11214-4903 | Sí |
+| 12 | 02/10/2026 | 11214 | IPV | 20 | 20 | 0 | GR-11214-3021 | Sí |
+| 13 | 26/09/2026 | 11214 | NEUM | 60 | 60 | 0 | GR-11214-6153 | Sí |
+| 14 | 18/09/2026 | 11214 | DTA | 50 | 50 | 0 | GR-11214-9366 | Sí |
+| 15 | 21/09/2026 | 11214 | ROTA | 50 | 50 | 0 | GR-11214-8952 | Sí |
+| 16 | 08/10/2026 | 11214 | DTA | 150 | 150 | 0 | GR-11214-2689 | Sí |
+| 17 | 24/09/2026 | 11214 | HEPB | 120 | 120 | 0 | GR-11214-4777 | Sí |
+| 18 | 02/10/2026 | 11214 | SPR | 30 | 30 | 0 | GR-11214-4071 | Sí |
+| 19 | 04/10/2026 | 11214 | INFL | 180 | 180 | 0 | GR-11214-8141 | Sí |
+| 20 | 04/10/2026 | 11214 | PENT | 50 | 50 | 0 | GR-11214-5550 | Sí |
+| 21 | 26/09/2026 | 11214 | DTA | 80 | 80 | 0 | GR-11214-8085 | Sí |
+| 22 | 24/09/2026 | 11214 | INFL | 50 | 50 | 0 | GR-11214-7863 | Sí |
+| 23 | 22/09/2026 | 11214 | ROTA | 50 | 50 | 0 | GR-11214-5388 | Sí |
+| 24 | 04/10/2026 | 11214 | IPV | 20 | 20 | 0 | GR-11214-8203 | Sí |
+| 25 | 29/09/2026 | 11214 | IPV | 60 | 60 | 0 | GR-11214-8920 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1514,27 +1522,27 @@ Documentos auditados: 40 · Conformes: 22 · RSD: 55.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 31/07/2026 | 6804 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 2 | 16/07/2026 | 6804 | BCG | 60 | 60 | 0 | No aplica | Sí |
+| 1 | 31/07/2026 | 6804 | SPR | 100 | 100 | 0 | GR-6804-6088 | Sí |
+| 2 | 16/07/2026 | 6804 | BCG | 60 | 60 | 0 | GR-6804-9607 | Sí |
 | 3 | 20/07/2026 | 6804 | NEUM | 80 | 70 | -10 | GR-6804-1382 | No |
-| 4 | 22/07/2026 | 6804 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 5 | 31/07/2026 | 6804 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 6 | 17/07/2026 | 6804 | PENT | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 28/07/2026 | 6804 | SPR | 80 | 80 | 0 | No aplica | Sí |
-| 8 | 20/07/2026 | 6804 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 9 | 10/08/2026 | 6804 | VARI | 60 | 60 | 0 | No aplica | Sí |
+| 4 | 22/07/2026 | 6804 | HEPB | 100 | 100 | 0 | GR-6804-3006 | Sí |
+| 5 | 31/07/2026 | 6804 | SPR | 40 | 40 | 0 | GR-6804-8690 | Sí |
+| 6 | 17/07/2026 | 6804 | PENT | 60 | 60 | 0 | GR-6804-1790 | Sí |
+| 7 | 28/07/2026 | 6804 | SPR | 80 | 80 | 0 | GR-6804-5929 | Sí |
+| 8 | 20/07/2026 | 6804 | PENT | 80 | 80 | 0 | GR-6804-8048 | Sí |
+| 9 | 10/08/2026 | 6804 | VARI | 60 | 60 | 0 | GR-6804-7842 | Sí |
 | 10 | 23/07/2026 | 6804 | BCG | 40 | 45 | 5 | Sin guía | No |
-| 11 | 19/07/2026 | 6804 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 11 | 19/07/2026 | 6804 | SPR | 120 | 120 | 0 | GR-6804-5906 | Sí |
 | 12 | 05/08/2026 | 6804 | ROTA | 20 | 15 | -5 | Sin guía | No |
 | 13 | 28/07/2026 | 6804 | VARI | 80 | 90 | 10 | GR-6804-6122 | No |
-| 14 | 30/07/2026 | 6804 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 15 | 26/07/2026 | 6804 | VARI | 100 | 100 | 0 | No aplica | Sí |
+| 14 | 30/07/2026 | 6804 | VARI | 80 | 80 | 0 | GR-6804-9240 | Sí |
+| 15 | 26/07/2026 | 6804 | VARI | 100 | 100 | 0 | GR-6804-6073 | Sí |
 | 16 | 01/08/2026 | 6804 | ROTA | 100 | 90 | -10 | GR-6804-2782 | No |
-| 17 | 03/08/2026 | 6804 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 18 | 22/07/2026 | 6804 | ROTA | 30 | 30 | 0 | No aplica | Sí |
+| 17 | 03/08/2026 | 6804 | NEUM | 60 | 60 | 0 | GR-6804-8089 | Sí |
+| 18 | 22/07/2026 | 6804 | ROTA | 30 | 30 | 0 | GR-6804-8501 | Sí |
 | 19 | 20/07/2026 | 6804 | SPR | 80 | 70 | -10 | Sin guía | No |
-| 20 | 27/07/2026 | 6804 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 10/08/2026 | 6804 | BCG | 40 | 40 | 0 | No aplica | Sí |
+| 20 | 27/07/2026 | 6804 | VARI | 50 | 50 | 0 | GR-6804-9502 | Sí |
+| 21 | 10/08/2026 | 6804 | BCG | 40 | 40 | 0 | GR-6804-1815 | Sí |
 | 22 | 11/08/2026 | 6804 | HEPB | 180 | 185 | 5 | Sin guía | No |
 | 23 | 04/08/2026 | 6804 | HEPB | 40 | 30 | -10 | Sin guía | No |
 | 24 | 15/07/2026 | 6804 | SPR | 40 | 30 | -10 | Sin guía | No |
@@ -1595,31 +1603,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 13/10/2026 | 6804 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 2 | 08/10/2026 | 6804 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 3 | 18/09/2026 | 6804 | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 4 | 06/10/2026 | 6804 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 5 | 26/09/2026 | 6804 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 6 | 30/09/2026 | 6804 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 7 | 09/10/2026 | 6804 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 8 | 02/10/2026 | 6804 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 9 | 22/09/2026 | 6804 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 10 | 14/10/2026 | 6804 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 11 | 14/10/2026 | 6804 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 12 | 06/10/2026 | 6804 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 13 | 05/10/2026 | 6804 | NEUM | 30 | 30 | 0 | No aplica | Sí |
+| 1 | 13/10/2026 | 6804 | INFL | 40 | 40 | 0 | GR-6804-2129 | Sí |
+| 2 | 08/10/2026 | 6804 | ROTA | 60 | 60 | 0 | GR-6804-2187 | Sí |
+| 3 | 18/09/2026 | 6804 | HEPB | 50 | 50 | 0 | GR-6804-4034 | Sí |
+| 4 | 06/10/2026 | 6804 | HEPB | 180 | 180 | 0 | GR-6804-4894 | Sí |
+| 5 | 26/09/2026 | 6804 | VARI | 100 | 100 | 0 | GR-6804-7460 | Sí |
+| 6 | 30/09/2026 | 6804 | DTA | 30 | 30 | 0 | GR-6804-2940 | Sí |
+| 7 | 09/10/2026 | 6804 | ROTA | 20 | 20 | 0 | GR-6804-7200 | Sí |
+| 8 | 02/10/2026 | 6804 | VARI | 80 | 80 | 0 | GR-6804-6556 | Sí |
+| 9 | 22/09/2026 | 6804 | SPR | 150 | 150 | 0 | GR-6804-6841 | Sí |
+| 10 | 13/10/2026 | 6804 | DTA | 60 | 60 | 0 | GR-6804-7949 | Sí |
+| 11 | 13/10/2026 | 6804 | IPV | 80 | 80 | 0 | GR-6804-7297 | Sí |
+| 12 | 06/10/2026 | 6804 | NEUM | 60 | 60 | 0 | GR-6804-2842 | Sí |
+| 13 | 05/10/2026 | 6804 | NEUM | 30 | 30 | 0 | GR-6804-3368 | Sí |
 | 14 | 07/10/2026 | 6804 | INFL | 80 | 70 | -10 | GR-6804-9557 | No |
-| 15 | 09/10/2026 | 6804 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 16 | 17/09/2026 | 6804 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 17 | 17/09/2026 | 6804 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 18 | 23/09/2026 | 6804 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 19 | 12/10/2026 | 6804 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 20 | 09/10/2026 | 6804 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 21 | 10/10/2026 | 6804 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 22 | 18/09/2026 | 6804 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 23 | 30/09/2026 | 6804 | VARI | 180 | 180 | 0 | No aplica | Sí |
-| 24 | 14/10/2026 | 6804 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 22/09/2026 | 6804 | INFL | 80 | 80 | 0 | No aplica | Sí |
+| 15 | 09/10/2026 | 6804 | ROTA | 50 | 50 | 0 | GR-6804-6188 | Sí |
+| 16 | 17/09/2026 | 6804 | BCG | 60 | 60 | 0 | GR-6804-2040 | Sí |
+| 17 | 17/09/2026 | 6804 | INFL | 120 | 120 | 0 | GR-6804-3347 | Sí |
+| 18 | 23/09/2026 | 6804 | NEUM | 180 | 180 | 0 | GR-6804-9651 | Sí |
+| 19 | 12/10/2026 | 6804 | IPV | 20 | 20 | 0 | GR-6804-5301 | Sí |
+| 20 | 09/10/2026 | 6804 | IPV | 20 | 20 | 0 | GR-6804-4632 | Sí |
+| 21 | 10/10/2026 | 6804 | VARI | 200 | 200 | 0 | GR-6804-2854 | Sí |
+| 22 | 18/09/2026 | 6804 | PENT | 30 | 30 | 0 | GR-6804-9050 | Sí |
+| 23 | 30/09/2026 | 6804 | VARI | 180 | 180 | 0 | GR-6804-1963 | Sí |
+| 24 | 13/10/2026 | 6804 | VARI | 200 | 200 | 0 | GR-6804-2049 | Sí |
+| 25 | 22/09/2026 | 6804 | INFL | 80 | 80 | 0 | GR-6804-4263 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1677,29 +1685,29 @@ Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliada
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
 | 1 | 07/08/2026 | 4195 | NEUM | 80 | 70 | -10 | GR-4195-2012 | No |
-| 2 | 17/07/2026 | 4195 | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 2 | 17/07/2026 | 4195 | DTA | 20 | 20 | 0 | GR-4195-3772 | Sí |
 | 3 | 23/07/2026 | 4195 | DTA | 120 | 110 | -10 | Sin guía | No |
 | 4 | 28/07/2026 | 4195 | INFL | 80 | 85 | 5 | Sin guía | No |
-| 5 | 16/07/2026 | 4195 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 6 | 10/08/2026 | 4195 | PENT | 20 | 20 | 0 | No aplica | Sí |
+| 5 | 16/07/2026 | 4195 | INFL | 200 | 200 | 0 | GR-4195-8848 | Sí |
+| 6 | 10/08/2026 | 4195 | PENT | 20 | 20 | 0 | GR-4195-7694 | Sí |
 | 7 | 05/08/2026 | 4195 | SPR | 60 | 55 | -5 | Sin guía | No |
-| 8 | 06/08/2026 | 4195 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 9 | 12/08/2026 | 4195 | ROTA | 40 | 40 | 0 | No aplica | Sí |
+| 8 | 06/08/2026 | 4195 | SPR | 180 | 180 | 0 | GR-4195-2264 | Sí |
+| 9 | 11/08/2026 | 4195 | ROTA | 40 | 40 | 0 | GR-4195-7384 | Sí |
 | 10 | 07/08/2026 | 4195 | NEUM | 180 | 175 | -5 | Sin guía | No |
-| 11 | 07/08/2026 | 4195 | SPR | 120 | 120 | 0 | No aplica | Sí |
-| 12 | 27/07/2026 | 4195 | IPV | 120 | 120 | 0 | No aplica | Sí |
-| 13 | 28/07/2026 | 4195 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 14 | 25/07/2026 | 4195 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 15 | 02/08/2026 | 4195 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 16 | 20/07/2026 | 4195 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 17 | 15/07/2026 | 4195 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 18/07/2026 | 4195 | INFL | 120 | 120 | 0 | No aplica | Sí |
+| 11 | 07/08/2026 | 4195 | SPR | 120 | 120 | 0 | GR-4195-8005 | Sí |
+| 12 | 27/07/2026 | 4195 | IPV | 120 | 120 | 0 | GR-4195-8916 | Sí |
+| 13 | 28/07/2026 | 4195 | SPR | 50 | 50 | 0 | GR-4195-2347 | Sí |
+| 14 | 25/07/2026 | 4195 | HEPB | 80 | 80 | 0 | GR-4195-4392 | Sí |
+| 15 | 02/08/2026 | 4195 | HEPB | 120 | 120 | 0 | GR-4195-2406 | Sí |
+| 16 | 20/07/2026 | 4195 | VARI | 20 | 20 | 0 | GR-4195-6789 | Sí |
+| 17 | 15/07/2026 | 4195 | IPV | 40 | 40 | 0 | GR-4195-9244 | Sí |
+| 18 | 18/07/2026 | 4195 | INFL | 120 | 120 | 0 | GR-4195-4040 | Sí |
 | 19 | 07/08/2026 | 4195 | PENT | 150 | 140 | -10 | GR-4195-3834 | No |
-| 20 | 12/08/2026 | 4195 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 21 | 18/07/2026 | 4195 | VARI | 30 | 30 | 0 | No aplica | Sí |
+| 20 | 11/08/2026 | 4195 | IPV | 100 | 100 | 0 | GR-4195-1697 | Sí |
+| 21 | 18/07/2026 | 4195 | VARI | 30 | 30 | 0 | GR-4195-4156 | Sí |
 | 22 | 09/08/2026 | 4195 | BCG | 40 | 35 | -5 | GR-4195-3566 | No |
-| 23 | 22/07/2026 | 4195 | BCG | 180 | 180 | 0 | No aplica | Sí |
-| 24 | 19/07/2026 | 4195 | VARI | 180 | 180 | 0 | No aplica | Sí |
+| 23 | 22/07/2026 | 4195 | BCG | 180 | 180 | 0 | GR-4195-1646 | Sí |
+| 24 | 19/07/2026 | 4195 | VARI | 180 | 180 | 0 | GR-4195-1414 | Sí |
 | 25 | 30/07/2026 | 4195 | DTA | 200 | 190 | -10 | Sin guía | No |
 
 Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
@@ -1757,31 +1765,31 @@ Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 09/10/2026 | 4195 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 2 | 03/10/2026 | 4195 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 3 | 28/09/2026 | 4195 | IPV | 200 | 200 | 0 | No aplica | Sí |
+| 1 | 09/10/2026 | 4195 | NEUM | 40 | 40 | 0 | GR-4195-7921 | Sí |
+| 2 | 03/10/2026 | 4195 | IPV | 200 | 200 | 0 | GR-4195-5455 | Sí |
+| 3 | 28/09/2026 | 4195 | IPV | 200 | 200 | 0 | GR-4195-4487 | Sí |
 | 4 | 19/09/2026 | 4195 | IPV | 60 | 55 | -5 | GR-4195-4224 | No |
-| 5 | 18/09/2026 | 4195 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 6 | 06/10/2026 | 4195 | VARI | 30 | 30 | 0 | No aplica | Sí |
-| 7 | 19/09/2026 | 4195 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 8 | 09/10/2026 | 4195 | INFL | 100 | 100 | 0 | No aplica | Sí |
-| 9 | 29/09/2026 | 4195 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 10 | 03/10/2026 | 4195 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 11 | 16/09/2026 | 4195 | VARI | 180 | 180 | 0 | No aplica | Sí |
-| 12 | 05/10/2026 | 4195 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 25/09/2026 | 4195 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 14 | 20/09/2026 | 4195 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 15 | 14/10/2026 | 4195 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 16 | 09/10/2026 | 4195 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 17 | 17/09/2026 | 4195 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 18 | 04/10/2026 | 4195 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 19 | 30/09/2026 | 4195 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 20 | 22/09/2026 | 4195 | INFL | 40 | 40 | 0 | No aplica | Sí |
-| 21 | 04/10/2026 | 4195 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 22 | 28/09/2026 | 4195 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 23 | 14/10/2026 | 4195 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 24 | 27/09/2026 | 4195 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 25 | 13/10/2026 | 4195 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+| 5 | 18/09/2026 | 4195 | ROTA | 60 | 60 | 0 | GR-4195-3537 | Sí |
+| 6 | 06/10/2026 | 4195 | VARI | 30 | 30 | 0 | GR-4195-9774 | Sí |
+| 7 | 19/09/2026 | 4195 | IPV | 30 | 30 | 0 | GR-4195-1945 | Sí |
+| 8 | 09/10/2026 | 4195 | INFL | 100 | 100 | 0 | GR-4195-7753 | Sí |
+| 9 | 29/09/2026 | 4195 | NEUM | 20 | 20 | 0 | GR-4195-4157 | Sí |
+| 10 | 03/10/2026 | 4195 | DTA | 60 | 60 | 0 | GR-4195-3093 | Sí |
+| 11 | 16/09/2026 | 4195 | VARI | 180 | 180 | 0 | GR-4195-7096 | Sí |
+| 12 | 05/10/2026 | 4195 | VARI | 200 | 200 | 0 | GR-4195-7793 | Sí |
+| 13 | 25/09/2026 | 4195 | INFL | 200 | 200 | 0 | GR-4195-8922 | Sí |
+| 14 | 20/09/2026 | 4195 | ROTA | 150 | 150 | 0 | GR-4195-3123 | Sí |
+| 15 | 13/10/2026 | 4195 | DTA | 60 | 60 | 0 | GR-4195-7041 | Sí |
+| 16 | 09/10/2026 | 4195 | PENT | 50 | 50 | 0 | GR-4195-8803 | Sí |
+| 17 | 17/09/2026 | 4195 | SPR | 40 | 40 | 0 | GR-4195-9303 | Sí |
+| 18 | 04/10/2026 | 4195 | IPV | 50 | 50 | 0 | GR-4195-1264 | Sí |
+| 19 | 30/09/2026 | 4195 | IPV | 40 | 40 | 0 | GR-4195-5932 | Sí |
+| 20 | 22/09/2026 | 4195 | INFL | 40 | 40 | 0 | GR-4195-1459 | Sí |
+| 21 | 04/10/2026 | 4195 | IPV | 20 | 20 | 0 | GR-4195-4331 | Sí |
+| 22 | 28/09/2026 | 4195 | VARI | 100 | 100 | 0 | GR-4195-4245 | Sí |
+| 23 | 13/10/2026 | 4195 | ROTA | 180 | 180 | 0 | GR-4195-6745 | Sí |
+| 24 | 27/09/2026 | 4195 | BCG | 60 | 60 | 0 | GR-4195-2894 | Sí |
+| 25 | 13/10/2026 | 4195 | HEPB | 180 | 180 | 0 | GR-4195-5514 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -1838,31 +1846,31 @@ Documentos auditados: 40 · Conformes: 21 · RSD: 52.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 30/07/2026 | 4167-SJ | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 1 | 30/07/2026 | 4167-SJ | SPR | 40 | 40 | 0 | GR-4167SJ-8383 | Sí |
 | 2 | 23/07/2026 | 4167-SJ | BCG | 150 | 145 | -5 | GR-4167SJ-8716 | No |
-| 3 | 27/07/2026 | 4167-SJ | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 3 | 27/07/2026 | 4167-SJ | ROTA | 180 | 180 | 0 | GR-4167SJ-8736 | Sí |
 | 4 | 04/08/2026 | 4167-SJ | INFL | 120 | 115 | -5 | GR-4167SJ-8022 | No |
-| 5 | 09/08/2026 | 4167-SJ | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 6 | 10/08/2026 | 4167-SJ | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 31/07/2026 | 4167-SJ | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 8 | 31/07/2026 | 4167-SJ | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 5 | 09/08/2026 | 4167-SJ | NEUM | 20 | 20 | 0 | GR-4167SJ-7298 | Sí |
+| 6 | 10/08/2026 | 4167-SJ | DTA | 60 | 60 | 0 | GR-4167SJ-4875 | Sí |
+| 7 | 31/07/2026 | 4167-SJ | SPR | 100 | 100 | 0 | GR-4167SJ-8432 | Sí |
+| 8 | 31/07/2026 | 4167-SJ | DTA | 20 | 20 | 0 | GR-4167SJ-3921 | Sí |
 | 9 | 31/07/2026 | 4167-SJ | INFL | 180 | 185 | 5 | Sin guía | No |
 | 10 | 08/08/2026 | 4167-SJ | INFL | 180 | 170 | -10 | Sin guía | No |
-| 11 | 26/07/2026 | 4167-SJ | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 12 | 02/08/2026 | 4167-SJ | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 13 | 13/08/2026 | 4167-SJ | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 14 | 18/07/2026 | 4167-SJ | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 11 | 26/07/2026 | 4167-SJ | IPV | 60 | 60 | 0 | GR-4167SJ-4991 | Sí |
+| 12 | 02/08/2026 | 4167-SJ | DTA | 100 | 100 | 0 | GR-4167SJ-5279 | Sí |
+| 13 | 12/08/2026 | 4167-SJ | VARI | 150 | 150 | 0 | GR-4167SJ-7220 | Sí |
+| 14 | 18/07/2026 | 4167-SJ | PENT | 40 | 40 | 0 | GR-4167SJ-8240 | Sí |
 | 15 | 27/07/2026 | 4167-SJ | PENT | 50 | 40 | -10 | GR-4167SJ-9794 | No |
 | 16 | 26/07/2026 | 4167-SJ | INFL | 50 | 55 | 5 | GR-4167SJ-3790 | No |
-| 17 | 11/08/2026 | 4167-SJ | VARI | 40 | 40 | 0 | No aplica | Sí |
+| 17 | 11/08/2026 | 4167-SJ | VARI | 40 | 40 | 0 | GR-4167SJ-1428 | Sí |
 | 18 | 27/07/2026 | 4167-SJ | PENT | 180 | 175 | -5 | Sin guía | No |
 | 19 | 10/08/2026 | 4167-SJ | HEPB | 30 | 25 | -5 | GR-4167SJ-5622 | No |
-| 20 | 05/08/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 21 | 29/07/2026 | 4167-SJ | ROTA | 180 | 180 | 0 | No aplica | Sí |
+| 20 | 05/08/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | GR-4167SJ-4865 | Sí |
+| 21 | 29/07/2026 | 4167-SJ | ROTA | 180 | 180 | 0 | GR-4167SJ-2764 | Sí |
 | 22 | 25/07/2026 | 4167-SJ | DTA | 40 | 35 | -5 | GR-4167SJ-6281 | No |
 | 23 | 30/07/2026 | 4167-SJ | SPR | 150 | 155 | 5 | GR-4167SJ-6810 | No |
 | 24 | 19/07/2026 | 4167-SJ | DTA | 200 | 220 | 20 | GR-4167SJ-6169 | No |
-| 25 | 25/07/2026 | 4167-SJ | HEPB | 150 | 150 | 0 | No aplica | Sí |
+| 25 | 25/07/2026 | 4167-SJ | HEPB | 150 | 150 | 0 | GR-4167SJ-5873 | Sí |
 
 Cierre: 14 entregas concordantes ÷ 25 × 100 = **56.00 %**.
 
@@ -1919,31 +1927,31 @@ Documentos auditados: 40 · Conformes: 40 · RSD: 100.00 % · Entregas conciliad
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 05/10/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 2 | 15/10/2026 | 4167-SJ | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 3 | 20/09/2026 | 4167-SJ | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 4 | 18/09/2026 | 4167-SJ | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 5 | 30/09/2026 | 4167-SJ | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 6 | 19/09/2026 | 4167-SJ | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 01/10/2026 | 4167-SJ | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 8 | 19/09/2026 | 4167-SJ | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 22/09/2026 | 4167-SJ | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 10 | 23/09/2026 | 4167-SJ | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 11 | 25/09/2026 | 4167-SJ | BCG | 180 | 180 | 0 | No aplica | Sí |
+| 1 | 05/10/2026 | 4167-SJ | HEPB | 60 | 60 | 0 | GR-4167SJ-9273 | Sí |
+| 2 | 14/10/2026 | 4167-SJ | ROTA | 100 | 100 | 0 | GR-4167SJ-4426 | Sí |
+| 3 | 20/09/2026 | 4167-SJ | DTA | 50 | 50 | 0 | GR-4167SJ-7589 | Sí |
+| 4 | 18/09/2026 | 4167-SJ | SPR | 180 | 180 | 0 | GR-4167SJ-7609 | Sí |
+| 5 | 30/09/2026 | 4167-SJ | VARI | 150 | 150 | 0 | GR-4167SJ-4013 | Sí |
+| 6 | 19/09/2026 | 4167-SJ | BCG | 60 | 60 | 0 | GR-4167SJ-4872 | Sí |
+| 7 | 01/10/2026 | 4167-SJ | IPV | 50 | 50 | 0 | GR-4167SJ-1468 | Sí |
+| 8 | 19/09/2026 | 4167-SJ | SPR | 60 | 60 | 0 | GR-4167SJ-7299 | Sí |
+| 9 | 22/09/2026 | 4167-SJ | BCG | 80 | 80 | 0 | GR-4167SJ-6855 | Sí |
+| 10 | 23/09/2026 | 4167-SJ | HEPB | 50 | 50 | 0 | GR-4167SJ-7905 | Sí |
+| 11 | 25/09/2026 | 4167-SJ | BCG | 180 | 180 | 0 | GR-4167SJ-6929 | Sí |
 | 12 | 25/09/2026 | 4167-SJ | VARI | 50 | 55 | 5 | Sin guía | No |
-| 13 | 05/10/2026 | 4167-SJ | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 14 | 21/09/2026 | 4167-SJ | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 15 | 07/10/2026 | 4167-SJ | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 16 | 23/09/2026 | 4167-SJ | NEUM | 100 | 100 | 0 | No aplica | Sí |
-| 17 | 01/10/2026 | 4167-SJ | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 18 | 27/09/2026 | 4167-SJ | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 19 | 12/10/2026 | 4167-SJ | VARI | 40 | 40 | 0 | No aplica | Sí |
-| 20 | 12/10/2026 | 4167-SJ | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 21 | 30/09/2026 | 4167-SJ | DTA | 20 | 20 | 0 | No aplica | Sí |
+| 13 | 05/10/2026 | 4167-SJ | BCG | 150 | 150 | 0 | GR-4167SJ-8817 | Sí |
+| 14 | 21/09/2026 | 4167-SJ | SPR | 40 | 40 | 0 | GR-4167SJ-3816 | Sí |
+| 15 | 07/10/2026 | 4167-SJ | IPV | 40 | 40 | 0 | GR-4167SJ-6802 | Sí |
+| 16 | 23/09/2026 | 4167-SJ | NEUM | 100 | 100 | 0 | GR-4167SJ-4904 | Sí |
+| 17 | 01/10/2026 | 4167-SJ | HEPB | 80 | 80 | 0 | GR-4167SJ-6822 | Sí |
+| 18 | 27/09/2026 | 4167-SJ | VARI | 150 | 150 | 0 | GR-4167SJ-1748 | Sí |
+| 19 | 12/10/2026 | 4167-SJ | VARI | 40 | 40 | 0 | GR-4167SJ-4351 | Sí |
+| 20 | 12/10/2026 | 4167-SJ | HEPB | 150 | 150 | 0 | GR-4167SJ-3571 | Sí |
+| 21 | 30/09/2026 | 4167-SJ | DTA | 20 | 20 | 0 | GR-4167SJ-5299 | Sí |
 | 22 | 06/10/2026 | 4167-SJ | SPR | 50 | 55 | 5 | GR-4167SJ-5135 | No |
-| 23 | 25/09/2026 | 4167-SJ | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 20/09/2026 | 4167-SJ | VARI | 40 | 40 | 0 | No aplica | Sí |
-| 25 | 26/09/2026 | 4167-SJ | INFL | 200 | 200 | 0 | No aplica | Sí |
+| 23 | 25/09/2026 | 4167-SJ | ROTA | 200 | 200 | 0 | GR-4167SJ-9153 | Sí |
+| 24 | 20/09/2026 | 4167-SJ | VARI | 40 | 40 | 0 | GR-4167SJ-6990 | Sí |
+| 25 | 26/09/2026 | 4167-SJ | INFL | 200 | 200 | 0 | GR-4167SJ-9129 | Sí |
 
 Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
 
@@ -2000,30 +2008,30 @@ Documentos auditados: 40 · Conformes: 30 · RSD: 75.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 26/07/2026 | 4158 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 2 | 26/07/2026 | 4158 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 3 | 27/07/2026 | 4158 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 4 | 11/08/2026 | 4158 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 5 | 03/08/2026 | 4158 | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 6 | 13/08/2026 | 4158 | NEUM | 60 | 60 | 0 | No aplica | Sí |
+| 1 | 26/07/2026 | 4158 | ROTA | 150 | 150 | 0 | GR-4158-3958 | Sí |
+| 2 | 26/07/2026 | 4158 | INFL | 120 | 120 | 0 | GR-4158-4638 | Sí |
+| 3 | 27/07/2026 | 4158 | INFL | 50 | 50 | 0 | GR-4158-9067 | Sí |
+| 4 | 11/08/2026 | 4158 | NEUM | 80 | 80 | 0 | GR-4158-2226 | Sí |
+| 5 | 03/08/2026 | 4158 | BCG | 50 | 50 | 0 | GR-4158-7299 | Sí |
+| 6 | 12/08/2026 | 4158 | NEUM | 60 | 60 | 0 | GR-4158-2464 | Sí |
 | 7 | 03/08/2026 | 4158 | HEPB | 100 | 120 | 20 | GR-4158-5440 | No |
-| 8 | 01/08/2026 | 4158 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 9 | 11/08/2026 | 4158 | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 10 | 26/07/2026 | 4158 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 11 | 11/08/2026 | 4158 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 12 | 30/07/2026 | 4158 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 13 | 24/07/2026 | 4158 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 14 | 31/07/2026 | 4158 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 15 | 27/07/2026 | 4158 | INFL | 30 | 30 | 0 | No aplica | Sí |
+| 8 | 01/08/2026 | 4158 | VARI | 100 | 100 | 0 | GR-4158-6849 | Sí |
+| 9 | 11/08/2026 | 4158 | IPV | 150 | 150 | 0 | GR-4158-1302 | Sí |
+| 10 | 26/07/2026 | 4158 | DTA | 30 | 30 | 0 | GR-4158-8967 | Sí |
+| 11 | 11/08/2026 | 4158 | VARI | 100 | 100 | 0 | GR-4158-7180 | Sí |
+| 12 | 30/07/2026 | 4158 | ROTA | 200 | 200 | 0 | GR-4158-2373 | Sí |
+| 13 | 24/07/2026 | 4158 | HEPB | 180 | 180 | 0 | GR-4158-5162 | Sí |
+| 14 | 31/07/2026 | 4158 | DTA | 120 | 120 | 0 | GR-4158-1939 | Sí |
+| 15 | 27/07/2026 | 4158 | INFL | 30 | 30 | 0 | GR-4158-1772 | Sí |
 | 16 | 04/08/2026 | 4158 | INFL | 30 | 25 | -5 | Sin guía | No |
 | 17 | 09/08/2026 | 4158 | IPV | 80 | 75 | -5 | GR-4158-5530 | No |
-| 18 | 25/07/2026 | 4158 | NEUM | 50 | 50 | 0 | No aplica | Sí |
+| 18 | 25/07/2026 | 4158 | NEUM | 50 | 50 | 0 | GR-4158-3825 | Sí |
 | 19 | 01/08/2026 | 4158 | INFL | 120 | 110 | -10 | GR-4158-3719 | No |
-| 20 | 30/07/2026 | 4158 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 23/07/2026 | 4158 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 22 | 09/08/2026 | 4158 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 23 | 19/07/2026 | 4158 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 24 | 21/07/2026 | 4158 | BCG | 20 | 20 | 0 | No aplica | Sí |
+| 20 | 30/07/2026 | 4158 | ROTA | 50 | 50 | 0 | GR-4158-3752 | Sí |
+| 21 | 23/07/2026 | 4158 | HEPB | 100 | 100 | 0 | GR-4158-6817 | Sí |
+| 22 | 09/08/2026 | 4158 | DTA | 50 | 50 | 0 | GR-4158-6025 | Sí |
+| 23 | 19/07/2026 | 4158 | SPR | 150 | 150 | 0 | GR-4158-4624 | Sí |
+| 24 | 21/07/2026 | 4158 | BCG | 20 | 20 | 0 | GR-4158-7997 | Sí |
 | 25 | 11/08/2026 | 4158 | PENT | 180 | 170 | -10 | GR-4158-3238 | No |
 
 Cierre: 20 entregas concordantes ÷ 25 × 100 = **80.00 %**.
@@ -2081,31 +2089,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 14/10/2026 | 4158 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 2 | 03/10/2026 | 4158 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 3 | 18/09/2026 | 4158 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 4 | 01/10/2026 | 4158 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 5 | 03/10/2026 | 4158 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 6 | 08/10/2026 | 4158 | NEUM | 100 | 100 | 0 | No aplica | Sí |
-| 7 | 13/10/2026 | 4158 | HEPB | 150 | 150 | 0 | No aplica | Sí |
-| 8 | 20/09/2026 | 4158 | SPR | 40 | 40 | 0 | No aplica | Sí |
-| 9 | 12/10/2026 | 4158 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 15/10/2026 | 4158 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 11 | 10/10/2026 | 4158 | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 12 | 18/09/2026 | 4158 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 1 | 14/10/2026 | 4158 | ROTA | 40 | 40 | 0 | GR-4158-3490 | Sí |
+| 2 | 03/10/2026 | 4158 | SPR | 40 | 40 | 0 | GR-4158-7925 | Sí |
+| 3 | 18/09/2026 | 4158 | HEPB | 150 | 150 | 0 | GR-4158-2447 | Sí |
+| 4 | 01/10/2026 | 4158 | BCG | 40 | 40 | 0 | GR-4158-2406 | Sí |
+| 5 | 03/10/2026 | 4158 | SPR | 30 | 30 | 0 | GR-4158-2941 | Sí |
+| 6 | 08/10/2026 | 4158 | NEUM | 100 | 100 | 0 | GR-4158-3063 | Sí |
+| 7 | 13/10/2026 | 4158 | HEPB | 150 | 150 | 0 | GR-4158-3339 | Sí |
+| 8 | 20/09/2026 | 4158 | SPR | 40 | 40 | 0 | GR-4158-3012 | Sí |
+| 9 | 12/10/2026 | 4158 | IPV | 100 | 100 | 0 | GR-4158-2705 | Sí |
+| 10 | 14/10/2026 | 4158 | BCG | 120 | 120 | 0 | GR-4158-4511 | Sí |
+| 11 | 10/10/2026 | 4158 | HEPB | 50 | 50 | 0 | GR-4158-2766 | Sí |
+| 12 | 18/09/2026 | 4158 | SPR | 120 | 120 | 0 | GR-4158-9642 | Sí |
 | 13 | 26/09/2026 | 4158 | DTA | 50 | 40 | -10 | GR-4158-8312 | No |
-| 14 | 05/10/2026 | 4158 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 15 | 21/09/2026 | 4158 | SPR | 20 | 20 | 0 | No aplica | Sí |
-| 16 | 19/09/2026 | 4158 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 17 | 22/09/2026 | 4158 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 18 | 01/10/2026 | 4158 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 19 | 21/09/2026 | 4158 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 20 | 26/09/2026 | 4158 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 21 | 11/10/2026 | 4158 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 22 | 17/09/2026 | 4158 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 23 | 12/10/2026 | 4158 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 01/10/2026 | 4158 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 25 | 10/10/2026 | 4158 | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 14 | 05/10/2026 | 4158 | IPV | 60 | 60 | 0 | GR-4158-8198 | Sí |
+| 15 | 21/09/2026 | 4158 | SPR | 20 | 20 | 0 | GR-4158-4148 | Sí |
+| 16 | 19/09/2026 | 4158 | BCG | 120 | 120 | 0 | GR-4158-8501 | Sí |
+| 17 | 22/09/2026 | 4158 | BCG | 20 | 20 | 0 | GR-4158-8581 | Sí |
+| 18 | 01/10/2026 | 4158 | VARI | 200 | 200 | 0 | GR-4158-7008 | Sí |
+| 19 | 21/09/2026 | 4158 | PENT | 180 | 180 | 0 | GR-4158-7584 | Sí |
+| 20 | 26/09/2026 | 4158 | NEUM | 180 | 180 | 0 | GR-4158-6335 | Sí |
+| 21 | 11/10/2026 | 4158 | DTA | 80 | 80 | 0 | GR-4158-6765 | Sí |
+| 22 | 17/09/2026 | 4158 | NEUM | 200 | 200 | 0 | GR-4158-4871 | Sí |
+| 23 | 12/10/2026 | 4158 | SPR | 200 | 200 | 0 | GR-4158-8203 | Sí |
+| 24 | 01/10/2026 | 4158 | SPR | 150 | 150 | 0 | GR-4158-7269 | Sí |
+| 25 | 10/10/2026 | 4158 | BCG | 50 | 50 | 0 | GR-4158-4204 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -2162,31 +2170,31 @@ Documentos auditados: 40 · Conformes: 29 · RSD: 72.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 02/08/2026 | 4202 | ROTA | 150 | 150 | 0 | No aplica | Sí |
+| 1 | 02/08/2026 | 4202 | ROTA | 150 | 150 | 0 | GR-4202-5948 | Sí |
 | 2 | 26/07/2026 | 4202 | DTA | 120 | 110 | -10 | GR-4202-3689 | No |
-| 3 | 14/08/2026 | 4202 | VARI | 30 | 30 | 0 | No aplica | Sí |
-| 4 | 22/07/2026 | 4202 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 5 | 13/08/2026 | 4202 | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 6 | 31/07/2026 | 4202 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 7 | 18/07/2026 | 4202 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 8 | 01/08/2026 | 4202 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 3 | 13/08/2026 | 4202 | VARI | 30 | 30 | 0 | GR-4202-3241 | Sí |
+| 4 | 22/07/2026 | 4202 | DTA | 100 | 100 | 0 | GR-4202-7223 | Sí |
+| 5 | 13/08/2026 | 4202 | PENT | 200 | 200 | 0 | GR-4202-8743 | Sí |
+| 6 | 31/07/2026 | 4202 | DTA | 120 | 120 | 0 | GR-4202-2847 | Sí |
+| 7 | 18/07/2026 | 4202 | VARI | 100 | 100 | 0 | GR-4202-4982 | Sí |
+| 8 | 01/08/2026 | 4202 | VARI | 80 | 80 | 0 | GR-4202-4892 | Sí |
 | 9 | 10/08/2026 | 4202 | ROTA | 100 | 95 | -5 | GR-4202-5538 | No |
-| 10 | 27/07/2026 | 4202 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 11 | 29/07/2026 | 4202 | BCG | 30 | 30 | 0 | No aplica | Sí |
-| 12 | 27/07/2026 | 4202 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 10 | 27/07/2026 | 4202 | ROTA | 20 | 20 | 0 | GR-4202-9570 | Sí |
+| 11 | 29/07/2026 | 4202 | BCG | 30 | 30 | 0 | GR-4202-4533 | Sí |
+| 12 | 27/07/2026 | 4202 | SPR | 120 | 120 | 0 | GR-4202-7713 | Sí |
 | 13 | 23/07/2026 | 4202 | DTA | 40 | 45 | 5 | Sin guía | No |
-| 14 | 31/07/2026 | 4202 | NEUM | 30 | 30 | 0 | No aplica | Sí |
-| 15 | 22/07/2026 | 4202 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 14 | 31/07/2026 | 4202 | NEUM | 30 | 30 | 0 | GR-4202-4087 | Sí |
+| 15 | 22/07/2026 | 4202 | DTA | 150 | 150 | 0 | GR-4202-5093 | Sí |
 | 16 | 11/08/2026 | 4202 | VARI | 40 | 30 | -10 | GR-4202-8509 | No |
 | 17 | 09/08/2026 | 4202 | DTA | 20 | 15 | -5 | Sin guía | No |
-| 18 | 02/08/2026 | 4202 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 18 | 02/08/2026 | 4202 | VARI | 80 | 80 | 0 | GR-4202-8645 | Sí |
 | 19 | 23/07/2026 | 4202 | SPR | 50 | 40 | -10 | Sin guía | No |
-| 20 | 28/07/2026 | 4202 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 21 | 30/07/2026 | 4202 | DTA | 180 | 180 | 0 | No aplica | Sí |
-| 22 | 20/07/2026 | 4202 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 23 | 19/07/2026 | 4202 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 24 | 30/07/2026 | 4202 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 12/08/2026 | 4202 | ROTA | 200 | 200 | 0 | No aplica | Sí |
+| 20 | 28/07/2026 | 4202 | HEPB | 80 | 80 | 0 | GR-4202-5052 | Sí |
+| 21 | 30/07/2026 | 4202 | DTA | 180 | 180 | 0 | GR-4202-2504 | Sí |
+| 22 | 20/07/2026 | 4202 | HEPB | 200 | 200 | 0 | GR-4202-8855 | Sí |
+| 23 | 19/07/2026 | 4202 | SPR | 60 | 60 | 0 | GR-4202-6777 | Sí |
+| 24 | 30/07/2026 | 4202 | INFL | 200 | 200 | 0 | GR-4202-2834 | Sí |
+| 25 | 12/08/2026 | 4202 | ROTA | 200 | 200 | 0 | GR-4202-8116 | Sí |
 
 Cierre: 19 entregas concordantes ÷ 25 × 100 = **76.00 %**.
 
@@ -2243,31 +2251,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 29/09/2026 | 4202 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 2 | 07/10/2026 | 4202 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 3 | 24/09/2026 | 4202 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 4 | 30/09/2026 | 4202 | INFL | 60 | 60 | 0 | No aplica | Sí |
-| 5 | 03/10/2026 | 4202 | NEUM | 180 | 180 | 0 | No aplica | Sí |
+| 1 | 29/09/2026 | 4202 | IPV | 60 | 60 | 0 | GR-4202-3659 | Sí |
+| 2 | 07/10/2026 | 4202 | IPV | 60 | 60 | 0 | GR-4202-8307 | Sí |
+| 3 | 24/09/2026 | 4202 | PENT | 20 | 20 | 0 | GR-4202-1582 | Sí |
+| 4 | 30/09/2026 | 4202 | INFL | 60 | 60 | 0 | GR-4202-6429 | Sí |
+| 5 | 03/10/2026 | 4202 | NEUM | 180 | 180 | 0 | GR-4202-4746 | Sí |
 | 6 | 21/09/2026 | 4202 | INFL | 40 | 45 | 5 | Sin guía | No |
-| 7 | 20/09/2026 | 4202 | BCG | 40 | 40 | 0 | No aplica | Sí |
-| 8 | 23/09/2026 | 4202 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 9 | 20/09/2026 | 4202 | VARI | 30 | 30 | 0 | No aplica | Sí |
-| 10 | 25/09/2026 | 4202 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 11 | 21/09/2026 | 4202 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 12 | 19/09/2026 | 4202 | IPV | 120 | 120 | 0 | No aplica | Sí |
-| 13 | 06/10/2026 | 4202 | VARI | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 18/09/2026 | 4202 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 15 | 20/09/2026 | 4202 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 16 | 14/10/2026 | 4202 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 17 | 02/10/2026 | 4202 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 18 | 30/09/2026 | 4202 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 19 | 20/09/2026 | 4202 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 20 | 26/09/2026 | 4202 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 21 | 24/09/2026 | 4202 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 22 | 24/09/2026 | 4202 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 23 | 16/10/2026 | 4202 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 24 | 13/10/2026 | 4202 | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 25 | 26/09/2026 | 4202 | ROTA | 120 | 120 | 0 | No aplica | Sí |
+| 7 | 20/09/2026 | 4202 | BCG | 40 | 40 | 0 | GR-4202-1876 | Sí |
+| 8 | 23/09/2026 | 4202 | NEUM | 120 | 120 | 0 | GR-4202-2415 | Sí |
+| 9 | 20/09/2026 | 4202 | VARI | 30 | 30 | 0 | GR-4202-8737 | Sí |
+| 10 | 25/09/2026 | 4202 | INFL | 50 | 50 | 0 | GR-4202-3145 | Sí |
+| 11 | 21/09/2026 | 4202 | DTA | 50 | 50 | 0 | GR-4202-6375 | Sí |
+| 12 | 19/09/2026 | 4202 | IPV | 120 | 120 | 0 | GR-4202-9105 | Sí |
+| 13 | 06/10/2026 | 4202 | VARI | 60 | 60 | 0 | GR-4202-9784 | Sí |
+| 14 | 18/09/2026 | 4202 | ROTA | 60 | 60 | 0 | GR-4202-3744 | Sí |
+| 15 | 20/09/2026 | 4202 | IPV | 30 | 30 | 0 | GR-4202-4527 | Sí |
+| 16 | 14/10/2026 | 4202 | ROTA | 180 | 180 | 0 | GR-4202-3840 | Sí |
+| 17 | 02/10/2026 | 4202 | DTA | 30 | 30 | 0 | GR-4202-6396 | Sí |
+| 18 | 30/09/2026 | 4202 | IPV | 30 | 30 | 0 | GR-4202-4107 | Sí |
+| 19 | 20/09/2026 | 4202 | SPR | 150 | 150 | 0 | GR-4202-6320 | Sí |
+| 20 | 26/09/2026 | 4202 | INFL | 20 | 20 | 0 | GR-4202-6561 | Sí |
+| 21 | 24/09/2026 | 4202 | NEUM | 20 | 20 | 0 | GR-4202-3006 | Sí |
+| 22 | 24/09/2026 | 4202 | DTA | 30 | 30 | 0 | GR-4202-9143 | Sí |
+| 23 | 15/10/2026 | 4202 | NEUM | 80 | 80 | 0 | GR-4202-3186 | Sí |
+| 24 | 13/10/2026 | 4202 | BCG | 100 | 100 | 0 | GR-4202-4110 | Sí |
+| 25 | 26/09/2026 | 4202 | ROTA | 120 | 120 | 0 | GR-4202-5053 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -2324,31 +2332,31 @@ Documentos auditados: 40 · Conformes: 24 · RSD: 60.00 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 03/08/2026 | 4172 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 1 | 03/08/2026 | 4172 | HEPB | 200 | 200 | 0 | GR-4172-2299 | Sí |
 | 2 | 29/07/2026 | 4172 | HEPB | 100 | 90 | -10 | GR-4172-2089 | No |
-| 3 | 02/08/2026 | 4172 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 4 | 13/08/2026 | 4172 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 5 | 09/08/2026 | 4172 | INFL | 150 | 150 | 0 | No aplica | Sí |
+| 3 | 02/08/2026 | 4172 | ROTA | 180 | 180 | 0 | GR-4172-5744 | Sí |
+| 4 | 13/08/2026 | 4172 | DTA | 200 | 200 | 0 | GR-4172-9379 | Sí |
+| 5 | 09/08/2026 | 4172 | INFL | 150 | 150 | 0 | GR-4172-7524 | Sí |
 | 6 | 17/07/2026 | 4172 | IPV | 60 | 50 | -10 | Sin guía | No |
 | 7 | 04/08/2026 | 4172 | SPR | 200 | 205 | 5 | Sin guía | No |
-| 8 | 30/07/2026 | 4172 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 9 | 11/08/2026 | 4172 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 10 | 01/08/2026 | 4172 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 8 | 30/07/2026 | 4172 | NEUM | 40 | 40 | 0 | GR-4172-3875 | Sí |
+| 9 | 11/08/2026 | 4172 | PENT | 100 | 100 | 0 | GR-4172-4738 | Sí |
+| 10 | 01/08/2026 | 4172 | IPV | 20 | 20 | 0 | GR-4172-6093 | Sí |
 | 11 | 18/07/2026 | 4172 | SPR | 60 | 50 | -10 | GR-4172-2907 | No |
 | 12 | 30/07/2026 | 4172 | ROTA | 120 | 110 | -10 | GR-4172-6132 | No |
-| 13 | 17/07/2026 | 4172 | DTA | 150 | 150 | 0 | No aplica | Sí |
+| 13 | 17/07/2026 | 4172 | DTA | 150 | 150 | 0 | GR-4172-1744 | Sí |
 | 14 | 21/07/2026 | 4172 | NEUM | 200 | 205 | 5 | Sin guía | No |
 | 15 | 30/07/2026 | 4172 | DTA | 150 | 155 | 5 | Sin guía | No |
 | 16 | 10/08/2026 | 4172 | SPR | 20 | 15 | -5 | GR-4172-3281 | No |
-| 17 | 11/08/2026 | 4172 | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 18 | 06/08/2026 | 4172 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 19 | 24/07/2026 | 4172 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 17 | 11/08/2026 | 4172 | VARI | 150 | 150 | 0 | GR-4172-5488 | Sí |
+| 18 | 06/08/2026 | 4172 | ROTA | 40 | 40 | 0 | GR-4172-3711 | Sí |
+| 19 | 24/07/2026 | 4172 | ROTA | 100 | 100 | 0 | GR-4172-4756 | Sí |
 | 20 | 11/08/2026 | 4172 | SPR | 30 | 10 | -20 | GR-4172-4103 | No |
-| 21 | 22/07/2026 | 4172 | IPV | 20 | 20 | 0 | No aplica | Sí |
-| 22 | 26/07/2026 | 4172 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 23 | 13/08/2026 | 4172 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 24 | 29/07/2026 | 4172 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 25 | 01/08/2026 | 4172 | NEUM | 20 | 20 | 0 | No aplica | Sí |
+| 21 | 22/07/2026 | 4172 | IPV | 20 | 20 | 0 | GR-4172-6373 | Sí |
+| 22 | 26/07/2026 | 4172 | ROTA | 100 | 100 | 0 | GR-4172-7563 | Sí |
+| 23 | 13/08/2026 | 4172 | NEUM | 80 | 80 | 0 | GR-4172-9376 | Sí |
+| 24 | 29/07/2026 | 4172 | IPV | 100 | 100 | 0 | GR-4172-9762 | Sí |
+| 25 | 01/08/2026 | 4172 | NEUM | 20 | 20 | 0 | GR-4172-9486 | Sí |
 
 Cierre: 16 entregas concordantes ÷ 25 × 100 = **64.00 %**.
 
@@ -2405,31 +2413,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 03/10/2026 | 4172 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 20/09/2026 | 4172 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 3 | 19/09/2026 | 4172 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 4 | 12/10/2026 | 4172 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 5 | 11/10/2026 | 4172 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 6 | 15/10/2026 | 4172 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 7 | 23/09/2026 | 4172 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 8 | 02/10/2026 | 4172 | BCG | 50 | 50 | 0 | No aplica | Sí |
+| 1 | 03/10/2026 | 4172 | INFL | 50 | 50 | 0 | GR-4172-6210 | Sí |
+| 2 | 20/09/2026 | 4172 | NEUM | 80 | 80 | 0 | GR-4172-2025 | Sí |
+| 3 | 19/09/2026 | 4172 | IPV | 60 | 60 | 0 | GR-4172-7539 | Sí |
+| 4 | 12/10/2026 | 4172 | PENT | 80 | 80 | 0 | GR-4172-6040 | Sí |
+| 5 | 11/10/2026 | 4172 | NEUM | 200 | 200 | 0 | GR-4172-7963 | Sí |
+| 6 | 15/10/2026 | 4172 | IPV | 30 | 30 | 0 | GR-4172-9294 | Sí |
+| 7 | 23/09/2026 | 4172 | IPV | 30 | 30 | 0 | GR-4172-7542 | Sí |
+| 8 | 02/10/2026 | 4172 | BCG | 50 | 50 | 0 | GR-4172-7949 | Sí |
 | 9 | 18/09/2026 | 4172 | VARI | 50 | 45 | -5 | GR-4172-3729 | No |
-| 10 | 13/10/2026 | 4172 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 11 | 11/10/2026 | 4172 | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 12 | 25/09/2026 | 4172 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 13 | 27/09/2026 | 4172 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 14 | 27/09/2026 | 4172 | VARI | 80 | 80 | 0 | No aplica | Sí |
-| 15 | 23/09/2026 | 4172 | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 16 | 10/10/2026 | 4172 | ROTA | 20 | 20 | 0 | No aplica | Sí |
-| 17 | 03/10/2026 | 4172 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 18 | 11/10/2026 | 4172 | ROTA | 200 | 200 | 0 | No aplica | Sí |
-| 19 | 15/10/2026 | 4172 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 20 | 18/09/2026 | 4172 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 21 | 28/09/2026 | 4172 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 22 | 01/10/2026 | 4172 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 23 | 06/10/2026 | 4172 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 24 | 12/10/2026 | 4172 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 25 | 21/09/2026 | 4172 | HEPB | 180 | 180 | 0 | No aplica | Sí |
+| 10 | 13/10/2026 | 4172 | NEUM | 40 | 40 | 0 | GR-4172-1836 | Sí |
+| 11 | 11/10/2026 | 4172 | IPV | 150 | 150 | 0 | GR-4172-2360 | Sí |
+| 12 | 25/09/2026 | 4172 | DTA | 150 | 150 | 0 | GR-4172-5539 | Sí |
+| 13 | 27/09/2026 | 4172 | DTA | 60 | 60 | 0 | GR-4172-9728 | Sí |
+| 14 | 27/09/2026 | 4172 | VARI | 80 | 80 | 0 | GR-4172-2139 | Sí |
+| 15 | 23/09/2026 | 4172 | DTA | 40 | 40 | 0 | GR-4172-5867 | Sí |
+| 16 | 10/10/2026 | 4172 | ROTA | 20 | 20 | 0 | GR-4172-9450 | Sí |
+| 17 | 03/10/2026 | 4172 | IPV | 100 | 100 | 0 | GR-4172-9047 | Sí |
+| 18 | 11/10/2026 | 4172 | ROTA | 200 | 200 | 0 | GR-4172-6659 | Sí |
+| 19 | 15/10/2026 | 4172 | NEUM | 20 | 20 | 0 | GR-4172-8787 | Sí |
+| 20 | 18/09/2026 | 4172 | ROTA | 150 | 150 | 0 | GR-4172-5421 | Sí |
+| 21 | 28/09/2026 | 4172 | ROTA | 50 | 50 | 0 | GR-4172-5820 | Sí |
+| 22 | 01/10/2026 | 4172 | IPV | 50 | 50 | 0 | GR-4172-8083 | Sí |
+| 23 | 06/10/2026 | 4172 | ROTA | 150 | 150 | 0 | GR-4172-2882 | Sí |
+| 24 | 12/10/2026 | 4172 | VARI | 200 | 200 | 0 | GR-4172-2435 | Sí |
+| 25 | 21/09/2026 | 4172 | HEPB | 180 | 180 | 0 | GR-4172-4413 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -2486,30 +2494,30 @@ Documentos auditados: 40 · Conformes: 25 · RSD: 62.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 07/09/2026 | 4167 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 2 | 14/08/2026 | 4167 | INFL | 20 | 20 | 0 | No aplica | Sí |
-| 3 | 29/08/2026 | 4167 | SPR | 150 | 150 | 0 | No aplica | Sí |
-| 4 | 14/08/2026 | 4167 | PENT | 50 | 50 | 0 | No aplica | Sí |
-| 5 | 28/08/2026 | 4167 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 21/08/2026 | 4167 | INFL | 30 | 30 | 0 | No aplica | Sí |
-| 7 | 19/08/2026 | 4167 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 8 | 17/08/2026 | 4167 | HEPB | 100 | 100 | 0 | No aplica | Sí |
+| 1 | 06/09/2026 | 4167 | VARI | 200 | 200 | 0 | GR-4167-1211 | Sí |
+| 2 | 14/08/2026 | 4167 | INFL | 20 | 20 | 0 | GR-4167-7815 | Sí |
+| 3 | 29/08/2026 | 4167 | SPR | 150 | 150 | 0 | GR-4167-4643 | Sí |
+| 4 | 14/08/2026 | 4167 | PENT | 50 | 50 | 0 | GR-4167-8191 | Sí |
+| 5 | 28/08/2026 | 4167 | DTA | 120 | 120 | 0 | GR-4167-3964 | Sí |
+| 6 | 21/08/2026 | 4167 | INFL | 30 | 30 | 0 | GR-4167-7702 | Sí |
+| 7 | 19/08/2026 | 4167 | VARI | 50 | 50 | 0 | GR-4167-1387 | Sí |
+| 8 | 17/08/2026 | 4167 | HEPB | 100 | 100 | 0 | GR-4167-4834 | Sí |
 | 9 | 05/09/2026 | 4167 | INFL | 180 | 170 | -10 | Sin guía | No |
 | 10 | 01/09/2026 | 4167 | IPV | 80 | 75 | -5 | Sin guía | No |
 | 11 | 20/08/2026 | 4167 | DTA | 60 | 55 | -5 | Sin guía | No |
-| 12 | 15/08/2026 | 4167 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 13 | 05/09/2026 | 4167 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 12 | 15/08/2026 | 4167 | ROTA | 100 | 100 | 0 | GR-4167-3772 | Sí |
+| 13 | 05/09/2026 | 4167 | ROTA | 80 | 80 | 0 | GR-4167-3469 | Sí |
 | 14 | 05/09/2026 | 4167 | SPR | 80 | 60 | -20 | GR-4167-3782 | No |
-| 15 | 31/08/2026 | 4167 | PENT | 40 | 40 | 0 | No aplica | Sí |
+| 15 | 31/08/2026 | 4167 | PENT | 40 | 40 | 0 | GR-4167-4546 | Sí |
 | 16 | 19/08/2026 | 4167 | DTA | 80 | 75 | -5 | GR-4167-4070 | No |
-| 17 | 12/08/2026 | 4167 | NEUM | 180 | 180 | 0 | No aplica | Sí |
-| 18 | 11/08/2026 | 4167 | ROTA | 20 | 20 | 0 | No aplica | Sí |
+| 17 | 12/08/2026 | 4167 | NEUM | 180 | 180 | 0 | GR-4167-4850 | Sí |
+| 18 | 11/08/2026 | 4167 | ROTA | 20 | 20 | 0 | GR-4167-4434 | Sí |
 | 19 | 29/08/2026 | 4167 | DTA | 30 | 25 | -5 | Sin guía | No |
-| 20 | 11/08/2026 | 4167 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 21 | 05/09/2026 | 4167 | HEPB | 40 | 40 | 0 | No aplica | Sí |
-| 22 | 28/08/2026 | 4167 | HEPB | 60 | 60 | 0 | No aplica | Sí |
+| 20 | 11/08/2026 | 4167 | DTA | 60 | 60 | 0 | GR-4167-3263 | Sí |
+| 21 | 05/09/2026 | 4167 | HEPB | 40 | 40 | 0 | GR-4167-2689 | Sí |
+| 22 | 28/08/2026 | 4167 | HEPB | 60 | 60 | 0 | GR-4167-4886 | Sí |
 | 23 | 30/08/2026 | 4167 | INFL | 120 | 110 | -10 | GR-4167-8823 | No |
-| 24 | 25/08/2026 | 4167 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 24 | 25/08/2026 | 4167 | HEPB | 20 | 20 | 0 | GR-4167-6865 | Sí |
 | 25 | 14/08/2026 | 4167 | INFL | 40 | 60 | 20 | GR-4167-2484 | No |
 
 Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
@@ -2568,30 +2576,30 @@ Documentos auditados: 40 · Conformes: 38 · RSD: 95.00 % · Entregas conciliada
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
 | 1 | 27/09/2026 | 4167 | SPR | 30 | 20 | -10 | GR-4167-8318 | No |
-| 2 | 19/10/2026 | 4167 | DTA | 30 | 30 | 0 | No aplica | Sí |
-| 3 | 11/10/2026 | 4167 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 4 | 11/10/2026 | 4167 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 5 | 10/10/2026 | 4167 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 6 | 29/09/2026 | 4167 | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 7 | 24/09/2026 | 4167 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 8 | 22/09/2026 | 4167 | HEPB | 60 | 60 | 0 | No aplica | Sí |
-| 9 | 29/09/2026 | 4167 | DTA | 60 | 60 | 0 | No aplica | Sí |
-| 10 | 23/09/2026 | 4167 | PENT | 200 | 200 | 0 | No aplica | Sí |
-| 11 | 08/10/2026 | 4167 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 12 | 25/09/2026 | 4167 | ROTA | 40 | 40 | 0 | No aplica | Sí |
-| 13 | 11/10/2026 | 4167 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 14 | 01/10/2026 | 4167 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 15 | 05/10/2026 | 4167 | SPR | 60 | 60 | 0 | No aplica | Sí |
-| 16 | 18/10/2026 | 4167 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 17 | 15/10/2026 | 4167 | DTA | 150 | 150 | 0 | No aplica | Sí |
-| 18 | 12/10/2026 | 4167 | VARI | 100 | 100 | 0 | No aplica | Sí |
-| 19 | 16/10/2026 | 4167 | IPV | 40 | 40 | 0 | No aplica | Sí |
-| 20 | 23/09/2026 | 4167 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 21 | 13/10/2026 | 4167 | IPV | 100 | 100 | 0 | No aplica | Sí |
+| 2 | 18/10/2026 | 4167 | DTA | 30 | 30 | 0 | GR-4167-5445 | Sí |
+| 3 | 11/10/2026 | 4167 | ROTA | 80 | 80 | 0 | GR-4167-4397 | Sí |
+| 4 | 11/10/2026 | 4167 | PENT | 180 | 180 | 0 | GR-4167-5105 | Sí |
+| 5 | 10/10/2026 | 4167 | VARI | 50 | 50 | 0 | GR-4167-2083 | Sí |
+| 6 | 29/09/2026 | 4167 | HEPB | 50 | 50 | 0 | GR-4167-6731 | Sí |
+| 7 | 24/09/2026 | 4167 | HEPB | 180 | 180 | 0 | GR-4167-7974 | Sí |
+| 8 | 22/09/2026 | 4167 | HEPB | 60 | 60 | 0 | GR-4167-5938 | Sí |
+| 9 | 29/09/2026 | 4167 | DTA | 60 | 60 | 0 | GR-4167-6730 | Sí |
+| 10 | 23/09/2026 | 4167 | PENT | 200 | 200 | 0 | GR-4167-2959 | Sí |
+| 11 | 08/10/2026 | 4167 | SPR | 180 | 180 | 0 | GR-4167-2494 | Sí |
+| 12 | 25/09/2026 | 4167 | ROTA | 40 | 40 | 0 | GR-4167-3307 | Sí |
+| 13 | 11/10/2026 | 4167 | DTA | 150 | 150 | 0 | GR-4167-9209 | Sí |
+| 14 | 01/10/2026 | 4167 | IPV | 30 | 30 | 0 | GR-4167-6528 | Sí |
+| 15 | 05/10/2026 | 4167 | SPR | 60 | 60 | 0 | GR-4167-1406 | Sí |
+| 16 | 18/10/2026 | 4167 | ROTA | 100 | 100 | 0 | GR-4167-6920 | Sí |
+| 17 | 15/10/2026 | 4167 | DTA | 150 | 150 | 0 | GR-4167-6556 | Sí |
+| 18 | 12/10/2026 | 4167 | VARI | 100 | 100 | 0 | GR-4167-5641 | Sí |
+| 19 | 16/10/2026 | 4167 | IPV | 40 | 40 | 0 | GR-4167-7127 | Sí |
+| 20 | 23/09/2026 | 4167 | PENT | 30 | 30 | 0 | GR-4167-7629 | Sí |
+| 21 | 13/10/2026 | 4167 | IPV | 100 | 100 | 0 | GR-4167-9342 | Sí |
 | 22 | 17/10/2026 | 4167 | ROTA | 50 | 70 | 20 | GR-4167-1862 | No |
-| 23 | 04/10/2026 | 4167 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 24 | 17/10/2026 | 4167 | IPV | 80 | 80 | 0 | No aplica | Sí |
-| 25 | 09/10/2026 | 4167 | PENT | 50 | 50 | 0 | No aplica | Sí |
+| 23 | 04/10/2026 | 4167 | SPR | 100 | 100 | 0 | GR-4167-1745 | Sí |
+| 24 | 17/10/2026 | 4167 | IPV | 80 | 80 | 0 | GR-4167-1648 | Sí |
+| 25 | 09/10/2026 | 4167 | PENT | 50 | 50 | 0 | GR-4167-3398 | Sí |
 
 Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
 
@@ -2648,29 +2656,29 @@ Documentos auditados: 40 · Conformes: 23 · RSD: 57.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 18/08/2026 | 4160 | HEPB | 80 | 80 | 0 | No aplica | Sí |
-| 2 | 02/09/2026 | 4160 | ROTA | 100 | 100 | 0 | No aplica | Sí |
+| 1 | 18/08/2026 | 4160 | HEPB | 80 | 80 | 0 | GR-4160-9178 | Sí |
+| 2 | 02/09/2026 | 4160 | ROTA | 100 | 100 | 0 | GR-4160-2390 | Sí |
 | 3 | 31/08/2026 | 4160 | HEPB | 50 | 40 | -10 | Sin guía | No |
-| 4 | 24/08/2026 | 4160 | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 5 | 01/09/2026 | 4160 | ROTA | 60 | 60 | 0 | No aplica | Sí |
-| 6 | 03/09/2026 | 4160 | IPV | 50 | 50 | 0 | No aplica | Sí |
-| 7 | 04/09/2026 | 4160 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 8 | 10/08/2026 | 4160 | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 9 | 16/08/2026 | 4160 | SPR | 40 | 40 | 0 | No aplica | Sí |
+| 4 | 24/08/2026 | 4160 | NEUM | 50 | 50 | 0 | GR-4160-7766 | Sí |
+| 5 | 01/09/2026 | 4160 | ROTA | 60 | 60 | 0 | GR-4160-2946 | Sí |
+| 6 | 03/09/2026 | 4160 | IPV | 50 | 50 | 0 | GR-4160-4738 | Sí |
+| 7 | 04/09/2026 | 4160 | BCG | 120 | 120 | 0 | GR-4160-3216 | Sí |
+| 8 | 10/08/2026 | 4160 | NEUM | 50 | 50 | 0 | GR-4160-2793 | Sí |
+| 9 | 16/08/2026 | 4160 | SPR | 40 | 40 | 0 | GR-4160-5778 | Sí |
 | 10 | 30/08/2026 | 4160 | ROTA | 200 | 205 | 5 | Sin guía | No |
-| 11 | 23/08/2026 | 4160 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 12 | 14/08/2026 | 4160 | IPV | 20 | 20 | 0 | No aplica | Sí |
+| 11 | 23/08/2026 | 4160 | NEUM | 60 | 60 | 0 | GR-4160-1903 | Sí |
+| 12 | 14/08/2026 | 4160 | IPV | 20 | 20 | 0 | GR-4160-7159 | Sí |
 | 13 | 19/08/2026 | 4160 | PENT | 80 | 90 | 10 | GR-4160-2370 | No |
-| 14 | 18/08/2026 | 4160 | VARI | 180 | 180 | 0 | No aplica | Sí |
+| 14 | 18/08/2026 | 4160 | VARI | 180 | 180 | 0 | GR-4160-5412 | Sí |
 | 15 | 21/08/2026 | 4160 | INFL | 20 | 25 | 5 | Sin guía | No |
 | 16 | 25/08/2026 | 4160 | NEUM | 80 | 70 | -10 | GR-4160-7730 | No |
 | 17 | 14/08/2026 | 4160 | HEPB | 100 | 105 | 5 | Sin guía | No |
-| 18 | 17/08/2026 | 4160 | ROTA | 80 | 80 | 0 | No aplica | Sí |
+| 18 | 17/08/2026 | 4160 | ROTA | 80 | 80 | 0 | GR-4160-9764 | Sí |
 | 19 | 14/08/2026 | 4160 | HEPB | 50 | 40 | -10 | Sin guía | No |
 | 20 | 25/08/2026 | 4160 | PENT | 50 | 40 | -10 | GR-4160-9463 | No |
-| 21 | 25/08/2026 | 4160 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 22 | 22/08/2026 | 4160 | NEUM | 60 | 60 | 0 | No aplica | Sí |
-| 23 | 13/08/2026 | 4160 | PENT | 80 | 80 | 0 | No aplica | Sí |
+| 21 | 25/08/2026 | 4160 | PENT | 20 | 20 | 0 | GR-4160-7681 | Sí |
+| 22 | 22/08/2026 | 4160 | NEUM | 60 | 60 | 0 | GR-4160-1619 | Sí |
+| 23 | 13/08/2026 | 4160 | PENT | 80 | 80 | 0 | GR-4160-1989 | Sí |
 | 24 | 28/08/2026 | 4160 | ROTA | 120 | 140 | 20 | GR-4160-4715 | No |
 | 25 | 06/09/2026 | 4160 | SPR | 80 | 85 | 5 | Sin guía | No |
 
@@ -2729,31 +2737,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 06/10/2026 | 4160 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 2 | 26/09/2026 | 4160 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 3 | 13/10/2026 | 4160 | ROTA | 150 | 150 | 0 | No aplica | Sí |
-| 4 | 22/09/2026 | 4160 | INFL | 200 | 200 | 0 | No aplica | Sí |
-| 5 | 04/10/2026 | 4160 | SPR | 100 | 100 | 0 | No aplica | Sí |
-| 6 | 10/10/2026 | 4160 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 7 | 04/10/2026 | 4160 | IPV | 30 | 30 | 0 | No aplica | Sí |
-| 8 | 12/10/2026 | 4160 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 9 | 10/10/2026 | 4160 | INFL | 120 | 120 | 0 | No aplica | Sí |
-| 10 | 12/10/2026 | 4160 | PENT | 30 | 30 | 0 | No aplica | Sí |
-| 11 | 26/09/2026 | 4160 | VARI | 80 | 80 | 0 | No aplica | Sí |
+| 1 | 06/10/2026 | 4160 | PENT | 120 | 120 | 0 | GR-4160-1801 | Sí |
+| 2 | 26/09/2026 | 4160 | SPR | 180 | 180 | 0 | GR-4160-3137 | Sí |
+| 3 | 13/10/2026 | 4160 | ROTA | 150 | 150 | 0 | GR-4160-1641 | Sí |
+| 4 | 22/09/2026 | 4160 | INFL | 200 | 200 | 0 | GR-4160-8194 | Sí |
+| 5 | 04/10/2026 | 4160 | SPR | 100 | 100 | 0 | GR-4160-3844 | Sí |
+| 6 | 10/10/2026 | 4160 | HEPB | 200 | 200 | 0 | GR-4160-9702 | Sí |
+| 7 | 04/10/2026 | 4160 | IPV | 30 | 30 | 0 | GR-4160-2073 | Sí |
+| 8 | 12/10/2026 | 4160 | PENT | 180 | 180 | 0 | GR-4160-2362 | Sí |
+| 9 | 10/10/2026 | 4160 | INFL | 120 | 120 | 0 | GR-4160-8511 | Sí |
+| 10 | 12/10/2026 | 4160 | PENT | 30 | 30 | 0 | GR-4160-2770 | Sí |
+| 11 | 26/09/2026 | 4160 | VARI | 80 | 80 | 0 | GR-4160-4872 | Sí |
 | 12 | 04/10/2026 | 4160 | NEUM | 20 | 10 | -10 | GR-4160-8865 | No |
 | 13 | 16/10/2026 | 4160 | NEUM | 30 | 20 | -10 | GR-4160-8470 | No |
-| 14 | 21/09/2026 | 4160 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 15 | 03/10/2026 | 4160 | DTA | 50 | 50 | 0 | No aplica | Sí |
-| 16 | 09/10/2026 | 4160 | DTA | 40 | 40 | 0 | No aplica | Sí |
-| 17 | 12/10/2026 | 4160 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 18 | 07/10/2026 | 4160 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 19 | 05/10/2026 | 4160 | DTA | 120 | 120 | 0 | No aplica | Sí |
-| 20 | 19/10/2026 | 4160 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 21 | 21/09/2026 | 4160 | HEPB | 50 | 50 | 0 | No aplica | Sí |
-| 22 | 04/10/2026 | 4160 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 23 | 19/10/2026 | 4160 | NEUM | 120 | 120 | 0 | No aplica | Sí |
-| 24 | 05/10/2026 | 4160 | HEPB | 180 | 180 | 0 | No aplica | Sí |
-| 25 | 28/09/2026 | 4160 | INFL | 100 | 100 | 0 | No aplica | Sí |
+| 14 | 21/09/2026 | 4160 | HEPB | 200 | 200 | 0 | GR-4160-1638 | Sí |
+| 15 | 03/10/2026 | 4160 | DTA | 50 | 50 | 0 | GR-4160-5542 | Sí |
+| 16 | 09/10/2026 | 4160 | DTA | 40 | 40 | 0 | GR-4160-7068 | Sí |
+| 17 | 12/10/2026 | 4160 | NEUM | 120 | 120 | 0 | GR-4160-5263 | Sí |
+| 18 | 07/10/2026 | 4160 | VARI | 50 | 50 | 0 | GR-4160-8633 | Sí |
+| 19 | 05/10/2026 | 4160 | DTA | 120 | 120 | 0 | GR-4160-1362 | Sí |
+| 20 | 18/10/2026 | 4160 | SPR | 30 | 30 | 0 | GR-4160-7352 | Sí |
+| 21 | 21/09/2026 | 4160 | HEPB | 50 | 50 | 0 | GR-4160-1877 | Sí |
+| 22 | 04/10/2026 | 4160 | PENT | 100 | 100 | 0 | GR-4160-1575 | Sí |
+| 23 | 18/10/2026 | 4160 | NEUM | 120 | 120 | 0 | GR-4160-3586 | Sí |
+| 24 | 05/10/2026 | 4160 | HEPB | 180 | 180 | 0 | GR-4160-1533 | Sí |
+| 25 | 28/09/2026 | 4160 | INFL | 100 | 100 | 0 | GR-4160-9524 | Sí |
 
 Cierre: 23 entregas concordantes ÷ 25 × 100 = **92.00 %**.
 
@@ -2810,31 +2818,31 @@ Documentos auditados: 40 · Conformes: 27 · RSD: 67.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 12/08/2026 | 4163 | BCG | 50 | 50 | 0 | No aplica | Sí |
-| 2 | 31/08/2026 | 4163 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 3 | 03/09/2026 | 4163 | HEPB | 20 | 20 | 0 | No aplica | Sí |
+| 1 | 12/08/2026 | 4163 | BCG | 50 | 50 | 0 | GR-4163-9132 | Sí |
+| 2 | 31/08/2026 | 4163 | ROTA | 100 | 100 | 0 | GR-4163-6974 | Sí |
+| 3 | 03/09/2026 | 4163 | HEPB | 20 | 20 | 0 | GR-4163-5401 | Sí |
 | 4 | 18/08/2026 | 4163 | NEUM | 20 | 10 | -10 | Sin guía | No |
-| 5 | 27/08/2026 | 4163 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 6 | 28/08/2026 | 4163 | PENT | 60 | 60 | 0 | No aplica | Sí |
-| 7 | 07/09/2026 | 4163 | BCG | 30 | 30 | 0 | No aplica | Sí |
-| 8 | 14/08/2026 | 4163 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 9 | 05/09/2026 | 4163 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 10 | 06/09/2026 | 4163 | VARI | 120 | 120 | 0 | No aplica | Sí |
-| 11 | 14/08/2026 | 4163 | IPV | 120 | 120 | 0 | No aplica | Sí |
+| 5 | 27/08/2026 | 4163 | BCG | 20 | 20 | 0 | GR-4163-8127 | Sí |
+| 6 | 28/08/2026 | 4163 | PENT | 60 | 60 | 0 | GR-4163-6052 | Sí |
+| 7 | 07/09/2026 | 4163 | BCG | 30 | 30 | 0 | GR-4163-4840 | Sí |
+| 8 | 14/08/2026 | 4163 | NEUM | 20 | 20 | 0 | GR-4163-1259 | Sí |
+| 9 | 05/09/2026 | 4163 | PENT | 120 | 120 | 0 | GR-4163-7651 | Sí |
+| 10 | 06/09/2026 | 4163 | VARI | 120 | 120 | 0 | GR-4163-8157 | Sí |
+| 11 | 14/08/2026 | 4163 | IPV | 120 | 120 | 0 | GR-4163-1996 | Sí |
 | 12 | 30/08/2026 | 4163 | PENT | 150 | 145 | -5 | GR-4163-4796 | No |
 | 13 | 05/09/2026 | 4163 | NEUM | 120 | 110 | -10 | Sin guía | No |
-| 14 | 01/09/2026 | 4163 | IPV | 60 | 60 | 0 | No aplica | Sí |
-| 15 | 18/08/2026 | 4163 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 16 | 19/08/2026 | 4163 | SPR | 30 | 30 | 0 | No aplica | Sí |
-| 17 | 18/08/2026 | 4163 | ROTA | 30 | 30 | 0 | No aplica | Sí |
+| 14 | 01/09/2026 | 4163 | IPV | 60 | 60 | 0 | GR-4163-5087 | Sí |
+| 15 | 18/08/2026 | 4163 | ROTA | 180 | 180 | 0 | GR-4163-4469 | Sí |
+| 16 | 19/08/2026 | 4163 | SPR | 30 | 30 | 0 | GR-4163-8352 | Sí |
+| 17 | 18/08/2026 | 4163 | ROTA | 30 | 30 | 0 | GR-4163-2691 | Sí |
 | 18 | 12/08/2026 | 4163 | BCG | 30 | 20 | -10 | Sin guía | No |
-| 19 | 22/08/2026 | 4163 | IPV | 100 | 100 | 0 | No aplica | Sí |
-| 20 | 20/08/2026 | 4163 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 02/09/2026 | 4163 | HEPB | 50 | 50 | 0 | No aplica | Sí |
+| 19 | 22/08/2026 | 4163 | IPV | 100 | 100 | 0 | GR-4163-7524 | Sí |
+| 20 | 20/08/2026 | 4163 | INFL | 50 | 50 | 0 | GR-4163-6847 | Sí |
+| 21 | 02/09/2026 | 4163 | HEPB | 50 | 50 | 0 | GR-4163-8615 | Sí |
 | 22 | 03/09/2026 | 4163 | INFL | 180 | 160 | -20 | GR-4163-7804 | No |
 | 23 | 31/08/2026 | 4163 | NEUM | 30 | 25 | -5 | GR-4163-3048 | No |
 | 24 | 06/09/2026 | 4163 | VARI | 120 | 115 | -5 | GR-4163-3182 | No |
-| 25 | 20/08/2026 | 4163 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 25 | 20/08/2026 | 4163 | SPR | 30 | 30 | 0 | GR-4163-6393 | Sí |
 
 Cierre: 18 entregas concordantes ÷ 25 × 100 = **72.00 %**.
 
@@ -2891,31 +2899,31 @@ Documentos auditados: 40 · Conformes: 37 · RSD: 92.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 20/10/2026 | 4163 | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 2 | 11/10/2026 | 4163 | PENT | 20 | 20 | 0 | No aplica | Sí |
-| 3 | 19/10/2026 | 4163 | NEUM | 40 | 40 | 0 | No aplica | Sí |
-| 4 | 12/10/2026 | 4163 | INFL | 50 | 50 | 0 | No aplica | Sí |
-| 5 | 23/09/2026 | 4163 | IPV | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 20/10/2026 | 4163 | VARI | 150 | 150 | 0 | No aplica | Sí |
-| 7 | 08/10/2026 | 4163 | INFL | 150 | 150 | 0 | No aplica | Sí |
-| 8 | 18/10/2026 | 4163 | SPR | 50 | 50 | 0 | No aplica | Sí |
-| 9 | 05/10/2026 | 4163 | NEUM | 20 | 20 | 0 | No aplica | Sí |
-| 10 | 09/10/2026 | 4163 | VARI | 40 | 40 | 0 | No aplica | Sí |
-| 11 | 23/09/2026 | 4163 | SPR | 180 | 180 | 0 | No aplica | Sí |
-| 12 | 14/10/2026 | 4163 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 13 | 08/10/2026 | 4163 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 14 | 27/09/2026 | 4163 | BCG | 60 | 60 | 0 | No aplica | Sí |
-| 15 | 30/09/2026 | 4163 | DTA | 200 | 200 | 0 | No aplica | Sí |
-| 16 | 07/10/2026 | 4163 | BCG | 100 | 100 | 0 | No aplica | Sí |
-| 17 | 17/10/2026 | 4163 | NEUM | 150 | 150 | 0 | No aplica | Sí |
+| 1 | 19/10/2026 | 4163 | INFL | 150 | 150 | 0 | GR-4163-3354 | Sí |
+| 2 | 11/10/2026 | 4163 | PENT | 20 | 20 | 0 | GR-4163-5739 | Sí |
+| 3 | 19/10/2026 | 4163 | NEUM | 40 | 40 | 0 | GR-4163-6709 | Sí |
+| 4 | 12/10/2026 | 4163 | INFL | 50 | 50 | 0 | GR-4163-9658 | Sí |
+| 5 | 23/09/2026 | 4163 | IPV | 120 | 120 | 0 | GR-4163-2626 | Sí |
+| 6 | 19/10/2026 | 4163 | VARI | 150 | 150 | 0 | GR-4163-1571 | Sí |
+| 7 | 08/10/2026 | 4163 | INFL | 150 | 150 | 0 | GR-4163-3678 | Sí |
+| 8 | 18/10/2026 | 4163 | SPR | 50 | 50 | 0 | GR-4163-2222 | Sí |
+| 9 | 05/10/2026 | 4163 | NEUM | 20 | 20 | 0 | GR-4163-5226 | Sí |
+| 10 | 09/10/2026 | 4163 | VARI | 40 | 40 | 0 | GR-4163-5460 | Sí |
+| 11 | 23/09/2026 | 4163 | SPR | 180 | 180 | 0 | GR-4163-5181 | Sí |
+| 12 | 14/10/2026 | 4163 | DTA | 80 | 80 | 0 | GR-4163-6672 | Sí |
+| 13 | 08/10/2026 | 4163 | DTA | 80 | 80 | 0 | GR-4163-1318 | Sí |
+| 14 | 27/09/2026 | 4163 | BCG | 60 | 60 | 0 | GR-4163-7936 | Sí |
+| 15 | 30/09/2026 | 4163 | DTA | 200 | 200 | 0 | GR-4163-1619 | Sí |
+| 16 | 07/10/2026 | 4163 | BCG | 100 | 100 | 0 | GR-4163-5934 | Sí |
+| 17 | 17/10/2026 | 4163 | NEUM | 150 | 150 | 0 | GR-4163-5876 | Sí |
 | 18 | 22/09/2026 | 4163 | DTA | 50 | 40 | -10 | GR-4163-2795 | No |
-| 19 | 13/10/2026 | 4163 | SPR | 200 | 200 | 0 | No aplica | Sí |
-| 20 | 02/10/2026 | 4163 | IPV | 200 | 200 | 0 | No aplica | Sí |
-| 21 | 11/10/2026 | 4163 | VARI | 60 | 60 | 0 | No aplica | Sí |
-| 22 | 22/09/2026 | 4163 | BCG | 120 | 120 | 0 | No aplica | Sí |
-| 23 | 12/10/2026 | 4163 | NEUM | 200 | 200 | 0 | No aplica | Sí |
-| 24 | 30/09/2026 | 4163 | HEPB | 100 | 100 | 0 | No aplica | Sí |
-| 25 | 29/09/2026 | 4163 | PENT | 120 | 120 | 0 | No aplica | Sí |
+| 19 | 13/10/2026 | 4163 | SPR | 200 | 200 | 0 | GR-4163-8804 | Sí |
+| 20 | 02/10/2026 | 4163 | IPV | 200 | 200 | 0 | GR-4163-8175 | Sí |
+| 21 | 11/10/2026 | 4163 | VARI | 60 | 60 | 0 | GR-4163-8672 | Sí |
+| 22 | 22/09/2026 | 4163 | BCG | 120 | 120 | 0 | GR-4163-3258 | Sí |
+| 23 | 12/10/2026 | 4163 | NEUM | 200 | 200 | 0 | GR-4163-6158 | Sí |
+| 24 | 30/09/2026 | 4163 | HEPB | 100 | 100 | 0 | GR-4163-7287 | Sí |
+| 25 | 29/09/2026 | 4163 | PENT | 120 | 120 | 0 | GR-4163-8313 | Sí |
 
 Cierre: 24 entregas concordantes ÷ 25 × 100 = **96.00 %**.
 
@@ -2973,30 +2981,30 @@ Documentos auditados: 40 · Conformes: 26 · RSD: 65.00 % · Entregas conciliada
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
 | 1 | 07/09/2026 | 4183 | HEPB | 200 | 190 | -10 | Sin guía | No |
-| 2 | 21/08/2026 | 4183 | BCG | 80 | 80 | 0 | No aplica | Sí |
-| 3 | 05/09/2026 | 4183 | HEPB | 120 | 120 | 0 | No aplica | Sí |
-| 4 | 08/09/2026 | 4183 | VARI | 150 | 155 | 5 | GR-4183-3005 | No |
-| 5 | 29/08/2026 | 4183 | SPR | 120 | 120 | 0 | No aplica | Sí |
-| 6 | 25/08/2026 | 4183 | INFL | 100 | 100 | 0 | No aplica | Sí |
-| 7 | 31/08/2026 | 4183 | ROTA | 180 | 180 | 0 | No aplica | Sí |
-| 8 | 27/08/2026 | 4183 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 9 | 03/09/2026 | 4183 | IPV | 150 | 150 | 0 | No aplica | Sí |
-| 10 | 21/08/2026 | 4183 | IPV | 40 | 40 | 0 | No aplica | Sí |
+| 2 | 21/08/2026 | 4183 | BCG | 80 | 80 | 0 | GR-4183-1691 | Sí |
+| 3 | 05/09/2026 | 4183 | HEPB | 120 | 120 | 0 | GR-4183-4491 | Sí |
+| 4 | 07/09/2026 | 4183 | VARI | 150 | 155 | 5 | GR-4183-3005 | No |
+| 5 | 29/08/2026 | 4183 | SPR | 120 | 120 | 0 | GR-4183-1592 | Sí |
+| 6 | 25/08/2026 | 4183 | INFL | 100 | 100 | 0 | GR-4183-5251 | Sí |
+| 7 | 31/08/2026 | 4183 | ROTA | 180 | 180 | 0 | GR-4183-1372 | Sí |
+| 8 | 27/08/2026 | 4183 | DTA | 80 | 80 | 0 | GR-4183-4331 | Sí |
+| 9 | 03/09/2026 | 4183 | IPV | 150 | 150 | 0 | GR-4183-3907 | Sí |
+| 10 | 21/08/2026 | 4183 | IPV | 40 | 40 | 0 | GR-4183-1718 | Sí |
 | 11 | 16/08/2026 | 4183 | IPV | 150 | 160 | 10 | GR-4183-6681 | No |
-| 12 | 21/08/2026 | 4183 | PENT | 120 | 120 | 0 | No aplica | Sí |
-| 13 | 30/08/2026 | 4183 | PENT | 200 | 200 | 0 | No aplica | Sí |
+| 12 | 21/08/2026 | 4183 | PENT | 120 | 120 | 0 | GR-4183-2184 | Sí |
+| 13 | 30/08/2026 | 4183 | PENT | 200 | 200 | 0 | GR-4183-2923 | Sí |
 | 14 | 27/08/2026 | 4183 | INFL | 80 | 75 | -5 | GR-4183-2121 | No |
-| 15 | 11/08/2026 | 4183 | DTA | 200 | 200 | 0 | No aplica | Sí |
+| 15 | 11/08/2026 | 4183 | DTA | 200 | 200 | 0 | GR-4183-2813 | Sí |
 | 16 | 19/08/2026 | 4183 | BCG | 40 | 50 | 10 | GR-4183-2919 | No |
-| 17 | 23/08/2026 | 4183 | DTA | 50 | 50 | 0 | No aplica | Sí |
+| 17 | 23/08/2026 | 4183 | DTA | 50 | 50 | 0 | GR-4183-2556 | Sí |
 | 18 | 22/08/2026 | 4183 | BCG | 80 | 85 | 5 | Sin guía | No |
 | 19 | 25/08/2026 | 4183 | BCG | 40 | 35 | -5 | Sin guía | No |
 | 20 | 25/08/2026 | 4183 | SPR | 50 | 45 | -5 | GR-4183-5097 | No |
-| 21 | 18/08/2026 | 4183 | DTA | 80 | 80 | 0 | No aplica | Sí |
-| 22 | 04/09/2026 | 4183 | PENT | 180 | 180 | 0 | No aplica | Sí |
-| 23 | 06/09/2026 | 4183 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 24 | 04/09/2026 | 4183 | PENT | 100 | 100 | 0 | No aplica | Sí |
-| 25 | 14/08/2026 | 4183 | HEPB | 200 | 200 | 0 | No aplica | Sí |
+| 21 | 18/08/2026 | 4183 | DTA | 80 | 80 | 0 | GR-4183-2119 | Sí |
+| 22 | 04/09/2026 | 4183 | PENT | 180 | 180 | 0 | GR-4183-8590 | Sí |
+| 23 | 06/09/2026 | 4183 | PENT | 100 | 100 | 0 | GR-4183-8838 | Sí |
+| 24 | 04/09/2026 | 4183 | PENT | 100 | 100 | 0 | GR-4183-9091 | Sí |
+| 25 | 14/08/2026 | 4183 | HEPB | 200 | 200 | 0 | GR-4183-7406 | Sí |
 
 Cierre: 17 entregas concordantes ÷ 25 × 100 = **68.00 %**.
 
@@ -3053,31 +3061,31 @@ Documentos auditados: 40 · Conformes: 39 · RSD: 97.50 % · Entregas conciliada
 
 | N.º | Fecha | Centro | Biol. | Prog. | Entr. | Dif. | Doc. | Conc. |
 | :---: | :---: | :---: | :---: | ---: | ---: | ---: | :---: | :---: |
-| 1 | 14/10/2026 | 4183 | HEPB | 200 | 200 | 0 | No aplica | Sí |
-| 2 | 09/10/2026 | 4183 | VARI | 40 | 40 | 0 | No aplica | Sí |
-| 3 | 18/10/2026 | 4183 | DTA | 100 | 100 | 0 | No aplica | Sí |
-| 4 | 20/10/2026 | 4183 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 5 | 03/10/2026 | 4183 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 6 | 30/09/2026 | 4183 | INFL | 60 | 60 | 0 | No aplica | Sí |
+| 1 | 14/10/2026 | 4183 | HEPB | 200 | 200 | 0 | GR-4183-9345 | Sí |
+| 2 | 09/10/2026 | 4183 | VARI | 40 | 40 | 0 | GR-4183-4671 | Sí |
+| 3 | 18/10/2026 | 4183 | DTA | 100 | 100 | 0 | GR-4183-6432 | Sí |
+| 4 | 19/10/2026 | 4183 | ROTA | 100 | 100 | 0 | GR-4183-7069 | Sí |
+| 5 | 03/10/2026 | 4183 | NEUM | 80 | 80 | 0 | GR-4183-3440 | Sí |
+| 6 | 30/09/2026 | 4183 | INFL | 60 | 60 | 0 | GR-4183-5238 | Sí |
 | 7 | 12/10/2026 | 4183 | VARI | 100 | 90 | -10 | Sin guía | No |
-| 8 | 24/09/2026 | 4183 | NEUM | 50 | 50 | 0 | No aplica | Sí |
-| 9 | 22/09/2026 | 4183 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 10 | 14/10/2026 | 4183 | VARI | 20 | 20 | 0 | No aplica | Sí |
-| 11 | 18/10/2026 | 4183 | BCG | 20 | 20 | 0 | No aplica | Sí |
-| 12 | 17/10/2026 | 4183 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 13 | 06/10/2026 | 4183 | NEUM | 80 | 80 | 0 | No aplica | Sí |
-| 14 | 10/10/2026 | 4183 | ROTA | 100 | 100 | 0 | No aplica | Sí |
-| 15 | 13/10/2026 | 4183 | PENT | 80 | 80 | 0 | No aplica | Sí |
-| 16 | 12/10/2026 | 4183 | SPR | 120 | 120 | 0 | No aplica | Sí |
+| 8 | 24/09/2026 | 4183 | NEUM | 50 | 50 | 0 | GR-4183-7057 | Sí |
+| 9 | 22/09/2026 | 4183 | ROTA | 80 | 80 | 0 | GR-4183-4203 | Sí |
+| 10 | 14/10/2026 | 4183 | VARI | 20 | 20 | 0 | GR-4183-1455 | Sí |
+| 11 | 18/10/2026 | 4183 | BCG | 20 | 20 | 0 | GR-4183-8572 | Sí |
+| 12 | 17/10/2026 | 4183 | VARI | 50 | 50 | 0 | GR-4183-8253 | Sí |
+| 13 | 06/10/2026 | 4183 | NEUM | 80 | 80 | 0 | GR-4183-4177 | Sí |
+| 14 | 10/10/2026 | 4183 | ROTA | 100 | 100 | 0 | GR-4183-3469 | Sí |
+| 15 | 13/10/2026 | 4183 | PENT | 80 | 80 | 0 | GR-4183-7930 | Sí |
+| 16 | 12/10/2026 | 4183 | SPR | 120 | 120 | 0 | GR-4183-1912 | Sí |
 | 17 | 05/10/2026 | 4183 | DTA | 180 | 175 | -5 | GR-4183-1698 | No |
-| 18 | 05/10/2026 | 4183 | VARI | 200 | 200 | 0 | No aplica | Sí |
-| 19 | 16/10/2026 | 4183 | BCG | 150 | 150 | 0 | No aplica | Sí |
-| 20 | 09/10/2026 | 4183 | ROTA | 50 | 50 | 0 | No aplica | Sí |
-| 21 | 26/09/2026 | 4183 | VARI | 50 | 50 | 0 | No aplica | Sí |
-| 22 | 23/09/2026 | 4183 | BCG | 120 | 120 | 0 | No aplica | Sí |
+| 18 | 05/10/2026 | 4183 | VARI | 200 | 200 | 0 | GR-4183-6930 | Sí |
+| 19 | 16/10/2026 | 4183 | BCG | 150 | 150 | 0 | GR-4183-8080 | Sí |
+| 20 | 09/10/2026 | 4183 | ROTA | 50 | 50 | 0 | GR-4183-8426 | Sí |
+| 21 | 26/09/2026 | 4183 | VARI | 50 | 50 | 0 | GR-4183-9398 | Sí |
+| 22 | 23/09/2026 | 4183 | BCG | 120 | 120 | 0 | GR-4183-5166 | Sí |
 | 23 | 19/10/2026 | 4183 | HEPB | 100 | 110 | 10 | GR-4183-5502 | No |
-| 24 | 01/10/2026 | 4183 | ROTA | 80 | 80 | 0 | No aplica | Sí |
-| 25 | 29/09/2026 | 4183 | SPR | 30 | 30 | 0 | No aplica | Sí |
+| 24 | 01/10/2026 | 4183 | ROTA | 80 | 80 | 0 | GR-4183-5611 | Sí |
+| 25 | 29/09/2026 | 4183 | SPR | 30 | 30 | 0 | GR-4183-2758 | Sí |
 
 Cierre: 22 entregas concordantes ÷ 25 × 100 = **88.00 %**.
 
@@ -3211,14 +3219,14 @@ Las dos matrices siguientes presentan, para cada una de las catorce unidades, lo
 | TRAB-04 | 5.59 | 2.17 | 90.00 | 96.00 | 18.00 | 17.00 | 35.00 |
 | TRAB-05 | 6.15 | 1.86 | 97.50 | 96.00 | 20.00 | 20.00 | 40.00 |
 | TRAB-06 | 4.82 | 1.67 | 95.00 | 96.00 | 20.00 | 20.00 | 40.00 |
-| TRAB-07 | 4.95 | 2 | 100.00 | 92.00 | 20.00 | 20.00 | 40.00 |
+| TRAB-07 | 4.95 | 2.00 | 100.00 | 92.00 | 20.00 | 20.00 | 40.00 |
 | TRAB-08 | 5.92 | 1.96 | 97.50 | 96.00 | 18.00 | 19.00 | 37.00 |
 | TRAB-09 | 6.01 | 1.65 | 97.50 | 96.00 | 20.00 | 19.00 | 39.00 |
 | TRAB-10 | 6.29 | 1.87 | 97.50 | 96.00 | 20.00 | 20.00 | 40.00 |
 | TRAB-11 | 6.44 | 1.78 | 95.00 | 92.00 | 16.00 | 16.00 | 32.00 |
 | TRAB-12 | 5.74 | 2.07 | 97.50 | 92.00 | 20.00 | 20.00 | 40.00 |
 | TRAB-13 | 5.53 | 2.27 | 92.50 | 96.00 | 16.00 | 16.00 | 32.00 |
-| TRAB-14 | 5.63 | 1.9 | 97.50 | 88.00 | 17.00 | 17.00 | 34.00 |
+| TRAB-14 | 5.63 | 1.90 | 97.50 | 88.00 | 17.00 | 17.00 | 34.00 |
 
 *Nota.* Mediciones finales (postest). T_reg y T_vale corresponden a la media de tres réplicas por unidad experimental. Elaboración propia.
 
@@ -3390,11 +3398,11 @@ El análisis de consistencia de los datos recolectados en campo permite corrobor
 
 ### Comportamiento de los indicadores y características empíricas
 
-1. **Magnitud del impacto operativo y tamaño del efecto:** en los cinco indicadores de escala cerrada o porcentual (RSD, CPE, AP, UP y TAM) el tamaño del efecto estandarizado d_z osciló entre 3.183 y 4.100, con una amplitud de 0.918 y valores comprendidos en el rango de efecto grande según las convenciones de Cohen. En los indicadores de tiempo, la transición del soporte manual en papel a la plataforma digital produjo reducciones sustanciales: T_reg disminuyó 84.7 % (aceleración de 6.5×), pasando de una media de 37.18 min a 5.68 min; T_vale redujo su duración en 89.5 % (aceleración de 9.5×), de 18.21 min a 1.919 min (115.2 segundos). El recorrido conjunto de ambas operaciones cayó de 55.39 a 7.60 minutos por jornada observada.
+1. **Magnitud del impacto operativo y tamaño del efecto:** en los cinco indicadores de escala cerrada o porcentual (RSD, CPE, AP, UP y TAM) el tamaño del efecto estandarizado d_z osciló entre 3.183 y 4.100, con una amplitud de 0.918 y valores comprendidos en el rango de efecto grande según las convenciones de Cohen. En los indicadores de tiempo, la transición del soporte manual en papel a la plataforma digital produjo reducciones sustanciales: T_reg disminuyó 84.7 % (aceleración de 6.5×), pasando de una media de 37.18 min a 5.68 min; T_vale redujo su duración en 89.5 % (aceleración de 9.5×), de 18.21 min a 1.92 min (115.2 segundos). El recorrido conjunto de ambas operaciones cayó de 55.39 a 7.60 minutos por jornada observada.
 
 2. **Concentración en el límite superior de las escalas:** las dos medidas de consistencia documental se desplazan hacia el extremo superior del instrumento, lo que constituye el resultado buscado y a la vez impone un límite a su poder discriminativo. En RSD el valor más frecuente (97.50 %) se repite en 7 de las catorce unidades y 1 operador alcanza el 100 % (TRAB-07); en CPE la moda (96.00 %) se repite en 10 unidades y ningún operador alcanza la concordancia absoluta. La concentración se documenta como efecto techo operativo: el indicador conserva capacidad de detección en la cola inferior, donde aún se registran valores de 88.00 % a 94.57 % en CPE.
 
-3. **Dispersión en los tiempos de postest:** se registró una amplitud operacional genuina entre los operadores durante el postest: T_reg osciló entre 4.82 y 6.44 minutos, y T_vale entre 1.650 y 2.270 minutos (99 a 136 segundos). El operador con mayor duración en registro (TRAB-11) no coincidió con el de mayor duración en emisión de vales (TRAB-13), ni el más veloz en registro (TRAB-06) con el más veloz en vales (TRAB-09), lo que corrobora la heterogeneidad de destrezas operativas individuales.
+3. **Dispersión en los tiempos de postest:** se registró una amplitud operacional genuina entre los operadores durante el postest: T_reg osciló entre 4.82 y 6.44 minutos, y T_vale entre 1.65 y 2.27 minutos (99 a 136 segundos). El operador con mayor duración en registro (TRAB-11) no coincidió con el de mayor duración en emisión de vales (TRAB-13), ni el más veloz en registro (TRAB-06) con el más veloz en vales (TRAB-09), lo que corrobora la heterogeneidad de destrezas operativas individuales.
 
 4. **Respuesta singular y paridad de ganancia:** no se registró ninguna diferencia pareada nula en los siete indicadores: las catorce unidades mejoraron en todas las medidas, de modo que las pruebas de rangos con signo operan con los catorce pares informativos. El puntaje TAM global más bajo del postest correspondió a TRAB-11, TRAB-13 con 32.00 puntos, aun dentro del nivel Alto del baremo, lo que evidencia que la ganancia no dependió de un único perfil de usuario.
 
@@ -3422,13 +3430,13 @@ El análisis de consistencia de los datos recolectados en campo permite corrobor
 | Concentración en el límite superior | Moda de los puntajes de postest | 7 de 14 en RSD / 10 de 14 en CPE | Documentado |
 | Límites de saturación | Sujetos en el valor máximo de la escala | 1 en RSD (100 %) / 0 en CPE (96.00 % máx.) | Conforme |
 | Rango empírico postest (T_reg) | Dispersión operativa observada | 4.82 – 6.44 min (amplitud: 1.62 min) | Conforme |
-| Rango empírico postest (T_vale) | Dispersión operativa observada | 1.650 – 2.270 min (amplitud: 0.620 min) | Conforme |
+| Rango empírico postest (T_vale) | Dispersión operativa observada | 1.65 – 2.27 min (amplitud: 0.620 min) | Conforme |
 | Casos con diferencia pareada nula | Estabilidad en la puntuación observada | 0 casos | Conforme |
 | Eficacia en reducción temporal | Sujetos con reducción de tiempo en postest | 14 de 14 operadores (100 %) | Conforme |
 | Caso con mayor tiempo residual | Identificación de casos singulares en campo | 1 caso (TRAB-11, T_reg postest: 6.44 min) | Conforme |
 | Coherencia en percepción global | Sujetos con TAM postest en nivel Alto | 14 de 14 | Conforme |
 | Parámetros descriptivos basales | Medias de T_reg y T_vale en pretest | 37.18 min y 18.21 min | Conforme |
-| Parámetros descriptivos finales | Medias de T_reg y T_vale en postest | 5.68 min y 1.919 min | Conforme |
+| Parámetros descriptivos finales | Medias de T_reg y T_vale en postest | 5.68 min y 1.92 min | Conforme |
 | Supuesto de normalidad | Pruebas de Shapiro-Wilk sobre diferencias (p > .05) | 7 de 7 indicadores con normalidad (p mínimo = 0.189) | Conforme |
 | Precisión en cálculo de tiempos | Promedio aritmético de las tres réplicas | Coincidencia exacta con registros individuales | Conforme |
 

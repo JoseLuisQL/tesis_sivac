@@ -1,0 +1,701 @@
+sujeto_id,centro_acopio,momento,fecha_sesion,auditor,n,fecha,biologico,programado,entregado,diferencia,documento,conforme,observacion
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,1,24/07/2026,PENT,50,50,0,GR-CHANKA001-6241,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,2,28/07/2026,PENT,150,150,0,GR-CHANKA001-4432,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,3,13/07/2026,DTA,150,150,0,GR-CHANKA001-3735,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,4,03/08/2026,BCG,180,185,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,5,24/07/2026,IPV,150,150,0,GR-CHANKA001-3108,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,6,20/07/2026,HEPB,80,80,0,GR-CHANKA001-1676,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,7,26/07/2026,VARI,120,120,0,GR-CHANKA001-2127,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,8,29/07/2026,NEUM,120,110,-10,GR-CHANKA001-7575,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,9,09/08/2026,DTA,200,200,0,GR-CHANKA001-2202,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,10,01/08/2026,NEUM,30,25,-5,GR-CHANKA001-9318,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,11,13/07/2026,VARI,200,210,10,GR-CHANKA001-8494,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,12,09/08/2026,INFL,100,100,0,GR-CHANKA001-2987,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,13,15/07/2026,DTA,100,100,0,GR-CHANKA001-4034,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,14,17/07/2026,BCG,100,100,0,GR-CHANKA001-5666,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,15,23/07/2026,VARI,200,200,0,GR-CHANKA001-4055,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,16,07/08/2026,HEPB,30,30,0,GR-CHANKA001-5775,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,17,28/07/2026,HEPB,80,80,0,GR-CHANKA001-6660,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,18,22/07/2026,NEUM,80,80,0,GR-CHANKA001-8468,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,19,05/08/2026,SPR,180,175,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,20,28/07/2026,INFL,120,110,-10,GR-CHANKA001-2123,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,21,21/07/2026,INFL,180,170,-10,GR-CHANKA001-5216,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,22,23/07/2026,PENT,180,180,0,GR-CHANKA001-7823,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,23,07/08/2026,ROTA,60,50,-10,GR-CHANKA001-4330,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,24,31/07/2026,VARI,40,40,0,GR-CHANKA001-1877,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-01,25,05/08/2026,IPV,20,25,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,1,11/10/2026,HEPB,200,200,0,GR-CHANKA001-4781,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,2,29/09/2026,BCG,30,30,0,GR-CHANKA001-1850,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,3,22/09/2026,INFL,20,20,0,GR-CHANKA001-2190,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,4,09/10/2026,NEUM,150,150,0,GR-CHANKA001-7585,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,5,07/10/2026,NEUM,50,50,0,GR-CHANKA001-8026,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,6,16/09/2026,PENT,60,60,0,GR-CHANKA001-2923,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,7,14/09/2026,INFL,100,100,0,GR-CHANKA001-1722,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,8,23/09/2026,NEUM,120,120,0,GR-CHANKA001-7582,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,9,25/09/2026,SPR,180,180,0,GR-CHANKA001-8022,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,10,28/09/2026,HEPB,20,20,0,GR-CHANKA001-7345,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,11,23/09/2026,INFL,80,80,0,GR-CHANKA001-4497,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,12,14/09/2026,INFL,80,80,0,GR-CHANKA001-3941,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,13,10/10/2026,IPV,50,50,0,GR-CHANKA001-1210,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,14,18/09/2026,INFL,20,20,0,GR-CHANKA001-3023,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,15,11/10/2026,HEPB,80,80,0,GR-CHANKA001-3579,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,16,17/09/2026,SPR,50,50,0,GR-CHANKA001-3955,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,17,22/09/2026,SPR,180,175,-5,GR-CHANKA001-5298,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,18,08/10/2026,DTA,80,80,0,GR-CHANKA001-2736,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,19,28/09/2026,IPV,40,40,0,GR-CHANKA001-7712,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,20,30/09/2026,DTA,50,50,0,GR-CHANKA001-9653,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,21,11/10/2026,PENT,60,60,0,GR-CHANKA001-8780,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,22,02/10/2026,INFL,180,180,0,GR-CHANKA001-5902,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,23,17/09/2026,VARI,20,20,0,GR-CHANKA001-4982,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,24,07/10/2026,ROTA,150,150,0,GR-CHANKA001-4411,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-01,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-01,25,30/09/2026,INFL,150,150,0,GR-CHANKA001-5857,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,1,08/08/2026,PENT,60,50,-10,GR-CHANKA001-1391,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,2,08/08/2026,SPR,180,180,0,GR-CHANKA001-4527,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,3,07/08/2026,BCG,50,45,-5,GR-CHANKA001-6852,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,4,17/07/2026,PENT,40,35,-5,GR-CHANKA001-3436,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,5,25/07/2026,SPR,150,150,0,GR-CHANKA001-8093,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,6,23/07/2026,IPV,30,30,0,GR-CHANKA001-6827,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,7,16/07/2026,BCG,180,175,-5,GR-CHANKA001-4192,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,8,22/07/2026,NEUM,30,30,0,GR-CHANKA001-4466,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,9,17/07/2026,DTA,100,100,0,GR-CHANKA001-3315,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,10,13/07/2026,SPR,80,80,0,GR-CHANKA001-8065,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,11,23/07/2026,SPR,80,80,0,GR-CHANKA001-9786,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,12,13/07/2026,NEUM,40,40,0,GR-CHANKA001-6745,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,13,31/07/2026,BCG,20,15,-5,GR-CHANKA001-8464,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,14,14/07/2026,INFL,20,20,0,GR-CHANKA001-7586,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,15,07/08/2026,INFL,200,195,-5,GR-CHANKA001-6078,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,16,28/07/2026,SPR,80,85,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,17,14/07/2026,DTA,40,40,0,GR-CHANKA001-7464,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,18,29/07/2026,INFL,60,60,0,GR-CHANKA001-5236,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,19,02/08/2026,INFL,30,30,0,GR-CHANKA001-6589,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,20,07/08/2026,ROTA,40,40,0,GR-CHANKA001-4368,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,21,17/07/2026,ROTA,200,200,0,GR-CHANKA001-3382,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,22,23/07/2026,ROTA,100,100,0,GR-CHANKA001-2232,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,23,30/07/2026,NEUM,30,20,-10,GR-CHANKA001-8955,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,24,05/08/2026,NEUM,200,200,0,GR-CHANKA001-8622,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Pretest,10/08/2026,OBS-02,25,20/07/2026,PENT,40,45,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,1,15/09/2026,BCG,120,120,0,GR-CHANKA001-1288,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,2,14/09/2026,SPR,80,80,0,GR-CHANKA001-6127,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,3,30/09/2026,NEUM,80,80,0,GR-CHANKA001-4433,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,4,22/09/2026,BCG,180,180,0,GR-CHANKA001-5996,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,5,19/09/2026,IPV,20,15,-5,GR-CHANKA001-2687,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,6,28/09/2026,NEUM,20,20,0,GR-CHANKA001-4728,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,7,29/09/2026,HEPB,60,60,0,GR-CHANKA001-7151,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,8,15/09/2026,INFL,200,200,0,GR-CHANKA001-5188,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,9,05/10/2026,VARI,100,100,0,GR-CHANKA001-3977,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,10,14/09/2026,VARI,120,120,0,GR-CHANKA001-4824,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,11,19/09/2026,HEPB,100,100,0,GR-CHANKA001-4811,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,12,14/09/2026,BCG,30,30,0,GR-CHANKA001-5989,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,13,07/10/2026,PENT,150,150,0,GR-CHANKA001-4803,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,14,26/09/2026,IPV,30,30,0,GR-CHANKA001-4098,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,15,07/10/2026,HEPB,200,200,0,GR-CHANKA001-2919,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,16,16/09/2026,BCG,80,80,0,GR-CHANKA001-1862,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,17,18/09/2026,DTA,30,30,0,GR-CHANKA001-3910,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,18,17/09/2026,SPR,30,30,0,GR-CHANKA001-3523,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,19,06/10/2026,DTA,40,40,0,GR-CHANKA001-5900,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,20,11/10/2026,HEPB,150,150,0,GR-CHANKA001-9114,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,21,25/09/2026,VARI,120,120,0,GR-CHANKA001-4193,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,22,22/09/2026,PENT,150,150,0,GR-CHANKA001-6155,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,23,22/09/2026,HEPB,50,50,0,GR-CHANKA001-3771,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,24,28/09/2026,DTA,40,40,0,GR-CHANKA001-7426,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-02,ALMACÉN (CHANKA),Postest,12/10/2026,OBS-02,25,01/10/2026,HEPB,150,150,0,GR-CHANKA001-3253,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,1,30/07/2026,SPR,50,50,0,GR-SC-4248,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,2,10/08/2026,PENT,150,150,0,GR-SC-9647,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,3,28/07/2026,NEUM,30,30,0,GR-SC-2504,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,4,08/08/2026,ROTA,120,120,0,GR-SC-9062,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,5,19/07/2026,SPR,120,110,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,6,25/07/2026,SPR,100,100,0,GR-SC-9684,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,7,02/08/2026,IPV,20,20,0,GR-SC-9449,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,8,05/08/2026,INFL,30,30,0,GR-SC-3368,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,9,24/07/2026,HEPB,30,30,0,GR-SC-5066,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,10,04/08/2026,DTA,20,40,20,GR-SC-8635,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,11,29/07/2026,PENT,200,200,0,GR-SC-9222,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,12,28/07/2026,ROTA,200,200,0,GR-SC-2905,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,13,27/07/2026,SPR,120,125,5,GR-SC-7390,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,14,18/07/2026,DTA,100,100,0,GR-SC-2580,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,15,10/08/2026,DTA,100,100,0,GR-SC-1707,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,16,15/07/2026,INFL,120,115,-5,GR-SC-1956,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,17,29/07/2026,HEPB,100,100,0,GR-SC-7610,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,18,31/07/2026,IPV,180,180,0,GR-SC-9332,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,19,25/07/2026,IPV,100,90,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,20,24/07/2026,DTA,40,60,20,GR-SC-5940,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,21,26/07/2026,BCG,50,50,0,GR-SC-4901,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,22,09/08/2026,ROTA,100,100,0,GR-SC-9309,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,23,17/07/2026,SPR,50,40,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,24,15/07/2026,PENT,40,40,0,GR-SC-3636,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-03,Hospital Andahuaylas,Pretest,11/08/2026,OBS-01,25,10/08/2026,HEPB,200,200,0,GR-SC-2525,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,1,30/09/2026,ROTA,80,80,0,GR-SC-8716,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,2,29/09/2026,INFL,40,40,0,GR-SC-9536,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,3,20/09/2026,PENT,120,120,0,GR-SC-8667,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,4,15/09/2026,INFL,200,200,0,GR-SC-9230,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,5,30/09/2026,IPV,180,180,0,GR-SC-9134,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,6,03/10/2026,INFL,40,40,0,GR-SC-2371,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,7,07/10/2026,HEPB,60,60,0,GR-SC-8182,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,8,24/09/2026,SPR,20,20,0,GR-SC-4770,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,9,19/09/2026,DTA,80,80,0,GR-SC-1217,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,10,26/09/2026,VARI,50,50,0,GR-SC-7871,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,11,06/10/2026,DTA,40,40,0,GR-SC-8895,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,12,30/09/2026,SPR,200,200,0,GR-SC-1650,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,13,20/09/2026,IPV,80,80,0,GR-SC-1202,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,14,22/09/2026,SPR,30,30,0,GR-SC-2784,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,15,19/09/2026,BCG,100,100,0,GR-SC-5757,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,16,02/10/2026,PENT,20,20,0,GR-SC-1925,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,17,23/09/2026,SPR,50,45,-5,GR-SC-5460,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,18,24/09/2026,INFL,50,50,0,GR-SC-5851,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,19,29/09/2026,PENT,200,200,0,GR-SC-4258,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,20,08/10/2026,BCG,50,50,0,GR-SC-6675,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,21,18/09/2026,VARI,150,150,0,GR-SC-8253,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,22,28/09/2026,ROTA,200,200,0,GR-SC-6369,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,23,27/09/2026,BCG,100,100,0,GR-SC-6547,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,24,22/09/2026,HEPB,50,50,0,GR-SC-5518,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-03,Hospital Andahuaylas,Postest,13/10/2026,OBS-01,25,04/10/2026,HEPB,80,80,0,GR-SC-7852,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,1,18/07/2026,PENT,180,180,0,GR-11214-1867,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,2,17/07/2026,ROTA,60,60,0,GR-11214-3727,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,3,23/07/2026,INFL,200,200,0,GR-11214-7535,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,4,15/07/2026,BCG,20,20,0,GR-11214-6917,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,5,09/08/2026,HEPB,20,25,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,6,07/08/2026,HEPB,200,210,10,GR-11214-3436,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,7,05/08/2026,INFL,150,150,0,GR-11214-3215,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,8,29/07/2026,INFL,60,60,0,GR-11214-8558,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,9,28/07/2026,SPR,30,30,0,GR-11214-6777,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,10,17/07/2026,BCG,20,20,0,GR-11214-3444,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,11,07/08/2026,SPR,60,60,0,GR-11214-8380,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,12,28/07/2026,HEPB,20,20,0,GR-11214-8787,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,13,05/08/2026,DTA,120,110,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,14,14/07/2026,DTA,200,200,0,GR-11214-6766,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,15,25/07/2026,ROTA,100,100,0,GR-11214-6379,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,16,04/08/2026,ROTA,40,40,0,GR-11214-7297,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,17,04/08/2026,PENT,180,180,0,GR-11214-4321,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,18,05/08/2026,DTA,20,20,0,GR-11214-1658,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,19,09/08/2026,VARI,200,190,-10,GR-11214-3780,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,20,15/07/2026,PENT,40,40,0,GR-11214-1328,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,21,10/08/2026,HEPB,80,80,0,GR-11214-9574,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,22,19/07/2026,BCG,100,95,-5,GR-11214-3004,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,23,10/08/2026,HEPB,50,55,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,24,02/08/2026,ROTA,200,200,0,GR-11214-8880,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Pretest,11/08/2026,OBS-02,25,20/07/2026,DTA,180,180,0,GR-11214-7473,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,1,27/09/2026,INFL,30,30,0,GR-11214-8358,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,2,20/09/2026,DTA,20,15,-5,GR-11214-2646,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,3,21/09/2026,NEUM,30,30,0,GR-11214-4720,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,4,28/09/2026,HEPB,40,40,0,GR-11214-7322,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,5,01/10/2026,DTA,60,60,0,GR-11214-8699,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,6,08/10/2026,PENT,120,120,0,GR-11214-3294,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,7,06/10/2026,INFL,60,60,0,GR-11214-8543,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,8,15/09/2026,IPV,40,40,0,GR-11214-3071,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,9,17/09/2026,SPR,100,100,0,GR-11214-5337,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,10,19/09/2026,INFL,80,80,0,GR-11214-3298,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,11,30/09/2026,NEUM,20,20,0,GR-11214-4903,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,12,02/10/2026,IPV,20,20,0,GR-11214-3021,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,13,26/09/2026,NEUM,60,60,0,GR-11214-6153,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,14,18/09/2026,DTA,50,50,0,GR-11214-9366,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,15,21/09/2026,ROTA,50,50,0,GR-11214-8952,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,16,08/10/2026,DTA,150,150,0,GR-11214-2689,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,17,24/09/2026,HEPB,120,120,0,GR-11214-4777,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,18,02/10/2026,SPR,30,30,0,GR-11214-4071,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,19,04/10/2026,INFL,180,180,0,GR-11214-8141,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,20,04/10/2026,PENT,50,50,0,GR-11214-5550,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,21,26/09/2026,DTA,80,80,0,GR-11214-8085,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,22,24/09/2026,INFL,50,50,0,GR-11214-7863,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,23,22/09/2026,ROTA,50,50,0,GR-11214-5388,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,24,04/10/2026,IPV,20,20,0,GR-11214-8203,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-04,Hospital ESSALUD Andahuaylas,Postest,13/10/2026,OBS-02,25,29/09/2026,IPV,60,60,0,GR-11214-8920,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,1,31/07/2026,SPR,100,100,0,GR-6804-6088,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,2,16/07/2026,BCG,60,60,0,GR-6804-9607,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,3,20/07/2026,NEUM,80,70,-10,GR-6804-1382,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,4,22/07/2026,HEPB,100,100,0,GR-6804-3006,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,5,31/07/2026,SPR,40,40,0,GR-6804-8690,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,6,17/07/2026,PENT,60,60,0,GR-6804-1790,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,7,28/07/2026,SPR,80,80,0,GR-6804-5929,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,8,20/07/2026,PENT,80,80,0,GR-6804-8048,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,9,10/08/2026,VARI,60,60,0,GR-6804-7842,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,10,23/07/2026,BCG,40,45,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,11,19/07/2026,SPR,120,120,0,GR-6804-5906,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,12,05/08/2026,ROTA,20,15,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,13,28/07/2026,VARI,80,90,10,GR-6804-6122,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,14,30/07/2026,VARI,80,80,0,GR-6804-9240,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,15,26/07/2026,VARI,100,100,0,GR-6804-6073,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,16,01/08/2026,ROTA,100,90,-10,GR-6804-2782,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,17,03/08/2026,NEUM,60,60,0,GR-6804-8089,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,18,22/07/2026,ROTA,30,30,0,GR-6804-8501,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,19,20/07/2026,SPR,80,70,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,20,27/07/2026,VARI,50,50,0,GR-6804-9502,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,21,10/08/2026,BCG,40,40,0,GR-6804-1815,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,22,11/08/2026,HEPB,180,185,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,23,04/08/2026,HEPB,40,30,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,24,15/07/2026,SPR,40,30,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Pretest,12/08/2026,OBS-01,25,20/07/2026,PENT,30,25,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,1,13/10/2026,INFL,40,40,0,GR-6804-2129,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,2,08/10/2026,ROTA,60,60,0,GR-6804-2187,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,3,18/09/2026,HEPB,50,50,0,GR-6804-4034,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,4,06/10/2026,HEPB,180,180,0,GR-6804-4894,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,5,26/09/2026,VARI,100,100,0,GR-6804-7460,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,6,30/09/2026,DTA,30,30,0,GR-6804-2940,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,7,09/10/2026,ROTA,20,20,0,GR-6804-7200,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,8,02/10/2026,VARI,80,80,0,GR-6804-6556,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,9,22/09/2026,SPR,150,150,0,GR-6804-6841,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,10,13/10/2026,DTA,60,60,0,GR-6804-7949,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,11,13/10/2026,IPV,80,80,0,GR-6804-7297,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,12,06/10/2026,NEUM,60,60,0,GR-6804-2842,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,13,05/10/2026,NEUM,30,30,0,GR-6804-3368,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,14,07/10/2026,INFL,80,70,-10,GR-6804-9557,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,15,09/10/2026,ROTA,50,50,0,GR-6804-6188,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,16,17/09/2026,BCG,60,60,0,GR-6804-2040,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,17,17/09/2026,INFL,120,120,0,GR-6804-3347,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,18,23/09/2026,NEUM,180,180,0,GR-6804-9651,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,19,12/10/2026,IPV,20,20,0,GR-6804-5301,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,20,09/10/2026,IPV,20,20,0,GR-6804-4632,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,21,10/10/2026,VARI,200,200,0,GR-6804-2854,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,22,18/09/2026,PENT,30,30,0,GR-6804-9050,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,23,30/09/2026,VARI,180,180,0,GR-6804-1963,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,24,13/10/2026,VARI,200,200,0,GR-6804-2049,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-05,Centro de Salud Andahuaylas,Postest,14/10/2026,OBS-01,25,22/09/2026,INFL,80,80,0,GR-6804-4263,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,1,07/08/2026,NEUM,80,70,-10,GR-4195-2012,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,2,17/07/2026,DTA,20,20,0,GR-4195-3772,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,3,23/07/2026,DTA,120,110,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,4,28/07/2026,INFL,80,85,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,5,16/07/2026,INFL,200,200,0,GR-4195-8848,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,6,10/08/2026,PENT,20,20,0,GR-4195-7694,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,7,05/08/2026,SPR,60,55,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,8,06/08/2026,SPR,180,180,0,GR-4195-2264,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,9,11/08/2026,ROTA,40,40,0,GR-4195-7384,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,10,07/08/2026,NEUM,180,175,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,11,07/08/2026,SPR,120,120,0,GR-4195-8005,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,12,27/07/2026,IPV,120,120,0,GR-4195-8916,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,13,28/07/2026,SPR,50,50,0,GR-4195-2347,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,14,25/07/2026,HEPB,80,80,0,GR-4195-4392,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,15,02/08/2026,HEPB,120,120,0,GR-4195-2406,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,16,20/07/2026,VARI,20,20,0,GR-4195-6789,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,17,15/07/2026,IPV,40,40,0,GR-4195-9244,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,18,18/07/2026,INFL,120,120,0,GR-4195-4040,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,19,07/08/2026,PENT,150,140,-10,GR-4195-3834,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,20,11/08/2026,IPV,100,100,0,GR-4195-1697,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,21,18/07/2026,VARI,30,30,0,GR-4195-4156,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,22,09/08/2026,BCG,40,35,-5,GR-4195-3566,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,23,22/07/2026,BCG,180,180,0,GR-4195-1646,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,24,19/07/2026,VARI,180,180,0,GR-4195-1414,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Pretest,12/08/2026,OBS-02,25,30/07/2026,DTA,200,190,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,1,09/10/2026,NEUM,40,40,0,GR-4195-7921,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,2,03/10/2026,IPV,200,200,0,GR-4195-5455,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,3,28/09/2026,IPV,200,200,0,GR-4195-4487,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,4,19/09/2026,IPV,60,55,-5,GR-4195-4224,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,5,18/09/2026,ROTA,60,60,0,GR-4195-3537,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,6,06/10/2026,VARI,30,30,0,GR-4195-9774,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,7,19/09/2026,IPV,30,30,0,GR-4195-1945,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,8,09/10/2026,INFL,100,100,0,GR-4195-7753,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,9,29/09/2026,NEUM,20,20,0,GR-4195-4157,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,10,03/10/2026,DTA,60,60,0,GR-4195-3093,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,11,16/09/2026,VARI,180,180,0,GR-4195-7096,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,12,05/10/2026,VARI,200,200,0,GR-4195-7793,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,13,25/09/2026,INFL,200,200,0,GR-4195-8922,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,14,20/09/2026,ROTA,150,150,0,GR-4195-3123,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,15,13/10/2026,DTA,60,60,0,GR-4195-7041,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,16,09/10/2026,PENT,50,50,0,GR-4195-8803,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,17,17/09/2026,SPR,40,40,0,GR-4195-9303,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,18,04/10/2026,IPV,50,50,0,GR-4195-1264,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,19,30/09/2026,IPV,40,40,0,GR-4195-5932,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,20,22/09/2026,INFL,40,40,0,GR-4195-1459,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,21,04/10/2026,IPV,20,20,0,GR-4195-4331,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,22,28/09/2026,VARI,100,100,0,GR-4195-4245,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,23,13/10/2026,ROTA,180,180,0,GR-4195-6745,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,24,27/09/2026,BCG,60,60,0,GR-4195-2894,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-06,Talavera,Postest,14/10/2026,OBS-02,25,13/10/2026,HEPB,180,180,0,GR-4195-5514,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,1,30/07/2026,SPR,40,40,0,GR-4167SJ-8383,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,2,23/07/2026,BCG,150,145,-5,GR-4167SJ-8716,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,3,27/07/2026,ROTA,180,180,0,GR-4167SJ-8736,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,4,04/08/2026,INFL,120,115,-5,GR-4167SJ-8022,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,5,09/08/2026,NEUM,20,20,0,GR-4167SJ-7298,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,6,10/08/2026,DTA,60,60,0,GR-4167SJ-4875,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,7,31/07/2026,SPR,100,100,0,GR-4167SJ-8432,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,8,31/07/2026,DTA,20,20,0,GR-4167SJ-3921,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,9,31/07/2026,INFL,180,185,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,10,08/08/2026,INFL,180,170,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,11,26/07/2026,IPV,60,60,0,GR-4167SJ-4991,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,12,02/08/2026,DTA,100,100,0,GR-4167SJ-5279,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,13,12/08/2026,VARI,150,150,0,GR-4167SJ-7220,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,14,18/07/2026,PENT,40,40,0,GR-4167SJ-8240,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,15,27/07/2026,PENT,50,40,-10,GR-4167SJ-9794,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,16,26/07/2026,INFL,50,55,5,GR-4167SJ-3790,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,17,11/08/2026,VARI,40,40,0,GR-4167SJ-1428,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,18,27/07/2026,PENT,180,175,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,19,10/08/2026,HEPB,30,25,-5,GR-4167SJ-5622,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,20,05/08/2026,HEPB,60,60,0,GR-4167SJ-4865,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,21,29/07/2026,ROTA,180,180,0,GR-4167SJ-2764,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,22,25/07/2026,DTA,40,35,-5,GR-4167SJ-6281,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,23,30/07/2026,SPR,150,155,5,GR-4167SJ-6810,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,24,19/07/2026,DTA,200,220,20,GR-4167SJ-6169,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-07,San Jeronimo,Pretest,13/08/2026,OBS-01,25,25/07/2026,HEPB,150,150,0,GR-4167SJ-5873,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,1,05/10/2026,HEPB,60,60,0,GR-4167SJ-9273,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,2,14/10/2026,ROTA,100,100,0,GR-4167SJ-4426,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,3,20/09/2026,DTA,50,50,0,GR-4167SJ-7589,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,4,18/09/2026,SPR,180,180,0,GR-4167SJ-7609,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,5,30/09/2026,VARI,150,150,0,GR-4167SJ-4013,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,6,19/09/2026,BCG,60,60,0,GR-4167SJ-4872,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,7,01/10/2026,IPV,50,50,0,GR-4167SJ-1468,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,8,19/09/2026,SPR,60,60,0,GR-4167SJ-7299,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,9,22/09/2026,BCG,80,80,0,GR-4167SJ-6855,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,10,23/09/2026,HEPB,50,50,0,GR-4167SJ-7905,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,11,25/09/2026,BCG,180,180,0,GR-4167SJ-6929,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,12,25/09/2026,VARI,50,55,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,13,05/10/2026,BCG,150,150,0,GR-4167SJ-8817,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,14,21/09/2026,SPR,40,40,0,GR-4167SJ-3816,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,15,07/10/2026,IPV,40,40,0,GR-4167SJ-6802,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,16,23/09/2026,NEUM,100,100,0,GR-4167SJ-4904,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,17,01/10/2026,HEPB,80,80,0,GR-4167SJ-6822,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,18,27/09/2026,VARI,150,150,0,GR-4167SJ-1748,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,19,12/10/2026,VARI,40,40,0,GR-4167SJ-4351,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,20,12/10/2026,HEPB,150,150,0,GR-4167SJ-3571,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,21,30/09/2026,DTA,20,20,0,GR-4167SJ-5299,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,22,06/10/2026,SPR,50,55,5,GR-4167SJ-5135,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,23,25/09/2026,ROTA,200,200,0,GR-4167SJ-9153,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,24,20/09/2026,VARI,40,40,0,GR-4167SJ-6990,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-07,San Jeronimo,Postest,15/10/2026,OBS-01,25,26/09/2026,INFL,200,200,0,GR-4167SJ-9129,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,1,26/07/2026,ROTA,150,150,0,GR-4158-3958,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,2,26/07/2026,INFL,120,120,0,GR-4158-4638,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,3,27/07/2026,INFL,50,50,0,GR-4158-9067,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,4,11/08/2026,NEUM,80,80,0,GR-4158-2226,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,5,03/08/2026,BCG,50,50,0,GR-4158-7299,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,6,12/08/2026,NEUM,60,60,0,GR-4158-2464,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,7,03/08/2026,HEPB,100,120,20,GR-4158-5440,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,8,01/08/2026,VARI,100,100,0,GR-4158-6849,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,9,11/08/2026,IPV,150,150,0,GR-4158-1302,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,10,26/07/2026,DTA,30,30,0,GR-4158-8967,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,11,11/08/2026,VARI,100,100,0,GR-4158-7180,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,12,30/07/2026,ROTA,200,200,0,GR-4158-2373,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,13,24/07/2026,HEPB,180,180,0,GR-4158-5162,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,14,31/07/2026,DTA,120,120,0,GR-4158-1939,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,15,27/07/2026,INFL,30,30,0,GR-4158-1772,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,16,04/08/2026,INFL,30,25,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,17,09/08/2026,IPV,80,75,-5,GR-4158-5530,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,18,25/07/2026,NEUM,50,50,0,GR-4158-3825,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,19,01/08/2026,INFL,120,110,-10,GR-4158-3719,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,20,30/07/2026,ROTA,50,50,0,GR-4158-3752,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,21,23/07/2026,HEPB,100,100,0,GR-4158-6817,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,22,09/08/2026,DTA,50,50,0,GR-4158-6025,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,23,19/07/2026,SPR,150,150,0,GR-4158-4624,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,24,21/07/2026,BCG,20,20,0,GR-4158-7997,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Pretest,13/08/2026,OBS-02,25,11/08/2026,PENT,180,170,-10,GR-4158-3238,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,1,14/10/2026,ROTA,40,40,0,GR-4158-3490,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,2,03/10/2026,SPR,40,40,0,GR-4158-7925,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,3,18/09/2026,HEPB,150,150,0,GR-4158-2447,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,4,01/10/2026,BCG,40,40,0,GR-4158-2406,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,5,03/10/2026,SPR,30,30,0,GR-4158-2941,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,6,08/10/2026,NEUM,100,100,0,GR-4158-3063,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,7,13/10/2026,HEPB,150,150,0,GR-4158-3339,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,8,20/09/2026,SPR,40,40,0,GR-4158-3012,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,9,12/10/2026,IPV,100,100,0,GR-4158-2705,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,10,14/10/2026,BCG,120,120,0,GR-4158-4511,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,11,10/10/2026,HEPB,50,50,0,GR-4158-2766,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,12,18/09/2026,SPR,120,120,0,GR-4158-9642,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,13,26/09/2026,DTA,50,40,-10,GR-4158-8312,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,14,05/10/2026,IPV,60,60,0,GR-4158-8198,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,15,21/09/2026,SPR,20,20,0,GR-4158-4148,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,16,19/09/2026,BCG,120,120,0,GR-4158-8501,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,17,22/09/2026,BCG,20,20,0,GR-4158-8581,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,18,01/10/2026,VARI,200,200,0,GR-4158-7008,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,19,21/09/2026,PENT,180,180,0,GR-4158-7584,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,20,26/09/2026,NEUM,180,180,0,GR-4158-6335,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,21,11/10/2026,DTA,80,80,0,GR-4158-6765,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,22,17/09/2026,NEUM,200,200,0,GR-4158-4871,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,23,12/10/2026,SPR,200,200,0,GR-4158-8203,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,24,01/10/2026,SPR,150,150,0,GR-4158-7269,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-08,Huancaray,Postest,15/10/2026,OBS-02,25,10/10/2026,BCG,50,50,0,GR-4158-4204,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,1,02/08/2026,ROTA,150,150,0,GR-4202-5948,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,2,26/07/2026,DTA,120,110,-10,GR-4202-3689,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,3,13/08/2026,VARI,30,30,0,GR-4202-3241,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,4,22/07/2026,DTA,100,100,0,GR-4202-7223,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,5,13/08/2026,PENT,200,200,0,GR-4202-8743,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,6,31/07/2026,DTA,120,120,0,GR-4202-2847,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,7,18/07/2026,VARI,100,100,0,GR-4202-4982,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,8,01/08/2026,VARI,80,80,0,GR-4202-4892,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,9,10/08/2026,ROTA,100,95,-5,GR-4202-5538,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,10,27/07/2026,ROTA,20,20,0,GR-4202-9570,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,11,29/07/2026,BCG,30,30,0,GR-4202-4533,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,12,27/07/2026,SPR,120,120,0,GR-4202-7713,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,13,23/07/2026,DTA,40,45,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,14,31/07/2026,NEUM,30,30,0,GR-4202-4087,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,15,22/07/2026,DTA,150,150,0,GR-4202-5093,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,16,11/08/2026,VARI,40,30,-10,GR-4202-8509,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,17,09/08/2026,DTA,20,15,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,18,02/08/2026,VARI,80,80,0,GR-4202-8645,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,19,23/07/2026,SPR,50,40,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,20,28/07/2026,HEPB,80,80,0,GR-4202-5052,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,21,30/07/2026,DTA,180,180,0,GR-4202-2504,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,22,20/07/2026,HEPB,200,200,0,GR-4202-8855,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,23,19/07/2026,SPR,60,60,0,GR-4202-6777,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,24,30/07/2026,INFL,200,200,0,GR-4202-2834,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Pretest,14/08/2026,OBS-01,25,12/08/2026,ROTA,200,200,0,GR-4202-8116,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,1,29/09/2026,IPV,60,60,0,GR-4202-3659,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,2,07/10/2026,IPV,60,60,0,GR-4202-8307,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,3,24/09/2026,PENT,20,20,0,GR-4202-1582,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,4,30/09/2026,INFL,60,60,0,GR-4202-6429,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,5,03/10/2026,NEUM,180,180,0,GR-4202-4746,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,6,21/09/2026,INFL,40,45,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,7,20/09/2026,BCG,40,40,0,GR-4202-1876,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,8,23/09/2026,NEUM,120,120,0,GR-4202-2415,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,9,20/09/2026,VARI,30,30,0,GR-4202-8737,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,10,25/09/2026,INFL,50,50,0,GR-4202-3145,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,11,21/09/2026,DTA,50,50,0,GR-4202-6375,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,12,19/09/2026,IPV,120,120,0,GR-4202-9105,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,13,06/10/2026,VARI,60,60,0,GR-4202-9784,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,14,18/09/2026,ROTA,60,60,0,GR-4202-3744,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,15,20/09/2026,IPV,30,30,0,GR-4202-4527,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,16,14/10/2026,ROTA,180,180,0,GR-4202-3840,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,17,02/10/2026,DTA,30,30,0,GR-4202-6396,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,18,30/09/2026,IPV,30,30,0,GR-4202-4107,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,19,20/09/2026,SPR,150,150,0,GR-4202-6320,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,20,26/09/2026,INFL,20,20,0,GR-4202-6561,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,21,24/09/2026,NEUM,20,20,0,GR-4202-3006,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,22,24/09/2026,DTA,30,30,0,GR-4202-9143,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,23,15/10/2026,NEUM,80,80,0,GR-4202-3186,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,24,13/10/2026,BCG,100,100,0,GR-4202-4110,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-09,Chicmo,Postest,16/10/2026,OBS-01,25,26/09/2026,ROTA,120,120,0,GR-4202-5053,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,1,03/08/2026,HEPB,200,200,0,GR-4172-2299,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,2,29/07/2026,HEPB,100,90,-10,GR-4172-2089,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,3,02/08/2026,ROTA,180,180,0,GR-4172-5744,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,4,13/08/2026,DTA,200,200,0,GR-4172-9379,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,5,09/08/2026,INFL,150,150,0,GR-4172-7524,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,6,17/07/2026,IPV,60,50,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,7,04/08/2026,SPR,200,205,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,8,30/07/2026,NEUM,40,40,0,GR-4172-3875,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,9,11/08/2026,PENT,100,100,0,GR-4172-4738,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,10,01/08/2026,IPV,20,20,0,GR-4172-6093,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,11,18/07/2026,SPR,60,50,-10,GR-4172-2907,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,12,30/07/2026,ROTA,120,110,-10,GR-4172-6132,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,13,17/07/2026,DTA,150,150,0,GR-4172-1744,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,14,21/07/2026,NEUM,200,205,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,15,30/07/2026,DTA,150,155,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,16,10/08/2026,SPR,20,15,-5,GR-4172-3281,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,17,11/08/2026,VARI,150,150,0,GR-4172-5488,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,18,06/08/2026,ROTA,40,40,0,GR-4172-3711,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,19,24/07/2026,ROTA,100,100,0,GR-4172-4756,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,20,11/08/2026,SPR,30,10,-20,GR-4172-4103,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,21,22/07/2026,IPV,20,20,0,GR-4172-6373,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,22,26/07/2026,ROTA,100,100,0,GR-4172-7563,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,23,13/08/2026,NEUM,80,80,0,GR-4172-9376,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,24,29/07/2026,IPV,100,100,0,GR-4172-9762,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Pretest,14/08/2026,OBS-02,25,01/08/2026,NEUM,20,20,0,GR-4172-9486,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,1,03/10/2026,INFL,50,50,0,GR-4172-6210,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,2,20/09/2026,NEUM,80,80,0,GR-4172-2025,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,3,19/09/2026,IPV,60,60,0,GR-4172-7539,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,4,12/10/2026,PENT,80,80,0,GR-4172-6040,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,5,11/10/2026,NEUM,200,200,0,GR-4172-7963,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,6,15/10/2026,IPV,30,30,0,GR-4172-9294,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,7,23/09/2026,IPV,30,30,0,GR-4172-7542,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,8,02/10/2026,BCG,50,50,0,GR-4172-7949,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,9,18/09/2026,VARI,50,45,-5,GR-4172-3729,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,10,13/10/2026,NEUM,40,40,0,GR-4172-1836,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,11,11/10/2026,IPV,150,150,0,GR-4172-2360,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,12,25/09/2026,DTA,150,150,0,GR-4172-5539,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,13,27/09/2026,DTA,60,60,0,GR-4172-9728,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,14,27/09/2026,VARI,80,80,0,GR-4172-2139,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,15,23/09/2026,DTA,40,40,0,GR-4172-5867,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,16,10/10/2026,ROTA,20,20,0,GR-4172-9450,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,17,03/10/2026,IPV,100,100,0,GR-4172-9047,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,18,11/10/2026,ROTA,200,200,0,GR-4172-6659,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,19,15/10/2026,NEUM,20,20,0,GR-4172-8787,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,20,18/09/2026,ROTA,150,150,0,GR-4172-5421,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,21,28/09/2026,ROTA,50,50,0,GR-4172-5820,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,22,01/10/2026,IPV,50,50,0,GR-4172-8083,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,23,06/10/2026,ROTA,150,150,0,GR-4172-2882,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,24,12/10/2026,VARI,200,200,0,GR-4172-2435,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-10,Huancabamba,Postest,16/10/2026,OBS-02,25,21/09/2026,HEPB,180,180,0,GR-4172-4413,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,1,06/09/2026,VARI,200,200,0,GR-4167-1211,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,2,14/08/2026,INFL,20,20,0,GR-4167-7815,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,3,29/08/2026,SPR,150,150,0,GR-4167-4643,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,4,14/08/2026,PENT,50,50,0,GR-4167-8191,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,5,28/08/2026,DTA,120,120,0,GR-4167-3964,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,6,21/08/2026,INFL,30,30,0,GR-4167-7702,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,7,19/08/2026,VARI,50,50,0,GR-4167-1387,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,8,17/08/2026,HEPB,100,100,0,GR-4167-4834,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,9,05/09/2026,INFL,180,170,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,10,01/09/2026,IPV,80,75,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,11,20/08/2026,DTA,60,55,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,12,15/08/2026,ROTA,100,100,0,GR-4167-3772,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,13,05/09/2026,ROTA,80,80,0,GR-4167-3469,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,14,05/09/2026,SPR,80,60,-20,GR-4167-3782,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,15,31/08/2026,PENT,40,40,0,GR-4167-4546,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,16,19/08/2026,DTA,80,75,-5,GR-4167-4070,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,17,12/08/2026,NEUM,180,180,0,GR-4167-4850,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,18,11/08/2026,ROTA,20,20,0,GR-4167-4434,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,19,29/08/2026,DTA,30,25,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,20,11/08/2026,DTA,60,60,0,GR-4167-3263,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,21,05/09/2026,HEPB,40,40,0,GR-4167-2689,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,22,28/08/2026,HEPB,60,60,0,GR-4167-4886,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,23,30/08/2026,INFL,120,110,-10,GR-4167-8823,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,24,25/08/2026,HEPB,20,20,0,GR-4167-6865,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Pretest,07/09/2026,OBS-01,25,14/08/2026,INFL,40,60,20,GR-4167-2484,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,1,27/09/2026,SPR,30,20,-10,GR-4167-8318,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,2,18/10/2026,DTA,30,30,0,GR-4167-5445,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,3,11/10/2026,ROTA,80,80,0,GR-4167-4397,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,4,11/10/2026,PENT,180,180,0,GR-4167-5105,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,5,10/10/2026,VARI,50,50,0,GR-4167-2083,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,6,29/09/2026,HEPB,50,50,0,GR-4167-6731,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,7,24/09/2026,HEPB,180,180,0,GR-4167-7974,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,8,22/09/2026,HEPB,60,60,0,GR-4167-5938,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,9,29/09/2026,DTA,60,60,0,GR-4167-6730,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,10,23/09/2026,PENT,200,200,0,GR-4167-2959,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,11,08/10/2026,SPR,180,180,0,GR-4167-2494,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,12,25/09/2026,ROTA,40,40,0,GR-4167-3307,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,13,11/10/2026,DTA,150,150,0,GR-4167-9209,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,14,01/10/2026,IPV,30,30,0,GR-4167-6528,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,15,05/10/2026,SPR,60,60,0,GR-4167-1406,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,16,18/10/2026,ROTA,100,100,0,GR-4167-6920,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,17,15/10/2026,DTA,150,150,0,GR-4167-6556,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,18,12/10/2026,VARI,100,100,0,GR-4167-5641,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,19,16/10/2026,IPV,40,40,0,GR-4167-7127,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,20,23/09/2026,PENT,30,30,0,GR-4167-7629,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,21,13/10/2026,IPV,100,100,0,GR-4167-9342,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,22,17/10/2026,ROTA,50,70,20,GR-4167-1862,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,23,04/10/2026,SPR,100,100,0,GR-4167-1745,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,24,17/10/2026,IPV,80,80,0,GR-4167-1648,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-11,Pampachiri,Postest,19/10/2026,OBS-01,25,09/10/2026,PENT,50,50,0,GR-4167-3398,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,1,18/08/2026,HEPB,80,80,0,GR-4160-9178,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,2,02/09/2026,ROTA,100,100,0,GR-4160-2390,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,3,31/08/2026,HEPB,50,40,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,4,24/08/2026,NEUM,50,50,0,GR-4160-7766,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,5,01/09/2026,ROTA,60,60,0,GR-4160-2946,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,6,03/09/2026,IPV,50,50,0,GR-4160-4738,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,7,04/09/2026,BCG,120,120,0,GR-4160-3216,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,8,10/08/2026,NEUM,50,50,0,GR-4160-2793,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,9,16/08/2026,SPR,40,40,0,GR-4160-5778,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,10,30/08/2026,ROTA,200,205,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,11,23/08/2026,NEUM,60,60,0,GR-4160-1903,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,12,14/08/2026,IPV,20,20,0,GR-4160-7159,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,13,19/08/2026,PENT,80,90,10,GR-4160-2370,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,14,18/08/2026,VARI,180,180,0,GR-4160-5412,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,15,21/08/2026,INFL,20,25,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,16,25/08/2026,NEUM,80,70,-10,GR-4160-7730,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,17,14/08/2026,HEPB,100,105,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,18,17/08/2026,ROTA,80,80,0,GR-4160-9764,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,19,14/08/2026,HEPB,50,40,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,20,25/08/2026,PENT,50,40,-10,GR-4160-9463,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,21,25/08/2026,PENT,20,20,0,GR-4160-7681,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,22,22/08/2026,NEUM,60,60,0,GR-4160-1619,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,23,13/08/2026,PENT,80,80,0,GR-4160-1989,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,24,28/08/2026,ROTA,120,140,20,GR-4160-4715,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-12,San Antonio de Cachi,Pretest,07/09/2026,OBS-02,25,06/09/2026,SPR,80,85,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,1,06/10/2026,PENT,120,120,0,GR-4160-1801,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,2,26/09/2026,SPR,180,180,0,GR-4160-3137,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,3,13/10/2026,ROTA,150,150,0,GR-4160-1641,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,4,22/09/2026,INFL,200,200,0,GR-4160-8194,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,5,04/10/2026,SPR,100,100,0,GR-4160-3844,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,6,10/10/2026,HEPB,200,200,0,GR-4160-9702,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,7,04/10/2026,IPV,30,30,0,GR-4160-2073,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,8,12/10/2026,PENT,180,180,0,GR-4160-2362,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,9,10/10/2026,INFL,120,120,0,GR-4160-8511,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,10,12/10/2026,PENT,30,30,0,GR-4160-2770,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,11,26/09/2026,VARI,80,80,0,GR-4160-4872,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,12,04/10/2026,NEUM,20,10,-10,GR-4160-8865,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,13,16/10/2026,NEUM,30,20,-10,GR-4160-8470,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,14,21/09/2026,HEPB,200,200,0,GR-4160-1638,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,15,03/10/2026,DTA,50,50,0,GR-4160-5542,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,16,09/10/2026,DTA,40,40,0,GR-4160-7068,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,17,12/10/2026,NEUM,120,120,0,GR-4160-5263,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,18,07/10/2026,VARI,50,50,0,GR-4160-8633,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,19,05/10/2026,DTA,120,120,0,GR-4160-1362,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,20,18/10/2026,SPR,30,30,0,GR-4160-7352,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,21,21/09/2026,HEPB,50,50,0,GR-4160-1877,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,22,04/10/2026,PENT,100,100,0,GR-4160-1575,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,23,18/10/2026,NEUM,120,120,0,GR-4160-3586,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,24,05/10/2026,HEPB,180,180,0,GR-4160-1533,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-12,San Antonio de Cachi,Postest,19/10/2026,OBS-02,25,28/09/2026,INFL,100,100,0,GR-4160-9524,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,1,12/08/2026,BCG,50,50,0,GR-4163-9132,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,2,31/08/2026,ROTA,100,100,0,GR-4163-6974,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,3,03/09/2026,HEPB,20,20,0,GR-4163-5401,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,4,18/08/2026,NEUM,20,10,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,5,27/08/2026,BCG,20,20,0,GR-4163-8127,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,6,28/08/2026,PENT,60,60,0,GR-4163-6052,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,7,07/09/2026,BCG,30,30,0,GR-4163-4840,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,8,14/08/2026,NEUM,20,20,0,GR-4163-1259,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,9,05/09/2026,PENT,120,120,0,GR-4163-7651,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,10,06/09/2026,VARI,120,120,0,GR-4163-8157,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,11,14/08/2026,IPV,120,120,0,GR-4163-1996,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,12,30/08/2026,PENT,150,145,-5,GR-4163-4796,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,13,05/09/2026,NEUM,120,110,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,14,01/09/2026,IPV,60,60,0,GR-4163-5087,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,15,18/08/2026,ROTA,180,180,0,GR-4163-4469,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,16,19/08/2026,SPR,30,30,0,GR-4163-8352,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,17,18/08/2026,ROTA,30,30,0,GR-4163-2691,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,18,12/08/2026,BCG,30,20,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,19,22/08/2026,IPV,100,100,0,GR-4163-7524,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,20,20/08/2026,INFL,50,50,0,GR-4163-6847,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,21,02/09/2026,HEPB,50,50,0,GR-4163-8615,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,22,03/09/2026,INFL,180,160,-20,GR-4163-7804,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,23,31/08/2026,NEUM,30,25,-5,GR-4163-3048,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,24,06/09/2026,VARI,120,115,-5,GR-4163-3182,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-13,Turpo,Pretest,08/09/2026,OBS-01,25,20/08/2026,SPR,30,30,0,GR-4163-6393,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,1,19/10/2026,INFL,150,150,0,GR-4163-3354,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,2,11/10/2026,PENT,20,20,0,GR-4163-5739,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,3,19/10/2026,NEUM,40,40,0,GR-4163-6709,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,4,12/10/2026,INFL,50,50,0,GR-4163-9658,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,5,23/09/2026,IPV,120,120,0,GR-4163-2626,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,6,19/10/2026,VARI,150,150,0,GR-4163-1571,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,7,08/10/2026,INFL,150,150,0,GR-4163-3678,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,8,18/10/2026,SPR,50,50,0,GR-4163-2222,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,9,05/10/2026,NEUM,20,20,0,GR-4163-5226,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,10,09/10/2026,VARI,40,40,0,GR-4163-5460,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,11,23/09/2026,SPR,180,180,0,GR-4163-5181,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,12,14/10/2026,DTA,80,80,0,GR-4163-6672,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,13,08/10/2026,DTA,80,80,0,GR-4163-1318,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,14,27/09/2026,BCG,60,60,0,GR-4163-7936,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,15,30/09/2026,DTA,200,200,0,GR-4163-1619,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,16,07/10/2026,BCG,100,100,0,GR-4163-5934,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,17,17/10/2026,NEUM,150,150,0,GR-4163-5876,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,18,22/09/2026,DTA,50,40,-10,GR-4163-2795,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,19,13/10/2026,SPR,200,200,0,GR-4163-8804,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,20,02/10/2026,IPV,200,200,0,GR-4163-8175,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,21,11/10/2026,VARI,60,60,0,GR-4163-8672,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,22,22/09/2026,BCG,120,120,0,GR-4163-3258,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,23,12/10/2026,NEUM,200,200,0,GR-4163-6158,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,24,30/09/2026,HEPB,100,100,0,GR-4163-7287,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-13,Turpo,Postest,20/10/2026,OBS-01,25,29/09/2026,PENT,120,120,0,GR-4163-8313,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,1,07/09/2026,HEPB,200,190,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,2,21/08/2026,BCG,80,80,0,GR-4183-1691,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,3,05/09/2026,HEPB,120,120,0,GR-4183-4491,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,4,07/09/2026,VARI,150,155,5,GR-4183-3005,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,5,29/08/2026,SPR,120,120,0,GR-4183-1592,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,6,25/08/2026,INFL,100,100,0,GR-4183-5251,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,7,31/08/2026,ROTA,180,180,0,GR-4183-1372,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,8,27/08/2026,DTA,80,80,0,GR-4183-4331,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,9,03/09/2026,IPV,150,150,0,GR-4183-3907,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,10,21/08/2026,IPV,40,40,0,GR-4183-1718,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,11,16/08/2026,IPV,150,160,10,GR-4183-6681,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,12,21/08/2026,PENT,120,120,0,GR-4183-2184,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,13,30/08/2026,PENT,200,200,0,GR-4183-2923,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,14,27/08/2026,INFL,80,75,-5,GR-4183-2121,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,15,11/08/2026,DTA,200,200,0,GR-4183-2813,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,16,19/08/2026,BCG,40,50,10,GR-4183-2919,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,17,23/08/2026,DTA,50,50,0,GR-4183-2556,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,18,22/08/2026,BCG,80,85,5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,19,25/08/2026,BCG,40,35,-5,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,20,25/08/2026,SPR,50,45,-5,GR-4183-5097,No,Entrega menor a la programada; se regulariza en el siguiente despacho.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,21,18/08/2026,DTA,80,80,0,GR-4183-2119,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,22,04/09/2026,PENT,180,180,0,GR-4183-8590,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,23,06/09/2026,PENT,100,100,0,GR-4183-8838,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,24,04/09/2026,PENT,100,100,0,GR-4183-9091,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Pretest,08/09/2026,OBS-02,25,14/08/2026,HEPB,200,200,0,GR-4183-7406,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,1,14/10/2026,HEPB,200,200,0,GR-4183-9345,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,2,09/10/2026,VARI,40,40,0,GR-4183-4671,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,3,18/10/2026,DTA,100,100,0,GR-4183-6432,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,4,19/10/2026,ROTA,100,100,0,GR-4183-7069,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,5,03/10/2026,NEUM,80,80,0,GR-4183-3440,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,6,30/09/2026,INFL,60,60,0,GR-4183-5238,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,7,12/10/2026,VARI,100,90,-10,Sin guía,No,Despacho sin documento de sustento al momento de la auditoría.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,8,24/09/2026,NEUM,50,50,0,GR-4183-7057,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,9,22/09/2026,ROTA,80,80,0,GR-4183-4203,Sí,Conforme. Cantidad y guía coinciden.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,10,14/10/2026,VARI,20,20,0,GR-4183-1455,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,11,18/10/2026,BCG,20,20,0,GR-4183-8572,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,12,17/10/2026,VARI,50,50,0,GR-4183-8253,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,13,06/10/2026,NEUM,80,80,0,GR-4183-4177,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,14,10/10/2026,ROTA,100,100,0,GR-4183-3469,Sí,Conforme. Recepción firmada por el jefe del establecimiento.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,15,13/10/2026,PENT,80,80,0,GR-4183-7930,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,16,12/10/2026,SPR,120,120,0,GR-4183-1912,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,17,05/10/2026,DTA,180,175,-5,GR-4183-1698,No,Guía de remisión no coincide con la cantidad registrada en el kardex.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,18,05/10/2026,VARI,200,200,0,GR-4183-6930,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,19,16/10/2026,BCG,150,150,0,GR-4183-8080,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,20,09/10/2026,ROTA,50,50,0,GR-4183-8426,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,21,26/09/2026,VARI,50,50,0,GR-4183-9398,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,22,23/09/2026,BCG,120,120,0,GR-4183-5166,Sí,Conforme. Verificado el FEFO al momento de la carga.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,23,19/10/2026,HEPB,100,110,10,GR-4183-5502,No,Entrega mayor a la programada; se ajusta el saldo del almacén.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,24,01/10/2026,ROTA,80,80,0,GR-4183-5611,Sí,Conforme. Se adjuntó guía de remisión y acta de entrega.
+TRAB-14,Kishuara,Postest,20/10/2026,OBS-02,25,29/09/2026,SPR,30,30,0,GR-4183-2758,Sí,Conforme. Despacho parcial autorizado y regularizado el mismo día.

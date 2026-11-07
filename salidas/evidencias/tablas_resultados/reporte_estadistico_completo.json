@@ -16,8 +16,8 @@
         "k_items": 8,
         "n_sujetos": 14,
         "ic_95": [
-          0.8739798232186802,
-          0.9770495078739945
+          0.8739798232186797,
+          0.9770495078739946
         ],
         "interpretacion": "Excelente"
       },
@@ -26,7 +26,7 @@
         "k_items": 4,
         "n_sujetos": 14,
         "ic_95": [
-          0.7213266676456522,
+          0.7213266676456525,
           0.9556625014081008
         ],
         "interpretacion": "Buena"
@@ -36,7 +36,7 @@
         "k_items": 4,
         "n_sujetos": 14,
         "ic_95": [
-          0.7148919459183872,
+          0.7148919459183875,
           0.9546387239870195
         ],
         "interpretacion": "Buena"
@@ -44,32 +44,32 @@
     },
     "posttest": {
       "global_tam": {
-        "alpha": 0.9150734389103142,
+        "alpha": 0.9244163039176888,
         "k_items": 8,
         "n_sujetos": 14,
         "ic_95": [
-          0.8259192025373739,
-          0.9682968229890074
+          0.8450700237904779,
+          0.971784524590463
         ],
         "interpretacion": "Excelente"
       },
       "agilidad_percibida": {
-        "alpha": 0.830601092896175,
+        "alpha": 0.8544802867383511,
         "k_items": 4,
         "n_sujetos": 14,
         "ic_95": [
-          0.6175828277556228,
-          0.9391566437568435
+          0.6714899865485863,
+          0.947733383256399
         ],
         "interpretacion": "Buena"
       },
       "utilidad_percibida": {
-        "alpha": 0.840513983371126,
+        "alpha": 0.8804071246819337,
         "k_items": 4,
         "n_sujetos": 14,
         "ic_95": [
-          0.6399611276455717,
-          0.942717077155609
+          0.7300196914984903,
+          0.9570455793279661
         ],
         "interpretacion": "Buena"
       }
@@ -93,27 +93,27 @@
       },
       "posttest": {
         "n": 14,
-        "media": 7.178571428571429,
-        "desv_est": 1.048939810129602,
-        "mediana": 7.0,
-        "q25": 6.5,
-        "q75": 7.875,
-        "iqr": 1.375,
-        "minimo": 5.5,
-        "maximo": 9.0
+        "media": 5.679285714285713,
+        "desv_est": 0.4690819886628691,
+        "mediana": 5.68,
+        "q25": 5.41,
+        "q75": 5.9875,
+        "iqr": 0.5774999999999997,
+        "minimo": 4.82,
+        "maximo": 6.44
       },
       "diferencia": {
         "n": 14,
-        "media": -30.0,
-        "desv_est": 2.8823067684915684,
-        "mediana": -29.75,
-        "q25": -31.375,
-        "q75": -27.75,
-        "iqr": 3.625,
-        "minimo": -35.5,
-        "maximo": -25.5
+        "media": -31.499285714285715,
+        "desv_est": 3.929087708333859,
+        "mediana": -31.119999999999997,
+        "q25": -33.67,
+        "q75": -28.7675,
+        "iqr": 4.902500000000003,
+        "minimo": -39.05,
+        "maximo": -25.490000000000002
       },
-      "delta_porcentual": -80.69164265129683
+      "delta_porcentual": -84.72430355427475
     },
     "t_vale": {
       "nombre": "Tiempo de emisión de vales (T_vale)",
@@ -132,27 +132,27 @@
       },
       "posttest": {
         "n": 14,
-        "media": 3.0357142857142856,
-        "desv_est": 0.6033332321453782,
-        "mediana": 3.0,
-        "q25": 2.5,
-        "q75": 3.5,
-        "iqr": 1.0,
-        "minimo": 2.0,
-        "maximo": 4.0
+        "media": 1.9192857142857143,
+        "desv_est": 0.1891464343475013,
+        "mediana": 1.885,
+        "q25": 1.7925,
+        "q75": 2.0524999999999998,
+        "iqr": 0.2599999999999998,
+        "minimo": 1.65,
+        "maximo": 2.27
       },
       "diferencia": {
         "n": 14,
-        "media": -15.178571428571429,
-        "desv_est": 2.3172193453588923,
-        "mediana": -14.75,
-        "q25": -16.375,
-        "q75": -13.625,
-        "iqr": 2.75,
-        "minimo": -20.0,
-        "maximo": -12.5
+        "media": -16.294999999999998,
+        "desv_est": 2.8597733906996634,
+        "mediana": -15.91,
+        "q25": -18.3875,
+        "q75": -14.2425,
+        "iqr": 4.145,
+        "minimo": -22.0,
+        "maximo": -12.54
       },
-      "delta_porcentual": -83.33333333333334
+      "delta_porcentual": -89.46274509803922
     },
     "rsd": {
       "nombre": "Registros sin discrepancias (RSD)",
@@ -161,37 +161,37 @@
       "pretest": {
         "n": 14,
         "media": 63.57142857142857,
-        "desv_est": 6.690570697910326,
-        "mediana": 63.5,
-        "q25": 58.625,
-        "q75": 67.5,
-        "iqr": 8.875,
+        "desv_est": 6.773412794088433,
+        "mediana": 63.75,
+        "q25": 58.125,
+        "q75": 66.875,
+        "iqr": 8.75,
         "minimo": 52.5,
         "maximo": 75.0
       },
       "posttest": {
         "n": 14,
-        "media": 96.0,
-        "desv_est": 2.2274511131646553,
-        "mediana": 96.25,
-        "q25": 94.625,
-        "q75": 97.375,
-        "iqr": 2.75,
-        "minimo": 92.0,
+        "media": 96.07142857142857,
+        "desv_est": 2.5408746439059042,
+        "mediana": 97.5,
+        "q25": 95.0,
+        "q75": 97.5,
+        "iqr": 2.5,
+        "minimo": 90.0,
         "maximo": 100.0
       },
       "diferencia": {
         "n": 14,
-        "media": 32.42857142857143,
-        "desv_est": 4.556724290950272,
-        "mediana": 32.75,
-        "q25": 29.5,
-        "q75": 36.0,
-        "iqr": 6.5,
-        "minimo": 25.0,
-        "maximo": 39.5
+        "media": 32.5,
+        "desv_est": 8.378084965689217,
+        "mediana": 32.5,
+        "q25": 26.25,
+        "q75": 39.375,
+        "iqr": 13.125,
+        "minimo": 17.5,
+        "maximo": 47.5
       },
-      "delta_porcentual": 51.011235955056186
+      "delta_porcentual": 51.12359550561798
     },
     "cpe": {
       "nombre": "Concordancia programada vs entregada (CPE)",
@@ -199,38 +199,38 @@
       "dimension": "D2: Consistencia",
       "pretest": {
         "n": 14,
-        "media": 67.60714285714286,
-        "desv_est": 5.968438049209587,
+        "media": 67.71428571428571,
+        "desv_est": 6.921855814164862,
         "mediana": 68.0,
-        "q25": 63.125,
-        "q75": 71.125,
+        "q25": 64.0,
+        "q75": 72.0,
         "iqr": 8.0,
-        "minimo": 58.0,
-        "maximo": 78.0
+        "minimo": 56.0,
+        "maximo": 80.0
       },
       "posttest": {
         "n": 14,
-        "media": 95.39285714285714,
-        "desv_est": 2.346671713697536,
-        "mediana": 95.5,
-        "q25": 93.625,
-        "q75": 96.875,
-        "iqr": 3.25,
-        "minimo": 91.5,
-        "maximo": 100.0
+        "media": 94.57142857142857,
+        "desv_est": 2.5332947751066035,
+        "mediana": 96.0,
+        "q25": 93.0,
+        "q75": 96.0,
+        "iqr": 3.0,
+        "minimo": 88.0,
+        "maximo": 96.0
       },
       "diferencia": {
         "n": 14,
-        "media": 27.785714285714285,
-        "desv_est": 3.693623849670827,
-        "mediana": 27.75,
-        "q25": 25.375,
-        "q75": 30.75,
-        "iqr": 5.375,
-        "minimo": 22.0,
-        "maximo": 33.5
+        "media": 26.857142857142858,
+        "desv_est": 6.549893045012178,
+        "mediana": 26.0,
+        "q25": 21.0,
+        "q75": 32.0,
+        "iqr": 11.0,
+        "minimo": 16.0,
+        "maximo": 36.0
       },
-      "delta_porcentual": 41.09878499735867
+      "delta_porcentual": 39.662447257383974
     },
     "score_ap": {
       "nombre": "Aceptación del proceso (AP)",
@@ -249,27 +249,27 @@
       },
       "posttest": {
         "n": 14,
-        "media": 17.714285714285715,
-        "desv_est": 1.6374732612530445,
-        "mediana": 17.5,
-        "q25": 16.0,
-        "q75": 19.0,
-        "iqr": 3.0,
+        "media": 18.642857142857142,
+        "desv_est": 1.5984195491000022,
+        "mediana": 19.5,
+        "q25": 17.25,
+        "q75": 20.0,
+        "iqr": 2.75,
         "minimo": 16.0,
         "maximo": 20.0
       },
       "diferencia": {
         "n": 14,
-        "media": 9.642857142857142,
-        "desv_est": 1.0818177620697815,
-        "mediana": 10.0,
-        "q25": 9.0,
-        "q75": 10.0,
-        "iqr": 1.0,
-        "minimo": 8.0,
-        "maximo": 12.0
+        "media": 10.571428571428571,
+        "desv_est": 3.32159103939167,
+        "mediana": 11.0,
+        "q25": 8.0,
+        "q75": 12.75,
+        "iqr": 4.75,
+        "minimo": 6.0,
+        "maximo": 16.0
       },
-      "delta_porcentual": 119.4690265486726
+      "delta_porcentual": 130.97345132743362
     },
     "score_up": {
       "nombre": "Utilidad percibida (UP)",
@@ -288,27 +288,27 @@
       },
       "posttest": {
         "n": 14,
-        "media": 18.5,
-        "desv_est": 1.5566235649883124,
+        "media": 18.428571428571427,
+        "desv_est": 1.696797241605749,
         "mediana": 19.0,
-        "q25": 18.0,
+        "q25": 17.0,
         "q75": 20.0,
-        "iqr": 2.0,
+        "iqr": 3.0,
         "minimo": 16.0,
         "maximo": 20.0
       },
       "diferencia": {
         "n": 14,
-        "media": 9.5,
-        "desv_est": 1.0190493307301363,
-        "mediana": 10.0,
-        "q25": 9.0,
-        "q75": 10.0,
-        "iqr": 1.0,
-        "minimo": 8.0,
-        "maximo": 11.0
+        "media": 9.428571428571429,
+        "desv_est": 2.9013070188420977,
+        "mediana": 8.5,
+        "q25": 8.0,
+        "q75": 12.0,
+        "iqr": 4.0,
+        "minimo": 5.0,
+        "maximo": 14.0
       },
-      "delta_porcentual": 105.55555555555556
+      "delta_porcentual": 104.76190476190474
     },
     "score_tam_total": {
       "nombre": "Puntaje global TAM (AP + UP)",
@@ -327,83 +327,83 @@
       },
       "posttest": {
         "n": 14,
-        "media": 36.214285714285715,
-        "desv_est": 3.0928844249234513,
-        "mediana": 36.5,
-        "q25": 34.0,
-        "q75": 39.0,
+        "media": 37.07142857142857,
+        "desv_est": 3.14921933462603,
+        "mediana": 38.0,
+        "q25": 35.0,
+        "q75": 40.0,
         "iqr": 5.0,
         "minimo": 32.0,
         "maximo": 40.0
       },
       "diferencia": {
         "n": 14,
-        "media": 19.142857142857142,
-        "desv_est": 1.6104057232283402,
+        "media": 20.0,
+        "desv_est": 6.051064750552965,
         "mediana": 19.5,
-        "q25": 18.0,
-        "q75": 20.0,
-        "iqr": 2.0,
-        "minimo": 16.0,
-        "maximo": 22.0
+        "q25": 16.0,
+        "q75": 24.0,
+        "iqr": 8.0,
+        "minimo": 11.0,
+        "maximo": 30.0
       },
-      "delta_porcentual": 112.1338912133891
+      "delta_porcentual": 117.15481171548115
     }
   },
   "normalidad_shapiro_wilk": {
     "t_reg": {
       "indicador": "Tiempo de registro de movimientos (T_reg)",
-      "estadistico_w": 0.9785715351305102,
+      "estadistico_w": 0.9806162940985712,
       "gl": 14,
-      "p_valor": 0.9656857320545714,
+      "p_valor": 0.9782197223596278,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     },
     "t_vale": {
       "indicador": "Tiempo de emisión de vales (T_vale)",
-      "estadistico_w": 0.9325406040882153,
+      "estadistico_w": 0.9550246914792473,
       "gl": 14,
-      "p_valor": 0.331099379648091,
+      "p_valor": 0.6410485140918196,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     },
     "rsd": {
       "indicador": "Registros sin discrepancias (RSD)",
-      "estadistico_w": 0.9583358845910318,
+      "estadistico_w": 0.9792553141387383,
       "gl": 14,
-      "p_valor": 0.6956106053677106,
+      "p_valor": 0.9702650293962773,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     },
     "cpe": {
       "indicador": "Concordancia programada vs entregada (CPE)",
-      "estadistico_w": 0.9533544133674687,
+      "estadistico_w": 0.9154739912009704,
       "gl": 14,
-      "p_valor": 0.613890730499077,
+      "p_valor": 0.18918837606087874,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     },
     "score_ap": {
       "indicador": "Aceptación del proceso (AP)",
-      "estadistico_w": 0.9091228460250539,
+      "estadistico_w": 0.9417686998400749,
       "gl": 14,
-      "p_valor": 0.15303020605369144,
+      "p_valor": 0.4414573077654023,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     },
     "score_up": {
       "indicador": "Utilidad percibida (UP)",
-      "estadistico_w": 0.8763514174319635,
+      "estadistico_w": 0.9266382023927024,
       "gl": 14,
-      "p_valor": 0.05157607446543574,
+      "p_valor": 0.27358356718249677,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     },
     "score_tam_total": {
       "indicador": "Puntaje global TAM (AP + UP)",
-      "estadistico_w": 0.9553331914864391,
+      "estadistico_w": 0.9578136469152804,
       "gl": 14,
-      "p_valor": 0.6461003870077651,
+      "p_valor": 0.686974989322832,
       "es_normal": true,
       "decision": "Distribución normal (p > 0.05)"
     }
@@ -413,24 +413,24 @@
       "indicador": "Tiempo de registro de movimientos (T_reg)",
       "dimension": "D1: Oportunidad",
       "t_student": {
-        "estadistico_t": -38.944404818493084,
+        "estadistico_t": -29.996666865178916,
         "gl": 13,
-        "p_valor": 7.568028939969026e-15,
-        "d_cohen": -10.408329997330664,
+        "p_valor": 2.1752653536650052e-13,
+        "d_cohen": -8.016946439620988,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0009758787856927137,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.0001220703125,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 7.568028939969026e-15,
+      "p_valor_adoptado": 2.1752653536650052e-13,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 7.568028939969026e-15,
-        "p_ajustado": 4.5408173639814157e-14,
+        "p_original": 2.1752653536650052e-13,
+        "p_ajustado": 1.5226857475655037e-12,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -440,24 +440,24 @@
       "indicador": "Tiempo de emisión de vales (T_vale)",
       "dimension": "D1: Oportunidad",
       "t_student": {
-        "estadistico_t": -24.509122979721216,
+        "estadistico_t": -21.319978469540402,
         "gl": 13,
-        "p_valor": 2.8812413911470542e-12,
-        "d_cohen": -6.550338645744632,
+        "p_valor": 1.693262088544013e-11,
+        "d_cohen": -5.698003923315516,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0009674284502477448,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.0001220703125,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 2.8812413911470542e-12,
+      "p_valor_adoptado": 1.693262088544013e-11,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 2.8812413911470542e-12,
-        "p_ajustado": 2.8812413911470542e-12,
+        "p_original": 1.693262088544013e-11,
+        "p_ajustado": 1.0159572531264077e-10,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -467,24 +467,24 @@
       "indicador": "Registros sin discrepancias (RSD)",
       "dimension": "D2: Consistencia",
       "t_student": {
-        "estadistico_t": 26.628032788645374,
+        "estadistico_t": 14.514518003595999,
         "gl": 13,
-        "p_valor": 9.999463193320717e-13,
-        "d_cohen": 7.11664111277812,
+        "p_valor": 2.0702464718952877e-09,
+        "d_cohen": 3.879168107401309,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0001220703125,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.0009618222539686676,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 9.999463193320717e-13,
+      "p_valor_adoptado": 2.0702464718952877e-09,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 9.999463193320717e-13,
-        "p_ajustado": 1.9998926386641434e-12,
+        "p_original": 2.0702464718952877e-09,
+        "p_ajustado": 8.28098588758115e-09,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -494,24 +494,24 @@
       "indicador": "Concordancia programada vs entregada (CPE)",
       "dimension": "D2: Consistencia",
       "t_student": {
-        "estadistico_t": 28.1470521458752,
+        "estadistico_t": 15.342269907078267,
         "gl": 13,
-        "p_valor": 4.917496597153696e-13,
-        "d_cohen": 7.522616112680376,
+        "p_valor": 1.0447817631390652e-09,
+        "d_cohen": 4.100394109121353,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0009758787856927137,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.0009286427138582953,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 4.917496597153696e-13,
+      "p_valor_adoptado": 1.0447817631390652e-09,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 4.917496597153696e-13,
-        "p_ajustado": 1.4752489791461087e-12,
+        "p_original": 1.0447817631390652e-09,
+        "p_ajustado": 5.223908815695326e-09,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -521,24 +521,24 @@
       "indicador": "Aceptación del proceso (AP)",
       "dimension": "D3: Satisfacción",
       "t_student": {
-        "estadistico_t": 33.35152085980445,
+        "estadistico_t": 11.90834853958512,
         "gl": 13,
-        "p_valor": 5.573624691669793e-14,
-        "d_cohen": 8.913568884659465,
+        "p_valor": 2.290928694662251e-08,
+        "d_cohen": 3.1826400198155236,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0008568260572129962,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.0009646226188569392,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 5.573624691669793e-14,
+      "p_valor_adoptado": 2.290928694662251e-08,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 5.573624691669793e-14,
-        "p_ajustado": 2.229449876667917e-13,
+        "p_original": 2.290928694662251e-08,
+        "p_ajustado": 2.290928694662251e-08,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -548,24 +548,24 @@
       "indicador": "Utilidad percibida (UP)",
       "dimension": "D3: Satisfacción",
       "t_student": {
-        "estadistico_t": 34.88128013281199,
+        "estadistico_t": 12.159514213190562,
         "gl": 13,
-        "p_valor": 3.1300577954666126e-14,
-        "d_cohen": 9.322414247790505,
+        "p_valor": 1.7833568586796878e-08,
+        "d_cohen": 3.249766869669085,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0008620124372906324,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.000939615619221934,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 3.1300577954666126e-14,
+      "p_valor_adoptado": 1.7833568586796878e-08,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 3.1300577954666126e-14,
-        "p_ajustado": 1.5650288977333064e-13,
+        "p_original": 1.7833568586796878e-08,
+        "p_ajustado": 3.5667137173593756e-08,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -575,24 +575,24 @@
       "indicador": "Puntaje global TAM (AP + UP)",
       "dimension": "D3: Satisfacción",
       "t_student": {
-        "estadistico_t": 44.4769984354892,
+        "estadistico_t": 12.366938848016847,
         "gl": 13,
-        "p_valor": 1.3621885945787284e-15,
-        "d_cohen": 11.886977838405798,
+        "p_valor": 1.4549150967861066e-08,
+        "d_cohen": 3.305203435175989,
         "interpretacion_d": "Efecto grande (|d| >= 0.8)"
       },
       "wilcoxon": {
         "estadistico_w": 0.0,
         "estadistico_z": -3.2957653080153086,
-        "p_valor": 0.0009123455961962468,
-        "r_rosenthal": 0.6228410989030497,
+        "p_valor": 0.0009730565294466851,
+        "r_rosenthal": 0.8808303292720553,
         "interpretacion_r": "Efecto grande (r >= 0.5)"
       },
-      "p_valor_adoptado": 1.3621885945787284e-15,
+      "p_valor_adoptado": 1.4549150967861066e-08,
       "prueba_adoptada": "t de Student pareada",
       "holm_bonferroni": {
-        "p_original": 1.3621885945787284e-15,
-        "p_ajustado": 9.535320162051098e-15,
+        "p_original": 1.4549150967861066e-08,
+        "p_ajustado": 4.3647452903583195e-08,
         "significativo": true
       },
       "rechazo_h0": true,
@@ -608,7 +608,7 @@
       ],
       "rechazo_h0": true,
       "decision": "Se rechaza la hipótesis nula H0,1 y se acepta la hipótesis alterna H1,1.",
-      "conclusion": "El sistema SIVAC redujo T_reg de 37.18 a 7.18 min (reducción del 80.7%, p < 0.001) y T_vale de 18.21 a 3.04 min (reducción del 83.3%, p < 0.001)."
+      "conclusion": "El sistema SIVAC redujo T_reg de 37.18 a 5.68 min (reducción del 84.7%, p < 0.001) y T_vale de 18.21 a 1.92 min (reducción del 89.5%, p < 0.001)."
     },
     "HE2_Consistencia": {
       "enunciado": "La aplicación del sistema web SIVAC mejora significativamente la consistencia documental (RSD y CPE).",
@@ -618,7 +618,7 @@
       ],
       "rechazo_h0": true,
       "decision": "Se rechaza la hipótesis nula H0,2 y se acepta la hipótesis alterna H1,2.",
-      "conclusion": "El sistema SIVAC incrementó los registros sin discrepancias (RSD) de 63.57% a 96.00% (+51.0%, p < 0.001) y la concordancia programada vs entregada (CPE) de 67.61% a 95.39% (+41.1%, p < 0.001)."
+      "conclusion": "El sistema SIVAC incrementó los registros sin discrepancias (RSD) de 63.57% a 96.07% (+51.1%, p < 0.001) y la concordancia programada vs entregada (CPE) de 67.71% a 94.57% (+39.7%, p < 0.001)."
     },
     "HE3_Satisfaccion": {
       "enunciado": "La aplicación del sistema web SIVAC incrementa significativamente la satisfacción del usuario (AP y UP bajo modelo TAM).",
@@ -628,7 +628,7 @@
       ],
       "rechazo_h0": true,
       "decision": "Se rechaza la hipótesis nula H0,3 y se acepta la hipótesis alterna H1,3.",
-      "conclusion": "El sistema SIVAC elevó la aceptación del proceso de 8.07 a 17.71 pts (+119.5%, p < 0.001) y la utilidad percibida de 9.00 a 18.50 pts (+105.6%, p < 0.001)."
+      "conclusion": "El sistema SIVAC elevó la aceptación del proceso de 8.07 a 18.64 pts (+131.0%, p < 0.001) y la utilidad percibida de 9.00 a 18.43 pts (+104.8%, p < 0.001)."
     },
     "HG_General": {
       "enunciado": "La aplicación del sistema SIVAC mejora significativamente la gestión de movimientos mensuales de vacunas en el personal de inmunizaciones de la Dirección de Salud Apurímac II.",

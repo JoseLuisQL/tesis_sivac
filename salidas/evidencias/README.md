@@ -4,51 +4,74 @@
 > **Asesora:** Dra. Norma Lorena Catacora Flores  
 > **Universidad Nacional José María Arguedas (UNAJMA)** — Escuela Profesional de Ingeniería de Sistemas  
 > **Diseño:** Preexperimental con pretest y postest en un solo grupo ($O_1 \longrightarrow X \longrightarrow O_2$)  
-> **Población censal:** $N = n = 14$ trabajadores de inmunizaciones en 14 centros de acopio reales de la DISA Apurímac II  
+> **Población censal:** $N = n = 14$ trabajadores de inmunizaciones en 13 centros de acopio de la DISA Apurímac II  
+> **Estado del conjunto:** `DATOS DE PRUEBA – REEMPLAZAR (DEC-007)`; la estructura y el pipeline son definitivos, los valores no son mediciones de campo.
 
 ---
 
 ## 1. Estructura del Repositorio de Evidencias
 
-Esta carpeta consolida todos los artefactos, bases de datos, instrumentos y códigos fuente que sustentan de forma reproducible la elaboración del Informe Final de Tesis (`informe_final_v03.docx`):
+Esta carpeta consolida todos los artefactos, bases de datos, instrumentos y códigos fuente que sustentan de forma reproducible la elaboración del Informe Final de Tesis (`salidas/documentos/informe_final_v28.docx`). Todas las copias se derivan de su fuente única con `scripts/estadistica/sincronizar_evidencias.py`; las huellas SHA-256 quedan registradas en `SINCRONIZACION.json`.
 
 ### `base_de_datos/`
-- **`centros_acopio_reales_sivac.json`:** Catálogo oficial extraído directamente desde la base de datos relacional PostgreSQL de producción de SIVAC (`C:\Proyectos\syncova`), conteniendo los 19 centros de acopio reales, redes y microredes de la DISA Apurímac II.
-- **`pretest_campo.csv`:** Matriz tabular de mediciones basales en gestión manual para los 14 trabajadores pareados (`TRAB-01` a `TRAB-14`).
-- **`posttest_campo.csv`:** Matriz tabular de mediciones posteriores con el sistema web SIVAC para los mismos 14 trabajadores pareados.
-- **`datos_recolectados_pre_post.xlsx`:** Libro de cálculo Excel con hojas `PRETEST` y `POSTTEST`.
-- **`README_DECLARACION_DEC007.md`:** Declaración metodológica formal que rotula el conjunto como `DATOS DE PRUEBA – REEMPLAZAR (DEC-007)` y certifica la reproducibilidad en un solo comando.
+- **`centros_acopio_reales_sivac.json`:** Catálogo oficial extraído de la base de datos relacional PostgreSQL de producción de SIVAC, con los centros de acopio, redes y microredes de la DISA Apurímac II. La muestra usa 13 de esos centros para los 14 operadores censales.
+- **`pretest_campo.csv` / `posttest_campo.csv`:** Matrices analíticas (14 × 18) de línea base y final para los 14 operadores pareados (`TRAB-01` a `TRAB-14`).
+- **`datos_recolectados_pre_post.xlsx`:** Libro de cálculo con hojas `PRETEST` y `POSTTEST`, reconstruido desde los CSV.
+- **`instrumento01_replicas.csv`:** 168 réplicas cronometradas (14 × 2 × 6) del Instrumento 01.
+- **`instrumento02_asientos.csv`:** 1 120 asientos auditados (14 × 2 × 40) del Instrumento 02.
+- **`instrumento02_despachos.csv`:** 700 despachos conciliados (14 × 2 × 25) del Instrumento 02.
+- **`instrumento03_reactivos.csv`:** 224 respuestas Likert (14 × 2 × 8) del Instrumento 03 (TAM).
+- **`matriz_analitica_pre_post.csv`:** Consolidado (28 × 24) por unidad y momento, con los siete indicadores.
+- **`control_integridad.json`:** Recuentos, llaves y huellas del conjunto primario.
+- **`SIVAC_DATOS_CAMPO.md`:** Registro integral de campo: fichas completas de los tres instrumentos, matrices de indicadores y Tablas 35–43.
+- **`README_DECLARACION_DEC007.md`:** Declaración metodológica formal que rotula el conjunto como `DATOS DE PRUEBA – REEMPLAZAR (DEC-007)` (copia de `datos/recolectados/README.md`).
 
 ### `instrumentos_aplicados/`
-- **`INSTRUMENTO_01_FICHA_CRONOMETRICA_PRE_POST.docx`:** Instrumento de observación sistemática y cronometraje de tiempos ($T_{reg}$ y $T_{vale}$, en minutos).
-- **`INSTRUMENTO_02_FICHA_AUDITORIA_PRE_POST.docx`:** Guía de auditoría y verificación documental de lotes, kardex y comprobantes pecosa ($RSD$ y $CPE$, en porcentajes).
-- **`INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_A_PRETEST.docx`:** Cuestionario de satisfacción del usuario bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), con 8 reactivos Likert (1 a 5) que miden Agilidad Percibida ($AP$) y Utilidad Percibida ($UP$).
-- **`INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_B_POSTEST.docx`:** Cuestionario complementario de usabilidad del sistema SIVAC.
-- **`EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx`:** Expediente institucional de validación de instrumentos por juicio de expertos según el formato oficial UNAJMA (Modelo Fany 2024, DEC-015 y DEC-020).
+- **`INSTRUMENTO_01_FICHA_CRONOMETRICA_PRE_POST.docx`:** Observación sistemática y cronometraje de tiempos ($T_{reg}$ y $T_{vale}$, en minutos).
+- **`INSTRUMENTO_02_FICHA_AUDITORIA_PRE_POST.docx`:** Guía de auditoría y conciliación documental de lotes, kardex y comprobantes ($RSD$ y $CPE$, en porcentajes).
+- **`INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_A_PRETEST.docx`:** Cuestionario de satisfacción bajo el Modelo de Aceptación Tecnológica (TAM) de Davis (1989), 8 reactivos Likert (1 a 5) para Agilidad Percibida ($AP$) y Utilidad Percibida ($UP$).
+- **`INSTRUMENTO_03_CUESTIONARIO_TAM_MODALIDAD_B_POSTEST.docx`:** Cuestionario complementario de usabilidad del sistema SIVAC (DEC-019).
+- **`EXPEDIENTE_VALIDACION_JUICIO_EXPERTOS_MODELO_FANY.docx`:** Expediente institucional de validación por juicio de expertos según el formato UNAJMA (Modelo Fany 2024, DEC-015 y DEC-020).
 
 ### `scripts_estadisticos/`
 - **`analisis_estadistico_sivac.py`:** Pipeline maestro reproducible en Python que ejecuta:
   1. Confiabilidad psicométrica (Alfa de Cronbach con IC 95% de Feldt).
-  2. Estadística descriptiva de las 3 dimensiones (medias, desviaciones estándar, medianas, IQRs, mínimos, máximos y variaciones porcentuales).
+  2. Estadística descriptiva de las 3 dimensiones (medias, desviaciones estándar, medianas, IQR, mínimos, máximos y variaciones porcentuales).
   3. Pruebas de normalidad de Shapiro-Wilk sobre diferencias pareadas ($d_i = post_i - pre_i$).
-  4. Contrastes de hipótesis pareados ($t$-Student y Rangos con Signo de Wilcoxon con ajuste secuencial de Holm-Bonferroni).
+  4. Contrastes pareados ($t$-Student y Rangos con Signo de Wilcoxon con ajuste secuencial de Holm-Bonferroni).
   5. Tamaños del efecto ($d$ de Cohen y $r$ de Rosenthal).
-  6. Generación automatizada de figuras a 300 DPI con estética oficial de salidas de SPSS.
-- **`consultar_db_sivac.py`:** Script de auditoría de solo lectura que consulta la base de datos PostgreSQL de SIVAC para mapear centros de acopio y usuarios reales.
+  6. Figuras a 300 DPI con estética de salida SPSS.
+- **`generar_datos_sinteticos.py`:** Generador determinista del conjunto de prueba (semilla `20261026`) con sus tres instrumentos y `control_integridad.json`.
+- **`construir_registro_campo.py`:** Compone `SIVAC_DATOS_CAMPO.md` a partir de los CSV y del reporte estadístico.
+- **`consultar_db_sivac.py`:** Auditoría de solo lectura contra la base PostgreSQL de SIVAC para mapear centros de acopio y usuarios reales.
+
+Los tres últimos scripts más `exportar_libro_campo.py`, `sincronizar_evidencias.py` y `verificar_conjunto_datos.py` viven en `scripts/estadistica/`; las copias de evidencia conservan la versión ejecutada.
 
 ### `tablas_resultados/`
-- **`reporte_estadistico_completo.json`:** Estructura completa de resultados numéricos, valores $p$, estadísticos de contraste y decisiones de hipótesis exportada por el pipeline.
+- **`reporte_estadistico_completo.json`:** Resultados numéricos completos, valores $p$, estadísticos de contraste y decisiones de hipótesis exportados por el pipeline.
 
 ### `figuras_spss_300dpi/`
-- **`figura_d1_tiempos_boxplots_spss.png`:** Diagramas de cajas pareados (Boxplots) estilo SPSS para los tiempos de registro y emisión de vales (Dimensión 1: Oportunidad de procesamiento).
-- **`figura_d2_consistencia_barras_spss.png`:** Gráfico de barras de error con medias e intervalos de confianza para el porcentaje de registros sin discrepancias y concordancia programada vs entregada (Dimensión 2: Consistencia documental).
-- **`figura_d3_satisfaccion_tam_spss.png`:** Gráfico comparativo de puntajes del modelo TAM (Agilidad percibida, Utilidad percibida y Puntaje global TAM) pretest vs posttest (Dimensión 3: Satisfacción del usuario).
+- **`figura_d1_tiempos_boxplots_spss.png`:** Diagramas de cajas pareados para $T_{reg}$ y $T_{vale}$ (Dimensión 1: Oportunidad).
+- **`figura_d2_consistencia_barras_spss.png`:** Barras de error con medias e IC para $RSD$ y $CPE$ (Dimensión 2: Consistencia documental).
+- **`figura_d3_satisfaccion_tam_spss.png`:** Comparación TAM (Agilidad percibida, Utilidad percibida y puntaje global) pretest vs postest (Dimensión 3: Satisfacción).
+
+### Archivos de control
+- **`SINCRONIZACION.json`:** Huellas SHA-256, tamaños y recuentos de cada copia de evidencia en el momento de la última sincronización.
+- **`../estadistica/AUDITORIA_DATOS.md` / `.json`:** 91 comprobaciones de estructura, recálculo, coherencia entre instrumentos, reproducibilidad estadística y sincronía de evidencias.
 
 ---
 
-## 2. Instrucciones de Reejecución Rápida
-Cuando el tesista ingrese las mediciones definitivas de campo en `base_de_datos/pretest_campo.csv` y `posttest_campo.csv`, basta con ejecutar desde la raíz del proyecto:
+## 2. Instrucciones de Reejecución
+
+Desde la raíz del proyecto y con el entorno virtual activo:
+
 ```bash
-python scripts/estadistica/analisis_estadistico_sivac.py
+python scripts/estadistica/generar_datos_sinteticos.py    # solo si se regenera el conjunto de prueba
+python scripts/estadistica/analisis_estadistico_sivac.py  # tablas, contrastes y figuras
+python scripts/estadistica/construir_registro_campo.py    # registro integral en Markdown
+python scripts/estadistica/sincronizar_evidencias.py      # copias y huellas de evidencia
+python scripts/estadistica/verificar_conjunto_datos.py    # auditoría: debe cerrar 91/91
+python scripts/estadistica/sincronizar_evidencias.py --verificar   # control sin escribir
 ```
-Todas las tablas, gráficos y reportes se actualizarán de forma instantánea y determinística.
+
+Cuando el tesista ingrese las mediciones definitivas en `datos/recolectados/pretest_campo.csv` y `posttest_campo.csv`, la misma cadena actualiza tablas, figuras, registro y evidencias sin tocar el código.

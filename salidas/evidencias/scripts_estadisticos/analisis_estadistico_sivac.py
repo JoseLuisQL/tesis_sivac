@@ -183,7 +183,9 @@ def ejecutar_pipeline() -> dict:
         ew = n * (n + 1) / 4.0
         vw = n * (n + 1) * (2 * n + 1) / 24.0
         z_wilc = (res_w.statistic - ew) / math.sqrt(vw)
-        r_rosenthal = abs(z_wilc) / math.sqrt(2.0 * n)
+        # r de Rosenthal = |Z| / sqrt(N), con N el numero de pares validos
+        # (Ecuacion 11 del informe; n = 14, sin diferencias nulas).
+        r_rosenthal = abs(z_wilc) / math.sqrt(n)
 
         contrastes[var] = {
             "indicador": nombre,
@@ -397,16 +399,18 @@ def generar_figuras_spss(df_pre: pd.DataFrame, df_post: pd.DataFrame):
     ax.grid(axis="y", linestyle="--", alpha=0.5)
     ax.legend(frameon=True, edgecolor="#999999", loc="upper left")
 
-    for rect in b1:
+    # Etiquetas por encima del extremo superior de la barra de error (sin tocar cifras ni colores)
+    for rect, ci in zip(b1, ci_pre_tam):
         h = rect.get_height()
-        ax.annotate(f"{h:.1f}", xy=(rect.get_x() + rect.get_width() / 2, h + 1),
-                    xytext=(0, 2), textcoords="offset points", ha="center", va="bottom", fontsize=9)
-    for rect in b2:
+        ax.annotate(f"{h:.1f}", xy=(rect.get_x() + rect.get_width() / 2, h + ci + 0.4),
+                    xytext=(0, 3), textcoords="offset points", ha="center", va="bottom", fontsize=9)
+    for rect, ci in zip(b2, ci_post_tam):
         h = rect.get_height()
-        ax.annotate(f"{h:.1f}", xy=(rect.get_x() + rect.get_width() / 2, h + 1),
-                    xytext=(0, 2), textcoords="offset points", ha="center", va="bottom", fontsize=9, fontweight="bold")
+        ax.annotate(f"{h:.1f}", xy=(rect.get_x() + rect.get_width() / 2, h + ci + 0.4),
+                    xytext=(0, 3), textcoords="offset points", ha="center", va="bottom", fontsize=9, fontweight="bold")
 
-    plt.tight_layout()
+    # Geometría fija equivalente a la versión v18: solo cambian las etiquetas
+    fig.subplots_adjust(left=175 / 2700, right=2655 / 2700, top=1 - 130 / 1500, bottom=1 - 1343 / 1500)
     f3_path = SALIDAS_FIGURAS / "figura_d3_satisfaccion_tam_spss.png"
     plt.savefig(f3_path, dpi=300)
     plt.close()

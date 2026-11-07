@@ -1,0 +1,102 @@
+{
+  "generado_por": "scripts/estadistica/sincronizar_evidencias.py",
+  "fuente_unica": "datos/recolectados y datos/prueba_sintetica",
+  "archivos": {
+    "base_de_datos/pretest_campo.csv": {
+      "sha256": "b142b58585188249878289a0ce3fe25b1b9e753cdd415fe199fca52164d8a855",
+      "bytes": 1156
+    },
+    "base_de_datos/posttest_campo.csv": {
+      "sha256": "9b47e2ac2c1daa95bd22b41bd2dacd35d95e84eb4a7d9232215df0f61a9045e5",
+      "bytes": 1169
+    },
+    "base_de_datos/instrumento01_replicas.csv": {
+      "sha256": "fd6c5d6f71419bace44b6f9e82ed708be306fa97e67519b953f87fe8cdb83d1c",
+      "bytes": 29147
+    },
+    "base_de_datos/instrumento02_asientos.csv": {
+      "sha256": "79344579f501ed95b30d8af60c3aedc10482a87bc3d2628176b0055a767a5bd2",
+      "bytes": 154202
+    },
+    "base_de_datos/instrumento02_despachos.csv": {
+      "sha256": "6fb9a667448f9d62011fe53e7b084da1ad5a50504701ceaa23042f07091a7e0f",
+      "bytes": 106927
+    },
+    "base_de_datos/instrumento03_reactivos.csv": {
+      "sha256": "e7ab174a25177aa699efd133b23333243b0cf99d77b465d081b9698338a2ab90",
+      "bytes": 33347
+    },
+    "base_de_datos/matriz_analitica_pre_post.csv": {
+      "sha256": "5a5b7621f6ad791de939beef8ad89301ce912ba4d2fbd9b28ff4f17edc609351",
+      "bytes": 2411
+    },
+    "base_de_datos/control_integridad.json": {
+      "sha256": "d74a9389e75e58183d8698817fb68edc0867e8ab8f6ab1f2421410ceb7fb5d3e",
+      "bytes": 8809
+    },
+    "base_de_datos/SIVAC_DATOS_CAMPO.md": {
+      "sha256": "a30f680e2350b9c95a2bc19874fea7a5295ffaf9267d8f2b9c8bb3e965650b09",
+      "bytes": 234738
+    },
+    "base_de_datos/README_DECLARACION_DEC007.md": {
+      "sha256": "509789d3b03d2421400672b105dc3623508e3efd01ec50dd2b14e3cabaefb977",
+      "bytes": 4021
+    },
+    "tablas_resultados/reporte_estadistico_completo.json": {
+      "sha256": "16a956c12b0fb3f5c53c246d98d0362a11f230f11354dca6f45a41cbf4e0fb7a",
+      "bytes": 19960
+    },
+    "scripts_estadisticos/analisis_estadistico_sivac.py": {
+      "sha256": "bf8f2ed70a51b47eb63b98c6cf9b66a65c6cb38e69b8f584e95d9c016724d5d4",
+      "bytes": 20756
+    },
+    "scripts_estadisticos/generar_datos_sinteticos.py": {
+      "sha256": "ea3a3e6efd182e5b878bcbc09d8871453c9b9a2897004aa24e1a079df0b9e9c1",
+      "bytes": 67116
+    },
+    "scripts_estadisticos/construir_registro_campo.py": {
+      "sha256": "554ecf041a6abb6dd6157dd96937b9982c56c9db826a2940ec88fe51c5ce4ec3",
+      "bytes": 59649
+    },
+    "scripts_estadisticos/exportar_libro_campo.py": {
+      "sha256": "40aa316d1ac20fd056adf9eb32005bf4bc2080cccbe8c99b6abab2d9527cf7cf",
+      "bytes": 7553
+    },
+    "scripts_estadisticos/sincronizar_evidencias.py": {
+      "sha256": "675a5b50a85157fed668264276d23a4a321ef8d775e58cc7aa9f48897c6ce309",
+      "bytes": 6092
+    },
+    "scripts_estadisticos/verificar_conjunto_datos.py": {
+      "sha256": "72fc76b6a75c88b450481923f92b8bb0a370308e68d09ba92fe608cd420ce172",
+      "bytes": 28020
+    },
+    "scripts_estadisticos/consultar_db_sivac.py": {
+      "sha256": "ad83ac4fa38319e07b8621c24bf47da6556e8417d8c9673424a61874b8d5756a",
+      "bytes": 2069
+    },
+    "figuras_spss_300dpi/figura_d1_tiempos_boxplots_spss.png": {
+      "sha256": "e905495fb997433f657e83e3eab864ac6504909c00e43a30efad950bcce9a6e5",
+      "bytes": 115152
+    },
+    "figuras_spss_300dpi/figura_d2_consistencia_barras_spss.png": {
+      "sha256": "50282ee29d0eff5aa222db8a0768f623208b29c9527773ba56f770e652345864",
+      "bytes": 132959
+    },
+    "figuras_spss_300dpi/figura_d3_satisfaccion_tam_spss.png": {
+      "sha256": "518b4f47abf658bfbb3aaa520d36771f8bf3c506218b0fbf3836fa99576c1325",
+      "bytes": 134567
+    },
+    "base_de_datos/datos_recolectados_pre_post.xlsx": {
+      "sha256": "b151f3a6875881f93121eee501cfec902cb15f843d590dc32455cb4f555eeb94",
+      "bytes": 10845
+    }
+  },
+  "filas": {
+    "pretest_campo.csv": 14,
+    "posttest_campo.csv": 14,
+    "instrumento01_replicas.csv": 168,
+    "instrumento02_asientos.csv": 1120,
+    "instrumento02_despachos.csv": 700,
+    "instrumento03_reactivos.csv": 224
+  }
+}

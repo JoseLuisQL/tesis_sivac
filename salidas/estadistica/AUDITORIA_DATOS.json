@@ -1,0 +1,548 @@
+[
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv existe",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv: cabecera",
+    "estado": "OK",
+    "detalle": "columnas en orden"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv: sin celdas en blanco inesperadas",
+    "estado": "OK",
+    "detalle": "224 celdas vacías (pausas, motivos y observaciones pueden estar vacías por diseño)"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv existe",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv: cabecera",
+    "estado": "OK",
+    "detalle": "columnas en orden"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv: sin celdas en blanco inesperadas",
+    "estado": "OK",
+    "detalle": "1788 celdas vacías (pausas, motivos y observaciones pueden estar vacías por diseño)"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv existe",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv: cabecera",
+    "estado": "OK",
+    "detalle": "columnas en orden"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv: sin celdas en blanco inesperadas",
+    "estado": "OK",
+    "detalle": "0 celdas vacías (pausas, motivos y observaciones pueden estar vacías por diseño)"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv existe",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv: cabecera",
+    "estado": "OK",
+    "detalle": "columnas en orden"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv: sin celdas en blanco inesperadas",
+    "estado": "OK",
+    "detalle": "0 celdas vacías (pausas, motivos y observaciones pueden estar vacías por diseño)"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz_analitica_pre_post.csv existe",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz_analitica_pre_post.csv: cabecera",
+    "estado": "OK",
+    "detalle": "columnas en orden"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz_analitica_pre_post.csv: sin celdas en blanco inesperadas",
+    "estado": "OK",
+    "detalle": "0 celdas vacías (pausas, motivos y observaciones pueden estar vacías por diseño)"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv: 168 filas",
+    "estado": "OK",
+    "detalle": "obtenidas 168"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv: 1120 filas",
+    "estado": "OK",
+    "detalle": "obtenidas 1120"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv: 700 filas",
+    "estado": "OK",
+    "detalle": "obtenidas 700"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv: 224 filas",
+    "estado": "OK",
+    "detalle": "obtenidas 224"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz_analitica_pre_post.csv: 28 filas",
+    "estado": "OK",
+    "detalle": "obtenidas 28"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv: 14 sujetos TRAB-01…TRAB-14",
+    "estado": "OK",
+    "detalle": "14 identificadores"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv: 28 pares sujeto × momento",
+    "estado": "OK",
+    "detalle": "28 pares"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento01_replicas.csv: sin espacios sobrantes",
+    "estado": "OK",
+    "detalle": "sin espacios al inicio ni al final"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv: 14 sujetos TRAB-01…TRAB-14",
+    "estado": "OK",
+    "detalle": "14 identificadores"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv: 28 pares sujeto × momento",
+    "estado": "OK",
+    "detalle": "28 pares"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_asientos.csv: sin espacios sobrantes",
+    "estado": "OK",
+    "detalle": "sin espacios al inicio ni al final"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv: 14 sujetos TRAB-01…TRAB-14",
+    "estado": "OK",
+    "detalle": "14 identificadores"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv: 28 pares sujeto × momento",
+    "estado": "OK",
+    "detalle": "28 pares"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento02_despachos.csv: sin espacios sobrantes",
+    "estado": "OK",
+    "detalle": "sin espacios al inicio ni al final"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv: 14 sujetos TRAB-01…TRAB-14",
+    "estado": "OK",
+    "detalle": "14 identificadores"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv: 28 pares sujeto × momento",
+    "estado": "OK",
+    "detalle": "28 pares"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "instrumento03_reactivos.csv: sin espacios sobrantes",
+    "estado": "OK",
+    "detalle": "sin espacios al inicio ni al final"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz: una fila por sujeto y momento",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz: centro constante por sujeto",
+    "estado": "OK",
+    "detalle": "14 asignaciones"
+  },
+  {
+    "bloque": "A. Estructura",
+    "comprobacion": "matriz: 13 centros distintos",
+    "estado": "OK",
+    "detalle": "13 centros"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Fin − inicio = duración neta + pausa",
+    "estado": "OK",
+    "detalle": "0 descuadres"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Duración en minutos = segundos ÷ 60",
+    "estado": "OK",
+    "detalle": "error máximo 0.000033 min"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Duraciones positivas y plausibles (45 s – 60 min)",
+    "estado": "OK",
+    "detalle": "rango 90–2947 s"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Toda pausa tiene motivo P1–P4",
+    "estado": "OK",
+    "detalle": "56 pausas registradas"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Sin pausa ⇒ sin motivo",
+    "estado": "OK",
+    "detalle": "112 réplicas sin pausa"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Réplicas en orden cronológico dentro de la sesión",
+    "estado": "OK",
+    "detalle": "0 inversiones"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Ninguna sesión cruza la medianoche",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Ninguna sesión empieza antes de las 06:00",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Una réplica REG-01…03 y VALE-01…03 por indicador",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Todas las réplicas válidas",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Postest posterior al pretest en los 14 sujetos",
+    "estado": "OK",
+    "detalle": "14/14"
+  },
+  {
+    "bloque": "B. Cronometraje",
+    "comprobacion": "Folios de documento únicos por centro",
+    "estado": "OK",
+    "detalle": "0 duplicados"
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Criterios binarios S/N",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Conformidad conjuntiva: conforme ⇔ los 8 criterios cumplen",
+    "estado": "OK",
+    "detalle": "0 discrepancias"
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Motivo solo en documentos no conformes",
+    "estado": "OK",
+    "detalle": "0 casos"
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "El motivo coincide con los criterios fallidos",
+    "estado": "OK",
+    "detalle": "1120/1120 asientos coherentes"
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Cantidades positivas",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Tipo documental del catálogo",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Numeración de asiento 1…40 por sesión",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Folio de kardex único por centro",
+    "estado": "OK",
+    "detalle": "0 duplicados"
+  },
+  {
+    "bloque": "C. Auditoría documental",
+    "comprobacion": "Fechas de asiento válidas",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Diferencia = entregado − programado",
+    "estado": "OK",
+    "detalle": "0 descuadres"
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Concordancia ⇔ diferencia cero",
+    "estado": "OK",
+    "detalle": "0 discrepancias"
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Cantidades programadas positivas",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Entregas no negativas",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Despacho sin guía siempre no conforme",
+    "estado": "OK",
+    "detalle": "53 despachos sin documento"
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Guía de remisión única por centro",
+    "estado": "OK",
+    "detalle": "0 duplicados"
+  },
+  {
+    "bloque": "D. Despachos",
+    "comprobacion": "Numeración de despacho 1…25 por sesión",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "E. Cuestionario TAM",
+    "comprobacion": "8 reactivos por sujeto y momento",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "E. Cuestionario TAM",
+    "comprobacion": "Reactivos AP-01…04 y UP-01…04",
+    "estado": "OK",
+    "detalle": "8 reactivos"
+  },
+  {
+    "bloque": "E. Cuestionario TAM",
+    "comprobacion": "Valores Likert entre 1 y 5",
+    "estado": "OK",
+    "detalle": "rango 1–5"
+  },
+  {
+    "bloque": "E. Cuestionario TAM",
+    "comprobacion": "Sumas AP, UP, total y baremo correctos",
+    "estado": "OK",
+    "detalle": "0 sesiones con error"
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "t_reg = media de las 3 réplicas",
+    "estado": "OK",
+    "detalle": "diferencia máxima 0.0000 min"
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "t_vale = media de las 3 réplicas",
+    "estado": "OK",
+    "detalle": "diferencia máxima 0.0000 min"
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "RSD = conformes ÷ 40",
+    "estado": "OK",
+    "detalle": "diferencia máxima 0.0000 pp"
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "CPE = concordantes ÷ 25",
+    "estado": "OK",
+    "detalle": "diferencia máxima 0.0000 pp"
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "RSD y CPE dentro de 0–100 %",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "score_ap = suma de los 4 reactivos AP",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "score_up = suma de los 4 reactivos UP",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "score_tam_total = AP + UP",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "Baremo de satisfacción aplicado",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "pretest_campo.csv idéntico a la matriz (Pretest)",
+    "estado": "OK",
+    "detalle": "14×18 frente a 14×18; 0 celdas distintas"
+  },
+  {
+    "bloque": "F. Matriz analítica",
+    "comprobacion": "posttest_campo.csv idéntico a la matriz (Postest)",
+    "estado": "OK",
+    "detalle": "14×18 frente a 14×18; 0 celdas distintas"
+  },
+  {
+    "bloque": "H. Coherencia entre instrumentos",
+    "comprobacion": "Instrumento 02: mismo sujeto, centro, fecha y responsable",
+    "estado": "OK",
+    "detalle": "0 sesiones desalineadas"
+  },
+  {
+    "bloque": "H. Coherencia entre instrumentos",
+    "comprobacion": "Instrumento 02 (despachos): mismo sujeto, centro, fecha y responsable",
+    "estado": "OK",
+    "detalle": "0 sesiones desalineadas"
+  },
+  {
+    "bloque": "H. Coherencia entre instrumentos",
+    "comprobacion": "Instrumento 03: mismo sujeto, centro, fecha y responsable",
+    "estado": "OK",
+    "detalle": "0 sesiones desalineadas"
+  },
+  {
+    "bloque": "H. Coherencia entre instrumentos",
+    "comprobacion": "Asientos anteriores a la sesión de auditoría",
+    "estado": "OK",
+    "detalle": "0 fuera de ventana"
+  },
+  {
+    "bloque": "H. Coherencia entre instrumentos",
+    "comprobacion": "Ventana documental de 1 a 35 días",
+    "estado": "OK",
+    "detalle": "rango 1–34 días"
+  },
+  {
+    "bloque": "H. Coherencia entre instrumentos",
+    "comprobacion": "Despachos anteriores a la sesión de conciliación",
+    "estado": "OK",
+    "detalle": "0 fuera de ventana"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Reporte estadístico presente",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Descriptivos reproducidos desde los CSV",
+    "estado": "OK",
+    "detalle": "desviación máxima 0.00e+00"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Shapiro-Wilk sobre diferencias pareadas",
+    "estado": "OK",
+    "detalle": "desviación máxima en p 0.00e+00"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Estadísticos t pareados reproducidos",
+    "estado": "OK",
+    "detalle": "desviación máxima 0.00e+00"
+  },
+  {
+    "bloque": "G. Estadística",
+    "comprobacion": "Reporte rotulado como datos de prueba",
+    "estado": "OK",
+    "detalle": "DATOS DE PRUEBA – REEMPLAZAR (DEC-007)"
+  },
+  {
+    "bloque": "I. Evidencias",
+    "comprobacion": "Registro de sincronización presente",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "I. Evidencias",
+    "comprobacion": "Copias de evidencia con la huella registrada",
+    "estado": "OK",
+    "detalle": "22 archivos"
+  }
+]
