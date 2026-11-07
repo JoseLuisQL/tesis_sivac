@@ -48,6 +48,6 @@ Las filas y columnas de las tablas se expresan en base 1, contando la fila de en
 ## 4. Alcance de la corrección
 
 - Se emiten 16 órdenes quirúrgicas en `salidas/reportes_maquetacion/rosenthal_v10_ordenes.json`: siete celdas de tabla y nueve sustituciones en párrafos y notas.
-- El libro `salidas/estadistica/TABLAS_ANEXOS_SIVAC_v2.xlsx` fue regenerado con r = 0.881 en las hojas `12_CONTRASTES` y `14_SPSS_SALIDAS`, y con la nota de fórmula corregida.
+- El libro `salidas/archivo/ESTADISTICA_HISTORICO_20261107/TABLAS_ANEXOS_SIVAC_v2.xlsx` fue regenerado con r = 0.881 en las hojas `12_CONTRASTES` y `14_SPSS_SALIDAS`, y con la nota de fórmula corregida.
 - No se alteraron p-valores, estadísticos t o W, medias, desviaciones estándar, tamaños del efecto d de Cohen ni decisiones de hipótesis.
 - El DOCX v10 no fue editado; la aplicación de las órdenes corresponde al maquetador.

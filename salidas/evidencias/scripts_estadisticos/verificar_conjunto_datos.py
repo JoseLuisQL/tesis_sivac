@@ -19,6 +19,8 @@ G. Estadística: descriptivos, normalidad y contrastes frente al reporte.
 H. Coherencia entre instrumentos: fechas y ventanas de observación.
 I. Evidencias: copias sincronizadas con su fuente.
 J. Informe final: tablas y figuras del DOCX vigente frente al reporte y los CSV.
+K. Libro de anexos: hojas, matrices, descriptivos, alfas, normalidad y
+   contrastes del XLSX frente al reporte, los CSV y el informe vigente.
 
 Uso:
     python scripts/estadistica/verificar_conjunto_datos.py [--sin-estadistica]
@@ -792,6 +794,295 @@ def bloque_j() -> None:
           f"reporte={rep['metadatos']['estado_datos']}")
 
 
+
+# --------------------------------------------------------------------------
+# K. Libro de tablas de anexos (XLSX)
+# --------------------------------------------------------------------------
+
+XLSX_ANEXOS = EST / "TABLAS_ANEXOS_SIVAC.xlsx"
+JSON_PARIDAD_XLSX = EST / "paridad_TABLAS_ANEXOS_SIVAC.json"
+
+HOJAS_XLSX = (
+    "00_PORTADA", "01_ANEXO1_MATRIZ", "02_ANEXO2_OPERAC",
+    "03_ANEXO5_PRETEST", "04_ANEXO5_POSTEST", "05_DESCRIPTIVOS",
+    "06_CONFIABILIDAD", "07_NORMALIDAD", "08_CONTRASTES",
+    "09_ANEXO6_TRAZABILIDAD", "10_SPSS_SALIDAS", "11_NOTAS",
+)
+
+# Encabezado de las matrices del anexo -> columna del CSV de campo.
+COLS_MATRIZ_XLSX = (
+    ("Sujeto", "sujeto_id"), ("Centro de acopio", "centro_acopio"),
+    ("T_reg (min)", "t_reg"), ("T_vale (min)", "t_vale"),
+    ("RSD (%)", "rsd"), ("CPE (%)", "cpe"),
+    ("AP-01", "ap_01"), ("AP-02", "ap_02"),
+    ("AP-03", "ap_03"), ("AP-04", "ap_04"),
+    ("UP-01", "up_01"), ("UP-02", "up_02"),
+    ("UP-03", "up_03"), ("UP-04", "up_04"),
+    ("AP (pts)", "score_ap"), ("UP (pts)", "score_up"),
+    ("TAM total (pts)", "score_tam_total"), ("Nivel", "nivel_satisfaccion"),
+)
+
+
+def _hoja(wb, nombre: str):
+    return wb[nombre] if nombre in wb.sheetnames else None
+
+
+def _fila_encabezado(ws, primera: str) -> int | None:
+    for i, fila in enumerate(ws.iter_rows(values_only=True), 1):
+        if fila and fila[0] is not None and str(fila[0]).strip() == primera:
+            return i
+    return None
+
+
+def _momentos(texto: str) -> str:
+    t = _limpia(texto).lower()
+    if t.startswith("pretest"):
+        return "pretest"
+    if t.startswith("postest"):
+        return "posttest"
+    return "diferencia"
+
+
+def _texto_hoja(ws) -> str:
+    return "\n".join(str(v) for fila in ws.iter_rows(values_only=True)
+                     for v in fila if isinstance(v, str))
+
+
+def bloque_k() -> None:
+    BLOQUE = "K. Libro de anexos (XLSX)"
+    try:
+        from openpyxl import load_workbook
+    except ImportError:  # pragma: no cover
+        check(BLOQUE, "openpyxl disponible", False,
+              "instale openpyxl para auditar el libro")
+        return
+
+    check(BLOQUE, "Libro de tablas de anexos presente", XLSX_ANEXOS.exists(),
+          XLSX_ANEXOS.name if XLSX_ANEXOS.exists() else "no existe")
+    if not XLSX_ANEXOS.exists():
+        return
+
+    wb = load_workbook(XLSX_ANEXOS, data_only=True)
+    rep = json.loads((EST / "reporte_estadistico_completo.json")
+                     .read_text(encoding="utf-8"))
+    pre = pd.read_csv(RECO / "pretest_campo.csv")
+    post = pd.read_csv(RECO / "posttest_campo.csv")
+    informe = _informe_vigente()
+
+    # --- Estructura e índice ------------------------------------------
+    check(BLOQUE, "Hojas del libro en el orden previsto",
+          tuple(wb.sheetnames) == HOJAS_XLSX,
+          ", ".join(wb.sheetnames) if tuple(wb.sheetnames) != HOJAS_XLSX else
+          f"{len(wb.sheetnames)} hojas")
+
+    paridad = None
+    if JSON_PARIDAD_XLSX.exists():
+        paridad = json.loads(JSON_PARIDAD_XLSX.read_text(encoding="utf-8"))
+    check(BLOQUE, "Registro de paridad del libro presente", paridad is not None,
+          "" if paridad else "falta paridad_TABLAS_ANEXOS_SIVAC.json")
+
+    if informe is not None:
+        portada = _texto_hoja(_hoja(wb, "00_PORTADA"))
+        check(BLOQUE, "Portada identifica el informe vigente",
+              informe.name in portada,
+              f"{informe.name} no figura en la portada"
+              if informe.name not in portada else informe.name)
+        try:
+            from docx import Document
+            n_tablas = len(Document(str(informe)).tables)
+            check(BLOQUE, "Portada declara el total de tablas del informe",
+                  f"({n_tablas} tablas)" in portada,
+                  f"se esperaban {n_tablas} tablas")
+        except ImportError:  # pragma: no cover
+            pass
+
+        # Ninguna hoja puede citar una versión anterior del informe.
+        ajenas = []
+        for ws in wb.worksheets:
+            for marca in re.findall(r"informe_final_v\d+\.docx",
+                                    _texto_hoja(ws)):
+                if marca != informe.name:
+                    ajenas.append(f"{ws.title}:{marca}")
+        check(BLOQUE, "El libro no cita versiones anteriores del informe",
+              not ajenas, ", ".join(sorted(set(ajenas))[:4]))
+
+    if paridad is not None:
+        malas = []
+        if informe and paridad.get("documento_fuente") != informe.name:
+            malas.append(f"documento_fuente={paridad.get('documento_fuente')}")
+        if tuple(paridad.get("hojas", ())) != tuple(wb.sheetnames):
+            malas.append("hojas desalineadas")
+        if malas:
+            check(BLOQUE, "Registro de paridad coherente con el libro", False,
+                  ", ".join(malas))
+        else:
+            check(BLOQUE, "Registro de paridad coherente con el libro", True,
+                  paridad.get("documento_fuente", ""))
+
+    # --- Matrices del anexo (Tablas 46-47) ----------------------------
+    for hoja, csv, etiqueta in (("03_ANEXO5_PRETEST", pre, "pretest"),
+                                ("04_ANEXO5_POSTEST", post, "postest")):
+        ws = _hoja(wb, hoja)
+        if ws is None:
+            continue
+        fila_enc = _fila_encabezado(ws, "Sujeto")
+        if fila_enc is None:
+            check(BLOQUE, f"Matriz {etiqueta}: encabezado legible", False,
+                  "no se encontró la fila de encabezados")
+            continue
+        cabecera = [("" if c is None else str(c).strip())
+                    for c in next(ws.iter_rows(min_row=fila_enc,
+                                               max_row=fila_enc,
+                                               values_only=True))]
+        faltan = [t for t, _ in COLS_MATRIZ_XLSX if t not in cabecera]
+        if faltan:
+            check(BLOQUE, f"Matriz {etiqueta}: columnas completas", False,
+                  ", ".join(faltan))
+            continue
+        pos = {t: cabecera.index(t) for t, _ in COLS_MATRIZ_XLSX}
+        # Se leen solo las filas de datos: la nota al pie y los renglones en
+        # blanco posteriores no forman parte de la matriz.
+        ids = {str(v) for v in csv["sujeto_id"]}
+        filas = []
+        for f in ws.iter_rows(min_row=fila_enc + 1, values_only=True):
+            if not f or f[0] is None or str(f[0]).strip() not in ids:
+                break
+            filas.append(f)
+        malas = []
+        if len(filas) != len(csv):
+            malas.append(f"{len(filas)} filas vs {len(csv)}")
+        for fila, (_, ref) in zip(filas, csv.iterrows()):
+            for titulo, col in COLS_MATRIZ_XLSX:
+                celda_val = fila[pos[titulo]]
+                esperado = ref[col]
+                if isinstance(esperado, str):
+                    if str(celda_val).strip() != esperado:
+                        malas.append(f"{fila[0]}/{col}")
+                elif celda_val is None or \
+                        abs(float(celda_val) - float(esperado)) > 1e-6:
+                    malas.append(f"{fila[0]}/{col}: {celda_val} vs {esperado}")
+        check(BLOQUE, f"Matriz {etiqueta} igual a los CSV de campo",
+              not malas, ", ".join(malas[:3]) if malas else
+              f"{len(filas)} sujetos × {len(COLS_MATRIZ_XLSX)} columnas")
+
+    # --- Descriptivos (Tablas 36-38) ----------------------------------
+    ws = _hoja(wb, "05_DESCRIPTIVOS")
+    malos, filas_ok = [], 0
+    if ws is not None:
+        for i, fila in enumerate(ws.iter_rows(values_only=True), 1):
+            if not fila or not isinstance(fila[0], str):
+                continue
+            col = _indicador(fila[0])
+            if col is None or len(fila) < 9:
+                continue
+            fase = _momentos(str(fila[1] or ""))
+            esperado = rep["descriptivos"][col][fase]
+            filas_ok += 1
+            for indice, etiqueta in ((3, "media"), (4, "desv_est"),
+                                     (5, "mediana"), (6, "iqr"),
+                                     (7, "minimo"), (8, "maximo")):
+                valor = fila[indice]
+                if valor is None:
+                    malos.append(f"{col}/{fase}/{etiqueta} vacío")
+                elif abs(float(valor) - float(esperado[etiqueta])) > 6e-3:
+                    malos.append(f"{col}/{fase}/{etiqueta}: {valor} vs "
+                                 f"{esperado[etiqueta]:.4f}")
+            if fase == "posttest" and len(fila) > 11:
+                delta = float(rep["descriptivos"][col]["delta_porcentual"])
+                if fila[11] is None or abs(float(fila[11]) - delta) > 6e-3:
+                    malos.append(f"{col}/delta: {fila[11]} vs {delta:+.4f}")
+    check(BLOQUE, "Descriptivos del libro coinciden con el reporte",
+          not malos and filas_ok >= 21,
+          ", ".join(malos[:3]) if malos else f"{filas_ok} filas")
+
+    # --- Confiabilidad (Tabla 35) -------------------------------------
+    ws = _hoja(wb, "06_CONFIABILIDAD")
+    malos, filas_ok = [], 0
+    if ws is not None:
+        for fila in ws.iter_rows(values_only=True):
+            if not fila or not isinstance(fila[0], str) or len(fila) < 8:
+                continue
+            fase = _momentos(fila[0])
+            if fase == "diferencia":
+                continue
+            escala = str(fila[1] or "").lower()
+            if not escala:
+                continue
+            clave = ("global_tam" if "global" in escala else
+                     "agilidad_percibida" if "aceptaci" in escala else
+                     "utilidad_percibida")
+            esperado = rep["confiabilidad_instrumento_03"][fase][clave]
+            filas_ok += 1
+            if abs(float(fila[4]) - float(esperado["alpha"])) > 1e-6:
+                malos.append(f"{fase}/{clave}/alfa: {fila[4]}")
+            for indice, etiqueta, k in ((5, "inferior", 0), (6, "superior", 1)):
+                if abs(float(fila[indice]) - float(esperado["ic_95"][k])) > 1e-6:
+                    malos.append(f"{fase}/{clave}/IC {etiqueta}: {fila[indice]}")
+    check(BLOQUE, "Alfas e intervalos del libro coinciden con el reporte",
+          not malos and filas_ok == 6,
+          ", ".join(malos[:3]) if malos else f"{filas_ok} escalas")
+
+    # --- Normalidad (Tabla 39) ----------------------------------------
+    ws = _hoja(wb, "07_NORMALIDAD")
+    malos, filas_ok = [], 0
+    if ws is not None:
+        for fila in ws.iter_rows(values_only=True):
+            if not fila or not isinstance(fila[1], str) or len(fila) < 6:
+                continue
+            col = _indicador(fila[1])
+            if col is None:
+                continue
+            esperado = rep["normalidad_shapiro_wilk"][col]
+            filas_ok += 1
+            for indice, etiqueta in ((3, "estadistico_w"), (5, "p_valor")):
+                if abs(float(fila[indice]) - float(esperado[etiqueta])) > 1e-6:
+                    malos.append(f"{col}/{etiqueta}: {fila[indice]}")
+    check(BLOQUE, "Shapiro-Wilk del libro coincide con el reporte",
+          not malos and filas_ok == 7,
+          ", ".join(malos[:3]) if malos else f"{filas_ok} indicadores")
+
+    # --- Contrastes (Tablas 40-43) ------------------------------------
+    ws = _hoja(wb, "08_CONTRASTES")
+    malos, filas_t, filas_w = [], 0, 0
+    if ws is not None:
+        for fila in ws.iter_rows(values_only=True):
+            if not fila or not isinstance(fila[0], str) or len(fila) < 8:
+                continue
+            col = _indicador(fila[0])
+            prueba = str(fila[1] or "").lower()
+            if col is None or not prueba:
+                continue
+            datos = rep["contrastes_inferenciales"][col]
+            if prueba.startswith("t pareada"):
+                filas_t += 1
+                esperado = datos["t_student"]
+                if abs(float(fila[2]) - float(esperado["estadistico_t"])) > 5e-4:
+                    malos.append(f"{col}/t: {fila[2]}")
+                if abs(float(fila[4]) - float(esperado["p_valor"])) > 1e-12:
+                    malos.append(f"{col}/p: {fila[4]}")
+                holm = datos["holm_bonferroni"]["p_ajustado"]
+                if fila[7] is None or abs(float(fila[7]) - float(holm)) > 1e-12:
+                    malos.append(f"{col}/p_holm: {fila[7]} vs {holm:.3e}")
+            elif prueba.startswith("wilcoxon"):
+                filas_w += 1
+                esperado = datos["wilcoxon"]
+                z = re.search(r"Z\s*=\s*(-?[\d.]+)", str(fila[2] or ""))
+                if not z or abs(float(z.group(1)) -
+                                float(esperado["estadistico_z"])) > 5e-3:
+                    malos.append(f"{col}/Z: {fila[2]}")
+                if abs(float(fila[5]) - float(esperado["r_rosenthal"])) > 5e-3:
+                    malos.append(f"{col}/r: {fila[5]}")
+    check(BLOQUE, "Contrastes del libro coinciden con el reporte",
+          not malos and filas_t == 7 and filas_w == 7,
+          ", ".join(malos[:3]) if malos else
+          f"{filas_t} t pareadas y {filas_w} Wilcoxon")
+
+    # --- Rotulación de datos de prueba --------------------------------
+    rotula = "DATOS DE PRUEBA" in " ".join(
+        _texto_hoja(ws) for ws in wb.worksheets).upper()
+    check(BLOQUE, "El libro rotula los datos como de prueba", rotula, "")
+
+
 # --------------------------------------------------------------------------
 # Informe
 # --------------------------------------------------------------------------
@@ -818,6 +1109,7 @@ def main(argv: list[str]) -> int:
         bloque_h(datos)
     bloque_i()
     bloque_j()
+    bloque_k()
 
     fallas = [c for c in CHECKS if c[2] != "OK"]
     por_bloque = Counter(c[0] for c in CHECKS)

@@ -67,8 +67,8 @@
       "bytes": 6092
     },
     "scripts_estadisticos/verificar_conjunto_datos.py": {
-      "sha256": "012c1cb8f2e99ab8957041b16c3569fde00bfaf607b97dac55525e7837676f02",
-      "bytes": 39731
+      "sha256": "2b510bee4d32d18f45eb1452455e829d92279f79407f1ce42796ec63f07b9534",
+      "bytes": 53079
     },
     "scripts_estadisticos/consultar_db_sivac.py": {
       "sha256": "ad83ac4fa38319e07b8621c24bf47da6556e8417d8c9673424a61874b8d5756a",

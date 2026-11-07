@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
 """
+OBSOLETO. Se conserva como registro historico del libro v2.
+
+El libro vigente es `salidas/estadistica/TABLAS_ANEXOS_SIVAC.xlsx` y lo
+produce `scripts/estadistica/exportar_tablas_anexos_excel.py`, que toma el
+informe de mayor version y no esta atado a la v10. Este script escribe en
+`salidas/archivo/ESTADISTICA_HISTORICO_20261107/` para no reponer copias
+antiguas junto al libro vigente.
+
 Construye el libro TABLAS_ANEXOS_SIVAC_v2.xlsx con las tablas de anexo del
 informe final SIVAC (v10) y las hojas estadisticas reproducidas desde las
 bases CSV y el reporte JSON.
@@ -43,8 +51,9 @@ DOCX_PATH = ROOT / "salidas" / "documentos" / "informe_final_v10.docx"
 PRE_CSV = ROOT / "salidas" / "evidencias" / "base_de_datos" / "pretest_campo.csv"
 POST_CSV = ROOT / "salidas" / "evidencias" / "base_de_datos" / "posttest_campo.csv"
 JSON_PATH = ROOT / "salidas" / "estadistica" / "reporte_estadistico_completo.json"
-OUT_XLSX = ROOT / "salidas" / "estadistica" / "TABLAS_ANEXOS_SIVAC_v2.xlsx"
-OUT_MD = ROOT / "salidas" / "estadistica" / "REPORTE_EXCEL_ANEXOS_v2.md"
+ARCHIVO = ROOT / "salidas" / "archivo" / "ESTADISTICA_HISTORICO_20261107"
+OUT_XLSX = ARCHIVO / "TABLAS_ANEXOS_SIVAC_v2.xlsx"
+OUT_MD = ARCHIVO / "REPORTE_EXCEL_ANEXOS_v2.md"
 
 NAVY = "1F3864"
 BAND = "F2F2F2"

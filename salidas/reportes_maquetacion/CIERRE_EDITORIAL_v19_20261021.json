@@ -15,14 +15,14 @@
       "paginas": 158
     },
     "excel": {
-      "ruta": "salidas/estadistica/TABLAS_ANEXOS_SIVAC_v5.xlsx",
+      "ruta": "salidas/archivo/ESTADISTICA_HISTORICO_20261107/TABLAS_ANEXOS_SIVAC_v5.xlsx",
       "hojas": 17,
       "bytes": 68483,
       "sha256": "1632d1ebe1b37069b247e5da10e4d40f08291a0b2fbac2c41c083eb7be672d7e",
       "paginas_impresion": 35,
       "procedencia": "informe_final_v19.docx",
       "paridad_numerica": "968 celdas sin discrepancias frente a los libros de base y referencia",
-      "nota": "El hash final y la configuración de impresión constan en paridad_TABLAS_ANEXOS_SIVAC_v5.json."
+      "nota": "El hash final y la configuración de impresión constan en paridad_TABLAS_ANEXOS_SIVAC_v5.json, hoy en salidas/archivo/ESTADISTICA_HISTORICO_20261107/ por el retiro de la cadena v2-v5."
     }
   },
   "aclaraciones_atendidas": {

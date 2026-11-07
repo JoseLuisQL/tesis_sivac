@@ -604,5 +604,89 @@
     "comprobacion": "El informe advierte que son datos de prueba",
     "estado": "OK",
     "detalle": "informe=sí; reporte=DATOS DE PRUEBA – REEMPLAZAR (DEC-007)"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Libro de tablas de anexos presente",
+    "estado": "OK",
+    "detalle": "TABLAS_ANEXOS_SIVAC.xlsx"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Hojas del libro en el orden previsto",
+    "estado": "OK",
+    "detalle": "12 hojas"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Registro de paridad del libro presente",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Portada identifica el informe vigente",
+    "estado": "OK",
+    "detalle": "informe_final_v28.docx"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Portada declara el total de tablas del informe",
+    "estado": "OK",
+    "detalle": "se esperaban 84 tablas"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "El libro no cita versiones anteriores del informe",
+    "estado": "OK",
+    "detalle": ""
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Registro de paridad coherente con el libro",
+    "estado": "OK",
+    "detalle": "informe_final_v28.docx"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Matriz pretest igual a los CSV de campo",
+    "estado": "OK",
+    "detalle": "14 sujetos × 18 columnas"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Matriz postest igual a los CSV de campo",
+    "estado": "OK",
+    "detalle": "14 sujetos × 18 columnas"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Descriptivos del libro coinciden con el reporte",
+    "estado": "OK",
+    "detalle": "21 filas"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Alfas e intervalos del libro coinciden con el reporte",
+    "estado": "OK",
+    "detalle": "6 escalas"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Shapiro-Wilk del libro coincide con el reporte",
+    "estado": "OK",
+    "detalle": "7 indicadores"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "Contrastes del libro coinciden con el reporte",
+    "estado": "OK",
+    "detalle": "7 t pareadas y 7 Wilcoxon"
+  },
+  {
+    "bloque": "K. Libro de anexos (XLSX)",
+    "comprobacion": "El libro rotula los datos como de prueba",
+    "estado": "OK",
+    "detalle": ""
   }
 ]

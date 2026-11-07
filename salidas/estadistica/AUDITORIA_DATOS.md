@@ -3,7 +3,7 @@
 > Informe generado por `scripts/estadistica/verificar_conjunto_datos.py`.
 > No modifica datos: solo comprueba coherencia, recálculo y sincronía.
 
-**Resultado global:** 101 de 101 comprobaciones superadas
+**Resultado global:** 115 de 115 comprobaciones superadas
 
 ## Resumen por bloque
 
@@ -19,6 +19,7 @@
 | H. Coherencia entre instrumentos | 6 | 0 | OK |
 | I. Evidencias | 2 | 0 | OK |
 | J. Informe final | 10 | 0 | OK |
+| K. Libro de anexos (XLSX) | 14 | 0 | OK |
 
 ## Detalle
 
@@ -125,3 +126,17 @@
 | J. Informe final | Matriz postest del anexo igual a los CSV | OK | 14 sujetos |
 | J. Informe final | Figuras del informe son las figuras vigentes | OK | 3 figuras |
 | J. Informe final | El informe advierte que son datos de prueba | OK | informe=sí; reporte=DATOS DE PRUEBA – REEMPLAZAR (DEC-007) |
+| K. Libro de anexos (XLSX) | Libro de tablas de anexos presente | OK | TABLAS_ANEXOS_SIVAC.xlsx |
+| K. Libro de anexos (XLSX) | Hojas del libro en el orden previsto | OK | 12 hojas |
+| K. Libro de anexos (XLSX) | Registro de paridad del libro presente | OK |  |
+| K. Libro de anexos (XLSX) | Portada identifica el informe vigente | OK | informe_final_v28.docx |
+| K. Libro de anexos (XLSX) | Portada declara el total de tablas del informe | OK | se esperaban 84 tablas |
+| K. Libro de anexos (XLSX) | El libro no cita versiones anteriores del informe | OK |  |
+| K. Libro de anexos (XLSX) | Registro de paridad coherente con el libro | OK | informe_final_v28.docx |
+| K. Libro de anexos (XLSX) | Matriz pretest igual a los CSV de campo | OK | 14 sujetos × 18 columnas |
+| K. Libro de anexos (XLSX) | Matriz postest igual a los CSV de campo | OK | 14 sujetos × 18 columnas |
+| K. Libro de anexos (XLSX) | Descriptivos del libro coinciden con el reporte | OK | 21 filas |
+| K. Libro de anexos (XLSX) | Alfas e intervalos del libro coinciden con el reporte | OK | 6 escalas |
+| K. Libro de anexos (XLSX) | Shapiro-Wilk del libro coincide con el reporte | OK | 7 indicadores |
+| K. Libro de anexos (XLSX) | Contrastes del libro coinciden con el reporte | OK | 7 t pareadas y 7 Wilcoxon |
+| K. Libro de anexos (XLSX) | El libro rotula los datos como de prueba | OK |  |

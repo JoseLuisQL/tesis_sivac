@@ -1,5 +1,14 @@
 # -*- coding: utf-8 -*-
 """
+OBSOLETO para producir el libro vigente. Se conserva como registro historico
+de la cadena v3-v5.
+
+El libro vigente es `salidas/estadistica/TABLAS_ANEXOS_SIVAC.xlsx`, generado
+por `scripts/estadistica/exportar_tablas_anexos_excel.py` directo desde el
+informe vigente, el reporte estadistico y los CSV. Los libros v2-v5 y sus
+reportes de paridad se resguardan en
+`salidas/archivo/ESTADISTICA_HISTORICO_20261107/`.
+
 Construye el libro de tablas de anexos SIVAC desde la v2 y lo versiona.
 
 La ruta es parametrizable: el mismo script produce la v3 (por defecto) o la v4
@@ -70,10 +79,11 @@ for _stream in (sys.stdout, sys.stderr):
 # Rutas y constantes editoriales
 # ---------------------------------------------------------------------------
 ROOT = Path(r"C:\MisInvestigaciones\tesis\sivac")
-DEFAULT_BASE = ROOT / "salidas" / "estadistica" / "TABLAS_ANEXOS_SIVAC_v2.xlsx"
-DEFAULT_OUT = ROOT / "salidas" / "estadistica" / "TABLAS_ANEXOS_SIVAC_v3.xlsx"
+ARCHIVO = ROOT / "salidas" / "archivo" / "ESTADISTICA_HISTORICO_20261107"
+DEFAULT_BASE = ARCHIVO / "TABLAS_ANEXOS_SIVAC_v2.xlsx"
+DEFAULT_OUT = ARCHIVO / "TABLAS_ANEXOS_SIVAC_v3.xlsx"
 DEFAULT_SOURCE = ROOT / "salidas" / "documentos" / "informe_final_v16.docx"
-DEFAULT_REF = ROOT / "salidas" / "estadistica" / "TABLAS_ANEXOS_SIVAC_v3.xlsx"
+DEFAULT_REF = ARCHIVO / "TABLAS_ANEXOS_SIVAC_v3.xlsx"
 
 
 def _resolve(value: str, base_dir: Path) -> Path:

@@ -57,7 +57,7 @@ Los tres últimos scripts más `exportar_libro_campo.py`, `sincronizar_evidencia
 
 ### Archivos de control
 - **`SINCRONIZACION.json`:** Huellas SHA-256, tamaños y recuentos de cada copia de evidencia en el momento de la última sincronización.
-- **`../estadistica/AUDITORIA_DATOS.md` / `.json`:** 101 comprobaciones: estructura, recálculo, coherencia entre instrumentos, reproducibilidad estadística, sincronía de evidencias y paridad del informe final vigente (tablas 35-43, matrices del anexo y figuras embebidas).
+- **`../estadistica/AUDITORIA_DATOS.md` / `.json`:** 115 comprobaciones: estructura, recálculo, coherencia entre instrumentos, reproducibilidad estadística, sincronía de evidencias y paridad del informe final vigente (tablas 35-43, matrices del anexo y figuras embebidas) y paridad del libro de tablas de anexos (hojas, matrices, descriptivos, alfas, normalidad y contrastes).
 
 ---
 
@@ -70,7 +70,7 @@ python scripts/estadistica/generar_datos_sinteticos.py    # solo si se regenera 
 python scripts/estadistica/analisis_estadistico_sivac.py  # tablas, contrastes y figuras
 python scripts/estadistica/construir_registro_campo.py    # registro integral en Markdown
 python scripts/estadistica/sincronizar_evidencias.py      # copias y huellas de evidencia
-python scripts/estadistica/verificar_conjunto_datos.py    # auditoría: debe cerrar 101/101
+python scripts/estadistica/verificar_conjunto_datos.py    # auditoría: debe cerrar 115/115
 python scripts/estadistica/sincronizar_evidencias.py --verificar   # control sin escribir
 ```
 
