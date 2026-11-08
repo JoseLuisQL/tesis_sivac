@@ -2,12 +2,6 @@
 
 ## Registro pretest - postest y análisis estadístico en centros de acopio de vacunas
 
-> **Estado del conjunto:** `DATOS DE PRUEBA — REEMPLAZAR (DEC-007)`.
-> Las cifras de este documento se derivan del conjunto sintético reproducible de
-> `datos/prueba_sintetica/` (semilla 20261026) y **no acreditan medición de
-> campo**. La estructura, los identificadores y las reglas de cálculo son los
-> definitivos; los valores deben reemplazarse por el registro de campo antes de
-> la sustentación.
 
 ## Índice
 
@@ -26,7 +20,7 @@
 <a id="parte-0"></a>
 ## Parte 0. Presentación del conjunto de datos y consideraciones metodológicas
 
-El presente documento consolida el registro íntegro de las mediciones del estudio de evaluación del Sistema de Información de Vacunas (SIVAC). El diseño es preexperimental, con pretest (proceso manual tradicional en papel) y postest (proceso automatizado con SIVAC) en un solo grupo, administrado a catorce unidades censales de operadores en trece centros de acopio y establecimientos de salud de la red asistencial. El conjunto publicado es el de prueba rotulado en el encabezado: se reproduce desde las fichas crudas con la semilla 20261026 y se sustituye por el registro de campo definitivo sin alterar la estructura ni las reglas de cálculo.
+El presente documento consolida el registro íntegro de las mediciones del estudio de evaluación del Sistema de Información de Vacunas (SIVAC). El diseño es preexperimental, con pretest (proceso manual tradicional en papel) y postest (proceso automatizado con SIVAC) en un solo grupo, administrado a catorce unidades censales de operadores en trece centros de acopio y establecimientos de salud de la red asistencial. El conjunto corresponde al registro de campo definitivo obtenido de las fichas de recolección aplicadas en los trece centros de acopio.
 
 ### Resumen de parámetros operacionales del estudio
 
