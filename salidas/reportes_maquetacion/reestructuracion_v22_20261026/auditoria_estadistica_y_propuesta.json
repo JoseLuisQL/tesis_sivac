@@ -8,14 +8,13 @@
     "fase": "F8_INTEGRACION_EDITORIAL",
     "documento_auditado": "C:/MisInvestigaciones/tesis/sivac/salidas/documentos/informe_final_v20.docx",
     "sha256_documento": "12bfcb3b63ad2fafd1f87dc8aad3750ebd524d7b42a8b735ac70ab9a999ac072",
-    "evidencia_cruda": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/evidencia_auditoria_procedencia.json",
+    "evidencia_cruda": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_x/evidencia_auditoria_procedencia.json",
     "scripts": [
       "C:/MisInvestigaciones/tesis/sivac/scripts/estadistica/auditoria_procedencia_datos.py",
       "C:/MisInvestigaciones/tesis/sivac/scripts/estadistica/plantillas_resultados_v22.py"
     ],
     "caracter": "No se ejecuto ningun contraste nuevo sobre los datos de prueba ni se modifico el DOCX. Solo se reprodujeron y compararon cifras ya publicadas."
   },
-
   "veredicto_procedencia": {
     "estado": "BLOQUEADO: esperando datos de campo",
     "codigo_salida_verificado_en_vivo": 3,
@@ -54,80 +53,401 @@
     },
     "conclusion": "No existe evidencia de campo verificable. Todo el bloque empirico de las Tablas 35 a 43, las Figuras 46 a 48 y el texto de resultados se sostiene unicamente sobre datos de prueba. La inferencia permanece bloqueada y el Capitulo V no puede afirmar hallazgos de campo."
   },
-
   "inventario_trazabilidad": [
-    {"elemento": "Tabla 35", "rotulo": "Confiabilidad de consistencia interna del Cuestionario TAM mediante Alfa de Cronbach e intervalo de confianza", "fuente_actual": "datos/recolectados/posttest_campo.csv (columnas ap_01..ap_04, up_01..up_04)", "script": "scripts/estadistica/analisis_estadistico_sivac.py", "estado": "prueba", "coincide_al_recalcular": true, "nota": "alfa .93852 [.87398, .97705] pretest y .915073 [.825919, .968297] postest reproducidos con 6 decimales; n = 14 menor que el piloto de 15 declarado en el texto."},
-    {"elemento": "Tablas 36, 37 y 38", "rotulo": "Estadistica descriptiva comparativa pretest y postest por dimension (n = 14)", "fuente_actual": "mismos CSV", "script": "scripts/estadistica/analisis_estadistico_sivac.py", "estado": "prueba", "coincide_al_recalcular": true, "nota": "Medias y DE reproducidas; la Tabla 38 incluye el puntaje total TAM, que es suma determinista de AP y UP."},
-    {"elemento": "Tabla 39", "rotulo": "Shapiro-Wilk sobre diferencias pareadas", "fuente_actual": "mismos CSV", "script": "scripts/estadistica/analisis_estadistico_sivac.py", "estado": "prueba", "coincide_al_recalcular": true, "nota": "W y p reproducidos en los siete indicadores. La etiqueta de la tabla califica los siete como Normal (p > .05), lo que es una lectura indebida del no rechazo."},
-    {"elemento": "Tablas 40, 41 y 42", "rotulo": "Contraste inferencial por hipotesis especifica con pruebas parametricas y no parametricas", "fuente_actual": "mismos CSV", "script": "scripts/estadistica/analisis_estadistico_sivac.py", "estado": "prueba", "coincide_al_recalcular": true, "nota": "t y d reproducidas con 3 decimales en los siete rows. El valor r = 0.881 impreso no coincide con el 0.622841 guardado en el JSON."},
-    {"elemento": "Tabla 43", "rotulo": "Resumen de contrastacion y regla de decision para la Hipotesis General con Holm-Bonferroni", "fuente_actual": "salidas/estadistica/reporte_estadistico_completo.json", "script": "mismo", "estado": "prueba", "coincide_al_recalcular": true, "nota": "Presenta valores p para la Hipotesis General, que carece de estadistico propio."},
-    {"elemento": "Figura 46", "rotulo": "Diagramas de cajas pareados para tiempos de registro y emision de vales (D1)", "fuente_actual": "salidas/figuras/estadistica/figura_d1_tiempos_boxplots_spss.png", "script": "mismo", "estado": "prueba", "coincide_al_recalcular": false, "nota": "La imagen incrustada en el DOCX difiere del PNG vigente en disco en unos 193 000 pixeles: la figura publicada no se reproduce desde el script."},
-    {"elemento": "Figura 47", "rotulo": "Barras e intervalos de confianza para consistencia documental (D2)", "fuente_actual": "salidas/figuras/estadistica/figura_d2_consistencia_barras_spss.png", "script": "mismo", "estado": "prueba", "coincide_al_recalcular": false, "nota": "La imagen incrustada difiere del PNG vigente en unos 193 000 pixeles. Las barras de error son +-1.96 SE con n fijo."},
-    {"elemento": "Figura 48", "rotulo": "Comparacion de puntajes TAM pretest vs postest (D3)", "fuente_actual": "salidas/figuras/estadistica/figura_d3_satisfaccion_tam_spss.png", "script": "mismo", "estado": "prueba", "coincide_al_recalcular": true, "nota": "Identica byte a byte al PNG vigente. El eje va de 0 a 48 cuando la escala observada es 8 a 40."},
-    {"elemento": "Texto de resultados (parrafos 646 a 719)", "rotulo": "Narracion de resultados, notas de tabla y conclusiones", "fuente_actual": "derivado de los mismos CSV", "script": "mismo", "estado": "prueba", "coincide_al_recalcular": null, "nota": "Las notas de las Tablas 36 a 42 y de las Figuras 46 a 48 atribuyen los datos a instrumentos de campo de 2026 sin la salvedad de datos de prueba."}
+    {
+      "elemento": "Tabla 35",
+      "rotulo": "Confiabilidad de consistencia interna del Cuestionario TAM mediante Alfa de Cronbach e intervalo de confianza",
+      "fuente_actual": "datos/recolectados/posttest_campo.csv (columnas ap_01..ap_04, up_01..up_04)",
+      "script": "scripts/estadistica/analisis_estadistico_sivac.py",
+      "estado": "prueba",
+      "coincide_al_recalcular": true,
+      "nota": "alfa .93852 [.87398, .97705] pretest y .915073 [.825919, .968297] postest reproducidos con 6 decimales; n = 14 menor que el piloto de 15 declarado en el texto."
+    },
+    {
+      "elemento": "Tablas 36, 37 y 38",
+      "rotulo": "Estadistica descriptiva comparativa pretest y postest por dimension (n = 14)",
+      "fuente_actual": "mismos CSV",
+      "script": "scripts/estadistica/analisis_estadistico_sivac.py",
+      "estado": "prueba",
+      "coincide_al_recalcular": true,
+      "nota": "Medias y DE reproducidas; la Tabla 38 incluye el puntaje total TAM, que es suma determinista de AP y UP."
+    },
+    {
+      "elemento": "Tabla 39",
+      "rotulo": "Shapiro-Wilk sobre diferencias pareadas",
+      "fuente_actual": "mismos CSV",
+      "script": "scripts/estadistica/analisis_estadistico_sivac.py",
+      "estado": "prueba",
+      "coincide_al_recalcular": true,
+      "nota": "W y p reproducidos en los siete indicadores. La etiqueta de la tabla califica los siete como Normal (p > .05), lo que es una lectura indebida del no rechazo."
+    },
+    {
+      "elemento": "Tablas 40, 41 y 42",
+      "rotulo": "Contraste inferencial por hipotesis especifica con pruebas parametricas y no parametricas",
+      "fuente_actual": "mismos CSV",
+      "script": "scripts/estadistica/analisis_estadistico_sivac.py",
+      "estado": "prueba",
+      "coincide_al_recalcular": true,
+      "nota": "t y d reproducidas con 3 decimales en los siete rows. El valor r = 0.881 impreso no coincide con el 0.622841 guardado en el JSON."
+    },
+    {
+      "elemento": "Tabla 43",
+      "rotulo": "Resumen de contrastacion y regla de decision para la Hipotesis General con Holm-Bonferroni",
+      "fuente_actual": "salidas/estadistica/reporte_estadistico_completo.json",
+      "script": "mismo",
+      "estado": "prueba",
+      "coincide_al_recalcular": true,
+      "nota": "Presenta valores p para la Hipotesis General, que carece de estadistico propio."
+    },
+    {
+      "elemento": "Figura 46",
+      "rotulo": "Diagramas de cajas pareados para tiempos de registro y emision de vales (D1)",
+      "fuente_actual": "salidas/figuras/estadistica/figura_d1_tiempos_boxplots_spss.png",
+      "script": "mismo",
+      "estado": "prueba",
+      "coincide_al_recalcular": false,
+      "nota": "La imagen incrustada en el DOCX difiere del PNG vigente en disco en unos 193 000 pixeles: la figura publicada no se reproduce desde el script."
+    },
+    {
+      "elemento": "Figura 47",
+      "rotulo": "Barras e intervalos de confianza para consistencia documental (D2)",
+      "fuente_actual": "salidas/figuras/estadistica/figura_d2_consistencia_barras_spss.png",
+      "script": "mismo",
+      "estado": "prueba",
+      "coincide_al_recalcular": false,
+      "nota": "La imagen incrustada difiere del PNG vigente en unos 193 000 pixeles. Las barras de error son +-1.96 SE con n fijo."
+    },
+    {
+      "elemento": "Figura 48",
+      "rotulo": "Comparacion de puntajes TAM pretest vs postest (D3)",
+      "fuente_actual": "salidas/figuras/estadistica/figura_d3_satisfaccion_tam_spss.png",
+      "script": "mismo",
+      "estado": "prueba",
+      "coincide_al_recalcular": true,
+      "nota": "Identica byte a byte al PNG vigente. El eje va de 0 a 48 cuando la escala observada es 8 a 40."
+    },
+    {
+      "elemento": "Texto de resultados (parrafos 646 a 719)",
+      "rotulo": "Narracion de resultados, notas de tabla y conclusiones",
+      "fuente_actual": "derivado de los mismos CSV",
+      "script": "mismo",
+      "estado": "prueba",
+      "coincide_al_recalcular": null,
+      "nota": "Las notas de las Tablas 36 a 42 y de las Figuras 46 a 48 atribuyen los datos a instrumentos de campo de 2026 sin la salvedad de datos de prueba."
+    }
   ],
-
   "hallazgos": [
-    {"id": "H-01", "severidad": "alta", "ubicacion": "Capitulo V completo, Tablas 35-43, Figuras 46-48", "hallazgo": "Todos los resultados publicados proceden de CSV rotulados como datos de prueba y no existe MANIFEST de campo.", "evidencia": "manifest_datos.py validar devuelve codigo_salida 3 con motivo No existe .../datos/raw/MANIFEST.json; README de datos/recolectados rotula ambos CSV como DATOS DE PRUEBA - REEMPLAZAR.", "recomendacion": "Rotular el bloque como analisis provisional de verificacion de la tuberia y retirar toda afirmacion de hallazgo de campo hasta que exista MANIFEST firmado."},
-    {"id": "H-02", "severidad": "alta", "ubicacion": "Notas de las Tablas 36, 37 y 38 (parrafos 658, 665 y 672)", "hallazgo": "Las notas afirman que los tiempos fueron medidos y cronometrados y atribuyen los datos a la Ficha de Registro Cronometrico SIVAC (2026), la Ficha de Cotejo Documental de Lotes y Kardex (2026) y el Cuestionario de Satisfaccion del Usuario SIVAC (2026), sin la salvedad de prueba que si aparece en el parrafo 646 y en la nota de la Tabla 35 (parrafo 652).", "evidencia": "Parrafo 658: Tiempos medidos en minutos cronometrados por movimiento mensual segun el Protocolo PMMV. Fuente: Ficha de Registro Cronometrico SIVAC (2026). Parrafo 665: Fuente: Ficha de Cotejo Documental de Lotes y Kardex (2026). Parrafo 672: Fuente: Cuestionario de Satisfaccion del Usuario SIVAC (2026).", "recomendacion": "Homologar la nota de todas las tablas y figuras a una formula unica que declare el origen y su caracter provisional."},
-    {"id": "H-23", "severidad": "media", "ubicacion": "Notas de las Figuras 46, 47 y 48 (parrafos 661, 668 y 675)", "hallazgo": "Las notas de figura omiten la salvedad de datos de prueba y ademas introducen afirmaciones interpretativas y de significancia dentro de la nota, que es el lugar reservado a la fuente y a las convenciones graficas.", "evidencia": "Parrafo 661: reduccion drastica de tiempos operativos; parrafo 668: Incremento sustancial; parrafo 675: Elevacion significativa. Ninguna menciona el caracter provisional de los datos.", "recomendacion": "Reducir la nota a la fuente, la convencion de n y la salvedad provisional; la interpretacion corresponde al texto, no a la nota."},
-    {"id": "H-03", "severidad": "alta", "ubicacion": "Tablas 40-42, columna r de Rosenthal", "hallazgo": "El valor impreso r = 0.881 en las siete filas no coincide con el 0.622841 guardado en el JSON, porque el script divide por la raiz de 2N en lugar de por la raiz de N.", "evidencia": "auditoria: z_aprox_normal_sin_correccion = -3.295765; |Z|/sqrt(14) = 0.88083; |Z|/sqrt(28) = 0.622841 = r_guardada_en_json; json_incompatible_con_docx = true.", "recomendacion": "Corregir el denominador en analisis_estadistico_sivac.py. El DOCX ya trae el valor correcto; el script es el que rompe la reproducibilidad."},
-    {"id": "H-04", "severidad": "alta", "ubicacion": "Tablas 40-42, columna p de Wilcoxon", "hallazgo": "Se imprime p = .001 uniforme en las siete filas, pero el JSON guarda seis valores p distintos porque el metodo (exacto o asintotico) se elige automaticamente segun los empates.", "evidencia": "valores_distintos_en_json = [0.00012207, 0.000856826, 0.000862012, 0.000912346, 0.000967428, 0.000975879]; p_wilcoxon_json_rsd_no_redondea_a_001 = true.", "recomendacion": "Declarar el metodo por indicador y reportar el p que corresponde a ese metodo, sin uniformar."},
-    {"id": "H-05", "severidad": "alta", "ubicacion": "Tablas 40-42, columna Z", "hallazgo": "Z = -3.30 es identico en los siete indicadores porque se calcula con una varianza sin correccion de empates y no con el metodo que produjo el p.", "evidencia": "z_aprox_normal_sin_correccion = -3.295765 en las siete entradas; el p exacto del RSD (0.00012207) no es compatible con ese Z.", "recomendacion": "Derivar Z y p del mismo metodo declarado, o informar solo r_rb cuando la prueba sea exacta."},
-    {"id": "H-06", "severidad": "alta", "ubicacion": "Tabla 39 y parrafo 679", "hallazgo": "La prueba inferencial se elige despues de ver el resultado de normalidad, y se interpreta p > .05 como confirmacion de normalidad con n = 14.", "evidencia": "score_up: W = 0.876351, p = 0.051576, curtosis de exceso -0.9046; el pipeline asigna t a los siete indicadores.", "recomendacion": "Preseleccionar un unico contraste primario por indicador. Shapiro, asimetria, curtosis y atipicos pasan a diagnostico de apoyo, sin decidir la prueba."},
-    {"id": "H-07", "severidad": "alta", "ubicacion": "Tabla 43", "hallazgo": "Se asigna valor p a la Hipotesis General, que en la matriz es una regla conjuntiva y no tiene estadistico ni hipotesis nula propia.", "evidencia": "La tabla muestra p para la fila de la Hipotesis General ademas de los siete contrastes por indicador.", "recomendacion": "Sustituir el p de la HG por la regla de decision y su resultado derivado."},
-    {"id": "H-08", "severidad": "media", "ubicacion": "Ajuste de Holm en Tablas 40-43", "hallazgo": "La familia de siete pruebas incluye score_tam_total, que es la suma determinista de AP y UP, de modo que una de las pruebas es redundante y dependiente de otras dos.", "evidencia": "score_tam_total_igual_ap_mas_up = true en pretest y postest.", "recomendacion": "Familia de seis indicadores oficiales. El puntaje global TAM queda como descriptivo secundario, sin contraste."},
-    {"id": "H-09", "severidad": "media", "ubicacion": "Ajuste de Holm", "hallazgo": "El ajuste omite el maximo acumulado que garantiza monotonia de los p ajustados.", "evidencia": "holm_reproduce_el_json = true y holm_bruto_ya_es_monotono_en_estos_datos = true: no altera estas decisiones, pero si podria alterarlas con otros datos.", "recomendacion": "Aplicar Holm con maximo acumulado en la version definitiva."},
-    {"id": "H-10", "severidad": "media", "ubicacion": "Tabla 37 y texto de D2", "hallazgo": "En variables acotadas al 100 por ciento se informa el cambio relativo junto al absoluto bajo el mismo signo de porcentaje, de modo que +51.01 % y +32.43 % quedan tipograficamente equivalentes cuando el primero es variacion relativa y el segundo puntos porcentuales.", "evidencia": "Tabla 37, columna Variacion: fila postest RSD +51.01 % y fila postest CPE +41.10 %, mientras la fila Diferencia Pareada muestra +32.43 % y +27.79 % en la misma columna.", "recomendacion": "Diferencia en puntos porcentuales como cifra principal; el cambio relativo, si se conserva, en columna aparte y rotulado como tal."},
-    {"id": "H-11", "severidad": "media", "ubicacion": "Texto de D3", "hallazgo": "Se describe la migracion de usuarios entre niveles del baremo como si fuera un hecho observado por sujeto, cuando proviene de medias agregadas.", "evidencia": "La afirmacion sobre promocion hacia el nivel Alto se apoya en la media del grupo, no en la clasificacion de cada caso.", "recomendacion": "Reformular como desplazamiento de la media o, si se desea lo individual, calcular las categorias por sujeto y declararlo."},
-    {"id": "H-12", "severidad": "media", "ubicacion": "Trazabilidad metodologica", "hallazgo": "Los archivos no permiten reconstruir el protocolo de medicion: T_reg figura como valor unico por participante y RSD y CPE como porcentajes agregados sin denominadores.", "evidencia": "columnas_de_observaciones_presentes = false; columnas_de_conteos_presentes = false; rsd_requiere_conteo_de_registros = false.", "recomendacion": "Ampliar la plantilla de captura con las tres observaciones cronometradas y los conteos de numerador y denominador que exige el protocolo."},
-    {"id": "H-13", "severidad": "media", "ubicacion": "Parrafo 654 y descripcion de la poblacion", "hallazgo": "El numero de centros de acopio difiere entre el informe, el README y el registro normativo.", "evidencia": "readme_recolectados_declara = 8; docx_declara = 13; registro_normativo_centros = 19; centros_distintos_en_csv = 13 con ALMACEN (CHANKA) concentrando 2 trabajadores.", "recomendacion": "Fijar una unica cifra oficial y justificar por que 14 trabajadores se distribuyen en ese numero de centros."},
-    {"id": "H-14", "severidad": "media", "ubicacion": "Figuras 46 y 47 del DOCX", "hallazgo": "Las imagenes incrustadas no coinciden con los PNG vigentes, por lo que el documento publicado no se reproduce desde el script actual.", "evidencia": "Diferencia de unos 193 000 pixeles en image47 e image48; la Figura 48 si coincide byte a byte.", "recomendacion": "Regenerar y reinsertar las figuras desde la salida vigente cuando se cierre la version definitiva."},
-    {"id": "H-15", "severidad": "media", "ubicacion": "Figura 48", "hallazgo": "El eje vertical arranca en 0 cuando la escala observada va de 8 a 40, lo que exagera visualmente las diferencias y sugiere un cero inexistente.", "evidencia": "set_ylim(0, 48) en el generador frente a un rango posible de 8 a 40.", "recomendacion": "Anclar el eje al rango de la escala, con marcas en 8, 16, 24, 32 y 40."},
-    {"id": "H-16", "severidad": "media", "ubicacion": "Figura 47 y parrafo de D2", "hallazgo": "Las barras de error usan +-1.96 desviaciones estandar de la media con n fijo en 14, es decir, un intervalo entre sujetos sobre datos pareados y con cuantil normal en vez de t con 13 grados de libertad.", "evidencia": "std(ddof=1)/sqrt(14)*1.96 con cuantil t(13) = 2.160.", "recomendacion": "Representar el cambio pareado con su intervalo, no la dispersion entre sujetos."},
-    {"id": "H-17", "severidad": "media", "ubicacion": "Emparejamiento pretest-postest", "hallazgo": "El pipeline resta columnas por posicion sin unir por identificador ni verificar el conjunto de sujetos.", "evidencia": "emparejamiento_por_posicion_no_por_id = true; hoy los identificadores coinciden y estan en el mismo orden, pero eso es una condicion del archivo, no una garantia del codigo.", "recomendacion": "Emparejar por sujeto_id y detener la ejecucion si el conjunto o el orden difieren."},
-    {"id": "H-18", "severidad": "media", "ubicacion": "Conclusiones 2 a 4", "hallazgo": "Las conclusiones afirman que se determino, se demostro y se comprobo, y solo la primera conserva la salvedad de datos provisionales.", "evidencia": "Parrafos 716 a 719; la salvedad aparece unicamente en 716.", "recomendacion": "Extender la salvedad a todas las conclusiones o reformularlas como verificacion de la tuberia."},
-    {"id": "H-19", "severidad": "media", "ubicacion": "Lenguaje causal en todo el capitulo", "hallazgo": "Se atribuye la mejora al sistema con un diseno de un solo grupo, sin grupo control ni contrabalanceo.", "evidencia": "Diseno O1 -> X -> O2 sobre poblacion censal; no se controlan historia, maduracion ni reactividad de la medicion.", "recomendacion": "Formular asociacion compatible con el sistema, no efecto causal aislado."},
-    {"id": "H-20", "severidad": "baja", "ubicacion": "Salida del pipeline", "hallazgo": "Se declaran grados de libertad para Shapiro-Wilk y se rotula d de Cohen sin precisar que es d_z.", "evidencia": "normalidad[var][gl] = n; d_cohen = media/desv de la diferencia.", "recomendacion": "Suprimir el gl inexistente y rotular d_z."},
-    {"id": "H-21", "severidad": "baja", "ubicacion": "Carpeta Obsidian 07_ESTADISTICA_Y_DATOS", "hallazgo": "Existen cuatro figuras de demostracion genericas ajenas a los indicadores SIVAC, con credito a otro agente y fecha previa al proyecto.", "evidencia": "Figura_1_Dispersion_Regresion.png, Figura_2_Boxplot_Outliers.png, Figura_3_Barras_CI95.png, Figura_4_Histograma_Normalidad.png, generadas por scripts_analisis/apa7_figures.py.", "recomendacion": "No insertarlas en el Capitulo V bajo ninguna circunstancia."},
-    {"id": "H-22", "severidad": "baja", "ubicacion": "Tabla 35", "hallazgo": "El alfa se calcula con n = 14 mientras el texto invoca un piloto de 15, y el intervalo de Feldt es amplio.", "evidencia": "ic95 postest [0.825919, 0.968297]; n_menor_que_piloto_15 = true.", "recomendacion": "Declarar el n real del calculo y no atribuir el coeficiente a la muestra piloto."}
+    {
+      "id": "H-01",
+      "severidad": "alta",
+      "ubicacion": "Capitulo V completo, Tablas 35-43, Figuras 46-48",
+      "hallazgo": "Todos los resultados publicados proceden de CSV rotulados como datos de prueba y no existe MANIFEST de campo.",
+      "evidencia": "manifest_datos.py validar devuelve codigo_salida 3 con motivo No existe .../datos/raw/MANIFEST.json; README de datos/recolectados rotula ambos CSV como DATOS DE PRUEBA - REEMPLAZAR.",
+      "recomendacion": "Rotular el bloque como analisis provisional de verificacion de la tuberia y retirar toda afirmacion de hallazgo de campo hasta que exista MANIFEST firmado."
+    },
+    {
+      "id": "H-02",
+      "severidad": "alta",
+      "ubicacion": "Notas de las Tablas 36, 37 y 38 (parrafos 658, 665 y 672)",
+      "hallazgo": "Las notas afirman que los tiempos fueron medidos y cronometrados y atribuyen los datos a la Ficha de Registro Cronometrico SIVAC (2026), la Ficha de Cotejo Documental de Lotes y Kardex (2026) y el Cuestionario de Satisfaccion del Usuario SIVAC (2026), sin la salvedad de prueba que si aparece en el parrafo 646 y en la nota de la Tabla 35 (parrafo 652).",
+      "evidencia": "Parrafo 658: Tiempos medidos en minutos cronometrados por movimiento mensual segun el Protocolo PMMV. Fuente: Ficha de Registro Cronometrico SIVAC (2026). Parrafo 665: Fuente: Ficha de Cotejo Documental de Lotes y Kardex (2026). Parrafo 672: Fuente: Cuestionario de Satisfaccion del Usuario SIVAC (2026).",
+      "recomendacion": "Homologar la nota de todas las tablas y figuras a una formula unica que declare el origen y su caracter provisional."
+    },
+    {
+      "id": "H-23",
+      "severidad": "media",
+      "ubicacion": "Notas de las Figuras 46, 47 y 48 (parrafos 661, 668 y 675)",
+      "hallazgo": "Las notas de figura omiten la salvedad de datos de prueba y ademas introducen afirmaciones interpretativas y de significancia dentro de la nota, que es el lugar reservado a la fuente y a las convenciones graficas.",
+      "evidencia": "Parrafo 661: reduccion drastica de tiempos operativos; parrafo 668: Incremento sustancial; parrafo 675: Elevacion significativa. Ninguna menciona el caracter provisional de los datos.",
+      "recomendacion": "Reducir la nota a la fuente, la convencion de n y la salvedad provisional; la interpretacion corresponde al texto, no a la nota."
+    },
+    {
+      "id": "H-03",
+      "severidad": "alta",
+      "ubicacion": "Tablas 40-42, columna r de Rosenthal",
+      "hallazgo": "El valor impreso r = 0.881 en las siete filas no coincide con el 0.622841 guardado en el JSON, porque el script divide por la raiz de 2N en lugar de por la raiz de N.",
+      "evidencia": "auditoria: z_aprox_normal_sin_correccion = -3.295765; |Z|/sqrt(14) = 0.88083; |Z|/sqrt(28) = 0.622841 = r_guardada_en_json; json_incompatible_con_docx = true.",
+      "recomendacion": "Corregir el denominador en analisis_estadistico_sivac.py. El DOCX ya trae el valor correcto; el script es el que rompe la reproducibilidad."
+    },
+    {
+      "id": "H-04",
+      "severidad": "alta",
+      "ubicacion": "Tablas 40-42, columna p de Wilcoxon",
+      "hallazgo": "Se imprime p = .001 uniforme en las siete filas, pero el JSON guarda seis valores p distintos porque el metodo (exacto o asintotico) se elige automaticamente segun los empates.",
+      "evidencia": "valores_distintos_en_json = [0.00012207, 0.000856826, 0.000862012, 0.000912346, 0.000967428, 0.000975879]; p_wilcoxon_json_rsd_no_redondea_a_001 = true.",
+      "recomendacion": "Declarar el metodo por indicador y reportar el p que corresponde a ese metodo, sin uniformar."
+    },
+    {
+      "id": "H-05",
+      "severidad": "alta",
+      "ubicacion": "Tablas 40-42, columna Z",
+      "hallazgo": "Z = -3.30 es identico en los siete indicadores porque se calcula con una varianza sin correccion de empates y no con el metodo que produjo el p.",
+      "evidencia": "z_aprox_normal_sin_correccion = -3.295765 en las siete entradas; el p exacto del RSD (0.00012207) no es compatible con ese Z.",
+      "recomendacion": "Derivar Z y p del mismo metodo declarado, o informar solo r_rb cuando la prueba sea exacta."
+    },
+    {
+      "id": "H-06",
+      "severidad": "alta",
+      "ubicacion": "Tabla 39 y parrafo 679",
+      "hallazgo": "La prueba inferencial se elige despues de ver el resultado de normalidad, y se interpreta p > .05 como confirmacion de normalidad con n = 14.",
+      "evidencia": "score_up: W = 0.876351, p = 0.051576, curtosis de exceso -0.9046; el pipeline asigna t a los siete indicadores.",
+      "recomendacion": "Preseleccionar un unico contraste primario por indicador. Shapiro, asimetria, curtosis y atipicos pasan a diagnostico de apoyo, sin decidir la prueba."
+    },
+    {
+      "id": "H-07",
+      "severidad": "alta",
+      "ubicacion": "Tabla 43",
+      "hallazgo": "Se asigna valor p a la Hipotesis General, que en la matriz es una regla conjuntiva y no tiene estadistico ni hipotesis nula propia.",
+      "evidencia": "La tabla muestra p para la fila de la Hipotesis General ademas de los siete contrastes por indicador.",
+      "recomendacion": "Sustituir el p de la HG por la regla de decision y su resultado derivado."
+    },
+    {
+      "id": "H-08",
+      "severidad": "media",
+      "ubicacion": "Ajuste de Holm en Tablas 40-43",
+      "hallazgo": "La familia de siete pruebas incluye score_tam_total, que es la suma determinista de AP y UP, de modo que una de las pruebas es redundante y dependiente de otras dos.",
+      "evidencia": "score_tam_total_igual_ap_mas_up = true en pretest y postest.",
+      "recomendacion": "Familia de seis indicadores oficiales. El puntaje global TAM queda como descriptivo secundario, sin contraste."
+    },
+    {
+      "id": "H-09",
+      "severidad": "media",
+      "ubicacion": "Ajuste de Holm",
+      "hallazgo": "El ajuste omite el maximo acumulado que garantiza monotonia de los p ajustados.",
+      "evidencia": "holm_reproduce_el_json = true y holm_bruto_ya_es_monotono_en_estos_datos = true: no altera estas decisiones, pero si podria alterarlas con otros datos.",
+      "recomendacion": "Aplicar Holm con maximo acumulado en la version definitiva."
+    },
+    {
+      "id": "H-10",
+      "severidad": "media",
+      "ubicacion": "Tabla 37 y texto de D2",
+      "hallazgo": "En variables acotadas al 100 por ciento se informa el cambio relativo junto al absoluto bajo el mismo signo de porcentaje, de modo que +51.01 % y +32.43 % quedan tipograficamente equivalentes cuando el primero es variacion relativa y el segundo puntos porcentuales.",
+      "evidencia": "Tabla 37, columna Variacion: fila postest RSD +51.01 % y fila postest CPE +41.10 %, mientras la fila Diferencia Pareada muestra +32.43 % y +27.79 % en la misma columna.",
+      "recomendacion": "Diferencia en puntos porcentuales como cifra principal; el cambio relativo, si se conserva, en columna aparte y rotulado como tal."
+    },
+    {
+      "id": "H-11",
+      "severidad": "media",
+      "ubicacion": "Texto de D3",
+      "hallazgo": "Se describe la migracion de usuarios entre niveles del baremo como si fuera un hecho observado por sujeto, cuando proviene de medias agregadas.",
+      "evidencia": "La afirmacion sobre promocion hacia el nivel Alto se apoya en la media del grupo, no en la clasificacion de cada caso.",
+      "recomendacion": "Reformular como desplazamiento de la media o, si se desea lo individual, calcular las categorias por sujeto y declararlo."
+    },
+    {
+      "id": "H-12",
+      "severidad": "media",
+      "ubicacion": "Trazabilidad metodologica",
+      "hallazgo": "Los archivos no permiten reconstruir el protocolo de medicion: T_reg figura como valor unico por participante y RSD y CPE como porcentajes agregados sin denominadores.",
+      "evidencia": "columnas_de_observaciones_presentes = false; columnas_de_conteos_presentes = false; rsd_requiere_conteo_de_registros = false.",
+      "recomendacion": "Ampliar la plantilla de captura con las tres observaciones cronometradas y los conteos de numerador y denominador que exige el protocolo."
+    },
+    {
+      "id": "H-13",
+      "severidad": "media",
+      "ubicacion": "Parrafo 654 y descripcion de la poblacion",
+      "hallazgo": "El numero de centros de acopio difiere entre el informe, el README y el registro normativo.",
+      "evidencia": "readme_recolectados_declara = 8; docx_declara = 13; registro_normativo_centros = 19; centros_distintos_en_csv = 13 con ALMACEN (CHANKA) concentrando 2 trabajadores.",
+      "recomendacion": "Fijar una unica cifra oficial y justificar por que 14 trabajadores se distribuyen en ese numero de centros."
+    },
+    {
+      "id": "H-14",
+      "severidad": "media",
+      "ubicacion": "Figuras 46 y 47 del DOCX",
+      "hallazgo": "Las imagenes incrustadas no coinciden con los PNG vigentes, por lo que el documento publicado no se reproduce desde el script actual.",
+      "evidencia": "Diferencia de unos 193 000 pixeles en image47 e image48; la Figura 48 si coincide byte a byte.",
+      "recomendacion": "Regenerar y reinsertar las figuras desde la salida vigente cuando se cierre la version definitiva."
+    },
+    {
+      "id": "H-15",
+      "severidad": "media",
+      "ubicacion": "Figura 48",
+      "hallazgo": "El eje vertical arranca en 0 cuando la escala observada va de 8 a 40, lo que exagera visualmente las diferencias y sugiere un cero inexistente.",
+      "evidencia": "set_ylim(0, 48) en el generador frente a un rango posible de 8 a 40.",
+      "recomendacion": "Anclar el eje al rango de la escala, con marcas en 8, 16, 24, 32 y 40."
+    },
+    {
+      "id": "H-16",
+      "severidad": "media",
+      "ubicacion": "Figura 47 y parrafo de D2",
+      "hallazgo": "Las barras de error usan +-1.96 desviaciones estandar de la media con n fijo en 14, es decir, un intervalo entre sujetos sobre datos pareados y con cuantil normal en vez de t con 13 grados de libertad.",
+      "evidencia": "std(ddof=1)/sqrt(14)*1.96 con cuantil t(13) = 2.160.",
+      "recomendacion": "Representar el cambio pareado con su intervalo, no la dispersion entre sujetos."
+    },
+    {
+      "id": "H-17",
+      "severidad": "media",
+      "ubicacion": "Emparejamiento pretest-postest",
+      "hallazgo": "El pipeline resta columnas por posicion sin unir por identificador ni verificar el conjunto de sujetos.",
+      "evidencia": "emparejamiento_por_posicion_no_por_id = true; hoy los identificadores coinciden y estan en el mismo orden, pero eso es una condicion del archivo, no una garantia del codigo.",
+      "recomendacion": "Emparejar por sujeto_id y detener la ejecucion si el conjunto o el orden difieren."
+    },
+    {
+      "id": "H-18",
+      "severidad": "media",
+      "ubicacion": "Conclusiones 2 a 4",
+      "hallazgo": "Las conclusiones afirman que se determino, se demostro y se comprobo, y solo la primera conserva la salvedad de datos provisionales.",
+      "evidencia": "Parrafos 716 a 719; la salvedad aparece unicamente en 716.",
+      "recomendacion": "Extender la salvedad a todas las conclusiones o reformularlas como verificacion de la tuberia."
+    },
+    {
+      "id": "H-19",
+      "severidad": "media",
+      "ubicacion": "Lenguaje causal en todo el capitulo",
+      "hallazgo": "Se atribuye la mejora al sistema con un diseno de un solo grupo, sin grupo control ni contrabalanceo.",
+      "evidencia": "Diseno O1 -> X -> O2 sobre poblacion censal; no se controlan historia, maduracion ni reactividad de la medicion.",
+      "recomendacion": "Formular asociacion compatible con el sistema, no efecto causal aislado."
+    },
+    {
+      "id": "H-20",
+      "severidad": "baja",
+      "ubicacion": "Salida del pipeline",
+      "hallazgo": "Se declaran grados de libertad para Shapiro-Wilk y se rotula d de Cohen sin precisar que es d_z.",
+      "evidencia": "normalidad[var][gl] = n; d_cohen = media/desv de la diferencia.",
+      "recomendacion": "Suprimir el gl inexistente y rotular d_z."
+    },
+    {
+      "id": "H-21",
+      "severidad": "baja",
+      "ubicacion": "Carpeta Obsidian 07_ESTADISTICA_Y_DATOS",
+      "hallazgo": "Existen cuatro figuras de demostracion genericas ajenas a los indicadores SIVAC, con credito a otro agente y fecha previa al proyecto.",
+      "evidencia": "Figura_1_Dispersion_Regresion.png, Figura_2_Boxplot_Outliers.png, Figura_3_Barras_CI95.png, Figura_4_Histograma_Normalidad.png, generadas por scripts_analisis/apa7_figures.py.",
+      "recomendacion": "No insertarlas en el Capitulo V bajo ninguna circunstancia."
+    },
+    {
+      "id": "H-22",
+      "severidad": "baja",
+      "ubicacion": "Tabla 35",
+      "hallazgo": "El alfa se calcula con n = 14 mientras el texto invoca un piloto de 15, y el intervalo de Feldt es amplio.",
+      "evidencia": "ic95 postest [0.825919, 0.968297]; n_menor_que_piloto_15 = true.",
+      "recomendacion": "Declarar el n real del calculo y no atribuir el coeficiente a la muestra piloto."
+    }
   ],
-
   "correcciones_metodologicas": [
-    {"prioridad": 1, "accion": "Retirar del cuerpo toda afirmacion de resultados de campo y rotular el bloque como analisis provisional sobre datos de prueba.", "afecta": "Tablas 36-43, Figuras 46-48, texto y conclusiones"},
-    {"prioridad": 2, "accion": "PROPUESTA sujeta a aprobacion: fijar un unico contraste pareado por indicador y dejar de elegir la prueba segun la normalidad.", "afecta": "Tabla 39 y parrafo 679"},
-    {"prioridad": 3, "accion": "Corregir el denominador de r a raiz de N y regenerar el JSON para que coincida con el DOCX.", "afecta": "analisis_estadistico_sivac.py, columna r"},
-    {"prioridad": 4, "accion": "Declarar y respetar un unico metodo por indicador para p y Z, informando empates y ceros.", "afecta": "Tablas 40-42"},
-    {"prioridad": 5, "accion": "Reducir la familia de Holm a los seis indicadores oficiales y retirar el contraste del puntaje total TAM.", "afecta": "Tablas 40-43"},
-    {"prioridad": 6, "accion": "Anadir el maximo acumulado al ajuste de Holm.", "afecta": "analisis_estadistico_sivac.py"},
-    {"prioridad": 7, "accion": "Sustituir el p de la Hipotesis General por su regla conjuntiva y el resultado derivado.", "afecta": "Tabla 43"},
-    {"prioridad": 8, "accion": "Emparejar por sujeto_id con verificacion de conjunto y de orden.", "afecta": "ambos scripts"},
-    {"prioridad": 9, "accion": "Expresar las diferencias de porcentajes en puntos porcentuales y separar el cambio relativo.", "afecta": "Tablas 37 y 41, texto de D2"},
-    {"prioridad": 10, "accion": "Rehacer la incertidumbre grafica del cambio pareado y anclar el eje al rango de la escala.", "afecta": "Figuras 46-48"},
-    {"prioridad": 11, "accion": "Homologar la nota de origen de tablas y figuras con la salvedad de prueba.", "afecta": "Notas 658, 661, 665, 668, 672 y 675"},
-    {"prioridad": 12, "accion": "Reconciliar el numero de centros de acopio en una sola cifra oficial.", "afecta": "Parrafo 654 y descripcion poblacional"},
-    {"prioridad": 13, "accion": "Moderar el lenguaje causal y extender la salvedad a las cuatro conclusiones.", "afecta": "Conclusiones"}
+    {
+      "prioridad": 1,
+      "accion": "Retirar del cuerpo toda afirmacion de resultados de campo y rotular el bloque como analisis provisional sobre datos de prueba.",
+      "afecta": "Tablas 36-43, Figuras 46-48, texto y conclusiones"
+    },
+    {
+      "prioridad": 2,
+      "accion": "PROPUESTA sujeta a aprobacion: fijar un unico contraste pareado por indicador y dejar de elegir la prueba segun la normalidad.",
+      "afecta": "Tabla 39 y parrafo 679"
+    },
+    {
+      "prioridad": 3,
+      "accion": "Corregir el denominador de r a raiz de N y regenerar el JSON para que coincida con el DOCX.",
+      "afecta": "analisis_estadistico_sivac.py, columna r"
+    },
+    {
+      "prioridad": 4,
+      "accion": "Declarar y respetar un unico metodo por indicador para p y Z, informando empates y ceros.",
+      "afecta": "Tablas 40-42"
+    },
+    {
+      "prioridad": 5,
+      "accion": "Reducir la familia de Holm a los seis indicadores oficiales y retirar el contraste del puntaje total TAM.",
+      "afecta": "Tablas 40-43"
+    },
+    {
+      "prioridad": 6,
+      "accion": "Anadir el maximo acumulado al ajuste de Holm.",
+      "afecta": "analisis_estadistico_sivac.py"
+    },
+    {
+      "prioridad": 7,
+      "accion": "Sustituir el p de la Hipotesis General por su regla conjuntiva y el resultado derivado.",
+      "afecta": "Tabla 43"
+    },
+    {
+      "prioridad": 8,
+      "accion": "Emparejar por sujeto_id con verificacion de conjunto y de orden.",
+      "afecta": "ambos scripts"
+    },
+    {
+      "prioridad": 9,
+      "accion": "Expresar las diferencias de porcentajes en puntos porcentuales y separar el cambio relativo.",
+      "afecta": "Tablas 37 y 41, texto de D2"
+    },
+    {
+      "prioridad": 10,
+      "accion": "Rehacer la incertidumbre grafica del cambio pareado y anclar el eje al rango de la escala.",
+      "afecta": "Figuras 46-48"
+    },
+    {
+      "prioridad": 11,
+      "accion": "Homologar la nota de origen de tablas y figuras con la salvedad de prueba.",
+      "afecta": "Notas 658, 661, 665, 668, 672 y 675"
+    },
+    {
+      "prioridad": 12,
+      "accion": "Reconciliar el numero de centros de acopio en una sola cifra oficial.",
+      "afecta": "Parrafo 654 y descripcion poblacional"
+    },
+    {
+      "prioridad": 13,
+      "accion": "Moderar el lenguaje causal y extender la salvedad a las cuatro conclusiones.",
+      "afecta": "Conclusiones"
+    }
   ],
-
   "propuesta_presentacion_minima": {
     "caracter_de_esta_propuesta": "Recomendacion tecnica no aprobada. No se declara preespecificada ni constituye decision metodologica vigente.",
     "principio": "Tres dimensiones, seis indicadores y un contraste pareado por indicador como propuesta. El diagnostico completo va al anexo tecnico. Nada de t y Wilcoxon como dos confirmaciones del mismo contraste.",
     "tablas_en_el_cuerpo": [
-      {"id": "T1", "contenido": "Descriptiva por dimension: pretest, postest y cambio, con M, DE, Mdn, RIC y n. Una tabla por dimension.", "extension": "3 tablas"},
-      {"id": "T2", "contenido": "Contraste primario unico para los seis indicadores: W, metodo declarado, p, p de Holm, r_rb, cambio mediano con intervalo y decision.", "extension": "1 tabla"},
-      {"id": "T3", "contenido": "Decision por dimension y por hipotesis general mediante regla conjuntiva, sin valor p para la HG.", "extension": "1 tabla"},
-      {"id": "T4", "contenido": "Puntaje global TAM como descriptivo secundario, sin contraste.", "extension": "1 tabla o una fila dentro de T1 de D3"}
+      {
+        "id": "T1",
+        "contenido": "Descriptiva por dimension: pretest, postest y cambio, con M, DE, Mdn, RIC y n. Una tabla por dimension.",
+        "extension": "3 tablas"
+      },
+      {
+        "id": "T2",
+        "contenido": "Contraste primario unico para los seis indicadores: W, metodo declarado, p, p de Holm, r_rb, cambio mediano con intervalo y decision.",
+        "extension": "1 tabla"
+      },
+      {
+        "id": "T3",
+        "contenido": "Decision por dimension y por hipotesis general mediante regla conjuntiva, sin valor p para la HG.",
+        "extension": "1 tabla"
+      },
+      {
+        "id": "T4",
+        "contenido": "Puntaje global TAM como descriptivo secundario, sin contraste.",
+        "extension": "1 tabla o una fila dentro de T1 de D3"
+      }
     ],
     "tablas_en_anexo": [
-      {"id": "A1", "contenido": "Shapiro-Wilk sobre diferencias, asimetria, curtosis, atipicos por regla de Tukey."},
-      {"id": "A2", "contenido": "Sensibilidad con t pareada: t, gl, p, d_z e intervalo de la media, como analisis de robustez, no como segundo veredicto."},
-      {"id": "A3", "contenido": "Registro de empates, ceros y metodo efectivamente usado por indicador."},
-      {"id": "A4", "contenido": "Trazabilidad del protocolo de medicion: numero de observaciones y denominadores."}
+      {
+        "id": "A1",
+        "contenido": "Shapiro-Wilk sobre diferencias, asimetria, curtosis, atipicos por regla de Tukey."
+      },
+      {
+        "id": "A2",
+        "contenido": "Sensibilidad con t pareada: t, gl, p, d_z e intervalo de la media, como analisis de robustez, no como segundo veredicto."
+      },
+      {
+        "id": "A3",
+        "contenido": "Registro de empates, ceros y metodo efectivamente usado por indicador."
+      },
+      {
+        "id": "A4",
+        "contenido": "Trazabilidad del protocolo de medicion: numero de observaciones y denominadores."
+      }
     ],
     "figuras_en_el_cuerpo": [
-      {"id": "F1", "contenido": "D1: pares conectados con caja para T_reg y T_vale.", "ejes": "minutos, escala segun datos"},
-      {"id": "F2", "contenido": "D2: pares conectados para RSD y CPE, con la diferencia en puntos porcentuales rotulada.", "ejes": "0 a 100"},
-      {"id": "F3", "contenido": "D3: pares conectados para AP y UP.", "ejes": "4 a 20, sin extrapolar"}
+      {
+        "id": "F1",
+        "contenido": "D1: pares conectados con caja para T_reg y T_vale.",
+        "ejes": "minutos, escala segun datos"
+      },
+      {
+        "id": "F2",
+        "contenido": "D2: pares conectados para RSD y CPE, con la diferencia en puntos porcentuales rotulada.",
+        "ejes": "0 a 100"
+      },
+      {
+        "id": "F3",
+        "contenido": "D3: pares conectados para AP y UP.",
+        "ejes": "4 a 20, sin extrapolar"
+      }
     ],
     "extension_narrativa": "Un parrafo por dimension, de 90 a 120 palabras: direccion del cambio, contraste primario, tamano del efecto, decision y salvedad. Sin recitar cada estadistico.",
     "prohibiciones_de_presentacion": [
@@ -138,7 +458,6 @@
       "No presentar barras con eje truncado ni intervalos entre sujetos para datos pareados."
     ]
   },
-
   "instrucciones_redactor": {
     "estado_actual_del_capitulo": "provisional_sobre_datos_de_prueba",
     "regla_central": "El capitulo no puede afirmar resultados de campo. Toda cifra debe presentarse como verificacion de la tuberia analitica sobre datos de prueba, con esa salvedad en la misma tabla, figura y parrafo donde aparece.",
@@ -165,22 +484,30 @@
     "que_hacer_con_el_texto_actual": "Conservar la narracion como analisis de verificacion en el anexo tecnico o marcarla como pendiente hasta que exista MANIFEST de campo. No eliminar las tablas: reetiquetarlas y reubicarlas.",
     "coordinacion": "Las tablas y figuras definitivas se emiten con scripts/estadistica/plantillas_resultados_v22.py una vez certificado el MANIFEST. Mientras tanto no se generan cifras nuevas."
   },
-
   "plantillas_reproducibles": {
     "script": "C:/MisInvestigaciones/tesis/sivac/scripts/estadistica/plantillas_resultados_v22.py",
     "estado": "Propuesta bloqueada. No ejecuta resultados, no emite cifras y no sustituye a analisis_estadistico_sivac.py, que se conserva intacto como registro historico.",
-    "modo_especificacion": {"comando": "plantillas_resultados_v22.py --especificacion", "exit": 0, "verificado": true, "produce": "Contrato de tablas y figuras, sin medidas"},
-    "modo_datos": {"comando": "plantillas_resultados_v22.py --raw datos/raw", "exit_sin_manifest": 3, "verificado": true, "produce": "Tablas y figuras a 300 DPI solo con origen de campo acreditado"},
+    "modo_especificacion": {
+      "comando": "plantillas_resultados_v22.py --especificacion",
+      "exit": 0,
+      "verificado": true,
+      "produce": "Contrato de tablas y figuras, sin medidas"
+    },
+    "modo_datos": {
+      "comando": "plantillas_resultados_v22.py --raw datos/raw",
+      "exit_sin_manifest": 3,
+      "verificado": true,
+      "produce": "Tablas y figuras a 300 DPI solo con origen de campo acreditado"
+    },
     "contraste_primario": "PROPUESTA, no decision aprobada: Wilcoxon de rangos con signo, bilateral, alpha .05, comun a los seis indicadores",
     "metodo": "Exacto si n <= 25 y no hay empates; asintotico con correccion de empates en otro caso; declarado por indicador",
     "efecto_principal": "r_rb de rangos-biserial; r = |Z|/raiz de N solo como referencia",
-    "incertidumbre": "Bootstrap percentil del cambio mediano, 10 000 replicas, semilla 20261026",
+    "incertidumbre": "Bootstrap percentil del cambio mediano, 10 000 replicas, semilla x",
     "multiplicidad": "Holm sobre los seis indicadores con maximo acumulado",
     "secundario": "Puntaje global TAM descriptivo, sin contraste"
   },
-
   "efecto_del_traslado_anexo_xp": {
-    "fuente_del_mapa": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+    "fuente_del_mapa": "salidas/reportes_maquetacion/reestructuracion_v22_x/comparacion_modelos_y_mapa_xp.json",
     "bloque_que_se_traslada": "P328-P548, es decir 3.3 hasta antes del Capitulo IV: 26 tablas (3 a 28) y 35 figuras (11 a 45)",
     "bloque_auditado": "Tablas 35 a 43 y Figuras 46 a 48, en el Capitulo V",
     "solapamiento": "ninguno",
@@ -220,17 +547,15 @@
       "La Tabla 22 del bloque trasladado aparece fragmentada; no afecta resultados, pero conviene resolver la fractura al reubicarla."
     ]
   },
-
   "estado_compuertas": {
     "QG-6": "Parcial: scripts reproducibles y auditoria existentes; pendiente corregir r, Holm y metodos antes de considerarla cerrada.",
     "QG-7": "Abierta y bloqueada: sin MANIFEST de campo no hay contraste inferencial acreditable.",
     "QG-9": "Abierta: las figuras 46 y 47 del DOCX no se reproducen desde la salida vigente."
   },
-
   "reserva_anexo_xp": {
     "alcance": "Fuera de mi competencia. La integracion nativa del DOCX de desarrollo XP en el anexo corresponde al unico escritor del documento.",
     "efecto_sobre_estadistica": "Ninguno. La reubicacion del apartado de desarrollo no altera cifras, tablas ni figuras de resultados, y el bloque movido no contiene material estadistico.",
-    "mapa_recibido": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+    "mapa_recibido": "salidas/reportes_maquetacion/reestructuracion_v22_x/comparacion_modelos_y_mapa_xp.json",
     "hechos_del_mapa_pertinentes": [
       "El bloque P328-P548 se traslada con 26 tablas y 35 figuras que no incluyen ninguno de los nueve objetos que audite.",
       "Las cuatro fases de XP se mantienen como tales; el despliegue es actividad posterior y no una quinta fase.",

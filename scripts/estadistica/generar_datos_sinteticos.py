@@ -42,7 +42,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
 SALIDA = RAIZ / "datos" / "prueba_sintetica"
-SEMILLA = 20261026
+SEMILLA = x
 RND = random.Random(SEMILLA)
 
 # --------------------------------------------------------------------------

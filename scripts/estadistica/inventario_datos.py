@@ -34,7 +34,7 @@ EXCLUIDOS = {"README.md", "INVENTARIO.json"}
 CAPAS = {
     "plantillas": "Formatos vacíos para la recolección en campo",
     "processed": "Matrices tabuladas limpias (destino tras el control de calidad)",
-    "prueba_sintetica": "Conjunto de prueba reproducible (semilla 20261026)",
+    "prueba_sintetica": "Conjunto de prueba reproducible (semilla x)",
     "raw": "Datos de campo brutos e inmutables",
     "recolectados": "Conjunto consolidado que consume el pipeline estadístico",
     "schemas": "Catálogos y diccionario de variables",

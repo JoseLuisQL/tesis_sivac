@@ -277,7 +277,7 @@ def parte_0(desc: dict) -> list[str]:
         "trece centros de acopio y establecimientos de salud de la red "
         "asistencial. El conjunto publicado es el de prueba rotulado en el "
         "encabezado: se reproduce desde las fichas crudas con la semilla "
-        "20261026 y se sustituye por el registro de campo definitivo sin "
+        "x y se sustituye por el registro de campo definitivo sin "
         "alterar la estructura ni las reglas de cálculo.",
         "",
         "### Resumen de parámetros operacionales del estudio",
@@ -1166,7 +1166,7 @@ CABECERA = """# CONJUNTO INTEGRAL DE DATOS — SISTEMA SIVAC
 
 > **Estado del conjunto:** `DATOS DE PRUEBA — REEMPLAZAR (DEC-007)`.
 > Las cifras de este documento se derivan del conjunto sintético reproducible de
-> `datos/prueba_sintetica/` (semilla 20261026) y **no acreditan medición de
+> `datos/prueba_sintetica/` (semilla x) y **no acreditan medición de
 > campo**. La estructura, los identificadores y las reglas de cálculo son los
 > definitivos; los valores deben reemplazarse por el registro de campo antes de
 > la sustentación.

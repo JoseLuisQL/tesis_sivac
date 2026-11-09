@@ -5,7 +5,7 @@ squad: B (Redacción)
 agente: redactor-academico
 estado: borrador
 fecha: 2026-11-02
-documento_fuente: salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx
+documento_fuente: salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.docx
 paquete_instrumentos: salidas/instrumentos/INSTRUMENTOS_SIVAC_SIMPLIFICADO_v04/
 ---
 

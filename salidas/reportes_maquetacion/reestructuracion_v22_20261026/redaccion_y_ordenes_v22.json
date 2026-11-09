@@ -26,7 +26,7 @@
     ]
   },
   "mapa_recibido": {
-    "ruta": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+    "ruta": "salidas/reportes_maquetacion/reestructuracion_v22_x/comparacion_modelos_y_mapa_xp.json",
     "agente": "analista-documental",
     "fecha": "2026-10-26",
     "estado": "recibido_y_utilizado",
@@ -63,7 +63,10 @@
   "mapa_de_dimensiones": [
     {
       "dimension": "D1. Oportunidad de procesamiento",
-      "indicadores": ["T_reg", "T_vale"],
+      "indicadores": [
+        "T_reg",
+        "T_vale"
+      ],
       "objetivo_especifico": "OE1",
       "seccion_descriptiva": "5.2.1",
       "tabla_descriptiva": "Tabla 36",
@@ -73,7 +76,10 @@
     },
     {
       "dimension": "D2. Consistencia documental",
-      "indicadores": ["RSD", "CPE"],
+      "indicadores": [
+        "RSD",
+        "CPE"
+      ],
       "objetivo_especifico": "OE2",
       "seccion_descriptiva": "5.2.2",
       "tabla_descriptiva": "Tabla 37",
@@ -83,7 +89,10 @@
     },
     {
       "dimension": "D3. Satisfaccion del usuario",
-      "indicadores": ["AP", "UP"],
+      "indicadores": [
+        "AP",
+        "UP"
+      ],
       "objetivo_especifico": "OE3",
       "seccion_descriptiva": "5.2.3",
       "tabla_descriptiva": "Tabla 38",
@@ -93,7 +102,14 @@
     },
     {
       "dimension": "Gestion global de movimientos de vacunas",
-      "indicadores": ["T_reg", "T_vale", "RSD", "CPE", "AP", "UP"],
+      "indicadores": [
+        "T_reg",
+        "T_vale",
+        "RSD",
+        "CPE",
+        "AP",
+        "UP"
+      ],
       "objetivo_especifico": "OG",
       "seccion_descriptiva": "5.2.1 a 5.2.3",
       "tabla_descriptiva": "Tablas 36 a 38",
@@ -197,7 +213,13 @@
     "delimitacion_exacta": {
       "inicio": "rótulo 3.3. Metodología de Desarrollo de Software Extreme Programming (XP), párrafo P328, página 54 del PDF, folio 39",
       "fin": "último párrafo de 3.3.5.1, párrafo P548, antes del rótulo CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN, página 99 del PDF, folio 84",
-      "subsecciones_incluidas": ["3.3.1 Planificación", "3.3.2 Diseño", "3.3.3 Codificación", "3.3.4 Pruebas", "3.3.5 Despliegue"],
+      "subsecciones_incluidas": [
+        "3.3.1 Planificación",
+        "3.3.2 Diseño",
+        "3.3.3 Codificación",
+        "3.3.4 Pruebas",
+        "3.3.5 Despliegue"
+      ],
       "elementos_incluidos": "26 tablas (Tabla 3 a Tabla 28) y 35 figuras (Figura 11 a Figura 45), más los rótulos y las notas internos del bloque. El bloque no contiene ecuaciones OMML."
     },
     "complementos_desde_la_fuente": {
@@ -606,31 +628,46 @@
       "objetivo": "OE1",
       "dimension": "D1. Oportunidad de procesamiento",
       "cuerpo_conciso": "Conservar en 5.2.1 solo las medias de T_reg y T_vale y sus variaciones. La mediana, el rango intercuartílico y los extremos quedan en la Tabla 36. La Figura 46 ilustra sin repetir la interpretación. El contraste de 5.4.1 reporta t y Wilcoxon con sus estadísticos y remite a la Tabla 40.",
-      "ordenes": ["RES-03", "RES-04", "RES-10"]
+      "ordenes": [
+        "RES-03",
+        "RES-04",
+        "RES-10"
+      ]
     },
     {
       "objetivo": "OE2",
       "dimension": "D2. Consistencia documental",
       "cuerpo_conciso": "Conservar en 5.2.2 solo las medias de RSD y CPE y sus variaciones. Los descriptivos completos quedan en la Tabla 37. La Figura 47 ilustra sin valorar el incremento. El contraste de 5.4.2 reporta t y Wilcoxon y remite a la Tabla 41.",
-      "ordenes": ["RES-05", "RES-06", "RES-11"]
+      "ordenes": [
+        "RES-05",
+        "RES-06",
+        "RES-11"
+      ]
     },
     {
       "objetivo": "OE3",
       "dimension": "D3. Satisfacción del usuario",
       "cuerpo_conciso": "Conservar en 5.2.3 solo las medias de AP, UP y puntaje global TAM con sus variaciones. Se elimina la afirmación de cambio de categoría diagnóstica. Los descriptivos completos quedan en la Tabla 38 y la Figura 48 ilustra. El contraste de 5.4.3 reporta t y Wilcoxon y remite a la Tabla 42.",
-      "ordenes": ["RES-07", "RES-08", "RES-12"]
+      "ordenes": [
+        "RES-07",
+        "RES-08",
+        "RES-12"
+      ]
     },
     {
       "objetivo": "OG",
       "dimension": "Gestión global de movimientos de vacunas",
       "cuerpo_conciso": "La decisión conjunta de 5.4.4 se limita al rechazo simultáneo de las tres hipótesis nulas específicas. No se cuantifica un impacto operativo ni se afirma una mejora efectiva. La Tabla 43 resume la decisión con leyendas neutrales y nota de procedencia.",
-      "ordenes": ["RES-13", "RES-14"]
+      "ordenes": [
+        "RES-13",
+        "RES-14"
+      ]
     }
   ],
   "insumos_faltantes": [
     {
       "insumo": "Auditoría de procedencia y cálculos del analista estadístico",
-      "ruta_esperada": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/",
+      "ruta_esperada": "salidas/reportes_maquetacion/reestructuracion_v22_x/",
       "estado": "pendiente",
       "impacto": "Impide validar los estadísticos, los valores p ajustados y la decisión de reportar t y Wilcoxon en paralelo. Las órdenes de resultados quedan condicionadas a esa auditoría."
     },
@@ -650,7 +687,7 @@
   "insumos_resueltos": [
     {
       "insumo": "Mapa documental de los modelos y del bloque XP",
-      "ruta": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
+      "ruta": "salidas/reportes_maquetacion/reestructuracion_v22_x/comparacion_modelos_y_mapa_xp.json",
       "consecuencia": "Fija el Anexo 6, delimita el bloque P328-P548 y confirma que no existen referencias cruzadas externas."
     },
     {

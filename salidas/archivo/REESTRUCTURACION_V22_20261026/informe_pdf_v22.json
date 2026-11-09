@@ -1,12 +1,15 @@
 {
-  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22.docx",
-  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22.pdf",
+  "docx": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_x\\CANDIDATO_EDITORIAL_V22.docx",
+  "pdf": "C:\\MisInvestigaciones\\tesis\\sivac\\salidas\\archivo\\REESTRUCTURACION_V22_x\\CANDIDATO_EDITORIAL_V22.pdf",
   "metodo_exportacion": "ExportAsFixedFormat2",
   "optimize_for_image_quality": true,
   "paginas": 159,
   "medicion_pdf": {
     "paginas": 159,
-    "rect_primera": [595.32, 841.92],
+    "rect_primera": [
+      595.32,
+      841.92
+    ],
     "imagenes": 49,
     "dpi_min": 136.5,
     "dpi_mediana": 199.8,

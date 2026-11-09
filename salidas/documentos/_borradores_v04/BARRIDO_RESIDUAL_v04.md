@@ -5,7 +5,7 @@ squad: Squad F
 agente: verificador-integridad
 estado: completado
 fecha: 2026-11-02
-documento_auditado: salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx
+documento_auditado: salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.docx
 sha256: 22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f
 modo: solo_lectura
 ---
@@ -19,7 +19,7 @@ modo: solo_lectura
 
 ## 0. Objeto, método y límites
 
-**Documento auditado:** `C:\MisInvestigaciones\tesis\sivac\salidas\archivo\REESTRUCTURACION_V22_20261026\CANDIDATO_EDITORIAL_V22.docx`
+**Documento auditado:** `C:\MisInvestigaciones\tesis\sivac\salidas\archivo\REESTRUCTURACION_V22_x\CANDIDATO_EDITORIAL_V22.docx`
 **Tamaño:** 16 130 599 bytes · **SHA-256:** `22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f`
 **Estructura:** 858 párrafos y 59 tablas de primer nivel; cero tablas anidadas.
 

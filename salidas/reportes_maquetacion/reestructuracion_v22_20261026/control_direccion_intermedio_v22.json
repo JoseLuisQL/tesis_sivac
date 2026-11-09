@@ -4,10 +4,10 @@
   "estado": "parcial_reestructuracion_en_ejecucion",
   "alcance": "Registro de coordinación y controles focalizados; no es dictamen final ni aprobación humana.",
   "candidato_estable_listas_tablas": {
-    "docx": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx",
+    "docx": "salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.docx",
     "sha256_docx_reproducido": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
     "bytes_docx": 16130599,
-    "pdf": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.pdf",
+    "pdf": "salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.pdf",
     "sha256_pdf_reproducido": "d62ee56bd39fb2ea93ac487d518ae27bf531abb8efa0b8c98d245081ea26dbc0",
     "bytes_pdf": 6486181,
     "paginas_segun_reporte_maquetador": 159,
@@ -15,7 +15,13 @@
   },
   "lectura_visual_directa_direccion": {
     "metodo": "Read de renders PNG de Word exportado, no inferencia desde texto/XML.",
-    "paginas_fisicas": [110, 117, 120, 124, 125],
+    "paginas_fisicas": [
+      110,
+      117,
+      120,
+      124,
+      125
+    ],
     "confirmaciones": [
       "Página 110: Tabla 33 legible, sin desborde visible; no se confirma necesidad del trasvase de ancho propuesto.",
       "Página 117: seis coeficientes de Tabla 35 completos, sin división después del punto.",
@@ -49,11 +55,17 @@
     }
   ],
   "zotero": {
-    "consultas": ["Beck 1999", "Kokol"],
+    "consultas": [
+      "Beck 1999",
+      "Kokol"
+    ],
     "resultado": "Sin coincidencia exacta; el servicio devolvió alternativas semánticas. Estas alternativas no verifican las fuentes buscadas ni prueban ausencia en todas las bibliotecas.",
     "mutaciones_biblioteca": false,
     "consulta_adicional": {
-      "items": ["J2PSI2PB", "X83AK6DP"],
+      "items": [
+        "J2PSI2PB",
+        "X83AK6DP"
+      ],
       "operacion": "Metadatos sin abstract de Cohn y Sommerville",
       "resultado": "Ambas llamadas fallaron: WinError 10061, conexión local rechazada.",
       "alcance": "No se verificaron los metadatos completos de estos ítems; no se interpreta el fallo como ausencia de las fuentes. No bloquea la integración editorial con las evidencias ya comprobadas.",
@@ -61,7 +73,7 @@
     }
   },
   "borrador_redaccion_corregida": {
-    "ruta": ".claude/worktrees/agent-ad791913133a91b32/salidas/reportes_maquetacion/reestructuracion_v22_20261026/redaccion_final_v22.json",
+    "ruta": ".claude/worktrees/agent-ad791913133a91b32/salidas/reportes_maquetacion/reestructuracion_v22_x/redaccion_final_v22.json",
     "sha256": "e5076f0da3eae186608ce8b29c10ff80e8a896b9f80b713e8e4365e5f7b7c7a5",
     "json_validado": true,
     "bytes": 68789,
@@ -90,7 +102,7 @@
       "sha256_observado": "04798502f7aa07b92879d0954b25b407044af9c0e202529dd9047ced584b0397",
       "alcance": "Huella actual de la fuente para cotejo de preservación posterior; no prueba por sí sola la cobertura del anexo."
     },
-    "comision_cotejo": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comision_cotejo_independiente_v22.json",
+    "comision_cotejo": "salidas/reportes_maquetacion/reestructuracion_v22_x/comision_cotejo_independiente_v22.json",
     "estado_comision": "Contrato conforme al esquema, preparado pero no despachado; requiere entrega estable del maquetador.",
     "estado_integracion": "Maquetador sigue activo. No se acredita todavía candidato reestructurado terminado ni entrega v22."
   },

@@ -37,7 +37,7 @@
       "archivos": {}
     },
     "prueba_sintetica": {
-      "descripcion": "Conjunto de prueba reproducible (semilla 20261026)",
+      "descripcion": "Conjunto de prueba reproducible (semilla x)",
       "archivos": {
         "DATOS_SINTETICOS_SIVAC.md": {
           "bytes": 368373,

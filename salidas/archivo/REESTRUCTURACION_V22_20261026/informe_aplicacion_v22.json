@@ -1,6 +1,6 @@
 {
-  "origen": "salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22_BASE.docx",
-  "destino": "salidas\\archivo\\REESTRUCTURACION_V22_20261026\\CANDIDATO_EDITORIAL_V22.docx",
+  "origen": "salidas\\archivo\\REESTRUCTURACION_V22_x\\CANDIDATO_EDITORIAL_V22_BASE.docx",
+  "destino": "salidas\\archivo\\REESTRUCTURACION_V22_x\\CANDIDATO_EDITORIAL_V22.docx",
   "sha256_origen": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9",
   "sha256_destino": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
   "parrafos": 858,

@@ -11,17 +11,17 @@
   },
   "archivos": {
     "base_intacta": {
-      "ruta": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22_BASE.docx",
+      "ruta": "salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22_BASE.docx",
       "descripcion": "Copia íntegra e inalterada de CANDIDATO_TABLAS_V21b.docx; todo el trabajo se aplicó desde aquí.",
       "sha256": "cf4530e1d127486a540590f6b62b39f3acf30b82e244e7a0875b1b81e8ddeaf9"
     },
     "candidato_docx": {
-      "ruta": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx",
+      "ruta": "salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.docx",
       "sha256": "22b65e255ac7d656a6801d21a160f7ab5fd22571bd73fb2e980ca80fc4de169f",
       "bytes": 16130599
     },
     "candidato_pdf": {
-      "ruta": "salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.pdf",
+      "ruta": "salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.pdf",
       "sha256": "d62ee56bd39fb2ea93ac487d518ae27bf531abb8efa0b8c98d245081ea26dbc0",
       "paginas": 159,
       "imagenes": 49,
@@ -29,10 +29,10 @@
       "dpi_mediana": 199.8,
       "metodo": "ExportAsFixedFormat2 (Word COM)"
     },
-    "plan": "salidas/archivo/REESTRUCTURACION_V22_20261026/plan_v22.json",
-    "reporte_aplicacion": "salidas/archivo/REESTRUCTURACION_V22_20261026/informe_aplicacion_v22.json",
-    "reporte_render": "salidas/archivo/REESTRUCTURACION_V22_20261026/informe_render_v22.json",
-    "paginas_testigo": "salidas/archivo/REESTRUCTURACION_V22_20261026/paginas_testigo/ (16 PNG a 170 DPI)"
+    "plan": "salidas/archivo/REESTRUCTURACION_V22_x/plan_v22.json",
+    "reporte_aplicacion": "salidas/archivo/REESTRUCTURACION_V22_x/informe_aplicacion_v22.json",
+    "reporte_render": "salidas/archivo/REESTRUCTURACION_V22_x/informe_render_v22.json",
+    "paginas_testigo": "salidas/archivo/REESTRUCTURACION_V22_x/paginas_testigo/ (16 PNG a 170 DPI)"
   },
   "insumos_preservados_sin_modificar": [
     "salidas/documentos/informe_final_v20.docx y .pdf",
@@ -63,15 +63,49 @@
     "tablas_geometria": [
       {
         "tabla": 35,
-        "columnas_antes_dxa": [1720, 1873, 708, 938, 1087, 1394, 1045],
-        "columnas_despues_dxa": [1720, 1738, 708, 938, 1087, 1394, 1180],
+        "columnas_antes_dxa": [
+          1720,
+          1873,
+          708,
+          938,
+          1087,
+          1394,
+          1045
+        ],
+        "columnas_despues_dxa": [
+          1720,
+          1738,
+          708,
+          938,
+          1087,
+          1394,
+          1180
+        ],
         "suma_dxa": 8765,
         "motivo": "devolver 135 dxa a la columna «Nivel de consistencia» para que «Excelente» y «Buena» no queden al borde"
       },
       {
         "tabla": 37,
-        "columnas_antes_dxa": [1650, 900, 900, 800, 900, 780, 1840, 995],
-        "columnas_despues_dxa": [1545, 1005, 900, 800, 900, 780, 1840, 995],
+        "columnas_antes_dxa": [
+          1650,
+          900,
+          900,
+          800,
+          900,
+          780,
+          1840,
+          995
+        ],
+        "columnas_despues_dxa": [
+          1545,
+          1005,
+          900,
+          800,
+          900,
+          780,
+          1840,
+          995
+        ],
         "suma_dxa": 8765,
         "motivo": "trasvasar 105 dxa del indicador al momento de evaluación para que «Pretest (Manual)» no se parta"
       },
@@ -85,7 +119,16 @@
       "operacion": "tablas.alineacion_decimal (docx_quirurgico.py) sobre tablas 30, 35, 36, 37, 38, 39, 52 y 53",
       "resultado": "todas las columnas numéricas quedan alineadas a la derecha; 0 tabuladores decimales remanentes en el documento",
       "tabuladores_decimales_retirados": 517,
-      "tablas_afectadas": [30, 35, 36, 37, 38, 39, 52, 53]
+      "tablas_afectadas": [
+        30,
+        35,
+        36,
+        37,
+        38,
+        39,
+        52,
+        53
+      ]
     }
   },
   "hallazgo_tecnico_raiz": {
@@ -102,14 +145,46 @@
   "verificacion_visual_render": {
     "metodo": "ExportAsFixedFormat2 + renderizado PyMuPDF a 170 DPI y lectura de las páginas testigo",
     "paginas_revisadas": [
-      {"pdf": 102, "contenido": "Tabla 30", "resultado": "«14.29%» completo en una línea, columna Porcentaje legible (defecto preexistente corregido)"},
-      {"pdf": 110, "contenido": "Tabla 33", "resultado": "sin desbordes; columna Instrumento legible; nota íntegra"},
-      {"pdf": 117, "contenido": "Tabla 35", "resultado": "los seis coeficientes 0.939, 0.877, 0.874, 0.915, 0.831 y 0.841 completos en una línea, alineados; nota con la advertencia de datos de prueba legible"},
-      {"pdf": 118, "contenido": "Tabla 36", "resultado": "rangos «31.50 – 44.00» y «−35.50 – −25.50» completos en una línea"},
-      {"pdf": 120, "contenido": "Tabla 37", "resultado": "rangos «52.50% – 75.00%» y «+22.00% – +33.50%» completos; columna Momento sin partir"},
-      {"pdf": 122, "contenido": "Tabla 38", "resultado": "rangos y decimales completos; tabla cerrada en una página"},
-      {"pdf": 124, "contenido": "Tabla 39 y lista 4-7", "resultado": "valores W y p completos; elementos de lista alineados con tabulador y colgante"},
-      {"pdf": 154, "contenido": "Tabla 49 (Anexo 5, horizontal)", "resultado": "18 columnas legibles, valores completos, nota íntegra"}
+      {
+        "pdf": 102,
+        "contenido": "Tabla 30",
+        "resultado": "«14.29%» completo en una línea, columna Porcentaje legible (defecto preexistente corregido)"
+      },
+      {
+        "pdf": 110,
+        "contenido": "Tabla 33",
+        "resultado": "sin desbordes; columna Instrumento legible; nota íntegra"
+      },
+      {
+        "pdf": 117,
+        "contenido": "Tabla 35",
+        "resultado": "los seis coeficientes 0.939, 0.877, 0.874, 0.915, 0.831 y 0.841 completos en una línea, alineados; nota con la advertencia de datos de prueba legible"
+      },
+      {
+        "pdf": 118,
+        "contenido": "Tabla 36",
+        "resultado": "rangos «31.50 – 44.00» y «−35.50 – −25.50» completos en una línea"
+      },
+      {
+        "pdf": 120,
+        "contenido": "Tabla 37",
+        "resultado": "rangos «52.50% – 75.00%» y «+22.00% – +33.50%» completos; columna Momento sin partir"
+      },
+      {
+        "pdf": 122,
+        "contenido": "Tabla 38",
+        "resultado": "rangos y decimales completos; tabla cerrada en una página"
+      },
+      {
+        "pdf": 124,
+        "contenido": "Tabla 39 y lista 4-7",
+        "resultado": "valores W y p completos; elementos de lista alineados con tabulador y colgante"
+      },
+      {
+        "pdf": 154,
+        "contenido": "Tabla 49 (Anexo 5, horizontal)",
+        "resultado": "18 columnas legibles, valores completos, nota íntegra"
+      }
     ],
     "barrido_automatico_del_pdf_completo": {
       "prueba": "detección de líneas compuestas solo por una cifra truncada (patrón ^\\d{1,3}[.,]$)",
@@ -138,25 +213,76 @@
       "dictamen": "APROBADO"
     },
     "paridad_de_elementos_base_vs_candidato": {
-      "parrafos": [3708, 3708],
-      "tablas": [59, 59],
-      "omml": [13, 13],
-      "fldChar": [1920, 1920],
-      "instrText": [640, 640],
-      "PAGEREF": [214, 214],
-      "SEQ": [103, 103],
-      "TOC": [3, 3],
-      "hipervinculos": [253, 253],
-      "vertAlign_subindices": [102, 102],
-      "saltos_w_br": [121, 121],
-      "tblpPr": [0, 0],
-      "tabuladores_decimales": [517, 0]
+      "parrafos": [
+        3708,
+        3708
+      ],
+      "tablas": [
+        59,
+        59
+      ],
+      "omml": [
+        13,
+        13
+      ],
+      "fldChar": [
+        1920,
+        1920
+      ],
+      "instrText": [
+        640,
+        640
+      ],
+      "PAGEREF": [
+        214,
+        214
+      ],
+      "SEQ": [
+        103,
+        103
+      ],
+      "TOC": [
+        3,
+        3
+      ],
+      "hipervinculos": [
+        253,
+        253
+      ],
+      "vertAlign_subindices": [
+        102,
+        102
+      ],
+      "saltos_w_br": [
+        121,
+        121
+      ],
+      "tblpPr": [
+        0,
+        0
+      ],
+      "tabuladores_decimales": [
+        517,
+        0
+      ]
     },
     "interpretacion": "No se perdió ni se duplicó ningún párrafo, tabla, fórmula, campo, hipervínculo ni subíndice; el único delta es la eliminación de los 517 tabuladores decimales sustituidos por alineación derecha.",
     "conciliacion_de_alineaciones": {
-      "jc_right": [40, 557, "+517 celdas numéricas pasan de izquierda a derecha"],
-      "jc_left": [586, 105, "-517 celdas numéricas, +33 elementos de lista justificados, +3 rótulos sin jc explícito"],
-      "jc_both": [269, 236, "-33 elementos de lista que estaban justificados"],
+      "jc_right": [
+        40,
+        557,
+        "+517 celdas numéricas pasan de izquierda a derecha"
+      ],
+      "jc_left": [
+        586,
+        105,
+        "-517 celdas numéricas, +33 elementos de lista justificados, +3 rótulos sin jc explícito"
+      ],
+      "jc_both": [
+        269,
+        236,
+        "-33 elementos de lista que estaban justificados"
+      ],
       "parrafos_de_nivel_superior_modificados": 36,
       "cambios_fuera_de_izquierda_derecha": 0,
       "conclusion": "Toda variación de alineación queda explicada por las dos operaciones aplicadas: no hay ningún párrafo de prosa que haya perdido el justificado."

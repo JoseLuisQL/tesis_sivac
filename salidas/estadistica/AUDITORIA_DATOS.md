@@ -151,7 +151,7 @@
 | L. Capa de datos | Control de integridad del conjunto sintético presente | OK | control_integridad.json |
 | L. Capa de datos | Tamaños de control coinciden con los CSV | OK | 7 archivos |
 | L. Capa de datos | El documento sintético coincide con su control | OK | 4750 líneas |
-| L. Capa de datos | Recuentos de control coinciden con las filas reales | OK | semilla 20261026 |
+| L. Capa de datos | Recuentos de control coinciden con las filas reales | OK | semilla x |
 | L. Capa de datos | Codebook, plantilla y matriz comparten esquema | OK | 17 variables; derivadas: ['centro_acopio', 'momento'] |
 | L. Capa de datos | Los centros de la muestra están en el catálogo | OK | 13 de 19 centros |
 | L. Capa de datos | La documentación rotula el conjunto como de prueba | OK | 3 documentos |

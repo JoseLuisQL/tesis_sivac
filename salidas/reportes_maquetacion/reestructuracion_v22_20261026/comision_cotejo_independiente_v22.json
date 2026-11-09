@@ -4,15 +4,15 @@
   "squad": "Squad A (Evidencia y Bibliometría)",
   "subagente": "verificador-integridad",
   "entradas": [
-    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_REESTRUCTURADO_V22.docx",
-    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_REESTRUCTURADO_V22.pdf",
-    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_20261026/CANDIDATO_EDITORIAL_V22.docx",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_REESTRUCTURADO_V22.docx",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_REESTRUCTURADO_V22.pdf",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/archivo/REESTRUCTURACION_V22_x/CANDIDATO_EDITORIAL_V22.docx",
     "C:/MisInvestigaciones/tesis/sivac/SIVAC_Desarrollo_Software_XP.docx",
-    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
-    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/criterios_aceptacion_direccion.json",
-    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/control_direccion_intermedio_v22.json"
+    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_x/comparacion_modelos_y_mapa_xp.json",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_x/criterios_aceptacion_direccion.json",
+    "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_x/control_direccion_intermedio_v22.json"
   ],
-  "salida_esperada": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_20261026/cotejo_independiente_v22.json; handoff de máximo 300 palabras y bitácora del verificador en Obsidian. El informe distinguirá verificaciones automatizadas, lectura visual directa y límites no comprobados.",
+  "salida_esperada": "C:/MisInvestigaciones/tesis/sivac/salidas/reportes_maquetacion/reestructuracion_v22_x/cotejo_independiente_v22.json; handoff de máximo 300 palabras y bitácora del verificador en Obsidian. El informe distinguirá verificaciones automatizadas, lectura visual directa y límites no comprobados.",
   "restricciones": [
     "No modificar el motor, DOCX, PDF, fuentes, datos, otros informes o configuración. Trabajo en sitio, sin crear worktree. Usar Python -I cuando corresponda.",
     "No ejecutar nuevos contrastes ni recalcular datos de prueba; no interpretar la edición como acreditación empírica o aprobación definitiva.",

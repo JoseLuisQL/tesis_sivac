@@ -95,7 +95,7 @@ def pagina_estado(doc) -> None:
              "El archivo datos/recolectados/SIVAC_DATOS_CAMPO.md lleva en su "
              "encabezado el estado DATOS DE PRUEBA — REEMPLAZAR (DEC-007): sus "
              "cifras se derivan del conjunto sintético de datos/prueba_sintetica/ "
-             "(semilla 20261026) y no acreditan medición de campo. Sirve para "
+             "(semilla x) y no acreditan medición de campo. Sirve para "
              "comprobar que la estructura, los identificadores y las reglas de "
              "cálculo cierran; no sirve como registro que se traslada al papel. "
              "La ficha impresa es el documento primario: lo que se escribe en "

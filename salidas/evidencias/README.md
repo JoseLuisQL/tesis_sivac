@@ -41,7 +41,7 @@ Esta carpeta consolida todos los artefactos, bases de datos, instrumentos y cód
   4. Contrastes pareados ($t$-Student y Rangos con Signo de Wilcoxon con ajuste secuencial de Holm-Bonferroni).
   5. Tamaños del efecto ($d$ de Cohen y $r$ de Rosenthal).
   6. Figuras a 300 DPI con estética de salida SPSS.
-- **`generar_datos_sinteticos.py`:** Generador determinista del conjunto de prueba (semilla `20261026`) con sus tres instrumentos y `control_integridad.json`.
+- **`generar_datos_sinteticos.py`:** Generador determinista del conjunto de prueba (semilla `x`) con sus tres instrumentos y `control_integridad.json`.
 - **`construir_registro_campo.py`:** Compone `SIVAC_DATOS_CAMPO.md` a partir de los CSV y del reporte estadístico.
 - **`consultar_db_sivac.py`:** Auditoría de solo lectura contra la base PostgreSQL de SIVAC para mapear centros de acopio y usuarios reales.
 

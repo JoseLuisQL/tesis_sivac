@@ -51,7 +51,7 @@ sys.path.insert(0, str(RAIZ))
 from scripts.estadistica.manifest_datos import validar_manifest  # noqa: E402
 
 N_CENSAL = 14
-SEMILLA = 20261026
+SEMILLA = x
 REPLICAS_BOOTSTRAP = 10000
 ALFA = 0.05
 

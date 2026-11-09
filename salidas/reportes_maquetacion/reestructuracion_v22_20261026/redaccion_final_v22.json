@@ -13,9 +13,9 @@
       "modo_de_lectura": "solo_lectura"
     },
     "insumos_utilizados": {
-      "mapa_documental": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/comparacion_modelos_y_mapa_xp.json",
-      "auditoria_estadistica": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/auditoria_estadistica_y_propuesta.json",
-      "propuesta_de_tablas_y_figuras": "salidas/reportes_maquetacion/reestructuracion_v22_20261026/propuesta_tablas_figuras_redactor.json"
+      "mapa_documental": "salidas/reportes_maquetacion/reestructuracion_v22_x/comparacion_modelos_y_mapa_xp.json",
+      "auditoria_estadistica": "salidas/reportes_maquetacion/reestructuracion_v22_x/auditoria_estadistica_y_propuesta.json",
+      "propuesta_de_tablas_y_figuras": "salidas/reportes_maquetacion/reestructuracion_v22_x/propuesta_tablas_figuras_redactor.json"
     },
     "anclas_verificadas": "Lectura directa del PDF v20: páginas físicas 13-14 para Resumen y Abstract, 117-118 y 129-130 para el Capítulo V, y 131-133 para Discusión y Conclusiones. La numeración de página citada en las órdenes es la del PDF, no el folio impreso.",
     "instruccion_de_aplicacion": "Ninguna orden ha sido aplicada. El maquetador-docx es el único escritor del DOCX y del motor. La renumeración continua de campos SEQ, índices, PAGEREF y llamadas es automática y no requiere consulta al tesista.",
@@ -111,7 +111,13 @@
         "delimitacion_exacta": {
           "inicio": "rótulo 3.3. Metodología de Desarrollo de Software Extreme Programming (XP), párrafo P328, página 54 del PDF, folio 39",
           "fin": "último párrafo de 3.3.5.1, párrafo P548, antes del rótulo CAPÍTULO IV: METODOLOGÍA DE LA INVESTIGACIÓN, página 99 del PDF, folio 84",
-          "subsecciones_incluidas": ["3.3.1 Planificación", "3.3.2 Diseño", "3.3.3 Codificación", "3.3.4 Pruebas", "3.3.5 Despliegue"],
+          "subsecciones_incluidas": [
+            "3.3.1 Planificación",
+            "3.3.2 Diseño",
+            "3.3.3 Codificación",
+            "3.3.4 Pruebas",
+            "3.3.5 Despliegue"
+          ],
           "elementos_incluidos": "26 tablas (Tabla 3 a Tabla 28) y 35 figuras (Figura 11 a Figura 45), más los rótulos y las notas internos del bloque."
         },
         "complementos_desde_la_fuente": {
@@ -455,7 +461,12 @@
     "renumeracion": {
       "regla": "Numeración continua en todo el informe, con una sola serie para tablas y otra para figuras.",
       "series_independientes": false,
-      "numeros_que_no_se_conservan": ["3-28 del bloque XP", "11-45 de las figuras XP", "35-43 de las tablas del Capítulo V", "46-48 de las figuras del Capítulo V"],
+      "numeros_que_no_se_conservan": [
+        "3-28 del bloque XP",
+        "11-45 de las figuras XP",
+        "35-43 de las tablas del Capítulo V",
+        "46-48 de las figuras del Capítulo V"
+      ],
       "llamadas": "Toda llamada del cuerpo se actualiza al número final. No se admiten llamadas huérfanas ni números fijos escritos a mano.",
       "responsable": "maquetador-docx, mediante el motor canónico.",
       "consulta_al_tesista": false
