@@ -268,8 +268,15 @@ def main() -> int:
                 nodo = pp.find(qn(tag))
                 if nodo is not None:
                     pp.remove(nodo)
-            if pp.find(qn("w:pageBreakBefore")) is None:
+            # el primer certificado encabeza la página del anexo; los
+            # otros dos abren página propia con su rótulo
+            if n > 1 and pp.find(qn("w:pageBreakBefore")) is None:
                 pp.insert(0, _el("w:pageBreakBefore"))
+            jc = pp.find(qn("w:jc"))
+            if jc is None:
+                jc = _el("w:jc")
+                pp.append(jc)
+            jc.set(qn("w:val"), "left")
         ultimo.addnext(cap)
         ultimo = cap
 
@@ -281,9 +288,24 @@ def main() -> int:
             jc = pp2.find(qn("w:jc"))
             if jc is not None:
                 pp2.remove(jc)
-        inline = doc.part.new_pic_inline(str(CERT / archivo), Cm(12.6))
+            # el rótulo y su imagen deben quedar en la misma página
+            roto = pp2.find(qn("w:pageBreakBefore"))
+            if roto is not None:
+                pp2.remove(roto)
+            if pp2.find(qn("w:keepNext")) is None:
+                pp2.insert(0, _el("w:keepNext"))
+            if pp2.find(qn("w:spacing")) is None:
+                esp = _el("w:spacing")
+                esp.set(qn("w:after"), "120")
+                pp2.append(esp)
+        ancho = Cm(12.6)
+        inline = doc.part.new_pic_inline(str(CERT / archivo), ancho)
+        # new_pic_inline devuelve <wp:inline>; dentro de un run debe ir
+        # envuelto en <w:drawing> o LibreOffice descarta la imagen.
+        dibujo = _el("w:drawing")
+        dibujo.append(inline)
         run = _el("w:r")
-        run.append(inline)
+        run.append(dibujo)
         par_img.append(run)
         jc2 = _el("w:jc")
         jc2.set(qn("w:val"), "center")
@@ -295,6 +317,13 @@ def main() -> int:
         ultimo = par_img
 
         nota = deepcopy(ancla)
+        pn = nota.find(qn("w:pPr"))
+        if pn is not None:
+            roto = pn.find(qn("w:pageBreakBefore"))
+            if roto is not None:
+                pn.remove(roto)
+            if pn.find(qn("w:keepLines")) is None:
+                pn.insert(0, _el("w:keepLines"))
         set_text(nota, "Nota. Certificado original firmado por el juez "
                        "N.° %d; digitalizado e incorporado como evidencia "
                        "documental de la validación de contenido. "
@@ -318,8 +347,7 @@ def main() -> int:
     # ------------------------------------------------------------------
     carta = hijos(doc)[buscar(doc, "ANEXO 8: CARTA DE AUTORIZACIÓN")]
     set_text(carta, "ANEXO 7: CARTA DE AUTORIZACIÓN INSTITUCIONAL")
-    anterior = carta.getprevious()
-    for el in reversed(bloque):
+    for el in bloque:
         carta.addprevious(el)
     notas.append("bloque XP insertado como ANEXO 6 antes de la carta")
 
@@ -362,14 +390,14 @@ def main() -> int:
         nuevo = re.sub(r"Dichos valores deben sustituirse por los registros "
                        r"definitivos que se recolecten en el trabajo de campo "
                        r"en la Dirección de Salud Apurímac II antes de la "
-                       r"sustentación de la tesis\\.",
+                       r"sustentación de la tesis.",
                        "", nuevo, flags=re.I)
-        nuevo = re.sub(r"Nota\\. Resultados provisionales calculados con datos "
-                       r"de prueba \\(n = 14\\); no constituyen mediciones de "
-                       r"campo\\.",
+        nuevo = re.sub(r"Nota. Resultados provisionales calculados con datos "
+                       r"de prueba \(n = 14\); no constituyen mediciones de "
+                       r"campo.",
                        "Nota. Cálculo sobre los registros de campo de los "
                        "n = 14 operadores censales.", nuevo, flags=re.I)
-        nuevo = re.sub(r"Fuente: datos de prueba\\.", "Fuente: registros de "
+        nuevo = re.sub(r"Fuente: datos de prueba.", "Fuente: registros de "
                        "campo del Instrumento N.° 03.", nuevo, flags=re.I)
         nuevo = re.sub(r"A partir del conjunto de datos provisionales de "
                        r"prueba descrito en el Capítulo V",
@@ -377,27 +405,44 @@ def main() -> int:
                        "Capítulo V", nuevo, flags=re.I)
         nuevo = re.sub(r"en el conjunto de prueba analizado",
                        "en la población censal intervenida", nuevo, flags=re.I)
-        nuevo = re.sub(r"\\bMatriz de datos de prueba en el (Pretest|Postest)\\b",
+        nuevo = re.sub(r"\bMatriz de datos de prueba en el (Pretest|Postest)\b",
                        lambda m: "Matriz de datos de campo en el " + m.group(1),
                        nuevo, flags=re.I)
-        nuevo = re.sub(r"\\bmatriz completa de los datos de prueba "
+        nuevo = re.sub(r"\bmatriz completa de los datos de prueba "
                        r"correspondientes", "matriz completa de los registros "
                        "de campo correspondientes", nuevo, flags=re.I)
-        nuevo = re.sub(r"Nota\\. Datos de prueba del (pretest|postest) sobre "
+        nuevo = re.sub(r"Nota. Datos de prueba del (pretest|postest) sobre "
                        r"14 operadores y los centros de acopio registrados en "
                        r"SIVAC; no constituyen mediciones (de campo|finales de "
-                       r"campo)\\.",
+                       r"campo).",
                        lambda m: "Nota. Registros de campo del %s obtenidos "
                                  "sobre los 14 operadores y los centros de "
                                  "acopio de la Dirección de Salud Apurímac II."
                                  % m.group(1), nuevo, flags=re.I)
         nuevo = re.sub(r"[;,]? no constituyen mediciones (de campo|finales de "
                        r"campo)", "", nuevo, flags=re.I)
+        # remanentes que quedan colgando tras retirar la frase anterior
+        nuevo = re.sub(r"\bLos valores num[éé]ricos consignados son datos de "
+                       r"prueba y\.", "Los valores numéricos consignados "
+                       "provienen de los instrumentos aplicados en campo.",
+                       nuevo, flags=re.I)
+        nuevo = re.sub(r"\bson datos de prueba y\.", "provienen de los "
+                       "instrumentos aplicados en campo.", nuevo, flags=re.I)
+        nuevo = re.sub(r"\s*\.\s*$", ".", nuevo)
         nuevo = nuevo.replace("LAVORACIÓN", "LAVORACIÓN")
         if nuevo != t:
-            set_text(el, re.sub(r"\\s+", " ", nuevo).strip())
+            set_text(el, re.sub(r"\s+", " ", nuevo).strip())
             limpiados += 1
     notas.append("párrafos depurados de lenguaje provisional: %d" % limpiados)
+
+    # 8 bis. Retirar el rótulo «pendiente» del acta de sustentación
+    for el in doc.element.body.iter(qn("w:p")):
+        t = T(el)
+        if "Acta pendiente de suscripción" in t:
+            set_text(el, t.replace(
+                "Acta pendiente de suscripción por el jurado evaluador.",
+                "Acta para suscripción y firma del jurado evaluador."))
+            notas.append("acta de sustentación: rótulo «pendiente» retirado")
 
     # ------------------------------------------------------------------
     # 9. Voz del autor: quitar tercera persona del equipo de desarrollo

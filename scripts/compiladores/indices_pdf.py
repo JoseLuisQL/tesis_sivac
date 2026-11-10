@@ -140,7 +140,7 @@ def _folio(pagina) -> Optional[str]:
             if bloque[1] < banda[0] or bloque[3] > banda[1]:
                 continue
             texto = bloque[4].strip()
-            if re.fullmatch(r"\d{1,4}", texto):
+            if re.fullmatch(r"\d{1,4}", texto) or re.fullmatch(r"[ivxlcdm]{1,7}", texto.lower()):
                 return texto
     return None
 
@@ -169,6 +169,54 @@ def paginas_por_titulo(pdf: Path, titulos: Sequence[str]) -> Dict[str, str]:
                     if corto in paginas[i] and folios[i]:
                         resultado[titulo] = folios[i]
                         break
+    return resultado
+
+
+def _es_pagina_de_indice(texto: str) -> bool:
+    """Página de uno de los tres índices: casi todas sus líneas traen puntos
+    guía y un folio al final."""
+    lineas = [l.strip() for l in texto.split("\n") if l.strip()]
+    if len(lineas) < 4:
+        return False
+    con_puntos = sum(1 for l in lineas if "....." in l)
+    return con_puntos >= max(3, int(len(lineas) * 0.4))
+
+
+def paginas_por_titulo_ordenado(pdf: Path, titulos: Sequence[str]) -> Dict[str, str]:
+    """Folio de cada título respetando el orden del documento.
+
+    Buscar de atrás hacia delante devolvía la página del propio índice
+    (donde también aparece el título) y, peor, la de una aparición posterior
+    en el texto. Aquí se avanza página por página, se saltan las páginas de
+    los índices y cada título se busca a partir de la página del anterior.
+    """
+    import fitz
+
+    documento = fitz.open(pdf)
+    paginas = []
+    for p in documento:
+        crudo = p.get_text()
+        paginas.append((_norm(crudo), _es_pagina_de_indice(crudo), _folio(p)))
+    documento.close()
+
+    resultado: Dict[str, str] = {}
+    cursor = 0
+    for titulo in titulos:
+        clave = _norm(titulo)
+        if not clave:
+            continue
+        encontrada = None
+        for i in range(cursor, len(paginas)):
+            texto, es_indice, folio = paginas[i]
+            if es_indice or not folio:
+                continue
+            if clave in texto or (len(clave) > 30 and clave[:60] in texto):
+                encontrada = i
+                break
+        if encontrada is None:
+            continue
+        resultado[titulo] = paginas[encontrada][2]
+        cursor = encontrada
     return resultado
 
 
@@ -247,29 +295,49 @@ def alinear_sin_justificar(doc: Document) -> int:
 
 
 def verificar(pdf: Path, doc: Document) -> List[str]:
-    """Compara el número impreso en cada índice con la página real."""
+    """Compara el folio impreso en cada índice con el folio real del título.
+
+    Se recorren los tres índices por separado y en el orden del documento
+    (búsqueda hacia delante), porque buscar el título de atrás hacia delante
+    confunde una mención suelta en el texto con el encabezado.
+    """
     import fitz
 
     documento = fitz.open(pdf)
-    paginas = [_norm(p.get_text()) for p in documento]
-    folios = [_folio(p) for p in documento]
-    problemas: List[str] = []
+    paginas = []
+    for p in documento:
+        crudo = p.get_text()
+        paginas.append((_norm(crudo), _es_pagina_de_indice(crudo), _folio(p)))
+    documento.close()
+
+    grupos: Dict[str, List] = {}
     for el in entradas_indice(doc):
         titulo = titulo_entrada(el)
         impreso = numero_entrada(el)
-        if not titulo or impreso is None or not impreso.strip().isdigit():
+        if not titulo.strip() or impreso is None or not impreso.strip():
             continue
-        clave = _norm(titulo)
-        real = None
-        for i in range(len(paginas) - 1, -1, -1):
-            if clave and clave in paginas[i]:
-                real = folios[i]
-                break
-        if real is None:
-            continue
-        if real != impreso.strip():
-            problemas.append("%s: índice %s, real %s" % (titulo[:60], impreso, real))
-    documento.close()
+        clave = titulo.strip()
+        m = re.match(r"^(Figura|Tabla)\s+\d+", clave)
+        grupo = m.group(1).lower() if m else "contenido"
+        grupos.setdefault(grupo, []).append((clave, impreso.strip()))
+
+    problemas: List[str] = []
+    for _grupo, lista in grupos.items():
+        cursor = 0
+        for titulo, impreso in lista:
+            clave = _norm(titulo)
+            real = None
+            for i in range(cursor, len(paginas)):
+                texto, es_indice, folio = paginas[i]
+                if es_indice or not folio:
+                    continue
+                if clave in texto or (len(clave) > 30 and clave[:60] in texto):
+                    real = (i, folio)
+                    break
+            if real is None:
+                problemas.append("%s: sin página" % titulo[:60])
+                continue
+            cursor = real[0]
+            if real[1] != impreso:
+                problemas.append("%s: índice %s, real %s" % (titulo[:60], impreso, real[1]))
     return problemas
-
-
